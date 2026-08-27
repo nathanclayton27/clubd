@@ -729,8 +729,36 @@ footer a{color:var(--steel)}
    takes the free space. The clubs card already has the code chip doing that
    job — a second auto margin there SPLITS the space between them, which is
    what knocked every chip to a different position. */
-#fp-groups .lv,#fp-clubs .lv{margin-left:auto}
+#fp-clubs .lv{margin-left:auto}
+/* groups uses an explicit spacer instead (CLU-413): the row carries THREE
+   controls now, and a second auto margin would split the free space between
+   them rather than push everything right. */
+#fp-groups .gspace{flex:1 1 auto;min-width:8px}
 #fp-groups .afrow:hover .lv,#fp-clubs .afrow:hover .lv{opacity:1}
+/* CLU-413. leave and new link are the two DESTRUCTIVE controls on this row —
+   one drops you out of a roster, the other invalidates a link other people are
+   already holding — and they were the lightest things in it: bare underlined
+   text beside a boxed button that only copies something. The weight was
+   inverted. They now take the same box as Invite link, revealed with the row,
+   in a muted red that goes full red on their own hover: revealed, then armed. */
+#fp-groups .gdang{font:inherit;font-size:12.5px;background:transparent;
+  cursor:pointer;border:1px solid transparent;border-radius:var(--radius);
+  padding:6px 11px;line-height:1;
+  color:color-mix(in srgb,var(--signal) 60%,var(--ink-3));
+  transition:opacity .15s,color .12s,border-color .12s}
+#fp-groups .afrow:hover .gdang{
+  border-color:color-mix(in srgb,var(--signal) 38%,transparent)}
+/* The armed rule has to OUT-SPECIFY the revealed one above it, not merely
+   follow it: `#fp-groups .afrow:hover .gdang` is (1,3,0) and a plain
+   `#fp-groups .gdang:hover` is (1,2,0), so the muted border won and the
+   control never deepened under its own cursor. Caught by measuring rather
+   than by looking. */
+#fp-groups .afrow:hover .gdang:hover,
+#fp-groups .afrow .gdang:focus-visible{color:var(--signal);
+  border-color:color-mix(in srgb,var(--signal) 80%,transparent)}
+/* touch has no hover, so the box rests visible rather than never appearing */
+@media (hover:none){#fp-groups .gdang{
+  border-color:color-mix(in srgb,var(--signal) 38%,transparent)}}
 #fp-groups .lv:focus-visible,#fp-clubs .lv:focus-visible{opacity:1}
 /* the friends page carries the same controls, so it obeys the same law —
    otherwise remove/cancel shout at rest on one page and whisper on the other */
@@ -4702,18 +4730,31 @@ async function renderMyGroups(){
         + esc(g.name) + '</b>'
         + '<span class="mono" style="font-size:10.5px;color:var(--ink-3)">'
         + k + ' ' + (k === 1 ? 'person' : 'people') + '</span>'
-        // leave takes the free space so the buttons that STAY are a fixed
-        // cluster at the edge — otherwise Invite link slides sideways every
-        // time leave fades in
-        + '<button class="aquiet lv" data-gleave="' + esc(g.id) + '" data-gname="'
-        + esc(g.name) + '">leave</button>'
+        // CLU-413. An explicit spacer, and NO auto margins. Two elements
+        // carrying margin-left:auto split the free space between them, which
+        // is what put Invite link in a different place on every row — the note
+        // on the .lv rule warns about exactly this and then it happened here.
+        // Order is the spec: the boxed Invite link sits last, so it is always
+        // at the far right whatever else the row is carrying.
+        + '<span class="gspace"></span>'
+        + '<button class="lv gdang" data-gleave="' + esc(g.id) + '" data-gname="'
+        + esc(g.name) + '" title="Leave ' + esc(g.name)
+        + '. You stop seeing their progress and they stop seeing yours. '
+        + 'Your own ticks are untouched.">leave</button>'
         + (g.created_by === user.id
-           ? '<button class="abtn" data-ginv="' + esc(g.id) + '">Invite link</button>'
              // rotate_join_token() shipped with the migration and nothing
              // called it, so a link once sent could never be revoked. Owner
-             // only, and it says what it costs before it does it.
-             + '<button class="aquiet lv" data-grot="' + esc(g.id)
-             + '" data-grn="' + esc(g.name) + '">new link</button>'
+             // only, and it says what it costs before it does it — in the
+             // title as well as the confirm, so the warning arrives BEFORE
+             // the click and not only after it.
+           ? '<button class="lv gdang" data-grot="' + esc(g.id)
+             + '" data-grn="' + esc(g.name)
+             + '" title="Make a new invite link for ' + esc(g.name)
+             + '. The old one stops working immediately, for everyone you have '
+             + 'already sent it to.">new link</button>'
+             + '<button class="abtn" data-ginv="' + esc(g.id)
+             + '" title="Copy the invite link for ' + esc(g.name)
+             + '">Invite link</button>'
            : '')
         + '</div>'
         + '<div class="gros">' + pkHTML((roster[g.id] || []).map(m=>{
