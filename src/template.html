@@ -2790,7 +2790,13 @@ async function onSession(session, definitive){
     startGroupPoll();
     // someone can unlock while signed out and sign in afterwards; the group
     // they were promised should still be waiting for them
-    if(PROP && PROP.group) await joinSecretGroup();
+    // Best-effort by design, so it must not be able to take the paint down.
+    // Un-guarded, a throw in here skipped paint() and everything after it and
+    // left a signed-in visitor looking at an unbuilt page.
+    if(PROP && PROP.group){
+      try{ await joinSecretGroup(); }
+      catch(e){ console.error('[tracker] joinSecretGroup threw', e); }
+    }
   }else{
     $('b-baracct').classList.add('hide');
     // CLU-339. Supabase fires INITIAL_SESSION with a null session BEFORE it
@@ -7585,7 +7591,14 @@ async function joinSecretGroup(){
       return;
     }
     last = error || { message: 'no group with that code' };
-    console.warn('[tracker] ' + fn + ' did not take:', error.message || error);
+    // Log `last`, never `error`. The line above exists precisely because
+    // `error` can be null here — the RPC resolved cleanly and returned
+    // nothing, which is what join_group does for an unknown code once the
+    // rate-limit migration is in (it returns NULL rather than raising). On
+    // that path `error.message` threw, and the throw killed the loop before
+    // the join_or_create_group fallback ran: the group was never created, so
+    // the first person through a gated list stranded every person after them.
+    console.warn('[tracker] ' + fn + ' did not take:', last.message || last);
   }
   console.error('[tracker] could not join the secret group', last);
   flash('Could not join automatically (' + ((last && last.message) || 'unknown')
@@ -9371,7 +9384,8 @@ loadProperty().then(()=>{
   // surfacing it, not about withholding it from someone reading the network
   // tab, which no static site can do.
   if(PROP.secret && PROP.secret.blob && !PROP.generate && !PROP.sections) showGate();
-  else if(PROP.secret) joinSecretGroup();
+  else if(PROP.secret) joinSecretGroup()
+    .catch(e=> console.error('[tracker] joinSecretGroup threw', e));
   build();
   $('b-star').onclick = ()=>{
     toggleStar(SLUG);
