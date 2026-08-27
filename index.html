@@ -566,6 +566,16 @@ li.done .ttl,li.done .num{color:var(--ink-3);text-decoration:line-through;text-d
 .thpair:hover .thb.sec,.thpair:focus-within .thb.sec{
   opacity:1;right:calc(100% + 6px);
   transition:right .2s cubic-bezier(.2,.85,.3,1),opacity .16s linear}
+/* CLU-405. That 6px is a gap in the HIT AREA, not just in the paint. The
+   secondary is absolutely positioned, so it adds nothing to .thpair's box —
+   the parent is exactly the primary pill. Hovering a descendant keeps :hover
+   on the ancestor even when the descendant paints outside it, so being ON the
+   secondary was always fine; the 6px BETWEEN them was over neither, so hover
+   dropped and the mark you were reaching for snapped shut under the cursor.
+   A hit-area bridge, only while the pair is open — a permanent one would put a
+   phantom hover zone beside every closed pill. Nothing moves visually. */
+.thpair:hover .thb.sec::after,.thpair:focus-within .thb.sec::after{
+  content:"";position:absolute;left:100%;top:0;width:10px;height:100%}
 /* the surviving mark */
 .thb.on{opacity:1;filter:none;border-color:var(--done);
   background:color-mix(in srgb,var(--done) 16%,transparent)}
@@ -5930,7 +5940,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '3e876e9df392';
+const BUILD = 'be8ab013ebed';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
