@@ -59,14 +59,50 @@ def add(name, ln, kind):
         defs[name] = (ln, kind)
 
 
+# Columns declared inside a CREATE TABLE body count as defined too. Recording
+# only `add column` produced a confident FALSE POSITIVE on
+# migrate-club-progress.sql: club_progress.group_id is declared in its create
+# table, tick_events.group_id is added 170 lines later, and this matched the
+# earlier USE against the later ADD and reported "will fail at create time" for
+# a correctly ordered file. A safety tool that cries wolf gets ignored, which
+# costs more than the check is worth.
+#
+# It still tracks bare NAMES, not (table, column) pairs, so a name defined in
+# two tables is genuinely ambiguous — `multi` records those so the report can
+# say so rather than pick one.
+multi = set()
+
+
+def addcol(name, ln):
+    if name in defs and defs[name][1] == 'column' and defs[name][0] != ln:
+        multi.add(name)
+    add(name, ln, 'column')
+
+
+COLTYPE = (r'(uuid|text|timestamptz|timestamp|boolean|bool|int|integer|bigint'
+           r'|date|jsonb|json|numeric|smallint|real|serial|bigserial)\b')
+NOT_A_COL = ('primary', 'unique', 'constraint', 'foreign', 'check', 'exclude',
+             'like', ');')
+
+in_table = None
 for i in range(len(lines)):
     c = code(i)
     m = re.search(r'add column if not exists (\w+)', c)
     if m:
-        add(m.group(1), i + 1, 'column')
+        addcol(m.group(1), i + 1)
     m = re.search(r'create table if not exists (?:public\.)?(\w+)', c)
     if m:
         add(m.group(1), i + 1, 'table')
+        in_table = m.group(1) if '(' in c and not c.rstrip().endswith(';') else None
+        continue
+    if in_table:
+        low = c.lower()
+        if low.startswith(');') or low == ')':
+            in_table = None
+        elif not low.startswith(NOT_A_COL):
+            mc = re.match(r'(\w+)\s+' + COLTYPE, c)
+            if mc:
+                addcol(mc.group(1), i + 1)
     m = re.search(r'create or replace function (?:public\.)?(\w+)', c)
     if m:
         add(m.group(1), i + 1, 'function')
