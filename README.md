@@ -348,6 +348,11 @@ two auth emails an hour, which is not enough to test a group with two accounts �
 enable the GitHub provider and set `ENABLE_GITHUB_LOGIN = true` instead. The
 callback URL is `https://<project-ref>.supabase.co/auth/v1/callback`.
 
+## Deploying
+
+Build, check, stage by name, push to `origin`. The full procedure — and the one
+command that must never be run again — is in [`DEPLOY.md`](DEPLOY.md).
+
 ## Credits
 
 Hickman reading order compiled from [Comic Book
