@@ -234,12 +234,12 @@ Thirteen files, in this order, all at the repo root.
 10. migrate-groups.sql
 11. migrate-mute-privacy.sql
 12. migrate-group-thumbs.sql
-13. migrate-add-schema-ledger.sql          <-- written, NOT YET RUN
+13. migrate-add-schema-ledger.sql
 ```
 
-**Step 13 has not been run.** It is written and audited and waiting on Nathan
-(CLU-404). Everything above it is live. On a fresh project run all thirteen; on
-the live database only 13 remains.
+All thirteen are live. Step 13 ran on 2026-08-27 with a 14/14 readback
+(CLU-404), so from here on the database keeps its own record of what has been
+run and this section stops being the only one.
 
 ### The order is not a preference
 
@@ -339,8 +339,7 @@ without step 8's insert protects nothing.
 
 **`rate_events`** — join-attempt counting behind `guard_group_join_rate()`.
 
-**`schema_migrations`** ⚠ *written, not yet run (CLU-404)* — one row per migration
-**run**, not per file, so a second run of the same file is visible rather than
+**`schema_migrations`** — one row per migration **run**, not per file, so a second run of the same file is visible rather than
 overwriting the first. Records outcome too, so a failure is history rather than
 a hole. **Nobody can read it through the API**: RLS on with no policies, plus a
 revoke from `public, anon, authenticated`. It is operational metadata and the
@@ -389,12 +388,15 @@ exactly the committed form.
 | 2026-08-26 23:47 | `migrate-mute-privacy.sql` + 7-check readback | 7/7. `group_members` five-column grant, `my_group_shares()` | CLU-392 |
 | 2026-08-27 00:27 | `migrate-group-thumbs.sql` + 5-check readback | 5/5. One policy, `"read group thumbs"` | CLU-390 |
 
-**The last line is the most recent change to production.**
+| 2026-08-27 18:43 | `migrate-add-schema-ledger.sql` + 14-check readback | 14/14. `schema_migrations`, three constraints, an index, RLS deny-all, and the eighteen rows above backfilled into it | CLU-404 |
 
-**One migration is queued and not yet run:** `migrate-add-schema-ledger.sql`
-(CLU-404), which creates the ledger described in §6 item 1 and backfills the
-eighteen runs in this section. It is audited and waiting on Nathan. Until it
-runs, this table remains the only record of what has been executed.
+**The last line is the most recent change to production. Nothing is queued
+behind it.**
+
+**From this point the database records its own history.** Everything above the
+last row was reconstructed from the board; everything after it is recorded at
+run time by the migration itself. `python tools/migrations.py --verify` prints
+the read-only query that reads it back and compares checksums against the repo.
 
 ### Written and deliberately not run
 
@@ -449,19 +451,19 @@ being re-run.**
 
 An honest gap is safe. A confident guess is not.
 
-1. **The applied-migrations ledger is written but has not been run yet**
-   (CLU-404, bootstrap step 13). Until it does, there is no table, no
-   timestamps and no checksums, and the history above is reconstructed from run
-   confirmations and readbacks on the Linear board rather than from the
-   database. Where a readback was pasted (CLU-387 19/19, CLU-392 7/7,
-   CLU-390 5/5, and the policy dumps on CLU-195 and CLU-34) the claim rests on
-   the database's own answer; everywhere else it rests on inference.
+1. **Everything before 2026-08-27 rests on reconstruction, and always will.**
+   The ledger (CLU-404) now records every run from here on, but its eighteen
+   backfilled rows are the old history copied in, not observed: where a readback
+   was pasted (CLU-387 19/19, CLU-392 7/7, CLU-390 5/5, and the policy dumps on
+   CLU-195 and CLU-34) the claim rests on the database's own answer; everywhere
+   else it rests on inference. **Three of the eighteen carry
+   `outcome = 'unknown'`** because no run record exists for them at all, and
+   none of the eighteen carries a checksum — nobody knows the bytes that ran,
+   and several of those files have been edited since.
 
-   **And the ledger will not close this gap entirely, which is why item 2
-   stays.** It records what it is *told* — far better evidence than a comment
-   thread, and still not the database's own account of its own functions. Its
-   eighteen backfilled rows carry no checksum on purpose: nobody knows the bytes
-   that ran, and several of those files have been edited since.
+   **The ledger does not close item 2 either.** It records what it is *told*,
+   which is far better evidence than a comment thread and still not the
+   database's own account of its own functions.
 2. **No function body in production has been compared against a file.** If
    something were edited by hand in the SQL editor, nothing here would show it.
    The only honest check is to run each file's readback block, which is

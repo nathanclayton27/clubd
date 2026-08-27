@@ -27,7 +27,8 @@ five files is a trap, and the trap is otherwise invisible.
     python tools/whereis.py join_group      # one object
 
 It cannot see the live database and it does not pretend to. It tells you which
-files to read. `DATABASE.md` is what tells you which one ran.
+files to read. For what actually RAN, ask the database itself —
+`python tools/migrations.py --verify` — or read DATABASE.md §5.
 """
 import pathlib
 import re
@@ -35,10 +36,13 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
-# What actually ran against production, oldest first. Kept by hand because
-# nothing in the database records it — which is itself CLU-374. The authority
-# for this list is the history table in DATABASE.md; if the two disagree,
-# DATABASE.md is right and this is stale.
+# What actually ran against production, oldest first.
+#
+# This list is now the WEAKEST of the three records, and should be treated that
+# way. Since 2026-08-27 the database keeps its own — `public.schema_migrations`
+# (CLU-404) — and `python tools/migrations.py --verify` reads it back. The order
+# of authority is: the ledger, then DATABASE.md §5, then this. It survives
+# because this tool must work without a database connection.
 APPLIED = [
     "schema.sql",
     "migrate-to-multiproperty.sql",
@@ -59,6 +63,7 @@ APPLIED = [
     "migrate-groups.sql",
     "migrate-mute-privacy.sql",
     "migrate-group-thumbs.sql",
+    "migrate-add-schema-ledger.sql",
 ]
 
 # Written, never executed. Keeping these OUT of the applied list matters: while
