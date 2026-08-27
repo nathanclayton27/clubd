@@ -777,7 +777,7 @@ footer a{color:var(--steel)}
 .fw #list li .st-t::after,.fw #list summary .st h2::after{content:""}
 .fw #list li:hover > label::after{content:" 🏆";opacity:.55;font-size:.8em}
 @media (hover:none){#hfriends .aquiet,.gitem .gfr,#fp-list .fpfav,
-  #hfriends .fpfav,#fp-groups .lv,#fp-clubs .lv{opacity:.55}}
+  #hfriends .fpfav,#fp-groups .lv,#fp-clubs .lv,#hshelf .hdis{opacity:.55}}
 @media (max-width:560px){#fnote{top:74px;left:14px;right:14px;max-width:none}}
 #b-baracct:hover{border-color:var(--signal)}
 #b-baracct.hide{display:none}
@@ -955,6 +955,26 @@ footer a{color:var(--steel)}
   margin-left:auto;white-space:nowrap}
 .hrw{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;color:var(--ink-3);
   white-space:nowrap}
+/* Shelf dismiss (CLU-77). Rides the hover layer like remove and cancel do —
+   nothing at rest. Absolutely positioned so it cannot disturb the card's or
+   the row's own layout, and .hitem.top follows the card's -2px hover lift so
+   it does not drift out of alignment. Rows reserve a gutter on the right so
+   the x never lands on the n / total count. */
+#hshelf .hitem{position:relative}
+#hshelf .hdis{position:absolute;right:2px;opacity:0;transition:opacity .15s,transform .15s;
+  background:none;border:0;padding:0 3px;font:inherit;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13px;
+  color:var(--ink-3);cursor:pointer;line-height:1}
+#hshelf .hitem.top .hdis{top:14px;right:14px}
+#hshelf .hitem:not(.top) .hdis{top:12px}
+#hshelf .hitem:not(.top) .hrn{margin-right:16px}
+#hshelf .hitem:hover .hdis,#hshelf .hdis:focus-visible{opacity:1}
+#hshelf .hdis:hover{color:var(--signal)}
+#hshelf .hitem.top:hover .hdis{transform:translateY(-2px)}
+.hunb{background:none;border:0;padding:0;margin-left:auto;font:inherit;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
+  color:var(--ink-3);cursor:pointer;text-decoration:underline}
+.hunb:hover{color:var(--signal)}
 .hled{border-top:1px solid var(--rule);padding:8px 2px;display:flex;gap:10px;
   align-items:baseline;font-size:13.5px;cursor:pointer}
 .hled:hover .hlt{color:var(--signal)}
@@ -5909,7 +5929,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '850c263c939a';
+const BUILD = '73c8cad4f7a4';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -12014,23 +12034,86 @@ function evAll(slug){
   try{ return JSON.parse(localStorage.getItem('gw:evlog:'+slug)) || []; }
   catch(e){ return []; }
 }
+// CLU-77. Dismissing a club from the shelf. Stored as { slug: whenHidden }
+// rather than a flat set, because the timestamp is what makes Nathan's rule
+// work without a hook anywhere in the tick path: a dismissal lasts only until
+// the next LIVE tick on that club — "you watched it, it's back".
+//
+// Keyed on the LIVE timestamp and never on `last`, which counts backfill too
+// (see homeStats below). A batch import would otherwise silently unhide the
+// whole shelf, which is precisely what the ranking rule above refuses to let
+// backfill do.
+//
+// DEVICE-LOCAL on purpose, and the card asked for cloud sync — see CLU-402.
+// A set that must represent a DELETION is the exact shape that broke stars in
+// CLU-324: the union pushed an unstarred list straight back up from any other
+// device still holding it. That was fixed with a merge-once-per-device-per-
+// account discipline, which is reusable here but is its own piece of work.
+// Shipping the local half first keeps every acceptance criterion on the card
+// ("reload keeps it gone, ticking that club live brings it back") and does not
+// invent a cross-device story that could resurrect a dismissal.
+const HIDEKEY = 'gw:shelfhide';
+function shelfHidden(){
+  try{
+    const v = JSON.parse(localStorage.getItem(HIDEKEY) || '{}');
+    return (v && typeof v === 'object' && !Array.isArray(v)) ? v : {};
+  }catch(e){ return {}; }
+}
+function writeHidden(h){
+  try{ localStorage.setItem(HIDEKEY, JSON.stringify(h)); }catch(e){}
+}
+function hideShelf(slug){
+  const h = shelfHidden();
+  h[slug] = Date.now();
+  writeHidden(h);
+  // The x outranks the star, being the later signal (Nathan's rule). Without
+  // this the dismissal would be undone on the spot: a starred club sorts to
+  // the top of the shelf, so it would simply reappear where it was.
+  if(stars().has(slug)) toggleStar(slug);
+}
+function unhideShelf(slug){
+  const h = shelfHidden();
+  if(!(slug in h)) return false;
+  delete h[slug];
+  writeHidden(h);
+  return true;
+}
 function homeStats(){
   const now = Date.now(), D = 864e5;
   return splashList().map(m=>{
-    let score = 0, last = 0, today = 0;
+    let score = 0, last = 0, today = 0, live = 0;
     for(const e of evAll(m.slug)){
       if(e.a !== 'tick') continue;
       const t = Date.parse(e.at) || 0;
       if(t > last) last = t;
       if(e.k === 'live'){
+        if(t > live) live = t;
         const age = (now - t) / D;
         if(age < 14) score += age < 1 ? 3 : age < 3 ? 2 : 1;
         if(age < 1) today++;
       }
     }
-    return { m, n: localCount(m.slug), score, last, today,
+    return { m, n: localCount(m.slug), score, last, today, live,
              st: stars().has(m.slug) };
   });
+}
+// The ranking IS the queue — there is no separate one. Entries past the fourth
+// are already computed and simply not drawn, so removing one shifts every later
+// entry up: the fifth slides into the last row, and dismissing the top promotes
+// the second from a row into the full card.
+//
+// Filtered HERE rather than inside renderShelf because armTonight() draws from
+// the same array. Filtering at render time would leave Tonight recommending a
+// club you had just dismissed — a control that visibly did nothing.
+function shelfRank(){
+  const hid = shelfHidden();
+  return homeStats()
+    .filter(s=> (s.st || s.score > 0 || s.n > 0)
+                && !(hid[s.m.slug] && s.live <= hid[s.m.slug]))
+    .sort((a, b)=>
+      (b.st ? 1 : 0) - (a.st ? 1 : 0)
+      || (b.m.scheduled && (b.score || b.n) ? 1 : 0) - (a.m.scheduled && (a.score || a.n) ? 1 : 0)
+      || b.score - a.score || b.last - a.last || b.n - a.n);
 }
 function whyOf(s){
   const bits = [];
@@ -12048,36 +12131,81 @@ function whyOf(s){
   }
   return bits.join(' · ');
 }
+// One dismissal at a time, offered back inline. The row toasts cannot be used
+// here: rowToast bails unless a #list row exists, and its flash fallback writes
+// into #msg, which lives inside the .wrap that home hides.
+let shelfUndo = null;
 function renderShelf(shelf){
+  const host = $('hshelf');
+  // The x rides the hover layer per the row law — controls earn their moment.
+  // It is a SIBLING of the entry, never a child: both entries are <button>,
+  // and a nested button is invalid HTML that the parser relocates, which would
+  // put the handler outside the card. data-hide rather than data-slug, because
+  // wireCards() blanket-assigns "go to this list" to every button[data-slug]
+  // in here and dismissing would navigate instead.
+  const x = s=> '<button class="hdis" type="button" data-hide="'+esc(s.m.slug)+'"'
+    + ' title="Take ' + esc(s.m.title) + ' off the shelf"'
+    + ' aria-label="Take ' + esc(s.m.title) + ' off the shelf">×</button>';
+  const undoLine = ()=> shelfUndo
+    ? '<div class="hled hundo" style="cursor:default"><span class="hlt"'
+      + ' style="color:var(--ink-3)">Took <b>' + esc(shelfUndo.title)
+      + '</b> off the shelf</span>'
+      + '<button class="hunb" type="button" id="b-hundo">undo</button></div>'
+    : '';
+
   if(!shelf.length){
-    $('hshelf').innerHTML = '<div class="hled" style="cursor:default">'
+    host.innerHTML = '<div class="hled" style="cursor:default">'
       + '<span class="hlt" style="color:var(--ink-3)">Nothing on the shelf'
-      + ' yet — tick anything in the catalogue below and it lives here.</span></div>';
-    return;
+      + ' yet — tick anything in the catalogue below and it lives here.</span></div>'
+      + undoLine();
+  }else{
+    const star = '<span style="color:var(--signal)">★</span> ';
+    const top = shelf[0];
+    // the star is on the title now, so the why-line says why it is HERE
+    // rather than repeating the mark sitting two pixels above it
+    let html = '<div class="hitem top">'
+      + cardHTML(top.m, whyOf(top), false, top.st) + x(top) + '</div>';
+    setTimeout(()=>{ try{ upgradeBars(); }catch(e){} }, 0);
+    const rest = shelf.slice(1, 4);
+    if(rest.length){
+      html += '<div style="margin-top:14px">' + rest.map(s=>{
+        const tot = totalOf(s.m);
+        return '<div class="hitem">'
+          + '<button class="hrow" data-slug="'+esc(s.m.slug)+'">'
+          + '<span class="pdot" style="background:'+esc(accentOf(s.m))+'"></span>'
+          + '<span class="hrt">'+(s.st ? star : '')+esc(s.m.title)+'</span>'
+          + (whyOf(s) ? '<span class="hrw">'+esc(whyOf(s))+'</span>' : '')
+          + '<span class="hrn">'+s.n+' / '+tot+'</span>'
+          + '</button>' + x(s) + '</div>';
+      }).join('') + '</div>';
+    }
+    host.innerHTML = html + undoLine();
   }
-  const star = '<span style="color:var(--signal)">★</span> ';
-  const top = shelf[0];
-  // the star is on the title now, so the why-line says why it is HERE
-  // rather than repeating the mark sitting two pixels above it
-  let html = cardHTML(top.m, whyOf(top), false, top.st);
-  setTimeout(()=>{ try{ upgradeBars(); }catch(e){} }, 0);
-  const rest = shelf.slice(1, 4);
-  if(rest.length){
-    html += '<div style="margin-top:14px">' + rest.map(s=>{
-      const tot = totalOf(s.m);
-      return '<button class="hrow" data-slug="'+esc(s.m.slug)+'">'
-        + '<span class="pdot" style="background:'+esc(accentOf(s.m))+'"></span>'
-        + '<span class="hrt">'+(s.st ? star : '')+esc(s.m.title)+'</span>'
-        + (whyOf(s) ? '<span class="hrw">'+esc(whyOf(s))+'</span>' : '')
-        + '<span class="hrn">'+s.n+' / '+tot+'</span>'
-        + '</button>';
-    }).join('') + '</div>';
-  }
-  $('hshelf').innerHTML = html;
-  wireCards($('hshelf'));
-  $('hshelf').querySelectorAll('.hrow').forEach(b=>{
+
+  wireCards(host);
+  host.querySelectorAll('.hrow').forEach(b=>{
     b.onclick = ()=> go(b.dataset.slug);
   });
+  // Repaint through renderShelf + armTonight rather than showHome(): showHome
+  // re-runs the stranger/splash branch, so dismissing your last shelf entry
+  // while signed out would throw you to the pitch instead of the empty state,
+  // and it would re-fire two network round-trips on every click.
+  const repaint = ()=>{ const r = shelfRank(); renderShelf(r); armTonight(r); };
+  host.querySelectorAll('button[data-hide]').forEach(b=>{
+    b.onclick = ()=>{
+      const slug = b.dataset.hide;
+      const hit = shelf.find(s=> s.m.slug === slug);
+      hideShelf(slug);
+      shelfUndo = { slug, title: hit ? hit.m.title : slug };
+      repaint();
+    };
+  });
+  const ub = $('b-hundo');
+  if(ub) ub.onclick = ()=>{
+    unhideShelf(shelfUndo.slug);
+    shelfUndo = null;
+    repaint();
+  };
 }
 // Tonight: one candidate PER CLUB, then a fair draw among clubs — a
 // 600-row list never swamps a 10-episode one. An ordered list only ever
@@ -12635,14 +12763,10 @@ function renderLedger(){
   });
 }
 function showHome(){
-  const stats = homeStats();
   // starred beats everything — a star is the one explicit "this matters"
-  // signal the user gives; schedule-active and live ticks rank the rest
-  const shelf = stats.filter(s=> s.st || s.score > 0 || s.n > 0)
-    .sort((a, b)=>
-      (b.st ? 1 : 0) - (a.st ? 1 : 0)
-      || (b.m.scheduled && (b.score || b.n) ? 1 : 0) - (a.m.scheduled && (a.score || a.n) ? 1 : 0)
-      || b.score - a.score || b.last - a.last || b.n - a.n);
+  // signal the user gives; schedule-active and live ticks rank the rest.
+  // shelfRank() holds that comparator and the dismissal filter (CLU-77).
+  const shelf = shelfRank();
   // strangers get the splash; a signed-in person gets their home even
   // with nothing tracked yet — friends, requests, and the catalogue are
   // all still theirs (Nathan's call, 2026-08-24). And a device that
@@ -12673,6 +12797,7 @@ function showHome(){
   document.title = BRAND;
   paintMastAcct();
   try{ renderMenu(); }catch(e){ console.error('[home] menu', e); }
+  shelfUndo = null;   // an undo offer belongs to one visit, not to the key
   renderShelf(shelf);
   renderLedger();
   // the Friends header is the door to the friends page — and it must
@@ -13538,6 +13663,10 @@ loadProperty().then(()=>{
     .catch(e=> console.error('[tracker] joinSecretGroup threw', e));
   build();
   $('b-star').onclick = ()=>{
+    // Putting a list on the mantle is the later signal, so it clears any
+    // dismissal — the mirror of the x clearing the star (CLU-77). Without
+    // this the two controls could disagree: starred, and still off the shelf.
+    if(!stars().has(SLUG)) unhideShelf(SLUG);
     toggleStar(SLUG);
     paintStar();
     renderMenu();               // the menu re-sorts behind the closed panel
