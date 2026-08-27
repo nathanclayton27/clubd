@@ -1210,6 +1210,17 @@ footer a{color:var(--steel)}
    name than the destructive one is. */
 .gros .gfr2{margin-left:auto}
 .gros .gfr2 + .aquiet{margin-left:8px}
+/* CLU-413: remove obeys the row law like every other destructive control —
+   Nathan: "hide the remove text for group members for group owners unless you
+   hover the line their name is on". Scoped to the member's OWN row, not the
+   card, so hovering the group does not light up eight remove buttons at once.
+   Deliberately NOT applied to .gfr2 (add friend / add back): that is an
+   invitation rather than a destructive act, and he did not ask for it. */
+#fp-groups .gros .afrow [data-gkick]{opacity:0;transition:opacity .15s}
+#fp-groups .gros .afrow:hover [data-gkick],
+#fp-groups .gros .afrow:focus-within [data-gkick]{opacity:1}
+/* touch has no hover, so it rests faint rather than never appearing */
+@media (hover:none){#fp-groups .gros .afrow [data-gkick]{opacity:.55}}
 .acap{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
   color:var(--ink-3);margin-top:9px;line-height:1.6}
 .acap b{color:var(--ink-2);font-weight:500}
