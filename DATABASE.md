@@ -88,7 +88,7 @@ whole database follows.
 
 1. **Read the whole file**, top to bottom, including the header.
 2. **`python tools/whereis.py <object>`** for every object the file creates or
-   replaces. **23 of 73 objects here are defined in more than one file.**
+   replaces. **23 of 74 objects here are defined in more than one file.**
    Whichever runs last wins, silently.
 3. **`python tools/ordercheck.py <file.sql>`** for create-time resolution
    (trap 1). Know its limit before you lean on it — see below.
@@ -219,7 +219,7 @@ says was run**.
 
 ## 3. Bootstrap: standing up an empty project
 
-Twelve files, in this order, all at the repo root.
+Thirteen files, in this order, all at the repo root.
 
 ```
  1. schema.sql
@@ -234,7 +234,12 @@ Twelve files, in this order, all at the repo root.
 10. migrate-groups.sql
 11. migrate-mute-privacy.sql
 12. migrate-group-thumbs.sql
+13. migrate-add-schema-ledger.sql          <-- written, NOT YET RUN
 ```
+
+**Step 13 has not been run.** It is written and audited and waiting on Nathan
+(CLU-404). Everything above it is live. On a fresh project run all thirteen; on
+the live database only 13 remains.
 
 ### The order is not a preference
 
@@ -334,6 +339,13 @@ without step 8's insert protects nothing.
 
 **`rate_events`** — join-attempt counting behind `guard_group_join_rate()`.
 
+**`schema_migrations`** ⚠ *written, not yet run (CLU-404)* — one row per migration
+**run**, not per file, so a second run of the same file is visible rather than
+overwriting the first. Records outcome too, so a failure is history rather than
+a hole. **Nobody can read it through the API**: RLS on with no policies, plus a
+revoke from `public, anon, authenticated`. It is operational metadata and the
+site never touches it.
+
 ---
 
 ## 5. History: what has actually been run
@@ -349,7 +361,7 @@ The board's first issue is 2026-08-23; nothing earlier could be recorded.
 | 2026-08-19 `936e52b` | `schema.sql` | None. Inferred from the site working. |
 | 2026-08-19 `63b931c` | `migrate-to-multiproperty.sql` | Strong — a 2026-08-25 `pg_policies` dump shows `"read group progress"` using the two-argument `shares_group_with` this file introduced (CLU-34). |
 | 2026-08-19 `cacea45` | `migrate-add-owner-removal.sql` | Circumstantial — CLU-34 reasons about `"owner removes member"` as live. |
-| 2026-08-19 `af59c94` | `migrate-add-schedule-start.sql` | Circumstantial — solo schedules shipped (CLU-47). |
+| 2026-08-19 `af59c94` | `migrate-add-schedule-start.sql` | **None.** It adds `groups.schedule_start` — the date a *group* picks. *(This line used to cite CLU-47 as evidence. That card is solo schedules, it is still in Todo, and it was created four days after this date, so it cannot be evidence for anything here.)* |
 | 2026-08-21 `70c5504` | `migrate-add-join-or-create.sql` | None, and moot: `migrate-add-rate-limits.sql` replaced its function on 2026-08-24 and that run is confirmed. |
 
 None of these five was pasted into a comment, so we cannot confirm they ran in
@@ -377,8 +389,12 @@ exactly the committed form.
 | 2026-08-26 23:47 | `migrate-mute-privacy.sql` + 7-check readback | 7/7. `group_members` five-column grant, `my_group_shares()` | CLU-392 |
 | 2026-08-27 00:27 | `migrate-group-thumbs.sql` + 5-check readback | 5/5. One policy, `"read group thumbs"` | CLU-390 |
 
-**The last line is the most recent change to production. Nothing is queued
-behind it.**
+**The last line is the most recent change to production.**
+
+**One migration is queued and not yet run:** `migrate-add-schema-ledger.sql`
+(CLU-404), which creates the ledger described in §6 item 1 and backfills the
+eighteen runs in this section. It is audited and waiting on Nathan. Until it
+runs, this table remains the only record of what has been executed.
 
 ### Written and deliberately not run
 
@@ -433,13 +449,19 @@ being re-run.**
 
 An honest gap is safe. A confident guess is not.
 
-1. **There is no applied-migrations ledger** — no table, no timestamps, no
-   checksums. The history above is reconstructed from run confirmations and
-   readbacks on the Linear board, not from the database. Where a readback was
-   pasted (CLU-387 19/19, CLU-392 7/7, CLU-390 5/5, and the policy dumps on
-   CLU-195 and CLU-34) the claim rests on the database's own answer. Everywhere
-   else it rests on inference. **Building a ledger is the fix for this whole
-   class of problem and is not done.**
+1. **The applied-migrations ledger is written but has not been run yet**
+   (CLU-404, bootstrap step 13). Until it does, there is no table, no
+   timestamps and no checksums, and the history above is reconstructed from run
+   confirmations and readbacks on the Linear board rather than from the
+   database. Where a readback was pasted (CLU-387 19/19, CLU-392 7/7,
+   CLU-390 5/5, and the policy dumps on CLU-195 and CLU-34) the claim rests on
+   the database's own answer; everywhere else it rests on inference.
+
+   **And the ledger will not close this gap entirely, which is why item 2
+   stays.** It records what it is *told* — far better evidence than a comment
+   thread, and still not the database's own account of its own functions. Its
+   eighteen backfilled rows carry no checksum on purpose: nobody knows the bytes
+   that ran, and several of those files have been edited since.
 2. **No function body in production has been compared against a file.** If
    something were edited by hand in the SQL editor, nothing here would show it.
    The only honest check is to run each file's readback block, which is
@@ -467,7 +489,7 @@ database that no longer matches the file in front of them.
 This project has already paid for the alternative. `schema.sql` went behind,
 nothing said so, and **two separate pieces of work were built on it confidently
 and wrongly** (CLU-374) — one of which would have deleted a live rate limiter.
-`tools/whereis.py` exists because of it, and reports that **23 of 73 objects are
+`tools/whereis.py` exists because of it, and reports that **23 of 74 objects are
 defined in more than one file**, whichever runs last winning silently.
 
 A document like this is trusted on sight, which is what makes a stale one worse
