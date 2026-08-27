@@ -4,7 +4,9 @@ Checks the classes of bug this project has actually shipped: wikitext plumbing
 leaking into display strings, "0 films and" phrasing, ids that break build.py,
 filter values with no tagged rows, paceTiers pointing at tiers nobody uses,
 missing or out-of-range popularity values, duplicate accents, weights that are
-negative or absurd, and empty or placeholder text where a reader would see it.
+negative or absurd, empty or placeholder text where a reader would see it, and
+a hard-coded count or hours figure in a section subtitle or a blurb that the
+rows no longer support.
 """
 import json
 import pathlib
@@ -17,6 +19,76 @@ WIKI_JUNK = re.compile(r"\[\[|\]\]|\{\{|\}\}|<ref|</ref|''|&nbsp;|<br|\|\||File:
                        r"|rowspan=|colspan=|scope=|align=|style=")
 HEX = re.compile(r"^#[0-9A-Fa-f]{6}$")
 ZERO_PHRASE = re.compile(r"\b0 (films?|seasons?|games?|episodes?|entries|shows?|winners?)\b")
+
+# ---------------------------------------------------------------- stated counts
+# 53 of the generators write a literal count into a `sub` or `blurb` rather than
+# computing it, so a row added later drifts away from the prose and nothing
+# notices. Every one of those claims reconciles today; this is the net that keeps
+# it that way.
+#
+# It is deliberately a REGRESSION NET, NOT A PROOF. It arms about 862 of the
+# 1,056 count claims and 361 of the 379 hour claims, and stays silent on the two
+# shapes it cannot judge — compound subtitles ("20 films and 88 seasons") and
+# hour figures derived from `N min` inside row notes rather than from weights.
+# The naive rule (claim == len(items)) was measured first and produces 36 false
+# failures and zero true ones, so each guard below is load-bearing:
+#
+#   * len(cs) == 1 and the ADDEND guard exclude compound prose that is correct
+#     ("43 episodes, with the film where it opened", "6 films + 1 not Eon").
+#   * span() counts a range row as the episodes it covers, which is the only
+#     reason the TV lists pass: frasier, seinfeld, m*a*s*h, the-office,
+#     golden-girls, x-files and star-trek merge double-numbered broadcasts into
+#     one row and state the BROADCAST count on purpose.
+#   * the hour tolerances absorb rounding, not error. Generators round from raw
+#     minutes while `w` is stored per row to two decimals, so re-summing lands
+#     up to an hour off on criterion/s1001 (says 166, sums 166.52) and three
+#     others. Exact equality would fail those four immediately.
+#   * APPROX skips averages — persona "averages 84 hours each" is not a total.
+COUNT = re.compile(
+    r"\b(\d[\d,]*|one|two|three|four|five|six|seven|eight|nine|ten|eleven|"
+    r"twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|"
+    r"twenty|thirty|forty|fifty|sixty|a)\s+"
+    r"(films?|episodes?|games?|entries|entry|seasons?|features?|novels?|books?|"
+    r"issues?|volumes?|chapters?|stories|story|shorts?|specials?|serials?|"
+    r"shows?|winners?|parts?|sessions?|cuts?|works?|broadcasts?|releases?|OVAs?)\b",
+    re.I)
+ADDEND = re.compile(r"\bplus\b|\+|\bwith\b|\band\b|\bof\b|\bnot\b|\boptional\b"
+                    r"|\bbonus\b|\bunaired\b|\beither side\b|\bin \d+ rows\b|,", re.I)
+HOURS = re.compile(r"\b(\d[\d,]*)\s+hours?\b")
+APPROX = re.compile(r"\beach\b|\baverages?\b|\bapiece\b", re.I)
+# The dash class must include U+2010..U+2015. The property files use U+2013 in
+# `n` values like "S4E1-2"; an ASCII-only hyphen makes every ranged row count as
+# one and the count rule then fires on all seven TV lists at once.
+RANGE = re.compile(r"(\d+)\s*[‐-―-]\s*(\d+)\s*$")
+
+
+def span(n):
+    """How many numbered things a row covers. "S4E1-2" is two episodes."""
+    m = RANGE.search(str(n or ""))
+    if m:
+        a, b = int(m.group(1)), int(m.group(2))
+        if b >= a:
+            return b - a + 1
+    return 1
+
+
+def wsum(items):
+    """Total weight, or None when any row is unweighted.
+
+    Mirrors the rule already set in src/build.py: a partial total is refused
+    rather than averaged, because an unweighted row means "length unverified"
+    and inventing one is the bug CLU-131 is about.
+    """
+    if not items:
+        return None
+    tot = 0.0
+    for x in items:
+        w = x.get("w")
+        if not isinstance(w, (int, float)) or isinstance(w, bool) or w < 0:
+            return None
+        tot += w
+    return tot
+
 
 findings = collections.defaultdict(list)
 accents, pops = {}, {}
@@ -85,6 +157,30 @@ for f in sorted(PROPS.glob("*.json")):
             if ZERO_PHRASE.search(v):
                 findings[slug].append("zero-phrase in section %s: %r"
                                       % (s.get("id"), v[:60]))
+
+        # A subtitle that states one plain count, and nothing that would make it
+        # a sum of parts, has to match either the rows or the things they cover.
+        # Findings stay pure ASCII on purpose: subs carry U+00B7 and U+2013, and
+        # echoing one into a message raises UnicodeEncodeError on a Windows
+        # console, turning a lint finding into a crash that shows nothing.
+        sub = s.get("sub") or ""
+        items = s.get("items", [])
+        cs = COUNT.findall(sub)
+        if len(cs) == 1 and cs[0][0][:1].isdigit() and not ADDEND.search(sub):
+            claim = int(cs[0][0].replace(",", ""))
+            covered = sum(span(x.get("n", "")) for x in items)
+            if claim != len(items) and claim != covered:
+                findings[slug].append(
+                    "section %s says %d %s but has %d rows covering %d"
+                    % (s.get("id"), claim, cs[0][1].lower(), len(items), covered))
+        tw = wsum(items)
+        if tw is not None and not APPROX.search(sub):
+            for h in HOURS.findall(sub):
+                if abs(int(h.replace(",", "")) - tw) > 1.0:
+                    findings[slug].append(
+                        "section %s says %s hours but its rows weigh %.1f"
+                        % (s.get("id"), h, tw))
+
         for x in s.get("items", []):
             ids.append(x.get("id"))
             # build.py only enforces the strict charset on slugs and section
@@ -109,6 +205,24 @@ for f in sorted(PROPS.glob("*.json")):
     dupes = [k for k, c in collections.Counter(ids).items() if c > 1]
     if dupes:
         findings[slug].append("duplicate ids: %s" % dupes[:4])
+
+    # A blurb's hours figure may legitimately mean any of three scopes, and all
+    # three are in use: pixar's "about 52 hours" excludes the optional shorts,
+    # raimi's "about 30 hours" excludes the TV rows, and pokemon's "add 237
+    # more" is the optional remainder. So a claim passes if it matches any of
+    # them, and only a figure matching none is a finding.
+    blurb = p.get("blurb") or ""
+    if blurb and not APPROX.search(blurb):
+        allit = [x for s in p.get("sections", []) for x in s.get("items", [])]
+        tot = wsum(allit)
+        if tot is not None:
+            req = sum(x.get("w", 0) for x in allit if not x.get("opt"))
+            for h in HOURS.findall(blurb):
+                v = int(h.replace(",", ""))
+                if min(abs(v - tot), abs(v - req), abs(v - (tot - req))) > 1.5:
+                    findings[slug].append(
+                        "blurb says %s hours; rows weigh %.1f total, %.1f required"
+                        % (h, tot, req))
 
     flt = p.get("filter")
     if flt:
