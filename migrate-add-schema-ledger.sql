@@ -97,9 +97,10 @@ create table if not exists public.schema_migrations (
 -- NAMES, stop loudly instead of half-applying against it.
 --
 -- Names only: types, nullability, defaults and the identity property are NOT
--- checked. A pre-existing table with the right names and wrong types passes
--- here and fails later on the first insert — inside this transaction, so it
--- still cannot half-apply.
+-- checked. A pre-existing table with the right names and the wrong types
+-- passes here and fails further down — at the sequence revoke with 42P01 if
+-- its `id` is not an identity column, otherwise on the first insert. Either
+-- way it is inside this transaction, so it still cannot half-apply.
 do $$
 declare
   missing text;
@@ -245,7 +246,7 @@ on conflict on constraint schema_migrations_run_uk do nothing;
 
 insert into public.schema_migrations
   (filename, applied_at, checksum, source, outcome, evidence, note)
-values ('migrate-add-schema-ledger.sql', now(), 'bf69b0fad254dcca851fbe1985ac0577c441792844d6aed8f9c2d0acd87dacb5', 'recorded', 'applied', 'CLU-404', null);
+values ('migrate-add-schema-ledger.sql', now(), 'de9ce22f4d1bbe8e6e30222f0ea26eb5519ebd168b0ec2639e41aa2b0269d1fd', 'recorded', 'applied', 'CLU-404', null);
 
 commit;
 

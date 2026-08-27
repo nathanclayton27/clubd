@@ -94,15 +94,19 @@ VERIFY = """-- Read-only. Run in the Supabase SQL editor and paste the output ba
 -- Nothing here writes.
 
 -- 1. what the database says has run, most recent first.
---    `how_sure` is the column to read second. Three backfilled rows have no
---    run record at all and are marked outcome='unknown'; two more rest on a
---    commit hash rather than a confirmation. Without this column the outcome
---    reads as fact for all eighteen.
+--    `how_sure` is the column to read second. THREE of the eighteen backfilled
+--    rows have no run record and are marked outcome='unknown' — two of those
+--    three rest on a commit hash, the third on nothing at all. Without this
+--    column the outcome reads as fact for all eighteen.
 select filename, applied_at, outcome, source,
        case
-         when source = 'recorded'     then 'observed at run time'
-         when evidence is null        then 'NO EVIDENCE — inferred only'
-         when evidence like 'commit%' then 'commit only, no run record'
+         when source = 'recorded'      then 'observed at run time'
+         when evidence is null         then 'NO EVIDENCE — inferred only'
+         when evidence like 'commit%'  then 'commit only, no run record'
+         -- checked BEFORE the board-confirmed branch: two rows cite a card
+         -- that merely reasons about the change as live, which is not the
+         -- same as a confirmation and must not be labelled as one
+         when note like '%circumstantial%' then 'circumstantial: ' || evidence
          else 'board-confirmed: ' || evidence
        end as how_sure,
        coalesce(left(checksum, 12), '(none)') as checksum
