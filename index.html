@@ -552,6 +552,18 @@ li.done .ttl,li.done .num{color:var(--ink-3);text-decoration:line-through;text-d
 #list li:hover .thb:not(.sec),#list li.act .thb:not(.sec),
 #list li:focus-within .thb:not(.sec){transition:opacity .15s}
 .thb:hover,.thb:focus-visible{opacity:1;border-color:var(--ink-2)}
+/* CLU-411: while the pair is OPEN both marks read at the same weight. They did
+   not — the secondary escapes the `.6` rule above through `:not(.sec)` and then
+   takes `opacity:1`, while the primary has no such escape and stayed at `.6`
+   even under the cursor, because that rule carries an #id and outranks
+   `.thb:hover`. So the two sat at different strengths side by side, and the
+   brighter one was whichever was NOT being pointed at.
+   The cursor is marked by the border going to --ink-2, which is the job
+   brightness was doing badly. This needs an #id of its own to outrank the
+   `.6` above. */
+#list li:hover .thpair:hover .thb.pri,
+#list li.act .thpair:hover .thb.pri,
+#list li:focus-within .thpair:focus-within .thb.pri{opacity:1}
 /* CLU-356: one pill per row, the opposite waiting UNDER it.
    Anchored on `right`, not a transform: the two pills are not always the
    same width — a pill carrying a friends count is wider — and `right:100%`
@@ -5940,7 +5952,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'be8ab013ebed';
+const BUILD = '86e7947bb82e';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
