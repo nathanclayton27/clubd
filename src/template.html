@@ -991,6 +991,11 @@ footer a{color:var(--steel)}
   color:var(--ink-3)}
 .sfoot a{color:inherit}
 .sfoot a:hover{color:var(--signal)}
+/* CLU-133: the tip link is the site's own text in the site's own grey — the
+   dashed underline the rest of the site uses for a quiet link, and nothing
+   that reads as a badge. */
+.sfoot a.tipl{border-bottom:1px dashed var(--rule-2)}
+.sfoot a.tipl:hover{border-color:var(--signal)}
 .phome{display:block;width:100%;text-align:left;font:inherit;font-size:13.5px;
   background:none;border:0;border-bottom:1px solid var(--rule);
   padding:11px 12px;cursor:pointer;color:var(--ink-2)}
@@ -1525,6 +1530,21 @@ footer a{color:var(--steel)}
       <div class="acap">same email, same account — sign in with Google tonight
         and a mailed link next week and you land in the same place.
         <b>Nothing to merge, nothing to choose.</b></div>
+    </div>
+
+    <!-- CLU-133. His picks were 1 and 2 together: the footer link and this row.
+         Deliberately NOT in the data card below, which holds the destructive
+         controls — a tip jar next to Delete my account reads as a toll. No Ko-fi
+         branding: no coral, no cup, no badge. A brand colour would be the
+         loudest thing on the page, which is the opposite of what was asked. -->
+    <div class="acard">
+      <div class="ak">keeping the lights on</div>
+      <div class="arow">
+        <span class="aval"><b>Hosting clubd costs dosh man!</b><br>
+          <span class="acap" style="margin:0">entirely optional, and nothing on
+            the site changes if you never do.</span></span>
+        <a class="abtn" href="https://ko-fi.com/nathanclayton" target="_blank"
+           rel="noopener noreferrer">Tip jar</a></div>
     </div>
 
     <div class="acard">
@@ -9827,6 +9847,8 @@ loadProperty().then(()=>{
 });
 }
 </script>
-<footer class="sfoot"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
+<footer class="sfoot"><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+  · <a href="https://ko-fi.com/nathanclayton" target="_blank" rel="noopener noreferrer"
+       class="tipl">buy the server a mb of ram</a></footer>
 </body>
 </html>
