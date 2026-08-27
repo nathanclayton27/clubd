@@ -4,6 +4,7 @@
   "subtitle": "the films the genre's canon agrees on, in release order",
   "kind": "films",
   "popularity": 50,
+  "random": true,
   "year": "1977–2024",
   "blurb": "Every film here is named by at least three of eleven published best-of-body-horror lists, Eraserhead to The Substance — about 31 hours, in the order they came out.",
   "unit": {

@@ -158,6 +158,11 @@ def main():
         # nineteen, and a warning list rather than a watchlist — so it sits
         # just under it, beside Real Time (30) and One Location (28).
         "popularity": 31,
+        # A list of versions to avoid, in no particular order — there is
+        # nothing to work through
+        # (Nathan, CLU-372, approved 2026-08-27). Prerequisites, where any
+        # exist, live in tools/data/sequences.json and are enforced separately.
+        "random": True,
         "year": "1977–2001",
         "blurb": "%d films whose later cut is the one to avoid, from the Star "
                  "Wars Special Editions to the Donnie Darko director's cut. A "

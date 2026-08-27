@@ -4,6 +4,7 @@
   "subtitle": "five films, five versions to skip",
   "kind": "films",
   "popularity": 31,
+  "random": true,
   "year": "1977–2001",
   "blurb": "5 films whose later cut is the one to avoid, from the Star Wars Special Editions to the Donnie Darko director's cut. A row exists only where Wikipedia says the cut landed worse.",
   "unit": {

@@ -2211,7 +2211,8 @@
       "many": "films"
     },
     "total": 211,
-    "totalw": 330.67
+    "totalw": 330.67,
+    "random": true
   },
   {
     "slug": "berserk-manga",
@@ -2966,7 +2967,8 @@
       "one": "game",
       "many": "games"
     },
-    "total": 27
+    "total": 27,
+    "random": true
   },
   {
     "slug": "vinland-saga",
@@ -3626,7 +3628,8 @@
       "many": "films"
     },
     "total": 19,
-    "totalw": 31.25
+    "totalw": 31.25,
+    "random": true
   },
   {
     "slug": "sight-and-sound",
@@ -4004,7 +4007,8 @@
       "one": "film",
       "many": "films"
     },
-    "total": 5
+    "total": 5,
+    "random": true
   },
   {
     "slug": "real-time-films",

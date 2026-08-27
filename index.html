@@ -4030,7 +4030,8 @@ let MANIFEST = [
       "many": "films"
     },
     "total": 211,
-    "totalw": 330.67
+    "totalw": 330.67,
+    "random": true
   },
   {
     "slug": "berserk-manga",
@@ -4785,7 +4786,8 @@ let MANIFEST = [
       "one": "game",
       "many": "games"
     },
-    "total": 27
+    "total": 27,
+    "random": true
   },
   {
     "slug": "vinland-saga",
@@ -5445,7 +5447,8 @@ let MANIFEST = [
       "many": "films"
     },
     "total": 19,
-    "totalw": 31.25
+    "totalw": 31.25,
+    "random": true
   },
   {
     "slug": "sight-and-sound",
@@ -5823,7 +5826,8 @@ let MANIFEST = [
       "one": "film",
       "many": "films"
     },
-    "total": 5
+    "total": 5,
+    "random": true
   },
   {
     "slug": "real-time-films",
@@ -5985,7 +5989,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '50eb09de8c70';
+const BUILD = '21a0f77b7f12';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or

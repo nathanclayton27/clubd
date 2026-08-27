@@ -4,6 +4,7 @@
   "subtitle": "the genre-defining shooters, in release order",
   "kind": "games",
   "popularity": 60,
+  "random": true,
   "year": "1992–2020",
   "blurb": "27 shooters in the order they came out, Wolfenstein 3D to Half-Life: Alyx — about 245 hours of story across the 25 that have one.",
   "unit": {

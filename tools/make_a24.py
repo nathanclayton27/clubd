@@ -118,6 +118,11 @@ def main():
         "subtitle": "every film with a release date, in order",
         "kind": "films",
         "popularity": 66,
+        # A distributor's catalogue, not a story: the order A24 released
+        # these in says nothing about the order to watch them in
+        # (Nathan, CLU-372, approved 2026-08-27). Prerequisites, where any
+        # exist, live in tools/data/sequences.json and are enforced separately.
+        "random": True,
         "year": "2013–",
         "blurb": "Everything A24 has released or dated, A Glimpse Inside the "
                  "Mind of Charles Swan III through Elden Ring — %d films, "

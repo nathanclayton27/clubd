@@ -301,6 +301,11 @@ def main():
         # sits below the two franchise lists it overlaps — Halo (76) and
         # Half-Life & Portal (71) — per that file's second signal.
         "popularity": 60,
+        # A genre canon. The same shape as the other canons here, and the
+        # release order is history rather than an instruction
+        # (Nathan, CLU-372, approved 2026-08-27). Prerequisites, where any
+        # exist, live in tools/data/sequences.json and are enforced separately.
+        "random": True,
         "year": "1992–2020",
         "blurb": "%d shooters in the order they came out, Wolfenstein 3D to "
                  "Half-Life: Alyx — about %d hours of story across the %d "

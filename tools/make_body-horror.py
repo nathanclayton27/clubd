@@ -446,6 +446,11 @@ def main():
         # below Zombie Films' neighbours and beneath the Cronenberg
         # filmography it overlaps, per that file's second signal.
         "popularity": 50,
+        # A canon, like the Cronenberg list beside it — a shape of film,
+        # not a sequence anyone is meant to work through
+        # (Nathan, CLU-372, approved 2026-08-27). Prerequisites, where any
+        # exist, live in tools/data/sequences.json and are enforced separately.
+        "random": True,
         "year": "1977–2024",
         "blurb": "Every film here is named by at least three of eleven "
                  "published best-of-body-horror lists, Eraserhead to The "
