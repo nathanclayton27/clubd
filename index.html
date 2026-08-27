@@ -5930,7 +5930,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '9b1848bae0dd';
+const BUILD = '3e876e9df392';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6941,6 +6941,9 @@ async function onSession(session, definitive){
       // localStorage, and on a fresh device that is empty until this runs
       await primeShelf();
       await syncStars();
+      // awaited alongside stars so the shelf is correct on its FIRST paint —
+      // a dismissal arriving late would visibly pull a club off the screen
+      await syncShelfHide();
       $('homev').classList.add('hide');
       $('splash').classList.add('hide');
       if(ACCOUNT) showAccount();
@@ -6975,6 +6978,13 @@ async function onSession(session, definitive){
       console.error('[tracker] adopt threw', e);
     }
     syncStars().then(ch=>{ if(ch){ paintStar(); renderMenu(); } });
+    syncShelfHide().then(ch=>{
+      // only repaint if home is actually on screen; renderShelf on a hidden
+      // view would throw on the elements it expects
+      if(!ch || $('homev').classList.contains('hide')) return;
+      try{ const r = shelfRank(); renderShelf(r); armTonight(r); }
+      catch(e){ console.error('[tracker] shelf resync repaint', e); }
+    });
     // Thumbs ride behind everything else and answer to nobody: with the
     // table not yet created this bails on the first error and the page never
     // mentions it. Only YOUR thumbs are pulled here — the peer half hangs off
@@ -12112,23 +12122,122 @@ function shelfHidden(){
     return (v && typeof v === 'object' && !Array.isArray(v)) ? v : {};
   }catch(e){ return {}; }
 }
-function writeHidden(h){
+// CLU-403. The set follows the ACCOUNT, not the device. Same auth-metadata
+// ride as the mantle, and the same discipline, because it is the same shape of
+// data: a dismissal is the ABSENCE of something, and a union cannot represent
+// an absence. That is exactly how stars broke in CLU-324.
+const HIDEDIRTY = 'gw:shelfhide:dirty';
+const hideSeenKey = ()=> 'gw:shelfhide:merged:' + (user ? user.id : 'anon');
+
+function writeHidden(h, alsoStars){
   try{ localStorage.setItem(HIDEKEY, JSON.stringify(h)); }catch(e){}
+  if(!(user && sb)) return;
+  // ONE push, even when a star is dropped in the same gesture. Two concurrent
+  // updateUser calls each carrying a different metadata key can race, and the
+  // loser's key is simply gone — so the star half rides along here rather than
+  // going through toggleStar's own push.
+  const patch = { shelfhide: h };
+  if(alsoStars) patch.stars = alsoStars;
+  sb.auth.updateUser({ data: patch })
+    .then(()=>{ try{ localStorage.removeItem(HIDEDIRTY); }catch(e){} })
+    .catch(()=>{ try{ localStorage.setItem(HIDEDIRTY, '1'); }catch(e){} });
 }
+
 function hideShelf(slug){
   const h = shelfHidden();
   h[slug] = Date.now();
-  writeHidden(h);
   // The x outranks the star, being the later signal (Nathan's rule). Without
   // this the dismissal would be undone on the spot: a starred club sorts to
   // the top of the shelf, so it would simply reappear where it was.
-  if(stars().has(slug)) toggleStar(slug);
+  const s = stars();
+  const unstarring = s.has(slug);
+  if(unstarring){
+    s.delete(slug);
+    try{ localStorage.setItem(STARKEY, JSON.stringify([...s])); }catch(e){}
+  }
+  writeHidden(h, unstarring ? [...s] : null);
+  if(unstarring){ try{ paintStar(); renderMenu(); }catch(e){} }
 }
+
 function unhideShelf(slug){
   const h = shelfHidden();
   if(!(slug in h)) return false;
   delete h[slug];
   writeHidden(h);
+  return true;
+}
+
+// Mirrors syncStars exactly — see the comment block above syncStarsOnce for why
+// each branch is shaped the way it is. The ONE difference: this is a
+// {slug: whenHidden} map rather than a set, so the first-contact union takes
+// the NEWER timestamp per slug. A later dismissal is a later signal, which is
+// the same rule the x-beats-the-star ordering already follows.
+let hideSyncRun = null;
+function syncShelfHide(){
+  if(!user || !sb) return Promise.resolve(false);
+  if(!hideSyncRun) hideSyncRun = syncShelfHideOnce();
+  return hideSyncRun;
+}
+
+async function syncShelfHideOnce(){
+  const local = shelfHidden();
+
+  let acct = null;
+  try{
+    const { data } = await sb.auth.getUser();
+    if(data && data.user) acct = data.user;
+  }catch(e){ /* leave acct null */ }
+  if(!acct) return false;
+
+  const meta = (acct.user_metadata && acct.user_metadata.shelfhide) || {};
+  const clean = (o)=> (o && typeof o === 'object' && !Array.isArray(o)) ? o : {};
+  const M = clean(meta);
+  const merged = !!localStorage.getItem(hideSeenKey());
+  const dirty = !!localStorage.getItem(HIDEDIRTY);
+
+  const same = (a, b)=>{
+    const ka = Object.keys(a), kb = Object.keys(b);
+    return ka.length === kb.length && ka.every(k=> b[k] === a[k]);
+  };
+
+  // A push failed while offline, so this device holds an intent the account
+  // never heard. Its intent wins — including a dismissal — and is re-pushed.
+  if(dirty){
+    if(!same(local, M)){
+      try{
+        await sb.auth.updateUser({ data: { shelfhide: local } });
+        localStorage.removeItem(HIDEDIRTY);
+      }catch(e){ return false; }
+    }else{
+      try{ localStorage.removeItem(HIDEDIRTY); }catch(e){}
+    }
+    try{ localStorage.setItem(hideSeenKey(), '1'); }catch(e){}
+    return false;
+  }
+
+  // First contact between this device and this account: union once, newest
+  // timestamp per slug, so a device that dismissed things before signing in
+  // does not lose them.
+  if(!merged){
+    const union = Object.assign({}, M);
+    Object.keys(local).forEach(k=>{
+      if(!(k in union) || local[k] > union[k]) union[k] = local[k];
+    });
+    try{ localStorage.setItem(hideSeenKey(), '1'); }catch(e){}
+    if(!same(union, M)){
+      try{ await sb.auth.updateUser({ data: { shelfhide: union } }); }catch(e){}
+    }
+    if(!same(union, local)){
+      try{ localStorage.setItem(HIDEKEY, JSON.stringify(union)); }catch(e){}
+      return true;
+    }
+    return false;
+  }
+
+  // Merged before: the account decides, so a dismissal made anywhere sticks —
+  // and so does an undo.
+  if(same(local, M)) return false;
+  try{ localStorage.setItem(HIDEKEY, JSON.stringify(M)); }catch(e){}
   return true;
 }
 function homeStats(){
