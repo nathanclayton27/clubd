@@ -1,6 +1,28 @@
 -- clubd — thumbs: the taste signal behind recommendations (CLU-43)
 --
--- Run ONCE in the Supabase SQL editor. Additive and safe to re-run.
+-- THIS FILE IS PART OF THE BOOTSTRAP. Run it on a fresh project.
+--
+-- It was in superseded/ until 2026-08-27, which was a real bug: it is the ONLY
+-- definition anywhere in this repo of the `thumbs` table, its two indexes and
+-- its four own-row policies. A fresh install that obeyed that folder's "do not
+-- paste" README would have ended up with no thumbs table at all, and the site
+-- would have degraded silently because every thumbs call swallows a 42P01.
+--
+-- What was actually superseded is one policy — `mutual friends read thumbs` —
+-- which now lives in superseded/migrate-add-thumbs-friends-policy.sql and must
+-- NOT be run. FINAL-1 replaced it with a version carrying the gated-list and
+-- privacy terms.
+--
+-- Re-running this file IS safe, and for a reason worth stating rather than
+-- trusting: the table and indexes are `if not exists`, and each of the four
+-- policies is a `drop policy if exists` followed by a `create policy`.
+--
+-- Drop-then-create is normally the dangerous pattern here — it is exactly how
+-- the retired file below silently reverted two later protections. It is safe
+-- in THIS file only because these four policies have no later definition
+-- anywhere: `auth.uid() = user_id` is the whole rule and nothing has ever
+-- widened or narrowed it. If that stops being true, this file becomes a trap
+-- and belongs in superseded/ with the other half.
 --
 -- ===========================================================================
 -- RUN ORDER — THE FRONT END IS ALREADY OUT, AND THAT IS FINE.
@@ -84,17 +106,3 @@ create policy "update own thumbs" on public.thumbs
 drop policy if exists "delete own thumbs" on public.thumbs;
 create policy "delete own thumbs" on public.thumbs
   for delete using (auth.uid() = user_id);
-
--- Mutual friends may READ, and only read — the same shape as the friend
--- shelves policy (CLU-72), deliberately copied rather than reinvented: both
--- directions of the friendship must exist, so nobody one-sided sees anything.
--- There is no matching write policy and there never should be.
-drop policy if exists "mutual friends read thumbs" on public.thumbs;
-create policy "mutual friends read thumbs" on public.thumbs
-  for select using (
-    exists (select 1 from public.friendships f1
-            where f1.a = auth.uid() and f1.b = thumbs.user_id)
-    and
-    exists (select 1 from public.friendships f2
-            where f2.a = thumbs.user_id and f2.b = auth.uid())
-  );

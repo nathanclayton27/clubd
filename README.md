@@ -322,17 +322,19 @@ fetch.
 Optional. Without it everything works, progress just doesn't sync across
 devices.
 
-1. Create a project at [supabase.com](https://supabase.com).
-2. In the SQL editor, run [`schema.sql`](schema.sql). *Migrating an existing
-   single-property install instead? Run
-   [`migrate-to-multiproperty.sql`](migrate-to-multiproperty.sql).*
-   Then run any `migrate-*.sql` newer than your install, in any order — each is
-   safe to run twice. The current set is
-   [`migrate-add-owner-removal.sql`](migrate-add-owner-removal.sql),
-   [`migrate-add-schedule-start.sql`](migrate-add-schedule-start.sql) and
-   [`migrate-add-join-or-create.sql`](migrate-add-join-or-create.sql), the last
-   of which is what lets a password-gated list drop everyone who opens it into
-   one shared group.
+1. Create a project at [supabase.com](https://supabase.com). It has to be
+   Supabase rather than stock Postgres — the SQL assumes the `anon`,
+   `authenticated` and `service_role` roles exist and nothing here creates them.
+2. In the SQL editor, run the twelve files listed in
+   [**`DATABASE.md`**](DATABASE.md#3-bootstrap-standing-up-an-empty-project),
+   **in the order given**. The order is not a preference; most of its edges are
+   forced, and getting one wrong fails either loudly or — worse — silently.
+
+   That file is also where to look before running anything against a database
+   that already has data in it. Several files here are safe on an empty project
+   and destructive on a live one, `superseded/` holds files that must never be
+   run at all, and `schema.sql`'s functions and policies are behind production
+   even though its tables are current.
 3. Authentication → URL Configuration: set **Site URL** to your Pages URL and
    add it under **Redirect URLs**. Add `http://localhost:8000/**` too, or local
    sign-in bounces to production.

@@ -9,6 +9,27 @@
 -- mention `private_properties`, `is_private_property()`, `club_progress`, the
 -- rate limiter, or the five privacy settings at all.
 --
+-- ---------------------------------------------------------------------------
+-- ##  DATABASE.md IS THE RECORD. THIS FILE IS STEP 1 OF ITS BOOTSTRAP.      ##
+-- ---------------------------------------------------------------------------
+--
+-- Running this file ALONE does not produce the live database. It is the first
+-- of twelve, and the other eleven are listed in order in DATABASE.md, which
+-- also holds what has actually been run, when, and what is safe to run now.
+--
+-- Before copying ANY definition out of this file, run:
+--     python tools/whereis.py <object>
+-- 23 of 73 objects here are defined in more than one file, and whichever runs
+-- last wins with no error raised.
+--
+-- One more thing this file gets wrong about itself: it is only PARTLY
+-- idempotent. Its policies sit in two `do $$ ... exception when
+-- duplicate_object then null` blocks, each wrapping several statements under
+-- ONE handler — so if the first policy in a block already exists, the
+-- exception aborts the block and the rest are never created, and it reports
+-- success either way. A half-applied schema.sql cannot heal itself by being
+-- re-run.
+--
 -- WHAT THIS HAS ALREADY COST, so nobody treats it as pedantry:
 --
 --   * A migration replaced `join_group()` with the body FROM THIS FILE. The
