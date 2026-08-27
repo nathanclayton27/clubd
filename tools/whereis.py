@@ -170,5 +170,5 @@ if __name__ == "__main__":
             print("do not exist in the database:")
             for kind, name in sorted(ghost):
                 print("    %-8s %s" % (kind, name))
-        print("\nThis reads FILES, not the database. DATABASE.md is the record of")
-        print("what actually ran.")
+        print("\nThis reads FILES, not the database. For what actually RAN, ask")
+        print("the database: python tools/migrations.py --verify")
