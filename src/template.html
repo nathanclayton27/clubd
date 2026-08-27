@@ -1418,7 +1418,8 @@ footer a{color:var(--steel)}
         <label class="t" for="a-share"><b>Friends can see my progress</b>
           <span>your progress and your thumbs show to anyone you are mutual
             friends with. Off, they see your name and nothing under it. Clubs
-            you are in still see your progress, and you stay friends.</span></label></div>
+            you are in still see your progress and your thumbs, and you stay
+            friends.</span></label></div>
       <div class="atog"><input type="checkbox" id="a-showticks"
              aria-label="Show my ticks to friends">
         <label class="t" for="a-showticks"><b>Show my ticks to friends</b>
@@ -2508,7 +2509,10 @@ function readThumbs(){
   }catch(e){ return { items:{}, list:null }; }
 }
 let THUMBS = readThumbs();
-let FTH = null;          // friends' thumbs, or null while nobody has told us
+let FTH = null;          // peers' thumbs BY USER ID, or null while nobody has told us
+// Whose thumbs the switcher currently has selected. Refreshed by paintThumbs,
+// so a switch narrows the rows on the same frame with no round trip (CLU-390).
+let THAUD = new Map();
 let THBROKEN = false;    // the table is not there yet — stop asking for it
 function writeThumbs(){
   try{ localStorage.setItem(THKEY, JSON.stringify(THUMBS)); }catch(e){}
@@ -2517,10 +2521,16 @@ function writeThumbs(){
 function thumbOf(item){
   return item === null ? THUMBS.list : (THUMBS.items[item] || null);
 }
+// Filtered against the LIVE audience rather than against whatever was fetched.
+// That is what makes switching to Just me empty the row on the same frame, and
+// what makes a sign-out self-heal: it blanks gmembers directly rather than
+// going through loadMembers, so a fetch-time filter would leave the previous
+// club's names sitting on the rows until a reload.
 function thFriends(item, dir){
   if(!FTH) return [];
   const bag = item === null ? FTH.list : FTH.items[item];
-  return (bag && bag[dir]) || [];
+  const ids = (bag && bag[dir]) || [];
+  return ids.filter(id=> THAUD.has(id)).map(id=> THAUD.get(id));
 }
 
 // The cloud half, all of it best-effort. A missing table, a signed-out
@@ -2567,20 +2577,32 @@ async function pullThumbs(){
   });
   if(moved){ writeThumbs(); paintThumbs(); }
 }
-// Friends' thumbs. Needs both the table and the mutual-friends read policy,
-// and one migration brings both — so a single silent bail covers the whole
-// pre-migration world.
-async function pullFriendThumbs(){
-  if(!user || !sb || !SLUG || THBROKEN || FBROKEN) return;
-  let E = null;
-  try{ E = await friendEdges(); }catch(e){}
-  if(!E) return;
-  const mutual = E.ids.filter(i=> E.out.has(i) && E.inn.has(i));
-  if(!mutual.length) return;
+// Peers' thumbs, scoped to whoever the switcher has selected (CLU-390). The
+// friend graph is not consulted at all any more — gmembers already carries the
+// ids and the names, and it is the same roster the strip is drawing.
+//
+// Two policies OR together to permit the read: "mutual friends read thumbs"
+// covers a friend comparison, and "read group thumbs" covers a club or group
+// co-member who is not a friend. Anyone RLS withholds — a group co-member who
+// hid this list — is simply absent from the rows, which is what silence has
+// always meant here.
+//
+// Ids are stored, not names: thFriends resolves them against the live audience
+// at render time, so the rows narrow the instant the switcher moves.
+let THWHO = '';   // the audience last fetched, so the 45s poll costs nothing
+async function pullPeerThumbs(){
+  if(!user || !sb || !SLUG || THBROKEN) return;
+  const peers = drawingPeople() ? gmembers.filter(m=> m.id !== user.id) : [];
+  const key = peers.map(m=> m.id).sort().join(',');
+  if(key === THWHO) return;
+  // claimed BEFORE the await: boot and the first loadMembers would otherwise
+  // fire the same query twice
+  THWHO = key;
+  if(!peers.length){ FTH = null; paintThumbs(); return; }
   let r = null;
   try{
     r = await sb.from('thumbs').select('user_id,item_id,direction')
-      .eq('property_id', SLUG).in('user_id', mutual);
+      .eq('property_id', SLUG).in('user_id', peers.map(m=> m.id));
   }catch(e){ THBROKEN = true; return; }
   if(!r || r.error){ THBROKEN = true; return; }
   const out = { items:{}, list:{ up:[], down:[] } };
@@ -2589,8 +2611,7 @@ async function pullFriendThumbs(){
     const bag = (row.item_id === null || row.item_id === undefined)
       ? out.list
       : (out.items[row.item_id] = out.items[row.item_id] || { up:[], down:[] });
-    // a stale profile may be nameless; the count is still true
-    bag[row.direction].push(E.names[row.user_id] || 'someone');
+    bag[row.direction].push(row.user_id);
   });
   FTH = out;
   paintThumbs();
@@ -2659,6 +2680,10 @@ function thSig(item){
        + '|' + thFriends(item, 'down').join(',');
 }
 function paintThumbs(){
+  // Recomputed once per paint, and fails toward showing NOBODY: an empty
+  // audience hides other people's marks, which is the safe direction to be
+  // wrong in. Every reader of thFriends is reached through this function.
+  try{ THAUD = thAudience(); }catch(e){ THAUD = new Map(); }
   document.querySelectorAll('#list .th').forEach(el=>{
     const li = el.closest('li');
     if(!li) return;
@@ -2801,9 +2826,11 @@ async function onSession(session, definitive){
     }
     syncStars().then(ch=>{ if(ch){ paintStar(); renderMenu(); } });
     // Thumbs ride behind everything else and answer to nobody: with the
-    // table not yet created both of these bail on the first error and the
-    // page never mentions it.
-    pullThumbs().then(pullFriendThumbs).catch(()=>{});
+    // table not yet created this bails on the first error and the page never
+    // mentions it. Only YOUR thumbs are pulled here — the peer half hangs off
+    // loadMembers, because that is the only place the audience is known, and
+    // gmembers is still empty at this point anyway.
+    pullThumbs().catch(()=>{});
     // list-only users must be findable by code too
     ensureFcode().then(()=> mirrorProfile());
     await refreshGroup(false);
@@ -3517,8 +3544,11 @@ $('p-hide').onchange = async e=>{
   // Both switches now govern thumbs as well as progress: FINAL-1 put
   // friend_may_read into the thumbs policy (run 2026-08-25), so hiding a list
   // hides the opinion you left on it too. Clubs are a separate policy on
-  // progress and are genuinely untouched — but note thumbs have NO club
-  // branch at all, so a club-mate never saw those either way.
+  // progress and are genuinely untouched. Thumbs now have a club branch too —
+  // migrate-group-thumbs.sql added "read group thumbs" via shares_group_with,
+  // whose club branch is unconditional and whose GROUP branch consults every
+  // privacy switch. So a club-mate does see your thumbs, and always did see
+  // your progress; a mere group-mate is governed by the switches.
   // The ratchet ticks the groups box in the DATABASE, and the returned
   // settings say so — but nothing repainted, so the box below and its hint
   // kept showing the state from before the write. A control that disagrees
@@ -4942,6 +4972,21 @@ function mutualFriends(){
 // The strip draws other people for a club and now also for a pick. Both of
 // these used to test `group` alone, which is what made a pick invisible.
 function drawingPeople(){ return !!(group || picked.length); }
+// Whose thumbs to show (CLU-390). Nathan: "have thumbs be shown matching
+// whatever graph/club tile has selected. so if you're solo dont show thumbs for
+// other people, if you're in group mode show thumbs for everyone in the group".
+// The strip's roster IS the answer — whatever the tile is drawing, minus you,
+// because your own mark is the button itself. Just me draws nobody, so Just me
+// shows nobody. Names come from the roster rather than from the fetch, so a
+// rename lands on the next poll for free.
+function thAudience(){
+  const m = new Map();
+  if(!drawingPeople()) return m;
+  gmembers.forEach(p=>{
+    if(!user || p.id !== user.id) m.set(p.id, p.name || 'someone');
+  });
+  return m;
+}
 
 function gstate(){
   const on = !!(drawingPeople() && gmembers.length);
@@ -5216,6 +5261,12 @@ async function loadMembers(){
   catch(e){ console.error('[tracker] session switch failed', e); }
   if(!group){
     gmembers = picked.length ? await loadPicked() : [];
+    // BOTH exits need this or Just me never clears — this is the early one,
+    // and it is exactly the case Nathan named. The synchronous paint is what
+    // makes the switch feel instant; the pull is fire-and-forget and paints
+    // again if it finds anything. Neither may be awaited: loadMembers is
+    // awaited by render paths and thumbs are best-effort by design.
+    paintThumbs(); pullPeerThumbs().catch(()=>{});
     return;
   }
   const gids = [group.id];
@@ -5293,6 +5344,8 @@ async function loadMembers(){
     });
   });
   gmembers = [...seen.values()];
+  // the other exit — see the note on the early return above
+  paintThumbs(); pullPeerThumbs().catch(()=>{});
 }
 
 // `done` is reassigned wholesale by reset, import and the first-sign-in merge, so
@@ -8202,9 +8255,11 @@ function recThumbs(){
   }
   return out;
 }
-// Mutual friends' thumbs across the whole catalogue. pullFriendThumbs is
-// scoped to one property because a list page only ever needs one; the shelf
-// needs all of them, so this is the same read without the property filter.
+// Mutual friends' thumbs across the whole catalogue. pullPeerThumbs is scoped
+// to one property AND to the switcher's audience, because a list page shows
+// whoever the tile is drawing (CLU-390). The shelf has no switcher to follow
+// and spans every list, so it stays mutual-friends-wide: the same read without
+// the property filter and without the roster filter.
 // Every failure — no table, no policy, no friends, no session — returns null
 // and the shelf carries on from local signals alone. A half-populated shelf
 // is worse than a quieter one.
