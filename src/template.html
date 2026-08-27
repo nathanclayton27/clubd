@@ -799,7 +799,12 @@ footer a{color:var(--steel)}
 .fw #list li .st-t::after,.fw #list summary .st h2::after{content:""}
 .fw #list li:hover > label::after{content:" 🏆";opacity:.55;font-size:.8em}
 @media (hover:none){#hfriends .aquiet,.gitem .gfr,#fp-list .fpfav,
-  #hfriends .fpfav,#fp-groups .lv,#fp-clubs .lv,#hshelf .hdis{opacity:.55}}
+  #hfriends .fpfav,#fp-groups .lv,#fp-clubs .lv{opacity:.55}}
+/* CLU-412: the shelf dismiss x rides the hover layer, so on touch it was
+   visible-but-inert — a control that cannot be operated, which is the exact
+   thing the no-dead-affordances rule forbids. Hidden until it has a gesture of
+   its own; the dismissal itself still syncs and still applies on this device. */
+@media (hover:none){#hshelf .hdis{display:none}}
 @media (max-width:560px){#fnote{top:74px;left:14px;right:14px;max-width:none}}
 #b-baracct:hover{border-color:var(--signal)}
 #b-baracct.hide{display:none}
@@ -9669,9 +9674,18 @@ if(!SLUG){
   // the auth boot must run here too — the shelf is where a fresh sign-in
   // lands, and without this the session (and the cloud shelf) never arrive
   if(CLOUD){
-    sb.auth.onAuthStateChange((_e, session)=>
+    sb.auth.onAuthStateChange((_e, session)=>{
+      // USER_UPDATED fires on every metadata write WE make — stars, the shelf
+      // dismissal set, the friend code. Re-running the whole boot for our own
+      // write repaints the page under the person using it, and it wiped the
+      // shelf's undo offer a few hundred ms after it appeared: showHome()
+      // clears the offer, and a dismissal pushes metadata, so the write raced
+      // the click (CLU-403). Nothing arrives with this event that we did not
+      // just write locally ourselves.
+      if(_e === 'USER_UPDATED') return;
       // a null INITIAL_SESSION is the one answer that is not final
-      onSession(session, _e !== 'INITIAL_SESSION'));
+      onSession(session, _e !== 'INITIAL_SESSION');
+    });
     sb.auth.getSession()
       .then(({data})=> onSession(data.session, true))
       .catch(e=>{
@@ -9715,9 +9729,18 @@ loadProperty().then(()=>{
   if(CLOUD) $('b-google').classList.remove('hide');
 
   if(CLOUD){
-    sb.auth.onAuthStateChange((_e, session)=>
+    sb.auth.onAuthStateChange((_e, session)=>{
+      // USER_UPDATED fires on every metadata write WE make — stars, the shelf
+      // dismissal set, the friend code. Re-running the whole boot for our own
+      // write repaints the page under the person using it, and it wiped the
+      // shelf's undo offer a few hundred ms after it appeared: showHome()
+      // clears the offer, and a dismissal pushes metadata, so the write raced
+      // the click (CLU-403). Nothing arrives with this event that we did not
+      // just write locally ourselves.
+      if(_e === 'USER_UPDATED') return;
       // a null INITIAL_SESSION is the one answer that is not final
-      onSession(session, _e !== 'INITIAL_SESSION'));
+      onSession(session, _e !== 'INITIAL_SESSION');
+    });
     sb.auth.getSession()
       .then(({data})=> onSession(data.session, true))
       .catch(e=>{
