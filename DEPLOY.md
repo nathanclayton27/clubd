@@ -14,9 +14,28 @@ python src/build.py                    # src/template.html + properties/ -> inde
 python scratch/jscheck.py index.html   # the generated <script> block parses
 python tools/qa_lint.py                # content rules: notes, counts, blurbs
 
-git add -- <the files you actually changed>
+git add -- index.html build.json <the source files you changed>
 git commit
 git push origin main
+```
+
+### `build.json` ships with `index.html`, always
+
+`src/build.py` writes both, and they are a matched pair. The page carries its
+own build id and polls `build.json`; when the two differ it assumes a new
+version has been deployed and reloads itself once.
+
+So committing `index.html` **without** `build.json` gives every visitor a
+spurious reload on arrival, and it keeps happening until the pair is back in
+step. It is not an infinite loop — a `sessionStorage` guard limits it to once
+per session — which is exactly why it can go unnoticed. It shipped that way on
+2026-08-27 and was found by reading `git status`, not by anything failing.
+
+Check before you push:
+
+```sh
+grep -o "BUILD = '[a-f0-9]*'" index.html    # must equal
+cat build.json                              # ...this
 ```
 
 Pages redeploys in about thirty seconds. Verify against the live site rather
