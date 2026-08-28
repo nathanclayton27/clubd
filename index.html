@@ -91,6 +91,8 @@ h1 em{font-style:normal;color:var(--signal)}
    several screen readers spell all-caps text out letter by letter, and the
    title keeps its real casing for search and for the page title. */
 .tagline.shout{text-transform:uppercase;letter-spacing:.01em;font-weight:500}
+.intro.shout p{text-transform:uppercase;letter-spacing:.01em;
+  color:var(--ink);font-weight:500}
 .strip{display:flex;flex-direction:column;gap:20px;margin:72px 0 10px}
 .striprow{display:flex;gap:1px;height:34px;align-items:flex-end;
   touch-action:pan-y;transition:margin .28s ease-out}
@@ -6044,7 +6046,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '092637b9f895';
+const BUILD = 'db83011cd20c';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -11434,6 +11436,21 @@ function wireStrip(host, grouped, lifts){
 // A property can carry copy meant only for one group — the club framing on
 // FMA:B, say. Presentation only: the property file is public, so this hides it
 // from the page, not from anyone who opens the JSON.
+// One section's worth of introduction. Normally the property's own prose;
+// under Jackass mode the section introduces itself by name, because "ALL THE
+// HELPER TEXT" was the ask and a list-wide line repeated under every section
+// would read as a bug rather than a joke.
+function introHtml(sec){
+  if(jackassOn() && !(PROP.secret && PROP.secret.blob) && sec.title){
+    return '<div class="intro shout"><p>'
+      + esc(jackassLine(sec.title)) + '</p></div>';
+  }
+  if(!sec.intro) return '';
+  return '<div class="intro">'
+    + sec.intro.split('\n\n').map(p=> '<p>'+esc(p)+'</p>').join('')
+    + '</div>';
+}
+
 // ------------------------------------------------------------- CLU-302
 // Jackass mode. It replaces the blurb — the one decorative line under a
 // list's title — and nothing else. Notes, section intros, dates, counts and
@@ -11452,8 +11469,10 @@ function setJackass(on){
 function jackassLine(title){
   const t = (title || '').trim();
   if(!t) return '';
+  // hashed on the TITLE, not the slug: hashing the slug gave every section on
+  // one list the identical opener, which reads as a template rather than a bit
   let h = 0;
-  for(let i = 0; i < SLUG.length; i++) h = (h * 31 + SLUG.charCodeAt(i)) | 0;
+  for(let i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0;
   return (Math.abs(h) % 2)
     ? 'My name is Johnny Knoxville and this is ' + t + '.'
     : "Hey, I'm Johnny Knoxville. Welcome to " + t + '.';
@@ -11515,9 +11534,10 @@ function renderHeader(){
   if(SLUG === 'jackass'){
     const on = jackassOn();
     const p = document.createElement('p');
-    p.innerHTML = '<strong>Jackass mode.</strong> Every list introduces itself '
-      + 'the way Johnny Knoxville would. It changes one line and nothing that '
-      + 'carries a fact. <button class="lv" id="b-jackass" type="button" '
+    p.innerHTML = '<strong>Jackass mode.</strong> Every list and every section '
+      + 'introduces itself the way Johnny Knoxville would. Dates, counts and '
+      + 'row notes are left alone. <button class="lv" id="b-jackass" '
+      + 'type="button" '
       + 'aria-pressed="' + (on ? 'true' : 'false') + '">'
       + (on ? 'turn it off' : 'turn it on') + '</button>';
     $('notes').appendChild(p);
@@ -13664,7 +13684,7 @@ function build(){
       +'<button class="bulk" data-sec="'+s.id+'"></button>'
       +linkHtml
       +'<span class="cnt mono" id="n-'+s.id+'"></span></summary>'
-      +(s.intro?'<div class="intro">'+s.intro.split('\n\n').map(p=>'<p>'+esc(p)+'</p>').join('')+'</div>':'')
+      +introHtml(s)
       +'<ol>'+rows+'</ol></details>';
   }).join('');
 
