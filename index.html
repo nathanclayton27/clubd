@@ -6315,7 +6315,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '580b179a90cd';
+const BUILD = 'c61397d72922';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -12094,9 +12094,14 @@ function jackassLine(title){
   // one list the identical opener, which reads as a template rather than a bit
   let h = 0;
   for(let i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0;
+  // "this is S.H.I.E.L.D.." — a title that ends in its own full stop, or in a
+  // ? or !, already closes the sentence. Only the abbreviation case needs the
+  // trailing dot dropped; a question mark keeps its own punctuation and
+  // borrows nothing.
+  const end = /[.!?]$/.test(t) ? '' : '.';
   return (Math.abs(h) % 2)
-    ? 'My name is Johnny Knoxville and this is ' + t + '.'
-    : "Hey, I'm Johnny Knoxville. Welcome to " + t + '.';
+    ? 'My name is Johnny Knoxville and this is ' + t + end
+    : "Hey, I'm Johnny Knoxville. Welcome to " + t + end;
 }
 
 function overrides(){

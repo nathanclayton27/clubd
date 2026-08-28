@@ -7714,9 +7714,14 @@ function jackassLine(title){
   // one list the identical opener, which reads as a template rather than a bit
   let h = 0;
   for(let i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) | 0;
+  // "this is S.H.I.E.L.D.." — a title that ends in its own full stop, or in a
+  // ? or !, already closes the sentence. Only the abbreviation case needs the
+  // trailing dot dropped; a question mark keeps its own punctuation and
+  // borrows nothing.
+  const end = /[.!?]$/.test(t) ? '' : '.';
   return (Math.abs(h) % 2)
-    ? 'My name is Johnny Knoxville and this is ' + t + '.'
-    : "Hey, I'm Johnny Knoxville. Welcome to " + t + '.';
+    ? 'My name is Johnny Knoxville and this is ' + t + end
+    : "Hey, I'm Johnny Knoxville. Welcome to " + t + end;
 }
 
 function overrides(){
