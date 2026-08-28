@@ -1532,6 +1532,16 @@ footer a{color:var(--steel)}
       <div class="acap">same email, same account — sign in with Google tonight
         and a mailed link next week and you land in the same place.
         <b>Nothing to merge, nothing to choose.</b></div>
+      <!-- CLU-58 asked for the trap to be surfaced, not just the happy path.
+           The card above says "same email, same account", which is true and
+           is exactly why the exception is worth naming: GitHub can withhold
+           the real address, clubd sees a stranger, and you quietly end up with
+           two accounts instead of one. Saying so here costs a sentence; not
+           saying it costs somebody their ticks. -->
+      <div class="acap"><b>One exception.</b> If GitHub is set to keep your
+        email private, clubd sees a different address and makes a
+        <b>second account</b> rather than linking it. Your progress codes,
+        below, carry your ticks across if that happens.</div>
     </div>
 
     <!-- CLU-133. His picks were 1 and 2 together: the footer link and this row.
@@ -6023,7 +6033,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '5aecffc13a4a';
+const BUILD = '334a37019991';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
