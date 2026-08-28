@@ -325,7 +325,7 @@ def main():
              "Complex, GameSpot, IGN, PC Gamer, USgamer, The A.V. Club, Den "
              "of Geek, Digital Trends, GamesRadar, Thrillist, Shortlist, "
              "TechRadar, VG247, NME, LaptopMag and Maxim among them. "
-             " %d of the %d also sit in Den of Geek's ranked thirty, "
+             "%d of the %d also sit in Den of Geek's ranked thirty, "
              "read in full as a second check. Nothing was added because it "
              "felt right." % (len(seen_dog), len(ROSTER))],
             ["Release order, not a ranking.",
