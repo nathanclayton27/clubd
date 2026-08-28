@@ -225,6 +225,19 @@ h1 em{font-style:normal;color:var(--signal)}
 .gago{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
   border:1px solid var(--rule);border-radius:var(--radius);padding:0 4px}
 #b-random{font-size:12px}
+/* The solo finish date. It sits with the pace controls rather than in the club
+   panel, because that panel needs an account and a schedule for yourself does
+   not. */
+.soloplan{display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  margin-top:8px;font-size:12px;color:var(--ink-2)}
+.soloplan input[type=date]{font:inherit;font-size:12px;padding:3px 6px;
+  border:1px solid var(--rule-2);border-radius:var(--radius);
+  background:var(--card);color:var(--ink)}
+.soloplan button{font:inherit;font-size:12px;padding:3px 9px;
+  border:1px solid var(--rule-2);border-radius:var(--radius);
+  background:transparent;color:var(--ink-2);cursor:pointer}
+.soloplan button:hover{border-color:var(--signal);color:var(--signal)}
+.soloplan .spq{color:var(--ink-3)}
 /* The door chip. Hidden at rest and revealed by OPACITY, never display: on a
    hub every row carries one, so fifteen would light up at once and any layout
    change would shift the whole page under the cursor. The lane is the one the
@@ -1747,6 +1760,7 @@ footer a{color:var(--steel)}
   </div>
   <div class="win hide" id="winline"></div>
   <label class="pscope hide" id="pscope"><input type="checkbox" id="pscope-cb"><span id="pscope-t"></span></label>
+  <div class="soloplan hide" id="soloplan"></div>
 </header>
 </div>
 
@@ -6296,7 +6310,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '0890900e08f0';
+const BUILD = '5fe501d88ffb';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -10133,6 +10147,39 @@ function shiftISO(iso, days){
 // not just the one on screen: schedule_shift_days moves one club's windows
 // without moving another's, so two clubs on the same property can genuinely be
 // asking for different things by different dates.
+// CLU-47. Scheduling should not require a club. A solo plan is deliberately
+// the SAME SHAPE a club carries — start_date, target_date, and an anchor for a
+// windowed property — so the pace engine, the behind maths, the markers, the
+// waypoint and the ICS export all work on it without knowing the difference.
+// It lives on this device, per list, because it is nobody else's business.
+//
+// It is a strict FALLBACK: with a club on screen the club's plan wins, and
+// with no solo plan stored nothing below behaves differently from before.
+const SPKEY = SLUG ? 'gw:soloplan:' + SLUG : '';
+let SOLOPLAN = null;
+function loadSoloPlan(){
+  if(!SPKEY) return null;
+  try{
+    const raw = localStorage.getItem(SPKEY);
+    const p = raw ? JSON.parse(raw) : null;
+    // a plan with no finish date and no anchor is not a plan
+    return (p && (p.target_date || p.schedule_start)) ? p : null;
+  }catch(e){ return null; }
+}
+function saveSoloPlan(p){
+  if(!SPKEY) return;
+  try{
+    if(p) localStorage.setItem(SPKEY, JSON.stringify(p));
+    else localStorage.removeItem(SPKEY);
+  }catch(e){}
+  SOLOPLAN = p;
+}
+SOLOPLAN = loadSoloPlan();
+// The run the pace engine should measure against: the club you are reading
+// with, or failing that your own plan. A club session (CLU-389) is a shared
+// run and keeps the club's dates, so this never fires inside one.
+function planOf(){ return group || (SESSION ? null : SOLOPLAN); }
+
 function windowsFor(g){
   const sched = PROP && PROP.schedule;
   if(!sched || sched.kind !== 'windows' || !(sched.windows||[]).length) return null;
@@ -10154,7 +10201,7 @@ function windowsFor(g){
     end:   shiftISO(anchor, w.offset + w.days - 1 + shift)
   }));
 }
-function windows(){ return windowsFor(group); }
+function windows(){ return windowsFor(planOf()); }
 
 // true when the property has a pace to offer but the group has not started it
 function isPaced(){
@@ -10175,7 +10222,8 @@ function scheduleWaiting(){
   const sched = PROP && PROP.schedule;
   if(!sched || sched.kind !== 'windows' || !(sched.windows||[]).length) return false;
   if(sched.windows[0].start !== undefined) return false;
-  return !(group && group.schedule_start);
+  const p = planOf();
+  return !(p && p.schedule_start);
 }
 
 function paceInfo(){
@@ -10201,9 +10249,10 @@ function paceInfo(){
       endIso, daysLeft: daysUntil(endIso), before
     };
   }
-  if(!group || !group.target_date) return null;
-  const start = new Date(group.start_date + 'T00:00:00');
-  const end   = new Date(group.target_date + 'T00:00:00');
+  const pl = planOf();
+  if(!pl || !pl.target_date || !pl.start_date) return null;
+  const start = new Date(pl.start_date + 'T00:00:00');
+  const end   = new Date(pl.target_date + 'T00:00:00');
   if(!(end - start > 0)) return null;
   const frac = Math.min(1, Math.max(0, (Date.now() - start) / (end - start)));
   // With weights the elapsed share of the calendar buys an elapsed share of
@@ -10214,7 +10263,7 @@ function paceInfo(){
   return {
     kind:'linear', expected, due:expected, target:expected,
     dueFrac:frac, targetFrac:frac, wDue: PTOTAL * frac,
-    label:'', endIso:group.target_date, daysLeft:daysUntil(group.target_date)
+    label:'', endIso:pl.target_date, daysLeft:daysUntil(pl.target_date)
   };
 }
 
@@ -10231,9 +10280,10 @@ function dueFor(idx){
     return w ? w.end : null;
   }
   if(isPaced()) return null;      // schedule not running: no item is due yet
-  if(!group || !group.target_date) return null;
-  const start = new Date(group.start_date + 'T00:00:00').getTime();
-  const end   = new Date(group.target_date + 'T00:00:00').getTime();
+  const pl = planOf();
+  if(!pl || !pl.target_date || !pl.start_date) return null;
+  const start = new Date(pl.start_date + 'T00:00:00').getTime();
+  const end   = new Date(pl.target_date + 'T00:00:00').getTime();
   if(!(end > start)) return null;
   if(!(idx >= 0 && idx < TOTAL)) return null;
   if(!PACED[idx]) return null;   // outside the timeline, so never due
@@ -10246,6 +10296,55 @@ function niceDate(iso){
     .toLocaleDateString(undefined, {month:'short', day:'numeric'});
 }
 
+// The one control CLU-47 adds. Deliberately not in the club panel: that panel
+// needs CLOUD and an account, and a schedule for yourself needs neither.
+function paintSoloPlan(){
+  const box = $('soloplan');
+  if(!box || !SLUG) return;
+  // Inside a club or a club session the club's dates are the plan, and a
+  // second date control here would be a second answer to one question.
+  // A windowed property paces itself; a finish date has nothing to bite on.
+  // Not excluded on a grab-bag. Its rows have no order, so no single row has
+  // an honest due date — but the LIST still does, and a club can already set
+  // one there. Refusing it only for a solo reader would make the same list
+  // pace differently depending on whether anyone else was in it.
+  if(group || SESSION || isPaced() || !TOTAL){
+    box.classList.add('hide'); box.innerHTML = ''; return;
+  }
+  box.classList.remove('hide');
+  const p = SOLOPLAN;
+  if(!p){
+    box.innerHTML = '<span class="spq">Finish this by a date?</span>'
+      + '<input type="date" id="sp-end" min="' + todayISO() + '">'
+      + '<button type="button" id="sp-set">Set a finish date</button>';
+  }else{
+    box.innerHTML = '<span class="spq">Finishing by <b>'
+      + esc(niceDate(p.target_date)) + '</b></span>'
+      + '<input type="date" id="sp-end" min="' + todayISO() + '" value="'
+      + esc(p.target_date) + '">'
+      + '<button type="button" id="sp-set">Change the finish date</button>'
+      + '<button type="button" id="sp-clear">remove</button>';
+  }
+  const set = $('sp-set');
+  if(set) set.onclick = ()=>{
+    const v = ($('sp-end') || {}).value || '';
+    if(!/^\d{4}-\d{2}-\d{2}$/.test(v)){ flash('Pick a date first.'); return; }
+    if(v <= todayISO()){ flash('Pick a date after today.'); return; }
+    // The start is TODAY on a first set, and is kept on a change — moving the
+    // finish date must not also quietly restart the run, which would rewrite
+    // how far behind you already are.
+    saveSoloPlan({ start_date: (SOLOPLAN && SOLOPLAN.start_date) || todayISO(),
+                   target_date: v });
+    flash('Finishing by ' + niceDate(v) + '.');
+    paintSoloPlan(); paint(); paintStack();
+  };
+  const clr = $('sp-clear');
+  if(clr) clr.onclick = ()=>{
+    saveSoloPlan(null);
+    flash('Finish date removed. Nothing is overdue now.');
+    paintSoloPlan(); paint(); paintStack();
+  };
+}
 function paintPaceToggle(){
   const box = $('pscope');
   if(!PACETIERS){ box.classList.add('hide'); return; }
@@ -13996,14 +14095,17 @@ function goToItem(id){
 // against — inventing a deadline there would be worse than saying nothing.
 // A universal group can never have one: it spans every list.
 function waypoint(){
-  if(!group || (typeof isUgroup === 'function' && isUgroup(group))) return null;
-  if(!group.target_date || !group.start_date) return null;
+  if(group && typeof isUgroup === 'function' && isUgroup(group)) return null;
+  // a solo plan gets one too: "where should I be by next week" is the same
+  // question alone, and it is the answer that makes a date worth setting
+  const pl = planOf();
+  if(!pl || !pl.target_date || !pl.start_date) return null;
   if(windows()) return null;
   const p = paceInfo();
   if(!p || p.kind !== 'linear') return null;
 
-  const start = new Date(group.start_date + 'T00:00:00');
-  const end   = new Date(group.target_date + 'T00:00:00');
+  const start = new Date(pl.start_date + 'T00:00:00');
+  const end   = new Date(pl.target_date + 'T00:00:00');
   if(!(end - start > 0)) return null;
 
   // the next occurrence of the weekday the club started on — so a Thursday
@@ -14381,6 +14483,7 @@ function paint(){
   });
   $('s-all').textContent = done.size+' / '+TOTAL;
   paintDrill();
+  paintSoloPlan();
   paintUpNext();
   // What is still ahead of you: entries always, and time where the marks have
   // real sizes. On an unweighted list the two are the same number, so the
