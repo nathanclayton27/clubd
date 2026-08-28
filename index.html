@@ -424,6 +424,14 @@ li.done .itier{opacity:.45}
   padding:3px 9px;background:transparent;cursor:pointer;white-space:nowrap;
   transition:opacity .12s,border-color .12s,color .12s}
 .bulk:hover{border-color:var(--ink);color:var(--ink)}
+/* CLU-135: the undo inside a toast. Quiet, but it has to look pressable —
+   a six-second window is short enough without making people wonder. */
+.itoast .tundo{margin-left:10px;font:inherit;font-size:12px;
+  letter-spacing:.06em;text-transform:uppercase;background:none;
+  color:var(--ink);border:1px solid var(--rule-2);border-radius:2px;
+  padding:2px 8px;cursor:pointer}
+.itoast .tundo:hover{border-color:var(--ink)}
+.itoast .tundo:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 /* the header is a title and a count, not a control panel — the button only
    appears when you point at the row it belongs to */
 .bulk{opacity:0;pointer-events:none}
@@ -6046,7 +6054,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '74ed2d9ddfef';
+const BUILD = 'c9c22c186da1';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6409,23 +6417,66 @@ function rowToastDismiss(slow){
   t.classList.remove('open');
   setTimeout(()=> t.remove(), slow ? 650 : 320);
 }
-function rowToast(id, text){
+// `act` is optional: {label, run}. Everything that called rowToast with two
+// arguments is unaffected.
+function rowToast(id, text, act){
   const li = document.querySelector('#list li[data-id="' + cssEsc(id) + '"]');
   if(!li){ flash(text); return; }
-  rowToastDismiss(false);
   const det = li.closest('details');
   if(det) det.open = true;
+  toastAfter(li, text, act);
+}
+// The same toast, under a section header rather than a row — because the
+// mark-all button lives on the header and a toast should appear where the
+// press happened (CLU-135).
+function sectionToast(secId, text, act){
+  // the mark-all button is the only thing carrying the section id, and it is
+  // inside the summary the reader just pressed — which is exactly where the
+  // toast belongs
+  const btn = document.querySelector('.bulk[data-sec="' + cssEsc(secId) + '"]');
+  const det = btn && btn.closest('details');
+  const sum = det && det.querySelector('summary');
+  if(!sum){ flash(text); return; }
+  // a collapsed section is just its header, so the toast goes under the whole
+  // <details> rather than inside it. Forcing the section open would show the
+  // toast, but it would also undo a deliberate collapse to say so.
+  toastAfter(det.open ? sum : det, text, act);
+}
+function toastAfter(anchor, text, act){
+  rowToastDismiss(false);
   const t = document.createElement('div');
   t.className = 'itoast';
   const inner = document.createElement('div');
   inner.className = 'in';
   inner.textContent = text;
+  if(act){
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'tundo';
+    b.textContent = act.label;
+    b.onclick = ()=>{ rowToastDismiss(false); act.run(); };
+    inner.appendChild(b);
+  }
   t.appendChild(inner);
-  li.after(t);
+  anchor.after(t);
   requestAnimationFrame(()=> requestAnimationFrame(()=> t.classList.add('open')));
   _toast = t;
   _toastBorn = Date.now();
   _toastTimer = setTimeout(()=> rowToastDismiss(true), 6000);
+}
+
+// Put back exactly what one press changed, and nothing else. `ids` is the set
+// the handler captured at the time; rows the reader had already ticked are not
+// in it and are never touched. Writes through the same path a normal tick does
+// so cross-list sync and the event log stay honest — an undo that skipped
+// syncTicks would leave the mirrored ticks behind on every counterpart list.
+function undoBulk(ids, wasOn){
+  if(!ids || !ids.length) return;
+  ids.forEach(i=> wasOn ? done.delete(i) : done.add(i));
+  recordEvents(ids, wasOn ? 'untick' : 'tick', 'backfill');
+  syncTicks(ids, !wasOn);
+  persist(); paint();
+  flash(ids.length + ' ' + plural(ids.length) + ' put back.');
 }
 document.addEventListener('click', e=>{
   if(_toast && !e.target.closest('li') && !_toast.contains(e.target))
@@ -13728,11 +13779,24 @@ function build(){
       const hit = sec.items.filter(shownBy);
       if(!hit.length) return;
       const full = hit.every(x=> done.has(x.id));
+      // CLU-135: only the rows this press actually FLIPS, captured now. Undo
+      // reverses precisely these, so a row you had ticked by hand before
+      // pressing mark-all survives an undo.
+      const moved = hit.filter(x=> full ? done.has(x.id) : !done.has(x.id))
+                       .map(x=> x.id);
       hit.forEach(x=> full ? done.delete(x.id) : done.add(x.id));
       // nobody watches a section in one click: mark-all is catching up
       recordEvents(hit.map(x=> x.id), full ? 'untick' : 'tick', 'backfill');
       syncTicks(hit.map(x=> x.id), !full);
       persist(); paint();
+      // this used to happen in total silence — a whole section could turn on
+      // with no acknowledgement and no way back
+      if(moved.length){
+        sectionToast(sec.id,
+          (full ? 'Cleared ' : 'Marked ') + moved.length + ' ' + plural(moved.length)
+            + ' in ' + sec.title + '.',
+          {label: 'Undo', run: ()=> undoBulk(moved, !full)});
+      }
       return;
     }
     const thumb = e.target.closest('.thb');
@@ -13756,7 +13820,9 @@ function build(){
       recordEvents(added, 'tick', 'backfill');
       syncTicks(added, true);
       persist(); paint();
-      rowToast(ORDER[upTo], 'Marked everything up to '+FLAT[upTo].t+' '+FLAT[upTo].n+'.');
+      rowToast(ORDER[upTo],
+        'Marked everything up to '+FLAT[upTo].t+' '+FLAT[upTo].n+'.',
+        added.length ? {label: 'Undo', run: ()=> undoBulk(added, true)} : null);
       return;
     }
     // With no hover to reveal it, the row's catch-up button arms on a tap of
