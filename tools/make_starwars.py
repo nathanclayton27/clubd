@@ -138,6 +138,11 @@ def main():
             bits.append("Made for television")
         if not f["runtime"]:
             bits.append("Not out yet")
+        elif f.get("estimated"):
+            # CLU-222: a guessed length is allowed, but it has to SAY it is a
+            # guess wherever it is shown. An unreleased film with a plausible
+            # runtime is otherwise indistinguishable from a measured one.
+            bits.append("Not out yet · runtime is an estimate")
         entries.append({
             "id": "sw-f-%d-%s" % (year, slug(f["t"])),
             "t": f["t"], "n": str(year),

@@ -96,7 +96,8 @@
    "page": "Star Wars: Starfighter",
    "kind": "theatrical",
    "released": "2027",
-   "runtime": null
+   "runtime": 120,
+   "estimated": true
   },
   {
    "t": "The Star Wars Holiday Special",

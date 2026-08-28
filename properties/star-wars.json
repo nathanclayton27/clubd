@@ -5,7 +5,7 @@
   "kind": "films & shows",
   "popularity": 97,
   "year": "1977–",
-  "blurb": "17 films and 39 television seasons in the order they came out — about 238 hours.",
+  "blurb": "17 films and 39 television seasons in the order they came out — about 240 hours.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -428,7 +428,7 @@
     {
       "id": "plus",
       "title": "The Disney+ era",
-      "sub": "2019–2027 · 3 films, 22 seasons · 113 hours",
+      "sub": "2019–2027 · 3 films, 22 seasons · 115 hours",
       "intro": "Television becomes the centre of gravity, and the films slow to a stop.",
       "items": [
         {
@@ -697,8 +697,8 @@
           "id": "sw-f-2027-star-wars-starfighter",
           "t": "Star Wars: Starfighter",
           "n": "2027",
-          "w": 0.0,
-          "note": "Not out yet",
+          "w": 2.0,
+          "note": "Not out yet · runtime is an estimate",
           "tier": 2,
           "tags": [
             "Films"

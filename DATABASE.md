@@ -308,8 +308,9 @@ pgcrypto lands in `public` and step 10 refuses.
 
 ### Two things this path does not give you
 
-1. **`club_progress` and `save_progress`.** The front end calls both and **no
-   file in this repo creates either.** That is not a gap in the path — the site
+1. **`club_progress` and `save_progress`.** The front end calls both, and the
+   file that creates them — `scratch/security/migrate-club-progress.sql` — is
+   **written and not yet run**, so a fresh bootstrap still ends without them. That is not a gap in the path — the site
    discovers their absence and degrades: `missingThing()` catches `42P01`,
    `PGRST205`, `42883` and `PGRST202`, the `CPGONE` / `SAVEGONE` latches trip
    once per load, and session ticks fold back into the all-time row. So the path
@@ -555,7 +556,8 @@ An honest gap is safe. A confident guess is not.
    on the board.
 4. **Which schema `pgcrypto` landed in.** `migrate-groups.sql` §0 is the only
    thing that would ever find out.
-5. **Whether `club_progress` and `save_progress` exist live.** No file creates
+5. **Whether `club_progress` and `save_progress` exist live.** Their migration
+   is written and waiting on a paste (§5); until it runs, no applied file creates
    either, and the front end is built to survive their absence — so their
    absence is invisible from the outside.
 
