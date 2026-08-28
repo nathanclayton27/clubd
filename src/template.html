@@ -225,6 +225,10 @@ h1 em{font-style:normal;color:var(--signal)}
 .gago{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
   border:1px solid var(--rule);border-radius:var(--radius);padding:0 4px}
 #b-random{font-size:12px}
+/* What you actually got through lately. Quieter than the schedule line, and
+   sitting under it, because it is a fact about you rather than a demand. */
+.ownpace{margin-top:6px;font-size:12px;color:var(--ink-3)}
+.ownpace b{color:var(--ink-2);font-weight:500}
 /* The solo finish date. It sits with the pace controls rather than in the club
    panel, because that panel needs an account and a schedule for yourself does
    not. */
@@ -1761,6 +1765,7 @@ footer a{color:var(--steel)}
   <div class="win hide" id="winline"></div>
   <label class="pscope hide" id="pscope"><input type="checkbox" id="pscope-cb"><span id="pscope-t"></span></label>
   <div class="soloplan hide" id="soloplan"></div>
+  <div class="ownpace hide" id="ownpace"></div>
 </header>
 </div>
 
@@ -5916,6 +5921,56 @@ function niceDate(iso){
     .toLocaleDateString(undefined, {month:'short', day:'numeric'});
 }
 
+// CLU-141. One line, and deliberately only one: what you have actually got
+// through on this list lately.
+//
+// Nathan cut the other half of this card — the date the rate would reach the
+// end — and he was right. It would have been the closest this product ever
+// came to a number it made up, and it feeds the same place real finish dates
+// live. There is no projection here and no rate to build one from: the line
+// reports ticks that happened, and stops.
+const PACEWIN = 30;   // days
+function ownPace(){
+  const cut = Date.now() - PACEWIN * 864e5;
+  // Only LIVE ticks. Catching up on things you saw years ago is backfill, and
+  // counting it would report a burst of reading that never happened.
+  // Last-event-wins per row, so a tick you took back is not still counted.
+  const last = new Map();
+  (evAll(SLUG) || []).forEach(e=>{
+    if(!e || !e.at) return;
+    const t = Date.parse(e.at);
+    if(!(t >= cut)) return;
+    const prev = last.get(e.i);
+    if(!prev || t >= prev.t) last.set(e.i, {t, a:e.a, k:e.k});
+  });
+  let count = 0, weight = 0, known = 0;
+  last.forEach((v, id)=>{
+    if(v.a !== 'tick' || v.k !== 'live') return;
+    // and it still has to be ticked NOW — an untick older than the window
+    // cannot undo a tick inside it, but a row that is no longer done is not
+    // something you got through
+    if(!done.has(id)) return;
+    count++;
+    const i = IDX.get(id);
+    if(i === undefined) return;
+    if(TIMED[i]){ weight += WEIGHT[i]; known++; }
+  });
+  return {count, weight, known};
+}
+function paintOwnPace(){
+  const el = $('ownpace');
+  if(!el || !SLUG) return;
+  const r = ownPace();
+  if(!r.count){ el.classList.add('hide'); el.textContent = ''; return; }
+  el.classList.remove('hide');
+  let txt = r.count + ' ' + plural(r.count);
+  // the hours only when every one of those rows carries a real runtime —
+  // a partial sum would be a smaller number presented as a total (CLU-131)
+  if(WEIGHTED && r.known === r.count && r.weight > 0)
+    txt += ' · ' + hrs(r.weight);
+  el.innerHTML = '<b>' + esc(txt) + '</b> in the last ' + PACEWIN + ' days';
+}
+
 // The one control CLU-47 adds. Deliberately not in the club panel: that panel
 // needs CLOUD and an account, and a schedule for yourself needs neither.
 function paintSoloPlan(){
@@ -5943,6 +5998,8 @@ function paintSoloPlan(){
       + '<input type="date" id="sp-end" min="' + todayISO() + '" value="'
       + esc(p.target_date) + '">'
       + '<button type="button" id="sp-set">Change the finish date</button>'
+      + '<button type="button" id="sp-ics" '
+      + 'title="One calendar event on the finish date">Calendar (.ics)</button>'
       + '<button type="button" id="sp-clear">remove</button>';
   }
   const set = $('sp-set');
@@ -5958,6 +6015,8 @@ function paintSoloPlan(){
     flash('Finishing by ' + niceDate(v) + '.');
     paintSoloPlan(); paint(); paintStack();
   };
+  const ics = $('sp-ics');
+  if(ics) ics.onclick = downloadICS;
   const clr = $('sp-clear');
   if(clr) clr.onclick = ()=>{
     saveSoloPlan(null);
@@ -6773,7 +6832,11 @@ function clubDrawer(){
   return '<div class="cdrawer" id="cdrawer">'
     + nameRow()
     + '<div class="row"><button id="b-grefresh">Refresh</button>'
-    + (windows() ? '<button id="b-gics" title="One calendar event per schedule window">Calendar (.ics)</button>' : '')
+    + ((windows() || (group && group.target_date))
+        ? '<button id="b-gics" title="'
+          + (windows() ? 'One calendar event per schedule window'
+                       : 'One calendar event on the finish date')
+          + '">Calendar (.ics)</button>' : '')
     + '<button id="b-gleave">Leave the club</button></div>'
     + roster()
     + '</div>';
@@ -9795,12 +9858,43 @@ function pickRandom(e){
 }
 
 // One all-day VEVENT per schedule window, so club dates live in calendars.
+//
+// CLU-144. ONE exporter, two callers — the club's and the solo line's. A
+// second exporter is how the two end up disagreeing about what a calendar
+// entry means, and a calendar is exactly the place that disagreement would
+// be invisible until it mattered.
+//
+// A window schedule exports its windows, as it always has. A plain finish
+// date exports THAT DATE and nothing else: it is the one date the reader
+// actually chose, and a series of derived checkpoints would be the projection
+// Nathan cut from CLU-141 wearing a calendar's clothes. This also fixes a gap
+// on the club side, where a club with a finish date and no windows could not
+// export at all.
 function icsEscape(t){ return String(t).replace(/([,;\\])/g, '\\$1').replace(/\r?\n/g, '\\n'); }
 function downloadICS(){
   const ws = windows();
-  if(!ws || !ws.length){ flash('No schedule to export.', 'gmsg2'); return; }
+  const pl = planOf();
+  if((!ws || !ws.length) && !(pl && pl.target_date)){
+    flash('No schedule to export.', group ? 'gmsg2' : 'msg'); return;
+  }
   const ymd = iso=> iso.replace(/-/g, '');
   const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//clubd//EN'];
+  if(!ws || !ws.length){
+    lines.push('BEGIN:VEVENT',
+      // its own UID stem, so a finish-date export and a window export can sit
+      // in one calendar without overwriting each other
+      'UID:gw-' + SLUG + '-finish@groupwatch',
+      'DTSTART;VALUE=DATE:' + ymd(pl.target_date),
+      'DTEND;VALUE=DATE:' + ymd(shiftISO(pl.target_date, 1)),
+      'SUMMARY:' + icsEscape('Finish ' + PROP.title),
+      'DESCRIPTION:' + icsEscape(TOTAL + ' ' + UNIT.many
+        + (group ? ', with ' + group.name : ', on your own')
+        + '. Set on ' + pl.start_date + '.'),
+      'END:VEVENT');
+    lines.push('END:VCALENDAR');
+    icsSave(lines);
+    return;
+  }
   ws.forEach((w, k)=>{
     lines.push('BEGIN:VEVENT',
       // the domain half stays as it was ON PURPOSE: a UID is an identity key,
@@ -9816,6 +9910,9 @@ function downloadICS(){
       'END:VEVENT');
   });
   lines.push('END:VCALENDAR');
+  icsSave(lines);
+}
+function icsSave(lines){
   const blob = new Blob([lines.join('\r\n')], {type: 'text/calendar'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
@@ -10104,6 +10201,7 @@ function paint(){
   $('s-all').textContent = done.size+' / '+TOTAL;
   paintDrill();
   paintSoloPlan();
+  paintOwnPace();
   paintUpNext();
   // What is still ahead of you: entries always, and time where the marks have
   // real sizes. On an unweighted list the two are the same number, so the
