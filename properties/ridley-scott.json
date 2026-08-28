@@ -1,281 +1,281 @@
 {
-  "slug": "ridley-scott",
-  "title": "Ridley Scott",
-  "subtitle": "the directed features, in release order",
-  "kind": "films",
-  "popularity": 75,
-  "year": "1977–2024",
-  "blurb": "Twenty-nine features in release order, The Duellists to Gladiator II — about 65 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
-  "unit": {
-    "one": "film",
-    "many": "films"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "accent": "#A67159",
-  "accentDark": "#F2B8A6",
-  "tiers": false,
-  "notes": [
-    [
-      "One row per film, cuts and all.",
-      "Five of these exist in more than one version according to the sources — Alien, Blade Runner, Legend, Kingdom of Heaven and Napoleon — and Blade Runner's own article counts seven of itself. None of them gets a second row. A row is something to watch and tick, and The Final Cut is not a second film to get through: a second row would either double that film's hours or have to carry no weight at all, and this list has no unweighted rows in it. So the cut is named on the row instead, and the note says which version the bar is measuring."
-    ],
-    [
-      "Bar widths are runtimes, and three of them took a decision.",
-      "All 29 come from Wikidata's runtime property, in hours, each gated on a release year within a year of the filmography's. Three items carry more than one value. Kingdom of Heaven labels its two: 144 minutes for the theatrical version and 190 for the director's cut, and this list takes the director's cut. It is the one row here that does not measure what played in cinemas, and that is the point — the long version is the one worth watching, so it is the one the row recommends and the one the bar counts. Blade Runner carries 112 and 116 with nothing to tell them apart, and Legend carries a labelled 114-minute director's cut beside an unlabelled 125 — which is neither of the two lengths it was released at, and which its own article explains as the first cut Scott assembled before the film was trimmed. For those two the film's own article decides, because it states the length of every version that actually came out; the choice is always between numbers Wikidata already carries, and no number is ever typed in from somewhere else."
-    ],
-    [
-      "Four rows where the two sources disagree by a few minutes.",
-      "Someone to Watch Over Me, 1492: Conquest of Paradise, White Squall and Matchstick Men each carry a single Wikidata runtime that runs three to seven minutes short of the single figure their own articles give. None of the four has an alternate cut and nothing says which number is right, so all 29 rows keep to the one source rather than becoming a blend of two — the same rule the rest of this catalogue follows."
-    ],
-    [
-      "The Dog Stars is not here yet.",
-      "The filmography's table has thirty rows; this list has 29. The thirtieth is The Dog Stars, which its own article calls upcoming and dates to 28 August 2026, and which carries no published runtime anywhere. It joins the day it comes out."
-    ],
-    [
-      "Directing only, and features only.",
-      "The producing is not here — 23 films he produced and 24 he executive produced, from The Browning Version to Alien: Romulus, are other directors' work. Neither is the television: seven directing credits, five of them episodes that no longer exist, plus the two episodes of Raised by Wolves and the Dope Thief pilot. Nor the commercials, the 1984 Apple spot included. The five short films are out for a plainer reason — four of them have no Wikidata item at all and so cannot be weighted, and one of those, The Crossing, is a prologue to Alien: Covenant, which is already a row here. All the Invisible Children, which a sweep of everything Wikidata credits him with directing turned up, is an anthology feature by eight directors and is not on the filmography's own feature table."
-    ],
-    [
-      "9 of these films are on other lists here.",
-      "Alien, Prometheus and Alien: Covenant on Alien & Predator; Gladiator and The Martian on Best Picture; Blade Runner and Thelma & Louise on The Criterion Collection; Matchstick Men on Nicolas Cage; Blade Runner on Sight & Sound 100; Legend on Tom Cruise. Ticking one ticks the other: film rows are paired across lists by title and year, so a film watched here is watched there. Nothing is duplicated and no hours are counted twice, because every list totals only its own rows."
-    ],
-    "Filmography from Wikipedia's Ridley Scott filmography, read from the table itself; runtimes from Wikidata, gated on a matching release year and read at statement rank; the alternate-cut lengths from the same Wikidata statements and from each film's own article."
+ "slug": "ridley-scott",
+ "title": "Ridley Scott",
+ "subtitle": "the directed features, in release order",
+ "kind": "films",
+ "popularity": 75,
+ "year": "1977–2024",
+ "blurb": "Twenty-nine features in release order, The Duellists to Gladiator II — about 65 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
+ "unit": {
+  "one": "film",
+  "many": "films"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "accent": "#A67159",
+ "accentDark": "#F2B8A6",
+ "tiers": false,
+ "notes": [
+  [
+   "One row per film, cuts and all.",
+   "Five of these exist in more than one version according to the sources — Alien, Blade Runner, Legend, Kingdom of Heaven and Napoleon — and Blade Runner's own article counts seven of itself. None of them gets a second row. A row is something to watch and tick, and The Final Cut is not a second film to get through: a second row would either double that film's hours or have to carry no weight at all, and this list has no unweighted rows in it. So the cut is named on the row instead, and the note says which version the bar is measuring."
   ],
-  "sections": [
+  [
+   "Bar widths are runtimes, and three of them took a decision.",
+   "All 29 come from Wikidata's runtime property, in hours, each gated on a release year within a year of the filmography's. Three items carry more than one value. Kingdom of Heaven labels its two: 144 minutes for the theatrical version and 190 for the director's cut, and this list takes the director's cut. It is the one row here that does not measure what played in cinemas, and that is the point — the long version is the one worth watching, so it is the one the row recommends and the one the bar counts. Blade Runner carries 112 and 116 with nothing to tell them apart, and Legend carries a labelled 114-minute director's cut beside an unlabelled 125 — which is neither of the two lengths it was released at, and which its own article explains as the first cut Scott assembled before the film was trimmed. For those two the film's own article decides, because it states the length of every version that actually came out; the choice is always between numbers Wikidata already carries, and no number is ever typed in from somewhere else."
+  ],
+  [
+   "Four rows where the two sources disagree by a few minutes.",
+   "Someone to Watch Over Me, 1492: Conquest of Paradise, White Squall and Matchstick Men each carry a single Wikidata runtime that runs three to seven minutes short of the single figure their own articles give. None of the four has an alternate cut and nothing says which number is right, so all 29 rows keep to the one source rather than becoming a blend of two — the same rule the rest of this catalogue follows."
+  ],
+  [
+   "The Dog Stars is not here yet.",
+   "The filmography's table has thirty rows; this list has 29. The thirtieth is The Dog Stars, which its own article calls upcoming and dates to 28 August 2026, and which carries no published runtime anywhere. It joins the day it comes out."
+  ],
+  [
+   "Directing only, and features only.",
+   "The producing is not here — 23 films he produced and 24 he executive produced, from The Browning Version to Alien: Romulus, are other directors' work. Neither is the television: seven directing credits, five of them episodes that no longer exist, plus the two episodes of Raised by Wolves and the Dope Thief pilot. Nor the commercials, the 1984 Apple spot included. The five short films are out for a plainer reason — four of them have no Wikidata item at all and so cannot be weighted, and one of those, The Crossing, is a prologue to Alien: Covenant, which is already a row here. All the Invisible Children, which a sweep of everything Wikidata credits him with directing turned up, is an anthology feature by eight directors and is not on the filmography's own feature table."
+  ],
+  [
+   "9 of these films are on other lists here.",
+   "Alien, Prometheus and Alien: Covenant on Alien & Predator; Gladiator and The Martian on Best Picture; Blade Runner and Thelma & Louise on The Criterion Collection; Matchstick Men on Nicolas Cage; Blade Runner on Sight & Sound 100; Legend on Tom Cruise. Ticking one ticks the other: film rows are paired across lists by title and year, so a film watched here is watched there. Nothing is duplicated and no hours are counted twice, because every list totals only its own rows."
+  ],
+  "Filmography from Wikipedia's Ridley Scott filmography, read from the table itself; runtimes from Wikidata, gated on a matching release year and read at statement rank; the alternate-cut lengths from the same Wikidata statements and from each film's own article."
+ ],
+ "sections": [
+  {
+   "id": "first",
+   "title": "The first four",
+   "sub": "1977–1985 · 4 films · 7 hours",
+   "intro": "A duel picture out of Joseph Conrad, then Alien, Blade Runner and Legend. The filmography's Producer column is a bare no on all four: he directs these and produces none of them. Two of the three National Film Registry inductees on this list are here, and so are three of the five films the sources say exist in more than one version.",
+   "items": [
     {
-      "id": "first",
-      "title": "The first four",
-      "sub": "1977–1985 · 4 films · 7 hours",
-      "intro": "A duel picture out of Joseph Conrad, then Alien, Blade Runner and Legend. The filmography's Producer column is a bare no on all four: he directs these and produces none of them. Two of the three National Film Registry inductees on this list are here, and so are three of the five films the sources say exist in more than one version.",
-      "items": [
-        {
-          "id": "rs-1977-the-duellists",
-          "t": "The Duellists",
-          "n": "1977",
-          "w": 1.67,
-          "note": "Scott also operated camera"
-        },
-        {
-          "id": "rs-1979-alien",
-          "t": "Alien",
-          "n": "1979",
-          "w": 1.95,
-          "note": "In the National Film Registry since 2002 · The bar is the 1979 release; a director's cut followed in 2003"
-        },
-        {
-          "id": "rs-1982-blade-runner",
-          "t": "Blade Runner",
-          "n": "1982",
-          "w": 1.93,
-          "note": "In the National Film Registry since 1993 · Seven versions of the film exist. The bar is the 1982 theatrical one; The Final Cut of 2007 is the only version Scott controlled"
-        },
-        {
-          "id": "rs-1985-legend",
-          "t": "Legend",
-          "n": "1985",
-          "w": 1.9,
-          "note": "The bar is the 114-minute director's cut, the only released length Wikidata records; the film went out at 89 minutes in America and 93 in Europe"
-        }
-      ],
-      "open": true
+     "id": "rs-1977-the-duellists",
+     "t": "The Duellists",
+     "n": "1977",
+     "w": 1.67,
+     "note": "Scott also operated camera"
     },
     {
-      "id": "producing",
-      "title": "The first producer credits",
-      "sub": "1987–1992 · 4 films · 8 hours",
-      "intro": "The column changes. Someone to Watch Over Me is the first film he takes any producing credit on — executive producer — and Thelma & Louise and 1492: Conquest of Paradise are the first he produces outright. Three of the four are American productions; 1492 is a French, Spanish and British one.",
-      "items": [
-        {
-          "id": "rs-1987-someone-to-watch-over-me",
-          "t": "Someone to Watch Over Me",
-          "n": "1987",
-          "w": 1.72
-        },
-        {
-          "id": "rs-1989-black-rain",
-          "t": "Black Rain",
-          "n": "1989",
-          "w": 2.08
-        },
-        {
-          "id": "rs-1991-thelma-louise",
-          "t": "Thelma & Louise",
-          "n": "1991",
-          "w": 2.15,
-          "note": "In the National Film Registry since 2016"
-        },
-        {
-          "id": "rs-1992-1492-conquest-of-paradise",
-          "t": "1492: Conquest of Paradise",
-          "n": "1992",
-          "w": 2.48
-        }
-      ]
+     "id": "rs-1979-alien",
+     "t": "Alien",
+     "n": "1979",
+     "w": 1.95,
+     "note": "In the National Film Registry since 2002 · The bar is the 1979 release; a director's cut followed in 2003"
     },
     {
-      "id": "nineties",
-      "title": "Four years off, then Gladiator",
-      "sub": "1996–2000 · 3 films · 7 hours",
-      "intro": "Four years between 1492 and White Squall, the longest break of the career to that point. Two of the three that follow went out through Buena Vista. Gladiator closes the run, and it is the last film on this list he did not produce — it also carries the second of his two camera-operator credits, uncredited this time.",
-      "items": [
-        {
-          "id": "rs-1996-white-squall",
-          "t": "White Squall",
-          "n": "1996",
-          "w": 2.08
-        },
-        {
-          "id": "rs-1997-g-i-jane",
-          "t": "G.I. Jane",
-          "n": "1997",
-          "w": 2.07
-        },
-        {
-          "id": "rs-2000-gladiator",
-          "t": "Gladiator",
-          "n": "2000",
-          "w": 2.58,
-          "note": "Scott also operated camera, uncredited"
-        }
-      ]
+     "id": "rs-1982-blade-runner",
+     "t": "Blade Runner",
+     "n": "1982",
+     "w": 1.93,
+     "note": "In the National Film Registry since 1993 · Seven versions of the film exist. The bar is the 1982 theatrical one; The Final Cut of 2007 is the only version Scott controlled"
     },
     {
-      "id": "producer",
-      "title": "Producer on every one",
-      "sub": "2001–2010 · 8 films · 19 hours",
-      "intro": "Eight films in ten years, and from Hannibal onward the Producer column is yes on every single row to the end of the list. Six of the eight are adaptations: Thomas Harris, Mark Bowden, Eric Garcia, Peter Mayle, Mark Jacobson and David Ignatius in turn.",
-      "items": [
-        {
-          "id": "rs-2001-hannibal",
-          "t": "Hannibal",
-          "n": "2001",
-          "w": 2.2
-        },
-        {
-          "id": "rs-2002-black-hawk-down",
-          "t": "Black Hawk Down",
-          "n": "2002",
-          "w": 2.38
-        },
-        {
-          "id": "rs-2003-matchstick-men",
-          "t": "Matchstick Men",
-          "n": "2003",
-          "w": 1.85
-        },
-        {
-          "id": "rs-2005-kingdom-of-heaven",
-          "t": "Kingdom of Heaven",
-          "n": "2005",
-          "w": 3.17,
-          "note": "Watch the 190-minute director's cut, not the 144-minute theatrical release — the bar measures the cut"
-        },
-        {
-          "id": "rs-2006-a-good-year",
-          "t": "A Good Year",
-          "n": "2006",
-          "w": 1.97
-        },
-        {
-          "id": "rs-2007-american-gangster",
-          "t": "American Gangster",
-          "n": "2007",
-          "w": 2.63
-        },
-        {
-          "id": "rs-2008-body-of-lies",
-          "t": "Body of Lies",
-          "n": "2008",
-          "w": 2.13
-        },
-        {
-          "id": "rs-2010-robin-hood",
-          "t": "Robin Hood",
-          "n": "2010",
-          "w": 2.33
-        }
-      ]
-    },
-    {
-      "id": "prequels",
-      "title": "Back to the Alien films",
-      "sub": "2012–2017 · 6 films · 13 hours",
-      "intro": "Prometheus arrives thirty-three years after Alien and Alien: Covenant five years after that; the Alien franchise's Wikidata item names all three as parts of itself. Five of these six went out through 20th Century Fox.",
-      "items": [
-        {
-          "id": "rs-2012-prometheus",
-          "t": "Prometheus",
-          "n": "2012",
-          "w": 2.07
-        },
-        {
-          "id": "rs-2013-the-counselor",
-          "t": "The Counselor",
-          "n": "2013",
-          "w": 1.95
-        },
-        {
-          "id": "rs-2014-exodus-gods-and-kings",
-          "t": "Exodus: Gods and Kings",
-          "n": "2014",
-          "w": 2.5
-        },
-        {
-          "id": "rs-2015-the-martian",
-          "t": "The Martian",
-          "n": "2015",
-          "w": 2.35
-        },
-        {
-          "id": "rs-2017-alien-covenant",
-          "t": "Alien: Covenant",
-          "n": "2017",
-          "w": 2.03
-        },
-        {
-          "id": "rs-2017-all-the-money-in-the-world",
-          "t": "All the Money in the World",
-          "n": "2017",
-          "w": 2.25
-        }
-      ]
-    },
-    {
-      "id": "recent",
-      "title": "After the four-year gap",
-      "sub": "2021–2024 · 4 films · 10 hours",
-      "intro": "Another four-year break, tying 1992 to 1996 as the longest of his career, and then four films in four years through four different distributors. 2017 and 2021 are the only years on this list carrying two Ridley Scott releases each.",
-      "items": [
-        {
-          "id": "rs-2021-the-last-duel",
-          "t": "The Last Duel",
-          "n": "2021",
-          "w": 2.53
-        },
-        {
-          "id": "rs-2021-house-of-gucci",
-          "t": "House of Gucci",
-          "n": "2021",
-          "w": 2.62
-        },
-        {
-          "id": "rs-2023-napoleon",
-          "t": "Napoleon",
-          "n": "2023",
-          "w": 2.63,
-          "note": "The bar is the theatrical release; a 205-minute director's cut also exists"
-        },
-        {
-          "id": "rs-2024-gladiator-ii",
-          "t": "Gladiator II",
-          "n": "2024",
-          "w": 2.47
-        }
-      ]
+     "id": "rs-1985-legend",
+     "t": "Legend",
+     "n": "1985",
+     "w": 1.9,
+     "note": "The bar is the 114-minute director's cut, the only released length Wikidata records; the film went out at 89 minutes in America and 93 in Europe"
     }
-  ]
+   ],
+   "open": true
+  },
+  {
+   "id": "producing",
+   "title": "The first producer credits",
+   "sub": "1987–1992 · 4 films · 8 hours",
+   "intro": "The column changes. Someone to Watch Over Me is the first film he takes any producing credit on — executive producer — and Thelma & Louise and 1492: Conquest of Paradise are the first he produces outright. Three of the four are American productions; 1492 is a French, Spanish and British one.",
+   "items": [
+    {
+     "id": "rs-1987-someone-to-watch-over-me",
+     "t": "Someone to Watch Over Me",
+     "n": "1987",
+     "w": 1.72
+    },
+    {
+     "id": "rs-1989-black-rain",
+     "t": "Black Rain",
+     "n": "1989",
+     "w": 2.08
+    },
+    {
+     "id": "rs-1991-thelma-louise",
+     "t": "Thelma & Louise",
+     "n": "1991",
+     "w": 2.15,
+     "note": "In the National Film Registry since 2016"
+    },
+    {
+     "id": "rs-1992-1492-conquest-of-paradise",
+     "t": "1492: Conquest of Paradise",
+     "n": "1992",
+     "w": 2.48
+    }
+   ]
+  },
+  {
+   "id": "nineties",
+   "title": "Four years off, then Gladiator",
+   "sub": "1996–2000 · 3 films · 7 hours",
+   "intro": "Four years between 1492 and White Squall, the longest break of the career to that point. Two of the three that follow went out through Buena Vista. Gladiator closes the run, and it is the last film on this list he did not produce — it also carries the second of his two camera-operator credits, uncredited this time.",
+   "items": [
+    {
+     "id": "rs-1996-white-squall",
+     "t": "White Squall",
+     "n": "1996",
+     "w": 2.08
+    },
+    {
+     "id": "rs-1997-g-i-jane",
+     "t": "G.I. Jane",
+     "n": "1997",
+     "w": 2.07
+    },
+    {
+     "id": "rs-2000-gladiator",
+     "t": "Gladiator",
+     "n": "2000",
+     "w": 2.58,
+     "note": "Scott also operated camera, uncredited"
+    }
+   ]
+  },
+  {
+   "id": "producer",
+   "title": "Producer on every one",
+   "sub": "2001–2010 · 8 films · 19 hours",
+   "intro": "Eight films in ten years, and from Hannibal onward the Producer column is yes on every single row to the end of the list. Six of the eight are adaptations: Thomas Harris, Mark Bowden, Eric Garcia, Peter Mayle, Mark Jacobson and David Ignatius in turn.",
+   "items": [
+    {
+     "id": "rs-2001-hannibal",
+     "t": "Hannibal",
+     "n": "2001",
+     "w": 2.2
+    },
+    {
+     "id": "rs-2002-black-hawk-down",
+     "t": "Black Hawk Down",
+     "n": "2002",
+     "w": 2.38
+    },
+    {
+     "id": "rs-2003-matchstick-men",
+     "t": "Matchstick Men",
+     "n": "2003",
+     "w": 1.85
+    },
+    {
+     "id": "rs-2005-kingdom-of-heaven",
+     "t": "Kingdom of Heaven (Director's Cut)",
+     "n": "2005",
+     "w": 3.17,
+     "note": "Watch the 190-minute director's cut, not the 144-minute theatrical release — the bar measures the cut"
+    },
+    {
+     "id": "rs-2006-a-good-year",
+     "t": "A Good Year",
+     "n": "2006",
+     "w": 1.97
+    },
+    {
+     "id": "rs-2007-american-gangster",
+     "t": "American Gangster",
+     "n": "2007",
+     "w": 2.63
+    },
+    {
+     "id": "rs-2008-body-of-lies",
+     "t": "Body of Lies",
+     "n": "2008",
+     "w": 2.13
+    },
+    {
+     "id": "rs-2010-robin-hood",
+     "t": "Robin Hood",
+     "n": "2010",
+     "w": 2.33
+    }
+   ]
+  },
+  {
+   "id": "prequels",
+   "title": "Back to the Alien films",
+   "sub": "2012–2017 · 6 films · 13 hours",
+   "intro": "Prometheus arrives thirty-three years after Alien and Alien: Covenant five years after that; the Alien franchise's Wikidata item names all three as parts of itself. Five of these six went out through 20th Century Fox.",
+   "items": [
+    {
+     "id": "rs-2012-prometheus",
+     "t": "Prometheus",
+     "n": "2012",
+     "w": 2.07
+    },
+    {
+     "id": "rs-2013-the-counselor",
+     "t": "The Counselor",
+     "n": "2013",
+     "w": 1.95
+    },
+    {
+     "id": "rs-2014-exodus-gods-and-kings",
+     "t": "Exodus: Gods and Kings",
+     "n": "2014",
+     "w": 2.5
+    },
+    {
+     "id": "rs-2015-the-martian",
+     "t": "The Martian",
+     "n": "2015",
+     "w": 2.35
+    },
+    {
+     "id": "rs-2017-alien-covenant",
+     "t": "Alien: Covenant",
+     "n": "2017",
+     "w": 2.03
+    },
+    {
+     "id": "rs-2017-all-the-money-in-the-world",
+     "t": "All the Money in the World",
+     "n": "2017",
+     "w": 2.25
+    }
+   ]
+  },
+  {
+   "id": "recent",
+   "title": "After the four-year gap",
+   "sub": "2021–2024 · 4 films · 10 hours",
+   "intro": "Another four-year break, tying 1992 to 1996 as the longest of his career, and then four films in four years through four different distributors. 2017 and 2021 are the only years on this list carrying two Ridley Scott releases each.",
+   "items": [
+    {
+     "id": "rs-2021-the-last-duel",
+     "t": "The Last Duel",
+     "n": "2021",
+     "w": 2.53
+    },
+    {
+     "id": "rs-2021-house-of-gucci",
+     "t": "House of Gucci",
+     "n": "2021",
+     "w": 2.62
+    },
+    {
+     "id": "rs-2023-napoleon",
+     "t": "Napoleon",
+     "n": "2023",
+     "w": 2.63,
+     "note": "The bar is the theatrical release; a 205-minute director's cut also exists"
+    },
+    {
+     "id": "rs-2024-gladiator-ii",
+     "t": "Gladiator II",
+     "n": "2024",
+     "w": 2.47
+    }
+   ]
+  }
+ ]
 }

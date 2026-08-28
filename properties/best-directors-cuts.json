@@ -1,205 +1,205 @@
 {
-  "slug": "best-directors-cuts",
-  "title": "Best Director's Cuts",
-  "subtitle": "the version that is the film, and the receipts",
-  "kind": "films",
-  "popularity": 35,
-  "year": "1958–2017",
-  "blurb": "19 films where a later cut is the one to watch — about 51 hours, every bar measuring the cut and not the release. A row exists only where Wikipedia says the cut landed better.",
-  "unit": {
-    "one": "cut",
-    "many": "cuts"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "accent": "#8F5A00",
-  "accentDark": "#F0B84A",
-  "tiers": false,
-  "random": true,
-  "notes": [
-    [
-      "What earns a row.",
-      "Wikipedia has to say, in a sentence you can point at, that the later cut was better received than the release it replaced — better or warmer reviews, “superior”, “an improvement”, “the definitive version”, or a reappraisal it credits to the cut. The sentence can come from the film's article, from the article about the cut, or from Wikipedia's “Director's cut” page. Nothing here is on the list because everyone knows it belongs; the verdict and the paragraph around it are stored with the row and re-checked every time this list is rebuilt."
-    ],
-    [
-      "The bar is the cut, not the film.",
-      "Every runtime here is the length of the version being recommended, which is why Kingdom of Heaven weighs 3.17 hours rather than the 144 minutes cinemas got. That follows the house ruling on that film, and it applies to all 19 rows. 16 of the runtimes come from a figure in the film's own article — the infobox usually carries both lengths — and 3 from Wikidata's runtime statements tagged as the director's cut."
-    ],
-    [
-      "Same film, one row.",
-      "A film that exists in several versions still gets a single row, because you do not watch it twice and because rows pair across the catalogue by title and release year. The year on the row is the film's original year; the cut's own year and length are in the note. Tick Kingdom of Heaven here and it ticks in the Ridley Scott list too."
-    ],
-    [
-      "Longest, shortest, and the odd one out.",
-      "Justice League runs 4.03 hours, the longest thing on the list by some distance. Payback is the shortest at 1.5 hours — and it is the rare director's cut that runs shorter than the release rather than longer, which is the whole reason it is interesting."
-    ],
-    [
-      "One film passed and is still not here.",
-      "Daredevil (2003). Its article says outright that “reviews were more positive than for the theatrical version” for the 2004 R-rated cut, so it passes the gate cleanly — but no source publishes how long that cut runs, and this list is weighted on the cut. Weights are all-or-nothing: one row without a number would silently count as an hour and skew every figure above. Guessing the runtime was the other option and it is not one we take. Same reason a few obvious names are missing: Aliens, Dark City, Das Boot and Legend all have a later cut their director made or supervised, and no published verdict on how it landed."
-    ],
-    "Verdicts and runtimes read from English Wikipedia — the film articles, the articles about individual cuts, and the “Director's cut” and “List of films cut over the director's opposition” pages — with three runtimes from Wikidata's P2047 statements qualified as the director's cut."
+ "slug": "best-directors-cuts",
+ "title": "Best Director's Cuts",
+ "subtitle": "the version that is the film, and the receipts",
+ "kind": "films",
+ "popularity": 35,
+ "year": "1958–2017",
+ "blurb": "19 films where a later cut is the one to watch — about 51 hours, every bar measuring the cut and not the release. A row exists only where Wikipedia says the cut landed better.",
+ "unit": {
+  "one": "cut",
+  "many": "cuts"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "accent": "#8F5A00",
+ "accentDark": "#F0B84A",
+ "tiers": false,
+ "random": true,
+ "notes": [
+  [
+   "What earns a row.",
+   "Wikipedia has to say, in a sentence you can point at, that the later cut was better received than the release it replaced — better or warmer reviews, “superior”, “an improvement”, “the definitive version”, or a reappraisal it credits to the cut. The sentence can come from the film's article, from the article about the cut, or from Wikipedia's “Director's cut” page. Nothing here is on the list because everyone knows it belongs; the verdict and the paragraph around it are stored with the row and re-checked every time this list is rebuilt."
   ],
-  "sections": [
+  [
+   "The bar is the cut, not the film.",
+   "Every runtime here is the length of the version being recommended, which is why Kingdom of Heaven weighs 3.17 hours rather than the 144 minutes cinemas got. That follows the house ruling on that film, and it applies to all 19 rows. 16 of the runtimes come from a figure in the film's own article — the infobox usually carries both lengths — and 3 from Wikidata's runtime statements tagged as the director's cut."
+  ],
+  [
+   "Same film, one row.",
+   "A film that exists in several versions still gets a single row, because you do not watch it twice and because rows pair across the catalogue by title and release year. The year on the row is the film's original year; the cut's own year and length are in the note. Tick Kingdom of Heaven here and it ticks in the Ridley Scott list too."
+  ],
+  [
+   "Longest, shortest, and the odd one out.",
+   "Justice League runs 4.03 hours, the longest thing on the list by some distance. Payback is the shortest at 1.5 hours — and it is the rare director's cut that runs shorter than the release rather than longer, which is the whole reason it is interesting."
+  ],
+  [
+   "One film passed and is still not here.",
+   "Daredevil (2003). Its article says outright that “reviews were more positive than for the theatrical version” for the 2004 R-rated cut, so it passes the gate cleanly — but no source publishes how long that cut runs, and this list is weighted on the cut. Weights are all-or-nothing: one row without a number would silently count as an hour and skew every figure above. Guessing the runtime was the other option and it is not one we take. Same reason a few obvious names are missing: Aliens, Dark City, Das Boot and Legend all have a later cut their director made or supervised, and no published verdict on how it landed."
+  ],
+  "Verdicts and runtimes read from English Wikipedia — the film articles, the articles about individual cuts, and the “Director's cut” and “List of films cut over the director's opposition” pages — with three runtimes from Wikidata's P2047 statements qualified as the director's cut."
+ ],
+ "sections": [
+  {
+   "id": "vault",
+   "title": "Rescued from the vault",
+   "sub": "1958–1980 · 7 films · 17 hours",
+   "intro": "Films a studio took off its director and shortened, put back together a long time afterwards. Nothing here was rescued inside a decade and most of it took twenty years or more, by which point the long version is the one the write-ups mean.",
+   "items": [
     {
-      "id": "vault",
-      "title": "Rescued from the vault",
-      "sub": "1958–1980 · 7 films · 17 hours",
-      "intro": "Films a studio took off its director and shortened, put back together a long time afterwards. Nothing here was rescued inside a decade and most of it took twenty years or more, by which point the long version is the one the write-ups mean.",
-      "items": [
-        {
-          "id": "bdc-1958-touch-of-evil",
-          "t": "Touch of Evil",
-          "n": "1958",
-          "w": 1.85,
-          "note": "Walter Murch's re-edit, 1998 · Cut to the fifty-eight-page memo Welles sent Universal after seeing what they had done to it — three critics' associations gave the re-edit awards · 111 min"
-        },
-        {
-          "id": "bdc-1965-major-dundee",
-          "t": "Major Dundee",
-          "n": "1965",
-          "w": 2.27,
-          "note": "The restored extended cut, 2005 · The thirteen minutes Columbia cut before release, plus a new score written to replace the one Peckinpah objected to · 136 min"
-        },
-        {
-          "id": "bdc-1969-the-wild-bunch",
-          "t": "The Wild Bunch",
-          "n": "1969",
-          "w": 2.42,
-          "note": "The Original Director's Cut, 1995 · The ten minutes the American release dropped, put back — none of it the violence the ratings board was worried about · 145 min"
-        },
-        {
-          "id": "bdc-1973-pat-garrett-and-billy-the-kid",
-          "t": "Pat Garrett and Billy the Kid",
-          "n": "1973",
-          "w": 2.07,
-          "note": "Peckinpah's preview version, 1988 · The cut Peckinpah screened for critics before MGM took the film off him, released on video fifteen years later · 124 min"
-        },
-        {
-          "id": "bdc-1979-star-trek-the-motion-picture",
-          "t": "Star Trek: The Motion Picture",
-          "n": "1979",
-          "w": 2.27,
-          "note": "The Director's Edition, 2001 · Robert Wise finishing a film he always called a rough cut — re-edited, with ninety effects shots completed or redesigned · 136 min"
-        },
-        {
-          "id": "bdc-1980-the-big-red-one",
-          "t": "The Big Red One",
-          "n": "1980",
-          "w": 2.7,
-          "note": "The Reconstruction, 2004 · Forty-seven minutes United Artists cut, traced to a vault in Kansas City and put back seven years after Fuller died · 162 min"
-        },
-        {
-          "id": "bdc-1980-heaven-s-gate",
-          "t": "Heaven's Gate",
-          "n": "1980",
-          "w": 3.6,
-          "note": "The restored director's cut, 2012 · Cimino's full length, restored under his supervision, against the 149-minute recut that went into wide release · 216 min"
-        }
-      ],
-      "open": true
+     "id": "bdc-1958-touch-of-evil",
+     "t": "Touch of Evil (Walter Murch's Re-edit)",
+     "n": "1958",
+     "w": 1.85,
+     "note": "Walter Murch's re-edit, 1998 · Cut to the fifty-eight-page memo Welles sent Universal after seeing what they had done to it — three critics' associations gave the re-edit awards · 111 min"
     },
     {
-      "id": "video",
-      "title": "The home-video era",
-      "sub": "1982–1999 · 7 films · 17 hours",
-      "intro": "Laserdisc and then DVD made a second version something you could sell, and these are the ones where the second version is the film. The range of what that means is the point: a restored epic just short of four hours, a sequel re-cut and re-titled thirty years later, and a boxing film reassembled by its own star.",
-      "items": [
-        {
-          "id": "bdc-1982-blade-runner",
-          "t": "Blade Runner",
-          "n": "1982",
-          "w": 1.95,
-          "note": "The Final Cut, 2007 · The only version Scott had full control of: no narration, the studio's ending gone, effects and sound reworked · 117 min"
-        },
-        {
-          "id": "bdc-1984-once-upon-a-time-in-america",
-          "t": "Once Upon a Time in America",
-          "n": "1984",
-          "w": 3.82,
-          "note": "Leone's own length · The length Leone finished; America got 139 minutes with the story re-ordered into chronology and nobody asked him · 229 min"
-        },
-        {
-          "id": "bdc-1985-rocky-iv",
-          "t": "Rocky IV",
-          "n": "1985",
-          "w": 1.55,
-          "note": "Rocky vs. Drago: The Ultimate Director's Cut, 2021 · Stallone's own re-edit thirty-six years on — about thirty-eight minutes of unused footage in, a comparable amount out · 93 min"
-        },
-        {
-          "id": "bdc-1989-the-abyss",
-          "t": "The Abyss",
-          "n": "1989",
-          "w": 2.85,
-          "note": "The Special Edition, 1993 · Twenty-eight minutes Cameron cut for pacing, restored, and a different ending with them · 171 min"
-        },
-        {
-          "id": "bdc-1990-the-godfather-part-iii",
-          "t": "The Godfather Part III",
-          "n": "1990",
-          "w": 2.63,
-          "note": "The Godfather Coda: The Death of Michael Corleone, 2020 · Re-cut and re-titled thirty years later, with a new opening and a changed last beat; Pacino and Keaton both signed off on it · 158 min"
-        },
-        {
-          "id": "bdc-1992-alien-3",
-          "t": "Alien 3",
-          "n": "1992",
-          "w": 2.4,
-          "note": "The Assembly Cut, 2003 · Over thirty minutes back and several plot beats replaced — assembled from Fincher's editing notes, without Fincher · 144 min"
-        },
-        {
-          "id": "bdc-1999-payback",
-          "t": "Payback",
-          "n": "1999",
-          "w": 1.5,
-          "note": "Straight Up: The Director's Cut, 2006 · The rare director's cut that is shorter than the release — Helgeland's own edit, seven years late · 90 min"
-        }
-      ]
+     "id": "bdc-1965-major-dundee",
+     "t": "Major Dundee",
+     "n": "1965",
+     "w": 2.27,
+     "note": "The restored extended cut, 2005 · The thirteen minutes Columbia cut before release, plus a new score written to replace the one Peckinpah objected to · 136 min"
     },
     {
-      "id": "modern",
-      "title": "The modern recut",
-      "sub": "2004–2017 · 5 films · 17 hours",
-      "intro": "The cut as part of the release plan rather than an apology for it. Length and ratings do most of the work here, and one of these was finished four years late by a director the studio had already replaced.",
-      "items": [
-        {
-          "id": "bdc-2004-alexander",
-          "t": "Alexander",
-          "n": "2004",
-          "w": 3.43,
-          "note": "The Ultimate Cut, 2014 · Stone's fourth and final pass, trimming back what he felt he had over-added to the third; he says there will be no fifth · 206 min"
-        },
-        {
-          "id": "bdc-2005-kingdom-of-heaven",
-          "t": "Kingdom of Heaven",
-          "n": "2005",
-          "w": 3.17,
-          "note": "The director's cut, 2005 · The forty-five minutes Fox asked Scott to remove, put back; he called it “the one that should have gone out” · 190 min"
-        },
-        {
-          "id": "bdc-2009-watchmen",
-          "t": "Watchmen",
-          "n": "2009",
-          "w": 3.1,
-          "note": "The director's cut, 2009 · Twenty-four minutes restored; a longer Ultimate Cut also exists that folds an animated strand into the film · 186 min"
-        },
-        {
-          "id": "bdc-2016-batman-v-superman-dawn-of-justice",
-          "t": "Batman v Superman: Dawn of Justice",
-          "n": "2016",
-          "w": 3.03,
-          "note": "The Ultimate Edition, 2016 · Thirty-one minutes back and an R rating with them; the writer called cutting them an act of sabotage · 182 min"
-        },
-        {
-          "id": "bdc-2017-justice-league",
-          "t": "Justice League",
-          "n": "2017",
-          "w": 4.03,
-          "note": "Zack Snyder's Justice League, 2021 · Finished four years late after a fan campaign — none of the replacement director's footage is in it · 242 min"
-        }
-      ]
+     "id": "bdc-1969-the-wild-bunch",
+     "t": "The Wild Bunch (The Original Director's Cut)",
+     "n": "1969",
+     "w": 2.42,
+     "note": "The Original Director's Cut, 1995 · The ten minutes the American release dropped, put back — none of it the violence the ratings board was worried about · 145 min"
+    },
+    {
+     "id": "bdc-1973-pat-garrett-and-billy-the-kid",
+     "t": "Pat Garrett and Billy the Kid (Peckinpah's Preview Version)",
+     "n": "1973",
+     "w": 2.07,
+     "note": "Peckinpah's preview version, 1988 · The cut Peckinpah screened for critics before MGM took the film off him, released on video fifteen years later · 124 min"
+    },
+    {
+     "id": "bdc-1979-star-trek-the-motion-picture",
+     "t": "Star Trek: The Motion Picture (The Director's Edition)",
+     "n": "1979",
+     "w": 2.27,
+     "note": "The Director's Edition, 2001 · Robert Wise finishing a film he always called a rough cut — re-edited, with ninety effects shots completed or redesigned · 136 min"
+    },
+    {
+     "id": "bdc-1980-the-big-red-one",
+     "t": "The Big Red One",
+     "n": "1980",
+     "w": 2.7,
+     "note": "The Reconstruction, 2004 · Forty-seven minutes United Artists cut, traced to a vault in Kansas City and put back seven years after Fuller died · 162 min"
+    },
+    {
+     "id": "bdc-1980-heaven-s-gate",
+     "t": "Heaven's Gate (The Restored Director's Cut)",
+     "n": "1980",
+     "w": 3.6,
+     "note": "The restored director's cut, 2012 · Cimino's full length, restored under his supervision, against the 149-minute recut that went into wide release · 216 min"
     }
-  ]
+   ],
+   "open": true
+  },
+  {
+   "id": "video",
+   "title": "The home-video era",
+   "sub": "1982–1999 · 7 films · 17 hours",
+   "intro": "Laserdisc and then DVD made a second version something you could sell, and these are the ones where the second version is the film. The range of what that means is the point: a restored epic just short of four hours, a sequel re-cut and re-titled thirty years later, and a boxing film reassembled by its own star.",
+   "items": [
+    {
+     "id": "bdc-1982-blade-runner",
+     "t": "Blade Runner: The Final Cut",
+     "n": "1982",
+     "w": 1.95,
+     "note": "The Final Cut, 2007 · The only version Scott had full control of: no narration, the studio's ending gone, effects and sound reworked · 117 min"
+    },
+    {
+     "id": "bdc-1984-once-upon-a-time-in-america",
+     "t": "Once Upon a Time in America",
+     "n": "1984",
+     "w": 3.82,
+     "note": "Leone's own length · The length Leone finished; America got 139 minutes with the story re-ordered into chronology and nobody asked him · 229 min"
+    },
+    {
+     "id": "bdc-1985-rocky-iv",
+     "t": "Rocky IV",
+     "n": "1985",
+     "w": 1.55,
+     "note": "Rocky vs. Drago: The Ultimate Director's Cut, 2021 · Stallone's own re-edit thirty-six years on — about thirty-eight minutes of unused footage in, a comparable amount out · 93 min"
+    },
+    {
+     "id": "bdc-1989-the-abyss",
+     "t": "The Abyss",
+     "n": "1989",
+     "w": 2.85,
+     "note": "The Special Edition, 1993 · Twenty-eight minutes Cameron cut for pacing, restored, and a different ending with them · 171 min"
+    },
+    {
+     "id": "bdc-1990-the-godfather-part-iii",
+     "t": "The Godfather Coda: The Death of Michael Corleone",
+     "n": "1990",
+     "w": 2.63,
+     "note": "The Godfather Coda: The Death of Michael Corleone, 2020 · Re-cut and re-titled thirty years later, with a new opening and a changed last beat; Pacino and Keaton both signed off on it · 158 min"
+    },
+    {
+     "id": "bdc-1992-alien-3",
+     "t": "Alien 3 (The Assembly Cut)",
+     "n": "1992",
+     "w": 2.4,
+     "note": "The Assembly Cut, 2003 · Over thirty minutes back and several plot beats replaced — assembled from Fincher's editing notes, without Fincher · 144 min"
+    },
+    {
+     "id": "bdc-1999-payback",
+     "t": "Payback",
+     "n": "1999",
+     "w": 1.5,
+     "note": "Straight Up: The Director's Cut, 2006 · The rare director's cut that is shorter than the release — Helgeland's own edit, seven years late · 90 min"
+    }
+   ]
+  },
+  {
+   "id": "modern",
+   "title": "The modern recut",
+   "sub": "2004–2017 · 5 films · 17 hours",
+   "intro": "The cut as part of the release plan rather than an apology for it. Length and ratings do most of the work here, and one of these was finished four years late by a director the studio had already replaced.",
+   "items": [
+    {
+     "id": "bdc-2004-alexander",
+     "t": "Alexander",
+     "n": "2004",
+     "w": 3.43,
+     "note": "The Ultimate Cut, 2014 · Stone's fourth and final pass, trimming back what he felt he had over-added to the third; he says there will be no fifth · 206 min"
+    },
+    {
+     "id": "bdc-2005-kingdom-of-heaven",
+     "t": "Kingdom of Heaven (Director's Cut)",
+     "n": "2005",
+     "w": 3.17,
+     "note": "The director's cut, 2005 · The forty-five minutes Fox asked Scott to remove, put back; he called it “the one that should have gone out” · 190 min"
+    },
+    {
+     "id": "bdc-2009-watchmen",
+     "t": "Watchmen (Director's Cut)",
+     "n": "2009",
+     "w": 3.1,
+     "note": "The director's cut, 2009 · Twenty-four minutes restored; a longer Ultimate Cut also exists that folds an animated strand into the film · 186 min"
+    },
+    {
+     "id": "bdc-2016-batman-v-superman-dawn-of-justice",
+     "t": "Batman v Superman: Dawn of Justice (Ultimate Edition)",
+     "n": "2016",
+     "w": 3.03,
+     "note": "The Ultimate Edition, 2016 · Thirty-one minutes back and an R rating with them; the writer called cutting them an act of sabotage · 182 min"
+    },
+    {
+     "id": "bdc-2017-justice-league",
+     "t": "Zack Snyder's Justice League",
+     "n": "2017",
+     "w": 4.03,
+     "note": "Zack Snyder's Justice League, 2021 · Finished four years late after a fan campaign — none of the replacement director's footage is in it · 242 min"
+    }
+   ]
+  }
+ ]
 }

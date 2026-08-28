@@ -1,86 +1,86 @@
 {
-  "slug": "worst-directors-cuts",
-  "title": "Worst Director's Cuts",
-  "subtitle": "five films, five versions to skip",
-  "kind": "films",
-  "popularity": 31,
-  "random": true,
-  "year": "1977–2001",
-  "blurb": "5 films whose later cut is the one to avoid, from the Star Wars Special Editions to the Donnie Darko director's cut. A row exists only where Wikipedia says the cut landed worse.",
-  "unit": {
-    "one": "film",
-    "many": "films"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "accent": "#7A2130",
-  "accentDark": "#E8737F",
-  "tiers": false,
-  "notes": [
-    [
-      "A list of things not to watch, which is the joke.",
-      "You will have seen all five of these. Ticking a row means “seen it — and I know which version not to go back to”, so the bar fills up with films you have already enjoyed rather than homework. Nobody is asking you to sit through the wrong version to prove a point."
-    ],
-    [
-      "What earns a row.",
-      "Wikipedia has to say, in a sentence you can point at, that the later cut landed worse than the release it replaced — the added material panned, a documented view that the original is the better film, or the people who made it distancing themselves from it. The verdict and the paragraph around it are stored with the row and re-checked every time this list is rebuilt. Films everyone “knows” have a bad cut are not here if their article does not say so, which is why Apocalypse Now Redux and the extended Exorcist are missing: both score HIGHER than the versions they replaced."
-    ],
-    [
-      "Where the reviews and the verdict disagree, the verdict wins.",
-      "Donnie Darko is the case that sets the rule. The 2004 director's cut opened to better notices than the 2001 release — Metacritic 88 against 71 — and Wikipedia carries a whole section headed “Retrospective reviews” that opens “Retrospective reviews of the director's cut have been more negative”, quotes four critics calling it the lesser film, and notes that many of the film's own fans prefer the theatrical cut. This is a list about what to watch now, so the settled view governs and the launch-week aggregate does not."
-    ],
-    [
-      "No hours, and here is why.",
-      "Three of these five cuts have no published runtime anywhere in Wikipedia or Wikidata: the 1997 Star Wars Special Edition, the 2002 E.T. anniversary version, and the 2002 Amadeus Director's Cut. Weights on a list are all-or-nothing here — one row without a number would silently count as an hour and skew everything — and this house never guesses a runtime, so the list carries none at all. The two that ARE published, Cinema Paradiso and Donnie Darko, say so on their rows. The sibling list, Best Director's Cuts, is fully weighted on the length of the cut."
-    ],
-    [
-      "One row per film, paired with the rest of the catalogue.",
-      "The year on a row is the film's original release year, not the cut's — the cut's year is in the note — because rows pair across lists by title and year. Tick Star Wars here and it ticks in the Star Wars list and in Best Picture; E.T. and Amadeus pair the same way, and Cinema Paradiso and Donnie Darko are new to the catalogue. No film appears on both this list and Best Director's Cuts, and both generators fail the build if one ever does."
-    ],
-    "Verdicts read from English Wikipedia — the film articles, the article on Donnie Darko: The Director's Cut, “Changes in Star Wars re-releases” and the “Director's cut” page — with runtimes, where any exist, from the same articles."
+ "slug": "worst-directors-cuts",
+ "title": "Worst Director's Cuts",
+ "subtitle": "five films, five versions to skip",
+ "kind": "films",
+ "popularity": 31,
+ "random": true,
+ "year": "1977–2001",
+ "blurb": "5 films whose later cut is the one to avoid, from the Star Wars Special Editions to the Donnie Darko director's cut. A row exists only where Wikipedia says the cut landed worse.",
+ "unit": {
+  "one": "film",
+  "many": "films"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "accent": "#7A2130",
+ "accentDark": "#E8737F",
+ "tiers": false,
+ "notes": [
+  [
+   "A list of things not to watch, which is the joke.",
+   "You will have seen all five of these. Ticking a row means “seen it — and I know which version not to go back to”, so the bar fills up with films you have already enjoyed rather than homework. Nobody is asking you to sit through the wrong version to prove a point."
   ],
-  "sections": [
+  [
+   "What earns a row.",
+   "Wikipedia has to say, in a sentence you can point at, that the later cut landed worse than the release it replaced — the added material panned, a documented view that the original is the better film, or the people who made it distancing themselves from it. The verdict and the paragraph around it are stored with the row and re-checked every time this list is rebuilt. Films everyone “knows” have a bad cut are not here if their article does not say so, which is why Apocalypse Now Redux and the extended Exorcist are missing: both score HIGHER than the versions they replaced."
+  ],
+  [
+   "Where the reviews and the verdict disagree, the verdict wins.",
+   "Donnie Darko is the case that sets the rule. The 2004 director's cut opened to better notices than the 2001 release — Metacritic 88 against 71 — and Wikipedia carries a whole section headed “Retrospective reviews” that opens “Retrospective reviews of the director's cut have been more negative”, quotes four critics calling it the lesser film, and notes that many of the film's own fans prefer the theatrical cut. This is a list about what to watch now, so the settled view governs and the launch-week aggregate does not."
+  ],
+  [
+   "No hours, and here is why.",
+   "Three of these five cuts have no published runtime anywhere in Wikipedia or Wikidata: the 1997 Star Wars Special Edition, the 2002 E.T. anniversary version, and the 2002 Amadeus Director's Cut. Weights on a list are all-or-nothing here — one row without a number would silently count as an hour and skew everything — and this house never guesses a runtime, so the list carries none at all. The two that ARE published, Cinema Paradiso and Donnie Darko, say so on their rows. The sibling list, Best Director's Cuts, is fully weighted on the length of the cut."
+  ],
+  [
+   "One row per film, paired with the rest of the catalogue.",
+   "The year on a row is the film's original release year, not the cut's — the cut's year is in the note — because rows pair across lists by title and year. Tick Star Wars here and it ticks in the Star Wars list and in Best Picture; E.T. and Amadeus pair the same way, and Cinema Paradiso and Donnie Darko are new to the catalogue. No film appears on both this list and Best Director's Cuts, and both generators fail the build if one ever does."
+  ],
+  "Verdicts read from English Wikipedia — the film articles, the article on Donnie Darko: The Director's Cut, “Changes in Star Wars re-releases” and the “Director's cut” page — with runtimes, where any exist, from the same articles."
+ ],
+ "sections": [
+  {
+   "id": "cuts",
+   "title": "Watch the original instead",
+   "sub": "1977–2001 · 5 films",
+   "intro": "Five films and five versions of them to skip. Each note says what the cut changes in kind — restored footage, a swapped song, altered effects, explanatory text — and not what happens, because most of the reason this list is fun is that you have already seen these.",
+   "open": true,
+   "items": [
     {
-      "id": "cuts",
-      "title": "Watch the original instead",
-      "sub": "1977–2001 · 5 films",
-      "intro": "Five films and five versions of them to skip. Each note says what the cut changes in kind — restored footage, a swapped song, altered effects, explanatory text — and not what happens, because most of the reason this list is fun is that you have already seen these.",
-      "open": true,
-      "items": [
-        {
-          "id": "wdc-1977-star-wars",
-          "t": "Star Wars",
-          "n": "1977",
-          "note": "The Special Edition, 1997 · 277 altered shots, inserted creatures and one re-timed exchange in a cantina; when the 1977 version finally reached a disc it came from a 1993 laserdisc master"
-        },
-        {
-          "id": "wdc-1982-e-t-the-extra-terrestrial",
-          "t": "E.T. the Extra-Terrestrial",
-          "n": "1982",
-          "note": "The 20th Anniversary version, 2002 · Digitally softened props, CGI touch-ups and restored scenes. Spielberg later said he regretted it and the version is out of circulation"
-        },
-        {
-          "id": "wdc-1984-amadeus",
-          "t": "Amadeus",
-          "n": "1984",
-          "note": "The Director's Cut, 2002 · About twenty minutes of restored footage and an R rating. It was the only version you could buy for twenty-three years"
-        },
-        {
-          "id": "wdc-1988-cinema-paradiso",
-          "t": "Cinema Paradiso",
-          "n": "1988",
-          "note": "The New Version, 2002 · Forty-nine minutes restored, most of it one strand the Oscar-winning international cut left out entirely · 173 min"
-        },
-        {
-          "id": "wdc-2001-donnie-darko",
-          "t": "Donnie Darko",
-          "n": "2001",
-          "note": "Donnie Darko: The Director's Cut, 2004 · Twenty minutes back in, a different opening song, and the in-film book's text on screen explaining the machinery · 134 min"
-        }
-      ]
+     "id": "wdc-1977-star-wars",
+     "t": "Star Wars (Special Edition)",
+     "n": "1977",
+     "note": "The Special Edition, 1997 · 277 altered shots, inserted creatures and one re-timed exchange in a cantina; when the 1977 version finally reached a disc it came from a 1993 laserdisc master"
+    },
+    {
+     "id": "wdc-1982-e-t-the-extra-terrestrial",
+     "t": "E.T. the Extra-Terrestrial (20th Anniversary Version)",
+     "n": "1982",
+     "note": "The 20th Anniversary version, 2002 · Digitally softened props, CGI touch-ups and restored scenes. Spielberg later said he regretted it and the version is out of circulation"
+    },
+    {
+     "id": "wdc-1984-amadeus",
+     "t": "Amadeus (Director's Cut)",
+     "n": "1984",
+     "note": "The Director's Cut, 2002 · About twenty minutes of restored footage and an R rating. It was the only version you could buy for twenty-three years"
+    },
+    {
+     "id": "wdc-1988-cinema-paradiso",
+     "t": "Cinema Paradiso",
+     "n": "1988",
+     "note": "The New Version, 2002 · Forty-nine minutes restored, most of it one strand the Oscar-winning international cut left out entirely · 173 min"
+    },
+    {
+     "id": "wdc-2001-donnie-darko",
+     "t": "Donnie Darko: The Director's Cut",
+     "n": "2001",
+     "note": "Donnie Darko: The Director's Cut, 2004 · Twenty minutes back in, a different opening song, and the in-film book's text on screen explaining the machinery · 134 min"
     }
-  ]
+   ]
+  }
+ ]
 }

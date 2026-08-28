@@ -6021,13 +6021,13 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '3d356f07ddc0';
+const BUILD = 'a95f83d3d694';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
 // rewires a sync group re-runs it — which is how a newly added list inherits
 // ticks people already had elsewhere. See backfillSync().
-const SYNCVER = '537174f9bd';
+const SYNCVER = '3d027bb5a9';
 
 // A tab that is already open never re-runs its own boot, so checking once was
 // only ever going to help people who reloaded anyway. This polls, and reloads
