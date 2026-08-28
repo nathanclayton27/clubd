@@ -461,52 +461,54 @@ work that has not happened rather than the state that has.
   rate-limit calls, so running it removes the cap from one door while leaving
   `join_group()`'s intact — and a half-disarmed limiter reads as a working one.
 
-### Queued, blocked, and the largest thing not yet run
+### Queued and ready: the largest thing not yet run
 
-**`scratch/security/migrate-club-progress.sql`** (615 lines, CLU-389). It is not
-fenced on a front-end change like the files above — the front end shipped first
-and is inert. It is blocked on **defects in itself**, found by audit and
-re-verified 2026-08-28. Recorded here because a migration that has been written
-and not run is the state in which somebody reasons about a database that does
-not match the file they are reading.
+**`scratch/security/migrate-club-progress.sql`** (756 lines, CLU-389), with
+**`preflight-club-progress.sql`** beside it. Recorded here because a migration
+written and not run is the state in which somebody reasons about a database
+that does not match the file they are reading.
 
-**It carries the only irreversible statement in the repo**: a delete of 36 watch
-clubs and 66 memberships, by an explicit id list Nathan approved by eye on
-2026-08-27 (CLU-389 keep-list; the four dated clubs confirmed separately on
-CLU-404). The archive is written child-then-parent inside the same transaction.
+**It carries the only irreversible statement in the repo**: a delete of 36
+watch clubs and 66 memberships, by an explicit id list Nathan approved by eye
+on 2026-08-27 (keep-list on CLU-389; the four dated clubs confirmed separately
+on CLU-404). The archive is written child-then-parent inside the same
+transaction, before the delete.
 
 ⚠ **Do not hand-edit the `.sql`.** It is generated wholesale by
 `scratch/security/gen_club_progress.py`, which does an unconditional
-`write_text` with no backup — the next run destroys any edit. Fix the generator.
+`write_text`. Fix the generator and regenerate — including after any edit that
+would change the ledger checksum.
 
-Six things must change before it can be pasted, none of them Nathan's:
+**Six defects found by audit on 2026-08-27 are fixed** (2026-08-28): the
+orphaned id list before `begin;`, a drift guard that tested for the presence of
+a date rather than for drift, `club_sync` not matching the deployed bundle's
+`save_progress(p_property, p_club, p_ids)`, a cascade from the club rather than
+the membership, an unguarded `tick_events.group_id`, and a missing existence
+probe.
 
-| # | What | Why it matters |
-|---|---|---|
-| 1 | Lines 107–142 are 36 quoted strings with **no statement around them** — 106 and 143 are commented out. | Syntax error before `begin;` at 149. The pre-flight is unrunnable, so nothing can be checked. |
-| 2 | The drift guard at 250–254 raises when any listed club has a date. | **Nine of the 36 already carried a date when he approved them.** The message describes a delta; the predicate is absolute. Must compare against the frozen triples, not test for presence. |
-| 3 | It defines `club_sync(p_group, p_read_ids)`. | The deployed bundle calls `save_progress(p_property, p_club, p_ids)` (`index.html`, `src/template.html:2298`) and **nothing in the repo defines it**. PostgREST resolves by name. |
-| 4 | `club_progress.group_id` cascades from `groups` (line 285). | Nathan's ruling is that a session cascades from the **membership** (CLU-420). Needs a composite FK to `group_members(group_id, user_id)`, which is legal — that PK already exists. The header comment at 363–367 states the overturned behaviour as fact and must go with it. |
-| 5 | §6 adds `tick_events.group_id` but the update guard pins only five columns. | The new column would be client-rewritable after insert. Nothing in the bundle reads or writes it, so **cutting §6 from this run** is the cheaper fix. |
-| 6 | §0 never asks whether `club_progress` already exists. | The whole safety argument for delete-first is that it does not. `create table if not exists` would accept a table of unknown shape in silence. |
+**A second, independent audit then found eight more**, all now closed. The one
+that mattered: **it had no ledger footer and would have run unrecorded**, five
+days after the ledger was built for exactly this. Also fixed — `revoke all`
+rather than three named verbs (Supabase grants ALL by default, so TRUNCATE,
+REFERENCES and TRIGGER survived a partial revoke), `to_regclass` rather than
+privilege-filtered `information_schema`, three new readback checks including
+one asserting the membership cascade that sixteen green checks had not covered,
+and a separately runnable pre-flight, because commenting the id list to fix the
+syntax error had made the advertised "run this first" step require hand-
+stripping 36 uuids.
 
-**The failure mode to fear is #3, and it is the only one that fails late.** 1 and
-2 abort before anything happens. #3 commits clean, all 17 readbacks go green
-(check 13 asserts privileges on the function nothing calls), the clubs are gone,
-and then every session on the site collapses on its first tick. Nothing is
-corrupted — the fold unions — but the irreversible half has already run.
+⚠ **One exposure is recorded rather than fixed, and it is Nathan's call.** The
+fold trigger exists because a Just-me untick is a replace and can lower the
+universal row below a session that still holds those ids. Under the new
+membership cascade, **leaving or being removed hits that same window with no
+fold**. `DECISIONS.md` §4 rules out a fold-on-leave trigger on the premise that
+no id can exist in `club_progress` and nowhere else — which is false for those
+few seconds. It is narrow (untick in Just-me, then leave) and he has already
+ruled against a second definer trigger writing other users' rows, so it stays
+open with its name written down.
 
-**Ruling 8 needs no SQL.** *"Your account keeps what already flowed up"* is
-structural: the write function unions into `progress` on every call, so no id can
-exist in `club_progress` and nowhere else. **Do not add a fold-on-leave
-trigger** — it would be a second definer trigger writing other users' rows, for
-nothing.
-
-**Settled 2026-08-28 (CLU-424): the editor sends a pasted file as ONE
-statement**, so this file's *"one transaction"* header is true and a raise
-anywhere really does roll back the delete. Measured in the real editor rather
-than assumed — the probe and the reasoning are in [§2](#2-is-this-safe-to-run).
-It was the last unknown standing between this file and a paste.
+**Order:** run `preflight-club-progress.sql` first and read the output, then the
+migration, then paste the readback onto CLU-389.
 
 ### And three that fail safely — leave them alone
 
