@@ -6296,7 +6296,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '706bb2201d57';
+const BUILD = '0890900e08f0';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7663,6 +7663,7 @@ function paintFW(){
     : 'Watch it again from zero, just for you — your all-time run and your clubs stay untouched';
   b.onclick = ()=>{
     try{
+      if(!FW) markFWStart();
       localStorage.setItem('gw:fwon:' + SLUG, FW ? '0' : '1');
     }catch(e){ return; }
     location.reload();
@@ -9615,6 +9616,25 @@ const GKEY = 'gw:group:' + SLUG;   // which group is on screen, per property
 // means "never chose" and defaults into a club, which is not the same thing
 // as having chosen to be on your own.
 const JUSTME = '-';
+// CLU-408. A fresh run is not a mode you toggle, it is a thing that sits
+// under your all-time run with the date it started — the same shape a club
+// session has (CLU-389), which is what makes a rewatch a first-class object
+// rather than a switch. The sentinel never reaches GKEY: choosing it swaps
+// the storage namespace and reloads, exactly as the fresh-watch button does.
+const FRESH = '~fw';
+const FWSTART = SLUG ? 'gw:fwstart:' + SLUG : '';
+function fwStarted(){
+  try{ return FWSTART ? localStorage.getItem(FWSTART) : null; }
+  catch(e){ return null; }
+}
+// Stamped when a fresh run BEGINS, and never overwritten — coming back to one
+// is not starting it. Runs that were begun before this shipped have no stamp,
+// and say so rather than being given today's date, which would be a lie about
+// somebody's own history.
+function markFWStart(){
+  try{ if(FWSTART && !localStorage.getItem(FWSTART))
+         localStorage.setItem(FWSTART, new Date().toISOString()); }catch(e){}
+}
 let groups   = [];    // every group this user belongs to, for this property
 let group    = null;  // the one being shown
 let gmembers = [];    // [{id, name, ci, read:Set}]
@@ -10667,6 +10687,9 @@ function togetherLabel(){
 // the trigger is the only place that answer can live for all four states.
 function switchLabel(){
   if(group) return group.name;
+  // the pill has to name the run you are actually looking at, or a fresh
+  // watch reads as your all-time one
+  if(FW && !picked.length) return 'Fresh watch';
   if(!picked.length) return 'Just me';
   const nm = (FREDGES && FREDGES.names) || {};
   return picked.length === 1 ? (nm[picked[0]] || 'someone')
@@ -10716,7 +10739,14 @@ function groupSwitcher(){
   // on a query error, so mutualFriends() reports nobody after one bad round
   // trip. Without picked.length here the panel renders "the strip is comparing
   // you with someone, someone" and no control that can end it.
-  if(!groups.length && !ugroups.length && !mut.length && !picked.length) return '';
+  //
+  // A fresh run counts too, by this same rule (CLU-408): once one exists the
+  // menu holds two real states — your all-time run and the fresh one — and a
+  // solo reader with no clubs and no friends is exactly the person who starts
+  // one. Without this clause the entry they were promised would be invisible
+  // to precisely its audience.
+  if(!groups.length && !ugroups.length && !mut.length && !picked.length
+     && !FW && !fwStarted()) return '';
 
   const row = (v, label, hint, on)=>
       '<button type="button" class="gmi'+(on?' on':'')+'" role="menuitemradio"'
@@ -10728,7 +10758,16 @@ function groupSwitcher(){
 
   // Just me sits OUTSIDE both sections, above them, because it is not a club
   // of either kind and it has to sort to the top whatever the sections hold.
-  let html = row(JUSTME, 'Just me', 'no comparison', !group && !picked.length);
+  let html = row(JUSTME, 'Just me', 'no comparison',
+                 !FW && !group && !picked.length);
+
+  // Beneath Just me, not instead of it: the all-time run is still there and
+  // still untouched, which is the whole promise of a fresh watch.
+  if(FW || fwStarted()){
+    const st = fwStarted();
+    html += row(FRESH, 'Fresh watch',
+                st ? 'started ' + niceDate(st) : 'started earlier', FW);
+  }
 
   if(groups.length)
     html += '<div role="group" aria-label="'+esc(togetherLabel())+'">'
@@ -11100,7 +11139,11 @@ function renderGroupPanel(){
     // people to compare against, the picker is the whole control, and gating
     // it on groups.length would have hidden it from exactly the person it was
     // built for.
-    if(groups.length || picked.length || mutualFriends().length){
+    // And a fresh run counts as somewhere to go, for the same reason friends
+    // do (CLU-408): it is a second real state on this list, and the reader
+    // who has one and no clubs is the one the entry was built for.
+    if(groups.length || picked.length || mutualFriends().length
+       || FW || fwStarted()){
       // the bar says what was chosen — not the invitation copy, which would
       // read as though no club existed
       paintClubBar(picked.length ? switchLabel() : 'Just me');
@@ -11258,6 +11301,21 @@ function wireSwitcher(){
 
   async function choose(v){
     gmenuFocus = true;
+    // Switching between the all-time run and a fresh one is a change of
+    // storage namespace, and `done` is bound to it at load — so it reloads,
+    // exactly as the fresh-watch button has always done. Handled before the
+    // GKEY write below because the sentinel must never be stored as a club.
+    if(v === FRESH || (v === JUSTME && FW)){
+      try{
+        if(v === FRESH) markFWStart();
+        localStorage.setItem('gw:fwon:' + SLUG, v === FRESH ? '1' : '0');
+        // a fresh run and a club cannot both be on (see paintFW), so entering
+        // one lands you on your own row rather than a club you can't be in
+        localStorage.setItem(GKEY, JUSTME);
+      }catch(e){ return; }
+      location.reload();
+      return;
+    }
     // a pick and a club are the same slot, so choosing either clears the other
     setPicked([]);
     // same guard as setPicked's: a refused write must not abort the switch
