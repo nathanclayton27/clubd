@@ -5815,9 +5815,20 @@ function paintStack(){
     const shown = (pct > 0 && pct < 1) ? '&lt;1%' : Math.round(pct)+'%';
     let tag = '';
     if(p){
-      // "3 behind" is meaningless when one of the three is a forty hour game
-      const behind = WEIGHTED ? (p.wDue||0) - pacedWeightOf(reads[i])
-                              : p.expected - n;
+      // "3 behind" is meaningless when one of the three is a forty hour game.
+      // A list with paceTiers and NO weights is still scoped, and that is the
+      // case this used to get wrong in public (CLU-188): p.expected is a
+      // full-list index — out-of-scope rows weigh 0, so itemsAtWeight sweeps
+      // past them for free — while n is a plain tick count. Subtracting one
+      // from the other branded a reader who skipped exactly what the list told
+      // them to skip, on the legend line their whole club reads.
+      // pacedWeightOf is the like-for-like comparison: PW is the row's weight
+      // in scope and 0 out of it, and WEIGHT is all 1 when unweighted, so this
+      // stays an item count on those two lists.
+      const behind = WEIGHTED
+        ? (p.wDue||0) - pacedWeightOf(reads[i])
+        : PACETIERS ? Math.round((p.wDue||0) - pacedWeightOf(reads[i]))
+                    : p.expected - n;
       tag = behind > (WEIGHTED ? 0.5 : 0)
         ? '<span class="pace behind">'+(WEIGHTED?hrs(behind):behind)+' behind</span>'
         : '<span class="pace ok">on pace</span>';
@@ -6317,7 +6328,11 @@ function updateGroupLine(){
         ? 'You’re about '+hrs(short)+' behind pace, with '+days
         : 'You’re on pace, with '+days;
     }else{
-      const behind = p.expected - n;
+      // same scoping fix as the club legend (CLU-188) — on a paced list the
+      // shortfall is measured in scope, then said in items rather than hours
+      const behind = PACETIERS
+        ? Math.round((p.wDue||0) - pacedWeightOf(mySet))
+        : p.expected - n;
       line = behind > 0
         ? 'You’re '+behind+' '+plural(behind)+' behind pace, with '+days
         : 'You’re on pace, with '+days;
