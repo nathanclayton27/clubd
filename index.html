@@ -1539,9 +1539,11 @@ footer a{color:var(--steel)}
            two accounts instead of one. Saying so here costs a sentence; not
            saying it costs somebody their ticks. -->
       <div class="acap"><b>One exception.</b> If GitHub is set to keep your
-        email private, clubd sees a different address and makes a
-        <b>second account</b> rather than linking it. Your progress codes,
-        below, carry your ticks across if that happens.</div>
+        email addresses private, it hands over a <code>noreply</code> address
+        instead of your real one — clubd sees a different person and makes a
+        <b>second account</b> rather than linking. Nothing is lost: sign back in
+        the way you did before, and the progress codes below carry your ticks
+        over.</div>
     </div>
 
     <!-- CLU-133. His picks were 1 and 2 together: the footer link and this row.
@@ -6033,7 +6035,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '334a37019991';
+const BUILD = '379c01079e88';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
