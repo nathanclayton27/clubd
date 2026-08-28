@@ -87,6 +87,10 @@ h1 em{font-style:normal;color:var(--signal)}
   border-radius:var(--radius);padding:1px 5px;flex:none;font-weight:400;
   margin-top:.3em}
 .tagline{color:var(--ink-2);max-width:60ch;margin:0}
+/* CLU-302. The shouting is a text-transform and never lives in the string:
+   several screen readers spell all-caps text out letter by letter, and the
+   title keeps its real casing for search and for the page title. */
+.tagline.shout{text-transform:uppercase;letter-spacing:.01em;font-weight:500}
 .strip{display:flex;flex-direction:column;gap:20px;margin:72px 0 10px}
 .striprow{display:flex;gap:1px;height:34px;align-items:flex-end;
   touch-action:pan-y;transition:margin .28s ease-out}
@@ -6040,7 +6044,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '32230d628900';
+const BUILD = '65e84e0f9e2b';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -11430,12 +11434,44 @@ function wireStrip(host, grouped, lifts){
 // A property can carry copy meant only for one group — the club framing on
 // FMA:B, say. Presentation only: the property file is public, so this hides it
 // from the page, not from anyone who opens the JSON.
+// ------------------------------------------------------------- CLU-302
+// Jackass mode. It replaces the blurb — the one decorative line under a
+// list's title — and nothing else. Notes, section intros, dates, counts and
+// the "not an MCU film" classifications all carry facts and stay exactly as
+// written, which is what keeps this small enough to be worth having.
+const JKKEY = 'gw:jackass';
+function jackassOn(){
+  try{ return localStorage.getItem(JKKEY) === '1'; }catch(e){ return false; }
+}
+function setJackass(on){
+  try{ localStorage.setItem(JKKEY, on ? '1' : '0'); }catch(e){}
+}
+// Deterministic from the slug, so a list reads the same every time you open
+// it. A random pick would re-roll the joke under the reader, which is the one
+// way to make a joke annoying.
+function jackassLine(title){
+  const t = (title || '').trim();
+  if(!t) return '';
+  let h = 0;
+  for(let i = 0; i < SLUG.length; i++) h = (h * 31 + SLUG.charCodeAt(i)) | 0;
+  return (Math.abs(h) % 2)
+    ? 'My name is Johnny Knoxville and this is ' + t + '.'
+    : "Hey, I'm Johnny Knoxville. Welcome to " + t + '.';
+}
+
 function overrides(){
   return (PROP.forGroup && group && PROP.forGroup[group.code]) || {};
 }
 function applyOverrides(){
   const ov = overrides();
-  $('pblurb').textContent = ov.blurb || PROP.blurb || '';
+  // ⚠ never the gated list: its copy stays exactly as it is, and a joke that
+  // rewrote it would be a change to the one list whose wording is deliberate.
+  const jk = jackassOn() && !(PROP.secret && PROP.secret.blob);
+  const el = $('pblurb');
+  el.classList.toggle('shout', jk);
+  el.textContent = jk
+    ? jackassLine(PROP.title || '')
+    : (ov.blurb || PROP.blurb || '');
   const rt = ov.rulesTitle || PROP.rulesTitle;
   if(rt) $('ruleshead').textContent = rt;
 }
@@ -11472,6 +11508,25 @@ function renderHeader(){
   $('notes').innerHTML = (PROP.notes||[]).map(nt=> Array.isArray(nt)
     ? '<p><strong>'+esc(nt[0])+'</strong> '+esc(nt[1])+'</p>'
     : '<p>'+esc(nt)+'</p>').join('');
+  // CLU-302. The switch lives on the Jackass page and nowhere else, because
+  // that is the one page where an option called "Jackass mode" needs no
+  // explaining. Rendered here rather than in the markup so it exists on
+  // exactly one list instead of being hidden on 208 of them.
+  if(SLUG === 'jackass'){
+    const on = jackassOn();
+    const p = document.createElement('p');
+    p.innerHTML = '<strong>Jackass mode.</strong> Every list introduces itself '
+      + 'the way Johnny Knoxville would. It changes one line and nothing that '
+      + 'carries a fact. <button class="lv" id="b-jackass" type="button" '
+      + 'aria-pressed="' + (on ? 'true' : 'false') + '">'
+      + (on ? 'turn it off' : 'turn it on') + '</button>';
+    $('notes').appendChild(p);
+    $('b-jackass').onclick = ()=>{
+      setJackass(!jackassOn());
+      applyOverrides();
+      renderHeader();
+    };
+  }
 }
 
 // The menu is search + favourites only — the medium categories left it
