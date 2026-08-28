@@ -428,6 +428,54 @@ work that has not happened rather than the state that has.
   rate-limit calls, so running it removes the cap from one door while leaving
   `join_group()`'s intact — and a half-disarmed limiter reads as a working one.
 
+### Queued, blocked, and the largest thing not yet run
+
+**`scratch/security/migrate-club-progress.sql`** (615 lines, CLU-389). It is not
+fenced on a front-end change like the files above — the front end shipped first
+and is inert. It is blocked on **defects in itself**, found by audit and
+re-verified 2026-08-28. Recorded here because a migration that has been written
+and not run is the state in which somebody reasons about a database that does
+not match the file they are reading.
+
+**It carries the only irreversible statement in the repo**: a delete of 36 watch
+clubs and 66 memberships, by an explicit id list Nathan approved by eye on
+2026-08-27 (CLU-389 keep-list; the four dated clubs confirmed separately on
+CLU-404). The archive is written child-then-parent inside the same transaction.
+
+⚠ **Do not hand-edit the `.sql`.** It is generated wholesale by
+`scratch/security/gen_club_progress.py`, which does an unconditional
+`write_text` with no backup — the next run destroys any edit. Fix the generator.
+
+Six things must change before it can be pasted, none of them Nathan's:
+
+| # | What | Why it matters |
+|---|---|---|
+| 1 | Lines 107–142 are 36 quoted strings with **no statement around them** — 106 and 143 are commented out. | Syntax error before `begin;` at 149. The pre-flight is unrunnable, so nothing can be checked. |
+| 2 | The drift guard at 250–254 raises when any listed club has a date. | **Nine of the 36 already carried a date when he approved them.** The message describes a delta; the predicate is absolute. Must compare against the frozen triples, not test for presence. |
+| 3 | It defines `club_sync(p_group, p_read_ids)`. | The deployed bundle calls `save_progress(p_property, p_club, p_ids)` (`index.html`, `src/template.html:2298`) and **nothing in the repo defines it**. PostgREST resolves by name. |
+| 4 | `club_progress.group_id` cascades from `groups` (line 285). | Nathan's ruling is that a session cascades from the **membership** (CLU-420). Needs a composite FK to `group_members(group_id, user_id)`, which is legal — that PK already exists. The header comment at 363–367 states the overturned behaviour as fact and must go with it. |
+| 5 | §6 adds `tick_events.group_id` but the update guard pins only five columns. | The new column would be client-rewritable after insert. Nothing in the bundle reads or writes it, so **cutting §6 from this run** is the cheaper fix. |
+| 6 | §0 never asks whether `club_progress` already exists. | The whole safety argument for delete-first is that it does not. `create table if not exists` would accept a table of unknown shape in silence. |
+
+**The failure mode to fear is #3, and it is the only one that fails late.** 1 and
+2 abort before anything happens. #3 commits clean, all 17 readbacks go green
+(check 13 asserts privileges on the function nothing calls), the clubs are gone,
+and then every session on the site collapses on its first tick. Nothing is
+corrupted — the fold unions — but the irreversible half has already run.
+
+**Ruling 8 needs no SQL.** *"Your account keeps what already flowed up"* is
+structural: the write function unions into `progress` on every call, so no id can
+exist in `club_progress` and nowhere else. **Do not add a fold-on-leave
+trigger** — it would be a second definer trigger writing other users' rows, for
+nothing.
+
+⚠ **One thing genuinely unknown, and it should be settled once for every future
+migration:** whether the Supabase SQL editor sends a pasted file as a single
+statement or splits it on semicolons. The header of this file asserts *"One
+transaction"* as settled. It decides whether a syntax error mid-file fails safe
+or lets earlier statements escape the transaction. Establish it and write the
+answer here.
+
 ### And three that fail safely — leave them alone
 
 `migrate-add-friends.sql`, `migrate-add-friend-decline.sql` and the archived
