@@ -3805,6 +3805,7 @@ function acctDump(){
   const out = { app: BRAND, build: BUILD, at: new Date().toISOString(),
                 account: (a && a.email) || null, lists: {}, clubs: {},
                 events: {}, stars: [] };
+  const cloud = {};                       // gw:evcloud:*, merged in below
   for(let i = 0; i < localStorage.length; i++){
     const k = localStorage.key(i);
     if(!k) continue;
@@ -3813,7 +3814,18 @@ function acctDump(){
     if(k.indexOf('gw:club:v1:') === 0) out.clubs[k.slice(11)] = v;
     else if(k.indexOf('gw:v1:') === 0) out.lists[k.slice(6)] = v;
     else if(k.indexOf('gw:evlog:') === 0) out.events[k.slice(9)] = v;
+    else if(k.indexOf('gw:evcloud:') === 0) cloud[k.slice(11)] = v;
     else if(k === STARKEY) out.stars = v;
+  }
+  // CLU-139. Lately reads the local log AND the account's copy, so an export
+  // that carried only the local half would hand someone a smaller history than
+  // the page just showed them — which reads as data missing rather than as a
+  // deliberate scope. Same union and same identity as evAll.
+  for(const slug in cloud){
+    const mine = out.events[slug] || [];
+    const seen = new Set(mine.map(e=> e.i+'|'+e.a+'|'+e.at));
+    out.events[slug] = mine.concat(
+      (cloud[slug] || []).filter(e=> !seen.has(e.i+'|'+e.a+'|'+e.at)));
   }
   return out;
 }
@@ -4047,15 +4059,23 @@ async function primeShelf(){
       (bySlug[e.property_id] = bySlug[e.property_id] || []).push(
         { i: e.item_id, a: e.action, k: e.kind, at: e.at });
     });
+    // CLU-139. This used to write into gw:evlog ONLY when the device had no
+    // log for that list — priming a fresh browser and then never speaking
+    // again, so two devices diverged the moment both had ticked anything.
+    //
+    // It now refreshes a separate cache on every load. Writing into gw:evlog
+    // was the tempting version and it is unsafe: gw:evflushed is an index into
+    // that array, so inserting cloud rows either skips unflushed local events
+    // or re-uploads ones already stored.
     for(const slug in bySlug){
-      if(!localStorage.getItem('gw:evlog:' + slug)){
-        try{
-          localStorage.setItem('gw:evlog:' + slug, JSON.stringify(bySlug[slug]));
-          // primed straight from the cloud — never re-flushed back up
-          localStorage.setItem('gw:evflushed:' + slug, String(bySlug[slug].length));
+      try{
+        const prev = localStorage.getItem('gw:evcloud:' + slug);
+        const next = JSON.stringify(bySlug[slug]);
+        if(prev !== next){
+          localStorage.setItem('gw:evcloud:' + slug, next);
           changed = true;
-        }catch(e){}
-      }
+        }
+      }catch(e){}
     }
   }catch(e){ /* home just renders from whatever local has */ }
   return changed;
@@ -8082,9 +8102,31 @@ function renderWall(host, externalChips){
 // The shelf-and-ledger merge. Ranking is the stats-integrity rule in
 // miniature: LIVE ticks rank, backfill counts zero — catching up on a
 // paper log must never make a club look like tonight's obsession.
+// CLU-139. Two sources on purpose, unioned only here.
+//
+//   gw:evlog:<slug>    this device's own log. It is ALSO the flush queue, and
+//                      gw:evflushed:<slug> is an index into it, so nothing may
+//                      ever be inserted into it from outside.
+//   gw:evcloud:<slug>  what the account knows, refreshed by primeShelf.
+//
+// Everything that DISPLAYS history goes through here; flushEvents uses evlog()
+// directly and never sees the cloud half. That separation is what keeps the
+// flush cursor meaning what it says.
 function evAll(slug){
-  try{ return JSON.parse(localStorage.getItem('gw:evlog:'+slug)) || []; }
-  catch(e){ return []; }
+  let mine = [], theirs = [];
+  try{ mine = JSON.parse(localStorage.getItem('gw:evlog:'+slug)) || []; }catch(e){}
+  try{ theirs = JSON.parse(localStorage.getItem('gw:evcloud:'+slug)) || []; }catch(e){}
+  if(!theirs.length) return mine;
+  // A device that is mid-flush holds the same event in both. Identity is
+  // item + action + timestamp: `at` is written once at record time and
+  // carried unchanged to the database, so it survives the round trip.
+  const seen = new Set(mine.map(e=> e.i+'|'+e.a+'|'+e.at));
+  const out = mine.slice();
+  theirs.forEach(e=>{
+    const k = e.i+'|'+e.a+'|'+e.at;
+    if(!seen.has(k)){ seen.add(k); out.push(e); }
+  });
+  return out;
 }
 // CLU-77. Dismissing a club from the shelf. Stored as { slug: whenHidden }
 // rather than a flat set, because the timestamp is what makes Nathan's rule
