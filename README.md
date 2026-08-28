@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-Two hundred and eight lists, from a ten-episode anime to a 1,418-row film
+Two hundred and nine lists, from a ten-episode anime to a 1,418-row film
 collection, a 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
@@ -146,6 +146,12 @@ included, the *Vertigo shelf* (Preacher, Transmetropolitan and Y: The Last
 Man, one row per collected volume), *Batman* as 35 finite stories gated on
 Wikipedia's own publication history, and the *Hellboy / Mignolaverse* trunk
 with the spoke series as optional rows.
+
+**Directors** is a hub rather than a list: fifteen filmographies as fifteen
+rows, each one a door into that director's own page. Marking a row there
+ticks the whole filmography, and finishing a filmography ticks the row —
+and its bands are as wide as the hours behind them, summed at build time
+from the target lists themselves rather than typed anywhere. 676 hours.
 
 **Filmographies.** *Stanley Kubrick* (with A.I.), *Steven Spielberg*,
 *David Lynch* (all of Twin Peaks as one row), *Tom Cruise*, *Akira
@@ -302,8 +308,33 @@ Optional: `verb` (drives “watching” vs “reading”), `itemOrder`, `schedul
 finish date covers), `weightUnit`, `itemTiers`; per-section `intro`, `links`
 and `open` (per-section links render inline up to two, then collapse into a
 dropdown); per-item `note`, `star`, `opt`, `url`, `w` (how long it takes —
-the bars are sized by it) and `tier`. Full reference in
+the bars are sized by it), `tier`, and `into` / `beside` (see below).
+Property-level `satellite` keeps a list out of the browsing surfaces. Full reference in
 [HOW-IT-WORKS.md](HOW-IT-WORKS.md).
+
+### A row that is a door
+
+A row can point at another list. `"into": "<slug>"` means *the same thing at
+finer grain* — a season row opening its episodes, a filmography row on the
+Directors hub. `"beside": "<slug>"` means *adjacent material* — the extras
+hanging off a franchise.
+
+They behave differently on purpose. A close-up **rolls both ways**: ticking
+the row ticks the target list, and finishing the target ticks the row. It
+only ever takes back the ticks it made, so anything marked by hand survives.
+A rabbit hole **never rolls** — adjacent material is a different sitting.
+
+A close-up carries no `w` of its own: the build sums the target's hours into
+it, because a typed number rots the day that list gains a row. `"satellite":
+true` on the **target** takes it out of the wall and the catalogue count
+while leaving its rows in search and keeping it on your shelf.
+
+The build refuses a row that points both ways, a row pointing at its own
+list, a close-up with a typed weight, an unweighted list opening off a
+weighted row, and a rabbit hole repeating a row its parent already carries —
+that last one would count a reader twice. A pointer whose target file does
+not exist yet is not an error: it is stripped, printed as a to-do, and the
+row renders as its plain facts, so a hub can be written before its targets.
 
 **Item ids are load-bearing.** Progress is stored as a list of them, so
 reordering is safe but renaming silently destroys saved ticks. Prefix them with
