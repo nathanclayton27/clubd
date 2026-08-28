@@ -1,201 +1,200 @@
 {
-  "slug": "outlaw-star",
-  "title": "Outlaw Star",
-  "subtitle": "the complete 26-episode run",
-  "kind": "anime",
-  "popularity": 60,
-  "year": "1998",
-  "blurb": "Sunrise's 1998 space western in full — 26 episodes, one season, in broadcast order, with nothing left over.",
-  "unit": {
-    "one": "episode",
-    "many": "episodes"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#8C2340",
-  "accentDark": "#FFB35C",
-  "tiers": false,
-  "notes": [
-    [
-      "Twenty-six episodes, and that is the whole show.",
-      "One season on TV Tokyo, January 8, 1998 to June 25, 1998, and no sequel series, film or special was ever made. This list is finished on the day it is built. The count is checked three ways before it ships: the episode table's own numbering, the article's anime infobox, and Wikidata's episode-count statement."
-    ],
-    [
-      "One episode never aired in Japan.",
-      "Episode 16, Demon of the Water Planet, carries no Japanese broadcast date at all. The other 25 went out weekly with no break, so the missing slot is a missing episode rather than a missing week. Toonami ran it in its numbered position on February 5, 2001, which means English-speaking viewers saw it before anyone in Japan did. It is a row here because it is an episode of the show."
-    ],
-    [
-      "And one episode never aired on Toonami.",
-      "The reverse case. Episode 23, Hot Springs Planet Tenrei, aired in Japan and was pulled from the 2001 Toonami broadcast for \"scenes of extensive female nudity and sexually suggestive humor/themes\"; the West did not see it until the revived Toonami block ran it on February 25, 2018, 17 years later. This list follows the Japanese broadcast, so it sits in its numbered place like everything else."
-    ],
-    [
-      "Angel Links is not on this list, and that is a decision.",
-      "It is the franchise's one spin-off — 13 episodes on Wowow in 1999, made by the same studio — and the source is direct about what it shares: \"Outlaw Star and Angel Links take place in the same universe; characters from both series appeared in an episode of Outlaw Star, but the two have little else in relation.\" The crossover it means is episode 19, Law and Lawlessness. A shared setting and two borrowed characters are not a continuation, so watching this list does not leave Angel Links unfinished. It is named here so its absence reads as a choice rather than an oversight."
-    ],
-    [
-      "There is no OVA, no film and no continuation.",
-      "A single-episode sequel got as far as character designs and a plot outline and no further: \"Preliminary plans were made to create a direct sequel in the form of a single-episode (OVA) called Sword of Wind, but production never began.\" No production date was ever set. An episode that was never animated cannot be watched, so it is named rather than listed. The manga (21 chapters, and no official English release) and the light novels are print, and out of scope for a watch list."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked here.",
-      "Weighting is all or nothing — a row without a weight silently counts as one hour — so a handful of sourced runtimes would be worse than none. Every place a per-episode duration could live was checked and every one is empty: not one of the 26 episode entries carries a running-time field; no episode has a Wikipedia article of its own, since the 20 episode titles that have a page at all are redirects to the list and no title in the table is even a link; no episode has a Wikidata item, so there is no per-episode duration statement to read; neither the series nor the episode-list Wikidata item carries a duration; there is no season article to hold one; and the main article gives no running time in prose. So every row counts one, and the page counts episodes."
-    ],
-    "Titles, airdates and Toonami dates machine-read from Wikipedia's List of Outlaw Star episodes; the run, the spin-off and the unmade OVA from the Outlaw Star, Angel Links and Outlaw Star chapters articles; the episode count cross-checked against the anime infobox and Wikidata before this builds."
+ "slug": "outlaw-star",
+ "title": "Outlaw Star",
+ "subtitle": "the complete 26-episode run",
+ "kind": "anime",
+ "popularity": 60,
+ "year": "1998",
+ "blurb": "Sunrise's 1998 space western in full — 26 episodes, one season, in broadcast order, with nothing left over.",
+ "unit": {
+  "one": "episode",
+  "many": "episodes"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#8C2340",
+ "accentDark": "#FFB35C",
+ "tiers": false,
+ "notes": [
+  [
+   "Twenty-six episodes, and that is the whole show.",
+   "One season on TV Tokyo, January 8, 1998 to June 25, 1998, and no sequel series, film or special was ever made. This list is finished on the day it is built. The count is checked three ways before it ships: the episode table's own numbering, the article's anime infobox, and Wikidata's episode-count statement."
   ],
-  "sections": [
+  [
+   "One episode never aired in Japan.",
+   "Episode 16, Demon of the Water Planet, carries no Japanese broadcast date at all. The other 25 went out weekly with no break, so the missing slot is a missing episode rather than a missing week. Toonami ran it in its numbered position on February 5, 2001, which means English-speaking viewers saw it before anyone in Japan did. It is a row here because it is an episode of the show."
+  ],
+  [
+   "And one episode never aired on Toonami.",
+   "The reverse case. Episode 23, Hot Springs Planet Tenrei, aired in Japan and was pulled from the 2001 Toonami broadcast for \"scenes of extensive female nudity and sexually suggestive humor/themes\"; the West did not see it until the revived Toonami block ran it on February 25, 2018, 17 years later. This list follows the Japanese broadcast, so it sits in its numbered place like everything else."
+  ],
+  [
+   "Angel Links is not on this list, and that is a decision.",
+   "It is the franchise's one spin-off — 13 episodes on Wowow in 1999, made by the same studio — and the source is direct about what it shares: \"Outlaw Star and Angel Links take place in the same universe; characters from both series appeared in an episode of Outlaw Star, but the two have little else in relation.\" The crossover it means is episode 19, Law and Lawlessness. A shared setting and two borrowed characters are not a continuation, so watching this list does not leave Angel Links unfinished. It is named here so its absence reads as a choice rather than an oversight."
+  ],
+  [
+   "There is no OVA, no film and no continuation.",
+   "A single-episode sequel got as far as character designs and a plot outline and no further: \"Preliminary plans were made to create a direct sequel in the form of a single-episode (OVA) called Sword of Wind, but production never began.\" No production date was ever set. An episode that was never animated cannot be watched, so it is named rather than listed. The manga (21 chapters, and no official English release) and the light novels are print, and out of scope for a watch list."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked here.",
+   "Weighting is all or nothing — a row without a weight silently counts as one hour — so a handful of sourced runtimes would be worse than none. Every place a per-episode duration could live was checked and every one is empty: not one of the 26 episode entries carries a running-time field; no episode has a Wikipedia article of its own, since the 20 episode titles that have a page at all are redirects to the list and no title in the table is even a link; no episode has a Wikidata item, so there is no per-episode duration statement to read; neither the series nor the episode-list Wikidata item carries a duration; there is no season article to hold one; and the main article gives no running time in prose. So every row counts one, and the page counts episodes."
+  ],
+  "Titles, airdates and Toonami dates machine-read from Wikipedia's List of Outlaw Star episodes; the run, the spin-off and the unmade OVA from the Outlaw Star, Angel Links and Outlaw Star chapters articles; the episode count cross-checked against the anime infobox and Wikidata before this builds."
+ ],
+ "sections": [
+  {
+   "id": "series",
+   "title": "The series",
+   "sub": "1998 · 26 episodes · TV Tokyo",
+   "intro": "Every episode, numbered the way the show numbers them. One season, start to finish — the Japanese broadcast ran from January 8, 1998 to June 25, 1998 — and nothing came after it.",
+   "links": [
     {
-      "id": "series",
-      "title": "The series",
-      "sub": "1998 · 26 episodes · TV Tokyo",
-      "intro": "Every episode, numbered the way the show numbers them. One season, start to finish — the Japanese broadcast ran from January 8, 1998 to June 25, 1998 — and nothing came after it.",
-      "links": [
-        {
-          "label": "The episode list",
-          "url": "https://en.wikipedia.org/wiki/List_of_Outlaw_Star_episodes"
-        }
-      ],
-      "open": true,
-      "items": [
-        {
-          "id": "ols-1",
-          "t": "Outlaw World",
-          "n": "1",
-          "note": "Series premiere"
-        },
-        {
-          "id": "ols-2",
-          "t": "World of Desires",
-          "n": "2"
-        },
-        {
-          "id": "ols-3",
-          "t": "Into Burning Space",
-          "n": "3"
-        },
-        {
-          "id": "ols-4",
-          "t": "When the Hot Ice Melts",
-          "n": "4"
-        },
-        {
-          "id": "ols-5",
-          "t": "The Beast Girl, Ready to Pounce!",
-          "n": "5"
-        },
-        {
-          "id": "ols-6",
-          "t": "The Beautiful Assassin",
-          "n": "6"
-        },
-        {
-          "id": "ols-7",
-          "t": "Creeping Evil",
-          "n": "7"
-        },
-        {
-          "id": "ols-8",
-          "t": "Forced Departure",
-          "n": "8"
-        },
-        {
-          "id": "ols-9",
-          "t": "A Journey of Adventure! Huh?",
-          "n": "9"
-        },
-        {
-          "id": "ols-10",
-          "t": "Gathering for the Space Race",
-          "n": "10"
-        },
-        {
-          "id": "ols-11",
-          "t": "Adrift in Subspace",
-          "n": "11"
-        },
-        {
-          "id": "ols-12",
-          "t": "Mortal Combat with the El Dorado",
-          "n": "12"
-        },
-        {
-          "id": "ols-13",
-          "t": "Advance Guard from Another World",
-          "n": "13"
-        },
-        {
-          "id": "ols-14",
-          "t": "Final Countdown",
-          "n": "14"
-        },
-        {
-          "id": "ols-15",
-          "t": "The Seven Emerge",
-          "n": "15"
-        },
-        {
-          "id": "ols-16",
-          "t": "Demon of the Water Planet",
-          "n": "16",
-          "note": "Never broadcast in Japan; Toonami ran it in sequence, so English-speaking viewers saw it first"
-        },
-        {
-          "id": "ols-17",
-          "t": "Between Life and Machine",
-          "n": "17"
-        },
-        {
-          "id": "ols-18",
-          "t": "The Strongest Woman in the Universe",
-          "n": "18"
-        },
-        {
-          "id": "ols-19",
-          "t": "Law and Lawlessness",
-          "n": "19",
-          "note": "Introduces Duuz and Valeria, who go on to the spin-off Angel Links"
-        },
-        {
-          "id": "ols-20",
-          "t": "Cats and Girls and Spaceships",
-          "n": "20"
-        },
-        {
-          "id": "ols-21",
-          "t": "Grave of the Dragon",
-          "n": "21"
-        },
-        {
-          "id": "ols-22",
-          "t": "Gravity Jailbreak",
-          "n": "22"
-        },
-        {
-          "id": "ols-23",
-          "t": "Hot Springs Planet Tenrei",
-          "n": "23",
-          "note": "Held back from the original Toonami run for its content; the West did not see it until the revived block ran it 17 years later"
-        },
-        {
-          "id": "ols-24",
-          "t": "Cutting the Galactic Leyline",
-          "n": "24"
-        },
-        {
-          "id": "ols-25",
-          "t": "Maze of Despair",
-          "n": "25"
-        },
-        {
-          "id": "ols-26",
-          "t": "Return to Space",
-          "n": "26",
-          "note": "Series finale"
-        }
-      ]
+     "label": "The episode list",
+     "url": "https://en.wikipedia.org/wiki/List_of_Outlaw_Star_episodes"
     }
-  ]
+   ],
+   "open": true,
+   "items": [
+    {
+     "id": "ols-1",
+     "t": "Outlaw World",
+     "n": "1",
+     "note": "Series premiere"
+    },
+    {
+     "id": "ols-2",
+     "t": "World of Desires",
+     "n": "2"
+    },
+    {
+     "id": "ols-3",
+     "t": "Into Burning Space",
+     "n": "3"
+    },
+    {
+     "id": "ols-4",
+     "t": "When the Hot Ice Melts",
+     "n": "4"
+    },
+    {
+     "id": "ols-5",
+     "t": "The Beast Girl, Ready to Pounce!",
+     "n": "5"
+    },
+    {
+     "id": "ols-6",
+     "t": "The Beautiful Assassin",
+     "n": "6"
+    },
+    {
+     "id": "ols-7",
+     "t": "Creeping Evil",
+     "n": "7"
+    },
+    {
+     "id": "ols-8",
+     "t": "Forced Departure",
+     "n": "8"
+    },
+    {
+     "id": "ols-9",
+     "t": "A Journey of Adventure! Huh?",
+     "n": "9"
+    },
+    {
+     "id": "ols-10",
+     "t": "Gathering for the Space Race",
+     "n": "10"
+    },
+    {
+     "id": "ols-11",
+     "t": "Adrift in Subspace",
+     "n": "11"
+    },
+    {
+     "id": "ols-12",
+     "t": "Mortal Combat with the El Dorado",
+     "n": "12"
+    },
+    {
+     "id": "ols-13",
+     "t": "Advance Guard from Another World",
+     "n": "13"
+    },
+    {
+     "id": "ols-14",
+     "t": "Final Countdown",
+     "n": "14"
+    },
+    {
+     "id": "ols-15",
+     "t": "The Seven Emerge",
+     "n": "15"
+    },
+    {
+     "id": "ols-16",
+     "t": "Demon of the Water Planet",
+     "n": "16",
+     "note": "Never broadcast in Japan; Toonami ran it in sequence, so English-speaking viewers saw it first"
+    },
+    {
+     "id": "ols-17",
+     "t": "Between Life and Machine",
+     "n": "17"
+    },
+    {
+     "id": "ols-18",
+     "t": "The Strongest Woman in the Universe",
+     "n": "18"
+    },
+    {
+     "id": "ols-19",
+     "t": "Law and Lawlessness",
+     "n": "19",
+     "note": "Introduces Duuz and Valeria, who go on to the spin-off Angel Links"
+    },
+    {
+     "id": "ols-20",
+     "t": "Cats and Girls and Spaceships",
+     "n": "20"
+    },
+    {
+     "id": "ols-21",
+     "t": "Grave of the Dragon",
+     "n": "21"
+    },
+    {
+     "id": "ols-22",
+     "t": "Gravity Jailbreak",
+     "n": "22"
+    },
+    {
+     "id": "ols-23",
+     "t": "Hot Springs Planet Tenrei",
+     "n": "23",
+     "note": "Held back from the original Toonami run for its content; the West did not see it until the revived block ran it 17 years later"
+    },
+    {
+     "id": "ols-24",
+     "t": "Cutting the Galactic Leyline",
+     "n": "24"
+    },
+    {
+     "id": "ols-25",
+     "t": "Maze of Despair",
+     "n": "25"
+    },
+    {
+     "id": "ols-26",
+     "t": "Return to Space",
+     "n": "26"
+    }
+   ]
+  }
+ ]
 }

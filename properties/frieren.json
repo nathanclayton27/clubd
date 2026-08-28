@@ -1,261 +1,259 @@
 {
-  "slug": "frieren",
-  "title": "Frieren: Beyond Journey's End",
-  "subtitle": "both aired seasons, every episode",
-  "kind": "anime",
-  "popularity": 67,
-  "year": "2023–",
-  "blurb": "Madhouse's elf-mage road story — 28 episodes of the first season and 10 of the second, in broadcast order.",
-  "unit": {
-    "one": "episode",
-    "many": "episodes"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#8A6A2F",
-  "accentDark": "#9ECBEA",
-  "tiers": false,
-  "notes": [
-    [
-      "Both seasons here have finished airing.",
-      "Season 1 ran from September 2023 to March 2024; season 2 ran from 16 January to 27 March 2026. The source closes both with a final date rather than leaving them open, and every one of the 38 episodes is asserted to have already aired before this list is written. There is no pace schedule on this list because there is no broadcast left to keep pace with."
-    ],
-    [
-      "A third season is coming, and nothing of it is listed.",
-      "It was announced after the second season's finale, covers the \"Golden Land\" arc, and is set to premiere in October 2027. The source carries that date and nothing else — no episode count, no episode table, no section. Rather than guess, this list stops at episode 38 and the generator asserts all three of those absences: the day Wikipedia starts filling season 3 in, the build fails instead of quietly staying short."
-    ],
-    [
-      "The premiere was four episodes at once.",
-      "Season 1 opened with a two-hour special made of episodes 1 to 4, in a Nippon TV slot normally reserved for feature films — the first anime series to get it. They are four rows here because the source lists four episodes, and each of the four says so."
-    ],
-    [
-      "The shorts are a separate series.",
-      "Frieren: Beyond Journey's End – Spell That Does OOO is a run of short episodes with its own seasons and its own numbering. The source files it under its own heading, apart from the television series, and it is not listed here."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked on this list.",
-      "Wikipedia gives one running time for the whole show — 24 minutes, on the series infobox — and none at all per episode: not one of the 38 entries carries a length, which is asserted before this builds. Wikidata is no better; the series item holds two equal-ranked durations, 24 minutes and 25 minutes, with nothing to pick between them. Spreading a series-level average across every row would invent precision the source refuses to give, and the two-hour four-episode premiere shows why a flat number would be wrong. It has to be every row or no row, because a row with no weight silently counts as a full hour — so it is no row, and every episode counts one."
-    ],
-    "Titles and airdates machine-read from Wikipedia's \"List of Frieren episodes\" and \"Frieren (TV series)\" articles; each season's count, first and last airdates are asserted against the article's own series overview, the overall numbering asserted contiguous, and the total cross-checked against the series infobox before this builds."
+ "slug": "frieren",
+ "title": "Frieren: Beyond Journey's End",
+ "subtitle": "both aired seasons, every episode",
+ "kind": "anime",
+ "popularity": 67,
+ "year": "2023–",
+ "blurb": "Madhouse's elf-mage road story — 28 episodes of the first season and 10 of the second, in broadcast order.",
+ "unit": {
+  "one": "episode",
+  "many": "episodes"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#8A6A2F",
+ "accentDark": "#9ECBEA",
+ "tiers": false,
+ "notes": [
+  [
+   "Both seasons here have finished airing.",
+   "Season 1 ran from September 2023 to March 2024; season 2 ran from 16 January to 27 March 2026. The source closes both with a final date rather than leaving them open, and every one of the 38 episodes is asserted to have already aired before this list is written. There is no pace schedule on this list because there is no broadcast left to keep pace with."
   ],
-  "sections": [
+  [
+   "A third season is coming, and nothing of it is listed.",
+   "It was announced after the second season's finale, covers the \"Golden Land\" arc, and is set to premiere in October 2027. The source carries that date and nothing else — no episode count, no episode table, no section. Rather than guess, this list stops at episode 38 and the generator asserts all three of those absences: the day Wikipedia starts filling season 3 in, the build fails instead of quietly staying short."
+  ],
+  [
+   "The premiere was four episodes at once.",
+   "Season 1 opened with a two-hour special made of episodes 1 to 4, in a Nippon TV slot normally reserved for feature films — the first anime series to get it. They are four rows here because the source lists four episodes, and each of the four says so."
+  ],
+  [
+   "The shorts are a separate series.",
+   "Frieren: Beyond Journey's End – Spell That Does OOO is a run of short episodes with its own seasons and its own numbering. The source files it under its own heading, apart from the television series, and it is not listed here."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked on this list.",
+   "Wikipedia gives one running time for the whole show — 24 minutes, on the series infobox — and none at all per episode: not one of the 38 entries carries a length, which is asserted before this builds. Wikidata is no better; the series item holds two equal-ranked durations, 24 minutes and 25 minutes, with nothing to pick between them. Spreading a series-level average across every row would invent precision the source refuses to give, and the two-hour four-episode premiere shows why a flat number would be wrong. It has to be every row or no row, because a row with no weight silently counts as a full hour — so it is no row, and every episode counts one."
+  ],
+  "Titles and airdates machine-read from Wikipedia's \"List of Frieren episodes\" and \"Frieren (TV series)\" articles; each season's count, first and last airdates are asserted against the article's own series overview, the overall numbering asserted contiguous, and the total cross-checked against the series infobox before this builds."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1",
+   "sub": "2023–24 · 28 episodes · Nippon TV",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1",
-      "sub": "2023–24 · 28 episodes · Nippon TV",
-      "items": [
-        {
-          "id": "frieren-s1e1",
-          "t": "The Journey's End",
-          "n": "1",
-          "note": "series premiere · episodes 1–4 aired together as a two-hour special"
-        },
-        {
-          "id": "frieren-s1e2",
-          "t": "It Didn't Have to Be Magic…",
-          "n": "2",
-          "note": "part of the two-hour premiere"
-        },
-        {
-          "id": "frieren-s1e3",
-          "t": "Killing Magic",
-          "n": "3",
-          "note": "part of the two-hour premiere"
-        },
-        {
-          "id": "frieren-s1e4",
-          "t": "The Land Where Souls Rest",
-          "n": "4",
-          "note": "part of the two-hour premiere"
-        },
-        {
-          "id": "frieren-s1e5",
-          "t": "Phantoms of the Dead",
-          "n": "5"
-        },
-        {
-          "id": "frieren-s1e6",
-          "t": "The Hero of the Village",
-          "n": "6"
-        },
-        {
-          "id": "frieren-s1e7",
-          "t": "Like a Fairy Tale",
-          "n": "7"
-        },
-        {
-          "id": "frieren-s1e8",
-          "t": "Frieren the Slayer",
-          "n": "8"
-        },
-        {
-          "id": "frieren-s1e9",
-          "t": "Aura the Guillotine",
-          "n": "9"
-        },
-        {
-          "id": "frieren-s1e10",
-          "t": "A Powerful Mage",
-          "n": "10"
-        },
-        {
-          "id": "frieren-s1e11",
-          "t": "Winter in the Northern Lands",
-          "n": "11"
-        },
-        {
-          "id": "frieren-s1e12",
-          "t": "A Real Hero",
-          "n": "12"
-        },
-        {
-          "id": "frieren-s1e13",
-          "t": "Aversion to One's Own Kind",
-          "n": "13"
-        },
-        {
-          "id": "frieren-s1e14",
-          "t": "Privilege of the Young",
-          "n": "14"
-        },
-        {
-          "id": "frieren-s1e15",
-          "t": "Smells Like Trouble",
-          "n": "15"
-        },
-        {
-          "id": "frieren-s1e16",
-          "t": "Long-Lived Friends",
-          "n": "16"
-        },
-        {
-          "id": "frieren-s1e17",
-          "t": "Take Care",
-          "n": "17"
-        },
-        {
-          "id": "frieren-s1e18",
-          "t": "First-Class Mage Exam",
-          "n": "18"
-        },
-        {
-          "id": "frieren-s1e19",
-          "t": "Well-Laid Plans",
-          "n": "19"
-        },
-        {
-          "id": "frieren-s1e20",
-          "t": "Necessary Killing",
-          "n": "20"
-        },
-        {
-          "id": "frieren-s1e21",
-          "t": "The World of Magic",
-          "n": "21"
-        },
-        {
-          "id": "frieren-s1e22",
-          "t": "Future Enemies",
-          "n": "22"
-        },
-        {
-          "id": "frieren-s1e23",
-          "t": "Conquering the Labyrinth",
-          "n": "23"
-        },
-        {
-          "id": "frieren-s1e24",
-          "t": "Perfect Replicas",
-          "n": "24"
-        },
-        {
-          "id": "frieren-s1e25",
-          "t": "A Fatal Vulnerability",
-          "n": "25"
-        },
-        {
-          "id": "frieren-s1e26",
-          "t": "The Height of Magic",
-          "n": "26"
-        },
-        {
-          "id": "frieren-s1e27",
-          "t": "An Era of Humans",
-          "n": "27"
-        },
-        {
-          "id": "frieren-s1e28",
-          "t": "It Would Be Embarrassing When We Met Again",
-          "n": "28",
-          "note": "season finale"
-        }
-      ],
-      "intro": "Two straight cours, 28 episodes. It opened on 29 September 2023 with a two-hour special made of the first four episodes, in a Nippon TV slot normally kept for feature films — the first anime series ever given it — and ran to 22 March 2024.",
-      "open": true
+     "id": "frieren-s1e1",
+     "t": "The Journey's End",
+     "n": "1",
+     "note": "series premiere · episodes 1–4 aired together as a two-hour special"
     },
     {
-      "id": "s2",
-      "title": "Season 2",
-      "sub": "2026 · 10 episodes · Nippon TV",
-      "items": [
-        {
-          "id": "frieren-s2e1",
-          "t": "Shall We Go, Then?",
-          "n": "1"
-        },
-        {
-          "id": "frieren-s2e2",
-          "t": "The Hero of the South",
-          "n": "2"
-        },
-        {
-          "id": "frieren-s2e3",
-          "t": "Somewhere She'd Like",
-          "n": "3"
-        },
-        {
-          "id": "frieren-s2e4",
-          "t": "Other People's Homes",
-          "n": "4"
-        },
-        {
-          "id": "frieren-s2e5",
-          "t": "Logistics in the Northern Plateau",
-          "n": "5"
-        },
-        {
-          "id": "frieren-s2e6",
-          "t": "A Demon-Slaying Request",
-          "n": "6",
-          "note": "held one week for 2026 Winter Olympics coverage"
-        },
-        {
-          "id": "frieren-s2e7",
-          "t": "The Divine Revolte",
-          "n": "7"
-        },
-        {
-          "id": "frieren-s2e8",
-          "t": "A Magnificent End",
-          "n": "8"
-        },
-        {
-          "id": "frieren-s2e9",
-          "t": "Himmel's Memoirs",
-          "n": "9"
-        },
-        {
-          "id": "frieren-s2e10",
-          "t": "A Beautiful Sight",
-          "n": "10",
-          "note": "season finale"
-        }
-      ],
-      "intro": "Ten episodes, 16 January 2026 to 27 March 2026, with Tomoya Kitagawa taking over as director. The rest of the staff and the cast return."
+     "id": "frieren-s1e2",
+     "t": "It Didn't Have to Be Magic…",
+     "n": "2",
+     "note": "part of the two-hour premiere"
+    },
+    {
+     "id": "frieren-s1e3",
+     "t": "Killing Magic",
+     "n": "3",
+     "note": "part of the two-hour premiere"
+    },
+    {
+     "id": "frieren-s1e4",
+     "t": "The Land Where Souls Rest",
+     "n": "4",
+     "note": "part of the two-hour premiere"
+    },
+    {
+     "id": "frieren-s1e5",
+     "t": "Phantoms of the Dead",
+     "n": "5"
+    },
+    {
+     "id": "frieren-s1e6",
+     "t": "The Hero of the Village",
+     "n": "6"
+    },
+    {
+     "id": "frieren-s1e7",
+     "t": "Like a Fairy Tale",
+     "n": "7"
+    },
+    {
+     "id": "frieren-s1e8",
+     "t": "Frieren the Slayer",
+     "n": "8"
+    },
+    {
+     "id": "frieren-s1e9",
+     "t": "Aura the Guillotine",
+     "n": "9"
+    },
+    {
+     "id": "frieren-s1e10",
+     "t": "A Powerful Mage",
+     "n": "10"
+    },
+    {
+     "id": "frieren-s1e11",
+     "t": "Winter in the Northern Lands",
+     "n": "11"
+    },
+    {
+     "id": "frieren-s1e12",
+     "t": "A Real Hero",
+     "n": "12"
+    },
+    {
+     "id": "frieren-s1e13",
+     "t": "Aversion to One's Own Kind",
+     "n": "13"
+    },
+    {
+     "id": "frieren-s1e14",
+     "t": "Privilege of the Young",
+     "n": "14"
+    },
+    {
+     "id": "frieren-s1e15",
+     "t": "Smells Like Trouble",
+     "n": "15"
+    },
+    {
+     "id": "frieren-s1e16",
+     "t": "Long-Lived Friends",
+     "n": "16"
+    },
+    {
+     "id": "frieren-s1e17",
+     "t": "Take Care",
+     "n": "17"
+    },
+    {
+     "id": "frieren-s1e18",
+     "t": "First-Class Mage Exam",
+     "n": "18"
+    },
+    {
+     "id": "frieren-s1e19",
+     "t": "Well-Laid Plans",
+     "n": "19"
+    },
+    {
+     "id": "frieren-s1e20",
+     "t": "Necessary Killing",
+     "n": "20"
+    },
+    {
+     "id": "frieren-s1e21",
+     "t": "The World of Magic",
+     "n": "21"
+    },
+    {
+     "id": "frieren-s1e22",
+     "t": "Future Enemies",
+     "n": "22"
+    },
+    {
+     "id": "frieren-s1e23",
+     "t": "Conquering the Labyrinth",
+     "n": "23"
+    },
+    {
+     "id": "frieren-s1e24",
+     "t": "Perfect Replicas",
+     "n": "24"
+    },
+    {
+     "id": "frieren-s1e25",
+     "t": "A Fatal Vulnerability",
+     "n": "25"
+    },
+    {
+     "id": "frieren-s1e26",
+     "t": "The Height of Magic",
+     "n": "26"
+    },
+    {
+     "id": "frieren-s1e27",
+     "t": "An Era of Humans",
+     "n": "27"
+    },
+    {
+     "id": "frieren-s1e28",
+     "t": "It Would Be Embarrassing When We Met Again",
+     "n": "28"
     }
-  ]
+   ],
+   "intro": "Two straight cours, 28 episodes. It opened on 29 September 2023 with a two-hour special made of the first four episodes, in a Nippon TV slot normally kept for feature films — the first anime series ever given it — and ran to 22 March 2024.",
+   "open": true
+  },
+  {
+   "id": "s2",
+   "title": "Season 2",
+   "sub": "2026 · 10 episodes · Nippon TV",
+   "items": [
+    {
+     "id": "frieren-s2e1",
+     "t": "Shall We Go, Then?",
+     "n": "1"
+    },
+    {
+     "id": "frieren-s2e2",
+     "t": "The Hero of the South",
+     "n": "2"
+    },
+    {
+     "id": "frieren-s2e3",
+     "t": "Somewhere She'd Like",
+     "n": "3"
+    },
+    {
+     "id": "frieren-s2e4",
+     "t": "Other People's Homes",
+     "n": "4"
+    },
+    {
+     "id": "frieren-s2e5",
+     "t": "Logistics in the Northern Plateau",
+     "n": "5"
+    },
+    {
+     "id": "frieren-s2e6",
+     "t": "A Demon-Slaying Request",
+     "n": "6",
+     "note": "held one week for 2026 Winter Olympics coverage"
+    },
+    {
+     "id": "frieren-s2e7",
+     "t": "The Divine Revolte",
+     "n": "7"
+    },
+    {
+     "id": "frieren-s2e8",
+     "t": "A Magnificent End",
+     "n": "8"
+    },
+    {
+     "id": "frieren-s2e9",
+     "t": "Himmel's Memoirs",
+     "n": "9"
+    },
+    {
+     "id": "frieren-s2e10",
+     "t": "A Beautiful Sight",
+     "n": "10"
+    }
+   ],
+   "intro": "Ten episodes, 16 January 2026 to 27 March 2026, with Tomoya Kitagawa taking over as director. The rest of the staff and the cast return."
+  }
+ ]
 }

@@ -15,12 +15,53 @@ The rules this applies, all Nathan's, from CLU-59 (2026-08-24) and CLU-123
   * a logline is fine only if it matches the publisher's own original copy;
   * ambiguous defaults to hidden until adjudicated.
 
-⚠ ONE PATTERN IS DELIBERATELY NOT APPLIED. The structural finale ("the last
-episode of the season") — Nathan questioned it rather than ruling: "kind of a
-pointless message, if it doesnt even need to exist right?" The proposed answer
-was to DELETE such notes where a section header already shows the structure.
-That is destructive and has never been approved, so this reports those notes
-and changes nothing about them.
+THE ADJUDICATED CORPUS (Nathan, 2026-08-28: "All of this looks good"). These
+are the cases the rules above did not settle, ruled once so nobody re-argues
+them. This section is the point of the file — read it before adding a rule.
+
+  1. A BARE ISSUE TITLE in the note field is not a spoiler; it is the comic's
+     name. "Death and Glory", "The Dead Zone, Part 1", "Death on the Ice
+     Field". ⚠ Unlike "The Night Gwen Stacy Died" these are unquoted, so
+     nothing distinguishes a title from a description except knowing the list.
+     **When writing new notes, quote the title** and this stops being a
+     judgement call.
+  2. A FIRST APPEARANCE whose character's name is itself a reveal word is fine
+     where it was cover-billed — sandman's "Death's debut" is on every cover of
+     that collection, which is exactly the carve-out his comics rule describes.
+  3. A TEASE THAT NAMES NO OUTCOME is fine: "The Hobgoblin's identity", "its
+     ending echoes forward", "an ending people argue about". It says a thing
+     matters without saying what it is.
+  4. A LOGLINE DESCRIBING A PREMISE is fine — but see the taste rule below.
+  5. A FILM'S ACTUAL TITLE containing a reveal word is fine, same as 1.
+  6. PRODUCTION AND BIOGRAPHICAL FACTS are not plot: "out six days after his
+     death", "his last film", "aired as one hour-long episode".
+
+⚠ THE TASTE RULE, and it is the one that needs a person rather than a regex.
+Nathan, on premise notes: "make sure to do your best to make it so a premise
+note is obviously not a crazy spoiler for something recommended to go in blind.
+Like an explainer on the substance kind of ruins it a bit."
+
+A premise note is a categorisation — body-swap's register is
+`country · who swaps · mechanism · runtime`, and for Freaky Friday all of that
+is on the poster. For a film whose turn IS the premise, it is not. The Substance
+named "Elisabeth Sparkle and Sue", which gives away that a second self exists;
+it now names only Elisabeth. **Where a work is best met cold, the note says
+less.** No heuristic can find these — ask whether the trailer said it.
+
+THE STRUCTURAL FINALE IS NOW RULED, AND IT IS DESTRUCTIVE. Nathan first
+questioned it — "kind of a pointless message, if it doesnt even need to exist
+right?" — and on 2026-08-28 ruled: "Yeah delete those notes if they're actually
+pointless."
+
+⚠ "Pointless" means CARRYING NOTHING, not mentioning a finale. Ten notes were
+deleted: a bare "season finale" on the LAST row of a section already titled
+"Season 1", where the header and the position already say it. **Thirty-two were
+kept**, because they carry something the header does not — farscape's
+"concluded in season 2", frasier's "aired as one hour-long episode",
+childs-play's "the show was cancelled after three seasons", and
+amazing-spider-man's "Stern's finale", which is a creator-run boundary rather
+than a structural one. Deleting those would have destroyed real information
+under cover of a tidy-up.
 
 Nothing here edits a property file. It prints a corpus for review.
 

@@ -1,678 +1,677 @@
 {
-  "slug": "yuyu-hakusho",
-  "title": "Yu Yu Hakusho",
-  "subtitle": "every episode, with both films where they opened",
-  "kind": "tv & films",
-  "popularity": 68,
-  "year": "1992–2018",
-  "blurb": "All 112 episodes of Togashi's Spirit Detective run in broadcast order, with both films at the point they opened and the anniversary OVA at the end.",
-  "unit": {
-    "one": "entry",
-    "many": "entries"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#1C5B4A",
-  "accentDark": "#6FE3C4",
-  "tiers": false,
-  "notes": [
-    [
-      "Both films opened inside the run, so both sit inside it.",
-      "Neither film came after the series and neither came between two arcs. The 1993 short opened on July 10, 1993, four and a half months into the Dark Tournament Saga; Poltergeist Report opened on April 9, 1994, seven weeks into the Chapter Black Saga. Each one is filed by comparing its release date against every season's first and last airdate, so they sit in those lists rather than in sections of their own."
-    ],
-    [
-      "Each film opened on a broadcast Saturday.",
-      "The series went out weekly on Saturdays, and both films opened on a day that also carried an episode — July 10, 1993 is also episode 38's airdate, and April 9, 1994 is also episode 75's. Nothing in the source orders a film against an episode within the same day, so each film is placed after the episode it shared a day with. Both row notes name that day."
-    ],
-    [
-      "The four sections are the source's arcs, and the source says what they are not.",
-      "Spirit Detective, Dark Tournament, Chapter Black and Three Kings are the divisions and the names the episode list uses, and they are carried here unchanged. That article is also plain that its seasons \"only correspond to story arcs, and not to the pattern in which the show actually aired\": in Japan the series ran year-round with no seasons at all, and the American broadcast seasons were cut somewhere else again — 1–21, 22–53, 54–89, 90–112. The arcs are the division worth watching by. They are not a broadcast fact, and this page does not pretend otherwise."
-    ],
-    [
-      "The numbers run 1 to 112 straight through.",
-      "The source's tables carry one number per episode and it is the overall one — there is no in-season numbering to fall back on. That is why the Three Kings Saga opens at 95 rather than at 1."
-    ],
-    [
-      "Eizou Hakusho is not here.",
-      "Six OVA volumes went out on VHS in Japan between September 21, 1994 and February 7, 1996. The source describes what is on them — video montages from the anime, image songs, voice actor interviews and satirical shorts, alongside very short original clips — and the series article files the set as a compilation series. Most of it is the episodes already on this list, cut differently, and the source gives no title and no date for any individual volume, so no row here could say which one it was. Named here instead, so its absence is a statement rather than an oversight."
-    ],
-    [
-      "The 2023 live-action series is not here either.",
-      "Netflix's adaptation is a different production with its own cast, its own article and its own run. This list is the anime."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked on this list.",
-      "Both films publish a runtime — 30 and 95 minutes, agreed by their infoboxes and by Wikidata — and both film rows carry theirs, as does each OVA row. The 112 episodes publish none, anywhere: not one episode has an article of its own, so not one has a Wikidata item to carry a runtime; asking Wikidata directly for everything filed as part of the series returns only the four season items and none of them carries one either; no season article has a runtime field, or the word; the series infobox has no runtime field of its own; and no episode table row has a runtime column. A weighted list counts a row with no weight as a full hour, so weighting the two films alone would invent an hour 112 times over. An episode, a film and an OVA each count one."
-    ],
-    "Titles, numbering, airdates, arc names, film dates and runtimes and the OVA facts machine-read from Wikipedia's List of Yu Yu Hakusho episodes, the four season articles, the YuYu Hakusho (1992 TV series) and Yu Yu Hakusho articles and both film articles, with the runtime census taken from Wikidata; every season's count is asserted against its own infobox, the total against the series infobox, the numbering asserted contiguous 1–112, and each film's placement recomputed from its release date before this builds."
+ "slug": "yuyu-hakusho",
+ "title": "Yu Yu Hakusho",
+ "subtitle": "every episode, with both films where they opened",
+ "kind": "tv & films",
+ "popularity": 68,
+ "year": "1992–2018",
+ "blurb": "All 112 episodes of Togashi's Spirit Detective run in broadcast order, with both films at the point they opened and the anniversary OVA at the end.",
+ "unit": {
+  "one": "entry",
+  "many": "entries"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#1C5B4A",
+ "accentDark": "#6FE3C4",
+ "tiers": false,
+ "notes": [
+  [
+   "Both films opened inside the run, so both sit inside it.",
+   "Neither film came after the series and neither came between two arcs. The 1993 short opened on July 10, 1993, four and a half months into the Dark Tournament Saga; Poltergeist Report opened on April 9, 1994, seven weeks into the Chapter Black Saga. Each one is filed by comparing its release date against every season's first and last airdate, so they sit in those lists rather than in sections of their own."
   ],
-  "sections": [
+  [
+   "Each film opened on a broadcast Saturday.",
+   "The series went out weekly on Saturdays, and both films opened on a day that also carried an episode — July 10, 1993 is also episode 38's airdate, and April 9, 1994 is also episode 75's. Nothing in the source orders a film against an episode within the same day, so each film is placed after the episode it shared a day with. Both row notes name that day."
+  ],
+  [
+   "The four sections are the source's arcs, and the source says what they are not.",
+   "Spirit Detective, Dark Tournament, Chapter Black and Three Kings are the divisions and the names the episode list uses, and they are carried here unchanged. That article is also plain that its seasons \"only correspond to story arcs, and not to the pattern in which the show actually aired\": in Japan the series ran year-round with no seasons at all, and the American broadcast seasons were cut somewhere else again — 1–21, 22–53, 54–89, 90–112. The arcs are the division worth watching by. They are not a broadcast fact, and this page does not pretend otherwise."
+  ],
+  [
+   "The numbers run 1 to 112 straight through.",
+   "The source's tables carry one number per episode and it is the overall one — there is no in-season numbering to fall back on. That is why the Three Kings Saga opens at 95 rather than at 1."
+  ],
+  [
+   "Eizou Hakusho is not here.",
+   "Six OVA volumes went out on VHS in Japan between September 21, 1994 and February 7, 1996. The source describes what is on them — video montages from the anime, image songs, voice actor interviews and satirical shorts, alongside very short original clips — and the series article files the set as a compilation series. Most of it is the episodes already on this list, cut differently, and the source gives no title and no date for any individual volume, so no row here could say which one it was. Named here instead, so its absence is a statement rather than an oversight."
+  ],
+  [
+   "The 2023 live-action series is not here either.",
+   "Netflix's adaptation is a different production with its own cast, its own article and its own run. This list is the anime."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked on this list.",
+   "Both films publish a runtime — 30 and 95 minutes, agreed by their infoboxes and by Wikidata — and both film rows carry theirs, as does each OVA row. The 112 episodes publish none, anywhere: not one episode has an article of its own, so not one has a Wikidata item to carry a runtime; asking Wikidata directly for everything filed as part of the series returns only the four season items and none of them carries one either; no season article has a runtime field, or the word; the series infobox has no runtime field of its own; and no episode table row has a runtime column. A weighted list counts a row with no weight as a full hour, so weighting the two films alone would invent an hour 112 times over. An episode, a film and an OVA each count one."
+  ],
+  "Titles, numbering, airdates, arc names, film dates and runtimes and the OVA facts machine-read from Wikipedia's List of Yu Yu Hakusho episodes, the four season articles, the YuYu Hakusho (1992 TV series) and Yu Yu Hakusho articles and both film articles, with the runtime census taken from Wikidata; every season's count is asserted against its own infobox, the total against the series infobox, the numbering asserted contiguous 1–112, and each film's placement recomputed from its release date before this builds."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1: Spirit Detective Saga",
+   "sub": "1992–93 · 25 episodes · Fuji Television",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1: Spirit Detective Saga",
-      "sub": "1992–93 · 25 episodes · Fuji Television",
-      "items": [
-        {
-          "id": "yyh-e1",
-          "t": "Surprised to be Dead",
-          "n": "1"
-        },
-        {
-          "id": "yyh-e2",
-          "t": "Koenma Appears",
-          "n": "2"
-        },
-        {
-          "id": "yyh-e3",
-          "t": "Kuwabara: A Promise Between Men",
-          "n": "3"
-        },
-        {
-          "id": "yyh-e4",
-          "t": "Requirements for Lovers",
-          "n": "4"
-        },
-        {
-          "id": "yyh-e5",
-          "t": "Yusuke's Back",
-          "n": "5"
-        },
-        {
-          "id": "yyh-e6",
-          "t": "Three Monsters",
-          "n": "6"
-        },
-        {
-          "id": "yyh-e7",
-          "t": "Gouki and Kurama",
-          "n": "7"
-        },
-        {
-          "id": "yyh-e8",
-          "t": "The Three Eyes of Hiei",
-          "n": "8"
-        },
-        {
-          "id": "yyh-e9",
-          "t": "The Search Begins",
-          "n": "9"
-        },
-        {
-          "id": "yyh-e10",
-          "t": "Kuwabara's Spirit Sword",
-          "n": "10"
-        },
-        {
-          "id": "yyh-e11",
-          "t": "Hard Fights for Yusuke",
-          "n": "11"
-        },
-        {
-          "id": "yyh-e12",
-          "t": "Rando Rises, Kuwabara Falls",
-          "n": "12"
-        },
-        {
-          "id": "yyh-e13",
-          "t": "Yusuke vs. Rando: 99 Attacks",
-          "n": "13"
-        },
-        {
-          "id": "yyh-e14",
-          "t": "The Beasts of Maze Castle",
-          "n": "14"
-        },
-        {
-          "id": "yyh-e15",
-          "t": "Genbu, the Stone Beast",
-          "n": "15"
-        },
-        {
-          "id": "yyh-e16",
-          "t": "Byakko, the White Tiger",
-          "n": "16"
-        },
-        {
-          "id": "yyh-e17",
-          "t": "Byakko's Lair",
-          "n": "17"
-        },
-        {
-          "id": "yyh-e18",
-          "t": "Seiryu, the Blue Dragon",
-          "n": "18"
-        },
-        {
-          "id": "yyh-e19",
-          "t": "Suzaku, Leader of the Beasts",
-          "n": "19"
-        },
-        {
-          "id": "yyh-e20",
-          "t": "Seven Ways to Die",
-          "n": "20"
-        },
-        {
-          "id": "yyh-e21",
-          "t": "Yusuke's Sacrifice",
-          "n": "21"
-        },
-        {
-          "id": "yyh-e22",
-          "t": "Lamenting Beauty",
-          "n": "22"
-        },
-        {
-          "id": "yyh-e23",
-          "t": "The Toguro Brothers Gang",
-          "n": "23"
-        },
-        {
-          "id": "yyh-e24",
-          "t": "The Deadly Triad",
-          "n": "24"
-        },
-        {
-          "id": "yyh-e25",
-          "t": "Kuwabara's Fight of Love",
-          "n": "25"
-        }
-      ],
-      "intro": "Where it starts. Twenty-five episodes adapting the manga's first six volumes.",
-      "open": true
+     "id": "yyh-e1",
+     "t": "Surprised to be Dead",
+     "n": "1"
     },
     {
-      "id": "s2",
-      "title": "Season 2: Dark Tournament Saga",
-      "sub": "1993–94 · 41 episodes, with the film where it opened · Fuji Television",
-      "items": [
-        {
-          "id": "yyh-e26",
-          "t": "Toguro Returns",
-          "n": "26"
-        },
-        {
-          "id": "yyh-e27",
-          "t": "The Dark Tournament Begins",
-          "n": "27"
-        },
-        {
-          "id": "yyh-e28",
-          "t": "First Fight",
-          "n": "28"
-        },
-        {
-          "id": "yyh-e29",
-          "t": "Flowers of Blood",
-          "n": "29"
-        },
-        {
-          "id": "yyh-e30",
-          "t": "Dragon of the Darkness Flame",
-          "n": "30"
-        },
-        {
-          "id": "yyh-e31",
-          "t": "Stumbling Warrior",
-          "n": "31"
-        },
-        {
-          "id": "yyh-e32",
-          "t": "Knife Edge Death-Match",
-          "n": "32"
-        },
-        {
-          "id": "yyh-e33",
-          "t": "A Day in Waiting",
-          "n": "33"
-        },
-        {
-          "id": "yyh-e34",
-          "t": "Percentage of Victory",
-          "n": "34"
-        },
-        {
-          "id": "yyh-e35",
-          "t": "Glimpse Beneath the Mask",
-          "n": "35"
-        },
-        {
-          "id": "yyh-e36",
-          "t": "Ambition Destroyed: A Trial by Light",
-          "n": "36"
-        },
-        {
-          "id": "yyh-e37",
-          "t": "Master of Disguise",
-          "n": "37"
-        },
-        {
-          "id": "yyh-e38",
-          "t": "Kurama's Stand",
-          "n": "38"
-        },
-        {
-          "id": "yyh-film-1993",
-          "t": "Yu Yu Hakusho: The Movie",
-          "n": "film",
-          "note": "Theatrical film · 30 minutes · Opened July 10, 1993, the day episode 38 aired · Also known as The Golden Seal · Shown at a seasonal Toei Anime Fair"
-        },
-        {
-          "id": "yyh-e39",
-          "t": "Crushing Revenge",
-          "n": "39"
-        },
-        {
-          "id": "yyh-e40",
-          "t": "Jin, the Wind Master",
-          "n": "40"
-        },
-        {
-          "id": "yyh-e41",
-          "t": "Reverse Decisions",
-          "n": "41"
-        },
-        {
-          "id": "yyh-e42",
-          "t": "A Matter of Love and Death",
-          "n": "42"
-        },
-        {
-          "id": "yyh-e43",
-          "t": "The Masked Fighter Revealed",
-          "n": "43"
-        },
-        {
-          "id": "yyh-e44",
-          "t": "Yusuke's Final Test",
-          "n": "44"
-        },
-        {
-          "id": "yyh-e45",
-          "t": "Hiei Battles On",
-          "n": "45"
-        },
-        {
-          "id": "yyh-e46",
-          "t": "Many Faces, Many Forms",
-          "n": "46"
-        },
-        {
-          "id": "yyh-e47",
-          "t": "Legendary Bandit: Yoko Kurama",
-          "n": "47"
-        },
-        {
-          "id": "yyh-e48",
-          "t": "The Cape of No Return",
-          "n": "48"
-        },
-        {
-          "id": "yyh-e49",
-          "t": "Genkai's Strength",
-          "n": "49"
-        },
-        {
-          "id": "yyh-e50",
-          "t": "Suzuka's Challenge",
-          "n": "50"
-        },
-        {
-          "id": "yyh-e51",
-          "t": "Arch-Rivals",
-          "n": "51"
-        },
-        {
-          "id": "yyh-e52",
-          "t": "The Death of Genkai",
-          "n": "52"
-        },
-        {
-          "id": "yyh-e53",
-          "t": "Overcoming Grief",
-          "n": "53"
-        },
-        {
-          "id": "yyh-e54",
-          "t": "The Beginning of the End",
-          "n": "54"
-        },
-        {
-          "id": "yyh-e55",
-          "t": "The Beast Within",
-          "n": "55"
-        },
-        {
-          "id": "yyh-e56",
-          "t": "Yoko's Magic",
-          "n": "56"
-        },
-        {
-          "id": "yyh-e57",
-          "t": "Beneath Bui's Armor",
-          "n": "57"
-        },
-        {
-          "id": "yyh-e58",
-          "t": "Wielder of the Dragon",
-          "n": "58"
-        },
-        {
-          "id": "yyh-e59",
-          "t": "The Shadow of Elder Toguro",
-          "n": "59"
-        },
-        {
-          "id": "yyh-e60",
-          "t": "Sakyo's Proposal",
-          "n": "60"
-        },
-        {
-          "id": "yyh-e61",
-          "t": "Yusuke vs. Toguro",
-          "n": "61"
-        },
-        {
-          "id": "yyh-e62",
-          "t": "Toguro's Full Power",
-          "n": "62"
-        },
-        {
-          "id": "yyh-e63",
-          "t": "Yusuke's Despair",
-          "n": "63"
-        },
-        {
-          "id": "yyh-e64",
-          "t": "Toguro's Desire",
-          "n": "64"
-        },
-        {
-          "id": "yyh-e65",
-          "t": "Out With a Bang",
-          "n": "65"
-        },
-        {
-          "id": "yyh-e66",
-          "t": "Toguro's Wish",
-          "n": "66"
-        }
-      ]
+     "id": "yyh-e2",
+     "t": "Koenma Appears",
+     "n": "2"
     },
     {
-      "id": "s3",
-      "title": "Season 3: Chapter Black Saga",
-      "sub": "1994 · 28 episodes, with the film where it opened · Fuji Television",
-      "items": [
-        {
-          "id": "yyh-e67",
-          "t": "Return to Living World",
-          "n": "67"
-        },
-        {
-          "id": "yyh-e68",
-          "t": "Setting the Trap",
-          "n": "68"
-        },
-        {
-          "id": "yyh-e69",
-          "t": "The Power of Taboo",
-          "n": "69"
-        },
-        {
-          "id": "yyh-e70",
-          "t": "Genkai's Ruse",
-          "n": "70"
-        },
-        {
-          "id": "yyh-e71",
-          "t": "The Tunnel",
-          "n": "71"
-        },
-        {
-          "id": "yyh-e72",
-          "t": "The Reader",
-          "n": "72"
-        },
-        {
-          "id": "yyh-e73",
-          "t": "The Doctor's Disease",
-          "n": "73"
-        },
-        {
-          "id": "yyh-e74",
-          "t": "Sleep, Doctor, Sleep",
-          "n": "74"
-        },
-        {
-          "id": "yyh-e75",
-          "t": "Caught in the Rain",
-          "n": "75"
-        },
-        {
-          "id": "yyh-film-1994",
-          "t": "Yu Yu Hakusho the Movie: Poltergeist Report",
-          "n": "film",
-          "note": "Theatrical film · 95 minutes · Opened April 9, 1994, the day episode 75 aired"
-        },
-        {
-          "id": "yyh-e76",
-          "t": "Kuwabara: Awakening",
-          "n": "76"
-        },
-        {
-          "id": "yyh-e77",
-          "t": "Sensui's Fall",
-          "n": "77"
-        },
-        {
-          "id": "yyh-e78",
-          "t": "Divide and Conquer",
-          "n": "78"
-        },
-        {
-          "id": "yyh-e79",
-          "t": "The Human Race",
-          "n": "79"
-        },
-        {
-          "id": "yyh-e80",
-          "t": "Moving Target",
-          "n": "80"
-        },
-        {
-          "id": "yyh-e81",
-          "t": "Let the Games Begin",
-          "n": "81"
-        },
-        {
-          "id": "yyh-e82",
-          "t": "If You Could Play Forever",
-          "n": "82"
-        },
-        {
-          "id": "yyh-e83",
-          "t": "Game Over",
-          "n": "83"
-        },
-        {
-          "id": "yyh-e84",
-          "t": "Kurama's Anger, Gourmet's Guest",
-          "n": "84"
-        },
-        {
-          "id": "yyh-e85",
-          "t": "Spirit Detective Showdown",
-          "n": "85"
-        },
-        {
-          "id": "yyh-e86",
-          "t": "The Difference Maker",
-          "n": "86"
-        },
-        {
-          "id": "yyh-e87",
-          "t": "Power Between the Teeth",
-          "n": "87"
-        },
-        {
-          "id": "yyh-e88",
-          "t": "The True Face of Sensui",
-          "n": "88"
-        },
-        {
-          "id": "yyh-e89",
-          "t": "Death of a Spirit Detective",
-          "n": "89"
-        },
-        {
-          "id": "yyh-e90",
-          "t": "Attempting Revenge",
-          "n": "90"
-        },
-        {
-          "id": "yyh-e91",
-          "t": "Waking the Lost",
-          "n": "91"
-        },
-        {
-          "id": "yyh-e92",
-          "t": "The Proof",
-          "n": "92"
-        },
-        {
-          "id": "yyh-e93",
-          "t": "Sensui's End",
-          "n": "93"
-        },
-        {
-          "id": "yyh-e94",
-          "t": "Topside",
-          "n": "94"
-        }
-      ]
+     "id": "yyh-e3",
+     "t": "Kuwabara: A Promise Between Men",
+     "n": "3"
     },
     {
-      "id": "s4",
-      "title": "Season 4: Three Kings Saga",
-      "sub": "1994–95 · 18 episodes · Fuji Television",
-      "items": [
-        {
-          "id": "yyh-e95",
-          "t": "Yusuke's Destiny",
-          "n": "95"
-        },
-        {
-          "id": "yyh-e96",
-          "t": "Three Strangers, Three Kings",
-          "n": "96"
-        },
-        {
-          "id": "yyh-e97",
-          "t": "Departing Living World",
-          "n": "97"
-        },
-        {
-          "id": "yyh-e98",
-          "t": "Return to Demon World",
-          "n": "98"
-        },
-        {
-          "id": "yyh-e99",
-          "t": "Haunted by the Past",
-          "n": "99"
-        },
-        {
-          "id": "yyh-e100",
-          "t": "The Secret of the Jagan",
-          "n": "100"
-        },
-        {
-          "id": "yyh-e101",
-          "t": "Reunion of the Bandits",
-          "n": "101"
-        },
-        {
-          "id": "yyh-e102",
-          "t": "Torn Between Identities",
-          "n": "102"
-        },
-        {
-          "id": "yyh-e103",
-          "t": "Inheritance",
-          "n": "103"
-        },
-        {
-          "id": "yyh-e104",
-          "t": "Every Demon for Himself",
-          "n": "104"
-        },
-        {
-          "id": "yyh-e105",
-          "t": "The Preliminaries",
-          "n": "105"
-        },
-        {
-          "id": "yyh-e106",
-          "t": "The Battle of Father and Son",
-          "n": "106"
-        },
-        {
-          "id": "yyh-e107",
-          "t": "The Demon World Tournament Begins",
-          "n": "107"
-        },
-        {
-          "id": "yyh-e108",
-          "t": "Farewell, Kurama",
-          "n": "108"
-        },
-        {
-          "id": "yyh-e109",
-          "t": "Love and War",
-          "n": "109"
-        },
-        {
-          "id": "yyh-e110",
-          "t": "A Reason to Fight",
-          "n": "110"
-        },
-        {
-          "id": "yyh-e111",
-          "t": "Closure",
-          "n": "111"
-        },
-        {
-          "id": "yyh-e112",
-          "t": "To the Future",
-          "n": "112",
-          "note": "Series finale"
-        }
-      ]
+     "id": "yyh-e4",
+     "t": "Requirements for Lovers",
+     "n": "4"
     },
     {
-      "id": "ova2018",
-      "title": "Two Shot & All or Nothing",
-      "sub": "2018 · two OVA episodes · 15 minutes",
-      "intro": "Made for the anime's 25th anniversary and released with a Blu-ray box set, twenty-three years after the finale. Two short episodes, both adapting manga chapters the television run never reached.",
-      "items": [
-        {
-          "id": "yyh-ova-two-shot",
-          "t": "Two Shot",
-          "n": "2018",
-          "note": "OVA · 15 minutes · Released October 26, 2018 · Adapts a bonus chapter from the manga's seventh volume"
-        },
-        {
-          "id": "yyh-ova-all-or-nothing",
-          "t": "All or Nothing",
-          "n": "2018",
-          "note": "OVA · 15 minutes · Released October 26, 2018 · Adapts the manga's penultimate chapter"
-        }
-      ]
+     "id": "yyh-e5",
+     "t": "Yusuke's Back",
+     "n": "5"
+    },
+    {
+     "id": "yyh-e6",
+     "t": "Three Monsters",
+     "n": "6"
+    },
+    {
+     "id": "yyh-e7",
+     "t": "Gouki and Kurama",
+     "n": "7"
+    },
+    {
+     "id": "yyh-e8",
+     "t": "The Three Eyes of Hiei",
+     "n": "8"
+    },
+    {
+     "id": "yyh-e9",
+     "t": "The Search Begins",
+     "n": "9"
+    },
+    {
+     "id": "yyh-e10",
+     "t": "Kuwabara's Spirit Sword",
+     "n": "10"
+    },
+    {
+     "id": "yyh-e11",
+     "t": "Hard Fights for Yusuke",
+     "n": "11"
+    },
+    {
+     "id": "yyh-e12",
+     "t": "Rando Rises, Kuwabara Falls",
+     "n": "12"
+    },
+    {
+     "id": "yyh-e13",
+     "t": "Yusuke vs. Rando: 99 Attacks",
+     "n": "13"
+    },
+    {
+     "id": "yyh-e14",
+     "t": "The Beasts of Maze Castle",
+     "n": "14"
+    },
+    {
+     "id": "yyh-e15",
+     "t": "Genbu, the Stone Beast",
+     "n": "15"
+    },
+    {
+     "id": "yyh-e16",
+     "t": "Byakko, the White Tiger",
+     "n": "16"
+    },
+    {
+     "id": "yyh-e17",
+     "t": "Byakko's Lair",
+     "n": "17"
+    },
+    {
+     "id": "yyh-e18",
+     "t": "Seiryu, the Blue Dragon",
+     "n": "18"
+    },
+    {
+     "id": "yyh-e19",
+     "t": "Suzaku, Leader of the Beasts",
+     "n": "19"
+    },
+    {
+     "id": "yyh-e20",
+     "t": "Seven Ways to Die",
+     "n": "20"
+    },
+    {
+     "id": "yyh-e21",
+     "t": "Yusuke's Sacrifice",
+     "n": "21"
+    },
+    {
+     "id": "yyh-e22",
+     "t": "Lamenting Beauty",
+     "n": "22"
+    },
+    {
+     "id": "yyh-e23",
+     "t": "The Toguro Brothers Gang",
+     "n": "23"
+    },
+    {
+     "id": "yyh-e24",
+     "t": "The Deadly Triad",
+     "n": "24"
+    },
+    {
+     "id": "yyh-e25",
+     "t": "Kuwabara's Fight of Love",
+     "n": "25"
     }
-  ]
+   ],
+   "intro": "Where it starts. Twenty-five episodes adapting the manga's first six volumes.",
+   "open": true
+  },
+  {
+   "id": "s2",
+   "title": "Season 2: Dark Tournament Saga",
+   "sub": "1993–94 · 41 episodes, with the film where it opened · Fuji Television",
+   "items": [
+    {
+     "id": "yyh-e26",
+     "t": "Toguro Returns",
+     "n": "26"
+    },
+    {
+     "id": "yyh-e27",
+     "t": "The Dark Tournament Begins",
+     "n": "27"
+    },
+    {
+     "id": "yyh-e28",
+     "t": "First Fight",
+     "n": "28"
+    },
+    {
+     "id": "yyh-e29",
+     "t": "Flowers of Blood",
+     "n": "29"
+    },
+    {
+     "id": "yyh-e30",
+     "t": "Dragon of the Darkness Flame",
+     "n": "30"
+    },
+    {
+     "id": "yyh-e31",
+     "t": "Stumbling Warrior",
+     "n": "31"
+    },
+    {
+     "id": "yyh-e32",
+     "t": "Knife Edge Death-Match",
+     "n": "32"
+    },
+    {
+     "id": "yyh-e33",
+     "t": "A Day in Waiting",
+     "n": "33"
+    },
+    {
+     "id": "yyh-e34",
+     "t": "Percentage of Victory",
+     "n": "34"
+    },
+    {
+     "id": "yyh-e35",
+     "t": "Glimpse Beneath the Mask",
+     "n": "35"
+    },
+    {
+     "id": "yyh-e36",
+     "t": "Ambition Destroyed: A Trial by Light",
+     "n": "36"
+    },
+    {
+     "id": "yyh-e37",
+     "t": "Master of Disguise",
+     "n": "37"
+    },
+    {
+     "id": "yyh-e38",
+     "t": "Kurama's Stand",
+     "n": "38"
+    },
+    {
+     "id": "yyh-film-1993",
+     "t": "Yu Yu Hakusho: The Movie",
+     "n": "film",
+     "note": "Theatrical film · 30 minutes · Opened July 10, 1993, the day episode 38 aired · Also known as The Golden Seal · Shown at a seasonal Toei Anime Fair"
+    },
+    {
+     "id": "yyh-e39",
+     "t": "Crushing Revenge",
+     "n": "39"
+    },
+    {
+     "id": "yyh-e40",
+     "t": "Jin, the Wind Master",
+     "n": "40"
+    },
+    {
+     "id": "yyh-e41",
+     "t": "Reverse Decisions",
+     "n": "41"
+    },
+    {
+     "id": "yyh-e42",
+     "t": "A Matter of Love and Death",
+     "n": "42"
+    },
+    {
+     "id": "yyh-e43",
+     "t": "The Masked Fighter Revealed",
+     "n": "43"
+    },
+    {
+     "id": "yyh-e44",
+     "t": "Yusuke's Final Test",
+     "n": "44"
+    },
+    {
+     "id": "yyh-e45",
+     "t": "Hiei Battles On",
+     "n": "45"
+    },
+    {
+     "id": "yyh-e46",
+     "t": "Many Faces, Many Forms",
+     "n": "46"
+    },
+    {
+     "id": "yyh-e47",
+     "t": "Legendary Bandit: Yoko Kurama",
+     "n": "47"
+    },
+    {
+     "id": "yyh-e48",
+     "t": "The Cape of No Return",
+     "n": "48"
+    },
+    {
+     "id": "yyh-e49",
+     "t": "Genkai's Strength",
+     "n": "49"
+    },
+    {
+     "id": "yyh-e50",
+     "t": "Suzuka's Challenge",
+     "n": "50"
+    },
+    {
+     "id": "yyh-e51",
+     "t": "Arch-Rivals",
+     "n": "51"
+    },
+    {
+     "id": "yyh-e52",
+     "t": "The Death of Genkai",
+     "n": "52"
+    },
+    {
+     "id": "yyh-e53",
+     "t": "Overcoming Grief",
+     "n": "53"
+    },
+    {
+     "id": "yyh-e54",
+     "t": "The Beginning of the End",
+     "n": "54"
+    },
+    {
+     "id": "yyh-e55",
+     "t": "The Beast Within",
+     "n": "55"
+    },
+    {
+     "id": "yyh-e56",
+     "t": "Yoko's Magic",
+     "n": "56"
+    },
+    {
+     "id": "yyh-e57",
+     "t": "Beneath Bui's Armor",
+     "n": "57"
+    },
+    {
+     "id": "yyh-e58",
+     "t": "Wielder of the Dragon",
+     "n": "58"
+    },
+    {
+     "id": "yyh-e59",
+     "t": "The Shadow of Elder Toguro",
+     "n": "59"
+    },
+    {
+     "id": "yyh-e60",
+     "t": "Sakyo's Proposal",
+     "n": "60"
+    },
+    {
+     "id": "yyh-e61",
+     "t": "Yusuke vs. Toguro",
+     "n": "61"
+    },
+    {
+     "id": "yyh-e62",
+     "t": "Toguro's Full Power",
+     "n": "62"
+    },
+    {
+     "id": "yyh-e63",
+     "t": "Yusuke's Despair",
+     "n": "63"
+    },
+    {
+     "id": "yyh-e64",
+     "t": "Toguro's Desire",
+     "n": "64"
+    },
+    {
+     "id": "yyh-e65",
+     "t": "Out With a Bang",
+     "n": "65"
+    },
+    {
+     "id": "yyh-e66",
+     "t": "Toguro's Wish",
+     "n": "66"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Season 3: Chapter Black Saga",
+   "sub": "1994 · 28 episodes, with the film where it opened · Fuji Television",
+   "items": [
+    {
+     "id": "yyh-e67",
+     "t": "Return to Living World",
+     "n": "67"
+    },
+    {
+     "id": "yyh-e68",
+     "t": "Setting the Trap",
+     "n": "68"
+    },
+    {
+     "id": "yyh-e69",
+     "t": "The Power of Taboo",
+     "n": "69"
+    },
+    {
+     "id": "yyh-e70",
+     "t": "Genkai's Ruse",
+     "n": "70"
+    },
+    {
+     "id": "yyh-e71",
+     "t": "The Tunnel",
+     "n": "71"
+    },
+    {
+     "id": "yyh-e72",
+     "t": "The Reader",
+     "n": "72"
+    },
+    {
+     "id": "yyh-e73",
+     "t": "The Doctor's Disease",
+     "n": "73"
+    },
+    {
+     "id": "yyh-e74",
+     "t": "Sleep, Doctor, Sleep",
+     "n": "74"
+    },
+    {
+     "id": "yyh-e75",
+     "t": "Caught in the Rain",
+     "n": "75"
+    },
+    {
+     "id": "yyh-film-1994",
+     "t": "Yu Yu Hakusho the Movie: Poltergeist Report",
+     "n": "film",
+     "note": "Theatrical film · 95 minutes · Opened April 9, 1994, the day episode 75 aired"
+    },
+    {
+     "id": "yyh-e76",
+     "t": "Kuwabara: Awakening",
+     "n": "76"
+    },
+    {
+     "id": "yyh-e77",
+     "t": "Sensui's Fall",
+     "n": "77"
+    },
+    {
+     "id": "yyh-e78",
+     "t": "Divide and Conquer",
+     "n": "78"
+    },
+    {
+     "id": "yyh-e79",
+     "t": "The Human Race",
+     "n": "79"
+    },
+    {
+     "id": "yyh-e80",
+     "t": "Moving Target",
+     "n": "80"
+    },
+    {
+     "id": "yyh-e81",
+     "t": "Let the Games Begin",
+     "n": "81"
+    },
+    {
+     "id": "yyh-e82",
+     "t": "If You Could Play Forever",
+     "n": "82"
+    },
+    {
+     "id": "yyh-e83",
+     "t": "Game Over",
+     "n": "83"
+    },
+    {
+     "id": "yyh-e84",
+     "t": "Kurama's Anger, Gourmet's Guest",
+     "n": "84"
+    },
+    {
+     "id": "yyh-e85",
+     "t": "Spirit Detective Showdown",
+     "n": "85"
+    },
+    {
+     "id": "yyh-e86",
+     "t": "The Difference Maker",
+     "n": "86"
+    },
+    {
+     "id": "yyh-e87",
+     "t": "Power Between the Teeth",
+     "n": "87"
+    },
+    {
+     "id": "yyh-e88",
+     "t": "The True Face of Sensui",
+     "n": "88"
+    },
+    {
+     "id": "yyh-e89",
+     "t": "Death of a Spirit Detective",
+     "n": "89"
+    },
+    {
+     "id": "yyh-e90",
+     "t": "Attempting Revenge",
+     "n": "90"
+    },
+    {
+     "id": "yyh-e91",
+     "t": "Waking the Lost",
+     "n": "91"
+    },
+    {
+     "id": "yyh-e92",
+     "t": "The Proof",
+     "n": "92"
+    },
+    {
+     "id": "yyh-e93",
+     "t": "Sensui's End",
+     "n": "93"
+    },
+    {
+     "id": "yyh-e94",
+     "t": "Topside",
+     "n": "94"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Season 4: Three Kings Saga",
+   "sub": "1994–95 · 18 episodes · Fuji Television",
+   "items": [
+    {
+     "id": "yyh-e95",
+     "t": "Yusuke's Destiny",
+     "n": "95"
+    },
+    {
+     "id": "yyh-e96",
+     "t": "Three Strangers, Three Kings",
+     "n": "96"
+    },
+    {
+     "id": "yyh-e97",
+     "t": "Departing Living World",
+     "n": "97"
+    },
+    {
+     "id": "yyh-e98",
+     "t": "Return to Demon World",
+     "n": "98"
+    },
+    {
+     "id": "yyh-e99",
+     "t": "Haunted by the Past",
+     "n": "99"
+    },
+    {
+     "id": "yyh-e100",
+     "t": "The Secret of the Jagan",
+     "n": "100"
+    },
+    {
+     "id": "yyh-e101",
+     "t": "Reunion of the Bandits",
+     "n": "101"
+    },
+    {
+     "id": "yyh-e102",
+     "t": "Torn Between Identities",
+     "n": "102"
+    },
+    {
+     "id": "yyh-e103",
+     "t": "Inheritance",
+     "n": "103"
+    },
+    {
+     "id": "yyh-e104",
+     "t": "Every Demon for Himself",
+     "n": "104"
+    },
+    {
+     "id": "yyh-e105",
+     "t": "The Preliminaries",
+     "n": "105"
+    },
+    {
+     "id": "yyh-e106",
+     "t": "The Battle of Father and Son",
+     "n": "106"
+    },
+    {
+     "id": "yyh-e107",
+     "t": "The Demon World Tournament Begins",
+     "n": "107"
+    },
+    {
+     "id": "yyh-e108",
+     "t": "Farewell, Kurama",
+     "n": "108"
+    },
+    {
+     "id": "yyh-e109",
+     "t": "Love and War",
+     "n": "109"
+    },
+    {
+     "id": "yyh-e110",
+     "t": "A Reason to Fight",
+     "n": "110"
+    },
+    {
+     "id": "yyh-e111",
+     "t": "Closure",
+     "n": "111"
+    },
+    {
+     "id": "yyh-e112",
+     "t": "To the Future",
+     "n": "112"
+    }
+   ]
+  },
+  {
+   "id": "ova2018",
+   "title": "Two Shot & All or Nothing",
+   "sub": "2018 · two OVA episodes · 15 minutes",
+   "intro": "Made for the anime's 25th anniversary and released with a Blu-ray box set, twenty-three years after the finale. Two short episodes, both adapting manga chapters the television run never reached.",
+   "items": [
+    {
+     "id": "yyh-ova-two-shot",
+     "t": "Two Shot",
+     "n": "2018",
+     "note": "OVA · 15 minutes · Released October 26, 2018 · Adapts a bonus chapter from the manga's seventh volume"
+    },
+    {
+     "id": "yyh-ova-all-or-nothing",
+     "t": "All or Nothing",
+     "n": "2018",
+     "note": "OVA · 15 minutes · Released October 26, 2018 · Adapts the manga's penultimate chapter"
+    }
+   ]
+  }
+ ]
 }

@@ -1,1105 +1,1104 @@
 {
-  "slug": "inuyasha",
-  "title": "Inuyasha",
-  "subtitle": "every episode, the films where they opened, and the ending",
-  "kind": "anime & films",
-  "popularity": 71,
-  "year": "2000–2010",
-  "blurb": "All 193 episodes in broadcast order — the 2000 run, all four films at the point each one opened, and The Final Act, which is where the story actually ends.",
-  "unit": {
-    "one": "entry",
-    "many": "entries"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#A62639",
-  "accentDark": "#FF8A93",
-  "tiers": false,
-  "notes": [
-    [
-      "The Final Act is not optional.",
-      "The original run adapts the manga's first 36 volumes and stops there in September 2004, with the manga itself still running. The Final Act was made five years later, with the original staff and cast, to adapt volumes 36 to 56, and it is the ending. It has a section of its own here with the same standing as a season because that is what it is to a viewer — not a bonus, not a spin-off, and not something you can leave off the end."
-    ],
-    [
-      "What the source calls it, in its own words.",
-      "Two things at once, and this list keeps both. Its own article says it \"is the direct sequel to the Inuyasha anime series, and is based on the last 21 volumes of the manga series\", and the episode list calls it \"a sequel anime television series\" that \"adapted the final volumes of the manga\" — a separate series. But that same episode list carries it as the fifth block of one series overview, its episode table numbers its episodes 168 to 193 of the same run, and its infobox is a television-season box whose previous season is Season 4 — a continuation. The numbering here follows the source and runs 1 to 193 straight through, which is why The Final Act opens at 168 rather than at 1."
-    ],
-    [
-      "Three of the four films opened inside the run.",
-      "Not one of them came after the series. All four opened in the week before Christmas, and the series took a month off over each new year, so Affections Touching Across Time, The Castle Beyond the Looking Glass and Swords of an Honorable Ruler each opened in the gap between a December episode and a January one and sit inside those seasons rather than in sections of their own. Each film is filed by comparing its release date against every run's first and last airdate, and each row note names the two episodes it fell between. Only Fire on the Mystic Island fell outside a season — three months after the original run ended — so only it gets a section. All four are original stories by the series writer, so none of them is load-bearing; they are here because they are part of the run, at the point they were part of it."
-    ],
-    [
-      "The four seasons are a retroactive sorting, and the source says so.",
-      "The episode list notes that its seasons \"correspond to a retroactive sorting established by Yomiuri TV as far back as 2019\", recertified by four Blu-ray box sets released in Japan in 2021 and 2022 that called them phases. The season names here are the Japanese collected titles those sets use. North America cut the same 167 episodes seven ways instead — 1–27, 28–54, 55–81, 82–99, 100–126, 127–146, 147–167 — so a DVD box labelled season 3, episodes 55 to 81, sits wholly inside season 2 on this page. The four are the division the source uses; they are not a broadcast fact, and this page does not pretend otherwise."
-    ],
-    [
-      "Four pairs aired as one hour.",
-      "Episodes 21 and 22, 133 and 134, 147 and 148, and 166 and 167 each went out as a single one-hour broadcast. They are eight rows here, as the source numbers them, and all eight say so."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked on this list.",
-      "All four films publish a runtime and all four film rows carry theirs. The 193 episodes publish none. No episode of either run has an article of its own, so none has a Wikidata item to reach that way; no episode table row carries a runtime field; no season article has one, or the word; and the series infobox has no runtime field either — its only match for the word is a link to a handset platform. Wikidata does publish two numbers and both are the wrong shape: one blanket figure per run, 25 minutes for the original and 24 for The Final Act, which describes a broadcast slot rather than an episode; and episode items for 30 of the 193, all in the first 30 and all repeating that same 25. A weighted list counts a row with no weight as a full hour, so weighting the four films alone would invent an hour 193 times over. An episode and a film each count one."
-    ],
-    [
-      "Black Tessaiga is not here.",
-      "A 30-minute short with the original voice cast, first shown at an It's a Rumic World exhibition in Tokyo in July 2008 and put out on disc in October 2010. It is not an episode of either run — the episode list does not carry it, and the numbering runs straight from 167 to 168 with no gap for it. Named here so its absence is a statement rather than an oversight."
-    ],
-    [
-      "Yashahime is not here either.",
-      "The 2020–22 sequel spin-off is an anime-original story with its own cast and its own article. This list is Inuyasha, and it ends where Inuyasha ends."
-    ],
-    "Titles, numbering, airdates, the retroactive season names, the one-hour specials, film dates and runtimes and The Final Act's status machine-read from Wikipedia's List of Inuyasha episodes, the four Inuyasha season articles, Inuyasha, Inuyasha (TV series), Inuyasha: The Final Act and all four film articles, with the runtime census taken from Wikidata; every run's count is asserted against its own infobox and against the episode list's series overview, the numbering asserted contiguous 1–193, and each film's placement recomputed from its release date before this builds."
+ "slug": "inuyasha",
+ "title": "Inuyasha",
+ "subtitle": "every episode, the films where they opened, and the ending",
+ "kind": "anime & films",
+ "popularity": 71,
+ "year": "2000–2010",
+ "blurb": "All 193 episodes in broadcast order — the 2000 run, all four films at the point each one opened, and The Final Act, which is where the story actually ends.",
+ "unit": {
+  "one": "entry",
+  "many": "entries"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#A62639",
+ "accentDark": "#FF8A93",
+ "tiers": false,
+ "notes": [
+  [
+   "The Final Act is not optional.",
+   "The original run adapts the manga's first 36 volumes and stops there in September 2004, with the manga itself still running. The Final Act was made five years later, with the original staff and cast, to adapt volumes 36 to 56, and it is the ending. It has a section of its own here with the same standing as a season because that is what it is to a viewer — not a bonus, not a spin-off, and not something you can leave off the end."
   ],
-  "sections": [
+  [
+   "What the source calls it, in its own words.",
+   "Two things at once, and this list keeps both. Its own article says it \"is the direct sequel to the Inuyasha anime series, and is based on the last 21 volumes of the manga series\", and the episode list calls it \"a sequel anime television series\" that \"adapted the final volumes of the manga\" — a separate series. But that same episode list carries it as the fifth block of one series overview, its episode table numbers its episodes 168 to 193 of the same run, and its infobox is a television-season box whose previous season is Season 4 — a continuation. The numbering here follows the source and runs 1 to 193 straight through, which is why The Final Act opens at 168 rather than at 1."
+  ],
+  [
+   "Three of the four films opened inside the run.",
+   "Not one of them came after the series. All four opened in the week before Christmas, and the series took a month off over each new year, so Affections Touching Across Time, The Castle Beyond the Looking Glass and Swords of an Honorable Ruler each opened in the gap between a December episode and a January one and sit inside those seasons rather than in sections of their own. Each film is filed by comparing its release date against every run's first and last airdate, and each row note names the two episodes it fell between. Only Fire on the Mystic Island fell outside a season — three months after the original run ended — so only it gets a section. All four are original stories by the series writer, so none of them is load-bearing; they are here because they are part of the run, at the point they were part of it."
+  ],
+  [
+   "The four seasons are a retroactive sorting, and the source says so.",
+   "The episode list notes that its seasons \"correspond to a retroactive sorting established by Yomiuri TV as far back as 2019\", recertified by four Blu-ray box sets released in Japan in 2021 and 2022 that called them phases. The season names here are the Japanese collected titles those sets use. North America cut the same 167 episodes seven ways instead — 1–27, 28–54, 55–81, 82–99, 100–126, 127–146, 147–167 — so a DVD box labelled season 3, episodes 55 to 81, sits wholly inside season 2 on this page. The four are the division the source uses; they are not a broadcast fact, and this page does not pretend otherwise."
+  ],
+  [
+   "Four pairs aired as one hour.",
+   "Episodes 21 and 22, 133 and 134, 147 and 148, and 166 and 167 each went out as a single one-hour broadcast. They are eight rows here, as the source numbers them, and all eight say so."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked on this list.",
+   "All four films publish a runtime and all four film rows carry theirs. The 193 episodes publish none. No episode of either run has an article of its own, so none has a Wikidata item to reach that way; no episode table row carries a runtime field; no season article has one, or the word; and the series infobox has no runtime field either — its only match for the word is a link to a handset platform. Wikidata does publish two numbers and both are the wrong shape: one blanket figure per run, 25 minutes for the original and 24 for The Final Act, which describes a broadcast slot rather than an episode; and episode items for 30 of the 193, all in the first 30 and all repeating that same 25. A weighted list counts a row with no weight as a full hour, so weighting the four films alone would invent an hour 193 times over. An episode and a film each count one."
+  ],
+  [
+   "Black Tessaiga is not here.",
+   "A 30-minute short with the original voice cast, first shown at an It's a Rumic World exhibition in Tokyo in July 2008 and put out on disc in October 2010. It is not an episode of either run — the episode list does not carry it, and the numbering runs straight from 167 to 168 with no gap for it. Named here so its absence is a statement rather than an oversight."
+  ],
+  [
+   "Yashahime is not here either.",
+   "The 2020–22 sequel spin-off is an anime-original story with its own cast and its own article. This list is Inuyasha, and it ends where Inuyasha ends."
+  ],
+  "Titles, numbering, airdates, the retroactive season names, the one-hour specials, film dates and runtimes and The Final Act's status machine-read from Wikipedia's List of Inuyasha episodes, the four Inuyasha season articles, Inuyasha, Inuyasha (TV series), Inuyasha: The Final Act and all four film articles, with the runtime census taken from Wikidata; every run's count is asserted against its own infobox and against the episode list's series overview, the numbering asserted contiguous 1–193, and each film's placement recomputed from its release date before this builds."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1: Encounter Arc",
+   "sub": "2000–01 · 44 episodes",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1: Encounter Arc",
-      "sub": "2000–01 · 44 episodes",
-      "items": [
-        {
-          "id": "iy-e1",
-          "t": "The Girl Who Overcame Time... and the Boy Who Was Just Overcome",
-          "n": "1",
-          "note": "Series premiere"
-        },
-        {
-          "id": "iy-e2",
-          "t": "Seekers of the Sacred Jewel",
-          "n": "2"
-        },
-        {
-          "id": "iy-e3",
-          "t": "Down the Rabbit Hole and Back Again",
-          "n": "3"
-        },
-        {
-          "id": "iy-e4",
-          "t": "Yura of the Demon-Hair",
-          "n": "4"
-        },
-        {
-          "id": "iy-e5",
-          "t": "Aristocratic Assassin, Sesshomaru",
-          "n": "5"
-        },
-        {
-          "id": "iy-e6",
-          "t": "Tetsusaiga, the Phantom Sword",
-          "n": "6"
-        },
-        {
-          "id": "iy-e7",
-          "t": "Showdown! Inuyasha vs. Sesshomaru!",
-          "n": "7"
-        },
-        {
-          "id": "iy-e8",
-          "t": "The Toad Who Would Be Prince",
-          "n": "8"
-        },
-        {
-          "id": "iy-e9",
-          "t": "Enter Shippo... Plus, the Amazing Thunder Brothers!",
-          "n": "9"
-        },
-        {
-          "id": "iy-e10",
-          "t": "Phantom Showdown: The Thunder Brothers vs. Tetsusaiga",
-          "n": "10"
-        },
-        {
-          "id": "iy-e11",
-          "t": "Terror of the Ancient Noh Mask",
-          "n": "11"
-        },
-        {
-          "id": "iy-e12",
-          "t": "The Soul Piper and the Mischievous Little Soul",
-          "n": "12"
-        },
-        {
-          "id": "iy-e13",
-          "t": "The Mystery of the New Moon and the Black-Haired Inuyasha",
-          "n": "13"
-        },
-        {
-          "id": "iy-e14",
-          "t": "Kikyo's Stolen Ashes",
-          "n": "14"
-        },
-        {
-          "id": "iy-e15",
-          "t": "Return of the Tragic Priestess, Kikyo",
-          "n": "15"
-        },
-        {
-          "id": "iy-e16",
-          "t": "Mystical Hand of the Amorous Monk, Miroku",
-          "n": "16"
-        },
-        {
-          "id": "iy-e17",
-          "t": "Cursed Ink of the Hell-Painter",
-          "n": "17"
-        },
-        {
-          "id": "iy-e18",
-          "t": "Naraku and Sesshomaru Join Forces",
-          "n": "18"
-        },
-        {
-          "id": "iy-e19",
-          "t": "Go Home to Your Own Time, Kagome!",
-          "n": "19"
-        },
-        {
-          "id": "iy-e20",
-          "t": "Despicable Villain! The Mystery of Onigumo!",
-          "n": "20"
-        },
-        {
-          "id": "iy-e21",
-          "t": "Naraku's True Identity Unveiled",
-          "n": "21",
-          "note": "Aired as a one-hour special with episode 22"
-        },
-        {
-          "id": "iy-e22",
-          "t": "A Wicked Smile; Kikyo's Wandering Soul",
-          "n": "22",
-          "note": "Aired as a one-hour special with episode 21"
-        },
-        {
-          "id": "iy-e23",
-          "t": "Kagome's Voice and Kikyo's Kiss",
-          "n": "23"
-        },
-        {
-          "id": "iy-e24",
-          "t": "Enter Sango the Demon Slayer",
-          "n": "24"
-        },
-        {
-          "id": "iy-e25",
-          "t": "Naraku's Insidious Plot",
-          "n": "25"
-        },
-        {
-          "id": "iy-e26",
-          "t": "Secret of the Jewel of Four Souls Revealed",
-          "n": "26"
-        },
-        {
-          "id": "iy-e27",
-          "t": "The Lake of the Evil Water God",
-          "n": "27"
-        },
-        {
-          "id": "iy-e28",
-          "t": "Miroku Falls Into a Dangerous Trap",
-          "n": "28"
-        },
-        {
-          "id": "iy-e29",
-          "t": "Sango's Suffering and Kohaku's Life",
-          "n": "29"
-        },
-        {
-          "id": "iy-e30",
-          "t": "Tetsusaiga Is Stolen! Showdown at Naraku's Castle!",
-          "n": "30"
-        },
-        {
-          "id": "iy-e31",
-          "t": "Jinenji, Kind Yet Sad",
-          "n": "31"
-        },
-        {
-          "id": "iy-e32",
-          "t": "Kikyo and Inuyasha, Into the Miasma",
-          "n": "32"
-        },
-        {
-          "id": "iy-e33",
-          "t": "Kikyo, Captured by Naraku",
-          "n": "33"
-        },
-        {
-          "id": "iy-e34",
-          "t": "Tetsusaiga and Tenseiga",
-          "n": "34"
-        },
-        {
-          "id": "iy-e35",
-          "t": "The True Owner of the Great Sword!",
-          "n": "35"
-        },
-        {
-          "id": "iy-e36",
-          "t": "Kagome Kidnapped by Koga, the Wolf Demon!",
-          "n": "36"
-        },
-        {
-          "id": "iy-e37",
-          "t": "The Man Who Fell in Love with Kagome!",
-          "n": "37"
-        },
-        {
-          "id": "iy-e38",
-          "t": "Two Hearts, One Mind",
-          "n": "38"
-        },
-        {
-          "id": "iy-e39",
-          "t": "Trapped in a Duel to the Death!",
-          "n": "39"
-        },
-        {
-          "id": "iy-e40",
-          "t": "The Deadly Trap of Kagura the Wind Sorceress!",
-          "n": "40"
-        },
-        {
-          "id": "iy-e41",
-          "t": "Kagura's Dance and Kanna's Mirror",
-          "n": "41"
-        },
-        {
-          "id": "iy-e42",
-          "t": "The Wind Scar Fails",
-          "n": "42"
-        },
-        {
-          "id": "iy-e43",
-          "t": "Tetsusaiga Breaks",
-          "n": "43"
-        },
-        {
-          "id": "iy-e44",
-          "t": "Kaijinbo's Evil Sword",
-          "n": "44"
-        }
-      ],
-      "intro": "Where it starts.",
-      "open": true
+     "id": "iy-e1",
+     "t": "The Girl Who Overcame Time... and the Boy Who Was Just Overcome",
+     "n": "1",
+     "note": "Series premiere"
     },
     {
-      "id": "s2",
-      "title": "Season 2: Growth Arc",
-      "sub": "2001–02 · 43 episodes, with the film where it opened",
-      "items": [
-        {
-          "id": "iy-e45",
-          "t": "Sesshomaru Wields Tokijin",
-          "n": "45"
-        },
-        {
-          "id": "iy-e46",
-          "t": "Juromaru and Kageromaru",
-          "n": "46"
-        },
-        {
-          "id": "iy-e47",
-          "t": "Onigumo's Heart Still Beats Within Naraku",
-          "n": "47"
-        },
-        {
-          "id": "iy-e48",
-          "t": "Return to the Place Where We First Met",
-          "n": "48"
-        },
-        {
-          "id": "iy-e49",
-          "t": "Kohaku's Lost Memory",
-          "n": "49"
-        },
-        {
-          "id": "iy-e50",
-          "t": "That Unforgettable Face!",
-          "n": "50"
-        },
-        {
-          "id": "iy-e51",
-          "t": "Inuyasha's Soul, Devoured",
-          "n": "51"
-        },
-        {
-          "id": "iy-e52",
-          "t": "The Demon's True Nature",
-          "n": "52"
-        },
-        {
-          "id": "iy-e53",
-          "t": "Father's Old Enemy: Ryukotsusei",
-          "n": "53"
-        },
-        {
-          "id": "iy-e54",
-          "t": "The Backlash Wave: Tetsusaiga's Ultimate Technique",
-          "n": "54"
-        },
-        {
-          "id": "iy-e55",
-          "t": "The Stone Flower and Shippo's First Love",
-          "n": "55"
-        },
-        {
-          "id": "iy-film-affections",
-          "t": "Inuyasha the Movie: Affections Touching Across Time",
-          "n": "film",
-          "note": "Theatrical film · 100 minutes · Opened December 22, 2001, between episodes 55 and 56 · Also known as InuYasha the Movie: The Love that Transcends Time"
-        },
-        {
-          "id": "iy-e56",
-          "t": "Temptress in the Mist",
-          "n": "56"
-        },
-        {
-          "id": "iy-e57",
-          "t": "Fateful Night in Togenkyo, Part I",
-          "n": "57"
-        },
-        {
-          "id": "iy-e58",
-          "t": "Fateful Night in Togenkyo, Part II",
-          "n": "58"
-        },
-        {
-          "id": "iy-e59",
-          "t": "The Beautiful Sister Apprentices",
-          "n": "59"
-        },
-        {
-          "id": "iy-e60",
-          "t": "The 50 Year-Old Curse of the Dark Priestess",
-          "n": "60"
-        },
-        {
-          "id": "iy-e61",
-          "t": "Kikyo and the Dark Priestess",
-          "n": "61"
-        },
-        {
-          "id": "iy-e62",
-          "t": "Tsubaki's Unrelenting Evil Spell",
-          "n": "62"
-        },
-        {
-          "id": "iy-e63",
-          "t": "The Red and White Priestesses",
-          "n": "63"
-        },
-        {
-          "id": "iy-e64",
-          "t": "Giant Ogre of the Forbidden Tower",
-          "n": "64"
-        },
-        {
-          "id": "iy-e65",
-          "t": "Farewell Days of My Youth",
-          "n": "65"
-        },
-        {
-          "id": "iy-e66",
-          "t": "Naraku's Barrier - Kagura's Decision",
-          "n": "66"
-        },
-        {
-          "id": "iy-e67",
-          "t": "The Howling Wind of Betrayal",
-          "n": "67"
-        },
-        {
-          "id": "iy-e68",
-          "t": "Shippo Gets an Angry Challenge",
-          "n": "68"
-        },
-        {
-          "id": "iy-e69",
-          "t": "Terror of the Faceless Man",
-          "n": "69"
-        },
-        {
-          "id": "iy-e70",
-          "t": "Onigumo's Memory Restored",
-          "n": "70"
-        },
-        {
-          "id": "iy-e71",
-          "t": "Three-Sided Battle to the Death",
-          "n": "71"
-        },
-        {
-          "id": "iy-e72",
-          "t": "Totosai's Rigid Training",
-          "n": "72"
-        },
-        {
-          "id": "iy-e73",
-          "t": "Shiori's Family and Inuyasha's Feelings",
-          "n": "73"
-        },
-        {
-          "id": "iy-e74",
-          "t": "The Red Tetsusaiga Breaks the Barrier!",
-          "n": "74"
-        },
-        {
-          "id": "iy-e75",
-          "t": "The Plot of the Panther Devas",
-          "n": "75"
-        },
-        {
-          "id": "iy-e76",
-          "t": "Target: Sesshomaru and Inuyasha",
-          "n": "76"
-        },
-        {
-          "id": "iy-e77",
-          "t": "The Panther Tribe and the Two Swords of the Fang",
-          "n": "77"
-        },
-        {
-          "id": "iy-e78",
-          "t": "Only You, Sango",
-          "n": "78"
-        },
-        {
-          "id": "iy-e79",
-          "t": "Jaken's Plan to Steal Tetsusaiga",
-          "n": "79"
-        },
-        {
-          "id": "iy-e80",
-          "t": "Sesshomaru and the Abducted Rin",
-          "n": "80"
-        },
-        {
-          "id": "iy-e81",
-          "t": "Vanishing Point; Naraku Disappears",
-          "n": "81"
-        },
-        {
-          "id": "iy-e82",
-          "t": "Gap Between the Ages",
-          "n": "82"
-        },
-        {
-          "id": "iy-e83",
-          "t": "The Female Wolf-Demon and the Lunar Rainbow Promise",
-          "n": "83"
-        },
-        {
-          "id": "iy-e84",
-          "t": "Koga's Bride-To-Be",
-          "n": "84"
-        },
-        {
-          "id": "iy-e85",
-          "t": "The Evil Within Demon's Head Castle",
-          "n": "85"
-        },
-        {
-          "id": "iy-e86",
-          "t": "Secret of the Possessed Princess",
-          "n": "86"
-        },
-        {
-          "id": "iy-e87",
-          "t": "Kikyo's Lonely Journey",
-          "n": "87"
-        }
-      ]
+     "id": "iy-e2",
+     "t": "Seekers of the Sacred Jewel",
+     "n": "2"
     },
     {
-      "id": "s3",
-      "title": "Season 3: Band of Seven Arc",
-      "sub": "2002–03 · 40 episodes, with the film where it opened",
-      "items": [
-        {
-          "id": "iy-e88",
-          "t": "The Three Sprites of the Monkey God",
-          "n": "88"
-        },
-        {
-          "id": "iy-e89",
-          "t": "Nursing Battle of the Rival Lovers",
-          "n": "89"
-        },
-        {
-          "id": "iy-e90",
-          "t": "Sota's Brave Confession of Love",
-          "n": "90"
-        },
-        {
-          "id": "iy-e91",
-          "t": "The Suspicious Faith Healer and the Black Kirara",
-          "n": "91"
-        },
-        {
-          "id": "iy-e92",
-          "t": "Plot of the Walking Dead",
-          "n": "92"
-        },
-        {
-          "id": "iy-e93",
-          "t": "The Mysterious, Lecherous Monk",
-          "n": "93"
-        },
-        {
-          "id": "iy-e94",
-          "t": "The Sacred Jewel Maker Part I",
-          "n": "94"
-        },
-        {
-          "id": "iy-e95",
-          "t": "The Sacred Jewel Maker Part II",
-          "n": "95"
-        },
-        {
-          "id": "iy-film-castle",
-          "t": "Inuyasha the Movie: The Castle Beyond the Looking Glass",
-          "n": "film",
-          "note": "Theatrical film · 99 minutes · Opened December 21, 2002, between episodes 95 and 96 · Also known as Inuyasha The Movie: Phantom Castle in the Mirror"
-        },
-        {
-          "id": "iy-e96",
-          "t": "Jaken Falls Ill",
-          "n": "96"
-        },
-        {
-          "id": "iy-e97",
-          "t": "Kirara Come Home!",
-          "n": "97"
-        },
-        {
-          "id": "iy-e98",
-          "t": "Kikyo and Kagome: Alone in the Cave",
-          "n": "98"
-        },
-        {
-          "id": "iy-e99",
-          "t": "Koga and Sesshomaru, A Dangerous Encounter",
-          "n": "99"
-        },
-        {
-          "id": "iy-e100",
-          "t": "The Truth Behind the Nightmare: Battle in the Forest of Sorrow",
-          "n": "100"
-        },
-        {
-          "id": "iy-e101",
-          "t": "The Snow from Seven Years Past",
-          "n": "101"
-        },
-        {
-          "id": "iy-e102",
-          "t": "Assault on the Wolf-Demon Tribe!",
-          "n": "102"
-        },
-        {
-          "id": "iy-e103",
-          "t": "The Band of Seven, Resurrected!",
-          "n": "103"
-        },
-        {
-          "id": "iy-e104",
-          "t": "The Stealthy Poison Master: Mukotsu!",
-          "n": "104"
-        },
-        {
-          "id": "iy-e105",
-          "t": "The Ghastly Steel Machine!",
-          "n": "105"
-        },
-        {
-          "id": "iy-e106",
-          "t": "Kagome, Miroku, and Sango: Desperate Situation!",
-          "n": "106"
-        },
-        {
-          "id": "iy-e107",
-          "t": "Inuyasha Shows His Tears For The First Time",
-          "n": "107"
-        },
-        {
-          "id": "iy-e108",
-          "t": "The Secret of the Pure Light",
-          "n": "108"
-        },
-        {
-          "id": "iy-e109",
-          "t": "Hidden in the Mist: Onward to Mt. Hakurei!",
-          "n": "109"
-        },
-        {
-          "id": "iy-e110",
-          "t": "Enter Bankotsu, The Leader of the Band of Seven",
-          "n": "110"
-        },
-        {
-          "id": "iy-e111",
-          "t": "The Big Clash: Banryu versus the Wind Scar",
-          "n": "111"
-        },
-        {
-          "id": "iy-e112",
-          "t": "Afloat on the Lake Surface: The Barrier of Hijiri Island",
-          "n": "112"
-        },
-        {
-          "id": "iy-e113",
-          "t": "The Sacred Vajra and the Mystery of the Living Buddha",
-          "n": "113"
-        },
-        {
-          "id": "iy-e114",
-          "t": "Koga's Solitary Battle",
-          "n": "114"
-        },
-        {
-          "id": "iy-e115",
-          "t": "Lured by the Black Light",
-          "n": "115"
-        },
-        {
-          "id": "iy-e116",
-          "t": "The Exposed Face of Truth",
-          "n": "116"
-        },
-        {
-          "id": "iy-e117",
-          "t": "Vanished in a River of Flames",
-          "n": "117"
-        },
-        {
-          "id": "iy-e118",
-          "t": "Into the Depths of Mt. Hakurei",
-          "n": "118"
-        },
-        {
-          "id": "iy-e119",
-          "t": "Divine Malice of the Saint",
-          "n": "119"
-        },
-        {
-          "id": "iy-e120",
-          "t": "Fare Thee Well: Jakotsu's Requiem",
-          "n": "120"
-        },
-        {
-          "id": "iy-e121",
-          "t": "Final Battle: The Last and Strongest of the Band of Seven",
-          "n": "121"
-        },
-        {
-          "id": "iy-e122",
-          "t": "The Power of Banryu: Duel to the Death on Mt. Hakurei",
-          "n": "122"
-        },
-        {
-          "id": "iy-e123",
-          "t": "Beyond the Darkness - Naraku Reborn!",
-          "n": "123"
-        },
-        {
-          "id": "iy-e124",
-          "t": "Farewell Kikyo, My Beloved",
-          "n": "124"
-        },
-        {
-          "id": "iy-e125",
-          "t": "The Darkness in Kagome's Heart",
-          "n": "125"
-        },
-        {
-          "id": "iy-e126",
-          "t": "Transform Heartache into Courage!",
-          "n": "126"
-        },
-        {
-          "id": "iy-e127",
-          "t": "Don't Boil It! The Terrifying Dried-Up Demon!",
-          "n": "127"
-        }
-      ]
+     "id": "iy-e3",
+     "t": "Down the Rabbit Hole and Back Again",
+     "n": "3"
     },
     {
-      "id": "s4",
-      "title": "Season 4: Fierce Battle Arc",
-      "sub": "2003–04 · 40 episodes, with the film where it opened · not where the story ends",
-      "items": [
-        {
-          "id": "iy-e128",
-          "t": "Battle Against the Dried-Up Demons at the Cultural Festival!",
-          "n": "128"
-        },
-        {
-          "id": "iy-e129",
-          "t": "Chokyukai and the Abducted Bride",
-          "n": "129"
-        },
-        {
-          "id": "iy-e130",
-          "t": "Shippo's New Technique, The Heart Scar!",
-          "n": "130"
-        },
-        {
-          "id": "iy-e131",
-          "t": "Trap of the Cursed Wall Hanging",
-          "n": "131"
-        },
-        {
-          "id": "iy-e132",
-          "t": "Miroku's Most Dangerous Confession",
-          "n": "132"
-        },
-        {
-          "id": "iy-e133",
-          "t": "The Woman Who Loved Sesshomaru, Part 1",
-          "n": "133",
-          "note": "Aired as a one-hour special with episode 134"
-        },
-        {
-          "id": "iy-e134",
-          "t": "The Woman Who Loved Sesshomaru, Part 2",
-          "n": "134",
-          "note": "Aired as a one-hour special with episode 133"
-        },
-        {
-          "id": "iy-e135",
-          "t": "The Last Banquet of Miroku's Master",
-          "n": "135"
-        },
-        {
-          "id": "iy-e136",
-          "t": "A Strange Invisible Demon Appears!",
-          "n": "136"
-        },
-        {
-          "id": "iy-film-swords",
-          "t": "Inuyasha the Movie: Swords of an Honorable Ruler",
-          "n": "film",
-          "note": "Theatrical film · 100 minutes · Opened December 20, 2003, between episodes 136 and 137 · Also known as InuYasha the Movie: Swords of Supreme Conquest"
-        },
-        {
-          "id": "iy-e137",
-          "t": "An Ancestor Named Kagome",
-          "n": "137"
-        },
-        {
-          "id": "iy-e138",
-          "t": "Mountain of Demons: Survival of the Duo",
-          "n": "138"
-        },
-        {
-          "id": "iy-e139",
-          "t": "The Great Duel at Shoun Falls!",
-          "n": "139"
-        },
-        {
-          "id": "iy-e140",
-          "t": "Eternal Love: The Naginata of Kenkon",
-          "n": "140"
-        },
-        {
-          "id": "iy-e141",
-          "t": "Entei, The Demon Horse Unleashed!",
-          "n": "141"
-        },
-        {
-          "id": "iy-e142",
-          "t": "Untamed Entei and Horrible Hakudoshi",
-          "n": "142"
-        },
-        {
-          "id": "iy-e143",
-          "t": "3000 Leagues in Search of Father",
-          "n": "143"
-        },
-        {
-          "id": "iy-e144",
-          "t": "Hosenki and the Last Shard",
-          "n": "144"
-        },
-        {
-          "id": "iy-e145",
-          "t": "Bizarre Guards at the Border of the Afterlife",
-          "n": "145"
-        },
-        {
-          "id": "iy-e146",
-          "t": "The Fiery Bird Master, Princess Abi",
-          "n": "146"
-        },
-        {
-          "id": "iy-e147",
-          "t": "The Tragic Love Song of Destiny, Part 1",
-          "n": "147",
-          "note": "Aired as a one-hour special with episode 148"
-        },
-        {
-          "id": "iy-e148",
-          "t": "The Tragic Love Song of Destiny, Part 2",
-          "n": "148",
-          "note": "Aired as a one-hour special with episode 147"
-        },
-        {
-          "id": "iy-e149",
-          "t": "The Single Arrow of Chaos",
-          "n": "149"
-        },
-        {
-          "id": "iy-e150",
-          "t": "The Mysterious Light that Guides the Saint",
-          "n": "150"
-        },
-        {
-          "id": "iy-e151",
-          "t": "Kagome's Instinctive Choice",
-          "n": "151"
-        },
-        {
-          "id": "iy-e152",
-          "t": "Protect and Plunder!",
-          "n": "152"
-        },
-        {
-          "id": "iy-e153",
-          "t": "The Cruel Reunion of Fate",
-          "n": "153"
-        },
-        {
-          "id": "iy-e154",
-          "t": "The Demon Linked with the Netherworld",
-          "n": "154"
-        },
-        {
-          "id": "iy-e155",
-          "t": "The Demon Protector of the Sacred Jewel Shard!",
-          "n": "155"
-        },
-        {
-          "id": "iy-e156",
-          "t": "Final Battle at the Graveside: Sesshomaru Versus Inuyasha!",
-          "n": "156"
-        },
-        {
-          "id": "iy-e157",
-          "t": "Destroy Naraku with the Adamant Barrage!",
-          "n": "157"
-        },
-        {
-          "id": "iy-e158",
-          "t": "Stampede of the Countless Demon Rats!",
-          "n": "158"
-        },
-        {
-          "id": "iy-e159",
-          "t": "Kohaku's Decision and Sango's Heart",
-          "n": "159"
-        },
-        {
-          "id": "iy-e160",
-          "t": "The Lucky but Two-Timing Scoundrel!",
-          "n": "160"
-        },
-        {
-          "id": "iy-e161",
-          "t": "Miroku's Past Mistake",
-          "n": "161"
-        },
-        {
-          "id": "iy-e162",
-          "t": "Forever with Lord Sesshomaru",
-          "n": "162"
-        },
-        {
-          "id": "iy-e163",
-          "t": "Kohaku, Sango and Kirara: The Secret Flower Garden",
-          "n": "163"
-        },
-        {
-          "id": "iy-e164",
-          "t": "Possessed by a Parasite: Shippo, Our Worst Enemy",
-          "n": "164"
-        },
-        {
-          "id": "iy-e165",
-          "t": "The Ultimate Key to Defeating Naraku",
-          "n": "165"
-        },
-        {
-          "id": "iy-e166",
-          "t": "The Bond Between Them, Use the Sacred Jewel Shard! Part 1",
-          "n": "166",
-          "note": "Aired as a one-hour special with episode 167"
-        },
-        {
-          "id": "iy-e167",
-          "t": "The Bond Between Them, Use the Sacred Jewel Shard! Part 2",
-          "n": "167",
-          "note": "Aired as a one-hour special with episode 166 · Where the original run stops; The Final Act carries on from here"
-        }
-      ],
-      "intro": "The last season of the original run, and not the end of the story. The anime stops here with the manga still going, and did not come back to it for five years. The Final Act, below, is the rest of it."
+     "id": "iy-e4",
+     "t": "Yura of the Demon-Hair",
+     "n": "4"
     },
     {
-      "id": "film-island",
-      "title": "Fire on the Mystic Island",
-      "sub": "2004 · the fourth film, between the two runs",
-      "intro": "An original story by the series writer, like the other three. It opened three months after the original run ended and is not where the story finishes.",
-      "items": [
-        {
-          "id": "iy-film-island",
-          "t": "Inuyasha the Movie: Fire on the Mystic Island",
-          "n": "film",
-          "note": "Theatrical film · 88 minutes · Opened December 23, 2004, between the two runs · Also known as InuYasha The Movie: Fire on Hōrai Island"
-        }
-      ]
+     "id": "iy-e5",
+     "t": "Aristocratic Assassin, Sesshomaru",
+     "n": "5"
     },
     {
-      "id": "tfa",
-      "title": "The Final Act",
-      "sub": "2009–10 · 26 episodes · the ending",
-      "intro": "Not optional. The original run adapts the manga's first 36 volumes and stops; this one adapts volumes 36 to 56 and finishes it, five years later, with the original staff and cast brought back. The source files it both ways and this list keeps both: its own article calls it the direct sequel to the Inuyasha anime series, while the same episode list carries it as the fifth block of one series overview, numbers its episodes 168 to 193 of the same run, and names Season 4 as the season before it.",
-      "items": [
-        {
-          "id": "iy-e168",
-          "t": "Naraku's Heart",
-          "n": "168"
-        },
-        {
-          "id": "iy-e169",
-          "t": "Kagura's Wind",
-          "n": "169"
-        },
-        {
-          "id": "iy-e170",
-          "t": "Meido Zangetsuha",
-          "n": "170"
-        },
-        {
-          "id": "iy-e171",
-          "t": "The Dragon-Scaled Tetsusaiga",
-          "n": "171"
-        },
-        {
-          "id": "iy-e172",
-          "t": "The Great Holy Demon Spirit’s Test",
-          "n": "172"
-        },
-        {
-          "id": "iy-e173",
-          "t": "The End of Moryomaru",
-          "n": "173"
-        },
-        {
-          "id": "iy-e174",
-          "t": "The Mausoleum of Mount Azusa",
-          "n": "174"
-        },
-        {
-          "id": "iy-e175",
-          "t": "Among the Twinkling Stars",
-          "n": "175"
-        },
-        {
-          "id": "iy-e176",
-          "t": "Sesshomaru in the Underworld",
-          "n": "176"
-        },
-        {
-          "id": "iy-e177",
-          "t": "Flowers Drenched in Sadness",
-          "n": "177"
-        },
-        {
-          "id": "iy-e178",
-          "t": "Kanna's Gravestone",
-          "n": "178"
-        },
-        {
-          "id": "iy-e179",
-          "t": "Sango's Feelings, Miroku's Resolve",
-          "n": "179"
-        },
-        {
-          "id": "iy-e180",
-          "t": "A Complete Meido",
-          "n": "180"
-        },
-        {
-          "id": "iy-e181",
-          "t": "In Pursuit of Naraku",
-          "n": "181"
-        },
-        {
-          "id": "iy-e182",
-          "t": "True Heir",
-          "n": "182"
-        },
-        {
-          "id": "iy-e183",
-          "t": "Hitomiko's Barrier",
-          "n": "183"
-        },
-        {
-          "id": "iy-e184",
-          "t": "Magatsuhi's Evil Will",
-          "n": "184"
-        },
-        {
-          "id": "iy-e185",
-          "t": "The Day of Days",
-          "n": "185"
-        },
-        {
-          "id": "iy-e186",
-          "t": "Kohaku's Shard",
-          "n": "186"
-        },
-        {
-          "id": "iy-e187",
-          "t": "When the Jewel Is Whole",
-          "n": "187"
-        },
-        {
-          "id": "iy-e188",
-          "t": "Inside Naraku",
-          "n": "188"
-        },
-        {
-          "id": "iy-e189",
-          "t": "Naraku: The Trap of Darkness",
-          "n": "189"
-        },
-        {
-          "id": "iy-e190",
-          "t": "Naraku: The Trap of Light",
-          "n": "190"
-        },
-        {
-          "id": "iy-e191",
-          "t": "Naraku's Uncertain Wish",
-          "n": "191"
-        },
-        {
-          "id": "iy-e192",
-          "t": "Thoughts Fall Short",
-          "n": "192"
-        },
-        {
-          "id": "iy-e193",
-          "t": "Toward Tomorrow",
-          "n": "193",
-          "note": "Series finale"
-        }
-      ]
+     "id": "iy-e6",
+     "t": "Tetsusaiga, the Phantom Sword",
+     "n": "6"
+    },
+    {
+     "id": "iy-e7",
+     "t": "Showdown! Inuyasha vs. Sesshomaru!",
+     "n": "7"
+    },
+    {
+     "id": "iy-e8",
+     "t": "The Toad Who Would Be Prince",
+     "n": "8"
+    },
+    {
+     "id": "iy-e9",
+     "t": "Enter Shippo... Plus, the Amazing Thunder Brothers!",
+     "n": "9"
+    },
+    {
+     "id": "iy-e10",
+     "t": "Phantom Showdown: The Thunder Brothers vs. Tetsusaiga",
+     "n": "10"
+    },
+    {
+     "id": "iy-e11",
+     "t": "Terror of the Ancient Noh Mask",
+     "n": "11"
+    },
+    {
+     "id": "iy-e12",
+     "t": "The Soul Piper and the Mischievous Little Soul",
+     "n": "12"
+    },
+    {
+     "id": "iy-e13",
+     "t": "The Mystery of the New Moon and the Black-Haired Inuyasha",
+     "n": "13"
+    },
+    {
+     "id": "iy-e14",
+     "t": "Kikyo's Stolen Ashes",
+     "n": "14"
+    },
+    {
+     "id": "iy-e15",
+     "t": "Return of the Tragic Priestess, Kikyo",
+     "n": "15"
+    },
+    {
+     "id": "iy-e16",
+     "t": "Mystical Hand of the Amorous Monk, Miroku",
+     "n": "16"
+    },
+    {
+     "id": "iy-e17",
+     "t": "Cursed Ink of the Hell-Painter",
+     "n": "17"
+    },
+    {
+     "id": "iy-e18",
+     "t": "Naraku and Sesshomaru Join Forces",
+     "n": "18"
+    },
+    {
+     "id": "iy-e19",
+     "t": "Go Home to Your Own Time, Kagome!",
+     "n": "19"
+    },
+    {
+     "id": "iy-e20",
+     "t": "Despicable Villain! The Mystery of Onigumo!",
+     "n": "20"
+    },
+    {
+     "id": "iy-e21",
+     "t": "Naraku's True Identity Unveiled",
+     "n": "21",
+     "note": "Aired as a one-hour special with episode 22"
+    },
+    {
+     "id": "iy-e22",
+     "t": "A Wicked Smile; Kikyo's Wandering Soul",
+     "n": "22",
+     "note": "Aired as a one-hour special with episode 21"
+    },
+    {
+     "id": "iy-e23",
+     "t": "Kagome's Voice and Kikyo's Kiss",
+     "n": "23"
+    },
+    {
+     "id": "iy-e24",
+     "t": "Enter Sango the Demon Slayer",
+     "n": "24"
+    },
+    {
+     "id": "iy-e25",
+     "t": "Naraku's Insidious Plot",
+     "n": "25"
+    },
+    {
+     "id": "iy-e26",
+     "t": "Secret of the Jewel of Four Souls Revealed",
+     "n": "26"
+    },
+    {
+     "id": "iy-e27",
+     "t": "The Lake of the Evil Water God",
+     "n": "27"
+    },
+    {
+     "id": "iy-e28",
+     "t": "Miroku Falls Into a Dangerous Trap",
+     "n": "28"
+    },
+    {
+     "id": "iy-e29",
+     "t": "Sango's Suffering and Kohaku's Life",
+     "n": "29"
+    },
+    {
+     "id": "iy-e30",
+     "t": "Tetsusaiga Is Stolen! Showdown at Naraku's Castle!",
+     "n": "30"
+    },
+    {
+     "id": "iy-e31",
+     "t": "Jinenji, Kind Yet Sad",
+     "n": "31"
+    },
+    {
+     "id": "iy-e32",
+     "t": "Kikyo and Inuyasha, Into the Miasma",
+     "n": "32"
+    },
+    {
+     "id": "iy-e33",
+     "t": "Kikyo, Captured by Naraku",
+     "n": "33"
+    },
+    {
+     "id": "iy-e34",
+     "t": "Tetsusaiga and Tenseiga",
+     "n": "34"
+    },
+    {
+     "id": "iy-e35",
+     "t": "The True Owner of the Great Sword!",
+     "n": "35"
+    },
+    {
+     "id": "iy-e36",
+     "t": "Kagome Kidnapped by Koga, the Wolf Demon!",
+     "n": "36"
+    },
+    {
+     "id": "iy-e37",
+     "t": "The Man Who Fell in Love with Kagome!",
+     "n": "37"
+    },
+    {
+     "id": "iy-e38",
+     "t": "Two Hearts, One Mind",
+     "n": "38"
+    },
+    {
+     "id": "iy-e39",
+     "t": "Trapped in a Duel to the Death!",
+     "n": "39"
+    },
+    {
+     "id": "iy-e40",
+     "t": "The Deadly Trap of Kagura the Wind Sorceress!",
+     "n": "40"
+    },
+    {
+     "id": "iy-e41",
+     "t": "Kagura's Dance and Kanna's Mirror",
+     "n": "41"
+    },
+    {
+     "id": "iy-e42",
+     "t": "The Wind Scar Fails",
+     "n": "42"
+    },
+    {
+     "id": "iy-e43",
+     "t": "Tetsusaiga Breaks",
+     "n": "43"
+    },
+    {
+     "id": "iy-e44",
+     "t": "Kaijinbo's Evil Sword",
+     "n": "44"
     }
-  ]
+   ],
+   "intro": "Where it starts.",
+   "open": true
+  },
+  {
+   "id": "s2",
+   "title": "Season 2: Growth Arc",
+   "sub": "2001–02 · 43 episodes, with the film where it opened",
+   "items": [
+    {
+     "id": "iy-e45",
+     "t": "Sesshomaru Wields Tokijin",
+     "n": "45"
+    },
+    {
+     "id": "iy-e46",
+     "t": "Juromaru and Kageromaru",
+     "n": "46"
+    },
+    {
+     "id": "iy-e47",
+     "t": "Onigumo's Heart Still Beats Within Naraku",
+     "n": "47"
+    },
+    {
+     "id": "iy-e48",
+     "t": "Return to the Place Where We First Met",
+     "n": "48"
+    },
+    {
+     "id": "iy-e49",
+     "t": "Kohaku's Lost Memory",
+     "n": "49"
+    },
+    {
+     "id": "iy-e50",
+     "t": "That Unforgettable Face!",
+     "n": "50"
+    },
+    {
+     "id": "iy-e51",
+     "t": "Inuyasha's Soul, Devoured",
+     "n": "51"
+    },
+    {
+     "id": "iy-e52",
+     "t": "The Demon's True Nature",
+     "n": "52"
+    },
+    {
+     "id": "iy-e53",
+     "t": "Father's Old Enemy: Ryukotsusei",
+     "n": "53"
+    },
+    {
+     "id": "iy-e54",
+     "t": "The Backlash Wave: Tetsusaiga's Ultimate Technique",
+     "n": "54"
+    },
+    {
+     "id": "iy-e55",
+     "t": "The Stone Flower and Shippo's First Love",
+     "n": "55"
+    },
+    {
+     "id": "iy-film-affections",
+     "t": "Inuyasha the Movie: Affections Touching Across Time",
+     "n": "film",
+     "note": "Theatrical film · 100 minutes · Opened December 22, 2001, between episodes 55 and 56 · Also known as InuYasha the Movie: The Love that Transcends Time"
+    },
+    {
+     "id": "iy-e56",
+     "t": "Temptress in the Mist",
+     "n": "56"
+    },
+    {
+     "id": "iy-e57",
+     "t": "Fateful Night in Togenkyo, Part I",
+     "n": "57"
+    },
+    {
+     "id": "iy-e58",
+     "t": "Fateful Night in Togenkyo, Part II",
+     "n": "58"
+    },
+    {
+     "id": "iy-e59",
+     "t": "The Beautiful Sister Apprentices",
+     "n": "59"
+    },
+    {
+     "id": "iy-e60",
+     "t": "The 50 Year-Old Curse of the Dark Priestess",
+     "n": "60"
+    },
+    {
+     "id": "iy-e61",
+     "t": "Kikyo and the Dark Priestess",
+     "n": "61"
+    },
+    {
+     "id": "iy-e62",
+     "t": "Tsubaki's Unrelenting Evil Spell",
+     "n": "62"
+    },
+    {
+     "id": "iy-e63",
+     "t": "The Red and White Priestesses",
+     "n": "63"
+    },
+    {
+     "id": "iy-e64",
+     "t": "Giant Ogre of the Forbidden Tower",
+     "n": "64"
+    },
+    {
+     "id": "iy-e65",
+     "t": "Farewell Days of My Youth",
+     "n": "65"
+    },
+    {
+     "id": "iy-e66",
+     "t": "Naraku's Barrier - Kagura's Decision",
+     "n": "66"
+    },
+    {
+     "id": "iy-e67",
+     "t": "The Howling Wind of Betrayal",
+     "n": "67"
+    },
+    {
+     "id": "iy-e68",
+     "t": "Shippo Gets an Angry Challenge",
+     "n": "68"
+    },
+    {
+     "id": "iy-e69",
+     "t": "Terror of the Faceless Man",
+     "n": "69"
+    },
+    {
+     "id": "iy-e70",
+     "t": "Onigumo's Memory Restored",
+     "n": "70"
+    },
+    {
+     "id": "iy-e71",
+     "t": "Three-Sided Battle to the Death",
+     "n": "71"
+    },
+    {
+     "id": "iy-e72",
+     "t": "Totosai's Rigid Training",
+     "n": "72"
+    },
+    {
+     "id": "iy-e73",
+     "t": "Shiori's Family and Inuyasha's Feelings",
+     "n": "73"
+    },
+    {
+     "id": "iy-e74",
+     "t": "The Red Tetsusaiga Breaks the Barrier!",
+     "n": "74"
+    },
+    {
+     "id": "iy-e75",
+     "t": "The Plot of the Panther Devas",
+     "n": "75"
+    },
+    {
+     "id": "iy-e76",
+     "t": "Target: Sesshomaru and Inuyasha",
+     "n": "76"
+    },
+    {
+     "id": "iy-e77",
+     "t": "The Panther Tribe and the Two Swords of the Fang",
+     "n": "77"
+    },
+    {
+     "id": "iy-e78",
+     "t": "Only You, Sango",
+     "n": "78"
+    },
+    {
+     "id": "iy-e79",
+     "t": "Jaken's Plan to Steal Tetsusaiga",
+     "n": "79"
+    },
+    {
+     "id": "iy-e80",
+     "t": "Sesshomaru and the Abducted Rin",
+     "n": "80"
+    },
+    {
+     "id": "iy-e81",
+     "t": "Vanishing Point; Naraku Disappears",
+     "n": "81"
+    },
+    {
+     "id": "iy-e82",
+     "t": "Gap Between the Ages",
+     "n": "82"
+    },
+    {
+     "id": "iy-e83",
+     "t": "The Female Wolf-Demon and the Lunar Rainbow Promise",
+     "n": "83"
+    },
+    {
+     "id": "iy-e84",
+     "t": "Koga's Bride-To-Be",
+     "n": "84"
+    },
+    {
+     "id": "iy-e85",
+     "t": "The Evil Within Demon's Head Castle",
+     "n": "85"
+    },
+    {
+     "id": "iy-e86",
+     "t": "Secret of the Possessed Princess",
+     "n": "86"
+    },
+    {
+     "id": "iy-e87",
+     "t": "Kikyo's Lonely Journey",
+     "n": "87"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Season 3: Band of Seven Arc",
+   "sub": "2002–03 · 40 episodes, with the film where it opened",
+   "items": [
+    {
+     "id": "iy-e88",
+     "t": "The Three Sprites of the Monkey God",
+     "n": "88"
+    },
+    {
+     "id": "iy-e89",
+     "t": "Nursing Battle of the Rival Lovers",
+     "n": "89"
+    },
+    {
+     "id": "iy-e90",
+     "t": "Sota's Brave Confession of Love",
+     "n": "90"
+    },
+    {
+     "id": "iy-e91",
+     "t": "The Suspicious Faith Healer and the Black Kirara",
+     "n": "91"
+    },
+    {
+     "id": "iy-e92",
+     "t": "Plot of the Walking Dead",
+     "n": "92"
+    },
+    {
+     "id": "iy-e93",
+     "t": "The Mysterious, Lecherous Monk",
+     "n": "93"
+    },
+    {
+     "id": "iy-e94",
+     "t": "The Sacred Jewel Maker Part I",
+     "n": "94"
+    },
+    {
+     "id": "iy-e95",
+     "t": "The Sacred Jewel Maker Part II",
+     "n": "95"
+    },
+    {
+     "id": "iy-film-castle",
+     "t": "Inuyasha the Movie: The Castle Beyond the Looking Glass",
+     "n": "film",
+     "note": "Theatrical film · 99 minutes · Opened December 21, 2002, between episodes 95 and 96 · Also known as Inuyasha The Movie: Phantom Castle in the Mirror"
+    },
+    {
+     "id": "iy-e96",
+     "t": "Jaken Falls Ill",
+     "n": "96"
+    },
+    {
+     "id": "iy-e97",
+     "t": "Kirara Come Home!",
+     "n": "97"
+    },
+    {
+     "id": "iy-e98",
+     "t": "Kikyo and Kagome: Alone in the Cave",
+     "n": "98"
+    },
+    {
+     "id": "iy-e99",
+     "t": "Koga and Sesshomaru, A Dangerous Encounter",
+     "n": "99"
+    },
+    {
+     "id": "iy-e100",
+     "t": "The Truth Behind the Nightmare: Battle in the Forest of Sorrow",
+     "n": "100"
+    },
+    {
+     "id": "iy-e101",
+     "t": "The Snow from Seven Years Past",
+     "n": "101"
+    },
+    {
+     "id": "iy-e102",
+     "t": "Assault on the Wolf-Demon Tribe!",
+     "n": "102"
+    },
+    {
+     "id": "iy-e103",
+     "t": "The Band of Seven, Resurrected!",
+     "n": "103"
+    },
+    {
+     "id": "iy-e104",
+     "t": "The Stealthy Poison Master: Mukotsu!",
+     "n": "104"
+    },
+    {
+     "id": "iy-e105",
+     "t": "The Ghastly Steel Machine!",
+     "n": "105"
+    },
+    {
+     "id": "iy-e106",
+     "t": "Kagome, Miroku, and Sango: Desperate Situation!",
+     "n": "106"
+    },
+    {
+     "id": "iy-e107",
+     "t": "Inuyasha Shows His Tears For The First Time",
+     "n": "107"
+    },
+    {
+     "id": "iy-e108",
+     "t": "The Secret of the Pure Light",
+     "n": "108"
+    },
+    {
+     "id": "iy-e109",
+     "t": "Hidden in the Mist: Onward to Mt. Hakurei!",
+     "n": "109"
+    },
+    {
+     "id": "iy-e110",
+     "t": "Enter Bankotsu, The Leader of the Band of Seven",
+     "n": "110"
+    },
+    {
+     "id": "iy-e111",
+     "t": "The Big Clash: Banryu versus the Wind Scar",
+     "n": "111"
+    },
+    {
+     "id": "iy-e112",
+     "t": "Afloat on the Lake Surface: The Barrier of Hijiri Island",
+     "n": "112"
+    },
+    {
+     "id": "iy-e113",
+     "t": "The Sacred Vajra and the Mystery of the Living Buddha",
+     "n": "113"
+    },
+    {
+     "id": "iy-e114",
+     "t": "Koga's Solitary Battle",
+     "n": "114"
+    },
+    {
+     "id": "iy-e115",
+     "t": "Lured by the Black Light",
+     "n": "115"
+    },
+    {
+     "id": "iy-e116",
+     "t": "The Exposed Face of Truth",
+     "n": "116"
+    },
+    {
+     "id": "iy-e117",
+     "t": "Vanished in a River of Flames",
+     "n": "117"
+    },
+    {
+     "id": "iy-e118",
+     "t": "Into the Depths of Mt. Hakurei",
+     "n": "118"
+    },
+    {
+     "id": "iy-e119",
+     "t": "Divine Malice of the Saint",
+     "n": "119"
+    },
+    {
+     "id": "iy-e120",
+     "t": "Fare Thee Well: Jakotsu's Requiem",
+     "n": "120"
+    },
+    {
+     "id": "iy-e121",
+     "t": "Final Battle: The Last and Strongest of the Band of Seven",
+     "n": "121"
+    },
+    {
+     "id": "iy-e122",
+     "t": "The Power of Banryu: Duel to the Death on Mt. Hakurei",
+     "n": "122"
+    },
+    {
+     "id": "iy-e123",
+     "t": "Beyond the Darkness - Naraku Reborn!",
+     "n": "123"
+    },
+    {
+     "id": "iy-e124",
+     "t": "Farewell Kikyo, My Beloved",
+     "n": "124"
+    },
+    {
+     "id": "iy-e125",
+     "t": "The Darkness in Kagome's Heart",
+     "n": "125"
+    },
+    {
+     "id": "iy-e126",
+     "t": "Transform Heartache into Courage!",
+     "n": "126"
+    },
+    {
+     "id": "iy-e127",
+     "t": "Don't Boil It! The Terrifying Dried-Up Demon!",
+     "n": "127"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Season 4: Fierce Battle Arc",
+   "sub": "2003–04 · 40 episodes, with the film where it opened · not where the story ends",
+   "items": [
+    {
+     "id": "iy-e128",
+     "t": "Battle Against the Dried-Up Demons at the Cultural Festival!",
+     "n": "128"
+    },
+    {
+     "id": "iy-e129",
+     "t": "Chokyukai and the Abducted Bride",
+     "n": "129"
+    },
+    {
+     "id": "iy-e130",
+     "t": "Shippo's New Technique, The Heart Scar!",
+     "n": "130"
+    },
+    {
+     "id": "iy-e131",
+     "t": "Trap of the Cursed Wall Hanging",
+     "n": "131"
+    },
+    {
+     "id": "iy-e132",
+     "t": "Miroku's Most Dangerous Confession",
+     "n": "132"
+    },
+    {
+     "id": "iy-e133",
+     "t": "The Woman Who Loved Sesshomaru, Part 1",
+     "n": "133",
+     "note": "Aired as a one-hour special with episode 134"
+    },
+    {
+     "id": "iy-e134",
+     "t": "The Woman Who Loved Sesshomaru, Part 2",
+     "n": "134",
+     "note": "Aired as a one-hour special with episode 133"
+    },
+    {
+     "id": "iy-e135",
+     "t": "The Last Banquet of Miroku's Master",
+     "n": "135"
+    },
+    {
+     "id": "iy-e136",
+     "t": "A Strange Invisible Demon Appears!",
+     "n": "136"
+    },
+    {
+     "id": "iy-film-swords",
+     "t": "Inuyasha the Movie: Swords of an Honorable Ruler",
+     "n": "film",
+     "note": "Theatrical film · 100 minutes · Opened December 20, 2003, between episodes 136 and 137 · Also known as InuYasha the Movie: Swords of Supreme Conquest"
+    },
+    {
+     "id": "iy-e137",
+     "t": "An Ancestor Named Kagome",
+     "n": "137"
+    },
+    {
+     "id": "iy-e138",
+     "t": "Mountain of Demons: Survival of the Duo",
+     "n": "138"
+    },
+    {
+     "id": "iy-e139",
+     "t": "The Great Duel at Shoun Falls!",
+     "n": "139"
+    },
+    {
+     "id": "iy-e140",
+     "t": "Eternal Love: The Naginata of Kenkon",
+     "n": "140"
+    },
+    {
+     "id": "iy-e141",
+     "t": "Entei, The Demon Horse Unleashed!",
+     "n": "141"
+    },
+    {
+     "id": "iy-e142",
+     "t": "Untamed Entei and Horrible Hakudoshi",
+     "n": "142"
+    },
+    {
+     "id": "iy-e143",
+     "t": "3000 Leagues in Search of Father",
+     "n": "143"
+    },
+    {
+     "id": "iy-e144",
+     "t": "Hosenki and the Last Shard",
+     "n": "144"
+    },
+    {
+     "id": "iy-e145",
+     "t": "Bizarre Guards at the Border of the Afterlife",
+     "n": "145"
+    },
+    {
+     "id": "iy-e146",
+     "t": "The Fiery Bird Master, Princess Abi",
+     "n": "146"
+    },
+    {
+     "id": "iy-e147",
+     "t": "The Tragic Love Song of Destiny, Part 1",
+     "n": "147",
+     "note": "Aired as a one-hour special with episode 148"
+    },
+    {
+     "id": "iy-e148",
+     "t": "The Tragic Love Song of Destiny, Part 2",
+     "n": "148",
+     "note": "Aired as a one-hour special with episode 147"
+    },
+    {
+     "id": "iy-e149",
+     "t": "The Single Arrow of Chaos",
+     "n": "149"
+    },
+    {
+     "id": "iy-e150",
+     "t": "The Mysterious Light that Guides the Saint",
+     "n": "150"
+    },
+    {
+     "id": "iy-e151",
+     "t": "Kagome's Instinctive Choice",
+     "n": "151"
+    },
+    {
+     "id": "iy-e152",
+     "t": "Protect and Plunder!",
+     "n": "152"
+    },
+    {
+     "id": "iy-e153",
+     "t": "The Cruel Reunion of Fate",
+     "n": "153"
+    },
+    {
+     "id": "iy-e154",
+     "t": "The Demon Linked with the Netherworld",
+     "n": "154"
+    },
+    {
+     "id": "iy-e155",
+     "t": "The Demon Protector of the Sacred Jewel Shard!",
+     "n": "155"
+    },
+    {
+     "id": "iy-e156",
+     "t": "Final Battle at the Graveside: Sesshomaru Versus Inuyasha!",
+     "n": "156"
+    },
+    {
+     "id": "iy-e157",
+     "t": "Destroy Naraku with the Adamant Barrage!",
+     "n": "157"
+    },
+    {
+     "id": "iy-e158",
+     "t": "Stampede of the Countless Demon Rats!",
+     "n": "158"
+    },
+    {
+     "id": "iy-e159",
+     "t": "Kohaku's Decision and Sango's Heart",
+     "n": "159"
+    },
+    {
+     "id": "iy-e160",
+     "t": "The Lucky but Two-Timing Scoundrel!",
+     "n": "160"
+    },
+    {
+     "id": "iy-e161",
+     "t": "Miroku's Past Mistake",
+     "n": "161"
+    },
+    {
+     "id": "iy-e162",
+     "t": "Forever with Lord Sesshomaru",
+     "n": "162"
+    },
+    {
+     "id": "iy-e163",
+     "t": "Kohaku, Sango and Kirara: The Secret Flower Garden",
+     "n": "163"
+    },
+    {
+     "id": "iy-e164",
+     "t": "Possessed by a Parasite: Shippo, Our Worst Enemy",
+     "n": "164"
+    },
+    {
+     "id": "iy-e165",
+     "t": "The Ultimate Key to Defeating Naraku",
+     "n": "165"
+    },
+    {
+     "id": "iy-e166",
+     "t": "The Bond Between Them, Use the Sacred Jewel Shard! Part 1",
+     "n": "166",
+     "note": "Aired as a one-hour special with episode 167"
+    },
+    {
+     "id": "iy-e167",
+     "t": "The Bond Between Them, Use the Sacred Jewel Shard! Part 2",
+     "n": "167",
+     "note": "Aired as a one-hour special with episode 166 · Where the original run stops; The Final Act carries on from here"
+    }
+   ],
+   "intro": "The last season of the original run, and not the end of the story. The anime stops here with the manga still going, and did not come back to it for five years. The Final Act, below, is the rest of it."
+  },
+  {
+   "id": "film-island",
+   "title": "Fire on the Mystic Island",
+   "sub": "2004 · the fourth film, between the two runs",
+   "intro": "An original story by the series writer, like the other three. It opened three months after the original run ended and is not where the story finishes.",
+   "items": [
+    {
+     "id": "iy-film-island",
+     "t": "Inuyasha the Movie: Fire on the Mystic Island",
+     "n": "film",
+     "note": "Theatrical film · 88 minutes · Opened December 23, 2004, between the two runs · Also known as InuYasha The Movie: Fire on Hōrai Island"
+    }
+   ]
+  },
+  {
+   "id": "tfa",
+   "title": "The Final Act",
+   "sub": "2009–10 · 26 episodes · the ending",
+   "intro": "Not optional. The original run adapts the manga's first 36 volumes and stops; this one adapts volumes 36 to 56 and finishes it, five years later, with the original staff and cast brought back. The source files it both ways and this list keeps both: its own article calls it the direct sequel to the Inuyasha anime series, while the same episode list carries it as the fifth block of one series overview, numbers its episodes 168 to 193 of the same run, and names Season 4 as the season before it.",
+   "items": [
+    {
+     "id": "iy-e168",
+     "t": "Naraku's Heart",
+     "n": "168"
+    },
+    {
+     "id": "iy-e169",
+     "t": "Kagura's Wind",
+     "n": "169"
+    },
+    {
+     "id": "iy-e170",
+     "t": "Meido Zangetsuha",
+     "n": "170"
+    },
+    {
+     "id": "iy-e171",
+     "t": "The Dragon-Scaled Tetsusaiga",
+     "n": "171"
+    },
+    {
+     "id": "iy-e172",
+     "t": "The Great Holy Demon Spirit’s Test",
+     "n": "172"
+    },
+    {
+     "id": "iy-e173",
+     "t": "The End of Moryomaru",
+     "n": "173"
+    },
+    {
+     "id": "iy-e174",
+     "t": "The Mausoleum of Mount Azusa",
+     "n": "174"
+    },
+    {
+     "id": "iy-e175",
+     "t": "Among the Twinkling Stars",
+     "n": "175"
+    },
+    {
+     "id": "iy-e176",
+     "t": "Sesshomaru in the Underworld",
+     "n": "176"
+    },
+    {
+     "id": "iy-e177",
+     "t": "Flowers Drenched in Sadness",
+     "n": "177"
+    },
+    {
+     "id": "iy-e178",
+     "t": "Kanna's Gravestone",
+     "n": "178"
+    },
+    {
+     "id": "iy-e179",
+     "t": "Sango's Feelings, Miroku's Resolve",
+     "n": "179"
+    },
+    {
+     "id": "iy-e180",
+     "t": "A Complete Meido",
+     "n": "180"
+    },
+    {
+     "id": "iy-e181",
+     "t": "In Pursuit of Naraku",
+     "n": "181"
+    },
+    {
+     "id": "iy-e182",
+     "t": "True Heir",
+     "n": "182"
+    },
+    {
+     "id": "iy-e183",
+     "t": "Hitomiko's Barrier",
+     "n": "183"
+    },
+    {
+     "id": "iy-e184",
+     "t": "Magatsuhi's Evil Will",
+     "n": "184"
+    },
+    {
+     "id": "iy-e185",
+     "t": "The Day of Days",
+     "n": "185"
+    },
+    {
+     "id": "iy-e186",
+     "t": "Kohaku's Shard",
+     "n": "186"
+    },
+    {
+     "id": "iy-e187",
+     "t": "When the Jewel Is Whole",
+     "n": "187"
+    },
+    {
+     "id": "iy-e188",
+     "t": "Inside Naraku",
+     "n": "188"
+    },
+    {
+     "id": "iy-e189",
+     "t": "Naraku: The Trap of Darkness",
+     "n": "189"
+    },
+    {
+     "id": "iy-e190",
+     "t": "Naraku: The Trap of Light",
+     "n": "190"
+    },
+    {
+     "id": "iy-e191",
+     "t": "Naraku's Uncertain Wish",
+     "n": "191"
+    },
+    {
+     "id": "iy-e192",
+     "t": "Thoughts Fall Short",
+     "n": "192"
+    },
+    {
+     "id": "iy-e193",
+     "t": "Toward Tomorrow",
+     "n": "193"
+    }
+   ]
+  }
+ ]
 }

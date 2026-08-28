@@ -1,494 +1,494 @@
 {
-  "slug": "body-swap",
-  "title": "Body Swap",
-  "subtitle": "who's in whose body, by decade",
-  "kind": "films",
-  "popularity": 34,
-  "year": "1936–2026",
-  "blurb": "69 body-swap films from Wikipedia's own list — four Freaky Fridays included — with who swaps and how on every note. Watch in any order.",
-  "unit": {
-    "one": "film",
-    "many": "films"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "accent": "#0F7A78",
-  "accentDark": "#F2913D",
-  "tiers": false,
-  "random": true,
-  "notes": [
-    [
-      "No order, no weights.",
-      "A grab bag, not a schedule — the Random button is the intended interface. Runtimes ride on the notes where Wikidata has one; 1 rows have none on record."
-    ],
-    [
-      "Every row has an article.",
-      "The source list carries dozens more films that only exist on other-language Wikipedias; rows here are the ones an English article verifies — title, year, who swaps, and how. Big and Face/Off aren't on Wikipedia's list (an age-up and a face transplant are not swaps), so they aren't here either."
-    ],
-    "From the Films table of Wikipedia's \"Body swap appearances in media\"; runtimes from Wikidata."
+ "slug": "body-swap",
+ "title": "Body Swap",
+ "subtitle": "who's in whose body, by decade",
+ "kind": "films",
+ "popularity": 34,
+ "year": "1936–2026",
+ "blurb": "69 body-swap films from Wikipedia's own list — four Freaky Fridays included — with who swaps and how on every note. Watch in any order.",
+ "unit": {
+  "one": "film",
+  "many": "films"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "accent": "#0F7A78",
+ "accentDark": "#F2913D",
+ "tiers": false,
+ "random": true,
+ "notes": [
+  [
+   "No order, no weights.",
+   "A grab bag, not a schedule — the Random button is the intended interface. Runtimes ride on the notes where Wikidata has one; 1 rows have none on record."
   ],
-  "sections": [
+  [
+   "Every row has an article.",
+   "The source list carries dozens more films that only exist on other-language Wikipedias; rows here are the ones an English article verifies — title, year, who swaps, and how. Big and Face/Off aren't on Wikipedia's list (an age-up and a face transplant are not swaps), so they aren't here either."
+  ],
+  "From the Films table of Wikipedia's \"Body swap appearances in media\"; runtimes from Wikidata."
+ ],
+ "sections": [
+  {
+   "id": "early",
+   "title": "Before Freaky Friday",
+   "sub": "1936–1960 · 4 films",
+   "items": [
     {
-      "id": "early",
-      "title": "Before Freaky Friday",
-      "sub": "1936–1960 · 4 films",
-      "items": [
-        {
-          "id": "bsw-1936-the-man-who-changed-his-mind",
-          "t": "The Man Who Changed His Mind",
-          "n": "1936",
-          "note": "United Kingdom · Four characters · machine · 66 min"
-        },
-        {
-          "id": "bsw-1940-turnabout",
-          "t": "Turnabout",
-          "n": "1940",
-          "note": "Husband and wife · magical statue · 83 min"
-        },
-        {
-          "id": "bsw-1948-vice-versa",
-          "t": "Vice Versa",
-          "n": "1948",
-          "note": "United Kingdom · Father and son · wish on magic stone · 111 min"
-        },
-        {
-          "id": "bsw-1960-the-greeneyed-elephant",
-          "t": "The Greeneyed Elephant",
-          "n": "1960",
-          "note": "Denmark · Sally and Lisa · aztec elephant sculpture · 79 min"
-        }
-      ],
-      "intro": "The premise is older than the name for it — a mad-science brain swap from 1936, wishes and statues after that.",
-      "open": true
+     "id": "bsw-1936-the-man-who-changed-his-mind",
+     "t": "The Man Who Changed His Mind",
+     "n": "1936",
+     "note": "United Kingdom · Four characters · machine · 66 min"
     },
     {
-      "id": "seventies",
-      "title": "The '70s and '80s",
-      "sub": "1976–1989 · 9 films",
-      "items": [
-        {
-          "id": "bsw-1976-freaky-friday",
-          "t": "Freaky Friday",
-          "n": "1976",
-          "note": "Mother and daughter · wish · 95 min"
-        },
-        {
-          "id": "bsw-1981-alison-s-birthday",
-          "t": "Alison's Birthday",
-          "n": "1981",
-          "note": "Australia · Young girl and old crone · demonic ritual · 95 min"
-        },
-        {
-          "id": "bsw-1982-i-are-you-you-am-me",
-          "t": "I Are You, You Am Me",
-          "n": "1982",
-          "note": "Japan · Teenage boy and girl · fall down staircase · 113 min"
-        },
-        {
-          "id": "bsw-1982-mighty-mouse-in-the-great-space-chase",
-          "t": "Mighty Mouse in the Great Space Chase",
-          "n": "1982",
-          "note": "Harry the Heartless and Queen Pearlheart · harry's machine · 86 min"
-        },
-        {
-          "id": "bsw-1984-all-of-me",
-          "t": "All of Me",
-          "n": "1984",
-          "note": "An attorney and his female client · mystic with soul transfer ability · 88 min"
-        },
-        {
-          "id": "bsw-1987-like-father-like-son",
-          "t": "Like Father Like Son",
-          "n": "1987",
-          "note": "Father and son · drinking a potion · 92 min"
-        },
-        {
-          "id": "bsw-1988-18-again",
-          "t": "18 Again!",
-          "n": "1988",
-          "note": "Grandfather and grandson · car accident · 97 min"
-        },
-        {
-          "id": "bsw-1988-vice-versa",
-          "t": "Vice Versa",
-          "n": "1988",
-          "note": "Father and son; male and female thief · ancient mystical skull · 94 min"
-        },
-        {
-          "id": "bsw-1989-dream-a-little-dream",
-          "t": "Dream a Little Dream",
-          "n": "1989",
-          "note": "Teenager and older man · meditation experiment and collision · 115 min"
-        }
-      ],
-      "intro": "Freaky Friday lands in 1976 and the late-'80s wave — Vice Versa, 18 Again!, Dream a Little Dream — chases it."
+     "id": "bsw-1940-turnabout",
+     "t": "Turnabout",
+     "n": "1940",
+     "note": "Husband and wife · magical statue · 83 min"
     },
     {
-      "id": "nineties",
-      "title": "The '90s",
-      "sub": "1992–1999 · 8 films",
-      "items": [
-        {
-          "id": "bsw-1992-prelude-to-a-kiss",
-          "t": "Prelude to a Kiss",
-          "n": "1992",
-          "note": "Mysterious old man and a bride · kiss · 98 min"
-        },
-        {
-          "id": "bsw-1994-the-machine",
-          "t": "The Machine",
-          "n": "1994",
-          "note": "France · Psychiatrist and serial killer · experiment gone wrong with a mind-reading machine · 96 min"
-        },
-        {
-          "id": "bsw-1995-chinna-vathiyar",
-          "t": "Chinna Vathiyar",
-          "n": "1995",
-          "note": "India · Professor and student · 132 min"
-        },
-        {
-          "id": "bsw-1995-freaky-friday",
-          "t": "Freaky Friday",
-          "n": "1995",
-          "note": "Mother and daughter · magical amulets · 86 min"
-        },
-        {
-          "id": "bsw-1995-runaway-brain",
-          "t": "Runaway Brain",
-          "n": "1995",
-          "note": "Mickey Mouse and a monster · brain transplant machine · 7 min"
-        },
-        {
-          "id": "bsw-1996-dating-the-enemy",
-          "t": "Dating the Enemy",
-          "n": "1996",
-          "note": "Australia · Boyfriend and girlfriend · wish during full moon · 97 min"
-        },
-        {
-          "id": "bsw-1996-wish-upon-a-star",
-          "t": "Wish Upon a Star",
-          "n": "1996",
-          "note": "Alexia (popular girl) and Hayley (geeky younger sister) · wish on falling star · 86 min"
-        },
-        {
-          "id": "bsw-1999-a-saintly-switch",
-          "t": "A Saintly Switch",
-          "n": "1999",
-          "note": "National Football League quarterback and his wife · voodoo spell · 84 min"
-        }
-      ]
+     "id": "bsw-1948-vice-versa",
+     "t": "Vice Versa",
+     "n": "1948",
+     "note": "United Kingdom · Father and son · wish on magic stone · 111 min"
     },
     {
-      "id": "aughts",
-      "title": "The 2000s",
-      "sub": "2000–2007 · 13 films",
-      "items": [
-        {
-          "id": "bsw-2000-xchange",
-          "t": "Xchange",
-          "n": "2000",
-          "note": "Canada · Agent and terrorist leader · technology · 105 min"
-        },
-        {
-          "id": "bsw-2001-monkeybone",
-          "t": "Monkeybone",
-          "n": "2001",
-          "note": "going back to Earth from Down Town · 92 min"
-        },
-        {
-          "id": "bsw-2002-l-anima-gemella",
-          "t": "L'anima gemella",
-          "n": "2002",
-          "note": "Italy · 104 min"
-        },
-        {
-          "id": "bsw-2002-scooby-doo",
-          "t": "Scooby-Doo",
-          "n": "2002",
-          "note": "Shaggy, Fred, Daphne and Velma · demons · 83 min"
-        },
-        {
-          "id": "bsw-2002-the-hot-chick",
-          "t": "The Hot Chick",
-          "n": "2002",
-          "note": "earrings · 100 min"
-        },
-        {
-          "id": "bsw-2003-freaky-friday",
-          "t": "Freaky Friday",
-          "n": "2003",
-          "note": "Mother and daughter · fortune cookies · 97 min"
-        },
-        {
-          "id": "bsw-2005-the-skeleton-key",
-          "t": "The Skeleton Key",
-          "n": "2005",
-          "note": "hoodoo ritual · 104 min"
-        },
-        {
-          "id": "bsw-2006-it-s-a-boy-girl-thing",
-          "t": "It's a Boy Girl Thing",
-          "n": "2006",
-          "note": "United Kingdom, Canada, United States · Teenage boy and girl · statue spell · 93 min"
-        },
-        {
-          "id": "bsw-2006-pokemon-ranger-and-the-temple-of-the-sea",
-          "t": "Pokémon Ranger and the Temple of the Sea",
-          "n": "2006",
-          "note": "Japan · Jessie, James and Meowth; Ash and Jack Walker · manaphy's Heart Swap attack · 105 min"
-        },
-        {
-          "id": "bsw-2006-se-eu-fosse-voce-if-i-were-you",
-          "t": "Se Eu Fosse Você (If I Were You)",
-          "n": "2006",
-          "note": "Brazil · Husband and wife · arguing under stars · 104 min"
-        },
-        {
-          "id": "bsw-2007-just-follow-law",
-          "t": "Just Follow Law",
-          "n": "2007",
-          "note": "Singapore · Supervisor and subordinate · car accident · 112 min"
-        },
-        {
-          "id": "bsw-2007-shrek-the-third",
-          "t": "Shrek the Third",
-          "n": "2007",
-          "note": "Donkey and Puss in Boots · side effect of teleportation spell · 89 min"
-        },
-        {
-          "id": "bsw-2007-the-secret",
-          "t": "The Secret",
-          "n": "2007",
-          "note": "France · Mother and daughter · car accident · 92 min"
-        }
-      ]
-    },
-    {
-      "id": "tens",
-      "title": "The 2010s",
-      "sub": "2010–2019 · 17 films",
-      "items": [
-        {
-          "id": "bsw-2010-here-comes-the-bride",
-          "t": "Here Comes the Bride",
-          "n": "2010",
-          "note": "Philippines · Five different people · an accident on a magnetic hill during solar eclipse · 108 min"
-        },
-        {
-          "id": "bsw-2011-detention",
-          "t": "Detention",
-          "n": "2011",
-          "note": "Daughter in 2010 and mother in 1992 · rays from an alien spaceship · 89 min"
-        },
-        {
-          "id": "bsw-2011-the-change-up",
-          "t": "The Change-Up",
-          "n": "2011",
-          "note": "urinating at a magic fountain · 113 min"
-        },
-        {
-          "id": "bsw-2012-ghost-graduation",
-          "t": "Ghost Graduation",
-          "n": "2012",
-          "note": "Spain · 88 min"
-        },
-        {
-          "id": "bsw-2014-ithihasa",
-          "t": "Ithihasa",
-          "n": "2014",
-          "note": "India · ring · 150 min"
-        },
-        {
-          "id": "bsw-2016-nine-lives",
-          "t": "Nine Lives",
-          "n": "2016",
-          "note": "accident, fall from roof · 87 min"
-        },
-        {
-          "id": "bsw-2016-the-swap",
-          "t": "The Swap",
-          "n": "2016",
-          "note": "Jack (hockey player) and Ellie (rhythmic gymnast) · a text message · 89 min"
-        },
-        {
-          "id": "bsw-2016-your-name",
-          "t": "Your Name",
-          "n": "2016",
-          "note": "Japan · Mitsuha and Taki · 107 min"
-        },
-        {
-          "id": "bsw-2017-bogan",
-          "t": "Bogan",
-          "n": "2017",
-          "note": "India · An honest policeman and a charismatic criminal · an ancient manuscript allowing astral projection · 150 min"
-        },
-        {
-          "id": "bsw-2017-daddy-you-daughter-me",
-          "t": "Daddy You, Daughter Me",
-          "n": "2017",
-          "note": "South Korea · Won Sang-tae and Won Do-yeon · 115 min"
-        },
-        {
-          "id": "bsw-2017-never-say-die",
-          "t": "Never Say Die",
-          "n": "2017",
-          "note": "China · Allen Ai and Ma Xiao · struck by lightning · 100 min"
-        },
-        {
-          "id": "bsw-2017-woke-up-like-this",
-          "t": "Woke Up Like This",
-          "n": "2017",
-          "note": "Philippines · Nando and Sabrina · homeless man's curse · 118 min"
-        },
-        {
-          "id": "bsw-2018-freaky-friday",
-          "t": "Freaky Friday",
-          "n": "2018",
-          "note": "Mother and daughter · magical hourglass · 90 min"
-        },
-        {
-          "id": "bsw-2018-po-cem-muzi-touzi",
-          "t": "Po čem muži touží",
-          "n": "2018",
-          "note": "Czech Republic · Man and his former wife · magic · 95 min"
-        },
-        {
-          "id": "bsw-2018-the-villain",
-          "t": "The Villain",
-          "n": "2018",
-          "note": "India · Ramappa and Ram · 175 min"
-        },
-        {
-          "id": "bsw-2019-jumanji-the-next-level",
-          "t": "Jumanji: The Next Level",
-          "n": "2019",
-          "note": "Main characters' avatars · magical river · 122 min"
-        },
-        {
-          "id": "bsw-2019-the-dude-in-me",
-          "t": "The Dude in Me",
-          "n": "2019",
-          "note": "South Korea · Kim Dong-hyun and Jang Pan-soo · 122 min"
-        }
-      ]
-    },
-    {
-      "id": "twenties",
-      "title": "The 2020s",
-      "sub": "2020–2026 · 18 films",
-      "items": [
-        {
-          "id": "bsw-2020-freaky",
-          "t": "Freaky",
-          "n": "2020",
-          "note": "Teenage girl and serial killer · magical dagger · 102 min"
-        },
-        {
-          "id": "bsw-2020-out",
-          "t": "Out",
-          "n": "2020",
-          "note": "Greg and his dog Jim · wish · 9 min"
-        },
-        {
-          "id": "bsw-2020-soul",
-          "t": "Soul",
-          "n": "2020",
-          "note": "going through portal to Earth at the same time · 101 min"
-        },
-        {
-          "id": "bsw-2020-wonder-woman-1984",
-          "t": "Wonder Woman 1984",
-          "n": "2020",
-          "note": "Steve Trevor · 151 min"
-        },
-        {
-          "id": "bsw-2021-hilda-and-the-mountain-king",
-          "t": "Hilda and the Mountain King",
-          "n": "2021",
-          "note": "United Kingdom, Canada, United States · Hilda and troll · magic · 85 min"
-        },
-        {
-          "id": "bsw-2021-spiritwalker",
-          "t": "Spiritwalker",
-          "n": "2021",
-          "note": "South Korea · Kang I-an · experimental drug \"Ether-X\" · 108 min"
-        },
-        {
-          "id": "bsw-2021-the-good-the-bart-and-the-loki",
-          "t": "The Good, the Bart, and the Loki",
-          "n": "2021",
-          "note": "Bart Simpson and Loki · 4 min"
-        },
-        {
-          "id": "bsw-2021-what-do-we-see-when-we-look-at-the-sky",
-          "t": "What Do We See When We Look at the Sky?",
-          "n": "2021",
-          "note": "Germany, Georgia · Lisa and other Lisa, Giorgi and other Giorgi · cursed · 150 min"
-        },
-        {
-          "id": "bsw-2023-family-switch",
-          "t": "Family Switch",
-          "n": "2023",
-          "note": "Mother and daughter, Father and son and Baby and dog · an astrological reader · 101 min"
-        },
-        {
-          "id": "bsw-2023-here-comes-the-groom",
-          "t": "Here Comes the Groom",
-          "n": "2023",
-          "note": "Philippines · Various people · an accident on a magnetic hill during solar eclipse"
-        },
-        {
-          "id": "bsw-2023-suitable-flesh",
-          "t": "Suitable Flesh",
-          "n": "2023",
-          "note": "demonic incantation · 99 min"
-        },
-        {
-          "id": "bsw-2024-it-s-what-s-inside",
-          "t": "It's What's Inside",
-          "n": "2024",
-          "note": "A group of friends · a suitcase device · 103 min"
-        },
-        {
-          "id": "bsw-2024-spellbound",
-          "t": "Spellbound",
-          "n": "2024",
-          "note": "Flink and Bolinar · magic fob · 109 min"
-        },
-        {
-          "id": "bsw-2024-the-substance",
-          "t": "The Substance",
-          "n": "2024",
-          "note": "France · Elisabeth Sparkle and Sue · use of The Substance · 141 min"
-        },
-        {
-          "id": "bsw-2025-freakier-friday",
-          "t": "Freakier Friday",
-          "n": "2025",
-          "note": "Anna and Harper, Lily and Tess · palm reading · 111 min"
-        },
-        {
-          "id": "bsw-2025-padakkalam",
-          "t": "Padakkalam",
-          "n": "2025",
-          "note": "India · an ancient game like artifact · 124 min"
-        },
-        {
-          "id": "bsw-2026-pizza-movie",
-          "t": "Pizza Movie",
-          "n": "2026",
-          "note": "Jack and Lizzy, Montgomery and Lysander the Butterfly · phase III of M.I.N.T.S drugs · 97 min"
-        },
-        {
-          "id": "bsw-2026-swapped",
-          "t": "Swapped",
-          "n": "2026",
-          "note": "magic · 102 min"
-        }
-      ]
+     "id": "bsw-1960-the-greeneyed-elephant",
+     "t": "The Greeneyed Elephant",
+     "n": "1960",
+     "note": "Denmark · Sally and Lisa · aztec elephant sculpture · 79 min"
     }
-  ]
+   ],
+   "intro": "The premise is older than the name for it — a mad-science brain swap from 1936, wishes and statues after that.",
+   "open": true
+  },
+  {
+   "id": "seventies",
+   "title": "The '70s and '80s",
+   "sub": "1976–1989 · 9 films",
+   "items": [
+    {
+     "id": "bsw-1976-freaky-friday",
+     "t": "Freaky Friday",
+     "n": "1976",
+     "note": "Mother and daughter · wish · 95 min"
+    },
+    {
+     "id": "bsw-1981-alison-s-birthday",
+     "t": "Alison's Birthday",
+     "n": "1981",
+     "note": "Australia · Young girl and old crone · demonic ritual · 95 min"
+    },
+    {
+     "id": "bsw-1982-i-are-you-you-am-me",
+     "t": "I Are You, You Am Me",
+     "n": "1982",
+     "note": "Japan · Teenage boy and girl · fall down staircase · 113 min"
+    },
+    {
+     "id": "bsw-1982-mighty-mouse-in-the-great-space-chase",
+     "t": "Mighty Mouse in the Great Space Chase",
+     "n": "1982",
+     "note": "Harry the Heartless and Queen Pearlheart · harry's machine · 86 min"
+    },
+    {
+     "id": "bsw-1984-all-of-me",
+     "t": "All of Me",
+     "n": "1984",
+     "note": "An attorney and his female client · mystic with soul transfer ability · 88 min"
+    },
+    {
+     "id": "bsw-1987-like-father-like-son",
+     "t": "Like Father Like Son",
+     "n": "1987",
+     "note": "Father and son · drinking a potion · 92 min"
+    },
+    {
+     "id": "bsw-1988-18-again",
+     "t": "18 Again!",
+     "n": "1988",
+     "note": "Grandfather and grandson · car accident · 97 min"
+    },
+    {
+     "id": "bsw-1988-vice-versa",
+     "t": "Vice Versa",
+     "n": "1988",
+     "note": "Father and son; male and female thief · ancient mystical skull · 94 min"
+    },
+    {
+     "id": "bsw-1989-dream-a-little-dream",
+     "t": "Dream a Little Dream",
+     "n": "1989",
+     "note": "Teenager and older man · meditation experiment and collision · 115 min"
+    }
+   ],
+   "intro": "Freaky Friday lands in 1976 and the late-'80s wave — Vice Versa, 18 Again!, Dream a Little Dream — chases it."
+  },
+  {
+   "id": "nineties",
+   "title": "The '90s",
+   "sub": "1992–1999 · 8 films",
+   "items": [
+    {
+     "id": "bsw-1992-prelude-to-a-kiss",
+     "t": "Prelude to a Kiss",
+     "n": "1992",
+     "note": "Mysterious old man and a bride · kiss · 98 min"
+    },
+    {
+     "id": "bsw-1994-the-machine",
+     "t": "The Machine",
+     "n": "1994",
+     "note": "France · Psychiatrist and serial killer · experiment gone wrong with a mind-reading machine · 96 min"
+    },
+    {
+     "id": "bsw-1995-chinna-vathiyar",
+     "t": "Chinna Vathiyar",
+     "n": "1995",
+     "note": "India · Professor and student · 132 min"
+    },
+    {
+     "id": "bsw-1995-freaky-friday",
+     "t": "Freaky Friday",
+     "n": "1995",
+     "note": "Mother and daughter · magical amulets · 86 min"
+    },
+    {
+     "id": "bsw-1995-runaway-brain",
+     "t": "Runaway Brain",
+     "n": "1995",
+     "note": "Mickey Mouse and a monster · brain transplant machine · 7 min"
+    },
+    {
+     "id": "bsw-1996-dating-the-enemy",
+     "t": "Dating the Enemy",
+     "n": "1996",
+     "note": "Australia · Boyfriend and girlfriend · wish during full moon · 97 min"
+    },
+    {
+     "id": "bsw-1996-wish-upon-a-star",
+     "t": "Wish Upon a Star",
+     "n": "1996",
+     "note": "Alexia (popular girl) and Hayley (geeky younger sister) · wish on falling star · 86 min"
+    },
+    {
+     "id": "bsw-1999-a-saintly-switch",
+     "t": "A Saintly Switch",
+     "n": "1999",
+     "note": "National Football League quarterback and his wife · voodoo spell · 84 min"
+    }
+   ]
+  },
+  {
+   "id": "aughts",
+   "title": "The 2000s",
+   "sub": "2000–2007 · 13 films",
+   "items": [
+    {
+     "id": "bsw-2000-xchange",
+     "t": "Xchange",
+     "n": "2000",
+     "note": "Canada · Agent and terrorist leader · technology · 105 min"
+    },
+    {
+     "id": "bsw-2001-monkeybone",
+     "t": "Monkeybone",
+     "n": "2001",
+     "note": "going back to Earth from Down Town · 92 min"
+    },
+    {
+     "id": "bsw-2002-l-anima-gemella",
+     "t": "L'anima gemella",
+     "n": "2002",
+     "note": "Italy · 104 min"
+    },
+    {
+     "id": "bsw-2002-scooby-doo",
+     "t": "Scooby-Doo",
+     "n": "2002",
+     "note": "Shaggy, Fred, Daphne and Velma · demons · 83 min"
+    },
+    {
+     "id": "bsw-2002-the-hot-chick",
+     "t": "The Hot Chick",
+     "n": "2002",
+     "note": "earrings · 100 min"
+    },
+    {
+     "id": "bsw-2003-freaky-friday",
+     "t": "Freaky Friday",
+     "n": "2003",
+     "note": "Mother and daughter · fortune cookies · 97 min"
+    },
+    {
+     "id": "bsw-2005-the-skeleton-key",
+     "t": "The Skeleton Key",
+     "n": "2005",
+     "note": "hoodoo ritual · 104 min"
+    },
+    {
+     "id": "bsw-2006-it-s-a-boy-girl-thing",
+     "t": "It's a Boy Girl Thing",
+     "n": "2006",
+     "note": "United Kingdom, Canada, United States · Teenage boy and girl · statue spell · 93 min"
+    },
+    {
+     "id": "bsw-2006-pokemon-ranger-and-the-temple-of-the-sea",
+     "t": "Pokémon Ranger and the Temple of the Sea",
+     "n": "2006",
+     "note": "Japan · Jessie, James and Meowth; Ash and Jack Walker · manaphy's Heart Swap attack · 105 min"
+    },
+    {
+     "id": "bsw-2006-se-eu-fosse-voce-if-i-were-you",
+     "t": "Se Eu Fosse Você (If I Were You)",
+     "n": "2006",
+     "note": "Brazil · Husband and wife · arguing under stars · 104 min"
+    },
+    {
+     "id": "bsw-2007-just-follow-law",
+     "t": "Just Follow Law",
+     "n": "2007",
+     "note": "Singapore · Supervisor and subordinate · car accident · 112 min"
+    },
+    {
+     "id": "bsw-2007-shrek-the-third",
+     "t": "Shrek the Third",
+     "n": "2007",
+     "note": "Donkey and Puss in Boots · side effect of teleportation spell · 89 min"
+    },
+    {
+     "id": "bsw-2007-the-secret",
+     "t": "The Secret",
+     "n": "2007",
+     "note": "France · Mother and daughter · car accident · 92 min"
+    }
+   ]
+  },
+  {
+   "id": "tens",
+   "title": "The 2010s",
+   "sub": "2010–2019 · 17 films",
+   "items": [
+    {
+     "id": "bsw-2010-here-comes-the-bride",
+     "t": "Here Comes the Bride",
+     "n": "2010",
+     "note": "Philippines · Five different people · an accident on a magnetic hill during solar eclipse · 108 min"
+    },
+    {
+     "id": "bsw-2011-detention",
+     "t": "Detention",
+     "n": "2011",
+     "note": "Daughter in 2010 and mother in 1992 · rays from an alien spaceship · 89 min"
+    },
+    {
+     "id": "bsw-2011-the-change-up",
+     "t": "The Change-Up",
+     "n": "2011",
+     "note": "urinating at a magic fountain · 113 min"
+    },
+    {
+     "id": "bsw-2012-ghost-graduation",
+     "t": "Ghost Graduation",
+     "n": "2012",
+     "note": "Spain · 88 min"
+    },
+    {
+     "id": "bsw-2014-ithihasa",
+     "t": "Ithihasa",
+     "n": "2014",
+     "note": "India · ring · 150 min"
+    },
+    {
+     "id": "bsw-2016-nine-lives",
+     "t": "Nine Lives",
+     "n": "2016",
+     "note": "accident, fall from roof · 87 min"
+    },
+    {
+     "id": "bsw-2016-the-swap",
+     "t": "The Swap",
+     "n": "2016",
+     "note": "Jack (hockey player) and Ellie (rhythmic gymnast) · a text message · 89 min"
+    },
+    {
+     "id": "bsw-2016-your-name",
+     "t": "Your Name",
+     "n": "2016",
+     "note": "Japan · Mitsuha and Taki · 107 min"
+    },
+    {
+     "id": "bsw-2017-bogan",
+     "t": "Bogan",
+     "n": "2017",
+     "note": "India · An honest policeman and a charismatic criminal · an ancient manuscript allowing astral projection · 150 min"
+    },
+    {
+     "id": "bsw-2017-daddy-you-daughter-me",
+     "t": "Daddy You, Daughter Me",
+     "n": "2017",
+     "note": "South Korea · Won Sang-tae and Won Do-yeon · 115 min"
+    },
+    {
+     "id": "bsw-2017-never-say-die",
+     "t": "Never Say Die",
+     "n": "2017",
+     "note": "China · Allen Ai and Ma Xiao · struck by lightning · 100 min"
+    },
+    {
+     "id": "bsw-2017-woke-up-like-this",
+     "t": "Woke Up Like This",
+     "n": "2017",
+     "note": "Philippines · Nando and Sabrina · homeless man's curse · 118 min"
+    },
+    {
+     "id": "bsw-2018-freaky-friday",
+     "t": "Freaky Friday",
+     "n": "2018",
+     "note": "Mother and daughter · magical hourglass · 90 min"
+    },
+    {
+     "id": "bsw-2018-po-cem-muzi-touzi",
+     "t": "Po čem muži touží",
+     "n": "2018",
+     "note": "Czech Republic · Man and his former wife · magic · 95 min"
+    },
+    {
+     "id": "bsw-2018-the-villain",
+     "t": "The Villain",
+     "n": "2018",
+     "note": "India · Ramappa and Ram · 175 min"
+    },
+    {
+     "id": "bsw-2019-jumanji-the-next-level",
+     "t": "Jumanji: The Next Level",
+     "n": "2019",
+     "note": "Main characters' avatars · magical river · 122 min"
+    },
+    {
+     "id": "bsw-2019-the-dude-in-me",
+     "t": "The Dude in Me",
+     "n": "2019",
+     "note": "South Korea · Kim Dong-hyun and Jang Pan-soo · 122 min"
+    }
+   ]
+  },
+  {
+   "id": "twenties",
+   "title": "The 2020s",
+   "sub": "2020–2026 · 18 films",
+   "items": [
+    {
+     "id": "bsw-2020-freaky",
+     "t": "Freaky",
+     "n": "2020",
+     "note": "Teenage girl and serial killer · magical dagger · 102 min"
+    },
+    {
+     "id": "bsw-2020-out",
+     "t": "Out",
+     "n": "2020",
+     "note": "Greg and his dog Jim · wish · 9 min"
+    },
+    {
+     "id": "bsw-2020-soul",
+     "t": "Soul",
+     "n": "2020",
+     "note": "going through portal to Earth at the same time · 101 min"
+    },
+    {
+     "id": "bsw-2020-wonder-woman-1984",
+     "t": "Wonder Woman 1984",
+     "n": "2020",
+     "note": "Steve Trevor · 151 min"
+    },
+    {
+     "id": "bsw-2021-hilda-and-the-mountain-king",
+     "t": "Hilda and the Mountain King",
+     "n": "2021",
+     "note": "United Kingdom, Canada, United States · Hilda and troll · magic · 85 min"
+    },
+    {
+     "id": "bsw-2021-spiritwalker",
+     "t": "Spiritwalker",
+     "n": "2021",
+     "note": "South Korea · Kang I-an · experimental drug \"Ether-X\" · 108 min"
+    },
+    {
+     "id": "bsw-2021-the-good-the-bart-and-the-loki",
+     "t": "The Good, the Bart, and the Loki",
+     "n": "2021",
+     "note": "Bart Simpson and Loki · 4 min"
+    },
+    {
+     "id": "bsw-2021-what-do-we-see-when-we-look-at-the-sky",
+     "t": "What Do We See When We Look at the Sky?",
+     "n": "2021",
+     "note": "Germany, Georgia · Lisa and other Lisa, Giorgi and other Giorgi · cursed · 150 min"
+    },
+    {
+     "id": "bsw-2023-family-switch",
+     "t": "Family Switch",
+     "n": "2023",
+     "note": "Mother and daughter, Father and son and Baby and dog · an astrological reader · 101 min"
+    },
+    {
+     "id": "bsw-2023-here-comes-the-groom",
+     "t": "Here Comes the Groom",
+     "n": "2023",
+     "note": "Philippines · Various people · an accident on a magnetic hill during solar eclipse"
+    },
+    {
+     "id": "bsw-2023-suitable-flesh",
+     "t": "Suitable Flesh",
+     "n": "2023",
+     "note": "demonic incantation · 99 min"
+    },
+    {
+     "id": "bsw-2024-it-s-what-s-inside",
+     "t": "It's What's Inside",
+     "n": "2024",
+     "note": "A group of friends · a suitcase device · 103 min"
+    },
+    {
+     "id": "bsw-2024-spellbound",
+     "t": "Spellbound",
+     "n": "2024",
+     "note": "Flink and Bolinar · magic fob · 109 min"
+    },
+    {
+     "id": "bsw-2024-the-substance",
+     "t": "The Substance",
+     "n": "2024",
+     "note": "France · Elisabeth Sparkle · use of The Substance · 141 min"
+    },
+    {
+     "id": "bsw-2025-freakier-friday",
+     "t": "Freakier Friday",
+     "n": "2025",
+     "note": "Anna and Harper, Lily and Tess · palm reading · 111 min"
+    },
+    {
+     "id": "bsw-2025-padakkalam",
+     "t": "Padakkalam",
+     "n": "2025",
+     "note": "India · an ancient game like artifact · 124 min"
+    },
+    {
+     "id": "bsw-2026-pizza-movie",
+     "t": "Pizza Movie",
+     "n": "2026",
+     "note": "Jack and Lizzy, Montgomery and Lysander the Butterfly · phase III of M.I.N.T.S drugs · 97 min"
+    },
+    {
+     "id": "bsw-2026-swapped",
+     "t": "Swapped",
+     "n": "2026",
+     "note": "magic · 102 min"
+    }
+   ]
+  }
+ ]
 }

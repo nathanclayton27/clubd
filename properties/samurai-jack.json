@@ -1,469 +1,468 @@
 {
-  "slug": "samurai-jack",
-  "title": "Samurai Jack",
-  "subtitle": "all five seasons, in the source's episode order",
-  "kind": "animated series",
-  "popularity": 67,
-  "year": "2001–2017",
-  "blurb": "Every episode of Genndy Tartakovsky's series — four seasons on Cartoon Network, then ten more in 2017.",
-  "unit": {
-    "one": "episode",
-    "many": "episodes"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#9E2B25",
-  "accentDark": "#E8A33D",
-  "tiers": false,
-  "notes": [
-    [
-      "The 2017 season is season five, and the source says so five times.",
-      "A different network and thirteen years on is a fair reason to ask whether it is a separate show, so it was asked. The series infobox counts five seasons and 62 episodes; the episode list's series overview files it as season 5; the season article opens \"The fifth and final season of Samurai Jack, an American animated series, premiered on Adult Swim's Toonami programming block\"; its infobox numbers itself 5 with season 4 before it; and the overall numbering runs straight on from 52 to 53. Wikipedia does also call it a revival — the show \"was revived thirteen years later with a darker, more mature fifth season that provided a conclusion to the series\" — but a revival of this series, filed as its fifth season. So it is the fifth section here."
-    ],
-    [
-      "The network changed, and every season subtitle names its own.",
-      "Cartoon Network carried the first four seasons; the fifth went out on Adult Swim's Toonami block. Those are the only two networks the source's overview declares, and it carries the first forward until the second replaces it — which is read here rather than assumed. Cartoon Network Studios made all five; Williams Street assisted on the last."
-    ],
-    [
-      "The opening three are three rows.",
-      "The source files them in one block titled Samurai Jack: The Premiere Movie — which is the name of the VHS and DVD compilation the same article describes, not the name of an episode — and numbers them 1, 2 and 3 individually, with the part titles written into its summary. So the rows follow the numbering and carry those titles, and the compilation gets no row of its own. The two later two-parters are handled the same way and read Part I and Part II, because the source numbers their parts separately but does not title them separately."
-    ],
-    [
-      "Thirteen a season, then ten.",
-      "Thirteen episodes in each of the four original seasons and ten in the fifth — 62 in all. Each season's count, first airdate and last airdate are checked against the source's own series overview before this builds, and the total against the series infobox."
-    ],
-    [
-      "The Roman numerals are the show's own episode numbers.",
-      "The source states the rule — episodes are identified in the credits by Roman numerals matching the running total, and the fifth season adds 40 so that LII (52) is followed by XCII (92) — so each row's numeral is derived from it and then checked against the source twice: the fifth season's ten titles are read back as numbers, and eight numeral-and-title pairs the series article spells out in its own citations have to match. Only the first four seasons carry a descriptive title as well, which is why the last ten rows are titled by numeral alone."
-    ],
-    [
-      "The order here is the numbering, not the broadcast.",
-      "Several episodes went out ahead of or behind their number — the fourth season began while the third was still airing. The list follows the source's numbering, which is the numbering the credits use."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked on this list.",
-      "Six sources were checked for a per-episode running time and between them they hold one for three of the 62. The episode tables carry no RunTime field on any of their 58 blocks; the fifth season's article has no runtime in its infobox; no episode has a Wikipedia article of its own, so there is no episode infobox and no Wikidata item to reach through one; Wikidata's own inventory of the series holds items for 53 of the 62 episodes, nine of the last ten having none at all; and of those items, three carry a duration — 23, 23 and 22 minutes. The series infobox does say \"22 minutes\", but that is one nominal figure for a 62-episode run and the three real durations are not all the same, so spreading it across every row would be a guess wearing a measurement's clothes. It is all rows or none, and a row with no weight on a weighted list silently counts as a full hour, so it is none."
-    ],
-    "Titles, numbering and airdates machine-read from Wikipedia's \"List of Samurai Jack episodes\" and \"Samurai Jack season 5\", with counts, dates, the numeral scheme and the fifth season's standing cross-checked against \"Samurai Jack\" and against Wikidata before this builds."
+ "slug": "samurai-jack",
+ "title": "Samurai Jack",
+ "subtitle": "all five seasons, in the source's episode order",
+ "kind": "animated series",
+ "popularity": 67,
+ "year": "2001–2017",
+ "blurb": "Every episode of Genndy Tartakovsky's series — four seasons on Cartoon Network, then ten more in 2017.",
+ "unit": {
+  "one": "episode",
+  "many": "episodes"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#9E2B25",
+ "accentDark": "#E8A33D",
+ "tiers": false,
+ "notes": [
+  [
+   "The 2017 season is season five, and the source says so five times.",
+   "A different network and thirteen years on is a fair reason to ask whether it is a separate show, so it was asked. The series infobox counts five seasons and 62 episodes; the episode list's series overview files it as season 5; the season article opens \"The fifth and final season of Samurai Jack, an American animated series, premiered on Adult Swim's Toonami programming block\"; its infobox numbers itself 5 with season 4 before it; and the overall numbering runs straight on from 52 to 53. Wikipedia does also call it a revival — the show \"was revived thirteen years later with a darker, more mature fifth season that provided a conclusion to the series\" — but a revival of this series, filed as its fifth season. So it is the fifth section here."
   ],
-  "sections": [
+  [
+   "The network changed, and every season subtitle names its own.",
+   "Cartoon Network carried the first four seasons; the fifth went out on Adult Swim's Toonami block. Those are the only two networks the source's overview declares, and it carries the first forward until the second replaces it — which is read here rather than assumed. Cartoon Network Studios made all five; Williams Street assisted on the last."
+  ],
+  [
+   "The opening three are three rows.",
+   "The source files them in one block titled Samurai Jack: The Premiere Movie — which is the name of the VHS and DVD compilation the same article describes, not the name of an episode — and numbers them 1, 2 and 3 individually, with the part titles written into its summary. So the rows follow the numbering and carry those titles, and the compilation gets no row of its own. The two later two-parters are handled the same way and read Part I and Part II, because the source numbers their parts separately but does not title them separately."
+  ],
+  [
+   "Thirteen a season, then ten.",
+   "Thirteen episodes in each of the four original seasons and ten in the fifth — 62 in all. Each season's count, first airdate and last airdate are checked against the source's own series overview before this builds, and the total against the series infobox."
+  ],
+  [
+   "The Roman numerals are the show's own episode numbers.",
+   "The source states the rule — episodes are identified in the credits by Roman numerals matching the running total, and the fifth season adds 40 so that LII (52) is followed by XCII (92) — so each row's numeral is derived from it and then checked against the source twice: the fifth season's ten titles are read back as numbers, and eight numeral-and-title pairs the series article spells out in its own citations have to match. Only the first four seasons carry a descriptive title as well, which is why the last ten rows are titled by numeral alone."
+  ],
+  [
+   "The order here is the numbering, not the broadcast.",
+   "Several episodes went out ahead of or behind their number — the fourth season began while the third was still airing. The list follows the source's numbering, which is the numbering the credits use."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked on this list.",
+   "Six sources were checked for a per-episode running time and between them they hold one for three of the 62. The episode tables carry no RunTime field on any of their 58 blocks; the fifth season's article has no runtime in its infobox; no episode has a Wikipedia article of its own, so there is no episode infobox and no Wikidata item to reach through one; Wikidata's own inventory of the series holds items for 53 of the 62 episodes, nine of the last ten having none at all; and of those items, three carry a duration — 23, 23 and 22 minutes. The series infobox does say \"22 minutes\", but that is one nominal figure for a 62-episode run and the three real durations are not all the same, so spreading it across every row would be a guess wearing a measurement's clothes. It is all rows or none, and a row with no weight on a weighted list silently counts as a full hour, so it is none."
+  ],
+  "Titles, numbering and airdates machine-read from Wikipedia's \"List of Samurai Jack episodes\" and \"Samurai Jack season 5\", with counts, dates, the numeral scheme and the fifth season's standing cross-checked against \"Samurai Jack\" and against Wikidata before this builds."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1",
+   "sub": "2001 · 13 episodes · Cartoon Network",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1",
-      "sub": "2001 · 13 episodes · Cartoon Network",
-      "items": [
-        {
-          "id": "sj-s1e1",
-          "t": "The Beginning",
-          "n": "1",
-          "note": "series premiere · one of the three that opened the show in a single broadcast · credited as I"
-        },
-        {
-          "id": "sj-s1e2",
-          "t": "The Samurai Called Jack",
-          "n": "2",
-          "note": "one of the three that opened the show in a single broadcast · credited as II"
-        },
-        {
-          "id": "sj-s1e3",
-          "t": "The First Fight",
-          "n": "3",
-          "note": "one of the three that opened the show in a single broadcast · credited as III"
-        },
-        {
-          "id": "sj-s1e4",
-          "t": "Jack, the Woolies and the Chritchellites",
-          "n": "4",
-          "note": "credited as IV"
-        },
-        {
-          "id": "sj-s1e5",
-          "t": "Jack in Space",
-          "n": "5",
-          "note": "credited as V"
-        },
-        {
-          "id": "sj-s1e6",
-          "t": "Jack and the Warrior Woman",
-          "n": "6",
-          "note": "credited as VI"
-        },
-        {
-          "id": "sj-s1e7",
-          "t": "Jack and the Three Blind Archers",
-          "n": "7",
-          "note": "credited as VII"
-        },
-        {
-          "id": "sj-s1e8",
-          "t": "Jack vs. Mad Jack",
-          "n": "8",
-          "note": "credited as VIII"
-        },
-        {
-          "id": "sj-s1e9",
-          "t": "Jack Under the Sea",
-          "n": "9",
-          "note": "credited as IX"
-        },
-        {
-          "id": "sj-s1e10",
-          "t": "Jack and the Lava Monster",
-          "n": "10",
-          "note": "credited as X"
-        },
-        {
-          "id": "sj-s1e11",
-          "t": "Jack and the Scotsman",
-          "n": "11",
-          "note": "credited as XI"
-        },
-        {
-          "id": "sj-s1e12",
-          "t": "Jack and the Gangsters",
-          "n": "12",
-          "note": "credited as XII"
-        },
-        {
-          "id": "sj-s1e13",
-          "t": "Aku's Fairy Tales",
-          "n": "13",
-          "note": "season finale · credited as XIII"
-        }
-      ],
-      "open": true,
-      "links": [
-        {
-          "label": "The episode list",
-          "url": "https://en.wikipedia.org/wiki/List_of_Samurai_Jack_episodes"
-        }
-      ],
-      "intro": "Thirteen episodes, 10 August 2001 to 3 December 2001. The first three went out as one broadcast and are three rows here, because that is how the source numbers them."
+     "id": "sj-s1e1",
+     "t": "The Beginning",
+     "n": "1",
+     "note": "series premiere · one of the three that opened the show in a single broadcast · credited as I"
     },
     {
-      "id": "s2",
-      "title": "Season 2",
-      "sub": "2002 · 13 episodes · Cartoon Network",
-      "items": [
-        {
-          "id": "sj-s2e1",
-          "t": "Jack Learns to Jump Good",
-          "n": "1",
-          "note": "credited as XIV"
-        },
-        {
-          "id": "sj-s2e2",
-          "t": "Jack Tales",
-          "n": "2",
-          "note": "credited as XV"
-        },
-        {
-          "id": "sj-s2e3",
-          "t": "Jack and the Smackback",
-          "n": "3",
-          "note": "credited as XVI"
-        },
-        {
-          "id": "sj-s2e4",
-          "t": "Jack and the Scotsman II",
-          "n": "4",
-          "note": "credited as XVII"
-        },
-        {
-          "id": "sj-s2e5",
-          "t": "Jack and the Ultra-Robots",
-          "n": "5",
-          "note": "credited as XVIII"
-        },
-        {
-          "id": "sj-s2e6",
-          "t": "Jack Remembers the Past",
-          "n": "6",
-          "note": "credited as XIX"
-        },
-        {
-          "id": "sj-s2e7",
-          "t": "Jack and the Monks",
-          "n": "7",
-          "note": "credited as XX"
-        },
-        {
-          "id": "sj-s2e8",
-          "t": "Jack and the Dragon",
-          "n": "8",
-          "note": "credited as XXI"
-        },
-        {
-          "id": "sj-s2e9",
-          "t": "Jack vs. the Five Hunters",
-          "n": "9",
-          "note": "credited as XXII"
-        },
-        {
-          "id": "sj-s2e10",
-          "t": "Jack vs. Demongo, the Soul Collector",
-          "n": "10",
-          "note": "credited as XXIII"
-        },
-        {
-          "id": "sj-s2e11",
-          "t": "Jack Is Naked",
-          "n": "11",
-          "note": "credited as XXIV"
-        },
-        {
-          "id": "sj-s2e12",
-          "t": "Jack and the Spartans",
-          "n": "12",
-          "note": "credited as XXV"
-        },
-        {
-          "id": "sj-s2e13",
-          "t": "Jack's Shoes",
-          "n": "13",
-          "note": "season finale · credited as XXVI"
-        }
-      ]
+     "id": "sj-s1e2",
+     "t": "The Samurai Called Jack",
+     "n": "2",
+     "note": "one of the three that opened the show in a single broadcast · credited as II"
     },
     {
-      "id": "s3",
-      "title": "Season 3",
-      "sub": "2002–03 · 13 episodes · Cartoon Network",
-      "items": [
-        {
-          "id": "sj-s3e1",
-          "t": "Chicken Jack",
-          "n": "1",
-          "note": "credited as XXVII"
-        },
-        {
-          "id": "sj-s3e2",
-          "t": "Jack and the Rave",
-          "n": "2",
-          "note": "credited as XXVIII"
-        },
-        {
-          "id": "sj-s3e3",
-          "t": "Couple on a Train",
-          "n": "3",
-          "note": "credited as XXIX"
-        },
-        {
-          "id": "sj-s3e4",
-          "t": "Jack and the Zombies",
-          "n": "4",
-          "note": "credited as XXX"
-        },
-        {
-          "id": "sj-s3e5",
-          "t": "Jack and the Scarab",
-          "n": "5",
-          "note": "credited as XXXI"
-        },
-        {
-          "id": "sj-s3e6",
-          "t": "Jack and the Traveling Creatures",
-          "n": "6",
-          "note": "credited as XXXII"
-        },
-        {
-          "id": "sj-s3e7",
-          "t": "Jack and the Annoying Creature",
-          "n": "7",
-          "note": "credited as XXXIII"
-        },
-        {
-          "id": "sj-s3e8",
-          "t": "Jack and the Swamp Wizard",
-          "n": "8",
-          "note": "credited as XXXIV"
-        },
-        {
-          "id": "sj-s3e9",
-          "t": "Jack and the Haunted House",
-          "n": "9",
-          "note": "credited as XXXV"
-        },
-        {
-          "id": "sj-s3e10",
-          "t": "Jack, the Monks, and the Ancient Master's Son",
-          "n": "10",
-          "note": "credited as XXXVI"
-        },
-        {
-          "id": "sj-s3e11",
-          "t": "The Birth of Evil, Part I",
-          "n": "11",
-          "note": "part 1 of 2, aired as one broadcast · credited as XXXVII"
-        },
-        {
-          "id": "sj-s3e12",
-          "t": "The Birth of Evil, Part II",
-          "n": "12",
-          "note": "part 2 of 2, aired as one broadcast · credited as XXXVIII"
-        },
-        {
-          "id": "sj-s3e13",
-          "t": "Jack and the Labyrinth",
-          "n": "13",
-          "note": "season finale · credited as XXXIX"
-        }
-      ]
+     "id": "sj-s1e3",
+     "t": "The First Fight",
+     "n": "3",
+     "note": "one of the three that opened the show in a single broadcast · credited as III"
     },
     {
-      "id": "s4",
-      "title": "Season 4",
-      "sub": "2003–04 · 13 episodes · Cartoon Network",
-      "items": [
-        {
-          "id": "sj-s4e1",
-          "t": "Jack vs. the Ninja",
-          "n": "1",
-          "note": "credited as XL"
-        },
-        {
-          "id": "sj-s4e2",
-          "t": "Robo-Samurai vs. Mondo-bot",
-          "n": "2",
-          "note": "credited as XLI"
-        },
-        {
-          "id": "sj-s4e3",
-          "t": "Samurai vs. Samurai",
-          "n": "3",
-          "note": "credited as XLII"
-        },
-        {
-          "id": "sj-s4e4",
-          "t": "The Aku Infection",
-          "n": "4",
-          "note": "credited as XLIII"
-        },
-        {
-          "id": "sj-s4e5",
-          "t": "The Princess and the Bounty Hunters",
-          "n": "5",
-          "note": "credited as XLIV"
-        },
-        {
-          "id": "sj-s4e6",
-          "t": "The Scotsman Saves Jack, Part I",
-          "n": "6",
-          "note": "part 1 of 2, aired as one broadcast · credited as XLV"
-        },
-        {
-          "id": "sj-s4e7",
-          "t": "The Scotsman Saves Jack, Part II",
-          "n": "7",
-          "note": "part 2 of 2, aired as one broadcast · credited as XLVI"
-        },
-        {
-          "id": "sj-s4e8",
-          "t": "Jack and the Flying Prince and Princess",
-          "n": "8",
-          "note": "credited as XLVII"
-        },
-        {
-          "id": "sj-s4e9",
-          "t": "Jack vs. Aku",
-          "n": "9",
-          "note": "credited as XLVIII"
-        },
-        {
-          "id": "sj-s4e10",
-          "t": "The Four Seasons of Death",
-          "n": "10",
-          "note": "one of the final four, aired together in one Toonami presentation · credited as XLIX"
-        },
-        {
-          "id": "sj-s4e11",
-          "t": "Tale of X-49",
-          "n": "11",
-          "note": "one of the final four, aired together in one Toonami presentation · credited as L"
-        },
-        {
-          "id": "sj-s4e12",
-          "t": "Young Jack in Africa",
-          "n": "12",
-          "note": "one of the final four, aired together in one Toonami presentation · credited as LI"
-        },
-        {
-          "id": "sj-s4e13",
-          "t": "Jack and the Baby",
-          "n": "13",
-          "note": "season finale · one of the final four, aired together in one Toonami presentation · credited as LII"
-        }
-      ]
+     "id": "sj-s1e4",
+     "t": "Jack, the Woolies and the Chritchellites",
+     "n": "4",
+     "note": "credited as IV"
     },
     {
-      "id": "s5",
-      "title": "Season 5",
-      "sub": "2017 · 10 episodes · Adult Swim (Toonami)",
-      "items": [
-        {
-          "id": "sj-s5e1",
-          "t": "XCII",
-          "n": "1",
-          "note": "first episode after the thirteen-year gap"
-        },
-        {
-          "id": "sj-s5e2",
-          "t": "XCIII",
-          "n": "2"
-        },
-        {
-          "id": "sj-s5e3",
-          "t": "XCIV",
-          "n": "3"
-        },
-        {
-          "id": "sj-s5e4",
-          "t": "XCV",
-          "n": "4"
-        },
-        {
-          "id": "sj-s5e5",
-          "t": "XCVI",
-          "n": "5"
-        },
-        {
-          "id": "sj-s5e6",
-          "t": "XCVII",
-          "n": "6"
-        },
-        {
-          "id": "sj-s5e7",
-          "t": "XCVIII",
-          "n": "7"
-        },
-        {
-          "id": "sj-s5e8",
-          "t": "XCIX",
-          "n": "8"
-        },
-        {
-          "id": "sj-s5e9",
-          "t": "C",
-          "n": "9"
-        },
-        {
-          "id": "sj-s5e10",
-          "t": "CI",
-          "n": "10",
-          "note": "series finale"
-        }
-      ],
-      "intro": "Thirteen years later and on a different network: ten episodes on Adult Swim's Toonami block, 11 March 2017 to 20 May 2017. The source files them as the fifth season of the same series, and their credited numerals jump to XCII to match the gap.",
-      "links": [
-        {
-          "label": "The 2017 season",
-          "url": "https://en.wikipedia.org/wiki/Samurai_Jack_season_5"
-        }
-      ]
+     "id": "sj-s1e5",
+     "t": "Jack in Space",
+     "n": "5",
+     "note": "credited as V"
+    },
+    {
+     "id": "sj-s1e6",
+     "t": "Jack and the Warrior Woman",
+     "n": "6",
+     "note": "credited as VI"
+    },
+    {
+     "id": "sj-s1e7",
+     "t": "Jack and the Three Blind Archers",
+     "n": "7",
+     "note": "credited as VII"
+    },
+    {
+     "id": "sj-s1e8",
+     "t": "Jack vs. Mad Jack",
+     "n": "8",
+     "note": "credited as VIII"
+    },
+    {
+     "id": "sj-s1e9",
+     "t": "Jack Under the Sea",
+     "n": "9",
+     "note": "credited as IX"
+    },
+    {
+     "id": "sj-s1e10",
+     "t": "Jack and the Lava Monster",
+     "n": "10",
+     "note": "credited as X"
+    },
+    {
+     "id": "sj-s1e11",
+     "t": "Jack and the Scotsman",
+     "n": "11",
+     "note": "credited as XI"
+    },
+    {
+     "id": "sj-s1e12",
+     "t": "Jack and the Gangsters",
+     "n": "12",
+     "note": "credited as XII"
+    },
+    {
+     "id": "sj-s1e13",
+     "t": "Aku's Fairy Tales",
+     "n": "13",
+     "note": "season finale · credited as XIII"
     }
-  ]
+   ],
+   "open": true,
+   "links": [
+    {
+     "label": "The episode list",
+     "url": "https://en.wikipedia.org/wiki/List_of_Samurai_Jack_episodes"
+    }
+   ],
+   "intro": "Thirteen episodes, 10 August 2001 to 3 December 2001. The first three went out as one broadcast and are three rows here, because that is how the source numbers them."
+  },
+  {
+   "id": "s2",
+   "title": "Season 2",
+   "sub": "2002 · 13 episodes · Cartoon Network",
+   "items": [
+    {
+     "id": "sj-s2e1",
+     "t": "Jack Learns to Jump Good",
+     "n": "1",
+     "note": "credited as XIV"
+    },
+    {
+     "id": "sj-s2e2",
+     "t": "Jack Tales",
+     "n": "2",
+     "note": "credited as XV"
+    },
+    {
+     "id": "sj-s2e3",
+     "t": "Jack and the Smackback",
+     "n": "3",
+     "note": "credited as XVI"
+    },
+    {
+     "id": "sj-s2e4",
+     "t": "Jack and the Scotsman II",
+     "n": "4",
+     "note": "credited as XVII"
+    },
+    {
+     "id": "sj-s2e5",
+     "t": "Jack and the Ultra-Robots",
+     "n": "5",
+     "note": "credited as XVIII"
+    },
+    {
+     "id": "sj-s2e6",
+     "t": "Jack Remembers the Past",
+     "n": "6",
+     "note": "credited as XIX"
+    },
+    {
+     "id": "sj-s2e7",
+     "t": "Jack and the Monks",
+     "n": "7",
+     "note": "credited as XX"
+    },
+    {
+     "id": "sj-s2e8",
+     "t": "Jack and the Dragon",
+     "n": "8",
+     "note": "credited as XXI"
+    },
+    {
+     "id": "sj-s2e9",
+     "t": "Jack vs. the Five Hunters",
+     "n": "9",
+     "note": "credited as XXII"
+    },
+    {
+     "id": "sj-s2e10",
+     "t": "Jack vs. Demongo, the Soul Collector",
+     "n": "10",
+     "note": "credited as XXIII"
+    },
+    {
+     "id": "sj-s2e11",
+     "t": "Jack Is Naked",
+     "n": "11",
+     "note": "credited as XXIV"
+    },
+    {
+     "id": "sj-s2e12",
+     "t": "Jack and the Spartans",
+     "n": "12",
+     "note": "credited as XXV"
+    },
+    {
+     "id": "sj-s2e13",
+     "t": "Jack's Shoes",
+     "n": "13",
+     "note": "season finale · credited as XXVI"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Season 3",
+   "sub": "2002–03 · 13 episodes · Cartoon Network",
+   "items": [
+    {
+     "id": "sj-s3e1",
+     "t": "Chicken Jack",
+     "n": "1",
+     "note": "credited as XXVII"
+    },
+    {
+     "id": "sj-s3e2",
+     "t": "Jack and the Rave",
+     "n": "2",
+     "note": "credited as XXVIII"
+    },
+    {
+     "id": "sj-s3e3",
+     "t": "Couple on a Train",
+     "n": "3",
+     "note": "credited as XXIX"
+    },
+    {
+     "id": "sj-s3e4",
+     "t": "Jack and the Zombies",
+     "n": "4",
+     "note": "credited as XXX"
+    },
+    {
+     "id": "sj-s3e5",
+     "t": "Jack and the Scarab",
+     "n": "5",
+     "note": "credited as XXXI"
+    },
+    {
+     "id": "sj-s3e6",
+     "t": "Jack and the Traveling Creatures",
+     "n": "6",
+     "note": "credited as XXXII"
+    },
+    {
+     "id": "sj-s3e7",
+     "t": "Jack and the Annoying Creature",
+     "n": "7",
+     "note": "credited as XXXIII"
+    },
+    {
+     "id": "sj-s3e8",
+     "t": "Jack and the Swamp Wizard",
+     "n": "8",
+     "note": "credited as XXXIV"
+    },
+    {
+     "id": "sj-s3e9",
+     "t": "Jack and the Haunted House",
+     "n": "9",
+     "note": "credited as XXXV"
+    },
+    {
+     "id": "sj-s3e10",
+     "t": "Jack, the Monks, and the Ancient Master's Son",
+     "n": "10",
+     "note": "credited as XXXVI"
+    },
+    {
+     "id": "sj-s3e11",
+     "t": "The Birth of Evil, Part I",
+     "n": "11",
+     "note": "part 1 of 2, aired as one broadcast · credited as XXXVII"
+    },
+    {
+     "id": "sj-s3e12",
+     "t": "The Birth of Evil, Part II",
+     "n": "12",
+     "note": "part 2 of 2, aired as one broadcast · credited as XXXVIII"
+    },
+    {
+     "id": "sj-s3e13",
+     "t": "Jack and the Labyrinth",
+     "n": "13",
+     "note": "season finale · credited as XXXIX"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Season 4",
+   "sub": "2003–04 · 13 episodes · Cartoon Network",
+   "items": [
+    {
+     "id": "sj-s4e1",
+     "t": "Jack vs. the Ninja",
+     "n": "1",
+     "note": "credited as XL"
+    },
+    {
+     "id": "sj-s4e2",
+     "t": "Robo-Samurai vs. Mondo-bot",
+     "n": "2",
+     "note": "credited as XLI"
+    },
+    {
+     "id": "sj-s4e3",
+     "t": "Samurai vs. Samurai",
+     "n": "3",
+     "note": "credited as XLII"
+    },
+    {
+     "id": "sj-s4e4",
+     "t": "The Aku Infection",
+     "n": "4",
+     "note": "credited as XLIII"
+    },
+    {
+     "id": "sj-s4e5",
+     "t": "The Princess and the Bounty Hunters",
+     "n": "5",
+     "note": "credited as XLIV"
+    },
+    {
+     "id": "sj-s4e6",
+     "t": "The Scotsman Saves Jack, Part I",
+     "n": "6",
+     "note": "part 1 of 2, aired as one broadcast · credited as XLV"
+    },
+    {
+     "id": "sj-s4e7",
+     "t": "The Scotsman Saves Jack, Part II",
+     "n": "7",
+     "note": "part 2 of 2, aired as one broadcast · credited as XLVI"
+    },
+    {
+     "id": "sj-s4e8",
+     "t": "Jack and the Flying Prince and Princess",
+     "n": "8",
+     "note": "credited as XLVII"
+    },
+    {
+     "id": "sj-s4e9",
+     "t": "Jack vs. Aku",
+     "n": "9",
+     "note": "credited as XLVIII"
+    },
+    {
+     "id": "sj-s4e10",
+     "t": "The Four Seasons of Death",
+     "n": "10",
+     "note": "one of the final four, aired together in one Toonami presentation · credited as XLIX"
+    },
+    {
+     "id": "sj-s4e11",
+     "t": "Tale of X-49",
+     "n": "11",
+     "note": "one of the final four, aired together in one Toonami presentation · credited as L"
+    },
+    {
+     "id": "sj-s4e12",
+     "t": "Young Jack in Africa",
+     "n": "12",
+     "note": "one of the final four, aired together in one Toonami presentation · credited as LI"
+    },
+    {
+     "id": "sj-s4e13",
+     "t": "Jack and the Baby",
+     "n": "13",
+     "note": "season finale · one of the final four, aired together in one Toonami presentation · credited as LII"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Season 5",
+   "sub": "2017 · 10 episodes · Adult Swim (Toonami)",
+   "items": [
+    {
+     "id": "sj-s5e1",
+     "t": "XCII",
+     "n": "1",
+     "note": "first episode after the thirteen-year gap"
+    },
+    {
+     "id": "sj-s5e2",
+     "t": "XCIII",
+     "n": "2"
+    },
+    {
+     "id": "sj-s5e3",
+     "t": "XCIV",
+     "n": "3"
+    },
+    {
+     "id": "sj-s5e4",
+     "t": "XCV",
+     "n": "4"
+    },
+    {
+     "id": "sj-s5e5",
+     "t": "XCVI",
+     "n": "5"
+    },
+    {
+     "id": "sj-s5e6",
+     "t": "XCVII",
+     "n": "6"
+    },
+    {
+     "id": "sj-s5e7",
+     "t": "XCVIII",
+     "n": "7"
+    },
+    {
+     "id": "sj-s5e8",
+     "t": "XCIX",
+     "n": "8"
+    },
+    {
+     "id": "sj-s5e9",
+     "t": "C",
+     "n": "9"
+    },
+    {
+     "id": "sj-s5e10",
+     "t": "CI",
+     "n": "10"
+    }
+   ],
+   "intro": "Thirteen years later and on a different network: ten episodes on Adult Swim's Toonami block, 11 March 2017 to 20 May 2017. The source files them as the fifth season of the same series, and their credited numerals jump to XCII to match the gap.",
+   "links": [
+    {
+     "label": "The 2017 season",
+     "url": "https://en.wikipedia.org/wiki/Samurai_Jack_season_5"
+    }
+   ]
+  }
+ ]
 }

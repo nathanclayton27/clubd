@@ -1,1153 +1,1152 @@
 {
-  "slug": "sailor-moon",
-  "title": "Sailor Moon",
-  "subtitle": "the 1990s anime, with the films and specials where they went out",
-  "kind": "anime & films",
-  "popularity": 80,
-  "year": "1992–1997",
-  "blurb": "All 200 episodes of the original run — five seasons and five years — with the three films, the two theatrical shorts and the three specials each sitting on the date it went out.",
-  "unit": {
-    "one": "entry",
-    "many": "entries"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#A81E5E",
-  "accentDark": "#F79FD4",
-  "tiers": false,
-  "notes": [
-    [
-      "Sailor Moon Crystal is a different adaptation, and it is not on this list.",
-      "Crystal (2014– ) is not more of this series; it is a second anime made from the same manga. Its own article says it \"serves as a reboot by faithfully adapting the original manga by omitting much of the original materials from the first anime series\", and this series' article says the same thing from the other side: \"A new animated adaptation, Sailor Moon Crystal, which is a reboot series that more closely follows the manga, began airing worldwide in July 2014.\" The source keeps them structurally apart as well — the episode list this page is built from opens by sending anyone after \"the 2014 web series episode list\" to a separate list of its own. So Crystal, and its films Sailor Moon Eternal and Sailor Moon Cosmos, belong on a page of their own rather than in sections here, where they would tell these same arcs a second time. This is the same call the catalogue already makes for Fullmetal Alchemist, which has two lists for two adaptations of one manga."
-    ],
-    [
-      "The films and specials sit on the dates they went out.",
-      "All eight of them opened or aired while a season was still on the air, so none of them gets a section of its own. Working from the release dates the source gives: Sailor Moon R: The Movie and Make Up! Sailor Senshi between episodes 30 and 31 of R; Sailor Moon S: The Movie between episodes 27 and 28 of S; the three television specials between episodes 4 and 5 of SuperS; Sailor Moon SuperS: The Movie and Ami's First Love on the day episode 31 of SuperS aired. The specials in particular are where the source puts them — it says they went out \"in lieu of a regular episode near the beginning of the SuperS season\", and the gap in that season's airdates is exactly where they land. Each film's row gives its runtime. A short and the feature it screened with were one cinema programme, so those two rows sit side by side; which of the pair you start with is not something the source settles."
-    ],
-    [
-      "The numbers are the Japanese numbers.",
-      "The 1990s English dub cut six episodes and ran two more as one, which lost seven numbers out of the first 89 — the source puts it as \"DIC had mandated cuts to content and length, which reduced the first 89 episodes by seven\", and records the effect per episode in the tables themselves. From the third season the Canadian broadcaster renumbered to match the Japanese run, so dub numbers 83 to 89 were never used there, while the same episodes on Cartoon Network in the United States did use them and did not line up. None of that is a running order this list can rebuild, and the source does not give one, so every row here is numbered the Japanese way and the eight affected rows carry a note saying what the dub did to them."
-    ],
-    [
-      "Titles are the ones the source's table gives.",
-      "That column is headed \"DiC title\" for the first two seasons and \"Cloverway title\" for the next two, with a translation of the Japanese title where an episode never got an English one. The fifth season has no English column at all, because the 1990s dub stopped after four — \"The first four seasons were originally dubbed in English and released in North America by DIC Entertainment and Cloverway\" — so those 34 titles are translations throughout. The mix is the source's, not an editorial choice made here."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked on this list.",
-      "Five places were checked for a per-episode running time. Not one of the 200 episode entries carries a runtime field; none of the five season articles has one; the series article has none; no episode has an article of its own, and none of the 200 title cells is even a link; and of the 135 Wikidata items that declare themselves part of this series, exactly ten carry a duration — and those ten read 24 or 25 minutes. Ten out of two hundred cannot weight a list. The three films do publish runtimes, and weighting only them would be worse than weighting nothing: an unweighted row counts as a full hour, so two hundred episodes that the handful of measured durations put at 24 or 25 minutes would read as two hundred hours. Every row counts one, and the films give their lengths in the row note instead."
-    ],
-    [
-      "What else is not here.",
-      "The source article for this list opens by naming everything it is not about, and that list is the exclusion list: Sailor Moon (the 1994 television pilot), Pretty Guardian Sailor Moon (the 2003 television series) and Sailor Moon Crystal (the 2014 web and television series). Each is a separate production rather than a part of this run, and Crystal has a note of its own above. Naoko Takeuchi's manga is the work all of them adapt, and it is not tracked here either."
-    ],
-    "Titles, numbering, airdates and the English dub's own numbering column machine-read from Wikipedia's five Sailor Moon season articles, the episode list, the series article and the three film articles, with runtimes and film identity from Wikidata; every season's count is checked against both the list article's series overview and the season article's infobox, and the overall numbering asserted contiguous 1 to 200, before this builds."
+ "slug": "sailor-moon",
+ "title": "Sailor Moon",
+ "subtitle": "the 1990s anime, with the films and specials where they went out",
+ "kind": "anime & films",
+ "popularity": 80,
+ "year": "1992–1997",
+ "blurb": "All 200 episodes of the original run — five seasons and five years — with the three films, the two theatrical shorts and the three specials each sitting on the date it went out.",
+ "unit": {
+  "one": "entry",
+  "many": "entries"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#A81E5E",
+ "accentDark": "#F79FD4",
+ "tiers": false,
+ "notes": [
+  [
+   "Sailor Moon Crystal is a different adaptation, and it is not on this list.",
+   "Crystal (2014– ) is not more of this series; it is a second anime made from the same manga. Its own article says it \"serves as a reboot by faithfully adapting the original manga by omitting much of the original materials from the first anime series\", and this series' article says the same thing from the other side: \"A new animated adaptation, Sailor Moon Crystal, which is a reboot series that more closely follows the manga, began airing worldwide in July 2014.\" The source keeps them structurally apart as well — the episode list this page is built from opens by sending anyone after \"the 2014 web series episode list\" to a separate list of its own. So Crystal, and its films Sailor Moon Eternal and Sailor Moon Cosmos, belong on a page of their own rather than in sections here, where they would tell these same arcs a second time. This is the same call the catalogue already makes for Fullmetal Alchemist, which has two lists for two adaptations of one manga."
   ],
-  "sections": [
+  [
+   "The films and specials sit on the dates they went out.",
+   "All eight of them opened or aired while a season was still on the air, so none of them gets a section of its own. Working from the release dates the source gives: Sailor Moon R: The Movie and Make Up! Sailor Senshi between episodes 30 and 31 of R; Sailor Moon S: The Movie between episodes 27 and 28 of S; the three television specials between episodes 4 and 5 of SuperS; Sailor Moon SuperS: The Movie and Ami's First Love on the day episode 31 of SuperS aired. The specials in particular are where the source puts them — it says they went out \"in lieu of a regular episode near the beginning of the SuperS season\", and the gap in that season's airdates is exactly where they land. Each film's row gives its runtime. A short and the feature it screened with were one cinema programme, so those two rows sit side by side; which of the pair you start with is not something the source settles."
+  ],
+  [
+   "The numbers are the Japanese numbers.",
+   "The 1990s English dub cut six episodes and ran two more as one, which lost seven numbers out of the first 89 — the source puts it as \"DIC had mandated cuts to content and length, which reduced the first 89 episodes by seven\", and records the effect per episode in the tables themselves. From the third season the Canadian broadcaster renumbered to match the Japanese run, so dub numbers 83 to 89 were never used there, while the same episodes on Cartoon Network in the United States did use them and did not line up. None of that is a running order this list can rebuild, and the source does not give one, so every row here is numbered the Japanese way and the eight affected rows carry a note saying what the dub did to them."
+  ],
+  [
+   "Titles are the ones the source's table gives.",
+   "That column is headed \"DiC title\" for the first two seasons and \"Cloverway title\" for the next two, with a translation of the Japanese title where an episode never got an English one. The fifth season has no English column at all, because the 1990s dub stopped after four — \"The first four seasons were originally dubbed in English and released in North America by DIC Entertainment and Cloverway\" — so those 34 titles are translations throughout. The mix is the source's, not an editorial choice made here."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked on this list.",
+   "Five places were checked for a per-episode running time. Not one of the 200 episode entries carries a runtime field; none of the five season articles has one; the series article has none; no episode has an article of its own, and none of the 200 title cells is even a link; and of the 135 Wikidata items that declare themselves part of this series, exactly ten carry a duration — and those ten read 24 or 25 minutes. Ten out of two hundred cannot weight a list. The three films do publish runtimes, and weighting only them would be worse than weighting nothing: an unweighted row counts as a full hour, so two hundred episodes that the handful of measured durations put at 24 or 25 minutes would read as two hundred hours. Every row counts one, and the films give their lengths in the row note instead."
+  ],
+  [
+   "What else is not here.",
+   "The source article for this list opens by naming everything it is not about, and that list is the exclusion list: Sailor Moon (the 1994 television pilot), Pretty Guardian Sailor Moon (the 2003 television series) and Sailor Moon Crystal (the 2014 web and television series). Each is a separate production rather than a part of this run, and Crystal has a note of its own above. Naoko Takeuchi's manga is the work all of them adapt, and it is not tracked here either."
+  ],
+  "Titles, numbering, airdates and the English dub's own numbering column machine-read from Wikipedia's five Sailor Moon season articles, the episode list, the series article and the three film articles, with runtimes and film identity from Wikidata; every season's count is checked against both the list article's series overview and the season article's infobox, and the overall numbering asserted contiguous 1 to 200, before this builds."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1",
+   "sub": "1992–93 · 46 episodes",
+   "intro": "Where it starts. Forty-six episodes adapting the first thirteen chapters of Naoko Takeuchi's manga.",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1",
-      "sub": "1992–93 · 46 episodes",
-      "intro": "Where it starts. Forty-six episodes adapting the first thirteen chapters of Naoko Takeuchi's manga.",
-      "items": [
-        {
-          "id": "sm-1",
-          "t": "A Moon Star is Born",
-          "n": "1",
-          "note": "Series premiere"
-        },
-        {
-          "id": "sm-2",
-          "t": "Punishment Awaits! The House of Fortune is the Monster Mansion",
-          "n": "2",
-          "note": "Never dubbed into English at the time"
-        },
-        {
-          "id": "sm-3",
-          "t": "Talk Radio",
-          "n": "3"
-        },
-        {
-          "id": "sm-4",
-          "t": "Slim City",
-          "n": "4"
-        },
-        {
-          "id": "sm-5",
-          "t": "Scent of a Monster! Chanela Will Steal Your Love",
-          "n": "5",
-          "note": "Never dubbed into English at the time"
-        },
-        {
-          "id": "sm-6",
-          "t": "Protect the Melody of Love: Usagi Plays Cupid",
-          "n": "6",
-          "note": "Never dubbed into English at the time"
-        },
-        {
-          "id": "sm-7",
-          "t": "So You Want to Be a Superstar",
-          "n": "7"
-        },
-        {
-          "id": "sm-8",
-          "t": "Computer School Blues",
-          "n": "8"
-        },
-        {
-          "id": "sm-9",
-          "t": "Time Bomb",
-          "n": "9"
-        },
-        {
-          "id": "sm-10",
-          "t": "An Uncharmed Life",
-          "n": "10"
-        },
-        {
-          "id": "sm-11",
-          "t": "Nightmare in Dreamland",
-          "n": "11"
-        },
-        {
-          "id": "sm-12",
-          "t": "Cruise Blues",
-          "n": "12"
-        },
-        {
-          "id": "sm-13",
-          "t": "Fight to the Finish",
-          "n": "13"
-        },
-        {
-          "id": "sm-14",
-          "t": "Match Point for Sailor Moon",
-          "n": "14"
-        },
-        {
-          "id": "sm-15",
-          "t": "An Unnatural Phenomena",
-          "n": "15"
-        },
-        {
-          "id": "sm-16",
-          "t": "Wedding Day Blues",
-          "n": "16"
-        },
-        {
-          "id": "sm-17",
-          "t": "Shutter Bugged",
-          "n": "17"
-        },
-        {
-          "id": "sm-18",
-          "t": "Dangerous Dollies",
-          "n": "18"
-        },
-        {
-          "id": "sm-19",
-          "t": "Who is That Masked Man?",
-          "n": "19"
-        },
-        {
-          "id": "sm-20",
-          "t": "The Summer, the Beach, Youth and Ghosts",
-          "n": "20",
-          "note": "Never dubbed into English at the time"
-        },
-        {
-          "id": "sm-21",
-          "t": "An Animated Mess",
-          "n": "21"
-        },
-        {
-          "id": "sm-22",
-          "t": "Worth a Princess' Ransom",
-          "n": "22"
-        },
-        {
-          "id": "sm-23",
-          "t": "Molly's Folly",
-          "n": "23"
-        },
-        {
-          "id": "sm-24",
-          "t": "A Friend in Wolf's Clothing",
-          "n": "24"
-        },
-        {
-          "id": "sm-25",
-          "t": "Jupiter Comes Thundering In",
-          "n": "25"
-        },
-        {
-          "id": "sm-26",
-          "t": "The Power of Friendship",
-          "n": "26"
-        },
-        {
-          "id": "sm-27",
-          "t": "Mercury's Mental Match",
-          "n": "27"
-        },
-        {
-          "id": "sm-28",
-          "t": "An Artful Attack",
-          "n": "28"
-        },
-        {
-          "id": "sm-29",
-          "t": "Too Many Girlfriends",
-          "n": "29"
-        },
-        {
-          "id": "sm-30",
-          "t": "Grandpa's Follies",
-          "n": "30"
-        },
-        {
-          "id": "sm-31",
-          "t": "Kitty Chaos",
-          "n": "31"
-        },
-        {
-          "id": "sm-32",
-          "t": "Tuxedo Melvin",
-          "n": "32"
-        },
-        {
-          "id": "sm-33",
-          "t": "Sailor Venus Makes the Scene",
-          "n": "33"
-        },
-        {
-          "id": "sm-34",
-          "t": "A Crystal Clear Destiny",
-          "n": "34"
-        },
-        {
-          "id": "sm-35",
-          "t": "A Reluctant Princess",
-          "n": "35"
-        },
-        {
-          "id": "sm-36",
-          "t": "Bad Hair Day",
-          "n": "36"
-        },
-        {
-          "id": "sm-37",
-          "t": "Little Miss Manners",
-          "n": "37"
-        },
-        {
-          "id": "sm-38",
-          "t": "Ski Bunny Blues",
-          "n": "38"
-        },
-        {
-          "id": "sm-39",
-          "t": "The Ice Princess",
-          "n": "39"
-        },
-        {
-          "id": "sm-40",
-          "t": "The Last Resort",
-          "n": "40"
-        },
-        {
-          "id": "sm-41",
-          "t": "Tuxedo Unmask",
-          "n": "41"
-        },
-        {
-          "id": "sm-42",
-          "t": "Sailor Venus' Past: Minako's Tragic Love",
-          "n": "42",
-          "note": "Never dubbed into English at the time"
-        },
-        {
-          "id": "sm-43",
-          "t": "Fractious Friends",
-          "n": "43"
-        },
-        {
-          "id": "sm-44",
-          "t": "The Past Returns",
-          "n": "44"
-        },
-        {
-          "id": "sm-45",
-          "t": "The Day of Destiny",
-          "n": "45",
-          "note": "The original English dub ran this and episode 46 as a single episode"
-        },
-        {
-          "id": "sm-46",
-          "t": "Brand New Life",
-          "n": "46",
-          "note": "The original English dub ran this and episode 45 as a single episode"
-        }
-      ],
-      "open": true
+     "id": "sm-1",
+     "t": "A Moon Star is Born",
+     "n": "1",
+     "note": "Series premiere"
     },
     {
-      "id": "s2",
-      "title": "Season 2: R",
-      "sub": "1993–94 · 43 episodes, one film and one short",
-      "intro": "Two story arcs: the self-contained Makai Tree arc, which the manga does not have, and then the Black Moon Clan arc, adapting the fourth through seventh volumes. The first film opened in cinemas partway through the run and sits where it opened.",
-      "items": [
-        {
-          "id": "sm-47",
-          "t": "The Return of Sailor Moon",
-          "n": "1"
-        },
-        {
-          "id": "sm-48",
-          "t": "So You Want to Be in Pictures",
-          "n": "2"
-        },
-        {
-          "id": "sm-49",
-          "t": "A Knight to Remember",
-          "n": "3"
-        },
-        {
-          "id": "sm-50",
-          "t": "VR Madness",
-          "n": "4"
-        },
-        {
-          "id": "sm-51",
-          "t": "Cherry Blossom Time",
-          "n": "5"
-        },
-        {
-          "id": "sm-52",
-          "t": "Kindergarten Chaos",
-          "n": "6"
-        },
-        {
-          "id": "sm-53",
-          "t": "Much Ado About Babysitting",
-          "n": "7"
-        },
-        {
-          "id": "sm-54",
-          "t": "Raye's Day in the Spotlight",
-          "n": "8"
-        },
-        {
-          "id": "sm-55",
-          "t": "Food Fetish",
-          "n": "9"
-        },
-        {
-          "id": "sm-56",
-          "t": "Mirror, Mirror on the Wall",
-          "n": "10"
-        },
-        {
-          "id": "sm-57",
-          "t": "Detention Doldrums",
-          "n": "11"
-        },
-        {
-          "id": "sm-58",
-          "t": "Secret Garden (Part 1 of 2)",
-          "n": "12"
-        },
-        {
-          "id": "sm-59",
-          "t": "Treed (Part 2 of 2)",
-          "n": "13"
-        },
-        {
-          "id": "sm-60",
-          "t": "Serena Times Two",
-          "n": "14"
-        },
-        {
-          "id": "sm-61",
-          "t": "The Cosmetic Caper",
-          "n": "15"
-        },
-        {
-          "id": "sm-62",
-          "t": "Sailor Mercury Moving On?",
-          "n": "16"
-        },
-        {
-          "id": "sm-63",
-          "t": "Gramps in a Pickle",
-          "n": "17"
-        },
-        {
-          "id": "sm-64",
-          "t": "Trouble Comes Thundering Down",
-          "n": "18"
-        },
-        {
-          "id": "sm-65",
-          "t": "A Charmed Life",
-          "n": "19"
-        },
-        {
-          "id": "sm-66",
-          "t": "A Curried Favor",
-          "n": "20"
-        },
-        {
-          "id": "sm-67",
-          "t": "The Beach, the Island and a Vacation: The Guardians' Break",
-          "n": "21",
-          "note": "Never dubbed into English at the time"
-        },
-        {
-          "id": "sm-68",
-          "t": "Naughty 'N' Nice",
-          "n": "22"
-        },
-        {
-          "id": "sm-69",
-          "t": "Prediction of Doom",
-          "n": "23"
-        },
-        {
-          "id": "sm-70",
-          "t": "Enemies No More",
-          "n": "24"
-        },
-        {
-          "id": "sm-71",
-          "t": "Checkmate",
-          "n": "25"
-        },
-        {
-          "id": "sm-72",
-          "t": "Sibling Rivalry",
-          "n": "26"
-        },
-        {
-          "id": "sm-73",
-          "t": "Rubeus Evens the Score (Part 1 of 2)",
-          "n": "27"
-        },
-        {
-          "id": "sm-74",
-          "t": "Rubeus Strikes Back (Part 2 of 2)",
-          "n": "28"
-        },
-        {
-          "id": "sm-75",
-          "t": "The Secret of the Luna Sphere",
-          "n": "29"
-        },
-        {
-          "id": "sm-76",
-          "t": "Emerald Takes Over",
-          "n": "30"
-        },
-        {
-          "id": "sm-film-sailor-moon-r",
-          "t": "Sailor Moon R: The Movie",
-          "n": "1993",
-          "q": "Q636444",
-          "note": "Feature film · 61 minutes · released December 5, 1993"
-        },
-        {
-          "id": "sm-short-make-up-sailor-senshi",
-          "t": "Make Up! Sailor Senshi",
-          "n": "1993",
-          "note": "Theatrical short · screened with Sailor Moon R: The Movie"
-        },
-        {
-          "id": "sm-77",
-          "t": "Promises Fulfilled",
-          "n": "31"
-        },
-        {
-          "id": "sm-78",
-          "t": "No Thanks, Nurse Venus!",
-          "n": "32"
-        },
-        {
-          "id": "sm-79",
-          "t": "Dog Day for Artemis",
-          "n": "33"
-        },
-        {
-          "id": "sm-80",
-          "t": "Smart Payoff",
-          "n": "34"
-        },
-        {
-          "id": "sm-81",
-          "t": "Child's Play",
-          "n": "35"
-        },
-        {
-          "id": "sm-82",
-          "t": "Future Shocked",
-          "n": "36"
-        },
-        {
-          "id": "sm-83",
-          "t": "The Legend of Black Moon",
-          "n": "37"
-        },
-        {
-          "id": "sm-84",
-          "t": "Jealousy's Just Reward",
-          "n": "38"
-        },
-        {
-          "id": "sm-85",
-          "t": "The Birth of Wicked Lady",
-          "n": "39"
-        },
-        {
-          "id": "sm-86",
-          "t": "Brotherly Love",
-          "n": "40"
-        },
-        {
-          "id": "sm-87",
-          "t": "Diamond in the Rough",
-          "n": "41"
-        },
-        {
-          "id": "sm-88",
-          "t": "The Final Battle",
-          "n": "42"
-        },
-        {
-          "id": "sm-89",
-          "t": "Follow the Leader",
-          "n": "43"
-        }
-      ]
+     "id": "sm-2",
+     "t": "Punishment Awaits! The House of Fortune is the Monster Mansion",
+     "n": "2",
+     "note": "Never dubbed into English at the time"
     },
     {
-      "id": "s3",
-      "title": "Season 3: S",
-      "sub": "1994–95 · 38 episodes and one film",
-      "intro": "Adapts the manga's Infinity arc. The second film opened in the middle of the season.",
-      "items": [
-        {
-          "id": "sm-90",
-          "t": "Star Struck, Bad Luck",
-          "n": "1"
-        },
-        {
-          "id": "sm-91",
-          "t": "Crystal Clear Again",
-          "n": "2"
-        },
-        {
-          "id": "sm-92",
-          "t": "Driving Dangerously",
-          "n": "3"
-        },
-        {
-          "id": "sm-93",
-          "t": "Bad Harmony",
-          "n": "4"
-        },
-        {
-          "id": "sm-94",
-          "t": "Swept Off Her Feet",
-          "n": "5"
-        },
-        {
-          "id": "sm-95",
-          "t": "Blinded By Love's Light",
-          "n": "6"
-        },
-        {
-          "id": "sm-96",
-          "t": "Lita Borrows Trouble",
-          "n": "7"
-        },
-        {
-          "id": "sm-97",
-          "t": "Damp Spirits",
-          "n": "8"
-        },
-        {
-          "id": "sm-98",
-          "t": "Friendly Foes",
-          "n": "9"
-        },
-        {
-          "id": "sm-99",
-          "t": "Mixed Emotions",
-          "n": "10"
-        },
-        {
-          "id": "sm-100",
-          "t": "Individual Happiness",
-          "n": "11"
-        },
-        {
-          "id": "sm-101",
-          "t": "Birthday Blues, Part 1",
-          "n": "12"
-        },
-        {
-          "id": "sm-102",
-          "t": "Birthday Blues, Part 2",
-          "n": "13"
-        },
-        {
-          "id": "sm-103",
-          "t": "Hello, Sailor Mini Moon",
-          "n": "14"
-        },
-        {
-          "id": "sm-104",
-          "t": "Tainted Tea Party",
-          "n": "15"
-        },
-        {
-          "id": "sm-105",
-          "t": "People Who Need People",
-          "n": "16"
-        },
-        {
-          "id": "sm-106",
-          "t": "Related By Destiny",
-          "n": "17"
-        },
-        {
-          "id": "sm-107",
-          "t": "Art Appreciation",
-          "n": "18"
-        },
-        {
-          "id": "sm-108",
-          "t": "Everything's Coming Up Rosey",
-          "n": "19"
-        },
-        {
-          "id": "sm-109",
-          "t": "No Turning Back",
-          "n": "20"
-        },
-        {
-          "id": "sm-110",
-          "t": "Destiny's Arrival",
-          "n": "21"
-        },
-        {
-          "id": "sm-111",
-          "t": "The Purity Chalice",
-          "n": "22"
-        },
-        {
-          "id": "sm-112",
-          "t": "Show Stoppers",
-          "n": "23"
-        },
-        {
-          "id": "sm-113",
-          "t": "Rini's Risky Friendship",
-          "n": "24"
-        },
-        {
-          "id": "sm-114",
-          "t": "Mimet's Mess",
-          "n": "25"
-        },
-        {
-          "id": "sm-115",
-          "t": "The Shadow of Silence",
-          "n": "26"
-        },
-        {
-          "id": "sm-116",
-          "t": "Thorny Weather",
-          "n": "27"
-        },
-        {
-          "id": "sm-film-sailor-moon-s",
-          "t": "Sailor Moon S: The Movie",
-          "n": "1994",
-          "q": "Q1066446",
-          "note": "Feature film · 61 minutes · released December 4, 1994"
-        },
-        {
-          "id": "sm-117",
-          "t": "Heightened Hazard",
-          "n": "28"
-        },
-        {
-          "id": "sm-118",
-          "t": "It's in the Cards",
-          "n": "29"
-        },
-        {
-          "id": "sm-119",
-          "t": "Goodness Eclipsed",
-          "n": "30"
-        },
-        {
-          "id": "sm-120",
-          "t": "Next in Line",
-          "n": "31"
-        },
-        {
-          "id": "sm-121",
-          "t": "Fiendish Ferns",
-          "n": "32"
-        },
-        {
-          "id": "sm-122",
-          "t": "The Science of Love",
-          "n": "33"
-        },
-        {
-          "id": "sm-123",
-          "t": "Wake Up Call",
-          "n": "34"
-        },
-        {
-          "id": "sm-124",
-          "t": "Who's Really Who?",
-          "n": "35"
-        },
-        {
-          "id": "sm-125",
-          "t": "Darkness, My Old Friend",
-          "n": "36"
-        },
-        {
-          "id": "sm-126",
-          "t": "Second Chance",
-          "n": "37"
-        },
-        {
-          "id": "sm-127",
-          "t": "Tough Kindness",
-          "n": "38"
-        }
-      ]
+     "id": "sm-3",
+     "t": "Talk Radio",
+     "n": "3"
     },
     {
-      "id": "s4",
-      "title": "Season 4: SuperS",
-      "sub": "1995–96 · 39 episodes, one film, one short and three specials",
-      "intro": "Adapts the manga's Dream arc. Three television specials went out together in place of an episode early on, and the third film opened near the end.",
-      "items": [
-        {
-          "id": "sm-128",
-          "t": "Dreams Take Flight",
-          "n": "1"
-        },
-        {
-          "id": "sm-129",
-          "t": "No Ordinary Horsepower",
-          "n": "2"
-        },
-        {
-          "id": "sm-130",
-          "t": "Sweet Dreams",
-          "n": "3"
-        },
-        {
-          "id": "sm-131",
-          "t": "Baiting the Trap",
-          "n": "4"
-        },
-        {
-          "id": "sm-special-1",
-          "t": "An Elegant Metamorphosis? Crybaby Usagi's Growth Diary",
-          "n": "1995",
-          "note": "Television special · one of three that went out together in place of an episode"
-        },
-        {
-          "id": "sm-special-2",
-          "t": "Haruka and Michiru, Again! The Ghostly Puppet Show",
-          "n": "1995",
-          "note": "Television special · one of three that went out together in place of an episode"
-        },
-        {
-          "id": "sm-special-3",
-          "t": "Chibiusa's Adventure! The Dreaded Vampire Castle",
-          "n": "1995",
-          "note": "Television special · one of three that went out together in place of an episode"
-        },
-        {
-          "id": "sm-132",
-          "t": "Perfect Couple",
-          "n": "5"
-        },
-        {
-          "id": "sm-133",
-          "t": "Much Ado About Kitten",
-          "n": "6"
-        },
-        {
-          "id": "sm-134",
-          "t": "A Pegasus Page Turner",
-          "n": "7"
-        },
-        {
-          "id": "sm-135",
-          "t": "A Teacher's Lesson",
-          "n": "8"
-        },
-        {
-          "id": "sm-136",
-          "t": "The Trouble with Love",
-          "n": "9"
-        },
-        {
-          "id": "sm-137",
-          "t": "Phony Fairy",
-          "n": "10"
-        },
-        {
-          "id": "sm-138",
-          "t": "Driven Dreamer",
-          "n": "11"
-        },
-        {
-          "id": "sm-139",
-          "t": "Cutting it Close",
-          "n": "12"
-        },
-        {
-          "id": "sm-140",
-          "t": "Clothes Call",
-          "n": "13"
-        },
-        {
-          "id": "sm-141",
-          "t": "Double Trouble",
-          "n": "14"
-        },
-        {
-          "id": "sm-142",
-          "t": "Recipe for Danger",
-          "n": "15"
-        },
-        {
-          "id": "sm-143",
-          "t": "Kicking into High Gear",
-          "n": "16"
-        },
-        {
-          "id": "sm-144",
-          "t": "Beach Blanket Bungle",
-          "n": "17"
-        },
-        {
-          "id": "sm-145",
-          "t": "Tutu Treachery",
-          "n": "18"
-        },
-        {
-          "id": "sm-146",
-          "t": "The Duchess' Day Off",
-          "n": "19"
-        },
-        {
-          "id": "sm-147",
-          "t": "No Prince Charming",
-          "n": "20"
-        },
-        {
-          "id": "sm-148",
-          "t": "A True Reflection",
-          "n": "21"
-        },
-        {
-          "id": "sm-149",
-          "t": "Eternal Dreams",
-          "n": "22"
-        },
-        {
-          "id": "sm-150",
-          "t": "A New Nightmare",
-          "n": "23"
-        },
-        {
-          "id": "sm-151",
-          "t": "Heartfelt Melody",
-          "n": "24"
-        },
-        {
-          "id": "sm-152",
-          "t": "Dreams of Her Own",
-          "n": "25"
-        },
-        {
-          "id": "sm-153",
-          "t": "Dental Dilemma",
-          "n": "26"
-        },
-        {
-          "id": "sm-154",
-          "t": "Nightmare Garden",
-          "n": "27"
-        },
-        {
-          "id": "sm-155",
-          "t": "Vaulting to Victory",
-          "n": "28"
-        },
-        {
-          "id": "sm-156",
-          "t": "Reflections of Reality",
-          "n": "29"
-        },
-        {
-          "id": "sm-157",
-          "t": "Dream Believer",
-          "n": "30"
-        },
-        {
-          "id": "sm-158",
-          "t": "Pegasus Revealed",
-          "n": "31"
-        },
-        {
-          "id": "sm-film-sailor-moon-supers",
-          "t": "Sailor Moon SuperS: The Movie",
-          "n": "1995",
-          "q": "Q566098",
-          "note": "Feature film · 62 minutes · released December 23, 1995"
-        },
-        {
-          "id": "sm-short-ami-s-first-love",
-          "t": "Ami's First Love",
-          "n": "1995",
-          "note": "Theatrical short · screened with Sailor Moon SuperS: The Movie"
-        },
-        {
-          "id": "sm-159",
-          "t": "Rini's Lovely Rhapsody",
-          "n": "32"
-        },
-        {
-          "id": "sm-160",
-          "t": "Tomorrow's Big Dreams",
-          "n": "33"
-        },
-        {
-          "id": "sm-161",
-          "t": "Day of Night",
-          "n": "34"
-        },
-        {
-          "id": "sm-162",
-          "t": "Show Time Showdown",
-          "n": "35"
-        },
-        {
-          "id": "sm-163",
-          "t": "The Dark Legend",
-          "n": "36"
-        },
-        {
-          "id": "sm-164",
-          "t": "One in the Hand",
-          "n": "37"
-        },
-        {
-          "id": "sm-165",
-          "t": "Golden Revival",
-          "n": "38"
-        },
-        {
-          "id": "sm-166",
-          "t": "The Sweetest Dream",
-          "n": "39"
-        }
-      ]
+     "id": "sm-4",
+     "t": "Slim City",
+     "n": "4"
     },
     {
-      "id": "s5",
-      "title": "Season 5: Sailor Stars",
-      "sub": "1996–97 · 34 episodes",
-      "intro": "The last season. Its first six episodes are a self-contained arc the manga does not have; the remaining twenty-eight adapt its Stars arc. No 1990s English dub of this season was made, so its titles here are translations rather than dub titles.",
-      "items": [
-        {
-          "id": "sm-167",
-          "t": "The Flower of Nightmares Scatters! The Queen of Darkness Returns",
-          "n": "1"
-        },
-        {
-          "id": "sm-168",
-          "t": "Saturn Awakens! The Ten Sailor Guardians Unite",
-          "n": "2"
-        },
-        {
-          "id": "sm-169",
-          "t": "The Cursed Mirror! Mamoru Caught in a Nightmare",
-          "n": "3"
-        },
-        {
-          "id": "sm-170",
-          "t": "Night of Destiny! The Sailor Guardians' Ordeals",
-          "n": "4"
-        },
-        {
-          "id": "sm-171",
-          "t": "For Love! The Endless Battle in the Dark World",
-          "n": "5"
-        },
-        {
-          "id": "sm-172",
-          "t": "Moon Power of Love! The Nightmare Ends",
-          "n": "6"
-        },
-        {
-          "id": "sm-173",
-          "t": "Farewells and Encounters! The Transitioning Stars of Destiny",
-          "n": "7"
-        },
-        {
-          "id": "sm-174",
-          "t": "A School Storm! The Transfer Students Are Idols",
-          "n": "8"
-        },
-        {
-          "id": "sm-175",
-          "t": "Becoming an Idol! Minako's Ambition",
-          "n": "9"
-        },
-        {
-          "id": "sm-176",
-          "t": "Fighter's Secret Identity! The Shocking Super Transformation",
-          "n": "10"
-        },
-        {
-          "id": "sm-177",
-          "t": "A Star of Dreams and Wishes! Taiki's Transformation",
-          "n": "11"
-        },
-        {
-          "id": "sm-178",
-          "t": "Luna's Discovery: The Real Face of Yaten",
-          "n": "12"
-        },
-        {
-          "id": "sm-179",
-          "t": "Friend or Foe? Star Lights and the Sailor Guardians",
-          "n": "13"
-        },
-        {
-          "id": "sm-180",
-          "t": "Calling of the Shining Stars: Enter Haruka and Michiru",
-          "n": "14"
-        },
-        {
-          "id": "sm-181",
-          "t": "Seiya and Usagi's Heart-Pounding Date",
-          "n": "15"
-        },
-        {
-          "id": "sm-182",
-          "t": "Invaders from Outer Space: The Coming of Siren",
-          "n": "16"
-        },
-        {
-          "id": "sm-183",
-          "t": "The Screaming Dead: Terror of the Camp Monster",
-          "n": "17"
-        },
-        {
-          "id": "sm-184",
-          "t": "A Night Alone Together: Usagi in Danger",
-          "n": "18"
-        },
-        {
-          "id": "sm-185",
-          "t": "Taiki's Song Filled with Passion and Faith",
-          "n": "19"
-        },
-        {
-          "id": "sm-186",
-          "t": "Chibi-Chibi's Mystery: The Big Noisy Chase",
-          "n": "20"
-        },
-        {
-          "id": "sm-187",
-          "t": "The Shining Power of a Star: Chibi-Chibi's Transformation",
-          "n": "21"
-        },
-        {
-          "id": "sm-188",
-          "t": "Invitation to Terror: Usagi's Night Flight",
-          "n": "22"
-        },
-        {
-          "id": "sm-189",
-          "t": "Duty or Friendship: Conflict Between the Sailor Guardians",
-          "n": "23"
-        },
-        {
-          "id": "sm-190",
-          "t": "Truth Revealed! The Star Lights' Past",
-          "n": "24"
-        },
-        {
-          "id": "sm-191",
-          "t": "Butterflies of Light: A New Chapter on the Horizon",
-          "n": "25"
-        },
-        {
-          "id": "sm-192",
-          "t": "Go for your Dream! Minako Becomes an Idol?!",
-          "n": "26"
-        },
-        {
-          "id": "sm-193",
-          "t": "The Stolen Silver Crystal: Princess Kakyu Appears",
-          "n": "27"
-        },
-        {
-          "id": "sm-194",
-          "t": "Crusade for the Galaxy: Legend of the Sailor Wars",
-          "n": "28"
-        },
-        {
-          "id": "sm-195",
-          "t": "Princess Kakyu Perishes: Advent of Galaxia",
-          "n": "29"
-        },
-        {
-          "id": "sm-196",
-          "t": "Countdown to Destruction: The Sailor Guardians' Last Battle",
-          "n": "30"
-        },
-        {
-          "id": "sm-197",
-          "t": "Ruler of the Galaxy: The Menace of Galaxia",
-          "n": "31"
-        },
-        {
-          "id": "sm-198",
-          "t": "Dying Stars: Uranus and Neptune's Last Stand",
-          "n": "32"
-        },
-        {
-          "id": "sm-199",
-          "t": "The Light of Hope: The Final Battle for the Galaxy",
-          "n": "33"
-        },
-        {
-          "id": "sm-200",
-          "t": "Usagi's Love: The Moonlight Illuminates the Galaxy",
-          "n": "34",
-          "note": "Series finale"
-        }
-      ]
+     "id": "sm-5",
+     "t": "Scent of a Monster! Chanela Will Steal Your Love",
+     "n": "5",
+     "note": "Never dubbed into English at the time"
+    },
+    {
+     "id": "sm-6",
+     "t": "Protect the Melody of Love: Usagi Plays Cupid",
+     "n": "6",
+     "note": "Never dubbed into English at the time"
+    },
+    {
+     "id": "sm-7",
+     "t": "So You Want to Be a Superstar",
+     "n": "7"
+    },
+    {
+     "id": "sm-8",
+     "t": "Computer School Blues",
+     "n": "8"
+    },
+    {
+     "id": "sm-9",
+     "t": "Time Bomb",
+     "n": "9"
+    },
+    {
+     "id": "sm-10",
+     "t": "An Uncharmed Life",
+     "n": "10"
+    },
+    {
+     "id": "sm-11",
+     "t": "Nightmare in Dreamland",
+     "n": "11"
+    },
+    {
+     "id": "sm-12",
+     "t": "Cruise Blues",
+     "n": "12"
+    },
+    {
+     "id": "sm-13",
+     "t": "Fight to the Finish",
+     "n": "13"
+    },
+    {
+     "id": "sm-14",
+     "t": "Match Point for Sailor Moon",
+     "n": "14"
+    },
+    {
+     "id": "sm-15",
+     "t": "An Unnatural Phenomena",
+     "n": "15"
+    },
+    {
+     "id": "sm-16",
+     "t": "Wedding Day Blues",
+     "n": "16"
+    },
+    {
+     "id": "sm-17",
+     "t": "Shutter Bugged",
+     "n": "17"
+    },
+    {
+     "id": "sm-18",
+     "t": "Dangerous Dollies",
+     "n": "18"
+    },
+    {
+     "id": "sm-19",
+     "t": "Who is That Masked Man?",
+     "n": "19"
+    },
+    {
+     "id": "sm-20",
+     "t": "The Summer, the Beach, Youth and Ghosts",
+     "n": "20",
+     "note": "Never dubbed into English at the time"
+    },
+    {
+     "id": "sm-21",
+     "t": "An Animated Mess",
+     "n": "21"
+    },
+    {
+     "id": "sm-22",
+     "t": "Worth a Princess' Ransom",
+     "n": "22"
+    },
+    {
+     "id": "sm-23",
+     "t": "Molly's Folly",
+     "n": "23"
+    },
+    {
+     "id": "sm-24",
+     "t": "A Friend in Wolf's Clothing",
+     "n": "24"
+    },
+    {
+     "id": "sm-25",
+     "t": "Jupiter Comes Thundering In",
+     "n": "25"
+    },
+    {
+     "id": "sm-26",
+     "t": "The Power of Friendship",
+     "n": "26"
+    },
+    {
+     "id": "sm-27",
+     "t": "Mercury's Mental Match",
+     "n": "27"
+    },
+    {
+     "id": "sm-28",
+     "t": "An Artful Attack",
+     "n": "28"
+    },
+    {
+     "id": "sm-29",
+     "t": "Too Many Girlfriends",
+     "n": "29"
+    },
+    {
+     "id": "sm-30",
+     "t": "Grandpa's Follies",
+     "n": "30"
+    },
+    {
+     "id": "sm-31",
+     "t": "Kitty Chaos",
+     "n": "31"
+    },
+    {
+     "id": "sm-32",
+     "t": "Tuxedo Melvin",
+     "n": "32"
+    },
+    {
+     "id": "sm-33",
+     "t": "Sailor Venus Makes the Scene",
+     "n": "33"
+    },
+    {
+     "id": "sm-34",
+     "t": "A Crystal Clear Destiny",
+     "n": "34"
+    },
+    {
+     "id": "sm-35",
+     "t": "A Reluctant Princess",
+     "n": "35"
+    },
+    {
+     "id": "sm-36",
+     "t": "Bad Hair Day",
+     "n": "36"
+    },
+    {
+     "id": "sm-37",
+     "t": "Little Miss Manners",
+     "n": "37"
+    },
+    {
+     "id": "sm-38",
+     "t": "Ski Bunny Blues",
+     "n": "38"
+    },
+    {
+     "id": "sm-39",
+     "t": "The Ice Princess",
+     "n": "39"
+    },
+    {
+     "id": "sm-40",
+     "t": "The Last Resort",
+     "n": "40"
+    },
+    {
+     "id": "sm-41",
+     "t": "Tuxedo Unmask",
+     "n": "41"
+    },
+    {
+     "id": "sm-42",
+     "t": "Sailor Venus' Past: Minako's Tragic Love",
+     "n": "42",
+     "note": "Never dubbed into English at the time"
+    },
+    {
+     "id": "sm-43",
+     "t": "Fractious Friends",
+     "n": "43"
+    },
+    {
+     "id": "sm-44",
+     "t": "The Past Returns",
+     "n": "44"
+    },
+    {
+     "id": "sm-45",
+     "t": "The Day of Destiny",
+     "n": "45",
+     "note": "The original English dub ran this and episode 46 as a single episode"
+    },
+    {
+     "id": "sm-46",
+     "t": "Brand New Life",
+     "n": "46",
+     "note": "The original English dub ran this and episode 45 as a single episode"
     }
-  ]
+   ],
+   "open": true
+  },
+  {
+   "id": "s2",
+   "title": "Season 2: R",
+   "sub": "1993–94 · 43 episodes, one film and one short",
+   "intro": "Two story arcs: the self-contained Makai Tree arc, which the manga does not have, and then the Black Moon Clan arc, adapting the fourth through seventh volumes. The first film opened in cinemas partway through the run and sits where it opened.",
+   "items": [
+    {
+     "id": "sm-47",
+     "t": "The Return of Sailor Moon",
+     "n": "1"
+    },
+    {
+     "id": "sm-48",
+     "t": "So You Want to Be in Pictures",
+     "n": "2"
+    },
+    {
+     "id": "sm-49",
+     "t": "A Knight to Remember",
+     "n": "3"
+    },
+    {
+     "id": "sm-50",
+     "t": "VR Madness",
+     "n": "4"
+    },
+    {
+     "id": "sm-51",
+     "t": "Cherry Blossom Time",
+     "n": "5"
+    },
+    {
+     "id": "sm-52",
+     "t": "Kindergarten Chaos",
+     "n": "6"
+    },
+    {
+     "id": "sm-53",
+     "t": "Much Ado About Babysitting",
+     "n": "7"
+    },
+    {
+     "id": "sm-54",
+     "t": "Raye's Day in the Spotlight",
+     "n": "8"
+    },
+    {
+     "id": "sm-55",
+     "t": "Food Fetish",
+     "n": "9"
+    },
+    {
+     "id": "sm-56",
+     "t": "Mirror, Mirror on the Wall",
+     "n": "10"
+    },
+    {
+     "id": "sm-57",
+     "t": "Detention Doldrums",
+     "n": "11"
+    },
+    {
+     "id": "sm-58",
+     "t": "Secret Garden (Part 1 of 2)",
+     "n": "12"
+    },
+    {
+     "id": "sm-59",
+     "t": "Treed (Part 2 of 2)",
+     "n": "13"
+    },
+    {
+     "id": "sm-60",
+     "t": "Serena Times Two",
+     "n": "14"
+    },
+    {
+     "id": "sm-61",
+     "t": "The Cosmetic Caper",
+     "n": "15"
+    },
+    {
+     "id": "sm-62",
+     "t": "Sailor Mercury Moving On?",
+     "n": "16"
+    },
+    {
+     "id": "sm-63",
+     "t": "Gramps in a Pickle",
+     "n": "17"
+    },
+    {
+     "id": "sm-64",
+     "t": "Trouble Comes Thundering Down",
+     "n": "18"
+    },
+    {
+     "id": "sm-65",
+     "t": "A Charmed Life",
+     "n": "19"
+    },
+    {
+     "id": "sm-66",
+     "t": "A Curried Favor",
+     "n": "20"
+    },
+    {
+     "id": "sm-67",
+     "t": "The Beach, the Island and a Vacation: The Guardians' Break",
+     "n": "21",
+     "note": "Never dubbed into English at the time"
+    },
+    {
+     "id": "sm-68",
+     "t": "Naughty 'N' Nice",
+     "n": "22"
+    },
+    {
+     "id": "sm-69",
+     "t": "Prediction of Doom",
+     "n": "23"
+    },
+    {
+     "id": "sm-70",
+     "t": "Enemies No More",
+     "n": "24"
+    },
+    {
+     "id": "sm-71",
+     "t": "Checkmate",
+     "n": "25"
+    },
+    {
+     "id": "sm-72",
+     "t": "Sibling Rivalry",
+     "n": "26"
+    },
+    {
+     "id": "sm-73",
+     "t": "Rubeus Evens the Score (Part 1 of 2)",
+     "n": "27"
+    },
+    {
+     "id": "sm-74",
+     "t": "Rubeus Strikes Back (Part 2 of 2)",
+     "n": "28"
+    },
+    {
+     "id": "sm-75",
+     "t": "The Secret of the Luna Sphere",
+     "n": "29"
+    },
+    {
+     "id": "sm-76",
+     "t": "Emerald Takes Over",
+     "n": "30"
+    },
+    {
+     "id": "sm-film-sailor-moon-r",
+     "t": "Sailor Moon R: The Movie",
+     "n": "1993",
+     "q": "Q636444",
+     "note": "Feature film · 61 minutes · released December 5, 1993"
+    },
+    {
+     "id": "sm-short-make-up-sailor-senshi",
+     "t": "Make Up! Sailor Senshi",
+     "n": "1993",
+     "note": "Theatrical short · screened with Sailor Moon R: The Movie"
+    },
+    {
+     "id": "sm-77",
+     "t": "Promises Fulfilled",
+     "n": "31"
+    },
+    {
+     "id": "sm-78",
+     "t": "No Thanks, Nurse Venus!",
+     "n": "32"
+    },
+    {
+     "id": "sm-79",
+     "t": "Dog Day for Artemis",
+     "n": "33"
+    },
+    {
+     "id": "sm-80",
+     "t": "Smart Payoff",
+     "n": "34"
+    },
+    {
+     "id": "sm-81",
+     "t": "Child's Play",
+     "n": "35"
+    },
+    {
+     "id": "sm-82",
+     "t": "Future Shocked",
+     "n": "36"
+    },
+    {
+     "id": "sm-83",
+     "t": "The Legend of Black Moon",
+     "n": "37"
+    },
+    {
+     "id": "sm-84",
+     "t": "Jealousy's Just Reward",
+     "n": "38"
+    },
+    {
+     "id": "sm-85",
+     "t": "The Birth of Wicked Lady",
+     "n": "39"
+    },
+    {
+     "id": "sm-86",
+     "t": "Brotherly Love",
+     "n": "40"
+    },
+    {
+     "id": "sm-87",
+     "t": "Diamond in the Rough",
+     "n": "41"
+    },
+    {
+     "id": "sm-88",
+     "t": "The Final Battle",
+     "n": "42"
+    },
+    {
+     "id": "sm-89",
+     "t": "Follow the Leader",
+     "n": "43"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Season 3: S",
+   "sub": "1994–95 · 38 episodes and one film",
+   "intro": "Adapts the manga's Infinity arc. The second film opened in the middle of the season.",
+   "items": [
+    {
+     "id": "sm-90",
+     "t": "Star Struck, Bad Luck",
+     "n": "1"
+    },
+    {
+     "id": "sm-91",
+     "t": "Crystal Clear Again",
+     "n": "2"
+    },
+    {
+     "id": "sm-92",
+     "t": "Driving Dangerously",
+     "n": "3"
+    },
+    {
+     "id": "sm-93",
+     "t": "Bad Harmony",
+     "n": "4"
+    },
+    {
+     "id": "sm-94",
+     "t": "Swept Off Her Feet",
+     "n": "5"
+    },
+    {
+     "id": "sm-95",
+     "t": "Blinded By Love's Light",
+     "n": "6"
+    },
+    {
+     "id": "sm-96",
+     "t": "Lita Borrows Trouble",
+     "n": "7"
+    },
+    {
+     "id": "sm-97",
+     "t": "Damp Spirits",
+     "n": "8"
+    },
+    {
+     "id": "sm-98",
+     "t": "Friendly Foes",
+     "n": "9"
+    },
+    {
+     "id": "sm-99",
+     "t": "Mixed Emotions",
+     "n": "10"
+    },
+    {
+     "id": "sm-100",
+     "t": "Individual Happiness",
+     "n": "11"
+    },
+    {
+     "id": "sm-101",
+     "t": "Birthday Blues, Part 1",
+     "n": "12"
+    },
+    {
+     "id": "sm-102",
+     "t": "Birthday Blues, Part 2",
+     "n": "13"
+    },
+    {
+     "id": "sm-103",
+     "t": "Hello, Sailor Mini Moon",
+     "n": "14"
+    },
+    {
+     "id": "sm-104",
+     "t": "Tainted Tea Party",
+     "n": "15"
+    },
+    {
+     "id": "sm-105",
+     "t": "People Who Need People",
+     "n": "16"
+    },
+    {
+     "id": "sm-106",
+     "t": "Related By Destiny",
+     "n": "17"
+    },
+    {
+     "id": "sm-107",
+     "t": "Art Appreciation",
+     "n": "18"
+    },
+    {
+     "id": "sm-108",
+     "t": "Everything's Coming Up Rosey",
+     "n": "19"
+    },
+    {
+     "id": "sm-109",
+     "t": "No Turning Back",
+     "n": "20"
+    },
+    {
+     "id": "sm-110",
+     "t": "Destiny's Arrival",
+     "n": "21"
+    },
+    {
+     "id": "sm-111",
+     "t": "The Purity Chalice",
+     "n": "22"
+    },
+    {
+     "id": "sm-112",
+     "t": "Show Stoppers",
+     "n": "23"
+    },
+    {
+     "id": "sm-113",
+     "t": "Rini's Risky Friendship",
+     "n": "24"
+    },
+    {
+     "id": "sm-114",
+     "t": "Mimet's Mess",
+     "n": "25"
+    },
+    {
+     "id": "sm-115",
+     "t": "The Shadow of Silence",
+     "n": "26"
+    },
+    {
+     "id": "sm-116",
+     "t": "Thorny Weather",
+     "n": "27"
+    },
+    {
+     "id": "sm-film-sailor-moon-s",
+     "t": "Sailor Moon S: The Movie",
+     "n": "1994",
+     "q": "Q1066446",
+     "note": "Feature film · 61 minutes · released December 4, 1994"
+    },
+    {
+     "id": "sm-117",
+     "t": "Heightened Hazard",
+     "n": "28"
+    },
+    {
+     "id": "sm-118",
+     "t": "It's in the Cards",
+     "n": "29"
+    },
+    {
+     "id": "sm-119",
+     "t": "Goodness Eclipsed",
+     "n": "30"
+    },
+    {
+     "id": "sm-120",
+     "t": "Next in Line",
+     "n": "31"
+    },
+    {
+     "id": "sm-121",
+     "t": "Fiendish Ferns",
+     "n": "32"
+    },
+    {
+     "id": "sm-122",
+     "t": "The Science of Love",
+     "n": "33"
+    },
+    {
+     "id": "sm-123",
+     "t": "Wake Up Call",
+     "n": "34"
+    },
+    {
+     "id": "sm-124",
+     "t": "Who's Really Who?",
+     "n": "35"
+    },
+    {
+     "id": "sm-125",
+     "t": "Darkness, My Old Friend",
+     "n": "36"
+    },
+    {
+     "id": "sm-126",
+     "t": "Second Chance",
+     "n": "37"
+    },
+    {
+     "id": "sm-127",
+     "t": "Tough Kindness",
+     "n": "38"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Season 4: SuperS",
+   "sub": "1995–96 · 39 episodes, one film, one short and three specials",
+   "intro": "Adapts the manga's Dream arc. Three television specials went out together in place of an episode early on, and the third film opened near the end.",
+   "items": [
+    {
+     "id": "sm-128",
+     "t": "Dreams Take Flight",
+     "n": "1"
+    },
+    {
+     "id": "sm-129",
+     "t": "No Ordinary Horsepower",
+     "n": "2"
+    },
+    {
+     "id": "sm-130",
+     "t": "Sweet Dreams",
+     "n": "3"
+    },
+    {
+     "id": "sm-131",
+     "t": "Baiting the Trap",
+     "n": "4"
+    },
+    {
+     "id": "sm-special-1",
+     "t": "An Elegant Metamorphosis? Crybaby Usagi's Growth Diary",
+     "n": "1995",
+     "note": "Television special · one of three that went out together in place of an episode"
+    },
+    {
+     "id": "sm-special-2",
+     "t": "Haruka and Michiru, Again! The Ghostly Puppet Show",
+     "n": "1995",
+     "note": "Television special · one of three that went out together in place of an episode"
+    },
+    {
+     "id": "sm-special-3",
+     "t": "Chibiusa's Adventure! The Dreaded Vampire Castle",
+     "n": "1995",
+     "note": "Television special · one of three that went out together in place of an episode"
+    },
+    {
+     "id": "sm-132",
+     "t": "Perfect Couple",
+     "n": "5"
+    },
+    {
+     "id": "sm-133",
+     "t": "Much Ado About Kitten",
+     "n": "6"
+    },
+    {
+     "id": "sm-134",
+     "t": "A Pegasus Page Turner",
+     "n": "7"
+    },
+    {
+     "id": "sm-135",
+     "t": "A Teacher's Lesson",
+     "n": "8"
+    },
+    {
+     "id": "sm-136",
+     "t": "The Trouble with Love",
+     "n": "9"
+    },
+    {
+     "id": "sm-137",
+     "t": "Phony Fairy",
+     "n": "10"
+    },
+    {
+     "id": "sm-138",
+     "t": "Driven Dreamer",
+     "n": "11"
+    },
+    {
+     "id": "sm-139",
+     "t": "Cutting it Close",
+     "n": "12"
+    },
+    {
+     "id": "sm-140",
+     "t": "Clothes Call",
+     "n": "13"
+    },
+    {
+     "id": "sm-141",
+     "t": "Double Trouble",
+     "n": "14"
+    },
+    {
+     "id": "sm-142",
+     "t": "Recipe for Danger",
+     "n": "15"
+    },
+    {
+     "id": "sm-143",
+     "t": "Kicking into High Gear",
+     "n": "16"
+    },
+    {
+     "id": "sm-144",
+     "t": "Beach Blanket Bungle",
+     "n": "17"
+    },
+    {
+     "id": "sm-145",
+     "t": "Tutu Treachery",
+     "n": "18"
+    },
+    {
+     "id": "sm-146",
+     "t": "The Duchess' Day Off",
+     "n": "19"
+    },
+    {
+     "id": "sm-147",
+     "t": "No Prince Charming",
+     "n": "20"
+    },
+    {
+     "id": "sm-148",
+     "t": "A True Reflection",
+     "n": "21"
+    },
+    {
+     "id": "sm-149",
+     "t": "Eternal Dreams",
+     "n": "22"
+    },
+    {
+     "id": "sm-150",
+     "t": "A New Nightmare",
+     "n": "23"
+    },
+    {
+     "id": "sm-151",
+     "t": "Heartfelt Melody",
+     "n": "24"
+    },
+    {
+     "id": "sm-152",
+     "t": "Dreams of Her Own",
+     "n": "25"
+    },
+    {
+     "id": "sm-153",
+     "t": "Dental Dilemma",
+     "n": "26"
+    },
+    {
+     "id": "sm-154",
+     "t": "Nightmare Garden",
+     "n": "27"
+    },
+    {
+     "id": "sm-155",
+     "t": "Vaulting to Victory",
+     "n": "28"
+    },
+    {
+     "id": "sm-156",
+     "t": "Reflections of Reality",
+     "n": "29"
+    },
+    {
+     "id": "sm-157",
+     "t": "Dream Believer",
+     "n": "30"
+    },
+    {
+     "id": "sm-158",
+     "t": "Pegasus Revealed",
+     "n": "31"
+    },
+    {
+     "id": "sm-film-sailor-moon-supers",
+     "t": "Sailor Moon SuperS: The Movie",
+     "n": "1995",
+     "q": "Q566098",
+     "note": "Feature film · 62 minutes · released December 23, 1995"
+    },
+    {
+     "id": "sm-short-ami-s-first-love",
+     "t": "Ami's First Love",
+     "n": "1995",
+     "note": "Theatrical short · screened with Sailor Moon SuperS: The Movie"
+    },
+    {
+     "id": "sm-159",
+     "t": "Rini's Lovely Rhapsody",
+     "n": "32"
+    },
+    {
+     "id": "sm-160",
+     "t": "Tomorrow's Big Dreams",
+     "n": "33"
+    },
+    {
+     "id": "sm-161",
+     "t": "Day of Night",
+     "n": "34"
+    },
+    {
+     "id": "sm-162",
+     "t": "Show Time Showdown",
+     "n": "35"
+    },
+    {
+     "id": "sm-163",
+     "t": "The Dark Legend",
+     "n": "36"
+    },
+    {
+     "id": "sm-164",
+     "t": "One in the Hand",
+     "n": "37"
+    },
+    {
+     "id": "sm-165",
+     "t": "Golden Revival",
+     "n": "38"
+    },
+    {
+     "id": "sm-166",
+     "t": "The Sweetest Dream",
+     "n": "39"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Season 5: Sailor Stars",
+   "sub": "1996–97 · 34 episodes",
+   "intro": "The last season. Its first six episodes are a self-contained arc the manga does not have; the remaining twenty-eight adapt its Stars arc. No 1990s English dub of this season was made, so its titles here are translations rather than dub titles.",
+   "items": [
+    {
+     "id": "sm-167",
+     "t": "The Flower of Nightmares Scatters! The Queen of Darkness Returns",
+     "n": "1"
+    },
+    {
+     "id": "sm-168",
+     "t": "Saturn Awakens! The Ten Sailor Guardians Unite",
+     "n": "2"
+    },
+    {
+     "id": "sm-169",
+     "t": "The Cursed Mirror! Mamoru Caught in a Nightmare",
+     "n": "3"
+    },
+    {
+     "id": "sm-170",
+     "t": "Night of Destiny! The Sailor Guardians' Ordeals",
+     "n": "4"
+    },
+    {
+     "id": "sm-171",
+     "t": "For Love! The Endless Battle in the Dark World",
+     "n": "5"
+    },
+    {
+     "id": "sm-172",
+     "t": "Moon Power of Love! The Nightmare Ends",
+     "n": "6"
+    },
+    {
+     "id": "sm-173",
+     "t": "Farewells and Encounters! The Transitioning Stars of Destiny",
+     "n": "7"
+    },
+    {
+     "id": "sm-174",
+     "t": "A School Storm! The Transfer Students Are Idols",
+     "n": "8"
+    },
+    {
+     "id": "sm-175",
+     "t": "Becoming an Idol! Minako's Ambition",
+     "n": "9"
+    },
+    {
+     "id": "sm-176",
+     "t": "Fighter's Secret Identity! The Shocking Super Transformation",
+     "n": "10"
+    },
+    {
+     "id": "sm-177",
+     "t": "A Star of Dreams and Wishes! Taiki's Transformation",
+     "n": "11"
+    },
+    {
+     "id": "sm-178",
+     "t": "Luna's Discovery: The Real Face of Yaten",
+     "n": "12"
+    },
+    {
+     "id": "sm-179",
+     "t": "Friend or Foe? Star Lights and the Sailor Guardians",
+     "n": "13"
+    },
+    {
+     "id": "sm-180",
+     "t": "Calling of the Shining Stars: Enter Haruka and Michiru",
+     "n": "14"
+    },
+    {
+     "id": "sm-181",
+     "t": "Seiya and Usagi's Heart-Pounding Date",
+     "n": "15"
+    },
+    {
+     "id": "sm-182",
+     "t": "Invaders from Outer Space: The Coming of Siren",
+     "n": "16"
+    },
+    {
+     "id": "sm-183",
+     "t": "The Screaming Dead: Terror of the Camp Monster",
+     "n": "17"
+    },
+    {
+     "id": "sm-184",
+     "t": "A Night Alone Together: Usagi in Danger",
+     "n": "18"
+    },
+    {
+     "id": "sm-185",
+     "t": "Taiki's Song Filled with Passion and Faith",
+     "n": "19"
+    },
+    {
+     "id": "sm-186",
+     "t": "Chibi-Chibi's Mystery: The Big Noisy Chase",
+     "n": "20"
+    },
+    {
+     "id": "sm-187",
+     "t": "The Shining Power of a Star: Chibi-Chibi's Transformation",
+     "n": "21"
+    },
+    {
+     "id": "sm-188",
+     "t": "Invitation to Terror: Usagi's Night Flight",
+     "n": "22"
+    },
+    {
+     "id": "sm-189",
+     "t": "Duty or Friendship: Conflict Between the Sailor Guardians",
+     "n": "23"
+    },
+    {
+     "id": "sm-190",
+     "t": "Truth Revealed! The Star Lights' Past",
+     "n": "24"
+    },
+    {
+     "id": "sm-191",
+     "t": "Butterflies of Light: A New Chapter on the Horizon",
+     "n": "25"
+    },
+    {
+     "id": "sm-192",
+     "t": "Go for your Dream! Minako Becomes an Idol?!",
+     "n": "26"
+    },
+    {
+     "id": "sm-193",
+     "t": "The Stolen Silver Crystal: Princess Kakyu Appears",
+     "n": "27"
+    },
+    {
+     "id": "sm-194",
+     "t": "Crusade for the Galaxy: Legend of the Sailor Wars",
+     "n": "28"
+    },
+    {
+     "id": "sm-195",
+     "t": "Princess Kakyu Perishes: Advent of Galaxia",
+     "n": "29"
+    },
+    {
+     "id": "sm-196",
+     "t": "Countdown to Destruction: The Sailor Guardians' Last Battle",
+     "n": "30"
+    },
+    {
+     "id": "sm-197",
+     "t": "Ruler of the Galaxy: The Menace of Galaxia",
+     "n": "31"
+    },
+    {
+     "id": "sm-198",
+     "t": "Dying Stars: Uranus and Neptune's Last Stand",
+     "n": "32"
+    },
+    {
+     "id": "sm-199",
+     "t": "The Light of Hope: The Final Battle for the Galaxy",
+     "n": "33"
+    },
+    {
+     "id": "sm-200",
+     "t": "Usagi's Love: The Moonlight Illuminates the Galaxy",
+     "n": "34"
+    }
+   ]
+  }
+ ]
 }

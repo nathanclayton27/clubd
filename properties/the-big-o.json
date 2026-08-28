@@ -1,206 +1,205 @@
 {
-  "slug": "the-big-o",
-  "title": "The Big O",
-  "subtitle": "both seasons, all 26 episodes",
-  "kind": "anime",
-  "popularity": 48,
-  "year": "1999–2003",
-  "blurb": "Sunrise's film-noir mecha series in broadcast order — thirteen episodes in 1999, thirteen more in 2003, and none after that.",
-  "unit": {
-    "one": "episode",
-    "many": "episodes"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#2C2F3A",
-  "accentDark": "#F2C14E",
-  "tiers": false,
-  "notes": [
-    [
-      "The second season exists because of how the first one did abroad.",
-      "That is a fact about the production rather than the story, so each section's header names it. The series article's lead: \"Originally planned as a 26-episode series, low viewership in Japan reduced production to the first 13. Positive international reception resulted in a second season consisting of the remaining 13 episodes, co-produced by Cartoon Network, Sunrise, and Bandai Visual.\" The episode-list article says the same thing in its own words: \"Originally a 26-episode series, it was reduced to 13 episodes due to low ratings in Japan. However, positive international reception resulted in a second season co-produced by Cartoon Network, Sunrise, and Bandai Visual.\" Sunrise animated both; only the second had American money and an American broadcaster behind it."
-    ],
-    [
-      "Twenty-six between them, taken from the source rather than assumed.",
-      "Thirteen and thirteen, counted three ways before this builds: the rows parsed out of each of the episode-list article's two season tables, the episodes field in each of the series article's two infoboxes, and the two prose sentences above. The overall numbering is asserted contiguous 1 to 26, and each season's first and last airdates are checked against its own infobox."
-    ],
-    [
-      "Rows are numbered 1 to 26 straight through.",
-      "That is the source's numbering: the episode-list article files season 2 as episodes 14 to 26 rather than restarting at 1, and carries no in-season numbers at all. So the second section opens at 14."
-    ],
-    [
-      "One airdate disagrees with itself, and the episode table wins.",
-      "The series article's second infobox closes season 2 on March 23, 2003. The episode table dates the last episode March 27, 2003, and the episode-list article's prose says the season \"concluded with 'The Show Must Go On' on March 27, 2003\". Two sources to one, and the table is the internally consistent one — the season ran weekly from Thursday January 2, and thirteen weekly slots land on March 27. This list follows the table, and fails the build if a third date ever appears."
-    ],
-    [
-      "This is all of it.",
-      "There is no third season, and the source says why without anyone having to describe how the story ends: \"Along with the 13 episodes of season two, Cartoon Network had an option for 26 additional episodes to be written by Konaka, but according to Jason DeMarco, executive producer for season two, the middling ratings and DVD sales in the United States and Japan made any further episodes impossible to be produced.\" The same section notes that Cartoon Network's representatives had asked for the story to be satisfactorily finished within the second season. So a continuation was optioned and never made, and 26 is the whole of it."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked on this list.",
-      "Not for want of looking. Four sources were checked and all four came up empty. (1) Per-episode articles: none exist — all 26 titles were probed bare and in both disambiguated forms, and the handful of pages that answer are disambiguation pages and unrelated subjects, because six of the titles are common nouns. (2) Per-episode Wikidata: no episode items exist at all, so there is no P2047 to read; the series item carries neither a runtime nor any has-part statements. (3) Season articles: none exist — both season titles redirect to the episode-list article. (4) The episode table's own RunTime fields: not one of the 26 blocks has one, the series article's two infoboxes carry no runtime parameter, and the word \"minutes\" appears nowhere in the series, episode-list or music articles. It has to be every row or none, because a row with no weight silently counts as a full hour — weighting nothing keeps 26 half-hours from reading as 26 hours."
-    ],
-    [
-      "Everything else in the franchise is another medium.",
-      "The six-volume manga, the two-volume Lost Memory, the Paradigm Noise novel, the drama CD and the Super Robot Wars appearances are not episodes and are not here. Neither are the Toonami, Adult Swim and Animax rebroadcasts, which are these same 26 episodes rather than more of them. There is no film and no OVA, and this list fails the build if the series article ever files a third anime installment."
-    ],
-    "Titles, numbering and airdates machine-read from Wikipedia's \"List of The Big O episodes\"; production history, episode counts and broadcast dates cross-checked against \"The Big O\" and \"Music of The Big O\"; the runtime hunt run against Wikidata item Q974411 and the English Wikipedia article index."
+ "slug": "the-big-o",
+ "title": "The Big O",
+ "subtitle": "both seasons, all 26 episodes",
+ "kind": "anime",
+ "popularity": 48,
+ "year": "1999–2003",
+ "blurb": "Sunrise's film-noir mecha series in broadcast order — thirteen episodes in 1999, thirteen more in 2003, and none after that.",
+ "unit": {
+  "one": "episode",
+  "many": "episodes"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#2C2F3A",
+ "accentDark": "#F2C14E",
+ "tiers": false,
+ "notes": [
+  [
+   "The second season exists because of how the first one did abroad.",
+   "That is a fact about the production rather than the story, so each section's header names it. The series article's lead: \"Originally planned as a 26-episode series, low viewership in Japan reduced production to the first 13. Positive international reception resulted in a second season consisting of the remaining 13 episodes, co-produced by Cartoon Network, Sunrise, and Bandai Visual.\" The episode-list article says the same thing in its own words: \"Originally a 26-episode series, it was reduced to 13 episodes due to low ratings in Japan. However, positive international reception resulted in a second season co-produced by Cartoon Network, Sunrise, and Bandai Visual.\" Sunrise animated both; only the second had American money and an American broadcaster behind it."
   ],
-  "sections": [
+  [
+   "Twenty-six between them, taken from the source rather than assumed.",
+   "Thirteen and thirteen, counted three ways before this builds: the rows parsed out of each of the episode-list article's two season tables, the episodes field in each of the series article's two infoboxes, and the two prose sentences above. The overall numbering is asserted contiguous 1 to 26, and each season's first and last airdates are checked against its own infobox."
+  ],
+  [
+   "Rows are numbered 1 to 26 straight through.",
+   "That is the source's numbering: the episode-list article files season 2 as episodes 14 to 26 rather than restarting at 1, and carries no in-season numbers at all. So the second section opens at 14."
+  ],
+  [
+   "One airdate disagrees with itself, and the episode table wins.",
+   "The series article's second infobox closes season 2 on March 23, 2003. The episode table dates the last episode March 27, 2003, and the episode-list article's prose says the season \"concluded with 'The Show Must Go On' on March 27, 2003\". Two sources to one, and the table is the internally consistent one — the season ran weekly from Thursday January 2, and thirteen weekly slots land on March 27. This list follows the table, and fails the build if a third date ever appears."
+  ],
+  [
+   "This is all of it.",
+   "There is no third season, and the source says why without anyone having to describe how the story ends: \"Along with the 13 episodes of season two, Cartoon Network had an option for 26 additional episodes to be written by Konaka, but according to Jason DeMarco, executive producer for season two, the middling ratings and DVD sales in the United States and Japan made any further episodes impossible to be produced.\" The same section notes that Cartoon Network's representatives had asked for the story to be satisfactorily finished within the second season. So a continuation was optioned and never made, and 26 is the whole of it."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked on this list.",
+   "Not for want of looking. Four sources were checked and all four came up empty. (1) Per-episode articles: none exist — all 26 titles were probed bare and in both disambiguated forms, and the handful of pages that answer are disambiguation pages and unrelated subjects, because six of the titles are common nouns. (2) Per-episode Wikidata: no episode items exist at all, so there is no P2047 to read; the series item carries neither a runtime nor any has-part statements. (3) Season articles: none exist — both season titles redirect to the episode-list article. (4) The episode table's own RunTime fields: not one of the 26 blocks has one, the series article's two infoboxes carry no runtime parameter, and the word \"minutes\" appears nowhere in the series, episode-list or music articles. It has to be every row or none, because a row with no weight silently counts as a full hour — weighting nothing keeps 26 half-hours from reading as 26 hours."
+  ],
+  [
+   "Everything else in the franchise is another medium.",
+   "The six-volume manga, the two-volume Lost Memory, the Paradigm Noise novel, the drama CD and the Super Robot Wars appearances are not episodes and are not here. Neither are the Toonami, Adult Swim and Animax rebroadcasts, which are these same 26 episodes rather than more of them. There is no film and no OVA, and this list fails the build if the series article ever files a third anime installment."
+  ],
+  "Titles, numbering and airdates machine-read from Wikipedia's \"List of The Big O episodes\"; production history, episode counts and broadcast dates cross-checked against \"The Big O\" and \"Music of The Big O\"; the runtime hunt run against Wikidata item Q974411 and the English Wikipedia article index."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1",
+   "sub": "1999–2000 · 13 episodes · Sunrise · Wowow",
+   "intro": "Thirteen episodes on Wowow, October 13, 1999 to January 19, 2000. The source says the run was outlined at 26 and cut to 13 after low viewership in Japan.",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1",
-      "sub": "1999–2000 · 13 episodes · Sunrise · Wowow",
-      "intro": "Thirteen episodes on Wowow, October 13, 1999 to January 19, 2000. The source says the run was outlined at 26 and cut to 13 after low viewership in Japan.",
-      "items": [
-        {
-          "id": "bigo-1",
-          "t": "Roger The Negotiator",
-          "n": "1",
-          "note": "series premiere"
-        },
-        {
-          "id": "bigo-2",
-          "t": "Dorothy Dorothy",
-          "n": "2"
-        },
-        {
-          "id": "bigo-3",
-          "t": "Electric City",
-          "n": "3"
-        },
-        {
-          "id": "bigo-4",
-          "t": "Underground Terror",
-          "n": "4"
-        },
-        {
-          "id": "bigo-5",
-          "t": "Bring Back My Ghost",
-          "n": "5"
-        },
-        {
-          "id": "bigo-6",
-          "t": "A Legacy of Amadeus",
-          "n": "6"
-        },
-        {
-          "id": "bigo-7",
-          "t": "The Call from The Past",
-          "n": "7"
-        },
-        {
-          "id": "bigo-8",
-          "t": "Missing Cat",
-          "n": "8"
-        },
-        {
-          "id": "bigo-9",
-          "t": "Beck Comes Back",
-          "n": "9"
-        },
-        {
-          "id": "bigo-10",
-          "t": "Winter Night Phantom",
-          "n": "10"
-        },
-        {
-          "id": "bigo-11",
-          "t": "Daemonseed",
-          "n": "11"
-        },
-        {
-          "id": "bigo-12",
-          "t": "Enemy is Another Big!",
-          "n": "12"
-        },
-        {
-          "id": "bigo-13",
-          "t": "R・D",
-          "n": "13",
-          "note": "first-season finale · the article's lead writes this title \"R.D.\""
-        }
-      ],
-      "open": true
+     "id": "bigo-1",
+     "t": "Roger The Negotiator",
+     "n": "1",
+     "note": "series premiere"
     },
     {
-      "id": "s2",
-      "title": "Season 2",
-      "sub": "2003 · 13 episodes · Sunrise with Cartoon Network and Bandai Visual · Sun Television",
-      "intro": "The other thirteen, three years later, and they exist because of how the show did abroad: positive international reception brought Cartoon Network in to co-produce alongside Sunrise and Bandai Visual, and its representatives asked that the story be finished within the season. January 2, 2003 to March 27, 2003, numbered 14 to 26 because that is how the source numbers them.",
-      "items": [
-        {
-          "id": "bigo-14",
-          "t": "Roger the Wanderer",
-          "n": "14",
-          "note": "second-season premiere"
-        },
-        {
-          "id": "bigo-15",
-          "t": "Negotiation with the Dead",
-          "n": "15"
-        },
-        {
-          "id": "bigo-16",
-          "t": "Day of the Advent",
-          "n": "16"
-        },
-        {
-          "id": "bigo-17",
-          "t": "Leviathan",
-          "n": "17"
-        },
-        {
-          "id": "bigo-18",
-          "t": "The Greatest Villain",
-          "n": "18"
-        },
-        {
-          "id": "bigo-19",
-          "t": "Eyewitness",
-          "n": "19"
-        },
-        {
-          "id": "bigo-20",
-          "t": "Stripes",
-          "n": "20"
-        },
-        {
-          "id": "bigo-21",
-          "t": "The Third Big",
-          "n": "21"
-        },
-        {
-          "id": "bigo-22",
-          "t": "Hydra",
-          "n": "22"
-        },
-        {
-          "id": "bigo-23",
-          "t": "Twisted Memories",
-          "n": "23"
-        },
-        {
-          "id": "bigo-24",
-          "t": "The Big Fight!",
-          "n": "24"
-        },
-        {
-          "id": "bigo-25",
-          "t": "The War of the Paradigm City",
-          "n": "25"
-        },
-        {
-          "id": "bigo-26",
-          "t": "The Show Must Go On",
-          "n": "26",
-          "note": "series finale"
-        }
-      ]
+     "id": "bigo-2",
+     "t": "Dorothy Dorothy",
+     "n": "2"
+    },
+    {
+     "id": "bigo-3",
+     "t": "Electric City",
+     "n": "3"
+    },
+    {
+     "id": "bigo-4",
+     "t": "Underground Terror",
+     "n": "4"
+    },
+    {
+     "id": "bigo-5",
+     "t": "Bring Back My Ghost",
+     "n": "5"
+    },
+    {
+     "id": "bigo-6",
+     "t": "A Legacy of Amadeus",
+     "n": "6"
+    },
+    {
+     "id": "bigo-7",
+     "t": "The Call from The Past",
+     "n": "7"
+    },
+    {
+     "id": "bigo-8",
+     "t": "Missing Cat",
+     "n": "8"
+    },
+    {
+     "id": "bigo-9",
+     "t": "Beck Comes Back",
+     "n": "9"
+    },
+    {
+     "id": "bigo-10",
+     "t": "Winter Night Phantom",
+     "n": "10"
+    },
+    {
+     "id": "bigo-11",
+     "t": "Daemonseed",
+     "n": "11"
+    },
+    {
+     "id": "bigo-12",
+     "t": "Enemy is Another Big!",
+     "n": "12"
+    },
+    {
+     "id": "bigo-13",
+     "t": "R・D",
+     "n": "13",
+     "note": "first-season finale · the article's lead writes this title \"R.D.\""
     }
-  ]
+   ],
+   "open": true
+  },
+  {
+   "id": "s2",
+   "title": "Season 2",
+   "sub": "2003 · 13 episodes · Sunrise with Cartoon Network and Bandai Visual · Sun Television",
+   "intro": "The other thirteen, three years later, and they exist because of how the show did abroad: positive international reception brought Cartoon Network in to co-produce alongside Sunrise and Bandai Visual, and its representatives asked that the story be finished within the season. January 2, 2003 to March 27, 2003, numbered 14 to 26 because that is how the source numbers them.",
+   "items": [
+    {
+     "id": "bigo-14",
+     "t": "Roger the Wanderer",
+     "n": "14",
+     "note": "second-season premiere"
+    },
+    {
+     "id": "bigo-15",
+     "t": "Negotiation with the Dead",
+     "n": "15"
+    },
+    {
+     "id": "bigo-16",
+     "t": "Day of the Advent",
+     "n": "16"
+    },
+    {
+     "id": "bigo-17",
+     "t": "Leviathan",
+     "n": "17"
+    },
+    {
+     "id": "bigo-18",
+     "t": "The Greatest Villain",
+     "n": "18"
+    },
+    {
+     "id": "bigo-19",
+     "t": "Eyewitness",
+     "n": "19"
+    },
+    {
+     "id": "bigo-20",
+     "t": "Stripes",
+     "n": "20"
+    },
+    {
+     "id": "bigo-21",
+     "t": "The Third Big",
+     "n": "21"
+    },
+    {
+     "id": "bigo-22",
+     "t": "Hydra",
+     "n": "22"
+    },
+    {
+     "id": "bigo-23",
+     "t": "Twisted Memories",
+     "n": "23"
+    },
+    {
+     "id": "bigo-24",
+     "t": "The Big Fight!",
+     "n": "24"
+    },
+    {
+     "id": "bigo-25",
+     "t": "The War of the Paradigm City",
+     "n": "25"
+    },
+    {
+     "id": "bigo-26",
+     "t": "The Show Must Go On",
+     "n": "26"
+    }
+   ]
+  }
+ ]
 }

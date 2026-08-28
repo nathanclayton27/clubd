@@ -1,695 +1,694 @@
 {
-  "slug": "gossip-girl",
-  "title": "Gossip Girl",
-  "subtitle": "the original series — six seasons on The CW",
-  "kind": "tv",
-  "popularity": 57,
-  "year": "2007–2012",
-  "blurb": "All 121 episodes of the original CW series in broadcast order, from the pilot to the finale.",
-  "unit": {
-    "one": "episode",
-    "many": "episodes"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#243B72",
-  "accentDark": "#E9A8C6",
-  "tiers": false,
-  "notes": [
-    [
-      "The original series only.",
-      "This is the 2007–2012 run on The CW. The 2021 series of the same name is a separate show with its own episode list and is deliberately not listed here."
-    ],
-    [
-      "Specials and webisodes are not listed.",
-      "Two clip specials — Gossip Girl: Revealed and Gossip Girl: XOXO — and the six Chasing Dorota webisodes sit outside the run's 121 broadcast episodes."
-    ],
-    [
-      "Season one is the short one.",
-      "The 2007–2008 Writers Guild of America strike interrupted it; the last five of its eighteen episodes aired after the strike ended."
-    ],
-    [
-      "Nothing is weighted.",
-      "Every episode counts one, so the strip divides evenly across 121 marks."
-    ],
-    "Episode titles and airdates machine-read from the six Wikipedia season articles; every season's numbering is asserted contiguous and equal to the episode list's own counts before this builds."
+ "slug": "gossip-girl",
+ "title": "Gossip Girl",
+ "subtitle": "the original series — six seasons on The CW",
+ "kind": "tv",
+ "popularity": 57,
+ "year": "2007–2012",
+ "blurb": "All 121 episodes of the original CW series in broadcast order, from the pilot to the finale.",
+ "unit": {
+  "one": "episode",
+  "many": "episodes"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#243B72",
+ "accentDark": "#E9A8C6",
+ "tiers": false,
+ "notes": [
+  [
+   "The original series only.",
+   "This is the 2007–2012 run on The CW. The 2021 series of the same name is a separate show with its own episode list and is deliberately not listed here."
   ],
-  "sections": [
+  [
+   "Specials and webisodes are not listed.",
+   "Two clip specials — Gossip Girl: Revealed and Gossip Girl: XOXO — and the six Chasing Dorota webisodes sit outside the run's 121 broadcast episodes."
+  ],
+  [
+   "Season one is the short one.",
+   "The 2007–2008 Writers Guild of America strike interrupted it; the last five of its eighteen episodes aired after the strike ended."
+  ],
+  [
+   "Nothing is weighted.",
+   "Every episode counts one, so the strip divides evenly across 121 marks."
+  ],
+  "Episode titles and airdates machine-read from the six Wikipedia season articles; every season's numbering is asserted contiguous and equal to the episode list's own counts before this builds."
+ ],
+ "sections": [
+  {
+   "id": "s1",
+   "title": "Season 1",
+   "sub": "2007–08 · 18 episodes",
+   "items": [
     {
-      "id": "s1",
-      "title": "Season 1",
-      "sub": "2007–08 · 18 episodes",
-      "items": [
-        {
-          "id": "gossip-girl-s1e1",
-          "t": "Pilot",
-          "n": "1",
-          "note": "Series premiere"
-        },
-        {
-          "id": "gossip-girl-s1e2",
-          "t": "The Wild Brunch",
-          "n": "2"
-        },
-        {
-          "id": "gossip-girl-s1e3",
-          "t": "Poison Ivy",
-          "n": "3"
-        },
-        {
-          "id": "gossip-girl-s1e4",
-          "t": "Bad News Blair",
-          "n": "4"
-        },
-        {
-          "id": "gossip-girl-s1e5",
-          "t": "Dare Devil",
-          "n": "5"
-        },
-        {
-          "id": "gossip-girl-s1e6",
-          "t": "The Handmaiden's Tale",
-          "n": "6"
-        },
-        {
-          "id": "gossip-girl-s1e7",
-          "t": "Victor, Victrola",
-          "n": "7"
-        },
-        {
-          "id": "gossip-girl-s1e8",
-          "t": "Seventeen Candles",
-          "n": "8"
-        },
-        {
-          "id": "gossip-girl-s1e9",
-          "t": "Blair Waldorf Must Pie!",
-          "n": "9"
-        },
-        {
-          "id": "gossip-girl-s1e10",
-          "t": "Hi, Society",
-          "n": "10"
-        },
-        {
-          "id": "gossip-girl-s1e11",
-          "t": "Roman Holiday",
-          "n": "11"
-        },
-        {
-          "id": "gossip-girl-s1e12",
-          "t": "School Lies",
-          "n": "12"
-        },
-        {
-          "id": "gossip-girl-s1e13",
-          "t": "A Thin Line Between Chuck and Nate",
-          "n": "13"
-        },
-        {
-          "id": "gossip-girl-s1e14",
-          "t": "The Blair Bitch Project",
-          "n": "14"
-        },
-        {
-          "id": "gossip-girl-s1e15",
-          "t": "Desperately Seeking Serena",
-          "n": "15"
-        },
-        {
-          "id": "gossip-girl-s1e16",
-          "t": "All About My Brother",
-          "n": "16"
-        },
-        {
-          "id": "gossip-girl-s1e17",
-          "t": "Woman on the Verge",
-          "n": "17"
-        },
-        {
-          "id": "gossip-girl-s1e18",
-          "t": "Much 'I Do' About Nothing",
-          "n": "18"
-        }
-      ],
-      "open": true,
-      "intro": "Eighteen episodes: the 2007–2008 writers' strike interrupted the season, and its last five aired after the strike ended."
+     "id": "gossip-girl-s1e1",
+     "t": "Pilot",
+     "n": "1",
+     "note": "Series premiere"
     },
     {
-      "id": "s2",
-      "title": "Season 2",
-      "sub": "2008–09 · 25 episodes",
-      "items": [
-        {
-          "id": "gossip-girl-s2e1",
-          "t": "Summer, Kind of Wonderful",
-          "n": "1"
-        },
-        {
-          "id": "gossip-girl-s2e2",
-          "t": "Never Been Marcused",
-          "n": "2"
-        },
-        {
-          "id": "gossip-girl-s2e3",
-          "t": "The Dark Night",
-          "n": "3"
-        },
-        {
-          "id": "gossip-girl-s2e4",
-          "t": "The Ex Files",
-          "n": "4"
-        },
-        {
-          "id": "gossip-girl-s2e5",
-          "t": "The Serena Also Rises",
-          "n": "5"
-        },
-        {
-          "id": "gossip-girl-s2e6",
-          "t": "New Haven Can Wait",
-          "n": "6"
-        },
-        {
-          "id": "gossip-girl-s2e7",
-          "t": "Chuck in Real Life",
-          "n": "7"
-        },
-        {
-          "id": "gossip-girl-s2e8",
-          "t": "Pret-a-Poor-J",
-          "n": "8"
-        },
-        {
-          "id": "gossip-girl-s2e9",
-          "t": "There Might Be Blood",
-          "n": "9"
-        },
-        {
-          "id": "gossip-girl-s2e10",
-          "t": "Bonfire of the Vanity",
-          "n": "10"
-        },
-        {
-          "id": "gossip-girl-s2e11",
-          "t": "The Magnificent Archibalds",
-          "n": "11"
-        },
-        {
-          "id": "gossip-girl-s2e12",
-          "t": "It's a Wonderful Lie",
-          "n": "12"
-        },
-        {
-          "id": "gossip-girl-s2e13",
-          "t": "O Brother, Where Bart Thou?",
-          "n": "13"
-        },
-        {
-          "id": "gossip-girl-s2e14",
-          "t": "In the Realm of the Basses",
-          "n": "14"
-        },
-        {
-          "id": "gossip-girl-s2e15",
-          "t": "Gone with the Will",
-          "n": "15"
-        },
-        {
-          "id": "gossip-girl-s2e16",
-          "t": "You've Got Yale!",
-          "n": "16"
-        },
-        {
-          "id": "gossip-girl-s2e17",
-          "t": "Carrnal Knowledge",
-          "n": "17"
-        },
-        {
-          "id": "gossip-girl-s2e18",
-          "t": "The Age of Dissonance",
-          "n": "18"
-        },
-        {
-          "id": "gossip-girl-s2e19",
-          "t": "The Grandfather",
-          "n": "19"
-        },
-        {
-          "id": "gossip-girl-s2e20",
-          "t": "Remains of the J",
-          "n": "20"
-        },
-        {
-          "id": "gossip-girl-s2e21",
-          "t": "Seder Anything",
-          "n": "21"
-        },
-        {
-          "id": "gossip-girl-s2e22",
-          "t": "Southern Gentlemen Prefer Blondes",
-          "n": "22"
-        },
-        {
-          "id": "gossip-girl-s2e23",
-          "t": "The Wrath of Con",
-          "n": "23"
-        },
-        {
-          "id": "gossip-girl-s2e24",
-          "t": "Valley Girls",
-          "n": "24",
-          "note": "A backdoor pilot for a spin-off that was not picked up"
-        },
-        {
-          "id": "gossip-girl-s2e25",
-          "t": "The Goodbye Gossip Girl",
-          "n": "25"
-        }
-      ]
+     "id": "gossip-girl-s1e2",
+     "t": "The Wild Brunch",
+     "n": "2"
     },
     {
-      "id": "s3",
-      "title": "Season 3",
-      "sub": "2009–10 · 22 episodes",
-      "items": [
-        {
-          "id": "gossip-girl-s3e1",
-          "t": "Reversals of Fortune",
-          "n": "1"
-        },
-        {
-          "id": "gossip-girl-s3e2",
-          "t": "The Freshman",
-          "n": "2"
-        },
-        {
-          "id": "gossip-girl-s3e3",
-          "t": "The Lost Boy",
-          "n": "3"
-        },
-        {
-          "id": "gossip-girl-s3e4",
-          "t": "Dan de Fleurette",
-          "n": "4"
-        },
-        {
-          "id": "gossip-girl-s3e5",
-          "t": "Rufus Getting Married",
-          "n": "5"
-        },
-        {
-          "id": "gossip-girl-s3e6",
-          "t": "Enough About Eve",
-          "n": "6"
-        },
-        {
-          "id": "gossip-girl-s3e7",
-          "t": "How to Succeed in Bassness",
-          "n": "7"
-        },
-        {
-          "id": "gossip-girl-s3e8",
-          "t": "The Grandfather: Part II",
-          "n": "8"
-        },
-        {
-          "id": "gossip-girl-s3e9",
-          "t": "They Shoot Humphreys, Don't They?",
-          "n": "9"
-        },
-        {
-          "id": "gossip-girl-s3e10",
-          "t": "The Last Days of Disco Stick",
-          "n": "10"
-        },
-        {
-          "id": "gossip-girl-s3e11",
-          "t": "The Treasure of Serena Madre",
-          "n": "11"
-        },
-        {
-          "id": "gossip-girl-s3e12",
-          "t": "The Debarted",
-          "n": "12"
-        },
-        {
-          "id": "gossip-girl-s3e13",
-          "t": "The Hurt Locket",
-          "n": "13"
-        },
-        {
-          "id": "gossip-girl-s3e14",
-          "t": "The Lady Vanished",
-          "n": "14"
-        },
-        {
-          "id": "gossip-girl-s3e15",
-          "t": "The Sixteen Year Old Virgin",
-          "n": "15"
-        },
-        {
-          "id": "gossip-girl-s3e16",
-          "t": "The Empire Strikes Jack",
-          "n": "16"
-        },
-        {
-          "id": "gossip-girl-s3e17",
-          "t": "Inglourious Bassterds",
-          "n": "17"
-        },
-        {
-          "id": "gossip-girl-s3e18",
-          "t": "The Unblairable Lightness of Being",
-          "n": "18"
-        },
-        {
-          "id": "gossip-girl-s3e19",
-          "t": "Dr. Estrangeloved",
-          "n": "19"
-        },
-        {
-          "id": "gossip-girl-s3e20",
-          "t": "It’s a Dad, Dad, Dad World",
-          "n": "20"
-        },
-        {
-          "id": "gossip-girl-s3e21",
-          "t": "Ex-Husbands and Wives",
-          "n": "21"
-        },
-        {
-          "id": "gossip-girl-s3e22",
-          "t": "Last Tango, Then Paris",
-          "n": "22"
-        }
-      ]
+     "id": "gossip-girl-s1e3",
+     "t": "Poison Ivy",
+     "n": "3"
     },
     {
-      "id": "s4",
-      "title": "Season 4",
-      "sub": "2010–11 · 22 episodes",
-      "items": [
-        {
-          "id": "gossip-girl-s4e1",
-          "t": "Belles de Jour",
-          "n": "1"
-        },
-        {
-          "id": "gossip-girl-s4e2",
-          "t": "Double Identity",
-          "n": "2"
-        },
-        {
-          "id": "gossip-girl-s4e3",
-          "t": "The Undergraduates",
-          "n": "3"
-        },
-        {
-          "id": "gossip-girl-s4e4",
-          "t": "Touch of Eva",
-          "n": "4"
-        },
-        {
-          "id": "gossip-girl-s4e5",
-          "t": "Goodbye, Columbia",
-          "n": "5"
-        },
-        {
-          "id": "gossip-girl-s4e6",
-          "t": "Easy J",
-          "n": "6"
-        },
-        {
-          "id": "gossip-girl-s4e7",
-          "t": "War at the Roses",
-          "n": "7"
-        },
-        {
-          "id": "gossip-girl-s4e8",
-          "t": "Juliet Doesn't Live Here Anymore",
-          "n": "8"
-        },
-        {
-          "id": "gossip-girl-s4e9",
-          "t": "The Witches of Bushwick",
-          "n": "9"
-        },
-        {
-          "id": "gossip-girl-s4e10",
-          "t": "Gaslit",
-          "n": "10"
-        },
-        {
-          "id": "gossip-girl-s4e11",
-          "t": "The Townie",
-          "n": "11"
-        },
-        {
-          "id": "gossip-girl-s4e12",
-          "t": "The Kids Are Not All Right",
-          "n": "12"
-        },
-        {
-          "id": "gossip-girl-s4e13",
-          "t": "Damien Darko",
-          "n": "13"
-        },
-        {
-          "id": "gossip-girl-s4e14",
-          "t": "Panic Roommate",
-          "n": "14"
-        },
-        {
-          "id": "gossip-girl-s4e15",
-          "t": "It-Girl Happened One Night",
-          "n": "15"
-        },
-        {
-          "id": "gossip-girl-s4e16",
-          "t": "While You Weren't Sleeping",
-          "n": "16"
-        },
-        {
-          "id": "gossip-girl-s4e17",
-          "t": "Empire of the Son",
-          "n": "17"
-        },
-        {
-          "id": "gossip-girl-s4e18",
-          "t": "The Kids Stay in the Picture",
-          "n": "18"
-        },
-        {
-          "id": "gossip-girl-s4e19",
-          "t": "Petty in Pink",
-          "n": "19"
-        },
-        {
-          "id": "gossip-girl-s4e20",
-          "t": "The Princesses and the Frog",
-          "n": "20"
-        },
-        {
-          "id": "gossip-girl-s4e21",
-          "t": "Shattered Bass",
-          "n": "21"
-        },
-        {
-          "id": "gossip-girl-s4e22",
-          "t": "The Wrong Goodbye",
-          "n": "22"
-        }
-      ]
+     "id": "gossip-girl-s1e4",
+     "t": "Bad News Blair",
+     "n": "4"
     },
     {
-      "id": "s5",
-      "title": "Season 5",
-      "sub": "2011–12 · 24 episodes",
-      "items": [
-        {
-          "id": "gossip-girl-s5e1",
-          "t": "Yes, Then Zero",
-          "n": "1"
-        },
-        {
-          "id": "gossip-girl-s5e2",
-          "t": "Beauty and the Feast",
-          "n": "2"
-        },
-        {
-          "id": "gossip-girl-s5e3",
-          "t": "The Jewel of Denial",
-          "n": "3"
-        },
-        {
-          "id": "gossip-girl-s5e4",
-          "t": "Memoirs of an Invisible Dan",
-          "n": "4"
-        },
-        {
-          "id": "gossip-girl-s5e5",
-          "t": "The Fasting and the Furious",
-          "n": "5"
-        },
-        {
-          "id": "gossip-girl-s5e6",
-          "t": "I Am Number Nine",
-          "n": "6"
-        },
-        {
-          "id": "gossip-girl-s5e7",
-          "t": "The Big Sleep No More",
-          "n": "7"
-        },
-        {
-          "id": "gossip-girl-s5e8",
-          "t": "All the Pretty Sources",
-          "n": "8"
-        },
-        {
-          "id": "gossip-girl-s5e9",
-          "t": "Rhodes to Perdition",
-          "n": "9"
-        },
-        {
-          "id": "gossip-girl-s5e10",
-          "t": "Riding in Town Cars with Boys",
-          "n": "10"
-        },
-        {
-          "id": "gossip-girl-s5e11",
-          "t": "The End of the Affair?",
-          "n": "11"
-        },
-        {
-          "id": "gossip-girl-s5e12",
-          "t": "Father and the Bride",
-          "n": "12"
-        },
-        {
-          "id": "gossip-girl-s5e13",
-          "t": "G.G.",
-          "n": "13"
-        },
-        {
-          "id": "gossip-girl-s5e14",
-          "t": "The Backup Dan",
-          "n": "14"
-        },
-        {
-          "id": "gossip-girl-s5e15",
-          "t": "Crazy, Cupid, Love",
-          "n": "15"
-        },
-        {
-          "id": "gossip-girl-s5e16",
-          "t": "Cross Rhodes",
-          "n": "16"
-        },
-        {
-          "id": "gossip-girl-s5e17",
-          "t": "The Princess Dowry",
-          "n": "17"
-        },
-        {
-          "id": "gossip-girl-s5e18",
-          "t": "Con Heir",
-          "n": "18"
-        },
-        {
-          "id": "gossip-girl-s5e19",
-          "t": "It Girl, Interrupted",
-          "n": "19"
-        },
-        {
-          "id": "gossip-girl-s5e20",
-          "t": "Salon of the Dead",
-          "n": "20"
-        },
-        {
-          "id": "gossip-girl-s5e21",
-          "t": "Despicable B",
-          "n": "21"
-        },
-        {
-          "id": "gossip-girl-s5e22",
-          "t": "Raiders of the Lost Art",
-          "n": "22"
-        },
-        {
-          "id": "gossip-girl-s5e23",
-          "t": "The Fugitives",
-          "n": "23"
-        },
-        {
-          "id": "gossip-girl-s5e24",
-          "t": "The Return of the Ring",
-          "n": "24"
-        }
-      ]
+     "id": "gossip-girl-s1e5",
+     "t": "Dare Devil",
+     "n": "5"
     },
     {
-      "id": "s6",
-      "title": "Season 6",
-      "sub": "2012 · 10 episodes",
-      "items": [
-        {
-          "id": "gossip-girl-s6e1",
-          "t": "Gone Maybe Gone",
-          "n": "1"
-        },
-        {
-          "id": "gossip-girl-s6e2",
-          "t": "High Infidelity",
-          "n": "2"
-        },
-        {
-          "id": "gossip-girl-s6e3",
-          "t": "Dirty Rotten Scandals",
-          "n": "3"
-        },
-        {
-          "id": "gossip-girl-s6e4",
-          "t": "Portrait of a Lady Alexander",
-          "n": "4"
-        },
-        {
-          "id": "gossip-girl-s6e5",
-          "t": "Monstrous Ball",
-          "n": "5"
-        },
-        {
-          "id": "gossip-girl-s6e6",
-          "t": "Where the Vile Things Are",
-          "n": "6"
-        },
-        {
-          "id": "gossip-girl-s6e7",
-          "t": "Save the Last Chance",
-          "n": "7"
-        },
-        {
-          "id": "gossip-girl-s6e8",
-          "t": "It's Really Complicated",
-          "n": "8"
-        },
-        {
-          "id": "gossip-girl-s6e9",
-          "t": "The Revengers",
-          "n": "9"
-        },
-        {
-          "id": "gossip-girl-s6e10",
-          "t": "New York, I Love You XOXO",
-          "n": "10",
-          "note": "Series finale"
-        }
-      ]
+     "id": "gossip-girl-s1e6",
+     "t": "The Handmaiden's Tale",
+     "n": "6"
+    },
+    {
+     "id": "gossip-girl-s1e7",
+     "t": "Victor, Victrola",
+     "n": "7"
+    },
+    {
+     "id": "gossip-girl-s1e8",
+     "t": "Seventeen Candles",
+     "n": "8"
+    },
+    {
+     "id": "gossip-girl-s1e9",
+     "t": "Blair Waldorf Must Pie!",
+     "n": "9"
+    },
+    {
+     "id": "gossip-girl-s1e10",
+     "t": "Hi, Society",
+     "n": "10"
+    },
+    {
+     "id": "gossip-girl-s1e11",
+     "t": "Roman Holiday",
+     "n": "11"
+    },
+    {
+     "id": "gossip-girl-s1e12",
+     "t": "School Lies",
+     "n": "12"
+    },
+    {
+     "id": "gossip-girl-s1e13",
+     "t": "A Thin Line Between Chuck and Nate",
+     "n": "13"
+    },
+    {
+     "id": "gossip-girl-s1e14",
+     "t": "The Blair Bitch Project",
+     "n": "14"
+    },
+    {
+     "id": "gossip-girl-s1e15",
+     "t": "Desperately Seeking Serena",
+     "n": "15"
+    },
+    {
+     "id": "gossip-girl-s1e16",
+     "t": "All About My Brother",
+     "n": "16"
+    },
+    {
+     "id": "gossip-girl-s1e17",
+     "t": "Woman on the Verge",
+     "n": "17"
+    },
+    {
+     "id": "gossip-girl-s1e18",
+     "t": "Much 'I Do' About Nothing",
+     "n": "18"
     }
-  ]
+   ],
+   "open": true,
+   "intro": "Eighteen episodes: the 2007–2008 writers' strike interrupted the season, and its last five aired after the strike ended."
+  },
+  {
+   "id": "s2",
+   "title": "Season 2",
+   "sub": "2008–09 · 25 episodes",
+   "items": [
+    {
+     "id": "gossip-girl-s2e1",
+     "t": "Summer, Kind of Wonderful",
+     "n": "1"
+    },
+    {
+     "id": "gossip-girl-s2e2",
+     "t": "Never Been Marcused",
+     "n": "2"
+    },
+    {
+     "id": "gossip-girl-s2e3",
+     "t": "The Dark Night",
+     "n": "3"
+    },
+    {
+     "id": "gossip-girl-s2e4",
+     "t": "The Ex Files",
+     "n": "4"
+    },
+    {
+     "id": "gossip-girl-s2e5",
+     "t": "The Serena Also Rises",
+     "n": "5"
+    },
+    {
+     "id": "gossip-girl-s2e6",
+     "t": "New Haven Can Wait",
+     "n": "6"
+    },
+    {
+     "id": "gossip-girl-s2e7",
+     "t": "Chuck in Real Life",
+     "n": "7"
+    },
+    {
+     "id": "gossip-girl-s2e8",
+     "t": "Pret-a-Poor-J",
+     "n": "8"
+    },
+    {
+     "id": "gossip-girl-s2e9",
+     "t": "There Might Be Blood",
+     "n": "9"
+    },
+    {
+     "id": "gossip-girl-s2e10",
+     "t": "Bonfire of the Vanity",
+     "n": "10"
+    },
+    {
+     "id": "gossip-girl-s2e11",
+     "t": "The Magnificent Archibalds",
+     "n": "11"
+    },
+    {
+     "id": "gossip-girl-s2e12",
+     "t": "It's a Wonderful Lie",
+     "n": "12"
+    },
+    {
+     "id": "gossip-girl-s2e13",
+     "t": "O Brother, Where Bart Thou?",
+     "n": "13"
+    },
+    {
+     "id": "gossip-girl-s2e14",
+     "t": "In the Realm of the Basses",
+     "n": "14"
+    },
+    {
+     "id": "gossip-girl-s2e15",
+     "t": "Gone with the Will",
+     "n": "15"
+    },
+    {
+     "id": "gossip-girl-s2e16",
+     "t": "You've Got Yale!",
+     "n": "16"
+    },
+    {
+     "id": "gossip-girl-s2e17",
+     "t": "Carrnal Knowledge",
+     "n": "17"
+    },
+    {
+     "id": "gossip-girl-s2e18",
+     "t": "The Age of Dissonance",
+     "n": "18"
+    },
+    {
+     "id": "gossip-girl-s2e19",
+     "t": "The Grandfather",
+     "n": "19"
+    },
+    {
+     "id": "gossip-girl-s2e20",
+     "t": "Remains of the J",
+     "n": "20"
+    },
+    {
+     "id": "gossip-girl-s2e21",
+     "t": "Seder Anything",
+     "n": "21"
+    },
+    {
+     "id": "gossip-girl-s2e22",
+     "t": "Southern Gentlemen Prefer Blondes",
+     "n": "22"
+    },
+    {
+     "id": "gossip-girl-s2e23",
+     "t": "The Wrath of Con",
+     "n": "23"
+    },
+    {
+     "id": "gossip-girl-s2e24",
+     "t": "Valley Girls",
+     "n": "24",
+     "note": "A backdoor pilot for a spin-off that was not picked up"
+    },
+    {
+     "id": "gossip-girl-s2e25",
+     "t": "The Goodbye Gossip Girl",
+     "n": "25"
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "title": "Season 3",
+   "sub": "2009–10 · 22 episodes",
+   "items": [
+    {
+     "id": "gossip-girl-s3e1",
+     "t": "Reversals of Fortune",
+     "n": "1"
+    },
+    {
+     "id": "gossip-girl-s3e2",
+     "t": "The Freshman",
+     "n": "2"
+    },
+    {
+     "id": "gossip-girl-s3e3",
+     "t": "The Lost Boy",
+     "n": "3"
+    },
+    {
+     "id": "gossip-girl-s3e4",
+     "t": "Dan de Fleurette",
+     "n": "4"
+    },
+    {
+     "id": "gossip-girl-s3e5",
+     "t": "Rufus Getting Married",
+     "n": "5"
+    },
+    {
+     "id": "gossip-girl-s3e6",
+     "t": "Enough About Eve",
+     "n": "6"
+    },
+    {
+     "id": "gossip-girl-s3e7",
+     "t": "How to Succeed in Bassness",
+     "n": "7"
+    },
+    {
+     "id": "gossip-girl-s3e8",
+     "t": "The Grandfather: Part II",
+     "n": "8"
+    },
+    {
+     "id": "gossip-girl-s3e9",
+     "t": "They Shoot Humphreys, Don't They?",
+     "n": "9"
+    },
+    {
+     "id": "gossip-girl-s3e10",
+     "t": "The Last Days of Disco Stick",
+     "n": "10"
+    },
+    {
+     "id": "gossip-girl-s3e11",
+     "t": "The Treasure of Serena Madre",
+     "n": "11"
+    },
+    {
+     "id": "gossip-girl-s3e12",
+     "t": "The Debarted",
+     "n": "12"
+    },
+    {
+     "id": "gossip-girl-s3e13",
+     "t": "The Hurt Locket",
+     "n": "13"
+    },
+    {
+     "id": "gossip-girl-s3e14",
+     "t": "The Lady Vanished",
+     "n": "14"
+    },
+    {
+     "id": "gossip-girl-s3e15",
+     "t": "The Sixteen Year Old Virgin",
+     "n": "15"
+    },
+    {
+     "id": "gossip-girl-s3e16",
+     "t": "The Empire Strikes Jack",
+     "n": "16"
+    },
+    {
+     "id": "gossip-girl-s3e17",
+     "t": "Inglourious Bassterds",
+     "n": "17"
+    },
+    {
+     "id": "gossip-girl-s3e18",
+     "t": "The Unblairable Lightness of Being",
+     "n": "18"
+    },
+    {
+     "id": "gossip-girl-s3e19",
+     "t": "Dr. Estrangeloved",
+     "n": "19"
+    },
+    {
+     "id": "gossip-girl-s3e20",
+     "t": "It’s a Dad, Dad, Dad World",
+     "n": "20"
+    },
+    {
+     "id": "gossip-girl-s3e21",
+     "t": "Ex-Husbands and Wives",
+     "n": "21"
+    },
+    {
+     "id": "gossip-girl-s3e22",
+     "t": "Last Tango, Then Paris",
+     "n": "22"
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "title": "Season 4",
+   "sub": "2010–11 · 22 episodes",
+   "items": [
+    {
+     "id": "gossip-girl-s4e1",
+     "t": "Belles de Jour",
+     "n": "1"
+    },
+    {
+     "id": "gossip-girl-s4e2",
+     "t": "Double Identity",
+     "n": "2"
+    },
+    {
+     "id": "gossip-girl-s4e3",
+     "t": "The Undergraduates",
+     "n": "3"
+    },
+    {
+     "id": "gossip-girl-s4e4",
+     "t": "Touch of Eva",
+     "n": "4"
+    },
+    {
+     "id": "gossip-girl-s4e5",
+     "t": "Goodbye, Columbia",
+     "n": "5"
+    },
+    {
+     "id": "gossip-girl-s4e6",
+     "t": "Easy J",
+     "n": "6"
+    },
+    {
+     "id": "gossip-girl-s4e7",
+     "t": "War at the Roses",
+     "n": "7"
+    },
+    {
+     "id": "gossip-girl-s4e8",
+     "t": "Juliet Doesn't Live Here Anymore",
+     "n": "8"
+    },
+    {
+     "id": "gossip-girl-s4e9",
+     "t": "The Witches of Bushwick",
+     "n": "9"
+    },
+    {
+     "id": "gossip-girl-s4e10",
+     "t": "Gaslit",
+     "n": "10"
+    },
+    {
+     "id": "gossip-girl-s4e11",
+     "t": "The Townie",
+     "n": "11"
+    },
+    {
+     "id": "gossip-girl-s4e12",
+     "t": "The Kids Are Not All Right",
+     "n": "12"
+    },
+    {
+     "id": "gossip-girl-s4e13",
+     "t": "Damien Darko",
+     "n": "13"
+    },
+    {
+     "id": "gossip-girl-s4e14",
+     "t": "Panic Roommate",
+     "n": "14"
+    },
+    {
+     "id": "gossip-girl-s4e15",
+     "t": "It-Girl Happened One Night",
+     "n": "15"
+    },
+    {
+     "id": "gossip-girl-s4e16",
+     "t": "While You Weren't Sleeping",
+     "n": "16"
+    },
+    {
+     "id": "gossip-girl-s4e17",
+     "t": "Empire of the Son",
+     "n": "17"
+    },
+    {
+     "id": "gossip-girl-s4e18",
+     "t": "The Kids Stay in the Picture",
+     "n": "18"
+    },
+    {
+     "id": "gossip-girl-s4e19",
+     "t": "Petty in Pink",
+     "n": "19"
+    },
+    {
+     "id": "gossip-girl-s4e20",
+     "t": "The Princesses and the Frog",
+     "n": "20"
+    },
+    {
+     "id": "gossip-girl-s4e21",
+     "t": "Shattered Bass",
+     "n": "21"
+    },
+    {
+     "id": "gossip-girl-s4e22",
+     "t": "The Wrong Goodbye",
+     "n": "22"
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "title": "Season 5",
+   "sub": "2011–12 · 24 episodes",
+   "items": [
+    {
+     "id": "gossip-girl-s5e1",
+     "t": "Yes, Then Zero",
+     "n": "1"
+    },
+    {
+     "id": "gossip-girl-s5e2",
+     "t": "Beauty and the Feast",
+     "n": "2"
+    },
+    {
+     "id": "gossip-girl-s5e3",
+     "t": "The Jewel of Denial",
+     "n": "3"
+    },
+    {
+     "id": "gossip-girl-s5e4",
+     "t": "Memoirs of an Invisible Dan",
+     "n": "4"
+    },
+    {
+     "id": "gossip-girl-s5e5",
+     "t": "The Fasting and the Furious",
+     "n": "5"
+    },
+    {
+     "id": "gossip-girl-s5e6",
+     "t": "I Am Number Nine",
+     "n": "6"
+    },
+    {
+     "id": "gossip-girl-s5e7",
+     "t": "The Big Sleep No More",
+     "n": "7"
+    },
+    {
+     "id": "gossip-girl-s5e8",
+     "t": "All the Pretty Sources",
+     "n": "8"
+    },
+    {
+     "id": "gossip-girl-s5e9",
+     "t": "Rhodes to Perdition",
+     "n": "9"
+    },
+    {
+     "id": "gossip-girl-s5e10",
+     "t": "Riding in Town Cars with Boys",
+     "n": "10"
+    },
+    {
+     "id": "gossip-girl-s5e11",
+     "t": "The End of the Affair?",
+     "n": "11"
+    },
+    {
+     "id": "gossip-girl-s5e12",
+     "t": "Father and the Bride",
+     "n": "12"
+    },
+    {
+     "id": "gossip-girl-s5e13",
+     "t": "G.G.",
+     "n": "13"
+    },
+    {
+     "id": "gossip-girl-s5e14",
+     "t": "The Backup Dan",
+     "n": "14"
+    },
+    {
+     "id": "gossip-girl-s5e15",
+     "t": "Crazy, Cupid, Love",
+     "n": "15"
+    },
+    {
+     "id": "gossip-girl-s5e16",
+     "t": "Cross Rhodes",
+     "n": "16"
+    },
+    {
+     "id": "gossip-girl-s5e17",
+     "t": "The Princess Dowry",
+     "n": "17"
+    },
+    {
+     "id": "gossip-girl-s5e18",
+     "t": "Con Heir",
+     "n": "18"
+    },
+    {
+     "id": "gossip-girl-s5e19",
+     "t": "It Girl, Interrupted",
+     "n": "19"
+    },
+    {
+     "id": "gossip-girl-s5e20",
+     "t": "Salon of the Dead",
+     "n": "20"
+    },
+    {
+     "id": "gossip-girl-s5e21",
+     "t": "Despicable B",
+     "n": "21"
+    },
+    {
+     "id": "gossip-girl-s5e22",
+     "t": "Raiders of the Lost Art",
+     "n": "22"
+    },
+    {
+     "id": "gossip-girl-s5e23",
+     "t": "The Fugitives",
+     "n": "23"
+    },
+    {
+     "id": "gossip-girl-s5e24",
+     "t": "The Return of the Ring",
+     "n": "24"
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "title": "Season 6",
+   "sub": "2012 · 10 episodes",
+   "items": [
+    {
+     "id": "gossip-girl-s6e1",
+     "t": "Gone Maybe Gone",
+     "n": "1"
+    },
+    {
+     "id": "gossip-girl-s6e2",
+     "t": "High Infidelity",
+     "n": "2"
+    },
+    {
+     "id": "gossip-girl-s6e3",
+     "t": "Dirty Rotten Scandals",
+     "n": "3"
+    },
+    {
+     "id": "gossip-girl-s6e4",
+     "t": "Portrait of a Lady Alexander",
+     "n": "4"
+    },
+    {
+     "id": "gossip-girl-s6e5",
+     "t": "Monstrous Ball",
+     "n": "5"
+    },
+    {
+     "id": "gossip-girl-s6e6",
+     "t": "Where the Vile Things Are",
+     "n": "6"
+    },
+    {
+     "id": "gossip-girl-s6e7",
+     "t": "Save the Last Chance",
+     "n": "7"
+    },
+    {
+     "id": "gossip-girl-s6e8",
+     "t": "It's Really Complicated",
+     "n": "8"
+    },
+    {
+     "id": "gossip-girl-s6e9",
+     "t": "The Revengers",
+     "n": "9"
+    },
+    {
+     "id": "gossip-girl-s6e10",
+     "t": "New York, I Love You XOXO",
+     "n": "10"
+    }
+   ]
+  }
+ ]
 }

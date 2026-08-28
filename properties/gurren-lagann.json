@@ -1,210 +1,209 @@
 {
-  "slug": "gurren-lagann",
-  "title": "Gurren Lagann",
-  "subtitle": "the whole 2007 run — and neither film",
-  "kind": "anime",
-  "popularity": 69,
-  "year": "2007",
-  "blurb": "Gainax's twenty-seven-episode mecha series in broadcast order, plus the bonus episode that came with the game. Both films re-cut the series, so neither is listed.",
-  "unit": {
-    "one": "episode",
-    "many": "episodes"
-  },
-  "verb": {
-    "base": "watch",
-    "past": "watched",
-    "ing": "watching"
-  },
-  "itemOrder": "number-first",
-  "accent": "#A62020",
-  "accentDark": "#FF7A7A",
-  "tiers": false,
-  "notes": [
-    [
-      "Two films exist. Neither of them is a row.",
-      "Gurren Lagann the Movie: Childhood's End (September 6, 2008, 112 minutes) is, in the source's own words, “a compilation of the events of the first arc of the series (episodes one through fifteen) with around 20 minutes of newly animated scenes”. Gurren Lagann the Movie: The Lights in the Sky Are Stars (April 25, 2009, 126 minutes) “focuses on the second half of the series, contributing more new animation than the first film”. Neither is ever called a sequel, the article's lead calls the pair “two animated film versions”, and the production section says the project began as a film that retells the series. They are the same viewing as the episodes above, so listing them would count the run twice. If you would rather watch it as two sittings than as twenty-seven, they are how — and that is all they are."
-    ],
-    [
-      "The second film borrows episode 27's title.",
-      "“The Lights in the Sky Are Stars” is both the last episode of the series and the name of the second film. The row on this list is the episode."
-    ],
-    [
-      "One row is optional, and it is not a re-cut.",
-      "The source's episode table carries twenty-eight entries, not twenty-seven: one is numbered 5.5 and its own note calls it a bonus episode bundled with the Nintendo DS game, which came out in October 2007. It is new animation rather than a compilation, so it is here, sitting after episode 5 where the source puts it — but it never aired and is not one of the twenty-seven, so it is marked optional."
-    ],
-    [
-      "Nothing is weighted, and hours are not tracked here.",
-      "Every place a per-episode running time could live was checked and every one is empty. No episode has its own Wikipedia article: all 28 titles were asked for directly, in three forms each, and none of the 84 names resolves. No episode has a Wikidata item at all — nothing that is a television-series episode points at Q4277, and nothing in the series' orbit carries a duration. Neither the series infobox nor the episode list's season infobox has a runtime field, and not one of the 28 episode-table entries carries a running-time field. The only figure that exists for the television run is a single series-level 25 minutes on Q4277, which is an average rather than 27 measurements, and spreading it across every row would invent precision the source refuses to give. It has to be every row or no row, because a row with no weight silently counts as a full hour — so it is no row, and every episode counts one. The only lengths published anywhere are the two films' 112 and 126 minutes, and neither film is a row."
-    ],
-    [
-      "What else is deliberately absent.",
-      "Gurren Lagann Parallel Works, the 15 short music videos in two batches (June 15, 2008 and May 26, 2010) that tell alternative stories — the source files them apart from the episodes, and they are not the series. The Yoko music video that shipped with a DVD pack. The manga, the light novels, the spin-off manga, the DS game the bonus episode came bundled with, and the mobile game. This list is the television run and nothing else."
-    ],
-    "Episode titles, numbering and air dates machine-read from Wikipedia's “List of Gurren Lagann episodes”; the film descriptions, dates and runtimes from the “Gurren Lagann” article. The episode count is asserted four ways — both infoboxes, the list article's own prose and Wikidata's Q4277 — the numbering asserted contiguous with exactly one 5.5, and the first film's episode range read out of the source's own sentence, before this builds."
+ "slug": "gurren-lagann",
+ "title": "Gurren Lagann",
+ "subtitle": "the whole 2007 run — and neither film",
+ "kind": "anime",
+ "popularity": 69,
+ "year": "2007",
+ "blurb": "Gainax's twenty-seven-episode mecha series in broadcast order, plus the bonus episode that came with the game. Both films re-cut the series, so neither is listed.",
+ "unit": {
+  "one": "episode",
+  "many": "episodes"
+ },
+ "verb": {
+  "base": "watch",
+  "past": "watched",
+  "ing": "watching"
+ },
+ "itemOrder": "number-first",
+ "accent": "#A62020",
+ "accentDark": "#FF7A7A",
+ "tiers": false,
+ "notes": [
+  [
+   "Two films exist. Neither of them is a row.",
+   "Gurren Lagann the Movie: Childhood's End (September 6, 2008, 112 minutes) is, in the source's own words, “a compilation of the events of the first arc of the series (episodes one through fifteen) with around 20 minutes of newly animated scenes”. Gurren Lagann the Movie: The Lights in the Sky Are Stars (April 25, 2009, 126 minutes) “focuses on the second half of the series, contributing more new animation than the first film”. Neither is ever called a sequel, the article's lead calls the pair “two animated film versions”, and the production section says the project began as a film that retells the series. They are the same viewing as the episodes above, so listing them would count the run twice. If you would rather watch it as two sittings than as twenty-seven, they are how — and that is all they are."
   ],
-  "sections": [
+  [
+   "The second film borrows episode 27's title.",
+   "“The Lights in the Sky Are Stars” is both the last episode of the series and the name of the second film. The row on this list is the episode."
+  ],
+  [
+   "One row is optional, and it is not a re-cut.",
+   "The source's episode table carries twenty-eight entries, not twenty-seven: one is numbered 5.5 and its own note calls it a bonus episode bundled with the Nintendo DS game, which came out in October 2007. It is new animation rather than a compilation, so it is here, sitting after episode 5 where the source puts it — but it never aired and is not one of the twenty-seven, so it is marked optional."
+  ],
+  [
+   "Nothing is weighted, and hours are not tracked here.",
+   "Every place a per-episode running time could live was checked and every one is empty. No episode has its own Wikipedia article: all 28 titles were asked for directly, in three forms each, and none of the 84 names resolves. No episode has a Wikidata item at all — nothing that is a television-series episode points at Q4277, and nothing in the series' orbit carries a duration. Neither the series infobox nor the episode list's season infobox has a runtime field, and not one of the 28 episode-table entries carries a running-time field. The only figure that exists for the television run is a single series-level 25 minutes on Q4277, which is an average rather than 27 measurements, and spreading it across every row would invent precision the source refuses to give. It has to be every row or no row, because a row with no weight silently counts as a full hour — so it is no row, and every episode counts one. The only lengths published anywhere are the two films' 112 and 126 minutes, and neither film is a row."
+  ],
+  [
+   "What else is deliberately absent.",
+   "Gurren Lagann Parallel Works, the 15 short music videos in two batches (June 15, 2008 and May 26, 2010) that tell alternative stories — the source files them apart from the episodes, and they are not the series. The Yoko music video that shipped with a DVD pack. The manga, the light novels, the spin-off manga, the DS game the bonus episode came bundled with, and the mobile game. This list is the television run and nothing else."
+  ],
+  "Episode titles, numbering and air dates machine-read from Wikipedia's “List of Gurren Lagann episodes”; the film descriptions, dates and runtimes from the “Gurren Lagann” article. The episode count is asserted four ways — both infoboxes, the list article's own prose and Wikidata's Q4277 — the numbering asserted contiguous with exactly one 5.5, and the first film's episode range read out of the source's own sentence, before this builds."
+ ],
+ "sections": [
+  {
+   "id": "arc1",
+   "title": "Episodes 1–15",
+   "sub": "2007 · 15 episodes · plus one bonus",
+   "intro": "What the source calls the first arc — and exactly what the first film re-cuts, which is why that film is not a row. The bonus episode sits after episode 5, where the source puts it, and is marked optional: it shipped with a game rather than on television.",
+   "open": true,
+   "items": [
     {
-      "id": "arc1",
-      "title": "Episodes 1–15",
-      "sub": "2007 · 15 episodes · plus one bonus",
-      "intro": "What the source calls the first arc — and exactly what the first film re-cuts, which is why that film is not a row. The bonus episode sits after episode 5, where the source puts it, and is marked optional: it shipped with a game rather than on television.",
-      "open": true,
-      "items": [
-        {
-          "id": "gl-e1",
-          "t": "Bust Through the Heavens with Your Drill!",
-          "n": "1",
-          "note": "Series premiere"
-        },
-        {
-          "id": "gl-e2",
-          "t": "I Said I'm Gonna Pilot That Thing!!",
-          "n": "2"
-        },
-        {
-          "id": "gl-e3",
-          "t": "Who Do You Think You Are, Having Two Faces!?",
-          "n": "3"
-        },
-        {
-          "id": "gl-e4",
-          "t": "Having Multiple Faces Makes You Great?",
-          "n": "4"
-        },
-        {
-          "id": "gl-e5",
-          "t": "I Don't Get It, Not One Bit!",
-          "n": "5"
-        },
-        {
-          "id": "gl-e5-5",
-          "t": "My Gurren is Sparkling!!",
-          "n": "5.5",
-          "note": "Bonus episode bundled with the Nintendo DS game; not one of the twenty-seven broadcast episodes, and numbered 5.5 by the source",
-          "opt": true
-        },
-        {
-          "id": "gl-e6",
-          "t": "Sit in the Hot Tub 'Til You're Sick!!",
-          "n": "6",
-          "note": "Broadcast with clip-show inserts standing in for cut footage; the uncut version, “There are Some Things I Just Have to See!!”, is on the home video releases"
-        },
-        {
-          "id": "gl-e7",
-          "t": "You're Gonna Do It!!",
-          "n": "7"
-        },
-        {
-          "id": "gl-e8",
-          "t": "Later, Buddy",
-          "n": "8"
-        },
-        {
-          "id": "gl-e9",
-          "t": "What, Exactly, Is a Human?",
-          "n": "9"
-        },
-        {
-          "id": "gl-e10",
-          "t": "Who Is This Bro?",
-          "n": "10"
-        },
-        {
-          "id": "gl-e11",
-          "t": "Simon, Hands Off",
-          "n": "11"
-        },
-        {
-          "id": "gl-e12",
-          "t": "Yoko, Will You Do Me a Favor?",
-          "n": "12"
-        },
-        {
-          "id": "gl-e13",
-          "t": "Eat Up, Everyone!",
-          "n": "13"
-        },
-        {
-          "id": "gl-e14",
-          "t": "Well Met, Everyone",
-          "n": "14"
-        },
-        {
-          "id": "gl-e15",
-          "t": "I Will Head Towards Tomorrow",
-          "n": "15"
-        }
-      ]
+     "id": "gl-e1",
+     "t": "Bust Through the Heavens with Your Drill!",
+     "n": "1",
+     "note": "Series premiere"
     },
     {
-      "id": "arc2",
-      "title": "Episodes 16–27",
-      "sub": "2007 · 12 episodes",
-      "intro": "The rest of the run. The second film covers what the source calls the second half of the series and is not a row either; see the notes.",
-      "items": [
-        {
-          "id": "gl-e16",
-          "t": "Compilation Episode",
-          "n": "16",
-          "note": "A clip show recapping the episodes before it"
-        },
-        {
-          "id": "gl-e17",
-          "t": "You Don't Know Anything!",
-          "n": "17"
-        },
-        {
-          "id": "gl-e18",
-          "t": "Tell Me the Secrets of This World",
-          "n": "18"
-        },
-        {
-          "id": "gl-e19",
-          "t": "We Will Survive by Any Means Necessary",
-          "n": "19"
-        },
-        {
-          "id": "gl-e20",
-          "t": "How Far Will God Test Us?",
-          "n": "20"
-        },
-        {
-          "id": "gl-e21",
-          "t": "You Are Someone Who Ought to Survive",
-          "n": "21"
-        },
-        {
-          "id": "gl-e22",
-          "t": "That is My Last Duty",
-          "n": "22"
-        },
-        {
-          "id": "gl-e23",
-          "t": "Let's Go, This is the Final Battle",
-          "n": "23"
-        },
-        {
-          "id": "gl-e24",
-          "t": "I'll Never Forget This Minute, This Second",
-          "n": "24"
-        },
-        {
-          "id": "gl-e25",
-          "t": "I Accept Your Last Wish!",
-          "n": "25"
-        },
-        {
-          "id": "gl-e26",
-          "t": "Let's Go, Buddy",
-          "n": "26"
-        },
-        {
-          "id": "gl-e27",
-          "t": "The Lights in the Sky Are Stars",
-          "n": "27",
-          "note": "Series finale"
-        }
-      ]
+     "id": "gl-e2",
+     "t": "I Said I'm Gonna Pilot That Thing!!",
+     "n": "2"
+    },
+    {
+     "id": "gl-e3",
+     "t": "Who Do You Think You Are, Having Two Faces!?",
+     "n": "3"
+    },
+    {
+     "id": "gl-e4",
+     "t": "Having Multiple Faces Makes You Great?",
+     "n": "4"
+    },
+    {
+     "id": "gl-e5",
+     "t": "I Don't Get It, Not One Bit!",
+     "n": "5"
+    },
+    {
+     "id": "gl-e5-5",
+     "t": "My Gurren is Sparkling!!",
+     "n": "5.5",
+     "note": "Bonus episode bundled with the Nintendo DS game; not one of the twenty-seven broadcast episodes, and numbered 5.5 by the source",
+     "opt": true
+    },
+    {
+     "id": "gl-e6",
+     "t": "Sit in the Hot Tub 'Til You're Sick!!",
+     "n": "6",
+     "note": "Broadcast with clip-show inserts standing in for cut footage; the uncut version, “There are Some Things I Just Have to See!!”, is on the home video releases"
+    },
+    {
+     "id": "gl-e7",
+     "t": "You're Gonna Do It!!",
+     "n": "7"
+    },
+    {
+     "id": "gl-e8",
+     "t": "Later, Buddy",
+     "n": "8"
+    },
+    {
+     "id": "gl-e9",
+     "t": "What, Exactly, Is a Human?",
+     "n": "9"
+    },
+    {
+     "id": "gl-e10",
+     "t": "Who Is This Bro?",
+     "n": "10"
+    },
+    {
+     "id": "gl-e11",
+     "t": "Simon, Hands Off",
+     "n": "11"
+    },
+    {
+     "id": "gl-e12",
+     "t": "Yoko, Will You Do Me a Favor?",
+     "n": "12"
+    },
+    {
+     "id": "gl-e13",
+     "t": "Eat Up, Everyone!",
+     "n": "13"
+    },
+    {
+     "id": "gl-e14",
+     "t": "Well Met, Everyone",
+     "n": "14"
+    },
+    {
+     "id": "gl-e15",
+     "t": "I Will Head Towards Tomorrow",
+     "n": "15"
     }
-  ]
+   ]
+  },
+  {
+   "id": "arc2",
+   "title": "Episodes 16–27",
+   "sub": "2007 · 12 episodes",
+   "intro": "The rest of the run. The second film covers what the source calls the second half of the series and is not a row either; see the notes.",
+   "items": [
+    {
+     "id": "gl-e16",
+     "t": "Compilation Episode",
+     "n": "16",
+     "note": "A clip show recapping the episodes before it"
+    },
+    {
+     "id": "gl-e17",
+     "t": "You Don't Know Anything!",
+     "n": "17"
+    },
+    {
+     "id": "gl-e18",
+     "t": "Tell Me the Secrets of This World",
+     "n": "18"
+    },
+    {
+     "id": "gl-e19",
+     "t": "We Will Survive by Any Means Necessary",
+     "n": "19"
+    },
+    {
+     "id": "gl-e20",
+     "t": "How Far Will God Test Us?",
+     "n": "20"
+    },
+    {
+     "id": "gl-e21",
+     "t": "You Are Someone Who Ought to Survive",
+     "n": "21"
+    },
+    {
+     "id": "gl-e22",
+     "t": "That is My Last Duty",
+     "n": "22"
+    },
+    {
+     "id": "gl-e23",
+     "t": "Let's Go, This is the Final Battle",
+     "n": "23"
+    },
+    {
+     "id": "gl-e24",
+     "t": "I'll Never Forget This Minute, This Second",
+     "n": "24"
+    },
+    {
+     "id": "gl-e25",
+     "t": "I Accept Your Last Wish!",
+     "n": "25"
+    },
+    {
+     "id": "gl-e26",
+     "t": "Let's Go, Buddy",
+     "n": "26"
+    },
+    {
+     "id": "gl-e27",
+     "t": "The Lights in the Sky Are Stars",
+     "n": "27"
+    }
+   ]
+  }
+ ]
 }
