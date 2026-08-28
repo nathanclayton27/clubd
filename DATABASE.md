@@ -511,6 +511,22 @@ open with its name written down.
 **Order:** run `preflight-club-progress.sql` first and read the output, then the
 migration, then paste the readback onto CLU-389.
 
+⚠ **The pre-flight is ONE statement, and it has to stay that way.** It was five
+separate `select`s, and on 2026-08-28 Nathan pasted it and got back a single
+`must_be_zero = 0` — the last statement's result. The Supabase editor returns
+only that when a file is sent whole, which is the same behaviour recorded on
+CLU-424 and the reason the migration is written as one transaction. Four of the
+five checks were invisible, and a pre-flight nobody can read is worse than none:
+it looks like it passed.
+
+It now folds every check into one `union all` returning a row each — `n`, `what`,
+`verdict`, `detail` — so one paste answers everything, and each row reads `PASS`,
+`STOP` or `INFO`. The per-club listing that used to be check 2 is kept at the
+bottom **commented out**, with a note not to paste it with the rest, because
+appending it would make it the last statement and hide the verdicts again.
+
+Anything added to this file later must go inside that single select.
+
 ### And three that fail safely — leave them alone
 
 `migrate-add-friends.sql`, `migrate-add-friend-decline.sql` and the archived
