@@ -216,6 +216,13 @@ def main():
             "accent": p.get("accent", ""),
             "accentDark": p.get("accentDark", ""),
             "unit": p["unit"],
+            # home says what the reader actually did — "played 3 today" on a
+            # games list, not "ticked". Only the past tense travels; the other
+            # two forms are read from the property itself, which home never
+            # loads. Omitted where it is the "done" default so the manifest
+            # does not grow 145 identical strings.
+            **({"vpast": p["verb"]["past"]}
+               if (p.get("verb") or {}).get("past", "done") != "done" else {}),
             "total": p["_total"],
             # present only on a fully weighted list — its absence is what
             # tells the front end to fall back to counting rows

@@ -1457,7 +1457,7 @@ footer a{color:var(--steel)}
       <div class="wchips" id="hchips"></div>
     </div>
     <div class="hsec">The catalogue
-      <button class="foldbtn" id="b-wallfold" type="button">Collapse</button></div>
+      <button class="foldbtn" id="b-wallfold" type="button">Hide all lists</button></div>
     <div id="homewall"></div>
   </div>
 </div>
@@ -2242,6 +2242,17 @@ function groupNoun(){
 }
 const $ = id => document.getElementById(id);
 function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+// One sentence for one condition. There used to be three phrasings, two of
+// them opening with "Supabase" — a vendor the reader has no relationship with
+// and cannot act on — and the fourth, the auth failure most likely to read as
+// catastrophic, was the only one that DROPPED the reassurance. The reassurance
+// is the part the reader needs, so it leads and the detail follows in
+// parentheses for whoever is reading a console beside it.
+function syncFail(err){
+  const d = (err && (err.message || err.error_description || err.msg)) || err || '';
+  flash('Progress is safe on this device — the sync didn’t go through.'
+        + (d ? ' (' + d + ')' : ''));
+}
 function flash(t,el){
   // group panels come and go, so the target may not be on the page right now
   const m=$(el||'msg') || $('msg');
@@ -2395,7 +2406,7 @@ async function pushCloud(){
       return;
     }
     state('Sync failed — saved on this device','');
-    flash('Supabase: '+(error.message||'unknown error')+' (progress is safe on this device)');
+    syncFail(error);
     return;
   }
   const { error } = await sb.from('progress')
@@ -2404,7 +2415,7 @@ async function pushCloud(){
             { onConflict:'user_id,property_id' });
   if(error){
     state('Sync failed — saved on this device','');
-    flash('Supabase: '+(error.message||'unknown error')+' (progress is safe on this device)');
+    syncFail(error);
     console.error('[tracker] write failed', error);
   }else{
     if(UNIVSEEN) done.forEach(i=> UNIVSEEN.add(i));
@@ -2898,7 +2909,7 @@ async function adopt(){
     if(SESSION) return;               // see the guard below
     done = readLocal();
     state('Sync failed — saved on this device','');
-    flash('Supabase: '+(error.message||'unknown error')+' (progress is safe on this device)');
+    syncFail(error);
     console.error('[tracker] read failed', error);
     return;
   }
@@ -6028,7 +6039,8 @@ function resched(){
   const has = !!group.target_date;
   return '<div class="row" style="margin:0 0 12px">'
     + field('g-end', 'Finish by', group.target_date)
-    + '<button id="b-gdate">'+(has ? 'Change date' : 'Set a finish date')+'</button>'
+    + '<button id="b-gdate">'
+    + (has ? 'Change the finish date' : 'Set a finish date')+'</button>'
     + (has ? '<button id="b-gclear">Remove it</button>' : '')
     + '<span class="lbl">'
     + (has ? 'this one has no schedule, so pace is a straight line to here'
@@ -6537,7 +6549,7 @@ function wireClubIcons(){
 // overflow beside it. Nothing here assumes there is only one shape.
 function clubFoot(){
   return '<button class="aquiet" id="b-gadd">'
-    + (addingGroup ? 'Close' : '+ new / join another') + '</button>'
+    + (addingGroup ? 'close' : '+ new / join another') + '</button>'
     // A group has no code — the database enforces code IS NULL on a universal
     // row, because the code door must not reach one. So there is nothing to
     // copy and the chip is not drawn, rather than drawn holding "null". Its
@@ -7410,7 +7422,10 @@ function renderHeader(){
   $('b-prop-t').textContent = PROP.title;
   if(PROP.accent) $('pdot').style.background = PROP.accent;
   document.title = PROP.title + ' — ' + BRAND;
-  $('s-all-l').textContent = 'Done';
+  // every property declares a verb and 208 of them mean something other
+  // than "done" — a Columbo reader was told "Done" here and "watched"
+  // in the peek, for one state on one screen
+  $('s-all-l').textContent = cap(VERB.past);
   // a property may use fewer than three tiers — an empty one reads as 0 / 0
   document.querySelectorAll('.tierstat').forEach((el,i)=>
     el.classList.toggle('hide', !TIERED || !TIERTOT[i+1]));
@@ -8443,7 +8458,9 @@ function whyOf(s){
   // "on schedule" here and "2 overdue" on the list itself. Home does not run
   // the window maths, so it says what it actually knows.
   if(s.m.scheduled) bits.push('weekly');
-  if(s.today) bits.push('ticked '+s.today+' today');
+  // home holds every list at once, so the verb comes off each card's own
+  // manifest entry rather than the page-wide VERB
+  if(s.today) bits.push((s.m.vpast || 'ticked')+' '+s.today+' today');
   else if(s.last){
     const d = Math.floor((Date.now() - s.last) / 864e5);
     bits.push(d < 1 ? 'active today' : d === 1 ? 'active yesterday' : 'active '+d+'d ago');
@@ -8605,7 +8622,7 @@ function armTonight(shelf){
       : 'One thing from the whole catalogue — next-up for ordered lists.');
   const arm = ()=>{
     host.innerHTML = '<span class="tc">'+esc(scope())+'</span>'
-      + '<button id="b-tpick" type="button">Pick for me</button>';
+      + '<button id="b-tpick" type="button">Pick one for me</button>';
     $('b-tpick').onclick = draw;
   };
   const draw = async ()=>{
@@ -8618,7 +8635,7 @@ function armTonight(shelf){
       + '</span>'
       + '<span class="tc">'+esc(titleOf(r[0]))+'</span>'
       + '<button id="b-topen" type="button">Open</button>'
-      + '<button id="b-tpick" type="button">Another</button>';
+      + '<button id="b-tpick" type="button">Pick another</button>';
     $('b-topen').onclick = ()=>{
       try{ sessionStorage.setItem('gw:jump', r[1]); }catch(e){}
       go(r[0]);
@@ -9155,7 +9172,9 @@ function showHome(){
     }else{
       hw.classList.remove('hide');
       homeWallApply = renderWall(hw, true);
-      fb.textContent = 'Collapse';
+      // "Collapse" against "Show all N lists" named the mechanism on one
+      // press and the result on the other
+      fb.textContent = 'Hide all ' + splashList().length + ' lists';
     }
   };
   fb.onclick = ()=>{
@@ -9302,8 +9321,11 @@ function renderFilter(){
           + (lit ? 'Hide ' : 'Show ') + esc(v) + '">'+esc(v)
           + '<span class="fn">'+n[v]+'</span></button>';
       }).join('')
+    // both modes end in the same place — every category visible — so the
+    // button said one thing in terms of the result and the other in terms of
+    // the mechanism, for one outcome
     + (FILTERON.size ? '<button class="fclear" id="f-clear">'
-        + (ex ? 'Show everything' : 'Clear') + '</button>' : '')
+        + 'Show everything</button>' : '')
     + '<span class="fsum" id="f-sum"></span>';
 
   bar.querySelectorAll('.fchip').forEach(b=> b.onclick = ()=>{
@@ -10061,7 +10083,7 @@ loadProperty().then(()=>{
         console.error('[tracker] getSession failed', e);
         done = readLocal();
         state('Sync unavailable — saved on this device','');
-        flash('Could not reach Supabase: '+(e.message||e));
+        syncFail(e);
         paint();
       });
     setTimeout(()=>{
