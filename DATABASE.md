@@ -103,6 +103,39 @@ whole database follows.
 
 Both scripts are read-only and read `.sql` files. They connect to nothing.
 
+### The Supabase SQL editor sends a pasted file as ONE statement — measured, not assumed
+
+**`begin;` at the top of a file genuinely governs everything below it**, so
+"if anything raises, the whole file rolls back" is true here. Step 4 above is
+worth doing precisely because it works.
+
+Established 2026-08-28 (CLU-424) by Nathan running this in the real editor and
+pasting back the result — `ONE TRANSACTION - begin; governs the whole file`:
+
+```sql
+begin;
+create temp table _txn_probe as select txid_current() as xid;
+select case when (select xid from _txn_probe) = txid_current()
+         then 'ONE TRANSACTION - begin; governs the whole file'
+         else 'SPLIT - each statement got its own transaction' end as verdict;
+commit;
+```
+
+This mattered enough to measure because **every file in this project that claims
+"one transaction" was resting on it and none had checked.** Had the editor split
+on semicolons, `begin;` would have been its own statement and a failure partway
+down would have left earlier statements committed — which for
+`migrate-club-progress.sql` means an irreversible delete of 36 clubs escaping
+the transaction meant to be able to undo it.
+
+The probe is safe to re-run on production if anyone ever wants to confirm it
+again: `create temp table` lives in a per-session schema that PostgREST cannot
+see, it disappears with the connection, and no real table is read or written.
+
+⚠ **This licenses the transaction, not carelessness.** Rule 7 above still
+stands — paste the whole file, never half. A rollback can only undo what was
+inside the transaction it was told about.
+
 > **What `ordercheck.py` does not do.** It builds its symbol table from *the one
 > file it is scanning*. It has no cross-file knowledge, so it cannot see a single
 > edge between two migrations — `FINAL-2-privacy.sql` reports "0 create-time
