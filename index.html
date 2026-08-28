@@ -6040,7 +6040,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'c603790cf8db';
+const BUILD = '76540feb5913';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6157,6 +6157,10 @@ let NUMFIRST = false;
 // Optional per-item weight, in hours. A property that declares none gets all
 // ones, TOTALW === TOTAL, and every figure below reduces to an item count.
 let WEIGHT = [], CUMW = [], TOTALW = 0, WEIGHTED = false, IDX = new Map();
+// how many rows have a real runtime, and their total — TOTALW counts every row
+// including the ones whose hour was invented, so these are what "Time left" is
+// allowed to say out loud (CLU-131)
+let WTIMED = 0, WKNOWN = 0, TIMED = [];
 // The timeline need not cover everything on the page. PACETIERS names the
 // tiers a finish date paces you through; PW/PCUM/PTOTAL are the weights
 // restricted to those, and are identical to WEIGHT/CUMW/TOTALW without it.
@@ -13214,6 +13218,15 @@ function adoptSections(secs){
   WEIGHTED = DATA.some(s=> s.items.some(x=> typeof x.w === 'number'));
   WEIGHT = DATA.flatMap(s=> s.items.map(
     x=> typeof x.w === 'number' && x.w >= 0 ? x.w : 1));
+  // CLU-131. A row with no `w` resolves to 1 above, which is what lets the
+  // strip and the pace keep working — but it is an INVENTED hour, and 8 lists
+  // carry 159 of them. Track what is actually known so the figure a person
+  // reads can be honest about its own coverage.
+  TIMED = DATA.flatMap(s2=> s2.items.map(
+    x=> typeof x.w === 'number' && x.w >= 0));
+  WTIMED = TIMED.filter(Boolean).length;
+  WKNOWN = DATA.flatMap(s2=> s2.items)
+    .reduce((a, x)=> a + (typeof x.w === 'number' && x.w >= 0 ? x.w : 0), 0);
   CUMW = []; TOTALW = 0;
   WEIGHT.forEach(w=>{ TOTALW += w; CUMW.push(TOTALW); });
   // an all-zero weight set would divide by zero everywhere downstream
@@ -13727,14 +13740,24 @@ function paint(){
   const showW = WEIGHTED;
   $('s-wleft-w').classList.toggle('hide', !showW);
   if(showW){
-    const raw = Math.max(0, TOTALW - weightOf(done));
+    // Only rows with a real runtime are counted. TOTALW would include an
+    // invented hour for every untimed row, and 8 lists carry 159 of those —
+    // hellboy would claim 51 timed rows when it has 4 (CLU-131, his option 3).
+    let seen = 0;
+    done.forEach(id=>{ const i = IDX.get(id);
+      if(i !== undefined && TIMED[i]) seen += WEIGHT[i]; });
+    const raw = Math.max(0, WKNOWN - seen);
+    const partial = WTIMED < TOTAL;
     if(WUNIT){
       // the label already names the unit; "Issues left · 579 issues" said it twice
       const n = raw >= 10 ? Math.round(raw) : Math.round(raw * 10) / 10;
-      $('s-wleft-l').textContent = cap(WUNIT.many) + ' left';
+      $('s-wleft-l').textContent = cap(WUNIT.many) + ' left'
+        + (partial ? ' · ' + WTIMED + ' of ' + TOTAL + ' counted' : '');
       $('s-wleft').textContent = String(n);
     }else{
-      $('s-wleft-l').textContent = 'Time left';
+      // say the coverage rather than let a partial total read as a whole one
+      $('s-wleft-l').textContent = 'Time left'
+        + (partial ? ' · ' + WTIMED + ' of ' + TOTAL + ' timed' : '');
       $('s-wleft').textContent = hrs(raw);
     }
   }
