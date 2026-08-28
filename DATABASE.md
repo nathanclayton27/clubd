@@ -502,12 +502,11 @@ exist in `club_progress` and nowhere else. **Do not add a fold-on-leave
 trigger** — it would be a second definer trigger writing other users' rows, for
 nothing.
 
-⚠ **One thing genuinely unknown, and it should be settled once for every future
-migration:** whether the Supabase SQL editor sends a pasted file as a single
-statement or splits it on semicolons. The header of this file asserts *"One
-transaction"* as settled. It decides whether a syntax error mid-file fails safe
-or lets earlier statements escape the transaction. Establish it and write the
-answer here.
+**Settled 2026-08-28 (CLU-424): the editor sends a pasted file as ONE
+statement**, so this file's *"one transaction"* header is true and a raise
+anywhere really does roll back the delete. Measured in the real editor rather
+than assumed — the probe and the reasoning are in [§2](#2-is-this-safe-to-run).
+It was the last unknown standing between this file and a paste.
 
 ### And three that fail safely — leave them alone
 
