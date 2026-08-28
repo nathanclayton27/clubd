@@ -1343,7 +1343,8 @@ footer a{color:var(--steel)}
 </div>
 
 <div class="mast" id="mast">
-  <a class="mhome" id="mast-home" href="?home" title="Your shelf" aria-label="Your shelf">
+  <a class="mhome" id="mast-home" href="?home" title="Your shelf"
+     aria-label="clubd — your shelf">
     <span class="eye" id="clubbothy" aria-hidden="true"></span>
     <span class="mast-t" id="mast-t">clubd</span>
   </a>
@@ -1421,7 +1422,7 @@ footer a{color:var(--steel)}
          well as in the mast, and here he is a real control. -->
     <div class="hsec holds hide" id="hrec-h">
       <button class="eyehold" id="rechold" type="button"
-        title="dare to attempt to blind clubbothy?"
+        title="Hold Clubbothy’s eye for one recommendation — dare to blind him?"
         aria-label="Hold Clubbothy’s eye for one recommendation"><span
         class="eyewrap" id="recwrap"><span class="eye" id="receye"
         aria-hidden="true"></span></span><span class="ring"></span></button>
@@ -1683,7 +1684,8 @@ footer a{color:var(--steel)}
        list-level opinions together, in the one place a statement about all
        600 rows can live without repeating itself on any of them -->
   <h1 id="ptitle"><button class="tstar" id="b-star" aria-pressed="false"
-    title="Put this on the mantle">☆</button><span id="ptitle-t"></span><span class="lth" id="lthumb"></span></h1>
+    title="Put this on the mantle"
+    aria-label="Put this on the mantle">☆</button><span id="ptitle-t"></span><span class="lth" id="lthumb"></span></h1>
   <p class="tagline" id="pblurb"></p>
   <div class="strip" id="strip" role="img" aria-label="Your progress"></div>
   <div class="stack hide" id="stack" role="img" aria-label="Everyone’s progress"></div>
@@ -1716,7 +1718,7 @@ footer a{color:var(--steel)}
       <button id="b-signin" class="hide">Sign in</button>
       <!-- sign out moved to the account page (CLU-98); the bar shows the
            one-character door to it instead -->
-      <a id="b-baracct" class="hide" href="?account" title="Your account"><span class="ini" id="baracct-i"></span><span class="reqn hide" id="baracct-n"></span></a>
+      <a id="b-baracct" class="hide" href="?account" title="Your account"><span class="ini" id="baracct-i" aria-hidden="true"></span><span class="reqn hide" id="baracct-n"></span></a>
     </div>
   </div>
 </div>
@@ -6021,7 +6023,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '1984ff826c59';
+const BUILD = '5aecffc13a4a';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -11779,7 +11781,7 @@ function filterMenu(q){
       // markers lead the title. Every row in a group carries the same ones, so
       // the titles still line up: a trailing star drifted to the right-hand
       // edge whenever a title wrapped, which looked like a different control.
-      + (st.has(m.slug) ? '<span class="mstar" aria-label="On the mantle">★</span>' : '')
+      + (st.has(m.slug) ? '<span class="mstar" role="img" aria-label="On the mantle">★</span>' : '')
       + (locked ? '<span class="msec">Secret</span>' : '')
       + '<span class="pm-n">'+esc(locked ? (m.secret.title || 'Secret') : m.title)+'</span>'
       + '</span>'
@@ -11966,6 +11968,9 @@ function paintStar(){
   // "the mantle" rather than "favourites" (CLU-378): a star reads as a
   // rating, and the job is a location — this one is ready to pick up.
   b.title = on ? 'Take this off the mantle' : 'Put this on the mantle';
+  // the glyph is the whole of the button's text, so without this the
+  // accessible name is "☆" (CLU-192)
+  b.setAttribute('aria-label', b.title);
 }
 
 function cardHTML(m, why, compact, starred){
