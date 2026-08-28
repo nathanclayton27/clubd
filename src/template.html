@@ -9380,18 +9380,35 @@ function adoptSections(secs){
   ORDER = DATA.flatMap(s=>s.items.map(x=>x.id));
   VALID = new Set(ORDER);
   IDX = new Map(ORDER.map((id,i)=>[id,i]));
-  WEIGHTED = DATA.some(s=> s.items.some(x=> typeof x.w === 'number'));
-  WEIGHT = DATA.flatMap(s=> s.items.map(
-    x=> typeof x.w === 'number' && x.w >= 0 ? x.w : 1));
+  // A close-up row's weight is the hours of the list behind it, and it is
+  // deliberately NOT written into the property file: a typed number rots the
+  // day that filmography gains a film. build.py sums it into the target's
+  // manifest entry, which the page already has, so the row reads it from
+  // there rather than carrying a copy that could go stale.
+  const wOf = x=>{
+    if(typeof x.w === 'number' && x.w >= 0) return x.w;
+    if(x.into){
+      const m = MANIFEST.find(y=> y.slug === x.into);
+      if(m && typeof m.totalw === 'number' && m.totalw >= 0) return m.totalw;
+    }
+    return null;
+  };
+  WEIGHTED = DATA.some(s=> s.items.some(x=> wOf(x) !== null));
+  WEIGHT = DATA.flatMap(s=> s.items.map(x=>{
+    const w = wOf(x);
+    return w === null ? 1 : w;
+  }));
   // CLU-131. A row with no `w` resolves to 1 above, which is what lets the
   // strip and the pace keep working — but it is an INVENTED hour, and 8 lists
   // carry 159 of them. Track what is actually known so the figure a person
   // reads can be honest about its own coverage.
-  TIMED = DATA.flatMap(s2=> s2.items.map(
-    x=> typeof x.w === 'number' && x.w >= 0));
+  // wOf, not x.w: a close-up row's hours ARE known — they are the target's
+  // own, summed at build time — so counting it as untimed here would make
+  // Time left announce "0 of 15 counted" on a page where every hour is real.
+  TIMED = DATA.flatMap(s2=> s2.items.map(x=> wOf(x) !== null));
   WTIMED = TIMED.filter(Boolean).length;
   WKNOWN = DATA.flatMap(s2=> s2.items)
-    .reduce((a, x)=> a + (typeof x.w === 'number' && x.w >= 0 ? x.w : 0), 0);
+    .reduce((a, x)=> a + (wOf(x) || 0), 0);
   CUMW = []; TOTALW = 0;
   WEIGHT.forEach(w=>{ TOTALW += w; CUMW.push(TOTALW); });
   // an all-zero weight set would divide by zero everywhere downstream

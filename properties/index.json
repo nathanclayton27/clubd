@@ -3242,6 +3242,29 @@
     "total": 85
   },
   {
+    "slug": "directors",
+    "media": [
+      "anime",
+      "movies",
+      "tv"
+    ],
+    "title": "Directors",
+    "subtitle": "15 filmographies",
+    "kind": "film, TV and anime filmographies",
+    "year": "1925–",
+    "popularity": 58,
+    "blurb": "Fifteen filmographies as one list. Each row opens the director's own page, and finishing that page ticks the row here.",
+    "accent": "#5B4A9E",
+    "accentDark": "#9C8AE0",
+    "unit": {
+      "one": "filmography",
+      "many": "filmographies"
+    },
+    "vpast": "watched",
+    "total": 15,
+    "totalw": 675.85
+  },
+  {
     "slug": "dragon-age",
     "media": [
       "games"

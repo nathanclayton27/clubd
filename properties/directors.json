@@ -1,0 +1,166 @@
+{
+ "slug": "directors",
+ "title": "Directors",
+ "subtitle": "15 filmographies",
+ "kind": "film, TV and anime filmographies",
+ "year": "1925–",
+ "popularity": 58,
+ "unit": {
+  "one": "filmography",
+  "many": "filmographies"
+ },
+ "verb": {
+  "base": "watch",
+  "ing": "watching",
+  "past": "watched"
+ },
+ "accent": "#5B4A9E",
+ "accentDark": "#9C8AE0",
+ "blurb": "Fifteen filmographies as one list. Each row opens the director's own page, and finishing that page ticks the row here.",
+ "notes": [
+  [
+   "Every row is a door.",
+   "Hover a row and a loupe appears with a fraction beside it — how far into that filmography you already are. Opening it takes you to the director's own page, which is an ordinary list with its own strip, its own schedule and its own clubs. Nothing about it changes because it is reachable from here."
+  ],
+  [
+   "Ticking works in both directions.",
+   "Marking a row here ticks that director's whole page, and finishing that page marks the row here. Unticking a row only takes back the ticks this page put there — anything you had already marked yourself stays marked."
+  ],
+  [
+   "The widths are the point.",
+   "Each mark is one filmography and its width is that filmography's real hours, summed from the films themselves and never typed here. Nicolas Cage against Quentin Tarantino is a sentence you can read off the strip before you read a number."
+  ],
+  [
+   "What the Sam Raimi row does not count.",
+   "Its hours cover the films. The 29 Ash vs Evil Dead episodes on that list carry no published runtimes and are recorded as zero rather than guessed at, so the row understates him. A guessed half-hour would reach somebody's finish date, which is worse than a number that is honestly short."
+  ]
+ ],
+ "sections": [
+  {
+   "id": "before-the-studios-broke",
+   "title": "Before the studios broke",
+   "sub": "The two who started inside the studio system and outlived it.",
+   "items": [
+    {
+     "id": "dir-hitchcock",
+     "t": "Alfred Hitchcock",
+     "n": "1925–1976",
+     "note": "53 + 1 optional",
+     "into": "hitchcock"
+    },
+    {
+     "id": "dir-kurosawa",
+     "t": "Akira Kurosawa",
+     "n": "1943–1993",
+     "note": "30 films",
+     "into": "kurosawa"
+    }
+   ]
+  },
+  {
+   "id": "new-hollywood",
+   "title": "New Hollywood and its neighbours",
+   "sub": "First features from the fifties to the late seventies — the stretch that carries most of the hours on this page.",
+   "items": [
+    {
+     "id": "dir-kubrick",
+     "t": "Stanley Kubrick",
+     "n": "1953–2001",
+     "note": "14 + 3 optional",
+     "into": "kubrick"
+    },
+    {
+     "id": "dir-coppola",
+     "t": "Francis Ford Coppola",
+     "n": "1963–2024",
+     "note": "23 + 1 optional",
+     "into": "coppola"
+    },
+    {
+     "id": "dir-scorsese",
+     "t": "Martin Scorsese",
+     "n": "1967–2023",
+     "note": "26 + 13 optional",
+     "into": "scorsese"
+    },
+    {
+     "id": "dir-spielberg",
+     "t": "Steven Spielberg",
+     "n": "1971–",
+     "note": "35 films",
+     "into": "spielberg"
+    },
+    {
+     "id": "dir-carpenter",
+     "t": "John Carpenter",
+     "n": "1974–2010",
+     "note": "18 + 3 optional",
+     "into": "carpenter"
+    },
+    {
+     "id": "dir-david-lynch",
+     "t": "David Lynch",
+     "n": "1977–2006",
+     "note": "10 entries",
+     "into": "david-lynch"
+    },
+    {
+     "id": "dir-raimi",
+     "t": "Sam Raimi",
+     "n": "1981–",
+     "note": "17 + 30 optional",
+     "into": "raimi"
+    }
+   ]
+  },
+  {
+   "id": "after-the-video-store",
+   "title": "After the video store",
+   "sub": "First features from 1984 on.",
+   "items": [
+    {
+     "id": "dir-coen-brothers",
+     "t": "The Coen Brothers",
+     "n": "1984–2025",
+     "note": "22 films",
+     "into": "coen-brothers"
+    },
+    {
+     "id": "dir-tarantino",
+     "t": "Quentin Tarantino",
+     "n": "1992–2019",
+     "note": "10 films",
+     "into": "tarantino"
+    },
+    {
+     "id": "dir-fincher",
+     "t": "David Fincher",
+     "n": "1992–2023",
+     "note": "12 films",
+     "into": "fincher"
+    },
+    {
+     "id": "dir-wes-anderson",
+     "t": "Wes Anderson",
+     "n": "1996–2025",
+     "note": "13 films",
+     "into": "wes-anderson"
+    },
+    {
+     "id": "dir-satoshi-kon",
+     "t": "Satoshi Kon",
+     "n": "1997–2008",
+     "note": "18 entries",
+     "into": "satoshi-kon"
+    },
+    {
+     "id": "dir-nolan",
+     "t": "Christopher Nolan",
+     "n": "1998–",
+     "note": "13 films",
+     "into": "nolan"
+    }
+   ]
+  }
+ ]
+}
