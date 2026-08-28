@@ -174,6 +174,143 @@ def main():
     props.sort(key=lambda p: (PINNED.index(p["slug"]) if p["slug"] in PINNED
                               else len(PINNED), -p["popularity"], p["title"]))
 
+    # ---- satellites: close-ups and rabbit holes (CLU-30, CLU-29) --------
+    # A row may point at another list. Two keys rather than one key plus a
+    # type flag, because the direction decides both the glyph the row wears
+    # and whether ticking rolls through — and because the build validates
+    # them differently:
+    #
+    #   into:   "<slug>"   the same thing at finer grain. Rolls up BOTH ways.
+    #   beside: "<slug>"   adjacent material. Never rolls up.
+    #
+    # `satellite: true` lives on the TARGET property, never on the link: the
+    # link says where to go, the target says whether it is browsable. That is
+    # what lets a hub row point at `kubrick`, which stays in the switcher,
+    # with the identical field that points at a season page, which does not.
+    byslug = {p["slug"]: p for p in props}
+
+    def rows_of(p):
+        return [x for sec in p.get("sections", []) for x in sec.get("items", [])]
+
+    def retotal(p):
+        """`w` may have just been derived, so the weight total is restated."""
+        items = rows_of(p)
+        ws = [x["w"] for x in items
+              if isinstance(x.get("w"), (int, float)) and not isinstance(x.get("w"), bool)
+              and x["w"] >= 0]
+        p["_totalw"] = (round(sum(ws), 2)
+                        if items and len(ws) == len(items) else None)
+
+    roll = {}
+    unresolved = []
+    for p in props:
+        if p.get("secret") or p.get("generate"):
+            continue
+        hub_w, hub_flat = [], []
+        for x in rows_of(p):
+            into, beside = x.get("into"), x.get("beside")
+            if into and beside:
+                fail("%s: row %r carries both `into` and `beside` — a row is "
+                     "either the same thing magnified or adjacent material, "
+                     "never both" % (p["slug"], x["id"]))
+            ptr = into or beside
+            if ptr is None:
+                continue
+            key = "into" if into else "beside"
+            if not isinstance(ptr, str):
+                fail("%s: row %r has a non-string `%s`" % (p["slug"], x["id"], key))
+            if ptr == p["slug"]:
+                fail("%s: row %r points at its own list" % (p["slug"], x["id"]))
+            tgt = byslug.get(ptr)
+            if tgt is None:
+                # A dead door never ships. The pointer is stripped and the row
+                # renders as its plain facts, so a hub can be written months
+                # before its targets exist and each new file turns a chip on
+                # at the next build with no edit to the hub.
+                unresolved.append((p["slug"], x["id"], ptr))
+                x.pop(key, None)
+                continue
+            if tgt.get("secret"):
+                fail("%s: row %r points at %r, which is password-gated — a "
+                     "chip on it would tell everyone the list exists"
+                     % (p["slug"], x["id"], ptr))
+
+            if key == "beside":
+                # CLU-169. A rabbit hole is FOR adjacent material, and a
+                # thorough parent already tends to carry some of it — so the
+                # overlap is easy to reintroduce and has to be impossible
+                # rather than fixed once. Ticking both surfaces would count
+                # one work twice and move the reader's finish date for it.
+                mine = {y["id"] for y in rows_of(p)}
+                dup = sorted(mine & {y["id"] for y in rows_of(tgt)})
+                if dup:
+                    fail("%s: the rabbit hole on row %r points at %r, which "
+                         "repeats %d row(s) the parent already carries: %s — "
+                         "a reader ticking both surfaces is counted twice"
+                         % (p["slug"], x["id"], ptr, len(dup),
+                            ", ".join(dup[:6])))
+                continue
+
+            # a close-up: the target learns its parent from the derived map
+            # rather than naming it back, so the fact is authored once
+            if ptr in roll:
+                fail("%s: %r is already the close-up of %s row %r — a list "
+                     "can hang under one row only, or a tick would roll into "
+                     "two places" % (p["slug"], ptr, roll[ptr][0], roll[ptr][1]))
+            # The page needs the exact set that counts, not a count: it ticks
+            # them on the way down and tests them on the way up, and it cannot
+            # tell an `opt` row from GWIX.rows. Completion means every
+            # non-optional row — making the optional ones mandatory would
+            # contradict the word.
+            need = [y["id"] for sec_ in tgt.get("sections", [])
+                    for y in sec_.get("items", []) if not y.get("opt")]
+            if not need:
+                fail("%s: row %r opens %r, which has no non-optional rows — "
+                     "nothing could ever complete it, so the roll-up would "
+                     "never fire" % (p["slug"], x["id"], ptr))
+            roll[ptr] = [p["slug"], x["id"], need]
+
+            # Weights are the target's real hours, summed here, never typed:
+            # a hand-written number rots the day the target gains a row.
+            if "w" in x:
+                fail("%s: row %r carries both `into` and a typed `w` — a "
+                     "close-up's weight is its target's own hours, summed by "
+                     "the build" % (p["slug"], x["id"]))
+            if tgt.get("_totalw"):
+                x["w"] = tgt["_totalw"]
+                hub_w.append(x["id"])
+            else:
+                hub_flat.append((x["id"], ptr))
+
+        # The test is the LIST's weighting, not just the other doors': a hub
+        # of one weighted row and one unweighted door has the same problem as
+        # a hub of two doors. Anything with a real weight beside a row of
+        # unknown size makes the strip lie about proportion.
+        anyw = any(isinstance(y.get("w"), (int, float))
+                   and not isinstance(y.get("w"), bool) for y in rows_of(p))
+        if hub_flat and (hub_w or anyw):
+            # The template's weight fallback is per-property and all-or-
+            # nothing, so it cannot rescue one row: an unweighted row would
+            # draw as a default-sized mark beside a genuinely 88-hour one and
+            # the strip would be quietly lying about proportion.
+            fail("%s: %s open list(s) that carry no runtimes at all, on a "
+                 "list whose other rows are weighted. A weighted strip cannot "
+                 "carry an unweighted row — it would draw as a default-sized "
+                 "mark beside a real one. Give the target runtimes, or drop "
+                 "the row and say why in the list's notes."
+                 % (p["slug"], ", ".join("%s -> %s" % t for t in hub_flat[:4])))
+        if hub_w or hub_flat:
+            retotal(p)
+
+    if unresolved:
+        print("  satellites: %d pointer(s) with no target file yet — the row "
+              "ships as plain facts and the chip turns on when the file lands:"
+              % len(unresolved))
+        for sl, rid, ptr in unresolved[:12]:
+            print("      %s / %s -> %s.json" % (sl, rid, ptr))
+    if roll:
+        print("  satellites: %d close-up(s) resolved" % len(roll))
+
     # medium tags for the search chips and the card wall — derived from the
     # kind string plus the unit, so mixed-media pages (MCU: films & shows)
     # surface under every medium they contain
@@ -229,6 +366,12 @@ def main():
             **({"totalw": p["_totalw"]} if p.get("_totalw") else {}),
             # home ranks schedule-active clubs first; the flag is all it needs
             **({"scheduled": True} if p.get("schedule") else {}),
+            # a satellite is UNLISTED, not hidden: it leaves the browsing
+            # surfaces and its rows stay in search, so the honest way to find
+            # one is to search for something inside it. The shelf keeps it —
+            # filtering it out of there would strand a list you had been
+            # ticking for a week with no door back to it.
+            **({"satellite": True} if p.get("satellite") else {}),
             # grab-bag lists welcome a random pick; everything else is
             # ordered and only ever offers its next unticked item
             **({"random": True} if p.get("random") else {}),
@@ -449,7 +592,8 @@ def main():
                  sum(len(st) for r in seq for st in r[1:])))
 
     with (PROPS / "search.json").open("w", encoding="utf-8", newline="\n") as f:
-        f.write(json.dumps({"rows": rows, "sync": sync, "seq": seq},
+        f.write(json.dumps({"rows": rows, "sync": sync, "seq": seq,
+                            "roll": roll},
                            separators=(",", ":"), ensure_ascii=False) + "\n")
     print("  search index: %d rows, %d sync groups spanning %d lists"
           % (len(rows), len(sync),

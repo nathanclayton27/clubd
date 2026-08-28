@@ -225,6 +225,22 @@ h1 em{font-style:normal;color:var(--signal)}
 .gago{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
   border:1px solid var(--rule);border-radius:var(--radius);padding:0 4px}
 #b-random{font-size:12px}
+/* The door chip. Hidden at rest and revealed by OPACITY, never display: on a
+   hub every row carries one, so fifteen would light up at once and any layout
+   change would shift the whole page under the cursor. The lane is the one the
+   thumbs already use, so nothing new is reserved. */
+.drill{flex:none;display:inline-flex;align-items:center;gap:5px;
+  text-decoration:none;font-size:13px;line-height:1;padding:2px 4px;
+  opacity:0;transition:opacity .12s ease;color:var(--ink-2)}
+li:hover .drill,li:focus-within .drill,.drill:focus-visible{opacity:1}
+.drill:hover{color:var(--signal)}
+.dfrac{font-size:11px;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+@media (hover:none){
+  /* with no hover to reveal it, the door follows the same armed-row rule
+     catch-up already uses */
+  .drill{opacity:0}
+  #list li.act .drill{opacity:1}
+}
 .gcode{font-family:"IBM Plex Mono",monospace;font-size:15px;letter-spacing:.16em;
   border:1px solid var(--rule-2);border-radius:var(--radius);padding:3px 9px;background:var(--paper)}
 
@@ -6257,7 +6273,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '09490664adb8';
+const BUILD = '7e5a62990330';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6365,6 +6381,11 @@ let TIERTOT = {1:0,2:0,3:0};
 // in every property that predates this, so TIEROF just restates SECOF there.
 let TIEROF = [], ITEMTIERS = false;
 let ORDER = [];
+// CLU-30. Which of THIS page's rows open another list, and which way the
+// pointer runs. `into` is the same thing at finer grain and rolls both ways;
+// `beside` is adjacent material and never rolls at all. Built from the
+// property at load, so a row knows its own door without consulting the index.
+let INTO = {}, BESIDE = {};
 let VALID = new Set();
 let UNIT = {one:'item', many:'items'};
 let VERB = {past:'done', ing:'tracking'};
@@ -6704,6 +6725,22 @@ addEventListener('scroll', ()=>{
   const r = _toast.getBoundingClientRect();
   if(r.bottom < 0 || r.top > innerHeight) rowToastDismiss(true);
 }, {passive:true});
+// The fraction beside a loupe: how much of the list behind this door is
+// already ticked. Read from the target's own stored set rather than counted
+// here, because the target may hold ticks this page has never seen.
+function paintDrill(){
+  const els = document.querySelectorAll('#list .drill[data-into]');
+  if(!els.length) return;
+  els.forEach(a=>{
+    const t = a.dataset.into;
+    const f = a.querySelector('.dfrac');
+    if(!f) return;
+    const r = (GWIX && GWIX.roll) ? GWIX.roll[t] : null;
+    if(!t || !r){ f.textContent = ''; return; }
+    const need = r[2] || [], have = awaySet(t);
+    f.textContent = need.filter(i=> have.has(i)).length + ' / ' + need.length;
+  });
+}
 function state(text,cls){ $('state').textContent=text; $('dot').className='dot'+(cls?' '+cls:''); }
 
 function clean(arr){
@@ -6838,6 +6875,9 @@ function ensureIndex(){
     // bars painted before this arrived were counting rows; now they can
     // count hours (CLU-207)
     try{ upgradeBars(); }catch(e){}
+    // the door fractions need the roll map, which is what just arrived — the
+    // first paint ran before this fetch resolved and drew them empty
+    try{ paintDrill(); }catch(e){}
     return d;
   }).catch(()=>{ GWIXP = null; return null; });
   return GWIXP;
@@ -6850,6 +6890,92 @@ function titleOf(slug){
 // only — never an event — so a watch counts once in every statistic. The
 // cloud write is read-modify-write per property: blindly upserting this
 // device's copy of a list you last touched elsewhere would wipe it.
+// Merge a set of ids into ANOTHER list's progress — local first so the answer
+// is instant, cloud after so a second device agrees. Cross-list sync and
+// close-up roll-up are the same write with different reasons, so they share it.
+async function mergeAway(slug, ids, on){
+  if(!ids || !ids.length) return;
+  let set;
+  try{ set = new Set(JSON.parse(localStorage.getItem('gw:v1:'+slug)||'[]')); }
+  catch(e){ set = new Set(); }
+  ids.forEach(i=> on ? set.add(i) : set.delete(i));
+  try{ localStorage.setItem('gw:v1:'+slug, JSON.stringify([...set])); }catch(e){}
+  if(user && sb){
+    try{
+      const { data } = await sb.from('progress').select('read_ids')
+        .eq('user_id', user.id).eq('property_id', slug).maybeSingle();
+      const cloud = new Set((data && data.read_ids) || []);
+      ids.forEach(i=> on ? cloud.add(i) : cloud.delete(i));
+      await sb.from('progress').upsert(
+        { user_id:user.id, property_id:slug, read_ids:[...cloud],
+          updated_at:new Date().toISOString() },
+        { onConflict:'user_id,property_id' });
+    }catch(e){ /* non-fatal; local landed, adopt() unions later */ }
+  }
+}
+
+// ---- close-ups roll BOTH ways, over their own ticks only (CLU-30) --------
+// Marking Moon Knight on the MCU list ticks its six episodes here; having all
+// six ticked here marks it there. The hard case is the reader who ticked three
+// episodes by hand a month ago and only now ticks the parent: all six go on,
+// but unticking the parent must take off ONLY the three the roll-up added.
+// So both directions record which ticks they made. This cannot be retrofitted
+// — after the fact there is no way to tell a derived tick from a hand one.
+const ROLLED = sl => 'gw:rolled:' + sl;
+function rolledOf(sl){
+  try{ return new Set(JSON.parse(localStorage.getItem(ROLLED(sl)) || '[]')); }
+  catch(e){ return new Set(); }
+}
+function putRolled(sl, set){
+  try{
+    if(set.size) localStorage.setItem(ROLLED(sl), JSON.stringify([...set]));
+    else localStorage.removeItem(ROLLED(sl));
+  }catch(e){}
+}
+function awaySet(sl){
+  try{ return new Set(JSON.parse(localStorage.getItem('gw:v1:'+sl) || '[]')); }
+  catch(e){ return new Set(); }
+}
+async function rollTicks(ids, on){
+  await ensureIndex();
+  if(!GWIX || !GWIX.roll) return;
+  let moved = false;
+  // DOWNWARD — a row on this page that opens a close-up
+  for(const id of ids){
+    const tgt = INTO[id];
+    if(!tgt) continue;
+    const r = GWIX.roll[tgt];
+    if(!r) continue;
+    const need = r[2] || [], prov = rolledOf(tgt);
+    if(on){
+      const cur = awaySet(tgt);
+      need.forEach(i=>{ if(!cur.has(i)) prov.add(i); });
+      await mergeAway(tgt, need, true);
+    }else{
+      await mergeAway(tgt, [...prov], false);
+      prov.clear();
+    }
+    putRolled(tgt, prov);
+    moved = true;
+  }
+  // UPWARD — this page IS somebody's close-up
+  const me = GWIX.roll[SLUG];
+  if(me){
+    const ps = me[0], pid = me[1], need = me[2] || [];
+    const full = need.length > 0 && need.every(i=> done.has(i));
+    const prov = rolledOf(ps);
+    if(full && !prov.has(pid)){
+      await mergeAway(ps, [pid], true);
+      prov.add(pid); putRolled(ps, prov); moved = true;
+    }else if(!full && prov.has(pid)){
+      // only ever removes a tick this mechanism made: a parent row ticked by
+      // hand is not in the provenance set and is left exactly alone
+      await mergeAway(ps, [pid], false);
+      prov.delete(pid); putRolled(ps, prov); moved = true;
+    }
+  }
+  if(moved) paintDrill();
+}
 async function syncTicks(ids, on){
   // a fresh watch is a sealed namespace: its ticks (and unticks!) must never
   // reach counterpart lists' all-time sets — sync resumes on the real run
@@ -6861,6 +6987,10 @@ async function syncTicks(ids, on){
   // lower counterpart lists below a record that never agreed to move.
   if(SESSION && !on) return;
   await ensureIndex();
+  // a close-up is the same work at finer grain, so it travels under exactly
+  // the guards above — sealed inside a fresh watch, and a club untick never
+  // reaches another list's all-time row
+  try{ await rollTicks(ids, on); }catch(e){}
   if(!SYNCM) return;
   const bySlug = {};
   ids.forEach(id=> (SYNCM[id]||[]).forEach(p=>{
@@ -6868,25 +6998,7 @@ async function syncTicks(ids, on){
   }));
   const slugs = Object.keys(bySlug);
   if(!slugs.length) return;
-  for(const s of slugs){
-    let set;
-    try{ set = new Set(JSON.parse(localStorage.getItem('gw:v1:'+s)||'[]')); }
-    catch(e){ set = new Set(); }
-    bySlug[s].forEach(i=> on ? set.add(i) : set.delete(i));
-    try{ localStorage.setItem('gw:v1:'+s, JSON.stringify([...set])); }catch(e){}
-    if(user && sb){
-      try{
-        const { data } = await sb.from('progress').select('read_ids')
-          .eq('user_id', user.id).eq('property_id', s).maybeSingle();
-        const cloud = new Set((data && data.read_ids) || []);
-        bySlug[s].forEach(i=> on ? cloud.add(i) : cloud.delete(i));
-        await sb.from('progress').upsert(
-          { user_id:user.id, property_id:s, read_ids:[...cloud],
-            updated_at:new Date().toISOString() },
-          { onConflict:'user_id,property_id' });
-      }catch(e){ /* non-fatal; local landed, adopt() unions later */ }
-    }
-  }
+  for(const s of slugs) await mergeAway(s, [...bySlug[s]], on);
   rowToast(ids[0], 'Also '+(on?'ticked':'unticked')+' on '+slugs.map(titleOf).join(', ')+'.');
 }
 
@@ -11873,6 +11985,14 @@ function secretVisible(m){
 // The splash is the first thing a stranger sees, so it stays to what is open.
 function menuList(){ return MANIFEST.filter(secretVisible); }
 function splashList(){ return MANIFEST.filter(m=> !m.secret || isUnlocked(m.slug)); }
+// A satellite is UNLISTED, not hidden. It leaves the three browsing surfaces —
+// the wall, the catalogue count and Tonight's whole-catalogue scope — and it
+// stays everywhere else: its rows stay in search, so the honest way to find one
+// is to search for something inside it, and YOUR SHELF KEEPS IT. That last part
+// is the trap this function exists to avoid: homeStats() feeds the shelf off
+// the same list, and filtering here would make a side list you had been ticking
+// for a week vanish from your own shelf, taking the only door back to it.
+function browseList(){ return splashList().filter(m=> !m.satellite); }
 
 // A manifest total is written at build time, which a daily list cannot have —
 // only the reader's own clock knows how many days have passed.
@@ -12189,7 +12309,7 @@ function filterMenu(q){
       // the wall is splashList(), which needs it actually unlocked. Counting
       // the menu here made this row say 142 while the wall's own tally and the
       // fold button both said 141.
-      + '<span class="pm-m">all ' + splashList().length
+      + '<span class="pm-m">all ' + browseList().length
       + ' lists in the catalogue</span>'
       + '</button>';
   }else if(!hits.length){
@@ -12948,8 +13068,8 @@ async function tonightPick(shelf){
   const d = await ensureIndex();
   if(!d || !d.rows) return null;
   const pool = WALLF.size
-    ? splashList().filter(m=> (m.media||[]).some(x=> WALLF.has(x)))
-    : (shelf.length ? shelf.map(s=> s.m) : splashList());
+    ? browseList().filter(m=> (m.media||[]).some(x=> WALLF.has(x)))
+    : (shelf.length ? shelf.map(s=> s.m) : browseList());
   const bySlug = new Map(pool.map(m=> [m.slug, m]));
   const rows = {};
   for(const r of d.rows)
@@ -13525,13 +13645,13 @@ function showHome(){
       hw.innerHTML = '';
       hw.classList.add('hide');
       homeWallApply = null;
-      fb.textContent = 'Show all ' + splashList().length + ' lists';
+      fb.textContent = 'Show all ' + browseList().length + ' lists';
     }else{
       hw.classList.remove('hide');
       homeWallApply = renderWall(hw, true);
       // "Collapse" against "Show all N lists" named the mechanism on one
       // press and the result on the other
-      fb.textContent = 'Hide all ' + splashList().length + ' lists';
+      fb.textContent = 'Hide all ' + browseList().length + ' lists';
     }
   };
   fb.onclick = ()=>{
@@ -13602,6 +13722,18 @@ function adoptSections(secs){
     SECOF.push(sec);
     FLAT.push({t:x.t, n:x.n, note:x.note||'', sec:sec.title, tags:x.tags||[]});
   }));
+  INTO = {}; BESIDE = {};
+  DATA.forEach(s=> s.items.forEach(x=>{
+    // build.py strips a pointer whose target file does not exist yet, so
+    // anything still here resolves — a dead door never reaches the page
+    if(x.into) INTO[x.id] = x.into;
+    if(x.beside) BESIDE[x.id] = x.beside;
+  }));
+  // Nothing else on a quiet list page asks for the index — search fetches it
+  // at three characters, sync only when something is ticked — so a page full
+  // of doors would draw every fraction blank until the reader touched
+  // something. The doors are the reason to fetch it here.
+  if(Object.keys(INTO).length) ensureIndex();
   ORDER = DATA.flatMap(s=>s.items.map(x=>x.id));
   VALID = new Set(ORDER);
   IDX = new Map(ORDER.map((id,i)=>[id,i]));
@@ -13929,6 +14061,18 @@ function build(){
         +(x.opt?'<span class="opt">optional</span>':'')
         +(x.note?'<span class="nb">'+esc(x.note)+'</span>':'')+'</span>'
         +'<span class="th"></span>'
+        // The door, and how far into it you already are. The only element
+        // this design adds anywhere: it never renders at rest, it sits in a
+        // lane the row already reserves, and it answers the one question a
+        // door raises at the moment you are deciding whether to open it.
+        +((x.into || x.beside)
+          ? '<a class="drill" data-into="'+esc(x.into||'')+'" href="?p='
+            + esc(x.into||x.beside)+'" title="'
+            + (x.into ? 'Open ' + esc(x.t) + ' in full'
+                      : 'Everything beside ' + esc(x.t))+'">'
+            + (x.into ? '\u{1F50D}' : '\u{1F5DD}\uFE0F')
+            + '<span class="dfrac mono"></span></a>'
+          : '')
         // Not on a grab-bag. "Everything up to here" is only a sentence if
         // the rows are a sequence; on an unordered list it offers to mark
         // films you have not seen because they happen to be printed above
@@ -14138,6 +14282,7 @@ function paint(){
     }
   });
   $('s-all').textContent = done.size+' / '+TOTAL;
+  paintDrill();
   paintUpNext();
   // What is still ahead of you: entries always, and time where the marks have
   // real sizes. On an unweighted list the two are the same number, so the
