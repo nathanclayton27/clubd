@@ -162,6 +162,26 @@ def main():
     if len(slugs) != len(set(slugs)):
         fail("two properties share a slug")
 
+    # The README opens by counting the catalogue, and that number has now been
+    # wrong three times — including once in the same commit that was fixing it,
+    # because it was typed from the previous value rather than counted. A
+    # sentence a human maintains against a number the build already knows is a
+    # sentence that goes stale silently, so the build owns it now.
+    rm = ROOT / "README.md"
+    if rm.exists():
+        txt = rm.read_text(encoding="utf-8")
+        m = re.search(r"^(\d[\d,]*) lists, from a ", txt, re.M)
+        if not m:
+            fail("README.md no longer opens with '<N> lists, from a ' — either "
+                 "restore that sentence or update this check in build.py")
+        claimed = int(m.group(1).replace(",", ""))
+        if claimed != len(props):
+            fail("README.md says %d lists; the catalogue holds %d. Fix the "
+                 "README — the number is not decoration, it is the first "
+                 "thing anyone reads." % (claimed, len(props)))
+        print("  README: %d lists, agrees with the catalogue" % len(props))
+
+
     # Catalogue order. There is no "default property" — a first-time visitor
     # gets the splash picker — so this is presentation only. Three rules, in
     # this order: the pins first, then popularity descending, then title. The

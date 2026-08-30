@@ -11,8 +11,8 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-Two hundred and nine lists, from a ten-episode anime to a 1,418-row film
-collection, a 971-entry comics run, and 659 episodes of Dragon Ball.
+210 lists, from a ten-episode anime to a 1,418-row film collection, a
+971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
