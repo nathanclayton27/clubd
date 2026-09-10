@@ -71,8 +71,10 @@ APPLIED = [
 # from FINAL-3, a file that has never run — so an object that does not exist in
 # the database was reported as its live definition.
 NEVER_RUN = {
-    "FINAL-3-profiles.sql":            "fenced on a front-end change that has not shipped",
+    "FINAL-3-profiles.sql":            "superseded by the clu153 pair below; never ran",
     "rls-fix-PART2-after-frontend.sql": "same fence, superseded by FINAL-3, no transaction",
+    "clu153-A-find_profile_by_code.sql": "queued (CLU-153): the lookup function, safe any time",
+    "clu153-B-narrow-profiles.sql":     "queued (CLU-153): fenced until the front end is live",
     "migrate-fix-rls-column-locks.sql": "PART1 and PART2 concatenated; never ran as itself",
     "migrate-perf-shares.sql":          "MUST NEVER RUN — silently replaces a live function",
 }

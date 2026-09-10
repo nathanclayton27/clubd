@@ -4320,11 +4320,28 @@ function friendParam(display){
   const t = (display || '').toUpperCase().replace(/[^A-Z2-9]/g, '').replace(/^CLB/, '');
   return t.length === 4 ? t : '';
 }
+// The lookup is an RPC so profiles can stop being readable by every signed-in
+// user (CLU-153): find_profile_by_code() runs as its owner, answers one row
+// for an exact code and nothing for a miss, and charges misses through the
+// rate limiter. The direct read below it is what the site did before the
+// function existed, and it is tried ONLY when PostgREST says the function is
+// not there — the two codes it uses for that, and nothing else. A 42501 or a
+// 429 is an answer, not an absence, and falling back on one would quietly
+// reopen the read the RPC exists to replace.
 async function friendByCode(raw){
   const code = normFcode(raw);
   if(!code) return { err: 'Codes look like CLB·XXXX.' };
-  const { data, error } = await sb.from('profiles')
-    .select('user_id,username,fcode').eq('fcode', code).maybeSingle();
+  let { data, error } = await sb.rpc('find_profile_by_code', { p_code: code });
+  if(error && (error.code === 'PGRST202' || error.code === '42883')){
+    ({ data, error } = await sb.from('profiles')
+      .select('user_id,username,fcode').eq('fcode', code).maybeSingle());
+  }else if(!error){
+    // a set-returning function comes back as an array: one row or none
+    data = Array.isArray(data) ? (data[0] || null) : data;
+  }
+  // the rate limiter's own sentence says how long to wait; the generic line
+  // would tell someone who has been throttled that the site is broken
+  if(error && error.hint === 'rate_limited') return { err: error.message };
   if(error) return { err: 'Friends need one more piece of setup — try again shortly.' };
   if(!data) return { err: 'No one holds that code.' };
   if(data.user_id === user.id) return { err: 'That one is yours.' };
