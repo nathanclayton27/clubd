@@ -22,6 +22,7 @@ data goes.
 | What | Where |
 |---|---|
 | What you have watched or read | `progress` — one row per user per list, holding an array of item ids |
+| What you watched *with a club* | `club_progress` — one row per club membership, a session of its own; every write to it also unions up into `progress` |
 | When you ticked it | `tick_events` — an append-only log, one row per tick |
 | What you thought of it | `thumbs` — up or down, per item, or one for a whole list |
 | Who you watch it with | `groups` + `group_members`, plus `group_join_tokens` for invite links |
@@ -125,8 +126,10 @@ This mattered enough to measure because **every file in this project that claims
 "one transaction" was resting on it and none had checked.** Had the editor split
 on semicolons, `begin;` would have been its own statement and a failure partway
 down would have left earlier statements committed — which for
-`migrate-club-progress.sql` means an irreversible delete of 36 clubs escaping
-the transaction meant to be able to undo it.
+`migrate-club-progress.sql` would have meant an irreversible delete of 36 clubs
+escaping the transaction meant to be able to undo it. That file has since been
+pasted whole and committed as one unit (2026-09-10, §5), which is this
+measurement being cashed in rather than trusted.
 
 The probe is safe to re-run on production if anyone ever wants to confirm it
 again: `create temp table` lives in a per-session schema that PostgREST cannot
@@ -193,6 +196,11 @@ triggers so a policy dump misses it too. The guard is inert and nothing says so.
 **Check `pg_trigger` by `tgname`, not `pg_proc` by `proname`.**
 `migrate-groups.sql` §1b drops and recreates `groups_update_guard` for exactly
 this reason, and readback check 14 confirms attachment (CLU-387, 19/19).
+`migrate-club-progress.sql` went one better for `groups_fold_sessions`: it
+asserts attachment **inside its own transaction** (§5 of that file), so a fold
+function defined but not attached rolls the whole migration back rather than
+committing an inert guard, and asserts it again as readback 12 (CLU-389, 19/19,
+2026-09-10).
 
 #### Trap 3 — dropping a policy without recreating it
 
@@ -252,7 +260,8 @@ says was run**.
 
 ## 3. Bootstrap: standing up an empty project
 
-Thirteen files, in this order, all at the repo root.
+Fourteen files, in this order. The first thirteen are at the repo root; the
+fourteenth is not, and that is called out below.
 
 ```
  1. schema.sql
@@ -268,11 +277,29 @@ Thirteen files, in this order, all at the repo root.
 11. migrate-mute-privacy.sql
 12. migrate-group-thumbs.sql
 13. migrate-add-schema-ledger.sql
+14. scratch/security/migrate-club-progress.sql
 ```
 
-All thirteen are live. Step 13 ran on 2026-08-27 with a 14/14 readback
-(CLU-404), so from here on the database keeps its own record of what has been
-run and this section stops being the only one.
+All fourteen are live. Step 13 ran on 2026-08-27 with a 14/14 readback
+(CLU-404), so from there on the database keeps its own record of what has been
+run and this section stops being the only one. **Step 14 ran on 2026-09-10 with
+a 19/19 readback (CLU-389) and is the first run the ledger recorded as it
+happened** rather than by backfill.
+
+⚠ **Step 14 is still in `scratch/security/`, and this file does not move it.**
+It is a live migration now, so the convention in
+`scratch/security/moved-to-repo/README.md` — a live migration the repo cannot
+reproduce the database without belongs at the root, tracked — points at moving
+it. Two things have to be settled first, and neither is mechanical. Whether it
+may be published at all is Nathan's, and has its own card (CLU-414): its comment
+header names 36 deleted clubs and 10 surviving ones **by the names their creators
+typed**, which is other people's content, not ours. And the ledger row it wrote records the
+**path-qualified** filename `scratch/security/migrate-club-progress.sql` —
+`tools/migrations.py` prints that path deliberately, because basenames collide —
+so a move without a plan for that row leaves `--verify` joining a path that no
+longer exists. Until both are answered, a bootstrap runs step 14 from
+`scratch/security/`, which is gitignored and therefore absent from a fresh
+clone: **a clone alone cannot complete this path.**
 
 ### The order is not a preference
 
@@ -294,6 +321,21 @@ orderings of steps 2–5, **12 fail**, all on the same edge.
   `guard_group_join_rate()`.
 - **8 → 9 → 10 → {11, 12}.** Enforced by §0 blocks that check function *bodies*,
   not merely existence.
+- **10 before 14.** `migrate-club-progress.sql` §0 checks four things and none
+  of them is mere existence: `groups.universal` present, `groups_scope_ck`
+  carrying both `NOT universal` and `property_id IS NOT NULL`,
+  `groups_update_guard` **attached** to `public.groups` (`pg_trigger`, not
+  `pg_proc`), and a `shares_group_with(uuid,text)` whose `prosrc` mentions
+  `universal`. Any one missing and it raises before it touches a row.
+- **13 before 14.** Step 14's last statement before `commit` inserts its own
+  ledger row into `schema_migrations`, which step 13 creates. Out of order the
+  whole migration rolls back on `42P01` — after doing all its work, which is the
+  cheapest possible way to discover it.
+- **1 before 14**, for `progress` itself: step 14 writes to
+  `progress (user_id, property_id)` and its readback check 15 asserts that
+  two-column primary key is still the one in place. It adds no column to
+  `progress` and drops nothing from it — the sidecar shape exists so that
+  sentence can be true.
 
 ### This is Supabase-only, and it fails at step 1 elsewhere
 
@@ -306,17 +348,26 @@ pgcrypto` **unqualified**, while `migrate-groups.sql` §0 demands
 `extensions.gen_random_bytes`. On Supabase that resolves; on stock Postgres
 pgcrypto lands in `public` and step 10 refuses.
 
-### Two things this path does not give you
+### What this path does not give you, and what step 14 changed
 
-1. **`club_progress` and `save_progress`.** The front end calls both, and the
-   file that creates them — `scratch/security/migrate-club-progress.sql` — is
-   **written and not yet run**, so a fresh bootstrap still ends without them. That is not a gap in the path — the site
-   discovers their absence and degrades: `missingThing()` catches `42P01`,
-   `PGRST205`, `42883` and `PGRST202`, the `CPGONE` / `SAVEGONE` latches trip
-   once per load, and session ticks fold back into the all-time row. So the path
-   reproduces everything the repo describes, and "reproduces the live database"
-   is only true if those two do not exist live, which no file can tell you.
-2. **Data.** Obviously. It builds the shape, not the contents.
+1. **Data.** Obviously. It builds the shape, not the contents. *(Step 14 is the
+   one exception worth knowing: its snapshot writes one `club_progress` row per
+   surviving watch-club membership, so on an empty database it writes nothing,
+   and on production it wrote state that no other file contains. How many rows
+   is not recorded anywhere — readback 11 asserts only that the count equals
+   the surviving memberships, and 66 is the number *deleted*, not snapshotted.)*
+2. **`club_progress` and `save_progress` are no longer missing.** They exist
+   live — created by step 14 on 2026-09-10 21:38 UTC, confirmed by readback
+   checks 06–14 (CLU-389) — so **the caveat that used to sit here has inverted.**
+   It used to read "this path reproduces the live database only if those two do
+   not exist live, which no file can tell you". Now: a bootstrap that stops at
+   step 13 **does not** reproduce the live database, and the difference is
+   visible from the outside. The front end calls both; without them
+   `missingThing()` catches `42P01`, `PGRST205`, `42883` and `PGRST202`, the
+   `CPGONE` / `SAVEGONE` latches trip once per load, and session ticks fold back
+   into the all-time row. That degradation is still in the bundle and still
+   correct, but on production it is now **dead code** — reachable only if
+   somebody drops the table.
 
 ### Nothing in `superseded/` is in this list
 
@@ -338,9 +389,109 @@ Per table: what it holds, who may read it, who may write it.
 which consults the privacy switches and excludes gated lists), and by club and
 group co-members (`shares_group_with`). Written only by you.
 
+**`club_progress`** — a club's own tracking session: one row per **membership**,
+keyed `(group_id, user_id)`, with `read_ids text[] not null default '{}'` and
+`updated_at`. Plus an index on `user_id`. It is not a lens onto `progress`; it is
+a separate set of ticks, and `progress` was not altered to make room for it — no
+new column, no dropped constraint, no re-key (readback 15 and 16 assert that).
+There is **no `property_id` column on purpose**: `groups_scope_ck` guarantees a
+watch club has one and `groups_update_guard` refuses to let it change, so
+`group_id` *is* the scope, and a second copy of a scoping fact is a thing that
+can drift.
+
+*Who reads it:* two policies, both `select`. `"read own club session"` —
+`auth.uid() = user_id`. `"club members read the club's sessions"` —
+`club_session_visible(group_id, user_id)`. *Who writes it:* **nobody, directly.**
+There is no insert, update or delete policy at all, and `revoke all` takes DML
+from `public, anon, authenticated` with only `select` granted back — to `anon` as
+well, deliberately, because RLS returns a signed-out caller zero rows whereas
+revoking `select` would turn a query that races the session into a hard error.
+Every write goes through `save_progress()`, which is what makes "furthest wins"
+structural rather than a promise.
+
+*The foreign key is a ruling, not a detail.* `(group_id, user_id)` references
+`group_members (group_id, user_id) on delete cascade` — so leaving a club
+deletes **your** session and nobody else's (Nathan, CLU-420), and rejoining
+restores nothing. Deleting the club still reaches sessions, the long way round:
+`groups` → `group_members` → `club_progress`. Readback 17 tests the referenced
+table *and* `confdeltype = 'c'`, because pointing at `group_members` with
+`no action` would satisfy everything else and make "leave a club" raise a
+foreign-key violation. `user_id` also carries a second, independent
+`references auth.users(id) on delete cascade`, so deleting the account takes its
+sessions with it.
+
+**`save_progress(p_property text, p_club uuid, p_ids text[])
+→ timestamptz`** — the **only** write path into `club_progress`.
+`security definer`, `search_path = public, pg_temp`, `execute` granted to
+`authenticated` only and revoked from `public` and `anon` (readback 13). One call
+makes two writes in one statement pair, and the asymmetry between them *is* the
+ruling: the **session** row is upserted to the exact set passed in, so unticking
+works inside a club; your **universal** `progress` row is upserted with
+`arr_union`, so a club untick can never lower your all-time record. Both in one
+transaction, so a JWT lapsing between two round trips cannot leave a session
+holding ticks the universal row does not.
+
+It refuses four ways: not signed in (`auth.uid() is null`); an id set larger than
+**5000** (*"that is not a plausible progress set"* — a sanity bound, not a
+security control; the largest real `progress` row was 1174 ids on 2026-09-10);
+`p_club` that is not a non-universal group **you are a member of**; and a
+`p_property` that disagrees with the property it derives from the club (a null
+`p_property` is accepted — the check is `is not null and is distinct from`, so
+omitting it is not a way round anything, only a way of not asking). The
+property is **derived, never trusted** — `p_property` is checked against it
+rather than used, because a caller who could name their own property could write
+their club's ticks onto any list.
+
+**`arr_union(a text[], b text[]) → text[]`** — sorted, de-duplicated union of two
+id arrays; `immutable`, `parallel safe`. Callable by **neither** browser role
+(`revoke all`, nothing granted back — readback 14): it is an internal of
+`save_progress` and the fold trigger. A union rather than anything shaped like
+`greatest(count)`, because `read_ids` is a set and people tick out of order, so
+comparing sizes would discard one array's ticks wholesale. Its monotonicity is
+what licenses every "furthest wins" claim in the schema.
+
+**`club_session_visible(p_group uuid, p_owner uuid) → boolean`** — the predicate
+behind the co-member read policy, `language sql security definer stable`. Three
+tests, and the third is the interesting one: the group is a watch club, **you**
+are in it, **and the row's owner** is in it. That last clause is why leaving a
+club stops the people still in it reading your old sessions, with no delete
+policy anywhere. `security definer` because a policy reading `group_members`
+directly would be filtered by that table's own RLS; granted to **`anon` as well
+as `authenticated`** (readback 18) because it is named directly *in a policy*,
+and policy expressions resolve `EXECUTE` against the querying role.
+
+**`club_fold_on_delete()`, attached as trigger `groups_fold_sessions`** —
+`before delete on public.groups, for each row`. Deleting a watch club cascades
+its sessions away, and the superset invariant only survives *forward*: a Just-me
+untick is a replace, so the universal row can briefly sit **below** a session
+that still holds those ids. Delete the club in that window and the ticks exist
+nowhere. So on each deleted row it returns early for a universal group or a null
+property, and otherwise folds every session on that club into its owner's
+`progress` row for the club's property — `insert ... on conflict do update set
+read_ids = arr_union(...)`, never a replace — skipping empty sessions. `before
+delete` on the parent is load-bearing: it fires before the RI cascade reaches
+`club_progress`. ⚠ **It does not cover leaving or being removed**, which hit the
+same window with no fold — the open exposure in [§5](#the-largest-thing-in-the-repo-and-it-has-now-run).
+
+**`deleted_groups_20260827`** and **`deleted_group_members_20260827`** — the
+archive of what the 2026-09-10 run deleted: 36 clubs and 66 memberships
+(readback 03 and 04). `create table ... (like <source> including all)` copies,
+written **child-then-parent inside the same transaction as the delete**, before
+it. After that commit they are the only route back. **Nobody can read either one
+through the API**: RLS on, **no policies at all**, and `revoke all` from
+`public, anon, authenticated` (readback 05 and 19). Same posture as
+`schema_migrations`: operational, and the site never touches them.
+
 **`tick_events`** — append-only log of when you ticked and whether it was
 `live` or `backfill`. Read and written by you only. Nobody else ever sees it;
 the distinction exists so a batch import cannot look like tonight's viewing.
+**It still has no `group_id`.** That column was cut from the 2026-09-10 run
+deliberately (§6 of that file): every user has an UPDATE policy on their own
+`tick_events` rows and the update guard pins `user_id`, `property_id`, `item_id`,
+`action` and `at` — but would not have pinned `group_id`, so anyone could have
+set their own ticks' provenance to any club. Nothing in the bundle reads or
+writes it, so a club tick is **not** attributable from this table. It comes back
+on its own card, with the guard extended in the same commit.
 
 **`thumbs`** — up or down per item; `item_id NULL` is the whole-list thumb.
 Read by you, by mutual friends, and — since `migrate-group-thumbs.sql` — by club
@@ -424,20 +575,39 @@ exactly the committed form.
 | 2026-08-27 18:43 | `migrate-add-schema-ledger.sql` + 14-check readback | 14/14. `schema_migrations`, three constraints, an index, RLS deny-all, and the eighteen rows above backfilled into it | CLU-404 |
 | 2026-08-28 | **Read-only** `preflight-club-progress.sql`, five-statement version | Returned one row, `must_be_zero = 0` — the editor showed only the last statement (see §2). Rewritten as one statement the same day. Nothing changed | CLU-389 |
 | 2026-09-10 21:04 | **Read-only** `preflight-club-progress.sql`, one-statement version | Seven rows: 5 PASS, 1 INFO (largest `progress` row is 1174 ids; the write cap is 5000), and **1 false STOP**: check 4 named the nine clubs that carried a date *at survey time* as if they had gained one. Nothing changed; the check was wrong, not the data. Fixed the same hour, below | CLU-389 |
+| 2026-09-10 ~21:37 | **Read-only** `preflight-club-progress.sql` re-run, check 4 fixed (152 lines, md5 `47cf964c…`) | Seven rows: **6 PASS, 1 INFO** — the INFO is the same 1174-id `progress` row against the 5000 cap. Check 4 now compares live dates against the surveyed ones and read PASS, so the nine dated clubs stopped being a standing STOP. Nothing changed. **This clean read was the go signal** | CLU-389 |
+| 2026-09-10 21:38 | `migrate-club-progress.sql` (777 lines, md5 `76e61d1e…`, byte-identical to the audited file) + 19-check readback | **19/19 true.** 36 watch clubs and 66 memberships archived then deleted; `club_progress` with RLS, two read policies and **no** write policy; `save_progress`, `arr_union`, `club_session_visible`; the `groups_fold_sessions` trigger **attached**; a snapshot row for every surviving watch-club membership; `progress` confirmed un-re-keyed with its policies intact. **The only irreversible statement in the repo has now run.** First run recorded in the ledger as it happened | CLU-389 |
 
-**The ledger row is the most recent change to production. The two pre-flight
-runs after it read; they did not write. Behind them sits `migrate-club-progress.sql`,
-queued (§5, "Queued and ready").**
+**`migrate-club-progress.sql` is the most recent change to production, and the
+first one the database wrote down itself.** Its footer (lines 646–648) inserts a
+single `schema_migrations` row *inside* the transaction — `filename`
+`scratch/security/migrate-club-progress.sql`, `checksum`
+`493ae4fb3285a9d933d40af89da145c2975215dd1e0cb68e8b26de669665d89d`,
+`source = 'recorded'`, `outcome = 'applied'`, `evidence = 'CLU-389'`, with a note
+naming the 36 clubs, the 66 memberships and the three objects created — so a
+rollback would have un-recorded it, and the row exists only because the file
+committed. **Yes: this run recorded itself.** `python tools/migrations.py`
+computes that same `493ae4fb…` for the file on disk today, so the ledger and the
+repo agree on the bytes that ran — the first time in this project that has been
+true of anything.
 
-**From this point the database records its own history.** Everything above the
-last row was reconstructed from the board; everything after it is recorded at
-run time by the migration itself. `python tools/migrations.py --verify` prints
-the read-only query that reads it back and compares checksums against the repo.
+**From the ledger row (2026-08-27) the database records its own history.**
+Everything above that row was reconstructed from the board. The three rows after
+it split two ways: the two read-only pre-flights wrote nothing and so left no
+ledger row — they are board-only, like everything before — and the migration
+itself is the first row recorded at run time by the file that ran. `python
+tools/migrations.py --verify` prints the read-only query that reads the ledger
+back and compares checksums against the repo.
 
 ### Written and deliberately not run
 
 These stay in `scratch/security/`, which is gitignored, because they describe
 work that has not happened rather than the state that has.
+
+⚠ **Do not read that the other way round.** Since 2026-09-10 the folder also
+holds `migrate-club-progress.sql`, which **has** run and is bootstrap step 14;
+being in `scratch/security/` no longer implies unrun. It is the only such file,
+and §3 says why it has not moved.
 
 | File | Why |
 |---|---|
@@ -464,23 +634,37 @@ work that has not happened rather than the state that has.
   rate-limit calls, so running it removes the cap from one door while leaving
   `join_group()`'s intact — and a half-disarmed limiter reads as a working one.
 
-### Queued and ready: the largest thing not yet run
+### The largest thing in the repo, and it has now run
 
-**`scratch/security/migrate-club-progress.sql`** (756 lines, CLU-389), with
-**`preflight-club-progress.sql`** beside it. Recorded here because a migration
-written and not run is the state in which somebody reasons about a database
-that does not match the file they are reading.
+**`scratch/security/migrate-club-progress.sql`** (777 lines, CLU-389) **ran on
+2026-09-10 at 21:38 UTC and returned 19/19**, minutes after
+**`preflight-club-progress.sql`** read 6 PASS + 1 INFO. This section used to
+exist because a migration written and not run is the state in which somebody
+reasons about a database that does not match the file in front of them. It stays
+for three reasons that outlive the paste: the audit history below is *why* the
+run was uneventful, one exposure it names is still open, and the rules it
+established about this file still bind anyone who touches it.
 
-**It carries the only irreversible statement in the repo**: a delete of 36
-watch clubs and 66 memberships, by an explicit id list Nathan approved by eye
-on 2026-08-27 (keep-list on CLU-389; the four dated clubs confirmed separately
-on CLU-404). The archive is written child-then-parent inside the same
-transaction, before the delete.
+**It carried the only irreversible statement in the repo**: a delete of 36 watch
+clubs and 66 memberships, by an explicit id list Nathan approved by eye on
+2026-08-27 (keep-list on CLU-389; the four dated clubs confirmed separately on
+CLU-404). The archive was written child-then-parent inside the same transaction,
+before the delete, and the readback counted it: 36 rows in
+`deleted_groups_20260827`, 66 in `deleted_group_members_20260827`, neither
+readable through the API. **The delete has happened and cannot be re-asked.**
+Those two tables are now the only record of the 36, so nothing in this project
+may drop them.
 
-⚠ **Do not hand-edit the `.sql`.** It is generated wholesale by
-`scratch/security/gen_club_progress.py`, which does an unconditional
-`write_text`. Fix the generator and regenerate — including after any edit that
-would change the ledger checksum.
+⚠ **Do not hand-edit the `.sql`, and now there is a second reason.** It is
+generated wholesale by `scratch/security/gen_club_progress.py`, which does an
+unconditional `write_text`, so a hand edit is overwritten by the next
+regeneration. And the file is no longer just a file: `schema_migrations` holds
+`493ae4fb…` as the bytes that ran, and `tools/migrations.py` computes that from
+the file on disk. **Any change to it breaks that match** — a hand edit silently
+(the ledger now describes bytes nobody has), a regeneration openly (the checksum
+moves and the row stops describing the file). If it must change, it changes for a
+*second run*, and the ledger is append-only precisely so a second run is visible
+rather than overwriting the first.
 
 **Six defects found by audit on 2026-08-27 are fixed** (2026-08-28): the
 orphaned id list before `begin;`, a drift guard that tested for the presence of
@@ -491,7 +675,10 @@ probe.
 
 **A second, independent audit then found eight more**, all now closed. The one
 that mattered: **it had no ledger footer and would have run unrecorded**, five
-days after the ledger was built for exactly this. Also fixed — `revoke all`
+days after the ledger was built for exactly this. That fix is the one the run
+cashed in — the row is in `schema_migrations`, checksummed, and this history
+table is no longer the only evidence that the biggest migration in the project
+happened. Also fixed — `revoke all`
 rather than three named verbs (Supabase grants ALL by default, so TRUNCATE,
 REFERENCES and TRIGGER survived a partial revoke), `to_regclass` rather than
 privilege-filtered `information_schema`, three new readback checks including
@@ -500,18 +687,31 @@ and a separately runnable pre-flight, because commenting the id list to fix the
 syntax error had made the advertised "run this first" step require hand-
 stripping 36 uuids.
 
-⚠ **One exposure is recorded rather than fixed, and it is Nathan's call.** The
-fold trigger exists because a Just-me untick is a replace and can lower the
-universal row below a session that still holds those ids. Under the new
-membership cascade, **leaving or being removed hits that same window with no
-fold**. `DECISIONS.md` §4 rules out a fold-on-leave trigger on the premise that
-no id can exist in `club_progress` and nowhere else — which is false for those
-few seconds. It is narrow (untick in Just-me, then leave) and he has already
-ruled against a second definer trigger writing other users' rows, so it stays
-open with its name written down.
+⚠ **One exposure shipped recorded rather than fixed, it is live as of
+2026-09-10, and it is Nathan's call.** This is the one paragraph in this section
+that is not history. The fold trigger exists because a Just-me untick is a
+replace and can lower the universal row below a session that still holds those
+ids. Under the membership cascade that is now in production, **leaving or being
+removed hits that same window with no fold** — the trigger is `before delete on
+groups`, and neither path deletes a group. `DECISIONS.md` §4 rules out a
+fold-on-leave trigger on the premise that no id can exist in `club_progress` and
+nowhere else — which is false for those few seconds. It is narrow (untick in
+Just-me, then leave) and he has already ruled against a second definer trigger
+writing other users' rows, so it stays open with its name written down. The file
+says so too, at its `club_fold_on_delete` definition, so the next reader of
+either finds it rather than discovering it.
 
-**Order:** run `preflight-club-progress.sql` first and read the output, then the
-migration, then paste the readback onto CLU-389.
+**Order, and it is what happened:** the pre-flight ran first and was read
+(~21:37, 6 PASS + 1 INFO), then the migration whole in one paste (21:38), then
+the 19-row readback went onto CLU-389. The same order governs any re-run, and the
+re-run question is not hypothetical — the file now **refuses**, because
+`club_progress` exists and the delete-first safety argument no longer holds.
+The guard is in its §1, inside the delete block and ahead of the archive insert
+(not in §0, which only checks that `migrate-groups.sql` ran and would still
+pass). A second run of this file as written raises *"club_progress already
+exists — the delete-first argument does not hold, stop"* and rolls back — the
+date-drift check ahead of it matches zero rows now that the 36 are gone, so
+this is the first thing that fires. That is correct behaviour, not a defect.
 
 ⚠ **The pre-flight is ONE statement, and it has to stay that way.** It was five
 separate `select`s, and on 2026-08-28 Nathan pasted it and got back a single
@@ -553,6 +753,13 @@ pre-flight is now 152 lines, md5 `47cf964c…`, and a second independent audit o
 the finished file (2026-09-10, ten checks, five mutants) returned SAFE. A STOP
 on check 4 now means a date really moved.
 
+**It cleared the same evening.** The re-run at ~21:37 returned 6 PASS and the
+single 1174-id INFO — check 4 among the PASSes — and the migration went in the
+same sitting. **That defect was the whole delay**: the file had been finished
+since 2026-08-28 and was held for two weeks by a check that could never go
+green, which is what a pre-flight costs when its label and its test ask
+different questions.
+
 Check 1 was widened in the same edit, ahead of a change that is *coming*: CLU-408
 gives every fresh watch its own progress row, `<slug>#fw<start>`, where today
 the only rewatch row is `<slug>#fw`. The check used to STOP on any suffix other
@@ -563,7 +770,10 @@ would pass — and that it does not matter to this migration: the snapshot joins
 `progress` to `groups` on exact `property_id` equality, and a group's
 `property_id` never carries a `#`, so no suffixed row of any shape can reach
 `club_progress`. Check 1 only decides whether Nathan is told to stop, never what
-is written.
+is written. **Settled by the event:** the snapshot ran on 2026-09-10 and covers
+every watch-club membership (readback 11), so no suffixed row reached
+`club_progress` — check 1 now matters only if the pre-flight is re-used for
+something else.
 
 ### And three that fail safely — leave them alone
 
@@ -598,6 +808,11 @@ An honest gap is safe. A confident guess is not.
    none of the eighteen carries a checksum — nobody knows the bytes that ran,
    and several of those files have been edited since.
 
+   **The first row the ledger wrote at run time is different in kind**, and there
+   is now exactly one: `migrate-club-progress.sql`, 2026-09-10, `source =
+   'recorded'`, with a checksum that still matches the file. Everything before it
+   is testimony; that row is a receipt.
+
    **The ledger does not close item 2 either.** It records what it is *told*,
    which is far better evidence than a comment thread and still not the
    database's own account of its own functions.
@@ -610,10 +825,24 @@ An honest gap is safe. A confident guess is not.
    on the board.
 4. **Which schema `pgcrypto` landed in.** `migrate-groups.sql` §0 is the only
    thing that would ever find out.
-5. **Whether `club_progress` and `save_progress` exist live.** Their migration
-   is written and waiting on a paste (§5); until it runs, no applied file creates
-   either, and the front end is built to survive their absence — so their
-   absence is invisible from the outside.
+5. ~~**Whether `club_progress` and `save_progress` exist live.**~~ **Known since
+   2026-09-10 21:38 UTC: they exist.** The migration ran and its 19-check
+   readback is the database's own answer — `club_progress` with RLS on, exactly
+   two policies and both `SELECT`, no write policy, `insert`/`update`/`delete`/
+   `truncate` denied to `authenticated` and `select` allowed,
+   `save_progress(text,uuid,text[])` executable by `authenticated` and not by
+   `anon`, `arr_union` by neither, `club_session_visible` by both,
+   `groups_fold_sessions` attached, and the snapshot covering every watch-club
+   membership (CLU-389). The front end's degradation path is now unreachable on
+   production, which also means **nothing live would tell you if the table were
+   dropped tomorrow** — it would simply look like the old behaviour coming back.
+
+   **What that readback did not settle is item 2.** It tested privileges, policy
+   counts, constraint shapes and trigger attachment — not a single function
+   *body* against its file. The ledger row does pin the bytes that were pasted
+   (`493ae4fb…`, still what `tools/migrations.py` computes for the file), which
+   is the strongest evidence any run in this project carries; it is evidence
+   about the paste, not about what the database holds now.
 
 ---
 
