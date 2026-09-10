@@ -152,6 +152,9 @@ rows, each one a door into that director's own page. Marking a row there
 ticks the whole filmography, and finishing a filmography ticks the row —
 and its bands are as wide as the hours behind them, summed at build time
 from the target lists themselves rather than typed anywhere. 676 hours.
+It arrives with every section already open, because a page of fifteen doors
+behind three closed drawers means opening all three before you can see what
+it holds.
 
 **Filmographies.** *Stanley Kubrick* (with A.I.), *Steven Spielberg*,
 *David Lynch* (all of Twin Peaks as one row), *Tom Cruise*, *Akira
@@ -335,6 +338,23 @@ weighted row, and a rabbit hole repeating a row its parent already carries —
 that last one would count a reader twice. A pointer whose target file does
 not exist yet is not an error: it is stripped, printed as a to-do, and the
 row renders as its plain facts, so a hub can be written before its targets.
+
+**A hub is a list whose every row is a door**, and no property file may say
+so: the build works it out from the rows and stamps `hub: true` on the
+manifest entry, because a hand-written flag would still be true the day
+somebody adds a plain row. A hub's sections render **open** — it is an
+assembly of other lists, and expanding three drawers to reach fifteen doors
+is work the page can do for you. Ordinary lists keep folding, and open one
+section on arrival. Folding a hub's section still works; it just does not
+outlive the reload, because the rule is the shape of the list rather than a
+preference left on it.
+
+**A new list joins the hubs it belongs to in the same change that creates
+it** — add the slug to `tools/make_directors.py` and run it, never edit
+`properties/directors.json` by hand. The step is written into
+`.claude/agents/property-builder.md`, where the lists get built; under it,
+`src/build.py` prints for each hub the lists that look like they belong and
+have no row there.
 
 **Item ids are load-bearing.** Progress is stored as a list of them, so
 reordering is safe but renaming silently destroys saved ticks. Prefix them with

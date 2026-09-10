@@ -108,10 +108,14 @@ def main():
         "subtitle": "%d filmographies" % total_core,
         "kind": "film, TV and anime filmographies",
         "year": "1925–",
-        # A judgement call, not a derived one: above Sight & Sound (50) because
-        # it is a front door to fifteen lists rather than one list, below
-        # Criterion (63) because it is a way in rather than a destination.
-        "popularity": 58,
+        # A judgement call, not a derived one, and Nathan's rather than mine:
+        # "i think this can move up to like ~top 5 popularity since it's a
+        # mega list." It was 58 — sat between Sight & Sound and Criterion on
+        # the reasoning that a way in ranks below a destination. He overruled
+        # that: a page standing for fifteen lists and 676 hours is the kind of
+        # thing a first-time visitor should meet near the top, so it sits with
+        # Mario at 94, behind Star Wars, Disney and the MCU.
+        "popularity": 94,
         "unit": {"one": "filmography", "many": "filmographies"},
         # without this the stats bar falls back to the literal "Done"; every
         # row here is a body of films, so the honest past tense is "watched"
@@ -152,8 +156,12 @@ def main():
     }
 
     out = PROPS / "directors.json"
-    out.write_text(json.dumps(prop, indent=1, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
+    # newline="\n" like gwlib.prop.write: on Windows write_text gave the file
+    # CRLF, and the build's content hash is taken over the property bytes —
+    # so a regeneration on the wrong machine moved the hash of every page
+    # without changing a single thing anyone could read.
+    with out.open("w", encoding="utf-8", newline="\n") as f:
+        f.write(json.dumps(prop, indent=1, ensure_ascii=False) + "\n")
     print("wrote %s — %d rows across %d sections"
           % (out.name, total_core, len(rows_by_sec)))
     for sid, stitle, sub, items in rows_by_sec:

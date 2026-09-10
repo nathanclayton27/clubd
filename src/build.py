@@ -226,6 +226,20 @@ def main():
     for p in props:
         if p.get("secret") or p.get("generate"):
             continue
+        # ---- is this a hub? (CLU-79) -----------------------------------
+        # A HUB IS A PROPERTY WHOSE EVERY ROW IS A DOOR — into or beside.
+        # Nothing else: not a name, not a hand-set flag, not a row count.
+        # Derived here rather than authored because a hand-written flag would
+        # go on being true the day somebody adds a plain row, and then the
+        # page would still be promising fifteen doors while holding fourteen.
+        #
+        # Read BEFORE the loop below strips a pointer with no target file
+        # yet: a hub written months ahead of its targets is still a hub, and
+        # a list should not fold and unfold as its neighbours land.
+        rws = rows_of(p)
+        p["_hub"] = bool(rws) and all(x.get("into") or x.get("beside")
+                                      for x in rws)
+
         hub_w, hub_flat = [], []
         for x in rows_of(p):
             into, beside = x.get("into"), x.get("beside")
@@ -331,6 +345,49 @@ def main():
     if roll:
         print("  satellites: %d close-up(s) resolved" % len(roll))
 
+    # ---- hubs, and what is missing from them (CLU-79) -------------------
+    # Nathan: "make sure when adding new stuff that fits in any of these mega
+    # lists is added to them." The step that does it is in
+    # .claude/agents/property-builder.md, where the lists get built; this is
+    # the net under that step, because a rule only obeyed by a person who
+    # remembers it is a rule that lapses.
+    #
+    # "Belongs" has to be mechanical, or the line is a guess — and a guess
+    # that names innocent lists every build is a line nobody reads by the
+    # third week. So: one narrow rule per hub, and a hub with no honest rule
+    # prints its own line and nothing else.
+    #
+    # Directors' rule is the property's own subtitle saying what one filmmaker
+    # directed. Across today's 210 lists that phrasing appears on 20 and all
+    # 20 are a single filmmaker's filmography, so it names nobody innocent.
+    # It is deliberately incomplete in the other direction — kubrick,
+    # tarantino, kurosawa, david-lynch and coen-brothers each word their
+    # subtitle differently and this cannot see them — which is why it is a
+    # hint printed under a hub and never a build failure.
+    HUB_BELONGS = {
+        "directors": ("a subtitle saying what one filmmaker directed",
+                      lambda q: bool(re.search(r"\bdirect(?:ed|s)\b",
+                                               q.get("subtitle") or ""))
+                      and bool(re.search(r"film|anime",
+                                         (q.get("kind") or "").lower()))),
+    }
+    for p in props:
+        if not p.get("_hub"):
+            continue
+        doors = {x.get("into") or x.get("beside") for x in rows_of(p)}
+        print("  hub: %s — %d rows, every one a door, so its sections ship "
+              "open" % (p["slug"], len(rows_of(p))))
+        rule = HUB_BELONGS.get(p["slug"])
+        if rule is None:
+            continue
+        want, belongs = rule
+        absent = sorted(q["slug"] for q in props
+                        if q["slug"] != p["slug"] and not q.get("secret")
+                        and q["slug"] not in doors and belongs(q))
+        if absent:
+            print("      %d list(s) carry %s and have no row here: %s"
+                  % (len(absent), want, ", ".join(absent)))
+
     # medium tags for the search chips and the card wall — derived from the
     # kind string plus the unit, so mixed-media pages (MCU: films & shows)
     # surface under every medium they contain
@@ -395,6 +452,12 @@ def main():
             # grab-bag lists welcome a random pick; everything else is
             # ordered and only ever offers its next unticked item
             **({"random": True} if p.get("random") else {}),
+            # CLU-79. Derived above, never authored — every row is a door.
+            # It rides in the manifest rather than the property file because
+            # the manifest is inlined in index.html and therefore in hand
+            # before the first section is drawn: the page needs to know
+            # whether to render the sections open, not to open them after.
+            **({"hub": True} if p.get("_hub") else {}),
             # the page needs these before first paint: one to know not to list
             # a locked property, the other to size a generated one
             # the switcher names a locked list by its cover title, not its own
