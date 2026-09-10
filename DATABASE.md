@@ -39,8 +39,13 @@ you write and often the only one.
 
 **2. Rows are scoped by `property_id`, which is a list slug.** `progress` is
 keyed `(user_id, property_id)`. A slug may carry a `#`-suffixed variant for a
-rewatch; server-side checks `split_part` on `#` before comparing, so a suffix
-cannot be used to sidestep a rule that applies to the base list.
+rewatch — one row per fresh watch since CLU-408, `slug#fw<epoch ms>`, plus the
+older bare `slug#fw` for a run begun before that; server-side checks
+`split_part` on `#` before comparing, so a suffix cannot be used to sidestep a
+rule that applies to the base list. Note that `progress` has **no delete
+policy** (its own-row policies are select, insert and update), so the client
+cannot remove a run's row: deleting a fresh watch empties its `read_ids` to
+`{}` instead, and an empty `#fw…` row is treated as no run at all.
 
 **3. Sharing is additive, and that is deliberate.** Permissive policies **OR**
 together. On `progress` there are separate branches for your own row, for mutual

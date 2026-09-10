@@ -2012,13 +2012,137 @@ function pickSlug(){
   return null;
 }
 const SLUG = pickSlug();
-// Fresh watch (CLU-46): a finished list can be watched again as its own
-// run. The fresh run lives in a parallel namespace — SLUG#fw for both the
-// local key and the cloud progress row — so the all-time set is untouched
-// by construction, not by promise. Events keep the real slug: a rewatch
-// tick is a real live watch.
-const FW = SLUG ? localStorage.getItem('gw:fwon:' + SLUG) === '1' : false;
-const CKEY = SLUG ? SLUG + (FW ? '#fw' : '') : SLUG;
+// Fresh watch (CLU-46, CLU-408): a finished list can be watched again as its
+// own run, and every press of ↻ starts a NEW one. A run's key is 'fw' plus
+// the epoch milliseconds it began — digits only, so it sorts by start and
+// carries its own date — and the one run that predates keys is the bare 'fw',
+// which stays a valid run so nobody mid-rewatch loses it. Each run lives in
+// a parallel namespace — SLUG#<key> for both the local key and the cloud
+// progress row — so the all-time set is untouched by construction, not by
+// promise. Events keep the real slug: a rewatch tick is a real live watch.
+//
+// FW is the ACTIVE run's key, or '' for the all-time run. It used to be a
+// boolean and the flag used to be '1'; that value still reads as the legacy
+// run, because the people carrying it are exactly the ones this must not drop.
+function fwActive(){
+  if(!SLUG) return '';
+  let v = '';
+  try{ v = localStorage.getItem('gw:fwon:' + SLUG) || ''; }catch(e){ return ''; }
+  if(v === '1') return 'fw';
+  return /^fw\d*$/.test(v) ? v : '';
+}
+const FW = fwActive();
+const CKEY = SLUG ? SLUG + (FW ? '#' + FW : '') : SLUG;
+// The run switcher's sentinel prefix: a menu row for a run is '~' + key. The
+// prefix never reaches GKEY — choosing a run swaps the storage namespace and
+// reloads, exactly as the ↻ button does.
+const FRESH = '~';
+// The legacy run's start stamp (2026-08-28 to CLU-408). A keyed run needs no
+// stamp — its start is in its name — so this is read, never written, now.
+const FWSTART = SLUG ? 'gw:fwstart:' + SLUG : '';
+function fwStarted(){
+  try{ return FWSTART ? localStorage.getItem(FWSTART) : null; }
+  catch(e){ return null; }
+}
+// Every run this reader has of a list, as a local registry —
+// 'gw:fwruns:<slug>', a JSON array of {key, start} kept on create and delete —
+// topped up from the cloud: a run ticked on another device is offered here
+// the first time its progress row is seen (fwDiscover on a list, primeShelf on
+// the shelf). Slug-parameterised because the shelf has no SLUG.
+function fwReadFor(slug){
+  let list = [];
+  try{ list = JSON.parse(localStorage.getItem('gw:fwruns:' + slug) || '[]'); }catch(e){}
+  if(!Array.isArray(list)) list = [];
+  return list.filter(r=> r && typeof r.key === 'string' && /^fw\d*$/.test(r.key));
+}
+function fwWriteFor(slug, list){
+  try{ localStorage.setItem('gw:fwruns:' + slug, JSON.stringify(list)); }catch(e){}
+}
+function fwKnowFor(slug, key){
+  if(!slug || !/^fw\d*$/.test(key)) return;
+  const list = fwReadFor(slug);
+  if(list.some(r=> r.key === key)) return;
+  list.push({ key, start: fwStartOf(key) });
+  fwWriteFor(slug, list);
+}
+function fwForget(key){ fwWriteFor(SLUG, fwReadFor(SLUG).filter(r=> r.key !== key)); }
+// One cloud progress row, which may be a run. An EMPTY row is not one: where
+// RLS refuses a delete, deleting a run empties its row instead (see
+// deleteFreshRun), and re-discovering that row would undo the deletion.
+function fwSeen(pid, ids){
+  const i = String(pid || '').indexOf('#fw');
+  if(i < 0 || !(Array.isArray(ids) && ids.length)) return;
+  fwKnowFor(pid.slice(0, i), pid.slice(i + 1));
+}
+function fwEpoch(key){ return key === 'fw' ? 0 : parseInt(key.slice(2), 10) || 0; }
+// The legacy run is inferred rather than registered: it exists if it is on,
+// has a stamp, or holds ticks on this device. An empty unstamped one is
+// indistinguishable from nothing and is treated as nothing.
+function fwLegacy(){
+  if(FW === 'fw' || fwStarted()) return true;
+  try{
+    const raw = JSON.parse(localStorage.getItem('gw:v1:' + SLUG + '#fw') || '[]');
+    return Array.isArray(raw) && raw.length > 0;
+  }catch(e){ return false; }
+}
+// Newest first. The bare legacy key has no start in it and sorts last, which
+// is where it belongs — it predates every keyed run by construction.
+function fwRuns(){
+  if(!SLUG) return [];
+  const list = fwReadFor(SLUG);
+  if(fwLegacy() && !list.some(r=> r.key === 'fw')) list.push({ key:'fw', start:null });
+  return list.sort((a,b)=> fwEpoch(b.key) - fwEpoch(a.key));
+}
+// When a run began, as an ISO timestamp, or null when that is genuinely
+// unknown. A keyed run carries its start in its name. The legacy run has a
+// stamp only if it began after 2026-08-28 and otherwise "started earlier" —
+// never today's date, which would be a lie about somebody's own history.
+function fwStartOf(key){
+  if(key === 'fw') return fwStarted();
+  const ms = fwEpoch(key);
+  return ms ? new Date(ms).toISOString() : null;
+}
+function fwHint(key){
+  const st = fwStartOf(key);
+  return st ? 'started ' + niceDate(st) : 'started earlier';
+}
+// What the pill and the tile bar call the run on screen: the date is what
+// tells one fresh watch from another, so it rides the name.
+function fwName(key){
+  const st = fwStartOf(key);
+  return 'Fresh watch' + (st ? ' · ' + niceDate(st) : '');
+}
+// The ↻ button. ALWAYS a new run — never a resume, never a toggle back; the
+// switcher does both of those. No confirm: nothing is lost by starting one,
+// and Nathan asked for every press to spawn one.
+function fwNew(){
+  const key = 'fw' + Date.now();
+  try{
+    fwKnowFor(SLUG, key);
+    localStorage.setItem('gw:fwon:' + SLUG, key);
+    // a fresh run and a club cannot both be on (see paintFW), so entering
+    // one lands you on your own row rather than a club you can't be in
+    localStorage.setItem(GKEY, JUSTME);
+  }catch(e){ return; }
+  location.reload();
+}
+// The reader's runs of this list as the cloud knows them, folded into the
+// registry so a run ticked on another device is offered here too. Beside
+// adopt() rather than inside it, and non-fatal: the all-time read is the one
+// request this page cannot afford to have fail on a filter it did not need.
+let fwDisc = false;
+async function fwDiscover(){
+  if(!(user && sb && SLUG)) return;
+  // once per load — onSession() fires twice on nearly every load (see adopt)
+  if(fwDisc) return;
+  fwDisc = true;
+  try{
+    const { data, error } = await sb.from('progress').select('property_id,read_ids')
+      .eq('user_id', user.id).like('property_id', SLUG + '#fw%');
+    if(error || !Array.isArray(data)) return;
+    data.forEach(r=> fwSeen(r.property_id, r.read_ids));
+  }catch(e){}
+}
 // ?account (CLU-57). Read once: the mast chip and the boot both branch on it.
 const ACCOUNT = new URLSearchParams(location.search).has('account');
 const FRIENDSPG = new URLSearchParams(location.search).has('friends');
@@ -3129,7 +3253,9 @@ async function onSession(session, definitive){
     $('baracct-i').textContent = (acctName() || (user.email || 'y')).charAt(0).toUpperCase();
     $('signin').classList.add('hide');
     state(user.email || 'Signed in','ok');
-    try{ await adopt(); }
+    // fwDiscover rides alongside, not after: same moment, no added wait, and
+    // it cannot reject — so a throw here is still adopt()'s and only adopt()'s
+    try{ await Promise.all([adopt(), fwDiscover()]); }
     catch(e){
       done = readLocal();
       state('Sync failed — saved on this device','');
@@ -3275,10 +3401,12 @@ async function onSession(session, definitive){
 })();
 
 /* ----------------------------------------------------------- fresh watch */
-// The toggle appears at the dead end — a finished list — and while a
-// fresh run is on. Switching just swaps the namespace and reloads; the
-// all-time run is never written from fresh mode, so there is nothing to
-// lose and nothing to confirm.
+// The button appears at the dead end — a finished list — and while a fresh
+// run is on. It used to be a toggle; since CLU-408 it only ever STARTS a run
+// (fwNew), a new one every press, and going back — to all-time or to an
+// earlier run — is the switcher's job. Starting one swaps the namespace and
+// reloads; nothing is written over, so there is nothing to lose and nothing
+// to confirm.
 function paintFW(){
   const b = $('b-fw');
   if(!b || !SLUG) return;
@@ -3294,20 +3422,12 @@ function paintFW(){
   const show = (FW || begun) && !SESSION;
   b.classList.toggle('hide', !show);
   if(!show) return;
-  b.textContent = FW
-    ? '↻ fresh watch on · all-time kept — switch back'
-    : '↻ start a fresh watch';
+  b.textContent = '↻ start a fresh watch';
   b.title = FW
-    ? 'Return to the all-time view (the fresh run keeps its place). Your clubs have been showing your all-time layer throughout.'
+    ? 'Another run from zero — this one keeps its place. The people tile below switches between your runs, and can delete one.'
     : 'Watch it again from zero, just for you — your all-time run and your clubs stay untouched';
-  b.onclick = ()=>{
-    try{
-      if(!FW) markFWStart();
-      localStorage.setItem('gw:fwon:' + SLUG, FW ? '0' : '1');
-    }catch(e){ return; }
-    location.reload();
-  };
-  document.body.classList.toggle('fw', FW);
+  b.onclick = fwNew;
+  document.body.classList.toggle('fw', !!FW);
 }
 
 /* ------------------------------------------------------------ clubbothy */
@@ -4239,6 +4359,9 @@ async function primeShelf(){
     const { data } = await sb.from('progress')
       .select('property_id,read_ids').eq('user_id', user.id);
     (data || []).forEach(r=>{
+      // a fresh run's row names the run (CLU-408); this is the one read that
+      // sees every row, so the registry learns about other devices' runs here
+      fwSeen(r.property_id, r.read_ids);
       let cur;
       try{ cur = JSON.parse(localStorage.getItem('gw:v1:' + r.property_id) || '[]'); }
       catch(e){ cur = []; }
@@ -5255,25 +5378,8 @@ const GKEY = 'gw:group:' + SLUG;   // which group is on screen, per property
 // means "never chose" and defaults into a club, which is not the same thing
 // as having chosen to be on your own.
 const JUSTME = '-';
-// CLU-408. A fresh run is not a mode you toggle, it is a thing that sits
-// under your all-time run with the date it started — the same shape a club
-// session has (CLU-389), which is what makes a rewatch a first-class object
-// rather than a switch. The sentinel never reaches GKEY: choosing it swaps
-// the storage namespace and reloads, exactly as the fresh-watch button does.
-const FRESH = '~fw';
-const FWSTART = SLUG ? 'gw:fwstart:' + SLUG : '';
-function fwStarted(){
-  try{ return FWSTART ? localStorage.getItem(FWSTART) : null; }
-  catch(e){ return null; }
-}
-// Stamped when a fresh run BEGINS, and never overwritten — coming back to one
-// is not starting it. Runs that were begun before this shipped have no stamp,
-// and say so rather than being given today's date, which would be a lie about
-// somebody's own history.
-function markFWStart(){
-  try{ if(FWSTART && !localStorage.getItem(FWSTART))
-         localStorage.setItem(FWSTART, new Date().toISOString()); }catch(e){}
-}
+// Fresh runs (FRESH, fwRuns and friends) live next to FW/CKEY near the top of
+// the script, because CKEY has to exist before anything reads storage.
 let groups   = [];    // every group this user belongs to, for this property
 let group    = null;  // the one being shown
 let gmembers = [];    // [{id, name, ci, read:Set}]
@@ -5723,8 +5829,8 @@ async function loadMembers(){
 // `done` is reassigned wholesale by reset, import and the first-sign-in merge, so
 // your own layer has to read it live rather than hold a reference from load time.
 // Except in fresh mode: a fresh watch is personal, so every club still shows the
-// all-time layer — frozen under the un-suffixed key while #fw runs, unioned with
-// the cloud row in case this device never held it.
+// all-time layer — frozen under the un-suffixed key while a #fw… run is on,
+// unioned with the cloud row in case this device never held it.
 function readsOf(m){
   if(!(user && m.id === user.id)) return m.read;
   if(!FW) return done;
@@ -5916,9 +6022,14 @@ function dueFor(idx){
   return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')
         +'-'+String(d.getDate()).padStart(2,'0');
 }
+// Takes a date ('2026-09-10', read as local midnight) or a full timestamp
+// ('2026-09-10T14:03:00.000Z', read as the instant it is). The second form
+// used to get 'T00:00:00' glued on and came out "Invalid Date" — which is how
+// a fresh run's start read on the tile (CLU-408).
 function niceDate(iso){
-  return new Date(iso + 'T00:00:00')
-    .toLocaleDateString(undefined, {month:'short', day:'numeric'});
+  const s = String(iso || '');
+  const d = /T/.test(s) ? new Date(s) : new Date(s + 'T00:00:00');
+  return d.toLocaleDateString(undefined, {month:'short', day:'numeric'});
 }
 
 // CLU-141. One line, and deliberately only one: what you have actually got
@@ -6466,8 +6577,9 @@ function togetherLabel(){
 function switchLabel(){
   if(group) return group.name;
   // the pill has to name the run you are actually looking at, or a fresh
-  // watch reads as your all-time one
-  if(FW && !picked.length) return 'Fresh watch';
+  // watch reads as your all-time one — and with several runs, the date is
+  // what tells them apart (CLU-408)
+  if(FW && !picked.length) return fwName(FW);
   if(!picked.length) return 'Just me';
   const nm = (FREDGES && FREDGES.names) || {};
   return picked.length === 1 ? (nm[picked[0]] || 'someone')
@@ -6523,8 +6635,9 @@ function groupSwitcher(){
   // solo reader with no clubs and no friends is exactly the person who starts
   // one. Without this clause the entry they were promised would be invisible
   // to precisely its audience.
+  const runs = fwRuns();
   if(!groups.length && !ugroups.length && !mut.length && !picked.length
-     && !FW && !fwStarted()) return '';
+     && !FW && !runs.length) return '';
 
   const row = (v, label, hint, on)=>
       '<button type="button" class="gmi'+(on?' on':'')+'" role="menuitemradio"'
@@ -6540,11 +6653,21 @@ function groupSwitcher(){
                  !FW && !group && !picked.length);
 
   // Beneath Just me, not instead of it: the all-time run is still there and
-  // still untouched, which is the whole promise of a fresh watch.
-  if(FW || fwStarted()){
-    const st = fwStarted();
-    html += row(FRESH, 'Fresh watch',
-                st ? 'started ' + niceDate(st) : 'started earlier', FW);
+  // still untouched, which is the whole promise of a fresh watch. One row per
+  // run, newest first, each named by the day it began. Two runs begun on the
+  // same day would read identically, so only then does the hint carry the
+  // time as well — a date is what Nathan asked for, and a time on every row
+  // would be noise on the day that matters.
+  if(runs.length){
+    const days = {};
+    runs.forEach(r=>{ const d = fwHint(r.key); days[d] = (days[d] || 0) + 1; });
+    runs.forEach(r=>{
+      let hint = fwHint(r.key);
+      const st = fwStartOf(r.key);
+      if(st && days[hint] > 1)
+        hint += ' ' + new Date(st).toLocaleTimeString(undefined, {hour:'numeric', minute:'2-digit'});
+      html += row(FRESH + r.key, 'Fresh watch', hint, FW === r.key);
+    });
   }
 
   if(groups.length)
@@ -6807,17 +6930,111 @@ function wireTile(){
 // The three doors that used to be rows down the panel. Rename and the schedule
 // are the owner's alone — the same policy the server enforces — so a member is
 // given neither rather than a control that answers a press with a refusal.
-function clubIcons(){
-  const ico = (id, key, label, glyph)=>
-      '<button class="cicon" type="button" id="'+id+'"'
+// One door icon. Shared with the fresh-run tile below, which has one door.
+function doorIcon(id, key, label, glyph){
+  return '<button class="cicon" type="button" id="'+id+'"'
     + ' aria-expanded="'+(gdrawer === key ? 'true' : 'false')+'"'
     + ' aria-controls="cdrawer"'
     + ' title="'+esc(label)+'" aria-label="'+esc(label)+'">'+glyph+'</button>';
+}
+function clubIcons(){
   return '<span class="cico">'
-    + (isOwner() ? ico('b-cren', 'rename', 'Rename the club', '&#9998;') : '')
-    + (isOwner() ? ico('b-csched', 'sched', 'Schedule', '&#9636;') : '')
-    + ico('b-cmore', 'more', 'Your name, refresh, calendar, leave', '&#8943;')
+    + (isOwner() ? doorIcon('b-cren', 'rename', 'Rename the club', '&#9998;') : '')
+    + (isOwner() ? doorIcon('b-csched', 'sched', 'Schedule', '&#9636;') : '')
+    + doorIcon('b-cmore', 'more', 'Your name, refresh, calendar, leave', '&#8943;')
     + '</span>';
+}
+
+// A fresh run on screen gets the club's overflow door and one thing behind
+// it: delete. Nathan's ask (CLU-408) — "delete-able just like clubs/group
+// watches" — so it sits where leaving a club sits, on the same icon, behind
+// the same kind of confirm. Only the run being looked at can be deleted, the
+// way only the club being looked at can be left: switch to it first, and
+// what you are deleting is what the page is showing.
+function fwIcons(){
+  if(!FW) return '';
+  return '<span class="cico">'
+    + doorIcon('b-cmore', 'more', 'Delete this fresh watch', '&#8943;')
+    + '</span>';
+}
+function fwDrawer(){
+  if(!FW || gdrawer !== 'more') return '';
+  return '<div class="cdrawer" id="cdrawer"><div class="row">'
+    + '<button id="b-fwdel">Delete this fresh watch</button></div></div>';
+}
+function wireFwDrawer(){
+  wireClubIcons();
+  const del = $('b-fwdel');
+  if(del) del.onclick = ()=> deleteFreshRun(FW);
+}
+
+// What goes is the run's own progress row in the cloud and everything this
+// device holds under its key. The all-time record and every other run are
+// untouched by construction — none of them shares the key — so the confirm
+// can promise that flatly.
+async function deleteFreshRun(key){
+  if(!SLUG || !/^fw\d*$/.test(key || '')) return;
+  if(!confirm('Delete this fresh watch?\n\nIts ticks go with it. Your all-time'
+              + ' record for this list is untouched.')) return;
+  const ck = SLUG + '#' + key;
+  // a save still queued for this run would put the row back a beat after it
+  // went, and applyReload() reads a live handle as "do not reload yet"
+  if(key === FW && saveTimer){ clearTimeout(saveTimer); saveTimer = null; }
+  if(user && sb){
+    try{
+      // The progress table has no delete policy (schema.sql grants select,
+      // insert and update on your own rows; nothing for delete), and RLS
+      // refuses a delete by matching nothing — no error, no row. So ask for
+      // the deleted row back, and when none comes, empty it instead: an
+      // empty row holds no ticks and is not a run (fwSeen skips it), which
+      // is everything "deleted" means to the reader.
+      const { data: had, error: e0 } = await sb.from('progress').select('property_id')
+        .eq('user_id', user.id).eq('property_id', ck).maybeSingle();
+      if(e0) throw e0;
+      if(had){
+        const { data: gone, error: e1 } = await sb.from('progress').delete()
+          .eq('user_id', user.id).eq('property_id', ck).select('property_id');
+        if(e1) throw e1;
+        if(!(Array.isArray(gone) && gone.length)){
+          const { error: e2 } = await sb.from('progress')
+            .upsert({ user_id:user.id, property_id:ck, read_ids:[],
+                      updated_at:new Date().toISOString() },
+                    { onConflict:'user_id,property_id' });
+          if(e2) throw e2;
+        }
+      }
+    }catch(e){
+      flash('Could not delete it: ' + ((e && e.message) || e), 'gmsg2');
+      return;
+    }
+  }
+  try{
+    localStorage.removeItem('gw:v1:' + ck);
+    // the legacy run's start stamp is the run's, and goes with it
+    if(key === 'fw' && FWSTART) localStorage.removeItem(FWSTART);
+    // the first-sign-in fold flag for this run, for whichever accounts folded
+    // it — a deleted run that came back would otherwise skip its fold
+    const stale = [];
+    for(let i = 0; i < localStorage.length; i++){
+      const k = localStorage.key(i);
+      if(k && k.indexOf('gw:merged:') === 0 && k.slice(-(ck.length + 1)) === ':' + ck)
+        stale.push(k);
+    }
+    stale.forEach(k=> localStorage.removeItem(k));
+  }catch(e){}
+  fwForget(key);
+  if(key === FW){
+    // the run on screen is gone, so the page has to land somewhere real: the
+    // all-time run, on your own row
+    try{
+      localStorage.setItem('gw:fwon:' + SLUG, '');
+      localStorage.setItem(GKEY, JUSTME);
+    }catch(e){}
+    location.reload();
+    return;
+  }
+  gdrawer = '';
+  renderGroupPanel();
 }
 
 // Whichever drawer is open, and nothing when none is. Leave, calendar and
@@ -6893,11 +7110,20 @@ function renderGroupPanel(){
   wireTile();
 
   if(!user){
-    paintClubBar(groupNoun());
+    // Signed out, the tile still has to switch between runs (CLU-408): a
+    // fresh watch needs no account, and once the ↻ button only ever starts
+    // one, the switcher is the only way back to all-time or to an earlier
+    // run. So the menu — and the delete door — draw above the invitation.
+    const runs = fwRuns();
+    const has = !!(FW || runs.length);
+    paintClubBar(has ? switchLabel() : groupNoun());
     setup.classList.add('hide'); joined.classList.remove('hide');
     foot.classList.add('hide');
-    joined.innerHTML = '<p>Clubs need an account, so everyone’s progress has somewhere to live. '
+    joined.innerHTML =
+      (has ? '<div class="cmenu">' + groupSwitcher() + fwIcons() + '</div>' + fwDrawer() : '')
+      + '<p>Clubs need an account, so everyone’s progress has somewhere to live. '
       + 'Sign in above and this turns into a club.</p>';
+    if(has){ wireSwitcher(); wireFwDrawer(); }
     return;
   }
   if(!group){
@@ -6925,10 +7151,11 @@ function renderGroupPanel(){
     // do (CLU-408): it is a second real state on this list, and the reader
     // who has one and no clubs is the one the entry was built for.
     if(groups.length || picked.length || mutualFriends().length
-       || FW || fwStarted()){
+       || FW || fwRuns().length){
       // the bar says what was chosen — not the invitation copy, which would
-      // read as though no club existed
-      paintClubBar(picked.length ? switchLabel() : 'Just me');
+      // read as though no club existed. switchLabel() names a pick, a fresh
+      // run by its date, or Just me.
+      paintClubBar(switchLabel());
       // Folded only when you already have a club on this list — there the
       // form makes a SECOND one and "+ new / join another" describes it
       // honestly. With no club here it is the primary call to action, and a
@@ -6944,9 +7171,14 @@ function renderGroupPanel(){
       // sentence repeating it was narration set in the loudest type on the
       // page. The "not a club, nothing was created" reassurance went with it:
       // it answered a question nobody had asked yet, every single render.
-      joined.innerHTML = '<div class="cmenu">' + groupSwitcher() + '</div>';
+      // fwIcons()/fwDrawer() are empty strings unless a fresh run is on
+      // screen, in which case the tile gets the club's overflow door with
+      // delete behind it (CLU-408).
+      joined.innerHTML = '<div class="cmenu">' + groupSwitcher() + fwIcons() + '</div>'
+        + fwDrawer();
       foot.innerHTML = clubFoot();
       wireSwitcher();
+      wireFwDrawer();
       pkAll(joined);
       wireClubFoot();
       return;
@@ -7087,10 +7319,12 @@ function wireSwitcher(){
     // storage namespace, and `done` is bound to it at load — so it reloads,
     // exactly as the fresh-watch button has always done. Handled before the
     // GKEY write below because the sentinel must never be stored as a club.
-    if(v === FRESH || (v === JUSTME && FW)){
+    if(v.charAt(0) === FRESH || (v === JUSTME && FW)){
+      const key = v === JUSTME ? '' : v.slice(1);
+      // already there: nothing to swap, so no reload — just shut the menu
+      if(key === FW){ renderGroupPanel(); return; }
       try{
-        if(v === FRESH) markFWStart();
-        localStorage.setItem('gw:fwon:' + SLUG, v === FRESH ? '1' : '0');
+        localStorage.setItem('gw:fwon:' + SLUG, key);
         // a fresh run and a club cannot both be on (see paintFW), so entering
         // one lands you on your own row rather than a club you can't be in
         localStorage.setItem(GKEY, JUSTME);
@@ -7147,7 +7381,9 @@ function wireSwitcher(){
       // replace the menu itself
       const nm = document.querySelector('#g-switch .gswn');
       if(nm) nm.textContent = switchLabel();
-      paintClubBar(ids.length ? switchLabel() : 'Just me');
+      // switchLabel() says Just me with nothing picked — or the fresh run's
+      // name, when that is the row you are back on
+      paintClubBar(switchLabel());
       // The foot holds the club's code chip. Not repainting it left the last
       // club's code sitting under a strip that is drawing a pick — a code for
       // something you are not looking at, which is exactly the "nothing was
