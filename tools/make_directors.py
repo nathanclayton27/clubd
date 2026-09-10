@@ -152,8 +152,14 @@ def main():
     }
 
     out = PROPS / "directors.json"
+    # newline="\n" is not optional. Without it, write_text on Windows lands
+    # CRLF, .gitattributes normalises it back to LF on commit so git reports
+    # the file clean, and the build's content stamp — which reads raw bytes —
+    # comes out different here than in CI. That kept `check` red on every push
+    # for thirteen days while Pages deployed happily. Every other generator
+    # goes through gwlib.prop.write(), which gets this right.
     out.write_text(json.dumps(prop, indent=1, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
+                   encoding="utf-8", newline="\n")
     print("wrote %s — %d rows across %d sections"
           % (out.name, total_core, len(rows_by_sec)))
     for sid, stitle, sub, items in rows_by_sec:

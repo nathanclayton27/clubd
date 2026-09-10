@@ -840,9 +840,20 @@ def main():
     # index.html with a cache lifetime, so a browser can go on running an old
     # copy after a deploy. The page checks this against build.json and reloads
     # itself once if they differ, which is what saves anyone hard-refreshing.
+    # Newlines are normalised before hashing, and that is load-bearing rather
+    # than tidy. `.gitattributes` stores these files with LF and hands a
+    # checkout whatever the platform wants, and a generator that writes with
+    # write_text() and no newline= lands CRLF on Windows. Either way git calls
+    # the file clean while the raw bytes differ from the ones CI reads, so a
+    # stamp over read_bytes() came out different on the two machines and the
+    # "committed build is current" check failed on every single push for
+    # thirteen days — from 2026-08-28, when directors.json was first generated,
+    # until this line. Pages deployed the whole time, which is why nothing said
+    # so. The stamp must depend on the CONTENT of the catalogue and on nothing
+    # about the machine that built it.
     stamp = hashlib.sha1(html.encode("utf-8"))
     for f in files:
-        stamp.update(f.read_bytes())
+        stamp.update(f.read_bytes().replace(b"\r\n", b"\n"))
     build = stamp.hexdigest()[:12]
 
     html = html.replace("__BUILD__", build)
