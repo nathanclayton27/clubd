@@ -421,11 +421,13 @@ exactly the committed form.
 | 2026-08-26 23:04 | **Read-only** 19-check readback | 19/19. Confirmed `join_group` still carries its rate-limit calls, `group_may_read` is callable by neither `anon` nor `authenticated`, and `groups_update_guard` is attached rather than orphaned | CLU-387 |
 | 2026-08-26 23:47 | `migrate-mute-privacy.sql` + 7-check readback | 7/7. `group_members` five-column grant, `my_group_shares()` | CLU-392 |
 | 2026-08-27 00:27 | `migrate-group-thumbs.sql` + 5-check readback | 5/5. One policy, `"read group thumbs"` | CLU-390 |
-
 | 2026-08-27 18:43 | `migrate-add-schema-ledger.sql` + 14-check readback | 14/14. `schema_migrations`, three constraints, an index, RLS deny-all, and the eighteen rows above backfilled into it | CLU-404 |
+| 2026-08-28 | **Read-only** `preflight-club-progress.sql`, five-statement version | Returned one row, `must_be_zero = 0` — the editor showed only the last statement (see §2). Rewritten as one statement the same day. Nothing changed | CLU-389 |
+| 2026-09-10 21:04 | **Read-only** `preflight-club-progress.sql`, one-statement version | Seven rows: 5 PASS, 1 INFO (largest `progress` row is 1174 ids; the write cap is 5000), and **1 false STOP**: check 4 named the nine clubs that carried a date *at survey time* as if they had gained one. Nothing changed; the check was wrong, not the data. Fixed the same hour, below | CLU-389 |
 
-**The last line is the most recent change to production. Nothing is queued
-behind it.**
+**The ledger row is the most recent change to production. The two pre-flight
+runs after it read; they did not write. Behind them sits `migrate-club-progress.sql`,
+queued (§5, "Queued and ready").**
 
 **From this point the database records its own history.** Everything above the
 last row was reconstructed from the board; everything after it is recorded at
@@ -526,6 +528,42 @@ bottom **commented out**, with a note not to paste it with the rest, because
 appending it would make it the last statement and hide the verdicts again.
 
 Anything added to this file later must go inside that single select.
+
+⚠ **Check 4 carried the migration's first audited defect, and it was only
+caught when Nathan ran it.** The migration's drift guard was fixed on
+2026-08-28 to compare live dates against the *surveyed* dates, because nine of
+the 36 clubs carried a date when the list was approved. The pre-flight, written
+in the second audit round, re-asked the older question — "does any listed club
+carry a date at all" — under the label "gained a date since the survey". So it
+was guaranteed to read STOP on every clean run, naming the same nine clubs each
+time, and on 2026-09-10 it did. Two replies on CLU-389 then told Nathan those
+nine had "since put a date on", which was false; the survey file had those dates
+all along.
+
+Fixed 2026-09-10: the `del` CTE now carries `(id, target, sched)` from the
+frozen file and check 4 uses `is distinct from` on both columns — the same test
+the migration runs, so the two cannot disagree. The generator parses the CTE's
+36 triples back out and asserts them equal to the frozen file *by id* (a bag of
+dates would pass with two rows swapped). The audit of that fix added three
+small honesty changes to the same check: the PASS text counts the rows that
+joined rather than hard-coding 36, and a STOP names each club with the first
+eight characters of its id, because two of the dated nine are both called
+`#greenringgang`. **The migration file did not change** (`76e61d1e…`); the
+pre-flight is now 152 lines, md5 `47cf964c…`, and a second independent audit of
+the finished file (2026-09-10, ten checks, five mutants) returned SAFE. A STOP
+on check 4 now means a date really moved.
+
+Check 1 was widened in the same edit, ahead of a change that is *coming*: CLU-408
+gives every fresh watch its own progress row, `<slug>#fw<start>`, where today
+the only rewatch row is `<slug>#fw`. The check used to STOP on any suffix other
+than exactly `fw`; it now STOPs on any suffix that does not *begin* with `fw`
+(`!~ '^fw'`), so the first fresh watch started after CLU-408 ships cannot turn a
+clean pre-flight red. The audit notes this makes it a weaker canary — `#fwx`
+would pass — and that it does not matter to this migration: the snapshot joins
+`progress` to `groups` on exact `property_id` equality, and a group's
+`property_id` never carries a `#`, so no suffixed row of any shape can reach
+`club_progress`. Check 1 only decides whether Nathan is told to stop, never what
+is written.
 
 ### And three that fail safely — leave them alone
 
