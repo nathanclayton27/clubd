@@ -21,16 +21,17 @@ groupwatch/
 │   ├── template.html       markup, CSS, JS — the thing you edit
 │   └── reading_order.py    authoring source for the Hickman order only
 ├── tools/                  one generator per property that needs one
+├── l/                      generated — one share page per public list, see below
 ├── schema.sql              fresh database
 ├── migrate-*.sql           run once each, on an existing database
 └── index.html              generated, committed, served
 ```
 
 **`index.html` is generated. Don't edit it.** It is committed anyway, because
-GitHub Pages has no build step of its own.
+GitHub Pages has no build step of its own. The same goes for `l/`.
 
 ```
-src/template.html  +  properties/index.json  →  python3 src/build.py  →  index.html
+src/template.html  +  properties/index.json  →  python3 src/build.py  →  index.html + l/
 ```
 
 Property *bodies* are not inlined. The page boots, reads `?p=<slug>`, and
@@ -258,6 +259,55 @@ carries `accent` and `accentDark`, and `applyAccent()` picks between them from
 `prefers-color-scheme`, re-running when the system theme changes. Setting one
 accent for both themes flattens the palette and leaves dark mode wearing the
 light tone.
+
+---
+
+## Share pages
+
+The site routes on the query string and serves one `index.html`, and a crawler
+runs no JavaScript. Discord fetching `clubd.watch/?p=halo` reads the static
+head and previews the generic site card — for every list alike. So the build
+writes one small page per public list at **`l/<slug>.html`**, carrying nothing
+but that list's own `og:` / `twitter:` tags and a bounce to the app:
+
+```html
+<meta http-equiv="refresh" content="0;url=/?p=halo">
+<script>location.replace("/?p=halo")</script>
+```
+
+A crawler reads the tags and stops. A person lands on the file and is in the
+app before they notice — the script is what makes it instant, the meta refresh
+is what a browser with no script honours, and a single link in the body is
+there for the one that honours neither. GitHub Pages serves `l/halo.html` at
+`/l/halo` as well (verified against the live site), and that is the URL the
+tags call canonical, so a crawler that re-fetches `og:url` reads the same tags
+again rather than the generic ones at `/?p=halo`.
+
+The description is the list's own header — `subtitle-or-kind · year · N units`,
+then the blurb — because Discord caches a first embed for a long time and the
+page's own facts, in the page's own order, cannot say anything the list does
+not. The image is the site card until CLU-218 makes one per list.
+
+**The build owns `l/`.** It removes the page of any list that was renamed or
+removed, refuses anything in there it did not write, and asserts afterwards
+that the directory holds exactly one page per public list. Commit it with
+`index.html`; the CI check fails on a stale or untracked page.
+
+**The gated list never gets one, and the build proves it** (CLU-214). Its page
+would be a public, unlinked URL carrying its cover title — and unlinked files
+are exactly how this repo has leaked before. The generator skips on the
+`secret` flag, never by name, and `check_embeds()` then reads the directory
+back and fails the build if a page is named for the gated list, or if its slug
+(as a whole token), its cover title (as a title), its hint or any piece of its
+ciphertext appears inside any page. A share link to the gated list is the app
+URL, `/?p=<slug>`, which a crawler reads as the generic card; `/l/<slug>.html`
+simply never exists, and a missing path on Pages is GitHub's own 404 page —
+no site content, no tags, no embed.
+
+Nothing hands the `/l/` URL out yet: the template has no copy-link for a list
+(that is CLU-142), and the friend and club links are their own cards. A
+generated (daily) list is skipped as well, since its count is only known on
+the day it is read.
 
 ---
 
@@ -508,7 +558,7 @@ Worth a hook if you will be at this a while:
 ```bash
 cat > .git/hooks/pre-commit <<'EOF'
 #!/bin/sh
-python3 src/build.py && git add index.html properties/index.json
+python3 src/build.py && git add index.html build.json properties/index.json l
 EOF
 chmod +x .git/hooks/pre-commit
 ```

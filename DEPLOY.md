@@ -14,10 +14,19 @@ python src/build.py                    # src/template.html + properties/ -> inde
 python scratch/jscheck.py index.html   # the generated <script> block parses
 python tools/qa_lint.py                # content rules: notes, counts, blurbs
 
-git add -- index.html build.json <the source files you changed>
+git add -- index.html build.json l <the source files you changed>
 git commit
 git push origin main
 ```
+
+### `l/` ships with `index.html` too
+
+The build writes one share page per public list into `l/` — the file a
+crawler reads instead of `index.html`, so a pasted link previews as the list
+rather than as the site (see *Share pages* in `HOW-IT-WORKS.md`). It owns the
+directory: a new list gets a page, a renamed or removed list loses its old one.
+Stage the whole directory, not the files you happen to notice; the CI check
+fails on a page that is stale or untracked.
 
 ### `build.json` ships with `index.html`, always
 

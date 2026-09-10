@@ -21,9 +21,12 @@ jobs:
       - name: Build
         run: python src/build.py
       - name: Committed build is current
+        # l/ is covered by status, not diff: a share page the build wrote for
+        # a new list is untracked, and diff cannot see it
         run: |
-          git diff --exit-code -- index.html properties/index.json \
-            || { echo "::error::index.html/manifest are stale — run src/build.py and commit the result"; exit 1; }
+          git diff --exit-code -- index.html properties/index.json l \
+            && [ -z "$(git status --porcelain -- l)" ] \
+            || { echo "::error::index.html/manifest/l are stale — run src/build.py and commit the result"; exit 1; }
       - name: Content lint + tree consistency
         run: python tools/qa_lint.py
 
