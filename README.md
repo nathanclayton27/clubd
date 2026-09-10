@@ -214,7 +214,8 @@ thirteen films in one place), *Avatar* with *Korra*, *The Office*,
 anime shorts and the claymation webisodes stay out), *Archer* (all
 fourteen, the four themed seasons named as the show named them),
 *Bob's Burgers* (sixteen seasons, the film left off an episode list
-on purpose),
+on purpose), *The Vampire Diaries* (all 171 episodes in broadcast
+order, its two spin-offs deliberately left to their own runs),
 *Battlestar Galactica*, *Black Mirror* — the rare
 television list with a verified runtime on every row — *Invincible*,
 and the big anime runs: *Naruto* and *Bleach* with their filler
@@ -259,6 +260,15 @@ Colours identify people; the legend names them.
 
 **Joining a group makes your progress readable by the people in it** — for that
 property only. That's what the shared strip is. Leaving ends it.
+
+## Sharing a list
+
+Paste a list's link anywhere that unfurls one and it previews as the list
+rather than as the site. The build writes one small page per public list into
+[`l/`](l/) carrying that list's own title and blurb for a crawler, then sending
+a human straight on to the list itself. The gated list has no such page, and
+the build fails rather than writes one — see *Share pages* in
+[`HOW-IT-WORKS.md`](HOW-IT-WORKS.md).
 
 ## Schedules
 
