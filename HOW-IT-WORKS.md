@@ -278,15 +278,21 @@ but that list's own `og:` / `twitter:` tags and a bounce to the app:
 A crawler reads the tags and stops. A person lands on the file and is in the
 app before they notice — the script is what makes it instant, the meta refresh
 is what a browser with no script honours, and a single link in the body is
-there for the one that honours neither. GitHub Pages serves `l/halo.html` at
-`/l/halo` as well (verified against the live site), and that is the URL the
-tags call canonical, so a crawler that re-fetches `og:url` reads the same tags
-again rather than the generic ones at `/?p=halo`.
+there for the one that honours neither. GitHub Pages serves a subdirectory's
+`halo.html` at `/l/halo` as well — checked against the site's other
+subdirectory pages, not against `l/` itself, so `curl -sI
+https://clubd.watch/l/kubrick` after the first deploy is the confirmation —
+and that is the URL the tags call canonical, so a crawler that re-fetches
+`og:url` reads the same tags again rather than the generic ones at `/?p=halo`.
 
-The description is the list's own header — `subtitle-or-kind · year · N units`,
-then the blurb — because Discord caches a first embed for a long time and the
-page's own facts, in the page's own order, cannot say anything the list does
-not. The image is the site card until CLU-218 makes one per list.
+The description is the list's blurb, verbatim — the sentence under the title
+on the list page, whose count `qa_lint` holds to the rows — and the header
+line (`subtitle-or-kind · year · N units`) only for a list with no blurb. It
+is not the header *and* the blurb: 81 blurbs open with the count the header
+already states, and the header is lower-case because it sits over a title.
+Discord caches a first embed for a long time, so the card says what the blurb
+says and nothing more; CLU-213 may add to it. The image is the site card
+until CLU-218 makes one per list.
 
 **The build owns `l/`.** It removes the page of any list that was renamed or
 removed, refuses anything in there it did not write, and asserts afterwards
@@ -296,18 +302,23 @@ that the directory holds exactly one page per public list. Commit it with
 **The gated list never gets one, and the build proves it** (CLU-214). Its page
 would be a public, unlinked URL carrying its cover title — and unlinked files
 are exactly how this repo has leaked before. The generator skips on the
-`secret` flag, never by name, and `check_embeds()` then reads the directory
-back and fails the build if a page is named for the gated list, or if its slug
-(as a whole token), its cover title (as a title), its hint or any piece of its
-ciphertext appears inside any page. A share link to the gated list is the app
-URL, `/?p=<slug>`, which a crawler reads as the generic card; `/l/<slug>.html`
+`secret` flag, never by name, and the build fails — it does not sweep the file
+as stale — if a page named for the gated list is ever found in `l/`, whether
+before the pages are written or after. `check_embeds()` then reads the
+directory back and fails the build if any page links to it (`?p=<slug>` or
+`/l/<slug>`), titles itself with its slug or cover title, or carries its hint
+or any piece of its ciphertext. The slug is an ordinary word, so a blurb that
+merely uses it is not a hit. A share link to the gated list is the app URL,
+`/?p=<slug>`, which a crawler reads as the generic card; `/l/<slug>.html`
 simply never exists, and a missing path on Pages is GitHub's own 404 page —
 no site content, no tags, no embed.
 
 Nothing hands the `/l/` URL out yet: the template has no copy-link for a list
-(that is CLU-142), and the friend and club links are their own cards. A
-generated (daily) list is skipped as well, since its count is only known on
-the day it is read.
+(that is CLU-142), and the friend and club links are their own cards. **When
+one is added it must branch on the `secret` flag** and hand out `/?p=<slug>`
+for the gated list, never `/l/<slug>` — the `/l/` form is a 404 for it, and
+CLU-214 asks for the generic card. A generated (daily) list is skipped as
+well, since its count is only known on the day it is read.
 
 ---
 
