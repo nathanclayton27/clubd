@@ -614,6 +614,13 @@ back and compares checksums against the repo.
 These stay in `scratch/security/`, which is gitignored, because they describe
 work that has not happened rather than the state that has.
 
+⚠ **Gitignored is not the same as unpublishable.** `.gitignore` stops a file
+becoming tracked and does nothing at all once one already is, and GitHub Pages
+serves every tracked file — which is how two QA harnesses under `scratch/qa2/`
+came to answer 200 on the live site (2026-09-10, CLU-414). `python
+tools/notracked.py` now fails if anything is tracked under `scratch/security/`,
+so this folder's guarantee is a command rather than a habit.
+
 ⚠ **Do not read that the other way round.** Since 2026-09-10 the folder also
 holds `migrate-club-progress.sql`, which **has** run and is bootstrap step 14;
 being in `scratch/security/` no longer implies unrun. It is the only such file,

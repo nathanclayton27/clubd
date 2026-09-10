@@ -112,6 +112,29 @@ It is not part of deploying.
   common way a feature half-works in production.
 - **It does not touch `CNAME`.** It contains `clubd.watch` and is what binds
   the custom domain. Deleting it takes the site off its own domain.
-- **It does not publish anything from `scratch/`.** That directory is
-  gitignored and holds working material, credentials-adjacent tooling and
-  security notes. Keep it that way.
+- **It publishes every tracked file, including tracked files under `scratch/`.**
+  That sentence used to read "it does not publish anything from `scratch/`", and
+  it was false. `.gitignore` stops a file becoming tracked; it does nothing once
+  one already is, and Pages serves what is tracked. Two QA harnesses had slipped
+  in, so `clubd.watch/scratch/qa2/privacy_check.py` answered **200** with the
+  whole privacy model written out as assertions — published, for anyone who
+  guessed the path.
+
+  Both are untracked now, and the guard that keeps it that way is a command, not
+  a sentence:
+
+  ```sh
+  python tools/notracked.py
+  ```
+
+  It fails if anything is tracked under `scratch/qa2/`, `scratch/security/`,
+  `scratch/linear/` or an `audit*/`, if any tracked `scratch/` file is a `.md`,
+  `.sql`, `.txt` or `.env`, or if any of them contains a credential marker. Run
+  it before you push.
+
+  What *is* tracked under `scratch/` on purpose: the per-property harvest scripts
+  and their cached sources (`scratch/<property>/collect.py`, `*.wiki`, `*.json`).
+  Those are build inputs — they are how a clone re-runs
+  `tools/make_<property>.py` and gets the same list back — and they hold nothing
+  but public source text. The gated list is not among them: its slug and title in
+  `properties/index.json` are placeholders, so nothing in the repo names it.
