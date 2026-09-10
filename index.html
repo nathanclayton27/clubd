@@ -1027,6 +1027,8 @@ footer a{color:var(--steel)}
 .pcta.p{background:var(--signal);color:var(--paper);border:1px solid var(--signal)}
 .pcta.q{background:transparent;color:var(--ink-2);border:1px solid var(--rule-2)}
 .pcta.q:hover,.pcta.p:hover{filter:brightness(1.08)}
+/* the arrival splash holds the auth panel inline, at the width it floats at */
+#arr-auth .panel{margin:8px 0 0;max-width:560px}
 .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .card{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--rule);
   border-radius:var(--radius);padding:20px;cursor:pointer;transition:border-color .15s,transform .15s}
@@ -1439,6 +1441,22 @@ footer a{color:var(--steel)}
     </div>
     <!-- plain host: renderWall builds its own .cards.wall grid inside -->
     <div id="cards" style="margin-top:30px"></div>
+  </div>
+</div>
+
+<!-- Arriving on a code-bearing link, signed out (CLU-386). The pitch above
+     would sell the product to someone who came to answer an invitation; this
+     says what the link is, that signing in finishes it, and puts the way in
+     under the words — #signin itself, moved here by showArrival rather than
+     copied, so there is one sign-in however it is reached. The two lines come
+     from ARRIVALS and say what KIND of link this is, never what its payload
+     resolves to. -->
+<div class="splash hide" id="arrivev">
+  <div class="splash-in">
+    <div class="lbl">clubd</div>
+    <h1 class="splash-h" id="arr-h"></h1>
+    <p class="splash-p" id="arr-p"></p>
+    <div id="arr-auth"></div>
   </div>
 </div>
 
@@ -6315,7 +6333,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'c61397d72922';
+const BUILD = 'e30da0d3caf5';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6377,6 +6395,51 @@ const BRAND = 'clubd';
   document.querySelectorAll('.splash .lbl').forEach(el=>{ el.textContent = BRAND; });
 })();
 
+/* --------------------------------------------- arriving on a link (CLU-386) */
+// A link that carries a code is caught here, before anything paints, and the
+// code comes out of the URL on sight — in the address bar it would survive a
+// screenshot, a shared tab and a Referer. It rides sessionStorage across the
+// sign-in round trip: the OAuth redirect lands on the bare path and the slot
+// is still there.
+//
+// One arrival at a time, as (kind, payload). A kind names its query param,
+// its slot, the two lines the splash says to a stranger, and how it settles
+// once there is a session. Friend links are the only kind that exists; a club
+// code (CLU-91) or a group token is one more entry here, not a third path.
+// The splash says what KIND of link this is and never what the payload
+// resolves to — a stranger cannot look a profile up and must not be able to,
+// and a kind that ever wants to name a list goes through splashList() like
+// every other surface, so the gated list stays out of it.
+const ARRIVALS = {
+  friend: {
+    param: 'friend', key: 'gw:pendfriend',
+    head: 'Someone sent you a friend link.',
+    body: 'Sign in and it sends them a request. You’re linked once they accept.',
+    settle: async code=>{
+      const r = await addFriendFlow(code);
+      friendNotify(r, false);
+      if(!r.err) renderFriends();
+    }
+  }
+};
+let ARRIVAL = (function(){
+  try{
+    const q = new URLSearchParams(location.search);
+    for(const kind in ARRIVALS){
+      const a = ARRIVALS[kind], v = q.get(a.param);
+      if(!v) continue;
+      sessionStorage.setItem(a.key, v);
+      history.replaceState(null, '', location.pathname);
+      return { kind, payload: v };
+    }
+    for(const kind in ARRIVALS){
+      const v = sessionStorage.getItem(ARRIVALS[kind].key);
+      if(v) return { kind, payload: v };
+    }
+  }catch(e){}
+  return null;
+})();
+
 function pickSlug(){
   const q = new URLSearchParams(location.search);
   // ?home beats the remembered list — it's the way back to the shelf;
@@ -6387,6 +6450,10 @@ function pickSlug(){
     return null;
   const want = q.get('p');
   if(want && MANIFEST.some(m=>m.slug===want)) return want;
+  // an invite still pending stays home until it settles: the sign-in round
+  // trip comes back to a bare URL, which would otherwise open the remembered
+  // list, where nothing ever settles it
+  if(ARRIVAL) return null;
   const last = localStorage.getItem('gw:last');
   if(last && MANIFEST.some(m=>m.slug===last)) return last;
   return null;
@@ -7485,12 +7552,18 @@ async function onSession(session, definitive){
       await syncShelfHide();
       $('homev').classList.add('hide');
       $('splash').classList.add('hide');
+      $('arrivev').classList.add('hide');
       if(ACCOUNT) showAccount();
       else if(FRIENDSPG) showFriendsPage();
       else showHome();
       // an account ALWAYS has a friend code — minted at sign-in, not on
       // first account-page visit (Nathan's rule: no codeless users)
       ensureFcode().then(()=> mirrorProfile());
+    }else if(ARRIVAL && definitive){
+      // signed out with an invite in hand: the arrival splash, not the pitch
+      // (CLU-386) — and only on a definitive answer, or it would flash at
+      // someone whose token has not been restored yet (CLU-339)
+      showArrival();
     }else if(ACCOUNT || FRIENDSPG){
       openAccountSignin();
     }else{
@@ -7498,7 +7571,7 @@ async function onSession(session, definitive){
       // the deferred-splash guard above needs this call to resolve it
       showHome();
     }
-    settlePendingFriend();
+    settleArrival();
     settlePendingGroup();
     setTimeout(backfillSync, 1200);
     return;
@@ -8768,34 +8841,18 @@ async function addFriendFlow(raw){
   if(t.err) return t;
   return addFriend(t);
 }
-// a ?friend link survives the sign-in round trip in sessionStorage
-function pendingFriend(){
-  try{
-    const q = new URLSearchParams(location.search).get('friend');
-    if(q){
-      sessionStorage.setItem('gw:pendfriend', q);
-      history.replaceState(null, '', location.pathname);
-    }
-    return sessionStorage.getItem('gw:pendfriend') || '';
-  }catch(e){ return ''; }
-}
-async function settlePendingFriend(){
-  const code = pendingFriend();
-  if(!code) return;
-  if(!user){
-    if(!CLOUD) return;
-    const c = $('signctx');
-    if(c){
-      c.textContent = 'Sign in and this friend link finishes itself.';
-      c.classList.remove('hide');
-    }
-    openMastAuth();
-    return;
-  }
-  try{ sessionStorage.removeItem('gw:pendfriend'); }catch(e){}
-  const r = await addFriendFlow(code);
-  friendNotify(r, false);
-  if(!r.err) renderFriends();
+// The arrival, once there is a session (CLU-386). ARRIVAL was caught at boot
+// and the splash is onSession's business; this is the other half. The slot is
+// cleared first — a code that fails is spent either way, and leaving it set
+// would retry it on every load — then the kind settles and reports through
+// its own channel: for a friend link that is friendNotify, the same four
+// honest states a typed code gets.
+async function settleArrival(){
+  if(!ARRIVAL || !user) return;
+  const a = ARRIVALS[ARRIVAL.kind], payload = ARRIVAL.payload;
+  ARRIVAL = null;
+  try{ sessionStorage.removeItem(a.key); }catch(e){}
+  await a.settle(payload);
 }
 // A ?g= invite link survives the sign-in round trip the same way a ?friend
 // link does. Taken out of the URL on sight: it is a credential — anyone who
@@ -12792,6 +12849,46 @@ function showSplash(){
   // a new user's home IS the card wall
   renderWall($('cards'));
 }
+// The arrival splash (CLU-386): what this link is, that signing in finishes
+// it, and the way in. The way in is #signin itself, moved under the words
+// rather than floated over them — one sign-in, wherever it was opened from.
+// Only ever reached on a definitive signed-out answer (see onSession), so it
+// cannot flash at someone who is signed in. The tour, when it exists
+// (CLU-380), must not fire over this: CLU-382 rules that an invitation is not
+// a product start, and arriving() is the predicate for it to consult.
+function arriving(){ return !$('arrivev').classList.contains('hide'); }
+function showArrival(){
+  const a = ARRIVALS[ARRIVAL.kind];
+  clearTimeout(_splashWait);
+  $('splash').classList.add('hide');
+  $('homev').classList.add('hide');
+  $('accountv').classList.add('hide');
+  $('friendsv').classList.add('hide');
+  $('arrivev').classList.remove('hide');
+  $('switcher').classList.add('hide');
+  $('mast').classList.add('athome');
+  document.querySelectorAll('.wrap, .bar').forEach(el=> el.classList.add('hide'));
+  document.title = BRAND;
+  $('arr-h').textContent = a.head;
+  $('arr-p').textContent = a.body;
+  // the panel lives inside .wrap, or floats under the mast — bring it here
+  const p = $('signin');
+  $('arr-auth').appendChild(p);
+  p.classList.remove('signfloat');
+  p.classList.remove('hide');
+  $('signctx').classList.add('hide');   // the splash has already said it
+  paintMastAcct();
+  const f = $('email');
+  if(f && !COARSE) f.focus();
+}
+// Cancel on the arrival is the way past it, onto the pitch. The code stays
+// in its slot: a sign-in later in this tab still finishes the link, which is
+// what the splash promised.
+function leaveArrival(){
+  $('arrivev').classList.add('hide');
+  $('signin').classList.add('hide');
+  showHome();
+}
 
 /* ------------------------------------------------------------ card wall */
 // Monotone until touched. Hover gives a card back its own accent and
@@ -14640,7 +14737,11 @@ $('pscope-cb').onchange = e=>{
   paint();
 };
 $('b-signin').onclick = ()=>{ $('signin').classList.remove('hide'); $('email').focus(); };
-$('b-cancel').onclick = ()=> $('signin').classList.add('hide');
+// on the arrival splash the panel IS the page, so Cancel leaves the splash
+$('b-cancel').onclick = ()=>{
+  if(arriving()) leaveArrival();
+  else $('signin').classList.add('hide');
+};
 // sign out lives on the account page now (CLU-98)
 $('b-link').onclick = async ()=>{
   const email = $('email').value.trim();
