@@ -1,0 +1,1481 @@
+{
+ "source": {
+  "list": "List of The Vampire Diaries episodes",
+  "show": "The Vampire Diaries",
+  "seasons": [
+   "The Vampire Diaries season 1",
+   "The Vampire Diaries season 2",
+   "The Vampire Diaries season 3",
+   "The Vampire Diaries season 4",
+   "The Vampire Diaries season 5",
+   "The Vampire Diaries season 6",
+   "The Vampire Diaries season 7",
+   "The Vampire Diaries season 8"
+  ],
+  "fetched": "2026-09-10"
+ },
+ "years": {
+  "1": "2009–10",
+  "2": "2010–11",
+  "3": "2011–12",
+  "4": "2012–13",
+  "5": "2013–14",
+  "6": "2014–15",
+  "7": "2015–16",
+  "8": "2016–17"
+ },
+ "stated": {
+  "total": 171,
+  "seasons": 8,
+  "per_season": {
+   "1": 22,
+   "2": 22,
+   "3": 22,
+   "4": 23,
+   "5": 22,
+   "6": 22,
+   "7": 22,
+   "8": 16
+  },
+  "network": "The CW",
+  "runtime": "41–49 minutes",
+  "per_episode_runtime_published": false,
+  "premiere": "September 10, 2009",
+  "finale": "March 10, 2017"
+ },
+ "linecolors": {
+  "season_pages": {
+   "1": "#6C1F1F",
+   "2": "#101154",
+   "3": "#01539D",
+   "4": "#354662",
+   "5": "#650C22",
+   "6": "#665536",
+   "7": "#485B69",
+   "8": "#A52A2A"
+  },
+  "list_page": {
+   "1": "#6C1F1F",
+   "2": "#101154",
+   "3": "#01539D",
+   "4": "#354662",
+   "5": "#650C22",
+   "6": "#665536",
+   "7": "#536878",
+   "8": "#A52A2A"
+  },
+  "disagree": [
+   "7"
+  ]
+ },
+ "spinoffs": [
+  {
+   "t": "The Originals",
+   "years": "2013–2018",
+   "of": "The Vampire Diaries"
+  },
+  {
+   "t": "Legacies",
+   "years": "2018–2022",
+   "of": "The Originals"
+  }
+ ],
+ "skipped": [
+  {
+   "kind": "special",
+   "t": "Forever Yours",
+   "d": "2017-03-10",
+   "why": "a retrospective, outside the 171 numbered episodes"
+  }
+ ],
+ "seasons": {
+  "1": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 1,
+    "t": "Pilot",
+    "y": 2009,
+    "d": "2009-09-10"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 2,
+    "t": "The Night of the Comet",
+    "y": 2009,
+    "d": "2009-09-17"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 3,
+    "t": "Friday Night Bites",
+    "y": 2009,
+    "d": "2009-09-24"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 4,
+    "t": "Family Ties",
+    "y": 2009,
+    "d": "2009-10-01"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 5,
+    "t": "You're Undead to Me",
+    "y": 2009,
+    "d": "2009-10-08"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 6,
+    "t": "Lost Girls",
+    "y": 2009,
+    "d": "2009-10-15"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 7,
+    "t": "Haunted",
+    "y": 2009,
+    "d": "2009-10-29"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 8,
+    "t": "162 Candles",
+    "y": 2009,
+    "d": "2009-11-05"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 9,
+    "t": "History Repeating",
+    "y": 2009,
+    "d": "2009-11-12"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 10,
+    "t": "The Turning Point",
+    "y": 2009,
+    "d": "2009-11-19"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 11,
+    "t": "Bloodlines",
+    "y": 2010,
+    "d": "2010-01-21"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 12,
+    "t": "Unpleasantville",
+    "y": 2010,
+    "d": "2010-01-28"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 13,
+    "t": "Children of the Damned",
+    "y": 2010,
+    "d": "2010-02-04"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 14,
+    "t": "Fool Me Once",
+    "y": 2010,
+    "d": "2010-02-11"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 15,
+    "t": "A Few Good Men",
+    "y": 2010,
+    "d": "2010-03-25"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 16,
+    "t": "There Goes the Neighborhood",
+    "y": 2010,
+    "d": "2010-04-01"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 17,
+    "t": "Let the Right One In",
+    "y": 2010,
+    "d": "2010-04-08"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 18,
+    "t": "Under Control",
+    "y": 2010,
+    "d": "2010-04-15"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 19,
+    "t": "Miss Mystic Falls",
+    "y": 2010,
+    "d": "2010-04-22"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 20,
+    "t": "Blood Brothers",
+    "y": 2010,
+    "d": "2010-04-29"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 21,
+    "t": "Isobel",
+    "y": 2010,
+    "d": "2010-05-06"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 22,
+    "t": "Founder's Day",
+    "y": 2010,
+    "d": "2010-05-13"
+   }
+  ],
+  "2": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 23,
+    "t": "The Return",
+    "y": 2010,
+    "d": "2010-09-09"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 24,
+    "t": "Brave New World",
+    "y": 2010,
+    "d": "2010-09-16"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 25,
+    "t": "Bad Moon Rising",
+    "y": 2010,
+    "d": "2010-09-23"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 26,
+    "t": "Memory Lane",
+    "y": 2010,
+    "d": "2010-09-30"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 27,
+    "t": "Kill or Be Killed",
+    "y": 2010,
+    "d": "2010-10-07"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 28,
+    "t": "Plan B",
+    "y": 2010,
+    "d": "2010-10-21"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 29,
+    "t": "Masquerade",
+    "y": 2010,
+    "d": "2010-10-28"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 30,
+    "t": "Rose",
+    "y": 2010,
+    "d": "2010-11-04"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 31,
+    "t": "Katerina",
+    "y": 2010,
+    "d": "2010-11-11"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 32,
+    "t": "The Sacrifice",
+    "y": 2010,
+    "d": "2010-12-02"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 33,
+    "t": "By the Light of the Moon",
+    "y": 2010,
+    "d": "2010-12-09"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 34,
+    "t": "The Descent",
+    "y": 2011,
+    "d": "2011-01-27"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 35,
+    "t": "Daddy Issues",
+    "y": 2011,
+    "d": "2011-02-03"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 36,
+    "t": "Crying Wolf",
+    "y": 2011,
+    "d": "2011-02-10"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 37,
+    "t": "The Dinner Party",
+    "y": 2011,
+    "d": "2011-02-17"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 38,
+    "t": "The House Guest",
+    "y": 2011,
+    "d": "2011-02-24"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 39,
+    "t": "Know Thy Enemy",
+    "y": 2011,
+    "d": "2011-04-07"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 40,
+    "t": "The Last Dance",
+    "y": 2011,
+    "d": "2011-04-14"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 41,
+    "t": "Klaus",
+    "y": 2011,
+    "d": "2011-04-21"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 42,
+    "t": "The Last Day",
+    "y": 2011,
+    "d": "2011-04-28"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 43,
+    "t": "The Sun Also Rises",
+    "y": 2011,
+    "d": "2011-05-05"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 44,
+    "t": "As I Lay Dying",
+    "y": 2011,
+    "d": "2011-05-12"
+   }
+  ],
+  "3": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 45,
+    "t": "The Birthday",
+    "y": 2011,
+    "d": "2011-09-15"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 46,
+    "t": "The Hybrid",
+    "y": 2011,
+    "d": "2011-09-22"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 47,
+    "t": "The End of the Affair",
+    "y": 2011,
+    "d": "2011-09-29"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 48,
+    "t": "Disturbing Behavior",
+    "y": 2011,
+    "d": "2011-10-06"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 49,
+    "t": "The Reckoning",
+    "y": 2011,
+    "d": "2011-10-13"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 50,
+    "t": "Smells Like Teen Spirit",
+    "y": 2011,
+    "d": "2011-10-20"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 51,
+    "t": "Ghost World",
+    "y": 2011,
+    "d": "2011-10-27"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 52,
+    "t": "Ordinary People",
+    "y": 2011,
+    "d": "2011-11-03"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 53,
+    "t": "Homecoming",
+    "y": 2011,
+    "d": "2011-11-10"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 54,
+    "t": "The New Deal",
+    "y": 2012,
+    "d": "2012-01-05"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 55,
+    "t": "Our Town",
+    "y": 2012,
+    "d": "2012-01-12"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 56,
+    "t": "The Ties That Bind",
+    "y": 2012,
+    "d": "2012-01-19"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 57,
+    "t": "Bringing Out the Dead",
+    "y": 2012,
+    "d": "2012-02-02"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 58,
+    "t": "Dangerous Liaisons",
+    "y": 2012,
+    "d": "2012-02-09"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 59,
+    "t": "All My Children",
+    "y": 2012,
+    "d": "2012-02-16"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 60,
+    "t": "1912",
+    "y": 2012,
+    "d": "2012-03-15"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 61,
+    "t": "Break On Through",
+    "y": 2012,
+    "d": "2012-03-22"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 62,
+    "t": "The Murder of One",
+    "y": 2012,
+    "d": "2012-03-29"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 63,
+    "t": "Heart of Darkness",
+    "y": 2012,
+    "d": "2012-04-19"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 64,
+    "t": "Do Not Go Gentle",
+    "y": 2012,
+    "d": "2012-04-26"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 65,
+    "t": "Before Sunset",
+    "y": 2012,
+    "d": "2012-05-03"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 66,
+    "t": "The Departed",
+    "y": 2012,
+    "d": "2012-05-10"
+   }
+  ],
+  "4": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 67,
+    "t": "Growing Pains",
+    "y": 2012,
+    "d": "2012-10-11"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 68,
+    "t": "Memorial",
+    "y": 2012,
+    "d": "2012-10-18"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 69,
+    "t": "The Rager",
+    "y": 2012,
+    "d": "2012-10-25"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 70,
+    "t": "The Five",
+    "y": 2012,
+    "d": "2012-11-01"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 71,
+    "t": "The Killer",
+    "y": 2012,
+    "d": "2012-11-08"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 72,
+    "t": "We All Go a Little Mad Sometimes",
+    "y": 2012,
+    "d": "2012-11-15"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 73,
+    "t": "My Brother's Keeper",
+    "y": 2012,
+    "d": "2012-11-29"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 74,
+    "t": "We'll Always Have Bourbon Street",
+    "y": 2012,
+    "d": "2012-12-06"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 75,
+    "t": "O Come, All Ye Faithful",
+    "y": 2012,
+    "d": "2012-12-13"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 76,
+    "t": "After School Special",
+    "y": 2013,
+    "d": "2013-01-17"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 77,
+    "t": "Catch Me If You Can",
+    "y": 2013,
+    "d": "2013-01-24"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 78,
+    "t": "A View to a Kill",
+    "y": 2013,
+    "d": "2013-01-31"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 79,
+    "t": "Into the Wild",
+    "y": 2013,
+    "d": "2013-02-07"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 80,
+    "t": "Down the Rabbit Hole",
+    "y": 2013,
+    "d": "2013-02-14"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 81,
+    "t": "Stand by Me",
+    "y": 2013,
+    "d": "2013-02-21"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 82,
+    "t": "Bring It On",
+    "y": 2013,
+    "d": "2013-03-14"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 83,
+    "t": "Because the Night",
+    "y": 2013,
+    "d": "2013-03-21"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 84,
+    "t": "American Gothic",
+    "y": 2013,
+    "d": "2013-03-28"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 85,
+    "t": "Pictures of You",
+    "y": 2013,
+    "d": "2013-04-18"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 86,
+    "t": "The Originals",
+    "y": 2013,
+    "d": "2013-04-25",
+    "bdpilot": "The Originals"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 87,
+    "t": "She's Come Undone",
+    "y": 2013,
+    "d": "2013-05-02"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 88,
+    "t": "The Walking Dead",
+    "y": 2013,
+    "d": "2013-05-09"
+   },
+   {
+    "e": 23,
+    "e2": 23,
+    "overall": 89,
+    "t": "Graduation",
+    "y": 2013,
+    "d": "2013-05-16"
+   }
+  ],
+  "5": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 90,
+    "t": "I Know What You Did Last Summer",
+    "y": 2013,
+    "d": "2013-10-03"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 91,
+    "t": "True Lies",
+    "y": 2013,
+    "d": "2013-10-10"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 92,
+    "t": "Original Sin",
+    "y": 2013,
+    "d": "2013-10-17"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 93,
+    "t": "For Whom the Bell Tolls",
+    "y": 2013,
+    "d": "2013-10-24"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 94,
+    "t": "Monster's Ball",
+    "y": 2013,
+    "d": "2013-10-31"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 95,
+    "t": "Handle with Care",
+    "y": 2013,
+    "d": "2013-11-07"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 96,
+    "t": "Death and the Maiden",
+    "y": 2013,
+    "d": "2013-11-14"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 97,
+    "t": "Dead Man on Campus",
+    "y": 2013,
+    "d": "2013-11-21"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 98,
+    "t": "The Cell",
+    "y": 2013,
+    "d": "2013-12-05"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 99,
+    "t": "Fifty Shades of Grayson",
+    "y": 2013,
+    "d": "2013-12-12"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 100,
+    "t": "500 Years of Solitude",
+    "y": 2014,
+    "d": "2014-01-23",
+    "milestone": "100th episode"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 101,
+    "t": "The Devil Inside",
+    "y": 2014,
+    "d": "2014-01-30"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 102,
+    "t": "Total Eclipse of the Heart",
+    "y": 2014,
+    "d": "2014-02-06"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 103,
+    "t": "No Exit",
+    "y": 2014,
+    "d": "2014-02-27"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 104,
+    "t": "Gone Girl",
+    "y": 2014,
+    "d": "2014-03-06"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 105,
+    "t": "While You Were Sleeping",
+    "y": 2014,
+    "d": "2014-03-20"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 106,
+    "t": "Rescue Me",
+    "y": 2014,
+    "d": "2014-03-27"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 107,
+    "t": "Resident Evil",
+    "y": 2014,
+    "d": "2014-04-17"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 108,
+    "t": "Man on Fire",
+    "y": 2014,
+    "d": "2014-04-24"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 109,
+    "t": "What Lies Beneath",
+    "y": 2014,
+    "d": "2014-05-01"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 110,
+    "t": "Promised Land",
+    "y": 2014,
+    "d": "2014-05-08"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 111,
+    "t": "Home",
+    "y": 2014,
+    "d": "2014-05-15"
+   }
+  ],
+  "6": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 112,
+    "t": "I'll Remember",
+    "y": 2014,
+    "d": "2014-10-02"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 113,
+    "t": "Yellow Ledbetter",
+    "y": 2014,
+    "d": "2014-10-09"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 114,
+    "t": "Welcome to Paradise",
+    "y": 2014,
+    "d": "2014-10-16"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 115,
+    "t": "Black Hole Sun",
+    "y": 2014,
+    "d": "2014-10-23"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 116,
+    "t": "The World Has Turned and Left Me Here",
+    "y": 2014,
+    "d": "2014-10-30"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 117,
+    "t": "The More You Ignore Me, the Closer I Get",
+    "y": 2014,
+    "d": "2014-11-06"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 118,
+    "t": "Do You Remember the First Time?",
+    "y": 2014,
+    "d": "2014-11-13"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 119,
+    "t": "Fade Into You",
+    "y": 2014,
+    "d": "2014-11-20"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 120,
+    "t": "I Alone",
+    "y": 2014,
+    "d": "2014-12-04"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 121,
+    "t": "Christmas Through Your Eyes",
+    "y": 2014,
+    "d": "2014-12-11"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 122,
+    "t": "Woke Up with a Monster",
+    "y": 2015,
+    "d": "2015-01-22"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 123,
+    "t": "Prayer for the Dying",
+    "y": 2015,
+    "d": "2015-01-29"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 124,
+    "t": "The Day I Tried to Live",
+    "y": 2015,
+    "d": "2015-02-05"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 125,
+    "t": "Stay",
+    "y": 2015,
+    "d": "2015-02-12"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 126,
+    "t": "Let Her Go",
+    "y": 2015,
+    "d": "2015-02-19"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 127,
+    "t": "The Downward Spiral",
+    "y": 2015,
+    "d": "2015-03-12"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 128,
+    "t": "A Bird in a Gilded Cage",
+    "y": 2015,
+    "d": "2015-03-19"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 129,
+    "t": "I Never Could Love Like That",
+    "y": 2015,
+    "d": "2015-04-16"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 130,
+    "t": "Because",
+    "y": 2015,
+    "d": "2015-04-23"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 131,
+    "t": "I'd Leave My Happy Home for You",
+    "y": 2015,
+    "d": "2015-04-30"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 132,
+    "t": "I'll Wed You in the Golden Summertime",
+    "y": 2015,
+    "d": "2015-05-07"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 133,
+    "t": "I'm Thinking of You All the While",
+    "y": 2015,
+    "d": "2015-05-14"
+   }
+  ],
+  "7": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 134,
+    "t": "Day One of Twenty-Two Thousand, Give or Take",
+    "y": 2015,
+    "d": "2015-10-08"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 135,
+    "t": "Never Let Me Go",
+    "y": 2015,
+    "d": "2015-10-15"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 136,
+    "t": "Age of Innocence",
+    "y": 2015,
+    "d": "2015-10-22"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 137,
+    "t": "I Carry Your Heart with Me",
+    "y": 2015,
+    "d": "2015-10-29"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 138,
+    "t": "Live Through This",
+    "y": 2015,
+    "d": "2015-11-05"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 139,
+    "t": "Best Served Cold",
+    "y": 2015,
+    "d": "2015-11-12"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 140,
+    "t": "Mommie Dearest",
+    "y": 2015,
+    "d": "2015-11-19"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 141,
+    "t": "Hold Me, Thrill Me, Kiss Me, Kill Me",
+    "y": 2015,
+    "d": "2015-12-03"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 142,
+    "t": "Cold as Ice",
+    "y": 2015,
+    "d": "2015-12-10"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 143,
+    "t": "Hell Is Other People",
+    "y": 2016,
+    "d": "2016-01-29"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 144,
+    "t": "Things We Lost in the Fire",
+    "y": 2016,
+    "d": "2016-02-05"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 145,
+    "t": "Postcards from the Edge",
+    "y": 2016,
+    "d": "2016-02-12"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 146,
+    "t": "This Woman's Work",
+    "y": 2016,
+    "d": "2016-02-19"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 147,
+    "t": "Moonlight on the Bayou",
+    "y": 2016,
+    "d": "2016-02-26",
+    "xover": "The Originals",
+    "xover_ends": "A Streetcar Named Desire"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 148,
+    "t": "I Would for You",
+    "y": 2016,
+    "d": "2016-03-04"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 149,
+    "t": "Days of Future Past",
+    "y": 2016,
+    "d": "2016-04-01"
+   },
+   {
+    "e": 17,
+    "e2": 17,
+    "overall": 150,
+    "t": "I Went to the Woods",
+    "y": 2016,
+    "d": "2016-04-08"
+   },
+   {
+    "e": 18,
+    "e2": 18,
+    "overall": 151,
+    "t": "One Way or Another",
+    "y": 2016,
+    "d": "2016-04-15"
+   },
+   {
+    "e": 19,
+    "e2": 19,
+    "overall": 152,
+    "t": "Somebody That I Used to Know",
+    "y": 2016,
+    "d": "2016-04-22"
+   },
+   {
+    "e": 20,
+    "e2": 20,
+    "overall": 153,
+    "t": "Kill 'Em All",
+    "y": 2016,
+    "d": "2016-04-29"
+   },
+   {
+    "e": 21,
+    "e2": 21,
+    "overall": 154,
+    "t": "Requiem for a Dream",
+    "y": 2016,
+    "d": "2016-05-06"
+   },
+   {
+    "e": 22,
+    "e2": 22,
+    "overall": 155,
+    "t": "Gods and Monsters",
+    "y": 2016,
+    "d": "2016-05-13"
+   }
+  ],
+  "8": [
+   {
+    "e": 1,
+    "e2": 1,
+    "overall": 156,
+    "t": "Hello, Brother",
+    "y": 2016,
+    "d": "2016-10-21"
+   },
+   {
+    "e": 2,
+    "e2": 2,
+    "overall": 157,
+    "t": "Today Will Be Different",
+    "y": 2016,
+    "d": "2016-10-28"
+   },
+   {
+    "e": 3,
+    "e2": 3,
+    "overall": 158,
+    "t": "You Decided That I Was Worth Saving",
+    "y": 2016,
+    "d": "2016-11-04"
+   },
+   {
+    "e": 4,
+    "e2": 4,
+    "overall": 159,
+    "t": "An Eternity of Misery",
+    "y": 2016,
+    "d": "2016-11-11"
+   },
+   {
+    "e": 5,
+    "e2": 5,
+    "overall": 160,
+    "t": "Coming Home Was a Mistake",
+    "y": 2016,
+    "d": "2016-11-18"
+   },
+   {
+    "e": 6,
+    "e2": 6,
+    "overall": 161,
+    "t": "Detoured on Some Random Backwoods Path to Hell",
+    "y": 2016,
+    "d": "2016-12-02"
+   },
+   {
+    "e": 7,
+    "e2": 7,
+    "overall": 162,
+    "t": "The Next Time I Hurt Somebody, It Could Be You",
+    "y": 2016,
+    "d": "2016-12-09"
+   },
+   {
+    "e": 8,
+    "e2": 8,
+    "overall": 163,
+    "t": "We Have History Together",
+    "y": 2017,
+    "d": "2017-01-13"
+   },
+   {
+    "e": 9,
+    "e2": 9,
+    "overall": 164,
+    "t": "The Simple Intimacy of the Near Touch",
+    "y": 2017,
+    "d": "2017-01-20"
+   },
+   {
+    "e": 10,
+    "e2": 10,
+    "overall": 165,
+    "t": "Nostalgia's a Bitch",
+    "y": 2017,
+    "d": "2017-01-27"
+   },
+   {
+    "e": 11,
+    "e2": 11,
+    "overall": 166,
+    "t": "You Made a Choice to Be Good",
+    "y": 2017,
+    "d": "2017-02-03"
+   },
+   {
+    "e": 12,
+    "e2": 12,
+    "overall": 167,
+    "t": "What Are You?",
+    "y": 2017,
+    "d": "2017-02-10"
+   },
+   {
+    "e": 13,
+    "e2": 13,
+    "overall": 168,
+    "t": "The Lies Will Catch Up to You",
+    "y": 2017,
+    "d": "2017-02-17"
+   },
+   {
+    "e": 14,
+    "e2": 14,
+    "overall": 169,
+    "t": "It's Been a Hell of a Ride",
+    "y": 2017,
+    "d": "2017-02-24"
+   },
+   {
+    "e": 15,
+    "e2": 15,
+    "overall": 170,
+    "t": "We're Planning a June Wedding",
+    "y": 2017,
+    "d": "2017-03-03"
+   },
+   {
+    "e": 16,
+    "e2": 16,
+    "overall": 171,
+    "t": "I Was Feeling Epic",
+    "y": 2017,
+    "d": "2017-03-10"
+   }
+  ]
+ }
+}

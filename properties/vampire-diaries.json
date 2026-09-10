@@ -1,0 +1,955 @@
+{
+  "slug": "vampire-diaries",
+  "title": "The Vampire Diaries",
+  "subtitle": "eight seasons on The CW",
+  "kind": "tv",
+  "popularity": 61,
+  "year": "2009–2017",
+  "blurb": "All 171 episodes of the CW series in broadcast order, from the pilot to the finale.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#7E1440",
+  "accentDark": "#EE9BB4",
+  "tiers": false,
+  "notes": [
+    [
+      "The show itself, and nothing spun off it.",
+      "The Originals (2013–2018) and its own spin-off Legacies (2018–2022) have their own runs; neither is listed here."
+    ],
+    [
+      "The retrospective is not an episode.",
+      "Forever Yours aired the same night as the finale and the episode list files it under Special, outside the 171 numbered episodes."
+    ],
+    [
+      "Nothing is weighted.",
+      "The season articles publish no per-episode runtime, and the only figure any of these sources gives is a 41–49 minute range for the whole series, so every row counts one and none is guessed."
+    ],
+    "Episode titles and airdates machine-read from the eight Wikipedia season articles; every season's numbering is asserted contiguous and equal to the episode list's own counts, and the overall numbering contiguous 1–171, before this builds."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Season 1",
+      "sub": "2009–10 · 22 episodes",
+      "items": [
+        {
+          "id": "tvd-s1e1",
+          "t": "Pilot",
+          "n": "1",
+          "note": "Series premiere"
+        },
+        {
+          "id": "tvd-s1e2",
+          "t": "The Night of the Comet",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s1e3",
+          "t": "Friday Night Bites",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s1e4",
+          "t": "Family Ties",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s1e5",
+          "t": "You're Undead to Me",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s1e6",
+          "t": "Lost Girls",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s1e7",
+          "t": "Haunted",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s1e8",
+          "t": "162 Candles",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s1e9",
+          "t": "History Repeating",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s1e10",
+          "t": "The Turning Point",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s1e11",
+          "t": "Bloodlines",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s1e12",
+          "t": "Unpleasantville",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s1e13",
+          "t": "Children of the Damned",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s1e14",
+          "t": "Fool Me Once",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s1e15",
+          "t": "A Few Good Men",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s1e16",
+          "t": "There Goes the Neighborhood",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s1e17",
+          "t": "Let the Right One In",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s1e18",
+          "t": "Under Control",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s1e19",
+          "t": "Miss Mystic Falls",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s1e20",
+          "t": "Blood Brothers",
+          "n": "20"
+        },
+        {
+          "id": "tvd-s1e21",
+          "t": "Isobel",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s1e22",
+          "t": "Founder's Day",
+          "n": "22"
+        }
+      ],
+      "open": true
+    },
+    {
+      "id": "s2",
+      "title": "Season 2",
+      "sub": "2010–11 · 22 episodes",
+      "items": [
+        {
+          "id": "tvd-s2e1",
+          "t": "The Return",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s2e2",
+          "t": "Brave New World",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s2e3",
+          "t": "Bad Moon Rising",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s2e4",
+          "t": "Memory Lane",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s2e5",
+          "t": "Kill or Be Killed",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s2e6",
+          "t": "Plan B",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s2e7",
+          "t": "Masquerade",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s2e8",
+          "t": "Rose",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s2e9",
+          "t": "Katerina",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s2e10",
+          "t": "The Sacrifice",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s2e11",
+          "t": "By the Light of the Moon",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s2e12",
+          "t": "The Descent",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s2e13",
+          "t": "Daddy Issues",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s2e14",
+          "t": "Crying Wolf",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s2e15",
+          "t": "The Dinner Party",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s2e16",
+          "t": "The House Guest",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s2e17",
+          "t": "Know Thy Enemy",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s2e18",
+          "t": "The Last Dance",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s2e19",
+          "t": "Klaus",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s2e20",
+          "t": "The Last Day",
+          "n": "20"
+        },
+        {
+          "id": "tvd-s2e21",
+          "t": "The Sun Also Rises",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s2e22",
+          "t": "As I Lay Dying",
+          "n": "22"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Season 3",
+      "sub": "2011–12 · 22 episodes",
+      "items": [
+        {
+          "id": "tvd-s3e1",
+          "t": "The Birthday",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s3e2",
+          "t": "The Hybrid",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s3e3",
+          "t": "The End of the Affair",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s3e4",
+          "t": "Disturbing Behavior",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s3e5",
+          "t": "The Reckoning",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s3e6",
+          "t": "Smells Like Teen Spirit",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s3e7",
+          "t": "Ghost World",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s3e8",
+          "t": "Ordinary People",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s3e9",
+          "t": "Homecoming",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s3e10",
+          "t": "The New Deal",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s3e11",
+          "t": "Our Town",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s3e12",
+          "t": "The Ties That Bind",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s3e13",
+          "t": "Bringing Out the Dead",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s3e14",
+          "t": "Dangerous Liaisons",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s3e15",
+          "t": "All My Children",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s3e16",
+          "t": "1912",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s3e17",
+          "t": "Break On Through",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s3e18",
+          "t": "The Murder of One",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s3e19",
+          "t": "Heart of Darkness",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s3e20",
+          "t": "Do Not Go Gentle",
+          "n": "20"
+        },
+        {
+          "id": "tvd-s3e21",
+          "t": "Before Sunset",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s3e22",
+          "t": "The Departed",
+          "n": "22"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Season 4",
+      "sub": "2012–13 · 23 episodes",
+      "items": [
+        {
+          "id": "tvd-s4e1",
+          "t": "Growing Pains",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s4e2",
+          "t": "Memorial",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s4e3",
+          "t": "The Rager",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s4e4",
+          "t": "The Five",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s4e5",
+          "t": "The Killer",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s4e6",
+          "t": "We All Go a Little Mad Sometimes",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s4e7",
+          "t": "My Brother's Keeper",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s4e8",
+          "t": "We'll Always Have Bourbon Street",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s4e9",
+          "t": "O Come, All Ye Faithful",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s4e10",
+          "t": "After School Special",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s4e11",
+          "t": "Catch Me If You Can",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s4e12",
+          "t": "A View to a Kill",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s4e13",
+          "t": "Into the Wild",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s4e14",
+          "t": "Down the Rabbit Hole",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s4e15",
+          "t": "Stand by Me",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s4e16",
+          "t": "Bring It On",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s4e17",
+          "t": "Because the Night",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s4e18",
+          "t": "American Gothic",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s4e19",
+          "t": "Pictures of You",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s4e20",
+          "t": "The Originals",
+          "n": "20",
+          "note": "A backdoor pilot for the spin-off series The Originals"
+        },
+        {
+          "id": "tvd-s4e21",
+          "t": "She's Come Undone",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s4e22",
+          "t": "The Walking Dead",
+          "n": "22"
+        },
+        {
+          "id": "tvd-s4e23",
+          "t": "Graduation",
+          "n": "23"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Season 5",
+      "sub": "2013–14 · 22 episodes",
+      "items": [
+        {
+          "id": "tvd-s5e1",
+          "t": "I Know What You Did Last Summer",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s5e2",
+          "t": "True Lies",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s5e3",
+          "t": "Original Sin",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s5e4",
+          "t": "For Whom the Bell Tolls",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s5e5",
+          "t": "Monster's Ball",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s5e6",
+          "t": "Handle with Care",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s5e7",
+          "t": "Death and the Maiden",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s5e8",
+          "t": "Dead Man on Campus",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s5e9",
+          "t": "The Cell",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s5e10",
+          "t": "Fifty Shades of Grayson",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s5e11",
+          "t": "500 Years of Solitude",
+          "n": "11",
+          "note": "The series' 100th episode"
+        },
+        {
+          "id": "tvd-s5e12",
+          "t": "The Devil Inside",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s5e13",
+          "t": "Total Eclipse of the Heart",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s5e14",
+          "t": "No Exit",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s5e15",
+          "t": "Gone Girl",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s5e16",
+          "t": "While You Were Sleeping",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s5e17",
+          "t": "Rescue Me",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s5e18",
+          "t": "Resident Evil",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s5e19",
+          "t": "Man on Fire",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s5e20",
+          "t": "What Lies Beneath",
+          "n": "20"
+        },
+        {
+          "id": "tvd-s5e21",
+          "t": "Promised Land",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s5e22",
+          "t": "Home",
+          "n": "22"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Season 6",
+      "sub": "2014–15 · 22 episodes",
+      "items": [
+        {
+          "id": "tvd-s6e1",
+          "t": "I'll Remember",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s6e2",
+          "t": "Yellow Ledbetter",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s6e3",
+          "t": "Welcome to Paradise",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s6e4",
+          "t": "Black Hole Sun",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s6e5",
+          "t": "The World Has Turned and Left Me Here",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s6e6",
+          "t": "The More You Ignore Me, the Closer I Get",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s6e7",
+          "t": "Do You Remember the First Time?",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s6e8",
+          "t": "Fade Into You",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s6e9",
+          "t": "I Alone",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s6e10",
+          "t": "Christmas Through Your Eyes",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s6e11",
+          "t": "Woke Up with a Monster",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s6e12",
+          "t": "Prayer for the Dying",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s6e13",
+          "t": "The Day I Tried to Live",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s6e14",
+          "t": "Stay",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s6e15",
+          "t": "Let Her Go",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s6e16",
+          "t": "The Downward Spiral",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s6e17",
+          "t": "A Bird in a Gilded Cage",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s6e18",
+          "t": "I Never Could Love Like That",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s6e19",
+          "t": "Because",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s6e20",
+          "t": "I'd Leave My Happy Home for You",
+          "n": "20"
+        },
+        {
+          "id": "tvd-s6e21",
+          "t": "I'll Wed You in the Golden Summertime",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s6e22",
+          "t": "I'm Thinking of You All the While",
+          "n": "22"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Season 7",
+      "sub": "2015–16 · 22 episodes",
+      "items": [
+        {
+          "id": "tvd-s7e1",
+          "t": "Day One of Twenty-Two Thousand, Give or Take",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s7e2",
+          "t": "Never Let Me Go",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s7e3",
+          "t": "Age of Innocence",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s7e4",
+          "t": "I Carry Your Heart with Me",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s7e5",
+          "t": "Live Through This",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s7e6",
+          "t": "Best Served Cold",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s7e7",
+          "t": "Mommie Dearest",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s7e8",
+          "t": "Hold Me, Thrill Me, Kiss Me, Kill Me",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s7e9",
+          "t": "Cold as Ice",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s7e10",
+          "t": "Hell Is Other People",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s7e11",
+          "t": "Things We Lost in the Fire",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s7e12",
+          "t": "Postcards from the Edge",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s7e13",
+          "t": "This Woman's Work",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s7e14",
+          "t": "Moonlight on the Bayou",
+          "n": "14",
+          "note": "Begins a crossover with the spin-off The Originals that concludes on its episode \"A Streetcar Named Desire\", not listed here"
+        },
+        {
+          "id": "tvd-s7e15",
+          "t": "I Would for You",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s7e16",
+          "t": "Days of Future Past",
+          "n": "16"
+        },
+        {
+          "id": "tvd-s7e17",
+          "t": "I Went to the Woods",
+          "n": "17"
+        },
+        {
+          "id": "tvd-s7e18",
+          "t": "One Way or Another",
+          "n": "18"
+        },
+        {
+          "id": "tvd-s7e19",
+          "t": "Somebody That I Used to Know",
+          "n": "19"
+        },
+        {
+          "id": "tvd-s7e20",
+          "t": "Kill 'Em All",
+          "n": "20"
+        },
+        {
+          "id": "tvd-s7e21",
+          "t": "Requiem for a Dream",
+          "n": "21"
+        },
+        {
+          "id": "tvd-s7e22",
+          "t": "Gods and Monsters",
+          "n": "22"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Season 8",
+      "sub": "2016–17 · 16 episodes",
+      "items": [
+        {
+          "id": "tvd-s8e1",
+          "t": "Hello, Brother",
+          "n": "1"
+        },
+        {
+          "id": "tvd-s8e2",
+          "t": "Today Will Be Different",
+          "n": "2"
+        },
+        {
+          "id": "tvd-s8e3",
+          "t": "You Decided That I Was Worth Saving",
+          "n": "3"
+        },
+        {
+          "id": "tvd-s8e4",
+          "t": "An Eternity of Misery",
+          "n": "4"
+        },
+        {
+          "id": "tvd-s8e5",
+          "t": "Coming Home Was a Mistake",
+          "n": "5"
+        },
+        {
+          "id": "tvd-s8e6",
+          "t": "Detoured on Some Random Backwoods Path to Hell",
+          "n": "6"
+        },
+        {
+          "id": "tvd-s8e7",
+          "t": "The Next Time I Hurt Somebody, It Could Be You",
+          "n": "7"
+        },
+        {
+          "id": "tvd-s8e8",
+          "t": "We Have History Together",
+          "n": "8"
+        },
+        {
+          "id": "tvd-s8e9",
+          "t": "The Simple Intimacy of the Near Touch",
+          "n": "9"
+        },
+        {
+          "id": "tvd-s8e10",
+          "t": "Nostalgia's a Bitch",
+          "n": "10"
+        },
+        {
+          "id": "tvd-s8e11",
+          "t": "You Made a Choice to Be Good",
+          "n": "11"
+        },
+        {
+          "id": "tvd-s8e12",
+          "t": "What Are You?",
+          "n": "12"
+        },
+        {
+          "id": "tvd-s8e13",
+          "t": "The Lies Will Catch Up to You",
+          "n": "13"
+        },
+        {
+          "id": "tvd-s8e14",
+          "t": "It's Been a Hell of a Ride",
+          "n": "14"
+        },
+        {
+          "id": "tvd-s8e15",
+          "t": "We're Planning a June Wedding",
+          "n": "15"
+        },
+        {
+          "id": "tvd-s8e16",
+          "t": "I Was Feeling Epic",
+          "n": "16"
+        }
+      ]
+    }
+  ]
+}

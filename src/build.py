@@ -16,6 +16,8 @@ import json
 import pathlib
 import re
 import sys
+# aliased: main() names the page it is assembling `html`
+from html import escape as html_escape, unescape as html_unescape
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "src" / "template.html"
@@ -145,6 +147,193 @@ def load_property(path):
     # would make the bar confidently wrong rather than honestly coarse
     prop["_totalw"] = round(totalw, 2) if (total and nweighted == total) else None
     return prop
+
+
+# ---- one real file per public list, for crawlers (CLU-211) -----------------
+# The site routes on the query string and serves one index.html, and a crawler
+# runs no JavaScript: Discord fetches /?p=halo, reads the static head, and
+# previews the generic site card for every list alike. So each public list
+# gets a page of its own at l/<slug>.html carrying nothing but its own og:/
+# twitter: tags and a bounce to the app — a meta refresh for a browser with no
+# script, location.replace() for one with, so a person never sees it. A crawler
+# reads the tags and stops. GitHub Pages serves a subdirectory's halo.html at
+# /l/halo as well (it does so for the site's other subdirectory pages today),
+# so that is the URL the tags call canonical.
+#
+# The build owns l/. A list that is renamed or removed takes its page with it,
+# because a stale one would go on previewing a list that no longer exists.
+#
+# ⚠ The gated list never gets one (CLU-214). Its page would be a public,
+# unlinked URL carrying its cover title, and unlinked is exactly how this repo
+# has leaked before (CLU-196). It is skipped on the `secret` flag — never by
+# name; nothing naming it may enter the repo — and the skip is then PROVED by
+# check_embeds() rather than trusted. Its share link stays the app URL, which
+# a crawler reads as the generic site card. A generated list is skipped too:
+# its count is only known on the day it is read, and a card stating one would
+# be wrong the morning after it shipped.
+EMBEDS = ROOT / "l"
+SITE = "https://clubd.watch"
+OG_IMAGE = SITE + "/clubd-og.png"      # one image for every list until CLU-218
+
+
+def embed_of(p):
+    """A list's description: its blurb, verbatim.
+
+    The blurb is the one line under the title on the list page — a sentence,
+    written to be read on its own, and where it states a count qa_lint holds
+    that count to the rows. The first cut of this put the page's header line
+    (`subtitle-or-kind · year · N units`) in front of it, and 81 of 209 cards
+    then said the count twice, most of them opening lowercase, because the
+    header is written to sit over a title and not to open a sentence. Discord
+    caches a first embed for a long time and a wrong one is expensive to take
+    back, so the card says exactly what the blurb says. CLU-213 may add to it.
+    A list with no blurb falls back to the header line rather than to nothing.
+    """
+    blurb = (p.get("blurb") or "").strip()
+    if blurb:
+        return blurb
+    n = p["_total"]
+    unit = p["unit"]["one"] if n == 1 else p["unit"]["many"]
+    return " · ".join(str(b) for b in (p.get("subtitle") or p.get("kind"),
+                                        p.get("year"), "%d %s" % (n, unit)) if b)
+
+
+def attr(s):
+    """Attribute-safe, and only that: the default also turns an apostrophe
+    into an entity, which makes Bob's Burgers unreadable in the file."""
+    return html_escape(s, quote=False).replace('"', "&quot;")
+
+
+def embed_page(p):
+    app = "/?p=" + p["slug"]               # slugs pass ID_OK; nothing to escape
+    title = attr(p["title"])
+    desc = attr(embed_of(p))
+    return "\n".join([
+        "<!doctype html>",
+        '<html lang="en">',
+        "<head>",
+        '<meta charset="utf-8">',
+        "<title>%s — clubd</title>" % title,
+        '<meta property="og:site_name" content="clubd">',
+        '<meta property="og:type" content="website">',
+        '<meta property="og:url" content="%s/l/%s">' % (SITE, p["slug"]),
+        '<meta property="og:title" content="%s">' % title,
+        '<meta property="og:description" content="%s">' % desc,
+        '<meta property="og:image" content="%s">' % OG_IMAGE,
+        '<meta property="og:image:width" content="1200">',
+        '<meta property="og:image:height" content="630">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        '<meta name="twitter:title" content="%s">' % title,
+        '<meta name="twitter:description" content="%s">' % desc,
+        '<meta name="twitter:image" content="%s">' % OG_IMAGE,
+        '<meta http-equiv="refresh" content="0;url=%s">' % app,
+        "<script>location.replace(%s)</script>" % json.dumps(app),
+        "</head>",
+        "<body>",
+        # for the browser that honours neither bounce: the page is not blank
+        '<a href="%s">%s</a>' % (app, title),
+        "</body>",
+        "</html>",
+        "",
+    ])
+
+
+def no_gated_page(props):
+    """A page named for the gated list is removed and the build fails — it is
+    never merely swept as stale, and no message names it. write_embeds() runs
+    this before its sweep, so the sweep cannot print the name as a removed
+    file; check_embeds() runs it again as the proof, after the pages are
+    written."""
+    for g in (p for p in props if p.get("secret")):
+        own = EMBEDS / (g["slug"] + ".html")
+        if own.exists():
+            own.unlink()      # never leave it where `git add` could find it
+            fail("l/ held a share page for the gated list; it has been removed "
+                 "— nothing may write that file")
+
+
+def write_embeds(props):
+    public = [p for p in props if not p.get("secret") and not p.get("generate")]
+    EMBEDS.mkdir(exist_ok=True)
+    no_gated_page(props)
+    want = {p["slug"] + ".html" for p in public}
+    for f in EMBEDS.iterdir():
+        if f.name in want or f.name.startswith("."):
+            continue
+        # a stale page is removed; anything else is refused rather than
+        # deleted, because the build only ever owns what it wrote
+        if f.is_file() and f.suffix == ".html":
+            f.unlink()
+            print("  embeds: removed stale l/%s" % f.name)
+        else:
+            fail("l/%s is not a share page — l/ holds only what this build "
+                 "writes, one l/<slug>.html per public list" % f.name)
+    for p in public:
+        with (EMBEDS / (p["slug"] + ".html")).open("w", encoding="utf-8",
+                                                    newline="\n") as f:
+            f.write(embed_page(p))
+    return public
+
+
+def check_embeds(props, public):
+    """Prove what write_embeds() promised, from the directory as it now is.
+
+    Every fact here is read back from disk, not inferred from the loop that
+    wrote it: l/ holds exactly one page per public list; no page is named for
+    the gated list; and nothing the gated list is known by — a link to it, its
+    slug or cover title as a title, its password hint, any piece of its
+    ciphertext — appears inside any page. CLU-214 asked for a positive
+    assertion rather than the absence of a line of code, and this is it. It
+    runs on every build and fails the build.
+
+    The slug is looked for where a link would put it — `?p=<slug>` and
+    `/l/<slug>`, bounded by anything outside the slug alphabet, so
+    `/l/<slug>.html` matches and `a-<slug>-b` does not — and as a whole value.
+    Not as a bare word: the gated slug is an ordinary English word, and a
+    public blurb that happens to use it is not a leak; a test that failed the
+    build on it would send someone hunting for one. Its cover title is
+    likewise an ordinary word that public blurbs use, so it is tested as a
+    value — a <title>, a content="", the link text — rather than as a
+    substring. Failure messages say "the gated list" and nothing more: build
+    output gets pasted into cards.
+    """
+    gated = [p for p in props if p.get("secret")]
+    # first, before any message that lists file names could name it
+    no_gated_page(props)
+    on_disk = {f.name for f in EMBEDS.iterdir() if not f.name.startswith(".")}
+    want = {p["slug"] + ".html" for p in public}
+    if on_disk != want:
+        fail("l/ holds %d page(s) but the catalogue has %d public list(s); "
+             "extra: %s, missing: %s"
+             % (len(on_disk), len(want),
+                ", ".join(sorted(on_disk - want)[:6]) or "none",
+                ", ".join(sorted(want - on_disk)[:6]) or "none"))
+    pages = [(f, f.read_bytes()) for f in sorted(EMBEDS.glob("*.html"))]
+    values = re.compile(rb'content="([^"]*)"|<title>([^<]*)</title>|>([^<>]+)<')
+    for g in gated:
+        sec = g["secret"]
+        link = re.compile(rb"([?&]p=|/l/)" + re.escape(g["slug"].encode("utf-8"))
+                          + rb"(?![A-Za-z0-9_-])")
+        titles = {t for t in (g["slug"], g.get("title"), sec.get("title")) if t}
+        verbatim = [v.encode("utf-8") for v in
+                    (sec.get("hint"), sec.get("salt"), sec.get("iv"), sec.get("blob"))
+                    if v]
+        for f, raw in pages:
+            if link.search(raw):
+                fail("l/%s links to the gated list — the build will not ship it"
+                     % f.name)
+            for m in values.finditer(raw):
+                v = html_unescape(next(x for x in m.groups() if x is not None)
+                                  .decode("utf-8")).strip()
+                if v in titles or v.split(" — ")[0] in titles:
+                    fail("l/%s carries the gated list's title — the build will "
+                         "not ship it" % f.name)
+            for piece in verbatim:
+                if piece in raw:
+                    fail("l/%s carries part of the gated list's envelope — the "
+                         "build will not ship it" % f.name)
+    print("  embeds: %d share page(s) in l/; none for the gated list, checked"
+          % len(pages))
 
 
 def main():
@@ -631,6 +820,10 @@ def main():
     syncver = hashlib.sha1(
         json.dumps(sync, sort_keys=True, separators=(",", ":"),
                    ensure_ascii=False).encode("utf-8")).hexdigest()[:10]
+
+    # the share pages, and the proof that the gated list has none — before
+    # index.html is written, so a failed proof leaves the page as it was
+    check_embeds(props, write_embeds(props))
 
     html = TEMPLATE.read_text(encoding="utf-8")
     for ph in ("__MANIFEST__", "__BUILD__", "__SYNCVER__"):

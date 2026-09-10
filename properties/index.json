@@ -2969,6 +2969,26 @@
     "total": 829
   },
   {
+    "slug": "vampire-diaries",
+    "media": [
+      "tv"
+    ],
+    "title": "The Vampire Diaries",
+    "subtitle": "eight seasons on The CW",
+    "kind": "tv",
+    "year": "2009–2017",
+    "popularity": 61,
+    "blurb": "All 171 episodes of the CW series in broadcast order, from the pilot to the finale.",
+    "accent": "#7E1440",
+    "accentDark": "#EE9BB4",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 171
+  },
+  {
     "slug": "babylon-5",
     "media": [
       "movies",
