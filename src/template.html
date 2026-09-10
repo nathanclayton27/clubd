@@ -5361,7 +5361,10 @@ function thAudience(){
 }
 
 function gstate(){
-  const on = !!(drawingPeople() && gmembers.length);
+  // drawnMembers(), not gmembers: this decides whether the stack replaces the
+  // solo strip, and paintStack() declines to draw an empty one — the two have
+  // to agree on who is on screen or the strip goes away with nothing over it.
+  const on = !!(drawingPeople() && drawnMembers().length);
   $('stack').classList.toggle('hide', !on);
   $('glegend').classList.toggle('hide', !on);
   $('strip').classList.toggle('hide', on);
@@ -5734,6 +5737,33 @@ function readsOf(m){
     m.atime = new Set([...at, ...m.read]);
   }
   return m.atime;
+}
+
+// Who the strip and the legend actually draw (CLU-415). A GROUP is one roster
+// across every list, so on any given list most of it may have nothing here —
+// and each of those people still took a 35px layer and a legend line saying
+// zero. Nathan: "don't show progress on the mcu anthology for a group member if
+// they haven't watched any of it. this reduces clutter."
+//
+// A watch CLUB is untouched, and the asymmetry is the definition: joining one
+// is saying "I am watching this", so everyone in it belongs on the strip even
+// at zero. A pick is untouched for the same reason — you named those people.
+//
+// You are always drawn, even at zero. It is your list, and a strip that leaves
+// you out of it reads as broken rather than tidy.
+//
+// Filtered HERE rather than in the fetch, and both halves of that are
+// load-bearing:
+//   * loadMembers() keeps returning the whole roster, so the count can say
+//     "3 of 9" honestly instead of forgetting the other six;
+//   * somebody who has hidden this list from groups already comes back with no
+//     rows at all (DECISIONS §3) and must stay invisible for THAT reason. This
+//     only narrows what is drawn; it never decides what is readable, so the
+//     privacy answer stays the database's.
+// color_index is untouched by it, so dropping a layer moves nobody's colour.
+function drawnMembers(){
+  if(!isUgroup(group)) return gmembers;
+  return gmembers.filter(m=> (user && m.id === user.id) || readsOf(m).size > 0);
 }
 
 const DAY = 86400000;
@@ -6116,9 +6146,10 @@ function wireUnpace(p){
 function paintStack(){
   gstate();
   applyOverrides();
-  if(!drawingPeople() || !gmembers.length) return;
+  const drawn = drawnMembers();
+  if(!drawingPeople() || !drawn.length) return;
 
-  const list = gmembers.slice()
+  const list = drawn.slice()
     .sort((a,b)=> readsOf(b).size - readsOf(a).size || a.name.localeCompare(b.name));
   // Flat, deliberately. Shrinking the offset as the group grew kept the stack
   // short but made the front reader's band pull further ahead of everyone
@@ -6763,8 +6794,19 @@ function updateGroupLine(){
   }else{
     line = 'No finish date set, so nobody is behind.';
   }
-  const who = gmembers.length + (gmembers.length === 1 ? ' person' : ' people');
-  el.textContent = line + ' ' + who + ' in this club.';
+  // The count has to reconcile with the layers above it (CLU-415): "9 people"
+  // beside three bands is the tile contradicting the strip. On a group where
+  // somebody is undrawn it says both numbers, so the six who are not here are
+  // still accounted for rather than quietly forgotten.
+  const all = gmembers.length, shown = drawnMembers().length;
+  // "3 of 9 reading" — this list's own verb, unless it is the two-word one
+  // ("working through"), which takes the plain form groupNoun() falls back to.
+  const v = VERB.ing || '';
+  const who = shown < all
+    ? shown + ' of ' + all + ' ' + (v && v.indexOf(' ') < 0 ? v : 'started')
+    : all + (all === 1 ? ' person' : ' people')
+      + ' in this ' + (isUgroup(group) ? 'group' : 'club');
+  el.textContent = line + ' ' + who + '.';
 }
 
 // The bar is the entire tile once it is shut, so it has to answer "who is this
@@ -6780,10 +6822,13 @@ function paintClubBar(label){
   $('ghead').textContent = shut ? label : '';
   $('ghead').classList.toggle('hide', !shut);
   const pl = $('c-pl'), dots = $('c-dots');
-  const n = drawingPeople() ? gmembers.length : 0;
+  // the drawn set, because the bar is a summary OF THE STACK — "+8" over three
+  // layers would be the shut tile disagreeing with the open one (CLU-415)
+  const drawn = drawingPeople() ? drawnMembers() : [];
+  const n = drawn.length;
   pl.textContent = n > 1 ? '+' + (n - 1) : '';
   pl.classList.toggle('hide', n < 2);
-  dots.innerHTML = !n ? '' : gmembers.slice()
+  dots.innerHTML = !n ? '' : drawn.slice()
     .sort((a,b)=> readsOf(b).size - readsOf(a).size || a.name.localeCompare(b.name))
     .slice(0, 4)
     .map(m=> '<i style="background:var(--m'+(m.ci+1)+')"></i>').join('');
@@ -7578,8 +7623,11 @@ function showPeek(idx, x, top, grouped){
     + '<span class="mk">'+(has ? VERB.past : 'not yet')+'</span></div>';
 
   const id = ORDER[idx];
-  if(grouped && gmembers.length){
-    h += '<div class="peek-w">' + gmembers.slice()
+  // the drawn set: this box is what a mark on the stack says, so a row here
+  // for somebody who has no layer up there is the same clutter (CLU-415)
+  const shown = grouped ? drawnMembers() : [];
+  if(shown.length){
+    h += '<div class="peek-w">' + shown.slice()
       .sort((a,b)=> readsOf(b).size - readsOf(a).size)
       .map(m=> row('var(--m'+(m.ci+1)+')',
                    m.name + (user && m.id===user.id ? ' (you)' : ''),
