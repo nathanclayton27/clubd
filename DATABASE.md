@@ -512,8 +512,14 @@ you may leave.
 column precisely because `groups` has no column grant and adding one would break
 every club screen.
 
-**`profiles`** — friend code and username. Four-column grant. Readable by any
-signed-in user today; `FINAL-3` would narrow that and has not run.
+**`profiles`** — friend code and username. Four-column grant. **Readable by any
+signed-in user today** — every row, one request for the whole directory —
+because "add a friend by code" reads it directly. That stays true until
+`clu153-B-narrow-profiles.sql` runs (§5, *Queued and ready*), which narrows it
+to your own row plus anyone a `friendships` edge connects you to; strangers are
+then reachable only through `find_profile_by_code()`, a definer function that
+`clu153-A` creates. Neither has run. *(This line used to say `FINAL-3` would
+narrow it; FINAL-3 is superseded by that pair.)*
 
 **`friendships`** — one row per direction. Mutual means both rows exist. You may
 add your own direction, remove your own, and decline an incoming one.
@@ -523,6 +529,7 @@ Empty, the gated-list term in every policy is a no-op, which is why step 7
 without step 8's insert protects nothing.
 
 **`rate_events`** — join-attempt counting behind `guard_group_join_rate()`.
+Once `clu153-A` runs it also counts friend-code misses, under kind `'fcode'`.
 
 **`schema_migrations`** — one row per migration **run**, not per file, so a second run of the same file is visible rather than
 overwriting the first. Records outcome too, so a failure is history rather than
@@ -591,6 +598,9 @@ computes that same `493ae4fb…` for the file on disk today, so the ledger and t
 repo agree on the bytes that ran — the first time in this project that has been
 true of anything.
 
+**Queued behind it, written and not run: the CLU-153 pair**, under *Queued and
+ready* below. Nothing else in the repo is waiting on a paste.
+
 **From the ledger row (2026-08-27) the database records its own history.**
 Everything above that row was reconstructed from the board. The three rows after
 it split two ways: the two read-only pre-flights wrote nothing and so left no
@@ -611,8 +621,8 @@ and §3 says why it has not moved.
 
 | File | Why |
 |---|---|
-| `FINAL-3-profiles.sql` | Fenced on a front-end change that has not shipped (CLU-153). The fence is **enforced in the file**, not merely commented. Verified still valid: `find_profile_by_code` appears 0 times in `src/template.html` and 0 times in the built `index.html`. |
-| `rls-fix-PART2-after-frontend.sql` | Same fence, comment-only, and **no transaction** — a mid-file failure leaves `profiles` with RLS on and its SELECT policy dropped. Superseded by FINAL-3. |
+| `FINAL-3-profiles.sql` | **Superseded by the CLU-153 pair** (`clu153-A` / `clu153-B`, *Queued and ready* below), which is FINAL-3 split in two so the function half can run ahead of the front end. Do not run it: it would do both halves in one paste, which is exactly what its fence exists to stop. The fence is **enforced in the file**, not merely commented, and still holds. *(This line used to say `find_profile_by_code` appears 0 times in the template; since CLU-153 it appears once, in `friendByCode()`.)* |
+| `rls-fix-PART2-after-frontend.sql` | Same fence, comment-only, and **no transaction** — a mid-file failure leaves `profiles` with RLS on and its SELECT policy dropped. Superseded by FINAL-3, which is in turn superseded by the pair. |
 | `migrate-fix-rls-column-locks.sql` | `rls-fix-PART1` + `rls-fix-PART2` concatenated, verified: after normalising line endings, 16,007 + 7,048 = 23,055 characters and the concatenation is identical. *(Raw byte counts do **not** add up — the PART files are CRLF and the combined file is LF. An earlier note here cited the raw numbers as proof, which anyone re-checking with `wc -c` would have found false.)* Never ran as itself. |
 | `migrate-perf-shares.sql` | **Must never run.** It buys under 1%: CLU-397 established the slowdown was request *count*, not per-row cost — a ~926 ms fixed per-request floor against ~10 ms of per-row work. It would also create a sixth `shares_group_with`, with an **identical signature** to the live one, so `create or replace` replaces it silently rather than erroring. It stays unrun with the measurement in its header, so the next person looking at RLS performance finds the answer "not here". |
 | `verify-groups.sql` | Read-only harness. Defines nothing. |
@@ -774,6 +784,39 @@ is written. **Settled by the event:** the snapshot ran on 2026-09-10 and covers
 every watch-club membership (readback 11), so no suffixed row reached
 `club_progress` — check 1 now matters only if the pre-flight is re-used for
 something else.
+
+### Queued and ready: the friend-code lookup, in two files (CLU-153)
+
+`profiles` is readable by every signed-in user, and the only reason it has to
+be is that "add a friend by code" reads it directly (`?fcode=eq.<code>`). The
+fix is a definer function for the lookup and a narrower read policy — which is
+what `FINAL-3-profiles.sql` did in one paste, and why it could never run: the
+policy half breaks "add by code" for everyone until a front end that calls the
+function is live, so the whole file was fenced on that. Split, the function
+can go in today and the policy waits on its own.
+
+| Order | File | What it does | Must be true before it runs |
+|---|---|---|---|
+| 1 | `scratch/security/clu153-A-find_profile_by_code.sql` | Creates `find_profile_by_code(text)` — definer, `search_path = public, pg_temp`, refuses anonymous callers, `upper(btrim())`s the code, exact match, one row `(user_id, username, fcode)` or none; misses charged through `rate_limit_guard`/`rate_limit_note` under kind `'fcode'` (20/hour, 60/day, per user). Revoked from `public, anon, authenticated`, granted to `authenticated`. Touches no policy, grant or row. Records itself in the ledger. | Nothing beyond the rate-limit helpers (CLU-35, live) and the ledger (CLU-404, live). **Safe now, safe before the front end, safe to re-run.** |
+| 2 | `scratch/security/clu153-B-narrow-profiles.sql` | Drops `"profiles readable when signed in"` and creates `"read own profile"` (`auth.uid() = user_id`) and `"read connected profiles"` (an edge in either direction in `friendships`). One transaction, so the drop cannot land without both replacements. Asserts exactly two SELECT policies afterwards. Records itself. | **File A has run, the `index.html` live on clubd.watch calls `find_profile_by_code`, and adding a friend by code has been confirmed working there.** Enforced: the file raises unless a `set_config` line is uncommented in the same paste, *and* it checks the function exists and `authenticated` can execute it. |
+
+**The front end is ahead of both.** Since CLU-153 `friendByCode()` calls
+`rpc('find_profile_by_code', {p_code})` first and does the direct read only
+when PostgREST answers `PGRST202` or `42883` (no such function). A `42501` or a
+rate-limit `PT429` surfaces as an error and does not widen into a table read.
+So the order of events is: front end live (already, once this commit deploys)
+→ A → confirm add-by-code on the live site → B. Before A runs the site behaves
+exactly as before, at the cost of one 404 per lookup.
+
+Both are FINAL-3 lifted verbatim — the function, the three policy statements
+and the readback — with the fence moved to B and rewritten to name the pair,
+and B's post-run note corrected: FINAL-3 warned of a PostgREST schema-cache
+window after the paste, which existed only because it created the function and
+closed the directory together. `tools/ordercheck.py` is clean on both;
+`tools/whereis.py` lists both as never run.
+
+**Until B runs, `profiles` is still the open directory §4 describes.** A copy
+already taken is not undone by B; that is the reason not to let it wait.
 
 ### And three that fail safely — leave them alone
 
