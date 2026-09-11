@@ -11,7 +11,8 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-225 lists, from a ten-episode anime to a 1,418-row film collection, a
+226 lists, from a ten-episode anime to a 1,418-row film collection, a
+
 
 
 
@@ -48,8 +49,11 @@ Action*, Priest, Hudlin, Coates, Ridley and Ewing, with the Fantastic Four
 issues left on the Fantastic Four list rather than duplicated),
 *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
 twelve chapters the source numbers from minus 108, arcs taken from the
-chapter lists' own cited prose), and *Spawn* — 829 issues across 187 arcs, following a curated
-reading order rather than publication date.
+chapter lists' own cited prose), *Spawn* — 829 issues across 187 arcs, following a curated
+reading order rather than publication date — and *Green Lantern*, Geoff Johns
+from *Rebirth* to *Blackest Night*, where the Corps book and the crossover
+tie-ins are tiered instead of dropped, so the readable path and the complete
+one are the same list.
 
 **Franchises.** *Star Wars* (films and television, with the games on their
 own page), *Metal Gear* (story-only hours, tiers, and a recap link for the
@@ -484,6 +488,17 @@ Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils
 freely. Civil War order from How To Love Comics, cross-checked against
 comicbookreadingorders.com. Ultimate Marvel order from Comic Book Herald.
+
+Green Lantern issue ranges read from Wikipedia's collected-editions tables for
+*Green Lantern* vol. 4 and *Green Lantern Corps* vol. 2, its *Blackest Night*
+titles-involved table for the tie-ins and their writers, and the *Sinestro
+Corps War* article for that crossover's part order. That article numbers the
+first and last parts outright and describes the alternation in between, so the
+generator reads both ends and derives the middle. It does not zip the two
+issue ranges together, because zipping them disagrees with the article about
+which issue is the finale. Where the sources do not order two books against
+each other — the three Blackest Night titles ran in parallel — each title is
+kept whole rather than interleaved on a guess.
 
 MCU Anthology built from Wikipedia's live-action Marvel features table, and DC
 Anthology from the equivalent DC film and television tables including the
