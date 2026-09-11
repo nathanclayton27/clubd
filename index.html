@@ -519,6 +519,35 @@ details.ctile{padding:0}
 /* one drawer at a time, opened by its icon, so the tile never grows three
    forms tall while you are reading the roster */
 .cdrawer{margin:0 0 14px;padding:13px 0 0;border-top:1px solid var(--rule)}
+/* CLU-406: the three ways into this list with other people, or over again
+   on your own. auto-fit rather than a fixed three columns, so the row folds to
+   two and then to one on the way down to 390px without a media query — and so
+   a card that has nothing to offer (see paintFreshCard) can leave without
+   stranding a gap where it was.
+   The ground is a tint of the ink, not --paper: --paper is darker than the tile
+   in BOTH themes, so a paper card on this tile reads as a hole punched in it
+   rather than as a card raised on it — the same reason .gmh is a tint. */
+.gcards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  margin:14px 0 0}
+.gcard{display:flex;flex-direction:column;align-items:flex-start;gap:9px;
+  border:1px solid var(--rule);border-radius:var(--radius);padding:13px;
+  background:color-mix(in srgb,var(--ink) 3%,transparent)}
+/* the action sits on the card's floor, so three cards of three different
+   heights still line their buttons up */
+.gcard>button{margin-top:auto}
+.gcard .row{margin:0;width:100%}
+/* a fixed 190px club-name box overflowed a 200px card. Fluid to the card's
+   width instead, and the join code keeps a short box because six characters in
+   a full-width field reads as a field expecting a sentence. */
+.gcard input[type=text]{width:100%}
+#gcode{max-width:150px}
+/* the card's own heading, in the mono label face the tile already uses for its
+   section bands. `.gcard` in the selector on purpose: `.panel p` is (0,1,1) and
+   would otherwise win the size, the colour, the margin and the 66ch measure. */
+.gcard .gch{margin:0;font-size:9.5px;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
+.gcard .gcp{margin:0;font-size:12px;color:var(--ink-2);max-width:40ch}
+#gc-fresh-b{display:flex;flex-direction:column;align-items:flex-start;gap:9px;width:100%}
 .cfoot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--rule)}
 /* the code is the chip, not a label beside a Copy button: one target, and it
@@ -2024,24 +2053,49 @@ footer a{color:var(--steel)}
            commit — the trigger's name is the club, and choose() flashes nothing
            at all — so without it Enter on "compare these" is silent -->
       <p id="gmsg2" role="status" style="margin:11px 0 0;color:var(--signal)"></p>
+      <!-- CLU-406. Three cards, not three stacked rows, because the third
+           one is not a row: a fresh watch carries its own list of runs to
+           switch to, which is the job the switcher's per-run rows used to do
+           and no longer does. The name field stays above all three — a club
+           you start and a club you join both show it, and a fresh watch has
+           nobody to show it to.
+           Each card is a role=group labelled by its own heading, the same
+           shape the switcher's sections use (see .gmh), so a screen reader
+           landing on a bare "Join code" is told which of the three doors it
+           belongs to. Only the third card's body is built in script, because
+           only its contents change with what exists. -->
       <div id="gsetup">
         <p id="gsetup-p"></p>
-        <div class="row">
+        <div class="row" id="gname-row">
           <input type="text" id="gname" placeholder="Your name" maxlength="24" autocomplete="nickname">
           <span class="lbl">shown to the rest of the club</span>
         </div>
-        <div class="row" style="margin-top:14px">
-          <input type="text" id="gtitle" placeholder="Club name" maxlength="40" style="width:190px">
-          <span id="gstart-w"><span class="lbl">Starts</span>
-          <input type="date" id="gstart" aria-label="Starts"></span>
-          <span class="lbl" id="gdate-l">Finish by</span>
-          <input type="date" id="gdate" aria-label="Finish by">
-          <button id="b-gcreate">Start a club</button>
-        </div>
-        <div class="row" style="margin-top:10px">
-          <input type="text" id="gcode" placeholder="Join code" maxlength="6" spellcheck="false"
-                 style="width:120px;text-transform:uppercase;letter-spacing:.12em">
-          <button id="b-gjoin">Join a club</button>
+        <div class="gcards">
+          <div class="gcard" id="gc-create" role="group" aria-label="Start a club">
+            <p class="gch" aria-hidden="true">Start a club</p>
+            <div class="row">
+              <input type="text" id="gtitle" placeholder="Club name" maxlength="40">
+            </div>
+            <div class="row" id="gdates">
+              <span id="gstart-w"><span class="lbl">Starts</span>
+              <input type="date" id="gstart" aria-label="Starts"></span>
+              <span class="lbl" id="gdate-l">Finish by</span>
+              <input type="date" id="gdate" aria-label="Finish by">
+            </div>
+            <button id="b-gcreate">Start a club</button>
+          </div>
+          <div class="gcard" id="gc-join" role="group" aria-label="Join a club">
+            <p class="gch" aria-hidden="true">Join a club</p>
+            <div class="row">
+              <input type="text" id="gcode" placeholder="Join code" maxlength="6" spellcheck="false"
+                     style="text-transform:uppercase;letter-spacing:.12em">
+            </div>
+            <button id="b-gjoin">Join a club</button>
+          </div>
+          <div class="gcard" id="gc-fresh" role="group" aria-label="Fresh watch">
+            <p class="gch" aria-hidden="true">Fresh watch</p>
+            <div id="gc-fresh-b"></div>
+          </div>
         </div>
         <p id="gmsg" style="margin:12px 0 0;color:var(--signal)"></p>
       </div>
@@ -6844,7 +6898,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '7d274c6d64ca';
+const BUILD = '37f021e6c866';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7200,12 +7254,12 @@ function fwActive(){
 }
 const FW = fwActive();
 const CKEY = SLUG ? SLUG + (FW ? '#' + FW : '') : SLUG;
+// The legacy run's start stamp (2026-08-28 to CLU-408). A keyed run needs no
+// stamp — its start is in its name — so this is read, never written, now.
 // The run switcher's sentinel prefix: a menu row for a run is '~' + key. The
 // prefix never reaches GKEY — choosing a run swaps the storage namespace and
 // reloads, exactly as the ↻ button does.
 const FRESH = '~';
-// The legacy run's start stamp (2026-08-28 to CLU-408). A keyed run needs no
-// stamp — its start is in its name — so this is read, never written, now.
 const FWSTART = SLUG ? 'gw:fwstart:' + SLUG : '';
 function fwStarted(){
   try{ return FWSTART ? localStorage.getItem(FWSTART) : null; }
@@ -12467,10 +12521,25 @@ function groupSwitcher(){
 
   // Beneath Just me, not instead of it: the all-time run is still there and
   // still untouched, which is the whole promise of a fresh watch. One row per
-  // run, newest first, each named by the day it began. Two runs begun on the
-  // same day would read identically, so only then does the hint carry the
-  // time as well — a date is what Nathan asked for, and a time on every row
-  // would be noise on the day that matters.
+  // run, newest first — and the row now says what it IS, not only what it is
+  // called. Nathan, folding CLU-408 into CLU-406: a new fresh watch should
+  // "make a new item in the dropdown indicating that you're starting a
+  // separately watched instance of something".
+  //
+  // Which is a copy problem, and it had two halves. Three runs all labelled
+  // "Fresh watch", told apart only by a date in the hint, read as one row
+  // drawn three times; so the date rides the NAME here exactly as it rides the
+  // pill (fwName), and the hint is free to answer the question the label could
+  // not — what kind of thing am I switching into — the way "no comparison"
+  // answers it for Just me. Two runs begun on the same day would still read
+  // identically, so only then does the name carry the time as well: a date is
+  // what Nathan asked for, and a time on every row would be noise on the day
+  // that matters.
+  //
+  // The hint is the same length as the "started Sep 10" it replaces, which is a
+  // layout fact and not a coincidence — .gwhy never shrinks, so every character
+  // of it comes off the name beside it (see .gwhy). scratch/qa2/fwcard_check.py
+  // measures the name for clipping at 390px rather than trusting that.
   //
   // Ticked only when the run is what the strip is actually DRAWING. A fresh run
   // and a club genuinely can both be on — readsOf() draws your all-time layer
@@ -12480,13 +12549,18 @@ function groupSwitcher(){
   // which is not a state a menu is allowed to be in.
   if(runs.length){
     const days = {};
-    runs.forEach(r=>{ const d = fwHint(r.key); days[d] = (days[d] || 0) + 1; });
+    runs.forEach(r=>{ const n = fwName(r.key); days[n] = (days[n] || 0) + 1; });
     runs.forEach(r=>{
-      let hint = fwHint(r.key);
+      let nm = fwName(r.key);
       const st = fwStartOf(r.key);
-      if(st && days[hint] > 1)
-        hint += ' ' + new Date(st).toLocaleTimeString(undefined, {hour:'numeric', minute:'2-digit'});
-      html += row(FRESH + r.key, 'Fresh watch', hint,
+      if(st && days[nm] > 1)
+        nm += ' ' + new Date(st).toLocaleTimeString(undefined, {hour:'numeric', minute:'2-digit'});
+      // The legacy run keeps the hint it was given: it has no start to put in
+      // its name — "started earlier" is the whole of what is known about it,
+      // and inventing today's date there would be a lie about somebody's own
+      // history (CLU-408). Every other row has its date in the name, so the
+      // hint is free to say what the row IS.
+      html += row(FRESH + r.key, nm, st ? 'a separate run' : fwHint(r.key),
                   FW === r.key && !group && !picked.length);
     });
   }
@@ -12649,6 +12723,9 @@ function prepSetup(another){
   // no error a user could see. Found by rendering the exact scenario for a
   // screenshot, not by a test.
   another = !!(another && group);
+  // The third card is the only part of this form built in script, because it
+  // is the only part whose contents depend on anything (see paintFreshCard).
+  paintFreshCard();
   // Only a RELATIVE schedule is anchored by these fields. A property whose
   // windows carry their own dates ignores both — windows() returns the
   // property's dates and never reads start_date or target_date — so offering
@@ -12658,6 +12735,10 @@ function prepSetup(another){
   $('gdate-l').classList.toggle('hide', isPaced() && !rel);
   $('gdate').classList.toggle('hide', isPaced() && !rel);
   $('gdate-l').textContent = rel ? 'or finishes' : 'Finish by';
+  // Both halves hidden is an empty row, and an empty flex row inside a card is
+  // a gap with nothing to explain it — so the row goes when neither end of it
+  // has a date to ask for.
+  $('gdates').classList.toggle('hide', !rel && isPaced());
   $('gdate').disabled = false;
   $('gsetup-p').textContent = another
     ? 'Start another club for ' + PROP.title + ', or join one with a code. You '
@@ -12935,6 +13016,38 @@ function wireFwDrawer(){
   wireClubIcons();
   const del = $('b-fwdel');
   if(del) del.onclick = ()=> deleteFreshRun();
+}
+
+// CLU-406. The third card of the picker: the two beside it are ways to watch
+// this list WITH people, and this is the way to watch it again without them.
+//
+// It creates and it does not switch. Nathan drew that line himself when he
+// folded CLU-408 into this card — "every time a new 'fresh watch' is created
+// make it make a new item in the dropdown" — so the runs that exist stay in the
+// switcher above, where they have always been, and this is the door that adds
+// one to it. A run list here as well would be the same control in two places,
+// disagreeing the first time one of them was changed.
+//
+// Which is why the copy says where the run lands. Pressing this reloads the
+// page into a new run, and without that sentence the only evidence of what
+// happened is a menu row the reader was not watching.
+function paintFreshCard(){
+  const card = $('gc-fresh'), body = $('gc-fresh-b');
+  if(!card || !body) return;
+  // A club SESSION and a fresh run cannot both be on — splitClub() refuses one
+  // while FW is set — so inside a session this button answers "not that, then",
+  // which is the same reason paintFW hides ↻ there. The card leaves rather than
+  // standing there disabled; .gcards is auto-fit, so the other two close the gap.
+  const off = !SLUG || !!SESSION;
+  card.classList.toggle('hide', off);
+  if(off){ body.innerHTML = ''; return; }
+  body.innerHTML =
+      '<p class="gcp">Watch it again from zero, just for you — your all-time run'
+    + ' and your clubs keep every tick. Each one gets its own row in the switcher'
+    + ' above, so you can move between them.</p>'
+    + '<button id="b-fwstart" type="button">↻ start a fresh watch</button>';
+  const b = $('b-fwstart');
+  if(b) b.onclick = fwNew;
 }
 
 // What goes is the run's own progress row in the cloud and everything this
