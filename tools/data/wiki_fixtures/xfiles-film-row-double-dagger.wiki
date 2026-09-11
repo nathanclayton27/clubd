@@ -1,0 +1,15 @@
+== Episodes ==
+Episodes marked with a [[Dagger (typography)|double dagger]] ({{double dagger}}) are episodes in the series' alien [[Mythology of The X-Files|mythology arc]].<ref>{{cite AV media | people = [[Chris Carter (screenwriter)|Chris Carter]] | title = [[The X-Files Mythology, Volume 1&nbsp;– Abduction|The X-Files Mythology, Volume 1]] | medium = DVD | publisher = [[20th Century Fox Home Entertainment]]|display-authors=etal}}</ref><ref>{{cite AV media |title=[[The X-Files Mythology, Volume 2&nbsp;– Black Oil]]|people=[[David Nutter]] |medium = DVD |publisher=[[20th Century Fox Home Entertainment]] |display-authors=etal}}</ref><ref>{{cite AV media |title=[[The X-Files Mythology, Volume 3&nbsp;– Colonization]]|people=[[Kim Manners]] |medium = DVD |publisher=[[20th Century Fox Home Entertainment]] |display-authors=etal}}</ref><ref>{{cite AV media |title=[[The X-Files Mythology, Volume 4 – Super Soldiers]]|people=[[Kim Manners]] |medium = DVD |publisher=[[20th Century Fox Home Entertainment]] |display-authors=etal}}</ref>{{#tag:ref|Although "[[The Gift (The X-Files)|The Gift]]" was not included on the mythology compilation DVD ''The X-Files Mythology, Volume 3 – Colonization'', it was labelled as a mythology episode in the official guide book ''The Complete X-Files: Behind the Series the Myths and the Movies'', released in 2008.<ref>Hurwitz and Knowles (2008), pp. 236–240.</ref>|group="nb"}}
+
+=== ''The X-Files'' (1998) ===
+{{Episode table |background=#AE1515 |title=33 |director=12 |writer=38 |airdate=17 |airdateT=Release date (U.S.) |episodes=
+{{Episode list
+|RTitle=''[[The X-Files (film)|The X-Files]]''{{double dagger}}
+|WrittenBy={{StoryTeleplay|s=[[Chris Carter (screenwriter)|Chris Carter]] & [[Frank Spotnitz]]|tlabel=Screenplay by|t=Chris Carter}}
+|DirectedBy=[[Rob Bowman (director)|Rob Bowman]]
+|OriginalAirDate={{Start date|1998|6|19}}
+|ShortSummary=The film takes place between seasons 5 and 6. The [[X-File]]s have been shut down, and Mulder and Scully are dealing with a terrorist threat. However, when a government building is destroyed, Mulder is approached by a mysterious doctor who reveals that there was more to the bomb than meets the eye.  Mulder and Scully's investigations lead to the discovery of several secret installations and the true nature of the relationship between the alien colonists and the Syndicate.
+|LineColor=AE1515
+}}
+}}
+

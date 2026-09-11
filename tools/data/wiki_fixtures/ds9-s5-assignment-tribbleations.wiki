@@ -1,0 +1,25 @@
+{{Episode list
+|EpisodeNumber=103
+|EpisodeNumber2=5
+|Title=[[The Assignment (Star Trek: Deep Space Nine)|The Assignment]]
+|Aux1=50124.3
+|DirectedBy=[[Allan Kroeker]]
+|WrittenBy={{StoryTeleplay|s=David R. Long & Robert Lederman|t=[[David Weddle]] & [[Bradley Thompson]]}}
+|OriginalAirDate={{Start date|1996|10|28}}
+|ProdCode=40510-504
+|Viewers=
+|ShortSummary=Keiko returns from a journey and informs O'Brien that she is really an entity that has taken possession of his wife's body.
+|LineColor=1C39BB}}
+{{Episode list
+|EpisodeNumber=104
+|EpisodeNumber2=6
+|Title=[[Trials and Tribble-ations]]
+|Aux1=4523.7
+|DirectedBy=Jonathan West
+|WrittenBy={{StoryTeleplay|s=Ira Steven Behr, Hans Beimler & Robert Hewitt Wolfe|t=Ronald D. Moore & René Echevarria}}
+|OriginalAirDate={{Start date|1996|11|4}}
+|ProdCode=40510-503
+|Viewers=7.7<ref name=viewers5/>
+|ShortSummary=Darvin, a disgraced Klingon spy, travels back in time. The ''DS9'' crew must prevent him from altering the timeline. Based on the original ''Star Trek'' episode "[[The Trouble with Tribbles]]" by [[David Gerrold]].
+|LineColor=1C39BB
+}}

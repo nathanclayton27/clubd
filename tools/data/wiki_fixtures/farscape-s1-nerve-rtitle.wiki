@@ -1,0 +1,33 @@
+{{Episode list
+ |EpisodeNumber = 5
+ |EpisodeNumber2 = 5
+ |Title = Back and Back and Back to the Future
+ |DirectedBy = Rowan Woods
+ |WrittenBy = Babs Greyhosky
+ |OriginalAirDate = {{Start date|df=yes|1999|3|26}} (US)<br />{{Start date|df=yes|1999|12|13}} (UK)
+ |ProdCode = #10105
+ |ShortSummary = The crew comes across a ship that is molecularly de-stabilizing. D'Argo makes everyone bring the ship's escape pod aboard when he discovers that the ship's passengers are Ilanics, long-time allies of the Luxans. Aboard the escape pod, Crichton gets a shock and starts experiencing strange visions of the future, first of himself and one of the Ilanics, then of Moya's destruction.
+ |LineColor = 483d8b
+}}
+{{Episode list
+ |EpisodeNumber = 19
+ |EpisodeNumber2 = 19
+ |RTitle = "Nerve" (Part 1)
+ |DirectedBy = Rowan Woods
+ |WrittenBy = Richard Manning
+ |OriginalAirDate = {{Start date|df=yes|2000|1|7}} (US)<br />{{Start date|df=yes|2000|5|8}} (UK)
+ |ProdCode = #10119
+ |ShortSummary = When an injury Aeryn sustained in ''A Bug's Life'' threatens to kill her, Crichton and Chiana travel undercover to a nearby Peacekeeper base to obtain a tissue transplant, and are aided by [[Gilina Renaez|Gilina]]. Base leader [[Scorpius (Farscape)|Scorpius]] penetrates Crichton's disguise and subjects him to an interrogation device called the Aurora Chair. Crichton's cellmate is a masked individual named [[Stark (Farscape)|Stark]].
+ |LineColor = 483d8b
+}}
+{{Episode list
+ |EpisodeNumber = 20
+ |EpisodeNumber2 = 20
+ |RTitle = "The Hidden Memory" (Part 2)
+ |DirectedBy = Ian Watson
+ |WrittenBy = Justin Monjo
+ |OriginalAirDate = {{Start date|df=yes|2000|1|14}} (US)<br />{{Start date|df=yes|2000|5|15}} (UK)
+ |ProdCode = #10120
+ |ShortSummary = After a partial recovery, Aeryn leads Zhaan and D'Argo to the Gammak Base to rescue Crichton. At the base, Gilina does her best to help Crichton who is being repeatedly subjected to the Aurora Chair by Scorpius and Crais. Elsewhere, Chiana and Rygel have problems of their own when the pregnant Moya goes into labor.
+ |LineColor = 483d8b
+}}

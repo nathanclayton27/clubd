@@ -1,0 +1,14 @@
+{{Episode list/sublist|Bleach: Thousand-Year Blood War
+| EpisodeNumber   = 412
+| EpisodeNumber2  = 46
+| Title           = 
+| RTitle          = 
+| DirectedBy      = 
+| WrittenBy       = 
+| Aux2            = 
+| Aux3            = 
+| OriginalAirDate = {{Start date|2026|8|29}}
+| AltDate         = 
+| ShortSummary    = 
+| LineColor       = F6832E
+}}

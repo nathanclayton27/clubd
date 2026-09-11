@@ -1,0 +1,17 @@
+{{Episode list/sublist|Star Trek: Enterprise season 1
+  | Title             = [[Broken Bow (Star Trek: Enterprise)|Broken Bow]]
+  | Aux1              = {{Start date|2151|4|16}}<ref name="mission-date">{{cite web |title=Episode Listing |url=http://www.startrek.com/library/episodes_ent.asp |website=StarTrek.com |archive-url=https://web.archive.org/web/20030401220449/http://www.startrek.com/library/episodes_ent.asp |archive-date=2003-04-01}}</ref>
+  | OriginalAirDate   = {{Start date|2001|9|26}}
+  | DirectedBy        = [[James L. Conway]]
+  | WrittenBy         = [[Rick Berman]] & [[Brannon Braga]]
+  |NumParts           = 2
+  |EpisodeNumber_1    = 1
+  |EpisodeNumber_2    = 2
+  |EpisodeNumber2_1   = 1
+  |EpisodeNumber2_2   = 2
+  | ProdCode          = 40358-721
+  | Viewers           = 12.54<ref>{{cite news|url=https://www.newspapers.com/article/the-los-angeles-times/41486712/|title=National Nielsen Viewership (Sept. 24–30, 2001)|date=October 3, 2001|work=[[Los Angeles Times]]|access-date=May 15, 2021|via=[[Newspapers.com]]}}{{free access}}</ref>
+  | ShortSummary      = ''[[Enterprise (NX-01)]]'' is launched, and Captain [[Jonathan Archer|Archer]] finds himself in the middle of a [[Temporal Cold War]] involving [[Klingons]] and Suliban.
+* Originally shown as a Two-hour Pilot Movie, but in syndication is shown as two separate episodes.
+  | LineColor         = FF54AD
+}}

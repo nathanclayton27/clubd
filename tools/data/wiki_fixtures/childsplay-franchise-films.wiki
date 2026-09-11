@@ -1,0 +1,61 @@
+{| class="wikitable plainrowheaders" style="text-align:center" width=100%
+! scope="col" | Film
+! scope="col" | U.S. release date 
+! scope="col" | Director(s) 
+! scope="col" | Screenwriter(s)
+! scope="col" | Producer(s) 
+! Scope="col" | Distributed by
+|-
+! colspan="6" |Original series
+|-
+! scope="row" style="text-align:left"| ''[[Child's Play (1988 film)|Child's Play]]''
+| {{Start date|1988|11|09}}
+| [[Tom Holland (filmmaker)|Tom Holland]]
+| [[Don Mancini]]<br>[[John Lafia]]<br>[[Tom Holland (filmmaker)|Tom Holland]]
+| rowspan="2"| [[David Kirschner]]
+| [[United Artists]]
+|-
+! scope="row" style="text-align:left"| ''[[Child's Play 2]]''
+| {{Start date|1990|11|09}}
+| John Lafia
+| rowspan="7" | Don Mancini
+| rowspan="3" | [[Universal Pictures]]
+|-
+! scope="row" style="text-align:left"| ''[[Child's Play 3]]''
+| {{Start date|1991|08|30}}
+| [[Jack Bender]]
+| [[Robert Latham Brown]]
+|-
+! scope="row" style="text-align:left"| ''[[Bride of Chucky]]''
+| {{Start date|1998|10|16}}
+| [[Ronny Yu]]
+| David Kirschner<br>Grace Gilroy
+|-
+! scope="row" style="text-align:left"| ''[[Seed of Chucky]]''
+| {{Start date|2004|11|11}}
+| rowspan="4" | Don Mancini
+| David Kirschner<br>Corey Sienega
+| [[Rogue Pictures]]
+|-
+! scope="row" style="text-align:left"| ''[[Curse of Chucky]]''
+| {{Start date|2013|09|24}}{{efn|The film originally debuted on [[Video on Demand|VOD]] before later being released on [[DVD]] and [[Blu-ray]].}}
+| David Kirschner
+| rowspan="3" | [[Universal Pictures]]
+|-
+! scope="row" style="text-align:left"| ''[[Cult of Chucky]]''
+| {{Start date|2017|10|03}}
+| David Kirschner<br>[[Ogden Gavanski]]
+|-
+! scope="row" style="text-align:left"| Untitled ''Chucky'' film
+|{{TBA}}
+|{{TBA}}
+|-
+! colspan="6" |Reboot
+|-
+! scope="row" style="text-align:left"| ''[[Child's Play (2019 film)|Child's Play]]''
+| {{Start date|2019|6|21}}
+| Lars Klevberg
+| Tyler Burton Smith
+| David Katzenberg<br>[[Seth Grahame-Smith]]
+| [[United Artists Releasing]]
+|}

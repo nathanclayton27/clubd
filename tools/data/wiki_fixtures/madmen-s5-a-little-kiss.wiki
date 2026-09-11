@@ -1,0 +1,11 @@
+{{Episode list/sublist|Mad Men season 5
+|EpisodeNumber=53<hr>54
+|EpisodeNumber2=1<hr>2
+|Title=[[A Little Kiss]]
+|DirectedBy=[[Jennifer Getzinger]]
+|WrittenBy=[[Matthew Weiner]]
+|OriginalAirDate={{Start date|2012|3|25}}
+|ShortSummary=On Memorial Day weekend in 1966, several [[Young & Rubicam|Y&R]] employees drop water on African-American protestors [[picketing]] in support of equal-opportunity employment; Roger suggests running a mock ad touting SCDP as an equal-opportunity employer. Joan, on maternity leave after giving birth to her son Kevin, sees the ad and tearfully asks Lane if they are planning to replace her. Don's children spend the holiday with him and Megan, who has been promoted to copywriter. Pete struggles with Roger's constant attempts to undermine him in front of clients, and he tricks Roger by setting up a phony meeting with non-existent [[Coca-Cola]] executives. Lane finds a man's wallet in a cab and uncovers a photo of a young woman named Delores. He later calls the wallet's owner and briefly flirts with Delores, the owner's girlfriend who answers the call. Megan throws a surprise birthday party for Don with all of SCDP in attendance, but is put off by Don's childhood-based ambivalence about birthdays, causing a rift between the still-newlyweds. After Megan goes home from work early, Don arrives to see her cleaning the remaining party mess in nothing but skimpy lingerie—and puts an end to their rift by compelling her to aggressive sex.
+|Viewers=3.54<ref>{{cite web |url=http://tvbythenumbers.zap2it.com/2012/03/27/sunday-cable-ratings-mad-men-season-premiere-real-housewives-of-atlanta-more/126124/ |archive-url=https://web.archive.org/web/20120330002211/http://tvbythenumbers.zap2it.com/2012/03/27/sunday-cable-ratings-mad-men-season-premiere-real-housewives-of-atlanta-more/126124/ |url-status=dead |archive-date=March 30, 2012 |title=Sunday Cable Ratings: NBA Basketball, 'Mad Men' Season Premiere + 'Real Housewives of Atlanta' & More |work=TV by the Numbers |first=Amanda |last=Kondolojy |date=March 27, 2012 |accessdate=March 27, 2012}}</ref>
+|LineColor=3A4C5A
+}}

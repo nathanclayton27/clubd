@@ -1,0 +1,33 @@
+{{Episode list
+| EpisodeNumber   = 11
+| EpisodeNumber2  = 11
+| Title           = Spell to Make Clothes Clean and Spotless
+| TranslitTitle   = Fuku no Yogore o Kirei Sappari Otosu Mahō
+| NativeTitle     = 服の汚れをきれいさっぱり落とす魔法
+| NativeTitleLangCode = ja
+| DirectedBy      = Mayo Nozaki
+| Aux2            = Mayo Nozaki
+| Aux3            = Yukiko Watabe
+| OriginalAirDate = {{Start date|2024|3|24}}
+| ShortSummary    = Just as Frieren's party discuss the clothes cleaning spell Fern has acquired from Serie, Frieren accidentally spills a spoonful of soup on her clothes, which allows Fern to demonstrate the said spell. Impressed by the spell, Stark quickly travels into a forest, which makes his clothes heavily stained. Fern, however, refuses to cast the spell on Stark because he got his clothes dirty on purpose.
+| LineColor       = 006161
+}}
+{{Episode table/part|c=#006161|subtitle=Sponsored short}}
+{{Episode list
+| EpisodeNumber   = SP
+| EpisodeNumber2  = SP
+| Title           = 
+| RTitle          = ''(Official English title not available)''
+| TranslitTitle   = Shokutaku o Shiawase ni Suru Mahō
+| NativeTitle     = 食卓をしあわせにする魔法
+| NativeTitleLangCode = ja
+| RAltTitle       = {{nbsp}}({{Literal translation|The Magic That Brings Happiness to the Dinner Table}})
+| DirectedBy      = Mayo Nozaki
+| Aux2            = Mayo Nozaki
+| Aux3            = Miki Takeshita
+| OriginalAirDate = {{Start date|2023|12|14}}
+| ShortSummary    = Frieren, Fern and Stark are gathered around fire to cook chunks of meat, and Fern tests a spell from a grimoire. The spell summons a bottle of Ajipon sauce, which is then poured over meats. Frieren's party are satisfied by the taste of cooked meat. Stark then wonders if the sauce also enhances the taste of a dragon meat, and the rest of the party encourages him to slay one immediately.{{hr}}
+'''''Note:''''' This short is [[Branded content|sponsored]] by [[Mizkan]]'s Ajipon brand of {{Transliteration|ja|Hepburn|[[ponzu]]}} sauce and not included in any of the home media releases.
+| LineColor       = 006161
+}}
+}}

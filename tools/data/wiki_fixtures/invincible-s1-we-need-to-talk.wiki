@@ -1,0 +1,10 @@
+{{Episode list/sublist|Invincible season 1
+ |EpisodeNumber   = 7
+ |EpisodeNumber2  = 7
+ |Title           = We Need to Talk<!--Do NOT change this to "We Need To Talk" (capital To); per MOS:CT: "For title case, the words that are not capitalized on Wikipedia are: Prepositions containing four letters or fewer (to)". Any changes to this WILL be reverted.-->
+ |DirectedBy      = Vinton Heuck
+ |WrittenBy       = Simon Racioppa
+ |OriginalAirDate = {{Start date|2021|4|22}}
+ |ShortSummary    = After Debbie relocates to the GDA, she and Cecil witness Omni-Man kill his second-in-command Donald Ferguson and several GDA agents. After adding a neural link upgrade, the Rudy clone reluctantly euthanizes his progenitor before betraying the Mauler Twins. He explains himself to the Guardians of the Globe, who are taken aback by his revelations, before learning the truth about Omni-Man and their predecessors' fates. Cecil deploys Sinclair's "Reanimen" and a modified [[kaiju]] to attack Omni-Man. Unfazed by Mark revealing his superhero identity as Invincible, Amber dumps him as he never trusted her before. Mark seeks Eve's wisdom, but she criticizes his selfishness. When the two intercept Omni-Man's fight with the kaiju, Cecil orders Atom Eve to rendezvous with the Guardians. When the Maulers revive the Immortal, he awakens enraged over Omni-Man's betrayal and flies off to battle him in an attempt to avenge his team's murder. As Mark narrowly subdues the kaiju, news helicopters capture Omni-Man killing the Immortal again in a live broadcast before he asks to talk to a bewildered Invincible.
+ |LineColor       = FFF209
+}}

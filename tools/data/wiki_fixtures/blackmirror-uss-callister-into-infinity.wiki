@@ -1,0 +1,10 @@
+{{Episode list
+ |EpisodeNumber   = 33
+ |EpisodeNumber2  = 6
+ |Title           = [[USS Callister: Into Infinity|USS ''Callister''{{hsp}}: Into Infinity]]
+ |DirectedBy      = Toby Haynes
+ |WrittenBy       = Charlie Brooker, Bisha K. Ali, <br>William Bridges & [[Bekka Bowling]]
+ |OriginalAirDate = {{Start date|2025|4|10|df=y}}
+ |ShortSummary    = The USS ''Callister'' crew, digital clones within the game ''Infinity'', become space pirates to survive on stolen in-game credits while planning to hack the servers to create their own space. To do so, they require Walt, a respawned clone of CEO James Walton. In the real world, a reporter's questions about rogue players and Robert Daly's illegal cloning alert programmer Nanette, who enters the game with James to identify the clones. They and Nan (Nanette's clone) locate Walt. James kills a clone to avoid legal exposure and is removed from the game. Walt leads the crew to the Heart of Infinity, where they discover a digital clone of Robert and his cloning technology. Robert offers Nan a choice: merge her consciousness with the comatose real-world Nanette, erasing the crew in the process, or transfer the crew and another clone of Nan to a private server while keeping her behind to accompany him. Nan agrees to the private server but refuses to remain with Robert, angering him. James returns disguised as Walt and lures hostile players to attack the ''Callister''. Nan kills Robert, triggering the game's self-destruct, and activates "copy and paste" to merge the crew with Nanette's consciousness. Infinity is wiped, James is arrested, and Nan and the crew are thrust into the real world. {{Episode cast}} [[Cristin Milioti]], [[Jesse Plemons]], [[Jimmi Simpson]], [[Billy Magnussen]], [[Milanka Brooks]], [[Osy Ikhile]], Paul G. Raymond
+ |LineColor       = 96071D
+}}
