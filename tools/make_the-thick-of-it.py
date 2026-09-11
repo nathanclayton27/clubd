@@ -27,10 +27,17 @@ WHAT IS OUT, AND WHY.
   * "In the Loop" (2009), a spin-off film with its own article, different roles
     for most of the cast, and no episode number.
 
-EPISODE TITLES, OR THE LACK OF THEM. Nineteen of the 23 went out untitled. The
-source labels them "Series N – Episode M" and those labels are printed exactly
-as it gives them; inventing titles is the one thing this generator must not do.
-The two specials have real titles and carry them.
+EPISODE TITLES, OR THE LACK OF THEM. Twenty-one of the 23 went out untitled —
+every row but the two specials. The source labels them "Series N – Episode M"
+and those labels are printed exactly as it gives them; inventing titles is the
+one thing this generator must not do. main() counts the untitled rows rather
+than trusting this paragraph, and the note prints that count.
+
+DATES IN THE SECTION INTROS COME OUT OF THE SOURCE, NOT OUT OF MEMORY. Series
+1's intro spans two broadcast runs that each cross a month boundary, and series
+4's follows a gap; both are formatted from the {{Series overview}}'s own start
+and end dates, which are asserted to agree with the rows. An interval stated as
+prose is how a list ends up contradicting its own dates on the same page.
 
 WEIGHTS. None. The series article documents running time once, as "29 minutes",
 and not one {{Episode list}} block carries a RunTime or Length field — main()
@@ -79,18 +86,12 @@ ID_PREFIX = {"s1": "toi-s1e", "s2": "toi-s2e", "specials": "toi-sp",
 ACCENT = "#3C5A99"
 ACCENT_DARK = "#9FB6E8"
 
-INTRO = {
-    "s1": "Three episodes on BBC Four in May 2005, with a further three that "
-          "October; the DVD calls all six the first series and the source "
-          "keeps them as two.",
-    "specials": "Two hour-long specials in 2007, made around a change of "
-                "prime minister. The source numbers them 7 and 8 of the run "
-                "and they sit here where they aired, between series 2 and 3.",
-    "s3": "The move to BBC Two, eight episodes in 2009, and the series that "
-          "put the word omnishambles into circulation.",
-    "s4": "Seven episodes in 2012, made after four years off. The source says "
-          "one of them ran an hour without saying which.",
-}
+UNTITLED = re.compile(r"^Series \d+ – Episode \d+$")
+
+# Only "s3" is fixed prose; the other three are built in main() from dates the
+# source publishes, because that is the half that goes wrong.
+INTRO_S3 = ("The move to BBC Two, eight episodes in 2009, and the series that "
+            "put the word omnishambles into circulation.")
 
 
 def text(page):
@@ -156,6 +157,40 @@ def end_date(v):
     return _date("End date", v)
 
 
+def overview_dates(list_text):
+    """{overview key: ((y,m,d) start, (y,m,d) end)} from {{Series overview}}.
+
+    The section intros quote these rather than an interval worked out from
+    memory: series 4's used to say "four years off" while the sections dated
+    series 3's last episode to December 2009, which is the worst version of
+    this defect because both halves are on the same page."""
+    seg = template(list_text, "Series overview")
+    out = {}
+    for key in (k for _, k, _, _ in BLOCKS):
+        s = re.search(r"\|\s*start%s\s*=\s*(\{\{Start date[^}]*\}\})"
+                      % re.escape(key), seg)
+        e = re.search(r"\|\s*end%s\s*=\s*(\{\{End date[^}]*\}\})"
+                      % re.escape(key), seg)
+        assert s and e, "the series overview no longer dates block %r" % key
+        out[key] = (_date("Start date", s.group(1)),
+                    _date("End date", e.group(1)))
+    return out
+
+
+MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December"]
+
+
+def fmt_day(d, with_year=True):
+    """(2009, 12, 12) -> "12 December 2009" — British order, as the source."""
+    y, m, day = d
+    return "%d %s%s" % (day, MONTHS[m - 1], " %d" % y if with_year else "")
+
+
+def fmt_span(a, b, with_year=True):
+    return "%s to %s" % (fmt_day(a, False), fmt_day(b, with_year))
+
+
 def year_span(years):
     a, b = min(years), max(years)
     if a == b:
@@ -218,7 +253,16 @@ def main():
 
     list_text = text(LIST_PAGE)
     overview = series_overview(list_text)
+    spans = overview_dates(list_text)
     blocks = read_blocks(list_text)
+
+    # 0. the overview's own start/end per block must be the first and last
+    #    airdate parsed for that block, because the section intros quote them
+    for _head, key, sid, _title in BLOCKS:
+        rows = blocks[sid]
+        assert spans[key] == (rows[0][3], rows[-1][3]), \
+            "%s: overview spans %s, rows run %s to %s" \
+            % (sid, spans[key], rows[0][3], rows[-1][3])
 
     # 1. every section's count against the article's own overview table
     for _head, key, sid, _title in BLOCKS:
@@ -252,7 +296,7 @@ def main():
     assert re.fullmatch(r"\d+ minutes", ib("runtime").strip()), \
         "series runtime is no longer a single series-level figure: %r" \
         % ib("runtime")
-    # the three claims the section intros make that are not arithmetic,
+    # the claims the section intros and notes make that are not arithmetic,
     # checked against the sentences they came from rather than trusted
     assert "one of which was an hour long" in list_text, \
         "the list article no longer says a series 4 episode ran an hour"
@@ -260,6 +304,38 @@ def main():
         "the list article no longer says the DVD calls all six the first series"
     assert "omnishambles" in list_text, \
         "the list article no longer records the omnishambles episode"
+    assert "starring many members of the same cast, albeit in different roles" \
+        in list_text, \
+        "the list article no longer says In the Loop recast many of them"
+    assert ("The cast was significantly expanded for two hour-long specials to "
+            "coincide with Christmas and") in text(SERIES_PAGE), \
+        "the series article no longer says why the 2007 specials were made"
+
+    # the intros that quote dates build them here, from the spans asserted
+    # against the rows above — never from an interval carried in prose
+    intros = {
+        "s1": "Three episodes on BBC Four, %s, then three more from %s; the "
+              "DVD calls all six the first series and the source keeps them "
+              "as two."
+              % (fmt_span(*spans["1"]), fmt_span(*spans["2"], with_year=False)),
+        "specials": "The source numbers these 7 and 8 of the run, so they sit "
+                    "here, between series 2 and 3, where they aired. It says "
+                    "the cast was expanded for them, to coincide with "
+                    "Christmas and a change of prime minister.",
+        "s3": INTRO_S3,
+        "s4": "Seven episodes in 2012, the first since series 3 ended on %s. "
+              "The source says one of them ran an hour without saying which."
+              % fmt_day(spans["3"][1]),
+    }
+    assert "12 December 2009" in intros["s4"], \
+        "series 4's intro no longer carries the date series 3 ended"
+
+    untitled = sum(1 for _h, _k, sid, _t in BLOCKS for r in blocks[sid]
+                   if UNTITLED.match(r[2]))
+    assert untitled == TOTAL - 2, \
+        "%d of %d rows are untitled — the note's count is written from this, " \
+        "and the two specials are meant to be the only titled rows" \
+        % (untitled, TOTAL)
 
     sections = []
     for _head, _key, sid, title in BLOCKS:
@@ -273,8 +349,8 @@ def main():
             "items": [{"id": ID_PREFIX[sid] + str(r[1]), "t": r[2],
                        "n": str(r[1])} for r in rows],
         })
-        if sid in INTRO:
-            sections[-1]["intro"] = INTRO[sid]
+        if sid in intros:
+            sections[-1]["intro"] = intros[sid]
     sections[0]["open"] = True
 
     total = sum(len(s["items"]) for s in sections)
@@ -310,13 +386,13 @@ def main():
              "Losers, carries no episode number in the source's table, and the "
              "eight Out of The Thick of It webisodes are a separate table "
              "under Other media. In the Loop is a film with its own article "
-             "and most of the cast in different roles. None of the three is in "
-             "the 23."],
-            ["Most of these episodes have no title.", "They went out "
+             "and many of the same cast in different roles. None of the three "
+             "is in the 23."],
+            ["Most of these episodes have no title.", "%d of the 23 went out "
              "untitled. The source labels them Series N – Episode M and those "
              "labels are printed exactly as it gives them, because the "
              "alternative is making titles up. The two specials have real "
-             "titles and keep them."],
+             "titles and keep them." % untitled],
             ["Nothing is weighted.", "The source gives one running time for "
              "the series — 29 minutes — and no episode carries its own. Two "
              "rows are hour-long specials and the list article says a series 4 "

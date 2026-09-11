@@ -5,7 +5,7 @@
   "kind": "tv",
   "popularity": 63,
   "year": "1983–2023",
-  "blurb": "Every Blackadder the source counts — 24 episodes across four eras, plus the four specials, in the order they were shown.",
+  "blurb": "Every Blackadder the source counts — 24 episodes across four eras, plus the four specials, each where the source's own airdate puts it. Series 1 is the one place that is not the order it went out.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -22,7 +22,7 @@
   "notes": [
     [
       "Four series, four specials.",
-      "Wikipedia's infobox counts \"24 (plus 4 specials)\" and this list is both halves of that: the four six-episode series, the two 1988 one-offs, Back & Forth, and the pilot. Nothing here is a documentary, a charity sketch or an after-dinner turn — the source keeps those in two separate tables and so does this."
+      "Wikipedia's infobox counts \"24 (plus 4 specials)\" and this list is both halves of that: the four six-episode series, the two 1988 one-offs, Back & Forth, and the pilot. Nothing here is a documentary, a charity sketch or a guest turn on someone else's programme — the source keeps those in two separate tables and so does this."
     ],
     [
       "The specials sit where they aired.",
@@ -30,11 +30,11 @@
     ],
     [
       "The pilot is last, on purpose.",
-      "It was taped in 1982, shelved, and first screened in June 2023 — forty years after the series began. This list is in broadcast order, so that is where it goes. Its story was reused for Born to Be King, so it is a curiosity rather than a missing first episode."
+      "It was shot in 1982, shelved, and first broadcast in June 2023 — forty years after the series began. The rows run on the airdates the source gives them, so that is where it goes. Its story was reused for Born to Be King, so it is a curiosity rather than a missing first episode."
     ],
     [
-      "Series 1's own order is disputed by the source.",
-      "The episode table dates Born to Be King as the second episode, 22 June 1983; a note on the same page says transmission actually swapped the second and fourth episodes because it was not ready. The rows follow the table's dates, because those are the field the encyclopedia records per episode, and the disagreement is flagged here rather than quietly picked."
+      "Series 1 is not in the order it was shown.",
+      "The episode table dates Born to Be King as the second episode, 22 June 1983, and a note on the same page says transmission swapped the second and fourth because Born to Be King was not ready — while calling the table's sequence the true order. The rows follow the table, because its dates are the field the encyclopedia records per episode; swapping them would mean assigning airdates the source does not publish that way. Everywhere else on this list the two agree."
     ],
     [
       "Nothing is weighted.",
@@ -79,7 +79,7 @@
           "n": "6"
         }
       ],
-      "intro": "Six episodes on BBC1 in 1983, written by Rowan Atkinson and Richard Curtis and shot on location with horses, extras and medieval costumes. The source records it costing a million pounds and the BBC not repeating the arrangement.",
+      "intro": "Six episodes on BBC1 in 1983, written by Rowan Atkinson and Richard Curtis and shot on location with horses, extras and medieval costumes. Atkinson's figure in the source: a million pounds for the six programmes.",
       "open": true
     },
     {
@@ -176,7 +176,7 @@
           "note": "23 December 1988 · 42 minutes"
         }
       ],
-      "intro": "Two one-offs made between series 3 and series 4, and they sit here because that is when they aired."
+      "intro": "Red Nose Day in the February, then the December — both in the gap between series 3 and series 4, which is where the source's own series overview files them too."
     },
     {
       "id": "s4",
@@ -228,7 +228,7 @@
           "note": "31 December 1999 · 37 minutes"
         }
       ],
-      "intro": "The millennium special, ten years on: shown at the Millennium Dome on New Year's Eve 1999, then Sky One in 2000 and BBC1 in 2002. The source's episode table dates it by the Dome screening, and so does this row."
+      "intro": "The millennium special, ten years on: the Millennium Dome first, dated 31 December 1999 in the source's table, then Sky One in 2000 and BBC1 in 2002. This row takes the Dome date, as the table does."
     },
     {
       "id": "pilot",
@@ -242,7 +242,7 @@
           "note": "Taped 1982, first screened 15 June 2023 · 32 minutes · its story was reused for Born to Be King"
         }
       ],
-      "intro": "Taped in 1982 and never broadcast. Gold screened it on 15 June 2023, forty years to the day after series 1 began, which is why it is last on a list in broadcast order rather than first."
+      "intro": "Shot in 1982 and shelved. Gold first broadcast it on 15 June 2023, forty years to the day after series 1 began, and that date is why it is last here rather than first."
     }
   ]
 }

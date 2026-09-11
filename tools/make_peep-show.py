@@ -13,10 +13,20 @@ that article's own {{Episode list}} blocks. Nothing is re-ordered, nothing is
 merged, and nothing is invented — every title, number and airdate on a row came
 out of that table.
 
-WHAT IS OUT. Nothing, which is the pleasant part of a finite show: the article
-carries no specials, no webisodes, no film and no unnumbered entries, and
-main() asserts that by requiring exactly 54 blocks across exactly nine series
-headings and refusing any block without a number.
+WHAT IS OUT. Almost nothing, which is the pleasant part of a finite show: the
+list article carries no specials, no webisodes, no film and no unnumbered
+entries, and main() asserts that by requiring exactly 54 blocks across exactly
+nine series headings and refusing any block without a number. The one thing that
+does exist outside the 54 is the pair of pilots the series article records as
+filmed before the show; neither is in that table, so neither is a row, and the
+notes say so rather than claiming nothing unaired exists.
+
+THE POV STYLE IS NOT UNIFORM, AND THE INTRO MUST NOT SAY IT IS. The series
+article says events are seen "almost exclusively" from the two characters' own
+points of view, and separately that the head-mounted camera technique "was used
+less and less in later series". An earlier version of series 1's intro called it
+"the device the show never drops", which the second of those sentences flatly
+contradicts. Both are asserted below and both are in the intro.
 
 WEIGHTS. None. Wikipedia documents running time once, for the series, as a
 range — "23–27 minutes" in the television infobox — and not one {{Episode
@@ -60,11 +70,12 @@ ACCENT_DARK = "#7FD79B"
 # A sentence only where the source supports one and a reader gains something.
 # Everything else is a series of the show and says so by existing.
 INTRO = {
-    1: "Six episodes from 2003, filmed almost entirely from the characters' "
-       "own eyes with their thoughts on the soundtrack — the device the show "
-       "never drops.",
+    1: "Six episodes from 2003, seen almost exclusively from the two "
+       "characters' own points of view with a voice-over for their thoughts. "
+       "The source notes the head-mounted cameras were used less and less in "
+       "the later series.",
     9: "The final series, as the source calls it. The last episode went out "
-       "in December 2015 and nothing has followed it.",
+       "in December 2015 and no episode has followed it.",
 }
 
 
@@ -208,10 +219,18 @@ def main():
     series_text = text(SERIES_PAGE)
     ib = wiki.infobox(series_text, kind="television")
     assert ib, "no television infobox on the series article"
-    # the one claim in the notes that is not arithmetic, checked against the
-    # sentence it came from rather than trusted
-    assert "longest-running comedy in Channel 4 history" in series_text, \
-        "the series article no longer makes the Channel 4 longevity claim"
+    # every claim in the intros and notes that is not arithmetic, checked
+    # against the sentence it came from rather than trusted
+    for phrase in (
+            "longest-running comedy in Channel 4 history in terms of years on "
+            "air",
+            "seen almost exclusively from their own points of view with a "
+            "voice-over providing their internal thoughts",
+            # the sentence that killed "the device the show never drops"
+            "the technique was used less and less in later series",
+            "Two pilots were filmed for the show"):
+        assert phrase in series_text, \
+            "the series article no longer says %r" % phrase
     assert "final series" in series_text, \
         "the series article no longer calls series 9 the final series"
     assert ib("num_episodes").strip() == str(TOTAL), \
@@ -258,8 +277,8 @@ def main():
         "popularity": 58,
         "year": "2003–15",
         "blurb": "All 54 episodes in broadcast order — nine series of Mark "
-                 "and Jeremy, filmed from behind their eyes, finished and not "
-                 "coming back.",
+                 "and Jeremy, filmed largely from behind their own eyes, and "
+                 "the source calls the ninth the final one.",
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -268,19 +287,21 @@ def main():
         "tiers": False,
         "notes": [
             ["Nine series, and that is the whole show.", "Channel 4 ran it "
-             "from September 2003 to December 2015 and it ended on its own "
-             "terms. Six episodes a series, no specials, no film, nothing "
-             "unaired — the source article carries 54 numbered episodes and "
-             "nothing else, and this list is those 54."],
+             "from September 2003 to December 2015, and the source calls the "
+             "ninth series the final one. Six episodes a series, no specials, "
+             "no film — the source article carries 54 numbered episodes and "
+             "nothing else, and this list is those 54. Two pilots were filmed "
+             "before any of it; neither is in that table, so neither is a row "
+             "here."],
             ["Nothing is weighted.", "Wikipedia documents one running time for "
              "the series — 23 to 27 minutes — and no episode carries its own, "
              "so there is no verifiable per-row figure and every episode "
              "counts one. A part-weighted list is worse than an unweighted "
              "one: a row with no weight would silently count as a full hour."],
             ["Channel 4's longest-running comedy, by years on air.", "The "
-             "source records it taking that title in 2010 — nine series spread "
-             "across twelve years, with long gaps between them rather than a "
-             "heavy episode count."],
+             "source's wording, and its qualifier: in terms of years on air, a "
+             "title it records the show taking in 2010. Nine series across "
+             "twelve years, not a heavy episode count."],
             ["No episode notes.", "The titles are the source's titles and "
              "nothing here describes what happens in an episode. This is a "
              "show of running jokes and slow disasters and a one-line summary "

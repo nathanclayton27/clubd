@@ -2560,7 +2560,7 @@
     "kind": "tv",
     "year": "1975–79",
     "popularity": 64,
-    "blurb": "All twelve episodes in broadcast order — two series four years apart, and Cleese and Booth stopped there.",
+    "blurb": "All twelve episodes in broadcast order — two series three and a half years apart, and Cleese and Booth stopped there.",
     "accent": "#8C6239",
     "accentDark": "#DEAF77",
     "unit": {
@@ -2663,7 +2663,7 @@
     "kind": "tv",
     "year": "1983–2023",
     "popularity": 63,
-    "blurb": "Every Blackadder the source counts — 24 episodes across four eras, plus the four specials, in the order they were shown.",
+    "blurb": "Every Blackadder the source counts — 24 episodes across four eras, plus the four specials, each where the source's own airdate puts it. Series 1 is the one place that is not the order it went out.",
     "accent": "#4A2545",
     "accentDark": "#D8B04A",
     "unit": {
@@ -3398,7 +3398,7 @@
     "kind": "tv",
     "year": "2003–15",
     "popularity": 58,
-    "blurb": "All 54 episodes in broadcast order — nine series of Mark and Jeremy, filmed from behind their eyes, finished and not coming back.",
+    "blurb": "All 54 episodes in broadcast order — nine series of Mark and Jeremy, filmed largely from behind their own eyes, and the source calls the ninth the final one.",
     "accent": "#0C662D",
     "accentDark": "#7FD79B",
     "unit": {

@@ -5,7 +5,7 @@
   "kind": "tv",
   "popularity": 64,
   "year": "1975–79",
-  "blurb": "All twelve episodes in broadcast order — two series four years apart, and Cleese and Booth stopped there.",
+  "blurb": "All twelve episodes in broadcast order — two series three and a half years apart, and Cleese and Booth stopped there.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -22,7 +22,7 @@
   "notes": [
     [
       "Twelve, and there is no thirteenth.",
-      "Two series of six, four years apart, and that is the whole show. The source records a long-rumoured thirteenth episode with no concrete evidence behind it, and a feature-length special Cleese considered in the 1990s and never wrote. Neither is a row here."
+      "Two series of six, the second transmitted three and a half years after the first, and that is the whole show. The source records a long-rumoured thirteenth episode with no concrete evidence behind it, and a feature-length special Cleese considered in the 1990s and never wrote. Neither is a row here."
     ],
     [
       "The sign gag is on every row that has one.",
@@ -91,7 +91,7 @@
       "id": "s2",
       "title": "Series 2",
       "sub": "1979 · 6 episodes",
-      "intro": "Four years later, and the last of it. Cleese and Booth stopped at twelve; the source notes other writers have cited that decision since.",
+      "intro": "Transmitted three and a half years later, the source says, and that is the last of it. Cleese and Booth stopped at twelve; the source notes other writers have cited that decision since.",
       "items": [
         {
           "id": "ft-7",

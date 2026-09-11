@@ -3,9 +3,17 @@
 
     python3 tools/make_fawlty-towers.py
 
-Two series on BBC Two, four years apart: six episodes in the autumn of 1975 and
-six in 1979. Twelve rows, which is the entire show — the series infobox gives
-num_episodes = 12 with a closed end date, and main() asserts both.
+Two series on BBC Two, three and a half years apart: six episodes in the autumn
+of 1975 and six in 1979. Twelve rows, which is the entire show — the series
+infobox gives num_episodes = 12 with a closed end date, and main() asserts both.
+
+THE GAP IS THREE AND A HALF YEARS, AND ONLY THAT NUMBER GOES IN THE COPY. The
+article gives two intervals for two different things: "The second series was
+transmitted three-and-a-half years later", and, in a parenthesis about Connie
+Booth's reluctance, "the four-year gap between productions". These rows are
+airdates, so the transmission figure is the one that matches what a reader is
+looking at, and the blurb, the note and the series 2 intro all use it. Carrying
+"four years" beside twelve broadcast dates was the earlier version of this file.
 
 THE SOURCE IS THE SERIES ARTICLE. Fawlty Towers has no "List of ... episodes"
 page; its twelve {{Episode list}} blocks sit in the "Episodes" section of the
@@ -66,8 +74,9 @@ INTRO = {
     1: "Six episodes in the autumn of 1975, written by John Cleese and Connie "
        "Booth after the Pythons stayed at a Torquay hotel whose owner the "
        "source credits as the original Basil.",
-    2: "Four years later, and the last of it. Cleese and Booth stopped at "
-       "twelve; the source notes other writers have cited that decision since.",
+    2: "Transmitted three and a half years later, the source says, and that is "
+       "the last of it. Cleese and Booth stopped at twelve; the source notes "
+       "other writers have cited that decision since.",
 }
 
 
@@ -235,7 +244,13 @@ def main():
                    "no concrete evidence",
                    "the individual episodes had no on-screen titles",
                    "to quit before a third series",
-                   "Gleneagles Hotel"):
+                   "Gleneagles Hotel",
+                   # the gap, in the source's own words. The article also says
+                   # "four-year gap between productions" a few paragraphs on;
+                   # these rows are airdates, so this is the sentence the copy
+                   # uses, and it uses one number and not both
+                   "The second series was transmitted three-and-a-half years "
+                   "later"):
         assert phrase in t, "the article no longer says %r" % phrase
 
     sections = []
@@ -271,8 +286,8 @@ def main():
         "kind": "tv",
         "popularity": 64,
         "year": "1975–79",
-        "blurb": "All twelve episodes in broadcast order — two series four "
-                 "years apart, and Cleese and Booth stopped there.",
+        "blurb": "All twelve episodes in broadcast order — two series three "
+                 "and a half years apart, and Cleese and Booth stopped there.",
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -280,8 +295,9 @@ def main():
         "accentDark": ACCENT_DARK,
         "tiers": False,
         "notes": [
-            ["Twelve, and there is no thirteenth.", "Two series of six, four "
-             "years apart, and that is the whole show. The source records a "
+            ["Twelve, and there is no thirteenth.", "Two series of six, the "
+             "second transmitted three and a half years after the first, and "
+             "that is the whole show. The source records a "
              "long-rumoured thirteenth episode with no concrete evidence "
              "behind it, and a feature-length special Cleese considered in the "
              "1990s and never wrote. Neither is a row here."],
@@ -313,6 +329,17 @@ def main():
         ],
         "sections": sections,
     }
+
+    # one number for the gap, and it is the transmission one. The article's
+    # other figure — "the four-year gap between productions" — is about when
+    # they were made, not when they went out, and this list is airdates.
+    copy = json.dumps(p, ensure_ascii=False)
+    assert "four years" not in copy and "four-year" not in copy, \
+        "the copy has gone back to the four-year production gap; the rows are " \
+        "airdates and the source's transmission figure is three and a half years"
+    assert copy.count("three and a half years") == 3, \
+        "expected the transmission gap in the blurb, note 1 and series 2's " \
+        "intro, found %d mentions" % copy.count("three and a half years")
 
     out = prop.write(p)
     print("wrote %s — %d episodes in %d series" % (out.name, total, len(sections)))

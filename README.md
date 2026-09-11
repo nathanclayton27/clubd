@@ -64,8 +64,9 @@ list, because they share a nationality and nothing else — no cast, no
 continuity, no order. *Peep Show* (54 episodes, nine series, finished),
 *The Thick of It* (23, the two hour-long 2007 specials included because the
 source counts them and sitting where they aired), *Blackadder* (24 episodes
-and the four specials, with the 1982 pilot last — broadcast order puts its
-first screening in 2023) and *Fawlty Towers* (twelve, and the rearranged
+and the four specials, ordered by the airdate the source gives each one, so
+the 1982 pilot is last on its 2023 first broadcast) and *Fawlty Towers*
+(twelve, three and a half years between the two series, and the rearranged
 hotel sign on every row that has one). None of them is weighted: not one of
 the four publishes a runtime per episode.
 

@@ -5,7 +5,7 @@
   "kind": "tv",
   "popularity": 58,
   "year": "2003–15",
-  "blurb": "All 54 episodes in broadcast order — nine series of Mark and Jeremy, filmed from behind their eyes, finished and not coming back.",
+  "blurb": "All 54 episodes in broadcast order — nine series of Mark and Jeremy, filmed largely from behind their own eyes, and the source calls the ninth the final one.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -22,7 +22,7 @@
   "notes": [
     [
       "Nine series, and that is the whole show.",
-      "Channel 4 ran it from September 2003 to December 2015 and it ended on its own terms. Six episodes a series, no specials, no film, nothing unaired — the source article carries 54 numbered episodes and nothing else, and this list is those 54."
+      "Channel 4 ran it from September 2003 to December 2015, and the source calls the ninth series the final one. Six episodes a series, no specials, no film — the source article carries 54 numbered episodes and nothing else, and this list is those 54. Two pilots were filmed before any of it; neither is in that table, so neither is a row here."
     ],
     [
       "Nothing is weighted.",
@@ -30,7 +30,7 @@
     ],
     [
       "Channel 4's longest-running comedy, by years on air.",
-      "The source records it taking that title in 2010 — nine series spread across twelve years, with long gaps between them rather than a heavy episode count."
+      "The source's wording, and its qualifier: in terms of years on air, a title it records the show taking in 2010. Nine series across twelve years, not a heavy episode count."
     ],
     [
       "No episode notes.",
@@ -75,7 +75,7 @@
           "n": "6"
         }
       ],
-      "intro": "Six episodes from 2003, filmed almost entirely from the characters' own eyes with their thoughts on the soundtrack — the device the show never drops.",
+      "intro": "Six episodes from 2003, seen almost exclusively from the two characters' own points of view with a voice-over for their thoughts. The source notes the head-mounted cameras were used less and less in the later series.",
       "open": true
     },
     {
@@ -373,7 +373,7 @@
           "n": "6"
         }
       ],
-      "intro": "The final series, as the source calls it. The last episode went out in December 2015 and nothing has followed it."
+      "intro": "The final series, as the source calls it. The last episode went out in December 2015 and no episode has followed it."
     }
   ]
 }

@@ -8,29 +8,44 @@ infobox counts alongside them: "24 (plus 4 specials)". Those four are The
 Cavalier Years (1988), Blackadder's Christmas Carol (1988), Back & Forth (1999)
 and the 1982 pilot, which sat unseen for forty-one years. 28 rows.
 
-ORDER IS BROADCAST ORDER, END TO END, AND THAT DECIDES WHERE THE ODD ONES SIT.
-The two 1988 specials went out between series 3 (autumn 1987) and series 4
-(autumn 1989), so they sit between them, in their own section, exactly as the
-source's {{Series overview}} files them. Back & Forth follows series 4, ten
-years later. The pilot goes LAST, not first: it was taped in 1982, shelved, and
-first screened on Gold on 15 June 2023 — forty years to the day after series 1
-began. main() asserts every section's first airdate is later than the one
-before, so the ordering is checked rather than claimed.
+THE ORDER IS THE SOURCE'S OWN AIRDATES, AND THAT DECIDES WHERE THE ODD ONES SIT.
+Every row sits where the date the source records for it puts it. The two 1988
+specials went out between series 3 (autumn 1987) and series 4 (autumn 1989), so
+they sit between them, in their own section, exactly as the source's {{Series
+overview}} files them. Back & Forth follows series 4, ten years later. The pilot
+goes LAST, not first: it was shot in 1982, shelved, and not broadcast until Gold
+screened it on 15 June 2023 — forty years to the day after series 1 began.
+main() asserts every section's first airdate is later than the one before, so
+the ordering is checked rather than claimed.
+
+THAT IS NOT THE SAME AS "BROADCAST ORDER", AND THE COPY MUST NOT SAY IT IS.
+Series 1 is the exception, below: the source's table dates it one way and a note
+on the same page says transmission went another. The blurb and the notes
+therefore describe the rows as the source's dates put them, and name series 1 as
+the one place that is not the order it went out. Claiming broadcast order twice
+in the top-line copy while note 4 conceded the opposite is the defect this
+paragraph exists to stop coming back.
 
 WHAT IS OUT, AND WHY. The source's episode page carries two further tables and
-neither is the show: "Additional appearances" (eleven charity sketches, cameos
-and after-dinner turns, one of them a radio slot, several with no airdate beyond
-a year) and "Retrospectives and documentaries" (four programmes about
-Blackadder). Neither table is counted by the infobox's 24-plus-4, and main()
-asserts both headings still exist so this exclusion stays a decision about a
-known part of the source rather than an accident of parsing.
+neither is the show: "Additional appearances" (ten charity sketches and guest
+turns on other people's programmes — a Radio 4 slot, Children in Need, Blue
+Peter, two royal galas among them, two of the ten with no airdate beyond a year)
+and "Retrospectives and documentaries" (four programmes about Blackadder).
+Neither table is counted by the infobox's 24-plus-4, and main() asserts both
+headings still exist and both row counts still hold, so this exclusion stays a
+decision about a known part of the source rather than an accident of parsing.
+The counts are asserted because they are quoted: nothing on this page may say
+"eleven" of a table with ten rows in it, which is what this paragraph did.
 
 SERIES 1's BROADCAST ORDER IS DISPUTED BY THE SOURCE ITSELF. The episode
 table's airdates run straight down — "Born to Be King" on 22 June 1983 as the
 second episode — while a note on the same page says transmission switched the
-second and fourth episodes because that episode was not ready. The rows follow
-the table's own dates, because those are the machine-readable field and the note
-is prose; the disagreement is stated in the notes rather than resolved silently.
+second and fourth episodes because "Born to Be King" was not ready, and calls
+the table's sequence the "true order". The rows follow the table's own dates,
+because those are the machine-readable field and the note is prose. Reordering
+them the other way would mean reassigning airdates the source does not publish
+that way, which is inventing data to satisfy a sentence; so the rows stay, the
+sentence changes, and the disagreement is stated in the notes.
 
 WEIGHTS. None. Each series article documents one running time for its series
 (33 minutes for the first, 30 for the rest), no {{Episode list}} block anywhere
@@ -82,24 +97,24 @@ ACCENT_DARK = "#D8B04A"
 INTRO = {
     "s1": "Six episodes on BBC1 in 1983, written by Rowan Atkinson and Richard "
           "Curtis and shot on location with horses, extras and medieval "
-          "costumes. The source records it costing a million pounds and the "
-          "BBC not repeating the arrangement.",
+          "costumes. Atkinson's figure in the source: a million pounds for the "
+          "six programmes.",
     "s2": "The BBC asked for improvements and cut the budget. Ben Elton joined "
           "Richard Curtis as co-writer, the production moved into the studio, "
           "and the episode titles became single words.",
     "s3": "Regency London. The source notes the titles parody Jane Austen, one "
           "alliterative pair at a time.",
-    "specials": "Two one-offs made between series 3 and series 4, and they sit "
-                "here because that is when they aired.",
+    "specials": "Red Nose Day in the February, then the December — both in the "
+                "gap between series 3 and series 4, which is where the "
+                "source's own series overview files them too.",
     "s4": "The trenches, 1989, and the last of the series proper. The source "
           "notes the titles are puns on military ranks, the final one aside.",
-    "bf": "The millennium special, ten years on: shown at the Millennium Dome "
-          "on New Year's Eve 1999, then Sky One in 2000 and BBC1 in 2002. The "
-          "source's episode table dates it by the Dome screening, and so does "
-          "this row.",
-    "pilot": "Taped in 1982 and never broadcast. Gold screened it on 15 June "
-             "2023, forty years to the day after series 1 began, which is why "
-             "it is last on a list in broadcast order rather than first.",
+    "bf": "The millennium special, ten years on: the Millennium Dome first, "
+          "dated 31 December 1999 in the source's table, then Sky One in 2000 "
+          "and BBC1 in 2002. This row takes the Dome date, as the table does.",
+    "pilot": "Shot in 1982 and shelved. Gold first broadcast it on 15 June "
+             "2023, forty years to the day after series 1 began, and that date "
+             "is why it is last here rather than first.",
 }
 
 
@@ -243,13 +258,24 @@ def main():
     for page, _sid, _title in SERIES:
         assert re.search(r"\{\{:%s\}\}" % re.escape(page), list_text), \
             "the list article no longer transcludes %r" % page
-    # the two tables this list deliberately leaves out
-    for heading in ("Additional appearances", "Retrospectives and documentaries"):
+    # the two tables this list deliberately leaves out, and their sizes, which
+    # the docstring and note 1 both quote
+    for heading, rows in (("Additional appearances", 10),
+                          ("Retrospectives and documentaries", 4)):
         assert re.search(r"==\s*%s\s*==" % re.escape(heading), list_text), \
             "%r is no longer its own section — recheck what is excluded" % heading
-    # the prose that contradicts series 1's own airdates, quoted in the notes
+        seg = section_of(list_text, heading)
+        found = len(re.findall(r"\{\{Episode list", seg))
+        assert found == rows, \
+            "%r now holds %d rows, not %d — the excluded counts are quoted in " \
+            "this file and have to be reread" % (heading, found, rows)
+    # the prose that contradicts series 1's own airdates, quoted in the notes —
+    # both halves, because the note names the swap AND the source's own verdict
+    # that the table's sequence is the "true order"
     assert "not ready for transmission" in list_text, \
         "the list article no longer disputes series 1's broadcast order"
+    assert "identify the true order as" in list_text, \
+        "the list article no longer calls the table's sequence the true order"
     # the section intros' non-arithmetic claims, checked against the sentences
     # they came from rather than trusted
     for phrase in ("single word references", "alliteration", "puns on"):
@@ -298,7 +324,9 @@ def main():
     series_text = text(SERIES_PAGE)
     ib = wiki.infobox(series_text, kind="television")
     assert ib, "no television infobox on the series article"
-    for phrase in ("Millennium Dome", "It cost a million pounds"):
+    for phrase in ("Millennium Dome", "It cost a million pounds for the six "
+                   "programmes", "Red Nose Day", "was not broadcast on TV "
+                   "until 15 June 2023"):
         assert phrase in series_text, \
             "the series article no longer supports the intro claim %r" % phrase
     counts = [int(x) for x in re.findall(r"\d+", ib("num_episodes"))]
@@ -397,7 +425,9 @@ def main():
         "popularity": 63,
         "year": "1983–2023",
         "blurb": "Every Blackadder the source counts — 24 episodes across four "
-                 "eras, plus the four specials, in the order they were shown.",
+                 "eras, plus the four specials, each where the source's own "
+                 "airdate puts it. Series 1 is the one place that is not the "
+                 "order it went out.",
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -409,25 +439,27 @@ def main():
              "(plus 4 specials)\" and this list is both halves of that: the "
              "four six-episode series, the two 1988 one-offs, Back & Forth, "
              "and the pilot. Nothing here is a documentary, a charity sketch "
-             "or an after-dinner turn — the source keeps those in two separate "
-             "tables and so does this."],
+             "or a guest turn on someone else's programme — the source keeps "
+             "those in two separate tables and so does this."],
             ["The specials sit where they aired.", "The Cavalier Years went "
              "out in February 1988 and Blackadder's Christmas Carol that "
              "December, in the gap between series 3 and series 4. They are a "
              "section in that gap rather than an appendix at the end, which is "
              "also how the source's series overview files them."],
-            ["The pilot is last, on purpose.", "It was taped in 1982, shelved, "
-             "and first screened in June 2023 — forty years after the series "
-             "began. This list is in broadcast order, so that is where it "
-             "goes. Its story was reused for Born to Be King, so it is a "
-             "curiosity rather than a missing first episode."],
-            ["Series 1's own order is disputed by the source.", "The episode "
-             "table dates Born to Be King as the second episode, 22 June "
-             "1983; a note on the same page says transmission actually swapped "
-             "the second and fourth episodes because it was not ready. The "
-             "rows follow the table's dates, because those are the field the "
-             "encyclopedia records per episode, and the disagreement is "
-             "flagged here rather than quietly picked."],
+            ["The pilot is last, on purpose.", "It was shot in 1982, shelved, "
+             "and first broadcast in June 2023 — forty years after the series "
+             "began. The rows run on the airdates the source gives them, so "
+             "that is where it goes. Its story was reused for Born to Be "
+             "King, so it is a curiosity rather than a missing first episode."],
+            ["Series 1 is not in the order it was shown.", "The episode table "
+             "dates Born to Be King as the second episode, 22 June 1983, and a "
+             "note on the same page says transmission swapped the second and "
+             "fourth because Born to Be King was not ready — while calling the "
+             "table's sequence the true order. The rows follow the table, "
+             "because its dates are the field the encyclopedia records per "
+             "episode; swapping them would mean assigning airdates the source "
+             "does not publish that way. Everywhere else on this list the two "
+             "agree."],
             ["Nothing is weighted.", "Each series publishes one running time "
              "and no episode publishes its own, so there is no verifiable "
              "per-row figure and every row counts one. The four specials do "
