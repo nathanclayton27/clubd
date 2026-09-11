@@ -4099,6 +4099,28 @@
     "total": 33
   },
   {
+    "slug": "immersive",
+    "media": [
+      "games"
+    ],
+    "title": "Immersive Sims",
+    "subtitle": "a house canon of the genre nobody can define",
+    "kind": "games",
+    "year": "1992–2025",
+    "popularity": 45,
+    "blurb": "23 games in release order, Ultima Underworld to Skin Deep — about 343 hours of story between them, and a stated rule for what counts as one.",
+    "accent": "#71189E",
+    "accentDark": "#D98CFF",
+    "unit": {
+      "one": "game",
+      "many": "games"
+    },
+    "vpast": "played",
+    "total": 23,
+    "totalw": 342.71,
+    "random": true
+  },
+  {
     "slug": "satoshi-kon",
     "media": [
       "anime"

@@ -1,0 +1,75 @@
+{{Short description|2024 video game}}
+{{Infobox video game
+| title = A Quiet Place: The Road Ahead
+| image = A Quiet Place The Road Ahead (2024) cover art.jpg
+| developer = {{ill|Stormind Games|it}}
+| publisher = [[Saber Interactive]]
+| series = 
+| engine = 
+| platforms = {{Unbulleted list|[[Microsoft Windows]]|[[PlayStation 5]]|[[Xbox Series X/S]]}}
+| released = October 17, 2024
+| genre = [[Survival horror]]
+| modes = [[Single-player]]
+| director = 
+| producer = 
+| designer = 
+| programmer = 
+| artist = 
+| writer = 
+| composer = Gianni Ricciardi
+}}
+
+'''''A Quiet Place: The Road Ahead''''' is a 2024 [[survival horror game]] developed by {{ill|Stormind Games|it}} and published by [[Saber Interactive]] for [[Microsoft Windows]], [[PlayStation 5]], and [[Xbox Series X/S]].<ref>{{Cite web|url=https://stormindgames.com/company/|title=Company|website=Stormind Games|access-date=July 4, 2024}}</ref> The game is based on the [[A Quiet Place (film series)|''A Quiet Place'' film series]] and features an original story. It was released on October 17, 2024 to mediocre reviews from critics and fans alike.
+
+== Gameplay ==
+''A Quiet Place: The Road Ahead'' is a [[Single-player video game|single-player]] game with gameplay that focuses on [[Stealth game|stealth]] and [[survival horror]].<ref>{{Cite web|url=https://www.destructoid.com/a-quiet-place-the-road-ahead-is-a-narrative-driven-first-person-survival-horror-title-launching-later-this-year/|title=A Quiet Place: The Road Ahead is a narrative-driven first-person survival horror title launching later this year|website=[[Destructoid]]|first=Jamie|last=Moorcroft-Sharp|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 18, 2024|archive-url=https://web.archive.org/web/20240618132535/https://www.destructoid.com/a-quiet-place-the-road-ahead-is-a-narrative-driven-first-person-survival-horror-title-launching-later-this-year/|url-status=live}}</ref><ref>{{Cite web|url=https://www.fangoria.com/a-quiet-place-road-ahead-game-trailer/|title=The A QUIET PLACE Video Game Gets A Creepy Teaser Trailer|website=[[Fangoria]]|first=Ryan|last=Scott|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 17, 2024|archive-url=https://web.archive.org/web/20240617180624/https://www.fangoria.com/a-quiet-place-road-ahead-game-trailer/|url-status=live}}</ref> The player controls a character from a [[First person (video games)|first-person]] perspective and must navigate a post-apocalyptic world inhabited by blind hostile extraterrestrial creatures with enhanced hypersensitive hearing (known unofficially as "[[Death Angels (A Quiet Place)|Death Angels]]").<ref>{{Cite magazine|url=https://videogames.si.com/news/a-quiet-place-the-road-ahead-revealed|title=A Quiet Place: The Road Ahead is coming to PC, PS5, and Xbox Series XS in 2024|magazine=[[Sports Illustrated]]|first=Marco|last=Wutz|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 18, 2024|archive-url=https://web.archive.org/web/20240618130806/https://videogames.si.com/news/a-quiet-place-the-road-ahead-revealed|url-status=live}}</ref><ref>{{Cite web|url=https://www.comingsoon.net/games/news/1768800-a-quiet-place-the-road-ahead-trailer-game|title=A Quiet Place: The Road Ahead Trailer Revealed for Video Game Adaptation of Hit Horror Movie Series|website=ComingSoon|first=Neil|last=Bolt|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 18, 2024|archive-url=https://web.archive.org/web/20240618015349/https://www.comingsoon.net/games/news/1768800-a-quiet-place-the-road-ahead-trailer-game|url-status=live}}</ref> The game has a variety of features, including microphone options that allow in-game monsters to detect the player's presence if they make a sound in real life<ref>{{Cite web |last=Davis |first=Wes |date=2024-10-09 |title=Players will need a quiet place if they want to survive the A Quiet Place game |url=https://www.theverge.com/2024/10/9/24265465/a-quiet-place-the-road-ahead-microphone-support-price-release-date |access-date=2024-10-11 |website=The Verge |language=en}}</ref> and [[Sound level meter|informs the player of sound levels.]]<ref>{{Cite magazine|url=https://www.gameinformer.com/2024/06/17/the-a-quiet-place-game-breaks-its-silence-with-first-reveal-trailer|title=The A Quiet Place Game Breaks Its Silence With First Reveal Trailer|magazine=[[Game Informer]]|first=Marcus|last=Stewart|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 18, 2024|archive-url=https://web.archive.org/web/20240618162851/https://www.gameinformer.com/2024/06/17/the-a-quiet-place-game-breaks-its-silence-with-first-reveal-trailer|url-status=live}}</ref><ref>{{Cite web|url=https://gamerant.com/a-quiet-place-video-game-releasing-2024/|title=A Quiet Place Video Game Coming Later This Year|website=Game Rant|first=Charming|last=Holiday|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 17, 2024|archive-url=https://web.archive.org/web/20240617180557/https://gamerant.com/a-quiet-place-video-game-releasing-2024/|url-status=live}}</ref>
+
+== Synopsis ==
+=== Setting and characters ===
+The story takes place between the events of ''[[A Quiet Place: Day One]]'' and [[A Quiet Place|the first film]] and features Alex Taylor (voiced by [[Anairis Quiñones]]),<ref>{{cite web|title=Anairis Quiñones (visual voices guide)|url=https://www.behindthevoiceactors.com/Anairis-Quinones/|website=Behind the Voice Actors|access-date=July 9, 2024}}</ref> an [[asthmatic]] college student survivor in a post-apocalyptic world who, alongside her boyfriend, Martin, is threatened by alien creatures.<ref>{{Cite web|url=https://bleedingcool.com/games/a-quiet-place-the-road-ahead-announced-for-pc-consoles/|title=A Quiet Place: The Road Ahead Announced For PC & Consoles|website=[[Bleeding Cool]]|first=Gavin|last=Sheehan|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 18, 2024|archive-url=https://web.archive.org/web/20240618035642/https://bleedingcool.com/games/a-quiet-place-the-road-ahead-announced-for-pc-consoles/|url-status=live}}</ref><ref>{{Cite web|url=https://screenrant.com/quiet-place-road-ahead-horror-game/|title=A Quiet Place: The Road Ahead Is A Terrifying Untold Original Story For The Franchise|website=[[Screen Rant]]|first=Glenn|last=Bunn|date=June 17, 2024|access-date=June 18, 2024|archive-date=June 18, 2024|archive-url=https://web.archive.org/web/20240618133956/https://screenrant.com/quiet-place-road-ahead-horror-game/|url-status=live}}</ref><ref>{{Cite web|url=https://bloody-disgusting.com/video-games/3818893/delve-into-story-details-with-the-new-a-quiet-place-the-road-ahead-trailer-watch/|title=Delve Into Story Details With the New 'A Quiet Place: The Road Ahead' Trailer [Watch]|website=[[Bloody Disgusting]]|first=Mike|last=Wilson|date=July 3, 2024|access-date=July 3, 2024|archive-date=July 3, 2024|archive-url=https://web.archive.org/web/20240703193203/https://bloody-disgusting.com/video-games/3818893/delve-into-story-details-with-the-new-a-quiet-place-the-road-ahead-trailer-watch/|url-status=live}}</ref> After Martin's death, Alex must rely on her own strength to remain alive while pregnant with Martin's child.
+
+=== Story ===
+Alex and Martin arrive at a ranch, looking for food and medical supplies to bring back to the hospital they are taking shelter in. During the search a nauseous Alex finds a pregnancy test and takes it, revealing she's pregnant with Martin's child. The two stay the night at the ranch. In the morning while leaving Alex gets her foot caught in a log and Martin chooses to sacrifice his life to let her escape.
+
+Arriving back at the hospital, Alex's father Kenneth learns that she's pregnant and the two plan to leave. However, Martin's mother Laura also learns this and locks Alex in a room. With Kenneth's help, Alex manages to escape, but an argument between Laura and Kenneth attracts the aliens and forces the entire hospital to evacuate.
+
+Alex meets back up with Kenneth at an abandoned camp. The two find a damaged radio, and Alex gets the parts needed to repair it. From the radio, they learn the aliens can't swim and that there is an island with people and no aliens on it. The two make a plan to get a boat, but Laura shows up and holds Kenneth hostage looking for information on where Alex is. In the ensuing struggle, Laura accidentally shoots and kills Kenneth. Alex manages to escape and takes cover overnight under a waterfall.
+
+The next day Alex, resolves to get into town and on the boat on her own. While there she discovers there is only one boat left in a fire station. While putting fuses in a box, an electrical short starts a fire in the fire station. The smoke knocks Alex out, but she is saved and dragged to safety by Laura. Laura gives Alex her gas mask so she can get to the boat safely, then leaves to turn on the nearby lighthouse to distract the aliens. Alex manages to make it to the boat and escape. The following morning she hears a voice on the radio asking if anyone is alive, to which she answers that she is.
+
+== Development ==
+In October 2021, it was announced that a [[video game]] set within the same continuity as the [[A Quiet Place (film series)|''A Quiet Place'' film series]] was in development. The game would reportedly include an original story. The project, set to be published by [[Saber Interactive]], was being developed by Canadian studio iLLOGIKA.<ref name="videogame_Deadline">{{cite web |last=Del Rosario |first=Alexandra |date=October 26, 2021 |title='A Quiet Place' Video Game In The Works By Saber Interactive & Illogika |url=https://deadline.com/2021/10/a-quiet-place-video-game-saber-interactive-illogika-1234862855/ |url-status=live |archive-url=https://web.archive.org/web/20211028015348/https://deadline.com/2021/10/a-quiet-place-video-game-saber-interactive-illogika-1234862855/ |archive-date=October 28, 2021 |accessdate=October 28, 2021 |work=[[Deadline Hollywood]]}}</ref> In June 2024, it was reported that Italian studio Stormind Games was now the developer of the game.<ref>{{Cite magazine|url=https://ew.com/a-quiet-place-video-game-the-road-ahead-trailer-8663909|title=A Quiet Place video game unveils tense first-look trailer, story details|magazine=[[Entertainment Weekly]]|first=Nick|last=Romano|date=June 17, 2024|access-date=June 17, 2024|archive-date=June 17, 2024|archive-url=https://web.archive.org/web/20240617130518/https://ew.com/a-quiet-place-video-game-the-road-ahead-trailer-8663909|url-status=live}}</ref><ref>{{Cite magazine|url=https://www.gameinformer.com/news/2024/07/02/a-quiet-place-the-road-ahead-story-trailer-showcases-the-silent-end-of-the-world|title=A Quiet Place: The Road Ahead Story Trailer Showcases The Silent End Of The World|magazine=[[Game Informer]]|first=Wesley|last=LeBlanc|date=July 2, 2024|access-date=July 6, 2024|archive-date=July 6, 2024|archive-url=https://web.archive.org/web/20240706170254/https://www.gameinformer.com/news/2024/07/02/a-quiet-place-the-road-ahead-story-trailer-showcases-the-silent-end-of-the-world|url-status=live}}</ref>
+
+=== Release ===
+The game was announced in October 2021.<ref name="videogame_Deadline" /> Along with a title announcement, a trailer was released in June 2024. ''A Quiet Place: The Road Ahead'' released on [[Microsoft Windows]], [[PlayStation 5]], and [[Xbox Series X/S]] on October 17, 2024.<ref name=":0">{{Cite web|last=Wilson|first=Mike|date=June 17, 2024|title=Single Player Game 'A Quiet Place: The Road Ahead' Heads to PC & Consoles [Trailer]|url=https://bloody-disgusting.com/video-games/3816130/saber-interactive-reveals-a-quiet-place-the-road-ahead-for-pc-and-consoles-coming-later-this-year-trailer/|url-status=live|archive-url=https://web.archive.org/web/20240617142238/https://bloody-disgusting.com/video-games/3816130/saber-interactive-reveals-a-quiet-place-the-road-ahead-for-pc-and-consoles-coming-later-this-year-trailer/|archive-date=June 17, 2024|access-date=June 17, 2024|website=[[Bloody Disgusting]]}}</ref><ref>{{Cite web|url=https://www.space.com/a-quiet-place-the-road-ahead-new-story-trailer|title=New 'A Quiet Place: The Road Ahead' story trailer will leave you speechless (video)|website=[[Space.com]]|first=Jeff|last=Spry|date=July 9, 2024|access-date=July 13, 2024|archive-date=July 13, 2024|archive-url=https://web.archive.org/web/20240713023851/https://www.space.com/a-quiet-place-the-road-ahead-new-story-trailer|url-status=live}}</ref>
+
+== Reception ==
+The game received "mixed or average" reviews according to the [[Review aggregator|review aggregation]] website [[Metacritic]].<ref>{{cite web|url=https://www.metacritic.com/game/a-quiet-place-the-road-ahead/|title=A Quiet Place: The Road Ahead reviews|work=[[Metacritic]]|accessdate=November 16, 2024}}</ref> Fellow review aggregator [[OpenCritic]] assessed that the game received fair approval, being recommended by 41% of critics.<ref>{{cite web|url=https://opencritic.com/game/17489/a-quiet-place-the-road-ahead|title=''A Quiet Place: The Road Ahead''|publisher=[[OpenCritic]]|access-date=May 11, 2026}}</ref>
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Official website|https://aquietplace.game/}}
+* {{IMDb title|32661641}}
+
+{{A Quiet Place (franchise)}}
+
+{{DEFAULTSORT:Quiet Place: The Road Ahead, A}}
+
+[[Category:2020s horror video games]]
+[[Category:2024 video games]]
+[[Category:A Quiet Place (film series)]]
+[[Category:Immersive sims]]
+[[Category:PlayStation 5 games]]
+[[Category:Post-apocalyptic video games]]
+[[Category:Saber Interactive games]]
+[[Category:Single-player video games]]
+[[Category:Stealth video games]]
+[[Category:Stormind Games games]]
+[[Category:Survival horror video games]]
+[[Category:Video games about extraterrestrial life]]
+[[Category:Video games based on films]]
+[[Category:Video games developed in Italy]]
+[[Category:Windows games]]
+[[Category:Xbox Series X and Series S games]]

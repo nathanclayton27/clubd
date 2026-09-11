@@ -1,0 +1,80 @@
+{{Short description|Video game series}}
+{{Infobox video game series
+| title = System Shock
+| genre     = [[First-person shooter]]
+| developer = {{Unbulleted list|[[Looking Glass Studios]] {{small|(1994–1999)}}|[[Irrational Games]] {{small|(1999)}}|[[Nightdive Studios]] {{small|(2012–present)}}|[[OtherSide Entertainment]] {{small|(2015–2019)}}}}
+| publisher = {{Unbulleted list|[[Origin Systems]] {{small|(1994)}}|[[Electronic Arts]] {{small|(1999)}}|Nightdive Studios {{small|(2012–present)}}|[[Prime Matter]] {{small|(2023)}}}}
+| image     = System shock logo.png
+| caption   = Logo as of 2023
+| composer  = {{Unbulleted list|Greg LoPiccolo|[[Tim Ries]]|Josh Randall|[[Ramin Djawadi]]|[[Eric Brosius]]|Jonathan Peros}}
+| platforms = {{Unbulleted list|[[MS-DOS]]|[[Classic Mac OS|Mac OS]]|[[PC-9800 series|PC-98]]<ref name="DieWeltRevol">{{cite news |author1=Nico Jaenecke |title=Diese Spiele haben das Gaming revolutioniert |url=https://www.welt.de/spiele/article138242501/Diese-Spiele-haben-das-Gaming-revolutioniert.html |website=[[Die Welt]] |access-date=May 12, 2020 |page=16 |language=de |date=March 10, 2015 |archive-date=September 27, 2020 |archive-url=https://web.archive.org/web/20200927160946/https://www.welt.de/spiele/article138242501/Diese-Spiele-haben-das-Gaming-revolutioniert.html |url-status=live }}</ref>|[[Windows]]|[[OS X]]|[[Linux]]|[[PlayStation 4]]|[[PlayStation 5]]|[[Xbox One]]|[[Xbox Series X/S]]}}
+| first release version = ''[[System Shock]]''
+| first release date    = September 23, 1994
+| latest release version = ''[[System Shock 2|System Shock 2: 25th Anniversary Remaster]]''
+| latest release date = June 26, 2025
+}}
+
+'''''System Shock''''' is a [[science fiction]] video game series created by [[Looking Glass Studios|Looking Glass Technologies]]. It consists of ''[[System Shock]]'', ''[[System Shock 2]],'' and the [[System Shock (2023 video game)|2023 ''System Shock'' remake]]. A third main entry, ''System Shock 3'', has been announced.
+
+The games undersold sales expectations but have become cult classics, and have inspired numerous games such as ''[[BioShock]], [[Deus Ex (video game)|Deus Ex]],'' and ''[[Prey (2017 video game)|Prey]]''.
+
+The series remained dormant until [[Nightdive Studios]],<ref>{{Cite web |title=Info – Nightdive Studios |url=https://www.nightdivestudios.com/info/ |access-date=2023-02-23 |language=en-US}}</ref> a game developer dedicated to re-releasing classic video games, acquired the rights to re-release both games in 2012.<ref>{{Citation |title=The Struggles Behind Bringing Back System Shock {{!}} Noclip | date=21 July 2020 |url=https://www.youtube.com/watch?v=pE97vZLC_fA |language=en |access-date=2023-02-24}}</ref>
+
+== Games ==
+{{Video game timeline
+|1994='''''[[System Shock]]'''''
+|1999='''''[[System Shock 2]]'''''
+|2015=''System Shock: Enhanced Edition''
+|2023='''''[[System Shock (2023 video game)|System Shock]]''''' (remake)
+|2025=''System Shock 2: 25th Anniversary Remaster''
+|TBA='''''System Shock 3'''''
+}}
+
+=== ''System Shock'' (1994) ===
+{{Main|System Shock}}
+
+''System Shock'' was developed by [[Looking Glass Studios]] and published by Origin Systems for the MS-DOS, Mac OS, and PC-98. In it, the player controls a hacker who is caught attempting to steal files from the TriOptimum Corporation and is taken to Citadel Station, and cooperates with Edward Diego, an executive from the aforementioned company, to remove the station's AI, [[SHODAN]]'s ethical constraints in exchange for a military-grade neural implant. For which the hacker is placed into a six-month coma. The game starts as the hacker awakens from his slumber to discover that SHODAN has gained control of the ship.
+
+=== ''System Shock 2'' (1999) ===
+{{Main|System Shock 2}}
+
+''System Shock 2'' was co-developed by [[Looking Glass Studios]] and the newly founded [[Irrational Games]] for Windows, and later OS X and Linux. The game takes place in the starship of the Von Braun, where a hivemind known as the Many begins infecting the crew.
+
+The game was critically acclaimed for its atmosphere, gameplay, and story. However, the game underperformed, and the series went on a hiatus.<ref>{{Cite web |date=2008-02-16 |title=Irrational Games |url=http://www.irrationalgames.com/shock2/ |access-date=2023-05-16 |archive-url=https://web.archive.org/web/20080216161753/http://www.irrationalgames.com/shock2/ |archive-date=2008-02-16 }}</ref><ref>{{Cite news |date=2009-03-18 |title=Edge's Top 100 games -- almost certainly not yours {{!}} Technology {{!}} guardian.co.uk |newspaper=The Guardian |url=https://www.theguardian.com/technology/blog/2007/jul/04/edgestop100g |access-date=2023-05-16 |archive-url=https://web.archive.org/web/20090318145252/http://www.guardian.co.uk/technology/blog/2007/jul/04/edgestop100g |archive-date=2009-03-18 |last1=Schofield |url-status=live |first1=Jack }}</ref>
+
+=== ''System Shock: Enhanced Edition'' (2015) ===
+[[Nightdive Studios]] acquired the rights to the series in 2012, and three years later, released an updated version of ''System Shock'' titled ''System Shock: Enhanced Edition''. It includes features such as an updated mouselook and resolution. The engine was later updated to the KEX Engine.<ref>{{Cite web |last=Blake |first=Vikki |date=2015-09-22 |title=Here's What's New In System Shock: Enhanced Edition |url=https://www.ign.com/articles/2015/09/22/heres-whats-new-in-system-shock-enhanced-edition |access-date=2023-05-16 |website=IGN |language=en}}</ref>
+
+=== ''System Shock'' (2023) ===
+{{Main|System Shock (2023 video game)}}
+
+Shortly after the release of ''System Shock: Enhanced Edition,'' Nightdive opened a [[Kickstarter]] campaign to fund a remake of the first game. The campaign's funding goal was $900,000; in the month-long campaign, they raised over $1.35 million, surpassing the original goal by over $450,000. The remake faced numerous development issues and switched the engine from Unity to Unreal Engine 4.<ref>{{Cite web |last=Campbell |first=Colin |date=2018-02-16 |title=System Shock reboot that raised $1.3M on Kickstarter is now on 'hiatus' |url=https://www.polygon.com/2018/2/16/17016744/system-shock-reboot-hiatus-nightdive-interview |access-date=2023-05-16 |website=Polygon |language=en-US}}</ref><ref>{{Cite web |last=Grant |first=Christopher |date=2017-03-01 |title=See what the System Shock reboot looks like in Unreal Engine |url=https://www.polygon.com/2017/3/1/14784082/system-shock-reboot-unreal-engine |access-date=2023-05-16 |website=Polygon |language=en-US}}</ref> It was released for Windows in May 2023, for PS4, PS5, XOne and XSXS in May 2024, for Nintendo Switch and Switch 2 in December 2025.
+
+=== ''System Shock 2: 25th Anniversary Remaster'' (2025) ===
+On a stream during the 20th anniversary of ''System Shock 2'' on August 11, 2019, Nightdive Studios announced an Enhanced Edition of the game was in development.<ref>{{cite web | url = https://www.vg247.com/2019/08/12/system-shock-2-enhanced/ | title = An enhanced version of System Shock 2 is in the works | first = James | last = O'Conner | date = August 11, 2019 | access-date = August 11, 2019 | work = [[VG247]] | archive-date = August 12, 2019 | archive-url = https://web.archive.org/web/20190812042644/https://www.vg247.com/2019/08/12/system-shock-2-enhanced/ | url-status = live }}</ref> Nightdive had been able to disassemble the original game's source code, allowing them to improve upon the original and port the game to their KEX Engine, the same engine they used for the [[System Shock: Enhanced Edition]].<ref>{{cite web | url = https://www.rockpapershotgun.com/2019/08/12/20-years-after-release-system-shock-2-is-finally-getting-an-enhanced-edition/ | title = 20 years after release, System Shock 2 is finally getting an Enhanced Edition | first = Craig | last = Pearson | date = August 12, 2019 | access-date = August 12, 2019 | work = [[Rock Paper Shotgun]] | archive-date = August 12, 2019 | archive-url = https://web.archive.org/web/20190812170006/https://www.rockpapershotgun.com/2019/08/12/20-years-after-release-system-shock-2-is-finally-getting-an-enhanced-edition/ | url-status = live }}</ref>
+
+It was originally also planned that a virtual reality version of the game would release alongside the Enhanced Edition; however, it was internally scrapped midway through development, for unknown reasons. The VR version would have used gameplay features that were introduced with ''[[Half-Life: Alyx]]'', and would have also been capable of cross-platform play with players on other platforms than VR.<ref>{{cite web | url = https://www.ign.com/articles/system-shock-2-enhanced-edition-full-vr-mode-announced | title = System Shock 2: Enhanced Edition Gets a Fully-Playable VR Mode | first = Matt | last = Kim | date = February 12, 2021 | access-date = February 12, 2021 | work = [[IGN]] | archive-date = February 12, 2021 | archive-url = https://web.archive.org/web/20210212200112/https://www.ign.com/articles/system-shock-2-enhanced-edition-full-vr-mode-announced | url-status = live }}</ref>
+
+In 2025, the port was renamed "''System Shock 2: 25th Anniversary Remaster''"<ref>{{cite web |last=Hore |first=Jamie |date=February 14, 2025 |url=https://www.pcgamesn.com/system-shock-2/remaster-gdc-launch-date-new-name |title=System Shock 2 remaster has a new name, and soon it'll have a launch date too |website=[[PCGamesN]] |accessdate=February 14, 2025}}</ref> and released on June 26, 2025, for [[Windows]].<ref>{{Cite web |last=Jovanée |first=Alice |date=20 March 2025 |title=Nightdive Studios announces launch date for System Shock 2 remake |url=https://www.polygon.com/news/543748/system-shock-2-25th-anniversary-edition-launch-release-date-nightdive-studios |website=[[Polygon (website)|Polygon]]}}</ref><ref>{{cite web |last=Sheehan |first=Gavin |date=June 23, 2025 |url=https://bleedingcool.com/games/system-shock-2-25th-anniversary-pushes-console-release-date/ |title=System Shock 2: 25th Anniversary Pushes Console Release Date |website=[[Bleeding Cool]] |accessdate=June 23, 2025}}</ref>  A console port was also developed for the [[PlayStation 4]], [[Xbox One]], [[PlayStation 5]], [[Xbox Series X/S]] and [[Nintendo Switch]] and is due to be released on July 20.<ref>{{cite web |last=Romano |first=Sal |date=July 1, 2025 |url=https://www.gematsu.com/2025/07/system-shock-2-25th-anniversary-remaster-for-ps5-xbox-series-ps4-xbox-one-and-switch-launches-july-10 |title=System Shock 2: 25th Anniversary Remaster for PS5, Xbox Series, PS4, Xbox One, and Switch launches July 10 |website=Gematsu |accessdate=July 1, 2025}}</ref>
+
+=== ''System Shock 3'' (TBA) ===
+''System Shock 3'' was announced in 2015. Multiple attempts at a sequel to ''System Shock 2'' have failed.<ref>{{Cite news |last=Paget |first=Mat |date=2017-01-15 |title=How Resident Evil 4 led to Visceral making Dead Space—instead of System Shock 3 |language=en |work=PC Gamer |url=https://www.pcgamer.com/how-resident-evil-4-turned-system-shock-3-into-dead-space/ |access-date=2023-05-17}}</ref> However, [[OtherSide Entertainment]] has received the rights to create a new game. The game takes place in a TriOptimum Blacksite during 2089.
+
+The game's status is unknown, as [[Warren Spector]], the founder of OtherSide has stated that they haven't worked on the game since 2019, and since they approached [[Tencent]] for financing, it is up to them about what happens to ''System Shock 3.''<ref>{{Cite web |date=2022-03-14 |title=System Shock 3 is Being Developed Without Warren Spector's Involvement |url=https://gamerant.com/system-shock-3-warren-spector-not-involved/ |access-date=2023-05-17 |website=Game Rant |language=en}}</ref>
+
+== Television adaptation ==
+A live-action science fiction horror drama series was announced in 2021. The show will be available for Binge, a streaming service centered on video game-based projects. [[Allan Ungar]], with Nightdive's Larry Kuperman and Stephen Kick producing. By 2022 [[Greg Russo]] was attached to direct the series in his directorial debut.<ref>{{Cite web |last=Gardner |first=Matt |title='System Shock' TV Series Names 2021 'Mortal Kombat' Writer As Director |url=https://www.forbes.com/sites/mattgardner1/2022/01/27/system-shock-tv-series-names-mortal-kombat-writer-as-director/ |access-date=2023-05-17 |website=Forbes |language=en}}</ref>
+
+== See also ==
+
+* ''[[System Shock Infinite]]'', a ''System Shock 2'' [[Video game modding|mod]] released in 2015.
+
+== References ==
+
+{{reflist}}
+
+[[Category:First-person shooters]]
+[[Category:System Shock]]
+[[Category:Video game franchises]]
+[[Category:Video game franchises introduced in 1994]]
+[[Category:Immersive sims]]

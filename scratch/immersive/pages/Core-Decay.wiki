@@ -1,0 +1,51 @@
+{{Use mdy dates|date=September 2020}}
+{{Infobox video game
+| title = Core Decay
+| image = Core decay cover art.jpg
+| developer = Ivar Hill<br />[[Slipgate Ironworks]]
+| publisher = [[3D Realms]]
+| engine = [[Unity (game engine)|Unity]]
+| platforms = [[Windows]]<br />[[Linux]]
+| release = 
+| genre = [[Immersive sim]], [[First-person shooter]], [[action role-playing]]
+| modes = [[Single-player]]
+}}
+
+'''''Core Decay''''' is an upcoming indie [[first-person (video games)|first-person]] [[Action role-playing game|action role-playing]] video game developed by Ivar Hill and [[Slipgate Ironworks]], and published by [[3D Realms]]. Described as a "philosophical sci-fi adventure", the game takes inspiration from classic 1990s games ''[[Deus Ex (video game)|Deus Ex]]'', ''[[Descent (1995 video game)|Descent]]'',  and ''[[System Shock]]''.<ref name=":1">{{Cite magazine|last=Bolding|first=Jonathan|date=2020-02-29|title=Core Decay is a retro-shooter immersive sim about a cyborg on a dying Earth|url=https://www.pcgamer.com/core-decay-is-a-retro-shooter-immersive-sim-about-a-cyborg-on-a-dying-earth/|access-date=2020-09-07|magazine=PC Gamer|language=en-US|archive-date=April 30, 2023|archive-url=https://web.archive.org/web/20230430060007/https://www.pcgamer.com/core-decay-is-a-retro-shooter-immersive-sim-about-a-cyborg-on-a-dying-earth/|url-status=live}}</ref><ref name=":0">{{Cite magazine|last=Chalk|first=Andy|date=2020-09-05|title=1990s-inspired immersive sim Core Decay drops a new trailer at Realms Deep|url=https://www.pcgamer.com/1990s-inspired-immersive-sim-core-decay-drops-a-new-trailer-at-realms-deep/|access-date=2020-09-07|magazine=PC Gamer|language=en-US|archive-date=November 22, 2021|archive-url=https://web.archive.org/web/20211122162815/https://www.pcgamer.com/1990s-inspired-immersive-sim-core-decay-drops-a-new-trailer-at-realms-deep/|url-status=live}}</ref>
+
+== Gameplay ==
+''Core Decay'' is an "atmospheric [[immersive sim]].<ref name=":1" /> The game is experienced through a first-person perspective, and focuses on exploration of the game world to accomplish goals. The player can interact with [[Non-player character|NPCs]], collect logs and messages, hack computer systems, and engage in combat with enemies. First-person shooting is a core game mechanic, though often not necessary for progression. The abilities of the player-character can be enhanced by finding cybernetic implants, which grant improvements such as damage resistance, more powerful attacks, and better hacking ability. There is also a detailed damage model that tracks injury to the player-character across specific body parts, leading to specific debilitating effects as the player is damaged by hostile elements.
+
+== Plot ==
+In the future, ecological collapse has caused society to crumble. Governments have given way to massive corporate powers. Facing extinction, a mysterious group of conspirators has formed to ensure the survival of humanity by any means necessary. The game begins as the player-character wakes up in a cold storage pod without any idea of what is going on, and now as much a machine as human. The player must explore the perilous installations of this shadowy organization and discover what they are planning.
+
+== Development ==
+Ivar Hill created ''Core Decay'' as a personal side project while working as a professional game developer. He cites his own love of games like ''Descent'' and ''Deus Ex'' as inspiration for what he wanted to make. As a one-man team, he could not achieve the depth of such [[AAA (video game industry)|AAA]] titles, but could borrow many elements of those games such as [[emergent gameplay]] styles.<ref name=":2">{{Cite web|last=|first=|date=2020-03-20|title=Quakecast #47 – Ivar Hill – Core Decay|url=https://quakecast.podbean.com/e/quakecast-47-ivar-hill-core-decay/|url-status=live|archive-url=https://web.archive.org/web/20201025025624/https://quakecast.podbean.com/e/quakecast-47-ivar-hill-core-decay/ |archive-date=October 25, 2020 |access-date=2020-09-08|website=Quakecast|language=en}}</ref> As development progressed, other personnel joined the project to help with game programming, music, and art.
+
+Hill selected [[Unity (game engine)|Unity]] as the game engine mainly due to his own familiarity, but also to allow strong multi-platform support. The game was developed simultaneously for both PC and mobile platforms, with only control schemes changing between versions.<ref name=":2" /> Though using a modern game engine, the game world is constructed with low-resolution models and textures. This serves both the retro shooter feel of the game, as well as the small development team. Support for mobile platforms was later abandoned and the game was developed for only the PC platform.<ref>{{Cite web|date=2021-01-19|title=In The Keep Podcast – #82 Ivar Hill (Core Decay)|url=https://inthekeep.com/in-the-keep-podcast-82-ivar-hill-core-decay/|access-date=2021-04-27|website=In The Keep|language=en|archive-date=April 26, 2021|archive-url=https://web.archive.org/web/20210426203019/https://inthekeep.com/in-the-keep-podcast-82-ivar-hill-core-decay/|url-status=live}}</ref>
+
+3D Realms partnered with Hill to publish and co-develop the game.<ref name=":0" />
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|https://coredecay.com/}}
+
+{{3D Realms}}
+
+[[Category:Upcoming video games]]
+[[Category:First-person shooters]]
+[[Category:Action role-playing video games]]
+[[Category:Indie games]]
+[[Category:Cyberpunk video games]]
+[[Category:3D Realms games]]
+[[Category:Immersive sims]]
+[[Category:Windows games]]
+[[Category:Linux games]]
+[[Category:Video games developed in Sweden]]
+[[Category:Post-apocalyptic video games]]
+[[Category:Science fiction role-playing video games]]
+[[Category:Video games set in the future]]
+[[Category:Slipgate Ironworks games]]
+[[Category:Single-player video games]]

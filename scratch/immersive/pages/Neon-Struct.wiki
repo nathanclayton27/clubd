@@ -1,0 +1,54 @@
+{{Short description|2015 video game}}
+{{Infobox video game
+| title = Neon Struct
+| image = Neon Struct cover.jpg
+| caption = 
+| developer = Minor Key Games
+| publisher = Minor Key Games
+| platforms = [[Windows]], [[macOS]], [[Linux]], [[SteamOS]]
+| released = May 20, 2015
+| genre = [[Stealth game]]
+| modes = [[Single-player]]
+| designer = David Pittman
+| composer = The Home Conversion
+}}
+
+'''''NEON STRUCT: Die Augen der Welt''''' ({{literal translation|NEON STRUCT: The Eyes of the World}})  is a first-person perspective [[stealth game]] developed and published by Minor Key Games for the PC [[Windows]], [[macOS]], and [[Linux]]/[[SteamOS]] in 2015.
+
+==Gameplay==
+{{expand section|date=August 2015}}
+
+''Neon Struct''{{'}}s gameplay is partially inspired by ''[[Deus Ex]]'', with wide areas serving as a way for the player, in a first-person perspective, to complete objectives with some degree of freedom, mainly consisting of breaking into a specific place, obtaining a key item and successfully escaping without getting caught in the process. ''Neon Struct'' rewards the player more easily with the use of stealth and subterfuge rather than confrontation and brute force, making the first option more achievable.
+
+==Plot==
+{{More plot|date=August 2015}}
+
+The first-person perspective is portrayed through the eyes of the protagonist, an ex-federal agent named Jillian Cleary who is being hunted down by her former agency. She, now as a fugitive must find a way to clear his name by performing some clandestine actions and counting on her allies, trustworthy or not.
+
+==Development and release==
+{{expand section|date=August 2015}}
+
+==Reception==
+The game received mixed reviews for an averaged [[Metacritic]] score of 63/100.<ref>{{cite web|url=https://www.metacritic.com/game/neon-struct/critic-reviews/?platform=pc |title=NEON STRUCT for PC Reviews |publisher=Metacritic |date=2015-05-20 |accessdate=2015-08-13}}</ref> ''[[GameSpot]]''{{'}}s Justin Clark described it as "a [[Super FX]] chip version of ''[[Deus Ex (video game)|Deus Ex]]''" that "is a testament to the skill involved, but it simply can't help but suffer under the weight of its own ambitions."<ref>{{cite web|last=Clark |first=Justin |url=http://www.gamespot.com/reviews/neon-struct-review/1900-6416162/ |title=NEON STRUCT Review |publisher=GameSpot |date=2015-06-04 |accessdate=2015-08-13}}</ref> According to James Cunningham of ''Hardcore Gamer'', ''Neon Struct'' "isn't a perfect game, and technically its main gameplay focus of stealth is fairly simplistic," but it "makes up for this by being excellent in many other ways, most notably in the level design and world building."<ref>{{cite web|url=http://www.hardcoregamer.com/2015/06/29/review-neon-struct/151593/ |title=Review: NEON STRUCT |publisher=Hardcore Gamer |date= 29 June 2015|accessdate=2015-08-13}}</ref> Simon Parkin of ''[[Eurogamer]]'' lauded this it as a game that "creeps into politically charged themes of surveillance with grace and style" for its "brooding" storyline that makes it "the best kind of science fiction thriller: one dressed in the style of the future, but engaged with the pressing issues of the present."<ref>{{cite web |last=Parkin |first=Simon |url=https://www.eurogamer.net/articles/2015-05-20-neon-struct-review |title=Neon Struct review |publisher=Eurogamer.net |date=2015-05-20 |accessdate=2015-08-13 |archive-date=2015-08-08 |archive-url=https://web.archive.org/web/20150808071144/http://www.eurogamer.net/articles/2015-05-20-neon-struct-review |url-status=live }}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{official website|neonstruct.com/}}
+
+[[Category:2015 video games]]
+[[Category:Cyberpunk video games]]
+[[Category:Immersive sims]]
+[[Category:Indie games]]
+[[Category:Linux games]]
+[[Category:MacOS games]]
+[[Category:Minor Key Games games]]
+[[Category:Single-player video games]]
+[[Category:Stealth video games]]
+[[Category:Video games about espionage]]
+[[Category:Video games developed in the United States]]
+[[Category:Video games featuring female protagonists]]
+[[Category:Video games set in the future]]
+[[Category:Video games with Steam Workshop support]]
+[[Category:Windows games]]

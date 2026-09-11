@@ -1,0 +1,68 @@
+{{Short description|1996 video game}}
+{{More citations needed|date=August 2017}}
+{{Infobox video game
+|title=Azrael's Tear
+|image=Azrael'stear.jpg
+|developer=[[Intelligent Games]]
+|publisher=[[Mindscape (company)|Mindscape]]
+|designer=Ken Haywood, Richard Guy
+|programmer=Martin Fermor
+|artist=
+|composer=[[Kerry Minnear]], [[Ray Shulman]]
+|engine=
+|platforms=[[MS-DOS]]
+|released={{vgrelease|EU|August 26, 1996<ref>{{Cite web |url=http://www.ogr.com/news/news0896.html |title=News |access-date=2018-10-30 |archive-url=https://web.archive.org/web/19961019035640/http://www.ogr.com/news/news0896.html |website=[[Online Gaming Review]] |archive-date=1996-10-19 |url-status=live }}</ref>}}{{vgrelease|NA|October 4, 1996<ref>{{Cite web |date=1997-02-27 |title=News |url=http://www.ogr.com/news/news1096.html |access-date=2023-04-16 |archive-url=https://web.archive.org/web/19970227065725/http://www.ogr.com/news/news1096.html |website=[[Online Gaming Review]] |archive-date=1997-02-27 }}</ref>}}
+|genre=[[Adventure game|Adventure]]
+|modes=[[Single player]]
+}}
+'''''Azrael's Tear''''' is a [[1996 in video gaming|1996]] first-person [[adventure game]] that presents an [[eschatology|eschatological]] [[conspiracy fiction]]  narrative about a futuristic [[Grail Quest]]. It was published by [[Mindscape (company)|Mindscape]] and developed by [[Intelligent Games]].
+
+==Plot==
+The game is set in [[alternate history|the period]] from early [[2012 phenomenon|December 2012]] to [[Christmas Day]] 2015. The player assumes the role of a highly skilled professional [[grave robber]]/[[archaeologist]] known as a "raptor", who has come to raid a massive [[12th century|12th-century]] underground complex recently found in [[Wick, Caithness]], [[Scotland]]. The existence of the cavern is not publicly known. The player character has come in response to rumors, spreading within their [[Transnational organized crime|criminal community]], to the effect that the site may conceal the [[Holy Grail]]. The player character's history is not detailed in the game. This could be said to echo the [[Abrahamic religion|Abrahamic]] [[The gospel|message]] that [[God]] will accept any firm and sincere [[repentance]], regardless of the petitioner's origin or past.
+
+==Development==
+Ken Haywood produced the original concept for the game and worked with Intelligent Games's own Richard Guy on the final design. The original design called for a ''[[Myst]]''-style pre-rendered environment. As development progressed, the team switched to real-time 3D. The game features music written by [[Ray Shulman]] and [[Kerry Minnear]], both former members of [[Gentle Giant]].
+
+As well as implementing proper real-time 3D in both environments and actors with full [[texture mapping]], a major feat that was achieved back when most adventure games were exclusively two-dimensional or used [[Pre-rendering|pre-rendered]] elements for its backgrounds, Azrael's Tear is also the first adventure game to employ this technology, only preceded by [[Under a Killing Moon]] (1994) by two years, although the latter had its digital characters portrayed in [[full-motion video]]. 
+
+==Reception==
+{{Video game reviews
+<!-- Reviewers -->
+ | GSpot = 5.6/10<ref name="GSrev">{{cite web |url=https://www.gamespot.com/reviews/azraels-tear-review/1900-2538102/ |title=Azrael's Tear - GameSpot |first=Tal |last=Blevins |date=November 5, 1996 |website=[[GameSpot]] |accessdate=August 28, 2017}}</ref>
+| rev1 = ''[[Arcane (magazine)|Arcane]]''
+| rev1Score = 7/10<ref name="Arcane6"/>
+| rev2 = ''[[Just Adventure]]''
+| rev2Score = A−<ref name="JArev">{{cite web|last=Necasek|first=Michael|title=Throwback Thursday: Azrael's Tear|url=http://www.justadventure.com/2013-05-20-21-09-14/2550-azraels-tear|website=[[Just Adventure]]|accessdate=7 January 2018|date=April 9, 2002|archive-url=https://web.archive.org/web/20180107174957/http://www.justadventure.com/2013-05-20-21-09-14/2550-azraels-tear|archive-date=7 January 2018|url-status=dead}}</ref>
+| NGen = 3/5<ref name="NGen25">{{cite magazine |title=Azrael's Tear|magazine=[[Next Generation (magazine)|Next Generation]]|issue=25 |publisher=[[Imagine Media]]|date=January 1997|page=182}}</ref>
+| rev5 = ''PC Games''
+| rev5Score = A<ref name=pcgamesrev>{{cite magazine | archive-url=https://web.archive.org/web/19961018114313/http://www.pcgamesmag.com/games/Jul96/azrael796.html | url=http://www.pcgamesmag.com:80/games/Jul96/azrael796.html | title=''Azrael's Tear'' | magazine=PC Games | author=Olafson, Peter | date=July 1996 | archive-date=1996-10-18 | url-status=usurped | access-date=2018-10-30 }}</ref>
+}}
+
+Both ''[[GameSpot]]'' and ''[[Next Generation (magazine)|Next Generation]]'' commented that the control interface is highly counterintuitive, especially the inverted cursor movement, and cannot be changed.<ref name="GSrev"/><ref name="NGen25"/> ''GameSpot'' reviewer Tal Blevins opined that the game is otherwise well-worth playing, citing the atmospheric music, entertaining story, and good integration of the puzzles into the plot. He was particularly pleased with the graphic design, remarking that "the game is steeped in shadow that hides a subtle richness; it may take several game sessions for you to truly appreciate the brilliant artistic design included."<ref name="GSrev"/> The ''Next Generation'' reviewer agreed that the story is gripping but was somewhat less impressed, summarizing, "''Azrael's Tear'' brings adventure, high-resolution graphics, and a smattering of action to what is essentially a ''Myst'' clone, adding a little life - just a little - to a genre that sorely needs it."<ref name="NGen25"/> Nicholas Petreley of ''[[InfoWorld]]'' wrote, "''Azrael's Tear'' is not a crowd-pleaser, and I'm grateful for it. It is for those people who like to lose themselves in an entirely different world. If you're among that camp, prepare to enter the world of ''Azrael's Tear'' and rarely come up for air."<ref name=infoworld>{{cite journal | author=Petreley, Nicholas| journal=[[InfoWorld]] |date=November 25, 1996 |title=Down to the Wire; The Mystique of the Holy Grail is a powerful Nemesis to doing work | number=48 | volume=18 | page=82 }}</ref>
+
+Andy Butcher reviewed ''Azrael's Tear'' for ''Arcane'' magazine, rating it a 7 out of 10 overall.<ref name="Arcane6">{{cite journal|last=Butcher|first=Andy|date=May 1996|title=Games Reviews|journal=Arcane|publisher=[[Future plc|Future Publishing]]|issue=6|pages=72}}</ref> Butcher comments that "If you take the time to get into it [...] ''Azrael's Tear'' is atmospheric and extremely satisfying."<ref name="Arcane6"/>
+
+In a 2002 retrospective review for ''[[Just Adventure]]'', Michael Necasek commented, "The story of ''Azrael's Tear'' revolves around props far from unusual in adventure games: the Holy Grail, the Knights Templar, secret conspiracies to rule the world. These all are almost clichés. But like other good games (''[[Gabriel Knight 3]]'' comes to mind), ''Azrael's Tear'' manages to explain them with unexpected twists."<ref name="JArev"/>
+
+''Azrael's Tear'' was not a commercial success. However, project leader Matthew Stibbe said in a presentation on the history of games that it is the only game he produced that got fan mail.<ref>{{cite web|url=https://geekboss.com/azraels-tear/|title=Azrael's Tear: the best adventure game you've never heard of|last=Stibbe|first=Matthew|website=GeekBoss|access-date=November 21, 2019}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{official website|https://web.archive.org/web/19970405110942/http://www.mindscapegames.com:80/game_info/azraelst/main.htm}} (archived)
+*{{moby game|id=/azraels-tear}}
+
+{{Authority control}}
+
+[[Category:1996 video games]]
+[[Category:Adventure games]]
+[[Category:DOS games]]
+[[Category:DOS-only games]]
+[[Category:First-person adventure games]]
+[[Category:Immersive sims]]
+[[Category:Intelligent Games games]]
+[[Category:Mindscape games]]
+[[Category:Single-player video games]]
+[[Category:Video games developed in the United Kingdom]]
+[[Category:Video games set in Scotland]]

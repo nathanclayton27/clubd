@@ -1,0 +1,74 @@
+{{Short description|Open source stealth video game}}
+{{use mdy dates|date=February 2022}}{{italic title}}
+{{Infobox software
+| title = ''The Dark Mod''
+| logo = Dark Mod logo.png
+| engine = [[id Tech 4]]
+| released = {{Start date and age|2009|10|17}} (''[[Doom 3]]'' mod)<br />{{Start date and age|2013|10|08}} (standalone game)<br />{{Start date and age|2018|05|27}} (native 64-bit)
+| latest release version = 2.14
+| latest release date = {{Start date and age|2026|03|20}}
+| genre = [[Stealth game|Stealth]]
+| platform = [[Microsoft Windows]], [[Linux]], [[macOS]]
+| license = * Both [[GPLv3]] and [[revised BSD license]] (code)<ref name="license"/><br/>
+* various (additional software libraries)<ref name="license"/>
+* [[CC BY-NC-SA]] (assets)<ref name="license"/>
+* property of respective author (missions)<ref name="license"/>
+| website = {{URL|thedarkmod.com}}
+| repo = 
+}}
+
+'''''The Dark Mod''''' is a [[free and open-source software]] first-person [[stealth game|stealth video game]], inspired by the [[Thief (series)|''Thief'' series]] by [[Looking Glass Studios]]. The game provides the basic framework and tools (engine, assets, models, and editor) for more than 190 [[fan-made]] missions, including several multi-mission campaigns. ''The Dark Mod'' was founded by David Massey and first released in 2009 as a [[total conversion]] mod for ''[[Doom 3]]''. Version 2.0 was released in October 2013 as a standalone game using the [[open-source software|open-source]] [[id Tech 4]] [[game engine]].
+
+== Gameplay ==
+''The Dark Mod'' takes place in a classic gothic [[steampunk]] world. This includes a crossover of elements of [[fantasy]], the [[Late Middle Ages]], the [[Victorian era]] and the [[Industrial Revolution]]. Although set in a very similar world to that of the original [[Thief (series)|''Thief'' series]], the mod does not use any of the original ''Thief'' [[intellectual property]].{{r|gamestar}}<ref name="faq">{{cite web |url=https://thedarkmod.com/faq |title=Frequently Asked Questions |date=October 14, 2011 |publisher=The Dark Mod |access-date=September 18, 2015 |archive-date=September 11, 2015 |archive-url=https://web.archive.org/web/20150911071636/http://www.thedarkmod.com/faq/ |url-status=live }}</ref>
+
+The player is an agile thief in a hostile world. He has to use his equipment and the environment to avoid guards, traps, creatures or other threats. His equipment includes a [[Blackjack (weapon)|blackjack]], water arrows, holy water, flashbombs, mines, and more. Since the player has only a limited fighting capability, he is supposed to sneak and hide in dark, mostly avoiding combat. The plot and mission goals are set by the author of the fan mission or campaign.{{r|gamestar}}{{r|faq}}
+
+[[File:The Dark Mod： The Imperial Sword (YCwK22ec2Ds).webm|thumb|Gameplay from 2024 map The Imperial Sword]]
+
+== Development ==
+''The Dark Mod'' was originally released as a [[Mod (computer gaming)#Total conversion|total conversion modification]] for ''[[Doom 3]]'', but with the release of version 2.0 it became completely standalone on the [[id Tech 4]] game engine.
+
+The mod was originally developed as a toolkit. It includes models, sounds, {{abbr|AI|Artificial Intelligence}}, art, tools, and a specialised editor for users to create custom missions. The development of the mod started in 2004, and the first Beta was released in 2008, along with its first mission. In October 2009, v 1.0 was released.  In October 2013 version 2.0 was released as a standalone game that included two missions created by the development team.
+
+The Dark Mod 2.06 includes code from the dhewm3 [[Fork (software)|fork]] of the id Tech 4 game engine that was [[Porting|ported]] to 64-bit, etc.<ref>{{cite web |url=https://github.com/dhewm/dhewm3 |title=dhewm/dhewm3 |publisher=[[Github.com]] |access-date=September 18, 2015 |archive-date=October 27, 2015 |archive-url=https://web.archive.org/web/20151027040616/https://github.com/dhewm/dhewm3 |url-status=live }}</ref>
+
+== Licenses ==
+The game's [[source code]] is licensed under both the [[GNU GPL|GNU General Public License 3]] and the [[revised BSD license]].<ref name="license"/> Additional software libraries are released under various licenses.<ref name="license"/> The missions are property of the respective authors.<ref name="license"/> Many non-software components are released under the [[Creative Commons license|Creative Commons BY-NC-SA]].<ref name="license"/>
+
+== Reception ==
+''The Dark Mod'' has been featured and reviewed by a number of major game magazines, websites and blogs. Examples include the Dutch magazine ''PC Game Play'',<ref>''PC Game Play'', May 2011 Issue</ref> the blog ''[[Kotaku]]'',<ref>{{cite web |url=http://kotaku.com/the-dark-mod/ |title=The dark mod News, Videos, Reviews and Gossip |work=Kotaku |access-date=September 18, 2015}}</ref> the British magazine ''[[PC Gamer]]'',<ref>{{cite web |url=http://www.pcgamer.com/get-your-stealth-fix-with-the-dark-mod-the-thief-total-conversion-for-doom-3/ |title=Get your stealth fix with The Dark Mod, the Thief total conversion for Doom 3 |last=Sykes |first=Tom |date=October 21, 2012 |website=PCGamer |access-date=September 17, 2015 |archive-date=March 4, 2016 |archive-url=https://web.archive.org/web/20160304081403/http://www.pcgamer.com/get-your-stealth-fix-with-the-dark-mod-the-thief-total-conversion-for-doom-3/ |url-status=live }}</ref> the German magazines ''[[PC Games]]''<ref>{{cite web |url=http://www.pcgames.de/Mods-und-Maps-Thema-206108/Downloads/Mod-des-Tages-The-Dark-Mod-Tears-of-Saint-Lucia-fuer-Doom-3-666128/ |title=Mod des Tages: The Dark Mod – Tears of Saint Lucia für Doom 3 |work=Pcgames.de |date=September 14, 2015 |access-date=September 18, 2015 |language=de |archive-date=October 16, 2013 |archive-url=https://web.archive.org/web/20131016102756/http://www.pcgames.de/Mods-und-Maps-Thema-206108/Downloads/Mod-des-Tages-The-Dark-Mod-Tears-of-Saint-Lucia-fuer-Doom-3-666128/ |url-status=live }}</ref> and [[GameStar]],<ref name="gamestar">{{cite web |url=https://gamestar.de/spiele/thief/artikel/the_dark_mod,44861,3029213.html |title=The Dark Mod – Wer ist nochmal Garrett? |work=GameStar.de |date=October 24, 2013 |access-date=December 31, 2016 |language=de |archive-date=January 1, 2017 |archive-url=https://web.archive.org/web/20170101090945/http://www.gamestar.de/spiele/thief/artikel/the_dark_mod,44861,3029213.html |url-status=live }}</ref> as well as the British gaming website ''[[Rock, Paper, Shotgun]]''.<ref>{{cite news |last=Meer |first=Alec |url=https://rockpapershotgun.com/2012/10/22/outta-dunwall-thief-remake-the-dark-mod-updates/ |title=Outta Dunwall: Thief Remake The Dark Mod Updates |work=[[Rock, Paper, Shotgun]] |date=October 22, 2012 |access-date=September 18, 2015 |archive-date=September 24, 2015 |archive-url=https://web.archive.org/web/20150924125743/http://www.rockpapershotgun.com/2012/10/22/outta-dunwall-thief-remake-the-dark-mod-updates/ |url-status=live }}</ref>
+
+After going [[Stand-alone expansion pack|standalone]] the project received additional substantial coverage from ''[[Destructoid]]''<ref>{{cite web |url=http://www.destructoid.com/thief-inspired-the-dark-mod-is-now-a-standalone-release-263370.phtml |title=Thief-inspired The Dark Mod is now a standalone release |work=[[Destructoid]] |date=January 15, 2014 |access-date=September 18, 2015 |archive-date=September 9, 2015 |archive-url=https://web.archive.org/web/20150909115531/http://www.destructoid.com/thief-inspired-the-dark-mod-is-now-a-standalone-release-263370.phtml |url-status=live }}</ref> and ''[[Joystiq]]''.<ref>{{cite web |url=http://www.joystiq.com/2013/10/13/thief-homage-the-dark-mod-steals-spotlight-for-itself-goes-stan/ |title=Thief homage The Dark Mod steals spotlight for itself, goes standalone |work=[[Joystiq]] |date=October 13, 2013 |access-date=September 18, 2015 |archive-date=January 31, 2015 |archive-url=https://web.archive.org/web/20150131051748/http://www.joystiq.com/2013/10/13/thief-homage-the-dark-mod-steals-spotlight-for-itself-goes-stan/ |url-status=live }}</ref>
+
+''The Dark Mod'' won ''PC Gamer'' UK's Game of the Year award (mod category) for 2013,<ref>{{cite web |url=https://pcgamer.com/mod-of-the-year-the-dark-mod/ |title=Mod of the year: The Dark Mod |publisher=[[PC Gamer]] |date=December 26, 2013 |access-date=September 20, 2015 |archive-date=October 4, 2015 |archive-url=https://web.archive.org/web/20151004212439/http://www.pcgamer.com/mod-of-the-year-the-dark-mod/ |url-status=live }}</ref> and has been distributed on several magazine [[Cover disk|cover DVDs]].<ref>''[[Gamestar]]'' (Germany) January 2014; ''PC Master'' (Greece) December 2013; ''Oyungezer'' (Turkey) December 2013</ref> In 2014 ''The Dark Mod'' was named by ''[[PCGamer]]'' among the "Ten top fan remade classics you can play for free right now".<ref>{{cite web |url=https://pcgamer.com/ten-top-fan-remade-classics-you-can-play-for-free-right-now/ |title=Ten top fan-remade classics you can play for free right now |author=Craig Pearson |date=January 1, 2014 |access-date=July 15, 2020 |work=[[PC Gamer]] |language=en |archive-date=July 15, 2020 |archive-url=https://web.archive.org/web/20200715093000/https://www.pcgamer.com/ten-top-fan-remade-classics-you-can-play-for-free-right-now/ |url-status=live }}</ref>
+In 2016, ''The Dark Mod'' was ranked as #2 in "The 50 best free PC games" list by ''[[PC Gamer]]''.<ref>Tom Sykes. "[https://web.archive.org/web/20161121131659/http://www.pcgamer.com/the-50-best-free-pc-games/5/ The 50 best free PC games]" (archived), ''[[PC Gamer]]'', 27 May 2016.</ref> ''The Dark Mod'' was also ranked in the top ten [[Open-source video game|open source video games]] by The Gamer.<ref>{{Cite web |last=Nachwalter |first=Jack |date=2024-03-12 |title=10 Best Open-Source Video Games |url=https://www.thegamer.com/best-open-source-video-games/ |access-date=2026-07-23 |website=TheGamer |language=en}}</ref>
+
+== See also ==
+* [[List of open-source games]]
+* [[List of video games derived from modifications]]
+
+== References ==
+<references>
+<ref name="license">{{cite web |url=https://svn.thedarkmod.com/publicsvn/darkmod_src/trunk/LICENSE.txt |title=The Dark Mod license.txt |access-date=July 9, 2020 |archive-date=May 28, 2020 |archive-url=https://web.archive.org/web/20200528024500/https://svn.thedarkmod.com/publicsvn/darkmod_src/trunk/LICENSE.txt |url-status=live }}</ref>
+</references>
+
+== External links ==
+* {{Official website|https://thedarkmod.com/}}
+* [https://wiki.thedarkmod.com/ ''The Dark Mod'' Wiki]
+
+{{Thief series}}
+{{Doom series}}
+
+{{DEFAULTSORT:Dark Mod, The}}
+[[Category:2009 video games]]
+[[Category:Linux games]]
+[[Category:MacOS games]]
+[[Category:Stealth video games]]
+[[Category:Doom (franchise) mods]]
+[[Category:Windows games]]
+[[Category:id Tech 4 games]]
+[[Category:Creative Commons-licensed video games]]
+[[Category:Open-source video games]]
+[[Category:Freeware games]]
+[[Category:Immersive sims]]

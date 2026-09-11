@@ -1,0 +1,150 @@
+{{short description|2017 video game}}
+{{Use American English|date=September 2017}}
+{{Use dmy dates|date=September 2017}}
+{{Infobox video game
+| title = Dishonored: Death of the Outsider
+| image = Death of the Outsider cover.jpg
+| developer = [[Arkane Lyon]]
+| publisher = [[Bethesda Softworks]]
+| director = [[Harvey Smith (game designer)|Harvey Smith]]
+| designer = [[Dinga Bakaba]]
+| programmer = Hugues Tardif
+| artist = Sébastien Mitton
+| writer = {{Unbulleted list|Sachka Duval|Sophie Mallinson|Anna Megill|Hazel Monforton}}
+| series = ''[[Dishonored (series)|Dishonored]]''
+| composer = [[Daniel Licht]]
+| engine = <!-- Omit engine. Void does not have an article, per template documentation, do not list engines without articles. -->
+| platforms = {{Unbulleted list|[[PlayStation 4]]|[[Windows]]|[[Xbox One]]}}
+| released = 15 September 2017
+| genre = [[Action-adventure]], [[Stealth game|stealth]]
+| modes = [[Single-player]]
+}}
+
+'''''Dishonored: Death of the Outsider''''' is a 2017 [[action-adventure game]] developed by [[Arkane Lyon]] and published by [[Bethesda Softworks]]. It is a standalone expansion pack following ''[[Dishonored 2]]'', and was released 15 September 2017 for [[PlayStation 4]], [[Windows]], and [[Xbox One]]. The game takes place in the coastal city of Karnaca after the events of the previous title. It follows the former assassin Billie Lurk (voiced by [[Rosario Dawson]]<ref name=":0" />) as she reunites with her mentor Daud ([[Michael Madsen]]) to kill the mysterious entity known as [[The Outsider (character)|The Outsider]] ([[Robin Lord Taylor]]). The game is played from a [[First-person (video games)|first-person perspective]] and the player has access to a variety of supernatural abilities to complete missions in a multitude of ways, from stealth to purposeful violent conflict.
+
+''Death of the Outsider'' was originally planned as a [[downloadable content]] for ''Dishonored 2'', but became a standalone expansion after the team decided to explore different approaches with its story and gameplay. Lurk was chosen as the protagonist for being a favorite with the developers. The narrative was conceived to tie loose ends left by the previous games, offer a different perspective to the player, and end the narrative arc that began with ''[[Dishonored]]''. Gameplay elements were reformulated or removed to differentiate the game from its predecessors, adapt it to the standalone expansion format and encourage the player to experiment and explore their choices.
+
+The game was announced during the Bethesda press conference at [[E3 2017]]. ''Death of the Outsider'' was well received by critics, who praised its game design and considered it a suitable conclusion to the ''Dishonored'' series up until that point. However, criticism was focused on its narrative and levels which were considered unremarkable when compared to previous titles in the series. The game was nominated for some industry awards, including Outstanding Achievement in Videogame Writing at the [[Writers Guild of America Awards]]. After its release, Arkane Studios announced that the ''Dishonored'' series would be entering a hiatus.
+
+==Gameplay==
+The gameplay is similar to ''[[Dishonored]]'' and ''[[Dishonored 2]]''. The player character Billie Lurk is equipped with a short sword. If the player sneaks up on a foe, they can stab them to death quickly and quietly. The player has other gear, such as a wrist-mounted crossbow, land mines, and grenades. A new item is the hook mine, which grabs a nearby enemy and knocks them unconscious, or they can be set to kill.<ref>{{cite web |url=http://www.pcgamer.com/dishonored-2-death-of-the-outsiders-hook-mines-look-very-cool/ |title=Dishonored 2 Death of the Outsider's Hook Mines look very, very cool |last=Donnelly |first=Joe |date=6 September 2017 |work=PC Gamer |access-date=6 September 2017 |archive-date=7 September 2017 |archive-url=https://web.archive.org/web/20170907040813/http://www.pcgamer.com/dishonored-2-death-of-the-outsiders-hook-mines-look-very-cool/ |url-status=live }}</ref>
+
+After the first mission, the player gains access to three supernatural abilities. Unlike previous games in the series, the player does not purchase them with "runes"; they are all fully unlocked from the start. These abilities cost energy to use, but unlike in the previous games, the player's energy regenerates fully on its own; there are no consumables to replenish energy.
+
+Lurk's main mobility power is "Displace", which allows her to set a marker in the world, and teleport to that marker when in eyesight of it.<ref name="Displace">{{cite web |url=http://www.pcgamer.com/billies-displace-ability-sounds-awesome-in-dishonored-2-death-of-the-outsider/ |title=Billie's 'displace' ability sounds awesome in Dishonored 2: Death of the Outsider |last=Donnelly |first=Joe |date=13 June 2017 |work=[[PC Gamer]] |access-date=2 September 2017}}</ref> "Semblance" allows the player to take the faces of living [[non-player character]]s (NPCs) and use them as a temporary disguise, though they can only take a character's face once. The disguise drains power as the player moves, but not when they are standing still.<ref name=":0">{{cite news |url=https://www.rockpapershotgun.com/2017/09/15/dishonored-death-of-the-outsider-best-power/ |title=Evasion of the bodysnatcher in Dishonored: Death Of The Outsider |last=Meer |first=Alec |date=15 September 2017 |website=[[Rock Paper Shotgun]] |access-date=25 September 2017 |archive-date=21 September 2017 |archive-url=https://web.archive.org/web/20170921061113/https://www.rockpapershotgun.com/2017/09/15/dishonored-death-of-the-outsider-best-power/ |url-status=live }}</ref> Using Semblance on specific named NPCs may produce unique interactions. Completing the game unlocks an "original game plus" mode, where the player has access to some powers featured in ''[[Dishonored 2]]''.<ref name="Displace"/> As in the previous games, the player can collect "bonecharms", which are scattered throughout the levels. Wearing a bonecharm provides minor upgrades to the player's abilities.
+
+During missions, the player may pick up optional "Contracts" at black markets, which are side missions that involve doing tasks such as assassinating another character.<ref>{{cite web |url=https://www.engadget.com/2017/08/26/dishonored-death-of-the-outsider/ |title='Dishonored' gets unleashed in 'Death of the Outsider' |last=Hardawar |first=Devindra |date=26 August 2017 |publisher=Engadget |access-date=2 September 2017 |archive-date=2 September 2017 |archive-url=https://web.archive.org/web/20170902013925/https://www.engadget.com/2017/08/26/dishonored-death-of-the-outsider/ |url-status=live }}</ref> In one example, the character is tasked with killing a mime and making it look like a suicide.<ref name="Cut Loose"/>
+
+==Plot==
+
+After the events of ''[[Dishonored 2]]'', Emily Kaldwin is reinstated as empress and begins to salvage the Empire previously broken by Delilah's rule. Billie Lurk wakes aboard her ship, the Dreadful Wale, having a recurring nightmare regarding her right arm and eye. Billie has tracked down her old mentor Daud's whereabouts to a boxing club in Albarca Baths. She makes her way there, finding that the boxing club is run by a Void-worshiping cult called the Eyeless.
+
+Billie witnesses Daud restrained by a device that cancels out his supernatural powers. She disables the device, freeing Daud. Daud is happy to see Billie and asks for her help in killing the Outsider, to which Billie agrees. On the Dreadful Wale, Daud explains that the Eyeless are in possession of a ritual knife that was originally used to create the Outsider thousands of years prior. Daud believes that the knife can be used to kill the Outsider. Billie is visited by the Outsider, who replaces her right arm and eye, granting her supernatural abilities.
+
+Billie investigates the leadership of the Eyeless. She discovers that the knife is contained in a safety deposit box in Karnaca's largest bank, and steals the keys to the deposit box from the Eyeless' leaders. Billie infiltrates the bank and steals the knife, upon which the Outsider appears and reveals that Daud has died of natural causes aboard the Dreadful Wale, to her dismay. She returns to the ship and burns it down, cremating Daud's body.
+
+Billie infiltrates the Royal Conservatory, where a former Eyeless leader had hidden important documents. They detail the location of a Void portal at an abandoned mine outside Karnaca. Billie travels to the mine, which is overseen and operated by the cult that created the Outsider. Billie learns from their notes that the Mark of the Outsider is actually his name, written in an esoteric script that only the dead can read. Billie makes her way to an artifact called "the Eye of the Dead God" and absorbs it, allowing her to safely enter the Void portal.
+
+Inside the Void, Billie makes her way to the Ritual Hold, where the Outsider resides. There she finds him bound and immobile. Billie can then either return the Outsider to the mortal realm by having Daud's spirit pronounce his real name, or use the ritual knife to kill him. Either way, the Outsider is displaced, and Billie acknowledges that with the Outsider gone, the world will be changed, as there is no longer anybody who can decide who will receive the Void's power.
+
+==Development==
+[[Dinga Bakaba]], lead designer of ''[[Dishonored 2]]'', was one of the initial people arguing for making the ''Death of the Outsider'' a standalone title.<ref name="Cut Loose">{{cite web |url=https://www.gamespot.com/articles/dishonored-death-of-the-outsider-lets-players-cut-/1100-6452891/ |title=Dishonored: Death Of The Outsider Lets Players Cut Loose As It Closes Out The Main Story |last=Fillari |first=Alessandro |date=26 August 2017 |publisher=GameSpot |access-date=2 September 2017 |archive-date=4 June 2023 |archive-url=https://web.archive.org/web/20230604153954/https://www.gamespot.com/articles/dishonored-death-of-the-outsider-lets-players-cut-/1100-6452891/ |url-status=live }}</ref> The game removes the chaos system featured in previous games, which tracked how many characters the player killed and altered the world depending on if the player had a high bodycount.<ref name="Cut Loose"/> Developers felt that removing the need to find elixirs, which were previously required to fully restore energy, encouraged players to experiment more with the full range of powers. Giving all the powers at once was "liberating" for Arkane, as they knew the full extent of what any player could do at any point in the game.<ref name="End"/> Time restraints meant that levels could not all be "themed" in the same way ''Dishonored 2''{{'}}s levels were, though some levels are intended to make the player rely on different powers than others.<ref name="End"/> Co-creative director Harvey Smith had concerns about the Semblance power when it was pitched, as he felt implementing the idea appropriately would take an excessive amount of work; ultimately the full extent and ramifications of the power were reduced to more "manageable" levels, and Smith was glad for its inclusion.<ref>{{cite web |url=https://www.pcgamesn.com/dishonored-2/dishonored-death-of-the-outsider-semblance |title=Dishonored: Death of the Outsider delivers on the social stealth we were promised a decade ago |last=Peel |first=Jeremy |date=29 August 2017 |publisher=PCGamesN |access-date=3 September 2017 |archive-date=15 July 2023 |archive-url=https://web.archive.org/web/20230715200802/https://www.pcgamesn.com/dishonored-2/dishonored-death-of-the-outsider-semblance |url-status=live }}</ref>
+
+Hazel Monforton, one of the writers for ''Death of the Outsider'', was hired by Arkane after posting an analysis of the Outsider in ''Dishonored 2'' via [[Twitter]] thread, comparing the Outsider's death to the [[Ancient Greek]] ritual of [[pharmakos]].<ref>{{Cite web|url=https://www.pcgamesn.com/dishonored-2/dishonored-death-of-the-outsiders-writers|title=One of Dishonored: Death of the Outsider's writers was hired because of her great tweets|website=PCGamesN|date=15 September 2017|language=en-GB|access-date=2019-03-27|archive-date=14 July 2023|archive-url=https://web.archive.org/web/20230714175738/https://www.pcgamesn.com/dishonored-2/dishonored-death-of-the-outsiders-writers|url-status=live}}</ref> She was eventually, according to her portfolio, brought onboard permanently as a [[narrative designer]].<ref>{{Cite web|url=https://hazelmonforton.com/about|title=About|website=Hazel Monforton|language=en-US|access-date=2019-03-27|archive-date=27 March 2019|archive-url=https://web.archive.org/web/20190327120225/https://hazelmonforton.com/about|url-status=live}}</ref>
+
+''Death of the Outsider'' is meant to bring an end to "the Kaldwin era", an arc that began in the first ''[[Dishonored]]'' with the assassination of Jessamine Kaldwin and followed characters involved with it, such as [[Corvo Attano]] and [[Emily Kaldwin]].<ref name="End">{{cite web |url=http://uk.ign.com/articles/2017/08/23/gamescom-2017-why-death-of-the-outsider-is-the-end-of-dishonored-as-we-know-it |title=Gamescom 2017: Why Death of the Outsider is the End of Dishonored as We Know It |last=O'Brien |first=Lucy |date=23 August 2017 |publisher=IGN |access-date=2 September 2017 |archive-date=1 January 2020 |archive-url=https://web.archive.org/web/20200101092815/https://uk.ign.com/articles/2017/08/23/gamescom-2017-why-death-of-the-outsider-is-the-end-of-dishonored-as-we-know-it |url-status=live }}</ref> Whether any future ''Dishonored'' games will be made is undecided, but they would feature different characters as their protagonists.<ref>{{cite web |url=http://uk.ign.com/articles/2017/08/25/quakecon-2017-future-dishonored-games-would-feature-different-characters |title=Quakecon 2017: Future Dishonored Games Would Feature Different Characters |last=Osborn |first=Alex |date=25 August 2017 |publisher=IGN |access-date=2 September 2017 |archive-date=19 September 2023 |archive-url=https://web.archive.org/web/20230919163608/https://www.ign.com/articles/2017/08/25/quakecon-2017-future-dishonored-games-would-feature-different-characters |url-status=live }}</ref>
+
+==Reception==
+{{expand section|date=October 2017}}
+{{Video game reviews
+| MC = PC: 81/100<ref>{{cite web |url=https://www.metacritic.com/game/dishonored-death-of-the-outsider/critic-reviews/?platform=pc |title=Dishonored: Death of the Outsider for PC Reviews |website=[[Metacritic]] |publisher=[[CBS Interactive]] |accessdate=4 July 2018}}</ref><br />PS4: 82/100<ref>{{cite web |url=https://www.metacritic.com/game/dishonored-death-of-the-outsider/critic-reviews/?platform=playstation-4 |title=Dishonored: Death of the Outsider for PlayStation 4 Reviews |website=[[Metacritic]] |publisher=[[CBS Interactive]] |accessdate=4 July 2018 |archive-date=16 February 2026 |archive-url=https://ghostarchive.org/archive/vnDgW |url-status=live }}</ref><br />XONE: 84/100<ref>{{cite web |url=https://www.metacritic.com/game/dishonored-death-of-the-outsider/critic-reviews/?platform=xbox-one |title=Dishonored: Death of the Outsider for Xbox One Reviews |website=[[Metacritic]] |publisher=[[CBS Interactive]] |accessdate=4 July 2018 |archive-date=16 February 2026 |archive-url=https://ghostarchive.org/archive/vX6zL |url-status=live }}</ref>
+| GSpot = 8/10<ref name="game_spot">{{cite web |url=https://www.gamespot.com/reviews/dishonored-death-of-the-outsider-review/1900-6416761/ |title=Dishonored: Death of the Outsider Review |last=Fillari |first=Alessandro |date=18 September 2017 |website=[[GameSpot]] |publisher=[[CBS Interactive Inc.]] |accessdate=18 November 2017 |archive-date=23 May 2022 |archive-url=https://web.archive.org/web/20220523091903/https://www.gamespot.com/reviews/dishonored-death-of-the-outsider-review/1900-6416761/ |url-status=live }}</ref>
+| IGN = 8.4/10<ref name="IGN">{{cite web |url=http://www.ign.com/articles/2017/09/16/dishonored-death-of-the-outsider-review |title=Dishonored: Death of the Outsider Review |last=Marks |first=Tom |date=16 September 2017 |work=IGN |accessdate=17 September 2017 |archive-date=17 September 2017 |archive-url=https://web.archive.org/web/20170917020650/http://www.ign.com/articles/2017/09/16/dishonored-death-of-the-outsider-review |url-status=live }}</ref>
+}}
+
+''[[IGN]]''{{'s}} Tom Marks considered it "a worthy end", but felt it did not reach the "high bar" of ''Dishonored 2''. Marks praised the "wonderfully detailed" levels and the encouragement to use abilities more liberally, though expressed mixed feelings at the removal of the Chaos system and lack of character progression.<ref name="IGN" /> Alessandro Fillari at ''[[GameSpot]]'' gave the game a positive review, praising the level design and individual missions, while also criticizing the story, stating that "while starting strong, the story eventually runs out of steam".<ref name="game_spot" />
+
+''[[GamesRadar+]]'' ranked it 19th on their list of the 25 Best Games of 2017.<ref>{{cite web |url=https://www.gamesradar.com/best-games-2017/ |title=The best games of 2017 |author=GamesRadar staff |date=22 December 2017 |website=[[GamesRadar+]] |publisher=[[Future plc]] |accessdate=25 March 2018 |archive-date=16 February 2026 |archive-url=https://ghostarchive.org/archive/KlDqy|url-status=live }}</ref>
+
+The game was nominated for Best Expansion in ''[[PC Gamer]]''{{'s}} 2017 Game of the Year Awards.<ref>{{cite web |url=http://www.pcgamer.com/nominees-pc-gamer-goty-2017/ |title=Games of the Year 2017: The nominees |author=PC Gamer staff |date=8 December 2017 |website=[[PC Gamer]] |publisher=Future plc |accessdate=28 January 2018 |archive-date=2 April 2023 |archive-url=https://web.archive.org/web/20230402085025/http://www.pcgamer.com/nominees-pc-gamer-goty-2017/ |url-status=live }}</ref>
+<!--
+Reviews so far:
+*GameInformer: http://www.gameinformer.com/games/dishonored_death_of_the_outsider/b/playstation4/archive/2017/09/14/a-fine-finish.aspx
+*Polygon: https://www.polygon.com/2017/9/15/16317244/dishonored-death-of-the-outsider-review
+-->
+
+===Accolades===
+{| class="wikitable sortable"
+|-
+! Year !! Award !! Category !! Result !! {{Refh}}
+|-
+| style="text-align:center;" rowspan="5" | 2017
+| rowspan="5" | Ping Awards
+| Best Console Game
+| {{Nom}}
+| rowspan="5" style="text-align:center;" | <ref>{{cite web |url=http://www.ping-awards.com/2017-nominations.php |title=Nommés aux Ping Awards 2017 |website=Ping Awards |language=French |year=2017 |accessdate=11 December 2018 |archive-date=31 October 2018 |archive-url=https://web.archive.org/web/20181031005201/http://www.ping-awards.com/2017-nominations.php |url-status=live }}</ref><ref>{{cite web |url=http://www.ping-awards.com/2017-laureats.php |title=Les lauréats des Ping Awards 2017 |website=Ping Awards |language=French |date=21 November 2017 |accessdate=11 December 2018 |archive-date=25 February 2023 |archive-url=https://web.archive.org/web/20230225045418/http://www.ping-awards.com/2017-laureats.php |url-status=live }}</ref>
+|-
+| Best PC Game
+| {{Won}}
+|-
+| Best Graphics
+| {{Nom}}
+|-
+| Best Screenplay
+| {{Nom}}
+|-
+| Best Soundtrack
+| {{Nom}}
+|-
+| style="text-align:center;" rowspan="2" | 2018
+| rowspan="1" | [[Writers Guild of America Awards 2017]]
+| Outstanding Achievement in Videogame Writing
+| {{Nom}}
+| rowspan="1" style="text-align:center;" | <ref>{{cite web |url=https://www.gamespot.com/articles/best-video-game-writing-nominees-announced-see-the/1100-6456061/ |title=Best Video Game Writing Nominees Announced, See Them All Here |last=Makuch |first=Eddie |date=11 January 2018 |website=GameSpot |publisher=CBS Interactive Inc. |accessdate=12 January 2018 |archive-date=12 January 2018 |archive-url=https://archive.today/20180112085025/https://www.gamespot.com/articles/best-video-game-writing-nominees-announced-see-the/1100-6456061/ |url-status=live }}</ref>
+|-
+| rowspan="1" | National Academy of Video Game Trade Reviewers Awards
+| Art Direction, Period Influence
+| {{Nom}}
+| rowspan="1" style="text-align:center;" | <ref>{{cite web |url=http://navgtr.org/archives/3351/ |title=Nominee List for 2017 |website=National Academy of Video Game Trade Reviewers |date=9 February 2018 |accessdate=15 February 2018 |archive-url=https://archive.today/20180215172210/http://navgtr.org/archives/3351/ |archive-date=15 February 2018 |url-status=dead }}</ref><ref>{{cite web |url=http://navgtr.org/archives/3365/ |title=Horizon wins 7; Mario GOTY |website=National Academy of Video Game Trade Reviewers |date=13 March 2018 |accessdate=14 March 2018 |archive-url=https://archive.today/20180314070824/http://navgtr.org/archives/3365/ |archive-date=14 March 2018 |url-status=dead }}</ref>
+|}
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{official|https://bethesda.net/en/game/dishonored-doto}}
+
+{{Dishonored series}}
+{{Arkane Studios}}
+
+[[Category:2017 video games]]
+[[Category:Action-adventure games]]
+[[Category:Arkane Studios games]]
+[[Category:Bethesda Softworks games]]
+[[Category:Dark fantasy video games]]
+[[Category:Dishonored (series)]]
+[[Category:Dystopian video games]]
+[[Category:Fiction about gangs]]
+[[Category:Fiction about government]]
+[[Category:First-person adventure games]]
+[[Category:Immersive sims]]
+[[Category:PlayStation 4 games]]
+[[Category:PlayStation 4 Pro enhanced games]]
+[[Category:Sequel video games]]
+[[Category:Single-player video games]]
+[[Category:Stealth video games]]
+[[Category:Steampunk video games]]
+[[Category:Video game expansion packs]]
+[[Category:Video games about cults]]
+[[Category:Video games about murder]]
+[[Category:Video games about psychic powers]]
+[[Category:Video games about revenge]]
+[[Category:Video games about the paranormal]]
+[[Category:Video games developed in France]]
+[[Category:Video games directed by Harvey Smith]]
+[[Category:Video games featuring black protagonists]]
+[[Category:Video games featuring female protagonists]]
+[[Category:Video games scored by Daniel Licht]]
+[[Category:Windows games]]
+[[Category:Xbox One games]]
+[[Category:Xbox One X enhanced games]]

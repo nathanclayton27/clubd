@@ -1,0 +1,63 @@
+{{Short description|2014 video game}}
+{{Infobox video game
+|title=Consortium
+|image=Consortium_Box_Art.jpg
+|caption=
+|developer=Interdimensional Games
+|publisher=Interdimensional Games
+|designer=Gregory MacMartin
+|composer=[[Jeremy Soule]]
+|engine=[[Source (game engine)|Source]]
+|released={{Video game release|WW|January 8, 2014<ref name="Consortium Steam Page">{{cite web|url=http://store.steampowered.com/app/264240/ |title=CONSORTIUM on Steam |publisher=[[Valve Corporation|Valve]] |date=10 December 2013|accessdate=31 December 2014}}</ref>}}
+|genre=[[Role-playing video game|Role-playing]], [[first-person shooter]]
+|modes=[[Single-player]]
+|platforms=[[Microsoft Windows|Windows]], [[Meta Quest]]
+}}
+'''''Consortium''''' is a [[first-person shooter]] [[role-playing video game]] developed by Interdimensional Games for [[Microsoft Windows]]. The game is set almost entirely on a futuristic aircraft called Zenlil, crewed by a complement with chess-themed ranks. The game was principally financed by the [[Canada Media Fund]] by awarding a grant for $500,000&nbsp;CAD in 2010.<ref>{{cite web |url=http://dev.interdimensionalgames.com/CONSORTIUM_POSTMORTEM.pdf |title=Consortium Production Post-Mortem |last1=MacMartin |first1=Gregory |date= |website=Interdimensional Games |access-date=7 May 2016 |quote= |archive-date=3 June 2016 |archive-url=https://web.archive.org/web/20160603071512/http://dev.interdimensionalgames.com/CONSORTIUM_POSTMORTEM.pdf |url-status=dead }}</ref> After a first failed [[Kickstarter]] campaign in 2012, US$70,435 was raised through Kickstarter on April 18, 2013.<ref>{{cite web|title=CONSORTIUM (Canceled) by Interdimensional Games Inc|url=https://www.kickstarter.com/projects/idgi/consortium|website=Kickstarter|accessdate=7 April 2016}}</ref><ref>{{cite web|title=CONSORTIUM by Interdimensional Games Inc|url=https://www.kickstarter.com/projects/idgi/consortium-0|website=Kickstarter|accessdate=26 August 2015}}</ref> ''Consortium'' was released on January 8, 2014.  A sequel, ''[[Consortium: The Tower]]'', was released to [[Steam (service)|Steam]] Early Access on September 21, 2017.<ref>{{cite web |url=https://store.steampowered.com/app/626250/Consortium_The_Tower/ |title=Consortium: The Tower |website=Steam |access-date=28 Jun 2018}}</ref> ''Consortium VR'' and ''Consortium Remastered'' were both released on May 21, 2024. ''Consortium VR'' is available on [[Meta Quest]] and [[SteamVR]].<ref>{{cite web |last1=MacMartin |first1=Gregory |title=CONSORTIUM VR 1.0 and CONSORTIUM Remastered coming May 21st... |url=https://www.idgi1.ca/blog/consortium-vr-1-0-and-consortium-remastered-coming-may-21st |website=iDGi |access-date=27 May 2024}}</ref>
+
+==Gameplay==
+The game features [[Dialog tree|conversational mechanics]] which allow gameplay to be uninterrupted by conversations: replies are bound to the [[function keys]] and an in-game device allows for semi-telepathic communication. The other major feature is a branching story, similar in execution to the ''[[Mass Effect]]'' trilogy, and a character alignment system: both of these allow for every playthrough to be different, even to the point of allowing the player to reveal the meta-plot of the game. While the game is a first-person shooter, combat can be entirely avoided, non-lethal or lethal (in a similar style to ''[[Deus Ex (video game)|Deus Ex]]''), and is limited due to the size of the game world.
+
+==Plot==
+The game is set in the mid-21st century, in a timeline where most world militaries have been disbanded in favour of a technologically advanced world police force called the Consortium. The player assumes control of Bishop 6, an elite Consortium soldier.  The game's fiction acknowledges that the player and Bishop 6 are different characters, connected through the interdimensional link of the video game.  [[Non-player character]]s may not be aware that Bishop 6 is being controlled from afar.<ref name=RPSPrev/>
+
+During a flight from [[Bulgaria]] to [[Ireland]] on the aircraft Zenlil, Bishop 6 must deal with hostile mercenaries while trying to uncover the identity of a traitor within the crew.
+
+==Reception==
+The game received mixed reviews, with a score of 66/100 on reviews aggregation website [[Metacritic]].<ref name=MC/>  Reviews praised the storytelling but noted the amount of [[software bug]]s in the game.<ref name=IGN/><ref name=GS/><ref name=VG/>  Interdimensional Games sought to address those bugs with the Master Edition patch, released in April 2014.<ref name=1.2/>  A retrospective at ''[[Rock, Paper, Shotgun]]'' reflected on the game's [[fourth wall]] breaking central conceit, and how it was supported by the conversation and dialogue options.  It concluded that "None of this would work in another medium. ''Consortium'' offers a solid sample of what we’ve been saying games have the potential to do for a generation."<ref name=RPSRetro/>
+
+==See also==
+*[[Amen: The Awakening]] - Spiritual precursor to the Consortium lore.
+
+==References==
+{{Reflist|refs=
+<ref name=RPSPrev>{{cite web| url=https://www.rockpapershotgun.com/2013/03/19/impressions-consortium/| title=Impressions: Consortium| author=Adam Smith| work=[[Rock, Paper, Shotgun]]| date=2014-12-30| accessdate=2017-05-19}}</ref>
+<ref name=RPSRetro>{{cite web| url=https://www.rockpapershotgun.com/2014/12/30/consortium-retrospective/| title=How To Eat Your Cake: Consortium And The Fourth Wall| author=Sin Vega| work=[[Rock, Paper, Shotgun]]| date=2017-05-19| accessdate=2017-05-19}}</ref>
+<ref name=MC>{{cite web| url=https://www.metacritic.com/game/consortium/critic-reviews/?platform=pc| title=CONSORTIUM for PC Reviews| work=[[Metacritic]]| accessdate=2017-05-19}}</ref>
+<ref name=IGN>{{cite web| url=http://ign.com/articles/2014/01/25/consortium-review| title=Consortium Review| author=Richard Cobbett| work=[[IGN]]| date=2014-01-24| accessdate=2017-05-20}}</ref>
+<ref name=GS>{{cite web| url=https://www.gamespot.com/reviews/consortium-review/1900-6415633/| title=Consortium Review| author=Leif Johnson| work=[[GameSpot]]| date=2014-01-17| accessdate=2017-05-20}}</ref>
+<ref name=VG>{{cite web| url=https://www.videogamer.com/reviews/consortium-review| title=Consortium Review| author=Matt Lees| work=VideoGamer.com| date=2014-01-30| accessdate=2017-05-20}}</ref>
+<ref name=1.2>{{cite web| url=http://steamcommunity.com/games/264240/announcements/detail/1297344598666479277| title=V1.2 Master Edition| author=Interdimensional Games| publisher=[[Steam (service)|Steam]]| date=2014-04-29| accessdate=2017-05-20}}</ref>
+}}
+
+==External links==
+*[https://web.archive.org/web/20150207001537/http://consortium-game.com/ Official website for ''Consortium''] (archived)
+*[https://www.idgi1.ca/consortium Official website for ''Consortium Remastered'' and ''VR'']
+
+[[Category:2014 video games]]
+[[Category:First-person shooters]]
+[[Category:Immersive sims]]
+[[Category:Indie games]]
+[[Category:Kickstarter-funded video games]]
+[[Category:Meta Quest games]]
+[[Category:Role-playing video games]]
+[[Category:Science fiction video games]]
+[[Category:Single-player video games]]
+[[Category:Source (game engine) games]]
+[[Category:Video games about parallel universes]]
+[[Category:Video games developed in the United States]]
+[[Category:Video games scored by Jeremy Soule]]
+[[Category:Video games set in Europe]]
+[[Category:Virtual reality games]]
+[[Category:Windows games]]
+[[Category:Works set in 2042]]

@@ -1,0 +1,544 @@
+{{Short description|2014 video game}}
+{{Use British English|date=May 2024}}
+{{Use dmy dates|date=May 2024}}
+{{good article}}
+{{About|the video game|the web series adaptation|Alien: Isolation – The Digital Series}}
+{{Infobox video game
+| title = Alien: Isolation
+| image = Alien Isolation.jpg
+| developer = [[Creative Assembly]]
+| publisher = [[Sega]]
+| director = Alistair Hope
+| producer = Jonathan Court<br>Oli Smith
+| designer = Gary Napper<br>Clive Lindop
+| programmer = Clive Gratton
+| artist = Jude Bond
+| writer = {{ubl|[[Dan Abnett]]|Dion Lay|Will Porter}}
+| composer = {{ubl|[[Christian Henson]]|[[The Flight (band)|Joe Henson<br>Alexis Smith]]}}
+| series = ''[[List of Alien, Predator, and Alien vs. Predator games|Alien]]''
+| platforms = {{Unbulleted list|[[PlayStation 3]]|[[PlayStation 4]]|[[Windows]]|[[Xbox 360]]|[[Xbox One]]|[[Linux]]|[[OS X]]|[[Nintendo Switch]]|[[Android (operating system)|Android]]|[[iOS]]}}
+| released = {{Collapsible list|title={{Nobold|7 October 2014}}|'''PS3''', '''PS4''', '''Win''', '''X360''', '''XOne'''|7 October 2014|'''Linux'''|29 September 2015|'''OS X'''|28 October 2015|'''Nintendo Switch'''|5 December 2019|'''Android''', '''iOS'''|16 December 2021}}
+| genre = [[Action-adventure]], [[Stealth game|stealth]], [[survival horror]]
+| modes = [[Single-player]]
+| engine = 
+}}
+'''''Alien: Isolation''''' is a 2014 [[survival horror game]] developed by [[Creative Assembly]] and published by [[Sega]] for [[PlayStation 3]], [[PlayStation 4]], [[Windows]], [[Xbox 360]], and [[Xbox One]]. Based on the ''[[Alien (franchise)|Alien]]'' film series, the game is set 15 years after the [[Alien (film)|original 1979 film]], and follows the engineer [[Amanda Ripley (character)|Amanda Ripley]], voiced by [[Andrea Deck]]. Amanda investigates the disappearance of her mother, [[Ellen Ripley]], aboard the space station Sevastopol, which is in disarray due to years of corporate negligence and the threat of a rampant [[Xenomorph|alien]] creature. The game emphasizes [[Stealth game|stealth]] gameplay, requiring the player to avoid, outsmart, and fight enemies with an assortment of tools and weapons.
+
+''Alien: Isolation'' was designed to resemble the original ''Alien'' film rather than its more action-oriented 1986 sequel ''[[Aliens (film)|Aliens]]'', and features a similar lo-fi, 1970s vision of what the future could look like. It runs on an [[game engine|engine]] built to accommodate the alien's behaviour and technical aspects such as atmospheric and lighting effects. Creative Assembly intended to make ''Alien: Isolation'' a [[Virtual camera system|third-person]] game, but used [[First-person (video games)|first-person]] to create a more intense experience. Several [[downloadable content]] packs were released, some of which relive scenes from the original film.
+
+''Alien: Isolation'' received positive reviews and sold over two million copies by May 2015. Its retro-futuristic art direction, sound design, and [[Artificial intelligence (video games)|artificial intelligence]] were praised, while its length received some criticism. <!--DO NOT REMOVE THIS, SEE "ACCOLADES" SECTION-->Considered one of the [[List of video games considered the best#2014|best games ever made]],<!--DO NOT REMOVE THIS, SEE "ACCOLADES" SECTION--> ''Alien: Isolation'' won several year-end awards, including Best Audio at the 2015 [[Game Developers Choice Awards]] and Audio Achievement at the [[11th British Academy Games Awards]]. It saw [[Video game port|ports]] to [[Linux]] and [[OS X]] in 2015, [[Nintendo Switch]] in 2019, and [[Android (operating system)|Android]] and [[iOS]] mobile devices in 2021. It was also added to the [[Amazon Luna]] service in 2021. A [[Alien: Isolation (TV series)|web series adaptation]] was released in 2019. A sequel, ''[[Alien: Isolation 2]]'', was announced in 2024 and formally revealed in 2026.
+
+==Gameplay==
+
+''Alien: Isolation'' is a [[Single-player video game|single-player]] [[action-adventure game]] with an emphasis on [[Stealth game|stealth]] and [[survival horror]]. The player controls [[Amanda Ripley (character)|Amanda Ripley]] from a [[First person (video games)|first-person]] perspective,<ref name="Game Awards nominees"/><ref name="PCGamer review"/> and must explore a space station and complete mission objectives to progress forward in the story while avoiding, outsmarting, and defeating enemies.<ref name="USGamer guide"/> Specific objectives vary across each of the nineteen missions, but can range from activating computers, talking to [[Non-player character|NPCs]], collecting certain items or reaching specific areas.<ref>{{Cite web |date=2014-10-01 |title=Walkthrough - Alien: Isolation Guide |url=https://www.ign.com/wikis/alien-isolation/Walkthrough |access-date=2025-01-06 |website=IGN |language=en}}</ref> The player can run, climb ladders, sneak into vents, crouch behind objects to break the line of sight with enemies, and peek over or lean around for a safe view.<ref name="USGamer guide"/> The player also has the ability to go under tables or inside empty lockers and cabinets to hide from enemies.<ref name="USGamer guide"/>
+
+Amanda encounters various enemies throughout the station, including hostile human survivors and [[Android (robot)|androids]]. The player can either eliminate them or avoid them using stealth or distractions.<ref name="USGamer guide"/> The main antagonist, the [[Xenomorph|Alien]] (or otherwise referred to by the game's characters as "The Creature"), appears briefly during certain sections across the first four missions, but begins continuously pursuing the player after the completion of mission five, "The Quarantine". The Alien cannot be defeated, requiring the player to use stealth tactics in order to survive.<ref name="PCGamer review"/> Instead of following a predetermined path, the Alien has the ability to actively investigate disturbances and hunt the player by sight or sound.<ref name="USGamer guide"/> Along the way, the player can use both a [[flashlight]] and a [[Motion detector|motion tracker]] to detect the Alien's movements. However, using any of these increases the chance of the Alien finding the player. For example, if the Alien is close enough, it will be attracted by the tracker's sound, forcing the player to use the tracker wisely and remove it as soon as it detects motion.<ref name="USGamer guide"/> The motion tracker cannot detect enemies when they are not moving and cannot determine if the Alien is up in the ducts or on ground level. On the game's hardest difficulty setting, Nightmare, the motion tracker is unreliable and the in game [[mini-map]], used to navigate and locate objectives, is unavailable.<ref name="USGamer guide"/><ref name="GSpot review"/>
+
+[[File:Alien isolation screenshot.jpg|thumb|upright=1.2|The player can use the motion tracker to track the Alien's location. When movement is detected in front of the tracker, a circle will appear on its screen, indicating where the movement is located.]]
+
+Although Amanda gains access to a [[revolver]], [[shotgun]], [[Captive bolt pistol|bolt gun]], [[flamethrower]], and [[stun baton]] over the course of the game,<ref name="EuroG review"/><ref name="GI tips"/> ''Alien: Isolation'' emphasizes evasion over direct combat by providing limited ammunition.<ref name="PCGamer review"/> The player can also craft useful items by collecting schematics and different materials. Items include [[Electromagnetic pulse|EMP]] detonators, noisemakers, [[molotov cocktail]]s, and [[pipe bomb]]s; these can help the player deal with enemies.<ref name="EuroG review"/> For example, the noisemaker can be used to attract enemies in a particular direction. The Alien is [[Pyrophobia|afraid of fire]], so using flame weapons will force it to temporarily retreat. The player has a limited amount of [[Health (game terminology)|health]] which decreases when attacked by enemies; health is restored with medkits, which can be crafted with materials in Amanda's inventory, although all of the Alien's attacks (unless it is retreating) will result in instant death.<ref name="USGamer guide"/>
+
+The space station is divided into sections connected by trams and elevators. Some doors require certain actions before entry is allowed; for example, some require a keycard or entry codes, while others need to be hacked by an access tuner or cut open with a [[welding torch]].<ref name="GSpot review"/> Computer terminals and rewiring stations can be used to access information and trigger actions such as disabling security cameras or manipulating the station's air-purification and alarm mechanism. These actions may help to momentarily divert the attention away from the player's position.<ref name="GSpot review"/> To [[Saved game|save]] game progress, the player needs to locate a save station terminal and insert Amanda's access card. There is a three second pause before the save can be completed, meaning the player can be killed while attempting to save.<ref>{{Cite web |title=Game Design Deep Dive: The save system of Alien: Isolation |url=https://www.gamedeveloper.com/design/game-design-deep-dive-the-save-system-of-i-alien-isolation-i- |access-date=2025-01-06 |website=www.gamedeveloper.com |language=en}}</ref> If Amanda dies, the player will have to restart from the last saved point.<ref name="Gamasutra save system"/> In addition to the campaign mode, ''Alien: Isolation'' features a special mode, called Survivor Mode, in which the player must complete objectives within a time limit on different challenge maps while being hunted by the Alien.<ref name="Survivor Mode"/>
+
+==Plot==
+In 2137, fifteen years after [[Ellen Ripley]] went missing onboard the [[Alien (film)#Plot|USCSS ''Nostromo'']], her daughter [[List of Alien (franchise) characters#Amanda Ripley|Amanda Ripley]] learns from [[Alien (franchise)#Premise|Weyland-Yutani]] android Christopher Samuels that the ''Nostromo''{{'}}s [[flight recorder]] has been recovered and taken to Sevastopol, a [[space station]] owned by Seegson Corporation which orbits the [[gas giant]] KG-348 in the [[Zeta Reticuli]] system. Samuels offers Amanda a place on the retrieval team to give her closure, and she accepts. Amanda, Samuels and Weyland-Yutani executive Nina Taylor travel to the station via the USCSS ''Torrens'' with the help of the ship's captain Diane Verlaine. After finding the station too damaged to dock, the trio attempt to enter it via a [[Extravehicular activity|spacewalk]], but their [[Extravehicular activity|EVA]] line is severed by an explosion, and Amanda is separated from the others.
+
+Making her way through the station, Amanda discovers that it has descended into chaos due to the presence of a hostile [[Xenomorph|alien creature]] onboard. She eventually finds the flight recorder, but discovers that its data has been corrupted. Amanda then makes her way to Samuels and Taylor; retrieving medical supplies for an injured Taylor, she meets [[Marshal]] Waits and follows him back to his bureau. There, Amanda meets the imprisoned captain of the USCSS ''Anesidora'', Henry Marlow, who explains he recovered the flight recorder and went to [[Aliens (film)#Plot|LV-426]], where his wife was impregnated by a [[Xenomorph#Facehugger|facehugger]] before she fatally birthed the creature on Sevastopol. Waits convinces Amanda to lure the creature to one of the station's modules, where it can be ejected into space. However, Waits ejects the module with Amanda still inside, forcing her to space-jump back to Sevastopol using a [[space suit]].
+
+Amanda returns to the bureau to confront Waits, but before she arrives Sevastopol's service androids begin killing the remaining humans, including Waits. Working with Waits' deputy Ricardo, Amanda links up with Samuels, who sacrifices himself to help her access the control core of Sevastopol's [[artificial intelligence]] APOLLO and is destroyed in the process. Amanda also learns from Ricardo that Taylor was secretly sent to retrieve the creature and freed Marlow. At the core, Amanda discovers Weyland-Yutani purchased Sevastopol from Seegson before she arrived at the station, ordering APOLLO to protect the creature at all costs. Amanda informs APOLLO that the creature is no longer onboard, but it responds by stating that "reactor scans are unverified". Descending into the reactor, Amanda finds a nest with numerous aliens, and initiates a reactor purge in an attempt to destroy it. However, this inadvertently forces the aliens to leave the nest, and they begin to hunt Amanda again.
+
+Ricardo informs Ripley that Marlow has returned to the ''Anesidora'', and she follows him. There, Amanda discovers a personal message from Ellen before being confronted by Marlow, who attempts to overload the ship's reactor to destroy Sevastopol and the aliens. Taylor, who also went to the ''Anesidora'', knocks out Marlow but is too late to stop the overload and both are killed in the subsequent explosion, forcing Amanda to flee the ship before it is destroyed. The explosion damages Sevastopol's orbital stabilizers, causing the station to slowly drift into KG-348's atmosphere. Amanda contacts Verlaine for extraction, but a facehugger attacks Ricardo, forcing her to leave him. After helping the ''Torrens'' detach from the station, Amanda enters the ship just before Sevastopol is destroyed. However, she finds an alien has boarded the ''Torrens'' and killed Verlaine as well; cornered into an airlock, she ejects both herself and it into space. Some time later, a searchlight finds an adrift and unconscious Amanda.
+
+==Development==
+{{Multiple image
+| align     = right
+| direction = vertical
+| image1    = Alien Isolation Art Exterior.jpg
+| width1    = 250
+| image2    = Alien Isolation Art Interior.jpg
+| width2    = 250
+| caption2  = Like the original ''[[Alien (film)|Alien]]'' film, ''Alien: Isolation'' features a lo-fi, '70s vision of what the future would look like. These concept artworks show both the exterior and interior of the game's main setting, the Sevastopol space station.
+}}
+
+''Alien: Isolation'' was developed by [[Creative Assembly]], which is best known for their work on the ''[[Total War (video game series)|Total War]]'' [[strategy video game]] series.<ref name="Edge feature"/> A game based on the ''Alien'' series from [[20th Century Fox]] was conceived when Creative Assembly finished ''[[Viking: Battle for Asgard]]'' in 2008, after the publisher, [[Sega]], acquired the rights to develop ''Alien'' games in December 2006.<ref name="Edge feature"/><ref name="Alien license"/> A six-person team developed the first prototype to pitch the idea, wherein one player would control the Alien manually while another would conceal themselves in an environment and try to hide from the creature. The game captured the attention of Sega and the project was eventually approved.<ref name="Edge feature"/> As Creative Assembly had no experience with survival horror games, it hired people from studios such as [[Bizarre Creations]], [[Black Rock Studio|Black Rock]], [[Crytek]], [[Ubisoft]], and [[Realtime Worlds]].<ref name="Edge feature"/> According to the director, Alistair Hope, the team grew from "a couple of guys crammed in with the ''Total War'' team" to 100 by 2014.<ref name="Edge feature"/>
+
+Creative Assembly designed the game more in line with [[Ridley Scott]]'s 1979 film ''[[Alien (film)|Alien]]'' than [[James Cameron]]'s more action-oriented 1986 sequel ''[[Aliens (film)|Aliens]]''.<ref name="PCGamer Making of"/> To help them authentically recreate the atmosphere of the film, Fox provided three terabytes of original production material, including costume photography, concept art, set design, photos, videos and sound effects.<ref name="PCGamer Making of"/><ref name="18 things"/> The artist John Mckellan said, "It was a proper gold mine. We saw angles of things we'd never seen before."<ref name="PCGamer Making of"/> During the first stage of development, the developers deconstructed the film to find out what made its setting unique. This would allow them to build new environments that were faithful to it.<ref name="PCGamer Making of"/> The composers deconstructed the film soundtrack to identify the main cues and extend the soundtrack to fill in the length of the game.<ref name="GameFront feature 4"/> The developers also met the ''Alien'' and ''[[Blade Runner]]'' editor [[Terry Rawlings]], who gave them additional insight.<ref name="PCGamer Making of"/>
+
+Rather than pursue a shiny, high-tech [[science fiction]] look, the designers recreated the setting and feel of ''Alien'' using the work of the concept artists [[Ron Cobb]] and [[Jean Giraud|Mœbius]].<ref name="18 things"/> As a result, the game features a lo-fi, 1970s vision of the future, with features "clunky" machinery such as phone receivers, monochrome displays and distorted [[Cathode ray tube|CRT]] monitors.<ref name="PCGamer review"/><ref name="18 things"/> To create period-authentic distortion on the in-game monitors, the developers recorded their animations onto [[VHS]] and [[Betamax]], then filmed those sequences playing on an old portable television while adjusting the tracking settings.<ref name="18 things"/> As digital hacking had not been conceived in the 1970s, the hacking device was built the way it would have been built on the set of the film, and requires players to tune into a computer's signal while selecting icons on its screen.<ref name="18 things"/> The team had a rule of not creating anything that the film crew could not have created as a prop in 1979.<ref name="GameFront feature 3" />
+
+Creative Assembly wanted ''Alien: Isolation'' to have a story that was closely related to the film. They explored a story set 15 years after the film which would involve Ellen Ripley's daughter and the ''Nostromo''{{'}}s flight recorder.<ref name="PCGamer Making of"/> The writer Will Porter said creating the backstory for Amanda was "refreshing" as he felt that she was an overlooked character.<ref name="Hero Complex Amanda"/> The actress [[Sigourney Weaver]] reprised her role as Ellen Ripley to voice small sections because she felt that the story was interesting and true to the film.<ref name="Weaver voice"/> Along with Weaver, the original ''Alien'' cast, which includes [[Tom Skerritt]], [[Veronica Cartwright]], [[Harry Dean Stanton]], and [[Yaphet Kotto]], reprised their roles for the separate [[downloadable content]] missions, marking the first time they were reunited since the release of the film.<ref name="IGN DLC"/> All the characters were created with 3D face scans.<ref name="GameFront feature 2"/> The story was rewritten about a year before release; elements of the previous story were discovered in a console build.<ref name="Old Story"/>
+
+''Alien: Isolation'' runs on a proprietary [[game engine|engine]] that was built from scratch by Creative Assembly.<ref name="18 things"/> Previously used in ''[[Viking: Battle for Asgard]]'',<ref name="Clive Gratton Engine Talk"/> the engine was adapted to accommodate technical aspects such as the atmospheric and lighting effects and the Alien's behavioural design.<ref name="18 things"/> The engine's [[Deferred shading|deferred rendering]] allowed artists to place "hundreds" of dynamic lights in a scene and achieve great geometric detail.<ref name="AMD Gaming"/> A major [[toolchain]] update occurred six months into development. Although the new tools eventually improved [[workflow]], they initially caused major disruptions because previous work had to be discarded or [[Porting|ported]] into the new tools, taking valuable development time away from the team.<ref name="Clive Gratton Engine Talk"/> The Alien was designed to look similar to [[H. R. Giger]]'s original design, including the skull underneath its semitransparent head. However, the designers did alter its humanoid legs with recurved ones to provide the Alien a walk cycle that would hold up to scrutiny during longer encounters with the player.<ref name="CraveOnline article"/> Between 70 and 80 different sets of animation for the Alien were created.<ref name="18 things"/> The Alien's [[Artificial intelligence (video games)|artificial intelligence]] was programmed with a complex set of behavioural designs that slowly unlock as it encounters the player, creating the illusion that the Alien learns from each interaction and appropriately adjusts its hunting strategy.<ref name="18 things"/> The gameplay designer Gary Napper said, "We needed something that would be different every time you played it. You're going to die a lot, which means restarting a lot, and if the Alien was scripted, you'd see the same behaviour. That makes the Alien become predictable, and a lot less scary."<ref name="18 things"/> The save system was inspired by a scene in the film where Captain Dallas uses a key-card to access ''Nostromo''{{'}}s computer, Mother.<ref name="Gamasutra save system"/>
+
+The developers originally planned to add a feature that would allow players to craft weapons, but the idea was ultimately discarded. According to Hope, "We thought about what people would want to do in order to survive. We explored different ideas, and one of them was fashioning weapons to defend yourself. That was quite early on, but then we realised that this game isn't really about pulling the trigger."<ref name="PCGamer Making of"/> Another cancelled feature was the Alien's iconic acid blood as a game mechanic, which could melt through metal like in the film. Although the feature was reportedly implemented at one point, it was removed because the developers felt it would take the game in a "weird" direction.<ref name="PCGamer Making of"/><ref name="18 things"/> Although the game is played from a first-person perspective, it was developed for a considerable amount of time in [[Virtual camera system|third-person]] view. The perspective was changed after the team realised that first person changed the gameplay experience significantly. Hope explained that, in third-person view, ''Alien: Isolation'' would have become "a game about jockeying the camera and looking after your avatar. But in first-person it's you that's being hunted. If you're hiding behind an object and you want to get a better view of your surroundings, you have to move."<ref name="PCGamer Making of"/> Development took four years after Creative Assembly pitched the idea to Sega.<ref name="PCGamer Making of"/> ''Alien: Isolation'' was [[Software release life cycle#Release to manufacturing (RTM)|released to manufacturing]] on 9 September 2014.<ref name="Going gold"/> It is dedicated to Simon Franco, a programmer who died during development.<ref name="EuroG honour"/>
+
+==Marketing and release==
+''Alien: Isolation'' was first unveiled on 12 May 2011 when UK government minister [[Ed Vaizey]] visited Creative Assembly and revealed on his [[Twitter]] account that the studio was hiring for an ''Alien'' game.<ref name="PCGamer Vaizey"/> Although no gameplay details were confirmed, Sega confirmed that ''Isolation'' would be released for consoles.<ref name="PCGamer Vaizey"/> Sega boss Mike Hayes said it was "very much a [[AAA (video game industry)|triple-A]] project. We want this to be a peer to the likes of ''[[Dead Space 2]]''."<ref name="PCGamer Vaizey"/> Although the game's name was anticipated following a trademark registration in October 2013 and some screenshots leaked in December 2013,<ref name="IGN trademark"/><ref name="GSpot screens leaked"/> ''Alien: Isolation'' was announced and confirmed for [[PlayStation 3]], [[PlayStation 4]], [[Windows]], [[Xbox 360]], and [[Xbox One]] with the release of a teaser trailer on 7 January 2014.<ref name="IGN trailer"/> The fact that Sega's previous ''Alien'' game, ''[[Aliens: Colonial Marines]]'', received a negative public reaction did not affect Creative Assembly.<ref name="Colonial Marines"/> According to Napper, the vocal reaction from the ''Alien'' fanbase assured the team that they were building a game the fanbase wanted.<ref name="Colonial Marines"/>
+
+''Alien: Isolation'' was presented at [[E3 2014]], where journalists had a chance to play the game.<ref name="Polygon E3 demo"/> ''[[Polygon (website)|Polygon]]'' described the demo as effective and terrifying.<ref name="Polygon E3 demo"/> The game was also playable on the [[Oculus Rift]] [[virtual reality]] (VR) headset that was shown at the show.<ref name="Polygon Oculus"/> It was awarded Best VR Game and was nominated for Game of the Show, Best Xbox One Game, Best PlayStation 4 Game, Best PC Game, and Best Action Game at the ''[[IGN]]''{{'}}s Best of E3 2014 Awards.<ref name="IGN E3 Awards 1"/><ref name="IGN E3 Awards 2"/><ref name="IGN E3 Awards 3"/> At the 2014 [[Game Critics Awards]], it was nominated for Best of Show, Best Console Game, and Best Action/Adventure Game.<ref name="GCA nom"/><ref name="GCA win"/> In August 2014, a cinematic trailer was shown at [[Gamescom]].<ref name="Cinematic trailer"/>
+
+''Alien: Isolation'' was released on 7 October 2014.<ref name="EuroG release date" /> ''Isolation'' was [[porting|ported]] by [[Feral Interactive]] to [[Linux]] and [[OS X]] in late 2015,<ref name="Collection OSX Linux" /> to [[Nintendo Switch]] on 5 December 2019,<ref name="Switch announcement" /><ref name="Switch release" /> and to [[Android (operating system)|Android]] and [[iOS]] devices on 16 December 2021,<ref name="Mobile release" /> and was added to the [[Amazon Luna]] service on 14 October 2021.<ref name="Luna release" />
+
+===Downloadable content===
+''Alien: Isolation'' supports additional in-game content in the form of [[downloadable content]] packs. The first two packs, ''Crew Expendable'' and ''Last Survivor'', were made available at the time of release.<ref name="IGN DLC"/> ''Crew Expendable'', included in the "Nostromo Edition", relives a scene from ''Alien'' and involves the player controlling Ripley, Dallas or Parker attempting to flush an Alien from the ''Nostromo''{{'}}s air vents into the ship's airlock.<ref name="IGN DLC"/> ''Last Survivor'', which was originally made available to players who pre-ordered at certain retailers, is set during the film's finale and involves the player controlling Ripley as she tries to activate the ''Nostromo''{{'}}s self-destruct sequence and reach the escape shuttle.<ref name="IGN DLC"/>
+
+Between October 2014 and March 2015, five additional downloadable content packs were released, expanding the Survivor Mode with new features.<ref name="5 new DLCs"/> A [[Season pass (video gaming)|season pass]] to these five Survivor Mode packs could be purchased before they were released.<ref name="Season pass"/> The first pack, ''Corporate Lockdown'', was released on 28 October 2014 and includes three new challenge maps where the player must complete certain objectives.<ref name="5 new DLCs"/> The second pack, ''Trauma'', was released on 2 December 2014 and includes a new character for use in three additional challenge maps.<ref name="Trauma DLC"/> The third pack, ''Safe Haven'', was released on 13 January 2015 and introduces a new character and a new gameplay mode where the player must complete a series of missions under a time limit.<ref name="Safe Heaven DLC"/> The fourth pack, ''Lost Contact'', which was released on 10 February 2015, is similar to ''Safe Haven'', but offers a different playable character and setting.<ref name="Lost Contact DLC"/> The last pack, ''The Trigger'', was released on 3 March 2015 and includes three additional challenge maps and a new playable character.<ref name="Trigger DLC"/> A collection featuring the base game and all the downloadable content packs was released for Linux, OS X, PlayStation 4 and Xbox One in late 2015.<ref name="Collection OSX PC PS4 XONE"/>
+
+== Music and sound design ==
+''Isolation''<nowiki/>'s music was produced by English duo [[The Flight (band)|The Flight]] and [[Christian Henson]]. ''Isolation''<nowiki/>'s sound design was produced by sound designers Byron Bullock and Sam Cooper.<ref name="sound designers" /> Together, music and sound design was nominated for six awards in 2014-2015 and won four of them, namely the "Audio Achievement" award at the [[11th British Academy Games Awards]], for best audio at the 15th Game Developers Choice Awards and the "Sound Effects" and "Use of Sound, Franchise" at the 14th National Academy of Video Game Trade Reviewers awards.<ref name="BAFTA awards" /><ref name="Game Awards 2014 Winners" /><ref name="GDCA awards" /><ref name="NAVGTR Awards" />
+
+In 2024, for the game's 10th anniversary, the soundtrack was officially released on [[LP record|vinyl]], [[Cassette tape|cassette]] and [[Music streaming service|streaming]] by [[Hollywood Records]].<ref name="soundtrack release" /> Sega also partnered with the [[Lofi Girl]] music label for an ambiance music [[YouTube]] video.<ref name="Lofi Girl Partnership" />
+
+==Reception==
+===Sales===
+According to Sega, ''Isolation'' had sold more than one million copies worldwide by January 2015.<ref name="Sales January 2015" /> By March, it had sold over 2.1 million copies in Europe and the US,<ref name="Sales May 2015" /> below the expectations of Sega.<ref name=":0">{{Cite web |last=Handrahan |first=Matthew |date=2015-09-30 |title=Sega Europe: 'We're definitely on the right track' |url=https://www.gamesindustry.biz/sega-europe-were-definitely-on-the-right-track |access-date=2024-09-28 |website=[[GamesIndustry.biz]] |language=en}}</ref>
+
+===Critical response===
+{{Video game reviews
+| MC = PC: 81/100<ref name="Metacritic PC"/><br />PS4: 79/100<ref name="Metacritic PS4"/><br />XONE: 78/100<ref name="Metacritic XONE"/><br />NS: 83/100<ref name="Metacritic NS"/><br />iOS: 83/100<ref name="Metacritic iOS"/>
+| Destruct = 8.5/10<ref name="Destruct review"/>
+| EGM = 8/10<ref name="EGM review"/>
+| EuroG = 8/10<ref name="EuroG review"/>
+| GI = 7.75/10<ref name="GI review"/>
+| GameRev = 4.5/5<ref name="GameRev review"/>
+| GSpot = 6/10<ref name="GSpot review"/>
+| GRadar = 4.5/5<ref name="GRadar review"/>
+| GT = 7.4/10<ref name="GT review"/>
+| IGN = 5.9/10<ref name="IGN review"/>
+| PCGUS = 93/100<ref name="PCGamer review"/>
+| Poly = 6.5/10<ref name="Poly review"/>
+| TG = 5/5<ref name="TG review"/>
+| TA = 5/5<ref name="TA review"/>
+}}
+
+Critical reception for ''Alien: Isolation'' was "generally favourable", according to review aggregator [[Metacritic]].<ref name="Metacritic PC"/><ref name="Metacritic PS4"/><ref name="Metacritic XONE"/> Josh Harmon of ''[[Electronic Gaming Monthly]]'' felt that ''Alien: Isolation'' "succeeds as a genuine effort to capture the spirit of the film franchise in playable form, rather than a lazy attempt to use it as an easy backdrop for a cash-in with an ill-fitting genre."<ref name="EGM review"/> Writing for ''[[GameSpot]]'', Kevin VanOrd praised the tense and frightening gameplay, stating that "when all mechanics are working as intended, alien-evasion is dread distilled into its purest, simplest form."<ref name="GSpot review"/> However, he criticised the "trial and error" progression and frustrating distances between save points.<ref name="GSpot review"/> Jeff Marchiafava of ''[[Game Informer]]'' stated similar pros, but criticised the voice acting and dialogue.<ref name="GI review"/>
+
+The visuals and atmosphere were praised. ''Polygon'' editor Arthur Gies felt that ''Alien: Isolation'' is "a beautiful game, full of deep shadows and mystery around every corner," while Dan Whitehead of ''[[Eurogamer]]'' praised the lighting and unusually compelling environment design.<ref name="EuroG review"/><ref name="Poly review"/> ''IGN''{{'}}s Ryan McCaffrey gave high marks to the retro-futuristic art direction and sound design, writing: "From wisps of smoke that billow out of air vents to clouds of white mist that obscure your vision when you rewire an area's life-support systems in order to aid your stealthy objectives, ''Isolation'' certainly looks and sounds like a part of the ''Alien'' universe."<ref name="IGN review"/> Similarly, ''PC Gamer'' said that the art design sets ''Alien: Isolation'' apart from the likes of ''[[System Shock]]'' or ''[[Dead Space (2008 video game)|Dead Space]]'' and creates a "convincing science-fiction world, with machines and environments that are functional and utilitarian, rather than overtly futuristic."<ref name="PCGamer review"/>
+
+The characters were criticised; ''Game Informer'' stated that "Amanda exhibits little growth or personality, other than concern for her fellow humans and a desire not to die gruesomely,"<ref name="GI review"/> while Blake Peterson of ''[[GameRevolution]]'' noted that none of the characters are fully developed. According to him, "we never spend enough time with them to build the emotional bond necessary for their inevitable deaths to mean anything."<ref name="GameRev review"/> ''[[GameTrailers]]'' said that most of the computer terminals contain unoriginal logs to describe predictable events, but also remarked that reading reports from different computer terminals "grounds Sevastopol in an appreciable way."<ref name="GT review"/>
+
+Writing for ''[[GamesRadar]]'', David Houghton praised the Alien's advanced artificial intelligence, stating that "progress becomes a case of 'if' and 'how', not 'when'. Movement is measured in inches and feet rather than metres, and simply remaining alive becomes more exhilarating than any objective achieved."<ref name="GRadar review"/> Peterson praised the gameplay as tense, scary and effective, writing that ''Alien: Isolation'' is "a solid, incredibly striking example of the [survival horror] genre that uses its first person perspective to greater personalize the horror".<ref name="GameRev review"/> ''PC Gamer'' credited the crafting system for creating "a lot of unexpected depth", allowing players to outsmart enemies in multiple ways.<ref name="PCGamer review"/> The Survivor Mode was praised by Chris Carter of ''[[Destructoid]]'', who felt it offered players different feelings and experiences each time they played it.<ref name="Destruct review"/>
+
+Although the gameplay was praised by several reviewers, some found ''Isolation'' unnecessarily long, repetitive, and unforgiving.<ref name="GSpot review"/><ref name="IGN review"/><ref name="Poly review"/> In a mixed review, McCaffrey felt that it did not offer many options of survival, requiring players to spend most of their time hiding in lockers "staring at the motion tracker".<ref name="IGN review"/> ''Polygon'' criticised the overexposure to the Alien, turning ''Alien: Isolation'' into an irritating experience. As Gies explained, "Every time I thought I heard the monster, every blip on my motion tracker, was a cause for a tightness in my chest at first. By the 300th time I dived under a table or into a locker, I wasn't scared anymore — I was annoyed."<ref name="Poly review"/> Despite the criticism, ''Alien: Isolation'' was considered "brave" by ''IGN'' due to its difficult gameplay, a feature that is uncommon in games with large development costs.<ref name="Brave game"/>
+
+===Accolades===
+''Alien: Isolation'' received year-end awards including ''PC Gamer''{{'}}s Game of the Year 2014, Audio Achievement at the [[11th British Academy Games Awards]], Best Audio at the 15th [[Game Developers Choice Awards]], and four awards at the 14th National Academy of Video Game Trade Reviewers.<ref name="PCGamer GotY"/><ref name="BAFTA awards"/><ref name="GDCA awards"/><ref name="NAVGTR Awards"/> It was named the best game of 2014 by ''[[The Daily Telegraph]]'',<ref name="Telegraph top 2014" /> second-best by ''[[Empire (magazine)|Empire]]'' and ''[[Time (magazine)|Time]],<ref name="Empire top 2014" />''<ref name="Time top 2014" /> and fourth by ''[[The Guardian]].''<ref name="Guardian top 2014" /> The ''[[Daily Mirror]]'' named it one of the 10 best games of 2014, and ''Eurogamer'' readers voted it the third-best.<ref name="EuroG reader top 2014" /><ref name="Daily Mirror top 2014" /> In 2015, ''Kotaku'' named ''Alien: Isolation'' the sixth-best horror game,<ref name="Kotaku Best Horror" /> and in 2018 ''[[The A.V. Club]]'' ranked it the fifth-best<ref name="AV top horror" /> and ''[[GamesRadar+]]'' ranked it the third-best.<ref name="Radar top horror" /> ''[[GamesRadar+|GamesRadar]]'', ''[[Game Informer]]'', ''[[GamesTM]]'', ''Gaming Bolt'', ''[[Sports Illustrated]]'' and ''[[USA Today]]'' named ''Alien: Isolation'' one of the [[List of video games considered the best#2014|best video games ever made]].{{efn|Multiple references:<ref name=GamesRadar2015/><ref name=GTM2015/><ref name=GTM2018/><ref name=GI2018/><ref name=HG101Bonus/><ref name=GLHFUSAToday/><ref name=GLHFSportsIllustrated/><ref name=GamingBolt2024/>}}
+
+{| class="wikitable collapsible collapsed" style="width:100%;"
+|-
+! List of awards and nominations
+|-
+|style="padding:0; border:none;"|
+{|class="wikitable" style="border:none; margin:0; width:100%;"
+|-
+! Year !! Award !! Category !! Recipient!! Result !! class="unsortable" | {{Refh}}
+|-
+| rowspan="10" align="center" | 2014
+| The ''[[PC Gamer]]'' 2014 Game of the Year Awards
+| Game of the Year
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="PCGamer GotY"/>
+|-
+| ''[[GamesRadar]]''{{'}}s Game of the Year 2014 Awards
+| Best Horror Game
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="GRadar Best Horror"/>
+|-
+| ''[[Rock, Paper, Shotgun]]''{{'}}s Bestest Best Games of 2014
+| Best Horror Game
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="RPS Best Horror"/>
+|-
+| ''[[New Statesman]]''{{'}}s The Games of the Year 2014
+| The Best Game
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="NewS GotY"/>
+|-
+| ''[[Giant Bomb]]''{{'}}s 2014 Game of the Year Awards
+| Best Horror Game
+| ''Alien: Isolation''
+| {{won|place=silver|Runner-Up}}
+| style="text-align:center;"| <ref name="GB Best Horror"/>
+|-
+| rowspan="2" | [[The Game Awards 2014]]
+| Best Action/Adventure
+| ''Alien: Isolation''
+| {{nom}}
+| rowspan="2" style="text-align:center;"| <ref name="Game Awards 2014 Nominees"/><br/><ref name="Game Awards 2014 Winners"/>
+|-
+| Best Score/Soundtrack
+| ''Alien: Isolation''
+| {{nom}}
+|-
+| rowspan="3" | ''[[Kotaku]]'' Australia Awards 2014
+| Console Game of the Year
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="Kotaku CGotY"/>
+|-
+| Overall Game of the Year
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="Kotaku OGotY"/>
+|-
+| Biggest Surprise of the Year
+| ''Alien: Isolation''
+| {{won}}
+| style="text-align:center;"| <ref name="Kotaku BSotY"/>
+|-
+| rowspan="14" align="center" | 2015
+| rowspan="6" | [[11th British Academy Games Awards]]
+| [[British Academy Games Award for Best Game|Best Game]]
+| ''Alien: Isolation''
+| {{nom}}
+| rowspan="6" style="text-align:center;"| <ref name="BAFTA awards"/>
+|-
+| British Game
+| ''Alien: Isolation''
+| {{nom}}
+|-
+| Game Design
+| ''Alien: Isolation''
+| {{nom}}
+|-
+| Game Innovation
+| ''Alien: Isolation''
+| {{nom}}
+|-
+| Audio Achievement
+| ''Alien: Isolation''
+| {{won}}
+|-
+| Music
+| ''Alien: Isolation''
+| {{nom}}
+|-
+| rowspan="3" | 15th [[Game Developers Choice Awards]]
+| [[Game Developers Choice Award for Game of the Year|Game of the Year]]
+| ''Alien: Isolation''
+| {{nom}}
+| rowspan="3" style="text-align:center;"| <ref name="GDCA awards"/>
+|-
+| Best Audio
+| ''Alien: Isolation''
+| {{won}}
+|-
+| Best Visual Arts
+| ''Alien: Isolation''
+| {{nom}}
+|-
+| rowspan="4" | 14th National Academy of Video Game Trade Reviewers awards
+| Game Engineering
+| ''Alien: Isolation''
+| {{won}}
+| rowspan="4" style="text-align:center;"| <ref name="NAVGTR Awards"/>
+|-
+| Lighting/Texturing
+| ''Alien: Isolation''
+| {{won}}
+|-
+| Sound Effects
+| ''Alien: Isolation''
+| {{won}}
+|-
+| Use of Sound, Franchise
+| ''Alien: Isolation''
+| {{won}}
+|-
+| [[Visual Effects Society Awards 2014|13th Visual Effects Society Awards]]
+| Outstanding Real-Time Visuals in a Video Game
+| Jude Bond, Al Hope, Howard Rayner, Oriol Sans Gomez
+| {{nom}}
+| style="text-align:center;"| <ref name="VES Nominees"/><br/><ref name="VES Winners"/>
+|}
+|}
+
+==Future==
+===Sequel===
+{{Main|Alien: Isolation 2}}
+In 2014, lead game designer Gary Napper said the team often discussed ideas for a sequel.<ref name="Possible Sequel" /> Creative Assembly studio director Tim Heaton said in 2015 that a sequel was "not out of the question", but questioned whether Sega would fund another expensive [[AAA (video game industry)|AAA]] project after ''Isolation'' sold about 2.1 million copies without becoming a major commercial breakout.<ref name=":0" /> In 2017, ''[[Eurogamer]]'' reported that rumours of ''Alien: Isolation 2'' being in development were incorrect and that most of the original game's design team had left Creative Assembly.<ref name="Sequel rumor" />
+
+On 7 October 2024, the tenth anniversary of the game's release, Creative Assembly announced that a sequel was in early development.<ref name=":1">{{Cite web |last=Yin-Poole |first=Wesley |date=2024-10-07 |title=Alien: Isolation 2 Confirmed |url=https://www.ign.com/articles/alien-isolation-2-confirmed |access-date=2024-10-07 |website=[[IGN]] |language=en}}</ref> In April 2026, Sega released a teaser trailer titled "False Sense of Security".<ref name="GI2026Teaser">{{cite web |last=LeBlanc |first=Wesley |date=27 April 2026 |title=We're Finally Getting A Sequel To Alien: Isolation, 12 Years Later |url=https://gameinformer.com/2026/04/27/were-finally-getting-a-sequel-to-alien-isolation-12-years-later |access-date=6 June 2026 |website=[[Game Informer]]}}</ref> The game, titled ''[[Alien: Isolation 2]]'', was formally revealed at [[Summer Game Fest]] in June 2026 for [[Nintendo Switch 2]], [[PlayStation 5]], [[Windows]], and [[Xbox Series X and Series S]].<ref name="VGCReveal">{{cite web |last=Scullion |first=Chris |date=5 June 2026 |title=Alien Isolation 2 gets its first full trailer |url=https://www.videogameschronicle.com/news/alien-isolation-2-gets-its-first-full-trailer/ |access-date=6 June 2026 |website=[[Video Games Chronicle]]}}</ref><ref name="GIReveal">{{cite web |last=Hilliard |first=Kyle |date=5 June 2026 |title=Alien Isolation 2 Is The Official Title Of The Sequel |url=https://gameinformer.com/sgf-2026/2026/06/05/alien-isolation-2-is-the-official-title-of-the-sequel |access-date=6 June 2026 |website=[[Game Informer]]}}</ref>
+
+===Other media===
+Two comic book sequels, ''Aliens: Resistance'' and ''Aliens: Rescue'', were released in 2019.<ref name="Aliens Resistance" /><ref name="Aliens Rescue" /> A spin-off developed by D3 Go, ''Alien: Blackout'', was released for mobile devices on 24 January 2019.<ref name="Alien Blackout review" /> It was shut down on 31 October 2023.<ref>{{cite web|url=https://www.pockettactics.com/alien-blackout/shutdown|title=It's lights out for Alien: Blackout as 505 Go shutters the mobile game|work=Pocket Tactics|last=Partleton|first=Kayleigh|date=13 October 2023|access-date=8 December 2023|archive-date=8 December 2023|archive-url=https://web.archive.org/web/20231208121314/https://www.pockettactics.com/alien-blackout/shutdown|url-status=live}}</ref> In 2016, a [[pinball video game]] adaptation, ''Aliens vs. Pinball'', was released for the ''[[Zen Pinball 2]]'' and ''[[Pinball FX 2]]'' video games developed by [[Zen Studios]].<ref name="Pinball adaptation"/> A [[novelisation]] by [[Keith DeCandido]],<ref name="Novelization"/> and a [[streaming television]] [[Alien: Isolation (TV series)|series adaptation]] by Jeff Juhasz and Fabien Dubois, were released in 2019.<ref name="Digital series"/> ''[[Alien: Romulus]]'' (2024) includes several elements from the game.{{efn|Multiple references:<ref>{{Cite web |last=Mathai |first=Jeremy |date=15 August 2024 |title=''Alien: Romulus'' Pays Tribute To A Beloved Alien Video Game |url=https://www.slashfilm.com/1642678/alien-romulus-pays-tribute-alien-isolation-video-game/ |url-status=live |archive-url=https://web.archive.org/web/20240815150050/https://www.slashfilm.com/1642678/alien-romulus-pays-tribute-alien-isolation-video-game/ |archive-date=15 August 2024 |access-date=15 August 2024 |website=[[/Film]]}}</ref><ref>{{Cite web |title=Alien: Romulus - 24 Easter Eggs And References To The Alien Franchise |url=https://www.gamespot.com/gallery/alien-romulus-24-easter-eggs-and-references-to-the-alien-franchise/2900-5687/ |access-date=2024-08-20 |website=GameSpot |language=en-US}}</ref><ref>{{Cite web |last=Farley |first=Jordan |date=2024-08-12 |title=Alien: Romulus director explains his new film's big Alien: Isolation Easter egg |url=https://www.gamesradar.com/entertainment/sci-fi-movies/alien-romulus-alien-isolation-easter-egg-emergency-phone/ |access-date=2024-08-20 |magazine=Total Film |publisher=GamesRadar+ |language=en}}</ref><ref>{{Cite web |last=Milici |first=Lauren |date=2024-07-22 |title=Alien: Romulus has a perfect Easter egg from the best Alien game |url=https://www.gamesradar.com/entertainment/sci-fi-movies/alien-romulus-has-a-perfect-easter-egg-from-the-best-alien-game/ |access-date=2024-08-20 |magazine=Total Film |publisher=GamesRadar+ |language=en}}</ref>}} In the [[expansion pack]] ''[[Cyberpunk 2077: Phantom Liberty]]'' (2023), the mission titled ''Somewhat Damaged'' draws inspiration from ''Isolation''.<ref>{{Cite web |last=Purslow |first=Matt |date=2024-10-26 |title=How Cyberpunk 2077: Phantom Liberty Became a Survival Horror Game (For One Mission) - Art of the Level |url=https://www.ign.com/articles/how-cyberpunk-2077-phantom-liberty-became-a-survival-horror-game-for-one-mission-art-of-the-level |access-date=2025-09-24 |website=IGN |language=en}}</ref><ref>{{Cite web |last=Gerblick |first=Jordan |date=2023-10-04 |title=Cyberpunk 2077 players are traumatized by Phantom Liberty's Alien Isolation-style horror mission: "I'm full on crying in the fetal position" |url=https://www.gamesradar.com/cyberpunk-2077-players-are-traumatized-by-phantom-libertys-alien-isolation-style-horror-mission-im-full-on-crying-in-the-fetal-position/ |access-date=2025-09-24 |website=GamesRadar+ |language=en}}</ref><ref>{{Cite web |last=Egan |first=Toussaint |date=2023-10-08 |title=Cyberpunk 2077: Phantom Liberty has one of the most terrifying missions this side of Alien: Isolation |url=https://www.polygon.com/23905305/cyberpunk-2077-phantom-liberty-alien-isolation-horror-mission/ |access-date=2025-09-24 |website=Polygon |language=en}}</ref>
+
+==Notes==
+{{notelist}}
+
+==References==
+<references>
+<ref name="USGamer guide">{{cite web |access-date=29 July 2015 |url=http://www.usgamer.net/articles/alien-isolation-beginners-guide-survival-tips-evasion-strategies-staying-alive |title=Alien: Isolation Beginner's Guide: Survival Tips, Evasion Strategies. Staying Alive |website=[[USGamer]] |date=6 October 2015 |archive-url=https://web.archive.org/web/20141008052229/http://www.usgamer.net/articles/alien-isolation-beginners-guide-survival-tips-evasion-strategies-staying-alive |archive-date=8 October 2014 |url-status=live}}</ref>
+
+<ref name="Gamasutra save system">{{cite web |access-date=28 July 2015 |url=http://www.gamasutra.com/view/news/235104/Game_Design_Deep_Dive_The_save_system_of_Alien_Isolation.php |title=Game Design Deep Dive: The save system of Alien: Isolation |website=[[Gamasutra]] |date=11 February 2015 |author=Gary Napper |archive-url=https://web.archive.org/web/20150211185001/http://www.gamasutra.com/view/news/235104/Game_Design_Deep_Dive_The_save_system_of_Alien_Isolation.php |archive-date=11 February 2015 |url-status=dead}}</ref>
+
+<ref name="Game Awards nominees">{{cite web |access-date=30 July 2015 |url=http://www.gamespot.com/articles/2014-game-awards-nominees-announced/1100-6423734/ |title=2014 Game Awards Nominees Announced |website=[[GameSpot]] |date=20 November 2014 |author=Eddie Makuch |archive-url=https://web.archive.org/web/20141204211948/http://www.gamespot.com/articles/2014-game-awards-nominees-announced/1100-6423734 |archive-date=4 December 2014 |url-status=live}}</ref>
+
+<ref name="EuroG review">{{cite web |access-date=29 July 2015 |url=http://www.eurogamer.net/articles/2014-10-03-alien-isolation-review |title=Alien: Isolation review |website=[[Eurogamer]] |date=3 October 2014 |author=Dan Whitehead |archive-url=https://web.archive.org/web/20141004221134/http://www.eurogamer.net/articles/2014-10-03-alien-isolation-review |archive-date=4 October 2014 |url-status=live}}</ref>
+
+<ref name="GSpot review">{{cite web |access-date=30 July 2015 |url=http://www.gamespot.com/reviews/alien-isolation-review/1900-6415897/ |title=Alien: Isolation Review |website=[[GameSpot]] |date=3 October 2014 |author=Kevin VanOrd |archive-url=https://web.archive.org/web/20141005162234/http://www.gamespot.com/reviews/alien-isolation-review/1900-6415897/ |archive-date=5 October 2014 |url-status=live}}</ref>
+
+<ref name="PCGamer review">{{cite web |access-date=30 July 2015 |url=http://www.pcgamer.com/alien-isolation-review/ |title=Alien: Isolation |website=[[PC Gamer]] |date=3 October 2014 |author=Andy Kelly |archive-url=https://web.archive.org/web/20141008010112/http://www.pcgamer.com/alien-isolation-review/ |archive-date=8 October 2014 |url-status=live}}</ref>
+
+<ref name="EGM review">{{cite magazine |access-date=31 July 2015 |url=http://www.egmnow.com/articles/reviews/egm-review-alien-isolation/ |title=EGM Review: Alien: Isolation |magazine=[[Electronic Gaming Monthly]] |date=3 October 2014 |author=Josh Harmon |archive-url=https://web.archive.org/web/20150228032652/http://www.egmnow.com/articles/reviews/egm-review-alien-isolation/ |archive-date=28 February 2015 |url-status=live}}</ref>
+
+<ref name="Survivor Mode">{{cite web |access-date=12 August 2015 |url=http://www.eurogamer.net/articles/2014-09-17-get-scared-and-die-trying-in-alien-isolations-survivor-mode |title=Get scared and die trying in Alien: Isolation's Survivor Mode |website=[[Eurogamer]] |author=Wesley Yin-Poole |date=17 September 2014 |archive-url=https://web.archive.org/web/20150812195412/http://www.eurogamer.net/articles/2014-09-17-get-scared-and-die-trying-in-alien-isolations-survivor-mode |archive-date=12 August 2015 |url-status=live}}</ref>
+
+<ref name="Edge feature">{{cite magazine |access-date=20 January 2014 |url=http://www.edge-online.com/features/how-creative-assembly-convinced-sega-to-greenlight-alien-isolation/ |title=How Creative Assembly convinced Sega to greenlight Alien: Isolation |magazine=[[Edge (magazine)|Edge-Online]] |date=14 January 2014 |archive-url=https://web.archive.org/web/20140120165933/http://www.edge-online.com/features/how-creative-assembly-convinced-sega-to-greenlight-alien-isolation/ |archive-date=20 January 2014 |url-status=dead}}</ref>
+
+<ref name="Alien license">{{cite web |access-date=2 August 2015 |url=http://www.gamasutra.com/view/news/103006/Sega_Acquires_Alien_License.php |title=Sega Acquires Alien License |website=[[Gamasutra]] |author=David Jenkins |date=11 December 2006 |archive-url=https://web.archive.org/web/20120510215942/http://www.gamasutra.com/view/news/103006/Sega_Acquires_Alien_License.php |archive-date=10 May 2012 |url-status=dead}}</ref>
+
+<ref name="PCGamer Making of">{{cite web |access-date=2 August 2015 |url=http://www.pcgamer.com/the-making-of-alien-isolation/ |title=The making of Alien: Isolation |website=[[PC Gamer]] |author=Andy Kelly |date=29 January 2015 |archive-url=https://web.archive.org/web/20150319203110/http://www.pcgamer.com/the-making-of-alien-isolation/ |archive-date=19 March 2015 |url-status=live}}</ref>
+
+<ref name="18 things">{{cite magazine |access-date=2 August 2015 |url=http://www.develop-online.net/analysis/18-things-we-learned-about-alien-isolation-last-night/0189188 |title=18 things we learned about Alien: Isolation last night |website=[[Develop (UK magazine)|Develop]] |author=James Batchelor |date=13 February 2014 |archive-url=https://web.archive.org/web/20140302023816/http://www.develop-online.net/analysis/18-things-we-learned-about-alien-isolation-last-night/0189188 |archive-date=2 March 2014 |url-status=live}}</ref>
+
+<ref name="GameFront feature 2">{{cite web |access-date=3 August 2015 |url=http://www.gamefront.com/alien-isolation-preview-the-alien-game-we-wanted-to-play/2/ |title=Alien: Isolation is 'The "Alien" Game We've Always Wanted to Play (Page 2) |website=[[GameFront]] |author=Phil Hornshaw |date=7 January 2014 |archive-url=https://web.archive.org/web/20150703101006/http://www.gamefront.com/alien-isolation-preview-the-alien-game-we-wanted-to-play/2/ |archive-date=3 July 2015 |url-status=dead}}</ref>
+
+<ref name="GameFront feature 3">{{cite web |access-date=3 August 2015 |url=http://www.gamefront.com/alien-isolation-preview-the-alien-game-we-wanted-to-play/3/ |title=Alien: Isolation is 'The "Alien" Game We've Always Wanted to Play (Page 3) |website=[[GameFront]] |author=Phil Hornshaw |date=7 January 2014 |archive-url=https://web.archive.org/web/20150721040850/http://www.gamefront.com/alien-isolation-preview-the-alien-game-we-wanted-to-play/3/ |archive-date=21 July 2015 |url-status=dead}}</ref>
+
+<ref name="GameFront feature 4">{{cite web |access-date=3 August 2015 |url=http://www.gamefront.com/alien-isolation-preview-the-alien-game-we-wanted-to-play/4/ |title=Alien: Isolation is 'The "Alien" Game We've Always Wanted to Play (Page 4) |website=[[GameFront]] |author=Phil Hornshaw |date=7 January 2014 |archive-url=https://web.archive.org/web/20140228234438/http://www.gamefront.com/alien-isolation-preview-the-alien-game-we-wanted-to-play/4/ |archive-date=28 February 2014 |url-status=dead}}</ref>
+
+<ref name="CraveOnline article">{{cite web |access-date=3 August 2015 |url=http://www.craveonline.com/gaming/articles/768131-next-chapter-alien-franchise-alien-isolation |title=The Next Chapter of the Alien Franchise… Alien: Isolation |website=[[CraveOnline]] |author=Peter Paras |date=1 October 2014 |archive-url=https://web.archive.org/web/20150711102306/http://www.craveonline.com/gaming/articles/768131-next-chapter-alien-franchise-alien-isolation |archive-date=11 July 2015 |url-status=live}}</ref>
+
+<ref name="Going gold">{{cite web |access-date=5 August 2015 |url=http://www.gamespot.com/articles/alien-isolation-goes-gold-new-trailer-shows-off-ga/1100-6422208/ |title=Alien: Isolation Goes Gold, New Trailer Shows Off Game's Brutal World |website=[[GameSpot]] |author=Eddie Makuch |date=9 September 2014 |archive-url=https://web.archive.org/web/20141001090510/http://www.gamespot.com/articles/alien-isolation-goes-gold-new-trailer-shows-off-ga/1100-6422208 |archive-date=1 October 2014 |url-status=live}}</ref>
+
+<ref name="AMD Gaming">{{cite web |access-date=4 March 2017 |url=https://community.amd.com/community/gaming/blog/2015/05/12/high-tech-fear--alien-isolation |title=High-Tech Fear - Alien: Isolation |website=AMD Gaming |author=Robert Hallock |date=7 October 2014 |archive-url=https://web.archive.org/web/20160514043635/https://community.amd.com/community/gaming/blog/2015/05/12/high-tech-fear--alien-isolation |archive-date=14 May 2016 |url-status=live}}</ref>
+
+<ref name="Weaver voice">{{cite web |access-date=5 August 2015 |url=http://www.polygon.com/2014/10/7/6936885/sigourney-weaver-alien-isolation |title=Why Sigourney Weaver returned as Ripley in Alien: Isolation |website=[[Polygon (website)|Polygon]] |author=Megan Farokhmanesh |date=7 October 2014 |archive-url=https://web.archive.org/web/20141009114444/http://www.polygon.com/2014/10/7/6936885/sigourney-weaver-alien-isolation |archive-date=9 October 2014 |url-status=live}}</ref>
+
+<ref name="Hero Complex Amanda">{{cite web |access-date=6 August 2015 |url=http://herocomplex.latimes.com/games/e3-2014-alien-isolation-invents-powerful-heroine-in-amanda-ripley/ |title=E3 2014: 'Alien: Isolation' invents powerful heroine in Amanda Ripley |website=Hero Complex |author=Todd Martens |date=10 June 2014 |archive-url=https://web.archive.org/web/20150318055742/http://herocomplex.latimes.com/games/e3-2014-alien-isolation-invents-powerful-heroine-in-amanda-ripley/ |archive-date=18 March 2015 |url-status=live}}</ref>
+
+<ref name="IGN DLC">{{cite web |access-date=6 August 2015 |url=https://www.ign.com/articles/2014/07/09/original-alien-cast-reunite-for-alien-isolation-dlc?+main+twitter |title=Original Alien Cast Reunite for Alien: Isolation DLC |website=[[IGN]] |author=Daniel Krupa |date=9 July 2014 |archive-url=https://web.archive.org/web/20150806200903/http://www.ign.com/articles/2014/07/09/original-alien-cast-reunite-for-alien-isolation-dlc?+main+twitter |archive-date=6 August 2015 |url-status=live}}</ref>
+
+<ref name="EuroG honour">{{cite web |access-date=7 August 2015 |url=http://www.eurogamer.net/articles/2014-11-14-a-game-jam-in-his-honour |title=A game jam in his honour |website=[[Eurogamer]] |author=Robert Purchese |date=14 November 2014 |archive-url=https://web.archive.org/web/20150721172751/http://www.eurogamer.net/articles/2014-11-14-a-game-jam-in-his-honour |archive-date=21 July 2015 |url-status=live}}</ref>
+
+<ref name="IGN trademark">{{cite web |access-date=9 August 2015 |url=https://www.ign.com/articles/2013/10/21/is-alien-isolation-creative-assemblys-console-game |title=Is Alien: Isolation Creative Assembly's Console Game? |website=[[IGN]] |date=21 October 2013 |author=Mitch Dyer |archive-url=https://web.archive.org/web/20131124032222/http://www.ign.com/articles/2013/10/21/is-alien-isolation-creative-assemblys-console-game |archive-date=24 November 2013 |url-status=live}}</ref>
+
+<ref name="GSpot screens leaked">{{cite web |access-date=10 August 2015 |url=http://www.gamespot.com/articles/leaked-alien-isolation-screenshots-already-look-better-than-colonial-marines/1100-6416706/ |title=Leaked Alien: Isolation screenshots already look better than Colonial Marines |website=[[GameSpot]] |author=Martin Gaston |date=13 December 2013 |archive-url=https://web.archive.org/web/20140108041801/http://www.gamespot.com/articles/leaked-alien-isolation-screenshots-already-look-better-than-colonial-marines/1100-6416706/ |archive-date=8 January 2014 |url-status=live}}</ref>
+
+<ref name="IGN trailer">{{cite web |access-date=9 August 2015 |url=https://www.ign.com/articles/2014/01/07/alien-isolation-officially-announced-by-sega |title=Alien: Isolation Officially Announced by SEGA |website=[[IGN]] |date=7 January 2014 |author=Luke Karmali |archive-url=https://web.archive.org/web/20140110060349/http://www.ign.com/articles/2014/01/07/alien-isolation-officially-announced-by-sega |archive-date=10 January 2014 |url-status=live}}</ref>
+
+<ref name="PCGamer Vaizey">{{cite web |access-date=9 August 2015 |url=http://www.pcgamer.com/creative-assembly-working-on-a-blockbuster-based-on-alien/ |title=Creative Assembly working on a 'blockbuster based on Alien' |website=[[PC Gamer]] |date=12 May 2011 |author=Tom Senior |archive-url=https://web.archive.org/web/20150809160343/http://www.pcgamer.com/creative-assembly-working-on-a-blockbuster-based-on-alien/ |archive-date=9 August 2015 |url-status=live}}</ref>
+
+<ref name="Colonial Marines">{{cite web |access-date=9 August 2015 |url=http://www.vg247.com/2014/02/06/alien-isolation-devs-discuss-colonial-marines-backlash-why-horror-was-the-right-way-to-go/ |title=Alien: Isolation devs discuss Colonial Marines backlash & why horror was the right way to go |website=[[VG247]] |date=6 February 2014 |author=Dave Cook |archive-url=https://web.archive.org/web/20140207085818/http://www.vg247.com/2014/02/06/alien-isolation-devs-discuss-colonial-marines-backlash-why-horror-was-the-right-way-to-go/ |archive-date=7 February 2014 |url-status=live}}</ref>
+
+<ref name="Polygon E3 demo">{{cite web |access-date=10 August 2015 |url=http://www.polygon.com/a/e3-2014/alien-isolation |title=Survival of the smartest |website=[[Polygon (website)|Polygon]] |author=Danielle Riendeau |archive-url=https://web.archive.org/web/20150706054146/http://www.polygon.com/a/e3-2014/alien-isolation |archive-date=6 July 2015 |url-status=live}}</ref>
+
+<ref name="Polygon Oculus">{{cite web |access-date=10 August 2015 |url=http://www.polygon.com/2014/6/10/5796772/alien-isolation-gets-oculus-support |title=Alien: Isolation gets Oculus support |website=[[Polygon (website)|Polygon]] |author=Owen S. Good |date=10 June 2014 |archive-url=https://web.archive.org/web/20150429082907/http://www.polygon.com/2014/6/10/5796772/alien-isolation-gets-oculus-support |archive-date=29 April 2015 |url-status=live}}</ref>
+
+<ref name="IGN E3 Awards 1">{{cite web |access-date=10 August 2015 |url=https://www.ign.com/articles/2014/06/12/igns-best-of-e3-2014-awards?page=1 |title=IGN's Best of E3 2014 Awards (Page 1) |website=[[IGN]] |date=12 June 2014 |archive-url=https://web.archive.org/web/20150322081006/http://www.ign.com/articles/2014/06/12/igns-best-of-e3-2014-awards?page=1 |archive-date=22 March 2015 |url-status=live}}</ref>
+
+<ref name="IGN E3 Awards 2">{{cite web |access-date=10 August 2015 |url=https://www.ign.com/articles/2014/06/12/igns-best-of-e3-2014-awards?page=2 |title=IGN's Best of E3 2014 Awards (Page 2) |website=[[IGN]] |date=12 June 2014 |archive-url=https://web.archive.org/web/20150315073451/http://www.ign.com/articles/2014/06/12/igns-best-of-e3-2014-awards?page=2 |archive-date=15 March 2015 |url-status=dead}}</ref>
+
+<ref name="IGN E3 Awards 3">{{cite web |access-date=10 August 2015 |url=https://www.ign.com/articles/2014/06/12/igns-best-of-e3-2014-awards?page=3 |title=IGN's Best of E3 2014 Awards (Page 3) |website=[[IGN]] |date=12 June 2014 |archive-url=https://web.archive.org/web/20150321162313/http://www.ign.com/articles/2014/06/12/igns-best-of-e3-2014-awards?page=3 |archive-date=21 March 2015 |url-status=live}}</ref>
+
+<ref name="GCA nom">{{cite web |access-date=10 August 2015 |url=http://www.gamecriticsawards.com/2014nominees.html |title=2014 Nominees |website=[[Game Critics Awards]] |archive-url=https://web.archive.org/web/20150810110159/http://www.gamecriticsawards.com/2014nominees.html |archive-date=10 August 2015 |url-status=live}}</ref>
+
+<ref name="GCA win">{{cite web |access-date=10 August 2015 |url=http://www.gamecriticsawards.com/2014winners.html |title=2014 Winners |website=[[Game Critics Awards]] |archive-url=https://web.archive.org/web/20150810110516/http://www.gamecriticsawards.com/2014winners.html |archive-date=10 August 2015 |url-status=live}}</ref>
+
+<ref name="Cinematic trailer">{{cite web |access-date=10 August 2015 |url=https://www.ign.com/videos/2014/08/15/alien-isolation-gamescom-cinematic-trailer |title=Alien: Isolation - Gamescom Cinematic Trailer |website=[[IGN]] |date=15 August 2014 |archive-url=https://web.archive.org/web/20140903023715/http://www.ign.com/videos/2014/08/15/alien-isolation-gamescom-cinematic-trailer |archive-date=3 September 2014 |url-status=live}}</ref>
+
+<ref name="EuroG release date">{{cite web |access-date=10 August 2015 |url=http://www.eurogamer.net/articles/2014-03-29-alien-isolation-release-date-announced |title=Alien Isolation release date announced |website=[[Eurogamer]] |date=29 March 2014 |archive-url=https://web.archive.org/web/20150717123316/http://www.eurogamer.net/articles/2014-03-29-alien-isolation-release-date-announced |archive-date=17 July 2015 |url-status=live}}</ref>
+
+<ref name="5 new DLCs">{{cite web |access-date=12 August 2015 |url=https://www.ign.com/articles/2014/10/21/five-new-dlc-packs-coming-soon-to-alien-isolation |title=Five New DLC Packs Coming Soon to Alien: Isolation |website=[[IGN]] |date=21 October 2014 |author=Wesley Copeland |archive-url=https://web.archive.org/web/20150202145146/http://www.ign.com/articles/2014/10/21/five-new-dlc-packs-coming-soon-to-alien-isolation |archive-date=2 February 2015 |url-status=live}}</ref>
+
+<ref name="Season pass">{{cite web |access-date=22 February 2019 |url=https://www.engadget.com/2014/09/17/alien-isolation-season-pass-is-for-survivor-mode-dlc/ |title=Alien: Isolation Season Pass is for Survivor Mode DLC |website=[[Engadget]] |author=Jessica Conditt |date=17 September 2014 |archive-url=https://web.archive.org/web/20150330004101/https://www.engadget.com/2014/09/17/alien-isolation-season-pass-is-for-survivor-mode-dlc/ |archive-date=30 March 2015 |url-status=live}}</ref>
+
+<ref name="Trauma DLC">{{cite web |access-date=22 February 2019 |url=https://www.eurogamer.net/articles/2014-12-02-alien-isolations-trauma-dlc-pack-out-today |title=Alien: Isolation's Trauma DLC pack out today |website=[[Eurogamer]] |author=Wesley Yin-Poole |date=2 December 2014 |archive-url=https://web.archive.org/web/20180129095659/https://www.eurogamer.net/articles/2014-12-02-alien-isolations-trauma-dlc-pack-out-today |archive-date=29 January 2018 |url-status=live}}</ref>
+
+<ref name="Safe Heaven DLC">{{cite web |access-date=22 February 2019 |url=https://www.gamespot.com/articles/alien-isolation-s-newest-dlc-will-test-your-patien/1100-6424604/ |title=Alien: Isolation's Newest DLC Will Test Your Patience As Well As Skills |website=[[GameSpot]] |author=Alexa Ray Corriea |date=12 January 2015 |archive-url=https://web.archive.org/web/20161030085929/http://www.gamespot.com/articles/alien-isolation-s-newest-dlc-will-test-your-patien/1100-6424604/ |archive-date=30 October 2016 |url-status=live}}</ref>
+
+<ref name="Lost Contact DLC">{{cite web |access-date=22 February 2019 |url=https://www.polygon.com/2015/2/10/8010697/alien-isolation-dlc-lost-contact |title=Alien: Isolation gets its fourth DLC mission today in Lost Contact |website=[[Polygon (website)|Polygon]] |date=1 February 2015 |archive-url=https://web.archive.org/web/20150212091928/https://www.polygon.com/2015/2/10/8010697/alien-isolation-dlc-lost-contact |archive-date=12 February 2015 |url-status=live}}</ref>
+
+<ref name="Trigger DLC">{{cite web |access-date=22 February 2019 |url=https://www.eurogamer.net/articles/2015-03-03-alien-isolations-fifth-dlc-add-on-the-trigger-out-today |title=Alien: Isolation's fifth DLC add-on The Trigger out today |website=[[Eurogamer]] |author=Wesley Yin-Poole |date=3 March 2015 |archive-url=https://web.archive.org/web/20170810060352/https://www.eurogamer.net/articles/2015-03-03-alien-isolations-fifth-dlc-add-on-the-trigger-out-today |archive-date=10 August 2017 |url-status=live}}</ref>
+
+<ref name="Collection OSX Linux">{{cite web |access-date=22 September 2015 |url=https://www.vg247.com/2015/09/22/alien-isolation-the-collection-mac-linux/ |title=Alien: Isolation – The Collection hits Linux and Mac next week |website=[[VG247]] |date=22 September 2015 |author=Stephany Nunneley |archive-url=https://web.archive.org/web/20150922181121/https://www.vg247.com/2015/09/22/alien-isolation-the-collection-mac-linux/ |archive-date=22 September 2015 |url-status=live}}</ref>
+
+<ref name="Collection OSX PC PS4 XONE">{{cite web |access-date=30 October 2015 |url=https://uk.ign.com/articles/2015/10/28/sega-announces-alien-isolation-the-collection |title=SEGA Announces Alien: Isolation - The Collection |website=[[IGN]] |date=28 October 2015 |author=Vikki Blake |archive-url=https://web.archive.org/web/20151030001318/http://www.ign.com/articles/2015/10/28/sega-announces-alien-isolation-the-collection |archive-date=30 October 2015 |url-status=live}}</ref>
+
+<ref name="Sales January 2015">{{cite web |access-date=10 August 2015 |url=http://www.gamespot.com/articles/alien-isolation-sells-1-million/1100-6424794/ |title=Alien: Isolation Sells 1 Million |website=[[GameSpot]] |author=Eddie Makuch |date=21 January 2015 |archive-url=https://web.archive.org/web/20150810211809/http://www.gamespot.com/articles/alien-isolation-sells-1-million/1100-6424794/ |archive-date=10 August 2015 |url-status=live}}</ref>
+
+<ref name="Sales May 2015">{{cite web |access-date=10 August 2015 |url=http://www.gamespot.com/articles/alien-isolation-sells-2-1-million/1100-6427238/ |title=Alien: Isolation Sells 2.1 Million |website=[[GameSpot]] |author=Eddie Makuch |date=11 May 2015 |archive-url=https://web.archive.org/web/20150810211936/http://www.gamespot.com/articles/alien-isolation-sells-2-1-million/1100-6427238/ |archive-date=10 August 2015 |url-status=live}}</ref>
+
+<ref name="Metacritic PC">{{cite web |url=https://www.metacritic.com/game/alien-isolation/critic-reviews/?platform=pc |title=Alien: Isolation for PC Reviews |website=[[Metacritic]] |access-date=13 August 2015 |archive-url=https://web.archive.org/web/20150108175211/http://www.metacritic.com/game/pc/alien-isolation |archive-date=8 January 2015 |url-status=live}}</ref>
+
+<ref name="Metacritic PS4">{{cite web |url=https://www.metacritic.com/game/alien-isolation/critic-reviews/?platform=playstation-4 |title=Alien: Isolation for PlayStation 4 Reviews |website=[[Metacritic]] |access-date=13 August 2015 |archive-url=https://web.archive.org/web/20150403003357/http://www.metacritic.com/game//playstation-4/alien-isolation |archive-date=3 April 2015 |url-status=live}}</ref>
+
+<ref name="Metacritic XONE">{{cite web |url=https://www.metacritic.com/game/alien-isolation/critic-reviews/?platform=xbox-one |title=Alien: Isolation for Xbox One Reviews |website=[[Metacritic]] |access-date=13 August 2015 |archive-url=https://web.archive.org/web/20150427055330/http://www.metacritic.com/game/xbox-one/alien-isolation |archive-date=27 April 2015 |url-status=live}}</ref>
+
+<ref name="Metacritic NS">{{cite web |url=https://www.metacritic.com/game/alien-isolation/critic-reviews/?platform=nintendo-switch |title=Alien: Isolation for Switch Reviews |website=[[Metacritic]] |access-date=3 December 2019 |archive-url=https://web.archive.org/web/20191203205624/https://www.metacritic.com/game/switch/alien-isolation |archive-date=3 December 2019 |url-status=live}}</ref>
+
+<ref name="Metacritic iOS">{{cite web |url=https://www.metacritic.com/game/alien-isolation/critic-reviews/?platform=ios-iphoneipad |title=Alien: Isolation for iPhone/iPad Reviews |website=[[Metacritic]] |access-date=22 December 2021 |archive-date=25 May 2024 |archive-url=https://web.archive.org/web/20240525111325/https://www.metacritic.com/game/alien-isolation/critic-reviews/?platform=ios-iphoneipad |url-status=live }}</ref>
+
+<ref name="IGN review">{{cite web |access-date=12 August 2015 |url=https://www.ign.com/articles/2014/10/03/alien-isolation-review |title=Alien: Isolation Review |website=[[IGN]] |author=Ryan McCaffrey |date=3 October 2014 |archive-url=https://web.archive.org/web/20150724105558/http://www.ign.com/articles/2014/10/03/alien-isolation-review |archive-date=24 July 2015 |url-status=live}}</ref>
+
+<ref name="GI review">{{cite magazine |access-date=12 August 2015 |url=https://www.gameinformer.com/games/alien_isolation/b/playstation4/archive/2014/10/03/alien-isolation-review-game-informer.aspx |title=Alien: Isolation |magazine=[[Game Informer]] |author=Jeff Marchiafava |date=3 October 2014 |archive-url=https://web.archive.org/web/20150423211858/http://www.gameinformer.com/games/alien_isolation/b/playstation4/archive/2014/10/03/alien-isolation-review-game-informer.aspx |archive-date=23 April 2015 |url-status=live}}</ref>
+
+<ref name="Poly review">{{cite web |access-date=14 August 2015 |url=http://www.polygon.com/2014/10/3/6142209/alien-isolation-review-xbox-one-PS4 |title=Alien: Isolation review: crew expendable |website=[[Polygon (website)|Polygon]] |author=Arthur Gies |date=3 October 2014 |archive-url=https://web.archive.org/web/20150201203246/http://www.polygon.com/2014/10/3/6142209/alien-isolation-review-xbox-one-PS4 |archive-date=1 February 2015 |url-status=live}}</ref>
+
+<ref name="GT review">{{cite web |access-date=16 August 2015 |url=http://www.gametrailers.com/reviews/3saf3h/alien--isolation-review |title=Alien: Isolation - Review |website=[[GameTrailers]] |author=Ben Moore |date=3 October 2014 |archive-url=https://web.archive.org/web/20141005222145/http://www.gametrailers.com/reviews/3saf3h/alien--isolation-review |archive-date=5 October 2014 |url-status=live}}</ref>
+
+<ref name="GameRev review">{{cite web |access-date=16 August 2015 |url=http://www.gamerevolution.com/review/alien-isolation |title=Alien: Isolation Review |website=[[GameRevolution]] |author=Blake Peterson |date=10 October 2014 |archive-url=https://web.archive.org/web/20150905205640/http://www.gamerevolution.com/review/alien-isolation |archive-date=5 September 2015 |url-status=live}}</ref>
+
+<ref name="GRadar review">{{cite web |access-date=16 August 2015 |url=https://www.gamesradar.com/alien-isolation-review/ |title=Alien: Isolation review |website=[[GamesRadar]] |author=David Houghton |date=3 October 2014 |archive-url=https://web.archive.org/web/20150319145446/http://www.gamesradar.com/alien-isolation-review/ |archive-date=19 March 2015 |url-status=live}}</ref>
+
+<ref name="Destruct review">{{cite web |access-date=16 August 2015 |url=http://www.destructoid.com/review-alien-isolation-281651.phtml |title=Review: Alien: Isolation |website=[[Destructoid]] |author=Chris Carter |date=3 October 2014 |archive-url=https://web.archive.org/web/20150211015327/http://www.destructoid.com/review-alien-isolation-281651.phtml |archive-date=11 February 2015 |url-status=live}}</ref>
+
+<ref name="TG review">{{cite web |access-date=30 March 2017 |url=https://www.theguardian.com/technology/2014/oct/03/alien-isolation-review-giger-game-ridley-scott |title=Alien: Isolation review – Giger's creature gets the game it deserves |website=[[The Guardian]] |author=Andy Kelly |date=3 October 2014 |archive-url=https://web.archive.org/web/20141003140604/http://www.theguardian.com/technology/2014/oct/03/alien-isolation-review-giger-game-ridley-scott |archive-date=3 October 2014 |url-status=live}}</ref>
+
+<ref name="TA review">{{cite web |access-date=22 December 2021 |url=https://toucharcade.com/2021/12/16/alien-isolation-mobile-review-frame-rate-resolution-performance-battery-saver-ipad-pro-iphone-11-settings/ |title='Alien: Isolation' Review – A Phenomenal Conversion of a Survival Horror Classic |website=[[TouchArcade]] |last=Madnani |first=Mikhail |date=16 December 2021 |archive-url=https://web.archive.org/web/20211216090639/https://toucharcade.com/2021/12/16/alien-isolation-mobile-review-frame-rate-resolution-performance-battery-saver-ipad-pro-iphone-11-settings/ |archive-date=16 December 2021 |url-status=live}}</ref>
+
+<ref name="Brave game">{{cite web |access-date=10 August 2015 |url=https://www.ign.com/articles/2014/11/23/alien-isolation-is-the-bravest-game-of-2014 |title=Alien: Isolation is the Bravest Game of 2014 |website=[[IGN]] |first=Lucy | last=O'Brien |date=23 November 2014 |archive-url=https://web.archive.org/web/20141126011916/http://www.ign.com/articles/2014/11/23/alien-isolation-is-the-bravest-game-of-2014 |archive-date=26 November 2014 |url-status=live}}</ref>
+
+<ref name="PCGamer GotY">{{cite web |access-date=17 August 2015 |url=http://www.pcgamer.com/game-of-the-year-2014-alien-isolation/ |title=Game of the year 2014: Alien Isolation |website=[[PC Gamer]] |date=18 December 2014 |archive-url=https://web.archive.org/web/20150426013042/http://www.pcgamer.com/game-of-the-year-2014-alien-isolation/ |archive-date=26 April 2015 |url-status=live}}</ref>
+
+<ref name="Kotaku CGotY">{{cite web |access-date=17 August 2015 |url=http://www.kotaku.com.au/2014/12/kotaku-awards-2014-console-game-of-the-year-2/ |title=Kotaku Awards 2014: Console Game Of The Year |website=[[Kotaku]] |first=Mark | last=Serrels |date=11 December 2014 |archive-url=https://web.archive.org/web/20150319135309/http://www.kotaku.com.au/2014/12/kotaku-awards-2014-console-game-of-the-year-2/ |archive-date=19 March 2015 |url-status=usurped}}</ref>
+
+<ref name="Kotaku OGotY">{{cite web |access-date=17 August 2015 |url=http://www.kotaku.com.au/2014/12/kotaku-awards-2014-game-of-the-year/ |title=Kotaku Awards 2014: Game Of The Year |website=[[Kotaku]] |first=Mark | last=Serrels |date=12 December 2014 |archive-url=https://web.archive.org/web/20150319161557/http://www.kotaku.com.au/2014/12/kotaku-awards-2014-game-of-the-year/ |archive-date=19 March 2015 |url-status=usurped}}</ref>
+
+<ref name="GRadar Best Horror">{{cite web |access-date=17 August 2015 |url=https://www.gamesradar.com/best-games-2014/ |title=Game of the Year 2014 |website=[[GamesRadar]] |date=8 December 2014 |archive-url=https://web.archive.org/web/20150324035520/http://www.gamesradar.com/best-games-2014/ |archive-date=24 March 2015 |url-status=live}}</ref>
+
+<ref name="RPS Best Horror">{{cite web |access-date=19 August 2015 |url=http://www.rockpapershotgun.com/2014/12/17/best-horror-games-2014-alien-isolation/ |title=The Bestest Best Horror Of 2014 – Alien: Isolation |website=[[Rock, Paper, Shotgun]] |date=17 December 2014 |archive-url=https://web.archive.org/web/20150628033309/http://www.rockpapershotgun.com/2014/12/17/best-horror-games-2014-alien-isolation/ |archive-date=28 June 2015 |url-status=live}}</ref>
+
+<ref name="GB Best Horror">{{cite web |access-date=19 August 2015 |url=http://www.giantbomb.com/articles/giant-bomb-s-2014-game-of-the-year-awards-day-five/1100-5126/ |title=Giant Bomb's 2014 Game of the Year Awards: Day Five Text Recap |website=[[Giant Bomb]] |date=30 December 2014 |archive-url=https://web.archive.org/web/20150128202012/http://www.giantbomb.com/articles/giant-bomb-s-2014-game-of-the-year-awards-day-five/1100-5126/ |archive-date=28 January 2015 |url-status=live}}</ref>
+
+<ref name="Kotaku Best Horror">{{cite web |access-date=19 August 2015 |url=http://thebests.kotaku.com/the-10-best-horror-games-1685727700 |title=The 10 Best Horror Games |website=[[Kotaku]] |author=Patrick Klepek |date=13 February 2015 |archive-url=https://web.archive.org/web/20150810020740/http://thebests.kotaku.com/the-10-best-horror-games-1685727700 |archive-date=10 August 2015 |url-status=live}}</ref>
+
+<ref name="NewS GotY">{{cite web |access-date=17 August 2015 |url=http://www.newstatesman.com/killing-time/2014/12/games-year-2014 |title=The Games of the Year 2014 |website=[[New Statesman]] |author=Phil Hartup |date=17 December 2014 |archive-url=https://web.archive.org/web/20150326122046/http://www.newstatesman.com/killing-time/2014/12/games-year-2014 |archive-date=26 March 2015 |url-status=live}}</ref>
+
+<ref name="BAFTA awards">{{cite web |access-date=17 August 2015 |url=http://awards.bafta.org/award/2015/games |title=Games in 2015 |website=[[British Academy of Film and Television Arts]] |date=2015 |archive-url=https://web.archive.org/web/20150411181919/http://awards.bafta.org/award/2015/games |archive-date=11 April 2015 |url-status=live}}</ref>
+
+<ref name="GDCA awards">{{cite web |access-date=18 August 2015 |url=http://www.gamechoiceawards.com/winners/index.html |title=15th Annual Game Developers Choice Awards |website=[[Game Developers Choice Awards]] |date=2015 |archive-url=https://web.archive.org/web/20150627103735/http://www.gamechoiceawards.com/winners/index.html |archive-date=27 June 2015 |url-status=live}}</ref>
+
+<ref name="Kotaku BSotY">{{cite web |access-date=15 March 2016 |url=http://www.kotaku.com.au/2014/12/kotaku-awards-2014-biggest-surprise-of-the-year/ |title=Kotaku Awards 2014: Biggest Surprise Of The Year |website=[[Kotaku]] |first=Mark | last=Serrels |date=9 December 2014 |archive-url=https://web.archive.org/web/20160315232413/http://www.kotaku.com.au/2014/12/kotaku-awards-2014-biggest-surprise-of-the-year/ |archive-date=15 March 2016 |url-status=usurped}}</ref>
+
+<ref name="Game Awards 2014 Nominees">{{cite web |access-date=16 March 2016 |url=http://www.gamespot.com/articles/2014-game-awards-nominees-announced/1100-6423734/ |title=2014 Game Awards Nominees Announced |website=[[GameSpot]] |author=Eddie Makuch |date=20 November 2014 |archive-url=https://web.archive.org/web/20150104210328/http://www.gamespot.com/articles/2014-game-awards-nominees-announced/1100-6423734 |archive-date=4 January 2015 |url-status=live}}</ref>
+
+<ref name="Game Awards 2014 Winners">{{cite web |access-date=16 March 2016 |url=http://www.polygon.com/2014/12/5/7343105/the-game-awards-2014-winners |title=Here are the winners of The Game Awards 2014 |website=[[Polygon (website)|Polygon]] |author=Samit Sarkar |date=5 December 2014 |archive-url=https://web.archive.org/web/20160318021617/http://www.polygon.com/2014/12/5/7343105/the-game-awards-2014-winners |archive-date=18 March 2016 |url-status=live}}</ref>
+
+<ref name="NAVGTR Awards">{{cite web |access-date=16 March 2016 |url=http://navgtr.org/archives/2445/ |title=2014 NAVGTR Winners: Dragon 5, Alien/Mordor/South Park 4 |website=National Academy of Video Game Trade Reviewers |date=16 February 2015 |archive-url=https://web.archive.org/web/20160320044442/http://navgtr.org/archives/2445/ |archive-date=20 March 2016 |url-status=dead }}</ref>
+
+<ref name="VES Nominees">{{cite web |access-date=16 March 2016 |url=https://www.visualeffectssociety.com/post/ves-awards-nominations-announced |title=VES Awards - Nominations Announced |website=[[Visual Effects Society]] |archive-url=https://web.archive.org/web/20160412081906/https://www.visualeffectssociety.com/post/ves-awards-nominations-announced |archive-date=12 April 2016 |url-status=live}}</ref>
+
+<ref name="VES Winners">{{cite web |access-date=16 March 2016 |url=https://deadline.com/2015/02/ves-awards-winners-2015-visual-effects-society-award-winner-list-1201366460/ |title=VES Awards 2015: Complete Winners List |website=[[Deadline Hollywood]] |author=Erik Pedersen |date=4 February 2015 |archive-url=https://web.archive.org/web/20160330213051/http://deadline.com/2015/02/ves-awards-winners-2015-visual-effects-society-award-winner-list-1201366460/ |archive-date=30 March 2016 |url-status=live}}</ref>
+
+<ref name="Telegraph top 2014">{{cite web |access-date=18 August 2015 |url=https://www.telegraph.co.uk/technology/video-games/11316700/The-25-best-video-games-of-2014.html |title=The 25 best video games of 2014 |website=[[The Daily Telegraph]] |date=30 December 2014 |archive-url=https://web.archive.org/web/20150106232828/http://www.telegraph.co.uk/technology/video-games/11316700/The-25-best-video-games-of-2014.html |archive-date=6 January 2015 |url-status=live}}</ref>
+
+<ref name="Empire top 2014">{{cite web |access-date=18 August 2015 |url=https://www.empireonline.com/features/10-best-games-of-2014/p9 |title=The 10 Best Games Of The Year |website=[[Empire (magazine)|Empire]] |date=December 2014 |archive-url=https://web.archive.org/web/20150518183157/http://www.empireonline.com/features/10-best-games-of-2014/p9 |archive-date=18 May 2015 |url-status=live}}</ref>
+
+<ref name="Time top 2014">{{cite magazine |access-date=18 August 2015 |url=http://time.com/3582118/top-10-video-games-2014/ |title=Top 10 Video Games |magazine=[[Time (magazine)|Time]] |author=Matt Peckham |date=2 December 2014 |archive-url=https://web.archive.org/web/20150329231604/http://time.com/3582118/top-10-video-games-2014/ |archive-date=29 March 2015 |url-status=live}}</ref>
+
+<ref name="Guardian top 2014">{{cite web |access-date=18 August 2015 |url=https://www.theguardian.com/technology/2014/dec/15/the-best-video-games-of-2014 |title=The 25 best video games of 2014 |website=[[The Guardian]] |author=Keith Stuart |date=19 December 2014 |archive-url=https://web.archive.org/web/20150101193358/http://www.theguardian.com/technology/2014/dec/15/the-best-video-games-of-2014 |archive-date=1 January 2015 |url-status=live}}</ref>
+
+<ref name="EuroG reader top 2014">{{cite web |access-date=18 August 2015 |url=http://www.eurogamer.net/articles/2015-01-02-readers-top-50-games-of-2014 |title=Reader's top 50 games of 2014 |website=[[Eurogamer]] |author=Martin Robinson |date=2 January 2015 |archive-url=https://web.archive.org/web/20150103131053/http://www.eurogamer.net/articles/2015-01-02-readers-top-50-games-of-2014 |archive-date=3 January 2015 |url-status=live}}</ref>
+
+<ref name="Daily Mirror top 2014">{{cite web |access-date=18 August 2015 |url=https://www.mirror.co.uk/news/technology-science/technology/10-best-games-2014-4839930 |title=The 10 best games of 2014 |website=[[Daily Mirror]] |author=Kevin Lynch |date=14 December 2014 |archive-url=https://web.archive.org/web/20150621023639/http://www.mirror.co.uk/news/technology-science/technology/10-best-games-2014-4839930 |archive-date=21 June 2015 |url-status=live}}</ref>
+
+<ref name="Sequel rumor">{{cite web |access-date=26 April 2017 |url=http://www.eurogamer.net/articles/2017-04-26-alien-isolation-2-rumour-isnt-true |title=Alien: Isolation 2 rumour isn't true |website=[[Eurogamer]] |author=Chris Bratt |date=26 April 2017 |archive-url=https://web.archive.org/web/20170427202705/http://www.eurogamer.net/articles/2017-04-26-alien-isolation-2-rumour-isnt-true |archive-date=27 April 2017 |url-status=live}}</ref>
+
+<!--
+<ref name="Weak sales">{{cite web |access-date=7 October 2018 |url=https://www.gamesindustry.biz/articles/2015-05-11-sega-laments-weak-game-sales-even-as-hard-numbers-rise |title=Sega laments 'weak' game sales even as hard numbers rise |website=[[GamesIndustry.biz]] |date=11 May 2015 |author=Matthew Handrahan |archive-url=https://web.archive.org/web/20170125152341/https://www.gamesindustry.biz/articles/2015-05-11-sega-laments-weak-game-sales-even-as-hard-numbers-rise |archive-date=25 January 2017 |url-status=live}}</ref>
+-->
+
+<ref name="Possible Sequel">{{cite web |access-date=7 October 2018 |url=https://www.pcgamer.com/uk/an-alien-isolation-sequel-has-been-discussed-says-creative-assembly/ |title=An Alien: Isolation sequel has been discussed, says Creative Assembly |website=[[PC Gamer]] |date=12 December 2014 |author=Shaun Prescott |archive-url=https://archive.today/20181007095549/https://www.pcgamer.com/uk/an-alien-isolation-sequel-has-been-discussed-says-creative-assembly/ |archive-date=7 October 2018 |url-status=live}}</ref>
+
+<!--
+<ref name="New FPS">{{cite web |access-date=7 October 2018 |url=https://www.pcgamer.com/uk/the-team-behind-alien-isolation-is-working-on-a-first-person-tactical-shooter/ |title=The team behind Alien: Isolation is working on a first-person tactical shooter |website=[[PC Gamer]] |date=26 June 2018 |author=Shaun Prescott |archive-url=https://archive.today/20181007095225/https://www.pcgamer.com/uk/the-team-behind-alien-isolation-is-working-on-a-first-person-tactical-shooter/ |archive-date=7 October 2018 |url-status=live}}</ref>
+-->
+
+<ref name="Aliens Resistance">{{cite web |access-date=10 October 2019 |url=https://www.darkhorse.com/Comics/3004-092/Aliens-Resistance-1 |title=Aliens: Resistance #1 |website=[[Dark Horse Comics]] |date=23 January 2019 |archive-url=https://web.archive.org/web/20190226160635/https://www.darkhorse.com/Comics/3004-092/Aliens-Resistance-1 |archive-date=26 February 2019 |url-status=live}}</ref>
+
+<ref name="Aliens Rescue">{{cite web |access-date=10 October 2019 |url=https://www.darkhorse.com/Comics/3004-097/Aliens-Rescue-1 |title=Aliens: Rescue #1 |website=[[Dark Horse Comics]] |date=24 July 2019 |archive-url=https://web.archive.org/web/20191010101241/https://www.darkhorse.com/Comics/3004-097/Aliens-Rescue-1 |archive-date=10 October 2019 |url-status=live}}</ref>
+
+<ref name="Novelization">{{cite web |access-date=10 October 2019 |url=https://titanbooks.com/70010-alien-isolation/ |title=Alien: Isolation |website=[[Titan Books]] |date=30 July 2019 |archive-url=https://web.archive.org/web/20190805190131/https://titanbooks.com/70010-alien-isolation/ |archive-date=5 August 2019 |url-status=live}}</ref>
+
+<ref name="Old Story">{{cite web |access-date=7 January 2019 |url=https://www.pcgamer.com/uk/alien-isolations-lost-intro-sequence/ |title=Alien: Isolation's lost intro sequence |website=[[PC Gamer]] |first=Andy | last=Kelly |date=6 September 2016 |archive-url=https://archive.today/20190107194210/https://www.pcgamer.com/uk/alien-isolations-lost-intro-sequence/ |archive-date=7 January 2019 |url-status=live}}</ref>
+
+<ref name="Pinball adaptation">{{cite web |access-date=12 March 2019 |url=https://kotaku.com/aliens-is-much-less-terrifying-in-pinball-form-1772871352 |title=Aliens Is Not Nearly As Scary In Pinball Form |website=[[Kotaku]] |first=Mike | last=Fahey |date=25 April 2016 |archive-url=https://web.archive.org/web/20180124030553/https://kotaku.com/aliens-is-much-less-terrifying-in-pinball-form-1772871352 |archive-date=24 January 2018 |url-status=live}}</ref>
+
+<ref name="Alien Blackout review">{{cite web |access-date=7 January 2019 |url=https://www.polygon.com/reviews/2019/1/24/18194708/alien-blackout-review-ios-android |title=Alien: Blackout's clever premise never leads to a substantial game |website=[[Polygon (website)|Polygon]] |first=Andrew | last=Hayward |date=24 January 2019 |archive-url=https://web.archive.org/web/20190203085812/https://www.polygon.com/reviews/2019/1/24/18194708/alien-blackout-review-ios-android |archive-date=3 February 2019 |url-status=live}}</ref>
+
+<ref name="AV top horror">{{cite web |access-date=12 January 2019 |url=https://www.avclub.com/the-35-greatest-horror-games-of-all-time-1830082156 |title=The 35 greatest horror games of all time |website=[[The A.V. Club]] |date=31 October 2018 |archive-url=https://web.archive.org/web/20181103000942/https://www.avclub.com/the-35-greatest-horror-games-of-all-time-1830082156 |archive-date=3 November 2018 |url-status=live}}</ref>
+
+<ref name="Radar top horror">{{cite web |access-date=12 January 2019 |url=https://www.gamesradar.com/best-horror-games/2/ |title=The 20 best horror games of all time |website=[[GamesRadar+]] |date=4 January 2018 |archive-url=https://web.archive.org/web/20180401222008/https://www.gamesradar.com/best-horror-games/2/ |archive-date=1 April 2018 |url-status=live}}</ref>
+
+<ref name="Clive Gratton Engine Talk">{{cite AV media |people=Clive Gratton |date=21 June 2017 |title=A transformative approach to game engine development |medium=Presentation recording |publisher=Digital Dragons |language=en |url=https://www.youtube.com/watch?v=FXKEiFUXBIo |access-date=7 January 2019 |archive-url=https://web.archive.org/web/20180103161207/https://www.youtube.com/watch?v=FXKEiFUXBIo |archive-date=3 January 2018 |url-status=live}}</ref>
+
+<ref name="Digital series">{{cite web |access-date=2 March 2019 |url=https://www.ign.com/articles/2019/02/28/how-alien-isolation-digital-series-expands-amanda-ripleys-story-from-the-2014-game/ |title=How Alien: Isolation Digital Series Expands Amanda Ripley's Story From the 2014 Game |website=[[IGN]] |first=David | last=Griffin |date=28 February 2019 |archive-url=https://web.archive.org/web/20190301023732/https://www.ign.com/articles/2019/02/28/how-alien-isolation-digital-series-expands-amanda-ripleys-story-from-the-2014-game/ |archive-date=1 March 2019 |url-status=live}}</ref>
+
+<ref name="Switch announcement">{{cite web |access-date=12 June 2019 |url=https://www.vg247.com/2019/06/12/alien-isolation-switch-2019/ |title=Alien: Isolation is heading to Nintendo Switch later this year |website=[[VG247]] |date=12 June 2019 |author=Stephany Nunneley |archive-url=https://web.archive.org/web/20190612194718/https://www.vg247.com/2019/06/12/alien-isolation-switch-2019/ |archive-date=12 June 2019 |url-status=live}}</ref>
+
+<ref name="Switch release">{{cite web |access-date=22 November 2019 |url=https://www.eurogamer.net/articles/2019-11-21-alien-isolation-finally-gets-a-switch-release-date |title=Alien: Isolation finally gets Nintendo Switch release date |website=[[Eurogamer]] |date=21 November 2019 |author=Imogen Beckhelling |archive-url=https://web.archive.org/web/20191122041427/https://www.eurogamer.net/articles/2019-11-21-alien-isolation-finally-gets-a-switch-release-date |archive-date=22 November 2019 |url-status=live}}</ref>
+
+<ref name="GI tips">{{cite magazine |access-date=29 April 2020 |url=https://www.gameinformer.com/b/features/archive/2014/10/07/alien-isolation-tips-survival-guide-game-informer.aspx |title=7 Tips For Surviving (And Having Fun) In Alien: Isolation |magazine=[[Game Informer]] |author=Jeff Marchiafava |date=17 October 2014 |archive-url=https://web.archive.org/web/20141217084716/https://www.gameinformer.com/b/features/archive/2014/10/07/alien-isolation-tips-survival-guide-game-informer.aspx |archive-date=17 December 2014 |url-status=live}}</ref>
+
+<ref name="Luna release">{{cite web |access-date=5 October 2021 |url=https://amazonluna.blog/coming-soon-to-luna-in-october-cddb0e3486de?gi=5329447ae092 |title=Coming Soon to Luna in October |website=Amazonluna.blog |publisher=[[Medium (website)|Medium]] |date=30 September 2021 |archive-url=https://web.archive.org/web/20211001004234/https://amazonluna.blog/coming-soon-to-luna-in-october-cddb0e3486de?gi=5329447ae092 |archive-date=1 October 2021 |url-status=live}}</ref>
+
+<ref name="Mobile release">{{cite web |access-date=18 November 2021 |url=https://www.gamespot.com/articles/alien-isolation-arrives-on-ios-and-android-on-december-16/1100-6498133/ |title=Alien: Isolation Arrives On iOS And Android on December 16 |website=[[GameSpot]] |date=17 November 2021 |author=George Yang |archive-url=https://web.archive.org/web/20211118214730/https://www.gamespot.com/articles/alien-isolation-arrives-on-ios-and-android-on-december-16/1100-6498133/ |archive-date=18 November 2021 |url-status=live}}</ref>
+
+<ref name=GamesRadar2015>{{cite web |url=http://www.gamesradar.com/best-games-ever/ |title=The 100 Best Games of All-Time |date=25 February 2015 |website=[[GamesRadar]] |access-date=19 November 2013 |archive-url=https://web.archive.org/web/20150319223433/http://www.gamesradar.com/best-games-ever/ |archive-date=19 March 2015 |url-status=dead }}</ref>
+
+<ref name=GTM2015>{{cite journal|journal=[[GamesTM]]|title=100 Greatest Games of All Time|date=September 2015|type=Special issue}}</ref>
+
+<ref name=GI2018>{{cite magazine|magazine=[[Game Informer]]|title=The Top 300 Games of All Time|date=April 2018|issue=300}}</ref>
+
+<ref name=GTM2018>{{cite journal|journal=[[GamesTM]]|title=The 200 Greatest Games of All Time|date=May 2018|issue=200}}</ref>
+
+<ref name=HG101Bonus>{{cite web|title=HG101 Presents: The 200 Best Video Games of All Time - Bonus Edition|url=https://hg101.itch.io/hg101-presents-the-200-best-video-games-of-all-time|website=hardcoregaming101.net|access-date=6 July 2021|date=14 March 2020|archive-url=https://web.archive.org/web/20201113171848/https://hg101.itch.io/hg101-presents-the-200-best-video-games-of-all-time|archive-date=13 November 2020|url-status=live}}</ref>
+
+<ref name=GLHFUSAToday>{{cite web |url=https://ftw.usatoday.com/lists/best-video-games |author=GLHF |title=The 100 best video games of all time, ranked |website=[[USA Today]] |date=10 September 2022 |access-date=14 September 2022 |archive-date=6 December 2022 |archive-url=https://web.archive.org/web/20221206112627/https://ftw.usatoday.com/lists/best-video-games |url-status=live }}</ref>
+
+<ref name=GLHFSportsIllustrated>{{cite magazine|url=https://videogames.si.com/guides/best-games|author=GLHF|title=The best 100 games of all time, ranked|magazine=[[Sports Illustrated]]|date=27 January 2023|access-date=29 January 2023|archive-date=29 January 2023|archive-url=https://web.archive.org/web/20230129174343/https://videogames.si.com/guides/best-games|url-status=live}}</ref>
+
+<ref name=GamingBolt2024>{{cite web |url=https://www.youtube.com/watch?v=T8Kg7HzboGs |title=TOP 30 Games of All Time You Need To Play [2024 Edition] |publisher=GamingBolt |website=[[YouTube]] |date=2 April 2024 |access-date=4 April 2024}}</ref>
+
+<ref name="sound designers">{{cite web |last=Ramsey |first=Colby |date=2015-03-23 |title=The sound of Alien: Isolation |url=https://audiomediainternational.com/the-sound-of-alien-isolation/ |access-date=2025-09-26 |website=Audio Media International}}</ref>
+
+<ref name="soundtrack release">{{cite web |last=Wilson |first=Mike |date=2024-10-08 |title=‘Alien: Isolation’ Soundtrack Available Digitally Now, Coming to Vinyl and Cassette |url=https://bloody-disgusting.com/video-games/3834657/alien-isolation-soundtrack-available-digitally-now-coming-to-vinyl-and-cassette/ |access-date=2025-09-26 |website=Bloody Disgusting!}}</ref>
+
+<ref name="Lofi Girl Partnership">{{cite web |access-date=2024-10-09 |date=2024-10-08 |first=Maxime |language=fr-FR |last=Claudel |title=C'est quoi Alien: Isolation, la nouvelle collaboration avec Lofi Girl |url=https://www.numerama.com/pop-culture/1821838-cest-quoi-alien-isolation-la-nouvelle-collaboration-avec-lofi-girl.html |website=Numerama |archive-date=9 October 2024 |archive-url=https://web.archive.org/web/20241009165031/https://www.numerama.com/pop-culture/1821838-cest-quoi-alien-isolation-la-nouvelle-collaboration-avec-lofi-girl.html |url-status=live}}</ref>
+</references>
+
+==External links==
+{{sisterlinks|d=Q15613717|n=no|b=no|v=no|voy=no|m=no|mw=no|wikt=no|s=no|species=no|display=''Alien: Isolation''|c=no}}
+* {{Official website|http://www.alienisolation.com}}
+* {{MobyGames|/alien-isolation}}
+{{Portal bar|Speculative fiction/Horror|Space|Speculative fiction|Video games}}
+{{Alien (franchise)}}
+{{The Creative Assembly}}
+
+[[Category:2014 video games]]
+[[Category:Alien (franchise) games]]
+[[Category:Android (operating system) games]]
+[[Category:BAFTA winners (video games)]]
+[[Category:Creative Assembly games]]
+[[Category:Video game interquels]]
+[[Category:IOS games]]
+[[Category:Linux games]]
+[[Category:MacOS games]]
+[[Category:Nintendo Switch games]]
+[[Category:PlayStation 3 games]]
+[[Category:PlayStation 4 games]]
+[[Category:Retrofuturistic video games]]
+[[Category:Immersive sims]]
+[[Category:2010s horror video games]]
+[[Category:Science fiction video games]]
+[[Category:Sega video games]]
+[[Category:Single-player video games]]
+[[Category:Stealth video games]]
+[[Category:Survival horror video games]]
+[[Category:Video games developed in the United Kingdom]]
+[[Category:Video games featuring female protagonists]]
+[[Category:Video games scored by Jeff van Dyck]]
+[[Category:Video games set in the 22nd century]]
+[[Category:Video games set on spacecraft]]
+[[Category:Windows games]]
+[[Category:Xbox 360 games]]
+[[Category:Xbox One games]]
+[[Category:Game Developers Choice Award winners]]
+[[Category:Feral Interactive games]]
+[[Category:Video games based on works by Dan O'Bannon]]
