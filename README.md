@@ -24,7 +24,10 @@ Simonson, because the peak is not the beginning), *Venom* (Cates and
 Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
-flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
+flattened), *Black Panther* (350 issues — both McGregor arcs inside *Jungle
+Action*, Priest, Hudlin, Coates, Ridley and Ewing, with the Fantastic Four
+issues left on the Fantastic Four list rather than duplicated),
+*Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
 twelve chapters the source numbers from minus 108, arcs taken from the
 chapter lists' own cited prose), and *Spawn* — 829 issues across 187 arcs, following a curated
 reading order rather than publication date.
@@ -450,6 +453,11 @@ Kingdom Hearts order and priorities from a rundown by a longtime player;
 its hours and Metal Gear's story-only figures from HowLongToBeat. Nasuverse
 assembled from the Type-Moon release history, with additions from a
 contributor's pull request.
+
+Black Panther issue ranges machine-read from Wikipedia's Black Panther
+collected editions tables, with the Jungle Action article for the vol. 2 run
+and Eve Ewing's bibliography for the ninth volume; the generator refuses to
+write a row no source enumerates.
 
 X-Men structured from the standard reading orders with issue ranges verified
 against Marvel's series listings; every comic section links Marvel's own
