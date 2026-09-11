@@ -513,6 +513,19 @@ def main():
         "civil-war.json no longer carries Captain America #%s, so leaving "
         "them out of this list would lose them entirely" % missing)
 
+    # A page count in a note is the one number on this list that is not an
+    # issue number or a year, so it is checked against the infobox field it
+    # was read out of ("| Pages = 104" on volume five #600) rather than
+    # trusted. Any note that types a new one has to be able to point at it.
+    for (series, n), text in NOTE.items():
+        m = re.search(r"\b(\d+)\s+pages\b", text)
+        if not m:
+            continue
+        src = issues[series][str(n)]["pages"]
+        assert src == int(m.group(1)), (
+            "%s #%d: the note says %s pages, the wiki says %s"
+            % (series, n, m.group(1), src))
+
     sections, seen, bru = [], set(), []
     for spec in SECTIONS:
         items, years, off = [], [], set()

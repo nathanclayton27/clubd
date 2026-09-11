@@ -4,9 +4,10 @@
     PYTHONIOENCODING=utf-8 python scratch/captain-america/parse.py
 
 One record per issue: cover month and year, the first story's title, the
-story-arc name the wiki files it under, and every writer credited on any
-story in the issue. Nothing here is interpreted — the generator does the
-interpreting and asserts against these fields.
+story-arc name the wiki files it under, the page count the infobox gives,
+and every writer credited on any story in the issue. Nothing here is
+interpreted — the generator does the interpreting and asserts against
+these fields.
 """
 import json
 import pathlib
@@ -83,6 +84,7 @@ def main():
             "month": fl.get("Month", ""),
             "story": fl.get("StoryTitle1", ""),
             "arc": re.sub(r"\s*\(\d{4}\)$", "", fl.get("StoryArc1", "")),
+            "pages": int(fl["Pages"]) if re.match(r"^\d+$", fl.get("Pages", "")) else None,
             "writers": writers,
         }
         out.setdefault(series, {})[num] = rec

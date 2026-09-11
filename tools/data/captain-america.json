@@ -5,6 +5,7 @@
     "arc": "",
     "month": "March",
     "n": 4,
+    "pages": null,
     "story": "Captain America Joins... The Avengers!",
     "writers": [
      "Jack Kirby",
@@ -18,6 +19,7 @@
     "arc": "",
     "month": "March",
     "n": 1,
+    "pages": 64,
     "story": "Meet Captain America",
     "writers": [
      "Ed Herron",
@@ -32,6 +34,7 @@
     "arc": "",
     "month": "April",
     "n": 100,
+    "pages": null,
     "story": "This Monster Unmasked!",
     "writers": [
      "Stan Lee"
@@ -42,6 +45,7 @@
     "arc": "",
     "month": "May",
     "n": 101,
+    "pages": 36,
     "story": "\"When Wakes the Sleeper!\"",
     "writers": [
      "Stan Lee"
@@ -52,6 +56,7 @@
     "arc": "",
     "month": "June",
     "n": 102,
+    "pages": null,
     "story": "The Sleeper Strikes",
     "writers": [
      "Stan Lee"
@@ -62,6 +67,7 @@
     "arc": "",
     "month": "July",
     "n": 103,
+    "pages": null,
     "story": "The Weakest Link",
     "writers": [
      "Stan Lee"
@@ -72,6 +78,7 @@
     "arc": "",
     "month": "August",
     "n": 104,
+    "pages": null,
     "story": "Slave of the Skull!",
     "writers": [
      "Stan Lee"
@@ -82,6 +89,7 @@
     "arc": "",
     "month": "September",
     "n": 105,
+    "pages": null,
     "story": "In the Name of Batroc!",
     "writers": [
      "Stan Lee"
@@ -92,6 +100,7 @@
     "arc": "",
     "month": "October",
     "n": 106,
+    "pages": null,
     "story": "Cap Goes Wild!",
     "writers": [
      "Stan Lee"
@@ -102,6 +111,7 @@
     "arc": "",
     "month": "November",
     "n": 107,
+    "pages": null,
     "story": "If the Past Be Not Dead--",
     "writers": [
      "Stan Lee"
@@ -112,6 +122,7 @@
     "arc": "",
     "month": "December",
     "n": 108,
+    "pages": null,
     "story": "The Snares of the Trapster!",
     "writers": [
      "Stan Lee"
@@ -122,6 +133,7 @@
     "arc": "",
     "month": "January",
     "n": 109,
+    "pages": 32,
     "story": "The Hero That Was!",
     "writers": [
      "Stan Lee"
@@ -132,6 +144,7 @@
     "arc": "",
     "month": "February",
     "n": 110,
+    "pages": null,
     "story": "No Longer Alone!",
     "writers": [
      "Jim Steranko"
@@ -142,6 +155,7 @@
     "arc": "",
     "month": "March",
     "n": 111,
+    "pages": 36,
     "story": "Tomorrow You Live, Tonight I Die!",
     "writers": [
      "Jim Steranko"
@@ -152,6 +166,7 @@
     "arc": "",
     "month": "April",
     "n": 112,
+    "pages": null,
     "story": "Lest We Forget!",
     "writers": [
      "Stan Lee"
@@ -162,6 +177,7 @@
     "arc": "",
     "month": "May",
     "n": 113,
+    "pages": null,
     "story": "The Strange Death of Captain America",
     "writers": [
      "Jim Steranko",
@@ -173,6 +189,7 @@
     "arc": "",
     "month": "June",
     "n": 114,
+    "pages": null,
     "story": "The Man Behind the Mask!",
     "writers": [
      "Stan Lee"
@@ -183,6 +200,7 @@
     "arc": "",
     "month": "July",
     "n": 115,
+    "pages": null,
     "story": "Now Begins the Nightmare!",
     "writers": [
      "Stan Lee"
@@ -193,6 +211,7 @@
     "arc": "",
     "month": "August",
     "n": 116,
+    "pages": null,
     "story": "Far Worse Than Death!",
     "writers": [
      "Stan Lee"
@@ -203,6 +222,7 @@
     "arc": "",
     "month": "September",
     "n": 117,
+    "pages": null,
     "story": "The Coming of...The Falcon!",
     "writers": [
      "Stan Lee"
@@ -213,6 +233,7 @@
     "arc": "",
     "month": "October",
     "n": 118,
+    "pages": null,
     "story": "The Falcon Fights On!",
     "writers": [
      "Stan Lee"
@@ -223,6 +244,7 @@
     "arc": "",
     "month": "November",
     "n": 119,
+    "pages": null,
     "story": "Now Falls the Skull!",
     "writers": [
      "Stan Lee"
@@ -233,6 +255,7 @@
     "arc": "",
     "month": "December",
     "n": 120,
+    "pages": null,
     "story": "Crack-Up on Campus!",
     "writers": [
      "Stan Lee"
@@ -243,6 +266,7 @@
     "arc": "",
     "month": "January",
     "n": 121,
+    "pages": null,
     "story": "The Coming of the Man-Brute",
     "writers": [
      "Stan Lee"
@@ -253,6 +277,7 @@
     "arc": "",
     "month": "February",
     "n": 122,
+    "pages": null,
     "story": "The Sting of the Scorpion!",
     "writers": [
      "Stan Lee"
@@ -263,6 +288,7 @@
     "arc": "",
     "month": "March",
     "n": 123,
+    "pages": null,
     "story": "Suprema, The Deadliest of the Species!",
     "writers": [
      "Stan Lee"
@@ -273,6 +299,7 @@
     "arc": "",
     "month": "April",
     "n": 124,
+    "pages": 36,
     "story": "Stop the Cyborg!",
     "writers": [
      "Stan Lee"
@@ -283,6 +310,7 @@
     "arc": "",
     "month": "May",
     "n": 125,
+    "pages": null,
     "story": "Captured in Vietnam!",
     "writers": [
      "Stan Lee"
@@ -293,6 +321,7 @@
     "arc": "",
     "month": "June",
     "n": 126,
+    "pages": null,
     "story": "The Fate of... the Falcon!",
     "writers": [
      "Stan Lee"
@@ -303,6 +332,7 @@
     "arc": "",
     "month": "July",
     "n": 127,
+    "pages": null,
     "story": "Who Calls Me a Traitor?",
     "writers": [
      "Stan Lee"
@@ -313,6 +343,7 @@
     "arc": "",
     "month": "August",
     "n": 128,
+    "pages": null,
     "story": "Mission: Stamp Out Satan's Angels",
     "writers": [
      "Stan Lee"
@@ -323,6 +354,7 @@
     "arc": "",
     "month": "September",
     "n": 129,
+    "pages": null,
     "story": "The Vengeance of -- the Red Skull",
     "writers": [
      "Stan Lee"
@@ -333,6 +365,7 @@
     "arc": "",
     "month": "October",
     "n": 130,
+    "pages": null,
     "story": "Up Against the Wall",
     "writers": [
      "Stan Lee"
@@ -343,6 +376,7 @@
     "arc": "",
     "month": "November",
     "n": 131,
+    "pages": null,
     "story": "Bucky Reborn!",
     "writers": [
      "Stan Lee"
@@ -353,6 +387,7 @@
     "arc": "",
     "month": "December",
     "n": 132,
+    "pages": null,
     "story": "The Fearful Secret of Bucky Barnes!",
     "writers": [
      "Stan Lee"
@@ -363,6 +398,7 @@
     "arc": "",
     "month": "January",
     "n": 133,
+    "pages": null,
     "story": "Madness in the Slums!",
     "writers": [
      "Stan Lee"
@@ -373,6 +409,7 @@
     "arc": "",
     "month": "February",
     "n": 134,
+    "pages": 32,
     "story": "They Call Him -- Stone-Face!",
     "writers": [
      "Stan Lee"
@@ -383,6 +420,7 @@
     "arc": "",
     "month": "March",
     "n": 135,
+    "pages": null,
     "story": "More Monster Than Man!",
     "writers": [
      "Stan Lee"
@@ -393,6 +431,7 @@
     "arc": "",
     "month": "April",
     "n": 136,
+    "pages": null,
     "story": "The World Below",
     "writers": [
      "Stan Lee"
@@ -403,6 +442,7 @@
     "arc": "",
     "month": "May",
     "n": 137,
+    "pages": null,
     "story": "To Stalk the Spider-Man",
     "writers": [
      "Stan Lee"
@@ -413,6 +453,7 @@
     "arc": "",
     "month": "June",
     "n": 138,
+    "pages": null,
     "story": "It Happens in Harlem",
     "writers": [
      "Stan Lee"
@@ -423,6 +464,7 @@
     "arc": "",
     "month": "July",
     "n": 139,
+    "pages": null,
     "story": "The Badge and the Betrayal!",
     "writers": [
      "Stan Lee"
@@ -433,6 +475,7 @@
     "arc": "",
     "month": "August",
     "n": 140,
+    "pages": null,
     "story": "In the Grip of Gargoyle!",
     "writers": [
      "Stan Lee"
@@ -443,6 +486,7 @@
     "arc": "",
     "month": "September",
     "n": 141,
+    "pages": null,
     "story": "The Unholy Alliance",
     "writers": [
      "Stan Lee"
@@ -453,6 +497,7 @@
     "arc": "",
     "month": "October",
     "n": 142,
+    "pages": null,
     "story": "And in the End",
     "writers": [
      "Gary Friedrich"
@@ -463,6 +508,7 @@
     "arc": "",
     "month": "November",
     "n": 143,
+    "pages": null,
     "story": "Power to the People / Chapter Two Burn, Whitey, Burn! / Red Skull in the Morning, Cap Take Warning",
     "writers": [
      "Gary Friedrich"
@@ -473,6 +519,7 @@
     "arc": "",
     "month": "December",
     "n": 144,
+    "pages": null,
     "story": "Hydra Over All!",
     "writers": [
      "Gary Friedrich"
@@ -483,6 +530,7 @@
     "arc": "",
     "month": "January",
     "n": 145,
+    "pages": 36,
     "story": "Skyjacked!",
     "writers": [
      "Gary Friedrich"
@@ -493,6 +541,7 @@
     "arc": "",
     "month": "February",
     "n": 146,
+    "pages": null,
     "story": "Mission: Destroy the Femme Force!",
     "writers": [
      "Gary Friedrich"
@@ -503,6 +552,7 @@
     "arc": "",
     "month": "March",
     "n": 147,
+    "pages": null,
     "story": "And Behind the Hordes of HYDRA...",
     "writers": [
      "Gary Friedrich"
@@ -513,6 +563,7 @@
     "arc": "",
     "month": "April",
     "n": 148,
+    "pages": null,
     "story": "The Big Sleep",
     "writers": [
      "Gary Friedrich"
@@ -523,6 +574,7 @@
     "arc": "",
     "month": "May",
     "n": 149,
+    "pages": null,
     "story": "All the Colors of Evil",
     "writers": [
      "Gerry Conway"
@@ -533,6 +585,7 @@
     "arc": "",
     "month": "June",
     "n": 150,
+    "pages": null,
     "story": "Mirror, Mirror...!",
     "writers": [
      "Gerry Conway"
@@ -543,6 +596,7 @@
     "arc": "",
     "month": "July",
     "n": 151,
+    "pages": null,
     "story": "Panic on Park Avenue",
     "writers": [
      "Gerry Conway"
@@ -553,6 +607,7 @@
     "arc": "",
     "month": "August",
     "n": 152,
+    "pages": null,
     "story": "Terror in the Night!",
     "writers": [
      "Gerry Conway"
@@ -563,6 +618,7 @@
     "arc": "",
     "month": "September",
     "n": 153,
+    "pages": null,
     "story": "Captain America -- Hero or Hoax?",
     "writers": [
      "Steve Englehart"
@@ -573,6 +629,7 @@
     "arc": "",
     "month": "October",
     "n": 154,
+    "pages": null,
     "story": "The Falcon Fights Alone",
     "writers": [
      "Steve Englehart"
@@ -583,6 +640,7 @@
     "arc": "",
     "month": "November",
     "n": 155,
+    "pages": null,
     "story": "The Incredible Origin of the Other Captain America!",
     "writers": [
      "Don Rico",
@@ -594,6 +652,7 @@
     "arc": "",
     "month": "December",
     "n": 156,
+    "pages": 36,
     "story": "Two Into One Won't Go!",
     "writers": [
      "Steve Englehart"
@@ -604,6 +663,7 @@
     "arc": "",
     "month": "January",
     "n": 157,
+    "pages": null,
     "story": "'Veni, Vidi, Vici': Viper!",
     "writers": [
      "Steve Englehart",
@@ -615,6 +675,7 @@
     "arc": "",
     "month": "February",
     "n": 158,
+    "pages": null,
     "story": "The Crime Wave Breaks",
     "writers": [
      "Steve Englehart"
@@ -625,6 +686,7 @@
     "arc": "",
     "month": "March",
     "n": 159,
+    "pages": null,
     "story": "Turning Point!",
     "writers": [
      "Steve Englehart"
@@ -635,6 +697,7 @@
     "arc": "",
     "month": "April",
     "n": 160,
+    "pages": null,
     "story": "Enter: Solarr!",
     "writers": [
      "Steve Englehart"
@@ -645,6 +708,7 @@
     "arc": "",
     "month": "May",
     "n": 161,
+    "pages": 36,
     "story": "...If He Loseth His Soul!",
     "writers": [
      "Steve Englehart"
@@ -655,6 +719,7 @@
     "arc": "",
     "month": "June",
     "n": 162,
+    "pages": null,
     "story": "This Way Lies Madness!",
     "writers": [
      "Steve Englehart"
@@ -665,6 +730,7 @@
     "arc": "",
     "month": "July",
     "n": 163,
+    "pages": null,
     "story": "Beware of Serpents!",
     "writers": [
      "Steve Englehart"
@@ -675,6 +741,7 @@
     "arc": "",
     "month": "August",
     "n": 164,
+    "pages": 36,
     "story": "Queen of the Werewolves!",
     "writers": [
      "Alan Weiss",
@@ -686,6 +753,7 @@
     "arc": "",
     "month": "September",
     "n": 165,
+    "pages": null,
     "story": "The Yellow Claw Strikes",
     "writers": [
      "Steve Englehart"
@@ -696,6 +764,7 @@
     "arc": "",
     "month": "October",
     "n": 166,
+    "pages": null,
     "story": "Night of the Lurking Dead",
     "writers": [
      "Steve Englehart"
@@ -706,6 +775,7 @@
     "arc": "",
     "month": "November",
     "n": 167,
+    "pages": null,
     "story": "Ashes to Ashes",
     "writers": [
      "Steve Englehart"
@@ -716,6 +786,7 @@
     "arc": "",
     "month": "December",
     "n": 168,
+    "pages": null,
     "story": "...And a Phoenix Shall Arise!",
     "writers": [
      "Roy Thomas",
@@ -727,6 +798,7 @@
     "arc": "",
     "month": "January",
     "n": 169,
+    "pages": null,
     "story": "When a Legend Dies!",
     "writers": [
      "Mike Friedrich",
@@ -738,6 +810,7 @@
     "arc": "",
     "month": "February",
     "n": 170,
+    "pages": null,
     "story": "J'Accuse!",
     "writers": [
      "Mike Friedrich",
@@ -749,6 +822,7 @@
     "arc": "",
     "month": "March",
     "n": 171,
+    "pages": null,
     "story": "Bust-Out!",
     "writers": [
      "Mike Friedrich",
@@ -760,6 +834,7 @@
     "arc": "",
     "month": "April",
     "n": 172,
+    "pages": null,
     "story": "Believe It or Not: the Banshee!",
     "writers": [
      "Mike Friedrich",
@@ -771,6 +846,7 @@
     "arc": "",
     "month": "May",
     "n": 173,
+    "pages": null,
     "story": "The Sins of the Secret Empire!",
     "writers": [
      "Steve Englehart"
@@ -781,6 +857,7 @@
     "arc": "",
     "month": "June",
     "n": 174,
+    "pages": null,
     "story": "It's Always Darkest...!",
     "writers": [
      "Steve Englehart"
@@ -791,6 +868,7 @@
     "arc": "",
     "month": "July",
     "n": 175,
+    "pages": null,
     "story": "...Before the Dawn!",
     "writers": [
      "Steve Englehart"
@@ -801,6 +879,7 @@
     "arc": "",
     "month": "August",
     "n": 176,
+    "pages": null,
     "story": "Captain America Must Die!",
     "writers": [
      "Steve Englehart"
@@ -811,6 +890,7 @@
     "arc": "",
     "month": "September",
     "n": 177,
+    "pages": null,
     "story": "Lucifer Be Thy Name",
     "writers": [
      "Steve Englehart"
@@ -821,6 +901,7 @@
     "arc": "",
     "month": "October",
     "n": 178,
+    "pages": null,
     "story": "If the Falcon Should Fall--!",
     "writers": [
      "Steve Englehart"
@@ -831,6 +912,7 @@
     "arc": "",
     "month": "November",
     "n": 179,
+    "pages": null,
     "story": "Slings and Arrows!",
     "writers": [
      "Steve Englehart"
@@ -841,6 +923,7 @@
     "arc": "",
     "month": "December",
     "n": 180,
+    "pages": null,
     "story": "The Coming of the Nomad!",
     "writers": [
      "Steve Englehart"
@@ -851,6 +934,7 @@
     "arc": "",
     "month": "January",
     "n": 181,
+    "pages": null,
     "story": "The Mark of Madness!",
     "writers": [
      "Steve Englehart"
@@ -861,6 +945,7 @@
     "arc": "",
     "month": "February",
     "n": 182,
+    "pages": null,
     "story": "Inferno",
     "writers": [
      "Steve Englehart"
@@ -871,6 +956,7 @@
     "arc": "",
     "month": "March",
     "n": 183,
+    "pages": null,
     "story": "Nomad: No More",
     "writers": [
      "Steve Englehart"
@@ -881,6 +967,7 @@
     "arc": "",
     "month": "April",
     "n": 184,
+    "pages": null,
     "story": "Cap's Back!",
     "writers": [
      "Steve Englehart"
@@ -891,6 +978,7 @@
     "arc": "",
     "month": "May",
     "n": 185,
+    "pages": null,
     "story": "Scream the Scarlet Skull",
     "writers": [
      "Steve Englehart"
@@ -901,6 +989,7 @@
     "arc": "",
     "month": "June",
     "n": 186,
+    "pages": null,
     "story": "Mind Cage",
     "writers": [
      "John Warner",
@@ -912,6 +1001,7 @@
     "arc": "",
     "month": "July",
     "n": 187,
+    "pages": null,
     "story": "The Madness Maze",
     "writers": [
      "John Warner"
@@ -922,6 +1012,7 @@
     "arc": "",
     "month": "August",
     "n": 188,
+    "pages": null,
     "story": "Druid War",
     "writers": [
      "John Warner"
@@ -932,6 +1023,7 @@
     "arc": "",
     "month": "September",
     "n": 189,
+    "pages": null,
     "story": "Arena for a Fallen Hero",
     "writers": [
      "Tony Isabella"
@@ -942,6 +1034,7 @@
     "arc": "",
     "month": "October",
     "n": 190,
+    "pages": null,
     "story": "Nightshade is Deadlier the Second Time Around",
     "writers": [
      "Tony Isabella"
@@ -952,6 +1045,7 @@
     "arc": "",
     "month": "November",
     "n": 191,
+    "pages": null,
     "story": "The Trial of the Falcon",
     "writers": [
      "Bill Mantlo",
@@ -963,6 +1057,7 @@
     "arc": "",
     "month": "December",
     "n": 192,
+    "pages": null,
     "story": "\"Mad-Flight!\"",
     "writers": [
      "Marv Wolfman"
@@ -973,6 +1068,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "January",
     "n": 193,
+    "pages": null,
     "story": "Screamer in the Brain",
     "writers": [
      "Jack Kirby"
@@ -983,6 +1079,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "February",
     "n": 194,
+    "pages": null,
     "story": "The Trojan Horde",
     "writers": [
      "Jack Kirby"
@@ -993,6 +1090,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "March",
     "n": 195,
+    "pages": 32,
     "story": "1984!",
     "writers": [
      "Jack Kirby"
@@ -1003,6 +1101,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "April",
     "n": 196,
+    "pages": null,
     "story": "Kill-Derby",
     "writers": [
      "Jack Kirby"
@@ -1013,6 +1112,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "May",
     "n": 197,
+    "pages": null,
     "story": "The Rocks are Burning!",
     "writers": [
      "Jack Kirby"
@@ -1023,6 +1123,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "June",
     "n": 198,
+    "pages": null,
     "story": "Captain America's Love Story",
     "writers": [
      "Jack Kirby"
@@ -1033,6 +1134,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "July",
     "n": 199,
+    "pages": null,
     "story": "The Man Who Sold the United States",
     "writers": [
      "Jack Kirby"
@@ -1043,6 +1145,7 @@
     "arc": "Madbomb (Story Arc)",
     "month": "August",
     "n": 200,
+    "pages": null,
     "story": "Dawn's Early Light",
     "writers": [
      "Jack Kirby"
@@ -1053,6 +1156,7 @@
     "arc": "",
     "month": "September",
     "n": 201,
+    "pages": null,
     "story": "The Night People!",
     "writers": [
      "Jack Kirby"
@@ -1063,6 +1167,7 @@
     "arc": "",
     "month": "October",
     "n": 202,
+    "pages": null,
     "story": "Mad, Mad Dimension",
     "writers": [
      "Jack Kirby"
@@ -1073,6 +1178,7 @@
     "arc": "",
     "month": "November",
     "n": 203,
+    "pages": null,
     "story": "Alamo II",
     "writers": [
      "Jack Kirby"
@@ -1083,6 +1189,7 @@
     "arc": "",
     "month": "December",
     "n": 204,
+    "pages": null,
     "story": "The Unburied One",
     "writers": [
      "Jack Kirby"
@@ -1093,6 +1200,7 @@
     "arc": "",
     "month": "January",
     "n": 205,
+    "pages": null,
     "story": "Agron Walks the Earth",
     "writers": [
      "Jack Kirby"
@@ -1103,6 +1211,7 @@
     "arc": "",
     "month": "February",
     "n": 206,
+    "pages": null,
     "story": "Face to Face With the Swine",
     "writers": [
      "Jack Kirby"
@@ -1113,6 +1222,7 @@
     "arc": "",
     "month": "March",
     "n": 207,
+    "pages": null,
     "story": "The Tiger and the Swine",
     "writers": [
      "Jack Kirby"
@@ -1123,6 +1233,7 @@
     "arc": "",
     "month": "April",
     "n": 208,
+    "pages": null,
     "story": "The River of Death",
     "writers": [
      "Jack Kirby"
@@ -1133,6 +1244,7 @@
     "arc": "",
     "month": "May",
     "n": 209,
+    "pages": null,
     "story": "Arnim Zola - The Bio-Fanatic",
     "writers": [
      "Jack Kirby"
@@ -1143,6 +1255,7 @@
     "arc": "",
     "month": "June",
     "n": 210,
+    "pages": null,
     "story": "Showdown Day!",
     "writers": [
      "Jack Kirby"
@@ -1153,6 +1266,7 @@
     "arc": "",
     "month": "July",
     "n": 211,
+    "pages": null,
     "story": "Nazi \"X\"!",
     "writers": [
      "Jack Kirby"
@@ -1163,6 +1277,7 @@
     "arc": "",
     "month": "August",
     "n": 212,
+    "pages": null,
     "story": "The Face of a Hero! Yours!",
     "writers": [
      "Jack Kirby"
@@ -1173,6 +1288,7 @@
     "arc": "",
     "month": "September",
     "n": 213,
+    "pages": null,
     "story": "The Night Flyer!",
     "writers": [
      "Jack Kirby"
@@ -1183,6 +1299,7 @@
     "arc": "",
     "month": "October",
     "n": 214,
+    "pages": null,
     "story": "Power",
     "writers": [
      "Jack Kirby"
@@ -1193,6 +1310,7 @@
     "arc": "",
     "month": "November",
     "n": 215,
+    "pages": null,
     "story": "The Way It Really Was!",
     "writers": [
      "Roy Thomas"
@@ -1203,6 +1321,7 @@
     "arc": "",
     "month": "December",
     "n": 216,
+    "pages": null,
     "story": "",
     "writers": [],
     "year": 1977
@@ -1211,6 +1330,7 @@
     "arc": "",
     "month": "January",
     "n": 217,
+    "pages": null,
     "story": "The Search for Steve Rogers!",
     "writers": [
      "Don Glut",
@@ -1222,6 +1342,7 @@
     "arc": "",
     "month": "February",
     "n": 218,
+    "pages": null,
     "story": "One Day in Newfoundland!",
     "writers": [
      "Don Glut"
@@ -1232,6 +1353,7 @@
     "arc": "",
     "month": "March",
     "n": 219,
+    "pages": null,
     "story": "The Adventures of Captain America",
     "writers": [
      "Don Glut"
@@ -1242,6 +1364,7 @@
     "arc": "",
     "month": "April",
     "n": 220,
+    "pages": null,
     "story": "The Ameridroid Lives!",
     "writers": [
      "Don Glut",
@@ -1253,6 +1376,7 @@
     "arc": "",
     "month": "May",
     "n": 221,
+    "pages": null,
     "story": "Cul De-Sac!",
     "writers": [
      "David Kraft",
@@ -1266,6 +1390,7 @@
     "arc": "",
     "month": "June",
     "n": 222,
+    "pages": null,
     "story": "Monumental Menace",
     "writers": [
      "Steve Gerber"
@@ -1276,6 +1401,7 @@
     "arc": "",
     "month": "July",
     "n": 223,
+    "pages": null,
     "story": "Call Me Animus",
     "writers": [
      "Steve Gerber"
@@ -1286,6 +1412,7 @@
     "arc": "",
     "month": "August",
     "n": 224,
+    "pages": null,
     "story": "Saturday Night Furor",
     "writers": [
      "Peter Gillis"
@@ -1296,6 +1423,7 @@
     "arc": "",
     "month": "September",
     "n": 225,
+    "pages": null,
     "story": "Devastation!",
     "writers": [
      "Steve Gerber"
@@ -1306,6 +1434,7 @@
     "arc": "",
     "month": "October",
     "n": 226,
+    "pages": null,
     "story": "Am I Still Captain America?",
     "writers": [
      "Roger McKenzie"
@@ -1316,6 +1445,7 @@
     "arc": "",
     "month": "November",
     "n": 227,
+    "pages": null,
     "story": "The Deadly Gauntlet",
     "writers": [
      "Roger McKenzie"
@@ -1326,6 +1456,7 @@
     "arc": "",
     "month": "December",
     "n": 228,
+    "pages": null,
     "story": "A Serpent Lurks Below",
     "writers": [
      "Roger McKenzie"
@@ -1336,6 +1467,7 @@
     "arc": "",
     "month": "January",
     "n": 229,
+    "pages": null,
     "story": "Traitors All About Me",
     "writers": [
      "Roger McKenzie"
@@ -1346,6 +1478,7 @@
     "arc": "",
     "month": "February",
     "n": 230,
+    "pages": null,
     "story": "Assault on Alcatraz",
     "writers": [
      "Roger McKenzie",
@@ -1357,6 +1490,7 @@
     "arc": "",
     "month": "March",
     "n": 231,
+    "pages": null,
     "story": "Aftermath",
     "writers": [
      "Roger McKenzie"
@@ -1367,6 +1501,7 @@
     "arc": "",
     "month": "April",
     "n": 232,
+    "pages": null,
     "story": "The Flame and the Fury",
     "writers": [
      "Jim Shooter",
@@ -1378,6 +1513,7 @@
     "arc": "",
     "month": "May",
     "n": 233,
+    "pages": null,
     "story": "Cross Fire",
     "writers": [
      "Roger McKenzie"
@@ -1388,6 +1524,7 @@
     "arc": "",
     "month": "June",
     "n": 234,
+    "pages": null,
     "story": "Burn, Cap, Burn!",
     "writers": [
      "Roger McKenzie"
@@ -1398,6 +1535,7 @@
     "arc": "",
     "month": "July",
     "n": 235,
+    "pages": null,
     "story": "To Stalk the Killer Skies!",
     "writers": [
      "Roger McKenzie"
@@ -1408,6 +1546,7 @@
     "arc": "",
     "month": "August",
     "n": 236,
+    "pages": null,
     "story": "Death Dive!",
     "writers": [
      "Michael Fleisher",
@@ -1419,6 +1558,7 @@
     "arc": "",
     "month": "September",
     "n": 237,
+    "pages": null,
     "story": "\"From the Ashes... \"",
     "writers": [
      "Chris Claremont",
@@ -1430,6 +1570,7 @@
     "arc": "",
     "month": "October",
     "n": 238,
+    "pages": null,
     "story": "Snowfall Fury!",
     "writers": [
      "Peter Gillis"
@@ -1440,6 +1581,7 @@
     "arc": "",
     "month": "November",
     "n": 239,
+    "pages": null,
     "story": "Mind-Stains on the Virgin Snow!",
     "writers": [
      "Peter Gillis"
@@ -1450,6 +1592,7 @@
     "arc": "",
     "month": "December",
     "n": 240,
+    "pages": null,
     "story": "Gang Wars!",
     "writers": [
      "Alan Kupperberg",
@@ -1461,6 +1604,7 @@
     "arc": "",
     "month": "January",
     "n": 241,
+    "pages": null,
     "story": "Fear Grows in Brooklyn!",
     "writers": [
      "Mike W. Barr"
@@ -1471,6 +1615,7 @@
     "arc": "",
     "month": "February",
     "n": 242,
+    "pages": null,
     "story": "Facades!",
     "writers": [
      "Steve Grant"
@@ -1481,6 +1626,7 @@
     "arc": "",
     "month": "March",
     "n": 243,
+    "pages": null,
     "story": "The Lazarus Conspiracy",
     "writers": [
      "Roger McKenzie"
@@ -1491,6 +1637,7 @@
     "arc": "",
     "month": "April",
     "n": 244,
+    "pages": null,
     "story": "The Way of All Flesh",
     "writers": [
      "Roger McKenzie"
@@ -1501,6 +1648,7 @@
     "arc": "",
     "month": "May",
     "n": 245,
+    "pages": null,
     "story": "The Calypso Connection",
     "writers": [
      "Roger McKenzie"
@@ -1511,6 +1659,7 @@
     "arc": "",
     "month": "June",
     "n": 246,
+    "pages": null,
     "story": "The Sins of the Fathers",
     "writers": [
      "Peter Gillis"
@@ -1521,6 +1670,7 @@
     "arc": "",
     "month": "July",
     "n": 247,
+    "pages": null,
     "story": "By the Dawn's Early Light!",
     "writers": [
      "John Byrne",
@@ -1532,6 +1682,7 @@
     "arc": "",
     "month": "August",
     "n": 248,
+    "pages": null,
     "story": "Dragon Man!",
     "writers": [
      "Roger Stern"
@@ -1542,6 +1693,7 @@
     "arc": "",
     "month": "September",
     "n": 249,
+    "pages": null,
     "story": "Death, Where Is Thy Sting?",
     "writers": [
      "John Byrne",
@@ -1553,6 +1705,7 @@
     "arc": "",
     "month": "October",
     "n": 250,
+    "pages": null,
     "story": "\"Cap for President!\"",
     "writers": [
      "Roger Stern"
@@ -1563,6 +1716,7 @@
     "arc": "",
     "month": "November",
     "n": 251,
+    "pages": null,
     "story": "The Mercenary and the Madman",
     "writers": [
      "Roger Stern"
@@ -1573,6 +1727,7 @@
     "arc": "",
     "month": "December",
     "n": 252,
+    "pages": null,
     "story": "\"Cold Fire!\"",
     "writers": [
      "Roger Stern"
@@ -1583,6 +1738,7 @@
     "arc": "",
     "month": "January",
     "n": 253,
+    "pages": null,
     "story": "Should Old Acquaintance Be Forgot",
     "writers": [
      "John Byrne",
@@ -1594,6 +1750,7 @@
     "arc": "",
     "month": "February",
     "n": 254,
+    "pages": null,
     "story": "Blood on the Moors",
     "writers": [
      "John Byrne",
@@ -1605,6 +1762,7 @@
     "arc": "",
     "month": "March",
     "n": 255,
+    "pages": 32,
     "story": "The Living Legend",
     "writers": [
      "Roger Stern"
@@ -1615,6 +1773,7 @@
     "arc": "",
     "month": "April",
     "n": 256,
+    "pages": null,
     "story": "The Ghosts of Greymoor Castle",
     "writers": [
      "Bill Mantlo"
@@ -1625,6 +1784,7 @@
     "arc": "",
     "month": "May",
     "n": 257,
+    "pages": null,
     "story": "Deadly Anniversary",
     "writers": [
      "Jim Shooter",
@@ -1636,6 +1796,7 @@
     "arc": "",
     "month": "June",
     "n": 258,
+    "pages": null,
     "story": "Blockbuster!",
     "writers": [
      "Chris Claremont",
@@ -1647,6 +1808,7 @@
     "arc": "",
     "month": "July",
     "n": 259,
+    "pages": null,
     "story": "Rite of Passage",
     "writers": [
      "David Michelinie",
@@ -1658,6 +1820,7 @@
     "arc": "",
     "month": "August",
     "n": 260,
+    "pages": null,
     "story": "Prison Reform!",
     "writers": [
      "Al Milgrom"
@@ -1668,6 +1831,7 @@
     "arc": "",
     "month": "September",
     "n": 261,
+    "pages": null,
     "story": "Celluloid Heroes",
     "writers": [
      "J.M. DeMatteis"
@@ -1678,6 +1842,7 @@
     "arc": "",
     "month": "October",
     "n": 262,
+    "pages": null,
     "story": "Death of a Legend?",
     "writers": [
      "J.M. DeMatteis"
@@ -1688,6 +1853,7 @@
     "arc": "",
     "month": "November",
     "n": 263,
+    "pages": null,
     "story": "The Last Movie!",
     "writers": [
      "J.M. DeMatteis"
@@ -1698,6 +1864,7 @@
     "arc": "",
     "month": "December",
     "n": 264,
+    "pages": null,
     "story": "The American Dreamers!",
     "writers": [
      "J.M. DeMatteis"
@@ -1708,6 +1875,7 @@
     "arc": "",
     "month": "January",
     "n": 265,
+    "pages": null,
     "story": "Thunderhead!",
     "writers": [
      "David Kraft"
@@ -1718,6 +1886,7 @@
     "arc": "",
     "month": "February",
     "n": 266,
+    "pages": null,
     "story": "Flight From Thunderhead!",
     "writers": [
      "David Kraft"
@@ -1728,6 +1897,7 @@
     "arc": "",
     "month": "March",
     "n": 267,
+    "pages": null,
     "story": "The Man Who Made a Difference!",
     "writers": [
      "J.M. DeMatteis"
@@ -1738,6 +1908,7 @@
     "arc": "",
     "month": "April",
     "n": 268,
+    "pages": null,
     "story": "Peace on Earth, Good Will to Man.",
     "writers": [
      "J.M. DeMatteis"
@@ -1748,6 +1919,7 @@
     "arc": "",
     "month": "May",
     "n": 269,
+    "pages": null,
     "story": "A Mind Is a Terrible Thing to Waste!",
     "writers": [
      "J.M. DeMatteis"
@@ -1758,6 +1930,7 @@
     "arc": "",
     "month": "June",
     "n": 270,
+    "pages": null,
     "story": "Someone Who Cares!",
     "writers": [
      "J.M. DeMatteis"
@@ -1768,6 +1941,7 @@
     "arc": "",
     "month": "July",
     "n": 271,
+    "pages": null,
     "story": "The Mystery of X",
     "writers": [
      "David Kraft"
@@ -1778,6 +1952,7 @@
     "arc": "",
     "month": "August",
     "n": 272,
+    "pages": null,
     "story": "Mean Streets",
     "writers": [
      "J.M. DeMatteis"
@@ -1788,6 +1963,7 @@
     "arc": "",
     "month": "September",
     "n": 273,
+    "pages": 36,
     "story": "Cap and the Howlers... 'TOGETHER AGAIN!'",
     "writers": [
      "David Kraft"
@@ -1798,6 +1974,7 @@
     "arc": "",
     "month": "October",
     "n": 274,
+    "pages": null,
     "story": "Death of a Hero",
     "writers": [
      "David Kraft"
@@ -1808,6 +1985,7 @@
     "arc": "",
     "month": "November",
     "n": 275,
+    "pages": null,
     "story": "Yesterday's Shadows!",
     "writers": [
      "J.M. DeMatteis"
@@ -1818,6 +1996,7 @@
     "arc": "",
     "month": "December",
     "n": 276,
+    "pages": 36,
     "story": "Turning Point",
     "writers": [
      "J.M. DeMatteis"
@@ -1828,6 +2007,7 @@
     "arc": "",
     "month": "January",
     "n": 277,
+    "pages": null,
     "story": "In Thy Image",
     "writers": [
      "J.M. DeMatteis"
@@ -1838,6 +2018,7 @@
     "arc": "",
     "month": "February",
     "n": 278,
+    "pages": null,
     "story": "Oh, Thus Be It Ever",
     "writers": [
      "J.M. DeMatteis"
@@ -1848,6 +2029,7 @@
     "arc": "",
     "month": "March",
     "n": 279,
+    "pages": null,
     "story": "Of Monsters and Men",
     "writers": [
      "J.M. DeMatteis"
@@ -1858,6 +2040,7 @@
     "arc": "",
     "month": "April",
     "n": 280,
+    "pages": 36,
     "story": "Sermon of the Straw",
     "writers": [
      "J.M. DeMatteis"
@@ -1868,6 +2051,7 @@
     "arc": "",
     "month": "May",
     "n": 281,
+    "pages": 36,
     "story": "Before the Fall",
     "writers": [
      "J.M. DeMatteis"
@@ -1878,6 +2062,7 @@
     "arc": "",
     "month": "June",
     "n": 282,
+    "pages": null,
     "story": "On Your Belly You Shall Crawl! And Dust Shall You Eat!",
     "writers": [
      "J.M. DeMatteis"
@@ -1888,6 +2073,7 @@
     "arc": "",
     "month": "July",
     "n": 283,
+    "pages": null,
     "story": "America the Cursed.",
     "writers": [
      "J.M. DeMatteis"
@@ -1898,6 +2084,7 @@
     "arc": "",
     "month": "August",
     "n": 284,
+    "pages": null,
     "story": "Diverging",
     "writers": [
      "J.M. DeMatteis"
@@ -1908,6 +2095,7 @@
     "arc": "",
     "month": "September",
     "n": 285,
+    "pages": null,
     "story": "Letting Go",
     "writers": [
      "J.M. DeMatteis"
@@ -1918,6 +2106,7 @@
     "arc": "",
     "month": "October",
     "n": 286,
+    "pages": null,
     "story": "One Man in Search of Himself",
     "writers": [
      "J.M. DeMatteis"
@@ -1928,6 +2117,7 @@
     "arc": "",
     "month": "November",
     "n": 287,
+    "pages": null,
     "story": "Future Shock",
     "writers": [
      "J.M. DeMatteis"
@@ -1938,6 +2128,7 @@
     "arc": "",
     "month": "December",
     "n": 288,
+    "pages": null,
     "story": "Mazes!",
     "writers": [
      "J.M. DeMatteis"
@@ -1948,6 +2139,7 @@
     "arc": "",
     "month": "January",
     "n": 289,
+    "pages": null,
     "story": "Tomorrow the World?",
     "writers": [
      "J.M. DeMatteis"
@@ -1958,6 +2150,7 @@
     "arc": "",
     "month": "February",
     "n": 290,
+    "pages": null,
     "story": "Echoes",
     "writers": [
      "J.M. DeMatteis"
@@ -1968,6 +2161,7 @@
     "arc": "",
     "month": "March",
     "n": 291,
+    "pages": null,
     "story": "To Tame a Tumbler",
     "writers": [
      "Bill Mantlo"
@@ -1978,6 +2172,7 @@
     "arc": "",
     "month": "April",
     "n": 292,
+    "pages": null,
     "story": "An American Christmas",
     "writers": [
      "J.M. DeMatteis"
@@ -1988,6 +2183,7 @@
     "arc": "",
     "month": "May",
     "n": 293,
+    "pages": null,
     "story": "Field of Vision",
     "writers": [
      "J.M. DeMatteis"
@@ -1998,6 +2194,7 @@
     "arc": "",
     "month": "June",
     "n": 294,
+    "pages": null,
     "story": "The Measure of a Man",
     "writers": [
      "J.M. DeMatteis"
@@ -2008,6 +2205,7 @@
     "arc": "",
     "month": "July",
     "n": 295,
+    "pages": 32,
     "story": "The Centre Cannot Hold",
     "writers": [
      "J.M. DeMatteis"
@@ -2018,6 +2216,7 @@
     "arc": "",
     "month": "August",
     "n": 296,
+    "pages": null,
     "story": "Things Fall Apart",
     "writers": [
      "J.M. DeMatteis"
@@ -2028,6 +2227,7 @@
     "arc": "",
     "month": "September",
     "n": 297,
+    "pages": null,
     "story": "All My Sins Remembered",
     "writers": [
      "J.M. DeMatteis"
@@ -2038,6 +2238,7 @@
     "arc": "",
     "month": "October",
     "n": 298,
+    "pages": null,
     "story": "Sturm und Drang: The Life and Times of the Red Skull!",
     "writers": [
      "J.M. DeMatteis"
@@ -2048,6 +2249,7 @@
     "arc": "",
     "month": "November",
     "n": 299,
+    "pages": null,
     "story": "The Bunker",
     "writers": [
      "J.M. DeMatteis"
@@ -2058,6 +2260,7 @@
     "arc": "",
     "month": "December",
     "n": 300,
+    "pages": null,
     "story": "Das Ende!",
     "writers": [
      "J.M. DeMatteis",
@@ -2069,6 +2272,7 @@
     "arc": "",
     "month": "January",
     "n": 301,
+    "pages": 32,
     "story": "All Good Things...",
     "writers": [
      "Michael Carlin"
@@ -2079,6 +2283,7 @@
     "arc": "",
     "month": "February",
     "n": 302,
+    "pages": null,
     "story": "...And Other Strangers",
     "writers": [
      "Michael Carlin"
@@ -2089,6 +2294,7 @@
     "arc": "",
     "month": "March",
     "n": 303,
+    "pages": null,
     "story": "Double Dare!",
     "writers": [
      "Michael Carlin"
@@ -2099,6 +2305,7 @@
     "arc": "",
     "month": "April",
     "n": 304,
+    "pages": null,
     "story": "Undercover of the Night",
     "writers": [
      "Michael Carlin"
@@ -2109,6 +2316,7 @@
     "arc": "",
     "month": "May",
     "n": 305,
+    "pages": 32,
     "story": "Walk Upon England!",
     "writers": [
      "Michael Carlin"
@@ -2119,6 +2327,7 @@
     "arc": "",
     "month": "June",
     "n": 306,
+    "pages": 32,
     "story": "The Summoning!",
     "writers": [
      "Michael Carlin"
@@ -2129,6 +2338,7 @@
     "arc": "",
     "month": "July",
     "n": 307,
+    "pages": 32,
     "story": "Stop Making Sense",
     "writers": [
      "Mark Gruenwald"
@@ -2139,6 +2349,7 @@
     "arc": "",
     "month": "August",
     "n": 308,
+    "pages": 32,
     "story": "The Body in Question",
     "writers": [
      "Mark Gruenwald"
@@ -2149,6 +2360,7 @@
     "arc": "",
     "month": "September",
     "n": 309,
+    "pages": 32,
     "story": "Nomad Madcap Cap...",
     "writers": [
      "Mark Gruenwald"
@@ -2159,6 +2371,7 @@
     "arc": "",
     "month": "October",
     "n": 310,
+    "pages": 32,
     "story": "Serpents of the World Unite!",
     "writers": [
      "Mark Gruenwald"
@@ -2169,6 +2382,7 @@
     "arc": "",
     "month": "November",
     "n": 311,
+    "pages": 32,
     "story": "Working...",
     "writers": [
      "Mark Gruenwald"
@@ -2179,6 +2393,7 @@
     "arc": "",
     "month": "December",
     "n": 312,
+    "pages": 32,
     "story": "Deface the Nation",
     "writers": [
      "Mark Gruenwald"
@@ -2189,6 +2404,7 @@
     "arc": "",
     "month": "January",
     "n": 313,
+    "pages": 32,
     "story": "Mission: Murder MODOK!",
     "writers": [
      "Mark Gruenwald"
@@ -2199,6 +2415,7 @@
     "arc": "",
     "month": "February",
     "n": 314,
+    "pages": 32,
     "story": "Asylum",
     "writers": [
      "Mark Gruenwald"
@@ -2209,6 +2426,7 @@
     "arc": "",
     "month": "March",
     "n": 315,
+    "pages": 32,
     "story": "The Hard Sell",
     "writers": [
      "Mark Gruenwald"
@@ -2219,6 +2437,7 @@
     "arc": "",
     "month": "April",
     "n": 316,
+    "pages": null,
     "story": "Creatures of Love",
     "writers": [
      "Mark Gruenwald"
@@ -2229,6 +2448,7 @@
     "arc": "",
     "month": "May",
     "n": 317,
+    "pages": null,
     "story": "Death Throws",
     "writers": [
      "Mark Gruenwald"
@@ -2239,6 +2459,7 @@
     "arc": "",
     "month": "June",
     "n": 318,
+    "pages": null,
     "story": "Justice Is Served?",
     "writers": [
      "Mark Gruenwald"
@@ -2249,6 +2470,7 @@
     "arc": "",
     "month": "July",
     "n": 319,
+    "pages": null,
     "story": "Overkill",
     "writers": [
      "Mark Gruenwald"
@@ -2259,6 +2481,7 @@
     "arc": "",
     "month": "August",
     "n": 320,
+    "pages": null,
     "story": "The Little Bang Theory",
     "writers": [
      "Mark Gruenwald"
@@ -2269,6 +2492,7 @@
     "arc": "",
     "month": "September",
     "n": 321,
+    "pages": null,
     "story": "Ultimatum",
     "writers": [
      "Mark Gruenwald"
@@ -2279,6 +2503,7 @@
     "arc": "",
     "month": "October",
     "n": 322,
+    "pages": null,
     "story": "The Chasm",
     "writers": [
      "Mark Gruenwald"
@@ -2289,6 +2514,7 @@
     "arc": "",
     "month": "November",
     "n": 323,
+    "pages": null,
     "story": "Super-Patriot Is Here",
     "writers": [
      "Mark Gruenwald"
@@ -2299,6 +2525,7 @@
     "arc": "",
     "month": "December",
     "n": 324,
+    "pages": null,
     "story": "Speed Trap",
     "writers": [
      "Mark Gruenwald"
@@ -2309,6 +2536,7 @@
     "arc": "",
     "month": "January",
     "n": 325,
+    "pages": null,
     "story": "Slugfest",
     "writers": [
      "Mark Gruenwald"
@@ -2319,6 +2547,7 @@
     "arc": "",
     "month": "February",
     "n": 326,
+    "pages": null,
     "story": "The Haunting of Skull-House",
     "writers": [
      "Mark Gruenwald"
@@ -2329,6 +2558,7 @@
     "arc": "",
     "month": "March",
     "n": 327,
+    "pages": null,
     "story": "Clashing Symbols",
     "writers": [
      "Mark Gruenwald"
@@ -2339,6 +2569,7 @@
     "arc": "",
     "month": "April",
     "n": 328,
+    "pages": null,
     "story": "The Hard Way",
     "writers": [
      "Mark Gruenwald"
@@ -2349,6 +2580,7 @@
     "arc": "",
     "month": "May",
     "n": 329,
+    "pages": null,
     "story": "Movers and Monsters",
     "writers": [
      "Mark Gruenwald"
@@ -2359,6 +2591,7 @@
     "arc": "",
     "month": "June",
     "n": 330,
+    "pages": null,
     "story": "Night Shift",
     "writers": [
      "Mark Gruenwald"
@@ -2369,6 +2602,7 @@
     "arc": "",
     "month": "July",
     "n": 331,
+    "pages": null,
     "story": "Soldier, Soldier",
     "writers": [
      "Mark Gruenwald"
@@ -2379,6 +2613,7 @@
     "arc": "",
     "month": "August",
     "n": 332,
+    "pages": null,
     "story": "The Choice",
     "writers": [
      "Mark Gruenwald"
@@ -2389,6 +2624,7 @@
     "arc": "",
     "month": "September",
     "n": 333,
+    "pages": null,
     "story": "The Replacement",
     "writers": [
      "Mark Gruenwald"
@@ -2399,6 +2635,7 @@
     "arc": "",
     "month": "October",
     "n": 334,
+    "pages": null,
     "story": "Basic Training",
     "writers": [
      "Mark Gruenwald"
@@ -2409,6 +2646,7 @@
     "arc": "",
     "month": "November",
     "n": 335,
+    "pages": null,
     "story": "Baptism of Fire",
     "writers": [
      "Mark Gruenwald"
@@ -2419,6 +2657,7 @@
     "arc": "",
     "month": "December",
     "n": 336,
+    "pages": null,
     "story": "Natural Calling",
     "writers": [
      "Mark Gruenwald"
@@ -2429,6 +2668,7 @@
     "arc": "",
     "month": "January",
     "n": 337,
+    "pages": null,
     "story": "The Long Road Back",
     "writers": [
      "Mark Gruenwald"
@@ -2439,6 +2679,7 @@
     "arc": "",
     "month": "February",
     "n": 338,
+    "pages": null,
     "story": "Power Struggle",
     "writers": [
      "Mark Gruenwald"
@@ -2449,6 +2690,7 @@
     "arc": "",
     "month": "March",
     "n": 339,
+    "pages": null,
     "story": "America the Scorched",
     "writers": [
      "Mark Gruenwald"
@@ -2459,6 +2701,7 @@
     "arc": "",
     "month": "April",
     "n": 340,
+    "pages": null,
     "story": "Breakout",
     "writers": [
      "Mark Gruenwald"
@@ -2469,6 +2712,7 @@
     "arc": "",
     "month": "May",
     "n": 341,
+    "pages": null,
     "story": "Break-In",
     "writers": [
      "Mark Gruenwald"
@@ -2479,6 +2723,7 @@
     "arc": "",
     "month": "June",
     "n": 342,
+    "pages": null,
     "story": "The Snake Pit",
     "writers": [
      "Mark Gruenwald"
@@ -2489,6 +2734,7 @@
     "arc": "",
     "month": "July",
     "n": 343,
+    "pages": null,
     "story": "Slippery People",
     "writers": [
      "Mark Gruenwald"
@@ -2499,6 +2745,7 @@
     "arc": "",
     "month": "August",
     "n": 344,
+    "pages": null,
     "story": "Don't Tread on Me",
     "writers": [
      "Mark Gruenwald"
@@ -2509,6 +2756,7 @@
     "arc": "",
     "month": "September",
     "n": 345,
+    "pages": null,
     "story": "Surrender",
     "writers": [
      "Mark Gruenwald"
@@ -2519,6 +2767,7 @@
     "arc": "",
     "month": "October",
     "n": 346,
+    "pages": null,
     "story": "Ambush",
     "writers": [
      "Mark Gruenwald"
@@ -2529,6 +2778,7 @@
     "arc": "",
     "month": "November",
     "n": 347,
+    "pages": 32,
     "story": "Revenge",
     "writers": [
      "Mark Gruenwald"
@@ -2539,6 +2789,7 @@
     "arc": "",
     "month": "December",
     "n": 348,
+    "pages": 32,
     "story": "Out of Commission",
     "writers": [
      "Mark Gruenwald"
@@ -2549,6 +2800,7 @@
     "arc": "",
     "month": "January",
     "n": 349,
+    "pages": 32,
     "story": "Ice Cap",
     "writers": [
      "Mark Gruenwald"
@@ -2559,6 +2811,7 @@
     "arc": "",
     "month": "February",
     "n": 350,
+    "pages": 64,
     "story": "Seeing Red",
     "writers": [
      "Mark Gruenwald"
@@ -2569,6 +2822,7 @@
     "arc": "",
     "month": "March",
     "n": 351,
+    "pages": 32,
     "story": "Changing of the Guard",
     "writers": [
      "Mark Gruenwald"
@@ -2579,6 +2833,7 @@
     "arc": "",
     "month": "April",
     "n": 352,
+    "pages": null,
     "story": "Refuge",
     "writers": [
      "Kieron Dwyer",
@@ -2590,6 +2845,7 @@
     "arc": "",
     "month": "May",
     "n": 353,
+    "pages": null,
     "story": "The Great Bear",
     "writers": [
      "Kieron Dwyer",
@@ -2601,6 +2857,7 @@
     "arc": "",
     "month": "June",
     "n": 354,
+    "pages": null,
     "story": "Reawakening",
     "writers": [
      "Mark Gruenwald"
@@ -2611,6 +2868,7 @@
     "arc": "",
     "month": "July",
     "n": 355,
+    "pages": null,
     "story": "Missing Person",
     "writers": [
      "Mark Gruenwald"
@@ -2621,6 +2879,7 @@
     "arc": "",
     "month": "August",
     "n": 356,
+    "pages": null,
     "story": "Camptown Rages",
     "writers": [
      "Mark Gruenwald"
@@ -2631,6 +2890,7 @@
     "arc": "Bloodstone Hunt",
     "month": "September",
     "n": 357,
+    "pages": null,
     "story": "Bloodstone Hunt, Part 1 of 6: Prolog",
     "writers": [
      "Mark Gruenwald"
@@ -2641,6 +2901,7 @@
     "arc": "Bloodstone Hunt",
     "month": "September",
     "n": 358,
+    "pages": null,
     "story": "The Bloodstone Hunt, Part 2 of 6: Bones of Contention",
     "writers": [
      "Mark Gruenwald"
@@ -2651,6 +2912,7 @@
     "arc": "Bloodstone Hunt",
     "month": "October",
     "n": 359,
+    "pages": null,
     "story": "The Bloodstone Hunt, Part 3 of 6: Wheel of Death",
     "writers": [
      "Mark Gruenwald"
@@ -2661,6 +2923,7 @@
     "arc": "Bloodstone Hunt",
     "month": "October",
     "n": 360,
+    "pages": null,
     "story": "The Bloodstone Hunt, Pt 4: Blood In the Sea",
     "writers": [
      "Mark Gruenwald"
@@ -2671,6 +2934,7 @@
     "arc": "Bloodstone Hunt",
     "month": "November",
     "n": 361,
+    "pages": null,
     "story": "The Bloodstone Hunt, Part 5 of 6: Lair of the Living Mummy",
     "writers": [
      "Mark Gruenwald"
@@ -2681,6 +2945,7 @@
     "arc": "Bloodstone Hunt",
     "month": "November",
     "n": 362,
+    "pages": 30,
     "story": "Bloodstone Hunt (Part 6): Necromancing the Stone",
     "writers": [
      "Mark Gruenwald"
@@ -2691,6 +2956,7 @@
     "arc": "",
     "month": "November",
     "n": 363,
+    "pages": null,
     "story": "Moon Over Madripoor",
     "writers": [
      "Mark Gruenwald"
@@ -2701,6 +2967,7 @@
     "arc": "",
     "month": "December",
     "n": 364,
+    "pages": null,
     "story": "Man Trap",
     "writers": [
      "Mark Gruenwald"
@@ -2711,6 +2978,7 @@
     "arc": "",
     "month": "December",
     "n": 365,
+    "pages": null,
     "story": "Submission",
     "writers": [
      "Mark Gruenwald"
@@ -2721,6 +2989,7 @@
     "arc": "",
     "month": "January",
     "n": 366,
+    "pages": null,
     "story": "Remote Control",
     "writers": [
      "Mark Gruenwald"
@@ -2731,6 +3000,7 @@
     "arc": "",
     "month": "February",
     "n": 367,
+    "pages": null,
     "story": "Magnetic Repulsion",
     "writers": [
      "Mark Gruenwald"
@@ -2741,6 +3011,7 @@
     "arc": "",
     "month": "March",
     "n": 368,
+    "pages": null,
     "story": "Red Twilight",
     "writers": [
      "Mark Gruenwald"
@@ -2751,6 +3022,7 @@
     "arc": "",
     "month": "April",
     "n": 369,
+    "pages": null,
     "story": "The Skeleton Crew",
     "writers": [
      "Mark Gruenwald"
@@ -2761,6 +3033,7 @@
     "arc": "",
     "month": "May",
     "n": 370,
+    "pages": null,
     "story": "House Calls",
     "writers": [
      "Mark Gruenwald"
@@ -2771,6 +3044,7 @@
     "arc": "",
     "month": "June",
     "n": 371,
+    "pages": null,
     "story": "Cap's Night Out",
     "writers": [
      "Mark Gruenwald"
@@ -2781,6 +3055,7 @@
     "arc": "Streets of Poison",
     "month": "July",
     "n": 372,
+    "pages": null,
     "story": "Sold On Ice",
     "writers": [
      "Mark Gruenwald"
@@ -2791,6 +3066,7 @@
     "arc": "Streets of Poison",
     "month": "July",
     "n": 373,
+    "pages": null,
     "story": "After Blow",
     "writers": [
      "Mark Gruenwald"
@@ -2801,6 +3077,7 @@
     "arc": "Streets of Poison",
     "month": "August",
     "n": 374,
+    "pages": null,
     "story": "Falling Out",
     "writers": [
      "Mark Gruenwald"
@@ -2811,6 +3088,7 @@
     "arc": "Streets of Poison",
     "month": "August",
     "n": 375,
+    "pages": null,
     "story": "The Devil You Know",
     "writers": [
      "Mark Gruenwald"
@@ -2821,6 +3099,7 @@
     "arc": "Streets of Poison",
     "month": "September",
     "n": 376,
+    "pages": null,
     "story": "Cross Purposes",
     "writers": [
      "Mark Gruenwald"
@@ -2831,6 +3110,7 @@
     "arc": "Streets of Poison",
     "month": "September",
     "n": 377,
+    "pages": null,
     "story": "The 100% Solution",
     "writers": [
      "Mark Gruenwald"
@@ -2841,6 +3121,7 @@
     "arc": "Streets of Poison",
     "month": "October",
     "n": 378,
+    "pages": null,
     "story": "Grand Stand Play",
     "writers": [
      "Mark Gruenwald"
@@ -2851,6 +3132,7 @@
     "arc": "",
     "month": "November",
     "n": 379,
+    "pages": null,
     "story": "Moonstruck",
     "writers": [
      "Mark Gruenwald"
@@ -2861,6 +3143,7 @@
     "arc": "",
     "month": "December",
     "n": 380,
+    "pages": null,
     "story": "With Friends Like These...",
     "writers": [
      "Mark Gruenwald"
@@ -2871,6 +3154,7 @@
     "arc": "",
     "month": "January",
     "n": 381,
+    "pages": null,
     "story": "This Gun's For Hire",
     "writers": [
      "Mark Gruenwald"
@@ -2881,6 +3165,7 @@
     "arc": "",
     "month": "February",
     "n": 382,
+    "pages": null,
     "story": "Why Does It Always Have To Be Snakes?",
     "writers": [
      "Mark Gruenwald"
@@ -2891,6 +3176,7 @@
     "arc": "",
     "month": "March",
     "n": 383,
+    "pages": null,
     "story": "I Am Legend",
     "writers": [
      "Mark Gruenwald"
@@ -2901,6 +3187,7 @@
     "arc": "",
     "month": "April",
     "n": 384,
+    "pages": null,
     "story": "Lair of the Ice Worm",
     "writers": [
      "Mark Gruenwald"
@@ -2911,6 +3198,7 @@
     "arc": "",
     "month": "May",
     "n": 385,
+    "pages": null,
     "story": "Going to the Dogs",
     "writers": [
      "Mark Gruenwald"
@@ -2921,6 +3209,7 @@
     "arc": "",
     "month": "June",
     "n": 386,
+    "pages": null,
     "story": "For Righteousness's Sake",
     "writers": [
      "Mark Gruenwald"
@@ -2931,6 +3220,7 @@
     "arc": "Superia Stratagem",
     "month": "July",
     "n": 387,
+    "pages": null,
     "story": "Maiden Voyage",
     "writers": [
      "Mark Gruenwald"
@@ -2941,6 +3231,7 @@
     "arc": "Superia Stratagem",
     "month": "July",
     "n": 388,
+    "pages": null,
     "story": "Deep Sixed",
     "writers": [
      "Mark Gruenwald"
@@ -2951,6 +3242,7 @@
     "arc": "Superia Stratagem",
     "month": "August",
     "n": 389,
+    "pages": null,
     "story": "Pageant of Power",
     "writers": [
      "Mark Gruenwald"
@@ -2961,6 +3253,7 @@
     "arc": "Superia Stratagem",
     "month": "August",
     "n": 390,
+    "pages": null,
     "story": "When Women Wage War!",
     "writers": [
      "Mark Gruenwald"
@@ -2971,6 +3264,7 @@
     "arc": "Superia Stratagem",
     "month": "September",
     "n": 391,
+    "pages": null,
     "story": "No Man's Land",
     "writers": [
      "Mark Gruenwald"
@@ -2981,6 +3275,7 @@
     "arc": "Superia Stratagem",
     "month": "September",
     "n": 392,
+    "pages": null,
     "story": "Superia Unbound",
     "writers": [
      "Mark Gruenwald"
@@ -2991,6 +3286,7 @@
     "arc": "",
     "month": "October",
     "n": 393,
+    "pages": null,
     "story": "Skullbound",
     "writers": [
      "Mark Gruenwald"
@@ -3001,6 +3297,7 @@
     "arc": "",
     "month": "November",
     "n": 394,
+    "pages": null,
     "story": "The Crimson Crusade",
     "writers": [
      "Mark Gruenwald"
@@ -3011,6 +3308,7 @@
     "arc": "",
     "month": "December",
     "n": 395,
+    "pages": null,
     "story": "Rogues in the House",
     "writers": [
      "Mark Gruenwald"
@@ -3021,6 +3319,7 @@
     "arc": "",
     "month": "January",
     "n": 396,
+    "pages": null,
     "story": "Trick or Treat",
     "writers": [
      "Mark Gruenwald"
@@ -3031,6 +3330,7 @@
     "arc": "",
     "month": "February",
     "n": 397,
+    "pages": null,
     "story": "Shot in the Dark",
     "writers": [
      "Mark Gruenwald"
@@ -3041,6 +3341,7 @@
     "arc": "",
     "month": "March",
     "n": 398,
+    "pages": null,
     "story": "Operation: Galactic Storm, Part 1: It Came From Outer Space",
     "writers": [
      "Mark Gruenwald"
@@ -3051,6 +3352,7 @@
     "arc": "",
     "month": "April",
     "n": 399,
+    "pages": null,
     "story": "Operation: Galactic Storm, Part 8: Twenty Million Light Years from Earth",
     "writers": [
      "Mark Gruenwald"
@@ -3061,6 +3363,7 @@
     "arc": "",
     "month": "May",
     "n": 400,
+    "pages": null,
     "story": "Operation: Galactic Storm, Part 15: Murder By Decree!",
     "writers": [
      "Mark Gruenwald"
@@ -3071,6 +3374,7 @@
     "arc": "",
     "month": "June",
     "n": 401,
+    "pages": null,
     "story": "After the Storm",
     "writers": [
      "Mark Gruenwald"
@@ -3081,6 +3385,7 @@
     "arc": "Man and Wolf",
     "month": "July",
     "n": 402,
+    "pages": null,
     "story": "The Prowling",
     "writers": [
      "Mark Gruenwald"
@@ -3091,6 +3396,7 @@
     "arc": "Man and Wolf",
     "month": "July",
     "n": 403,
+    "pages": null,
     "story": "City of Wolves",
     "writers": [
      "Mark Gruenwald"
@@ -3101,6 +3407,7 @@
     "arc": "Man and Wolf",
     "month": "August",
     "n": 404,
+    "pages": null,
     "story": "Children of the Night",
     "writers": [
      "Mark Gruenwald"
@@ -3111,6 +3418,7 @@
     "arc": "Man and Wolf",
     "month": "August",
     "n": 405,
+    "pages": null,
     "story": "Dances With Werewolves",
     "writers": [
      "Mark Gruenwald"
@@ -3121,6 +3429,7 @@
     "arc": "Man and Wolf",
     "month": "September",
     "n": 406,
+    "pages": null,
     "story": "Leader of the Pack",
     "writers": [
      "Mark Gruenwald"
@@ -3131,6 +3440,7 @@
     "arc": "Man and Wolf",
     "month": "September",
     "n": 407,
+    "pages": null,
     "story": "Lord of the Wolves",
     "writers": [
      "Mark Gruenwald"
@@ -3141,6 +3451,7 @@
     "arc": "",
     "month": "October",
     "n": 408,
+    "pages": null,
     "story": "Dark Dawn",
     "writers": [
      "Mark Gruenwald"
@@ -3151,6 +3462,7 @@
     "arc": "",
     "month": "November",
     "n": 409,
+    "pages": null,
     "story": "Blood and Diamonds",
     "writers": [
      "Mark Gruenwald"
@@ -3161,6 +3473,7 @@
     "arc": "",
     "month": "December",
     "n": 410,
+    "pages": null,
     "story": "Diamonds Are For Vengeance",
     "writers": [
      "Mark Gruenwald"
@@ -3171,6 +3484,7 @@
     "arc": "",
     "month": "January",
     "n": 411,
+    "pages": null,
     "story": "The Arena",
     "writers": [
      "Mark Gruenwald"
@@ -3181,6 +3495,7 @@
     "arc": "",
     "month": "February",
     "n": 412,
+    "pages": null,
     "story": "Disguise the Limit",
     "writers": [
      "Mark Gruenwald"
@@ -3191,6 +3506,7 @@
     "arc": "",
     "month": "March",
     "n": 413,
+    "pages": null,
     "story": "Hostile Takeover",
     "writers": [
      "Mark Gruenwald"
@@ -3201,6 +3517,7 @@
     "arc": "",
     "month": "April",
     "n": 414,
+    "pages": null,
     "story": "Escape From AIM Isle",
     "writers": [
      "Mark Gruenwald"
@@ -3211,6 +3528,7 @@
     "arc": "",
     "month": "May",
     "n": 415,
+    "pages": null,
     "story": "Savage Landings!",
     "writers": [
      "Mark Gruenwald"
@@ -3221,6 +3539,7 @@
     "arc": "",
     "month": "June",
     "n": 416,
+    "pages": null,
     "story": "Savage Land Showdown",
     "writers": [
      "Mark Gruenwald"
@@ -3231,6 +3550,7 @@
     "arc": "",
     "month": "July",
     "n": 417,
+    "pages": null,
     "story": "Termination Day",
     "writers": [
      "Mark Gruenwald"
@@ -3241,6 +3561,7 @@
     "arc": "",
     "month": "August",
     "n": 418,
+    "pages": null,
     "story": "To Have and To Have Not",
     "writers": [
      "Mark Gruenwald"
@@ -3251,6 +3572,7 @@
     "arc": "",
     "month": "September",
     "n": 419,
+    "pages": null,
     "story": "Television Blind",
     "writers": [
      "Mark Gruenwald"
@@ -3261,6 +3583,7 @@
     "arc": "",
     "month": "October",
     "n": 420,
+    "pages": null,
     "story": "Skull Sessions",
     "writers": [
      "Mark Gruenwald"
@@ -3271,6 +3594,7 @@
     "arc": "",
     "month": "November",
     "n": 421,
+    "pages": null,
     "story": "Gantlet",
     "writers": [
      "Mark Gruenwald"
@@ -3281,6 +3605,7 @@
     "arc": "",
     "month": "December",
     "n": 422,
+    "pages": null,
     "story": "Going Ballistic",
     "writers": [
      "Mark Gruenwald"
@@ -3291,6 +3616,7 @@
     "arc": "",
     "month": "January",
     "n": 423,
+    "pages": null,
     "story": "War Zones",
     "writers": [
      "Roy Thomas"
@@ -3301,6 +3627,7 @@
     "arc": "",
     "month": "February",
     "n": 424,
+    "pages": null,
     "story": "The Last Operation",
     "writers": [
      "Mark Gruenwald"
@@ -3311,6 +3638,7 @@
     "arc": "Fighting Chance",
     "month": "March",
     "n": 425,
+    "pages": null,
     "story": "Fighting Chance, Book 1: Super Patriot Games",
     "writers": [
      "Mark Gruenwald"
@@ -3321,6 +3649,7 @@
     "arc": "Fighting Chance",
     "month": "April",
     "n": 426,
+    "pages": null,
     "story": "Fighting Chance, Book 2: Graven Images",
     "writers": [
      "Mark Gruenwald"
@@ -3331,6 +3660,7 @@
     "arc": "Fighting Chance",
     "month": "May",
     "n": 427,
+    "pages": null,
     "story": "Fighting Chance, Book 3: Enemy Fire",
     "writers": [
      "Mark Gruenwald"
@@ -3341,6 +3671,7 @@
     "arc": "Fighting Chance",
     "month": "June",
     "n": 428,
+    "pages": null,
     "story": "Fighting Chance, Book 4: Policing the Nation",
     "writers": [
      "Mark Gruenwald"
@@ -3351,6 +3682,7 @@
     "arc": "Fighting Chance",
     "month": "July",
     "n": 429,
+    "pages": null,
     "story": "Fighting Chance, Book 5: The Beaten Path",
     "writers": [
      "Mark Gruenwald"
@@ -3361,6 +3693,7 @@
     "arc": "Fighting Chance",
     "month": "August",
     "n": 430,
+    "pages": null,
     "story": "Fighting Chance, Book 6: Cop Out",
     "writers": [
      "Mark Gruenwald"
@@ -3371,6 +3704,7 @@
     "arc": "Fighting Chance",
     "month": "September",
     "n": 431,
+    "pages": null,
     "story": "Fighting Chance, Book 7: The Next Generation",
     "writers": [
      "Mark Gruenwald"
@@ -3381,6 +3715,7 @@
     "arc": "Fighting Chance",
     "month": "October",
     "n": 432,
+    "pages": null,
     "story": "Fighting Chance, Book 8: Baron Ground",
     "writers": [
      "Mark Gruenwald"
@@ -3391,6 +3726,7 @@
     "arc": "Fighting Chance",
     "month": "November",
     "n": 433,
+    "pages": null,
     "story": "Fighting Chance, Book 9: Diamonds Aren't Forever!",
     "writers": [
      "Mark Gruenwald"
@@ -3401,6 +3737,7 @@
     "arc": "Fighting Chance",
     "month": "December",
     "n": 434,
+    "pages": null,
     "story": "Fighting Chance, Book 10: Snake Bites",
     "writers": [
      "Mark Gruenwald"
@@ -3411,6 +3748,7 @@
     "arc": "Fighting Chance",
     "month": "January",
     "n": 435,
+    "pages": null,
     "story": "Fighting Chance, Book 11: Snake, Battle, and Toll",
     "writers": [
      "Mark Gruenwald"
@@ -3421,6 +3759,7 @@
     "arc": "Fighting Chance",
     "month": "February",
     "n": 436,
+    "pages": null,
     "story": "Fighting Chance Finale: Everybody Hurts Sometime",
     "writers": [
      "Mark Gruenwald"
@@ -3431,6 +3770,7 @@
     "arc": "Fighting Chance",
     "month": "March",
     "n": 437,
+    "pages": null,
     "story": "Fighting Chance, Epilogue: If I Should Die Before I Wake",
     "writers": [
      "Mark Gruenwald"
@@ -3441,6 +3781,7 @@
     "arc": "",
     "month": "April",
     "n": 438,
+    "pages": null,
     "story": "The Bombs Bursting In Air",
     "writers": [
      "Mark Gruenwald"
@@ -3451,6 +3792,7 @@
     "arc": "",
     "month": "May",
     "n": 439,
+    "pages": null,
     "story": "O'er the Ramparts We Watched",
     "writers": [
      "Mark Gruenwald"
@@ -3461,6 +3803,7 @@
     "arc": "",
     "month": "June",
     "n": 440,
+    "pages": null,
     "story": "Dawn's Early Light",
     "writers": [
      "Mark Gruenwald"
@@ -3471,6 +3814,7 @@
     "arc": "",
     "month": "July",
     "n": 441,
+    "pages": null,
     "story": "Through the Perilous Fight",
     "writers": [
      "Mark Gruenwald"
@@ -3481,6 +3825,7 @@
     "arc": "",
     "month": "August",
     "n": 442,
+    "pages": null,
     "story": "Broad Stripes and White Stars",
     "writers": [
      "Mark Gruenwald"
@@ -3491,6 +3836,7 @@
     "arc": "",
     "month": "September",
     "n": 443,
+    "pages": null,
     "story": "Twilight's Last Gleaming",
     "writers": [
      "Mark Gruenwald"
@@ -3501,6 +3847,7 @@
     "arc": "",
     "month": "October",
     "n": 444,
+    "pages": null,
     "story": "Hope and Glory",
     "writers": [
      "Mark Waid"
@@ -3511,6 +3858,7 @@
     "arc": "",
     "month": "November",
     "n": 445,
+    "pages": null,
     "story": "Old Soldiers Never Die",
     "writers": [
      "Mark Waid"
@@ -3521,6 +3869,7 @@
     "arc": "",
     "month": "December",
     "n": 446,
+    "pages": null,
     "story": "The Devil You Know",
     "writers": [
      "Mark Waid"
@@ -3531,6 +3880,7 @@
     "arc": "",
     "month": "January",
     "n": 447,
+    "pages": null,
     "story": "Triumph of the Will",
     "writers": [
      "Mark Waid"
@@ -3541,6 +3891,7 @@
     "arc": "",
     "month": "February",
     "n": 448,
+    "pages": null,
     "story": "American Dream",
     "writers": [
      "Mark Waid"
@@ -3551,6 +3902,7 @@
     "arc": "",
     "month": "March",
     "n": 449,
+    "pages": null,
     "story": "I'll Take Manhattan",
     "writers": [
      "Mark Waid"
@@ -3561,6 +3913,7 @@
     "arc": "Man Without a Country",
     "month": "April",
     "n": 450,
+    "pages": null,
     "story": "Executive Action",
     "writers": [
      "Mark Waid"
@@ -3571,6 +3924,7 @@
     "arc": "Man Without a Country",
     "month": "May",
     "n": 451,
+    "pages": null,
     "story": "Plan \"A\"",
     "writers": [
      "Mark Waid"
@@ -3581,6 +3935,7 @@
     "arc": "Man Without a Country",
     "month": "June",
     "n": 452,
+    "pages": null,
     "story": "Plan \"B\"",
     "writers": [
      "Mark Waid"
@@ -3591,6 +3946,7 @@
     "arc": "Man Without a Country",
     "month": "July",
     "n": 453,
+    "pages": null,
     "story": "Executive Action",
     "writers": [
      "Mark Waid"
@@ -3601,6 +3957,7 @@
     "arc": "",
     "month": "August",
     "n": 454,
+    "pages": null,
     "story": "Sanctuary",
     "writers": [
      "Mark Waid"
@@ -3611,6 +3968,7 @@
     "arc": "",
     "month": "May",
     "n": 76,
+    "pages": null,
     "story": "The Betrayers",
     "writers": [
      "Don Rico",
@@ -3622,6 +3980,7 @@
     "arc": "",
     "month": "July",
     "n": 77,
+    "pages": null,
     "story": "You Die at Midnight",
     "writers": [
      "Don Rico",
@@ -3633,6 +3992,7 @@
     "arc": "",
     "month": "September",
     "n": 78,
+    "pages": null,
     "story": "His Touch Is Death",
     "writers": [
      "Don Rico",
@@ -3646,6 +4006,7 @@
     "arc": "",
     "month": "November",
     "n": 1,
+    "pages": null,
     "story": "Courage",
     "writers": [
      "Chuck Dixon",
@@ -3658,6 +4019,7 @@
     "arc": "",
     "month": "August",
     "n": 10,
+    "pages": null,
     "story": "Serpents and Eagles, Part III: Capital Punishment",
     "writers": [
      "James Robinson"
@@ -3668,6 +4030,7 @@
     "arc": "",
     "month": "September",
     "n": 11,
+    "pages": null,
     "story": "Serpents and Eagles, Part IV: Into the Snake Pit",
     "writers": [
      "James Robinson"
@@ -3678,6 +4041,7 @@
     "arc": "",
     "month": "October",
     "n": 12,
+    "pages": 48,
     "story": "Heroes Reunited Part 4: Let It Be",
     "writers": [
      "Jeph Loeb"
@@ -3688,6 +4052,7 @@
     "arc": "World War 3",
     "month": "November",
     "n": 13,
+    "pages": null,
     "story": "World War III, Part IV: War Without End",
     "writers": [
      "James Robinson"
@@ -3698,6 +4063,7 @@
     "arc": "",
     "month": "December",
     "n": 2,
+    "pages": null,
     "story": "Secrets",
     "writers": [
      "Jeph Loeb",
@@ -3709,6 +4075,7 @@
     "arc": "",
     "month": "January",
     "n": 3,
+    "pages": null,
     "story": "Patriotism",
     "writers": [
      "Jeph Loeb",
@@ -3721,6 +4088,7 @@
     "arc": "",
     "month": "February",
     "n": 4,
+    "pages": null,
     "story": "Fire",
     "writers": [
      "Jeph Loeb",
@@ -3732,6 +4100,7 @@
     "arc": "",
     "month": "March",
     "n": 5,
+    "pages": null,
     "story": "Victory",
     "writers": [
      "Jeph Loeb",
@@ -3743,6 +4112,7 @@
     "arc": "",
     "month": "April",
     "n": 6,
+    "pages": null,
     "story": "Soldiers",
     "writers": [
      "Jeph Loeb",
@@ -3754,6 +4124,7 @@
     "arc": "",
     "month": "May",
     "n": 7,
+    "pages": null,
     "story": "Crossroads",
     "writers": [
      "James Robinson"
@@ -3764,6 +4135,7 @@
     "arc": "",
     "month": "June",
     "n": 8,
+    "pages": null,
     "story": "Serpents and Eagles, Part One: A First Small Hisssss",
     "writers": [
      "James Robinson"
@@ -3774,6 +4146,7 @@
     "arc": "",
     "month": "July",
     "n": 9,
+    "pages": 32,
     "story": "Serpents and Eagles, Part II: Horror for Hollywood",
     "writers": [
      "James Robinson"
@@ -3786,6 +4159,7 @@
     "arc": "",
     "month": "January",
     "n": 1,
+    "pages": null,
     "story": "The Return of Steve Rogers, Captain America",
     "writers": [
      "Mark Waid"
@@ -3796,6 +4170,7 @@
     "arc": "American Nightmare",
     "month": "October",
     "n": 10,
+    "pages": null,
     "story": "American Nightmare, Chapter II: The Growing Darkness",
     "writers": [
      "Mark Waid"
@@ -3806,6 +4181,7 @@
     "arc": "American Nightmare",
     "month": "November",
     "n": 11,
+    "pages": null,
     "story": "American Nightmare, Part III: Finger on the Pulse",
     "writers": [
      "Mark Waid"
@@ -3816,6 +4192,7 @@
     "arc": "American Nightmare",
     "month": "December",
     "n": 12,
+    "pages": null,
     "story": "American Nightmare, Part IV: Nuclear Dawn",
     "writers": [
      "Jim Krueger",
@@ -3827,6 +4204,7 @@
     "arc": "",
     "month": "January",
     "n": 13,
+    "pages": null,
     "story": "Plausible Deniability",
     "writers": [
      "Mark Waid"
@@ -3837,6 +4215,7 @@
     "arc": "",
     "month": "February",
     "n": 14,
+    "pages": null,
     "story": "The Red Skull in: Turnabout",
     "writers": [
      "Mark Waid"
@@ -3847,6 +4226,7 @@
     "arc": "",
     "month": "March",
     "n": 15,
+    "pages": null,
     "story": "First Gleaming",
     "writers": [
      "Mark Waid"
@@ -3857,6 +4237,7 @@
     "arc": "",
     "month": "April",
     "n": 16,
+    "pages": null,
     "story": "Red Glare",
     "writers": [
      "Mark Waid"
@@ -3867,6 +4248,7 @@
     "arc": "",
     "month": "May",
     "n": 17,
+    "pages": null,
     "story": "Extreme Prejudice",
     "writers": [
      "Mark Waid"
@@ -3877,6 +4259,7 @@
     "arc": "",
     "month": "June",
     "n": 18,
+    "pages": null,
     "story": "Man Out of Time",
     "writers": [
      "Mark Waid"
@@ -3887,6 +4270,7 @@
     "arc": "",
     "month": "July",
     "n": 19,
+    "pages": null,
     "story": "Triumph of the Will",
     "writers": [
      "Mark Waid"
@@ -3897,6 +4281,7 @@
     "arc": "",
     "month": "February",
     "n": 2,
+    "pages": null,
     "story": "To Serve and Protect",
     "writers": [
      "Mark Waid"
@@ -3907,6 +4292,7 @@
     "arc": "",
     "month": "August",
     "n": 20,
+    "pages": null,
     "story": "Danger in the Air",
     "writers": [
      "Bill Rosemann",
@@ -3918,6 +4304,7 @@
     "arc": "",
     "month": "September",
     "n": 21,
+    "pages": null,
     "story": "Soundquake!",
     "writers": [
      "Bill Rosemann",
@@ -3929,6 +4316,7 @@
     "arc": "",
     "month": "October",
     "n": 22,
+    "pages": null,
     "story": "Sacrifice Play",
     "writers": [
      "Mark Waid"
@@ -3939,6 +4327,7 @@
     "arc": "",
     "month": "November",
     "n": 23,
+    "pages": null,
     "story": "Land of the Free",
     "writers": [
      "Jay Faerber",
@@ -3950,6 +4339,7 @@
     "arc": "",
     "month": "December",
     "n": 24,
+    "pages": null,
     "story": "The Difference",
     "writers": [
      "Tom DeFalco"
@@ -3960,6 +4350,7 @@
     "arc": "",
     "month": "January",
     "n": 25,
+    "pages": null,
     "story": "Twisted Tomorrows",
     "writers": [
      "Dan Jurgens"
@@ -3970,6 +4361,7 @@
     "arc": "",
     "month": "February",
     "n": 26,
+    "pages": null,
     "story": "Twisted Tomorrows Part 2",
     "writers": [
      "Dan Jurgens"
@@ -3980,6 +4372,7 @@
     "arc": "",
     "month": "March",
     "n": 27,
+    "pages": null,
     "story": "Twisted Tomorrows Part 3",
     "writers": [
      "Dan Jurgens"
@@ -3990,6 +4383,7 @@
     "arc": "",
     "month": "April",
     "n": 28,
+    "pages": null,
     "story": "Grotesqueries",
     "writers": [
      "Dan Jurgens"
@@ -4000,6 +4394,7 @@
     "arc": "",
     "month": "May",
     "n": 29,
+    "pages": null,
     "story": "The Savage Man",
     "writers": [
      "Dan Jurgens"
@@ -4010,6 +4405,7 @@
     "arc": "",
     "month": "March",
     "n": 3,
+    "pages": null,
     "story": "Museum Piece",
     "writers": [
      "Mark Waid"
@@ -4020,6 +4416,7 @@
     "arc": "",
     "month": "June",
     "n": 30,
+    "pages": null,
     "story": "Waste of Dreams",
     "writers": [
      "Dan Jurgens"
@@ -4030,6 +4427,7 @@
     "arc": "",
     "month": "July",
     "n": 31,
+    "pages": null,
     "story": "Hidden Paths",
     "writers": [
      "Dan Jurgens"
@@ -4040,6 +4438,7 @@
     "arc": "",
     "month": "August",
     "n": 32,
+    "pages": null,
     "story": "Heart",
     "writers": [
      "Dan Jurgens"
@@ -4050,6 +4449,7 @@
     "arc": "",
     "month": "September",
     "n": 33,
+    "pages": null,
     "story": "\"Impending Rage\"",
     "writers": [
      "Dan Jurgens"
@@ -4060,6 +4460,7 @@
     "arc": "",
     "month": "October",
     "n": 34,
+    "pages": null,
     "story": "Cache is King!",
     "writers": [
      "Dan Jurgens"
@@ -4070,6 +4471,7 @@
     "arc": "",
     "month": "November",
     "n": 35,
+    "pages": null,
     "story": "When Strikes Protocide!",
     "writers": [
      "Dan Jurgens"
@@ -4080,6 +4482,7 @@
     "arc": "",
     "month": "December",
     "n": 36,
+    "pages": null,
     "story": "Maelstrom Within",
     "writers": [
      "Dan Jurgens"
@@ -4090,6 +4493,7 @@
     "arc": "",
     "month": "January",
     "n": 37,
+    "pages": null,
     "story": "Brothers",
     "writers": [
      "Dan Jurgens"
@@ -4100,6 +4504,7 @@
     "arc": "",
     "month": "February",
     "n": 38,
+    "pages": null,
     "story": "Across the Rubicon",
     "writers": [
      "Dan Jurgens"
@@ -4110,6 +4515,7 @@
     "arc": "",
     "month": "March",
     "n": 39,
+    "pages": null,
     "story": "A Gulf So Wide",
     "writers": [
      "Dan Jurgens"
@@ -4120,6 +4526,7 @@
     "arc": "",
     "month": "April",
     "n": 4,
+    "pages": null,
     "story": "Capmania",
     "writers": [
      "Mark Waid"
@@ -4130,6 +4537,7 @@
     "arc": "",
     "month": "April",
     "n": 40,
+    "pages": null,
     "story": "Fighting Back",
     "writers": [
      "Dan Jurgens"
@@ -4140,6 +4548,7 @@
     "arc": "",
     "month": "May",
     "n": 41,
+    "pages": null,
     "story": "Duel",
     "writers": [
      "Dan Jurgens"
@@ -4150,6 +4559,7 @@
     "arc": "",
     "month": "June",
     "n": 42,
+    "pages": null,
     "story": "Fractured",
     "writers": [
      "Dan Jurgens"
@@ -4160,6 +4570,7 @@
     "arc": "",
     "month": "July",
     "n": 43,
+    "pages": null,
     "story": "Candor",
     "writers": [
      "Dan Jurgens"
@@ -4170,6 +4581,7 @@
     "arc": "",
     "month": "August",
     "n": 44,
+    "pages": null,
     "story": "Conclusions",
     "writers": [
      "Dan Jurgens"
@@ -4180,6 +4592,7 @@
     "arc": "",
     "month": "September",
     "n": 45,
+    "pages": null,
     "story": "America Lost Part I of IV",
     "writers": [
      "Dan Jurgens"
@@ -4190,6 +4603,7 @@
     "arc": "",
     "month": "October",
     "n": 46,
+    "pages": null,
     "story": "America Lost Part II of IV",
     "writers": [
      "Dan Jurgens"
@@ -4200,6 +4614,7 @@
     "arc": "",
     "month": "November",
     "n": 47,
+    "pages": null,
     "story": "America Lost Part III of IV",
     "writers": [
      "Dan Jurgens"
@@ -4210,6 +4625,7 @@
     "arc": "",
     "month": "December",
     "n": 48,
+    "pages": null,
     "story": "America Lost Part IV of IV",
     "writers": [
      "Dan Jurgens"
@@ -4220,6 +4636,7 @@
     "arc": "",
     "month": "January",
     "n": 49,
+    "pages": null,
     "story": "\"Closure\"",
     "writers": [
      "Dan Jurgens"
@@ -4230,6 +4647,7 @@
     "arc": "Power and Glory",
     "month": "May",
     "n": 5,
+    "pages": null,
     "story": "Power and Glory Part One: Credibility Gap",
     "writers": [
      "Mark Waid"
@@ -4240,6 +4658,7 @@
     "arc": "",
     "month": "February",
     "n": 50,
+    "pages": null,
     "story": "Silent Night-Silent Morning",
     "writers": [
      "Brian David-Marshall",
@@ -4254,6 +4673,7 @@
     "arc": "Power and Glory",
     "month": "June",
     "n": 6,
+    "pages": null,
     "story": "Power and Glory Part Two: Expose",
     "writers": [
      "Mark Waid"
@@ -4264,6 +4684,7 @@
     "arc": "Power and Glory",
     "month": "July",
     "n": 7,
+    "pages": null,
     "story": "Power and Glory Part Three: Hoaxed",
     "writers": [
      "Mark Waid"
@@ -4274,6 +4695,7 @@
     "arc": "",
     "month": "August",
     "n": 8,
+    "pages": null,
     "story": "Live, Kree or Die, Part II: Stuck in the Middle",
     "writers": [
      "Mark Waid"
@@ -4284,6 +4706,7 @@
     "arc": "American Nightmare",
     "month": "September",
     "n": 9,
+    "pages": null,
     "story": "American Nightmare, Part I: The Bite of Madness",
     "writers": [
      "Mark Waid"
@@ -4296,6 +4719,7 @@
     "arc": "Enemy (Story Arc)",
     "month": "June",
     "n": 1,
+    "pages": null,
     "story": "Enemy, Part One: Dust",
     "writers": [
      "John Ney Rieber"
@@ -4306,6 +4730,7 @@
     "arc": "",
     "month": "May",
     "n": 10,
+    "pages": null,
     "story": "The Extremists part 4 of 5",
     "writers": [
      "Chuck Austen"
@@ -4316,6 +4741,7 @@
     "arc": "The Extremists",
     "month": "May",
     "n": 11,
+    "pages": null,
     "story": "The Extremists (Part V of V)",
     "writers": [
      "Chuck Austen"
@@ -4326,6 +4752,7 @@
     "arc": "Ice (Story Arc)",
     "month": "June",
     "n": 12,
+    "pages": null,
     "story": "Ice (Part I of V)",
     "writers": [
      "Chuck Austen"
@@ -4336,6 +4763,7 @@
     "arc": "Ice (Story Arc)",
     "month": "July",
     "n": 13,
+    "pages": null,
     "story": "Ice (Part 2)",
     "writers": [
      "Chuck Austen"
@@ -4346,6 +4774,7 @@
     "arc": "Ice (Story Arc)",
     "month": "August",
     "n": 14,
+    "pages": null,
     "story": "Ice (Part III of V)",
     "writers": [
      "Chuck Austen"
@@ -4356,6 +4785,7 @@
     "arc": "Ice (Story Arc)",
     "month": "September",
     "n": 15,
+    "pages": null,
     "story": "Ice (Part IV of V)",
     "writers": [
      "Chuck Austen"
@@ -4366,6 +4796,7 @@
     "arc": "Ice (Story Arc)",
     "month": "October",
     "n": 16,
+    "pages": null,
     "story": "Ice 5 of 5",
     "writers": [
      "Chuck Austen"
@@ -4376,6 +4807,7 @@
     "arc": "Captain America Lives Again",
     "month": "November",
     "n": 17,
+    "pages": null,
     "story": "Captain America Lives Again (Part I)",
     "writers": [
      "Dave Gibbons"
@@ -4386,6 +4818,7 @@
     "arc": "Captain America Lives Again",
     "month": "November",
     "n": 18,
+    "pages": null,
     "story": "Captain America Lives Again (Part II)",
     "writers": [
      "Dave Gibbons"
@@ -4396,6 +4829,7 @@
     "arc": "Captain America Lives Again",
     "month": "December",
     "n": 19,
+    "pages": null,
     "story": "Captain America Lives Again (Part III)",
     "writers": [
      "Dave Gibbons"
@@ -4406,6 +4840,7 @@
     "arc": "Enemy (Story Arc)",
     "month": "July",
     "n": 2,
+    "pages": null,
     "story": "Enemy, Part Two: One Nation",
     "writers": [
      "John Ney Rieber"
@@ -4416,6 +4851,7 @@
     "arc": "Captain America Lives Again",
     "month": "January",
     "n": 20,
+    "pages": null,
     "story": "Captain America Lives Again (Part IV)",
     "writers": [
      "Dave Gibbons"
@@ -4426,6 +4862,7 @@
     "arc": "Homeland",
     "month": "February",
     "n": 21,
+    "pages": null,
     "story": "Homeland (Part I)",
     "writers": [
      "Robert Morales"
@@ -4436,6 +4873,7 @@
     "arc": "Homeland",
     "month": "March",
     "n": 22,
+    "pages": null,
     "story": "Homeland (Part II)",
     "writers": [
      "Robert Morales"
@@ -4446,6 +4884,7 @@
     "arc": "Homeland",
     "month": "April",
     "n": 23,
+    "pages": null,
     "story": "Homeland (Part III)",
     "writers": [
      "Robert Morales"
@@ -4456,6 +4895,7 @@
     "arc": "Homeland",
     "month": "May",
     "n": 24,
+    "pages": null,
     "story": "Homeland (Part IV)",
     "writers": [
      "Robert Morales"
@@ -4466,6 +4906,7 @@
     "arc": "",
     "month": "June",
     "n": 25,
+    "pages": null,
     "story": "Homeland Part V",
     "writers": [
      "Robert Morales"
@@ -4476,6 +4917,7 @@
     "arc": "",
     "month": "July",
     "n": 26,
+    "pages": null,
     "story": "The Bucky Issue",
     "writers": [
      "Robert Morales"
@@ -4486,6 +4928,7 @@
     "arc": "Requiem (Story Arc)",
     "month": "August",
     "n": 27,
+    "pages": null,
     "story": "Requiem (Part I)",
     "writers": [
      "Robert Morales"
@@ -4496,6 +4939,7 @@
     "arc": "Requiem (Story Arc)",
     "month": "August",
     "n": 28,
+    "pages": null,
     "story": "Requiem (Part II)",
     "writers": [
      "Robert Morales"
@@ -4506,6 +4950,7 @@
     "arc": "Super-Patriot (Story Arc)",
     "month": "September",
     "n": 29,
+    "pages": null,
     "story": "Super-Patriot (Part One)",
     "writers": [
      "Robert Kirkman"
@@ -4516,6 +4961,7 @@
     "arc": "Enemy (Story Arc)",
     "month": "August",
     "n": 3,
+    "pages": null,
     "story": "Enemy, Part Three: Soft Targets",
     "writers": [
      "John Ney Rieber"
@@ -4526,6 +4972,7 @@
     "arc": "Super-Patriot (Story Arc)",
     "month": "October",
     "n": 30,
+    "pages": null,
     "story": "Super-Patriot (Part II)",
     "writers": [
      "Robert Kirkman"
@@ -4536,6 +4983,7 @@
     "arc": "Super-Patriot (Story Arc)",
     "month": "November",
     "n": 31,
+    "pages": null,
     "story": "Super-Patriot (Part III)",
     "writers": [
      "Robert Kirkman"
@@ -4546,6 +4994,7 @@
     "arc": "Super-Patriot (Story Arc)",
     "month": "December",
     "n": 32,
+    "pages": null,
     "story": "Super-Patriot (Part IV)",
     "writers": [
      "Robert Kirkman"
@@ -4556,6 +5005,7 @@
     "arc": "Warlords (Story Arc)",
     "month": "September",
     "n": 4,
+    "pages": null,
     "story": "Warlords (Part I)",
     "writers": [
      "John Ney Rieber"
@@ -4566,6 +5016,7 @@
     "arc": "Warlords (Story Arc)",
     "month": "October",
     "n": 5,
+    "pages": null,
     "story": "Warlords (Part 2): Above the Law",
     "writers": [
      "John Ney Rieber"
@@ -4576,6 +5027,7 @@
     "arc": "Warlords (Story Arc)",
     "month": "December",
     "n": 6,
+    "pages": null,
     "story": "Warlords (Part 3)",
     "writers": [
      "John Ney Rieber"
@@ -4586,6 +5038,7 @@
     "arc": "",
     "month": "February",
     "n": 7,
+    "pages": null,
     "story": "The Extremists part 1 of 4",
     "writers": [
      "John Ney Rieber"
@@ -4596,6 +5049,7 @@
     "arc": "The Extremists",
     "month": "March",
     "n": 8,
+    "pages": null,
     "story": "The Extremists (Part II of IV)",
     "writers": [
      "Chuck Austen",
@@ -4607,6 +5061,7 @@
     "arc": "",
     "month": "April",
     "n": 9,
+    "pages": null,
     "story": "The Extremists part 3 of 5",
     "writers": [
      "Chuck Austen",
@@ -4620,6 +5075,7 @@
     "arc": "Out of Time",
     "month": "January",
     "n": 1,
+    "pages": 32,
     "story": "Out of Time: Part 1",
     "writers": [
      "Ed Brubaker"
@@ -4630,6 +5086,7 @@
     "arc": "",
     "month": "October",
     "n": 10,
+    "pages": null,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -4640,6 +5097,7 @@
     "arc": "Winter Soldier (Story Arc)",
     "month": "November",
     "n": 11,
+    "pages": null,
     "story": "The Winter Soldier: Part 3",
     "writers": [
      "Ed Brubaker"
@@ -4650,6 +5108,7 @@
     "arc": "Winter Soldier (Story Arc)",
     "month": "January",
     "n": 12,
+    "pages": null,
     "story": "The Winter Soldier: Part 4",
     "writers": [
      "Ed Brubaker"
@@ -4660,6 +5119,7 @@
     "arc": "Winter Soldier (Story Arc)",
     "month": "January",
     "n": 13,
+    "pages": null,
     "story": "The Winter Soldier: Part 5",
     "writers": [
      "Ed Brubaker"
@@ -4670,6 +5130,7 @@
     "arc": "Winter Soldier (Story Arc)",
     "month": "April",
     "n": 14,
+    "pages": null,
     "story": "The Winter Soldier: Conclusion",
     "writers": [
      "Ed Brubaker"
@@ -4680,6 +5141,7 @@
     "arc": "",
     "month": "April",
     "n": 15,
+    "pages": null,
     "story": "Red Is the Darkest Color",
     "writers": [
      "Ed Brubaker"
@@ -4690,6 +5152,7 @@
     "arc": "Collision Courses",
     "month": "May",
     "n": 16,
+    "pages": null,
     "story": "Collision Courses: Part 1 of 2",
     "writers": [
      "Ed Brubaker"
@@ -4700,6 +5163,7 @@
     "arc": "Collision Courses",
     "month": "June",
     "n": 17,
+    "pages": null,
     "story": "Collision Courses: Part 2 of 2",
     "writers": [
      "Ed Brubaker"
@@ -4710,6 +5174,7 @@
     "arc": "Twenty-First Century Blitz",
     "month": "July",
     "n": 18,
+    "pages": null,
     "story": "Twenty-First Century Blitz: Part One of Four",
     "writers": [
      "Ed Brubaker"
@@ -4720,6 +5185,7 @@
     "arc": "Twenty-First Century Blitz",
     "month": "August",
     "n": 19,
+    "pages": null,
     "story": "Twenty-First Century Blitz: Part Two of Four",
     "writers": [
      "Ed Brubaker"
@@ -4730,6 +5196,7 @@
     "arc": "Out of Time",
     "month": "February",
     "n": 2,
+    "pages": 32,
     "story": "Out of Time: Part 2",
     "writers": [
      "Ed Brubaker"
@@ -4740,6 +5207,7 @@
     "arc": "Twenty-First Century Blitz",
     "month": "September",
     "n": 20,
+    "pages": null,
     "story": "Twenty-First Century Blitz: Part Three of Four",
     "writers": [
      "Ed Brubaker"
@@ -4750,6 +5218,7 @@
     "arc": "Twenty-First Century Blitz",
     "month": "October",
     "n": 21,
+    "pages": null,
     "story": "Twenty-First Century Blitz: Conclusion",
     "writers": [
      "Ed Brubaker"
@@ -4760,6 +5229,7 @@
     "arc": "Drums of War",
     "month": "November",
     "n": 22,
+    "pages": null,
     "story": "The Drums of War: Part 1",
     "writers": [
      "Ed Brubaker"
@@ -4770,6 +5240,7 @@
     "arc": "Drums of War",
     "month": "December",
     "n": 23,
+    "pages": null,
     "story": "The Drums of War: Part 2",
     "writers": [
      "Ed Brubaker"
@@ -4780,6 +5251,7 @@
     "arc": "Drums of War",
     "month": "January",
     "n": 24,
+    "pages": null,
     "story": "The Drums of War: Part 3",
     "writers": [
      "Ed Brubaker"
@@ -4790,6 +5262,7 @@
     "arc": "Death of the Dream",
     "month": "April",
     "n": 25,
+    "pages": 48,
     "story": "The Death of the Dream: Part One",
     "writers": [
      "Ed Brubaker"
@@ -4800,6 +5273,7 @@
     "arc": "Death of the Dream",
     "month": "May",
     "n": 26,
+    "pages": 32,
     "story": "The Death of the Dream: Part Two",
     "writers": [
      "Ed Brubaker"
@@ -4810,6 +5284,7 @@
     "arc": "Death of the Dream",
     "month": "August",
     "n": 27,
+    "pages": null,
     "story": "The Death of the Dream: Part Three",
     "writers": [
      "Ed Brubaker"
@@ -4820,6 +5295,7 @@
     "arc": "Death of the Dream",
     "month": "September",
     "n": 28,
+    "pages": null,
     "story": "The Death of the Dream: Part Four",
     "writers": [
      "Ed Brubaker"
@@ -4830,6 +5306,7 @@
     "arc": "Death of the Dream",
     "month": "October",
     "n": 29,
+    "pages": null,
     "story": "The Death of the Dream: Part Five",
     "writers": [
      "Ed Brubaker"
@@ -4840,6 +5317,7 @@
     "arc": "Out of Time",
     "month": "March",
     "n": 3,
+    "pages": 32,
     "story": "Out of Time: Part 3",
     "writers": [
      "Ed Brubaker"
@@ -4850,6 +5328,7 @@
     "arc": "Death of the Dream",
     "month": "November",
     "n": 30,
+    "pages": null,
     "story": "The Death of the Dream Part Six",
     "writers": [
      "Ed Brubaker"
@@ -4860,6 +5339,7 @@
     "arc": "Burden of Dreams",
     "month": "December",
     "n": 31,
+    "pages": null,
     "story": "The Death of Captain America, Act 2 - The Burden of Dreams: Part One",
     "writers": [
      "Ed Brubaker"
@@ -4870,6 +5350,7 @@
     "arc": "Burden of Dreams",
     "month": "January",
     "n": 32,
+    "pages": null,
     "story": "The Death of Captain America, Act 2 - The Burden of the Dreams: Part Two",
     "writers": [
      "Ed Brubaker"
@@ -4880,6 +5361,7 @@
     "arc": "Burden of Dreams",
     "month": "February",
     "n": 33,
+    "pages": null,
     "story": "The Death of Captain America, Act 2 - The Burden of Dreams: Part Three",
     "writers": [
      "Ed Brubaker"
@@ -4890,6 +5372,7 @@
     "arc": "Burden of Dreams",
     "month": "March",
     "n": 34,
+    "pages": 32,
     "story": "The Death of Captain America, Act 2 - The Burden of Dreams: Part Four",
     "writers": [
      "Ed Brubaker"
@@ -4900,6 +5383,7 @@
     "arc": "Burden of Dreams",
     "month": "April",
     "n": 35,
+    "pages": 32,
     "story": "The Death of Captain America, Act 2 - The Burden of Dreams: Part Five",
     "writers": [
      "Ed Brubaker"
@@ -4910,6 +5394,7 @@
     "arc": "Burden of Dreams",
     "month": "May",
     "n": 36,
+    "pages": 32,
     "story": "The Death of Captain America, Act 2 - The Burden of Dreams: Part Six",
     "writers": [
      "Ed Brubaker"
@@ -4920,6 +5405,7 @@
     "arc": "Man Who Bought America",
     "month": "June",
     "n": 37,
+    "pages": 32,
     "story": "The Death of Captain America, Act 3 - The Man Who Bought America: Part One",
     "writers": [
      "Ed Brubaker"
@@ -4930,6 +5416,7 @@
     "arc": "Man Who Bought America",
     "month": "July",
     "n": 38,
+    "pages": 32,
     "story": "The Death of Captain America, Act 3 - The Man Who Bought America: Part Two",
     "writers": [
      "Ed Brubaker"
@@ -4940,6 +5427,7 @@
     "arc": "Man Who Bought America",
     "month": "August",
     "n": 39,
+    "pages": 32,
     "story": "The Death of Captain America, Act 3 - The Man Who Bought America: Part Three",
     "writers": [
      "Ed Brubaker"
@@ -4950,6 +5438,7 @@
     "arc": "Out of Time",
     "month": "April",
     "n": 4,
+    "pages": 32,
     "story": "Out of Time: Part 4",
     "writers": [
      "Ed Brubaker"
@@ -4960,6 +5449,7 @@
     "arc": "Man Who Bought America",
     "month": "September",
     "n": 40,
+    "pages": 32,
     "story": "The Death of Captain America, Act 3 - The Man Who Bought America: Part Four",
     "writers": [
      "Ed Brubaker"
@@ -4970,6 +5460,7 @@
     "arc": "Man Who Bought America",
     "month": "October",
     "n": 41,
+    "pages": 32,
     "story": "The Death of Captain America, Act 3 - The Man Who Bought America: Part Five",
     "writers": [
      "Ed Brubaker"
@@ -4980,6 +5471,7 @@
     "arc": "Man Who Bought America",
     "month": "November",
     "n": 42,
+    "pages": 32,
     "story": "The Death of Captain America, Act 3 - The Man Who Bought America: Part Six",
     "writers": [
      "Ed Brubaker"
@@ -4990,6 +5482,7 @@
     "arc": "Time's Arrow",
     "month": "December",
     "n": 43,
+    "pages": 32,
     "story": "Time's Arrow - Part 1 of 3",
     "writers": [
      "Ed Brubaker"
@@ -5000,6 +5493,7 @@
     "arc": "Time's Arrow",
     "month": "January",
     "n": 44,
+    "pages": 32,
     "story": "Time's Arrow - Part 2 of 3",
     "writers": [
      "Ed Brubaker"
@@ -5010,6 +5504,7 @@
     "arc": "Time's Arrow",
     "month": "February",
     "n": 45,
+    "pages": 32,
     "story": "Time's Arrow - Part 3 of 3",
     "writers": [
      "Ed Brubaker"
@@ -5020,6 +5515,7 @@
     "arc": "Old Friends and Enemies",
     "month": "March",
     "n": 46,
+    "pages": 32,
     "story": "Old Friends and Enemies (Part 1 of 3)",
     "writers": [
      "Ed Brubaker"
@@ -5030,6 +5526,7 @@
     "arc": "Old Friends and Enemies",
     "month": "April",
     "n": 47,
+    "pages": 32,
     "story": "Old Friends and Enemies (Part 2 of 3)",
     "writers": [
      "Ed Brubaker"
@@ -5040,6 +5537,7 @@
     "arc": "Old Friends and Enemies",
     "month": "May",
     "n": 48,
+    "pages": 32,
     "story": "Old Friends and Enemies (Part 3 of 3)",
     "writers": [
      "Ed Brubaker"
@@ -5050,6 +5548,7 @@
     "arc": "",
     "month": "June",
     "n": 49,
+    "pages": 32,
     "story": "The Daughter of Time",
     "writers": [
      "Ed Brubaker"
@@ -5060,6 +5559,7 @@
     "arc": "Out of Time",
     "month": "May",
     "n": 5,
+    "pages": 32,
     "story": "Out of Time: Part 5",
     "writers": [
      "Ed Brubaker"
@@ -5070,6 +5570,7 @@
     "arc": "",
     "month": "July",
     "n": 50,
+    "pages": 48,
     "story": "Days Gone By",
     "writers": [
      "Ed Brubaker",
@@ -5082,6 +5583,7 @@
     "arc": "Out of Time",
     "month": "June",
     "n": 6,
+    "pages": 32,
     "story": "Out of Time: Part 6",
     "writers": [
      "Ed Brubaker"
@@ -5092,6 +5594,7 @@
     "arc": "",
     "month": "August",
     "n": 600,
+    "pages": 104,
     "story": "One Year After",
     "writers": [
      "Ed Brubaker",
@@ -5105,6 +5608,7 @@
     "arc": "",
     "month": "September",
     "n": 601,
+    "pages": 48,
     "story": "Red, White, and Blue-Blood",
     "writers": [
      "Ed Brubaker"
@@ -5115,6 +5619,7 @@
     "arc": "Two Americas (Captain America Story Arc)",
     "month": "March",
     "n": 602,
+    "pages": 40,
     "story": "Two Americas (Part 1)",
     "writers": [
      "Ed Brubaker",
@@ -5126,6 +5631,7 @@
     "arc": "Two Americas (Captain America Story Arc)",
     "month": "April",
     "n": 603,
+    "pages": 40,
     "story": "Two Americas (Part 2)",
     "writers": [
      "Ed Brubaker",
@@ -5137,6 +5643,7 @@
     "arc": "Two Americas (Captain America Story Arc)",
     "month": "May",
     "n": 604,
+    "pages": 40,
     "story": "Two Americas (Part 3)",
     "writers": [
      "Ed Brubaker",
@@ -5148,6 +5655,7 @@
     "arc": "Two Americas (Captain America Story Arc)",
     "month": "June",
     "n": 605,
+    "pages": 40,
     "story": "Two Americas (Conclusion)",
     "writers": [
      "Ed Brubaker",
@@ -5159,6 +5667,7 @@
     "arc": "No Escape (Captain America Story Arc)",
     "month": "August",
     "n": 606,
+    "pages": 40,
     "story": "No Escape (Part 1)",
     "writers": [
      "Ed Brubaker",
@@ -5170,6 +5679,7 @@
     "arc": "No Escape (Captain America Story Arc)",
     "month": "August",
     "n": 607,
+    "pages": 40,
     "story": "No Escape: Part II",
     "writers": [
      "Ed Brubaker",
@@ -5181,6 +5691,7 @@
     "arc": "No Escape (Captain America Story Arc)",
     "month": "October",
     "n": 608,
+    "pages": null,
     "story": "No Escape (Part 3)",
     "writers": [
      "Ed Brubaker",
@@ -5192,6 +5703,7 @@
     "arc": "No Escape (Captain America Story Arc)",
     "month": "October",
     "n": 609,
+    "pages": 40,
     "story": "No Escape (Part 4)",
     "writers": [
      "Ed Brubaker",
@@ -5203,6 +5715,7 @@
     "arc": "No Escape (Captain America Story Arc)",
     "month": "November",
     "n": 610,
+    "pages": 40,
     "story": "No Escape (Conclusion)",
     "writers": [
      "Ed Brubaker",
@@ -5214,6 +5727,7 @@
     "arc": "Trial of Captain America",
     "month": "December",
     "n": 611,
+    "pages": 40,
     "story": "The Trial of Captain America (Part 1)",
     "writers": [
      "Ed Brubaker",
@@ -5225,6 +5739,7 @@
     "arc": "Trial of Captain America",
     "month": "January",
     "n": 612,
+    "pages": 40,
     "story": "The Trial of Captain America part 2",
     "writers": [
      "Ed Brubaker",
@@ -5236,6 +5751,7 @@
     "arc": "Trial of Captain America",
     "month": "February",
     "n": 613,
+    "pages": 40,
     "story": "The Trial of Captain America part 3",
     "writers": [
      "Ed Brubaker",
@@ -5247,6 +5763,7 @@
     "arc": "Trial of Captain America",
     "month": "March",
     "n": 614,
+    "pages": 40,
     "story": "The Trial of Captain America part 4",
     "writers": [
      "Ed Brubaker",
@@ -5258,6 +5775,7 @@
     "arc": "Trial of Captain America",
     "month": "April",
     "n": 615,
+    "pages": 32,
     "story": "The Trial of Captain America, Part 5",
     "writers": [
      "Ed Brubaker",
@@ -5269,6 +5787,7 @@
     "arc": "Gulag",
     "month": "May",
     "n": 616,
+    "pages": 104,
     "story": "Origin",
     "writers": [
      "Alec Siegel",
@@ -5285,6 +5804,7 @@
     "arc": "Gulag",
     "month": "June",
     "n": 617,
+    "pages": 40,
     "story": "Gulag, Part 2",
     "writers": [
      "Ed Brubaker"
@@ -5295,6 +5815,7 @@
     "arc": "Gulag",
     "month": "July",
     "n": 618,
+    "pages": null,
     "story": "Gulag part 3",
     "writers": [
      "Ed Brubaker"
@@ -5305,6 +5826,7 @@
     "arc": "Gulag",
     "month": "August",
     "n": 619,
+    "pages": 40,
     "story": "Gulag part 4",
     "writers": [
      "Ed Brubaker"
@@ -5315,6 +5837,7 @@
     "arc": "",
     "month": "July",
     "n": 7,
+    "pages": null,
     "story": "The Lonesome Death of Jack Monroe",
     "writers": [
      "Ed Brubaker"
@@ -5325,6 +5848,7 @@
     "arc": "Winter Soldier (Story Arc)",
     "month": "September",
     "n": 8,
+    "pages": null,
     "story": "The Winter Soldier: Part 1",
     "writers": [
      "Ed Brubaker"
@@ -5335,6 +5859,7 @@
     "arc": "Winter Soldier (Story Arc)",
     "month": "October",
     "n": 9,
+    "pages": null,
     "story": "The Winter Soldier: Part 2",
     "writers": [
      "Ed Brubaker"
@@ -5347,6 +5872,7 @@
     "arc": "American Dreamers (Captain America Story Arc)",
     "month": "September",
     "n": 1,
+    "pages": 32,
     "story": "American Dreamers: Part 1",
     "writers": [
      "Ed Brubaker"
@@ -5357,6 +5883,7 @@
     "arc": "Powerless (Captain America Story Arc)",
     "month": "June",
     "n": 10,
+    "pages": null,
     "story": "Powerless (Part 5)",
     "writers": [
      "Ed Brubaker"
@@ -5367,6 +5894,7 @@
     "arc": "",
     "month": "July",
     "n": 11,
+    "pages": null,
     "story": "Shock to the System, Part 1",
     "writers": [
      "Ed Brubaker"
@@ -5377,6 +5905,7 @@
     "arc": "",
     "month": "July",
     "n": 12,
+    "pages": null,
     "story": "Shock to the System (Part 2)",
     "writers": [
      "Ed Brubaker"
@@ -5387,6 +5916,7 @@
     "arc": "",
     "month": "August",
     "n": 13,
+    "pages": null,
     "story": "Shock to the System (Part 3)",
     "writers": [
      "Ed Brubaker"
@@ -5397,6 +5927,7 @@
     "arc": "",
     "month": "September",
     "n": 14,
+    "pages": null,
     "story": "Shock to the System (Part 4)",
     "writers": [
      "Ed Brubaker"
@@ -5407,6 +5938,7 @@
     "arc": "",
     "month": "September",
     "n": 15,
+    "pages": null,
     "story": "New World Orders (Part 1)",
     "writers": [
      "Cullen Bunn",
@@ -5418,6 +5950,7 @@
     "arc": "",
     "month": "October",
     "n": 16,
+    "pages": null,
     "story": "New World Orders, Part 2",
     "writers": [
      "Cullen Bunn",
@@ -5429,6 +5962,7 @@
     "arc": "",
     "month": "November",
     "n": 17,
+    "pages": null,
     "story": "New World Orders (Part 3)",
     "writers": [
      "Cullen Bunn",
@@ -5440,6 +5974,7 @@
     "arc": "",
     "month": "December",
     "n": 18,
+    "pages": null,
     "story": "New World Orders, Part 4",
     "writers": [
      "Cullen Bunn",
@@ -5451,6 +5986,7 @@
     "arc": "",
     "month": "December",
     "n": 19,
+    "pages": null,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -5461,6 +5997,7 @@
     "arc": "American Dreamers (Captain America Story Arc)",
     "month": "October",
     "n": 2,
+    "pages": null,
     "story": "American Dreamers: Part 2",
     "writers": [
      "Ed Brubaker"
@@ -5471,6 +6008,7 @@
     "arc": "American Dreamers (Captain America Story Arc)",
     "month": "November",
     "n": 3,
+    "pages": 32,
     "story": "American Dreamers: Part 3",
     "writers": [
      "Ed Brubaker"
@@ -5481,6 +6019,7 @@
     "arc": "American Dreamers (Captain America Story Arc)",
     "month": "January",
     "n": 4,
+    "pages": 32,
     "story": "American Dreamers: Part 4",
     "writers": [
      "Ed Brubaker"
@@ -5491,6 +6030,7 @@
     "arc": "American Dreamers (Captain America Story Arc)",
     "month": "February",
     "n": 5,
+    "pages": 32,
     "story": "American Dreamers (Part 5)",
     "writers": [
      "Ed Brubaker"
@@ -5501,6 +6041,7 @@
     "arc": "Powerless (Captain America Story Arc)",
     "month": "February",
     "n": 6,
+    "pages": null,
     "story": "Powerless (Part 1)",
     "writers": [
      "Ed Brubaker"
@@ -5511,6 +6052,7 @@
     "arc": "Powerless (Captain America Story Arc)",
     "month": "March",
     "n": 7,
+    "pages": 32,
     "story": "Powerless (Part 2)",
     "writers": [
      "Ed Brubaker"
@@ -5521,6 +6063,7 @@
     "arc": "Powerless (Captain America Story Arc)",
     "month": "April",
     "n": 8,
+    "pages": 32,
     "story": "Powerless (Part 3)",
     "writers": [
      "Ed Brubaker"
@@ -5531,6 +6074,7 @@
     "arc": "Powerless (Captain America Story Arc)",
     "month": "May",
     "n": 9,
+    "pages": null,
     "story": "Powerless (Part 4)",
     "writers": [
      "Ed Brubaker"
@@ -5543,6 +6087,7 @@
     "arc": "",
     "month": "September",
     "n": 620,
+    "pages": 32,
     "story": "Masks",
     "writers": [
      "Ed Brubaker",
@@ -5554,6 +6099,7 @@
     "arc": "",
     "month": "October",
     "n": 621,
+    "pages": null,
     "story": "First Blood",
     "writers": [
      "Ed Brubaker",
@@ -5565,6 +6111,7 @@
     "arc": "",
     "month": "November",
     "n": 622,
+    "pages": 32,
     "story": "Invaders!",
     "writers": [
      "Ed Brubaker",
@@ -5576,6 +6123,7 @@
     "arc": "",
     "month": "December",
     "n": 623,
+    "pages": 32,
     "story": "The Hell Of War",
     "writers": [
      "Ed Brubaker",
@@ -5587,6 +6135,7 @@
     "arc": "",
     "month": "January",
     "n": 624,
+    "pages": 32,
     "story": "The Soviet Era",
     "writers": [
      "Ed Brubaker",
@@ -5598,6 +6147,7 @@
     "arc": "",
     "month": "February",
     "n": 625,
+    "pages": 32,
     "story": "",
     "writers": [
      "Ed Brubaker",
@@ -5609,6 +6159,7 @@
     "arc": "",
     "month": "March",
     "n": 626,
+    "pages": 32,
     "story": "Bucky Gone Bad!",
     "writers": [
      "Ed Brubaker",
@@ -5620,6 +6171,7 @@
     "arc": "",
     "month": "April",
     "n": 627,
+    "pages": 32,
     "story": "",
     "writers": [
      "Ed Brubaker",
@@ -5631,6 +6183,7 @@
     "arc": "",
     "month": "May",
     "n": 628,
+    "pages": null,
     "story": "",
     "writers": [
      "Ed Brubaker",
@@ -5644,6 +6197,7 @@
     "arc": "",
     "month": "September",
     "n": 1,
+    "pages": null,
     "story": "\"Captain America: Reborn\" Part 1",
     "writers": [
      "Ed Brubaker"
@@ -5654,6 +6208,7 @@
     "arc": "",
     "month": "October",
     "n": 2,
+    "pages": null,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -5664,6 +6219,7 @@
     "arc": "",
     "month": "November",
     "n": 3,
+    "pages": null,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -5674,6 +6230,7 @@
     "arc": "",
     "month": "January",
     "n": 4,
+    "pages": 32,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -5684,6 +6241,7 @@
     "arc": "",
     "month": "February",
     "n": 5,
+    "pages": 32,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -5694,6 +6252,7 @@
     "arc": "",
     "month": "March",
     "n": 6,
+    "pages": 32,
     "story": "",
     "writers": [
      "Ed Brubaker"
@@ -5706,6 +6265,7 @@
     "arc": "",
     "month": "November",
     "n": 59,
+    "pages": null,
     "story": "The Black Knight!",
     "writers": [
      "Stan Lee"
@@ -5716,6 +6276,7 @@
     "arc": "",
     "month": "December",
     "n": 60,
+    "pages": null,
     "story": "Suspected of Murder!",
     "writers": [
      "Stan Lee"
@@ -5726,6 +6287,7 @@
     "arc": "",
     "month": "January",
     "n": 61,
+    "pages": null,
     "story": "The Death of Tony Stark!",
     "writers": [
      "Stan Lee"
@@ -5736,6 +6298,7 @@
     "arc": "",
     "month": "February",
     "n": 62,
+    "pages": null,
     "story": "The Origin of the Mandarin!",
     "writers": [
      "Stan Lee"
@@ -5746,6 +6309,7 @@
     "arc": "",
     "month": "March",
     "n": 63,
+    "pages": 32,
     "story": "Somewhere Lurks the Phantom!",
     "writers": [
      "Jack Kirby",
@@ -5757,6 +6321,7 @@
     "arc": "",
     "month": "April",
     "n": 64,
+    "pages": null,
     "story": "Hawkeye and the New Black Widow Strike Again!",
     "writers": [
      "Stan Lee"
@@ -5767,6 +6332,7 @@
     "arc": "",
     "month": "May",
     "n": 65,
+    "pages": null,
     "story": "\"When Titans Clash\"",
     "writers": [
      "Stan Lee"
@@ -5777,6 +6343,7 @@
     "arc": "",
     "month": "June",
     "n": 66,
+    "pages": null,
     "story": "If I Fail, a World is Lost!",
     "writers": [
      "Stan Lee"
@@ -5787,6 +6354,7 @@
     "arc": "",
     "month": "July",
     "n": 67,
+    "pages": null,
     "story": "Where Walks the Villains!",
     "writers": [
      "Stan Lee"
@@ -5797,6 +6365,7 @@
     "arc": "",
     "month": "August",
     "n": 68,
+    "pages": null,
     "story": "If a Man Be Mad!",
     "writers": [
      "Al Hartley",
@@ -5808,6 +6377,7 @@
     "arc": "",
     "month": "September",
     "n": 69,
+    "pages": 36,
     "story": "If I Must Die, Let It Be With Honor!",
     "writers": [
      "Stan Lee"
@@ -5818,6 +6388,7 @@
     "arc": "",
     "month": "October",
     "n": 70,
+    "pages": null,
     "story": "Fight On! For a World is Watching!",
     "writers": [
      "Stan Lee"
@@ -5828,6 +6399,7 @@
     "arc": "",
     "month": "November",
     "n": 71,
+    "pages": null,
     "story": "What Price Victory?",
     "writers": [
      "Stan Lee"
@@ -5838,6 +6410,7 @@
     "arc": "",
     "month": "December",
     "n": 72,
+    "pages": null,
     "story": "Hoorah For the Conquering Hero!",
     "writers": [
      "Stan Lee"
@@ -5848,6 +6421,7 @@
     "arc": "",
     "month": "January",
     "n": 73,
+    "pages": 32,
     "story": "My Life for Yours!",
     "writers": [
      "Flo Steinberg",
@@ -5860,6 +6434,7 @@
     "arc": "",
     "month": "February",
     "n": 74,
+    "pages": null,
     "story": "If This Guilt Be Mine--!",
     "writers": [
      "Stan Lee"
@@ -5870,6 +6445,7 @@
     "arc": "",
     "month": "March",
     "n": 75,
+    "pages": null,
     "story": "The Fury of the Freak!",
     "writers": [
      "Stan Lee"
@@ -5880,6 +6456,7 @@
     "arc": "",
     "month": "April",
     "n": 76,
+    "pages": null,
     "story": "Here Lies Hidden.. The Unspeakable Ultimo!",
     "writers": [
      "Stan Lee"
@@ -5890,6 +6467,7 @@
     "arc": "",
     "month": "May",
     "n": 77,
+    "pages": null,
     "story": "Ultimo Lives!",
     "writers": [
      "Stan Lee"
@@ -5900,6 +6478,7 @@
     "arc": "",
     "month": "June",
     "n": 78,
+    "pages": null,
     "story": "Crescendo!",
     "writers": [
      "Gene Colan",
@@ -5912,6 +6491,7 @@
     "arc": "",
     "month": "July",
     "n": 79,
+    "pages": null,
     "story": "Disaster!",
     "writers": [
      "Gene Colan",
@@ -5924,6 +6504,7 @@
     "arc": "",
     "month": "August",
     "n": 80,
+    "pages": null,
     "story": "When Fall the Mighty!",
     "writers": [
      "Stan Lee"
@@ -5934,6 +6515,7 @@
     "arc": "",
     "month": "September",
     "n": 81,
+    "pages": null,
     "story": "The Return of the Titanium Man!",
     "writers": [
      "Jack Kirby",
@@ -5945,6 +6527,7 @@
     "arc": "",
     "month": "October",
     "n": 82,
+    "pages": null,
     "story": "By Force of Arms!",
     "writers": [
      "Stan Lee"
@@ -5955,6 +6538,7 @@
     "arc": "",
     "month": "November",
     "n": 83,
+    "pages": null,
     "story": "Victory!",
     "writers": [
      "Stan Lee"
@@ -5965,6 +6549,7 @@
     "arc": "",
     "month": "December",
     "n": 84,
+    "pages": null,
     "story": "\"The Other Iron Man!\"",
     "writers": [
      "Stan Lee"
@@ -5975,6 +6560,7 @@
     "arc": "",
     "month": "January",
     "n": 85,
+    "pages": null,
     "story": "Into the Jaws of Death",
     "writers": [
      "Stan Lee"
@@ -5985,6 +6571,7 @@
     "arc": "",
     "month": "February",
     "n": 86,
+    "pages": null,
     "story": "Death Duel For the Life of Happy Hogan!",
     "writers": [
      "Stan Lee"
@@ -5995,6 +6582,7 @@
     "arc": "",
     "month": "March",
     "n": 87,
+    "pages": null,
     "story": "Crisis -- At the Earth's Core!",
     "writers": [
      "Roy Thomas",
@@ -6006,6 +6594,7 @@
     "arc": "",
     "month": "April",
     "n": 88,
+    "pages": null,
     "story": "Beyond All Rescue!",
     "writers": [
      "Stan Lee"
@@ -6016,6 +6605,7 @@
     "arc": "",
     "month": "May",
     "n": 89,
+    "pages": null,
     "story": "The Monstrous Menace of the Mysterious Melter!",
     "writers": [
      "Stan Lee"
@@ -6026,6 +6616,7 @@
     "arc": "",
     "month": "June",
     "n": 90,
+    "pages": null,
     "story": "The Golden Ghost!",
     "writers": [
      "Stan Lee"
@@ -6036,6 +6627,7 @@
     "arc": "",
     "month": "July",
     "n": 91,
+    "pages": null,
     "story": "\"The Uncanny Challenge of the Crusher!\"",
     "writers": [
      "Stan Lee"
@@ -6046,6 +6638,7 @@
     "arc": "",
     "month": "August",
     "n": 92,
+    "pages": 36,
     "story": "\"Within the Vastness of Viet Nam!\"",
     "writers": [
      "Stan Lee"
@@ -6056,6 +6649,7 @@
     "arc": "",
     "month": "September",
     "n": 93,
+    "pages": 36,
     "story": "The Golden Gladiator and the Giant!",
     "writers": [
      "Stan Lee"
@@ -6066,6 +6660,7 @@
     "arc": "",
     "month": "October",
     "n": 94,
+    "pages": null,
     "story": "The Tragedy and the Triumph!",
     "writers": [
      "Stan Lee"
@@ -6076,6 +6671,7 @@
     "arc": "",
     "month": "November",
     "n": 95,
+    "pages": null,
     "story": "If a Man Be Stone!",
     "writers": [
      "Stan Lee"
@@ -6086,6 +6682,7 @@
     "arc": "",
     "month": "December",
     "n": 96,
+    "pages": null,
     "story": "\"The Deadly Victory!\"",
     "writers": [
      "Stan Lee"
@@ -6096,6 +6693,7 @@
     "arc": "",
     "month": "January",
     "n": 97,
+    "pages": 36,
     "story": "The Coming of Whiplash!",
     "writers": [
      "Stan Lee"
@@ -6106,6 +6704,7 @@
     "arc": "",
     "month": "February",
     "n": 98,
+    "pages": 36,
     "story": "The Warrior And The Whip!",
     "writers": [
      "Stan Lee"
@@ -6116,6 +6715,7 @@
     "arc": "",
     "month": "March",
     "n": 99,
+    "pages": null,
     "story": "At the Mercy of the Maggia",
     "writers": [
      "Archie Goodwin",
@@ -6129,6 +6729,7 @@
     "arc": "Longest Winter",
     "month": "April",
     "n": 1,
+    "pages": 32,
     "story": "Longest Winter, Part 1",
     "writers": [
      "Ed Brubaker"
@@ -6139,6 +6740,7 @@
     "arc": "",
     "month": "November",
     "n": 10,
+    "pages": null,
     "story": "Black Widow Hunt",
     "writers": [
      "Ed Brubaker"
@@ -6149,6 +6751,7 @@
     "arc": "",
     "month": "November",
     "n": 11,
+    "pages": null,
     "story": "Black Widow Hunt, Part 2",
     "writers": [
      "Ed Brubaker"
@@ -6159,6 +6762,7 @@
     "arc": "",
     "month": "December",
     "n": 12,
+    "pages": null,
     "story": "Black Widow Hunt, Part 3",
     "writers": [
      "Ed Brubaker"
@@ -6169,6 +6773,7 @@
     "arc": "",
     "month": "February",
     "n": 13,
+    "pages": 32,
     "story": "Black Widow Hunt, Part 4 of 5",
     "writers": [
      "Ed Brubaker"
@@ -6179,6 +6784,7 @@
     "arc": "",
     "month": "March",
     "n": 14,
+    "pages": 32,
     "story": "Black Widow Hunt, Conclusion",
     "writers": [
      "Ed Brubaker"
@@ -6189,6 +6795,7 @@
     "arc": "",
     "month": "April",
     "n": 15,
+    "pages": 32,
     "story": "Skin to Shed",
     "writers": [
      "Jason Latour"
@@ -6199,6 +6806,7 @@
     "arc": "",
     "month": "May",
     "n": 16,
+    "pages": 32,
     "story": "Closer Than Enemies",
     "writers": [
      "Jason Latour"
@@ -6209,6 +6817,7 @@
     "arc": "",
     "month": "June",
     "n": 17,
+    "pages": 32,
     "story": "A Dark and Heavy Star",
     "writers": [
      "Jason Latour"
@@ -6219,6 +6828,7 @@
     "arc": "",
     "month": "July",
     "n": 18,
+    "pages": 32,
     "story": "The Phantom Limb Technique",
     "writers": [
      "Jason Latour"
@@ -6229,6 +6839,7 @@
     "arc": "",
     "month": "August",
     "n": 19,
+    "pages": 32,
     "story": "It Ends With a Kiss",
     "writers": [
      "Jason Latour"
@@ -6239,6 +6850,7 @@
     "arc": "Longest Winter",
     "month": "April",
     "n": 2,
+    "pages": 32,
     "story": "Longest Winter, Part 2",
     "writers": [
      "Ed Brubaker"
@@ -6249,6 +6861,7 @@
     "arc": "Longest Winter",
     "month": "May",
     "n": 3,
+    "pages": null,
     "story": "Longest Winter, Part 3",
     "writers": [
      "Ed Brubaker"
@@ -6259,6 +6872,7 @@
     "arc": "Longest Winter",
     "month": "June",
     "n": 4,
+    "pages": null,
     "story": "Longest Winter, Part 4",
     "writers": [
      "Ed Brubaker"
@@ -6269,6 +6883,7 @@
     "arc": "Longest Winter",
     "month": "July",
     "n": 5,
+    "pages": null,
     "story": "The Longest Winter, Part 5 of 5",
     "writers": [
      "Ed Brubaker"
@@ -6279,6 +6894,7 @@
     "arc": "",
     "month": "August",
     "n": 6,
+    "pages": null,
     "story": "Broken Arrow, Prologue",
     "writers": [
      "Ed Brubaker"
@@ -6289,6 +6905,7 @@
     "arc": "",
     "month": "August",
     "n": 7,
+    "pages": null,
     "story": "Broken Arrow: Part One",
     "writers": [
      "Ed Brubaker"
@@ -6299,6 +6916,7 @@
     "arc": "",
     "month": "September",
     "n": 8,
+    "pages": null,
     "story": "Broken Arrow, Part 2",
     "writers": [
      "Ed Brubaker"
@@ -6309,6 +6927,7 @@
     "arc": "",
     "month": "October",
     "n": 9,
+    "pages": null,
     "story": "Broken Arrow, Part Three",
     "writers": [
      "Ed Brubaker"
