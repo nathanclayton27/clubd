@@ -40,8 +40,62 @@ you write and often the only one.
 
 **2. Rows are scoped by `property_id`, which is a list slug.** `progress` is
 keyed `(user_id, property_id)`. A slug may carry a `#`-suffixed variant for a
-rewatch; server-side checks `split_part` on `#` before comparing, so a suffix
-cannot be used to sidestep a rule that applies to the base list.
+rewatch: the site writes one row per fresh watch, `slug#fw<epoch ms>`, from
+CLU-408 onward, and the bare `slug#fw` is the single run a reader could have
+started before that. Server-side checks `split_part` on `#` before comparing, so
+a suffix cannot be used to sidestep a rule that applies to the base list. **No
+schema change is involved** — a suffixed run is an ordinary `progress` row.
+
+`progress` has **no delete policy** — see §4 — so the client cannot remove a
+run's row. Deleting a fresh watch therefore empties its `read_ids` to `{}`
+instead, which makes an empty `#fw…` row **ambiguous, and specifically not a
+delete marker**: the identical empty row is what "Clear this fresh watch" leaves
+behind, what unticking every item leaves behind, and what a run emptied and not
+yet re-ticked looks like. The site reads it as narrowly as that allows:
+
+- An empty row never **introduces** a run. Cloud discovery skips it, so a run
+  that only ever existed on another device is not offered here.
+- A run already in this device's local registry, or the one on screen, **is**
+  still offered by the run switcher whatever its cloud row holds — this device
+  really does hold those ticks.
+- A device sitting in a run whose row has gone empty **keeps its local ticks**.
+  It refuses the first-sign-in fold that would push them back into the emptied
+  row — that fold resurrecting a deleted run was the bug — tells the reader the
+  run is empty on the account and local to this device, and writes nothing to the
+  row itself. It does **not** delete anything: an empty row is not evidence of a
+  delete, and acting on it as though it were destroyed ticks belonging to readers
+  who had merely cleared a run elsewhere. (A later tick on that device does
+  upload, because a tick is an instruction, and so would `backfillSync`'s
+  cross-list sweep if it happened to add an item to that list.)
+
+**A delete made with no session is finished later, from the client.** Signed
+out there is no account to empty the row with, so the delete reached this
+browser and nothing else — and because nothing recorded that it had happened,
+the next sign-in put the run back twice over: cloud discovery re-registered
+the key from a row still full of ticks, and the shelf's whole-account read
+wrote the local tick set out again underneath it. The missing record is now
+local as well — `gw:fwgone:<slug>`, the runs this browser has deleted — and it
+does two things: it suppresses that one key in every read above, and the first
+time an account is in hand on that list it replays the emptying exactly as a
+signed-in delete would have, **once**. Once, because a second device that still
+holds the run goes on ticking it, and a replay that fired on every sign-in
+would be this browser deleting that device's run for ever over a decision
+taken one time. **Still no schema change**: the replay is the same
+select-then-delete-then-empty on `progress`, against the run's own row and no
+other.
+
+So a delete reaches the device that ran it and the account's row, and no
+further. **A delete that propagates across devices is not possible with this
+schema** and would need a tombstone the other device can recognise — a
+`deleted_at` column on `progress`, or a small `progress_deletions` table — i.e.
+a migration. None is queued; nothing in the site pretends one exists.
+
+Anyone who later adds a delete policy or restores the `delete` grant should know
+the client already handles both — it asks for the deleted row back and only falls
+through to emptying when none comes. With a real delete in place the row
+disappears rather than going empty, which removes the ambiguity above for every
+device that had not already cached the run, but still not for one holding local
+ticks: absent and never-existed look the same too.
 
 **3. Sharing is additive, and that is deliberate.** Permissive policies **OR**
 together. On `progress` there are separate branches for your own row, for mutual
@@ -387,7 +441,13 @@ Per table: what it holds, who may read it, who may write it.
 **`progress`** — one row per user per list, `read_ids` as an array. Keyed
 `(user_id, property_id)`. Read by you, by mutual friends (`friend_may_read`,
 which consults the privacy switches and excludes gated lists), and by club and
-group co-members (`shares_group_with`). Written only by you.
+group co-members (`shares_group_with`). Written only by you. **Its own-row
+policies are `select`, `insert` and `update` — there is no `delete` policy on
+this table, and nothing in §5's ledger ever added one.** So a delete from the
+client matches no rows and returns success with an empty result rather than an
+error, which is why the fresh-watch delete in `src/template.html` asks for the
+deleted row back and empties `read_ids` when none comes (rule 2 above). A
+`property_id` here may carry a `#fw…` suffix naming one fresh watch of that list.
 
 **`club_progress`** — a club's own tracking session: one row per **membership**,
 keyed `(group_id, user_id)`, with `read_ids text[] not null default '{}'` and
