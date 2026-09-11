@@ -271,16 +271,58 @@ li:hover .drill,li:focus-within .drill,.drill:focus-visible{opacity:1}
    the behaviour for free rather than from a class we maintain. */
 /* the tag beats .panel's own padding, which is defined further down */
 details.ctile{padding:0}
-.ctbar{align-items:center;gap:10px;padding:13px 18px}
-/* the phone rule below forces every summary onto two lines for the section
-   header's sake; this bar is one line at every width by design */
+/* nowrap, and it is load-bearing (CLU-441). `summary` computes flex-wrap:wrap,
+   so this bar broke a LINE rather than squeezing anything — and because an item
+   moved instead of shrinking, .cnm's ellipsis below never engaged. Everything
+   here but the name is flex:none, so the item that went was whichever no longer
+   fitted: .cchev, the chevron that OPENS the tile, onto row two.
+   Measured by scratch/qa2/clubbar_probe.py at 320/360/390/430/768px, before:
+   at 320px the chevron left the first line on a club named "the regulars" as
+   soon as the pill said "3 of 9", and on any tile once it said "11 of 12"; a
+   name the length of "the tuesday evening regulars" lost it at 320, 360 and
+   390px with the old "+2" pill too, so the wrap predates this card and CLU-441's
+   wider pill only brought it within reach of ordinary content. 84 of 150
+   measured cases. After: 1 line and 0 of 150.
+   nowrap makes the NAME the thing that gives, which is what it is built to do
+   and what a reader can most afford to lose — the pill's two numbers are the
+   point of the card, and the chevron is a control. Every other item on the bar
+   is flex:none, so the name is the only one that can shrink, and min-width:0
+   below is what lets it shrink past its own text.
+   The ::after below stays. The phone rule adds a full-width break to every
+   summary for the section header's sake, and this bar is measured clean with
+   that break suppressed; what happens with it restored under nowrap has NOT
+   been measured, so do not remove content:none on the strength of a guess.
+   Run clubbar_probe.py before touching either line.
+   No pixel figures are quoted here on purpose: they go stale silently and the
+   probe is the only thing that can be re-run. */
+.ctbar{align-items:center;gap:10px;padding:13px 18px;flex-wrap:nowrap}
 .ctbar::after{content:none}
 .ctbar .lbl{flex:none}
+/* min-width:0 is what lets it shrink past its text at all — with nowrap above,
+   this is the one item on the bar that can, so under pressure it is the name
+   that ellipses and every other item keeps its width */
 .cnm{font-weight:500;font-size:14px;letter-spacing:-.01em;min-width:0;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .cpl{font-size:11.5px;color:var(--ink-3);flex:none}
 /* who is in it, in stack order, capped at four — past four they stop being
-   countable and the +N beside the name is the number that answers it */
+   countable and something else has to carry the number. There is no +N any
+   more (CLU-441): on a club or a group it is the pill beside the name, which
+   prints the pair the switcher's line prints ("3 of 9") or the plain inclusive
+   count when the strip IS the roster. These dots always include the viewer,
+   whichever of those is beside them.
+   On a PICK there is no pill, and the reason is the CLASH, not a substitute
+   count: every picks label is exclusive of the viewer — "2 friends", because you
+   did not pick yourself — while the pill is inclusive, since it prints the pair
+   the switcher's line prints and that line counts you. Picks is also the one
+   mode with nothing to reconcile them, because updateGroupLine() returns on
+   !group. So a pill here could only ever read one higher than the name beside
+   it, which is the filed bug rebuilt.
+   With a SINGLE pick the name is the friend's NAME, so the bar reads "tam", two
+   dots, and no digit anywhere — accepted, because the DOTS are the count at that
+   size: one pick draws two people, well inside the four this cap calls
+   countable. And the moment they stop being countable they stop being the only
+   answer: at two picks and up switchLabel() is "N friends" again, so a number
+   comes back exactly where the dots can no longer be trusted to carry one. */
 .cdots{display:flex;gap:3px;margin-left:auto;flex:none}
 .cdots i{width:8px;height:8px;border-radius:1px;display:block}
 .cchev{width:7px;height:7px;flex:none;border-right:1.5px solid var(--ink-3);
@@ -348,7 +390,15 @@ details.ctile{padding:0}
 /* The hint never shrinks (flex:none), so on a phone it is the club NAME that
    gets ellipsed to make room for it. The wording stays long — "ep 64" needs a
    per-unit abbreviation and there are 209 units — so the hint gives the name
-   back a few characters instead. */
+   back a few characters instead.
+   Which makes hint LENGTH a layout decision, not only a copy one, and the
+   group hint is the short one for that reason: scratch/qa2/hintwidth_probe.py
+   measures what each wording costs the name, and against "9 members" the
+   "9 in the group" CLU-441 first wrote cost the name three characters at 320px
+   (14 down to 11), three at 360 (18/15), three at 430 (24/21) and TWO at 390
+   (20/18) — not three at every width, which this comment used to claim. At
+   768px neither wording clips the name at all. Measure before lengthening
+   either of them. */
 @media (max-width:430px){.gwhy{font-size:9.5px;padding-left:6px}}
 /* the section headings: "Reading this together" over the clubs, "Or pick
    people" over the friends. A heading each is what lets a club and a group
@@ -5073,12 +5123,20 @@ async function renderMyGroups(){
       return;
     }
     host.innerHTML = pkHTML(rows.map(g=>{
-      const k = seats[g.id] || 1;
+      // The ROSTER size, and this page is the one place that is the whole
+      // answer: a group spans every list, so "who is in it" is all there is to
+      // say here and no list's progress is even fetched (CLU-441).
+      //
+      // No `|| 1` fallback. myGroups() swallows a failed roster fetch, and the
+      // fallback turned that into "1 person" — a confidently wrong number on a
+      // group of nine, printed directly above a roster list built from the
+      // same failed query. Saying nothing is the honest answer to not knowing.
+      const k = seats[g.id];
       return '<div class="afrow" style="align-items:baseline;padding:5px 0">'
         + '<b style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'
         + esc(g.name) + '</b>'
-        + '<span class="mono" style="font-size:10.5px;color:var(--ink-3)">'
-        + k + ' ' + (k === 1 ? 'person' : 'people') + '</span>'
+        + (k ? '<span class="mono" style="font-size:10.5px;color:var(--ink-3)">'
+               + k + ' ' + (k === 1 ? 'person' : 'people') + '</span>' : '')
         // CLU-413. An explicit spacer, and NO auto margins. Two elements
         // carrying margin-left:auto split the free space between them, which
         // is what put Invite link in a different place on every row — the note
@@ -5517,6 +5575,13 @@ async function loadGroups(){
 let ugroups = [];
 let useats = {};
 function isUgroup(g){ return !!(g && g.universal); }
+// The tile is shared between the two kinds and they are not the same thing: a
+// GROUP is one roster across every list, passive and standing; a CLUB is a
+// small set of people actively watching this one thing together. Every string
+// on the tile that names the kind asks here, so neither can be called by the
+// other's name. updateGroupLine() was doing this inline and was the only
+// surface that got it right (CLU-415); CLU-441 made it the rule.
+function kindWord(){ return isUgroup(group) ? 'group' : 'club'; }
 // Not while a club session is selected (CLU-389). readsOf() hands back `done`
 // for any layer that is you, so in a stacked view your band in club A and
 // club B would both draw the SELECTED session's numbers — the same person, the
@@ -5793,6 +5858,16 @@ async function loadMembers(){
     });
   });
   gmembers = [...seen.values()];
+  // The menu's hint for the group on screen, refreshed from the roster we just
+  // read (CLU-441). `useats` was written ONLY by loadGroups(), and every path
+  // that keeps this page current after a roster change — the 45s poll, the
+  // visibilitychange handler, the tile's own Remove button — calls loadMembers()
+  // and then renderGroupPanel(). renderGroupPanel rebuilds the menu, so the
+  // hint LOOKED freshly painted while being counted once per page load: remove
+  // one of nine and the line said "3 of 8" beside a hint still saying 9.
+  // Scoped to the selected group because that is the only roster this page can
+  // see; the rest keep whatever loadGroups() last counted.
+  if(isUgroup(group)) useats[group.id] = gmembers.length;
   // the other exit — see the note on the early return above
   paintThumbs(); pullPeerThumbs().catch(()=>{});
 }
@@ -6529,7 +6604,7 @@ function nameRow(){
     + '<span class="lbl">Your name</span>'
     + '<input type="text" id="g-name" maxlength="24" value="'+esc(mine.name)+'">'
     + '<button id="b-gname">Save</button>'
-    + '<span class="lbl">how the club sees you</span></div>';
+    + '<span class="lbl">how the ' + kindWord() + ' sees you</span></div>';
 }
 
 function wireName(){
@@ -6548,7 +6623,7 @@ function wireName(){
     if(error){ flash('Could not rename: '+error.message,'gmsg2'); return; }
     if(mine) mine.name = v;
     paintStack(); renderGroupPanel();
-    flash('The club sees you as '+v+' now.','gmsg2');
+    flash('The '+kindWord()+' sees you as '+v+' now.','gmsg2');
   };
 }
 
@@ -6666,14 +6741,47 @@ function groupSwitcher(){
   //
   // Hinted with a member count, not a date. A club's hint answers "by when";
   // a group spans every list and can never have a when, so the useful fact is
-  // how many people you would be drawing.
+  // how big the roster is.
+  //
+  // "9 members", NOT "9 people" (CLU-441). This hint used to say how many
+  // people you would be drawing, and since CLU-415 that is a different and
+  // smaller number — so a bare "9 people" sat one line above the switcher's
+  // own "3 of 9 watching.", two readings of "how many of us" with nothing to
+  // tell them apart. The words now say which one this is. It stays the roster
+  // rather than becoming the drawn count because the drawn count needs this
+  // list's progress for a group you have not selected, which is a fetch per
+  // group on every menu paint; and because "what am I switching INTO" is
+  // genuinely a question about the roster.
+  //
+  // "members" rather than "in the group", which is what CLU-441 first wrote,
+  // for two reasons and the second is measured. It is the word this site
+  // ALREADY uses for a roster — the friends page's roster peek says "show all 9
+  // members" — so the menu now names the roster the same way the page that owns
+  // it does. And .gwhy never shrinks, so every character of hint is taken off
+  // the group NAME beside it: scratch/qa2/hintwidth_probe.py measured "9 in the
+  // group" clipping the name three characters earlier at 320, 360 and 430px and
+  // two earlier at 390px, and at 320px it takes the name down to eleven, where
+  // an ordinary "the regulars" no longer fits.
+  // "9 members" costs the name nothing at 320px (fourteen characters either
+  // way), nothing at 360 (eighteen) and nothing at 430 (twenty-four) — but ONE
+  // character at 390px, where "9 people" allows twenty-one and "9 members"
+  // twenty. So it is not free at every width, which is what this comment used to
+  // say by naming only the three widths where it is. One character buys the
+  // sentence that says which number this is, and 390px is the width where the
+  // name has twenty to spend. The drawer's heading keeps "9 in the group"
+  // because it is already prefixed "Members ·" and needs the kind to add
+  // anything.
+  //
+  // No `|| 1`: loadGroups() swallows a failed count, and the fallback turned
+  // that into "1 member" rather than into no hint at all.
   if(ugroups.length)
     html += '<div role="group" aria-label="Your groups">'
       + '<p class="gmh" aria-hidden="true">Your groups</p>'
       + ugroups.slice().sort((a,b)=> (a.name||'').localeCompare(b.name||''))
           .map(g=>{
-            const k = useats[g.id] || 1;
-            return row(g.id, g.name, k + ' ' + (k === 1 ? 'person' : 'people'),
+            const k = useats[g.id];
+            return row(g.id, g.name,
+                       k ? k + (k === 1 ? ' member' : ' members') : '',
                        !!(group && g.id === group.id));
           }).join('')
       + '</div>';
@@ -6711,14 +6819,24 @@ function groupSwitcher(){
     // declining out loud is the honest version — wireSwitcher does the
     // declining, since aria-disabled is advisory and the click still fires.
 
+    // "Which club" was unconditional, so the tooltip and the screen-reader
+    // name for this control both said club with a GROUP selected — while the
+    // line two lines below was careful to say group (CLU-441). The menu holds
+    // watch clubs, groups, picks and Just me, so the name of the control asks
+    // about none of them in particular; the selected kind, when there is one,
+    // gets its own word.
     + ' title="'
     + esc(!group && !picked.length ? 'Showing your own progress'
-          : 'Which club the strip is drawing')
+          : group ? 'Which ' + kindWord() + ' the strip is drawing'
+                  : 'Who the strip is drawing')
     + '"><span class="gswl">showing</span>'
     + '<span class="gswn">'+esc(switchLabel())+'</span>'
     + '<span class="gswc" aria-hidden="true"></span></button>'
     + '<div class="gmenu" id="g-menu" role="menu" hidden'
-    + ' aria-label="Which club the strip is drawing">'+html+'</div>';
+    // Stable, and it has to be: this is the menu's accessible name, so it
+    // cannot change with the selection. "Who" covers all four kinds the menu
+    // holds, which "Which club" never did.
+    + ' aria-label="Who the strip is drawing">'+html+'</div>';
 }
 
 // Stacking "everyone from all your clubs" needs more than one club and a club
@@ -6730,10 +6848,11 @@ function groupSwitcher(){
 // schedule. Everyone else sees the name and nothing to edit.
 function renameRow(){
   if(!isOwner()) return '';
+  const lbl = cap(kindWord()) + ' name';
   return '<div class="row" style="margin:0 0 14px">'
-    + '<span class="lbl">Club name</span>'
+    + '<span class="lbl">'+esc(lbl)+'</span>'
     + '<input type="text" id="g-gname" maxlength="40" style="width:190px" '
-    + 'aria-label="Club name" value="'+esc(group.name)+'">'
+    + 'aria-label="'+esc(lbl)+'" value="'+esc(group.name)+'">'
     + '<button id="b-grename">Rename</button></div>';
 }
 
@@ -6742,10 +6861,11 @@ function wireRename(){
   if(!b) return;
   b.onclick = async ()=>{
     const v = $('g-gname').value.trim();
-    if(!v){ flash('Give the club a name.','gmsg2'); return; }
+    const kind = kindWord();
+    if(!v){ flash('Give the '+kind+' a name.','gmsg2'); return; }
     if(v === group.name){ flash('That is already the name.','gmsg2'); return; }
     b.disabled = true;
-    const ok = await saveGroup({ name: v }, 'Everyone sees this club as ' + v + ' now.');
+    const ok = await saveGroup({ name: v }, 'Everyone sees this ' + kind + ' as ' + v + ' now.');
     if(!ok) b.disabled = false;
   };
 }
@@ -6812,17 +6932,32 @@ function roster(){
         + '<span class="mname">'+esc(m.name)+(me?' (you)':'')+'</span>'
         + '<span class="gpct mono">'+readsOf(m).size+'</span>'
         + (me ? '' : '<button class="rm" data-uid="'+esc(m.id)+'" data-name="'+esc(m.name)
-                   + '" title="Remove from the club">Remove</button>')
+                   + '" title="Remove from the ' + kindWord() + '">Remove</button>')
         + '</li>';
     }).join('');
-  return '<div class="lbl" style="margin:16px 0 6px">Members</div><ul class="mlist">'+rows+'</ul>';
+  // The heading carries the count, because this is the THIRD reading of "how
+  // many of us" on one screen (CLU-441) and it was the one with no number on
+  // it: nine rows each showing a 0, three inches under a bar saying 3 of 9.
+  // The zeroes are the point of this list — it is where an owner sees who has
+  // not started — so the heading says what the rows are instead of the rows
+  // pretending to be the strip.
+  return '<div class="lbl" style="margin:16px 0 6px">Members &middot; '
+    + mine.length + ' in the ' + kindWord() + '</div>'
+    + '<ul class="mlist">'+rows+'</ul>';
 }
 
 function wireRoster(){
   document.querySelectorAll('.rm').forEach(b=>{
     b.onclick = async ()=>{
       const name = b.dataset.name;
-      if(!confirm('Remove '+name+' from '+group.name+"? Their own progress is untouched, and they can rejoin with the code.")) return;
+      // A universal group has no code — the database enforces code IS NULL on
+      // one, and clubFoot() already declines to draw the chip for that reason —
+      // so the old unconditional "they can rejoin with the code" offered the
+      // owner a way back in that does not exist (CLU-441). A group is rejoined
+      // by its invite link, which lives on the friends page.
+      if(!confirm('Remove '+name+' from '+group.name+'? Their own progress is '
+          + 'untouched, and they can rejoin with the '
+          + (isUgroup(group) ? 'invite link.' : 'code.'))) return;
       b.disabled = true;
       const { error } = await sb.from('group_members')
         .delete().eq('group_id', group.id).eq('user_id', b.dataset.uid);
@@ -6899,9 +7034,42 @@ function paintClubBar(label){
   // the drawn set, because the bar is a summary OF THE STACK — "+8" over three
   // layers would be the shut tile disagreeing with the open one (CLU-415)
   const drawn = drawingPeople() ? drawnMembers() : [];
-  const n = drawn.length;
-  pl.textContent = n > 1 ? '+' + (n - 1) : '';
-  pl.classList.toggle('hide', n < 2);
+  const n = drawn.length, all = gmembers.length;
+  // CLU-441. This was "+" + (n - 1) — the only figure on the page with no word
+  // anywhere near it, and the two conventions it mixed are exactly what got
+  // filed: the pill excluded you while the dots beside it included you, and
+  // once CLU-415 moved its base to the drawn set it read "+2" beside a friends
+  // page saying "9 people" for the same group. Shut, the tile is the whole
+  // control and the sentence that reconciles the two is not on the page at all.
+  //
+  // So it prints the same pair of numbers the switcher's line prints, in the
+  // same order: "3 of 9" when some of the roster is undrawn, and the plain
+  // inclusive count when the strip IS the roster. One convention, matching the
+  // sentence below it when the tile is open and standing in for it when shut.
+  //
+  // "1 of 9" is worth printing where a bare "1" was not: a nine-person group
+  // where only you have started would otherwise summarise itself as one person.
+  //
+  // And NO PILL ON A PICK, which is CLU-441 one surface over. In picks mode the
+  // tile's own name already carries a count — switchLabel() says "2 friends" —
+  // and it is exclusive of you on purpose, because you did not pick yourself.
+  // The pill's convention is the opposite one and has to be, since it prints the
+  // pair the switcher's line prints and that line counts you. So the shut tile
+  // read "2 friends" beside "3": two numbers on one control, in the same
+  // typeface, differing by exactly the viewer — the filed bug, rebuilt.
+  //
+  // Picks is also the one mode with nothing available to reconcile them:
+  // updateGroupLine() returns on !group, so the sentence that does that work
+  // for a group is not on the page at all here. Rather than invent a third
+  // convention for a mode that has no roster and no progress of its own, the
+  // name answers how many and the dots answer which — and both existing
+  // conventions stay honest, "N friends" still excluding the viewer and the
+  // dots still including them. Just me and a fresh watch reach this with n === 0
+  // and were already pill-less.
+  const pill = (!group || !n) ? ''
+             : (n < all ? n + ' of ' + all : (n > 1 ? String(n) : ''));
+  pl.textContent = pill;
+  pl.classList.toggle('hide', !pill);
   dots.innerHTML = !n ? '' : drawn.slice()
     .sort((a,b)=> readsOf(b).size - readsOf(a).size || a.name.localeCompare(b.name))
     .slice(0, 4)
@@ -6933,7 +7101,7 @@ function clubIcons(){
     + ' aria-controls="cdrawer"'
     + ' title="'+esc(label)+'" aria-label="'+esc(label)+'">'+glyph+'</button>';
   return '<span class="cico">'
-    + (isOwner() ? ico('b-cren', 'rename', 'Rename the club', '&#9998;') : '')
+    + (isOwner() ? ico('b-cren', 'rename', 'Rename the ' + kindWord(), '&#9998;') : '')
     + (isOwner() ? ico('b-csched', 'sched', 'Schedule', '&#9636;') : '')
     + ico('b-cmore', 'more', 'Your name, refresh, calendar, leave', '&#8943;')
     + '</span>';
@@ -6956,7 +7124,7 @@ function clubDrawer(){
           + (windows() ? 'One calendar event per schedule window'
                        : 'One calendar event on the finish date')
           + '">Calendar (.ics)</button>' : '')
-    + '<button id="b-gleave">Leave the club</button></div>'
+    + '<button id="b-gleave">Leave the ' + kindWord() + '</button></div>'
     + roster()
     + '</div>';
 }
