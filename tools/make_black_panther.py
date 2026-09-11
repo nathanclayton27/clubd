@@ -7,7 +7,7 @@ Sixty years of the mantle in main Marvel continuity, one row per issue: the
 two Don McGregor arcs inside Jungle Action, Jack Kirby's own relaunch, the
 1980s scraps, Christopher Priest's sixty-two issues, Reginald Hudlin's
 forty-one, Shuri's twelve, the Hell's Kitchen detour, Ta-Nehisi Coates'
-forty-three, John Ridley's fifteen and Eve Ewing's ten.
+fifty, John Ridley's fifteen and Eve Ewing's ten.
 
 WHERE THE NUMBERS COME FROM, AND WHY NONE OF THEM ARE GUESSED.
 Every issue in this file is attested by a source that enumerates it, which is
