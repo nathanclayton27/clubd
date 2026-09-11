@@ -1,0 +1,6915 @@
+{
+  "slug": "thor",
+  "title": "Thor",
+  "subtitle": "sixty years of the mantle — Lee and Kirby to Jason Aaron",
+  "kind": "comics",
+  "popularity": 71,
+  "year": "1962–2023",
+  "blurb": "730 issues in publication order, from Journey into Mystery #83 to the end of the 2020 volume — with the tiers saying where to actually start, because the best run is 254 issues in.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#1F4E8C",
+  "accentDark": "#7FB2F0",
+  "tiers": true,
+  "notes": [
+    [
+      "Tiers.",
+      "1 is essential, 2 is strongly recommended, 3 is genuinely optional. The minimum viable path is Tier 1 alone — 159 issues, starting at Simonson and ending with Aaron."
+    ],
+    [
+      "This is publication order, not a curated order.",
+      "Every row sits where it was published, which is the only order in which the numbers on the covers make sense. The curation is the tier: Tier 1 begins at Thor #337 and skips the 1970s and the 1990s entirely. If you want the short answer to “where do I start”, it is #337, or Thor: God of Thunder #1 if you would rather start in 2013."
+    ],
+    [
+      "The mantle, not the man.",
+      "Thor is an identity here and it changes hands more than once — most consequentially at Thor #432 and again at Thor #1 in 2014. The rows follow the book, because the book keeps its title and its numbering through both."
+    ],
+    [
+      "Why the numbering keeps jumping.",
+      "Marvel renumbered this title six times. Journey into Mystery becomes Thor at #126, Thor becomes The Mighty Thor at #407 and back at #491, the 1998 relaunch restarts at #1, the 2007 relaunch restarts again and then jumps to #600, and the legacy count returns at #700. The section headers give the numbers on the covers."
+    ],
+    [
+      "Journey into Mystery #503–521 is not here.",
+      "The title reverted during Heroes Reborn and Thor is not in it — Wikipedia files those nineteen issues as a secondary series that “does not feature Thor”. Annuals, one-shots and the miniseries are out for the same reason: no source orders them against the monthly."
+    ],
+    "Issue enumerations and cover dates are read from Marvel Fandom's per-volume categories; the series spine, the legacy numbering and the writer boundaries come from Wikipedia's “List of Thor titles” and “Thor (comic book)”. The two are cross-checked against each other and the generator stops if they disagree."
+  ],
+  "sections": [
+    {
+      "id": "jim",
+      "title": "Journey into Mystery #83–125",
+      "sub": "1962–1966 · before it was his book",
+      "tier": 2,
+      "intro": "Thor starts as a thirteen-page feature in a monster anthology, sharing the issue with whatever else fit. Lee and Kirby find the book somewhere around #101 and it stops being a superhero strip and starts being Asgard.\n\nYou do not need any of this to read Simonson. It is here because it is the foundation and because the Kirby stretch is one of the great runs in the medium — but it is Tier 2, not Tier 1, and the difference is honest.",
+      "items": [
+        {
+          "id": "thor-jim-83",
+          "t": "Journey into Mystery",
+          "n": "#83",
+          "note": "Thor's first appearance — Stan Lee, Larry Lieber, Jack Kirby",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-84",
+          "t": "Journey into Mystery",
+          "n": "#84",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-85",
+          "t": "Journey into Mystery",
+          "n": "#85",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-86",
+          "t": "Journey into Mystery",
+          "n": "#86",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-87",
+          "t": "Journey into Mystery",
+          "n": "#87",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-88",
+          "t": "Journey into Mystery",
+          "n": "#88",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-89",
+          "t": "Journey into Mystery",
+          "n": "#89",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-90",
+          "t": "Journey into Mystery",
+          "n": "#90",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-91",
+          "t": "Journey into Mystery",
+          "n": "#91",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-92",
+          "t": "Journey into Mystery",
+          "n": "#92",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-93",
+          "t": "Journey into Mystery",
+          "n": "#93",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-94",
+          "t": "Journey into Mystery",
+          "n": "#94",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-95",
+          "t": "Journey into Mystery",
+          "n": "#95",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-96",
+          "t": "Journey into Mystery",
+          "n": "#96",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-97",
+          "t": "Journey into Mystery",
+          "n": "#97",
+          "note": "the “Tales of Asgard” back-up starts here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-98",
+          "t": "Journey into Mystery",
+          "n": "#98",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-99",
+          "t": "Journey into Mystery",
+          "n": "#99",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-100",
+          "t": "Journey into Mystery",
+          "n": "#100",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-101",
+          "t": "Journey into Mystery",
+          "n": "#101",
+          "note": "Kirby becomes the regular artist — this is where the run people mean begins",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-102",
+          "t": "Journey into Mystery",
+          "n": "#102",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-103",
+          "t": "Journey into Mystery",
+          "n": "#103",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-104",
+          "t": "Journey into Mystery",
+          "n": "#104",
+          "note": "“The Mighty Thor” takes over the cover logo",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-105",
+          "t": "Journey into Mystery",
+          "n": "#105",
+          "note": "the feature grows to 18 pages and the anthology stories go",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-106",
+          "t": "Journey into Mystery",
+          "n": "#106",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-107",
+          "t": "Journey into Mystery",
+          "n": "#107",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-108",
+          "t": "Journey into Mystery",
+          "n": "#108",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-109",
+          "t": "Journey into Mystery",
+          "n": "#109",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-110",
+          "t": "Journey into Mystery",
+          "n": "#110",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-111",
+          "t": "Journey into Mystery",
+          "n": "#111",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-112",
+          "t": "Journey into Mystery",
+          "n": "#112",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-113",
+          "t": "Journey into Mystery",
+          "n": "#113",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-114",
+          "t": "Journey into Mystery",
+          "n": "#114",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-115",
+          "t": "Journey into Mystery",
+          "n": "#115",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-116",
+          "t": "Journey into Mystery",
+          "n": "#116",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-117",
+          "t": "Journey into Mystery",
+          "n": "#117",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-118",
+          "t": "Journey into Mystery",
+          "n": "#118",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-119",
+          "t": "Journey into Mystery",
+          "n": "#119",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-120",
+          "t": "Journey into Mystery",
+          "n": "#120",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-121",
+          "t": "Journey into Mystery",
+          "n": "#121",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-122",
+          "t": "Journey into Mystery",
+          "n": "#122",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-123",
+          "t": "Journey into Mystery",
+          "n": "#123",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-124",
+          "t": "Journey into Mystery",
+          "n": "#124",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim-125",
+          "t": "Journey into Mystery",
+          "n": "#125",
+          "note": "the last issue under this title",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Journey into Mystery",
+          "url": "https://www.marvel.com/comics/series/2032/journey_into_mystery_1952_1966"
+        }
+      ]
+    },
+    {
+      "id": "leekirby",
+      "title": "Thor #126–179",
+      "sub": "1966–1970 · Lee and Kirby",
+      "tier": 2,
+      "items": [
+        {
+          "id": "thor-v1-126",
+          "t": "Thor",
+          "n": "#126",
+          "note": "same book, new name, and the numbering carries straight on",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-127",
+          "t": "Thor",
+          "n": "#127",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-128",
+          "t": "Thor",
+          "n": "#128",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-129",
+          "t": "Thor",
+          "n": "#129",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-130",
+          "t": "Thor",
+          "n": "#130",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-131",
+          "t": "Thor",
+          "n": "#131",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-132",
+          "t": "Thor",
+          "n": "#132",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-133",
+          "t": "Thor",
+          "n": "#133",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-134",
+          "t": "Thor",
+          "n": "#134",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-135",
+          "t": "Thor",
+          "n": "#135",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-136",
+          "t": "Thor",
+          "n": "#136",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-137",
+          "t": "Thor",
+          "n": "#137",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-138",
+          "t": "Thor",
+          "n": "#138",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-139",
+          "t": "Thor",
+          "n": "#139",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-140",
+          "t": "Thor",
+          "n": "#140",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-141",
+          "t": "Thor",
+          "n": "#141",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-142",
+          "t": "Thor",
+          "n": "#142",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-143",
+          "t": "Thor",
+          "n": "#143",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-144",
+          "t": "Thor",
+          "n": "#144",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-145",
+          "t": "Thor",
+          "n": "#145",
+          "note": "the last “Tales of Asgard” back-up",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-146",
+          "t": "Thor",
+          "n": "#146",
+          "note": "an Inhumans back-up runs from here to #152",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-147",
+          "t": "Thor",
+          "n": "#147",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-148",
+          "t": "Thor",
+          "n": "#148",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-149",
+          "t": "Thor",
+          "n": "#149",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-150",
+          "t": "Thor",
+          "n": "#150",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-151",
+          "t": "Thor",
+          "n": "#151",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-152",
+          "t": "Thor",
+          "n": "#152",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-153",
+          "t": "Thor",
+          "n": "#153",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-154",
+          "t": "Thor",
+          "n": "#154",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-155",
+          "t": "Thor",
+          "n": "#155",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-156",
+          "t": "Thor",
+          "n": "#156",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-157",
+          "t": "Thor",
+          "n": "#157",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-158",
+          "t": "Thor",
+          "n": "#158",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-159",
+          "t": "Thor",
+          "n": "#159",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-160",
+          "t": "Thor",
+          "n": "#160",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-161",
+          "t": "Thor",
+          "n": "#161",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-162",
+          "t": "Thor",
+          "n": "#162",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-163",
+          "t": "Thor",
+          "n": "#163",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-164",
+          "t": "Thor",
+          "n": "#164",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-165",
+          "t": "Thor",
+          "n": "#165",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-166",
+          "t": "Thor",
+          "n": "#166",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-167",
+          "t": "Thor",
+          "n": "#167",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-168",
+          "t": "Thor",
+          "n": "#168",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-169",
+          "t": "Thor",
+          "n": "#169",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-170",
+          "t": "Thor",
+          "n": "#170",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-171",
+          "t": "Thor",
+          "n": "#171",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-172",
+          "t": "Thor",
+          "n": "#172",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-173",
+          "t": "Thor",
+          "n": "#173",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-174",
+          "t": "Thor",
+          "n": "#174",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-175",
+          "t": "Thor",
+          "n": "#175",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-176",
+          "t": "Thor",
+          "n": "#176",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-177",
+          "t": "Thor",
+          "n": "#177",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-178",
+          "t": "Thor",
+          "n": "#178",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-179",
+          "t": "Thor",
+          "n": "#179",
+          "note": "Kirby's last issue",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        }
+      ]
+    },
+    {
+      "id": "afterkirby",
+      "title": "Thor #180–238",
+      "sub": "1970–1975 · after Kirby",
+      "tier": 3,
+      "intro": "Adams for two issues, then John Buscema for most of a decade, with the writing passing from Lee to Gerry Conway. It is competent monthly comics and almost nobody reads it straight through.",
+      "items": [
+        {
+          "id": "thor-v1-180",
+          "t": "Thor",
+          "n": "#180",
+          "note": "Neal Adams pencils this one and the next",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-181",
+          "t": "Thor",
+          "n": "#181",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-182",
+          "t": "Thor",
+          "n": "#182",
+          "note": "John Buscema becomes the regular artist",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-183",
+          "t": "Thor",
+          "n": "#183",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-184",
+          "t": "Thor",
+          "n": "#184",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-185",
+          "t": "Thor",
+          "n": "#185",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-186",
+          "t": "Thor",
+          "n": "#186",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-187",
+          "t": "Thor",
+          "n": "#187",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-188",
+          "t": "Thor",
+          "n": "#188",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-189",
+          "t": "Thor",
+          "n": "#189",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-190",
+          "t": "Thor",
+          "n": "#190",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-191",
+          "t": "Thor",
+          "n": "#191",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-192",
+          "t": "Thor",
+          "n": "#192",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-193",
+          "t": "Thor",
+          "n": "#193",
+          "note": "Gerry Conway takes over the writing",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-194",
+          "t": "Thor",
+          "n": "#194",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-195",
+          "t": "Thor",
+          "n": "#195",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-196",
+          "t": "Thor",
+          "n": "#196",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-197",
+          "t": "Thor",
+          "n": "#197",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-198",
+          "t": "Thor",
+          "n": "#198",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-199",
+          "t": "Thor",
+          "n": "#199",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-200",
+          "t": "Thor",
+          "n": "#200",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-201",
+          "t": "Thor",
+          "n": "#201",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-202",
+          "t": "Thor",
+          "n": "#202",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-203",
+          "t": "Thor",
+          "n": "#203",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-204",
+          "t": "Thor",
+          "n": "#204",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-205",
+          "t": "Thor",
+          "n": "#205",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-206",
+          "t": "Thor",
+          "n": "#206",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-207",
+          "t": "Thor",
+          "n": "#207",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-208",
+          "t": "Thor",
+          "n": "#208",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-209",
+          "t": "Thor",
+          "n": "#209",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-210",
+          "t": "Thor",
+          "n": "#210",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-211",
+          "t": "Thor",
+          "n": "#211",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-212",
+          "t": "Thor",
+          "n": "#212",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-213",
+          "t": "Thor",
+          "n": "#213",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-214",
+          "t": "Thor",
+          "n": "#214",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-215",
+          "t": "Thor",
+          "n": "#215",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-216",
+          "t": "Thor",
+          "n": "#216",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-217",
+          "t": "Thor",
+          "n": "#217",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-218",
+          "t": "Thor",
+          "n": "#218",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-219",
+          "t": "Thor",
+          "n": "#219",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-220",
+          "t": "Thor",
+          "n": "#220",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-221",
+          "t": "Thor",
+          "n": "#221",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-222",
+          "t": "Thor",
+          "n": "#222",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-223",
+          "t": "Thor",
+          "n": "#223",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-224",
+          "t": "Thor",
+          "n": "#224",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-225",
+          "t": "Thor",
+          "n": "#225",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-226",
+          "t": "Thor",
+          "n": "#226",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-227",
+          "t": "Thor",
+          "n": "#227",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-228",
+          "t": "Thor",
+          "n": "#228",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-229",
+          "t": "Thor",
+          "n": "#229",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-230",
+          "t": "Thor",
+          "n": "#230",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-231",
+          "t": "Thor",
+          "n": "#231",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-232",
+          "t": "Thor",
+          "n": "#232",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-233",
+          "t": "Thor",
+          "n": "#233",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-234",
+          "t": "Thor",
+          "n": "#234",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-235",
+          "t": "Thor",
+          "n": "#235",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-236",
+          "t": "Thor",
+          "n": "#236",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-237",
+          "t": "Thor",
+          "n": "#237",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-238",
+          "t": "Thor",
+          "n": "#238",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        }
+      ]
+    },
+    {
+      "id": "seventies",
+      "title": "Thor #239–299",
+      "sub": "1975–1980 · Wein, then Thomas",
+      "tier": 3,
+      "items": [
+        {
+          "id": "thor-v1-239",
+          "t": "Thor",
+          "n": "#239",
+          "note": "Roy Thomas takes over",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-240",
+          "t": "Thor",
+          "n": "#240",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-241",
+          "t": "Thor",
+          "n": "#241",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-242",
+          "t": "Thor",
+          "n": "#242",
+          "note": "Len Wein writes from here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-243",
+          "t": "Thor",
+          "n": "#243",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-244",
+          "t": "Thor",
+          "n": "#244",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-245",
+          "t": "Thor",
+          "n": "#245",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-246",
+          "t": "Thor",
+          "n": "#246",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-247",
+          "t": "Thor",
+          "n": "#247",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-248",
+          "t": "Thor",
+          "n": "#248",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-249",
+          "t": "Thor",
+          "n": "#249",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-250",
+          "t": "Thor",
+          "n": "#250",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-251",
+          "t": "Thor",
+          "n": "#251",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-252",
+          "t": "Thor",
+          "n": "#252",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-253",
+          "t": "Thor",
+          "n": "#253",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-254",
+          "t": "Thor",
+          "n": "#254",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-255",
+          "t": "Thor",
+          "n": "#255",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-256",
+          "t": "Thor",
+          "n": "#256",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-257",
+          "t": "Thor",
+          "n": "#257",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-258",
+          "t": "Thor",
+          "n": "#258",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-259",
+          "t": "Thor",
+          "n": "#259",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-260",
+          "t": "Thor",
+          "n": "#260",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-261",
+          "t": "Thor",
+          "n": "#261",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-262",
+          "t": "Thor",
+          "n": "#262",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-263",
+          "t": "Thor",
+          "n": "#263",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-264",
+          "t": "Thor",
+          "n": "#264",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-265",
+          "t": "Thor",
+          "n": "#265",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-266",
+          "t": "Thor",
+          "n": "#266",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-267",
+          "t": "Thor",
+          "n": "#267",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-268",
+          "t": "Thor",
+          "n": "#268",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-269",
+          "t": "Thor",
+          "n": "#269",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-270",
+          "t": "Thor",
+          "n": "#270",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-271",
+          "t": "Thor",
+          "n": "#271",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-272",
+          "t": "Thor",
+          "n": "#272",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-273",
+          "t": "Thor",
+          "n": "#273",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-274",
+          "t": "Thor",
+          "n": "#274",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-275",
+          "t": "Thor",
+          "n": "#275",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-276",
+          "t": "Thor",
+          "n": "#276",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-277",
+          "t": "Thor",
+          "n": "#277",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-278",
+          "t": "Thor",
+          "n": "#278",
+          "note": "Buscema's last as regular artist",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-279",
+          "t": "Thor",
+          "n": "#279",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-280",
+          "t": "Thor",
+          "n": "#280",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-281",
+          "t": "Thor",
+          "n": "#281",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-282",
+          "t": "Thor",
+          "n": "#282",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-283",
+          "t": "Thor",
+          "n": "#283",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-284",
+          "t": "Thor",
+          "n": "#284",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-285",
+          "t": "Thor",
+          "n": "#285",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-286",
+          "t": "Thor",
+          "n": "#286",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-287",
+          "t": "Thor",
+          "n": "#287",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-288",
+          "t": "Thor",
+          "n": "#288",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-289",
+          "t": "Thor",
+          "n": "#289",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-290",
+          "t": "Thor",
+          "n": "#290",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-291",
+          "t": "Thor",
+          "n": "#291",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-292",
+          "t": "Thor",
+          "n": "#292",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-293",
+          "t": "Thor",
+          "n": "#293",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-294",
+          "t": "Thor",
+          "n": "#294",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-295",
+          "t": "Thor",
+          "n": "#295",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-296",
+          "t": "Thor",
+          "n": "#296",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-297",
+          "t": "Thor",
+          "n": "#297",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-298",
+          "t": "Thor",
+          "n": "#298",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-299",
+          "t": "Thor",
+          "n": "#299",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        }
+      ]
+    },
+    {
+      "id": "drift",
+      "title": "Thor #300–336",
+      "sub": "1980–1983 · the stretch before the good part",
+      "tier": 3,
+      "items": [
+        {
+          "id": "thor-v1-300",
+          "t": "Thor",
+          "n": "#300",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-301",
+          "t": "Thor",
+          "n": "#301",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-302",
+          "t": "Thor",
+          "n": "#302",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-303",
+          "t": "Thor",
+          "n": "#303",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-304",
+          "t": "Thor",
+          "n": "#304",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-305",
+          "t": "Thor",
+          "n": "#305",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-306",
+          "t": "Thor",
+          "n": "#306",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-307",
+          "t": "Thor",
+          "n": "#307",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-308",
+          "t": "Thor",
+          "n": "#308",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-309",
+          "t": "Thor",
+          "n": "#309",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-310",
+          "t": "Thor",
+          "n": "#310",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-311",
+          "t": "Thor",
+          "n": "#311",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-312",
+          "t": "Thor",
+          "n": "#312",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-313",
+          "t": "Thor",
+          "n": "#313",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-314",
+          "t": "Thor",
+          "n": "#314",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-315",
+          "t": "Thor",
+          "n": "#315",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-316",
+          "t": "Thor",
+          "n": "#316",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-317",
+          "t": "Thor",
+          "n": "#317",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-318",
+          "t": "Thor",
+          "n": "#318",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-319",
+          "t": "Thor",
+          "n": "#319",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-320",
+          "t": "Thor",
+          "n": "#320",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-321",
+          "t": "Thor",
+          "n": "#321",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-322",
+          "t": "Thor",
+          "n": "#322",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-323",
+          "t": "Thor",
+          "n": "#323",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-324",
+          "t": "Thor",
+          "n": "#324",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-325",
+          "t": "Thor",
+          "n": "#325",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-326",
+          "t": "Thor",
+          "n": "#326",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-327",
+          "t": "Thor",
+          "n": "#327",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-328",
+          "t": "Thor",
+          "n": "#328",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-329",
+          "t": "Thor",
+          "n": "#329",
+          "note": "Alan Zelenetz writes the stretch into Simonson",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-330",
+          "t": "Thor",
+          "n": "#330",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-331",
+          "t": "Thor",
+          "n": "#331",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-332",
+          "t": "Thor",
+          "n": "#332",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-333",
+          "t": "Thor",
+          "n": "#333",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-334",
+          "t": "Thor",
+          "n": "#334",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-335",
+          "t": "Thor",
+          "n": "#335",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-336",
+          "t": "Thor",
+          "n": "#336",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        }
+      ]
+    },
+    {
+      "id": "simonson",
+      "title": "Thor #337–382",
+      "sub": "1983–1987 · start here",
+      "tier": 1,
+      "intro": "This is the run. Simonson writes and draws from #337, hands the pencils to Sal Buscema at #367 and keeps writing to #382, and in between he rebuilds the book out of the mythology rather than out of the superhero line around it.\n\nIt needs nothing before it. Everything above this section is Tier 2 or Tier 3 for exactly that reason — if you are starting Thor today you start on this row, and you can go back for Kirby afterwards.\n\nThe four Balder the Brave issues are woven in at the month they shipped rather than hung off the end, because that is where they are read.",
+      "items": [
+        {
+          "id": "thor-v1-337",
+          "t": "Thor",
+          "n": "#337",
+          "note": "Walt Simonson takes over as writer and artist, and Beta Ray Bill debuts",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-338",
+          "t": "Thor",
+          "n": "#338",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-339",
+          "t": "Thor",
+          "n": "#339",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-340",
+          "t": "Thor",
+          "n": "#340",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-341",
+          "t": "Thor",
+          "n": "#341",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-342",
+          "t": "Thor",
+          "n": "#342",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-343",
+          "t": "Thor",
+          "n": "#343",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-344",
+          "t": "Thor",
+          "n": "#344",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-345",
+          "t": "Thor",
+          "n": "#345",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-346",
+          "t": "Thor",
+          "n": "#346",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-347",
+          "t": "Thor",
+          "n": "#347",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-348",
+          "t": "Thor",
+          "n": "#348",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-349",
+          "t": "Thor",
+          "n": "#349",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-350",
+          "t": "Thor",
+          "n": "#350",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-351",
+          "t": "Thor",
+          "n": "#351",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-352",
+          "t": "Thor",
+          "n": "#352",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-353",
+          "t": "Thor",
+          "n": "#353",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-354",
+          "t": "Thor",
+          "n": "#354",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-355",
+          "t": "Thor",
+          "n": "#355",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-356",
+          "t": "Thor",
+          "n": "#356",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-357",
+          "t": "Thor",
+          "n": "#357",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-358",
+          "t": "Thor",
+          "n": "#358",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-359",
+          "t": "Thor",
+          "n": "#359",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-360",
+          "t": "Thor",
+          "n": "#360",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-balder-1",
+          "t": "Balder the Brave",
+          "n": "#1",
+          "note": "a Simonson-written miniseries running alongside the main book — placed here by its cover date",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-361",
+          "t": "Thor",
+          "n": "#361",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-362",
+          "t": "Thor",
+          "n": "#362",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-balder-2",
+          "t": "Balder the Brave",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-363",
+          "t": "Thor",
+          "n": "#363",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-364",
+          "t": "Thor",
+          "n": "#364",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-balder-3",
+          "t": "Balder the Brave",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-365",
+          "t": "Thor",
+          "n": "#365",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-366",
+          "t": "Thor",
+          "n": "#366",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-balder-4",
+          "t": "Balder the Brave",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-367",
+          "t": "Thor",
+          "n": "#367",
+          "note": "Simonson's last as artist — he keeps writing",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-368",
+          "t": "Thor",
+          "n": "#368",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-369",
+          "t": "Thor",
+          "n": "#369",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-370",
+          "t": "Thor",
+          "n": "#370",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-371",
+          "t": "Thor",
+          "n": "#371",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-372",
+          "t": "Thor",
+          "n": "#372",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-373",
+          "t": "Thor",
+          "n": "#373",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-374",
+          "t": "Thor",
+          "n": "#374",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-375",
+          "t": "Thor",
+          "n": "#375",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-376",
+          "t": "Thor",
+          "n": "#376",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-377",
+          "t": "Thor",
+          "n": "#377",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-378",
+          "t": "Thor",
+          "n": "#378",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-379",
+          "t": "Thor",
+          "n": "#379",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-380",
+          "t": "Thor",
+          "n": "#380",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-381",
+          "t": "Thor",
+          "n": "#381",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-382",
+          "t": "Thor",
+          "n": "#382",
+          "note": "Simonson's last issue",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        },
+        {
+          "label": "Balder",
+          "url": "https://www.marvel.com/comics/series/3625/balder_the_brave_1985_1986"
+        }
+      ]
+    },
+    {
+      "id": "defalco",
+      "title": "Thor #383–459",
+      "sub": "1987–1993 · DeFalco and Frenz",
+      "tier": 3,
+      "intro": "Tom DeFalco follows Simonson, which is the hardest job on the board, and the run is longer than Simonson's. The title changes to The Mighty Thor at #407 and the mantle changes hands at #432 — both are noted on the rows, because otherwise the covers stop matching the list.",
+      "items": [
+        {
+          "id": "thor-v1-383",
+          "t": "Thor",
+          "n": "#383",
+          "note": "Tom DeFalco takes over, mostly with Ron Frenz",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-384",
+          "t": "Thor",
+          "n": "#384",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-385",
+          "t": "Thor",
+          "n": "#385",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-386",
+          "t": "Thor",
+          "n": "#386",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-387",
+          "t": "Thor",
+          "n": "#387",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-388",
+          "t": "Thor",
+          "n": "#388",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-389",
+          "t": "Thor",
+          "n": "#389",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-390",
+          "t": "Thor",
+          "n": "#390",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-391",
+          "t": "Thor",
+          "n": "#391",
+          "note": "Eric Masterson's first appearance",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-392",
+          "t": "Thor",
+          "n": "#392",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-393",
+          "t": "Thor",
+          "n": "#393",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-394",
+          "t": "Thor",
+          "n": "#394",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-395",
+          "t": "Thor",
+          "n": "#395",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-396",
+          "t": "Thor",
+          "n": "#396",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-397",
+          "t": "Thor",
+          "n": "#397",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-398",
+          "t": "Thor",
+          "n": "#398",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-399",
+          "t": "Thor",
+          "n": "#399",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-400",
+          "t": "Thor",
+          "n": "#400",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-401",
+          "t": "Thor",
+          "n": "#401",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-402",
+          "t": "Thor",
+          "n": "#402",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-403",
+          "t": "Thor",
+          "n": "#403",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-404",
+          "t": "Thor",
+          "n": "#404",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-405",
+          "t": "Thor",
+          "n": "#405",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-406",
+          "t": "Thor",
+          "n": "#406",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-407",
+          "t": "The Mighty Thor",
+          "n": "#407",
+          "note": "the indicia says The Mighty Thor from here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-408",
+          "t": "The Mighty Thor",
+          "n": "#408",
+          "note": "Masterson is merged with Thor and is the alter ego to #432",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-409",
+          "t": "The Mighty Thor",
+          "n": "#409",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-410",
+          "t": "The Mighty Thor",
+          "n": "#410",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-411",
+          "t": "The Mighty Thor",
+          "n": "#411",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-412",
+          "t": "The Mighty Thor",
+          "n": "#412",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-413",
+          "t": "The Mighty Thor",
+          "n": "#413",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-414",
+          "t": "The Mighty Thor",
+          "n": "#414",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-415",
+          "t": "The Mighty Thor",
+          "n": "#415",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-416",
+          "t": "The Mighty Thor",
+          "n": "#416",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-417",
+          "t": "The Mighty Thor",
+          "n": "#417",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-418",
+          "t": "The Mighty Thor",
+          "n": "#418",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-419",
+          "t": "The Mighty Thor",
+          "n": "#419",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-420",
+          "t": "The Mighty Thor",
+          "n": "#420",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-421",
+          "t": "The Mighty Thor",
+          "n": "#421",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-422",
+          "t": "The Mighty Thor",
+          "n": "#422",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-423",
+          "t": "The Mighty Thor",
+          "n": "#423",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-424",
+          "t": "The Mighty Thor",
+          "n": "#424",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-425",
+          "t": "The Mighty Thor",
+          "n": "#425",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-426",
+          "t": "The Mighty Thor",
+          "n": "#426",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-427",
+          "t": "The Mighty Thor",
+          "n": "#427",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-428",
+          "t": "The Mighty Thor",
+          "n": "#428",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-429",
+          "t": "The Mighty Thor",
+          "n": "#429",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-430",
+          "t": "The Mighty Thor",
+          "n": "#430",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-431",
+          "t": "The Mighty Thor",
+          "n": "#431",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-432",
+          "t": "The Mighty Thor",
+          "n": "#432",
+          "note": "the mantle changes hands — Masterson carries it to #459",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-433",
+          "t": "The Mighty Thor",
+          "n": "#433",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-434",
+          "t": "The Mighty Thor",
+          "n": "#434",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-435",
+          "t": "The Mighty Thor",
+          "n": "#435",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-436",
+          "t": "The Mighty Thor",
+          "n": "#436",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-437",
+          "t": "The Mighty Thor",
+          "n": "#437",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-438",
+          "t": "The Mighty Thor",
+          "n": "#438",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-439",
+          "t": "The Mighty Thor",
+          "n": "#439",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-440",
+          "t": "The Mighty Thor",
+          "n": "#440",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-441",
+          "t": "The Mighty Thor",
+          "n": "#441",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-442",
+          "t": "The Mighty Thor",
+          "n": "#442",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-443",
+          "t": "The Mighty Thor",
+          "n": "#443",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-444",
+          "t": "The Mighty Thor",
+          "n": "#444",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-445",
+          "t": "The Mighty Thor",
+          "n": "#445",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-446",
+          "t": "The Mighty Thor",
+          "n": "#446",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-447",
+          "t": "The Mighty Thor",
+          "n": "#447",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-448",
+          "t": "The Mighty Thor",
+          "n": "#448",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-449",
+          "t": "The Mighty Thor",
+          "n": "#449",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-450",
+          "t": "The Mighty Thor",
+          "n": "#450",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-451",
+          "t": "The Mighty Thor",
+          "n": "#451",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-452",
+          "t": "The Mighty Thor",
+          "n": "#452",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-453",
+          "t": "The Mighty Thor",
+          "n": "#453",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-454",
+          "t": "The Mighty Thor",
+          "n": "#454",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-455",
+          "t": "The Mighty Thor",
+          "n": "#455",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-456",
+          "t": "The Mighty Thor",
+          "n": "#456",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-457",
+          "t": "The Mighty Thor",
+          "n": "#457",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-458",
+          "t": "The Mighty Thor",
+          "n": "#458",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-459",
+          "t": "The Mighty Thor",
+          "n": "#459",
+          "note": "DeFalco's last; Masterson leaves for his own book",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        }
+      ]
+    },
+    {
+      "id": "endof66",
+      "title": "Thor #460–502",
+      "sub": "1993–1996 · to the end of the 1966 series",
+      "tier": 3,
+      "items": [
+        {
+          "id": "thor-v1-460",
+          "t": "The Mighty Thor",
+          "n": "#460",
+          "note": "Ron Marz writes from here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-461",
+          "t": "The Mighty Thor",
+          "n": "#461",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-462",
+          "t": "The Mighty Thor",
+          "n": "#462",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-463",
+          "t": "The Mighty Thor",
+          "n": "#463",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-464",
+          "t": "The Mighty Thor",
+          "n": "#464",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-465",
+          "t": "The Mighty Thor",
+          "n": "#465",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-466",
+          "t": "The Mighty Thor",
+          "n": "#466",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-467",
+          "t": "The Mighty Thor",
+          "n": "#467",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-468",
+          "t": "The Mighty Thor",
+          "n": "#468",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-469",
+          "t": "The Mighty Thor",
+          "n": "#469",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-470",
+          "t": "The Mighty Thor",
+          "n": "#470",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-471",
+          "t": "The Mighty Thor",
+          "n": "#471",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-472",
+          "t": "The Mighty Thor",
+          "n": "#472",
+          "note": "Roy Thomas returns",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-473",
+          "t": "The Mighty Thor",
+          "n": "#473",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-474",
+          "t": "The Mighty Thor",
+          "n": "#474",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-475",
+          "t": "The Mighty Thor",
+          "n": "#475",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-476",
+          "t": "The Mighty Thor",
+          "n": "#476",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-477",
+          "t": "The Mighty Thor",
+          "n": "#477",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-478",
+          "t": "The Mighty Thor",
+          "n": "#478",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-479",
+          "t": "The Mighty Thor",
+          "n": "#479",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-480",
+          "t": "The Mighty Thor",
+          "n": "#480",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-481",
+          "t": "The Mighty Thor",
+          "n": "#481",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-482",
+          "t": "The Mighty Thor",
+          "n": "#482",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-483",
+          "t": "The Mighty Thor",
+          "n": "#483",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-484",
+          "t": "The Mighty Thor",
+          "n": "#484",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-485",
+          "t": "The Mighty Thor",
+          "n": "#485",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-486",
+          "t": "The Mighty Thor",
+          "n": "#486",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-487",
+          "t": "The Mighty Thor",
+          "n": "#487",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-488",
+          "t": "The Mighty Thor",
+          "n": "#488",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-489",
+          "t": "The Mighty Thor",
+          "n": "#489",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-490",
+          "t": "The Mighty Thor",
+          "n": "#490",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-491",
+          "t": "Thor",
+          "n": "#491",
+          "note": "plain Thor on the indicia again; Warren Ellis writes four",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-492",
+          "t": "Thor",
+          "n": "#492",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-493",
+          "t": "Thor",
+          "n": "#493",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-494",
+          "t": "Thor",
+          "n": "#494",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-495",
+          "t": "Thor",
+          "n": "#495",
+          "note": "William Messner-Loebs to the end",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-496",
+          "t": "Thor",
+          "n": "#496",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-497",
+          "t": "Thor",
+          "n": "#497",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-498",
+          "t": "Thor",
+          "n": "#498",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-499",
+          "t": "Thor",
+          "n": "#499",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-500",
+          "t": "Thor",
+          "n": "#500",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-501",
+          "t": "Thor",
+          "n": "#501",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v1-502",
+          "t": "Thor",
+          "n": "#502",
+          "note": "the last issue of the 1966 series",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/2083/thor_1966_1996"
+        }
+      ]
+    },
+    {
+      "id": "jurgens",
+      "title": "Thor vol. 2 #1–85",
+      "sub": "1998–2004 · Jurgens and Romita Jr.",
+      "tier": 3,
+      "intro": "Six years and 85 issues, well liked at the time and not what anyone hands you first. Skipping it costs you nothing that the next section does not restate.",
+      "items": [
+        {
+          "id": "thor-v2-1",
+          "t": "Thor (1998)",
+          "n": "#1",
+          "note": "Dan Jurgens and John Romita Jr. relaunch it",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-2",
+          "t": "Thor (1998)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-3",
+          "t": "Thor (1998)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-4",
+          "t": "Thor (1998)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-5",
+          "t": "Thor (1998)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-6",
+          "t": "Thor (1998)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-7",
+          "t": "Thor (1998)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-8",
+          "t": "Thor (1998)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-9",
+          "t": "Thor (1998)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-10",
+          "t": "Thor (1998)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-11",
+          "t": "Thor (1998)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-12",
+          "t": "Thor (1998)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-13",
+          "t": "Thor (1998)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-14",
+          "t": "Thor (1998)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-15",
+          "t": "Thor (1998)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-16",
+          "t": "Thor (1998)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-17",
+          "t": "Thor (1998)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-18",
+          "t": "Thor (1998)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-19",
+          "t": "Thor (1998)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-20",
+          "t": "Thor (1998)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-21",
+          "t": "Thor (1998)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-22",
+          "t": "Thor (1998)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-23",
+          "t": "Thor (1998)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-24",
+          "t": "Thor (1998)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-25",
+          "t": "Thor (1998)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-26",
+          "t": "Thor (1998)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-27",
+          "t": "Thor (1998)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-28",
+          "t": "Thor (1998)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-29",
+          "t": "Thor (1998)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-30",
+          "t": "Thor (1998)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-31",
+          "t": "Thor (1998)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-32",
+          "t": "Thor (1998)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-33",
+          "t": "Thor (1998)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-34",
+          "t": "Thor (1998)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-35",
+          "t": "Thor (1998)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-36",
+          "t": "Thor (1998)",
+          "n": "#36",
+          "note": "dual numbering starts — this one is also #538",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-37",
+          "t": "Thor (1998)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-38",
+          "t": "Thor (1998)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-39",
+          "t": "Thor (1998)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-40",
+          "t": "Thor (1998)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-41",
+          "t": "Thor (1998)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-42",
+          "t": "Thor (1998)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-43",
+          "t": "Thor (1998)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-44",
+          "t": "Thor (1998)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-45",
+          "t": "Thor (1998)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-46",
+          "t": "Thor (1998)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-47",
+          "t": "Thor (1998)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-48",
+          "t": "Thor (1998)",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-49",
+          "t": "Thor (1998)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-50",
+          "t": "Thor (1998)",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-51",
+          "t": "Thor (1998)",
+          "n": "#51",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-52",
+          "t": "Thor (1998)",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-53",
+          "t": "Thor (1998)",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-54",
+          "t": "Thor (1998)",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-55",
+          "t": "Thor (1998)",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-56",
+          "t": "Thor (1998)",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-57",
+          "t": "Thor (1998)",
+          "n": "#57",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-58",
+          "t": "Thor (1998)",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-59",
+          "t": "Thor (1998)",
+          "n": "#59",
+          "note": "a single fill-in by Christopher Priest",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-60",
+          "t": "Thor (1998)",
+          "n": "#60",
+          "note": "Jurgens again",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-61",
+          "t": "Thor (1998)",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-62",
+          "t": "Thor (1998)",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-63",
+          "t": "Thor (1998)",
+          "n": "#63",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-64",
+          "t": "Thor (1998)",
+          "n": "#64",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-65",
+          "t": "Thor (1998)",
+          "n": "#65",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-66",
+          "t": "Thor (1998)",
+          "n": "#66",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-67",
+          "t": "Thor (1998)",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-68",
+          "t": "Thor (1998)",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-69",
+          "t": "Thor (1998)",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-70",
+          "t": "Thor (1998)",
+          "n": "#70",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-71",
+          "t": "Thor (1998)",
+          "n": "#71",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-72",
+          "t": "Thor (1998)",
+          "n": "#72",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-73",
+          "t": "Thor (1998)",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-74",
+          "t": "Thor (1998)",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-75",
+          "t": "Thor (1998)",
+          "n": "#75",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-76",
+          "t": "Thor (1998)",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-77",
+          "t": "Thor (1998)",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-78",
+          "t": "Thor (1998)",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-79",
+          "t": "Thor (1998)",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-80",
+          "t": "Thor (1998)",
+          "n": "#80",
+          "note": "Michael Avon Oeming and Daniel Berman write the last six",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-81",
+          "t": "Thor (1998)",
+          "n": "#81",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-82",
+          "t": "Thor (1998)",
+          "n": "#82",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-83",
+          "t": "Thor (1998)",
+          "n": "#83",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-84",
+          "t": "Thor (1998)",
+          "n": "#84",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v2-85",
+          "t": "Thor (1998)",
+          "n": "#85",
+          "note": "the last issue — #587 in the legacy count",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor vol. 2",
+          "url": "https://www.marvel.com/comics/series/581/thor_1998_2004"
+        }
+      ]
+    },
+    {
+      "id": "jms",
+      "title": "Thor vol. 3 #1–12 and #600–603",
+      "sub": "2007–2009 · Straczynski and Coipel",
+      "tier": 1,
+      "intro": "The second place you can start cold. Straczynski relaunches the book from nothing and Coipel draws it; at what would have been #13 the numbering jumps to #600 to match the original count, which is why this section has two ranges in it and only one story.",
+      "items": [
+        {
+          "id": "thor-v3-1",
+          "t": "Thor (2007)",
+          "n": "#1",
+          "note": "J. Michael Straczynski and Olivier Coipel — a clean place to start cold",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-2",
+          "t": "Thor (2007)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-3",
+          "t": "Thor (2007)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-4",
+          "t": "Thor (2007)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-5",
+          "t": "Thor (2007)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-6",
+          "t": "Thor (2007)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-7",
+          "t": "Thor (2007)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-8",
+          "t": "Thor (2007)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-9",
+          "t": "Thor (2007)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-10",
+          "t": "Thor (2007)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-11",
+          "t": "Thor (2007)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-12",
+          "t": "Thor (2007)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-600",
+          "t": "Thor",
+          "n": "#600",
+          "note": "the numbering goes back to the original count",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-601",
+          "t": "Thor",
+          "n": "#601",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-602",
+          "t": "Thor",
+          "n": "#602",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-603",
+          "t": "Thor",
+          "n": "#603",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor vol. 3",
+          "url": "https://www.marvel.com/comics/series/2473/thor_2007_2011"
+        }
+      ]
+    },
+    {
+      "id": "gillenfraction",
+      "title": "Thor #604–621",
+      "sub": "2010–2011 · Gillen, then Fraction",
+      "tier": 3,
+      "items": [
+        {
+          "id": "thor-v3-604",
+          "t": "Thor",
+          "n": "#604",
+          "note": "Kieron Gillen takes over",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-605",
+          "t": "Thor",
+          "n": "#605",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-606",
+          "t": "Thor",
+          "n": "#606",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-607",
+          "t": "Thor",
+          "n": "#607",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-608",
+          "t": "Thor",
+          "n": "#608",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-609",
+          "t": "Thor",
+          "n": "#609",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-610",
+          "t": "Thor",
+          "n": "#610",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-611",
+          "t": "Thor",
+          "n": "#611",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-612",
+          "t": "Thor",
+          "n": "#612",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-613",
+          "t": "Thor",
+          "n": "#613",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-614",
+          "t": "Thor",
+          "n": "#614",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-615",
+          "t": "Thor",
+          "n": "#615",
+          "note": "Matt Fraction takes over",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-616",
+          "t": "Thor",
+          "n": "#616",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-617",
+          "t": "Thor",
+          "n": "#617",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-618",
+          "t": "Thor",
+          "n": "#618",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-619",
+          "t": "Thor",
+          "n": "#619",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-620",
+          "t": "Thor",
+          "n": "#620",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-620-1",
+          "t": "Thor",
+          "n": "#620.1",
+          "note": "a point-one issue — a jumping-on point alongside #620",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v3-621",
+          "t": "Thor",
+          "n": "#621",
+          "note": "the last issue before the title changes again",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor vol. 3",
+          "url": "https://www.marvel.com/comics/series/2473/thor_2007_2011"
+        }
+      ]
+    },
+    {
+      "id": "fraction",
+      "title": "The Mighty Thor #1–22",
+      "sub": "2011–2012 · Fraction and Coipel",
+      "tier": 3,
+      "items": [
+        {
+          "id": "thor-mt1-1",
+          "t": "The Mighty Thor (2011)",
+          "n": "#1",
+          "note": "Fraction and Coipel, straight on from Thor #621",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-2",
+          "t": "The Mighty Thor (2011)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-3",
+          "t": "The Mighty Thor (2011)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-4",
+          "t": "The Mighty Thor (2011)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-5",
+          "t": "The Mighty Thor (2011)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-6",
+          "t": "The Mighty Thor (2011)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-7",
+          "t": "The Mighty Thor (2011)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-8",
+          "t": "The Mighty Thor (2011)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-9",
+          "t": "The Mighty Thor (2011)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-10",
+          "t": "The Mighty Thor (2011)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-11",
+          "t": "The Mighty Thor (2011)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-12",
+          "t": "The Mighty Thor (2011)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-12-1",
+          "t": "The Mighty Thor (2011)",
+          "n": "#12.1",
+          "note": "a jumping-on point, published between #12 and #13",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-13",
+          "t": "The Mighty Thor (2011)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-14",
+          "t": "The Mighty Thor (2011)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-15",
+          "t": "The Mighty Thor (2011)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-16",
+          "t": "The Mighty Thor (2011)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-17",
+          "t": "The Mighty Thor (2011)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-18",
+          "t": "The Mighty Thor (2011)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-19",
+          "t": "The Mighty Thor (2011)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-20",
+          "t": "The Mighty Thor (2011)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-21",
+          "t": "The Mighty Thor (2011)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt1-22",
+          "t": "The Mighty Thor (2011)",
+          "n": "#22",
+          "note": "the last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Mighty Thor",
+          "url": "https://www.marvel.com/comics/series/13757/the_mighty_thor_2011_2012"
+        }
+      ]
+    },
+    {
+      "id": "loki",
+      "title": "Journey into Mystery #622–655",
+      "sub": "2011–2013 · Loki's book",
+      "tier": 2,
+      "intro": "Gillen takes the old title back and gives it to Loki. It is not a Thor comic and it is the best-regarded thing on this list outside Simonson and Aaron, which is why it is Tier 2 in a section of the list that is otherwise Tier 3.",
+      "items": [
+        {
+          "id": "thor-jim4-622",
+          "t": "Journey into Mystery",
+          "n": "#622",
+          "note": "the title reverts a second time — Gillen and Doug Braithwaite, with Loki as the lead",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-623",
+          "t": "Journey into Mystery",
+          "n": "#623",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-624",
+          "t": "Journey into Mystery",
+          "n": "#624",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-625",
+          "t": "Journey into Mystery",
+          "n": "#625",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-626",
+          "t": "Journey into Mystery",
+          "n": "#626",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-626-1",
+          "t": "Journey into Mystery",
+          "n": "#626.1",
+          "note": "a point-one issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-627",
+          "t": "Journey into Mystery",
+          "n": "#627",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-628",
+          "t": "Journey into Mystery",
+          "n": "#628",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-629",
+          "t": "Journey into Mystery",
+          "n": "#629",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-630",
+          "t": "Journey into Mystery",
+          "n": "#630",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-631",
+          "t": "Journey into Mystery",
+          "n": "#631",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-632",
+          "t": "Journey into Mystery",
+          "n": "#632",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-633",
+          "t": "Journey into Mystery",
+          "n": "#633",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-634",
+          "t": "Journey into Mystery",
+          "n": "#634",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-635",
+          "t": "Journey into Mystery",
+          "n": "#635",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-636",
+          "t": "Journey into Mystery",
+          "n": "#636",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-637",
+          "t": "Journey into Mystery",
+          "n": "#637",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-638",
+          "t": "Journey into Mystery",
+          "n": "#638",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-639",
+          "t": "Journey into Mystery",
+          "n": "#639",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-640",
+          "t": "Journey into Mystery",
+          "n": "#640",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-641",
+          "t": "Journey into Mystery",
+          "n": "#641",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-642",
+          "t": "Journey into Mystery",
+          "n": "#642",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-643",
+          "t": "Journey into Mystery",
+          "n": "#643",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-644",
+          "t": "Journey into Mystery",
+          "n": "#644",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-645",
+          "t": "Journey into Mystery",
+          "n": "#645",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-646",
+          "t": "Journey into Mystery",
+          "n": "#646",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-647",
+          "t": "Journey into Mystery",
+          "n": "#647",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-648",
+          "t": "Journey into Mystery",
+          "n": "#648",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-649",
+          "t": "Journey into Mystery",
+          "n": "#649",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-650",
+          "t": "Journey into Mystery",
+          "n": "#650",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-651",
+          "t": "Journey into Mystery",
+          "n": "#651",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-652",
+          "t": "Journey into Mystery",
+          "n": "#652",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-653",
+          "t": "Journey into Mystery",
+          "n": "#653",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-654",
+          "t": "Journey into Mystery",
+          "n": "#654",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-jim4-655",
+          "t": "Journey into Mystery",
+          "n": "#655",
+          "note": "the last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Journey into Mystery",
+          "url": "https://www.marvel.com/comics/series/14764/journey_into_mystery_2011_2013"
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "title": "Thor: God of Thunder #1–25",
+      "sub": "2013–2014 · Aaron and Ribic",
+      "tier": 1,
+      "intro": "Jason Aaron's Thor starts here and runs, under five different titles, for the next seven years. Every section below this one is the same continuous story and they are Tier 1 together.\n\nLike Simonson, it starts cold on purpose. Nothing above this row is required.",
+      "items": [
+        {
+          "id": "thor-got-1",
+          "t": "Thor: God of Thunder",
+          "n": "#1",
+          "note": "Jason Aaron and Esad Ribic begin — the other clean place to start cold",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-2",
+          "t": "Thor: God of Thunder",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-3",
+          "t": "Thor: God of Thunder",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-4",
+          "t": "Thor: God of Thunder",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-5",
+          "t": "Thor: God of Thunder",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-6",
+          "t": "Thor: God of Thunder",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-7",
+          "t": "Thor: God of Thunder",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-8",
+          "t": "Thor: God of Thunder",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-9",
+          "t": "Thor: God of Thunder",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-10",
+          "t": "Thor: God of Thunder",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-11",
+          "t": "Thor: God of Thunder",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-12",
+          "t": "Thor: God of Thunder",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-13",
+          "t": "Thor: God of Thunder",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-14",
+          "t": "Thor: God of Thunder",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-15",
+          "t": "Thor: God of Thunder",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-16",
+          "t": "Thor: God of Thunder",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-17",
+          "t": "Thor: God of Thunder",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-18",
+          "t": "Thor: God of Thunder",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-19-NOW",
+          "t": "Thor: God of Thunder",
+          "n": "#19.NOW",
+          "note": "Marvel branded this one #19.NOW — it is issue 19",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-20",
+          "t": "Thor: God of Thunder",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-21",
+          "t": "Thor: God of Thunder",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-22",
+          "t": "Thor: God of Thunder",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-23",
+          "t": "Thor: God of Thunder",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-24",
+          "t": "Thor: God of Thunder",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-got-25",
+          "t": "Thor: God of Thunder",
+          "n": "#25",
+          "note": "the last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "God of Thunder",
+          "url": "https://www.marvel.com/comics/series/16729/thor_god_of_thunder_2012_2014"
+        }
+      ]
+    },
+    {
+      "id": "mantle",
+      "title": "Thor #1–8 and Thors #1–4",
+      "sub": "2014–2016 · the hammer changes hands",
+      "tier": 1,
+      "intro": "Thor is a mantle in this list, not a person, and from here it is carried by someone else — the book keeps the title, the numbering and the writer, so the rows keep going.\n\nThors is a four-issue Secret Wars tie-in Aaron wrote in the gap between the two volumes. It sits here because that is where its cover dates put it.",
+      "items": [
+        {
+          "id": "thor-v4-1",
+          "t": "Thor (2014)",
+          "n": "#1",
+          "note": "the hammer changes hands",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-2",
+          "t": "Thor (2014)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-3",
+          "t": "Thor (2014)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-4",
+          "t": "Thor (2014)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-5",
+          "t": "Thor (2014)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-6",
+          "t": "Thor (2014)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-7",
+          "t": "Thor (2014)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v4-8",
+          "t": "Thor (2014)",
+          "n": "#8",
+          "note": "the last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-thors-1",
+          "t": "Thors",
+          "n": "#1",
+          "note": "a Secret Wars tie-in, written by Aaron between the two volumes",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-thors-2",
+          "t": "Thors",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-thors-3",
+          "t": "Thors",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-thors-4",
+          "t": "Thors",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/19759/thor_2014_2015"
+        },
+        {
+          "label": "Thors",
+          "url": "https://www.marvel.com/comics/series/19765/thors_2015"
+        }
+      ]
+    },
+    {
+      "id": "mighty",
+      "title": "The Mighty Thor #1–23 and #700–706",
+      "sub": "2016–2018 · Aaron and Dauterman",
+      "tier": 1,
+      "items": [
+        {
+          "id": "thor-mt2-1",
+          "t": "The Mighty Thor (2015)",
+          "n": "#1",
+          "note": "Aaron with Russell Dauterman",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-2",
+          "t": "The Mighty Thor (2015)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-3",
+          "t": "The Mighty Thor (2015)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-4",
+          "t": "The Mighty Thor (2015)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-5",
+          "t": "The Mighty Thor (2015)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-6",
+          "t": "The Mighty Thor (2015)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-7",
+          "t": "The Mighty Thor (2015)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-8",
+          "t": "The Mighty Thor (2015)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-9",
+          "t": "The Mighty Thor (2015)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-10",
+          "t": "The Mighty Thor (2015)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-11",
+          "t": "The Mighty Thor (2015)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-12",
+          "t": "The Mighty Thor (2015)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-13",
+          "t": "The Mighty Thor (2015)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-14",
+          "t": "The Mighty Thor (2015)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-15",
+          "t": "The Mighty Thor (2015)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-16",
+          "t": "The Mighty Thor (2015)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-17",
+          "t": "The Mighty Thor (2015)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-18",
+          "t": "The Mighty Thor (2015)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-19",
+          "t": "The Mighty Thor (2015)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-20",
+          "t": "The Mighty Thor (2015)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-21",
+          "t": "The Mighty Thor (2015)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-22",
+          "t": "The Mighty Thor (2015)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-23",
+          "t": "The Mighty Thor (2015)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-700",
+          "t": "The Mighty Thor (2015)",
+          "n": "#700",
+          "note": "the legacy numbering comes back",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-701",
+          "t": "The Mighty Thor (2015)",
+          "n": "#701",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-702",
+          "t": "The Mighty Thor (2015)",
+          "n": "#702",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-703",
+          "t": "The Mighty Thor (2015)",
+          "n": "#703",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-704",
+          "t": "The Mighty Thor (2015)",
+          "n": "#704",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-705",
+          "t": "The Mighty Thor (2015)",
+          "n": "#705",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-mt2-706",
+          "t": "The Mighty Thor (2015)",
+          "n": "#706",
+          "note": "the last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Mighty Thor",
+          "url": "https://www.marvel.com/comics/series/20527/mighty_thor_2015_2018"
+        }
+      ]
+    },
+    {
+      "id": "vol5",
+      "title": "Thor #1–16",
+      "sub": "2018–2019 · the run turns toward the end",
+      "tier": 1,
+      "items": [
+        {
+          "id": "thor-v5-1",
+          "t": "Thor (2018)",
+          "n": "#1",
+          "note": "Aaron again, with Mike del Mundo",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-2",
+          "t": "Thor (2018)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-3",
+          "t": "Thor (2018)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-4",
+          "t": "Thor (2018)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-5",
+          "t": "Thor (2018)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-6",
+          "t": "Thor (2018)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-7",
+          "t": "Thor (2018)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-8",
+          "t": "Thor (2018)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-9",
+          "t": "Thor (2018)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-10",
+          "t": "Thor (2018)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-11",
+          "t": "Thor (2018)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-12",
+          "t": "Thor (2018)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-13",
+          "t": "Thor (2018)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-14",
+          "t": "Thor (2018)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-15",
+          "t": "Thor (2018)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v5-16",
+          "t": "Thor (2018)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor",
+          "url": "https://www.marvel.com/comics/series/24308/thor_2018_2019"
+        }
+      ]
+    },
+    {
+      "id": "wotr",
+      "title": "War of the Realms #1–6",
+      "sub": "2019 · ships alongside the tail of Thor vol. 5",
+      "tier": 1,
+      "intro": "Six issues, and the payoff for six years of setup. Its cover dates overlap Thor #11–16 above, so read those first and then this; the dozens of tie-in miniseries published around it are not rowed here and are not needed.",
+      "items": [
+        {
+          "id": "thor-wotr-1",
+          "t": "War of the Realms",
+          "n": "#1",
+          "note": "the event Aaron had been building to since 2013",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-wotr-2",
+          "t": "War of the Realms",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-wotr-3",
+          "t": "War of the Realms",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-wotr-4",
+          "t": "War of the Realms",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-wotr-5",
+          "t": "War of the Realms",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-wotr-6",
+          "t": "War of the Realms",
+          "n": "#6",
+          "note": "the last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "War of the Realms",
+          "url": "https://www.marvel.com/comics/series/25991/war_of_the_realms_2019"
+        }
+      ]
+    },
+    {
+      "id": "king",
+      "title": "King Thor #1–4",
+      "sub": "2019–2020 · the end of the run",
+      "tier": 1,
+      "items": [
+        {
+          "id": "thor-king-1",
+          "t": "King Thor",
+          "n": "#1",
+          "note": "four issues, Aaron and Ribic again",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-king-2",
+          "t": "King Thor",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-king-3",
+          "t": "King Thor",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-king-4",
+          "t": "King Thor",
+          "n": "#4",
+          "note": "the last issue of Aaron's seven years on the character",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "King Thor",
+          "url": "https://www.marvel.com/comics/series/27997/king_thor_2019"
+        }
+      ]
+    },
+    {
+      "id": "cates",
+      "title": "Thor #1–35",
+      "sub": "2020–2023 · what comes next",
+      "tier": 3,
+      "intro": "Donny Cates and Nic Klein take over after Aaron, with Torunn Grønbekk finishing the volume. It is here so the list does not stop mid-shelf, not because you have to read it.\n\nThe Immortal Thor, which follows it and is still publishing, is deliberately not rowed — an unfinished run would put a stale number on this page every month.",
+      "items": [
+        {
+          "id": "thor-v6-1",
+          "t": "Thor (2020)",
+          "n": "#1",
+          "note": "Donny Cates and Nic Klein pick it up",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-2",
+          "t": "Thor (2020)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-3",
+          "t": "Thor (2020)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-4",
+          "t": "Thor (2020)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-5",
+          "t": "Thor (2020)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-6",
+          "t": "Thor (2020)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-7",
+          "t": "Thor (2020)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-8",
+          "t": "Thor (2020)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-9",
+          "t": "Thor (2020)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-10",
+          "t": "Thor (2020)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-11",
+          "t": "Thor (2020)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-12",
+          "t": "Thor (2020)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-13",
+          "t": "Thor (2020)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-14",
+          "t": "Thor (2020)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-15",
+          "t": "Thor (2020)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-16",
+          "t": "Thor (2020)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-17",
+          "t": "Thor (2020)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-18",
+          "t": "Thor (2020)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-19",
+          "t": "Thor (2020)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-20",
+          "t": "Thor (2020)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-21",
+          "t": "Thor (2020)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-22",
+          "t": "Thor (2020)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-23",
+          "t": "Thor (2020)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-24",
+          "t": "Thor (2020)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-25",
+          "t": "Thor (2020)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-26",
+          "t": "Thor (2020)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-27",
+          "t": "Thor (2020)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-28",
+          "t": "Thor (2020)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-29",
+          "t": "Thor (2020)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-30",
+          "t": "Thor (2020)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-31",
+          "t": "Thor (2020)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-32",
+          "t": "Thor (2020)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-33",
+          "t": "Thor (2020)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-34",
+          "t": "Thor (2020)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "thor-v6-35",
+          "t": "Thor (2020)",
+          "n": "#35",
+          "note": "the last issue of the volume",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Thor vol. 6",
+          "url": "https://www.marvel.com/comics/series/28031/thor_2020_2023"
+        }
+      ]
+    }
+  ]
+}
