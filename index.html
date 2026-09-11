@@ -2282,6 +2282,31 @@ let MANIFEST = [
     "totalw": 574.92
   },
   {
+    "slug": "directors",
+    "media": [
+      "anime",
+      "movies",
+      "tv"
+    ],
+    "title": "Directors",
+    "subtitle": "15 filmographies",
+    "kind": "film, TV and anime filmographies",
+    "year": "1925–",
+    "popularity": 94,
+    "blurb": "Fifteen filmographies as one list. Each row opens the director's own page, and finishing that page ticks the row here.",
+    "accent": "#5B4A9E",
+    "accentDark": "#9C8AE0",
+    "unit": {
+      "one": "filmography",
+      "many": "filmographies"
+    },
+    "vpast": "watched",
+    "total": 15,
+    "totalw": 675.85,
+    "doors": 15,
+    "hub": true
+  },
+  {
     "slug": "mario",
     "media": [
       "games"
@@ -5617,30 +5642,6 @@ let MANIFEST = [
     "total": 85
   },
   {
-    "slug": "directors",
-    "media": [
-      "anime",
-      "movies",
-      "tv"
-    ],
-    "title": "Directors",
-    "subtitle": "15 filmographies",
-    "kind": "film, TV and anime filmographies",
-    "year": "1925–",
-    "popularity": 58,
-    "blurb": "Fifteen filmographies as one list. Each row opens the director's own page, and finishing that page ticks the row here.",
-    "accent": "#5B4A9E",
-    "accentDark": "#9C8AE0",
-    "unit": {
-      "one": "filmography",
-      "many": "filmographies"
-    },
-    "vpast": "watched",
-    "total": 15,
-    "totalw": 675.85,
-    "doors": 15
-  },
-  {
     "slug": "dragon-age",
     "media": [
       "games"
@@ -6914,7 +6915,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '5f578c7fc1f3';
+const BUILD = '0d86e83c8b8e';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7594,6 +7595,14 @@ let ORDER = [];
 // `beside` is adjacent material and never rolls at all. Built from the
 // property at load, so a row knows its own door without consulting the index.
 let INTO = {}, BESIDE = {};
+// CLU-79. A HUB is a list whose every row is a door — an assembly of other
+// lists rather than a list of things. build.py works that out from the rows
+// themselves and stamps it on the manifest entry; nothing here recomputes it,
+// and no property file may claim it. Nathan: "for these mega lists that are
+// just assemblies of other lists leave them expanded so you dont have to
+// expand all of the options." So a hub's sections are drawn OPEN and stay
+// that way — see the render below and openInitialSection().
+let HUB = false;
 let VALID = new Set();
 let UNIT = {one:'item', many:'items'};
 let VERB = {past:'done', ing:'tracking'};
@@ -7720,6 +7729,10 @@ async function loadProperty(){
     }
   }
   UNIT = PROP.unit || UNIT;
+  // the manifest is inlined in this page, so the answer is in hand before the
+  // first section is drawn — a hub opens as it renders rather than unfolding
+  // afterwards, which the reader would see happen
+  HUB = !!(MANIFEST.find(m=> m.slug === SLUG) || {}).hub;
   TIERED = !!PROP.tiers;
   VERB = PROP.verb || VERB;
   NUMFIRST = PROP.itemOrder === 'number-first';
@@ -17380,7 +17393,11 @@ function build(){
           + links.map(x=>'<a href="'+esc(x.url)+'" target="_blank" '
               + 'rel="noopener">'+esc(x.label)+' &#8599;</a>').join('')
           + '</div></span>';
-    return '<details id="d-'+s.id+'"><summary>'
+    // A hub ships every section open: fifteen doors behind three closed
+    // drawers means opening all three before you can see what the page is.
+    // An ordinary list keeps folding — there the rows are the content, and
+    // one open section is the whole point of the summaries.
+    return '<details id="d-'+s.id+'"'+(HUB ? ' open' : '')+'><summary>'
       // with per-row tiers the section badge would be a lie: these sections
       // hold all three at once
       +(TIERED && !ITEMTIERS ? '<span class="tier mono'+(s.tier===1?' a':'')+'">T'+s.tier+'</span>' : '')
@@ -17527,6 +17544,12 @@ function openInitialSection(){
   try{ jump = sessionStorage.getItem('gw:jump'); sessionStorage.removeItem('gw:jump'); }
   catch(e){}
   if(jump && ORDER.indexOf(jump) >= 0){ goToItem(jump); return; }
+  // A hub is already fully open and there is nothing to choose between, so
+  // the heuristics below never run on one. Nothing persists a section's
+  // open state today; if anything ever does, a hub is exempt from it — the
+  // rule is the shape of the list, not a preference the reader can leave
+  // behind on it.
+  if(HUB) return;
   const s = pickOpenSection();
   const el = s && $('d-'+s.id);
   if(el) el.open = true;

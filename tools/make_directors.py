@@ -108,10 +108,14 @@ def main():
         "subtitle": "%d filmographies" % total_core,
         "kind": "film, TV and anime filmographies",
         "year": "1925–",
-        # A judgement call, not a derived one: above Sight & Sound (50) because
-        # it is a front door to fifteen lists rather than one list, below
-        # Criterion (63) because it is a way in rather than a destination.
-        "popularity": 58,
+        # A judgement call, not a derived one, and Nathan's rather than mine:
+        # "i think this can move up to like ~top 5 popularity since it's a
+        # mega list." It was 58 — sat between Sight & Sound and Criterion on
+        # the reasoning that a way in ranks below a destination. He overruled
+        # that: a page standing for fifteen lists and 676 hours is the kind of
+        # thing a first-time visitor should meet near the top, so it sits with
+        # Mario at 94, behind Star Wars, Disney and the MCU.
+        "popularity": 94,
         "unit": {"one": "filmography", "many": "filmographies"},
         # without this the stats bar falls back to the literal "Done"; every
         # row here is a body of films, so the honest past tense is "watched"
@@ -158,6 +162,9 @@ def main():
     # comes out different here than in CI. That kept `check` red on every push
     # for thirteen days while Pages deployed happily. Every other generator
     # goes through gwlib.prop.write(), which gets this right.
+    # CLU-79's branch reached the identical conclusion independently, by a
+    # different route — it noticed the hash of every page moving when the file
+    # was regenerated on the wrong machine. Two findings, one cause.
     out.write_text(json.dumps(prop, indent=1, ensure_ascii=False) + "\n",
                    encoding="utf-8", newline="\n")
     print("wrote %s — %d rows across %d sections"
