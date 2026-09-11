@@ -762,6 +762,23 @@ footer a{color:var(--steel)}
   border:1px solid var(--rule-2);border-radius:8px;padding:10px 15px;
   font-size:13.5px;box-shadow:0 14px 34px -16px rgba(0,0,0,.4)}
 #fnote.hide{display:none}
+/* The arrival ask (CLU-436) borrows #fnote's box and almost nothing else. It
+   sits one layer above it, it never times out, and it is the only notice on
+   the site with buttons in it — a decision must not be a thing that fades
+   away while nobody is looking at it. The signal border is the tell that this
+   one is asking rather than reporting. */
+#arrask{position:fixed;top:64px;left:max(20px, calc(50% - 430px));z-index:81;
+  max-width:min(560px, calc(100vw - 40px));background:var(--card);
+  border:1px solid var(--signal);border-radius:8px;padding:13px 15px 12px;
+  font-size:13.5px;box-shadow:0 18px 40px -14px rgba(0,0,0,.45)}
+#arrask.hide{display:none}
+#arrask b{display:block;font-size:14px}
+#arrask p{margin:5px 0 0;color:var(--ink-2)}
+#arrask .arrw{color:var(--ink)}
+#arrask .arrw.hide{display:none}
+#arrask .arrb{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
+#arrask .arrb button{font-size:12.5px}
+#arrask #b-arryes{border-color:var(--signal)}
 /* remove/cancel ride the hover layer, per the row law: controls earn
    their moment. Touch has no hover, so there they rest faint instead */
 #hfriends .aquiet{opacity:0;transition:opacity .15s}
@@ -880,7 +897,7 @@ footer a{color:var(--steel)}
    thing the no-dead-affordances rule forbids. Hidden until it has a gesture of
    its own; the dismissal itself still syncs and still applies on this device. */
 @media (hover:none){#hshelf .hdis{display:none}}
-@media (max-width:560px){#fnote{top:74px;left:14px;right:14px;max-width:none}}
+@media (max-width:560px){#fnote,#arrask{top:74px;left:14px;right:14px;max-width:none}}
 #b-baracct:hover{border-color:var(--signal)}
 #b-baracct.hide{display:none}
 #b-mastacct .mnm{max-width:14ch;overflow:hidden;text-overflow:ellipsis;
@@ -1415,6 +1432,32 @@ footer a{color:var(--steel)}
 
 <!-- friend-action notices float here so they exist on EVERY view -->
 <div id="fnote" class="hide" role="status"></div>
+
+<!-- The one yes an invitation can need (CLU-436). The arrival slot is shared by
+     every tab of the browser now, so the account that signs in is not
+     necessarily the person who opened the link: on a family laptop, A can open
+     a friend link, walk away, and B sign in a minute later. This is where that
+     stops. It is shown for an arrival THIS tab did not catch, and for every
+     group invite whichever tab caught it — joining a group hands your name and
+     your progress to strangers and had no accept step anywhere.
+
+     It lives out here beside #fnote, not inside the arrival splash, because by
+     the time it is asked the person is signed in and looking at a real view —
+     the shelf, the account page, or a list. #arrask is on all of them.
+
+     Nothing is written until the yes. The warning line only appears when the
+     link came from another tab, because that is the only case where "is this
+     even yours" is a live question. -->
+<div id="arrask" class="hide" role="alertdialog"
+     aria-labelledby="arrask-h" aria-describedby="arrask-p">
+  <b id="arrask-h"></b>
+  <p id="arrask-p"></p>
+  <p class="arrw hide" id="arrask-w"></p>
+  <div class="arrb">
+    <button id="b-arryes" type="button"></button>
+    <button id="b-arrno" type="button">No</button>
+  </div>
+</div>
 
 <div class="splash hide" id="splash">
   <div class="splash-in">
@@ -6353,7 +6396,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '40799ab89d1f';
+const BUILD = '2bca24cd2e43';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6418,47 +6461,225 @@ const BRAND = 'clubd';
 /* --------------------------------------------- arriving on a link (CLU-386) */
 // A link that carries a code is caught here, before anything paints, and the
 // code comes out of the URL on sight — in the address bar it would survive a
-// screenshot, a shared tab and a Referer. It rides sessionStorage across the
-// sign-in round trip: the OAuth redirect lands on the bare path and the slot
-// is still there.
+// screenshot, a shared tab and a Referer.
 //
-// One arrival at a time, as (kind, payload). A kind names its query param,
-// its slot, the two lines the splash says to a stranger, and how it settles
-// once there is a session. Friend links are the only kind that exists; a club
-// code (CLU-91) or a group token is one more entry here, not a third path.
-// The splash says what KIND of link this is and never what the payload
-// resolves to — a stranger cannot look a profile up and must not be able to,
-// and a kind that ever wants to name a list goes through splashList() like
-// every other surface, so the gated list stays out of it.
+// One arrival at a time, as (kind, payload, own). A kind names its query param,
+// the two lines the splash says to a stranger, the noun the notices call it,
+// the three lines the ask uses, and how it settles once there is a session.
+// Friend links and group invites are the kinds that exist; a club code
+// (CLU-91) is one more entry here, not a third path. The splash says what KIND
+// of link this is and never what the payload resolves to — a stranger cannot
+// look a profile up and must not be able to, and a kind that ever wants to name
+// a list goes through splashList() like every other surface, so the gated list
+// stays out of it.
+//
+// CLU-436. This used to hold the caught code in sessionStorage, and said so:
+// "it rides sessionStorage across the sign-in round trip". That is true of ONE
+// route. An OAuth redirect is a same-tab navigation, so the slot is still
+// there when it lands — but an email magic link is opened by the mail client
+// in a NEW TAB, and a new tab's sessionStorage is empty by definition. Nathan
+// hit exactly that: the splash in the tab he clicked the link from, and in the
+// tab his email opened, nothing. No splash, no message, no request sent.
+//
+// So the slot is localStorage — per origin, shared by every tab of the browser
+// — carrying the three properties that durable storage now owes us:
+//
+//   * STAMPED, and dead after ARRIVAL_TTL. sessionStorage expired itself when
+//     the tab closed; localStorage never expires, so with no clock an
+//     abandoned invite would ambush a visit next week. 30 minutes is the
+//     smallest number that still covers a round trip made ON THIS BROWSER:
+//     switching to the mail app or mail tab, an OAuth consent screen, a
+//     password-manager detour. It does NOT cover "check my email on my phone
+//     and come back" — a phone is a different browser with an empty slot, and
+//     no carrier here can serve that; what serves it is that the code is in
+//     the link, so opening the link on the phone starts again from scratch.
+//   * ONE-SHOT. Claimed by a single tab before it settles, so two open tabs
+//     send one request between them, not one each.
+//   * SWEPT. No on the ask clears it, Cancel on the splash clears it, and so
+//     does signing out — the one moment a person says this device is done
+//     with them.
+//   * ANSWERED BY A PERSON when the tab that signs in is not the tab that
+//     caught the link. That is the whole cost of a browser-wide slot: A can
+//     open a friend link on the family laptop, walk away, and B sign in
+//     inside the TTL. sessionStorage made that impossible by accident;
+//     localStorage makes it possible, so showAsk() makes it deliberate. A
+//     group invite asks in EVERY tab, because it has no accept step of its
+//     own and joining exposes your name and your progress to strangers.
+//
+// And an arrival that expires is never silent: the slot is swept on read and
+// the site says so, because an invitation that quietly evaporates is precisely
+// what this bug looked like from the outside.
 const ARRIVALS = {
   friend: {
-    param: 'friend', key: 'gw:pendfriend',
+    param: 'friend', noun: 'friend link',
     head: 'Someone sent you a friend link.',
     body: 'Sign in and it sends them a request. You’re linked once they accept.',
+    askHead: 'Send that friend request?',
+    askBody: 'Whoever sent the link gets a request from you. You’re linked once they accept.',
+    askYes: 'Send it',
     settle: async code=>{
       const r = await addFriendFlow(code);
       friendNotify(r, false);
       if(!r.err) renderFriends();
     }
+  },
+  group: {
+    // `ask` is the asymmetry between the two kinds, and it is not a detail:
+    // a friend request is a request the other person still has to accept,
+    // while joining a group is done the instant it happens and shows everyone
+    // already in it your name and your progress. So a group invite asks even
+    // in the tab that caught it — it is the accept step the group half never
+    // had anywhere.
+    param: 'g', noun: 'group invite', ask: true,
+    head: 'Someone invited you to a group.',
+    body: 'Sign in and you can join. The group sees your name and your progress.',
+    askHead: 'Join that group?',
+    askBody: 'Everyone in the group sees your name and your progress on its list. You can leave whenever you like.',
+    askYes: 'Join',
+    settle: async tok=> joinByToken(tok)
   }
 };
+// Only ever index ARRIVALS through this. `ARRIVALS[k]` for a k that came out of
+// storage is a prototype lookup: ARRIVALS['__proto__'] and
+// ARRIVALS['constructor'] are both truthy, so a slot carrying either passed the
+// registry guard and then blew up on a .settle that was never a function.
+function arrKind(k){
+  return (k && Object.prototype.hasOwnProperty.call(ARRIVALS, k)) ? ARRIVALS[k] : null;
+}
+const ARRIVAL_TTL = 30 * 60 * 1000;
+const ARRSLOT = 'gw:arrival';
+// Durable storage is not a given: a private window, or a browser told to block
+// site data, throws on the first write. Probe once — where it fails the
+// arrival lives in this tab's memory only, which is exactly the behaviour
+// before this fix rather than a thrown boot.
+const ARRSTORE = (function(){
+  try{ localStorage.setItem('gw:probe', '1'); localStorage.removeItem('gw:probe'); return true; }
+  catch(e){ return false; }
+})();
+// Which tab this is. Two jobs hang off it: which tab means to SPEND the slot,
+// and whether the tab looking at the slot is the tab that CAUGHT the link —
+// the difference between settling by itself and asking first.
+//
+// So it must be unique per tab, and it used to fall back to the shared literal
+// 'mem' when sessionStorage was unusable but localStorage was not. Every tab in
+// that browser then carried the same claim id, which defeated the mutex exactly
+// where the mutex was the only thing standing between one request and two.
+// A fresh id per page load instead: sessionStorage keeps it across a same-tab
+// navigation where it works, and where it does not, two tabs at least cannot
+// agree that they are each other. The price is that with sessionStorage blocked
+// a same-tab round trip comes back looking like another tab and gets asked —
+// one click, in the safe direction, in a browser that has already opted out of
+// being remembered.
+const ARRTAB = (function(){
+  const mk = ()=> Math.random().toString(36).slice(2) + Date.now().toString(36);
+  try{
+    let t = sessionStorage.getItem('gw:tab');
+    if(!t){ t = mk(); sessionStorage.setItem('gw:tab', t); }
+    return t;
+  }catch(e){ return mk(); }
+})();
+let ARRIVAL_STALE = '';
+// An unparseable or non-object slot is swept, not stepped over. Returning null
+// on the SyntaxError and leaving the string in place — which is what this did —
+// left a corrupt slot in localStorage for good: every read threw, every read
+// gave up, and nothing ever removed it.
+function arrRaw(){
+  let s = null;
+  try{ s = localStorage.getItem(ARRSLOT); }catch(e){ return null; }
+  if(!s) return null;
+  let o = null;
+  try{ o = JSON.parse(s); }
+  catch(e){ arrClear(); return null; }
+  if(!o || typeof o !== 'object'){ arrClear(); return null; }
+  return o;
+}
+// Says whether the write actually landed. localStorage reads perfectly well at
+// quota and throws only on setItem, so a silent catch here reported a stored
+// arrival that was never stored — see arrStash.
+function arrWrite(o){
+  if(!ARRSTORE) return false;
+  try{ localStorage.setItem(ARRSLOT, JSON.stringify(o)); return true; }
+  catch(e){ return false; }
+}
+function arrClear(){ try{ localStorage.removeItem(ARRSLOT); }catch(e){} }
+// The read IS the sweep. Anything past the TTL is dropped here and remembered
+// as stale so arrivalStale() can say so — the one thing the old code could not
+// do, because a slot that had gone missing was indistinguishable from never
+// having existed. A kind this build no longer knows is dropped too, but in
+// silence: there is no noun to name it with, so there is nothing honest to say.
+//
+// A stamp in the FUTURE is dead, not immortal. Date.now() - e.at goes negative
+// there and never exceeds the TTL, so a slot stamped at 9e15 — a clock set
+// forward, or a hand-written slot — lived forever. ARRSKEW is the only slack:
+// the same browser wrote the stamp, so the only honest source of a negative
+// age is the clock being nudged under us.
+const ARRSKEW = 60 * 1000;
+function arrRead(){
+  const e = arrRaw();
+  if(!e) return null;
+  if(!e.k || !e.v || !arrKind(e.k)){ arrClear(); return null; }
+  const age = Date.now() - e.at;
+  if(typeof e.at !== 'number' || !isFinite(e.at) || age < -ARRSKEW || age > ARRIVAL_TTL){
+    ARRIVAL_STALE = e.k;
+    arrClear();
+    return null;
+  }
+  return e;
+}
+// `own` is what settleArrival asks about: this tab caught the link itself, so
+// the person holding the invitation and the person at the keyboard are the same
+// person. `mem` says the slot is not really there — the write was refused — so
+// this tab is the only claimant there can be.
+function arrStash(kind, payload){
+  const stored = arrWrite({ k: kind, v: payload, at: Date.now(), tab: ARRTAB });
+  return { kind, payload, own: true, mem: !stored };
+}
+// Only the param just consumed comes out of the URL. The line this replaces
+// was history.replaceState(null, '', location.pathname), which threw away
+// every OTHER query param and — measured — the HASH as well, before the
+// Supabase client was even constructed. An implicit-flow magic link IS its
+// hash, so that was one combined link away from eating a sign-in.
+function arrStrip(param){
+  try{
+    const u = new URL(location.href);
+    u.searchParams.delete(param);
+    history.replaceState(null, '', u.pathname + (u.search || '') + u.hash);
+  }catch(e){}
+}
 let ARRIVAL = (function(){
   try{
     const q = new URLSearchParams(location.search);
     for(const kind in ARRIVALS){
       const a = ARRIVALS[kind], v = q.get(a.param);
       if(!v) continue;
-      sessionStorage.setItem(a.key, v);
-      history.replaceState(null, '', location.pathname);
-      return { kind, payload: v };
+      arrStrip(a.param);
+      return arrStash(kind, v);
     }
-    for(const kind in ARRIVALS){
-      const v = sessionStorage.getItem(ARRIVALS[kind].key);
-      if(v) return { kind, payload: v };
+    // one release only: a tab that was already holding an invite in the old
+    // per-tab slots when this build shipped keeps it, rather than silently
+    // losing the link mid-round-trip
+    const legacy = { friend: 'gw:pendfriend', group: 'gw:pendgroup' };
+    for(const kind in legacy){
+      let v = null;
+      try{ v = sessionStorage.getItem(legacy[kind]); }catch(e){}
+      if(!v) continue;
+      try{ sessionStorage.removeItem(legacy[kind]); }catch(e){}
+      return arrStash(kind, v);
     }
+    // A slot that was already here belongs to whichever tab stamped it. If that
+    // was this tab, this is the far side of a same-tab round trip and the code
+    // runs itself, which is the whole promise of an invite link. If it was
+    // another tab, the person signing in here may not be the person who opened
+    // the link at all, and settleArrival() asks before it writes anything.
+    const e = arrRead();
+    if(e) return { kind: e.k, payload: e.v, own: e.tab === ARRTAB };
   }catch(e){}
   return null;
 })();
+// The arrival waiting on a yes. It is held apart from ARRIVAL so that a second
+// onSession — and there is always a second onSession — cannot re-ask or settle
+// behind the ask.
+let ARRASK = null;
 
 function pickSlug(){
   const q = new URLSearchParams(location.search);
@@ -6470,9 +6691,22 @@ function pickSlug(){
     return null;
   const want = q.get('p');
   if(want && MANIFEST.some(m=>m.slug===want)) return want;
-  // an invite still pending stays home until it settles: the sign-in round
-  // trip comes back to a bare URL, which would otherwise open the remembered
-  // list, where nothing ever settles it
+  // An invite still pending beats the REMEMBERED list and nothing else. The
+  // sign-in round trip comes back to a bare URL, and opening gw:last there
+  // would put the person inside a list they did not ask for. Both kinds ride
+  // this — a group token used to have its own slot that nothing here knew
+  // about, so a ?g= invite finished with Google on a browser with a remembered
+  // list opened that list and never joined anything (CLU-436).
+  //
+  // It stays BELOW the explicit ?p= above, and that is not a compromise any
+  // more. go() is a real navigation to ?p=<slug>, so an arrival that outranked
+  // it would bounce every list link on the page home for as long as the
+  // invitation is pending — but ranking below it used to mean a ?p= landing
+  // DROPPED the arrival, because settleArrival() only ran on the shelf branch
+  // of onSession. It runs on the list branch too now, so this function decides
+  // which VIEW opens and nothing else: a ?p= link opens its list AND the
+  // invitation still settles, on whichever view the person ends up looking at.
+  // #fnote and #arrask are on all of them.
   if(ARRIVAL) return null;
   const last = localStorage.getItem('gw:last');
   if(last && MANIFEST.some(m=>m.slug===last)) return last;
@@ -7592,7 +7826,7 @@ async function onSession(session, definitive){
       showHome();
     }
     settleArrival();
-    settlePendingGroup();
+    if(definitive) arrivalStale();
     setTimeout(backfillSync, 1200);
     return;
   }
@@ -7667,6 +7901,14 @@ async function onSession(session, definitive){
   renderFriends();   // list pages want the request badge on the pills
   paintPrivacy();    // and this list's own "hide from friends" switch
   paintFW();
+  // A list page is a perfectly ordinary place to land with an invitation in
+  // hand: ?p= outranks a pending arrival in pickSlug (it has to, or every list
+  // link would bounce home), so the round trip can and does come back here.
+  // Without this call the invitation was simply dropped — the slot sat there
+  // until some later bare-URL load, or the TTL, took it (CLU-436). #fnote and
+  // #arrask are on this view as much as on the shelf.
+  settleArrival();
+  if(definitive) arrivalStale();
   // off the critical path: the first load fetches the index once, every
   // later load exits on the flag before any network
   setTimeout(backfillSync, 1200);
@@ -8697,6 +8939,14 @@ $('a-pace').onchange = e=>{
 };
 // the same door the stats bar has, on a page that hides the stats bar
 $('b-acctout').onclick = async ()=>{
+  // a pending invitation does not survive a sign-out: it is the clearest
+  // statement there is that this device is done with this person, and the slot
+  // outlives the tab now (CLU-436). An unanswered ask goes with it — the
+  // account it named is the account walking out.
+  ARRIVAL = null;
+  ARRASK = null;
+  hideAsk();
+  arrClear();
   if(sb) await sb.auth.signOut();
   location.href = '?home';
 };
@@ -8879,48 +9129,204 @@ async function addFriendFlow(raw){
   return addFriend(t);
 }
 // The arrival, once there is a session (CLU-386). ARRIVAL was caught at boot
-// and the splash is onSession's business; this is the other half. The slot is
-// cleared first — a code that fails is spent either way, and leaving it set
-// would retry it on every load — then the kind settles and reports through
-// its own channel: for a friend link that is friendNotify, the same four
-// honest states a typed code gets.
+// and the splash is onSession's business; this is the other half.
+//
+// The slot is claimed before anything is sent, and the claim is what makes an
+// arrival settle ONCE (CLU-436). Two tabs of the same browser now see the same
+// slot, so both would otherwise send the same request the moment each got a
+// session. Each stamps the slot with its own ARRTAB and looks again a beat
+// later: localStorage is last-writer-wins across tabs, so exactly one stamp
+// survives, that tab spends the slot, and the other drops it without a word.
+// The claim also clears first — a code that fails is spent either way, and
+// leaving it set would retry it on every load — and then the kind settles and
+// reports through its own channel: for a friend link that is friendNotify, the
+// same four honest states a typed code gets.
+const ARRCLAIM = 80, ARRCLAIMDEAD = 5000;
+async function claimArrival(arr){
+  const kind = arr.kind, payload = arr.payload;
+  // nothing durable to race over: this tab holds the only copy there is
+  if(!ARRSTORE || arr.mem) return true;
+  // arrRead, not arrRaw: the clock applies here too. A tab can sit on the
+  // splash for an hour and then sign in, and the invitation it is holding in
+  // memory has to be as dead as one found stale at boot.
+  const e = arrRead();
+  if(!e || e.k !== kind || e.v !== payload) return false;   // spent, or timed out
+  // another tab staked it a moment ago: leave it to them. A stamp older than
+  // ARRCLAIMDEAD belonged to a tab that claimed the slot and was closed before
+  // it could spend it, and that must not strand the invitation for good.
+  if(e.cl && e.cl !== ARRTAB && Date.now() - (e.clat || 0) < ARRCLAIMDEAD) return false;
+  e.cl = ARRTAB; e.clat = Date.now();
+  if(!arrWrite(e)){
+    // the stamp will not persist, so there is no mutex to hold. Spend it
+    // rather than drop it: removeItem still works when setItem is refused, and
+    // losing the invitation outright is the worse of the two failures.
+    arrClear();
+    return true;
+  }
+  await new Promise(r=> setTimeout(r, ARRCLAIM));
+  const f = arrRaw();
+  if(!f || f.k !== kind || f.v !== payload || f.cl !== ARRTAB) return false;
+  arrClear();
+  return true;
+}
+// Which arrivals a person has to answer for. An invitation caught by THIS tab
+// is answered by the fact that this is the tab it was opened in: the splash
+// said what the link does, the sign-in happened on top of it, and there is no
+// second person in the story. Anything else came off a shared slot, and a
+// shared slot cannot tell A from B.
+function arrNeedsOk(arr){
+  const a = arrKind(arr.kind);
+  return !!a && (!arr.own || !!a.ask);
+}
 async function settleArrival(){
   if(!ARRIVAL || !user) return;
-  const a = ARRIVALS[ARRIVAL.kind], payload = ARRIVAL.payload;
-  ARRIVAL = null;
-  try{ sessionStorage.removeItem(a.key); }catch(e){}
-  await a.settle(payload);
-}
-// A ?g= invite link survives the sign-in round trip the same way a ?friend
-// link does. Taken out of the URL on sight: it is a credential — anyone who
-// has it can join — so it should not sit in the address bar to be reloaded,
-// bookmarked or caught in a screenshot.
-function pendingGroup(){
-  try{
-    const q = new URLSearchParams(location.search).get('g');
-    if(q){
-      sessionStorage.setItem('gw:pendgroup', q);
-      history.replaceState(null, '', location.pathname);
-    }
-    return sessionStorage.getItem('gw:pendgroup') || '';
-  }catch(e){ return ''; }
-}
-async function settlePendingGroup(){
-  const tok = pendingGroup();
-  if(!tok) return;
-  if(!user){
-    if(!CLOUD) return;
-    const c = $('signctx');
-    if(c){
-      c.textContent = 'Sign in and this group invite finishes itself.';
-      c.classList.remove('hide');
-    }
-    openMastAuth();
+  const arr = ARRIVAL;
+  if(!arrKind(arr.kind)){ ARRIVAL = null; arrClear(); return; }
+  if(arrNeedsOk(arr)){
+    ARRIVAL = null;
+    showAsk(arr);   // and NOTHING is written until the yes
     return;
   }
-  // clear first: a token that fails is spent either way, and leaving it set
-  // would retry it on every load
-  try{ sessionStorage.removeItem('gw:pendgroup'); }catch(e){}
+  ARRIVAL = null;
+  await spendArrival(arr);
+}
+// Claim it, spend it, report it. Everything past the claim has already cost the
+// slot, so a throw in here is an invitation that is gone — which is the shape of
+// the bug this card is about, so it does not get to be silent either. It is not
+// re-stashed: the request may well have reached the server before the connection
+// went, and a retry loop on a write that may have landed is worse than telling
+// the person the link is still the way back.
+async function spendArrival(arr){
+  const a = arrKind(arr.kind);
+  if(!a) return;
+  if(!await claimArrival(arr)){
+    // a claim can fail because it timed out in this tab's hands, and that is
+    // the one failure the person needs told about
+    arrivalStale();
+    return;
+  }
+  try{ await a.settle(arr.payload); }
+  catch(e){
+    console.error('[arrival] ' + arr.kind + ' failed to settle', e);
+    arrSay('That ' + a.noun + ' did not go through. Open the link again to try it.');
+  }
+}
+// The one yes (CLU-436). Shown when the tab signing in is not the tab that
+// caught the link, and for every group invite. Nothing has been written or even
+// claimed at this point — the slot is still sitting there, and the two buttons
+// are the only two ways out of it.
+function asking(){ return !$('arrask').classList.contains('hide'); }
+function showAsk(arr){
+  const a = arrKind(arr.kind);
+  if(!a){ arrClear(); return; }
+  ARRASK = arr;
+  $('arrask-h').textContent = a.askHead;
+  $('arrask-p').textContent = a.askBody;
+  $('b-arryes').textContent = a.askYes;
+  const w = $('arrask-w');
+  if(arr.own){
+    w.textContent = '';
+    w.classList.add('hide');
+  }else{
+    // The line that makes this worth asking. Whoever is reading it may never
+    // have seen the link, and the account it would go out as is the fact they
+    // need: on a shared machine that name is the whole answer.
+    w.textContent = 'That link was opened in another tab of this browser, not'
+      + ' this one. You’re signed in as '
+      + ((user && user.email) ? user.email : 'this account')
+      + ' — if the link wasn’t for you, say no.';
+    w.classList.remove('hide');
+  }
+  $('arrask').classList.remove('hide');
+  // No takes the focus, not Send: the safe answer is the one a stray Return
+  // should give.
+  const n = $('b-arrno');
+  if(n && !COARSE) n.focus();
+}
+function hideAsk(){
+  const k = $('arrask');
+  if(k) k.classList.add('hide');
+}
+async function acceptArrival(){
+  const arr = ARRASK;
+  ARRASK = null;              // a second click has nothing left to spend
+  hideAsk();
+  if(arr) await spendArrival(arr);
+}
+function declineArrival(){
+  const arr = ARRASK;
+  ARRASK = null;
+  hideAsk();
+  arrClear();
+  const a = arr ? arrKind(arr.kind) : null;
+  if(a) arrSay('That ' + a.noun + ' was dismissed. Open the link again if you change your mind.');
+}
+// the catch is not decoration: an onclick that drops a rejected promise is an
+// unhandled rejection, and this handler is the one path a person can fire by hand
+$('b-arryes').onclick = ()=>{
+  acceptArrival().catch(e=> console.error('[arrival] accept threw', e));
+};
+$('b-arrno').onclick = declineArrival;
+// An arrival that ran out says so, once per arrival, on the first view that can
+// hold a message. There is no splash left to put it on by then — the slot was
+// swept on read and ARRIVAL is null — so it goes to #fnote, which exists on
+// every view, and it names the KIND and the way back, never the payload.
+//
+// Clearing ARRIVAL_STALE is what makes it say it once; there used to be a
+// _staleSaid latch on top of that, and because it was never reset it silenced
+// the SECOND expiry and every one after it for the life of the page. One page
+// can watch two invitations run out — open a link, let it die, open another —
+// and the second one was the one nobody was told about.
+function arrivalStale(){
+  if(!ARRIVAL_STALE) return;
+  const a = arrKind(ARRIVAL_STALE);
+  ARRIVAL_STALE = '';
+  if(!a) return;
+  arrSay('That ' + a.noun + ' expired before you signed in. Open the link again to finish it.');
+}
+// #fnote in its own voice: neutral ink, the same 9s and the same token guard
+// friendNotify uses, so an arrival notice and a friend notice cannot fight
+// over the strip.
+function arrSay(text){
+  const f = $('fnote');
+  if(!f) return;
+  const tok = ++_fnoteTok;
+  f.textContent = text;
+  f.style.color = 'var(--ink)';
+  f.classList.remove('hide');
+  setTimeout(()=>{ if(tok === _fnoteTok) f.classList.add('hide'); }, 9000);
+}
+// The slot is shared now, so another tab taking it away is a thing that happens
+// while this tab is still looking at the splash or at the ask. Drop the
+// invitation here the moment it goes: without this, a sign-in in this tab would
+// re-send a spent code, and the splash would keep promising something that is
+// no longer on the machine.
+//
+// A non-null newValue is NOT necessarily a claim stamp — arrStash writes the
+// same key, so another tab catching a fresh link fires this too. Either way
+// there is nothing to do on a write: if it was a claim, the claimant will clear
+// the slot in a moment and we come back here; if it was a new arrival, the one
+// this tab is holding is no longer the pending invitation and its own claim will
+// fail on the payload and drop it, silently, which is right — the newer link is
+// the one the person just opened.
+//
+// And the line says only what is knowable from here. It used to say "Another tab
+// has already handled that link", but two of the three things that clear the
+// slot are not a handling: a sign-out in another tab, and a sweep.
+window.addEventListener('storage', e=>{
+  if(e.key !== ARRSLOT) return;
+  if(e.newValue) return;                 // a write, not a removal — see above
+  if(!ARRIVAL && !ARRASK) return;
+  const onScreen = (typeof arriving === 'function' && arriving()) || asking();
+  ARRIVAL = null;
+  ARRASK = null;
+  hideAsk();
+  if(typeof arriving === 'function' && arriving()) leaveArrival();
+  if(onScreen) arrSay('Another tab cleared that link. Open it again if you still need it.');
+});
+// The group half of an arrival: join, then land on the friends page.
+async function joinByToken(tok){
+  if(!tok || !user) return;
   try{
     const { data, error } = await sb.rpc('join_group_by_token', {
       p_token: tok,
@@ -12940,10 +13346,12 @@ function showSplash(){
 // Only ever reached on a definitive signed-out answer (see onSession), so it
 // cannot flash at someone who is signed in. The tour, when it exists
 // (CLU-380), must not fire over this: CLU-382 rules that an invitation is not
-// a product start, and arriving() is the predicate for it to consult.
+// a product start, and `arriving() || asking()` is the predicate for it to
+// consult — the ask is the signed-in half of the same moment.
 function arriving(){ return !$('arrivev').classList.contains('hide'); }
 function showArrival(){
-  const a = ARRIVALS[ARRIVAL.kind];
+  const a = arrKind(ARRIVAL.kind);
+  if(!a) return;
   clearTimeout(_splashWait);
   $('splash').classList.add('hide');
   $('homev').classList.add('hide');
@@ -12966,13 +13374,21 @@ function showArrival(){
   const f = $('email');
   if(f && !COARSE) f.focus();
 }
-// Cancel on the arrival is the way past it, onto the pitch. The code stays
-// in its slot: a sign-in later in this tab still finishes the link, which is
-// what the splash promised.
+// Cancel on the arrival is the way past it, onto the pitch, and it now takes
+// the code with it (CLU-436). It used to leave the slot set so a sign-in later
+// in the same tab still finished the link — cheap when the slot died with the
+// tab, and not cheap at all once it lives in localStorage: a dismissed
+// invitation would sit on the machine for its whole TTL, attach itself to
+// whoever signed in next, and reappear as a splash in every other tab. Turning
+// it down means turning it down, so the notice says the link is the way back.
 function leaveArrival(){
+  const a = ARRIVAL ? arrKind(ARRIVAL.kind) : null;
+  ARRIVAL = null;
+  arrClear();
   $('arrivev').classList.add('hide');
   $('signin').classList.add('hide');
   showHome();
+  if(a) arrSay('That ' + a.noun + ' was dismissed. Open the link again if you change your mind.');
 }
 
 /* ------------------------------------------------------------ card wall */
