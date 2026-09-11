@@ -1244,7 +1244,8 @@
     "n": 220,
     "story": "The Ameridroid Lives!",
     "writers": [
-     "Don Glut"
+     "Don Glut",
+     "Scott Edelman"
     ],
     "year": 1978
    },
@@ -1256,6 +1257,7 @@
     "writers": [
      "David Kraft",
      "Don Glut",
+     "Scott Edelman",
      "Steve Gerber"
     ],
     "year": 1978
@@ -3907,6 +3909,7 @@
     "n": 20,
     "story": "Danger in the Air",
     "writers": [
+     "Bill Rosemann",
      "Mark Waid"
     ],
     "year": 1999
@@ -4239,7 +4242,11 @@
     "n": 50,
     "story": "Silent Night-Silent Morning",
     "writers": [
-     "Dan Jurgens"
+     "Brian David-Marshall",
+     "Dan Jurgens",
+     "Evan Dorkin",
+     "Jen Van Meter",
+     "Kathryn Kuder"
     ],
     "year": 2002
    },
@@ -4350,7 +4357,9 @@
     "month": "September",
     "n": 15,
     "story": "Ice (Part IV of V)",
-    "writers": [],
+    "writers": [
+     "Chuck Austen"
+    ],
     "year": 2003
    },
    "16": {
@@ -4358,7 +4367,9 @@
     "month": "October",
     "n": 16,
     "story": "Ice 5 of 5",
-    "writers": [],
+    "writers": [
+     "Chuck Austen"
+    ],
     "year": 2003
    },
    "17": {
@@ -4586,7 +4597,10 @@
     "month": "March",
     "n": 8,
     "story": "The Extremists (Part II of IV)",
-    "writers": [],
+    "writers": [
+     "Chuck Austen",
+     "John Ney Rieber"
+    ],
     "year": 2003
    },
    "9": {
@@ -4594,7 +4608,10 @@
     "month": "April",
     "n": 9,
     "story": "The Extremists part 3 of 5",
-    "writers": [],
+    "writers": [
+     "Chuck Austen",
+     "John Ney Rieber"
+    ],
     "year": 2003
    }
   },
@@ -5055,7 +5072,9 @@
     "n": 50,
     "story": "Days Gone By",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Fred Hembeck",
+     "Marcos Martín"
     ],
     "year": 2009
    },
@@ -5075,7 +5094,10 @@
     "n": 600,
     "story": "One Year After",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Mark Waid",
+     "Roger Stern",
+     "Stan Lee"
     ],
     "year": 2009
    },
@@ -5095,7 +5117,8 @@
     "n": 602,
     "story": "Two Americas (Part 1)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5105,7 +5128,8 @@
     "n": 603,
     "story": "Two Americas (Part 2)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5115,7 +5139,8 @@
     "n": 604,
     "story": "Two Americas (Part 3)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5125,7 +5150,8 @@
     "n": 605,
     "story": "Two Americas (Conclusion)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5135,7 +5161,8 @@
     "n": 606,
     "story": "No Escape (Part 1)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5156,7 +5183,8 @@
     "n": 608,
     "story": "No Escape (Part 3)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5166,7 +5194,8 @@
     "n": 609,
     "story": "No Escape (Part 4)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5176,7 +5205,8 @@
     "n": 610,
     "story": "No Escape (Conclusion)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5186,7 +5216,8 @@
     "n": 611,
     "story": "The Trial of Captain America (Part 1)",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2010
    },
@@ -5196,7 +5227,8 @@
     "n": 612,
     "story": "The Trial of Captain America part 2",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2011
    },
@@ -5206,7 +5238,8 @@
     "n": 613,
     "story": "The Trial of Captain America part 3",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2011
    },
@@ -5216,7 +5249,8 @@
     "n": 614,
     "story": "The Trial of Captain America part 4",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2011
    },
@@ -5226,7 +5260,8 @@
     "n": 615,
     "story": "The Trial of Captain America, Part 5",
     "writers": [
-     "Ed Brubaker"
+     "Ed Brubaker",
+     "Sean McKeever"
     ],
     "year": 2011
    },
@@ -5236,7 +5271,13 @@
     "n": 616,
     "story": "Origin",
     "writers": [
-     "Ed Brubaker"
+     "Alec Siegel",
+     "Cullen Bunn",
+     "Ed Brubaker",
+     "Frank Tieri",
+     "Howard Chaykin",
+     "Kyle Higgins",
+     "Mike Benson"
     ],
     "year": 2011
    },
@@ -5758,7 +5799,8 @@
     "n": 68,
     "story": "If a Man Be Mad!",
     "writers": [
-     "Al Hartley"
+     "Al Hartley",
+     "Stan Lee"
     ],
     "year": 1965
    },
@@ -6076,7 +6118,8 @@
     "n": 99,
     "story": "At the Mercy of the Maggia",
     "writers": [
-     "Archie Goodwin"
+     "Archie Goodwin",
+     "Stan Lee"
     ],
     "year": 1968
    }

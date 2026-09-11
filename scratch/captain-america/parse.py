@@ -24,6 +24,20 @@ sys.path.insert(0, str(ROOT / "tools"))
 FIELD = re.compile(r"^\|[ \t]*([A-Za-z0-9_:-]+)[ \t]*=[ \t]*(.*)$", re.M)
 LINK = re.compile(r"\[\[([^\]|]+)\|([^\]]+)\]\]")
 
+# The Appearing blocks are the only multi-line fields in the template, and
+# their bullet lists are what the one-line FIELD scan has to be kept away
+# from. Cutting the page at the first "| Appearing1" did that and threw away
+# everything after it, which on this wiki is where the credits usually are:
+# Captain America Vol 4 #8, #9, #15 and #16 came out with no writer at all,
+# and every second-feature credit in Tales of Suspense was lost — the Cap
+# strip is story 2 there, so the list had Stan Lee down as NOT credited on
+# #68 and #99 when the wiki credits him on the Captain America story in both.
+# So drop each Appearing block's body instead, up to the next field line, and
+# scan the rest of the page.
+APPEARING = re.compile(
+    r"^\|[ \t]*Appearing\d+[ \t]*=.*?(?=^\|[ \t]*[A-Za-z0-9_:-]+[ \t]*=)",
+    re.M | re.S)
+
 
 def clean(v):
     v = re.sub(r"<!--.*?-->", "", v or "", flags=re.S)
@@ -37,8 +51,8 @@ def clean(v):
 
 def fields(text):
     """Flat {name: value} of the comic template's one-line fields."""
-    head = text.split("| Appearing1")[0]
-    return {m.group(1): clean(m.group(2)) for m in FIELD.finditer(head)}
+    body = APPEARING.sub("", text)
+    return {m.group(1): clean(m.group(2)) for m in FIELD.finditer(body)}
 
 
 def main():
@@ -76,6 +90,15 @@ def main():
     for series, issues in out.items():
         blank = [n for n, r in issues.items() if r["year"] is None]
         assert not blank, "no cover year on %s %s" % (series, blank[:5])
+
+    # An issue with no writer at all is nearly always a parse failure rather
+    # than a fact about the wiki, and the last one hid behind a `writers: []`
+    # that nothing looked at. One page on this run genuinely carries no Writer
+    # field; anything else joining it means the scan has lost credits again.
+    nocredit = sorted("%s %s" % (s, n) for s, iss in out.items()
+                      for n, r in iss.items() if not r["writers"])
+    assert nocredit == ["Captain America Vol 1 216"], \
+        "issues parsed with no writer credit at all: %s" % nocredit
 
     out = {"issues": out, "redirects": redirects}
     dest = ROOT / "tools" / "data" / "captain-america.json"

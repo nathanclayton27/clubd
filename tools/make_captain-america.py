@@ -173,7 +173,12 @@ SECTIONS = [
         id="revival", tier=1, title="The revival: Lee and Kirby",
         sub="Avengers #4, then Tales of Suspense #59–99",
         spans=[("Avengers Vol 1", 4, 4), ("Tales of Suspense Vol 1", 59, 99)],
-        writer="Stan Lee", bar={68, 99},
+        # #68 and #99 were declared exceptions until the parser stopped
+        # dropping second-feature credits: the Cap strip is story 2 in Tales
+        # of Suspense, and the wiki credits "Writer2_1 = Stan Lee" on both
+        # ("The Sentinel and the Spy!" and "The Man Who Lived Twice!"). Lee
+        # is credited on every issue in this section.
+        writer="Stan Lee", bar=set(),
         start=True,
         intro="Captain America had been out of print for a decade when the "
               "Avengers found him in 1964. Later that year he had half of "
