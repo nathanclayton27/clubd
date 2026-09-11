@@ -1,0 +1,123 @@
+{
+  "slug": "culture",
+  "title": "The Culture novels",
+  "subtitle": "Iain M. Banks — nine novels and one collection",
+  "kind": "books",
+  "popularity": 49,
+  "year": "1987–2012",
+  "blurb": "Iain M. Banks's Culture books in the order he published them — standalone space opera in a post-scarcity galaxy, plus the short-story collection the source counts with them.",
+  "unit": {
+    "one": "book",
+    "many": "books"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#3A2E6B",
+  "accentDark": "#8FD9E8",
+  "tiers": false,
+  "notes": [
+    [
+      "Publication order, and for once it barely matters.",
+      "The source lists the series by publication date and so does this page. Banks wrote every one of these as a self-contained story with new characters — the article says so in its first paragraph — so there is no chronology to get wrong and no book that gives another away. Later books do refer back to earlier ones, which is the only reason an order is worth having at all."
+    ],
+    [
+      "One of the ten is not a novel.",
+      "Wikipedia counts the series as nine novels and one short story collection, and The State of the Art is the collection. It is a full row rather than an optional one because the source counts it among the ten, and because two of its stories are set in the Culture outright. Like every other row it counts as one."
+    ],
+    [
+      "The source contradicts itself about one year, and this is the one it is.",
+      "The State of the Art is dated 1991 by the article's infobox and by the bibliography it cites, and 1989 by the table of books on the same page. This page carries 1991, the year the two independent sources agree on. The row's position is not in doubt either way: both of the source's own lists put it fourth."
+    ],
+    [
+      "Inversions is here because the source puts it here.",
+      "The article's own entry for it says it is not explicitly a Culture novel, and then files it with the other nine. Tick it or skip it; nothing else on this page leans on it."
+    ],
+    [
+      "Hours are not tracked.",
+      "Every book counts as one and nothing on this page is weighted. Page counts differ by edition, a page is not an hour, and one weighted row would quietly turn every other row into an hour — so there are none at all."
+    ],
+    "Titles, years, publication order and the count read from Wikipedia's Culture series article — its infobox, its table of books and its bibliography."
+  ],
+  "sections": [
+    {
+      "id": "run1",
+      "title": "The opening run",
+      "sub": "1987–1991 · four books · publication order",
+      "open": true,
+      "intro": "Four books in five years, then Banks went quiet for five more. Each one is a self-contained story with its own cast, so nothing in here depends on having read the book above it.",
+      "items": [
+        {
+          "id": "cul-1987-consider-phlebas",
+          "t": "Consider Phlebas",
+          "n": "1987"
+        },
+        {
+          "id": "cul-1988-the-player-of-games",
+          "t": "The Player of Games",
+          "n": "1988"
+        },
+        {
+          "id": "cul-1990-use-of-weapons",
+          "t": "Use of Weapons",
+          "n": "1990"
+        },
+        {
+          "id": "cul-1991-the-state-of-the-art",
+          "t": "The State of the Art",
+          "n": "1991",
+          "note": "Short story collection, not a novel · two of its stories are set in the Culture"
+        }
+      ]
+    },
+    {
+      "id": "run2",
+      "title": "The middle three",
+      "sub": "1996–2000 · three books · publication order",
+      "intro": "He came back to the Culture in 1996 and stayed for three. Still standalone, still no plot to fall behind on — the only thing publication order buys you is the backward references landing the right way round.",
+      "items": [
+        {
+          "id": "cul-1996-excession",
+          "t": "Excession",
+          "n": "1996"
+        },
+        {
+          "id": "cul-1998-inversions",
+          "t": "Inversions",
+          "n": "1998",
+          "note": "Not explicitly a Culture novel, says the source — which files it here among the ten anyway"
+        },
+        {
+          "id": "cul-2000-look-to-windward",
+          "t": "Look to Windward",
+          "n": "2000"
+        }
+      ]
+    },
+    {
+      "id": "run3",
+      "title": "The last three",
+      "sub": "2008–2012 · three books · publication order",
+      "intro": "Three more after eight years away, and the last Culture book he published. The gap in front of them is a gap, not a change of direction.",
+      "items": [
+        {
+          "id": "cul-2008-matter",
+          "t": "Matter",
+          "n": "2008"
+        },
+        {
+          "id": "cul-2010-surface-detail",
+          "t": "Surface Detail",
+          "n": "2010"
+        },
+        {
+          "id": "cul-2012-the-hydrogen-sonata",
+          "t": "The Hydrogen Sonata",
+          "n": "2012"
+        }
+      ]
+    }
+  ]
+}
