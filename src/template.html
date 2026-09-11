@@ -11651,6 +11651,50 @@ function pickRandom(e){
 // on the club side, where a club with a finish date and no windows could not
 // export at all.
 function icsEscape(t){ return String(t).replace(/([,;\\])/g, '\\$1').replace(/\r?\n/g, '\\n'); }
+
+// CLU-144, decided by Nathan: a derived date names a BOUNDARY, never a count.
+// "The Clone Wars era (16–22)" still tells you what to do when you open the
+// calendar three weeks behind; "10 of 17 films" only tells you that you failed.
+// With no alarms in the file — his call too — being glanceable in a grid is the
+// only job these events have.
+//
+// The gate is measured, not guessed: 151 of 211 lists qualify, median 5 events,
+// maximum 20. Spawn's 187 sections and Best Picture's 98 ceremony years fall
+// outside it, so there is no cap left to argue about.
+//
+//   * NOT a grab-bag. A fifth of the catalogue is a pile rather than a queue —
+//     43 lists, 6,013 of 28,685 rows — and a date on a row of a pile is a lie.
+//     Not one of the 43 carries an authored schedule, so giving them nothing is
+//     honest rather than a dodge; they keep the single finish event.
+//   * more than one section, or the only event IS the finish event.
+//   * no more than 26, because a calendar full of one list is not a schedule.
+function icsSections(){
+  if(!PROP || PROP.random) return null;
+  if(!DATA || DATA.length < 2 || DATA.length > 26) return null;
+  return DATA;
+}
+
+// Where each section ENDS, as a share of the whole — by hours where the list is
+// weighted, by rows where it is not, which is the same rule every other figure
+// on this page follows. Returns one entry per section: the flat row range it
+// covers and the fraction of the run finished once it is done.
+function icsMilestones(){
+  const secs = icsSections();
+  if(!secs) return null;
+  const out = [];
+  let at = 0, cum = 0;
+  const total = (WEIGHTED && TOTALW > 0) ? TOTALW : TOTAL;
+  secs.forEach(sec=>{
+    const n = sec.items.length;
+    for(let i = 0; i < n; i++){
+      cum += (WEIGHTED && TOTALW > 0) ? (WEIGHT[at + i] || 0) : 1;
+    }
+    out.push({title: sec.title || '', from: at + 1, to: at + n,
+              frac: total > 0 ? Math.min(1, cum / total) : 0});
+    at += n;
+  });
+  return out;
+}
 function downloadICS(){
   const ws = windows();
   const pl = planOf();
@@ -11660,6 +11704,40 @@ function downloadICS(){
   const ymd = iso=> iso.replace(/-/g, '');
   const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//clubd//EN'];
   if(!ws || !ws.length){
+    // CLU-144. A qualifying list exports one event per section instead of the
+    // single finish date. The last one lands ON the finish date rather than
+    // near it, so the date the reader actually chose is still in the calendar
+    // — it is simply named after what it finishes.
+    const ms = icsMilestones();
+    if(ms && pl.target_date){
+      const start = pl.start_date || todayISO();
+      const d0 = new Date(start + 'T00:00:00');
+      const d1 = new Date(pl.target_date + 'T00:00:00');
+      const span = Math.max(1, Math.round((d1 - d0) / DAY));
+      ms.forEach((m, k)=>{
+        const last = k === ms.length - 1;
+        // the final boundary IS the finish; rounding must not move it
+        const on = last ? pl.target_date
+                        : shiftISO(start, Math.max(1, Math.round(m.frac * span)));
+        lines.push('BEGIN:VEVENT',
+          'UID:gw-' + SLUG + '-s' + (k + 1) + '@groupwatch',
+          'DTSTART;VALUE=DATE:' + ymd(on),
+          'DTEND;VALUE=DATE:' + ymd(shiftISO(on, 1)),
+          // the boundary, not a count: the section's own name and the rows it
+          // covers, so it still means something when you are behind
+          'SUMMARY:' + icsEscape(PROP.title + ' — ' + m.title
+                       + ' (' + m.from + '–' + m.to + ')'),
+          'DESCRIPTION:' + icsEscape(
+            (last ? 'The last of it. ' : '')
+            + UNIT.many.charAt(0).toUpperCase() + UNIT.many.slice(1)
+            + ' ' + m.from + ' to ' + m.to + ' of ' + TOTAL
+            + (group ? ', with ' + group.name : ', on your own') + '.'),
+          'END:VEVENT');
+      });
+      lines.push('END:VCALENDAR');
+      icsSave(lines);
+      return;
+    }
     lines.push('BEGIN:VEVENT',
       // its own UID stem, so a finish-date export and a window export can sit
       // in one calendar without overwriting each other
