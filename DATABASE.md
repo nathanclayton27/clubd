@@ -67,6 +67,22 @@ yet re-ticked looks like. The site reads it as narrowly as that allows:
   upload, because a tick is an instruction, and so would `backfillSync`'s
   cross-list sweep if it happened to add an item to that list.)
 
+**A delete made with no session is finished later, from the client.** Signed
+out there is no account to empty the row with, so the delete reached this
+browser and nothing else — and because nothing recorded that it had happened,
+the next sign-in put the run back twice over: cloud discovery re-registered
+the key from a row still full of ticks, and the shelf's whole-account read
+wrote the local tick set out again underneath it. The missing record is now
+local as well — `gw:fwgone:<slug>`, the runs this browser has deleted — and it
+does two things: it suppresses that one key in every read above, and the first
+time an account is in hand on that list it replays the emptying exactly as a
+signed-in delete would have, **once**. Once, because a second device that still
+holds the run goes on ticking it, and a replay that fired on every sign-in
+would be this browser deleting that device's run for ever over a decision
+taken one time. **Still no schema change**: the replay is the same
+select-then-delete-then-empty on `progress`, against the run's own row and no
+other.
+
 So a delete reaches the device that ran it and the account's row, and no
 further. **A delete that propagates across devices is not possible with this
 schema** and would need a tombstone the other device can recognise — a
