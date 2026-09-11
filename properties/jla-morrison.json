@@ -1,0 +1,528 @@
+{
+  "slug": "jla-morrison",
+  "title": "JLA",
+  "subtitle": "Grant Morrison's run · post-Crisis DC",
+  "kind": "comics",
+  "popularity": 45,
+  "year": "1997–2000",
+  "blurb": "The 34 issues Morrison actually wrote, from JLA #1 to #41, with the one-shots and the two books collected alongside them.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#1D4FA3",
+  "accentDark": "#5D93E8",
+  "tiers": true,
+  "notes": [
+    [
+      "Tiers.",
+      "1 is the run on the monthly book — the 33 issues Morrison wrote between #1 and #41 — plus the Secret Files short, which the run's own collection files with #1–9. The remaining one, JLA #1,000,000, sits in Tier 2 with the crossover it is a chapter of. 2 is the rest of what is collected alongside the run: the two one-shots, that crossover, and the two books either side of the end. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "Which continuity.",
+      "Post-Crisis DC, a decade before Flashpoint rebooted it. The Flash is Wally West and the Green Lantern is Kyle Rayner — the mantles, not Barry Allen and Hal Jordan, and the book treats them as the League's own. Nothing outside it is required reading: the stories are deliberately self-contained, which was half the pitch."
+    ],
+    [
+      "The fill-ins are not here.",
+      "Morrison wrote #1–17, #22–26, #28–31, #34, #36–41 and #1,000,000. The gaps — #18, #19, #20, #21, #27, #32, #33, #35 — are Mark Waid, Mark Millar, Devin Grayson and J. M. DeMatteis, and they are left out rather than marked optional, because they are not this run. The trades collect them, so a trade's contents and a section here will not always agree."
+    ],
+    [
+      "Where the run ends.",
+      "One rule, applied throughout: if the run's own Deluxe Editions collect it, it is on this list. That takes in the Secret Files short, both one-shots, JLA #1,000,000, Earth 2 and Classified. It leaves out Aztek, and the thirty-four other series that put out a #1,000,000 issue. It also leaves out JLA Secret Files & Origins #2, which the Strength in Numbers trade collects but Morrison's bibliography does not claim. The single addition is DC One Million #1–4, marked optional, because the JLA chapter is a chapter of it."
+    ],
+    "Issues and credits from Wikipedia's JLA article — the creative-team field, the publication history, and the collected editions, which are also where the section titles come from. The one-shots, Earth 2, Classified and DC One Million from Grant Morrison's Wikipedia bibliography; the Prometheus one-shot is placed from the dates in that character's article."
+  ],
+  "sections": [
+    {
+      "id": "nwo",
+      "tier": 1,
+      "title": "New World Order",
+      "sub": "JLA #1–4 · 1997 · the relaunch",
+      "intro": "Seven characters and a base on the Moon. DC had spent a decade rotating the League through spin-offs and second-stringers; the pitch here was to put the biggest names back on one team and size the threats against them. It became DC's best-selling book on the strength of it.\n\nTwo of the seven seats are held by successors rather than the originals — Wally West is the Flash, Kyle Rayner is the Green Lantern. Beyond that there is nothing to catch up on. The team was reassembled a few months earlier in Justice League: A Midsummer's Nightmare, which is not Morrison's and is not on this list.",
+      "items": [
+        {
+          "id": "jla-1",
+          "t": "JLA",
+          "n": "#1",
+          "note": "the pitch, in four issues",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-2",
+          "t": "JLA",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-3",
+          "t": "JLA",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-4",
+          "t": "JLA",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "dreams",
+      "tier": 1,
+      "title": "American Dreams",
+      "sub": "#5–9 · mostly one-and-dones",
+      "intro": "Shorter stories, and the stretch where the roster starts moving. The Secret Files short at the end is collected with #1–9 in the Deluxe Edition, which is why it sits here.",
+      "items": [
+        {
+          "id": "jla-5",
+          "t": "JLA",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-6",
+          "t": "JLA",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-7",
+          "t": "JLA",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-8",
+          "t": "JLA",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-9",
+          "t": "JLA",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-secret-files-1",
+          "t": "JLA Secret Files & Origins",
+          "n": "#1",
+          "note": "the Star-Seed short, co-written with Mark Millar",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "rock",
+      "tier": 1,
+      "title": "Rock of Ages",
+      "sub": "#10–15 · the arc people name",
+      "intro": "Six issues, and the one most often pointed at when someone says this run is the good one. Judge the whole thing by it — if this does not land, the rest will not either.",
+      "items": [
+        {
+          "id": "jla-10",
+          "t": "JLA",
+          "n": "#10",
+          "note": "",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-11",
+          "t": "JLA",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-12",
+          "t": "JLA",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-13",
+          "t": "JLA",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-14",
+          "t": "JLA",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-15",
+          "t": "JLA",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "oneshots",
+      "tier": 2,
+      "title": "Two one-shots",
+      "sub": "1997–98 · collected with #10–17",
+      "intro": "Both are Morrison's, and both are collected inside the run's own Deluxe Edition rather than alongside it. Prometheus came out in February 1998 and its villain turns up in JLA the month after, so it is read here rather than filed at the back.",
+      "items": [
+        {
+          "id": "new-years-evil-prometheus-1",
+          "t": "New Year's Evil: Prometheus",
+          "n": "#1",
+          "note": "Morrison with Arnie Jorgensen · the villain's first issue, a month before #16",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-wildcats-1",
+          "t": "JLA/WildC.A.T.s",
+          "n": "#1",
+          "note": "Morrison with Val Semeiks · a crossover with the WildStorm team",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "strength",
+      "tier": 1,
+      "title": "Strength in Numbers",
+      "sub": "#16–17 and #22–23 · the rest of the trade is other writers",
+      "intro": "Morrison wrote #16–17 and #22–23. The four issues between them are Mark Waid's and are not on this list — the trade that collects this range carries all eight, so its contents and this section will not agree.",
+      "items": [
+        {
+          "id": "jla-16",
+          "t": "JLA",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-17",
+          "t": "JLA",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-22",
+          "t": "JLA",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-23",
+          "t": "JLA",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "million",
+      "tier": 2,
+      "title": "DC One Million",
+      "sub": "November 1998 · #23 ends two pages into it",
+      "intro": "For one month almost every DC title shipped an issue numbered #1,000,000, set in the 853rd century. Morrison wrote the four-issue core miniseries as well as the JLA chapter, and the last two pages of #23 lead into it.\n\nThe JLA issue is the one the run's own collection keeps, so it is first here. The core four are marked optional: they are the crossover rather than the run, and the order they interleave with the thirty-four other tie-in issues is not something this list tries to settle.",
+      "items": [
+        {
+          "id": "jla-1000000",
+          "t": "JLA",
+          "n": "#1,000,000",
+          "note": "the run's chapter of it",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dc-one-million-1",
+          "t": "DC One Million",
+          "n": "#1",
+          "note": "Morrison with Val Semeiks · the core miniseries",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dc-one-million-2",
+          "t": "DC One Million",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dc-one-million-3",
+          "t": "DC One Million",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dc-one-million-4",
+          "t": "DC One Million",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "justice",
+      "tier": 1,
+      "title": "Justice for All",
+      "sub": "#24–26 and #28–31 · #27 is Mark Millar's",
+      "intro": "Seven of the ten issues the trade carries: #27 is Mark Millar's, #32 is Devin Grayson with Mark Waid, #33 is Waid alone, and none of the three is here.",
+      "items": [
+        {
+          "id": "jla-24",
+          "t": "JLA",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-25",
+          "t": "JLA",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-26",
+          "t": "JLA",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-28",
+          "t": "JLA",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-29",
+          "t": "JLA",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-30",
+          "t": "JLA",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-31",
+          "t": "JLA",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "ww3",
+      "tier": 1,
+      "title": "World War III",
+      "sub": "#34 and #36–41 · the finish",
+      "intro": "The last arc, and the one the whole run has been feeding. #35 is J. M. DeMatteis's and sits inside the trade but outside this list. #41 is Morrison's last issue of the book.",
+      "items": [
+        {
+          "id": "jla-34",
+          "t": "JLA",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-36",
+          "t": "JLA",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-37",
+          "t": "JLA",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-38",
+          "t": "JLA",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-39",
+          "t": "JLA",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-40",
+          "t": "JLA",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-41",
+          "t": "JLA",
+          "n": "#41",
+          "note": "Morrison's last issue",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "coda",
+      "tier": 2,
+      "title": "After the run",
+      "sub": "2000 and 2005 · collected with it, not part of it",
+      "intro": "Two Morrison JLA books that are not the monthly title but are collected inside the run's Deluxe Edition. Earth 2 is a graphic novel, published in 2000 as the run was ending. Classified is his return to the characters five years later.",
+      "items": [
+        {
+          "id": "jla-earth-2",
+          "t": "JLA: Earth 2",
+          "n": "2000",
+          "note": "a graphic novel with Frank Quitely",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-classified-1",
+          "t": "JLA: Classified",
+          "n": "#1",
+          "note": "Morrison with Ed McGuinness · collected as Ultramarine Corps",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-classified-2",
+          "t": "JLA: Classified",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-classified-3",
+          "t": "JLA: Classified",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

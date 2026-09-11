@@ -11,7 +11,8 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-226 lists, from a ten-episode anime to a 1,418-row film collection, a
+227 lists, from a ten-episode anime to a 1,418-row film collection, a
+
 
 
 
@@ -41,6 +42,9 @@ original to the last page Ed Brubaker wrote, one section per run),
 (Hickman's Marvel run), *Fantastic Four* (#1 to #569, stopping one issue
 short of Hickman so the two lists meet without overlapping a single row),
 *Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Venom* (Cates and Stegman), *JLA* (Morrison's
+run — the 34 issues he actually wrote, with the fill-ins by other hands
+left out rather than padded in to look complete), *One Piece* in
 
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than

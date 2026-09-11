@@ -4221,6 +4221,26 @@
     "random": true
   },
   {
+    "slug": "jla-morrison",
+    "media": [
+      "comics"
+    ],
+    "title": "JLA",
+    "subtitle": "Grant Morrison's run · post-Crisis DC",
+    "kind": "comics",
+    "year": "1997–2000",
+    "popularity": 45,
+    "blurb": "The 34 issues Morrison actually wrote, from JLA #1 to #41, with the one-shots and the two books collected alongside them.",
+    "accent": "#1D4FA3",
+    "accentDark": "#5D93E8",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 45
+  },
+  {
     "slug": "satoshi-kon",
     "media": [
       "anime"
