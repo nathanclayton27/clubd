@@ -1,11 +1,11 @@
 {
   "slug": "green-lantern",
   "title": "Green Lantern",
-  "subtitle": "Geoff Johns, Rebirth to Blackest Night",
+  "subtitle": "Geoff Johns, Rebirth to Blackest Night · post-Crisis continuity",
   "kind": "comics",
   "popularity": 50,
   "year": "2004–2011",
-  "blurb": "192 issues from Green Lantern: Rebirth #1 to Blackest Night #8 and its coda, in the order they're meant to be read.",
+  "blurb": "192 issues, Green Lantern: Rebirth #1 to Blackest Night #8 and the coda after it, in the order they're meant to be read.",
   "unit": {
     "one": "issue",
     "many": "issues"
@@ -20,12 +20,12 @@
   "tiers": true,
   "notes": [
     [
-      "Tiers.",
-      "1 is the readable path — Rebirth, the Green Lantern monthly, and Blackest Night itself. 2 is the Corps book, which is where Guy, Kyle and John live and where half of both wars is fought. 3 is genuinely optional. The minimum viable path is Tier 1 alone."
+      "The mantle, not the man.",
+      "Hal Jordan is the lead and this is his comeback, but the ring has had four holders from Earth and all four are in here: John Stewart and Guy Gardner throughout, Kyle Rayner carrying the Corps book. This is post-Crisis continuity, before Flashpoint rebooted it — and the Rebirth in the title is the 2004 miniseries, not the 2016 relaunch that borrowed the word."
     ],
     [
-      "The mantle, not the man.",
-      "Hal Jordan is the lead and this is his comeback, but the ring has had four holders from Earth and all four are in here: John Stewart and Guy Gardner throughout, Kyle Rayner carrying the Corps book. This is post-Crisis continuity, before Flashpoint rebooted it."
+      "Tiers.",
+      "1 is the readable path — Rebirth, the Green Lantern monthly, and Blackest Night itself. 2 is the Corps book, which is where Guy, Kyle and John live and where half of both wars is fought. 3 is genuinely optional. The minimum viable path is Tier 1 alone."
     ],
     [
       "Where it stops.",
@@ -253,7 +253,7 @@
       "tier": 2,
       "title": "Green Lantern Corps: Recharge",
       "sub": "2005–2006 · the Corps book starts here",
-      "intro": "A five-issue miniseries that reopens the Corps as a going concern and hands Guy Gardner and Kyle Rayner the book they spend the next six years in. Tier 2 because the main title carries the plot without it — but half of both wars is fought over here, and reading only the Hal issues leaves the Corps as scenery.",
+      "intro": "A five-issue miniseries that reopens the Corps as a going concern and hands Guy Gardner and Kyle Rayner the book they spend the rest of this list in. Tier 2 because the main title carries the plot without it — but half of both wars is fought over here, and reading only the Hal issues leaves the Corps as scenery.",
       "items": [
         {
           "id": "gl-recharge-1",
@@ -1140,7 +1140,7 @@
       "tier": 1,
       "title": "Blackest Night",
       "sub": "2009–2010 · the main series",
-      "intro": "The spine of the event. It opens with a Free Comic Book Day issue numbered #0, which is a real chapter and not a preview.\n\nThe three books below ran in parallel, month for month, and no source this list reads puts them in a single issue-by-issue order. So each title is kept whole rather than guessing an interleave: read the main series, then the Green Lantern issues, then the Corps ones.",
+      "intro": "The spine of the event. It opens with a Free Comic Book Day issue numbered #0, which is a real chapter and not a preview.\n\nThis section and the two after it ran in parallel, month for month, and no source this list reads puts them in a single issue-by-issue order. So each title is kept whole rather than interleaved on a guess: read the main series, then the Green Lantern issues, then the Corps ones.",
       "items": [
         {
           "id": "gl-bn-0",

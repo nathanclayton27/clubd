@@ -434,8 +434,8 @@ section(
     id="recharge", tier=2, title="Green Lantern Corps: Recharge",
     sub="2005–2006 · the Corps book starts here",
     intro="A five-issue miniseries that reopens the Corps as a going concern and "
-          "hands Guy Gardner and Kyle Rayner the book they spend the next six "
-          "years in. Tier 2 because the main title carries the plot without it — "
+          "hands Guy Gardner and Kyle Rayner the book they spend the rest of "
+          "this list in. Tier 2 because the main title carries the plot without it — "
           "but half of both wars is fought over here, and reading only the "
           "Hal issues leaves the Corps as scenery.",
     items=mini_rows("Green Lantern Corps: Recharge",
@@ -587,11 +587,12 @@ section(
     id="blackest", tier=1, title="Blackest Night",
     sub="2009–2010 · the main series",
     intro="The spine of the event. It opens with a Free Comic Book Day issue "
-          "numbered #0, which is a real chapter and not a preview.\n\nThe three "
-          "books below ran in parallel, month for month, and no source this list "
-          "reads puts them in a single issue-by-issue order. So each title is "
-          "kept whole rather than guessing an interleave: read the main series, "
-          "then the Green Lantern issues, then the Corps ones.",
+          "numbered #0, which is a real chapter and not a preview.\n\nThis "
+          "section and the two after it ran in parallel, month for month, and "
+          "no source this list reads puts them in a single issue-by-issue "
+          "order. So each title is kept whole rather than interleaved on a "
+          "guess: read the main series, then the Green Lantern issues, then "
+          "the Corps ones.",
     items=[row("Blackest Night", n,
                "Free Comic Book Day" if n == 0 else "", key="bn")
            for n in expand(_bn_main[0])],
@@ -696,28 +697,33 @@ assert TOTAL > 150, "the list came out short: %d rows" % TOTAL
 PROP = {
     "slug": SLUG,
     "title": "Green Lantern",
-    "subtitle": "Geoff Johns, Rebirth to Blackest Night",
+    # The continuity goes in the subtitle because "Rebirth" is also the name
+    # of a LATER DC continuity, and because Lanterns sits a few rows away in
+    # the catalogue and is a television show.
+    "subtitle": "Geoff Johns, Rebirth to Blackest Night · post-Crisis continuity",
     "kind": "comics",
     "popularity": 50,
     "year": "2004–2011",
-    "blurb": "%d issues from Green Lantern: Rebirth #1 to Blackest Night #8 and "
-             "its coda, in the order they're meant to be read." % TOTAL,
+    "blurb": "%d issues, Green Lantern: Rebirth #1 to Blackest Night #8 and "
+             "the coda after it, in the order they're meant to be read." % TOTAL,
     "unit": {"one": "issue", "many": "issues"},
     "verb": {"base": "read", "past": "read", "ing": "reading"},
     "accent": "#117A3E",
     "accentDark": "#3BB273",
     "tiers": True,
     "notes": [
+        ["The mantle, not the man.",
+         "Hal Jordan is the lead and this is his comeback, but the ring has had "
+         "four holders from Earth and all four are in here: John Stewart and "
+         "Guy Gardner throughout, Kyle Rayner carrying the Corps book. This is "
+         "post-Crisis continuity, before Flashpoint rebooted it — and the "
+         "Rebirth in the title is the 2004 miniseries, not the 2016 relaunch "
+         "that borrowed the word."],
         ["Tiers.",
          "1 is the readable path — Rebirth, the Green Lantern monthly, and "
          "Blackest Night itself. 2 is the Corps book, which is where Guy, Kyle "
          "and John live and where half of both wars is fought. 3 is genuinely "
          "optional. The minimum viable path is Tier 1 alone."],
-        ["The mantle, not the man.",
-         "Hal Jordan is the lead and this is his comeback, but the ring has had "
-         "four holders from Earth and all four are in here: John Stewart and "
-         "Guy Gardner throughout, Kyle Rayner carrying the Corps book. This is "
-         "post-Crisis continuity, before Flashpoint rebooted it."],
         ["Where it stops.",
          "The arc ends at Blackest Night #8. The ten Green Lantern issues "
          "banded Brightest Day are here as a tier 3 coda because they clear up "
