@@ -57,6 +57,12 @@ DATA = ROOT / "tools" / "data" / "captain-america.json"
 # Series on marvel.com, by the slug Marvel's own A-Z index uses. Resolved
 # against tools/data/marvel_series_index.json so a mistyped slug fails the
 # build instead of shipping a dead link — the same guard make_civilwar.py has.
+#
+# The wiki files the 1954 issues under the same volume as the 1968 book, so
+# this map alone sent #76-78 to Marvel's "Captain America (1968-1996)", which
+# starts at #100. A section can override its link below, and every link is
+# checked against the years in the slug, which is Marvel's own statement of
+# what the series covers.
 SERIES_SLUG = {
     "Captain America Comics Vol 1": "captain_america_comics_1941_1954",
     "Tales of Suspense Vol 1": "tales_of_suspense_1959_1968",
@@ -160,6 +166,9 @@ SECTIONS = [
         id="fifties", tier=3, title="The 1954 attempt",
         sub="#76–78 · three issues and out",
         spans=[(V1, 76, 78)],
+        # Marvel carries these three under Captain America Comics
+        # (1941-1954), not under the 1968 book the wiki files them with.
+        link={V1: ("Captain America Comics", "captain_america_comics_1941_1954")},
         writer="Don Rico", bar=set(),
         intro="Atlas brought the character back in 1954 for three issues and "
               "then stopped. They are filed under the same volume as the 1968 "
@@ -483,6 +492,7 @@ def main():
     sections, seen = [], set()
     for spec in SECTIONS:
         items, years, off = [], [], set()
+        by_series = {}
         for series, lo, hi in spec["spans"]:
             have = sorted(int(n) for n in issues[series])
             span = [n for n in have if lo <= n <= hi]
@@ -498,6 +508,7 @@ def main():
                 assert key not in seen, "issue listed twice: %s #%d" % key
                 seen.add(key)
                 years.append(rec["year"])
+                by_series.setdefault(series, []).append(rec["year"])
                 row = {"id": "%s-%d" % (pre, n), "t": title, "n": "#%d" % n,
                        "note": NOTE.get(key, ""), "star": STAR.get(key, 0),
                        "opt": 0, "url": ""}
@@ -517,12 +528,28 @@ def main():
 
         links, seen_links = [], set()
         for series, _, _ in spec["spans"]:
-            mslug = SERIES_SLUG[series]
+            label, mslug = spec.get("link", {}).get(
+                series, (DISPLAY[series][0], SERIES_SLUG[series]))
             assert mslug in idx, "no such Marvel series slug: %s" % mslug
+
+            # Marvel's slug ends in the years the series ran, so a link that
+            # cannot contain the issues above it says so in its own name.
+            # This is what sent the 1954 issues to a 1968 series.
+            span_years = [n for n in by_series[series]]
+            m = re.search(r"_(\d{4})_(\d{4}|present)$", mslug) or \
+                re.search(r"_(\d{4})()$", mslug)
+            assert m, "no year span in Marvel series slug: %s" % mslug
+            lo_y = int(m.group(1))
+            hi_y = 9999 if m.group(2) in ("present", "") else int(m.group(2))
+            assert lo_y <= min(span_years) and max(span_years) <= hi_y, (
+                "%s: %s is cover-dated %d–%d, which %s does not cover"
+                % (spec["id"], series, min(span_years), max(span_years),
+                   mslug))
+
             if mslug in seen_links:
                 continue
             seen_links.add(mslug)
-            links.append({"label": DISPLAY[series][0],
+            links.append({"label": label,
                           "url": "https://www.marvel.com/comics/series/%s/%s"
                                  % (idx[mslug], mslug)})
 
