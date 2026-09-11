@@ -25,7 +25,7 @@
     ],
     [
       "Tiers.",
-      "1 is the readable path — Rebirth, the Green Lantern monthly, and Blackest Night itself. 2 is the Corps book, which is where Guy, Kyle and John live and where half of both wars is fought. 3 is genuinely optional. The minimum viable path is Tier 1 alone."
+      "1 is the readable path — Rebirth, the Green Lantern monthly, Blackest Night itself, and the Corps chapters of the Sinestro Corps War, which is a crossover you cannot read half of. 2 is the rest of the Corps book, where Guy, Kyle and John live and where half of Blackest Night is fought. 3 is genuinely optional. The minimum viable path is Tier 1 alone."
     ],
     [
       "Where it stops.",
@@ -35,7 +35,7 @@
       "Not the television show.",
       "Lanterns, elsewhere in the catalogue, is the 2026 series. This is the comics, and the two share almost nothing but a ring."
     ],
-    "Issue ranges machine-read from Wikipedia: the collected-editions tables for Green Lantern vol. 4 and Green Lantern Corps vol. 2, the Sinestro Corps War article's own part-by-part breakdown, and the Blackest Night article's titles-involved table, which is where the tie-in rows and their writers come from."
+    "Issue ranges machine-read from Wikipedia: the collected-editions tables for Green Lantern vol. 4 and Green Lantern Corps vol. 2, the Sinestro Corps War article's part numbering — including the citation that names its last part — and the Blackest Night article's titles-involved table, which is where the tie-in rows and their writers come from."
   ],
   "sections": [
     {
@@ -523,7 +523,7 @@
       "tier": 1,
       "title": "The Sinestro Corps War",
       "sub": "2007 · the crossover, chapter by chapter across both titles",
-      "intro": "The crossover that made the run. It alternates between the two monthlies chapter by chapter, which is the only genuinely difficult thing about reading it — the order below is the one the article states: the one-shot, then the two books trading off, then an epilogue back in the main title.\n\nGreen Lantern Corps #19 is not a numbered part. It was reworked after the fact and sits with the war in every collection of it, so it sits here.",
+      "intro": "The crossover that made the run. It alternates between the two monthlies chapter by chapter, which is the only genuinely difficult thing about reading it. The article's own numbering runs: the one-shot is part one, parts two to ten alternate between the two books, and part eleven is Green Lantern #25, whose release was delayed two weeks — so the Corps book's last chapter comes before it. The epilogue is back in the main title.\n\nGreen Lantern Corps #19 is not a numbered part. It was rewritten after the fact, in response to the reaction to the story, and the hardcover of the war's second half collects it, so it sits here.",
       "items": [
         {
           "id": "gl-scwspecial-1",
@@ -663,7 +663,7 @@
       "tier": 3,
       "title": "Tales of the Sinestro Corps",
       "sub": "2007 · the one-shots, and the one tie-in outside the Lantern books",
-      "intro": "Late additions DC commissioned once the war started selling, each one a single issue about a single member of the other side. None of them is load-bearing. The Secret Files issue is a reference book — rosters and back story — rather than a story.",
+      "intro": "Late additions DC commissioned once the war started selling, each one a single issue about one character: Parallax, the Cyborg Superman, Superman-Prime and Ion. None of them is load-bearing. The Secret Files issue is a reference book — rosters and back story — rather than a story.",
       "items": [
         {
           "id": "gl-talesparallax-1",
@@ -732,7 +732,7 @@
       "tier": 1,
       "title": "After the war",
       "sub": "2008 · the quiet stretch that plants everything",
-      "intro": "Two issues of fallout and one eight-page teaser. Short, and the groundwork for the next two years is all in here.",
+      "intro": "Two issues of fallout and a one-shot that trails what comes next. Short, and the groundwork for the next two years is all in here.",
       "items": [
         {
           "id": "gl-v4-27",
@@ -756,7 +756,7 @@
           "id": "gl-dcu-0",
           "t": "DC Universe",
           "n": "#0",
-          "note": "a line-wide teaser; collected with these issues in the Johns omnibus",
+          "note": "not a Green Lantern book; more of Blackest Night was first revealed here, and the Johns omnibus collects it with these issues",
           "star": 0,
           "opt": 1,
           "url": ""
@@ -1345,7 +1345,7 @@
       "tier": 2,
       "title": "Blackest Night · Green Lantern Corps",
       "sub": "2009–2010 · the Corps book through the event",
-      "intro": "The same war from Oa. Tier 2 for the same reason the Corps book has been tier 2 all along — the plot survives without it and the run does not.",
+      "intro": "The same war from Oa. Tier 2 for the same reason the Corps book has been tier 2 all along — the plot survives without it and the run does not.\n\nIt stops at #46, which is where the event's own titles table stops. The collection runs one further, to #47, but Brightest Day's titles list hands Green Lantern Corps #47–57 to the event after this one — so #47 is the next book's first issue rather than this one's last.",
       "items": [
         {
           "id": "gl-glc-39",
@@ -2039,7 +2039,7 @@
           "id": "gl-larfleeze-1",
           "t": "Green Lantern: Larfleeze Christmas Special",
           "n": "#1",
-          "note": "never bannered with the event, and collected with these issues anyway",
+          "note": "never bannered with the event; the only volume that collects it runs well past where this list stops",
           "star": 0,
           "opt": 1,
           "url": ""

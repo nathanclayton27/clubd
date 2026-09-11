@@ -539,11 +539,14 @@ section(
     sub="2007 · the crossover, chapter by chapter across both titles",
     intro="The crossover that made the run. It alternates between the two "
           "monthlies chapter by chapter, which is the only genuinely difficult "
-          "thing about reading it — the order below is the one the article "
-          "states: the one-shot, then the two books trading off, then an "
-          "epilogue back in the main title.\n\nGreen Lantern Corps #19 is not a "
-          "numbered part. It was reworked after the fact and sits with the war "
-          "in every collection of it, so it sits here.",
+          "thing about reading it. The article's own numbering runs: the "
+          "one-shot is part one, parts two to ten alternate between the two "
+          "books, and part eleven is Green Lantern #25, whose release was "
+          "delayed two weeks — so the Corps book's last chapter comes before "
+          "it. The epilogue is back in the main title.\n\nGreen Lantern Corps "
+          "#19 is not a numbered part. It was rewritten after the fact, in "
+          "response to the reaction to the story, and the hardcover of the "
+          "war's second half collects it, so it sits here.",
     items=_scw_items,
     links=links(("The crossover", W_SCW), ("Green Lantern vol. 4", W_GL),
                 ("Green Lantern Corps vol. 2", W_GLC)),
@@ -552,10 +555,11 @@ section(
 section(
     id="talessinestro", tier=3, title="Tales of the Sinestro Corps",
     sub="2007 · the one-shots, and the one tie-in outside the Lantern books",
-    intro="Late additions DC commissioned once the war started selling, each one "
-          "a single issue about a single member of the other side. None of them "
-          "is load-bearing. The Secret Files issue is a reference book — rosters "
-          "and back story — rather than a story.",
+    intro="Late additions DC commissioned once the war started selling, each "
+          "one a single issue about one character: Parallax, the Cyborg "
+          "Superman, Superman-Prime and Ion. None of them is load-bearing. The "
+          "Secret Files issue is a reference book — rosters and back story — "
+          "rather than a story.",
     items=[one_shot("Tales of the Sinestro Corps: Parallax #1", "Ron Marz",
                     "talesparallax"),
            one_shot("Tales of the Sinestro Corps: Cyborg-Superman #1",
@@ -575,12 +579,13 @@ section(
 section(
     id="prelude", tier=1, title="After the war",
     sub="2008 · the quiet stretch that plants everything",
-    intro="Two issues of fallout and one eight-page teaser. Short, and the "
-          "groundwork for the next two years is all in here.",
+    intro="Two issues of fallout and a one-shot that trails what comes next. "
+          "Short, and the groundwork for the next two years is all in here.",
     items=gl_rows(inside("#27-28", "Green Lantern vol. 4 #26–28, 36–38", "gl"))
           + [one_shot("DC Universe #0",
-                      "a line-wide teaser; collected with these issues in the "
-                      "Johns omnibus", "dcu", opt=1)],
+                      "not a Green Lantern book; more of Blackest Night was "
+                      "first revealed here, and the Johns omnibus collects it "
+                      "with these issues", "dcu", opt=1)],
     links=links(("Green Lantern vol. 4", W_GL)),
 )
 
@@ -663,12 +668,28 @@ section(
     links=links(("The event", W_BN), ("Green Lantern vol. 4", W_GL)),
 )
 
+# The Corps book has two end points for this event in the sources, and the
+# section below says on the page which one the list follows. All three
+# statements are checked here so that sentence cannot quietly go stale: the
+# event's titles table stops at #46, the collection runs one further to #47,
+# and Brightest Day's own titles list opens the NEXT event at #47 — which is
+# what settles it.
+_GLC_BN = expand(bn("Green Lantern Corps", WAR)[0])
+assert _GLC_BN[-1] == 46, \
+    "the Blackest Night titles table no longer ends the Corps book at #46"
+cite("Green Lantern Corps'' (vol. 2) #39-47", "bn", "glc")
+cite("Green Lantern Corps (vol. 2) #47-57", "brightest")
+
 section(
     id="blackestglc", tier=2, title="Blackest Night · Green Lantern Corps",
     sub="2009–2010 · the Corps book through the event",
-    intro="The same war from Oa. Tier 2 for the same reason the Corps book has "
-          "been tier 2 all along — the plot survives without it and the run does "
-          "not.",
+    intro="The same war from Oa. Tier 2 for the same reason the Corps book "
+          "has been tier 2 all along — the plot survives without it and the "
+          "run does not.\n\nIt stops at #46, which is where the event's own "
+          "titles table stops. The collection runs one further, to #47, but "
+          "Brightest Day's titles list hands Green Lantern Corps #47–57 to the "
+          "event after this one — so #47 is the next book's first issue rather "
+          "than this one's last.",
     items=glc_rows(bn("Green Lantern Corps", WAR)[0]),
     links=links(("The event", W_BN), ("Green Lantern Corps vol. 2", W_GLC)),
 )
@@ -736,8 +757,9 @@ section(
           "wants a list of its own.",
     items=gl_rows(agrees(BRIGHTEST_GL, "Green Lantern vol. 4 #53–62", "gl"))
           + [one_shot("Green Lantern: Larfleeze Christmas Special",
-                      "never bannered with the event, and collected with these "
-                      "issues anyway", "larfleeze", opt=1, page="brightest",
+                      "never bannered with the event; the only volume that "
+                      "collects it runs well past where this list stops",
+                      "larfleeze", opt=1, page="brightest",
                       title="Green Lantern: Larfleeze Christmas Special",
                       num=1)],
     links=links(("Green Lantern vol. 4", W_GL), ("The event", W_BRIGHTEST)),
@@ -773,10 +795,12 @@ PROP = {
          "Rebirth in the title is the 2004 miniseries, not the 2016 relaunch "
          "that borrowed the word."],
         ["Tiers.",
-         "1 is the readable path — Rebirth, the Green Lantern monthly, and "
-         "Blackest Night itself. 2 is the Corps book, which is where Guy, Kyle "
-         "and John live and where half of both wars is fought. 3 is genuinely "
-         "optional. The minimum viable path is Tier 1 alone."],
+         "1 is the readable path — Rebirth, the Green Lantern monthly, "
+         "Blackest Night itself, and the Corps chapters of the Sinestro Corps "
+         "War, which is a crossover you cannot read half of. 2 is the rest of "
+         "the Corps book, where Guy, Kyle and John live and where half of "
+         "Blackest Night is fought. 3 is genuinely optional. The minimum "
+         "viable path is Tier 1 alone."],
         ["Where it stops.",
          "The arc ends at Blackest Night #8. The ten Green Lantern issues "
          "banded Brightest Day are here as a tier 3 coda because they clear up "
@@ -787,9 +811,10 @@ PROP = {
          "comics, and the two share almost nothing but a ring."],
         "Issue ranges machine-read from Wikipedia: the collected-editions "
         "tables for Green Lantern vol. 4 and Green Lantern Corps vol. 2, the "
-        "Sinestro Corps War article's own part-by-part breakdown, and the "
-        "Blackest Night article's titles-involved table, which is where the "
-        "tie-in rows and their writers come from.",
+        "Sinestro Corps War article's part numbering — including the "
+        "citation that names its last part — and the Blackest Night article's "
+        "titles-involved table, which is where the tie-in rows and their "
+        "writers come from.",
     ],
     "sections": SECTIONS,
 }

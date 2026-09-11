@@ -437,10 +437,13 @@ comicbookreadingorders.com. Ultimate Marvel order from Comic Book Herald.
 Green Lantern issue ranges read from Wikipedia's collected-editions tables for
 *Green Lantern* vol. 4 and *Green Lantern Corps* vol. 2, its *Blackest Night*
 titles-involved table for the tie-ins and their writers, and the *Sinestro
-Corps War* article for that crossover's part order, which it states outright
-and the generator zips rather than types. Where the sources do not order two
-books against each other — the three Blackest Night titles ran in parallel —
-each title is kept whole rather than interleaved on a guess.
+Corps War* article for that crossover's part order. That article numbers the
+first and last parts outright and describes the alternation in between, so the
+generator reads both ends and derives the middle. It does not zip the two
+issue ranges together, because zipping them disagrees with the article about
+which issue is the finale. Where the sources do not order two books against
+each other — the three Blackest Night titles ran in parallel — each title is
+kept whole rather than interleaved on a guess.
 
 MCU Anthology built from Wikipedia's live-action Marvel features table, and DC
 Anthology from the equivalent DC film and television tables including the
