@@ -81,6 +81,32 @@ counts of which four were wrong (see below). Three of the six invented catalogue
 data, which is the thing this module exists not to do, so each of the six has its
 own pin in tools/test_wiki_parser.py alongside the nine.
 
+AND TWO MORE AFTER THAT, which the review of the six caught still standing. Both
+were episode TITLES, and a wrong title is the expensive kind of wrong: a dropped
+row shows up as a short list, and an invented one looks like an answer. Between
+them they are the whole of what this round changed — run
+tools/measure_wiki_parser.py against the round-2 parser and the only rows that
+differ are these two articles' — and the count as of the commit that made the
+change is in that commit's message rather than here, for the reason the last
+paragraph of this docstring gives:
+
+10. an argument-less template whose NAME describes a glyph rather than being the
+    text. Rule 7 above says the name is usually the text, and for {{yes}} and
+    {{nom}} it is — but `''[[The X-Files (film)|The X-Files]]''{{double dagger}}`
+    came back as the title "The X-Filesdouble dagger", three words that are
+    nowhere in the article. The markers now render their glyph in _BARE_RENDERS
+    (‡, †, *) rather than their name, which keeps a cell that is nothing BUT a
+    dagger saying something, and display_title() strips a marker glyph off a
+    title, because a legend key is apparatus about the row in the same sense a
+    <ref> is. Over the corpus {{double dagger}} was the only argument-less
+    template that reached a title at all.
+11. an RTitle that is one whole parenthetical is a note, not a name. Thirteen
+    Frieren sponsored shorts write `| Title =` blank and `| RTitle =
+    ''(Official English title not available)''`, and all thirteen shipped that
+    sentence as the episode's title — an editor saying there is no title,
+    published as one. display_title() refuses a value that is parenthesised end
+    to end, the mirror of the quoted-end-to-end rule that ACCEPTS one.
+
 Comments are REMOVED, and removed BEFORE blocks are found rather than after.
 Both halves of that are load-bearing and each cost a bug:
 
@@ -250,6 +276,21 @@ _BARE_RENDERS = {
     # Renders the label that introduces a cast list inside a ShortSummary; the
     # cast names follow it in the wikitext and are kept.
     "episode cast": "",
+    # Footnote MARKERS, and the one family where leaking the name does not
+    # merely look untidy — it fabricates. The name is a DESCRIPTION of a glyph
+    # rather than the glyph, so `''[[The X-Files (film)|The X-Files]]''`
+    # `{{double dagger}}` came back as the title "The X-Filesdouble dagger",
+    # three words that are nowhere in the article. Over the cached corpus this
+    # is the ONLY argument-less template that reaches an episode title at all.
+    #
+    # They render their glyph here rather than dropping out, because the rest
+    # of _BARE_RENDERS' argument is the same for them: {{dagger}} is the whole
+    # content of a great many awards-table cells, where it means "posthumous"
+    # or "deceased" by the article's own legend, and an emptied cell states
+    # the opposite of a marked one. What a marker MEANS is never part of a
+    # NAME, which is display_title()'s problem and is solved there.
+    "dagger": "†", "double dagger": "‡", "double-dagger": "‡",
+    "asterisk": "*",
 }
 
 
@@ -648,6 +689,24 @@ def _digits(value):
 
 _WHOLLY_QUOTED = re.compile(r'"([^"]*)"\Z')
 
+# The mirror of _WHOLLY_QUOTED, and it means the opposite. Quotes end to end
+# say "the name is inside here"; PARENTHESES end to end say "this is a note
+# about the name" — a gloss, a translation, a part marker, or an editor saying
+# there is no name to give. Written with `[^()]*` for the same reason
+# _WHOLLY_QUOTED is: it must match a value that is ONE parenthetical and
+# nothing else, and leave `Cowboy Bebop: The Movie (Knockin' on Heaven's Door)`
+# alone, which is a real title that happens to end in a bracketed alias.
+_WHOLLY_PARENTHESISED = re.compile(r"\(([^()]*)\)\Z")
+
+# Footnote-marker glyphs: what {{dagger}}, {{double dagger}} and their kin
+# render as, now that _BARE_RENDERS gives them their glyph instead of their
+# name. They are the article's own legend key — "Episodes marked with a double
+# dagger (‡) are episodes in the series' alien mythology arc" — so they are
+# apparatus ABOUT a row in exactly the sense a <ref> is, and clean() already
+# removes those without anyone calling it a loss. `*` is deliberately absent:
+# it is a character titles do use.
+_MARKER_GLYPHS = "†‡§¶"
+
 
 def display_title(raw):
     """An |RTitle / |AltTitle value as a plain title, or "" if it is not one.
@@ -661,8 +720,11 @@ def display_title(raw):
         "Nerve" (Part 1)                     is a title plus a part marker
         ''[[Gamera vs. Barugon]]''<br />
           <small>''(Daikaijū Kettō…)''</small>  is a title plus a second title
+        ''[[The X-Files (film)|The X-Files]]''
+          {{double dagger}}                  is a title plus a legend marker
+        ''(Official English title not available)''   is not a title at all
 
-    So this accepts the first shape and refuses the other two, and the test is
+    So this accepts the first shape and answers for the rest, and the test is
     what is LEFT after clean(): a value wrapped in quotes end to end yields what
     is inside them, a value with no quoting and no HTML tag left in it is itself,
     and anything else is markup this module cannot resolve into one name. An
@@ -674,8 +736,31 @@ def display_title(raw):
     trailing quote and nothing else, and Farscape ships eleven episodes called
     `Nerve" (Part 1)`; clean() strips no HTML tags at all, so Mystery Science
     Theater 3000's rows would ship with a `<small>` in the middle of them.
+
+    The last two shapes are the round-3 corrections and they go opposite ways,
+    because they are not the same kind of extra:
+
+    - A LEGEND MARKER is stripped and the name kept. The dagger is the
+      article's own footnote apparatus — the X-Files list says in so many words
+      that a double dagger means a mythology episode — so it is about the row,
+      not about the name, and removing it is what this module already does to
+      every <ref> and {{efn}}. "The X-Files" is then the link label the source
+      actually wrote, so nothing is invented and nothing is lost. (Before
+      _BARE_RENDERS learned the glyph there was nothing to strip: the marker
+      arrived as the WORDS "double dagger" welded to the end of the name.)
+    - A WHOLE PARENTHETICAL is refused outright. Thirteen Frieren sponsored
+      shorts write `| Title =` blank and `| RTitle = ''(Official English title
+      not available)''`, which is an editor stating that there IS no English
+      title; publishing it as one puts a sentence in the title column of a
+      shipped list and it looks exactly like a real answer. A parenthesis is
+      never a name — it is a gloss, a translation, a part marker, or this. Only
+      a value that is ONE parenthetical end to end is refused, so a title
+      carrying a bracketed alias keeps its name.
     """
     t = clean(raw or "")
+    t = t.strip(_MARKER_GLYPHS + " ")
+    if _WHOLLY_PARENTHESISED.match(t):
+        return ""
     m = _WHOLLY_QUOTED.match(t)
     if m:
         return m.group(1).strip()
