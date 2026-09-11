@@ -430,8 +430,9 @@ Herald and comicbookreadingorders.com.
 
 The Death and Return of Superman order read from DC Database's storyline page
 and the contents of four collected editions on the same wiki, with a cover
-date verified for every issue; the prologue and the placement of Superman #83
-from Wikipedia.
+date verified for every issue; the cover numbering that makes the order a
+matter of record from the same wiki's Triangle Era article; the prologue and
+the placement of Superman #83 from Wikipedia.
 
 Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils

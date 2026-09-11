@@ -25,7 +25,7 @@
     ],
     [
       "Why the order is a matter of record.",
-      "Four monthly books on a staggered rota put out one Superman issue a week, written as a single serial. So there is no competing reading order to choose between: the sequence below is the one DC Database's storyline page lists and the one the collected editions print."
+      "From 1991 to 2002 every Superman book carried a small numbered triangle on its cover saying where that issue fell in the reading order — DC Database calls the whole stretch the Triangle Era. So there is no competing order to argue about here: the sequence below is the one DC Database's storyline page lists and the collected editions reprint."
     ],
     [
       "Tiers.",
@@ -43,7 +43,7 @@
       "No spoilers.",
       "The notes say what an entry is, never what happens in it — which on this one means throwing away the story titles, since several of them announce the ending on the contents page."
     ],
-    "Reading order machine-read from DC Database's Death and Return of Superman storyline page and from the contents of four collected editions on the same wiki; cover dates read from each issue's own page; the prologue and the Superman #83 placement from Wikipedia's The Death of Superman."
+    "Reading order machine-read from DC Database's Death and Return of Superman storyline page and from the contents of four collected editions on the same wiki; cover dates read from each issue's own page; the cover numbering from that wiki's Triangle Era article; the prologue and the Superman #83 placement from Wikipedia's The Death of Superman."
   ],
   "sections": [
     {
@@ -79,7 +79,7 @@
       "title": "Doomsday!",
       "sub": "December 1992 – January 1993 · seven issues across four books",
       "tier": 1,
-      "intro": "The four Superman titles shipped a week apart and were written to be read as one weekly serial, which is why the order across them is a matter of record rather than anyone's preference.\n\nThe last four issues count themselves down in panels — four to a page, then three, then two, then one. You can see the ending coming in the layout before you get there.",
+      "intro": "Four monthly books running as one serial, each cover carrying a numbered triangle telling you which issue came next — so the order across the titles is a published fact rather than a guide's opinion.\n\nThe last four issues count themselves down in panels — four to a page, then three, then two, then one. You can see the ending coming in the layout before you get there.",
       "items": [
         {
           "id": "mos-18",

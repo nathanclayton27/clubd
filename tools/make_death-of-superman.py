@@ -25,6 +25,9 @@ pages and checked in so the build reproduces without a network:
   * a cover month and year for every one of the 48 issues, read from that
     issue's own page on the same wiki. `assert_sources()` re-checks every row
     against that file, so a wrong issue number fails here rather than shipping;
+  * why there is an order at all — DC Database's "Triangle Era", which says
+    that from 1991 to 2002 the four monthly Superman books were "published
+    with a triangular marking on their covers indicating reading order";
   * the prologue — Wikipedia's "The Death of Superman", which says the story
     "was first alluded to in Simonson's Superman: The Man of Steel #17
     (November 1992)", one teaser page after the issue's own story.
@@ -157,9 +160,9 @@ SECTIONS = [
      "December 1992 – January 1993 · seven issues across four books", 1,
      "Superman: The Man of Steel Vol 1 18",
      "Newstime: The Life and Death of the Man of Steel Vol 1 1",
-     "The four Superman titles shipped a week apart and were written to be "
-     "read as one weekly serial, which is why the order across them is a "
-     "matter of record rather than anyone's preference.\n\n"
+     "Four monthly books running as one serial, each cover carrying a "
+     "numbered triangle telling you which issue came next — so the order "
+     "across the titles is a published fact rather than a guide's opinion.\n\n"
      "The last four issues count themselves down in panels — four to a page, "
      "then three, then two, then one. You can see the ending coming in the "
      "layout before you get there."),
@@ -197,10 +200,12 @@ NOTES = [
      "Crisis on Infinite Earths, who works at the Daily Planet and is engaged "
      "to Lois Lane. Nothing published before 1986 is needed to follow this."],
     ["Why the order is a matter of record.",
-     "Four monthly books on a staggered rota put out one Superman issue a "
-     "week, written as a single serial. So there is no competing reading "
-     "order to choose between: the sequence below is the one DC Database's "
-     "storyline page lists and the one the collected editions print."],
+     "From 1991 to 2002 every Superman book carried a small numbered "
+     "triangle on its cover saying where that issue fell in the reading "
+     "order — DC Database calls the whole stretch the Triangle Era. So there "
+     "is no competing order to argue about here: the sequence below is the "
+     "one DC Database's storyline page lists and the collected editions "
+     "reprint."],
     ["Tiers.",
      "1 is the story itself, all three arcs. 2 is the two issues that run "
      "past the end. 3 is the teaser page that set it up. The minimum viable "
@@ -223,8 +228,8 @@ NOTES = [
     "Reading order machine-read from DC Database's Death and Return of "
     "Superman storyline page and from the contents of four collected "
     "editions on the same wiki; cover dates read from each issue's own page; "
-    "the prologue and the Superman #83 placement from Wikipedia's "
-    "The Death of Superman.",
+    "the cover numbering from that wiki's Triangle Era article; the prologue "
+    "and the Superman #83 placement from Wikipedia's The Death of Superman.",
 ]
 
 
