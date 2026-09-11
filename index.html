@@ -108,19 +108,24 @@ h1 em{font-style:normal;color:var(--signal)}
    until now a half-finished filmography drew exactly like one nobody had
    opened — the fraction existed, but only as text on a chip that appears on
    hover. Nathan's rule: "filled in approximately for each thing if something
-   isn't completed". So the mark grows with the fraction.
-   It is deliberately NOT an `on` mark. It keeps out of the signal colour and
-   it stops at 95%, because a part-done door does not count toward this list's
-   total and does not roll up — a mark that reached the top in the done colour
-   would say "finished" at exactly the glance this exists to answer.
-   The fraction CAN reach 1 without the row being ticked, and the 95% is what
-   makes that honest. Ticking the last row behind a door rolls the tick up to
-   this row, so normally the two arrive together — but the roll-up runs on a
-   tick, never on a page load, so a stored state where the target is complete
-   and this row is not will draw as a full-height grey mark rather than a done
-   one. That is the truth: everything behind the door is read, and this row has
-   not been ticked here. */
-.tick.part{background:var(--ink-3);height:calc(40% + 55% * var(--p,0))}
+   isn't completed".
+   It FILLS LEFT TO RIGHT. The first version of this grew the mark's height and
+   left it grey, and he was blunt about the result: "the bars are just grey and
+   not partially filled in from the left going to the right based on
+   completion". He was right — height is not a fill, and grey says nothing.
+   Full height, done colour to the fraction, unticked grey for the rest. That
+   reverses an earlier call of mine to stop short of full height so a part mark
+   could never read as finished: a bar that is half signal and half rule cannot
+   be mistaken for one that is solid signal, so the height was buying nothing
+   and costing the entire point of drawing it.
+   It is still NOT an `on` mark — a part-done door does not count toward this
+   list's total and does not roll up. The fraction can reach 1 without the row
+   being ticked, because the roll-up runs on a tick and never on a page load;
+   such a mark draws as a full signal bar that the list's own count still does
+   not include, which is the truth rather than a finish nobody recorded. */
+.tick.part{height:100%;background:linear-gradient(to right,
+  var(--signal) 0, var(--signal) var(--p,0%),
+  var(--rule) var(--p,0%), var(--rule) 100%)}
 .tick.sep{background:transparent;flex:0 0 3px}
 /* Weighted properties size each mark by how long the thing takes. A four
    minute video against a thirty hour game rounds to well under a pixel, so
@@ -242,6 +247,7 @@ h1 em{font-style:normal;color:var(--signal)}
 .gago{font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--ink-3);
   border:1px solid var(--rule);border-radius:var(--radius);padding:0 4px}
 #b-random{font-size:12px}
+#b-shot{font-size:12px}
 /* What you actually got through lately. Quieter than the schedule line, and
    sitting under it, because it is a fact about you rather than a demand. */
 .ownpace{margin-top:6px;font-size:12px;color:var(--ink-3)}
@@ -1888,6 +1894,8 @@ footer a{color:var(--steel)}
   <div class="uprow" id="uprow">
     <span class="upnext unext hide" id="upnext"></span>
     <button class="hide" id="b-random" title="Pick a random unticked entry">Pick one for me</button>
+    <button class="hide" id="b-shot" type="button"
+            title="Save your strip as a picture you can send">Save as image</button>
     <button class="foldbtn hide" id="b-fw" type="button" style="margin-left:0"></button>
   </div>
   <div class="win hide" id="winline"></div>
@@ -6786,7 +6794,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '7be05ca2cef8';
+const BUILD = '8a1db9e3b147';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7514,28 +7522,39 @@ function paintDrill(){
 // progress inside a list they opened elsewhere is not on this device to read;
 // a door drawn part-full for everyone from one reader's ticks would be a lie
 // about the other layers.
+// How far into the list behind a door you already are, 0..1, or null when the
+// row is not a door or the index has not arrived. ONE implementation, because
+// the strip and the exported picture both draw it and two copies quietly
+// disagreeing is invisible until somebody sends the wrong number to a friend.
+function doorFrac(id){
+  const slug = INTO[id];
+  if(!slug) return null;
+  const roll = (GWIX && GWIX.roll) || null;
+  const r = roll && roll[slug];
+  if(!r) return null;
+  const need = r[2] || [];
+  if(!need.length) return null;
+  const have = awaySet(slug);
+  return need.filter(i=> have.has(i)).length / need.length;
+}
 function paintDoorFills(){
   const marks = document.querySelectorAll('#strip .tick[data-t]');
   if(!marks.length) return;
-  const roll = (GWIX && GWIX.roll) || null;
   marks.forEach(t=>{
     // cleared every pass: a door untickes as easily as it fills, and a stale
     // --p left on the node would freeze the mark at the height it reached
     t.classList.remove('part');
     t.style.removeProperty('--p');
-    const id = t.dataset.t, slug = INTO[id];
+    const id = t.dataset.t;
     // a ticked row is already at full height in the done colour; drawing a
     // part fill over it would be a downgrade, not information
-    if(!slug || !roll || done.has(id)) return;
-    const r = roll[slug];
-    if(!r) return;
-    const need = r[2] || [];
-    if(!need.length) return;
-    const have = awaySet(slug);
-    const f = need.filter(i=> have.has(i)).length / need.length;
+    if(done.has(id)) return;
+    const f = doorFrac(id);
     if(!(f > 0)) return;
     t.classList.add('part');
-    t.style.setProperty('--p', f.toFixed(3));
+    // a percentage, not a ratio: it is a gradient stop, and calc() on a bare
+    // number inside a colour stop is not worth the compatibility argument
+    t.style.setProperty('--p', (f * 100).toFixed(1) + '%');
   });
 }
 function state(text,cls){ $('state').textContent=text; $('dot').className='dot'+(cls?' '+cls:''); }
@@ -10732,6 +10751,7 @@ function gstate(){
   $('stack').classList.toggle('hide', !on);
   $('glegend').classList.toggle('hide', !on);
   $('strip').classList.toggle('hide', on);
+  try{ shotVisible(); }catch(e){}
   $('striplbl').textContent = on
     ? 'Each mark is one '+UNIT.one+' · one layer per person, furthest along on top'
 
@@ -15500,6 +15520,229 @@ function icsSave(lines){
   setTimeout(()=> URL.revokeObjectURL(a.href), 4000);
 }
 
+// ---------------------------------------------------------------- CLU-436
+// Your strip, as a picture you can send someone. Drawn here and handed
+// straight to you: this is a bag of static files with no server, so there is
+// nowhere for it to be uploaded to even if we wanted one.
+//
+// What it will not draw, decided before it was written because an image is the
+// one thing here that leaves and cannot be recalled:
+//
+//   * never the stacked club or group strip. That is other people's progress,
+//     exported from a control they never touched, into a file they cannot see
+//     or delete. The button is absent in that view rather than disabled, so it
+//     can never quietly export a different strip from the one on screen.
+//   * never the password-gated list. Filtered on the `secret` flag, never on a
+//     slug, so renaming it cannot leak it.
+//   * never row titles, and never section labels. Nathan: "prob better to not
+//     have row titles". A section name can be the spoiler as easily as a row
+//     can -- one section of the Hickman run is called The Incursions -- so the
+//     picture carries the SHAPE of the list and none of its words.
+//   * nothing identifying you. If your name belongs on it, you are the one
+//     sending it.
+const SHOT = {w:1200, h:630, scale:2, x:104, span:992, bot:432, tall:96};
+
+function shotInk(){
+  const cs = getComputedStyle(document.documentElement);
+  const g = n=> (cs.getPropertyValue(n) || '').trim();
+  return {paper:g('--paper'), card:g('--card'), ink:g('--ink'),
+          ink2:g('--ink-2'), ink3:g('--ink-3'), rule:g('--rule'),
+          rule2:g('--rule-2'), signal:g('--signal')};
+}
+
+// Canvas falls back to a system face WITHOUT erroring if the web font has not
+// loaded, so the file would ship in the wrong typeface with nothing anywhere
+// saying so. Waited for rather than hoped for; every ctx.font below still
+// names its fallback, so a failure here degrades instead of lying.
+async function shotFonts(){
+  if(!(document.fonts && document.fonts.load)) return false;
+  try{
+    await Promise.all([document.fonts.load('500 40px "Space Grotesk"'),
+                       document.fonts.load('400 17px "IBM Plex Mono"')]);
+    return !!document.fonts.check('500 40px "Space Grotesk"');
+  }catch(e){ return false; }
+}
+
+function shotRound(g, x, y, w, h, r){
+  g.beginPath();
+  g.moveTo(x + r, y);
+  g.arcTo(x + w, y, x + w, y + h, r);
+  g.arcTo(x + w, y + h, x, y + h, r);
+  g.arcTo(x, y + h, x, y, r);
+  g.arcTo(x, y, x + w, y, r);
+  g.closePath();
+}
+
+// Mark widths, weighted exactly as the page weights them -- a three-hour film
+// and a twenty-minute short must not move the picture by the same amount. The
+// floor is what keeps a four-minute short visible beside a thirty-hour game;
+// if the floors alone overflow the space, weighting is abandoned rather than
+// drawn wrong, because equal marks are honest about being equal and a squashed
+// weighted strip is not honest about anything.
+function shotWidths(room, n){
+  const flat = ()=> new Array(n).fill(room / n);
+  if(!(WEIGHTED && TOTALW > 0) || WEIGHT.length !== n) return flat();
+  const floor = Math.min(1.2, room / n);
+  let w = WEIGHT.map(v=> Math.max(floor, room * (v / TOTALW)));
+  const sum = w.reduce((a, b)=> a + b, 0);
+  if(!(sum > 0)) return flat();
+  if(sum > room){
+    const slack = w.reduce((a, b)=> a + Math.max(0, b - floor), 0);
+    if(!(slack > 0)) return flat();
+    const cut = (sum - room) / slack;
+    w = w.map(v=> v - Math.max(0, v - floor) * cut);
+  }
+  return w;
+}
+
+function drawShot(){
+  const cv = document.createElement('canvas');
+  cv.width = SHOT.w * SHOT.scale;
+  cv.height = SHOT.h * SHOT.scale;
+  const g = cv.getContext('2d');
+  g.setTransform(SHOT.scale, 0, 0, SHOT.scale, 0, 0);
+  const T = shotInk();
+  const accent = accentOf(PROP);
+
+  g.fillStyle = T.paper || '#E6E7E2';
+  g.fillRect(0, 0, SHOT.w, SHOT.h);
+  g.fillStyle = T.card;
+  shotRound(g, 48, 48, 1104, 534, 2); g.fill();
+  g.strokeStyle = T.rule; g.lineWidth = 1;
+  shotRound(g, 48.5, 48.5, 1103, 533, 2); g.stroke();
+
+  const X = SHOT.x, W = SHOT.span;
+  const fit = (s, px)=>{
+    while(s.length > 8 && g.measureText(s).width > px) s = s.slice(0, -2);
+    return s;
+  };
+  g.textBaseline = 'alphabetic';
+  g.fillStyle = T.ink;
+  g.font = '500 40px "Space Grotesk", system-ui, sans-serif';
+  g.fillText(fit(PROP.title || '', W), X, 142);
+
+  g.fillStyle = T.ink3;
+  g.font = '400 14px "IBM Plex Mono", ui-monospace, monospace';
+  if('letterSpacing' in g) g.letterSpacing = '1.6px';
+  g.fillText(fit(String(PROP.subtitle || PROP.kind || '').toUpperCase(), W), X, 176);
+  if('letterSpacing' in g) g.letterSpacing = '0px';
+
+  // The WHOLE list, never the filtered view. A filter is a reading aid; the
+  // caption is a statement about the list, and "12 of 20" off a filtered strip
+  // would be true of nothing the person receiving it can see.
+  const n = TOTAL, nsec = DATA.length, H = SHOT.tall, BOT = SHOT.bot;
+  const gap = n > 120 ? 1 : 2, sep = 6;
+  const room = W - (n - 1) * gap - (nsec - 1) * (sep - gap);
+  const dense = n < 1 || (room / n) < 1.5;
+
+  if(!dense){
+    const ws = shotWidths(room, n);
+    let x = X, k = 0;
+    for(let si = 0; si < nsec; si++){
+      const items = DATA[si].items;
+      for(let j = 0; j < items.length; j++){
+        const id = items[j].id;
+        const on = done.has(id);
+        const f = on ? 0 : (doorFrac(id) || 0);
+        const w = Math.max(ws[k], 0.6);
+        if(f > 0){
+          // a door, part read: the same left-to-right fill the strip draws, so
+          // the picture and the page cannot disagree about the same row
+          g.fillStyle = T.rule;
+          g.fillRect(x, BOT - H, w, H);
+          g.fillStyle = T.signal || accent;
+          g.fillRect(x, BOT - H, w * f, H);
+        }else{
+          const h = on ? H : H * 0.40;
+          g.fillStyle = on ? (T.signal || accent) : T.rule;
+          g.fillRect(x, BOT - h, w, h);
+        }
+        x += ws[k] + gap;
+        k++;
+      }
+      x += sep - gap;
+    }
+  }else{
+    // Nathan approved this one: "i also like the section bar thing you have for
+    // extra long lists". Star Trek is 941 rows in 53 sections -- the separators
+    // alone want more width than the picture has -- so below a pixel and a half
+    // a mark the image draws one bar per section, filled to how far through it
+    // you are. Same language, honest at a size where marks are not.
+    const gb = 3, bw = (W - (nsec - 1) * gb) / nsec;
+    let xb = X;
+    for(let q = 0; q < nsec; q++){
+      const items = DATA[q].items;
+      let d = 0;
+      items.forEach(it=>{ if(done.has(it.id)) d++; });
+      g.fillStyle = T.rule;
+      g.fillRect(xb, BOT - H, bw, H);
+      if(d && items.length){
+        g.fillStyle = T.signal || accent;
+        const fh = H * (d / items.length);
+        g.fillRect(xb, BOT - fh, bw, fh);
+      }
+      xb += bw + gb;
+    }
+  }
+
+  // Caption C, Nathan's pick. It carries the site name, so the corner mark
+  // this design originally had is gone rather than saying it twice.
+  g.fillStyle = T.ink2;
+  g.font = '400 17px "IBM Plex Mono", ui-monospace, monospace';
+  g.fillText(done.size + ' of ' + n + ' ' + UNIT.many
+             + ' \u2014 catch up at clubd.watch', X, 478);
+
+  g.fillStyle = accent.indexOf('var(') === 0 ? (T.signal || '#C1352A') : accent;
+  g.beginPath(); g.arc(X + 4, 542, 4, 0, Math.PI * 2); g.fill();
+  return cv;
+}
+
+async function saveShot(){
+  const b = $('b-shot');
+  if(b) b.disabled = true;
+  try{
+    await shotFonts();
+    const cv = drawShot();
+    const blob = await new Promise(r=>{
+      try{ cv.toBlob(r, 'image/png'); }catch(e){ r(null); }
+    });
+    if(!blob){ flash('Could not make the picture on this browser.'); return; }
+    const name = SLUG + '-progress.png';
+    // A phone is where "send someone" actually happens, so the file goes to the
+    // system share sheet and lands in Messages or Discord without a detour
+    // through the camera roll. A cancel is not a failure and must not fall
+    // through to a download nobody asked for.
+    try{
+      const f = new File([blob], name, {type:'image/png'});
+      if(navigator.canShare && navigator.canShare({files:[f]})){
+        await navigator.share({files:[f]});
+        return;
+      }
+    }catch(e){
+      if(e && (e.name === 'AbortError' || e.name === 'NotAllowedError')) return;
+    }
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=> URL.revokeObjectURL(url), 4000);
+    flash('Saved ' + name + '.');
+  }finally{
+    if(b) b.disabled = false;
+  }
+}
+
+// Nathan's rule: do not show a control that would do nothing. An empty strip is
+// not a thing anyone sends, the gated list never leaves, and in a stacked view
+// the strip on screen is not the one this would draw.
+function shotVisible(){
+  const b = $('b-shot');
+  if(!b) return;
+  const stacked = !$('strip') || $('strip').classList.contains('hide');
+  b.classList.toggle('hide',
+    !PROP || !!PROP.secret || stacked || !done || done.size === 0);
+}
+
 // The solo strip, separately from build() so a filter toggle can redraw the
 // bar without rebuilding the list. This was the bug: the strip honoured the
 // filter at load and never on click, so the list narrowed and the bar did not.
@@ -15616,6 +15859,7 @@ function build(){
     if($('upnext').dataset.id) goToItem($('upnext').dataset.id);
   };
   $('b-random').onclick = pickRandom;
+  $('b-shot').onclick = saveShot;
 
   // Bulk controls. The header button fills the section; once the section is
   // complete it turns into a clear, which only appears on hover — the same
@@ -15761,6 +16005,9 @@ function paint(){
   // a tick here can have rolled up from a door, and an untick can have released
   // one, so the part fills are re-read rather than assumed unchanged
   try{ paintDoorFills(); }catch(e){}
+  // the first tick on a list is what makes the picture worth saving, and the
+  // last untick is what makes the button dead again
+  try{ shotVisible(); }catch(e){}
   const per={1:0,2:0,3:0};
   let flatAt = 0;
   DATA.forEach(s=>{
