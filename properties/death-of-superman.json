@@ -5,7 +5,7 @@
   "kind": "comics",
   "popularity": 63,
   "year": "1992–1993",
-  "blurb": "48 issues across four weekly Superman books, in the order they were published to be read.",
+  "blurb": "48 issues across the four monthly Superman books and their tie-ins, in the order they were published to be read.",
   "unit": {
     "one": "issue",
     "many": "issues"
@@ -29,11 +29,11 @@
     ],
     [
       "Tiers.",
-      "1 is the story itself, all three arcs. 2 is the two issues that run past the end. 3 is the teaser page that set it up. The minimum viable path is Tier 1 alone."
+      "1 is the story itself, all three arcs. 2 is the two issues that run past the end. 3 is the teaser panel that set it up. The minimum viable path is Tier 1 alone."
     ],
     [
       "What's marked optional.",
-      "Seven of them: four Bloodlines annuals, two one-shots and a fake news magazine. None is part of the weekly serial. They are left in place rather than dropped so the order stays intact, each sitting exactly where a collected edition puts it. The prologue is optional too, for the different reason that it is one panel."
+      "Seven of them: four Bloodlines annuals, two one-shots and a fake news magazine. None is part of the serial the four books ran. They are left in place rather than dropped so the order stays intact, each sitting exactly where a collected edition puts it. The prologue is optional too, for the different reason that it is one panel."
     ],
     [
       "Where it stops.",
@@ -41,7 +41,7 @@
     ],
     [
       "No spoilers.",
-      "The notes say what an entry is, never what happens in it — which on this one means throwing away the story titles, since several of them announce the ending on the contents page."
+      "The notes say what an entry is, never what happens in it — which on this one means leaving out the story titles, since several of them say outright how it ends."
     ],
     "Reading order machine-read from DC Database's Death and Return of Superman storyline page and from the contents of four collected editions on the same wiki; cover dates read from each issue's own page; the cover numbering from that wiki's Triangle Era article; the prologue and the Superman #83 placement from Wikipedia's The Death of Superman."
   ],
@@ -49,7 +49,7 @@
     {
       "id": "prologue",
       "title": "Prologue",
-      "sub": "November 1992 · a teaser page, and nothing else",
+      "sub": "November 1992 · a teaser panel, and nothing else",
       "tier": 3,
       "intro": "The story proper starts next issue. This is one panel at the back of the one before it, and it is here so the front edge of the list is honest rather than tidy — skipping it costs you nothing.",
       "items": [
@@ -57,7 +57,7 @@
           "id": "mos-17",
           "t": "Superman: The Man of Steel",
           "n": "#17",
-          "note": "One teaser page after the issue's own story. That is the whole of it.",
+          "note": "One teaser panel after the issue's own story. That is the whole of it.",
           "star": 0,
           "opt": 1,
           "url": ""
@@ -77,9 +77,9 @@
     {
       "id": "doomsday",
       "title": "Doomsday!",
-      "sub": "December 1992 – January 1993 · seven issues across four books",
+      "sub": "December 1992 – January 1993 · seven issues across five books, plus a one-shot",
       "tier": 1,
-      "intro": "Four monthly books running as one serial, each cover carrying a numbered triangle telling you which issue came next — so the order across the titles is a published fact rather than a guide's opinion.\n\nThe last four issues count themselves down in panels — four to a page, then three, then two, then one. You can see the ending coming in the layout before you get there.",
+      "intro": "The four monthly Superman books ran as one serial, each cover carrying a numbered triangle telling you which issue came next — so the order across those titles is a published fact rather than a guide's opinion. One Justice League America issue falls inside it, where DC Database's storyline page puts it.\n\nThe last four issues count themselves down in panels — four to a page, then three, then two, then one. You can see the ending coming in the layout before you get there.",
       "items": [
         {
           "id": "mos-18",
@@ -288,7 +288,7 @@
       "title": "Reign of the Supermen!",
       "sub": "June – July 1993 · four claimants, one per title",
       "tier": 1,
-      "intro": "The books came back with a new lead in each one, each of the four introduced in his own debut issue with a cardstock cover and a poster. The rotation is the same as before, so the four run in parallel and you switch titles every week.\n\nThe two annuals belong to Bloodlines, a separate 1993 crossover. They are optional, and they are placed where the collection places them.",
+      "intro": "The books came back with a new lead in each one, each of the four introduced in his own debut issue with a cardstock cover and a poster. The rotation is the same as before, so the four run in parallel and you switch titles from issue to issue.\n\nThe two annuals belong to Bloodlines, a separate 1993 crossover. They are optional, and they are placed where the collection places them.",
       "items": [
         {
           "id": "aos-500",
@@ -406,7 +406,7 @@
       "title": "The Return of Superman",
       "sub": "July – October 1993 · the back half",
       "tier": 1,
-      "intro": "Where the 2016 collections cut the arc in two. Same weekly rotation, and one tie-in from outside the Superman books.",
+      "intro": "Where the 2016 collections cut the arc in two. Same rotation across the four books, and one tie-in from outside them.",
       "items": [
         {
           "id": "act-689",
@@ -520,7 +520,7 @@
           "id": "gl-46",
           "t": "Green Lantern (vol. 3)",
           "n": "#46",
-          "note": "A tie-in from outside the Superman books · the collections take only the first seventeen pages.",
+          "note": "A tie-in from outside the Superman books.",
           "star": 0,
           "opt": 0,
           "url": ""

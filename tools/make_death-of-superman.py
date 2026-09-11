@@ -3,8 +3,8 @@
 
     python tools/make_death-of-superman.py
 
-The 1992–93 Superman crossover, issue by issue, in the order the four Superman
-books published it.
+The 1992–93 Superman crossover, issue by issue, in the order it was
+published to be read.
 
 WHERE THE ORDER COMES FROM, AND WHY IT IS NOT AN OPINION
 --------------------------------------------------------
@@ -14,7 +14,7 @@ pages and checked in so the build reproduces without a network:
 
   * the reading order — the `Issues` block of DC Database's storyline page
     https://dc.fandom.com/wiki/Death_and_Return_of_Superman, which lists all 38
-    issues of the three arcs in one sequence across the four titles;
+    issues of the three arcs in one sequence;
   * the tie-ins and the back edge — the contents of four collected editions on
     the same wiki (`The Death of Superman`, `Superman: Funeral for a Friend`,
     `Superman: Reign of the Supermen`, `The Return of Superman`), read only for
@@ -30,7 +30,7 @@ pages and checked in so the build reproduces without a network:
     with a triangular marking on their covers indicating reading order";
   * the prologue — Wikipedia's "The Death of Superman", which says the story
     "was first alluded to in Simonson's Superman: The Man of Steel #17
-    (November 1992)", one teaser page after the issue's own story.
+    (November 1992)", one teaser panel after the issue's own story.
 
 THE TWO EDGES, WHICH ARE THE WHOLE DIFFICULTY WITH THIS LIST
 ------------------------------------------------------------
@@ -60,10 +60,11 @@ Unweighted, like every comics list here: no per-issue reading time is
 published, so inventing one would be worse than leaving it out.
 
 The row notes say what an entry is, never what happens in it. That is harder
-here than anywhere else in the catalogue, because the story titles this wiki
-prints alongside the issues — "The End", "Back for Good!", "Life After Death!"
-— give the whole thing away. The parser in the data step reads the comic-link
-templates and throws the story titles on the floor for exactly that reason.
+here than anywhere else in the catalogue, because the wiki prints a story title
+beside every issue and several of them say outright how it ends. So no story
+title is carried anywhere: `tools/data/death-of-superman.json` holds a cover
+month and year per issue and nothing else, and nothing below reads any other
+field.
 """
 import json
 import pathlib
@@ -111,7 +112,8 @@ PROLOGUE = "Superman: The Man of Steel Vol 1 17"
 # collection treats it. Nothing here is a plot point.
 NOTE = {
     PROLOGUE:
-        "One teaser page after the issue's own story. That is the whole of it.",
+        "One teaser panel after the issue's own story. That is the whole "
+        "of it.",
     "Justice League America Vol 1 69": "The League's issue.",
     "Adventures of Superman Vol 1 497": "Four panels a page.",
     "Action Comics Vol 1 684": "Three panels a page.",
@@ -130,9 +132,7 @@ NOTE = {
     "Superman: The Man of Steel Vol 1 22": "One of the four debuts.",
     "Superman Vol 2 78": "One of the four debuts.",
     "Adventures of Superman Vol 1 501": "One of the four debuts.",
-    "Green Lantern Vol 3 46":
-        "A tie-in from outside the Superman books · the collections take "
-        "only the first seventeen pages.",
+    "Green Lantern Vol 3 46": "A tie-in from outside the Superman books.",
     "Action Comics Vol 1 692": "An epilogue, after the last chapter.",
     "Superman Vol 2 83":
         "Published last, but it closes out Funeral for a Friend.",
@@ -151,18 +151,21 @@ NOT_OPT = {"Action Comics Vol 1 692", "Superman Vol 2 83"}
 
 # (id, title, sub, tier, first page title, last page title, intro)
 SECTIONS = [
-    ("prologue", "Prologue", "November 1992 · a teaser page, and nothing else",
+    ("prologue", "Prologue", "November 1992 · a teaser panel, and nothing else",
      3, PROLOGUE, PROLOGUE,
      "The story proper starts next issue. This is one panel at the back of "
      "the one before it, and it is here so the front edge of the list is "
      "honest rather than tidy — skipping it costs you nothing."),
     ("doomsday", "Doomsday!",
-     "December 1992 – January 1993 · seven issues across four books", 1,
+     "December 1992 – January 1993 · seven issues across five books, "
+     "plus a one-shot", 1,
      "Superman: The Man of Steel Vol 1 18",
      "Newstime: The Life and Death of the Man of Steel Vol 1 1",
-     "Four monthly books running as one serial, each cover carrying a "
-     "numbered triangle telling you which issue came next — so the order "
-     "across the titles is a published fact rather than a guide's opinion.\n\n"
+     "The four monthly Superman books ran as one serial, each cover "
+     "carrying a numbered triangle telling you which issue came next — so "
+     "the order across those titles is a published fact rather than a "
+     "guide's opinion. One Justice League America issue falls inside it, "
+     "where DC Database's storyline page puts it.\n\n"
      "The last four issues count themselves down in panels — four to a page, "
      "then three, then two, then one. You can see the ending coming in the "
      "layout before you get there."),
@@ -178,14 +181,14 @@ SECTIONS = [
      "The books came back with a new lead in each one, each of the four "
      "introduced in his own debut issue with a cardstock cover and a poster. "
      "The rotation is the same as before, so the four run in parallel and "
-     "you switch titles every week.\n\n"
+     "you switch titles from issue to issue.\n\n"
      "The two annuals belong to Bloodlines, a separate 1993 crossover. They "
      "are optional, and they are placed where the collection places them."),
     ("return", "The Return of Superman",
      "July – October 1993 · the back half", 1,
      "Action Comics Vol 1 689", "Adventures of Superman Vol 1 505",
-     "Where the 2016 collections cut the arc in two. Same weekly rotation, "
-     "and one tie-in from outside the Superman books."),
+     "Where the 2016 collections cut the arc in two. Same rotation across "
+     "the four books, and one tie-in from outside them."),
     ("epilogue", "Past the end",
      "October – November 1993 · where the collections stop", 2,
      "Action Comics Vol 1 692", "Superman Vol 2 83",
@@ -208,11 +211,12 @@ NOTES = [
      "reprint."],
     ["Tiers.",
      "1 is the story itself, all three arcs. 2 is the two issues that run "
-     "past the end. 3 is the teaser page that set it up. The minimum viable "
-     "path is Tier 1 alone."],
+     "past the end. 3 is the teaser panel that set it up. The minimum "
+     "viable path is Tier 1 alone."],
     ["What's marked optional.",
      "Seven of them: four Bloodlines annuals, two one-shots and a fake news "
-     "magazine. None is part of the weekly serial. They are left in place "
+     "magazine. None is part of the serial the four books ran. They are "
+     "left in place "
      "rather than dropped so the order stays intact, each sitting exactly "
      "where a collected edition puts it. The prologue is optional too, for "
      "the different reason that it is one panel."],
@@ -223,8 +227,8 @@ NOTES = [
      "despite shipping last of all. Anything past those is a later story."],
     ["No spoilers.",
      "The notes say what an entry is, never what happens in it — which on "
-     "this one means throwing away the story titles, since several of them "
-     "announce the ending on the contents page."],
+     "this one means leaving out the story titles, since several of them "
+     "say outright how it ends."],
     "Reading order machine-read from DC Database's Death and Return of "
     "Superman storyline page and from the contents of four collected "
     "editions on the same wiki; cover dates read from each issue's own page; "
@@ -314,8 +318,9 @@ def build():
         "kind": "comics",
         "popularity": 63,
         "year": "1992–1993",
-        "blurb": "48 issues across four weekly Superman books, in the order "
-                 "they were published to be read.",
+        "blurb": "48 issues across the four monthly Superman books and "
+                 "their tie-ins, in the order they were published to be "
+                 "read.",
         "unit": {"one": "issue", "many": "issues"},
         "verb": {"base": "read", "past": "read", "ing": "reading"},
         "accent": "#0B3C91",
