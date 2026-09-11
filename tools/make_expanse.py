@@ -43,6 +43,7 @@ is the sixth of nine books. That is checked against the novels table every
 run, so the day somebody films a seventh the build fails instead of quietly
 leaving the note wrong.
 """
+import datetime
 import pathlib
 import re
 import sys
@@ -327,6 +328,16 @@ def main():
     tv, runtime = seasons(episode_text, show_text, novels)
     assert "final episode of each season sharing its name with the " \
            "respective book" in novel_text, "the naming claim is gone"
+    # the rest of the "stops partway" note, sentence by sentence
+    assert "the series was renewed by Amazon for a sixth and final season" \
+           in episode_text, "the final-season sentence changed"
+    assert 'view season 6 as a "pause" rather than a conclusion' \
+           in show_text, "the authors' pause quote is gone"
+    gap = (datetime.date.fromisoformat(
+               next(s["date"] for s in shorts if s["t"] == "Drive"))
+           - datetime.date.fromisoformat(novels[0]["date"])).days
+    assert 480 <= gap <= 590, \
+        "Drive is %d days after Leviathan Wakes, not a year and a half" % gap
     tooth = wiki.clean(show_text[show_text.index("In January 2023"):][:400])
     for claim in ("Dragon Tooth", "12-issue comic book series",
                   "set between Babylon's Ashes and Persepolis Rising"):
