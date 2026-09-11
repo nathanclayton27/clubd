@@ -140,9 +140,10 @@ adventures), *Agatha Christie* (all 74 novels split into Poirot, Marple and
 everything else, the short-story collections optional), the *D&D novels* (Dragonlance and the Legend of Drizzt, gated on Wikipedia's own history of the fiction rather than on taste), *the Foundation
 universe* (Asimov's Foundation, Robot and Empire novels in the order he
 published them, with the chronological order as a note rather than a
-second list), *the Culture novels* (Banks's ten books in publication order,
-with the one year his own Wikipedia article contradicts itself about settled
-on the page), and *Middle-earth* — books plus Jackson's six films. Comics:
+second list), *the Culture series* (Banks's ten books in publication order,
+with the one year Wikipedia's *Culture series* article contradicts itself
+about settled on the page), and *Middle-earth* — books plus Jackson's six
+films. Comics:
 *The Sandman* issue by issue through its ten volumes, Death and Overture
 included, the *Vertigo shelf* (Preacher, Transmetropolitan and Y: The Last
 Man, one row per collected volume), *Batman* as 35 finite stories gated on

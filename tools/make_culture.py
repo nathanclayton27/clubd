@@ -12,30 +12,38 @@ argue about. What publication order buys you is the backward references
 landing the right way round.
 
 Nothing is typed from memory. Every title, year and the count itself are read
-out of the wikitext cached under scratch/culture/, and the page is read THREE
-times over so the years are corroborated rather than trusted:
+out of the wikitext cached under scratch/culture/, and the page is read in
+THREE places so the years are corroborated rather than trusted:
 
   the infobox `books` plainlist    the ten titles, with years, in order
   the `number_of_books` field     the series' stated size
   the Books in the series table   the same ten as {{Book list}} blocks, with
                                   their own publish_date and a summary that
                                   classifies each row
-  the Primary sources bibliography  a third, independent year per title
+  the Primary sources bibliography  a third year per title
 
-Those three year sources agree on nine of the ten rows and disagree on one:
-THE STATE OF THE ART is 1991 in the infobox and the bibliography and 1989 in
-the table. The generator detects that mechanically rather than papering over
-it — it asserts that there is exactly one disagreement, that the two
-independent sources are the ones that agree, and it ships their year with a
-note saying the page contradicts itself. Both of the source's own lists put
-the row fourth regardless, so only the printed year is in question, never the
-position.
+Those three places agree on nine of the ten rows and disagree on one: THE
+STATE OF THE ART is 1991 in the infobox and the bibliography and 1989 in the
+table. The generator detects that mechanically rather than papering over it —
+it asserts that there is exactly one disagreement and that the table is the
+one dissenting, and it ships the year the other two carry, with a note saying
+the page contradicts itself. They are three places in one article, not three
+independent sources, so the note says "two places to one" and claims no more
+than that. Both of the source's own lists put the row fourth regardless, so
+only the printed year is in question, never the position.
 
 The State of the Art is also the one row that is not a novel: the article says
 "nine novels and one short story collection" and the row's own summary opens
 "A short story collection." It is a full row, not an optional one, because the
 source counts it among the ten — and it carries a note saying what it is. The
 classification is read from the summary, not assumed.
+
+That row is also why the page is called THE CULTURE SERIES and not "the
+Culture novels": ten rows, one of which is not a novel, so the plural would be
+false for a tenth of the page. "Culture series" is the article's own name for
+the thing — its first sentence is "The Culture series is a science fiction
+series" — and the subtitle still spells out the nine-and-one split. Do not
+rename this back.
 
 Sections are the two long gaps in Banks's publication run, found by splitting
 wherever consecutive years are five or more apart: 1987-1991, 1996-2000,
@@ -75,6 +83,11 @@ GAP = 5
 ACCENT, ACCENT_DARK = "#3A2E6B", "#8FD9E8"
 
 
+def spell(n):
+    """Numbers are spelled out in prose on this page; digits are for years."""
+    return SPELLED.get(n, str(n))
+
+
 def linked(m):
     """Display title of a match: the pipe label when there is one."""
     return (m.group(2) or m.group(1)).strip()
@@ -107,6 +120,19 @@ def infobox_facts(text):
     return int(n.group(1)), (int(span.group(1)), int(span.group(2)))
 
 
+def lead_selfcontained(text):
+    """The lead's standalone clause, which note 1 and two intros lean on.
+
+    Note the scope: the article says each NOVEL is self-contained. One row here
+    is not a novel, so nothing on the page may widen this to all ten.
+    """
+    a = "Each novel is a self-contained story with new characters"
+    b = "reference is occasionally made to the events of previous novels"
+    assert a in text and b in text, \
+        "the lead's self-contained sentence was rewritten"
+    return a, b
+
+
 def stated_split(text):
     """The article's own count of what the series is made of."""
     m = re.search(r"comprises (\w+) novels and (\w+) short story collection",
@@ -133,6 +159,53 @@ def table_books(text):
         assert t and y, "table row did not parse: %r" % block[:80]
         out.append((linked(t), int(y.group(1)), field("short_summary")))
     return out
+
+
+def draft_years(text, titles):
+    """Years the Genesis section attaches to the early drafts, per title.
+
+    It dates four of them — "In Banks's first draft of ''Use of Weapons'' in
+    1974", then "the first draft of ''The Player of Games'' from 1980 and that
+    of ''Consider Phlebas'' from 1982". The opening section's intro quotes two
+    of these, so they are parsed rather than typed: if the sentence is
+    rewritten this raises instead of shipping a stale claim.
+
+    Only series titles count, which drops ''The Wasp Factory'' (a 1983 date,
+    and an acceptance rather than a draft). ''The State of the Art''`s 1979 is
+    dated to the title NOVELLA, not to the collection the row is — which is
+    why the intro quotes the two unambiguous ones and not that.
+    """
+    seg = text.split("==Genesis of the series==")[1].split("==Reception==")[0]
+    out = {}
+    for m in re.finditer(
+            r"''\[\[([^\]|]+)(?:\|([^\]]+))?\]\]''[^.]{0,60}?"
+            r"(?:in|from)\s+(\d{4})", seg):
+        t = linked(m)
+        if t in titles:
+            out.setdefault(t, int(m.group(3)))
+    return out
+
+
+def reception_picks(text):
+    """The two rows the Reception section singles out of the middle run.
+
+    The middle section's intro reports these, so they are matched here and the
+    years come out of the match: if either sentence is rewritten this raises.
+    """
+    seg = text.split("==Reception==")[1].split("==Notes==")[0]
+    a = re.search(r"''\[\[Inversions[^\]]*\]\]'' won the (\d{4}) Italia "
+                  r"Science Fiction Award for the Best International Novel",
+                  seg)
+    b = re.search(r"The American edition of ''\[\[Look to Windward\]\]'' was "
+                  r"listed by the editors of ''SF Site'' as one of the "
+                  r"\"Best SF and Fantasy Books of (\d{4})\" after the UK "
+                  r"edition had missed out by just one place the previous "
+                  r"year", seg)
+    assert a and b, \
+        "the Reception lines for Inversions / Look to Windward moved"
+    assert "''[[Excession]]''" not in seg, \
+        "Excession is in Reception now; the middle intro says it is not"
+    return int(a.group(1)), int(b.group(1))
 
 
 def bibliography_years(text):
@@ -193,8 +266,11 @@ def main():
     ib = infobox_books(text)
     stated_books, (span_from, span_to) = infobox_facts(text)
     novels, collections = stated_split(text)
+    lead_selfcontained(text)
     tb = table_books(text)
     bib = bibliography_years(text)
+    drafts = draft_years(text, {t for t, _ in ib})
+    award_year, listed_year = reception_picks(text)
 
     # --- the page's own totals have to agree with each other and with us
     assert len(ib) == len(tb) == stated_books == novels + collections == 10, \
@@ -207,10 +283,11 @@ def main():
         "bibliography titles differ: %s" % sorted(set(bib) ^
                                                   {t for t, _ in ib})
 
-    # --- three year sources, reconciled. The infobox and the bibliography are
-    # independent of each other; where the table dissents we go with the two
-    # and say so on the page. Exactly one such row is tolerated: a second one
-    # means the article has been rewritten and a human should look.
+    # --- three places in the article, reconciled. They are not independent
+    # sources and the page does not claim they are; where the table dissents we
+    # go with the other two on the count and say so. Exactly one such row is
+    # tolerated: a second one means the article has been rewritten and a human
+    # should look.
     disputed = []
     for (t, y_ib), (_, y_tb, _) in zip(ib, tb):
         assert bib[t] == y_ib, \
@@ -234,8 +311,9 @@ def main():
     assert hedged == ["Inversions"], "the hedged rows changed: %s" % hedged
 
     notes = {
-        d_title: prop.join_bits("Short story collection, not a novel",
-                                "two of its stories are set in the Culture"),
+        d_title: prop.join_bits(
+            "Short story collection, not a novel",
+            "two of its works explicitly set in the Culture universe"),
         hedged[0]: "Not explicitly a Culture novel, says the source — which "
                    "files it here among the ten anyway",
     }
@@ -253,18 +331,42 @@ def main():
         "the publication gaps moved: %s" % [[x["n"] for x in g]
                                             for g in groups]
 
+    # Intros carry something the `sub` does not already say — the sub has the
+    # span, the count and the ordering, so repeating any of those is filler.
+    # Each of these earns its place off a named line of the article: the
+    # Genesis section's draft dates, the lead's "occasionally", and the
+    # article's silence about the gaps. Every number in them is computed.
+    early, late = "Use of Weapons", "Consider Phlebas"
+    assert {early, late} <= set(drafts), \
+        "the Genesis draft dates moved: %s" % sorted(drafts)
+    assert drafts[early] < drafts[late], \
+        "draft dates no longer run %s before %s: %s" % (early, late, drafts)
+    assert groups[0][0]["t"] == late, \
+        "%s no longer opens the first run" % late
+    assert early in [x["t"] for x in groups[0]], \
+        "%s is no longer in the first run" % early
+    gap3 = int(groups[2][0]["n"]) - int(groups[1][-1]["n"])
+    assert groups[1][-1]["t"] == "Look to Windward", \
+        "the middle run no longer ends on Look to Windward"
+    assert hedged[0] in [x["t"] for x in groups[1]], \
+        "%s left the middle run" % hedged[0]
+
     TITLES = ["The opening run", "The middle three", "The last three"]
     INTROS = [
-        "Four books in five years, then Banks went quiet for five more. Each "
-        "one is a self-contained story with its own cast, so nothing in here "
-        "depends on having read the book above it.",
-        "He came back to the Culture in 1996 and stayed for three. Still "
-        "standalone, still no plot to fall behind on — the only thing "
-        "publication order buys you is the backward references landing the "
-        "right way round.",
-        "Three more after eight years away, and the last Culture book he "
-        "published. The gap in front of them is a gap, not a change of "
-        "direction.",
+        "Publication order is not writing order: the source dates the first "
+        "draft of %s to %d and %s's to %d, %s years later — and %s is the one "
+        "that came out first. This page follows the shelf, not the desk."
+        % (early, drafts[early], late, drafts[late],
+           spell(drafts[late] - drafts[early]), late),
+        "The article's reception section singles out two of these three: %s "
+        "took the %d Italia Science Fiction Award for best international "
+        "novel, and the American edition of %s made SF Site's best-of-%d list "
+        "after the UK edition missed by one place the year before."
+        % (hedged[0], award_year, groups[1][-1]["t"], listed_year),
+        "The last Culture book he published is the bottom row here, and the "
+        "%s years in front of %s are the reason the page splits at all. The "
+        "article says nothing about what that gap was for, so neither does "
+        "this." % (spell(gap3), groups[2][0]["t"]),
     ]
     sections = []
     for n, (g, title, intro) in enumerate(zip(groups, TITLES, INTROS)):
@@ -295,7 +397,9 @@ def main():
 
     p = {
         "slug": SLUG,
-        "title": "The Culture novels",
+        # Not "the Culture novels": one of the ten rows is a collection, so the
+        # plural would be false for it. This is the article's own name.
+        "title": "The Culture series",
         "subtitle": "Iain M. Banks — %s novels and %s collection"
                     % (SPELLED[novels], SPELLED[collections]),
         "kind": "books",
@@ -308,28 +412,30 @@ def main():
         "accentDark": ACCENT_DARK,
         "tiers": False,
         "notes": [
+            # "Each NOVEL" is the article's scope and it stays the scope: one
+            # of the ten rows is not a novel, so "every one of these" would be
+            # the article's sentence stretched over a row it excludes.
             ["Publication order, and for once it barely matters.",
              "The source lists the series by publication date and so does "
-             "this page. Banks wrote every one of these as a self-contained "
-             "story with new characters — the article says so in its "
-             "first paragraph — so there is no chronology to get wrong "
-             "and no book that gives another away. Later books do refer back "
-             "to earlier ones, which is the only reason an order is worth "
-             "having at all."],
+             "this page. Each novel is a self-contained story with new "
+             "characters — the article says so in its first paragraph — so "
+             "there is no chronology to get wrong. It also says reference is "
+             "occasionally made to the events of previous novels, which is "
+             "the only reason an order is worth having at all."],
             ["One of the ten is not a novel.",
              "Wikipedia counts the series as %s novels and %s short story "
              "collection, and %s is the collection. It is a full row rather "
              "than an optional one because the source counts it among the "
-             "ten, and because two of its stories are set in the Culture "
-             "outright. Like every other row it counts as one."
+             "ten, and because two of the works in it are explicitly set in "
+             "the Culture universe. Like every other row it counts as one."
              % (SPELLED[novels], SPELLED[collections], d_title)],
             ["The source contradicts itself about one year, and this is the "
              "one it is.",
              "%s is dated %d by the article's infobox and by the bibliography "
              "it cites, and %d by the table of books on the same page. This "
-             "page carries %d, the year the two independent sources agree on. "
-             "The row's position is not in doubt either way: both of the "
-             "source's own lists put it fourth."
+             "page carries %d on the count — two places to one, all three of "
+             "them the same article. The row's position is not in doubt "
+             "either way: both of the source's own lists put it fourth."
              % (d_title, d_keep, d_other, d_keep)],
             ["Inversions is here because the source puts it here.",
              "The article's own entry for it says it is not explicitly a "
@@ -346,6 +452,16 @@ def main():
         ],
         "sections": sections,
     }
+
+    # The title names ten rows, one of which is not a novel, so it may not say
+    # "novels" — and the name it does use has to be the article's own.
+    assert "The Culture series comprises" in text, \
+        "the article no longer calls the thing 'the Culture series'"
+    assert "novel" not in p["title"].lower(), \
+        "the title must not say 'novels': %s is a collection" % d_title
+    assert "%s novels and %s collection" % (SPELLED[novels],
+                                            SPELLED[collections]) \
+        in p["subtitle"], "the subtitle has to keep carrying the split"
 
     out = prop.write(p)
     print("wrote %s — %d rows (%d novels, %d collection)"
