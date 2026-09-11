@@ -882,10 +882,14 @@ belongs there far more — a paste that stops after the drop leaves `profiles`
 with no read policy inside an uncommitted transaction still holding
 `ACCESS EXCLUSIVE` on it.
 
-**A's checksum is now `f601420c…`** (was `c062c104…`, regenerated after the
-banner rewrite). **B's footer still carries its pre-edit value on purpose**: the
-arming script re-stamps it, so B is the one file in this repo whose recorded
-checksum is written minutes before it runs.
+**Do not read either file's checksum out of this document.** Ask the tool —
+`python tools/migrations.py --footer <file>` — because a digest quoted in prose
+goes stale the moment anyone edits a comment, and A's has already been
+regenerated three times (`c062c104…`, then `f601420c…`, then the value it now
+carries). A's footer matches its own body. **B's deliberately does not**:
+`arm-clu153-B.py` re-stamps it at arming time, so B is the one file here whose
+recorded checksum is written minutes before it runs, and the value sitting in it
+now describes no version of the file.
 
 ⚠ **The audit could not and did not check the database.** Every statement it
 makes about live state comes from this document and the migration files. Whether
