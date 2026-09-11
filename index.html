@@ -6898,7 +6898,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '933f9e6c4ab8';
+const BUILD = 'a97bd44fb9fd';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -10614,7 +10614,19 @@ function pkOn(el){
   // rects, not offsetTop: rows land on half pixels and the rounding there
   // stacked up into a cut several pixels below the middle of the text
   const wr = wrap.getBoundingClientRect(), cr = cut.getBoundingClientRect();
-  const h = Math.round(cr.top - wr.top + cr.height / 2);
+  // ⚠ 0.72 of the row, not half of it, and the reason is measured. A row's text
+  // is centred in its box, so cutting at the halfway mark shows only the TOP
+  // HALF OF THE GLYPHS — about 12px of a 23px name. The fade band then has to
+  // be at least 24px to stay a tap target, so it covered that entire 12px and
+  // the name was tinted from its very first pixel: clearPct was 0 at every row
+  // height I measured, which is why two goes at shrinking the band changed
+  // nothing anybody could see. Nathan, twice: "something seemingly broke the
+  // fade/opacity ... for the 6th item", then "kinda looks the same to me again?"
+  // Cutting lower puts the whole name inside the visible sliver, so the fade
+  // lands on the bottom of the glyphs instead of the top of them. It still cuts
+  // THROUGH the row rather than at its boundary, which is what makes the edge
+  // read as "there is more" rather than as a list that ended.
+  const h = Math.round(cr.top - wr.top + cr.height * 0.72);
   if(h < 1) return;
   el.style.setProperty('--pkh', h + 'px');
   // ⚠ The band must be SHORTER than the half-row on show, not equal to it.
