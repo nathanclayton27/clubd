@@ -11905,9 +11905,16 @@ function drawShot(){
   // In a club the subtitle is the club, because that is what the picture is of.
   // The list's own subtitle is already implied by the title above it.
   const stacked = shotStacked();
-  const crew = stacked ? drawnMembers().slice()
+  // Nathan: "dont show empty progress bars or people that dont have any
+  // progress in the legend". A band of pure grey and a name beside it say only
+  // that somebody exists, which the club already knows — and in a picture meant
+  // to be sent somewhere it singles out the one person who has not started.
+  const crew = stacked ? drawnMembers()
+      .filter(m=> readsOf(m).size > 0)
       .sort((a, b)=> readsOf(b).size - readsOf(a).size
                      || a.name.localeCompare(b.name)) : [];
+  // the count names who is IN THE PICTURE, not the roster — saying "6 people"
+  // over five bands would be the image contradicting itself
   const sub = stacked && group
     ? (group.name || 'us') + ' \u00b7 ' + crew.length
       + (crew.length === 1 ? ' person' : ' people')
@@ -12163,7 +12170,15 @@ function tourSteps(){
     const shut = listEl && listEl.querySelector('details:not([open])');
     if(shut){
       shut.open = true;
-      const fresh = [].slice.call(listEl.querySelectorAll('li')).filter(tourVisible);
+      // ⚠ FLUSH BEFORE ASKING. checkVisibility() straight after setting `open`
+      // still reports false — the same stale-read trap as getBoundingClientRect
+      // — so the re-query found nothing and fell through to ringing the whole
+      // list. Nathan: "step 4 seems to also just highlight everything instead of
+      // a row". Forcing layout first, and measuring with tourRect (which has the
+      // double-read guard) rather than asking checkVisibility again.
+      void listEl.offsetHeight;
+      const fresh = [].slice.call(listEl.querySelectorAll('li'))
+        .filter(x=> !!tourRect(x));
       if(fresh.length) return fresh[Math.min(n, fresh.length - 1)];
     }
     return listEl || null;
@@ -12191,7 +12206,13 @@ function tourSteps(){
         + ' progress bar — it keeps your gaps, so the shape of it is the shape of'
         + ' what you have actually ' + (VERB.past || 'done') + '. Touch a mark to'
         + ' see which one it is.'},
-    {el: ()=> rowAt(0),
+    // ⚠ Only where it is TRUE. Nathan: "maybe the tick travelling doesn't make
+    // sense on tv shows? it does for movies, some comics (if there's crossover)".
+    // He is right, and the site already knows the answer: SYNCM holds this
+    // list's rows that appear on another list, built from the search index. No
+    // counterparts, no panel — rather than teaching somebody a thing that will
+    // never happen to them on the list they are looking at.
+    {el: ()=> (SYNCM && Object.keys(SYNCM).length) ? rowAt(0) : null,
      t: 'A tick travels',
      // Nathan: "wording here makes no sense for the wire since its a show."
      // It said "film" on every list. Every list already declares its own noun
@@ -12443,7 +12464,14 @@ function tourReady(){
   // there is nothing to wait for
   const list = $('list');
   if(!list) return true;
-  return !!list.querySelector('li');
+  if(!list.querySelector('li')) return false;
+  // ⚠ And the search index, because SYNCM — which decides whether the "a tick
+  // travels" panel is TRUE here — is built when that index lands. A plain list
+  // page does not fetch it on its own (search does, at three characters), so
+  // without asking for it the panel would be gated off everywhere and the gate
+  // would look like the feature. Ask, then wait.
+  try{ ensureIndex(); }catch(e){ return true; }
+  return !!GWIX;
 }
 function tourStart(tries){
   if(tourOn) return;
@@ -12454,13 +12482,24 @@ function tourStart(tries){
   // The usable steps are settled ONCE, here. A step is usable if its anchor is
   // rendered and can be measured — and tourBox is what knows that a single
   // zero-sized read means nothing.
+  // Resolved ONCE and remembered. An anchor that re-resolves on every paint can
+  // come back different — Nathan: "hitting back shows the big box again" — and
+  // it can also keep opening sections as a side effect. The remembered node is
+  // used while it is still attached and measurable; only if it goes away does
+  // the step ask again.
   tourList = tourSteps().filter(s=>{
     const el = s.el();
     // measurable and rendered — NOT "currently on screen". An earlier version
     // scrolled here to find out, which moved the page under every step that had
     // already been checked and made the tour open on step 2.
     return tourVisible(el) && !!tourRect(el);
-  });
+  }).map(s=> ({t: s.t, b: s.b, ask: s.el, node: s.el(),
+               el: function(){
+                 if(this.node && this.node.isConnected && tourRect(this.node))
+                   return this.node;
+                 this.node = this.ask();
+                 return this.node;
+               }}));
   if(!tourList.length) return;          // nothing real to point at
   tourOn = true; tourAt = 0;
   tourReturn = document.activeElement;
