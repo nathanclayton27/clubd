@@ -33,7 +33,7 @@ THE TIERS
   1  the maxiseries, plus the three DC Comics Presents issues, which are the
      only tie-ins either guide singles out as worth reading for themselves.
   2  the rest of the banner crossover, in reading position.
-  3  the unbannered issues the guides carry anyway, and the two years of
+  3  the unbannered issues the guides carry anyway, and the run of
      pre-Crisis Monitor cameos that comicbookreadingorders.com enumerates and
      then tells you to skip.
 
@@ -224,7 +224,7 @@ ACT5 = [
     ("coie", 12), ("gl", 198), ("sup", 415),
 ]
 
-# The two years of Monitor cameos, from comicbookreadingorders.com, which
+# The run of Monitor cameos, from comicbookreadingorders.com, which
 # enumerates them and says in the same breath that they are unnecessary.
 PRE = [
     ("ntt1", 21), ("nttann", 2), ("gl", 173), ("gl", 176), ("gl", 178),
@@ -589,8 +589,8 @@ SECTIONS = [
      "", ACT4),
     ("act5", 1, "Crisis #10–12",
      "the end, and the two issues that follow it",
-     "Two banner issues are cover-dated after the maxiseries finishes and "
-     "both guides put them last.", ACT5),
+     "Two banner issues come after the last chapter, and both guides "
+     "put them there.", ACT5),
 ]
 
 
@@ -646,7 +646,7 @@ def main():
              "Presents issues, and it is a complete story — the minimum viable "
              "path is Tier 1 alone. 2 is the rest of the crossover DC put a "
              "banner on. 3 is the issues the guides carry that never had the "
-             "banner, and the two years of Monitor cameos before any of it."],
+             "banner, and the cameos that came before any of it."],
             ["Whose tie-in list this is.",
              "There is no agreed one, so this uses the only undisputed fact: "
              "DC printed a \"Special Crisis Cross-Over\" banner on a specific "

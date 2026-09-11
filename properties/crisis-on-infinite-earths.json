@@ -27,7 +27,7 @@
   "notes": [
     [
       "Tiers are on each row, not each section.",
-      "1 is the twelve-issue maxiseries plus the three DC Comics Presents issues, and it is a complete story — the minimum viable path is Tier 1 alone. 2 is the rest of the crossover DC put a banner on. 3 is the issues the guides carry that never had the banner, and the two years of Monitor cameos before any of it."
+      "1 is the twelve-issue maxiseries plus the three DC Comics Presents issues, and it is a complete story — the minimum viable path is Tier 1 alone. 2 is the rest of the crossover DC put a banner on. 3 is the issues the guides carry that never had the banner, and the cameos that came before any of it."
     ],
     [
       "Whose tie-in list this is.",
@@ -882,7 +882,7 @@
       "title": "Crisis #10–12",
       "sub": "the end, and the two issues that follow it",
       "tier": 1,
-      "intro": "Two banner issues are cover-dated after the maxiseries finishes and both guides put them last.",
+      "intro": "Two banner issues come after the last chapter, and both guides put them there.",
       "items": [
         {
           "id": "coie-coie-10",
