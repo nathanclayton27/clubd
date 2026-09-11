@@ -29,7 +29,11 @@
     ],
     [
       "Where this stops, and why.",
-      "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and Hickman's run is already a list here — Everything Dies: Secret Wars, 250 issues that begin at that one. Not one issue appears on both lists, so ticking your way through this one leaves you standing exactly where that one starts."
+      "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and Hickman's run is already a list here — Everything Dies: Secret Wars, 250 issues that begin at that one. Not one issue is on that list and this one both, so ticking your way through this one leaves you standing exactly where that one starts."
+    ],
+    [
+      "Seven issues are on the Civil War list as well.",
+      "Fantastic Four #536–542 are the book's Civil War tie-ins. The Civil War list needs them to tell that story and this one is a complete run that cannot skip them, so both carry them. They are the only rows here that appear on another list, and ticking them in one place does not tick them in the other."
     ],
     [
       "The team, not the four people.",
@@ -1005,9 +1009,9 @@
     {
       "id": "annuals",
       "title": "The annuals Kirby drew",
-      "sub": "#1–6 · 1963–1968 · double-length, and inside the run above",
+      "sub": "#1–6 · 1963–1968 · published alongside the run above",
       "tier": 2,
-      "intro": "Six annuals, all of them Lee and Kirby, published alongside the run above and set among it. Longer than a monthly issue and not filler: two of the six are among the most consequential things this book ever printed.\n\nThe annuals after these are other people's, and they are not here.",
+      "intro": "Six annuals, all of them Lee and Kirby, published alongside the run above and set among it. Not filler: two of the six are among the most consequential things this book ever printed.\n\nThree later annuals are further down, from the Byrne years. No other annual is on this list.",
       "items": [
         {
           "id": "ffa-1",
@@ -2858,10 +2862,10 @@
     },
     {
       "id": "byrneannuals",
-      "title": "Byrne's annuals",
+      "title": "The annuals from the Byrne years",
       "sub": "#17–19 · 1983–1985 · alongside the run above",
       "tier": 3,
-      "intro": "Three annuals from the Byrne years. Optional, and they read fine after the run rather than inside it.",
+      "intro": "Byrne wrote and drew #17 and #19. He did not draw #18 — Mark Bright did, from a script credited to Mark Gruenwald and Byrne. Optional, and they read fine after the run rather than inside it.",
       "items": [
         {
           "id": "ffa-17",
@@ -4522,9 +4526,9 @@
     {
       "id": "pacheco",
       "title": "Pacheco & Marín",
-      "sub": "#35–59 · 2000–2002 · co-written by the artist",
+      "sub": "#35–54 · 2000–2002 · twenty issues, ten of them drawn by Pacheco",
       "tier": 3,
-      "intro": "Carlos Pacheco draws it and co-writes it with Rafael Marín. It looks superb and it is the first stretch since Simonson with a plan.",
+      "intro": "Carlos Pacheco co-writes all twenty of these with Rafael Marín and pencils ten of them; Stuart Immonen, Joe Bennett, Jeff Johnson, Tom Grummett and Mark Bagley draw the rest. Jeph Loeb is credited alongside the two of them from #38, Karl Kesel from #51.\n\nThe ones Pacheco draws look superb.",
       "items": [
         {
           "id": "ff-464",
@@ -4705,7 +4709,26 @@
           "star": 0,
           "opt": 0,
           "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/421/fantastic_four_(1998_-_2012)"
         },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_3"
+        }
+      ]
+    },
+    {
+      "id": "keselwarren",
+      "title": "Kesel, then Warren",
+      "sub": "#55–59 · 2002 · five issues, and then Waid",
+      "tier": 3,
+      "intro": "Karl Kesel writes #55–56 on his own and Adam Warren #57–59, with Stuart Immonen and Keron Grant drawing them. Five issues between Pacheco and Marín leaving and Mark Waid arriving.",
+      "items": [
         {
           "id": "ff-484",
           "t": "Fantastic Four (1998)",
@@ -5111,7 +5134,7 @@
       "title": "Kesel, Straczynski & McDuffie",
       "sub": "#525–553 · 2005–2008 · three writers, no handover",
       "tier": 3,
-      "intro": "Karl Kesel for two issues, then J. Michael Straczynski for fifteen, then Dwayne McDuffie for twelve. Twenty-nine issues that lead nowhere in particular, which is unlucky, because what comes next leads everywhere.",
+      "intro": "Karl Kesel for two issues, then J. Michael Straczynski for fifteen, then Dwayne McDuffie for twelve. Twenty-nine issues that lead nowhere in particular, which is unlucky, because what comes next leads everywhere.\n\n#536–542 are the book's Civil War tie-ins, and the Civil War list here carries them too. They are the only rows on this list that are also on another one.",
       "items": [
         {
           "id": "ff-525",

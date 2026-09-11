@@ -11,6 +11,14 @@ those rows would give a reader two half-ticked copies of the same comics, so
 this list ends one issue short and hands over. The check at the bottom asserts
 the handover really is clean: not one (series, issue) pair appears on both.
 
+That check now runs against every comics list in the catalogue, not only the
+one this hands over to, because it used to clear a collision it had never
+looked for. Fantastic Four #536-542 are the book's Civil War tie-ins and they
+are also on `civil-war`; a complete 1..569 run cannot drop them, so they are
+declared in SHARED at the bottom and said out loud on the page instead of
+being counted twice in silence. Any collision that is not declared there
+refuses to build.
+
 WHERE THE SECTIONS COME FROM. Not from memory. tools/data/fantastic-four.json
 is the credits block of every issue page on Marvel Database, read through its
 API, and the section boundaries below are asserted against it — Kirby pencils
@@ -242,6 +250,31 @@ assert sum(1 for r in band(232, 294)
 assert (ANNUALS[1]["writers"][0] == "Stan Lee"
         and all(ANNUALS[i]["pencilers"][0] == "Jack Kirby" for i in range(1, 7))), \
     "annuals #1-6 are meant to be the ones Kirby drew"
+# The later annuals on this list are not all Byrne's, which the prose used to
+# say twice over -- once by claiming no annual past #6 is here at all.
+assert all(ANNUALS[i]["writers"] == ["John Byrne"]
+           and ANNUALS[i]["pencilers"] == ["John Byrne"] for i in (17, 19)), \
+    "annuals #17 and #19 are meant to be Byrne writing and drawing"
+assert (ANNUALS[18]["writers"] == ["Mark Gruenwald", "John Byrne"]
+        and ANNUALS[18]["pencilers"] == ["Mark Bright"]), \
+    "annual #18 is meant to be Gruenwald and Byrne, drawn by Mark Bright"
+
+# Pacheco and Marin are credited on all twenty of #464-483 and on none after;
+# Pacheco pencils ten of the twenty, which is the only number that intro states.
+assert all("Carlos Pacheco" in r["writers"] and "Rafael Marin" in r["writers"]
+           for r in band(464, 483)), \
+    "Pacheco and Marin are meant to co-write every issue of #464-483"
+PACHECO_ART = [legacy(r) for r in band(464, 483)
+               if (r["pencilers"] or [""])[0] == "Carlos Pacheco"]
+assert len(PACHECO_ART) == 10, \
+    "the Pacheco intro says he pencils ten of the twenty, got %d" % len(PACHECO_ART)
+assert [legacy(r) for r in band(464, 488) if "Jeph Loeb" in r["writers"]] \
+    == list(range(467, 480)), "Jeph Loeb is meant to be credited on #467-479"
+assert [legacy(r) for r in band(464, 488) if "Karl Kesel" in r["writers"]] \
+    == list(range(480, 486)), "Karl Kesel is meant to be credited on #480-485"
+assert [writers_in(band(484, 485)), writers_in(band(486, 488))] \
+    == [["Karl Kesel"], ["Adam Warren"]], \
+    "#484-485 are meant to be Kesel alone and #486-488 Adam Warren alone"
 
 # ------------------------------------------------------------------- row notes
 MILESTONE = {
@@ -333,12 +366,12 @@ section(
 section(
     "annuals", "The annuals Kirby drew", 2,
     [ANNUALS[i] for i in range(1, 7)],
-    "double-length, and inside the run above",
+    "published alongside the run above",
     "Six annuals, all of them Lee and Kirby, published alongside the run "
-    "above and set among it. Longer than a monthly issue and not filler: two "
-    "of the six are among the most consequential things this book ever "
-    "printed.\n\n"
-    "The annuals after these are other people's, and they are not here.",
+    "above and set among it. Not filler: two of the six are among the most "
+    "consequential things this book ever printed.\n\n"
+    "Three later annuals are further down, from the Byrne years. No other "
+    "annual is on this list.",
     ANN_LINKS)
 
 section(
@@ -374,11 +407,12 @@ section(
     V1_LINKS)
 
 section(
-    "byrneannuals", "Byrne's annuals", 3,
+    "byrneannuals", "The annuals from the Byrne years", 3,
     [ANNUALS[i] for i in (17, 18, 19)],
     "alongside the run above",
-    "Three annuals from the Byrne years. Optional, and they read fine after "
-    "the run rather than inside it.",
+    "Byrne wrote and drew #17 and #19. He did not draw #18 — Mark Bright "
+    "did, from a script credited to Mark Gruenwald and Byrne. Optional, and "
+    "they read fine after the run rather than inside it.",
     ANN_LINKS, opt=1)
 
 section(
@@ -427,10 +461,21 @@ section(
     V3_LINKS)
 
 section(
-    "pacheco", "Pacheco & Marín", 3, band(464, 488),
-    "co-written by the artist",
-    "Carlos Pacheco draws it and co-writes it with Rafael Marín. It looks "
-    "superb and it is the first stretch since Simonson with a plan.",
+    "pacheco", "Pacheco & Marín", 3, band(464, 483),
+    "twenty issues, ten of them drawn by Pacheco",
+    "Carlos Pacheco co-writes all twenty of these with Rafael Marín and "
+    "pencils ten of them; Stuart Immonen, Joe Bennett, Jeff Johnson, Tom "
+    "Grummett and Mark Bagley draw the rest. Jeph Loeb is credited alongside "
+    "the two of them from #38, Karl Kesel from #51.\n\n"
+    "The ones Pacheco draws look superb.",
+    V3_LINKS)
+
+section(
+    "keselwarren", "Kesel, then Warren", 3, band(484, 488),
+    "five issues, and then Waid",
+    "Karl Kesel writes #55–56 on his own and Adam Warren #57–59, with "
+    "Stuart Immonen and Keron Grant drawing them. Five issues between Pacheco "
+    "and Marín leaving and Mark Waid arriving.",
     V3_LINKS)
 
 section(
@@ -448,7 +493,11 @@ section(
     "three writers, no handover",
     "Karl Kesel for two issues, then J. Michael Straczynski for fifteen, then "
     "Dwayne McDuffie for twelve. Twenty-nine issues that lead nowhere in "
-    "particular, which is unlucky, because what comes next leads everywhere.",
+    "particular, which is unlucky, because what comes next leads everywhere."
+    "\n\n"
+    "#536–542 are the book's Civil War tie-ins, and the Civil War list here "
+    "carries them too. They are the only rows on this list that are also on "
+    "another one.",
     V3_LINKS)
 
 section(
@@ -497,9 +546,15 @@ PROPERTY = {
         ["Where this stops, and why.",
          "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and "
          "Hickman's run is already a list here — Everything Dies: Secret Wars, "
-         "250 issues that begin at that one. Not "
-         "one issue appears on both lists, so ticking your way through this one "
-         "leaves you standing exactly where that one starts."],
+         "250 issues that begin at that one. Not one issue is on that list and "
+         "this one both, so ticking your way through this one leaves you "
+         "standing exactly where that one starts."],
+        ["Seven issues are on the Civil War list as well.",
+         "Fantastic Four #536–542 are the book's Civil War tie-ins. The Civil "
+         "War list needs them to tell that story and this one is a complete "
+         "run that cannot skip them, so both carry them. They are the only "
+         "rows here that appear on another list, and ticking them in one "
+         "place does not tick them in the other."],
         ["The team, not the four people.",
          "Members leave and are replaced, sometimes for years at a time, and "
          "the book follows whoever is in the Baxter Building rather than a "
@@ -531,16 +586,34 @@ assert len(ALL) == len(RUN) + 1 + 9, \
 assert all(not x.get("w") and "w" not in x for x in ALL), \
     "a weight got onto a comics row — CLU-131"
 
-# The handover has to be real. Two lists offering the same issue would give a
-# reader two half-ticked copies of it.
-other = json.loads((ROOT / "properties" / ("%s.json" % HANDOFF))
-                   .read_text(encoding="utf-8"))
-theirs = {(x["t"], x["n"]) for s in other["sections"] for x in s["items"]}
+# Two lists offering the same issue give a reader two half-ticked copies of
+# it, so this is checked against every comics list rather than against the one
+# this hands over to. SHARED is the whole of what is allowed to collide, and
+# every pair in it is named on the page above. Anything else refuses to build.
+SHARED = {"civil-war": {("Fantastic Four", "#%d" % n) for n in range(536, 543)}}
+
 mine = {(x["t"], x["n"]) for x in ALL}
-overlap = sorted(mine & theirs)
-assert not overlap, "these issues are on %s too: %s" % (HANDOFF, overlap[:6])
-assert ("Fantastic Four", "#570") in theirs, \
-    "%s no longer starts the Fantastic Four at #570 — recheck where this ends" % HANDOFF
+seen = set()
+for path in sorted((ROOT / "properties").glob("*.json")):
+    if path.stem in (SLUG, "index", "search"):
+        continue
+    other = json.loads(path.read_text(encoding="utf-8"))
+    if other.get("kind") != "comics":
+        continue
+    seen.add(path.stem)
+    theirs = {(x["t"], x["n"]) for s in other.get("sections", [])
+              for x in s["items"]}
+    got = mine & theirs
+    want = SHARED.get(path.stem, set())
+    assert got == want, "overlap with %s is %s, declared %s" % (
+        path.stem, sorted(got)[:8], sorted(want)[:8])
+    if path.stem == HANDOFF:
+        assert ("Fantastic Four", "#570") in theirs, \
+            ("%s no longer starts the Fantastic Four at #570 — recheck where "
+             "this ends" % HANDOFF)
+assert HANDOFF in seen, "%s was not read — the handover went unchecked" % HANDOFF
+assert set(SHARED) <= seen, "declared an overlap with a list that is not here: %s" % (
+    sorted(set(SHARED) - seen),)
 
 tiers = {s["tier"] for s in SECTIONS}
 assert tiers == {1, 2, 3}, "tiers used: %s" % sorted(tiers)
@@ -551,3 +624,5 @@ print("wrote %s" % out)
 print("  %d issues in %d sections — %d in Tier 1, %d starred"
       % (len(ALL), len(SECTIONS), t1, sum(1 for x in ALL if x["star"])))
 print("  ends at #%d; %s starts at #570 with no overlap" % (LAST, HANDOFF))
+print("  %d comics lists checked; shared rows: %s"
+      % (len(seen), ", ".join("%s %d" % (k, len(v)) for k, v in SHARED.items())))
