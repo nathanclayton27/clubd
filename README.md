@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-212 lists, from a ten-episode anime to a 1,418-row film collection, a
+217 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
@@ -58,6 +58,17 @@ one timeline, *JoJo's* and *Dragon Ball* (anime and manga as separate
 pages), and *Time Loops* — the group's own Groundhog Day collection, grown
 to 189 entries via Wikipedia's time-loop film list and two Reddit
 compilations, every episode verified against the episode tables.
+
+**Four finite British sitcoms**, one list each rather than one sectioned
+list, because they share a nationality and nothing else — no cast, no
+continuity, no order. *Peep Show* (54 episodes, nine series, finished),
+*The Thick of It* (23, the two hour-long 2007 specials included because the
+source counts them and sitting where they aired), *Blackadder* (24 episodes
+and the four specials, ordered by the airdate the source gives each one, so
+the 1982 pilot is last on its 2023 first broadcast) and *Fawlty Towers*
+(twelve, three and a half years between the two series, and the rearranged
+hotel sign on every row that has one). None of them is weighted: not one of
+the four publishes a runtime per episode.
 
 **Directors and actors.** Kubrick, Spielberg, Kurosawa, Hitchcock, Scorsese,
 Tarantino, the Coens, Fincher, Carpenter, Coppola, Satoshi Kon, Raimi, Lynch,

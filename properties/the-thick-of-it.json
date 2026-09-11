@@ -1,0 +1,198 @@
+{
+  "slug": "the-thick-of-it",
+  "title": "The Thick of It",
+  "subtitle": "four series and the two 2007 specials",
+  "kind": "tv",
+  "popularity": 54,
+  "year": "2005–12",
+  "blurb": "Everything the source counts as an episode, in broadcast order — four series of ministerial damage control, and the two hour-long specials where they aired.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#3C5A99",
+  "accentDark": "#9FB6E8",
+  "tiers": false,
+  "notes": [
+    [
+      "The specials are part of the run.",
+      "Wikipedia numbers The Rise of the Nutters and Spinners and Losers as episodes 7 and 8, gives them their own block in the series overview between series 2 and 3, and counts 23 episodes in total. They are rows here, in their own section, in the place they went out — not extras parked at the end."
+    ],
+    [
+      "The mini-episode and the webisodes are not.",
+      "Opposition Extra, the 15-minute Red Button follow-on to Spinners and Losers, carries no episode number in the source's table, and the eight Out of The Thick of It webisodes are a separate table under Other media. In the Loop is a film with its own article and many of the same cast in different roles. None of the three is in the 23."
+    ],
+    [
+      "Most of these episodes have no title.",
+      "21 of the 23 went out untitled. The source labels them Series N – Episode M and those labels are printed exactly as it gives them, because the alternative is making titles up. The two specials have real titles and keep them."
+    ],
+    [
+      "Nothing is weighted.",
+      "The source gives one running time for the series — 29 minutes — and no episode carries its own. Two rows are hour-long specials and the list article says a series 4 episode ran an hour too without saying which, so there is no verifiable per-row figure and every row counts one. A part-weighted list is worse: a row with no weight would silently count as a full hour."
+    ],
+    "Titles, numbering and airdates machine-read from Wikipedia's List of The Thick of It episodes; every section's count is asserted against the article's own series overview, the overall numbering asserted contiguous 1–23, the airdates asserted in broadcast order across the whole list, and the total cross-checked against the series infobox before this builds."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Series 1",
+      "sub": "2005 · 3 episodes",
+      "items": [
+        {
+          "id": "toi-s1e1",
+          "t": "Series 1 – Episode 1",
+          "n": "1"
+        },
+        {
+          "id": "toi-s1e2",
+          "t": "Series 1 – Episode 2",
+          "n": "2"
+        },
+        {
+          "id": "toi-s1e3",
+          "t": "Series 1 – Episode 3",
+          "n": "3"
+        }
+      ],
+      "intro": "Three episodes on BBC Four, 19 May to 2 June 2005, then three more from 20 October to 3 November; the DVD calls all six the first series and the source keeps them as two.",
+      "open": true
+    },
+    {
+      "id": "s2",
+      "title": "Series 2",
+      "sub": "2005 · 3 episodes",
+      "items": [
+        {
+          "id": "toi-s2e1",
+          "t": "Series 2 – Episode 1",
+          "n": "1"
+        },
+        {
+          "id": "toi-s2e2",
+          "t": "Series 2 – Episode 2",
+          "n": "2"
+        },
+        {
+          "id": "toi-s2e3",
+          "t": "Series 2 – Episode 3",
+          "n": "3"
+        }
+      ]
+    },
+    {
+      "id": "specials",
+      "title": "The 2007 specials",
+      "sub": "2007 · 2 hour-long specials",
+      "items": [
+        {
+          "id": "toi-sp1",
+          "t": "The Rise of the Nutters",
+          "n": "1"
+        },
+        {
+          "id": "toi-sp2",
+          "t": "Spinners and Losers",
+          "n": "2"
+        }
+      ],
+      "intro": "The source numbers these 7 and 8 of the run, so they sit here, between series 2 and 3, where they aired. It says the cast was expanded for them, to coincide with Christmas and a change of prime minister."
+    },
+    {
+      "id": "s3",
+      "title": "Series 3",
+      "sub": "2009 · 8 episodes",
+      "items": [
+        {
+          "id": "toi-s3e1",
+          "t": "Series 3 – Episode 1",
+          "n": "1"
+        },
+        {
+          "id": "toi-s3e2",
+          "t": "Series 3 – Episode 2",
+          "n": "2"
+        },
+        {
+          "id": "toi-s3e3",
+          "t": "Series 3 – Episode 3",
+          "n": "3"
+        },
+        {
+          "id": "toi-s3e4",
+          "t": "Series 3 – Episode 4",
+          "n": "4"
+        },
+        {
+          "id": "toi-s3e5",
+          "t": "Series 3 – Episode 5",
+          "n": "5"
+        },
+        {
+          "id": "toi-s3e6",
+          "t": "Series 3 – Episode 6",
+          "n": "6"
+        },
+        {
+          "id": "toi-s3e7",
+          "t": "Series 3 – Episode 7",
+          "n": "7"
+        },
+        {
+          "id": "toi-s3e8",
+          "t": "Series 3 – Episode 8",
+          "n": "8"
+        }
+      ],
+      "intro": "The move to BBC Two, eight episodes in 2009, and the series that put the word omnishambles into circulation."
+    },
+    {
+      "id": "s4",
+      "title": "Series 4",
+      "sub": "2012 · 7 episodes",
+      "items": [
+        {
+          "id": "toi-s4e1",
+          "t": "Series 4 – Episode 1",
+          "n": "1"
+        },
+        {
+          "id": "toi-s4e2",
+          "t": "Series 4 – Episode 2",
+          "n": "2"
+        },
+        {
+          "id": "toi-s4e3",
+          "t": "Series 4 – Episode 3",
+          "n": "3"
+        },
+        {
+          "id": "toi-s4e4",
+          "t": "Series 4 – Episode 4",
+          "n": "4"
+        },
+        {
+          "id": "toi-s4e5",
+          "t": "Series 4 – Episode 5",
+          "n": "5"
+        },
+        {
+          "id": "toi-s4e6",
+          "t": "Series 4 – Episode 6",
+          "n": "6"
+        },
+        {
+          "id": "toi-s4e7",
+          "t": "Series 4 – Episode 7",
+          "n": "7"
+        }
+      ],
+      "intro": "Seven episodes in 2012, the first since series 3 ended on 12 December 2009. The source says one of them ran an hour without saying which."
+    }
+  ]
+}

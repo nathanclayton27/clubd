@@ -1,0 +1,135 @@
+{
+  "slug": "fawlty-towers",
+  "title": "Fawlty Towers",
+  "subtitle": "twelve episodes, two series, 1975 and 1979",
+  "kind": "tv",
+  "popularity": 64,
+  "year": "1975–79",
+  "blurb": "All twelve episodes in broadcast order — two series three and a half years apart, and Cleese and Booth stopped there.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#8C6239",
+  "accentDark": "#DEAF77",
+  "tiers": false,
+  "notes": [
+    [
+      "Twelve, and there is no thirteenth.",
+      "Two series of six, the second transmitted three and a half years after the first, and that is the whole show. The source records a long-rumoured thirteenth episode with no concrete evidence behind it, and a feature-length special Cleese considered in the 1990s and never wrote. Neither is a row here."
+    ],
+    [
+      "The sign gag is on every row that has one.",
+      "The title sequence rearranges the hotel sign each week and the source table records what it reads. Those are the row notes, printed from that column. One episode has none: the source gives \"None\" for The Germans, whose titles were not shot at the hotel."
+    ],
+    [
+      "The titles came later than the episodes.",
+      "The source notes the episodes had no on-screen titles when they went out — the names everyone uses were first printed on the 1980s VHS releases, and some early audio releases used different ones again. The titles here are the ones the encyclopedia files them under."
+    ],
+    [
+      "Numbered 1 to 12, because the source is.",
+      "The article's episode table numbers the run straight through and gives no per-series number, so the rows carry the only number there is. The series headings still say which six are which."
+    ],
+    [
+      "Nothing is weighted.",
+      "One running time is documented for the series — 30 to 40 minutes — and no episode carries its own, so there is no verifiable per-row figure and every episode counts one. A part-weighted list is worse: a row with no weight would silently count as a full hour."
+    ],
+    "Titles, numbering, airdates and sign gags machine-read from the Wikipedia article's own episode tables; each series' count is asserted against the article's series overview, the numbering asserted contiguous 1–12, the airdates asserted in broadcast order, and the total cross-checked against the infobox before this builds."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Series 1",
+      "sub": "1975 · 6 episodes",
+      "intro": "Six episodes in the autumn of 1975, written by John Cleese and Connie Booth after the Pythons stayed at a Torquay hotel whose owner the source credits as the original Basil.",
+      "items": [
+        {
+          "id": "ft-1",
+          "t": "A Touch of Class",
+          "n": "1",
+          "note": "Sign reads: FAWLTY TOWERS (Crooked S)"
+        },
+        {
+          "id": "ft-2",
+          "t": "The Builders",
+          "n": "2",
+          "note": "Sign reads: FAWLTY TOWER (Crooked L and missing S)"
+        },
+        {
+          "id": "ft-3",
+          "t": "The Wedding Party",
+          "n": "3",
+          "note": "Sign reads: FAW TY TOWER (Crooked W, missing L and missing S)"
+        },
+        {
+          "id": "ft-4",
+          "t": "The Hotel Inspectors",
+          "n": "4",
+          "note": "Sign reads: FAW TY TO ER (Missing L, missing W and missing S)"
+        },
+        {
+          "id": "ft-5",
+          "t": "Gourmet Night",
+          "n": "5",
+          "note": "Sign reads: WARTY TOWELS"
+        },
+        {
+          "id": "ft-6",
+          "t": "The Germans",
+          "n": "6"
+        }
+      ],
+      "open": true
+    },
+    {
+      "id": "s2",
+      "title": "Series 2",
+      "sub": "1979 · 6 episodes",
+      "intro": "Transmitted three and a half years later, the source says, and that is the last of it. Cleese and Booth stopped at twelve; the source notes other writers have cited that decision since.",
+      "items": [
+        {
+          "id": "ft-7",
+          "t": "Communication Problems",
+          "n": "7",
+          "note": "Sign reads: FAWLTY TOWER (Crooked L and missing S)"
+        },
+        {
+          "id": "ft-8",
+          "t": "The Psychiatrist",
+          "n": "8",
+          "note": "Sign reads: WATERY FOWLS"
+        },
+        {
+          "id": "ft-9",
+          "t": "Waldorf Salad",
+          "n": "9",
+          "note": "Sign reads: FLAY OTTERS"
+        },
+        {
+          "id": "ft-10",
+          "t": "The Kipper and the Corpse",
+          "n": "10",
+          "note": "Sign reads: FATTY OWLS"
+        },
+        {
+          "id": "ft-11",
+          "t": "The Anniversary",
+          "n": "11",
+          "note": "Sign reads: FLOWERY TWATS"
+        },
+        {
+          "id": "ft-12",
+          "t": "Basil the Rat",
+          "n": "12",
+          "note": "Sign reads: FARTY TOWELS"
+        }
+      ]
+    }
+  ]
+}
