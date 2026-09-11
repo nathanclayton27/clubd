@@ -102,10 +102,13 @@ paragraph of this docstring gives:
     template that reached a title at all.
 11. an RTitle that is one whole parenthetical is a note, not a name. Thirteen
     Frieren sponsored shorts write `| Title =` blank and `| RTitle =
-    ''(Official English title not available)''`, and all thirteen shipped that
-    sentence as the episode's title — an editor saying there is no title,
-    published as one. display_title() refuses a value that is parenthesised end
-    to end, the mirror of the quoted-end-to-end rule that ACCEPTS one.
+    ''(Official English title not available)''`, and episodes() handed back all
+    thirteen as episodes whose NAME was that sentence — an editor saying there
+    is no title, offered as the title. No list has published it, because
+    make_frieren.py reads the season tables and not the shorts; it was a row
+    waiting for the first generator to widen its scope. display_title() refuses
+    a value that is parenthesised end to end, the mirror of the
+    quoted-end-to-end rule that ACCEPTS one.
 
 Comments are REMOVED, and removed BEFORE blocks are found rather than after.
 Both halves of that are load-bearing and each cost a bug:
@@ -755,8 +758,9 @@ def display_title(raw):
     - A WHOLE PARENTHETICAL is refused outright. Thirteen Frieren sponsored
       shorts write `| Title =` blank and `| RTitle = ''(Official English title
       not available)''`, which is an editor stating that there IS no English
-      title; publishing it as one puts a sentence in the title column of a
-      shipped list and it looks exactly like a real answer. A parenthesis is
+      title; handing it back as one would put a sentence in the title column of
+      the next list to read those rows, where it looks exactly like a real
+      answer and nothing about the list looks short. A parenthesis is
       never a name — it is a gloss, a translation, a part marker, or this. Only
       a value that is ONE parenthetical end to end is refused, so a title
       carrying a bracketed alias keeps its name.
