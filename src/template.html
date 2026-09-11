@@ -104,6 +104,23 @@ h1 em{font-style:normal;color:var(--signal)}
              opacity .28s,margin .3s ease-out}
 .tick.t1{height:70%}
 .tick.on{background:var(--signal);height:100%}
+/* CLU-508. A door is not a sitting. The list behind it can be half read, and
+   until now a half-finished filmography drew exactly like one nobody had
+   opened — the fraction existed, but only as text on a chip that appears on
+   hover. Nathan's rule: "filled in approximately for each thing if something
+   isn't completed". So the mark grows with the fraction.
+   It is deliberately NOT an `on` mark. It keeps out of the signal colour and
+   it stops at 95%, because a part-done door does not count toward this list's
+   total and does not roll up — a mark that reached the top in the done colour
+   would say "finished" at exactly the glance this exists to answer.
+   The fraction CAN reach 1 without the row being ticked, and the 95% is what
+   makes that honest. Ticking the last row behind a door rolls the tick up to
+   this row, so normally the two arrive together — but the roll-up runs on a
+   tick, never on a page load, so a stored state where the target is complete
+   and this row is not will draw as a full-height grey mark rather than a done
+   one. That is the truth: everything behind the door is read, and this row has
+   not been ticked here. */
+.tick.part{background:var(--ink-3);height:calc(40% + 55% * var(--p,0))}
 .tick.sep{background:transparent;flex:0 0 3px}
 /* Weighted properties size each mark by how long the thing takes. A four
    minute video against a thirty hour game rounds to well under a pixel, so
@@ -2764,6 +2781,40 @@ function paintDrill(){
     f.textContent = need.filter(i=> have.has(i)).length + ' / ' + need.length;
   });
 }
+// The same fraction paintDrill() puts on the chip, drawn on the strip instead
+// of only written on hover. Nothing new is computed here: `INTO` says which of
+// this page's rows are doors, GWIX.roll says which rows count behind each one,
+// and the target's own stored set is the authority on what is ticked there —
+// this page may never have seen those ticks.
+//
+// Solo strip only, on purpose. The stacked strip draws other people, and their
+// progress inside a list they opened elsewhere is not on this device to read;
+// a door drawn part-full for everyone from one reader's ticks would be a lie
+// about the other layers.
+function paintDoorFills(){
+  const marks = document.querySelectorAll('#strip .tick[data-t]');
+  if(!marks.length) return;
+  const roll = (GWIX && GWIX.roll) || null;
+  marks.forEach(t=>{
+    // cleared every pass: a door untickes as easily as it fills, and a stale
+    // --p left on the node would freeze the mark at the height it reached
+    t.classList.remove('part');
+    t.style.removeProperty('--p');
+    const id = t.dataset.t, slug = INTO[id];
+    // a ticked row is already at full height in the done colour; drawing a
+    // part fill over it would be a downgrade, not information
+    if(!slug || !roll || done.has(id)) return;
+    const r = roll[slug];
+    if(!r) return;
+    const need = r[2] || [];
+    if(!need.length) return;
+    const have = awaySet(slug);
+    const f = need.filter(i=> have.has(i)).length / need.length;
+    if(!(f > 0)) return;
+    t.classList.add('part');
+    t.style.setProperty('--p', f.toFixed(3));
+  });
+}
 function state(text,cls){ $('state').textContent=text; $('dot').className='dot'+(cls?' '+cls:''); }
 
 function clean(arr){
@@ -2901,6 +2952,7 @@ function ensureIndex(){
     // the door fractions need the roll map, which is what just arrived — the
     // first paint ran before this fetch resolved and drew them empty
     try{ paintDrill(); }catch(e){}
+    try{ paintDoorFills(); }catch(e){}
     return d;
   }).catch(()=>{ GWIXP = null; return null; });
   return GWIXP;
@@ -10742,6 +10794,8 @@ function renderStrip(){
     return '<div class="striprow'+(WEIGHTED?' wtd':'')+'">'+r+'</div>';
   }).join('');
   $('strip').querySelectorAll('.striprow').forEach(r=> wireStrip(r, false, LIFT_SOLO));
+  // the index may not have arrived yet; the GWIX handler paints again when it does
+  try{ paintDoorFills(); }catch(e){}
 }
 
 // What a filter change has to refresh: the list (rebuilt only when the
@@ -10981,6 +11035,9 @@ function paint(){
   });
   paintThumbs();
   document.querySelectorAll('.tick[data-t]').forEach(t=> t.classList.toggle('on', done.has(t.dataset.t)));
+  // a tick here can have rolled up from a door, and an untick can have released
+  // one, so the part fills are re-read rather than assumed unchanged
+  try{ paintDoorFills(); }catch(e){}
   const per={1:0,2:0,3:0};
   let flatAt = 0;
   DATA.forEach(s=>{

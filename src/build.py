@@ -520,6 +520,16 @@ def main():
     if roll:
         print("  satellites: %d close-up(s) resolved" % len(roll))
 
+    # CLU-508. Which lists are hubs, counted from the doors that actually
+    # resolved. The build has always known this and always thrown it away, so
+    # the page had no way to tell a hub from any other list — which the mega
+    # list section needs, and so does ranking a hub above its own children in
+    # search (CLU-509). Derived, never typed: a hub that gains a door gains the
+    # count at the next build with no edit anywhere.
+    doors = {}
+    for _tgt, _r in roll.items():
+        doors[_r[0]] = doors.get(_r[0], 0) + 1
+
     # medium tags for the search chips and the card wall — derived from the
     # kind string plus the unit, so mixed-media pages (MCU: films & shows)
     # surface under every medium they contain
@@ -575,6 +585,10 @@ def main():
             **({"totalw": p["_totalw"]} if p.get("_totalw") else {}),
             # home ranks schedule-active clubs first; the flag is all it needs
             **({"scheduled": True} if p.get("schedule") else {}),
+            # how many rows open another list in full. Absent rather than 0 on
+            # the 226 lists that have none, so the flag reads as a fact about
+            # this list rather than a column of zeroes.
+            **({"doors": doors[p["slug"]]} if doors.get(p["slug"]) else {}),
             # a satellite is UNLISTED, not hidden: it leaves the browsing
             # surfaces and its rows stay in search, so the honest way to find
             # one is to search for something inside it. The shelf keeps it —
