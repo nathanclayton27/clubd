@@ -3771,6 +3771,26 @@ let MANIFEST = [
     "totalw": 124.79
   },
   {
+    "slug": "black-panther",
+    "media": [
+      "comics"
+    ],
+    "title": "Black Panther",
+    "subtitle": "The mantle in main Marvel continuity — T'Challa, and Shuri while she wore it",
+    "kind": "comics",
+    "year": "1968–2024",
+    "popularity": 70,
+    "blurb": "350 issues from his first guest spots to the 2024 finale, in the order they're meant to be read.",
+    "accent": "#4E2A84",
+    "accentDark": "#B08CE8",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 350
+  },
+  {
     "slug": "bobs-burgers",
     "media": [
       "tv"
@@ -6588,7 +6608,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '426d9247ee4c';
+const BUILD = '0a9284b5b9cf';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
