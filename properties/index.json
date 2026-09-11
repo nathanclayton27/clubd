@@ -1761,6 +1761,26 @@
     "total": 730
   },
   {
+    "slug": "black-panther",
+    "media": [
+      "comics"
+    ],
+    "title": "Black Panther",
+    "subtitle": "The mantle in main Marvel continuity — T'Challa, and Shuri while she wore it",
+    "kind": "comics",
+    "year": "1968–2024",
+    "popularity": 70,
+    "blurb": "350 issues from his first guest spots to the 2024 finale, in the order they're meant to be read.",
+    "accent": "#4E2A84",
+    "accentDark": "#B08CE8",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 350
+  },
+  {
     "slug": "bobs-burgers",
     "media": [
       "tv"
@@ -2050,6 +2070,26 @@
     "total": 254
   },
   {
+    "slug": "captain-america",
+    "media": [
+      "comics"
+    ],
+    "title": "Captain America",
+    "subtitle": "Marvel's main continuity — the shield, not the man",
+    "kind": "comics",
+    "year": "1941–2013",
+    "popularity": 68,
+    "blurb": "611 issues, from the 1941 original to the last page Ed Brubaker wrote, one section per run.",
+    "accent": "#26468F",
+    "accentDark": "#7FA8E8",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 611
+  },
+  {
     "slug": "daredevil",
     "media": [
       "comics"
@@ -2068,6 +2108,26 @@
     },
     "vpast": "read",
     "total": 352
+  },
+  {
+    "slug": "fantastic-four",
+    "media": [
+      "comics"
+    ],
+    "title": "Fantastic Four",
+    "subtitle": "Marvel's main continuity, #1 to #569 — the team, not the four people",
+    "kind": "comics",
+    "year": "1961–2009",
+    "popularity": 68,
+    "blurb": "Every issue from Fantastic Four #1 to #569, where Jonathan Hickman's run — and the Secret Wars list — begins.",
+    "accent": "#1B4FA3",
+    "accentDark": "#8FBEFF",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 579
   },
   {
     "slug": "coppola",
