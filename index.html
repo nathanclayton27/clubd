@@ -6798,7 +6798,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '381d9507d071';
+const BUILD = '3533fcfcd147';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -12698,7 +12698,18 @@ function updateGroupLine(){
   const mine = gmembers.find(m=> user && m.id === user.id);
   const n = mine ? readsOf(mine).size : done.size;
   let line;
-  if(p){
+  // CLU-440. A GROUP is one roster across every list and can never carry a
+  // finish date — the database guarantees it, since `groups_scope_ck` requires
+  // a watch club to name a property and `groups_update_guard` refuses to let
+  // that change. So every branch below is about something a group cannot have,
+  // and the fall-through one used to say so out loud: "No finish date set, so
+  // nobody is behind." is a schedule message shown to somebody with no schedule
+  // and no way to get one, which is exactly what Nathan asked to stop seeing.
+  // The sentence goes rather than being reworded — there is nothing true to put
+  // in its place — and the roster half stands on its own.
+  if(isUgroup(group)){
+    line = '';
+  }else if(p){
     const days = p.daysLeft + ' day' + (p.daysLeft === 1 ? '' : 's') + ' left.';
     const mySet = mine ? readsOf(mine) : done;
     if(WEIGHTED){
@@ -12733,7 +12744,8 @@ function updateGroupLine(){
     ? shown + ' of ' + all + ' ' + (v && v.indexOf(' ') < 0 ? v : 'started')
     : all + (all === 1 ? ' person' : ' people')
       + ' in this ' + (isUgroup(group) ? 'group' : 'club');
-  el.textContent = line + ' ' + who + '.';
+  // `line` is empty for a group, so the join must not leave a space in front
+  el.textContent = (line ? line + ' ' : '') + who + '.';
 }
 
 // The bar is the entire tile once it is shut, so it has to answer "who is this
@@ -12829,7 +12841,15 @@ function clubIcons(){
     // a club. The two halves of this conflict were each half right.
     + (isOwner() ? doorIcon('b-cren', 'rename', 'Rename the ' + kindWord(), '&#9998;') : '')
     + (isOwner() ? doorIcon('b-csched', 'sched', 'Schedule', '&#9636;') : '')
-    + doorIcon('b-cmore', 'more', 'Your name, refresh, calendar, leave', '&#8943;')
+    // CLU-407. The label used to promise a calendar unconditionally, and the
+    // drawer only carries one when there is a schedule or a finish date to
+    // export — so on every club without a date, and on EVERY group (which can
+    // never have either), the tooltip named a control that was not behind the
+    // door. Nathan's rule about not showing a control that would do nothing
+    // applies just as well to a label describing one that is not there.
+    + doorIcon('b-cmore', 'more',
+               hasClubIcs() ? 'Your name, refresh, calendar, leave'
+                            : 'Your name, refresh, leave', '&#8943;')
     + '</span>';
 }
 
@@ -12974,6 +12994,12 @@ async function deleteFreshRun(){
   fwBack();
 }
 
+// Is there anything for a calendar export to say? A schedule's windows, or a
+// finish date. Asked in ONE place because the drawer's button and the icon's
+// label both depend on it, and a label that disagrees with its own drawer is
+// the defect CLU-407 is about.
+function hasClubIcs(){ return !!(windows() || (group && group.target_date)); }
+
 // Whichever drawer is open, and nothing when none is. Leave, calendar and
 // refresh share the overflow with your own name: none of them is a thing you
 // do twice, and all of them used to be a permanent row.
@@ -12986,7 +13012,7 @@ function clubDrawer(){
   return '<div class="cdrawer" id="cdrawer">'
     + nameRow()
     + '<div class="row"><button id="b-grefresh">Refresh</button>'
-    + ((windows() || (group && group.target_date))
+    + (hasClubIcs()
         ? '<button id="b-gics" title="'
           + (windows() ? 'One calendar event per schedule window'
                        : 'One calendar event on the finish date')
