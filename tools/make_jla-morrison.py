@@ -24,12 +24,11 @@ Every one-shot row asserts the sentence that credits it.
 THE DECISION the run forces, made once and stated on the list: **if the run's
 own Deluxe Editions collect it, it is on this list.** That takes in the Secret
 Files short, the Prometheus and WildC.A.T.s one-shots, JLA #1,000,000,
-JLA: Earth 2 and JLA: Classified #1-3. It leaves out Aztek, the
-thirty-four other series that put out a #1,000,000 issue, and JLA Secret
-Files & Origins #2 — which the
-Strength in Numbers trade collects, but which Morrison's bibliography does not
-claim. The one deliberate addition is DC One Million #1-4, marked optional,
-because the JLA chapter is a chapter OF it.
+JLA: Earth 2 and JLA: Classified #1-3. It leaves out Aztek, the thirty-four
+other series that put out a #1,000,000 issue, and JLA Secret Files & Origins #2
+— which the Strength in Numbers trade collects, but which Morrison's
+bibliography does not claim. The one deliberate addition is DC One Million
+#1-4, marked optional, because the JLA chapter is a chapter OF it.
 
 Fill-in issues by other writers are left out rather than marked optional. They
 are not this run, and a list that carried them would be lying about its subject.
@@ -271,8 +270,8 @@ SECTIONS = [
         "sub": "November 1998 · #23 ends two pages into it",
         "intro":
             "For one month almost every DC title shipped an issue numbered "
-            "#1,000,000, "
-            "set in the 853rd century. Morrison wrote the four-issue core "
+            "#1,000,000, set in the 853rd century. Morrison wrote the "
+            "four-issue core "
             "miniseries as well as the JLA chapter, and the last two pages of "
             "#23 lead into it.\n\n"
             "The JLA issue is the one the run's own collection keeps, so it is "
@@ -342,6 +341,7 @@ assert [x["id"] for x in T1 if x["t"] != "JLA"] == ["jla-secret-files-1"], \
 assert ISSUES == len(MORRISON), \
     "emitted %d JLA issues; the sources credit Morrison with %d" % (ISSUES, len(MORRISON))
 
+
 def issue_list(nums):
     """"#1–17, #22–26 … and #1,000,000" for a set of issue numbers."""
     runs = []
@@ -380,8 +380,9 @@ PROPERTY = {
          "1 is the run on the monthly book — the %d issues Morrison wrote "
          "between #1 and #41 — plus the Secret Files short, which the run's "
          "own collection files with #1–9. The remaining one, JLA #1,000,000, "
-         "sits in Tier 2 with the crossover it is a chapter of. 2 is the rest of what is collected alongside the run: the two "
-         "one-shots, that crossover, and the two books either side of the end. "
+         "sits in Tier 2 with the crossover it is a chapter of. 2 is the "
+         "rest of what is collected alongside the run: the two one-shots, "
+         "that crossover, and the two books either side of the end. "
          "The minimum viable path is Tier 1 alone."
          % T1_ISSUES],
         ["Which continuity.",
@@ -401,8 +402,8 @@ PROPERTY = {
          "collect it, it is on this list. That takes in the Secret Files short, "
          "both one-shots, JLA #1,000,000, Earth 2 and Classified. It leaves out "
          "Aztek, and the thirty-four other series that put out a #1,000,000 "
-         "issue. It also leaves out "
-         "JLA Secret Files & Origins #2, which the Strength in Numbers trade "
+         "issue. It also leaves out JLA Secret Files & Origins #2, which the "
+         "Strength in Numbers trade "
          "collects but Morrison's bibliography does not claim. The single "
          "addition is DC One Million #1–4, marked optional, because the JLA "
          "chapter is a chapter of it."],
