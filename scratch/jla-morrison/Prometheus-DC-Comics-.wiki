@@ -1,0 +1,130 @@
+{{Short description|DC Comics supervillain}}
+{{Infobox comics character  <!--Wikipedia:WikiProject Comics-->
+|character_name = Prometheus
+|image          = Prometheus (DC Comics character).png
+|converted      = y
+|caption        = Prometheus as depicted in ''New Year's Evil: Prometheus'' vol. 1 (February 1998).<br>Art by Arnie Jorgensen.
+|publisher      = [[DC Comics]]
+|debut          = '''(Curt Calhoun)'''<br>''[[Blue Beetle (comic book)|Blue Beetle]]'' (vol. 6) #3 (August 1986) <br> '''(Unnamed version)'''<br>''New Year's Evil: Prometheus'' #1 (February 1998) <br> '''(Chad Graham)'''<br>''[[Batman: Gotham Knights]]'' #52 (June 2004)
+|creators       = '''(Curt Calhoun)'''<br>[[Len Wein]] (writer)<br>[[Paris Cullins]] (artist)<br> '''(Unnamed version)'''<br>[[Grant Morrison]] (writer)<br>Arnie Jorgensen (artist)<br> '''(Chad Graham)'''<br>A. J. Lieberman
+|alter_ego      = Curt Calhoun<br>Chad Graham
+|full_name      =
+|species        = [[Human]]
+|homeworld      = 
+|alliances      = '''(Curt Calhoun)'''<br>[[Hybrid (DC Comics)|Hybrid]]<br> '''(Unnamed version)'''<br>[[Secret Society of Super Villains|The Society]]<br>Injustice Gang<br> '''(Chad Graham)'''<br>[[Secret Society of Super Villains|The Society]] 
+|partners       = 
+|supports       =
+|aliases        = '''(Unnamed version)'''<br>Retro, [[Captain Marvel Jr.|Shazam]], Matt Dell
+|powers         = Peak human physical and mental conditioning<br>Highly skilled hand-to-hand combatant and martial artist<br>Expert in the use of various weapons<br>Cybernetic implants, helmet and armor further augment physical attributes
+|cat            = super
+|subcat         = DC Comics
+|villain        = y
+|sortkey        = Prometheus (comics)
+}}
+
+'''Prometheus''' is a name used by multiple <!--Do not add "fictional" as it is tautological; supervillains (and characters in general) are by definition implied to be fictionalized to some extent.-->[[supervillains]] appearing in [[American comic book]]s published by [[DC Comics]]. Created by writer [[Grant Morrison]] and penciller Arnie Jorgensen, the most recognized version first appeared in ''New Year's Evil: Prometheus'' (February 1998). Commonly an adversary of the [[Justice League]] and a villainous [[Foil (narrative)|foil personality]] to [[Batman]] (similar to villains [[Killer Moth]], [[Wrath (comics)|Wrath]], and [[Hush (character)|Hush]]), Prometheus would serve as an enemy to superheroes including Batman, [[Green Arrow]] and [[Midnighter]].<ref>{{cite book |last1=Greenberger |first1=Robert |title=The Essential Batman Encyclopedia |date=2008 |publisher=Del Rey |isbn=9780345501066 |pages=298–299}}</ref>
+
+In 2009, Prometheus was ranked as [[IGN]]'s 80th Greatest Comic Book Villain of All Time.<ref>[http://comics.ign.com/top-100-villains/80.html Prometheus is number 80] {{webarchive|url=https://web.archive.org/web/20090509080018/http://comics.ign.com/top-100-villains/80.html |date=2009-05-09}}, [[IGN]]. Retrieved September 5, 2009.</ref> On [[The CW]]'s live-action [[Arrowverse]] TV series ''[[Arrow (TV series)|Arrow]]'', the character was portrayed by [[Josh Segarra]] and voiced by [[Michael Dorn]].
+
+== Publication history ==
+Curt Calhoun debuted in ''[[Blue Beetle (comic book)|Blue Beetle]]'' (vol. 6) #3 (August 1986). A new version of Prometheus debuted in ''New Year's Evil: Prometheus'' (February 1998) and returned in ''[[JLA (comic book)|JLA]]'' #16–17 (March–April 1998) and #36–41 (December 1999–May 2000). The character was then impersonated for a time by Chad Graham, but returned in ''Faces of Evil: Prometheus'' #1 (March 2009). Prometheus starred as the villain in the [[Limited series (comics)|limited series]] ''Justice League: Cry for Justice'' #1–7 (September 2009–April 2010), and was killed at the conclusion of the story.
+
+Writer [[Mike Conroy (writer)|Mike Conroy]] noted "...with his technologically advanced armor and weapons arsenal, which can download the fighting techniques of the world's top martial artists...he (Prometheus) turned out to be a formidable foe, as the JLA found out".<ref>Conroy, Mike. 500 Comicbook Villains, Collins & Brown, 2004.</ref>
+
+== Fictional character biography ==
+=== Curt Calhoun ===
+The original version, '''Curt Calhoun''', debuted in ''[[Blue Beetle (comic book)|Blue Beetle]]'' (vol. 6) #3 (August 1986), followed by appearances in issues #4 (September 1986); #6 (November 1986); #8–9 (January–February 1987) and #11–13 (April–June 1987). Calhoun is a small-time criminal working for supervillain [[Doctor Alchemy]] and is hired to steal a quantity of the metal [[promethium]] from KORD Inc., an organization owned by [[Ted Kord]]. Although successful, both Calhoun and Dr. Alchemy are captured by Blue Beetle. On release from prison, Calhoun aids the Blue Beetle against [[Calculator (character)|Calculator]] and is offered a position as a foreman at KORD Inc. by Kord. While saving Kord from an industrial accident, Calhoun is covered with metal laced with promethium. En route to the hospital, Calhoun's ambulance is attacked by members of the supervillain team [[Hybrid (DC Comics)|Hybrid]]. The leader, [[Mento (character)|Mento]], transforms the metal covering Calhoun into a metallic shell that he can heat up at will. Assuming the "Prometheus" alias, the reluctant Calhoun fights alongside Hybrid in an unsuccessful attempt to defeat the [[New Teen Titans]].<ref>''Blue Beetle'' (vol. 6) #4 (September 1986); #6 (November 1986); #8–9 (January–February 1987) and #11–13 (April–June 1987)</ref> Although Mento eventually directs Hybrid against the Titans once again, they rebel and Mento is apparently cured of his insanity by Titan member [[Raven (DC Comics)|Raven]].<ref>''The New Teen Titans'' #34 (August 1987)</ref>
+
+=== Unnamed version ===
+The most well-known version is the unnamed son of two [[hippie]] spree killers, who traveled across the [[United States]] with them until they were gunned down by police in a shootout. This traumatic experience causes their son's hair to turn white, and he vows to "annihilate the forces of justice" to avenge his parents.<ref>{{cite book |last1=Cowsill |first1=Alan |last2=Irvine |first2=Alex |last3=Korte |first3=Steve |last4=Manning |first4=Matt |last5=Wiacek |first5=Win |last6=Wilson |first6=Sven |title=The DC Comics Encyclopedia: The Definitive Guide to the Characters of the DC Universe |date=2016 |publisher=DK Publishing |isbn=978-1-4654-5357-0 |page=239}}</ref>
+
+Using his parents' hidden caches of money, the son travels the world and develops his skills, becoming an underground pit-fighter in [[Brazil]] and a mercenary in [[Africa]], and joining terrorist groups in the [[Middle East]]. After avenging his parents' deaths by murdering the police officer who shot them, he locates the [[Himalayas|Himalayan]] city of [[Shambhala]], inhabited by a sect of monks that worshiped the concept of evil. Prometheus discovers the monastery has been built on an alien spaceship, and the leader of the sect is one of the creatures from the vessel. He kills the alien and obtains a key that which opens a portal to the [[Phantom Zone|Ghost Zone]].
+
+Prometheus builds a house in the void as his headquarters, which is warped by the dimensional effects to become "crooked". He relates his origin to a young man, with the alias "Retro", who has won a competition to be part of the [[Justice League|JLA]] for a day. Prometheus kills Retro, copies the young man's mannerisms (courtesy of his advanced helmet), and joins the tour group at the JLA transporters, intending to masquerade as Retro to gain access to the [[JLA Watchtower]].<ref>''New Year's Evil: Prometheus'' (February 1998)</ref>
+
+Initially, the plan appears to be successful, with Prometheus ambushing the Justice League. Prometheus is caught off guard by [[Catwoman]] (who is disguised as [[Cat Grant]]), allowing the heroes time to recover. Prometheus switches places with [[Zauriel]] in the Ghost Zone and escapes capture.<ref>''JLA'' #16–17 (March–April 1998)</ref>
+
+Prometheus returns as a member of [[Lex Luthor]]'s second [[Injustice Gang]]. During the confusion caused by the arrival of the weapon Mageddon, Prometheus uses a [[White Martian]] space vessel abandoned in the Ghost Zone to infiltrate the Watchtower and attack [[Barbara Gordon|Oracle]]. Oracle escapes, with Prometheus's helmet being damaged in the process. The villain retrieves his original helmet (lost during the first battle with the JLA) and battles Batman once again. Prometheus is neutralized when Batman sabotages his helmet, overriding the information on the disc Prometheus uses to upload his combat skills and replacing the data with the limited physical skills and coordination of [[Stephen Hawking]]. Batman prevents fellow member [[Huntress (Helena Bertinelli)|Huntress]] from killing the now-helpless Prometheus.<ref>''JLA'' #36–41 (December 1999 – May 2000)</ref> Batman and [[Martian Manhunter]] take Prometheus into custody and use the latter's telepathy to mentally incapacitate Prometheus. After Martian Manhunter is killed by [[Libra (DC Comics)|Libra]], Prometheus's mind is restored and he tracks down Chad Graham, killing his would-be protégé and maiming or killing members of the [[Blood Pack (comics)|Blood Pack]].<ref name="auto">''Faces of Evil: Prometheus'' #1 (March 2009)</ref>
+
+==== Cry for Justice ====
+Prometheus impersonates [[Captain Marvel Jr.|Freddy Freeman]] and gains access to the JLA satellite, which in turn allows Prometheus to place teleportation devices in the home cities of various heroes which will "strand" them in various places in the past and future, as revenge for the years that he spent with his mind damaged. Prometheus also maims [[Roy Harper (character)|Roy Harper]] after Harper realizes his foe is not Freddy Freeman. After defeating the JLA and the [[Teen Titans]] by reading files on them, Prometheus is captured by [[Donna Troy]] and beaten brutally, until being stopped by the [[Shade (character)|Shade]]. Prometheus offers to reveal the location of the devices in exchange for his release, after they malfunction and activate. [[Star City (comics)|Star City]] suffers massive casualties, including Roy's daughter [[Lian Harper]]. Prometheus is murdered by [[Green Arrow]], who shoots an arrow through his head.<ref>''Justice League: Cry for Justice'' #1–7 (September 2009–April 2010)</ref>
+
+==== ''The New 52'' ====
+In 2011, "[[The New 52]]" rebooted the DC universe. Prometheus shows up to torment [[Midnighter]] using stolen technology from the God Garden that he sells to various individuals around the world. In addition, he acquires the Gardener's secret files on Midnighter's true identity and origin. When confronted by Midnighter, Prometheus uses God Garden technology to block Midnighter's tactical computer, eliminating the edge Midnighter has in analyzing an opponent's fighting techniques. Prometheus also reveals that he has downloaded all of Midnighter's own skills into his brain to use against his enemy. Pretending to be an ordinary man, he uses the alias '''Matt Dell''' to seduce Midnighter.<ref>''Midnighter'' (vol. 2) #7 (July 2016)</ref>
+
+=== Chad Graham ===
+The third version, '''Chad Graham''', debuted in ''[[Batman: Gotham Knights]]'' #52 (June 2004), as part of the "Pushback" storyline from issues #50–55 (April–September 2004). Graham is the protege of the second Prometheus and assumed the mantle after Prometheus was incapacitated by Martian Manhunter. Graham is then recruited to join another version of the [[Secret Society of Super Villains]] and participates in a massive attack by the Society on [[Metropolis (comics)|Metropolis]].<ref>''Villains United'' #1–6 (July–September 2005)</ref> Graham is later murdered when the true Prometheus regains himself; he expresses contempt for Graham's impersonation but is satisfied that the damage Graham has done to Prometheus's reputation would lead to the heroes underestimating him in the future.<ref name="auto" />
+
+== Powers and abilities ==
+Prometheus possesses no superhuman abilities, but has undergone intense physical and mental training and utilizes an extensive range of equipment and technology like the hero [[Batman]]. Common tools include body armor, gauntlets that fire various projectiles, a side-handle baton with several technological features, and a helmet that in addition to emitting [[strobe]] lighting capable of disorientation and [[hypnotism]], can download the knowledge and physical skills of others directly into his brain via a [[compact disc]], his default disc including the skills of thirty of the world's greatest martial artists. Where Prometheus obtains this information is not known, but his combat skills include the duplicated abilities of Batman and [[Lady Shiva]], although it is unclear how much combat training he would possess if he had to fight without the helmet. The 'battlesuit'/helmet combination is also equipped with an artificial Intelligence that can rapidly calculate and deploy a variety of strategies and countermeasures that have allowed Prometheus at various times to incapacitate entire groups of the Justice League singlehandedly and simultaneously.
+
+Finally, the unnamed version possesses the "Ghost Key" which allows the villain to teleport himself and other objects and persons to and from a dimension called the "[[Phantom Zone|Ghost Zone]]". It can also be used to inflict total molecular disintegration on a target, but Prometheus only employed this function once, when he eliminated the unsuspecting Retro. The helmet can be hacked by external sources, but Batman had to study the helmet for a month to learn how to hack it in that manner, and it is unclear if this would allow him to hack other versions of the helmet.
+
+== Other versions ==
+=== JLA/Avengers ===
+Prometheus appears in ''[[JLA/Avengers]]'' #4 as a brainwashed minion of [[Krona (character)|Krona]].<ref>''Smallville: Lantern'' #2</ref>
+
+=== Power Rangers/Justice League ===
+In ''[[Justice League/Mighty Morphin Power Rangers]]'', [[Billy Cranston]] temporarily wields Prometheus' armor after [[Lord Zedd]] and [[Brainiac]] steal his powers.<ref>''Power Rangers/Justice League'' #4</ref>
+
+== In other media ==
+=== Television ===
+{{multiple image
+ | align     = right
+ | direction = horizontal
+ | image1    = Prometheus (masked performer).jpg
+ | width1    = 160
+ | alt1      = Masked performed of Prometheus on ''Arrow''.
+ | footer    = [[Josh Segarra]] as Prometheus masked (left) and unmasked as "[[Adrian Chase (Arrowverse)|Adrian Chase]]" (right) in ''[[Arrow (TV series)|Arrow]]''.
+ | width2    = 160
+ | image2    = Adrian Chase Arrow.jpg
+ | alt2      = Chase as Prometheus
+ | footer2    = 
+}}
+* Two original incarnations of Prometheus appear in media set in the [[Arrowverse]], with [[Michael Dorn]] providing his disguised voice.  
+** The [[Earth-1 (Arrowverse)|Earth-1]] incarnation, '''Simon Morrison''', appears in ''[[Arrow (TV series)|Arrow]]'', portrayed by [[Josh Segarra]].<ref>{{Cite web |url=http://www.parentherald.com/articles/71326/20161006/arrow-season-5-episode-2-spoilers-recruits-introduce-new-green.htm |title='Arrow' Season 5 Episode 2 Spoilers: 'The Recruits' To Introduce New Green Vigilantes; Who Is Prometheus? |last=Mason |first=Harvy |date=October 6, 2016 |publisher=parentherald.com |url-status=live |archive-url=https://web.archive.org/web/20170107171903/http://www.parentherald.com/articles/71326/20161006/arrow-season-5-episode-2-spoilers-recruits-introduce-new-green.htm |archive-date=January 7, 2017 |access-date=January 6, 2017}}</ref><ref name="PrometheusReveal">{{cite magazine |last=Abrams |first=Natalie |date=March 1, 2017 |title=Arrow unveils Prometheus' identity – what's next? |url=https://ew.com/tv/2017/03/01/arrow-prometheus-identity-chase-spoilers/ |access-date=March 1, 2017 |magazine=[[Entertainment Weekly]]}}</ref> This version is a [[polymath]] as an expert in law, engineering, and various forms of armed and unarmed combat, appearing primarily in the [[Arrow season 5|fifth season]] and briefly in the [[Arrow season 6|sixth season]]. Following his father Justin Claybourne's death, he vowed revenge on and conducted research into [[Oliver Queen (Arrowverse)|Oliver Queen]]. After seeking out [[Talia al Ghul]] to train him in the [[League of Assassins]]' ways, Morrison assumes the alias of Starling City's District Attorney "'''[[Adrian Chase]]'''" before targeting Queen and the latter's allies as the "'''Throwing Star Killer'''", manipulating [[Evelyn Crawford Sharp|Artemis]], and recruiting [[Laurel Lance (Arrowverse Earth-2)|Black Siren]] to his cause. While Team Arrow eventually deduce his identity, Morrison kidnaps [[William Clayton (Arrow)|William Clayton]] and captures Queen's teammates to lure him to the island [[Lian Yu (Arrowverse location)|Lian Yu]], where he has rigged explosives connected to a neural interface that will detonate should he die. In the ensuing fight with Queen, Morrison kills himself, though Queen and most of the captives survive.
+** The Earth-X incarnation, '''[[Tommy Merlyn (Arrowverse)|Tommy Merlyn]]''', appears in the crossover ''[[Crisis on Earth-X]]'', portrayed by [[Colin Donnell]].<ref>{{cite web |last=Francisco |first=Eric |date=November 28, 2017 |title=A Season 1 'Arrow' Character Revealed as Crossover Villain, Kind Of |url=https://www.inverse.com/article/38790-arrow-season-6-episode-8-recap-crisis-earth-x-prometheus-tommy-merlyn |website=[[Inverse (website)|Inverse]]}}</ref><ref>{{cite web |last=McCreesh |first=Louise |date=November 28, 2017 |title=Arrow crossover episode made a fan theory come true |url=http://www.digitalspy.com/tv/arrow/news/a844092/arrow-crossover-episode-crisis-on-earth-x-tommy-merlyn-prometheus-fan-theory-colin-donnell/ |website=[[Digital Spy]]}}</ref>
+
+=== Video games ===
+* Prometheus appears in the [[Game Boy Advance]] and [[Nintendo DS]] versions of ''[[Justice League Heroes]]''.{{citation needed|date=September 2023}}
+* A biography for Prometheus appears in ''[[Batman Arkham Asylum]]''.<ref>{{cite web |last=Tibbetts |first=John |date=26 June 2022 |title=Batman: Arkham's Most Obscure Villain Easter Eggs |url=https://screenrant.com/batman-arkham-easter-eggs-asylum-city-knight-ratcatcher/ |website=[[Screen Rant]]}}</ref>
+* Simon Morrison / Prometheus appears as a playable character in ''[[Lego DC Super-Villains]]'' via the "DC TV Super-Villains" [[Downloadable content|DLC]] pack.<ref>{{cite web | url=https://store.playstation.com/en-us/product/UP1018-CUSA11542_00-CWVILLAINCHAPACK | title=LEGO DC TV Series Super-Villains Character Pack }}</ref>
+
+=== Miscellaneous===
+Prometheus appears in ''[[Smallville Season 11|Smallville: Lantern]]''.
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{comicbookdb|type=character|id=936|title=Prometheus (Curt Calhoun)}}
+* {{comicbookdb|type=character|id=935|title=Prometheus (Morrison)}}
+* [http://www.dcuguide.com/who.php?name=prometheus2 Prometheus (Curt Calhoun)] {{Webarchive|url=https://web.archive.org/web/20160303183924/http://www.dcuguide.com/who.php?name=prometheus2 |date=2016-03-03 }} at the DCU Guide
+* [http://www.dcuguide.com/who.php?name=prometheus3 Prometheus (Morrison)] {{Webarchive|url=https://web.archive.org/web/20160303202521/http://www.dcuguide.com/who.php?name=prometheus3 |date=2016-03-03 }} at the DCU Guide
+
+{{Justice League characters}}
+{{Batman characters}}
+{{Green Arrow}}
+{{Midnighter}}
+{{Grant Morrison}}
+{{Peacemaker}}
+
+[[Category:Batman characters]]
+[[Category:Characters created by Grant Morrison]]
+[[Category:Characters created by Len Wein]]
+[[Category:Comics characters introduced in 1986]]
+[[Category:Comics characters introduced in 1998]]
+[[Category:DC Comics characters with superhuman strength]]
+[[Category:DC Comics LGBTQ supervillains]]
+[[Category:DC Comics male supervillains]]
+[[Category:DC Comics martial artists]]
+[[Category:DC Comics orphans]]
+[[Category:Fictional archers]]
+[[Category:Fictional assassins in comics]]
+[[Category:Fictional mass murderers]]
+[[Category:Fictional Pencak Silat practitioners]]
+[[Category:Fictional uxoricides]]
+[[Category:Prometheus in fiction]]
+[[Category:Supervillains with their own comic book titles]]
+
+[[de:Schurken im Superman-Universum#Prometheus]]

@@ -77,6 +77,7 @@ def issues_in(fragment):
 JLA = page("JLA (comic book)")
 BIB = page("Grant Morrison bibliography")
 PROM = page("Prometheus (DC Comics)")
+DCOM = page("DC One Million")
 
 # 1. What the infobox credits Morrison with.
 m = re.search(r"\[\[Grant Morrison\]\]\s*\(([^)]*)\)", JLA)
@@ -163,6 +164,16 @@ assert ("A new version of Prometheus debuted in ''New Year's Evil: Prometheus'' 
         "(February 1998) and returned in ''[[JLA (comic book)|JLA]]'' "
         "#16–17 (March–April 1998)") in PROM, \
     "the Prometheus debut sentence changed — the placement note is unsourced now"
+
+# Every factual claim the DC One Million section makes, against its own page.
+for fragment, what in (
+    ("in November [[1998 in comics|1998]]", "the month"),
+    ("in the 853rd century", "the century it is set in"),
+    ("The core of the event was a four-issue miniseries", "the core miniseries"),
+    ("The miniseries was written by [[Grant Morrison]] and drawn by "
+     "[[Val Semeiks]]", "its credits"),
+):
+    assert fragment in DCOM, "DC One Million's article no longer states %s" % what
 
 # The two lead-in pages, which is why JLA #1,000,000 sits after #23.
 assert ("the paperback version omits both this issue and the two lead-in pages "

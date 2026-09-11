@@ -1,0 +1,164 @@
+{{short description|Comic book}}
+{{Infobox comic book title  <!--Wikipedia:WikiProject Comics-->
+| title               = JLA
+| image               =JLA1.jpg
+| caption             = Cover for ''JLA'' #1, art by [[Howard Porter (artist)|Howard Porter]] and John Dell. From left to right: [[Batman]], [[Aquaman]], [[Wonder Woman]], [[Martian Manhunter]], [[Superman]], [[Green Lantern]] ([[Kyle Rayner]]), and [[the Flash]] ([[Wally West]]).
+|alt = A worm's eye view of the Justice League
+| schedule            = Monthly
+| ongoing             = y
+| Superhero           = y
+| publisher           = [[DC Comics]]
+| startmo             = November
+| startyr             = 1996
+| endmo               = February
+| endyr               = 2006
+| issues = 126 (#1–125, plus an issue numbered #[[DC One Million|1,000,000]])
+| main_char_team      = [[Justice League of America]]
+| writers             = [[Grant Morrison]] (1-17, 22-31, 34-41, 1,000,000), [[Mark Waid]] (18-21, 32-33, 43-58, 60), [[Chuck Dixon]] (59), [[Joe Kelly (comics writer)|Joe Kelly]] (61-76, 78-90, 100), [[Denny O'Neil]] (91-93), [[Chris Claremont]] (94-99), [[Chuck Austen]] (101–106), [[Kurt Busiek]] (61, 107–114), [[Geoff Johns]] (115–119), [[Allan Heinberg]] (115–119), [[Bob Harras]] (120–125)
+| artists             =
+| pencillers          = [[Howard Porter (artist)|Howard Porter]]<br />[[Bryan Hitch]]<br />[[Doug Mahnke]]
+| inkers              = John Dell<br />[[Paul Neary]]
+| colorists           =
+| editors             =
+| creative_team_month =
+| creative_team_year  =
+| creators            = Grant Morrison<br />Howard Porter
+| TPB                 = New World Order
+| ISBN                = 1-56389-369-X
+| subcat              = Justice League
+| sort                = JLA
+}}
+'''''JLA''''' was a [[ongoing series|monthly]] [[comic book]] published by [[DC Comics]] from January 1997 to April 2006 featuring the [[Justice League of America]] (JLA, Justice League).<ref>Beatty, Scott, and Roger Stewart. ''JLA: The Ultimate Guide to the Justice League of America''. Grand Rapids: Dorling Kindersley, Incorporated, 2002.</ref> The series restarted DC's approach to the Justice League, which had initially featured most of the company's top-tier superheroes but shifted in the 1980s to featuring a rotating cast of established characters alongside newer ones and also saw that franchise expand to several spin-off series, diluting the prestige of the name brand. When relaunched by writer [[Grant Morrison]], the team again focused on the most recognizable, powerful, and long-lasting heroes in DC's library.
+
+== Publication history ==
+The low sales of the various Justice League spin-off books by the mid-1990s<ref>Miller, John J. [http://www.cbgxtra.com/Default.aspx?tabid=1670 "JANUARY 1997 Comic Book Preorders from Heroes World and Diamond Comic Distributors"] {{Webarchive|url=https://web.archive.org/web/20090501091723/http://www.cbgxtra.com/Default.aspx?tabid=1670 |date=2009-05-01 }}. [[Comics Buyer's Guide]]. 2007.</ref> prompted DC to revamp the League as a single team (all the various branch teams were disbanded) on a single title. A Justice League of America formed in the September 1996 [[Limited series (comics)|limited series]] ''Justice League: A Midsummer's Nightmare'' by [[Mark Waid]] and [[Fabian Nicieza]]. In 1997, DC Comics launched a new Justice League series titled ''JLA'', written by [[Grant Morrison]] with art by [[Howard Porter (artist)|Howard Porter]] and inker John Dell. Morrison stayed as writer for the series through issue #41, though several issues had fill-in writers. ''JLA'' #18-#21 and #33 were written by [[Mark Waid]]. [[Mark Millar]], [[Devin Grayson]] and Mark Waid, and [[J.M. DeMatteis]] wrote issues #27, 32 and 35, respectively.
+
+This series, in an attempt at a "back-to-basics" approach, used as its core the team's original and most famous seven members (or their successors): Superman, Batman, Wonder Woman, Aquaman, the Flash ([[Wally West]]), Green Lantern ([[Kyle Rayner]]), and Martian Manhunter.<ref>Kirk, Jason. "[http://geocities.com/TheTropics/1185/newera/jla1997.htmlJLA (1997)]{{cbignore|bot=medic}}" Yahoo! [[GeoCities]], December 2000{{dead link|date=March 2011}}</ref> Additionally, the team received a new headquarters, the "[[Justice League Watchtower|Watchtower]]", based on the [[Moon]]. ''JLA'' quickly became DC's best-selling title,<ref>{{cite magazine |url=http://www.cbgxtra.com/Default.aspx?tabid=1670 |title= North American Comics Market Estimates for January 1997|first= John Jackson|last= Miller|author-link = John Jackson Miller |year= 2007|magazine= Comics Buyer's Guide|archive-url=https://web.archive.org/web/20090501091723/http://www.cbgxtra.com/Default.aspx?tabid=1670|archive-date=May 1, 2009 |url-status=dead |access-date= April 8, 2012}}</ref> a position it maintained on and off for several years.<ref>Manning "1990s" in Dolan, p. 278: "Renewed as one of DC's most popular titles, ''JLA'' ran for 125 issues before its next relaunch. Earning countless spin-off miniseries and specials, the Justice League reclaimed its place atop DC's hit titles list".</ref>
+
+Morrison introduced the idea of the JLA allegorically representing a [[Pantheon (gods)|pantheon]] of gods, with their different powers and personalities, incorporating such characters as [[Zauriel]], [[Big Barda]], [[Orion (character)|Orion]], [[Huntress (Helena Bertinelli)|Huntress]], [[Barbara Gordon]] (Oracle), [[Steel (John Henry Irons)]], and [[Plastic Man]]. They also had [[Aztek (character)|Aztek]], [[Tomorrow Woman]], and [[Connor Hawke|Green Arrow (Connor Hawke)]] as temporary members.<ref>{{cite web|url=http://sequart.com/JLAmorrison.htm|title=Sequart Organization – advancing comics as art since 1996|work=Sequart Organization|access-date=2009-01-04|archive-date=2008-05-09|archive-url=https://web.archive.org/web/20080509144111/http://www.sequart.com/JLAmorrison.htm|url-status=dead}}</ref>
+
+Under Morrison, the series pitted the League against a variety of enemies including the White Martians, renegade angels, a new incarnation of the [[Injustice Gang]] led by [[Lex Luthor]], and the [[Key (character)|Key]]. Other foes were the new villain [[Prometheus (DC Comics)|Prometheus]], the existing JLA villain [[Starro]], "the Ultra-Marines", and a futuristic [[Darkseid]]. Morrison's run culminated in an arc titled "World War III", which involves the [[New Gods]] preparing the Earth for battle against a creature known as "Mageddon", a super-sentient weapon of mass destruction.
+
+Since this new League included most of DC's most powerful heroes, the focus of the stories changed. The League now dealt only with Earth-shattering, highest-priority threats which could challenge their tremendous combined power. Enemies faced by this new JLA included an invading army of aliens, a malfunctioning war machine from the future, a horde of renegade angels, a newly reformed coalition of villains as a counter-league, mercenaries armed with individualized take-down strategies for each superhero, various cosmic threats, and the enraged spirit of the Earth itself. In addition, because almost all of the members had their own comics, the stories were almost always self-contained, with all chapters occurring within ''JLA'' itself and very rarely affecting events outside of that series. Developments from a hero's own title (such as the new costume and electric-based powers temporarily adopted by Superman in 1997–1998) were reflected in the League's comic book, however.
+
+Morrison departed with issue #41, after which the book saw runs by [[Mark Waid]] and [[Joe Kelly (comics writer)|Joe Kelly]]. Subsequent to this, the series switched to a series of rotating writers with issue #91 while Kelly (via ''JLA'' #100) was given the miniseries ''[[Justice League Elite]]'' #1-12, which featured Green Arrow, the Flash, and several other characters. The new format saw stories by [[John Byrne (comics)|John Byrne]], [[Chuck Austen]], and [[Kurt Busiek]]. [[Geoff Johns]] and [[Allan Heinberg]] would take over the book with #115, which saw a multi-part storyline dealing with the aftermath of ''[[Identity Crisis (DC Comics)|Identity Crisis]]'', and served as a lead-in to the events of ''[[Infinite Crisis]]'', as [[Superboy-Prime]] destroyed the Watchtower at the end of issue #119. [[Bob Harras]] wrote the book's final storyline (''JLA'' #120–125) as Green Arrow struggled to keep the League afloat.
+
+== Storylines ==
+Despite all of this, DC did not create continuing spin-off series as it had done before. Instead, a large number of miniseries and one-shots featuring the team were released. One spin-off team, the [[Justice League Elite]] was created following the events of ''JLA'' #100, but their miniseries was limited to 12 issues, and the team appeared only once after the miniseries ended its run. ''JLA'''s popularity was also able to launch the ''[[Justice Society of America#JSA (1999–2006)|JSA]]'' series, which was relaunched as ''[[Justice Society of America]]'' to coincide with the new ''Justice League of America'' book.
+
+In 2005, a story arc by [[Geoff Johns]] and [[Alan Heinberg]] called "Crisis of Conscience" (''JLA'' #115–119) depicted the dissolution of the Justice League of America as the breakdown of trust shown in the 2004 limited series ''[[Identity Crisis (DC Comics)|Identity Crisis]]'' reached its zenith. At the end of the arc, [[Superboy-Prime]] destroyed the [[Justice League Watchtower]]. ''JLA'', one of several titles to be cancelled at the conclusion of the ''[[Infinite Crisis]]'' storyline, ended with issue #125.
+
+As depicted in the ''Villains United: Infinite Crisis Special'' and the final issue of ''[[Infinite Crisis]]'' itself, preparations for the defense of [[Metropolis (comics)|Metropolis]] against an army of organized supervillains required a brief and temporary expansion of the Justice League to its largest roster to date. The main defensive teams of the JLA, JSA, [[Teen Titans]], and [[Outsiders (comics)|Outsiders]] already being occupied elsewhere by the Crisis, it fell on Oracle and Martian Manhunter to contact and deputize seemingly every active or once active hero in the DC Universe as Justice League members, effective immediately, to form a last line of defense for the city.
+
+== Reception ==
+The new approach worked, and ''JLA'' quickly became DC's best-selling title, a position it maintained on and off for several years, as reflected in the following advance sales figures for months in which ''JLA'' was DC's best-selling title:<!--
+ -->{{col-begin}}<!--
+ -->{{col-break}}
+* January 1997 (78,400)<ref>{{cite web|title=Comics Sales Charts, Jan. 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1670|access-date=2009-01-12|archive-date=2009-05-01|archive-url=https://web.archive.org/web/20090501091723/http://www.cbgxtra.com/Default.aspx?tabid=1670|url-status=dead}}</ref>
+* February 1997 (81,500)<ref>{{cite web|title=Comics Sales Charts, Feb. 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1669|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001529/http://www.cbgxtra.com/Default.aspx?tabid=1669|url-status=dead}}</ref>
+* May 1997 (103,500)<ref>{{cite web|title=Comics Sales Charts, May 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1639|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001500/http://www.cbgxtra.com/Default.aspx?tabid=1639|url-status=dead}}</ref>
+* June 1997 (104,000)<ref>{{cite web|title=Comics Sales Charts, June 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1640|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001503/http://www.cbgxtra.com/Default.aspx?tabid=1640|url-status=dead}}</ref>
+* July 1997 (two issues: 104,900 and 104,400)<ref>{{cite web|title=Comics Sales Charts, July 1997|publisher=CBGXtra.com |url=http://www.cbgxtra.com/Default.aspx?tabid=812}}</ref>
+* August 1997 (104,700)<ref>{{cite web|title=Comics Sales Charts, Aug. 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=853|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001804/http://www.cbgxtra.com/Default.aspx?tabid=853|url-status=dead}}</ref>
+* September 1997 (107,000)<ref>{{cite web|title=Comics Sales Charts, Sept. 1997|publisher=CBGXtra.com |url=http://www.cbgxtra.com/Default.aspx?tabid=857}}</ref>
+* October 1997 (111,200)<ref>{{cite web|title=Comics Sales Charts, Oct. 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=858|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001829/http://www.cbgxtra.com/Default.aspx?tabid=858|url-status=dead}}</ref>
+* November 1997 (111,400)<ref>{{cite web|title=Comics Sales Charts, Nov. 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1011|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001146/http://www.cbgxtra.com/Default.aspx?tabid=1011|url-status=dead}}</ref>
+* December 1997 (109,100)<ref>{{cite web|title=Comics Sales Charts, Dec. 1997|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1012|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001152/http://www.cbgxtra.com/Default.aspx?tabid=1012|url-status=dead}}</ref>
+* January 1998 (108,900)<ref>{{cite web|title=Comics Sales Charts, Jan. 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1562|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001244/http://www.cbgxtra.com/Default.aspx?tabid=1562|url-status=dead}}</ref>
+* February 1998 (101,400)<ref>{{cite web|title=Comics Sales Charts, Feb. 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1563|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001251/http://www.cbgxtra.com/Default.aspx?tabid=1563|url-status=dead}}</ref>
+* March 1998 (101,500)<ref>{{cite web|title=Comics Sales Charts, March 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1564|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001257/http://www.cbgxtra.com/Default.aspx?tabid=1564|url-status=dead}}</ref>
+* May 1998 (99,500)<ref>{{cite web|title=Comics Sales Charts, May 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1566|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001305/http://www.cbgxtra.com/Default.aspx?tabid=1566|url-status=dead}}</ref>
+* June 1998 (100,000)<ref>{{cite web|title=Comics Sales Charts, June 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1567|access-date=2009-01-13|archive-date=2007-02-04|archive-url=https://web.archive.org/web/20070204011151/http://cbgxtra.com/Default.aspx?tabid=1567|url-status=dead}}</ref>
+* July 1998 (97,300)<ref>{{cite web|title=Comics Sales Charts, July 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1573|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001315/http://www.cbgxtra.com/Default.aspx?tabid=1573|url-status=dead}}</ref>
+* August 1998 (95,300)<ref>{{cite web|title=Comics Sales Charts, Aug. 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1574|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001320/http://www.cbgxtra.com/Default.aspx?tabid=1574|url-status=dead}}</ref>
+* September 1998 (100,300)<ref>{{cite web|title=Comics Sales Charts, Sept. 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1575|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001326/http://www.cbgxtra.com/Default.aspx?tabid=1575|url-status=dead}}</ref>
+{{col-break}}
+* October 1998 (93,200)<ref>{{cite web|title=Comics Sales Charts, Oct. 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1576|archive-url=https://web.archive.org/web/20060829133708/http://cbgxtra.com/Default.aspx?tabid=1576|url-status=dead|archive-date=August 29, 2006}}</ref>
+* November 1998 (92,200)<ref>{{cite web|title=Comics Sales Charts, Nov. 1998|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1577|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001335/http://www.cbgxtra.com/Default.aspx?tabid=1577|url-status=dead}}</ref>
+* January 1999 (89,900)<ref>{{cite web|title=Comics Sales Charts, Jan. 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1626|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001356/http://www.cbgxtra.com/Default.aspx?tabid=1626|url-status=dead}}</ref>
+* March 1999 (86,000)<ref>{{cite web|title=Comics Sales Charts, March 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1628|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001406/http://www.cbgxtra.com/Default.aspx?tabid=1628|url-status=dead}}</ref>
+* May 1999 (86,500)<ref>{{cite web|title=Comics Sales Charts, May 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1630|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001416/http://www.cbgxtra.com/Default.aspx?tabid=1630|url-status=dead}}</ref>
+* June 1999 (86,900)<ref>{{cite web|title=Comics Sales Charts, June 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1631|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001420/http://www.cbgxtra.com/Default.aspx?tabid=1631|url-status=dead}}</ref>
+* July 1999 (85,600)<ref>{{cite web|title=Comics Sales Charts, July 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1632|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001426/http://www.cbgxtra.com/Default.aspx?tabid=1632|url-status=dead}}</ref>
+* August 1999 (84,000) [5th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, Aug. 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1633|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001431/http://www.cbgxtra.com/Default.aspx?tabid=1633|url-status=dead}}</ref>
+* September 1999 (83,400) [3rd highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, Sept. 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1634|access-date=2009-01-13|archive-date=2008-06-21|archive-url=https://web.archive.org/web/20080621135711/http://www.cbgxtra.com/Default.aspx?tabid=1634|url-status=dead}}</ref>
+* November 1999 (80,000) [5th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, Nov. 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1636|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001441/http://www.cbgxtra.com/Default.aspx?tabid=1636|url-status=dead}}</ref>
+* December 1999 (84,200) [6th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, Dec. 1999|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1637|access-date=2009-01-13|archive-date=2008-06-03|archive-url=https://web.archive.org/web/20080603001447/http://www.cbgxtra.com/Default.aspx?tabid=1637|url-status=dead}}</ref>
+* January 2000 (78,300) [4th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, Jan. 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1427|access-date=2009-01-13|archive-date=2007-10-23|archive-url=https://web.archive.org/web/20071023090413/http://www.cbgxtra.com/Default.aspx?tabid=1427|url-status=dead}}</ref>
+* February 2000 (75,200) [6th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, Feb. 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1428|access-date=2009-01-13|archive-date=2007-10-22|archive-url=https://web.archive.org/web/20071022095757/http://www.cbgxtra.com/Default.aspx?tabid=1428|url-status=dead}}</ref>
+* March 2000 (77,100) [4th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, March 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1429|access-date=2009-01-13|archive-date=2007-10-23|archive-url=https://web.archive.org/web/20071023090509/http://www.cbgxtra.com/Default.aspx?tabid=1429|url-status=dead}}</ref>
+* April 2000 (73,700) [6th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, April 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1430|access-date=2009-01-13|archive-date=2007-10-22|archive-url=https://web.archive.org/web/20071022095607/http://www.cbgxtra.com/Default.aspx?tabid=1430|url-status=dead}}</ref>
+* May 2000 (76,900) [4th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, May 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1431|access-date=2009-01-13|archive-date=2007-10-22|archive-url=https://web.archive.org/web/20071022095734/http://www.cbgxtra.com/Default.aspx?tabid=1431|url-status=dead}}</ref>
+* June 2000 (76,800) [5th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, June 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=1432|access-date=2009-01-13|archive-date=2007-10-22|archive-url=https://web.archive.org/web/20071022095657/http://www.cbgxtra.com/Default.aspx?tabid=1432|url-status=dead}}</ref>
+* July 2000 (75,400) [5th highest among all publishers]<ref>{{cite web|title=Comics Sales Charts, July 2000|publisher=CBGXtra.com|url=http://www.cbgxtra.com/Default.aspx?tabid=808|access-date=2009-01-13|archive-date=2007-10-22|archive-url=https://web.archive.org/web/20071022095835/http://www.cbgxtra.com/Default.aspx?tabid=808|url-status=dead}}</ref>
+{{col-end}}
+
+== Collected editions ==
+''JLA'' was collected in a series of [[Trade paperback (comics)|trade paperbacks]]:
+* ''New World Order'' (collects ''JLA'' #1–4, 1997, {{ISBNT|1-56389-369-X}})
+* ''American Dreams'' (collects ''JLA'' #5–9, 1998, {{ISBNT|1-56389-394-0}})
+* ''Rock of Ages'' (collects ''JLA'' #10–15, 1998, {{ISBNT|1-56389-416-5}})
+* ''Strength in Numbers'' (collects ''JLA'' #16–23, ''New Year's Evil: [[Prometheus (DC Comics)|Prometheus]]'' #1 and "Heroes" from ''JLA Secret Files and Origins'' #2, 1998, {{ISBNT|1-56389-435-1}})
+* ''Justice for All'' (collects ''JLA'' #24–33, 1999, {{ISBNT|1-56389-511-0}})
+* ''[[World War III (DC Comics)|World War III]]'' (collects ''JLA'' #34–41, 2000, {{ISBNT|1-56389-618-4}})
+* ''[[JLA: Tower of Babel|Tower of Babel]]'' (collects ''JLA'' #42–46, ''JLA [[Secret Files and Origins]]'' #3 and ''JLA [[80-Page Giant]]'' #1, {{ISBNT|1-56389-727-X}})
+* ''Divided We Fall'' (collects ''JLA'' #47–54, {{ISBNT|1-56389-793-8}})
+* ''Terror Incognita'' (collects ''JLA'' #55–60, {{ISBNT|1-56389-936-1}})
+* ''Golden Perfect'' (collects ''JLA'' #61–65, {{ISBNT|1-56389-941-8}})
+* ''The Obsidian Age (Book 1)'' (collects ''JLA'' #66–71, {{ISBNT|1-56389-991-4}})
+* ''The Obsidian Age (Book 2)'' (collects ''JLA'' #72–76, {{ISBNT|1-4012-0043-5}})
+* ''Rules Of Engagement'' (collects ''JLA'' #77–82, {{ISBNT|1-4012-0215-2}})
+* ''Trial by Fire'' (collects ''JLA'' #84–89, {{ISBNT|1-4012-0242-X}})
+* ''The Tenth Circle'' (collects ''JLA'' #94–99, {{ISBNT|1-4012-0346-9}})
+* ''[[JLA: Pain of the Gods|Pain of the Gods]]'' (collects ''JLA'' #101–106, {{ISBNT|1-4012-0468-6}})
+* ''Syndicate Rules'' (collects ''JLA'' #107–114 and a story from ''JLA Secret Files and Origins 2004'', {{ISBNT|1-4012-0477-5}})
+* ''Crisis of Conscience'' (collects ''JLA'' #115–119, {{ISBNT|1-4012-0963-7}})
+* ''World Without a Justice League'' (collects ''JLA'' #120–125, {{ISBNT|1-4012-0964-5}})
+
+There is also a ''Deluxe Edition'' series:
+* ''JLA Deluxe Edition'':
+** '''Hardcovers''':
+*** ''Vol. 1'' (collects ''JLA'' #1–9 and ''JLA Secret Files and Origins'' #1, 256 pages, deluxe hardcover, September 2008, [[Titan Books|Titan]], {{ISBNT|1-84576-884-1}}, DC, {{ISBNT|1-4012-1843-1}})<ref>[http://www.dccomics.com/dcu/graphic_novels/?gn=9546 ''JLA Deluxe Edition: Vol. 1''] {{Webarchive|url=https://web.archive.org/web/20090425164534/http://www.dccomics.com/dcu/graphic_novels/?gn=9546 |date=2009-04-25 }}, DC Comics.com</ref>
+*** ''Vol. 2'' (collects ''JLA'' #10–17, ''New Year's Evil: Prometheus'' and ''JLA/WildC.A.T.S.'', 320 pages, deluxe hardcover, Titan, July 2009, {{ISBN|1-84856-320-5}}, DC, June 2009, {{ISBNT|1-4012-2265-X}})<ref>[http://www.dccomics.com/dcu/graphic_novels/?gn=11505 ''JLA Deluxe Edition: Vol. 2''] {{Webarchive|url=https://web.archive.org/web/20090628053422/http://www.dccomics.com/dcu/graphic_novels/?gn=11505 |date=2009-06-28 }}, DC Comics.com</ref>
+*** ''Vol. 3'' (collects ''JLA'' #22-26, 28–31 and 1,000,000, 256 pages, deluxe hardcover. April 28, 2010, DC Comics {{ISBNT|1-4012-2659-0}})
+*** ''Vol. 4'' (collects ''JLA'' #34, 36–41, ''JLA: Classified'' #1–3 and ''JLA: Earth 2'', 368 pages, deluxe hardcover. November 10, 2010, DC Comics, {{ISBNT|1-4012-2909-3}})
+*** ''Tower Of Babel'' (collects ''JLA'' #18-21, 32-33, 43-46 and ''JLA Secret Files and Origins'' #3, 280 pages, deluxe hardcover. April 21, 2021, DC Comics, {{ISBNT|1-77950-951-0}})
+** '''Softcovers''':
+*** ''Vol. 1'' (collects ''JLA'' #1–9 and ''JLA Secret Files and Origins'' #1, 256 pages, softcover, October 2011, DC Comics, {{ISBNT|1-4012-3314-7}})
+*** ''Vol. 2'' (collects ''JLA'' #10–17, ''New Year's Evil: Prometheus'', ''JLA Secret Files and Origins'' #2, and ''JLA/WildC.A.T.S.'', 336 pages, softcover, DC Comics.com {{ISBNT|1-4012-3518-2}})
+*** ''Vol. 3'' (collects ''JLA'' #18–31, 344 pages, softcover, January 2013, DC Comics, {{ISBNT|1-4012-3832-7}})
+*** ''Vol. 4'' (collects ''JLA'' #32–46, 384 pages, softcover, February 11, 2014, DC Comics, {{ISBNT|1-4012-4385-1}})
+*** ''Vol. 5'' (collects ''JLA'' #47–60, and ''JLA: Heaven's Ladder'', 448 pages, softcover, June 17, 2014, DC Comics, {{ISBNT|1-4012-4750-4}})
+*** ''Vol. 6'' (collects ''JLA'' #61–76, 432 pages, softcover, January 27, 2015, DC Comics, {{ISBNT|1-4012-5136-6}})
+*** ''Vol. 7'' (collects ''JLA'' #77–93, 416 pages, softcover, May 26, 2015, DC Comics, {{ISBNT|978-1-4012-5528-2}})
+*** ''Vol. 8'' (collects ''JLA'' #94–106, 360 pages, softcover, May 10, 2016, DC Comics, {{ISBNT|978-1-4012-6342-3}})
+*** ''Vol. 9'' (collects ''JLA'' #107–125, 480 pages, softcover, Nov 25, 2016, DC Comics, {{ISBNT|978-1-4012-6567-0}})
+
+== See also ==
+* ''[[Justice League Elite]]''
+* ''[[JLA: Earth 2]]''
+* ''[[DC One Million]]''
+* ''[[World War III (DC Comics)|World War III]]''
+
+== Notes ==
+{{reflist|2}}
+
+== References ==
+* {{gcdb series|id=5747|title=''JLA''}}
+* {{comicbookdb|type=title|id=76|title=''JLA''}}
+
+== External links ==
+* [https://www.grant-morrison.com/jla.html ''JLA''] {{Webarchive|url=https://web.archive.org/web/20171201044111/https://www.grant-morrison.com/jla.html |date=2017-12-01 }} at Grant Morrison.com
+
+{{Justice League}}
+{{Grant Morrison}}
+[[Category:1996 comics debuts]]
+[[Category:2006 comics endings]]
+[[Category:Comics by Dennis O'Neil]]
+[[Category:Comics by Chris Claremont]]
+[[Category:Comics by Geoff Johns]]
+[[Category:Comics by Grant Morrison]]
+[[Category:Comics by Joe Kelly (comics writer)]]
+[[Category:Comics by Kurt Busiek]]
+[[Category:Comics by Mark Waid]]
+[[Category:Widescreen comics]]

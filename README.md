@@ -11,14 +11,16 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
 War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
-(Hickman's Marvel run), *Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Venom* (Cates and Stegman), *JLA* (Morrison's
+run — the 34 issues he actually wrote, with the fill-ins by other hands
+left out rather than padded in to look complete), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
 flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
