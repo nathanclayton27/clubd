@@ -11,7 +11,8 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-223 lists, from a ten-episode anime to a 1,418-row film collection, a
+224 lists, from a ten-episode anime to a 1,418-row film collection, a
+
 
 971-entry comics run, and 659 episodes of Dragon Ball.
 
@@ -30,6 +31,9 @@ character — Miller, Bendis, Brubaker, Waid, Zdarsky — with the lead-ins that
 explain how each one starts), *Venom* (Cates and Stegman), *One Piece* in
 (Hickman's Marvel run), *Captain America* (611 issues from the 1941
 original to the last page Ed Brubaker wrote, one section per run),
+*Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Fantastic Four* (#1 to #569, stopping one issue
+short of Hickman so the two lists meet without overlapping a single row),
 *Venom* (Cates and Stegman), *One Piece* in
 
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
@@ -444,6 +448,12 @@ page of each volume enumerated through its API, then each issue's printed
 writer, penciler and cover date read from the page itself. The run boundaries
 are derived from those credits — the generator refuses to build if a range it
 calls a writer's run is not exactly that.
+Fantastic Four read from Marvel Database (marvel.fandom.com) through its API:
+issue numbers, cover dates, writer and penciller credits, and the first
+appearances the wiki marks issue by issue. The sections are drawn where the
+credits change and the generator refuses to build if they move; the stars are
+the debut markers, not anybody's favourites.
+
 
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.
