@@ -4906,6 +4906,26 @@ let MANIFEST = [
     "total": 829
   },
   {
+    "slug": "expanse",
+    "media": [
+      "books",
+      "tv"
+    ],
+    "title": "The Expanse",
+    "subtitle": "the novels and the seasons in one chronology",
+    "kind": "books & tv",
+    "year": "2011–2022",
+    "popularity": 61,
+    "blurb": "James S. A. Corey's nine novels, the nine short works and the six television seasons in one order, by the date each one arrived.",
+    "accent": "#0F3A5C",
+    "accentDark": "#FB7B0E",
+    "unit": {
+      "one": "entry",
+      "many": "entries"
+    },
+    "total": 24
+  },
+  {
     "slug": "vampire-diaries",
     "media": [
       "tv"
@@ -6353,7 +6373,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '40799ab89d1f';
+const BUILD = 'fa140684af26';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or

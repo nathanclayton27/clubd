@@ -2969,6 +2969,26 @@
     "total": 829
   },
   {
+    "slug": "expanse",
+    "media": [
+      "books",
+      "tv"
+    ],
+    "title": "The Expanse",
+    "subtitle": "the novels and the seasons in one chronology",
+    "kind": "books & tv",
+    "year": "2011–2022",
+    "popularity": 61,
+    "blurb": "James S. A. Corey's nine novels, the nine short works and the six television seasons in one order, by the date each one arrived.",
+    "accent": "#0F3A5C",
+    "accentDark": "#FB7B0E",
+    "unit": {
+      "one": "entry",
+      "many": "entries"
+    },
+    "total": 24
+  },
+  {
     "slug": "vampire-diaries",
     "media": [
       "tv"
