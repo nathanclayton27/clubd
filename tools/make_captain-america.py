@@ -654,9 +654,14 @@ def main():
         "sections": sections,
     }
     path = prop.write(out)
-    print("%s: %d rows in %d sections (tier 1: %d)"
-          % (path.name, rows, len(sections),
-             sum(len(s["items"]) for s in sections if s["tier"] == 1)))
+    # All three counts, because the last hand-off typed the tier split
+    # from memory and got two of the three numbers wrong.
+    split = [sum(len(s["items"]) for s in sections if s["tier"] == t)
+             for t in (1, 2, 3)]
+    assert sum(split) == rows, "a section is outside tiers 1-3"
+    print("%s: %d rows in %d sections (tier 1: %d, 2: %d, 3: %d)"
+          % (path.name, rows, len(sections), split[0], split[1],
+             split[2]))
 
 
 if __name__ == "__main__":
