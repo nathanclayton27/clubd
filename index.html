@@ -1314,6 +1314,13 @@ footer a{color:var(--steel)}
 .foldbtn{margin-left:auto;font:inherit;font-size:11px;letter-spacing:normal;
   text-transform:none;border:1px solid var(--rule-2);background:transparent;
   color:var(--ink-2);border-radius:99px;padding:2px 10px;cursor:pointer}
+/* CLU-519, Nathan: "the ui is inconsistently styled under the bar graph". The
+   pill is right on the friends fold, where it sits among other pills. Under the
+   strip it was the third shape in a row of three — a bordered box, a 2px button
+   and a 99px pill — so there it takes the site's own radius and size like
+   everything beside it. Scoped to #uprow rather than changed globally, because
+   the home page's folds are not wrong. */
+#uprow .foldbtn{border-radius:var(--radius);font-size:12px;padding:3px 9px}
 .foldbtn:hover{border-color:var(--signal);color:var(--signal)}
 #hfr-h:hover{color:var(--signal)}
 
@@ -6907,7 +6914,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '95f48ca94313';
+const BUILD = '2bfc36b45959';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -9001,8 +9008,17 @@ function paintFW(){
   // then" — and switchSession() refuses to enter a session while FW is on, so
   // the two can never both be true. Pick a club, and the way back to a fresh
   // run is Just me.
-  const show = (FW || begun) && !SESSION;
-  b.classList.toggle('hide', !show);
+  // CLU-520, Nathan: "the start a fresh watch button should just be under the
+  // triple button ui under new/another". #b-fw is the START button — the way
+  // back is #b-fwback, a different element — so starting leaves the header
+  // entirely and the picker's Fresh watch card owns it.
+  //
+  // ⚠ My first pass at this hid the wrong one in the wrong state: it left the
+  // START button visible only while a run was already on, which is the one
+  // moment it makes least sense, and took the way back with it when no run was.
+  // freshruns_check caught it in a line.
+  const show = false;
+  b.classList.toggle('hide', true);
   // "keeps its place" is only true of a run that has EARNED a place. A run earns
   // its registry entry with its first tick (see fwReadFor), so leaving an
   // untouched one loses it — there is nothing to keep and nothing to come back
@@ -9029,6 +9045,10 @@ function paintFW(){
     back.title = 'Your all-time run for this list.' + kept + clubtoo;
     back.onclick = fwBack;
   }
+  // The body class says whether a run is on and is read by CSS elsewhere, so it
+  // is set BEFORE any early return — it used to sit after one, which meant a
+  // state that returned early left the class describing the previous state.
+  document.body.classList.toggle('fw', !!FW);
   if(!show) return;
   b.textContent = '↻ start a fresh watch';
   b.title = FW
@@ -9036,7 +9056,6 @@ function paintFW(){
     : 'Watch it again from zero, just for you — your all-time run and your clubs'
       + ' keep every tick.' + clubtoo;
   b.onclick = fwNew;
-  document.body.classList.toggle('fw', !!FW);
 }
 
 /* ------------------------------------------------------------ clubbothy */
