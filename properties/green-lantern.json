@@ -607,20 +607,20 @@
           "url": ""
         },
         {
-          "id": "gl-v4-25",
-          "t": "Green Lantern (vol. 4)",
-          "n": "#25",
-          "note": "part 10 · its release slipped two weeks",
-          "star": 2,
+          "id": "gl-glc-18",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#18",
+          "note": "part 10",
+          "star": 0,
           "opt": 0,
           "url": ""
         },
         {
-          "id": "gl-glc-18",
-          "t": "Green Lantern Corps (vol. 2)",
-          "n": "#18",
-          "note": "part 11",
-          "star": 0,
+          "id": "gl-v4-25",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#25",
+          "note": "part 11 · its release was delayed two weeks",
+          "star": 2,
           "opt": 0,
           "url": ""
         },

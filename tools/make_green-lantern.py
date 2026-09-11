@@ -297,9 +297,21 @@ assert BN.get(WAR), "Blackest Night table lost its War of Light group"
 
 
 # --------------------------------------------------- the Sinestro Corps War
-# The article states the crossover's shape in prose: one-shot, then the two
-# monthlies alternating, then an epilogue. Both ranges are pulled out of that
-# sentence and zipped, so the interleave is derived rather than asserted.
+# This crossover cannot be ordered by zipping the two issue ranges, and the
+# article says so three separate ways. It calls the main story 11 parts. It
+# then gives "Parts Two through Ten" to an alternation between Green Lantern
+# #21-25 and Green Lantern Corps #14-18 - nine part numbers for ten issues, so
+# one of those ten is not in the alternation. And its citation for the finale
+# names which one: "''The Sinestro Corps War'' part 11. ''Green Lantern''
+# (vol. 4) #25." Green Lantern #25 was delayed two weeks and shipped last, so
+# Corps #18 is part 10 and the alternation covers the nine issues left over.
+#
+# So the part numbers are read out of the article at both ends and the middle
+# is derived between them. Nothing here is counted off a list index.
+WORD = {"Two": 2, "Three": 3, "Four": 4, "Five": 5, "Six": 6, "Seven": 7,
+        "Eight": 8, "Nine": 9, "Ten": 10, "Eleven": 11}
+
+
 def sinestro_order():
     m = re.search(r"alternating between ''\[?\[?Green Lantern.*?''\s*#([\d‐-―-]+)"
                   r"\s*and\s*''\[?\[?Green Lantern Corps[^']*''\s*#([\d‐-―-]+)",
@@ -307,17 +319,58 @@ def sinestro_order():
     assert m, "Sinestro Corps War: the alternation sentence changed shape"
     gl, glc = expand(m.group(1)), expand(m.group(2))
     assert len(gl) == len(glc) == 5, "unexpected alternation: %r %r" % (gl, glc)
+
+    # The last part, from the article's own citation for it.
+    f = re.search(r"''The Sinestro Corps War'' part (\d+)\.\s*''Green Lantern''"
+                  r"\s*\(vol\. \d\) #(\d+)", SRC["scw"])
+    assert f, "Sinestro Corps War: the citation numbering the finale is gone"
+    finale, last = ("gl", int(f.group(2))), int(f.group(1))
+    assert finale[1] in gl, \
+        "finale #%d is outside the alternation range %r" % (finale[1], gl)
+
+    # The span the alternation covers, from the sentence that states it.
+    sp = re.search(r"Parts (\w+) through (\w+) were released", SRC["scw"])
+    assert sp, "Sinestro Corps War: the parts-two-through-ten sentence moved"
+    lo, hi = WORD[sp.group(1)], WORD[sp.group(2)]
+    assert lo == 2 and hi == last - 1, \
+        "parts %d-%d do not sit between part one and part %d" % (lo, hi, last)
+
+    # Nine parts for nine issues once the finale is set aside, which is the
+    # arithmetic that proves a straight zip of the two ranges wrong.
+    rest = [("gl", n) for n in gl if n != finale[1]] + [("glc", n) for n in glc]
+    assert len(rest) == hi - lo + 1, \
+        "%d issues for parts %d-%d" % (len(rest), lo, hi)
+
+    # Alternate, main title first. The Corps book runs on by one at the end,
+    # because the finale it would otherwise alternate with comes after it.
+    heads = [x for x in rest if x[0] == "gl"]
+    tails = [x for x in rest if x[0] == "glc"]
     out = []
-    for a, b in zip(gl, glc):
-        out.append(("gl", a))
-        out.append(("glc", b))
-    return out
+    while heads or tails:
+        if heads:
+            out.append(heads.pop(0))
+        if tails:
+            out.append(tails.pop(0))
+    out.append(finale)
+
+    numbered = list(zip(range(lo, last + 1), out))
+    assert numbered[-1] == (last, finale), "the finale lost its part number"
+    assert (hi, ("glc", glc[-1])) in numbered, \
+        "Corps #%d should be part %d" % (glc[-1], hi)
+    return numbered
 
 
 SCW_ORDER = sinestro_order()
 
 _PARTS = re.search(r"main story consisted of (\w+) parts", SRC["scw"])
 assert _PARTS and _PARTS.group(1) == "11", "Sinestro Corps War part count moved"
+assert SCW_ORDER[-1][0] == int(_PARTS.group(1)), \
+    "the last part numbered is not the last part the article counts"
+
+# The delay is the reason the finale falls after the Corps book's last chapter,
+# so the sentence that states it is checked rather than remembered.
+assert "The conclusion of ''Green Lantern'' #25 was delayed by two weeks." \
+    in SRC["scw"], "Sinestro Corps War: the delay sentence moved"
 
 
 # ----------------------------------------------------------------------- rows
@@ -468,12 +521,12 @@ section(
 
 _scw_items = [row("Green Lantern: Sinestro Corps Special", 1, "part 1",
                   key="scwspecial")]
-for _n, (_book, _num) in enumerate(SCW_ORDER, start=2):
+for _n, (_book, _num) in SCW_ORDER:
     _title = GL if _book == "gl" else GLC
     _key = "v4" if _book == "gl" else "glc"
     _note = "part %d" % _n
-    if _book == "gl" and _num == 25:
-        _note = "part %d · its release slipped two weeks" % _n
+    if _n == SCW_ORDER[-1][0]:
+        _note = "part %d · its release was delayed two weeks" % _n
     _scw_items.append(row(_title, _num, _note, key=_key))
 cite("Green Lantern Corps (vol. 2) #16–19", "glc")
 _scw_items.append(row(GLC, 19,
