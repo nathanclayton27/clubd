@@ -1,0 +1,5553 @@
+{
+  "slug": "fantastic-four",
+  "title": "Fantastic Four",
+  "subtitle": "Marvel's main continuity, #1 to #569 — the team, not the four people",
+  "kind": "comics",
+  "popularity": 68,
+  "year": "1961–2009",
+  "blurb": "Every issue from Fantastic Four #1 to #569, where Jonathan Hickman's run — and the Secret Wars list — begins.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#1B4FA3",
+  "accentDark": "#8FBEFF",
+  "tiers": true,
+  "notes": [
+    [
+      "Tiers.",
+      "1 is essential — Lee & Kirby, and Byrne, which between them are the character. 2 is strongly recommended: the six annuals Kirby drew, Simonson, Waid & Wieringo, and the sixteen issues that hand the book over. 3 is everything else, and there is a great deal of it, because this book has been published continuously since 1961. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "Where this stops, and why.",
+      "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and Hickman's run is already a list here — Everything Dies: Secret Wars, 250 issues running from #570 to the end of the Marvel universe. Not one issue appears on both lists, so ticking your way through this one leaves you standing exactly where that one starts."
+    ],
+    [
+      "Marvel's main continuity, and one continuous count.",
+      "One book, three volumes, one numbering. Vol 1 ran to #416, the Heroes Reborn year added thirteen, and the 1998 relaunch started again at #1 — which is why its #70 is followed by #500 rather than #71. The numbers on the rows are the ones printed on the covers; the count they belong to never restarts."
+    ],
+    [
+      "The team, not the four people.",
+      "Members leave and are replaced, sometimes for years at a time, and the book follows whoever is in the Baxter Building rather than a fixed roster. Byrne is where that stops being an emergency and becomes how the title works."
+    ],
+    [
+      "Stars are derived, not chosen.",
+      "Marvel Database records first appearances issue by issue. A star here means an issue introduced someone the book then kept using — at least twenty issues across these volumes, and two stars at seventy. It is a mechanical rule with mechanical results: it stars the debut of the Baxter Building's receptionist, and gives the Black Panther the same single star as Blastaar. It measures what it says it measures, which a list of somebody's favourite issues would not."
+    ],
+    [
+      "No reading times.",
+      "Comics publish no per-issue reading time, so no row here carries one. Every comics list in this catalogue is unweighted for the same reason."
+    ],
+    "Issue numbers, cover dates, credits and first appearances read from Marvel Database (marvel.fandom.com) through its API; the sections are drawn where the writer and penciller credits change, and the generator refuses to build if they have moved."
+  ],
+  "sections": [
+    {
+      "id": "founding",
+      "title": "Lee & Kirby, the first three years",
+      "sub": "#1–43 · 1961–1965 · where the Marvel Universe starts",
+      "tier": 1,
+      "intro": "Almost everything Marvel would go on to be gets invented inside these forty-three issues, and you can watch it happen: a monster comic that keeps discovering it is something else. The Skrulls, Doctor Doom, the Watcher, the Sub-Mariner's return, the first supervillain team — all of it is here, and most of it arrives by accident.\n\nIt is also 1961. The pacing is loud and the dialogue explains itself. That settles down.",
+      "items": [
+        {
+          "id": "ff-1",
+          "t": "Fantastic Four",
+          "n": "#1",
+          "note": "first appearance of the Fantastic Four, Mister Fantastic, the Thing, the Invisible Girl and the Human Torch",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-2",
+          "t": "Fantastic Four",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-3",
+          "t": "Fantastic Four",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-4",
+          "t": "Fantastic Four",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-5",
+          "t": "Fantastic Four",
+          "n": "#5",
+          "note": "first appearance of Doctor Doom",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-6",
+          "t": "Fantastic Four",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-7",
+          "t": "Fantastic Four",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-8",
+          "t": "Fantastic Four",
+          "n": "#8",
+          "note": "first appearance of Alicia and the Puppet Master",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-9",
+          "t": "Fantastic Four",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-10",
+          "t": "Fantastic Four",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-11",
+          "t": "Fantastic Four",
+          "n": "#11",
+          "note": "first appearance of the Impossible Man",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-12",
+          "t": "Fantastic Four",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-13",
+          "t": "Fantastic Four",
+          "n": "#13",
+          "note": "first appearance of the Watcher",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-14",
+          "t": "Fantastic Four",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-15",
+          "t": "Fantastic Four",
+          "n": "#15",
+          "note": "first appearance of the Mad Thinker",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-16",
+          "t": "Fantastic Four",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-17",
+          "t": "Fantastic Four",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-18",
+          "t": "Fantastic Four",
+          "n": "#18",
+          "note": "first appearance of the Super-Skrull",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-19",
+          "t": "Fantastic Four",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-20",
+          "t": "Fantastic Four",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-21",
+          "t": "Fantastic Four",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-22",
+          "t": "Fantastic Four",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-23",
+          "t": "Fantastic Four",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-24",
+          "t": "Fantastic Four",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-25",
+          "t": "Fantastic Four",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-26",
+          "t": "Fantastic Four",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-27",
+          "t": "Fantastic Four",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-28",
+          "t": "Fantastic Four",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-29",
+          "t": "Fantastic Four",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-30",
+          "t": "Fantastic Four",
+          "n": "#30",
+          "note": "first appearance of Diablo",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-31",
+          "t": "Fantastic Four",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-32",
+          "t": "Fantastic Four",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-33",
+          "t": "Fantastic Four",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-34",
+          "t": "Fantastic Four",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-35",
+          "t": "Fantastic Four",
+          "n": "#35",
+          "note": "first appearance of the Dragon Man",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-36",
+          "t": "Fantastic Four",
+          "n": "#36",
+          "note": "first appearance of the Frightful Four and Medusa",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-37",
+          "t": "Fantastic Four",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-38",
+          "t": "Fantastic Four",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-39",
+          "t": "Fantastic Four",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-40",
+          "t": "Fantastic Four",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-41",
+          "t": "Fantastic Four",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-42",
+          "t": "Fantastic Four",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-43",
+          "t": "Fantastic Four",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "imperial",
+      "title": "Lee & Kirby, the imperial run",
+      "sub": "#44–102 · 1965–1970 · the reason people talk about this book",
+      "tier": 1,
+      "intro": "The stretch everything else in superhero comics is measured against. Kirby is drawing at full power, the scale gets absurd and stays coherent, and the book introduces more durable ideas in three years than most titles manage in forty.\n\nIf you only ever read one run of Fantastic Four, read this one. Starting here rather than at #1 also works — the team is established by now and nothing earlier is required.",
+      "items": [
+        {
+          "id": "ff-44",
+          "t": "Fantastic Four",
+          "n": "#44",
+          "note": "first appearance of Gorgon",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-45",
+          "t": "Fantastic Four",
+          "n": "#45",
+          "note": "first appearance of Crystal, Black Bolt, Karnak, Lockjaw and Triton",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-46",
+          "t": "Fantastic Four",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-47",
+          "t": "Fantastic Four",
+          "n": "#47",
+          "note": "first appearance of Maximus",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-48",
+          "t": "Fantastic Four",
+          "n": "#48",
+          "note": "first appearance of the Silver Surfer and Galactus",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-49",
+          "t": "Fantastic Four",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-50",
+          "t": "Fantastic Four",
+          "n": "#50",
+          "note": "first appearance of Wyatt Wingfoot",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-51",
+          "t": "Fantastic Four",
+          "n": "#51",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-52",
+          "t": "Fantastic Four",
+          "n": "#52",
+          "note": "first appearance of the Black Panther",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-53",
+          "t": "Fantastic Four",
+          "n": "#53",
+          "note": "first appearance of Klaw",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-54",
+          "t": "Fantastic Four",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-55",
+          "t": "Fantastic Four",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-56",
+          "t": "Fantastic Four",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-57",
+          "t": "Fantastic Four",
+          "n": "#57",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-58",
+          "t": "Fantastic Four",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-59",
+          "t": "Fantastic Four",
+          "n": "#59",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-60",
+          "t": "Fantastic Four",
+          "n": "#60",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-61",
+          "t": "Fantastic Four",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-62",
+          "t": "Fantastic Four",
+          "n": "#62",
+          "note": "first appearance of Blastaar",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-63",
+          "t": "Fantastic Four",
+          "n": "#63",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-64",
+          "t": "Fantastic Four",
+          "n": "#64",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-65",
+          "t": "Fantastic Four",
+          "n": "#65",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-66",
+          "t": "Fantastic Four",
+          "n": "#66",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-67",
+          "t": "Fantastic Four",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-68",
+          "t": "Fantastic Four",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-69",
+          "t": "Fantastic Four",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-70",
+          "t": "Fantastic Four",
+          "n": "#70",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-71",
+          "t": "Fantastic Four",
+          "n": "#71",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-72",
+          "t": "Fantastic Four",
+          "n": "#72",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-73",
+          "t": "Fantastic Four",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-74",
+          "t": "Fantastic Four",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-75",
+          "t": "Fantastic Four",
+          "n": "#75",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-76",
+          "t": "Fantastic Four",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-77",
+          "t": "Fantastic Four",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-78",
+          "t": "Fantastic Four",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-79",
+          "t": "Fantastic Four",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-80",
+          "t": "Fantastic Four",
+          "n": "#80",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-81",
+          "t": "Fantastic Four",
+          "n": "#81",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-82",
+          "t": "Fantastic Four",
+          "n": "#82",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-83",
+          "t": "Fantastic Four",
+          "n": "#83",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-84",
+          "t": "Fantastic Four",
+          "n": "#84",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-85",
+          "t": "Fantastic Four",
+          "n": "#85",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-86",
+          "t": "Fantastic Four",
+          "n": "#86",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-87",
+          "t": "Fantastic Four",
+          "n": "#87",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-88",
+          "t": "Fantastic Four",
+          "n": "#88",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-89",
+          "t": "Fantastic Four",
+          "n": "#89",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-90",
+          "t": "Fantastic Four",
+          "n": "#90",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-91",
+          "t": "Fantastic Four",
+          "n": "#91",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-92",
+          "t": "Fantastic Four",
+          "n": "#92",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-93",
+          "t": "Fantastic Four",
+          "n": "#93",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-94",
+          "t": "Fantastic Four",
+          "n": "#94",
+          "note": "first appearance of Agatha Harkness",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-95",
+          "t": "Fantastic Four",
+          "n": "#95",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-96",
+          "t": "Fantastic Four",
+          "n": "#96",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-97",
+          "t": "Fantastic Four",
+          "n": "#97",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-98",
+          "t": "Fantastic Four",
+          "n": "#98",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-99",
+          "t": "Fantastic Four",
+          "n": "#99",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-100",
+          "t": "Fantastic Four",
+          "n": "#100",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-101",
+          "t": "Fantastic Four",
+          "n": "#101",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-102",
+          "t": "Fantastic Four",
+          "n": "#102",
+          "note": "Kirby's last issue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "annuals",
+      "title": "The annuals Kirby drew",
+      "sub": "#1–6 · 1963–1968 · double-length, and inside the run above",
+      "tier": 2,
+      "intro": "Six annuals, all of them Lee and Kirby, published alongside the run above and set among it. Longer than a monthly issue and not filler: two of the six are among the most consequential things this book ever printed.\n\nThe annuals after these are other people's, and they are not here.",
+      "items": [
+        {
+          "id": "ffa-1",
+          "t": "Fantastic Four Annual",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ffa-2",
+          "t": "Fantastic Four Annual",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ffa-3",
+          "t": "Fantastic Four Annual",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ffa-4",
+          "t": "Fantastic Four Annual",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ffa-5",
+          "t": "Fantastic Four Annual",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ffa-6",
+          "t": "Fantastic Four Annual",
+          "n": "#6",
+          "note": "first appearance of Annihilus",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Annual_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "afterkirby",
+      "title": "After Kirby",
+      "sub": "#103–190 · 1970–1978 · eight writers, no run",
+      "tier": 3,
+      "intro": "Kirby leaves and the book spends most of a decade looking for a replacement. There are good issues in here and there is no run. Nothing later depends on any of it, so dip in or skip it outright — the tier means what it says.",
+      "items": [
+        {
+          "id": "ff-103",
+          "t": "Fantastic Four",
+          "n": "#103",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-104",
+          "t": "Fantastic Four",
+          "n": "#104",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-105",
+          "t": "Fantastic Four",
+          "n": "#105",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-106",
+          "t": "Fantastic Four",
+          "n": "#106",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-107",
+          "t": "Fantastic Four",
+          "n": "#107",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-108",
+          "t": "Fantastic Four",
+          "n": "#108",
+          "note": "Kirby pencils one more, six issues after he left",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-109",
+          "t": "Fantastic Four",
+          "n": "#109",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-110",
+          "t": "Fantastic Four",
+          "n": "#110",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-111",
+          "t": "Fantastic Four",
+          "n": "#111",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-112",
+          "t": "Fantastic Four",
+          "n": "#112",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-113",
+          "t": "Fantastic Four",
+          "n": "#113",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-114",
+          "t": "Fantastic Four",
+          "n": "#114",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-115",
+          "t": "Fantastic Four",
+          "n": "#115",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-116",
+          "t": "Fantastic Four",
+          "n": "#116",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-117",
+          "t": "Fantastic Four",
+          "n": "#117",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-118",
+          "t": "Fantastic Four",
+          "n": "#118",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-119",
+          "t": "Fantastic Four",
+          "n": "#119",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-120",
+          "t": "Fantastic Four",
+          "n": "#120",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-121",
+          "t": "Fantastic Four",
+          "n": "#121",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-122",
+          "t": "Fantastic Four",
+          "n": "#122",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-123",
+          "t": "Fantastic Four",
+          "n": "#123",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-124",
+          "t": "Fantastic Four",
+          "n": "#124",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-125",
+          "t": "Fantastic Four",
+          "n": "#125",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-126",
+          "t": "Fantastic Four",
+          "n": "#126",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-127",
+          "t": "Fantastic Four",
+          "n": "#127",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-128",
+          "t": "Fantastic Four",
+          "n": "#128",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-129",
+          "t": "Fantastic Four",
+          "n": "#129",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-130",
+          "t": "Fantastic Four",
+          "n": "#130",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-131",
+          "t": "Fantastic Four",
+          "n": "#131",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-132",
+          "t": "Fantastic Four",
+          "n": "#132",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-133",
+          "t": "Fantastic Four",
+          "n": "#133",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-134",
+          "t": "Fantastic Four",
+          "n": "#134",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-135",
+          "t": "Fantastic Four",
+          "n": "#135",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-136",
+          "t": "Fantastic Four",
+          "n": "#136",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-137",
+          "t": "Fantastic Four",
+          "n": "#137",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-138",
+          "t": "Fantastic Four",
+          "n": "#138",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-139",
+          "t": "Fantastic Four",
+          "n": "#139",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-140",
+          "t": "Fantastic Four",
+          "n": "#140",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-141",
+          "t": "Fantastic Four",
+          "n": "#141",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-142",
+          "t": "Fantastic Four",
+          "n": "#142",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-143",
+          "t": "Fantastic Four",
+          "n": "#143",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-144",
+          "t": "Fantastic Four",
+          "n": "#144",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-145",
+          "t": "Fantastic Four",
+          "n": "#145",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-146",
+          "t": "Fantastic Four",
+          "n": "#146",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-147",
+          "t": "Fantastic Four",
+          "n": "#147",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-148",
+          "t": "Fantastic Four",
+          "n": "#148",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-149",
+          "t": "Fantastic Four",
+          "n": "#149",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-150",
+          "t": "Fantastic Four",
+          "n": "#150",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-151",
+          "t": "Fantastic Four",
+          "n": "#151",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-152",
+          "t": "Fantastic Four",
+          "n": "#152",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-153",
+          "t": "Fantastic Four",
+          "n": "#153",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-154",
+          "t": "Fantastic Four",
+          "n": "#154",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-155",
+          "t": "Fantastic Four",
+          "n": "#155",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-156",
+          "t": "Fantastic Four",
+          "n": "#156",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-157",
+          "t": "Fantastic Four",
+          "n": "#157",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-158",
+          "t": "Fantastic Four",
+          "n": "#158",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-159",
+          "t": "Fantastic Four",
+          "n": "#159",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-160",
+          "t": "Fantastic Four",
+          "n": "#160",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-161",
+          "t": "Fantastic Four",
+          "n": "#161",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-162",
+          "t": "Fantastic Four",
+          "n": "#162",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-163",
+          "t": "Fantastic Four",
+          "n": "#163",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-164",
+          "t": "Fantastic Four",
+          "n": "#164",
+          "note": "first appearance of Frankie Raye",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-165",
+          "t": "Fantastic Four",
+          "n": "#165",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-166",
+          "t": "Fantastic Four",
+          "n": "#166",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-167",
+          "t": "Fantastic Four",
+          "n": "#167",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-168",
+          "t": "Fantastic Four",
+          "n": "#168",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-169",
+          "t": "Fantastic Four",
+          "n": "#169",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-170",
+          "t": "Fantastic Four",
+          "n": "#170",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-171",
+          "t": "Fantastic Four",
+          "n": "#171",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-172",
+          "t": "Fantastic Four",
+          "n": "#172",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-173",
+          "t": "Fantastic Four",
+          "n": "#173",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-174",
+          "t": "Fantastic Four",
+          "n": "#174",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-175",
+          "t": "Fantastic Four",
+          "n": "#175",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-176",
+          "t": "Fantastic Four",
+          "n": "#176",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-177",
+          "t": "Fantastic Four",
+          "n": "#177",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-178",
+          "t": "Fantastic Four",
+          "n": "#178",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-179",
+          "t": "Fantastic Four",
+          "n": "#179",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-180",
+          "t": "Fantastic Four",
+          "n": "#180",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-181",
+          "t": "Fantastic Four",
+          "n": "#181",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-182",
+          "t": "Fantastic Four",
+          "n": "#182",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-183",
+          "t": "Fantastic Four",
+          "n": "#183",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-184",
+          "t": "Fantastic Four",
+          "n": "#184",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-185",
+          "t": "Fantastic Four",
+          "n": "#185",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-186",
+          "t": "Fantastic Four",
+          "n": "#186",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-187",
+          "t": "Fantastic Four",
+          "n": "#187",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-188",
+          "t": "Fantastic Four",
+          "n": "#188",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-189",
+          "t": "Fantastic Four",
+          "n": "#189",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-190",
+          "t": "Fantastic Four",
+          "n": "#190",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "wolfman",
+      "title": "Wolfman, Moench, and Byrne arriving",
+      "sub": "#191–231 · 1978–1981 · the approach to the run below",
+      "tier": 3,
+      "intro": "Two things worth knowing about this stretch. Marv Wolfman writes it for three years, and John Byrne turns up as a penciller long before he takes the book over: he draws #209–218, then writes and draws #220–221, a year ahead of #232.",
+      "items": [
+        {
+          "id": "ff-191",
+          "t": "Fantastic Four",
+          "n": "#191",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-192",
+          "t": "Fantastic Four",
+          "n": "#192",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-193",
+          "t": "Fantastic Four",
+          "n": "#193",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-194",
+          "t": "Fantastic Four",
+          "n": "#194",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-195",
+          "t": "Fantastic Four",
+          "n": "#195",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-196",
+          "t": "Fantastic Four",
+          "n": "#196",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-197",
+          "t": "Fantastic Four",
+          "n": "#197",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-198",
+          "t": "Fantastic Four",
+          "n": "#198",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-199",
+          "t": "Fantastic Four",
+          "n": "#199",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-200",
+          "t": "Fantastic Four",
+          "n": "#200",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-201",
+          "t": "Fantastic Four",
+          "n": "#201",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-202",
+          "t": "Fantastic Four",
+          "n": "#202",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-203",
+          "t": "Fantastic Four",
+          "n": "#203",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-204",
+          "t": "Fantastic Four",
+          "n": "#204",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-205",
+          "t": "Fantastic Four",
+          "n": "#205",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-206",
+          "t": "Fantastic Four",
+          "n": "#206",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-207",
+          "t": "Fantastic Four",
+          "n": "#207",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-208",
+          "t": "Fantastic Four",
+          "n": "#208",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-209",
+          "t": "Fantastic Four",
+          "n": "#209",
+          "note": "John Byrne starts drawing it",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-210",
+          "t": "Fantastic Four",
+          "n": "#210",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-211",
+          "t": "Fantastic Four",
+          "n": "#211",
+          "note": "first appearance of Terrax the Tamer",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-212",
+          "t": "Fantastic Four",
+          "n": "#212",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-213",
+          "t": "Fantastic Four",
+          "n": "#213",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-214",
+          "t": "Fantastic Four",
+          "n": "#214",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-215",
+          "t": "Fantastic Four",
+          "n": "#215",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-216",
+          "t": "Fantastic Four",
+          "n": "#216",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-217",
+          "t": "Fantastic Four",
+          "n": "#217",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-218",
+          "t": "Fantastic Four",
+          "n": "#218",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-219",
+          "t": "Fantastic Four",
+          "n": "#219",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-220",
+          "t": "Fantastic Four",
+          "n": "#220",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-221",
+          "t": "Fantastic Four",
+          "n": "#221",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-222",
+          "t": "Fantastic Four",
+          "n": "#222",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-223",
+          "t": "Fantastic Four",
+          "n": "#223",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-224",
+          "t": "Fantastic Four",
+          "n": "#224",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-225",
+          "t": "Fantastic Four",
+          "n": "#225",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-226",
+          "t": "Fantastic Four",
+          "n": "#226",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-227",
+          "t": "Fantastic Four",
+          "n": "#227",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-228",
+          "t": "Fantastic Four",
+          "n": "#228",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-229",
+          "t": "Fantastic Four",
+          "n": "#229",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-230",
+          "t": "Fantastic Four",
+          "n": "#230",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-231",
+          "t": "Fantastic Four",
+          "n": "#231",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "byrne",
+      "title": "John Byrne",
+      "sub": "#232–294 · 1981–1986 · one voice, writing and drawing",
+      "tier": 1,
+      "intro": "The other essential run, and the one that proved the book could be revived rather than continued. Byrne wrote and drew almost all of it. He went back into what Lee and Kirby had built instead of around it, gave every member of the team something to do, and changed the roster while he was at it — this book has never been four fixed people, and Byrne is where that becomes a feature.\n\nSixty-three issues. It is the cleanest single-creator run Marvel has.",
+      "items": [
+        {
+          "id": "ff-232",
+          "t": "Fantastic Four",
+          "n": "#232",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-233",
+          "t": "Fantastic Four",
+          "n": "#233",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-234",
+          "t": "Fantastic Four",
+          "n": "#234",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-235",
+          "t": "Fantastic Four",
+          "n": "#235",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-236",
+          "t": "Fantastic Four",
+          "n": "#236",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-237",
+          "t": "Fantastic Four",
+          "n": "#237",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-238",
+          "t": "Fantastic Four",
+          "n": "#238",
+          "note": "first appearance of Aunt Petunia Grimm",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-239",
+          "t": "Fantastic Four",
+          "n": "#239",
+          "note": "first appearance of Roberta",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-240",
+          "t": "Fantastic Four",
+          "n": "#240",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-241",
+          "t": "Fantastic Four",
+          "n": "#241",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-242",
+          "t": "Fantastic Four",
+          "n": "#242",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-243",
+          "t": "Fantastic Four",
+          "n": "#243",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-244",
+          "t": "Fantastic Four",
+          "n": "#244",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-245",
+          "t": "Fantastic Four",
+          "n": "#245",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-246",
+          "t": "Fantastic Four",
+          "n": "#246",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-247",
+          "t": "Fantastic Four",
+          "n": "#247",
+          "note": "first appearance of Kristoff Vernard",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-248",
+          "t": "Fantastic Four",
+          "n": "#248",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-249",
+          "t": "Fantastic Four",
+          "n": "#249",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-250",
+          "t": "Fantastic Four",
+          "n": "#250",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-251",
+          "t": "Fantastic Four",
+          "n": "#251",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-252",
+          "t": "Fantastic Four",
+          "n": "#252",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-253",
+          "t": "Fantastic Four",
+          "n": "#253",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-254",
+          "t": "Fantastic Four",
+          "n": "#254",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-255",
+          "t": "Fantastic Four",
+          "n": "#255",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-256",
+          "t": "Fantastic Four",
+          "n": "#256",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-257",
+          "t": "Fantastic Four",
+          "n": "#257",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-258",
+          "t": "Fantastic Four",
+          "n": "#258",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-259",
+          "t": "Fantastic Four",
+          "n": "#259",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-260",
+          "t": "Fantastic Four",
+          "n": "#260",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-261",
+          "t": "Fantastic Four",
+          "n": "#261",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-262",
+          "t": "Fantastic Four",
+          "n": "#262",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-263",
+          "t": "Fantastic Four",
+          "n": "#263",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-264",
+          "t": "Fantastic Four",
+          "n": "#264",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-265",
+          "t": "Fantastic Four",
+          "n": "#265",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-266",
+          "t": "Fantastic Four",
+          "n": "#266",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-267",
+          "t": "Fantastic Four",
+          "n": "#267",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-268",
+          "t": "Fantastic Four",
+          "n": "#268",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-269",
+          "t": "Fantastic Four",
+          "n": "#269",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-270",
+          "t": "Fantastic Four",
+          "n": "#270",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-271",
+          "t": "Fantastic Four",
+          "n": "#271",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-272",
+          "t": "Fantastic Four",
+          "n": "#272",
+          "note": "first appearance of Nathaniel Richards",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-273",
+          "t": "Fantastic Four",
+          "n": "#273",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-274",
+          "t": "Fantastic Four",
+          "n": "#274",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-275",
+          "t": "Fantastic Four",
+          "n": "#275",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-276",
+          "t": "Fantastic Four",
+          "n": "#276",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-277",
+          "t": "Fantastic Four",
+          "n": "#277",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-278",
+          "t": "Fantastic Four",
+          "n": "#278",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-279",
+          "t": "Fantastic Four",
+          "n": "#279",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-280",
+          "t": "Fantastic Four",
+          "n": "#280",
+          "note": "first appearance of Malice",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-281",
+          "t": "Fantastic Four",
+          "n": "#281",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-282",
+          "t": "Fantastic Four",
+          "n": "#282",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-283",
+          "t": "Fantastic Four",
+          "n": "#283",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-284",
+          "t": "Fantastic Four",
+          "n": "#284",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-285",
+          "t": "Fantastic Four",
+          "n": "#285",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-286",
+          "t": "Fantastic Four",
+          "n": "#286",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-287",
+          "t": "Fantastic Four",
+          "n": "#287",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-288",
+          "t": "Fantastic Four",
+          "n": "#288",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-289",
+          "t": "Fantastic Four",
+          "n": "#289",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-290",
+          "t": "Fantastic Four",
+          "n": "#290",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-291",
+          "t": "Fantastic Four",
+          "n": "#291",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-292",
+          "t": "Fantastic Four",
+          "n": "#292",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-293",
+          "t": "Fantastic Four",
+          "n": "#293",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-294",
+          "t": "Fantastic Four",
+          "n": "#294",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "byrneannuals",
+      "title": "Byrne's annuals",
+      "sub": "#17–19 · 1983–1985 · alongside the run above",
+      "tier": 3,
+      "intro": "Three annuals from the Byrne years. Optional, and they read fine after the run rather than inside it.",
+      "items": [
+        {
+          "id": "ffa-17",
+          "t": "Fantastic Four Annual",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "ffa-18",
+          "t": "Fantastic Four Annual",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "ffa-19",
+          "t": "Fantastic Four Annual",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Annual_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "eighties",
+      "title": "Stern, Englehart, and the drop",
+      "sub": "#295–333 · 1986–1989 · three years without a direction",
+      "tier": 3,
+      "intro": "Byrne leaves and the book does not recover for three years. Roger Stern has a short go, then Steve Englehart gets twenty-five issues — and signs his last five 'John Harkness' rather than with his own name, which is how the credits read to this day.",
+      "items": [
+        {
+          "id": "ff-295",
+          "t": "Fantastic Four",
+          "n": "#295",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-296",
+          "t": "Fantastic Four",
+          "n": "#296",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-297",
+          "t": "Fantastic Four",
+          "n": "#297",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-298",
+          "t": "Fantastic Four",
+          "n": "#298",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-299",
+          "t": "Fantastic Four",
+          "n": "#299",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-300",
+          "t": "Fantastic Four",
+          "n": "#300",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-301",
+          "t": "Fantastic Four",
+          "n": "#301",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-302",
+          "t": "Fantastic Four",
+          "n": "#302",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-303",
+          "t": "Fantastic Four",
+          "n": "#303",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-304",
+          "t": "Fantastic Four",
+          "n": "#304",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-305",
+          "t": "Fantastic Four",
+          "n": "#305",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-306",
+          "t": "Fantastic Four",
+          "n": "#306",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-307",
+          "t": "Fantastic Four",
+          "n": "#307",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-308",
+          "t": "Fantastic Four",
+          "n": "#308",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-309",
+          "t": "Fantastic Four",
+          "n": "#309",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-310",
+          "t": "Fantastic Four",
+          "n": "#310",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-311",
+          "t": "Fantastic Four",
+          "n": "#311",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-312",
+          "t": "Fantastic Four",
+          "n": "#312",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-313",
+          "t": "Fantastic Four",
+          "n": "#313",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-314",
+          "t": "Fantastic Four",
+          "n": "#314",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-315",
+          "t": "Fantastic Four",
+          "n": "#315",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-316",
+          "t": "Fantastic Four",
+          "n": "#316",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-317",
+          "t": "Fantastic Four",
+          "n": "#317",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-318",
+          "t": "Fantastic Four",
+          "n": "#318",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-319",
+          "t": "Fantastic Four",
+          "n": "#319",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-320",
+          "t": "Fantastic Four",
+          "n": "#320",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-321",
+          "t": "Fantastic Four",
+          "n": "#321",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-322",
+          "t": "Fantastic Four",
+          "n": "#322",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-323",
+          "t": "Fantastic Four",
+          "n": "#323",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-324",
+          "t": "Fantastic Four",
+          "n": "#324",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-325",
+          "t": "Fantastic Four",
+          "n": "#325",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-326",
+          "t": "Fantastic Four",
+          "n": "#326",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-327",
+          "t": "Fantastic Four",
+          "n": "#327",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-328",
+          "t": "Fantastic Four",
+          "n": "#328",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-329",
+          "t": "Fantastic Four",
+          "n": "#329",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-330",
+          "t": "Fantastic Four",
+          "n": "#330",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-331",
+          "t": "Fantastic Four",
+          "n": "#331",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-332",
+          "t": "Fantastic Four",
+          "n": "#332",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-333",
+          "t": "Fantastic Four",
+          "n": "#333",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "simonson",
+      "title": "Walt Simonson",
+      "sub": "#334–354 · 1989–1991 · short, strange, very good",
+      "tier": 2,
+      "intro": "Twenty-one issues written by Walt Simonson and mostly drawn by him too, and unlike anything on either side of it. It is the run nobody brings up, and it is the best thing in this list between Byrne and Waid.",
+      "items": [
+        {
+          "id": "ff-334",
+          "t": "Fantastic Four",
+          "n": "#334",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-335",
+          "t": "Fantastic Four",
+          "n": "#335",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-336",
+          "t": "Fantastic Four",
+          "n": "#336",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-337",
+          "t": "Fantastic Four",
+          "n": "#337",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-338",
+          "t": "Fantastic Four",
+          "n": "#338",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-339",
+          "t": "Fantastic Four",
+          "n": "#339",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-340",
+          "t": "Fantastic Four",
+          "n": "#340",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-341",
+          "t": "Fantastic Four",
+          "n": "#341",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-342",
+          "t": "Fantastic Four",
+          "n": "#342",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-343",
+          "t": "Fantastic Four",
+          "n": "#343",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-344",
+          "t": "Fantastic Four",
+          "n": "#344",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-345",
+          "t": "Fantastic Four",
+          "n": "#345",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-346",
+          "t": "Fantastic Four",
+          "n": "#346",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-347",
+          "t": "Fantastic Four",
+          "n": "#347",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-348",
+          "t": "Fantastic Four",
+          "n": "#348",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-349",
+          "t": "Fantastic Four",
+          "n": "#349",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-350",
+          "t": "Fantastic Four",
+          "n": "#350",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-351",
+          "t": "Fantastic Four",
+          "n": "#351",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-352",
+          "t": "Fantastic Four",
+          "n": "#352",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-353",
+          "t": "Fantastic Four",
+          "n": "#353",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-354",
+          "t": "Fantastic Four",
+          "n": "#354",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "defalco",
+      "title": "DeFalco & Ryan",
+      "sub": "#355–416 · 1991–1996 · to the end of the original numbering",
+      "tier": 3,
+      "intro": "Tom DeFalco and Paul Ryan take the book from 1991 to the end of Vol 1. Sixty-two issues, nineties to the bone.",
+      "items": [
+        {
+          "id": "ff-355",
+          "t": "Fantastic Four",
+          "n": "#355",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-356",
+          "t": "Fantastic Four",
+          "n": "#356",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-357",
+          "t": "Fantastic Four",
+          "n": "#357",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-358",
+          "t": "Fantastic Four",
+          "n": "#358",
+          "note": "first appearance of Paibok",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-359",
+          "t": "Fantastic Four",
+          "n": "#359",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-360",
+          "t": "Fantastic Four",
+          "n": "#360",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-361",
+          "t": "Fantastic Four",
+          "n": "#361",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-362",
+          "t": "Fantastic Four",
+          "n": "#362",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-363",
+          "t": "Fantastic Four",
+          "n": "#363",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-364",
+          "t": "Fantastic Four",
+          "n": "#364",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-365",
+          "t": "Fantastic Four",
+          "n": "#365",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-366",
+          "t": "Fantastic Four",
+          "n": "#366",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-367",
+          "t": "Fantastic Four",
+          "n": "#367",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-368",
+          "t": "Fantastic Four",
+          "n": "#368",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-369",
+          "t": "Fantastic Four",
+          "n": "#369",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-370",
+          "t": "Fantastic Four",
+          "n": "#370",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-371",
+          "t": "Fantastic Four",
+          "n": "#371",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-372",
+          "t": "Fantastic Four",
+          "n": "#372",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-373",
+          "t": "Fantastic Four",
+          "n": "#373",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-374",
+          "t": "Fantastic Four",
+          "n": "#374",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-375",
+          "t": "Fantastic Four",
+          "n": "#375",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-376",
+          "t": "Fantastic Four",
+          "n": "#376",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-377",
+          "t": "Fantastic Four",
+          "n": "#377",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-378",
+          "t": "Fantastic Four",
+          "n": "#378",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-379",
+          "t": "Fantastic Four",
+          "n": "#379",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-380",
+          "t": "Fantastic Four",
+          "n": "#380",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-381",
+          "t": "Fantastic Four",
+          "n": "#381",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-382",
+          "t": "Fantastic Four",
+          "n": "#382",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-383",
+          "t": "Fantastic Four",
+          "n": "#383",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-384",
+          "t": "Fantastic Four",
+          "n": "#384",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-385",
+          "t": "Fantastic Four",
+          "n": "#385",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-386",
+          "t": "Fantastic Four",
+          "n": "#386",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-387",
+          "t": "Fantastic Four",
+          "n": "#387",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-388",
+          "t": "Fantastic Four",
+          "n": "#388",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-389",
+          "t": "Fantastic Four",
+          "n": "#389",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-390",
+          "t": "Fantastic Four",
+          "n": "#390",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-391",
+          "t": "Fantastic Four",
+          "n": "#391",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-392",
+          "t": "Fantastic Four",
+          "n": "#392",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-393",
+          "t": "Fantastic Four",
+          "n": "#393",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-394",
+          "t": "Fantastic Four",
+          "n": "#394",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-395",
+          "t": "Fantastic Four",
+          "n": "#395",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-396",
+          "t": "Fantastic Four",
+          "n": "#396",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-397",
+          "t": "Fantastic Four",
+          "n": "#397",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-398",
+          "t": "Fantastic Four",
+          "n": "#398",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-399",
+          "t": "Fantastic Four",
+          "n": "#399",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-400",
+          "t": "Fantastic Four",
+          "n": "#400",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-401",
+          "t": "Fantastic Four",
+          "n": "#401",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-402",
+          "t": "Fantastic Four",
+          "n": "#402",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-403",
+          "t": "Fantastic Four",
+          "n": "#403",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-404",
+          "t": "Fantastic Four",
+          "n": "#404",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-405",
+          "t": "Fantastic Four",
+          "n": "#405",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-406",
+          "t": "Fantastic Four",
+          "n": "#406",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-407",
+          "t": "Fantastic Four",
+          "n": "#407",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-408",
+          "t": "Fantastic Four",
+          "n": "#408",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-409",
+          "t": "Fantastic Four",
+          "n": "#409",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-410",
+          "t": "Fantastic Four",
+          "n": "#410",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-411",
+          "t": "Fantastic Four",
+          "n": "#411",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-412",
+          "t": "Fantastic Four",
+          "n": "#412",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-413",
+          "t": "Fantastic Four",
+          "n": "#413",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-414",
+          "t": "Fantastic Four",
+          "n": "#414",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-415",
+          "t": "Fantastic Four",
+          "n": "#415",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-416",
+          "t": "Fantastic Four",
+          "n": "#416",
+          "note": "the last issue of the original numbering",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/2121/fantastic_four_1961_-_1998"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_1"
+        }
+      ]
+    },
+    {
+      "id": "reborn",
+      "title": "Heroes Reborn",
+      "sub": "#1–13 · 1996–1997 · the year the book was handed out",
+      "tier": 3,
+      "intro": "Marvel gave the title to Jim Lee's studio for a year and relaunched it at #1, then took it back. Thirteen issues, and the legacy count keeps them — which is the arithmetic that lets the 1998 relaunch reach #500 two issues after its own #70.",
+      "items": [
+        {
+          "id": "ff-417",
+          "t": "Fantastic Four (1996)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-418",
+          "t": "Fantastic Four (1996)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-419",
+          "t": "Fantastic Four (1996)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-420",
+          "t": "Fantastic Four (1996)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-421",
+          "t": "Fantastic Four (1996)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-422",
+          "t": "Fantastic Four (1996)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-423",
+          "t": "Fantastic Four (1996)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-424",
+          "t": "Fantastic Four (1996)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-425",
+          "t": "Fantastic Four (1996)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-426",
+          "t": "Fantastic Four (1996)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-427",
+          "t": "Fantastic Four (1996)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-428",
+          "t": "Fantastic Four (1996)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-429",
+          "t": "Fantastic Four (1996)",
+          "n": "#13",
+          "note": "the last of the Heroes Reborn year",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_2"
+        }
+      ]
+    },
+    {
+      "id": "relaunch",
+      "title": "Lobdell, Claremont & Larroca",
+      "sub": "#1–34 · 1998–2000 · a new #1 in 1998",
+      "tier": 3,
+      "intro": "The second relaunch, and the second new #1. Scott Lobdell opens it, Chris Claremont writes most of it with Salvador Larroca, and it is perfectly fine.\n\nThe fourth row is an issue numbered ½, sitting at the cover date it was published under and outside the numbering entirely.",
+      "items": [
+        {
+          "id": "ff-430",
+          "t": "Fantastic Four (1998)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-431",
+          "t": "Fantastic Four (1998)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-432",
+          "t": "Fantastic Four (1998)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-half",
+          "t": "Fantastic Four (1998)",
+          "n": "#½",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-433",
+          "t": "Fantastic Four (1998)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-434",
+          "t": "Fantastic Four (1998)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-435",
+          "t": "Fantastic Four (1998)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-436",
+          "t": "Fantastic Four (1998)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-437",
+          "t": "Fantastic Four (1998)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-438",
+          "t": "Fantastic Four (1998)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-439",
+          "t": "Fantastic Four (1998)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-440",
+          "t": "Fantastic Four (1998)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-441",
+          "t": "Fantastic Four (1998)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-442",
+          "t": "Fantastic Four (1998)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-443",
+          "t": "Fantastic Four (1998)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-444",
+          "t": "Fantastic Four (1998)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-445",
+          "t": "Fantastic Four (1998)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-446",
+          "t": "Fantastic Four (1998)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-447",
+          "t": "Fantastic Four (1998)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-448",
+          "t": "Fantastic Four (1998)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-449",
+          "t": "Fantastic Four (1998)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-450",
+          "t": "Fantastic Four (1998)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-451",
+          "t": "Fantastic Four (1998)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-452",
+          "t": "Fantastic Four (1998)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-453",
+          "t": "Fantastic Four (1998)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-454",
+          "t": "Fantastic Four (1998)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-455",
+          "t": "Fantastic Four (1998)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-456",
+          "t": "Fantastic Four (1998)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-457",
+          "t": "Fantastic Four (1998)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-458",
+          "t": "Fantastic Four (1998)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-459",
+          "t": "Fantastic Four (1998)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-460",
+          "t": "Fantastic Four (1998)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-461",
+          "t": "Fantastic Four (1998)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-462",
+          "t": "Fantastic Four (1998)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-463",
+          "t": "Fantastic Four (1998)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/421/fantastic_four_(1998_-_2012)"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_3"
+        }
+      ]
+    },
+    {
+      "id": "pacheco",
+      "title": "Pacheco & Marín",
+      "sub": "#35–59 · 2000–2002 · co-written by the artist",
+      "tier": 3,
+      "intro": "Carlos Pacheco draws it and co-writes it with Rafael Marín. It looks superb and it is the first stretch since Simonson with a plan.",
+      "items": [
+        {
+          "id": "ff-464",
+          "t": "Fantastic Four (1998)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-465",
+          "t": "Fantastic Four (1998)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-466",
+          "t": "Fantastic Four (1998)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-467",
+          "t": "Fantastic Four (1998)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-468",
+          "t": "Fantastic Four (1998)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-469",
+          "t": "Fantastic Four (1998)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-470",
+          "t": "Fantastic Four (1998)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-471",
+          "t": "Fantastic Four (1998)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-472",
+          "t": "Fantastic Four (1998)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-473",
+          "t": "Fantastic Four (1998)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-474",
+          "t": "Fantastic Four (1998)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-475",
+          "t": "Fantastic Four (1998)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-476",
+          "t": "Fantastic Four (1998)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-477",
+          "t": "Fantastic Four (1998)",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-478",
+          "t": "Fantastic Four (1998)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-479",
+          "t": "Fantastic Four (1998)",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-480",
+          "t": "Fantastic Four (1998)",
+          "n": "#51",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-481",
+          "t": "Fantastic Four (1998)",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-482",
+          "t": "Fantastic Four (1998)",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-483",
+          "t": "Fantastic Four (1998)",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-484",
+          "t": "Fantastic Four (1998)",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-485",
+          "t": "Fantastic Four (1998)",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-486",
+          "t": "Fantastic Four (1998)",
+          "n": "#57",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-487",
+          "t": "Fantastic Four (1998)",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-488",
+          "t": "Fantastic Four (1998)",
+          "n": "#59",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/421/fantastic_four_(1998_-_2012)"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_3"
+        }
+      ]
+    },
+    {
+      "id": "waid",
+      "title": "Waid & Wieringo",
+      "sub": "#60–70, then #500–524 · 2002–2005 · one run, two numberings",
+      "tier": 2,
+      "intro": "The best Fantastic Four anyone wrote between Byrne and Hickman, and the shortest way into the modern book if you would rather not start in 1961.\n\nThe numbering jumps in the middle of it: the run starts at a fresh #60 and the covers go back to the legacy count partway through, so #70 is followed by #500 with no gap in the story at all.",
+      "items": [
+        {
+          "id": "ff-489",
+          "t": "Fantastic Four (1998)",
+          "n": "#60",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-490",
+          "t": "Fantastic Four (1998)",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-491",
+          "t": "Fantastic Four (1998)",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-492",
+          "t": "Fantastic Four (1998)",
+          "n": "#63",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-493",
+          "t": "Fantastic Four (1998)",
+          "n": "#64",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-494",
+          "t": "Fantastic Four (1998)",
+          "n": "#65",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-495",
+          "t": "Fantastic Four (1998)",
+          "n": "#66",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-496",
+          "t": "Fantastic Four (1998)",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-497",
+          "t": "Fantastic Four (1998)",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-498",
+          "t": "Fantastic Four (1998)",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-499",
+          "t": "Fantastic Four (1998)",
+          "n": "#70",
+          "note": "printed as #70 — the next issue is #500",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-500",
+          "t": "Fantastic Four",
+          "n": "#500",
+          "note": "legacy numbering resumes",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-501",
+          "t": "Fantastic Four",
+          "n": "#501",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-502",
+          "t": "Fantastic Four",
+          "n": "#502",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-503",
+          "t": "Fantastic Four",
+          "n": "#503",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-504",
+          "t": "Fantastic Four",
+          "n": "#504",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-505",
+          "t": "Fantastic Four",
+          "n": "#505",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-506",
+          "t": "Fantastic Four",
+          "n": "#506",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-507",
+          "t": "Fantastic Four",
+          "n": "#507",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-508",
+          "t": "Fantastic Four",
+          "n": "#508",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-509",
+          "t": "Fantastic Four",
+          "n": "#509",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-510",
+          "t": "Fantastic Four",
+          "n": "#510",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-511",
+          "t": "Fantastic Four",
+          "n": "#511",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-512",
+          "t": "Fantastic Four",
+          "n": "#512",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-513",
+          "t": "Fantastic Four",
+          "n": "#513",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-514",
+          "t": "Fantastic Four",
+          "n": "#514",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-515",
+          "t": "Fantastic Four",
+          "n": "#515",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-516",
+          "t": "Fantastic Four",
+          "n": "#516",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-517",
+          "t": "Fantastic Four",
+          "n": "#517",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-518",
+          "t": "Fantastic Four",
+          "n": "#518",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-519",
+          "t": "Fantastic Four",
+          "n": "#519",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-520",
+          "t": "Fantastic Four",
+          "n": "#520",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-521",
+          "t": "Fantastic Four",
+          "n": "#521",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-522",
+          "t": "Fantastic Four",
+          "n": "#522",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-523",
+          "t": "Fantastic Four",
+          "n": "#523",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-524",
+          "t": "Fantastic Four",
+          "n": "#524",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/421/fantastic_four_(1998_-_2012)"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_3"
+        }
+      ]
+    },
+    {
+      "id": "mcduffie",
+      "title": "Straczynski, Kesel & McDuffie",
+      "sub": "#525–553 · 2005–2008 · three writers, no handover",
+      "tier": 3,
+      "intro": "J. Michael Straczynski, then Karl Kesel for two, then Dwayne McDuffie. Twenty-nine issues that lead nowhere in particular, which is unlucky, because what comes next leads everywhere.",
+      "items": [
+        {
+          "id": "ff-525",
+          "t": "Fantastic Four",
+          "n": "#525",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-526",
+          "t": "Fantastic Four",
+          "n": "#526",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-527",
+          "t": "Fantastic Four",
+          "n": "#527",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-528",
+          "t": "Fantastic Four",
+          "n": "#528",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-529",
+          "t": "Fantastic Four",
+          "n": "#529",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-530",
+          "t": "Fantastic Four",
+          "n": "#530",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-531",
+          "t": "Fantastic Four",
+          "n": "#531",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-532",
+          "t": "Fantastic Four",
+          "n": "#532",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-533",
+          "t": "Fantastic Four",
+          "n": "#533",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-534",
+          "t": "Fantastic Four",
+          "n": "#534",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-535",
+          "t": "Fantastic Four",
+          "n": "#535",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-536",
+          "t": "Fantastic Four",
+          "n": "#536",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-537",
+          "t": "Fantastic Four",
+          "n": "#537",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-538",
+          "t": "Fantastic Four",
+          "n": "#538",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-539",
+          "t": "Fantastic Four",
+          "n": "#539",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-540",
+          "t": "Fantastic Four",
+          "n": "#540",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-541",
+          "t": "Fantastic Four",
+          "n": "#541",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-542",
+          "t": "Fantastic Four",
+          "n": "#542",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-543",
+          "t": "Fantastic Four",
+          "n": "#543",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-544",
+          "t": "Fantastic Four",
+          "n": "#544",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-545",
+          "t": "Fantastic Four",
+          "n": "#545",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-546",
+          "t": "Fantastic Four",
+          "n": "#546",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-547",
+          "t": "Fantastic Four",
+          "n": "#547",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-548",
+          "t": "Fantastic Four",
+          "n": "#548",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-549",
+          "t": "Fantastic Four",
+          "n": "#549",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-550",
+          "t": "Fantastic Four",
+          "n": "#550",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-551",
+          "t": "Fantastic Four",
+          "n": "#551",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-552",
+          "t": "Fantastic Four",
+          "n": "#552",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-553",
+          "t": "Fantastic Four",
+          "n": "#553",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/421/fantastic_four_(1998_-_2012)"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_3"
+        }
+      ]
+    },
+    {
+      "id": "millar",
+      "title": "Millar & Hitch, the handover",
+      "sub": "#554–569 · 2008–2009 · the sixteen issues before #570",
+      "tier": 2,
+      "intro": "Mark Millar and Bryan Hitch get sixteen issues, and then the book changes hands for the last time this list covers.\n\n#569 is where this stops. The next issue, Fantastic Four #570, is the first page of Jonathan Hickman's run — and that is a list of its own here, Everything Dies: Secret Wars, 250 issues from #570 to the end of everything. You do not need these sixteen to start it; that list opens cold on purpose. They are simply what the book was doing the month before.",
+      "items": [
+        {
+          "id": "ff-554",
+          "t": "Fantastic Four",
+          "n": "#554",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-555",
+          "t": "Fantastic Four",
+          "n": "#555",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-556",
+          "t": "Fantastic Four",
+          "n": "#556",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-557",
+          "t": "Fantastic Four",
+          "n": "#557",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-558",
+          "t": "Fantastic Four",
+          "n": "#558",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-559",
+          "t": "Fantastic Four",
+          "n": "#559",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-560",
+          "t": "Fantastic Four",
+          "n": "#560",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-561",
+          "t": "Fantastic Four",
+          "n": "#561",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-562",
+          "t": "Fantastic Four",
+          "n": "#562",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-563",
+          "t": "Fantastic Four",
+          "n": "#563",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-564",
+          "t": "Fantastic Four",
+          "n": "#564",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-565",
+          "t": "Fantastic Four",
+          "n": "#565",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-566",
+          "t": "Fantastic Four",
+          "n": "#566",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-567",
+          "t": "Fantastic Four",
+          "n": "#567",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-568",
+          "t": "Fantastic Four",
+          "n": "#568",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "ff-569",
+          "t": "Fantastic Four",
+          "n": "#569",
+          "note": "the last issue before Hickman",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://www.marvel.com/comics/series/421/fantastic_four_(1998_-_2012)"
+        },
+        {
+          "label": "Issue list",
+          "url": "https://marvel.fandom.com/wiki/Fantastic_Four_Vol_3"
+        }
+      ]
+    }
+  ]
+}
