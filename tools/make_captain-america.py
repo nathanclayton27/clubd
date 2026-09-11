@@ -144,6 +144,10 @@ STAR = {
     ("Winter Soldier Vol 1", 1): 1,
 }
 
+MONTHS = ["", "January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November",
+          "December"]
+
 V1 = "Captain America Vol 1"
 V5 = "Captain America Vol 5"
 
@@ -424,7 +428,10 @@ SECTIONS = [
               "main run does not depend on it.",
     ),
     dict(
-        id="wintersoldier", tier=2, title="Winter Soldier",
+        # Tier 1, not 2. Brubaker writes #1-14 and Jason Latour takes over at
+        # #15, so this is where the run that starts at volume five #1 ends —
+        # a Tier 1 path that stopped at volume six #19 stopped mid-story.
+        id="wintersoldier", tier=1, title="Winter Soldier",
         sub="#1–14 · where the run actually stops",
         spans=[("Winter Soldier Vol 1", 1, 14)],
         writer="Ed Brubaker", bar=set(),
@@ -438,11 +445,12 @@ SECTIONS = [
 NOTES = [
     ["Tiers.",
      "1 is the readable path: the 1964 revival, Steranko, Englehart, Kirby's "
-     "return, Stern and Byrne, and every issue of Brubaker's run. 2 is "
-     "strongly recommended — DeMatteis, Gruenwald's ten years, Waid, and the "
-     "two books Brubaker's run finishes in. 3 is genuinely optional, and most "
-     "of it is there so the numbering has no holes in it. The minimum viable "
-     "path is Tier 1 alone."],
+     "return, Stern and Byrne, and Brubaker's run from volume five #1 to "
+     "Winter Soldier #14, where he leaves it. 2 is strongly recommended — "
+     "DeMatteis, Gruenwald's ten years, Waid, and Captain America and Bucky, "
+     "the companion book Brubaker co-wrote alongside volume six. 3 is "
+     "genuinely optional, and most of it is there so the numbering has no "
+     "holes in it. The minimum viable path is Tier 1 alone."],
     ["Civil War.",
      "Captain America #22–24 are chapters of the 2006 crossover and live on "
      "the Civil War list here instead, where they sit interleaved with the "
@@ -489,7 +497,7 @@ def main():
         "civil-war.json no longer carries Captain America #%s, so leaving "
         "them out of this list would lose them entirely" % missing)
 
-    sections, seen = [], set()
+    sections, seen, bru = [], set(), []
     for spec in SECTIONS:
         items, years, off = [], [], set()
         by_series = {}
@@ -509,6 +517,9 @@ def main():
                 seen.add(key)
                 years.append(rec["year"])
                 by_series.setdefault(series, []).append(rec["year"])
+                if "Ed Brubaker" in rec["writers"]:
+                    bru.append((rec["year"], MONTHS.index(rec["month"]),
+                                spec["tier"], series, n))
                 row = {"id": "%s-%d" % (pre, n), "t": title, "n": "#%d" % n,
                        "note": NOTE.get(key, ""), "star": STAR.get(key, 0),
                        "opt": 0, "url": ""}
@@ -567,6 +578,17 @@ def main():
         if spec.get("start"):
             sec["start"] = True
         sections.append(sec)
+
+    # Tier 1 is the whole claim of the tier mechanism: read it alone and you
+    # have read the thing the list is for. The list is for Brubaker's run, so
+    # the last issue the source credits him on has to be in it. It was not —
+    # Winter Soldier sat in Tier 2, and a Tier 1 reader stopped fourteen
+    # issues before the end of the story.
+    y, m, tier, series, n = max(bru)
+    assert tier == 1, (
+        "the last issue the source credits Ed Brubaker on (%s #%d, %d) is "
+        "tier %d, so Tier 1 alone stops before the run does"
+        % (series, n, y, tier))
 
     rows = sum(len(s["items"]) for s in sections)
     assert rows > 600, "only %d rows" % rows
