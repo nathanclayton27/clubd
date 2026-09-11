@@ -11665,11 +11665,13 @@ function icsSave(lines){
 //     I left it out because it puts other people's progress into a file they
 //     never touched and cannot delete, and Nathan overruled that for his own
 //     club: "maybe its possible to make an image to share with friends/clubs
-//     included?" So it ships with the part that actually worried me dialled
-//     down rather than dropped — THE PICTURE CARRIES NO NAMES. One band per
-//     person in their own colour, the club's name, and the size of it. "We are
-//     all about half way and one of us has not started" survives without naming
-//     anybody, and whoever sends it can say who is who.
+//     included?" It then shipped with NO NAMES, which was my call and which he
+//     has also now overruled: "for club shares add a legend for the colors".
+//     A legend of colours with no names says nothing, so the legend names
+//     people — and that is the whole of the privacy cost, stated rather than
+//     buried: A CLUB PICTURE CARRIES THE MEMBERS' DISPLAY NAMES out of the club
+//     and into a file that can go anywhere. It is his club and his call; what
+//     this code owes is that the cost is obvious to whoever reads it next.
 //   * it always draws WHAT IS ON SCREEN. A button in a club view that quietly
 //     exported your solo strip instead would be worse than no button at all.
 //   * never the password-gated list. Filtered on the `secret` flag, never on a
@@ -11882,8 +11884,37 @@ function drawShot(){
   g.fillText(done.size + ' of ' + n + ' ' + UNIT.many
              + ' \u2014 catch up at clubd.watch', X, 478);
 
-  g.fillStyle = accent.indexOf('var(') === 0 ? (T.signal || '#C1352A') : accent;
-  g.beginPath(); g.arc(X + 4, 542, 4, 0, Math.PI * 2); g.fill();
+  // The legend, club shares only. Nathan: "for club shares add a legend for the
+  // colors". Swatch plus name, in the band order above, so the top band is the
+  // first name. It wraps to a second line and then stops with a "+N more"
+  // rather than running off the card — a legend that overflows is worse than a
+  // short one, because the names it drops are the ones nobody can see.
+  if(stacked && crew.length){
+    g.font = '400 13px "IBM Plex Mono", ui-monospace, monospace';
+    const sw = 9, gapIn = 7, gapOut = 20, lineH = 21;
+    let lx = X, ly = 512, line = 0;
+    for(let i = 0; i < crew.length; i++){
+      const nm = String(crew[i].name || '').slice(0, 18);
+      const w = sw + gapIn + g.measureText(nm).width;
+      if(lx + w > X + W){
+        line += 1;
+        if(line > 1){
+          g.fillStyle = T.ink3;
+          g.fillText('+' + (crew.length - i) + ' more', lx, ly + 1);
+          break;
+        }
+        lx = X; ly += lineH;
+      }
+      g.fillStyle = shotMember(crew[i].ci);
+      g.fillRect(lx, ly - sw + 1, sw, sw);
+      g.fillStyle = T.ink2;
+      g.fillText(nm, lx + sw + gapIn, ly);
+      lx += w + gapOut;
+    }
+  }else{
+    g.fillStyle = accent.indexOf('var(') === 0 ? (T.signal || '#C1352A') : accent;
+    g.beginPath(); g.arc(X + 4, 542, 4, 0, Math.PI * 2); g.fill();
+  }
   return cv;
 }
 
