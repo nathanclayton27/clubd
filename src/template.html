@@ -2361,7 +2361,13 @@ function pickSlug(){
   // which VIEW opens and nothing else: a ?p= link opens its list AND the
   // invitation still settles, on whichever view the person ends up looking at.
   // #fnote and #arrask are on all of them.
-  if(ARRIVAL) return null;
+  //
+  // `.own` matters here for the same reason it gates the splash: a tab that did
+  // not catch the invitation must reach its OWN remembered list. Gated on
+  // ARRIVAL alone, a bystander's `{own:false}` slot is truthy, so a second
+  // person in a second tab was sent to the shelf instead of the list they were
+  // in — for the whole TTL, and with nothing on screen explaining why.
+  if(ARRIVAL && ARRIVAL.own) return null;
   const last = localStorage.getItem('gw:last');
   if(last && MANIFEST.some(m=>m.slug===last)) return last;
   return null;
@@ -4878,8 +4884,12 @@ async function spendArrival(arr){
   if(!await claimArrival(arr)){
     // A claim can fail three ways and two of them need saying. It timed out in
     // this tab's hands (arrivalStale), or a newer invitation took the slot
-    // (arrivalTaken). The third — another tab spent this very invitation — is
-    // already covered by the storage listener, which removes the ask there.
+    // (arrivalTaken). The third is losing the race to a tab that spent this very
+    // invitation, and that one says nothing ON PURPOSE — the winning tab reports
+    // the request, and two tabs both announcing one request is worse than one
+    // staying quiet. (An earlier version of this comment credited the storage
+    // listener with covering it. It does not: settleArrival has already nulled
+    // ARRIVAL by then, so the listener returns at its own first guard.)
     arrivalStale();
     arrivalTaken();
     return;
