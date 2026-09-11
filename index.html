@@ -6898,7 +6898,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'a97bd44fb9fd';
+const BUILD = 'eaf5e987ddf8';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -13056,17 +13056,26 @@ function wireFwDrawer(){
 function paintFreshCard(){
   const card = $('gc-fresh'), body = $('gc-fresh-b');
   if(!card || !body) return;
-  // A club SESSION and a fresh run cannot both be on — splitClub() refuses one
-  // while FW is set — so inside a session this button answers "not that, then",
-  // which is the same reason paintFW hides ↻ there. The card leaves rather than
-  // standing there disabled; .gcards is auto-fit, so the other two close the gap.
-  const off = !SLUG || !!SESSION;
+  // Nathan: "show the fresh watch card on a club anyways." It used to leave
+  // inside a club session, on the grounds that splitClub() refuses a session
+  // while FW is on. That guard was over-cautious about its own machinery:
+  // fwNew() already writes JUSTME to GKEY before it reloads, so starting a run
+  // from inside a club drops the club first and the two never coexist. The
+  // button works here — it just also steps you out of the session, and the copy
+  // says so rather than letting you find out.
+  const off = !SLUG;
   card.classList.toggle('hide', off);
   if(off){ body.innerHTML = ''; return; }
+  const inClub = !!SESSION;
   body.innerHTML =
       '<p class="gcp">Watch it again from zero, just for you — your all-time run'
     + ' and your clubs keep every tick. Each one gets its own row in the switcher'
-    + ' above, so you can move between them.</p>'
+    + ' above, so you can move between them.'
+    + (inClub
+        ? ' You are watching with ' + esc(SESSNAME || 'a club') + ' — starting'
+          + ' one steps out of that and leaves it exactly as it is.'
+        : '')
+    + '</p>'
     + '<button id="b-fwstart" type="button">↻ start a fresh watch</button>';
   const b = $('b-fwstart');
   if(b) b.onclick = fwNew;
