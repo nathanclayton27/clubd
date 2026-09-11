@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
@@ -23,8 +23,11 @@ manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
 flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
 twelve chapters the source numbers from minus 108, arcs taken from the
-chapter lists' own cited prose), and *Spawn* — 829 issues across 187 arcs, following a curated
-reading order rather than publication date.
+chapter lists' own cited prose), *Spawn* — 829 issues across 187 arcs, following a curated
+reading order rather than publication date — and *Green Lantern*, Geoff Johns
+from *Rebirth* to *Blackest Night*, where the Corps book and the crossover
+tie-ins are tiered instead of dropped, so the readable path and the complete
+one are the same list.
 
 **Franchises.** *Star Wars* (films and television, with the games on their
 own page), *Metal Gear* (story-only hours, tiers, and a recap link for the
@@ -430,6 +433,14 @@ Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils
 freely. Civil War order from How To Love Comics, cross-checked against
 comicbookreadingorders.com. Ultimate Marvel order from Comic Book Herald.
+
+Green Lantern issue ranges read from Wikipedia's collected-editions tables for
+*Green Lantern* vol. 4 and *Green Lantern Corps* vol. 2, its *Blackest Night*
+titles-involved table for the tie-ins and their writers, and the *Sinestro
+Corps War* article for that crossover's part order, which it states outright
+and the generator zips rather than types. Where the sources do not order two
+books against each other — the three Blackest Night titles ran in parallel —
+each title is kept whole rather than interleaved on a guess.
 
 MCU Anthology built from Wikipedia's live-action Marvel features table, and DC
 Anthology from the equivalent DC film and television tables including the

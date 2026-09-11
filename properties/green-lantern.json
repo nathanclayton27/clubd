@@ -50,7 +50,7 @@
           "t": "Green Lantern: Rebirth",
           "n": "#1",
           "note": "",
-          "star": 0,
+          "star": 1,
           "opt": 0,
           "url": ""
         },
@@ -522,14 +522,14 @@
       "id": "sinestro",
       "tier": 1,
       "title": "The Sinestro Corps War",
-      "sub": "2007 · eleven parts across two books",
+      "sub": "2007 · the crossover, chapter by chapter across both titles",
       "intro": "The crossover that made the run. It alternates between the two monthlies chapter by chapter, which is the only genuinely difficult thing about reading it — the order below is the one the article states: the one-shot, then the two books trading off, then an epilogue back in the main title.\n\nGreen Lantern Corps #19 is not a numbered part. It was reworked after the fact and sits with the war in every collection of it, so it sits here.",
       "items": [
         {
           "id": "gl-scwspecial-1",
           "t": "Green Lantern: Sinestro Corps Special",
           "n": "#1",
-          "note": "part one",
+          "note": "part 1",
           "star": 2,
           "opt": 0,
           "url": ""
@@ -662,7 +662,7 @@
       "id": "talessinestro",
       "tier": 3,
       "title": "Tales of the Sinestro Corps",
-      "sub": "2007 · four one-shots and a Secret Files · skippable",
+      "sub": "2007 · the one-shots, and the one tie-in outside the Lantern books",
       "intro": "Late additions DC commissioned once the war started selling, each one a single issue about a single member of the other side. None of them is load-bearing. The Secret Files issue is a reference book — rosters and back story — rather than a story.",
       "items": [
         {
@@ -781,7 +781,7 @@
           "t": "Green Lantern (vol. 4)",
           "n": "#29",
           "note": "",
-          "star": 0,
+          "star": 1,
           "opt": 0,
           "url": ""
         },
@@ -1156,7 +1156,7 @@
           "t": "Blackest Night",
           "n": "#1",
           "note": "",
-          "star": 0,
+          "star": 1,
           "opt": 0,
           "url": ""
         },
@@ -1435,7 +1435,7 @@
       "id": "blackestminis",
       "tier": 3,
       "title": "The Blackest Night miniseries",
-      "sub": "2009–2010 · six three-issue tie-ins and an anthology · optional",
+      "sub": "2009–2010 · the tie-in miniseries, and one anthology · optional",
       "intro": "Each one takes a corner of the DC line and runs the event through it. Tales of the Corps is the odd one out and the one worth reading first: it is a set of short back stories for the characters the main series assumes you know.",
       "items": [
         {
@@ -1631,7 +1631,7 @@
           "id": "gl-untold-1",
           "t": "Untold Tales of Blackest Night",
           "n": "#1",
-          "note": "an anthology one-shot · Geoff Johns and five others",
+          "note": "an anthology one-shot: Geoff Johns and five others",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1673,7 +1673,7 @@
           "id": "gl-adventure-comics-4",
           "t": "Adventure Comics",
           "n": "#4",
-          "note": "Tony Bedard, Sterling Gates, Geoff Johns · Travis Moore, Jerry Ordway",
+          "note": "Tony Bedard, Sterling Gates, Geoff Johns",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1700,7 +1700,7 @@
           "id": "gl-the-atom-and-hawkman-46",
           "t": "The Atom and Hawkman",
           "n": "#46",
-          "note": "Geoff Johns · Fernando Pasarin, Ryan Sook",
+          "note": "Geoff Johns",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1709,7 +1709,7 @@
           "id": "gl-booster-gold-26",
           "t": "Booster Gold",
           "n": "#26",
-          "note": "Dan Jurgens · Dan Jurgens, Mike Norton, Norman Rapmund",
+          "note": "Dan Jurgens",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1727,7 +1727,7 @@
           "id": "gl-catwoman-83",
           "t": "Catwoman",
           "n": "#83",
-          "note": "Tony Bedard · Luciana Del Negro, Fabrizio Fiorentino, Marcos Marz, Ibraim Roberson",
+          "note": "Tony Bedard",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1736,7 +1736,7 @@
           "id": "gl-doom-patrol-4",
           "t": "Doom Patrol",
           "n": "#4",
-          "note": "Keith Giffen · Justiniano",
+          "note": "Keith Giffen",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1754,7 +1754,7 @@
           "id": "gl-green-arrow-and-black-canary-30",
           "t": "Green Arrow and Black Canary",
           "n": "#30",
-          "note": "J.T. Krul · Diogenes Neves",
+          "note": "J.T. Krul",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1763,7 +1763,7 @@
           "id": "gl-justice-league-of-america-39",
           "t": "Justice League of America",
           "n": "#39",
-          "note": "James Robinson · Mark Bagley",
+          "note": "James Robinson",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1781,7 +1781,7 @@
           "id": "gl-outsiders-24",
           "t": "Outsiders",
           "n": "#24",
-          "note": "Peter J. Tomasi · Derec Donovan, Fernando Pasarin",
+          "note": "Peter J. Tomasi",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1799,7 +1799,7 @@
           "id": "gl-phantom-stranger-42",
           "t": "Phantom Stranger",
           "n": "#42",
-          "note": "Peter J. Tomasi · Adrian Syaf",
+          "note": "Peter J. Tomasi",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1808,7 +1808,7 @@
           "id": "gl-the-power-of-shazam-48",
           "t": "The Power of Shazam!",
           "n": "#48",
-          "note": "Eric Wallace · Don Kramer",
+          "note": "Eric Wallace",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1817,7 +1817,7 @@
           "id": "gl-the-question-37",
           "t": "The Question",
           "n": "#37",
-          "note": "Dennis O'Neil, Greg Rucka · Denys Cowan",
+          "note": "Dennis O'Neil, Greg Rucka",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1826,7 +1826,7 @@
           "id": "gl-r-e-b-e-l-s-10",
           "t": "R.E.B.E.L.S.",
           "n": "#10",
-          "note": "Tony Bedard · Andy Clarke, Claude St. Aubin",
+          "note": "Tony Bedard",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1844,7 +1844,7 @@
           "id": "gl-starman-81",
           "t": "Starman",
           "n": "#81",
-          "note": "James Robinson · Fernando Dagnino, Bill Sienkiewicz",
+          "note": "James Robinson",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1853,7 +1853,7 @@
           "id": "gl-suicide-squad-67",
           "t": "Suicide Squad",
           "n": "#67",
-          "note": "John Ostrander, Gail Simone · J. Calafiore",
+          "note": "John Ostrander, Gail Simone · Danse Macabre storyline",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1862,7 +1862,7 @@
           "id": "gl-secret-six-17",
           "t": "Secret Six",
           "n": "#17",
-          "note": "John Ostrander, Gail Simone · J. Calafiore",
+          "note": "John Ostrander, Gail Simone · Danse Macabre storyline",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1898,7 +1898,7 @@
           "id": "gl-teen-titans-77",
           "t": "Teen Titans",
           "n": "#77",
-          "note": "J.T. Krul · Joe Bennett",
+          "note": "J.T. Krul",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1916,7 +1916,7 @@
           "id": "gl-weird-western-tales-71",
           "t": "Weird Western Tales",
           "n": "#71",
-          "note": "Dan Didio · Renato Arlem",
+          "note": "Dan Didio",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1925,7 +1925,7 @@
           "id": "gl-action-comics-890",
           "t": "Action Comics",
           "n": "#890",
-          "note": "Paul Cornell · Pete Woods",
+          "note": "Paul Cornell · Blackest Night Aftermath",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -1943,7 +1943,7 @@
       "tier": 3,
       "title": "Brightest Day",
       "sub": "2010–2011 · the coda · optional",
-      "intro": "Ten issues of the monthly that finish what Blackest Night starts, banded with a DC-wide event they are largely independent of. Tier 3 because the arc this list is about ends at Blackest Night #8 — but these are the issues that clear up after it, and they lead straight into War of the Green Lanterns, which is where the run properly changes shape.\n\nThe Brightest Day event itself is a different book, about Aquaman, Firestorm and the Martian Manhunter. It is not here.",
+      "intro": "Ten issues of the monthly that finish what Blackest Night starts, banded with a DC-wide event they are largely independent of. Tier 3 because the arc this list is about ends at Blackest Night #8 — but these are the issues that clear up after it, and they run to the edge of War of the Green Lanterns, which is where this list stops.\n\nTwo things deliberately left out. The Brightest Day event itself is a different book, about Aquaman, Firestorm and the Martian Manhunter. And the Corps book keeps going past this point, as does Emerald Warriors — both of them straight into the next war, which wants a list of its own.",
       "items": [
         {
           "id": "gl-v4-53",
@@ -2039,7 +2039,7 @@
           "id": "gl-larfleeze-1",
           "t": "Green Lantern: Larfleeze Christmas Special",
           "n": "#1",
-          "note": "a one-shot, collected with these issues",
+          "note": "never bannered with the event, and collected with these issues anyway",
           "star": 0,
           "opt": 1,
           "url": ""

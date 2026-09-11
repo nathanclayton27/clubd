@@ -62,6 +62,7 @@ PAGES = {
     "rebirth": "Green Lantern: Rebirth",
     "scw": "Sinestro Corps War",
     "bn": "Blackest Night",
+    "brightest": "Brightest Day",
 }
 
 W_GL = "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
@@ -93,7 +94,13 @@ DASH = re.compile(r"[‐-―−-]")
 
 
 def flat(t):
-    return re.sub(r"\s+", " ", DASH.sub("-", wiki.clean(t)))
+    # Apostrophes go too. wiki.clean strips italic and bold markup by removing
+    # PAIRS of apostrophes, so a five-apostrophe bold-italic title leaves one
+    # behind on each side and "Green Lantern Corps (vol. 2) #47-57" reads back
+    # as "'Green Lantern Corps' (vol. 2) #47-57". Dropping them from both the
+    # haystack and the needle is the only comparison that survives that.
+    t = re.sub(r"['’]", "", wiki.clean(t))
+    return re.sub(r"\s+", " ", DASH.sub("-", t))
 
 
 HAY = {k: flat(v) for k, v in SRC.items()}
@@ -169,6 +176,20 @@ REBIRTH_N = int(_ISSUES.group(1))
 assert REBIRTH_N == 6, "Rebirth issue count moved: %d" % REBIRTH_N
 
 
+# ------------------------------------------------------------- the back edge
+# Brightest Day is the soft edge of this list and the decision to take only part
+# of it needs the facts it rests on checked, not asserted in prose. The event's
+# own titles list says which book is about whom; these are the two lines the
+# coda's section intro and the "Where it stops" note are built on.
+BRIGHTEST_GL = spec("Green Lantern (vol. 4) #53-62", "brightest")
+for _who in ("Aquaman", "Firestorm", "Martian Manhunter"):
+    assert _who in HAY["brightest"], \
+        "Brightest Day no longer names %s among its leads" % _who
+for _after in ("Green Lantern Corps (vol. 2) #47-57",
+               "Green Lantern: Emerald Warriors"):
+    cite(_after, "brightest")
+
+
 # ----------------------------------------------------------------- range maths
 def expand(issues):
     """'#4-5, 7' -> [4, 5, 7]. '#0-8' -> [0..8]. '#46' -> [46]."""
@@ -233,12 +254,13 @@ def blackest_titles():
         title, issues = cell(cells[0]), cell(cells[1])
         if not title or not ISSUE_CELL.match(issues):
             continue
-        # columns 2 and 4 are writer and notes; a rowspan there covers the rows
-        # below it, which is how Secret Six gets its writer and the seven
-        # miniseries get theirs.
-        got = {}
-        raw = list(cells[2:])
-        for col in (2, 4):
+        # Columns are title, issues, writer, artist, notes. The artist column
+        # has to be walked even though nothing reads it, or the notes cell is
+        # read out of the artist's slot; and a rowspan in any of them covers
+        # the rows below, which is how Secret Six gets Suicide Squad's writer
+        # and the seven miniseries get their shared Notes cell.
+        got, raw = {}, list(cells[2:])
+        for col in (2, 3, 4):
             if col in pending:
                 got[col], pending[col][0] = pending[col][1], pending[col][0] - 1
                 if pending[col][0] == 0:
@@ -302,11 +324,14 @@ assert _PARTS and _PARTS.group(1) == "11", "Sinestro Corps War part count moved"
 SEEN = set()
 
 
-def row(series, num, note="", star=0, opt=0, key=None):
-    ident = "gl-%s-%s" % (key or prop.slug(series), str(num).lstrip("#"))
+def row(series, num, note="", star=None, opt=0, key=None):
+    num = int(str(num).lstrip("#"))
+    ident = "gl-%s-%d" % (key or prop.slug(series), num)
     assert ident not in SEEN, "duplicate row %s" % ident
     SEEN.add(ident)
-    return {"id": ident, "t": series, "n": "#%s" % str(num).lstrip("#"),
+    if star is None:
+        star = STARS.get((series, num), 0)
+    return {"id": ident, "t": series, "n": "#%d" % num,
             "note": note, "star": star, "opt": opt, "url": ""}
 
 
@@ -316,15 +341,27 @@ GLC = "Green Lantern Corps (vol. 2)"
 GL_TITLE, GLC_TITLE = "Green Lantern", "Green Lantern Corps"
 
 
+# Row notes are prose, so a counted thing in one is spelled out.
+NUMBER = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six",
+          7: "seven", 8: "eight", 9: "nine"}
+
+
 def tidy(note):
     """A table's Notes cell as a row note: quotes off, sentence case kept."""
     return note.replace('"', "").strip()
 
 
-def gl_rows(spec, notes=None, stars=(), key="v4"):
+# Standouts. Two is "this is the issue people mean when they recommend the
+# run"; one is a landmark worth knowing you have reached. Kept to six rows in
+# 192, because a star on everything is a star on nothing.
+STARS = {("Green Lantern: Rebirth", 1): 1, (GL, 25): 2, (GL, 29): 1,
+         ("Green Lantern: Sinestro Corps Special", 1): 2,
+         ("Blackest Night", 1): 1, ("Blackest Night", 8): 2}
+
+
+def gl_rows(issues, notes=None, key="v4"):
     notes = notes or {}
-    return [row(GL, n, notes.get(n, ""), 2 if n in stars else 0, key=key)
-            for n in expand(spec)]
+    return [row(GL, n, notes.get(n, ""), key=key) for n in expand(issues)]
 
 
 def glc_rows(spec, notes=None, key="glc"):
@@ -339,10 +376,17 @@ def mini_rows(title, spec, note="", key=None):
             for i, n in enumerate(nums)]
 
 
-def one_shot(fragment, note, key, opt=0, page="gl", title=None):
-    """A single-issue row whose 'Title #n' is cited whole from a source."""
+def one_shot(fragment, note, key, opt=0, page="gl", title=None, num=None):
+    """A single-issue row whose 'Title #n' is cited whole from a source.
+
+    `num` is for the handful of one-shots a source names without an issue
+    number — they are all #1, but typing that here rather than reading it keeps
+    the citation honest about what it did and did not find.
+    """
     cite(fragment, page)
-    name, num = fragment.rsplit(" #", 1)
+    name = fragment
+    if num is None:
+        name, num = fragment.rsplit(" #", 1)
     return row(title or name, num, note, opt=opt, key=key)
 
 
@@ -422,17 +466,15 @@ section(
     links=links(("Green Lantern vol. 4", W_GL)),
 )
 
-_scw_items = [row("Green Lantern: Sinestro Corps Special",
-                  1, "part one", star=2, key="scwspecial")]
+_scw_items = [row("Green Lantern: Sinestro Corps Special", 1, "part 1",
+                  key="scwspecial")]
 for _n, (_book, _num) in enumerate(SCW_ORDER, start=2):
     _title = GL if _book == "gl" else GLC
     _key = "v4" if _book == "gl" else "glc"
     _note = "part %d" % _n
     if _book == "gl" and _num == 25:
         _note = "part %d · its release slipped two weeks" % _n
-    _scw_items.append(row(_title, _num, _note,
-                          star=2 if (_book == "gl" and _num == 25) else 0,
-                          key=_key))
+    _scw_items.append(row(_title, _num, _note, key=_key))
 cite("Green Lantern Corps (vol. 2) #16–19", "glc")
 _scw_items.append(row(GLC, 19,
                       "rewritten late, after the reaction to the story",
@@ -441,7 +483,7 @@ _scw_items.append(row(GL, 26, "epilogue", key="v4"))
 
 section(
     id="sinestro", tier=1, title="The Sinestro Corps War",
-    sub="2007 · eleven parts across two books",
+    sub="2007 · the crossover, chapter by chapter across both titles",
     intro="The crossover that made the run. It alternates between the two "
           "monthlies chapter by chapter, which is the only genuinely difficult "
           "thing about reading it — the order below is the one the article "
@@ -456,7 +498,7 @@ section(
 
 section(
     id="talessinestro", tier=3, title="Tales of the Sinestro Corps",
-    sub="2007 · four one-shots and a Secret Files · skippable",
+    sub="2007 · the one-shots, and the one tie-in outside the Lantern books",
     intro="Late additions DC commissioned once the war started selling, each one "
           "a single issue about a single member of the other side. None of them "
           "is load-bearing. The Secret Files issue is a reference book — rosters "
@@ -551,8 +593,7 @@ section(
           "kept whole rather than guessing an interleave: read the main series, "
           "then the Green Lantern issues, then the Corps ones.",
     items=[row("Blackest Night", n,
-               "Free Comic Book Day" if n == 0 else "",
-               star=2 if n == 8 else 0, key="bn")
+               "Free Comic Book Day" if n == 0 else "", key="bn")
            for n in expand(_bn_main[0])],
     links=links(("The event", W_BN)),
 )
@@ -586,15 +627,15 @@ _mini_items = []
 for _t in _minis:
     _issues, _writer, _ = bn(_t, TIEIN)
     _mini_items += mini_rows(_t, _issues, _writer, key=prop.slug(_t))
+_untold_writers = bn("Untold Tales of Blackest Night", TIEIN)[1].split(", ")
 _mini_items += [row("Untold Tales of Blackest Night", 1,
-                    prop.join_bits("an anthology one-shot",
-                                   bn("Untold Tales of Blackest Night",
-                                      TIEIN)[1].split(",")[0] + " and five others"),
+                    "an anthology one-shot: %s and %s others"
+                    % (_untold_writers[0], NUMBER[len(_untold_writers) - 1]),
                     key="untold")]
 
 section(
     id="blackestminis", tier=3, title="The Blackest Night miniseries",
-    sub="2009–2010 · six three-issue tie-ins and an anthology · optional",
+    sub="2009–2010 · the tie-in miniseries, and one anthology · optional",
     intro="Each one takes a corner of the DC line and runs the event through it. "
           "Tales of the Corps is the odd one out and the one worth reading "
           "first: it is a set of short back stories for the characters the main "
@@ -632,14 +673,19 @@ section(
     intro="Ten issues of the monthly that finish what Blackest Night starts, "
           "banded with a DC-wide event they are largely independent of. Tier 3 "
           "because the arc this list is about ends at Blackest Night #8 — but "
-          "these are the issues that clear up after it, and they lead straight "
-          "into War of the Green Lanterns, which is where the run properly "
-          "changes shape.\n\nThe Brightest Day event itself is a different book, "
-          "about Aquaman, Firestorm and the Martian Manhunter. It is not here.",
-    items=gl_rows(spec("Green Lantern vol. 4 #53–62", "gl"))
-          + [one_shot("Green Lantern: Larfleeze Christmas Special #1",
-                      "a one-shot, collected with these issues", "larfleeze",
-                      opt=1)],
+          "these are the issues that clear up after it, and they run to the "
+          "edge of War of the Green Lanterns, which is where this list "
+          "stops.\n\nTwo things deliberately left out. The Brightest Day event "
+          "itself is a different book, about Aquaman, Firestorm and the Martian "
+          "Manhunter. And the Corps book keeps going past this point, as does "
+          "Emerald Warriors — both of them straight into the next war, which "
+          "wants a list of its own.",
+    items=gl_rows(agrees(BRIGHTEST_GL, "Green Lantern vol. 4 #53–62", "gl"))
+          + [one_shot("Green Lantern: Larfleeze Christmas Special",
+                      "never bannered with the event, and collected with these "
+                      "issues anyway", "larfleeze", opt=1, page="brightest",
+                      title="Green Lantern: Larfleeze Christmas Special",
+                      num=1)],
     links=links(("Green Lantern vol. 4", W_GL), ("The event", W_BRIGHTEST)),
 )
 
