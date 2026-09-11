@@ -239,6 +239,42 @@ h1 em{font-style:normal;color:var(--signal)}
 .tinto .tw{font-size:11.5px;color:var(--ink-3)}
 @media(max-width:560px){.tinto{position:static}}
 .uprow{display:flex;gap:14px;align-items:center;margin:6px 0 0;flex-wrap:wrap}
+
+/* ---------------------------------------------------------- the guided tour
+   The veil is four rectangles rather than one box with a hole cut in it. A
+   clip-path or a mask would be one element and one more thing to be wrong in a
+   browser we cannot test; four dimmed rects around the anchor cannot be. It
+   also means the lit area is genuinely untouched rather than merely looking it.
+   Nothing here traps anybody: the veil swallows clicks so a press cannot land
+   somewhere the tour is talking about, and Escape or the Leave button ends it. */
+.tveil{position:fixed;background:rgba(0,0,0,.55);z-index:2000;pointer-events:auto}
+:root[data-theme="dark"] .tveil{background:rgba(0,0,0,.68)}
+.tring{position:fixed;z-index:2001;pointer-events:none;border-radius:var(--radius);
+  box-shadow:0 0 0 2px var(--signal),0 0 0 7px rgba(0,0,0,.18);
+  transition:top .18s ease,left .18s ease,width .18s ease,height .18s ease}
+.tcard{position:fixed;z-index:2002;width:min(360px,calc(100vw - 24px));
+  background:var(--card);color:var(--ink);border:1px solid var(--rule-2);
+  border-radius:var(--radius);padding:15px 17px 13px;
+  box-shadow:0 18px 40px -14px rgba(0,0,0,.5)}
+.tcard h3{margin:0 0 6px;font-size:15.5px;font-weight:500;line-height:1.25}
+.tcard p{margin:0;font-size:13.5px;line-height:1.5;color:var(--ink-2)}
+.tcard .trow{display:flex;align-items:center;gap:10px;margin-top:13px}
+.tcard .tstep{font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.12em;color:var(--ink-3);margin-right:auto}
+.tcard button{font:inherit;font-size:13px;border-radius:var(--radius);
+  padding:5px 12px;cursor:pointer;border:1px solid var(--rule-2);
+  background:transparent;color:var(--ink-2)}
+.tcard button:hover{border-color:var(--ink-3);color:var(--ink)}
+.tcard button.tgo{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tcard button:focus-visible{outline:2px solid var(--steel);outline-offset:2px}
+/* CLU-384. Below 560 there is no room to float a card beside a 40px control
+   without covering the thing it points at, so it becomes a sheet along the
+   bottom and the ring above it does the pointing. */
+@media (max-width:560px){
+  .tcard{left:8px;right:8px;width:auto;bottom:8px;top:auto !important;
+    padding-bottom:calc(13px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){ .tring{transition:none} }
 .upnext{font-size:13px;color:var(--ink-2)}
 .upnext b{font-weight:500;color:var(--ink)}
 .upnext .mono{color:var(--ink-3)}
@@ -1895,7 +1931,7 @@ footer a{color:var(--steel)}
     <span class="upnext unext hide" id="upnext"></span>
     <button class="hide" id="b-random" title="Pick a random unticked entry">Pick one for me</button>
     <button class="hide" id="b-shot" type="button"
-            title="Save your strip as a picture you can send">Save as image</button>
+            title="Save your progress as a picture you can send">Share your progress</button>
     <button class="foldbtn hide" id="b-fw" type="button" style="margin-left:0"></button>
     <!-- the way back out of a fresh run, beside the way in. It is here rather
          than only in the club tile's switcher because this row is drawn in
@@ -6798,7 +6834,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '3533fcfcd147';
+const BUILD = 'dfb38cf7aee4';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -13972,6 +14008,9 @@ function renderHeader(){
   document.querySelectorAll('.tierstat').forEach((el,i)=>
     el.classList.toggle('hide', !TIERED || !TIERTOT[i+1]));
   $('striplbl').textContent = 'Each mark is one ' + UNIT.one + ', in order';
+  // the tour anchors to elements this function has just finished drawing, and
+  // it guards itself against running twice
+  try{ tourMaybe(); }catch(e){}
 
   if((PROP.rules||[]).length){
     $('rules').classList.remove('hide');
@@ -16191,10 +16230,17 @@ function icsSave(lines){
 // What it will not draw, decided before it was written because an image is the
 // one thing here that leaves and cannot be recalled:
 //
-//   * never the stacked club or group strip. That is other people's progress,
-//     exported from a control they never touched, into a file they cannot see
-//     or delete. The button is absent in that view rather than disabled, so it
-//     can never quietly export a different strip from the one on screen.
+//   * the stacked club or group strip DOES export, and it did not at first.
+//     I left it out because it puts other people's progress into a file they
+//     never touched and cannot delete, and Nathan overruled that for his own
+//     club: "maybe its possible to make an image to share with friends/clubs
+//     included?" So it ships with the part that actually worried me dialled
+//     down rather than dropped — THE PICTURE CARRIES NO NAMES. One band per
+//     person in their own colour, the club's name, and the size of it. "We are
+//     all about half way and one of us has not started" survives without naming
+//     anybody, and whoever sends it can say who is who.
+//   * it always draws WHAT IS ON SCREEN. A button in a club view that quietly
+//     exported your solo strip instead would be worse than no button at all.
 //   * never the password-gated list. Filtered on the `secret` flag, never on a
 //     slug, so renaming it cannot leak it.
 //   * never row titles, and never section labels. Nathan: "prob better to not
@@ -16203,7 +16249,18 @@ function icsSave(lines){
 //     picture carries the SHAPE of the list and none of its words.
 //   * nothing identifying you. If your name belongs on it, you are the one
 //     sending it.
-const SHOT = {w:1200, h:630, scale:2, x:104, span:992, bot:432, tall:96};
+const SHOT = {w:1200, h:630, scale:2, x:104, span:992, bot:432,
+              tall:96, tallStack:170};
+
+// A member's colour as a real value. The page writes `var(--m3)` into a style
+// attribute and the browser resolves it; a canvas cannot, and fillStyle given
+// an unresolvable string silently keeps the PREVIOUS colour — so every band
+// would have come out the same and the picture would have been quietly wrong.
+function shotMember(ci){
+  const v = getComputedStyle(document.documentElement)
+    .getPropertyValue('--m' + ((ci | 0) + 1)).trim();
+  return v || (shotInk().signal || '#C1352A');
+}
 
 function shotInk(){
   const cs = getComputedStyle(document.documentElement);
@@ -16284,21 +16341,58 @@ function drawShot(){
   g.font = '500 40px "Space Grotesk", system-ui, sans-serif';
   g.fillText(fit(PROP.title || '', W), X, 142);
 
+  // In a club the subtitle is the club, because that is what the picture is of.
+  // The list's own subtitle is already implied by the title above it.
+  const stacked = shotStacked();
+  const crew = stacked ? drawnMembers().slice()
+      .sort((a, b)=> readsOf(b).size - readsOf(a).size
+                     || a.name.localeCompare(b.name)) : [];
+  const sub = stacked && group
+    ? (group.name || 'us') + ' \u00b7 ' + crew.length
+      + (crew.length === 1 ? ' person' : ' people')
+    : String(PROP.subtitle || PROP.kind || '');
   g.fillStyle = T.ink3;
   g.font = '400 14px "IBM Plex Mono", ui-monospace, monospace';
   if('letterSpacing' in g) g.letterSpacing = '1.6px';
-  g.fillText(fit(String(PROP.subtitle || PROP.kind || '').toUpperCase(), W), X, 176);
+  g.fillText(fit(sub.toUpperCase(), W), X, 176);
   if('letterSpacing' in g) g.letterSpacing = '0px';
 
   // The WHOLE list, never the filtered view. A filter is a reading aid; the
   // caption is a statement about the list, and "12 of 20" off a filtered strip
   // would be true of nothing the person receiving it can see.
-  const n = TOTAL, nsec = DATA.length, H = SHOT.tall, BOT = SHOT.bot;
+  const n = TOTAL, nsec = DATA.length;
+  const H = stacked ? SHOT.tallStack : SHOT.tall, BOT = SHOT.bot;
   const gap = n > 120 ? 1 : 2, sep = 6;
   const room = W - (n - 1) * gap - (nsec - 1) * (sep - gap);
   const dense = n < 1 || (room / n) < 1.5;
 
-  if(!dense){
+  if(stacked && crew.length){
+    // One band per person, one under the other, rather than the overlapping
+    // layers the page draws. Overlap answers "who is furthest" at a glance on
+    // screen, where you can hover a layer; in a still picture that a stranger
+    // reads once, separate bands are the honest shape. NO NAMES — see the note
+    // at the top of this section.
+    const gb = 3;
+    const bandH = Math.max(4, (H - (crew.length - 1) * gb) / crew.length);
+    const ws = shotWidths(room, n);
+    crew.forEach((m, mi)=>{
+      const mine = readsOf(m);
+      const col = shotMember(m.ci);
+      const top = BOT - H + mi * (bandH + gb);
+      let x = X, k = 0;
+      for(let si = 0; si < nsec; si++){
+        const items = DATA[si].items;
+        for(let j = 0; j < items.length; j++){
+          const w = Math.max(ws[k], 0.6);
+          g.fillStyle = mine.has(items[j].id) ? col : T.rule;
+          g.fillRect(x, top, w, bandH);
+          x += ws[k] + gap;
+          k++;
+        }
+        x += sep - gap;
+      }
+    });
+  }else if(!dense){
     const ws = shotWidths(room, n);
     let x = X, k = 0;
     for(let si = 0; si < nsec; si++){
@@ -16349,7 +16443,9 @@ function drawShot(){
   }
 
   // Caption C, Nathan's pick. It carries the site name, so the corner mark
-  // this design originally had is gone rather than saying it twice.
+  // this design originally had is gone rather than saying it twice. In a club
+  // it still counts YOUR row — the bands above say how everyone else is doing,
+  // and a single number for six people would mean nothing.
   g.fillStyle = T.ink2;
   g.font = '400 17px "IBM Plex Mono", ui-monospace, monospace';
   g.fillText(done.size + ' of ' + n + ' ' + UNIT.many
@@ -16396,14 +16492,241 @@ async function saveShot(){
 }
 
 // Nathan's rule: do not show a control that would do nothing. An empty strip is
-// not a thing anyone sends, the gated list never leaves, and in a stacked view
-// the strip on screen is not the one this would draw.
+// not a thing anyone sends and the gated list never leaves — but a club IS
+// something to send, and the button being absent there was the bug he reported.
+// So the test is "is there anything drawn", asked of whichever strip is on
+// screen: your own ticks solo, anybody's ticks in a stack.
+function shotStacked(){
+  const s = $('strip');
+  return !s || s.classList.contains('hide');
+}
+function shotHasSomething(){
+  if(!shotStacked()) return !!(done && done.size);
+  const drawn = (typeof drawnMembers === 'function') ? drawnMembers() : [];
+  return drawn.some(m=> readsOf(m).size > 0);
+}
 function shotVisible(){
   const b = $('b-shot');
   if(!b) return;
-  const stacked = !$('strip') || $('strip').classList.contains('hide');
-  b.classList.toggle('hide',
-    !PROP || !!PROP.secret || stacked || !done || done.size === 0);
+  b.classList.toggle('hide', !PROP || !!PROP.secret || !shotHasSomething());
+}
+
+// ------------------------------------------------------------- guided tour
+// CLU-380/381/382/384. Five things about clubd that cannot be discovered by
+// looking at it, and nothing else — the project note is explicit that a tour
+// which narrates the obvious is worse than no tour.
+//
+// VERSION-GATED, not first-run-gated. Nathan: "It's okay to push it out to all
+// members for now because the site changes so much." That is an explicit
+// acceptance that existing members see it again, and it decides the shape:
+// bumping TOURVER re-shows it to everybody once, the same way SYNCVER works.
+//
+// TOURAUTO is the switch that makes that real. It is FALSE on this commit, so
+// the tour exists and nobody is shown it — the words are new copy in Nathan's
+// voice and go to him before they go to anyone. `?tour=1` walks it on demand,
+// because a tour is a thing you try rather than a thing you read.
+const TOURVER = 1;
+const TOURAUTO = false;
+const TOURKEY = 'gw:tour';
+let tourAt = 0, tourOn = false, tourDone = false, tourReturn = null;
+
+function tourSeen(){
+  try{ return parseInt(localStorage.getItem(TOURKEY) || '0', 10) || 0; }
+  catch(e){ return TOURVER; }   // storage refused: behave as though it ran
+}
+function tourMark(){
+  try{ localStorage.setItem(TOURKEY, String(TOURVER)); }catch(e){}
+}
+
+// A step names a real element or it does not run. The project's rule: "never
+// point at something that is not there" — a step whose anchor is missing skips
+// itself silently rather than spotlighting empty space. The club tile is the
+// one that genuinely may be absent, and a stranger with no account should not
+// be shown a box that is not on their screen.
+function tourSteps(){
+  const rows = document.querySelectorAll('#list li');
+  return [
+    {el: ()=> $('strip'),
+     t: 'This bar is you',
+     b: 'One mark per ' + UNIT.one + ', in the order they are listed. It is not a'
+        + ' progress bar — it keeps your gaps, so the shape of it is the shape of'
+        + ' what you have actually ' + (VERB.past || 'done') + '. Touch a mark to'
+        + ' see which one it is.'},
+    {el: ()=> rows[0] || null,
+     t: 'A tick travels',
+     b: 'One film can sit on six different lists here. Tick it once and it is'
+        + ' ticked on all of them, so you never have to remember where else you'
+        + ' saw it.'},
+    {el: ()=> $('gpanel'),
+     t: 'A group is not a club',
+     b: 'A group is the people you compare with across everything you track —'
+        + ' standing, quiet, every list at once. A club is a few people watching'
+        + ' this one thing together, and only a club can have a schedule. Both'
+        + ' live behind this tile.'},
+    {el: ()=> rows[Math.min(5, rows.length - 1)] || null,
+     t: 'Catching up',
+     b: 'Nobody ticks forty boxes one at a time. Point at a row — or tap it on a'
+        + ' phone — and it offers to mark everything up to and including it.'},
+    {el: ()=> $('b-prop'),
+     t: 'Everything else is in here',
+     b: browseList().length + ' more lists. Start typing and it searches every'
+        + ' one of them, and the rows inside them too.'}
+  ];
+}
+
+function tourBox(el){
+  const r = el.getBoundingClientRect();
+  // a zero-sized element is not on screen in any useful sense, and neither is
+  // one scrolled entirely out of it — both mean "not there" for the rule that
+  // a step never points at something that is not there
+  if(!(r.width > 0 && r.height > 0)) return null;
+  if(r.bottom <= 0 || r.top >= innerHeight) return null;
+  // a little air, clamped to the viewport so the ring never sits off-screen
+  const pad = 6;
+  return {x: Math.max(0, r.left - pad), y: Math.max(0, r.top - pad),
+          w: Math.min(innerWidth, r.right + pad) - Math.max(0, r.left - pad),
+          h: Math.min(innerHeight, r.bottom + pad) - Math.max(0, r.top - pad)};
+}
+
+function tourPaint(){
+  if(!tourOn) return;
+  const steps = tourSteps(), s = steps[tourAt];
+  const el = s && s.el();
+  // An anchor below the fold cannot be spotlighted where it is not, and the
+  // first version of this measured it anyway: a rect entirely above the
+  // viewport gave a negative height, which put the card off the top of the
+  // screen with its buttons unreachable. The QA check caught it as "element is
+  // outside of the viewport" on the second step. So the step scrolls to its
+  // own anchor first and measures afterwards.
+  if(el && el.scrollIntoView){
+    const r0 = el.getBoundingClientRect();
+    if(r0.bottom < 60 || r0.top > innerHeight - 60){
+      try{ el.scrollIntoView({block: 'center', inline: 'nearest'}); }catch(e){}
+    }
+  }
+  const box = el ? tourBox(el) : null;
+  if(!box){ tourNext(); return; }      // anchor gone: skip, silently
+  const set = (id, x, y, w, h)=>{
+    const v = $(id);
+    if(!v) return;
+    v.style.left = x + 'px'; v.style.top = y + 'px';
+    v.style.width = Math.max(0, w) + 'px'; v.style.height = Math.max(0, h) + 'px';
+  };
+  set('tv-t', 0, 0, innerWidth, box.y);
+  set('tv-b', 0, box.y + box.h, innerWidth, innerHeight - (box.y + box.h));
+  set('tv-l', 0, box.y, box.x, box.h);
+  set('tv-r', box.x + box.w, box.y, innerWidth - (box.x + box.w), box.h);
+  set('tring', box.x, box.y, box.w, box.h);
+
+  const card = $('tcard');
+  $('tcard-t').textContent = s.t;
+  $('tcard-b').textContent = s.b;
+  $('tcard-n').textContent = (tourAt + 1) + ' / ' + steps.length;
+  $('tcard-go').textContent = tourAt === steps.length - 1 ? 'Done' : 'Next';
+  // the sheet layout owns its own position under 560px; above it the card sits
+  // below the anchor, or above it when that would fall off the bottom
+  if(innerWidth > 560){
+    const cw = card.offsetWidth || 360, ch = card.offsetHeight || 150;
+    let x = Math.min(Math.max(10, box.x), innerWidth - cw - 10);
+    let y = box.y + box.h + 12;
+    if(y + ch > innerHeight - 10) y = box.y - ch - 12;
+    // clamped last, unconditionally: both branches above can fall off an edge
+    // when the anchor is tall or the viewport is short, and a card whose
+    // buttons are off screen is the trap this thing must never be
+    y = Math.max(10, Math.min(y, innerHeight - ch - 10));
+    card.style.left = x + 'px';
+    card.style.top = y + 'px';
+    card.style.bottom = 'auto';
+  }else{
+    card.style.left = ''; card.style.top = ''; card.style.bottom = '';
+  }
+}
+
+function tourNext(){
+  const steps = tourSteps();
+  tourAt += 1;
+  if(tourAt >= steps.length){ tourEnd(); return; }
+  tourPaint();
+}
+
+function tourEnd(){
+  if(!tourOn) return;
+  tourOn = false;
+  tourMark();
+  ['tv-t','tv-b','tv-l','tv-r','tring','tcard'].forEach(id=>{
+    const el = $(id);
+    if(el) el.remove();
+  });
+  removeEventListener('resize', tourPaint);
+  removeEventListener('scroll', tourPaint, true);
+  removeEventListener('keydown', tourKey, true);
+  // put focus back where it was, or the page loses it to <body> and the next
+  // Tab starts from the top of the document
+  try{ if(tourReturn && tourReturn.focus) tourReturn.focus(); }catch(e){}
+  tourReturn = null;
+}
+
+function tourKey(e){
+  if(!tourOn) return;
+  if(e.key === 'Escape'){ e.preventDefault(); e.stopPropagation(); tourEnd(); return; }
+  if(e.key !== 'Tab') return;
+  // a two-button card, so the trap is small and exact: Tab cycles between them
+  // and nothing outside the card can take focus while the veil is up
+  const btns = [$('tcard-skip'), $('tcard-go')].filter(Boolean);
+  if(!btns.length) return;
+  const first = btns[0], last = btns[btns.length - 1];
+  if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+  else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+}
+
+function tourStart(){
+  if(tourOn) return;
+  const steps = tourSteps();
+  if(!steps.some(s=> s.el())) return;   // nothing real to point at
+  tourOn = true; tourAt = 0;
+  tourReturn = document.activeElement;
+  const mk = (id, cls)=>{
+    const d = document.createElement('div');
+    d.id = id; d.className = cls;
+    document.body.appendChild(d);
+    return d;
+  };
+  ['tv-t','tv-b','tv-l','tv-r'].forEach(id=> mk(id, 'tveil'));
+  mk('tring', 'tring');
+  const card = mk('tcard', 'tcard');
+  card.setAttribute('role', 'dialog');
+  card.setAttribute('aria-modal', 'true');
+  card.setAttribute('aria-labelledby', 'tcard-t');
+  card.innerHTML =
+      '<h3 id="tcard-t"></h3><p id="tcard-b"></p>'
+    + '<div class="trow"><span class="tstep" id="tcard-n"></span>'
+    + '<button type="button" id="tcard-skip">Leave the tour</button>'
+    + '<button type="button" class="tgo" id="tcard-go">Next</button></div>';
+  // Leaving is one press and it is the same size and shape as continuing.
+  // "Never trap someone" is the project's first rule for this thing.
+  $('tcard-skip').onclick = tourEnd;
+  $('tcard-go').onclick = tourNext;
+  addEventListener('resize', tourPaint);
+  addEventListener('scroll', tourPaint, true);
+  addEventListener('keydown', tourKey, true);
+  tourPaint();
+  try{ $('tcard-go').focus(); }catch(e){}
+}
+
+// Who sees it, and when (CLU-382).
+function tourMaybe(){
+  if(tourDone) return;
+  tourDone = true;
+  const q = new URLSearchParams(location.search);
+  // asked for explicitly: always runs, and does not count as having been shown
+  if(q.get('tour') === '1'){ setTimeout(tourStart, 250); return; }
+  if(!TOURAUTO) return;
+  if(tourSeen() >= TOURVER) return;
+  // ⚠ Never on a shared link. Someone opening a friend's list is answering an
+  // invitation, not starting a product, and a tour over an arrival splash would
+  // talk across the one thing they came here to do.
+  for(const k in ARRIVALS){ if(q.get(ARRIVALS[k].param)) return; }
+  setTimeout(tourStart, 400);
 }
 
 // The solo strip, separately from build() so a filter toggle can redraw the
