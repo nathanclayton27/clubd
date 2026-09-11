@@ -1,0 +1,227 @@
+{
+  "slug": "expanse",
+  "title": "The Expanse",
+  "subtitle": "the novels and the seasons in one chronology",
+  "kind": "books & tv",
+  "popularity": 61,
+  "year": "2011–2022",
+  "blurb": "James S. A. Corey's nine novels, the nine short works and the six television seasons in one order, by the date each one arrived.",
+  "unit": {
+    "one": "entry",
+    "many": "entries"
+  },
+  "verb": {
+    "base": "read and watch",
+    "past": "done",
+    "ing": "working through"
+  },
+  "accent": "#0F3A5C",
+  "accentDark": "#FB7B0E",
+  "tiers": false,
+  "notes": [
+    [
+      "One list, two strands.",
+      "The nine novels and the six seasons are the spine, ordered by the day each arrived: a book by its publication date, a season by its premiere. Nothing is moved to sit an adaptation next to the book it adapts, which is the whole point — the weave is what the order shows."
+    ],
+    [
+      "The show stops partway through the books.",
+      "Six seasons were made and Amazon announced the sixth as the last. Each season's final episode is named for the novel it lands on, and the sixth of those names is Babylon's Ashes — book six of nine. Persepolis Rising, Tiamat's Wrath and Leviathan Falls have never been filmed, so the last three novel rows here say nothing beyond what they are. The authors have called season six a pause rather than a conclusion."
+    ],
+    [
+      "The short works are optional rows, and here is the rule.",
+      "A short work is here if the series article's own table numbers it — nine of them, 0.1 through 9.5, which that table's typography splits into seven novellas and two short stories. Each row says where the source sets it, because publication order is not story order: Drive came out a year and a half after Leviathan Wakes and is set before it. Memory's Legion is not a row — it is those works in one box, and the table gives it no number for that reason. The Last Flight of the Cassandra is the awkward one and it is here anyway: five pages, published only inside the role-playing game's rulebook, the only short work with no audiobook. All nine are optional, so the list is finished without them."
+    ],
+    [
+      "It changed channels halfway.",
+      "Syfy cancelled the show after three seasons on May 11, 2018, and Amazon announced a fourth on May 26, so the rows change network at season four and the release pattern changes with it. Nothing about the order changes."
+    ],
+    [
+      "Nothing is weighted, and this is what was checked.",
+      "Rows count one apiece. The books publish pages and audiobook lengths, every one of them except the rulebook short story, and the show publishes nothing per episode: no episode block in any of the six seasons carries a running time, and the only figure the series states is a 42–63-minute range for the whole run. Weights are all-or-nothing — a row without one silently counts as an hour — and a season and a novel are not the same sitting in any case, so the page counts sit in the row notes and the home page's hour bar leaves this list alone. The build re-reads every episode block each run and fails if runtimes start appearing."
+    ],
+    [
+      "Not here.",
+      "The Dragon Tooth comics, twelve issues announced in January 2023 and set between Babylon's Ashes and Persepolis Rising. The five One Ship webisodes that shipped alongside season six inside Prime Video's X-Ray menu. The board game, the role-playing game and the video games. This list is the prose and the show."
+    ],
+    "Novels and short works — number, title, pages, audiobook length, publication date and the setting each one is filed under — machine-read from the two tables in Wikipedia's The Expanse (novel series), with the article's own infobox list of the nine novels read as a second check on the titles and years. Episode counts, premiere and finale dates, networks and the sentence saying what each season adapts from List of The Expanse episodes, every one cross-checked against that article's Series overview and against the show article's own 6 seasons and 62 episodes. Each season finale's title is asserted against the novel it shares a name with before this builds."
+  ],
+  "sections": [
+    {
+      "id": "before",
+      "title": "Before the show",
+      "sub": "2011–2015 · 10 entries",
+      "intro": "Four and a half years of books, and nothing to watch yet.",
+      "items": [
+        {
+          "id": "ex-n1-leviathan-wakes",
+          "t": "Leviathan Wakes",
+          "n": "June 2011",
+          "note": "Novel 1 of 9 · 561 pages"
+        },
+        {
+          "id": "ex-s0-7-the-butcher-of-anderson-station",
+          "t": "The Butcher of Anderson Station",
+          "n": "October 2011",
+          "opt": 1,
+          "note": "Novella · 40 pages · set before Leviathan Wakes"
+        },
+        {
+          "id": "ex-n2-caliban-s-war",
+          "t": "Caliban's War",
+          "n": "June 2012",
+          "note": "Novel 2 of 9 · 595 pages"
+        },
+        {
+          "id": "ex-s2-5-gods-of-risk",
+          "t": "Gods of Risk",
+          "n": "September 2012",
+          "opt": 1,
+          "note": "Novella · 75 pages · set between Caliban's War and Abaddon's Gate"
+        },
+        {
+          "id": "ex-s0-1-drive",
+          "t": "Drive",
+          "n": "November 2012",
+          "opt": 1,
+          "note": "Short story · 25 pages · set before Leviathan Wakes"
+        },
+        {
+          "id": "ex-n3-abaddon-s-gate",
+          "t": "Abaddon's Gate",
+          "n": "June 2013",
+          "note": "Novel 3 of 9 · 539 pages"
+        },
+        {
+          "id": "ex-s0-5-the-churn",
+          "t": "The Churn",
+          "n": "April 2014",
+          "opt": 1,
+          "note": "Novella · 75 pages · set before Leviathan Wakes"
+        },
+        {
+          "id": "ex-n4-cibola-burn",
+          "t": "Cibola Burn",
+          "n": "June 2014",
+          "note": "Novel 4 of 9 · 583 pages"
+        },
+        {
+          "id": "ex-n5-nemesis-games",
+          "t": "Nemesis Games",
+          "n": "June 2015",
+          "note": "Novel 5 of 9 · 544 pages"
+        },
+        {
+          "id": "ex-s3-5-the-vital-abyss",
+          "t": "The Vital Abyss",
+          "n": "October 2015",
+          "opt": 1,
+          "note": "Novella · 74 pages · set from before Leviathan Wakes to Cibola Burn"
+        }
+      ],
+      "open": true
+    },
+    {
+      "id": "both",
+      "title": "Both strands at once",
+      "sub": "2015–2021 · 13 entries",
+      "intro": "From the December 2015 premiere the books and the show run side by side, and each row sits on the date it arrived — a season on the day it started, a book on the day it was published.",
+      "items": [
+        {
+          "id": "ex-tv1",
+          "t": "The Expanse — Season 1",
+          "n": "December 2015",
+          "note": "10 episodes on Syfy · December 14, 2015 to February 2, 2016 · Adapts the first half of Leviathan Wakes"
+        },
+        {
+          "id": "ex-n6-babylon-s-ashes",
+          "t": "Babylon's Ashes",
+          "n": "December 2016",
+          "note": "Novel 6 of 9 · 608 pages"
+        },
+        {
+          "id": "ex-tv2",
+          "t": "The Expanse — Season 2",
+          "n": "February 2017",
+          "note": "13 episodes on Syfy · February 1, 2017 to April 19, 2017 · Finishes Leviathan Wakes and opens Caliban's War, and adapts the short story Drive"
+        },
+        {
+          "id": "ex-s6-5-strange-dogs",
+          "t": "Strange Dogs",
+          "n": "July 2017",
+          "opt": 1,
+          "note": "Novella · 64 pages · set between Babylon's Ashes and Persepolis Rising"
+        },
+        {
+          "id": "ex-n7-persepolis-rising",
+          "t": "Persepolis Rising",
+          "n": "December 2017",
+          "note": "Novel 7 of 9 · 560 pages"
+        },
+        {
+          "id": "ex-tv3",
+          "t": "The Expanse — Season 3",
+          "n": "April 2018",
+          "note": "13 episodes on Syfy · April 11, 2018 to June 27, 2018 · Finishes Caliban's War over six episodes, then Abaddon's Gate"
+        },
+        {
+          "id": "ex-n8-tiamat-s-wrath",
+          "t": "Tiamat's Wrath",
+          "n": "March 2019",
+          "note": "Novel 8 of 9 · 544 pages"
+        },
+        {
+          "id": "ex-s1-5-the-last-flight-of-the-cassandra",
+          "t": "The Last Flight of the Cassandra",
+          "n": "May 2019",
+          "opt": 1,
+          "note": "Short story · 5 pages · set during Leviathan Wakes · Published only inside The Expanse Role-Playing Game rulebook, and the one short work with no audiobook"
+        },
+        {
+          "id": "ex-s7-5-auberon",
+          "t": "Auberon",
+          "n": "November 2019",
+          "opt": 1,
+          "note": "Novella · 63 pages · set between Persepolis Rising and Tiamat's Wrath"
+        },
+        {
+          "id": "ex-tv4",
+          "t": "The Expanse — Season 4",
+          "n": "December 2019",
+          "note": "10 episodes on Amazon Prime Video · December 12, 2019, released all at once · Almost all of Cibola Burn, with Gods of Risk behind episode 2"
+        },
+        {
+          "id": "ex-tv5",
+          "t": "The Expanse — Season 5",
+          "n": "December 2020",
+          "note": "10 episodes on Amazon Prime Video · December 15, 2020 to February 2, 2021 · Adapts Nemesis Games"
+        },
+        {
+          "id": "ex-n9-leviathan-falls",
+          "t": "Leviathan Falls",
+          "n": "November 2021",
+          "note": "Novel 9 of 9 · 528 pages"
+        },
+        {
+          "id": "ex-tv6",
+          "t": "The Expanse — Season 6",
+          "n": "December 2021",
+          "note": "6 episodes on Amazon Prime Video · December 10, 2021 to January 14, 2022 · The last season — Babylon's Ashes, with the short story Strange Dogs"
+        }
+      ]
+    },
+    {
+      "id": "after",
+      "title": "After the show",
+      "sub": "2022 · 1 entry",
+      "items": [
+        {
+          "id": "ex-s9-5-the-sins-of-our-fathers",
+          "t": "The Sins of Our Fathers",
+          "n": "March 2022",
+          "opt": 1,
+          "note": "Novella · 64 pages · set after Leviathan Falls"
+        }
+      ]
+    }
+  ]
+}

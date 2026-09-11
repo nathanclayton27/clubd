@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-211 lists, from a ten-episode anime to a 1,418-row film collection, a
+212 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
@@ -140,7 +140,10 @@ adventures), *Agatha Christie* (all 74 novels split into Poirot, Marple and
 everything else, the short-story collections optional), the *D&D novels* (Dragonlance and the Legend of Drizzt, gated on Wikipedia's own history of the fiction rather than on taste), *the Foundation
 universe* (Asimov's Foundation, Robot and Empire novels in the order he
 published them, with the chronological order as a note rather than a
-second list), and *Middle-earth* — books plus Jackson's six films. Comics:
+second list), and *Middle-earth* — books plus Jackson's six films. *The
+Expanse* weaves the nine novels and the six television seasons into one date
+order, a book on the day it was published and a season on the day it started,
+with the nine short works optional alongside. Comics:
 *The Sandman* issue by issue through its ten volumes, Death and Overture
 included, the *Vertigo shelf* (Preacher, Transmetropolitan and Y: The Last
 Man, one row per collected volume), *Batman* as 35 finite stories gated on
