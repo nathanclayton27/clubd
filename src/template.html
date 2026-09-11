@@ -11816,6 +11816,7 @@ const TOURVER = 1;
 const TOURAUTO = false;
 const TOURKEY = 'gw:tour';
 let tourAt = 0, tourOn = false, tourDone = false, tourReturn = null;
+let tourList = [];
 
 function tourSeen(){
   try{ return parseInt(localStorage.getItem(TOURKEY) || '0', 10) || 0; }
@@ -11831,7 +11832,15 @@ function tourMark(){
 // one that genuinely may be absent, and a stranger with no account should not
 // be shown a box that is not on their screen.
 function tourSteps(){
-  const rows = document.querySelectorAll('#list li');
+  // VISIBLE rows only. A list's sections are <details>, and a collapsed one's
+  // rows still answer getClientRects() and still have an offsetParent while
+  // being genuinely unreadable — measured on hickman-secret-wars, where every
+  // section is shut and both row steps were pointing into a closed box. If a
+  // list has no row on screen at all, those two steps have nothing honest to
+  // point at and drop out; the counter counts what is left, so nobody is shown
+  // "1 / 5" followed by "3 / 5".
+  const rows = [].slice.call(document.querySelectorAll('#list li'))
+    .filter(tourVisible);
   return [
     {el: ()=> $('strip'),
      t: 'This bar is you',
@@ -11841,9 +11850,14 @@ function tourSteps(){
         + ' see which one it is.'},
     {el: ()=> rows[0] || null,
      t: 'A tick travels',
-     b: 'One film can sit on six different lists here. Tick it once and it is'
-        + ' ticked on all of them, so you never have to remember where else you'
-        + ' saw it.'},
+     // Nathan: "wording here makes no sense for the wire since its a show."
+     // It said "film" on every list. Every list already declares its own noun
+     // and its own verb, so the panel borrows them rather than guessing — and
+     // that is also why five tours per medium are not needed: the mechanics
+     // being taught are identical, only the word for "thing" differs.
+     b: 'One ' + UNIT.one + ' can sit on more than one list here. Tick it once'
+        + ' and it is ticked on all of them, so you never have to remember where'
+        + ' else you ' + (VERB.past || 'saw') + ' it.'},
     {el: ()=> $('gpanel'),
      t: 'A group is not a club',
      b: 'A group is the people you compare with across everything you track —'
@@ -11861,38 +11875,71 @@ function tourSteps(){
   ];
 }
 
+// Is this element actually rendered? Asked separately from measuring it,
+// because the two are not the same question and conflating them is what made
+// the tour skip real steps.
+function tourVisible(el){
+  if(!el || !el.isConnected) return false;
+  if(el.checkVisibility) { try{ return el.checkVisibility(); }catch(e){} }
+  return !!(el.offsetParent || el.getClientRects().length);
+}
+
+// The element's own rectangle, with the stale-read guard — and nothing about
+// the viewport. Kept separate from tourBox because "can this be measured" and
+// "is this on screen right now" are different questions, and answering them
+// with one function is what made the tour skip steps that were merely scrolled
+// away.
+function tourRect(el){
+  let r = el.getBoundingClientRect();
+  // ⚠ ONE READ IS NOT AN ANSWER. Measured on hickman-secret-wars: the first
+  // getBoundingClientRect() on a list row returned all zeros and an immediate
+  // second read on the same element in the same tick returned
+  // {top:1356, width:858, height:31}. The first lands before layout has been
+  // flushed for that subtree. Taking the zero as truth is what made the tour
+  // skip steps 2 and 4 — Nathan: "it skipped #1 to #3 then when I pressed next
+  // it immediately went to #5. major bug." So a zero-sized rect forces layout
+  // and asks again before it is allowed to mean anything.
+  if(!(r.width > 0 && r.height > 0)){
+    void el.offsetWidth;
+    r = el.getBoundingClientRect();
+  }
+  return (r.width > 0 && r.height > 0) ? r : null;
+}
+
+// The lit rectangle, clamped to the viewport. Null when the anchor is not on
+// screen — which is a statement about the scroll position, NOT about whether
+// the step is usable. tourPaint scrolls first and asks this afterwards.
 function tourBox(el){
-  const r = el.getBoundingClientRect();
-  // a zero-sized element is not on screen in any useful sense, and neither is
-  // one scrolled entirely out of it — both mean "not there" for the rule that
-  // a step never points at something that is not there
-  if(!(r.width > 0 && r.height > 0)) return null;
-  if(r.bottom <= 0 || r.top >= innerHeight) return null;
-  // a little air, clamped to the viewport so the ring never sits off-screen
+  const r = tourRect(el);
+  if(!r) return null;
+  // a little air, clamped to the viewport so the ring never sits off-screen.
+  // ⚠ The clamp can produce a NEGATIVE width or height for an element entirely
+  // outside the viewport — measured at -450 and -605 on rows below the fold —
+  // and the old version returned that as a box, which would have drawn a ring
+  // inside out. A box that did not survive the clamp is no box.
   const pad = 6;
-  return {x: Math.max(0, r.left - pad), y: Math.max(0, r.top - pad),
-          w: Math.min(innerWidth, r.right + pad) - Math.max(0, r.left - pad),
-          h: Math.min(innerHeight, r.bottom + pad) - Math.max(0, r.top - pad)};
+  const x = Math.max(0, r.left - pad), y = Math.max(0, r.top - pad);
+  const w = Math.min(innerWidth, r.right + pad) - x;
+  const h = Math.min(innerHeight, r.bottom + pad) - y;
+  if(!(w > 0 && h > 0)) return null;
+  return {x: x, y: y, w: w, h: h};
 }
 
 function tourPaint(){
   if(!tourOn) return;
-  const steps = tourSteps(), s = steps[tourAt];
+  const s = tourList[tourAt];
   const el = s && s.el();
-  // An anchor below the fold cannot be spotlighted where it is not, and the
-  // first version of this measured it anyway: a rect entirely above the
-  // viewport gave a negative height, which put the card off the top of the
-  // screen with its buttons unreachable. The QA check caught it as "element is
-  // outside of the viewport" on the second step. So the step scrolls to its
-  // own anchor first and measures afterwards.
-  if(el && el.scrollIntoView){
-    const r0 = el.getBoundingClientRect();
-    if(r0.bottom < 60 || r0.top > innerHeight - 60){
-      try{ el.scrollIntoView({block: 'center', inline: 'nearest'}); }catch(e){}
-    }
+  // An anchor below the fold cannot be spotlighted where it is not, so the step
+  // scrolls to its own anchor first and measures afterwards. The measurement
+  // before this scroll is the one that must not be trusted when it reads zero —
+  // see tourBox.
+  const raw = el ? tourRect(el) : null;
+  if(raw && el.scrollIntoView
+     && (raw.bottom < 60 || raw.top > innerHeight - 60)){
+    try{ el.scrollIntoView({block: 'center', inline: 'nearest'}); }catch(e){}
   }
   const box = el ? tourBox(el) : null;
-  if(!box){ tourNext(); return; }      // anchor gone: skip, silently
+  if(!box){ tourGo(1); return; }       // it went away mid-tour: skip, silently
   const set = (id, x, y, w, h)=>{
     const v = $(id);
     if(!v) return;
@@ -11908,8 +11955,13 @@ function tourPaint(){
   const card = $('tcard');
   $('tcard-t').textContent = s.t;
   $('tcard-b').textContent = s.b;
-  $('tcard-n').textContent = (tourAt + 1) + ' / ' + steps.length;
-  $('tcard-go').textContent = tourAt === steps.length - 1 ? 'Done' : 'Next';
+  // counted over the steps that will actually be SHOWN, worked out once at the
+  // start. Counting the declared five while skipping two of them is how a tour
+  // says "1 / 5" and then "3 / 5" at somebody.
+  $('tcard-n').textContent = (tourAt + 1) + ' / ' + tourList.length;
+  $('tcard-go').textContent = tourAt === tourList.length - 1 ? 'Done' : 'Next';
+  const back = $('tcard-back');
+  if(back) back.classList.toggle('hide', tourAt === 0);
   // the sheet layout owns its own position under 560px; above it the card sits
   // below the anchor, or above it when that would fall off the bottom
   if(innerWidth > 560){
@@ -11929,12 +11981,21 @@ function tourPaint(){
   }
 }
 
-function tourNext(){
-  const steps = tourSteps();
-  tourAt += 1;
-  if(tourAt >= steps.length){ tourEnd(); return; }
-  tourPaint();
+// One mover, both directions, so Back cannot develop its own idea of what a
+// skipped step is.
+function tourGo(dir){
+  let i = tourAt + dir;
+  while(i >= 0 && i < tourList.length){
+    const el = tourList[i].el();
+    if(tourVisible(el) && tourRect(el)){ tourAt = i; tourPaint(); return; }
+    i += dir;
+  }
+  // forwards off the end is the end; backwards off the front stays put, because
+  // Back on the first step should do nothing rather than close the tour
+  if(dir > 0) tourEnd();
 }
+function tourNext(){ tourGo(1); }
+function tourBack(){ tourGo(-1); }
 
 function tourEnd(){
   if(!tourOn) return;
@@ -11944,6 +12005,7 @@ function tourEnd(){
     const el = $(id);
     if(el) el.remove();
   });
+  tourList = [];
   removeEventListener('resize', tourPaint);
   removeEventListener('scroll', tourPaint, true);
   removeEventListener('keydown', tourKey, true);
@@ -11959,7 +12021,8 @@ function tourKey(e){
   if(e.key !== 'Tab') return;
   // a two-button card, so the trap is small and exact: Tab cycles between them
   // and nothing outside the card can take focus while the veil is up
-  const btns = [$('tcard-skip'), $('tcard-go')].filter(Boolean);
+  const btns = [$('tcard-back'), $('tcard-skip'), $('tcard-go')]
+    .filter(b=> b && !b.classList.contains('hide'));
   if(!btns.length) return;
   const first = btns[0], last = btns[btns.length - 1];
   if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
@@ -11968,8 +12031,17 @@ function tourKey(e){
 
 function tourStart(){
   if(tourOn) return;
-  const steps = tourSteps();
-  if(!steps.some(s=> s.el())) return;   // nothing real to point at
+  // The usable steps are settled ONCE, here. A step is usable if its anchor is
+  // rendered and can be measured — and tourBox is what knows that a single
+  // zero-sized read means nothing.
+  tourList = tourSteps().filter(s=>{
+    const el = s.el();
+    // measurable and rendered — NOT "currently on screen". An earlier version
+    // scrolled here to find out, which moved the page under every step that had
+    // already been checked and made the tour open on step 2.
+    return tourVisible(el) && !!tourRect(el);
+  });
+  if(!tourList.length) return;          // nothing real to point at
   tourOn = true; tourAt = 0;
   tourReturn = document.activeElement;
   const mk = (id, cls)=>{
@@ -11987,12 +12059,14 @@ function tourStart(){
   card.innerHTML =
       '<h3 id="tcard-t"></h3><p id="tcard-b"></p>'
     + '<div class="trow"><span class="tstep" id="tcard-n"></span>'
+    + '<button type="button" id="tcard-back" class="hide">Back</button>'
     + '<button type="button" id="tcard-skip">Leave the tour</button>'
     + '<button type="button" class="tgo" id="tcard-go">Next</button></div>';
   // Leaving is one press and it is the same size and shape as continuing.
   // "Never trap someone" is the project's first rule for this thing.
   $('tcard-skip').onclick = tourEnd;
   $('tcard-go').onclick = tourNext;
+  $('tcard-back').onclick = tourBack;
   addEventListener('resize', tourPaint);
   addEventListener('scroll', tourPaint, true);
   addEventListener('keydown', tourKey, true);
