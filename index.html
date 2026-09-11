@@ -6898,7 +6898,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'b8755acc8d9c';
+const BUILD = 'ceecd53b0784';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -8595,12 +8595,27 @@ function paintThumbs(){
 // the event log, the cross-list sync and the cloud write cannot drift from
 // what an ordinary tick does. Clearing a thumb never unticks — taking an
 // opinion back is not saying you did not watch it.
+//
+// ⚠ EXCEPT ON A DOOR. Nathan: "thumbing a director made it so it marked all
+// the items as seen." A row carrying `into` is not a sitting — it is a whole
+// list — and ticking it rolls DOWN, so one thumb on Kurosawa marked all thirty
+// of his films watched. Measured before the fix: gw:v1:kurosawa went 0 -> 30
+// rows on a single press.
+//
+// The rule the auto-tick rests on is "if you have an opinion about it you have
+// seen it", and that holds for one film. It does not survive being scaled up to
+// a filmography: having an opinion about a director is not a claim to have seen
+// everything they made, and the roll-down turns it into exactly that claim —
+// silently, in a namespace the reader is not even looking at.
+//
+// So a door takes the thumb and nothing else. The opinion is recorded; the
+// ticking is left to the person.
 function setThumb(id, dir, li){
   if(THUMBS.items[id] === dir) delete THUMBS.items[id];
   else THUMBS.items[id] = dir;
   writeThumbs();
   const now = THUMBS.items[id] || null;
-  if(now && li && !done.has(id)){
+  if(now && li && !done.has(id) && !INTO[id]){
     const box = li.querySelector('input[type=checkbox]');
     if(box) box.click();
   }
