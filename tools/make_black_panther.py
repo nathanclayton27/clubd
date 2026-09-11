@@ -227,13 +227,17 @@ def rng(a, b):
 
 # --------------------------------------------------------------- the notes --
 
-N_EARLY = {
+N_CAP = {
     "97": "Captain America's feature, three issues before the book was renamed",
     "100": "Tales of Suspense becomes Captain America here",
+}
+# Keyed per title on purpose: Avengers #52 and Daredevil #52 are different
+# issues, and one shared dict put the Avengers note on both of them.
+N_AVN = {
     "52": "T'Challa joins the Avengers",
     "62": "Reprinted four years later as Jungle Action #5 — his first starring feature",
-    "69": "Reprinted mid-arc as Jungle Action #23",
 }
+N_DD = {"69": "Reprinted mid-arc as Jungle Action #23"}
 N_RAGE = {
     "6": "“Panther's Rage” begins — McGregor, Buckler and Billy Graham",
     "14": "The chapters get longer here, 18 to 19 pages",
@@ -308,11 +312,11 @@ def sections():
                    ("Daredevil", "daredevil_1964_1998"),
                    ("Tales of Suspense", "tales_of_suspense_1959_1968"),
                    ("Astonishing Tales", "astonishing_tales_1970")),
-        "items": (rows("tos", rng(97, 99), N_EARLY)
-                  + rows("cap", ["100"], N_EARLY)
+        "items": (rows("tos", rng(97, 99), N_CAP)
+                  + rows("cap", ["100"], N_CAP)
                   + rows("avn", ["52", "62", "73", "74", "77", "78", "79",
-                                 "87", "112", "126"], N_EARLY, {"52": 1})
-                  + rows("dd", ["52", "69"], N_EARLY)
+                                 "87", "112", "126"], N_AVN, {"52": 1})
+                  + rows("dd", ["52", "69"], N_DD)
                   + rows("ddan", ["4"])
                   + rows("mtu", ["20"])
                   + rows("ast", ["6", "7"])),
@@ -636,9 +640,8 @@ def sections():
         "sub": "2021–2023 — fifteen issues, and it is a spy story",
         "tier": 2,
         "intro": (
-            "Ridley's run is espionage: what a king with an intelligence service "
-            "does with it, and what it costs him when the file gets out. Juann Cabal "
-            "draws the first arc.\n\n"
+            "Ridley's run is espionage: a king with an intelligence service, and "
+            "what he has been using it for. Juann Cabal draws the first arc.\n\n"
             "It follows Coates directly and reads better for it."),
         "links": L(("Black Panther (2021)", "black_panther_2021_2023")),
         "items": rows("bp8", rng(1, 15), N_RIDLEY),
