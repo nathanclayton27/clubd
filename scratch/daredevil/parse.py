@@ -116,12 +116,27 @@ def main():
         if not r["writers"]and not r["reprints"]:
             continue  # redirect stubs for legacy numbering carry no credits
         keep.append(r)
+    vols = {}
+    for title, v in json.loads(
+            (HERE / "volumes.json").read_text(encoding="utf-8")).items():
+        if title not in KEEP:
+            continue
+        vols[title] = {
+            "url": v["url"],
+            "publisher": clean(field(v["wikitext"], "publisher")),
+            "years": clean(field(v["wikitext"], "years_published")),
+        }
+    assert set(vols) == set(KEEP), \
+        "volume pages missing: %s" % sorted(set(KEEP) - set(vols))
+
     out = {
         "source": "Marvel Database (marvel.fandom.com), read through api.php: "
                   "list=allpages for each volume's issue pages, then "
-                  "prop=revisions for each page's Comic Template infobox.",
+                  "prop=revisions for each page's Comic Template infobox, and "
+                  "prop=revisions|info for the volume pages themselves.",
         "fetched": "2026-09-11",
         "harvester": "scratch/daredevil/fetch.py + scratch/daredevil/parse.py",
+        "volumes": vols,
         "issues": keep,
     }
     dst = ROOT / "tools" / "data" / "daredevil.json"

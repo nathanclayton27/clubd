@@ -81,6 +81,27 @@ def contents(titles):
     return out
 
 
+def volume_pages():
+    """The volume pages themselves: publisher/imprint, and the canonical URL
+    the property's section headers link to. Fetched rather than typed, because
+    a header link nobody checked is a 404 waiting to ship."""
+    out = {}
+    for i in range(0, len(VOLUMES), 20):
+        chunk = VOLUMES[i:i + 20]
+        d = get({"action": "query", "prop": "revisions|info",
+                 "rvprop": "content", "rvslots": "main", "inprop": "url",
+                 "titles": "|".join(chunk)})
+        for pg in d["query"]["pages"]:
+            if pg.get("missing"):
+                continue
+            out[pg["title"]] = {
+                "url": pg["fullurl"],
+                "wikitext": pg["revisions"][0]["slots"]["main"]["content"],
+            }
+        time.sleep(0.6)
+    return out
+
+
 def main():
     cache = HERE / "issues.json"
     data = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
@@ -96,6 +117,13 @@ def main():
         data[vol] = contents(issues)
         cache.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     print("done: %s" % {k: len(v) for k, v in data.items()})
+
+    vf = HERE / "volumes.json"
+    if not vf.exists():
+        print("fetch   the volume pages")
+        vf.write_text(json.dumps(volume_pages(), ensure_ascii=False),
+                      encoding="utf-8")
+    print("volumes: %d" % len(json.loads(vf.read_text(encoding="utf-8"))))
 
 
 if __name__ == "__main__":

@@ -28,6 +28,7 @@ time, and inventing one is the defect CLU-131 exists for.
 last issue, a renumbering, a fill-in, an arc's opening chapter — all fine.
 Stars carry the "this one matters" signal so a note never has to.
 """
+import datetime
 import json
 import pathlib
 import sys
@@ -38,35 +39,24 @@ from gwlib import prop  # noqa: E402
 SLUG = "daredevil"
 DATA = pathlib.Path(__file__).resolve().parent / "data" / (SLUG + ".json")
 
-WIKI = "https://marvel.fandom.com/wiki/"
-
-# volume key -> (Marvel Database page, row title, id prefix, header link URL)
+# volume key -> (Marvel Database page, row title, id prefix, header label).
+# The header URL is NOT here: it comes from the harvest, which read each
+# volume page's own canonical url, so a section link cannot be a typo.
 VOLS = {
-    "v1": ("Daredevil Vol 1", "Daredevil (1964)", "dd1",
-           WIKI + "Daredevil_Vol_1"),
-    "v2": ("Daredevil Vol 2", "Daredevil (1998)", "dd2",
-           WIKI + "Daredevil_Vol_2"),
-    "v3": ("Daredevil Vol 3", "Daredevil (2011)", "dd3",
-           WIKI + "Daredevil_Vol_3"),
-    "v4": ("Daredevil Vol 4", "Daredevil (2014)", "dd4",
-           WIKI + "Daredevil_Vol_4"),
-    "v5": ("Daredevil Vol 5", "Daredevil (2016)", "dd5",
-           WIKI + "Daredevil_Vol_5"),
-    "v6": ("Daredevil Vol 6", "Daredevil (2019)", "dd6",
-           WIKI + "Daredevil_Vol_6"),
-    "v7": ("Daredevil Vol 7", "Daredevil (2022)", "dd7",
-           WIKI + "Daredevil_Vol_7"),
+    "v1": ("Daredevil Vol 1", "Daredevil (1964)", "dd1", "Daredevil (1964)"),
+    "v2": ("Daredevil Vol 2", "Daredevil (1998)", "dd2", "Daredevil (1998)"),
+    "v3": ("Daredevil Vol 3", "Daredevil (2011)", "dd3", "Daredevil (2011)"),
+    "v4": ("Daredevil Vol 4", "Daredevil (2014)", "dd4", "Daredevil (2014)"),
+    "v5": ("Daredevil Vol 5", "Daredevil (2016)", "dd5", "Daredevil (2016)"),
+    "v6": ("Daredevil Vol 6", "Daredevil (2019)", "dd6", "Daredevil (2019)"),
+    "v7": ("Daredevil Vol 7", "Daredevil (2022)", "dd7", "Daredevil (2022)"),
     "mwf": ("Daredevil: The Man Without Fear Vol 1",
-            "Daredevil: The Man Without Fear", "mwf",
-            WIKI + "Daredevil:_The_Man_Without_Fear_Vol_1"),
+            "Daredevil: The Man Without Fear", "mwf", "The Man Without Fear"),
     "wwf": ("Daredevil: Woman Without Fear Vol 1",
-            "Daredevil: Woman Without Fear", "wwf",
-            WIKI + "Daredevil:_Woman_Without_Fear_Vol_1"),
-    "dr": ("Devil's Reign Vol 1", "Devil's Reign", "dr",
-           WIKI + "Devil%27s_Reign_Vol_1"),
-    "sl": ("Shadowland Vol 1", "Shadowland", "sl", WIKI + "Shadowland_Vol_1"),
-    "rb": ("Daredevil: Reborn Vol 1", "Daredevil: Reborn", "rb",
-           WIKI + "Daredevil:_Reborn_Vol_1"),
+            "Daredevil: Woman Without Fear", "wwf", "Woman Without Fear"),
+    "dr": ("Devil's Reign Vol 1", "Devil's Reign", "dr", "Devil's Reign"),
+    "sl": ("Shadowland Vol 1", "Shadowland", "sl", "Shadowland"),
+    "rb": ("Daredevil: Reborn Vol 1", "Daredevil: Reborn", "rb", "Reborn"),
 }
 
 # Row notes, keyed by (volume key, issue number as printed). Everything else
@@ -204,13 +194,33 @@ def not_written_by(vk, lo, hi, who):
 
 
 def links(*keys):
-    labels = {"v1": "Daredevil (1964)", "v2": "Daredevil (1998)",
-              "v3": "Daredevil (2011)", "v4": "Daredevil (2014)",
-              "v5": "Daredevil (2016)", "v6": "Daredevil (2019)",
-              "v7": "Daredevil (2022)", "mwf": "The Man Without Fear",
-              "wwf": "Woman Without Fear", "dr": "Devil's Reign",
-              "sl": "Shadowland", "rb": "Reborn"}
-    return [{"label": labels[k], "url": VOLS[k][3]} for k in keys]
+    """Header links, with every URL taken from the harvested volume page."""
+    out = []
+    for k in keys:
+        page, _, _, label = VOLS[k]
+        v = D["volumes"].get(page)
+        assert v and v["url"].startswith("https://marvel.fandom.com/wiki/"), \
+            "no harvested url for %s" % page
+        out.append({"label": label, "url": v["url"]})
+    return out
+
+
+VK_OF = {v[2]: k for k, v in VOLS.items()}
+
+
+def onsale(x):
+    """The on-sale date behind a built row, as a datetime."""
+    vk = VK_OF[x["id"].split("-")[0]]
+    return datetime.datetime.strptime(
+        fetch(vk, x["n"][1:])["released"], "%B %d, %Y")
+
+
+def penciler(vk, num, who):
+    """Assert a drawing credit a note or an intro leans on."""
+    got = fetch(vk, num)["penciler"]
+    # the wiki spells Marcos Martin both with and without the accent
+    ok = got == who or got.replace("í", "i") == who
+    assert ok, "%s #%s is pencilled by %s, not %s" % (VOLS[vk][0], num, got, who)
 
 
 def build():
@@ -228,6 +238,12 @@ def build():
     assert "Frank Miller" in fetch("v1", "165")["lead"]
     miller = writer_run("v1", 168, 191, "Frank Miller")
     not_written_by("v1", 192, 218, "Frank Miller")
+    assert "Elektra" in fetch("v1", "168")["titles"], \
+        "#168 is no longer the issue titled Elektra"
+    for n in nums("v1", 168, 184):
+        penciler("v1", n, "Frank Miller")
+    for n in nums("v1", 185, 190):
+        penciler("v1", n, "Klaus Janson")
 
     # ---- Miller, second stint ------------------------------------------
     badlands = [item("v1", "219")]
@@ -238,60 +254,96 @@ def build():
         assert any(a.startswith("Born Again") for a in fetch("v1", n)["arcs"]), \
             "#%s is not filed under Born Again" % n
     not_written_by("v1", 234, 240, "Frank Miller")
+    for n in nums("v1", 226, 233):
+        penciler("v1", n, "David Mazzucchelli")
 
     mwf = writer_run("mwf", 1, 5, "Frank Miller")
+    for n in nums("mwf", 1, 5):
+        penciler("mwf", n, "John Romita Jr.")
 
     # ---- the 1998 relaunch Bendis walks into ---------------------------
+    # The wiki files the whole of vol 2 #1-81 under the Marvel Knights
+    # imprint, which is why the section is named for it.
+    assert D["volumes"]["Daredevil Vol 2"]["publisher"] == "Marvel Knights"
     knights = rng("v2", 1, 15)
     assert [x for x in knights if x["id"] == "dd2-1"], "vol 2 #1 missing"
     for n in range(1, 9):
         assert "Kevin Smith" in fetch("v2", n)["lead"]
     for n in (9, 10, 11, 13, 14, 15):
         assert "David Mack" in fetch("v2", n)["lead"]
+    penciler("v2", 1, "Joe Quesada")
+    assert fetch("v2", 12)["lead"] == ["Jimmy Palmiotti", "Joe Quesada"]
 
     # ---- Bendis --------------------------------------------------------
+    # Bendis has written no earlier Daredevil in the harvest, so "his first"
+    # is a fact about the data rather than a recollection.
+    for n in nums("v2", 0, 15):
+        assert "Brian Michael Bendis" not in fetch("v2", n)["writers"]
     wakeup = writer_run("v2", 16, 19, "Brian Michael Bendis")
+    penciler("v2", 16, "David Mack")
     gale = writer_run("v2", 20, 25, "Bob Gale")
+    assert len(gale) == 6, "the Gale fill-in is no longer six issues"
     bendis_a = writer_run("v2", 26, 50, "Brian Michael Bendis")
+    penciler("v2", 26, "Alex Maleev")
     mack = writer_run("v2", 51, 55, "David Mack")
+    assert len(mack) == 5, "the Mack interlude is no longer five issues"
     bendis_b = writer_run("v2", 56, 81, "Brian Michael Bendis")
 
     # ---- Brubaker ------------------------------------------------------
     bru = writer_run("v2", 82, 119, "Ed Brubaker")
     bru += writer_run("v2", 500, 500, "Ed Brubaker")
+    penciler("v2", 82, "Michael Lark")
+    assert not [r for r in D["issues"] if r["vol"] == "Daredevil Vol 2"
+                and 119 < r["num"] < 500], \
+        "#119 is no longer followed straight by #500"
 
     # ---- Diggle, and the crossover between the runs ---------------------
-    diggle = writer_run("v2", 501, 512, "Andy Diggle", whole=False)
-    diggle += writer_run("sl", 1, 5, "Andy Diggle")
-    diggle += writer_run("rb", 1, 4, "Andy Diggle")
+    # Shadowland ran alongside the last months of the parent title rather than
+    # after them, so this section interleaves on on-sale dates too.
+    diggle = sorted(writer_run("v2", 501, 512, "Andy Diggle", whole=False)
+                    + writer_run("sl", 1, 5, "Andy Diggle")
+                    + writer_run("rb", 1, 4, "Andy Diggle"), key=onsale)
 
     # ---- Waid ----------------------------------------------------------
     # Vol 3 #1 leads with a Fred Van Lente short; Waid writes the two stories
     # after it, so the check is "credited", not "credited first".
     waid3 = writer_run("v3", 1, 36, "Mark Waid", whole=False)
+    assert {fetch("v3", 1)["penciler"],
+            fetch("v3", 2)["penciler"]} == {"Marcos Martin", "Paolo Rivera"}
+    penciler("v3", 12, "Chris Samnee")
+    for n in nums("v3", 1, 11):
+        assert fetch("v3", n)["penciler"] != "Chris Samnee", \
+            "#%s already has Samnee on pencils" % n
     # Vol 4 #0.1 is a reprint of the Road Warrior digital prelude and carries
     # no original credit of its own, so it is checked as a reprint instead.
     assert fetch("v4", "0.1")["reprints"] and not fetch("v4", "0.1")["writers"]
+    assert len(fetch("v4", "0.1")["reprints"]) == 4, \
+        "the Road Warrior prelude is no longer four parts"
+    assert len(fetch("v4", "1.50")["writers"]) == 3, \
+        "the anniversary special is no longer three stories"
     waid4 = [item("v4", "0.1")] + writer_run("v4", 1, 18, "Mark Waid",
                                              whole=False)
+    penciler("v4", 1, "Chris Samnee")
 
     # ---- Soule, between Waid and Zdarsky --------------------------------
     soule = writer_run("v5", 1, 612, "Charles Soule")
+    penciler("v5", 1, "Ron Garney")
+    assert not [r for r in D["issues"] if r["vol"] == "Daredevil Vol 5"
+                and 28 < r["num"] < 595], "#28 no longer runs into #595"
 
     # ---- Zdarsky -------------------------------------------------------
     zd6 = writer_run("v6", 1, 36, "Chip Zdarsky")
+    penciler("v6", 1, "Marco Checchetto")
     reign = writer_run("dr", 1, 6, "Chip Zdarsky")
     wwf = writer_run("wwf", 1, 3, "Chip Zdarsky")
     zd7 = writer_run("v7", 1, 14, "Chip Zdarsky")
 
     # Devil's Reign and Woman Without Fear shipped alternately; interleave
     # them on the on-sale dates the harvest carries rather than by guess.
-    def onsale(x):
-        vk = "dr" if x["id"].startswith("dr-") else "wwf"
-        import datetime
-        return datetime.datetime.strptime(
-            fetch(vk, x["n"][1:])["released"], "%B %d, %Y")
     event = sorted(reign + wwf, key=onsale)
+
+    # "restarts at a new #1 next month" has to stay true of the dates
+    assert 0 < (onsale(item("v4", 1)) - onsale(item("v3", 36))).days <= 40
 
     return [
         {"id": "arrival", "tier": 2, "title": "Miller arrives",
@@ -359,10 +411,11 @@ def build():
         {"id": "shadowland", "tier": 3, "title": "Diggle and Shadowland",
          "sub": "2009–2011 · the stretch the next run is a reaction to",
          "links": links("v2", "sl", "rb"),
-         "intro": "Andy Diggle's run and the crossover it builds to. Genuinely "
-                  "optional — Waid's first issue explains where things stand "
-                  "without it — but it is the reason his run looks the way it "
-                  "does.",
+         "intro": "Andy Diggle's run, the crossover it builds to and the "
+                  "bridge out of it, interleaved in the order they went on "
+                  "sale. Genuinely optional — Waid's first issue explains "
+                  "where things stand without it — but it is the reason his "
+                  "run looks the way it does.",
          "items": diggle},
         {"id": "waid3", "tier": 1, "title": "Waid, Rivera & Martin",
          "sub": "2011–2014 · a deliberate hard turn",
@@ -380,9 +433,9 @@ def build():
         {"id": "soule", "tier": 3, "title": "Soule & Garney",
          "sub": "2016–2019 · between Waid and Zdarsky",
          "links": links("v5"),
-         "intro": "Charles Soule's run — back to New York, back to night. "
-                  "Optional in the same way Diggle's is: the next run opens "
-                  "cleanly without it, and is a little sharper with it.",
+         "intro": "Charles Soule's run, drawn first by Ron Garney. Optional in "
+                  "the same way Diggle's is: the next run opens cleanly "
+                  "without it, and reads a little sharper with it.",
          "items": soule},
         {"id": "zdarsky", "tier": 1, "title": "Zdarsky & Checchetto",
          "sub": "2019–2021 · the longest run since Bendis",
@@ -417,6 +470,19 @@ def main():
         for x in s["items"]:
             assert not x.get("w") and "w" not in x, \
                 "comics lists are unweighted (CLU-131): %s" % x["id"]
+
+    # The list claims publication order, so prove it: every section's rows run
+    # forwards on their on-sale dates, and each section starts no earlier than
+    # the one above it ends. The only rows exempt are the two optional
+    # reprints, which collect material published before the issue that
+    # reprints them.
+    last = None
+    for s in sections:
+        dates = [onsale(x) for x in s["items"] if x["id"] != "dd4-0-1"]
+        assert dates == sorted(dates), "%s is out of publication order" % s["id"]
+        assert last is None or dates[0] >= last, \
+            "%s starts before the section above it ends" % s["id"]
+        last = dates[-1]
 
     p = {
         "slug": SLUG,
@@ -463,11 +529,13 @@ def main():
              "Each section links the Marvel Database page for every series it "
              "draws from; those pages list each issue with its credits and "
              "cover date. Rows carry no links of their own."],
-            "Every issue number, cover date and creator credit read from the "
-            "Marvel Database (marvel.fandom.com) through its API and cached in "
-            "tools/data/daredevil.json; the run boundaries are derived from "
-            "those printed credits by the generator, which fails if a range "
-            "is not exactly the writer it claims.",
+            "Every issue number, on-sale date, cover date and creator credit "
+            "read from the Marvel Database (marvel.fandom.com) through its API "
+            "and cached in tools/data/daredevil.json, header links included. "
+            "The run boundaries are derived from those printed credits by the "
+            "generator, which refuses to build if a range is not exactly the "
+            "writer it claims, or if any section falls out of publication "
+            "order.",
         ],
         "sections": sections,
     }

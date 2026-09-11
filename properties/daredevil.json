@@ -39,7 +39,7 @@
       "Links sit on the section headers.",
       "Each section links the Marvel Database page for every series it draws from; those pages list each issue with its credits and cover date. Rows carry no links of their own."
     ],
-    "Every issue number, cover date and creator credit read from the Marvel Database (marvel.fandom.com) through its API and cached in tools/data/daredevil.json; the run boundaries are derived from those printed credits by the generator, which fails if a range is not exactly the writer it claims."
+    "Every issue number, on-sale date, cover date and creator credit read from the Marvel Database (marvel.fandom.com) through its API and cached in tools/data/daredevil.json, header links included. The run boundaries are derived from those printed credits by the generator, which refuses to build if a range is not exactly the writer it claims, or if any section falls out of publication order."
   ],
   "sections": [
     {
@@ -1694,7 +1694,7 @@
           "url": "https://marvel.fandom.com/wiki/Daredevil:_Reborn_Vol_1"
         }
       ],
-      "intro": "Andy Diggle's run and the crossover it builds to. Genuinely optional — Waid's first issue explains where things stand without it — but it is the reason his run looks the way it does.",
+      "intro": "Andy Diggle's run, the crossover it builds to and the bridge out of it, interleaved in the order they went on sale. Genuinely optional — Waid's first issue explains where things stand without it — but it is the reason his run looks the way it does.",
       "items": [
         {
           "id": "dd2-501",
@@ -1760,9 +1760,27 @@
           "url": ""
         },
         {
+          "id": "sl-1",
+          "t": "Shadowland",
+          "n": "#1",
+          "note": "The crossover Waid's run is written against.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
           "id": "dd2-508",
           "t": "Daredevil (1998)",
           "n": "#508",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-2",
+          "t": "Shadowland",
+          "n": "#2",
           "note": "",
           "star": 0,
           "opt": 0,
@@ -1778,9 +1796,27 @@
           "url": ""
         },
         {
+          "id": "sl-3",
+          "t": "Shadowland",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
           "id": "dd2-510",
           "t": "Daredevil (1998)",
           "n": "#510",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-4",
+          "t": "Shadowland",
+          "n": "#4",
           "note": "",
           "star": 0,
           "opt": 0,
@@ -1799,42 +1835,6 @@
           "id": "dd2-512",
           "t": "Daredevil (1998)",
           "n": "#512",
-          "note": "",
-          "star": 0,
-          "opt": 0,
-          "url": ""
-        },
-        {
-          "id": "sl-1",
-          "t": "Shadowland",
-          "n": "#1",
-          "note": "The crossover Waid's run is written against.",
-          "star": 0,
-          "opt": 0,
-          "url": ""
-        },
-        {
-          "id": "sl-2",
-          "t": "Shadowland",
-          "n": "#2",
-          "note": "",
-          "star": 0,
-          "opt": 0,
-          "url": ""
-        },
-        {
-          "id": "sl-3",
-          "t": "Shadowland",
-          "n": "#3",
-          "note": "",
-          "star": 0,
-          "opt": 0,
-          "url": ""
-        },
-        {
-          "id": "sl-4",
-          "t": "Shadowland",
-          "n": "#4",
           "note": "",
           "star": 0,
           "opt": 0,
@@ -2450,7 +2450,7 @@
           "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_5"
         }
       ],
-      "intro": "Charles Soule's run — back to New York, back to night. Optional in the same way Diggle's is: the next run opens cleanly without it, and is a little sharper with it.",
+      "intro": "Charles Soule's run, drawn first by Ron Garney. Optional in the same way Diggle's is: the next run opens cleanly without it, and reads a little sharper with it.",
       "items": [
         {
           "id": "dd5-1",

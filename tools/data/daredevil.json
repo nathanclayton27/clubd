@@ -1,7 +1,69 @@
 {
- "source": "Marvel Database (marvel.fandom.com), read through api.php: list=allpages for each volume's issue pages, then prop=revisions for each page's Comic Template infobox.",
+ "source": "Marvel Database (marvel.fandom.com), read through api.php: list=allpages for each volume's issue pages, then prop=revisions for each page's Comic Template infobox, and prop=revisions|info for the volume pages themselves.",
  "fetched": "2026-09-11",
  "harvester": "scratch/daredevil/fetch.py + scratch/daredevil/parse.py",
+ "volumes": {
+  "Daredevil Vol 1": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1",
+   "publisher": "",
+   "years": ""
+  },
+  "Daredevil Vol 2": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_2",
+   "publisher": "Marvel Knights",
+   "years": ""
+  },
+  "Daredevil: The Man Without Fear Vol 1": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil:_The_Man_Without_Fear_Vol_1",
+   "publisher": "Marvel Comics",
+   "years": ""
+  },
+  "Shadowland Vol 1": {
+   "url": "https://marvel.fandom.com/wiki/Shadowland_Vol_1",
+   "publisher": "Marvel Comics",
+   "years": ""
+  },
+  "Daredevil: Reborn Vol 1": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil:_Reborn_Vol_1",
+   "publisher": "Marvel Comics",
+   "years": ""
+  },
+  "Daredevil Vol 3": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_3",
+   "publisher": "Marvel Comics",
+   "years": ""
+  },
+  "Daredevil Vol 4": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_4",
+   "publisher": "Marvel Comics",
+   "years": ""
+  },
+  "Daredevil Vol 5": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_5",
+   "publisher": "Marvel Comics",
+   "years": ""
+  },
+  "Daredevil Vol 6": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_6",
+   "publisher": "",
+   "years": ""
+  },
+  "Devil's Reign Vol 1": {
+   "url": "https://marvel.fandom.com/wiki/Devil%27s_Reign_Vol_1",
+   "publisher": "",
+   "years": ""
+  },
+  "Daredevil: Woman Without Fear Vol 1": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil:_Woman_Without_Fear_Vol_1",
+   "publisher": "",
+   "years": ""
+  },
+  "Daredevil Vol 7": {
+   "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_7",
+   "publisher": "",
+   "years": ""
+  }
+ },
  "issues": [
   {
    "vol": "Daredevil Vol 1",
