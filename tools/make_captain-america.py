@@ -161,6 +161,7 @@ SECTIONS = [
         sub="#1 · the first one",
         spans=[("Captain America Comics Vol 1", 1, 1)],
         writer="Jack Kirby", bar=set(),
+        names={"Joe Simon": 1, "Jack Kirby": 1},
         intro="Simon and Kirby's first issue: cover-dated March 1941, on sale "
               "in December 1940, a year before the United States entered the "
               "war it is about.\n\nNothing later on this list needs it. It is "
@@ -228,6 +229,7 @@ SECTIONS = [
         sub="#114–152 · Lee, then Friedrich, then Conway",
         spans=[(V1, 114, 152)],
         writer=None, bar=set(),
+        names={"Stan Lee": 28, "Gary Friedrich": 7, "Gerry Conway": 4},
         intro="Three years of a book with no particular direction, handed "
               "between writers. There is good work in it and no reason to "
               "start here.",
@@ -250,6 +252,9 @@ SECTIONS = [
         sub="#187–192 · Warner, Isabella, Mantlo, Wolfman",
         spans=[(V1, 187, 192)],
         writer=None, bar=set(),
+        names={"John Warner": 2, "Tony Isabella": 3, "Bill Mantlo": 1,
+               "Marv Wolfman": 1},
+        hands=4,
         intro="The stretch between Englehart leaving and Kirby arriving. Four "
               "writers in six issues, and it shows.",
     ),
@@ -269,8 +274,12 @@ SECTIONS = [
         sub="#215–246 · a different writer most months",
         spans=[(V1, 215, 246)],
         writer=None, bar=set(),
+        # Fifteen of the thirty-two, which is more than anyone else by ten
+        # and is not "most of it" — that is what this line used to say.
+        names={"Roger McKenzie": 15},
         intro="Four years the book spent being kept alive rather than written. "
-              "Roger McKenzie holds most of it together. Skippable in full.",
+              "Roger McKenzie writes more of it than anybody else. Skippable "
+              "in full.",
     ),
     dict(
         id="stern", tier=1, title="Stern and Byrne",
@@ -292,9 +301,10 @@ SECTIONS = [
     ),
     dict(
         id="dematteis", tier=2, title="J.M. DeMatteis",
-        sub="#261–300 · with David Kraft taking six of them",
+        sub="#261–300 · five by David Kraft, one by Bill Mantlo",
         spans=[(V1, 261, 300)],
         writer="J.M. DeMatteis", bar={265, 266, 271, 273, 274, 291},
+        names={"J.M. DeMatteis": 34, "David Kraft": 5, "Bill Mantlo": 1},
         intro="DeMatteis writes the character as somebody who would rather "
               "talk than fight, and builds the run around villains he can "
               "argue with. It is quieter than what comes after it and better "
@@ -336,9 +346,11 @@ SECTIONS = [
         sub="vol. 2 #1–13 · a year in a separate universe",
         spans=[("Captain America Vol 2", 1, 13)],
         writer=None, bar=set(),
+        names={"Jeph Loeb": 7, "Rob Liefeld": 6, "James Robinson": 6},
         intro="Marvel outsourced four of its oldest books for a year and "
               "restarted them in a pocket universe. This is the Captain "
-              "America one, by Rob Liefeld and then James Robinson.\n\nIt "
+              "America one: Jeph Loeb and Rob Liefeld, then James "
+              "Robinson.\n\nIt "
               "connects to nothing before it and nothing after it. Included "
               "because the numbering goes through it.",
     ),
@@ -361,9 +373,12 @@ SECTIONS = [
     ),
     dict(
         id="vol4", tier=3, title="The 2002 relaunch",
-        sub="vol. 4 #1–32 · four writers in thirty-two issues",
+        sub="vol. 4 #1–32 · five writers in thirty-two issues",
         spans=[("Captain America Vol 4", 1, 32)],
         writer=None, bar=set(),
+        names={"John Ney Rieber": 9, "Chuck Austen": 9, "Dave Gibbons": 4,
+               "Robert Morales": 8, "Robert Kirkman": 4},
+        hands=5,
         intro="Marvel restarted the book in 2002 and pointed it squarely at "
               "the previous September. John Ney Rieber and John Cassaday open "
               "it; Chuck Austen, Dave "
@@ -423,6 +438,7 @@ SECTIONS = [
         sub="#620–628 · a companion book on the old numbering",
         spans=[("Captain America and Bucky Vol 1", 620, 628)],
         writer="Ed Brubaker", bar=set(),
+        names={"Ed Brubaker": 9},
         intro="Brubaker co-wrote nine issues of a second book, which keeps the "
               "legacy numbering going while volume six restarts at #1. The "
               "main run does not depend on it.",
@@ -501,6 +517,7 @@ def main():
     for spec in SECTIONS:
         items, years, off = [], [], set()
         by_series = {}
+        credits = {}
         for series, lo, hi in spec["spans"]:
             have = sorted(int(n) for n in issues[series])
             span = [n for n in have if lo <= n <= hi]
@@ -517,6 +534,8 @@ def main():
                 seen.add(key)
                 years.append(rec["year"])
                 by_series.setdefault(series, []).append(rec["year"])
+                for w in rec["writers"]:
+                    credits[w] = credits.get(w, 0) + 1
                 if "Ed Brubaker" in rec["writers"]:
                     bru.append((rec["year"], MONTHS.index(rec["month"]),
                                 spec["tier"], series, n))
@@ -528,6 +547,21 @@ def main():
             if spec["writer"]:
                 off |= {n for n in span
                         if spec["writer"] not in issues[series][str(n)]["writers"]}
+
+        # Anyone the section's own words name, and any count those words
+        # give, declared here and counted off the wiki's credits. The header
+        # that said David Kraft took six of the DeMatteis issues was typed
+        # rather than counted: the wiki credits him on five and Bill Mantlo
+        # on the sixth, and nothing in the build looked.
+        for who, n_cred in spec.get("names", {}).items():
+            assert credits.get(who, 0) == n_cred, (
+                "%s: the prose names %s on %d issues, the source credits "
+                "%d" % (spec["id"], who, n_cred, credits.get(who, 0)))
+        if spec.get("hands"):
+            assert len(credits) == spec["hands"], (
+                "%s: the prose counts %d writers, the source credits %d (%s)"
+                % (spec["id"], spec["hands"], len(credits),
+                   ", ".join(sorted(credits))))
 
         # A named writer has to actually be credited across the section, and
         # the issues they are not credited on have to be exactly the declared
@@ -606,8 +640,11 @@ def main():
         "kind": "comics",
         "popularity": 68,
         "year": "%d–%d" % (first, last),
-        "blurb": "%d issues, from the 1964 revival to the last page Ed "
-                 "Brubaker wrote, one section per run." % rows,
+        # The first row is Captain America Comics #1, not the revival:
+        # the blurb said 1964 while the year beside it on the tile
+        # said 1941. Both years are read off the rows now.
+        "blurb": "%d issues, from the %d original to the last page Ed "
+                 "Brubaker wrote, one section per run." % (rows, first),
         "unit": {"one": "issue", "many": "issues"},
         "verb": {"base": "read", "past": "read", "ing": "reading"},
         "accent": "#26468F",

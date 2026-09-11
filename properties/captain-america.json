@@ -5,7 +5,7 @@
   "kind": "comics",
   "popularity": 68,
   "year": "1941–2013",
-  "blurb": "611 issues, from the 1964 revival to the last page Ed Brubaker wrote, one section per run.",
+  "blurb": "611 issues, from the 1941 original to the last page Ed Brubaker wrote, one section per run.",
   "unit": {
     "one": "issue",
     "many": "issues"
@@ -1632,7 +1632,7 @@
       "title": "Many hands",
       "sub": "#215–246 · a different writer most months · 1977–80",
       "tier": 3,
-      "intro": "Four years the book spent being kept alive rather than written. Roger McKenzie holds most of it together. Skippable in full.",
+      "intro": "Four years the book spent being kept alive rather than written. Roger McKenzie writes more of it than anybody else. Skippable in full.",
       "items": [
         {
           "id": "cap-v1-215",
@@ -2089,7 +2089,7 @@
     {
       "id": "dematteis",
       "title": "J.M. DeMatteis",
-      "sub": "#261–300 · with David Kraft taking six of them · 1981–84",
+      "sub": "#261–300 · five by David Kraft, one by Bill Mantlo · 1981–84",
       "tier": 2,
       "intro": "DeMatteis writes the character as somebody who would rather talk than fight, and builds the run around villains he can argue with. It is quieter than what comes after it and better than its reputation.",
       "items": [
@@ -3897,7 +3897,7 @@
       "title": "Heroes Reborn",
       "sub": "vol. 2 #1–13 · a year in a separate universe · 1996–97",
       "tier": 3,
-      "intro": "Marvel outsourced four of its oldest books for a year and restarted them in a pocket universe. This is the Captain America one, by Rob Liefeld and then James Robinson.\n\nIt connects to nothing before it and nothing after it. Included because the numbering goes through it.",
+      "intro": "Marvel outsourced four of its oldest books for a year and restarted them in a pocket universe. This is the Captain America one: Jeph Loeb and Rob Liefeld, then James Robinson.\n\nIt connects to nothing before it and nothing after it. Included because the numbering goes through it.",
       "items": [
         {
           "id": "cap-v2-1",
@@ -4507,7 +4507,7 @@
     {
       "id": "vol4",
       "title": "The 2002 relaunch",
-      "sub": "vol. 4 #1–32 · four writers in thirty-two issues · 2002–04",
+      "sub": "vol. 4 #1–32 · five writers in thirty-two issues · 2002–04",
       "tier": 3,
       "intro": "Marvel restarted the book in 2002 and pointed it squarely at the previous September. John Ney Rieber and John Cassaday open it; Chuck Austen, Dave Gibbons, Robert Morales and Robert Kirkman take the rest.\n\nIt argues with itself more than it works, and the next section is why anybody still buys this book.",
       "items": [

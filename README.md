@@ -18,8 +18,8 @@ glance who's ahead and who's fallen behind.
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
 War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
-(Hickman's Marvel run), *Captain America* (611 issues from the 1964
-revival to the last page Ed Brubaker wrote, one section per run),
+(Hickman's Marvel run), *Captain America* (611 issues from the 1941
+original to the last page Ed Brubaker wrote, one section per run),
 *Venom* (Cates and Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
