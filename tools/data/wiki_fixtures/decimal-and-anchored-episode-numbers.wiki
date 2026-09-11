@@ -1,0 +1,52 @@
+{{Episode list/sublist
+| 1               = List of Attack on Titan episodes
+| EpisodeNumber   = 3.5
+| EpisodeNumber2  = 1
+| Title           = Ilse's Notebook: Memoirs of a Scout Regiment Member
+| TranslitTitle   = Iruze no Techō -Aru Chōsa Heidan'in no Shuki-
+| NativeTitle     = イルゼの手帳 ―ある調査兵団員の手記―
+| NativeTitleLangCode = ja
+| OriginalAirDate = {{Start date|2013|12|9}}
+| AltDate         = December 1, 2015 (subtitled)<br/>May 8, 2022 (dubbed)
+| ShortSummary    = In the year 850, whilst Eren and the others are in training, the Scout Regiment goes on a mission, with Hange deciding to pursue a Titan spotted in the forest in the hopes she can capture it. As Hange gets the Titan to chase after her, it suddenly retreats to the forest. Hange follows it to the center of the forest, where she finds it banging its head against a certain tree. The Titan turns hostile when Hange gets close to it, but Levi and the others arrive and kill it, much to Hange's dismay. Upon inspecting the scene, they discover the decapitated body of Ilse Langnar, a soldier from the 34th Scout Regiment division, resting inside of the tree, and find a notebook belonging to her lying on the ground. The notebook details Ilse's records, as she escaped on foot after her squad was killed by Titans. She eventually became cornered by a Titan, but instead of killing her right away, it started to speak to her in the human language, calling her "Ymir." Ilse attempted to communicate with the Titan, but it inevitably became hostile again and bit off her head, choosing not to devour her body but instead rest it inside the tree. Having read through all of Ilse's notes, Hange uses the notebook as leverage to convince Erwin to approve of operations to capture Titans alive and study them, before returning Ilse's belongings to her grief-stricken family.
+| LineColor       = 8BA6C1
+}}
+{{Episode list/sublist
+| 1               = List of Attack on Titan episodes
+| EpisodeNumber   = 3.25
+| EpisodeNumber2  = 2
+| Title           = The Sudden Visitor: The Torturous Curse of Youth
+| TranslitTitle   = Totsuzen no Raihōsha -Sainamareru Seishun no Noroi-
+| NativeTitle     = 突然の来訪者 ―苛まれる青春の呪い―
+| NativeTitleLangCode = ja
+| OriginalAirDate = {{Start date|2014|4|9}}
+| AltDate         = December 27, 2016 (subtitled)<br/>May 15, 2022 (dubbed)
+| ShortSummary    = In the year 849, Jean returns home after two years in training. After Jean gets into a dispute with Sasha following a training exercise, Commander Pyxis suggests they settle things in a cooking contest. With Armin and Annie joining Jean's team and Reiner and Conny teaming up with Sasha, the two groups head into the forest in search of a notorious giant boar to use as meat. Sasha's group come across the boar first and engage it in battle, with Sasha managing to kill it and claim it for her group. Later, after Jean is visited by his mother, shouting at her when he feels she is embarrassing him, he concocts a plan to steal some quality beef from the office so he can beat Sasha, but Armin and Annie refuse to help him. After inevitably giving up on his plan, Jean opens a lunchbox his mother left him containing an omelette, remembering all the times his mother stood by him. The cooking competition begins quickly, with Sasha showing off a prime boar steak and Jean showing off a humble omelette. Although wowed by the taste of the steak, Pyxis declares Jean the winner as he showed more skill in cooking. Content with his victory, Jean considers paying a visit to his mother.
+| LineColor       = 8BA6C1
+}}
+{{Episode list/sublist
+| 1               = List of Attack on Titan episodes
+| EpisodeNumber   = 3.75
+| EpisodeNumber2  = 3
+| Title           = Distress
+| TranslitTitle   = Konnan
+| NativeTitle     = 困難
+| NativeTitleLangCode = ja
+| OriginalAirDate = {{Start date|2014|8|8}}
+| AltDate         = December 19, 2021 (subtitled)<br/>May 22, 2022 (dubbed)
+| ShortSummary    = In the year 848, the recruits are split into two groups for a wilderness exercise to learn how to sustain themselves in times of peace. Marco has trouble leading his group due to the arrogance of both Eren and Jean. Meanwhile, Mikasa's group learns of the presence of a gang of thieves, who managed to steal their Omni-directional mobility gear. That night, the thieves ambush Eren's group, taking Christa hostage along with their equipment. Putting aside their petty squabbles in order to rescue her, the group discovers the thieves' hideout, using each of their talents to come up with a plan to ambush them. After Eren and Jean manage to recover the group's maneuver equipment and put a stop to the thieves' wagons, the thieves hold Christa at knifepoint, but she is then rescued by the arrival of Mikasa and Annie after Armin had signalled for help. As the thieves are arrested, with no casualties taken, Armin wonders if the thieves' attack was part of the exercise all along.
+| LineColor       = 8BA6C1
+}}
+{{Episode list/sublist|Doctor Who series 4
+| EpisodeNumber   = 192a{{anchor|ep192}}
+| EpisodeNumber2  = 4
+| Title           = [[The Sontaran Stratagem]]
+| DirectedBy      = [[Douglas Mackinnon]]
+| WrittenBy       = [[Helen Raynor]]
+| OriginalAirDate = {{Start date|2008|4|26|df=y}}
+| ProdCode        = 4.4
+| Viewers         = 7.06
+| Aux4            = 87
+| ShortSummary    = Martha Jones calls the Doctor for assistance during an investigation by [[UNIT]]. Minutes after the TARDIS materialises, Martha authorises the raid of an ATMOS factory. ATMOS is marketing a [[satellite navigation]] system developed by young prodigy [[Luke Rattigan]]. The system also reduces carbon dioxide emissions to zero; UNIT requested the Doctor's help because the technology may be alien, and they are also concerned about 52 early simultaneous deaths that occurred spontaneously. The Doctor investigates the system at Rattigan's private school and discovers a plot by an alien warrior race known as the [[Sontaran]]s. Instead of an outright invasion, they are taking control with a combination of human clones, mind control, and ATMOS; Martha is captured and cloned to provide a mole within UNIT. Donna returns home to her mother Sylvia and grandfather [[Wilfred Mott|Wilfred]]. The Doctor investigates the ATMOS devices and discovers it can emit a poisonous gas. Wilfred attempts to take the car off the road, but is trapped when all 400 million ATMOS devices installed in cars worldwide are activated. The Doctor stares helplessly at a street full of cars emitting the gas, while the Sontarans prepare themselves for battle.
+| LineColor       = 13ABEE
+}}

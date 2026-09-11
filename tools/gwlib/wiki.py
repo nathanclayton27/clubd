@@ -40,12 +40,21 @@ verbatim article excerpts in tools/data/wiki_fixtures/, one per case:
 5. clean() left HTML comments in, so two Invincible titles would have shipped
    with a 200-character editor's note glued on.
 6. only |Title was read, never |RTitle, so Bandersnatch came back nameless.
+   RTitle is free-form DISPLAY markup, though, so reading it as a title is a
+   fabrication of its own — `"Nerve" (Part 1)` mangled eleven Farscape rows the
+   first time this was fixed. display_title() takes an RTitle only where it is
+   plainly a name and nothing else, the raw value is on the row as `.rtitle`
+   either way, and an empty title is better than a wrong one.
 7. clean()'s inline-template rule needs a pipe, so EVERY argument-less template
    fell through to stripping the braces and survived as its own name: {{hsp}}
-   became "hsp" ("USS Callisterhsp: Into Infinity"), and so did {{nbsp}},
-   {{snd}}, {{PAGENAME}} and {{Episode cast}}. Fixing hsp alone would have left
-   the class open, so clean() now resolves argument-less templates by name and
-   drops the ones it does not know.
+   became "hsp" ("USS Callisterhsp: Into Infinity"), and so did {{nbsp}} and
+   {{snd}}. clean() now renders the ones that render nothing — _BARE_RENDERS,
+   an allowlist — and leaves every other one as its own name, because for
+   {{yes}}, {{no}}, {{TBA}}, {{n/a}}, {{won}} and {{nom}} the name IS the text
+   and it is the whole content of the cell. Dropping the unknown ones instead,
+   which this file did for one round, deleted 498 fields from Jackie Chan's
+   filmography alone; see _BARE_RENDERS for why the default has to be the
+   leaky one.
 
 Two more the seven did not name, both found while fixing them:
 
@@ -61,6 +70,17 @@ Two more the seven did not name, both found while fixing them:
    list writes `{{\\nEpisode list`, which the old regex could not match at all —
    a latent row-dropper of exactly this kind.
 
+AND SIX MORE IN THE FIX ITSELF, found by review before it shipped. The first
+round of CLU-167 fixed all nine above and, being a rewrite, brought its own: it
+deleted every argument-less template it did not recognise (7 above), read |RTitle
+as a plain title (6 above), read episode numbers out of a template's arguments
+and out of both halves of a decimal (see numbers()), refused a whole page over
+one unbalanced block instead of skipping it (see templates()), turned a sublist
+POINTER into a nameless row (see episodes()), and stated a paragraph of measured
+counts of which four were wrong (see below). Three of the six invented catalogue
+data, which is the thing this module exists not to do, so each of the six has its
+own pin in tools/test_wiki_parser.py alongside the nine.
+
 Comments are REMOVED, and removed BEFORE blocks are found rather than after.
 Both halves of that are load-bearing and each cost a bug:
 
@@ -74,9 +94,13 @@ Both halves of that are load-bearing and each cost a bug:
   `Steven Moffat`, and padding turns "and" into "a nd". So templates() maps its
   offsets back to the text it was handed instead.
 
-numbers() cleans a value before looking for digits for the same family of
-reason — `19<ref name="finale2"/>` yields [19, 2] otherwise, and an episode 2
-conjured out of a ref name is fabricated catalogue data.
+numbers() removes templates from a value and then cleans it before looking for
+digits, for the same family of reason, and the corpus pays for each step:
+`19<ref name="finale2"/>` yields an episode 2 out of a ref name if it is not
+cleaned first, and `192a{{anchor|ep192}}` yields episode 192 twice if the anchor
+is resolved to its argument rather than removed. A number is also read with its
+decimal part, because `3.75` is one Attack on Titan recap special and not
+episodes 3 and 75.
 
 Blocks are found by counting braces and split on pipes at depth zero, which is
 what eight other files under tools/ each wrote for themselves — make_avatar,
@@ -102,24 +126,43 @@ all — because some of those generators re-read it with regexes of their own. T
 numbers a row could not previously express hang off the returned rows as
 attributes; see Episode.
 
-Measured against every cached article in the repo — 579 of 4,393 carry an
-{{Episode list}} — 11 pages change row count: 9 gain rows the old reader dropped,
-and 2 lose rows that were commented out and never existed (Bleach's table does
-both at once, shedding five phantoms and gaining one real row). Of the 13,617
-rows on pages whose count is unchanged, 571 titles change, every one of them from
-blank or mangled to right, and 13,577 blocks come back byte-identical; the rest
-are longer, because a nested template no longer truncates them. No page that
-parsed before fails now, and none did before either.
+WHAT IS PROVEN HERE, AND WHAT IS ONLY MEASURED. An earlier version of this
+docstring carried a paragraph of counts — pages changed, rows changed, titles
+changed. Every one of them was re-derived by a reviewer over the same articles
+and four came back different, and nobody who clones this repo could have caught
+that, because every input to the sweep lives under the gitignored scratch/. A
+precise number that is both wrong and unverifiable is worse than no number: it
+is the one part of a file like this that a later reader trusts instead of
+re-deriving. So the counts are gone from here.
+
+What stands in their place: tools/test_wiki_parser.py, which asserts against
+tracked fixtures and runs from a bare clone, and tools/measure_wiki_parser.py,
+which is the sweep itself — a named, runnable script rather than a remembered
+result. Run it against a corpus of cached wikitext and it prints today's numbers
+for today's parser; the numbers as of the commit that added it are in that
+commit's message, where a figure is a dated record instead of a standing claim.
+Counts quoted anywhere in this file are the ones that script prints, and they
+are quoted only where the count is the point.
 
 The fixture set pins episodes(), clean(), templates(), template_fields(),
-field() and numbers(). It does NOT exercise table_rows() or infobox(), which are
-the module's two other public readers and are deliberately unchanged here — so
-this file is pinned in the places CLU-167 touched, not everywhere.
+field(), numbers() and display_title(). It does NOT exercise table_rows() or
+infobox(), which are the module's two other public readers and are deliberately
+unchanged here — so this file is pinned in the places CLU-167 touched, not
+everywhere.
+
+NOTHING IN THIS MODULE RAISES ON BAD INPUT. templates() skips a block whose
+braces never close, numbers() reports a NumParts disagreement instead of
+refusing the row, and episodes() therefore has no failure that can take a whole
+page down and empty a catalogue list. Every such skip goes through note(): to
+stderr always, and into a list the caller may pass as `notes=`. A parser that
+silently skips what it cannot read is the bug this file was rewritten to fix,
+so the skips are loud.
 """
 import collections
 import json
 import pathlib
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -174,24 +217,67 @@ def search(query, limit=6):
     return [x["title"] for x in get_json(API + "?" + q)["query"]["search"]]
 
 
-# Argument-less templates, which clean()'s keep-the-last-argument rule cannot
-# see because it requires a pipe. Left to the old brace-stripping fallthrough
-# every one of these surfaced as its own NAME in display text: {{hsp}} shipped
-# "USS Callisterhsp: Into Infinity". Anything not listed here is dropped rather
-# than rendered, because a template name is never the text a reader wants.
-_BARE_TEMPLATES = {
+# Argument-less templates that render NOTHING, or nothing but a space or a
+# dash. clean()'s keep-the-last-argument rule cannot see them because it
+# requires a pipe, so without this table every one surfaced as its own NAME:
+# {{hsp}} shipped "USS Callisterhsp: Into Infinity".
+#
+# This is an ALLOWLIST and the default is to keep the name, which is the
+# opposite of what it looks like it should be. The reason is that for a large
+# family of templates the name IS the rendered text, and it is the whole content
+# of the cell: {{yes}}, {{no}}, {{TBA}}, {{n/a}}, {{won}}, {{nom}}, {{?}} and
+# their kin are how every awards table and filmography crosstab on Wikipedia
+# says what it says. Dropping an unknown argument-less template therefore
+# deletes data rather than tidying it — measured over the cached corpus it takes
+# 498 fields off Jackie Chan's filmography, empties Clint Eastwood's
+# director/writer columns, and loses Donnie Yen's 14 "n/a"s.
+#
+# A blocklist cannot close that gap either: the corpus alone uses 5,907 distinct
+# argument-less templates, led by {{nom}} (6,885 uses) and {{won}} (4,659). So
+# the default is the one that cannot silently delete a column, and it is also
+# exactly what the parser did before CLU-167 — which is why inverting the rule
+# cannot regress any shipped list. The cost is the honest one: a decoration
+# template nobody has seen yet leaks its name into display text, visibly, until
+# somebody adds a line here.
+_BARE_RENDERS = {
     "hsp": "", "nbsp": " ", "thinsp": " ", "shy": "", "wbr": "", "zwsp": "",
     "snd": " – ", "spnd": " – ", "sndash": " – ", "spndash": " – ",
     "spaced en dash": " – ", "ndash": "–", "en dash": "–", "mdash": "—",
     "em dash": "—", "spaces": " ", "'": "'", "'s": "'s",
+    # A magic word, not a template: it renders the article's own title, which
+    # this module has no way to know, so "" is the only honest answer.
+    "pagename": "",
+    # Renders the label that introduces a cast list inside a ShortSummary; the
+    # cast names follow it in the wikitext and are kept.
+    "episode cast": "",
 }
+
+
+def _bare(m):
+    """One argument-less `{{name}}` as display text. See _BARE_RENDERS."""
+    name = m.group(1).strip()
+    if name.lower() in _BARE_RENDERS:
+        return _BARE_RENDERS[name.lower()]
+    if name.startswith("#"):
+        # A parser function, not a template — {{#expr:5861430+14688240}} is
+        # arithmetic MediaWiki performs and this module does not. Leaking the
+        # source text ("#expr:5861430+14688240") states a number that is not
+        # the answer, so it renders as nothing and a caller that needs the
+        # figure gets [] from numbers() and fails its own coverage assert
+        # instead of publishing a wrong one. Parser functions that DO carry
+        # pipes still fall through to the keep-the-last-argument rule below;
+        # that is a known limit, not a claim.
+        return ""
+    # The name is the text. Returned verbatim, uppercase and all — the source
+    # writes {{Yes}} in Eastwood's crosstab and "Yes" is what the column says.
+    return m.group(1)
 
 
 def clean(t):
     """Wikitext -> display text. Comments go first, then footnotes vanish whole;
     wikilinks keep their label; inline templates keep their last argument;
-    argument-less templates resolve by name (and drop if unknown, never
-    rendering as the word "hsp"); italics drop."""
+    an argument-less template renders as its own name unless _BARE_RENDERS
+    says it renders nothing; italics drop."""
     # First, and before the template passes: a comment can contain braces and
     # pipes of its own, and two Invincible titles carry a whole paragraph of
     # editor's note inline.
@@ -205,8 +291,7 @@ def clean(t):
     t = re.sub(r"\s*\n\s*\*\s*", ", ", t)
     t = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", t)
     t = re.sub(r"\[\[([^\]]+)\]\]", r"\1", t)
-    t = re.sub(r"\{\{([^{}|]*)\}\}",
-               lambda m: _BARE_TEMPLATES.get(m.group(1).strip().lower(), ""), t)
+    t = re.sub(r"\{\{([^{}|]*)\}\}", _bare, t)
     t = re.sub(r"\{\{[^{}|]*\|(?:[^{}|]*\|)*([^{}|]*)\}\}", r"\1", t)
     t = t.replace("{{", "").replace("}}", "").replace("''", "")
     return re.sub(r"\s+", " ", t).strip(" ,|")
@@ -335,7 +420,24 @@ def _depth0_pipes(body):
     return out
 
 
-def templates(text, name="Episode list", offsets=False, keep_comments=False):
+def note(notes, message):
+    """Record one irregularity: to `notes` if a caller gave a list, and always
+    to stderr.
+
+    Both halves are the point. A parser that skips what it cannot read and says
+    nothing is the bug CLU-167 is about, wearing a different hat: the old regex
+    also "skipped" the rows it could not parse. So every skip is visible on
+    stderr where a generator's own output will carry it, and collectable by a
+    caller that wants to assert on it.
+    """
+    if notes is not None:
+        notes.append(message)
+    sys.stderr.write("gwlib.wiki: %s\n" % message)
+    return message
+
+
+def templates(text, name="Episode list", offsets=False, keep_comments=False,
+              notes=None):
     """Every `{{name…}}` on the page, whole, `{{` and `}}` included.
 
     Found by counting braces, so a block that closes inline on a field line
@@ -355,9 +457,16 @@ def templates(text, name="Episode list", offsets=False, keep_comments=False):
     returns them as five episodes that do not exist. Pass `keep_comments=True`
     only if you want those.
 
-    Raises ValueError on a block whose braces never close. Real pages reach that
-    state through conditional transclusion, which direct_view() resolves first,
-    so what survives that is genuinely broken input and worth stopping on.
+    A block whose braces never close is SKIPPED, and the skip is reported
+    through note() — appended to `notes` if a caller passes a list, and written
+    to stderr either way. It does not raise, and that is deliberate: this
+    function has 69 callers reached through episodes(), and one vandalised or
+    mid-edit article emptying a whole catalogue list is a worse failure than the
+    row-dropping this file was rewritten to stop. The old regex skipped one
+    malformed row and returned every other row on the page; so does this, and
+    unlike the old regex it says which one.
+
+    Raises nothing.
     """
     cuts = _CONDITIONAL_DIRECT if keep_comments else \
         (r"<!--.*?-->",) + _CONDITIONAL_DIRECT
@@ -380,9 +489,9 @@ def templates(text, name="Episode list", offsets=False, keep_comments=False):
             else:
                 i += 1
         if depth != 0:
-            raise ValueError("unclosed {{%s}} template at offset %d: %r"
-                             % (name, index[m.start()],
-                                view[m.start():m.start() + 120]))
+            note(notes, "skipped unclosed {{%s}} at offset %d: %r"
+                 % (name, index[m.start()], view[m.start():m.start() + 90]))
+            continue
         out.append((index[m.start()], view[m.start():i]) if offsets
                    else view[m.start():i])
     return out
@@ -410,6 +519,10 @@ def template_fields(block):
     Positional arguments — the `|Star Trek: Enterprise season 1` of a sublist —
     land under integer keys 1, 2, … rather than being dropped, so nothing in
     the block is silently lost.
+
+    Raises ValueError when handed something that is not one whole template,
+    which is a caller error rather than bad input: everything templates()
+    returns is whole by construction, so episodes() cannot reach it.
     """
     if not (block.startswith("{{") and block.endswith("}}")):
         raise ValueError("not a whole template: %r" % (block[:60],))
@@ -449,7 +562,7 @@ def field(fields, *names, default=None):
     return "" if any(n in fields for n in names) else default
 
 
-def numbers(fields, base="EpisodeNumber"):
+def numbers(fields, base="EpisodeNumber", notes=None):
     """Every episode number a row claims under `base`, in order, as written.
 
     Two notations say the same thing and the old reader lost both. `53<hr>54`
@@ -461,31 +574,114 @@ def numbers(fields, base="EpisodeNumber"):
     "this was N broadcasts", which is not the same claim: Doctor Who's season 6
     serials carry NumParts of 4 to 10 with a single EpisodeNumber and no
     `EpisodeNumber_` anywhere, so a NumParts-triggered reader returns nothing
-    for every one of them. Where both are present they are cross-checked.
+    for every one of them.
 
-    The value is cleaned before digits are looked for, and that ordering is not
-    cosmetic: `19<ref name="finale2"/>` yields [19, 2] otherwise, and an
-    episode 2 invented out of a ref name is fabricated catalogue data.
+    NumParts is REPORTED where it disagrees with the suffixed numbers and never
+    enforced, which is the correction of a round of this file getting it wrong
+    in both directions at once. It used to raise, comparing NumParts against the
+    COUNT OF NUMBERS — the very conflation the paragraph above says is not the
+    same claim, since one part is free to carry two numbers over an `<hr>`. And
+    the walk itself was indexed by how many numbers had been collected rather
+    than by part, so `EpisodeNumber_1 = 53<hr>54` made it look for `_3` and skip
+    `_2` entirely, while a `_1` carrying no digit at all looked for `_1` forever
+    and hung. It now walks parts, 1, 2, 3, and stops at the first one missing.
+
+    Templates are removed before digits are looked for, and the ordering is not
+    cosmetic — every one of these is a real value in the cached corpus, and
+    every wrong answer is an episode that does not exist:
+
+        19<ref name="finale2"/>      [19]      not [19, 2] out of a ref name
+        192a{{anchor|ep192}}         [192]     not [192, 192], twice over
+        5 {{small|(''22'')}}         [5]       not [5, 22]; 22 is a production no.
+        3.75                         [3.75]    not [3, 75]
+
+    A number is a run of digits with an optional decimal part, so a decimal
+    comes back as a float and as itself. `int()` folding 3.5 into 3 is how a
+    recap special collides with the real episode 3, and two generators here
+    already carry their own raw readers with a docstring explaining exactly
+    that — make_gurren-lagann.py for episode 5.5 and make_vinland-saga.py for
+    30.5 and 42.5. Callers that want whole episodes only can test the type;
+    callers that want the row's own claim now have it.
 
     Returns [] when the field is missing or carries no number — reporting what
     the source says, including that it says nothing. The generators assert
     their own coverage.
     """
     if ("%s_1" % base) in fields:
-        out = []
-        while ("%s_%d" % (base, len(out) + 1)) in fields:
-            out += _digits(fields["%s_%d" % (base, len(out) + 1)])
-        parts = fields.get("NumParts", "")
-        want = _digits(parts)
-        if want and len(out) != want[0]:
-            raise ValueError("%s_1.. gave %r but NumParts says %r"
-                             % (base, out, parts))
+        out, part = [], 1
+        while ("%s_%d" % (base, part)) in fields:
+            out += _digits(fields["%s_%d" % (base, part)])
+            part += 1
+        claimed = _digits(fields.get("NumParts", ""))
+        if claimed and claimed[0] != part - 1:
+            note(notes, "%s_1..%d against NumParts=%r: the row numbers %d "
+                        "part(s) and claims %s" % (base, part - 1,
+                                                   fields.get("NumParts"),
+                                                   part - 1, claimed[0]))
         return out
     return _digits(fields.get(base, ""))
 
 
+_NUMBER = re.compile(r"\d+(?:\.\d+)?")
+
+
 def _digits(value):
-    return [int(d) for d in re.findall(r"\d+", clean(value or ""))]
+    """Numbers in a field value: templates removed, then cleaned, then read.
+
+    Templates go FIRST and whole, innermost out, because a template inside a
+    number field is always decoration and its arguments carry digits of their
+    own — `{{anchor|ep192}}`, `{{small|(''22'')}}`, `{{ref label|a|1}}`. Letting
+    clean() resolve them to their last argument hands those digits back as
+    episode numbers. Removing them can only lose a number the source stated
+    inside a template, which no value in the cached corpus does, and losing one
+    yields [] and a generator's own coverage assert rather than a wrong row.
+    """
+    t = value or ""
+    for _ in range(6):
+        stripped = re.sub(r"\{\{[^{}]*\}\}", "", t)
+        if stripped == t:
+            break
+        t = stripped
+    return [float(d) if "." in d else int(d)
+            for d in _NUMBER.findall(clean(t))]
+
+
+_WHOLLY_QUOTED = re.compile(r'"([^"]*)"\Z')
+
+
+def display_title(raw):
+    """An |RTitle / |AltTitle value as a plain title, or "" if it is not one.
+
+    RTitle is free-form DISPLAY markup. It is where a source puts quoting, part
+    markers and HTML precisely because |Title cannot hold them, so a value found
+    there is not a title by virtue of being found there — it CONTAINS one, next
+    to whatever else the editor wanted rendered in the cell:
+
+        ''[[Babylon 5: The Gathering]]''      is a title, and only a title
+        "Nerve" (Part 1)                     is a title plus a part marker
+        ''[[Gamera vs. Barugon]]''<br />
+          <small>''(Daikaijū Kettō…)''</small>  is a title plus a second title
+
+    So this accepts the first shape and refuses the other two, and the test is
+    what is LEFT after clean(): a value wrapped in quotes end to end yields what
+    is inside them, a value with no quoting and no HTML tag left in it is itself,
+    and anything else is markup this module cannot resolve into one name. An
+    empty title is better than a wrong one — and the raw field is still on the
+    row, so a caller that knows its own source can read the part number out of
+    it, which is what scratch/agent-farscape/parse.py does.
+
+    Refusing is not cosmetic. `.strip('"')` over `"Nerve" (Part 1)` removes the
+    trailing quote and nothing else, and Farscape ships eleven episodes called
+    `Nerve" (Part 1)`; clean() strips no HTML tags at all, so Mystery Science
+    Theater 3000's rows would ship with a `<small>` in the middle of them.
+    """
+    t = clean(raw or "")
+    m = _WHOLLY_QUOTED.match(t)
+    if m:
+        return m.group(1).strip()
+    if '"' in t or "<" in t or ">" in t:
+        return ""
+    return t
 
 
 class Episode(collections.namedtuple(
@@ -494,42 +690,62 @@ class Episode(collections.namedtuple(
 
     Unpacks as the 5-tuple it always was, because 22 generators unpack it
     positionally and this file is not the place to move them. `num_overall` and
-    `num_in_season` stay int-or-None and stay the FIRST number, so a caller
-    that never knew a row could carry two sees exactly what it saw before.
+    `num_in_season` stay the FIRST number, so a caller that never knew a row
+    could carry two sees exactly what it saw before. They are None where the row
+    states no number, an int where it states a whole one, and a float where it
+    states 5.5 — see numbers() for why a recap special keeps its half.
     What the tuple cannot express hangs off the row instead:
 
         .fields    every argument on the block, from template_fields()
         .nums      all overall numbers, e.g. [53, 54] or [1, 2]
         .nums2     all in-season numbers
         .numparts  NumParts as written, or ""
+        .rtitle    |RTitle, cleaned — display markup and all
+        .alttitle  |AltTitle, cleaned
         .start     offset of the block in the text handed to episodes()
+
+    `.rtitle` is the other half of display_title(): where the source's RTitle
+    carries more than a name, `title` is empty and this is where the name went.
     """
 
 
-def episodes(text):
+def episodes(text, notes=None):
     """Episode-list entries: (num_overall, num_in_season, title, year, block).
 
-    A composition of templates(), template_fields(), field() and numbers(); see
-    Episode for the numbers a row can now carry that the tuple cannot hold.
+    A composition of templates(), template_fields(), field(), numbers() and
+    display_title(); see Episode for what a row carries that the tuple cannot.
     Handles {{Episode list}}, {{Episode list/sublist|Page}}, and
     {{#invoke:Episode list|sublist|Page}}; keeps the leading pipe inside the
     block so the first field is findable, and `block` keeps the shape it always
     had, since some generators re-read it with regexes of their own.
 
-    The title falls back Title -> RTitle -> AltTitle, and empty titles stay
-    empty (an empty title once containment-matched everything) — but an empty
-    one here now means the source genuinely has no title yet, not that the
-    field was read under the wrong name.
+    The title is |Title, falling back to |RTitle then |AltTitle through
+    display_title(), which takes one of those only where it is plainly a name
+    and not a name wrapped in display markup. Empty titles stay empty (an empty
+    title once containment-matched everything), and an empty one means the
+    source has no title here that this module can read — not that the field was
+    read under the wrong name.
+
+    Raises nothing. A block it cannot read is skipped and reported through
+    note(), to stderr and to `notes` if a caller passes a list.
     """
     out = []
-    for start, block in templates(text, "Episode list", offsets=True):
+    for start, block in templates(text, "Episode list", offsets=True,
+                                  notes=notes):
         f = template_fields(block)
         body = block[2:-2]
         cuts = _depth0_pipes(body)
-        if not cuts:
-            # The old pattern required `(\|.*?)`, so a bare `{{Episode list}}`
-            # with no arguments was never a row. It still is not one: emitting an
-            # empty row here would be inventing the thing this card is about.
+        if not any(isinstance(k, str) for k in f):
+            # A block with no NAMED argument is not a row, and emitting one here
+            # would be inventing exactly what this card is about. Three shapes
+            # reach this line and all three are plumbing, not episodes: a bare
+            # `{{Episode list}}`, and the two sublist pointers
+            # `{{Episode list/sublist|List of Foo episodes}}` and
+            # `{{#invoke:Episode list|sublist|List of Foo episodes}}`, whose only
+            # arguments name the page the real rows live on. Each of them used to
+            # come back as a nameless, unnumbered, undated row — two of them
+            # newly, one of them since before CLU-167, and the comment that used
+            # to sit here promised the opposite while guarding only the first.
             continue
         # `block` is reproduced byte-for-byte as the old regex built it, because
         # some generators re-read it with regexes of their own. Two quirks are
@@ -546,15 +762,24 @@ def episodes(text):
             if parts[0].strip().lower() == "sublist" \
                     and "\n" not in parts[1].rstrip():
                 skip = 2
-        legacy = "\n" + re.sub(r"\n\s*\Z", "", body[cuts[min(skip, len(cuts) - 1)]:])
-        nums = numbers(f, "EpisodeNumber")
-        nums2 = numbers(f, "EpisodeNumber2")
-        title = clean(field(f, "Title", "RTitle", "AltTitle") or "").strip('"')
+        if skip >= len(cuts):
+            # Everything on the block was sublist plumbing; the guard above has
+            # already let those go, and this keeps the index below honest rather
+            # than clamping it back onto an argument it means to skip.
+            continue
+        legacy = "\n" + re.sub(r"\n\s*\Z", "", body[cuts[skip]:])
+        nums = numbers(f, "EpisodeNumber", notes=notes)
+        nums2 = numbers(f, "EpisodeNumber2", notes=notes)
+        rtitle = clean(f.get("RTitle") or "")
+        alttitle = clean(f.get("AltTitle") or "")
+        title = clean(field(f, "Title") or "").strip('"') \
+            or display_title(f.get("RTitle")) or display_title(f.get("AltTitle"))
         ym = re.search(r"(19|20)\d{2}", field(f, "OriginalAirDate") or "")
         e = Episode(nums[0] if nums else None, nums2[0] if nums2 else None,
                     title, int(ym.group(0)) if ym else None, legacy)
         e.fields, e.nums, e.nums2 = f, nums, nums2
         e.numparts, e.start = f.get("NumParts", ""), start
+        e.rtitle, e.alttitle = rtitle, alttitle
         out.append(e)
     return out
 

@@ -1,4 +1,5 @@
-"""Pins for the seven CLU-167 parser defects, plus the two found fixing them.
+"""Pins for the seven CLU-167 parser defects, the two found fixing them, and the
+six found in the fix.
 
     python tools/test_wiki_parser.py
 
@@ -10,18 +11,32 @@ answer cannot tell a fixed parser from a fixture that never exercised the bug,
 so each case asserts twice:
 
   1. gwlib.wiki, as it stands, gets the right answer; and
-  2. the PRE-CLU-167 rule, re-implemented below in `_old_*`, gets the exact
-     wrong answer that shipped in the card — proving this fixture really does
-     land on the defect.
+  2. the rule that HAD the bug, re-implemented below, gets the exact wrong
+     answer that was measured — proving this fixture really does land on it.
 
 So reverting a fix fails (1), and swapping a fixture for a tamer excerpt fails
-(2). The `_old_*` functions are copied verbatim from the parser as it was at
-commit 5ad60de and must never be "fixed"; they are the before-photograph.
+(2). There are two before-photographs, because there were two rounds of this:
+
+  `_old_*`   the parser as it was at commit 5ad60de, before CLU-167. The seven
+             original defects are pinned against these.
+  `_d98_*`   the CLU-167 fix as it was at commit d9895ed, which fixed all seven
+             and introduced three of its own — it deleted every argument-less
+             template it did not recognise, read |RTitle as a plain title, and
+             read episode numbers out of a template's arguments and out of the
+             two halves of a decimal. Those three are pinned against these.
+
+Neither set may ever be "fixed"; they are photographs. `_d98_*` isolates the one
+rule that changed in each case and calls the live wiki.clean() for the rest,
+which is why each one names the rule it is standing in for.
 
 The fixtures in tools/data/wiki_fixtures/ are verbatim excerpts of the real
 articles, one per case. They are tracked deliberately: the test is worthless
 without them, and a test that passes only on the machine that wrote it is the
 "someone else pulls the repo and runs it" failure this project has paid for.
+Every count quoted in a docstring here is over these tracked fixtures and is
+re-derived by the check beside it; counts over the gitignored corpus of cached
+articles live in tools/measure_wiki_parser.py, which prints them rather than
+remembering them.
 """
 import pathlib
 import re
@@ -77,6 +92,40 @@ def _old_clean(t):
     t = re.sub(r"\{\{[^{}|]*\|(?:[^{}|]*\|)*([^{}|]*)\}\}", r"\1", t)
     t = t.replace("{{", "").replace("}}", "").replace("''", "")
     return re.sub(r"\s+", " ", t).strip(" ,|")
+
+
+# --------------------------------------------------------------------------
+# The CLU-167 fix as it was at d9895ed, so the three defects IT introduced can
+# be shown to be what these fixtures land on. One rule each, verbatim.
+# --------------------------------------------------------------------------
+_D98_BARE = {
+    "hsp": "", "nbsp": " ", "thinsp": " ", "shy": "", "wbr": "", "zwsp": "",
+    "snd": " – ", "spnd": " – ", "sndash": " – ", "spndash": " – ",
+    "spaced en dash": " – ", "ndash": "–", "en dash": "–", "mdash": "—",
+    "em dash": "—", "spaces": " ", "'": "'", "'s": "'s",
+}
+
+
+def _d98_bare(name):
+    """clean()'s argument-less-template rule at d9895ed: resolve against a fixed
+    table and DROP anything not in it, "because a template name is never the
+    text a reader wants". {{Yes}}, {{No}}, {{TBA}} and {{n/a}} are not in it."""
+    return _D98_BARE.get(name.strip().lower(), "")
+
+
+def _d98_title(fields):
+    """episodes()' title rule at d9895ed: Title -> RTitle -> AltTitle, cleaned,
+    then `.strip('"')` — which takes one quote off each end of display markup
+    and ships whatever is left."""
+    return wiki.clean(wiki.field(fields, "Title", "RTitle", "AltTitle")
+                      or "").strip('"')
+
+
+def _d98_numbers(fields, base="EpisodeNumber"):
+    """numbers()' digit rule at d9895ed: every run of digits in the CLEANED
+    value, so a template's own arguments and both halves of a decimal each come
+    back as an episode."""
+    return [int(d) for d in re.findall(r"\d+", wiki.clean(fields.get(base) or ""))]
 
 
 # --------------------------------------------------------------------------
@@ -418,9 +467,6 @@ def test_conditional_transclusion_does_not_break_brace_counting():
     eq(e.title, "The Rebel Flesh", "and the row reads")
     eq(e.num_overall, 44, "with its number")
 
-    ok(isinstance(raises(lambda: wiki.templates("{{Episode list\n|Title=x\n")),
-                  ValueError), "genuinely unclosed braces still raise")
-
 
 # --------------------------------------------------------------------------
 # 9. the opening pattern tolerated no whitespace after `{{`
@@ -432,6 +478,266 @@ def test_newline_after_the_open_braces_still_matches():
          "|OriginalAirDate={{Start date|2009|6|18}}\n}}\n")
     eq(len(_old_blocks(t)), 0, "old: the row was invisible")
     eq([e.title for e in wiki.episodes(t)], ["Pay Day"], "new: the row is read")
+
+
+# --------------------------------------------------------------------------
+# B1. dropping an unknown argument-less template DELETED the cell's content
+# --------------------------------------------------------------------------
+def test_an_argumentless_template_that_is_the_cell_keeps_its_name():
+    """The Child's Play franchise article states an unreleased film's date and
+    director as `{{TBA}}` and nothing else. Dropped, the row reads as released
+    with no date, which is what tripped make_childs-play.py's own assert:
+    `assert f["released"] or "TBA" in f["date_cell"]`."""
+    t = fixture("childsplay-franchise-films")
+    rows = wiki.table_rows(t, 1, header_probe='! scope="row"')
+    eq(len(rows), 9, "nine films in the Films table")
+
+    title_line, cols = rows[7]
+    ok("Untitled ''Chucky'' film" in title_line, "the unreleased one")
+    eq(wiki.clean(cols[0]), "TBA",
+       "its release-date cell is the word TBA, and nothing else")
+
+    eq(_d98_bare("TBA"), "", "d9895ed: dropped, so the cell came back empty")
+    eq(wiki.clean("{{TBA}}"), "TBA", "and now it does not")
+
+    # the rows around it are unaffected either way, which is what made the
+    # deletion quiet: only the cells whose whole content was a template moved.
+    # clean() does not render {{Start date}} — it keeps the last argument, which
+    # is the day — and that is the same before and after.
+    eq(wiki.clean(rows[6][1][0]), "03", "a dated row is unchanged")
+    ok("Curse of Chucky" in rows[5][0], "and the {{efn}} row is still read")
+    eq(wiki.clean(rows[5][1][0]), "24",
+       "its footnote gone whole, its date cell as it always was")
+
+
+def test_the_status_template_family_is_text_not_decoration():
+    """{{yes}}, {{no}}, {{TBA}}, {{n/a}}, {{won}}, {{nom}} and {{?}} are how
+    every awards table and filmography crosstab on Wikipedia says what it says:
+    the template's NAME is the entire rendered content of the cell. Measured
+    over the cached corpus, dropping them took 498 fields off Jackie Chan's
+    filmography and emptied Clint Eastwood's director and producer columns —
+    which is why the rule is an allowlist of templates that render nothing and
+    a default of keeping the name.
+
+    No fixture: a bare `{{yes}}` has no article context to excerpt, and the
+    crosstab that pays for it is pinned by the {{TBA}} case above."""
+    for name in ("yes", "no", "Yes", "No", "TBA", "n/a", "na", "won", "nom",
+                 "nominated", "ya", "?", "unknown", "win", "notnom"):
+        eq(_d98_bare(name), "", "d9895ed dropped {{%s}}" % name)
+        eq(wiki.clean("{{%s}}" % name), name,
+           "{{%s}} renders as its own name, verbatim case" % name)
+
+    # and the allowlist still wins, so defect 7 does not come back
+    for raw, want in (("X{{hsp}}Y", "XY"), ("X{{nbsp}}Y", "X Y"),
+                      ("A{{snd}}B", "A – B"), ("{{PAGENAME}}", ""),
+                      ("{{Episode cast}} [[Cristin Milioti]]", "Cristin Milioti")):
+        eq(wiki.clean(raw), want, "clean(%r)" % raw)
+
+
+def test_parser_functions_render_as_nothing_not_as_their_source():
+    """`{{#expr:5861430+14688240}}` is arithmetic MediaWiki performs. Leaking
+    the source text states a number that is not the answer — the pre-CLU-167
+    reader did that to 103 CONviewers fields — and this module does not evaluate
+    parser functions, so the honest answer is nothing at all."""
+    eq(_old_clean("{{#expr:5861430+14688240}}"), "#expr:5861430+14688240",
+       "old: the sum's source text shipped as if it were the sum")
+    eq(wiki.clean("{{#expr:5861430+14688240}}"), "", "and now nothing does")
+    eq(wiki.numbers({"CONviewers": "{{#expr:7.487 round 2}}"}, "CONviewers"), [],
+       "so a caller gets no number and fails its own coverage assert")
+
+
+# --------------------------------------------------------------------------
+# B2. reading |RTitle as a plain title FABRICATED eleven Farscape titles
+# --------------------------------------------------------------------------
+def test_rtitle_that_is_display_markup_does_not_become_a_title():
+    """RTitle is where a source puts what |Title cannot hold. Farscape's
+    two-parters put the part marker there — `"Nerve" (Part 1)` — and `.strip('"')`
+    takes off the trailing quote and leaves `Nerve" (Part 1)`."""
+    t = fixture("farscape-s1-nerve-rtitle")
+    plain, nerve, hidden = [wiki.template_fields(b)
+                            for b in wiki.templates(t, "Episode list")]
+
+    eq(nerve["RTitle"], '"Nerve" (Part 1)', "the source's own display markup")
+    ok("Title" not in nerve, "and there is no |Title to prefer")
+    eq(_d98_title(nerve), 'Nerve" (Part 1)',
+       "d9895ed: a stray quote and a part marker, shipped as an episode title")
+    eq(_d98_title(hidden), 'The Hidden Memory" (Part 2)', "and again")
+
+    e_plain, e_nerve, e_hidden = wiki.episodes(t)
+    eq(e_nerve.title, "", "an empty title is better than a wrong one")
+    eq(e_nerve.rtitle, '"Nerve" (Part 1)',
+       "and the raw value is on the row, so a caller can read the part number")
+    eq(e_hidden.title, "", "likewise")
+    eq((e_nerve.num_overall, e_nerve.num_in_season), (19, 19), "still numbered")
+    eq(e_nerve.year, 2000, "still dated")
+
+    # the control: a row on the same table with a real |Title is untouched
+    eq(e_plain.title, "Back and Back and Back to the Future", "|Title still wins")
+    eq(e_plain.rtitle, "", "and carries no RTitle")
+
+
+def test_rtitle_that_is_plainly_a_title_is_still_read():
+    """The other half, and the reason this is a rule and not a revert: defect 6
+    was real. Bandersnatch files its name under RTitle because it has no episode
+    number, and three shapes of RTitle are a title and nothing else."""
+    t = fixture("blackmirror-bandersnatch")
+    e, = wiki.episodes(t)
+    eq(e.title, "Bandersnatch", "an italicised link is a title")
+
+    for raw, want in (
+            ("''[[Babylon 5: The Gathering]]''", "Babylon 5: The Gathering"),
+            ('"[[The Five Doctors]]"', "The Five Doctors"),
+            ("Prologue", "Prologue"),
+            ("[[Coolio]] & [[Don Rickles]]", "Coolio & Don Rickles"),
+            ('"Nerve" (Part 1)', ""),
+            ('"Meanwhile, in the TARDIS..." (Part 1)', ""),
+            ("''[[Gamera vs. Barugon]]''<br />''<small>(Daikaijū Kettō)</small>''",
+             "")):
+        eq(wiki.display_title(raw), want, "display_title(%r)" % raw)
+
+    ok(wiki.display_title("A<small>B</small>") == "",
+       "clean() strips no HTML tags, so a value still carrying one is refused")
+
+
+# --------------------------------------------------------------------------
+# B3. numbers() read episodes out of template arguments and out of decimals
+# --------------------------------------------------------------------------
+def test_a_decimal_episode_number_is_one_episode_not_two():
+    """Attack on Titan's recap specials are numbered 3.5, 3.25 and 3.75 on the
+    list page. Read as digit runs they are episodes 3 and 5, 3 and 25, 3 and 75
+    — five episodes conjured out of three, on an article cached in this repo."""
+    t = fixture("decimal-and-anchored-episode-numbers")
+    rows = [wiki.template_fields(b) for b in wiki.templates(t, "Episode list")]
+    eq([r["EpisodeNumber"] for r in rows[:3]], ["3.5", "3.25", "3.75"],
+       "the source's own numbering")
+
+    eq([_d98_numbers(r) for r in rows[:3]], [[3, 5], [3, 25], [3, 75]],
+       "d9895ed: six episodes where the source states three")
+    eq([wiki.numbers(r) for r in rows[:3]], [[3.5], [3.25], [3.75]],
+       "one each, and as written — int() would fold all three onto episode 3")
+
+    eps = wiki.episodes(t)
+    eq([e.num_overall for e in eps[:3]], [3.5, 3.25, 3.75],
+       "the 5-tuple reports the row's own number")
+    eq([e.num_in_season for e in eps[:3]], [1, 2, 3], "whole ones stay ints")
+    ok(all(isinstance(e.num_in_season, int) for e in eps[:3]),
+       "so a caller that only ever sees whole numbers sees ints")
+    eq(eps[0].title, "Ilse's Notebook: Memoirs of a Scout Regiment Member",
+       "and the row is otherwise unchanged")
+
+
+def test_a_template_in_a_number_field_does_not_add_an_episode():
+    """Doctor Who's two-part stories anchor their rows: `192a{{anchor|ep192}}`.
+    clean() resolves that to its last argument, "ep192", so the row reported
+    episode 192 twice. {{small}} and {{ref label}} do the same."""
+    t = fixture("decimal-and-anchored-episode-numbers")
+    dw = wiki.template_fields(wiki.templates(t, "Episode list")[3])
+    eq(dw["EpisodeNumber"], "192a{{anchor|ep192}}", "the source's own anchor")
+
+    eq(_d98_numbers(dw), [192, 192], "d9895ed: the anchor's own digits, again")
+    eq(wiki.numbers(dw), [192], "once, which is how many times it aired")
+
+    for raw, want in ((r'19<ref name="finale2"/>', [19]),
+                      ("19{{efn|name=n3}}", [19]),
+                      ("5 {{small|(''22'')}}", [5]),
+                      ("44<br />193.5", [44, 193.5]),
+                      ("31{{ref label|a|1}}", [31])):
+        eq(wiki.numbers({"EpisodeNumber": raw}), want, "numbers(%r)" % raw)
+
+
+def test_the_suffixed_walk_counts_parts_and_cannot_hang():
+    """The `_1`/`_2` walk was indexed by how many NUMBERS it had collected, so a
+    part carrying two of them skipped the next part, and a part carrying none
+    looked for the same key forever. It walks parts now."""
+    eq(wiki.numbers({"EpisodeNumber_1": "53<hr>54", "EpisodeNumber_2": "55"}),
+       [53, 54, 55], "a two-number first part does not swallow the second")
+    eq(wiki.numbers({"EpisodeNumber_1": "", "EpisodeNumber_2": "7"}), [7],
+       "an empty first part does not loop forever")
+    eq(wiki.numbers({"EpisodeNumber_1": "1", "EpisodeNumber_2": "2",
+                     "EpisodeNumber_3": "3"}), [1, 2, 3], "three parts, in order")
+
+    f = wiki.template_fields(
+        wiki.templates(fixture("enterprise-s1-broken-bow"), "Episode list")[0])
+    eq(wiki.numbers(f), [1, 2], "Broken Bow is still episodes 1 and 2")
+
+
+def test_a_numparts_disagreement_is_reported_and_not_raised():
+    """NumParts counts BROADCASTS and the suffixed keys count numbers, which the
+    old cross-check conflated and then raised over — taking the row, and through
+    episodes() the whole page, down over an inconsistency in the source."""
+    # three parts' worth of numbers over two parts is not a disagreement, and
+    # this is the case the old cross-check raised over
+    notes = []
+    eq(wiki.numbers({"EpisodeNumber_1": "53<hr>54", "EpisodeNumber_2": "55",
+                     "NumParts": "2"}, notes=notes), [53, 54, 55],
+       "two parts, three numbers, and no complaint about it")
+    eq(notes, [], "because NumParts counts parts, which is what is compared")
+
+    # a real disagreement: one numbered part against a claim of two broadcasts
+    notes = []
+    eq(wiki.numbers({"EpisodeNumber_1": "1", "NumParts": "2"}, notes=notes), [1],
+       "the number still comes back")
+    eq(len(notes), 1, "and the disagreement is recorded")
+    ok("NumParts" in notes[0], "naming what disagreed: %r" % (notes[0:1],))
+
+    notes = []
+    eq(wiki.numbers({"EpisodeNumber_1": "1", "EpisodeNumber_2": "2",
+                     "NumParts": "2"}, notes=notes), [1, 2], "agreement")
+    eq(notes, [], "says nothing")
+
+
+# --------------------------------------------------------------------------
+# B5. one malformed block used to take the whole page, and all 69 callers, down
+# --------------------------------------------------------------------------
+def test_one_unclosed_block_does_not_empty_the_page():
+    """A vandalised or mid-edit article emptying a catalogue list is worse than
+    the row-dropping this file was rewritten to stop. The old regex skipped one
+    malformed row and returned the rest; so does this, and it says which."""
+    t = ("{{Episode list\n|EpisodeNumber=1\n|Title=Pilot\n"
+         "|OriginalAirDate={{Start date|2024|1|1}}\n}}\n"
+         "{{Episode list\n|EpisodeNumber=2\n|Title=Vandalised\n|Aux1={{\n"
+         "{{Episode list\n|EpisodeNumber=3\n|Title=Third\n"
+         "|OriginalAirDate={{Start date|2024|1|15}}\n}}\n")
+    notes = []
+    eq([e.title for e in wiki.episodes(t, notes=notes)], ["Pilot", "Third"],
+       "every row but the damaged one survives, on both sides of it")
+    eq(len(notes), 1, "and the skip is reported, not silent")
+    ok("unclosed" in notes[0] and "Episode list" in notes[0],
+       "naming what was skipped: %r" % (notes[0:1],))
+
+    eq(wiki.templates("{{Episode list\n|Title=x\n"), [],
+       "a page that is nothing but an unclosed block yields no rows")
+    eq(raises(lambda: wiki.episodes("{{Episode list\n|Title=x\n")), None,
+       "and raises nothing doing it")
+
+
+# --------------------------------------------------------------------------
+# B6. a sublist POINTER is not a row, and two of the three shapes invented one
+# --------------------------------------------------------------------------
+def test_a_sublist_pointer_is_not_an_episode():
+    """`{{Episode list/sublist|List of Foo episodes}}` names the page the real
+    rows live on. It carries no named argument, so it is plumbing — and a
+    nameless, unnumbered, undated row emitted from it is an invented episode,
+    two lines under a comment promising not to invent one."""
+    for t in ("{{#invoke:Episode list|sublist|List of Foo episodes}}",
+              "{{Episode list/sublist|List of Foo episodes}}",
+              "{{Episode list/sublist|List of Foo episodes\n}}",
+              "{{Episode list}}",
+              "{{Episode list\n|List of Foo episodes\n}}"):
+        eq(wiki.episodes(t), [], "not a row: %r" % t)
+        eq(len(wiki.templates(t, "Episode list")), 1,
+           "though it IS a template, and templates() still returns it")
+
+    # the third shape is the one the PRE-CLU-167 reader also got wrong, and its
+    # `\n\s*}}` terminator is why only that one of the three reached it
+    eq(len(_old_blocks("{{Episode list/sublist|List of Foo episodes\n}}")), 1,
+       "old: an invented row of its own, since before CLU-167")
+
+    # and a sublist pointer that DOES carry rows' worth of fields is still a row
+    f = fixture("enterprise-s1-broken-bow")
+    e, = wiki.episodes(f)
+    eq(e.title, "Broken Bow", "a real sublist row is untouched")
+    eq(e.fields[1], "Star Trek: Enterprise season 1", "positional page name kept")
 
 
 # --------------------------------------------------------------------------
