@@ -11727,6 +11727,20 @@ function downloadICS(){
   }
   const ymd = iso=> iso.replace(/-/g, '');
   const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//clubd//EN'];
+  // ⚠ DTSTAMP is REQUIRED by RFC 5545 on every VEVENT, and this file had none
+  // — found by the audit reading CLU-144's own thread, where it was named as a
+  // prerequisite that ships whichever option wins and then was not shipped.
+  // SEQUENCE matters as much in practice: without it, a calendar that has
+  // already imported one of these events is entitled to ignore every later
+  // version of it, so a date corrected here would never reach the calendar it
+  // was wrong in. Both are emitted on every event below, from one place.
+  const stamp = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+  // bumped when the set of events for a list changes shape, which is what a
+  // re-export IS — same UIDs, newer content, so the calendar must take the new
+  // one. Seconds since an arbitrary epoch would do; the export time is simpler
+  // and monotonic for the same reason.
+  const seq = Math.floor(Date.now() / 1000) % 2147483647;
+  const EV = ()=> ['DTSTAMP:' + stamp, 'SEQUENCE:' + seq];
   if(!ws || !ws.length){
     // CLU-144. A qualifying list exports one event per section instead of the
     // single finish date. The last one lands ON the finish date rather than
@@ -11743,7 +11757,7 @@ function downloadICS(){
         // the final boundary IS the finish; rounding must not move it
         const on = last ? pl.target_date
                         : shiftISO(start, Math.max(1, Math.round(m.frac * span)));
-        lines.push('BEGIN:VEVENT',
+        lines.push('BEGIN:VEVENT', ...EV(),
           'UID:gw-' + SLUG + '-s' + (k + 1) + '@groupwatch',
           'DTSTART;VALUE=DATE:' + ymd(on),
           'DTEND;VALUE=DATE:' + ymd(shiftISO(on, 1)),
@@ -11762,7 +11776,7 @@ function downloadICS(){
       icsSave(lines);
       return;
     }
-    lines.push('BEGIN:VEVENT',
+    lines.push('BEGIN:VEVENT', ...EV(),
       // its own UID stem, so a finish-date export and a window export can sit
       // in one calendar without overwriting each other
       'UID:gw-' + SLUG + '-finish@groupwatch',
@@ -11778,7 +11792,7 @@ function downloadICS(){
     return;
   }
   ws.forEach((w, k)=>{
-    lines.push('BEGIN:VEVENT',
+    lines.push('BEGIN:VEVENT', ...EV(),
       // the domain half stays as it was ON PURPOSE: a UID is an identity key,
       // and changing it makes a re-import create duplicate events beside the
       // old ones rather than updating them. Only PRODID, which is display
