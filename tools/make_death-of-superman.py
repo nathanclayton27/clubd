@@ -166,7 +166,7 @@ SECTIONS = [
     ("funeral", "Funeral for a Friend",
      "January – April 1993 · the aftermath, and then a gap", 1,
      "Adventures of Superman Vol 1 498", "Supergirl and Team Luthor Vol 1 1",
-     "Eight issues of consequence, and then every Superman book stopped for "
+     "Nine issues of consequence, and then every Superman book stopped for "
      "three months. The two one-shots are optional; they hand the city to "
      "the supporting cast for an issue each."),
     ("reign", "Reign of the Supermen!",
@@ -182,16 +182,13 @@ SECTIONS = [
      "July – October 1993 · the back half", 1,
      "Action Comics Vol 1 689", "Adventures of Superman Vol 1 505",
      "Where the 2016 collections cut the arc in two. Same weekly rotation, "
-     "one outside tie-in — a Green Lantern issue, because the story moves to "
-     "his city."),
+     "and one tie-in from outside the Superman books."),
     ("epilogue", "Past the end",
      "October – November 1993 · where the collections stop", 2,
      "Action Comics Vol 1 692", "Superman Vol 2 83",
      "DC Database's storyline page ends one issue before these two; the 2016 "
-     "collection keeps them. They are worth having — one settles the "
-     "reporter's half of the story and the other is a late epilogue to the "
-     "funeral — but neither is part of the arc, so they sit out here where "
-     "you can stop without them."),
+     "collection keeps them. Both are worth having, and neither is part of "
+     "the arc, so they sit out here where you can stop without them."),
 ]
 
 NOTES = [
