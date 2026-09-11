@@ -804,8 +804,8 @@ can go in today and the policy waits on its own.
 
 | Order | File | What it does | Must be true before it runs |
 |---|---|---|---|
-| 1 | `scratch/security/clu153-A-find_profile_by_code.sql` | Creates `find_profile_by_code(text)` — definer, `search_path = public, pg_temp`, refuses anonymous callers, `upper(btrim())`s the code, exact match, one row `(user_id, username, fcode)` or none; misses charged through `rate_limit_guard`/`rate_limit_note` under kind `'fcode'` (20/hour, 60/day, per user). Revoked from `public, anon, authenticated`, granted to `authenticated`. Touches no policy, grant or row. Records itself in the ledger. | Nothing beyond the rate-limit helpers (CLU-35, live) and the ledger (CLU-404, live). **Safe now, safe before the front end, safe to re-run.** |
-| 2 | `scratch/security/clu153-B-narrow-profiles.sql` | Drops `"profiles readable when signed in"` and creates `"read own profile"` (`auth.uid() = user_id`) and `"read connected profiles"` (an edge in either direction in `friendships`). One transaction, so the drop cannot land without both replacements. Asserts exactly two SELECT policies afterwards. Records itself. | **File A has run, the `index.html` live on clubd.watch calls `find_profile_by_code`, and adding a friend by code has been confirmed working there.** Enforced: the file raises unless a `set_config` line is uncommented in the same paste, *and* it checks the function exists and `authenticated` can execute it. |
+| 1 | `scratch/security/clu153-A-find_profile_by_code.sql` | Creates `find_profile_by_code(text)` — definer, `search_path = public, pg_temp`, refuses anonymous callers, `upper(btrim())`s the code, exact match, one row `(user_id, username, fcode)` or none; misses charged through `rate_limit_guard`/`rate_limit_note` under kind `'fcode'` (20/hour, 60/day, per user). Revoked from `public, anon, authenticated`, granted to `authenticated`. Touches no policy, no table grant and no row of user data; inserts its own ledger row. | Nothing beyond the rate-limit helpers (CLU-35, live) and the ledger (CLU-404, live). **Safe now and safe to re-run — but not inert.** The RPC-calling front end is already deployed, so the moment A commits, live lookups move onto it: they become rate limited, and two sentences that live in this file can reach users. |
+| 2 | `scratch/security/clu153-B-narrow-profiles.sql` | Drops `"profiles readable when signed in"` and creates `"read own profile"` (`auth.uid() = user_id`) and `"read connected profiles"` (an edge in either direction in `friendships`). One transaction, so the drop cannot land without both replacements. Asserts exactly two SELECT policies afterwards. Records itself. | **File A has run, the `index.html` live on clubd.watch calls `find_profile_by_code`, and a deliberate MISS on the live site has been seen to add a `kind = 'fcode'` row to `rate_events`** — which is the only evidence that distinguishes the function from the fallback. Enforced: the file raises unless its `set_config` line is live, *and* it checks the function exists and `authenticated` can execute it. Arm it with `python scratch/security/arm-clu153-B.py` immediately before pasting — that spends the fence and re-stamps the checksum together. |
 
 **The front end is ahead of both.** Since CLU-153 `friendByCode()` calls
 `rpc('find_profile_by_code', {p_code})` first and does the direct read only
@@ -815,12 +815,88 @@ So the order of events is: front end live (already, once this commit deploys)
 → A → confirm add-by-code on the live site → B. Before A runs the site behaves
 exactly as before, at the cost of one 404 per lookup.
 
+#### A six-lens hostile audit rewrote what these files say about themselves
+
+Run 2026-09-10 after Nathan asked whether the SQL auditor had been run at all
+(*"i dont see a mention of it"*). Six independent auditors, every serious finding
+then put to two skeptics told to refute it. **No executable statement changed.**
+Four things they say about themselves did, and all four mattered:
+
+- **A's banner said "SAFE TO RUN NOW, BEFORE THE FRONT END CHANGES" and "the
+  site behaves exactly as it does today".** Both were written before commit
+  `7e48b60` shipped the RPC-calling front end. A is not a dormant function: the
+  moment it commits, live lookups move onto it, which means they **become rate
+  limited** and **two sentences that live in the SQL file can reach users**.
+  Nothing breaks — but the old banner removed the reason to test the live site
+  afterwards, and that test is the entire content of B's fence.
+- **B asked for the wrong evidence.** Its precondition was "you have added a
+  friend by code there". The deployed `friendByCode()` falls back to the direct
+  read on `PGRST202` — precisely the error a stale PostgREST schema cache
+  returns — and then **succeeds**, so a working add-by-code is the same
+  observable event whether the function served it or the old read did. The
+  replacement is a before/after count of `select count(*) from rate_events
+  where kind = 'fcode';` around a **deliberate miss**, because only a miss
+  writes that row.
+- **B claimed the narrowed policy leaves everyone else "reachable only by
+  holding their code".** It does not. `migrate-add-friends.sql`'s
+  `"add own direction"` insert policy constrains only column `a`, uncapped, so
+  **a held `user_id` is as good as a held code**: insert one `friendships` row
+  and you may read that person's username and code. B is still a strict
+  narrowing and worth running; it is not the whole answer.
+- **B's footer checksum covers its own fence line.** Leaving the fence
+  commented would record the digest of a file that *cannot run*, and because the
+  repo copy is that same fenced file, `--verify` would compare the two, find
+  them equal, and **assert the unrunnable file is the one that executed** — a
+  silent false confirmation. So arming is now one asserted, idempotent command,
+  `python scratch/security/arm-clu153-B.py`, which spends the fence and
+  re-stamps the checksum together. **Run it immediately before pasting B**, and
+  not before.
+
+Four smaller corrections came out of the same pass: A's readback comment claimed
+a wrong-shape lookup "charges one miss" when the block is `begin; … rollback;`
+and charges nothing; A said its prefix was deliberately unpinned when
+`length(want) <> 8` pins it; A's expected `proacl` did not predict the
+`service_role` entry Supabase grants by default, which is not a failed revoke;
+and B's ONE TRANSACTION paragraph lacked A's **"never half"** warning, which
+belongs there far more — a paste that stops after the drop leaves `profiles`
+with no read policy inside an uncommitted transaction still holding
+`ACCESS EXCLUSIVE` on it.
+
+**A's checksum is now `f601420c…`** (was `c062c104…`, regenerated after the
+banner rewrite). **B's footer still carries its pre-edit value on purpose**: the
+arming script re-stamps it, so B is the one file in this repo whose recorded
+checksum is written minutes before it runs.
+
+⚠ **The audit could not and did not check the database.** Every statement it
+makes about live state comes from this document and the migration files. Whether
+`profiles` still has RLS enabled, what its policies are right now, and whether
+every stored `fcode` is the eight-character shape A's check requires are all
+things only a read can answer.
+
 Both are FINAL-3 lifted verbatim — the function, the three policy statements
 and the readback — with the fence moved to B and rewritten to name the pair,
 and B's post-run note corrected: FINAL-3 warned of a PostgREST schema-cache
 window after the paste, which existed only because it created the function and
 closed the directory together. `tools/ordercheck.py` is clean on both;
 `tools/whereis.py` lists both as never run.
+
+⚠ **`whereis.py` was itself a migration stale until the audit caught it**, and
+it is the tool §2 tells you to run before every paste. Its `APPLIED` list ended
+at `migrate-add-schema-ledger.sql` and omitted `migrate-club-progress.sql`,
+which ran on 2026-09-10 — so it reported `save_progress`, `club_progress`,
+`arr_union`, `club_session_visible` and the `groups_fold_sessions` trigger as
+objects that **do not exist in the database**. A safety tool that names ten live
+objects as missing is worse than no safety tool, because it is read and
+believed. Fixed; it now flags exactly the three CLU-153 objects, which really
+are absent.
+
+⚠ **After these two run, the repo will hold three live migrations that a fresh
+clone does not contain** — this pair plus `migrate-club-progress.sql` — because
+all three live in the gitignored `scratch/security/`. Both record themselves
+with path-qualified filenames under `scratch/`, so `--verify` joins against
+paths that a clone cannot produce. §3 already carries this warning for
+`migrate-club-progress.sql`; it applies to all three now, and the question of
+what should be published is CLU-414.
 
 **Until B runs, `profiles` is still the open directory §4 describes.** A copy
 already taken is not undone by B; that is the reason not to let it wait.

@@ -64,6 +64,18 @@ APPLIED = [
     "migrate-mute-privacy.sql",
     "migrate-group-thumbs.sql",
     "migrate-add-schema-ledger.sql",
+    # Ran 2026-09-10 with a 19/19 readback (CLU-389), recorded in the ledger as
+    # it happened. It lives in the gitignored scratch/security/ rather than at
+    # the repo root — see DATABASE.md §3 for why it has not moved — and being
+    # in that folder no longer implies unrun.
+    #
+    # ⚠ It was missing from this list for the rest of that day, and the CLU-153
+    # audit caught it: without it this tool reports save_progress,
+    # club_progress, arr_union, club_session_visible and the groups_fold_sessions
+    # trigger as objects that do not exist, and DATABASE.md §2 tells you to run
+    # this tool before every paste. A safety tool that names ten live objects as
+    # missing is worse than no safety tool, because the reader trusts it.
+    "migrate-club-progress.sql",
 ]
 
 # Written, never executed. Keeping these OUT of the applied list matters: while
