@@ -123,9 +123,19 @@ h1 em{font-style:normal;color:var(--signal)}
    being ticked, because the roll-up runs on a tick and never on a page load;
    such a mark draws as a full signal bar that the list's own count still does
    not include, which is the truth rather than a finish nobody recorded. */
-.tick.part{height:100%;background:linear-gradient(to right,
-  var(--pc,var(--signal)) 0, var(--pc,var(--signal)) var(--p,0%),
-  var(--rule) var(--p,0%), var(--rule) 100%)}
+.tick.part{height:100%;
+  --pfill:linear-gradient(to right,
+    var(--pc,var(--signal)) 0, var(--pc,var(--signal)) var(--p,0%),
+    var(--rule) var(--p,0%), var(--rule) 100%);
+  background:var(--pfill)}
+/* CLU-512, Nathan: "highlighting the mega list bars hides the progress".
+   `.tick.peeked` sets a flat background and sits later in this file at the same
+   specificity, so pointing at a part-filled door replaced its fill with solid
+   grey — the one moment you are asking the strip a question about that row is
+   the one moment it stopped answering. The fill is a custom property now so the
+   peeked rule can restate it rather than repeat it, and peeking is said with
+   brightness, exactly as a ticked mark already says it. */
+.tick.part.peeked{background:var(--pfill);filter:brightness(1.35)}
 .tick.sep{background:transparent;flex:0 0 3px}
 /* Weighted properties size each mark by how long the thing takes. A four
    minute video against a thirty hour game rounds to well under a pixel, so
@@ -6834,7 +6844,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'dfb38cf7aee4';
+const BUILD = 'c3bae73202b3';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
