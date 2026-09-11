@@ -1,0 +1,379 @@
+{
+  "slug": "peep-show",
+  "title": "Peep Show",
+  "subtitle": "all nine series, in broadcast order",
+  "kind": "tv",
+  "popularity": 58,
+  "year": "2003–15",
+  "blurb": "All 54 episodes in broadcast order — nine series of Mark and Jeremy, filmed from behind their eyes, finished and not coming back.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#0C662D",
+  "accentDark": "#7FD79B",
+  "tiers": false,
+  "notes": [
+    [
+      "Nine series, and that is the whole show.",
+      "Channel 4 ran it from September 2003 to December 2015 and it ended on its own terms. Six episodes a series, no specials, no film, nothing unaired — the source article carries 54 numbered episodes and nothing else, and this list is those 54."
+    ],
+    [
+      "Nothing is weighted.",
+      "Wikipedia documents one running time for the series — 23 to 27 minutes — and no episode carries its own, so there is no verifiable per-row figure and every episode counts one. A part-weighted list is worse than an unweighted one: a row with no weight would silently count as a full hour."
+    ],
+    [
+      "Channel 4's longest-running comedy, by years on air.",
+      "The source records it taking that title in 2010 — nine series spread across twelve years, with long gaps between them rather than a heavy episode count."
+    ],
+    [
+      "No episode notes.",
+      "The titles are the source's titles and nothing here describes what happens in an episode. This is a show of running jokes and slow disasters and a one-line summary gives them away."
+    ],
+    "Titles, numbering and airdates machine-read from Wikipedia's List of Peep Show episodes; every series' count is asserted against the article's own series overview, the overall numbering asserted contiguous, the airdates asserted in broadcast order, and the total cross-checked against the series infobox before this builds."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Series 1",
+      "sub": "2003 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s1e1",
+          "t": "Warring Factions",
+          "n": "1"
+        },
+        {
+          "id": "ps-s1e2",
+          "t": "The Interview",
+          "n": "2"
+        },
+        {
+          "id": "ps-s1e3",
+          "t": "On the Pull",
+          "n": "3"
+        },
+        {
+          "id": "ps-s1e4",
+          "t": "Mark Makes a Friend",
+          "n": "4"
+        },
+        {
+          "id": "ps-s1e5",
+          "t": "Dream Job",
+          "n": "5"
+        },
+        {
+          "id": "ps-s1e6",
+          "t": "Funeral",
+          "n": "6"
+        }
+      ],
+      "intro": "Six episodes from 2003, filmed almost entirely from the characters' own eyes with their thoughts on the soundtrack — the device the show never drops.",
+      "open": true
+    },
+    {
+      "id": "s2",
+      "title": "Series 2",
+      "sub": "2004 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s2e1",
+          "t": "Dance Class",
+          "n": "1"
+        },
+        {
+          "id": "ps-s2e2",
+          "t": "Jeremy Makes It",
+          "n": "2"
+        },
+        {
+          "id": "ps-s2e3",
+          "t": "Local Zero",
+          "n": "3"
+        },
+        {
+          "id": "ps-s2e4",
+          "t": "University Challenge",
+          "n": "4"
+        },
+        {
+          "id": "ps-s2e5",
+          "t": "The Man Show",
+          "n": "5"
+        },
+        {
+          "id": "ps-s2e6",
+          "t": "Wedding",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Series 3",
+      "sub": "2005 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s3e1",
+          "t": "Mugging",
+          "n": "1"
+        },
+        {
+          "id": "ps-s3e2",
+          "t": "Sectioning",
+          "n": "2"
+        },
+        {
+          "id": "ps-s3e3",
+          "t": "Shrooming",
+          "n": "3"
+        },
+        {
+          "id": "ps-s3e4",
+          "t": "Sistering",
+          "n": "4"
+        },
+        {
+          "id": "ps-s3e5",
+          "t": "Jurying",
+          "n": "5"
+        },
+        {
+          "id": "ps-s3e6",
+          "t": "Quantocking",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Series 4",
+      "sub": "2007 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s4e1",
+          "t": "Sophie's Parents",
+          "n": "1"
+        },
+        {
+          "id": "ps-s4e2",
+          "t": "Conference",
+          "n": "2"
+        },
+        {
+          "id": "ps-s4e3",
+          "t": "Gym",
+          "n": "3"
+        },
+        {
+          "id": "ps-s4e4",
+          "t": "Handyman",
+          "n": "4"
+        },
+        {
+          "id": "ps-s4e5",
+          "t": "Holiday",
+          "n": "5"
+        },
+        {
+          "id": "ps-s4e6",
+          "t": "Wedding",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Series 5",
+      "sub": "2008 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s5e1",
+          "t": "Burgling",
+          "n": "1"
+        },
+        {
+          "id": "ps-s5e2",
+          "t": "Spin War",
+          "n": "2"
+        },
+        {
+          "id": "ps-s5e3",
+          "t": "Jeremy's Broke",
+          "n": "3"
+        },
+        {
+          "id": "ps-s5e4",
+          "t": "Jeremy's Mummy",
+          "n": "4"
+        },
+        {
+          "id": "ps-s5e5",
+          "t": "Jeremy's Manager",
+          "n": "5"
+        },
+        {
+          "id": "ps-s5e6",
+          "t": "Mark's Women",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Series 6",
+      "sub": "2009 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s6e1",
+          "t": "Jeremy at JLB",
+          "n": "1"
+        },
+        {
+          "id": "ps-s6e2",
+          "t": "The Test",
+          "n": "2"
+        },
+        {
+          "id": "ps-s6e3",
+          "t": "Jeremy in Love",
+          "n": "3"
+        },
+        {
+          "id": "ps-s6e4",
+          "t": "The Affair",
+          "n": "4"
+        },
+        {
+          "id": "ps-s6e5",
+          "t": "The Party",
+          "n": "5"
+        },
+        {
+          "id": "ps-s6e6",
+          "t": "Das Boot",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Series 7",
+      "sub": "2010 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s7e1",
+          "t": "St Hospitals",
+          "n": "1"
+        },
+        {
+          "id": "ps-s7e2",
+          "t": "Man Jam",
+          "n": "2"
+        },
+        {
+          "id": "ps-s7e3",
+          "t": "A Beautiful Mind",
+          "n": "3"
+        },
+        {
+          "id": "ps-s7e4",
+          "t": "Nether Zone",
+          "n": "4"
+        },
+        {
+          "id": "ps-s7e5",
+          "t": "Seasonal Beatings",
+          "n": "5"
+        },
+        {
+          "id": "ps-s7e6",
+          "t": "New Year's Eve",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Series 8",
+      "sub": "2012 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s8e1",
+          "t": "Jeremy Therapised",
+          "n": "1"
+        },
+        {
+          "id": "ps-s8e2",
+          "t": "Business Secrets of the Pharaohs",
+          "n": "2"
+        },
+        {
+          "id": "ps-s8e3",
+          "t": "The Love Bunker",
+          "n": "3"
+        },
+        {
+          "id": "ps-s8e4",
+          "t": "Big Mad Andy",
+          "n": "4"
+        },
+        {
+          "id": "ps-s8e5",
+          "t": "Chairman Mark",
+          "n": "5"
+        },
+        {
+          "id": "ps-s8e6",
+          "t": "Quantocking II",
+          "n": "6"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Series 9",
+      "sub": "2015 · 6 episodes",
+      "items": [
+        {
+          "id": "ps-s9e1",
+          "t": "The William Morris Years",
+          "n": "1"
+        },
+        {
+          "id": "ps-s9e2",
+          "t": "Gregory's Beard",
+          "n": "2"
+        },
+        {
+          "id": "ps-s9e3",
+          "t": "Threeism",
+          "n": "3"
+        },
+        {
+          "id": "ps-s9e4",
+          "t": "Mole-Mapping",
+          "n": "4"
+        },
+        {
+          "id": "ps-s9e5",
+          "t": "Kid Farm",
+          "n": "5"
+        },
+        {
+          "id": "ps-s9e6",
+          "t": "Are We Going to Be Alright?",
+          "n": "6"
+        }
+      ],
+      "intro": "The final series, as the source calls it. The last episode went out in December 2015 and nothing has followed it."
+    }
+  ]
+}

@@ -2551,6 +2551,26 @@
     "total": 78
   },
   {
+    "slug": "fawlty-towers",
+    "media": [
+      "tv"
+    ],
+    "title": "Fawlty Towers",
+    "subtitle": "twelve episodes, two series, 1975 and 1979",
+    "kind": "tv",
+    "year": "1975–79",
+    "popularity": 64,
+    "blurb": "All twelve episodes in broadcast order — two series four years apart, and Cleese and Booth stopped there.",
+    "accent": "#8C6239",
+    "accentDark": "#DEAF77",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 12
+  },
+  {
     "slug": "ghost-in-the-shell",
     "media": [
       "anime"
@@ -2632,6 +2652,26 @@
     "total": 13,
     "totalw": 26.09,
     "random": true
+  },
+  {
+    "slug": "blackadder",
+    "media": [
+      "tv"
+    ],
+    "title": "Blackadder",
+    "subtitle": "four series, the two 1988 specials, Back & Forth and the pilot",
+    "kind": "tv",
+    "year": "1983–2023",
+    "popularity": 63,
+    "blurb": "Every Blackadder the source counts — 24 episodes across four eras, plus the four specials, in the order they were shown.",
+    "accent": "#4A2545",
+    "accentDark": "#D8B04A",
+    "unit": {
+      "one": "entry",
+      "many": "entries"
+    },
+    "vpast": "watched",
+    "total": 28
   },
   {
     "slug": "mega-man",
@@ -3349,6 +3389,26 @@
     "scheduled": true
   },
   {
+    "slug": "peep-show",
+    "media": [
+      "tv"
+    ],
+    "title": "Peep Show",
+    "subtitle": "all nine series, in broadcast order",
+    "kind": "tv",
+    "year": "2003–15",
+    "popularity": 58,
+    "blurb": "All 54 episodes in broadcast order — nine series of Mark and Jeremy, filmed from behind their eyes, finished and not coming back.",
+    "accent": "#0C662D",
+    "accentDark": "#7FD79B",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 54
+  },
+  {
     "slug": "raimi",
     "media": [
       "movies",
@@ -3705,6 +3765,26 @@
     "total": 102,
     "totalw": 203.48,
     "random": true
+  },
+  {
+    "slug": "the-thick-of-it",
+    "media": [
+      "tv"
+    ],
+    "title": "The Thick of It",
+    "subtitle": "four series and the two 2007 specials",
+    "kind": "tv",
+    "year": "2005–12",
+    "popularity": 54,
+    "blurb": "Everything the source counts as an episode, in broadcast order — four series of ministerial damage control, and the two hour-long specials where they aired.",
+    "accent": "#3C5A99",
+    "accentDark": "#9FB6E8",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 23
   },
   {
     "slug": "deadwood",

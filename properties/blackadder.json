@@ -1,0 +1,248 @@
+{
+  "slug": "blackadder",
+  "title": "Blackadder",
+  "subtitle": "four series, the two 1988 specials, Back & Forth and the pilot",
+  "kind": "tv",
+  "popularity": 63,
+  "year": "1983–2023",
+  "blurb": "Every Blackadder the source counts — 24 episodes across four eras, plus the four specials, in the order they were shown.",
+  "unit": {
+    "one": "entry",
+    "many": "entries"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#4A2545",
+  "accentDark": "#D8B04A",
+  "tiers": false,
+  "notes": [
+    [
+      "Four series, four specials.",
+      "Wikipedia's infobox counts \"24 (plus 4 specials)\" and this list is both halves of that: the four six-episode series, the two 1988 one-offs, Back & Forth, and the pilot. Nothing here is a documentary, a charity sketch or an after-dinner turn — the source keeps those in two separate tables and so does this."
+    ],
+    [
+      "The specials sit where they aired.",
+      "The Cavalier Years went out in February 1988 and Blackadder's Christmas Carol that December, in the gap between series 3 and series 4. They are a section in that gap rather than an appendix at the end, which is also how the source's series overview files them."
+    ],
+    [
+      "The pilot is last, on purpose.",
+      "It was taped in 1982, shelved, and first screened in June 2023 — forty years after the series began. This list is in broadcast order, so that is where it goes. Its story was reused for Born to Be King, so it is a curiosity rather than a missing first episode."
+    ],
+    [
+      "Series 1's own order is disputed by the source.",
+      "The episode table dates Born to Be King as the second episode, 22 June 1983; a note on the same page says transmission actually swapped the second and fourth episodes because it was not ready. The rows follow the table's dates, because those are the field the encyclopedia records per episode, and the disagreement is flagged here rather than quietly picked."
+    ],
+    [
+      "Nothing is weighted.",
+      "Each series publishes one running time and no episode publishes its own, so there is no verifiable per-row figure and every row counts one. The four specials do each give a length on their own article and those minutes are in the row notes — but weighting four rows out of 28 would make the other 24 count as a full hour each, which is worse than counting nothing."
+    ],
+    "Titles, numbering and airdates machine-read from Wikipedia's List of Blackadder episodes and the four series articles it transcludes, with each special's length from its own article; the numbering is asserted contiguous 1–24, every section asserted to start later than the one before, and the total cross-checked against the series infobox before this builds."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Series 1: The Black Adder",
+      "sub": "1983 · 6 episodes",
+      "items": [
+        {
+          "id": "ba-s1-1",
+          "t": "The Foretelling",
+          "n": "1"
+        },
+        {
+          "id": "ba-s1-2",
+          "t": "Born to Be King",
+          "n": "2"
+        },
+        {
+          "id": "ba-s1-3",
+          "t": "The Archbishop",
+          "n": "3"
+        },
+        {
+          "id": "ba-s1-4",
+          "t": "The Queen of Spain's Beard",
+          "n": "4"
+        },
+        {
+          "id": "ba-s1-5",
+          "t": "Witchsmeller Pursuivant",
+          "n": "5"
+        },
+        {
+          "id": "ba-s1-6",
+          "t": "The Black Seal",
+          "n": "6"
+        }
+      ],
+      "intro": "Six episodes on BBC1 in 1983, written by Rowan Atkinson and Richard Curtis and shot on location with horses, extras and medieval costumes. The source records it costing a million pounds and the BBC not repeating the arrangement.",
+      "open": true
+    },
+    {
+      "id": "s2",
+      "title": "Series 2: Blackadder II",
+      "sub": "1986 · 6 episodes",
+      "items": [
+        {
+          "id": "ba-s2-1",
+          "t": "Bells",
+          "n": "1"
+        },
+        {
+          "id": "ba-s2-2",
+          "t": "Head",
+          "n": "2"
+        },
+        {
+          "id": "ba-s2-3",
+          "t": "Potato",
+          "n": "3"
+        },
+        {
+          "id": "ba-s2-4",
+          "t": "Money",
+          "n": "4"
+        },
+        {
+          "id": "ba-s2-5",
+          "t": "Beer",
+          "n": "5"
+        },
+        {
+          "id": "ba-s2-6",
+          "t": "Chains",
+          "n": "6"
+        }
+      ],
+      "intro": "The BBC asked for improvements and cut the budget. Ben Elton joined Richard Curtis as co-writer, the production moved into the studio, and the episode titles became single words."
+    },
+    {
+      "id": "s3",
+      "title": "Series 3: Blackadder the Third",
+      "sub": "1987 · 6 episodes",
+      "items": [
+        {
+          "id": "ba-s3-1",
+          "t": "Dish and Dishonesty",
+          "n": "1"
+        },
+        {
+          "id": "ba-s3-2",
+          "t": "Ink and Incapability",
+          "n": "2"
+        },
+        {
+          "id": "ba-s3-3",
+          "t": "Nob and Nobility",
+          "n": "3"
+        },
+        {
+          "id": "ba-s3-4",
+          "t": "Sense and Senility",
+          "n": "4"
+        },
+        {
+          "id": "ba-s3-5",
+          "t": "Amy and Amiability",
+          "n": "5"
+        },
+        {
+          "id": "ba-s3-6",
+          "t": "Duel and Duality",
+          "n": "6"
+        }
+      ],
+      "intro": "Regency London. The source notes the titles parody Jane Austen, one alliterative pair at a time."
+    },
+    {
+      "id": "specials",
+      "title": "The 1988 specials",
+      "sub": "1988 · 2 specials",
+      "items": [
+        {
+          "id": "ba-sp-1",
+          "t": "Blackadder: The Cavalier Years",
+          "n": "1",
+          "note": "5 February 1988 · 15 minutes"
+        },
+        {
+          "id": "ba-sp-2",
+          "t": "Blackadder's Christmas Carol",
+          "n": "2",
+          "note": "23 December 1988 · 42 minutes"
+        }
+      ],
+      "intro": "Two one-offs made between series 3 and series 4, and they sit here because that is when they aired."
+    },
+    {
+      "id": "s4",
+      "title": "Series 4: Blackadder Goes Forth",
+      "sub": "1989 · 6 episodes",
+      "items": [
+        {
+          "id": "ba-s4-1",
+          "t": "Captain Cook",
+          "n": "1"
+        },
+        {
+          "id": "ba-s4-2",
+          "t": "Corporal Punishment",
+          "n": "2"
+        },
+        {
+          "id": "ba-s4-3",
+          "t": "Major Star",
+          "n": "3"
+        },
+        {
+          "id": "ba-s4-4",
+          "t": "Private Plane",
+          "n": "4"
+        },
+        {
+          "id": "ba-s4-5",
+          "t": "General Hospital",
+          "n": "5"
+        },
+        {
+          "id": "ba-s4-6",
+          "t": "Goodbyeee",
+          "n": "6"
+        }
+      ],
+      "intro": "The trenches, 1989, and the last of the series proper. The source notes the titles are puns on military ranks, the final one aside."
+    },
+    {
+      "id": "bf",
+      "title": "Back & Forth",
+      "sub": "1999 · 1 special",
+      "items": [
+        {
+          "id": "ba-back-and-forth",
+          "t": "Back & Forth",
+          "n": "1999",
+          "note": "31 December 1999 · 37 minutes"
+        }
+      ],
+      "intro": "The millennium special, ten years on: shown at the Millennium Dome on New Year's Eve 1999, then Sky One in 2000 and BBC1 in 2002. The source's episode table dates it by the Dome screening, and so does this row."
+    },
+    {
+      "id": "pilot",
+      "title": "The pilot",
+      "sub": "recorded 1982, screened 2023 · 1 episode",
+      "items": [
+        {
+          "id": "ba-pilot",
+          "t": "The Black Adder",
+          "n": "2023",
+          "note": "Taped 1982, first screened 15 June 2023 · 32 minutes · its story was reused for Born to Be King"
+        }
+      ],
+      "intro": "Taped in 1982 and never broadcast. Gold screened it on 15 June 2023, forty years to the day after series 1 began, which is why it is last on a list in broadcast order rather than first."
+    }
+  ]
+}
