@@ -1,0 +1,954 @@
+{
+  "slug": "crisis-on-infinite-earths",
+  "title": "Crisis on Infinite Earths",
+  "subtitle": "the 1985 maxiseries and its crossover — the end of pre-Crisis DC",
+  "kind": "comics",
+  "popularity": 55,
+  "year": "1985–86",
+  "blurb": "106 issues across 33 series, interleaved in the order they're meant to be read — 15 of them if you only want the story.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#4B3FA6",
+  "accentDark": "#9B8CF0",
+  "tiers": true,
+  "itemTiers": true,
+  "paceTiers": [
+    1,
+    2
+  ],
+  "paceLabel": "the pre-Crisis cameos",
+  "notes": [
+    [
+      "Tiers are on each row, not each section.",
+      "1 is the twelve-issue maxiseries plus the three DC Comics Presents issues, and it is a complete story — the minimum viable path is Tier 1 alone. 2 is the rest of the crossover DC put a banner on. 3 is the issues the guides carry that never had the banner, and the cameos that came before any of it."
+    ],
+    [
+      "Whose tie-in list this is.",
+      "There is no agreed one, so this uses the only undisputed fact: DC printed a \"Special Crisis Cross-Over\" banner on a specific set of covers. Wikipedia and the DC Database enumerate that set separately, and the generator refuses to build if the two ever stop agreeing. Two issues published much later — Legends of the DC Universe: Crisis on Infinite Earths #1 (1998) and JLA: Incarnations #5 (2001) — get put on the same list; the first is placed by both reading orders and is here, the second is placed by neither and is not."
+    ],
+    [
+      "This is the boundary.",
+      "Everything before it is pre-Crisis DC — a multiverse with a separate Earth for the 1940s heroes, another for the Marvel Family, another for the Charlton ones. Everything after it is one continuity, and the reboots that followed (Man of Steel, Year One, Pérez's Wonder Woman) start from here. Infinite Crisis and Final Crisis are different events twenty and twenty-three years later, and are not on this list."
+    ],
+    [
+      "No reading times.",
+      "Comics do not publish a per-issue reading time and this list does not invent one. A row is one issue; the bar counts issues."
+    ],
+    [
+      "What is referenced but not here.",
+      "Comic Book Herald notes that issue #2 leans on Flash #350 (which is in the cameo block), issue #4 on Omega Men #26 and issue #6 on Superman #413. Neither guide puts those last two in the order, so neither does this."
+    ],
+    "Order from Comic Book Herald's issue-by-issue reading order, cross-checked against comicbookreadingorders.com, which supplies the pre-Crisis Monitor cameos. The crossover banner list is Wikipedia's and the DC Database's, which agree; every issue on the list is checked against its DC Database page before the file is written."
+  ],
+  "sections": [
+    {
+      "id": "pre",
+      "title": "Before the Crisis",
+      "sub": "the Monitor cameos · skip these and start at #1",
+      "tier": 3,
+      "intro": "In January 1983 DC told its editors and writers to put a character called the Monitor in their books twice in the coming year, and not to show him. These are those appearances — usually a panel, a man at a screen, no explanation. comicbookreadingorders.com lists all forty and says plainly that they are unnecessary; they are here so a completist does not have to go looking, and they are tier 3 for the same reason.",
+      "items": [
+        {
+          "id": "coie-pre-ntt1-21",
+          "t": "The New Teen Titans",
+          "n": "#21",
+          "note": "The first of them.",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-nttann-2",
+          "t": "The New Teen Titans Annual",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-gl-173",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#173",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-gl-176",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#176",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-gl-178",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#178",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-flash-338",
+          "t": "The Flash",
+          "n": "#338",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-flash-339",
+          "t": "The Flash",
+          "n": "#339",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-tott-47",
+          "t": "Tales of the Teen Titans",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-bd-5",
+          "t": "Blue Devil",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-fof-28",
+          "t": "The Fury of Firestorm",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-bo-14",
+          "t": "Batman and the Outsiders",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-bo-15",
+          "t": "Batman and the Outsiders",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-ac-560",
+          "t": "Action Comics",
+          "n": "#560",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-jla-232",
+          "t": "Justice League of America",
+          "n": "#232",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-tlsh-317",
+          "t": "Tales of the Legion of Super-Heroes",
+          "n": "#317",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-st-30",
+          "t": "Swamp Thing (vol. 2)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-ww-321",
+          "t": "Wonder Woman",
+          "n": "#321",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-ii-8",
+          "t": "Infinity, Inc.",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-asq-40",
+          "t": "All-Star Squadron",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-dcp-76",
+          "t": "DC Comics Presents",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-sup-402",
+          "t": "Superman",
+          "n": "#402",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-st-31",
+          "t": "Swamp Thing (vol. 2)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-jla-234",
+          "t": "Justice League of America",
+          "n": "#234",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-vig-14",
+          "t": "Vigilante",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-sup-403",
+          "t": "Superman",
+          "n": "#403",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-wf-311",
+          "t": "World's Finest Comics",
+          "n": "#311",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-tlsh-319",
+          "t": "Tales of the Legion of Super-Heroes",
+          "n": "#319",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-tlsh-320",
+          "t": "Tales of the Legion of Super-Heroes",
+          "n": "#320",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-am-2",
+          "t": "Amethyst (vol. 2)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-ww-323",
+          "t": "Wonder Woman",
+          "n": "#323",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-gic-274",
+          "t": "G.I. Combat",
+          "n": "#274",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-gic-275",
+          "t": "G.I. Combat",
+          "n": "#275",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-ac-564",
+          "t": "Action Comics",
+          "n": "#564",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-warlord-91",
+          "t": "Warlord",
+          "n": "#91",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-jhex-90",
+          "t": "Jonah Hex",
+          "n": "#90",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-bat-384",
+          "t": "Batman",
+          "n": "#384",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-det-551",
+          "t": "Detective Comics",
+          "n": "#551",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-flash-350",
+          "t": "The Flash",
+          "n": "#350",
+          "note": "Issue #2 of the maxiseries refers back to this one.",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-tott-58",
+          "t": "Tales of the Teen Titans",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-pre-dcp-78",
+          "t": "DC Comics Presents",
+          "n": "#78",
+          "note": "The last of the cameos, and the one DC picked up when it collected the crossover.",
+          "star": 0,
+          "tier": 3
+        }
+      ]
+    },
+    {
+      "id": "act1",
+      "title": "Crisis #1–2",
+      "sub": "the crossover starts thin",
+      "tier": 1,
+      "intro": "The twelve issues of the maxiseries are a complete story on their own, and tier 1 is that story. Everything between the numbered issues is a tie-in. Comic Book Herald's warning about this early stretch is worth repeating: most of these amount to a red sky and a stranger turning up to recruit somebody.",
+      "items": [
+        {
+          "id": "coie-coie-1",
+          "t": "Crisis on Infinite Earths",
+          "n": "#1",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-fof-41",
+          "t": "The Fury of Firestorm",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-50",
+          "t": "All-Star Squadron",
+          "n": "#50",
+          "note": "Roy Thomas's 1940s team book. Comic Book Herald rates these the most skippable issues of the crossover.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-51",
+          "t": "All-Star Squadron",
+          "n": "#51",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-52",
+          "t": "All-Star Squadron",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ii-18",
+          "t": "Infinity, Inc.",
+          "n": "#18",
+          "note": "Roy Thomas again, with early Todd McFarlane art.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-coie-2",
+          "t": "Crisis on Infinite Earths",
+          "n": "#2",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-bat-389",
+          "t": "Batman",
+          "n": "#389",
+          "note": "Six issues of Batman and Detective with no banner on the covers — they reference the red skies and little else.",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-det-556",
+          "t": "Detective Comics",
+          "n": "#556",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-bat-390",
+          "t": "Batman",
+          "n": "#390",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-det-557",
+          "t": "Detective Comics",
+          "n": "#557",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-bat-391",
+          "t": "Batman",
+          "n": "#391",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-det-558",
+          "t": "Detective Comics",
+          "n": "#558",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-gl-194",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#194",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ii-19",
+          "t": "Infinity, Inc.",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-jla-244",
+          "t": "Justice League of America",
+          "n": "#244",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ii-20",
+          "t": "Infinity, Inc.",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-vig-22",
+          "t": "Vigilante",
+          "n": "#22",
+          "note": "comicbookreadingorders.com puts this five rows earlier, straight after Detective #558.",
+          "star": 0,
+          "tier": 3
+        }
+      ]
+    },
+    {
+      "id": "act2",
+      "title": "Crisis #3–5",
+      "sub": "the tie-ins stop being weather",
+      "tier": 1,
+      "intro": "",
+      "items": [
+        {
+          "id": "coie-coie-3",
+          "t": "Crisis on Infinite Earths",
+          "n": "#3",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-losers-1",
+          "t": "The Losers Special",
+          "n": "#1",
+          "note": "A one-shot that runs alongside issue #3.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-dcp-86",
+          "t": "DC Comics Presents",
+          "n": "#86",
+          "note": "Comic Book Herald rates the three DC Comics Presents issues the most worthwhile tie-ins on the list.",
+          "star": 1,
+          "tier": 1
+        },
+        {
+          "id": "coie-st-44",
+          "t": "Swamp Thing (vol. 2)",
+          "n": "#44",
+          "note": "Alan Moore, Bissette and Totleben, mid-run. Worth reading whether or not you came for the Crisis.",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-st-45",
+          "t": "Swamp Thing (vol. 2)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-iiann-1",
+          "t": "Infinity, Inc. Annual",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ii-21",
+          "t": "Infinity, Inc.",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-coie-4",
+          "t": "Crisis on Infinite Earths",
+          "n": "#4",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-coie-5",
+          "t": "Crisis on Infinite Earths",
+          "n": "#5",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-legends-1",
+          "t": "Legends of the DC Universe: Crisis on Infinite Earths",
+          "n": "#1",
+          "note": "Written by Wolfman and published in 1998, filling in a gap. One guide warns it gives part of issue #5 away; both put it after.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-st-46",
+          "t": "Swamp Thing (vol. 2)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-53",
+          "t": "All-Star Squadron",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-54",
+          "t": "All-Star Squadron",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-55",
+          "t": "All-Star Squadron",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-asq-56",
+          "t": "All-Star Squadron",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ii-22",
+          "t": "Infinity, Inc.",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        }
+      ]
+    },
+    {
+      "id": "act3",
+      "title": "Crisis #6–7",
+      "sub": "Legion, Superman and the Omega Men join in",
+      "tier": 1,
+      "intro": "",
+      "items": [
+        {
+          "id": "coie-coie-6",
+          "t": "Crisis on Infinite Earths",
+          "n": "#6",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-ii-23",
+          "t": "Infinity, Inc.",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ww-327",
+          "t": "Wonder Woman",
+          "n": "#327",
+          "note": "comicbookreadingorders.com places #328–329 much earlier, between issues #3 and #4, and leaves #327 out.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ww-328",
+          "t": "Wonder Woman",
+          "n": "#328",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ww-329",
+          "t": "Wonder Woman",
+          "n": "#329",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-coie-7",
+          "t": "Crisis on Infinite Earths",
+          "n": "#7",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-gl-195",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#195",
+          "note": "comicbookreadingorders.com reads this one chapter earlier, after #6.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ii-24",
+          "t": "Infinity, Inc.",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-lsh-16",
+          "t": "Legion of Super-Heroes (vol. 3)",
+          "n": "#16",
+          "note": "No banner on #16 or #17; the guides carry them so the three-parter reads whole.",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-lsh-17",
+          "t": "Legion of Super-Heroes (vol. 3)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-lsh-18",
+          "t": "Legion of Super-Heroes (vol. 3)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-dcp-87",
+          "t": "DC Comics Presents",
+          "n": "#87",
+          "note": "Comic Book Herald's pick for the single best tie-in here.",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-sup-414",
+          "t": "Superman",
+          "n": "#414",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-om-31",
+          "t": "The Omega Men",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        }
+      ]
+    },
+    {
+      "id": "act4",
+      "title": "Crisis #8–9",
+      "sub": "Blue Devil through to the Titans",
+      "tier": 1,
+      "intro": "",
+      "items": [
+        {
+          "id": "coie-coie-8",
+          "t": "Crisis on Infinite Earths",
+          "n": "#8",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-bd-17",
+          "t": "Blue Devil",
+          "n": "#17",
+          "note": "Carries the banner, but neither reading order places it, so it sits with #18.",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-bd-18",
+          "t": "Blue Devil",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-dcp-88",
+          "t": "DC Comics Presents",
+          "n": "#88",
+          "note": "",
+          "star": 1,
+          "tier": 1
+        },
+        {
+          "id": "coie-jlaann-3",
+          "t": "Justice League of America Annual",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-coie-9",
+          "t": "Crisis on Infinite Earths",
+          "n": "#9",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-jla-245",
+          "t": "Justice League of America",
+          "n": "#245",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-fof-42",
+          "t": "The Fury of Firestorm",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ntt2-13",
+          "t": "The New Teen Titans (vol. 2)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-ntt2-14",
+          "t": "The New Teen Titans (vol. 2)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        }
+      ]
+    },
+    {
+      "id": "act5",
+      "title": "Crisis #10–12",
+      "sub": "the end, and the two issues that follow it",
+      "tier": 1,
+      "intro": "Two banner issues come after the last chapter, and both guides put them there.",
+      "items": [
+        {
+          "id": "coie-coie-10",
+          "t": "Crisis on Infinite Earths",
+          "n": "#10",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-coie-11",
+          "t": "Crisis on Infinite Earths",
+          "n": "#11",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-am-13",
+          "t": "Amethyst (vol. 2)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-gl-196",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#196",
+          "note": "No banner on #196 or #197 — the run reaches the banner issue at #198.",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-gl-197",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#197",
+          "note": "",
+          "star": 0,
+          "tier": 3
+        },
+        {
+          "id": "coie-coie-12",
+          "t": "Crisis on Infinite Earths",
+          "n": "#12",
+          "note": "",
+          "star": 2,
+          "tier": 1
+        },
+        {
+          "id": "coie-gl-198",
+          "t": "Green Lantern (vol. 2)",
+          "n": "#198",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        },
+        {
+          "id": "coie-sup-415",
+          "t": "Superman",
+          "n": "#415",
+          "note": "",
+          "star": 0,
+          "tier": 2
+        }
+      ]
+    }
+  ]
+}
