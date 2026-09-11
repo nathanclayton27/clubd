@@ -388,7 +388,7 @@ def build():
          "links": links("v1"),
          "intro": "The run everything after it is measured against. Miller "
                   "writes all of it and draws most of it, handing the pencils "
-                  "to his inker Klaus Janson for six issues near the end, and "
+                  "to Klaus Janson for six issues near the end, and "
                   "the book turns from a superhero comic into a crime one.",
          "items": miller},
         {"id": "bornagain", "tier": 1, "title": "Badlands and Born Again",
