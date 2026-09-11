@@ -1,0 +1,3585 @@
+{
+  "slug": "black-panther",
+  "title": "Black Panther",
+  "subtitle": "The mantle in main Marvel continuity — T'Challa, and Shuri while she wore it",
+  "kind": "comics",
+  "popularity": 70,
+  "year": "1968–2024",
+  "blurb": "350 issues from his first guest spots to the 2024 finale, in the order they're meant to be read.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#4E2A84",
+  "accentDark": "#B08CE8",
+  "tiers": true,
+  "notes": [
+    [
+      "Tiers.",
+      "1 is the readable path — McGregor, Priest and Coates, and nothing else. 2 is strongly recommended: Hudlin's run, the Kasper Cole stretch that ends Priest's, Ridley, Ewing, and the six issues that finish the Klan story. 3 is genuinely optional. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "One continuity, one mantle.",
+      "All of this is main Marvel continuity — no Ultimate line, no what-ifs, no 2099. And the list follows the mantle rather than the man: Shuri is the Black Panther for the 2009 volume and Doomwar, so those issues are in, the same way every T'Challa volume is."
+    ],
+    [
+      "The Fantastic Four issues are not here, on purpose.",
+      "He debuts in Fantastic Four #52–53 and returns in #54, #56 and #119. Those rows live on the Fantastic Four list in this catalogue; duplicating them would give one issue two ids and two sets of ticks. The 2006 stretch where T'Challa and Storm stand in on the team is different — those are Black Panther issues, and they are in."
+    ],
+    [
+      "Reading in Marvel Unlimited?",
+      "Sections link to their Marvel series pages rather than to each issue, because Marvel only exposes the 20 most recent issues of a series to the outside world. The issue numbers tell you when to switch titles."
+    ],
+    "Issue ranges machine-read from Wikipedia's Black Panther collected editions tables, with Jungle Action's own article for the vol. 2 range and the reprint at #23, and Eve Ewing's bibliography for the ninth volume. Every row is attested by a collected edition that names it; the generator refuses to emit one that is not. Series links resolve against Marvel's own series ids."
+  ],
+  "sections": [
+    {
+      "id": "early",
+      "title": "Before the solo book",
+      "sub": "1968–1971 — guest spots in other people's comics",
+      "tier": 3,
+      "intro": "This is Marvel's own Black Panther: The Early Marvel Years omnibus, minus the Fantastic Four issues. He debuts in Fantastic Four #52–53 and comes back in #54, #56 and #119 — those rows are on the Fantastic Four list in this catalogue, and copying them here would give the same issue two sets of ticks.\n\nWhat is left is guest appearances in other people's books, so they are grouped by title the way the omnibus lists them rather than shuffled into one timeline. Nothing below depends on having read any of it.",
+      "links": [
+        {
+          "label": "Avengers",
+          "url": "https://www.marvel.com/comics/series/1991/avengers_1963_1996"
+        },
+        {
+          "label": "Daredevil",
+          "url": "https://www.marvel.com/comics/series/2002/daredevil_1964_1998"
+        },
+        {
+          "label": "Tales of Suspense",
+          "url": "https://www.marvel.com/comics/series/2079/tales_of_suspense_1959_1968"
+        },
+        {
+          "label": "Astonishing Tales",
+          "url": "https://www.marvel.com/comics/series/16431/astonishing_tales_1970"
+        }
+      ],
+      "items": [
+        {
+          "id": "tales-of-suspense-97",
+          "t": "Tales of Suspense",
+          "n": "#97",
+          "note": "Captain America's feature, three issues before the book was renamed",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "tales-of-suspense-98",
+          "t": "Tales of Suspense",
+          "n": "#98",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "tales-of-suspense-99",
+          "t": "Tales of Suspense",
+          "n": "#99",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "captain-america-100",
+          "t": "Captain America",
+          "n": "#100",
+          "note": "Tales of Suspense becomes Captain America here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-52",
+          "t": "Avengers",
+          "n": "#52",
+          "note": "T'Challa joins the Avengers",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-62",
+          "t": "Avengers",
+          "n": "#62",
+          "note": "Reprinted four years later as Jungle Action #5 — his first starring feature",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-73",
+          "t": "Avengers",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-74",
+          "t": "Avengers",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-77",
+          "t": "Avengers",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-78",
+          "t": "Avengers",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-79",
+          "t": "Avengers",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-87",
+          "t": "Avengers",
+          "n": "#87",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-112",
+          "t": "Avengers",
+          "n": "#112",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "avengers-126",
+          "t": "Avengers",
+          "n": "#126",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "daredevil-52",
+          "t": "Daredevil",
+          "n": "#52",
+          "note": "T'Challa joins the Avengers",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "daredevil-69",
+          "t": "Daredevil",
+          "n": "#69",
+          "note": "Reprinted mid-arc as Jungle Action #23",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "daredevil-annual-4",
+          "t": "Daredevil Annual",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-team-up-20",
+          "t": "Marvel Team-Up",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "astonishing-tales-6",
+          "t": "Astonishing Tales",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "astonishing-tales-7",
+          "t": "Astonishing Tales",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "rage",
+      "title": "Panther's Rage",
+      "sub": "1973–1975 — thirteen issues, and where the run actually starts",
+      "tier": 1,
+      "intro": "Don McGregor was proofreading everything Marvel published when he pointed out that a comic called Jungle Action, set in Africa and starring white adventurers, was indefensible. Marvel gave him the book on one condition — keep it in Africa — and he handed it to the Black Panther.\n\nWhat he wrote is thirteen issues of one continuous story, planned and finished as a whole, which almost nobody in American superhero comics was doing in 1973. It is where Erik Killmonger comes from, and it is what every later writer goes back to. Start here.",
+      "links": [
+        {
+          "label": "Jungle Action",
+          "url": "https://www.marvel.com/comics/series/22991/jungle_action_1972_1976"
+        }
+      ],
+      "items": [
+        {
+          "id": "jungle-action-6",
+          "t": "Jungle Action",
+          "n": "#6",
+          "note": "“Panther's Rage” begins — McGregor, Buckler and Billy Graham",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-7",
+          "t": "Jungle Action",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-8",
+          "t": "Jungle Action",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-9",
+          "t": "Jungle Action",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-10",
+          "t": "Jungle Action",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-11",
+          "t": "Jungle Action",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-12",
+          "t": "Jungle Action",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-13",
+          "t": "Jungle Action",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-14",
+          "t": "Jungle Action",
+          "n": "#14",
+          "note": "The chapters get longer here, 18 to 19 pages",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-15",
+          "t": "Jungle Action",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-16",
+          "t": "Jungle Action",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-17",
+          "t": "Jungle Action",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-18",
+          "t": "Jungle Action",
+          "n": "#18",
+          "note": "",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "klan",
+      "title": "Panther vs. the Klan",
+      "sub": "1976 — five issues, and no ending",
+      "tier": 1,
+      "intro": "McGregor's second arc, and it does not finish: Jungle Action was cancelled at #24 with the story mid-flight. Marvel reasoned the character could still sell with a new approach, which is the next section.\n\nThere is no #23 below because #23 is not a new chapter — it is a reprint of Daredevil #69, which is already in the section above. The ending this arc eventually got is two sections down.",
+      "links": [
+        {
+          "label": "Jungle Action",
+          "url": "https://www.marvel.com/comics/series/22991/jungle_action_1972_1976"
+        }
+      ],
+      "items": [
+        {
+          "id": "jungle-action-19",
+          "t": "Jungle Action",
+          "n": "#19",
+          "note": "“Panther vs. the Klan” begins",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-20",
+          "t": "Jungle Action",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-21",
+          "t": "Jungle Action",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-22",
+          "t": "Jungle Action",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jungle-action-24",
+          "t": "Jungle Action",
+          "n": "#24",
+          "note": "The last issue — the title was cancelled with the arc unfinished",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "kirby",
+      "title": "The Kirby run",
+      "sub": "1977–1979 — the co-creator's own thing, and it ignores everything above",
+      "tier": 3,
+      "intro": "Marvel relaunched the character in his own title with Jack Kirby — back from DC — writing, drawing and editing it. Kirby was not continuing McGregor. He was not continuing anything: it is twelve issues of Kirby at full volume, built around an artefact hunt, and it connects to nothing on either side of it.\n\nThat is the honest answer to where it sits. It is Tier 3, it is in publication order because that is the only order it has, and skipping it costs you nothing later.",
+      "links": [
+        {
+          "label": "Black Panther (1977)",
+          "url": "https://www.marvel.com/comics/series/3627/black_panther_1977_1979"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1977-1",
+          "t": "Black Panther (1977)",
+          "n": "#1",
+          "note": "Kirby writing, drawing and editing",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-2",
+          "t": "Black Panther (1977)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-3",
+          "t": "Black Panther (1977)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-4",
+          "t": "Black Panther (1977)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-5",
+          "t": "Black Panther (1977)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-6",
+          "t": "Black Panther (1977)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-7",
+          "t": "Black Panther (1977)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-8",
+          "t": "Black Panther (1977)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-9",
+          "t": "Black Panther (1977)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-10",
+          "t": "Black Panther (1977)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-11",
+          "t": "Black Panther (1977)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-12",
+          "t": "Black Panther (1977)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "premiere",
+      "title": "Where the Klan story ends",
+      "sub": "1979–1980 — three years late, and by a different writer",
+      "tier": 2,
+      "intro": "Kirby left after twelve issues. Ed Hannigan and Jerry Bingham took the last three, picked the abandoned Klan subplot back up — and were cancelled in turn, so the conclusion ran in Marvel Premiere, an anthology title, later the same year.\n\nMcGregor wrote none of it. It is Tier 2 anyway, because it is the only ending those five Jungle Action issues have.",
+      "links": [
+        {
+          "label": "Black Panther (1977)",
+          "url": "https://www.marvel.com/comics/series/3627/black_panther_1977_1979"
+        },
+        {
+          "label": "Marvel Premiere",
+          "url": "https://www.marvel.com/comics/series/2045/marvel_premiere_1972_1981"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1977-13",
+          "t": "Black Panther (1977)",
+          "n": "#13",
+          "note": "Ed Hannigan writing, Jerry Bingham pencilling",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-14",
+          "t": "Black Panther (1977)",
+          "n": "#14",
+          "note": "The Klan story is picked back up as a subplot",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1977-15",
+          "t": "Black Panther (1977)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-premiere-51",
+          "t": "Marvel Premiere",
+          "n": "#51",
+          "note": "Where the Klan story finally ends, in an anthology title",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-premiere-52",
+          "t": "Marvel Premiere",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-premiere-53",
+          "t": "Marvel Premiere",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "eighties",
+      "title": "The wilderness years",
+      "sub": "1988–1991 — a miniseries, an anthology serial and a prestige book",
+      "tier": 3,
+      "intro": "Nine years with no ongoing title, and then three things that are not one: a four-issue miniseries by Peter B. Gillis and Denys Cowan; “Panther's Quest”, which is McGregor again, published as twenty-five eight-page chapters inside the biweekly anthology Marvel Comics Presents and set in apartheid South Africa; and “Panther's Prey”, McGregor with Dwayne Turner.\n\nThe Marvel Comics Presents rows are eight pages each, not whole issues. After this the character does not carry a book again until 1998.",
+      "links": [
+        {
+          "label": "Black Panther (1988)",
+          "url": "https://www.marvel.com/comics/series/27229/black_panther_1988"
+        },
+        {
+          "label": "Marvel Comics Presents",
+          "url": "https://www.marvel.com/comics/series/2039/marvel_comics_presents_1988_1995"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1988-1",
+          "t": "Black Panther (1988)",
+          "n": "#1",
+          "note": "Peter B. Gillis and Denys Cowan",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1988-2",
+          "t": "Black Panther (1988)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1988-3",
+          "t": "Black Panther (1988)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1988-4",
+          "t": "Black Panther (1988)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-13",
+          "t": "Marvel Comics Presents",
+          "n": "#13",
+          "note": "“Panther's Quest” — eight-page chapters inside the anthology",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-14",
+          "t": "Marvel Comics Presents",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-15",
+          "t": "Marvel Comics Presents",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-16",
+          "t": "Marvel Comics Presents",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-17",
+          "t": "Marvel Comics Presents",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-18",
+          "t": "Marvel Comics Presents",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-19",
+          "t": "Marvel Comics Presents",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-20",
+          "t": "Marvel Comics Presents",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-21",
+          "t": "Marvel Comics Presents",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-22",
+          "t": "Marvel Comics Presents",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-23",
+          "t": "Marvel Comics Presents",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-24",
+          "t": "Marvel Comics Presents",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-25",
+          "t": "Marvel Comics Presents",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-26",
+          "t": "Marvel Comics Presents",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-27",
+          "t": "Marvel Comics Presents",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-28",
+          "t": "Marvel Comics Presents",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-29",
+          "t": "Marvel Comics Presents",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-30",
+          "t": "Marvel Comics Presents",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-31",
+          "t": "Marvel Comics Presents",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-32",
+          "t": "Marvel Comics Presents",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-33",
+          "t": "Marvel Comics Presents",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-34",
+          "t": "Marvel Comics Presents",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-35",
+          "t": "Marvel Comics Presents",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-36",
+          "t": "Marvel Comics Presents",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "marvel-comics-presents-37",
+          "t": "Marvel Comics Presents",
+          "n": "#37",
+          "note": "The last “Panther's Quest” chapter",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-panther-s-prey-1",
+          "t": "Black Panther: Panther's Prey",
+          "n": "#1",
+          "note": "McGregor and Dwayne Turner, square-bound",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-panther-s-prey-2",
+          "t": "Black Panther: Panther's Prey",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-panther-s-prey-3",
+          "t": "Black Panther: Panther's Prey",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-panther-s-prey-4",
+          "t": "Black Panther: Panther's Prey",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "priestone",
+      "title": "Priest: The Client",
+      "sub": "1998–2000 — the run everyone means",
+      "tier": 1,
+      "intro": "Christopher Priest inherited a character with a reputation as a dull also-ran and rebuilt him as a head of state: Wakanda as a sovereign technological power, T'Challa as its king first and an Avenger a distant second, and a State Department attorney called Everett Ross narrating so that the reader has somebody to be.\n\nIt is also, structurally, a political comedy. The first issue is deliberately hard to follow and the run spends sixty-two issues explaining itself. Coates calls this the classic run; if you read one Black Panther comic, read this one.",
+      "links": [
+        {
+          "label": "Black Panther (1998)",
+          "url": "https://www.marvel.com/comics/series/2115/black_panther_1998_2003"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1998-1",
+          "t": "Black Panther (1998)",
+          "n": "#1",
+          "note": "Priest and Mark Texeira, under the Marvel Knights imprint",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-2",
+          "t": "Black Panther (1998)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-3",
+          "t": "Black Panther (1998)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-4",
+          "t": "Black Panther (1998)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-5",
+          "t": "Black Panther (1998)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-6",
+          "t": "Black Panther (1998)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-7",
+          "t": "Black Panther (1998)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-8",
+          "t": "Black Panther (1998)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-9",
+          "t": "Black Panther (1998)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-10",
+          "t": "Black Panther (1998)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-11",
+          "t": "Black Panther (1998)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-12",
+          "t": "Black Panther (1998)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-13",
+          "t": "Black Panther (1998)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-14",
+          "t": "Black Panther (1998)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-15",
+          "t": "Black Panther (1998)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-16",
+          "t": "Black Panther (1998)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-17",
+          "t": "Black Panther (1998)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "priesttwo",
+      "title": "Priest: Enemy of the State",
+      "sub": "2000–2001 — the run at full tilt",
+      "tier": 1,
+      "intro": "The middle stretch, and the point at which the shape of the thing becomes clear. Storm comes back into the book at #25.\n\nThe Deadpool issue at the end is the other half of a crossover, collected inside the run by Marvel's own omnibus. It is optional.",
+      "links": [
+        {
+          "label": "Black Panther (1998)",
+          "url": "https://www.marvel.com/comics/series/2115/black_panther_1998_2003"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1998-18",
+          "t": "Black Panther (1998)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-19",
+          "t": "Black Panther (1998)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-20",
+          "t": "Black Panther (1998)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-21",
+          "t": "Black Panther (1998)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-22",
+          "t": "Black Panther (1998)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-23",
+          "t": "Black Panther (1998)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-24",
+          "t": "Black Panther (1998)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-25",
+          "t": "Black Panther (1998)",
+          "n": "#25",
+          "note": "Storm comes back into the book",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-26",
+          "t": "Black Panther (1998)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-27",
+          "t": "Black Panther (1998)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-28",
+          "t": "Black Panther (1998)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-29",
+          "t": "Black Panther (1998)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-30",
+          "t": "Black Panther (1998)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-31",
+          "t": "Black Panther (1998)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-32",
+          "t": "Black Panther (1998)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-33",
+          "t": "Black Panther (1998)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-34",
+          "t": "Black Panther (1998)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-35",
+          "t": "Black Panther (1998)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "deadpool-44",
+          "t": "Deadpool",
+          "n": "#44",
+          "note": "The Deadpool half of a crossover — collected inside the run",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "priestthree",
+      "title": "Priest: the last stretch",
+      "sub": "2001–2003 — fourteen issues before the book changes lead",
+      "tier": 1,
+      "intro": "The title kept changing shape to survive, and Priest kept writing it. These are the last fourteen issues with T'Challa as the lead.",
+      "links": [
+        {
+          "label": "Black Panther (1998)",
+          "url": "https://www.marvel.com/comics/series/2115/black_panther_1998_2003"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1998-36",
+          "t": "Black Panther (1998)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-37",
+          "t": "Black Panther (1998)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-38",
+          "t": "Black Panther (1998)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-39",
+          "t": "Black Panther (1998)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-40",
+          "t": "Black Panther (1998)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-41",
+          "t": "Black Panther (1998)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-42",
+          "t": "Black Panther (1998)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-43",
+          "t": "Black Panther (1998)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-44",
+          "t": "Black Panther (1998)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-45",
+          "t": "Black Panther (1998)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-46",
+          "t": "Black Panther (1998)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-47",
+          "t": "Black Panther (1998)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-48",
+          "t": "Black Panther (1998)",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-49",
+          "t": "Black Panther (1998)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "kasper",
+      "title": "Kasper Cole",
+      "sub": "2003 — thirteen issues in which T'Challa is the supporting cast",
+      "tier": 2,
+      "intro": "The last thirteen issues of Priest's run replace the lead. Kasper Cole is a New York police officer in a costume he has no claim to, and T'Challa is a supporting character in his own title.\n\nSame writer, same run, same ending — which is why it is Tier 2 rather than optional. But if you are here for T'Challa, this is where he is least present.",
+      "links": [
+        {
+          "label": "Black Panther (1998)",
+          "url": "https://www.marvel.com/comics/series/2115/black_panther_1998_2003"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-1998-50",
+          "t": "Black Panther (1998)",
+          "n": "#50",
+          "note": "Kasper Cole takes the lead; T'Challa becomes a supporting character",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-51",
+          "t": "Black Panther (1998)",
+          "n": "#51",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-52",
+          "t": "Black Panther (1998)",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-53",
+          "t": "Black Panther (1998)",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-54",
+          "t": "Black Panther (1998)",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-55",
+          "t": "Black Panther (1998)",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-56",
+          "t": "Black Panther (1998)",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-57",
+          "t": "Black Panther (1998)",
+          "n": "#57",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-58",
+          "t": "Black Panther (1998)",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-59",
+          "t": "Black Panther (1998)",
+          "n": "#59",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-60",
+          "t": "Black Panther (1998)",
+          "n": "#60",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-61",
+          "t": "Black Panther (1998)",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-1998-62",
+          "t": "Black Panther (1998)",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "crew",
+      "title": "The Crew",
+      "sub": "2003 — the spin-off, cancelled at seven",
+      "tier": 3,
+      "intro": "Priest again, running alongside the final Black Panther issues and cancelled with #7. Kasper Cole is in it.",
+      "links": [
+        {
+          "label": "The Crew",
+          "url": "https://www.marvel.com/comics/series/553/the_crew_2003_2004"
+        }
+      ],
+      "items": [
+        {
+          "id": "the-crew-1",
+          "t": "The Crew",
+          "n": "#1",
+          "note": "Ran alongside the last Black Panther issues",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "the-crew-2",
+          "t": "The Crew",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "the-crew-3",
+          "t": "The Crew",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "the-crew-4",
+          "t": "The Crew",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "the-crew-5",
+          "t": "The Crew",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "the-crew-6",
+          "t": "The Crew",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "the-crew-7",
+          "t": "The Crew",
+          "n": "#7",
+          "note": "Cancelled here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "hudlinone",
+      "title": "Hudlin: Who is the Black Panther?",
+      "sub": "2005–2006 — the restart that outsold Priest",
+      "tier": 2,
+      "intro": "Reginald Hudlin started the book over from the beginning with John Romita Jr. drawing, retelling the origin for people who had never picked the character up. It sold better than any Black Panther comic before it, Priest's included.\n\nIt reads nothing like Priest — broader, louder, and much more interested in T'Challa as a global player than as a puzzle. The House of M tie-in and the X-Men crossover are inside the run rather than bolted onto it.",
+      "links": [
+        {
+          "label": "Black Panther (2005)",
+          "url": "https://www.marvel.com/comics/series/784/black_panther_2005_2008"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2005-1",
+          "t": "Black Panther (2005)",
+          "n": "#1",
+          "note": "Hudlin writing, John Romita Jr. pencilling",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-2",
+          "t": "Black Panther (2005)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-3",
+          "t": "Black Panther (2005)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-4",
+          "t": "Black Panther (2005)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-5",
+          "t": "Black Panther (2005)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-6",
+          "t": "Black Panther (2005)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-7",
+          "t": "Black Panther (2005)",
+          "n": "#7",
+          "note": "A House of M tie-in",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-8",
+          "t": "Black Panther (2005)",
+          "n": "#8",
+          "note": "Crosses with X-Men #175-176",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-9",
+          "t": "Black Panther (2005)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-10",
+          "t": "Black Panther (2005)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-11",
+          "t": "Black Panther (2005)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-12",
+          "t": "Black Panther (2005)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-13",
+          "t": "Black Panther (2005)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-14",
+          "t": "Black Panther (2005)",
+          "n": "#14",
+          "note": "“The Bride” begins",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-15",
+          "t": "Black Panther (2005)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-16",
+          "t": "Black Panther (2005)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-17",
+          "t": "Black Panther (2005)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-18",
+          "t": "Black Panther (2005)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "hudlintwo",
+      "title": "Hudlin: the Civil War years",
+      "sub": "2006–2008 — twenty issues and the annual",
+      "tier": 2,
+      "intro": "The middle of the run goes straight through Marvel's Civil War, and then spends five issues — “Four the Hard Way” — with T'Challa and Storm standing in for two absent members of the Fantastic Four. Those are Black Panther issues, so they are here; the Fantastic Four's own issues from those months are on the Fantastic Four list.",
+      "links": [
+        {
+          "label": "Black Panther (2005)",
+          "url": "https://www.marvel.com/comics/series/784/black_panther_2005_2008"
+        },
+        {
+          "label": "Annual",
+          "url": "https://www.marvel.com/comics/series/3850/black_panther_annual_1_2008"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2005-19",
+          "t": "Black Panther (2005)",
+          "n": "#19",
+          "note": "Seven issues of Civil War start here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-20",
+          "t": "Black Panther (2005)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-21",
+          "t": "Black Panther (2005)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-22",
+          "t": "Black Panther (2005)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-23",
+          "t": "Black Panther (2005)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-24",
+          "t": "Black Panther (2005)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-25",
+          "t": "Black Panther (2005)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-26",
+          "t": "Black Panther (2005)",
+          "n": "#26",
+          "note": "“Four the Hard Way” — the Fantastic Four stint begins",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-27",
+          "t": "Black Panther (2005)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-28",
+          "t": "Black Panther (2005)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-29",
+          "t": "Black Panther (2005)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-30",
+          "t": "Black Panther (2005)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-31",
+          "t": "Black Panther (2005)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-32",
+          "t": "Black Panther (2005)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-33",
+          "t": "Black Panther (2005)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-34",
+          "t": "Black Panther (2005)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-35",
+          "t": "Black Panther (2005)",
+          "n": "#35",
+          "note": "Back to Wakanda for the last four",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-36",
+          "t": "Black Panther (2005)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-37",
+          "t": "Black Panther (2005)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-38",
+          "t": "Black Panther (2005)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-annual-1",
+          "t": "Black Panther Annual",
+          "n": "#1",
+          "note": "Collected with #35-38",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "title": "Secret Invasion",
+      "sub": "2008 — three issues by somebody else",
+      "tier": 3,
+      "intro": "Jason Aaron closes the fourth volume with a war story tied into the line-wide Skrull event. Three issues, and then the book stops.",
+      "links": [
+        {
+          "label": "Black Panther (2005)",
+          "url": "https://www.marvel.com/comics/series/784/black_panther_2005_2008"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2005-39",
+          "t": "Black Panther (2005)",
+          "n": "#39",
+          "note": "Jason Aaron takes over for the last three",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-40",
+          "t": "Black Panther (2005)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2005-41",
+          "t": "Black Panther (2005)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "shurivol",
+      "title": "Shuri wears the mantle",
+      "sub": "2009–2010 — the fifth volume, and it is not T'Challa's",
+      "tier": 3,
+      "intro": "Hudlin again, with T'Challa's sister Shuri as the Black Panther. Jonathan Maberry co-writes #7 and takes the book from there.\n\nThe list follows the mantle rather than the man, which is why twelve issues with a different person under the mask are in it.",
+      "links": [
+        {
+          "label": "Black Panther (2009)",
+          "url": "https://www.marvel.com/comics/series/6804/black_panther_2009_2010"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2009-1",
+          "t": "Black Panther (2009)",
+          "n": "#1",
+          "note": "Shuri's book — Hudlin scripting",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-2",
+          "t": "Black Panther (2009)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-3",
+          "t": "Black Panther (2009)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-4",
+          "t": "Black Panther (2009)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-5",
+          "t": "Black Panther (2009)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-6",
+          "t": "Black Panther (2009)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-7",
+          "t": "Black Panther (2009)",
+          "n": "#7",
+          "note": "Jonathan Maberry co-writes, then takes the book",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-8",
+          "t": "Black Panther (2009)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-9",
+          "t": "Black Panther (2009)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-10",
+          "t": "Black Panther (2009)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-11",
+          "t": "Black Panther (2009)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2009-12",
+          "t": "Black Panther (2009)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "doomwar",
+      "title": "Doomwar",
+      "sub": "2010 — six issues, plus a four-issue side book",
+      "tier": 3,
+      "intro": "A crossover miniseries with the Fantastic Four and the X-Men in it, and the hinge between the Shuri book and where the character spends the next two years. Klaws of the Panther is a separate four-issue series from the same months and is marked optional.",
+      "links": [
+        {
+          "label": "Doomwar",
+          "url": "https://www.marvel.com/comics/series/9240/doomwar_2010"
+        },
+        {
+          "label": "Klaws of the Panther",
+          "url": "https://www.marvel.com/comics/series/11893/klaws_of_the_panther_2010"
+        }
+      ],
+      "items": [
+        {
+          "id": "doomwar-1",
+          "t": "Doomwar",
+          "n": "#1",
+          "note": "With the Fantastic Four and the X-Men in it",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "doomwar-2",
+          "t": "Doomwar",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "doomwar-3",
+          "t": "Doomwar",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "doomwar-4",
+          "t": "Doomwar",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "doomwar-5",
+          "t": "Doomwar",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "doomwar-6",
+          "t": "Doomwar",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "klaws-of-the-panther-1",
+          "t": "Klaws of the Panther",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "klaws-of-the-panther-2",
+          "t": "Klaws of the Panther",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "klaws-of-the-panther-3",
+          "t": "Klaws of the Panther",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "klaws-of-the-panther-4",
+          "t": "Klaws of the Panther",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "hellskitchen",
+      "title": "The Man Without Fear",
+      "sub": "2011–2012 — Daredevil's numbering, Daredevil's neighbourhood",
+      "tier": 3,
+      "intro": "T'Challa takes over Daredevil's title at #513 and Daredevil's patch of New York with it: no Wakanda, no vibranium, a diner in Hell's Kitchen and a false name. David Liss writes; Francesco Francavilla draws the first stretch.\n\nThe title becomes The Most Dangerous Man Alive at #524 and the numbering carries straight on. #523.1 is a point-one issue and sits where its number says it does.",
+      "links": [
+        {
+          "label": "The Man Without Fear",
+          "url": "https://www.marvel.com/comics/series/15691/black_panther_the_man_without_fear_2010_2011"
+        },
+        {
+          "label": "The Most Dangerous Man Alive",
+          "url": "https://www.marvel.com/comics/series/11665/black_panther_the_most_dangerous_man_alive_2011_2012"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-the-man-without-fear-513",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#513",
+          "note": "The numbering continues Daredevil's — Liss and Francavilla",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-514",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#514",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-515",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#515",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-516",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#516",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-517",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#517",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-518",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#518",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-519",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#519",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-520",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#520",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-521",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#521",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-522",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#522",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-man-without-fear-523",
+          "t": "Black Panther: The Man Without Fear",
+          "n": "#523",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-523-1",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#523.1",
+          "note": "A point-one issue; it sits after #523",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-524",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#524",
+          "note": "The title changes here",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-525",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#525",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-526",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#526",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-527",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#527",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-528",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#528",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-the-most-dangerous-man-alive-529",
+          "t": "Black Panther: The Most Dangerous Man Alive",
+          "n": "#529",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "coatesone",
+      "title": "A Nation Under Our Feet",
+      "sub": "2016–2017 — Coates and Brian Stelfreeze",
+      "tier": 1,
+      "intro": "Ta-Nehisi Coates' first twelve issues, and the book the modern character is built on. It opens by asking whether a country should have a king at all, from inside the king's head, and it does not let him off easily.\n\nIt assumes almost nothing. If you want a starting point later than 1973, this is the other one.",
+      "links": [
+        {
+          "label": "Black Panther (2016)",
+          "url": "https://www.marvel.com/comics/series/20912/black_panther_2016_2018"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2016-1",
+          "t": "Black Panther (2016)",
+          "n": "#1",
+          "note": "Coates and Brian Stelfreeze",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-2",
+          "t": "Black Panther (2016)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-3",
+          "t": "Black Panther (2016)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-4",
+          "t": "Black Panther (2016)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-5",
+          "t": "Black Panther (2016)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-6",
+          "t": "Black Panther (2016)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-7",
+          "t": "Black Panther (2016)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-8",
+          "t": "Black Panther (2016)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-9",
+          "t": "Black Panther (2016)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-10",
+          "t": "Black Panther (2016)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-11",
+          "t": "Black Panther (2016)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-12",
+          "t": "Black Panther (2016)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "coatestwo",
+      "title": "Avengers of the New World",
+      "sub": "2017–2018 — and the renumbering that lands mid-arc",
+      "tier": 1,
+      "intro": "The second Coates arc, interrupted by Marvel's legacy renumbering: #18 is followed by #166, which is the same run counting from the character's first appearance in 1966 instead of from 2016. Nothing changes but the number on the cover.",
+      "links": [
+        {
+          "label": "Black Panther (2016)",
+          "url": "https://www.marvel.com/comics/series/20912/black_panther_2016_2018"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2016-13",
+          "t": "Black Panther (2016)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-14",
+          "t": "Black Panther (2016)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-15",
+          "t": "Black Panther (2016)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-16",
+          "t": "Black Panther (2016)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-17",
+          "t": "Black Panther (2016)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-18",
+          "t": "Black Panther (2016)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-166",
+          "t": "Black Panther (2016)",
+          "n": "#166",
+          "note": "Marvel's legacy numbering — the same run, counting from 1966",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-167",
+          "t": "Black Panther (2016)",
+          "n": "#167",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-168",
+          "t": "Black Panther (2016)",
+          "n": "#168",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-169",
+          "t": "Black Panther (2016)",
+          "n": "#169",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-170",
+          "t": "Black Panther (2016)",
+          "n": "#170",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-171",
+          "t": "Black Panther (2016)",
+          "n": "#171",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2016-172",
+          "t": "Black Panther (2016)",
+          "n": "#172",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "coatesthree",
+      "title": "The Intergalactic Empire of Wakanda",
+      "sub": "2018–2021 — twenty-five issues, in space",
+      "tier": 1,
+      "intro": "Coates' second volume is a space opera, and it is a harder sell than the first: it starts a long way from Wakanda and takes its time telling you why. It is also where he finishes what he started.\n\nRead it after the first volume. It does not work cold.",
+      "links": [
+        {
+          "label": "Black Panther (2018)",
+          "url": "https://www.marvel.com/comics/series/24291/black_panther_2018_2021"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2018-1",
+          "t": "Black Panther (2018)",
+          "n": "#1",
+          "note": "Coates again, with a new number one",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-2",
+          "t": "Black Panther (2018)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-3",
+          "t": "Black Panther (2018)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-4",
+          "t": "Black Panther (2018)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-5",
+          "t": "Black Panther (2018)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-6",
+          "t": "Black Panther (2018)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-7",
+          "t": "Black Panther (2018)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-8",
+          "t": "Black Panther (2018)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-9",
+          "t": "Black Panther (2018)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-10",
+          "t": "Black Panther (2018)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-11",
+          "t": "Black Panther (2018)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-12",
+          "t": "Black Panther (2018)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-13",
+          "t": "Black Panther (2018)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-14",
+          "t": "Black Panther (2018)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-15",
+          "t": "Black Panther (2018)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-16",
+          "t": "Black Panther (2018)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-17",
+          "t": "Black Panther (2018)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-18",
+          "t": "Black Panther (2018)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-19",
+          "t": "Black Panther (2018)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-20",
+          "t": "Black Panther (2018)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-21",
+          "t": "Black Panther (2018)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-22",
+          "t": "Black Panther (2018)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-23",
+          "t": "Black Panther (2018)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-24",
+          "t": "Black Panther (2018)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2018-25",
+          "t": "Black Panther (2018)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "around",
+      "title": "Around the Coates run",
+      "sub": "2016–2019 — four spin-offs, none of them load-bearing",
+      "tier": 3,
+      "intro": "Books that ran alongside. World of Wakanda is Coates with Roxane Gay on the Dora Milaje; Black Panther and the Crew is Coates again, on a police-killing story in Harlem; Long Live the King and Shuri are both Nnedi Okorafor; Rise of the Black Panther goes back to the early years.\n\nThe main run does not refer back to any of them.",
+      "links": [
+        {
+          "label": "World of Wakanda",
+          "url": "https://www.marvel.com/comics/series/22549/black_panther_world_of_wakanda_2016_2017"
+        },
+        {
+          "label": "Black Panther and the Crew",
+          "url": "https://www.marvel.com/comics/series/23017/black_panther_and_the_crew_2017"
+        },
+        {
+          "label": "Long Live the King",
+          "url": "https://www.marvel.com/comics/series/23775/black_panther_long_live_the_king_cmx_digital_comic_2017_2018"
+        },
+        {
+          "label": "Rise of the Black Panther",
+          "url": "https://www.marvel.com/comics/series/23865/rise_of_the_black_panther_2018"
+        },
+        {
+          "label": "Shuri",
+          "url": "https://www.marvel.com/comics/series/26164/shuri_2018_2019"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-world-of-wakanda-1",
+          "t": "Black Panther: World of Wakanda",
+          "n": "#1",
+          "note": "Coates with Roxane Gay, on the Dora Milaje",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-world-of-wakanda-2",
+          "t": "Black Panther: World of Wakanda",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-world-of-wakanda-3",
+          "t": "Black Panther: World of Wakanda",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-world-of-wakanda-4",
+          "t": "Black Panther: World of Wakanda",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-world-of-wakanda-5",
+          "t": "Black Panther: World of Wakanda",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-world-of-wakanda-6",
+          "t": "Black Panther: World of Wakanda",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-and-the-crew-1",
+          "t": "Black Panther and the Crew",
+          "n": "#1",
+          "note": "Coates again, in Harlem",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-and-the-crew-2",
+          "t": "Black Panther and the Crew",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-and-the-crew-3",
+          "t": "Black Panther and the Crew",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-and-the-crew-4",
+          "t": "Black Panther and the Crew",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-and-the-crew-5",
+          "t": "Black Panther and the Crew",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-and-the-crew-6",
+          "t": "Black Panther and the Crew",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-long-live-the-king-1",
+          "t": "Black Panther: Long Live the King",
+          "n": "#1",
+          "note": "Nnedi Okorafor",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-long-live-the-king-2",
+          "t": "Black Panther: Long Live the King",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-long-live-the-king-3",
+          "t": "Black Panther: Long Live the King",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-long-live-the-king-4",
+          "t": "Black Panther: Long Live the King",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-long-live-the-king-5",
+          "t": "Black Panther: Long Live the King",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-long-live-the-king-6",
+          "t": "Black Panther: Long Live the King",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rise-of-the-black-panther-1",
+          "t": "Rise of the Black Panther",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rise-of-the-black-panther-2",
+          "t": "Rise of the Black Panther",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rise-of-the-black-panther-3",
+          "t": "Rise of the Black Panther",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rise-of-the-black-panther-4",
+          "t": "Rise of the Black Panther",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rise-of-the-black-panther-5",
+          "t": "Rise of the Black Panther",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rise-of-the-black-panther-6",
+          "t": "Rise of the Black Panther",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-1",
+          "t": "Shuri",
+          "n": "#1",
+          "note": "Okorafor again, with Shuri as the lead",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-2",
+          "t": "Shuri",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-3",
+          "t": "Shuri",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-4",
+          "t": "Shuri",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-5",
+          "t": "Shuri",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-6",
+          "t": "Shuri",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-7",
+          "t": "Shuri",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-8",
+          "t": "Shuri",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-9",
+          "t": "Shuri",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "shuri-10",
+          "t": "Shuri",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "ridley",
+      "title": "John Ridley",
+      "sub": "2021–2023 — fifteen issues, and it is a spy story",
+      "tier": 2,
+      "intro": "Ridley's run is espionage: what a king with an intelligence service does with it, and what it costs him when the file gets out. Juann Cabal draws the first arc.\n\nIt follows Coates directly and reads better for it.",
+      "links": [
+        {
+          "label": "Black Panther (2021)",
+          "url": "https://www.marvel.com/comics/series/31553/black_panther_2021_2023"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2021-1",
+          "t": "Black Panther (2021)",
+          "n": "#1",
+          "note": "John Ridley and Juann Cabal",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-2",
+          "t": "Black Panther (2021)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-3",
+          "t": "Black Panther (2021)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-4",
+          "t": "Black Panther (2021)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-5",
+          "t": "Black Panther (2021)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-6",
+          "t": "Black Panther (2021)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-7",
+          "t": "Black Panther (2021)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-8",
+          "t": "Black Panther (2021)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-9",
+          "t": "Black Panther (2021)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-10",
+          "t": "Black Panther (2021)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-11",
+          "t": "Black Panther (2021)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-12",
+          "t": "Black Panther (2021)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-13",
+          "t": "Black Panther (2021)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-14",
+          "t": "Black Panther (2021)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2021-15",
+          "t": "Black Panther (2021)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "ewing",
+      "title": "Eve Ewing",
+      "sub": "2023–2024 — ten issues, and the last ongoing so far",
+      "tier": 2,
+      "intro": "Eve Ewing and Chris Allen — the first Black woman to write the book. Ten issues.\n\nThis is the end of the list, not the end of the story. Anything newer than this is not here yet.",
+      "links": [
+        {
+          "label": "Black Panther (2023)",
+          "url": "https://www.marvel.com/comics/series/36245/black_panther_2023_2024"
+        }
+      ],
+      "items": [
+        {
+          "id": "black-panther-2023-1",
+          "t": "Black Panther (2023)",
+          "n": "#1",
+          "note": "Eve Ewing and Chris Allen",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-2",
+          "t": "Black Panther (2023)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-3",
+          "t": "Black Panther (2023)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-4",
+          "t": "Black Panther (2023)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-5",
+          "t": "Black Panther (2023)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-6",
+          "t": "Black Panther (2023)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-7",
+          "t": "Black Panther (2023)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-8",
+          "t": "Black Panther (2023)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-9",
+          "t": "Black Panther (2023)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "black-panther-2023-10",
+          "t": "Black Panther (2023)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    }
+  ]
+}
