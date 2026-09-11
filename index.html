@@ -6914,7 +6914,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '7355b65cb87f';
+const BUILD = '5f578c7fc1f3';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -11381,7 +11381,19 @@ async function loadGroups(){
     try{
       const { data:ms } = await sb.from('group_members')
         .select('group_id, user_id').in('group_id', ugroups.map(g=> g.id));
-      (ms || []).forEach(m=> useats[m.group_id] = (useats[m.group_id] || 0) + 1);
+      // ⚠ DISTINCT PEOPLE, not rows. Nathan: "its on the one piece page and it
+      // shows 2x the amount of people in the stillplays discord group" — the
+      // hint said 8 for a group of 4. This read can return a member more than
+      // once, which is not news to the rest of the file: loadMembers() builds
+      // the roster through a Map keyed on user_id for exactly that reason, and
+      // gmembers has been deduped since it was written. Only this count was
+      // still adding up rows, so the two disagreed by however many duplicates
+      // the read happened to carry.
+      const per = {};
+      (ms || []).forEach(m=>{
+        (per[m.group_id] = per[m.group_id] || new Set()).add(m.user_id);
+      });
+      Object.keys(per).forEach(k=> useats[k] = per[k].size);
     }catch(e){ /* a missing count just means no hint */ }
   }
 
