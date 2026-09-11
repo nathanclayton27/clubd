@@ -11,7 +11,8 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-222 lists, from a ten-episode anime to a 1,418-row film collection, a
+223 lists, from a ten-episode anime to a 1,418-row film collection, a
+
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
@@ -27,6 +28,9 @@ Stegman), *One Piece* in
 (Hickman's Marvel run), *Daredevil* (the five runs that make the modern
 character — Miller, Bendis, Brubaker, Waid, Zdarsky — with the lead-ins that
 explain how each one starts), *Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Captain America* (611 issues from the 1941
+original to the last page Ed Brubaker wrote, one section per run),
+*Venom* (Cates and Stegman), *One Piece* in
 
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
@@ -449,6 +453,12 @@ guide, cross-checked against comicbookreadingorders.com, which also supplies
 the pre-Crisis Monitor cameos. The crossover itself is DC's own cover banner,
 enumerated by Wikipedia and the DC Database; the generator refuses to build if
 those two ever stop agreeing about it.
+Captain America is machine-read from the Marvel Database wiki: the volume
+pages say which issues exist, and each issue's infobox gives its cover date
+and its writer, so every section boundary is checked against those credits
+at build time rather than typed. Its Civil War issues stay on the Civil War
+list and are not repeated.
+
 
 Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils

@@ -1,0 +1,5955 @@
+{
+  "slug": "captain-america",
+  "title": "Captain America",
+  "subtitle": "Marvel's main continuity — the shield, not the man",
+  "kind": "comics",
+  "popularity": 68,
+  "year": "1941–2013",
+  "blurb": "611 issues, from the 1941 original to the last page Ed Brubaker wrote, one section per run.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#26468F",
+  "accentDark": "#7FA8E8",
+  "tiers": true,
+  "notes": [
+    [
+      "Tiers.",
+      "1 is the readable path: the 1964 revival, Steranko, Englehart, Kirby's return, Stern and Byrne, and Brubaker's run from volume five #1 to Winter Soldier #14, where he leaves it. 2 is strongly recommended — DeMatteis, Gruenwald's ten years, Waid, and Captain America and Bucky, the companion book Brubaker co-wrote alongside volume six. 3 is genuinely optional, and most of it is there so the numbering has no holes in it. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "Civil War.",
+      "Captain America #22–24 are chapters of the 2006 crossover and live on the Civil War list here instead, where they sit interleaved with the rest of that event. They are not repeated on this list, which is why this one steps from #21 straight to #25."
+    ],
+    [
+      "Tales of Suspense was a split book.",
+      "For #59–99 Captain America has the back half of each issue and Iron Man has the front. Only the back half is on this list, but the issue is one object on a shelf and in Marvel Unlimited, so it is one row."
+    ],
+    [
+      "Reading in Marvel Unlimited?",
+      "Sections link the series rather than the issue, because Marvel only exposes the most recent issues of a series to the outside world. The issue numbers are the part you need; the volume changes are the part that catches people out, and the rows name the volume every time it moves."
+    ],
+    "Issue numbers, cover dates and writer credits machine-read from the Marvel Database (marvel.fandom.com) — the volume page lists say which issues exist and each issue's infobox says who wrote it, and every run boundary below is checked against those credits at build time. Series links resolve against Marvel's own A–Z series index."
+  ],
+  "sections": [
+    {
+      "id": "timely",
+      "title": "Timely, 1941",
+      "sub": "#1 · the first one · 1941",
+      "tier": 3,
+      "intro": "Simon and Kirby's first issue: cover-dated March 1941, on sale in December 1940, a year before the United States entered the war it is about.\n\nNothing later on this list needs it. It is here because it is the thing everything else is a revival of.",
+      "items": [
+        {
+          "id": "cap-comics-1",
+          "t": "Captain America Comics",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America Comics",
+          "url": "https://www.marvel.com/comics/series/1998/captain_america_comics_1941_1954"
+        }
+      ]
+    },
+    {
+      "id": "fifties",
+      "title": "The 1954 attempt",
+      "sub": "#76–78 · three issues and out · 1954",
+      "tier": 3,
+      "intro": "Atlas brought the character back in 1954 for three issues and then stopped. They are filed under the same volume as the 1968 book, which is why the numbering here jumps from #78 to #100 — the #100 is inherited from Tales of Suspense rather than from these.\n\nSkip them if you like. Englehart comes back to these three twenty years later and makes something of them, which is the only reason to have read them.",
+      "items": [
+        {
+          "id": "cap-v1-76",
+          "t": "Captain America",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-77",
+          "t": "Captain America",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-78",
+          "t": "Captain America",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America Comics",
+          "url": "https://www.marvel.com/comics/series/1998/captain_america_comics_1941_1954"
+        }
+      ]
+    },
+    {
+      "id": "revival",
+      "title": "The revival: Lee and Kirby",
+      "sub": "Avengers #4, then Tales of Suspense #59–99 · 1964–68",
+      "tier": 1,
+      "intro": "Captain America had been out of print for a decade when the Avengers found him in 1964. Later that year he had half of Tales of Suspense, and for the next four years that is where the character lived, sharing a book with Iron Man.\n\nThe split matters for a practical reason. Only the back half of each Tales of Suspense is on this list, but Marvel files the whole issue under one cover, so you will be paging past an Iron Man story to get to it.",
+      "items": [
+        {
+          "id": "cap-avengers-4",
+          "t": "Avengers",
+          "n": "#4",
+          "note": "Not his own book — the issue that brings him back.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-59",
+          "t": "Tales of Suspense",
+          "n": "#59",
+          "note": "The strip starts here, in the back half of the book.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-60",
+          "t": "Tales of Suspense",
+          "n": "#60",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-61",
+          "t": "Tales of Suspense",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-62",
+          "t": "Tales of Suspense",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-63",
+          "t": "Tales of Suspense",
+          "n": "#63",
+          "note": "Kirby draws the origin again for the new readers.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-64",
+          "t": "Tales of Suspense",
+          "n": "#64",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-65",
+          "t": "Tales of Suspense",
+          "n": "#65",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-66",
+          "t": "Tales of Suspense",
+          "n": "#66",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-67",
+          "t": "Tales of Suspense",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-68",
+          "t": "Tales of Suspense",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-69",
+          "t": "Tales of Suspense",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-70",
+          "t": "Tales of Suspense",
+          "n": "#70",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-71",
+          "t": "Tales of Suspense",
+          "n": "#71",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-72",
+          "t": "Tales of Suspense",
+          "n": "#72",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-73",
+          "t": "Tales of Suspense",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-74",
+          "t": "Tales of Suspense",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-75",
+          "t": "Tales of Suspense",
+          "n": "#75",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-76",
+          "t": "Tales of Suspense",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-77",
+          "t": "Tales of Suspense",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-78",
+          "t": "Tales of Suspense",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-79",
+          "t": "Tales of Suspense",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-80",
+          "t": "Tales of Suspense",
+          "n": "#80",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-81",
+          "t": "Tales of Suspense",
+          "n": "#81",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-82",
+          "t": "Tales of Suspense",
+          "n": "#82",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-83",
+          "t": "Tales of Suspense",
+          "n": "#83",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-84",
+          "t": "Tales of Suspense",
+          "n": "#84",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-85",
+          "t": "Tales of Suspense",
+          "n": "#85",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-86",
+          "t": "Tales of Suspense",
+          "n": "#86",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-87",
+          "t": "Tales of Suspense",
+          "n": "#87",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-88",
+          "t": "Tales of Suspense",
+          "n": "#88",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-89",
+          "t": "Tales of Suspense",
+          "n": "#89",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-90",
+          "t": "Tales of Suspense",
+          "n": "#90",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-91",
+          "t": "Tales of Suspense",
+          "n": "#91",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-92",
+          "t": "Tales of Suspense",
+          "n": "#92",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-93",
+          "t": "Tales of Suspense",
+          "n": "#93",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-94",
+          "t": "Tales of Suspense",
+          "n": "#94",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-95",
+          "t": "Tales of Suspense",
+          "n": "#95",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-96",
+          "t": "Tales of Suspense",
+          "n": "#96",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-97",
+          "t": "Tales of Suspense",
+          "n": "#97",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-98",
+          "t": "Tales of Suspense",
+          "n": "#98",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-tos-99",
+          "t": "Tales of Suspense",
+          "n": "#99",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Avengers",
+          "url": "https://www.marvel.com/comics/series/1991/avengers_1963_1996"
+        },
+        {
+          "label": "Tales of Suspense",
+          "url": "https://www.marvel.com/comics/series/2079/tales_of_suspense_1959_1968"
+        }
+      ],
+      "start": true
+    },
+    {
+      "id": "ownbook",
+      "title": "His own book again",
+      "sub": "#100–109 · straight on from Tales of Suspense · 1968–69",
+      "tier": 1,
+      "intro": "Tales of Suspense stops at #99 and Captain America carries its numbering on, which is why his first solo issue in fourteen years is #100.",
+      "items": [
+        {
+          "id": "cap-v1-100",
+          "t": "Captain America",
+          "n": "#100",
+          "note": "Continues Tales of Suspense's numbering.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-101",
+          "t": "Captain America",
+          "n": "#101",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-102",
+          "t": "Captain America",
+          "n": "#102",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-103",
+          "t": "Captain America",
+          "n": "#103",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-104",
+          "t": "Captain America",
+          "n": "#104",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-105",
+          "t": "Captain America",
+          "n": "#105",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-106",
+          "t": "Captain America",
+          "n": "#106",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-107",
+          "t": "Captain America",
+          "n": "#107",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-108",
+          "t": "Captain America",
+          "n": "#108",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-109",
+          "t": "Captain America",
+          "n": "#109",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "steranko",
+      "title": "Steranko",
+      "sub": "#110–113 · three issues, and the fill-in between them · 1969",
+      "tier": 1,
+      "intro": "Jim Steranko wrote and drew three issues of this book and then left, and people have been talking about them ever since. They look like nothing else in 1969 Marvel.\n\n#112 is a Lee and Kirby fill-in that landed in the middle of them. It is here because the numbering runs through it, not because the three need it.",
+      "items": [
+        {
+          "id": "cap-v1-110",
+          "t": "Captain America",
+          "n": "#110",
+          "note": "Steranko.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-111",
+          "t": "Captain America",
+          "n": "#111",
+          "note": "Steranko.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-112",
+          "t": "Captain America",
+          "n": "#112",
+          "note": "A Lee and Kirby fill-in between Steranko's two halves.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-113",
+          "t": "Captain America",
+          "n": "#113",
+          "note": "Steranko's last.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "lateLee",
+      "title": "Lee winds down",
+      "sub": "#114–152 · Lee, then Friedrich, then Conway · 1969–72",
+      "tier": 3,
+      "intro": "Three years of a book with no particular direction, handed between writers. There is good work in it and no reason to start here.",
+      "items": [
+        {
+          "id": "cap-v1-114",
+          "t": "Captain America",
+          "n": "#114",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-115",
+          "t": "Captain America",
+          "n": "#115",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-116",
+          "t": "Captain America",
+          "n": "#116",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-117",
+          "t": "Captain America",
+          "n": "#117",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-118",
+          "t": "Captain America",
+          "n": "#118",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-119",
+          "t": "Captain America",
+          "n": "#119",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-120",
+          "t": "Captain America",
+          "n": "#120",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-121",
+          "t": "Captain America",
+          "n": "#121",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-122",
+          "t": "Captain America",
+          "n": "#122",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-123",
+          "t": "Captain America",
+          "n": "#123",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-124",
+          "t": "Captain America",
+          "n": "#124",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-125",
+          "t": "Captain America",
+          "n": "#125",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-126",
+          "t": "Captain America",
+          "n": "#126",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-127",
+          "t": "Captain America",
+          "n": "#127",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-128",
+          "t": "Captain America",
+          "n": "#128",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-129",
+          "t": "Captain America",
+          "n": "#129",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-130",
+          "t": "Captain America",
+          "n": "#130",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-131",
+          "t": "Captain America",
+          "n": "#131",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-132",
+          "t": "Captain America",
+          "n": "#132",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-133",
+          "t": "Captain America",
+          "n": "#133",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-134",
+          "t": "Captain America",
+          "n": "#134",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-135",
+          "t": "Captain America",
+          "n": "#135",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-136",
+          "t": "Captain America",
+          "n": "#136",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-137",
+          "t": "Captain America",
+          "n": "#137",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-138",
+          "t": "Captain America",
+          "n": "#138",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-139",
+          "t": "Captain America",
+          "n": "#139",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-140",
+          "t": "Captain America",
+          "n": "#140",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-141",
+          "t": "Captain America",
+          "n": "#141",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-142",
+          "t": "Captain America",
+          "n": "#142",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-143",
+          "t": "Captain America",
+          "n": "#143",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-144",
+          "t": "Captain America",
+          "n": "#144",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-145",
+          "t": "Captain America",
+          "n": "#145",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-146",
+          "t": "Captain America",
+          "n": "#146",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-147",
+          "t": "Captain America",
+          "n": "#147",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-148",
+          "t": "Captain America",
+          "n": "#148",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-149",
+          "t": "Captain America",
+          "n": "#149",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-150",
+          "t": "Captain America",
+          "n": "#150",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-151",
+          "t": "Captain America",
+          "n": "#151",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-152",
+          "t": "Captain America",
+          "n": "#152",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "englehart",
+      "title": "The Englehart era",
+      "sub": "#153–186 · the run that made the book political · 1972–75",
+      "tier": 1,
+      "intro": "Steve Englehart took a book about a soldier who believes in his country and wrote thirty-odd issues about what that belief costs when the country turns out not to deserve it. It was published while the Watergate hearings were on television.\n\nHe also goes back to the three 1954 issues and builds a story out of them, which is the trick everyone remembers. Reading #76–78 first is not required, but it is three issues.",
+      "items": [
+        {
+          "id": "cap-v1-153",
+          "t": "Captain America",
+          "n": "#153",
+          "note": "Englehart's first.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-154",
+          "t": "Captain America",
+          "n": "#154",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-155",
+          "t": "Captain America",
+          "n": "#155",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-156",
+          "t": "Captain America",
+          "n": "#156",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-157",
+          "t": "Captain America",
+          "n": "#157",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-158",
+          "t": "Captain America",
+          "n": "#158",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-159",
+          "t": "Captain America",
+          "n": "#159",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-160",
+          "t": "Captain America",
+          "n": "#160",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-161",
+          "t": "Captain America",
+          "n": "#161",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-162",
+          "t": "Captain America",
+          "n": "#162",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-163",
+          "t": "Captain America",
+          "n": "#163",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-164",
+          "t": "Captain America",
+          "n": "#164",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-165",
+          "t": "Captain America",
+          "n": "#165",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-166",
+          "t": "Captain America",
+          "n": "#166",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-167",
+          "t": "Captain America",
+          "n": "#167",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-168",
+          "t": "Captain America",
+          "n": "#168",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-169",
+          "t": "Captain America",
+          "n": "#169",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-170",
+          "t": "Captain America",
+          "n": "#170",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-171",
+          "t": "Captain America",
+          "n": "#171",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-172",
+          "t": "Captain America",
+          "n": "#172",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-173",
+          "t": "Captain America",
+          "n": "#173",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-174",
+          "t": "Captain America",
+          "n": "#174",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-175",
+          "t": "Captain America",
+          "n": "#175",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-176",
+          "t": "Captain America",
+          "n": "#176",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-177",
+          "t": "Captain America",
+          "n": "#177",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-178",
+          "t": "Captain America",
+          "n": "#178",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-179",
+          "t": "Captain America",
+          "n": "#179",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-180",
+          "t": "Captain America",
+          "n": "#180",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-181",
+          "t": "Captain America",
+          "n": "#181",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-182",
+          "t": "Captain America",
+          "n": "#182",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-183",
+          "t": "Captain America",
+          "n": "#183",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-184",
+          "t": "Captain America",
+          "n": "#184",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-185",
+          "t": "Captain America",
+          "n": "#185",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-186",
+          "t": "Captain America",
+          "n": "#186",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "interregnum",
+      "title": "Six months in between",
+      "sub": "#187–192 · Warner, Isabella, Mantlo, Wolfman · 1975",
+      "tier": 3,
+      "intro": "The stretch between Englehart leaving and Kirby arriving. Four writers in six issues, and it shows.",
+      "items": [
+        {
+          "id": "cap-v1-187",
+          "t": "Captain America",
+          "n": "#187",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-188",
+          "t": "Captain America",
+          "n": "#188",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-189",
+          "t": "Captain America",
+          "n": "#189",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-190",
+          "t": "Captain America",
+          "n": "#190",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-191",
+          "t": "Captain America",
+          "n": "#191",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-192",
+          "t": "Captain America",
+          "n": "#192",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "kirby",
+      "title": "Kirby comes back",
+      "sub": "#193–214 · writing and drawing, this time · 1976–77",
+      "tier": 1,
+      "intro": "Kirby returned to the character he co-created in 1941 and wrote it himself, with nobody editing the ideas down. The result is loud, strange, enormously confident and completely unlike the run it follows.\n\nPeople who want the Englehart book back tend to hate it. Take it on its own terms.",
+      "items": [
+        {
+          "id": "cap-v1-193",
+          "t": "Captain America",
+          "n": "#193",
+          "note": "Kirby returns, writing and drawing.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-194",
+          "t": "Captain America",
+          "n": "#194",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-195",
+          "t": "Captain America",
+          "n": "#195",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-196",
+          "t": "Captain America",
+          "n": "#196",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-197",
+          "t": "Captain America",
+          "n": "#197",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-198",
+          "t": "Captain America",
+          "n": "#198",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-199",
+          "t": "Captain America",
+          "n": "#199",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-200",
+          "t": "Captain America",
+          "n": "#200",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-201",
+          "t": "Captain America",
+          "n": "#201",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-202",
+          "t": "Captain America",
+          "n": "#202",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-203",
+          "t": "Captain America",
+          "n": "#203",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-204",
+          "t": "Captain America",
+          "n": "#204",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-205",
+          "t": "Captain America",
+          "n": "#205",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-206",
+          "t": "Captain America",
+          "n": "#206",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-207",
+          "t": "Captain America",
+          "n": "#207",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-208",
+          "t": "Captain America",
+          "n": "#208",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-209",
+          "t": "Captain America",
+          "n": "#209",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-210",
+          "t": "Captain America",
+          "n": "#210",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-211",
+          "t": "Captain America",
+          "n": "#211",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-212",
+          "t": "Captain America",
+          "n": "#212",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-213",
+          "t": "Captain America",
+          "n": "#213",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-214",
+          "t": "Captain America",
+          "n": "#214",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "manyhands",
+      "title": "Many hands",
+      "sub": "#215–246 · a different writer most months · 1977–80",
+      "tier": 3,
+      "intro": "Four years the book spent being kept alive rather than written. Roger McKenzie writes more of it than anybody else. Skippable in full.",
+      "items": [
+        {
+          "id": "cap-v1-215",
+          "t": "Captain America",
+          "n": "#215",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-216",
+          "t": "Captain America",
+          "n": "#216",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-217",
+          "t": "Captain America",
+          "n": "#217",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-218",
+          "t": "Captain America",
+          "n": "#218",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-219",
+          "t": "Captain America",
+          "n": "#219",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-220",
+          "t": "Captain America",
+          "n": "#220",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-221",
+          "t": "Captain America",
+          "n": "#221",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-222",
+          "t": "Captain America",
+          "n": "#222",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-223",
+          "t": "Captain America",
+          "n": "#223",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-224",
+          "t": "Captain America",
+          "n": "#224",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-225",
+          "t": "Captain America",
+          "n": "#225",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-226",
+          "t": "Captain America",
+          "n": "#226",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-227",
+          "t": "Captain America",
+          "n": "#227",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-228",
+          "t": "Captain America",
+          "n": "#228",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-229",
+          "t": "Captain America",
+          "n": "#229",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-230",
+          "t": "Captain America",
+          "n": "#230",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-231",
+          "t": "Captain America",
+          "n": "#231",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-232",
+          "t": "Captain America",
+          "n": "#232",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-233",
+          "t": "Captain America",
+          "n": "#233",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-234",
+          "t": "Captain America",
+          "n": "#234",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-235",
+          "t": "Captain America",
+          "n": "#235",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-236",
+          "t": "Captain America",
+          "n": "#236",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-237",
+          "t": "Captain America",
+          "n": "#237",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-238",
+          "t": "Captain America",
+          "n": "#238",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-239",
+          "t": "Captain America",
+          "n": "#239",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-240",
+          "t": "Captain America",
+          "n": "#240",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-241",
+          "t": "Captain America",
+          "n": "#241",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-242",
+          "t": "Captain America",
+          "n": "#242",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-243",
+          "t": "Captain America",
+          "n": "#243",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-244",
+          "t": "Captain America",
+          "n": "#244",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-245",
+          "t": "Captain America",
+          "n": "#245",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-246",
+          "t": "Captain America",
+          "n": "#246",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "stern",
+      "title": "Stern and Byrne",
+      "sub": "#247–255 · nine issues · 1980–81",
+      "tier": 1,
+      "intro": "Nine issues, and the run people reach for when they want to argue the character works small. Stern and Byrne rebuilt his supporting cast and his day job, and closed on a single-issue retelling of the origin for the character's fortieth anniversary.",
+      "items": [
+        {
+          "id": "cap-v1-247",
+          "t": "Captain America",
+          "n": "#247",
+          "note": "Stern and Byrne begin.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-248",
+          "t": "Captain America",
+          "n": "#248",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-249",
+          "t": "Captain America",
+          "n": "#249",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-250",
+          "t": "Captain America",
+          "n": "#250",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-251",
+          "t": "Captain America",
+          "n": "#251",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-252",
+          "t": "Captain America",
+          "n": "#252",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-253",
+          "t": "Captain America",
+          "n": "#253",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-254",
+          "t": "Captain America",
+          "n": "#254",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-255",
+          "t": "Captain America",
+          "n": "#255",
+          "note": "",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "gap81",
+      "title": "Five before DeMatteis",
+      "sub": "#256–260 · fill-ins between two runs · 1981",
+      "tier": 3,
+      "intro": "Fill-ins between two runs.",
+      "items": [
+        {
+          "id": "cap-v1-256",
+          "t": "Captain America",
+          "n": "#256",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-257",
+          "t": "Captain America",
+          "n": "#257",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-258",
+          "t": "Captain America",
+          "n": "#258",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-259",
+          "t": "Captain America",
+          "n": "#259",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-260",
+          "t": "Captain America",
+          "n": "#260",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "dematteis",
+      "title": "J.M. DeMatteis",
+      "sub": "#261–300 · five by David Kraft, one by Bill Mantlo · 1981–84",
+      "tier": 2,
+      "intro": "DeMatteis writes the character as somebody who would rather talk than fight, and builds the run around villains he can argue with. It is quieter than what comes after it and better than its reputation.",
+      "items": [
+        {
+          "id": "cap-v1-261",
+          "t": "Captain America",
+          "n": "#261",
+          "note": "DeMatteis begins.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-262",
+          "t": "Captain America",
+          "n": "#262",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-263",
+          "t": "Captain America",
+          "n": "#263",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-264",
+          "t": "Captain America",
+          "n": "#264",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-265",
+          "t": "Captain America",
+          "n": "#265",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-266",
+          "t": "Captain America",
+          "n": "#266",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-267",
+          "t": "Captain America",
+          "n": "#267",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-268",
+          "t": "Captain America",
+          "n": "#268",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-269",
+          "t": "Captain America",
+          "n": "#269",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-270",
+          "t": "Captain America",
+          "n": "#270",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-271",
+          "t": "Captain America",
+          "n": "#271",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-272",
+          "t": "Captain America",
+          "n": "#272",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-273",
+          "t": "Captain America",
+          "n": "#273",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-274",
+          "t": "Captain America",
+          "n": "#274",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-275",
+          "t": "Captain America",
+          "n": "#275",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-276",
+          "t": "Captain America",
+          "n": "#276",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-277",
+          "t": "Captain America",
+          "n": "#277",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-278",
+          "t": "Captain America",
+          "n": "#278",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-279",
+          "t": "Captain America",
+          "n": "#279",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-280",
+          "t": "Captain America",
+          "n": "#280",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-281",
+          "t": "Captain America",
+          "n": "#281",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-282",
+          "t": "Captain America",
+          "n": "#282",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-283",
+          "t": "Captain America",
+          "n": "#283",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-284",
+          "t": "Captain America",
+          "n": "#284",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-285",
+          "t": "Captain America",
+          "n": "#285",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-286",
+          "t": "Captain America",
+          "n": "#286",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-287",
+          "t": "Captain America",
+          "n": "#287",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-288",
+          "t": "Captain America",
+          "n": "#288",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-289",
+          "t": "Captain America",
+          "n": "#289",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-290",
+          "t": "Captain America",
+          "n": "#290",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-291",
+          "t": "Captain America",
+          "n": "#291",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-292",
+          "t": "Captain America",
+          "n": "#292",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-293",
+          "t": "Captain America",
+          "n": "#293",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-294",
+          "t": "Captain America",
+          "n": "#294",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-295",
+          "t": "Captain America",
+          "n": "#295",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-296",
+          "t": "Captain America",
+          "n": "#296",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-297",
+          "t": "Captain America",
+          "n": "#297",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-298",
+          "t": "Captain America",
+          "n": "#298",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-299",
+          "t": "Captain America",
+          "n": "#299",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-300",
+          "t": "Captain America",
+          "n": "#300",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "carlin",
+      "title": "Michael Carlin",
+      "sub": "#301–306 · six issues · 1985",
+      "tier": 3,
+      "intro": "Six issues holding the door for the longest run the book has had.",
+      "items": [
+        {
+          "id": "cap-v1-301",
+          "t": "Captain America",
+          "n": "#301",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-302",
+          "t": "Captain America",
+          "n": "#302",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-303",
+          "t": "Captain America",
+          "n": "#303",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-304",
+          "t": "Captain America",
+          "n": "#304",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-305",
+          "t": "Captain America",
+          "n": "#305",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-306",
+          "t": "Captain America",
+          "n": "#306",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "gruenwald",
+      "title": "Mark Gruenwald",
+      "sub": "#307–443 · ten years, the longest run on the title · 1985–95",
+      "tier": 2,
+      "intro": "Ten years and 137 issues, which is more of this character than anyone else has written. Gruenwald knew the Marvel universe better than its editors did and used the book as a place to take its rules seriously: what the job is, who else has done it, what the government thinks it owns.\n\nIt is uneven over a decade, and it is the run to read if you want to know the character rather than the highlights.",
+      "items": [
+        {
+          "id": "cap-v1-307",
+          "t": "Captain America",
+          "n": "#307",
+          "note": "Gruenwald begins. He stays ten years.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-308",
+          "t": "Captain America",
+          "n": "#308",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-309",
+          "t": "Captain America",
+          "n": "#309",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-310",
+          "t": "Captain America",
+          "n": "#310",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-311",
+          "t": "Captain America",
+          "n": "#311",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-312",
+          "t": "Captain America",
+          "n": "#312",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-313",
+          "t": "Captain America",
+          "n": "#313",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-314",
+          "t": "Captain America",
+          "n": "#314",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-315",
+          "t": "Captain America",
+          "n": "#315",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-316",
+          "t": "Captain America",
+          "n": "#316",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-317",
+          "t": "Captain America",
+          "n": "#317",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-318",
+          "t": "Captain America",
+          "n": "#318",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-319",
+          "t": "Captain America",
+          "n": "#319",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-320",
+          "t": "Captain America",
+          "n": "#320",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-321",
+          "t": "Captain America",
+          "n": "#321",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-322",
+          "t": "Captain America",
+          "n": "#322",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-323",
+          "t": "Captain America",
+          "n": "#323",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-324",
+          "t": "Captain America",
+          "n": "#324",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-325",
+          "t": "Captain America",
+          "n": "#325",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-326",
+          "t": "Captain America",
+          "n": "#326",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-327",
+          "t": "Captain America",
+          "n": "#327",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-328",
+          "t": "Captain America",
+          "n": "#328",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-329",
+          "t": "Captain America",
+          "n": "#329",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-330",
+          "t": "Captain America",
+          "n": "#330",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-331",
+          "t": "Captain America",
+          "n": "#331",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-332",
+          "t": "Captain America",
+          "n": "#332",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-333",
+          "t": "Captain America",
+          "n": "#333",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-334",
+          "t": "Captain America",
+          "n": "#334",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-335",
+          "t": "Captain America",
+          "n": "#335",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-336",
+          "t": "Captain America",
+          "n": "#336",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-337",
+          "t": "Captain America",
+          "n": "#337",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-338",
+          "t": "Captain America",
+          "n": "#338",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-339",
+          "t": "Captain America",
+          "n": "#339",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-340",
+          "t": "Captain America",
+          "n": "#340",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-341",
+          "t": "Captain America",
+          "n": "#341",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-342",
+          "t": "Captain America",
+          "n": "#342",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-343",
+          "t": "Captain America",
+          "n": "#343",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-344",
+          "t": "Captain America",
+          "n": "#344",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-345",
+          "t": "Captain America",
+          "n": "#345",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-346",
+          "t": "Captain America",
+          "n": "#346",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-347",
+          "t": "Captain America",
+          "n": "#347",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-348",
+          "t": "Captain America",
+          "n": "#348",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-349",
+          "t": "Captain America",
+          "n": "#349",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-350",
+          "t": "Captain America",
+          "n": "#350",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-351",
+          "t": "Captain America",
+          "n": "#351",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-352",
+          "t": "Captain America",
+          "n": "#352",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-353",
+          "t": "Captain America",
+          "n": "#353",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-354",
+          "t": "Captain America",
+          "n": "#354",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-355",
+          "t": "Captain America",
+          "n": "#355",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-356",
+          "t": "Captain America",
+          "n": "#356",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-357",
+          "t": "Captain America",
+          "n": "#357",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-358",
+          "t": "Captain America",
+          "n": "#358",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-359",
+          "t": "Captain America",
+          "n": "#359",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-360",
+          "t": "Captain America",
+          "n": "#360",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-361",
+          "t": "Captain America",
+          "n": "#361",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-362",
+          "t": "Captain America",
+          "n": "#362",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-363",
+          "t": "Captain America",
+          "n": "#363",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-364",
+          "t": "Captain America",
+          "n": "#364",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-365",
+          "t": "Captain America",
+          "n": "#365",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-366",
+          "t": "Captain America",
+          "n": "#366",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-367",
+          "t": "Captain America",
+          "n": "#367",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-368",
+          "t": "Captain America",
+          "n": "#368",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-369",
+          "t": "Captain America",
+          "n": "#369",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-370",
+          "t": "Captain America",
+          "n": "#370",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-371",
+          "t": "Captain America",
+          "n": "#371",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-372",
+          "t": "Captain America",
+          "n": "#372",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-373",
+          "t": "Captain America",
+          "n": "#373",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-374",
+          "t": "Captain America",
+          "n": "#374",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-375",
+          "t": "Captain America",
+          "n": "#375",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-376",
+          "t": "Captain America",
+          "n": "#376",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-377",
+          "t": "Captain America",
+          "n": "#377",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-378",
+          "t": "Captain America",
+          "n": "#378",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-379",
+          "t": "Captain America",
+          "n": "#379",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-380",
+          "t": "Captain America",
+          "n": "#380",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-381",
+          "t": "Captain America",
+          "n": "#381",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-382",
+          "t": "Captain America",
+          "n": "#382",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-383",
+          "t": "Captain America",
+          "n": "#383",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-384",
+          "t": "Captain America",
+          "n": "#384",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-385",
+          "t": "Captain America",
+          "n": "#385",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-386",
+          "t": "Captain America",
+          "n": "#386",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-387",
+          "t": "Captain America",
+          "n": "#387",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-388",
+          "t": "Captain America",
+          "n": "#388",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-389",
+          "t": "Captain America",
+          "n": "#389",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-390",
+          "t": "Captain America",
+          "n": "#390",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-391",
+          "t": "Captain America",
+          "n": "#391",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-392",
+          "t": "Captain America",
+          "n": "#392",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-393",
+          "t": "Captain America",
+          "n": "#393",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-394",
+          "t": "Captain America",
+          "n": "#394",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-395",
+          "t": "Captain America",
+          "n": "#395",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-396",
+          "t": "Captain America",
+          "n": "#396",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-397",
+          "t": "Captain America",
+          "n": "#397",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-398",
+          "t": "Captain America",
+          "n": "#398",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-399",
+          "t": "Captain America",
+          "n": "#399",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-400",
+          "t": "Captain America",
+          "n": "#400",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-401",
+          "t": "Captain America",
+          "n": "#401",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-402",
+          "t": "Captain America",
+          "n": "#402",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-403",
+          "t": "Captain America",
+          "n": "#403",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-404",
+          "t": "Captain America",
+          "n": "#404",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-405",
+          "t": "Captain America",
+          "n": "#405",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-406",
+          "t": "Captain America",
+          "n": "#406",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-407",
+          "t": "Captain America",
+          "n": "#407",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-408",
+          "t": "Captain America",
+          "n": "#408",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-409",
+          "t": "Captain America",
+          "n": "#409",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-410",
+          "t": "Captain America",
+          "n": "#410",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-411",
+          "t": "Captain America",
+          "n": "#411",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-412",
+          "t": "Captain America",
+          "n": "#412",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-413",
+          "t": "Captain America",
+          "n": "#413",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-414",
+          "t": "Captain America",
+          "n": "#414",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-415",
+          "t": "Captain America",
+          "n": "#415",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-416",
+          "t": "Captain America",
+          "n": "#416",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-417",
+          "t": "Captain America",
+          "n": "#417",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-418",
+          "t": "Captain America",
+          "n": "#418",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-419",
+          "t": "Captain America",
+          "n": "#419",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-420",
+          "t": "Captain America",
+          "n": "#420",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-421",
+          "t": "Captain America",
+          "n": "#421",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-422",
+          "t": "Captain America",
+          "n": "#422",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-423",
+          "t": "Captain America",
+          "n": "#423",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-424",
+          "t": "Captain America",
+          "n": "#424",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-425",
+          "t": "Captain America",
+          "n": "#425",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-426",
+          "t": "Captain America",
+          "n": "#426",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-427",
+          "t": "Captain America",
+          "n": "#427",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-428",
+          "t": "Captain America",
+          "n": "#428",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-429",
+          "t": "Captain America",
+          "n": "#429",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-430",
+          "t": "Captain America",
+          "n": "#430",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-431",
+          "t": "Captain America",
+          "n": "#431",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-432",
+          "t": "Captain America",
+          "n": "#432",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-433",
+          "t": "Captain America",
+          "n": "#433",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-434",
+          "t": "Captain America",
+          "n": "#434",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-435",
+          "t": "Captain America",
+          "n": "#435",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-436",
+          "t": "Captain America",
+          "n": "#436",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-437",
+          "t": "Captain America",
+          "n": "#437",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-438",
+          "t": "Captain America",
+          "n": "#438",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-439",
+          "t": "Captain America",
+          "n": "#439",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-440",
+          "t": "Captain America",
+          "n": "#440",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-441",
+          "t": "Captain America",
+          "n": "#441",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-442",
+          "t": "Captain America",
+          "n": "#442",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-443",
+          "t": "Captain America",
+          "n": "#443",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "waid",
+      "title": "Mark Waid arrives",
+      "sub": "#444–454 · eleven issues before the line was restarted · 1995–96",
+      "tier": 2,
+      "intro": "Waid and Ron Garney got eleven issues before Marvel handed the character to another studio, and spent them writing the straight version — the one that takes the shield at face value. They are back in two sections' time.",
+      "items": [
+        {
+          "id": "cap-v1-444",
+          "t": "Captain America",
+          "n": "#444",
+          "note": "Waid's first.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-445",
+          "t": "Captain America",
+          "n": "#445",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-446",
+          "t": "Captain America",
+          "n": "#446",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-447",
+          "t": "Captain America",
+          "n": "#447",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-448",
+          "t": "Captain America",
+          "n": "#448",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-449",
+          "t": "Captain America",
+          "n": "#449",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-450",
+          "t": "Captain America",
+          "n": "#450",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-451",
+          "t": "Captain America",
+          "n": "#451",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-452",
+          "t": "Captain America",
+          "n": "#452",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-453",
+          "t": "Captain America",
+          "n": "#453",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v1-454",
+          "t": "Captain America",
+          "n": "#454",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America",
+          "url": "https://www.marvel.com/comics/series/1996/captain_america_1968_1996"
+        }
+      ]
+    },
+    {
+      "id": "heroesreborn",
+      "title": "Heroes Reborn",
+      "sub": "vol. 2 #1–13 · a year in a separate universe · 1996–97",
+      "tier": 3,
+      "intro": "Marvel outsourced four of its oldest books for a year and restarted them in a pocket universe. This is the Captain America one: Jeph Loeb and Rob Liefeld, then James Robinson.\n\nIt connects to nothing before it and nothing after it. Included because the numbering goes through it.",
+      "items": [
+        {
+          "id": "cap-v2-1",
+          "t": "Captain America vol. 2",
+          "n": "#1",
+          "note": "Relaunched outside the main continuity.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-2",
+          "t": "Captain America vol. 2",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-3",
+          "t": "Captain America vol. 2",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-4",
+          "t": "Captain America vol. 2",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-5",
+          "t": "Captain America vol. 2",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-6",
+          "t": "Captain America vol. 2",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-7",
+          "t": "Captain America vol. 2",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-8",
+          "t": "Captain America vol. 2",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-9",
+          "t": "Captain America vol. 2",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-10",
+          "t": "Captain America vol. 2",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-11",
+          "t": "Captain America vol. 2",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-12",
+          "t": "Captain America vol. 2",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v2-13",
+          "t": "Captain America vol. 2",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 2",
+          "url": "https://www.marvel.com/comics/series/6478/captain_america_1996_1997"
+        }
+      ]
+    },
+    {
+      "id": "heroesreturn",
+      "title": "Heroes Return: Waid again",
+      "sub": "vol. 3 #1–24 · picking up where #454 stopped · 1998–99",
+      "tier": 2,
+      "intro": "The same creative team, the same continuity, two years later — the run from #444 continuing as though the year in between had not happened.",
+      "items": [
+        {
+          "id": "cap-v3-1",
+          "t": "Captain America vol. 3",
+          "n": "#1",
+          "note": "Waid and Garney pick it back up.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-2",
+          "t": "Captain America vol. 3",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-3",
+          "t": "Captain America vol. 3",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-4",
+          "t": "Captain America vol. 3",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-5",
+          "t": "Captain America vol. 3",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-6",
+          "t": "Captain America vol. 3",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-7",
+          "t": "Captain America vol. 3",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-8",
+          "t": "Captain America vol. 3",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-9",
+          "t": "Captain America vol. 3",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-10",
+          "t": "Captain America vol. 3",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-11",
+          "t": "Captain America vol. 3",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-12",
+          "t": "Captain America vol. 3",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-13",
+          "t": "Captain America vol. 3",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-14",
+          "t": "Captain America vol. 3",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-15",
+          "t": "Captain America vol. 3",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-16",
+          "t": "Captain America vol. 3",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-17",
+          "t": "Captain America vol. 3",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-18",
+          "t": "Captain America vol. 3",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-19",
+          "t": "Captain America vol. 3",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-20",
+          "t": "Captain America vol. 3",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-21",
+          "t": "Captain America vol. 3",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-22",
+          "t": "Captain America vol. 3",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-23",
+          "t": "Captain America vol. 3",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-24",
+          "t": "Captain America vol. 3",
+          "n": "#24",
+          "note": "A one-issue fill-in between the two runs.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 3",
+          "url": "https://www.marvel.com/comics/series/1997/captain_america_1998_2002"
+        }
+      ]
+    },
+    {
+      "id": "jurgens",
+      "title": "Dan Jurgens",
+      "sub": "vol. 3 #25–50 · to the end of the volume · 2000–02",
+      "tier": 3,
+      "intro": "Competent superhero comics for two years. Nothing here is needed later.",
+      "items": [
+        {
+          "id": "cap-v3-25",
+          "t": "Captain America vol. 3",
+          "n": "#25",
+          "note": "Jurgens takes over.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-26",
+          "t": "Captain America vol. 3",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-27",
+          "t": "Captain America vol. 3",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-28",
+          "t": "Captain America vol. 3",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-29",
+          "t": "Captain America vol. 3",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-30",
+          "t": "Captain America vol. 3",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-31",
+          "t": "Captain America vol. 3",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-32",
+          "t": "Captain America vol. 3",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-33",
+          "t": "Captain America vol. 3",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-34",
+          "t": "Captain America vol. 3",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-35",
+          "t": "Captain America vol. 3",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-36",
+          "t": "Captain America vol. 3",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-37",
+          "t": "Captain America vol. 3",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-38",
+          "t": "Captain America vol. 3",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-39",
+          "t": "Captain America vol. 3",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-40",
+          "t": "Captain America vol. 3",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-41",
+          "t": "Captain America vol. 3",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-42",
+          "t": "Captain America vol. 3",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-43",
+          "t": "Captain America vol. 3",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-44",
+          "t": "Captain America vol. 3",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-45",
+          "t": "Captain America vol. 3",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-46",
+          "t": "Captain America vol. 3",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-47",
+          "t": "Captain America vol. 3",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-48",
+          "t": "Captain America vol. 3",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-49",
+          "t": "Captain America vol. 3",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v3-50",
+          "t": "Captain America vol. 3",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 3",
+          "url": "https://www.marvel.com/comics/series/1997/captain_america_1998_2002"
+        }
+      ]
+    },
+    {
+      "id": "vol4",
+      "title": "The 2002 relaunch",
+      "sub": "vol. 4 #1–32 · five writers in thirty-two issues · 2002–04",
+      "tier": 3,
+      "intro": "Marvel restarted the book in 2002 and pointed it squarely at the previous September. John Ney Rieber and John Cassaday open it; Chuck Austen, Dave Gibbons, Robert Morales and Robert Kirkman take the rest.\n\nIt argues with itself more than it works, and the next section is why anybody still buys this book.",
+      "items": [
+        {
+          "id": "cap-v4-1",
+          "t": "Captain America vol. 4",
+          "n": "#1",
+          "note": "Rieber and Cassaday relaunch it.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-2",
+          "t": "Captain America vol. 4",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-3",
+          "t": "Captain America vol. 4",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-4",
+          "t": "Captain America vol. 4",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-5",
+          "t": "Captain America vol. 4",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-6",
+          "t": "Captain America vol. 4",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-7",
+          "t": "Captain America vol. 4",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-8",
+          "t": "Captain America vol. 4",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-9",
+          "t": "Captain America vol. 4",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-10",
+          "t": "Captain America vol. 4",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-11",
+          "t": "Captain America vol. 4",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-12",
+          "t": "Captain America vol. 4",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-13",
+          "t": "Captain America vol. 4",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-14",
+          "t": "Captain America vol. 4",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-15",
+          "t": "Captain America vol. 4",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-16",
+          "t": "Captain America vol. 4",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-17",
+          "t": "Captain America vol. 4",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-18",
+          "t": "Captain America vol. 4",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-19",
+          "t": "Captain America vol. 4",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-20",
+          "t": "Captain America vol. 4",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-21",
+          "t": "Captain America vol. 4",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-22",
+          "t": "Captain America vol. 4",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-23",
+          "t": "Captain America vol. 4",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-24",
+          "t": "Captain America vol. 4",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-25",
+          "t": "Captain America vol. 4",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-26",
+          "t": "Captain America vol. 4",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-27",
+          "t": "Captain America vol. 4",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-28",
+          "t": "Captain America vol. 4",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-29",
+          "t": "Captain America vol. 4",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-30",
+          "t": "Captain America vol. 4",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-31",
+          "t": "Captain America vol. 4",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v4-32",
+          "t": "Captain America vol. 4",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 4",
+          "url": "https://www.marvel.com/comics/series/485/captain_america_2002_2004"
+        }
+      ]
+    },
+    {
+      "id": "brubaker1",
+      "title": "Brubaker begins",
+      "sub": "vol. 5 #1–21 · 2005–06",
+      "tier": 1,
+      "intro": "This is the reason most people arrive. Brubaker wrote the book for eight years and it reads as one continuous story — a spy thriller with a superhero in it, drawn mostly by Steve Epting in heavy shadow, where the plot turns on things that happened in 1945 and are still being paid for.\n\nStart at #1. You need nothing above this line.",
+      "items": [
+        {
+          "id": "cap-v5-1",
+          "t": "Captain America vol. 5",
+          "n": "#1",
+          "note": "Brubaker's first. Eight years from here.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-2",
+          "t": "Captain America vol. 5",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-3",
+          "t": "Captain America vol. 5",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-4",
+          "t": "Captain America vol. 5",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-5",
+          "t": "Captain America vol. 5",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-6",
+          "t": "Captain America vol. 5",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-7",
+          "t": "Captain America vol. 5",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-8",
+          "t": "Captain America vol. 5",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-9",
+          "t": "Captain America vol. 5",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-10",
+          "t": "Captain America vol. 5",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-11",
+          "t": "Captain America vol. 5",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-12",
+          "t": "Captain America vol. 5",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-13",
+          "t": "Captain America vol. 5",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-14",
+          "t": "Captain America vol. 5",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-15",
+          "t": "Captain America vol. 5",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-16",
+          "t": "Captain America vol. 5",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-17",
+          "t": "Captain America vol. 5",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-18",
+          "t": "Captain America vol. 5",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-19",
+          "t": "Captain America vol. 5",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-20",
+          "t": "Captain America vol. 5",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-21",
+          "t": "Captain America vol. 5",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 5",
+          "url": "https://www.marvel.com/comics/series/832/captain_america_2004_2011"
+        }
+      ]
+    },
+    {
+      "id": "brubaker2",
+      "title": "Brubaker: the middle",
+      "sub": "vol. 5 #25–42 · 2007–08",
+      "tier": 1,
+      "intro": "#22–24 are Civil War chapters. They are on the Civil War list here rather than on this one, in the interleaved order that event reads in, so the run steps from #21 to #25 and the gap is where they go.\n\nThe story is continuous across it either way.",
+      "items": [
+        {
+          "id": "cap-v5-25",
+          "t": "Captain America vol. 5",
+          "n": "#25",
+          "note": "#22-24 are Civil War chapters and sit on that list.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-26",
+          "t": "Captain America vol. 5",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-27",
+          "t": "Captain America vol. 5",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-28",
+          "t": "Captain America vol. 5",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-29",
+          "t": "Captain America vol. 5",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-30",
+          "t": "Captain America vol. 5",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-31",
+          "t": "Captain America vol. 5",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-32",
+          "t": "Captain America vol. 5",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-33",
+          "t": "Captain America vol. 5",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-34",
+          "t": "Captain America vol. 5",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-35",
+          "t": "Captain America vol. 5",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-36",
+          "t": "Captain America vol. 5",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-37",
+          "t": "Captain America vol. 5",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-38",
+          "t": "Captain America vol. 5",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-39",
+          "t": "Captain America vol. 5",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-40",
+          "t": "Captain America vol. 5",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-41",
+          "t": "Captain America vol. 5",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-42",
+          "t": "Captain America vol. 5",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 5",
+          "url": "https://www.marvel.com/comics/series/832/captain_america_2004_2011"
+        }
+      ]
+    },
+    {
+      "id": "brubaker3",
+      "title": "Brubaker: the third act",
+      "sub": "vol. 5 #43–50 · 2008–09",
+      "tier": 1,
+      "intro": "Eight issues, and the last under this numbering.",
+      "items": [
+        {
+          "id": "cap-v5-43",
+          "t": "Captain America vol. 5",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-44",
+          "t": "Captain America vol. 5",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-45",
+          "t": "Captain America vol. 5",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-46",
+          "t": "Captain America vol. 5",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-47",
+          "t": "Captain America vol. 5",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-48",
+          "t": "Captain America vol. 5",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-49",
+          "t": "Captain America vol. 5",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-50",
+          "t": "Captain America vol. 5",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 5",
+          "url": "https://www.marvel.com/comics/series/832/captain_america_2004_2011"
+        }
+      ]
+    },
+    {
+      "id": "legacy",
+      "title": "Back to the old numbering",
+      "sub": "vol. 5 #600–619, with the Reborn miniseries in its place · 2009–11",
+      "tier": 1,
+      "intro": "Marvel counted the whole title's issues and jumped to #600. The six-issue Reborn book ran alongside it and is slotted in where it was published, between #601 and #602.",
+      "items": [
+        {
+          "id": "cap-v5-600",
+          "t": "Captain America vol. 5",
+          "n": "#600",
+          "note": "104 pages, and the old numbering is back.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-601",
+          "t": "Captain America vol. 5",
+          "n": "#601",
+          "note": "A stand-alone, drawn by Gene Colan.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-reborn-1",
+          "t": "Captain America: Reborn",
+          "n": "#1",
+          "note": "A six-issue book running alongside the main title.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-reborn-2",
+          "t": "Captain America: Reborn",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-reborn-3",
+          "t": "Captain America: Reborn",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-reborn-4",
+          "t": "Captain America: Reborn",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-reborn-5",
+          "t": "Captain America: Reborn",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-reborn-6",
+          "t": "Captain America: Reborn",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-602",
+          "t": "Captain America vol. 5",
+          "n": "#602",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-603",
+          "t": "Captain America vol. 5",
+          "n": "#603",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-604",
+          "t": "Captain America vol. 5",
+          "n": "#604",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-605",
+          "t": "Captain America vol. 5",
+          "n": "#605",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-606",
+          "t": "Captain America vol. 5",
+          "n": "#606",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-607",
+          "t": "Captain America vol. 5",
+          "n": "#607",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-608",
+          "t": "Captain America vol. 5",
+          "n": "#608",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-609",
+          "t": "Captain America vol. 5",
+          "n": "#609",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-610",
+          "t": "Captain America vol. 5",
+          "n": "#610",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-611",
+          "t": "Captain America vol. 5",
+          "n": "#611",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-612",
+          "t": "Captain America vol. 5",
+          "n": "#612",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-613",
+          "t": "Captain America vol. 5",
+          "n": "#613",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-614",
+          "t": "Captain America vol. 5",
+          "n": "#614",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-615",
+          "t": "Captain America vol. 5",
+          "n": "#615",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-616",
+          "t": "Captain America vol. 5",
+          "n": "#616",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-617",
+          "t": "Captain America vol. 5",
+          "n": "#617",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-618",
+          "t": "Captain America vol. 5",
+          "n": "#618",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v5-619",
+          "t": "Captain America vol. 5",
+          "n": "#619",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 5",
+          "url": "https://www.marvel.com/comics/series/832/captain_america_2004_2011"
+        },
+        {
+          "label": "Captain America: Reborn",
+          "url": "https://www.marvel.com/comics/series/8213/captain_america_reborn_2009_2010"
+        }
+      ]
+    },
+    {
+      "id": "volsix",
+      "title": "Volume six",
+      "sub": "vol. 6 #1–19 · 2011–12",
+      "tier": 1,
+      "intro": "Back to #1, with the same writer carrying straight on from #619. Nineteen issues.",
+      "items": [
+        {
+          "id": "cap-v6-1",
+          "t": "Captain America vol. 6",
+          "n": "#1",
+          "note": "Renumbered again; same writer, straight on.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-2",
+          "t": "Captain America vol. 6",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-3",
+          "t": "Captain America vol. 6",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-4",
+          "t": "Captain America vol. 6",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-5",
+          "t": "Captain America vol. 6",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-6",
+          "t": "Captain America vol. 6",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-7",
+          "t": "Captain America vol. 6",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-8",
+          "t": "Captain America vol. 6",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-9",
+          "t": "Captain America vol. 6",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-10",
+          "t": "Captain America vol. 6",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-11",
+          "t": "Captain America vol. 6",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-12",
+          "t": "Captain America vol. 6",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-13",
+          "t": "Captain America vol. 6",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-14",
+          "t": "Captain America vol. 6",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-15",
+          "t": "Captain America vol. 6",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-16",
+          "t": "Captain America vol. 6",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-17",
+          "t": "Captain America vol. 6",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-18",
+          "t": "Captain America vol. 6",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-v6-19",
+          "t": "Captain America vol. 6",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America vol. 6",
+          "url": "https://www.marvel.com/comics/series/13830/captain_america_2011_2012"
+        }
+      ]
+    },
+    {
+      "id": "bucky",
+      "title": "Captain America and Bucky",
+      "sub": "#620–628 · a companion book on the old numbering · 2011–12",
+      "tier": 2,
+      "intro": "Brubaker co-wrote nine issues of a second book, which keeps the legacy numbering going while volume six restarts at #1. The main run does not depend on it.",
+      "items": [
+        {
+          "id": "cap-bucky-620",
+          "t": "Captain America and Bucky",
+          "n": "#620",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-621",
+          "t": "Captain America and Bucky",
+          "n": "#621",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-622",
+          "t": "Captain America and Bucky",
+          "n": "#622",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-623",
+          "t": "Captain America and Bucky",
+          "n": "#623",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-624",
+          "t": "Captain America and Bucky",
+          "n": "#624",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-625",
+          "t": "Captain America and Bucky",
+          "n": "#625",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-626",
+          "t": "Captain America and Bucky",
+          "n": "#626",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-627",
+          "t": "Captain America and Bucky",
+          "n": "#627",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-bucky-628",
+          "t": "Captain America and Bucky",
+          "n": "#628",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Captain America and Bucky",
+          "url": "https://www.marvel.com/comics/series/16325/captain_america_and_bucky_2011_2012"
+        }
+      ]
+    },
+    {
+      "id": "wintersoldier",
+      "title": "Winter Soldier",
+      "sub": "#1–14 · where the run actually stops · 2012–13",
+      "tier": 1,
+      "intro": "The last fourteen issues Brubaker wrote of this story, in a book with somebody else's name on the cover. It is a spy comic with the superheroes almost entirely out of frame, and it is the end of the thing that started at volume five #1.",
+      "items": [
+        {
+          "id": "cap-ws-1",
+          "t": "Winter Soldier",
+          "n": "#1",
+          "note": "A book of its own, and where the run ends.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-2",
+          "t": "Winter Soldier",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-3",
+          "t": "Winter Soldier",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-4",
+          "t": "Winter Soldier",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-5",
+          "t": "Winter Soldier",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-6",
+          "t": "Winter Soldier",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-7",
+          "t": "Winter Soldier",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-8",
+          "t": "Winter Soldier",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-9",
+          "t": "Winter Soldier",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-10",
+          "t": "Winter Soldier",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-11",
+          "t": "Winter Soldier",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-12",
+          "t": "Winter Soldier",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-13",
+          "t": "Winter Soldier",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "cap-ws-14",
+          "t": "Winter Soldier",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Winter Soldier",
+          "url": "https://www.marvel.com/comics/series/7643/winter_soldier_2012_2013"
+        }
+      ]
+    }
+  ]
+}
