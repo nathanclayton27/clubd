@@ -3659,6 +3659,26 @@
     "total": 27
   },
   {
+    "slug": "crisis-on-infinite-earths",
+    "media": [
+      "comics"
+    ],
+    "title": "Crisis on Infinite Earths",
+    "subtitle": "the 1985 maxiseries and its crossover — the end of pre-Crisis DC",
+    "kind": "comics",
+    "year": "1985–86",
+    "popularity": 55,
+    "blurb": "106 issues across 33 series, interleaved in the order they're meant to be read — 15 of them if you only want the story.",
+    "accent": "#4B3FA6",
+    "accentDark": "#9B8CF0",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 106
+  },
+  {
     "slug": "cult-classics",
     "media": [
       "movies"

@@ -11,12 +11,14 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
-War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
+War* (the 2006 event interleaved), *Crisis on Infinite Earths* (the 1985
+DC event, with the crossover tiered so the readable path and the complete
+one are the same list), *Spider-Man After Civil War*, *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
 (Hickman's Marvel run), *Venom* (Cates and Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
@@ -425,6 +427,12 @@ follows the order Hickman specified for the omnibus.
 
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.
+
+Crisis on Infinite Earths order from Comic Book Herald's issue-by-issue
+guide, cross-checked against comicbookreadingorders.com, which also supplies
+the pre-Crisis Monitor cameos. The crossover itself is DC's own cover banner,
+enumerated by Wikipedia and the DC Database; the generator refuses to build if
+those two ever stop agreeing about it.
 
 Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils
