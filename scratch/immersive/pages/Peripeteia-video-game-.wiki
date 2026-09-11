@@ -1,0 +1,103 @@
+{{Short description|Upcoming video game}}
+
+{{Promotional|date=June 2026}}
+{{Infobox video game
+| qid = Q112264384
+| refs = yes
+| title = Peripeteia
+| image = Official_box-art_for_Peripeteia_by_Ninth_Exodus.png
+| caption = ''Peripeteia'' box-art on [[Steam (service)|Steam]]
+| developer = Ninth Exodus
+| publisher = Ninth Exodus
+| programmer = {{ubl|Shodanon<ref name=90sGraphics-Presskit/>|Baller's Gait<ref name=90sGraphics-Devs/>|Snake (formerly)<ref name=90sGraphics-Devs/><ref name="Snake 2026" />}}
+| writer = Snake (formerly)<ref name=90sGraphics-Devs /><ref name="Snake 2026"/>
+| composer = {{ubl|Ed Harrison (aka 0edit)|Bogie|Daungreid<ref name=90sGraphics-Devs/>|Cynthoni (fka Sewerslvt; featured)}}
+| engine = [[Unity (engine)|Unity]]
+| platforms = [[Microsoft Windows]]
+| released = {{ubl||'''Early access'''|21 February 2025}}
+| genre = [[Action role-playing]], [[immersive sim]], [[first-person shooter]], [[Stealth game|stealth]]
+| modes = [[Single-player]]
+}}
+
+'''''Peripeteia''''' is an <!-- Per [[Wikipedia:Manual of Style/Video games]], early access games are considered upcoming -->upcoming [[indie game|indie]] [[immersive sim]] developed by independent, Polish game studio, Ninth Exodus.<ref name=90sGraphics-Presskit/><ref name="CBR2026"/> The player controls Marie, a superhuman [[cyborg]] with [[amnesia]], looking for a secret bunker in a [[Post-Soviet states|post-Soviet]] [[cyberpunk]] [[Poland]].<ref name=90sGraphics/> It was released into [[Steam Early Access]] on 21 February 2025.
+
+==Gameplay==
+As an [[immersive sim]], levels in ''Peripeteia'' can be completed several different ways depending on the actions of the player.<ref name="CBR2026"/> [[Non-player character]]s give the player missions in exchange for information or items, which ultimately further the main goal of reaching a secret bunker outside of the city.<ref name="PCGamer2025"/>
+
+Gameplay mechanics include:
+* A free-form grid inventory system, allowing players to place items in their inventory in a number of orientations and positions.<ref name=RPGFan>{{cite web |last=Love |first=Ben |title=Peripeteia Hands-On: An Engaging and Promising Cyberpunk World |url=https://www.rpgfan.com/2025/02/21/peripeteia-preview/ |website=RPG Fan |access-date=15 June 2026 |date=21 February 2025 }}</ref>
+* [[Cybernetic implant]]s which can be activated at will using the [[function key]]s.<ref name=SomeAlcoholic2025/> 
+* Semi-realistic [[firearm]] reloading, requiring manual replenishing of empty weapons in the inventory.<ref name=RPGFan/>
+* A timed hacking [[minigame]], which requires players to guess a password using a [[heat map]]-style keyboard display.<ref name=PCGamer2021>{{cite news |last1=Macgregor |first1=Jody |title=Peripeteia is an immersive sim where you play 'living military surplus' in near-future Poland |url=https://www.pcgamer.com/peripeteia-is-an-immersive-sim-where-you-play-living-military-surplus-in-near-future-poland/ |access-date=14 June 2026 |work=PC Gamer |date=19 Sep 2021 |archive-url=https://web.archive.org/web/20210921012749/https://www.pcgamer.com/peripeteia-is-an-immersive-sim-where-you-play-living-military-surplus-in-near-future-poland/ |archive-date=21 Sep 2021}}</ref>
+* Climbing and physics mechanics.<ref name=PCGamer2021/>
+* Light/sound stealth mechanics.<ref name=RPGFan/>
+
+==Plot==
+In the mid-late 20th century, the [[Cold War]] escalated into a third [[world war]] that ended in a [[nuclear holocaust]], devastating the entire planet. Despite nearly every major population center in the world being hit by [[nuclear bomb]]s, a large portion of [[Poland]], including [[Warsaw, Poland|Warsaw]], was left relatively untouched. The destruction of the former [[world power]]s (namely [[NATO]] and the [[Soviet Union]]) left a large [[power vacuum]] in [[Europe]], which would be promptly be filled by the newly formed "Polish Solidarity Republic" (PSR), which rose from the ashes of the [[Polish People's Republic]] and the [[Catholic Church in Poland|Polish Catholic Church]].<ref name=RPGFan/>
+
+In the wake of the nuclear war, a large expanse of [[Eastern Europe]], dubbed the "International Disputed Zone" (IDZ), was claimed by all three of the surviving nations of the war; the PSR to the north, NATO to the west, and the "Second Union" (an attempted rebirth of the Soviet Union) to the east.<ref name=90s.graphics/about>{{cite web |author1=Ninth Exodus |title=About the game |url=https://90s.graphics/about/ |website=90s.graphics |publisher=Ninth Exodus |access-date=20 Jun 2026 |archive-url=https://web.archive.org/web/20260614055327/https://90s.graphics/about/ |archive-date=14 Jun 2026 |language=English |date=n.d.}}</ref> The PSR was able to easily claim and occupy large regions of the IDZ, though true control over these regions is doubted by many, as groups of both Second Unionist separatists and the followers of a counter-culture movement dubbed the "Joy Cult" threaten the temporary stability.
+
+All the while, cybernetic implants, originally developed as prosthetics for soldiers, had become extremely popular, as several world armies began to shift towards cybernetic [[Biological computing|bio-computer]] warfare. Moments before being dismantled for parts by a black-market [[wikt:scrapper|scrapper]], Marie, a cybernetic [[super-soldier]] wakes up in a trash heap. She doesn't remember who she is or how she ended up there, but she quickly manages to get the hang of her implants, of which includes a spy [[unmanned drone|drone]], enhanced movement, and [[night vision]].<ref name=SomeAlcoholic2025>{{cite AV media |people=SomeAlcoholic [@somealcoholic9916] |date=1 Jun 2025 |title=An Immersive Sim Where You're the Last Anime Girl in a Cyberpunk City &vert; Peripeteia Review |url=https://www.youtube.com/watch?v=ttUxGhouqDA |publisher=YouTube |access-date=12 Jun 2026}}</ref>
+
+The rest of ''Peripeteia''&apos;s plot follows Marie, as she navigates through the world on a journey to a location from her only other remaining memory: an elusive Soviet bunker, filled with strange and futuristic technology.<ref name=90s.graphics/about/>
+
+==Development==
+While the staff of Ninth Exodus does a majority of the development for the game, ''Peripeteia'' has had major contributions from other members of the [[indie developer]] community.<ref name=90sGraphics-Devs/><ref name=DreadCentral/> One example of this is the game's dialogue font, White Rabbit (by Matthew Welch),<ref>{{cite web |last1=Welch |first1=Matthew |title=White Rabbit |url=https://squaregear.net/fonts/whitrabt.html |website=I Shot the Serif |publisher=Square Gear Productions |access-date=12 June 2026 |archive-url=https://web.archive.org/web/20200814172722/https://squaregear.net/fonts/whitrabt.html |archive-date=14 Aug 2020 |date=n.d.}}</ref> which was given a [[Slavic language]] overhaul by several members of the community, allowing it to properly display [[Polish orthography|Polish]] and [[Cyrillic]] characters.<ref name="steam news 2026 mar">{{cite news |author1=Ninth Exodus |title=20260328.19006 |url=https://store.steampowered.com/news/app/1437760/view/526497798209667260 |access-date=12 June 2026 |work=Peripeteia Steam News |publisher=Valve Corporation |date=28 Mar 2026 |archive-url=https://web.archive.org/web/20260612231852/http://web.archive.org/screenshot/https://store.steampowered.com/news/app/1437760/view/526497798209667260 |archive-date=12 June 2026}}</ref>
+
+===Early development===
+''Peripeteia'' began as a [[game jam]] project in November 2019. The founders of Ninth Exodus reached out to other developers in their circles to refine it.<ref name=DreadCentral>{{cite web|last=Wery|first=Jackson|title=Peripeteia Coming to Consoles|url=https://www.dreadcentral.com/news/484365/peripeteia-coming-to-consoles/|website=[[Dread Central]]|access-date=15 Jun 2026|date=2 Sep 2021|archive-url=https://web.archive.org/web/20260612051937/https://www.dreadcentral.com/news/484365/peripeteia-coming-to-consoles/|archive-date=12 Jun 2026}}</ref> The "Unveiled" demo was released on 29 November 2020, containing a significantly polished first level and new characters.<ref name=ItchIo>{{cite web |author1=Shodanon |title=Peripeteia by Shodanon, Eighth Exodus |url=https://shodanon.itch.io/peripeteia |website=Itch.io |publisher=Itch.io |access-date=14 June 2026 |archive-url=https://web.archive.org/web/20201129234459/https://shodanon.itch.io/peripeteia |archive-date=29 Nov 2020 |date=29 Nov 2020}}</ref>
+
+===Crowdfunding===
+On 14 August, 2021, a [[Kickstarter]] fundraiser was created to help fund ''Peripeteia'' with an initial goal of {{curr|10,000|eu}}.<ref name=SteamNews2021Sep>{{cite news |author=Ninth Exodus |title=The PERIPETEIA Kickstarter Campaign has begun! |url=https://store.steampowered.com/news/app/1437760/view/5211214394191099361 |work=Peripeteia Steam News |publisher=Valve Corporation |date=14 Aug 2021 |accessdate=20 June 2026 |archive-url=https://web.archive.org/web/20250319142524/https://store.steampowered.com/news/app/1437760/view/5211214394191099361 |archive-date=19 Mar 2025 }}</ref> Three days later, on 17 August, the initial goal was reached and new stretch goals were unveiled.<ref>{{cite news |author=Ninth Exodus |title=PERIPETEIA: NOW 100% FUNDED ON KICKSTARTER |url=https://store.steampowered.com/news/app/1437760/view/5211214394201251591 |work=Peripeteia Steam News |publisher=Valve Corporation |date=17 Aug 2021 |accessdate=11 June 2026 |archive-url=https://web.archive.org/web/20250305193845/https://store.steampowered.com/news/app/1437760/view/5211214394201251591# |archive-date=5 Mar 2025 }}</ref> Over the next month, more than {{curr|37,000|eu|linked=no}} was pledged by the community, reaching all ten of the stretch goals.<ref>{{cite news |author1=Ninth Exodus |title=PERIPETEIA Kickstarter Campaign closes at an amazing 370% funded! |url=https://store.steampowered.com/news/app/1437760/view/2979683242496486461 |access-date=20 June 2026 |work=Peripeteia Steam News |publisher=Valve Corporation |date=14 Sep 2021 |archive-date=26 Feb 2025 |archive-url=https://web.archive.org/web/20250226133224/https://store.steampowered.com/news/app/1437760/view/2979683242496486461}}</ref> On 18 August, a revised version of the ''Peripeteia'' demo was released on [[Steam (service)|Steam]].<ref name=SteamNews2021Sep/>
+
+===Early-access===
+On 21 February 2025, ''Peripeteia'' was released into [[early access]] on Steam by Ninth Exodus, featuring 8 levels.<ref name=Eurogamer2025/><ref name=VGTimes2025/> 
+
+==Reception==
+[[PC Gamer]]'s Joshua Wolens said that ''Peripeteia'' "feels a little like the beautiful mutant hybrid of [[S.T.A.L.K.E.R.|Stalker]] and [[Deus Ex (game)|Deus Ex]]," owing to its [[immersive sim]] roots.<ref name=PCGamer2025/> [[PCGamesN]]'s Oisin Kuhnke said "it also feels like the original [[Thief: The Dark Project|Thief]], especially given its themes of authoritarian government, and levels built around verticality."<ref name=PCGamesN>{{cite news |last1=Kuhnke |first1=Oisin |title=If you miss Deus Ex and retro Thief, new stealth FPS Peripeteia is made for you |url=https://www.pcgamesn.com/peripeteia/early-access-launch |access-date=16 June 2026 |work=PCGamesN |date=21 Feb 2025 |archive-url=https://web.archive.org/web/20250221171743/https://www.pcgamesn.com/peripeteia/early-access-launch |archive-date=21 Feb 2025}}</ref>
+
+[[Eurogamer]]'s Lewis Gordan, while criticizing ''Peripeteia'' for its [[bug (computer programming)|bug]]s and poor [[Artificial_intelligence_in_video_games|enemy AI]], praised that "the moments this game conjures as you navigate the various strata of its crumbling, vertiginous megacity, stumbling across sights capable of filling you simultaneously with dread and awe are superbly powerful."<ref name=Eurogamer2025/> 
+
+In February 2025, RPGFan's Ben Love elaborated on the lacking AI in ''Peripeteia'', stating that enemies often "become invulnerable, fall through the floor, or otherwise exhibit strange errors that break immersion and ruin a carefully planned attempt at stealth." Love warned that potential players "may feel this diamond in the rough requires a bit more polish and may want to wait until the game is closer to full release to jump in."<ref name=RPGFan/>
+
+=== Accolades ===
+{| class="wikitable sortable"
+|-
+! Year !! Award !! Category !! Result !! Ref.
+|-
+| style="text-align:center" | 2022
+| rowspan=2 | IndieDB
+| Players Choice - Best Upcoming Indie
+| {{Won}}
+| style="text-align:center" |<ref name=IndieDB-2022-BUI>{{cite web |author1=IndieDB |author2=Kralich/David |title=Players Choice - Best Upcoming Indie 2022 |url=https://www.indiedb.com/groups/2022-indie-of-the-year-awards/features/players-choice-best-upcoming-indie-2022 |website=IndieDB |publisher=DBolical Pty Ltd. |access-date=14 June 2026 |archive-url=https://web.archive.org/web/20221227030619/https://www.indiedb.com/groups/2022-indie-of-the-year-awards/features/players-choice-best-upcoming-indie-2022 |archive-date=27 Dec 2022 |date=27 Dec 2022}}</ref>
+|-
+| style="text-align:center" | 2025
+| Players Choice - Indie of the Year
+| {{Won}}
+| style="text-align:center" |<ref name=IndieDB-2025-IOTY>{{cite web |last1=Reismanis |first1=Scott |author2=IndieDB |title=Players Choice - Indie of the Year 2025 |url=https://www.indiedb.com/games/peripeteia/features/players-choice-indie-of-the-year-2025 |website=IndieDB |publisher=DBolical Pty Ltd. |access-date=14 June 2026 |archive-url=https://web.archive.org/web/20251228002704/https://www.indiedb.com/groups/2025-indie-of-the-year-awards/features/players-choice-indie-of-the-year-2025/ |archive-date=28 Dec 2025 |date=28 Dec 2025}}</ref>
+|}
+
+==References==
+{{reflist|refs=
+<ref name="Snake 2026">{{cite blog |author1=Snake |author2=Frankenstein Radio Studios |title=Current status of the Patreon and what's next for it and for Peripeteia: |url=https://www.patreon.com/FrankensteinRadio/posts/current-status-158690705 |access-date=12 June 2026 |work=Patreon |date=19 May 2026 |archive-url=https://web.archive.org/web/20260612030640/https://www.patreon.com/FrankensteinRadio/posts/current-status-158690705 |archive-date=12 June 2026 }}</ref>
+<ref name=90sGraphics-Presskit>{{cite web |author1=Ninth Exodus |title=Peripeteia Presskit |url=https://90s.graphics/presskit/ |website=90s.graphics |publisher=Ninth Exodus |access-date=14 June 2026 |archive-url=https://web.archive.org/web/20260614204454/https://90s.graphics/presskit/ |archive-date=14 June 2026 |language=English |date=n.d.}}</ref>
+<ref name=90sGraphics-Devs>{{cite web |author1=Ninth Exodus |title=About the devs |url=https://90s.graphics/devs/ |website=90s.graphics |publisher=Ninth Exodus |access-date=14 June 2026 |archive-url=https://web.archive.org/web/20260614055255/https://90s.graphics/devs/ |archive-date=14 June 2026 |date=n.d.}}</ref>
+<ref name=VGTimes2025>{{cite news |last1=Nikolaev |first1=Vladislav |title=Cyberpunk Immersive Sim Peripeteia Launches in Steam Early Access |url=https://vgtimes.com/gaming-news/121067-cyberpunk-immersive-sim-peripeteia-launches-in-steam-early-access.html |access-date=12 June 2026 |work=VGTimes |date=23 Feb 2025 |archive-url=https://web.archive.org/web/20260612072526/https://vgtimes.com/gaming-news/121067-cyberpunk-immersive-sim-peripeteia-launches-in-steam-early-access.html |archive-date=12 June 2026}}</ref>
+<ref name=Eurogamer2025>{{cite news |last1= Gordon |first1= Lewis |title= Peripeteia offers beguiling, maddening cyberpunk beauty |url= https://www.eurogamer.net/peripeteia-offers-beguiling-maddening-cyberpunk-beauty |access-date= 12 June 2026 |work= Eurogamer |date= 21 Feb 2025 |archive-url= https://web.archive.org/web/20250221170244/https://www.eurogamer.net/peripeteia-offers-beguiling-maddening-cyberpunk-beauty |archive-date= 21 Feb 2025 }}</ref>
+<ref name=CBR2026>{{cite news |last1= Vaughan |first1= Andrew |title= 10 Hidden Gem Indie Games Everyone Should Play at Least Once |url= https://www.cbr.com/best-hidden-gem-indie-games-everyone-must-play/ |access-date= 12 June 2026 |work=[[Comic Book Resources|CBR]] |publisher= Valnet Publishing Group |date= 5 May 2026 |archive-url= https://web.archive.org/web/20260505212849/https://www.cbr.com/best-hidden-gem-indie-games-everyone-must-play/ |archive-date= 5 May 2026 }}</ref>
+<ref name=90sGraphics>{{cite web |url=https://90s.graphics/ |title=Peripeteia; an indie immersive sim |website=90s.graphics |author=Ninth Exodus |date=n.d. |accessdate=11 June 2026 }}</ref>
+<ref name="PCGamer2025">{{cite news |last1=Wolens |first1=Joshua |title=I became a domestic terrorist to steal a lightbulb in the best immersive sim I've played this Steam Next Fest—and it isn't even a Next Fest demo |url=https://www.pcgamer.com/games/rpg/i-became-a-domestic-terrorist-to-steal-a-lightbulb-in-the-best-immersive-sim-ive-played-this-steam-next-fest-and-it-isnt-even-a-next-fest-demo/ |access-date=12 June 2026 |work=PC Gamer |date=28 Feb 2025 |archive-url=https://web.archive.org/web/20250307190753/https://www.pcgamer.com/games/rpg/i-became-a-domestic-terrorist-to-steal-a-lightbulb-in-the-best-immersive-sim-ive-played-this-steam-next-fest-and-it-isnt-even-a-next-fest-demo/ |archive-date=7 Mar 2025}}</ref>
+}}
+
+==External links==
+* [https://90s.graphics/ Official website]
+* [https://store.steampowered.com/app/1437760/Peripeteia/ Peripeteia] on [[Steam (service)|Steam]]
+
+<!-- Categories -->
+
+[[Category:Indie games]]
+[[Category:Immersive sims]]
+[[Category:Video games developed in Poland]]
+[[Category:Cyberpunk video games]]
+[[Category:Stealth video games]]
+[[Category:Upcoming video games]]

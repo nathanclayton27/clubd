@@ -1,0 +1,70 @@
+{{Short description|2019 video game}}
+{{Use dmy dates|date=March 2023}}
+{{Infobox video game
+| image = Void Bastards cover art.png
+| developer = Blue Manchu
+| publisher = [[Humble Bundle]]
+| designer  = Jonathan Chey
+| programmer = Farbs
+| writer = [[Cara Ellison]]
+| composer = Ryan Roth
+| platforms = [[Microsoft Windows|Windows]]<br/>[[Xbox One]]<br/>[[Nintendo Switch]]<br/>[[PlayStation 4]]
+| engine = [[Unity (game engine)|Unity]]
+| genre = [[First-person shooter]], [[roguelite]]
+| released = '''Windows, Xbox One'''{{vgrelease|WW|May 28, 2019}}'''Switch, PS4'''{{vgrelease|WW|May 7, 2020}}
+| modes = [[Single-player]]
+}}
+
+'''''Void Bastards''''' is a [[Science fiction film|science-fiction]] [[first-person shooter]] and [[roguelike]] [[video game]] developed by Blue Manchu and published by [[Humble Bundle]]. It was released on May 28, 2019, for [[Microsoft Windows]] and [[Xbox One]]. Ports of the game for [[Nintendo Switch]] and [[PlayStation 4]] were released on May 7, 2020.<ref>{{Cite web |last=O'Connor |first=James |date=April 16, 2020 |title=Void Bastards Has A Release Date On Switch And PS4 |url=https://www.gamespot.com/articles/void-bastards-has-a-release-date-on-switch-and-ps4/1100-6476180/ |access-date=April 23, 2020 |website=[[GameSpot]] |archive-date=20 April 2020 |archive-url=https://web.archive.org/web/20200420143113/https://www.gamespot.com/articles/void-bastards-has-a-release-date-on-switch-and-ps4/1100-6476180/ |url-status=live }}</ref> The game revolves around surviving in the dangerous Sargasso Nebula by boarding and salvaging materials from spaceships.<ref name="Softpedia">{{Cite web |last=Vasile |first=Cosmin |date=2019-06-23 |title=Void Bastards Review (PC) |url=https://www.softpedia.com/reviews/games/pc/void-bastards-review-526494.shtml |access-date=2020-02-19 |website=[[Softpedia]] |archive-date=9 December 2019 |archive-url=https://web.archive.org/web/20191209023523/https://www.softpedia.com/reviews/games/pc/void-bastards-review-526494.shtml |url-status=live }}</ref> It received generally positive reviews from critics, who praised its comic-book art style, [[Black comedy|dark humor]], and gameplay, but criticized its lackluster story and replay value.
+
+== Plot ==
+The main character is one of many rehydrated prisoners aboard a stranded personnel vessel, whose AI must rely on its dangerous cargo to obtain fuel for a final jump to its destination.<ref name="GameSpot">{{Cite web |last=Barbosa |first=Alessandro |date=2019-05-31 |title=Void Bastards Review - Genres Collide |url=https://www.gamespot.com/reviews/void-bastards-review-genres-collide/1900-6417153/ |access-date=2020-02-19 |website=[[GameSpot]] |archive-date=23 April 2020 |archive-url=https://web.archive.org/web/20200423011031/https://www.gamespot.com/reviews/void-bastards-review-genres-collide/1900-6417153/ |url-status=live }}</ref>
+
+== Gameplay ==
+The game revolves around a procedurally generated structure, in which the player enters other ships, fights enemies and salvages materials to repair their own ship. If the player dies, they are replaced by another "rehydrated" prisoner,<ref name="Softpedia" /> losing all ammunition, fuel, and food, but keeping weapon and gadget upgrades as well as objective progress.<ref name="GameSpot" /> The game has been described as an [[immersive sim]].<ref>{{cite web |last1=Scaife |first1=Steven |title=Void Bastards Review: A Droll Marriage of the Roguelike and Immersive Sim |url=https://www.slantmagazine.com/games/void-bastards-review/ |website=[[Slant Magazine]] |access-date=15 May 2023 |date=29 May 2019 |archive-date=15 May 2023 |archive-url=https://web.archive.org/web/20230515234534/https://www.slantmagazine.com/games/void-bastards-review/ |url-status=live }}</ref><ref>{{Cite magazine |last=Hanson |first=Ben |date=27 March 2019 |title=How Embracing Absurdity Liberated Void Bastards |url=https://www.gameinformer.com/gdc-2019/2019/03/27/how-embracing-absurdity-liberated-void-bastards |archive-url=https://web.archive.org/web/20190327204837/https://www.gameinformer.com/gdc-2019/2019/03/27/how-embracing-absurdity-liberated-void-bastards |url-status=live |archive-date=27 March 2019 |access-date=15 May 2023 |magazine=[[Game Informer]]}}</ref><ref>{{Cite web |last=Riendeau |first=Danielle |date=31 May 2019 |title='Void Bastards' Is a Gorgeous Sandbox of Death and Chaos |url=https://www.vice.com/en/article/void-bastards-bioshock-shooter/ |access-date=15 May 2023 |website=[[Vice (magazine)|Vice]] |archive-date=15 May 2023 |archive-url=https://web.archive.org/web/20230515234534/https://www.vice.com/en/article/pajq58/void-bastards-bioshock-shooter |url-status=live }}</ref>
+
+== Development ==
+Developed by Australian studio Blue Manchu, the game was inspired by ''[[System Shock 2]]'' and ''[[BioShock]]''.<ref name="PCGamer">{{Cite web |last=Roberts |first=Samuel |date=2019-05-28 |title=Void Bastards review |url=https://www.pcgamer.com/void-bastards-review/ |access-date=2020-02-19 |website=[[PC Gamer]] |archive-date=4 October 2024 |archive-url=https://web.archive.org/web/20241004001525/https://www.pcgamer.com/void-bastards-review/ |url-status=live }}</ref>
+
+=== Legacy ===
+A spiritual sequel, ''[[Wild Bastards]]'', was released in September 2024 for [[PlayStation 5]], [[Steam (service)|Steam]], and [[Xbox Series X and S]]. It received generally positive reviews from critics.<ref>{{cite web |title=Wild Bastards review: "A forgettable experience with conflicting design choices that compromise an otherwise intriguing premise" |url=https://www.gamesradar.com/games/fps/wild-bastards-review/ |website=Games Radar |access-date=23 September 2024 |archive-date=23 September 2024 |archive-url=https://web.archive.org/web/20240923163843/https://www.gamesradar.com/games/fps/wild-bastards-review/ |url-status=live }}</ref>
+
+== Reception ==
+{{Video game reviews
+| MC = PC: 81/100<ref name="MC_PC">{{cite web |url=https://www.metacritic.com/game/void-bastards/critic-reviews/?platform=pc |title=Void Bastards for PC Reviews |website=[[Metacritic]] |access-date=2020-02-19 |archive-date=4 October 2024 |archive-url=https://archive.today/20241004002046/https://www.metacritic.com/game/void-bastards/critic-reviews/?platform=pc |url-status=live }}</ref><br />XONE: 75/100<ref name="MC_XONE">{{cite web |url=https://www.metacritic.com/game/void-bastards/critic-reviews/?platform=xbox-one |title=Void Bastards for Xbox One Reviews |website=[[Metacritic]] |access-date=2021-08-13 |archive-date=4 October 2024 |archive-url=https://archive.today/20241004002056/https://www.metacritic.com/game/void-bastards/critic-reviews/?platform=xbox-one |url-status=live }}</ref><br />NS: 78/100<ref name="MC_NS">{{cite web |url=https://www.metacritic.com/game/void-bastards/critic-reviews/?platform=nintendo-switch |title=Void Bastards for Switch Reviews |website=[[Metacritic]] |access-date=2021-08-13 |archive-date=4 October 2024 |archive-url=https://archive.today/20241004002105/https://www.metacritic.com/game/void-bastards/critic-reviews/?platform=nintendo-switch |url-status=live }}</ref>
+| PCGUS = 71/100<ref>{{cite web |last1=Roberts |first1=Samuel |title=Void Bastards review |url=https://www.pcgamer.com/void-bastards-review/ |website=[[PC Gamer]] |date=19 September 2021 |access-date=19 September 2021 |archive-date=1 August 2021 |archive-url=https://web.archive.org/web/20210801112744/https://www.pcgamer.com/void-bastards-review/ |url-status=live }}</ref>
+| GSpot = 8/10<ref name="GameSpot" />
+| GI = 8/10<ref>{{cite magazine |last1=Miller |first1=Matt |title=Void Bastards - Scavenging The Fun |url=https://www.gameinformer.com/review/void-bastards/scavenging-the-fun |archive-url=https://web.archive.org/web/20190528180851/https://www.gameinformer.com/review/void-bastards/scavenging-the-fun |url-status=live |archive-date=28 May 2019 |magazine=[[Game Informer]] |date=19 September 2021 |access-date=19 September 2021}}</ref>
+| NLife = 8/10<ref>{{Cite web |last=O'Reilly |first=PJ |date=19 September 2021 |title=Void Bastards Review (Switch eShop) |url=https://www.nintendolife.com/reviews/switch-eshop/void_bastards |access-date=19 September 2021 |website=[[Nintendo Life]] |archive-date=4 October 2024 |archive-url=https://web.archive.org/web/20241004001526/https://www.nintendolife.com/reviews/switch-eshop/void_bastards |url-status=live }}</ref>
+| Destruct = 7/10<ref>{{cite web |last1=Hancock |first1=Patrick |title=Review: Void Bastards |url=https://www.destructoid.com/reviews/review-void-bastards/ |website=[[Destructoid]] |date=19 September 2021 |access-date=19 September 2021 |archive-date=20 September 2021 |archive-url=https://web.archive.org/web/20210920212246/https://www.destructoid.com/reviews/review-void-bastards/ |url-status=live }}</ref>
+| SN = 8/10<ref>{{cite web |last1=Chandler |first1=Sam |title=Void Bastards review: Permission to come aboard |url=https://www.shacknews.com/article/111920/void-bastards-review-permission-to-come-aboard |website=[[Shacknews]] |date=19 September 2021 |access-date=19 September 2021 |archive-date=19 October 2021 |archive-url=https://web.archive.org/web/20211019083029/https://www.shacknews.com/article/111920/void-bastards-review-permission-to-come-aboard |url-status=live }}</ref>
+| NWR = 8/10<ref>{{Cite web |last=Green |first=Steven |date=19 September 2021 |title=Void Bastards (Switch) Review |url=http://www.nintendoworldreport.com/review/53643/void-bastards-switch-review |access-date=19 September 2021 |website=Nintendo World Report |archive-date=4 October 2024 |archive-url=https://web.archive.org/web/20241004001612/http://www.nintendoworldreport.com/review/53643/void-bastards-switch-review |url-status=live }}</ref>
+| GameRev = 9/10<ref>{{Cite web |last=Santa Maria |first=Alex |date=28 May 2019 |title=Void Bastards Review {{!}} Never tell me the odds |url=https://www.gamerevolution.com/review/542285-void-bastards-review-xbox-one |access-date=19 September 2021 |website=[[GameRevolution]] |archive-date=21 September 2021 |archive-url=https://web.archive.org/web/20210921033004/https://www.gamerevolution.com/review/542285-void-bastards-review-xbox-one |url-status=live }}</ref>
+}}
+
+''Void Bastards'' received "generally favorable reviews" according to [[Metacritic]].<ref name="MC_PC" /><ref name="MC_XONE" /><ref name="MC_NS" /> Cosmin Vasile of ''[[Softpedia]]'' rated the game 8.5/10, calling it an "absolute delight" due to its comic-book aesthetics and "solid", "addictive" gameplay, but also noting it was "repetitive" with a "weak story".<ref name="Softpedia" /> Alessandro Barbossa of ''[[GameSpot]]'' rated the game 8/10, also praising the art style and "ridiculously designed" but "satisfying" weapons.<ref name="GameSpot" /> Samuel Roberts of ''[[PC Gamer]]'' rated it 71/100, calling the game "slightly messy" but praising its "gorgeous" art style and "excellent" weapons.<ref name="PCGamer" />
+
+=== Accolades ===
+The game was nominated for "Xbox Game of the Year" at the [[2019 Golden Joystick Awards]],<ref>{{cite web|url=https://www.gamesradar.com/goldenjoystickawards/#xbox-game-of-the-year|title=Golden Joystick Awards 2019|website=[[GamesRadar+]]|archiveurl=https://web.archive.org/web/20190928103127/https://www.gamesradar.com/goldenjoystickawards/#xbox-game-of-the-year|archivedate=2019-09-28|url-status=dead|accessdate=2020-02-29}}</ref> and for "Excellence in Visual Art" at the [[Independent Games Festival]] Awards.<ref>{{cite press release|url=https://www.globenewswire.com/news-release/2020/01/07/1967446/0/en/Mutazione-Eliza-Untitled-Goose-Game-Are-Some-of-the-Key-Nominees-for-the-22nd-Annual-Independent-Games-Festival.html|title=Mutazione, Eliza, Untitled Goose Game Are Some of the Key Nominees for the 22nd Annual Independent Games Festival|date=2020-01-07|website=[[GlobeNewswire]]|accessdate=2020-02-29|archive-date=8 January 2020|archive-url=https://web.archive.org/web/20200108144820/https://www.globenewswire.com/news-release/2020/01/07/1967446/0/en/Mutazione-Eliza-Untitled-Goose-Game-Are-Some-of-the-Key-Nominees-for-the-22nd-Annual-Independent-Games-Festival.html|url-status=live}}</ref>
+{{clear}}
+
+== References ==
+{{Reflist}}
+
+[[Category:2019 video games]]
+[[Category:Blue Manchu games]]
+[[Category:First-person shooters]]
+[[Category:Humble Games games]]
+[[Category:Immersive sims]]
+[[Category:Indie games]]
+[[Category:Nintendo Switch games]]
+[[Category:PlayStation 4 games]]
+[[Category:Roguelike video games]]
+[[Category:Science fiction video games]]
+[[Category:Single-player video games]]
+[[Category:Video games developed in Australia]]
+[[Category:Video games set on spacecraft]]
+[[Category:Video games using procedural generation]]
+[[Category:Windows games]]
+[[Category:Xbox Cloud Gaming games]]
+[[Category:Xbox One games]]

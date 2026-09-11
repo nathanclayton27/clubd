@@ -1,0 +1,562 @@
+{{Short description|2016 video game}}
+{{good article}}
+{{Use American English|date=June 2015}}
+{{Use dmy dates|date=June 2017}}
+{{Infobox video game
+| title = Dishonored 2
+| image = Dishonored 2 cover art.jpg
+| developer = [[Arkane Lyon]]
+| publisher = [[Bethesda Softworks]]
+| engine = [[Void Engine]]
+| series = ''[[Dishonored (series)|Dishonored]]''
+| platforms = {{Unbulleted list|[[PlayStation 4]]|[[Windows]]|[[Xbox One]]}}
+| released = 11 November 2016
+| genre = [[Action-adventure]], [[Stealth game|stealth]]
+| modes = [[Single-player]]
+| director = [[Harvey Smith (game designer)|Harvey Smith]]
+| designer = [[Dinga Bakaba]]
+| programmer = Hugues Tardif
+| artist = Sébastien Mitton
+| writer = {{Unbulleted list|Sandra Duval|[[Terri Brosius]]|[[Austin Grossman]]}}
+| composer = [[Daniel Licht]]
+}}
+
+'''''Dishonored 2''''' is a 2016 [[First-person (video games)|first person]] [[action-adventure game]] developed by [[Arkane Lyon]] and published by [[Bethesda Softworks]] for [[PlayStation 4]], [[Windows]], and [[Xbox One]]. It is the sequel to 2012's ''[[Dishonored]]''. After Empress Emily Kaldwin is deposed by the witch Delilah Copperspoon, the player may choose between playing as either Emily or her father/Royal Protector [[Corvo Attano]] as they attempt to reclaim the throne. Emily and Corvo each employ their own array of supernatural abilities, though the player can opt not to use these abilities at all. Due to the game's [[nonlinear gameplay]], there are a multitude of ways to complete missions, from non-lethal stealth to purposeful violent conflict.
+
+Ideas for ''Dishonored 2'' began while developing the downloadable content of its predecessor, which spawned the decision to create a voice for Corvo Attano after being a silent character in the first installment. The advancement of the timeline was brought about once Emily Kaldwin, a child in ''Dishonored'', was proposed as a playable character. The game's aesthetic was influenced by paintings, sculptures, architecture, fashion, and technologies around the year 1851; set in the fictional city of Karnaca, based on the Cypriot city of [[Larnaca]], it also drew inspiration from other [[Mediterranean]] countries like [[Greece]], [[Italy]], and [[Spain]]. Voice actors include [[Rosario Dawson]], [[Sam Rockwell]], [[Robin Lord Taylor]], [[Jamie Hector]], [[Pedro Pascal]], and [[Vincent D'Onofrio]].
+
+''Dishonored 2'' received positive reviews. Praise went to the improvements made since the first game such as more challenging stealth, the adaptability of Emily and Corvo's abilities to both play styles, the creative design of individual missions, the realization of the game's world, and the artificial intelligence. Criticism was directed at the storyline's lack of focus, while the PC version became subject to technical issues at launch. The game won Best Action/Adventure Game at the [[The Game Awards 2016|2016 Game Awards]] and Costume Design at the 2017 NAVGTR Awards. It has since become regarded as [[List of video games considered the best|one of the greatest games ever made]]. A standalone sequel, ''[[Dishonored: Death of the Outsider]]'', was released in 2017.
+
+== Gameplay ==
+[[File:Dishonored 2 gameplay screenshot.jpg|thumb|upright=1.2|left|In this gameplay screenshot, the player is holding a heart item which aids in the discovery of bone charms and runes.]]
+''Dishonored 2'' is an [[action-adventure game]] with [[Stealth game|stealth]] elements played from a [[First-person (video games)|first-person perspective]]. After playing as [[Emily Kaldwin|Empress Emily Kaldwin]] during the prologue, players may decide to play either as Emily or as [[Corvo Attano]], the protagonist from ''[[Dishonored]]'', the previous game.<ref name="a long day in Dunwall" /> Side missions unlock alternate methods of assassination, non-lethal approaches and paths to navigate the main mission.<ref name="a long day in Dunwall" /><ref name="edge of the world" /><ref name="the good doctor" /><ref name="a crack in the slab" /> Both characters wield a pistol, crossbow, a retractable blade, grenades and mines—all of which are upgradable.<ref name="edge of the world" /> Upgrades may be purchased at black market shops found throughout levels, and blueprints scattered throughout the environment unlock new upgrades. Coin is required to buy these upgrades, which can be found throughout levels or gained from other collectibles, like stealing paintings.<ref name="Collectibles" /> Players can choose whether to play stealthily or not and can finish the game without killing anyone.<ref name="IGN: Dish" /> Health elixirs and food consumables will restore health, while mana elixirs replenish mana.<ref name="edge of the world" />
+
+Enemy detection works on line-of-sight, with players being able to use cover or high areas out of enemies' cones of vision to stay undetected.<ref name="KotakuTips" /> Darkness can aid the player in staying hidden, but it is only effective at a distance.<ref name="at a distance" /> Enemy alert meters and musical cues let the player know if they have been spotted. Noise will cause enemies to go to investigate, including noise made by broken bottles, sprinting or the player striking a sword against a wall; this may be used deliberately to lure guards into traps or disrupt their patrol route.<ref name="KotakuTips" /> Players can look through keyholes to help them survey a room before entering and can lean to look from cover without fully exposing themselves.<ref name="KotakuTips" /> The player is able to be detected if they peer out from behind a wall for too long, a feature not seen in ''Dishonored''.<ref name="GIGameplay" /> To avoid detection, the player may choke people out or slit their throats. Bodies can be carried away and concealed. Alarms can be disabled to assure that enemies are not alerted to the player's presence.<ref name="edge of the world" /> Walls of Light, deadly electrical barriers powered by wind or whale oil, are subject to have their power turned off or be rewired so that only enemies are killed by going through them. Whale oil canisters explode on harsh impact, and can be thrown at enemies to that end.<ref name="edge of the world" /><ref name="the clockwork mansion" />
+
+''Dishonored 2'' introduces non-lethal combat moves to throw people off-balance or knock someone unconscious—choke-holds, blocks, pushes, kicks, crouch-slides, drops from high up, sleep darts, stun mines, and various supernatural abilities—and features the chaos system used in the first game.<ref name="PCGPrev" /><ref name="GM Feature" /><ref name="edge of the world" /> The player gains chaos by killing characters, representative of the player destabilizing the world. The game adds an element to the system where, at the start of a mission, random [[Non-player character|non-player characters]] are procedurally assigned one of three states: sympathetic, guilty, and murderous. Killing a "sympathetic" person gives the player more chaos than killing others, while in contrast killing a murderous character gives the player a lesser amount.<ref name="Assassin Abilities" /> The amount of chaos accrued affects the dialog used by Emily and Corvo<ref name="PCGPrev" /><ref name="GM Feature" /> and the quantity of enemies present in each given level.<ref name="harvey answers" /> Further, insects called bloodflies make nests in corpses; therefore if many people are killed, there will be an increase in bloodflies. Loot can be found in the nests which, if destroyed, can be obtained. The bloodflies similarly encourage the player to hide bodies from them while on a mission.<ref name="GZ Hide" /><ref name="GS Journey" /><ref name="edge of the world" /> Each level in the game is intended to have a unique theme, in either fiction or [[game mechanic]].<ref name="GM Feature" /><ref name="GS Journey" /> In one level, the player is confronted with two factions each with their own assassination target, and may use the level's reoccurring dust storms for cover.<ref name="GM Feature" /> In another, time distortion is introduced as the player traverses an abandoned mansion in ruins. The player is given a device that lets them glimpse three years into the past, where the mansion is still occupied and guards roam, and can shift back and forth between the two points in time.<ref name="RPS Time" />
+
+=== Abilities and powers ===
+As in the first game, the player has access to supernatural powers. These powers are optional and may be rejected.<ref name="Flesh and steel" /> Independently from whether these supernatural powers are rejected or not, the player receives a heart item which aids in the discovery of bone charms and runes; these provide passive perks and skill points, respectively; if the powers are not accepted, runes are converted into additional coins.<ref name="wind" /> The heart reveals whether those the player comes across are sympathetic, guilty or murderous.<ref name="edge of the world" /> Unlike the first game, the upgrading system was changed to a [[skill tree]] with multiple paths and more possible upgrades; a power may have a lethal or non-lethal upgrade.<ref name="GIGameplay" /> Each character has unique powers. "Dark Vision", the power that more easily identifies the player's surroundings, including where an enemy directs their gaze, is available to both.<ref name="edge of the world" /><ref name="GIPowers3" /> Another skill tree, applied to both playable characters, unlock more passive abilities which do not consume mana, such as the ability to run faster and jump higher, or the ability to craft bonecharms.<ref name="edge of the world" />
+
+Corvo retains many of the powers available in the first game, though his progress in them has been reset. "Blink" teleports him to a chosen location, but in addition can be upgraded to freeze time or impart damage on impact with the momentum gained from teleportation. Corvo may summon rats with "Devouring Swarm" to clear dead bodies before bloodflies lay eggs in them. While its original use allowed Corvo to possess animals and humans, "Possession" is enhanced to take control of dead bodies as well as multiple hosts in succession. "Bend Time" can be used to slow down time, circumventing dangerous checkpoints or reaching enemies unobserved.<ref name="GIPowers3" /> The ability "Windblast" enables Corvo to summon a blast of wind that can deflect projectiles and push enemies off ledges.<ref name="wind" /><ref name="blast" /> Emily has powers new to the series, including "Far Reach", which allows her to pull objects and enemies toward her<ref name="GIConcept" /> and travel without physical movement by clasping onto something to propel herself forward. She can use "Mesmerize" to distract her enemies, moving them into a state of sedation. "Domino" permits Emily to connect several of her enemies together so that they share the same outcome. With "Shadow Walk", she is turned into a shadowy cloud that moves swiftly and changes tangibility at will. "Doppelganger" conjures a clone of Emily in order to misdirect her opponents, and can work alongside "Domino".<ref name="GIPowers" /><ref name="GIPowers2" />
+
+== Synopsis ==
+
+===Setting===
+While players begin and end the game in Dunwall, much of the story takes place in the coastal city of Karnaca, the capital of Serkonos that lies along the southern region of the Empire of the Isles, whose chief exports include [[silver]]. Unlike Dunwall, which relied on whale oil for power, Karnaca is powered by [[wind turbine]]s fed by currents generated by a cleft mountain along the city's borders, though the winds that blow over and into the city cause it to be rife with [[dust storm]]s, most notably within its mining district which led it to be known as the "Dust District". At the time the game begins, two factions, the Howlers and Overseers, engage in violent conflict within the district, with the Howlers seeking to oppose the new Duke and his government following the passing of its previous Duke, leading to the Grand Serkonan Guard, Karnaca's law enforcement and military, erecting defensive barriers called Walls of Light in response to the disarray.<ref name="jewel" /><ref name="PCGPrev2" />
+
+===Characters===
+[[File:Dishonored 2 - Corvo & Emily - Paris Games Week 2016.jpg|thumb|Actors portraying Corvo and Emily at [[Paris Games Week]] 2016]]
+The main characters of ''Dishonored 2'' that the player can control are Corvo Attano ([[Stephen Russell]]), a former bodyguard turned assassin and the main character of [[Dishonored|the previous game]], and Emily Kaldwin ([[Erica Luttrell]]), Corvo's daughter and the former Empress of the Empire of the Isles. The game's main antagonists include Luca Abele ([[Vincent D'Onofrio]]), the new duke of Serkonos following the passing of his father Theodanis, and Delilah Copperspoon ([[Erin Cottrell]]), a witch and the antagonist of the previous game's downloadable content packs ''The Knife of Dunwall'' and ''The Brigmore Witches'',<ref name="Usurper" /> as well as the half-sister of Emily's deceased mother; promotional material from the special collector's edition of the game references her as Delilah Kaldwin.<ref name="Hillier" />
+
+Other characters in the game include Meagan Foster ([[Rosario Dawson]]), captain of the ''Dreadful Wale''; Paolo ([[Pedro Pascal]]), leader of the Howler Gang; Mindy Blanchard (Betsy Moore), Paolo's second-in-command; Mortimer Ramsey ([[Sam Rockwell]]), a corrupt officer of the Dunwall City Watch; Liam Byrne ([[Jamie Hector]]), the Vice Overseer of Karnaca who opposes the Howlers; Anton Sokolov ([[Roger L. Jackson]]), Dunwall's genius inventor; [[The Outsider (Dishonored)|the Outsider]] ([[Robin Lord Taylor]]), the representational figure of the Void, an alternate dimension that grants supernatural abilities; and Jessamine Kaldwin ([[April Stewart]]), Emily Kaldwin's mother, whose spirit was trapped in The Heart.<ref name="edge of the world" /><ref name="VoiceGIMay15" /><ref name="the heart" />
+
+===Plot===
+Fifteen years after Corvo Attano restored Emily Kaldwin to the throne following the assassination of her mother, Dunwall has prospered under her reign. A serial killer known as "the Crown Killer" has been murdering Emily's enemies, leading many to believe that Emily and Corvo are responsible. During a ceremony in remembrance of Jessamine Kaldwin's assassination, Duke Luca Abele of Serkonos arrives with the witch Delilah Copperspoon. Delilah claims to be Jessamine's half-sister and the true heir to the throne. The Duke's men attack, killing Emily's men. The player then chooses whether to continue as Emily or Corvo, and the character not chosen is magically turned to stone by Delilah. The player escapes to the Dunwall docks, where Meagan Foster is waiting. Meagan was sent by Anton Sokolov to warn Emily and Corvo about the Duke's coup. They sail for Karnaca, where Delilah began her rise to power. During the voyage, the player is visited by the Outsider, who offers them supernatural powers and instructs them to stop Delilah.<ref name="a long day in Dunwall" />
+
+Arriving in Karnaca, the player is tasked with rescuing Sokolov, who was kidnapped by the Crown Killer.<ref name="edge of the world" /> Infiltrating Addermire Institute, where the Crown Killer is reportedly hiding out, the player discovers that the Crown Killer is the alter ego of Karnaca's Chief Alchemist, Alexandria Hypatia ([[Jessica Straus]]). Hypatia accidentally created the Crown Killer persona when she tested an experimental serum on herself, and the Duke then exploited this to frame Emily. The player either kills Hypatia or cures her condition.
+
+Investigating Addermire, it is revealed that Sokolov was imprisoned by Kirin Jindosh ([[John Gegenhuber]]), the Duke's Grand Inventor.<ref name="the good doctor" /> The player enters Jindosh's Clockwork Mansion, kills him or performs an electrical lobotomy on him, and frees Sokolov.<ref name="the clockwork mansion" /> Sokolov directs the player to eliminate Breanna Ashworth ([[Melendy Britt]]), the curator of the Royal Conservatory and witch working for Delilah. The player enters the Royal Conservatory and discovers that Ashworth brought Delilah back from the Void, after her defeat at the hands of Daud, the assassin who killed Emily's mother. Ashworth is either killed or has her powers removed.<ref name="the royal conservatory" />
+
+With Delilah being too powerful to defeat conventionally, Sokolov suggests the player investigate the home of mining magnate Aramis Stilton ([[Richard Cansino]]).<ref name="dust district" /> Upon entering Stilton's mansion, the player discovers that he had gone insane after witnessing Delilah's resurrection. With the aid of the Outsider, the player travels back in time and observes the Crown Killer, Jindosh, Ashworth, and the Duke pull Delilah from the Void. Afterward, Delilah siphons part of her soul into a statue, making her immortal.<ref name="a crack in the slab" />
+
+The player invades the Duke's palace to eliminate him and retrieve Delilah's soul. After either killing the Duke or working with his body double to depose him, the player finds the statue and extracts Delilah's soul.<ref name="the grand palace" /> The player then returns to Dunwall for a final confrontation with Delilah. After reuniting Delilah with her soul, the player may choose to kill Delilah or trick her into trapping herself inside her own painting.<ref name="death to the empress" />
+
+==== Endings ====
+There are multiple endings based on whether the player caused high chaos by indiscriminate murder, or achieved low chaos by refraining from taking lives. These endings are also dependent on whom the player killed or spared, and which factions, if any, they sided with.
+
+In the High Chaos ending, the player is faced with the choice of freeing Emily / Corvo from petrification or leaving them that way. If Emily is not left in stone, she becomes a vengeful empress and brutally purges Delilah's supporters. If Corvo leaves Emily petrified, he takes the throne for himself and becomes a brutal tyrant known as Emperor Corvo "the Black". Karnaca is either ruled by a new tyrant or collapses into anarchy and, if alive, Sokolov becomes a broken man after witnessing the perversion of his work, and is exiled to his home country.
+
+In the Low Chaos ending, the player frees Emily / Corvo from their imprisonment. A council of representatives, or, optionally, Corvo, who can make himself the new Duke, takes charge in Karnaca and brings the city back from the brink. Emily becomes a fair and just ruler, reuniting the Empire. Sokolov, proud to see his work used for good, returns to his home country to spend his last days in comfort.
+
+In either ending, if Meagan survives, she is revealed to be Billie Lurk and leaves to search for Daud, leading to ''[[Dishonored: Death of the Outsider]]''.<ref name="death to the empress" />
+
+== Development ==
+''Dishonored 2'' was developed by [[Arkane Studios]] and published by [[Bethesda Softworks]]. After having co-directed the first game,<ref name="Polygon: reveal" /> [[Harvey Smith (game designer)|Harvey Smith]] worked as director of ''Dishonored 2''.<ref name="director 2" /> Though the first ''Dishonored'' was developed by both Arkane teams in Lyon, France and Austin, United States, its sequel was developed largely solely in Lyon as Arkane Studios Austin were focused on developing 2017's ''[[Prey (2017 video game)|Prey]]''.<ref name="five" /> Both studios collaborated on the game, and playtested each other's builds.<ref name="GIGameplay" /><ref name="five" /> The game runs on Arkane's "Void" engine, as opposed to [[Unreal Engine 3]] that was previously used in ''[[Dishonored]]''. The Void engine is based on [[id Tech 5]], though the majority of the original engine was rewritten.<ref>{{cite web |title=Void engine allows Arkane to push the boundaries in every corner |url=http://www.gameplanet.co.nz/pc/features/g57bd06ce9b1e3/Art-director-Sebastien-Mitton-on-Dishonored-2s-supernatural-systems/ |website=Gameplanet |access-date=20 August 2022 |quote=It is based on the Id Tech 5 engine, but we kept like 20 percent of the engine and we did the AI stuff. |archive-date=26 September 2016 |archive-url=https://archive.today/20160926083634/http://www.gameplanet.co.nz/pc/features/g57bd06ce9b1e3/Art-director-Sebastien-Mitton-on-Dishonored-2s-supernatural-systems/ |url-status=dead }}</ref> Arkane removed unneeded elements from the engine like the mini [[open world]] and overhauled the graphics. The new engine is intended to improve in-game lighting and post-processing to help the game's visuals,<ref name="PCGPrev" /> and allows the game to visualize [[subsurface scattering]].<ref name="VG247 Interview" />
+
+''Dishonored'' was not developed with a sequel in mind, but ideas for one began to emerge during the development of its downloadable content. Harvey Smith described the decision to make Emily playable as "intuitive", with Emily having been a child in the original game.<ref name="EG Interview" /> The impact that Emily had on players in ''Dishonored'', which changed how the game was being played, made the developers decide to continue her story and give her more depth in ''Dishonored 2''.<ref name="her story" /><ref name="more depth" /> Although this meant moving the timeline along, Arkane did not want to go too far for fear of losing the series' [[gaslamp fantasy]] / [[steampunk]] aesthetics.<ref name="EG Interview" /> The choice to include Corvo as an alternate player character was itself a later decision.<ref name="VG247 Interview" />
+
+In contrast to the first game, it was decided that both Emily Kaldwin and Corvo Attano should be voiced in ''Dishonored 2''.<ref name="VoiceGIMay15" /> The developers had previously experimented with a voiced player character with the assassin Daud in two pieces of ''Dishonored''{{'}}s [[downloadable content]], ''The Knife of Dunwall'' and ''The Brigmore Witches''.<ref name="GM Feature" /><ref name="GS Voiced" /> Voiced player characters allowed the developers to draw attention to things on-screen via dialogue, and Arkane found them better at making players more emotionally invested.<ref name="GS Voiced" /> As Corvo had been a silent character in the first game, Arkane wanted to avoid going against any broad assumptions a player may have made about his character while also giving him a more assertive personality, which Smith remarked as an increased challenge for the writers.<ref name="Corvo Reacquainted" /> Originally, the player was to have access to all the powers regardless of what character was chosen. However, instead the team chose to limit them, and have the character's powers "reflect their lives or their time in the world".<ref name="Assassin Abilities" />
+
+Arkane was influenced by some criticisms of the first ''Dishonored''.<ref name="PCG Interview" /> Although the difficulty was not considered a major problem, a sizeable number of players had complained the first was too easy, and thus the harder difficulty settings were reworked.<ref name="GIGameplay" /><ref name="EG Interview" /> The chaos system of ''Dishonored'', considered as merely a binary [[Ersatz good|ersatz]] meter, was intended to have more depth in the sequel.<ref name="ersatz" /> The altered chaos system, where different individuals grant varying amounts of chaos, was implemented due to how many players used the Heart in the original game. As the Heart would reveal secrets about whomever it was pointed at, players would use it to decide which non-player characters to kill and which to leave be or spare.<ref name="Assassin Abilities" /> Also intended to yield additional improvements was the upgrade system, which would for the first time level up based on a skill tree. Bone charms were made into craftable items, with 400,000 possible combinations available.<ref name="boned charms" /> While taking into account the intricacies of how supernatural abilities would be used, designers faced increased difficulty in relation to the play-style where the game is traversed in their absence, noting the accommodation of the play-style in a way that would not cancel out the other as a challenge.<ref name="48c3nc3" />
+
+As Arkane's Austin studio had left to work on ''Prey'', Arkane Studios Lyon had to rebuild the AI team and begin work on the AI "from scratch". In addition to their own individual AIs, the guards in the game respond to a master AI that assigns them roles and helps them react to and work with each other.<ref name="AI" />
+
+With ''Dishonored 2'', developers wanted to make the game's characters more representative.<ref name="harvey answers" /> Arkane tried to give more key roles to non-white characters both to match the "melting pot" nature of the Empire and create a realistic world, and to ensure any potential player could find themselves reflected in the world.<ref name="harvey answers" /><ref name="Diversity" /> Elsewhere, characters exist who are not heterosexual, though developers wished this to feel a natural part of the world rather than "draw[ing] a big sign" around them. Emily's sexuality itself is deliberately never specified in order to allow for players to impose their own interpretations.<ref name="harvey answers" /> The first ''Dishonored'' had received some criticisms about giving women limited types of roles. From ''Dishonored''{{'}}s downloadable content onwards, Arkane attempted to address these concerns and reach a more "plausible balance" in the world.<ref name="Dishonored Women" /> This trend continued for ''Dishonored 2'' which has women in a wider range of roles, including as guards.<ref name="PCGPrev" />
+
+=== Art, level design, and setting ===
+[[File:Karnaca.jpg|thumb|upright=1.35|left|''Dishonored 2'' takes place in the [[southern Europe]]-inspired Karnaca. Its buildings are often flat-roofed, and the game features a vertical element less emphasized in the original ''Dishonored''.]]
+Sébastien Mitton, who acted as art director on the first game,<ref name="mittens" /> returned to the position for ''Dishonored 2''.<ref name="GIConcept" /> [[Viktor Antonov (art director)|Viktor Antonov]], who helped conceive of ''Dishonored''{{'}}s "painterly" look, had moved on as a general creative consultant for Bethesda and thus was less involved in the art of ''Dishonored 2''.<ref name="GI issue" /> Arkane drew on paintings and sculptures for the art design, and had Lucie Minne mold several clay busts.<ref name="GIConcept" /><ref name="Museum" /> The game begins and ends in the city of Dunwall, the setting of the first game, with most of the game taking place in Karnaca, "the jewel of the south".<ref name="GM Feature" /><ref name="Karnaca" /> The change in setting in part was out of a desire to show another corner of the series' Empire. On using both settings, Harvey Smith commented that Arkane felt "we need to start it at home ... and then venture out into an exotic place and come back".<ref name="GM Feature" /> Mitton wanted ''Dishonored 2'' to be a visual "journey to a new city", though keeping the same sensibility of the first game and elements like oppression, disease, magic, and decay.<ref name="PCGPrev" />
+
+The history of Karnaca reportedly took approximately a year to create. After the creation of the setting's basic outline, the team focused on developing ideas that were inspired from inside the game, rather than from the outside world.<ref name="French History" /> Arkane had [[anthropology]] and [[politics]] in mind when creating the land's history, looking upon the first settlers of the region, the influence of foreign powers taking up residence there, and the different "tides of culture" that shaped the city.<ref name="GI issue" /> An attempt was made to have the game feature various different types of architecture, to reflect these various waves of settlers. The Arkane team worked with [[industrial designer]]s and [[architect]]s in creating Karnaca.<ref name="French History"/>
+
+Based on the Cypriot city of [[Larnaca]] (hence its name) with inspiration from other [[southern Europe]] countries like [[Greece]], [[Italy]] and [[Spain]], Karnaca is warmer and sunnier than Dunwall.<ref name="Karnaca" /> Reference photos were used from a variety of places to help design the city, including [[Cuba]], [[Lyon]] and [[Malibu, California]]. The buildings in Karnaca frequently have flat roofs and more ornate windows.<ref name="GIConcept" /> Photography from the 1920s was examined in order to help build a setting with a historical disposition, using reference websites like [[Shorpy.com]] and looking at the work of [[Agustín Casasola]].<ref name="GIConcept" /> Whereas ''Dishonored'' was largely built on the real world of 1837, ''Dishonored 2'' draws ideas from "the architectural forms, popular fashions, and far-out technologies" of 1851.<ref name="GM Feature" /> Arkane tried to take architectural concerns into account, and considered the effect the wind would have on the way the city developed, with energy being generated by wind turbines.<ref name="PCGPrev" /> [[Level design]]ers and level architects collaborated throughout the entire production as locations were built.<ref name="architect" /> In making Karnaca, a style of [[Art Nouveau]] was applied.<ref name="art nouveau" />
+
+The developers intended to depict Karnaca as a grounded environment to help the city seem as though it could exist in reality.<ref name="GIConcept" /> Arkane wished to avoid what one member dubbed "the ''[[Deus Ex (video game)|Deus Ex]]'' effect"—wherein man-sized vents were placed wherever the game designers felt, often in nonsensical places.<ref name="PCG Interview" /> The team tried to reflect practicalities of everyday life; for instance, a building would have to have some kind of toilet, and a guard's placement should make in-world sense.<ref name="French History" /> Colonies in places such as [[Australia]], [[India]] and [[Africa]] were investigated to comprehend the transition of people adapting from the cold climate of Dunwall to areas with a warmer constitution like Karnaca.<ref name="art nouveau" />
+
+Designing the in-game propaganda, they studied its use in history, finding the same pattern of elements reappearing throughout the centuries. In place of the militarily inspired propaganda of the first game, ''Dishonored 2'' would employ a subtler approach; lavish posters for invariably canceled enterprises meant to aid the people of Serkonos were made to exhibit the nature of tyranny as practiced by the Duke of Serkonos and his government. To further detail the world, the narration team would come up with fictitious products and brand names and make advertisements of them.<ref name="product propaganda" />
+
+== Release ==
+[[File:The art of videogames, Art Ludique, Paris (22390928760).jpg|thumb|right|Part of the ''Dishonored 2'' exhibit at the [[Art Ludique]]]]
+
+The game was formally announced during Bethesda's [[Electronic Entertainment Expo 2015]] press conference by ''Dishonored'' co-directors [[Raphaël Colantonio]] and Harvey Smith,<ref name="Polygon: reveal" /> but was leaked the night before during a rehearsal.<ref name="Eurogamer: leak" /> Lucie Minne's clay models, along with other ''Dishonored'' art, were featured on display at [[Art Ludique]] in an exhibit focused on French video games.<ref name="GIConcept" /><ref name="Museum" /> ''Dishonored 2'' appeared again at [[E3 2016]]. An image for the game by Sergei Kolesov was featured as part of the "Into the Pixel" collection.<ref name="pixel kolesov" /> It was [[released to manufacturing]] on 1 November<ref name="golden 1" /> and made available on 11 November.<ref name="Release Date" /> The PC version was [[Tamper resistance|tamper-protected]] by anti-piracy software [[Denuvo]],<ref name="denuvo" /> which was cracked in June 2017 by hacker group SteamPunks.<ref name="cracked" />
+
+Preordering ''Dishonored 2'' granted players access to the full game a day early.<ref name="Early" /> Bethesda announced a special collector's edition of the game as a [[pre-order]] on their online store. The collector's edition included a 13.5 inch replica of Corvo Attano's signature mask, a zinc alloy replica of Emily Kaldwin's ring, a Delilah Kaldwin propaganda poster and a metal collector's edition case for the game disc and manual. Digital bonuses were also included in the form of the Digital Imperial Assassin's Pack, which included additional in-game content. Pre-orders for console versions of the collector's edition came with a copy of ''[[Dishonored#Release|Dishonored: Definitive Edition]]'', a remastered version of the first game for the eighth generation of consoles with all downloadable content included.<ref name="Hillier" />
+
+In May 2016, Bethesda announced a  ''Dishonored'' [[tie-in]] comic miniseries and novel trilogy. The comic mini-series, published by [[Titan Comics]] and written by [[Gordon Rennie]] with art by Andrea Olimpieri and Marcelo Maiolo, consists of four issues, the first of which was published in August. The three tie-in novels are published by [[Titan Books]], the first of which, ''The Corroded Man'', written by [[Adam Christopher]], was published in September, with the second and third volumes following in 2017.<ref name="TieIn" /> In addition, a [[Dark Horse Comics]]-created artbook, ''The Art of Dishonored 2'', was released, launching on the same date as the game. An art contest was held over social media—from 28 June to 17 July—with five winning participants being featured in the book.<ref name="Art Book" /><ref name="take action" /> A graphic novel, ''The Peeress and the Price'', was released on 20 February 2018. Written by Michael Moreci, drawn by Andrea Olimpieri and colorized by Mattia Iacono, it was created as a follow-up to the game.<ref name="PCGamer-Feb2018" />
+
+''Dishonored 2'' received later updates. A [[New Game Plus]] mode was made available on 19 December 2016, which also allows the player access to both protagonists' powers in a single playthrough. Customizable difficulty settings along with a mission-select option were postponed to 23 January 2017 for all platforms.<ref name="this update" /><ref name="postpwned" /><ref name="mission-select" /> A standalone expansion, ''[[Dishonored: Death of the Outsider]]'', was released on 15 September 2017. It follows Billie Lurk and Daud the assassin as they embark on a mission to kill the Outsider.<ref name="death of the outsider" />
+
+==Reception==
+
+===Pre-release===
+[[Emily Kaldwin]]'s reveal as player character at E3 2015 drew attention pre-release. ''[[GamesRadar]]'' called it one of the event's biggest surprises, noting the rarity of female protagonists.<ref name="female protagonists" /> Both ''[[GameSpot]]'' and ''[[The Guardian]]'' commented on the prominence of female player characters in 2015's E3 expo.<ref name="e3 3xpo" /><ref name="twentyfifteen" /> ''[[Game Informer]]'' called her one of ten "most promising" new characters revealed at the expo.<ref name="one of ten" /> The game's appearance at E3 2016 gained accolades. ''[[IGN]]'' awarded it "Best Xbox One Game", and it was nominated "Game of the Show", "Best PlayStation 4 Game", "Best Action Game", "Best Trailer", and "Best PC Game", being the runner-up to the last of which.<ref name="e3 ign" />
+
+''Dishonored 2'' was nominated for "Best of Show", "Best Console Game", "Best PC Game" and "Best Action/Adventure Game" at the [[Game Critics Awards]].<ref name="g4me critics 4w4rds" /> ''Game Informer'' awarded the game "Best Multiplatform Game".<ref name="game awarder" /> ''PC Gamer'' gave the game "Best of Show".<ref name="best of show" /> ''[[Eurogamer]]'' selected the game as one of the five best games at E3, highlighting the time-manipulating level and commenting "it's hard to imagine there'll be any game as intricate released this year, nor one quite so imaginative".<ref name="quite so" />
+
+===Post-release===
+{{Video game reviews
+| MC = PC: 86/100<ref name="MCPC" /><br />PS4: 88/100<ref name="MCPS4" /><br />XONE: 88/100<ref name="MCXONE" />
+| Destruct = 7.5/10<ref name="Destruct" />
+| EGM = 7/10<ref name="EGM" />
+| GI = 9.25/10<ref name="GI" />
+| GameRev = 4.5/5<ref name="GameRev" />
+| GSpot = 8/10<ref name="GSpot" />
+| GRadar = 4.5/5<ref name="GRadar" />
+| IGN = 9.3/10<ref name="IGN" />
+| PCGUS = 93/100<ref name="PCGUS" />
+| Poly = 8.5/10<ref name="Poly" />
+| VG = 10/10<ref name="VG" />
+}}
+
+''Dishonored 2'' received generally favorable reviews according to [[Metacritic]].<ref name="MCPC" /><ref name="MCPS4" /><ref name="MCXONE" /> The levels "Clockwork Mansion" and "A Crack in the Slab" were singled out to considerable praise.<ref name="GI" /><ref name="PCGUS" /><ref name="clockwork club" /><ref name="clocktaku" /> The game has been the recipient of over one hundred Best of 2016 awards.<ref name="recipient" /> On its release, PC players reported issues with performance such as loss of [[frame rate]] and [[display resolution]], and [[Crash (computing)|system crashes]].<ref name="kotaku reception" /><ref name="vg247 reception" /> Three patches for the PC version were released to remedy the problem.<ref name="escapist reception" /><ref name="remedy" />
+
+Chris Carter of ''[[Destructoid]]'' considered the stealth approach "glorious"; the heart item one of his favorite ways to be exposed to further content; the puzzles and traversal challenges demanding; and the task of becoming a better assassin rewarding. The only complaints concerned shortcomings in [[frame rate]] capabilities on the [[Xbox One]] console, "stilted voice acting and script issues, despite the compelling narrative".<ref name="Destruct" /> ''[[Electronic Gaming Monthly]]'''s Nick Plessas wrote that ''Dishonored 2'' "[recreates] many of the positive experiences from the previous instalment, but [requires] much greater effort on the part of the player this time around to achieve it". According to Plessas, the game's emotional substance was derived from the player character as coupled with the choices and their consequences to the story, though he was moved significantly more by the "smaller moments" of the game than the finale.<ref name="EGM" />
+
+Writing for ''Game Informer'', Matt Bertz thought the balance between low-chaos and high-chaos play styles held an improved competence from the original game and that each approach availed thought-provoking scenarios to be solved. Each character's abilities were praised as "equally useful". Bertz disparaged the main story beats however, calling them "rushed and underdeveloped", whilst lauding the environmental storytelling.<ref name="GI" /> James Kozanitis at ''[[Game Revolution]]'' enjoyed playing as Emily Kaldwin the most and said that, because some elements from ''Dishonored'' had returned, Emily infused a fresh perspective into the overall experience. Kozanitis favored the stealthier approach, which was said to better accommodate side quests—opined as the chief incentive for playing ''Dishonored 2''.<ref name="GameRev" /> ''GameSpot''{{'}}s Scott Butterworth was satisfied with the use of weapons and observed that the sophisticated behavior patterns of the [[Artificial intelligence in video games|artificial intelligence]] (AI) rendered into "fun" experimentation, especially for stealth employment. The lack of increasing challenges was subject to criticism, with Butterworth lamenting the "underutilized" new enemies; the plot met charges of reproval for the same reason. Conversely, one quest involving time manipulation was declared a "masterpiece unto itself" and another in a clockwork-driven mansion was labeled as "mind-bending".<ref name="GSpot" />
+
+Lucas Sullivan of ''GamesRadar'' complimented its [[sense of place]], supernatural abilities and execution, but disapproved of the character development and constraint of a number of mechanics that were otherwise "brilliant".<ref name="GRadar" /> ''GamesRadar'' remarked in the days following that the Clockwork Mansion mission exemplified the best of Arkane Studios' "rich, intricate level design".<ref name="clockwork radar" /> ''IGN''{{'}}s Lucy O'Brien felt the decision to allocate powers and story details between the two player characters was "smart", echoing the view that the characters' abilities were "excellently" adaptable to both play styles. She commended the level design for distinguishing each level in terms of providing unique gameplay mechanics and expressed admiration for the game world's "gorgeous, painterly aesthetic".<ref name="IGN" /> Phil Savage, writing for ''PC Gamer'', stated that "at its worst, it offers a similar experience to its predecessor, which is to say, it offers tens of hours of extraordinary first-person stealth and action".<ref name="PCGUS" /> ''PC Gamer'' later recognized the Clockwork Mansion as one of the best levels of 2016.<ref name="clockwork gamer" /> ''[[Polygon (website)|Polygon]]''{{'}}s Arthur Gies noted the combat system as "improved and refined", the setting as "''Dishonored 2''{{'}}s greatest inherited strength" and the AI units for their "excellent peripheral vision", yet regarded the inability to replay missions and the absence of a [[New Game Plus]] option as "possible deal-breakers".<ref name="Poly" /> Alice Bell at ''VideoGamer.com'' wrote in her verdict: "''Dishonored 2'' takes everything you loved about ''Dishonored'' and improves upon it without becoming bloated. It's a beautifully designed, layered game, stuffed with hidden gems and secret stories. Also you can stab people in mid air".<ref name="VG" />
+
+===Sales===
+''Dishonored 2'' was the fourth best-selling game in its first week of release, but the launch week sales dropped thirty-eight percent when compared with the original game, although only sales of physical copies were recorded.<ref name="fourth best" /><ref name="first week" /> That same week, the game had sold the most pre-orders on [[Steam (service)|Steam]] and was ranked sixth in overall sales.<ref name="dry ice" /> It was the seventh best-selling retail video game in the UK in its second week of release, according to [[Chart-Track]], a fifty-two percent decrease from the first week – similar to that of its predecessor.<ref name="chart-track" /><ref name="fifty-two percent" /> After a reduction in cost, ''Dishonored 2'' re-entered the UK charts in the fourth week of May 2017, ranked in 8th place with a 1,267 percent rise in sales.<ref name="re-entered" />
+
+===Accolades===
+{| class="wikitable sortable"
+|-
+! Year !! Award !! Category !! Result !! {{Refh}}
+|-
+| style="text-align:center;" rowspan="2" | 2016
+| [[The Game Awards 2016]]
+| Best Action/Adventure Game
+| {{Won}}
+| <ref name="game awards 2016" />
+|-
+| ''[[PC Gamer]]''{{'}}s Best of 2016
+| Game of the Year
+| {{Won}}
+| <ref name="pc gamer" />
+|-
+| style="text-align:center;" rowspan="29" | 2017
+| ''[[Polygon (website)|Polygon]]''{{'}}s Best of 2016
+| Game of the Year
+| {{draw|7th Place}}
+| <ref name="gon" />
+|-
+| rowspan="2" | [[Visual Effects Society|Visual Effects Society Awards]]
+| Outstanding Visual Effects in a Real-Time Project (Crack in the Slab)
+| {{nom}}
+| rowspan="2" | <ref name="ves" /><ref name="ves res" />
+|-
+| Outstanding Created Environment in an Episode, Commercial, or Real-Time Project (Clockwork Mansion)
+| {{nom}}
+|-
+| rowspan="2" | [[17th Game Developers Choice Awards]]
+| Best Design
+| {{Nom}}
+| rowspan="2" | <ref name="gdconf" /><ref name="gdc" />
+|-
+| [[Game Developers Choice Award for Game of the Year|Game of the Year]]
+| {{Nom}}
+|-
+| rowspan="19" | National Academy of Video Game Trade Reviewers
+| Animation, Artistic
+| {{Nom}}
+| rowspan="19" | <ref name="navgtr" />
+|-
+| Animation, Technical
+| {{Nom}}
+|-
+| Art Direction, Period Influence
+| {{Nom}}
+|-
+| Camera Direction in a Game Engine
+| {{Nom}}
+|-
+| Character Design
+| {{Nom}}
+|-
+| Control Design, 3D
+| {{Nom}}
+|-
+| Control Precision
+| {{Nom}}
+|-
+| Costume Design
+| {{Won}}
+|-
+| Direction in a Game Cinema
+| {{Nom}}
+|-
+| Game Design, Franchise
+| {{Nom}}
+|-
+| Game Engineering
+| {{Nom}}
+|-
+| Lighting/Texturing
+| {{Nom}}
+|-
+| Original Dramatic Score, Franchise
+| {{Nom}}
+|-
+| Song, Original Or Adapted
+| {{Nom}}
+|-
+| Song Collection
+| {{Nom}}
+|-
+| Sound Editing in a Game Cinema
+| {{Nom}}
+|-
+| Sound Effects
+| {{Nom}}
+|-
+| Use of Sound, Franchise
+| {{Nom}}
+|-
+| Game, Franchise Action
+| {{Nom}}
+|-
+| rowspan="3" | [[British Academy Games Awards]]
+| Artistic Achievement
+| {{Nom}}
+| rowspan="3" | <ref name="b4ft4" />
+|-
+| Game Design
+| {{Nom}}
+|-
+| Narrative
+| {{Nom}}
+|-
+| rowspan="2" | [[Golden Joystick Awards]]
+| Best Visual Design
+| {{nom}}
+| rowspan="2" |<ref name="TechRadar-2017" /><ref name="PCGamer-Nov2017" />
+|-
+| Ultimate Game of the Year
+| {{nom}}
+|}
+
+==See also==
+*[[Immersive sim]]
+
+== Notes ==
+{{Reflist|group="nb"|1}}
+
+== References ==
+{{Reflist|30em|refs=
+
+<ref name="AI">{{cite web|url=http://www.pcgamer.com/dishonored-2s-guards-are-driven-by-a-left-4-dead-like-mastermind-ai/|title=How Dishonored 2's guards came to be driven by a Left 4 Dead-like mastermind AI|first=James|last=Davenport|date=1 March 2017|website=[[PC Gamer]]|archive-date=23 September 2017|archive-url=https://archive.today/20170923122815/http://www.pcgamer.com/dishonored-2s-guards-are-driven-by-a-left-4-dead-like-mastermind-ai/|url-status=live|df=dmy-all}}</ref>
+
+<ref name="Art Book">{{cite magazine|url=https://www.gameinformer.com/b/news/archive/2016/06/28/bethesda-announces-dishonored-2-art-book-art-contest.aspx |title=Bethesda Announces Dishonored 2 Art Book, Art Contest |first=Blake |last=Hester |date=28 June 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607052248/http://www.gameinformer.com/b/news/archive/2016/06/28/bethesda-announces-dishonored-2-art-book-art-contest.aspx |url-status=live }}</ref>
+
+<ref name="Assassin Abilities">{{cite web|url=http://www.gamespot.com/articles/dishonored-2-designer-dives-deep-into-assassin-abi/1100-6442571/ |title=Dishonored 2 Designer Dives Deep Into Assassin Abilities |first=Scott |last=Butterworth |date=12 August 2016 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607052756/https://www.gamespot.com/articles/dishonored-2-designer-dives-deep-into-assassin-abi/1100-6442571/ |url-status=live }}</ref>
+
+<ref name="Collectibles">{{cite web |url=https://www.polygon.com/dishonored-2-guide/2016/12/2/13818442/chaos-collectibles-literature-loot |title=Dishonored 2 walkthrough: On Chaos, collectibles, literature and loot |first=Jeffrey |last=Parkin |date=21 February 2017 |work=[[Polygon (website)|Polygon]] |access-date=26 June 2017}}</ref>
+
+<ref name="Corvo Reacquainted">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/11/get-reacquainted-with-corvo-attano-from-dishonored-2.aspx |title=Get Reacquainted With Corvo Attano From Dishonored 2 |first=Ben |last=Reeves |date=11 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=12 May 2016 |archive-url=https://archive.today/20160512084112/http://www.gameinformer.com/b/features/archive/2016/05/11/get-reacquainted-with-corvo-attano-from-dishonored-2.aspx |url-status=live }}</ref>
+
+<ref name="Dishonored Women">{{cite web |url=http://www.mcvuk.com/news/read/arkane-says-dishonored-2-s-emily-was-a-response-to-gender-criticism/0183799 |title=Arkane says Dishonored 2's Emily was a response to gender criticism |last=Parfitt |first=Ben |date=15 June 2017 |work=[[MCV (magazine)|MCV]] |access-date=12 August 2017 |archive-url=https://web.archive.org/web/20170820213359/http://www.mcvuk.com/news/read/arkane-says-dishonored-2-s-emily-was-a-response-to-gender-criticism/0183799 |archive-date=20 August 2017 |url-status=dead |df=dmy-all }}</ref>
+
+<ref name="Diversity">{{cite web |url=https://www.vg247.com/2017/08/10/how-dishonoreds-realistic-diversity-attracts-fans-to-the-darkly-beautiful-murder-family-sim/ |title=How Dishonored's realistic diversity attracts fans to the darkly beautiful murder family sim |last=Hillier |first=Brenna |date=10 August 2017 |work=[[VG247]] |access-date=12 August 2017}}</ref>
+
+<ref name="EG Interview">{{cite web|url=http://www.eurogamer.net/articles/2016-09-01-watch-we-chat-with-arkanes-harvey-smith-about-dishonored-2 |title=Watch: We chat Dishonored 2 with director Harvey Smith |first=Aoife |last=Wilson |date=1 September 2016 |website=[[Eurogamer]] |publisher=[[Gamer Network]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607053213/http://www.eurogamer.net/articles/2016-09-01-watch-we-chat-with-arkanes-harvey-smith-about-dishonored-2 |url-status=live }}</ref>
+
+<ref name="Eurogamer: leak">{{cite web|url=http://www.eurogamer.net/articles/2015-06-13-sounds-like-dishonored-2-is-being-announced-tomorrow|title=Sounds like Dishonored 2 is being announced tomorrow|first=Tom|last=Phillips|date=14 June 2015|website=[[Eurogamer]]|publisher=[[Gamer Network]]|archive-date=16 June 2015|archive-url=https://web.archive.org/web/20150616192717/http://www.eurogamer.net/articles/2015-06-13-sounds-like-dishonored-2-is-being-announced-tomorrow|url-status=live}}</ref>
+
+<ref name="five">{{cite web|url=http://www.gameplanet.co.nz/pc/features/g57bd06ce9b1e3/Art-director-Sebastien-Mitton-on-Dishonored-2s-supernatural-systems/ |title=Art director Sebastien Mitton on Dishonored 2's supernatural systems |first=Matt |last=Maguire |date=24 August 2016 |website=[[Gameplanet]] |archive-date=26 September 2016 |archive-url=https://archive.today/20160926083634/http://www.gameplanet.co.nz/pc/features/g57bd06ce9b1e3/Art-director-Sebastien-Mitton-on-Dishonored-2s-supernatural-systems/ |url-status=live }}</ref>
+
+<ref name="Flesh and steel">{{cite web|url=http://www.polygon.com/e3/2016/6/13/11924172/dishonored-2-no-powers-mode-e3-2016 |title=You can play Dishonored 2 without using any powers at all |first=Allegra |last=Frank |date=13 June 2016 |website=[[Polygon (website)|Polygon]] |publisher=[[Vox Media]] |archive-date=13 June 2016 |archive-url=https://archive.today/20160613193112/http://www.polygon.com/e3/2016/6/13/11924172/dishonored-2-no-powers-mode-e3-2016 |url-status=live }}</ref>
+
+<ref name="French History">{{cite web|url=https://www.vice.com/en/article/dishonored-2-world-design/ |title=How French History Influenced 'Dishonored 2' |first=Ian |last=Birnbaum |date=5 September 2016 |website=[[Vice (magazine)|Vice]] |publisher=[[Vice Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607054049/https://motherboard.vice.com/en_us/article/dishonored-2-world-design |url-status=live }}</ref>
+
+<!-- Not in use
+<ref name="Gamereactor Interview">{{cite web|url=http://www.gamereactor.eu/news/438783/ |title=Void engine allows Arkane to "push the boundaries in every corner" |first=Bengt |last=Lemne |date=19 July 2016 |website=[[Gamereactor]] |publisher=[[Gamereactor|Gamez Publishing A/S]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607054401/http://www.gamereactor.eu/news/438783/ |url-status=live }}</ref>
+Not in use-->
+
+<ref name="GI issue">{{cite magazine|title=Dishonored 2|date=June 2016|magazine=[[Game Informer]]|issue=278|pages=46–57}}</ref>
+
+<ref name="GIConcept">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/06/an-exclusive-look-at-dishonored-2s-breathtaking-concept-art.aspx |title=An Exclusive Look At Dishonored 2's Breathtaking Art |first=Ben |last=Reeves |date=6 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607080437/http://www.gameinformer.com/b/features/archive/2016/05/06/an-exclusive-look-at-dishonored-2s-breathtaking-concept-art.aspx |url-status=live }}</ref>
+
+<ref name="GIGameplay">{{cite magazine|url=https://www.gameinformer.com/games/dishonored_2/b/playstation4/archive/2015/06/21/21-things-we-know-about-dishonored-2.aspx |title=21 Things We Know About Dishonored 2 |first=Matt |last=Bertz |date=21 June 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=22 June 2015 |archive-url=https://archive.today/20150622222756/http://www.gameinformer.com/games/dishonored_2/b/playstation4/archive/2015/06/21/21-things-we-know-about-dishonored-2.aspx |url-status=live }}</ref>
+
+<ref name="GIPowers">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/09/breaking-down-the-new-and-enhanced-powers-of-dishonored-2.aspx |title=Breaking Down The New And Enhanced Powers Of Dishonored 2 |first=Matt |last=Bertz |date=9 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607083219/http://www.gameinformer.com/b/features/archive/2016/05/09/breaking-down-the-new-and-enhanced-powers-of-dishonored-2.aspx |url-status=live }}</ref>
+
+<ref name="GM Feature">{{cite magazine|title=Dishonored 2|first=James|last=Nouch|date=June 2016|magazine=[[GamesMaster (magazine)|GamesMaster]]|publisher=[[Future plc]]|issue=304|pages=46–57}}</ref>
+
+<ref name="GS Journey">{{cite web|url=http://www.gamespot.com/articles/dishonored-2-a-journey-through-emilys-assassinatio/1100-6439831/ |title=Dishonored 2: A Journey Through Emily's Assassination Mission |first=Tamoor |last=Hussain |date=17 May 2016 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607083806/https://www.gamespot.com/articles/dishonored-2-a-journey-through-emilys-assassinatio/1100-6439831/ |url-status=live }}</ref>
+
+<ref name="GS Voiced">{{cite web|url=http://www.gamespot.com/articles/why-dishonored-2s-main-characters-are-voiced-this-/1100-6441415/ |title=Why Dishonored 2's Main Characters Are Voiced This Time |first=Eddie |last=Makuch |date=30 June 2016 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607084104/https://www.gamespot.com/articles/why-dishonored-2s-main-characters-are-voiced-this-/1100-6441415/ |url-status=live }}</ref>
+
+<ref name="GZ Hide">{{cite web|url=http://www.gamezone.com/news/hide-your-bodies-in-dishonored-2-the-city-of-karnaca-has-a-bug-problem-3425153 |title=Hide your bodies in Dishonored 2, the city of Karnaca has a bug problem |first=Tatiana |last=Morris |date=17 September 2015 |website=GameZone |publisher=GameZone Next |archive-date=7 June 2017 |archive-url=https://archive.today/20170607084259/http://www.gamezone.com/news/hide-your-bodies-in-dishonored-2-the-city-of-karnaca-has-a-bug-problem-3425153 |url-status=live }}</ref>
+
+<ref name="her story">{{cite web|url=http://www.shacknews.com/article/96038/dishonored-2-deepens-the-story-of-corvo-and-emily |title=Dishonored 2 deepens the story of Corvo and Emily |first=John |last=Keefer |date=28 July 2016 |website=[[Shacknews]] |publisher=[[Shacknews|Gamerhub]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607084512/http://www.shacknews.com/article/96038/dishonored-2-deepens-the-story-of-corvo-and-emily |url-status=live }}</ref>
+
+<ref name="Hillier">{{cite web|url=https://www.vg247.com/2016/06/13/dishonored-2-collectors-edition-include-corvos-mask-replica/ |title=Dishonored 2 Collector's Edition include Corvo's mask replica |first=Brenna |last=Hillier |date=13 June 2016 |website=[[VG247]] |publisher=[[Videogaming247]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607084715/https://www.vg247.com/2016/06/13/dishonored-2-collectors-edition-include-corvos-mask-replica/ |url-status=live }}</ref>
+
+<ref name="IGN: Dish">{{cite web|url=http://uk.ign.com/articles/2015/06/23/e3-2015-how-dishonored-2-plans-to-differentiate-between-emily-and-corvo |title=E3 2015: Dishonored 2 Devs Dish More Details on Emily and Corvo |first=Luke |last=Karmali |date=23 June 2015 |website=[[IGN]] |publisher=[[Ziff Davis]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607085121/http://uk.ign.com/articles/2015/06/23/e3-2015-how-dishonored-2-plans-to-differentiate-between-emily-and-corvo |url-status=live }}</ref>
+
+<ref name="Karnaca">{{cite web|url=http://www.pcgamer.com/dishonored-2-video-showcases-karnaca-the-jewel-of-the-south/ |title=Dishonored 2 video showcases Karnaca, 'the jewel of the south' |first=Andy |last=Chalk |date=17 September 2015 |website=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607085325/http://www.pcgamer.com/dishonored-2-video-showcases-karnaca-the-jewel-of-the-south/ |url-status=live }}</ref>
+
+<ref name="more depth">{{cite web|url=http://www.gamezone.com/news/bethesda-drops-new-details-on-dishonored-2-s-protagonists-3442045 |title=Bethesda drops new details on Dishonored 2's protagonists |first=Tatiana |last=Morris |date=28 July 2016 |website=GameZone |publisher=GameZone Next |archive-date=7 June 2017 |archive-url=https://archive.today/20170607085505/http://www.gamezone.com/news/bethesda-drops-new-details-on-dishonored-2-s-protagonists-3442045 |url-status=live }}</ref>
+
+<ref name="Museum">{{cite web|url=https://bethesda.net/en/article/2eptDYAa5SEg842woGKcYS/dishonored-2-on-display-in-new-museum-exhibit|title=Dishonored 2 on Display in New Museum Exhibit|date=6 October 2015|publisher=[[Bethesda Softworks]]}}</ref>
+
+<ref name="PCG Interview">{{cite web|url=http://www.pcgamer.com/dishonored-2s-director-on-giving-corvo-a-voice-and-avoiding-the-deus-ex-effect/ |title=Dishonored 2's director on giving Corvo a voice and avoiding the "Deus Ex Effect" |first=James |last=Davenport |date=6 September 2016 |website=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607085953/http://www.pcgamer.com/dishonored-2s-director-on-giving-corvo-a-voice-and-avoiding-the-deus-ex-effect/ |url-status=live }}</ref>
+
+<ref name=PCGPrev>{{cite web|url=http://www.pcgamer.com/dishonored-2-preview/ |title=Dishonored 2: a deeper, stranger stealth sim |first=Chris |last=Thursten |date=17 May 2016 |website=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=18 May 2016 |archive-url=https://archive.today/20160518124734/http://www.pcgamer.com/dishonored-2-preview/ |url-status=live }}</ref>
+
+<ref name="Polygon: reveal">{{cite web|url=http://www.polygon.com/e3-2015/2015/6/14/8776839/dishonored-2-release-date-e3-2015|title=Dishonored 2 coming from Arkane Studios, features two playable characters |first=Michael|last=McWhertor|date=14 June 2015|website=[[Polygon (website)|Polygon]]|publisher=[[Vox Media]]|archive-date=17 June 2015|archive-url=https://web.archive.org/web/20150617232405/http://www.polygon.com/e3-2015/2015/6/14/8776839/dishonored-2-release-date-e3-2015|url-status=live}}</ref>
+
+<ref name="Release Date">{{cite magazine|url=https://www.gameinformer.com/b/news/archive/2016/05/03/bethesda-reveals-november-release-date-for-dishonored-2.aspx |title=Bethesda Reveals November Release Date For Dishonored 2 |first=Matt |last=Bertz |date=3 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=18 October 2016 |archive-url=https://archive.today/20161018210555/http://www.gameinformer.com/b/news/archive/2016/05/03/bethesda-reveals-november-release-date-for-dishonored-2.aspx? |url-status=live }}</ref>
+
+<ref name="RPS Time">{{cite news|url=https://www.rockpapershotgun.com/2016/06/13/dishonored-2-gameplay-e3/ |title=Twisting Time And Space: Dishonored 2 Gameplay Trailer |first=Adam |last=Smith |date=13 June 2016 |website=[[Rock Paper Shotgun]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607090700/https://www.rockpapershotgun.com/2016/06/13/dishonored-2-gameplay-e3/ |url-status=live }}</ref>
+
+<ref name="TieIn">{{cite web|url=https://bethesda.net/en/article/3qp7NhnoVqWIEUeamAuSuk/dishonored-2-novels-and-comics-revealed|title=Dishonored 2 – Novels and Comics Revealed|first=Anne|last=Lewis|date=25 May 2016|publisher=[[Bethesda Softworks]]}}</ref>
+
+<ref name="Usurper">{{cite magazine|url=https://www.gameinformer.com/b/news/archive/2016/06/15/another-familiar-face-returns-to-dishonored-2.aspx |title=Another familiar face returns to dishonored 2 |first=Javy |last=Gwaltney |date=15 June 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607090945/http://www.gameinformer.com/b/news/archive/2016/06/15/another-familiar-face-returns-to-dishonored-2.aspx |url-status=live }}</ref>
+
+<ref name="VG247 Interview">{{cite web|url=http://www.vg247.com/2016/06/21/harvey-smith-wants-dishonored-to-become-a-pen-and-paper-rpg/ |title=Harvey Smith wants Dishonored to become a pen and paper RPG |first=Alex |last=Donaldson |date=21 June 2016 |website=[[VG247]] |publisher=[[Videogaming247]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607091201/http://www.vg247.com/2016/06/21/harvey-smith-wants-dishonored-to-become-a-pen-and-paper-rpg/ |url-status=live }}</ref>
+
+<ref name="VoiceGIMay15">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/03/dishonored-2-taps-vocal-talent-from-game-of-thrones-daredevil-and-the-wire.aspx|title=Dishonored 2 Taps Vocal Talent From Game Of Thrones, Daredevil, And The Wire|first=Matt|last=Bertz|date=3 May 2016|magazine=[[Game Informer]]|publisher=[[GameStop]]|archive-date=3 May 2016|archive-url=https://web.archive.org/web/20160503215038/http://www.gameinformer.com/b/features/archive/2016/05/03/dishonored-2-taps-vocal-talent-from-game-of-thrones-daredevil-and-the-wire.aspx|url-status=live}}</ref>
+
+<ref name="GIPowers2">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/09/breaking-down-the-new-and-enhanced-powers-of-dishonored-2.aspx?PostPageIndex=2 |title=Breaking Down The New And Enhanced Powers Of Dishonored 2 |first=Matt |last=Bertz |date=9 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607091751/http://www.gameinformer.com/b/features/archive/2016/05/09/breaking-down-the-new-and-enhanced-powers-of-dishonored-2.aspx?PostPageIndex=2 |url-status=live }}</ref>
+
+<ref name="GIPowers3">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/09/breaking-down-the-new-and-enhanced-powers-of-dishonored-2.aspx?PostPageIndex=3 |title=Breaking Down The New And Enhanced Powers Of Dishonored 2 |first=Matt |last=Bertz |date=9 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607093547/http://www.gameinformer.com/b/features/archive/2016/05/09/breaking-down-the-new-and-enhanced-powers-of-dishonored-2.aspx?PostPageIndex=3 |url-status=live }}</ref>
+
+<ref name="jewel">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/05/16/goodbye-dunwall-take-a-tour-of-dishonored-2s-karnaca.aspx |title=Goodbye Dunwall: Take A Tour Of Dishonored 2's Karnaca |first=Ben |last=Reeves |date=16 May 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607093724/http://www.gameinformer.com/b/features/archive/2016/05/16/goodbye-dunwall-take-a-tour-of-dishonored-2s-karnaca.aspx |url-status=live }}</ref>
+
+<ref name="PCGPrev2">{{cite web|url=http://www.pcgamer.com/dishonored-2-preview/2/ |title=Dishonored 2: a deeper, stranger stealth sim |first=Chris |last=Thursten |date=17 May 2016 |website=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=18 May 2016 |archive-url=https://archive.today/20160518132840/http://www.pcgamer.com/dishonored-2-preview/2/ |url-status=live }}</ref>
+
+<ref name="Early">{{cite web|url=http://www.gamespot.com/articles/dishonored-2-preorder-lets-you-play-the-game-a-day/1100-6444009/ |title=Dishonored 2 Preorder Lets You Play the Game a Day Early; Watch New Gameplay Here |first=Mat |last=Paget |date=29 September 2016 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607094138/https://www.gamespot.com/articles/dishonored-2-preorder-lets-you-play-the-game-a-day/1100-6444009/ |url-status=live }}</ref>
+
+<ref name="take action">{{cite web|url=https://www.engadget.com/2016/10/24/dishonored-2-live-action-trailer/ |title='Dishonored 2's' live-action trailer is all about glorious revenge |first=Devindra |last=Hardawar |date=24 October 2016 |website=[[Engadget]] |publisher=[[AOL]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607094544/https://www.engadget.com/2016/10/24/dishonored-2-live-action-trailer/ |url-status=live }}</ref>
+
+<ref name="golden 1">{{cite web|url=http://www.escapistmagazine.com/news/view/168741-Dishonored-2-Goes-Gold-PC-System-Requirements-Detailed |title=Dishonored 2 Goes Gold - PC System Requirements Detailed |first=Ron |last=Whitaker |date=1 November 2016 |website=[[The Escapist (magazine)|The Escapist]] |publisher=[[Defy Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607094853/http://www.escapistmagazine.com/news/view/168741-Dishonored-2-Goes-Gold-PC-System-Requirements-Detailed |url-status=live }}</ref>
+
+<ref name="pixel kolesov">{{cite web|url=http://uk.ign.com/articles/2016/06/18/e3-2016-dishonored-2-no-mans-sky-included-in-into-the-pixel-art-exhibit |title=E3 2016: Dishonored 2, No Man's Sky Included in Into the Pixel Art Exhibit |first=Seth G. |last=Macy |date=18 June 2016 |website=[[IGN]] |publisher=[[Ziff Davis]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607095100/http://uk.ign.com/articles/2016/06/18/e3-2016-dishonored-2-no-mans-sky-included-in-into-the-pixel-art-exhibit |url-status=live }}</ref>
+
+<ref name="product propaganda">{{cite web|url=https://www.vice.com/en/article/the-propaganda-and-branding-of-dishonored-2/ |title=The Propaganda and Branding of 'Dishonored 2' |author=Vice Staff |date=2 November 2016 |website=[[Vice (magazine)|Vice]] |publisher=[[Vice Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607095243/https://www.vice.com/en_uk/article/the-propaganda-and-branding-of-dishonored-2 |url-status=live }}</ref>
+
+<ref name="architect">{{cite web|url=http://www.t3.com/features/dishonored-2-t3-interviews-christophe-carrier |title=Dishonored 2: T3 interviews Christophe Carrier, Arkane's Level Design Director, about the red-hot new title |first=Robert |last=Jones |date=4 November 2016 |website=[[T3 (magazine)|T3]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607095544/http://www.t3.com/features/dishonored-2-t3-interviews-christophe-carrier |url-status=live }}</ref>
+
+<ref name="kotaku reception">{{cite web|url=http://kotaku.com/dishonored-2-is-having-trouble-on-pc-1788815143 |title=''Dishonored 2'' Is Having Trouble On PC |first=Kirk |last=Hamilton |date=10 November 2016 |website=[[Kotaku]] |publisher=[[Univision Communications]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607100031/http://kotaku.com/dishonored-2-is-having-trouble-on-pc-1788815143 |url-status=live }}</ref>
+
+<ref name="KotakuTips">{{cite web|url=http://kotaku.com/tips-for-playing-dishonored-2-1788961781|title=Tips For Playing ''Dishonored 2''|first=Riley|last=MacLeod|date=14 November 2016|website=[[Kotaku]]|archive-date=14 November 2016|archive-url=https://archive.today/20161114233008/http://kotaku.com/tips-for-playing-dishonored-2-1788961781|url-status=live}}</ref>
+
+<ref name="vg247 reception">{{cite web|url=http://www.vg247.com/2016/11/10/pc-users-reporting-performance-issues-with-dishonored-2-devs-provide-possible-workaround/ |title=PC users reporting performance issues with Dishonored 2, devs provide possible workaround |first=Stephany |last=Nunneley |date=10 November 2016 |website=[[VG247]] |publisher=[[Videogaming247]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607100228/http://www.vg247.com/2016/11/10/pc-users-reporting-performance-issues-with-dishonored-2-devs-provide-possible-workaround/ |url-status=live }}</ref>
+
+<ref name="escapist reception">{{cite web|url=http://www.escapistmagazine.com/news/view/168816-Dishonored-2-PC-Performance-Patch |title=''Dishonored 2'' PC Performance Patch Coming Soon |first=Steven |last=Bogos |date=12 November 2016 |website=[[The Escapist (magazine)|The Escapist]] |publisher=[[Defy Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607100646/http://www.escapistmagazine.com/news/view/168816-Dishonored-2-PC-Performance-Patch |url-status=live }}</ref>
+
+<ref name="chart-track">{{cite web|url=https://www.vg247.com/2016/11/21/watch-dogs-2-fails-to-top-uk-charts-in-its-debut-week-with-drastic-drop-in-sales-from-the-prequel/ |title=Watch Dogs 2 fails to top UK charts in its debut week with drastic drop in sales from the prequel |first=Shabana |last=Arif |date=21 November 2016 |website=[[VG247]] |publisher=[[Videogaming247]] |archive-date=21 November 2016 |archive-url=https://archive.today/20161121181028/https://www.vg247.com/2016/11/21/watch-dogs-2-fails-to-top-uk-charts-in-its-debut-week-with-drastic-drop-in-sales-from-the-prequel/ |url-status=live }}</ref>
+
+<ref name="fifty-two percent">{{cite web|url=http://www.gamesindustry.biz/articles/2016-11-21-call-of-duty-holds-no-1-as-watch-dogs-2-launch-sales-fall-xx-percent-over-the-original |title=Call of Duty holds No.1 as Watch Dogs 2 launch sales fall 80% over the original |first=Christopher |last=Dring |date=21 November 2016 |website=[[GamesIndustry.biz]] |publisher=[[Gamer Network]] |archive-date=21 November 2016 |archive-url=https://archive.today/20161121150751/http://www.gamesindustry.biz/articles/2016-11-21-call-of-duty-holds-no-1-as-watch-dogs-2-launch-sales-fall-xx-percent-over-the-original |url-status=live }}</ref>
+
+<ref name="game awards 2016">{{cite web|url=http://www.polygon.com/2016/12/1/13784410/the-game-awards-winners |title=The Game Awards: Here's the full winners list |first=Chelsea |last=Stark |date=1 December 2016 |website=[[Polygon (website)|Polygon]] |publisher=[[Vox Media]] |archive-date=2 December 2016 |archive-url=https://archive.today/20161202065622/http://www.polygon.com/2016/12/1/13784410/the-game-awards-winners |url-status=live }}</ref>
+
+<ref name="pc gamer">{{cite web|url=http://www.pcgamer.com/game-of-the-year-2016-dishonored-2/?hootPostID=2ed87e5d8f9967b54da7e3c8d463b229 |title=Game of the Year 2016 — Dishonored 2 |date=15 December 2016 |work=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607101140/http://www.pcgamer.com/game-of-the-year-2016-dishonored-2/?hootPostID=2ed87e5d8f9967b54da7e3c8d463b229 |url-status=live }}</ref>
+
+<ref name="this update">{{cite web|url=https://www.engadget.com/2016/12/15/dishonored-2-has-a-good-reason-to-play-its-new-game-plus-mode/ |title='Dishonored 2' has a good reason to play its New Game Plus mode |first=Devindra |last=Hardawar |date=15 December 2016 |website=[[Engadget]] |publisher=[[AOL]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607101323/https://www.engadget.com/2016/12/15/dishonored-2-has-a-good-reason-to-play-its-new-game-plus-mode/ |url-status=live }}</ref>
+
+<ref name="postpwned">{{cite web|url=http://www.polygon.com/2016/12/14/13954756/dishonored-2-new-game-plus-release-date-emily-corvo |title=Dishonored 2's New Game+ mode lets you combine Emily's and Corvo's powers |first=Samit |last=Sarkar |date=14 December 2016 |website=[[Polygon (website)|Polygon]] |publisher=[[Vox Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607101440/https://www.polygon.com/2016/12/14/13954756/dishonored-2-new-game-plus-release-date-emily-corvo |url-status=live }}</ref>
+
+<ref name="gdconf">{{cite web|url=http://www.gdconf.com/news/inside-overwatch-firewatch-among-2017-choice-awards-nominees/ |title=Inside, Overwatch and Firewatch lead GDC 2017 Choice Awards nominees! |author=Staff |date=4 January 2017 |website=[[Game Developers Conference]] |publisher=[[UBM plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607101554/http://www.gdconf.com/news/inside-overwatch-firewatch-among-2017-choice-awards-nominees/ |url-status=live }}</ref>
+
+<ref name="gon">{{cite web|url=http://www.polygon.com/2017/1/3/14107538/dishonored-2-games-of-the-year |title=Polygon's 2016 Games of the Year #7: Dishonored 2 |first=Russ |last=Frushtick |date=3 January 2017 |website=[[Polygon (website)|Polygon]] |publisher=[[Vox Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607101703/https://www.polygon.com/2017/1/3/14107538/dishonored-2-games-of-the-year |url-status=live }}</ref>
+
+<ref name="ves">{{cite web|url=https://www.visualeffectssociety.com/post/15th-annual-ves-awards-nominees|title=15th Annual VES Awards Nominees|date=10 January 2017|website=[[Visual Effects Society]]|archive-date=12 January 2017|archive-url=https://web.archive.org/web/20170112180327/https://www.visualeffectssociety.com/post/15th-annual-ves-awards-nominees|url-status=live}}</ref>
+
+<ref name="a long day in Dunwall">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=A Long Day in Dunwall}}</ref>
+
+<ref name="edge of the world">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=Edge of the World}}</ref>
+
+<ref name="the good doctor">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=The Good Doctor}}</ref>
+
+<ref name="the clockwork mansion">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=The Clockwork Mansion}}</ref>
+
+<ref name="the royal conservatory">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=The Royal Conservatory}}</ref>
+
+<ref name="dust district">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=Dust District}}</ref>
+
+<ref name="a crack in the slab">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=A Crack in the Slab}}</ref>
+
+<ref name="the grand palace">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=The Grand Palace}}</ref>
+
+<ref name="death to the empress">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=Death to the Empress}}</ref>
+
+<ref name="mission-select">{{cite web|url=http://www.gamespot.com/articles/dishonored-2-finally-getting-mission-select-option/1100-6446868/ |title=Dishonored 2 Finally Getting Mission-Select Option and New Difficulty Settings Soon |first=Eddie |last=Makuch |date=12 January 2017 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607102225/https://www.gamespot.com/articles/dishonored-2-finally-getting-mission-select-option/1100-6446868/ |url-status=live }}</ref>
+
+<ref name="art nouveau">{{cite web|url=https://killscreen.com/articles/secrets-dishonored-2s-mongrel-city/ |title=The secrets of Dishonored 2's mongrel city |first=Gareth Damian |last=Martin |date=12 January 2017 |website=[[Kill Screen]] |publisher=[[Kill Screen|Kill Screen Media, Inc.]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607102359/https://killscreen.com/articles/secrets-dishonored-2s-mongrel-city/ |url-status=live }}</ref>
+
+<ref name="wind">{{cite web|url=http://www.polygon.com/dishonored-2-guide/2017/1/20/14338526/dishonored-2-character-guide-corvo-emily#kIhJeC |title=Dishonored 2 character guide |first=Chris |last=Carter |date=20 January 2017 |website=[[Polygon (website)|Polygon]] |publisher=[[Vox Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607102513/https://www.polygon.com/dishonored-2-guide/2017/1/20/14338526/dishonored-2-character-guide-corvo-emily |url-status=live }}</ref>
+
+<ref name="blast">{{cite web|url=http://www.gamesradar.com/dishonored-2-powers-you-should-unlock-asap/ |title=The 10 must-have powers in Dishonored 2 |first=Lucas |last=Sullivan |date=15 November 2016 |website=[[GamesRadar]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607102628/http://www.gamesradar.com/dishonored-2-powers-you-should-unlock-asap/ |url-status=live }}</ref>
+
+<ref name="the heart">{{cite video game|title=Dishonored 2|developer=[[Arkane Studios]]|publisher=[[Bethesda Softworks]]|date=11 November 2016|platform=[[PlayStation 4]], [[Windows]], [[Xbox One]]|level=Credits}}</ref>
+
+<ref name="ves res">{{cite web|url=https://www.visualeffectssociety.com/post/15th-annual-ves-awards-winners|title=15th Annual VES Awards Winners|website=[[Visual Effects Society]]|date=8 February 2017 |archive-date=11 February 2017|archive-url=https://web.archive.org/web/20170211083412/https://www.visualeffectssociety.com/post/15th-annual-ves-awards-winners|url-status=live}}</ref>
+
+<ref name="navgtr">{{cite web|url=http://navgtr.org/winners/2016-awards/ |title=2016 Awards |date=20 March 2017 |website=National Academy of Video Game Trade Reviewers |archive-date=7 June 2017 |archive-url=https://archive.today/20170607102959/http://navgtr.org/winners/2016-awards/ |url-status=live }}</ref>
+
+<ref name="recipient">{{cite web|url=https://twitter.com/dishonored/status/836607014218379264 |title=#Dishonored2 is winner of over 100 "Best of 2016" awards! See what everyone is saying. |author=[[Dishonored]] |date=28 February 2017 |website=[[Twitter]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607103108/https://twitter.com/dishonored/status/836607014218379264 |url-status=live }}</ref>
+
+<ref name="remedy">{{Cite news|url=http://www.pcgamer.com/a-new-dishonored-2-patch-just-hit-steam/ |title=A new Dishonored 2 patch just hit Steam |first=Andy |last=Chalk |date=6 December 2016 |website=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607103228/http://www.pcgamer.com/a-new-dishonored-2-patch-just-hit-steam/ |url-status=live }}</ref>
+
+<ref name="gdc">{{cite web|url=http://nordic.ign.com/overwatch/1201/news/gdc-2017-overwatch-wins-game-of-the-year-at-game-developers |title=GDC 2017: Overwatch Wins Game of the Year at Game Developers Choice Awards |first=Jonathon |last=Dornbush |date=2 March 2017 |website=[[IGN]] |publisher=[[Ziff Davis]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607103513/http://nordic.ign.com/overwatch/1201/news/gdc-2017-overwatch-wins-game-of-the-year-at-game-developers |url-status=live }}</ref>
+
+<ref name="b4ft4">{{cite web|url=http://www.bafta.org/media-centre/press-releases/games-awards-winners-list-2017 |title=Winners List for the British Academy Games Awards in 2017 (Plain Text) |date=6 April 2017 |website=[[British Academy of Film and Television Arts]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607103616/http://www.bafta.org/media-centre/press-releases/games-awards-winners-list-2017 |url-status=live }}</ref>
+
+<ref name="mittens">{{cite web|url=http://www.eurogamer.net/articles/2012-07-18-its-been-a-poor-poor-five-years-for-fiction-in-the-video-game-industry |title='It's been a poor, poor five years for fiction in the video game industry' |first=Robert |last=Purchese |date=18 July 2012 |website=[[Eurogamer]] |publisher=[[Gamer Network]] |archive-date=12 January 2013 |archive-url=https://archive.today/20130112021026/http://www.eurogamer.net/articles/2012-07-18-its-been-a-poor-poor-five-years-for-fiction-in-the-video-game-industry |url-status=live }}</ref>
+
+<ref name="female protagonists">{{cite web|url=http://www.gamesradar.com/biggest-surprises-e3-2015/ |title=The 15 biggest surprises of E3 2015 |author=GamesRadar Staff |date=16 June 2015 |website=[[GamesRadar]] |publisher=[[Future plc]] |archive-date=9 November 2015 |archive-url=https://archive.today/20151109052642/http://www.gamesradar.com/biggest-surprises-e3-2015/ |url-status=live }}</ref>
+
+<ref name="e3 3xpo">{{cite web|url=http://www.gamespot.com/articles/the-rise-of-the-female-hero-at-e3-2015/1100-6428454/ |title=The Rise of the Female Hero at E3 2015 |first=Daniel |last=Hindes |date=30 June 2015 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=1 July 2015 |archive-url=https://archive.today/20150701130129/http://www.gamespot.com/articles/the-rise-of-the-female-hero-at-e3-2015/1100-6428454/ |url-status=live }}</ref>
+
+<ref name="twentyfifteen">{{cite web|url=https://www.theguardian.com/technology/2015/jun/19/seven-game-design-trends-e3-2015 |title=Robots, dogs and the apocalypse: seven game design trends from E3 2015 |first1=Simon |last1=Parkin |first2=Keith |last2=Stuart |date=19 June 2015 |website=[[The Guardian]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607104424/https://www.theguardian.com/technology/2015/jun/19/seven-game-design-trends-e3-2015 |url-status=live }}</ref>
+
+<ref name="one of ten">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2015/06/19/the-top-ten-most-promising-new-characters-of-e3.aspx |title=The Top Ten Most Promising New Characters of E3 |first=Hershall |last=Cook |date=19 June 2015 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=20 June 2015 |archive-url=https://archive.today/20150620061036/http://www.gameinformer.com/b/features/archive/2015/06/19/the-top-ten-most-promising-new-characters-of-e3.aspx |url-status=live }}</ref>
+
+<ref name="e3 ign">{{cite web|url=http://uk.ign.com/articles/2016/06/14/best-of-e3-2016-awards |title=Best of E3 2016 Awards |author=IGN's E3 Crew |date=14 June 2016 |website=[[IGN]] |publisher=[[Ziff Davis]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607104851/http://uk.ign.com/articles/2016/06/14/best-of-e3-2016-awards |url-status=live }}</ref>
+
+<ref name="g4me critics 4w4rds">{{cite web|url=http://www.gamecriticsawards.com/nominees.html |title=2016 Nominees |website=[[Game Critics Awards]] |archive-date=29 June 2012 |archive-url=https://archive.today/20120629124211/http://www.gamecriticsawards.com/nominees.html |url-status=live }}</ref>
+
+<ref name="game awarder">{{cite magazine|url=https://www.gameinformer.com/b/features/archive/2016/06/21/game-informer-best-of-e3-2016-awards.aspx?PostPageIndex=3 |title=Game Informer's Best Of E3 2016 Awards |first=Kyle |last=Hilliard |date=21 June 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607105405/http://www.gameinformer.com/b/features/archive/2016/06/21/game-informer-best-of-e3-2016-awards.aspx?PostPageIndex=3 |url-status=live }}</ref>
+
+<ref name="best of show">{{cite web|url=http://www.pcgamer.com/best-of-e3-2016-awards/ |title=Best of E3 2016 awards |date=22 June 2016 |work=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607105558/http://www.pcgamer.com/best-of-e3-2016-awards/ |url-status=live }}</ref>
+
+<ref name="quite so">{{cite web|url=http://www.eurogamer.net/articles/2016-06-17-eurogamers-best-of-e3-2016 |title=Eurogamer's best of E3 2016 |first=Oli |last=Welsh |date=17 June 2016 |website=[[Eurogamer]] |publisher=[[Gamer Network]] |archive-date=24 July 2016 |archive-url=https://archive.today/20160724123539/http://www.eurogamer.net/articles/2016-06-17-eurogamers-best-of-e3-2016 |url-status=live }}</ref>
+
+<ref name="MCPC">{{cite web|url=https://www.metacritic.com/game/dishonored-2/critic-reviews/?platform=pc |title=Dishonored 2 for PC Reviews |website=[[Metacritic]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607105949/http://www.metacritic.com/game/pc/dishonored-2 |url-status=live }}</ref>
+
+<ref name="MCPS4">{{cite web|url=https://www.metacritic.com/game/dishonored-2/critic-reviews/?platform=playstation-4 |title=Dishonored 2 for PlayStation 4 Reviews |website=[[Metacritic]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607110152/http://www.metacritic.com/game/playstation-4/dishonored-2 |url-status=live }}</ref>
+
+<ref name="MCXONE">{{cite web|url=https://www.metacritic.com/game/dishonored-2/critic-reviews/?platform=xbox-one |title=Dishonored 2 for Xbox One Reviews |website=[[Metacritic]] |publisher=[[CBS Interactive]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607110415/http://www.metacritic.com/game/xbox-one/dishonored-2 |url-status=live }}</ref>
+
+<ref name="Destruct">{{cite web|url=https://www.destructoid.com/review-dishonored-2-399344.phtml |title=Review: Dishonored 2 |first=Chris |last=Carter |date=14 November 2016 |website=[[Destructoid]] |publisher=[[ModernMethod]] |archive-date=15 November 2016 |archive-url=https://archive.today/20161115191421/https://www.destructoid.com/review-dishonored-2-399344.phtml |url-status=live }}</ref>
+
+<ref name="EGM">{{cite magazine|url=http://www.egmnow.com/articles/reviews/dishonored-2-review/ |title=Dishonored 2 review |first=Nick |last=Plessas |date=17 November 2016 |magazine=[[Electronic Gaming Monthly]] |publisher=[[EGM Media, LLC]] |archive-date=26 December 2016 |archive-url=https://archive.today/20161226024149/http://www.egmnow.com/articles/reviews/dishonored-2-review/ |url-status=live }}</ref>
+
+<ref name="GI">{{cite magazine|url=https://www.gameinformer.com/games/dishonored_2/b/playstation4/archive/2016/11/14/game-informer-dishonored-2-review.aspx |title=A Shadow Walking Success - Dishonored 2 - PlayStation 4 |first=Matt |last=Bertz |date=14 November 2016 |magazine=[[Game Informer]] |publisher=[[GameStop]] |archive-date=15 November 2016 |archive-url=https://archive.today/20161115191413/http://www.gameinformer.com/games/dishonored_2/b/playstation4/archive/2016/11/14/game-informer-dishonored-2-review.aspx |url-status=live }}</ref>
+
+<ref name="GameRev">{{cite web|url=http://www.gamerevolution.com/review/dishonored-2 |title=Dishonored 2 Review |first=James |last=Kozanitis |date=11 November 2016 |website=[[Game Revolution]] |publisher=[[CraveOnline]] |archive-date=14 November 2016 |archive-url=https://archive.today/20161114185412/http://www.gamerevolution.com/review/dishonored-2 |url-status=live }}</ref>
+
+<ref name="GSpot">{{cite web|url=http://www.gamespot.com/reviews/dishonored-2-review/1900-6416571/ |title=Dishonored 2 Review |first=Scott |last=Butterworth |date=12 November 2016 |website=[[GameSpot]] |publisher=[[CBS Interactive]] |archive-date=14 November 2016 |archive-url=https://archive.today/20161114185541/http://www.gamespot.com/reviews/dishonored-2-review/1900-6416571/ |url-status=live }}</ref>
+
+<ref name="GRadar">{{cite web|url=http://www.gamesradar.com/dishonored-2-review/ |title=Dishonored 2 review: 'An immersive power trip no matter how you choose to play' |first=Lucas |last=Sullivan |date=11 November 2016 |website=[[GamesRadar]] |publisher=[[Future plc]] |archive-date=14 November 2016 |archive-url=https://archive.today/20161114185743/http://www.gamesradar.com/dishonored-2-review/ |url-status=live }}</ref>
+
+<ref name="IGN">{{cite web|url=http://www.ign.com/articles/2016/11/14/dishonored-2-review |title=Dishonored 2 Review |first=Lucy |last=O'Brien |date=13 November 2016 |website=[[IGN]] |publisher=[[Ziff Davis]] |archive-date=14 November 2016 |archive-url=https://archive.today/20161114164113/http://www.ign.com/articles/2016/11/14/dishonored-2-review |url-status=live }}</ref>
+
+<ref name="PCGUS">{{cite web|url=http://www.pcgamer.com/dishonored-2-review/ |title=Dishonored 2 review |first=Phil |last=Savage |date=18 November 2016 |website=[[PC Gamer]] |publisher=[[Future plc]] |archive-date=19 November 2016 |archive-url=https://archive.today/20161119001103/http://www.pcgamer.com/dishonored-2-review/ |url-status=live }}</ref>
+
+<ref name="Poly">{{cite web|url=http://www.polygon.com/2016/11/16/13655060/dishonored-2-review-ps4-xbox-one-pc |title=Dishonored 2 review |first=Arthur |last=Gies |date=16 November 2016 |website=[[Polygon (website)|Polygon]] |publisher=[[Vox Media]] |archive-date=26 December 2016 |archive-url=https://archive.today/20161226024144/http://www.polygon.com/2016/11/16/13655060/dishonored-2-review-ps4-xbox-one-pc |url-status=live }}</ref>
+
+<ref name="VG">{{cite web|url=https://www.videogamer.com/reviews/dishonored-2-review-ps4-xbox-one-pc-10-out-of-10 |title=Dishonored 2 review: I would change nothing about this game |first=Alice |last=Bell |date=14 November 2016 |website=VideoGamer.com |publisher=Resero Network |archive-date=15 November 2016 |archive-url=https://archive.today/20161115191407/https://www.videogamer.com/reviews/dishonored-2-review-ps4-xbox-one-pc-10-out-of-10 |url-status=live }}</ref>
+
+<ref name="fourth best">{{cite web|url=http://metro.co.uk/2016/11/14/dishonored-2-sales-down-38-on-first-game-in-uk-charts-6256531/ |title=Dishonored 2 sales down 38% on first game in UK charts |author=GameCentral |date=14 November 2016 |website=[[Metro (magazine)|Metro]] |publisher=[[Bauer Media Group]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607112826/http://metro.co.uk/2016/11/14/dishonored-2-sales-down-38-on-first-game-in-uk-charts-6256531/ |url-status=live }}</ref>
+
+<ref name="first week">{{cite web|url=http://www.eurogamer.net/articles/2016-11-14-dishonored-2-launch-sales-down-38-percent-on-dishonored |title=Dishonored 2 launch sales down 38% on Dishonored |first=Tom |last=Phillips |date=14 November 2016 |website=[[Eurogamer]] |publisher=[[Gamer Network]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607113205/http://www.eurogamer.net/articles/2016-11-14-dishonored-2-launch-sales-down-38-percent-on-dishonored |url-status=live }}</ref>
+
+<ref name="denuvo">{{cite web|url=https://www.vg247.com/2016/11/08/dishonored-2-steam-page-reveals-the-use-of-denuvo-drm/ |title=Dishonored 2 Steam page reveals the use of Denuvo DRM |first=Sherif |last=Saed |date=8 November 2016 |website=[[VG247]] |publisher=[[Videogaming247]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607113400/https://www.vg247.com/2016/11/08/dishonored-2-steam-page-reveals-the-use-of-denuvo-drm/ |url-status=live }}</ref>
+
+<ref name="re-entered">{{cite web|url=http://www.mcvuk.com/news/read/overwatch-re-enters-uk-charts-at-no-2-after-game-of-the-year-edition-release/0183025 |title=Overwatch re-enters UK charts at No.2, Injustice 2 keeps No.1 spot |first=Katharine |last=Byrne |date=30 May 2017 |website=[[MCV (magazine)|MCV]] |publisher=[[NewBay Media]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607113537/http://www.mcvuk.com/news/read/overwatch-re-enters-uk-charts-at-no-2-after-game-of-the-year-edition-release/0183025 |url-status=live }}</ref>
+
+<ref name="cracked">{{cite web|url=https://torrentfreak.com/mysterious-group-lands-denuvo-anti-piracy-body-blow-170607/ |title=Mysterious Group Lands Denuvo Anti-Piracy Body Blow |date=7 June 2017 |website=[[TorrentFreak]] |archive-date=7 June 2017 |archive-url=https://archive.today/20170607182605/https://torrentfreak.com/mysterious-group-lands-denuvo-anti-piracy-body-blow-170607/ |url-status=live }}</ref>
+
+<ref name="death of the outsider">{{cite web|url=http://kotaku.com/dishonored-death-of-the-outsider-announced-stars-bill-1796008616|title=Dishonored: Death Of The Outsider Announced, Stars Billie Lurk|first=Ethan|last=Gach|website=[[Kotaku]]|date=12 June 2017 |publisher=[[Univision Communications]]|archive-date=12 June 2017|archive-url=https://archive.today/20170612064714/http://kotaku.com/dishonored-death-of-the-outsider-announced-stars-bill-1796008616|url-status=live}}</ref>
+
+<ref name="at a distance">{{cite web|url=http://www.eurogamer.net/articles/2016-11-11-dishonored-2-developers-pro-tips-are-really-useful-for-those-who-struggle-with-stealth|title=Dishonored 2 developer's pro-tips are really useful for those who struggle with stealth|first=Wesley|last=Yin-Poole|date=11 November 2016|website=[[Eurogamer]]|archive-date=26 June 2017|archive-url=https://archive.today/20170626115820/http://www.eurogamer.net/articles/2016-11-11-dishonored-2-developers-pro-tips-are-really-useful-for-those-who-struggle-with-stealth|url-status=live}}</ref>
+
+<ref name="harvey answers">{{cite magazine |url=https://www.gameinformer.com/b/podcasts/archive/2016/05/27/harvey-smith-answers-your-dishonored-2-questions.aspx |archive-url=https://web.archive.org/web/20160530013749/http://www.gameinformer.com/b/podcasts/archive/2016/05/27/harvey-smith-answers-your-dishonored-2-questions.aspx |url-status=live |archive-date=30 May 2016 |title=Dishonored 2's Harvey Smith Answers Your Questions |last=Smith |first=Harvey |others=Interview |date=27 May 2016 |magazine=[[Game Informer]] |access-date=12 August 2017}}</ref>
+
+<ref name="director 2">{{cite web|url=http://www.gamasutra.com/view/news/285487/Dishonored_2_director_Harvey_Smith_on_creating_compelling_worlds.php|title=Dishonored 2 director Harvey Smith on creating compelling worlds|first=Chris|last=Kerr|date=14 November 2016|website=[[Gamasutra]]|archive-date=3 July 2017|archive-url=https://archive.today/20170703021306/http://www.gamasutra.com/view/news/285487/Dishonored_2_director_Harvey_Smith_on_creating_compelling_worlds.php|url-status=dead}}</ref>
+
+<ref name="dry ice">{{cite web|url=https://www.vg247.com/2016/11/15/dishonored-2-civilization-6-and-obsidians-tyranny-top-the-weekly-steam-charts/|title=Dishonored 2, Civilization 6 and Obsidian's Tyranny top the weekly Steam Charts|first=Stephany|last=Nunneley|date=15 November 2016|website=[[VG247]]|archive-date=3 July 2017|archive-url=https://archive.today/20170703030637/https://www.vg247.com/2016/11/15/dishonored-2-civilization-6-and-obsidians-tyranny-top-the-weekly-steam-charts/|url-status=live}}</ref>
+
+<ref name="ersatz">{{cite magazine|url=https://www.rollingstone.com/culture/news/why-making-dishonored-2-was-so-hard-w434953|title=Why Making 'Dishonored 2' Was So Hard|first=Jake|last=Muncy|date=17 August 2016|magazine=[[Rolling Stone]]|archive-date=24 September 2016|archive-url=https://archive.today/20160924002145/http://www.rollingstone.com/culture/news/why-making-dishonored-2-was-so-hard-w434953|url-status=live}}</ref>
+
+<ref name="48c3nc3">{{cite web|url=http://www.ibtimes.co.uk/arkane-studios-incredible-attention-detail-will-make-dishonored-2-one-years-most-unique-games-1584010|title=Arkane Studios' incredible attention to detail will make Dishonored 2 one of the year's most unique games|first=Jake|last=Tucker|date=29 September 2016|website=[[International Business Times]]|archive-date=3 July 2017|archive-url=https://archive.today/20170703220731/http://www.ibtimes.co.uk/arkane-studios-incredible-attention-detail-will-make-dishonored-2-one-years-most-unique-games-1584010|url-status=live}}</ref>
+
+<ref name="boned charms">{{cite web|url=http://metro.co.uk/2015/06/23/dishonored-2-harvey-smith-interview-people-are-tired-of-being-hand-held-5260958/|title=Dishonored 2 Harvey Smith interview – 'People are tired of being hand-held'|first=David|last=Jenkins|date=23 June 2015|website=[[Metro (British newspaper)|Metro]]|archive-date=3 July 2017|archive-url=https://archive.today/20170703223922/http://metro.co.uk/2015/06/23/dishonored-2-harvey-smith-interview-people-are-tired-of-being-hand-held-5260958/|url-status=live}}</ref>
+
+<ref name="clockwork gamer">{{cite web|url=http://www.pcgamer.com/the-best-levels-of-2016/|title=The best levels of 2016|date=26 December 2016|website=[[PC Gamer]]|archive-date=4 July 2017|archive-url=https://archive.today/20170704011637/http://www.pcgamer.com/the-best-levels-of-2016/|url-status=live}}</ref>
+
+<ref name="clockwork radar">{{cite web|url=http://www.gamesradar.com/the-genius-of-dishonored-2s-clockwork-mansion/|title=The genius of Dishonored 2's Clockwork Mansion|first=Andy|last=Kelly|date=23 November 2016|website=[[GamesRadar]]|archive-date=4 July 2017|archive-url=https://archive.today/20170704012920/http://www.gamesradar.com/the-genius-of-dishonored-2s-clockwork-mansion/|url-status=live}}</ref>
+
+<ref name="clockwork club">{{cite web|url=http://www.avclub.com/article/dishonored-2-comes-life-inside-mechanical-mansion-245976|title=Pt. 2—Dishonored 2 comes to life inside a mechanical mansion|first=Matt|last=Gerardi|date=16 November 2016|website=[[The A.V. Club]]|archive-date=4 July 2017|archive-url=https://archive.today/20170704013724/http://www.avclub.com/article/dishonored-2-comes-life-inside-mechanical-mansion-245976|url-status=live}}</ref>
+
+<ref name="clocktaku">{{cite web|url=http://kotaku.com/a-closer-look-at-dishonored-2-s-clockwork-mansion-1789429571|title=A Closer Look At Dishonored 2's Best Level|first=Heather|last=Alexandra|date=28 November 2016|website=[[Kotaku]]|archive-date=4 July 2017|archive-url=https://archive.today/20170704014024/http://kotaku.com/a-closer-look-at-dishonored-2-s-clockwork-mansion-1789429571|url-status=live}}</ref>
+
+<ref name="TechRadar-2017">{{cite web|url=http://www.techradar.com/news/voting-is-now-open-for-the-golden-joystick-awards|title=Voting is now open for the Golden Joystick awards|first=Andrew|last=London|date=21 September 2017|website=[[TechRadar]]|archive-date=24 September 2017|archive-url=https://archive.today/20170924113235/http://www.techradar.com/news/voting-is-now-open-for-the-golden-joystick-awards|url-status=live|df=dmy-all}}</ref>
+
+<ref name="PCGamer-Nov2017">{{cite web|url=http://www.pcgamer.com/here-are-your-2017-golden-joystick-award-winners/|title=Here are your 2017 Golden Joystick Award winners|first=Andy|last=Chalk|date=17 November 2017|website=[[PC Gamer]]|archive-date=18 November 2017|archive-url=https://archive.today/20171118130547/http://www.pcgamer.com/here-are-your-2017-golden-joystick-award-winners/|url-status=live|df=dmy-all}}</ref>
+
+<ref name="PCGamer-Feb2018">{{cite web|url=https://www.pcgamer.com/dishonored-2-is-getting-a-graphic-novel-this-month/|title=Dishonored 2 is getting a graphic novel this month|first=Joe|last=Donnelly|date=9 February 2018|website=[[PC Gamer]]|archive-date=10 April 2018|archive-url=https://archive.today/20180410110943/https://www.pcgamer.com/dishonored-2-is-getting-a-graphic-novel-this-month/|url-status=live|df=dmy-all|access-date=10 April 2018}}</ref>
+
+}}
+
+==External links==
+* {{Official website}}
+
+{{Portal bar|Speculative fiction|Video games}}
+{{Dishonored series}}
+{{Arkane Studios}}
+{{Authority control}}
+
+[[Category:2016 video games]]
+[[Category:Action-adventure games]]
+[[Category:Arkane Studios games]]
+[[Category:Bethesda Softworks games]]
+[[Category:Dark fantasy video games]]
+[[Category:Dishonored (series)]]
+[[Category:Dystopian video games]]
+[[Category:Video games about murder]]
+[[Category:First-person adventure games]]
+[[Category:Fiction about gangs]]
+[[Category:Fiction about government]]
+[[Category:Id Tech games]]
+[[Category:PlayStation 4 games]]
+[[Category:PlayStation 4 Pro enhanced games]]
+[[Category:Single-player video games]]
+[[Category:Stealth video games]]
+[[Category:Steampunk video games]]
+[[Category:Sequel video games]]
+[[Category:Video games about psychic powers]]
+[[Category:Video games about revenge]]
+[[Category:Video games about spirit possession]]
+[[Category:Video games about the paranormal]]
+[[Category:Video games about time travel]]
+[[Category:Video games adapted into comics]]
+[[Category:Video games adapted into novels]]
+[[Category:Video games developed in France]]
+[[Category:Video games with gender-selectable protagonists]]
+[[Category:Video games featuring female protagonists]]
+[[Category:Video games scored by Daniel Licht]]
+[[Category:Windows games]]
+[[Category:Video games about witchcraft]]
+[[Category:Xbox Cloud Gaming games]]
+[[Category:Xbox One games]]
+[[Category:Xbox One X enhanced games]]
+[[Category:Immersive sims]]
+[[Category:The Game Awards winners]]
+[[Category:Video games directed by Harvey Smith]]
+[[Category:Video games with multiple endings]]

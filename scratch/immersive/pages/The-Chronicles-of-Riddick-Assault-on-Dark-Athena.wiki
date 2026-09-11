@@ -1,0 +1,110 @@
+{{Short description|2009 video game}}
+{{Use mdy dates|date=July 2021}}
+{{Infobox video game
+| title = The Chronicles of Riddick: Assault on Dark Athena
+| image = Assault on Dark Athena.jpg
+| developer = [[Starbreeze Studios]]<br>[[Tigon Studios]]
+| publisher = [[Atari, Inc. (formerly GT Interactive)|Atari, Inc.]]
+| producer = Samuel Ranta-Eskola
+| designer = Jerk Gustafsson
+| programmer = Magnus Högdahl
+| artist = Mattias Snygg
+| writer = {{Unbulleted list|Tommy Tordsson|Mikael Säker|John Zuur Platten|[[Flint Dille]]}}
+| composer = [[Gustaf Grefberg]]
+| series = ''[[The Chronicles of Riddick (franchise)|The Chronicles of Riddick]]''
+| platforms = {{Unbulleted list|[[Microsoft Windows]]|[[PlayStation 3]]|[[Xbox 360]]|[[Mac OS X]]}}
+| released = '''Windows''', '''PS3''', '''X360'''{{Video game release|NA|April 7, 2009|EU|April 24, 2009<ref>{{Cite news |date=2009-04-16 |title=Atari defends Riddick PC DRM |url=https://www.eurogamer.net/atari-defends-riddick-pc-drm |access-date=2024-01-10 |work=Eurogamer.net |language=en}}</ref>}}'''Mac OS X'''{{Video game release|WW|April 16, 2010}}
+| genre = [[Action-adventure game|Action-adventure]], [[Stealth game|stealth]]
+| modes = [[Single-player]], [[multiplayer]]
+}}
+
+'''''The Chronicles of Riddick: Assault on Dark Athena''''' is a [[science fiction]] [[Action game|first-person action video game]] for [[Microsoft Windows]], [[PlayStation 3]], [[Xbox 360]]<ref name="game-platform-information">{{cite web|url=http://www.starbreeze.com/games/the-chronicles-of-riddick-assault-on-dark-athena.aspx|title=Game Platform Information|publisher=Starbreeze Studios|access-date=November 12, 2008|url-status=dead|archive-url=https://web.archive.org/web/20120220061156/http://www.starbreeze.com/games/the-chronicles-of-riddick-assault-on-dark-athena.aspx|archive-date=February 20, 2012}}</ref> and [[Mac OS X]].<ref name="bare_url">{{cite web|url=http://insidemacgames.com/news/story.php?ArticleID=18789|title=The Chronicles Of Riddick Coming To Macs Today|last=Cruse|first=Cord|date=April 16, 2010|publisher=Inside Mac Games|access-date=May 2, 2010|archive-date=September 29, 2010|archive-url=https://web.archive.org/web/20100929225146/http://insidemacgames.com/news/story.php?ArticleID=18789|url-status=live}}</ref> The game is a sequel to ''[[The Chronicles of Riddick: Escape from Butcher Bay]]'', which was remade and included along with the ''Assault on Dark Athena'' campaign.<ref name="riddick-sequel">{{cite web|url=http://www.gamecyte.com/riddick-dark-athena-is-remake-no-more|title=Riddick: Dark Athena is Remake No More|last=Hollister|first=Sean|date=December 2, 2008|publisher=GameCyte|access-date=December 2, 2008|url-status=dead|archive-url=https://web.archive.org/web/20111003215258/http://www.gamecyte.com/riddick-dark-athena-is-remake-no-more|archive-date=October 3, 2011}}</ref> The game was released on April 7, 2009.<ref name="eurog_aotd">{{cite web|url=http://www.eurogamer.net/articles/atari-dates-riddick-dark-athena|title=Atari dates Riddick|date=February 23, 2009|publisher=Eurogamer|access-date=February 23, 2009|archive-date=September 25, 2012|archive-url=https://web.archive.org/web/20120925032245/http://www.eurogamer.net/articles/atari-dates-riddick-dark-athena|url-status=live}}</ref> A demo was released on [[Xbox Live]] on March 4, 2009, with a [[PlayStation Network]] release following on March 12, 2009.<ref>{{cite web|url=http://www.eurogamer.net/articles/riddick-demo-on-xbox-live-now|title=Riddick demo on Xbox Live|access-date=March 4, 2009|publisher=Eurogamer|date=March 4, 2009|archive-date=September 24, 2012|archive-url=https://web.archive.org/web/20120924101617/http://www.eurogamer.net/articles/riddick-demo-on-xbox-live-now|url-status=live}}</ref> Virtual Programming released the Mac OS X version on April 16, 2010, as a download through Deliver2Mac.com and other digital distribution web sites.<ref name="bare_url_2">{{cite web |author=Games |url=http://www.macobserver.com/tmo/article/the_chronicles_of_riddick_assault_on_dark_athena_hits_deliver2mac/ |title=The Chronicles of Riddick: Assault on Dark Athena Hits Deliver2Mac &#124; Games |publisher=The Mac Observer |date=April 16, 2010 |access-date=September 18, 2011 |archive-date=October 4, 2012 |archive-url=https://web.archive.org/web/20121004052647/http://www.macobserver.com/tmo/article/the_chronicles_of_riddick_assault_on_dark_athena_hits_deliver2mac/ |url-status=live }}</ref>
+
+The game was developed by [[Tigon Studios]] and [[Starbreeze Studios]], and published by [[Atari, Inc. (formerly GT Interactive)|Atari, Inc.]] According to Ian Stevens, Head of Production at [[Tigon Studios]], the decision to do a [[Video game remake|remake]] was because [[Microsoft]] could not make the Xbox 360 [[Backward compatibility|backward compatible]] with ''Escape from Butcher Bay'', and because they wanted to get the ''Escape'' story to a larger audience before progressing further.<ref name="riddick-on-record">{{cite web|url=http://xbox360.ign.com/articles/792/792189p1.html|title=Riddick on the Record|last=Dunham|first=Jeremy|date=May 25, 2007|publisher=IGN|access-date=June 26, 2007|archive-date=March 22, 2012|archive-url=https://web.archive.org/web/20120322020407/http://xbox360.ign.com/articles/792/792189p1.html|url-status=live}}</ref>
+
+''Dark Athena'' has improved graphics and [[Artificial intelligence in video games|artificial intelligence]] (AI) from ''Butcher Bay'' along with the addition of a multiplayer mode. The single player mode has also been expanded to include [[Riddick (character)|Riddick]] escaping onto a mercenary ship called ''Dark Athena''. [[Vin Diesel]], the voice and likeness of the title character, was involved in the production of ''Assault on Dark Athena''.
+
+==Plot==
+The game picks up where ''Escape from Butcher Bay'' left off. Richard B. Riddick is a dangerous space criminal who can see in the dark. Johns, the man who originally took Riddick to the Butcher Bay prison for a bounty, helped him escape to avoid becoming a prisoner himself. On their ship together in a cryogenic sleep, they are dragged unwillingly into the ''Dark Athena'', a gigantic mercenary vessel run by Gale Revas ([[Michelle Forbes]]) and her second in command, Spinner ([[Wade Williams (actor)|Wade Williams]]). Riddick avoids capture as Revas and her men take Johns away. Using the same stealth tactics as he did in Butcher Bay, Riddick sneaks and hides throughout the ship seeking to escape, killing the guards and mercenaries he encounters along the way. Many of the guards are automated drones that are human bodies with implanted machine parts, controlled remotely from within the ship.
+
+He meets with a little girl named Lynn (Bridget Shergalis) who is hiding from the guards in the air vent systems. Riddick makes his way to the prison cells and finds several people captured, including the former captain of the ''Dark Athena'' before Revas took control. There he meets Lynn's mother, Ellen Silverman (Heidi Schooler). She offers to make Riddick the tools he needs to escape through the air vents if he can get the right parts. She also asks to find Lynn because she is concerned for her safety. Another prisoner named Max Dacher ([[Lance Henriksen]]) offers his technical skills to help Riddick escape on a ship and unlock doors for him if Riddick can find him a com link. He agrees and finds the com link for Dacher and the parts for Silverman. Having again met with Lynn, Silverman keeps her word and makes him the tool he needs. Riddick moves on and is in contact with Dacher via video communication at computer terminals on the ship. Riddick frees the prisoners but most are killed, including Lynn's mother Silverman. Revas kills Dacher as he prepares the ship for their escape. Riddick finally meets Revas face to face. As they fight, he wounds her severely and she is thought to be dead. As he is preparing an escape pod to take off, Lynn is pounding on the door begging to take her with him. Revas, who is still alive as Riddick's pod takes off, fires a missile that hits the pod, causing it to crash on the planet Aguerra Prime below.
+
+Riddick wakes up on the shore of a beach and he makes his way into an abandoned city. The planet is under siege from Revas' troops who are capturing civilians and harvesting their bodies to use for their drones. Riddick realizes his only way off the planet is to get back on the ''Dark Athena'' again. He makes his way through the city and back to the port where the Athena is docked. Spinner attacks Riddick in a robotic mech suit but is defeated. He gets back onto the ''Dark Athena'' and meets Lynn again. She tells Riddick her mother taught her how to make the drones turn on Revas' crew and attack them instead. Fighting ensues on the ship between the drones and the mercenaries. He makes his way up the ship and Riddick meets with Revas again, who is in a suit of armor with heavy weapons. He defeats her by pushing her into an elevator shaft and she falls to her death. Lynn meets up with him and they are seen going into the elevator. She asks him if Revas is coming back, and Riddick answers, "When I say goodbye, it's forever." 
+
+==Development==
+''The Chronicles of Riddick: Assault on Dark Athena'' was originally announced by [[Vivendi Games]] on May 22, 2007, as a remake of ''Escape from Butcher Bay'' with ''Assault on Dark Athena'' serving as a "bonus chapter".<ref>{{cite web |url=http://www.gamershell.com/news_38673.html |title=News: The Chronicles Of Riddick: Assault On Dark Athena Announced |publisher=GamersHell.com |date=May 22, 2007 |access-date=September 18, 2011 |archive-date=October 6, 2012 |archive-url=https://web.archive.org/web/20121006091730/http://www.gamershell.com/news_38673.html |url-status=dead }}</ref>
+
+On July 10, 2008, The merger between [[Vivendi Games]], the game's publisher and [[Activision]] had been complete and on July 29, 2008, the newly formed [[Activision Blizzard]] had announced that ''The Chronicles of Riddick: Assault on Dark Athena'' along with eight other Vivendi Games titles that were in development had been dropped, putting the future of the game into question.<ref name="activision-drops">{{cite web|url=http://xbox360.ign.com/articles/894/894586p1.html|title=Activision Drops Several Vivendi Games|last=Pattison|first=Narayan|date=July 7, 2008|publisher=IGN|access-date=September 13, 2008|archive-date=January 19, 2012|archive-url=https://web.archive.org/web/20120119235052/http://xbox360.ign.com/articles/894/894586p1.html|url-status=live}}</ref> However, on September 24, 2008,  StarBreeze Studios confirmed that ''The Chronicles of Riddick:  Assault on Dark Athena'' was nearing completion and were in the process of looking for a publisher to publish the game.<ref name="gamespot-almost-done">{{cite web|url=http://www.gamespot.com/news/6198151.html?tag=latestheadlines;title;2|title=Dark Athena 'Just About Done' - News at Gamespot|date=October 31, 2008|publisher=Gamespot|access-date=October 31, 2008|archive-date=November 6, 2012|archive-url=https://web.archive.org/web/20121106235714/http://www.gamespot.com/news/dark-athena-just-about-done-6198151|url-status=live}}</ref>  In October 2008, [[Infogrames]], the parent company of [[Atari, Inc. (formerly GT Interactive)|Atari, Inc.]] and [[Atari Interactive]], announced they had picked up the publishing rights to Riddick and ''[[Ghostbusters: The Video Game]]'' from Activision.<ref name="kotaku-atari">{{cite web|url=http://kotaku.com/5070757/ghostbusters-gets-publisher-release-window|title=Atari Picks Up Riddick|date=October 31, 2008|publisher=Kotaku|access-date=October 31, 2008|archive-date=October 13, 2012|archive-url=https://web.archive.org/web/20121013214449/http://kotaku.com/5070757/ghostbusters-gets-publisher-release-window|url-status=dead}}</ref> While the fate of Riddick was up in the air, Starbreeze reportedly kept working,<ref name="riddick-joystiq">{{cite web|url=http://www.joystiq.com/2008/12/02/riddick-dark-athena-coming-early-09-features-new-10-hour-camp/|title=Riddick: Dark Athena coming early '09, features new 10-hour campaign|last=Nelson|first=Randy|date=December 2, 2008|publisher=Joystiq|access-date=December 2, 2008|archive-date=October 13, 2012|archive-url=https://web.archive.org/web/20121013231001/http://www.joystiq.com/2008/12/02/riddick-dark-athena-coming-early-09-features-new-10-hour-camp/|url-status=live}}</ref> and generated enough content by December 2008 to make ''Dark Athena'', for all intents and purposes, a sequel to their earlier work.<ref name="riddick-sequel" />
+
+==Release==
+{{expand section|date=January 2015}}
+
+On release, the PC version used the [[Tagès]] [[copy protection]] system. After activating the game for a third time, Tagès would start a 30-day timer. After 30 days, it enabled another activation, back up to 3 total activations.<ref>{{cite web|url=http://store.steampowered.com/app/9860|title=Steam Powered copy protection|access-date=December 31, 2011|archive-date=January 18, 2012|archive-url=https://web.archive.org/web/20120118201502/http://store.steampowered.com/app/9860/|url-status=live}}</ref> The version available on [[GOG.com]] came without this copy protection.<ref>{{cite web|url=http://www.gog.com/gamecard/the_chronicles_of_riddick_assault_on_dark_athena|title=Chronicles of Riddick: Assault on Dark Athena|publisher=GOG.com |url-status=dead |archive-url=https://web.archive.org/web/20160828020852/https://www.gog.com/game/the_chronicles_of_riddick_assault_on_dark_athena
+|archive-date=August 28, 2016 |quote=DRM-FREE. No activation or online connection required to play}}</ref>  The GOG version of the game was removed in March 2017.<ref>{{cite web
+| url=https://www.gog.com/forum/general/chronicles_of_riddick_assault_on_dark_arena_removal/page1
+| title=Chronicles of Riddick: Assault on Dark Athena - Removal
+| author=GOG.com team
+| website=GOG forum
+| quote=unfortunately, Chronicles of Riddick: Assault on Dark Athena will be leaving the GOG.com catalog
+| access-date=August 24, 2018
+| archive-date=May 27, 2018
+| archive-url=https://web.archive.org/web/20180527062947/https://www.gog.com/forum/general/chronicles_of_riddick_assault_on_dark_arena_removal/page1
+| url-status=live
+}}</ref>
+
+==Reception==
+{{Video game reviews
+| MC = PC: 80/100<ref>{{cite web |url=https://www.metacritic.com/game/the-chronicles-of-riddick-assault-on-dark-athena/critic-reviews/?platform=pc |title=The Chronicles of Riddick: Assault on Dark Athena for PC Reviews |website=[[Metacritic]] |publisher=[[Red Ventures]] |access-date=September 3, 2022 |archive-date=September 3, 2022 |archive-url=https://web.archive.org/web/20220903133040/https://www.metacritic.com/game/pc/the-chronicles-of-riddick-assault-on-dark-athena |url-status=live }}</ref><br />PS3: 80/100<ref>{{cite web |url=https://www.metacritic.com/game/the-chronicles-of-riddick-assault-on-dark-athena/critic-reviews/?platform=playstation-3 |title=The Chronicles of Riddick: Assault on Dark Athena for PlayStation 3 Reviews |website=[[Metacritic]] |publisher=[[Red Ventures]] |access-date=September 3, 2022 |archive-date=September 3, 2022 |archive-url=https://web.archive.org/web/20220903133039/https://www.metacritic.com/game/playstation-3/the-chronicles-of-riddick-assault-on-dark-athena |url-status=live }}</ref><br />X360: 82/100<ref>{{cite web |url=https://www.metacritic.com/game/the-chronicles-of-riddick-assault-on-dark-athena/critic-reviews/?platform=xbox-360 |title=The Chronicles of Riddick: Assault on Dark Athena for Xbox 360 Reviews |website=[[Metacritic]] |publisher=[[Red Ventures]] |access-date=September 3, 2022 |archive-date=September 3, 2022 |archive-url=https://web.archive.org/web/20220903133040/https://www.metacritic.com/game/xbox-360/the-chronicles-of-riddick-assault-on-dark-athena |url-status=live }}</ref>
+| 1UP = B-
+| Edge = 8/10<ref>{{cite web |url=http://www.next-gen.biz/reviews/review-chronicles-riddick-assault-dark-athena |title=Review: Chronicles Of Riddick: Assault On Dark Athena - Edge Magazine |publisher=Next-gen.biz |date=April 16, 2009 |access-date=September 18, 2011 |archive-date=October 3, 2011 |archive-url=https://web.archive.org/web/20111003145520/http://www.next-gen.biz/reviews/review-chronicles-riddick-assault-dark-athena |url-status=live }}</ref>
+| GI = 9.5/10 (Game of the Month, May 2009)
+| GamePro = 4.5/5<ref name="gamepro">{{cite magazine|last=Kim|first=Tae K.|date=June 2009|title=The Chronicles of Riddick: Assault on Dark Athena for Xbox 360/PS3|magazine=[[GamePro]]|volume=21|issue=6|page=81|publisher=GamePro Media|issn=1042-8658|oclc=19231826|access-date=June 14, 2009|url=http://www.gamepro.com/article/reviews/209626/the-chronicles-of-riddick-assault-on-dark-athena-360/|archive-url=https://web.archive.org/web/20090411170249/http://www.gamepro.com/article/reviews/209626/the-chronicles-of-riddick-assault-on-dark-athena-360/|archive-date=April 11, 2009}}</ref> (360/PS3)
+| GT = 8.4<ref>{{cite web |url=http://www.gametrailers.com/video/review-hd-riddick-dark/47698 |title=The Chronicles Of Riddick: Assault On Dark Athena Video Game, Review HD &#124; Video Clip &#124; Game Trailers & Videos |publisher=GameTrailers.com |date=April 7, 2009 |access-date=September 18, 2011 |archive-date=October 3, 2011 |archive-url=https://web.archive.org/web/20111003165131/http://www.gametrailers.com/video/review-hd-riddick-dark/47698 |url-status=live }}</ref>
+| IGN = 7.4/10
+| OXM = 9.0/10
+| TX = 8.8/10
+}}
+
+The game received positive reviews, citing voice acting and the use of shadows as its strongest point. ''[[GameSpot]]'' praised the game for its voice acting and stated that "You may not hear better voice acting all year: It's that good." However, the AI and multiplayer was criticized.<ref name = "GameSpot">{{cite web |url=http://www.gamespot.com/xbox360/action/chroniclesofriddickassaultondarkathena/review.html |title=The Chronicles of Riddick: Assault on Dark Athena Review, The Chronicles of Riddick: Assault on Dark Athena Xbox 360 Review |publisher=GameSpot.com |date=April 7, 2009 |access-date=September 18, 2011 |archive-date=September 26, 2011 |archive-url=https://web.archive.org/web/20110926000911/http://www.gamespot.com/xbox360/action/chroniclesofriddickassaultondarkathena/review.html |url-status=live }}</ref> ''[[1UP.com]]'' criticized the game for having very poor AI, citing that the player can be spotted even if he is not directly seen by the guards. Simply firing or exposing yourself will attract the enemy, regardless of whether they can see you or not. ''1UP'' also pointed out that enemy AI will move away from the player's fire even if the attack is from behind.<ref>{{cite web|last=Pfister |first=Andrew |url=http://www.1up.com/do/reviewPage?cId=3173628&p=37 |archive-url=https://archive.today/20120729031022/http://www.1up.com/do/reviewPage?cId=3173628&p=37 |url-status=dead |archive-date=July 29, 2012 |title=Riddick: Dark Athena Review for 360, PS3, PC from |publisher=1UP.com |access-date=September 18, 2011}}</ref>
+
+Despite the criticism of the multiplayer, ''Gaming-Age'' praised the game's "Pitch Black" mode, citing that "Pitch Black, though, is easily the best aspect about the multiplayer."<ref>{{cite web |url=http://www.gaming-age.com/cgi-bin/reviews/review.pl?sys=xbox360&game=riddick_darkathena |title=Chronicles of Riddick: Assault on Dark Athena Review (Xbox 360, PS3) |publisher=Gaming Age |access-date=September 18, 2011 |archive-date=June 5, 2011 |archive-url=https://web.archive.org/web/20110605222529/http://www.gaming-age.com/cgi-bin/reviews/review.pl?sys=xbox360&game=riddick_darkathena |url-status=live }}</ref> ''[[Game Informer]]'' said the game was better than ''[[The Chronicles of Riddick: Escape from Butcher Bay|Escape from Butcher Bay]]'', the first game. They also praised the voice acting, stating that "Diesel's gravelly voice will rattle your living room when gunfire and explosions calm down." ''[[Hyper (magazine)|Hyper]]''{{'}}s Daniel Wilks commends the game as "an effortless combination of stealth and action" but criticises it for the "HD facelift" and "the [[lip sync]]hing is terrible".<ref>{{cite journal|last=Wilks|first=Daniel|title=Chronicles of Riddick: Assault on Dark Athena|journal=[[Hyper (magazine)|Hyper]]|publisher=[[Next Media]]|issue=187|pages=50, 51|date=April 2009|issn=1320-7458}}</ref>
+
+{{-}}
+
+==See also==
+* [[The Chronicles of Riddick (franchise)|''The Chronicles of Riddick'' (franchise)]]
+
+{{Clear}}
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{MobyGames|id=/chronicles-of-riddick-assault-on-dark-athena}}
+* {{IMDb title|tt1218336}}
+
+{{The Chronicles of Riddick}}
+{{Starbreeze}}
+
+{{DEFAULTSORT:Chronicles of Riddick: Assault on Dark Athena, The}}
+[[Category:2009 video games]]
+[[Category:Action-adventure games]]
+[[Category:The Chronicles of Riddick (franchise)|Assault on Dark Athena]]
+[[Category:First-person shooters]]
+[[Category:Immersive sims]]
+[[Category:MacOS games]]
+[[Category:Multiplayer and single-player video games]]
+[[Category:PlayStation 3 games]]
+[[Category:Science fiction video games]]
+[[Category:Starbreeze Studios games]]
+[[Category:Stealth video games]]
+[[Category:Tigon Studios games]]
+[[Category:Video game interquels]]
+[[Category:Video game remakes]]
+[[Category:Video games developed in Sweden]]
+[[Category:Video games developed in the United States]]
+[[Category:Video games set on fictional planets]]
+[[Category:Video games with commentaries]]
+[[Category:Virtual Programming (company) games]]
+[[Category:Windows games]]
+[[Category:Xbox 360 games]]

@@ -1,0 +1,866 @@
+{
+ "Ultima Underworld: The Stygian Abyss": [
+  {
+   "game_id": 10764,
+   "game_name": "Ultima Underworld: The Stygian Abyss",
+   "release_world": 1992,
+   "comp_main": 70415,
+   "comp_plus": 110041,
+   "comp_100": 164295
+  }
+ ],
+ "System Shock": [
+  {
+   "game_id": 74181,
+   "game_name": "System Shock",
+   "release_world": 2023,
+   "comp_main": 62480,
+   "comp_plus": 90987,
+   "comp_100": 120129
+  },
+  {
+   "game_id": 9547,
+   "game_name": "System Shock",
+   "release_world": 1994,
+   "comp_main": 46800,
+   "comp_plus": 55140,
+   "comp_100": 76962
+  },
+  {
+   "game_id": 9548,
+   "game_name": "System Shock 2",
+   "release_world": 1999,
+   "comp_main": 47951,
+   "comp_plus": 61978,
+   "comp_100": 80624
+  },
+  {
+   "game_id": 32674,
+   "game_name": "System Shock 3",
+   "release_world": 0,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  }
+ ],
+ "Thief: The Dark Project": [
+  {
+   "game_id": 10300,
+   "game_name": "Thief: The Dark Project",
+   "release_world": 1998,
+   "comp_main": 43785,
+   "comp_plus": 83628,
+   "comp_100": 141325
+  },
+  {
+   "game_id": 187190,
+   "game_name": "Thief: The Dark Project Remastered",
+   "release_world": 2026,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  }
+ ],
+ "System Shock 2": [
+  {
+   "game_id": 9548,
+   "game_name": "System Shock 2",
+   "release_world": 1999,
+   "comp_main": 47951,
+   "comp_plus": 61978,
+   "comp_100": 80624
+  }
+ ],
+ "Thief II: The Metal Age": [
+  {
+   "game_id": 10298,
+   "game_name": "Thief II: The Metal Age",
+   "release_world": 2000,
+   "comp_main": 73136,
+   "comp_plus": 95239,
+   "comp_100": 127945
+  }
+ ],
+ "Deus Ex": [
+  {
+   "game_id": 2486,
+   "game_name": "Deus Ex",
+   "release_world": 2000,
+   "comp_main": 82560,
+   "comp_plus": 103696,
+   "comp_100": 141859
+  },
+  {
+   "game_id": 25434,
+   "game_name": "Deus Ex: Mankind Divided",
+   "release_world": 2016,
+   "comp_main": 57857,
+   "comp_plus": 111703,
+   "comp_100": 190265
+  },
+  {
+   "game_id": 14286,
+   "game_name": "Deus Ex: Human Revolution - Director's Cut",
+   "release_world": 2013,
+   "comp_main": 83108,
+   "comp_plus": 111929,
+   "comp_100": 168263
+  },
+  {
+   "game_id": 2489,
+   "game_name": "Deus Ex: Human Revolution",
+   "release_world": 2011,
+   "comp_main": 77377,
+   "comp_plus": 109697,
+   "comp_100": 162957
+  },
+  {
+   "game_id": 2491,
+   "game_name": "Deus Ex: Invisible War",
+   "release_world": 2003,
+   "comp_main": 32804,
+   "comp_plus": 48606,
+   "comp_100": 72600
+  },
+  {
+   "game_id": 12017,
+   "game_name": "Deus Ex: The Fall",
+   "release_world": 2013,
+   "comp_main": 15262,
+   "comp_plus": 19757,
+   "comp_100": 28885
+  },
+  {
+   "game_id": 2490,
+   "game_name": "Deus Ex: Human Revolution - The Missing Link",
+   "release_world": 2011,
+   "comp_main": 16503,
+   "comp_plus": 21321,
+   "comp_100": 26232
+  },
+  {
+   "game_id": 30976,
+   "game_name": "Deus Ex: Revision",
+   "release_world": 2015,
+   "comp_main": 70330,
+   "comp_plus": 148453,
+   "comp_100": 179382
+  },
+  {
+   "game_id": 42969,
+   "game_name": "Deus Ex: Mankind Divided - Desperate Measures",
+   "release_world": 2016,
+   "comp_main": 3446,
+   "comp_plus": 4775,
+   "comp_100": 6923
+  },
+  {
+   "game_id": 40367,
+   "game_name": "Deus Ex: Mankind Divided - A Criminal Past",
+   "release_world": 2017,
+   "comp_main": 13115,
+   "comp_plus": 19239,
+   "comp_100": 25181
+  },
+  {
+   "game_id": 26523,
+   "game_name": "Deus Ex Machina 2",
+   "release_world": 2015,
+   "comp_main": 3600,
+   "comp_plus": 3620,
+   "comp_100": 4200
+  },
+  {
+   "game_id": 121592,
+   "game_name": "Deus Ex: Project 2027",
+   "release_world": 2011,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 51750,
+   "game_name": "Deus Ex: Mankind Divided - VR Experience",
+   "release_world": 2017,
+   "comp_main": 600,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 43290,
+   "game_name": "Deus Ex: Breach",
+   "release_world": 2017,
+   "comp_main": 0,
+   "comp_plus": 50982,
+   "comp_100": 94500
+  },
+  {
+   "game_id": 40148,
+   "game_name": "Deus Ex: Mankind Divided - System Rift",
+   "release_world": 2016,
+   "comp_main": 9133,
+   "comp_plus": 12844,
+   "comp_100": 17590
+  },
+  {
+   "game_id": 39388,
+   "game_name": "Deus Ex GO",
+   "release_world": 2016,
+   "comp_main": 14262,
+   "comp_plus": 18438,
+   "comp_100": 21549
+  },
+  {
+   "game_id": 23136,
+   "game_name": "The Nameless Mod",
+   "release_world": 2009,
+   "comp_main": 54000,
+   "comp_plus": 72000,
+   "comp_100": 90000
+  },
+  {
+   "game_id": 19142,
+   "game_name": "Deus Ex Machina",
+   "release_world": 1984,
+   "comp_main": 3370,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 174941,
+   "game_name": "Deus Ex Remastered",
+   "release_world": 0,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  }
+ ],
+ "Arx Fatalis": [
+  {
+   "game_id": 637,
+   "game_name": "Arx Fatalis",
+   "release_world": 2002,
+   "comp_main": 69881,
+   "comp_plus": 93754,
+   "comp_100": 181886
+  }
+ ],
+ "The Chronicles of Riddick: Escape from Butcher Bay": [
+  {
+   "game_id": 9808,
+   "game_name": "The Chronicles of Riddick: Escape from Butcher Bay",
+   "release_world": 2004,
+   "comp_main": 28341,
+   "comp_plus": 33858,
+   "comp_100": 47509
+  }
+ ],
+ "Thief: Deadly Shadows": [
+  {
+   "game_id": 10299,
+   "game_name": "Thief: Deadly Shadows",
+   "release_world": 2004,
+   "comp_main": 59634,
+   "comp_plus": 80936,
+   "comp_100": 105430
+  }
+ ],
+ "Vampire: The Masquerade - Bloodlines": [
+  {
+   "game_id": 10890,
+   "game_name": "Vampire: The Masquerade - Bloodlines",
+   "release_world": 2004,
+   "comp_main": 81204,
+   "comp_plus": 103182,
+   "comp_100": 139135
+  },
+  {
+   "game_id": 65968,
+   "game_name": "Vampire: The Masquerade - Bloodlines 2",
+   "release_world": 2025,
+   "comp_main": 56799,
+   "comp_plus": 93558,
+   "comp_100": 127289
+  },
+  {
+   "game_id": 185278,
+   "game_name": "Vampire: The Masquerade - Bloodlines 2: Loose Cannon",
+   "release_world": 2026,
+   "comp_main": 5960,
+   "comp_plus": 7777,
+   "comp_100": 13185
+  },
+  {
+   "game_id": 185279,
+   "game_name": "Vampire: The Masquerade - Bloodlines 2: The Flower & the Flame",
+   "release_world": 2026,
+   "comp_main": 8222,
+   "comp_plus": 11520,
+   "comp_100": 15271
+  }
+ ],
+ "Pathologic": [
+  {
+   "game_id": 6939,
+   "game_name": "Pathologic",
+   "release_world": 2005,
+   "comp_main": 103126,
+   "comp_plus": 151065,
+   "comp_100": 289554
+  },
+  {
+   "game_id": 157842,
+   "game_name": "Pathologic 3",
+   "release_world": 2026,
+   "comp_main": 100800,
+   "comp_plus": 196619,
+   "comp_100": 214200
+  },
+  {
+   "game_id": 51105,
+   "game_name": "Pathologic 2",
+   "release_world": 2019,
+   "comp_main": 100937,
+   "comp_plus": 124115,
+   "comp_100": 186059
+  },
+  {
+   "game_id": 165373,
+   "game_name": "Pathologic 3: Quarantine",
+   "release_world": 2025,
+   "comp_main": 8870,
+   "comp_plus": 11196,
+   "comp_100": 13900
+  },
+  {
+   "game_id": 76792,
+   "game_name": "Pathologic 2: Marble Nest",
+   "release_world": 2019,
+   "comp_main": 6586,
+   "comp_plus": 8350,
+   "comp_100": 9000
+  }
+ ],
+ "Dark Messiah Might Magic": [
+  {
+   "game_id": 2214,
+   "game_name": "Dark Messiah of Might and Magic",
+   "release_world": 2006,
+   "comp_main": 36922,
+   "comp_plus": 46450,
+   "comp_100": 61719
+  }
+ ],
+ "BioShock": [
+  {
+   "game_id": 1065,
+   "game_name": "BioShock",
+   "release_world": 2007,
+   "comp_main": 43576,
+   "comp_plus": 56303,
+   "comp_100": 84683
+  },
+  {
+   "game_id": 1066,
+   "game_name": "BioShock 2",
+   "release_world": 2010,
+   "comp_main": 37891,
+   "comp_plus": 51869,
+   "comp_100": 86111
+  },
+  {
+   "game_id": 1068,
+   "game_name": "BioShock Infinite",
+   "release_world": 2013,
+   "comp_main": 41572,
+   "comp_plus": 58246,
+   "comp_100": 103672
+  },
+  {
+   "game_id": 42529,
+   "game_name": "BioShock: The Collection",
+   "release_world": 2016,
+   "comp_main": 126243,
+   "comp_plus": 176781,
+   "comp_100": 241239
+  },
+  {
+   "game_id": 96523,
+   "game_name": "Bioshock Infinite: The Complete Edition",
+   "release_world": 2014,
+   "comp_main": 42888,
+   "comp_plus": 68671,
+   "comp_100": 129639
+  },
+  {
+   "game_id": 16624,
+   "game_name": "BioShock Infinite: Burial at Sea - Episode 2",
+   "release_world": 2014,
+   "comp_main": 12576,
+   "comp_plus": 16644,
+   "comp_100": 22746
+  },
+  {
+   "game_id": 14532,
+   "game_name": "BioShock Infinite: Burial at Sea - Episode 1",
+   "release_world": 2013,
+   "comp_main": 7500,
+   "comp_plus": 10555,
+   "comp_100": 12921
+  },
+  {
+   "game_id": 1067,
+   "game_name": "BioShock 2: Minerva's Den",
+   "release_world": 2010,
+   "comp_main": 13439,
+   "comp_plus": 15976,
+   "comp_100": 18723
+  },
+  {
+   "game_id": 12648,
+   "game_name": "BioShock Infinite: Clash in the Cloud",
+   "release_world": 2013,
+   "comp_main": 11387,
+   "comp_plus": 18304,
+   "comp_100": 33804
+  },
+  {
+   "game_id": 17578,
+   "game_name": "BioShock 2: Protector Trials",
+   "release_world": 2010,
+   "comp_main": 6144,
+   "comp_plus": 8997,
+   "comp_100": 11713
+  },
+  {
+   "game_id": 47515,
+   "game_name": "BioShock: Challenge Rooms",
+   "release_world": 2008,
+   "comp_main": 7461,
+   "comp_plus": 10780,
+   "comp_100": 15948
+  }
+ ],
+ "Deus Ex: Human Revolution": [
+  {
+   "game_id": 14286,
+   "game_name": "Deus Ex: Human Revolution - Director's Cut",
+   "release_world": 2013,
+   "comp_main": 83108,
+   "comp_plus": 111929,
+   "comp_100": 168263
+  },
+  {
+   "game_id": 2489,
+   "game_name": "Deus Ex: Human Revolution",
+   "release_world": 2011,
+   "comp_main": 77377,
+   "comp_plus": 109697,
+   "comp_100": 162957
+  },
+  {
+   "game_id": 2490,
+   "game_name": "Deus Ex: Human Revolution - The Missing Link",
+   "release_world": 2011,
+   "comp_main": 16503,
+   "comp_plus": 21321,
+   "comp_100": 26232
+  }
+ ],
+ "Dishonored": [
+  {
+   "game_id": 2602,
+   "game_name": "Dishonored",
+   "release_world": 2012,
+   "comp_main": 43772,
+   "comp_plus": 66699,
+   "comp_100": 136163
+  },
+  {
+   "game_id": 26731,
+   "game_name": "Dishonored 2",
+   "release_world": 2016,
+   "comp_main": 45067,
+   "comp_plus": 81934,
+   "comp_100": 165560
+  },
+  {
+   "game_id": 46419,
+   "game_name": "Dishonored: Death of the Outsider",
+   "release_world": 2017,
+   "comp_main": 23701,
+   "comp_plus": 41456,
+   "comp_100": 64546
+  },
+  {
+   "game_id": 22849,
+   "game_name": "Dishonored: Definitive Edition",
+   "release_world": 2013,
+   "comp_main": 43875,
+   "comp_plus": 79291,
+   "comp_100": 168771
+  },
+  {
+   "game_id": 2605,
+   "game_name": "Dishonored: The Knife of Dunwall",
+   "release_world": 2013,
+   "comp_main": 13212,
+   "comp_plus": 18531,
+   "comp_100": 28960
+  },
+  {
+   "game_id": 12980,
+   "game_name": "Dishonored: The Brigmore Witches",
+   "release_world": 2013,
+   "comp_main": 11682,
+   "comp_plus": 18257,
+   "comp_100": 26021
+  },
+  {
+   "game_id": 2604,
+   "game_name": "Dishonored: Dunwall City Trials",
+   "release_world": 2012,
+   "comp_main": 11734,
+   "comp_plus": 19132,
+   "comp_100": 51858
+  }
+ ],
+ "Alien: Isolation": [
+  {
+   "game_id": 16638,
+   "game_name": "Alien: Isolation",
+   "release_world": 2014,
+   "comp_main": 65867,
+   "comp_plus": 81110,
+   "comp_100": 122549
+  },
+  {
+   "game_id": 186988,
+   "game_name": "Alien: Isolation 2",
+   "release_world": 0,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 21666,
+   "game_name": "Alien: Isolation - Last Survivor",
+   "release_world": 2014,
+   "comp_main": 1579,
+   "comp_plus": 1619,
+   "comp_100": 1681
+  },
+  {
+   "game_id": 21665,
+   "game_name": "Alien: Isolation - Crew Expendable",
+   "release_world": 2014,
+   "comp_main": 1962,
+   "comp_plus": 2337,
+   "comp_100": 2642
+  },
+  {
+   "game_id": 165957,
+   "game_name": "Alien: Isolation - Trauma",
+   "release_world": 2014,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 165958,
+   "game_name": "Alien: Isolation - Safe Haven",
+   "release_world": 2015,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 165956,
+   "game_name": "Alien: Isolation - Corporate Lockdown",
+   "release_world": 2014,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 165959,
+   "game_name": "Alien: Isolation - Lost Contact",
+   "release_world": 2015,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 165960,
+   "game_name": "Alien: Isolation - The Trigger",
+   "release_world": 2015,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  }
+ ],
+ "Dishonored 2": [
+  {
+   "game_id": 26731,
+   "game_name": "Dishonored 2",
+   "release_world": 2016,
+   "comp_main": 45067,
+   "comp_plus": 81934,
+   "comp_100": 165560
+  }
+ ],
+ "Prey": [
+  {
+   "game_id": 44590,
+   "game_name": "Prey",
+   "release_world": 2017,
+   "comp_main": 59021,
+   "comp_plus": 100497,
+   "comp_100": 167168
+  },
+  {
+   "game_id": 7278,
+   "game_name": "Prey",
+   "release_world": 2006,
+   "comp_main": 25294,
+   "comp_plus": 30128,
+   "comp_100": 37735
+  },
+  {
+   "game_id": 63157,
+   "game_name": "Prey: Typhon Hunter",
+   "release_world": 2018,
+   "comp_main": 5167,
+   "comp_plus": 0,
+   "comp_100": 29709
+  },
+  {
+   "game_id": 4618,
+   "game_name": "Wings of Prey",
+   "release_world": 2009,
+   "comp_main": 29063,
+   "comp_plus": 36060,
+   "comp_100": 0
+  },
+  {
+   "game_id": 57509,
+   "game_name": "Prey: Mooncrash",
+   "release_world": 2018,
+   "comp_main": 41413,
+   "comp_plus": 56807,
+   "comp_100": 74976
+  },
+  {
+   "game_id": 71697,
+   "game_name": "Iron Aces 2: Birds of Prey",
+   "release_world": 2002,
+   "comp_main": 17520,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 5612,
+   "game_name": "Man of Prey",
+   "release_world": 2009,
+   "comp_main": 78156,
+   "comp_plus": 0,
+   "comp_100": 118800
+  },
+  {
+   "game_id": 7282,
+   "game_name": "Primal Prey",
+   "release_world": 2001,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 21347,
+   "game_name": "Prey the Stars",
+   "release_world": 2008,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 49263,
+   "game_name": "Birds of Prey",
+   "release_world": 1991,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 186267,
+   "game_name": "Train Molester Big-Titty Undercover Agent ~Hot and Sexy Prey~",
+   "release_world": 2025,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 149658,
+   "game_name": "Skelethrone: The Prey",
+   "release_world": 2024,
+   "comp_main": 4140,
+   "comp_plus": 12461,
+   "comp_100": 19247
+  },
+  {
+   "game_id": 28417,
+   "game_name": "Beasts of Prey",
+   "release_world": 2014,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  },
+  {
+   "game_id": 58604,
+   "game_name": "Prey with Gun",
+   "release_world": 2017,
+   "comp_main": 0,
+   "comp_plus": 0,
+   "comp_100": 0
+  }
+ ],
+ "Cruelty Squad": [
+  {
+   "game_id": 89506,
+   "game_name": "Cruelty Squad",
+   "release_world": 2021,
+   "comp_main": 23370,
+   "comp_plus": 46035,
+   "comp_100": 88163
+  }
+ ],
+ "Deathloop": [
+  {
+   "game_id": 68258,
+   "game_name": "Deathloop",
+   "release_world": 2021,
+   "comp_main": 58942,
+   "comp_plus": 88335,
+   "comp_100": 129849
+  }
+ ],
+ "Weird West": [
+  {
+   "game_id": 80053,
+   "game_name": "Weird West",
+   "release_world": 2022,
+   "comp_main": 61653,
+   "comp_plus": 88550,
+   "comp_100": 128658
+  }
+ ],
+ "Amnesia: The Bunker": [
+  {
+   "game_id": 117559,
+   "game_name": "Amnesia: The Bunker",
+   "release_world": 2023,
+   "comp_main": 19789,
+   "comp_plus": 26711,
+   "comp_100": 51203
+  }
+ ],
+ "Shadows of Doubt": [
+  {
+   "game_id": 80205,
+   "game_name": "Shadows of Doubt",
+   "release_world": 2023,
+   "comp_main": 80020,
+   "comp_plus": 141585,
+   "comp_100": 211590
+  }
+ ],
+ "Indiana Jones and the Great Circle": [
+  {
+   "game_id": 144234,
+   "game_name": "Indiana Jones and the Great Circle",
+   "release_world": 2024,
+   "comp_main": 58198,
+   "comp_plus": 92641,
+   "comp_100": 141525
+  },
+  {
+   "game_id": 163708,
+   "game_name": "Indiana Jones and the Great Circle: The Order of Giants",
+   "release_world": 2025,
+   "comp_main": 14347,
+   "comp_plus": 18770,
+   "comp_100": 23238
+  }
+ ],
+ "Skin Deep": [
+  {
+   "game_id": 91393,
+   "game_name": "Skin Deep",
+   "release_world": 2025,
+   "comp_main": 33116,
+   "comp_plus": 40214,
+   "comp_100": 46489
+  }
+ ],
+ "Deus Ex: Mankind Divided": [
+  {
+   "game_id": 25434,
+   "game_name": "Deus Ex: Mankind Divided",
+   "release_world": 2016,
+   "comp_main": 57857,
+   "comp_plus": 111703,
+   "comp_100": 190265
+  },
+  {
+   "game_id": 40367,
+   "game_name": "Deus Ex: Mankind Divided - A Criminal Past",
+   "release_world": 2017,
+   "comp_main": 13115,
+   "comp_plus": 19239,
+   "comp_100": 25181
+  },
+  {
+   "game_id": 42969,
+   "game_name": "Deus Ex: Mankind Divided - Desperate Measures",
+   "release_world": 2016,
+   "comp_main": 3446,
+   "comp_plus": 4775,
+   "comp_100": 6923
+  },
+  {
+   "game_id": 40148,
+   "game_name": "Deus Ex: Mankind Divided - System Rift",
+   "release_world": 2016,
+   "comp_main": 9133,
+   "comp_plus": 12844,
+   "comp_100": 17590
+  },
+  {
+   "game_id": 51750,
+   "game_name": "Deus Ex: Mankind Divided - VR Experience",
+   "release_world": 2017,
+   "comp_main": 600,
+   "comp_plus": 0,
+   "comp_100": 0
+  }
+ ],
+ "Void Bastards": [
+  {
+   "game_id": 67475,
+   "game_name": "Void Bastards",
+   "release_world": 2019,
+   "comp_main": 30847,
+   "comp_plus": 50551,
+   "comp_100": 114202
+  }
+ ],
+ "Mosa Lina": [
+  {
+   "game_id": 139436,
+   "game_name": "Mosa Lina",
+   "release_world": 2023,
+   "comp_main": 6840,
+   "comp_plus": 6895,
+   "comp_100": 7297
+  }
+ ]
+}

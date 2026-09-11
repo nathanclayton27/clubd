@@ -1,0 +1,254 @@
+{
+  "slug": "immersive",
+  "title": "Immersive Sims",
+  "subtitle": "a house canon of the genre nobody can define",
+  "kind": "games",
+  "popularity": 45,
+  "random": true,
+  "year": "1992–2025",
+  "blurb": "23 games in release order, Ultima Underworld to Skin Deep — about 343 hours of story between them, and a stated rule for what counts as one.",
+  "unit": {
+    "one": "game",
+    "many": "games"
+  },
+  "verb": {
+    "base": "play",
+    "past": "played",
+    "ing": "playing"
+  },
+  "itemOrder": "number-first",
+  "accent": "#71189E",
+  "accentDark": "#D98CFF",
+  "tiers": false,
+  "notes": [
+    [
+      "The house's picks — veto freely.",
+      "23 games, chosen here, in release order because the form develops rather than ranks. The rule below decides what is eligible; a person decided what is on it. If one is not for you, skip it loudly; if one is missing, that is what the group chat is for."
+    ],
+    [
+      "Nobody agrees what an immersive sim is, so here is the rule.",
+      "A game ships only if Wikipedia's Category:Immersive sims holds it — 58 articles today — and at least one source says outright that it is one: the article's own infobox genre field, the article's prose, Wikipedia's “Immersive sim” article naming it, or PC Gamer's “History of the best immersive sims”. 16 of the 23 are named in the genre article itself and 6 are among PC Gamer's picks. Being compared to the genre does not count: “inspired by” and “similar to” are all that Indiana Jones and the Great Circle, Amnesia: The Bunker and the Hitman games manage, and Pathologic 2 names the genre nowhere but its category tag."
+    ],
+    [
+      "Two rows are here on one magazine's word.",
+      "Vampire: The Masquerade – Bloodlines and Dark Messiah of Might and Magic are in the category and no Wikipedia text anywhere calls either an immersive sim — PC Gamer's canon does, and that is the whole of their claim. Said out loud because it is the thinnest evidence on the list."
+    ],
+    [
+      "Alien: Isolation is not here, and that is the sources talking.",
+      "PC Gamer keeps a second list of “games outside the immersive sim genre” that borrow its traits, and files Alien: Isolation, Hitman: Blood Money and Far Cry 3 in it. Wikipedia's category holds Isolation and all three modern Hitman games anyway. Where a category and a sentence disagree, the sentence wins."
+    ],
+    [
+      "The big open-world RPGs are somewhere else.",
+      "The genre article credits The Elder Scrolls IV: Oblivion, S.T.A.L.K.E.R. and Fallout 3 with reviving the form, and PC Gamer's canon carries Oblivion and Call of Pripyat outright — but the category holds none of them, and Fallout and The Elder Scrolls have their own lists here. The line this one draws is a building you can solve, not a country you can wander. Ultima VI (1990), which the genre article calls the first game with the mentality, is out for the same reason: it is played from above and the category does not hold it."
+    ],
+    [
+      "No remakes, no mods, nothing unfinished.",
+      "A row has to be a finished game with an end, so System Shock's 2023 remake is out and the 1994 original is the row; The Dark Mod and BioShock: The Collection are a mod and a compilation; Dishonored: Death of the Outsider is an expansion of the row above it; and Gloomwood, Peripeteia, Psycho Patrol R and Core Decay are still in development. Shadows of Doubt is here because it left early access in September 2024."
+    ],
+    [
+      "Eligible, and cut anyway.",
+      "Five games pass the rule and the house passed on them: Deus Ex: Invisible War, Underworld Ascendant, Gone Home, Consortium and Neon Struct. That is a judgement rather than a finding, so argue it."
+    ],
+    [
+      "Hours are story only, and every row has one.",
+      "HowLongToBeat main-story figures — credits, not completion. About 343 hours across 23 games, an average of 15: nothing here is a weekend. The longest are Deus Ex and Vampire: The Masquerade – Bloodlines at roughly 23 hours each; the shortest is Mosa Lina at under two, and it is built to be replayed rather than finished."
+    ],
+    "Contents gated on Wikipedia's Category:Immersive sims and its “Immersive sim” article, with PC Gamer's “History of the best immersive sims” as the published canon; hours from HowLongToBeat main-story figures, verified by name and release year."
+  ],
+  "sections": [
+    {
+      "id": "lg",
+      "title": "The Looking Glass years",
+      "sub": "1992–2000 · 6 games · 101 hours story",
+      "intro": "One studio and the people who left it. In eight years the idea goes from a dungeon you can look up inside to a conspiracy thriller with a vent behind every wall.",
+      "items": [
+        {
+          "id": "ims-uu",
+          "t": "Ultima Underworld: The Stygian Abyss",
+          "n": "1992",
+          "w": 19.56,
+          "note": "Blue Sky Productions, later Looking Glass — the first role-playing game with first-person action in a 3D world you can look up and down in, a few months ahead of Wolfenstein 3D."
+        },
+        {
+          "id": "ims-ss1",
+          "t": "System Shock",
+          "n": "1994",
+          "w": 13.0,
+          "note": "The same idea moved onto a space station, with the story left in logs to find rather than scenes to watch. The 1994 original, not the remake."
+        },
+        {
+          "id": "ims-thief",
+          "t": "Thief: The Dark Project",
+          "n": "1998",
+          "w": 12.16,
+          "note": "The first PC game to make light and sound the mechanics rather than the decoration; the team called it a first-person sneaker."
+        },
+        {
+          "id": "ims-ss2",
+          "t": "System Shock 2",
+          "n": "1999",
+          "w": 13.32,
+          "note": "Ken Levine with Irrational and Looking Glass together — a shooter's shape over an RPG's build choices, and the row most of these lists put at the top."
+        },
+        {
+          "id": "ims-thief2",
+          "t": "Thief II: The Metal Age",
+          "n": "2000",
+          "w": 20.32,
+          "note": "Bigger levels and cleaner systems, made by a studio near bankruptcy: it shipped in March 2000 and Looking Glass closed in May."
+        },
+        {
+          "id": "ims-deusex",
+          "t": "Deus Ex",
+          "n": "2000",
+          "w": 22.93,
+          "note": "Warren Spector at Ion Storm. Every door has a code, a vent and a conversation that skips it, and the genre spent the next decade answering to that."
+        }
+      ],
+      "open": true
+    },
+    {
+      "id": "scatter",
+      "title": "The scattered years",
+      "sub": "2002–2006 · 4 games · 69 hours story",
+      "intro": "Looking Glass closed two months after Thief II, and the form turns up in other people's games instead — a dungeon crawler, a vampire RPG, a Might and Magic spin-off — mostly made by the same handful of people.",
+      "items": [
+        {
+          "id": "ims-arx",
+          "t": "Arx Fatalis",
+          "n": "2002",
+          "w": 19.41,
+          "note": "Arkane's first game, made because EA would not licence Ultima Underworld — a dungeon, and spells drawn with the mouse."
+        },
+        {
+          "id": "ims-thief3",
+          "t": "Thief: Deadly Shadows",
+          "n": "2004",
+          "w": 16.57,
+          "note": "Ion Storm take the series over and add a city to walk between the jobs."
+        },
+        {
+          "id": "ims-bloodlines",
+          "t": "Vampire: The Masquerade – Bloodlines",
+          "n": "2004",
+          "w": 22.56,
+          "note": "Troika's vampire RPG, first-person and systemic — and one of the two rows here that only a published list claims for the genre."
+        },
+        {
+          "id": "ims-darkmessiah",
+          "t": "Dark Messiah of Might and Magic",
+          "n": "2006",
+          "w": 10.26,
+          "note": "Arkane on Half-Life 2's engine, with physics as the whole of the combat. The other row PC Gamer carries and Wikipedia's prose does not."
+        }
+      ]
+    },
+    {
+      "id": "revival",
+      "title": "The big-money revival",
+      "sub": "2007–2017 · 6 games · 91 hours story",
+      "intro": "Publishers try it at scale: three Deus Ex games, two Dishonoreds, and BioShock and Prey at either end of the decade. BioShock sold three million copies and most of the rest disappointed somebody, which is why the next section looks the way it does.",
+      "items": [
+        {
+          "id": "ims-bioshock",
+          "t": "BioShock",
+          "n": "2007",
+          "w": 12.1,
+          "note": "Irrational's spiritual successor to System Shock 2, systems simplified and the place doing the talking — the genre in front of everybody."
+        },
+        {
+          "id": "ims-hr",
+          "t": "Deus Ex: Human Revolution",
+          "n": "2011",
+          "w": 21.49,
+          "note": "Eidos-Montréal's prequel and the series' first game in eight years; its boss fights were outsourced to another studio under time pressure."
+        },
+        {
+          "id": "ims-dishonored",
+          "t": "Dishonored",
+          "n": "2012",
+          "w": 12.16,
+          "note": "Arkane at full strength: a plague city, a teleport that goes up as well as across, and a game that counts how you got through it."
+        },
+        {
+          "id": "ims-mankind",
+          "t": "Deus Ex: Mankind Divided",
+          "n": "2016",
+          "w": 16.07,
+          "note": "Eidos-Montréal again, built around one dense Prague hub rather than a world tour."
+        },
+        {
+          "id": "ims-dishonored2",
+          "t": "Dishonored 2",
+          "n": "2016",
+          "w": 12.52,
+          "note": "Two playable characters with separate power sets, and the levels the series is remembered for."
+        },
+        {
+          "id": "ims-prey",
+          "t": "Prey",
+          "n": "2017",
+          "w": 16.39,
+          "note": "Arkane Austin's System Shock in everything but the name: a station, a toolkit, and enemies that hide as the furniture."
+        }
+      ]
+    },
+    {
+      "id": "indies",
+      "title": "Small teams, same idea",
+      "sub": "2019–2025 · 7 games · 82 hours story",
+      "intro": "The budgets left and the genre did not: six games from small studios, plus Arkane's most recent, which lands here by its date rather than by who made it.",
+      "items": [
+        {
+          "id": "ims-voidbastards",
+          "t": "Void Bastards",
+          "n": "2019",
+          "w": 8.57,
+          "note": "Blue Manchu's raid-based one — a derelict ship at a time, and a new survivor when the last one runs out."
+        },
+        {
+          "id": "ims-crueltysquad",
+          "t": "Cruelty Squad",
+          "n": "2021",
+          "w": 6.49,
+          "note": "Consumer Softproducts in Finland: a serious assassination sim wearing visuals Rock Paper Shotgun called sensorally aggressive."
+        },
+        {
+          "id": "ims-deathloop",
+          "t": "Deathloop",
+          "n": "2021",
+          "w": 16.37,
+          "note": "Arkane Lyon's time loop, where the progress is what you have learnt rather than what you are carrying."
+        },
+        {
+          "id": "ims-weirdwest",
+          "t": "Weird West",
+          "n": "2022",
+          "w": 17.13,
+          "note": "WolfEye Studios turn the whole thing top-down — the same simulation, seen from above instead of from behind the eyes."
+        },
+        {
+          "id": "ims-mosalina",
+          "t": "Mosa Lina",
+          "n": "2023",
+          "w": 1.9,
+          "note": "A game that calls itself a hostile interpretation of the form: three random tools a level, and no promise they fit."
+        },
+        {
+          "id": "ims-shadowsofdoubt",
+          "t": "Shadows of Doubt",
+          "n": "2023",
+          "w": 22.23,
+          "note": "A procedurally generated city with one murder in it at a time; out of early access in September 2024."
+        },
+        {
+          "id": "ims-skindeep",
+          "t": "Skin Deep",
+          "n": "2025",
+          "w": 9.2,
+          "note": "Blendo Games, and the newest here: a stowaway, a cargo ship and a great deal of improvising."
+        }
+      ]
+    }
+  ]
+}

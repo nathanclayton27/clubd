@@ -1,0 +1,507 @@
+{
+ "uu": {
+  "query": "Ultima Underworld: The Stygian Abyss",
+  "search": "Ultima Underworld: The Stygian Abyss",
+  "want_year": 1992,
+  "name": "Ultima Underworld: The Stygian Abyss",
+  "year": 1992,
+  "main_h": 19.56,
+  "why": "ok",
+  "candidates": [
+   [
+    "Ultima Underworld: The Stygian Abyss",
+    1992
+   ]
+  ]
+ },
+ "ss1": {
+  "query": "System Shock",
+  "search": "System Shock",
+  "want_year": 1994,
+  "name": "System Shock",
+  "year": 1994,
+  "main_h": 13.0,
+  "why": "ok",
+  "candidates": [
+   [
+    "System Shock",
+    1994
+   ],
+   [
+    "System Shock",
+    2023
+   ],
+   [
+    "System Shock 2",
+    1999
+   ],
+   [
+    "System Shock 3",
+    0
+   ]
+  ]
+ },
+ "thief": {
+  "query": "Thief: The Dark Project",
+  "search": "Thief: The Dark Project",
+  "want_year": 1998,
+  "name": "Thief: The Dark Project",
+  "year": 1998,
+  "main_h": 12.16,
+  "why": "ok",
+  "candidates": [
+   [
+    "Thief: The Dark Project",
+    1998
+   ],
+   [
+    "Thief: The Dark Project Remastered",
+    2026
+   ]
+  ]
+ },
+ "ss2": {
+  "query": "System Shock 2",
+  "search": "System Shock 2",
+  "want_year": 1999,
+  "name": "System Shock 2",
+  "year": 1999,
+  "main_h": 13.32,
+  "why": "ok",
+  "candidates": [
+   [
+    "System Shock 2",
+    1999
+   ]
+  ]
+ },
+ "thief2": {
+  "query": "Thief II: The Metal Age",
+  "search": "Thief II: The Metal Age",
+  "want_year": 2000,
+  "name": "Thief II: The Metal Age",
+  "year": 2000,
+  "main_h": 20.32,
+  "why": "ok",
+  "candidates": [
+   [
+    "Thief II: The Metal Age",
+    2000
+   ]
+  ]
+ },
+ "deusex": {
+  "query": "Deus Ex",
+  "search": "Deus Ex",
+  "want_year": 2000,
+  "name": "Deus Ex",
+  "year": 2000,
+  "main_h": 22.93,
+  "why": "ok",
+  "candidates": [
+   [
+    "Deus Ex",
+    2000
+   ],
+   [
+    "Deus Ex GO",
+    2016
+   ],
+   [
+    "Deus Ex Machina",
+    1984
+   ],
+   [
+    "Deus Ex Machina 2",
+    2015
+   ],
+   [
+    "Deus Ex Remastered",
+    0
+   ],
+   [
+    "Deus Ex: Breach",
+    2017
+   ],
+   [
+    "Deus Ex: Human Revolution",
+    2011
+   ],
+   [
+    "Deus Ex: Human Revolution - Director's Cut",
+    2013
+   ]
+  ]
+ },
+ "arx": {
+  "query": "Arx Fatalis",
+  "search": "Arx Fatalis",
+  "want_year": 2002,
+  "name": "Arx Fatalis",
+  "year": 2002,
+  "main_h": 19.41,
+  "why": "ok",
+  "candidates": [
+   [
+    "Arx Fatalis",
+    2002
+   ]
+  ]
+ },
+ "thief3": {
+  "query": "Thief: Deadly Shadows",
+  "search": "Thief: Deadly Shadows",
+  "want_year": 2004,
+  "name": "Thief: Deadly Shadows",
+  "year": 2004,
+  "main_h": 16.57,
+  "why": "ok",
+  "candidates": [
+   [
+    "Thief: Deadly Shadows",
+    2004
+   ]
+  ]
+ },
+ "bloodlines": {
+  "query": "Vampire: The Masquerade - Bloodlines",
+  "search": "Vampire: The Masquerade - Bloodlines",
+  "want_year": 2004,
+  "name": "Vampire: The Masquerade - Bloodlines",
+  "year": 2004,
+  "main_h": 22.56,
+  "why": "ok",
+  "candidates": [
+   [
+    "Vampire: The Masquerade - Bloodlines",
+    2004
+   ],
+   [
+    "Vampire: The Masquerade - Bloodlines 2",
+    2025
+   ],
+   [
+    "Vampire: The Masquerade - Bloodlines 2: Loose Cannon",
+    2026
+   ],
+   [
+    "Vampire: The Masquerade - Bloodlines 2: The Flower & the Flame",
+    2026
+   ]
+  ]
+ },
+ "darkmessiah": {
+  "query": "Dark Messiah of Might and Magic",
+  "search": "Dark Messiah Might Magic",
+  "want_year": 2006,
+  "name": "Dark Messiah of Might and Magic",
+  "year": 2006,
+  "main_h": 10.26,
+  "why": "ok",
+  "candidates": [
+   [
+    "Dark Messiah of Might and Magic",
+    2006
+   ]
+  ]
+ },
+ "bioshock": {
+  "query": "BioShock",
+  "search": "BioShock",
+  "want_year": 2007,
+  "name": "BioShock",
+  "year": 2007,
+  "main_h": 12.1,
+  "why": "ok",
+  "candidates": [
+   [
+    "BioShock",
+    2007
+   ],
+   [
+    "BioShock 2",
+    2010
+   ],
+   [
+    "BioShock 2: Minerva's Den",
+    2010
+   ],
+   [
+    "BioShock 2: Protector Trials",
+    2010
+   ],
+   [
+    "BioShock Infinite",
+    2013
+   ],
+   [
+    "BioShock Infinite: Burial at Sea - Episode 1",
+    2013
+   ],
+   [
+    "BioShock Infinite: Burial at Sea - Episode 2",
+    2014
+   ],
+   [
+    "BioShock Infinite: Clash in the Cloud",
+    2013
+   ]
+  ]
+ },
+ "hr": {
+  "query": "Deus Ex: Human Revolution",
+  "search": "Deus Ex: Human Revolution",
+  "want_year": 2011,
+  "name": "Deus Ex: Human Revolution",
+  "year": 2011,
+  "main_h": 21.49,
+  "why": "ok",
+  "candidates": [
+   [
+    "Deus Ex: Human Revolution",
+    2011
+   ],
+   [
+    "Deus Ex: Human Revolution - Director's Cut",
+    2013
+   ],
+   [
+    "Deus Ex: Human Revolution - The Missing Link",
+    2011
+   ]
+  ]
+ },
+ "dishonored": {
+  "query": "Dishonored",
+  "search": "Dishonored",
+  "want_year": 2012,
+  "name": "Dishonored",
+  "year": 2012,
+  "main_h": 12.16,
+  "why": "ok",
+  "candidates": [
+   [
+    "Dishonored",
+    2012
+   ],
+   [
+    "Dishonored 2",
+    2016
+   ],
+   [
+    "Dishonored: Death of the Outsider",
+    2017
+   ],
+   [
+    "Dishonored: Definitive Edition",
+    2013
+   ],
+   [
+    "Dishonored: Dunwall City Trials",
+    2012
+   ],
+   [
+    "Dishonored: The Brigmore Witches",
+    2013
+   ],
+   [
+    "Dishonored: The Knife of Dunwall",
+    2013
+   ]
+  ]
+ },
+ "mankind": {
+  "query": "Deus Ex: Mankind Divided",
+  "search": "Deus Ex: Mankind Divided",
+  "want_year": 2016,
+  "name": "Deus Ex: Mankind Divided",
+  "year": 2016,
+  "main_h": 16.07,
+  "why": "ok",
+  "candidates": [
+   [
+    "Deus Ex: Mankind Divided",
+    2016
+   ],
+   [
+    "Deus Ex: Mankind Divided - A Criminal Past",
+    2017
+   ],
+   [
+    "Deus Ex: Mankind Divided - Desperate Measures",
+    2016
+   ],
+   [
+    "Deus Ex: Mankind Divided - System Rift",
+    2016
+   ],
+   [
+    "Deus Ex: Mankind Divided - VR Experience",
+    2017
+   ]
+  ]
+ },
+ "dishonored2": {
+  "query": "Dishonored 2",
+  "search": "Dishonored 2",
+  "want_year": 2016,
+  "name": "Dishonored 2",
+  "year": 2016,
+  "main_h": 12.52,
+  "why": "ok",
+  "candidates": [
+   [
+    "Dishonored 2",
+    2016
+   ]
+  ]
+ },
+ "prey": {
+  "query": "Prey",
+  "search": "Prey",
+  "want_year": 2017,
+  "name": "Prey",
+  "year": 2017,
+  "main_h": 16.39,
+  "why": "ok",
+  "candidates": [
+   [
+    "Beasts of Prey",
+    2014
+   ],
+   [
+    "Birds of Prey",
+    1991
+   ],
+   [
+    "Iron Aces 2: Birds of Prey",
+    2002
+   ],
+   [
+    "Man of Prey",
+    2009
+   ],
+   [
+    "Prey",
+    2006
+   ],
+   [
+    "Prey",
+    2017
+   ],
+   [
+    "Prey the Stars",
+    2008
+   ],
+   [
+    "Prey with Gun",
+    2017
+   ]
+  ]
+ },
+ "voidbastards": {
+  "query": "Void Bastards",
+  "search": "Void Bastards",
+  "want_year": 2019,
+  "name": "Void Bastards",
+  "year": 2019,
+  "main_h": 8.57,
+  "why": "ok",
+  "candidates": [
+   [
+    "Void Bastards",
+    2019
+   ]
+  ]
+ },
+ "crueltysquad": {
+  "query": "Cruelty Squad",
+  "search": "Cruelty Squad",
+  "want_year": 2021,
+  "name": "Cruelty Squad",
+  "year": 2021,
+  "main_h": 6.49,
+  "why": "ok",
+  "candidates": [
+   [
+    "Cruelty Squad",
+    2021
+   ]
+  ]
+ },
+ "deathloop": {
+  "query": "Deathloop",
+  "search": "Deathloop",
+  "want_year": 2021,
+  "name": "Deathloop",
+  "year": 2021,
+  "main_h": 16.37,
+  "why": "ok",
+  "candidates": [
+   [
+    "Deathloop",
+    2021
+   ]
+  ]
+ },
+ "weirdwest": {
+  "query": "Weird West",
+  "search": "Weird West",
+  "want_year": 2022,
+  "name": "Weird West",
+  "year": 2022,
+  "main_h": 17.13,
+  "why": "ok",
+  "candidates": [
+   [
+    "Weird West",
+    2022
+   ]
+  ]
+ },
+ "mosalina": {
+  "query": "Mosa Lina",
+  "search": "Mosa Lina",
+  "want_year": 2023,
+  "name": "Mosa Lina",
+  "year": 2023,
+  "main_h": 1.9,
+  "why": "ok",
+  "candidates": [
+   [
+    "Mosa Lina",
+    2023
+   ]
+  ]
+ },
+ "shadowsofdoubt": {
+  "query": "Shadows of Doubt",
+  "search": "Shadows of Doubt",
+  "want_year": 2023,
+  "name": "Shadows of Doubt",
+  "year": 2023,
+  "main_h": 22.23,
+  "why": "ok",
+  "candidates": [
+   [
+    "Shadows of Doubt",
+    2023
+   ]
+  ]
+ },
+ "skindeep": {
+  "query": "Skin Deep",
+  "search": "Skin Deep",
+  "want_year": 2025,
+  "name": "Skin Deep",
+  "year": 2025,
+  "main_h": 9.2,
+  "why": "ok",
+  "candidates": [
+   [
+    "Skin Deep",
+    2025
+   ]
+  ]
+ }
+}

@@ -1,0 +1,57 @@
+{{Short description|Upcoming video game}}
+{{Use dmy dates|date=May 2025}}
+{{Infobox video game
+| developer = Consumer Softproducts
+| publisher = Consumer Softproducts
+| released = TBA
+| genre = [[First-person shooter]], [[immersive sim]]
+| modes = [[Single-player]]
+| platforms = [[Windows]]
+| image = Psycho Patrol R steam header.jpg
+}}
+'''''Psycho Patrol R''''' is an upcoming <!-- The game is in early access. DO NOT replace "upcoming". --> [[first-person shooter game]] developed and published by Ville Kallio of Consumer Softproducts. It was released in [[early access]] on [[Steam (service)|Steam]] on March 23, 2025.
+
+The game takes place in a satirical, [[cyberpunk]]-themed [[Alternate history|alternate version]] of early 21st century Europe where the ideas of [[Wilhelm Reich]] and other elements of [[Western esotericism]] have been scientifically validated. As a member of the titular Psycho Patrol, an elite police task force armed with [[mech]]s, the player is responsible for investigating and eliminating "psychohazards" that threaten both the mental well-being of the populace and the security of the state.
+
+== Gameplay ==
+''Psycho Patrol R'' is a [[First-person shooter game|first-person shooter]] where the player takes control of a police officer who pilots a customizable [[mech]] called a V-Stalker or VASU (Vertical Assault Stalker Unit). The player is given a series of missions in which they must eliminate "psychohazards". Most enemies can be killed in one hit, but in turn, most enemies can also kill the player in one hit, leading to most battles lasting only a few seconds. The player's mech provides substantial protection against conventional firearms and can trivialize combat against on-foot enemies, but it must still take care to avoid hits from the more powerful weapons wielded by enemy mechs; the player is also occasionally required to disembark from their mech to enter certain buildings.<ref>{{Cite news |last=Caldwell |first=Brendan |date=4 April 2025 |title=Psycho Patrol R early access review |url=https://www.rockpapershotgun.com/psycho-patrol-r-early-access-review |access-date=21 May 2025 |work=[[Rock, Paper, Shotgun]]}}</ref><ref>{{Cite news |author1=Ted Litchfield |date=31 March 2025 |title=Psycho Patrol R, the FPS-Mech sim from the creator of Cruelty Squad, is one of the most challenging, complicated games I've ever played⁠—and worth every second it took to figure out its deal |url=https://www.pcgamer.com/games/fps/psycho-patrol-r-overview-guide/ |access-date=21 May 2025 |work=PC Gamer |language=en |archive-date=9 May 2025 |archive-url=https://web.archive.org/web/20250509185531/https://www.pcgamer.com/games/fps/psycho-patrol-r-overview-guide/ |url-status=live }}</ref><ref>{{Cite news |author1=Jody Macgregor |date=8 October 2024 |title=The FPS/mecha hybrid from the creator of Cruelty Squad, which was an immersive sim designed to make you feel sick, will be out next year |url=https://www.pcgamer.com/games/fps/the-fps-mecha-hybrid-from-the-creator-of-cruelty-squad-which-was-an-immersive-sim-designed-to-make-you-feel-sick-will-be-out-next-year/ |access-date=21 May 2025 |work=PC Gamer |language=en}}</ref><ref>{{Cite news |author1=Rick Lane |date=5 February 2025 |title=The next game from Cruelty Squad's creator, a 'policing and punishment simulator', has dropped a new trailer showing off its gruesome mech combat |url=https://www.pcgamer.com/games/fps/the-next-game-from-cruelty-squads-creator-a-policing-and-punishment-simulator-has-dropped-a-new-trailer-showing-off-its-gruesome-mech-combat/ |access-date=21 May 2025 |work=PC Gamer |language=en |archive-date=6 April 2025 |archive-url=https://web.archive.org/web/20250406072317/https://www.pcgamer.com/games/fps/the-next-game-from-cruelty-squads-creator-a-policing-and-punishment-simulator-has-dropped-a-new-trailer-showing-off-its-gruesome-mech-combat/ |url-status=live }}</ref>
+
+Collateral damage from combat usually results in [[Civilian casualty|civilian deaths]]. Dead enemies and civilians drop money for the player to collect. Money allows the player to purchase mech upgrades and repairs, weapons, and ammunition, and also participate in the in-game stock market, but it is dropped on death and will disappear if not reclaimed on the next playthrough. It is possible for the player to fall into debt, rendering them unable to make new purchases until it is paid off.<ref name=":1">{{Cite web |last=Egan |first=Toussaint |date=1 April 2025 |title=Cruelty Squad creator's latest is a nightmare cop sim where social media is a drug and you pilot a mech with chicken legs |url=https://www.polygon.com/impressions/549723/psycho-patrol-r-cyberpunk-immersive-sim-mech-shooter |access-date=21 May 2025 |website=Polygon |language=en-US}}</ref><ref>{{Cite web |last=Galekovic |first=Filip |date=24 March 2025 |title=The Cruelty Squad Sequel is weirder than we could have imagined |url=https://www.destructoid.com/the-cruelty-squad-sequel-is-weirder-than-we-could-have-imagined/ |access-date=21 May 2025 |website=Destructoid |language=en-US |archive-date=23 April 2025 |archive-url=https://web.archive.org/web/20250423014733/https://www.destructoid.com/the-cruelty-squad-sequel-is-weirder-than-we-could-have-imagined/ |url-status=live }}</ref>
+
+== Synopsis ==
+=== Setting ===
+''Psycho Patrol R'' is set in an alternate 2000 AD. The countries of [[Europe]], except for the [[United Kingdom]], merged into the unitary federal state of Pan-Europa, a superpower now rife with economic decline and social decay. [[Wilhelm Reich]]'s theory of [[orgone]] energy has been proven scientifically and harnessed as a power source for advanced technologies such as mechs, and Reich's anti-[[Fascism|fascist]] and anti-[[Nazism|Hitlerite]] philosophies have shaped modern statecraft and criminology. The European Federal Police (EFP) handles all law enforcement and counter-terrorism operations across Pan-Europa, but has become bloated, callous, and corrupt. The newest branch of the EFP is the Psychohazard Division, or Psycho Patrol, led by Chief Lorenzo Visconti. The Psycho Patrol officially advocates non-violent solutions to crime, primarily the analysis and treatment of the criminal psyche through the removal of "psychohazards", viral psychic phenomena that precipitate criminal and subversive thoughts, but in practice it has nearly unlimited latitude to apply lethal force to resolve any perceived violation of the law or threat to the state, ranging from violent acts of terrorism to mere complaints about the inefficiency of government services.
+
+=== Plot ===
+The story of ''Psycho Patrol R'' is divided into chapters, each of which consists of multiple missions. At present, only Chapter 1 is available through early access, and future chapters remain under development.
+
+==== Chapter 1 ====
+The player is The Recruit, the newest member of the European Federal Police's Psychohazard Division, or Psycho Patrol, the cutting edge of 21st century policing. The Recruit was motivated to enlist in the Psycho Patrol by his obsessive romantic attraction to Chief Lorenzo Visconti, and seeks only to please him.
+
+The first high-priority mission that Visconti gives The Recruit is to investigate the source of an alleged psychohazard causing a mass hysteria over the chemical [[Sodium dodecyl sulfate|sodium lauryl sulfate (SLS)]], which is used in cosmetics and hygiene products. The Recruit's investigation eventually leads him to a research facility operated by CERH, or the European Organization of [[Hylozoism]] Research. CERH head researcher Jakob Grendel explains that his organization built a machine capable of influencing Earth's [[egregore]] for experimentation, and while the SLS panic is in fact a side effect of CERH's work, such psychic phenomena are relatively harmless and should dissipate on their own with time. Grendel further elaborates that CERH's activities are verifiably legitimate and all of its research findings are available online to the public, and he disparages Visconti's theory of psychohazards as blatantly fraudulent pseudoscience.
+
+Nonetheless, out of a desire to prove Visconti correct, The Recruit arrests Grendel and falsely charges him and CERH with orchestrating a criminal conspiracy to drive the public into mass-psychosis. The government accepts The Recruit's account of events without question. Visconti's theory is hailed as a groundbreaking advance in criminology, all of CERH's assets are absorbed into the Psycho Patrol, and The Recruit receives a promotion and pay raise.
+
+== Development ==
+''Psycho Patrol R'' is published by Ville Kallio, the Finnish [[Indie game|solo-developer]] of Consumer Softproducts, who also developed the 2021 video game ''[[Cruelty Squad]]''. ''Psycho Patrol R'' released in [[early access]] on March 23, 2025.<ref name=":1" /><ref>{{Cite web |last=Handley |first=Zoey |date=8 October 2024 |title=Come hell or high water, Cruelty Squad follow-up Psycho Patrol R will hit Early Access March 2025 |url=https://www.destructoid.com/come-hell-or-high-water-cruelty-squad-follow-up-psycho-patrol-r-will-hit-early-access-march-2025/ |access-date=21 May 2025 |website=Destructoid |language=en-US |archive-date=26 February 2025 |archive-url=https://web.archive.org/web/20250226120304/https://www.destructoid.com/come-hell-or-high-water-cruelty-squad-follow-up-psycho-patrol-r-will-hit-early-access-march-2025/ |url-status=live }}</ref><ref>{{Cite web |last=Handley |first=Zoey |date=2 July 2024 |title=Cruelty Squad dev shows off Psycho Patrol R gameplay compilation, excruciating jank-pop stylings |url=https://www.destructoid.com/cruelty-squad-dev-shows-off-psycho-patrol-r-gameplay-compilation-excruciating-jank-pop-stylings/ |access-date=21 May 2025 |website=Destructoid |language=en-US |archive-date=5 April 2025 |archive-url=https://web.archive.org/web/20250405235801/https://www.destructoid.com/cruelty-squad-dev-shows-off-psycho-patrol-r-gameplay-compilation-excruciating-jank-pop-stylings/ |url-status=live }}</ref>
+
+== Reception ==
+''[[Paste (magazine)|Paste]]'' called ''Psycho Patrol R''{{'s}} gameplay frustrating, but its graphics and aesthetics unique, driven by "the singular whims of creatives rather than by a committee of suits".<ref name=":0">{{Cite web |last=Gonzalez |first=Elijah |date=2 April 2025 |title=Psycho Patrol R Is A Delightfully Nasty Mech Sim From The Cruelty Squad Team |url=https://www.pastemagazine.com/games/psycho-patrol-r/psycho-patrol-r-explained-early-access-impressions |access-date=21 May 2025 |website=[[Paste Magazine]]}}</ref>
+
+== References ==
+{{reflist}}
+
+[[Category:Upcoming video games]]
+[[Category:Cyberpunk video games]]
+[[Category:Early access video games]]
+[[Category:First-person shooters]]
+[[Category:Indie games]]
+[[Category:Immersive sims]]
+[[Category:Retro-style video games]]
+[[Category:Video games about mecha]]
+[[Category:Video games about police officers]]
+[[Category:Video games developed in Finland]]
+[[Category:Single-player video games]]
+[[Category:Consumer Softproducts games]]
+[[Category:Alternate history video games]]
+[[Category:Video games set in Europe]]

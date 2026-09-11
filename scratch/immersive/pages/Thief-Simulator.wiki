@@ -1,0 +1,53 @@
+{{Use mdy dates|date=October 2023}}
+{{short description|2018 video game}}
+{{Infobox video game
+| title = Thief Simulator
+| image = Thief Simulator cover.jpg
+| developer = Noble Muffins
+| publisher = PlayWay S.A.
+| platforms = {{Unbulleted list|[[PlayStation 4]]|[[Microsoft Windows]]|[[Nintendo Switch]]|[[Xbox One]]}}
+| released = '''Microsoft Windows'''<br>November 9, 2018<br>'''Nintendo Switch'''<br>May 16, 2019<br> '''PlayStation 4'''<br>August 12, 2020<br>
+| genre = [[Stealth game|Stealth]], [[Simulation video game|simulation]]
+| modes = [[Single-player video game|Single-player]]
+| engine = [[Unity (game engine)|Unity]]
+|caption = 
+|alt = 
+}}'''''Thief Simulator''''' is an [[open-world]] [[Stealth game|stealth]] video game developed by Polish developer Noble Muffins and released for [[Microsoft Windows]] on November 9, 2018, for [[Nintendo Switch]] on May 16, 2019, for [[PlayStation 4]] on August 12, 2020, and for the [[Quest 2]] on July 8, 2022.<ref>{{cite web |url=https://www.nintendolife.com/news/2019/05/nintendo_download_16th_may_north_america |title=Nintendo Download: 16th May (North America) |website=[[Nintendo Life]] |first=Darren |last=Calvert |date=May 16, 2019 |accessdate=April 25, 2020 |archive-date=May 1, 2022 |archive-url=https://web.archive.org/web/20220501215702/https://www.nintendolife.com/news/2019/05/nintendo_download_16th_may_north_america |url-status=live }}</ref><ref>{{cite web |url=https://www.nintendolife.com/news/2019/05/nintendo_download_16th_may_europe |title=Nintendo Download: 16th May (Europe) |website=[[Nintendo Life]] |first=Anthony |last=Dickens |date=May 16, 2019 |accessdate=April 25, 2020 |archive-date=April 25, 2022 |archive-url=https://web.archive.org/web/20220425124344/https://www.nintendolife.com/news/2019/05/nintendo_download_16th_may_europe |url-status=live }}</ref><ref>{{Cite web |last=Feltham |first=Jamie |date=June 27, 2022 |title=Thief Simulator VR Headed To Quest Soon |url=https://uploadvr.com/thief-simulator-vr-headed-to-quest-soon/ |access-date=August 8, 2022 |language=en-US |archive-date=August 8, 2022 |archive-url=https://web.archive.org/web/20220808090419/https://uploadvr.com/thief-simulator-vr-headed-to-quest-soon/ |url-status=live }}</ref>  A sequel to the game, ''Thief Simulator 2'', was released in October 4, 2023.<ref>{{cite web |title=Thief Simulator 2 |url=https://www.gamepressure.com/games/thief-simulator-2/z25f3d |website=Game Pressure |access-date=27 December 2025}}</ref>
+
+==Synopsis==
+The player assumes the role of an unnamed thief, who works for the Lombardi [[crime family]] after they paid his bail, guided by Vinny to commit crimes. At the end of the game's original story, Vinny attempts to kill the thief with a mail bomb, but fails. In a later update, the thief traverses the industrial district's buildings to steal evidence implicating the Lombardis and explosive constituents. He then stashes the evidence in the garage and the explosive charge in the office before setting it off. Vinny is presumably killed as the mansion explodes.
+
+==Reception==
+{{Video game reviews
+| rev1 = ''[[Game Reactor]]''
+| rev1Score = 6/10<ref>{{cite web|url=https://www.gamereactor.eu/reviews/719453/Thief+Simulator/|publisher=[[Game Reactor]]|title=Thief Simulator|date=December 11, 2018|access-date=December 29, 2018|archive-date=December 30, 2018|archive-url=https://web.archive.org/web/20181230030310/https://www.gamereactor.eu/reviews/719453/Thief+Simulator/|url-status=live}}</ref>
+| rev2 = ''[[Screen Rant]]''
+| rev2Score = 3/5<ref>{{cite web|url=https://screenrant.com/thief-simulator-review/|publisher=[[Screen Rant]]|title=Thief Simulator Review: Really Good At One Specific Thing|date=November 7, 2018|access-date=December 29, 2018|archive-date=April 27, 2022|archive-url=https://web.archive.org/web/20220427102509/https://screenrant.com/thief-simulator-review/|url-status=live}}</ref>
+| rev3 = ''Common Sense Gamer''
+| rev3Score = 8.2/10<ref>{{cite web|url=https://commonsensegamer.com/thief-simulator-review/|publisher=Common Sense Gamer|title=Thief Simulator Review|date=November 13, 2018|access-date=December 29, 2018|archive-date=December 30, 2018|archive-url=https://web.archive.org/web/20181230030336/https://commonsensegamer.com/thief-simulator-review/|url-status=live}}</ref>
+}}
+''Thief Simulator'' received generally favorable reviews and made it to the top of [[Steam (service)|Steam]]'s list of best-selling games on its opening weekend.<ref>{{cite web|url=https://www.bleedingcool.com/2018/11/11/thief-simulator-tops-steams-bestseller-list-this-weekend/|publisher=[[Bleeding Cool]]|title=Thief Simulator Tops Steam's Bestseller List This Weekend|date=November 11, 2018|access-date=December 29, 2018|archive-date=December 30, 2018|archive-url=https://web.archive.org/web/20181230030417/https://www.bleedingcool.com/2018/11/11/thief-simulator-tops-steams-bestseller-list-this-weekend/|url-status=live}}</ref>
+{{clear}}
+
+==References==
+{{reflist}}
+
+==External links==
+* {{Metacritic video game|title=Thief Simulator}}
+* [https://store.steampowered.com/app/704850/Thief_Simulator/ ''Thief Simulator''] at [[Steam (service)|Steam]]
+
+[[Category:2018 video games]]
+[[Category:Video games developed in Poland]]
+[[Category:Stealth video games]]
+[[Category:Windows games]]
+[[Category:Nintendo Switch games]]
+[[Category:Xbox One games]]
+[[Category:PlayStation 4 games]]
+[[Category:Video games about crime]]
+[[Category:Video games set in country houses]]
+[[Category:Open-world video games]]
+[[Category:Organized crime video games]]
+[[Category:Simulation video games]]
+[[Category:Single-player video games]]
+[[Category:PlayWay games]]
+[[Category:Immersive sims]]

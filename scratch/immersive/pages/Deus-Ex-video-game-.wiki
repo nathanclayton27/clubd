@@ -1,0 +1,532 @@
+{{good article}}
+{{Short description|2000 video game}}
+{{About|the 2000 video game|the 1984 video game|Deus Ex Machina (video game){{!}}''Deus Ex Machina'' (video game)}}
+{{Use mdy dates|date=September 2025}}
+{{Infobox video game
+| title = Deus Ex
+| image = Dxcover.jpg
+| alt = At the center of the cover, smooth slender mechanical objects shaped as letters spell the game's title. A man wearing sunglasses and a black trench coat looks upward at a light shining down on him. A cityscape of skyscrapers with black helicopters shining searchlights downward are in the background.
+| caption = Cover art featuring protagonist [[JC Denton]]
+| developer = [[Ion Storm]]{{efn|[[Classic Mac OS|Mac OS]] port developed by Westlake Interactive. ''Remastered'' co-developed by [[Eidos-Montréal]] and [[Aspyr]].}}
+| publisher = [[Eidos Interactive]]{{efn|[[Classic Mac OS|Mac OS]] version and ''Remastered'' published by [[Aspyr]].}}
+| director = [[Warren Spector]]
+| producer = Warren Spector
+| designer = [[Harvey Smith (game designer)|Harvey Smith]]
+| programmer = {{Unbulleted list|Chris Norden|Albert Yarusso|Scott Martin}}
+| artist = {{Unbulleted list|Jay Lee|Nghia Lam|Mike Washburn}}
+| writer = {{Unbulleted list|Sheldon Pacotti|Chris Todd|[[Austin Grossman]]}}
+| composer = {{Unbulleted list|[[Alexander Brandon]]|[[Dan Gardopée]]|[[Michiel van den Bos]]|[[Reeves Gabrels]]}}
+| series = ''[[Deus Ex]]''
+| engine = [[Unreal Engine 1]]
+| platforms = {{Unbulleted list|[[Windows]]|[[Classic Mac OS|Mac OS]]|[[PlayStation 2]]|[[Nintendo Switch]]|[[PlayStation 5]]|[[Xbox Series X and Series S|Xbox Series X/S]]}}
+| released = {{Collapsible list|title={{nobold|June 23, 2000}}|'''Microsoft Windows'''{{Video game release|NA|June 23, 2000|AU|July 27, 2000|UK|August 4, 2000}}'''Mac OS'''{{Video game release|NA|July 13, 2000}}'''PlayStation 2'''{{Video game release|NA|March 26, 2002|EU|June 7, 2002|AU|December 13, 2002}}'''''Remastered'''''<br/>'''Microsoft Windows''', '''Nintendo Switch''', '''PlayStation 5''' & '''Xbox Series X/S'''{{Video game release|WW|TBA}}}}
+| genre = [[Action role-playing]], [[first-person shooter]], [[Stealth game|stealth]]
+| modes = [[Single-player]], [[multiplayer]]
+}}
+'''''Deus Ex''''' is a 2000 [[action role-playing game]] developed by [[Ion Storm]] and published by [[Eidos Interactive]]. Originally released for [[Windows|Microsoft Windows]], it was released for [[Classic Mac OS|Mac OS]] the same year, and for [[PlayStation 2]] in 2002. A remaster for modern platforms was originally scheduled for release in February 2026, but was later delayed to an unspecified date. The gameplay—combining [[first-person shooter]], [[Stealth game|stealth]], and [[Role-playing video game|role-playing]] elements—features exploration and combat in environments connected to multiple city-based levels, with quests that can be completed in a number of ways and character customization based around cybernetic enhancements. Conversations between characters feature a variety of responses, with choices at key story points affecting how some events play out. A post-release patch incorporated deathmatch-style [[multiplayer]].
+
+''Deus Ex'' is set in 2052, in a dystopian [[cyberpunk]] future beset by terrorist acts, economic inequality, and a plague dubbed the Gray Death. The player character, the cybernetically enhanced [[JC Denton]], is an anti-terrorism agent who is deployed when a terrorist group interrupts supplies of a rare Gray Death vaccine. Investigating the incident, Denton ends up involved in a struggle between multiple factions for control of the world. The story is inspired by popular [[conspiracy theory]] motifs, incorporating groups including the [[Illuminati in popular culture|Illuminati]] and [[Majestic 12]].
+
+The game was created by [[Warren Spector]], who acted as director and producer, and put together a design concept during the early 1990s under the title "Troubleshooter". After being approached by Ion Storm about creating a project with complete creative freedom, Spector began pre-production in 1997. Staff included lead designer [[Harvey Smith (game designer)|Harvey Smith]], lead writer Sheldon Pacotti, and lead composer [[Alexander Brandon]]. The game was built using the [[Unreal Engine 1|Unreal Engine]], which led to issues with coding and [[non-playable character]] behavior. Due to technical and time limitations, some planned features and areas had to be downscaled or cut entirely.
+
+Upon release, ''Deus Ex'' was a commercial success, selling one million copies worldwide. It saw critical acclaim from game journalists for its design and freedom of player choice. Its graphics saw more mixed reactions, and the voice acting was faulted. The PlayStation 2 port saw mixed reactions, but many praised its adaptation of the game's mechanics to console. It won multiple gaming awards, has been ranked among [[List of video games considered the best|the best video games of all time]], and fostered an active fan community. It has also been cited as a prominent example of the "[[immersive sim]]" genre. ''Deus Ex'' was expanded into a [[Deus Ex|series of the same name]], with a sequel, ''[[Deus Ex: Invisible War]]'', releasing in 2003, and two prequels, ''[[Deus Ex: Human Revolution]]'' and ''[[Deus Ex: Mankind Divided]]'', releasing in 2011 and 2016, respectively''.''
+
+== Gameplay ==
+[[File:How to pass obstacles in Deus Ex.jpg|thumb|left|Players are given multiple ways to traverse obstacles, from lockpicking to armed combat.]]
+''Deus Ex'' is an [[action role-playing game]] with incorporated [[first-person shooter]] and [[Stealth game|stealth]] mechanics. Players take on the role of [[JC Denton]], a man equipped with nanotechnology-based cybernetic enhancements called augmentations.<ref name="IGNpreview"/><ref name="PCZpreview"/> At the game's opening the player chooses a combat [[Difficulty level|difficulty]]−"Easy", "Medium", "Hard", or "Realistic"−and customize Denton's real name, visual appearance, and starting skills.<ref name="Manual"/>{{Rp|2–4}} The player moves around the environment, being able to climb ladders and jump onto crates, swim through bodies of water, and crouch to negotiate narrow spaces. The environment also has interactable objects such as computers and keypads, and certain objects in the game can be carried or thrown, from small items like boxes to human bodies.<ref name="IGNpreview"/><ref name="Manual"/>{{Rp|9–11}}<ref name="gamespot"/>
+
+Each hub area of the game has a variety of missions given to the player by [[non-playable character]]s (NPCs), which the player can choose to accept or ignore; these missions include [[Quest (video games)|quests]] linked to the main story and side quests unique to each hub area. These objectives can be completed in a variety of ways; these include using stealth to infiltrate an area, opening access points using hacking, launching an armed assault, or a combination of different tactics.<ref name="IGNpreview"/><ref name="PCZpreview"/> When talking with NPCs, the player has access to multiple dialogue options, with the option chosen influencing the course of the conversation. Short messages are also given which direct the player towards different objectives.<ref name="Manual"/>{{Rp|13}}
+
+There are a variety of melee and ranged weapons in the game, both lethal and non-lethal; ranged weapons can be upgraded using kits found during gameplay. Items, weapons, ammunition, and equipment can be purchased with credits, the in-game currency either gathered in the environment or earned through quests, or found during exploration. [[Item (game terminology)|Items]] that can be picked up include weapon ammunition, [[Health (game terminology)|health]] restoratives, and tools for bypassing barriers; lockpicks for mechanical locks, and multitools for electronic devices. The player's health is divided between multiple body parts, each requiring healing with items or at healing stations.<ref name="IGNpreview"/><ref name="Manual"/>{{Rp|9–12}}<ref name="gamespot"/> Inventory space is limited, with items and weapons taking up varying amounts of space.<ref name="IGNpreview"/>
+
+Denton's abilities can be enhanced over the course of the game. [[Experience point|Skill points]] earned by completing quests can be spent on the eleven skill types; computers, electronics, the environment, lockpicking, medicine, swimming and five weapon proficiencies. For instance, raising environment proficiency allows for higher jumps and more resistance to hostile environmental effects.<ref name="IGNpreview"/><ref name="EuroPreview"/> During [[character creation]] skill points can be reassigned from one skill to another, but after this point skill increases are permanent.<ref name="Manual"/>{{Rp|2–4}} Additionally, augmentation canisters can be found or bought throughout the game. Denton starts with three augmentations; the story-based infolink communicator, a light, and a tool for identifying hostiles. Other augmentations, such as increased movement speed, can be unlocked and upgraded using canisters a maximum of four times. One body area can only have one augmentation installed, and they are permanent. Using an augmentation costs energy, which is restored using consumable biocells.<ref name="IGNpreview"/><ref name="Manual"/>{{Rp|7–8}}<ref name="EuroPreview"/>
+
+A post-release patch added a [[multiplayer]] option. Set across different large [[Level (video games)|levels]] pulled from different areas of the game, multiplayer was limited to "[[Deathmatch (video games)|deathmatch]]" and "team deathmatch" modes, where players fought to the death either individually or as allied groups. [[Spawn point]]s provided players with tools and equipment to navigate the level and fight other players, although there were a stricter inventory limit. Unless specified by the match host, players only receive augmentation canisters based on their kills, and must still between different upgrades.<ref name="Multiplayer"/> The multiplayer mode's servers shut down in April 2014.<ref name="MultiShutdownA"/><ref name="MultiShutdownB"/>
+
+== Synopsis ==
+{{Deus Ex Timeline}}
+
+=== Setting and characters ===
+''Deus Ex'' takes place in the year 2052 in a dystopian [[cyberpunk]] future on the brink of social and economic collapse, where multiple [[conspiracy theories]] and organizations are real.<ref name="DXbible1"/><ref name="RPSretro"/> The two main factions in-game are the [[Illuminati in popular culture|Illuminati]], portrayed as an ancient secret society controlling civilization from the shadows, and [[Majestic 12]], once subordinate to the Illuminati and now a splinter group. During the events of ''Deus Ex'', the world is being ravaged by a plague dubbed the Gray Death, with supplies of its Ambrosia vaccine limited.<ref name="DXbible1"/> The game takes place across multiple locations including multiple parts of the United States (New York City, California, Nevada), Hong Kong, and Paris. A recurring location is [[Liberty Island]], which houses an operating base for the United Nations Anti-Terrorist Coalition (UNATCO). UNATCO's main conflict is with the National Secessionist Force (NSF), a terrorist group targeting Ambrosia shipments.<ref name="DXbible1"/><ref name="DeusexLocations"/> Another feature of the world is "augmentations", artificial enhancements using mechanics and nanotechnology.<ref name="DXbible1"/>
+
+The main protagonist is JC Denton, an agent for UNATCO who has received advanced nanotechnology; he works at UNATCO with his brother Paul Denton, who shares the same nanotech augmentations, under the command of Joseph Manderley. Other important characters are Tracer Tong, a hacker allied with the Triads of Hong Kong; Morgan Everett, a high-ranking Illuminati member; Daedalus, an artificial intelligence construct and its successor Icarus; Walton Simons, newly appointed Administrator of the [[Federal Emergency Management Agency]] (FEMA); and Bob Page, a corporate CEO and current leader of Majestic 12.<ref name="UNATCOcharacters"/><ref name="DEIWguide"/>
+
+=== Plot ===
+''Note: While the general plot of Deus Ex follows a distinct path, many elements are subject to the player's decisions. The game also offers subplots that the player may or may not encounter, depending on their actions within the game. This synopsis concentrates on the main, unavoidable plot thread of the game.''
+
+JC Denton is brought straight from training when the NSF attack Liberty Island. While he defeats them, a shipment of Ambrosia is stolen and taken to New York. JC takes on multiple missions tracking the NSF and the Ambrosia shipment, eventually finding out that Paul has defected to the NSF, acting as a mole within UNATCO after learning the Gray Death was a man-made disease used for power and population control. As punishment for his defection, Simons takes control and activates a [[kill switch]], giving Paul just 24 hours left alive. Ordered by Manderley to eliminate Tracer Tong in Hong Kong, JC instead finds Paul's hideout in New York, learning more details about UNATCO's operations but prompting his employers to attack him. JC's kill switch is also activated, and Paul can either escape or be killed by Simons' agents.
+
+JC is taken to a Majestic 12 prison beneath UNATCO, but escapes with help from "Daedalus", initially assumed to be a hacker. JC travels to Hong Kong and finds Tong, getting help removing the kill switch in exchange for resolving a war between the Triads. Tong identifies the virus as created by VersaLife, Page's company and a former Illuminati asset. Destroying the [[molecular assembler|universal constructor]] creating the virus and stealing the Ambrosia plans, JC is then sent by Tong to the Illuminati's remaining base in Paris. JC finds Morgan Everett, who explains the Gray Death was intended as an aid to augmentation, but was stolen and repurposed by Page and Simons. To stop Page from producing more Gray Death, JC agrees to defend against Simons's assault on [[Vandenberg Space Force Base|Vandenberg Air Force Base]], where a group of Majestic 12 defectors are hiding with a second universal constructor.
+
+JC learns from the Vandenberg scientists that Daedalus is an AI currently allied with Everett. When Everett attempts to defeat Majestic 12 using Daedalus, Page counters with his successor AI Icarus. The process causes Daedalus and Icarus to merge into a new entity "Helios", which seizes control of worldwide communication. JC must then travel to Area 51, where Page is in the process of merging with Helios to gain global power. JC is then given three options for defeating Page and resolving the situation. Tong wants the base destroyed, bringing down the world's communication network and triggering a "[[Societal collapse|Dark Age]]" of free city states, Everett wants to preserve the technology and re-establish the Illuminati as the world's controllers, and Helios seeks to merge with JC and become a [[Benevolent dictatorship|benevolent dictator]].
+
+== Development ==
+{{Multiple image|align=right|caption_align=center|direction=horizontal|total_width=350
+|image1=Warren Spector GDC 2023 (cropped).jpg|caption1=[[Warren Spector]]
+|image2=Harvey Smith.jpg|caption2=[[Harvey Smith (game designer)|Harvey Smith]]
+|footer=Spector created the original concept for ''Deus Ex'' and acted as producer and director; Smith was lead designer.}}
+The concept for ''Deus Ex'' was created by [[Warren Spector]], who first started writing its design document while working on ''[[Ultima Underworld II: Labyrinth of Worlds]]'' (1993). Initially titled "Troubleshooter", it laid out the basic gameplay ideas and real-world based setting.<ref name="GamaSpectre"/> While he pitched the game concept to both [[Origin Systems]] and [[Looking Glass Studios]], the pitch was turned down due to its ambitious nature, technical constraints of the time, and lack of interest from senior staff.<ref name="GameSlice"/><ref name="Gama2017"/> Another game where he attempted these concepts, titled ''Junction Point'', was cancelled mid-production.<ref name="PCGodSpector"/> During his work on ''[[System Shock]]'' (1994) and the project which became ''[[Thief: The Dark Project]]'' (1998), Spector became frustrated at creative limitations placed on him, and due to financial troubles Looking Glass Studio closed down their Austin branch where Spector worked.<ref name="DEIWgama"/><ref name="IonHistory"/> He was invited to join the newly founded [[Ion Storm]] by co-founder [[John Romero]], who offered Spector complete creative freedom on his next project. Spector eventually agreed and led the creation of Ion Storm's Austin studio where ''Deus Ex'' would be developed.<ref name="IonHistory"/>
+
+Publisher [[Eidos Interactive]]'s former executive chairman [[Ian Livingstone]] described their decision to back ''Deus Ex'' as part of a strategy to broaden the company's portfolio away from ''[[Tomb Raider]]''. He felt Eidos were right to back the concept due to Spector's skills and ambition.<ref name="RPSretro"/> Pre-production began in August 1997 under the working title ''Shooter: Majestic Revelations''.<ref name="GamaSpectre"/><ref name="USGdeleted"/> Spector led the game's team as producer and lead director.<ref name="DEIWgama"/><ref name="IGNinterview"/> During the early stages he both helped run the new studio, and hired staff for the game.<ref name="IonHistory"/> Team members included lead designer [[Harvey Smith (game designer)|Harvey Smith]], with whom Spector had worked at Looking Glass Studios, Chris Norden as lead programmer and assistant director, and level designer Steve Powers.<ref name="DEIWgama"/><ref name="RPSretro"/> The team eventually expanded to twenty people,<ref name="GamaSpectre"/> split between two design teams and an art team led by Jay Lee.<ref name="NordenInterview"/> Development spanned a six-month pre-production period with a team of six, and twenty-eight months of full production with a staff of twenty.<ref name="GamaSpectre"/> The game was declared [[Software release life cycle#Release to manufacturing (RTM)|gold]] (indicating that it was being prepared for duplication and release) in June 2000.<ref name="DSEXgold"/>
+
+===Game design===
+The original design document cited the gameplay inspirations as ''[[Half-Life (video game)|Half-Life]]'', ''[[Fallout (video game)|Fallout]]'', ''Thief: The Dark Project'', and ''[[GoldenEye 007 (1997 video game)|GoldenEye 007]]''; the game as a whole was meant to be "genre-busting" with combined elements of role-playing, first-person shooter, adventure and stealth.<ref name="GamaSpectre"/> Spector later cited the limited choices available in the [[Suikoden (video game)|first ''Suikoden'' game]] as an inspiration for the broad range of story and gameplay options in ''Deus Ex''.<ref name="SilSpector"/> Spector's aim with the gameplay was to allow as much player freedom as possible; his design document and personal goals included "problems, not puzzles", "no forced failure", "players do; NPCs watch", and "areas with multiple entrance and exit points".<ref name="GamaSpectre"/> These early designs underwent extensive expansions and alterations during early production.<ref name="USGdeleted"/> An early commitment was making level areas open-ended, with multiple ways to resolve gameplay and story situations. The opening "[[Liberty Island (Deus Ex)|Liberty Island]]" was designed as a [[vertical slice]], showing off the various gameplay elements the team wanted to implement overall.<ref name="RPSretro"/> There were some limitations put in place such as restricting what and how many augmentations the player could have access to, which Spector explained as promoting variety between players.<ref name="IGNinterview"/> Following early negative feedback from an industry demo with several prominent designers including [[Doug Church]] and [[Gabe Newell]], the augmentation gameplay was reworked to incorporate the limited energy mechanic.<ref name="GamaSpectre"/>
+
+The team opted to license a third-party engine for the game rather than building their own, which ultimately gave more time for story and gameplay development. Once pre-production was completed, the team settled on the [[Unreal Engine 1|Unreal Engine]] as it would cover most of what they wanted to do from a design perspective, and was easy for their programmers to handle.<ref name="GamaSpectre"/> As the Unreal Engine was designed for first-person shooters, the RPG mechanics such as leveling and inventory were added by the developers, alongside additional graphical elements like lip syncing for dialogue.<ref name="CGWinterview"/> Programmer Scott Martin implemented a wide range of new NPC behavior including patrols, idling, and sitting down. During early testing the enemy reactions were so acute that Martin had to adjust their behavior and detection protocols to be more forgiving.<ref name="TechRetro"/> The AI coding caused problems until late into development, with the team building on Unreal Engine's existing code and causing unpredictable NPC behavior as a result.<ref name="GamaSpectre"/> Church provided help with some of the AI programming.<ref name="RPSretro"/>
+
+Spector described the early high-concept work on the game as the smoothest period, with later production running into repeated issues. The game's scale and conflicting suggestions from playtesters began causing problems for the team.<ref name="GamaSpectre"/> There were also conflicts between Smith and Robert White, who both wanted to lead the gameplay design, so Spector split duties. Smith was given control of the simulation elements, while White was put in charge of the role-playing elements.<ref name="IonHistory"/> The production milestones necessitated trimming or altering features; Spector recalled Smith using the phrase "Less is more" in reference to these elements.<ref name="GamaSpectre"/> The conflicts between the two design teams were described by Spector as "a bunch of knock-down drag-out fights".<ref name="DEIWgama"/> The team's morale also suffered due to negative press surrounding Ion Storm from the Dallas studio; these included controversies surrounding ''[[Daikatana]]'' (2000), and the troubled production of ''[[Anachronox]]'' (2001). The Austin team adopted what Spector described as an unhelpful "'we'll show them' mentality", determined to distinguish their work from the Dallas studio.<ref name="GamaSpectre"/>
+
+Planned environments needed to be scaled down due to technical issues that were appearing in early demo builds.<ref name="GamaSpectre"/><ref name="EdgeMakingOf"/> Some content was cut entirely including a female option for JC Denton,<ref name="IGNpreview"/> and stages set in the [[White House]], [[Russia]], and on board a [[space station]].<ref name="USGdeleted"/><ref name="IGNinterview"/> Finished elements from those cut sections were incorporated into the final story and levels.<ref name="USGdeleted"/> The feature Spector most regretting dropping was plans for multiplayer that would have featured at release, describing the other dropped content as "just kind of stupid stuff".<ref name="IGNinterview"/> By contrast, Martin was upset that those sections had to be cut, but understood they had to release the game due to troubles with Ion Storm's other titles.<ref name="TechRetro"/> Spector later commented that all aspects of the game's systems, except for the inventory management and NPC conversations, were redesigned in some form during production.<ref name="GamaSpectre"/>
+
+===Scenario===
+The storyline drew from multiple sources, including ''[[The X-Files]]'', ''[[Colossus: The Forbin Project]]'', ''[[The Manchurian Candidate]]'', ''[[RoboCop]]'', and ''[[The Men in Black (comics)|Men in Black]]''.<ref name="GamaSpectre"/> Inspired by his wife's liking for ''The X-Files'', Spector connected the "real world, millennial weirdness, [and] conspiracy" topics to appeal to a broad audience;<ref name="GameSlice"/> Spector later stated the team's extensive research into conspiracies to reference in-game helped them understand how conspiracy theorists thought.<ref name="GamaSpectre"/> The approach towards a player-driven storyline was inspired by a ''[[Dungeons & Dragons]]'' session he was part of in 1978 with science fiction author [[Bruce Sterling]], one of the credited originators of the cyberpunk genre. During the session a story naturally emerged within the setting Sterling created, and Spector wanted to recapture that feeling.<ref name="Gama2017"/> The more grounded world design, defined as a "real-world roleplaying game", was a direct reaction to his fatigue with the sci-fi and fantasy worlds he had worked with on earlier projects.<ref name="PCGodSpector"/>
+
+While the initial story plan was described as similar to ''The X-Files'', Spector felt the final product was close in tone to ''[[James Bond]]''.<ref name="RPSretro"/> The story changed a lot during production, with supporting characters and antagonists changing a lot and the narrative being streamlined at the suggestion of staff members including Smith, but JC Denton's presence and role as a government agent remained consistent.<ref name="USGdeleted"/> The game's content, which included terrorism and [[cybernetically]]-enhanced soldiers, was also directly inspired by news stories that were starting to appear regularly in 1997.<ref name="Gama2017"/> Some of the plot's references were described as being "literally ripped from the headlines" such as references to the [[Trilateral Commission]] and modern protest groups. Spector later felt uncomfortable with how some in-game events unintentionally mirrored later real-life developments such as the [[September 11 attacks]].<ref name="EdgeMakingOf"/>
+
+The script was principally written by Sheldon Pacotti.<ref name="RPSretro"/> Additional material was written by Chris Todd and [[Austin Grossman]]; Grossman focused on small verbal "barks" and rewriting conversations where needed, while Todd wrote in-game texts and the opening and ending cutscenes.<ref name="Pacotti"/> When Pacotti joined in 1999, all the characters had names and detailed backstories, with the main job being implementing the plans of Spector and Smith into the finished game. The pre-release script was very large, and the writing team were working constantly on it for six months.<ref name="PacottiInterview"/> Smith took the large draft script and trimmed it down, while designer Albert Yarusso created a dialogue management system.<ref name="RPSretro"/> The writing team were reading several books covering popular conspiracy theories of the time, and Grossman attributed the political elements to Spector and Pacotti. After Pacotti was hired, the story's tone shifted sharply towards the "conspiracy and socialist angle".<ref name="RPSretro"/> Pacotti enjoyed working on the story, writing for it constantly after being impressed by seeing Spector's playthrough of an early game.<ref name="EuroPacotti"/> In hindsight, Grossman felt embarrassed by some of the character stereotypes they used for NPCs in Paris and Hong Kong.<ref name="RPSretro"/>
+
+The original design document had "dozens" of character concepts that survived into the final game, but had to be changed to fit design constraints.<ref name="USGdeleted"/> While Spector's original design only featured human enemies, his team persuaded him to add in robots and non-human enemies based on the game's lore, something he felt benefited the final product.<ref name="GamaSpectre"/> Due to how characters such as Paul could die, they could not be full incorporated into the second half of the game's story, but scenes related to them were put in place later in development to resolve their plot lines if they survived. These insertions were decided a meeting between Smith, Church and the script writers. Some of the uneven character representation was explained as being due to focusing on gameplay over story, with their additions being last-minute inclusions.<ref name="DXbible2"/> The endings were designed as isolated late-game choices independent from previous decisions made during within the game. Smith explained the decision as a way not to "trap" players into a particular route based on earlier decisions they might not understand.<ref name="DXbible3"/> Plans for an ending following on from the player either dying to or siding with Page were dropped due to time constraints.<ref name="DSEXbehind"/>
+
+===Audio===
+The music of ''Deus Ex'' was handled by members of [[Straylight Productions]], a music group who had notably worked on the ''[[Unreal (video game series)|Unreal]]'' series.<ref name="StraylightResume"/> The main composer was [[Alexander Brandon]],<ref name="BrandonInterview"/> with additional work by [[Dan Gardopée]], [[Michiel van den Bos]] and [[Reeves Gabrels]].<ref name="StraylightResume"/><ref name="OSTinfo"/> Gabrels' contributions were the club songs for New York, Paris and Hong Kong.<ref name="Manual"/>{{Rp|21}} Speaking in 2007, Brandon remembered ''Deus Ex'' as his favorite project due to positive feedback from players.<ref name="BrandonInterview"/> As with their earlier projects, the music used the MOD [[module file]] format.<ref name="StraylightNews"/> The main theme was based on an unused music track created by Brandon for a cancelled ''Unreal'' project.<ref name="DEIWgama"/> ''Deus Ex'' was Brandon's last game as a member of Straylight, as he moved to Ion Storm as head of their audio department.<ref name="StraylightNews"/>
+
+Speaking about the voice acting, Brandon described it as "really cheesy" but effective due to it communicating the different characters' personalities quickly.<ref name="DEIWgama"/> Both JC and Paul Denton were voiced by Jay Anthony Franke, an aspiring voice actor who was working in quality assurance (QA) at Ion Storm at the time. Franke estimated his lines totaled between 11,000 and 14,000 words. As he was also a QA tester for the game, his lines were added in very late by the sound team so he would not have to listen to himself during testing.<ref name="Franke2012"/> Spector estimated that the game had around 150,000 lines of voiced dialogue, which was localized into European languages for its release in those regions.<ref name="EuroPreview"/>
+
+==Release==
+During production, the game was originally planned for a release around Christmas 1998, but was repeatedly pushed back due to production problems.<ref name="USGdeleted"/> By mid-1998, the title had become ''Deus Ex'', taken from the phrase "[[deus ex machina]]" originating in ancient theater and typically meaning an unexpected person or figure resolving a situation without warning.<ref name="CGWinterview"/><ref name="RPGFinfo"/> Spector described the title as a multilayered wordplay on the story's themes, the difficulties of game plots, the concept of a computer game, and a "self-referential" acceptance of trying one's best to resolve affairs.<ref name="RPGFinfo"/> The game was shown off at the 1998 [[European Computer Trade Show]],<ref name="EuroPreview"/> and first previewed at [[E3 1999]].<ref name="E3deusex"/> As part of the marketing, the team created an authentic-looking website for UNATCO and linked it to pre-existing government websites; excessive traffic from the UNATCO page caused one of those websites to crash, prompting a call from that agency's lawyers.<ref name="EdgeMakingOf"/>
+
+Eidos Interactive published ''Deus Ex'' for [[Microsoft Windows]] in 2000, with the final release date varying based on location: June 23 in North America,<ref name="NAdatePC"/> July 27 in Australia,<ref name="AUdatePC"/> and August 4 in the United Kingdom.<ref name="UKdatePC"/> The game was supported after release with software patches to resolve [[framerate]] issues with [[Direct3D]],<ref name="DSEXupdateA"/> and introduce multiplayer mode.<ref name="Multiplayer"/> A ''Game of the Year'' edition was released on May 8, 2001, incorporating the additions and including a soundtrack CD.<ref name="GotYdeus"/> The ''Game of the Year'' edition was released through [[Steam (service)|Steam]] on March 29, 2007.<ref name="DeusexSteam"/>
+
+Versions for [[Classic Mac OS|Mac OS]] and [[Linux]] operating systems were being planned during the game's production.<ref name="GamaSpectre"/> The Mac OS port was in development at Westlake Interactive prior to the PC version's release.<ref name="Westlake"/> The Mac OS port was published in North America by [[Aspyr]] on July 13, 2000,<ref name="MacDate"/> and was patched to fix technical issues and introduce multiplayer.<ref name="WestlakePatch"/><ref name="MacMultiplayer"/> A Linux port was in development at [[Loki Entertainment|Loki Games]] before the company closed down in 2002.<ref name="LokiDSEX"/><ref name="LokiDown"/>
+
+===''Deus Ex: The Conspiracy''===
+A port of the game for [[PlayStation 2]] (PS2), titled ''Deus Ex: The Conspiracy'' outside Europe, was published by Eidos Interactive in 2002; it released in North America on March 26,<ref name="DSEXps2UKNA"/> in Europe on June 7,<ref name="DSEXps2UK"/> and in Australia on December 13.<ref name="DSEXps2AU"/> It was re-released as a Premium exclusive on the [[PlayStation+]] service on June 17, 2025.<ref name="ConspiracyPSPlus"/> The port was developed in-house by Ion Storm with a team of fourteen people, many drawn from the original team.<ref name="GSinterview"/><ref name="DXMinterview"/> Spector described the largest issue with the port being the PS2's limited memory space, since Spector wanted the game ported over with as much content intact as possible.<ref name="CVGinterview"/> As part of porting, the level maps were streamlined or re-arranged,<ref name="GSinterview"/> the difficulty and augmentation mechanics were rebalanced,<ref name="MGONinterview"/> and the interface had to be fully redesigned to be understandable and easily usable for console users.<ref name="DXMinterview"/>
+
+The initial design document as described by the port's producer Bill Money called for the levels to be redesigned with ending [[Boss (video games)|boss]] fights, which caused him to "flip".<ref name="MGONinterview"/> While the original character models used a [[Polygon mesh|mesh]]-based design, the PS2 version was updated to a [[Skeletal animation|skeletal]] model for more realistic movement.<ref name="GSinterview"/> Motion capture was also added for male and female models.<ref name="MGONinterview"/> The release was delayed by a couple of months due to the need for optimisation to decrease [[load times]] and the burden on console memory. The frame rate issues required a lot of the game's code to be moved from the Unreal-native environment into [[C++]] format.<ref name="GSinterview"/>
+
+===Mods===
+The [[software development kit]] (SDK) for ''Deus Ex'' was released on September 22, 2000,<ref name="DSEXupdateB"/> and shortly thereafter, fans of the game began to create [[Video game modding|mods]].<ref name="GSpyMods"/> In a press release related to the patch, Spector and other team members stated they were eager to see what the modding community would make.<ref name="PressMods"/> Notable mods include ''[[The Nameless Mod]]'' (''TNM''), a "total conversion" released in 2009;<ref name="PCPPnameless"/><ref name="PCGnameless"/> ''Deus Ex: Revision'', a publisher-endorsed mod released in 2015 that overhauled the game's graphics, gameplay and soundtrack;<ref name="Revision"/> and ''The Lay D Denton Project'', a 2021 release which restores a female JC Denton with new voice acting and adjustments to existing voice lines to account for the gender change.<ref name="LayDDenton"/>
+
+===''Deus Ex: Remastered''===
+A modern [[remaster]] of the game, ''Deus Ex: Remastered'', was announced during the September 2025 [[State of Play (video program)|State of Play]] broadcast.<ref name="GemRemastered"/> It was scheduled for release on February 5, 2026 for [[PlayStation 5]], [[Xbox Series X and Series S|Xbox Series X/S]], Windows and [[Nintendo Switch]] before being delayed to an unspecified date due to fan backlash.<ref name=":0">{{Cite web |last=Zwiezen |first=Zack |date=2025-12-11 |title=That Ugly Deus Ex Remaster Just Got Indefinitely Delayed |url=https://kotaku.com/that-ugly-deus-ex-remaster-just-got-indefinitely-delayed-2000652654 |access-date=2025-12-22 |website=Kotaku |language=en-US}}</ref><ref name=Backlash>{{cite web |last=Romano |first=Sal |url=https://www.gematsu.com/2025/12/deus-ex-remastered-delayed-to-unannounced-date |title=Deus Ex Remastered delayed to unannounced date |work=Gematsu |date=December 11, 2025 |access-date=December 11, 2025}}</ref><ref name="GIremastered"/> The remaster is being co-developed by [[Eidos-Montréal]] and [[Aspyr]], and published by Aspyr. It includes updated graphics, adjustments to the gameplay including [[autosave]], and controller support inspired by later ''Deus Ex'' titles.<ref name="GemRemastered"/><ref name="GIremastered"/>
+
+Audience response to the remaster's announcement trailer was negative, with users criticizing the updated graphics—some comparing the visuals to ''[[Grand Theft Auto: The Trilogy – The Definitive Edition]]''—and opining that the remastering was inferior to available user mods.<ref>{{Cite web |last=McCrae |first=Scott |date=September 25, 2025 |title="Getting a GTA Trilogy demaster feeling about this": Deus Ex Remastered is meant to be a 2025 upgrade, but fans aren't impressed by PS3 visuals when Deus Ex GOTY Edition is right there |url=https://www.gamesradar.com/games/rpg/getting-a-gta-trilogy-demaster-feeling-about-this-deus-ex-remastered-is-meant-to-be-a-2025-upgrade-but-fans-arent-impressed-by-ps3-visuals-when-deus-ex-goty-edition-is-right-there/ |access-date=September 26, 2025 |website=GamesRadar+ |language=en |quote="blocky level design clashes with high(er) quality textures and models [...]" suggested one fan}}</ref><ref>{{Cite web |last=Blake |first=Vikki |date=September 26, 2025 |title='Just What I've Always Wanted… the Original Deus Ex but Weirder Looking' — Fans React to Deus Ex Remastered Debut Trailer |url=https://www.ign.com/articles/just-what-ive-always-wanted-the-original-deus-ex-but-weirder-looking-fans-react-to-deus-ex-remastered-debut-trailer |access-date=September 26, 2025 |website=IGN |language=en |quote=another fan notes that "there are FREE mods available right now that make the original game look better than this, while being more faithful"}}</ref> ''[[PC Gamer]]'' called the remaster's graphics "bafflingly shiny, alarmingly bulbous, [and] strangely smooth".<ref>{{Cite news |last=Wolens |first=Joshua |date=September 25, 2025 |title=Everyone thinks the Deus Ex remaster looks awful and they're right: 'They really turned those 1999 graphics into 2003 graphics' |url=https://www.pcgamer.com/games/rpg/everyone-thinks-the-deus-ex-remaster-looks-awful-and-theyre-right-they-really-turned-those-1999-graphics-into-2003-graphics/ |access-date=September 25, 2025 |work=PC Gamer |language=en}}</ref> ''[[Destructoid]]'' said, "The looks of the ''Deus Ex'' remaster are a trifecta of failure. They don't stay faithful to the original, and don't make it look just “a bit more modern”. This remaster looks like something they'd be making nowadays if gamers had really enjoyed the shiny, rubbery texture of that weird period during the [[PS3]] and [[Xbox 360]] era."<ref>{{Cite web |last=Manuel |first=Tiago |date=2025-09-29 |title='I genuinely feel sick' - Fans and fellow devs are not letting up on the ugly-looking Deus Ex Remastered |url=https://www.destructoid.com/i-genuinely-feel-sick-fans-and-fellow-devs-are-not-letting-up-on-the-ugly-looking-deus-ex-remastered/ |access-date=2025-12-22 |website=Destructoid |language=en-US}}</ref> ''[[Kotaku]]'' commented that the "newer, higher-resolution assets [...] didn't mesh well with the old models and geometry that was still left in the game, creating a bizarre effect where it looked even worse than the chunky but charming visuals of the original game."<ref name=":0" /> ''[[Rock, Paper, Shotgun]]'', ''[[TheGamer]]'', and ''[[GameRant]]'' also reported that the remaster's system requirements were too high considering the quality of the new graphics.<ref>{{Cite web |last=Coleman |first=Jack |date=2025-12-11 |title=Deus Ex Remastered Delayed Indefinitely Following Negative Fan Feedback |url=https://www.thegamer.com/deus-ex-remastered-delayed-indefinitely/ |access-date=2025-12-22 |website=TheGamer |language=en}}</ref><ref>{{Cite news |last=Archer |first=James |date=2025-10-01 |editor-last= |editor-first= |title=No, Deus Ex Remastered, I simply do not believe you need an RTX 2080 to run at recommended settings |url=https://www.rockpapershotgun.com/no-deus-ex-remastered-i-simply-do-not-believe-you-need-an-rtx-2080-to-run-at-recommended-settings |access-date=2025-12-22 |work=Rock, Paper, Shotgun |language=en}}</ref><ref>{{Cite web |last=Bošnjak |first=Dominik |date=2025-09-28 |title=Deus Ex Remastered's High PC System Requirements Spark Shock and Ridicule |url=https://gamerant.com/deus-ex-remastered-high-pc-system-requirements-ugly-graphics-complaints/ |access-date=2025-12-22 |website=Game Rant |language=en}}</ref>
+
+In response to the negative feedback, Aspyr announced that the remaster would no longer be released in February 2026, and all preorders would be refunded.<ref>{{Cite tweet |number=1999170679116087572 |user=Aspyrmedia |title=Thank you to the community for your feedback following the reveal of Deus Ex Remastered. We've listened to what you said, and in order to better meet fan expectations and deliver the best possible experience for players, Deus Ex Remastered will no longer launch on Feb. 5, 2026. |date=2025-12-11 |access-date=2025-12-22}}</ref><ref>{{Cite web |date=2025-12-12 |title=Deus Ex Remastered Delayed In Response To Community Feedback |url=https://www.nintendo-insider.com/deus-ex-remastered-delayed-in-response-to-community-feedback/ |access-date=2025-12-22 |website=Nintendo Insider |language=en-GB}}</ref><ref>{{Cite news |last=Kuhnke |first=Oisin |last2= |first2= |date=2025-12-12 |title=After a rough reveal, Deus Ex Remastered gets an indefinite delay with existing preorders refunded |url=https://www.rockpapershotgun.com/after-a-rough-reveal-deus-ex-remastered-gets-an-indefinite-delay-with-existing-preorders-refunded |access-date=2025-12-22 |work=Rock, Paper, Shotgun |language=en}}</ref><ref>{{Cite web |last=DHLsalesman |title=Pre-Orders Refunded as Deus Ex Remastered Hits the Brakes |url=https://www.dlcompare.com/gaming-news/pre-orders-refunded-as-deus-ex-remastered-hits-the-brakes |access-date=2025-12-22 |website=dlcompare |language=en}}</ref>
+
+== Reception ==
+===Sales===
+According to ''[[Computer Gaming World]]''{{'}}s Stefan Janicki, ''Deus Ex'' had "sold well in North America" by early 2001 with regular placement in top ten best-selling lists for several weeks, and showed even better performance in Europe with similar sales position throughout the summer of 2000.<ref name="desslocksales"/> The game achieved sales of 138,840 copies and revenues of $5 million in the United States by the end of 2000, according to [[PC Data]].<ref name="pcgsales4"/> It received a "Silver" award from the [[Entertainment and Leisure Software Publishers Association]] (ELSPA) in February 2002, indicating lifetime sales of at least 100,000 units in the United Kingdom.<ref name="100k"/> The ELSPA later raised it to "Gold" status,<ref name="goldelspa"/> for 200,000 sales.<ref name="gamasutrasales"/> As of April 2009, ''Deus Ex'' has sold over 1 million copies worldwide.<ref name="DEIWsales3"/>
+
+=== Critical response ===
+{{Video game reviews
+| PS2 = true
+| PC = true
+| MC_PC = 90/100<ref name="MetaPC"/>
+| MC_PS2 = 81/100<ref name="MetaPS2"/>
+| Edge_PC = 9/10<ref name="Edge review"/>
+| EuroG_PC = 10/10<ref name="egDXrev"/>
+| GI_PS2 = 9/10<ref name="GIreviewPS2"/>
+| GamePro_PC = 5/5<ref name="GameProRev"/>
+| GamePro_PS2 = 5/5<ref name="GProReviewPS2"/>
+| GSpot_PC = 8.2/10<ref name="gamespot"/>
+| GSpot_PS2 = 8.1/10<ref name="GSreviewPS2"/>
+| GSpy_PC = 88/100<ref name="GameSpyRev"/>
+| GSpy_PS2 = 83/100<ref name="GSpyReviewPS2"/>
+| IGN_PC = 9.4/10<ref name="IGNRev"/>
+| IGN_PS2 = 6.3/10<ref name="IGNreviewPS2"/>
+| NGen_PC = 5/5<ref name="NG"/>
+| OPM_PS2 = 4.5/5<ref name="OPMreviewPS2"/>
+| PCGUK_PC = 95/100<ref name="PCGUK"/>
+}}
+''Deus Ex'' met with very positive reception, with review aggregation website ''[[Metacritic]]'' giving it a score of 90 out of 100 based on 28 critic reviews.<ref name="MetaPC"/> Across multiple reviews, the gameplay variety and amount of player freedom met with general praise.<ref name="gamespot"/><ref name="Edge review"/><ref name="egDXrev"/><ref name="GameProRev"/> The graphics and audio saw more mixed reactions.<ref name="Edge review"/><ref name="GameSpyRev"/><ref name="NG"/>
+
+Jeff Lundrigan of ''[[Next Generation (magazine)|Next Generation]]'' lauded the title as one of the best PC titles available due to the breadth of its gameplay options.<ref name="NG"/> Kieron Gillen of ''[[PC Gamer UK]]'' focused on gameplay in his review, highlighting the freedom of choice with approaches and depth of its systems.<ref name="PCGUK"/> The reviewer for ''[[Edge (magazine)|Edge]]'' similarly praised the amount of choices offered to players and the depth of customization through the skill and augmentation systems.<ref name="Edge review"/> Rob Fahay of ''[[Eurogamer]]'' was pleased with the amount of ways he could approach and solve a problem, and that unconventional solutions did not break the game.<ref name="egDXrev"/> ''[[GamePro]]''{{'s}} Chris Patterson had similar sentiments towards the gameplay and number of approaches given to players during missions.<ref name="GameProRev"/> Tal Blevins of ''[[IGN]]'' praised both the depth of gameplay options, and the strong level design, feeling that each complemented the other and that no two playthroughs would be the same.<ref name="IGNRev"/> ''[[GameSpot]]''{{'s}} [[Greg Kasavin]] similarly praised the variety of approaches available in missions, but faulted the individual parts of gameplay like combat and hacking for a lack of depth.<ref name="gamespot"/> ''[[GameSpy]]''{{'s}} Gino Gard lauded the gameplay's core design, but noted erratic behavior in enemy AI.<ref name="GameSpyRev"/>
+
+Gard praised the graphics and environment design without details,<ref name="GameSpyRev"/> and Patterson described it as one of the better-looking Unreal-powered games available.<ref name="GameProRev"/> ''Edge'' enjoyed the game's visual design, putting a lot of its charm down to good level design.<ref name="Edge review"/> Kasavin was less positive about the graphics, mostly blaming low lighting levels, and further noted some space and technical issues.<ref name="gamespot"/> Blevin noted the graphics as one of the game's weak points, faulting the stiff character movement and graphical issues that appeared during gameplay.<ref name="IGNRev"/> Lundrigan similarly noted stiff character animations, but otherwise praised the graphics as complementing the urban environment design.<ref name="NG"/> There was a recurring concern about the game's high graphical requirements.<ref name="GameSpyRev"/><ref name="IGNRev"/><ref name="NG"/>
+
+Patterson positively noted the sound design, but felt the voice acting was "a mixed bag", praising supporting characters while faulting NPC accents used in the Paris and Hong Kong sections.<ref name="GameProRev"/> Kasavin described the soundtrack as engaging but forgettable, and summed up the voice acting as "mediocre or at best inconsistent".<ref name="gamespot"/> Fahay praised the voice work as good by video game standards,<ref name="egDXrev"/> Lundrigan noted the voice acting let down the writing,<ref name="NG"/> while ''Edge'' summed up the voice acting as "appalling".<ref name="Edge review"/>
+
+Blevins summed up the story as "one of the finest crafted in any game", comparing it positively to a season of ''[[The X-Files]]'' in game form.<ref name="IGNRev"/> Gillen described the story as having satisfying and optional depth, and praised the lack of traditional cutscenes.<ref name="PCGUK"/> Kasavin enjoyed the overarching narrative, but faulted a lack of character development as they undermined later plot twists.<ref name="gamespot"/> Lundrigan enjoyed the writing and found it "remarkably fluid" in its detail variations,<ref name="NG"/> while Fahay summed up the story as "highly derivative".<ref name="egDXrev"/> ''Edge'' enjoyed the opening premise, but criticized the use of "third-rate sci-fi nonsense" by its conclusion.<ref name="Edge review"/>
+
+The PS2 port also saw positive reviews from critics, earning a score of 81 out of 100 ''Metacritic'' based on 25 reviews.<ref name="MetaPS2"/> Several reviewers described it as a good port.<ref name="GProReviewPS2"/><ref name="GSreviewPS2"/><ref name="GIreviewPS2"/> John Davison, writing for ''[[Official U.S. PlayStation Magazine]]'', was impressed by how well the PC original's mechanics and depth had been adapted for a console game experience.<ref name="OPMreviewPS2"/> Justin Leeper of ''[[Game Informer]]'' was generally positive about the game, but faulted the graphics as low quality for the time. In a second opinion, Matthew Kato praised the adaptation of the PC original's controls to the PS2's [[DualShock]] controller, but faulted the lack of improvements to environments and AI behavior.<ref name="GIreviewPS2"/> ''GameSpy''{{'s}} Christopher Buecheler positively noted new character models and accurate gameplay adaptation from PC, but noted some frame rate drops and felt the graphics looked poor compared to other PS2 games of the time.<ref name="GSpyReviewPS2"/> ''GamePro'' gave high praise to the control conversion with both movement and inventory management, but noted long load times between areas.<ref name="GProReviewPS2"/> Kasavin similarly faulted the long load times when going between different areas.<ref name="GSreviewPS2"/> ''IGN''{{'s}} David Smith was far less positive, praising the pre-established gameplay elements and sound design, but faulting its redone controls and lack of graphical upgrades.<ref name="IGNreviewPS2"/>
+
+===Awards===
+{| class="wikitable sortable mw-collapsible" style="width:99%;"
+|+ List of awards and nominations&nbsp;
+|-
+! Year !! Award !! Category !! Recipient!! Result !! class="unsortable" | {{Abbr|Ref.|References}}
+|-
+| rowspan="10"| 2001
+| rowspan="3"| [[Game Developers Choice Awards]]
+| Excellence in Game Design
+| Harvey Smith, Warren Spector
+| {{won}}
+| rowspan="3" style="text-align:center;"| <ref name="GDC"/>
+|-
+| Game Innovation Spotlight
+| ''Deus Ex''
+| {{won}}
+|-
+| Game of the Year
+| ''Deus Ex''
+| {{nom}}
+|-
+| rowspan="6" | [[4th Annual Interactive Achievement Awards]]
+| Computer Innovation
+| ''Deus Ex''
+| {{won}}
+| rowspan="6" style="text-align:center;"| <ref name="DICE"/>
+|-
+| [[D.I.C.E. Award for Adventure Game of the Year|PC Action/Adventure]]
+| ''Deus Ex''
+| {{won}}
+|-
+| [[D.I.C.E. Award for Game of the Year|Game of the Year]]
+| ''Deus Ex''
+| {{nom}}
+|-
+| PC Game of the Year
+| ''Deus Ex''
+| {{nom}}
+|-
+| [[D.I.C.E. Award for Role-Playing Game of the Year|PC Role-Playing]]
+| ''Deus Ex''
+| {{nom}}
+|-
+| [[D.I.C.E. Award for Outstanding Achievement in Audio Design|Sound Design]]
+| ''Deus Ex''
+| {{nom}}
+|-
+| [[British Academy of Film and Television Arts]]
+| PC Game of the Year
+| ''Deus Ex''
+| {{won}}
+| style="text-align:center;"| <ref name="Bafta"/>
+|-
+|}
+{{Clear}}
+
+==Legacy==
+According to Spector, ''Deus Ex'' received over thirty "Best of" awards from various outlets during 2001, something of which he remains proud.<ref name="CVGspector"/> The game has also ranked high in lists of the best video games of all time compiled by various publications.<ref name="IGN2007"/><ref name="pcgam_2010read"/><ref name="Edge1000"/><ref name="gamasut_bestdec"/><ref name="G4alltime"/> ''[[1UP.com]]'' listed it as one of the most important games of all time, calling its influence "too massive to properly gauge".<ref name="1UPessential"/> Several articles and retrospectives have cited ''Deus Ex'' as a prominent example of the "[[immersive sim]]", a type of video game that promotes realism and freedom of player choice.<ref name="PolySim"/><ref name="PSG2017"/><ref name="RPSsim"/> A movie adaptation was also licensed by [[Columbia Pictures]] in 2002.<ref name="DSEXmovieA"/><ref name="DSEXmovieB"/>
+
+Speaking in 2015, Spector recalled that he never expected the game to sell well, but was pleased it gained a strong cult following and continued to receive fan letters about it.<ref name="Spector2015"/> Several former staff workers including Smith, Paccotti, and others associated with Ion Storm recall their time with the game fondly as both a team effort and an informative experience.<ref name="RPSretro"/><ref name="IonHistory"/>
+
+===Future games===
+{{main|Deus Ex: Invisible War|l1 = ''Deus Ex: Invisible War''}}
+
+A sequel to ''Deus Ex'' was announced in 2001, with Ion Storm and Eidos Interactive returning as developer and publisher respectively; the next game was designed as a console-focused release.<ref name="DEIWreveal"/><ref name="DEIWconsoles"/> Many of the original staff returned, with Smith acting as director, and Pacotti and Brandon returning as lead writer and composer.<ref name="DEIWsmithbare"/><ref name="DEIWmusic"/> Titled ''[[Deus Ex: Invisible War]]'', the game released in 2003 for Windows and the original [[Xbox (console)|Xbox]].<ref name="DEIWdemo"/><ref name="DEIWeurope"/> Ion Storm made multiple attempts to create a third ''Deus Ex'' title before closing in 2005.<ref name="EuroSequels"/> The [[Deus Ex|''Deus Ex'' series]] was revived at new developer Eidos-Montréal, which would go on to develop or supervise multiple titles beginning with the prequel ''[[Deus Ex: Human Revolution|Human Revolution]]'' (2011).<ref name="EuroInterview2010"/><ref name="DeusExNextGen"/>
+
+== See also ==
+
+* [[2000 in video games]]
+* [[List of role-playing video games: 2000 to 2001]]
+* [[Metal Gear Solid (1998 video game)]]
+
+== References ==
+
+=== Notes ===
+{{Notelist}}
+
+=== Citations ===
+{{reflist|30em|refs=
+
+<!-- Synopsis -->
+
+<ref name="Manual">{{cite book|title=Deus Ex: Game of the Year Edition|date=May 8, 2001|publisher=[[Eidos Interactive]]|edition=North American PC|type=Instruction manual}}</ref>
+
+<ref name="PCZpreview">{{cite magazine|author=Mallinson, Paul|title=Preview: Deus Ex|magazine=[[PC Zone]]|publisher=[[Future plc]]|issue=92|date=August 2000|pages=44–46}}</ref>
+
+<ref name="IGNpreview">{{cite web|url=http://pc.ign.com/articles/131/131727p1.html|title=Deus Ex Preview|author1=Blevins, Tal|author2=Bates, Jason|website=[[IGN]]|date=June 19, 2000|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20070124101922/http://pc.ign.com/articles/131/131727p1.html|archive-date=January 24, 2007|url-status=dead}}</ref>
+
+<ref name="EuroPreview">{{cite web|url=https://www.eurogamer.net/deusex-p|title=Deus Ex - First person RPG previewed|website=[[Eurogamer]]|date=February 2, 2000|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20220528063110/https://www.eurogamer.net/deusex-p|archive-date=May 28, 2022|url-status=live}}</ref>
+
+<ref name="MultiShutdownA">{{cite web |url=http://www.ign.com/articles/2014/04/03/gamespy-multiplayer-shutting-down-hundreds-of-games-at-risk |title=GameSpy Multiplayer Shutting Down, Hundreds of Games at Risk |website=[[IGN]] |author=Dyer, Mitch |date=April 3, 2014 |access-date=May 15, 2014 |archive-url=https://web.archive.org/web/20140512043624/http://www.ign.com/articles/2014/04/03/gamespy-multiplayer-shutting-down-hundreds-of-games-at-risk |archive-date=May 12, 2014 |url-status=live  }}</ref>
+
+<ref name="MultiShutdownB">{{cite web|url=https://www.deusexnetwork.com/masterserver|title=Masterserver|website=Deus Ex Network|date=2014|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20150205221541/https://www.deusexnetwork.com/masterserver|archive-date=February 5, 2015|url-status=dead}}</ref>
+
+<ref name="Multiplayer">{{cite web |url=http://archive.gamespy.com/articles/december00/dxmp/index.shtm |archive-url=https://web.archive.org/web/20050902174656/http://archive.gamespy.com/articles/december00/dxmp/index.shtm |archive-date=September 2, 2005 |title=Deus Ex goes Multiplayer |website=[[GameSpy]] |author=Keefer, John |access-date=March 10, 2007 |url-status=dead |date=December 2000 }}</ref>
+
+<ref name="DXbible1">{{Cite web |last=The Deus Ex Team |title=DX1 Continuity Bible: Part I |url=http://archive.gamespy.com/articles/april02/dxbible/dx1/index.shtm |url-status=dead |archive-url=https://web.archive.org/web/20120414234319/http://archive.gamespy.com/articles/april02/dxbible/dx1/index.shtm |archive-date=April 14, 2012 |access-date=August 25, 2012 |website=[[Gamespy]]}}</ref>
+
+<ref name="DeusexLocations">{{cite web|url=http://www.gamesradar.com/deus-ex-series-best-locations/|title=Explore the world with the best locations in the Deus Ex series|author=Stone, Tom|publisher=[[GamesRadar]]|date=January 11, 2017|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20170112180721/http://www.gamesradar.com/deus-ex-series-best-locations/|archive-date=January 12, 2017|url-status=live}}</ref>
+
+<ref name="UNATCOcharacters">{{cite web|url=http://planetdeusex.com/dx1/characters/human/important/unatco/|title=Characters / Important / UNATCO|website=[[GameSpy|Planet Deus Ex]]|date=2000|access-date=April 13, 2025|archive-url=https://web.archive.org/web/20010721032012/http://planetdeusex.com/dx1/characters/human/important/unatco/|archive-date=July 21, 2001|url-status=dead}}</ref>
+
+<ref name="DEIWguide">{{cite book |title=Deus Ex: Invisible War Official Strategy Guide |publisher=Prima Games |isbn=0-7615-4069-5 |date=2003|pages=4–7}}</ref>
+
+<!-- Development -->
+
+<ref name="RPSretro">{{cite web|url=https://www.rockpapershotgun.com/2020/06/22/deus-ex-at-20-the-oral-history-of-a-pivotal-pc-game/|title=Deus Ex at 20: The oral history of a pivotal PC game|author=Peel, Jeremy|website=[[Rock Paper Shotgun]]|date=June 22, 2020|access-date=April 13, 2025|archive-url=https://web.archive.org/web/20200622123123/https://www.rockpapershotgun.com/2020/06/22/deus-ex-at-20-the-oral-history-of-a-pivotal-pc-game/|archive-date=June 22, 2020|url-status=live}}</ref>
+
+<ref name="DSEXgold">{{cite web|url=https://www.gamespot.com/articles/deus-ex-goes-gold/1100-2586728/|title=Deus Ex Goes Gold|author=Walker, Trey|website=[[GameSpot]]|date=June 12, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20131029064243/https://www.gamespot.com/articles/deus-ex-goes-gold/1100-2586728/|archive-date=October 29, 2013|url-status=dead}}</ref>
+
+<ref name="CGWinterview">{{cite magazine|title=Interview with Deus Ex Team|magazine=[[Computer Gaming World]]|publisher=[[Ziff Davis]]|issue=188|date=March 2000|pages=136–137}}</ref>
+
+<ref name="EdgeMakingOf">{{cite magazine|title=The making of...Deus Ex|magazine=[[Edge (magazine)|Edge]]|publisher=[[Future plc]]|issue=120|date=February 2003|pages=107–109}}</ref>
+
+<ref name="GamaSpectre">{{cite web |url=https://www.gamedeveloper.com/design/postmortem-ion-storm-s-i-deus-ex-i- |access-date=July 5, 2014 |website=[[Gamasutra]]|title=Postmortem: Ion Storm's ''Deus Ex'' |author=Spector, Warren |author-link=Warren Spector |date=December 6, 2000 |archive-url=https://web.archive.org/web/20140511183904/http://www.gamasutra.com/view/feature/131523/postmortem_ion_storms_deus_ex.php |archive-date=May 11, 2014 |url-status=live}}</ref>
+
+<ref name="Gama2017">{{cite web |url=http://www.gamasutra.com/view/news/292889/Warren_Spector_traces_Deus_Exs_development_back_to_a_game_of_DD.php |title= Warren Spector traces Deus Ex's development back to a game of D&D |author=Wawro, Alex|date= March 2, 2017 |access-date= March 3, 2017 |website=[[Gamasutra]]|archive-url=https://web.archive.org/web/20170303040129/http://www.gamasutra.com/view/news/292889/Warren_Spector_traces_Deus_Exs_development_back_to_a_game_of_DD.php|archive-date=March 3, 2017|url-status=dead}}</ref>
+
+<ref name="DEIWgama">{{cite web|url=http://www.gamasutra.com/view/news/240456/Developing_Deus_Ex_An_oral_history.php|title=Developing Deus Ex: An oral history|author=Wawro, Alex|website=[[Gamasutra]]|date=June 23, 2015|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20150623183725/http://www.gamasutra.com/view/news/240456/Developing_Deus_Ex_An_oral_history.php|archive-date=June 23, 2015|url-status=dead}}</ref>
+
+<ref name="IGNinterview">{{cite web|url=https://www.ign.com/articles/2000/04/20/deus-ex-interview-2|title=Deus Ex Interview|author=Blevins, Tal|website=[[IGN]]|date=April 20, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20150131042110/https://www.ign.com/articles/2000/04/20/deus-ex-interview-2|archive-date=January 31, 2015|url-status=live}}</ref>
+
+<ref name="EuroPacotti">{{cite web|url=https://www.eurogamer.net/deus-ex-looking-back-at-the-future-interview|title=Deus Ex: Looking Back at the Future|author=Yin-Poole, Wesley|website=[[Eurogamer]]|date=August 22, 2011|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20220705022825/https://www.eurogamer.net/deus-ex-looking-back-at-the-future-interview|archive-date=July 5, 2022|url-status=live}}</ref>
+
+<ref name="GameSlice">{{cite web|url=http://gameslice.com/features/spector/index.shtml |access-date=July 5, 2014 |title=A Spector Haunts Gaming: Inside the Mind of ''Deus Ex'' Designer Warren Spector |last=Au |first=Wagner James |date=August 15, 2000 |website=[[UGO Networks|GameSlice]] |archive-url=https://web.archive.org/web/20071018115146/http://gameslice.com/features/spector/index.shtml |archive-date=October 18, 2007 |url-status=dead }}</ref>
+
+<ref name="USGdeleted">{{cite web|url=http://www.usgamer.net/articles/the-deleted-scenes-of-deus-ex |access-date=July 3, 2014 |work=[[USgamer]] |publisher=Gamer Network |title=The Deleted Scenes of ''Deus Ex'' |author=Davison, Pete |date=June 22, 2013 |archive-url=https://web.archive.org/web/20140715002144/http://www.usgamer.net/articles/the-deleted-scenes-of-deus-ex |archive-date=July 15, 2014 |url-status=live }}</ref>
+
+<ref name="NordenInterview">{{cite web|url=https://www.gamedeveloper.com/design/classic-tools-retrospective-the-tools-that-built-deus-ex-with-chris-norden|title=Classic Tools Retrospective: The tools that built Deus Ex, with Chris Norden|author=Lightbrow, David|website=[[Gamasutra]]|date=October 23, 2018|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20181027063829/https://www.gamasutra.com/blogs/DavidLightbown/20181023/328687/Classic_Tools_Retrospective_The_tools_that_built_Deus_Ex_with_Chris_Norden.php|archive-date=October 27, 2018|url-status=live}}</ref>
+
+<ref name="RPGFinfo">{{cite web|url=http://www.rpgfan.com/archive/1998/06.html |access-date=July 5, 2014 |title=Deus Ex Interview! |author=Webber |date=1998 |website=RPGFan |archive-url=https://web.archive.org/web/20140703020445/http://rpgfan.com/archive/1998/06.html |archive-date=July 3, 2014 |url-status=live }}</ref>
+
+<ref name="DXbible2">{{cite web|url=http://archive.gamespy.com/articles/april02/dxbible/dx2/|title=DX1 Continuity Bible: Part II|website=[[GameSpy]]|date=April 18, 2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20041205190952/http://archive.gamespy.com/articles/april02/dxbible/dx2/|archive-date=December 5, 2004|url-status=dead}}</ref>
+
+<ref name="DXbible3">{{cite web|url=http://archive.gamespy.com/articles/april02/dxbible/dx3/|title=DX1 Continuity Bible: Part III|website=[[GameSpy]]|date=April 19, 2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20040818114701/http://archive.gamespy.com/articles/april02/dxbible/dx3/|archive-date=August 18, 2004|url-status=dead}}</ref>
+
+<ref name="SilSpector">{{cite web|url=http://www.siliconera.com/2012/11/10/how-suikoden-influenced-deus-ex-and-epic-mickey/|website=Siliconera|title=How Suikoden Influenced Deus Ex And Epic Mickey|date=November 10, 2012|author=Sahdev, Ishaan|access-date=July 4, 2015|archive-date=May 27, 2019|archive-url=https://web.archive.org/web/20190527023541/https://www.siliconera.com/2012/11/10/how-suikoden-influenced-deus-ex-and-epic-mickey/|url-status=dead}}</ref>
+
+<ref name="Pacotti">{{cite web|url=http://www.sheldonpacotti.com/demiurge/DX.htm|title=Deus Ex|publisher=Sheldon Pacotti website|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20010602030806/http://www.sheldonpacotti.com/demiurge/DX.htm|archive-date=June 2, 2001|url-status=dead}}</ref>
+
+<ref name="DSEXbehind">{{cite web|url=http://www.deusex-machina.com/articles/makingofdeusex.asp|title=Behind the Scenes Look in the Making of Deus Ex|website=Deus Ex Machina|date=2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20010409233246/http://www.deusex-machina.com/articles/makingofdeusex.asp|archive-date=April 9, 2001|url-status=dead}}</ref>
+
+<ref name="PacottiInterview">{{cite web|url=http://www.stomped.com/interviews/deusex.html|title=Interview with Sheldon Pacotti|author=Callaham, John|website=Stomped.com|date=June 19, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20000817160124/http://www.stomped.com/interviews/deusex.html|archive-date=August 17, 2000|url-status=dead}}</ref>
+
+<ref name="PCGodSpector">{{cite web|url=https://www.pcgamesinsider.biz/industry-icon/66363/the-god-project-warren-spector-on-the-making-of-deus-ex/|title=The God Project: Warren Spector on the making of Deus Ex|author=Calvin, Alex|website=[[Pocket Gamer|PC Games Insider]]|date=November 16, 2017|access-date=July 26, 2025|archive-url=https://web.archive.org/web/20171118232702/https://www.pcgamesinsider.biz/industry-icon/66363/the-god-project-warren-spector-on-the-making-of-deus-ex/|archive-date=November 18, 2017|url-status=live}}</ref>
+
+<ref name="TechRetro">{{cite web|url=https://www.techradar.com/news/deus-ex-20th-anniversary-programmer-scott-martin-talks-about-working-on-the-pc-gaming-masterpiece|title=Deus Ex 20th Anniversary: Programmer Scott Martin talks about working on the PC gaming masterpiece|author=Loeffler, John|website=[[TechRadar]]|date=June 22, 2020|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20200622034508/https://www.techradar.com/news/deus-ex-20th-anniversary-programmer-scott-martin-talks-about-working-on-the-pc-gaming-masterpiece|archive-date=June 22, 2020|url-status=dead}}</ref>
+
+<ref name="BrandonInterview">{{cite web|url=http://www.squareenixmusic.com/features/interviews/alexanderbrandon.shtml|title=Interview with Alexander Brandon|publisher=Square Enix Music Online|date=2007|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20100424032041/http://www.squareenixmusic.com/features/interviews/alexanderbrandon.shtml|archive-date=April 24, 2010|url-status=dead}}</ref>
+
+<ref name="StraylightResume">{{cite web|url=http://www.straylight-productions.com/resume.html|title=Resume|publisher=Straylight Productions|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20020810154329/http://www.straylight-productions.com/resume.html|archive-date=August 10, 2002|url-status=dead}}</ref>
+
+<ref name="StraylightNews">{{cite web|url=http://www.straylight-productions.com/news.html|title=News|publisher=Straylight Productions|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20020806223903/http://www.straylight-productions.com/news.html|archive-date=August 6, 2002|url-status=dead}}</ref>
+
+<ref name="OSTinfo">{{cite web |url=http://www.deusex-machina.com/information/faq-goty.asp |title=Deus Ex Game of the Year Edition FAQ. |website=Deus Ex Machina |access-date=March 20, 2007 |archive-url=https://web.archive.org/web/20120228194835/http://www.deusex-machina.com/information/faq-goty.asp |archive-date=February 28, 2012 |url-status=live  }}</ref>
+
+<ref name="Franke2012">{{cite web|url=http://www.ign.com/articles/2012/11/05/life-after-jc-denton|title=Life After JC Denton|author=Bridge, Cabel|website=[[IGN]]|date=November 5, 2012|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20131219172248/http://www.ign.com/articles/2012/11/05/life-after-jc-denton|archive-date=December 19, 2013|url-status=live}}</ref>
+
+<ref name="IonHistory">{{cite web |url=https://www.pcgamer.com/uk/the-history-of-ion-storm/ |title=The History of Ion Storm |last=Lane |first=Rick |website=[[PC Gamer]] |date=February 16, 2018 |access-date=November 22, 2019 |archive-url=https://web.archive.org/web/20191001203441/https://www.pcgamer.com/uk/the-history-of-ion-storm/ |archive-date=October 1, 2019 |url-status=live}}</ref>
+
+<!-- Release -->
+
+<ref name="E3deusex">{{cite web|url=https://www.ign.com/articles/1999/06/19/1999-e3-game-critics-awards|title=1999 E3 Game Critics' Awards|website=[[IGN]]|date=June 19, 1999|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20190807182012/https://www.ign.com/articles/1999/06/19/1999-e3-game-critics-awards|archive-date=August 7, 2019|url-status=dead}}</ref>
+
+<ref name="NAdatePC">{{cite news |last=Fudge |first=James |date=June 27, 2000 |title=Deus Ex Hits Retail Full-scale |url=http://www.cdmag.com/articles/028/135/deusex.html |url-status=dead |website=CD Mag |archive-url=https://web.archive.org/web/20020921184804/http://www.cdmag.com/articles/028/135/deusex.html |archive-date=September 21, 2002 |access-date=June 24, 2020 }}</ref>
+
+<ref name="AUdatePC">{{Cite web |date=July 5, 2000 |title=News July 2000: 31-07-2000|url=http://www.gamesmarket.com.au/infoarchives.cfm?contentarchives=15&cfid=1129608&cftoken=4585296 |archive-url=https://web.archive.org/web/20020531203927/http://www.gamesmarket.com.au/infoarchives.cfm?contentarchives=15&cfid=1129608&cftoken=4585296 |archive-date=May 31, 2002|access-date=April 16, 2024|website=Games Market}}</ref>
+
+<ref name="UKdatePC">{{Cite web |date=July 5, 2000 |title=Deus Ex - August 4th |url=https://www.eurogamer.net/article-28328 |access-date=April 16, 2024 |website=[[Eurogamer]]|archive-url=https://web.archive.org/web/20220705003958/https://www.eurogamer.net/article-28328|archive-date=July 5, 2022|url-status=live}}</ref>
+
+<ref name="DSEXupdateA">{{cite web|url=http://www.gamespot.com/articles/deus-ex-update/1100-2600436/|title=Deus Ex Update|author=Parker, Sam|website=[[GameSpot]]|date=July 7, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20131101052659/http://www.gamespot.com/articles/deus-ex-update/1100-2600436/|archive-date=November 1, 2013|url-status=dead}}</ref>
+
+<ref name="DSEXupdateB">{{cite web|url=http://www.gamespot.com/articles/deus-ex-editor/1100-2631677/|title=Deus Ex Editor|author=Parker, Sam|website=[[GameSpot]]|date=September 22, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20131029053721/http://www.gamespot.com/articles/deus-ex-editor/1100-2631677/|archive-date=October 29, 2013|url-status=dead}}</ref>
+
+<ref name="GotYdeus">{{cite news|url=http://www.gamespot.com/articles/deus-ex-game-of-the-year-edition-ships/1100-2716914/|title=Deus Ex: Game of the Year Edition ships|first=Trey|last=Walker|website=[[GameSpot]]|date=May 8, 2001|access-date=August 15, 2014|archive-url=https://web.archive.org/web/20131031000627/http://www.gamespot.com/articles/deus-ex-game-of-the-year-edition-ships/1100-2716914/|archive-date=October 31, 2013|url-status=dead}}</ref>
+
+<ref name="DeusexSteam">{{cite web |url=http://store.steampowered.com/news/1004/ |title=Eidos Brings Six More to Steam |website=[[Valve Corporation]]|author=Ruymen, Jason |access-date=March 29, 2007 |archive-url=https://web.archive.org/web/20080921191125/http://store.steampowered.com/news/1004/ |archive-date=September 21, 2008 |url-status=live  }}</ref>
+
+<ref name="GSpyMods">{{cite web |url=http://archive.gamespy.com/articles/november00/deusexmods/index.shtm |archive-url=https://web.archive.org/web/20041222191225/http://archive.gamespy.com/articles/november00/deusexmods/index.shtm |archive-date=December 22, 2004 |title=Deus Ex Mods |first=Bruce |last=Ladewig |work=[[GameSpy]] |date=December 2004 |access-date=July 16, 2011 |url-status=dead }}</ref>
+
+<ref name="PressMods">{{cite press release |url=http://www.bluesnews.com/a/72 |title=Eidos Announces Deus Ex SDK |date=September 20, 2000 |publisher=[[Eidos Interactive]] |access-date=July 16, 2011 |archive-url=https://web.archive.org/web/20110807070133/http://www.bluesnews.com/a/72 |archive-date=August 7, 2011 |url-status=dead}}</ref>
+
+<ref name="PCPPnameless">{{cite magazine|title=The Nameless Mod |magazine=[[PC PowerPlay]]|publisher=[[Future Australia]] |issue=165 |date=June 2009 |author=Fordham, Anthony|pages=56–57}}</ref>
+
+<ref name="PCGnameless">{{cite web|url=https://www.pcgamer.com/saturday-crapshoot-the-nameless-mod/|title=Saturday Crapshoot: The Nameless Mod|author=Cobbett, Richard|website=[[PC Gamer]]|date=August 20, 2011|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20141009165319/https://www.pcgamer.com/saturday-crapshoot-the-nameless-mod/|archive-date=October 9, 2014|url-status=live}}</ref>
+
+<ref name="Revision">{{cite web | url = http://www.polygon.com/2015/10/13/9521787/deus-ex-revision-free-mod-steam | title = Original Deus Ex gets a facelift with free mod | first = Allega | last = Frank | date = October 13, 2015 | access-date = October 13, 2015 | work = [[Polygon (website)|Polygon]] | archive-url = https://web.archive.org/web/20151014120259/http://www.polygon.com/2015/10/13/9521787/deus-ex-revision-free-mod-steam | archive-date = October 14, 2015 | url-status = live | df = mdy-all }}</ref>
+
+<ref name="LayDDenton">{{cite web |url=https://www.eurogamer.net/articles/2021-10-09-deus-ex-mod-lets-you-play-as-a-female-jc-denton-21-years-after-the-game-came-out |title=Deus Ex mod lets you play as a female JC Denton 21 years after the game came out |author=Yin-Poole, Wesley |date=October 9, 2021 |website=[[Eurogamer]] |access-date=October 9, 2021 |archive-date=October 9, 2021 |archive-url=https://web.archive.org/web/20211009154427/https://www.eurogamer.net/articles/2021-10-09-deus-ex-mod-lets-you-play-as-a-female-jc-denton-21-years-after-the-game-came-out |url-status=live }}</ref>
+
+<ref name="Westlake">{{cite web|url=http://www.westlakeinteractive.com/news0146.html|title=News: Deus Ex (April 4)|website=Westlake Interactive|date=April 4, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20000816230032/http://www.westlakeinteractive.com/news0146.html|archive-date=August 16, 2000|url-status=dead}}</ref>
+
+<ref name="WestlakePatch">{{cite web|url=http://www.westlakeinteractive.com/news0166.html|title=News: Deus Ex (July 31)|website=Westlake Interactive|date=July 31, 2000|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20000816225842/http://www.westlakeinteractive.com/news0166.html|archive-date=August 16, 2000|url-status=dead}}</ref>
+
+<ref name="MacDate">{{Cite web |date=June 20, 2003 |title=Aspyr: Inside Aspyr |url=http://www.aspyr.com/inside.php?p_query=events |access-date=March 27, 2023 |archive-url=https://web.archive.org/web/20030620202408/http://www.aspyr.com/inside.php?p_query=events |archive-date=June 20, 2003 }}</ref>
+
+<ref name="MacMultiplayer">{{cite web |url=http://www.macupdate.com/app/mac/5553/deus-ex-multiplayer-patch |title=Deus Ex Multiplayer Patch 1.0.3 |publisher=Mac Update |access-date=March 10, 2007 |archive-url=https://web.archive.org/web/20120308095418/http://www.macupdate.com/app/mac/5553/deus-ex-multiplayer-patch |archive-date=March 8, 2012 |url-status=dead}}</ref>
+
+<ref name="LokiDSEX">{{cite web|url=http://www.lokigames.com/products/deusex/|title=Deus Ex|publisher=[[Loki Entertainment|Loki Games]]|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20020402143317/http://www.lokigames.com/products/deusex/|archive-date=April 2, 2002|url-status=dead}}</ref>
+
+<ref name="LokiDown">{{cite web|url=http://www.lokigames.com/|title=Loki Games - News|publisher=[[Loki Entertainment|Loki Games]]|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20020526031640/http://www.lokigames.com/|archive-date=May 26, 2002|url-status=dead}}</ref>
+
+<ref name="DSEXps2UKNA">{{cite news|url=http://uk.ign.com/articles/2002/03/26/deus-ex-ships-to-stores|title=Deus Ex Ships To Stores|work=[[IGN]]|date=March 26, 2002|access-date=August 15, 2014|archive-date=October 9, 2021|archive-url=https://web.archive.org/web/20211009154408/https://www.ign.com/articles/2002/03/26/deus-ex-ships-to-stores|url-status=live}}</ref>
+
+<ref name="DSEXps2UK">{{Cite web |title=2002 Releases |url=http://eurogamer.net/release-dates.php |archive-url=https://web.archive.org/web/20020602135034/http://eurogamer.net/release-dates.php |archive-date=June 2, 2002 |access-date=April 2, 2024 |website=[[Eurogamer]]}}</ref>
+
+<ref name="DSEXps2AU">{{Cite web |title=Deus Ex |url=http://www.atari.com.au/product/?action=view&id=754 |archive-url=https://web.archive.org/web/20040518175208/http://www.atari.com.au/product/?action=view&id=754 |archive-date=May 18, 2004 |access-date=April 2, 2024 |website=[[Atari, Inc. (1993–present)|Atari Australia]]}}</ref>
+
+<ref name="DXMinterview">{{cite web|url=http://www.deusex-machina.com/dxps2/interviews/interview1.asp|title=Bill Money (Ion Storm Austin) – Producer of DX PS2 and DX2 talks exclusively to DeusEx-Machina.com|website=Deus Ex Machina|date=2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20020802033929/http://www.deusex-machina.com/dxps2/interviews/interview1.asp|archive-date=August 2, 2002|url-status=dead}}</ref>
+
+<ref name="GSinterview">{{cite web|url=http://www.gamespot.com/ps2/adventure/deusextheconspiracy/preview_2858250.html|title=Deus Ex: The Conspiracy Q&A|website=[[GameSpot]]|date=March 26, 2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20040205091722/http://www.gamespot.com/ps2/adventure/deusextheconspiracy/preview_2858250.html|archive-date=February 5, 2004|url-status=dead}}</ref>
+
+<ref name="MGONinterview">{{cite web|url=http://www.mgon.com/interviews.phtml?id=127129&language=en&rel_system=3|title=Bill Money Interview|website=Media and Games Online Network|date=March 7, 2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20020319142022/http://www.mgon.com/interviews.phtml?id=127129&language=en&rel_system=3|archive-date=March 19, 2002|url-status=dead}}</ref>
+
+<ref name="CVGinterview">{{cite web|url=http://www.computerandvideogames.com/feature.cfm?sid=2783|title=Feature: "This is Deus Ex": Spector rocks on PS2|website=[[Computer and Video Games]]|page=1|date=June 19, 2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20010620005355/http://www.computerandvideogames.com/feature.cfm?sid=2783|archive-date=June 20, 2001|url-status=dead}}</ref>
+
+<ref name="ConspiracyPSPlus">{{cite web|url=https://www.eurogamer.net/herere-your-playstation-plus-extra-and-premium-games-for-june|title=Here're your PlayStation Plus Extra and Premium games for June|author=Wales, Matt|website=[[Eurogamer]]|date=June 4, 2025|access-date=August 22, 2025|archive-url=https://web.archive.org/web/20250612022526/https://www.eurogamer.net/herere-your-playstation-plus-extra-and-premium-games-for-june|archive-date=June 12, 2025|url-status=live}}</ref>
+
+<ref name="GemRemastered">{{cite web|url=https://www.gematsu.com/2025/09/deus-ex-remastered-announced-for-ps5-xbox-series-switch-and-pc|title=Deus Ex Remastered announced for PS5, Xbox Series, Switch, and PC|author=Romano, Sal|website=Gematsu|date=September 24, 2025|access-date=September 25, 2025|archive-url=https://web.archive.org/web/20250925120606/https://www.gematsu.com/2025/09/deus-ex-remastered-announced-for-ps5-xbox-series-switch-and-pc|archive-date=September 25, 2025|url-status=live}}</ref>
+
+<ref name="GIremastered">{{cite magazine|url=https://gameinformer.com/state-of-play/2025/09/24/deus-ex-is-getting-remastered-for-playstation-5|title=Deus Ex Is Getting Remastered For PlayStation 5|author=Hilliard, Kyle|magazine=[[Game Informer]]|date=September 24, 2025|access-date=September 25, 2025|archive-url=https://web.archive.org/web/20250925121128/https://gameinformer.com/state-of-play/2025/09/24/deus-ex-is-getting-remastered-for-playstation-5|archive-date=September 25, 2025|url-status=live}}</ref>
+
+<!-- Reception-->
+
+<ref name="MetaPC">{{cite web |url=https://www.metacritic.com/game/deus-ex/critic-reviews/?platform=pc |title=Deus Ex for PC |website=[[Metacritic]] |access-date=December 13, 2006 |archive-url=https://web.archive.org/web/20111221103648/http://www.metacritic.com/game/pc/deus-ex |archive-date=December 21, 2011 |url-status=live }}</ref>
+
+<ref name="MetaPS2">{{cite web|url=https://www.metacritic.com/game/deus-ex/critic-reviews/?platform=playstation-2|title=Deus Ex: The Conspiracy for PlayStation 2|website=[[Metacritic]] |access-date=September 27, 2014|archive-url=https://web.archive.org/web/20111209081757/http://www.metacritic.com/game/playstation-2/deus-ex-the-conspiracy|archive-date=December 9, 2011|url-status=live}}</ref>
+
+<ref name="Edge review">{{cite magazine |title=Deus Ex |magazine=[[Edge (magazine)|Edge]] |publisher=[[Future Publishing]] |issue=88 |pages=96–97 |date=September 2000}}</ref>
+
+<ref name="egDXrev">{{cite web |author=Fahey, Rob |title=Article - Deus Ex |url=http://www.eurogamer.net/content/r_deusex/2ontent/r_deusex |website=[[Eurogamer]] |access-date=December 20, 2019 |archive-url=https://web.archive.org/web/20000818204550/http://www.eurogamer.net/content/r_deusex/2 |archive-date=August 18, 2000 |page=2 |date=August 2000 |url-status=dead}}</ref>
+
+<ref name="GIreviewPS2">{{cite magazine|author=Leeper, Justin|title=Deus Ex: The Conspiracy - The Cerebral Assassin|magazine=[[Game Informer]]|publisher=[[GameStop]]|issue=109|date=May 2002|pages=80–81}}</ref>
+
+<ref name="GameProRev">{{cite magazine |url=http://www.gamepro.com/computer/pc/games/reviews/6030.shtml |title=Deus Ex for PC on GamePro.com |access-date=November 7, 2007 |author=Patterson, Chris |magazine=[[GamePro]] |archive-url=https://web.archive.org/web/20080508024500/http://www.gamepro.com/computer/pc/games/reviews/6030.shtml |archive-date=May 8, 2008}}</ref>
+
+<ref name="GProReviewPS2">{{cite magazine|url=http://www.gamepro.com/sony/ps2/games/reviews/22003.shtml|title=Deus Ex: The Conspiracy Review|magazine=[[GamePro]]|date=March 26, 2002|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20050919081545/http://www.gamepro.com/sony/ps2/games/reviews/22003.shtml|archive-date=September 19, 2005|url-status=dead}}</ref>
+
+<ref name="gamespot">{{cite web |url=https://www.gamespot.com/reviews/deus-ex-review/1900-2595408/ |title=Deus Ex for PC review |website=[[GameSpot]]|author=Kasavin, Greg |date=June 27, 2000 |access-date=September 22, 2006 |archive-url=https://web.archive.org/web/20120104011640/http://www.gamespot.com/deus-ex/reviews/deus-ex-review-2595408 |archive-date=January 4, 2012 |url-status=live }}</ref>
+
+<ref name="GSreviewPS2">{{cite web|url=http://www.gamespot.com/ps2/adventure/deusextheconspiracy/review.html|title=Deus Ex: The Conspiracy Review|author=Kasavin, Greg|website=[[GameSpot]]|date=April 5, 2002|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20030611192421/http://www.gamespot.com/ps2/adventure/deusextheconspiracy/review.html|archive-date=June 11, 2003|url-status=dead}}</ref>
+
+<ref name="GameSpyRev">{{cite web |url=http://archive.gamespy.com/legacy/reviews/deus_a-new.shtm |archive-url=https://web.archive.org/web/20110603232952/http://archive.gamespy.com/legacy/reviews/deus_a-new.shtm |archive-date=June 3, 2011 |title=Deus Ex Review |access-date=November 7, 2007 |last=Gard, Gino |website=[[GameSpy]] |url-status=dead }}</ref>
+
+<ref name="GSpyReviewPS2">{{cite web|url=http://www.planetps2.com/features/reviews/2002/deusex/|title=Reviews - Deus Ex: The Conspiracy (PS2)|author=Buecheler, Christopher|website=[[GameSpy]]|date=April 9, 2002|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20081203134510/http://www.planetps2.com/features/reviews/2002/deusex/|archive-date=December 3, 2008|url-status=dead}}</ref>
+
+<ref name="IGNRev">{{cite web |url=http://www.ign.com/articles/2000/06/28/deus-ex-3 |title=Deus Ex Review |date=June 27, 2000 |access-date=November 6, 2007 |last=Blevins |first=Tal |website=[[IGN]] |archive-url=https://web.archive.org/web/20121107180648/http://www.ign.com/articles/2000/06/28/deus-ex-3 |archive-date=November 7, 2012 |url-status=live}}</ref>
+
+<ref name="IGNreviewPS2">{{cite web|url=http://ps2.ign.com/articles/356/356506p1.html|title=Deus Ex: The Conspiracy Review|author=Smith, David|website=[[IGN]]|date=April 1, 2002|access-date=April 15, 2025|archive-url=https://web.archive.org/web/20100704160800/http://ps2.ign.com/articles/356/356506p1.html|archive-date=July 4, 2010|url-status=dead}}</ref>
+
+<ref name="NG">{{cite magazine|last=Lundrigan|first=Jeff|title=Deus Ex - Truly Divine|magazine=[[Next Generation (magazine)|Next Generation]]|issue=69|publisher=[[Future US|Imagine Media]]|date=September 2000|pages=96–97}}</ref>
+
+<ref name="OPMreviewPS2">{{cite magazine|author=Davison, John|title=Review: Deus Ex: The Conspiracy|magazine=[[Official U.S. PlayStation Magazine]]|publisher=[[Ziff Davis]]|issue=56|date=May 2002|page=98}}</ref>
+
+<ref name="PCGUK">{{cite magazine |url=http://www.pcgamer.co.uk/games/gamefile_review_page.asp?item_id=5413 |archive-url=https://web.archive.org/web/20020828200903/http://www.pcgamer.co.uk/games/gamefile_review_page.asp?item_id=5413 |archive-date=August 28, 2002 |title=PC Gamer UK – Deus Ex Review |date=October 2000 |last=Gillen |first=Kieron |magazine=[[PC Gamer UK]] |publisher=[[Future plc]] |access-date=July 10, 2014}}</ref>
+
+<ref name="desslocksales">{{cite magazine| author=Janicki, Stephan |title=Inside Adventure; Deus Ex Storms Europe |date=February 2001 |issue=199| magazine=[[Computer Gaming World]] | pages=127 }}</ref>
+
+<ref name="DEIWsales3">{{cite web|url=http://www.square-enix.com/eng/pdf/news/20090422_02en.pdf|title=Corporate Strategy Meeting|publisher=[[Square Enix]]|date=April 22, 2009|access-date=July 3, 2012|page=16|archive-url=https://web.archive.org/web/20130930123343/http://www.hd.square-enix.com/eng/pdf/news/20090422_02en.pdf|archive-date=September 30, 2013|url-status=live}}</ref>
+
+<ref name="100k">{{cite press release | archive-url=https://web.archive.org/web/20030402162436/http://elspa.com/about/pr/pr.asp?mode=view&t=1&id=284 | url=http://elspa.com:80/about/pr/pr.asp?mode=view&t=1&id=284 | title=A Great Start to the Year as Five More Titles Receive ELSPA Awards | date=February 25, 2002 | publisher=[[European Leisure Software Publishers Association]] | archive-date=April 2, 2003 | url-status=dead | access-date=May 11, 2019 | df=mdy-all }}</ref>
+
+<ref name="goldelspa">{{cite web |archive-url=https://web.archive.org/web/20090319031650/http://www.elspa.com/?i=3943 |url=http://www.elspa.com:80/?i=3943 |title=ELSPA Sales Awards: Gold |work=[[Entertainment and Leisure Software Publishers Association]] |archive-date=March 19, 2009 |url-status=dead }}</ref>
+
+<ref name="gamasutrasales">{{cite web|archive-url=https://web.archive.org/web/20170918063107/https://www.gamasutra.com/view/news/112220/ELSPA_Wii_Fit_Mario_Kart_Reach_Diamond_Status_In_UK.php |url=https://www.gamasutra.com/view/news/112220/ELSPA_Wii_Fit_Mario_Kart_Reach_Diamond_Status_In_UK.php |title=ELSPA: ''Wii Fit'', ''Mario Kart'' Reach Diamond Status In UK | author=Caoili, Eric | date=November 26, 2008 |work=[[Gamasutra]] |archive-date=September 18, 2017 |url-status=dead }}</ref>
+
+<ref name="pcgsales4">{{cite magazine|author=Staff|date=April 2001|volume=8|issue=4|title=It's All in the Numbers|magazine=[[PC Gamer]] |publisher=[[Future US]]|pages=40–41}}</ref>
+
+<ref name="GDC">{{cite web |url=http://www.gamechoiceawards.com/archive/gdca_1st.html |title=Archive/1st Annual Game Developers Choice Awards |work=Game Developers Choice Awards |access-date=August 25, 2012 |archive-url=https://web.archive.org/web/20150813043409/http://www.gamechoiceawards.com/archive/gdca_1st.html |archive-date=August 13, 2015 |url-status=live  }}</ref>
+
+<ref name="DICE">{{cite web |url=https://www.interactive.org/games/video_game_details.asp?idAward=2001&idGame=571 |title=4th Annual Interactive Achievement Awards: Deus Ex |work=The Academy of Interactive Arts and Sciences |access-date=July 5, 2014 |archive-url=https://web.archive.org/web/20250125004143/https://www.interactive.org/games/video_game_details.asp?idAward=2001&idGame=571 |archive-date=January 25, 2025 |url-status=live }}</ref>
+
+<ref name="Bafta">{{cite web |url=http://www.gamespot.com/news/deus-ex-receives-british-award-2649060 |title=Deus Ex Receives British Award |publisher=[[GameSpot]]|last=Walker |first=Trey |date=November 1, 2000 |access-date=August 25, 2012 |archive-url=https://web.archive.org/web/20130319090648/http://www.gamespot.com/news/deus-ex-receives-british-award-2649060 |archive-date=March 19, 2013 |url-status=dead}}</ref>
+
+<!-- Legacy -->
+
+<ref name="CVGspector">{{cite web|url=http://www.computerandvideogames.com/162842/pc-zone-votes-deus-ex-the-best-pc-game-ever/ |access-date=July 5, 2014 |title=PC Zone votes Deus Ex the best PC game ever! |date=April 26, 2007 |work=[[PC Zone]] |publisher=[[Future plc|Future]] |archive-url=https://web.archive.org/web/20150131082126/http://www.computerandvideogames.com/162842/pc-zone-votes-deus-ex-the-best-pc-game-ever/|archive-date=January 31, 2015|url-status=dead }}</ref>
+
+<ref name="1UPessential">{{cite web |url=http://www.1up.com/features/essential-70-deus-ex |archive-url=https://web.archive.org/web/20130318201514/http://www.1up.com/features/essential-70-deus-ex |url-status=dead |archive-date=March 18, 2013 |title=The Essential 100, No. 70: Deus Ex |last=Adkins |first=Nickolai |work=[[1UP.com]] |publisher=[[Ziff Davis]] |access-date=July 4, 2014}}</ref>
+
+<ref name="IGN2007">{{cite web |url=http://top100.ign.com/2007/ign_top_game_34.html |title=IGN's Top 100 Games of All Time |access-date=December 1, 2007 |year=2007 |website=[[IGN]] |archive-url=https://web.archive.org/web/20120215073545/http://top100.ign.com/2007/ign_top_game_34.html |archive-date=February 15, 2012 |url-status=dead }}</ref>
+
+<ref name="pcgam_2010read">{{cite magazine | title = PC Gamer Readers' Top 100: 20-1 | magazine = [[PC Gamer]] | date = May 12, 2010 | url = http://www.computerandvideogames.com/243708/blog/pc-gamer-readers-top-100-20-1/?site=pcg | access-date = November 17, 2010 | archive-url = https://web.archive.org/web/20110208060331/http://www.computerandvideogames.com/243708/blog/pc-gamer-readers-top-100-20-1/?site=pcg | archive-date = February 8, 2011 | url-status = dead | df = mdy-all }}</ref>
+
+<ref name="Edge1000">{{cite magazine | title = The 100 best Games To Play Today | magazine = [[Edge (magazine)|Edge]] | date = March 9, 2009 | url = http://www.edge-online.com/features/100-best-games-play-today | access-date = November 17, 2010 | archive-url = https://web.archive.org/web/20120325194117/http://www.edge-online.com/features/100-best-games-play-today | archive-date = March 25, 2012 | url-status = live | df = mdy-all }}</ref>
+
+<ref name="gamasut_bestdec">{{cite web |url=http://www.gamasutra.com/view/feature/4227/gamasutras_top_12_games_of_the_.php?page=7 |title=Gamasutra: Top 12 Games of the Decade |date=December 30, 2009 |work=Gamasutra |access-date=January 20, 2010 |archive-url=https://web.archive.org/web/20100102052255/http://www.gamasutra.com/view/feature/4227/gamasutras_top_12_games_of_the_.php?page=7 |archive-date=January 2, 2010 |url-status=dead  }}</ref>
+
+<ref name="G4alltime">{{cite web |url=http://www.g4tv.com/videos/59306/top-100-video-games-of-all-time-53-deus-ex/ |title=Top 100 Video Games of All Time #53 - Deus Ex – |website=[[G4 (American TV network)|G4TV]]|date=June 13, 2012 |access-date=January 7, 2013 |archive-url=https://web.archive.org/web/20130310120647/http://www.g4tv.com/videos/59306/top-100-video-games-of-all-time-53-deus-ex/ |archive-date=March 10, 2013 |url-status=live }}</ref>
+
+<ref name="PolySim">{{cite web|url=http://www.polygon.com/2016/8/18/12539476/what-makes-an-immersive-sim-and-why-are-they-staging-a-comeback |title=What makes an Immersive Sim, and why are they staging a comeback? |first=Thomas |last=Biery |date=August 18, 2016 |access-date=April 7, 2017 |work=[[Polygon (website)|Polygon]] |url-status=live |archive-url=https://web.archive.org/web/20170303121527/http://www.polygon.com/2016/8/18/12539476/what-makes-an-immersive-sim-and-why-are-they-staging-a-comeback |archive-date=March 3, 2017 }}</ref>
+
+<ref name="PSG2017">{{cite web |url=http://www.pcgamer.com/the-uncertain-future-of-games-like-deus-ex-and-dishonored/ |title=The uncertain future of games like Deus Ex and Dishonored |last=Macgregor |first=Jody |date=August 15, 2017| access-date = August 15, 2017 |website=[[PC Gamer]]}}</ref>
+
+<ref name="RPSsim">{{cite web|url=https://www.rockpapershotgun.com/the-10-best-immersive-sims-on-pc|title=The 10 best immersive sims on PC|author=Caldwell, Brendan|website=[[Rock Paper Shotgun]]|date=July 25, 2024|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20240725163456/https://www.rockpapershotgun.com/the-10-best-immersive-sims-on-pc|archive-date=July 25, 2024|url-status=live}}</ref>
+
+<ref name="Spector2015">{{cite web|title=Deus Ex Creators Talk 15th Anniversary|url=http://ie.ign.com/videos/2015/06/26/dx15-the-legacy-of-deus-ex|website=[[IGN]]|date=June 26, 2015 |access-date=March 25, 2017|archive-date=October 9, 2021|archive-url=https://web.archive.org/web/20211009154417/https://www.ign.com/videos/2015/06/26/dx15-the-legacy-of-deus-ex|url-status=dead}}</ref>
+
+<ref name="DSEXmovieA">{{cite web|url=https://www.gamespot.com/articles/e3-2002-deus-ex-film-in-the-works/1100-2866775/|title=E3 2002: Deus Ex film in the works|author=Walker, Trey|website=[[GameSpot]]|date=May 21, 2002|access-date=April 16, 2025|archive-url=https://web.archive.org/web/20131031175223/https://www.gamespot.com/articles/e3-2002-deus-ex-film-in-the-works/1100-2866775/|archive-date=October 31, 2013|url-status=dead}}</ref>
+
+<ref name="DSEXmovieB">{{cite web|last1=Conrad|first1=Jeremy|last2=Adams|first2=Dan|title=Deus Ex Update|url=http://movies.ign.com/articles/388/388626p1.html|url-status=live|archive-url=https://web.archive.org/web/20111219234232/http://movies.ign.com/articles/388/388626p1.html|archive-date=December 19, 2011|access-date=December 19, 2006|website=[[IGN]]}}</ref>
+
+<ref name="DEIWreveal">{{cite web|url=https://www.gamespot.com/articles/game-designers-needed-for-deus-ex-2/1100-2679823/|title=Game designers needed for Deus Ex 2|author=Walker, Trey|website=[[GameSpot]]|date=May 17, 2001|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20170801111830/https://www.gamespot.com/articles/game-designers-needed-for-deus-ex-2/1100-2679823/|archive-date=August 1, 2017|url-status=live}}</ref>
+
+<ref name="DEIWconsoles">{{cite web|url=http://uk.ign.com/articles/2001/05/18/e3-2001-thief-iii-and-deus-ex-2-come-to-consoles-first|title=E3 2001: Thief III and Deus Ex 2 Come To Consoles First|website=[[IGN]]|date=May 18, 2001|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20170801112136/http://www.ign.com/articles/2001/05/18/e3-2001-thief-iii-and-deus-ex-2-come-to-consoles-first|archive-date=August 1, 2017|url-status=live}}</ref>
+
+<ref name="DEIWsmithbare">{{cite web|url=http://www.gamespy.com/pc/deus-ex-invisible-war/6533p1.html|title=Smith and Bare: Building an Invisible War|author=Turner, Benjamin|publisher=[[GameSpy]]|date=February 13, 2003|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20140524094408/http://www.gamespy.com/pc/deus-ex-invisible-war/6533p1.html|archive-date=May 24, 2014|url-status=live}}</ref>
+
+<ref name="DEIWmusic">{{cite web|url=https://www.gamespot.com/articles/deus-ex-invisible-war-soundtrack-released/1100-6093356/|title=Deus Ex: Invisible War soundtrack released|website=[[GameSpot]]|date=April 9, 2004|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20170730112500/https://www.gamespot.com/articles/deus-ex-invisible-war-soundtrack-released/1100-6093356/|archive-date=July 30, 2017|url-status=live}}</ref>
+
+<ref name="DEIWdemo">{{cite web|url=https://www.gamespot.com/articles/deus-ex-invisible-war-demo-debuts/1100-6084488/|title=Deus Ex: Invisible War demo debuts|author=Thorsen, Tor|website=[[GameSpot]]|date=November 21, 2003|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20170801114103/https://www.gamespot.com/articles/deus-ex-invisible-war-demo-debuts/1100-6084488/|archive-date=August 1, 2017|url-status=live}}</ref>
+
+<ref name="DEIWeurope">{{cite web|url=http://www.eurogamer.net/games/deus-ex-invisible-war|title=Deus Ex: Invisible War on Eurogamer|website=[[Eurogamer]]|access-date=August 1, 2017|archive-url=https://web.archive.org/web/20150908235231/http://www.eurogamer.net/games/deus-ex-invisible-war|archive-date=September 8, 2015|url-status=live}}</ref>
+
+<ref name="EuroSequels">{{cite web|url=http://www.eurogamer.net/articles/2014-11-16-ion-storms-lost-deus-ex-sequels|title=Ion Storm's lost Deus Ex Sequels|author=Martin, Joe|date=November 16, 2014|website=[[Eurogamer]]|access-date=November 17, 2014|archive-url=https://web.archive.org/web/20160304063706/http://www.eurogamer.net/articles/2014-11-16-ion-storms-lost-deus-ex-sequels|archive-date=March 4, 2016|url-status=live}}</ref>
+
+<ref name="EuroInterview2010">{{cite web|url=http://www.eurogamer.net/articles/deus-ex-human-revolution-e3-2010-trailer|title=Deus Ex: Human Revolution|author=Bramwell, Tom|website=[[Eurogamer]]|date=June 4, 2010|access-date=July 28, 2016|archive-url=https://web.archive.org/web/20160315160444/http://www.eurogamer.net/articles/deus-ex-human-revolution-e3-2010-trailer|archive-date=March 15, 2016|url-status=live}}</ref>
+
+<ref name="DeusExNextGen">{{cite web|url=http://www.vg247.com/2013/10/02/deus-ex-title-in-the-works-for-ps-and-next-gen/|title=Deus Ex title in the works for PC and next-gen, Deus Ex: Human Revolution – Director's Cut releasing this month|author=Nunneley, Stephany|website=[[VG247]]|date=October 2, 2013|access-date=October 2, 2013|archive-url=https://web.archive.org/web/20160303170352/http://www.vg247.com/2013/10/02/deus-ex-title-in-the-works-for-ps-and-next-gen/|archive-date=March 3, 2016|url-status=live}}</ref>
+
+}}
+
+== External links ==
+{{Wikiquote|Deus Ex}}
+* [https://web.archive.org/web/20100124021807/http://www.eidosgames.com/games/info.html?gmid=109 Official page] on [[Eidos Interactive|Eidos]] site
+*{{moby game|id=/1749|name=''Deus Ex''}}
+
+{{Portal bar|2000s|Speculative fiction|Video games}}
+{{Deus Ex|state=uncollapsed}}
+{{Ion Storm}}
+{{BAFTA Games BG}}
+
+{{Authority control}}
+
+[[Category:2000 video games]]
+[[Category:Action role-playing video games]]
+[[Category:Aspyr games]]
+[[Category:BAFTA Interactive Entertainment Award for Best Games winners]]
+[[Category:Cancelled Linux games]]
+[[Category:Classic Mac OS games]]
+[[Category:Cyberpunk video games]]
+[[Category:Deus Ex]]
+[[Category:Eidos Interactive games]]
+[[Category:Existentialist video games]]
+[[Category:First-person shooters]]
+[[Category:Game Developers Choice Award winners]]
+[[Category:Immersive sims]]
+[[Category:Ion Storm games]]
+[[Category:Multiplayer and single-player video games]]
+[[Category:Multiplayer online games]]
+[[Category:Nanopunk]]
+[[Category:PlayStation 2 games]]
+[[Category:Postcyberpunk]]
+[[Category:Stealth video games]]
+[[Category:Triad video games]]
+[[Category:Unreal Engine 1 games]]
+[[Category:Video games about Area 51]]
+[[Category:Video games about conspiracy theories]]
+[[Category:Video games about viral outbreaks]]
+[[Category:Video games designed by Harvey Smith]]
+[[Category:Video games developed in the United States]]
+[[Category:Video games directed by Warren Spector]]
+[[Category:Video games produced by Warren Spector]]
+[[Category:Video games scored by Alexander Brandon]]
+[[Category:Video games scored by Dan Gardopée]]
+[[Category:Video games scored by Michiel van den Bos]]
+[[Category:Video games set in California]]
+[[Category:Video games set in France]]
+[[Category:Video games set in Hong Kong]]
+[[Category:Video games set in Nevada]]
+[[Category:Video games set in New York City]]
+[[Category:Video games set in Paris]]
+[[Category:Video games set in 2052]]
+[[Category:Video games with multiple endings]]
+[[Category:Windows games]]
+[[Category:Works about globalism]]
+[[Category:Works about the Illuminati]]
+[[Category:Video games about assassinations]]
+[[Category:Video games about terrorism]]

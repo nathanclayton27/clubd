@@ -1,0 +1,654 @@
+{
+ "A Quiet Place: The Road Ahead": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2024
+  ]
+ },
+ "Alien: Isolation": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2014,
+   2014,
+   2015,
+   2015,
+   2019,
+   2021
+  ]
+ },
+ "Amnesia: The Bunker": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 1,
+  "prose_plain": 0,
+  "years": [
+   2023,
+   2023
+  ]
+ },
+ "Arx Fatalis": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2002,
+   2002,
+   2024,
+   2024,
+   2002,
+   2002,
+   2023,
+   2023,
+   2002,
+   2002,
+   2002,
+   2024,
+   2003,
+   2003,
+   2024,
+   2024,
+   2003,
+   2003,
+   2023,
+   2023,
+   2004,
+   2004,
+   2023,
+   2004
+  ]
+ },
+ "Azrael's Tear": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   1996,
+   2018,
+   1996,
+   1996,
+   1997,
+   2023,
+   1997
+  ]
+ },
+ "BioShock": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2007,
+   2007,
+   2007,
+   2008,
+   2008,
+   2009,
+   2014
+  ]
+ },
+ "BioShock 2: Minerva's Den": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2010,
+   2010,
+   2011,
+   2012,
+   2016,
+   2016
+  ]
+ },
+ "BioShock: The Collection": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": []
+ },
+ "Consortium (video game)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2014,
+   2013,
+   2014
+  ]
+ },
+ "Core Decay": {
+  "genre_field": true,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": []
+ },
+ "Cruelty Squad": {
+  "genre_field": true,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2021
+  ]
+ },
+ "Cry of Fear": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2013
+  ]
+ },
+ "Dark Messiah of Might and Magic": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2006,
+   2006,
+   2006,
+   2006,
+   2008,
+   2008
+  ]
+ },
+ "Deathloop": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 1,
+  "prose_plain": 4,
+  "years": [
+   2021,
+   2022
+  ]
+ },
+ "Deus Ex (video game)": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 2,
+  "years": [
+   2000,
+   2000,
+   2000,
+   2000,
+   2000,
+   2002,
+   2002,
+   2002
+  ]
+ },
+ "Deus Ex: Human Revolution": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2011,
+   2011,
+   2011,
+   2011,
+   2012,
+   2013,
+   2013,
+   2013
+  ]
+ },
+ "Deus Ex: Invisible War": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2003,
+   2004
+  ]
+ },
+ "Deus Ex: Mankind Divided": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2016,
+   2016,
+   2016,
+   2017
+  ]
+ },
+ "Dishonored": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2012,
+   2012,
+   2012,
+   2012,
+   2012,
+   2015,
+   2015,
+   2015
+  ]
+ },
+ "Dishonored 2": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2016
+  ]
+ },
+ "Dishonored: Death of the Outsider": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2017
+  ]
+ },
+ "E.Y.E.: Divine Cybermancy": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2011
+  ]
+ },
+ "Fear & Hunger": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2018
+  ]
+ },
+ "Gloomwood": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 2,
+  "years": [
+   2022
+  ]
+ },
+ "Gone Home": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2013,
+   2016,
+   2016,
+   2018,
+   2018
+  ]
+ },
+ "Hitman (2016 video game)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": []
+ },
+ "Hitman 2 (2018 video game)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2018,
+   2020
+  ]
+ },
+ "Hitman 3": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 2,
+  "prose_plain": 0,
+  "years": [
+   2021,
+   2021,
+   2024,
+   2025,
+   2025,
+   2025,
+   2026
+  ]
+ },
+ "Indiana Jones and the Great Circle": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 3,
+  "prose_plain": 0,
+  "years": [
+   2024,
+   2024,
+   2025,
+   2026
+  ]
+ },
+ "Mosa Lina": {
+  "genre_field": true,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 5,
+  "years": [
+   2023,
+   2023,
+   2024,
+   2025
+  ]
+ },
+ "Neon Struct": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2015
+  ]
+ },
+ "Pathologic": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2005,
+   2006,
+   2015
+  ]
+ },
+ "Pathologic 2": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2019,
+   2020
+  ]
+ },
+ "Perfect Dark (cancelled video game)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": []
+ },
+ "Peripeteia (video game)": {
+  "genre_field": true,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 3,
+  "years": [
+   2025
+  ]
+ },
+ "Prey (2017 video game)": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 10,
+  "years": [
+   2017
+  ]
+ },
+ "Psycho Patrol R": {
+  "genre_field": true,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": []
+ },
+ "Shadows of Doubt": {
+  "genre_field": true,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2023,
+   2024
+  ]
+ },
+ "Skin Deep (video game)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 1,
+  "prose_plain": 2,
+  "years": [
+   2025
+  ]
+ },
+ "System Shock": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 3,
+  "years": [
+   1994,
+   1994,
+   1994,
+   1994,
+   2015
+  ]
+ },
+ "System Shock (2023 video game)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2023,
+   2024,
+   2025
+  ]
+ },
+ "System Shock (series)": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": []
+ },
+ "System Shock 2": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   1999,
+   1999,
+   1999,
+   2013,
+   2014,
+   2025,
+   2025,
+   2026
+  ]
+ },
+ "The Chronicles of Riddick: Assault on Dark Athena": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2009,
+   2009,
+   2009,
+   2024,
+   2010
+  ]
+ },
+ "The Chronicles of Riddick: Escape from Butcher Bay": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2004,
+   2004,
+   2004,
+   2004
+  ]
+ },
+ "The Dark Mod": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": []
+ },
+ "Thief II": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2000,
+   2000
+  ]
+ },
+ "Thief Simulator": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2018,
+   2019,
+   2020
+  ]
+ },
+ "Thief: Deadly Shadows": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2004,
+   2004
+  ]
+ },
+ "Thief: The Dark Project": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   1998,
+   1998,
+   2000,
+   2019,
+   1998,
+   1998,
+   2023
+  ]
+ },
+ "Ultima Underworld II: Labyrinth of Worlds": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   1993,
+   1993,
+   1995,
+   1995,
+   2011,
+   2011,
+   2012,
+   2013
+  ]
+ },
+ "Ultima Underworld: The Stygian Abyss": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   1992,
+   1992,
+   1993,
+   1993,
+   1997,
+   2002
+  ]
+ },
+ "Underworld Ascendant": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2018,
+   2019,
+   2019,
+   2019
+  ]
+ },
+ "Vampire: The Masquerade – Bloodlines": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2004,
+   2004
+  ]
+ },
+ "Void Bastards": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 1,
+  "years": [
+   2019,
+   2020
+  ]
+ },
+ "Weird West (video game)": {
+  "genre_field": false,
+  "in_genre_article": true,
+  "prose_hedged": 2,
+  "prose_plain": 0,
+  "years": [
+   2022,
+   2023
+  ]
+ },
+ "Wolfenstein: Youngblood": {
+  "genre_field": false,
+  "in_genre_article": false,
+  "prose_hedged": 0,
+  "prose_plain": 0,
+  "years": [
+   2019,
+   2019,
+   2021,
+   2021,
+   2019,
+   2019
+  ]
+ }
+}

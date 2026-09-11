@@ -1,0 +1,89 @@
+{{Short description|2018 video game}}
+{{Infobox video game
+| title = Underworld Ascendant
+| image = Underworld Ascendant cover.png
+| alt = 
+| developer = [[OtherSide Entertainment]]{{efn|Additional work by [[Fullbright (company)|Fullbright]]}}
+| publisher = [[505 Games]]
+| designer = Tim Stellmach
+| producer = [[Paul Neurath]]
+| artist = Nate Wells
+| composer = 
+| engine = [[Unity (game engine)|Unity]]
+| series = ''[[Ultima (series)#Spin-offs and other games|Underworld]]''
+| released = {{ubl|'''Windows'''|November 15, 2018|'''PlayStation 4'''|June 20, 2019|'''Xbox One'''|June 26, 2019|'''Linux, macOS'''|August 19, 2019}}
+| genre = [[Action role-playing game|Action role-playing]], [[dungeon crawl]]er
+| modes = [[Single-player video game|Single-player]]
+| platforms = {{cslist|[[Windows]]|[[PlayStation 4]]|[[Xbox One]]|[[Linux]]|[[macOS]]}}
+}}
+
+'''''Underworld Ascendant''''' is a [[first-person (video games)|first-person]] [[action role-playing game]] developed by [[Otherside Entertainment]] and published by [[505 Games]]. It is the sequel to ''[[Ultima Underworld: The Stygian Abyss]]'' and ''[[Ultima Underworld II: Labyrinth of Worlds]]''. Players assume the role of the [[Avatar (Ultima)|Avatar]], as they return to the Stygian Abyss. As in the original Ultima games, there is an emphasis on non-linear progression, simulated systems, and [[emergent gameplay]]. It was released on [[Microsoft Windows]] on November 15, 2018.
+
+==Gameplay==
+{{Cleanup rewrite|name=Rewrite section||2=section|date=November 2018}}
+Players assume the role of the [[Avatar (Ultima)|Avatar]], a human magically transported into the Underworld.  As per the original ''Underworld'' games, players create their characters by selecting an assortment of skills. They are not restricted to predetermined [[character class]]es.  The game is played from a [[First-person (video games)|first-person]] perspective.<ref name=GS/><ref name=PCG/> The Stygian Abyss is inhabited by three factions vying for its control, Dark Elves, Dwarves and Shamblers.  The player can also encounter [[non-player character]]s of no factional alignment.  Supporting any faction will affect the balance of power in the Abyss, and how factions react to the player.<ref name=PCI/><ref name=RB/>
+
+The game aims to present multiple unscripted solutions to scenarios present in the game, using simulated systems dubbed the "Improvisation Engine," allowing for [[emergent gameplay|emergent behaviour]] with a wide range of player options rather than discrete puzzle solutions.<ref name=GS/><ref name=PCG/><ref name=RB/>
+
+==Development==
+Paul Neurath, the designer of the original ''Underworld'' games, had been in discussion with [[Electronic Arts|EA]] on-and-off for 20 years regarding working again in the ''Underworld'' universe.  In 2014, EA granted Neurath a license to use the ''Underworld'' setting, lore and characters, though this did not allow for the use of the ''[[Ultima (series)|Ultima]]'' brand.  With the license in place, Neurath founded OtherSide Entertainment, and ''Underworld Ascension'' was announced in July 2014.<ref name=EG/>
+
+In February 2015, OtherSide took the game, renamed ''Underworld Ascendant'', to [[Kickstarter]].  OtherSide hoped to raise $600,000 towards development of the game, and the crowdfunding campaign concluded in March 2015 with $860,356 raised.  Though successful, the campaign left some goals unfunded such as [[Mod (video gaming)|modding tools]] and [[Cooperative video game|cooperative gameplay]].<ref name=PCI/><ref name=RB/><ref name=KS/> Recognizing that a demanding RPG such as ''Underworld Ascendant'' could not capture a mass-market audience, Neurath limited the game's budget, believing that, "if you’re spending 50 million dollars you need to reach as many people as possible."<ref name=RPS/>
+
+With a core team of only six, Neurath describes OtherSide as a mini-studio with an "almost tribal culture", where "everybody in there knows each other really well, they know their strengths and weaknesses and foibles", allowing for close communication and collaboration.<ref name=GS/><ref name=PCG/>  The team at OtherSide included other [[Looking Glass Studios]] veterans, such as Tim Stellmach, Steve Pearsall and Robb Waters.  Advisors include [[Austin Grossman]], the lead writer of ''[[Ultima Underworld II: Labyrinth of Worlds|Ultima Underworld II]]'' and [[Warren Spector]], producer of the original ''Underworld'' games.<ref name=PCG/><ref name=PCI/>
+
+After the [[Kickstarter]] campaign, the game continued to raise funding on its website, going over {{US$|932,000}} with an estimated increase of more than {{US$|60,000}}.<ref>{{cite web|url=https://www.underworldascendant.com/store/index.php|title=underworld ascendant|access-date=September 15, 2016|website=underworldascendant.com|archive-date=August 14, 2016|archive-url=https://web.archive.org/web/20160814043759/https://www.underworldascendant.com/store/index.php|url-status=dead}}</ref> In August 2017, [[505 Games]] announced that they will serve as the game's publisher.<ref>{{cite web|url=https://www.gamedeveloper.com/business/505-signs-on-to-publish-otherside-s-upcoming-rpg-i-underworld-ascendant-i-|title=505 signs on to publish OtherSide's upcoming RPG Underworld Ascendant|first=Alex|last=Wawro|work=[[Gamasutra]]|date=August 17, 2017|access-date=August 18, 2017}}</ref>
+
+In February 2018, Steve Gaynor of [[Fullbright (company)|Fullbright]] announced that two of the company's [[Level (video games)|level]] designers, [[Nina Freeman]] and Tynan Wales—as well as the studio's 3D environment artist, Kate Craig—would be contributing additional work to ''Underworld Ascendant''.<ref>{{cite tweet |user=Fullbright |number=959533550834917377 |date=2 February 2018 |title=Something fun we're getting to do: between major projects at Fullbright, we're helping out some other studios-- including @hentaiphd & @whining contributing level design to @OtherSide_Games's upcoming immersive sim revival Underworld Ascendant! }}</ref><ref>{{cite tweet |user=Fullbright |number=959535115935207424 |date=2 February 2018 |title=Oh, and I almost forgot-- @koalaparty just signed on to help out for a few months with decorating their environments-- so if you catch a hint of the feel of Gone Home's mansion or Tacoma's space station in the Underworld.. that's Kate! :) Thanks for having us, @OtherSide_Games! }}</ref>
+
+Though originally slated for a September 2018 release, OtherSide released the game for [[Windows]] via [[Steam (service)|Steam]] on November 15, 2018.<ref>{{cite web | url = https://www.vg247.com/2018/08/20/underworld-ascendant-gets-official-november-release-date/ | title = Underworld Ascendant gets an official November release date | first=  Marshall | last=  Lemon | date = August 20, 2018 | access-date = August 20, 2018 | work = [[VG247]] }}</ref><ref>{{Cite web |last=Vitale |first=Adam |date=August 20, 2018 |title=''Underworld Ascendant'' launches for Steam on November 15; coming to PS4, Xbox One, and Switch next year |url=https://www.rpgsite.net/news/7609-underworld-ascendant-launches-for-steam-on-november-15-coming-to-ps4-xbox-one-and-switch-next-year |access-date=July 13, 2024 |website=RPG Site |language=en}}</ref> Ports for [[PlayStation 4]] and [[Xbox One]] were released the following year on June 20 and June 26, respectively,<ref>{{Cite web |last=Deogracias |first=Elisha |date=June 20, 2019 |title=''Underworld Ascendant'' available now on PlayStation 4, comes with quality-of-life updates |url=https://gamingtrend.com/news/underworld-ascendant-available-now-on-playstation-4-comes-with-quality-of-life-updates/ |access-date=July 13, 2024 |website=GamingTrend |language=en-US}}</ref><ref>{{Cite web |last=Watton |first=Neil |date=June 26, 2019 |title=Return to The Stygian Abyss as ''Underworld Ascendant'' launches on Xbox One |url=https://www.thexboxhub.com/return-to-the-stygian-abyss-as-underworld-ascendant-launches-on-xbox-one/ |access-date=July 13, 2024 |website=TheXboxHub |language=en-GB}}</ref> while ports for [[Linux]] and [[macOS]] were released two months later on August 19.<ref>{{Cite web |last=BTRE |date=August 20, 2019 |title=''Underworld Ascendant''s Linux port has now been released |url=https://www.gamingonlinux.com/2019/08/underworld-ascendants-linux-port-has-now-been-released/ |access-date=July 13, 2024 |website=GamingOnLinux |language=en}}</ref>
+
+==Reception==
+{{Expand section|date=November 2018}}
+{{Video game reviews
+| MC = 37/100<ref name="auto">{{cite web|url=https://www.metacritic.com/game/underworld-ascendant/|title=''Underworld Ascendant''|website=[[Metacritic]]|access-date=November 29, 2018}}</ref>
+| GSpot = 2/10<ref name="auto1">{{cite web|url=https://www.gamespot.com/reviews/underworld-ascendant-review-going-under/1900-6417042/|title=Underworld Ascendant Review: Going Under|date=November 25, 2018|access-date=November 29, 2018|website=[[GameSpot]]}}</ref>
+| PCGUS = 25/100<ref>{{cite web|url=https://www.pcgamer.com/underworld-ascendant-review/|title=UNDERWORLD ASCENDANT REVIEW|date=November 21, 2018|access-date=November 29, 2018|website=[[PC Gamer]]}}</ref>
+| EuroG = Avoid<ref>{{cite web |last1=Evans-Thirlwell |first1=Edward |title=Underworld: Ascendant review - a strangely essential development disaster |url=https://www.eurogamer.net/articles/2018-11-24-underworld-ascendant-review-a-strangely-essential-development-disaster |website=[[Eurogamer]] |date=30 November 2018 |access-date=3 October 2021}}</ref>
+| IGN = 3/10<ref>{{cite web |last1=Schmeyer |first1=DM |title=Underworld: Ascendant review - a strangely essential development disaster |url=https://www.ign.com/articles/2018/11/29/underworld-ascendant-review |website=[[IGN]] |date=29 November 2018 |access-date=3 October 2021}}</ref>
+| RPG = 1.5/5<ref>{{cite web |last1=Hanley |first1=Joe |title=Underworld Ascendant Review
+|url=https://rpgamer.com/review/underworld-ascendant-review/ |website=RPGamer |date=14 January 2019 |access-date=3 October 2021}}</ref>
+}}
+Upon release ''Underworld Ascendant'' received generally negative reviews, with an aggregated score of 37/100 on [[Metacritic]].<ref name="auto"/> Many critics noted the game appeared to be in an unfinished state, with many [[software bug]]s and partially implemented features. ''IGN'' concluded the title was "just broken," <ref>{{cite web|url=https://www.ign.com/articles/2018/11/29/underworld-ascendant-review|title=Underworld Ascendant Review|date=November 29, 2018|access-date=November 29, 2018|website=[[IGN]]}}</ref> GameSpot noted " wherever you go your progress is constantly chafed by an all-pervading lack of refinement."<ref name="auto1"/> ''[[Rock, Paper, Shotgun]]'' declined to review the title, asserting that it was "just not in a fit state to be released, and as such, not in a fit state to be reviewed."<ref>{{cite web|url=https://www.rockpapershotgun.com/2018/11/21/underworld-ascendant-is-unfinished/|title=This is not a review of the wholly unfinished Underworld Ascendant|date=November 21, 2018|access-date=August 12, 2019|website=[[Rock, Paper, Shotgun]]}}</ref> Particular criticism was given to its limited and poorly telegraphed [[Saved game|save system]] that, upon loading, would send players back to the start of the current level regardless of progress.
+
+On February 14, 2019, Otherside Entertainment released a substantial update aimed at addressing many criticisms of the game at launch. This update brought with it the inclusion of a functional free save system, changes to the level design and game flow, refinements to gameplay mechanics and [[Artificial intelligence in video games|enemy behaviors]], optimized [[Computer graphics lighting|lighting]], and numerous bug fixes.<ref>{{cite web|url=https://www.pcgamer.com/underworld-ascendant-devs-overhaul-world-structure-story-and-quest-design/|title=Underworld Ascendant devs overhaul world structure, story and quest design|first=Samuel|last=Horti|website=PC Gamer|date=16 February 2019}}</ref>
+
+== Notes ==
+{{Notelist}}
+
+==References==
+<references>
+
+<ref name=KS>{{cite web| url=https://www.kickstarter.com/projects/othersidegames/underworld-ascendant/description| title=Underworld Ascendant| author=[[OtherSide Entertainment]]| publisher=[[Kickstarter]]| date=2015-02-04| access-date=2016-04-30}}</ref>
+<ref name=EG>{{cite web| url=http://www.eurogamer.net/articles/2014-07-30-underworld-ascension-the-game-that-took-20-years-to-sign| title=Underworld Ascendant: The game that took 20 years to sign| author=Robert Purchese| work=[[Eurogamer]]| date=2014-07-30| access-date=2016-04-30}}</ref>
+<ref name=PCG>{{cite web| url=http://www.pcgamer.com/underworld-ascendant-interview-how-to-make-a-sequel-to-a-22-year-old-classic/| title=Underworld Ascendant interview: making a sequel to a 22 year old classic| author=Andy Chalk| work=[[PC Gamer]]| date=2015-02-04| access-date=2016-04-30}}</ref>
+<ref name=PCI>{{cite web| url=http://www.pcinvasion.com/underworld-ascendant-interview-paul-neurath-on-immersive-design| title=Underworld Ascendant Interview: Paul Neurath on immersive design| author=Peter Parrish| work=PC Invasion| date=2015-02-06| access-date=2016-04-30}}</ref>
+<ref name=RPS>{{cite web| url=https://www.rockpapershotgun.com/2015/02/10/beyond-the-looking-glass-underworld-ascendant-interview/| title=Beyond Looking Glass: Underworld Ascendant Interview| author=Adam Smith| work=[[Rock, Paper, Shotgun]]| date=2015-02-10| access-date=2016-04-30}}</ref>
+<ref name=RB>{{cite web| url=http://www.redbull.com/en/games/stories/1331705636079/underworld-ascendant-kickstarter-interview| title=Underworld Ascendant: A monster from the deep| author=Rich Wordsworth| work=[[Red Bull]]| date=2015-02-17| access-date=2016-04-30}}</ref>
+<ref name=GS>{{cite web| url=http://www.gamespot.com/articles/the-legendary-designer-behind-thief-and-system-sho/1100-6431731/| title=The Legendary Designer Behind Thief and System Shock Returns with Underworld Ascendant| author=Scott Butterworth| work=[[GameSpot]]| date=2015-10-26| access-date=2016-04-30}}</ref>
+
+</references>
+
+==External links==
+*[http://www.underworldascendant.com/ Official website]
+
+{{Portal bar|2010s|Speculative fiction|United States|Video games}}
+{{Ultima}}
+
+[[Category:2018 video games]]
+[[Category:505 Games games]]
+[[Category:Action role-playing video games]]
+[[Category:Dungeon crawler video games]]
+[[Category:Immersive sims]]
+[[Category:Kickstarter-funded video games]]
+[[Category:Linux games]]
+[[Category:MacOS games]]
+[[Category:Single-player video games]]
+[[Category:Ultima (series)]]
+[[Category:Video games developed in the United States]]
+[[Category:Windows games]]

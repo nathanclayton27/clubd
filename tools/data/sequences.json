@@ -109,6 +109,26 @@
               ["satoshi-kon|sk-pa-7"], ["satoshi-kon|sk-pa-8"], ["satoshi-kon|sk-pa-9"],
               ["satoshi-kon|sk-pa-10"], ["satoshi-kon|sk-pa-11"],
               ["satoshi-kon|sk-pa-12"], ["satoshi-kon|sk-pa-13"]]
+    },
+    {
+      "_why": "Immersive sims is UNORDERED, so its three direct sequels need",
+      "_why2": "saying. System Shock 2's own article: the story was changed",
+      "_why3": "during production into a sequel to the 1994 game.",
+      "name": "System Shock",
+      "run": [["immersive|ims-ss1"], ["immersive|ims-ss2"]]
+    },
+    {
+      "_why": "\"It is the sequel to 2012's Dishonored\" - and the second game",
+      "_why2": "opens from where the first one leaves the throne.",
+      "name": "Dishonored",
+      "run": [["immersive|ims-dishonored"], ["immersive|ims-dishonored2"]]
+    },
+    {
+      "_why": "Mankind Divided is set two years after Human Revolution with the",
+      "_why2": "same protagonist. The original Deus Ex needs neither first: both",
+      "_why3": "of these are prequels to it.",
+      "name": "Deus Ex (Jensen)",
+      "run": [["immersive|ims-hr"], ["immersive|ims-mankind"]]
     }
   ],
   "_notrun": [

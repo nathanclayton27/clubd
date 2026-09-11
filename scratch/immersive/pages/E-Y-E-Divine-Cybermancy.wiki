@@ -1,0 +1,107 @@
+{{Short description|2011 video game}}
+{{Use dmy dates|date=July 2021}}
+{{Infobox video game
+| title = E.Y.E: Divine Cybermancy
+| image = EyeDivine.jpg
+| caption = 
+| developer = [[Streum On Studio]]
+| publisher = Streum On Studio
+| director = Jonathan Cacherat
+| programmer = Jonathan Cacherat
+| artist = Aurélien Hubert
+| writer = Jonathan Cacherat
+| composer = Olivier Zuccaro<br>Pierrick Le Nestour
+| released = {{vgrelease|WW|{{Start date|2011|07|29|df=y}}}}
+| engine = [[Source (game engine)|Source]]
+| designer = 
+| platforms = [[Microsoft Windows]]
+| genre = [[First-person shooter]], [[Action role-playing game|action role-playing]]
+}}
+
+'''''E.Y.E: Divine Cybermancy''''' is an [[action role-playing]] [[first-person shooter]] video game developed by [[Streum On Studio]], and built using [[Valve Corporation|Valve]]'s [[Source engine]]. It is a [[cyberpunk]] themed game based on an unreleased, private table-top role-playing game, ''A.V.A.'', developed by Streum On Studio in 1998. Streum-On-Studio have stated that it is "unlikely" that "A.V.A." will be sold publicly in the future.<ref name="Q&A on EYE">{{cite web |last1=Szczepaniak |first1=John |title=Q&A on EYE: Divine Cybermancy with Streum-On-Studio |url=https://www.gamedeveloper.com/design/q-a-on-eye-divine-cybermancy-with-streum-on-studio |website=Game Developer |access-date=17 October 2021 |language=en |date=17 May 2013}}</ref><ref>{{cite web |url=https://worthplaying.com/article/2011/1/28/news/79533/ |title='E.Y.E : Divine Cybermancy' - New Screens |author=Rainier |publisher=Worthplaying |date=28 January 2011 |accessdate=15 February 2011 |archive-date=18 July 2011 |archive-url=https://web.archive.org/web/20110718115040/http://worthplaying.com/article/2011/1/28/news/79533/ |url-status=live }}</ref><ref>{{cite web |url=http://eye.streumon-studio.com/index.php?page=game_details |title=E.Y.E: Divine Cybermancy - Game Details |publisher=Streum On Studios |accessdate=30 July 2011}}</ref> The game, also a "spiritual successor/ pseudo-follow up" to their [[Half-Life (video game)|Half Life]] [[Video_game_modding|mod]] Syndicate Black Ops, spent three years in development before being released on [[Steam (service)|Steam]] in 2011.<ref name="Q&A on EYE" />
+
+== Storyline ==
+''E.Y.E: Divine Cybermancy'' is set in a dystopian future. The player takes the role of an E.Y.E. member, a secretive and elite army of demon-fighting psi-cybernetic warrior-monks, the military wing of an ancient demon-fighting cult called the Secreta Secretorum that dates back before mankind colonized space. With access to advanced technology, each member is infused with cybernetics, psionic training, and genetic modification.
+
+A mystical alien army - the "Meta-Streumonic Force", supposedly the psychic manifestation of countless environments and races destroyed by colonization efforts, rampages through all of known space. Taking advantage of this chaos, the Secreta Secretorum is attempting to seize power from the all-powerful Federation, the current human government, spanning countless worlds under its corrupt fist, made of various governments and megacorporations, weakened from the Meta-Streumic Force's attacks.
+
+To complicate matters, E.Y.E. is composed of two groups, the Jian Shang Di and the Culter Dei, the player belonging to the latter. Once proud allies in the past, they are currently in the middle of an unofficial and secret civil war.
+
+The player wakes up from a botched operation that left his comrades dead, with no memory of what has happened. Fighting his way through Federation forces and back to E.Y.E.'s base of operations, he learns through a message addressed to himself not to trust anyone.
+
+Your loyalties are torn between Commander Rimanah, the power-hungry leader of the Culter Dei and a father figure to the [[player character]], and your Mentor, a wise, if grouchy warrior who seeks to unite the Jians and the Culters into one force. The player must choose between supporting Rimanah, who seeks to destroy the Jian Shang Di, and Mentor, whose cause is only supported by the player, leading to three different and distinct storylines, including one where the player betrays E.Y.E. and sides with the Federation. This leads to three endings, one on each branch, all of which culminate with the player fighting through E.Y.E.'s Temple headquarters and killing Rimanah, before finding himself transported back to the start of the game under mysterious circumstances. A fourth, true ending is made available after achieving all three endings on the same character.
+
+== Gameplay ==
+[[File:E.Y.E. Divine Cybermancy temple shot.jpg|right|thumb|300px|The Temple is a vast structure containing player resources.]]
+
+=== Character creation and initial spawn ===
+Gameplay begins with [[character creation]], in which the player has three slots in which to choose from DNA types to apply. This initial character-building DNA infusion has a semi-random outcome in generating the initial character statistics. {{Citation needed|date=December 2016}}
+
+Gameplay is from a first-person perspective. The player begins each game "asleep" and in a dreamscape, and must walk through a door within the dream in order to wake up. Upon awaking, they spawn in the location they were in when last they exited. Very little is known to the player about the environment at first, so they must learn about it by speaking to characters and accessing historical data terminals. Between missions, the player spends time talking to various friendly characters, learning about the current conflicts and their history, obtaining objectives, and attempting to serve their greater goals by choosing from response options which can influence the direction of the conversation. {{Citation needed|date=December 2016}}
+
+=== Headquarters and equipment ===
+Many between-mission scenes take place in the Temple, an elaborate and vast futuristic structure that serves as headquarters to the E.Y.E. organization. New weapons and technologies can be purchased here using [[:wikt:brouzouf|Brouzouf]], the game's form of currency, which is earned by killing enemies, completing objectives, or hacking bank terminals. The Temple also contains many characters to speak to, a training room for testing weapons, multiple mobile armories where the player's currently available equipment can be loaded and armor changed, a medical section where new cybernetic abilities can be purchased, and an archive room where the history of the in-game universe can be learned through the use of data terminals, and where new psionic powers can be purchased. The Temple also features an armory where new weapons can be bought, which can then be equipped using the mobile armories. The Temple can be accessed at any time by choosing the Temple option at the game's [[loading screen]], or in the escape menu, which pauses the current mission. Side missions can be acquired from Temple guard at its entrance, or the player can simply take a Temple exit to enter the local streets and see randomly generated objectives, battle various enemies, hack bank terminals, etc., to earn Brouzouf and experience, and to find new technologies.
+
+The player loads out prior to missions at mobile armories, choosing armor and a variety of weapons. Melee weapons generally consist of different types of [[katana|samurai blades]]. Ranged weapons consist of traditional [[firearm]]s, including [[handgun]], [[shotgun]], [[assault rifle]], [[submachine gun]], [[machine gun]], and [[sniper rifle]]-wielding classes, some of which have varying wall-penetrating values. [[Grenade]]s and automated [[Drone warfare|drone]]s are also available. [[Ammunition]] are unlimited when at a mobile armory. All items must be placed in inventory slots that are divided into groupings for each area on the player where they are to be stored. As a unique gameplay mechanic, all equipment carried causes a weight disadvantage, termed a "malus" in-game, as does the armor type chosen (light, medium, or heavy). The total weight malus is shown in the player's stats screen as a percentage; weightier characters move slower, create more noise when moving, and incur more damage from long falls.
+
+=== Meters and abilities ===
+The player's available special abilities are listed in a screen where they can be activated or bound to a quick-access menu. Available abilities are dependent upon which upgrades have been purchased or researched, and many are available upon character creation. Many abilities require the use of energy, for which a meter is always displayed on-screen, along with a life meter and a "mental balance" meter. Energy is also depleted by running, or by using "alchemy", an ability whereby enemies' dropped items can be converted to a health boost (there is no other method of in-mission healing available during much of the beginning of the game). The mental balance level is depleted by stress, which generally occurs from taking a lot of damage at once; when mental balance is significantly decreased, it manifests in visual distortions and difficulty operating weapons, and if depleted far enough can render a player unable to fire ranged weapons for a time, though they still have use of melee weapons.
+
+Acquirable special abilities include, for example, jump boost, generating multiple decoy characters, [[cloaking device|cloaking]], sound [[triangulation]] (sounds produce visual effects that show where they originate), and highlighting enemies even through walls, all of which have different upgrade levels. Health, energy, and mental balance can all be augmented through various researchable technologies and purchasable upgrades.
+
+=== Upgrades and hacking ===
+Upgrades are acquired via Brouzouf through research of technology items picked up during missions, cybernetic abilities purchased from the Temple's Medical section, and cybertech upgrades purchased any time during play. Upgrades are also acquired via experience points, which are earned through level advancement, which in turn is gradually achieved with each scored hit on enemies, depending on quality; as well as through hacking successfully, achieving mission objectives, and even being attacked. Experience points can be spent to upgrade various character stats, such as health (hit points), potency of psionic abilities, and energy depletion rates.
+
+Cybertech upgrades boost the player's various attributes, such as armoring on different parts of the player's body, resistance to counter-hacks, amplifying psionic ability strength, etc.
+
+"Research" involves various technologies the player discovers during play via silver briefcases dropped by enemies upon death. These items activate listing in the configuration menu's Research section, wherein the player can choose to research them in order to gain access to them. Researched items may offer access to new abilities, loadable items, or stats upgrades, though the precise reward for each researched item is not known until after research is complete. Research requires both time and Brouzouf (money) in varying amounts; Research time is measured in days and hours, with each hour taking about 8 real-world seconds to pass, and can be lowered by adjusting the number of "scientists" allocated to the research, though more scientists increases the research cost. Only one item can be researched at a time.
+
+During missions, a player can hack both machines and nearby enemies, which both use the same mechanic. Hacking is done wirelessly and does not require direct contact or even line-of-sight. Each hacking target has cyberspace stats indicating how difficult it will be to hack, as does the player—an attempted hack also opens the player to possible counter-hacks. The hacking menu shows targets in the vicinity, and the player has a number of virus upload options to choose from, clicking from one to the other in order to attempt to gain access, including shield, which buffs the player's cyberspace defense stat, and attack, which lowers the target's defense. Hacked enemy drones will work for the player, bank terminals offer Brouzouf, and hacked enemy characters offer the player a view from their perspective, and can be moved and made to attack other enemies. One or multiple hacking targets are often included as mission objectives.<ref>{{cite web |url=http://www.gamershell.com/news_110844.html |title=E.Y.E: Divine Cybermancy Gameplay Trailer #2 |publisher=GamersHell |date=9 February 2011 |accessdate=15 February 2011 |archive-url=https://web.archive.org/web/20110711071951/http://www.gamershell.com/news_110844.html |archive-date=11 July 2011 |url-status=dead }}</ref>
+
+=== Missions ===
+Missions are carried out interchangeably in alien landscapes, enclosed facilities, and science fiction infused city streets reminiscent of [[Blade Runner]].<ref name="gs">[http://pc.gamespy.com/pc/eye/1185987p1.html GameSpy: E.Y.E.: Divine Cybermancy Review - Page 1] {{webarchive|url=https://web.archive.org/web/20121014165620/http://pc.gamespy.com//pc//eye//1185987p1.html |date=14 October 2012 }}</ref> Objectives can include hacking targets, assassination, locating important objects or characters, and straightforward assault. In single-player mode, some missions see the player accompanied by allied soldiers who help fend off enemy combatants. Fighting style is versatile, as the player can charge into attacks head-on, remain [[stealth game|stealthy]], or use a combination of the two tactics, and still accomplish mission goals.<ref name="gs" /> Enemies include humanoid combatants wielding firearms similar to the player's, automated floating enemy [[UAV|drone]]s and mounted turrets, human-sized [[robot]]s, [[Extraterrestrial life|alien]] beings, and [[airborne forces|aerial]] military units reminiscent of the [[Terminator (franchise)|Terminator franchise]]'s [[Fictional military aircraft#Hunter-Killer robotic vehicles|Hunter Killer]]s.
+
+Unlike most first-person shooters, enemies do not automatically drop restorative health items upon defeat, and health does not regenerate over time. Until other technology is acquired, health can only be restored using "alchemy", a psionic ability that characters possess on creation, which remotely turns any targeted item dropped by enemies into a health boost. Later in the game, players can acquire "medkit" technology, which must be researched, and then allows the player to add the Medkit item to their inventory from a mobile armory. This item restores a portion of health and can be used limitlessly, but must recharge between uses, and must be held in-hand in place of a weapon in order to use and recharge. It can also be used to restore teammates' health (both automated and multiplayer).
+
+Mission objectives are largely nonlinear, with several objectives generally highlighted at once, and it is up to the player in which order to pursue them. Some objectives also have several different options for completion. Side missions can be picked up at the Temple by speaking to various characters, or by speaking to secondary characters in-mission and agreeing to perform tasks for them, which usually results in earning more Brouzouf. Levels are open for exploration, so objectives can even be ignored if the player desires to simply go exploring and kill enemies or hack bank terminals. Note however that mission completion ends with certain player ratings based on how well the player adhered to the instructions of their commander, so if the commander indicated that objectives must be completed quickly, level exploration could incur rating penalties.
+
+The Temple, which can be accessed at any time by choosing the Temple option in the game load menu, also offers side mission possibilities by speaking to characters. Any level already played by the character can also be entered from the Temple; upon entering a level, various objectives are generated, which can be completed, or the player can simply explore, kill enemies, hack bank terminals (all of which earn the player Brouzouf and experience), and acquire researchable technologies.
+
+If a player dies, they are resurrected in-place within a few seconds with full health via the "resurrecter" cybernetic ability. The total number of possible resurrections before a real death with semipermanent penalties occurs is determined by a character statistic, which generally starts out at between 7 and 10, and can be upgraded.
+
+== Multiplayer ==
+''E.Y.E: Divine Cybermancy'' features [[Player versus player|PvP]], Team vs Team, and [[Cooperative video game|co-op]] online multiplayer modes. Players can use their characters as created and upgraded through their single-player campaigns, and therefore all character statistics and abilities carry over for use in multiplayer combat.
+
+==Reception==
+{{Video game reviews
+| MC = 61/100<ref name="mc">{{cite news|title=''E.Y.E: Divine Cybermancy'' Reviews|url=https://www.metacritic.com/game/eye-divine-cybermancy/critic-reviews/?platform=pc|work=[[Metacritic]]|accessdate=7 January 2012}}</ref>
+| GSpot = 7/10<ref name="gspot">{{cite web| last = VanOrd| first = Kevin| title = "E.Y.E: Divine Cybermancy" Review| work = GSpot| date=8 August 2011|accessdate = 7 January 2012| url = http://www.gamespot.com/e-y-e-divine-cybermancy/reviews/eye-divine-cybermancy-review-6327814?tag=games;game_title;1}}</ref>
+| GSpy = {{Rating|4|5}}<ref name="gspy">{{cite web| last = Ring| first = Bennett| title = "E.Y.E: Divine Cybermancy" Review| work = GSpy| date = 3 August 2011| accessdate = 7 January 2012| url = http://pc.gamespy.com/pc/eye/1185987p1.html| url-status = dead| archiveurl = https://web.archive.org/web/20121014165620/http://pc.gamespy.com//pc//eye//1185987p1.html| archivedate = 14 October 2012}}</ref>
+}}
+
+''E.Y.E: Divine Cybermancy'' received generally mixed reviews, with a rating of 61 out of 100 at [[Metacritic]].<ref>[https://www.metacritic.com/game/eye-divine-cybermancy/critic-reviews/?platform=pc E.Y.E: Divine Cybermancy Critic Reviews for PC - Metacritic]</ref> It has been praised for its originality, engrossing atmosphere, vast array of elements, and versatility of play, but criticized for its cumbersome [[game mechanics|mechanics]], confusing interface, and poorly translated English text elements.
+
+[[GameSpot]] rated the game a 7 out of 10, praising its ambitious concepts and enthralling atmosphere, but noting its unrefined game mechanics and steep learning curve: "''E.Y.E.'' is ambitious. It hands you guns, swords, and cybernetic skills, and then drops you into a chilling [[sci-fi]] world, letting you accomplish your goals in any way you see fit. It's also confusing and awkward [...] so you might sometimes curse and grit your teeth, but you will also be entertained and perhaps even in awe at times."<ref>{{Cite web |url=http://www.gamespot.com/pc/rpg/eye-divine-cybermancy/review.html |title=E.Y.E.: Divine Cybermancy Review - GameSpot.com |access-date=21 August 2011 |archive-date=27 September 2011 |archive-url=https://web.archive.org/web/20110927021112/http://www.gamespot.com/pc/rpg/eye-divine-cybermancy/review.html |url-status=live }}</ref>
+
+[[GameSpy]] rated it 4 stars out of 5, saying, "Taking into account the small development group and the price, I'm hard-pressed not to recommend this game as a must-have [...] ''E.Y.E.: Divine Cybermancy'' is a unique indie gem that deserves strong sales and an active fan base", though also noting the clunky interface and several first-release bugs (some of which were fixed in the first post-release patch).<ref name="gs" />
+
+[[IGN]] was more critical, giving the game a 5 out of 10 rating, saying "It's somewhat amazing that such a small team created ''E.Y.E.: Divine Cybermancy''. But after the initial charm and awe wears off, what's left is an overly complex, poorly explained first-person shooter that is often boring, frustrating and a chore to play. Yes, ''E.Y.E.'' has its moments, and it's great that someone out there has tackled keeping hardcore, no-hand-holding PC games alive. But the lack of focus, poor [[game ai|A.I.]] and other issues make it a novelty rather than a must-play game."<ref>[https://web.archive.org/web/20110808130405/http://pc.ign.com/articles/118/1186388p1.html E.Y.E.: Divine Cybermancy Review - IGN]</ref>
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{official website|http://eye.streumon-studio.com/}}
+
+[[Category:2011 video games]]
+[[Category:Action role-playing video games]]
+[[Category:Cyberpunk video games]]
+[[Category:First-person shooters]]
+[[Category:Immersive_sims]]
+[[Category:Role-playing video games]]
+[[Category:Science fiction video games]]
+[[Category:Source (game engine) games]]
+[[Category:Streum On Studio games]]
+[[Category:Video games developed in France]]
+[[Category:Windows games]]
+[[Category:Windows-only games]]

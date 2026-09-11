@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-211 lists, from a ten-episode anime to a 1,418-row film collection, a
+212 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
@@ -128,8 +128,11 @@ they add more than three hours over the game they retell),
 *Suda51* (33 games, the credit rule stated on the page because
 "everything Grasshopper made" and "only what he directed" are both wrong),
 the *James Bond* games on their own page apart from the films, an
-*FPS canon* gated on three or more published best-of lists, and a
-house-picked indie essentials shelf —
+*FPS canon* gated on three or more published best-of lists, a
+house-picked indie essentials shelf, and 23 *immersive sims* — a house canon
+of the genre nobody can define, where a game ships only if Wikipedia's genre
+category holds it and some source calls it one outright, which is how Alien:
+Isolation ends up off the list and Dark Messiah of Might and Magic on it —
 all weighted by HowLongToBeat main-story figures, verified by name.
 
 **Books.** *Discworld* with the famous reading-order diagram rebuilt as

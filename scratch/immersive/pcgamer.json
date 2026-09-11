@@ -1,0 +1,55 @@
+{
+ "source": "PC Gamer, History of the best immersive sims",
+ "canon": [
+  {
+   "year": 1992,
+   "title": "Ultima Underworld"
+  },
+  {
+   "year": 1999,
+   "title": "System Shock 2"
+  },
+  {
+   "year": 2000,
+   "title": "Thief 2: The MEtal Age"
+  },
+  {
+   "year": 2000,
+   "title": "Deus Ex"
+  },
+  {
+   "year": 2006,
+   "title": "The Elder Scrolls IV: Oblivion"
+  },
+  {
+   "year": 2004,
+   "title": "Vampire: the Masquerade: Bloodlines"
+  },
+  {
+   "year": 2006,
+   "title": "Dark Messiah of Might and Magic"
+  },
+  {
+   "year": 2007,
+   "title": "Bioshock"
+  },
+  {
+   "year": 2010,
+   "title": "Stalker: Call of Pripyat"
+  },
+  {
+   "year": 2012,
+   "title": "Dishonored"
+  }
+ ],
+ "indies": [
+  "Consortium",
+  "Neon Struct",
+  "The Magic Circle"
+ ],
+ "outside": [
+  "Hitman: Blood Money",
+  "Alien: Isolation",
+  "Far Cry 3"
+ ]
+}
