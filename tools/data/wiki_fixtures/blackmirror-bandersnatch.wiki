@@ -1,0 +1,8 @@
+{{Episode list
+ |RTitle          = ''[[Black Mirror: Bandersnatch|Bandersnatch]]''
+ |DirectedBy      = [[David Slade]]
+ |WrittenBy       = [[Charlie Brooker]]
+ |OriginalAirDate = {{Start date|2018|12|28|df=y}}
+ |ShortSummary    = ''Bandersnatch'' is an [[interactive film]], where viewer choices affect the storyline. Stefan Butler, a young programmer, works on a video game adaptation of a "[[choose your own adventure]]" book, ''Bandersnatch''. He successfully pitches it to Tuckersoft in a meeting with the head Mohan Thakur and the game developer Colin Ritman. Stefan becomes stressed while working from home and attends therapy. The viewer can see Stefan talking about his mother's death. Stefan can take hallucinogens with Colin and hear his alternate timeline theories. In many storylines, Stefan feels controlled by outside forces, as did the original author of ''Bandersnatch''. Stefan may discover that his father and therapist are running an experiment on him, travel back through time and go with his mother onto the train that crashed and killed her, or kill his father and sometimes Mohan or Colin. The game's success upon release depends on the viewers' choices, as does whether Stefan is imprisoned and the game pulled. Some endings show Colin's daughter trying to adapt ''Bandersnatch'' into an interactive film. {{Episode cast}} [[Fionn Whitehead]], [[Craig Parkinson]], [[Alice Lowe]], [[Asim Chaudhry]], and [[Will Poulter]]
+ |LineColor       = 475557
+}}

@@ -1,0 +1,18 @@
+{{Episode list/sublist|Star Trek: Enterprise season 1
+  | Title             = [[Strange New World (Star Trek: Enterprise)|Strange New World]]
+  | Aux1              = Unknown
+  | OriginalAirDate   = {{Start date|2001|10|10}}
+  | DirectedBy        = [[David Livingston]]
+  | WrittenBy         = {{StoryTeleplay
+  | s = Rick Berman & Brannon Braga
+  | t = [[Mike Sussman (TV series writer/producer)|Mike Sussman]] & Phyllis Strong
+  | slabel = {{abbr|S|Story by}}
+  | tlabel = {{abbr|T|Teleplay by}}
+  }}
+  | EpisodeNumber     = 4
+  | EpisodeNumber2    = 4
+  | ProdCode          = 40358-004
+  | Viewers           = 7.81<ref>{{cite news|url=https://www.newspapers.com/article/the-los-angeles-times/41488871/|title=National Nielsen Viewership (Oct. 8-14, 2001)|date=October 17, 2001|work=[[Los Angeles Times]]|access-date=May 15, 2021|via=[[Newspapers.com]]}}{{free access}}</ref>
+  | ShortSummary      = A storm traps an away team in a cave on an alien world, and pollen spores cause them to experience psychosis.
+  | LineColor         = FF54AD
+}}

@@ -1,0 +1,15 @@
+{{Template:Bleach Wiki:Episode Template
+|title          ={{PAGENAME}}
+|image          =[[Image:Ep335TitleCard.png|290px]]
+|kanji          =断界に潜伏？もう一人の一護！？ 
+|romaji         =Dangai ni senpuku? Mou ichi nin no Ichigo!?
+|episodenumber  =335
+|chapters       =
+|arc            =[[Reigai Uprising|Gotei 13 Invading Army arc]]
+|previousepisode=[[The Depleting Reiatsu! Ichigo, Death Struggle of the Soul]]
+|nextepisode    =[[Pursue Kagerōza! Technological Development Department, Infiltration!]]
+|japair         =August 16, 2011
+|engair         = March 9, 2014
+|opening        =[[BLUE]]
+|ending         =[[Haruka Kanata]]
+}}
