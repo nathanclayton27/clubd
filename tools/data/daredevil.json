@@ -1,0 +1,8723 @@
+{
+ "source": "Marvel Database (marvel.fandom.com), read through api.php: list=allpages for each volume's issue pages, then prop=revisions for each page's Comic Template infobox.",
+ "fetched": "2026-09-11",
+ "harvester": "scratch/daredevil/fetch.py + scratch/daredevil/parse.py",
+ "issues": [
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 150,
+   "numtext": "150",
+   "month": "January",
+   "year": "1978",
+   "released": "October 4, 1977",
+   "legacy": "",
+   "writers": [
+    "Jim Shooter"
+   ],
+   "lead": [
+    "Jim Shooter"
+   ],
+   "penciler": "Carmine Infantino",
+   "titles": [
+    "Catastrophe!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 151,
+   "numtext": "151",
+   "month": "March",
+   "year": "1978",
+   "released": "December 6, 1977",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie",
+    "Jim Shooter",
+    "Gil Kane"
+   ],
+   "lead": [
+    "Roger McKenzie",
+    "Jim Shooter",
+    "Gil Kane"
+   ],
+   "penciler": "Gil Kane",
+   "titles": [
+    "Crisis!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 152,
+   "numtext": "152",
+   "month": "May",
+   "year": "1978",
+   "released": "February 2, 1978",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Carmine Infantino",
+   "titles": [
+    "Prisoner!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 153,
+   "numtext": "153",
+   "month": "July",
+   "year": "1978",
+   "released": "April 4, 1978",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Gene Colan",
+   "titles": [
+    "Betrayal"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 154,
+   "numtext": "154",
+   "month": "September",
+   "year": "1978",
+   "released": "June 6, 1978",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Gene Colan",
+   "titles": [
+    "Arena!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 155,
+   "numtext": "155",
+   "month": "November",
+   "year": "1978",
+   "released": "August 1, 1978",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Robbins",
+   "titles": [
+    "The Man Without Fear?"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 156,
+   "numtext": "156",
+   "month": "January",
+   "year": "1979",
+   "released": "October 3, 1978",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Gene Colan",
+   "titles": [
+    "Ring of Death!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 157,
+   "numtext": "157",
+   "month": "March",
+   "year": "1979",
+   "released": "November 28, 1978",
+   "legacy": "",
+   "writers": [
+    "Mary Jo Duffy",
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Mary Jo Duffy",
+    "Roger McKenzie"
+   ],
+   "penciler": "Gene Colan",
+   "titles": [
+    "The Ungrateful Dead"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 158,
+   "numtext": "158",
+   "month": "May",
+   "year": "1979",
+   "released": "January 30, 1979",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "A Grave Mistake!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 159,
+   "numtext": "159",
+   "month": "July",
+   "year": "1979",
+   "released": "April 3, 1979",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Marked for Murder!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 160,
+   "numtext": "160",
+   "month": "September",
+   "year": "1979",
+   "released": "June 5, 1979",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "In the Hands of Bullseye"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 161,
+   "numtext": "161",
+   "month": "November",
+   "year": "1979",
+   "released": "August 7, 1979",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "To Dare the Devil"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 162,
+   "numtext": "162",
+   "month": "January",
+   "year": "1980",
+   "released": "October 2, 1979",
+   "legacy": "",
+   "writers": [
+    "Michael Fleisher"
+   ],
+   "lead": [
+    "Michael Fleisher"
+   ],
+   "penciler": "Steve Ditko",
+   "titles": [
+    "Requiem for a Pug!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 163,
+   "numtext": "163",
+   "month": "March",
+   "year": "1980",
+   "released": "December 4, 1979",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Blind Alley"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 164,
+   "numtext": "164",
+   "month": "May",
+   "year": "1980",
+   "released": "February 5, 1980",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie"
+   ],
+   "lead": [
+    "Roger McKenzie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Exposé",
+    "Special Bonus Pin-up"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 165,
+   "numtext": "165",
+   "month": "July",
+   "year": "1980",
+   "released": "April 1, 1980",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie",
+    "Frank Miller"
+   ],
+   "lead": [
+    "Roger McKenzie",
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Arms of the Octopus"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 166,
+   "numtext": "166",
+   "month": "September",
+   "year": "1980",
+   "released": "June 3, 1980",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie",
+    "Frank Miller"
+   ],
+   "lead": [
+    "Roger McKenzie",
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Till Death Do Us Part!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 167,
+   "numtext": "167",
+   "month": "November",
+   "year": "1980",
+   "released": "August 19, 1980",
+   "legacy": "",
+   "writers": [
+    "David Michelinie",
+    "Frank Miller"
+   ],
+   "lead": [
+    "David Michelinie"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "...The Mauler!",
+    "Dark Secrets"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 168,
+   "numtext": "168",
+   "month": "January",
+   "year": "1981",
+   "released": "October 7, 1980",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Elektra"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 169,
+   "numtext": "169",
+   "month": "March",
+   "year": "1981",
+   "released": "December 2, 1980",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Devils"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 170,
+   "numtext": "170",
+   "month": "May",
+   "year": "1981",
+   "released": "February 3, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "The Kingpin Must Die!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 171,
+   "numtext": "171",
+   "month": "June",
+   "year": "1981",
+   "released": "March 3, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "In the Kingpin's Clutches"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 172,
+   "numtext": "172",
+   "month": "July",
+   "year": "1981",
+   "released": "March 24, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Gangwar!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 173,
+   "numtext": "173",
+   "month": "August",
+   "year": "1981",
+   "released": "April 28, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Lady Killer"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 174,
+   "numtext": "174",
+   "month": "September",
+   "year": "1981",
+   "released": "May 26, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "The Assassination of Matt Murdock"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 175,
+   "numtext": "175",
+   "month": "October",
+   "year": "1981",
+   "released": "June 23, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Gantlet"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 176,
+   "numtext": "176",
+   "month": "November",
+   "year": "1981",
+   "released": "July 28, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Hunters"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 177,
+   "numtext": "177",
+   "month": "December",
+   "year": "1981",
+   "released": "August 25, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Where Angels Fear to Tread"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 178,
+   "numtext": "178",
+   "month": "January",
+   "year": "1982",
+   "released": "September 22, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Paper Chase"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 179,
+   "numtext": "179",
+   "month": "February",
+   "year": "1982",
+   "released": "October 27, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Spiked!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 180,
+   "numtext": "180",
+   "month": "March",
+   "year": "1982",
+   "released": "November 24, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "The Damned"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 181,
+   "numtext": "181",
+   "month": "April",
+   "year": "1982",
+   "released": "December 29, 1981",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Last Hand"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 182,
+   "numtext": "182",
+   "month": "May",
+   "year": "1982",
+   "released": "January 26, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "She's Alive"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 183,
+   "numtext": "183",
+   "month": "June",
+   "year": "1982",
+   "released": "February 23, 1982",
+   "legacy": "",
+   "writers": [
+    "Roger McKenzie",
+    "Frank Miller"
+   ],
+   "lead": [
+    "Roger McKenzie",
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Child's Play"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 184,
+   "numtext": "184",
+   "month": "July",
+   "year": "1982",
+   "released": "March 23, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Good Guys Wear Red!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 185,
+   "numtext": "185",
+   "month": "August",
+   "year": "1982",
+   "released": "April 27, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Guts"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 186,
+   "numtext": "186",
+   "month": "September",
+   "year": "1982",
+   "released": "May 25, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Stilts"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 187,
+   "numtext": "187",
+   "month": "October",
+   "year": "1982",
+   "released": "June 22, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Overkill"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 188,
+   "numtext": "188",
+   "month": "November",
+   "year": "1982",
+   "released": "July 27, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "The Widow's Bite"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 189,
+   "numtext": "189",
+   "month": "December",
+   "year": "1982",
+   "released": "August 24, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Siege"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 190,
+   "numtext": "190",
+   "month": "January",
+   "year": "1983",
+   "released": "September 28, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Resurrection"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 191,
+   "numtext": "191",
+   "month": "February",
+   "year": "1983",
+   "released": "October 26, 1982",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "Frank Miller",
+   "titles": [
+    "Roulette"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 192,
+   "numtext": "192",
+   "month": "March",
+   "year": "1983",
+   "released": "November 23, 1982",
+   "legacy": "",
+   "writers": [
+    "Alan Brennert"
+   ],
+   "lead": [
+    "Alan Brennert"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Promises"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 193,
+   "numtext": "193",
+   "month": "April",
+   "year": "1983",
+   "released": "December 28, 1982",
+   "legacy": "",
+   "writers": [
+    "Larry Hama"
+   ],
+   "lead": [
+    "Larry Hama"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Bitsy's Revenge"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 194,
+   "numtext": "194",
+   "month": "May",
+   "year": "1983",
+   "released": "January 25, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Judgement"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 195,
+   "numtext": "195",
+   "month": "June",
+   "year": "1983",
+   "released": "February 22, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Betrayal"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 196,
+   "numtext": "196",
+   "month": "July",
+   "year": "1983",
+   "released": "March 22, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Enemies"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 197,
+   "numtext": "197",
+   "month": "August",
+   "year": "1983",
+   "released": "April 26, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "Klaus Janson",
+   "titles": [
+    "Journey"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 198,
+   "numtext": "198",
+   "month": "September",
+   "year": "1983",
+   "released": "May 24, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "Touch of a Stranger"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 199,
+   "numtext": "199",
+   "month": "October",
+   "year": "1983",
+   "released": "June 28, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "Daughter of a Dark Wind"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 200,
+   "numtext": "200",
+   "month": "November",
+   "year": "1983",
+   "released": "July 26, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "Redemption"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 201,
+   "numtext": "201",
+   "month": "December",
+   "year": "1983",
+   "released": "August 23, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "The Day the Devil Didn't Dare"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 202,
+   "numtext": "202",
+   "month": "January",
+   "year": "1984",
+   "released": "September 27, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil",
+    "Michael Carlin"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "Savages",
+    "A Life in the Day"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 203,
+   "numtext": "203",
+   "month": "February",
+   "year": "1984",
+   "released": "October 25, 1983",
+   "legacy": "",
+   "writers": [
+    "Steven Grant"
+   ],
+   "lead": [
+    "Steven Grant"
+   ],
+   "penciler": "Geof Isherwood",
+   "titles": [
+    "Trumps"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 204,
+   "numtext": "204",
+   "month": "March",
+   "year": "1984",
+   "released": "November 22, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "Luke McDonnell",
+   "titles": [
+    "\"Vengeance of the Victim\""
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 205,
+   "numtext": "205",
+   "month": "April",
+   "year": "1984",
+   "released": "December 27, 1983",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "The Gael"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 206,
+   "numtext": "206",
+   "month": "May",
+   "year": "1984",
+   "released": "January 24, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Every Good and Perfect Gift"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 207,
+   "numtext": "207",
+   "month": "June",
+   "year": "1984",
+   "released": "February 28, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "William Johnson",
+   "titles": [
+    "Ultimatum"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 208,
+   "numtext": "208",
+   "month": "July",
+   "year": "1984",
+   "released": "March 27, 1984",
+   "legacy": "",
+   "writers": [
+    "Harlan Ellison",
+    "Arthur Byron Cover"
+   ],
+   "lead": [
+    "Harlan Ellison",
+    "Arthur Byron Cover"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "The Deadliest Night of My Life"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 209,
+   "numtext": "209",
+   "month": "August",
+   "year": "1984",
+   "released": "April 24, 1984",
+   "legacy": "",
+   "writers": [
+    "Arthur Byron Cover"
+   ],
+   "lead": [
+    "Arthur Byron Cover"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Blast from the Past"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 210,
+   "numtext": "210",
+   "month": "September",
+   "year": "1984",
+   "released": "May 22, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil",
+    "David Mazzucchelli"
+   ],
+   "lead": [
+    "Denny O'Neil",
+    "David Mazzucchelli"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Survivor"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 211,
+   "numtext": "211",
+   "month": "October",
+   "year": "1984",
+   "released": "June 26, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "This Hungry God"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 212,
+   "numtext": "212",
+   "month": "November",
+   "year": "1984",
+   "released": "July 24, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Lies"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 213,
+   "numtext": "213",
+   "month": "December",
+   "year": "1984",
+   "released": "August 28, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "The Blindness Men Wish For"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 214,
+   "numtext": "214",
+   "month": "January",
+   "year": "1985",
+   "released": "September 25, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "The Crumbling"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 215,
+   "numtext": "215",
+   "month": "February",
+   "year": "1985",
+   "released": "October 23, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Prophecy"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 216,
+   "numtext": "216",
+   "month": "March",
+   "year": "1985",
+   "released": "November 27, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "The Second Secret"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 217,
+   "numtext": "217",
+   "month": "April",
+   "year": "1985",
+   "released": "December 25, 1984",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "The Sight Stealer"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 218,
+   "numtext": "218",
+   "month": "May",
+   "year": "1985",
+   "released": "January 22, 1985",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "Sal Buscema",
+   "titles": [
+    "All My Laurels You Have Riven Away"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 219,
+   "numtext": "219",
+   "month": "June",
+   "year": "1985",
+   "released": "February 26, 1985",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "John Buscema",
+   "titles": [
+    "Badlands"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 220,
+   "numtext": "220",
+   "month": "July",
+   "year": "1985",
+   "released": "March 26, 1985",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Fog"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 221,
+   "numtext": "221",
+   "month": "August",
+   "year": "1985",
+   "released": "April 23, 1985",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Behold My Vengeance"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 222,
+   "numtext": "222",
+   "month": "September",
+   "year": "1985",
+   "released": "May 28, 1985",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Fear In a Handful of Dust"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 223,
+   "numtext": "223",
+   "month": "October",
+   "year": "1985",
+   "released": "June 25, 1985",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil",
+    "Jim Shooter"
+   ],
+   "lead": [
+    "Denny O'Neil",
+    "Jim Shooter"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "The Price"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 224,
+   "numtext": "224",
+   "month": "November",
+   "year": "1985",
+   "released": "July 23, 1985",
+   "legacy": "",
+   "writers": [
+    "Jim Owsley"
+   ],
+   "lead": [
+    "Jim Owsley"
+   ],
+   "penciler": "Dan Jurgens",
+   "titles": [
+    "Abe"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 225,
+   "numtext": "225",
+   "month": "December",
+   "year": "1985",
+   "released": "August 27, 1985",
+   "legacy": "",
+   "writers": [
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "And Then You Die"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 226,
+   "numtext": "226",
+   "month": "January",
+   "year": "1986",
+   "released": "September 24, 1985",
+   "legacy": "",
+   "writers": [
+    "Frank Miller",
+    "Denny O'Neil"
+   ],
+   "lead": [
+    "Frank Miller",
+    "Denny O'Neil"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Warriors"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 227,
+   "numtext": "227",
+   "month": "February",
+   "year": "1986",
+   "released": "October 22, 1985",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Apocalypse"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 228,
+   "numtext": "228",
+   "month": "March",
+   "year": "1986",
+   "released": "November 26, 1985",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Purgatory"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 229,
+   "numtext": "229",
+   "month": "April",
+   "year": "1986",
+   "released": "December 24, 1985",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Pariah"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 230,
+   "numtext": "230",
+   "month": "May",
+   "year": "1986",
+   "released": "January 28, 1986",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Born Again"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 231,
+   "numtext": "231",
+   "month": "June",
+   "year": "1986",
+   "released": "February 25, 1986",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Saved"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 232,
+   "numtext": "232",
+   "month": "July",
+   "year": "1986",
+   "released": "March 25, 1986",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "God and Country"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 233,
+   "numtext": "233",
+   "month": "August",
+   "year": "1986",
+   "released": "April 22, 1986",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "David Mazzucchelli",
+   "titles": [
+    "Armageddon"
+   ],
+   "arcs": [
+    "Born Again"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 234,
+   "numtext": "234",
+   "month": "September",
+   "year": "1986",
+   "released": "May 27, 1986",
+   "legacy": "",
+   "writers": [
+    "Mark Gruenwald"
+   ],
+   "lead": [
+    "Mark Gruenwald"
+   ],
+   "penciler": "Steve Ditko",
+   "titles": [
+    "Madcasting"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 235,
+   "numtext": "235",
+   "month": "October",
+   "year": "1986",
+   "released": "June 24, 1986",
+   "legacy": "",
+   "writers": [
+    "Danny Fingeroth"
+   ],
+   "lead": [
+    "Danny Fingeroth"
+   ],
+   "penciler": "Steve Ditko",
+   "titles": [
+    "A Safe Place"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 236,
+   "numtext": "236",
+   "month": "November",
+   "year": "1986",
+   "released": "July 22, 1986",
+   "legacy": "",
+   "writers": [
+    "Ann Nocenti"
+   ],
+   "lead": [
+    "Ann Nocenti"
+   ],
+   "penciler": "Barry Windsor-Smith",
+   "titles": [
+    "American Dreamer"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 237,
+   "numtext": "237",
+   "month": "December",
+   "year": "1986",
+   "released": "August 26, 1986",
+   "legacy": "",
+   "writers": [
+    "John Harkness"
+   ],
+   "lead": [
+    "John Harkness"
+   ],
+   "penciler": "Louis Williams",
+   "titles": [
+    "Context"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 238,
+   "numtext": "238",
+   "month": "January",
+   "year": "1987",
+   "released": "September 23, 1986",
+   "legacy": "",
+   "writers": [
+    "Ann Nocenti"
+   ],
+   "lead": [
+    "Ann Nocenti"
+   ],
+   "penciler": "Sal Buscema",
+   "titles": [
+    "It Comes with the Claws"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 239,
+   "numtext": "239",
+   "month": "February",
+   "year": "1987",
+   "released": "October 28, 1986",
+   "legacy": "",
+   "writers": [
+    "Ann Nocenti"
+   ],
+   "lead": [
+    "Ann Nocenti"
+   ],
+   "penciler": "Louis Williams",
+   "titles": [
+    "Bad Plumbing"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 1",
+   "num": 240,
+   "numtext": "240",
+   "month": "March",
+   "year": "1987",
+   "released": "November 25, 1986",
+   "legacy": "",
+   "writers": [
+    "Ann Nocenti"
+   ],
+   "lead": [
+    "Ann Nocenti"
+   ],
+   "penciler": "Louis Williams",
+   "titles": [
+    "The Face You Deserve"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 0,
+   "numtext": "0",
+   "month": "September",
+   "year": "1998",
+   "released": "",
+   "legacy": "",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "What a Life"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 1,
+   "numtext": "1",
+   "month": "November",
+   "year": "1998",
+   "released": "September 9, 1998",
+   "legacy": "Daredevil Vol 1 381",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part One: And A Child Shall Lead Them All"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 2,
+   "numtext": "2",
+   "month": "December",
+   "year": "1998",
+   "released": "October 7, 1998",
+   "legacy": "Daredevil Vol 1 382",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Two: The Unexamined Life"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 3,
+   "numtext": "3",
+   "month": "January",
+   "year": "1999",
+   "released": "November 4, 1998",
+   "legacy": "Daredevil Vol 1 383",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Three: Dystopia"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 4,
+   "numtext": "4",
+   "month": "February",
+   "year": "1999",
+   "released": "December 16, 1998",
+   "legacy": "Daredevil Vol 1 384",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Four: The Devil's Distaff"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 5,
+   "numtext": "5",
+   "month": "March",
+   "year": "1999",
+   "released": "January 27, 1999",
+   "legacy": "Daredevil Vol 1 385",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Five: Devil's Despair"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 6,
+   "numtext": "6",
+   "month": "April",
+   "year": "1999",
+   "released": "April 28, 1999",
+   "legacy": "Daredevil Vol 1 386",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Six: The Devil's Divested"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 7,
+   "numtext": "7",
+   "month": "May",
+   "year": "1999",
+   "released": "July 7, 1999",
+   "legacy": "Daredevil Vol 1 387",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Seven: The Devil's Demon"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 8,
+   "numtext": "8",
+   "month": "June",
+   "year": "1999",
+   "released": "August 25, 1999",
+   "legacy": "Daredevil Vol 1 388",
+   "writers": [
+    "Kevin Smith"
+   ],
+   "lead": [
+    "Kevin Smith"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Guardian Devil Part Eight: The Devil's Deliverance"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 9,
+   "numtext": "9",
+   "month": "July",
+   "year": "1999",
+   "released": "November 3, 1999",
+   "legacy": "Daredevil Vol 1 389",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Murdock's Law"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 10,
+   "numtext": "10",
+   "month": "March",
+   "year": "2000",
+   "released": "January 19, 2000",
+   "legacy": "Daredevil Vol 1 390",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Echoes!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 11,
+   "numtext": "11",
+   "month": "May",
+   "year": "2000",
+   "released": "April 5, 2000",
+   "legacy": "Daredevil Vol 1 391",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Dinner and a Movie"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 12,
+   "numtext": "12",
+   "month": "June",
+   "year": "2000",
+   "released": "April 19, 2000",
+   "legacy": "Daredevil Vol 1 392",
+   "writers": [
+    "Jimmy Palmiotti",
+    "Joe Quesada"
+   ],
+   "lead": [
+    "Jimmy Palmiotti",
+    "Joe Quesada"
+   ],
+   "penciler": "Rob Haynes",
+   "titles": [
+    "Gun Play"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 13,
+   "numtext": "13",
+   "month": "October",
+   "year": "2000",
+   "released": "August 2, 2000",
+   "legacy": "Daredevil Vol 1 393",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "Trial and Error"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 14,
+   "numtext": "14",
+   "month": "March",
+   "year": "2001",
+   "released": "January 24, 2001",
+   "legacy": "Daredevil Vol 1 394",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "Joe Quesada",
+   "titles": [
+    "An Object in Motion"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 15,
+   "numtext": "15",
+   "month": "April",
+   "year": "2001",
+   "released": "February 28, 2001",
+   "legacy": "Daredevil Vol 1 395",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "David Ross",
+   "titles": [
+    "Vision"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 16,
+   "numtext": "16",
+   "month": "May",
+   "year": "2001",
+   "released": "April 11, 2001",
+   "legacy": "Daredevil Vol 1 396",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Wake Up Part 1"
+   ],
+   "arcs": [
+    "Wake Up"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 17,
+   "numtext": "17",
+   "month": "June",
+   "year": "2001",
+   "released": "April 25, 2001",
+   "legacy": "Daredevil Vol 1 397",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Wake Up Part 2"
+   ],
+   "arcs": [
+    "Wake Up"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 18,
+   "numtext": "18",
+   "month": "July",
+   "year": "2001",
+   "released": "May 31, 2001",
+   "legacy": "Daredevil Vol 1 398",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Wake Up Part 3"
+   ],
+   "arcs": [
+    "Wake Up"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 19,
+   "numtext": "19",
+   "month": "August",
+   "year": "2001",
+   "released": "July 11, 2001",
+   "legacy": "Daredevil Vol 1 399",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Wake Up Part 4"
+   ],
+   "arcs": [
+    "Wake Up"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 20,
+   "numtext": "20",
+   "month": "September",
+   "year": "2001",
+   "released": "July 25, 2001",
+   "legacy": "Daredevil Vol 1 400",
+   "writers": [
+    "Bob Gale",
+    "Stan Lee",
+    "Kevin Hall"
+   ],
+   "lead": [
+    "Bob Gale"
+   ],
+   "penciler": "Phil Winslade",
+   "titles": [
+    "Playing to the Camera Part One: Redsuit Lawsuit",
+    "My Brother's Keepers"
+   ],
+   "arcs": [
+    "Playing to the Camera"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 21,
+   "numtext": "21",
+   "month": "October",
+   "year": "2001",
+   "released": "August 8, 2001",
+   "legacy": "Daredevil Vol 1 401",
+   "writers": [
+    "Bob Gale"
+   ],
+   "lead": [
+    "Bob Gale"
+   ],
+   "penciler": "Phil Winslade",
+   "titles": [
+    "Playing to the Camera part two: Fellow of the Infinite Jest"
+   ],
+   "arcs": [
+    "Playing to the Camera"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 22,
+   "numtext": "22",
+   "month": "October",
+   "year": "2001",
+   "released": "August 22, 2001",
+   "legacy": "Daredevil Vol 1 402",
+   "writers": [
+    "Bob Gale"
+   ],
+   "lead": [
+    "Bob Gale"
+   ],
+   "penciler": "Phil Winslade",
+   "titles": [
+    "Playing to the Camera part three: Legal Questions"
+   ],
+   "arcs": [
+    "Playing to the Camera"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 23,
+   "numtext": "23",
+   "month": "November",
+   "year": "2001",
+   "released": "September 6, 2001",
+   "legacy": "Daredevil Vol 1 403",
+   "writers": [
+    "Bob Gale"
+   ],
+   "lead": [
+    "Bob Gale"
+   ],
+   "penciler": "David Ross",
+   "titles": [
+    "Playing to the Camera part four: Making Offers"
+   ],
+   "arcs": [
+    "Playing to the Camera"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 24,
+   "numtext": "24",
+   "month": "November",
+   "year": "2001",
+   "released": "September 19, 2001",
+   "legacy": "Daredevil Vol 1 404",
+   "writers": [
+    "Bob Gale"
+   ],
+   "lead": [
+    "Bob Gale"
+   ],
+   "penciler": "David Ross",
+   "titles": [
+    "Playing to the Camera part five: Ruminations Over Manhattan"
+   ],
+   "arcs": [
+    "Playing to the Camera"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 25,
+   "numtext": "25",
+   "month": "December",
+   "year": "2001",
+   "released": "October 3, 2001",
+   "legacy": "Daredevil Vol 1 405",
+   "writers": [
+    "Bob Gale"
+   ],
+   "lead": [
+    "Bob Gale"
+   ],
+   "penciler": "David Ross",
+   "titles": [
+    "Playing to the Camera part six: Who Is That Masked Man?"
+   ],
+   "arcs": [
+    "Playing to the Camera"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 26,
+   "numtext": "26",
+   "month": "December",
+   "year": "2001",
+   "released": "October 17, 2001",
+   "legacy": "Daredevil Vol 1 406",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Underboss, Part 1"
+   ],
+   "arcs": [
+    "Underboss"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 27,
+   "numtext": "27",
+   "month": "January",
+   "year": "2002",
+   "released": "November 21, 2001",
+   "legacy": "Daredevil Vol 1 407",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Underboss, Part 2"
+   ],
+   "arcs": [
+    "Underboss"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 28,
+   "numtext": "28",
+   "month": "February",
+   "year": "2002",
+   "released": "December 19, 2001",
+   "legacy": "Daredevil Vol 1 408",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Underboss Part 3"
+   ],
+   "arcs": [
+    "Underboss"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 29,
+   "numtext": "29",
+   "month": "March",
+   "year": "2002",
+   "released": "January 16, 2002",
+   "legacy": "Daredevil Vol 1 409",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"Underboss\""
+   ],
+   "arcs": [
+    "Underboss"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 30,
+   "numtext": "30",
+   "month": "April",
+   "year": "2002",
+   "released": "February 27, 2002",
+   "legacy": "Daredevil Vol 1 410",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Underboss, Part 5"
+   ],
+   "arcs": [
+    "Underboss"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 31,
+   "numtext": "31",
+   "month": "May",
+   "year": "2002",
+   "released": "March 20, 2002",
+   "legacy": "Daredevil Vol 1 411",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Underboss, Part 6"
+   ],
+   "arcs": [
+    "Underboss"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 32,
+   "numtext": "32",
+   "month": "June",
+   "year": "2002",
+   "released": "April 17, 2002",
+   "legacy": "Daredevil Vol 1 412",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Out"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 33,
+   "numtext": "33",
+   "month": "July",
+   "year": "2002",
+   "released": "May 15, 2002",
+   "legacy": "Daredevil Vol 1 413",
+   "writers": [
+    "Brian Michael Bendis",
+    "Ron Zimmerman"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Secret Is Out",
+    "One Night Only!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 34,
+   "numtext": "34",
+   "month": "August",
+   "year": "2002",
+   "released": "June 19, 2002",
+   "legacy": "Daredevil Vol 1 414",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "I Didn't Know You Knew"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 35,
+   "numtext": "35",
+   "month": "September",
+   "year": "2002",
+   "released": "July 17, 2002",
+   "legacy": "Daredevil Vol 1 415",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "I'm Not Afraid of You"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 36,
+   "numtext": "36",
+   "month": "October",
+   "year": "2002",
+   "released": "August 21, 2002",
+   "legacy": "Daredevil Vol 1 416",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "One Hundred Percent Untrue"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 37,
+   "numtext": "37",
+   "month": "November",
+   "year": "2002",
+   "released": "September 18, 2002",
+   "legacy": "Daredevil Vol 1 417",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Dancing Between the Raindrops"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 38,
+   "numtext": "38",
+   "month": "December",
+   "year": "2002",
+   "released": "October 16, 2002",
+   "legacy": "Daredevil Vol 1 418",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Manuel Gutierrez",
+   "titles": [
+    "The Trial of the Century Part 1"
+   ],
+   "arcs": [
+    "The Trial of the Century"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 39,
+   "numtext": "39",
+   "month": "January",
+   "year": "2003",
+   "released": "November 20, 2002",
+   "legacy": "Daredevil Vol 1 419",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Manuel Gutierrez",
+   "titles": [
+    "The Trial of the Century"
+   ],
+   "arcs": [
+    "The Trial of the Century"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 40,
+   "numtext": "40",
+   "month": "February",
+   "year": "2003",
+   "released": "January 2, 2003",
+   "legacy": "Daredevil Vol 1 420",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Terry Dodson",
+   "titles": [
+    "The Trial of the Century"
+   ],
+   "arcs": [
+    "The Trial of the Century"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 41,
+   "numtext": "41",
+   "month": "March",
+   "year": "2003",
+   "released": "January 8, 2003",
+   "legacy": "Daredevil Vol 1 421",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Lowlife"
+   ],
+   "arcs": [
+    "Lowlife"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 42,
+   "numtext": "42",
+   "month": "March",
+   "year": "2003",
+   "released": "January 22, 2003",
+   "legacy": "Daredevil Vol 1 422",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Lowlife"
+   ],
+   "arcs": [
+    "Lowlife"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 43,
+   "numtext": "43",
+   "month": "April",
+   "year": "2003",
+   "released": "February 12, 2003",
+   "legacy": "Daredevil Vol 1 423",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"Lowlife\""
+   ],
+   "arcs": [
+    "Lowlife"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 44,
+   "numtext": "44",
+   "month": "April",
+   "year": "2003",
+   "released": "February 26, 2003",
+   "legacy": "Daredevil Vol 1 424",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Lowlife"
+   ],
+   "arcs": [
+    "Lowlife"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 45,
+   "numtext": "45",
+   "month": "May",
+   "year": "2003",
+   "released": "April 2, 2003",
+   "legacy": "Daredevil Vol 1 425",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"Lowlife\""
+   ],
+   "arcs": [
+    "Lowlife"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 46,
+   "numtext": "46",
+   "month": "June",
+   "year": "2003",
+   "released": "April 23, 2003",
+   "legacy": "Daredevil Vol 1 426",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Hardcore Part 1"
+   ],
+   "arcs": [
+    "Hardcore"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 47,
+   "numtext": "47",
+   "month": "July",
+   "year": "2003",
+   "released": "May 21, 2003",
+   "legacy": "Daredevil Vol 1 427",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Hardcore Part 2"
+   ],
+   "arcs": [
+    "Hardcore"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 48,
+   "numtext": "48",
+   "month": "August",
+   "year": "2003",
+   "released": "June 18, 2003",
+   "legacy": "Daredevil Vol 1 428",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Hardcore"
+   ],
+   "arcs": [
+    "Hardcore"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 49,
+   "numtext": "49",
+   "month": "September",
+   "year": "2003",
+   "released": "July 16, 2003",
+   "legacy": "Daredevil Vol 1 429",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"Hardcore\""
+   ],
+   "arcs": [
+    "Hardcore"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 50,
+   "numtext": "50",
+   "month": "October",
+   "year": "2003",
+   "released": "August 20, 2003",
+   "legacy": "Daredevil Vol 1 430",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Hardcore Part 5"
+   ],
+   "arcs": [
+    "Hardcore"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 51,
+   "numtext": "51",
+   "month": "November",
+   "year": "2003",
+   "released": "September 4, 2003",
+   "legacy": "Daredevil Vol 1 431",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Echo Part One"
+   ],
+   "arcs": [
+    "Echo"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 52,
+   "numtext": "52",
+   "month": "November",
+   "year": "2003",
+   "released": "September 17, 2003",
+   "legacy": "Daredevil Vol 1 432",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Echo Part 2"
+   ],
+   "arcs": [
+    "Echo"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 53,
+   "numtext": "53",
+   "month": "December",
+   "year": "2003",
+   "released": "October 15, 2003",
+   "legacy": "Daredevil Vol 1 433",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Echo Part 3"
+   ],
+   "arcs": [
+    "Echo"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 54,
+   "numtext": "54",
+   "month": "January",
+   "year": "2004",
+   "released": "November 19, 2003",
+   "legacy": "Daredevil Vol 1 434",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Echo Part 4"
+   ],
+   "arcs": [
+    "Echo"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 55,
+   "numtext": "55",
+   "month": "February",
+   "year": "2004",
+   "released": "December 17, 2003",
+   "legacy": "Daredevil Vol 1 435",
+   "writers": [
+    "David Mack"
+   ],
+   "lead": [
+    "David Mack"
+   ],
+   "penciler": "David Mack",
+   "titles": [
+    "Echo Part 5"
+   ],
+   "arcs": [
+    "Echo"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 56,
+   "numtext": "56",
+   "month": "March",
+   "year": "2004",
+   "released": "January 21, 2004",
+   "legacy": "Daredevil Vol 1 436",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"The King Of Hell's Kitchen\""
+   ],
+   "arcs": [
+    "The King Of Hell's Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 57,
+   "numtext": "57",
+   "month": "April",
+   "year": "2004",
+   "released": "February 18, 2004",
+   "legacy": "Daredevil Vol 1 437",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"The King of Hell's Kitchen\""
+   ],
+   "arcs": [
+    "The King Of Hell's Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 58,
+   "numtext": "58",
+   "month": "May",
+   "year": "2004",
+   "released": "March 17, 2004",
+   "legacy": "Daredevil Vol 1 438",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alexander Maleev",
+   "titles": [
+    "The King of Hell's Kitchen: Part 3"
+   ],
+   "arcs": [
+    "The King Of Hell's Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 59,
+   "numtext": "59",
+   "month": "June",
+   "year": "2004",
+   "released": "April 21, 2004",
+   "legacy": "Daredevil Vol 1 439",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The King of Hell's Kitchen Part 4"
+   ],
+   "arcs": [
+    "The King Of Hell's Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 60,
+   "numtext": "60",
+   "month": "July",
+   "year": "2004",
+   "released": "May 19, 2004",
+   "legacy": "Daredevil Vol 1 440",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"The King of Hell's Kitchen\""
+   ],
+   "arcs": [
+    "The King Of Hell's Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 61,
+   "numtext": "61",
+   "month": "August",
+   "year": "2004",
+   "released": "June 16, 2004",
+   "legacy": "Daredevil Vol 1 441",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "\"The Widow\""
+   ],
+   "arcs": [
+    "The Widow"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 62,
+   "numtext": "62",
+   "month": "September",
+   "year": "2004",
+   "released": "July 21, 2004",
+   "legacy": "Daredevil Vol 1 442",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Widow Part 2"
+   ],
+   "arcs": [
+    "The Widow"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 63,
+   "numtext": "63",
+   "month": "October",
+   "year": "2004",
+   "released": "August 18, 2004",
+   "legacy": "Daredevil Vol 1 443",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Widow Part 3"
+   ],
+   "arcs": [
+    "The Widow"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 64,
+   "numtext": "64",
+   "month": "November",
+   "year": "2004",
+   "released": "September 15, 2004",
+   "legacy": "Daredevil Vol 1 444",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Widow Part 4"
+   ],
+   "arcs": [
+    "The Widow"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 65,
+   "numtext": "65",
+   "month": "November",
+   "year": "2004",
+   "released": "September 29, 2004",
+   "legacy": "Daredevil Vol 1 445",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Universe"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 66,
+   "numtext": "66",
+   "month": "December",
+   "year": "2004",
+   "released": "October 27, 2004",
+   "legacy": "Daredevil Vol 1 446",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Golden Age Part One"
+   ],
+   "arcs": [
+    "Golden Age"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 67,
+   "numtext": "67",
+   "month": "January",
+   "year": "2005",
+   "released": "November 24, 2004",
+   "legacy": "Daredevil Vol 1 447",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Golden Age Part 2"
+   ],
+   "arcs": [
+    "Golden Age"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 68,
+   "numtext": "68",
+   "month": "February",
+   "year": "2005",
+   "released": "December 15, 2004",
+   "legacy": "Daredevil Vol 1 448",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Golden Age Part 3"
+   ],
+   "arcs": [
+    "Golden Age"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 69,
+   "numtext": "69",
+   "month": "March",
+   "year": "2005",
+   "released": "January 19, 2005",
+   "legacy": "Daredevil Vol 1 449",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Golden Age Part 4"
+   ],
+   "arcs": [
+    "Golden Age"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 70,
+   "numtext": "70",
+   "month": "April",
+   "year": "2005",
+   "released": "February 16, 2005",
+   "legacy": "Daredevil Vol 1 450",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Golden Age Part 5"
+   ],
+   "arcs": [
+    "Golden Age"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 71,
+   "numtext": "71",
+   "month": "May",
+   "year": "2005",
+   "released": "March 23, 2005",
+   "legacy": "Daredevil Vol 1 451",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Decalogue Part 1"
+   ],
+   "arcs": [
+    "Decalogue"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 72,
+   "numtext": "72",
+   "month": "June",
+   "year": "2005",
+   "released": "April 27, 2005",
+   "legacy": "Daredevil Vol 1 452",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Decalogue Part 2"
+   ],
+   "arcs": [
+    "Decalogue"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 73,
+   "numtext": "73",
+   "month": "July",
+   "year": "2005",
+   "released": "May 18, 2005",
+   "legacy": "Daredevil Vol 1 453",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Decalogue Part 3"
+   ],
+   "arcs": [
+    "Decalogue"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 74,
+   "numtext": "74",
+   "month": "August",
+   "year": "2005",
+   "released": "June 15, 2005",
+   "legacy": "Daredevil Vol 1 454",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Decalogue Part 4"
+   ],
+   "arcs": [
+    "Decalogue"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 75,
+   "numtext": "75",
+   "month": "September",
+   "year": "2005",
+   "released": "July 20, 2005",
+   "legacy": "Daredevil Vol 1 455",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "Decalogue 5: Thou Shall Not Kill"
+   ],
+   "arcs": [
+    "Decalogue"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 76,
+   "numtext": "76",
+   "month": "October",
+   "year": "2005",
+   "released": "August 24, 2005",
+   "legacy": "Daredevil Vol 1 456",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Murdock Papers: Part 1"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 77,
+   "numtext": "77",
+   "month": "November",
+   "year": "2005",
+   "released": "September 28, 2005",
+   "legacy": "Daredevil Vol 1 457",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Murdock Papers: Part 2"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 78,
+   "numtext": "78",
+   "month": "December",
+   "year": "2005",
+   "released": "October 26, 2005",
+   "legacy": "Daredevil Vol 1 458",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Murdock Papers Part 3"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 79,
+   "numtext": "79",
+   "month": "January",
+   "year": "2006",
+   "released": "November 23, 2005",
+   "legacy": "Daredevil Vol 1 459",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Murdock Papers Part 4"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 80,
+   "numtext": "80",
+   "month": "February",
+   "year": "2006",
+   "released": "December 28, 2005",
+   "legacy": "Daredevil Vol 1 460",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Murdock Papers Part 5"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 81,
+   "numtext": "81",
+   "month": "March",
+   "year": "2006",
+   "released": "January 25, 2006",
+   "legacy": "Daredevil Vol 1 461",
+   "writers": [
+    "Brian Michael Bendis"
+   ],
+   "lead": [
+    "Brian Michael Bendis"
+   ],
+   "penciler": "Alex Maleev",
+   "titles": [
+    "The Murdock Papers Part 6"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 82,
+   "numtext": "82",
+   "month": "April",
+   "year": "2006",
+   "released": "February 15, 2006",
+   "legacy": "Daredevil Vol 1 462",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil in Cell-Block D Part One"
+   ],
+   "arcs": [
+    "The Devil in Cell-Block D"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 83,
+   "numtext": "83",
+   "month": "May",
+   "year": "2006",
+   "released": "March 22, 2006",
+   "legacy": "Daredevil Vol 1 463",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil in Cell-Block D Part Two"
+   ],
+   "arcs": [
+    "The Devil in Cell-Block D"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 84,
+   "numtext": "84",
+   "month": "June",
+   "year": "2006",
+   "released": "April 19, 2006",
+   "legacy": "Daredevil Vol 1 464",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil in Cell-Block D Part Three"
+   ],
+   "arcs": [
+    "The Devil in Cell-Block D"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 85,
+   "numtext": "85",
+   "month": "July",
+   "year": "2006",
+   "released": "May 24, 2006",
+   "legacy": "Daredevil Vol 1 465",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil in Cell-Block D Part Four"
+   ],
+   "arcs": [
+    "The Devil in Cell-Block D"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 86,
+   "numtext": "86",
+   "month": "August",
+   "year": "2006",
+   "released": "June 28, 2006",
+   "legacy": "Daredevil Vol 1 466",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil in Cell Block D Part Five"
+   ],
+   "arcs": [
+    "The Devil in Cell-Block D"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 87,
+   "numtext": "87",
+   "month": "September",
+   "year": "2006",
+   "released": "July 26, 2006",
+   "legacy": "Daredevil Vol 1 467",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil in Cell Block D Finale"
+   ],
+   "arcs": [
+    "The Devil in Cell-Block D"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 88,
+   "numtext": "88",
+   "month": "October",
+   "year": "2006",
+   "released": "August 23, 2006",
+   "legacy": "Daredevil Vol 1 468",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "David Aja",
+   "titles": [
+    "The Secret Life of Foggy Nelson"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 89,
+   "numtext": "89",
+   "month": "November",
+   "year": "2006",
+   "released": "September 27, 2006",
+   "legacy": "Daredevil Vol 1 469",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil Takes a Ride Part 1"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 90,
+   "numtext": "90",
+   "month": "December",
+   "year": "2006",
+   "released": "October 25, 2006",
+   "legacy": "Daredevil Vol 1 470",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil Takes a Ride Part Two of Five"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 91,
+   "numtext": "91",
+   "month": "January",
+   "year": "2007",
+   "released": "November 22, 2006",
+   "legacy": "Daredevil Vol 1 471",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil Takes a Ride Part Three"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 92,
+   "numtext": "92",
+   "month": "February",
+   "year": "2007",
+   "released": "December 27, 2006",
+   "legacy": "Daredevil Vol 1 472",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "\"The Devil takes a Ride\" Part Four"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 93,
+   "numtext": "93",
+   "month": "March",
+   "year": "2007",
+   "released": "January 31, 2007",
+   "legacy": "Daredevil Vol 1 473",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "The Devil Takes A Ride conclusion"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 94,
+   "numtext": "94",
+   "month": "April",
+   "year": "2007",
+   "released": "February 28, 2007",
+   "legacy": "Daredevil Vol 1 474",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Lee Weeks",
+   "titles": [
+    "\"Our Love Story\""
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 95,
+   "numtext": "95",
+   "month": "May",
+   "year": "2007",
+   "released": "March 28, 2007",
+   "legacy": "Daredevil Vol 1 475",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "To The Devil, His Due, Part One of Five"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 96,
+   "numtext": "96",
+   "month": "June",
+   "year": "2007",
+   "released": "April 25, 2007",
+   "legacy": "Daredevil Vol 1 476",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "To The Devil, His Due, Part Two of Five"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 97,
+   "numtext": "97",
+   "month": "July",
+   "year": "2007",
+   "released": "May 30, 2007",
+   "legacy": "Daredevil Vol 1 477",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "To The Devil, His Due, Part Three of Five"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 98,
+   "numtext": "98",
+   "month": "August",
+   "year": "2007",
+   "released": "June 27, 2007",
+   "legacy": "Daredevil Vol 1 478",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "To The Devil, His Due, Part Four of Five"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 99,
+   "numtext": "99",
+   "month": "September",
+   "year": "2007",
+   "released": "August 8, 2007",
+   "legacy": "Daredevil Vol 1 479",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "To The Devil, His Due, Part Five of Five"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 100,
+   "numtext": "100",
+   "month": "October",
+   "year": "2007",
+   "released": "September 12, 2007",
+   "legacy": "Daredevil Vol 1 480",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Without Fear, Part One of Six"
+   ],
+   "arcs": [
+    "Without Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 101,
+   "numtext": "101",
+   "month": "November",
+   "year": "2007",
+   "released": "October 24, 2007",
+   "legacy": "Daredevil Vol 1 481",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Without Fear, Part Two of Six"
+   ],
+   "arcs": [
+    "Without Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 102,
+   "numtext": "102",
+   "month": "January",
+   "year": "2008",
+   "released": "November 29, 2007",
+   "legacy": "Daredevil Vol 1 482",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Without Fear, Part Three of Six"
+   ],
+   "arcs": [
+    "Without Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 103,
+   "numtext": "103",
+   "month": "February",
+   "year": "2008",
+   "released": "December 28, 2007",
+   "legacy": "Daredevil Vol 1 483",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Without Fear, Part Four of Six"
+   ],
+   "arcs": [
+    "Without Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 104,
+   "numtext": "104",
+   "month": "March",
+   "year": "2008",
+   "released": "January 30, 2008",
+   "legacy": "Daredevil Vol 1 484",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Without Fear, Part Five of Six"
+   ],
+   "arcs": [
+    "Without Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 105,
+   "numtext": "105",
+   "month": "April",
+   "year": "2008",
+   "released": "February 27, 2008",
+   "legacy": "Daredevil Vol 1 485",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Without Fear, Part Six of Six"
+   ],
+   "arcs": [
+    "Without Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 106,
+   "numtext": "106",
+   "month": "May",
+   "year": "2008",
+   "released": "March 26, 2008",
+   "legacy": "Daredevil Vol 1 486",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Paul Azaceta",
+   "titles": [
+    "Sympathy for the Devil"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 107,
+   "numtext": "107",
+   "month": "July",
+   "year": "2008",
+   "released": "May 28, 2008",
+   "legacy": "Daredevil Vol 1 487",
+   "writers": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "lead": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Cruel & Unusual"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 108,
+   "numtext": "108",
+   "month": "August",
+   "year": "2008",
+   "released": "June 25, 2008",
+   "legacy": "Daredevil Vol 1 488",
+   "writers": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "lead": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Cruel & Unusual"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 109,
+   "numtext": "109",
+   "month": "September",
+   "year": "2008",
+   "released": "July 23, 2008",
+   "legacy": "Daredevil Vol 1 489",
+   "writers": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "lead": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Cruel & Unusual"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 110,
+   "numtext": "110",
+   "month": "Oct",
+   "year": "2008",
+   "released": "August 27, 2008",
+   "legacy": "Daredevil Vol 1 490",
+   "writers": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "lead": [
+    "Ed Brubaker",
+    "Greg Rucka"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Cruel & Unusual"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 111,
+   "numtext": "111",
+   "month": "November",
+   "year": "2008",
+   "released": "September 24, 2008",
+   "legacy": "Daredevil Vol 1 491",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Clay Mann",
+   "titles": [
+    "Lady Bullseye"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 112,
+   "numtext": "112",
+   "month": "December",
+   "year": "2008",
+   "released": "October 22, 2008",
+   "legacy": "Daredevil Vol 1 492",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Lady Bullseye"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 113,
+   "numtext": "113",
+   "month": "January",
+   "year": "2009",
+   "released": "November 26, 2008",
+   "legacy": "Daredevil Vol 1 493",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "\"Lady Bullseye\""
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 114,
+   "numtext": "114",
+   "month": "Feb",
+   "year": "2009",
+   "released": "December 24, 2008",
+   "legacy": "Daredevil Vol 1 494",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Lady Bullseye, Part Four"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 115,
+   "numtext": "115",
+   "month": "March",
+   "year": "2009",
+   "released": "January 28, 2009",
+   "legacy": "Daredevil Vol 1 495",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Lady Bullseye, Conclusion"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 116,
+   "numtext": "116",
+   "month": "April",
+   "year": "2009",
+   "released": "March 4, 2009",
+   "legacy": "Daredevil Vol 1 496",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "David Aja",
+   "titles": [
+    "Return of the King Prologue: On the Costa da Morte"
+   ],
+   "arcs": [
+    "Return of the King"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 117,
+   "numtext": "117",
+   "month": "May",
+   "year": "2009",
+   "released": "March 25, 2009",
+   "legacy": "Daredevil Vol 1 497",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Return of the King"
+   ],
+   "arcs": [
+    "Return of the King"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 118,
+   "numtext": "118",
+   "month": "June",
+   "year": "2009",
+   "released": "April 22, 2009",
+   "legacy": "Daredevil Vol 1 498",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Return of the King"
+   ],
+   "arcs": [
+    "Return of the King"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 119,
+   "numtext": "119",
+   "month": "August",
+   "year": "2009",
+   "released": "June 24, 2009",
+   "legacy": "Daredevil Vol 1 499",
+   "writers": [
+    "Ed Brubaker"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Return of the King"
+   ],
+   "arcs": [
+    "Return of the King"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 500,
+   "numtext": "500",
+   "month": "October",
+   "year": "2009",
+   "released": "August 19, 2009",
+   "legacy": "Daredevil Vol 1 500",
+   "writers": [
+    "Ed Brubaker",
+    "Ann Nocenti"
+   ],
+   "lead": [
+    "Ed Brubaker"
+   ],
+   "penciler": "Michael Lark",
+   "titles": [
+    "Return of the King, Conclusion",
+    "3 Jacks"
+   ],
+   "arcs": [
+    "Return of the King"
+   ],
+   "reprints": [
+    "Daredevil Vol 1 191"
+   ]
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 501,
+   "numtext": "501",
+   "month": "December",
+   "year": "2009",
+   "released": "October 7, 2009",
+   "legacy": "Daredevil Vol 1 501",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Roberto De La Torre",
+   "titles": [
+    "The Devil's Hand, Part One"
+   ],
+   "arcs": [
+    "The Devil's Hand"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 502,
+   "numtext": "502",
+   "month": "January",
+   "year": "2010",
+   "released": "November 11, 2009",
+   "legacy": "Daredevil Vol 1 502",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Roberto De La Torre",
+   "titles": [
+    "The Devil's Hand, Part Two"
+   ],
+   "arcs": [
+    "The Devil's Hand"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 503,
+   "numtext": "503",
+   "month": "February",
+   "year": "2010",
+   "released": "December 16, 2009",
+   "legacy": "Daredevil Vol 1 503",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Roberto De La Torre",
+   "titles": [
+    "The Devil's Hand, Part Three"
+   ],
+   "arcs": [
+    "The Devil's Hand"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 504,
+   "numtext": "504",
+   "month": "March",
+   "year": "2010",
+   "released": "January 27, 2010",
+   "legacy": "Daredevil Vol 1 504",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Roberto De La Torre",
+   "titles": [
+    "The Devil's Hand, Part Four"
+   ],
+   "arcs": [
+    "The Devil's Hand"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 505,
+   "numtext": "505",
+   "month": "April",
+   "year": "2010",
+   "released": "February 17, 2010",
+   "legacy": "Daredevil Vol 1 505",
+   "writers": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "lead": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 506,
+   "numtext": "506",
+   "month": "June",
+   "year": "2010",
+   "released": "April 14, 2010",
+   "legacy": "Daredevil Vol 1 506",
+   "writers": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "lead": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Left Hand Path"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 507,
+   "numtext": "507",
+   "month": "August",
+   "year": "2010",
+   "released": "June 9, 2010",
+   "legacy": "Daredevil Vol 1 507",
+   "writers": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "lead": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 508,
+   "numtext": "508",
+   "month": "September",
+   "year": "2010",
+   "released": "July 14, 2010",
+   "legacy": "Daredevil Vol 1 508",
+   "writers": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "lead": [
+    "Andy Diggle",
+    "Antony Johnston"
+   ],
+   "penciler": "Roberto De La Torre",
+   "titles": [
+    "Shadowland"
+   ],
+   "arcs": [
+    "Shadowland"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 509,
+   "numtext": "509",
+   "month": "October",
+   "year": "2010",
+   "released": "August 11, 2010",
+   "legacy": "Daredevil Vol 1 509",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Roberto De La Torre",
+   "titles": [
+    "Shadowland"
+   ],
+   "arcs": [
+    "Shadowland"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 510,
+   "numtext": "510",
+   "month": "November",
+   "year": "2010",
+   "released": "September 9, 2010",
+   "legacy": "Daredevil Vol 1 510",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Shadowland"
+   ],
+   "arcs": [
+    "Shadowland"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 511,
+   "numtext": "511",
+   "month": "December",
+   "year": "2010",
+   "released": "October 20, 2010",
+   "legacy": "Daredevil Vol 1 511",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Roberto de la Torre",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 2",
+   "num": 512,
+   "numtext": "512",
+   "month": "February",
+   "year": "2011",
+   "released": "December 1, 2010",
+   "legacy": "Daredevil Vol 1 512",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 1,
+   "numtext": "1",
+   "month": "September",
+   "year": "2011",
+   "released": "July 20, 2011",
+   "legacy": "Daredevil Vol 1 513",
+   "writers": [
+    "Fred van Lente",
+    "Mark Waid"
+   ],
+   "lead": [
+    "Fred van Lente"
+   ],
+   "penciler": "Marcos Martin",
+   "titles": [
+    "Here Comes...Daredevil",
+    "Man w/o Fear",
+    "Sometimes, in my dreams... I can see."
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 2,
+   "numtext": "2",
+   "month": "October",
+   "year": "2011",
+   "released": "August 17, 2011",
+   "legacy": "Daredevil Vol 1 514",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Paolo Rivera",
+   "titles": [
+    "Red, White, Black and Blue"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 3,
+   "numtext": "3",
+   "month": "November",
+   "year": "2011",
+   "released": "September 14, 2011",
+   "legacy": "Daredevil Vol 1 515",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Paolo Rivera",
+   "titles": [
+    "Sound and Fury"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 4,
+   "numtext": "4",
+   "month": "November",
+   "year": "2011",
+   "released": "September 21, 2011",
+   "legacy": "Daredevil Vol 1 516",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Marcos Martín",
+   "titles": [
+    "Daredevil Back in NYC!"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 5,
+   "numtext": "5",
+   "month": "December",
+   "year": "2011",
+   "released": "October 26, 2011",
+   "legacy": "Daredevil Vol 1 517",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Marcos Martín",
+   "titles": [
+    "High Wire Act"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 6,
+   "numtext": "6",
+   "month": "January",
+   "year": "2012",
+   "released": "November 30, 2011",
+   "legacy": "Daredevil Vol 1 518",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Marcos Martín",
+   "titles": [
+    "Daredevil vs Bruiser"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 7,
+   "numtext": "7",
+   "month": "February",
+   "year": "2012",
+   "released": "December 21, 2011",
+   "legacy": "Daredevil Vol 1 519",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Paolo Rivera",
+   "titles": [
+    "Daredevil Faces Off with Five Crime Organizations at Once"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 8,
+   "numtext": "8",
+   "month": "March",
+   "year": "2012",
+   "released": "January 18, 2012",
+   "legacy": "Daredevil Vol 1 520",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Kano",
+   "titles": [
+    "The Devil and the Details - Part 2 of 2"
+   ],
+   "arcs": [
+    "The Devil and the Details"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 9,
+   "numtext": "9",
+   "month": "April",
+   "year": "2012",
+   "released": "February 15, 2012",
+   "legacy": "Daredevil Vol 1 521",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Paolo Rivera",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 10,
+   "numtext": "10",
+   "month": "May",
+   "year": "2012",
+   "released": "March 28, 2012",
+   "legacy": "Daredevil Vol 1 522",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Paolo Rivera",
+   "titles": [
+    "Underground Crime"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 10.1,
+   "numtext": "10.1",
+   "month": "June",
+   "year": "2012",
+   "released": "April 4, 2012",
+   "legacy": "",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Khoi Pham",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 11,
+   "numtext": "11",
+   "month": "June",
+   "year": "2012",
+   "released": "April 25, 2012",
+   "legacy": "Daredevil Vol 1 523",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Omega Effect"
+   ],
+   "arcs": [
+    "Omega Effect"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 12,
+   "numtext": "12",
+   "month": "July",
+   "year": "2012",
+   "released": "May 2, 2012",
+   "legacy": "Daredevil Vol 1 524",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 13,
+   "numtext": "13",
+   "month": "July",
+   "year": "2012",
+   "released": "May 16, 2012",
+   "legacy": "Daredevil Vol 1 525",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Khoi Pham",
+   "titles": [
+    "Hell Night"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 14,
+   "numtext": "14",
+   "month": "August",
+   "year": "2012",
+   "released": "June 20, 2012",
+   "legacy": "Daredevil Vol 1 526",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Damned If You Do...Damned If You Don't"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 15,
+   "numtext": "15",
+   "month": "September",
+   "year": "2012",
+   "released": "July 18, 2012",
+   "legacy": "Daredevil Vol 1 527",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 16,
+   "numtext": "16",
+   "month": "October",
+   "year": "2012",
+   "released": "August 1, 2012",
+   "legacy": "Daredevil Vol 1 528",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Inside Job"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 17,
+   "numtext": "17",
+   "month": "October",
+   "year": "2012",
+   "released": "August 15, 2012",
+   "legacy": "Daredevil Vol 1 529",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Mike Allred",
+   "titles": [
+    "The Great Divide"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 18,
+   "numtext": "18",
+   "month": "November",
+   "year": "2012",
+   "released": "September 19, 2012",
+   "legacy": "Daredevil Vol 1 530",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Nelson and Murdock: Attorneys at Odds"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 19,
+   "numtext": "19",
+   "month": "December",
+   "year": "2012",
+   "released": "October 17, 2012",
+   "legacy": "Daredevil Vol 1 531",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Certifiable"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 20,
+   "numtext": "20",
+   "month": "January",
+   "year": "2013",
+   "released": "November 21, 2012",
+   "legacy": "Daredevil Vol 1 532",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 21,
+   "numtext": "21",
+   "month": "February",
+   "year": "2013",
+   "released": "December 19, 2012",
+   "legacy": "Daredevil Vol 1 533",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 22,
+   "numtext": "22",
+   "month": "March",
+   "year": "2013",
+   "released": "January 16, 2013",
+   "legacy": "Daredevil Vol 1 534",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 23,
+   "numtext": "23",
+   "month": "April",
+   "year": "2013",
+   "released": "February 20, 2013",
+   "legacy": "Daredevil Vol 1 535",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 24,
+   "numtext": "24",
+   "month": "May",
+   "year": "2013",
+   "released": "March 20, 2013",
+   "legacy": "Daredevil Vol 1 536",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 25,
+   "numtext": "25",
+   "month": "June",
+   "year": "2013",
+   "released": "April 17, 2013",
+   "legacy": "Daredevil Vol 1 537",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 26,
+   "numtext": "26",
+   "month": "July",
+   "year": "2013",
+   "released": "May 22, 2013",
+   "legacy": "Daredevil Vol 1 538",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Punching Cancer"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 27,
+   "numtext": "27",
+   "month": "August",
+   "year": "2013",
+   "released": "June 26, 2013",
+   "legacy": "Daredevil Vol 1 539",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 28,
+   "numtext": "28",
+   "month": "September",
+   "year": "2013",
+   "released": "July 10, 2013",
+   "legacy": "Daredevil Vol 1 540",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Javier Rodriguez",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 29,
+   "numtext": "29",
+   "month": "September",
+   "year": "2013",
+   "released": "July 31, 2013",
+   "legacy": "Daredevil Vol 1 541",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Javier Rodriguez",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 30,
+   "numtext": "30",
+   "month": "October",
+   "year": "2013",
+   "released": "August 21, 2013",
+   "legacy": "Daredevil Vol 1 542",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Help wanted"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 31,
+   "numtext": "31",
+   "month": "November",
+   "year": "2013",
+   "released": "September 18, 2013",
+   "legacy": "Daredevil Vol 1 543",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 32,
+   "numtext": "32",
+   "month": "December",
+   "year": "2013",
+   "released": "October 23, 2013",
+   "legacy": "Daredevil Vol 1 544",
+   "writers": [
+    "Mark Waid",
+    "Chris Samnee"
+   ],
+   "lead": [
+    "Mark Waid",
+    "Chris Samnee"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "A Call For Justice?"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 33,
+   "numtext": "33",
+   "month": "January",
+   "year": "2014",
+   "released": "November 20, 2013",
+   "legacy": "Daredevil Vol 1 545",
+   "writers": [
+    "Mark Waid",
+    "Chris Samnee"
+   ],
+   "lead": [
+    "Mark Waid",
+    "Chris Samnee"
+   ],
+   "penciler": "Jason Copland",
+   "titles": [
+    "Monster Mash"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 34,
+   "numtext": "34",
+   "month": "February",
+   "year": "2014",
+   "released": "December 18, 2013",
+   "legacy": "Daredevil Vol 1 546",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Javier Rodriguez",
+   "titles": [
+    "The Devil Went Down To... Kentucky"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 35,
+   "numtext": "35",
+   "month": "March",
+   "year": "2014",
+   "released": "January 15, 2014",
+   "legacy": "Daredevil Vol 1 547",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Devil's Broadcast"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 3",
+   "num": 36,
+   "numtext": "36",
+   "month": "April",
+   "year": "2014",
+   "released": "February 19, 2014",
+   "legacy": "Daredevil Vol 1 548",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "I Am Daredevil"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 0.1,
+   "numtext": "0.1",
+   "month": "September",
+   "year": "2014",
+   "released": "July 2, 2014",
+   "legacy": "",
+   "writers": [],
+   "lead": [],
+   "penciler": "",
+   "titles": [],
+   "arcs": [],
+   "reprints": [
+    "Daredevil: Road Warrior Infinite Comic Vol 1 1",
+    "Daredevil: Road Warrior Infinite Comic Vol 1 2",
+    "Daredevil: Road Warrior Infinite Comic Vol 1 3",
+    "Daredevil: Road Warrior Infinite Comic Vol 1 4"
+   ]
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 1,
+   "numtext": "1",
+   "month": "May",
+   "year": "2014",
+   "released": "March 19, 2014",
+   "legacy": "Daredevil Vol 1 549",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 1.5,
+   "numtext": "1.50",
+   "month": "June",
+   "year": "2014",
+   "released": "April 9, 2014",
+   "legacy": "",
+   "writers": [
+    "Mark Waid",
+    "Brian Michael Bendis",
+    "Karl Kesel"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Javier Rodriguez",
+   "titles": [
+    "The King in Red",
+    "The Last Will and Testament of Mike Murdock"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 2,
+   "numtext": "2",
+   "month": "June",
+   "year": "2014",
+   "released": "April 23, 2014",
+   "legacy": "Daredevil Vol 1 550",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 3,
+   "numtext": "3",
+   "month": "July",
+   "year": "2014",
+   "released": "May 21, 2014",
+   "legacy": "Daredevil Vol 1 551",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 4,
+   "numtext": "4",
+   "month": "August",
+   "year": "2014",
+   "released": "June 18, 2014",
+   "legacy": "Daredevil Vol 1 552",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 5,
+   "numtext": "5",
+   "month": "September",
+   "year": "2014",
+   "released": "July 9, 2014",
+   "legacy": "Daredevil Vol 1 553",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 6,
+   "numtext": "6",
+   "month": "September",
+   "year": "2014",
+   "released": "July 23, 2014",
+   "legacy": "Daredevil Vol 1 554",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Javier Rodriguez",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 7,
+   "numtext": "7",
+   "month": "October",
+   "year": "2014",
+   "released": "August 20, 2014",
+   "legacy": "Daredevil Vol 1 555",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Javier Rodriguez",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 8,
+   "numtext": "8",
+   "month": "November",
+   "year": "2014",
+   "released": "September 17, 2014",
+   "legacy": "Daredevil Vol 1 556",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 9,
+   "numtext": "9",
+   "month": "December",
+   "year": "2014",
+   "released": "October 15, 2014",
+   "legacy": "Daredevil Vol 1 557",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 10,
+   "numtext": "10",
+   "month": "January",
+   "year": "2015",
+   "released": "November 19, 2014",
+   "legacy": "Daredevil Vol 1 558",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 11,
+   "numtext": "11",
+   "month": "February",
+   "year": "2015",
+   "released": "December 24, 2014",
+   "legacy": "Daredevil Vol 1 559",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 12,
+   "numtext": "12",
+   "month": "March",
+   "year": "2015",
+   "released": "January 14, 2015",
+   "legacy": "Daredevil Vol 1 560",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 13,
+   "numtext": "13",
+   "month": "April",
+   "year": "2015",
+   "released": "February 25, 2015",
+   "legacy": "Daredevil Vol 1 561",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 14,
+   "numtext": "14",
+   "month": "May",
+   "year": "2015",
+   "released": "March 25, 2015",
+   "legacy": "Daredevil Vol 1 562",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 15,
+   "numtext": "15",
+   "month": "June",
+   "year": "2015",
+   "released": "April 29, 2015",
+   "legacy": "Daredevil Vol 1 563",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 15.1,
+   "numtext": "15.1",
+   "month": "July",
+   "year": "2015",
+   "released": "May 20, 2015",
+   "legacy": "",
+   "writers": [
+    "Mark Waid",
+    "Marc Guggenheim",
+    "Chris Samnee"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [
+    "Retrospection",
+    "Worlds Collide",
+    "Chasing the Devil"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 16,
+   "numtext": "16",
+   "month": "August",
+   "year": "2015",
+   "released": "June 24, 2015",
+   "legacy": "Daredevil Vol 1 564",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 17,
+   "numtext": "17",
+   "month": "September",
+   "year": "2015",
+   "released": "July 29, 2015",
+   "legacy": "Daredevil Vol 1 565",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 4",
+   "num": 18,
+   "numtext": "18",
+   "month": "November",
+   "year": "2015",
+   "released": "September 2, 2015",
+   "legacy": "Daredevil Vol 1 566",
+   "writers": [
+    "Mark Waid"
+   ],
+   "lead": [
+    "Mark Waid"
+   ],
+   "penciler": "Chris Samnee",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 1,
+   "numtext": "1",
+   "month": "February",
+   "year": "2016",
+   "released": "December 2, 2015",
+   "legacy": "Daredevil Vol 1 567",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 2,
+   "numtext": "2",
+   "month": "February",
+   "year": "2016",
+   "released": "December 23, 2015",
+   "legacy": "Daredevil Vol 1 568",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 3,
+   "numtext": "3",
+   "month": "March",
+   "year": "2016",
+   "released": "January 27, 2016",
+   "legacy": "Daredevil Vol 1 569",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 4,
+   "numtext": "4",
+   "month": "April",
+   "year": "2016",
+   "released": "February 24, 2016",
+   "legacy": "Daredevil Vol 1 570",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 5,
+   "numtext": "5",
+   "month": "May",
+   "year": "2016",
+   "released": "March 30, 2016",
+   "legacy": "Daredevil Vol 1 571",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 6,
+   "numtext": "6",
+   "month": "June",
+   "year": "2016",
+   "released": "April 27, 2016",
+   "legacy": "Daredevil Vol 1 572",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Matteo Buffagni",
+   "titles": [
+    "Elektric Connection"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 7,
+   "numtext": "7",
+   "month": "July",
+   "year": "2016",
+   "released": "May 25, 2016",
+   "legacy": "Daredevil Vol 1 573",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Matteo Buffagni",
+   "titles": [
+    "Elektric Connection - Part II"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 8,
+   "numtext": "8",
+   "month": "August",
+   "year": "2016",
+   "released": "June 8, 2016",
+   "legacy": "Daredevil Vol 1 574",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Goran Sudzuka",
+   "titles": [
+    "Blind Man's Bluff: Part I"
+   ],
+   "arcs": [
+    "Blind Man's Bluff"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 9,
+   "numtext": "9",
+   "month": "September",
+   "year": "2016",
+   "released": "July 13, 2016",
+   "legacy": "Daredevil Vol 1 575",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Goran Sudzuka",
+   "titles": [
+    "Blind Man's Bluff: Part II"
+   ],
+   "arcs": [
+    "Blind Man's Bluff"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 10,
+   "numtext": "10",
+   "month": "October",
+   "year": "2016",
+   "released": "August 10, 2016",
+   "legacy": "Daredevil Vol 1 576",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Dark Art: Part 1"
+   ],
+   "arcs": [
+    "Dark Art"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 11,
+   "numtext": "11",
+   "month": "November",
+   "year": "2016",
+   "released": "September 7, 2016",
+   "legacy": "Daredevil Vol 1 577",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Dark Art: Part II"
+   ],
+   "arcs": [
+    "Dark Art"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 12,
+   "numtext": "12",
+   "month": "December",
+   "year": "2016",
+   "released": "October 12, 2016",
+   "legacy": "Daredevil Vol 1 578",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Dark Art: Part III"
+   ],
+   "arcs": [
+    "Dark Art"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 13,
+   "numtext": "13",
+   "month": "January",
+   "year": "2017",
+   "released": "November 9, 2016",
+   "legacy": "Daredevil Vol 1 579",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Dark Art: Part IV"
+   ],
+   "arcs": [
+    "Dark Art"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 14,
+   "numtext": "14",
+   "month": "February",
+   "year": "2017",
+   "released": "December 14, 2016",
+   "legacy": "Daredevil Vol 1 580",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Dark Art: Part V"
+   ],
+   "arcs": [
+    "Dark Art"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 15,
+   "numtext": "15",
+   "month": "March",
+   "year": "2017",
+   "released": "January 11, 2017",
+   "legacy": "Daredevil Vol 1 581",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Goran Sudzuka",
+   "titles": [
+    "The Seventh Day, Part 1"
+   ],
+   "arcs": [
+    "The Seventh Day"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 16,
+   "numtext": "16",
+   "month": "March",
+   "year": "2017",
+   "released": "January 25, 2017",
+   "legacy": "Daredevil Vol 1 582",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Goran Sudzuka",
+   "titles": [
+    "The Seventh Day, Part 2"
+   ],
+   "arcs": [
+    "The Seventh Day"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 17,
+   "numtext": "17",
+   "month": "April",
+   "year": "2017",
+   "released": "February 15, 2017",
+   "legacy": "Daredevil Vol 1 583",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Purple, Part 1"
+   ],
+   "arcs": [
+    "Purple"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 18,
+   "numtext": "18",
+   "month": "May",
+   "year": "2017",
+   "released": "March 15, 2017",
+   "legacy": "Daredevil Vol 1 584",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Purple, Part 2"
+   ],
+   "arcs": [
+    "Purple"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 19,
+   "numtext": "19",
+   "month": "June",
+   "year": "2017",
+   "released": "April 19, 2017",
+   "legacy": "Daredevil Vol 1 585",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Marc Laming",
+   "titles": [
+    "Purple, Part 3"
+   ],
+   "arcs": [
+    "Purple"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 20,
+   "numtext": "20",
+   "month": "July",
+   "year": "2017",
+   "released": "May 17, 2017",
+   "legacy": "Daredevil Vol 1 586",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Purple, Conclusion"
+   ],
+   "arcs": [
+    "Purple"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 21,
+   "numtext": "21",
+   "month": "August",
+   "year": "2017",
+   "released": "June 7, 2017",
+   "legacy": "Daredevil Vol 1 587",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Goran Sudzuka",
+   "titles": [
+    "Supreme: Part 1"
+   ],
+   "arcs": [
+    "Supreme"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 22,
+   "numtext": "22",
+   "month": "August",
+   "year": "2017",
+   "released": "June 21, 2017",
+   "legacy": "Daredevil Vol 1 588",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Goran Sudzuka",
+   "titles": [
+    "Supreme: Part 2"
+   ],
+   "arcs": [
+    "Supreme"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 23,
+   "numtext": "23",
+   "month": "September",
+   "year": "2017",
+   "released": "July 5, 2017",
+   "legacy": "Daredevil Vol 1 589",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Alec Morgan",
+   "titles": [
+    "Supreme: Part 3"
+   ],
+   "arcs": [
+    "Supreme"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 24,
+   "numtext": "24",
+   "month": "September",
+   "year": "2017",
+   "released": "July 19, 2017",
+   "legacy": "Daredevil Vol 1 590",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Alec Morgan",
+   "titles": [
+    "Supreme: Part 4"
+   ],
+   "arcs": [
+    "Supreme"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 25,
+   "numtext": "25",
+   "month": "October",
+   "year": "2017",
+   "released": "August 23, 2017",
+   "legacy": "Daredevil Vol 1 591",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Alec Morgan",
+   "titles": [
+    "Supreme: Conclusion"
+   ],
+   "arcs": [
+    "Supreme"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 26,
+   "numtext": "26",
+   "month": "November",
+   "year": "2017",
+   "released": "September 6, 2017",
+   "legacy": "Daredevil Vol 1 592",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Land of the Blind: Part 1 of 3"
+   ],
+   "arcs": [
+    "Land of the Blind"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 27,
+   "numtext": "27",
+   "month": "December",
+   "year": "2017",
+   "released": "October 11, 2017",
+   "legacy": "Daredevil Vol 1 593",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Land of the Blind: Part 2 of 3"
+   ],
+   "arcs": [
+    "Land of the Blind"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 28,
+   "numtext": "28",
+   "month": "December",
+   "year": "2017",
+   "released": "October 25, 2017",
+   "legacy": "Daredevil Vol 1 594",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "Land of the Blind: Part 3 of 3"
+   ],
+   "arcs": [
+    "Land of the Blind"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 595,
+   "numtext": "595",
+   "month": "January",
+   "year": "2018",
+   "released": "November 8, 2017",
+   "legacy": "Daredevil Vol 1 595",
+   "writers": [
+    "Charles Soule",
+    "Robbie Thompson"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Stefano Landini",
+   "titles": [
+    "Marvel Legacy Primer Pages"
+   ],
+   "arcs": [
+    "Mayor Fisk"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 596,
+   "numtext": "596",
+   "month": "February",
+   "year": "2018",
+   "released": "December 13, 2017",
+   "legacy": "Daredevil Vol 1 596",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Stefano Landini",
+   "titles": [],
+   "arcs": [
+    "Mayor Fisk"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 597,
+   "numtext": "597",
+   "month": "March",
+   "year": "2018",
+   "released": "January 10, 2018",
+   "legacy": "Daredevil Vol 1 597",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Stefano Landini",
+   "titles": [],
+   "arcs": [
+    "Mayor Fisk"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 598,
+   "numtext": "598",
+   "month": "April",
+   "year": "2018",
+   "released": "February 7, 2018",
+   "legacy": "Daredevil Vol 1 598",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [
+    "Mayor Fisk"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 599,
+   "numtext": "599",
+   "month": "April",
+   "year": "2018",
+   "released": "February 21, 2018",
+   "legacy": "Daredevil Vol 1 599",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [],
+   "arcs": [
+    "Mayor Fisk"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 600,
+   "numtext": "600",
+   "month": "May",
+   "year": "2018",
+   "released": "March 28, 2018",
+   "legacy": "Daredevil Vol 1 600",
+   "writers": [
+    "Charles Soule",
+    "Christos N. Gage"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Ron Garney",
+   "titles": [
+    "They Also Serve"
+   ],
+   "arcs": [
+    "Mayor Fisk"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 601,
+   "numtext": "601",
+   "month": "June",
+   "year": "2018",
+   "released": "April 18, 2018",
+   "legacy": "Daredevil Vol 1 601",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Mike Henderson",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 602,
+   "numtext": "602",
+   "month": "July",
+   "year": "2018",
+   "released": "May 16, 2018",
+   "legacy": "Daredevil Vol 1 602",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Mike Henderson",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 603,
+   "numtext": "603",
+   "month": "July",
+   "year": "2018",
+   "released": "May 30, 2018",
+   "legacy": "Daredevil Vol 1 603",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Mike Henderson",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 604,
+   "numtext": "604",
+   "month": "August",
+   "year": "2018",
+   "released": "June 20, 2018",
+   "legacy": "Daredevil Vol 1 604",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Mike Henderson",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 605,
+   "numtext": "605",
+   "month": "September",
+   "year": "2018",
+   "released": "July 11, 2018",
+   "legacy": "Daredevil Vol 1 605",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Mike Henderson",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 606,
+   "numtext": "606",
+   "month": "October",
+   "year": "2018",
+   "released": "August 8, 2018",
+   "legacy": "Daredevil Vol 1 606",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 607,
+   "numtext": "607",
+   "month": "October",
+   "year": "2018",
+   "released": "August 22, 2018",
+   "legacy": "Daredevil Vol 1 607",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 608,
+   "numtext": "608",
+   "month": "November",
+   "year": "2018",
+   "released": "September 12, 2018",
+   "legacy": "Daredevil Vol 1 608",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 609,
+   "numtext": "609",
+   "month": "December",
+   "year": "2018",
+   "released": "October 17, 2018",
+   "legacy": "Daredevil Vol 1 609",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [
+    "The Death of Daredevil Part 1: Thanatophobia"
+   ],
+   "arcs": [
+    "The Death of Daredevil"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 610,
+   "numtext": "610",
+   "month": "December",
+   "year": "2018",
+   "released": "October 31, 2018",
+   "legacy": "Daredevil Vol 1 610",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [
+    "The Death of Daredevil Part 2: Pistanthrophobia"
+   ],
+   "arcs": [
+    "The Death of Daredevil"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 611,
+   "numtext": "611",
+   "month": "January",
+   "year": "2019",
+   "released": "November 14, 2018",
+   "legacy": "Daredevil Vol 1 611",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [
+    "The Death of Daredevil Part 3: Phobophobia"
+   ],
+   "arcs": [
+    "The Death of Daredevil"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 5",
+   "num": 612,
+   "numtext": "612",
+   "month": "January",
+   "year": "2019",
+   "released": "November 28, 2018",
+   "legacy": "Daredevil Vol 1 612",
+   "writers": [
+    "Charles Soule"
+   ],
+   "lead": [
+    "Charles Soule"
+   ],
+   "penciler": "Phil Noto",
+   "titles": [
+    "The Death of Daredevil Conclusion: Apeirophobia"
+   ],
+   "arcs": [
+    "The Death of Daredevil"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 1,
+   "numtext": "1",
+   "month": "April",
+   "year": "2019",
+   "released": "February 6, 2019",
+   "legacy": "Daredevil Vol 1 613",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Know Fear: Part 1",
+    "Sense of Self"
+   ],
+   "arcs": [
+    "Know Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 2,
+   "numtext": "2",
+   "month": "April",
+   "year": "2019",
+   "released": "February 27, 2019",
+   "legacy": "Daredevil Vol 1 614",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Know Fear: Part 2"
+   ],
+   "arcs": [
+    "Know Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 3,
+   "numtext": "3",
+   "month": "May",
+   "year": "2019",
+   "released": "March 27, 2019",
+   "legacy": "Daredevil Vol 1 615",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Know Fear: Part 3"
+   ],
+   "arcs": [
+    "Know Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 4,
+   "numtext": "4",
+   "month": "June",
+   "year": "2019",
+   "released": "April 17, 2019",
+   "legacy": "Daredevil Vol 1 616",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Know Fear: Part 4"
+   ],
+   "arcs": [
+    "Know Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 5,
+   "numtext": "5",
+   "month": "July",
+   "year": "2019",
+   "released": "May 15, 2019",
+   "legacy": "Daredevil Vol 1 617",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Know Fear: Part 5"
+   ],
+   "arcs": [
+    "Know Fear"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 6,
+   "numtext": "6",
+   "month": "July",
+   "year": "2019",
+   "released": "May 29, 2019",
+   "legacy": "Daredevil Vol 1 618",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Lalit Kumar Sharma",
+   "titles": [
+    "No Devils, Only God: Part 1"
+   ],
+   "arcs": [
+    "No Devils, Only God"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 7,
+   "numtext": "7",
+   "month": "August",
+   "year": "2019",
+   "released": "June 19, 2019",
+   "legacy": "Daredevil Vol 1 619",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Lalit Kumar Sharma",
+   "titles": [
+    "No Devils, Only God: Part 2"
+   ],
+   "arcs": [
+    "No Devils, Only God"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 8,
+   "numtext": "8",
+   "month": "September",
+   "year": "2019",
+   "released": "July 17, 2019",
+   "legacy": "Daredevil Vol 1 620",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Lalit Kumar Sharma",
+   "titles": [
+    "No Devils, Only God: Part 3"
+   ],
+   "arcs": [
+    "No Devils, Only God"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 9,
+   "numtext": "9",
+   "month": "October",
+   "year": "2019",
+   "released": "August 7, 2019",
+   "legacy": "Daredevil Vol 1 621",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Lalit Kumar Sharma",
+   "titles": [
+    "No Devils, Only God: Part 4"
+   ],
+   "arcs": [
+    "No Devils, Only God"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 10,
+   "numtext": "10",
+   "month": "October",
+   "year": "2019",
+   "released": "August 21, 2019",
+   "legacy": "Daredevil Vol 1 622",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Jorge Fornés",
+   "titles": [
+    "No Devils, Only God: Part 5"
+   ],
+   "arcs": [
+    "No Devils, Only God"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 11,
+   "numtext": "11",
+   "month": "November",
+   "year": "2019",
+   "released": "September 11, 2019",
+   "legacy": "Daredevil Vol 1 623",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Through Hell: Part 1"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 12,
+   "numtext": "12",
+   "month": "December",
+   "year": "2019",
+   "released": "October 2, 2019",
+   "legacy": "Daredevil Vol 1 624",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Through Hell: Part 2"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 13,
+   "numtext": "13",
+   "month": "January",
+   "year": "2020",
+   "released": "November 6, 2019",
+   "legacy": "Daredevil Vol 1 625",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Through Hell: Part 3"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 14,
+   "numtext": "14",
+   "month": "February",
+   "year": "2020",
+   "released": "December 4, 2019",
+   "legacy": "Daredevil Vol 1 626",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Through Hell: Part 4"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 15,
+   "numtext": "15",
+   "month": "February",
+   "year": "2020",
+   "released": "December 18, 2019",
+   "legacy": "Daredevil Vol 1 627",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Through Hell: Part 5"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 16,
+   "numtext": "16",
+   "month": "March",
+   "year": "2020",
+   "released": "January 1, 2020",
+   "legacy": "Daredevil Vol 1 628",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Jorge Fornés",
+   "titles": [
+    "Through Hell: Part 6"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 17,
+   "numtext": "17",
+   "month": "April",
+   "year": "2020",
+   "released": "February 5, 2020",
+   "legacy": "Daredevil Vol 1 629",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Jorge Fornés",
+   "titles": [
+    "Through Hell: Part 7"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": [
+    "Dr. Strange Vol 1 2"
+   ]
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 18,
+   "numtext": "18",
+   "month": "April",
+   "year": "2020",
+   "released": "February 19, 2020",
+   "legacy": "Daredevil Vol 1 630",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Jorge Fornés",
+   "titles": [
+    "Through Hell: Part 8"
+   ],
+   "arcs": [
+    "Through Hell"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 19,
+   "numtext": "19",
+   "month": "May",
+   "year": "2020",
+   "released": "March 4, 2020",
+   "legacy": "Daredevil Vol 1 631",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Inferno: Part 1"
+   ],
+   "arcs": [
+    "Inferno"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 20,
+   "numtext": "20",
+   "month": "August",
+   "year": "2020",
+   "released": "June 10, 2020",
+   "legacy": "Daredevil Vol 1 632",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Inferno: Part II - ...Lift Your Fists and Fight"
+   ],
+   "arcs": [
+    "Inferno"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 21,
+   "numtext": "21",
+   "month": "September",
+   "year": "2020",
+   "released": "July 22, 2020",
+   "legacy": "Daredevil Vol 1 633",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Truth/Dare: Part 1"
+   ],
+   "arcs": [
+    "Truth/Dare"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 22,
+   "numtext": "22",
+   "month": "November",
+   "year": "2020",
+   "released": "September 23, 2020",
+   "legacy": "Daredevil Vol 1 634",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Francesco Mobili",
+   "titles": [
+    "Truth/Dare: Part 2"
+   ],
+   "arcs": [
+    "Truth/Dare"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 23,
+   "numtext": "23",
+   "month": "December",
+   "year": "2020",
+   "released": "October 21, 2020",
+   "legacy": "Daredevil Vol 1 635",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Truth/Dare: Part 3"
+   ],
+   "arcs": [
+    "Truth/Dare"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 24,
+   "numtext": "24",
+   "month": "January",
+   "year": "2021",
+   "released": "November 25, 2020",
+   "legacy": "Daredevil Vol 1 636",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Mike Hawthorne",
+   "titles": [
+    "Truth/Dare: Part 4"
+   ],
+   "arcs": [
+    "Truth/Dare"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 25,
+   "numtext": "25",
+   "month": "February",
+   "year": "2021",
+   "released": "December 2, 2020",
+   "legacy": "Daredevil Vol 1 637",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist: Part 1"
+   ],
+   "arcs": [
+    "Doing Time"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 26,
+   "numtext": "26",
+   "month": "March",
+   "year": "2021",
+   "released": "January 27, 2021",
+   "legacy": "Daredevil Vol 1 638",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Black Kitchen: Part 1"
+   ],
+   "arcs": [
+    "The Black Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 27,
+   "numtext": "27",
+   "month": "April",
+   "year": "2021",
+   "released": "February 10, 2021",
+   "legacy": "Daredevil Vol 1 639",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Black Kitchen: Part 2"
+   ],
+   "arcs": [
+    "The Black Kitchen"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 28,
+   "numtext": "28",
+   "month": "May",
+   "year": "2021",
+   "released": "March 10, 2021",
+   "legacy": "Daredevil Vol 1 640",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Are You Okay?"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 29,
+   "numtext": "29",
+   "month": "June",
+   "year": "2021",
+   "released": "April 14, 2021",
+   "legacy": "Daredevil Vol 1 641",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Doing Time: Part 1"
+   ],
+   "arcs": [
+    "Doing Time"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 30,
+   "numtext": "30",
+   "month": "July",
+   "year": "2021",
+   "released": "May 19, 2021",
+   "legacy": "Daredevil Vol 1 642",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Doing Time: Part 2"
+   ],
+   "arcs": [
+    "Doing Time"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 31,
+   "numtext": "31",
+   "month": "August",
+   "year": "2021",
+   "released": "June 30, 2021",
+   "legacy": "Daredevil Vol 1 643",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Mike Hawthorne",
+   "titles": [
+    "Lockdown: Part 1"
+   ],
+   "arcs": [
+    "Lockdown"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 32,
+   "numtext": "32",
+   "month": "September",
+   "year": "2021",
+   "released": "July 28, 2021",
+   "legacy": "Daredevil Vol 1 644",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Mike Hawthorne",
+   "titles": [
+    "Lockdown: Part 2"
+   ],
+   "arcs": [
+    "Lockdown"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 33,
+   "numtext": "33",
+   "month": "October",
+   "year": "2021",
+   "released": "August 11, 2021",
+   "legacy": "Daredevil Vol 1 645",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Lockdown: Part 3"
+   ],
+   "arcs": [
+    "Lockdown"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 34,
+   "numtext": "34",
+   "month": "November",
+   "year": "2021",
+   "released": "September 8, 2021",
+   "legacy": "Daredevil Vol 1 646",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Stefano Landini",
+   "titles": [
+    "Lockdown: Part 4"
+   ],
+   "arcs": [
+    "Lockdown"
+   ],
+   "reprints": [
+    "9/11 20th Anniversary Tribute: The Four Fives Vol 1 1"
+   ]
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 35,
+   "numtext": "35",
+   "month": "December",
+   "year": "2021",
+   "released": "October 27, 2021",
+   "legacy": "Daredevil Vol 1 647",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Stefano Landini",
+   "titles": [
+    "Lockdown: Part 5"
+   ],
+   "arcs": [
+    "Lockdown"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 6",
+   "num": 36,
+   "numtext": "36",
+   "month": "February",
+   "year": "2022",
+   "released": "December 1, 2021",
+   "legacy": "Daredevil Vol 1 648",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Manuel Garcia",
+   "titles": [
+    "Lockdown: Part 6"
+   ],
+   "arcs": [
+    "Lockdown"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 1,
+   "numtext": "1",
+   "month": "September",
+   "year": "2022",
+   "released": "July 13, 2022",
+   "legacy": "Daredevil Vol 1 649",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga - Part 1",
+    "The Island"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 2,
+   "numtext": "2",
+   "month": "October",
+   "year": "2022",
+   "released": "August 17, 2022",
+   "legacy": "Daredevil Vol 1 650",
+   "writers": [
+    "Chip Zdarsky",
+    "Ann Nocenti",
+    "Chris Giarrusso"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga Part 2",
+    "The Hand",
+    "Mini Marvels"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 3,
+   "numtext": "3",
+   "month": "November",
+   "year": "2022",
+   "released": "September 14, 2022",
+   "legacy": "Daredevil Vol 1 651",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [
+    "The Red Fist Saga Part 3"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 4,
+   "numtext": "4",
+   "month": "December",
+   "year": "2022",
+   "released": "October 12, 2022",
+   "legacy": "Daredevil Vol 1 652",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [
+    "The Red Fist Saga Part 4"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 5,
+   "numtext": "5",
+   "month": "January",
+   "year": "2023",
+   "released": "November 23, 2022",
+   "legacy": "Daredevil Vol 1 653",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga, Part 5"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 6,
+   "numtext": "6",
+   "month": "February",
+   "year": "2023",
+   "released": "December 7, 2022",
+   "legacy": "Daredevil Vol 1 654",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [
+    "The Red Fist Saga, Part 6"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 7,
+   "numtext": "7",
+   "month": "March",
+   "year": "2023",
+   "released": "January 11, 2023",
+   "legacy": "Daredevil Vol 1 655",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [
+    "The Red Fist Saga, Part 7"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 8,
+   "numtext": "8",
+   "month": "April",
+   "year": "2023",
+   "released": "February 8, 2023",
+   "legacy": "Daredevil Vol 1 656",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga, Part 8"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 9,
+   "numtext": "9",
+   "month": "May",
+   "year": "2023",
+   "released": "March 29, 2023",
+   "legacy": "Daredevil Vol 1 657",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Manuel Garcia",
+   "titles": [
+    "The Red Fist Saga, Part 9"
+   ],
+   "arcs": [
+    "Red Fist Saga}}"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 10,
+   "numtext": "10",
+   "month": "June",
+   "year": "2023",
+   "released": "April 26, 2023",
+   "legacy": "Daredevil Vol 1 658",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga, Part 10"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 11,
+   "numtext": "11",
+   "month": "July",
+   "year": "2023",
+   "released": "May 10, 2023",
+   "legacy": "Daredevil Vol 1 659",
+   "writers": [
+    "Chip Zdarsky",
+    "Jason Loo"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [
+    "The Red Fist Saga, Part 11",
+    "Painful Lesson"
+   ],
+   "arcs": [
+    "Red Fist Saga}}"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 12,
+   "numtext": "12",
+   "month": "August",
+   "year": "2023",
+   "released": "June 7, 2023",
+   "legacy": "Daredevil Vol 1 660",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga, Part 12"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 13,
+   "numtext": "13",
+   "month": "September",
+   "year": "2023",
+   "released": "July 5, 2023",
+   "legacy": "Daredevil Vol 1 661",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga, Part 13"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil Vol 7",
+   "num": 14,
+   "numtext": "14",
+   "month": "October",
+   "year": "2023",
+   "released": "August 16, 2023",
+   "legacy": "Daredevil Vol 1 662",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "The Red Fist Saga, Conclusion"
+   ],
+   "arcs": [
+    "Red Fist Saga"
+   ],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Reborn Vol 1",
+   "num": 1,
+   "numtext": "1",
+   "month": "March",
+   "year": "2011",
+   "released": "January 12, 2011",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Davide Gianfelice",
+   "titles": [
+    "Reborn Chapter One"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Reborn Vol 1",
+   "num": 2,
+   "numtext": "2",
+   "month": "April",
+   "year": "2011",
+   "released": "February 16, 2011",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Davide Gianfelice",
+   "titles": [
+    "Reborn, Chapter Two"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Reborn Vol 1",
+   "num": 3,
+   "numtext": "3",
+   "month": "May",
+   "year": "2011",
+   "released": "March 23, 2011",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Davide Gianfelice",
+   "titles": [
+    "Reborn, Chapter Three"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Reborn Vol 1",
+   "num": 4,
+   "numtext": "4",
+   "month": "July",
+   "year": "2011",
+   "released": "May 11, 2011",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Davide Gianfelice",
+   "titles": [
+    "Reborn, Chapter Four"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: The Man Without Fear Vol 1",
+   "num": 1,
+   "numtext": "1",
+   "month": "October",
+   "year": "1993",
+   "released": "August 24, 1993",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "John Romita Jr.",
+   "titles": [
+    "Daredevil: The Man Without Fear"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: The Man Without Fear Vol 1",
+   "num": 2,
+   "numtext": "2",
+   "month": "November",
+   "year": "1993",
+   "released": "September 28, 1993",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "John Romita Jr.",
+   "titles": [
+    "Daredevil: The Man Without Fear"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: The Man Without Fear Vol 1",
+   "num": 3,
+   "numtext": "3",
+   "month": "December",
+   "year": "1993",
+   "released": "October 26, 1993",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "John Romita Jr.",
+   "titles": [
+    "Daredevil: The Man Without Fear"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: The Man Without Fear Vol 1",
+   "num": 4,
+   "numtext": "4",
+   "month": "January",
+   "year": "1994",
+   "released": "November 23, 1993",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "John Romita Jr.",
+   "titles": [
+    "Daredevil: The Man Without Fear"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: The Man Without Fear Vol 1",
+   "num": 5,
+   "numtext": "5",
+   "month": "February",
+   "year": "1994",
+   "released": "December 28, 1993",
+   "legacy": "",
+   "writers": [
+    "Frank Miller"
+   ],
+   "lead": [
+    "Frank Miller"
+   ],
+   "penciler": "John Romita Jr.",
+   "titles": [
+    "Daredevil: The Man Without Fear"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Woman Without Fear Vol 1",
+   "num": 1,
+   "numtext": "1",
+   "month": "March",
+   "year": "2022",
+   "released": "January 12, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Woman Without Fear Vol 1",
+   "num": 2,
+   "numtext": "2",
+   "month": "April",
+   "year": "2022",
+   "released": "February 2, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Daredevil: Woman Without Fear Vol 1",
+   "num": 3,
+   "numtext": "3",
+   "month": "May",
+   "year": "2022",
+   "released": "March 2, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Rafael De Latorre",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Devil's Reign Vol 1",
+   "num": 1,
+   "numtext": "1",
+   "month": "February",
+   "year": "2022",
+   "released": "December 8, 2021",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Devil's Reign Part 1"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Devil's Reign Vol 1",
+   "num": 2,
+   "numtext": "2",
+   "month": "February",
+   "year": "2022",
+   "released": "December 29, 2021",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Devil's Reign Part 2"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Devil's Reign Vol 1",
+   "num": 3,
+   "numtext": "3",
+   "month": "March",
+   "year": "2022",
+   "released": "January 26, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Devil's Reign Part 3"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Devil's Reign Vol 1",
+   "num": 4,
+   "numtext": "4",
+   "month": "April",
+   "year": "2022",
+   "released": "February 9, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Devil's Reign Part 4"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Devil's Reign Vol 1",
+   "num": 5,
+   "numtext": "5",
+   "month": "May",
+   "year": "2022",
+   "released": "March 9, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Devil's Reign Part 5"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Devil's Reign Vol 1",
+   "num": 6,
+   "numtext": "6",
+   "month": "June",
+   "year": "2022",
+   "released": "April 6, 2022",
+   "legacy": "",
+   "writers": [
+    "Chip Zdarsky"
+   ],
+   "lead": [
+    "Chip Zdarsky"
+   ],
+   "penciler": "Marco Checchetto",
+   "titles": [
+    "Devil's Reign - Conclusion"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Shadowland Vol 1",
+   "num": 1,
+   "numtext": "1",
+   "month": "September",
+   "year": "2010",
+   "released": "July 8, 2010",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Billy Tan",
+   "titles": [
+    "Shadowland"
+   ],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Shadowland Vol 1",
+   "num": 2,
+   "numtext": "2",
+   "month": "October",
+   "year": "2010",
+   "released": "August 4, 2010",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Billy Tan",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Shadowland Vol 1",
+   "num": 3,
+   "numtext": "3",
+   "month": "November",
+   "year": "2010",
+   "released": "September 1, 2010",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Billy Tan",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Shadowland Vol 1",
+   "num": 4,
+   "numtext": "4",
+   "month": "December",
+   "year": "2010",
+   "released": "October 13, 2010",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Billy Tan",
+   "titles": [],
+   "arcs": [],
+   "reprints": []
+  },
+  {
+   "vol": "Shadowland Vol 1",
+   "num": 5,
+   "numtext": "5",
+   "month": "January",
+   "year": "2011",
+   "released": "December 1, 2010",
+   "legacy": "",
+   "writers": [
+    "Andy Diggle"
+   ],
+   "lead": [
+    "Andy Diggle"
+   ],
+   "penciler": "Billy Tan",
+   "titles": [
+    "Shadowland"
+   ],
+   "arcs": [
+    "Shadowland"
+   ],
+   "reprints": []
+  }
+ ]
+}
