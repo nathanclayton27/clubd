@@ -151,11 +151,10 @@ SECTIONS = [
         sub="#1 · the first one",
         spans=[("Captain America Comics Vol 1", 1, 1)],
         writer="Jack Kirby", bar=set(),
-        intro="Simon and Kirby's first issue, and it reads like what it is: a "
-              "1941 adventure comic aimed squarely at children, with a cover "
-              "that got its publisher hate mail.\n\nNothing later on this list "
-              "needs it. It is here because it is the thing everything else is "
-              "a revival of.",
+        intro="Simon and Kirby's first issue: cover-dated March 1941, on sale "
+              "in December 1940, a year before the United States entered the "
+              "war it is about.\n\nNothing later on this list needs it. It is "
+              "here because it is the thing everything else is a revival of.",
     ),
     dict(
         id="fifties", tier=3, title="The 1954 attempt",
@@ -163,11 +162,12 @@ SECTIONS = [
         spans=[(V1, 76, 78)],
         writer="Don Rico", bar=set(),
         intro="Atlas brought the character back in 1954 for three issues and "
-              "then stopped. The numbering here is continuous with the 1968 "
-              "book, which is why Captain America #79 does not exist.\n\nSkip "
-              "it if you like. Englehart comes back to these issues twenty "
-              "years later and makes something out of them, which is the only "
-              "reason to have read them.",
+              "then stopped. They are filed under the same volume as the 1968 "
+              "book, which is why the numbering here jumps from #78 to #100 — "
+              "the #100 is inherited from Tales of Suspense rather than from "
+              "these.\n\nSkip them if you like. Englehart comes back to "
+              "these three twenty years later and makes something of them, "
+              "which is the only reason to have read them.",
     ),
     dict(
         id="revival", tier=1, title="The revival: Lee and Kirby",
@@ -176,10 +176,10 @@ SECTIONS = [
         writer="Stan Lee", bar={68, 99},
         start=True,
         intro="Captain America had been out of print for a decade when the "
-              "Avengers found him in 1964. Four issues later he had half of "
+              "Avengers found him in 1964. Later that year he had half of "
               "Tales of Suspense, and for the next four years that is where "
-              "the character lived: ten or twelve pages an issue, sharing the "
-              "book with Iron Man.\n\nThe split matters for a practical "
+              "the character lived, sharing a book with Iron Man.\n\nThe split "
+              "matters for a practical "
               "reason. Only the back half of each Tales of Suspense is on this "
               "list, but Marvel files the whole issue under one cover, so you "
               "will be paging past an Iron Man story to get to it.",
@@ -189,9 +189,9 @@ SECTIONS = [
         sub="#100–109 · straight on from Tales of Suspense",
         spans=[(V1, 100, 109)],
         writer="Stan Lee", bar=set(),
-        intro="Tales of Suspense splits in two and Captain America keeps the "
-              "numbering, which is why his first solo issue in fourteen years "
-              "is #100.",
+        intro="Tales of Suspense stops at #99 and Captain America carries its "
+              "numbering on, which is why his first solo issue in fourteen "
+              "years is #100.",
     ),
     dict(
         id="steranko", tier=1, title="Steranko",
@@ -201,8 +201,9 @@ SECTIONS = [
         intro="Jim Steranko wrote and drew three issues of this book and then "
               "left, and people have been talking about them ever since. They "
               "look like nothing else in 1969 Marvel.\n\n#112 is a Lee and "
-              "Kirby fill-in that landed in the middle of them because "
-              "Steranko was late.",
+              "Kirby fill-in that landed in the middle of them. It is here "
+              "because the numbering runs through it, not because the three "
+              "need it.",
     ),
     dict(
         id="lateLee", tier=3, title="Lee winds down",
@@ -221,10 +222,10 @@ SECTIONS = [
         intro="Steve Englehart took a book about a soldier who believes in his "
               "country and wrote thirty-odd issues about what that belief "
               "costs when the country turns out not to deserve it. It was "
-              "published while Watergate was on television.\n\nHe also dug up "
-              "the three 1954 issues and explained them, which is the trick "
-              "everyone remembers. Reading #76–78 first is not required, but "
-              "it is cheap.",
+              "published while the Watergate hearings were on television.\n\n"
+              "He also goes back to the three 1954 issues and builds a story "
+              "out of them, which is the trick everyone remembers. Reading "
+              "#76–78 first is not required, but it is three issues.",
     ),
     dict(
         id="interregnum", tier=3, title="Six months in between",
@@ -258,10 +259,11 @@ SECTIONS = [
         sub="#247–255 · nine issues",
         spans=[(V1, 247, 255)],
         writer="Roger Stern", bar=set(),
-        intro="Nine issues, and the shortest thing on this list anybody "
-              "argues for. Stern and Byrne rebuilt the character's supporting "
-              "cast and his day job, and #255 retells the origin in a single "
-              "issue well enough that later writers mostly stopped trying.",
+        intro="Nine issues, and the run people reach for when they want to "
+              "argue the character works small. Stern and Byrne rebuilt his "
+              "supporting "
+              "cast and his day job, and closed on a single-issue retelling of "
+              "the origin for the character's fortieth anniversary.",
     ),
     dict(
         id="gap81", tier=3, title="Five before DeMatteis",
@@ -344,9 +346,9 @@ SECTIONS = [
         sub="vol. 4 #1–32 · four writers in thirty-two issues",
         spans=[("Captain America Vol 4", 1, 32)],
         writer=None, bar=set(),
-        intro="Marvel restarted the book for a mature-readers imprint six "
-              "months after September 2001 and pointed it directly at that. "
-              "John Ney Rieber and John Cassaday open it; Chuck Austen, Dave "
+        intro="Marvel restarted the book in 2002 and pointed it squarely at "
+              "the previous September. John Ney Rieber and John Cassaday open "
+              "it; Chuck Austen, Dave "
               "Gibbons, Robert Morales and Robert Kirkman take the rest.\n\n"
               "It argues with itself more than it works, and the next section "
               "is why anybody still buys this book.",
@@ -395,17 +397,17 @@ SECTIONS = [
         sub="vol. 6 #1–19",
         spans=[("Captain America Vol 6", 1, 19)],
         writer="Ed Brubaker", bar=set(),
-        intro="Renumbered again alongside the first film, with the same writer "
-              "carrying straight on. Nineteen issues.",
+        intro="Back to #1, with the same writer carrying straight on from "
+              "#619. Nineteen issues.",
     ),
     dict(
         id="bucky", tier=2, title="Captain America and Bucky",
         sub="#620–628 · a companion book on the old numbering",
         spans=[("Captain America and Bucky Vol 1", 620, 628)],
         writer="Ed Brubaker", bar=set(),
-        intro="Brubaker co-wrote nine issues of a second book that keeps the "
-              "legacy numbering going while volume six runs. It fills in the "
-              "1940s, and the main run does not depend on it.",
+        intro="Brubaker co-wrote nine issues of a second book, which keeps the "
+              "legacy numbering going while volume six restarts at #1. The "
+              "main run does not depend on it.",
     ),
     dict(
         id="wintersoldier", tier=2, title="Winter Soldier",
