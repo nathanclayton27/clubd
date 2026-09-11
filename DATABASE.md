@@ -516,10 +516,14 @@ every club screen.
 signed-in user today** — every row, one request for the whole directory —
 because "add a friend by code" reads it directly. That stays true until
 `clu153-B-narrow-profiles.sql` runs (§5, *Queued and ready*), which narrows it
-to your own row plus anyone a `friendships` edge connects you to; strangers are
-then reachable only through `find_profile_by_code()`, a definer function that
-`clu153-A` creates. Neither has run. *(This line used to say `FINAL-3` would
-narrow it; FINAL-3 is superseded by that pair.)*
+to your own row plus anyone a `friendships` edge connects you to; a stranger is
+then reachable through `find_profile_by_code()`, the definer function `clu153-A`
+creates, **or by asserting an edge to them** — `migrate-add-friends.sql`'s
+insert policy constrains only column `a`, uncapped, so a held `user_id` is as
+good as a held code (CLU-445). Neither file has run. *(This line used to say
+`FINAL-3` would narrow it; FINAL-3 is superseded by that pair. It also used to
+say strangers would be reachable "only" through the function, which the CLU-153
+audit refuted — see §5.)*
 
 **`friendships`** — one row per direction. Mutual means both rows exist. You may
 add your own direction, remove your own, and decline an incoming one.
@@ -811,9 +815,14 @@ can go in today and the policy waits on its own.
 `rpc('find_profile_by_code', {p_code})` first and does the direct read only
 when PostgREST answers `PGRST202` or `42883` (no such function). A `42501` or a
 rate-limit `PT429` surfaces as an error and does not widen into a table read.
-So the order of events is: front end live (already, once this commit deploys)
-→ A → confirm add-by-code on the live site → B. Before A runs the site behaves
-exactly as before, at the cost of one 404 per lookup.
+So the order of events is: front end live (already) → **A** → prove on the live
+site that the function is actually serving the lookup → **arm B** → **B**.
+
+That third step is not "confirm add-by-code works". It is a `rate_events` count
+either side of a **deliberate miss**, because the fallback succeeds too and a
+working add-by-code cannot tell the two paths apart. B's own header carries the
+exact steps, and the audit note below says why. Before A runs, the site behaves
+exactly as it does today, at the cost of one 404 per lookup.
 
 #### A six-lens hostile audit rewrote what these files say about themselves
 
@@ -843,14 +852,25 @@ Four things they say about themselves did, and all four mattered:
   **a held `user_id` is as good as a held code**: insert one `friendships` row
   and you may read that person's username and code. B is still a strict
   narrowing and worth running; it is not the whole answer.
-- **B's footer checksum covers its own fence line.** Leaving the fence
-  commented would record the digest of a file that *cannot run*, and because the
-  repo copy is that same fenced file, `--verify` would compare the two, find
-  them equal, and **assert the unrunnable file is the one that executed** — a
-  silent false confirmation. So arming is now one asserted, idempotent command,
-  `python scratch/security/arm-clu153-B.py`, which spends the fence and
-  re-stamps the checksum together. **Run it immediately before pasting B**, and
-  not before.
+- **B's footer checksum covers its own fence line**, so arming by hand breaks
+  the ledger: the row the file writes about itself would carry the digest of the
+  *fenced* bytes while the bytes that executed were the *armed* ones. `--verify`
+  compares the recorded digest against the file on disk, so from then on the
+  strongest record this project has would disagree with the repo about a file
+  that ran perfectly — and nobody could tell that apart from tampering. So
+  arming is one command, `python scratch/security/arm-clu153-B.py`, which spends
+  the fence and re-stamps the checksum together, validates the footer *before*
+  it touches the fence so a failure leaves the file unrunnable, and is
+  idempotent. **Run it immediately before pasting B.** It does not re-fence
+  afterwards: an armed B stays armed, and the remaining backstop is its check
+  that the function exists and `authenticated` may execute it.
+
+  ⚠ *An earlier version of this section claimed that leaving the fence commented
+  would make `--verify` falsely confirm the unrunnable file had run. That was
+  wrong and the verification pass caught it: a fenced paste raises, the
+  transaction rolls back, and **no ledger row is written at all** — so there is
+  nothing for `--verify` to compare. The reason to use the script is the
+  hand-arming case above, not that one.*
 
 Four smaller corrections came out of the same pass: A's readback comment claimed
 a wrong-shape lookup "charges one miss" when the block is `begin; … rollback;`
