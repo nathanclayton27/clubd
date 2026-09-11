@@ -212,6 +212,37 @@ BYRNE_ART = [legacy(r) for r in band(103, 231)
 assert BYRNE_ART == list(range(209, 219)) + [220, 221], \
     "expected Byrne to draw #209-218 and #220-221 before the run, got %s" % BYRNE_ART
 
+
+def wrote(name, lo, hi):
+    """How many issues in a stretch a writer leads, for the prose to lean on."""
+    return sum(1 for r in band(lo, hi)
+               if r["writers"] and r["writers"][0] == name)
+
+
+# Every number an intro states, checked against the credits it came from.
+for who, lo, hi, n in (("Steve Englehart", 295, 333, 25),
+                       ("John Harkness", 295, 333, 5),
+                       ("Karl Kesel", 525, 553, 2),
+                       ("J. Michael Straczynski", 525, 553, 15),
+                       ("Dwayne McDuffie", 525, 553, 12),
+                       ("Walt Simonson", 334, 354, 18),
+                       ("Mark Millar", 554, LAST, 16)):
+    got = wrote(who, lo, hi)
+    assert got == n, "%s is credited on %d issues of #%d-%d, not %d" % (
+        who, got, lo, hi, n)
+assert (wrote("Steve Englehart", 295, 333) + wrote("John Harkness", 295, 333)
+        == 30), "the Englehart intro says thirty issues"
+# the wiki credits him both ways inside the same run
+assert (wrote("Walt Simonson", 334, 354) + wrote("Walter Simonson", 334, 354)
+        == 19), "the Simonson intro says nineteen of twenty-one"
+assert wrote("John Byrne", 232, 294) == 63, "the Byrne intro says every issue"
+assert sum(1 for r in band(232, 294)
+           if (r["pencilers"] or [""])[0] == "John Byrne") == 62, \
+    "the Byrne intro says he drew all but one"
+assert (ANNUALS[1]["writers"][0] == "Stan Lee"
+        and all(ANNUALS[i]["pencilers"][0] == "Jack Kirby" for i in range(1, 7))), \
+    "annuals #1-6 are meant to be the ones Kirby drew"
+
 # ------------------------------------------------------------------- row notes
 MILESTONE = {
     102: "Kirby's last issue",
@@ -332,12 +363,14 @@ section(
     "byrne", "John Byrne", 1, band(232, 294),
     "one voice, writing and drawing",
     "The other essential run, and the one that proved the book could be "
-    "revived rather than continued. Byrne wrote and drew almost all of it. He "
-    "went back into what Lee and Kirby had built instead of around it, gave "
+    "revived rather than continued. Byrne wrote every issue of it and drew all "
+    "but one. He went back into what Lee and Kirby had built instead of "
+    "around it, gave "
     "every member of the team something to do, and changed the roster while "
     "he was at it — this book has never been four fixed people, and Byrne is "
     "where that becomes a feature.\n\n"
-    "Sixty-three issues. It is the cleanest single-creator run Marvel has.",
+    "Sixty-three issues, and one of the cleanest single-creator runs Marvel "
+    "has.",
     V1_LINKS)
 
 section(
@@ -352,17 +385,18 @@ section(
     "eighties", "Stern, Englehart, and the drop", 3, band(295, 333),
     "three years without a direction",
     "Byrne leaves and the book does not recover for three years. Roger Stern "
-    "has a short go, then Steve Englehart gets twenty-five issues — and signs "
-    "his last five 'John Harkness' rather than with his own name, which is "
-    "how the credits read to this day.",
+    "has a short go, then Steve Englehart gets thirty issues — and the last "
+    "five of them are signed 'John Harkness' rather than with his own name, "
+    "which is still how the credits read.",
     V1_LINKS)
 
 section(
     "simonson", "Walt Simonson", 2, band(334, 354),
     "short, strange, very good",
-    "Twenty-one issues written by Walt Simonson and mostly drawn by him too, "
-    "and unlike anything on either side of it. It is the run nobody brings "
-    "up, and it is the best thing in this list between Byrne and Waid.",
+    "Twenty-one issues, nineteen of them written by Walt Simonson and much of "
+    "it drawn by him as well, and unlike anything on either side of it. It is "
+    "the run nobody brings up, and it is the best thing in this list between "
+    "Byrne and Waid.",
     V1_LINKS)
 
 section(
@@ -410,11 +444,11 @@ section(
     V3_LINKS, rng="#60–70, then #500–524")
 
 section(
-    "mcduffie", "Straczynski, Kesel & McDuffie", 3, band(525, 553),
+    "mcduffie", "Kesel, Straczynski & McDuffie", 3, band(525, 553),
     "three writers, no handover",
-    "J. Michael Straczynski, then Karl Kesel for two, then Dwayne McDuffie. "
-    "Twenty-nine issues that lead nowhere in particular, which is unlucky, "
-    "because what comes next leads everywhere.",
+    "Karl Kesel for two issues, then J. Michael Straczynski for fifteen, then "
+    "Dwayne McDuffie for twelve. Twenty-nine issues that lead nowhere in "
+    "particular, which is unlucky, because what comes next leads everywhere.",
     V3_LINKS)
 
 section(
@@ -424,8 +458,8 @@ section(
     "changes hands for the last time this list covers.\n\n"
     "#569 is where this stops. The next issue, Fantastic Four #570, is the "
     "first page of Jonathan Hickman's run — and that is a list of its own "
-    "here, Everything Dies: Secret Wars, 250 issues from #570 to the end of "
-    "everything. You do not need these sixteen to start it; that list opens "
+    "here, Everything Dies: Secret Wars, 250 issues starting at #570. You do "
+    "not need these sixteen to start it; that list opens "
     "cold on purpose. They are simply what the book was doing the month "
     "before.",
     V3_LINKS)
@@ -447,6 +481,12 @@ PROPERTY = {
     "accentDark": "#8FBEFF",
     "tiers": True,
     "notes": [
+        ["Marvel's main continuity, and one continuous count.",
+         "One book, three volumes, one numbering. Vol 1 ran to #416, the "
+         "Heroes Reborn year added thirteen, and the 1998 relaunch started "
+         "again at #1 — which is why its #70 is followed by #500 rather than "
+         "#71. The numbers on the rows are the ones printed on the covers; the "
+         "count they belong to never restarts."],
         ["Tiers.",
          "1 is essential — Lee & Kirby, and Byrne, which between them are the "
          "character. 2 is strongly recommended: the six annuals Kirby drew, "
@@ -457,15 +497,9 @@ PROPERTY = {
         ["Where this stops, and why.",
          "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and "
          "Hickman's run is already a list here — Everything Dies: Secret Wars, "
-         "250 issues running from #570 to the end of the Marvel universe. Not "
+         "250 issues that begin at that one. Not "
          "one issue appears on both lists, so ticking your way through this one "
          "leaves you standing exactly where that one starts."],
-        ["Marvel's main continuity, and one continuous count.",
-         "One book, three volumes, one numbering. Vol 1 ran to #416, the "
-         "Heroes Reborn year added thirteen, and the 1998 relaunch started "
-         "again at #1 — which is why its #70 is followed by #500 rather than "
-         "#71. The numbers on the rows are the ones printed on the covers; the "
-         "count they belong to never restarts."],
         ["The team, not the four people.",
          "Members leave and are replaced, sometimes for years at a time, and "
          "the book follows whoever is in the Baxter Building rather than a "

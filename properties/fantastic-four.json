@@ -20,16 +20,16 @@
   "tiers": true,
   "notes": [
     [
+      "Marvel's main continuity, and one continuous count.",
+      "One book, three volumes, one numbering. Vol 1 ran to #416, the Heroes Reborn year added thirteen, and the 1998 relaunch started again at #1 — which is why its #70 is followed by #500 rather than #71. The numbers on the rows are the ones printed on the covers; the count they belong to never restarts."
+    ],
+    [
       "Tiers.",
       "1 is essential — Lee & Kirby, and Byrne, which between them are the character. 2 is strongly recommended: the six annuals Kirby drew, Simonson, Waid & Wieringo, and the sixteen issues that hand the book over. 3 is everything else, and there is a great deal of it, because this book has been published continuously since 1961. The minimum viable path is Tier 1 alone."
     ],
     [
       "Where this stops, and why.",
-      "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and Hickman's run is already a list here — Everything Dies: Secret Wars, 250 issues running from #570 to the end of the Marvel universe. Not one issue appears on both lists, so ticking your way through this one leaves you standing exactly where that one starts."
-    ],
-    [
-      "Marvel's main continuity, and one continuous count.",
-      "One book, three volumes, one numbering. Vol 1 ran to #416, the Heroes Reborn year added thirteen, and the 1998 relaunch started again at #1 — which is why its #70 is followed by #500 rather than #71. The numbers on the rows are the ones printed on the covers; the count they belong to never restarts."
+      "At #569. Fantastic Four #570 is Jonathan Hickman's first issue, and Hickman's run is already a list here — Everything Dies: Secret Wars, 250 issues that begin at that one. Not one issue appears on both lists, so ticking your way through this one leaves you standing exactly where that one starts."
     ],
     [
       "The team, not the four people.",
@@ -2275,7 +2275,7 @@
       "title": "John Byrne",
       "sub": "#232–294 · 1981–1986 · one voice, writing and drawing",
       "tier": 1,
-      "intro": "The other essential run, and the one that proved the book could be revived rather than continued. Byrne wrote and drew almost all of it. He went back into what Lee and Kirby had built instead of around it, gave every member of the team something to do, and changed the roster while he was at it — this book has never been four fixed people, and Byrne is where that becomes a feature.\n\nSixty-three issues. It is the cleanest single-creator run Marvel has.",
+      "intro": "The other essential run, and the one that proved the book could be revived rather than continued. Byrne wrote every issue of it and drew all but one. He went back into what Lee and Kirby had built instead of around it, gave every member of the team something to do, and changed the roster while he was at it — this book has never been four fixed people, and Byrne is where that becomes a feature.\n\nSixty-three issues, and one of the cleanest single-creator runs Marvel has.",
       "items": [
         {
           "id": "ff-232",
@@ -2903,7 +2903,7 @@
       "title": "Stern, Englehart, and the drop",
       "sub": "#295–333 · 1986–1989 · three years without a direction",
       "tier": 3,
-      "intro": "Byrne leaves and the book does not recover for three years. Roger Stern has a short go, then Steve Englehart gets twenty-five issues — and signs his last five 'John Harkness' rather than with his own name, which is how the credits read to this day.",
+      "intro": "Byrne leaves and the book does not recover for three years. Roger Stern has a short go, then Steve Englehart gets thirty issues — and the last five of them are signed 'John Harkness' rather than with his own name, which is still how the credits read.",
       "items": [
         {
           "id": "ff-295",
@@ -3273,7 +3273,7 @@
       "title": "Walt Simonson",
       "sub": "#334–354 · 1989–1991 · short, strange, very good",
       "tier": 2,
-      "intro": "Twenty-one issues written by Walt Simonson and mostly drawn by him too, and unlike anything on either side of it. It is the run nobody brings up, and it is the best thing in this list between Byrne and Waid.",
+      "intro": "Twenty-one issues, nineteen of them written by Walt Simonson and much of it drawn by him as well, and unlike anything on either side of it. It is the run nobody brings up, and it is the best thing in this list between Byrne and Waid.",
       "items": [
         {
           "id": "ff-334",
@@ -5108,10 +5108,10 @@
     },
     {
       "id": "mcduffie",
-      "title": "Straczynski, Kesel & McDuffie",
+      "title": "Kesel, Straczynski & McDuffie",
       "sub": "#525–553 · 2005–2008 · three writers, no handover",
       "tier": 3,
-      "intro": "J. Michael Straczynski, then Karl Kesel for two, then Dwayne McDuffie. Twenty-nine issues that lead nowhere in particular, which is unlucky, because what comes next leads everywhere.",
+      "intro": "Karl Kesel for two issues, then J. Michael Straczynski for fifteen, then Dwayne McDuffie for twelve. Twenty-nine issues that lead nowhere in particular, which is unlucky, because what comes next leads everywhere.",
       "items": [
         {
           "id": "ff-525",
@@ -5391,7 +5391,7 @@
       "title": "Millar & Hitch, the handover",
       "sub": "#554–569 · 2008–2009 · the sixteen issues before #570",
       "tier": 2,
-      "intro": "Mark Millar and Bryan Hitch get sixteen issues, and then the book changes hands for the last time this list covers.\n\n#569 is where this stops. The next issue, Fantastic Four #570, is the first page of Jonathan Hickman's run — and that is a list of its own here, Everything Dies: Secret Wars, 250 issues from #570 to the end of everything. You do not need these sixteen to start it; that list opens cold on purpose. They are simply what the book was doing the month before.",
+      "intro": "Mark Millar and Bryan Hitch get sixteen issues, and then the book changes hands for the last time this list covers.\n\n#569 is where this stops. The next issue, Fantastic Four #570, is the first page of Jonathan Hickman's run — and that is a list of its own here, Everything Dies: Secret Wars, 250 issues starting at #570. You do not need these sixteen to start it; that list opens cold on purpose. They are simply what the book was doing the month before.",
       "items": [
         {
           "id": "ff-554",

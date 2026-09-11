@@ -4060,6 +4060,26 @@ let MANIFEST = [
     "total": 254
   },
   {
+    "slug": "fantastic-four",
+    "media": [
+      "comics"
+    ],
+    "title": "Fantastic Four",
+    "subtitle": "Marvel's main continuity, #1 to #569 — the team, not the four people",
+    "kind": "comics",
+    "year": "1961–2009",
+    "popularity": 68,
+    "blurb": "Every issue from Fantastic Four #1 to #569, where Jonathan Hickman's run — and the Secret Wars list — begins.",
+    "accent": "#1B4FA3",
+    "accentDark": "#8FBEFF",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 579
+  },
+  {
     "slug": "coppola",
     "media": [
       "movies"
@@ -6588,7 +6608,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '426d9247ee4c';
+const BUILD = 'f6c7c39692b7';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or

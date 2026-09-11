@@ -11,14 +11,16 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
 War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
-(Hickman's Marvel run), *Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Fantastic Four* (#1 to #569, stopping one issue
+short of Hickman so the two lists meet without overlapping a single row),
+*Venom* (Cates and Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
 flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
@@ -422,6 +424,12 @@ Herald](https://www.comicbookherald.com/), [Crushing
 Krisis](https://crushingkrisis.com/) and [How To Love
 Comics](https://www.howtolovecomics.com/); the *Fantastic Four*/*FF* weave
 follows the order Hickman specified for the omnibus.
+
+Fantastic Four read from Marvel Database (marvel.fandom.com) through its API:
+issue numbers, cover dates, writer and penciller credits, and the first
+appearances the wiki marks issue by issue. The sections are drawn where the
+credits change and the generator refuses to build if they move; the stars are
+the debut markers, not anybody's favourites.
 
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.

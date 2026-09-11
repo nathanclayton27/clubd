@@ -2030,6 +2030,26 @@
     "total": 254
   },
   {
+    "slug": "fantastic-four",
+    "media": [
+      "comics"
+    ],
+    "title": "Fantastic Four",
+    "subtitle": "Marvel's main continuity, #1 to #569 — the team, not the four people",
+    "kind": "comics",
+    "year": "1961–2009",
+    "popularity": 68,
+    "blurb": "Every issue from Fantastic Four #1 to #569, where Jonathan Hickman's run — and the Secret Wars list — begins.",
+    "accent": "#1B4FA3",
+    "accentDark": "#8FBEFF",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 579
+  },
+  {
     "slug": "coppola",
     "media": [
       "movies"
