@@ -6914,7 +6914,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '2bfc36b45959';
+const BUILD = '008bda408b36';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -16764,7 +16764,7 @@ const TOURVER = 1;
 const TOURAUTO = false;
 const TOURKEY = 'gw:tour';
 let tourAt = 0, tourOn = false, tourDone = false, tourReturn = null;
-let tourList = [];
+let tourList = [], tourTimer = 0;
 
 function tourSeen(){
   try{ return parseInt(localStorage.getItem(TOURKEY) || '0', 10) || 0; }
@@ -16789,6 +16789,20 @@ function tourSteps(){
   // "1 / 5" followed by "3 / 5".
   const rows = [].slice.call(document.querySelectorAll('#list li'))
     .filter(tourVisible);
+  // ⚠ FALLBACKS, because a step that cannot point loses the whole panel and
+  // Nathan ends up with two. His report: "I'm still only offered 2 steps in the
+  // tour" — on a list whose sections are collapsed there is no visible row, and
+  // on a list he has no club for the tile is not drawn either, so three of five
+  // panels had nothing to anchor to and left. The lesson is that the ANCHOR is
+  // an implementation detail and the PANEL is the product: if the precise
+  // element is not there, point at the region it lives in rather than dropping
+  // what the tour had to say.
+  const listEl = $('list');
+  const rowAt = n=> rows[Math.min(n, rows.length - 1)] || listEl || null;
+  // the club tile if it is drawn, else the switcher that opens it
+  const clubAnchor = ()=> (tourVisible($('gpanel')) ? $('gpanel') : null)
+    || (tourVisible($('gjoined')) ? $('gjoined') : null)
+    || $('b-prop');
   return [
     {el: ()=> $('strip'),
      t: 'This bar is you',
@@ -16796,7 +16810,7 @@ function tourSteps(){
         + ' progress bar — it keeps your gaps, so the shape of it is the shape of'
         + ' what you have actually ' + (VERB.past || 'done') + '. Touch a mark to'
         + ' see which one it is.'},
-    {el: ()=> rows[0] || null,
+    {el: ()=> rowAt(0),
      t: 'A tick travels',
      // Nathan: "wording here makes no sense for the wire since its a show."
      // It said "film" on every list. Every list already declares its own noun
@@ -16806,13 +16820,13 @@ function tourSteps(){
      b: 'One ' + UNIT.one + ' can sit on more than one list here. Tick it once'
         + ' and it is ticked on all of them, so you never have to remember where'
         + ' else you ' + (VERB.past || 'saw') + ' it.'},
-    {el: ()=> $('gpanel'),
+    {el: clubAnchor,
      t: 'A group is not a club',
      b: 'A group is the people you compare with across everything you track —'
         + ' standing, quiet, every list at once. A club is a few people watching'
         + ' this one thing together, and only a club can have a schedule. Both'
         + ' live behind this tile.'},
-    {el: ()=> rows[Math.min(5, rows.length - 1)] || null,
+    {el: ()=> rowAt(5),
      t: 'Catching up',
      b: 'Nobody ticks forty boxes one at a time. Point at a row — or tap it on a'
         + ' phone — and it offers to mark everything up to and including it.'},
@@ -16977,6 +16991,23 @@ function tourGo(dir){
   // Back on the first step should do nothing rather than close the tour
   if(dir > 0) tourEnd();
 }
+// After the scroll stops, put the subject back on screen. Debounced, so it
+// never fights a scroll in progress — which is the thing that made the old
+// behaviour intolerable in the other direction.
+function tourSettle(){
+  if(!tourOn) return;
+  if(tourTimer) clearTimeout(tourTimer);
+  tourTimer = setTimeout(()=>{
+    tourTimer = 0;
+    if(!tourOn) return;
+    const s = tourList[tourAt], el = s && s.el();
+    if(!el || tourBox(el)) return;          // still on screen: leave it alone
+    const r = tourRect(el);
+    if(!r || !el.scrollIntoView) return;
+    try{ el.scrollIntoView({block: 'center', inline: 'nearest'}); }catch(e){}
+    tourPaint();
+  }, 420);
+}
 function tourNext(){ tourGo(1); }
 function tourBack(){ tourGo(-1); }
 
@@ -16991,6 +17022,8 @@ function tourEnd(){
   tourList = [];
   removeEventListener('resize', tourPaint);
   removeEventListener('scroll', tourPaint, true);
+  removeEventListener('scroll', tourSettle, true);
+  if(tourTimer){ clearTimeout(tourTimer); tourTimer = 0; }
   removeEventListener('keydown', tourKey, true);
   // put focus back where it was, or the page loses it to <body> and the next
   // Tab starts from the top of the document
@@ -17068,6 +17101,11 @@ function tourStart(tries){
   $('tcard-back').onclick = tourBack;
   addEventListener('resize', tourPaint);
   addEventListener('scroll', tourPaint, true);
+  // Nathan: "i can also scroll freely now and the box disappears highlighting
+  // what im supposed to look at". Not fighting the scroll was right; losing the
+  // subject was not. So the scroll is left alone WHILE it happens, and once it
+  // settles the step brings its own anchor back into view.
+  addEventListener('scroll', tourSettle, true);
   addEventListener('keydown', tourKey, true);
   tourPaint();
   try{ $('tcard-go').focus(); }catch(e){}
