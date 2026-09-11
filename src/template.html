@@ -5894,11 +5894,21 @@ function pkOn(el){
   const h = Math.round(cr.top - wr.top + cr.height / 2);
   if(h < 1) return;
   el.style.setProperty('--pkh', h + 'px');
-  // The band is exactly the half-row on show, never more: it sits on top of
-  // the rows, and a taller one swallowed the Copy and Open buttons of the
-  // clubs above it. 24px keeps it a real target on the thinner shelf rows.
+  // ⚠ The band must be SHORTER than the half-row on show, not equal to it.
+  // Nathan: "something seemingly broke the fade/opacity for the 6th item on
+  // the main page." It was Math.max(halfRow, 24), which on a tall row makes the
+  // band the ENTIRE visible sliver — and the gradient is fully opaque by 88% of
+  // itself, so the half-row this exists to reveal sat under the opaque end and
+  // showed as an empty strip with a label on it. On a 76px friends row the half
+  // on show is 38px, the band was 38px, and the name's glyphs start 28px down:
+  // covered before they began.
+  // A quarter of the row, floored at 24px so it stays a real tap target on the
+  // thinner shelf rows, leaves the top of the sixth name legible and fading
+  // rather than gone. Still never taller than the sliver, which is what kept it
+  // off the Copy and Open buttons of the clubs above.
   el.style.setProperty('--pkband',
-    Math.max(Math.round(cr.height / 2), 24) + 'px');
+    Math.min(Math.max(Math.round(cr.height / 4), 24),
+             Math.max(Math.round(cr.height / 2), 24)) + 'px');
   el.classList.add('pk-on');
   const more = el.querySelector('.pkmore'), less = el.querySelector('.pkless');
   if(!more || !less || more.dataset.wired) return;
