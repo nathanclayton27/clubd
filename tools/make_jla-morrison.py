@@ -24,8 +24,9 @@ Every one-shot row asserts the sentence that credits it.
 THE DECISION the run forces, made once and stated on the list: **if the run's
 own Deluxe Editions collect it, it is on this list.** That takes in the Secret
 Files short, the Prometheus and WildC.A.T.s one-shots, JLA #1,000,000,
-JLA: Earth 2 and JLA: Classified #1-3. It leaves out Aztek, the other
-thirty-odd #1,000,000 tie-ins, and JLA Secret Files & Origins #2 — which the
+JLA: Earth 2 and JLA: Classified #1-3. It leaves out Aztek, the
+thirty-four other series that put out a #1,000,000 issue, and JLA Secret
+Files & Origins #2 — which the
 Strength in Numbers trade collects, but which Morrison's bibliography does not
 claim. The one deliberate addition is DC One Million #1-4, marked optional,
 because the JLA chapter is a chapter OF it.
@@ -170,6 +171,10 @@ for fragment, what in (
     ("in November [[1998 in comics|1998]]", "the month"),
     ("in the 853rd century", "the century it is set in"),
     ("The core of the event was a four-issue miniseries", "the core miniseries"),
+    ('special issues of almost all of the "DCU" titles',
+     "that it ran through almost all of DC's titles rather than every one"),
+    ("Thirty-four other series then being published by DC also put out a "
+     "single issue numbered #1,000,000", "how many other series tied in"),
     ("The miniseries was written by [[Grant Morrison]] and drawn by "
      "[[Val Semeiks]]", "its credits"),
 ):
@@ -265,14 +270,16 @@ SECTIONS = [
         "id": "million", "tier": 2, "title": "DC One Million",
         "sub": "November 1998 · #23 ends two pages into it",
         "intro":
-            "For one month every DC title shipped an issue numbered #1,000,000, "
+            "For one month almost every DC title shipped an issue numbered "
+            "#1,000,000, "
             "set in the 853rd century. Morrison wrote the four-issue core "
             "miniseries as well as the JLA chapter, and the last two pages of "
             "#23 lead into it.\n\n"
             "The JLA issue is the one the run's own collection keeps, so it is "
             "first here. The core four are marked optional: they are the "
             "crossover rather than the run, and the order they interleave with "
-            "thirty-odd other tie-ins is not something this list tries to settle.",
+            "the thirty-four other tie-in issues is not something this list "
+            "tries to settle.",
         "items": [
             row("jla-1000000", "JLA", "#1,000,000", "the run's chapter of it"),
         ] + [
@@ -321,10 +328,37 @@ SECTIONS = [
 ]
 
 ISSUES = sum(1 for s in SECTIONS for x in s["items"] if x["t"] == "JLA")
+
+# What Tier 1 actually is, read off the sections rather than asserted about
+# them. The tiers note below describes this and nothing else.
+T1 = [x for s in SECTIONS if s["tier"] == 1 for x in s["items"]]
+T1_NUMS = {int(x["n"].lstrip("#").replace(",", "")) for x in T1 if x["t"] == "JLA"}
+T1_ISSUES = len(T1_NUMS)
+assert MORRISON - T1_NUMS == {1000000}, \
+    "Tier 1 no longer holds every Morrison issue but #1,000,000; missing %s" \
+    % sorted(MORRISON - T1_NUMS - {1000000})
+assert [x["id"] for x in T1 if x["t"] != "JLA"] == ["jla-secret-files-1"], \
+    "the tiers note calls the Secret Files short Tier 1's only non-issue row"
 assert ISSUES == len(MORRISON), \
     "emitted %d JLA issues; the sources credit Morrison with %d" % (ISSUES, len(MORRISON))
 
+def issue_list(nums):
+    """"#1–17, #22–26 … and #1,000,000" for a set of issue numbers."""
+    runs = []
+    for n in sorted(n for n in nums if n != 1000000):
+        if runs and n == runs[-1][1] + 1:
+            runs[-1][1] = n
+        else:
+            runs.append([n, n])
+    parts = ["#%d" % a if a == b else "#%d–%d" % (a, b) for a, b in runs]
+    if 1000000 in nums:
+        parts.append("#1,000,000")
+    assert len(parts) > 1, "an issue list of one run reads oddly: %r" % parts
+    return ", ".join(parts[:-1]) + " and " + parts[-1]
+
+
 GAPS = ", ".join("#%d" % n for n in sorted(FILLINS))
+WROTE = issue_list(MORRISON)
 
 PROPERTY = {
     "slug": SLUG,
@@ -343,10 +377,13 @@ PROPERTY = {
     "tiers": True,
     "notes": [
         ["Tiers.",
-         "1 is the run itself — the %d issues Morrison wrote on the monthly "
-         "book. 2 is what is collected alongside it: the two one-shots, the "
-         "crossover chapter, and the two books either side of the end. The "
-         "minimum viable path is Tier 1 alone." % len(MORRISON)],
+         "1 is the run on the monthly book — the %d issues Morrison wrote "
+         "between #1 and #41 — plus the Secret Files short, which the run's "
+         "own collection files with #1–9. The remaining one, JLA #1,000,000, "
+         "sits in Tier 2 with the crossover it is a chapter of. 2 is the rest of what is collected alongside the run: the two "
+         "one-shots, that crossover, and the two books either side of the end. "
+         "The minimum viable path is Tier 1 alone."
+         % T1_ISSUES],
         ["Which continuity.",
          "Post-Crisis DC, a decade before Flashpoint rebooted it. The Flash is "
          "Wally West and the Green Lantern is Kyle Rayner — the mantles, not "
@@ -354,17 +391,17 @@ PROPERTY = {
          "own. Nothing outside it is required reading: the stories are "
          "deliberately self-contained, which was half the pitch."],
         ["The fill-ins are not here.",
-         "Morrison wrote #1–17, #22–26, #28–31, #34 and "
-         "#36–41. The gaps — %s — are Mark Waid, Mark Millar, "
+         "Morrison wrote %s. The gaps — %s — are Mark Waid, Mark Millar, "
          "Devin Grayson and J. M. DeMatteis, and they are left out rather than "
          "marked optional, because they are not this run. The trades collect "
          "them, so a trade's contents and a section here will not always "
-         "agree." % GAPS],
+         "agree." % (WROTE, GAPS)],
         ["Where the run ends.",
          "One rule, applied throughout: if the run's own Deluxe Editions "
          "collect it, it is on this list. That takes in the Secret Files short, "
          "both one-shots, JLA #1,000,000, Earth 2 and Classified. It leaves out "
-         "Aztek and the other thirty-odd #1,000,000 tie-ins. It also leaves out "
+         "Aztek, and the thirty-four other series that put out a #1,000,000 "
+         "issue. It also leaves out "
          "JLA Secret Files & Origins #2, which the Strength in Numbers trade "
          "collects but Morrison's bibliography does not claim. The single "
          "addition is DC One Million #1–4, marked optional, because the JLA "

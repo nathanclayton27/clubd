@@ -21,7 +21,7 @@
   "notes": [
     [
       "Tiers.",
-      "1 is the run itself — the 34 issues Morrison wrote on the monthly book. 2 is what is collected alongside it: the two one-shots, the crossover chapter, and the two books either side of the end. The minimum viable path is Tier 1 alone."
+      "1 is the run on the monthly book — the 33 issues Morrison wrote between #1 and #41 — plus the Secret Files short, which the run's own collection files with #1–9. The remaining one, JLA #1,000,000, sits in Tier 2 with the crossover it is a chapter of. 2 is the rest of what is collected alongside the run: the two one-shots, that crossover, and the two books either side of the end. The minimum viable path is Tier 1 alone."
     ],
     [
       "Which continuity.",
@@ -29,11 +29,11 @@
     ],
     [
       "The fill-ins are not here.",
-      "Morrison wrote #1–17, #22–26, #28–31, #34 and #36–41. The gaps — #18, #19, #20, #21, #27, #32, #33, #35 — are Mark Waid, Mark Millar, Devin Grayson and J. M. DeMatteis, and they are left out rather than marked optional, because they are not this run. The trades collect them, so a trade's contents and a section here will not always agree."
+      "Morrison wrote #1–17, #22–26, #28–31, #34, #36–41 and #1,000,000. The gaps — #18, #19, #20, #21, #27, #32, #33, #35 — are Mark Waid, Mark Millar, Devin Grayson and J. M. DeMatteis, and they are left out rather than marked optional, because they are not this run. The trades collect them, so a trade's contents and a section here will not always agree."
     ],
     [
       "Where the run ends.",
-      "One rule, applied throughout: if the run's own Deluxe Editions collect it, it is on this list. That takes in the Secret Files short, both one-shots, JLA #1,000,000, Earth 2 and Classified. It leaves out Aztek and the other thirty-odd #1,000,000 tie-ins. It also leaves out JLA Secret Files & Origins #2, which the Strength in Numbers trade collects but Morrison's bibliography does not claim. The single addition is DC One Million #1–4, marked optional, because the JLA chapter is a chapter of it."
+      "One rule, applied throughout: if the run's own Deluxe Editions collect it, it is on this list. That takes in the Secret Files short, both one-shots, JLA #1,000,000, Earth 2 and Classified. It leaves out Aztek, and the thirty-four other series that put out a #1,000,000 issue. It also leaves out JLA Secret Files & Origins #2, which the Strength in Numbers trade collects but Morrison's bibliography does not claim. The single addition is DC One Million #1–4, marked optional, because the JLA chapter is a chapter of it."
     ],
     "Issues and credits from Wikipedia's JLA article — the creative-team field, the publication history, and the collected editions, which are also where the section titles come from. The one-shots, Earth 2, Classified and DC One Million from Grant Morrison's Wikipedia bibliography; the Prometheus one-shot is placed from the dates in that character's article."
   ],
@@ -286,7 +286,7 @@
       "tier": 2,
       "title": "DC One Million",
       "sub": "November 1998 · #23 ends two pages into it",
-      "intro": "For one month every DC title shipped an issue numbered #1,000,000, set in the 853rd century. Morrison wrote the four-issue core miniseries as well as the JLA chapter, and the last two pages of #23 lead into it.\n\nThe JLA issue is the one the run's own collection keeps, so it is first here. The core four are marked optional: they are the crossover rather than the run, and the order they interleave with thirty-odd other tie-ins is not something this list tries to settle.",
+      "intro": "For one month almost every DC title shipped an issue numbered #1,000,000, set in the 853rd century. Morrison wrote the four-issue core miniseries as well as the JLA chapter, and the last two pages of #23 lead into it.\n\nThe JLA issue is the one the run's own collection keeps, so it is first here. The core four are marked optional: they are the crossover rather than the run, and the order they interleave with the thirty-four other tie-in issues is not something this list tries to settle.",
       "items": [
         {
           "id": "jla-1000000",
