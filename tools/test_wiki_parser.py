@@ -1,5 +1,5 @@
-"""Pins for the seven CLU-167 parser defects, the two found fixing them, and the
-six found in the fix.
+"""Pins for the seven CLU-167 parser defects, the two found fixing them, the six
+found in the fix, and the two the review of those six found still standing.
 
     python tools/test_wiki_parser.py
 
@@ -15,7 +15,7 @@ so each case asserts twice:
      answer that was measured — proving this fixture really does land on it.
 
 So reverting a fix fails (1), and swapping a fixture for a tamer excerpt fails
-(2). There are two before-photographs, because there were two rounds of this:
+(2). There are three before-photographs, because there were three rounds of this:
 
   `_old_*`   the parser as it was at commit 5ad60de, before CLU-167. The seven
              original defects are pinned against these.
@@ -24,10 +24,17 @@ So reverting a fix fails (1), and swapping a fixture for a tamer excerpt fails
              template it did not recognise, read |RTitle as a plain title, and
              read episode numbers out of a template's arguments and out of the
              two halves of a decimal. Those three are pinned against these.
+  `_005_*`   the round-2 parser at commit 005d1ee, which fixed all fifteen of
+             those and still fabricated two episode TITLES: it let a footnote
+             marker's NAME be part of a title ("The X-Filesdouble dagger"), and
+             it let an RTitle that is one whole parenthetical be a title (13
+             Frieren shorts called "(Official English title not available)").
 
-Neither set may ever be "fixed"; they are photographs. `_d98_*` isolates the one
-rule that changed in each case and calls the live wiki.clean() for the rest,
-which is why each one names the rule it is standing in for.
+None of the three may ever be "fixed"; they are photographs. Each isolates the
+one rule that changed in its case and calls the live module for the rest, which
+is why each one names the rule it is standing in for. Run this file against
+005d1ee's gwlib/wiki.py and exactly the five round-3 tests below fail, while the
+other 33 pass — which is the whole claim a pin is making.
 
 The fixtures in tools/data/wiki_fixtures/ are verbatim excerpts of the real
 articles, one per case. They are tracked deliberately: the test is worthless
@@ -126,6 +133,48 @@ def _d98_numbers(fields, base="EpisodeNumber"):
     value, so a template's own arguments and both halves of a decimal each come
     back as an episode."""
     return [int(d) for d in re.findall(r"\d+", wiki.clean(fields.get(base) or ""))]
+
+
+# --------------------------------------------------------------------------
+# The THIRD before-photograph: the parser at 005d1ee, which fixed all fifteen
+# above and left two titles fabricated. One rule each, written out rather than
+# derived from the live module, because a photograph that tracks the thing it
+# photographs is not a photograph.
+# --------------------------------------------------------------------------
+_005_BARE_RENDERS = {
+    "hsp": "", "nbsp": " ", "thinsp": " ", "shy": "", "wbr": "", "zwsp": "",
+    "snd": " – ", "spnd": " – ", "sndash": " – ", "spndash": " – ",
+    "spaced en dash": " – ", "ndash": "–", "en dash": "–", "mdash": "—",
+    "em dash": "—", "spaces": " ", "'": "'", "'s": "'s",
+    "pagename": "", "episode cast": "",
+}
+
+
+def _005_clean(t):
+    """clean() at 005d1ee: the live function with _BARE_RENDERS as it was — no
+    footnote-marker family — so {{double dagger}} and {{asterisk}} missed the
+    allowlist and took rule 7's keep-the-NAME default, which is right for
+    {{yes}} and {{TBA}} and fabricates for a marker."""
+    live = wiki._BARE_RENDERS
+    wiki._BARE_RENDERS = _005_BARE_RENDERS
+    try:
+        return wiki.clean(t)
+    finally:
+        wiki._BARE_RENDERS = live
+
+
+def _005_display_title(raw):
+    """display_title() at 005d1ee: accept a wholly-quoted value, refuse one
+    still carrying a quote or an HTML tag, and accept EVERYTHING else — which
+    let a legend marker stay welded to a name and let a whole parenthetical be
+    a name. _WHOLLY_QUOTED is the live one; it did not change."""
+    t = _005_clean(raw or "")
+    m = wiki._WHOLLY_QUOTED.match(t)
+    if m:
+        return m.group(1).strip()
+    if '"' in t or "<" in t or ">" in t:
+        return ""
+    return t
 
 
 # --------------------------------------------------------------------------
@@ -738,6 +787,140 @@ def test_a_sublist_pointer_is_not_an_episode():
     e, = wiki.episodes(f)
     eq(e.title, "Broken Bow", "a real sublist row is untouched")
     eq(e.fields[1], "Star Trek: Enterprise season 1", "positional page name kept")
+
+
+# --------------------------------------------------------------------------
+# C1. a marker template's NAME shipped welded onto a title
+# --------------------------------------------------------------------------
+def test_a_marker_templates_name_does_not_become_part_of_a_title():
+    """The 1998 film's row in "List of The X-Files episodes" files its name
+    under RTitle and puts the mythology-arc marker after it:
+
+        |RTitle=''[[The X-Files (film)|The X-Files]]''{{double dagger}}
+
+    {{double dagger}} carries no argument, so it missed _BARE_RENDERS and took
+    rule 7's keep-the-name default — and unlike {{yes}} or {{TBA}}, a marker's
+    name DESCRIBES its glyph instead of being it. The row came back titled
+    "The X-Filesdouble dagger", a string that is nowhere in the article, in a
+    list of every X-Files episode."""
+    t = fixture("xfiles-film-row-double-dagger")
+    e, = wiki.episodes(t)
+
+    eq(e.fields["RTitle"],
+       "''[[The X-Files (film)|The X-Files]]''{{double dagger}}",
+       "the source's own value, read whole")
+    ok("Title" not in e.fields, "and there is no |Title to prefer")
+
+    eq(_005_clean(e.fields["RTitle"]), "The X-Filesdouble dagger",
+       "005d1ee: the template's NAME, welded to the end of the name")
+    eq(_005_display_title(e.fields["RTitle"]), "The X-Filesdouble dagger",
+       "and display_title() saw no quote and no tag, so it shipped it")
+
+    eq(wiki.clean("{{double dagger}}"), "‡",
+       "the marker now renders the glyph it renders")
+    eq(e.title, "The X-Files", "and the row is titled what the source calls it")
+    eq(e.rtitle, "The X-Files‡",
+       "with the raw value still on the row, marker and all")
+    eq(e.year, 1998, "still dated")
+    eq(e.num_overall, None, "and still unnumbered, as a film row is")
+
+
+def test_a_legend_marker_is_not_part_of_the_name():
+    """Rendering the glyph alone would have shipped "The X-Files‡". The article
+    says above the table that a double dagger marks a mythology episode, so it
+    is apparatus ABOUT the row in exactly the sense a <ref> is — and clean()
+    has always removed those. Stripping it loses nothing: what is left is the
+    link label the source wrote."""
+    t = fixture("xfiles-film-row-double-dagger")
+    ok("are episodes in the series' alien" in t,
+       "the fixture carries the article's own legend for the marker")
+
+    for raw, want in (("''[[The X-Files (film)|The X-Files]]''{{double dagger}}",
+                       "The X-Files"),
+                      ("''[[Foo]]''{{double-dagger}}", "Foo"),
+                      ("[[Bar]] {{dagger}}", "Bar"),
+                      ('"[[Baz]]"{{dagger}}', "Baz")):
+        eq(wiki.display_title(raw), want, "display_title(%r)" % raw)
+
+    eq(wiki.display_title("M*A*S*H"), "M*A*S*H",
+       "`*` is a character titles use, so it is not in the strip set")
+    eq(wiki.display_title("''Nerve''{{dagger}} (Part 1)"), "",
+       "and stripping a marker does not smuggle a part marker past the rest")
+
+
+def test_a_marker_template_alone_in_a_cell_still_says_something():
+    """The guard on the fix. Round one of CLU-167 dropped every argument-less
+    template it did not recognise and deleted 498 fields from Jackie Chan's
+    filmography; a marker is exactly the shape that would reopen that, because
+    in an awards or filmography crosstab {{dagger}} IS the whole cell and means
+    "posthumous" by the article's own legend. Rendering the glyph keeps the
+    cell marked; dropping it would say the opposite of what the source says."""
+    for raw, want in (("{{dagger}}", "†"), ("{{double dagger}}", "‡"),
+                      ("{{double-dagger}}", "‡"), ("{{asterisk}}", "*"),
+                      ("{{Dagger}}", "†"), ("{{Double Dagger}}", "‡")):
+        eq(wiki.clean(raw), want, "clean(%r)" % raw)
+        ok(wiki.clean(raw) != "", "and it is never empty: %r" % raw)
+
+    eq(_005_clean("{{asterisk}}"), "asterisk",
+       "005d1ee leaked this one too — the Criterion list marks its "
+       "out-of-print films with it")
+    eq(wiki.clean("[[King Kong (1933 film)|King Kong]]{{asterisk}}"),
+       "King Kong*", "so a marked film is marked, not called 'King Kongasterisk'")
+
+
+# --------------------------------------------------------------------------
+# C2. an editor saying there is NO title shipped as the title
+# --------------------------------------------------------------------------
+def test_an_rtitle_that_is_a_whole_parenthetical_is_not_a_title():
+    """Thirteen Frieren sponsored shorts write `| Title =` blank and
+    `| RTitle = ''(Official English title not available)''`. display_title()
+    only ever asked whether anything quote-shaped or tag-shaped was left after
+    clean(), so all thirteen came back as episodes CALLED "(Official English
+    title not available)" — an editor stating there is no English title,
+    published as the English title.
+
+    It is the invented-data failure in its best disguise: a sentence in a title
+    column reads as an answer, and unlike a dropped row nothing about the list
+    looks short."""
+    t = fixture("frieren-short-with-no-english-title")
+    real, short = wiki.episodes(t)
+
+    eq(short.fields["Title"], "",
+       "the source has the field and deliberately has nothing in it")
+    eq(short.fields["RTitle"], "''(Official English title not available)''",
+       "and says so under RTitle")
+
+    eq(_005_display_title(short.fields["RTitle"]),
+       "(Official English title not available)",
+       "005d1ee: the note itself, shipped as the episode's name")
+    eq(short.title, "", "an empty title is better than a wrong one")
+    eq(short.rtitle, "(Official English title not available)",
+       "and the note is still on the row for a caller that wants it")
+    eq(short.year, 2023, "the row is otherwise read exactly as before")
+
+    # the control: a real |Title on the same page, which must not move
+    eq(real.title, "Spell to Make Clothes Clean and Spotless",
+       "|Title still wins and is untouched")
+    eq((real.num_overall, real.num_in_season), (11, 11), "still numbered")
+
+
+def test_a_title_that_merely_contains_a_parenthesis_is_kept():
+    """The guard on that fix, and the reason it is 'wholly' and not 'contains'.
+    Refusing any title with a bracket in it would drop real names — a bracketed
+    alias, a disambiguator, a year — and trade one fabrication for a silent
+    row of blanks, which is the trade this module refuses in both directions."""
+    for raw, want in (
+            ("''[[Cowboy Bebop: The Movie]]'' (''Knockin' on Heaven's Door'')",
+             "Cowboy Bebop: The Movie (Knockin' on Heaven's Door)"),
+            ("Prologue (2015)", "Prologue (2015)"),
+            ("[[The Gift (The X-Files)|The Gift]]", "The Gift"),
+            ("(Official English title not available)", ""),
+            ("''(TBA)''", ""),
+            ("(no title)", "")):
+        eq(wiki.display_title(raw), want, "display_title(%r)" % raw)
+
+    eq(wiki.display_title("(A) and (B)"), "(A) and (B)",
+       "two parentheticals are not ONE parenthetical, so the rule leaves them")
 
 
 # --------------------------------------------------------------------------

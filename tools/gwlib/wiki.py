@@ -748,6 +748,10 @@ def display_title(raw):
       actually wrote, so nothing is invented and nothing is lost. (Before
       _BARE_RENDERS learned the glyph there was nothing to strip: the marker
       arrived as the WORDS "double dagger" welded to the end of the name.)
+      Stripped at the ENDS only, and a marker left anywhere else refuses the
+      value, exactly as a leftover `"` does: a glyph in the middle means the
+      cell holds a name and something else — `''Nerve''{{dagger}} (Part 1)` is
+      the Farscape shape again — and this module cannot say which part is which.
     - A WHOLE PARENTHETICAL is refused outright. Thirteen Frieren sponsored
       shorts write `| Title =` blank and `| RTitle = ''(Official English title
       not available)''`, which is an editor stating that there IS no English
@@ -759,6 +763,8 @@ def display_title(raw):
     """
     t = clean(raw or "")
     t = t.strip(_MARKER_GLYPHS + " ")
+    if any(g in t for g in _MARKER_GLYPHS):
+        return ""
     if _WHOLLY_PARENTHESISED.match(t):
         return ""
     m = _WHOLLY_QUOTED.match(t)
