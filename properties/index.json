@@ -2050,6 +2050,26 @@
     "total": 254
   },
   {
+    "slug": "daredevil",
+    "media": [
+      "comics"
+    ],
+    "title": "Daredevil",
+    "subtitle": "Miller to Zdarsky · main-line Marvel continuity",
+    "kind": "comics",
+    "year": "1979–2023",
+    "popularity": 68,
+    "blurb": "The five runs that make up the modern character — Miller, Bendis, Brubaker, Waid, Zdarsky — in the order they were published, with the lead-ins that explain how each one starts.",
+    "accent": "#A81C23",
+    "accentDark": "#F2606A",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 352
+  },
+  {
     "slug": "coppola",
     "media": [
       "movies"
