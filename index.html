@@ -4060,6 +4060,26 @@ let MANIFEST = [
     "total": 254
   },
   {
+    "slug": "captain-america",
+    "media": [
+      "comics"
+    ],
+    "title": "Captain America",
+    "subtitle": "Marvel's main continuity — the shield, not the man",
+    "kind": "comics",
+    "year": "1941–2013",
+    "popularity": 68,
+    "blurb": "611 issues, from the 1964 revival to the last page Ed Brubaker wrote, one section per run.",
+    "accent": "#26468F",
+    "accentDark": "#7FA8E8",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 611
+  },
+  {
     "slug": "coppola",
     "media": [
       "movies"
@@ -6588,7 +6608,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '426d9247ee4c';
+const BUILD = '6c806c78dac1';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or

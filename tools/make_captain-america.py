@@ -43,6 +43,7 @@ than on most, so several obvious annotations are missing on purpose.
 """
 import json
 import pathlib
+import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -246,7 +247,7 @@ SECTIONS = [
     ),
     dict(
         id="manyhands", tier=3, title="Many hands",
-        sub="#215–246 · 1977–80, and a different writer most months",
+        sub="#215–246 · a different writer most months",
         spans=[(V1, 215, 246)],
         writer=None, bar=set(),
         intro="Four years the book spent being kept alive rather than written. "
@@ -264,7 +265,7 @@ SECTIONS = [
     ),
     dict(
         id="gap81", tier=3, title="Five before DeMatteis",
-        sub="#256–260 · 1981",
+        sub="#256–260 · fill-ins between two runs",
         spans=[(V1, 256, 260)],
         writer=None, bar=set(),
         intro="Fill-ins between two runs.",
@@ -281,7 +282,7 @@ SECTIONS = [
     ),
     dict(
         id="carlin", tier=3, title="Michael Carlin",
-        sub="#301–306 · 1985",
+        sub="#301–306 · six issues",
         spans=[(V1, 301, 306)],
         writer="Michael Carlin", bar=set(),
         intro="Six issues holding the door for the longest run the book has "
@@ -312,7 +313,7 @@ SECTIONS = [
     ),
     dict(
         id="heroesreborn", tier=3, title="Heroes Reborn",
-        sub="vol. 2 #1–13 · 1996–97 · a year in a separate universe",
+        sub="vol. 2 #1–13 · a year in a separate universe",
         spans=[("Captain America Vol 2", 1, 13)],
         writer=None, bar=set(),
         intro="Marvel outsourced four of its oldest books for a year and "
@@ -352,7 +353,7 @@ SECTIONS = [
     ),
     dict(
         id="brubaker1", tier=1, title="Brubaker begins",
-        sub="vol. 5 #1–21 · 2005–06",
+        sub="vol. 5 #1–21",
         spans=[(V5, 1, 21)],
         writer="Ed Brubaker", bar=set(),
         intro="This is the reason most people arrive. Brubaker wrote the book "
@@ -364,7 +365,7 @@ SECTIONS = [
     ),
     dict(
         id="brubaker2", tier=1, title="Brubaker: the middle",
-        sub="vol. 5 #25–42 · 2007–08",
+        sub="vol. 5 #25–42",
         spans=[(V5, 25, 42)],
         writer="Ed Brubaker", bar=set(),
         intro="#22–24 are Civil War chapters. They are on the Civil War list "
@@ -374,7 +375,7 @@ SECTIONS = [
     ),
     dict(
         id="brubaker3", tier=1, title="Brubaker: the third act",
-        sub="vol. 5 #43–50 · 2008–09",
+        sub="vol. 5 #43–50",
         spans=[(V5, 43, 50)],
         writer="Ed Brubaker", bar=set(),
         intro="Eight issues, and the last under this numbering.",
@@ -391,7 +392,7 @@ SECTIONS = [
     ),
     dict(
         id="volsix", tier=1, title="Volume six",
-        sub="vol. 6 #1–19 · 2011–12",
+        sub="vol. 6 #1–19",
         spans=[("Captain America Vol 6", 1, 19)],
         writer="Ed Brubaker", bar=set(),
         intro="Renumbered again alongside the first film, with the same writer "
@@ -408,7 +409,7 @@ SECTIONS = [
     ),
     dict(
         id="wintersoldier", tier=2, title="Winter Soldier",
-        sub="#1–14 · 2012–13 · where the run actually stops",
+        sub="#1–14 · where the run actually stops",
         spans=[("Winter Soldier Vol 1", 1, 14)],
         writer="Ed Brubaker", bar=set(),
         intro="The last fourteen issues Brubaker wrote of this story, in a "
@@ -519,7 +520,12 @@ def main():
                                  % (idx[mslug], mslug)})
 
         # The years on a section header are never typed: they are the cover
-        # years of its own first and last issue.
+        # years of its own first and last issue. The guard is here because the
+        # first cut typed them as well and nine headers shipped their span
+        # twice ("vol. 5 #1-21 - 2005-06 - 2005-06").
+        assert not re.search(r"\b(18|19|20)\d\d\b", spec["sub"]), \
+            "%s: the years are appended, do not type them into `sub`" \
+            % spec["id"]
         sec = {"id": spec["id"], "title": spec["title"],
                "sub": "%s · %s" % (spec["sub"], yspan(min(years), max(years))),
                "tier": spec["tier"], "intro": spec["intro"],

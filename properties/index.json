@@ -2030,6 +2030,26 @@
     "total": 254
   },
   {
+    "slug": "captain-america",
+    "media": [
+      "comics"
+    ],
+    "title": "Captain America",
+    "subtitle": "Marvel's main continuity — the shield, not the man",
+    "kind": "comics",
+    "year": "1941–2013",
+    "popularity": 68,
+    "blurb": "611 issues, from the 1964 revival to the last page Ed Brubaker wrote, one section per run.",
+    "accent": "#26468F",
+    "accentDark": "#7FA8E8",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 611
+  },
+  {
     "slug": "coppola",
     "media": [
       "movies"

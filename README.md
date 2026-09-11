@@ -11,14 +11,16 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
 War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
-(Hickman's Marvel run), *Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Captain America* (611 issues from the 1964
+revival to the last page Ed Brubaker wrote, one section per run),
+*Venom* (Cates and Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
 flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
@@ -425,6 +427,12 @@ follows the order Hickman specified for the omnibus.
 
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.
+
+Captain America is machine-read from the Marvel Database wiki: the volume
+pages say which issues exist, and each issue's infobox gives its cover date
+and its writer, so every section boundary is checked against those credits
+at build time rather than typed. Its Civil War issues stay on the Civil War
+list and are not repeated.
 
 Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils
