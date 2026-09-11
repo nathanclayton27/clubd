@@ -47,11 +47,38 @@ schema change is involved** — a suffixed run is an ordinary `progress` row.
 
 `progress` has **no delete policy** — see §4 — so the client cannot remove a
 run's row. Deleting a fresh watch therefore empties its `read_ids` to `{}`
-instead, and **an empty `#fw…` row means no run at all**: the site refuses to
-offer one in the run switcher, and a second device sitting in that run finishes
-the deletion locally when it next loads. Anyone who later adds a delete policy or
-restores the `delete` grant should know the client already handles both — it asks
-for the deleted row back and only falls through to emptying when none comes.
+instead, which makes an empty `#fw…` row **ambiguous, and specifically not a
+delete marker**: the identical empty row is what "Clear this fresh watch" leaves
+behind, what unticking every item leaves behind, and what a run emptied and not
+yet re-ticked looks like. The site reads it as narrowly as that allows:
+
+- An empty row never **introduces** a run. Cloud discovery skips it, so a run
+  that only ever existed on another device is not offered here.
+- A run already in this device's local registry, or the one on screen, **is**
+  still offered by the run switcher whatever its cloud row holds — this device
+  really does hold those ticks.
+- A device sitting in a run whose row has gone empty **keeps its local ticks**.
+  It refuses the first-sign-in fold that would push them back into the emptied
+  row — that fold resurrecting a deleted run was the bug — tells the reader the
+  run is empty on the account and local to this device, and writes nothing to the
+  row itself. It does **not** delete anything: an empty row is not evidence of a
+  delete, and acting on it as though it were destroyed ticks belonging to readers
+  who had merely cleared a run elsewhere. (A later tick on that device does
+  upload, because a tick is an instruction, and so would `backfillSync`'s
+  cross-list sweep if it happened to add an item to that list.)
+
+So a delete reaches the device that ran it and the account's row, and no
+further. **A delete that propagates across devices is not possible with this
+schema** and would need a tombstone the other device can recognise — a
+`deleted_at` column on `progress`, or a small `progress_deletions` table — i.e.
+a migration. None is queued; nothing in the site pretends one exists.
+
+Anyone who later adds a delete policy or restores the `delete` grant should know
+the client already handles both — it asks for the deleted row back and only falls
+through to emptying when none comes. With a real delete in place the row
+disappears rather than going empty, which removes the ambiguity above for every
+device that had not already cached the run, but still not for one holding local
+ticks: absent and never-existed look the same too.
 
 **3. Sharing is additive, and that is deliberate.** Permissive policies **OR**
 together. On `progress` there are separate branches for your own row, for mutual

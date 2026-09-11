@@ -2086,9 +2086,18 @@ function fwKnowFor(slug, key){
   fwWriteFor(slug, list);
 }
 function fwForget(key){ fwWriteFor(SLUG, fwReadFor(SLUG).filter(r=> r.key !== key)); }
-// One cloud progress row, which may be a run. An EMPTY row is not one: where
-// RLS refuses a delete, deleting a run empties its row instead (see
-// deleteFreshRun), and re-discovering that row would undo the deletion.
+// One cloud progress row, which may be a run. An empty row never INTRODUCES
+// one: where RLS refuses a delete, deleting a run empties its row instead (see
+// deleteFreshRun), so learning a run from an empty row would undo that deletion
+// on every device that had never heard of the run.
+//
+// THAT IS THE ONLY THING AN EMPTY ROW IS ALLOWED TO MEAN HERE, because it is the
+// only thing it actually means. An empty `#fw…` row is not a delete marker: it
+// is equally what "Clear this fresh watch" leaves behind, what unticking every
+// item leaves behind, and what a run emptied and not yet re-ticked looks like.
+// So a run already in this device's registry — or the one on screen — stays
+// offered by fwRuns() whatever the cloud row holds, and nothing anywhere reads
+// an empty row as permission to remove local ticks.
 function fwSeen(pid, ids){
   const i = String(pid || '').indexOf('#fw');
   if(i < 0 || !(Array.isArray(ids) && ids.length)) return;
@@ -2168,23 +2177,15 @@ function fwBack(){
   if(!SLUG) return;
   try{
     localStorage.setItem('gw:fwon:' + SLUG, '');
+    // Back to your own row too, and this is LOAD-BEARING rather than tidiness:
+    // splitClub() refuses a club session while FW is on, so a club left selected
+    // here would be entered as a session the instant FW goes — and `done` would
+    // become that club's run, not the all-time list this button is named after.
+    // The club choice really is dropped, which is why paintFW's tooltip says so
+    // instead of leaving the reader to find out.
     localStorage.setItem(GKEY, JUSTME);
   }catch(e){ return; }
   location.reload();
-}
-// A run this device is sitting in was deleted from another one. Finish the
-// deletion here — its ticks went with it by the reader's own instruction, on a
-// confirm that said so — and land on the all-time list, which is where a deleted
-// run's reader belongs. It cannot loop: gw:fwon is cleared before the reload, so
-// FW is '' next time round and adopt() reads the all-time row.
-function fwGoneElsewhere(){
-  try{
-    localStorage.removeItem('gw:v1:' + CKEY);
-    if(user) localStorage.removeItem('gw:merged:' + user.id + ':' + CKEY);
-    if(FW === 'fw' && FWSTART) localStorage.removeItem(FWSTART);
-  }catch(e){}
-  fwForget(FW);
-  fwBack();
 }
 // The reader's runs of this list as the cloud knows them, folded into the
 // registry so a run ticked on another device is offered here too. Beside
@@ -3249,29 +3250,56 @@ async function adopt(){
   const local  = readLocal();
   const flag = 'gw:merged:'+user.id+':'+CKEY;
   // A fresh run whose cloud row EXISTS AND IS EMPTY while THIS DEVICE still
-  // holds ticks under its key was deleted — by this same person, from another
-  // device. Emptying the row is what deleting a run does where RLS refuses a
-  // DELETE (see deleteFreshRun), and fwSeen already reads an empty #fw… row as
-  // no run at all, so this is that rule read from the other side. Without it the
-  // first-sign-in fold below unioned the ticks this device still held into that
-  // row, pushed them back up, and said "Folded N ticks from this device into
-  // your account" — resurrecting a deleted run, with its ticks, for nothing but
-  // opening a page. The fold is for a device that ticked before there was an
-  // account; a row that exists and is empty is not a blank slate.
+  // holds ticks under its key. The bug this guards is the first-sign-in fold
+  // below: it unioned the ticks this device held into that empty row, pushed
+  // them back up, and said "Folded N ticks from this device into your account" —
+  // putting a run somebody had deleted back on all their devices, with its
+  // ticks, for nothing but opening a page. The fold exists for a device that
+  // ticked before there was an account, and an emptied run's row is not that. So
+  // in THIS case, and only this one, the fold is refused.
   //
-  // BOTH HALVES OF THE CONDITION ARE LOAD-BEARING. `local.size` is what tells a
-  // deletion from a "Clear progress" inside the run, which empties the row too —
-  // there the local copy went with it, so there is nothing to resurrect and
-  // nothing to clean up, and the run must survive being emptied rather than
-  // quietly delete itself on the next load. And it is read_ids that is tested
-  // rather than `server`, because clean() also drops ids the catalogue no longer
-  // carries, which is a different fact about a row that is not empty at all.
-  if(FW && data && local.size
-     && !(Array.isArray(data.read_ids) && data.read_ids.length)){
-    fwGoneElsewhere();
-    return;
-  }
-  if(!localStorage.getItem(flag) && local.size){
+  // Narrowly on purpose. Refusing the fold whenever a `#fw…` row merely exists
+  // would send a run with ticks in it down the `done = server` branch below,
+  // whose writeLocal() then overwrites this device's local-only ticks with the
+  // server set — the same destruction from the other side. A row that exists and
+  // holds ticks still folds, which is how two devices watching one run converge.
+  //
+  // AND THAT IS ALL IT DOES. AN EMPTY ROW IS NOT A DELETE MARKER. It is equally
+  // what "Clear this fresh watch" leaves behind, what unticking every item
+  // leaves behind, and what a run emptied and re-ticked looks like to a device
+  // that loads in between — in every one of those the run is alive. An earlier
+  // version of this guard also REMOVED this device's ticks under the key, on the
+  // theory that the empty row proved a delete. It does not prove one, so that
+  // was a reader who cleared a run on their phone losing that run on their
+  // laptop, silently, with no confirm shown on the laptop at all. Refusing to
+  // resurrect is the whole fix; deleting somebody's ticks to save them a stale
+  // view on one device is a worse wrong than the view.
+  //
+  // What is left is honest: these ticks are on this device and not in the
+  // account's row, so the page says so rather than claiming to be synced, and
+  // THIS PATH pushes nothing. A later tick does push, because a tick is an
+  // instruction — and so, in one narrow pre-existing case, does backfillSync's
+  // cross-list sweep, which upserts the whole of `done` into CKEY when it adds an
+  // item to the open list. That is a hole in "refuse to resurrect" this guard
+  // cannot close from here, and it is not the reported bug: it needs a sync-map
+  // hit on this very list, once per deploy.
+  //
+  // The flag is deliberately NOT set — nothing folded, so recording a fold would
+  // be a lie in storage — which also means this is re-decided from the real row
+  // on every load rather than latched.
+  //
+  // read_ids is tested rather than `server` because clean() also drops ids the
+  // catalogue no longer carries, which is a different fact about a row that is
+  // not empty at all.
+  const emptiedElsewhere = !!(FW && data && local.size
+    && !(Array.isArray(data.read_ids) && data.read_ids.length));
+  if(emptiedElsewhere){
+    done = local;
+    state('Saved on this device','');
+    flash('This fresh watch is empty on your account — cleared or deleted somewhere'
+          + ' else. Its ' + local.size + ' ' + plural(local.size) + ' are still here,'
+          + ' on this device only.');
+  }else if(!localStorage.getItem(flag) && local.size){
     done = new Set([...server, ...local]);
     localStorage.setItem(flag,'1');
     await pushCloud();
@@ -3522,19 +3550,38 @@ function paintFW(){
   // run is Just me.
   const show = (FW || begun) && !SESSION;
   b.classList.toggle('hide', !show);
+  // "keeps its place" is only true of a run that has EARNED a place. A run earns
+  // its registry entry with its first tick (see fwReadFor), so leaving an
+  // untouched one loses it — there is nothing to keep and nothing to come back
+  // to. Both tooltips used to promise otherwise, which is a promise about
+  // somebody's ticks, so both ask `begun` before making it.
+  //
+  // And both of these buttons write GKEY = JUSTME, which drops the club on
+  // screen. That is not incidental (see fwBack): the all-time list cannot be
+  // shown with a club session on it, and a club left selected would be entered
+  // as a session the moment FW goes. The tooltip says so when there is a club to
+  // lose, rather than letting the strip change under the press.
+  let gsel = '';
+  try{ gsel = localStorage.getItem(GKEY) || ''; }catch(e){}
+  const clubtoo = (gsel && gsel !== JUSTME)
+    ? ' Your club goes back to Just me.' : '';
+  const kept = begun
+    ? ' This fresh watch keeps its place.'
+    : ' This fresh watch has no ticks yet, so it is not kept.';
   // Painted before the early return, and gated only on FW: whether it is drawn
   // must never depend on anything the cloud has to deliver.
   if(back){
     back.classList.toggle('hide', !FW);
     back.textContent = '↩ back to all-time';
-    back.title = 'Your all-time run for this list. The fresh watch keeps its place.';
+    back.title = 'Your all-time run for this list.' + kept + clubtoo;
     back.onclick = fwBack;
   }
   if(!show) return;
   b.textContent = '↻ start a fresh watch';
   b.title = FW
-    ? 'Another run from zero — this one keeps its place'
-    : 'Watch it again from zero, just for you — your all-time run and your clubs stay untouched';
+    ? 'Another run from zero.' + kept + clubtoo
+    : 'Watch it again from zero, just for you — your all-time run and your clubs'
+      + ' keep every tick.' + clubtoo;
   b.onclick = fwNew;
   document.body.classList.toggle('fw', !!FW);
 }
@@ -7079,6 +7126,18 @@ function clubIcons(){
 // the same kind of confirm. Only the run being looked at can be deleted, the
 // way only the club being looked at can be left: switch to it first, and
 // what you are deleting is what the page is showing.
+//
+// KNOWN AND DELIBERATE: with CLOUD false this door is not drawn at all, because
+// renderGroupPanel() hides #gpanel outright and the door lives in the tile — so a
+// run cannot be deleted on a page whose supabase-js never loaded. That is the
+// same hiding that cost the reader their way OUT of a run, which is why ↩ back to
+// all-time is in the header row instead (see paintFW), but the two are not the
+// same need. The way out cannot go missing: without it the all-time list is
+// unreachable and every further press piles on another run. Delete is a tidy-up
+// of the run switcher, and on that page there IS no run switcher — the only list
+// a spare run clutters is one nothing draws. It returns with the script, nothing
+// lost in between, so it stays here rather than earning a third header button for
+// a control only ever wanted when the tile is already on screen.
 function fwIcons(){
   if(!FW) return '';
   // "More for this fresh watch", not "Delete this fresh watch": the door opens a
@@ -7110,13 +7169,24 @@ function wireFwDrawer(){
 // for "some other run" below it could never run.
 async function deleteFreshRun(){
   if(!SLUG || !FW) return;
-  // Signed out there is no account to tell, so the promise is only about this
-  // browser and says so. Signed in it is the account: the row is emptied here,
-  // and another device sitting in the run finishes the job on its next load
-  // (adopt → fwGoneElsewhere).
-  if(!confirm('Delete this fresh watch?\n\nIts ticks go with it'
-              + ((user && sb) ? '' : ' on this device')
-              + '. Your all-time record for this list is untouched.')) return;
+  // What the confirm may promise, exactly. Signed out there is no account to
+  // tell, so the reach is this browser and it says so.
+  //
+  // Signed in it is this browser AND the account's row — and NOT every device.
+  // A second device that already holds this run's ticks keeps them: it sees the
+  // emptied row, refuses the fold that would push them back up, and goes on
+  // showing the run until somebody deletes it there too (see adopt). It cannot
+  // do better, because an empty row is not a delete marker — the same empty row
+  // is what "Clear this fresh watch" leaves — and telling one from the other
+  // needs a tombstone the database has no column for. So the confirm says what
+  // happens rather than implying the run disappears everywhere.
+  if(!confirm('Delete this fresh watch?\n\n'
+              + ((user && sb)
+                  ? 'Its ticks go from this device and from your account.'
+                    + ' Another device that still has this run keeps its own copy'
+                    + ' until you delete it there too.'
+                  : 'Its ticks go with it on this device.')
+              + ' Your all-time record for this list is untouched.')) return;
   const ck = SLUG + '#' + FW;
   // a save still queued for this run would put the row back a beat after it
   // went, and applyReload() reads a live handle as "do not reload yet"
@@ -7130,9 +7200,11 @@ async function deleteFreshRun(){
       // definition out of it is trap 5 in that document, which CLU-374 paid
       // for.) So RLS refuses the delete by matching nothing — no error, no
       // row. Ask for the deleted row back, and when none comes, empty it
-      // instead: an empty row holds no ticks and is not a run (fwSeen skips
-      // it, adopt() finishes the deletion on every other device), which is
-      // everything "deleted" means to the reader.
+      // instead: an empty row holds no ticks, and a run nothing has heard of is
+      // never introduced from one (fwSeen skips it), so on this device and on
+      // any device that never held the run the result is what "deleted" means.
+      // A device that DOES still hold its ticks keeps them — see the confirm
+      // above, which promises no more than that.
       const { data: had, error: e0 } = await sb.from('progress').select('property_id')
         .eq('user_id', user.id).eq('property_id', ck).maybeSingle();
       if(e0) throw e0;
