@@ -1,0 +1,596 @@
+{
+  "slug": "death-of-superman",
+  "title": "The Death and Return of Superman",
+  "subtitle": "the 1992–93 crossover · post-Crisis",
+  "kind": "comics",
+  "popularity": 63,
+  "year": "1992–1993",
+  "blurb": "48 issues across four weekly Superman books, in the order they were published to be read.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#0B3C91",
+  "accentDark": "#6FA8F5",
+  "tiers": true,
+  "notes": [
+    [
+      "Post-Crisis.",
+      "The John Byrne reboot's Superman — the one relaunched in 1986 after Crisis on Infinite Earths, who works at the Daily Planet and is engaged to Lois Lane. Nothing published before 1986 is needed to follow this."
+    ],
+    [
+      "Why the order is a matter of record.",
+      "Four monthly books on a staggered rota put out one Superman issue a week, written as a single serial. So there is no competing reading order to choose between: the sequence below is the one DC Database's storyline page lists and the one the collected editions print."
+    ],
+    [
+      "Tiers.",
+      "1 is the story itself, all three arcs. 2 is the two issues that run past the end. 3 is the teaser page that set it up. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "What's marked optional.",
+      "Seven of them: four Bloodlines annuals, two one-shots and a fake news magazine. None is part of the weekly serial. They are left in place rather than dropped so the order stays intact, each sitting exactly where a collected edition puts it. The prologue is optional too, for the different reason that it is one panel."
+    ],
+    [
+      "Where it stops.",
+      "Adventures of Superman #505 is where the storyline ends. Action Comics #692 and Superman #83 come after it and are kept because the 2016 collection keeps them — #83 is an epilogue to Funeral for a Friend despite shipping last of all. Anything past those is a later story."
+    ],
+    [
+      "No spoilers.",
+      "The notes say what an entry is, never what happens in it — which on this one means throwing away the story titles, since several of them announce the ending on the contents page."
+    ],
+    "Reading order machine-read from DC Database's Death and Return of Superman storyline page and from the contents of four collected editions on the same wiki; cover dates read from each issue's own page; the prologue and the Superman #83 placement from Wikipedia's The Death of Superman."
+  ],
+  "sections": [
+    {
+      "id": "prologue",
+      "title": "Prologue",
+      "sub": "November 1992 · a teaser page, and nothing else",
+      "tier": 3,
+      "intro": "The story proper starts next issue. This is one panel at the back of the one before it, and it is here so the front edge of the list is honest rather than tidy — skipping it costs you nothing.",
+      "items": [
+        {
+          "id": "mos-17",
+          "t": "Superman: The Man of Steel",
+          "n": "#17",
+          "note": "One teaser page after the issue's own story. That is the whole of it.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Death of Superman",
+          "url": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+        },
+        {
+          "label": "Issue order",
+          "url": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman"
+        }
+      ]
+    },
+    {
+      "id": "doomsday",
+      "title": "Doomsday!",
+      "sub": "December 1992 – January 1993 · seven issues across four books",
+      "tier": 1,
+      "intro": "The four Superman titles shipped a week apart and were written to be read as one weekly serial, which is why the order across them is a matter of record rather than anyone's preference.\n\nThe last four issues count themselves down in panels — four to a page, then three, then two, then one. You can see the ending coming in the layout before you get there.",
+      "items": [
+        {
+          "id": "mos-18",
+          "t": "Superman: The Man of Steel",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-69",
+          "t": "Justice League America",
+          "n": "#69",
+          "note": "The League's issue.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-74",
+          "t": "Superman (vol. 2)",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-497",
+          "t": "Adventures of Superman",
+          "n": "#497",
+          "note": "Four panels a page.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-684",
+          "t": "Action Comics",
+          "n": "#684",
+          "note": "Three panels a page.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-19",
+          "t": "Superman: The Man of Steel",
+          "n": "#19",
+          "note": "Two panels a page.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-75",
+          "t": "Superman (vol. 2)",
+          "n": "#75",
+          "note": "One panel a page, twenty-two of them.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "newstime-1",
+          "t": "Newstime: The Life and Death of the Man of Steel",
+          "n": "#1",
+          "note": "A one-shot in the form of a news magazine · cover-dated May 1993, but the first collection prints it here.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Death of Superman",
+          "url": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+        },
+        {
+          "label": "Issue order",
+          "url": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman"
+        }
+      ]
+    },
+    {
+      "id": "funeral",
+      "title": "Funeral for a Friend",
+      "sub": "January – April 1993 · the aftermath, and then a gap",
+      "tier": 1,
+      "intro": "Eight issues of consequence, and then every Superman book stopped for three months. The two one-shots are optional; they hand the city to the supporting cast for an issue each.",
+      "items": [
+        {
+          "id": "aos-498",
+          "t": "Adventures of Superman",
+          "n": "#498",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "jla-70",
+          "t": "Justice League America",
+          "n": "#70",
+          "note": "The second and last League issue.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-685",
+          "t": "Action Comics",
+          "n": "#685",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-20",
+          "t": "Superman: The Man of Steel",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-76",
+          "t": "Superman (vol. 2)",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-499",
+          "t": "Adventures of Superman",
+          "n": "#499",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-686",
+          "t": "Action Comics",
+          "n": "#686",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "legacy-1",
+          "t": "Superman: The Legacy of Superman",
+          "n": "#1",
+          "note": "A one-shot of five short stories.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "mos-21",
+          "t": "Superman: The Man of Steel",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-77",
+          "t": "Superman (vol. 2)",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sgtl-1",
+          "t": "Supergirl and Team Luthor",
+          "n": "#1",
+          "note": "A one-shot of two short stories.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Death of Superman",
+          "url": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+        },
+        {
+          "label": "Issue order",
+          "url": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman"
+        }
+      ]
+    },
+    {
+      "id": "reign",
+      "title": "Reign of the Supermen!",
+      "sub": "June – July 1993 · four claimants, one per title",
+      "tier": 1,
+      "intro": "The books came back with a new lead in each one, each of the four introduced in his own debut issue with a cardstock cover and a poster. The rotation is the same as before, so the four run in parallel and you switch titles every week.\n\nThe two annuals belong to Bloodlines, a separate 1993 crossover. They are optional, and they are placed where the collection places them.",
+      "items": [
+        {
+          "id": "aos-500",
+          "t": "Adventures of Superman",
+          "n": "#500",
+          "note": "The books came back from a three-month hiatus with this one.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-687",
+          "t": "Action Comics",
+          "n": "#687",
+          "note": "One of the four debuts.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-22",
+          "t": "Superman: The Man of Steel",
+          "n": "#22",
+          "note": "One of the four debuts.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-78",
+          "t": "Superman (vol. 2)",
+          "n": "#78",
+          "note": "One of the four debuts.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-501",
+          "t": "Adventures of Superman",
+          "n": "#501",
+          "note": "One of the four debuts.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-ann-2",
+          "t": "Superman: The Man of Steel Annual",
+          "n": "#2",
+          "note": "A 1993 Bloodlines annual — a different crossover · the collection slots it here.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "act-688",
+          "t": "Action Comics",
+          "n": "#688",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-23",
+          "t": "Superman: The Man of Steel",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-79",
+          "t": "Superman (vol. 2)",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-ann-5",
+          "t": "Superman Annual (vol. 2)",
+          "n": "#5",
+          "note": "A 1993 Bloodlines annual — a different crossover · the collection slots it here.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "aos-502",
+          "t": "Adventures of Superman",
+          "n": "#502",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Death of Superman",
+          "url": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+        },
+        {
+          "label": "Issue order",
+          "url": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman"
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "title": "The Return of Superman",
+      "sub": "July – October 1993 · the back half",
+      "tier": 1,
+      "intro": "Where the 2016 collections cut the arc in two. Same weekly rotation, one outside tie-in — a Green Lantern issue, because the story moves to his city.",
+      "items": [
+        {
+          "id": "act-689",
+          "t": "Action Comics",
+          "n": "#689",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-24",
+          "t": "Superman: The Man of Steel",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-ann-5",
+          "t": "Action Comics Annual",
+          "n": "#5",
+          "note": "A 1993 Bloodlines annual — a different crossover · the collection slots it here.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "sup-80",
+          "t": "Superman (vol. 2)",
+          "n": "#80",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-503",
+          "t": "Adventures of Superman",
+          "n": "#503",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-690",
+          "t": "Action Comics",
+          "n": "#690",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mos-25",
+          "t": "Superman: The Man of Steel",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-81",
+          "t": "Superman (vol. 2)",
+          "n": "#81",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-504",
+          "t": "Adventures of Superman",
+          "n": "#504",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "act-691",
+          "t": "Action Comics",
+          "n": "#691",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-ann-5",
+          "t": "Adventures of Superman Annual",
+          "n": "#5",
+          "note": "A 1993 Bloodlines annual — a different crossover · the collection slots it here.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "mos-26",
+          "t": "Superman: The Man of Steel",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-46",
+          "t": "Green Lantern (vol. 3)",
+          "n": "#46",
+          "note": "A tie-in from outside the Superman books · the collections take only the first seventeen pages.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-82",
+          "t": "Superman (vol. 2)",
+          "n": "#82",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "aos-505",
+          "t": "Adventures of Superman",
+          "n": "#505",
+          "note": "",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Death of Superman",
+          "url": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+        },
+        {
+          "label": "Issue order",
+          "url": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman"
+        }
+      ]
+    },
+    {
+      "id": "epilogue",
+      "title": "Past the end",
+      "sub": "October – November 1993 · where the collections stop",
+      "tier": 2,
+      "intro": "DC Database's storyline page ends one issue before these two; the 2016 collection keeps them. They are worth having — one settles the reporter's half of the story and the other is a late epilogue to the funeral — but neither is part of the arc, so they sit out here where you can stop without them.",
+      "items": [
+        {
+          "id": "act-692",
+          "t": "Action Comics",
+          "n": "#692",
+          "note": "An epilogue, after the last chapter.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-83",
+          "t": "Superman (vol. 2)",
+          "n": "#83",
+          "note": "Published last, but it closes out Funeral for a Friend.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The Death of Superman",
+          "url": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+        },
+        {
+          "label": "Issue order",
+          "url": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman"
+        }
+      ]
+    }
+  ]
+}
