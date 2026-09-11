@@ -39,13 +39,19 @@ you write and often the only one.
 
 **2. Rows are scoped by `property_id`, which is a list slug.** `progress` is
 keyed `(user_id, property_id)`. A slug may carry a `#`-suffixed variant for a
-rewatch — one row per fresh watch since CLU-408, `slug#fw<epoch ms>`, plus the
-older bare `slug#fw` for a run begun before that; server-side checks
-`split_part` on `#` before comparing, so a suffix cannot be used to sidestep a
-rule that applies to the base list. Note that `progress` has **no delete
-policy** (its own-row policies are select, insert and update), so the client
-cannot remove a run's row: deleting a fresh watch empties its `read_ids` to
-`{}` instead, and an empty `#fw…` row is treated as no run at all.
+rewatch: the site writes one row per fresh watch, `slug#fw<epoch ms>`, from
+CLU-408 onward, and the bare `slug#fw` is the single run a reader could have
+started before that. Server-side checks `split_part` on `#` before comparing, so
+a suffix cannot be used to sidestep a rule that applies to the base list. **No
+schema change is involved** — a suffixed run is an ordinary `progress` row.
+
+`progress` has **no delete policy** — see §4 — so the client cannot remove a
+run's row. Deleting a fresh watch therefore empties its `read_ids` to `{}`
+instead, and **an empty `#fw…` row means no run at all**: the site refuses to
+offer one in the run switcher, and a second device sitting in that run finishes
+the deletion locally when it next loads. Anyone who later adds a delete policy or
+restores the `delete` grant should know the client already handles both — it asks
+for the deleted row back and only falls through to emptying when none comes.
 
 **3. Sharing is additive, and that is deliberate.** Permissive policies **OR**
 together. On `progress` there are separate branches for your own row, for mutual
@@ -341,7 +347,13 @@ Per table: what it holds, who may read it, who may write it.
 **`progress`** — one row per user per list, `read_ids` as an array. Keyed
 `(user_id, property_id)`. Read by you, by mutual friends (`friend_may_read`,
 which consults the privacy switches and excludes gated lists), and by club and
-group co-members (`shares_group_with`). Written only by you.
+group co-members (`shares_group_with`). Written only by you. **Its own-row
+policies are `select`, `insert` and `update` — there is no `delete` policy on
+this table, and nothing in §5's ledger ever added one.** So a delete from the
+client matches no rows and returns success with an empty result rather than an
+error, which is why the fresh-watch delete in `src/template.html` asks for the
+deleted row back and empties `read_ids` when none comes (rule 2 above). A
+`property_id` here may carry a `#fw…` suffix naming one fresh watch of that list.
 
 **`tick_events`** — append-only log of when you ticked and whether it was
 `live` or `backfill`. Read and written by you only. Nobody else ever sees it;
