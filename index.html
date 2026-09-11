@@ -6914,7 +6914,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '6042f1a6f5c8';
+const BUILD = 'b6faf711a0c0';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -16876,7 +16876,33 @@ function tourSteps(){
   // element is not there, point at the region it lives in rather than dropping
   // what the tour had to say.
   const listEl = $('list');
-  const rowAt = n=> rows[Math.min(n, rows.length - 1)] || listEl || null;
+  // Nathan: "this should probably just highlight one row?" — quite right. The
+  // fallback to the whole list was too coarse: a panel about a ROW should ring
+  // a row. So if every section is shut, OPEN the first one and take its first
+  // row rather than settling for the container. The list falls back only if
+  // there are genuinely no rows at all, which is a list with no items.
+  const rowAt = n=>{
+    if(rows.length) return rows[Math.min(n, rows.length - 1)];
+    const shut = listEl && listEl.querySelector('details:not([open])');
+    if(shut){
+      shut.open = true;
+      const fresh = [].slice.call(listEl.querySelectorAll('li')).filter(tourVisible);
+      if(fresh.length) return fresh[Math.min(n, fresh.length - 1)];
+    }
+    return listEl || null;
+  };
+  // A row that is being pointed at shows its own catch-up control, the way a
+  // touch device arms it. Without this the panel talked about a button that was
+  // not on screen — "no display of the catch up to here button".
+  const armed = el=>{
+    if(el && el.tagName === 'LI'){
+      try{
+        document.querySelectorAll('#list li.act').forEach(x=> x.classList.remove('act'));
+        el.classList.add('act');
+      }catch(e){}
+    }
+    return el;
+  };
   // the club tile if it is drawn, else the switcher that opens it
   const clubAnchor = ()=> (tourVisible($('gpanel')) ? $('gpanel') : null)
     || (tourVisible($('gjoined')) ? $('gjoined') : null)
@@ -16904,7 +16930,14 @@ function tourSteps(){
         + ' standing, quiet, every list at once. A club is a few people watching'
         + ' this one thing together, and only a club can have a schedule. Both'
         + ' live behind this tile.'},
-    {el: ()=> rowAt(5),
+    // ⚠ Not on a grab-bag. Nathan: "make sure that the catch up to here button
+    // guide isn't displayed on the pages that don't have a catch up to [here]".
+    // "Everything up to here" is only a sentence if the rows are a sequence; on
+    // an unordered list the control is not rendered at all, so the panel has
+    // nothing to teach and drops out rather than describing a button that is
+    // not there. The row it lands on is armed, so the button it names is
+    // actually on screen while it says so.
+    {el: ()=> (PROP && PROP.random) ? null : armed(rowAt(5)),
      t: 'Catching up',
      b: 'Nobody ticks forty boxes one at a time. Point at a row — or tap it on a'
         + ' phone — and it offers to mark everything up to and including it.'},
