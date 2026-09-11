@@ -1,0 +1,3452 @@
+{
+  "slug": "daredevil",
+  "title": "Daredevil",
+  "subtitle": "Miller to Zdarsky · main-line Marvel continuity",
+  "kind": "comics",
+  "popularity": 68,
+  "year": "1979–2023",
+  "blurb": "The five runs that make up the modern character — Miller, Bendis, Brubaker, Waid, Zdarsky — in the order they were published, with the lead-ins that explain how each one starts.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#A81C23",
+  "accentDark": "#F2606A",
+  "tiers": true,
+  "notes": [
+    [
+      "One continuity, one man, no reboots.",
+      "This is main-line Marvel — Earth-616 — from end to end. Matt Murdock's book has run more or less continuously since 1964 and nothing on this list is an alternate universe, a retelling or a restart of the character. The series itself restarts its numbering constantly; the story does not."
+    ],
+    [
+      "Tiers, barely.",
+      "Tier 1 is the five runs, and it is most of the list, which is the point: they hand over to each other with nothing missing in between. Tier 2 is the three lead-ins that explain how a run opens. Tier 3 is the two stretches by other writers that sit between runs — good comics, skippable here. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "Which Daredevil is this.",
+      "The book has relaunched at #1 six times, so every row names its series by launch year — Daredevil (1964), (1998), (2011), (2014), (2016), (2019), (2022). Two of those relaunches also reverted to the original numbering partway through, which is why #119 is followed by #500 and #28 by #595."
+    ],
+    [
+      "No spoilers.",
+      "A note says what an issue is — a creator's first or last, a fill-in, a renumbering, where an arc opens — and never what happens in it. Stars mark the issues that matter more than their note suggests."
+    ],
+    [
+      "Links sit on the section headers.",
+      "Each section links the Marvel Database page for every series it draws from; those pages list each issue with its credits and cover date. Rows carry no links of their own."
+    ],
+    "Every issue number, cover date and creator credit read from the Marvel Database (marvel.fandom.com) through its API and cached in tools/data/daredevil.json; the run boundaries are derived from those printed credits by the generator, which fails if a range is not exactly the writer it claims."
+  ],
+  "sections": [
+    {
+      "id": "arrival",
+      "tier": 2,
+      "title": "Miller arrives",
+      "sub": "1979–1980 · he draws it before he writes it",
+      "open": true,
+      "links": [
+        {
+          "label": "Daredevil (1964)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1"
+        }
+      ],
+      "intro": "Frank Miller's first stretch on Daredevil is as the artist only, over Roger McKenzie's scripts. He picks up a shared writing credit near the end of it and the book outright straight after. Skippable, but this is where the look starts.",
+      "items": [
+        {
+          "id": "dd1-158",
+          "t": "Daredevil (1964)",
+          "n": "#158",
+          "note": "Miller's first issue on the book, as artist only.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-159",
+          "t": "Daredevil (1964)",
+          "n": "#159",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-160",
+          "t": "Daredevil (1964)",
+          "n": "#160",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-161",
+          "t": "Daredevil (1964)",
+          "n": "#161",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-162",
+          "t": "Daredevil (1964)",
+          "n": "#162",
+          "note": "A fill-in: Michael Fleisher and Steve Ditko.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-163",
+          "t": "Daredevil (1964)",
+          "n": "#163",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-164",
+          "t": "Daredevil (1964)",
+          "n": "#164",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-165",
+          "t": "Daredevil (1964)",
+          "n": "#165",
+          "note": "His first co-writing credit.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-166",
+          "t": "Daredevil (1964)",
+          "n": "#166",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-167",
+          "t": "Daredevil (1964)",
+          "n": "#167",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "miller",
+      "tier": 1,
+      "title": "Miller & Janson",
+      "sub": "#168–191 · 1981–1983",
+      "links": [
+        {
+          "label": "Daredevil (1964)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1"
+        }
+      ],
+      "intro": "The run everything after it is measured against. Miller writes and draws until Klaus Janson takes over the pencils as well as the inks, and the book turns from a superhero comic into a crime one.",
+      "items": [
+        {
+          "id": "dd1-168",
+          "t": "Daredevil (1964)",
+          "n": "#168",
+          "note": "He takes the writing too, and brings Elektra with him.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-169",
+          "t": "Daredevil (1964)",
+          "n": "#169",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-170",
+          "t": "Daredevil (1964)",
+          "n": "#170",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-171",
+          "t": "Daredevil (1964)",
+          "n": "#171",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-172",
+          "t": "Daredevil (1964)",
+          "n": "#172",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-173",
+          "t": "Daredevil (1964)",
+          "n": "#173",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-174",
+          "t": "Daredevil (1964)",
+          "n": "#174",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-175",
+          "t": "Daredevil (1964)",
+          "n": "#175",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-176",
+          "t": "Daredevil (1964)",
+          "n": "#176",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-177",
+          "t": "Daredevil (1964)",
+          "n": "#177",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-178",
+          "t": "Daredevil (1964)",
+          "n": "#178",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-179",
+          "t": "Daredevil (1964)",
+          "n": "#179",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-180",
+          "t": "Daredevil (1964)",
+          "n": "#180",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-181",
+          "t": "Daredevil (1964)",
+          "n": "#181",
+          "note": "",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-182",
+          "t": "Daredevil (1964)",
+          "n": "#182",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-183",
+          "t": "Daredevil (1964)",
+          "n": "#183",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-184",
+          "t": "Daredevil (1964)",
+          "n": "#184",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-185",
+          "t": "Daredevil (1964)",
+          "n": "#185",
+          "note": "Klaus Janson pencils as well as inks from here.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-186",
+          "t": "Daredevil (1964)",
+          "n": "#186",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-187",
+          "t": "Daredevil (1964)",
+          "n": "#187",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-188",
+          "t": "Daredevil (1964)",
+          "n": "#188",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-189",
+          "t": "Daredevil (1964)",
+          "n": "#189",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-190",
+          "t": "Daredevil (1964)",
+          "n": "#190",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-191",
+          "t": "Daredevil (1964)",
+          "n": "#191",
+          "note": "The last issue of the first stint.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "bornagain",
+      "tier": 1,
+      "title": "Badlands and Born Again",
+      "sub": "1985–1986 · the second stint, with Mazzucchelli",
+      "links": [
+        {
+          "label": "Daredevil (1964)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1"
+        }
+      ],
+      "intro": "Miller comes back twice: once for a single issue, then for the eight-part story that most people mean when they say his Daredevil. David Mazzucchelli draws all of it.",
+      "items": [
+        {
+          "id": "dd1-219",
+          "t": "Daredevil (1964)",
+          "n": "#219",
+          "note": "A one-off, written two years after he left.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd1-226",
+          "t": "Daredevil (1964)",
+          "n": "#226",
+          "note": "Co-plotted with Denny O'Neil — the handover issue.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-227",
+          "t": "Daredevil (1964)",
+          "n": "#227",
+          "note": "Born Again begins, with David Mazzucchelli.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-228",
+          "t": "Daredevil (1964)",
+          "n": "#228",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-229",
+          "t": "Daredevil (1964)",
+          "n": "#229",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-230",
+          "t": "Daredevil (1964)",
+          "n": "#230",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-231",
+          "t": "Daredevil (1964)",
+          "n": "#231",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-232",
+          "t": "Daredevil (1964)",
+          "n": "#232",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd1-233",
+          "t": "Daredevil (1964)",
+          "n": "#233",
+          "note": "Miller's last issue on Daredevil.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "mwf",
+      "tier": 2,
+      "title": "The Man Without Fear",
+      "sub": "1993–1994 · the origin, written last",
+      "links": [
+        {
+          "label": "The Man Without Fear",
+          "url": "https://marvel.fandom.com/wiki/Daredevil:_The_Man_Without_Fear_Vol_1"
+        }
+      ],
+      "intro": "Miller and John Romita Jr. go back to the beginning, seven years after Born Again. It sits here in publication order and reads fine anywhere.",
+      "items": [
+        {
+          "id": "mwf-1",
+          "t": "Daredevil: The Man Without Fear",
+          "n": "#1",
+          "note": "Miller and John Romita Jr. on the origin.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mwf-2",
+          "t": "Daredevil: The Man Without Fear",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mwf-3",
+          "t": "Daredevil: The Man Without Fear",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mwf-4",
+          "t": "Daredevil: The Man Without Fear",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "mwf-5",
+          "t": "Daredevil: The Man Without Fear",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "knights",
+      "tier": 2,
+      "title": "Marvel Knights",
+      "sub": "1998–2001 · the relaunch Bendis inherits",
+      "links": [
+        {
+          "label": "Daredevil (1998)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_2"
+        }
+      ],
+      "intro": "Kevin Smith and Joe Quesada restart the book at #1 for Marvel Knights, then David Mack takes the writing. This is the setup the next run opens on, which is the only reason it is here.",
+      "items": [
+        {
+          "id": "dd2-1",
+          "t": "Daredevil (1998)",
+          "n": "#1",
+          "note": "Kevin Smith and Joe Quesada relaunch the book under Marvel Knights.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-2",
+          "t": "Daredevil (1998)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-3",
+          "t": "Daredevil (1998)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-4",
+          "t": "Daredevil (1998)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-5",
+          "t": "Daredevil (1998)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-6",
+          "t": "Daredevil (1998)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-7",
+          "t": "Daredevil (1998)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-8",
+          "t": "Daredevil (1998)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-9",
+          "t": "Daredevil (1998)",
+          "n": "#9",
+          "note": "David Mack takes over as writer.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-10",
+          "t": "Daredevil (1998)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-11",
+          "t": "Daredevil (1998)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-12",
+          "t": "Daredevil (1998)",
+          "n": "#12",
+          "note": "A fill-in by Jimmy Palmiotti and Joe Quesada.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-13",
+          "t": "Daredevil (1998)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-14",
+          "t": "Daredevil (1998)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-15",
+          "t": "Daredevil (1998)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "wakeup",
+      "tier": 1,
+      "title": "Wake Up",
+      "sub": "2001 · Bendis's first Daredevil story",
+      "links": [
+        {
+          "label": "Daredevil (1998)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_2"
+        }
+      ],
+      "intro": "Four issues drawn by David Mack, told from outside the costume. It stands alone and it is the on-ramp.",
+      "items": [
+        {
+          "id": "dd2-16",
+          "t": "Daredevil (1998)",
+          "n": "#16",
+          "note": "Bendis's first Daredevil, drawn by David Mack.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-17",
+          "t": "Daredevil (1998)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-18",
+          "t": "Daredevil (1998)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-19",
+          "t": "Daredevil (1998)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "bendis",
+      "tier": 1,
+      "title": "Bendis & Maleev",
+      "sub": "#26–81 · 2001–2006",
+      "links": [
+        {
+          "label": "Daredevil (1998)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_2"
+        }
+      ],
+      "intro": "The longest single Daredevil run there is, and the one that set the tone for everything since: procedural, claustrophobic and shot in Alex Maleev's photographic murk. Two fill-in stretches by other writers are marked optional where they fall.",
+      "items": [
+        {
+          "id": "dd2-20",
+          "t": "Daredevil (1998)",
+          "n": "#20",
+          "note": "Six issues by Bob Gale before Bendis returns.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-21",
+          "t": "Daredevil (1998)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-22",
+          "t": "Daredevil (1998)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-23",
+          "t": "Daredevil (1998)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-24",
+          "t": "Daredevil (1998)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-25",
+          "t": "Daredevil (1998)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-26",
+          "t": "Daredevil (1998)",
+          "n": "#26",
+          "note": "Bendis and Alex Maleev begin the run proper.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-27",
+          "t": "Daredevil (1998)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-28",
+          "t": "Daredevil (1998)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-29",
+          "t": "Daredevil (1998)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-30",
+          "t": "Daredevil (1998)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-31",
+          "t": "Daredevil (1998)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-32",
+          "t": "Daredevil (1998)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-33",
+          "t": "Daredevil (1998)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-34",
+          "t": "Daredevil (1998)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-35",
+          "t": "Daredevil (1998)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-36",
+          "t": "Daredevil (1998)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-37",
+          "t": "Daredevil (1998)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-38",
+          "t": "Daredevil (1998)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-39",
+          "t": "Daredevil (1998)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-40",
+          "t": "Daredevil (1998)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-41",
+          "t": "Daredevil (1998)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-42",
+          "t": "Daredevil (1998)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-43",
+          "t": "Daredevil (1998)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-44",
+          "t": "Daredevil (1998)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-45",
+          "t": "Daredevil (1998)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-46",
+          "t": "Daredevil (1998)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-47",
+          "t": "Daredevil (1998)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-48",
+          "t": "Daredevil (1998)",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-49",
+          "t": "Daredevil (1998)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-50",
+          "t": "Daredevil (1998)",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-51",
+          "t": "Daredevil (1998)",
+          "n": "#51",
+          "note": "Five issues by David Mack, between Bendis's two halves.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-52",
+          "t": "Daredevil (1998)",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-53",
+          "t": "Daredevil (1998)",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-54",
+          "t": "Daredevil (1998)",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-55",
+          "t": "Daredevil (1998)",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd2-56",
+          "t": "Daredevil (1998)",
+          "n": "#56",
+          "note": "Bendis and Maleev resume.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-57",
+          "t": "Daredevil (1998)",
+          "n": "#57",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-58",
+          "t": "Daredevil (1998)",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-59",
+          "t": "Daredevil (1998)",
+          "n": "#59",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-60",
+          "t": "Daredevil (1998)",
+          "n": "#60",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-61",
+          "t": "Daredevil (1998)",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-62",
+          "t": "Daredevil (1998)",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-63",
+          "t": "Daredevil (1998)",
+          "n": "#63",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-64",
+          "t": "Daredevil (1998)",
+          "n": "#64",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-65",
+          "t": "Daredevil (1998)",
+          "n": "#65",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-66",
+          "t": "Daredevil (1998)",
+          "n": "#66",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-67",
+          "t": "Daredevil (1998)",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-68",
+          "t": "Daredevil (1998)",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-69",
+          "t": "Daredevil (1998)",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-70",
+          "t": "Daredevil (1998)",
+          "n": "#70",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-71",
+          "t": "Daredevil (1998)",
+          "n": "#71",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-72",
+          "t": "Daredevil (1998)",
+          "n": "#72",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-73",
+          "t": "Daredevil (1998)",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-74",
+          "t": "Daredevil (1998)",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-75",
+          "t": "Daredevil (1998)",
+          "n": "#75",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-76",
+          "t": "Daredevil (1998)",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-77",
+          "t": "Daredevil (1998)",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-78",
+          "t": "Daredevil (1998)",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-79",
+          "t": "Daredevil (1998)",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-80",
+          "t": "Daredevil (1998)",
+          "n": "#80",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-81",
+          "t": "Daredevil (1998)",
+          "n": "#81",
+          "note": "Bendis's last issue.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "brubaker",
+      "tier": 1,
+      "title": "Brubaker & Lark",
+      "sub": "#82–500 · 2006–2009",
+      "links": [
+        {
+          "label": "Daredevil (1998)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_2"
+        }
+      ],
+      "intro": "Ed Brubaker and Michael Lark start on the page after Bendis stops, keep the crime-comic register, and hand the title back to its original numbering at the end.",
+      "items": [
+        {
+          "id": "dd2-82",
+          "t": "Daredevil (1998)",
+          "n": "#82",
+          "note": "Brubaker and Michael Lark start on the next page.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-83",
+          "t": "Daredevil (1998)",
+          "n": "#83",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-84",
+          "t": "Daredevil (1998)",
+          "n": "#84",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-85",
+          "t": "Daredevil (1998)",
+          "n": "#85",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-86",
+          "t": "Daredevil (1998)",
+          "n": "#86",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-87",
+          "t": "Daredevil (1998)",
+          "n": "#87",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-88",
+          "t": "Daredevil (1998)",
+          "n": "#88",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-89",
+          "t": "Daredevil (1998)",
+          "n": "#89",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-90",
+          "t": "Daredevil (1998)",
+          "n": "#90",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-91",
+          "t": "Daredevil (1998)",
+          "n": "#91",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-92",
+          "t": "Daredevil (1998)",
+          "n": "#92",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-93",
+          "t": "Daredevil (1998)",
+          "n": "#93",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-94",
+          "t": "Daredevil (1998)",
+          "n": "#94",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-95",
+          "t": "Daredevil (1998)",
+          "n": "#95",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-96",
+          "t": "Daredevil (1998)",
+          "n": "#96",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-97",
+          "t": "Daredevil (1998)",
+          "n": "#97",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-98",
+          "t": "Daredevil (1998)",
+          "n": "#98",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-99",
+          "t": "Daredevil (1998)",
+          "n": "#99",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-100",
+          "t": "Daredevil (1998)",
+          "n": "#100",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-101",
+          "t": "Daredevil (1998)",
+          "n": "#101",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-102",
+          "t": "Daredevil (1998)",
+          "n": "#102",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-103",
+          "t": "Daredevil (1998)",
+          "n": "#103",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-104",
+          "t": "Daredevil (1998)",
+          "n": "#104",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-105",
+          "t": "Daredevil (1998)",
+          "n": "#105",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-106",
+          "t": "Daredevil (1998)",
+          "n": "#106",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-107",
+          "t": "Daredevil (1998)",
+          "n": "#107",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-108",
+          "t": "Daredevil (1998)",
+          "n": "#108",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-109",
+          "t": "Daredevil (1998)",
+          "n": "#109",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-110",
+          "t": "Daredevil (1998)",
+          "n": "#110",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-111",
+          "t": "Daredevil (1998)",
+          "n": "#111",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-112",
+          "t": "Daredevil (1998)",
+          "n": "#112",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-113",
+          "t": "Daredevil (1998)",
+          "n": "#113",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-114",
+          "t": "Daredevil (1998)",
+          "n": "#114",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-115",
+          "t": "Daredevil (1998)",
+          "n": "#115",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-116",
+          "t": "Daredevil (1998)",
+          "n": "#116",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-117",
+          "t": "Daredevil (1998)",
+          "n": "#117",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-118",
+          "t": "Daredevil (1998)",
+          "n": "#118",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-119",
+          "t": "Daredevil (1998)",
+          "n": "#119",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-500",
+          "t": "Daredevil (1998)",
+          "n": "#500",
+          "note": "Legacy numbering returns, and Brubaker signs off.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "shadowland",
+      "tier": 3,
+      "title": "Diggle and Shadowland",
+      "sub": "2009–2011 · the stretch the next run is a reaction to",
+      "links": [
+        {
+          "label": "Daredevil (1998)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_2"
+        },
+        {
+          "label": "Shadowland",
+          "url": "https://marvel.fandom.com/wiki/Shadowland_Vol_1"
+        },
+        {
+          "label": "Reborn",
+          "url": "https://marvel.fandom.com/wiki/Daredevil:_Reborn_Vol_1"
+        }
+      ],
+      "intro": "Andy Diggle's run and the crossover it builds to. Genuinely optional — Waid's first issue explains where things stand without it — but it is the reason his run looks the way it does.",
+      "items": [
+        {
+          "id": "dd2-501",
+          "t": "Daredevil (1998)",
+          "n": "#501",
+          "note": "Andy Diggle takes over.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-502",
+          "t": "Daredevil (1998)",
+          "n": "#502",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-503",
+          "t": "Daredevil (1998)",
+          "n": "#503",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-504",
+          "t": "Daredevil (1998)",
+          "n": "#504",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-505",
+          "t": "Daredevil (1998)",
+          "n": "#505",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-506",
+          "t": "Daredevil (1998)",
+          "n": "#506",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-507",
+          "t": "Daredevil (1998)",
+          "n": "#507",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-508",
+          "t": "Daredevil (1998)",
+          "n": "#508",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-509",
+          "t": "Daredevil (1998)",
+          "n": "#509",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-510",
+          "t": "Daredevil (1998)",
+          "n": "#510",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-511",
+          "t": "Daredevil (1998)",
+          "n": "#511",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd2-512",
+          "t": "Daredevil (1998)",
+          "n": "#512",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-1",
+          "t": "Shadowland",
+          "n": "#1",
+          "note": "The crossover Waid's run is written against.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-2",
+          "t": "Shadowland",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-3",
+          "t": "Shadowland",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-4",
+          "t": "Shadowland",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sl-5",
+          "t": "Shadowland",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rb-1",
+          "t": "Daredevil: Reborn",
+          "n": "#1",
+          "note": "A four-issue bridge before the relaunch.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rb-2",
+          "t": "Daredevil: Reborn",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rb-3",
+          "t": "Daredevil: Reborn",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "rb-4",
+          "t": "Daredevil: Reborn",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "waid3",
+      "tier": 1,
+      "title": "Waid, Rivera & Martin",
+      "sub": "2011–2014 · a deliberate hard turn",
+      "links": [
+        {
+          "label": "Daredevil (2011)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_3"
+        }
+      ],
+      "intro": "Mark Waid restarts at #1 and takes the book back into daylight: bright, buoyant, and drawn by Paolo Rivera and Marcos Martin before Chris Samnee settles in for the rest.",
+      "items": [
+        {
+          "id": "dd3-1",
+          "t": "Daredevil (2011)",
+          "n": "#1",
+          "note": "Waid, Paolo Rivera and Marcos Martin restart at #1.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-2",
+          "t": "Daredevil (2011)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-3",
+          "t": "Daredevil (2011)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-4",
+          "t": "Daredevil (2011)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-5",
+          "t": "Daredevil (2011)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-6",
+          "t": "Daredevil (2011)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-7",
+          "t": "Daredevil (2011)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-8",
+          "t": "Daredevil (2011)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-9",
+          "t": "Daredevil (2011)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-10",
+          "t": "Daredevil (2011)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-10-1",
+          "t": "Daredevil (2011)",
+          "n": "#10.1",
+          "note": "A standalone .1 issue.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd3-11",
+          "t": "Daredevil (2011)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-12",
+          "t": "Daredevil (2011)",
+          "n": "#12",
+          "note": "Chris Samnee's first issue.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-13",
+          "t": "Daredevil (2011)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-14",
+          "t": "Daredevil (2011)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-15",
+          "t": "Daredevil (2011)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-16",
+          "t": "Daredevil (2011)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-17",
+          "t": "Daredevil (2011)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-18",
+          "t": "Daredevil (2011)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-19",
+          "t": "Daredevil (2011)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-20",
+          "t": "Daredevil (2011)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-21",
+          "t": "Daredevil (2011)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-22",
+          "t": "Daredevil (2011)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-23",
+          "t": "Daredevil (2011)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-24",
+          "t": "Daredevil (2011)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-25",
+          "t": "Daredevil (2011)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-26",
+          "t": "Daredevil (2011)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-27",
+          "t": "Daredevil (2011)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-28",
+          "t": "Daredevil (2011)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-29",
+          "t": "Daredevil (2011)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-30",
+          "t": "Daredevil (2011)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-31",
+          "t": "Daredevil (2011)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-32",
+          "t": "Daredevil (2011)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-33",
+          "t": "Daredevil (2011)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-34",
+          "t": "Daredevil (2011)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-35",
+          "t": "Daredevil (2011)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd3-36",
+          "t": "Daredevil (2011)",
+          "n": "#36",
+          "note": "The series restarts at a new #1 next month.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "waid4",
+      "tier": 1,
+      "title": "Waid & Samnee in San Francisco",
+      "sub": "2014–2015 · same creators, new coast",
+      "links": [
+        {
+          "label": "Daredevil (2014)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_4"
+        }
+      ],
+      "intro": "The same run, renumbered and relocated. Read it straight on from the section above.",
+      "items": [
+        {
+          "id": "dd4-0-1",
+          "t": "Daredevil (2014)",
+          "n": "#0.1",
+          "note": "Reprints the four-part Road Warrior digital prelude.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd4-1",
+          "t": "Daredevil (2014)",
+          "n": "#1",
+          "note": "Same creators, new numbering, new city.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-1-50",
+          "t": "Daredevil (2014)",
+          "n": "#1.50",
+          "note": "An anniversary special: a Waid lead story and two shorts.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd4-2",
+          "t": "Daredevil (2014)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-3",
+          "t": "Daredevil (2014)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-4",
+          "t": "Daredevil (2014)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-5",
+          "t": "Daredevil (2014)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-6",
+          "t": "Daredevil (2014)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-7",
+          "t": "Daredevil (2014)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-8",
+          "t": "Daredevil (2014)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-9",
+          "t": "Daredevil (2014)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-10",
+          "t": "Daredevil (2014)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-11",
+          "t": "Daredevil (2014)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-12",
+          "t": "Daredevil (2014)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-13",
+          "t": "Daredevil (2014)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-14",
+          "t": "Daredevil (2014)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-15",
+          "t": "Daredevil (2014)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-15-1",
+          "t": "Daredevil (2014)",
+          "n": "#15.1",
+          "note": "A standalone .1 issue.",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        },
+        {
+          "id": "dd4-16",
+          "t": "Daredevil (2014)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-17",
+          "t": "Daredevil (2014)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-18",
+          "t": "Daredevil (2014)",
+          "n": "#18",
+          "note": "Waid's last issue.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "soule",
+      "tier": 3,
+      "title": "Soule & Garney",
+      "sub": "2016–2019 · between Waid and Zdarsky",
+      "links": [
+        {
+          "label": "Daredevil (2016)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_5"
+        }
+      ],
+      "intro": "Charles Soule's run — back to New York, back to night. Optional in the same way Diggle's is: the next run opens cleanly without it, and is a little sharper with it.",
+      "items": [
+        {
+          "id": "dd5-1",
+          "t": "Daredevil (2016)",
+          "n": "#1",
+          "note": "Charles Soule and Ron Garney.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-2",
+          "t": "Daredevil (2016)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-3",
+          "t": "Daredevil (2016)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-4",
+          "t": "Daredevil (2016)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-5",
+          "t": "Daredevil (2016)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-6",
+          "t": "Daredevil (2016)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-7",
+          "t": "Daredevil (2016)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-8",
+          "t": "Daredevil (2016)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-9",
+          "t": "Daredevil (2016)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-10",
+          "t": "Daredevil (2016)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-11",
+          "t": "Daredevil (2016)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-12",
+          "t": "Daredevil (2016)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-13",
+          "t": "Daredevil (2016)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-14",
+          "t": "Daredevil (2016)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-15",
+          "t": "Daredevil (2016)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-16",
+          "t": "Daredevil (2016)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-17",
+          "t": "Daredevil (2016)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-18",
+          "t": "Daredevil (2016)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-19",
+          "t": "Daredevil (2016)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-20",
+          "t": "Daredevil (2016)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-21",
+          "t": "Daredevil (2016)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-22",
+          "t": "Daredevil (2016)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-23",
+          "t": "Daredevil (2016)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-24",
+          "t": "Daredevil (2016)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-25",
+          "t": "Daredevil (2016)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-26",
+          "t": "Daredevil (2016)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-27",
+          "t": "Daredevil (2016)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-28",
+          "t": "Daredevil (2016)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-595",
+          "t": "Daredevil (2016)",
+          "n": "#595",
+          "note": "Legacy numbering returns again.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-596",
+          "t": "Daredevil (2016)",
+          "n": "#596",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-597",
+          "t": "Daredevil (2016)",
+          "n": "#597",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-598",
+          "t": "Daredevil (2016)",
+          "n": "#598",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-599",
+          "t": "Daredevil (2016)",
+          "n": "#599",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-600",
+          "t": "Daredevil (2016)",
+          "n": "#600",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-601",
+          "t": "Daredevil (2016)",
+          "n": "#601",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-602",
+          "t": "Daredevil (2016)",
+          "n": "#602",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-603",
+          "t": "Daredevil (2016)",
+          "n": "#603",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-604",
+          "t": "Daredevil (2016)",
+          "n": "#604",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-605",
+          "t": "Daredevil (2016)",
+          "n": "#605",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-606",
+          "t": "Daredevil (2016)",
+          "n": "#606",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-607",
+          "t": "Daredevil (2016)",
+          "n": "#607",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-608",
+          "t": "Daredevil (2016)",
+          "n": "#608",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-609",
+          "t": "Daredevil (2016)",
+          "n": "#609",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-610",
+          "t": "Daredevil (2016)",
+          "n": "#610",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-611",
+          "t": "Daredevil (2016)",
+          "n": "#611",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd5-612",
+          "t": "Daredevil (2016)",
+          "n": "#612",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "zdarsky",
+      "tier": 1,
+      "title": "Zdarsky & Checchetto",
+      "sub": "2019–2021 · the longest run since Bendis",
+      "links": [
+        {
+          "label": "Daredevil (2019)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_6"
+        }
+      ],
+      "intro": "Chip Zdarsky and Marco Checchetto take the crime-comic version of the book and push it as far as it goes. Reads as one continuous story from here to the end of the list.",
+      "items": [
+        {
+          "id": "dd6-1",
+          "t": "Daredevil (2019)",
+          "n": "#1",
+          "note": "Zdarsky and Marco Checchetto begin.",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-2",
+          "t": "Daredevil (2019)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-3",
+          "t": "Daredevil (2019)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-4",
+          "t": "Daredevil (2019)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-5",
+          "t": "Daredevil (2019)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-6",
+          "t": "Daredevil (2019)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-7",
+          "t": "Daredevil (2019)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-8",
+          "t": "Daredevil (2019)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-9",
+          "t": "Daredevil (2019)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-10",
+          "t": "Daredevil (2019)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-11",
+          "t": "Daredevil (2019)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-12",
+          "t": "Daredevil (2019)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-13",
+          "t": "Daredevil (2019)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-14",
+          "t": "Daredevil (2019)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-15",
+          "t": "Daredevil (2019)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-16",
+          "t": "Daredevil (2019)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-17",
+          "t": "Daredevil (2019)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-18",
+          "t": "Daredevil (2019)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-19",
+          "t": "Daredevil (2019)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-20",
+          "t": "Daredevil (2019)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-21",
+          "t": "Daredevil (2019)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-22",
+          "t": "Daredevil (2019)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-23",
+          "t": "Daredevil (2019)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-24",
+          "t": "Daredevil (2019)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-25",
+          "t": "Daredevil (2019)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-26",
+          "t": "Daredevil (2019)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-27",
+          "t": "Daredevil (2019)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-28",
+          "t": "Daredevil (2019)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-29",
+          "t": "Daredevil (2019)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-30",
+          "t": "Daredevil (2019)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-31",
+          "t": "Daredevil (2019)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-32",
+          "t": "Daredevil (2019)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-33",
+          "t": "Daredevil (2019)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-34",
+          "t": "Daredevil (2019)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-35",
+          "t": "Daredevil (2019)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd6-36",
+          "t": "Daredevil (2019)",
+          "n": "#36",
+          "note": "The run pauses here for the event below.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "devilsreign",
+      "tier": 1,
+      "title": "Devil's Reign",
+      "sub": "2022 · the run goes line-wide",
+      "links": [
+        {
+          "label": "Devil's Reign",
+          "url": "https://marvel.fandom.com/wiki/Devil%27s_Reign_Vol_1"
+        },
+        {
+          "label": "Woman Without Fear",
+          "url": "https://marvel.fandom.com/wiki/Daredevil:_Woman_Without_Fear_Vol_1"
+        }
+      ],
+      "intro": "Zdarsky's run continues as a Marvel event and a companion miniseries, interleaved here in the order they went on sale.",
+      "items": [
+        {
+          "id": "dr-1",
+          "t": "Devil's Reign",
+          "n": "#1",
+          "note": "A line-wide event written out of this run.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dr-2",
+          "t": "Devil's Reign",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "wwf-1",
+          "t": "Daredevil: Woman Without Fear",
+          "n": "#1",
+          "note": "A companion miniseries, read between the event's chapters.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dr-3",
+          "t": "Devil's Reign",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "wwf-2",
+          "t": "Daredevil: Woman Without Fear",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dr-4",
+          "t": "Devil's Reign",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "wwf-3",
+          "t": "Daredevil: Woman Without Fear",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dr-5",
+          "t": "Devil's Reign",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dr-6",
+          "t": "Devil's Reign",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "redfist",
+      "tier": 1,
+      "title": "The Red Fist Saga",
+      "sub": "2022–2023 · the finish",
+      "links": [
+        {
+          "label": "Daredevil (2022)",
+          "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_7"
+        }
+      ],
+      "intro": "One more renumbering, one continuous story, and the end of the run.",
+      "items": [
+        {
+          "id": "dd7-1",
+          "t": "Daredevil (2022)",
+          "n": "#1",
+          "note": "The run picks straight back up at a new #1.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-2",
+          "t": "Daredevil (2022)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-3",
+          "t": "Daredevil (2022)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-4",
+          "t": "Daredevil (2022)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-5",
+          "t": "Daredevil (2022)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-6",
+          "t": "Daredevil (2022)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-7",
+          "t": "Daredevil (2022)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-8",
+          "t": "Daredevil (2022)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-9",
+          "t": "Daredevil (2022)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-10",
+          "t": "Daredevil (2022)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-11",
+          "t": "Daredevil (2022)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-12",
+          "t": "Daredevil (2022)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-13",
+          "t": "Daredevil (2022)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd7-14",
+          "t": "Daredevil (2022)",
+          "n": "#14",
+          "note": "The end of Zdarsky's Daredevil.",
+          "star": 1,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

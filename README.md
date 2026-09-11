@@ -11,14 +11,16 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
 War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
-(Hickman's Marvel run), *Venom* (Cates and Stegman), *One Piece* in
+(Hickman's Marvel run), *Daredevil* (the five runs that make the modern
+character — Miller, Bendis, Brubaker, Waid, Zdarsky — with the lead-ins that
+explain how each one starts), *Venom* (Cates and Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
 flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
@@ -422,6 +424,12 @@ Herald](https://www.comicbookherald.com/), [Crushing
 Krisis](https://crushingkrisis.com/) and [How To Love
 Comics](https://www.howtolovecomics.com/); the *Fantastic Four*/*FF* weave
 follows the order Hickman specified for the omnibus.
+
+Daredevil built from the Marvel Database (marvel.fandom.com): every issue
+page of each volume enumerated through its API, then each issue's printed
+writer, penciler and cover date read from the page itself. The run boundaries
+are derived from those credits — the generator refuses to build if a range it
+calls a writer's run is not exactly that.
 
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.
