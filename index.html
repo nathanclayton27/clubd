@@ -6319,7 +6319,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '851c7a73e414';
+const BUILD = '03948b997025';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -6412,13 +6412,15 @@ function fwActive(){
   if(!SLUG) return '';
   let v = '';
   try{ v = localStorage.getItem('gw:fwon:' + SLUG) || ''; }catch(e){ return ''; }
-  if(v === '1') return 'fw';
+  if(v === '1') v = 'fw';
   if(!/^fw\d*$/.test(v)) return '';
   // A run this device deleted is not a run this device is IN. fwBack() clears
   // this flag on the way out, but that write can be refused — private mode, a
   // full quota — and the page would then sit inside a deleted run that adopt()
   // would refill from the cloud on the next sign-in, which is the resurrection
-  // by another door.
+  // by another door. The legacy '1' is normalised above rather than
+  // returned early, so the one run that predates keys is covered by this
+  // too — it can be deleted like any other.
   return fwBuriedFor(SLUG, v) ? '' : v;
 }
 const FW = fwActive();
