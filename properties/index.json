@@ -3896,6 +3896,26 @@
     "random": true
   },
   {
+    "slug": "culture",
+    "media": [
+      "books"
+    ],
+    "title": "The Culture series",
+    "subtitle": "Iain M. Banks — nine novels and one collection",
+    "kind": "books",
+    "year": "1987–2012",
+    "popularity": 49,
+    "blurb": "Iain M. Banks's Culture books in the order he published them — standalone space opera in a post-scarcity galaxy, plus the short-story collection the source counts with them.",
+    "accent": "#3A2E6B",
+    "accentDark": "#8FD9E8",
+    "unit": {
+      "one": "book",
+      "many": "books"
+    },
+    "vpast": "read",
+    "total": 10
+  },
+  {
     "slug": "the-big-o",
     "media": [
       "anime"
