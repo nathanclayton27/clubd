@@ -22,6 +22,12 @@ trick scratch/fps/fetch_hltb.py needed for F.E.A.R.:
     site for a game containing the term "of" and finds nothing useful, so the
     row searches for "Dark Messiah Might Magic" and still VERIFIES against
     the full title. Only the query changes; the gate is untouched.
+
+"Shadows of Doubt" is asked for as 2023 here and shows as 2024 on the list.
+HowLongToBeat dates it from its early-access launch; the row shows the
+September 2024 full release, which is what the list's rule admits it on. The
+two-year window covers the gap, and tools/make_immersive.py checks the figure
+against every release year in the article's infobox rather than just the one.
 """
 import json
 import pathlib

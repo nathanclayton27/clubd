@@ -27,7 +27,7 @@
     ],
     [
       "Nobody agrees what an immersive sim is, so here is the rule.",
-      "A game ships only if Wikipedia's Category:Immersive sims holds it — 58 articles today — and at least one source says outright that it is one: the article's own infobox genre field, the article's prose, Wikipedia's “Immersive sim” article naming it, or PC Gamer's “History of the best immersive sims”. 16 of the 23 are named in the genre article itself and 6 are among PC Gamer's picks. Being compared to the genre does not count: “inspired by” and “similar to” are all that Indiana Jones and the Great Circle, Amnesia: The Bunker and the Hitman games manage, and Pathologic 2 names the genre nowhere but its category tag."
+      "A game ships only if Wikipedia's Category:Immersive sims holds it — 58 articles today — and at least one source says outright that it is one: the article's own infobox genre field, the article's prose, Wikipedia's “Immersive sim” article naming it, or PC Gamer's “History of the best immersive sims”. 16 of the 23 are named in the genre article itself, and 8 of PC Gamer's 10 dated picks are rows here. Being compared to the genre does not count: “inspired by” and “similar to” are all that Indiana Jones and the Great Circle, Amnesia: The Bunker and the Hitman games manage, and Pathologic 2 names the genre nowhere but its category tag."
     ],
     [
       "Two rows are here on one magazine's word.",
@@ -60,14 +60,14 @@
       "id": "lg",
       "title": "The Looking Glass years",
       "sub": "1992–2000 · 6 games · 101 hours story",
-      "intro": "One studio and the people who left it. In eight years the idea goes from a dungeon you can look up inside to a conspiracy thriller with a vent behind every wall.",
+      "intro": "One studio and the people who left it. In eight years the idea goes from a dungeon you can look up inside to a conspiracy thriller you can sneak, hack, shoot or talk your way through.",
       "items": [
         {
           "id": "ims-uu",
           "t": "Ultima Underworld: The Stygian Abyss",
           "n": "1992",
           "w": 19.56,
-          "note": "Blue Sky Productions, later Looking Glass — the first role-playing game with first-person action in a 3D world you can look up and down in, a few months ahead of Wolfenstein 3D."
+          "note": "Blue Sky Productions, later Looking Glass — cited as the first role-playing game with first-person action in a 3D world, and the one that let you look up and down in it."
         },
         {
           "id": "ims-ss1",
@@ -81,14 +81,14 @@
           "t": "Thief: The Dark Project",
           "n": "1998",
           "w": 12.16,
-          "note": "The first PC game to make light and sound the mechanics rather than the decoration; the team called it a first-person sneaker."
+          "note": "The first PC stealth game to make light and sound the mechanics rather than the decoration; the team called it a first-person sneaker."
         },
         {
           "id": "ims-ss2",
           "t": "System Shock 2",
           "n": "1999",
           "w": 13.32,
-          "note": "Ken Levine with Irrational and Looking Glass together — a shooter's shape over an RPG's build choices, and the row most of these lists put at the top."
+          "note": "Ken Levine with Irrational and Looking Glass together — a shooter's shape over an RPG's build choices, and the row that keeps turning up on greatest-games-ever lists."
         },
         {
           "id": "ims-thief2",
@@ -102,7 +102,7 @@
           "t": "Deus Ex",
           "n": "2000",
           "w": 22.93,
-          "note": "Warren Spector at Ion Storm. Every door has a code, a vent and a conversation that skips it, and the genre spent the next decade answering to that."
+          "note": "Warren Spector at Ion Storm. A way past is a lockpick, a keypad to hack, a fight or a conversation, and the genre spent the next decade answering to that."
         }
       ],
       "open": true
@@ -132,14 +132,14 @@
           "t": "Vampire: The Masquerade – Bloodlines",
           "n": "2004",
           "w": 22.56,
-          "note": "Troika's vampire RPG, first-person and systemic — and one of the two rows here that only a published list claims for the genre."
+          "note": "Troika's vampire RPG, first- or third-person and systemic — and one of the two rows here that only a published list claims for the genre."
         },
         {
           "id": "ims-darkmessiah",
           "t": "Dark Messiah of Might and Magic",
           "n": "2006",
           "w": 10.26,
-          "note": "Arkane on Half-Life 2's engine, with physics as the whole of the combat. The other row PC Gamer carries and Wikipedia's prose does not."
+          "note": "Arkane on Half-Life 2's engine, where a kick into a spike rack often ends a fight faster than the sword will. The other row PC Gamer carries and Wikipedia's prose does not."
         }
       ]
     },
@@ -147,7 +147,7 @@
       "id": "revival",
       "title": "The big-money revival",
       "sub": "2007–2017 · 6 games · 91 hours story",
-      "intro": "Publishers try it at scale: three Deus Ex games, two Dishonoreds, and BioShock and Prey at either end of the decade. BioShock sold three million copies and most of the rest disappointed somebody, which is why the next section looks the way it does.",
+      "intro": "Publishers try it at scale: two Deus Ex games, two Dishonoreds, and BioShock and Prey at either end of the decade. BioShock had sold four million copies by March 2010 and most of the rest disappointed somebody, which is why the next section looks the way it does.",
       "items": [
         {
           "id": "ims-bioshock",
@@ -168,7 +168,7 @@
           "t": "Dishonored",
           "n": "2012",
           "w": 12.16,
-          "note": "Arkane at full strength: a plague city, a teleport that goes up as well as across, and a game that counts how you got through it."
+          "note": "Arkane at full strength: a plague-ridden city, a short-range teleport, and a game that counts how you got through it."
         },
         {
           "id": "ims-mankind",
@@ -197,14 +197,14 @@
       "id": "indies",
       "title": "Small teams, same idea",
       "sub": "2019–2025 · 7 games · 82 hours story",
-      "intro": "The budgets left and the genre did not: six games from small studios, plus Arkane's most recent, which lands here by its date rather than by who made it.",
+      "intro": "The budgets left and the genre did not. Six of these came from independent studios — WolfEye, who made Weird West, is twenty people — and the seventh is the last Arkane game on the list, in here by its date rather than by who made it.",
       "items": [
         {
           "id": "ims-voidbastards",
           "t": "Void Bastards",
           "n": "2019",
           "w": 8.57,
-          "note": "Blue Manchu's raid-based one — a derelict ship at a time, and a new survivor when the last one runs out."
+          "note": "Blue Manchu's raid-based one — board and strip one ship at a time, with a freshly rehydrated prisoner to replace each one you lose."
         },
         {
           "id": "ims-crueltysquad",
@@ -237,16 +237,16 @@
         {
           "id": "ims-shadowsofdoubt",
           "t": "Shadows of Doubt",
-          "n": "2023",
+          "n": "2024",
           "w": 22.23,
-          "note": "A procedurally generated city with one murder in it at a time; out of early access in September 2024."
+          "note": "A procedurally generated city with one murder case open at a time. Dated 2024 here because that is when it left early access, which is what the rule below admits it on."
         },
         {
           "id": "ims-skindeep",
           "t": "Skin Deep",
           "n": "2025",
           "w": 9.2,
-          "note": "Blendo Games, and the newest here: a stowaway, a cargo ship and a great deal of improvising."
+          "note": "Blendo Games, and the newest here: an insurance commando kept in cryogenic storage aboard starships, thawed out when pirates board. Five item slots, and a great deal of improvising."
         }
       ]
     }

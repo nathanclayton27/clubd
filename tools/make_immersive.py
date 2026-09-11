@@ -31,7 +31,15 @@ mechanical here, and it is re-asserted on every run.
        or Lineage section;
     4. PC Gamer's "History of the best immersive sims" lists it, either in
        the ten dated picks or among the indies (parsed by
-       scratch/immersive/parse_pcgamer.py).
+       scratch/immersive/parse_pcgamer.py). The feature spells titles its own
+       way — "Ultima Underworld" for the article's "Ultima Underworld: The
+       Stygian Abyss", "Thief 2" for "Thief II" — so in_pcgamer() folds roman
+       numerals to digits and, for the dated picks only, lets either side drop
+       a subtitle. The year has to agree for that second rule, which is what
+       stops "Deus Ex" from swallowing Deus Ex: Human Revolution. Comparing
+       bare titles missed those two rows and undercounted a property note by
+       two (CLU-236), so the 8-here/2-outside split of the ten picks is now
+       asserted as arithmetic rather than written down as a number.
 
   VETO, and it is the only negative evidence in the build. That same PC Gamer
   feature keeps a section for "games outside the immersive sim genre" that use
@@ -45,7 +53,10 @@ mechanical here, and it is re-asserted on every run.
   already here (Dishonored: Death of the Outsider), nothing cancelled
   (Perfect Dark) or unfinished (Gloomwood, Peripeteia, Psycho Patrol R, Core
   Decay), and no remake of a game already on the list (System Shock 2023).
-  Shadows of Doubt is here because it left early access in September 2024.
+  Shadows of Doubt is here because it left early access in September 2024,
+  and so it is dated 2024 and not by the 2023 early-access build the rule
+  would have refused. FULL_RELEASE below is the only exemption from "the row
+  shows the first date in the infobox", and it names its reason.
 
 What the gate does not decide
 -----------------------------
@@ -85,25 +96,25 @@ ROSTER = [
     # --------------------------------------------------- the Looking Glass years
     ("uu", "Ultima Underworld: The Stygian Abyss",
      "Ultima Underworld: The Stygian Abyss", 1992, "lg",
-     "Blue Sky Productions, later Looking Glass — the first role-playing game "
-     "with first-person action in a 3D world you can look up and down in, a "
-     "few months ahead of Wolfenstein 3D."),
+     "Blue Sky Productions, later Looking Glass — cited as the first "
+     "role-playing game with first-person action in a 3D world, and the one "
+     "that let you look up and down in it."),
     ("ss1", "System Shock", "System Shock", 1994, "lg",
      "The same idea moved onto a space station, with the story left in logs "
      "to find rather than scenes to watch. The 1994 original, not the remake."),
     ("thief", "Thief: The Dark Project", "Thief: The Dark Project", 1998, "lg",
-     "The first PC game to make light and sound the mechanics rather than the "
-     "decoration; the team called it a first-person sneaker."),
+     "The first PC stealth game to make light and sound the mechanics rather "
+     "than the decoration; the team called it a first-person sneaker."),
     ("ss2", "System Shock 2", "System Shock 2", 1999, "lg",
      "Ken Levine with Irrational and Looking Glass together — a shooter's "
-     "shape over an RPG's build choices, and the row most of these lists put "
-     "at the top."),
+     "shape over an RPG's build choices, and the row that keeps turning up on "
+     "greatest-games-ever lists."),
     ("thief2", "Thief II", "Thief II: The Metal Age", 2000, "lg",
      "Bigger levels and cleaner systems, made by a studio near bankruptcy: it "
      "shipped in March 2000 and Looking Glass closed in May."),
     ("deusex", "Deus Ex (video game)", "Deus Ex", 2000, "lg",
-     "Warren Spector at Ion Storm. Every door has a code, a vent and a "
-     "conversation that skips it, and the genre spent the next decade "
+     "Warren Spector at Ion Storm. A way past is a lockpick, a keypad to hack, "
+     "a fight or a conversation, and the genre spent the next decade "
      "answering to that."),
     # ----------------------------------------------------- the scattered years
     ("arx", "Arx Fatalis", "Arx Fatalis", 2002, "scatter",
@@ -114,12 +125,13 @@ ROSTER = [
      "Ion Storm take the series over and add a city to walk between the jobs."),
     ("bloodlines", "Vampire: The Masquerade – Bloodlines",
      "Vampire: The Masquerade – Bloodlines", 2004, "scatter",
-     "Troika's vampire RPG, first-person and systemic — and one of the two "
-     "rows here that only a published list claims for the genre."),
+     "Troika's vampire RPG, first- or third-person and systemic — and one of "
+     "the two rows here that only a published list claims for the genre."),
     ("darkmessiah", "Dark Messiah of Might and Magic",
      "Dark Messiah of Might and Magic", 2006, "scatter",
-     "Arkane on Half-Life 2's engine, with physics as the whole of the "
-     "combat. The other row PC Gamer carries and Wikipedia's prose does not."),
+     "Arkane on Half-Life 2's engine, where a kick into a spike rack often "
+     "ends a fight faster than the sword will. The other row PC Gamer carries "
+     "and Wikipedia's prose does not."),
     # ------------------------------------------------ the big-money revival
     ("bioshock", "BioShock", "BioShock", 2007, "revival",
      "Irrational's spiritual successor to System Shock 2, systems simplified "
@@ -129,8 +141,8 @@ ROSTER = [
      "Eidos-Montréal's prequel and the series' first game in eight years; "
      "its boss fights were outsourced to another studio under time pressure."),
     ("dishonored", "Dishonored", "Dishonored", 2012, "revival",
-     "Arkane at full strength: a plague city, a teleport that goes up as well "
-     "as across, and a game that counts how you got through it."),
+     "Arkane at full strength: a plague-ridden city, a short-range teleport, "
+     "and a game that counts how you got through it."),
     ("mankind", "Deus Ex: Mankind Divided", "Deus Ex: Mankind Divided", 2016,
      "revival",
      "Eidos-Montréal again, built around one dense Prague hub rather than a "
@@ -143,8 +155,8 @@ ROSTER = [
      "toolkit, and enemies that hide as the furniture."),
     # ------------------------------------------------- small teams, same idea
     ("voidbastards", "Void Bastards", "Void Bastards", 2019, "indies",
-     "Blue Manchu's raid-based one — a derelict ship at a time, and a new "
-     "survivor when the last one runs out."),
+     "Blue Manchu's raid-based one — board and strip one ship at a time, with "
+     "a freshly rehydrated prisoner to replace each one you lose."),
     ("crueltysquad", "Cruelty Squad", "Cruelty Squad", 2021, "indies",
      "Consumer Softproducts in Finland: a serious assassination sim wearing "
      "visuals Rock Paper Shotgun called sensorally aggressive."),
@@ -157,33 +169,43 @@ ROSTER = [
     ("mosalina", "Mosa Lina", "Mosa Lina", 2023, "indies",
      "A game that calls itself a hostile interpretation of the form: three "
      "random tools a level, and no promise they fit."),
-    ("shadowsofdoubt", "Shadows of Doubt", "Shadows of Doubt", 2023, "indies",
-     "A procedurally generated city with one murder in it at a time; out of "
-     "early access in September 2024."),
+    ("shadowsofdoubt", "Shadows of Doubt", "Shadows of Doubt", 2024, "indies",
+     "A procedurally generated city with one murder case open at a time. "
+     "Dated 2024 here because that is when it left early access, which is "
+     "what the rule below admits it on."),
     ("skindeep", "Skin Deep (video game)", "Skin Deep", 2025, "indies",
-     "Blendo Games, and the newest here: a stowaway, a cargo ship and a great "
-     "deal of improvising."),
+     "Blendo Games, and the newest here: an insurance commando kept in "
+     "cryogenic storage aboard starships, thawed out when pirates board. Five "
+     "item slots, and a great deal of improvising."),
 ]
 
 SECTIONS = [
     ("lg", "The Looking Glass years", 1992, 2000,
      "One studio and the people who left it. In eight years the idea goes "
-     "from a dungeon you can look up inside to a conspiracy thriller with a "
-     "vent behind every wall."),
+     "from a dungeon you can look up inside to a conspiracy thriller you can "
+     "sneak, hack, shoot or talk your way through."),
     ("scatter", "The scattered years", 2002, 2006,
      "Looking Glass closed two months after Thief II, and the form turns up "
      "in other people's games instead — a dungeon crawler, a vampire RPG, a "
      "Might and Magic spin-off — mostly made by the same handful of people."),
     ("revival", "The big-money revival", 2007, 2017,
-     "Publishers try it at scale: three Deus Ex games, two Dishonoreds, and "
-     "BioShock and Prey at either end of the decade. BioShock sold three "
-     "million copies and most of the rest disappointed somebody, which is why "
-     "the next section looks the way it does."),
+     "Publishers try it at scale: two Deus Ex games, two Dishonoreds, and "
+     "BioShock and Prey at either end of the decade. BioShock had sold four "
+     "million copies by March 2010 and most of the rest disappointed "
+     "somebody, which is why the next section looks the way it does."),
     ("indies", "Small teams, same idea", 2019, 2025,
-     "The budgets left and the genre did not: six games from small studios, "
-     "plus Arkane's most recent, which lands here by its date rather than by "
-     "who made it."),
+     "The budgets left and the genre did not. Six of these came from "
+     "independent studios — WolfEye, who made Weird West, is twenty people — "
+     "and the seventh is the last Arkane game on the list, in here by its "
+     "date rather than by who made it."),
 ]
+
+# Rows dated by their full release rather than by the first date in the
+# infobox. The rule admits Shadows of Doubt because it LEFT early access, so
+# showing it as 2023 would put the row and the rule in different years;
+# Wikipedia's own lead calls it "a 2024 ... video game". The year still has to
+# appear in the infobox, and nothing else is exempt.
+FULL_RELEASE = {"shadowsofdoubt": 2024}
 
 # Eligible under the gate, and left off by the house. Re-checked every run so
 # the property note that names them cannot rot.
@@ -217,7 +239,61 @@ def join_and(items):
             if len(items) > 1 else items[0])
 
 
-def evidence(article, display, facts, pcg):
+ROMAN = {"i": "1", "ii": "2", "iii": "3", "iv": "4", "v": "5", "vi": "6",
+         "vii": "7", "viii": "8", "ix": "9", "x": "10"}
+
+
+def forms(raw):
+    """The normalized spellings a published list might name a title in.
+
+    Two, always: the title as written, and the same with roman numerals as
+    digits. A magazine writes "Thief 2: The Metal Age" where Wikipedia writes
+    "Thief II", and that is a spelling difference rather than a disagreement.
+    """
+    n = P.normt(raw.split(" (")[0])
+    return {n, " ".join(ROMAN.get(w, w) for w in n.split())} - {""}
+
+
+def names_same(mine, theirs, subtitle=False):
+    """Do two sets of title spellings name the same game?
+
+    With ``subtitle``, one side may be the other with its subtitle dropped —
+    PC Gamer's canon pick is "Ultima Underworld" and the article is "Ultima
+    Underworld: The Stygian Abyss". Only ever used where a release year has
+    to agree too: on its own it would let "Deus Ex" swallow Deus Ex: Human
+    Revolution.
+    """
+    for a in mine:
+        for b in theirs:
+            if a == b:
+                return True
+            if subtitle and (a.startswith(b + " ") or b.startswith(a + " ")):
+                return True
+    return False
+
+
+def in_pcgamer(article, display, pcg, year=None):
+    """Does PC Gamer's feature name this game?
+
+    Matching the feature's spellings to Wikipedia's needs some slack, so the
+    ten canon picks — which the feature dates — are matched on the year as
+    well, and that is what makes the slack safe. Undated callers get exact
+    titles only. Comparing bare normalized titles missed Ultima Underworld
+    and Thief II, and undercounted the evidence in a property note by two
+    (CLU-236).
+    """
+    mine = forms(article) | forms(display)
+    for c in pcg["canon"]:
+        if year is None:
+            if names_same(mine, forms(c["title"])):
+                return True
+        elif int(c["year"]) == year and names_same(mine, forms(c["title"]),
+                                                  subtitle=True):
+            return True
+    return any(names_same(mine, forms(t)) for t in pcg["indies"])
+
+
+def evidence(article, display, facts, pcg, year=None):
     """Which sources say this game IS an immersive sim."""
     f = facts[article]
     out = []
@@ -227,9 +303,7 @@ def evidence(article, display, facts, pcg):
         out.append("prose")
     if f["in_genre_article"]:
         out.append("genre article")
-    names = {P.normt(c["title"]) for c in pcg["canon"]} | {
-        P.normt(t) for t in pcg["indies"]}
-    if P.normt(display) in names or P.normt(article) in names:
+    if in_pcgamer(article, display, pcg, year):
         out.append("PC Gamer")
     return out
 
@@ -254,7 +328,7 @@ def main():
         assert article in members, \
             "%s is not in %s" % (article, cat["category"])
         assert article in facts, "no cached article for %s" % article
-        src = evidence(article, title, facts, pcg)
+        src = evidence(article, title, facts, pcg, year)
         assert src, ("nothing says %s is an immersive sim: infobox no, prose "
                      "no, genre article no, PC Gamer no" % title)
         assert P.normt(title) not in vetoed and P.normt(article) not in vetoed, \
@@ -267,14 +341,22 @@ def main():
 
         years = facts[article]["years"]
         assert years, "no release year in %s's infobox" % article
-        assert years[0] == year, \
-            "%s: roster says %d, the infobox says %s" % (article, year, years[0])
+        assert year in years, \
+            "%s: roster says %d, the infobox has %s" % (article, year, years)
+        assert year == FULL_RELEASE.get(key, years[0]), \
+            "%s: roster says %d, the infobox's first date is %s" \
+            % (article, year, years[0])
 
         rec = hours.get(key)
         assert rec, "no HowLongToBeat record for %s" % key
         assert P.normt(rec["name"] or "") == P.normt(title), \
             "record mismatch for %s: %r" % (key, rec["name"])
-        assert int(rec["year"]) == year, \
+        # HowLongToBeat dates a game from when it first became playable, which
+        # for a row dated by its full release is the early-access year. It
+        # still has to be a date the article's own infobox carries.
+        assert int(rec["year"]) in years, \
+            "%s: HLTB says %s, the infobox has %s" % (key, rec["year"], years)
+        assert key in FULL_RELEASE or int(rec["year"]) == year, \
             "year mismatch for %s: roster %d, HLTB %s" % (key, year, rec["year"])
         assert rec["main_h"] and rec["main_h"] > 0, \
             "no main-story figure for %s — this list ships weighted" % key
@@ -298,6 +380,21 @@ def main():
         "expected 2 rows carried by PC Gamer alone, got %s" % pcgamer_only
     assert set(pcgamer_only) == {"Vampire: The Masquerade – Bloodlines",
                                  "Dark Messiah of Might and Magic"}, pcgamer_only
+
+    # PC Gamer's ten dated picks split cleanly: eight are rows here, and the
+    # two that are not are the ones the category does not hold. Asserted as
+    # arithmetic because the property note quotes both halves, and because a
+    # title-matching bug once undercounted this side by two (CLU-236).
+    assert set(from_pcgamer) == {
+        "Ultima Underworld: The Stygian Abyss", "System Shock 2",
+        "Thief II: The Metal Age", "Deus Ex",
+        "Vampire: The Masquerade – Bloodlines",
+        "Dark Messiah of Might and Magic", "BioShock", "Dishonored"}, \
+        sorted(from_pcgamer)
+    assert len(from_pcgamer) + len(CANON_NOT_IN_CATEGORY) == len(pcg["canon"]), \
+        "PC Gamer's %d dated picks no longer split %d on the list and %d out " \
+        "of the category" % (len(pcg["canon"]), len(from_pcgamer),
+                             len(CANON_NOT_IN_CATEGORY))
 
     # the claims the property notes make about what was left out
     assert len(CUT_BUT_ELIGIBLE) == 5, \
@@ -404,14 +501,15 @@ def main():
              "that it is one: the article's own infobox genre field, the "
              "article's prose, Wikipedia's “Immersive sim” article naming it, "
              "or PC Gamer's “History of the best immersive sims”. %d of the "
-             "%d are named in the genre article itself and %d are among PC "
-             "Gamer's picks. Being compared to the genre does not count: "
+             "%d are named in the genre article itself, and %d of PC Gamer's "
+             "%d dated picks are rows here. Being compared to the genre does "
+             "not count: "
              "“inspired by” and “similar to” are all that Indiana Jones and "
              "the Great Circle, Amnesia: The Bunker and the Hitman games "
              "manage, and Pathologic 2 names the genre nowhere but its "
              "category tag."
              % (len(members), len(from_genre_article), len(ROSTER),
-                len(from_pcgamer))],
+                len(from_pcgamer), len(pcg["canon"]))],
             ["Two rows are here on one magazine's word.",
              "%s are in the category and no Wikipedia text anywhere calls "
              "either an immersive sim — PC Gamer's canon does, and that is "
