@@ -297,7 +297,7 @@ def sections():
 
     out.append({
         "id": "early", "title": "Before the solo book",
-        "sub": "1968–1971 — guest spots in other people's comics",
+        "sub": "1968 into the 1970s — guest spots in other people's comics",
         "tier": 3,
         "intro": (
             "This is Marvel's own Black Panther: The Early Marvel Years omnibus, "
@@ -358,7 +358,7 @@ def sections():
 
     out.append({
         "id": "kirby", "title": "The Kirby run",
-        "sub": "1977–1979 — the co-creator's own thing, and it ignores everything above",
+        "sub": "from January 1977 — the co-creator's own thing, and it ignores everything above",
         "tier": 3,
         "intro": (
             "Marvel relaunched the character in his own title with Jack Kirby — "
@@ -455,7 +455,7 @@ def sections():
 
     out.append({
         "id": "kasper", "title": "Kasper Cole",
-        "sub": "2003 — thirteen issues in which T'Challa is the supporting cast",
+        "sub": "the end of the Priest run — thirteen issues in which T'Challa is the supporting cast",
         "tier": 2,
         "intro": (
             "The last thirteen issues of Priest's run replace the lead. Kasper Cole "
@@ -613,7 +613,7 @@ def sections():
 
     out.append({
         "id": "around", "title": "Around the Coates run",
-        "sub": "2016–2019 — four spin-offs, none of them load-bearing",
+        "sub": "2016–2019 — five spin-offs, none of them load-bearing",
         "tier": 3,
         "intro": (
             "Books that ran alongside. World of Wakanda is Coates with Roxane Gay on "
