@@ -1014,11 +1014,20 @@ footer a{color:var(--steel)}
   color:var(--ink-3);font-family:"IBM Plex Mono",ui-monospace,monospace;
   font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
   height:var(--pkband,1.5em);border:0;border-radius:0;padding:0;cursor:pointer;
+  /* The BUTTON is the tap target and the GRADIENT is the fade, and they are no
+     longer the same rectangle. Tying them together meant the 24px minimum that
+     keeps this pressable also decided how much of the sixth name got covered —
+     and on the real 37px friends rows that was nearly all of it. The gradient
+     now paints only the bottom --pkfade of the button. */
   background:linear-gradient(to bottom,transparent 40%,
-    var(--pkground,var(--card)) 88%)}
+    var(--pkground,var(--card)) 88%);
+  background-size:100% var(--pkfade,100%);
+  background-position:bottom;background-repeat:no-repeat}
 .pklist.pk-on .pkmore:hover{color:var(--signal);
   background:linear-gradient(to bottom,transparent 28%,
-  var(--pkground,var(--card)) 82%)}
+  var(--pkground,var(--card)) 82%);
+  background-size:100% var(--pkfade,100%);
+  background-position:bottom;background-repeat:no-repeat}
 /* the label needs a floor to sit on; a band shorter than this would clip it */
 .pklist.pk-on .pkmore{min-height:19px}
 /* the friends-page lists sit inside cards, home's list sits on the page —
@@ -5933,9 +5942,16 @@ function pkOn(el){
   // thinner shelf rows, leaves the top of the sixth name legible and fading
   // rather than gone. Still never taller than the sliver, which is what kept it
   // off the Copy and Open buttons of the clubs above.
-  el.style.setProperty('--pkband',
-    Math.min(Math.max(Math.round(cr.height / 4), 24),
-             Math.max(Math.round(cr.height / 2), 24)) + 'px');
+  // The target: never under 24px, so it stays pressable on the thin rows.
+  const band = Math.max(Math.round(cr.height / 4), 24);
+  el.style.setProperty('--pkband', band + 'px');
+  // The fade: a third of the row, and never taller than the button it sits in.
+  // Measured on the REAL friends list, which has 37px rows and a 17px name —
+  // not the 76px rows I first synthesised. With the fade tied to the 24px
+  // target only 14% of the sixth name was untinted there; at a third of the row
+  // it is over half, which is the difference between a name and a smudge.
+  el.style.setProperty('--pkfade',
+    Math.min(band, Math.max(10, Math.round(cr.height / 3))) + 'px');
   el.classList.add('pk-on');
   const more = el.querySelector('.pkmore'), less = el.querySelector('.pkless');
   if(!more || !less || more.dataset.wired) return;
@@ -12123,25 +12139,38 @@ function tourPaint(){
   // scrolls to its own anchor first and measures afterwards. The measurement
   // before this scroll is the one that must not be trusted when it reads zero —
   // see tourBox.
-  const raw = el ? tourRect(el) : null;
-  if(raw && el.scrollIntoView
-     && (raw.bottom < 60 || raw.top > innerHeight - 60)){
-    try{ el.scrollIntoView({block: 'center', inline: 'nearest'}); }catch(e){}
-  }
+  // ⚠ PAINT NEVER ADVANCES. This function is bound to scroll, so a paint that
+  // could call tourGo() meant scrolling past the anchor moved the tour on by
+  // itself — Nathan: "auto moves to the next step when you scroll down" — and
+  // it broke Back too, because going back re-painted and the paint immediately
+  // went forward again. Moving is tourGo's job and nothing else's.
   const box = el ? tourBox(el) : null;
-  if(!box){ tourGo(1); return; }       // it went away mid-tour: skip, silently
-  const set = (id, x, y, w, h)=>{
-    const v = $(id);
-    if(!v) return;
-    v.style.left = x + 'px'; v.style.top = y + 'px';
-    v.style.width = Math.max(0, w) + 'px'; v.style.height = Math.max(0, h) + 'px';
-  };
-  set('tv-t', 0, 0, innerWidth, box.y);
-  set('tv-b', 0, box.y + box.h, innerWidth, innerHeight - (box.y + box.h));
-  set('tv-l', 0, box.y, box.x, box.h);
-  set('tv-r', box.x + box.w, box.y, innerWidth - (box.x + box.w), box.h);
-  set('tring', box.x, box.y, box.w, box.h);
-
+  const ring = $('tring');
+  if(ring) ring.classList.toggle('hide', !box);
+  if(box){
+    const set = (id, x, y, w, h)=>{
+      const v = $(id);
+      if(!v) return;
+      v.style.left = x + 'px'; v.style.top = y + 'px';
+      v.style.width = Math.max(0, w) + 'px'; v.style.height = Math.max(0, h) + 'px';
+    };
+    set('tv-t', 0, 0, innerWidth, box.y);
+    set('tv-b', 0, box.y + box.h, innerWidth, innerHeight - (box.y + box.h));
+    set('tv-l', 0, box.y, box.x, box.h);
+    set('tv-r', box.x + box.w, box.y, innerWidth - (box.x + box.w), box.h);
+    set('tring', box.x, box.y, box.w, box.h);
+  }else{
+    // scrolled away from: dim the whole screen rather than cutting a hole in
+    // nothing, and leave the card where it is so the words stay readable
+    const set = (id, x, y, w, h)=>{
+      const v = $(id);
+      if(!v) return;
+      v.style.left = x + 'px'; v.style.top = y + 'px';
+      v.style.width = w + 'px'; v.style.height = h + 'px';
+    };
+    set('tv-t', 0, 0, innerWidth, innerHeight);
+    set('tv-b', 0, 0, 0, 0); set('tv-l', 0, 0, 0, 0); set('tv-r', 0, 0, 0, 0);
+  }
   const card = $('tcard');
   $('tcard-t').textContent = s.t;
   $('tcard-b').textContent = s.b;
@@ -12149,19 +12178,31 @@ function tourPaint(){
   // start. Counting the declared five while skipping two of them is how a tour
   // says "1 / 5" and then "3 / 5" at somebody.
   $('tcard-n').textContent = (tourAt + 1) + ' / ' + tourList.length;
-  $('tcard-go').textContent = tourAt === tourList.length - 1 ? 'Done' : 'Next';
+  const last = tourAt === tourList.length - 1;
+  $('tcard-go').textContent = last ? 'Done' : 'Next';
   const back = $('tcard-back');
   if(back) back.classList.toggle('hide', tourAt === 0);
+  // Nathan: "the leave tutorial and done buttons exist on the same step for no
+  // reason." Quite right — on the last step Done IS leaving, and two buttons
+  // that do the same thing make you work out whether they do.
+  const skip = $('tcard-skip');
+  if(skip) skip.classList.toggle('hide', last);
   // the sheet layout owns its own position under 560px; above it the card sits
   // below the anchor, or above it when that would fall off the bottom
   if(innerWidth > 560){
     const cw = card.offsetWidth || 360, ch = card.offsetHeight || 150;
-    let x = Math.min(Math.max(10, box.x), innerWidth - cw - 10);
-    let y = box.y + box.h + 12;
-    if(y + ch > innerHeight - 10) y = box.y - ch - 12;
-    // clamped last, unconditionally: both branches above can fall off an edge
-    // when the anchor is tall or the viewport is short, and a card whose
-    // buttons are off screen is the trap this thing must never be
+    let x, y;
+    if(box){
+      x = Math.min(Math.max(10, box.x), innerWidth - cw - 10);
+      y = box.y + box.h + 12;
+      if(y + ch > innerHeight - 10) y = box.y - ch - 12;
+    }else{
+      // nothing to sit beside — the anchor is scrolled away
+      x = Math.round((innerWidth - cw) / 2);
+      y = Math.round((innerHeight - ch) / 2);
+    }
+    // clamped last, unconditionally: a card whose buttons are off screen is the
+    // trap this thing must never be
     y = Math.max(10, Math.min(y, innerHeight - ch - 10));
     card.style.left = x + 'px';
     card.style.top = y + 'px';
@@ -12177,7 +12218,17 @@ function tourGo(dir){
   let i = tourAt + dir;
   while(i >= 0 && i < tourList.length){
     const el = tourList[i].el();
-    if(tourVisible(el) && tourRect(el)){ tourAt = i; tourPaint(); return; }
+    if(tourVisible(el) && tourRect(el)){
+      tourAt = i;
+      // scrolling to the anchor belongs HERE, on a deliberate move, not in
+      // paint — paint runs on every scroll event and would fight the reader
+      const r = tourRect(el);
+      if(r && el.scrollIntoView && (r.bottom < 60 || r.top > innerHeight - 60)){
+        try{ el.scrollIntoView({block: 'center', inline: 'nearest'}); }catch(e){}
+      }
+      tourPaint();
+      return;
+    }
     i += dir;
   }
   // forwards off the end is the end; backwards off the front stays put, because
@@ -12219,8 +12270,24 @@ function tourKey(e){
   else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
 }
 
-function tourStart(){
+// ⚠ The anchors have to EXIST before the usable steps are settled. tourStart
+// runs a moment after the header draws, and on a 250-row list the rows are not
+// in the DOM yet — so both row steps, and the club tile with them, were filtered
+// out before they had a chance to be there. Nathan: "secret wars now only shows
+// 2 tutorials". A snapshot is still right; taking it too early is not.
+function tourReady(){
+  // a list page has rows; if #list is not there at all this is not one and
+  // there is nothing to wait for
+  const list = $('list');
+  if(!list) return true;
+  return !!list.querySelector('li');
+}
+function tourStart(tries){
   if(tourOn) return;
+  if(!tourReady()){
+    const n = (tries || 0) + 1;
+    if(n <= 20){ setTimeout(()=> tourStart(n), 150); return; }
+  }
   // The usable steps are settled ONCE, here. A step is usable if its anchor is
   // rendered and can be measured — and tourBox is what knows that a single
   // zero-sized read means nothing.
