@@ -34,8 +34,19 @@ Sources, all machine-read, nothing typed in by hand:
     premiere and finale dates, networks), each season's own sentence saying
     what it adapts, and every episode block in all six seasons.
   * The Expanse (TV series) — the infobox's 6 seasons / 62 episodes / runtime
-    range, the Syfy cancellation and Amazon pickup dates, and the Dragon Tooth
-    comic continuation named in the not-here note.
+    range, the Syfy cancellation and Amazon pickup dates, the sentences giving
+    season four's and season five's release dates with the early-drop reports
+    each is cited to, and the Dragon Tooth comic continuation named in the
+    not-here note.
+
+The network changed at season four; the release pattern did not change with it.
+Season four is the only season that arrived in a single day, which is read off
+the air dates rather than assumed, and the build fails if a second one ever
+joins it. Seasons four and five both sit on dates the source cites to a report
+of Prime Video going out early, and season one sits on its cable premiere with
+an online episode three weeks ahead of it in a footnote — so this list follows
+the source's date every time and says out loud that it is doing so, for all
+three, rather than quietly reconciling any of them.
 
 The assertion that earns the list its one interesting note: each season's
 final episode is named for the novel it lands on, and the sixth of those names
@@ -68,23 +79,31 @@ RPG_SHORT = "The Last Flight of the Cassandra"
 # stands on. Every term is asserted against that season's own sentence on the
 # episode-list article before the note is written.
 ADAPTS = {
-    1: ("Adapts the first half of Leviathan Wakes",
-        ["first half", "Leviathan Wakes"]),
+    1: ("Roughly follows the first half of Leviathan Wakes",
+        ["roughly follows the events of the first half", "Leviathan Wakes"]),
     2: ("Finishes Leviathan Wakes and opens Caliban's War, and adapts the "
         "short story Drive",
         ["Leviathan Wakes", "Caliban's War", "Drive"]),
-    3: ("Finishes Caliban's War over six episodes, then Abaddon's Gate",
-        ["Caliban's War", "Abaddon's Gate", "episodes 1–6"]),
+    3: ("Finishes Caliban's War over six episodes, then material from "
+        "Abaddon's Gate",
+        ["Caliban's War", "uses material from Abaddon's Gate", "episodes 1–6"]),
     4: ("Almost all of Cibola Burn, with Gods of Risk behind episode 2",
-        ["Cibola Burn", "Gods of Risk", "episode 2"]),
-    5: ("Adapts Nemesis Games", ["Nemesis Games"]),
-    6: ("The last season — Babylon's Ashes, with the short story "
-        "Strange Dogs",
-        ["final season", "Babylon's Ashes", "Strange Dogs"]),
+        ["almost entirely adapted", "Cibola Burn", "Gods of Risk",
+         "episode 2"]),
+    5: ("Adapts material from Nemesis Games",
+        ["adapts material from Nemesis Games"]),
+    6: ("The last season — plotlines from Babylon's Ashes, with the short "
+        "story Strange Dogs",
+        ["final season", "focuses on plotlines from Babylon's Ashes",
+         "Strange Dogs"]),
 }
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
+
+# small counts the notes spell out; a count this does not cover is a count
+# whose note needs rereading, so a missing key failing the build is correct
+WORDS = {2: "two", 3: "three", 4: "four", 5: "five"}
 
 CELL = re.compile(r"^[|!]\s*(?:([^|\[{]*=[^|\[{]*)\|)?\s*(.*)$", re.S)
 
@@ -267,9 +286,19 @@ def seasons(eps, show, novels):
         for term in terms:
             assert term in sentence, \
                 "season %d sentence no longer says %r: %r" % (n, term, sentence)
+        # the shape of the release, read off the air dates rather than assumed:
+        # how many episodes landed on the premiere day, and whether the whole
+        # season did. A network change is not a release-pattern change, so the
+        # note that says so has to be able to prove which seasons did what.
+        days = sorted(set(airs))
         out.append({"no": n, "t": "The Expanse — Season %d" % n,
                     "date": first, "end": last, "episodes": count,
-                    "network": network, "kind": "season", "adapts": phrase})
+                    "network": network, "kind": "season", "adapts": phrase,
+                    "at_once": len(days) == 1, "day1": airs.count(first),
+                    "weekly": all(
+                        (datetime.date.fromisoformat(b)
+                         - datetime.date.fromisoformat(a)).days == 7
+                        for a, b in zip(days, days[1:]))})
 
     assert sum(s["episodes"] for s in out) == EPISODES, "episode total moved"
     for key, want in (("num_seasons", str(SEASONS)),
@@ -279,10 +308,44 @@ def seasons(eps, show, novels):
     runtime = re.search(r"\|\s*runtime\s*=\s*(.*)", show).group(1).strip()
     assert re.fullmatch(r"\d+–\d+ minutes", runtime), \
         "the show publishes %r, not a range — weight this list" % runtime
+    # a season with no end date in the overview is a season that arrived in
+    # one day, and the row note says so in those words
+    for s in out:
+        assert (s["end"] is None) == s["at_once"], \
+            "season %d: end date and release shape disagree" % s["no"]
+    assert [s["no"] for s in out if s["at_once"]] == [4], \
+        "season 4 is no longer the only one released in one go"
+    for n in (5, 6):
+        assert out[n - 1]["weekly"], "season %d is no longer weekly" % n
+    assert out[4]["day1"] == 3, \
+        "season 5 opened with %d episodes, not 3" % out[4]["day1"]
     assert "On May 11, 2018, Syfy canceled the series after three seasons" \
            in eps, "the cancellation sentence changed"
     assert "on May 26, [[Amazon Video]] announced that it would produce a " \
            "fourth season" in eps, "the Amazon pickup sentence changed"
+    # the two Amazon dates, and what the show article hangs each of them on
+    assert "picked up the series for a fourth season, which was released on " \
+           "December 12, 2019" in show, "the season 4 release sentence changed"
+    assert re.search(r"renewed ''The Expanse'' for a fifth season,.{0,600}?"
+                     r"which premiered on December 15, 2020", show, re.S), \
+        "the season 5 premiere sentence changed"
+    assert "season four a few hours early" in show, \
+        "the early-drop citation for season 4 is gone"
+    assert 'Prime Video Drops Season 5 of "The Expanse" Early' in show, \
+        "the early-drop citation for season 5 is gone"
+    assert "The first episode was released online on November 23, 2015" in eps, \
+        "the season 1 online-premiere footnote is gone"
+    # the note says the source never prints the date either season had been
+    # scheduled for. Cancellation and renewals is the paragraph where such a
+    # date would sit, so pin every date it gives: a new one means re-reading it.
+    i = show.index("===Cancellation and renewals===")
+    prose = re.sub(r"<ref[^>]*/?>(?:.*?</ref>)?", "",
+                   show[i:show.index("\n==", i + 5)], flags=re.S)
+    assert set(re.findall(r"(?:%s) \d{1,2}, \d{4}" % "|".join(MONTHS),
+                          prose)) == {
+        "December 10, 2021", "December 12, 2019", "December 15, 2020",
+        "November 24, 2020", "October 8, 2021"}, \
+        "Cancellation and renewals gives a date it did not before"
     assert len(re.findall(r"\{\{Episode list",
                           eps[eps.index("==Webisodes=="):])) == 5, \
         "the One Ship webisode count changed"
@@ -298,10 +361,10 @@ def row(r):
                                        "%d pages" % r["pages"])}
     if r["kind"] == "season":
         when = longdate(r["date"])
-        if r["end"]:
-            when = "%s to %s" % (when, longdate(r["end"]))
-        else:
+        if r["at_once"]:
             when = "%s, released all at once" % when
+        else:
+            when = "%s to %s" % (when, longdate(r["end"]))
         return {"id": "ex-tv%d" % r["no"], "t": r["t"],
                 "n": monthyear(r["date"]),
                 "note": prop.join_bits(
@@ -343,6 +406,14 @@ def main():
                   "set between Babylon's Ashes and Persepolis Rising"):
         assert claim in tooth, "the not-here note lost %r: %r" % (claim, tooth)
 
+    # the one fact the middle section has that no note already carries: the
+    # ninth novel beat the sixth season out by ten days
+    last_novel = novels[-1]
+    lead = (datetime.date.fromisoformat(tv[-1]["date"])
+            - datetime.date.fromisoformat(last_novel["date"])).days
+    assert lead == 10, "%s is %d days before season 6, not 10" \
+        % (last_novel["t"], lead)
+
     rows = sorted(novels + shorts + tv, key=lambda r: r["date"])
     dates = [r["date"] for r in rows]
     assert len(set(dates)) == len(dates), "two rows share a date — order them"
@@ -363,10 +434,9 @@ def main():
          "items": [row(r) for r in before], "open": True},
         {"id": "both", "title": "Both strands at once",
          "sub": "%s · %d entries" % (span(both), len(both)),
-         "intro": "From the December 2015 premiere the books and the show run "
-                  "side by side, and each row sits on the date it arrived — a "
-                  "season on the day it started, a book on the day it was "
-                  "published.",
+         "intro": "The last novel got there first: %s on %s, ten days before "
+                  "season six started."
+                  % (last_novel["t"], longdate(last_novel["date"])),
          "items": [row(r) for r in both]},
         {"id": "after", "title": "After the show",
          "sub": "%s · %d entry" % (span(after), len(after)),
@@ -418,10 +488,24 @@ def main():
              "work with no audiobook. All nine are optional, so the list is "
              "finished without them."],
             ["It changed channels halfway.",
-             "Syfy cancelled the show after three seasons on May 11, 2018, "
-             "and Amazon announced a fourth on May 26, so the rows change "
-             "network at season four and the release pattern changes with "
-             "it. Nothing about the order changes."],
+             "Syfy cancelled the show after three seasons on May 11, 2018, and "
+             "Amazon announced a fourth on May 26, so the rows change network "
+             "at season four. Only that season arrived in one day, all %d "
+             "episodes dated %s; five and six went out week by week, though "
+             "season five's first %s came together. Nothing about the order "
+             "changes." % (tv[3]["episodes"], longdate(tv[3]["date"]),
+                           WORDS[tv[4]["day1"]])],
+            ["Some of these dates are the day it actually appeared.",
+             "Season four's %s and season five's %s are the dates the source "
+             "prints, and it cites both to reports of Prime Video putting the "
+             "season out early — a few hours early, in season four's case. It "
+             "never prints the date either one had been scheduled for, so "
+             "neither does this list. Season one is the same shape from the "
+             "other end: it sits on the Syfy premiere, %s, with the source's "
+             "own footnote saying the first episode had gone online on "
+             "November 23."
+             % (longdate(tv[3]["date"]), longdate(tv[4]["date"]),
+                longdate(tv[0]["date"]))],
             ["Nothing is weighted, and this is what was checked.",
              "Rows count one apiece. The books publish pages and audiobook "
              "lengths, every one of them except the rulebook short story, and "

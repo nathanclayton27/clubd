@@ -33,7 +33,11 @@
     ],
     [
       "It changed channels halfway.",
-      "Syfy cancelled the show after three seasons on May 11, 2018, and Amazon announced a fourth on May 26, so the rows change network at season four and the release pattern changes with it. Nothing about the order changes."
+      "Syfy cancelled the show after three seasons on May 11, 2018, and Amazon announced a fourth on May 26, so the rows change network at season four. Only that season arrived in one day, all 10 episodes dated December 12, 2019; five and six went out week by week, though season five's first three came together. Nothing about the order changes."
+    ],
+    [
+      "Some of these dates are the day it actually appeared.",
+      "Season four's December 12, 2019 and season five's December 15, 2020 are the dates the source prints, and it cites both to reports of Prime Video putting the season out early — a few hours early, in season four's case. It never prints the date either one had been scheduled for, so neither does this list. Season one is the same shape from the other end: it sits on the Syfy premiere, December 14, 2015, with the source's own footnote saying the first episode had gone online on November 23."
     ],
     [
       "Nothing is weighted, and this is what was checked.",
@@ -124,13 +128,13 @@
       "id": "both",
       "title": "Both strands at once",
       "sub": "2015–2021 · 13 entries",
-      "intro": "From the December 2015 premiere the books and the show run side by side, and each row sits on the date it arrived — a season on the day it started, a book on the day it was published.",
+      "intro": "The last novel got there first: Leviathan Falls on November 30, 2021, ten days before season six started.",
       "items": [
         {
           "id": "ex-tv1",
           "t": "The Expanse — Season 1",
           "n": "December 2015",
-          "note": "10 episodes on Syfy · December 14, 2015 to February 2, 2016 · Adapts the first half of Leviathan Wakes"
+          "note": "10 episodes on Syfy · December 14, 2015 to February 2, 2016 · Roughly follows the first half of Leviathan Wakes"
         },
         {
           "id": "ex-n6-babylon-s-ashes",
@@ -161,7 +165,7 @@
           "id": "ex-tv3",
           "t": "The Expanse — Season 3",
           "n": "April 2018",
-          "note": "13 episodes on Syfy · April 11, 2018 to June 27, 2018 · Finishes Caliban's War over six episodes, then Abaddon's Gate"
+          "note": "13 episodes on Syfy · April 11, 2018 to June 27, 2018 · Finishes Caliban's War over six episodes, then material from Abaddon's Gate"
         },
         {
           "id": "ex-n8-tiamat-s-wrath",
@@ -193,7 +197,7 @@
           "id": "ex-tv5",
           "t": "The Expanse — Season 5",
           "n": "December 2020",
-          "note": "10 episodes on Amazon Prime Video · December 15, 2020 to February 2, 2021 · Adapts Nemesis Games"
+          "note": "10 episodes on Amazon Prime Video · December 15, 2020 to February 2, 2021 · Adapts material from Nemesis Games"
         },
         {
           "id": "ex-n9-leviathan-falls",
@@ -205,7 +209,7 @@
           "id": "ex-tv6",
           "t": "The Expanse — Season 6",
           "n": "December 2021",
-          "note": "6 episodes on Amazon Prime Video · December 10, 2021 to January 14, 2022 · The last season — Babylon's Ashes, with the short story Strange Dogs"
+          "note": "6 episodes on Amazon Prime Video · December 10, 2021 to January 14, 2022 · The last season — plotlines from Babylon's Ashes, with the short story Strange Dogs"
         }
       ]
     },
