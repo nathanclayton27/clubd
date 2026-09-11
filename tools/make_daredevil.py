@@ -66,14 +66,19 @@ NOTES = {
     ("v1", "158"): ("Miller's first issue on the book, as artist only.", 1),
     ("v1", "162"): ("A fill-in: Michael Fleisher and Steve Ditko.", 0),
     ("v1", "165"): ("His first co-writing credit.", 0),
+    ("v1", "167"): ("David Michelinie writes it, with Miller sharing the "
+                    "credit.", 0),
     ("v1", "168"): ("He takes the writing too, and brings Elektra with him.", 2),
     ("v1", "181"): ("", 2),
-    ("v1", "185"): ("Klaus Janson pencils as well as inks from here.", 0),
-    ("v1", "191"): ("The last issue of the first stint.", 1),
-    ("v1", "219"): ("A one-off, written two years after he left.", 0),
+    ("v1", "185"): ("Klaus Janson pencils as well as inks, through #190.",
+                    0),
+    ("v1", "191"): ("Miller back on pencils, and the last issue of the "
+                    "first stint.", 1),
+    ("v1", "219"): ("A one-off drawn by John Buscema, written two years "
+                    "after he left.", 0),
     ("v1", "226"): ("Co-plotted with Denny O'Neil — the handover issue.", 0),
     ("v1", "227"): ("Born Again begins, with David Mazzucchelli.", 2),
-    ("v1", "233"): ("Miller's last issue on Daredevil.", 1),
+    ("v1", "233"): ("His last issue of the 1964 series.", 1),
     ("mwf", "1"): ("Miller and John Romita Jr. on the origin.", 1),
     ("v2", "1"): ("Kevin Smith and Joe Quesada relaunch the book under "
                   "Marvel Knights.", 1),
@@ -236,23 +241,35 @@ def build():
     # #162 is a one-issue fill-in by other hands sitting inside the stretch
     assert fetch("v1", "162")["penciler"] == "Steve Ditko"
     assert "Frank Miller" in fetch("v1", "165")["lead"]
+    assert "Frank Miller" in fetch("v1", "166")["lead"]
+    # #167 is David Michelinie's script with Miller sharing the credit, so
+    # "over Roger McKenzie's scripts" is true of most of the stretch, not all.
+    assert fetch("v1", "167")["lead"] == ["David Michelinie"],         "#167 is no longer led by Michelinie"
+    assert "Frank Miller" in fetch("v1", "167")["writers"]
     miller = writer_run("v1", 168, 191, "Frank Miller")
     not_written_by("v1", 192, 218, "Frank Miller")
     assert "Elektra" in fetch("v1", "168")["titles"], \
         "#168 is no longer the issue titled Elektra"
     for n in nums("v1", 168, 184):
         penciler("v1", n, "Frank Miller")
-    for n in nums("v1", 185, 190):
+    janson = nums("v1", 185, 190)
+    for n in janson:
         penciler("v1", n, "Klaus Janson")
+    assert len(janson) == 6, "the Janson pencils are no longer six issues"
+    # and Miller takes the pencils back for the last one, which is why the
+    # note on #185 stops at #190 instead of saying "from here".
+    penciler("v1", 191, "Frank Miller")
 
     # ---- Miller, second stint ------------------------------------------
     badlands = [item("v1", "219")]
     assert "Frank Miller" in fetch("v1", "219")["lead"]
+    penciler("v1", 219, "John Buscema")
     handover = writer_run("v1", 226, 226, "Frank Miller")
     born = writer_run("v1", 227, 233, "Frank Miller")
     for n in nums("v1", 227, 233):
         assert any(a.startswith("Born Again") for a in fetch("v1", n)["arcs"]), \
             "#%s is not filed under Born Again" % n
+    assert len(born) == 7, "Born Again is no longer seven issues"
     not_written_by("v1", 234, 240, "Frank Miller")
     for n in nums("v1", 226, 233):
         penciler("v1", n, "David Mazzucchelli")
@@ -260,6 +277,9 @@ def build():
     mwf = writer_run("mwf", 1, 5, "Frank Miller")
     for n in nums("mwf", 1, 5):
         penciler("mwf", n, "John Romita Jr.")
+    # Miller writes five more Daredevil issues seven years after #233, which
+    # is why that row says "of the 1964 series" rather than "on Daredevil".
+    assert onsale(mwf[0]) > onsale(item("v1", "233")),         "The Man Without Fear no longer ships after #233"
 
     # ---- the 1998 relaunch Bendis walks into ---------------------------
     # The wiki files the whole of vol 2 #1-81 under the Marvel Knights
@@ -311,6 +331,8 @@ def build():
     assert {fetch("v3", 1)["penciler"],
             fetch("v3", 2)["penciler"]} == {"Marcos Martin", "Paolo Rivera"}
     penciler("v3", 12, "Chris Samnee")
+    pencils3 = [fetch("v3", n)["penciler"] for n in nums("v3", 12, 36)]
+    assert pencils3.count("Chris Samnee") > len(pencils3) / 2,         "Samnee is no longer the regular artist from #12 on"
     for n in nums("v3", 1, 11):
         assert fetch("v3", n)["penciler"] != "Chris Samnee", \
             "#%s already has Samnee on pencils" % n
@@ -321,8 +343,12 @@ def build():
         "the Road Warrior prelude is no longer four parts"
     assert len(fetch("v4", "1.50")["writers"]) == 3, \
         "the anniversary special is no longer three stories"
-    waid4 = [item("v4", "0.1")] + writer_run("v4", 1, 18, "Mark Waid",
-                                             whole=False)
+    # #0.1 shipped in July 2014, months after the #1 it preludes, so it sits
+    # on its own on-sale date like every other row rather than at the head of
+    # the section. The list is publication order and now has no exceptions.
+    waid4 = sorted([item("v4", "0.1")]
+                   + writer_run("v4", 1, 18, "Mark Waid", whole=False),
+                   key=onsale)
     penciler("v4", 1, "Chris Samnee")
 
     # ---- Soule, between Waid and Zdarsky --------------------------------
@@ -351,25 +377,27 @@ def build():
          "open": True,
          "links": links("v1"),
          "intro": "Frank Miller's first stretch on Daredevil is as the artist "
-                  "only, over Roger McKenzie's scripts. He picks up a shared "
-                  "writing credit near the end of it and the book outright "
-                  "straight after. Skippable, but this is where the look "
-                  "starts.",
+                  "only, mostly over Roger McKenzie's scripts — two of the ten "
+                  "are written by other hands, and both rows say so. He picks "
+                  "up a shared writing credit near the end of it and the book "
+                  "outright straight after. Skippable, but this is where the "
+                  "look starts.",
          "items": arrival},
         {"id": "miller", "tier": 1, "title": "Miller & Janson",
          "sub": "#168–191 · 1981–1983",
          "links": links("v1"),
          "intro": "The run everything after it is measured against. Miller "
-                  "writes and draws until Klaus Janson takes over the pencils "
-                  "as well as the inks, and the book turns from a superhero "
-                  "comic into a crime one.",
+                  "writes all of it and draws most of it, handing the pencils "
+                  "to his inker Klaus Janson for six issues near the end, and "
+                  "the book turns from a superhero comic into a crime one.",
          "items": miller},
         {"id": "bornagain", "tier": 1, "title": "Badlands and Born Again",
          "sub": "1985–1986 · the second stint, with Mazzucchelli",
          "links": links("v1"),
-         "intro": "Miller comes back twice: once for a single issue, then for "
-                  "the eight-part story that most people mean when they say "
-                  "his Daredevil. David Mazzucchelli draws all of it.",
+         "intro": "Miller comes back twice: once for a single issue drawn by "
+                  "John Buscema, then for the seven-issue story that most "
+                  "people mean when they say his Daredevil. David "
+                  "Mazzucchelli draws that one, from the handover issue on.",
          "items": badlands + handover + born},
         {"id": "mwf", "tier": 2, "title": "The Man Without Fear",
          "sub": "1993–1994 · the origin, written last",
@@ -393,7 +421,7 @@ def build():
                   "costume. It stands alone and it is the on-ramp.",
          "items": wakeup},
         {"id": "bendis", "tier": 1, "title": "Bendis & Maleev",
-         "sub": "#26–81 · 2001–2006",
+         "sub": "#20–81 · 2001–2006",
          "links": links("v2"),
          "intro": "The longest single Daredevil run there is, and the one that "
                   "set the tone for everything since: procedural, claustrophobic "
@@ -422,7 +450,8 @@ def build():
          "links": links("v3"),
          "intro": "Mark Waid restarts at #1 and takes the book back into "
                   "daylight: bright, buoyant, and drawn by Paolo Rivera and "
-                  "Marcos Martin before Chris Samnee settles in for the rest.",
+                  "Marcos Martin before Chris Samnee settles in as the "
+                  "regular artist.",
          "items": waid3},
         {"id": "waid4", "tier": 1, "title": "Waid & Samnee in San Francisco",
          "sub": "2014–2015 · same creators, new coast",
@@ -471,14 +500,21 @@ def main():
             assert not x.get("w") and "w" not in x, \
                 "comics lists are unweighted (CLU-131): %s" % x["id"]
 
+    # A section whose sub names an issue range has to name the rows it holds:
+    # the Bendis sub read "#26-81" over rows that start at #20.
+    for sec in sections:
+        head = sec["sub"].split(" ")[0]
+        if head.startswith("#"):
+            lo, hi = head[1:].split("–")
+            assert (sec["items"][0]["n"], sec["items"][-1]["n"]) ==                 ("#" + lo, "#" + hi),                 "%s runs %s-%s, not %s" % (sec["id"], sec["items"][0]["n"],
+                                           sec["items"][-1]["n"], head)
+
     # The list claims publication order, so prove it: every section's rows run
     # forwards on their on-sale dates, and each section starts no earlier than
-    # the one above it ends. The only rows exempt are the two optional
-    # reprints, which collect material published before the issue that
-    # reprints them.
+    # the one above it ends. Every row is checked — there is no exemption.
     last = None
     for s in sections:
-        dates = [onsale(x) for x in s["items"] if x["id"] != "dd4-0-1"]
+        dates = [onsale(x) for x in s["items"]]
         assert dates == sorted(dates), "%s is out of publication order" % s["id"]
         assert last is None or dates[0] >= last, \
             "%s starts before the section above it ends" % s["id"]
@@ -510,10 +546,11 @@ def main():
             ["Tiers, barely.",
              "Tier 1 is the five runs, and it is most of the list, which is "
              "the point: they hand over to each other with nothing missing in "
-             "between. Tier 2 is the three lead-ins that explain how a run "
-             "opens. Tier 3 is the two stretches by other writers that sit "
-             "between runs — good comics, skippable here. The minimum viable "
-             "path is Tier 1 alone."],
+             "between. Tier 2 is three shorter stretches around them — the "
+             "two lead-ins that explain how a run opens, and Miller's origin "
+             "miniseries. Tier 3 is the two stretches by other writers that "
+             "sit between runs — good comics, skippable here. The minimum "
+             "viable path is Tier 1 alone."],
             ["Which Daredevil is this.",
              "The book has relaunched at #1 six times, so every row names its "
              "series by launch year — Daredevil (1964), (1998), (2011), "

@@ -25,7 +25,7 @@
     ],
     [
       "Tiers, barely.",
-      "Tier 1 is the five runs, and it is most of the list, which is the point: they hand over to each other with nothing missing in between. Tier 2 is the three lead-ins that explain how a run opens. Tier 3 is the two stretches by other writers that sit between runs — good comics, skippable here. The minimum viable path is Tier 1 alone."
+      "Tier 1 is the five runs, and it is most of the list, which is the point: they hand over to each other with nothing missing in between. Tier 2 is three shorter stretches around them — the two lead-ins that explain how a run opens, and Miller's origin miniseries. Tier 3 is the two stretches by other writers that sit between runs — good comics, skippable here. The minimum viable path is Tier 1 alone."
     ],
     [
       "Which Daredevil is this.",
@@ -54,7 +54,7 @@
           "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1"
         }
       ],
-      "intro": "Frank Miller's first stretch on Daredevil is as the artist only, over Roger McKenzie's scripts. He picks up a shared writing credit near the end of it and the book outright straight after. Skippable, but this is where the look starts.",
+      "intro": "Frank Miller's first stretch on Daredevil is as the artist only, mostly over Roger McKenzie's scripts — two of the ten are written by other hands, and both rows say so. He picks up a shared writing credit near the end of it and the book outright straight after. Skippable, but this is where the look starts.",
       "items": [
         {
           "id": "dd1-158",
@@ -141,7 +141,7 @@
           "id": "dd1-167",
           "t": "Daredevil (1964)",
           "n": "#167",
-          "note": "",
+          "note": "David Michelinie writes it, with Miller sharing the credit.",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -159,7 +159,7 @@
           "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1"
         }
       ],
-      "intro": "The run everything after it is measured against. Miller writes and draws until Klaus Janson takes over the pencils as well as the inks, and the book turns from a superhero comic into a crime one.",
+      "intro": "The run everything after it is measured against. Miller writes all of it and draws most of it, handing the pencils to his inker Klaus Janson for six issues near the end, and the book turns from a superhero comic into a crime one.",
       "items": [
         {
           "id": "dd1-168",
@@ -318,7 +318,7 @@
           "id": "dd1-185",
           "t": "Daredevil (1964)",
           "n": "#185",
-          "note": "Klaus Janson pencils as well as inks from here.",
+          "note": "Klaus Janson pencils as well as inks, through #190.",
           "star": 0,
           "opt": 0,
           "url": ""
@@ -372,7 +372,7 @@
           "id": "dd1-191",
           "t": "Daredevil (1964)",
           "n": "#191",
-          "note": "The last issue of the first stint.",
+          "note": "Miller back on pencils, and the last issue of the first stint.",
           "star": 1,
           "opt": 0,
           "url": ""
@@ -390,13 +390,13 @@
           "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_1"
         }
       ],
-      "intro": "Miller comes back twice: once for a single issue, then for the eight-part story that most people mean when they say his Daredevil. David Mazzucchelli draws all of it.",
+      "intro": "Miller comes back twice: once for a single issue drawn by John Buscema, then for the seven-issue story that most people mean when they say his Daredevil. David Mazzucchelli draws that one, from the handover issue on.",
       "items": [
         {
           "id": "dd1-219",
           "t": "Daredevil (1964)",
           "n": "#219",
-          "note": "A one-off, written two years after he left.",
+          "note": "A one-off drawn by John Buscema, written two years after he left.",
           "star": 0,
           "opt": 1,
           "url": ""
@@ -468,7 +468,7 @@
           "id": "dd1-233",
           "t": "Daredevil (1964)",
           "n": "#233",
-          "note": "Miller's last issue on Daredevil.",
+          "note": "His last issue of the 1964 series.",
           "star": 1,
           "opt": 0,
           "url": ""
@@ -740,7 +740,7 @@
       "id": "bendis",
       "tier": 1,
       "title": "Bendis & Maleev",
-      "sub": "#26–81 · 2001–2006",
+      "sub": "#20–81 · 2001–2006",
       "links": [
         {
           "label": "Daredevil (1998)",
@@ -1898,7 +1898,7 @@
           "url": "https://marvel.fandom.com/wiki/Daredevil_Vol_3"
         }
       ],
-      "intro": "Mark Waid restarts at #1 and takes the book back into daylight: bright, buoyant, and drawn by Paolo Rivera and Marcos Martin before Chris Samnee settles in for the rest.",
+      "intro": "Mark Waid restarts at #1 and takes the book back into daylight: bright, buoyant, and drawn by Paolo Rivera and Marcos Martin before Chris Samnee settles in as the regular artist.",
       "items": [
         {
           "id": "dd3-1",
@@ -2249,15 +2249,6 @@
       "intro": "The same run, renumbered and relocated. Read it straight on from the section above.",
       "items": [
         {
-          "id": "dd4-0-1",
-          "t": "Daredevil (2014)",
-          "n": "#0.1",
-          "note": "Reprints the four-part Road Warrior digital prelude.",
-          "star": 0,
-          "opt": 1,
-          "url": ""
-        },
-        {
           "id": "dd4-1",
           "t": "Daredevil (2014)",
           "n": "#1",
@@ -2300,6 +2291,15 @@
           "note": "",
           "star": 0,
           "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "dd4-0-1",
+          "t": "Daredevil (2014)",
+          "n": "#0.1",
+          "note": "Reprints the four-part Road Warrior digital prelude.",
+          "star": 0,
+          "opt": 1,
           "url": ""
         },
         {
