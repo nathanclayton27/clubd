@@ -11,12 +11,14 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-218 lists, from a ten-episode anime to a 1,418-row film collection, a
+219 lists, from a ten-episode anime to a 1,418-row film collection, a
 971-entry comics run, and 659 episodes of Dragon Ball.
 
 **Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
 Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
-War* (the 2006 event interleaved), *Spider-Man After Civil War*, *Ultimate
+War* (the 2006 event interleaved), *Spider-Man After Civil War*, *The Death
+and Return of Superman* (48 issues of the 1992–93 crossover in the weekly
+order four books published it, with both of its ragged edges labelled), *Ultimate
 Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
 (Hickman's Marvel run), *Venom* (Cates and Stegman), *One Piece* in
 manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
@@ -425,6 +427,11 @@ follows the order Hickman specified for the omnibus.
 
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.
+
+The Death and Return of Superman order read from DC Database's storyline page
+and the contents of four collected editions on the same wiki, with a cover
+date verified for every issue; the prologue and the placement of Superman #83
+from Wikipedia.
 
 Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils

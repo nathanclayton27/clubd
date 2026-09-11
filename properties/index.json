@@ -2736,6 +2736,26 @@
     "random": true
   },
   {
+    "slug": "death-of-superman",
+    "media": [
+      "comics"
+    ],
+    "title": "The Death and Return of Superman",
+    "subtitle": "the 1992–93 crossover · post-Crisis",
+    "kind": "comics",
+    "year": "1992–1993",
+    "popularity": 63,
+    "blurb": "48 issues across four weekly Superman books, in the order they were published to be read.",
+    "accent": "#0B3C91",
+    "accentDark": "#6FA8F5",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 48
+  },
+  {
     "slug": "golden-girls",
     "media": [
       "tv"
