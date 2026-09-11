@@ -1,0 +1,359 @@
+{
+  "_source": {
+    "order": "https://dc.fandom.com/wiki/Death_and_Return_of_Superman",
+    "collections": [
+      "https://dc.fandom.com/wiki/The_Death_of_Superman_(Collected)",
+      "https://dc.fandom.com/wiki/Superman:_Funeral_for_a_Friend_(Collected)",
+      "https://dc.fandom.com/wiki/Superman:_Reign_of_the_Supermen_(Collected)",
+      "https://dc.fandom.com/wiki/The_Return_of_Superman_(Collected)"
+    ],
+    "issues": "https://dc.fandom.com/wiki/ — one page per issue, read for its cover month and year",
+    "prologue": "https://en.wikipedia.org/wiki/The_Death_of_Superman"
+  },
+  "arcs": {
+    "Doomsday!": [
+      "Superman: The Man of Steel Vol 1 18",
+      "Justice League America Vol 1 69",
+      "Superman Vol 2 74",
+      "Adventures of Superman Vol 1 497",
+      "Action Comics Vol 1 684",
+      "Superman: The Man of Steel Vol 1 19",
+      "Superman Vol 2 75"
+    ],
+    "Funeral for a Friend": [
+      "Adventures of Superman Vol 1 498",
+      "Justice League America Vol 1 70",
+      "Action Comics Vol 1 685",
+      "Superman: The Man of Steel Vol 1 20",
+      "Superman Vol 2 76",
+      "Adventures of Superman Vol 1 499",
+      "Action Comics Vol 1 686",
+      "Superman: The Man of Steel Vol 1 21",
+      "Superman Vol 2 77",
+      "Adventures of Superman Vol 1 500"
+    ],
+    "Reign of the Supermen!": [
+      "Action Comics Vol 1 687",
+      "Superman: The Man of Steel Vol 1 22",
+      "Superman Vol 2 78",
+      "Adventures of Superman Vol 1 501",
+      "Action Comics Vol 1 688",
+      "Superman: The Man of Steel Vol 1 23",
+      "Superman Vol 2 79",
+      "Adventures of Superman Vol 1 502",
+      "Action Comics Vol 1 689",
+      "Superman: The Man of Steel Vol 1 24",
+      "Superman Vol 2 80",
+      "Adventures of Superman Vol 1 503",
+      "Action Comics Vol 1 690",
+      "Superman: The Man of Steel Vol 1 25",
+      "Superman Vol 2 81",
+      "Adventures of Superman Vol 1 504",
+      "Action Comics Vol 1 691",
+      "Superman: The Man of Steel Vol 1 26",
+      "Green Lantern Vol 3 46",
+      "Superman Vol 2 82",
+      "Adventures of Superman Vol 1 505"
+    ]
+  },
+  "collections": {
+    "The Death of Superman (Collected)": [
+      "Superman: The Man of Steel Vol 1 18",
+      "Justice League America Vol 1 69",
+      "Superman Vol 2 74",
+      "Adventures of Superman Vol 1 497",
+      "Action Comics Vol 1 684",
+      "Superman: The Man of Steel Vol 1 19",
+      "Superman Vol 2 75",
+      "Newstime: The Life and Death of the Man of Steel Vol 1 1"
+    ],
+    "Superman: Funeral for a Friend (Collected)": [
+      "Adventures of Superman Vol 1 498",
+      "Justice League America Vol 1 70",
+      "Action Comics Vol 1 685",
+      "Superman: The Man of Steel Vol 1 20",
+      "Superman Vol 2 76",
+      "Adventures of Superman Vol 1 499",
+      "Action Comics Vol 1 686",
+      "Superman: The Legacy of Superman Vol 1 1",
+      "Superman: The Man of Steel Vol 1 21",
+      "Superman Vol 2 77",
+      "Supergirl and Team Luthor Vol 1 1",
+      "Adventures of Superman Vol 1 500"
+    ],
+    "Superman: Reign of the Supermen (Collected)": [
+      "Adventures of Superman Vol 1 500",
+      "Action Comics Vol 1 687",
+      "Superman: The Man of Steel Vol 1 22",
+      "Superman Vol 2 78",
+      "Adventures of Superman Vol 1 501",
+      "Superman: The Man of Steel Annual Vol 1 2",
+      "Action Comics Vol 1 688",
+      "Superman: The Man of Steel Vol 1 23",
+      "Superman Vol 2 79",
+      "Superman Annual Vol 2 5",
+      "Adventures of Superman Vol 1 502"
+    ],
+    "The Return of Superman (Collected)": [
+      "Action Comics Vol 1 689",
+      "Superman: The Man of Steel Vol 1 24",
+      "Action Comics Annual Vol 1 5",
+      "Superman Vol 2 80",
+      "Adventures of Superman Vol 1 503",
+      "Action Comics Vol 1 690",
+      "Superman: The Man of Steel Vol 1 25",
+      "Superman Vol 2 81",
+      "Adventures of Superman Vol 1 504",
+      "Action Comics Vol 1 691",
+      "Adventures of Superman Annual Vol 1 5",
+      "Superman: The Man of Steel Vol 1 26",
+      "Green Lantern Vol 3 46",
+      "Superman Vol 2 82",
+      "Adventures of Superman Vol 1 505",
+      "Action Comics Vol 1 692",
+      "Superman Vol 2 83"
+    ]
+  },
+  "issues": {
+    "Superman: The Man of Steel Vol 1 17": {
+      "month": "November",
+      "year": "1992",
+      "storytitle": "Here Be Monsters"
+    },
+    "Superman: The Man of Steel Vol 1 18": {
+      "month": "December",
+      "year": "1992",
+      "storytitle": "Doomsday! Part One"
+    },
+    "Superman: The Man of Steel Vol 1 19": {
+      "month": "January",
+      "year": "1993",
+      "storytitle": "Doomsday Is Here!"
+    },
+    "Superman: The Man of Steel Vol 1 20": {
+      "month": "February",
+      "year": "1993",
+      "storytitle": "Funeral Day"
+    },
+    "Superman: The Man of Steel Vol 1 21": {
+      "month": "March",
+      "year": "1993",
+      "storytitle": "Ghosts"
+    },
+    "Superman: The Man of Steel Vol 1 22": {
+      "month": "June",
+      "year": "1993",
+      "storytitle": "Steel"
+    },
+    "Superman: The Man of Steel Vol 1 23": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "Ambush!"
+    },
+    "Superman: The Man of Steel Vol 1 24": {
+      "month": "August",
+      "year": "1993",
+      "storytitle": "Impact!"
+    },
+    "Superman: The Man of Steel Vol 1 25": {
+      "month": "September",
+      "year": "1993",
+      "storytitle": "The Return!"
+    },
+    "Superman: The Man of Steel Vol 1 26": {
+      "month": "October",
+      "year": "1993",
+      "storytitle": "Blast Off!"
+    },
+    "Justice League America Vol 1 69": {
+      "month": "December",
+      "year": "1992",
+      "storytitle": "Down for the Count"
+    },
+    "Justice League America Vol 1 70": {
+      "month": "January",
+      "year": "1993",
+      "storytitle": "Grieving"
+    },
+    "Superman Vol 2 74": {
+      "month": "December",
+      "year": "1992",
+      "storytitle": "Countdown To Doomsday!"
+    },
+    "Superman Vol 2 75": {
+      "month": "January",
+      "year": "1993",
+      "storytitle": "Doomsday!"
+    },
+    "Superman Vol 2 76": {
+      "month": "February",
+      "year": "1993",
+      "storytitle": "Metropolis Mailbag II"
+    },
+    "Superman Vol 2 77": {
+      "month": "March",
+      "year": "1993",
+      "storytitle": "The End"
+    },
+    "Superman Vol 2 78": {
+      "month": "June",
+      "year": "1993",
+      "storytitle": "Alive"
+    },
+    "Superman Vol 2 79": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "Prove it."
+    },
+    "Superman Vol 2 80": {
+      "month": "August",
+      "year": "1993",
+      "storytitle": "Deadly Alliance"
+    },
+    "Superman Vol 2 81": {
+      "month": "September",
+      "year": "1993",
+      "storytitle": "Resurrections"
+    },
+    "Superman Vol 2 82": {
+      "month": "October",
+      "year": "1993",
+      "storytitle": "Back for Good!"
+    },
+    "Superman Vol 2 83": {
+      "month": "November",
+      "year": "1993",
+      "storytitle": "On the Edge"
+    },
+    "Adventures of Superman Vol 1 497": {
+      "month": "December",
+      "year": "1992",
+      "storytitle": "Under Fire"
+    },
+    "Adventures of Superman Vol 1 498": {
+      "month": "January",
+      "year": "1993",
+      "storytitle": "Death of a Legend"
+    },
+    "Adventures of Superman Vol 1 499": {
+      "month": "February",
+      "year": "1993",
+      "storytitle": "Grave Obsession"
+    },
+    "Adventures of Superman Vol 1 500": {
+      "month": "June",
+      "year": "1993",
+      "storytitle": "Life After Death!"
+    },
+    "Adventures of Superman Vol 1 501": {
+      "month": "June",
+      "year": "1993",
+      "storytitle": "The Adventures of Superman... When He Was a Boy!"
+    },
+    "Adventures of Superman Vol 1 502": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "Boy Meets Girl"
+    },
+    "Adventures of Superman Vol 1 503": {
+      "month": "August",
+      "year": "1993",
+      "storytitle": "Line of Fire!"
+    },
+    "Adventures of Superman Vol 1 504": {
+      "month": "September",
+      "year": "1993",
+      "storytitle": "\"Assault on Engine City!\""
+    },
+    "Adventures of Superman Vol 1 505": {
+      "month": "October",
+      "year": "1993",
+      "storytitle": "Reign of the Superman!"
+    },
+    "Action Comics Vol 1 684": {
+      "month": "December",
+      "year": "1992",
+      "storytitle": "... Doomsday is Near!"
+    },
+    "Action Comics Vol 1 685": {
+      "month": "January",
+      "year": "1993",
+      "storytitle": "Re:Actions"
+    },
+    "Action Comics Vol 1 686": {
+      "month": "February",
+      "year": "1993",
+      "storytitle": "Who's Buried In Superman's Tomb?"
+    },
+    "Action Comics Vol 1 687": {
+      "month": "June",
+      "year": "1993",
+      "storytitle": "Born Again"
+    },
+    "Action Comics Vol 1 688": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "An Eye for an Eye"
+    },
+    "Action Comics Vol 1 689": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "Who is the Hero True?"
+    },
+    "Action Comics Vol 1 690": {
+      "month": "August",
+      "year": "1993",
+      "storytitle": "Lies & Revelations"
+    },
+    "Action Comics Vol 1 691": {
+      "month": "September",
+      "year": "1993",
+      "storytitle": "Secret Weapon"
+    },
+    "Action Comics Vol 1 692": {
+      "month": "October",
+      "year": "1993",
+      "storytitle": "And Who, Disguised as Clark Kent?"
+    },
+    "Green Lantern Vol 3 46": {
+      "month": "October",
+      "year": "1993",
+      "storytitle": "Death City"
+    },
+    "Superman: The Legacy of Superman Vol 1 1": {
+      "month": "March",
+      "year": "1993",
+      "storytitle": "The Guardians of Metropolis!"
+    },
+    "Supergirl and Team Luthor Vol 1 1": {
+      "month": "April",
+      "year": "1993",
+      "storytitle": "\" -- The Future of Metropolis!\""
+    },
+    "Superman: The Man of Steel Annual Vol 1 2": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "\"Cutting Edge!\""
+    },
+    "Superman Annual Vol 2 5": {
+      "month": "July",
+      "year": "1993",
+      "storytitle": "\"Myriad\""
+    },
+    "Action Comics Annual Vol 1 5": {
+      "month": "September",
+      "year": "1993",
+      "storytitle": "\"Loose Cannon\""
+    },
+    "Adventures of Superman Annual Vol 1 5": {
+      "month": "October",
+      "year": "1993",
+      "storytitle": "\"Blood Relations!\""
+    },
+    "Newstime: The Life and Death of the Man of Steel Vol 1 1": {
+      "month": "May",
+      "year": "1993",
+      "storytitle": "Newstime: The Life and Death of the Man of Steel"
+    }
+  }
+}
