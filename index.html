@@ -124,7 +124,7 @@ h1 em{font-style:normal;color:var(--signal)}
    such a mark draws as a full signal bar that the list's own count still does
    not include, which is the truth rather than a finish nobody recorded. */
 .tick.part{height:100%;background:linear-gradient(to right,
-  var(--signal) 0, var(--signal) var(--p,0%),
+  var(--pc,var(--signal)) 0, var(--pc,var(--signal)) var(--p,0%),
   var(--rule) var(--p,0%), var(--rule) 100%)}
 .tick.sep{background:transparent;flex:0 0 3px}
 /* Weighted properties size each mark by how long the thing takes. A four
@@ -6794,7 +6794,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '8a1db9e3b147';
+const BUILD = '16cc08fbaae7';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7695,6 +7695,9 @@ function ensureIndex(){
     // first paint ran before this fetch resolved and drew them empty
     try{ paintDrill(); }catch(e){}
     try{ paintDoorFills(); }catch(e){}
+    // the stack draws its door fills inline rather than painting them on
+    // afterwards, so it needs the whole repaint once the roll map lands
+    try{ if(drawingPeople()) paintStack(); }catch(e){}
     return d;
   }).catch(()=>{ GWIXP = null; return null; });
   return GWIXP;
@@ -11571,6 +11574,8 @@ function paintStack(){
     let layers = '';
     list.forEach((m,i)=>{
       const color = 'var(--m'+(m.ci+1)+')';
+      // the same test readsOf() uses to decide whose set it is reading
+      const mine = !!(user && m.id === user.id);
       let ticks = '', lead = true;
       for(let idx=a; idx<b; idx++){
         if(!visibleAt(idx)) continue;
@@ -11594,10 +11599,22 @@ function paintStack(){
             }
           }
         }
+        // CLU-508, Nathan: "make sure it works on compares too if possible".
+        // YOUR band only, and that is a limit rather than a shortcut: a door's
+        // fraction comes from the target list's own stored ticks, and this
+        // device holds only yours. Another member's progress inside a
+        // filmography they opened on their own machine is not here, and drawing
+        // their door from anything else would be an invented number about
+        // somebody else. A veiled mark is left alone — it is transparent by the
+        // rule that stops a grey nub punching through a deeper reader's band,
+        // and a gradient there would punch exactly that hole.
+        const pf = (mine && !on && !veil) ? (doorFrac(ORDER[idx]) || 0) : 0;
         const cls = 'tick'+(TIERED&&TIEROF[idx]===1?' t1':'')+(on?' on':'')
-                  + (full?' full':'')+(veil?' veil':'')+(drop?' dropfill':'');
+                  + (full?' full':'')+(veil?' veil':'')+(drop?' dropfill':'')
+                  + (pf > 0 ? ' part' : '');
         const sty = (WEIGHTED ? '--w:'+WEIGHT[idx]+';' : '')
                   + (drop ? '--dropH:'+drop+'px;' : '')
+                  + (pf > 0 ? '--p:'+(pf*100).toFixed(1)+'%;--pc:'+color+';' : '')
                   + (on ? 'background:'+color : '');
         ticks += '<span class="'+cls+'" data-i="'+idx+'"'
               + (sty?' style="'+sty+'"':'')+'></span>';
