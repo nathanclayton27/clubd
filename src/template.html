@@ -2033,7 +2033,13 @@ function fwActive(){
   let v = '';
   try{ v = localStorage.getItem('gw:fwon:' + SLUG) || ''; }catch(e){ return ''; }
   if(v === '1') return 'fw';
-  return /^fw\d*$/.test(v) ? v : '';
+  if(!/^fw\d*$/.test(v)) return '';
+  // A run this device deleted is not a run this device is IN. fwBack() clears
+  // this flag on the way out, but that write can be refused — private mode, a
+  // full quota — and the page would then sit inside a deleted run that adopt()
+  // would refill from the cloud on the next sign-in, which is the resurrection
+  // by another door.
+  return fwBuriedFor(SLUG, v) ? '' : v;
 }
 const FW = fwActive();
 const CKEY = SLUG ? SLUG + (FW ? '#' + FW : '') : SLUG;
@@ -2080,12 +2086,86 @@ function fwWriteFor(slug, list){
 }
 function fwKnowFor(slug, key){
   if(!slug || !/^fw\d*$/.test(key)) return;
+  // Deleted here stays deleted here. This one line is what stops fwSeen — and
+  // therefore both whole-account reads — from introducing a run back into the
+  // switcher from the cloud row a signed-out delete could not reach.
+  if(fwBuriedFor(slug, key)) return;
   const list = fwReadFor(slug);
   if(list.some(r=> r.key === key)) return;
   list.push({ key });
   fwWriteFor(slug, list);
 }
 function fwForget(key){ fwWriteFor(SLUG, fwReadFor(SLUG).filter(r=> r.key !== key)); }
+// Runs this device has DELETED — 'gw:fwgone:<slug>', a JSON array of
+// {key, sent} — and the only durable record anywhere that a delete happened.
+//
+// A UNION CANNOT REPRESENT A DELETION, and that is the whole of this bug.
+// Everything above learns that a run EXISTS: fwKnowFor from a tick made here,
+// fwSeen from a cloud row with ticks in it. Nothing could learn that one is
+// gone. So a run deleted with NO SESSION — where deleteFreshRun's account
+// branch is skipped outright on `if(user && sb)` — left its progress row
+// sitting in the cloud with every tick in it and no trace of the delete, and
+// the next sign-in put the run back twice over: fwDiscover re-registered the
+// key from that row, primeShelf's whole-account union wrote the local tick set
+// back out under it, and opening it let adopt() finish the job from the server.
+// Somebody deleted a fresh watch, signed in, and found it waiting for them.
+//
+// THE FIX IS NOT TO STOP UNIONING. Round 3 of this card was a guard that read
+// an empty cloud row as a delete marker and took people's ticks off their other
+// device; CLU-324 is the same lesson from the stars side, in its own words. The
+// union is the reason a list you last touched on your phone is not wiped by
+// your laptop. What it needs is not replacing — it is something beside it that
+// can say one particular thing is gone, and this is deliberately the narrowest
+// such thing that works:
+//
+//   * it names ONE RUN. The key shape is checked on the way in and on the way
+//     out, so nothing in here can ever refer to a list or to the all-time row.
+//   * it is written by deleteFreshRun() and nowhere else, after its confirm —
+//     so the keys in it are exactly the runs this person chose to delete here.
+//   * NOTHING IT DOES REMOVES A TICK. It refuses a registry entry, skips a
+//     restore that would otherwise recreate a file it does not have, and hides
+//     a menu row. The one cloud write it causes goes to the deleted run's own
+//     row and can reach no other.
+//
+// `sent` records that the cloud half has been replayed, and it is ONE-SHOT on
+// purpose. A second device that still holds this run goes on ticking it, and a
+// tombstone that emptied that row on every sign-in would be this device
+// deleting that device's run again and again, forever, for a decision taken
+// once. Once is what was asked for.
+function fwGoneFor(slug){
+  let list = [];
+  try{ list = JSON.parse(localStorage.getItem('gw:fwgone:' + slug) || '[]'); }catch(e){}
+  if(!Array.isArray(list)) list = [];
+  return list.filter(r=> r && typeof r.key === 'string' && /^fw\d*$/.test(r.key))
+             .map(r=> ({ key: r.key, sent: !!r.sent }));
+}
+function fwGoneWriteFor(slug, list){
+  // newest kept: a device that has deleted two hundred runs of one list has a
+  // larger problem than the two hundred and first being offered again
+  try{ localStorage.setItem('gw:fwgone:' + slug, JSON.stringify(list.slice(-200))); }
+  catch(e){}
+}
+function fwBuriedFor(slug, key){
+  return !!slug && /^fw\d*$/.test(key) && fwGoneFor(slug).some(r=> r.key === key);
+}
+// The same question asked of a cloud row's property_id, which is how the two
+// whole-account reads tell a deleted run's row from a live one. A bare slug is
+// never buried: the all-time row carries no key, and `#fw` is the only shape
+// this can match.
+function fwBuriedPid(pid){
+  const i = String(pid || '').indexOf('#fw');
+  return i > 0 && fwBuriedFor(pid.slice(0, i), pid.slice(i + 1));
+}
+function fwBury(slug, key){
+  if(!slug || !/^fw\d*$/.test(key)) return;
+  const list = fwGoneFor(slug).filter(r=> r.key !== key);
+  list.push({ key: key, sent: false });
+  fwGoneWriteFor(slug, list);
+}
+function fwBuriedSent(slug, key){
+  fwGoneWriteFor(slug, fwGoneFor(slug)
+    .map(r=> r.key === key ? { key: r.key, sent: true } : r));
+}
 // One cloud progress row, which may be a run. An empty row never INTRODUCES
 // one: where RLS refuses a delete, deleting a run empties its row instead (see
 // deleteFreshRun), so learning a run from an empty row would undo that deletion
@@ -2124,9 +2204,13 @@ function fwLegacy(){
 // reader's way back missing from the one control that has it.
 function fwRuns(){
   if(!SLUG) return [];
-  const list = fwReadFor(SLUG);
+  // The filter is belt and braces — fwKnowFor already refuses to register a
+  // buried run — but a registry written before this shipped can still hold one,
+  // and fwLegacy() below infers its run from a stamp rather than the registry.
+  const list = fwReadFor(SLUG).filter(r=> !fwBuriedFor(SLUG, r.key));
   if(FW && !list.some(r=> r.key === FW)) list.push({ key: FW });
-  if(fwLegacy() && !list.some(r=> r.key === 'fw')) list.push({ key:'fw' });
+  if(fwLegacy() && !fwBuriedFor(SLUG, 'fw') && !list.some(r=> r.key === 'fw'))
+    list.push({ key:'fw' });
   return list.sort((a,b)=> fwEpoch(b.key) - fwEpoch(a.key));
 }
 // When a run began, as an ISO timestamp, or null when that is genuinely
@@ -2203,6 +2287,56 @@ async function fwDiscover(){
     if(error || !Array.isArray(data)) return;
     data.forEach(r=> fwSeen(r.property_id, r.read_ids));
   }catch(e){}
+}
+// The cloud half of a delete that had no cloud to reach. Signed out,
+// deleteFreshRun() skips its account branch entirely — there is no session to
+// delete anything with — so the run's progress row survives untouched, and the
+// tombstone it left behind is the instruction to finish the job the next time
+// an account is in hand on this list.
+//
+// The same delete-then-empty dance as deleteFreshRun, and for the same reason:
+// `progress` has no delete policy (DATABASE.md §4), so RLS matches the delete
+// against nothing and the row has to be emptied instead. An already-empty row,
+// or no row at all, is a delete with nothing left to do — no write is made, and
+// the entry is still marked sent.
+//
+// Every failure `continue`s without marking, so a bad round trip is retried on
+// the next load instead of being swallowed; and the whole thing is non-fatal by
+// construction, because a tidy-up must never be able to take the page down.
+let fwFlushed = false;
+async function fwFlushGone(){
+  if(!(user && sb && SLUG) || fwFlushed) return;
+  fwFlushed = true;
+  for(const r of fwGoneFor(SLUG).filter(x=> !x.sent)){
+    // fwGoneFor has already proved the key's shape, so this can only ever name
+    // a run of this list — never the all-time row, whose property_id is the
+    // bare slug and carries no '#'.
+    const ck = SLUG + '#' + r.key;
+    try{
+      const { data: had, error: e0 } = await sb.from('progress').select('read_ids')
+        .eq('user_id', user.id).eq('property_id', ck).maybeSingle();
+      if(e0) continue;
+      if(had && Array.isArray(had.read_ids) && had.read_ids.length){
+        const { data: gone, error: e1 } = await sb.from('progress').delete()
+          .eq('user_id', user.id).eq('property_id', ck).select('property_id');
+        // 42501 falls through to the upsert for the same reason it does in
+        // deleteFreshRun: revoking the DELETE grant must not turn every delete
+        // into a permission error, because the upsert is the real delete path.
+        if(e1 && e1.code !== '42501') continue;
+        if(!(Array.isArray(gone) && gone.length)){
+          const { error: e2 } = await sb.from('progress')
+            .upsert({ user_id:user.id, property_id:ck, read_ids:[],
+                      updated_at:new Date().toISOString() },
+                    { onConflict:'user_id,property_id' });
+          if(e2) continue;
+        }
+      }
+      // and this account's fold flag for the run, so a run that somehow came
+      // back later would fold rather than silently skip its first sign-in
+      try{ localStorage.removeItem('gw:merged:' + user.id + ':' + ck); }catch(e){}
+      fwBuriedSent(SLUG, r.key);
+    }catch(e){ /* non-fatal; unmarked, so the next load tries again */ }
+  }
 }
 // ?account (CLU-57). Read once: the mast chip and the boot both branch on it.
 const ACCOUNT = new URLSearchParams(location.search).has('account');
@@ -3368,6 +3502,13 @@ async function onSession(session, definitive){
     $('baracct-i').textContent = (acctName() || (user.email || 'y')).charAt(0).toUpperCase();
     $('signin').classList.add('hide');
     state(user.email || 'Signed in','ok');
+    // The signed-out delete's unfinished half, replayed now that there is an
+    // account to replay it against (CLU-408). Off to the side rather than in
+    // the Promise.all below, like pullThumbs: it is a tidy-up of a row nothing
+    // on this page reads — fwKnowFor already refuses the run whatever the row
+    // holds — so it must not be able to hold up the paint or colour adopt()'s
+    // error.
+    fwFlushGone().catch(()=>{});
     // fwDiscover rides alongside, not after: same moment, no added wait, and
     // it cannot reject — so a throw here is still adopt()'s and only adopt()'s
     try{ await Promise.all([adopt(), fwDiscover()]); }
@@ -4517,6 +4658,14 @@ async function primeShelf(){
     (data || []).forEach(r=>{
       // a fresh run's row names the run (CLU-408); this is the one read that
       // sees every row, so the registry learns about other devices' runs here
+      //
+      // And it is the LOUDEST place a deleted run comes back, which is why the
+      // tombstone is checked before the union rather than only inside fwSeen:
+      // the line below would otherwise write the deleted run's whole tick set
+      // back out under its key, recreating locally the file the delete removed.
+      // Skipping is all it does — no row is emptied and no tick is dropped
+      // here, on this or any other run.
+      if(fwBuriedPid(r.property_id)) return;
       fwSeen(r.property_id, r.read_ids);
       let cur;
       try{ cur = JSON.parse(localStorage.getItem('gw:v1:' + r.property_id) || '[]'); }
@@ -7185,7 +7334,8 @@ async function deleteFreshRun(){
                   ? 'Its ticks go from this device and from your account.'
                     + ' Another device that still has this run keeps its own copy'
                     + ' until you delete it there too.'
-                  : 'Its ticks go with it on this device.')
+                  : 'Its ticks go from this device now, and from your account'
+                    + ' next time you sign in.')
               + ' Your all-time record for this list is untouched.')) return;
   const ck = SLUG + '#' + FW;
   // a save still queued for this run would put the row back a beat after it
@@ -7247,6 +7397,14 @@ async function deleteFreshRun(){
     stale.forEach(k=> localStorage.removeItem(k));
   }catch(e){}
   fwForget(FW);
+  // The durable record that this run is gone, and the only thing here that
+  // outlives a sign-in (see fwGoneFor). Written whichever way the delete went:
+  // signed in the row has just been emptied, so the entry is marked sent and
+  // nothing will write to it again; signed out there was no row to reach, and
+  // this entry is what makes the next sign-in finish the delete instead of
+  // undoing it.
+  fwBury(SLUG, FW);
+  if(user && sb) fwBuriedSent(SLUG, FW);
   // the run on screen is gone, so the page has to land somewhere real: the
   // all-time run, on your own row
   fwBack();
