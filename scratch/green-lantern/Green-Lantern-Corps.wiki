@@ -1,0 +1,316 @@
+{{Short description|Law enforcement agency appearing in DC Comics}}
+{{more citations needed|date=April 2022}}
+{{Infobox comics organization
+|image= Green lantern.svg
+|imagesize= 150
+|caption= Seal of the Green Lantern Corps
+|publisher=[[DC Comics]]
+|debut=''[[Showcase (comics)|Showcase]]'' #22 (September 1959)
+|creators=[[John Broome (writer)|John Broome]] <br />[[Gil Kane]]
+|type=
+|business=
+|organisation=
+|organization=
+|base=[[Oa (DC Comics)|Oa]]<br />[[Mogo]]
+|owners=
+|employees=
+|fullroster=[[List of Green Lanterns]]
+|subcat=Marvel Comics
+|hero=y
+|villain=
+|sortkey=Green Lantern Corps
+}}
+The '''Green Lantern Corps''' is a fictional intergalactic [[law enforcement agency]] appearing in [[American comic book]]s published by [[DC Comics]]. Co-created by writer [[John Broome (writer)|John Broome]] and artist [[Gil Kane]], the organization [[first appeared]] along with member [[Hal Jordan]] in ''[[Showcase (comics)|Showcase]]'' #22 in 1959.
+
+The agency patrols the farthest reaches of the [[DC Universe]] at the behest of the Guardians, a race of immortals residing on the planet [[Oa (comics)|Oa]]. According to DC continuity, the Green Lantern Corps have been in existence for three billion years. Currently operating amongst the 3600 "sectors" of the universe, there are 7204 members (known commonly as Green Lanterns). Each Green Lantern is given a power ring, a tool granting the use of incredible abilities that are directed by the wearer's own willpower.
+
+==Publication history==
+In 1959, during a revival of the popularity of superhero comics in America, DC Comics' editor [[Julius Schwartz]] decided to reinvent the 1940s superhero character Green Lantern as a science fiction hero. Schwartz's new conception of Green Lantern had a different name ([[Hal Jordan]]), costume, and origin story, and no connection to the original Green Lantern. Whereas the [[Alan Scott|Green Lantern of the 1940s]] was a lone vigilante who only had adventures on Earth, the new Green Lantern was but one of a group of interstellar lawmen who all called themselves Green Lanterns. The group is first mentioned in ''Showcase'' #22 (1959) when a dying Green Lantern passes on his ring to Hal Jordan. Over the years, writers have introduced a large cast of Green Lanterns in both supporting and starring roles.
+
+== Power ring ==
+[[File:Green Lantern power rings.jpg|thumb|A set of Green Lantern Corps' rings. Their shape and look varies across each of its members]]
+The first appearance of a power ring was in ''All-American Comics'' #16 on July 14, 1940, the flagship title of comic book publisher [[All-American Publications]], which featured the first appearance of [[Alan Scott]]. Creator [[Martin Nodell]] cited [[Richard Wagner]]'s opera cycle ''[[Der Ring des Nibelungen|The Ring of the Nibelung]]'' and the sight of a trainman's green railway lantern as inspirations for the combination of a magical ring and lantern.<ref>Martin Nodell, Preface to ''The Golden Age Green Lantern Archives Volume 1'', 1999</ref> Scott's ring is powered by the Green Flame, a magically empowered flame contained within a metallic alien orb that was found and forged into a lantern and ring by a lampmaker named Chang.<ref name="aac1">''All-American Comics'' #16 (July 1940)</ref> Later writers revised this to be a fragment of the Starheart, a mystical object created by the [[Guardians of the Universe]] to contain magic.
+
+When the Green Lantern character was reinvented, beginning with the introduction of [[Hal Jordan]], the [[magic ring]] concept was replaced with a scientifically based one.<ref name="show22">''[[Showcase (comics)|Showcase]]'' #22 (October 1959)</ref><ref name="gresh84">{{cite book |last1=Gresh |first1=Lois H. |url=https://books.google.com/books?id=TCv0LyEnzsUC&pg=PA84 |title=The Science of Superheroes – Lois H. Gresh, Robert Weinberg – Google Boeken |last2=Weinberg |first2=Robert |date=September 17, 2002 |publisher=Wiley |isbn=9780471024606 |access-date=November 19, 2013}}</ref> The new version of the ring is created by the Guardians of the Universe, who also created the Green Lantern Corps.
+
+=== Powers and abilities ===
+A weapon of considerable power, the power rings are considered one of the most powerful weapons within the DC Universe,<ref name="dc-ency-aw">{{Citation |last=Wallace |first=Dan |title=The DC Comics Encyclopedia |page=93 |year=2008 |editor-last=Dougall |editor-first=Alastair |contribution=Green Lantern's Power Ring |place=New York |publisher=[[Dorling Kindersley]] |isbn=978-0-7566-4119-1 |oclc=213309017}}</ref> most notably able to generate green energy that can be molded into whatever shape and form the user desires. These "constructs" typically appear as physical objects, as well as protective force fields that enables the user to fly and survive in space.<ref name="glc19">''Green Lantern Corps'' (vol. 2) #19 (February 2008)</ref> 
+
+While powerful, power rings have limitations; Green Lantern rings possess a limited amount of charge and must be periodically recharged.<ref name="dc-ency-aw" /><ref>''Green Lantern'' (vol. 4) #12 (July 2006)</ref> Various devices and abilities can drain the ring of its power against the will of its wearer, or absorb its energy for later use.<ref>''Green Lantern'' (vol. 2) #133 (October 1980)</ref><ref>''Green Lantern'' (vol. 4) #3 (September 2005)</ref><ref name="gl28">''Green Lantern'' (vol. 4) #28 (April 2008)</ref><ref>{{Citation |last=Wallace |first=Dan |title=The DC Comics Encyclopedia |page=92 |year=2008 |editor-last=Dougall |editor-first=Alastair |contribution=Crazy Creations |place=New York |publisher=[[Dorling Kindersley]] |isbn=978-0-7566-4119-1 |oclc=213309017}}</ref> Furthermore, they were originally unable to affect objects colored yellow, with varying explainations from writers. In early stories, it was because of a necessary design flaw. [[Gerard Jones]] revised this, in a story that revealed that the Guardians could change the weakness at will.<ref>''Green Lantern'' (vol. 3) #19 (December 1991)</ref> In ''[[Green Lantern: Rebirth]]'', the "yellow impurity" is the result of the fear entity [[Parallax (character)|Parallax]] being imprisoned in the Central Power Battery.<ref>''Green Lantern'' (vol. 4) #1 (July 2005)</ref> The most significant limitation makes only people with exceptional willpower able to use them, making it difficult for average individuals.<ref name="rebirth">''Green Lantern: Rebirth'' #4 (March 2005)</ref> Power rings originally possessed programming to prevent the wearer from killing sentient beings.<ref>''Green Lantern'' (vol. 3) #49 (February 1994)</ref><ref>''Green Lantern'' (vol. 4) #22 (October 2007)</ref> This restriction was rescinded by the Guardians to combat the Sinestro Corps, then for the general execution of their duties.<ref>''Green Lantern'' (vol. 4) #23 (November 2007)</ref><ref name="gl28" />
+
+=== Oaths ===
+{{See also|Green_Lantern#Green_Lantern_Oath|l1=Green Lantern oath}}
+All power rings need periodic recharging. When doing so, many Green Lanterns recite an oath while the ring charges. The oath is not required to charge the ring, but is recited to reaffirm commitment to the Green Lantern Corps. While many Green Lanterns create their own oath, the majority use the Corps' official oath as a sign of respect.<ref name="glv343">''Green Lantern'' (vol. 3) #43 (July 1993)</ref> As additional Corps were introduced into DC continuity, with their own rings, corresponding oaths unique to each Corps were introduced as well.
+
+== Other Lantern Corps ==
+While Green Lantern villain [[Sinestro]] had his own version of the power ring since 1961, a yellow one that exploited the one color Green Lanterns were ineffective against,<ref name="gl9">''Green Lantern'' (vol. 2) #9 (December 1961)</ref> in the late 2000s writer [[Geoff Johns]] and artist [[Ethan Van Sciver]] worked the concept of a spectrum of rings, revolving around the colors of the rainbow as well as a corresponding emotion from which they derive their abilities.<ref name="forum.newsarama.com">[https://web.archive.org/web/20081211100738/http://forum.newsarama.com/showthread.php?t=140352 THE LANTERN'S ARTISTS, I – ETHAN VAN SCIVER]</ref><ref name="newsarama139577">[https://web.archive.org/web/20090326080243/http://forum.newsarama.com/showthread.php?t=139577 HAPPY XMAS (WAR IS OVER) – GEOFF JOHNS ON GREEN LANTERN #25]</ref> The storylines "[[Sinestro Corps War]]" and "[[Blackest Night]]" introduce the rest of the spectrum, along with its emotions, corps and rings: [[Red Lantern Corps|red]] (rage), [[Orange Lantern Corps|orange]] (greed), [[Sinestro Corps|yellow]] (fear), green (willpower), [[Blue Lantern Corps|blue]] (hope), [[Indigo Tribe|indigo]] (compassion), [[Star Sapphires|pink]] (love), [[Black Lantern Corps|black]] (death), and [[White Lantern Corps|white]] (life).<ref name="gl28" /><ref name="rebirth" /><ref name="rage1">''[[Final Crisis]]: [[Rage of the Red Lanterns]]'' #1 (October 2008)</ref><ref name="gl34">''Green Lantern'' (vol. 4) #34 (May 2009)</ref><ref name="gl25">''Green Lantern'' (vol. 4) #25 (January 2008)</ref><ref name="gl20">''Green Lantern'' (vol. 4) #20 (July 2007)</ref>
+
+=== Red / Rage ===
+{{Main|Red Lantern Corps}}
+
+[[Atrocitus]], a member of the Empire of Tears on the planet Ysmault, forged the first Red Power Battery from the innards of Qull, the being who tells [[Abin Sur]] the prophecy of the Blackest Night.<ref name="rage1" /> Red power rings are powered by rage and charged by the blood of those the user kills.<ref name="rage1" /><ref name="gl25" /><ref name="bn6">''Blackest Night'' #6 (December 2009)</ref>
+
+Red rings replace the user's heart and transform their blood into corrosive plasma.<ref name="rage1" /> They normally cannot be removed without killing the user.<ref name="glc45">''Green Lantern Corps'' (vol. 2) #45 (February 2010)</ref><ref name="bn8" />
+
+=== Orange / Avarice ===
+{{Main|Orange Lantern Corps}}
+
+An orange ring is powered by [[avarice]] (greed) and unlike the other Corps, only one living individual can wield the power of the orange light.
+
+The orange ring allows Larfleeze the same abilities as other Corps: flight, aura projection and orange light constructs. As a side effect of wielding the orange light, Larfleeze is burdened with insatiable hunger.<ref name="gl41">''Green Lantern'' (vol. 4) #41 (June 2009)</ref> The orange light allows Larfleeze to absorb the energy of other power rings and steal the identities of those he kills, transforming them into an Orange Lantern construct.<ref name="gl41" /><ref name="gl39">''Green Lantern'' (vol. 4) #39 (April 2009)</ref><ref name="gl40">''Green Lantern'' (vol. 4) #40 (May 2009)</ref> By being in constant contact with his main power battery, Larfleeze has become one with his power source. This allows him to maintain a power level high enough to support an entire Corps of orange constructs even when separated from it.<ref name="gl42">''Green Lantern'' (vol. 4) #42 (July 2009)</ref>
+
+=== Yellow / Fear ===
+{{Main|Sinestro Corps}}
+
+The first yellow ring is acquired by [[Sinestro]] following his banishment to the antimatter universe of [[Qward]].<ref name="gl9" /> The ring is later obtained by [[Guy Gardner (character)|Guy Gardner]], who uses it until it is destroyed by Parallax.<ref>''Guy Gardner Reborn'' #3 (September 1992)</ref><ref>''Guy Gardner: Warrior'' #21 (June 1994)</ref> The [[Weaponers of Qward]] later forge two more rings to be used against [[Kyle Rayner]], wielded by [[Fatality (character)|Fatality]] and Nero.<ref>''Green Lantern'' (vol. 3) #132 (January 2001)</ref>
+
+Following his return in the ''[[Green Lantern: Rebirth]]'' storyline, Sinestro obtains a new yellow ring and founds the Sinestro Corps.<ref>''Green Lantern'' (vol. 4) #10 (May 2006)</ref> Yellow rings are fueled by fear instead of willpower, but function the same as their green counterparts. Members of the Sinestro Corps are chosen for their ability to instill fear in others.<ref name="gl18">''Green Lantern'' (vol. 4) #18 (May 2007)</ref>
+
+According to Ethan Van Sciver, the ring's symbol is based on ancient carvings made by beings who looked into the [[gullet]] of Parallax and survived.<ref name="tales2">''Blackest Night: Tales of the Corps'' #2 (July 2009)</ref>
+
+=== Blue / Hope ===
+{{Main|Blue Lantern Corps}}
+
+As the Sinestro Corps War ends, former Guardian of the Universe [[Ganthet]] creates the first blue power ring.<ref name="gl36">''Green Lantern'' (vol. 4) #36 (January 2009)</ref> Blue rings are fueled by hope and must be near an active Green ring to tap into their full potential. Otherwise, the blue rings are only capable of the abilities of ordinary Green Lantern rings.<ref name="gl38">''Green Lantern'' (vol. 4) #38 (March 2009)</ref> This is because hope requires willpower to enact it.<ref name="gl38" />
+
+While within the proximity of a Green Lantern's ring, a blue ring can heal wounds, neutralize the corrupting effects of a red ring, block the energy-stealing properties of orange rings, drain power from yellow rings, and charge a green ring to twice its maximum power level.<ref name="rage1" /><ref name="gl38" /><ref name="gl36" /> Blue rings can also grant precognitive visions to their wielders.<ref>{{cite web |date=July 3, 2009 |title=The Eve of Blackest Night: Geoff Johns on...Everything |url=http://www.newsarama.com/comics/070903-Geoff-BN.html |url-status=dead |archive-url=https://web.archive.org/web/20090705203420/http://www.newsarama.com/comics/070903-Geoff-BN.html |archive-date=July 5, 2009 |access-date=November 19, 2013 |publisher=Newsarama.com}}</ref>
+
+=== Indigo / Compassion ===
+{{Main|Indigo Tribe}}
+
+The Indigo Tribe, wielders of the indigo light of compassion, make their first extended appearance in ''Blackest Night: Tales of the Corps'' #1 (July 2009). Unlike other Corps, the Indigo Tribe carry carved, lantern-like staves.<ref>{{cite web |date=April 25, 2009 |title=Ethan Van Sciver – Behind the Lanterns' Looks |url=http://newsarama.com/comics/040925-EVS-BlackestNight2.html |url-status=dead |archive-url=https://web.archive.org/web/20090428083937/http://www.newsarama.com/comics/040925-EVS-BlackestNight2.html |archive-date=April 28, 2009 |access-date=November 19, 2013 |publisher=Newsarama.com}}</ref> In ''Blackest Night'' #5, it is established that Indigo Tribe members use their staffs instead of power batteries to charge their rings. In addition to being able to store indigo light energy, they can replicate the power of nearby Lanterns.<ref name="bntales1">''Blackest Night: Tales of the Corps'' #1 (July 2009)</ref><ref name="gl48">''Green Lantern'' (vol. 4) #48 (January 2010)</ref>
+
+Like all power rings, indigo rings are capable of the default Corps abilities of flight and protective aura generation.<ref name="bntales3">''Blackest Night: Tales of the Corps'' #3 (July 2009)</ref> Indigo rings give their users the ability to perceive compassion and force compassion onto those who feel none.<ref name="gl48" /><ref name="bn3">''Blackest Night'' #3 (September 2009)</ref> Paradoxically, indigo light has the ability to heal individuals with great empathy and to expose people to pain they have inflicted on others.<ref name="bn3" /><ref name="gl46">''Green Lantern'' (vol. 4) #46 (September 2009)</ref> Indigo Rings can teleport their users and others over intergalactic distances. This ability utilizes a great deal of power, so Indigo Tribe members use it sparingly.<ref name="gl46" />
+
+=== Violet / Love ===
+{{Main|Star Sapphires}}
+
+At the conclusion of the ''Mystery of the Star Sapphire'' story arc, the [[Zamarons]] realize that the power of the [[Star Sapphire (comics)|Star Sapphire]] gem is too great for them to control, so they forge a Violet Power Battery and power ring out of the Star Sapphire gem. This allows them to distribute its powers throughout an entire Corps of Star Sapphires.<ref name="gl19">''Green Lantern'' (vol. 4) #19 (June 2007)</ref>
+
+Violet rings are fueled by the emotion of love.<ref name="gl20" /> They allow their wearer to fly, generate a protective aura, and create violet light constructs.<ref name="glc29">''Green Lantern Corps'' (vol. 2) #29 (December 2008)</ref><ref name="glc32">''Green Lantern Corps'' (vol. 2) #32 (March 2009)</ref> Violet rings have several unique abilities. They can create crystals which can be used to imprison members of other Lantern Corps, gradually transforming them into Star Sapphires.<ref name="glc31">''Green Lantern Corps'' (vol. 2) #31 (February 2009)</ref><ref name="gl36" /> The rings can also detect when a love is in jeopardy, locate it, and then create a connection to the heart that can be used as a tether. Sapphires are also shown as being able to show others their greatest love.<ref name="glc32" /> Star Sapphires are able to teleport to escape attackers, while their constructs release disorienting dust when destroyed.<ref name="gl42" /> Violet rings can restore the recently deceased to life by drawing power from the heart of one that loves them.<ref>''Green Lantern Corps'' (vol. 2) #43</ref>
+
+Although Violet rings do not have a particular weakness to other colors, they are more susceptible to controlling their user by their own power. Love is one of the two emotions on the far ends of the emotional spectrum, and has a much stronger influence over its user.<ref name="bn0">''Blackest Night'' #0 (June 2009)</ref>
+
+=== Black / Death ===
+{{Main|Black Lantern Corps}}
+
+Black power rings are fueled by death, instead of light from the emotional spectrum.<ref name="gl25" /> Black Hand becomes the first Black Lantern after killing his family and committing suicide.<ref name="gl43">''Green Lantern'' (vol. 4) #43 (July 2009)</ref> The symbol on black rings (a triangle pointing down, with five lines radiating up) is the same symbol used by Hand and his family.<ref name="gl43" />
+
+Black rings are wielded by the deceased. In addition to the abilities granted to them by the rings, Black Lanterns retain any superpowers they may have had in life and are capable of regenerating their bodies.<ref name="bn1">''Blackest Night'' #1 (July 2009)</ref> Black rings are able to read the emotions of the living as colored auras that correlate to the emotional spectrum.<ref name="bn1" />
+
+=== White / Life ===
+{{main|White Lantern Corps}}
+[[File:White_Lantern_power_ring.jpg|thumb|left|150px|A White Lantern Power Ring]]
+The first white lantern power ring is depicted during the ''Blackest Night'' event.<ref name="bn7">''Blackest Night'' #7 (April 2010)</ref> The exact capabilities and limitations of white rings are unknown.<ref name="gl52">''Green Lantern'' (vol. 4) #52 (May 2010)</ref> White rings are also capable of resurrecting the dead.<ref name="bn8">''Blackest Night'' #8 (May 2010)</ref> They are also shown "overriding" rings of other colors, turning them white for a period of time.<ref name="bn8" />
+
+=== Ultraviolet / Self-Hatred ===
+{{main|Ultraviolet Lantern Corps}}
+
+=== Gold ===
+{{Main|Gold Lantern}}
+In the 2020-21 ''[[Legion of Super-Heroes]]'' comic series, [[Gold Lantern]] ([[Kala Lour]]) wields a gold power ring powered by golden light. 
+
+=== Navy ===
+{{Main|Anti-Green Lantern Corps}}
+In 1982's Green Lantern #150, the [[Weaponers of Qward]] created a corps powered by [[antimatter]]. Each member was equipped with a navy-colored uniform and a antimatter power ring that could kill a positive matter being with one hit.<ref>{{ cite comic 
+| writer=Wolfman, Marv 
+| penciller=Staton, Joe 
+| story= From Qward With Hate! 
+| title=[[Green Lantern]] 
+| issue=150 
+| date=March 1982 
+| publisher=DC Comics 
+| page=1 
+}}</ref>
+
+=== Gray / Sorrow ===
+{{Main|Sorrow Lantern}}
+Introduced during ''[[Absolute Power (comics)|Absolute Power]]'', the Sorrow Lantern is the manifestation of the misery the Emotional Spectrum experienced during Thaaros' attacks. The first [[Sorrow Lantern]] is [[Sorrow Lantern|Nathan Broome]], Carol Ferris' ex-fiancée, who infused his engagement ring with sadness after Carol abandons him to save Hal Jordan, transforming him into the Sorrow Lantern.<ref>''Green Lantern'' (vol. 7) #13 (September 2024)</ref> As the Sorrow Lantern, Nathan's body constantly emits a gray mist that he can solidify and generate constructs that force sorrow onto others.<ref>''Green Lantern'' (vol. 7) #15 (November 2024)</ref>
+
+=== Alternate versions ===
+* In ''[[Superman & Batman: Generations]]'', it is stated that the rings' weakness is only based on what the users believe the rings are vulnerable to; [[Alan Scott]] believes that his ring was vulnerable to wood because he was caught off-guard by someone wielding a wooden block the first time he used the ring.
+* In the [[Elseworlds]] storyline ''[[JLA: Another Nail]]'', a power ring essentially merges with a [[Mother Box]] when [[Big Barda]] is chosen as a Green Lantern when the war between [[New Genesis]] and [[Apokolips]] becomes so intense that the Green Lantern Corps step in. Through its link to the Mother Box, the ring also hosts the consciousness of [[Mister Miracle]].
+* In the crossover miniseries ''[[Star Trek/Green Lantern]]'', various members of the seven Corps are transferred into the [[Star Trek (2009 film)|new ''Star Trek'' timeline]] when Nekron's latest attack causes Ganthet to initiate the 'Last Light' protocol, transferring the last power rings and living wielders to another universe. After Hal Jordan, Carol Ferris and [[Saint Walker]] make contact with the [[USS Enterprise (NCC-1701)|USS ''Enterprise'']], along with Doctor [[Leonard McCoy]], [[Nyota Uhura]], and [[Pavel Chekov]] being chosen by reserve rings of the Indigo Tribe, Star Sapphires and Blue Lantern Corps respectively, [[Montgomery Scott]]'s analysis of the rings allows him to create his own version. At the conclusion of the series, Scotty receives permission to put the rings into mass production. In the sequel ''Star Trek/Green Lantern: Strange Worlds'', [[James T. Kirk]] obtains a prototype Green Lantern ring.
+* The Universal Ring appears in ''[[Planet of the Apes/Green Lantern]]''. One Universal ring was given Katerina Mar in secret.
+* In ''Batman: The Dawnbreaker''—part of a series of one-shots looking at darker alternate versions of Batman—when Bruce Wayne was chosen as the Green Lantern immediately after the deaths of his parents, his rage and emotional trauma were so great that he was able to overcome the ring's limitations against using lethal force by nothing more than strength of will. This dark attitude results in him drawing on an unspecified 'void' through his ring, which allows him to overwhelm even a large number of other Green Lanterns and Guardians when they come to confront him over his violation of the rules of Oa.<ref>''Batman: The Dawnbreaker'' #1</ref>
+* In ''[[Green Lantern: Earth One]]'', the power rings are seen merely as powerful weapons. They do not choose their users, can be used by anyone and do not require the wielder to be capable of great willpower or overcoming fear and do not appear to possess any degree of artificial intelligence or capacity for independent action. No oath is required to charge them. Following the apparent destruction of the Central Power Battery by the [[Manhunters (DC Comics)|Manhunters]], the power of the rings was limited, but their full power was unlocked following the recovery of the battery from Oa.
+* In the ''[[Absolute Universe]]'' title, ''[[Absolute Green Lantern]]'', the entire Emotional Spectrum is entirely reinvented, renamed the Spectrum of Light. Instead of being derived from different emotions like most incarnations, the Spectrum only has four colors in this universe, each representing different levels of enlightenment: Black, or Qard, being chaotic actions; Red or Rao, being acting with restraint; Green or Sur, being correct actions, and finally Gold or Aur, being total understanding. Another big change: Wielders of the different "flames" don't use rings to harness their powers, though the protagonist, [[Sojourner Mullein]], has the green light accidentally absorbed into her wedding ring, which gives her the power. There are no Corps in this universe, only two opposing factions: the [[Guardians of the Universe|Oans]], a morally-ambiguous group who consider Gold/Aur the highest level of light; and the [[Weaponers of Qward|Weaponers]], or [[Darkstars|Blackstars]], a more militaristic and violent group led by [[Sinestro|Sin Es Tro]], who believe enlightenment is useless and that Black/Qard level is the highest and is the embodiment of pure will. While being the antagonists, the Blackstars have more in common with the mainline Green Lantern Corp than the Oans, being an organized intergalactic police force with a focus on will, with many of its ranks being Green Lanterns in the main universe, such as [[Kilowog]] and [[Mogo]].
+
+==Writers==
+The following writers have been involved in the ongoing ''Green Lantern Corps'' series:
+{| class="wikitable"
+|-
+! Writer !! Tenure !! Issues written
+|-
+| [[Steve Englehart]]
+| Vol. 1 #201–223
+| 1986–1988
+|-
+| [[Joey Cavalieri]]
+| Vol. 1 #224
+| 1988
+|-
+| [[Dave Gibbons]]
+| Vol. 2 #1–6, #10–17
+| 2006–2007
+|-
+| [[Keith Champagne]]
+| Vol. 2 #7–9
+| 2007
+|-
+| [[Peter Tomasi]]
+| Vol. 2 #18–20, #23–47<br />Vol. 3 #1–20, #0, Annual #1
+| 2007–2013
+|-
+| [[Sterling Gates]]
+| Vol. 2 #21–22
+| 2008
+|-
+| [[Tony Bedard]]
+| Vol. 2 #48–62
+| 2010–2011
+|-
+| [[Scott Kolins]]
+| Vol. 2 #63
+| 2011
+|-
+| [[Robert Venditti]]
+| Vol. 3 #21–27, Annual #2
+| 2013–2014
+|-
+| Van Jensen
+| Vol. 3 #21–40
+| 2013–2015
+|-
+| Jeremy Adams
+| Vol. 4 #1–10
+| 2025–2026
+|-
+| Morgan Hampton
+| Vol. 4 #1–ongoing
+| 2025–present
+|}
+
+==Bibliography==
+This listing is for the "core" series or limited series to feature the Green Lantern Corps in their various incarnations over the years:
+* ''Tales of the Green Lantern Corps'' (three-issue [[Limited series (comics)|miniseries]], May–July 1981)
+* ''Tales of the Green Lantern Corps Annual'' #1 (1985)<ref>[http://www.comics.org/issue/558661/ ''Tales of the Green Lantern Corps Annual''] at the Grand Comics Database</ref> (first annual issue for ''Green Lantern'' (vol. 2) series)
+* ''The Green Lantern Corps'' #201–224 (June 1986 – May 1988) (formerly ''Green Lantern'' (vol. 2) series; officially re-titled as ''The Green Lantern Corps'' (by cover only from #201–205) with #206 in the comic's legal indicia)
+** ''Annual''s #2 (Dec. 1986), #3 (Aug. 1987)
+* ''Green Lantern Corps Quarterly'' #1–8 (Summer, 1992 – Spring, 1994)
+* ''Green Lantern: The New Corps'' (two-issue miniseries, 1999)
+* ''[[Green Lantern Corps: Recharge]]'' (five-issue miniseries, November 2005 – March 2006)
+* ''Green Lantern Corps'' (vol. 2) #1 – 63 (August 2006 – August 2011)
+* ''Green Lantern: Emerald Warriors'' #1 – 13 (October 2010 – October 2011)
+* ''Green Lantern Corps'' (vol. 3) #1 – 40 (September 2011 – March 2015)
+* Green Lantern Corps (vol. 4) #1- (February 2025 – )
+
+==Collected editions==
+=== ''Green Lantern Corps'' vol. 1 ===
+Some of the stories have been collected into [[trade paperback (comics)|trade paperbacks]] and [[hardcover]]:
+* ''Tales of the Green Lantern Corps'' (collects ''Tales of the Green Lantern Corps'' #1–3 and back-up stories from ''Green Lantern'' (vol. 2) #148, 151–154, 161–162, 164–167), 160 pages, April 2009, {{ISBN|1-84856-147-4}}, DC Comics, March 2009, {{ISBN|1-4012-2155-6}}<ref>[http://dccomics.com/dcu/graphic_novels/?gn=10923 ''Tales of the Green Lantern Corps''] {{webarchive|url=https://web.archive.org/web/20090306052858/http://www.dccomics.com/dcu/graphic_novels/?gn=10923 |date=2009-03-06 }} at DC Comics.com</ref>
+* ''Tales of the Green Lantern Corps'' Vol. 2 (collects back-up stories from ''Green Lantern'' (vol. 2) #168, 169, 171–173, 177, 179–183, 185, 187–190 and ''Tales of the Green Lantern Corps Annual'' #1), 144 pages, February 2010, {{ISBN|978-1-4012-2702-9}}<ref>{{cite web |url=http://www.dccomics.com/dccomics/search/?q=tales+of+the+green+lantern+corps&x=20&y=13 |title=DC Comics |publisher=DC Comics |date=2010-04-21 |access-date=2011-01-16 |archive-date=2011-06-08 |archive-url=https://web.archive.org/web/20110608223631/http://www.dccomics.com/dccomics/search/?q=tales+of+the+green+lantern+corps&x=20&y=13 |url-status=dead }}</ref>
+* ''Tales of the Green Lantern Corps'' Vol. 3 (collects ''Green Lantern Corps'' #201–206), 144 pages, Oct. 2010, {{ISBN|1-4012-2934-4}} <ref>{{cite web|url=http://www.comicbookresources.com/?page=article&id=27854 |title=DC Comics Solicitations for November 2010 |publisher=Comic Book Resources |access-date=2011-01-16 |url-status=dead |archive-url=https://web.archive.org/web/20101024225516/http://www.comicbookresources.com/?page=article&id=27854 |archive-date=2010-10-24 }}</ref>
+* ''Green Lantern Corps: Beware Their Power Vol. 1'' (hardcover collects ''Green Lantern Corps'' #207–215 and ''Green Lantern Corps Annual'' #2–3). DC Comics, 296 pages, February 2018 {{ISBN|1-40127-750-0}}
+
+=== ''Green Lantern Corps'' vol. 2 ===
+* ''[[Green Lantern Corps: Recharge|Recharge]]'' (collects five-issue limited series, June 2006, {{ISBN|1-4012-0962-9}})<ref>[http://dccomics.com/dcu/graphic_novels/?gn=5221 ''Green Lantern Corps: Recharge''] {{webarchive|url=https://web.archive.org/web/20090630194706/http://www.dccomics.com/dcu/graphic_novels/?gn=5221 |date=2009-06-30 }} at DC Comics.com</ref>
+* ''To Be a Lantern'' (collects ''Green Lantern Corps'' (vol. 2) #1–6, May 2007, {{ISBN|1-4012-1356-1}})<ref>[http://dccomics.com/dcu/graphic_novels/?gn=7152 ''Green Lantern Corps: To Be a Lantern''] {{webarchive|url=https://web.archive.org/web/20090421030600/http://www.dccomics.com/dcu/graphic_novels/?gn=7152 |date=2009-04-21 }} at DC Comics.com</ref>
+* ''The Dark Side of Green'' (collects ''Green Lantern Corps'' (vol. 2) #7–13, April 2008, {{ISBN|1-4352-5617-4}})<ref>[http://dccomics.com/dcu/graphic_novels/?gn=8190 ''Green Lantern Corps: The Dark Side of Green''] {{webarchive|url=https://web.archive.org/web/20090630062901/http://www.dccomics.com/dcu/graphic_novels/?gn=8190 |date=2009-06-30 }} at DC Comics.com</ref>
+* ''[[Sinestro Corps War]]'':
+** ''Volume 1'' (collects ''Green Lantern Corps'' (vol. 2) #14–15, ''[[Green Lantern (comic book)|Green Lantern]]'' (vol. 4) #21–23 and ''Green Lantern: Sinestro Corps Special'' one-shot, hardcover, February 2008, {{ISBN|1-4012-1650-1}},<ref>[http://www.dccomics.com/dcu/graphic_novels/?gn=8543 ''Sinestro Corps War: Volume 1'' hardcover] {{Webarchive|url=https://web.archive.org/web/20131020201843/http://www.dccomics.com/dcu/graphic_novels/?gn=8543 |date=2013-10-20 }}, at DC Comics.com</ref> paperback, May 2009, {{ISBN|1-84576-783-7}}, DC Comics, {{ISBN|1-4012-1870-9}})<ref>[http://www.dccomics.com/dcu/graphic_novels/?gn=11322 ''Sinestro Corps War: Volume 1'' softcover] {{Webarchive|url=https://web.archive.org/web/20121022034606/http://www.dccomics.com/dcu/graphic_novels/?gn=11322 |date=2012-10-22 }}, at DC Comics.com</ref>
+** ''Volume 2'' (collects ''Green Lantern Corps'' (vol. 2) #16–19 and ''Green Lantern'' (vol. 4) #24–25, hardcover, July 2008, {{ISBN|1-4012-1800-8}},<ref>[http://www.dccomics.com/dcu/graphic_novels/?gn=9168 ''Sinestro Corps War: Volume 2'' hardcover] {{Webarchive|url=https://web.archive.org/web/20121009191933/http://www.dccomics.com/dcu/graphic_novels/?gn=9168 |date=2012-10-09 }}, at DC Comics.com</ref> paperback, July 2009, {{ISBN|1-84576-879-5}}, DC Comics, June 2009, {{ISBN|1-4012-2036-3}})<ref>[http://www.dccomics.com/dcu/graphic_novels/?gn=11743 ''Sinestro Corps War: Volume 2'' softcover] {{Webarchive|url=https://web.archive.org/web/20121009192017/http://www.dccomics.com/dcu/graphic_novels/?gn=11743 |date=2012-10-09 }}, at DC Comics.com</ref>
+* ''Ring Quest'' (collects ''Green Lantern Corps'' (vol. 2) #19–20, 23–26, January 2009, {{ISBN|1-84856-116-4}}, DC Comics, December 2008, {{ISBN|1-4012-1975-6}})<ref>[http://dccomics.com/dcu/graphic_novels/?gn=10461 ''Green Lantern Corps: Ring Quest''] {{webarchive|url=https://web.archive.org/web/20090630054931/http://www.dccomics.com/dcu/graphic_novels/?gn=10461 |date=2009-06-30 }} at DC Comics.com</ref>
+* ''Sins of the Star Sapphire'' (collects ''Green Lantern Corps'' (vol. 2) #27–32, July 2009, {{ISBN|1-84856-318-3}}, DC Comics, June 2009, {{ISBN|1-4012-2273-0}})<ref>[http://dccomics.com/dcu/graphic_novels/?gn=11744 ''Green Lantern Corps: Sins of the Star Sapphire''] {{webarchive|url=https://web.archive.org/web/20090611214713/http://www.dccomics.com/dcu/graphic_novels/?gn=11744 |date=2009-06-11 }} at DC Comics.com</ref>
+* ''Emerald Eclipse'' (collects ''Green Lantern Corps'' (vol. 2) #33–38, 160 pages, hardcover, November 2009, {{ISBN|1-4012-2788-0}}, paperback, November 2010, {{ISBN|1401225292}})
+* ''[[Blackest Night]]: Green Lantern Corps'' (collects ''Green Lantern Corps'' (vol. 2) #39–47, 256 pages, hardcover, July 2010, {{ISBN|1-4012-2788-0}}, paperback, July 2011, {{ISBN|1401228054}})
+* ''Revolt of the Alpha Lanterns'' (collects ''Green Lantern Corps'' (vol. 2) #21–22, 48–52, 176 pages, hardcover, May 2011, {{ISBN|1-4012-3139-X}}, paperback, June 2012, {{ISBN|1401231403}})
+* ''The Weaponer'' (collects ''Green Lantern Corps'' (vol. 2) #53–57, 128 pages, hardcover, October 2011, {{ISBN|1-4012-3281-7}}, paperback, October 2012, {{ISBN|1401234410}})
+* ''Green Lantern: Emerald Warriors'' (collects ''Green Lantern: Emerald Warriors'' #1–7, 176 pages, August 16, 2011, {{ISBN|1-4012-3079-2}})
+* ''[[War of the Green Lanterns]]'' (collects ''Green Lantern'' (vol. 4) #63–67, ''Green Lantern Corps'' (vol. 2) #58–60, and ''Green Lantern: Emerald Warriors'' #8–10, 240 pages, hardcover, November 2011, {{ISBN|1-4012-3234-5}}, paperback, September 2012, {{ISBN|1401234526}})
+* ''War of the Green Lanterns: Aftermath'' (collects ''Green Lantern Corps'' (vol. 2) #61–63, ''Green Lantern: Emerald Warriors'' #11–13, and ''War of the Green Lantern: Aftermath'' #1–2, 208 pages, hardcover, January 2012, {{ISBN|1-4012-3343-0}})
+
+=== ''Green Lantern Corps'' vol. 3 (New 52) ===
+* ''Green Lantern Corps Vol. 1: Fearsome'' (collects ''Green Lantern Corps'' (vol. 3) #1–7, 160 pages, Hardcover, September 2012, {{ISBN|1-4012-3701-0}} )
+* ''Green Lantern Corps Vol. 2: Alpha War'' (collects ''Green Lantern Corps'' (vol. 3) #0, #8–14, 192 pages, Hardcover, July 2013, {{ISBN|1-4012-4012-7}} )
+* ''Green Lantern Corps Vol. 3: Willpower'' (collects ''Green Lantern Corps'' (vol. 3) #15–20, ''Green Lantern Corps Annual'' #1, 256 pages, Hardcover, December 10, 2013, {{ISBN|1-4012-4407-6}} )
+* ''Green Lantern: Rise of the Third Army'' (collects ''Green Lantern Annual'' #1, ''Green Lantern'' (vol. 5) #13–16, ''Green Lantern Corps'' (vol. 3) #13–16, ''Green Lantern: New Guardians'' #13–16, ''Red Lanterns'' #13–16, ''Green Lantern Corps Annual'' #1, 416 pages, Hardcover, September 10, 2013, {{ISBN|1-4012-4499-8}})
+* ''Green Lantern: Wrath of the First Lantern'' (collects ''Green Lantern'' vol.5 #17–20, ''Green Lantern Corps'' Vol.3 #17–20, ''Green Lantern: New Guardians'' #17–20, ''Red Lanterns'' #17–20, 416 pages, Hardcover, February 25, 2014, {{ISBN|1-4012-4409-2}})
+* ''Green Lantern Corps Vol. 4: Rebuild'' (collects ''Green Lantern Corps'' (vol. 3) #21–27, ''Green Lantern Corps Annual'' #2, 208 pages, Paperback, July 8, 2014, {{ISBN|1-4012-4745-8}} )
+* ''Green Lantern: Lights Out'' (collects ''Green Lantern'' #24, ''Green Lantern Corps'' #24, ''Green Lantern: New Guardians'' #23–24, ''Red Lanterns'' #24, ''Green Lantern Annual'' #2, ''Green Lantern'' #23.1: Relic, 192 pages, Hardcover, June 24, 2014, {{ISBN|1-4012-4816-0}})
+* ''Green Lantern Corps Vol. 5: Uprising'' (collects ''Green Lantern Corps'' #28–34, ''Green Lantern Corps Annual'' #2 and ''Green Lantern'' #31–33)
+* ''Green Lantern Corps Vol. 6: Reckoning'' (collects ''Green Lantern Corps'' issues #35–40)
+
+==In other media==
+===Television===
+* The Green Lantern Corps appear in series set in the [[DC Animated Universe]]:
+** Several Green Lantern Corps members make cameo appearances in the ''[[Superman: The Animated Series]]'' episode "In Brightest Day...", which features Kyle Rayner.
+** The Green Lantern Corps appear in the ''[[Justice League (TV series)|Justice League]]'' episodes "In Blackest Night" and "Hearts and Minds".
+** The Green Lantern Corps appear in the ''[[Justice League Unlimited]]'' episode "The Return".
+* The Green Lantern Corps appear in the ''[[Duck Dodgers (TV series)|Duck Dodgers]]'' episode "The Green Loontern". Besides Hal Jordan, the featured Green Lantern Corps members are Amanita, [[Arisia Rrab]], [[Boodikka]], Breeon, Brokk, [[Ch'p]], [[Chaselon]], [[Galius Zed]], Green Lambkin, Guy Gardner, [[G'nort]], Hannu, [[John Stewart (character)|John Stewart]], [[Katma Tui]], [[Kilowog]], K'ryssma, Larvox, M'Dahna, Medphyll, NautKeLoi, Penelops, [[Salaak]], [[Stel]], [[Tomar-Re]], and Xax.
+* The Green Lantern Corps appear through flashbacks in ''[[The Batman (TV series)|The Batman]]'' episode "Ring Toss".
+* The Green Lantern Corps appear in ''[[Batman: The Brave and the Bold]]''.
+* The Green Lantern Corps is the primary focus of ''[[Green Lantern: The Animated Series]]'', with Hal Jordan and Kilowog as the main cast. Also in the show are "frontier space" members of the corps.
+* Within the [[Arrowverse]], during the ''[[Crisis on Infinite Earths (Arrowverse)|Crisis on Infinite Earths]]'' crossover event, footage from the ''[[Green Lantern (film)|Green Lantern]]'' film was used to establish the existence of the Green Lantern Corps within the universe of Earth-12.
+** The series finale of ''[[Arrow (TV series)|Arrow]]'', titled "[[Fadeout (Arrow)|Fadeout]]", ends with [[John Diggle (Arrowverse)|John Diggle]] approaching what appears to be a Green Lantern ring that has fallen from the sky, suggesting that he will become a Green Lantern. In the [[The Flash season 8|eighth season]] of ''[[The Flash (2014 TV series)|The Flash]]'', Diggle relinquishes the Green Lantern ring to be with his family.
+
+===Film===
+* The Green Lantern Corps feature prominently in the [[Warner Brothers]] animated film ''[[Green Lantern: First Flight]]''. The film follows the origins of Hal Jordan and Sinestro.
+* The Green Lantern Corps is the focus of a following film, ''[[Green Lantern: Emerald Knights]]'', which features several stories about various non-Terran Green Lanterns.
+* The Green Lantern Corps appear in [[Green Lantern (film)|the ''Green Lantern'' live-action film]]. The leader of the Corps is Sinestro, with Abin Sur, Kilowog, and Tomar-Re being central characters.
+* In ''[[Justice League vs. the Fatal Five]]'', [[Jessica Cruz]], Kilowog, and Salaak appear as representatives of the Corps. Holographic depictions of most of the Lantern Corps' human members – Hal Jordan, Guy Gardner, Kyle Rayner, John Stewart, and Cruz – also appear as part of a Justice League exhibit in the [[Legion of Super-Heroes]] Museum.
+* The Green Lantern Corps appear in the films set in the [[DC Extended Universe]]:
+** Green Lantern [[Yalan Gur]] appears in a flashback in the ''[[Justice League (film)|Justice League]]'' film. He is seen fighting against [[Steppenwolf (character)|Steppenwolf]] and his army of [[Parademon]]s but is overpowered and killed by Steppenwolf.<ref>{{cite web|url=http://www.thewrap.com/justice-league-what-we-know-so-far/15/|title=DC Films 'Justice League': What We Know So Far (Photos)|publisher=The Wrap|last=Gonzalez |first=Umberto|date=November 18, 2016}}</ref> [[Kilowog]] and [[Tomar-Re]] were intended to appear in a post-credits scene, but were ultimately scrapped.<ref>{{cite web|url=https://www.express.co.uk/entertainment/films/884216/Justice-League-deleted-end-credits-scene-Green-Lantern-Corps-Kilowog-Tomar-Re|title=Justice League: Deleted post-credits scene REVEALED – What does it mean for Green Lantern?|first=George|last=Simpson|date=25 November 2017}}</ref>
+*** In the [[Zack Snyder's Justice League|Snyder cut of the film]], Yalan Gur is instead killed by [[Darkseid (DC Extended Universe)|Darkseid]].
+* The ''[[Superman: Red Son]]'' incarnation of the Green Lantern Corps appears in ''[[Superman: Red Son (film)|Superman: Red Son]]'' (2020).
+* The Green Lantern Corps (Hal Jordan, John Stewart, [[Arisia Rrab]], Arkkis Chummuck, Chaselon, Galius Zed, [[Green Man (character)|Green Man]], Guy Gardner, Kilowog, Palaqua, and Salaak) appear in ''[[Justice League Dark: Apokolips War]]''. Jordan is among the heroes decimated by Paradooms (hybrids of the [[Parademon]]s and [[Doomsday (DC Comics)|Doomsday]]), while other Lanterns and the Guardians are slaughtered by Darkseid himself on Oa.
+* The Green Lantern Corps appear in ''[[Green Lantern: Beware My Power]]''. Before the film's main events, the Green Lantern Corps are revealed to have been slaughtered by Sinestro and a Parallax-possessed Hal Jordan. After the Sinestro Corps are defeated, Jordan's successor John Stewart takes Jordan's rings and sends them to new owners to rebuild the Corps.
+
+===Video games===
+* The Green Lantern Corps are featured heavily in ''[[Mortal Kombat vs. DC Universe]]''. Hal Jordan appears as a playable character and one of the game's major protagonists; the Guardians appear in the game's Oa based stage, and the rest of the Corps members are mentioned to be trying to contain the universe wide crisis taking place during Story Mode. Additionally, [[Sonya (Mortal Kombat)|Sonya Blade]]'s in-game ending depicts her becoming the Green Lantern of the ''[[Mortal Kombat]]'' universe after gaining the ring of a recently deceased Corps member.
+* In ''[[Injustice: Gods Among Us]]'', Kilowog makes a cameo appearance. The Corps also appear in Green Lantern's victory pose. At the end of the game, the main universe's Hal Jordan brings the parallel universe's version of himself, who had joined the Sinestro Corps during Year Two, and Sinestro to the remaining Guardians of the Universe at Oa for trial with a Green Lantern at the center of the court.
+
+===Miscellaneous===
+*The Green Lantern Corps is featured in the ''[[Batman: The Brave and the Bold]]'' and ''[[Smallville|Smallville Season 11]]'' digital comic based on the [[Smallville|TV series]].
+*The Green Lantern Corps appear in ''[[Legion of Super Heroes in the 31st Century]]'' #6.<ref>{{Cite web |title=''Legion of Super-Heroes in the 31st Century'' #6 – Attack of the Green Lantern Corps (Issue) |url=https://comicvine.gamespot.com/legion-of-super-heroes-in-the-31st-century-6-attac/4000-114792/ |access-date=July 28, 2023 |website=Comic Vine |language=en}}</ref>
+*The Green Lantern Corps appear in ''[[DC x Sonic the Hedgehog]]''.<ref>{{cite web |last1=Scullion |first1=Chris |title=DC x Sonic the Hedgehog: Here's the first art and plot details from Sega and DC's crossover comic |url=https://www.videogameschronicle.com/news/dc-x-sonic-the-hedgehog-heres-the-first-art-and-plot-details-from-sega-and-dcs-crossover-comic/ |website=[[Video Games Chronicle]] |access-date=March 19, 2025 |date=March 13, 2025}}</ref> Members include John Stewart (who is one of the main characters), Ch'p, Guy Gardner, Kilowog, and Tomar-re. Hal Jordan, Jessica Cruz, Jo Mullein, Kyle Rayner and Simon Baz are mentioned despite not appearing. The series also features [[Silver the Hedgehog]] joining the Corps.
+
+===Literature===
+The Green Lantern Corps are parodied as the "Avant Guard" (a play on the phrase ''[[avant-garde]]'') in ''[[The Refrigerator Monologues]]''.<ref>{{cite web |url=https://www.barnesandnoble.com/blog/sci-fi-fantasy/guide-comic-book-wives-girlfriends-inspired-refrigerator-monologues/ |url-status=dead |archive-url=https://web.archive.org/web/20201021231354/https://www.barnesandnoble.com/blog/sci-fi-fantasy/guide-comic-book-wives-girlfriends-inspired-refrigerator-monologues/ |archive-date=21 October 2020 |title=A Guide to the Comic Book Wives and Girlfriends Who Inspired the Refrigerator Monologues |last=Johnson |first=Ross |date=7 June 2017 |access-date=7 January 2024}}{{cbignore}}</ref>
+
+==See also==
+* [[List of Green Lanterns]]
+* [[L.E.G.I.O.N.]]
+* [[Sinestro Corps]]
+* [[Nova Corps]] – A similar intergalactic organization in [[Marvel Comics]]
+
+==References==
+
+{{reflist|30em}}
+
+==External links==
+* {{comicbookdb|type=team|id=11|title=Green Lantern Corps}}
+* {{comicbookdb|type=team|id=612|title=The Corpse}}
+* {{comicbookdb|type=team|id=1272|title=Alpha Lantern Corps}}
+* [[DCDatabase:Green Lantern Corps|Green Lantern Corps at the DC Database]]
+* [https://web.archive.org/web/20081222014956/http://alankistler.squarespace.com/journal/2008/9/5/alan-kistlers-history-of-the-green-lantern-part-1.html Alan Kistler's profile on Green Lantern]
+* [http://dcuguide.com/w/GLCWP_Great_Book_of_Oa The Green Lantern Corps Web Page Great Book of Oa]
+* [http://dcuguide.com/w/GLCWP_Main_Page The Unofficial Green Lantern Corps Webpage]
+* [http://www.fanboyplanet.com/interviews/mc-keithchampagne3.php Interview with Keith Champagne about the Green Lantern "Corpse"] {{Webarchive|url=https://web.archive.org/web/20071012203807/http://fanboyplanet.com/interviews/mc-keithchampagne3.php |date=2007-10-12 }}
+
+{{Green Lantern}}
+{{Darkseid}}
+{{Justice League characters}}
+
+[[Category:Characters created by John Broome]]
+[[Category:Characters created by Gil Kane]]
+[[Category:Comics by Peter J. Tomasi]]
+[[Category:Comics by Steve Englehart]]
+[[Category:Comics characters introduced in 1959]]
+[[Category:DC Comics extraterrestrial characters]]
+[[Category:DC Comics extraterrestrial superheroes]]
+[[Category:DC Comics superhero teams]]
+[[Category:DC Comics titles]]
+[[Category:DC Comics law enforcement agencies]]
+[[Category:Green Lantern characters]]
+[[Category:Fiction about interstellar and intergalactic travel]]

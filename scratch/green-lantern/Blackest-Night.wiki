@@ -1,0 +1,344 @@
+{{short description|Limited DC comics crossover series}}
+{{Use American English|date=October 2012}}
+{{Infobox comics story arc
+|image          = Blackest Night (Absolute edition).jpg
+|imagesize      = <!-- numeral only, defaults to 250 -->
+|caption        = ''Absolute Blackest Night''{{'}}s cover, art by [[Ivan Reis]].
+|alt            = 
+|publisher      = [[DC Comics]]
+|startmo        = June <!-- based on the #0 issue -->
+|startyr        = 2009
+|endmo          = May <!-- based on the #8 issue -->
+|endyr          = 2010
+|Crossover      = first
+|Zombie         = y
+|multigenre     = y
+|main_char_team =[[Hal Jordan]]<br />[[Carol Ferris]]<br />[[Barry Allen]]<br />[[Black Hand (character)|William Hand]]<br />[[Sinestro|Thaal Sinestro]]<br />[[Atrocitus]]<br />[[Larfleeze]]<br />[[Saint Walker]]<br />[[Indigo Tribe|Indigo-1]]<br />[[Atom (Ray Palmer)|Ray Palmer]]<br />[[Jason Rusch]]<br />[[Mera (character)|Mera]]<br />[[Nekron]]<br />the rest of the [[DC Universe]]
+|titles         = <!-- Runs are based on solicitation information and currently released check lists-->''Blackest Night'' #0–8<br><!--
+-->''Blackest Night: Batman'' #1–3<br><!--
+-->''Blackest Night: Superman'' #1–3<br><!--
+-->''Blackest Night: Tales Of The Corps'' #1–3<br><!--
+-->''Blackest Night: The Flash'' #1-3<br><!--
+-->''Blackest Night: Titans'' #1–3<br><!--
+-->''Blackest Night: Wonder Woman'' #1-3<!-- announced, but run and start date not yet provided--><br><!--
+-->''[[Green Lantern (comic book)|Green Lantern]]'' (vol. 4) #39-52<br><!--
+-->''[[Green Lantern Corps]]'' (vol. 2) #29-47<br><!--
+-->''[[Teen Titans|The Titans]]'' (vol. 2) #15
+|writers        = [[Geoff Johns]]
+|artists        =
+|pencillers     = [[Ivan Reis]]
+|inkers         =
+|letterers      =
+|colorists      =
+|editors        =
+|TPB            = Hardcover
+|ISBN           = 1-4012-2693-0
+|TPB1           = Paperback
+|ISBN1          = 1401229530
+|cat            = Green Lantern
+|cat+1          = Green Lantern titles
+|limsub         = DC Comics
+|sortkey        = Blackest Night
+|self-titled    = y
+}}
+"'''Blackest Night'''" is a 2009–10 American [[comic book]] [[Fictional crossover|crossover]] storyline published by [[DC Comics]], consisting of an eponymous central miniseries, written by [[Geoff Johns]] and penciled by [[Ivan Reis]], along with a number of tie-in issues of various DC monthly books, including ''[[Green Lantern (comic book)|Green Lantern]]'' and ''[[Green Lantern Corps]]''.<ref name="Reis">{{cite web |last=Rogers |first=Vaneta |date=February 19, 2009 |title=Ivan Reis: Preparing for Blackest Night |url=http://www.newsarama.com/comics/020919-Reis.html |url-status=dead |archive-url=https://web.archive.org/web/20090222173200/http://www.newsarama.com/comics/020919-Reis.html |archive-date=February 22, 2009 |access-date=April 4, 2009 <!--review date, not when it was inserted --> |publisher=[[Newsarama]]}}</ref> "Blackest Night" involves [[Nekron]], a personified force of death who reanimates deceased superheroes and seeks to eliminate all life and emotion from the universe. Johns identified the series' central theme as emotion.<ref name="everything">{{cite news |last=Rogers |first=Vaneta |date=March 9, 2009 |title=The Eve of Blackest Night: Geoff Johns on...Everything |url=http://newsarama.com/comics/070903-Geoff-BN.html |url-status=dead |archive-url=https://web.archive.org/web/20090705203420/http://newsarama.com/comics/070903-Geoff-BN.html |archive-date=July 5, 2009 |access-date=August 10, 2009 |publisher=[[Newsarama]]}}</ref> Other tie-ins released included an audio drama from Darker Projects.
+
+==Background==
+[[File:Blackest Night.jpg|thumb|right|upright|Teaser for ''Blackest Night'' from the last page of ''Green Lantern'' (vol. 4) #25. Art by [[Ethan Van Sciver]].|alt=The page depicts three desiccated hands breaking through the ground of a graveyard, one wearing a Black Lantern ring. The text reads: "Across the universe, the dead will rise. Green Lantern: The Blackest Night. Summer 2009"]]
+The storyline was first teased at the conclusion of the "[[Sinestro Corps War]]", on the final page of ''Green Lantern'' (vol. 4) #25. As the war between the Green Lantern and Sinestro Corps reaches its climax, the four Green Lanterns of Earth—[[Hal Jordan]], [[Guy Gardner (character)|Guy Gardner]], [[John Stewart (character)|John Stewart]], and [[Kyle Rayner]]—are told by the Guardians [[Ganthet]] and [[Sayd]] of the Blackest Night prophecy. According to the prophecy, the two existing Corps would be joined by five new ones, each driven by a specific emotion and empowered by a specific color of the emotional spectrum, leading to a "War of Light" that would subsequently destroy the universe. Johns says the prophecy has its origins in the story "Tygers" by [[Alan Moore]], which touches on the rising up of the Guardians' enemies the [[Weaponers of Qward]], [[Ranx the Sentient City]], and the Children of the White Lobe, the destruction of the Green Lanterns, and shows Hal Jordan, Sinestro, and [[Mogo]] dying. Both [[Geoff Johns]] and [[Ethan Van Sciver]] said that "Blackest Night" is the third part of a ''Green Lantern'' event trilogy that began with ''[[Green Lantern: Rebirth|Rebirth]]'' and continued with "Sinestro Corps War".<ref name="Finale">{{cite web |last=Rogers |first=Vaneta |date=December 13, 2007 |title=Happy X-Mas (War Is Over) – Geoff Johns on Green Lantern #25 |url=http://forum.newsarama.com/showthread.php?t=139577 |url-status=dead |archive-url=https://web.archive.org/web/20090121115426/http://forum.newsarama.com/showthread.php?t=139577 |archive-date=January 21, 2009 |access-date=March 4, 2008 |publisher=Newsarama}}</ref> In a December 2007 interview with IGN, Johns stated that he had the monthly ''Green Lantern'' book plotted up until issue #55.<ref>{{cite web |last=Phillips |first=Dan |date=December 14, 2007 |title=Green Lantern: The Dawn of Blackest Night |url=http://www.ign.com/articles/2007/12/15/green-lantern-the-dawn-of-blackest-night |access-date=April 4, 2009 <!--review date, not when it was inserted --> |publisher=[[IGN]]}}</ref> More details for the event were revealed in ''DC Universe'' #0,<ref>{{cite web |last=Manning |first=Shaun |date=February 22, 2008 |title=WonderCon: DC Nation Panel |url=http://www.comicbookresources.com/?page=article&id=12649 |url-status=dead |archive-url=https://web.archive.org/web/20080502172630/http://www.comicbookresources.com/?page=article&id=12649 |archive-date=May 2, 2008 |access-date=April 4, 2009 |publisher=[[Comic Book Resources]]}}</ref> which depicted [[Black Hand (character)|Black Hand]] discovering the black power battery on the planet Ryut.
+
+''Blackest Night'' #0 was released on May 2, 2009 — [[Free Comic Book Day]] — and portrays a series of events leading into ''Blackest Night'' #1. The standalone, self-titled miniseries consists of ''Blackest Night'' #0 and eight monthly issues. Tie-ins include issues of ''Green Lantern'' and ''Green Lantern Corps'' starting with issues #43 and #38, respectively, and nine three-issue limited series: ''Blackest Night: Tales of the Corps'', ''Blackest Night: Superman'', ''Blackest Night: Batman'', ''Blackest Night: Titans'', ''Blackest Night:  Wonder Woman'', ''Blackest Night: Flash'', and ''Blackest Night: JSA''.<ref name="Road1">{{cite web |last=Rogers |first=Vaneta |date=April 4, 2009 |title=The Road to The Blackest Night I: Where Things Stand |url=http://www.newsarama.com/comics/040904-Blackest-Night.html |url-status=dead |archive-url=https://web.archive.org/web/20090407040221/http://www.newsarama.com/comics/040904-Blackest-Night.html |archive-date=April 7, 2009 |access-date=April 4, 2009 |publisher=[[Newsarama]]}}</ref> Van Sciver had planned to work on the opening book, but because of his work on ''[[The Flash: Rebirth]]'' miniseries he was not able to complete both effectively. Reis, Van Sciver, and Joe Prado created many of the designs for the storyline.<ref name="evs1">{{cite news |last=Mitchel |first=Bill |date=July 16, 2009 |title=IN-DEPTH: Ethan Van Sciver |url=http://www.comicbookresources.com/?page=article&id=22074 |url-status=dead |archive-url=https://web.archive.org/web/20090720060144/http://www.comicbookresources.com/?page=article&id=22074 |archive-date=July 20, 2009 |access-date=August 10, 2009 |publisher=[[Comic Book Resources]]}}</ref><ref name="evs2">{{cite news |last=Siuntres |first=John |date=August 8, 2008 |title=Word Balloon: Ethan VanSciver — Flash, GL & More |url=http://www.newsarama.com/comics/080808-WBEthanVanSciver.html |url-status=dead |archive-url=https://web.archive.org/web/20081121150128/http://www.newsarama.com/comics/080808-WBEthanVanSciver.html |archive-date=November 21, 2008 |access-date=August 10, 2009 |publisher=[[Newsarama]]}}</ref><ref name="evs3">{{cite news |last=Rogers |first=Vaneta |date=April 25, 2008 |title=Ethan Van Sciver — Behind the Lanterns' Looks |url=http://www.newsarama.com/comics/040925-EVS-BlackestNight2.html |url-status=dead |archive-url=https://web.archive.org/web/20090428083937/http://www.newsarama.com/comics/040925-EVS-BlackestNight2.html |archive-date=April 28, 2009 |access-date=August 10, 2009 |publisher=[[Newsarama]]}}</ref><ref>{{cite web |date=November 26, 2009 |title=DC Comics Explores the Blackest Night |url=http://www.dreadcentral.com/news/34701/dc-comics-explore-blackest-night |url-status=dead |archive-url=https://web.archive.org/web/20091129144414/http://www.dreadcentral.com/news/34701/dc-comics-explore-blackest-night |archive-date=November 29, 2009 |access-date=February 6, 2011 |publisher=[[Dread Central]]}}</ref><ref>{{Cite web |last=Johnston |first=Rich |author-link=Rich Johnston |date=January 29, 2011 |title=Joe Prado's Blackest Night Character Designs. Around A Hundred Of Them. |url=https://bleedingcool.com/comics/recent-updates/joe-prados-blackest-night-character-designs-around-a-hundred-of-them/ |website=[[Bleeding Cool]]}}</ref>
+
+==Plot==
+===Prelude===
+Green Lanterns [[List of Green Lanterns#Ash|Ash]] and [[List of Green Lanterns#Saarek|Saarek]] find the Black Central Battery at a reportedly classified location within Sector 666. After touching the battery, Saarek reports that their presence has awakened something. The two are killed when two monstrous hands emerge from below them.<ref name="gl42">{{Cite comic|Writer = Johns, Geoff|Title = Green Lantern|Volume = 1|Issue = 42|Date = July 2009|Publisher = DC Comics}}</ref> In ''Green Lantern Corps'', a field of asteroids in an unknown region of space is depicted with the colors of the spectrum in the background. The asteroids, which are apparently the remains of the planet Xanshi, are shattered and a large quantity of black power rings move through them.<ref name="glc38">{{Cite comic|Writer = Tomasi, Peter|Title = Green Lantern Corps|Volume = 2|Issue = #38|Date = July 2009|Publisher = DC Comics}}</ref>
+
+===Central storyline===
+In [[Gotham City]], Black Hand removes [[Batman|Bruce Wayne]]'s skull from his grave and carries it with him, and a Black Lantern power battery begins to charge.<ref name="bn0">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #0|Date = July 2009|Publisher = DC Comics}}</ref> The Guardians of [[Oa (comics)|Oa]] observe the War of Light and realize that [[Ganthet]] and Sayd are correct, but are kept from intervening by Scar, who kills one and imprisons the rest. Thousands of black rings assault the Corps' crypt, creating a [[Black Lantern Corps]]. Hal Jordan and the newly revived [[Barry Allen|Flash]] investigate Bruce's grave and are attacked by Black Lantern [[Martian Manhunter]]. On Oa, the Green Lanterns are met by all of the resurrected Lanterns, now reborn as Black Lanterns. [[Hawkgirl (Kendra Saunders)|Hawkgirl]] and [[Hawkman (Carter Hall)|Hawkman]] are killed by Black Lanterns [[Elongated Man]] and [[Sue Dibny]] and join the growing Black Corps.<ref name="bn1">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #1|Date = September 2009|Publisher = DC Comics}}</ref>
+
+The [[Atom (Ray Palmer)|Atom]] is tricked into visiting Black Lantern Hawkman, and [[Deadman (character)|Deadman]] is the first to realize the dead superheroes are not their true selves when his physical body revives as a Black Lantern while he is still free. [[Aquaman]] and his Black Lantern family, including [[Garth (comics)|Tempest]], attack [[Mera (character)|Mera]], who flees. A black ring strikes the [[Spectre (DC Comics character)|Spectre]], binding the spirit Aztar and reviving [[Crispus Allen]] as a Black Lantern. The black rings are unable to revive those who are at peace, such as former Dove [[Hawk and Dove|Don Hall]], even as his partner Hawk and his brother [[Hank Hall|Hank]] rise. In Gotham, Hal Jordan and Barry Allen are confronted by several Black Lanterns, including [[Ronnie Raymond]].<ref name="bn2">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #2|Date = October 2009|Publisher = DC Comics}}</ref> Hal, the Atom and Flash battle the Black Lanterns when the [[Indigo Tribe]] appear and use their Indigo power with other rings to obliterate the Dibnys. Mera finds [[Jason Rusch|Firestorm]] (Jason Rusch) and [[Gehenna (comics)|Gehenna]], who merge to create a new Firestorm. Indigo says that the Lantern Corps must unite to defeat the Black one. The Indigo Tribe depart with Hal and leave the other heroes to fight the invading Black Lanterns. Ronnie separates Jason and Gehenna, kills Gehenna, and absorbs Jason's consciousness. Black rings revive the villains buried below the [[Hall of Justice (comics)|Hall of Justice]].<ref name="bn3">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #3|Date = November 2009|Publisher = DC Comics}}</ref>
+
+Mera and Flash flee the Black Lanterns and use Atom's powers to escape through a telephone line. Flash leaves and gives all the superheroes in the US the key to defeat the Black Lanterns—merging lights with a Green Ring—and the Atom, Mera and the [[Justice Society of America]] battle many Lanterns together. [[Jean Loring]] kills and causes [[Damage (DC Comics)|Damage]] to revive as a Lantern, which fully empowers the Black Lantern power battery. Barry arrives in Coast City, where Scar has teleported with the Black Central Power Battery. Black Hand then summons [[Nekron]], who revives the residents of Coast City.<ref name="bn4">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #4|Date = December 2009|Publisher = DC Comics}}</ref> The JLA, [[Wally West]], the Teen Titans, and [[Bart Allen]] fight the Coast City Black Lanterns. Hal and Lantern Corps members [[Carol Ferris]], [[Sinestro]], [[Atrocitus]], [[Larfleeze]], [[Saint Walker]], Indigo-1, [[Ganthet]], and Sayd return to Earth and attack Scar while she is attacking Wally West. Nekron has Batman's corpse—later revealed to be a clone—and sends rings to [[Superman]], [[Wonder Woman]], [[Conner Kent|Superboy]], [[Green Arrow]], Kid Flash, [[Donna Troy]], [[Ice (character)|Ice]], and [[Animal Man]], previously killed and revived into Black Lantern members by Nekron as Hal and Barry try to outrace their rings.<ref name="bn5">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #5|Date = January 2010|Publisher = DC Comics}}</ref>
+
+Allen time-travels himself and Jordan two seconds into the future and disables their rings. Mera and the Atom arrive. John Stewart warns Hal that every Black Lantern in the universe is heading for Earth. Jordan says they need the entire seven Corps to unite to produce White Light. While they summon the seven Corps to Earth, [[Ganthet]] duplicates the seven colored rings present and deputizes non-Corps members Ganthet as Green, Barry Allen as Blue, [[Lex Luthor]] as Orange, [[Scarecrow (DC Comics)|Scarecrow]] as Yellow, Atom as Indigo, Mera as Red, and Wonder Woman as Violet.<ref name="bn6">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #6|Date = February 2010|Publisher = DC Comics}}</ref> The Corps Leaders and deputies fight Nekron but cannot stop him, partly because Luthor is overwhelmed by the Orange light of avarice. John Stewart is trying to stop the horde of Black Lanterns when the combined Six Corps arrive to join and battle the Black Lanterns. In Coast City, Dove tries to reach the Black Lantern Battery but is forced to retreat as a being from within the battery tries to escape. Nekron kills a Guardian and uses his blood to cause a cocoon to emerge. Ganthet reveals that this is the [[Life Entity]] that triggered existence and that life began on Earth, not Oa, and that the Guardians upheld the lie to protect the Entity and justify their power. Nekron stabs the Entity, causing living beings across the universe to feel pain, and Sinestro surrenders to his anger at [[Abin Sur]]'s death and stabs [[Ganthet]], much to Hal Jordan's chagrin.
+
+Hal realizes the Entity is like [[Parallax (character)|Parallax]] and [[Ion (DC Comics)|Ion]] and needs a guide, and tries to merge with it, but is blocked by Sinestro, who is unhappy that Hal recently reused Parallax, who Sinestro feels he deserves. Sinestro demands the Entity's power, emerges and is told "Thaal Sinestro of Korugar. Destiny awaits".<ref name="bn7">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #7|Date = April 2010|Publisher = DC Comics}}</ref> Sinestro is promptly killed by Nekron, but the White Ring revives him. Sinestro retaliates and kills Nekron, but Nekron's scythe is picked up by a Black Lantern human who transforms into Nekron and says "death cannot be stopped". [[Ganthet]] notes that Sinestro cannot properly control the Entity as it is being powered by his ego rather than his will to live. The united Lantern Corps attacks Nekron. Deadman possesses Guy Gardner and explains that Black Hand is Nekron's tether and that he must be revived to defeat Nekron. Nekron separates Sinestro from the Entity and Hal says that Nekron opened the door to death but it was the decision of the heroes to live. Hal merges with the Entity and transforms himself and the Black Lantern heroes into a [[White Lantern Corps]], who restore Black Hand to life. This causes Black Hand to regurgitate a White Ring which revives the [[Anti-Monitor]] trapped in the Black Lantern Power Battery. Nekron briefly fights the Anti-Monitor and banishes him to the antimatter universe. Black Hand regurgitates a cluster of white rings that destroy Nekron. The rings bring only 12 Black Lanterns back to life: [[Maxwell Lord]], [[Jade (DC Comics)|Jade]], Hawk, [[Captain Boomerang]], Ronnie Raymond, Martian Manhunter, Aquaman, [[Hawkman]], [[Hawkgirl]], [[Osiris (DC Comics)#Amon Tomaz|Osiris]], [[Eobard Thawne]], and Deadman.
+
+Upon seeing Aquaman alive, Mera's love causes her ring to depart and shatter, sending her into [[cardiac arrest]]. Star Sapphire and Saint Walker join their powers together to restore her, and Aquaman and Mera share a joyful reunion. Hawkgirl recalls her past lives, removes her helmet to reveal that she is again Shiera Hall and embraces Hawkman. Superman expresses his happiness that J'onn has returned. Firestorm forcibly separates into Ronald Raymond and Jason, the latter is angry that Ronald has killed his girlfriend. As Mera comforts Jason, Ronald is confused and asks Atom what is happening and where [[Martin Stein]] is. Guy lets Lord, who is controlling his mind, escape. Jade kisses Kyle, unaware he is in love with fellow Green Lantern [[Soranik Natu]]. Osiris is confused and says he wants to go home. Superboy and Kid Flash, who only knows him by name, try to figure out who he is. After Professor Zoom flees [[The Flash: Rebirth|into the past]], Flash knocks out Captain Boomerang, while saying bloody hell to him. Barry notes that Ralph and Sue Dibny have not been revived. Deadman, the only one of the resurrected still wearing a White Ring, is stunned to realize he is alive and something is wrong. Larfleeze returns an unconscious Lex Luthor stripped of his ring, who briefly realizes that he has given something away, and demands that Sayd honors her debt to him.
+
+Ganthet protests but Sayd tells him all is well and believes she can somehow help Larfleeze. Sayd says the future of the Lantern Corps must be discussed. Saint Walker notices that the Indigo Tribe and Black Hand are missing. On the Indigo home world, Black Hand is now a member and prisoner of the Indigo Tribe, and is chained to an indigo power staff. Hal and Barry realize that because Black Lantern Batman was a fake, Bruce Wayne is still alive somewhere. Barry wonders what became of the Entity; Hal says it is still out there, urging them all to move past the events of the Blackest Night. Elsewhere, on a distant road, a [[White Lantern Corps|White Power Battery]] is found in a crater.<ref name="bn8">{{Cite comic|Writer = Johns, Geoff|Title = Blackest Night|Volume = 1|Issue = #8|Date = May 2010|Publisher = DC Comics}}</ref>
+
+==Follow-up==
+Following the end of "Blackest Night", DC launched ''[[Brightest Day]]'', a 25-issue bi-weekly comic book written by Geoff Johns and [[Peter Tomasi]].<ref>{{cite web |first=Alex |last=Segura |url=http://dcu.blog.dccomics.com/2010/01/11/dcu-in-2010-kick-off-your-monday-with-some-major-news/ |title=DCU in 2010: Kick Off Your Monday With Some Major News |work=The Source |publisher=DC Comics.com |date=January 11, 2010 |access-date=January 11, 2010}}</ref><ref>{{cite web |last=Melrose |first=Kevin |date=January 11, 2010 |title=DC announces Blackest Night follow-up: Brightest Day |url=http://robot6.comicbookresources.com/2010/01/dc-announces-blackest-night-followup-brightest-day/ |url-status=dead |archive-url=https://web.archive.org/web/20120512114813/http://robot6.comicbookresources.com/2010/01/dc-announces-blackest-night-followup-brightest-day/ |archive-date=May 12, 2012 |access-date=January 11, 2010 |publisher=[[Comic Book Resources]]}}</ref> Also, ''[[Action Comics]]'' features a story arc in which Lex Luthor starts a universal quest to locate the power sources of the Black Lantern Corps after being infused with the Orange Light of Avarice.<ref>{{Cite comic|Writer = [[Paul Cornell|Cornell, Paul]]|Title = [[Action Comics]]|Volume = 1|Issue = #890|Date = June 2010|Publisher = DC Comics}}</ref>
+
+== Titles involved ==
+{| class="wikitable" style="text-align: center"
+!Title
+!Issue(s)
+!Writer(s)
+!Artist(s)
+!Notes
+|-
+! colspan="5" |Preludes
+|-
+|'''''Green Lantern'''''
+|#39-42
+|Geoff Johns
+|[[Rafael Albuquerque]], Eddy Barrows, Doug Mahnke, Philip Tan
+| "Agent Orange" storyline
+|-
+|'''''Green Lantern Corps'''''
+|#29-38
+|Peter J. Tomasi
+|Patrick Gleason
+| "Sins of the Star Sapphire" and "Emerald Eclipse" storylines
+|-
+|'''''Solomon Grundy'''''
+|#7
+|colspan="2" |Scott Kolins
+|
+|-
+|'''''Titans'''''
+|#15
+|[[J. T. Krul|J.T. Krul]]
+|Jose Luis
+|
+|-
+! colspan="5" |Main series
+|-
+|'''''Blackest Night'''''
+|#0-8
+|Geoff Johns
+|Ivan Reis
+|
+|-
+! colspan="5" |"War of Light" tie-in
+|-
+|'''''Green Lantern'''''
+|#43-52
+|Geoff Johns
+|Doug Mahnke
+|rowspan="2"|"War of Light" storyline
+|-
+|'''''Green Lantern Corps'''''
+|#39-46
+|Peter J. Tomasi
+|Patrick Gleason
+|-
+! colspan="5" |Other tie-ins
+|-
+|'''''Blackest Night: Batman'''''
+|#1-3
+|Peter J. Tomasi
+|Adrian Syaf
+| rowspan="7" | "Blackest Night" tie-in miniseries
+|-
+|'''''Blackest Night: The Flash'''''
+|#1-3
+|Geoff Johns
+|Scott Kolins
+|-
+|'''''Blackest Night: JSA'''''
+|#1-3
+|[[Tony Bedard]], [[James Robinson (writer)|James Robinson]]
+|Eddy Barrows, Marcos Marz, Eduardo Pansica
+|-
+|'''''Blackest Night: Superman'''''
+|#1-3
+|James Robinson
+|Eddy Barrows, Allan Goldman
+|-
+|'''''Blackest Night: Tales of the Corps'''''
+|#1-3
+|Geoff Johns, Peter J. Tomasi
+|Eddy Barrows, Gene Ha, Tom Mandrake, Mike Mayhew, Rag Morales, [[Jerry Ordway]], Chris Samnee
+|-
+|'''''Blackest Night: Titans'''''
+|#1-3
+|J.T. Krul
+|Ed Benes
+|-
+|'''''Blackest Night: Wonder Woman'''''
+|#1-3
+|[[Greg Rucka]]
+|Eduardo Pansica, Nicola Scott
+|-
+|'''''Untold Tales of Blackest Night'''''
+|#1
+|Geoff Johns, J.T. Krul, Jeremy Love, Adam Schlagman, Peter J. Tomasi, Ethan Van Sciver
+|Ed Benes, Brett Booth, Jason Fabok, Patrick Gleason, Ivan Reis, Ethan Van Sciver
+| "Blackest Night" one-shot issue
+|-
+|'''''Adventure Comics'''''
+|#4-5, 7
+|Tony Bedard, Sterling Gates, Geoff Johns
+|Travis Moore, Jerry Ordway
+|
+|-
+|'''''The Atom and Hawkman'''''
+|#46
+|Geoff Johns
+|Fernando Pasarin, Ryan Sook
+|
+|-
+|'''''Booster Gold'''''
+|#26-27
+|Dan Jurgens
+|Dan Jurgens, Mike Norton, Norman Rapmund
+|
+|-
+|'''''Catwoman'''''
+|#83
+|Tony Bedard
+|Luciana Del Negro, Fabrizio Fiorentino, Marcos Marz, Ibraim Roberson
+| 
+|-
+|'''''Doom Patrol'''''
+|#4-5
+|[[Keith Giffen]]
+|Justiniano
+|
+|-
+|'''''Green Arrow and Black Canary'''''
+|#30
+|J.T. Krul
+|Diogenes Neves
+|
+|-
+|'''''Justice League of America'''''
+|#39-40
+|James Robinson
+|[[Mark Bagley]]
+|
+|-
+|'''''Outsiders'''''
+|#24-25
+|Peter J. Tomasi
+|Derec Donovan, Fernando Pasarin
+|
+|-
+|'''''Phantom Stranger'''''
+|#42
+|Peter J. Tomasi
+|Adrian Syaf
+|
+|-
+|'''''The Power of Shazam!'''''
+|#48
+|Eric Wallace
+|Don Kramer
+|
+|-
+|'''''The Question'''''
+|#37
+|[[Dennis O'Neil]], Greg Rucka
+|[[Denys Cowan]]
+|
+|-
+|'''''R.E.B.E.L.S.'''''
+|#10-11
+|Tony Bedard
+|Andy Clarke, Claude St. Aubin
+|
+|-
+|'''''Starman'''''
+|#81
+|James Robinson
+|Fernando Dagnino, Bill Sienkiewicz
+|
+|-
+|'''''Suicide Squad'''''
+|#67
+| rowspan="2" | John Ostrander, Gail Simone
+| rowspan="2" | J. Calafiore
+| rowspan="2" | "Danse Macabre" storyline
+|-
+|'''''Secret Six'''''
+|#17-18
+|-
+|'''''Superman/Batman'''''
+|#66-67
+| colspan="2" |Scott Kolins
+| 
+|-
+|'''''Teen Titans'''''
+|#77-78
+|J.T. Krul
+|Joe Bennett
+| 
+|-
+|'''''Weird Western Tales'''''
+|#71
+|Dan Didio
+|Renato Arlem
+|
+|-
+|'''''Action Comics'''''
+|#890
+|Paul Cornell
+|Pete Woods
+|"Blackest Night Aftermath"
+|-
+! colspan="5" |Behind-the-scenes
+|-
+|'''''Blackest Night: Director's Cut'''''
+|#1
+|
+|
+|
+|}
+
+==Collected editions==
+The series and its tie-in issues have been collected into a number of [[Trade paperback (comics)|volumes]]:
+* '''''Blackest Night''''' (collects ''Blackest Night'' #0–8, 304 pages, hardcover, July 2010, {{ISBN|1-4012-2693-0}}; paperback, July 2011, {{ISBN|1-4012-2953-0}})
+* '''''Blackest Night''''' (collects ''Blackest Night'' #0–8, and ''Blackest Night Directors Cut'' #1, trade paperback, 269 pages.)
+* '''''Blackest Night: Green Lantern''''' (collects ''[[Green Lantern (comic book)|Green Lantern]]'' (vol. 4) #43–52, 272 pages, hardcover, July 2010, {{ISBN|1-4012-2786-4}}; paperback, July 2011, {{ISBN|1-4012-2952-2}})
+* '''''Blackest Night: Green Lantern Corps''''' (collects ''Green Lantern Corps'' (vol. 2) #39–47, 264 pages, hardcover, July 2010, {{ISBN|1-4012-2788-0}}; paperback, July 2011, {{ISBN|1-4012-2805-4}})
+* '''''Blackest Night: Tales of the Corps''''' (collects ''Tales of the Corps'' #1–3 and stories from ''[[Green Lantern (comic book)|Green Lantern]]'' (vol. 4) #49 and ''[[Adventure Comics]]'' (vol. 2) #4–5, 176 pages, hardcover, July 2010, {{ISBN|1-4012-2790-2}}; paperback, August 2011, {{ISBN|1-4012-2807-0}})
+* '''''Blackest Night: Black Lantern Corps''' '''Volume One''''' (collects ''Blackest Night: Batman'' #1–3, ''Blackest Night: Superman'' #1–3, and ''Blackest Night: Titans'' #1–3; 256 pages, hardcover, July 2010, {{ISBN|1-4012-2784-8}}; paperback, July 2011, {{ISBN|1-4012-2804-6}})
+* '''''Blackest Night: Black Lantern Corps Volume Two''''' (collects ''Blackest Night: Wonder Woman'' #1–3, ''Blackest Night: JSA'' #1–3 and ''Blackest Night: The Flash'' #1–3, 240 pages, hardcover, July 2010, {{ISBN|1-4012-2785-6}}; paperback, July 2011, {{ISBN|1-4012-2803-8}})
+* '''''Blackest Night: Rise of the Black Lanterns''''' (collects ''The Atom and Hawkman'' #46, ''The Question'' #37, ''Phantom Stranger'' (vol. 2) #42, ''Starman'' (vol. 2) #81, ''The Power of Shazam!'' #48, ''Catwoman'' (vol. 3) #83, ''[[Weird Western Tales]]'' #71, ''Green Arrow'' (vol. 4) #30, and ''[[Adventure Comics]]'' (vol. 2) #7; 256 pages, hardcover, July 2010, {{ISBN|1-4012-2789-9}}; paperback, August 2011, {{ISBN|1-4012-2806-2}})
+* '''''Absolute Blackest Night''''' (collects ''Blackest Night'' #0-8, select pages from ''DC Universe'' #0 and ''Green Lantern'' (vol. 4) #44-48, 50–52). Bonus material includes: Character sketches and designs, ''Blackest Night'' #1 script and commentary on the ''Blackest Night'' series from several members of the creative team. 576 pages; hardcover. Release date: July 16, 2013. {{ISBN|978-1401240738}}.
+* '''''Blackest Night Saga''''' (''DC Essential Edition''): Collects ''Blackest Night'' #0-8. 344 pages; paperback. Release date: February 12, 2019. {{ISBN|978-1401290917}}.
+* '''''Blackest Night Omnibus''''' (10th Anniversary): Collects ''Adventure Comics'' #4, 5, 7; ''Blackest Night'' #0-8; ''Blackest Night: Batman'' #1-3; ''Blackest Night: The Flash'' #1-3; ''Blackest Night: JSA'' #1-3; ''Blackest Night: Superman'' #1-3; ''Blackest Night: Tales of the Corps'' #1-3; ''Blackest Night: Titans'' #1-3; ''Blackest Night: Wonder Woman'' #1-3; ''Catwoman'' (vol. 3) #83; ''Green Arrow'' (vol. 4) #30; ''Green Lantern'' (vol. 4) #43-53; ''Green Lantern Corps'' (vol. 2) #39-47; ''Phantom Stranger'' (vol. 2) #42; ''Starman'' (vol. 2) #81; ''Suicide Squad'' #67; ''The Atom and Hawkman'' #46; ''The Power of Shazam!'' #48; ''The Question'' #37; ''Untold Tales of Blackest Night'' #1 and ''Weird Western Tales'' #71. 1664 pages; hardcover. Release date: June 11, 2019. {{ISBN|978-1401291198}}.
+
+==Reception==
+<!-- Also add reviews -->
+The series has received generally positive reviews. [[Comic Book Resources]] gave the first and third issues in the series 5 out of 5 [[Star (classification)|stars]],<ref>{{cite web |author=Zawisza |first=Doug |date=July 15, 2009 |title=Review: Blackest Night #1 |url=http://www.comicbookresources.com/?page=user_review&id=1220 |url-status=dead |archive-url=https://web.archive.org/web/20090719053240/http://www.comicbookresources.com/?page=user_review&id=1220 |archive-date=July 19, 2009 |access-date=October 28, 2009 |publisher=Comic Book Resources}}</ref><ref>{{cite web |author=Birdie |first=Benjamin |date=August 13, 2009 |title=Review: Blackest Night #3 |url=http://www.comicbookresources.com/?page=user_review&id=1299 |url-status=dead |archive-url=https://web.archive.org/web/20090815163841/http://www.comicbookresources.com/?page=user_review&id=1299 |archive-date=August 15, 2009 |access-date=October 28, 2009 |publisher=Comic Book Resources}}</ref> and the second received 4.5 stars.<ref>{{cite web |author=Zawisza |first=Doug |date=September 16, 2009 |title=Review: Blackest Night #2 |url=http://www.comicbookresources.com/?page=user_review&id=1406 |url-status=dead |archive-url=https://web.archive.org/web/20090922185425/http://www.comicbookresources.com/?page=user_review&id=1406 |archive-date=September 22, 2009 |access-date=October 28, 2009 |publisher=Comic Book Resources}}</ref> IGN also reviewed the series favorably, and rated the first three individual issues between 8.7 and 9.3 out of a possible 10.<ref>{{cite web |author=Schedeen |first=Jesse |date=July 15, 2009 |title=Blackest Night #1 Review |url=http://comics.ign.com/articles/100/1004158p1.html |url-status=dead |archive-url=https://web.archive.org/web/20090719093458/http://comics.ign.com/articles/100/1004158p1.html |archive-date=July 19, 2009 |access-date=October 28, 2009 |publisher=IGN}}</ref><ref>{{cite web |author=Phillips |first=Dan |date=August 12, 2009 |title=Blackest Night #2 Review |url=http://comics.ign.com/articles/101/1013596p1.html |url-status=dead |archive-url=https://web.archive.org/web/20090817015817/http://comics.ign.com/articles/101/1013596p1.html |archive-date=August 17, 2009 |access-date=October 28, 2009 |publisher=IGN}}</ref><ref>{{cite web |last=Phillips |first=Dan |date=September 16, 2009 |title=Blackest Night #3 Review |url=http://comics.ign.com/articles/102/1025641p1.html |url-status=dead |archive-url=https://web.archive.org/web/20090922172715/http://comics.ign.com/articles/102/1025641p1.html |archive-date=September 22, 2009 |access-date=October 28, 2009 |publisher=IGN}}</ref>
+
+==Alternate versions==
+In ''[[Tales from the Dark Multiverse]]: Blackest Night'', an alternate outcome to ''Blackest Night'' is depicted where Sinestro's ego refused to release his control of the Entity, with the result that all life was destroyed by the Black Lanterns. By the time of the storyline, a few weeks after Nekron's attack, the only living beings in the universe are [[Sinestro]], [[Lobo (character)|Lobo]], [[Hawk and Dove|Dove]], and Mister Miracle, and Sinestro is only half-alive because the Entity keeps him going even as he wears a Black ring at the same time. Mister Miracle is able to find a means of channelling the Source Wall through Dove to recreate the universe, but when Nekron - now possessing Darkseid - reveals that this will literally remake the universe over, Mister Miracle kills Dove as he cannot bring himself to erase Barda from existence, which causes Lobo to kill Mister Miracle in retribution for killing the only thing in the universe he considered "pure". As a last resort, Sinestro uses Lobo to channel the life energy into the universe, but this only results in the creation of a more twisted form of 'life' that follows Lobo's example by trying to destroy all remnants of the old existence and their own enemies, leaving Sinestro fighting to escape this world even as higher entities keep him contained so that he cannot contaminate other realities.
+
+==In other media==
+* There are skin pack DLCs available for ''[[Injustice: Gods Among Us]]'', featuring ''Blackest Night'' - inspired skins for Superman, Batman, the Flash, Hawkgirl, Aquaman and Doomsday. The Injustice mobile platform version features ''Blackest Night'' skins for Superman, Batman, Flash, Hawkgirl, Doomsday and the Martian Manhunter.
+* A downloadable ''Blackest Night'' Batman skin appears in ''[[Batman: Arkham Origins]]''.
+* The storyline is featured in several ''[[DC Universe Online]]'' episodes, which introduces several of the Lantern Corps members to the game, many of which can be seen in an instanced [[overworld]] called "[[Metropolis (comics)|Metropolis]] Battlezone" and several other missions, that finally leads to a battle against Nekron and Black Hand in an eight-player instance of Metropolis at night.
+* Purchasable "Black Lantern" skins for Superman and Wonder Woman were added to ''[[MultiVersus]]'' in the 1.04 update in October 2022.
+* The premise of ''Blackest Night'' serves as the single-player campaign mode for the [[turn-based]] [[mobile game|mobile]] [[role-playing game]] ''[[DC Legends]]''.  Players must battle against DC characters that were turned into Black Lanterns, with the final [[boss (video gaming)|boss]] being Nekron himself.<ref>{{cite web |last1=Nieves |first1=Davey |date=November 11, 2016 |title=Review: DC Legends brings the Blackest Night to mobile gaming |url=https://www.comicsbeat.com/review-dc-legends-brings-the-blackest-night-to-mobile-gaming/ |access-date=March 31, 2023 |website=The Beat}}</ref>
+* ''[[The Flash (2014 TV series)|The Flash]]'' [[showrunner]] Eric Wallace planned to make a ''Blackest Night'' adaptation for an [[Arrowverse]] [[Crossover (fiction)|crossover]] event for the show's [[The Flash season 9|ninth season]], hence why he teased [[John Diggle (character)|John Diggle]] finding a mysterious box in the show's [[The Flash season 8|eighth season]] to set-up such storyline. However, Wallace saw himself forced to scrap his plans once [[The CW]] decided not to renew ''The Flash'' for a tenth season, forcing him to change his plans to wrap-up the show with the ninth season.<ref name="Season10ScreenRant">{{Cite web |last=Rangel |first=Felipe |date=February 7, 2023 |title=The Flash Season 10 Would've Paid Off Arrowverse's Justice League Tease |url=https://screenrant.com/flash-season-10-story-crossover-justice-league/ |url-status=live |archive-url=https://web.archive.org/web/20230222223855/https://screenrant.com/flash-season-10-story-crossover-justice-league/ |archive-date=February 22, 2023 |access-date=May 12, 2023 |website=[[Screen Rant]]}}</ref>
+
+==See also==
+* ''[[Brightest Day]]''
+* [[Black Lantern Corps]]
+* [[Publication history of DC Comics crossover events]]
+
+==References==
+{{reflist|2}}
+
+==External links==
+* [http://dccomics.com/sites/greenlantern/ ''Blackest Night'' mini-site] {{Webarchive|url=https://web.archive.org/web/20120304114311/http://dccomics.com/sites/greenlantern/ |date=2012-03-04}} at DC Comics
+* [https://web.archive.org/web/20090629185013/http://comics.ign.com/launch/blackest-night.html ''Blackest Night'' mini-site] at [[IGN]]
+* [[DCDatabase:Blackest Night|''Blackest Night'']] at the DC Database
+* {{comicbookdb|type=storyarc|id=3350|title=''Blackest Night''}}
+* {{cite news | last = Rogers | first = Vaneta | title = Green Into Black: Geoff Johns on the Night to Come | publisher = [[Newsarama]] | date = 2009-03-17 | url = http://www.newsarama.com/comics/030917-Johns-Black.html | archive-url = https://web.archive.org/web/20090320121730/http://www.newsarama.com/comics/030917-Johns-Black.html | url-status = dead | archive-date = March 20, 2009 | access-date = 2009-08-10}}
+* [http://www.bestgraphicnovels.co/review-blackest-night-tpb/ ''Blackest Night'' review] {{Webarchive|url=https://web.archive.org/web/20141219151830/http://www.bestgraphicnovels.co/review-blackest-night-tpb/ |date=2014-12-19}}
+
+{{Green Lantern}}
+{{DC events}}
+[[Category:2009 comics debuts]]
+[[Category:2010 comics endings]]
+[[Category:Comics about the end of the universe]]
+[[Category:Comics by Geoff Johns]]
+[[Category:Fiction about personifications of death]]
+[[Category:Fiction about resurrection]]
+[[Category:Horror comics]]

@@ -1,0 +1,2060 @@
+{
+  "slug": "green-lantern",
+  "title": "Green Lantern",
+  "subtitle": "Geoff Johns, Rebirth to Blackest Night",
+  "kind": "comics",
+  "popularity": 50,
+  "year": "2004–2011",
+  "blurb": "192 issues from Green Lantern: Rebirth #1 to Blackest Night #8 and its coda, in the order they're meant to be read.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#117A3E",
+  "accentDark": "#3BB273",
+  "tiers": true,
+  "notes": [
+    [
+      "Tiers.",
+      "1 is the readable path — Rebirth, the Green Lantern monthly, and Blackest Night itself. 2 is the Corps book, which is where Guy, Kyle and John live and where half of both wars is fought. 3 is genuinely optional. The minimum viable path is Tier 1 alone."
+    ],
+    [
+      "The mantle, not the man.",
+      "Hal Jordan is the lead and this is his comeback, but the ring has had four holders from Earth and all four are in here: John Stewart and Guy Gardner throughout, Kyle Rayner carrying the Corps book. This is post-Crisis continuity, before Flashpoint rebooted it."
+    ],
+    [
+      "Where it stops.",
+      "The arc ends at Blackest Night #8. The ten Green Lantern issues banded Brightest Day are here as a tier 3 coda because they clear up after it — the wider Brightest Day event is a different book about other characters and is deliberately not in this list."
+    ],
+    [
+      "Not the television show.",
+      "Lanterns, elsewhere in the catalogue, is the 2026 series. This is the comics, and the two share almost nothing but a ring."
+    ],
+    "Issue ranges machine-read from Wikipedia: the collected-editions tables for Green Lantern vol. 4 and Green Lantern Corps vol. 2, the Sinestro Corps War article's own part-by-part breakdown, and the Blackest Night article's titles-involved table, which is where the tie-in rows and their writers come from."
+  ],
+  "sections": [
+    {
+      "id": "rebirth",
+      "tier": 1,
+      "title": "Green Lantern: Rebirth",
+      "sub": "2004–2005 · start here",
+      "intro": "Six issues that put Hal Jordan back in the ring and, more usefully, set out the rules everything after this runs on. You do not need to have read a Green Lantern comic before it; it is written for someone who has not.",
+      "items": [
+        {
+          "id": "gl-rebirth-1",
+          "t": "Green Lantern: Rebirth",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-rebirth-2",
+          "t": "Green Lantern: Rebirth",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-rebirth-3",
+          "t": "Green Lantern: Rebirth",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-rebirth-4",
+          "t": "Green Lantern: Rebirth",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-rebirth-5",
+          "t": "Green Lantern: Rebirth",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-rebirth-6",
+          "t": "Green Lantern: Rebirth",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-secretfiles-1",
+          "t": "Green Lantern Secret Files and Origins 2005",
+          "n": "#1",
+          "note": "profiles and a short story; collected with Rebirth",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The miniseries",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern:_Rebirth"
+        }
+      ]
+    },
+    {
+      "id": "nofear",
+      "tier": 1,
+      "title": "No Fear · Revenge of the Green Lanterns",
+      "sub": "2005–2006 · the monthly begins",
+      "intro": "Johns spends the first stretch of the monthly rebuilding the job — Hal back in a cockpit, the Corps back on Oa, a villain list worth having. The two trades split at #6, and the run gets noticeably better across the second one.",
+      "items": [
+        {
+          "id": "gl-v4-1",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-2",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-3",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-4",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-5",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-6",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-7",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-8",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-9",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-10",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-11",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-12",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-13",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "recharge",
+      "tier": 2,
+      "title": "Green Lantern Corps: Recharge",
+      "sub": "2005–2006 · the Corps book starts here",
+      "intro": "A five-issue miniseries that reopens the Corps as a going concern and hands Guy Gardner and Kyle Rayner the book they spend the next six years in. Tier 2 because the main title carries the plot without it — but half of both wars is fought over here, and reading only the Hal issues leaves the Corps as scenery.",
+      "items": [
+        {
+          "id": "gl-recharge-1",
+          "t": "Green Lantern Corps: Recharge",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-recharge-2",
+          "t": "Green Lantern Corps: Recharge",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-recharge-3",
+          "t": "Green Lantern Corps: Recharge",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-recharge-4",
+          "t": "Green Lantern Corps: Recharge",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-recharge-5",
+          "t": "Green Lantern Corps: Recharge",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern Corps vol. 2",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_Corps"
+        }
+      ]
+    },
+    {
+      "id": "corpsbook",
+      "tier": 2,
+      "title": "To Be a Lantern · The Dark Side of Green",
+      "sub": "2006–2007 · Guy, Kyle, Soranik, Vath and Isamot",
+      "intro": "The ongoing Corps book, running alongside the Green Lantern monthly from here to the end of the list. It is a police procedural set in space and it is very good at being one.",
+      "items": [
+        {
+          "id": "gl-glc-1",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-2",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-3",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-4",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-5",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-6",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-7",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-8",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-9",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-10",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-11",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-12",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-13",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern Corps vol. 2",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_Corps"
+        }
+      ]
+    },
+    {
+      "id": "wanted",
+      "tier": 1,
+      "title": "Wanted: Hal Jordan",
+      "sub": "2007 · the last stretch before the war",
+      "intro": "Back on the main title. The final issues here are the ones the Sinestro Corps War is built on top of, and the Tales of the Sinestro Corps hardcover collects parts of them for that reason.",
+      "items": [
+        {
+          "id": "gl-v4-14",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-15",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-16",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-17",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-18",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-19",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-20",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "sinestro",
+      "tier": 1,
+      "title": "The Sinestro Corps War",
+      "sub": "2007 · eleven parts across two books",
+      "intro": "The crossover that made the run. It alternates between the two monthlies chapter by chapter, which is the only genuinely difficult thing about reading it — the order below is the one the article states: the one-shot, then the two books trading off, then an epilogue back in the main title.\n\nGreen Lantern Corps #19 is not a numbered part. It was reworked after the fact and sits with the war in every collection of it, so it sits here.",
+      "items": [
+        {
+          "id": "gl-scwspecial-1",
+          "t": "Green Lantern: Sinestro Corps Special",
+          "n": "#1",
+          "note": "part one",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-21",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#21",
+          "note": "part 2",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-14",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#14",
+          "note": "part 3",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-22",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#22",
+          "note": "part 4",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-15",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#15",
+          "note": "part 5",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-23",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#23",
+          "note": "part 6",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-16",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#16",
+          "note": "part 7",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-24",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#24",
+          "note": "part 8",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-17",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#17",
+          "note": "part 9",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-25",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#25",
+          "note": "part 10 · its release slipped two weeks",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-18",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#18",
+          "note": "part 11",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-19",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#19",
+          "note": "rewritten late, after the reaction to the story",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-26",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#26",
+          "note": "epilogue",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The crossover",
+          "url": "https://en.wikipedia.org/wiki/Sinestro_Corps_War"
+        },
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        },
+        {
+          "label": "Green Lantern Corps vol. 2",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_Corps"
+        }
+      ]
+    },
+    {
+      "id": "talessinestro",
+      "tier": 3,
+      "title": "Tales of the Sinestro Corps",
+      "sub": "2007 · four one-shots and a Secret Files · skippable",
+      "intro": "Late additions DC commissioned once the war started selling, each one a single issue about a single member of the other side. None of them is load-bearing. The Secret Files issue is a reference book — rosters and back story — rather than a story.",
+      "items": [
+        {
+          "id": "gl-talesparallax-1",
+          "t": "Tales of the Sinestro Corps: Parallax",
+          "n": "#1",
+          "note": "Ron Marz",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-talescyborg-1",
+          "t": "Tales of the Sinestro Corps: Cyborg-Superman",
+          "n": "#1",
+          "note": "Alan Burnett",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-talesprime-1",
+          "t": "Tales of the Sinestro Corps: Superman-Prime",
+          "n": "#1",
+          "note": "Geoff Johns",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-talesion-1",
+          "t": "Tales of the Sinestro Corps: Ion",
+          "n": "#1",
+          "note": "Ron Marz",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-scwfiles-1",
+          "t": "Green Lantern/Sinestro Corps Secret Files",
+          "n": "#1",
+          "note": "rosters and back story, not a story",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bluebeetle-20",
+          "t": "Blue Beetle",
+          "n": "#20",
+          "note": "the only tie-in outside the two Lantern books",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The crossover",
+          "url": "https://en.wikipedia.org/wiki/Sinestro_Corps_War"
+        }
+      ]
+    },
+    {
+      "id": "prelude",
+      "tier": 1,
+      "title": "After the war",
+      "sub": "2008 · the quiet stretch that plants everything",
+      "intro": "Two issues of fallout and one eight-page teaser. Short, and the groundwork for the next two years is all in here.",
+      "items": [
+        {
+          "id": "gl-v4-27",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-28",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-dcu-0",
+          "t": "DC Universe",
+          "n": "#0",
+          "note": "a line-wide teaser; collected with these issues in the Johns omnibus",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "secretorigin",
+      "tier": 2,
+      "title": "Secret Origin",
+      "sub": "2008 · a flashback, and the one part you can skip without losing the thread",
+      "intro": "Seven issues retelling how Hal Jordan got the ring, rebuilt around everything the run has introduced since Rebirth. It stops the forward story dead, which is why it is tier 2 — but it is also the single best jumping-on point in the whole list, and if you are handing this to someone who has never read a Green Lantern comic, hand them this.",
+      "items": [
+        {
+          "id": "gl-v4-29",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-30",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-31",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-32",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-33",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-34",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-35",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "rage",
+      "tier": 1,
+      "title": "Rage of the Red Lanterns",
+      "sub": "2008–2009 · the spectrum opens out",
+      "intro": "The one-shot has a Final Crisis banner on the cover and no Final Crisis in it; it is chapter one of this story and the trade collects it as such.",
+      "items": [
+        {
+          "id": "gl-fcrage-1",
+          "t": "Final Crisis: Rage of the Red Lanterns",
+          "n": "#1",
+          "note": "a Final Crisis cover banner on a Green Lantern chapter",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-36",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-37",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-38",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "orange",
+      "tier": 1,
+      "title": "Agent Orange",
+      "sub": "2009 · the last arc before the event",
+      "intro": "Four issues, and the last of the colours to get an introduction. Everything from here is Blackest Night.",
+      "items": [
+        {
+          "id": "gl-v4-39",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-40",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-41",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-42",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "corpswar",
+      "tier": 2,
+      "title": "Ring Quest · Sins of the Star Sapphire · Emerald Eclipse",
+      "sub": "2008–2009 · the Corps book runs to meet the event",
+      "intro": "Everything the Corps book does between the two wars, in issue order. The Alpha Lantern two-parter at #21–22 is collected years later with a story it leads into rather than with the issues either side of it, which is a shelving decision and not a reading one — it is in its place here.",
+      "items": [
+        {
+          "id": "gl-glc-20",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-21",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-22",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-23",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-24",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-25",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-26",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-27",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-28",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-29",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-30",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-31",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-32",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-33",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-34",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-35",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-36",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-37",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-38",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern Corps vol. 2",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_Corps"
+        }
+      ]
+    },
+    {
+      "id": "blackest",
+      "tier": 1,
+      "title": "Blackest Night",
+      "sub": "2009–2010 · the main series",
+      "intro": "The spine of the event. It opens with a Free Comic Book Day issue numbered #0, which is a real chapter and not a preview.\n\nThe three books below ran in parallel, month for month, and no source this list reads puts them in a single issue-by-issue order. So each title is kept whole rather than guessing an interleave: read the main series, then the Green Lantern issues, then the Corps ones.",
+      "items": [
+        {
+          "id": "gl-bn-0",
+          "t": "Blackest Night",
+          "n": "#0",
+          "note": "Free Comic Book Day",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-1",
+          "t": "Blackest Night",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-2",
+          "t": "Blackest Night",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-3",
+          "t": "Blackest Night",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-4",
+          "t": "Blackest Night",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-5",
+          "t": "Blackest Night",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-6",
+          "t": "Blackest Night",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-7",
+          "t": "Blackest Night",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-bn-8",
+          "t": "Blackest Night",
+          "n": "#8",
+          "note": "",
+          "star": 2,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The event",
+          "url": "https://en.wikipedia.org/wiki/Blackest_Night"
+        }
+      ]
+    },
+    {
+      "id": "blackestgl",
+      "tier": 1,
+      "title": "Blackest Night · Green Lantern",
+      "sub": "2009–2010 · the main title through the event",
+      "intro": "The War of Light half of the crossover, told in the monthly. These are the issues that do the work the main series does not have room for, and they are not optional.",
+      "items": [
+        {
+          "id": "gl-v4-43",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-44",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-45",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-46",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-47",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-48",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-49",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-50",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-51",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#51",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-52",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The event",
+          "url": "https://en.wikipedia.org/wiki/Blackest_Night"
+        },
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        }
+      ]
+    },
+    {
+      "id": "blackestglc",
+      "tier": 2,
+      "title": "Blackest Night · Green Lantern Corps",
+      "sub": "2009–2010 · the Corps book through the event",
+      "intro": "The same war from Oa. Tier 2 for the same reason the Corps book has been tier 2 all along — the plot survives without it and the run does not.",
+      "items": [
+        {
+          "id": "gl-glc-39",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-40",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-41",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-42",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-43",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-44",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-45",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-glc-46",
+          "t": "Green Lantern Corps (vol. 2)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The event",
+          "url": "https://en.wikipedia.org/wiki/Blackest_Night"
+        },
+        {
+          "label": "Green Lantern Corps vol. 2",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_Corps"
+        }
+      ]
+    },
+    {
+      "id": "blackestminis",
+      "tier": 3,
+      "title": "The Blackest Night miniseries",
+      "sub": "2009–2010 · six three-issue tie-ins and an anthology · optional",
+      "intro": "Each one takes a corner of the DC line and runs the event through it. Tales of the Corps is the odd one out and the one worth reading first: it is a set of short back stories for the characters the main series assumes you know.",
+      "items": [
+        {
+          "id": "gl-blackest-night-tales-of-the-corps-1",
+          "t": "Blackest Night: Tales of the Corps",
+          "n": "#1",
+          "note": "Geoff Johns, Peter J. Tomasi",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-tales-of-the-corps-2",
+          "t": "Blackest Night: Tales of the Corps",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-tales-of-the-corps-3",
+          "t": "Blackest Night: Tales of the Corps",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-batman-1",
+          "t": "Blackest Night: Batman",
+          "n": "#1",
+          "note": "Peter J. Tomasi",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-batman-2",
+          "t": "Blackest Night: Batman",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-batman-3",
+          "t": "Blackest Night: Batman",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-the-flash-1",
+          "t": "Blackest Night: The Flash",
+          "n": "#1",
+          "note": "Geoff Johns",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-the-flash-2",
+          "t": "Blackest Night: The Flash",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-the-flash-3",
+          "t": "Blackest Night: The Flash",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-jsa-1",
+          "t": "Blackest Night: JSA",
+          "n": "#1",
+          "note": "Tony Bedard, James Robinson",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-jsa-2",
+          "t": "Blackest Night: JSA",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-jsa-3",
+          "t": "Blackest Night: JSA",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-superman-1",
+          "t": "Blackest Night: Superman",
+          "n": "#1",
+          "note": "James Robinson",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-superman-2",
+          "t": "Blackest Night: Superman",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-superman-3",
+          "t": "Blackest Night: Superman",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-titans-1",
+          "t": "Blackest Night: Titans",
+          "n": "#1",
+          "note": "J.T. Krul",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-titans-2",
+          "t": "Blackest Night: Titans",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-titans-3",
+          "t": "Blackest Night: Titans",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-wonder-woman-1",
+          "t": "Blackest Night: Wonder Woman",
+          "n": "#1",
+          "note": "Greg Rucka",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-wonder-woman-2",
+          "t": "Blackest Night: Wonder Woman",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-blackest-night-wonder-woman-3",
+          "t": "Blackest Night: Wonder Woman",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-untold-1",
+          "t": "Untold Tales of Blackest Night",
+          "n": "#1",
+          "note": "an anthology one-shot · Geoff Johns and five others",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The event",
+          "url": "https://en.wikipedia.org/wiki/Blackest_Night"
+        }
+      ]
+    },
+    {
+      "id": "blackesttieins",
+      "tier": 3,
+      "title": "Blackest Night across the line",
+      "sub": "2009–2010 · every other book that carried the banner · genuinely optional",
+      "intro": "The event reached most of the DC line, and this is the rest of it — single issues and two-parters of other people's books. None of it is needed to follow the story and some of it is very good; the notes say who wrote each one so you can follow a writer rather than a banner.",
+      "items": [
+        {
+          "id": "gl-solomon-grundy-7",
+          "t": "Solomon Grundy",
+          "n": "#7",
+          "note": "prelude · Scott Kolins",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-titans-15",
+          "t": "Titans",
+          "n": "#15",
+          "note": "prelude · J.T. Krul",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-adventure-comics-4",
+          "t": "Adventure Comics",
+          "n": "#4",
+          "note": "Tony Bedard, Sterling Gates, Geoff Johns · Travis Moore, Jerry Ordway",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-adventure-comics-5",
+          "t": "Adventure Comics",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-adventure-comics-7",
+          "t": "Adventure Comics",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-the-atom-and-hawkman-46",
+          "t": "The Atom and Hawkman",
+          "n": "#46",
+          "note": "Geoff Johns · Fernando Pasarin, Ryan Sook",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-booster-gold-26",
+          "t": "Booster Gold",
+          "n": "#26",
+          "note": "Dan Jurgens · Dan Jurgens, Mike Norton, Norman Rapmund",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-booster-gold-27",
+          "t": "Booster Gold",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-catwoman-83",
+          "t": "Catwoman",
+          "n": "#83",
+          "note": "Tony Bedard · Luciana Del Negro, Fabrizio Fiorentino, Marcos Marz, Ibraim Roberson",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-doom-patrol-4",
+          "t": "Doom Patrol",
+          "n": "#4",
+          "note": "Keith Giffen · Justiniano",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-doom-patrol-5",
+          "t": "Doom Patrol",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-green-arrow-and-black-canary-30",
+          "t": "Green Arrow and Black Canary",
+          "n": "#30",
+          "note": "J.T. Krul · Diogenes Neves",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-justice-league-of-america-39",
+          "t": "Justice League of America",
+          "n": "#39",
+          "note": "James Robinson · Mark Bagley",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-justice-league-of-america-40",
+          "t": "Justice League of America",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-outsiders-24",
+          "t": "Outsiders",
+          "n": "#24",
+          "note": "Peter J. Tomasi · Derec Donovan, Fernando Pasarin",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-outsiders-25",
+          "t": "Outsiders",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-phantom-stranger-42",
+          "t": "Phantom Stranger",
+          "n": "#42",
+          "note": "Peter J. Tomasi · Adrian Syaf",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-the-power-of-shazam-48",
+          "t": "The Power of Shazam!",
+          "n": "#48",
+          "note": "Eric Wallace · Don Kramer",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-the-question-37",
+          "t": "The Question",
+          "n": "#37",
+          "note": "Dennis O'Neil, Greg Rucka · Denys Cowan",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-r-e-b-e-l-s-10",
+          "t": "R.E.B.E.L.S.",
+          "n": "#10",
+          "note": "Tony Bedard · Andy Clarke, Claude St. Aubin",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-r-e-b-e-l-s-11",
+          "t": "R.E.B.E.L.S.",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-starman-81",
+          "t": "Starman",
+          "n": "#81",
+          "note": "James Robinson · Fernando Dagnino, Bill Sienkiewicz",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-suicide-squad-67",
+          "t": "Suicide Squad",
+          "n": "#67",
+          "note": "John Ostrander, Gail Simone · J. Calafiore",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-secret-six-17",
+          "t": "Secret Six",
+          "n": "#17",
+          "note": "John Ostrander, Gail Simone · J. Calafiore",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-secret-six-18",
+          "t": "Secret Six",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-superman-batman-66",
+          "t": "Superman/Batman",
+          "n": "#66",
+          "note": "Scott Kolins",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-superman-batman-67",
+          "t": "Superman/Batman",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-teen-titans-77",
+          "t": "Teen Titans",
+          "n": "#77",
+          "note": "J.T. Krul · Joe Bennett",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-teen-titans-78",
+          "t": "Teen Titans",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-weird-western-tales-71",
+          "t": "Weird Western Tales",
+          "n": "#71",
+          "note": "Dan Didio · Renato Arlem",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-action-comics-890",
+          "t": "Action Comics",
+          "n": "#890",
+          "note": "Paul Cornell · Pete Woods",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "The event",
+          "url": "https://en.wikipedia.org/wiki/Blackest_Night"
+        }
+      ]
+    },
+    {
+      "id": "brightest",
+      "tier": 3,
+      "title": "Brightest Day",
+      "sub": "2010–2011 · the coda · optional",
+      "intro": "Ten issues of the monthly that finish what Blackest Night starts, banded with a DC-wide event they are largely independent of. Tier 3 because the arc this list is about ends at Blackest Night #8 — but these are the issues that clear up after it, and they lead straight into War of the Green Lanterns, which is where the run properly changes shape.\n\nThe Brightest Day event itself is a different book, about Aquaman, Firestorm and the Martian Manhunter. It is not here.",
+      "items": [
+        {
+          "id": "gl-v4-53",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-54",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#54",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-55",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-56",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-57",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#57",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-58",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#58",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-59",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#59",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-60",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#60",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-61",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-v4-62",
+          "t": "Green Lantern (vol. 4)",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "gl-larfleeze-1",
+          "t": "Green Lantern: Larfleeze Christmas Special",
+          "n": "#1",
+          "note": "a one-shot, collected with these issues",
+          "star": 0,
+          "opt": 1,
+          "url": ""
+        }
+      ],
+      "links": [
+        {
+          "label": "Green Lantern vol. 4",
+          "url": "https://en.wikipedia.org/wiki/Green_Lantern_(comic_book)"
+        },
+        {
+          "label": "The event",
+          "url": "https://en.wikipedia.org/wiki/Brightest_Day"
+        }
+      ]
+    }
+  ]
+}

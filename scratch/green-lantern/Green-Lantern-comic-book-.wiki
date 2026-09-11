@@ -1,0 +1,1161 @@
+{{short description|Comic book series featuring the DC Comics heroes of the same name}}
+{{Infobox comic book title <!--Wikipedia:WikiProject Comics--> 
+|title               = Green Lantern
+|image               = Green Lantern v1 1.jpg
+|caption             = Cover of ''Green Lantern'' #1 (fall 1941) by [[Howard Purcell]]<ref>[http://www.comics.org/issue/1684/ ''Green Lantern'' #1] at the [[Grand Comics Database]]</ref>
+|schedule            = {{collapsible list|'''(Vol. 1)'''<br />Quarterly: #1–18<br />Bimonthly: #19–38<br />'''(Vol. 2)'''<br />Bimonthly: #1–9; #82–96<br />Eight times a year: #10–81<br />Monthly: #97–224<br />'''(Vol. 3)'''<br />Monthly: #1–181<br />'''(Vol. 4)'''<br />Monthly: #1–67<br />'''(Vol. 5)'''<br />Monthly: #1–52<br />'''(Green Lanterns)'''<br />Twice Monthly: #1–57<br />'''(Hal Jordan and the Green Lantern Corps)'''<br />Twice Monthly: #1–50<br />'''(Vol. 6)'''<br />Monthly: #1–12<br />'''(Vol. 7)'''<br />Monthly: #1–present}}
+|ongoing             = y
+|publisher           = [[DC Comics]]
+|date                = {{collapsible list|'''(vol. 1)'''<br />fall 1941 – May–June 1949<br />'''(vol. 2)'''<br />July–August 1960 – April–May 1972 and August–September 1976 – May 1988<br />'''(vol. 3)'''<br />June 1990 – November 2004<br />'''(vol. 4)'''<br />July 2005 – January 2010<br />'''(vol. 5)'''<br />September 2011 – May 2016<br />'''(Green Lanterns)'''<br />July 2016 – August 2018<br />'''(Hal Jordan and the Green Lantern Corps)'''<br />June 2016 – October 2018<br />'''(vol. 6)'''<br />April 2021 – April 2022 <br />'''(vol. 7)'''<br />May 2023 – Present}}
+|startmo             = 
+|startyr             = 
+|endmo               = 
+|endyr               = 
+|issues              = {{collapsible list|'''(vol. 1)''': 38<br />'''(vol. 2)''': 224 plus three ''Annuals'' and two ''Specials''<br />'''(vol. 3)''': 183 (#1–181 plus issues #[[Zero Hour: Crisis in Time|0]] and #[[DC One Million|1,000,000]]); nine ''Annuals'' and one ''Green Lantern Plus The Ray''<br />'''(vol. 4)''': 67<br />'''(vol. 5)''': 57 (#1–52 plus issues #0 and #[[Forever Evil#"Villains Month" titles|23.1–23.4]]); a ''[[The New 52: Futures End|Green Lantern: Futures End]]'' one-shot and four ''Annuals''<br />'''(Green Lanterns)''': 58 plus a ''DC Rebirth'' one-shot and one ''Annual''<br />'''(Hal Jordan and the Green Lantern Corps)''': 51 plus a ''DC Rebirth'' one-shot<br />'''(vol. 6)''': 12 and one ''Annual''<br />'''(vol. 7)''': 36 and three ''Specials''}}
+|Superhero           = y
+|main_char_team      = [[Alan Scott]]<br />[[Hal Jordan]]<br />[[Guy Gardner (character)|Guy Gardner]]<br />[[John Stewart (character)|John Stewart]]<br />[[Kyle Rayner]]<br />[[Simon Baz]]<br />[[Jessica Cruz]]<br />[[Sojourner Mullein]]<br />the [[Green Lantern Corps]]
+|writers             = {{Collapsible list|'''(vol. 1)'''<br />[[Bill Finger]] (1–5, 7), Joe Greene, [[Alfred Bester]] <br /> [[Henry Kuttner]] <br />[[John Broome (writer)|John Broome]], [[Robert Kanigher]] <br />'''(vol. 2)'''<br />[[John Broome (writer)|John Broome]] (1–16, 18–22, 24, 27, 29–31, 36, 39–40, 44–47, 49–56, 59, 66, 69–71, 75)<br />[[Gardner Fox]] (16–17, 21–23, 25–29, 32–38, 41–44, 46, 48, 50, 57–58, 60, 62, 65, 67)<br />[[Dennis O'Neil]] (63–64, 68, 72, 76–87, 89–100, 102–129)<br />[[Marv Wolfman]] (133–153)<br />[[Mike W. Barr]] (131, 154–165)<br />[[Joey Cavalieri]] (166–169, 173, 182–183)<br />[[Len Wein]] (128, 172–183, 185–186)<br />[[Steve Englehart]] (188–200)<br />[[Laurie S. Sutton]] (134–147)<br />'''(vol. 3)'''<br />[[Gerard Jones]] (1–47)<br />[[Ron Marz]] (48–107, 109–114, 117–125, 176–181, #0, #1,000,000, Annual #4, 6)<br />[[Judd Winick]] (129–156, 158–164)<br />[[Ben Raab]] (165–175)<br />'''(vol. 4)'''<br />[[Geoff Johns]]<br />'''(vol. 5)'''<br />Geoff Johns (0–20)<br /> [[Robert Venditti]] (20–52, 23.1, Annual #2-4)<br />'''(''Green Lanterns'')'''<br />[[Sam Humphries]] (1–32)<br />[[Tim Seeley]] (33–47)<br />Aaron Gillespie (48–49)<br />[[Dan Jurgens]] (50–57)<br />'''(''Hal Jordan and the Green Lantern Corps'')'''<br />Robert Venditti<br />'''(vol. 6)'''<br />[[Geoffrey Thorne]]<br />'''(vol. 7)'''<br />Jeremy Adams}}
+|artists             = 
+|pencillers          = {{Collapsible list|'''(vol. 1)'''<br />[[Martin Nodell]]<br /> [[Irwin Hasen]]<br /> [[Alex Toth]]<br />'''(vol. 2)'''<br />[[Gil Kane]]<br />[[Neal Adams]]<br />[[Mike Grell]]<br />[[Alex Saviuk]]<br />[[Joe Staton]]<br />[[Dave Gibbons]]<br />'''(vol. 3)'''<br />[[Pat Broderick]]<br />Joe Staton<br />[[M. D. Bright|Mark Bright]]<br />[[Darryl Banks]]<br />[[Dale Eaglesham]]<br />'''(vol. 4)'''<br />[[Carlos Pacheco]]<br /> [[Ethan Van Sciver]]<br />[[Ivan Reis]]<br />[[Doug Mahnke]]<br />'''(vol. 5)'''<br />Doug Mahnke<br />[[Billy Tan]]<br />'''(Green Lanterns)'''<br />Robson Rocha<br />'''(Hal Jordan and the Green Lantern Corps)'''<br />Rafa Sandoval<br />'''(vol. 6)'''<br />Dexter Soy<br />'''(vol. 7)'''<br /> Xermánico}}
+|inkers              = {{Collapsible list|'''(vol. 1)'''<br />[[Bob Oksner]]<br />'''(vol. 2)'''<br />[[Joe Giella]]<br /> [[Sid Greene]]<br />[[Dick Giordano]]<br />[[Bob Wiacek]]<br />'''(vol. 3)'''<br />[[Romeo Tanghal]]<br />Rodney Ramos<br />'''(vol. 4)'''<br />[[Jesus Merino]]<br />Christian Alamy<br /> Rob Hunter}}
+|creators            = [[Bill Finger]]<br />[[Martin Nodell]]
+|TPB                 = Golden Age Green Lantern Archives Volume 1
+|ISBN                = 1-56389-507-2
+|TPB1                = Green Lantern Archive Volume 1
+|ISBN1               = 1401202306
+|TPB2                = The Road Back
+|ISBN2               = 1-56389-045-3
+|TPB3                = No Fear 
+|ISBN3               = 1-4012-0466-X
+}}
+
+'''''Green Lantern''''' is an ongoing [[American comic-book]] series featuring the [[DC Comics]] heroes of the [[Green Lantern|same name]]. The character's first incarnation, [[Alan Scott]], appeared in ''[[All-American Comics]]'' #16 (July 1940), and was later spun off into the first volume of ''Green Lantern'' in 1941. After 38 issues, that series was cancelled in 1949. When the Silver Age Green Lantern, [[Hal Jordan]], was introduced, the character starred in a new volume of ''Green Lantern'' starting in 1960.
+
+Although ''Green Lantern'' is considered a mainstay in the DC Comics stable, the series has been cancelled and rebooted several times. When sales began slipping in the early 1990s, DC Comics instituted a controversial editorial mandate that turned Jordan into the supervillain [[Parallax (character)|Parallax]] and created a new protagonist named [[Kyle Rayner]]. This third volume ended publication in 2004, when the miniseries ''[[Green Lantern: Rebirth]]'' brought Hal Jordan back as a heroic character and made him the protagonist once again. After ''Rebirth'''s conclusion, writer [[Geoff Johns]] began a fourth volume of ''Green Lantern'' from 2005 to 2011, and a fifth volume which started immediately after, this time initially showcasing both Hal Jordan and [[Sinestro]] as Green Lantern.
+
+==Publication history==
+
+===Volume 1 (1941–1949)===
+Volume 1 was published from 1941 until 1949, spanning a total of 38 issues.<ref>{{gcdb series|id= 212|title= Green Lantern}}</ref> The series featured [[Alan Scott]], the first Green Lantern character, created by writer/artist [[Martin Nodell]] and writer [[Bill Finger]]. Alan's first appearance was in the anthology series, ''All-American Comics'' #16 (July 1940).<ref>{{cite book |last=Wallace |first=Daniel |editor-last=Dolan |editor-first=Hannah |chapter=1940s |title=DC Comics Year By Year A Visual Chronicle |publisher=[[Dorling Kindersley]] |year=2010 |location=London, United Kingdom |isbn=978-0-7566-6742-9 |page=32 |quote=Railway engineer Alan Scott underwent an unexpected career change into the costumed hero Green Lantern in a story by artist Martin Nodell (using the pseudonym 'Mart Dellon') and writer Bill Finger.}}</ref> The Green Lantern character received his own self-titled series in fall 1941.<ref>Wallace "1940s" in Dolan, p. 37: "In Fall's ''Green Lantern'' #1, the ring-slinging hero received his own series with story and art duties handled by Bill Finger and Mart Nodell."</ref> The first use of the [[Green Lantern#Green Lantern Oath|Green Lantern oath]] was in issue #9 (late fall 1943).<ref>Wallace "1940s" in Dolan, p. 45: "Green Lantern created a catchphrase for the ages in this issue, with the first reading of what would become the official Green Lantern oath. In a tale by writer Al Bester and artist Martin Nodell, Alan Scott charged his mystical ring [while reciting an oath]."</ref> Artist [[Alex Toth]] did some of his earliest comics work on the title beginning with issue #28 (October–November 1947).<ref>Wallace "1940s" in Dolan, p. 56: "This issue featured some of the earliest DC work by talented young artist Alex Toth...Alongside other newcomers such as Joe Kubert and Carmine Infantino, Toth helped bring a fresh look to the pages of DC."</ref> A canine sidekick named Streak was introduced in #30 (February–March 1948) and the dog proved so popular that he became the featured character on several covers of the series starting with #34.<ref>Wallace "1940s" in Dolan, p. 59: "The debut of Streak the Wonder Dog in a story by writer Robert Kanigher and artist Alex Toth wasn't a good sign for Green Lantern...Streak took over the cover of issue #34 in September, but he couldn't save his master's series from cancel[l]ation the following year."</ref> The series was cancelled with #38 (May–June 1949).<ref>Wallace "1940s" in Dolan, p. 61: "In a sign of the end of the Golden Age of Comics, ''Green Lantern'' ended its run with a story by John Broome and Irwin Hasen.  To add insult to injury, Green Lantern was nowhere to be seen on the cover of ''Green Lantern'' #38."</ref> Although several subsequent ''Green Lantern'' revival projects have started over the years, this remains the only ongoing series to date to spotlight the Alan Scott character.
+
+===Volume 2 (1960–1972 and 1976–1988)<!--'Green Lantern/Green Arrow' redirects here-->===
+The [[Hal Jordan|Silver Age Green Lantern]] was created by [[John Broome (writer)|John Broome]] and [[Gil Kane]] in ''[[Showcase (comics)|Showcase]]'' #22 (October 1959)<ref>[[Alexander C. Irvine|Irvine, Alex]] "1950s" in Dolan, p. 95: "DC had decided to revamp a number of characters to inject new life into the genre. Writer John Broome and artist Gil Kane ensured that Green Lantern got his turn in October's ''Showcase'' #22."</ref> at the behest of editor [[Julius Schwartz]].<ref>{{cite book|last=Daniels|first=Les|author-link=Les Daniels|title=DC Comics: Sixty Years of the World's Favorite Comic Book Heroes|chapter=Green Lantern Lit Again Comics Get Cosmic Consciousness|publisher=[[Little, Brown and Company|Bulfinch Press]]|year=1995|location=New York, New York|page=124|isbn=0821220764|quote=To write adventures on a cosmic scale that had never really been attempted in a super hero series before, [Julius] Schwartz called on his friend John Broome.}}</ref> Volume 2 of ''Green Lantern'' began publication in August 1960.<ref>McAvennie, Michael "1960s" in Dolan, p. 101: "Almost a year after being deemed worthy of carrying the Green Lanterns' precious Battery of Power in ''Showcase'' #22 (October 1959), test pilot Hal Jordan had earned the right to fly solo in his own ongoing series"</ref> The series spotlighted the Silver Age Green Lantern, Hal Jordan and introduced the expansive mythology surrounding Hal's forebears in the [[Green Lantern Corps]]. The supervillain [[Sinestro]] was introduced in #7 (July–August 1961).<ref>McAvennie "1960s" in Dolan, p. 103: "On 'The Day 100,000 People vanished', the Guardians warned Hal Jordan of the culprit responsible: Sinestro, a renegade Green Lantern who had been stripped of his power and banished to the Anti-matter Universe of Qward."</ref> In 2009, Sinestro was ranked [[IGN]]'s 15th Greatest Comic Book Villain of All Time.<ref>{{cite web |url=http://comics.ign.com/top-100-villains/15.html |title=Sinestro |year=2009 |publisher=[[IGN]] |archive-url=https://web.archive.org/web/20090517204829/http://comics.ign.com/top-100-villains/15.html |archive-date=May 17, 2009 |url-status=dead |access-date=September 30, 2012 |quote=Originally one of the greatest Green Lanterns, Sinestro has always had a dark side and an overwhelming lust for power and control. After his actions were discovered by his masters, he was exiled for punishment. }}</ref> Hal Jordan's love interest, [[Carol Ferris]], became the [[Star Sapphire (comics)|Star Sapphire]] in issue #16.<ref>McAvennie "1960s" in Dolan, p. 105: "In his first confrontation with Star Sapphire, Green Lantern didn't realize he was actually battling his lady love, Carol Ferris. As was revealed by scribe John Broome and artist Gil Kane..."</ref> [[Black Hand (character)|Black Hand]], a character featured prominently in the "[[Blackest Night]]" storyline in 2009–2010, debuted in issue #29 (June 1964).<ref>McAvennie "1960s" in Dolan, p. 111: "Scribe John Broome and artist Gil Kane split this issue into two stories...William Hand, introduced in a cameo by Kane, informed readers of a power light he invented to collect remnant energy from Green Lantern's power ring."</ref> A substitute Green Lantern, [[Guy Gardner (character)|Guy Gardner]] first appeared in the story "Earth's Other Green Lantern!" in issue #59 (March 1968).<ref>McAvennie "1960s" in Dolan, p. 129: "John Broome's script and Gil Kane's renderings debuted a character who would one day become a Green Lantern – Guy Gardner."</ref>
+[[File:GreenLantern86.jpg|thumb|left|170px|Cover for ''Green Lantern'' (vol. 2) #86 (October 1971), art by [[Neal Adams]]]]
+[[Green Arrow]] joined Hal Jordan in the main feature of the title in an acclaimed series of stories by writer [[Dennis O'Neil]] and artist [[Neal Adams]] beginning with issue #76 (April 1970) and ending with issue #89 (April–May 1972) that dealt with various social and political issues in which Green Arrow spoke for radical change while Green Lantern was an establishment liberal figure,<ref>McAvennie "1970s" in Dolan, p.139 "Real-world politics have always gone hand-in-hand with comics and their creators' own personal perspectives.  Yet this was never more creatively expressed than when writer Denny O'Neil and artist Neal Adams paired the liberal Green Arrow with the conservative Green Lantern."</ref> wanting to work within existing institutions of government and law. Where Oliver Queen advocated direct action, Hal Jordan wanted to work within the system; where Oliver advocated social change, Jordan was more concerned about dealing with criminals. Each would find their beliefs challenged by the other. Oliver convinced Jordan to see beyond his strict obedience to the [[Green Lantern Corps]], to help those who were neglected or discriminated against. As O'Neil explained: "He would be a hot-tempered [[anarchist]] to contrast with the cerebral, sedate model citizen who was the Green Lantern."<ref>{{cite book|last=O'Neil|first=Dennis|author-link=Dennis O'Neil|author2=Adams, Neal |author-link2=Neal Adams |chapter=Introduction|title=Green Lantern/Green Arrow Collection |publisher=DC Comics|year=2004 |isbn=1401202241}}</ref> The duo embarked on a quest to find America, witnessing the problems of corruption, racism, pollution, and overpopulation confronting the nation. O'Neil took on then-current events, such as the [[Charles Manson|Manson Family]] cult murders, in issue #78 where [[Black Canary]] falls briefly under the spell of a false prophet who advocates violence.<ref>{{cite comic |writer=O'Neil, Dennis |penciller=Adams, Neal|inker=[[Frank Giacoia|Giacoia, Frank]]|story=A Kind of Loving, a Way of Death!|title=Green Lantern|volume=2|issue=78|date=July 1970}}</ref>
+
+During this period, the most famous Green Arrow story appeared, in [[Snowbirds Don't Fly|''Green Lantern'' vol. 2, #85–86]], when Green Arrow's ward [[Roy Harper (character)|Speedy]] was revealed to be addicted to [[heroin]].<ref name="dc-ency">{{Cite book |last1=Greenberger |first1=Robert|author-link=Robert Greenberger |contribution=Green Arrow|editor-last=Dougall|editor-first=Alastair|title=The DC Comics Encyclopedia |pages=130|publisher=Dorling Kindersley|year=2004|location=London, United Kingdom|isbn=9780756605926}}</ref><ref>McAvennie "1970s" in Dolan, p. 146 "It was taboo to depict drugs in comics, even in ways that openly condemned their use.  However, writer Denny O'Neil and artist Neal Adams collaborated on an unforgettable two-part arc that brought the issue directly into Green Arrow's home, and demonstrated the power comics had to affect change and perception."</ref> In his zeal to save America, Oliver Queen had failed in his personal responsibility to Speedy — who would overcome his addiction with the help of [[Black Canary]], Green Arrow's then-love interest. This story prompted a congratulatory letter from the [[mayor of New York City]], [[John Lindsay]]. Another backup Green Lantern, [[John Stewart (character)|John Stewart]], was introduced in #87.<ref>McAvennie "1970s" in Dolan, p. 150: "An injury to Guy Gardner prompted the Guardians of the Universe to recruit African-American architect John Stewart as green lantern Hal Jordan's new back-up"</ref> The series did not match commercial expectations and Neal Adams had trouble with deadlines, causing issue #88 to be an unscheduled reprint issue; the series was cancelled with issue #89 (April–May 1972). Four months later, Green Lantern began a backup feature in ''[[The Flash (comic book)|The Flash]]'' #217 (Aug.–Sept. 1972) and appeared in most issues through ''The Flash'' #246 (Jan. 1977) until his own solo series was revived.<ref>{{cite journal|last=Greenberger|first=Robert|author-link=Robert Greenberger|title=Green Lantern The Emerald Backups|journal=[[Back Issue!]]|issue=64|pages=3–9|publisher=[[TwoMorrows Publishing]]|date=May 2013|location=Raleigh, North Carolina}}</ref>
+
+The ''Green Lantern'' title returned with issue #90 (Aug.–Sept. 1976)<ref>{{gcdb series|id=2327|title=Green Lantern vol. 2 revival}}</ref><ref>McAvennie "1970s" in Dolan, p. 171 "After a four-year hiatus, Green Lantern's ongoing series made a triumphant return to DC's publishing schedule...Returning writer Denny O'Neil partnered himself with artist Mike Grell, choosing to focus the title on sci-fi and super-heroics."</ref> and continued the '''''Green Lantern/Green Arrow'''''<!--boldface per WP:R#PLA--> team format. O'Neil continued to write the stories, which were drawn by artists such as Mike Grell and Alex Saviuk, while muting the social and political themes that had characterized the stories that had been drawn by Neal Adams. Julius Schwartz, who had edited the title for most of its run since 1960, left the series as of issue #103 (April 1978).<ref name="GCD-Schwartz">[http://www.comics.org/search/advanced/process/?target=issue&method=icontains&logic=True&keywords=&order1=series&order2=date&order3=&start_date=1959&end_date=1980&title=&feature=&job_number=&pages=&script=&pencils=&inks=&colors=&letters=&story_editing=Julius+Schwartz&genre=&characters=&synopsis=&reprint_notes=&story_reprinted=None&notes=&pub_name=DC&pub_notes=&brand=&brand_notes=&indicia_publisher=&is_surrogate=None&ind_pub_notes=&series=Green+Lantern&series_notes=&tracking_notes=&issue_count=&is_comics=None&issues=&volume=&issue_title=&variant_name=&issue_date=&indicia_frequency=&price=&issue_pages=&format=&issue_editing=Julius+Schwartz&isbn=&barcode=&issue_notes=&issue_reprinted=None&is_indexed=None Julius Schwartz' run on ''Green Lantern''] at the [[Grand Comics Database]]</ref> In issue #123 (December 1979), Hal Jordan resumed the title spotlight and Green Arrow left the series.<ref>McAvennie "1970s" in Dolan, p. 183: "After forty-six issues fighting side-by-side with green Arrow, Green Lantern flew solo once more."</ref> On the advice of artist [[Joe Staton]], editor [[Jack C. Harris]] gave British artist [[Brian Bolland]] his first assignment for a U.S. comics publisher, the cover for ''Green Lantern'' #127 (April 1980).<ref>{{cite book |last=Bolland |first=Brian |author-link=Brian Bolland|editor=[[Joe Pruett|Pruett, Joe]]|chapter=The 1970's – Green Lantern |title=The Art of Brian Bolland |publisher=[[Image Comics]] |year=2006 |page=102 |isbn=1582406030 }}</ref> Writer [[Marv Wolfman]] and Staton created the [[Omega Men]] in ''Green Lantern'' #141 (June 1981).<ref>Manning, Matthew K. "1980s" in Dolan, p. 193 ''Green Lantern'' #141 "DC's newest science-fiction franchise, a band of over one hundred aliens called the Omega Men."  " They gave Green Lantern a run for his money in this issue written by Marv Wolfman, with art by Joe Staton, and the Omega Men went on to gain their own ongoing series in 1983."</ref>
+
+In issue #182, writer [[Len Wein]] and artist [[Dave Gibbons]] made architect John Stewart, who had been introduced previously in issue #87, the title's primary character.<ref>Manning "1980s" in Dolan, p. 209: "Architect John Stewart was chosen as Green Lantern Hal Jordon's permanent replacement as guardian of space sector 2814 in this issue by writer Len Wein and artist Dave Gibbons."</ref> Following the double-sized 200th issue by writer [[Steve Englehart]] and Joe Staton,<ref>{{cite journal|last=DeAngelo|first=Daniel|title=Emerald Rebirth: The Story Behind ''Green Lantern'' #200|journal=Back Issue!|issue=69|pages=71–73|publisher=TwoMorrows Publishing|date=December 2013|location=Raleigh, North Carolina}}</ref> the format changed again, this time altering the title's name to ''Green Lantern Corps''<ref>Manning "1980s" in Dolan, p. 219: "The adventures of everyone's favorite space cops were given a new title thanks to writer Steve Englehart and artist Joe Staton. Now focusing not just on Green Lantern Hal Jordan, ''The Green Lantern Corps'' gave an equal spotlight to all the defenders of Space Sector 2814."</ref> and focusing upon the seven members of an Earth-based contingent of the corps (including Jordan and Stewart). The series remained as such until its cancellation in 1988 with issue #224. Between volumes 2 and 3, Green Lantern stories, mostly featuring Hal Jordan, appeared in ''[[Action Comics]] Weekly''.
+{{anchor|Volume 3}}<!--linked-->
+
+===Volume 3 (1990–2004)===
+Volume 3 began in 1990 and featured Hal Jordan and the Green Lantern Corps in stories by [[Gerard Jones]] and [[Pat Broderick]].<ref>Manning "1990s" in Dolan, p. 245: "Writer Gerard Jones and penciller Pat Broderick jump-started the further adventures of Hal [Jordan] and company by beginning Green Lantern's third ongoing series, which would last an impressive 181 issues."</ref> By the mid-1990s, sales on the book began to fall and an editorial mandate was handed down by DC Comics to drastically change the status quo to revitalize the title and characters. This was given in the form of the controversial storyline "[[Emerald Twilight]]".<ref>Manning "1990s" in Dolan, p. 264: "In 'Emerald Twilight', a three-issue saga penned by new writer Ron Marz and drawn by artists Bill Willingham, Fred Haynes, and Darryl Banks, longtime Green Lantern Hal Jordan set out to right the wrongs done to him."</ref>
+
+"Emerald Twilight" detailed that in the aftermath of the destruction of Hal Jordan's hometown [[Coast City]] (which occurred as part of "[[The Death of Superman]]" storyline), Jordan was shown going mad with grief by trying to use his power to resurrect the city and its inhabitants. The [[Guardians of the Universe]] found fault with Jordan and stated their intent to strip him of his ring. Jordan responded angrily, and sought not only the destruction of the Guardians, but also the Green Lantern Corps itself. He killed countless Green Lanterns in his rampage through the universe to [[Oa (comics)|Oa]], seemingly killed his arch enemy Sinestro, killed the Guardians and took the power of Oa's Central Power Battery for himself. Gaining unimaginable power over space and time, Jordan became the supervillain Parallax and, with that, became the leading antagonist going into DC's 1994 event ''[[Zero Hour: Crisis in Time]]''.
+[[File:Green Lantern 51 (March 1994).png|thumb|right|170px|Cover for ''Green Lantern'' (vol. 3) #51 (May 1994), Kyle Rayner's first issue as the main character, art by [[Darryl Banks]] and [[Romeo Tanghal]]]]
+After this, [[Kyle Rayner]], a young art student, was introduced as the new protagonist and the "last" Green Lantern, since the Corps no longer existed.<ref name="dc-gree">Wallace "Green Lantern" in Dougall, p. 133</ref> Writers [[Ron Marz]] and [[Judd Winick]] both had long runs with the character, building Kyle's popularity so much that he was included in the lineup of [[Grant Morrison]]'s [[Justice League]] relaunch ''[[JLA (comic book)|JLA]]'', and slowly reintroduced more familiar Green Lantern aspects over the 10 years Rayner had in the title. Volume 3 culminated in a revival of the Guardians of the Universe, the introduction of [[Ion (DC Comics)|Ion]], and Kyle taking a journey into space that led directly into the miniseries ''[[Green Lantern: Rebirth]]''.
+
+===Volume 4 (2005–2011)===
+[[File:GLVol4no1.jpg|thumb|left|170px|Cover to ''Green Lantern'' (vol. 4) #1 (July 2005), art by [[Carlos Pacheco]]]]
+After the events of ''Rebirth'', in which writer [[Geoff Johns]] revealed Parallax to be a parasitic embodiment of fear rather than as an identity of Hal Jordan,<ref>Cowsill, Alan "2000s" in Dolan, p. 315: Parallax was no longer merely an insane Hal Jordan but the living embodiment of fear.</ref> a fourth volume of ''Green Lantern'' began publication returning Hal Jordan to the prominent Green Lantern in the [[DC Universe]]. Johns and artist Carlos Pacheco launched the new series in July 2005.<ref>Cowsill "2000s" in Dolan, p. 320: "After successfully bringing Hal Jordan back as the Green Lantern in ''Green Lantern: Rebirth'', writer Geoff Johns remained at the helm for Hal Jordan's further adventures."</ref><ref>{{gcdb series|id=13519|title=Green Lantern vol. 4}}</ref> Trying to rebuild his life, Hal Jordan has moved to the nearly deserted Coast City, which is slowly being reconstructed. He has been reinstated as a captain in the United States Air Force, and works in the Test Pilot Program at [[Edwards Air Force Base]]. The series introduces new supporting characters for Hal, most notably a man from Hal's past, Air Force's General Jonathan "Herc" Stone, who learned Hal's secret as Green Lantern during a battle with the [[Manhunters (DC Comics)|Manhunters]] and acts as his ally. He also begins to develop a romantic attraction with his fellow pilot, the beautiful Captain [[Jillian Pearlman|Jillian "Cowgirl" Pearlman]].<ref name=GL1>{{Cite comic|writer=[[Geoff Johns|Johns, Geoff]]|penciller=[[Carlos Pacheco|Pacheco, Carlos]]; [[Ethan Van Sciver|Van Sciver, Ethan]]|inker=[[Jesus Merino|Merino, Jesus]]; Van Sciver, Ethan|story=Airborne|title=Green Lantern|Volume=4|Issue=1|date=July 2005}}</ref><ref name=GL2>{{Cite comic|writer=Johns, Geoff|penciller=Pacheco, Carlos|inker=Merino, Jesus|story=No Fear|title=Green Lantern|Volume=4|Issue=2|date=August 2005}}</ref><ref name=GL3>{{Cite comic|writer=Johns, Geoff|penciller=Pacheco, Carlos|inker=Merino, Jesus|story=Flight Delay|title=Green Lantern|Volume=4|Issue=3|date=September 2005}}</ref> The returning characters also include Carol Ferris, Tom Kalmaku, and Hal's younger brother James Jordan with his sister-in-law Susan and their children, Howard and Jane.
+
+In his new title, he faces revamped versions of his Silver Age foes such as [[Hector Hammond]], the [[Shark (comics)|Shark]], and [[Black Hand (character)|Black Hand]].<ref name=GL4>{{Cite comic|writer=Johns, Geoff|penciller=Van Sciver, Ethan|inker=Van Sciver, Ethan|story=Alienated|title=Green Lantern|Volume=4|Issue=4|date=October 2005}}</ref><ref name=GL5>{{Cite comic|writer=Johns, Geoff|penciller=Van Sciver, Ethan|inker=[[Prentis Rollins|Rollins, Prentis]]|story=Feeding Frenzy|title=Green Lantern|Volume=4|Issue=5|date=November 2005}}</ref><ref name=GL6>{{Cite comic|writer=Johns, Geoff|penciller=[[Simone Bianchi (artist)|Bianchi, Simone]] |inker=Bianchi, Simone|story=Black Sheep|title=Green Lantern|Volume=4|Issue=6|date=December 2005}}</ref> As part of DC's revision of the entire universe, as of ''Green Lantern'' vol. 4, #10, the series has skipped ahead [[One Year Later (comics)|one year]], bringing drastic changes to Hal Jordan's life, as with every other hero in the DC Universe. It is revealed that Jordan spent time as a [[prisoner of war]] in an unnamed conflict and has feelings of guilt from his inability to free himself and his fellow captives.<ref name=GL17>{{Cite comic|writer=Johns, Geoff|penciller=[[Ivan Reis|Reis, Ivan]]|inker=[[Oclair Albert|Albert, Oclair]]; Reis, Ivan|story=Wanted: Hal Jordan Chapter Four|title=Green Lantern|Volume=4|Issue=17|date=April 2007}}</ref>
+
+A new account of Green Lantern's origins was released in the 2008 ''Green Lantern'' series "[[Green Lantern: Secret Origin|Secret Origin]]". In this new origin, Hal Jordan, is working as an assistant mechanic under [[Tom Kalmaku]] himself, barred from flying due to his insubordination while in the [[United States Air Force]] and his employers lingering guilt about his father's death in the line of duty, when [[Abin Sur]], fighting [[Atrocitus]] of the Five Inversion, crashes near Coast City.<ref name="GL29">{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair|story=Secret Origin, Part 1|title=Green Lantern|Volume=4|Issue=29|date=May 2008}}</ref><ref name="GL30">{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair|story=Secret Origin, Book 2|title=Green Lantern|Volume=4|Issue=30|date=June 2008}}</ref> Hal and the rest of the Green Lantern Corps find themselves at war with [[Sinestro]] and his army, the [[Sinestro Corps]] during the events of the [[Sinestro Corps War]].<ref name=GLSCS>{{Cite comic|writer=Johns, Geoff|penciller=Van Sciver, Ethan|inker=Van Sciver, Ethan|story=Sinestro Corps, Prologue: The Second Rebirth|title=[[Sinestro Corps War|Green Lantern: Sinestro Corps Special]]|Issue=1|date=August 2007}}</ref>
+
+Leading into the "[[Blackest Night]]" storyline, the "Rage of the Red Lanterns" arc features Jordan making use of both [[Red Lantern Corps|Red]] and [[Blue Lantern Corps|Blue]] [[Power ring (DC Comics)|power rings]].<ref name=GL36>{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair|story=Rage of the Red Lanterns, Part Two|title=Green Lantern|Volume=4|Issue=36|date=January 2009}}</ref><ref name=GL37>{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair; [[Julio Ferreira|Ferreira, Julio]]|story=Rage of the Red Lanterns Part Three|title=Green Lantern|Volume=4|Issue=37|date=February 2009}}</ref><ref name=GL38>{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair|story=Rage of the Red Lanterns Part Four|title=Green Lantern|Volume=4|Issue=38|date=March 2009}}</ref> In the ''[[Larfleeze|Agent Orange]]'' story arc, Hal Jordan is briefly in command of [[Larfleeze]]'s power battery after he steals it from him in a battle. The orange light of avarice converses with Jordan, his costume changes, and he becomes an Orange Lantern. Larfleeze quickly takes his power battery back from Jordan.<ref name=GL42>{{Cite comic|writer=Johns, Geoff|penciller=[[Philip Tan|Tan, Philip]]; [[Eddy Barrows|Barows, Eddy]]|inker=[[Jonathan Glapion|Glapion, Jonathan]]; [[Ruy José|José, Ruy]]|story=Agent Orange Part Four|title=Green Lantern|Volume=4|Issue=42|date=August 2009}}</ref> The Green Lantern mythology is center stage with the DC crossover event ''[[Blackest Night]]'', which sees dead heroes and villains across the DC Universe becoming active as members of the [[Black Lantern Corps]].<ref name="BN1">{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair|story=Blackest Night Part 1|title=[[Blackest Night]]|Issue=1|date=September 2009}}</ref> Combating Black Lanterns with fellow DC characters the [[Barry Allen|Flash]], the [[Atom (Ray Palmer)|Atom]], and [[Mera (character)|Mera]], Jordan fights alongside the high-profile members of every corps in the emotional spectrum, and oversees new DC characters inductions into all the other corps. Jordan and his "New Guardians" move with the other new corps members to combat the Black Lantern Corps and its leader [[Nekron]] directly.<ref name="BN6">{{Cite comic|writer=Johns, Geoff|penciller=Reis, Ivan|inker=Albert, Oclair; [[Joe Prado|Prado, Joe]]|story=Die! |title=Blackest Night|Issue=6|date=February 2010}}</ref>
+
+After the conclusion to ''Blackest Night'', the ''Green Lantern'' title tied into the aftermath event ''[[Brightest Day]]'', with several members of Corps from across the emotional spectrum seeking to gain control of the [[White Lantern Corps|White Entity]] that settled on Earth in the final issue of ''Blackest Night''.<ref name="GL53">{{Cite comic|writer=Johns, Geoff|penciller=[[Doug Mahnke|Mahnke, Doug]]|inker=[[Christian Alamy|Alamy, Christian]]; [[Keith Champagne|Champagne, Keith]]; [[Mark Irwin (comics)|Irwin, Mark]]; Mahnke, Doug|story=The New Guardians Chapter One|title=Green Lantern|Volume=4|Issue=53|date=June 2010}}</ref> After the conclusion of ''Brightest Day'', the mad ex-Guardian of the Universe [[Krona (character)|Krona]] returns, taking control of the Green Lantern Corps and causing Hal, John Stewart, Guy Gardner, and Kyle Rayner to fight their brothers-in-arms across the ''[[War of the Green Lanterns]]'' event.<ref name="GL63">{{Cite comic|writer=Johns, Geoff|penciller=[[Ed Benes|Benes, Ed]]; [[Ardian Syaf|Syaf, Ardian]]|inker=Benes, Ed; Hunter, Rob; [[Vicente Cifuentes|Cifuentes, Vicente]]|story=War of the Green Lanterns Prologue|title=Green Lantern|Volume=4|Issue=63|date=April 2011}}</ref> The ''War'' story ends with Hal Jordan killing Krona, an act which alarms the Guardians enough that they strip Hal of his ring and return him to Earth, no longer serving as Green Lantern of Sector 2814. In his place, inexplicably, is [[Sinestro]], former renegade and enemy of the Corps, serving in Hal's place to the shock and chagrin of everyone involved.<ref name="GL67">{{Cite comic|writer=Johns, Geoff|penciller=Mahnke
+, Doug|inker=Alamy, Christian; [[Tom Nguyen|Nguyen, Tom]]; Champagne, Keith; Irwin, Mark
+|story=War of the Green Lanterns Conclusion|title=Green Lantern|Volume=4|Issue=67|date=August 2011}}</ref>
+
+After a new continuity was created in the wake of the ''[[Flashpoint (comics)|Flashpoint]]'' limited series,<ref>{{cite web|url=https://www.newsarama.com/7705-one-year-ago-dc-universe-reboots-in-september.html|archive-url=https://web.archive.org/web/20130602151813/http://www.newsarama.com/7705-one-year-ago-dc-universe-reboots-in-september.html|url-status=dead|archive-date=June 2, 2013|title=One Year Ago: DC Universe Reboots in September|last=Siegel|first=Lucas|date=May 29, 2012|website=[[Newsarama]]|publisher=[[Future plc]]|access-date=September 3, 2019|quote=On Tuesday afternoon, May 31, 2011, news broke around the Internet and in ''USA Today'' about DC Comics' planned September 2011 DC Universe reboot-relaunch — what we now all know as "The New 52."}}</ref> the first issue of the new volume of ''Green Lantern'' was released on September 14, 2011.
+
+===Volume 5 (2011–2016)===
+{{update section|''The Green Lantern''|date=February 2020}}
+[[File:GreenLanternV5no1.jpeg|thumb|right|170px|[[Sinestro]] on the cover of ''Green Lantern'' (vol. 5) #1, art by [[Ivan Reis]]]]
+As part of [[The New 52]] initiative, which rebooted DC's continuity, DC Comics relaunched ''Green Lantern'' with a new issue #1, written again by [[Geoff Johns]] and penciled by [[Doug Mahnke]].<ref>{{cite web|url=https://www.ign.com/articles/2011/09/16/the-new-52-interviews-green-lantern|title=The New 52 Interviews: Green Lantern – Geoff Johns dishes on his plans for Hal Jordan and Sinestro|last1=Perez|first1=Miguel|last2=Esposito|first2=Joey|date=September 16, 2011|website=[[IGN]]|access-date=September 3, 2019}}</ref> As with all of the books associated with the DC relaunch, Hal Jordan appears to be about five years younger than the previous incarnation of the character. Superheroes at large have appeared only in the past five years, and are viewed with at best, suspicion, and at worst, outright hostility.
+
+The entire history of Johns' previous run on the ''Green Lantern'' title is still a part of the continuity of The New 52, with major storylines "[[Green Lantern: Rebirth|Rebirth]]", "[[Green Lantern: Sinestro Corps War|Sinestro Corps War]]", "[[Blackest Night]]", and "[[Brightest Day]]" all still forming the backbone of the recent history of the characters.<ref>{{cite web |url=http://www.newsarama.com/comics/dcnu-bob-harras-eddie-berganza-history-in-tact-110615.html |title=Harras, Berganza: DCnU Will Keep Much of DC History Intact |first=Vaneta |last=Rogers |date=June 15, 2011 |publisher=Newsarama |archive-url=https://web.archive.org/web/20121002113542/http://www.newsarama.com/comics/dcnu-bob-harras-eddie-berganza-history-in-tact-110615.html |archive-date=October 2, 2012 |url-status=dead |access-date=September 30, 2012}}</ref> As a result, the new volume of ''Green Lantern'' continues directly from the events of ''War of the Green Lanterns'', with Sinestro serving as a Green Lantern and Hal Jordan beginning the series powerless on Earth.<ref name="GLNu1">{{Cite comic|writer=Johns, Geoff |penciller=Mahnke, Doug|inker=Alamy, Christian; Nguyen, Tom|story=Sinestro Part One|title=Green Lantern|Volume=5|Issue=1|date=November 2011}}</ref>
+
+The title's first story arc, simply titled "Sinestro", deals with the former renegade's return to the Green Lantern Corps and Hal Jordan's mundane earthbound life. While on patrol, Sinestro visits his home planet of [[Korugar]], and to his horror discovers that the remaining members of the [[Sinestro Corps]] have enslaved the planet's populace. In order to assist him in retaking the planet, Sinestro travels to Earth and creates a ring for Hal Jordan, his greatest enemy.<ref name="GLNu1" />
+
+Following Hal Jordan and Sinestro's apparent deaths at the hands of the [[Guardians of the Universe]] while facing [[Black Hand (character)|Black Hand]], [[Simon Baz]], an [[Arab-Muslim]], becomes the newest Green Lantern from Earth in ''Green Lantern'' #0.<ref>{{cite web|url=https://news.yahoo.com/arab-muslim-join-green-lantern-comic-series-070324504.html|title=Arab-Muslim to join ''Green Lantern'' comic series|last=Karoub|first=Jeff|date=September 4, 2012|website=[[Yahoo! News]]|access-date=September 3, 2019|quote=Simon Baz, DC's most prominent Arab-American superhero and the first to wear a Green Lantern ring.}}</ref> Later following Jordan's revival in #20, the series shifted to focusing on him exclusively once again where he is now the leader of the Green Lantern Corps. The series later shifted where following the major incidents over the next few story arcs, Hal Jordan voluntarily became a scapegoat to preserve the Green Lanterns' reputation and officially became a renegade starting from the series 40th issue, using the same gauntlet [[Krona (character)|Krona]] once had in place of a Power Ring which lasted until the series' conclusion.
+
+=== ''Green Lanterns'' and ''Hal Jordan and the Green Lantern Corps'' (2016–2018) ===
+As part of the [[DC Rebirth]] relaunch of DC's titles in 2016, ''Green Lantern'' was cancelled and replaced with two new series: ''Green Lanterns'' starring Simon Baz and Jessica Cruz and ''Hal Jordan and the Green Lantern Corps'' starring Hal Jordan.<ref>{{cite web|url=http://www.newsarama.com/28702-dc-s-rebirth-puts-a-ring-back-on-hal-jordan.html|title=Rebirth Brings Hal Back to the Green Lantern Corps|first=George|last=Marston|date=April 5, 2016|publisher=Newsarama|archive-url=https://web.archive.org/web/20160420173700/http://www.newsarama.com/28702-dc-s-rebirth-puts-a-ring-back-on-hal-jordan.html|archive-date=April 20, 2016|url-status=dead|quote=Hal Jordan will be flying with a familiar co-pilot as recent Green Lantern writer Robert Venditti will continue to write his adventures in the new ongoing series ''Hal Jordan and the Green Lantern Corps''.}}</ref> ''Hal Jordan and the Green Lantern Corps'' had a 50 issue run, ending on August 8, 2018. ''Green Lanterns'' ran for 57 issues before ending on October 17, 2018.
+
+=== ''The Green Lantern'' and ''Blackstars'' (2019–2020) ===
+[[Grant Morrison]] took over writing the series with the Hal Jordan-centred ''The Green Lantern: Season One'', illustrated by [[Liam Sharp]]. Together with an Annual, the 12-issue series brought Jordan back to the concept of a space cop, investigating an intergalactic mystery. Morrison intended the series to be similar to his Batman and Superman runs, where all of Jordan's continuity would be on the table. Season Two of the series was announced partway through the run.
+
+''The Green Lantern: Blackstars'' is a 3-issue series taking place between Season One and Season Two of the main series, written by Morrison and drawn by [[Xermanico]]. The series follows Hal Jordan, a Green Lantern who has been exiled from Earth for his crimes, now a member of the Blackstars, a group of exiled superheroes who have been forced to work for the Sinestro Corps.
+
+''The Green Lantern: Season Two'' is another 12-issue run by Morrison and Sharp, which concluded the story they wanted to tell.
+
+===Volume 6 (2021–2022)===
+''Green Lantern'' volume 6 was part of the [[Infinite Frontier]] relaunch with the original creative team being Geoffrey Thorne with art by Dexter Soy. This volume follows John Stewart as the titular character, with [[Sojourner Mullein|Jo Mullein]] and Keli Quintela ([[Teen Lantern]]) acting as supporting characters.
+
+=== Volume 7 (2023–present) ===
+A new ''Green Lantern'' ongoing series starring Hal Jordan began publication in May 2023. The series is written by Jeremy Adams and feature art by Xermánico. The series also set up a John Stewart series, with both being written by [[Phillip Kennedy Johnson]] and drawn by Osvaldo Montos. Set after the events of [[Dark Crisis|''Dark Crisis on Infinite Earths'']], the Guardians of Oa have quarantined Sector 2814, home of Earth, much to Hal's dismay.<ref>{{Cite web |last=Brooke |first=David |date=January 25, 2023 |title=New Dawn of DC 2023 plans reveal Cyborg, Titans, and Green Lantern |url=https://aiptcomics.com/2023/01/25/dawn-of-dc-2023-cyborg-titans-green-lantern/ |access-date=January 25, 2023 |website=aiptcomics.com |language=en-us}}</ref> The series also introduces [[Razer (DC Comics)|Razer]] and [[Aya (DC Comics)|Aya]], who were originally created for ''[[Green Lantern: The Animated Series]]'', into the mainline continuity.<ref>{{Cite web |last=Franey |first=Christopher |date=February 13, 2024 |title='Green Lantern' #8 review |url=https://aiptcomics.com/2024/02/13/green-lantern-8-review/ |access-date=August 15, 2025 |website=AIPT |language=en-US}}</ref><ref>{{Cite web |last=Johnston |first=Rich |author-link=Rich Johnston |date=June 25, 2025 |title=Green Lantern Brings Back A Character From Animated Series (Spoilers) |url=https://bleedingcool.com/comics/green-lantern-brings-back-a-character-from-animated-series-spoilers/ |access-date=August 15, 2025 |website=[[Bleeding Cool]] |language=en}}</ref>
+
+==Collected editions==
+Several of the comic books have been collected into individual [[trade paperback (comics)|volumes]]:
+
+=== ''Green Lantern'' vol. 1 (1941–1949) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Title
+! Vol.
+! Release<br />date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| rowspan=2 |''Golden Age Green Lantern [[DC Archive Editions|Archives]]''
+| 01
+| May 1999<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/golden-age-green-lantern-archives-vol-1|title=''Golden Age Green Lantern Archives'' Volume 1 |date=9 March 2012 |publisher=DC Comics|archive-url=https://web.archive.org/web/20131227112327/http://www.dccomics.com/graphic-novels/golden-age-green-lantern-archives-vol-1|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-507-2}}
+|
+*''Green Lantern'' #1 and ''[[All-American Comics]]'' #16–30
+*224 pages
+|- style="text-align: center;"
+| 02
+| February 2002<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/golden-age-green-lantern-archives-vol-2|title=''Golden Age Green Lantern Archives'' Volume 2|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227081503/http://www.dccomics.com/graphic-novels/golden-age-green-lantern-archives-vol-2|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-794-6}}
+|
+*''Green Lantern'' #2–3 and ''All-American Comics'' #31–38
+*232 pages
+|}
+
+=== ''Green Lantern'' vol. 2 (1959–1988) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Title
+! Vol.
+! Release<br />date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| rowspan=2 | ''The Green Lantern Omnibus''
+| 01
+| November 24, 2010<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/the-green-lantern-omnibus|title=''The Green Lantern Omnibus'' Volume 1|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151106125359/http://www.dccomics.com/graphic-novels/the-green-lantern-omnibus|archive-date=November 6, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-3056-3}}
+| 
+*''[[Showcase (comics)|Showcase]]'' #22–24 and ''Green Lantern'' vol. 2 #1–21
+*640 pages
+|- style="text-align: center;"
+| 02
+|  November 23, 2011<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/the-green-lantern-omnibus-vol-2|title=''The Green Lantern Omnibus'' Volume 2|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151111163552/http://www.dccomics.com/graphic-novels/the-green-lantern-omnibus-vol-2|archive-date=November 11, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-3295-7}}
+| 
+*''Green Lantern'' vol. 2 #22–45
+*624 pages 
+|- style="text-align: center;"
+| rowspan=7 | ''Green Lantern Archives''
+| 01
+| June 3, 2004<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-1|title=''Green Lantern Archives'' Volume 1|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151112152100/http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-1|archive-date=November 12, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-087-9}}
+| 
+*''Showcase'' #22–24 and ''Green Lantern'' vol. 2 #1–5
+*201 pages
+|- style="text-align: center;"
+| 02
+| June 3, 2004<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-2|title=''Green Lantern Archives'' Volume 2|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20150924172904/http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-2|archive-date=September 24, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-566-8}}
+|  
+*''Green Lantern'' vol. 2 #6–13
+*210 pages
+|- style="text-align: center;"
+| 03
+| June 3, 2004<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-3|title=''Green Lantern Archives'' Volume 3|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151111024126/http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-3|archive-date=November 11, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-713-X}}
+| 
+*''Green Lantern'' vol. 2 #14–21
+*208 pages
+|- style="text-align: center;"
+| 04
+| June 3, 2004<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-4|title=''Green Lantern Archives'' Volume 4|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20150924174428/http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-4|archive-date=September 24, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-811-X}}
+| 
+*''Green Lantern'' vol. 2 #22–29
+*209 pages
+|- style="text-align: center;"
+| 05
+| January 19, 2005<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-5|title=''Green Lantern Archives'' Volume 5|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151116094217/http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-5|archive-date=November 16, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-0404-X}}
+|  
+*''Green Lantern'' vol. 2 #30–38
+*240 pages
+|- style="text-align: center;"
+| 06
+| January 3, 2007<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-6|title=''Green Lantern Archives'' Volume 6|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151125212805/http://www.dccomics.com/graphic-novels/green-lantern-archives-vol-6|archive-date=November 25, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-1189-5}}
+| 
+*''Green Lantern'' vol. 2 #39–47
+*240 pages
+|- style="text-align: center;"
+| 07
+| August 2, 2012<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/the-green-lantern-archives-vol-7|title=''Green Lantern Archives'' Volume 7|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20150110054156/http://www.dccomics.com/graphic-novels/the-green-lantern-archives-vol-7|archive-date=January 10, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-3513-1}}
+|
+*''Green Lantern'' vol. 2 #48–57
+*256 pages
+|- style="text-align: center;"
+| rowspan=4 | ''The Green Lantern Chronicles''
+| 01
+| April 29, 2009<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-chronicles-vol-1|title=''Green Lantern Chronicles'' Volume 1|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227115429/http://www.dccomics.com/graphic-novels/green-lantern-chronicles-vol-1|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-2163-7}}
+| 
+*''Showcase'' #22–24 and ''Green Lantern'' vol. 2 #1–3
+|- style="text-align: center;"
+| 02
+| December 23, 2009<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/green-lantern-chronicles-vol-2|title=''Green Lantern Chronicles'' Volume 2|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227101940/http://www.dccomics.com/graphic-novels/green-lantern-chronicles-vol-2|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-2499-7}}
+| 
+*''Green Lantern'' vol. 2 #4–9
+|- style="text-align: center;"
+| 03
+| October 27, 2010<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/the-green-lantern-chronicles-vol-3|title=''Green Lantern Chronicles'' Volume 3|publisher=DC Comics|archive-url=https://web.archive.org/web/20151106172935/http://www.dccomics.com/graphic-novels/the-green-lantern-chronicles-vol-3|archive-date=November 6, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-2915-8}}
+| 
+*''Green Lantern'' vol. 2 #10–14, ''[[The Flash (comic book)|The Flash]]'' #131
+|- style="text-align: center;"
+| 04
+| March 21, 2012<ref>{{cite web |url=http://www.dccomics.com/graphic-novels/the-green-lantern-chronicles-vol-4|title=''Green Lantern Chronicles'' Volume 4|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227115450/http://www.dccomics.com/graphic-novels/the-green-lantern-chronicles-vol-4|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-3396-1}}
+| 
+*''Green Lantern'' vol. 2 #15–20
+|- style="text-align: center;"
+| rowspan=5 | ''[[Showcase Presents]]:<br />Green Lantern''
+| 01
+| November 17, 2010<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-1|title=''Showcase Presents: Green Lantern'' Volume 1|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151106154218/http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-1|archive-date=November 6, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-0759-6}}
+|
+*''Showcase'' #22–24 and ''Green Lantern'' vol. 2 #1–17
+*528 pages
+|- style="text-align: center;"
+| 02
+| February 28, 2007<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-2|title=''Showcase Presents: Green Lantern'' Volume 2|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151106183103/http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-2|archive-date=November 6, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-1264-6}}
+| 
+*''Green Lantern'' vol. 2 #18–37 and ''The Flash'' #143
+*528 pages
+|- style="text-align: center;"
+| 03
+| May 21, 2008<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-3|title=''Showcase Presents: Green Lantern'' Volume 3|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151113024708/http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-3|archive-date=November 13, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-1792-3}}
+| 
+*''Green Lantern'' vol. 2 #39–59
+*528 pages
+|- style="text-align: center;"
+| 04
+| June 10, 2009<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-4|title=''Showcase Presents: Green Lantern'' Volume 4|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151003111811/http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-4|archive-date=October 3, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-2278-1}}
+| 
+*''Green Lantern'' vol. 2 #60–75
+*392 pages
+|- style="text-align: center;"
+| 05
+| April 27, 2011<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-5|title=''Showcase Presents: Green Lantern'' Volume 5|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151122020149/http://www.dccomics.com/graphic-novels/showcase-presents-green-lantern-vol-5|archive-date=November 22, 2015|url-status=live|access-date=December 5, 2015}}</ref>
+| {{ISBNT|1-4012-3023-7}}
+|
+*''Green Lantern'' vol. 2 #76–87, 89; and ''The Flash'' #217–221, 223, 224, 226–228, 230, 231, 233, 234, 237, 238, 240–243, 245, 246
+*496 pages
+|- style="text-align: center;"
+| rowspan=3 |''Green Lantern/Green Arrow''
+| 01
+| January 1, 2004<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lanterngreen-arrow-vol-1|title=''Green Lantern/Green Arrow'' Volume 1|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151115182324/http://www.dccomics.com/graphic-novels/green-lanterngreen-arrow-vol-1|archive-date=November 15, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-0224-1}} 
+| 
+*''Green Lantern'' vol. 2 #76–82
+|- style="text-align: center;"
+| 02
+| July 14, 2004<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lanterngreen-arrow-vol-2|title=''Green Lantern/Green Arrow'' Volume 2|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151003201312/http://www.dccomics.com/graphic-novels/green-lanterngreen-arrow-vol-2|archive-date=October 3, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-4012-0230-6}}
+| 
+*''Green Lantern'' vol. 2 #83–87, 89; and ''The Flash'' #217–219, 226
+|- style="text-align: center;"
+|
+| August 15, 2012<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-green-arrow|title=''Green Lantern/Green Arrow''|date=9 April 2012 |publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401235178}}
+| 
+*''Green Lantern'' vol. 2 #76–87, 89; and ''The Flash'' #217–219, 226
+*368 pages
+|- style="text-align: center;"
+|''Green Lantern/Green Arrow by Denny O' Neil & Mike Grell''
+|01
+| July 21, 2020
+| {{ISBNT| 978-1401295530}}
+|
+*''Green Lantern'' vol. 2 #90-106
+*334
+|- style="text-align: center;"
+| rowspan=3 |''Tales of the Green Lantern Corps''
+| 01
+| February 25, 2009<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/tales-of-the-green-lantern-corps-vol-1|title=''Tales of the Green Lantern Corps'' Volume 1|date=9 March 2012|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401221553}}
+|
+*''Tales of the Green Lantern Corps'' #1–3; and backup stories from ''Green Lantern'' vol. 2 #148, 151–154, 161, 162 and 164–167
+*160 pages
+|- style="text-align: center;"
+| 02
+| January 27, 2010<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/tales-of-the-green-lantern-corps-vol-2|title=''Tales of the Green Lantern Corps'' Volume 2|date=9 March 2012|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401227029}}
+|
+*backup stories from ''Green Lantern'' vol. 2 #168, 169, 171–173, 177, 179–183, 185, 187–190 and ''Tales of the Green Lantern Corps Annual'' #1
+*144 pages
+|- style="text-align: center;"
+| 03
+| December 15, 2010<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/tales-of-the-green-lantern-corps-vol-3|title=''Tales of the Green Lantern Corps'' Volume 3|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401229344}}
+|
+*''Green Lantern'' vol. 2 #201–206
+*144 pages
+|- style="text-align: center;"
+| rowspan=3 |''Green Lantern: Sector 2814''
+| 01
+| November 14, 2012<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-sector-2814-vol-1|title=''Green Lantern: Sector 2814'' Volume 1|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401236892}}
+|
+* ''Green Lantern'' vol. 2 #172–176 & 178–181
+*192 pages
+|- style="text-align: center;"
+| 02
+| August 21, 2013<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-sector-2814-vol-2|title=''Green Lantern: Sector 2814'' Volume 2|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401240783}}
+|
+* ''Green Lantern'' vol. 2 #182–183 & 185–189
+*232 pages
+|- style="text-align: center;"
+| 03
+| January 8, 2014<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-sector-2814-vol-3|title=''Green Lantern: Sector 2814'' Volume 3|date=9 September 2013 |publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401243272}}
+|
+* ''Green Lantern'' vol. 2 #194–200
+*200 pages
+|- style="text-align: center;
+| rowspan=4 | ''Green Lantern: The Silver Age''
+| 01
+| October 5, 2016<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-the-silver-age-vol-1|title=''Green Lantern: The Silver Age'' Volume 1|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401263485}}
+|
+*''Showcase'' #22–24 and ''Green Lantern'' vol. 2 #1–9
+*356 pages
+|- style="text-align: center;"
+| 02
+| July 11, 2017
+| {{ISBNT|978-1401271077}}
+|
+*''Green Lantern'' vol. 2 #10–22
+*320 pages
+|- style="text-align: center;
+| 03
+| April 24, 2018
+| {{ISBNT|978-1401278472}}
+|
+*''Green Lantern'' vol. 2 #23-35
+*344 pages
+|- style="text-align: center;"
+| 04
+| October 1, 2019
+| {{ISBNT|978-1401294359}}
+|
+*''Green Lantern'' vol. 2 #36–48
+*336 pages
+|- style="text-align: center;"
+| rowspan=2 | ''Green Lantern: The Silver Age Omnibus''
+| 01
+| February 22, 2017<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-the-silver-age-omnibus-vol-1|title=''Green Lantern: The Silver Age Omnibus'' Volume 1|date=19 September 2016|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401268572}}
+|
+*''[[Showcase (comics)|Showcase]]'' #22–24 and ''Green Lantern'' vol. 2 #1–35
+*1000 pages
+|- style="text-align: center;
+| 02
+| March 28, 2018<ref>{{cite web|url=https://www.dccomics.com/graphic-novels/green-lantern-the-silver-age-omnibus-2017/green-lantern-the-silver-age-omnibus-vol-2|title=''Green Lantern: The Silver Age Omnibus'' Volume 2|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401278021}}
+|
+*''Green Lantern'' vol. 2 #36–75
+*1000 pages
+|-
+|''Green Lantern/Green Arrow: Hard Travelin' Heroes'' ''Omnibus''
+|
+|May 21, 2024
+|{{ISBNT|978-1779525734}}
+|
+* ''Green Lantern'' (vol. 2) #76–87, 89–123
+* ''World's Finest Comics'' #201
+* Material from ''Brave and the Bold'' #100, ''DC Special-Series'' #1, ''DC Super-Stars'' #17, ''The Flash'' (vol. 1) #218-224, 226-228, 230-231, 233-234, 237-238, 240-246, ''Green Lantern 80th Anniversary 100-Page Super Spectacular'' #1, ''World's Finest Comics'' #210, 255
+|}
+
+=== ''Green Lantern'' vol. 3 (1990–2004) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Title
+! Release<br />date
+! ISBN
+! Contents
+|- style="text-align: center;"
+|''Green Lantern: Hal Jordan Volume One''
+| January 18, 2017<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-hal-jordan-vol-1|title=''Green Lantern: Hal Jordan'' Volume 1|publisher=DC Comics|access-date=December 2, 2016}}</ref>
+| {{ISBNT|978-1401265755}}
+|
+*''Green Lantern: Emerald Dawn'' #1–6 & ''Green Lantern: Emerald Dawn II'' #1–6
+*304 pages
+|- style="text-align: center;"
+|''The Road Back''
+| January 1, 2004<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-the-road-back|title=''Green Lantern: The Road Back''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227121031/http://www.dccomics.com/graphic-novels/green-lantern-the-road-back|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1563890453}}
+|
+* ''Green Lantern'' vol. 3 #1–8
+*192 pages
+|- style="text-align: center;"
+|''Green Lantern: Kyle Rayner Vol. 1''
+|October 17, 2017
+|{{ISBNT|978-1401276874}}
+|
+*''Green Lantern'' vol. 3 #0, 48–57, ''R.E.B.E.L.S. '94'' #1, ''New Titans'' #116–117
+*368 pages
+|- style="text-align: center;"
+|''Green Lantern: Kyle Rayner Vol. 2''
+| May 2, 2018
+|{{ISBNT|978-1401278502}}
+|
+*''Green Lantern'' vol. 3 #58–65, ''New Titans'' #124–125, ''Darkstars'' #34, ''Guy Gardner: Warrior'' #27–28, ''Damage'' #16
+*360 pages
+|- style="text-align: center;"
+|''Green Lantern: Kyle Rayner Vol. 3''
+|January 9, 2019
+|{{ISBNT|978-1401285715}}
+|
+*''Green Lantern'' Vol. 3  #66–75 and ''Annual'' #4
+*296 Pages
+|- style="text-align: center;"
+|''[[Emerald Twilight]]'' 
+| March 1994
+|{{ISBNT|978-1563891649}}
+|
+*''Green Lantern'' vol. 3 #48–50
+|- style="text-align: center;"
+|''Emerald Twilight/New Dawn''
+| September 4, 2003<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-emerald-twilightnew-dawn|title=''Emerald Twilight/New Dawn''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151203013442/http://www.dccomics.com/graphic-novels/green-lantern-emerald-twilightnew-dawn|archive-date=December 3, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-999-X}}
+|
+* ''Green Lantern'' vol. 3 #48–55
+*192 pages
+|- style="text-align: center;"
+|''New Dawn''
+| February 1997
+| {{ISBNT|978-1563892226}}
+|
+*  ''Green Lantern'' vol. 3 #51–55
+*128 pages
+|- style="text-align: center;"
+|''Baptism of Fire''
+| March 10, 1999
+| {{ISBNT|978-1563895241}}
+|
+*''Green Lantern'' vol. 3 #59, 66–67, 70–75
+*208 pages
+|- style="text-align: center;"
+|''Emerald Allies'' 
+| March 1, 2000<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-emerald-allies|title=''Emerald Allies''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227090155/http://www.dccomics.com/graphic-novels/green-lantern-emerald-allies|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1-56389-603-6}}
+|
+*''Green Lantern'' vol. 3 #76–77, 92 and ''Green Arrow'' vol. 2 #104, 110–111, 125–126
+*208 pages
+|- style="text-align: center;"
+|''Emerald Knights'' 
+| November 1, 1998
+| {{ISBNT|1-56389-475-0}}
+|
+*''Green Lantern'' vol. 3 #99–106 and ''Green Arrow'' vol. 2 #136
+*208 pages
+|- style="text-align: center;"
+|''New Journey, Old Path''
+| August 1, 2001<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-new-journey-old-path|title=''New Journey, Old Path''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227075903/http://www.dccomics.com/graphic-novels/green-lantern-new-journey-old-path|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+|{{ISBNT|1-56389-729-6}}
+|
+*''Green Lantern'' vol. 3 #129–136
+*192 pages
+|- style="text-align: center;"
+|''Circle of Fire''
+| February 9, 2021
+|{{ISBNT|978-1779509055}}
+|
+*''Green Lantern'' vol. 3 #129–136, ''Green Lantern: Circle of Fire'' #1-2, ''Green Lantern/Atom'' #1, ''Green Lantern/Power Girl'' #1, ''Green Lantern/Adam Strange'' #1, ''Green Lantern/Firestorm'' #1, ''Green Lantern/Green Lantern'' #1
+*416 pages
+|- style="text-align: center;"
+|''The Power of Ion''
+| March 1, 2003
+| {{ISBNT|1-56389-972-8}}
+|
+*''Green Lantern'' vol. 3 #142–150
+*226 pages
+|- style="text-align: center;"
+|''Brother's Keeper''
+| July 1, 2003
+| {{ISBNT|1-4012-0078-8}}
+|
+*''Green Lantern'' vol. 3 #151–155 and ''Green Lantern Secret Files'' #3
+*128 pages
+|- style="text-align: center;"
+|''Passing The Torch''
+| September 1, 2004<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-passing-the-torch|title=''Green Lantern: Passing the Torch''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20131227103613/http://www.dccomics.com/graphic-novels/green-lantern-passing-the-torch|archive-date=December 27, 2013|url-status=live|access-date=September 25, 2012}}</ref>
+| {{ISBNT|1401202373}}
+|
+* ''Green Lantern'' vol. 3 #156, 158–161 and ''Green Lantern Secret Files'' #2
+* 128 pages
+|}
+
+*''[[The Death of Superman|Superman: The Return of Superman]]'' includes ''Green Lantern'' vol. 3 #46, 480 pages, December 1993, {{ISBNT|1-56389-149-2}}
+
+=== ''Green Lantern'' vol. 4 (2005–2011) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Title
+! Release<br />date
+! ISBN
+! Contents
+! Pages
+
+|- style="text-align: center;"
+|''[[Green Lantern: Rebirth|Rebirth]]''
+| 
+* Hardcover: October 10, 2005 
+* Softcover: March 28, 2007
+| 
+* Hardcover: {{ISBNT|1-4012-0710-3}} 
+* Softcover: {{ISBNT|1-4012-0465-1}}
+| ''Green Lantern: Rebirth'' #1–6, story from ''Green Lantern Secret Files and Origins 2005'' #1
+| 176 pages
+
+|- style="text-align: center;"
+|''Absolute Green Lantern Rebirth''
+| Oversized Hardcover: April 21, 2010 
+| {{ISBNT|1-4012-2574-8}} 
+| ''Green Lantern: Rebirth'' #1–6, ''Green Lantern Secret Files and Origins 2005'' #1 and ''Green Lantern'' vol. 4 #1
+| 224 pages
+
+|- style="text-align: center;"
+|''No Fear''
+| 
+* Hardcover: April 19, 2006
+* Softcover: May 14, 2009 
+| 
+* Hardcover: {{ISBNT|1-4012-0466-X}}
+* Softcover: {{ISBNT|1-4012-1058-9}}<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-no-fear-0|title=''Green Lantern: No Fear'' softcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20151121104557/http://www.dccomics.com/graphic-novels/green-lantern-no-fear-0|archive-date=November 21, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+| ''Green Lantern'' vol. 4 #1–6 and ''Green Lantern Secret Files and Origins'' #1
+| 176 pages
+
+|- style="text-align: center;"
+|''Revenge of the Green Lanterns''<!--plural term "Lanterns" is correct-->
+| 
+* Hardcover: November 29, 2006
+* Softcover: October 1, 2008  
+| 
+* Hardcover: {{ISBNT|1-4012-1167-4}},<ref>{{cite web|url=http://dccomics.com/dcu/graphic_novels/?gn=6070|title=''Revenge of the Green Lanterns'' hardcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20131228180312/http://www.dccomics.com/graphic-novels/green-lantern-revenge-of-the-green-lanterns|archive-date=December 28, 2013|url-status=dead|access-date=September 25, 2012}}</ref>
+* Softcover: {{ISBNT|1-4012-0960-2}})<ref>{{cite web|url=http://dccomics.com/dcu/graphic_novels/?gn=9972|title=''Revenge of the Green Lanterns'' softcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20131228173230/http://www.dccomics.com/graphic-novels/green-lantern-revenge-of-the-green-lanterns-0|archive-date=December 28, 2013|url-status=dead|access-date=September 25, 2012}}</ref>
+| ''Green Lantern'' vol. 4 #7–13
+| 176 pages
+
+|- style="text-align: center;"
+|''Wanted: Hal Jordan''
+| 
+* Hardcover: August 1, 2007
+* Softcover: January 7, 2009
+| 
+* Hardcover: {{ISBNT|1-4012-1339-1}},<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-wanted-—-hal-jordan|title=''Wanted: Hal Jordan'' hardcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20150720141421/http://www.dccomics.com/graphic-novels/green-lantern-wanted-%E2%80%94-hal-jordan|archive-date=July 20, 2015|url-status=live|access-date=December 5, 2015}}</ref>
+* Softcover: {{ISBNT|1-4012-1590-4}}<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-wanted-–-hal-jordan|title=''Wanted: Hal Jordan'' softcover|date=9 March 2012 |publisher=DC Comics|archive-url=https://web.archive.org/web/20151104064026/http://www.dccomics.com/graphic-novels/green-lantern-wanted-%E2%80%93-hal-jordan|archive-date=November 4, 2015|url-status=live|access-date=December 5, 2015}}</ref>
+| ''Green Lantern'' vol. 4 #14–20
+| 160 pages
+
+|- style="text-align: center;"
+|''[[Sinestro Corps War|The Sinestro Corps War]]: Volume 1''
+| 
+* Hardcover: February 20, 2008
+* Softcover: April 29, 2009
+| 
+* Hardcover: {{ISBNT|1-4012-1650-1}},<ref>{{cite web |url=http://www.dccomics.com/dcu/graphic_novels/?gn=8543 |title=''Sinestro Corps War'' Volume 1 hardcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20131020201843/http://www.dccomics.com/graphic-novels/green-lantern-the-sinestro-corps-war-vol-1|archive-date=October 20, 2013|url-status=live|access-date=September 25, 2012}}</ref> 
+* Softcover: {{ISBNT|1-4012-1870-9}}<ref>{{cite web|url=http://www.dccomics.com/dcu/graphic_novels/?gn=11322|title=''Sinestro Corps War'' Volume 1 softcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20121022034606/http://www.dccomics.com/graphic-novels/green-lantern-sinestro-corps-war-vol-1|archive-date=October 22, 2012|url-status=live|access-date=September 25, 2012}}</ref>
+| ''Green Lantern'' vol. 4 #21–23, ''Green Lantern Corps'' vol. 2 #14–15 and ''Green Lantern: Sinestro Corps Special'' #1
+| 176 pages
+
+|- style="text-align: center;"
+|''The Sinestro Corps War: Volume 2''
+| 
+* Hardcover: June 18, 2008
+* Softcover: June 17, 2009
+| 
+* Hardcover: {{ISBNT|1-4012-1800-8}},<ref>{{cite web|url=http://www.dccomics.com/dcu/graphic_novels/?gn=9168 |title=''Sinestro Corps War'' Volume 2 hardcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20121009191933/http://www.dccomics.com/graphic-novels/green-lantern-the-sinestro-corps-war-vol-2|archive-date=October 9, 2012|url-status=live|access-date=September 25, 2012}}</ref>
+* Softcover: {{ISBNT|1-4012-2036-3}}<ref>{{cite web|url=http://www.dccomics.com/dcu/graphic_novels/?gn=11743|title=''Sinestro Corps War'' Volume 2 softcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20121009192017/http://www.dccomics.com/graphic-novels/green-lantern-sinestro-corps-war-vol-2|archive-date=October 9, 2012|url-status=live|access-date=September 25, 2012}}</ref>
+| ''Green Lantern'' vol. 4 #24–25 and ''Green Lantern Corps'' vol. 2 #16–19,
+| 192 pages
+
+|- style="text-align: center;"
+|''The Sinestro Corps War''
+| September 14, 2011  
+| Softcover: {{ISBNT|978-1401233013}}
+| ''Green Lantern'' vol. 4 #21-25, ''[[Green Lantern Corps]]'' #14-19, and ''Green Lantern: Sinestro Corps Special'' #1
+| 336 pages
+
+|- style="text-align: center;"
+|''Absolute Green Lantern: Sinestro Corps War''
+| September 26, 2012  
+| Oversized Hardcover: {{ISBNT|978-1401237356}}
+| ''Green Lantern'' vol. 4 #21-25, ''[[Green Lantern Corps]]'' #14-19, and ''Green Lantern: Sinestro Corps Special'' #1
+| 368 pages
+
+|- style="text-align: center;"
+|''Tales of the Sinestro Corps''
+|
+* Hardcover: June 25, 2008
+* Softcover: June 24, 2009  
+|
+* Hardcover: {{ISBNT|1-4012-1801-6}}
+* Softcover: {{ISBNT|1-4012-2326-5}} 
+| ''Tales of the Sinestro Corps: Parallax'' #1, ''Tales of the Sinestro Corps: Cyborg-Superman'' #1, ''Tales of the Sinestro Corps: Superman-Prime'' #1, ''Tales of the Sinestro Corps: Ion'' #1, ''Green Lantern/Sinestro Corps Secret Files'' #1, and stories from ''Green Lantern: Sinestro Corps Special'' #1 and ''Green Lantern'' vol. 4 #18–20
+| 200 pages
+
+|- style="text-align: center;"
+|''Secret Origin''
+|
+* Hardcover: December 10, 2008
+* Softcover: February 3, 2010  
+|
+* Hardcover: {{ISBNT|1-4012-1990-X}},<ref>{{cite web|url=http://dccomics.com/dcu/graphic_novels/?gn=10386|title=''Green Lantern: Secret Origin'' hardcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20121001190915/http://www.dccomics.com/graphic-novels/green-lantern-secret-origin|archive-date=October 1, 2012|url-status=dead|access-date=September 25, 2012}}</ref>
+* Softcover: {{ISBNT|1-4012-2017-7}}
+| ''Green Lantern'' vol. 4 #29–35
+| 176 pages
+
+|- style="text-align: center;"
+|''[[Rage of the Red Lanterns]]''
+|
+* Hardcover: July 1, 2009
+* Softcover: July 21, 2010  
+|
+* Hardcover: {{ISBNT|1-4012-2301-X}},<ref>{{cite web|url=http://dccomics.com/dcu/graphic_novels/?gn=11742|title=''Rage of the Red Lanterns'' hardcover|publisher=DC Comics|archive-url=https://web.archive.org/web/20121001190900/http://www.dccomics.com/graphic-novels/green-lantern-rage-of-the-red-lanterns|archive-date=October 1, 2012|url-status=dead|access-date=September 25, 2012}}</ref>
+* Softcover: {{ISBNT|1-4012-2302-8}}
+| ''Green Lantern'' vol. 4 #26–28, 36–38 and ''[[Final Crisis]]: Rage of the Red Lanterns''
+| 176 pages
+
+|- style="text-align: center;"
+|''[[Agent Orange (DC Comics)|Agent Orange]]''
+|
+* Hardcover: November 11, 2009
+* Softcover: November 3, 2010
+|
+* Hardcover: {{ISBNT|1-4012-2421-0}}
+* Softcover: {{ISBNT|1-4012-2420-2}}
+| ''Green Lantern'' vol. 4 #39–42
+| 128 pages
+
+|- style="text-align: center;"
+|''[[Blackest Night]]: Green Lantern''
+|
+* Hardcover: July 8, 2010
+* Softcover: July 13, 2011
+|
+* Hardcover: {{ISBNT|1-4012-2786-4}}
+* Softcover: {{ISBNT|978-1401229528}}
+| ''Green Lantern'' vol. 4 #43–52
+| 272 pages
+
+|- style="text-align: center;"
+|''Green Lantern: [[Brightest Day]]''
+|
+* Hardcover: June 15, 2011
+* Softcover: May 16, 2012
+|
+* Hardcover: {{ISBNT|1-4012-3181-0}}
+* Softcover: {{ISBNT|1-4012-3141-1}}
+| ''Green Lantern'' vol. 4 #53–62
+| 256 pages
+
+|- style="text-align: center;"
+|''[[War of the Green Lanterns]]''
+|
+* Hardcover: November 16, 2011
+* Softcover: September 5, 2012
+|
+* Hardcover: {{ISBNT|1-4012-3234-5}}
+* Softcover: {{ISBNT|1-4012-3452-6}}
+| ''Green Lantern'' vol. 4 #63–67, ''Green Lantern Corps'' vol. 2 #58–60, and ''Green Lantern: Emerald Warriors'' #8–10,
+| 272 pages
+
+|- style="text-align: center;"
+|''War of the Green Lanterns: Aftermath''
+|
+* Hardcover: January 18, 2012
+* Softcover: January 9, 2013
+|
+* Hardcover: {{ISBNT|1-4012-3343-0}}
+* Softcover: {{ISBNT|1-4012-3538-7}}
+| ''Green Lantern Corps'' vol. 2 #61–63, ''Green Lantern: Emerald Warriors'' #11–13, and ''War of the Green Lantern: Aftermath'' #1–2
+| 208 pages
+|-
+|''Green Lantern by Geoff Johns Book One''
+|March 25, 2019
+|
+|''Green Lantern: Rebirth'' #1-6, ''Green Lantern'' #1-3, ''Green Lantern Corps: Recharge'' #1-5 and ''Green Lantern Secret Files 2005'' #1
+|375 pages
+|-
+|''Green Lantern by Geoff Johns Book Two''
+|September 24, 2019
+|
+|''Green Lantern'' #4-20
+|370 pages
+|-
+|''Green Lantern by Geoff Johns Book Three''
+|April 14, 2020
+|
+|''Green Lantern'' #18-25, ''Green Lantern Corps'' #14-18, ''Green Lantern Sinestro Corps Special'' #1, ''Tales of the Sinestro Corps: Superman Prime'' #1 and ''Green Lantern/Sinestro Corps: Secret Files'' #1
+|398 pages
+|-
+|''Green Lantern by Geoff Johns Book Four''
+|December 29, 2020
+|
+|''Green Lantern'' #26-38 and ''Final Crisis: Rage of the Red Lanterns'' #1
+|328 pages
+|- style="text-align: center;"
+|''Green Lantern by Geoff Johns Omnibus Vol. 1''
+| January 28, 2015 
+| Hardcover: {{ISBNT|978-1401251345}}
+| ''Green Lantern: Rebirth'' #1-6, ''Green Lantern'' vol. 4 #1-25, ''Green Lantern Corps:Recharge'' #1-5, ''Green Lantern Corps'' vol. 2 #14-18, ''Green Lantern Secret Files and Origins 2005'' #1, ''Green Lantern Sinestro Corps Special'' #1, ''Tales of the Sinestro Corps:Superman Prime'' #1, and ''Green Lantern/Sinestro Corps:Secret Files'' #1
+| 1232 pages
+
+|- style="text-align: center;"
+|''Green Lantern by Geoff Johns Omnibus Vol. 2''
+| July 29, 2015 
+| Hardcover: {{ISBNT|978-1401255268}}
+| ''Green Lantern'' vol. 4 #26-52, ''Blackest Night'' #0-8, ''DC Universe'' #0, ''Final Crisis Rage of the Red Lanterns'' #1, ''Untold Tales of Blackest Night'' #1 and ''Blackest Night:Tales of the Corps'' #1-3
+| 1040 pages
+
+|- style="text-align: center;"
+|''Green Lantern by Geoff Johns Omnibus Vol. 3''
+| April 13, 2016 
+| Hardcover: {{ISBNT|978-1401258207}}
+| ''Green Lantern'' vol. 4 #53-67, ''Green Lantern: Larfleeze Christmas Special'' #1, ''Green Lantern'' vol. 5 #1-20, ''Green Lantern Annual'' #1, ''Green Lantern Corps'' vol. 2 #58-60, and ''Green Lantern: Emerald Warriors'' #8-10
+| 1104 pages
+|}
+
+=== ''Green Lantern'' vol. 5 (2011–2016) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Vol.
+! Title
+! Release date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| 01
+|''Sinestro''
+| 
+*May 2012 (hardcover)
+*January 8, 2013 (paperback)
+| {{ISBNT|1-4012-3454-2}}
+|
+*''Green Lantern'' vol. 5 #1–6
+*160 pages
+|- style="text-align: center;"
+| 02
+|''Revenge of the Black Hand''
+|
+*January 2013 (hardcover)
+*October 22, 2013 (paperback)
+| {{ISBNT|1-4012-3766-5}}
+|
+*''Green Lantern'' vol. 5 #7–12, ''Green Lantern Annual'' #1
+*192 pages
+|- style="text-align: center;"
+| 03
+|''The End''
+|
+*October 22, 2013 (hardcover)
+*April 29, 2014 (paperback)
+| {{ISBNT|1-4012-4408-4}}
+|
+*''Green Lantern'' vol. 5 #13–20, #0
+*224 pages
+|- style="text-align: center;"
+| 04
+|''Dark Days''
+| 
+* April 29, 2014 (hardcover)
+* November 4, 2014 (paperback)
+| {{ISBNT|978-1-4012-4744-7}}
+|
+*''Green Lantern'' vol. 5 #21–26, #23.1: Relic, ''Green Lantern Annual'' #2 
+*200 pages
+|- style="text-align: center;"
+| 05
+|''Test of Wills''
+|
+*October 29, 2014 (hardcover)
+*May 19, 2015 (paperback)
+| {{ISBNT|1-4012-5089-0}}
+|
+* collects ''Green Lantern'' vol. 5 #27–34, ''Green Lantern Corps'' #31–33
+*256 pages
+|- style="text-align: center;"
+| 06
+|''The Life Equation''
+|
+*May 19, 2015 (hardcover)
+*April 26, 2016 (paperback)
+| {{ISBNT|1-4012-5476-4}}
+|
+*''Green Lantern'' vol. 5 #35–40, ''Green Lantern Annual'' #3
+*184 pages
+|- style="text-align: center;"
+| 07
+|''Renegade''
+|
+*April 26, 2016 (hardcover)
+*October 4, 2016 (paperback)
+| {{ISBNT|1-4012-6522-7}}
+|
+*''Green Lantern'' vol. 5 41–46, ''Green Lantern Annual'' #4, DC Sneak Peek: Green Lantern 1
+*168 pages
+|- style="text-align: center;"
+| 08
+|''Reflections''
+|
+*October 4, 2016 (hardcover)
+| {{ISBNT|1-4012-6523-5}}
+|
+*''Green Lantern'' vol. 5 47–52
+*200 pages
+|- style="text-align: center;"
+| colspan="2" |''Rise of the Third Army''
+|
+*September 10, 2013 (hardcover)
+*March 25, 2014 (paperback)
+| {{ISBNT|1-4012-4499-8}}
+|
+*''Green Lantern Annual'' vol. 5 #1, ''Green Lantern'' vol. 5 #13–16, ''Green Lantern Corps'' vol. 3 #13–16, ''Green Lantern: New Guardians'' #13–16, ''Red Lantern'' #13–16, ''Green Lantern Corps Annual'' vol. 3 #1
+*416 pages
+|- style="text-align: center;"
+| colspan="2" |''Wrath of the First Lantern''
+|
+*February 25, 2014 (hardcover)
+*August 19, 2014 (paperback)
+| {{ISBNT|1-4012-4409-2}}
+|
+*''Green Lantern'' vol. 5 #17–20, ''Green Lantern Corps'' vol. 3 #17–20, ''Green Lantern: New Guardians'' #17–20, ''Red Lantern'' #17–20
+*416 pages
+|- style="text-align: center;"
+| colspan="2" |''Lights Out''
+|
+*June 24, 2014 (hardcover)
+*December 30, 2014 (paperback)
+| {{ISBNT|1-4012-4816-0}}
+|
+* ''Green Lantern'' vol. 5 #24, ''Green Lantern Corps'' #24, ''Green Lantern: New Guardians'' #23–24, ''Red Lanterns'' #24, ''Green Lantern Annual'' #2, ''Green Lantern'' #23.1: Relic
+*192 pages
+|- style="text-align: center;"
+| colspan="2" |''Green Lantern/New Gods: Godhead''
+|
+*September 9, 2015 (hardcover)<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lanternnew-gods-godhead|title=''Green Lantern/New Gods: Godhead'' Hardcover|publisher=DC Comics|access-date=December 3, 2016}}</ref>
+*May 25, 2016 (paperback)<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lanternnew-gods-godhead-0 |title=''Green Lantern/New Gods: Godhead'' Softcover|publisher=DC Comics|access-date=December 3, 2016}}</ref>
+| {{ISBNT|1-4012-5847-6}}
+|
+*Green Lantern/New Gods: Godhead #1, Green Lantern #35–37, Green Lantern Corps #35–37, Green Lantern New Guardians #35–37, Red Lanterns #35–37, Sinestro #6–8 and Green Lantern Annual #3
+*424 pages
+|}
+
+=== ''Hal Jordan and the Green Lantern Corps'' (2016–2018) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Vol.
+! Title
+! Release date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| 01
+|''Sinestro's Law''
+| February, 2017
+| {{ISBNT|978-1401268008}}
+|
+* ''Hal Jordan and the Green Lantern Corps: Rebirth'' #1
+* ''Hal Jordan and the Green Lantern Corps'' #1–7
+|- style="text-align: center;"
+| 02
+|''Bottled Light''
+|June, 2017
+| {{ISBNT|978-1401269135}}
+|
+* ''Hal Jordan and the Green Lantern Corps'' #8–13
+|- style="text-align: center;"
+| 03
+|''Quest for the Blue Lanterns''
+|August, 2017
+| {{ISBNT|978-1401271640}}
+|
+* ''Hal Jordan and the Green Lantern Corps'' #14–21
+|- style="text-align: center;"
+| 04
+|''Fracture'' 
+| January, 2018
+| {{ISBNT|978-1401283728}}
+|
+* ''Hal Jordan and the Green Lantern Corps'' #22–29
+|- style="text-align: center;"
+| 05
+|''Twilight of the Guardians''
+|June, 2018
+| {{ISBNT|978-1401280376}}
+|
+* ''Hal Jordan and the Green Lantern Corps'' #30-31, 33–36
+|- style="text-align: center;"
+| 06
+|''Zod's Will''
+|September, 2018
+| {{ISBNT|978-1401284442}}
+|
+* ''Hal Jordan and the Green Lantern Corps'' #37–41
+|- style="text-align: center;"
+| 07
+|''Darkstars Rising''
+|January, 2019
+| {{ISBNT|978-1401285647}}
+|
+* ''Hal Jordan and the Green Lantern Corps'' #42–50
+|}
+
+=== ''Green Lanterns'' (2016–2018) ===
+
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Vol.
+! Title
+! Release date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| 01
+|''Rage Planet''
+| January 31, 2017
+| {{ISBNT|978-1401267759}}
+|
+* ''Green Lanterns: Rebirth #1''
+* ''Green Lanterns: #1-6'' 
+|- style="text-align: center;"
+|02
+|''Phantom Lantern''
+|May 2, 2017
+|{{ISBNT|978-1401268497}}
+|
+* ''Green Lanterns #7-14''
+|- style="text-align: center;"
+|03
+|''Polarity''
+|September 19, 2017
+|{{ISBNT|978-1401273712}}
+|
+* ''Green Lanterns #15-21''
+|- style="text-align: center;"
+|04 
+|''The First Ring''
+|December 26, 2017
+|{{ISBNT|978-1401275051}}
+|
+* ''Green Lanterns #22-26''
+|- style="text-align: center;"
+|05
+|''Out of Time''
+|April 3, 2018
+|{{ISBNT|978-1401278793}}
+|
+* ''Green Lanterns #27-32''
+|- style="text-align: center;"
+|06
+|''A World of Our Own''
+|July 3, 2018
+|{{ISBNT|978-1401280666}}
+|
+* ''Green Lanterns #33-39''
+|- style="text-align: center;"
+|07
+|''Superhuman Trafficking''
+|October 9, 2018
+|{{ISBNT|978-1401284541}}
+|
+* ''Green Lanterns #40-43''
+* ''Green Lanterns Annual #1''
+|- style="text-align: center;"
+|08
+|''Ghosts of the Past''
+|February 5, 2019
+|{{ISBNT|978-1401285906}}
+|
+* ''Green Lanterns #44-49''
+|- style="text-align: center;"
+|09
+|''Evil's Might''
+|June 4, 2019
+|{{ISBNT|978-1401293826}}
+|
+* ''Green Lanterns #50-57''
+|}
+
+=== ''The Green Lantern'' (2019–2021) ===
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Vol.
+! Title
+! Release date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| 01
+|''Intergalactic Lawman''
+|July 2019
+| {{ISBNT|978-1401291396}}
+|
+* ''The Green Lantern #1-6''
+|- style="text-align: center;"
+|02
+|''The Day the Stars Fell''
+|December 2019
+|{{ISBNT|978-1401295356}}
+|
+* ''The Green Lantern #7-12''
+* ''The Green Lantern Annual #1''
+|- style="text-align: center;"
+|01
+|''Season Two Vol. 1''
+|December 2020
+|{{ISBNT|978-1779505538}}
+|
+* ''Green Lantern: Blackstars #1-3''
+* ''The Green Lantern: Season Two #1-6''
+|- style="text-align: center;"
+|02
+|''Season Two Vol. 2: Ultrawar''
+|July 2021
+|{{ISBNT|978-1779510181}}
+|
+* ''The Green Lantern: Season Two #7-12''
+|}
+
+=== ''Green Lantern'' Vol. 6 (2021–2022) ===
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Vol.
+! Title
+! Release date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| 01
+|''Invictus''
+| December 21. 2021
+| {{ISBNT|9781779513373}}
+|
+* Future State: Green Lantern #1-2
+* Green Lantern vol. 6 #1-4. 
+|- style="text-align: center;"
+|02
+|''Horatius''
+|July 5, 2022 
+|{{ISBNT|9781779515544}}
+|
+* Green Lantern vol. 6 #5-12
+* Green Lantern Annual 2021 #1 
+|}
+
+=== ''Green Lantern'' Vol. 7 (2023–present) ===
+{| class="wikitable" style="width:100%;"
+|- style="text-align: center;"
+! Vol.
+! Title
+! Release date
+! ISBN
+! Contents
+|- style="text-align: center;"
+| 01
+|''Back in Action''
+| June 4, 2024
+| {{ISBNT|978-1779525093}}
+|
+* Green Lantern vol 7. #1-6
+* [[Knight Terrors]]: Green Lantern #1-2
+|- style="text-align: center;"
+|02
+|''Love and War''
+| February 25, 2025
+| {{ISBNT|978-1799500506}}
+|
+* Green Lantern vol 7. #7-12
+|- style="text-align: center;"
+|03
+|''Power of Will''
+| May 20, 2025
+| {{ISBNT|978-1799501435}}
+|
+* Green Lantern vol 7. #13-15
+* [[Absolute Power (comics)|Absolute Power: Task Force VII]] #3
+|}
+
+=== Collections with multi-series spans ===
+
+*''Green Lantern Corps: Through The Ages'' collects ''Green Lantern'' vol. 2 #30, ''Green Lantern'' vol. 4 #3, ''Showcase'' #22, ''Green Lantern Gallery'', ''Green Lantern: Emerald Dawn'' #4 and ''Green Lantern Secret Files and Origins 2005''<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-corps-through-the-ages|title=''Green Lantern Corps: Through The Ages''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151116102805/http://www.dccomics.com/graphic-novels/green-lantern-corps-through-the-ages|archive-date=November 16, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+*''Green Lantern: In Brightest Day'' collects ''Green Lantern'' vol. 2 #7, 40, 59, 162, 173, 177, 182, 183 and 188, ''Green Lantern'' vol. 3 #51, ''Green Lantern Corps Quarterly'' #6 and ''Green Lantern Corps Annual'' #2, {{ISBNT|978-1-4012-1986-4}}<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-in-brightest-day|title=''Green Lantern: In Brightest Day''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20151111031152/http://www.dccomics.com/graphic-novels/green-lantern-in-brightest-day|archive-date=November 11, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+*''Green Lantern: The Greatest Stories Ever Told'' collects ''Green Lantern'' vol. 2 #1, 31, 74, 87, 172, ''Green Lantern'' vol. 3 #3, ''Flash/Green Lantern: Brave/Bold'' #2, ''Showcase'' #22 and ''Green Lantern Secret Files and Origins 2005'', {{ISBNT|1-4012-0961-0}}<ref>{{cite web|url=http://www.dccomics.com/graphic-novels/green-lantern-the-greatest-stories-ever-told|title=''Green Lantern: The Greatest Stories Ever Told''|date=9 March 2012|publisher=DC Comics|archive-url=https://web.archive.org/web/20150912002324/http://www.dccomics.com/graphic-novels/green-lantern-the-greatest-stories-ever-told|archive-date=September 12, 2015|url-status=live|access-date=September 25, 2012}}</ref>
+
+===Miniseries===
+*''Green Lantern: Circle of Fire'' Collects ''Green Lantern and Adam Strange'' #1, ''Green Lantern and Firestorm the Nuclear Man'' #1, ''Green Lantern and Green Lantern'' #1, ''Green Lantern and Power Girl'' #1, ''Green Lantern and the Atom'' #1, & ''Green Lantern: Circle Of Fire'' #1–2.
+
+==References==
+{{Reflist|3}}
+
+==External links==
+*{{comicbookdb|type=title|id=710|title=Green Lantern}}
+*{{gcdb series|id=1448|title=Green Lantern vol. 2}}
+*{{comicbookdb|type=title|id=537|title=Green Lantern vol. 2}}
+*{{gcdb series|id=3986|title=Green Lantern vol. 3}}
+*{{comicbookdb|type=title|id=131|title=Green Lantern vol. 3}}
+*{{comicbookdb|type=title|id=32|title=Green Lantern vol. 4}}
+*{{gcdb series|id=60924|title=Green Lantern vol. 5}}
+*{{comicbookdb|type=title|id=34527|title=Green Lantern vol. 5}}
+{{Green Lantern|state=collapsed}}
+{{The New 52|state=collapsed}}
+{{GLAAD Media Award for Outstanding Comic Book}}
+{{Portal bar|Comics|1960s|1970s|1980s|1990s|2000s}}
+
+[[Category:1941 comics debuts]]
+[[Category:1949 comics endings]]
+[[Category:1960 comics debuts]]
+[[Category:1972 comics endings]]
+[[Category:1976 comics debuts]]
+[[Category:1988 comics endings]]
+[[Category:1990 comics debuts]]
+[[Category:2004 comics endings]]
+[[Category:2005 comics debuts]]
+[[Category:2010 comics endings]]
+[[Category:2011 comics debuts]]
+[[Category:2019 comics debuts]]
+[[Category:2019 comics endings]]
+[[Category:2020 comics debuts]]
+<!-- [[Category:2021 comics endings]] -->
+<!-- [[Category:2021 comics debuts]] -->
+[[Category:Comics by Dave Gibbons]]
+[[Category:Comics by Dennis O'Neil]]
+[[Category:Comics by Gardner Fox]]
+[[Category:Comics by Geoff Johns]]
+[[Category:Comics by Len Wein]]
+[[Category:Comics by Marv Wolfman]]
+[[Category:Comics by Neal Adams]]
+[[Category:Comics by Paul Kupperberg]]
+[[Category:Comics by Steve Englehart]]
+[[Category:Comics set on fictional planets]]
+[[Category:Green Lantern titles| ]]
