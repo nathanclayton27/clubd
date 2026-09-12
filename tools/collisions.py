@@ -256,10 +256,20 @@ def main(argv):
     nrows = sum(len(s.get("items", [])) for p in props
                 for s in p.get("sections", []))
 
+    # Honesty about the sweep's reach: runtime is the strongest signal it has,
+    # and it needs two rows that both state one. Where it cannot compare, a
+    # shared title, year and lane is all the evidence there is, and only a
+    # person reading the two rows can part them.
+    blind = [k for k, v in cands.items()
+             if len([r for r in (meta[(s, i)] for s, i in v)
+                     if isinstance(r.get("w"), (int, float)) and r["w"] > 0]) < 2]
+
     print("catalogue   %d property files, %d rows" % (len(props), nrows))
     print("sync map    %d groups" % len(sync))
     print("title keys  %d span more than one list (candidate pairs)"
           % len(cands))
+    print("blind spot  %d of those have fewer than two comparable runtimes, so "
+          "the sweep cannot judge them" % len(blind))
     print("selftest    %s" % selftest(props))
     print()
 
