@@ -238,6 +238,29 @@
     "total": 1174
   },
   {
+    "slug": "marvel-comics",
+    "media": [
+      "comics"
+    ],
+    "title": "Marvel Comics",
+    "subtitle": "9 reading orders",
+    "kind": "comics",
+    "year": "1941–",
+    "popularity": 90,
+    "blurb": "Nine Marvel reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+    "accent": "#B32024",
+    "accentDark": "#F0565A",
+    "unit": {
+      "one": "reading order",
+      "many": "reading orders"
+    },
+    "vpast": "read",
+    "total": 9,
+    "doors": 9,
+    "hub": true,
+    "mega": true
+  },
+  {
     "slug": "naruto",
     "media": [
       "anime"

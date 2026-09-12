@@ -13023,8 +13023,14 @@ function tourReady(){
   // behind this tile". Waiting is bounded by tourStart's own retry cap: if the
   // tile never comes, the step drops out rather than pointing at the nearest
   // thing that happened to be on screen.
+  // ⚠ Only wait when the tile is actually COMING. Gating on it unconditionally
+  // made the tour sit doing nothing for three seconds on every page where the
+  // panel never un-hides — which is every page for a signed-out visitor, the
+  // people the tour exists for. Waiting for something that is not on its way is
+  // not patience, it is a stall. Signed in, the tile is coming and is worth the
+  // beat; signed out, the step drops out honestly instead.
   const gp = $('gpanel');
-  if(CLOUD && gp && gp.classList.contains('hide')) return false;
+  if(CLOUD && user && gp && gp.classList.contains('hide')) return false;
   return true;
 }
 function tourStart(tries){
