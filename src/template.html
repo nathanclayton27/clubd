@@ -556,6 +556,11 @@ details.ctile{padding:0}
    heights still line their buttons up */
 .gcard>button{margin-top:auto}
 .gcard .row{margin:0;width:100%}
+/* CLU-423's offer borrows .atog rather than minting a second kind of switch.
+   .gcard is a column flex with align-items:flex-start, so a borrowed row is
+   content-width and its hint would push past the card — and the card's own gap
+   already spaces it, so the pair of paddings .atog brings is one too many. */
+#gc-port{width:100%;padding-bottom:0}
 /* a fixed 190px club-name box overflowed a 200px card. Fluid to the card's
    width instead, and the join code keeps a short box because six characters in
    a full-width field reads as a field expecting a sentence. */
@@ -2180,6 +2185,19 @@ footer a{color:var(--steel)}
               <span class="lbl" id="gdate-l">Finish by</span>
               <input type="date" id="gdate" aria-label="Finish by">
             </div>
+            <!-- CLU-423. A club starts empty on purpose, so carrying your own
+                 record into one is a deliberate act and gets its own control.
+                 It is not drawn at all unless it would do something: signed in,
+                 with ticks on this list, and with a database that can give the
+                 club a run of its own. paintPortOffer() is the one place that
+                 decides, and it borrows .atog rather than minting a switch that
+                 would look like a second kind of toggle. -->
+            <div class="atog hide" id="gc-port">
+              <input type="checkbox" id="g-port"
+                     aria-label="Start it with what I have already ticked">
+              <label class="t" for="g-port"><b>Start it with what I have already ticked</b>
+                <span id="g-port-h"></span></label>
+            </div>
             <button id="b-gcreate">Start a club</button>
           </div>
           <div class="gcard" id="gc-join" role="group" aria-label="Join a club">
@@ -3028,6 +3046,13 @@ let SESSION  = null;   // the club whose session `done` currently IS, or null
 let SESSNAME = '';     // its name, for the copy that has to say which
 let CPGONE   = false;  // club_progress is not in this database (this load)
 let SAVEGONE = false;  // save_progress is not in this database (this load)
+// CLU-423. The club whose run a fresh read of your all-time row said already
+// holds everything on it — so the "bring my record in" control has nothing to
+// offer and GOES rather than sitting there ready to do nothing a second time.
+// Latched per page life, per club: portRow() has to decide without a round trip
+// so it asks UNIVSEEN, and UNIVSEEN can sit a shade ahead of the row it came
+// from. The row is the answer that matters; this is where having heard it lives.
+let PORTNONE = '';
 // The all-time set as the cloud last told us, captured by adopt() before any
 // session is entered. flushEvents() needs it: catching a club up through
 // things you watched last year must not log them as live ticks dated today.
@@ -3397,8 +3422,13 @@ async function readUniversal(){
     return clean(data ? data.read_ids : []);
   }catch(e){ return null; }
 }
+// ⚠ RETURNS whether the write landed (CLU-423). Every caller before that card
+// ignored the answer and was right to — a failed sync is already reported on
+// screen by state()/syncFail() and the local copy is already the truth. The
+// port needs it: it is a deliberate one-press act on a run other people read,
+// so "copied 12 in" must not be said unless the club can see them.
 async function pushCloud(){
-  if(!user) return;
+  if(!user) return false;
   // A club tick goes through ONE statement, because the session write and the
   // all-time union have to be one transaction: two round trips can be cut in
   // half by a lapsed JWT, and a session left holding ticks the all-time row
@@ -3418,7 +3448,7 @@ async function pushCloud(){
       // row, so the event log must stop treating them as things never watched
       if(UNIVSEEN) ids.forEach(i=> UNIVSEEN.add(i));
       state('Synced','ok');
-      return;
+      return true;
     }
     console.error('[tracker] club save failed', error);
     if(missingThing(error)){
@@ -3428,11 +3458,14 @@ async function pushCloud(){
       // it back into the all-time row instead. See foldSessionBack().
       SAVEGONE = true;
       await foldSessionBack();
-      return;
+      // The ticks are safe — folded into the all-time row — but the CLUB write
+      // did not happen and the session is gone, so this is not a success for
+      // anything that was writing on a club's behalf.
+      return false;
     }
     state('Sync failed — saved on this device','');
     syncFail(error);
-    return;
+    return false;
   }
   const { error } = await sb.from('progress')
     .upsert({ user_id:user.id, property_id:CKEY, read_ids:[...done],
@@ -3442,10 +3475,11 @@ async function pushCloud(){
     state('Sync failed — saved on this device','');
     syncFail(error);
     console.error('[tracker] write failed', error);
-  }else{
-    if(UNIVSEEN) done.forEach(i=> UNIVSEEN.add(i));
-    state('Synced','ok');
+    return false;
   }
+  if(UNIVSEEN) done.forEach(i=> UNIVSEEN.add(i));
+  state('Synced','ok');
+  return true;
 }
 // Every tick's when and kind, captured from day one so the stats that read
 // them later have real history. The progress set stays the truth for WHAT is
@@ -7062,6 +7096,11 @@ async function switchSession(g){
     paintTickInto();
     return;
   }
+  // The session is genuinely changing, so anything latched about the OLD one
+  // goes with it — including "this run already has everything of mine", which
+  // is a fact about one club's row and becomes a lie the moment the row does
+  // (leave and rejoin in one page life and the session is empty again).
+  PORTNONE = '';
   if(want){
     // The read that discovers the capability. club_progress answering AT ALL
     // is the entire gate: with the table absent this errors, CPGONE latches,
@@ -7132,6 +7171,182 @@ async function foldSessionBack(){
   paintTickInto();
   try{ paint(); }catch(e){}
   try{ paintStack(); renderGroupPanel(); }catch(e){}
+}
+
+/* ------------------------------------ porting your own record in (CLU-423) */
+// A club starts empty ON PURPOSE, and the whole "Ticking into" seam (CLU-513)
+// exists because a club's run and your all-time record are different
+// namespaces. So there is no automatic carry-over and there never will be —
+// this is the DELIBERATE way in, asked for twice over: "a button, at creation
+// or after".
+//
+// THREE RULINGS, and each of them is forced by something in the schema rather
+// than chosen for taste.
+//
+// 1. IT IS A COPY, NOT A LINK. Nothing joins the two records afterwards. The
+//    club's run only ever hears about a tick made INSIDE the club; your own
+//    record hears about both (save_progress unions every club write up into
+//    it), and an untick on either side lowers only that side. That asymmetry
+//    is what the bar and the tour already teach, and porting does not change
+//    it — which is exactly why the confirm has to say so before the write
+//    rather than leave it to be discovered.
+//
+// 2. IT MERGES, IT NEVER REPLACES. Two reasons, the first structural.
+//    save_progress() sets the session row to EXACTLY the ids it is passed
+//    (DATABASE.md §4), so sending only the ported set would DELETE any club
+//    tick that is not on your own record — and there is an ordinary way to
+//    hold one: tick it in the club (the club gains it, your record gains it),
+//    then untick it on your own (a replace, so your record loses it; the club
+//    keeps it). The union therefore happens HERE, client side, against the run
+//    on screen. The second reason is that the run is read by the rest of the
+//    club: a merge can only ever raise a number somebody else has already
+//    seen, and a replace could lower one.
+//
+// 3. THERE IS NO ONE-PRESS UNDO, and the confirm says so instead of implying
+//    one. `club_progress` has no update or delete policy at all — the only
+//    write path is save_progress — so an undo would be another full replace of
+//    the run, racing every tick made since, on a row other people are reading.
+//    Unticking in the club is the per-item undo, it lowers the club's run
+//    only, and that is the honest answer.
+//
+// NO MIGRATION. save_progress(p_property, p_club, p_ids) already does all of
+// this; the port is one ordinary call through the one write path. ⚠ CLU-504's
+// tombstone work touches save_progress(): if the session write ever stops
+// being a replace, ruling 2's client-side union becomes wrong (a double
+// union is harmless, a replace of a union is not), so this is the code that
+// has to be re-read when that lands.
+
+// What a port would carry in: your all-time set for THIS list, or null when
+// the page genuinely cannot know it. Null and empty are different answers and
+// the affordance depends on the difference — offering to copy in "nothing"
+// because a read failed is the dead affordance this is written to avoid.
+function portSource(){
+  if(!(CLOUD && user && sb && SLUG)) return null;
+  // A fresh watch is a run, not your record, and splitClub() refuses a session
+  // while one is on — so there is nothing to port from and nowhere to port to.
+  if(FW) return null;
+  // Inside a club, `done` is the CLUB's run. The all-time set is the copy
+  // adopt() captured (it runs on every load, before any club can be resolved),
+  // and a null one means no answer rather than an empty record.
+  if(SESSION) return UNIVSEEN ? new Set(UNIVSEEN) : null;
+  return new Set(done);
+}
+// The ids a port would add, given the run it would land in. `into` is the
+// club's run, or an empty set for a club that does not exist yet.
+function portAdds(into){
+  const src = portSource();
+  if(!src) return null;
+  return [...src].filter(id=> !into.has(id));
+}
+
+// The confirmation, in one place, because it is the only thing standing between
+// a press and a shared write and it has to say all three rulings.
+function portConfirmText(n, name){
+  return 'Bring ' + n + ' ' + plural(n) + ' into ' + name + '?\n\n'
+    + 'A copy, not a link: after this, what you tick on your own does not reach'
+    + ' the club, and unticking in the club does not reach your own record.\n\n'
+    + 'The club can see your run, so this moves its tallies for everyone. There'
+    + ' is no one-press undo — unticking in the club is one at a time.';
+}
+
+// Carry your own record into the club on screen. Returns how many ids it added,
+// 0 when the run already holds everything yours does, -1 when it could not, and
+// -2 when the confirm was declined.
+//
+// `ask` is false only at creation, where the checkbox WAS the deliberate act
+// and the club is a second old with nobody else in it — there is no shared run
+// to disturb and no second decision to take. Everywhere else it confirms.
+async function portProgress(ask){
+  if(!(user && sb && SESSION)) return -1;
+  const club = SESSION, name = SESSNAME || 'this club';
+  // The account's row, read fresh rather than trusted from this page. One read
+  // for a once-ever press is cheap, UNIVSEEN can be behind a tick made on
+  // another device, and a FAILED read is not an empty record — so nothing is
+  // written on one.
+  const univ = await readUniversal();
+  if(!univ) return -1;
+  // Monotonic, the way every other write to UNIVSEEN is: the row can only have
+  // gained ids since adopt() read it, and never dropping one keeps flushEvents'
+  // "was this already on your record" test from turning a catch-up back into a
+  // live tick.
+  if(UNIVSEEN) univ.forEach(i=> UNIVSEEN.add(i));
+  const add = [...univ].filter(id=> !done.has(id));
+  if(!add.length){ PORTNONE = club; return 0; }
+  if(ask && !confirm(portConfirmText(add.length, name))) return -2;
+  // Between the confirm and the write nothing else may have moved the run, so
+  // the union is taken here and not before the round trip above.
+  const before = new Set(done);
+  done = new Set([...done, ...add]);
+  writeLocal();
+  // The ONE write path: pushCloud()'s session branch is a single
+  // save_progress() with [...done], which is the merge. No recordEvents() and
+  // no syncTicks() — these are not new ticks. Every one of them was logged and
+  // mirrored onto its counterpart lists when it was first made, and
+  // flushEvents() would drop them again anyway, since it filters a club batch
+  // against UNIVSEEN precisely so catching a club up on last year's viewing
+  // does not read as tonight's.
+  const landed = await pushCloud();
+  if(!landed){
+    // Put the run back the way it was, so the numbers on screen are not
+    // claiming something the club cannot see. Only when the session survived:
+    // a SAVEGONE fold has already moved `done` somewhere else on purpose.
+    if(SESSION === club){ done = before; writeLocal(); }
+    return -1;
+  }
+  // The run now holds everything your record does, so there is nothing left for
+  // the control to offer and it goes on the next render.
+  PORTNONE = club;
+  paint();
+  return add.length;
+}
+
+// The offer inside the create card. Hidden unless a port would work: a club
+// that does not exist yet has an empty run, so "would it do anything" is just
+// "have you ticked anything here" — plus the one thing the card cannot promise,
+// which is that the new club can HAVE a run of its own. With club_progress or
+// save_progress absent this load, create makes a roster against all-time rows
+// and there is nowhere to copy to, so the control goes rather than lying.
+function paintPortOffer(){
+  const row = $('gc-port'), box = $('g-port'), hint = $('g-port-h');
+  if(!row || !box) return;
+  const n = (CPGONE || SAVEGONE) ? 0 : (portSource() || new Set()).size;
+  row.classList.toggle('hide', !n);
+  if(!n){ box.checked = false; if(hint) hint.textContent = ''; return; }
+  if(hint) hint.textContent = n + ' ' + plural(n)
+    + ', copied in. After this, what you tick on your own stays on your own.';
+}
+
+// The same offer for a club that already exists, behind the club's own
+// overflow door where leaving and renaming live. Drawn only when there is
+// something to add: an account with nothing ticked here, or a club whose run
+// already holds everything yours does, gets no button at all.
+function portRow(){
+  if(!SESSION || PORTNONE === SESSION) return '';
+  const add = portAdds(done);
+  if(!add || !add.length) return '';
+  return '<div class="row" style="margin:0 0 12px">'
+    + '<button id="b-gport">Bring in what I have already ticked</button>'
+    + '<span class="lbl">' + add.length + ' ' + plural(add.length)
+    + ' on your own record aren’t in this club’s run</span></div>';
+}
+function wirePort(){
+  const b = $('b-gport');
+  if(!b) return;
+  b.onclick = async ()=>{
+    b.disabled = true;
+    const n = await portProgress(true);
+    b.disabled = false;
+    if(n > 0) flash('Copied ' + n + ' ' + plural(n) + ' into '
+                    + (SESSNAME || 'the club')
+                    + '. Nothing came off your own record.', 'gmsg2');
+    else if(n === 0) flash('This club’s run already has everything on your own'
+                           + ' record.', 'gmsg2');
+    else if(n === -1) flash('Could not copy them in — nothing was changed.', 'gmsg2');
+    // -2 is a declined confirm. Nothing happened and nothing is said: a line
+    // reporting that you pressed cancel is the site narrating your own choice
+    // back at you.
+    paintStack(); renderGroupPanel();
+  };
 }
 
 // Which session the checkboxes are writing into, said where the checkboxes
@@ -8452,6 +8667,9 @@ function prepSetup(another){
   // The third card is the only part of this form built in script, because it
   // is the only part whose contents depend on anything (see paintFreshCard).
   paintFreshCard();
+  // The first card's one conditional row (CLU-423). Same rule as the fresh
+  // card: it draws only where it would do something.
+  paintPortOffer();
   // Only a RELATIVE schedule is anchored by these fields. A property whose
   // windows carry their own dates ignores both — windows() returns the
   // property's dates and never reads start_date or target_date — so offering
@@ -8905,6 +9123,11 @@ function clubDrawer(){
   if(gdrawer !== 'more')   return '';
   return '<div class="cdrawer" id="cdrawer">'
     + nameRow()
+    // CLU-423, on its own row and deliberately NOT beside Leave: both are
+    // consequential presses and the one you meant is not the one you want to
+    // find by accident. portRow() is an empty string unless it would do
+    // something, so the door's label does not have to promise it.
+    + portRow()
     + '<div class="row"><button id="b-grefresh">Refresh</button>'
     + (hasClubIcs()
         ? '<button id="b-gics" title="'
@@ -9080,6 +9303,7 @@ function renderGroupPanel(){
   wireClubIcons();
   wireClubFoot();
   wireName();
+  wirePort();
   wireRename();
   wireResched();
   wireRoster();
@@ -13557,6 +13781,12 @@ $('b-gcreate').onclick = async ()=>{
   if(start && end && end <= start){
     flash('The finish date has to be after the start.','gmsg'); return;
   }
+  // CLU-423, captured BEFORE the round trips: refreshGroup() below re-renders
+  // the whole tile, and prepSetup() hides this row again the moment the port has
+  // nothing left to carry — so reading the box afterwards would read a control
+  // that had already been reset.
+  const wantPort = !!($('gc-port') && !$('gc-port').classList.contains('hide')
+                      && $('g-port') && $('g-port').checked);
   $('b-gcreate').disabled = true;
   const { data, error } = await sb.rpc('create_group', {
     p_name: title,
@@ -13594,7 +13824,36 @@ $('b-gcreate').onclick = async ()=>{
   $('gtitle').value = ''; $('gcode').value = '';
   await refreshGroup(false);
   startGroupPoll();
-  if(made) flash('Club started. Send the code '+made.code+' to whoever’s joining.','gmsg2');
+
+  // CLU-423. refreshGroup() has resolved the new club into a session by now
+  // (loadGroups → loadMembers → switchSession), so this is the first moment the
+  // port has somewhere to write. No confirm: the checkbox was the deliberate
+  // act, its label said what would happen, and a club one second old has nobody
+  // else in it — there is no shared run to disturb and no second decision to
+  // take. The `SESSION === made.id` test is not ceremony: if club_progress or
+  // save_progress went missing between the offer and now, the club is a roster
+  // against all-time rows and there is nowhere to copy to.
+  let ported = 0;
+  if(wantPort && made && SESSION === made.id) ported = await portProgress(false);
+  else if(wantPort) ported = -1;
+  if(wantPort){ paintStack(); renderGroupPanel(); }
+
+  if(!made) return;
+  const code = ' Send the code ' + made.code + ' to whoever’s joining.';
+  if(ported > 0)
+    flash('Club started with your ' + ported + ' ' + plural(ported)
+          + ' in it.' + code, 'gmsg2');
+  // The offer counted what this device holds; the port copies what your ACCOUNT
+  // holds, and the two come apart for somebody whose ticks have never synced.
+  // Rare, reachable, and it has to be said — the checkbox promised a number.
+  else if(wantPort && ported === 0)
+    flash('Club started, but nothing copied in: none of your ticks for this list'
+          + ' have reached your account yet.' + code, 'gmsg2');
+  else if(wantPort && ported < 0)
+    flash('Club started, but your own ticks did not copy in — it starts empty.'
+          + ' The ⋯ menu can still bring them in.' + code, 'gmsg2');
+  else
+    flash('Club started.' + code, 'gmsg2');
 };
 
 $('b-gjoin').onclick = async ()=>{
