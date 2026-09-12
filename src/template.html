@@ -7577,9 +7577,21 @@ function paintStack(){
   const stackH = LAYER_H + (list.length-1)*offset;
   const reads = list.map(readsOf);
 
-  // for each column, the furthest-back layer still showing something there
-  const deepest = ORDER.map(id=>{
-    for(let i=reads.length-1; i>=0; i--) if(reads[i].has(id)) return i;
+  // ⚠ SHORTER BARS IN FRONT. Nathan: "still broken, the shorter bars should be
+  // in the front" — and he is right, it is the only arrangement in which you
+  // can see everybody. Every ticked mark runs to the bottom of the stack, so
+  // layer 0 (furthest along) is the TALLEST bar; putting it on top means it
+  // covers every shorter bar completely and the whole club reads as one colour.
+  //
+  // Reversed, each reader's bar shows the slice of itself that sticks out above
+  // the one in front: the furthest along appears at the TOP of the column, the
+  // least far at the bottom, one band each. That is what the caption under the
+  // strip has always claimed — "one layer per person, furthest along on top".
+  //
+  // For each column, the FRONT-MOST layer that has ticked it — the tallest bar
+  // present here, and therefore the one an unread nub would punch through.
+  const frontOf = ORDER.map(id=>{
+    for(let i=0; i<reads.length; i++) if(reads[i].has(id)) return i;
     return -1;
   });
 
@@ -7602,11 +7614,13 @@ function paintStack(){
         // now runs from its own layer's top to the bottom of the stack (see
         // `.stackrow .tick.on` and --fillH), so there is never a gap under one.
         //
-        // `veil` stays, and it is the other half of "no incorrect overlaying":
-        // this layer sits in FRONT of the deeper ones, so its unread nub would
-        // paint a grey hole straight through the solid column of somebody
-        // behind it. Where anyone deeper has ticked, the nub is not drawn.
-        const veil = !on && deepest[idx] > i;
+        // `veil` is the other half of "no incorrect overlaying". With the
+        // shorter bars in front, this layer is drawn OVER the taller ones, so
+        // its unread nub would punch a grey hole through the bar of somebody
+        // further along. Where anyone in front of this layer has ticked — that
+        // is, anyone whose bar is taller and therefore covers this band — the
+        // nub is not drawn at all.
+        const veil = !on && frontOf[idx] >= 0 && frontOf[idx] < i;
         // CLU-508, Nathan: "make sure it works on compares too if possible".
         // YOUR band only, and that is a limit rather than a shortcut: a door's
         // fraction comes from the target list's own stored ticks, and this
@@ -7626,7 +7640,9 @@ function paintStack(){
         ticks += '<span class="'+cls+'" data-i="'+idx+'"'
               + (sty?' style="'+sty+'"':'')+'></span>';
       }
-      layers += '<div class="layer" style="top:'+(i*offset)+'px;z-index:'+(list.length-i)
+      // z rises with i: the LOWER and SHORTER a reader's bar, the nearer the
+      // front it is drawn. See frontOf above for why.
+      layers += '<div class="layer" style="top:'+(i*offset)+'px;z-index:'+(i+1)
               + ';--fillH:'+(stackH - i*offset)+'px">'+ticks+'</div>';
     });
     html += '<div class="stackrow'+(WEIGHTED?' wtd':'')
