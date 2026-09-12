@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-227 lists, from a ten-episode anime to a 1,418-row film collection, a
+229 lists, from a ten-episode anime to a 1,418-row film collection, a
 
 
 
@@ -271,8 +271,10 @@ fourteen, the four themed seasons named as the show named them),
 *Bob's Burgers* (sixteen seasons, the film left off an episode list
 on purpose), *The Vampire Diaries* (all 171 episodes in broadcast
 order, its two spin-offs deliberately left to their own runs),
-*Battlestar Galactica*, *Black Mirror* — the rare
-television list with a verified runtime on every row — *Invincible*,
+*Battlestar Galactica*, *Black Mirror* and *Chuck* — the two
+television lists carrying a verified runtime on every row, the second
+of them all 91 episodes of a network hour measured rather than
+assumed — *Invincible*,
 and the big anime runs: *Naruto* and *Bleach* with their filler
 marked only where two independent sources agree, *Attack on Titan*,
 *Hunter x Hunter*, *Death Note*, and *Demon Slayer* — where Mugen Train

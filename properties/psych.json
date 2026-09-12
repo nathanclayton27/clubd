@@ -1,0 +1,909 @@
+{
+  "slug": "psych",
+  "title": "Psych",
+  "subtitle": "eight seasons in air order, with the films after",
+  "kind": "tv & films",
+  "popularity": 62,
+  "year": "2006–2021",
+  "blurb": "All 121 episodes of the eight-season run in 120 broadcasts, then the three films — about 90 hours in Santa Barbara.",
+  "unit": {
+    "one": "entry",
+    "many": "entries"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#2F7D32",
+  "accentDark": "#F2C14E",
+  "tiers": false,
+  "notes": [
+    [
+      "120 rows, 121 episodes.",
+      "The musical is one double-length broadcast carrying two numbers — season seven's 15 and 16 — so it is one row spanning both, and it sits at the end of season seven, where both the numbering and the December 2013 air date put it."
+    ],
+    [
+      "Weighted by published runtime.",
+      "Psych has no runtime per episode in Wikidata and only six episodes have an article of their own that publishes a length, so a row weighs its own article's figure where there is one — the pilot at 66 minutes, Dual Spires at 50, four season-one episodes at 42 or 43 — and the series article's stated 42 minutes otherwise. The musical weighs its article's 88. A row notes its length only where that length is not 42 minutes."
+    ],
+    [
+      "The pilot has two lengths on record.",
+      "The bar measures the 66-minute broadcast version; its article also records a 78-minute extended version, and the row says so."
+    ],
+    [
+      "The films are not episodes.",
+      "Three films followed the run between 2017 and 2021. They are feature-length and years later, so they sit in a dated section of their own at the end rather than inside a season, and a reader who only wants the show stops at season eight."
+    ],
+    "Titles, numbering and air dates machine-read from the eight Wikipedia season articles and the episode list; runtimes from the series, episode and film infoboxes."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Season 1",
+      "sub": "2006–07 · 15 episodes · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s1e1",
+          "t": "Pilot",
+          "n": "1",
+          "w": 1.1,
+          "note": "66 min · a 78-minute extended version exists"
+        },
+        {
+          "id": "psych-s1e2",
+          "t": "Spellingg Bee",
+          "n": "2",
+          "w": 0.72,
+          "note": "43 min"
+        },
+        {
+          "id": "psych-s1e3",
+          "t": "Speak Now or Forever Hold Your Piece",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e4",
+          "t": "Woman Seeking Dead Husband: Smokers Okay, No Pets",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e5",
+          "t": "9 Lives",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e6",
+          "t": "Weekend Warriors",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e7",
+          "t": "Who Ya Gonna Call?",
+          "n": "7",
+          "w": 0.72,
+          "note": "43 min"
+        },
+        {
+          "id": "psych-s1e8",
+          "t": "Shawn vs. the Red Phantom",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e9",
+          "t": "Forget Me Not",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e10",
+          "t": "From the Earth to the Starbucks",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e11",
+          "t": "He Loves Me, He Loves Me Not, He Loves Me, Oops He's Dead!",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e12",
+          "t": "Cloudy... With a Chance of Murder",
+          "n": "12",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e13",
+          "t": "Game, Set... Muuurder?",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e14",
+          "t": "Poker? I Barely Know Her",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s1e15",
+          "t": "Scary Sherry: Bianca's Toast",
+          "n": "15",
+          "w": 0.7
+        }
+      ],
+      "open": true,
+      "intro": "A fake psychic detective agency in Santa Barbara, a case an episode, and a childhood flashback to open most of them."
+    },
+    {
+      "id": "s2",
+      "title": "Season 2",
+      "sub": "2007–08 · 16 episodes · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_2"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s2e1",
+          "t": "American Duos",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e2",
+          "t": "65 Million Years Off",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e3",
+          "t": "Psy vs. Psy",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e4",
+          "t": "Zero to Murder in Sixty Seconds",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e5",
+          "t": "And Down the Stretch Comes Murder",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e6",
+          "t": "Meat Is Murder, But Murder Is Also Murder",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e7",
+          "t": "If You're So Smart, Then Why Are You Dead?",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e8",
+          "t": "Rob-a-Bye Baby",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e9",
+          "t": "Bounty Hunters!",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e10",
+          "t": "Gus' Dad May Have Killed an Old Guy",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e11",
+          "t": "There's Something About Mira",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e12",
+          "t": "The Old and the Restless",
+          "n": "12",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e13",
+          "t": "Lights, Camera... Homicidio",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e14",
+          "t": "Dis-Lodged",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e15",
+          "t": "Black and Tan: A Crime of Fashion",
+          "n": "15",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s2e16",
+          "t": "Shawn (and Gus) of the Dead",
+          "n": "16",
+          "w": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Season 3",
+      "sub": "2008–09 · 16 episodes · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_3"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s3e1",
+          "t": "Ghosts",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e2",
+          "t": "Murder? … Anyone? … Anyone? … Bueller?",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e3",
+          "t": "Daredevils!",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e4",
+          "t": "The Greatest Adventure in the History of Basic Cable",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e5",
+          "t": "Disco Didn't Die. It Was Murdered!",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e6",
+          "t": "There Might Be Blood",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e7",
+          "t": "Talk Derby to Me",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e8",
+          "t": "Gus Walks into a Bank",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e9",
+          "t": "Christmas Joy",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e10",
+          "t": "Six Feet Under the Sea",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e11",
+          "t": "Lassie Did a Bad, Bad Thing",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e12",
+          "t": "Earth, Wind and... Wait for It",
+          "n": "12",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e13",
+          "t": "Any Given Friday Night at 10pm, 9pm Central",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e14",
+          "t": "Truer Lies",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e15",
+          "t": "Tuesday the 17th",
+          "n": "15",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s3e16",
+          "t": "An Evening with Mr. Yang",
+          "n": "16",
+          "w": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Season 4",
+      "sub": "2009–10 · 16 episodes · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_4"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s4e1",
+          "t": "Extradition: British Columbia",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e2",
+          "t": "He Dead",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e3",
+          "t": "High Noon-ish",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e4",
+          "t": "The Devil's in the Details... and the Upstairs Bedroom",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e5",
+          "t": "Shawn Gets the Yips",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e6",
+          "t": "Bollywood Homicide",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e7",
+          "t": "High Top Fade-Out",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e8",
+          "t": "Let's Get Hairy",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e9",
+          "t": "Shawn Takes a Shot in the Dark",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e10",
+          "t": "You Can't Handle This Episode",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e11",
+          "t": "Thrill Seekers and Hell-Raisers",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e12",
+          "t": "A Very Juliet Episode",
+          "n": "12",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e13",
+          "t": "Death Is in the Air",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e14",
+          "t": "Think Tank",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e15",
+          "t": "The Head, the Tail, the Whole Damn Episode",
+          "n": "15",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s4e16",
+          "t": "Mr. Yin Presents...",
+          "n": "16",
+          "w": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Season 5",
+      "sub": "2010 · 16 episodes · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_5"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s5e1",
+          "t": "Romeo and Juliet and Juliet",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e2",
+          "t": "Feet Don't Kill Me Now",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e3",
+          "t": "Not Even Close... Encounters",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e4",
+          "t": "Chivalry Is Not Dead... But Someone Is",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e5",
+          "t": "Shawn and Gus in Drag (Racing)",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e6",
+          "t": "Viagra Falls",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e7",
+          "t": "Ferry Tale",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e8",
+          "t": "Shawn 2.0",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e9",
+          "t": "One, Maybe Two, Ways Out",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e10",
+          "t": "Extradition II: The Actual Extradition Part",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e11",
+          "t": "In Plain Fright",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e12",
+          "t": "Dual Spires",
+          "n": "12",
+          "w": 0.83,
+          "note": "50 min"
+        },
+        {
+          "id": "psych-s5e13",
+          "t": "We'd Like to Thank the Academy",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e14",
+          "t": "The Polarizing Express",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e15",
+          "t": "Dead Bear Walking",
+          "n": "15",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s5e16",
+          "t": "Yang 3 in 2D",
+          "n": "16",
+          "w": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Season 6",
+      "sub": "2011–12 · 16 episodes · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_6"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s6e1",
+          "t": "Shawn Rescues Darth Vader",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e2",
+          "t": "Last Night Gus",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e3",
+          "t": "This Episode Sucks",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e4",
+          "t": "The Amazing Psych-Man & Tap Man, Issue #2",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e5",
+          "t": "Dead Man's Curve Ball",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e6",
+          "t": "Shawn, Interrupted",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e7",
+          "t": "In for a Penny...",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e8",
+          "t": "The Tao of Gus",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e9",
+          "t": "Neil Simon's Lover's Retreat",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e10",
+          "t": "Indiana Shawn and the Temple of the Kinda Crappy, Rusty Old Dagger",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e11",
+          "t": "Heeeeere's Lassie",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e12",
+          "t": "Shawn and the Real Girl",
+          "n": "12",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e13",
+          "t": "Let's Doo-Wop It Again",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e14",
+          "t": "Autopsy Turvy",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e15",
+          "t": "True Grits",
+          "n": "15",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s6e16",
+          "t": "Santabarbaratown",
+          "n": "16",
+          "w": 0.7
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Season 7",
+      "sub": "2013 · 16 episodes in 15 rows · 11 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_7"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s7e1",
+          "t": "Santabarbaratown 2",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e2",
+          "t": "Juliet Takes a Luvvah",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e3",
+          "t": "Lassie Jerky",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e4",
+          "t": "No Country for Two Old Men",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e5",
+          "t": "100 Clues",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e6",
+          "t": "Cirque Du Soul",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e7",
+          "t": "Deez Nups",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e8",
+          "t": "Right Turn or Left for Dead",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e9",
+          "t": "Juliet Wears the Pantsuit",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e10",
+          "t": "Santa Barbarian Candidate",
+          "n": "10",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e11",
+          "t": "Office Space",
+          "n": "11",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e12",
+          "t": "Dead Air",
+          "n": "12",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e13",
+          "t": "Nip and Suck It!",
+          "n": "13",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e14",
+          "t": "No Trout About It",
+          "n": "14",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s7e15",
+          "t": "Psych: The Musical",
+          "n": "15–16",
+          "w": 1.47,
+          "note": "One double-length broadcast, December 2013 · 88 min"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Season 8",
+      "sub": "2014 · 10 episodes · 7 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/Psych_season_8"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-s8e1",
+          "t": "Lock, Stock, Some Smoking Barrels and Burton Guster's Goblet of Fire",
+          "n": "1",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e2",
+          "t": "S.E.I.Z.E. the Day",
+          "n": "2",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e3",
+          "t": "Remake A.K.A. Cloudy... With a Chance of Improvement",
+          "n": "3",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e4",
+          "t": "Someone's Got a Woody",
+          "n": "4",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e5",
+          "t": "COG Blocked",
+          "n": "5",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e6",
+          "t": "1967: A Psych Odyssey",
+          "n": "6",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e7",
+          "t": "Shawn and Gus Truck Things Up",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e8",
+          "t": "A Touch of Sweevil",
+          "n": "8",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e9",
+          "t": "A Nightmare on State Street",
+          "n": "9",
+          "w": 0.7
+        },
+        {
+          "id": "psych-s8e10",
+          "t": "The Break-Up",
+          "n": "10",
+          "w": 0.7
+        }
+      ]
+    },
+    {
+      "id": "films",
+      "title": "The films",
+      "sub": "2017–21 · three films, after the run",
+      "intro": "Feature-length and years later: not episodes, and not part of any season.",
+      "links": [
+        {
+          "label": "The film series",
+          "url": "https://en.wikipedia.org/wiki/Psych_(film_series)"
+        }
+      ],
+      "items": [
+        {
+          "id": "psych-film-2017",
+          "t": "Psych: The Movie",
+          "n": "2017",
+          "w": 1.47,
+          "note": "88 min"
+        },
+        {
+          "id": "psych-film-2020",
+          "t": "Psych 2: Lassie Come Home",
+          "n": "2020",
+          "w": 1.47,
+          "note": "88 min"
+        },
+        {
+          "id": "psych-film-2021",
+          "t": "Psych 3: This Is Gus",
+          "n": "2021",
+          "w": 1.6,
+          "note": "96 min"
+        }
+      ]
+    }
+  ]
+}

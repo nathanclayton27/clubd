@@ -1,0 +1,844 @@
+{
+  "source": {
+    "titles": "Wikipedia, the five 'Chuck season N' articles, read through gwlib.wiki.episodes()",
+    "counts": "Wikipedia, 'List of Chuck episodes' — {{Series overview}} and {{Aired episodes}}",
+    "runtimes": "Apple TV / iTunes Store, 'Chuck: The Complete Series', collection 700656050, one duration per episode",
+    "name_gate": "a runtime is believed only where the storefront's title for that slot normalises to Wikipedia's; the one declared exception is the pilot, which the storefront files as 'Pilot'"
+  },
+  "aired_total": 91,
+  "overview": {
+    "1": 13,
+    "2": 22,
+    "3": 19,
+    "4": 24,
+    "5": 13
+  },
+  "series_runtime_band": [
+    40,
+    46
+  ],
+  "name_exceptions": {
+    "s1e1": "Pilot"
+  },
+  "episodes": [
+    {
+      "s": 1,
+      "e": 1,
+      "n": 1,
+      "t": "Chuck Versus the Intersect",
+      "air": "2007-09-24",
+      "store_t": "Pilot",
+      "ms": 2599763
+    },
+    {
+      "s": 1,
+      "e": 2,
+      "n": 2,
+      "t": "Chuck Versus the Helicopter",
+      "air": "2007-10-01",
+      "store_t": "Chuck Versus the Helicopter",
+      "ms": 2570195
+    },
+    {
+      "s": 1,
+      "e": 3,
+      "n": 3,
+      "t": "Chuck Versus the Tango",
+      "air": "2007-10-08",
+      "store_t": "Chuck Versus the Tango",
+      "ms": 2601017
+    },
+    {
+      "s": 1,
+      "e": 4,
+      "n": 4,
+      "t": "Chuck Versus the Wookiee",
+      "air": "2007-10-15",
+      "store_t": "Chuck Versus the Wookiee",
+      "ms": 2595137
+    },
+    {
+      "s": 1,
+      "e": 5,
+      "n": 5,
+      "t": "Chuck Versus the Sizzling Shrimp",
+      "air": "2007-10-22",
+      "store_t": "Chuck Versus the Sizzling Shrimp",
+      "ms": 2595053
+    },
+    {
+      "s": 1,
+      "e": 6,
+      "n": 6,
+      "t": "Chuck Versus the Sandworm",
+      "air": "2007-10-29",
+      "store_t": "Chuck Versus the Sandworm",
+      "ms": 2474848
+    },
+    {
+      "s": 1,
+      "e": 7,
+      "n": 7,
+      "t": "Chuck Versus the Alma Mater",
+      "air": "2007-11-05",
+      "store_t": "Chuck Versus the Alma Mater",
+      "ms": 2534742
+    },
+    {
+      "s": 1,
+      "e": 8,
+      "n": 8,
+      "t": "Chuck Versus the Truth",
+      "air": "2007-11-12",
+      "store_t": "Chuck Versus the Truth",
+      "ms": 2597347
+    },
+    {
+      "s": 1,
+      "e": 9,
+      "n": 9,
+      "t": "Chuck Versus the Imported Hard Salami",
+      "air": "2007-11-19",
+      "store_t": "Chuck Versus the Imported Hard Salami",
+      "ms": 2595095
+    },
+    {
+      "s": 1,
+      "e": 10,
+      "n": 10,
+      "t": "Chuck Versus the Nemesis",
+      "air": "2007-11-26",
+      "store_t": "Chuck Versus the Nemesis",
+      "ms": 2565565
+    },
+    {
+      "s": 1,
+      "e": 11,
+      "n": 11,
+      "t": "Chuck Versus the Crown Vic",
+      "air": "2007-12-03",
+      "store_t": "Chuck Versus the Crown Vic",
+      "ms": 2550217
+    },
+    {
+      "s": 1,
+      "e": 12,
+      "n": 12,
+      "t": "Chuck Versus the Undercover Lover",
+      "air": "2008-01-24",
+      "store_t": "Chuck Versus the Undercover Lover",
+      "ms": 2594843
+    },
+    {
+      "s": 1,
+      "e": 13,
+      "n": 13,
+      "t": "Chuck Versus the Marlin",
+      "air": "2008-01-24",
+      "store_t": "Chuck Versus the Marlin",
+      "ms": 2552352
+    },
+    {
+      "s": 2,
+      "e": 1,
+      "n": 14,
+      "t": "Chuck Versus the First Date",
+      "air": "2008-09-29",
+      "store_t": "Chuck Versus the First Date",
+      "ms": 2599473
+    },
+    {
+      "s": 2,
+      "e": 2,
+      "n": 15,
+      "t": "Chuck Versus the Seduction",
+      "air": "2008-10-06",
+      "store_t": "Chuck Versus the Seduction",
+      "ms": 2598640
+    },
+    {
+      "s": 2,
+      "e": 3,
+      "n": 16,
+      "t": "Chuck Versus the Break-Up",
+      "air": "2008-10-13",
+      "store_t": "Chuck Versus the Break-Up",
+      "ms": 2595295
+    },
+    {
+      "s": 2,
+      "e": 4,
+      "n": 17,
+      "t": "Chuck Versus the Cougars",
+      "air": "2008-10-20",
+      "store_t": "Chuck Versus the Cougars",
+      "ms": 2597823
+    },
+    {
+      "s": 2,
+      "e": 5,
+      "n": 18,
+      "t": "Chuck Versus Tom Sawyer",
+      "air": "2008-10-27",
+      "store_t": "Chuck Versus Tom Sawyer",
+      "ms": 2595935
+    },
+    {
+      "s": 2,
+      "e": 6,
+      "n": 19,
+      "t": "Chuck Versus the Ex",
+      "air": "2008-11-10",
+      "store_t": "Chuck Versus the Ex",
+      "ms": 2598598
+    },
+    {
+      "s": 2,
+      "e": 7,
+      "n": 20,
+      "t": "Chuck Versus the Fat Lady",
+      "air": "2008-11-17",
+      "store_t": "Chuck Versus the Fat Lady",
+      "ms": 2518880
+    },
+    {
+      "s": 2,
+      "e": 8,
+      "n": 21,
+      "t": "Chuck Versus the Gravitron",
+      "air": "2008-11-24",
+      "store_t": "Chuck Versus Gravitron",
+      "ms": 2578912
+    },
+    {
+      "s": 2,
+      "e": 9,
+      "n": 22,
+      "t": "Chuck Versus the Sensei",
+      "air": "2008-12-01",
+      "store_t": "Chuck Versus the Sensei",
+      "ms": 2580913
+    },
+    {
+      "s": 2,
+      "e": 10,
+      "n": 23,
+      "t": "Chuck Versus the DeLorean",
+      "air": "2008-12-08",
+      "store_t": "Chuck Versus the DeLorean",
+      "ms": 2582165
+    },
+    {
+      "s": 2,
+      "e": 11,
+      "n": 24,
+      "t": "Chuck Versus Santa Claus",
+      "air": "2008-12-15",
+      "store_t": "Chuck Versus Santa Claus",
+      "ms": 2580320
+    },
+    {
+      "s": 2,
+      "e": 12,
+      "n": 25,
+      "t": "Chuck Versus the Third Dimension",
+      "air": "2009-02-02",
+      "store_t": "Chuck Versus the Third Dimension",
+      "ms": 2561823
+    },
+    {
+      "s": 2,
+      "e": 13,
+      "n": 26,
+      "t": "Chuck Versus the Suburbs",
+      "air": "2009-02-16",
+      "store_t": "Chuck Versus the Suburbs",
+      "ms": 2573865
+    },
+    {
+      "s": 2,
+      "e": 14,
+      "n": 27,
+      "t": "Chuck Versus the Best Friend",
+      "air": "2009-02-23",
+      "store_t": "Chuck Versus the Best Friend",
+      "ms": 2576533
+    },
+    {
+      "s": 2,
+      "e": 15,
+      "n": 28,
+      "t": "Chuck Versus the Beefcake",
+      "air": "2009-03-02",
+      "store_t": "Chuck Versus the Beefcake",
+      "ms": 2575200
+    },
+    {
+      "s": 2,
+      "e": 16,
+      "n": 29,
+      "t": "Chuck Versus the Lethal Weapon",
+      "air": "2009-03-09",
+      "store_t": "Chuck Versus the Lethal Weapon",
+      "ms": 2578412
+    },
+    {
+      "s": 2,
+      "e": 17,
+      "n": 30,
+      "t": "Chuck Versus the Predator",
+      "air": "2009-03-23",
+      "store_t": "Chuck Versus the Predator",
+      "ms": 2577537
+    },
+    {
+      "s": 2,
+      "e": 18,
+      "n": 31,
+      "t": "Chuck Versus the Broken Heart",
+      "air": "2009-03-30",
+      "store_t": "Chuck Versus the Broken Heart",
+      "ms": 2574042
+    },
+    {
+      "s": 2,
+      "e": 19,
+      "n": 32,
+      "t": "Chuck Versus the Dream Job",
+      "air": "2009-04-06",
+      "store_t": "Chuck Versus the Dream Job",
+      "ms": 2571905
+    },
+    {
+      "s": 2,
+      "e": 20,
+      "n": 33,
+      "t": "Chuck Versus the First Kill",
+      "air": "2009-04-13",
+      "store_t": "Chuck Versus the First Kill",
+      "ms": 2566912
+    },
+    {
+      "s": 2,
+      "e": 21,
+      "n": 34,
+      "t": "Chuck Versus the Colonel",
+      "air": "2009-04-20",
+      "store_t": "Chuck Versus the Colonel",
+      "ms": 2583458
+    },
+    {
+      "s": 2,
+      "e": 22,
+      "n": 35,
+      "t": "Chuck Versus the Ring",
+      "air": "2009-04-27",
+      "store_t": "Chuck Versus the Ring",
+      "ms": 2571552
+    },
+    {
+      "s": 3,
+      "e": 1,
+      "n": 36,
+      "t": "Chuck Versus the Pink Slip",
+      "air": "2010-01-10",
+      "store_t": "Chuck Versus the Pink Slip",
+      "ms": 2580913
+    },
+    {
+      "s": 3,
+      "e": 2,
+      "n": 37,
+      "t": "Chuck Versus the Three Words",
+      "air": "2010-01-10",
+      "store_t": "Chuck Versus the Three Words",
+      "ms": 2576787
+    },
+    {
+      "s": 3,
+      "e": 3,
+      "n": 38,
+      "t": "Chuck Versus the Angel de la Muerte",
+      "air": "2010-01-11",
+      "store_t": "Chuck Versus the Angel de la Muerte",
+      "ms": 2579663
+    },
+    {
+      "s": 3,
+      "e": 4,
+      "n": 39,
+      "t": "Chuck Versus Operation Awesome",
+      "air": "2010-01-18",
+      "store_t": "Chuck Versus Operation Awesome",
+      "ms": 2579135
+    },
+    {
+      "s": 3,
+      "e": 5,
+      "n": 40,
+      "t": "Chuck Versus First Class",
+      "air": "2010-01-25",
+      "store_t": "Chuck Versus First Class",
+      "ms": 2579328
+    },
+    {
+      "s": 3,
+      "e": 6,
+      "n": 41,
+      "t": "Chuck Versus the Nacho Sampler",
+      "air": "2010-02-01",
+      "store_t": "Chuck Versus the Nacho Sampler",
+      "ms": 2579707
+    },
+    {
+      "s": 3,
+      "e": 7,
+      "n": 42,
+      "t": "Chuck Versus the Mask",
+      "air": "2010-02-08",
+      "store_t": "Chuck Versus the Mask",
+      "ms": 2579997
+    },
+    {
+      "s": 3,
+      "e": 8,
+      "n": 43,
+      "t": "Chuck Versus the Fake Name",
+      "air": "2010-03-01",
+      "store_t": "Chuck Versus the Fake Name",
+      "ms": 2579080
+    },
+    {
+      "s": 3,
+      "e": 9,
+      "n": 44,
+      "t": "Chuck Versus the Beard",
+      "air": "2010-03-08",
+      "store_t": "Chuck Versus the Beard",
+      "ms": 2594428
+    },
+    {
+      "s": 3,
+      "e": 10,
+      "n": 45,
+      "t": "Chuck Versus the Tic Tac",
+      "air": "2010-03-15",
+      "store_t": "Chuck Versus the Tic Tac",
+      "ms": 2583293
+    },
+    {
+      "s": 3,
+      "e": 11,
+      "n": 46,
+      "t": "Chuck Versus the Final Exam",
+      "air": "2010-03-22",
+      "store_t": "Chuck Versus the Final Exam",
+      "ms": 2579967
+    },
+    {
+      "s": 3,
+      "e": 12,
+      "n": 47,
+      "t": "Chuck Versus the American Hero",
+      "air": "2010-03-29",
+      "store_t": "Chuck Versus the American Hero",
+      "ms": 2577160
+    },
+    {
+      "s": 3,
+      "e": 13,
+      "n": 48,
+      "t": "Chuck Versus the Other Guy",
+      "air": "2010-04-05",
+      "store_t": "Chuck Versus the Other Guy",
+      "ms": 2579037
+    },
+    {
+      "s": 3,
+      "e": 14,
+      "n": 49,
+      "t": "Chuck Versus the Honeymooners",
+      "air": "2010-04-26",
+      "store_t": "Chuck Versus the Honeymooners",
+      "ms": 2577997
+    },
+    {
+      "s": 3,
+      "e": 15,
+      "n": 50,
+      "t": "Chuck Versus the Role Models",
+      "air": "2010-05-03",
+      "store_t": "Chuck Versus the Role Models",
+      "ms": 2578287
+    },
+    {
+      "s": 3,
+      "e": 16,
+      "n": 51,
+      "t": "Chuck Versus the Tooth",
+      "air": "2010-05-10",
+      "store_t": "Chuck Versus the Tooth",
+      "ms": 2577957
+    },
+    {
+      "s": 3,
+      "e": 17,
+      "n": 52,
+      "t": "Chuck Versus the Living Dead",
+      "air": "2010-05-17",
+      "store_t": "Chuck Versus the Living Dead",
+      "ms": 2573200
+    },
+    {
+      "s": 3,
+      "e": 18,
+      "n": 53,
+      "t": "Chuck Versus the Subway",
+      "air": "2010-05-24",
+      "store_t": "Chuck Versus the Subway",
+      "ms": 2582415
+    },
+    {
+      "s": 3,
+      "e": 19,
+      "n": 54,
+      "t": "Chuck Versus the Ring: Part II",
+      "air": "2010-05-24",
+      "store_t": "Chuck Versus the Ring: Part II",
+      "ms": 2581330
+    },
+    {
+      "s": 4,
+      "e": 1,
+      "n": 55,
+      "t": "Chuck Versus the Anniversary",
+      "air": "2010-09-20",
+      "store_t": "Chuck Versus the Anniversary",
+      "ms": 2575285
+    },
+    {
+      "s": 4,
+      "e": 2,
+      "n": 56,
+      "t": "Chuck Versus the Suitcase",
+      "air": "2010-09-27",
+      "store_t": "Chuck Versus the Suitcase",
+      "ms": 2574282
+    },
+    {
+      "s": 4,
+      "e": 3,
+      "n": 57,
+      "t": "Chuck Versus the Cubic Z",
+      "air": "2010-10-04",
+      "store_t": "Chuck Versus the Cubic Z",
+      "ms": 2574592
+    },
+    {
+      "s": 4,
+      "e": 4,
+      "n": 58,
+      "t": "Chuck Versus the Coup d'Etat",
+      "air": "2010-10-11",
+      "store_t": "Chuck Versus the Coup d'Etat",
+      "ms": 2574495
+    },
+    {
+      "s": 4,
+      "e": 5,
+      "n": 59,
+      "t": "Chuck Versus the Couch Lock",
+      "air": "2010-10-18",
+      "store_t": "Chuck Versus the Couch Lock",
+      "ms": 2573323
+    },
+    {
+      "s": 4,
+      "e": 6,
+      "n": 60,
+      "t": "Chuck Versus the Aisle of Terror",
+      "air": "2010-10-25",
+      "store_t": "Chuck Versus the Aisle of Terror",
+      "ms": 2576640
+    },
+    {
+      "s": 4,
+      "e": 7,
+      "n": 61,
+      "t": "Chuck Versus the First Fight",
+      "air": "2010-11-01",
+      "store_t": "Chuck Versus the First Fight",
+      "ms": 2574323
+    },
+    {
+      "s": 4,
+      "e": 8,
+      "n": 62,
+      "t": "Chuck Versus the Fear of Death",
+      "air": "2010-11-15",
+      "store_t": "Chuck Versus the Fear of Death",
+      "ms": 2575117
+    },
+    {
+      "s": 4,
+      "e": 9,
+      "n": 63,
+      "t": "Chuck Versus Phase Three",
+      "air": "2010-11-22",
+      "store_t": "Chuck Versus the Phase Three",
+      "ms": 2581632
+    },
+    {
+      "s": 4,
+      "e": 10,
+      "n": 64,
+      "t": "Chuck Versus the Leftovers",
+      "air": "2010-11-29",
+      "store_t": "Chuck Versus the Leftovers",
+      "ms": 2580580
+    },
+    {
+      "s": 4,
+      "e": 11,
+      "n": 65,
+      "t": "Chuck Versus the Balcony",
+      "air": "2011-01-17",
+      "store_t": "Chuck Versus the Balcony",
+      "ms": 2583680
+    },
+    {
+      "s": 4,
+      "e": 12,
+      "n": 66,
+      "t": "Chuck Versus the Gobbler",
+      "air": "2011-01-24",
+      "store_t": "Chuck Versus the Gobbler",
+      "ms": 2579872
+    },
+    {
+      "s": 4,
+      "e": 13,
+      "n": 67,
+      "t": "Chuck Versus the Push Mix",
+      "air": "2011-01-31",
+      "store_t": "Chuck Versus the Push Mix",
+      "ms": 2578037
+    },
+    {
+      "s": 4,
+      "e": 14,
+      "n": 68,
+      "t": "Chuck Versus the Seduction Impossible",
+      "air": "2011-02-07",
+      "store_t": "Chuck Versus the Seduction Impossible",
+      "ms": 2579663
+    },
+    {
+      "s": 4,
+      "e": 15,
+      "n": 69,
+      "t": "Chuck Versus the Cat Squad",
+      "air": "2011-02-14",
+      "store_t": "Chuck Versus the Cat Squad",
+      "ms": 2583775
+    },
+    {
+      "s": 4,
+      "e": 16,
+      "n": 70,
+      "t": "Chuck Versus the Masquerade",
+      "air": "2011-02-21",
+      "store_t": "Chuck Versus the Masquerade",
+      "ms": 2580607
+    },
+    {
+      "s": 4,
+      "e": 17,
+      "n": 71,
+      "t": "Chuck Versus the First Bank of Evil",
+      "air": "2011-02-28",
+      "store_t": "Chuck Versus the First Bank of Evil",
+      "ms": 2580735
+    },
+    {
+      "s": 4,
+      "e": 18,
+      "n": 72,
+      "t": "Chuck Versus the A-Team",
+      "air": "2011-03-14",
+      "store_t": "Chuck Versus the A-Team",
+      "ms": 2581250
+    },
+    {
+      "s": 4,
+      "e": 19,
+      "n": 73,
+      "t": "Chuck Versus the Muuurder",
+      "air": "2011-03-21",
+      "store_t": "Chuck Versus the Muuurder",
+      "ms": 2581750
+    },
+    {
+      "s": 4,
+      "e": 20,
+      "n": 74,
+      "t": "Chuck Versus the Family Volkoff",
+      "air": "2011-04-11",
+      "store_t": "Chuck Versus the Family Volkoff",
+      "ms": 2580352
+    },
+    {
+      "s": 4,
+      "e": 21,
+      "n": 75,
+      "t": "Chuck Versus the Wedding Planner",
+      "air": "2011-04-18",
+      "store_t": "Chuck Versus the Wedding Planner",
+      "ms": 2584002
+    },
+    {
+      "s": 4,
+      "e": 22,
+      "n": 76,
+      "t": "Chuck Versus Agent X",
+      "air": "2011-05-02",
+      "store_t": "Chuck Versus Agent X",
+      "ms": 2586043
+    },
+    {
+      "s": 4,
+      "e": 23,
+      "n": 77,
+      "t": "Chuck Versus the Last Details",
+      "air": "2011-05-09",
+      "store_t": "Chuck Versus The Last Details",
+      "ms": 2584032
+    },
+    {
+      "s": 4,
+      "e": 24,
+      "n": 78,
+      "t": "Chuck Versus the Cliffhanger",
+      "air": "2011-05-16",
+      "store_t": "Chuck Versus The Cliffhanger",
+      "ms": 2585420
+    },
+    {
+      "s": 5,
+      "e": 1,
+      "n": 79,
+      "t": "Chuck Versus the Zoom",
+      "air": "2011-10-28",
+      "store_t": "Chuck Versus the Zoom",
+      "ms": 2602207
+    },
+    {
+      "s": 5,
+      "e": 2,
+      "n": 80,
+      "t": "Chuck Versus the Bearded Bandit",
+      "air": "2011-11-04",
+      "store_t": "Chuck Versus the Bearded Bandit",
+      "ms": 2604607
+    },
+    {
+      "s": 5,
+      "e": 3,
+      "n": 81,
+      "t": "Chuck Versus the Frosted Tips",
+      "air": "2011-11-11",
+      "store_t": "Chuck Versus the Frosted Tips",
+      "ms": 2605397
+    },
+    {
+      "s": 5,
+      "e": 4,
+      "n": 82,
+      "t": "Chuck Versus the Business Trip",
+      "air": "2011-11-18",
+      "store_t": "Chuck Versus the Business Trip",
+      "ms": 2606015
+    },
+    {
+      "s": 5,
+      "e": 5,
+      "n": 83,
+      "t": "Chuck Versus the Hack Off",
+      "air": "2011-12-09",
+      "store_t": "Chuck Versus Hack Off",
+      "ms": 2599903
+    },
+    {
+      "s": 5,
+      "e": 6,
+      "n": 84,
+      "t": "Chuck Versus the Curse",
+      "air": "2011-12-16",
+      "store_t": "Chuck Versus the Curse",
+      "ms": 2602975
+    },
+    {
+      "s": 5,
+      "e": 7,
+      "n": 85,
+      "t": "Chuck Versus the Santa Suit",
+      "air": "2011-12-23",
+      "store_t": "Chuck Versus the Santa Suit",
+      "ms": 2608287
+    },
+    {
+      "s": 5,
+      "e": 8,
+      "n": 86,
+      "t": "Chuck Versus the Baby",
+      "air": "2011-12-30",
+      "store_t": "Chuck Versus the Baby",
+      "ms": 2610112
+    },
+    {
+      "s": 5,
+      "e": 9,
+      "n": 87,
+      "t": "Chuck Versus the Kept Man",
+      "air": "2012-01-06",
+      "store_t": "Chuck Versus the Kept Man",
+      "ms": 2606272
+    },
+    {
+      "s": 5,
+      "e": 10,
+      "n": 88,
+      "t": "Chuck Versus Bo",
+      "air": "2012-01-13",
+      "store_t": "Chuck Versus Bo",
+      "ms": 2604960
+    },
+    {
+      "s": 5,
+      "e": 11,
+      "n": 89,
+      "t": "Chuck Versus the Bullet Train",
+      "air": "2012-01-20",
+      "store_t": "Chuck Versus the Bullet Train",
+      "ms": 2604437
+    },
+    {
+      "s": 5,
+      "e": 12,
+      "n": 90,
+      "t": "Chuck Versus Sarah",
+      "air": "2012-01-27",
+      "store_t": "Chuck Versus Sarah",
+      "ms": 2609215
+    },
+    {
+      "s": 5,
+      "e": 13,
+      "n": 91,
+      "t": "Chuck Versus the Goodbye",
+      "air": "2012-01-27",
+      "store_t": "Chuck Versus the Goodbye",
+      "ms": 2663487
+    }
+  ]
+}

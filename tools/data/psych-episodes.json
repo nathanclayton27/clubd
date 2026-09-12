@@ -1,0 +1,1113 @@
+{
+  "films": [
+    {
+      "min": 88,
+      "n": 1,
+      "released": "2017-12-07",
+      "src": "Psych: The Movie",
+      "t": "Psych: The Movie"
+    },
+    {
+      "min": 88,
+      "n": 2,
+      "released": "2020-07-15",
+      "src": "Psych 2: Lassie Come Home",
+      "t": "Psych 2: Lassie Come Home"
+    },
+    {
+      "min": 96,
+      "n": 3,
+      "released": "2021-11-18",
+      "src": "Psych 3: This Is Gus",
+      "t": "Psych 3: This Is Gus"
+    }
+  ],
+  "musical": {
+    "air": "2013-12-15",
+    "e": [
+      15,
+      16
+    ],
+    "min": 88,
+    "o": [
+      110,
+      111
+    ],
+    "season": 7,
+    "src": "Psych: The Musical",
+    "t": "Psych: The Musical"
+  },
+  "overview": {
+    "1": {
+      "end": "2007-03-02",
+      "episodes": 15,
+      "start": "2006-07-07"
+    },
+    "2": {
+      "end": "2008-02-15",
+      "episodes": 16,
+      "start": "2007-07-13"
+    },
+    "3": {
+      "end": "2009-02-20",
+      "episodes": 16,
+      "start": "2008-07-18"
+    },
+    "4": {
+      "end": "2010-03-10",
+      "episodes": 16,
+      "start": "2009-08-07"
+    },
+    "5": {
+      "end": "2010-12-22",
+      "episodes": 16,
+      "start": "2010-07-14"
+    },
+    "6": {
+      "end": "2012-04-11",
+      "episodes": 16,
+      "start": "2011-10-12"
+    },
+    "7": {
+      "end": "2013-05-29",
+      "episodes": 14,
+      "start": "2013-02-27"
+    },
+    "8": {
+      "end": "2014-03-26",
+      "episodes": 10,
+      "start": "2014-01-08"
+    }
+  },
+  "runtime_pages_skipped": [
+    {
+      "page": "100 Clues",
+      "why": "no length in its infobox"
+    },
+    {
+      "page": "A Mind Is a Terrible Thing to Read",
+      "why": "no season/episode in its infobox"
+    },
+    {
+      "page": "American Duos",
+      "why": "no length in its infobox"
+    },
+    {
+      "page": "Mr. Yin Presents...",
+      "why": "no length in its infobox"
+    },
+    {
+      "page": "Yang 3 in 2D",
+      "why": "no length in its infobox"
+    }
+  ],
+  "seasons": {
+    "1": [
+      {
+        "air": "2006-07-07",
+        "alt": [
+          {
+            "min": 78,
+            "of": "extended version"
+          }
+        ],
+        "e": 1,
+        "min": 66,
+        "o": 1,
+        "of": "broadcast version",
+        "src": "Pilot (Psych)",
+        "t": "Pilot"
+      },
+      {
+        "air": "2006-07-14",
+        "e": 2,
+        "min": 43,
+        "o": 2,
+        "src": "Spellingg Bee",
+        "t": "Spellingg Bee"
+      },
+      {
+        "air": "2006-07-21",
+        "e": 3,
+        "min": 42,
+        "o": 3,
+        "src": "Speak Now or Forever Hold Your Piece",
+        "t": "Speak Now or Forever Hold Your Piece"
+      },
+      {
+        "air": "2006-07-28",
+        "e": 4,
+        "min": 42,
+        "o": 4,
+        "src": "Woman Seeking Dead Husband: Smokers Okay, No Pets",
+        "t": "Woman Seeking Dead Husband: Smokers Okay, No Pets"
+      },
+      {
+        "air": "2006-08-04",
+        "e": 5,
+        "min": 42,
+        "o": 5,
+        "src": "Psych",
+        "t": "9 Lives"
+      },
+      {
+        "air": "2006-08-11",
+        "e": 6,
+        "min": 42,
+        "o": 6,
+        "src": "Psych",
+        "t": "Weekend Warriors"
+      },
+      {
+        "air": "2006-08-18",
+        "e": 7,
+        "min": 43,
+        "o": 7,
+        "src": "Who Ya Gonna Call?",
+        "t": "Who Ya Gonna Call?"
+      },
+      {
+        "air": "2006-08-25",
+        "e": 8,
+        "min": 42,
+        "o": 8,
+        "src": "Psych",
+        "t": "Shawn vs. the Red Phantom"
+      },
+      {
+        "air": "2007-01-19",
+        "e": 9,
+        "min": 42,
+        "o": 9,
+        "src": "Psych",
+        "t": "Forget Me Not"
+      },
+      {
+        "air": "2007-01-26",
+        "e": 10,
+        "min": 42,
+        "o": 10,
+        "src": "Psych",
+        "t": "From the Earth to the Starbucks"
+      },
+      {
+        "air": "2007-02-02",
+        "e": 11,
+        "min": 42,
+        "o": 11,
+        "src": "Psych",
+        "t": "He Loves Me, He Loves Me Not, He Loves Me, Oops He's Dead!"
+      },
+      {
+        "air": "2007-02-09",
+        "e": 12,
+        "min": 42,
+        "o": 12,
+        "src": "Psych",
+        "t": "Cloudy... With a Chance of Murder"
+      },
+      {
+        "air": "2007-02-16",
+        "e": 13,
+        "min": 42,
+        "o": 13,
+        "src": "Psych",
+        "t": "Game, Set... Muuurder?"
+      },
+      {
+        "air": "2007-02-23",
+        "e": 14,
+        "min": 42,
+        "o": 14,
+        "src": "Psych",
+        "t": "Poker? I Barely Know Her"
+      },
+      {
+        "air": "2007-03-02",
+        "e": 15,
+        "min": 42,
+        "o": 15,
+        "src": "Psych",
+        "t": "Scary Sherry: Bianca's Toast"
+      }
+    ],
+    "2": [
+      {
+        "air": "2007-07-13",
+        "e": 1,
+        "min": 42,
+        "o": 16,
+        "src": "Psych",
+        "t": "American Duos"
+      },
+      {
+        "air": "2007-07-20",
+        "e": 2,
+        "min": 42,
+        "o": 17,
+        "src": "Psych",
+        "t": "65 Million Years Off"
+      },
+      {
+        "air": "2007-07-27",
+        "e": 3,
+        "min": 42,
+        "o": 18,
+        "src": "Psych",
+        "t": "Psy vs. Psy"
+      },
+      {
+        "air": "2007-08-03",
+        "e": 4,
+        "min": 42,
+        "o": 19,
+        "src": "Psych",
+        "t": "Zero to Murder in Sixty Seconds"
+      },
+      {
+        "air": "2007-08-10",
+        "e": 5,
+        "min": 42,
+        "o": 20,
+        "src": "Psych",
+        "t": "And Down the Stretch Comes Murder"
+      },
+      {
+        "air": "2007-08-17",
+        "e": 6,
+        "min": 42,
+        "o": 21,
+        "src": "Psych",
+        "t": "Meat Is Murder, But Murder Is Also Murder"
+      },
+      {
+        "air": "2007-08-24",
+        "e": 7,
+        "min": 42,
+        "o": 22,
+        "src": "Psych",
+        "t": "If You're So Smart, Then Why Are You Dead?"
+      },
+      {
+        "air": "2007-09-07",
+        "e": 8,
+        "min": 42,
+        "o": 23,
+        "src": "Psych",
+        "t": "Rob-a-Bye Baby"
+      },
+      {
+        "air": "2007-09-14",
+        "e": 9,
+        "min": 42,
+        "o": 24,
+        "src": "Psych",
+        "t": "Bounty Hunters!"
+      },
+      {
+        "air": "2007-12-07",
+        "e": 10,
+        "min": 42,
+        "o": 25,
+        "src": "Psych",
+        "t": "Gus' Dad May Have Killed an Old Guy"
+      },
+      {
+        "air": "2008-01-11",
+        "e": 11,
+        "min": 42,
+        "o": 26,
+        "src": "Psych",
+        "t": "There's Something About Mira"
+      },
+      {
+        "air": "2008-01-18",
+        "e": 12,
+        "min": 42,
+        "o": 27,
+        "src": "Psych",
+        "t": "The Old and the Restless"
+      },
+      {
+        "air": "2008-01-25",
+        "e": 13,
+        "min": 42,
+        "o": 28,
+        "src": "Psych",
+        "t": "Lights, Camera... Homicidio"
+      },
+      {
+        "air": "2008-02-01",
+        "e": 14,
+        "min": 42,
+        "o": 29,
+        "src": "Psych",
+        "t": "Dis-Lodged"
+      },
+      {
+        "air": "2008-02-08",
+        "e": 15,
+        "min": 42,
+        "o": 30,
+        "src": "Psych",
+        "t": "Black and Tan: A Crime of Fashion"
+      },
+      {
+        "air": "2008-02-15",
+        "e": 16,
+        "min": 42,
+        "o": 31,
+        "src": "Psych",
+        "t": "Shawn (and Gus) of the Dead"
+      }
+    ],
+    "3": [
+      {
+        "air": "2008-07-18",
+        "e": 1,
+        "min": 42,
+        "o": 32,
+        "src": "Psych",
+        "t": "Ghosts"
+      },
+      {
+        "air": "2008-07-25",
+        "e": 2,
+        "min": 42,
+        "o": 33,
+        "src": "Psych",
+        "t": "Murder? … Anyone? … Anyone? … Bueller?"
+      },
+      {
+        "air": "2008-08-01",
+        "e": 3,
+        "min": 42,
+        "o": 34,
+        "src": "Psych",
+        "t": "Daredevils!"
+      },
+      {
+        "air": "2008-08-08",
+        "e": 4,
+        "min": 42,
+        "o": 35,
+        "src": "Psych",
+        "t": "The Greatest Adventure in the History of Basic Cable"
+      },
+      {
+        "air": "2008-08-15",
+        "e": 5,
+        "min": 42,
+        "o": 36,
+        "src": "Psych",
+        "t": "Disco Didn't Die. It Was Murdered!"
+      },
+      {
+        "air": "2008-08-22",
+        "e": 6,
+        "min": 42,
+        "o": 37,
+        "src": "Psych",
+        "t": "There Might Be Blood"
+      },
+      {
+        "air": "2008-09-05",
+        "e": 7,
+        "min": 42,
+        "o": 38,
+        "src": "Psych",
+        "t": "Talk Derby to Me"
+      },
+      {
+        "air": "2008-09-12",
+        "e": 8,
+        "min": 42,
+        "o": 39,
+        "src": "Psych",
+        "t": "Gus Walks into a Bank"
+      },
+      {
+        "air": "2008-11-28",
+        "e": 9,
+        "min": 42,
+        "o": 40,
+        "src": "Psych",
+        "t": "Christmas Joy"
+      },
+      {
+        "air": "2009-01-09",
+        "e": 10,
+        "min": 42,
+        "o": 41,
+        "src": "Psych",
+        "t": "Six Feet Under the Sea"
+      },
+      {
+        "air": "2009-01-16",
+        "e": 11,
+        "min": 42,
+        "o": 42,
+        "src": "Psych",
+        "t": "Lassie Did a Bad, Bad Thing"
+      },
+      {
+        "air": "2009-01-23",
+        "e": 12,
+        "min": 42,
+        "o": 43,
+        "src": "Psych",
+        "t": "Earth, Wind and... Wait for It"
+      },
+      {
+        "air": "2009-01-30",
+        "e": 13,
+        "min": 42,
+        "o": 44,
+        "src": "Psych",
+        "t": "Any Given Friday Night at 10pm, 9pm Central"
+      },
+      {
+        "air": "2009-02-06",
+        "e": 14,
+        "min": 42,
+        "o": 45,
+        "src": "Psych",
+        "t": "Truer Lies"
+      },
+      {
+        "air": "2009-02-13",
+        "e": 15,
+        "min": 42,
+        "o": 46,
+        "src": "Psych",
+        "t": "Tuesday the 17th"
+      },
+      {
+        "air": "2009-02-20",
+        "e": 16,
+        "min": 42,
+        "o": 47,
+        "src": "Psych",
+        "t": "An Evening with Mr. Yang"
+      }
+    ],
+    "4": [
+      {
+        "air": "2009-08-07",
+        "e": 1,
+        "min": 42,
+        "o": 48,
+        "src": "Psych",
+        "t": "Extradition: British Columbia"
+      },
+      {
+        "air": "2009-08-14",
+        "e": 2,
+        "min": 42,
+        "o": 49,
+        "src": "Psych",
+        "t": "He Dead"
+      },
+      {
+        "air": "2009-08-21",
+        "e": 3,
+        "min": 42,
+        "o": 50,
+        "src": "Psych",
+        "t": "High Noon-ish"
+      },
+      {
+        "air": "2009-08-28",
+        "e": 4,
+        "min": 42,
+        "o": 51,
+        "src": "Psych",
+        "t": "The Devil's in the Details... and the Upstairs Bedroom"
+      },
+      {
+        "air": "2009-09-11",
+        "e": 5,
+        "min": 42,
+        "o": 52,
+        "src": "Psych",
+        "t": "Shawn Gets the Yips"
+      },
+      {
+        "air": "2009-09-18",
+        "e": 6,
+        "min": 42,
+        "o": 53,
+        "src": "Psych",
+        "t": "Bollywood Homicide"
+      },
+      {
+        "air": "2009-09-25",
+        "e": 7,
+        "min": 42,
+        "o": 54,
+        "src": "Psych",
+        "t": "High Top Fade-Out"
+      },
+      {
+        "air": "2009-10-09",
+        "e": 8,
+        "min": 42,
+        "o": 55,
+        "src": "Psych",
+        "t": "Let's Get Hairy"
+      },
+      {
+        "air": "2009-10-16",
+        "e": 9,
+        "min": 42,
+        "o": 56,
+        "src": "Psych",
+        "t": "Shawn Takes a Shot in the Dark"
+      },
+      {
+        "air": "2010-01-27",
+        "e": 10,
+        "min": 42,
+        "o": 57,
+        "src": "Psych",
+        "t": "You Can't Handle This Episode"
+      },
+      {
+        "air": "2010-02-03",
+        "e": 11,
+        "min": 42,
+        "o": 58,
+        "src": "Psych",
+        "t": "Thrill Seekers and Hell-Raisers"
+      },
+      {
+        "air": "2010-02-10",
+        "e": 12,
+        "min": 42,
+        "o": 59,
+        "src": "Psych",
+        "t": "A Very Juliet Episode"
+      },
+      {
+        "air": "2010-02-17",
+        "e": 13,
+        "min": 42,
+        "o": 60,
+        "src": "Psych",
+        "t": "Death Is in the Air"
+      },
+      {
+        "air": "2010-02-24",
+        "e": 14,
+        "min": 42,
+        "o": 61,
+        "src": "Psych",
+        "t": "Think Tank"
+      },
+      {
+        "air": "2010-03-03",
+        "e": 15,
+        "min": 42,
+        "o": 62,
+        "src": "Psych",
+        "t": "The Head, the Tail, the Whole Damn Episode"
+      },
+      {
+        "air": "2010-03-10",
+        "e": 16,
+        "min": 42,
+        "o": 63,
+        "src": "Psych",
+        "t": "Mr. Yin Presents..."
+      }
+    ],
+    "5": [
+      {
+        "air": "2010-07-14",
+        "e": 1,
+        "min": 42,
+        "o": 64,
+        "src": "Psych",
+        "t": "Romeo and Juliet and Juliet"
+      },
+      {
+        "air": "2010-07-21",
+        "e": 2,
+        "min": 42,
+        "o": 65,
+        "src": "Psych",
+        "t": "Feet Don't Kill Me Now"
+      },
+      {
+        "air": "2010-07-28",
+        "e": 3,
+        "min": 42,
+        "o": 66,
+        "src": "Psych",
+        "t": "Not Even Close... Encounters"
+      },
+      {
+        "air": "2010-08-04",
+        "e": 4,
+        "min": 42,
+        "o": 67,
+        "src": "Psych",
+        "t": "Chivalry Is Not Dead... But Someone Is"
+      },
+      {
+        "air": "2010-08-11",
+        "e": 5,
+        "min": 42,
+        "o": 68,
+        "src": "Psych",
+        "t": "Shawn and Gus in Drag (Racing)"
+      },
+      {
+        "air": "2010-08-18",
+        "e": 6,
+        "min": 42,
+        "o": 69,
+        "src": "Psych",
+        "t": "Viagra Falls"
+      },
+      {
+        "air": "2010-08-25",
+        "e": 7,
+        "min": 42,
+        "o": 70,
+        "src": "Psych",
+        "t": "Ferry Tale"
+      },
+      {
+        "air": "2010-09-01",
+        "e": 8,
+        "min": 42,
+        "o": 71,
+        "src": "Psych",
+        "t": "Shawn 2.0"
+      },
+      {
+        "air": "2010-09-08",
+        "e": 9,
+        "min": 42,
+        "o": 72,
+        "src": "Psych",
+        "t": "One, Maybe Two, Ways Out"
+      },
+      {
+        "air": "2010-11-10",
+        "e": 10,
+        "min": 42,
+        "o": 73,
+        "src": "Psych",
+        "t": "Extradition II: The Actual Extradition Part"
+      },
+      {
+        "air": "2010-11-17",
+        "e": 11,
+        "min": 42,
+        "o": 74,
+        "src": "Psych",
+        "t": "In Plain Fright"
+      },
+      {
+        "air": "2010-12-01",
+        "e": 12,
+        "min": 50,
+        "o": 75,
+        "src": "Dual Spires",
+        "t": "Dual Spires"
+      },
+      {
+        "air": "2010-12-08",
+        "e": 13,
+        "min": 42,
+        "o": 76,
+        "src": "Psych",
+        "t": "We'd Like to Thank the Academy"
+      },
+      {
+        "air": "2010-12-15",
+        "e": 14,
+        "min": 42,
+        "o": 77,
+        "src": "Psych",
+        "t": "The Polarizing Express"
+      },
+      {
+        "air": "2010-12-15",
+        "e": 15,
+        "min": 42,
+        "o": 78,
+        "src": "Psych",
+        "t": "Dead Bear Walking"
+      },
+      {
+        "air": "2010-12-22",
+        "e": 16,
+        "min": 42,
+        "o": 79,
+        "src": "Psych",
+        "t": "Yang 3 in 2D"
+      }
+    ],
+    "6": [
+      {
+        "air": "2011-10-12",
+        "e": 1,
+        "min": 42,
+        "o": 80,
+        "src": "Psych",
+        "t": "Shawn Rescues Darth Vader"
+      },
+      {
+        "air": "2011-10-19",
+        "e": 2,
+        "min": 42,
+        "o": 81,
+        "src": "Psych",
+        "t": "Last Night Gus"
+      },
+      {
+        "air": "2011-10-26",
+        "e": 3,
+        "min": 42,
+        "o": 82,
+        "src": "Psych",
+        "t": "This Episode Sucks"
+      },
+      {
+        "air": "2011-11-02",
+        "e": 4,
+        "min": 42,
+        "o": 83,
+        "src": "Psych",
+        "t": "The Amazing Psych-Man & Tap Man, Issue #2"
+      },
+      {
+        "air": "2011-11-09",
+        "e": 5,
+        "min": 42,
+        "o": 84,
+        "src": "Psych",
+        "t": "Dead Man's Curve Ball"
+      },
+      {
+        "air": "2011-11-16",
+        "e": 6,
+        "min": 42,
+        "o": 85,
+        "src": "Psych",
+        "t": "Shawn, Interrupted"
+      },
+      {
+        "air": "2011-11-30",
+        "e": 7,
+        "min": 42,
+        "o": 86,
+        "src": "Psych",
+        "t": "In for a Penny..."
+      },
+      {
+        "air": "2011-12-07",
+        "e": 8,
+        "min": 42,
+        "o": 87,
+        "src": "Psych",
+        "t": "The Tao of Gus"
+      },
+      {
+        "air": "2011-12-14",
+        "e": 9,
+        "min": 42,
+        "o": 88,
+        "src": "Psych",
+        "t": "Neil Simon's Lover's Retreat"
+      },
+      {
+        "air": "2012-02-29",
+        "e": 10,
+        "min": 42,
+        "o": 89,
+        "src": "Psych",
+        "t": "Indiana Shawn and the Temple of the Kinda Crappy, Rusty Old Dagger"
+      },
+      {
+        "air": "2012-03-07",
+        "e": 11,
+        "min": 42,
+        "o": 90,
+        "src": "Psych",
+        "t": "Heeeeere's Lassie"
+      },
+      {
+        "air": "2012-03-14",
+        "e": 12,
+        "min": 42,
+        "o": 91,
+        "src": "Psych",
+        "t": "Shawn and the Real Girl"
+      },
+      {
+        "air": "2012-03-21",
+        "e": 13,
+        "min": 42,
+        "o": 92,
+        "src": "Psych",
+        "t": "Let's Doo-Wop It Again"
+      },
+      {
+        "air": "2012-03-28",
+        "e": 14,
+        "min": 42,
+        "o": 93,
+        "src": "Psych",
+        "t": "Autopsy Turvy"
+      },
+      {
+        "air": "2012-04-04",
+        "e": 15,
+        "min": 42,
+        "o": 94,
+        "src": "Psych",
+        "t": "True Grits"
+      },
+      {
+        "air": "2012-04-11",
+        "e": 16,
+        "min": 42,
+        "o": 95,
+        "src": "Psych",
+        "t": "Santabarbaratown"
+      }
+    ],
+    "7": [
+      {
+        "air": "2013-02-27",
+        "e": 1,
+        "min": 42,
+        "o": 96,
+        "src": "Psych",
+        "t": "Santabarbaratown 2"
+      },
+      {
+        "air": "2013-03-06",
+        "e": 2,
+        "min": 42,
+        "o": 97,
+        "src": "Psych",
+        "t": "Juliet Takes a Luvvah"
+      },
+      {
+        "air": "2013-03-13",
+        "e": 3,
+        "min": 42,
+        "o": 98,
+        "src": "Psych",
+        "t": "Lassie Jerky"
+      },
+      {
+        "air": "2013-03-20",
+        "e": 4,
+        "min": 42,
+        "o": 99,
+        "src": "Psych",
+        "t": "No Country for Two Old Men"
+      },
+      {
+        "air": "2013-03-27",
+        "e": 5,
+        "min": 42,
+        "o": 100,
+        "src": "Psych",
+        "t": "100 Clues"
+      },
+      {
+        "air": "2013-04-03",
+        "e": 6,
+        "min": 42,
+        "o": 101,
+        "src": "Psych",
+        "t": "Cirque Du Soul"
+      },
+      {
+        "air": "2013-04-10",
+        "e": 7,
+        "min": 42,
+        "o": 102,
+        "src": "Psych",
+        "t": "Deez Nups"
+      },
+      {
+        "air": "2013-04-17",
+        "e": 8,
+        "min": 42,
+        "o": 103,
+        "src": "Psych",
+        "t": "Right Turn or Left for Dead"
+      },
+      {
+        "air": "2013-04-24",
+        "e": 9,
+        "min": 42,
+        "o": 104,
+        "src": "Psych",
+        "t": "Juliet Wears the Pantsuit"
+      },
+      {
+        "air": "2013-05-01",
+        "e": 10,
+        "min": 42,
+        "o": 105,
+        "src": "Psych",
+        "t": "Santa Barbarian Candidate"
+      },
+      {
+        "air": "2013-05-08",
+        "e": 11,
+        "min": 42,
+        "o": 106,
+        "src": "Psych",
+        "t": "Office Space"
+      },
+      {
+        "air": "2013-05-15",
+        "e": 12,
+        "min": 42,
+        "o": 107,
+        "src": "Psych",
+        "t": "Dead Air"
+      },
+      {
+        "air": "2013-05-22",
+        "e": 13,
+        "min": 42,
+        "o": 108,
+        "src": "Psych",
+        "t": "Nip and Suck It!"
+      },
+      {
+        "air": "2013-05-29",
+        "e": 14,
+        "min": 42,
+        "o": 109,
+        "src": "Psych",
+        "t": "No Trout About It"
+      }
+    ],
+    "8": [
+      {
+        "air": "2014-01-08",
+        "e": 1,
+        "min": 42,
+        "o": 112,
+        "src": "Psych",
+        "t": "Lock, Stock, Some Smoking Barrels and Burton Guster's Goblet of Fire"
+      },
+      {
+        "air": "2014-01-15",
+        "e": 2,
+        "min": 42,
+        "o": 113,
+        "src": "Psych",
+        "t": "S.E.I.Z.E. the Day"
+      },
+      {
+        "air": "2014-01-22",
+        "e": 3,
+        "min": 42,
+        "o": 114,
+        "src": "Psych",
+        "t": "Remake A.K.A. Cloudy... With a Chance of Improvement"
+      },
+      {
+        "air": "2014-01-29",
+        "e": 4,
+        "min": 42,
+        "o": 115,
+        "src": "Psych",
+        "t": "Someone's Got a Woody"
+      },
+      {
+        "air": "2014-02-05",
+        "e": 5,
+        "min": 42,
+        "o": 116,
+        "src": "Psych",
+        "t": "COG Blocked"
+      },
+      {
+        "air": "2014-02-26",
+        "e": 6,
+        "min": 42,
+        "o": 117,
+        "src": "Psych",
+        "t": "1967: A Psych Odyssey"
+      },
+      {
+        "air": "2014-03-05",
+        "e": 7,
+        "min": 42,
+        "o": 118,
+        "src": "Psych",
+        "t": "Shawn and Gus Truck Things Up"
+      },
+      {
+        "air": "2014-03-12",
+        "e": 8,
+        "min": 42,
+        "o": 119,
+        "src": "Psych",
+        "t": "A Touch of Sweevil"
+      },
+      {
+        "air": "2014-03-19",
+        "e": 9,
+        "min": 42,
+        "o": 120,
+        "src": "Psych",
+        "t": "A Nightmare on State Street"
+      },
+      {
+        "air": "2014-03-26",
+        "e": 10,
+        "min": 42,
+        "o": 121,
+        "src": "Psych",
+        "t": "The Break-Up"
+      }
+    ]
+  },
+  "series": {
+    "episodes_stated": 121,
+    "page": "Psych",
+    "runtime_min": 42,
+    "seasons_stated": 8
+  },
+  "sources": {
+    "episode_tables": [
+      "Psych season 1",
+      "Psych season 2",
+      "Psych season 3",
+      "Psych season 4",
+      "Psych season 5",
+      "Psych season 6",
+      "Psych season 7",
+      "Psych season 8"
+    ],
+    "infoboxes": [
+      "Psych",
+      "Psych: The Musical",
+      "Psych: The Movie",
+      "Psych 2: Lassie Come Home",
+      "Psych 3: This Is Gus",
+      "Dual Spires",
+      "Pilot (Psych)",
+      "Speak Now or Forever Hold Your Piece",
+      "Spellingg Bee",
+      "Who Ya Gonna Call?",
+      "Woman Seeking Dead Husband: Smokers Okay, No Pets"
+    ],
+    "list_page": "List of Psych episodes"
+  }
+}

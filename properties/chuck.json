@@ -1,0 +1,659 @@
+{
+  "slug": "chuck",
+  "title": "Chuck",
+  "subtitle": "every episode, season by season",
+  "kind": "tv",
+  "popularity": 58,
+  "year": "2007–2012",
+  "blurb": "All 91 episodes across five seasons, in air order and weighted by each episode's published runtime — about 65 hours.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#708A3E",
+  "accentDark": "#C6E69A",
+  "tiers": false,
+  "notes": [
+    [
+      "Weighted by real runtime, every row.",
+      "Each weight is that episode's own published duration rather than a network hour assumed for all 91. They run from 41 to 44 minutes — a narrow spread, as a network drama's should be, but measured rather than guessed. 91 episodes, 65h 22m in total, and the finish date is built on those figures."
+    ],
+    [
+      "The seasons are not the same length.",
+      "Thirteen, twenty-two, nineteen, twenty-four, thirteen. The first season was cut short by the 2007–08 writers' strike, the third and fourth were each extended past their original thirteen-episode orders, and the fifth was commissioned as a final thirteen. The section subtitles carry the years and the counts so the shape is visible without counting rows."
+    ],
+    [
+      "Titles are printed as broadcast.",
+      "All 91 begin \"Chuck Versus\", the pilot included — it is \"Chuck Versus the Intersect\", which is easy to mistake for a later episode. The pattern is not trimmed anywhere here. One aside for anyone matching this list against a storefront: Apple files the pilot as \"Pilot\", and disagrees with Wikipedia about the word \"the\" on three other titles. Wikipedia's spelling is what ships."
+    ],
+    [
+      "No episode notes.",
+      "Nothing on this page says what happens in an episode. The subtitles are years, counts and hours; the four section intros are production facts about how many episodes were ordered and when."
+    ],
+    "Titles, numbering and air dates machine-read from Wikipedia's five Chuck season articles, with the per-season counts cross-checked against the list page's own series overview; per-episode runtimes from the Apple TV listing for Chuck: The Complete Series, matched on season and episode number and verified by title before any weight is believed."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Season 1",
+      "sub": "2007–08 · 13 episodes · 9h 16m",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Chuck_season_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "chuck-s1e1",
+          "t": "Chuck Versus the Intersect",
+          "n": "1",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e2",
+          "t": "Chuck Versus the Helicopter",
+          "n": "2",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s1e3",
+          "t": "Chuck Versus the Tango",
+          "n": "3",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e4",
+          "t": "Chuck Versus the Wookiee",
+          "n": "4",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e5",
+          "t": "Chuck Versus the Sizzling Shrimp",
+          "n": "5",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e6",
+          "t": "Chuck Versus the Sandworm",
+          "n": "6",
+          "w": 0.69
+        },
+        {
+          "id": "chuck-s1e7",
+          "t": "Chuck Versus the Alma Mater",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "chuck-s1e8",
+          "t": "Chuck Versus the Truth",
+          "n": "8",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e9",
+          "t": "Chuck Versus the Imported Hard Salami",
+          "n": "9",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e10",
+          "t": "Chuck Versus the Nemesis",
+          "n": "10",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s1e11",
+          "t": "Chuck Versus the Crown Vic",
+          "n": "11",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s1e12",
+          "t": "Chuck Versus the Undercover Lover",
+          "n": "12",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s1e13",
+          "t": "Chuck Versus the Marlin",
+          "n": "13",
+          "w": 0.71
+        }
+      ],
+      "intro": "Thirteen episodes: the 2007–08 writers' strike cut the first season short, and NBC renewed the show for a second season rather than extending it to a full twenty-two.",
+      "open": true
+    },
+    {
+      "id": "s2",
+      "title": "Season 2",
+      "sub": "2008–09 · 22 episodes · 15h 46m",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Chuck_season_2"
+        }
+      ],
+      "items": [
+        {
+          "id": "chuck-s2e1",
+          "t": "Chuck Versus the First Date",
+          "n": "1",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e2",
+          "t": "Chuck Versus the Seduction",
+          "n": "2",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e3",
+          "t": "Chuck Versus the Break-Up",
+          "n": "3",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e4",
+          "t": "Chuck Versus the Cougars",
+          "n": "4",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e5",
+          "t": "Chuck Versus Tom Sawyer",
+          "n": "5",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e6",
+          "t": "Chuck Versus the Ex",
+          "n": "6",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e7",
+          "t": "Chuck Versus the Fat Lady",
+          "n": "7",
+          "w": 0.7
+        },
+        {
+          "id": "chuck-s2e8",
+          "t": "Chuck Versus the Gravitron",
+          "n": "8",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e9",
+          "t": "Chuck Versus the Sensei",
+          "n": "9",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e10",
+          "t": "Chuck Versus the DeLorean",
+          "n": "10",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e11",
+          "t": "Chuck Versus Santa Claus",
+          "n": "11",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e12",
+          "t": "Chuck Versus the Third Dimension",
+          "n": "12",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s2e13",
+          "t": "Chuck Versus the Suburbs",
+          "n": "13",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s2e14",
+          "t": "Chuck Versus the Best Friend",
+          "n": "14",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e15",
+          "t": "Chuck Versus the Beefcake",
+          "n": "15",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e16",
+          "t": "Chuck Versus the Lethal Weapon",
+          "n": "16",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e17",
+          "t": "Chuck Versus the Predator",
+          "n": "17",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e18",
+          "t": "Chuck Versus the Broken Heart",
+          "n": "18",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e19",
+          "t": "Chuck Versus the Dream Job",
+          "n": "19",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s2e20",
+          "t": "Chuck Versus the First Kill",
+          "n": "20",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s2e21",
+          "t": "Chuck Versus the Colonel",
+          "n": "21",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s2e22",
+          "t": "Chuck Versus the Ring",
+          "n": "22",
+          "w": 0.71
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Season 3",
+      "sub": "2010 · 19 episodes · 13h 40m",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Chuck_season_3"
+        }
+      ],
+      "items": [
+        {
+          "id": "chuck-s3e1",
+          "t": "Chuck Versus the Pink Slip",
+          "n": "1",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e2",
+          "t": "Chuck Versus the Three Words",
+          "n": "2",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e3",
+          "t": "Chuck Versus the Angel de la Muerte",
+          "n": "3",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e4",
+          "t": "Chuck Versus Operation Awesome",
+          "n": "4",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e5",
+          "t": "Chuck Versus First Class",
+          "n": "5",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e6",
+          "t": "Chuck Versus the Nacho Sampler",
+          "n": "6",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e7",
+          "t": "Chuck Versus the Mask",
+          "n": "7",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e8",
+          "t": "Chuck Versus the Fake Name",
+          "n": "8",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e9",
+          "t": "Chuck Versus the Beard",
+          "n": "9",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e10",
+          "t": "Chuck Versus the Tic Tac",
+          "n": "10",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e11",
+          "t": "Chuck Versus the Final Exam",
+          "n": "11",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e12",
+          "t": "Chuck Versus the American Hero",
+          "n": "12",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e13",
+          "t": "Chuck Versus the Other Guy",
+          "n": "13",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e14",
+          "t": "Chuck Versus the Honeymooners",
+          "n": "14",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e15",
+          "t": "Chuck Versus the Role Models",
+          "n": "15",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e16",
+          "t": "Chuck Versus the Tooth",
+          "n": "16",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e17",
+          "t": "Chuck Versus the Living Dead",
+          "n": "17",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s3e18",
+          "t": "Chuck Versus the Subway",
+          "n": "18",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s3e19",
+          "t": "Chuck Versus the Ring: Part II",
+          "n": "19",
+          "w": 0.72
+        }
+      ],
+      "intro": "Nineteen episodes: thirteen were ordered in May 2009, and NBC added six more that October, before the season began airing."
+    },
+    {
+      "id": "s4",
+      "title": "Season 4",
+      "sub": "2010–11 · 24 episodes · 17h 16m",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Chuck_season_4"
+        }
+      ],
+      "items": [
+        {
+          "id": "chuck-s4e1",
+          "t": "Chuck Versus the Anniversary",
+          "n": "1",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e2",
+          "t": "Chuck Versus the Suitcase",
+          "n": "2",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e3",
+          "t": "Chuck Versus the Cubic Z",
+          "n": "3",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e4",
+          "t": "Chuck Versus the Coup d'Etat",
+          "n": "4",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e5",
+          "t": "Chuck Versus the Couch Lock",
+          "n": "5",
+          "w": 0.71
+        },
+        {
+          "id": "chuck-s4e6",
+          "t": "Chuck Versus the Aisle of Terror",
+          "n": "6",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e7",
+          "t": "Chuck Versus the First Fight",
+          "n": "7",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e8",
+          "t": "Chuck Versus the Fear of Death",
+          "n": "8",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e9",
+          "t": "Chuck Versus Phase Three",
+          "n": "9",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e10",
+          "t": "Chuck Versus the Leftovers",
+          "n": "10",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e11",
+          "t": "Chuck Versus the Balcony",
+          "n": "11",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e12",
+          "t": "Chuck Versus the Gobbler",
+          "n": "12",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e13",
+          "t": "Chuck Versus the Push Mix",
+          "n": "13",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e14",
+          "t": "Chuck Versus the Seduction Impossible",
+          "n": "14",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e15",
+          "t": "Chuck Versus the Cat Squad",
+          "n": "15",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e16",
+          "t": "Chuck Versus the Masquerade",
+          "n": "16",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e17",
+          "t": "Chuck Versus the First Bank of Evil",
+          "n": "17",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e18",
+          "t": "Chuck Versus the A-Team",
+          "n": "18",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e19",
+          "t": "Chuck Versus the Muuurder",
+          "n": "19",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e20",
+          "t": "Chuck Versus the Family Volkoff",
+          "n": "20",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e21",
+          "t": "Chuck Versus the Wedding Planner",
+          "n": "21",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e22",
+          "t": "Chuck Versus Agent X",
+          "n": "22",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e23",
+          "t": "Chuck Versus the Last Details",
+          "n": "23",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s4e24",
+          "t": "Chuck Versus the Cliffhanger",
+          "n": "24",
+          "w": 0.72
+        }
+      ],
+      "intro": "Twenty-four episodes, the longest season — thirteen ordered, then eleven more rather than the usual back nine."
+    },
+    {
+      "id": "s5",
+      "title": "Season 5",
+      "sub": "2011–12 · 13 episodes · 9h 23m",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Chuck_season_5"
+        }
+      ],
+      "items": [
+        {
+          "id": "chuck-s5e1",
+          "t": "Chuck Versus the Zoom",
+          "n": "1",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e2",
+          "t": "Chuck Versus the Bearded Bandit",
+          "n": "2",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e3",
+          "t": "Chuck Versus the Frosted Tips",
+          "n": "3",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e4",
+          "t": "Chuck Versus the Business Trip",
+          "n": "4",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e5",
+          "t": "Chuck Versus the Hack Off",
+          "n": "5",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e6",
+          "t": "Chuck Versus the Curse",
+          "n": "6",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e7",
+          "t": "Chuck Versus the Santa Suit",
+          "n": "7",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e8",
+          "t": "Chuck Versus the Baby",
+          "n": "8",
+          "w": 0.73
+        },
+        {
+          "id": "chuck-s5e9",
+          "t": "Chuck Versus the Kept Man",
+          "n": "9",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e10",
+          "t": "Chuck Versus Bo",
+          "n": "10",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e11",
+          "t": "Chuck Versus the Bullet Train",
+          "n": "11",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e12",
+          "t": "Chuck Versus Sarah",
+          "n": "12",
+          "w": 0.72
+        },
+        {
+          "id": "chuck-s5e13",
+          "t": "Chuck Versus the Goodbye",
+          "n": "13",
+          "w": 0.74
+        }
+      ],
+      "intro": "Thirteen episodes: NBC renewed the show for a fifth and final season in May 2011."
+    }
+  ]
+}
