@@ -88,7 +88,11 @@ So a delete reaches the device that ran it and the account's row, and no
 further. **A delete that propagates across devices is not possible with this
 schema** and would need a tombstone the other device can recognise — a
 `deleted_at` column on `progress`, or a small `progress_deletions` table — i.e.
-a migration. None is queued; nothing in the site pretends one exists.
+a migration. **That migration now exists and is queued**:
+`scratch/security/clu504-tombstones.sql` adds `progress.removed` (CLU-504), and
+§5 says what it does and what it does not. Until it has run *and* the client
+half that writes the column has shipped, this paragraph still describes the live
+site exactly: nothing in the site pretends a tombstone exists.
 
 Anyone who later adds a delete policy or restores the `delete` grant should know
 the client already handles both — it asks for the deleted row back and only falls
@@ -454,6 +458,17 @@ error, which is why the fresh-watch delete in `src/template.html` asks for the
 deleted row back and empties `read_ids` when none comes (rule 2 above). A
 `property_id` here may carry a `#fw…` suffix naming one fresh watch of that list.
 
+⚠ **`removed` is queued and not yet run** (CLU-504, §5). When it lands, the row
+gains a second set: a `jsonb` map from item id to the instant that id was
+deliberately unticked, so a merge can tell "deleted on purpose" from "never
+uploaded". **An id is never in both `removed` and `read_ids`**, and that is a
+fact of the table rather than a promise of the client — a `before insert or
+update` trigger, `progress_tombstones`, deletes from `removed` every key that
+appears in `read_ids` on every write, whoever the writer is. Which is why **no
+read path has to subtract anything**: `read_ids` stays exactly what it has
+always been, the ids that are ticked right now, and the friends shelf, the club
+strip and the group comparison view all keep reading it unchanged.
+
 **`club_progress`** — a club's own tracking session: one row per **membership**,
 keyed `(group_id, user_id)`, with `read_ids text[] not null default '{}'` and
 `updated_at`. Plus an index on `user_id`. It is not a lens onto `progress`; it is
@@ -507,6 +522,19 @@ property is **derived, never trusted** — `p_property` is checked against it
 rather than used, because a caller who could name their own property could write
 their club's ticks onto any list.
 
+⚠ **CLU-504 replaces this function** (queued, §5) and the session write is the
+half that does **not** change — it stays an exact set, which is what club
+porting relies on. What changes is the universal union, which today drags every
+stale id in the session up with it. Afterwards the function diffs the incoming
+set against the stored session, which it can do because it is the only writer of
+`club_progress`: an id the session did **not** hold is a tick somebody just
+made, so it is unioned up **and its tombstone is cleared**; an id the session
+already held asserts nothing new, so a tombstone on it wins and it is **not**
+unioned up. That second rule is what stops an untick being undone by the next
+club tick, and it is provable rather than plausible — an id was FRESH when it
+entered the session, so its tombstone was cleared then, so any tombstone on it
+now was written later.
+
 **`arr_union(a text[], b text[]) → text[]`** — sorted, de-duplicated union of two
 id arrays; `immutable`, `parallel safe`. Callable by **neither** browser role
 (`revoke all`, nothing granted back — readback 14): it is an internal of
@@ -537,6 +565,15 @@ read_ids = arr_union(...)`, never a replace — skipping empty sessions. `before
 delete` on the parent is load-bearing: it fires before the RI cascade reaches
 `club_progress`. ⚠ **It does not cover leaving or being removed**, which hit the
 same window with no fold — the open exposure in [§5](#the-largest-thing-in-the-repo-and-it-has-now-run).
+
+⚠ **CLU-504 replaces this function too** (queued, §5), and narrows what it
+folds by exactly one test. The fold is a rescue, not a tick, so it cannot tell a
+freshly ticked session id from a stale one; it therefore compares each
+tombstone's instant against `club_progress.updated_at` and folds the id unless
+the tombstone is **strictly newer** than the last write to that session. The
+ambiguous case resurrects rather than drops. **That comparison is the reason the
+column is `jsonb` and not a `text[]`** — a bare list of ids cannot express it at
+all.
 
 **`deleted_groups_20260827`** and **`deleted_group_members_20260827`** — the
 archive of what the 2026-09-10 run deleted: 36 clubs and 66 memberships
@@ -710,12 +747,13 @@ repo agree on the bytes that ran — the first time in this project that has bee
 true of anything.
 
 **Queued behind it, written and not run: the CLU-153 pair**, under *Queued and
-ready* below, **and `scratch/security/clu504-tombstones.sql`**, which is written
-but **held, not queued**: a hostile audit on 2026-09-12 found the ledger row it
-writes would be false and that `save_progress` breaks the invariant its own
-column comment asserts, so it must not be pasted in this form (CLU-504). The
-front-end half of that card shipped without it. Nothing else in the repo is
-waiting on a paste.
+ready* below, and **`scratch/security/clu504-tombstones.sql`**, which has been
+**rewritten and re-audited** since the 2026-09-12 audit refused it — that audit
+found the ledger row it wrote would be false and that `save_progress` broke the
+invariant its own column comment asserted, and the rewrite answers both by
+replacing the functions rather than only adding a column. See *Queued and not
+run: `progress` learns what was deleted* below. The front-end half of that card
+shipped without it. Nothing else in the repo is waiting on a paste.
 
 **`superseded/migrate-add-friend-privacy.sql` was listed as applied inside
 `tools/whereis.py` until CLU-446**, contradicting this section, which proves it
@@ -1049,6 +1087,81 @@ what should be published is CLU-414.
 
 **Until B runs, `profiles` is still the open directory §4 describes.** A copy
 already taken is not undone by B; that is the reason not to let it wait.
+
+### Queued and not run: `progress` learns what was deleted (CLU-504)
+
+`scratch/security/clu504-tombstones.sql`. **Nothing in it has run.** §4's
+`progress`, `save_progress` and `club_fold_on_delete` entries carry the end
+state; this is the operational half.
+
+**It is not a one-column migration, and the first version of it was refused for
+assuming it was.** One `alter table`, plus two new helpers, one new trigger, and
+**two `create or replace`s on functions that are already live**:
+
+| Object | What happens to it |
+|---|---|
+| `progress.removed` | added — `jsonb not null default '{}'::jsonb`. A constant default, so PG 11+ records it in `attmissingval` and no existing row is touched. |
+| `tomb_at(jsonb)` | new. Reads a tombstone's instant, returning null rather than raising on anything unreadable. `stable`, not `immutable`: the cast depends on TimeZone for a zoneless string. |
+| `tomb_keep(text[], jsonb, timestamptz)` | new. The ids a tombstone map does not veto. A null `p_since` means every tombstone vetoes; a timestamp means only a strictly newer one does. |
+| `progress_tombstone_guard()` + trigger `progress_tombstones` | new, `before insert or update on progress, for each row`. Enforces the invariant, drops unreadable and over-180-day entries, caps the map at 5000. |
+| `save_progress(text, uuid, text[])` | **replaced** — the session write unchanged, the universal union made tombstone-aware. |
+| `club_fold_on_delete()` | **replaced** — folds an id unless its tombstone is newer than `club_progress.updated_at`. |
+
+**It refuses to run against a schema it does not recognise.** The pre-flight
+fingerprints both live function bodies — whitespace-normalised `md5(prosrc)`, so
+a line ending cannot make it fire — and accepts only two values each: the body
+`migrate-club-progress.sql` installed, or the body this file installs. So a
+`create or replace` cannot silently discard somebody else's change, and a second
+run recognises itself. It also checks `server_version_num >= 110000`, ownership
+of `progress`, that `read_ids` is a `NOT NULL text[]` on both tables, that
+`groups_fold_sessions` is still attached, and that `club_progress` still has no
+non-SELECT policy and no browser-role DML — which is the fact the CARRIED rule
+rests on.
+
+⚠ **The trigger is the one thing here that can break the site**, because it runs
+on every tick write every user makes. It is written so it cannot raise — every
+cast goes through `tomb_at()`, which catches its own exception — and **the undo
+is one statement that restores exactly today's behaviour**, with nothing to put
+back afterwards:
+
+    drop trigger if exists progress_tombstones on public.progress;
+
+**Running it changes nothing a user can see.** Every row's `removed` is `'{}'`,
+and with `'{}'` the two replaced functions compute exactly what they computed
+before: `tomb_keep(ids, '{}', …)` is `ids`, `'{}'::jsonb - fresh` is `'{}'`, and
+the trigger returns `NEW` untouched on its fast path. The column becomes useful
+only when the client half ships — the untick that writes a tombstone, the merge
+that reads one, the fresh-watch clear that tombstones the run it clears.
+
+⚠ **One requirement the database cannot enforce, so it is written down here.**
+`clean()` filters ids against the live catalogue, so a re-slug already drops ids
+out of `done` without anybody asking. A client that wrote "out of `read_ids`
+therefore into `removed`" would tombstone every id the catalogue renamed, turning
+a recoverable quiet loss into a permanent one. **Only ids the user explicitly
+unticked may ever be written into `removed`.**
+
+⚠ **`tools/whereis.py` already reports all four new objects correctly** —
+checked, not assumed: `tomb_at`, `tomb_keep`, `progress_tombstone_guard` and the
+`progress_tombstones` trigger each answer *"NEVER RUN … no applied file defines
+this — it is not in the database"*, which is right today. It becomes **wrong the
+moment the file runs**, because `whereis.py` reads this document for what has
+been applied. **Move the file into the applied list here in the same sitting as
+the paste**, or the tool spends the next fortnight calling four live objects
+missing — which is CLU-446 in the other direction.
+
+**Checksum `54f0ecd2…`**, generated by `python tools/migrations.py --footer` and
+spliced by script rather than by hand, which is the specific failure that stopped
+the first version. Hostile-audited across three rounds by an agent that wrote
+neither version, and the audit is on CLU-504 in full. The second round produced
+ten non-blocking findings, of which eight were taken: three sentences in the
+header were provably false and are rewritten; `tomb_at`/`tomb_keep` no longer
+claim `parallel safe` (a plpgsql `EXCEPTION` block opens a subtransaction, which
+raises in a parallel leader, so the label was safe only by accident of call
+site); the trigger's key test is `not coalesce(..., false)`, because a NULL
+element in `read_ids` would otherwise drop **every** tombstone on the row at
+once; and both post-replacement function checks now raise on a null oid instead
+of passing by being unable to fail. Final verdict:
+**RUN.** Three rounds. The final one, on a one-token delta, reads: *"VERDICT: RUN - confirmed, verdict stands. ... The delta really is one token."* Rounds one and two found no blockers either; round one produced ten non-blocking findings, eight of which were taken into the file. The full audit is quoted on CLU-504.
 
 ### Queued and not run: the friendship edge gets a door (CLU-445)
 
