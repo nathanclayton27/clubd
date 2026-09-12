@@ -1,0 +1,179 @@
+{
+  "slug": "sitcoms",
+  "title": "Sitcoms",
+  "subtitle": "15 sitcoms, each its own list",
+  "kind": "tv",
+  "year": "1972–",
+  "popularity": 90,
+  "unit": {
+    "one": "show",
+    "many": "shows"
+  },
+  "verb": {
+    "base": "watch",
+    "ing": "watching",
+    "past": "watched"
+  },
+  "accent": "#B5771A",
+  "accentDark": "#E8B23C",
+  "blurb": "Fifteen sitcoms as one list. Each row opens that show's own page, and finishing that page ticks the row here.",
+  "notes": [
+    [
+      "Every row is a door.",
+      "Hover a row and a loupe appears with a fraction beside it — how far into that show you already are. Opening it takes you to its own page, an ordinary list with its own strip, its own schedule and its own clubs. Nothing about it changes because it is reachable from here, and every one of these fifteen still has its own tile in the catalogue."
+    ],
+    [
+      "Ticking works in both directions.",
+      "Marking a row here ticks that whole show, and finishing that show marks the row here. Unticking a row only takes back the ticks this page put there — anything you had already marked yourself stays marked."
+    ],
+    [
+      "Every mark is the same width, and that is not a shrug.",
+      "None of the lists behind this page carries a runtime, because the episode listings they are read from publish none. So each door counts one, and Fawlty Towers is drawn as wide as Bob's Burgers. The episode count sits on each row instead, where it is a fact rather than a guess at how long you will be — and it is the number to read before picking one."
+    ],
+    [
+      "What counts as a sitcom here.",
+      "A scripted comedy series with a recurring cast, comedy first. Which leaves four comedy lists on the site off this shelf on purpose: Mystery Science Theater 3000 riffs films, Jackass is unscripted, everything Nathan Fielder made is unscripted and is his own body of work rather than a show, and the Muppets list is a film series with a variety show attached. Psych and Chuck are funny and run an hour, which makes them comedy-dramas and puts them on the site without putting them here."
+    ],
+    [
+      "The British four sit together.",
+      "Fawlty Towers, Blackadder, Peep Show and The Thick of It shipped as four separate lists and belong in one section — short series, years apart, and between them the quickest way onto this shelf. All four keep their own tiles as well."
+    ],
+    [
+      "Some rows stop short, and each page says why.",
+      "The Simpsons here is seasons 1 to 10 and stops there on purpose. Frasier is the original eleven seasons, not the 2023 revival. The Office is the American series, which is also why the British section is four shows and not five — the series it was remade from is not on clubd yet. Blackadder counts entries rather than episodes because the specials and the pilot are rows too, and Futurama's count takes in its four films. Every one of those is the decision of the page behind the row, and that page argues for it."
+    ],
+    [
+      "Television is bigger than this.",
+      "There is no Cheers here, no Parks and Recreation, no Always Sunny, no Curb, no Only Fools and Horses, no Fleabag. Every row on this page is a list that already exists; the rest are written down as work still to do, and each will get a row here once it is built rather than a promise of one now."
+    ],
+    "Every row is read out of the list it opens. The title, the years and the count on each row are taken from that list's own file when the page is built, so nothing here can drift from the page behind it, and none of it was typed in. The sources are on those fifteen pages, each naming its own. What is a judgement, and mine, is which shows count as sitcoms and how they are grouped."
+  ],
+  "sections": [
+    {
+      "id": "british",
+      "title": "British sitcoms",
+      "sub": "1975–2023, and that last date is a pilot taped in 1982 and first screened forty-one years later · short series with years between them, and between them the quickest way onto this shelf.",
+      "items": [
+        {
+          "id": "sit-fawlty-towers",
+          "t": "Fawlty Towers",
+          "n": "1975–79",
+          "note": "12 episodes",
+          "into": "fawlty-towers"
+        },
+        {
+          "id": "sit-blackadder",
+          "t": "Blackadder",
+          "n": "1983–2023",
+          "note": "28 entries",
+          "into": "blackadder"
+        },
+        {
+          "id": "sit-peep-show",
+          "t": "Peep Show",
+          "n": "2003–15",
+          "note": "54 episodes",
+          "into": "peep-show"
+        },
+        {
+          "id": "sit-the-thick-of-it",
+          "t": "The Thick of It",
+          "n": "2005–12",
+          "note": "23 episodes",
+          "into": "the-thick-of-it"
+        }
+      ]
+    },
+    {
+      "id": "network",
+      "title": "American network sitcoms",
+      "sub": "1972–2013 · the network half-hour at full length, NBC and CBS, none of these runs shorter than seven seasons. This is where most of the shelf sits.",
+      "items": [
+        {
+          "id": "sit-mash",
+          "t": "M*A*S*H",
+          "n": "1972–1983",
+          "note": "251 episodes",
+          "into": "mash"
+        },
+        {
+          "id": "sit-golden-girls",
+          "t": "The Golden Girls",
+          "n": "1985–1992",
+          "note": "169 episodes",
+          "into": "golden-girls"
+        },
+        {
+          "id": "sit-seinfeld",
+          "t": "Seinfeld",
+          "n": "1989–1998",
+          "note": "171 episodes",
+          "into": "seinfeld"
+        },
+        {
+          "id": "sit-frasier",
+          "t": "Frasier",
+          "n": "1993–2004",
+          "note": "256 episodes",
+          "into": "frasier"
+        },
+        {
+          "id": "sit-the-office",
+          "t": "The Office",
+          "n": "2005–2013",
+          "note": "186 episodes",
+          "into": "the-office"
+        }
+      ]
+    },
+    {
+      "id": "animated",
+      "title": "Animated sitcoms",
+      "sub": "1989– · the animated half-hour, Fox to Adult Swim. The only section still adding episodes.",
+      "items": [
+        {
+          "id": "sit-the-simpsons",
+          "t": "The Simpsons",
+          "n": "1989–99",
+          "note": "226 episodes",
+          "into": "the-simpsons"
+        },
+        {
+          "id": "sit-futurama",
+          "t": "Futurama",
+          "n": "1999–",
+          "note": "163 entries",
+          "into": "futurama"
+        },
+        {
+          "id": "sit-archer",
+          "t": "Archer",
+          "n": "2009–2023",
+          "note": "145 episodes",
+          "into": "archer"
+        },
+        {
+          "id": "sit-bobs-burgers",
+          "t": "Bob's Burgers",
+          "n": "2011–",
+          "note": "312 episodes",
+          "into": "bobs-burgers"
+        },
+        {
+          "id": "sit-rick-and-morty",
+          "t": "Rick and Morty",
+          "n": "2013–",
+          "note": "91 episodes",
+          "into": "rick-and-morty"
+        },
+        {
+          "id": "sit-president-curtis",
+          "t": "President Curtis",
+          "n": "2026",
+          "note": "10 episodes",
+          "into": "president-curtis"
+        }
+      ]
+    }
+  ]
+}
