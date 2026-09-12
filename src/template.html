@@ -4971,6 +4971,61 @@ async function acctCopy(text, note){
   await copyWithFallback(text, note, 'a-msg', 'a-clip');
 }
 
+// ⚠ THE FRIENDS PAGE CANNOT USE acctCopy. Its message element (#a-msg) and its
+// hand-copy field (#a-clip) both live inside #accountv, and showFriendsPage()
+// hides that view before drawing. So every copy button over there wrote its
+// confirmation, correctly, into something nobody could see — and on a browser
+// that refuses writeText the text landed in a field nobody could reach, which
+// is worse: no copy, no notice, and no way to do it by hand.
+//
+// Nathan: "no alert/notif that when I clicked the invite link it got added to
+// my pasteboard etc". Five buttons did this — Invite link, new link, the friend
+// code, Share link, and a club code.
+//
+// #fnote is the site's cross-view notice: fixed, role="status", present on
+// every view including this one, and already shared by friend notices and
+// arrival notices through _fnoteTok. A copy is a notification, not a caption
+// under a card, so it goes there.
+function copySay(text, bad){
+  const f = $('fnote');
+  if(!f){ flash(text); return; }
+  const tok = ++_fnoteTok;
+  f.textContent = text;
+  f.style.color = bad ? 'var(--ink)' : 'var(--done)';
+  f.classList.remove('hide');
+  setTimeout(()=>{ if(tok === _fnoteTok) f.classList.add('hide'); }, 9000);
+}
+// The hand-copy field is placed next to the button that was pressed, rather
+// than once at the top of a page whose cards are a screen apart — it is only
+// any use where it can actually be selected.
+function friendsClip(btn){
+  let f = $('fp-clip');
+  if(!f){
+    f = document.createElement('input');
+    f.type = 'text'; f.id = 'fp-clip'; f.readOnly = true; f.spellcheck = false;
+    f.setAttribute('aria-label', 'Copy this by hand');
+    f.style.cssText = 'width:100%;margin-top:8px';
+  }
+  const row = (btn && (btn.closest('.afrow') || btn.parentNode)) || null;
+  if(row && row.parentNode){ row.parentNode.insertBefore(f, row.nextSibling); return f; }
+  const host = $('friendsv');
+  if(!host) return null;
+  host.appendChild(f);
+  return f;
+}
+async function friendsCopy(text, note, btn){
+  try{
+    await navigator.clipboard.writeText(text);
+    copySay(note, false);
+  }catch(e){
+    const f = friendsClip(btn);
+    if(!f){ copySay('Could not copy. It is ' + text, true); return; }
+    f.value = text;
+    f.select();
+    copySay('Press Ctrl/Cmd+C to copy.', true);
+  }
+}
+
 function paintAcctIdentity(){
   const a = ACCT || user, nm = acctName();
   $('a-user').value = nm;
@@ -5156,7 +5211,8 @@ $('b-fadd').onclick = async ()=>{
   friendNotify(r, true);
   if(!r.err) $('a-fadd').value = '';
 };
-$('fp-copy').onclick = ()=> acctCopy($('fp-code').textContent, 'Friend code copied.');
+$('fp-copy').onclick = ()=> friendsCopy($('fp-code').textContent,
+                                          'Friend code copied.', $('fp-copy'));
 $('fp-gnew').onclick = async ()=>{
   const name = ($('fp-gname').value || '').trim();
   if(!name){ gnote('Give the group a name first.', true); return; }
@@ -5190,9 +5246,9 @@ $('fp-gjoinb').onclick = async ()=>{
   gnote('Joined ' + (data.name || 'the group') + '.', false);
   dropMyGroups(); renderMyGroups();
 };
-$('fp-share').onclick = ()=> acctCopy(
+$('fp-share').onclick = ()=> friendsCopy(
   'https://clubd.watch/?friend=' + friendParam($('fp-code').textContent),
-  'Share link copied.');
+  'Share link copied.', $('fp-share'));
 $('fp-add').onclick = async ()=>{
   const r = await addFriendFlow($('fp-fadd').value);
   friendNotify(r, false);
@@ -6200,7 +6256,8 @@ async function renderMyClubs(){
       + '</div>'), 'clubs', 'fp-clubs');
     pkAll(host);
     host.querySelectorAll('button[data-ccopy]').forEach(b=>{
-      b.onclick = ()=> acctCopy(b.dataset.ccopy, 'Club code copied — send it to whoever’s joining.');
+      b.onclick = ()=> friendsCopy(b.dataset.ccopy,
+        'Club code copied — send it to whoever’s joining.', b);
     });
     host.querySelectorAll('button[data-copen]').forEach(b=>{
       b.onclick = ()=> go(b.dataset.copen);
@@ -6365,8 +6422,8 @@ async function renderMyGroups(){
           gnote('Could not make a new link' + (error ? ': ' + error.message : '.'), true);
           return;
         }
-        acctCopy('https://clubd.watch/?g=' + encodeURIComponent(data),
-                 'New link copied. The old one is dead.');
+        friendsCopy('https://clubd.watch/?g=' + encodeURIComponent(data),
+                    'New link copied. The old one is dead.', b);
       };
     });
     host.querySelectorAll('button[data-ginv]').forEach(b=>{
@@ -6379,8 +6436,8 @@ async function renderMyGroups(){
           gnote('Could not fetch that link' + (error ? ': ' + error.message : '.'), true);
           return;
         }
-        acctCopy('https://clubd.watch/?g=' + encodeURIComponent(data),
-                 'Invite link copied \u2014 anyone with it can join this group.');
+        friendsCopy('https://clubd.watch/?g=' + encodeURIComponent(data),
+                    'Invite link copied \u2014 anyone with it can join this group.', b);
       };
     });
     host.querySelectorAll('button[data-fradd]').forEach(b=>{
@@ -12244,6 +12301,24 @@ function tourSteps(){
         + ' progress bar — it keeps your gaps, so the shape of it is the shape of'
         + ' what you have actually ' + (VERB.past || 'done') + '. Touch a mark to'
         + ' see which one it is.'},
+    // ⚠ Nathan: "you should show the line by line stuff too." The tour
+    // explained the bar above the rows and two controls AROUND a row, and never
+    // the row itself — so the one thing a reader touches on every single visit
+    // was the one thing the tour did not name. The row it lands on is armed, the
+    // way a tap arms it, so the thumbs and the door icon it talks about are on
+    // screen while it talks about them. The door sentence is composed from
+    // whether THIS list has doors, rather than describing an icon that is not
+    // on the page.
+    {el: ()=> armed(rowAt(0)),
+     t: 'Every line is one ' + UNIT.one,
+     b: 'The box on the left is all you have to touch — tick it and its mark'
+        + ' lands on the bar above. The two thumbs on the right are what you'
+        + ' thought of it, and pressing one on a line you have not ticked ticks'
+        + ' it as well.'
+        + (Object.keys(INTO).length
+            ? ' A line with a \u{1F50D} is a whole list of its own: open it, and'
+              + ' how far you get in there shows back here.'
+            : '')},
     // ⚠ Only where it is TRUE. Nathan: "maybe the tick travelling doesn't make
     // sense on tv shows? it does for movies, some comics (if there's crossover)".
     // He is right, and the site already knows the answer: SYNCM holds this
