@@ -2449,6 +2449,33 @@ function arrKind(k){
 }
 const ARRIVAL_TTL = 30 * 60 * 1000;
 const ARRSLOT = 'gw:arrival';
+// What THIS TAB caught, kept where a same-tab round trip survives (CLU-505).
+//
+// The shared slot answers one question — what invitation is pending on this
+// browser — and it cannot answer the other one: what invitation did this tab
+// set out to accept. On the OAuth path that is the question, because a redirect
+// is a page LOAD. The tab goes to the consent screen, comes back with ARRIVAL
+// and every other variable gone, reads the slot, and finds whatever is in it
+// NOW. If a second invitation took the slot while the tab was away, the tab has
+// no way to know its own link is gone: the slot it did not stamp looks exactly
+// like an innocent bystander's, so it offers the ask, and the yes sends a
+// request to whoever sent the OTHER link — someone the person at the keyboard
+// has never heard of. One slot cannot remember what it used to hold.
+//
+// So the memory goes in sessionStorage, the same scope ARRTAB lives in, and the
+// scoping is the point rather than a limitation:
+//
+//   * a SAME-TAB round trip (OAuth, a password sign-in, a magic link opened in
+//     this tab) keeps it, which is exactly the case that was broken;
+//   * a NEW TAB has none, which is right — a tab that never caught the link is
+//     a bystander, it cannot be told its link was replaced because it was never
+//     holding one, and showAsk() already asks it to answer for itself.
+//
+// Where sessionStorage is unusable this degrades to the behaviour above: ARRTAB
+// is already a fresh id per load there, so a same-tab return already looked
+// like another tab and already got the ask. One click, in the safe direction,
+// in a browser that has opted out of being remembered.
+const ARRCAUGHT = 'gw:arrcaught';
 // Durable storage is not a given: a private window, or a browser told to block
 // site data, throws on the first write. Probe once — where it fails the
 // arrival lives in this tab's memory only, which is exactly the behaviour
@@ -2506,7 +2533,29 @@ function arrWrite(o){
   try{ localStorage.setItem(ARRSLOT, JSON.stringify(o)); return true; }
   catch(e){ return false; }
 }
-function arrClear(){ try{ localStorage.removeItem(ARRSLOT); }catch(e){} }
+// Clearing the slot clears this tab's memory of what it caught along with it
+// (CLU-505). The memory exists only to tell "the invitation I was holding was
+// replaced" apart from "I am a bystander to someone else's", and once the slot
+// is gone this tab is holding neither. Folded in here rather than left to each
+// caller, because every path that drops the slot — a spend, a No, Cancel on the
+// splash, a sweep for age, a corrupt slot, a sign-out — owes the same tidy-up,
+// and a missed one is a tab that reports its own sent request as replaced.
+function arrClear(){
+  try{ localStorage.removeItem(ARRSLOT); }catch(e){}
+  arrCaughtClear();
+}
+// The per-tab memory, read defensively for the same reasons arrRaw is: a
+// hand-written or half-written record is swept rather than stepped over.
+function arrCaught(){
+  let s = null;
+  try{ s = sessionStorage.getItem(ARRCAUGHT); }catch(e){ return null; }
+  if(!s) return null;
+  let o = null;
+  try{ o = JSON.parse(s); }catch(e){ arrCaughtClear(); return null; }
+  if(!o || typeof o !== 'object' || !o.k || !o.v){ arrCaughtClear(); return null; }
+  return o;
+}
+function arrCaughtClear(){ try{ sessionStorage.removeItem(ARRCAUGHT); }catch(e){} }
 // The read IS the sweep. Anything past the TTL is dropped here and remembered
 // as stale so arrivalStale() can say so — the one thing the old code could not
 // do, because a slot that had gone missing was indistinguishable from never
@@ -2536,7 +2585,14 @@ function arrRead(){
 // person. `mem` says the slot is not really there — the write was refused — so
 // this tab is the only claimant there can be.
 function arrStash(kind, payload){
-  const stored = arrWrite({ k: kind, v: payload, at: Date.now(), tab: ARRTAB });
+  const at = Date.now();
+  const stored = arrWrite({ k: kind, v: payload, at, tab: ARRTAB });
+  // and this tab remembers, for itself, which invitation it is holding
+  // (CLU-505). Written even when the durable write was refused: `mem` already
+  // makes this tab the only claimant there can be, and the memory costs
+  // nothing there.
+  try{ sessionStorage.setItem(ARRCAUGHT, JSON.stringify({ k: kind, v: payload, at })); }
+  catch(e){}
   return { kind, payload, own: true, mem: !stored };
 }
 // Only the param just consumed comes out of the URL. The line this replaces
@@ -2576,7 +2632,46 @@ let ARRIVAL = (function(){
     // runs itself, which is the whole promise of an invite link. If it was
     // another tab, the person signing in here may not be the person who opened
     // the link at all, and settleArrival() asks before it writes anything.
+    //
+    // Read the tab's own memory FIRST: arrRead() sweeps, and a sweep calls
+    // arrClear(), which takes the memory with it.
+    const c = arrCaught();
     const e = arrRead();
+    // CLU-505. This is the only thing that can tell the two apart, and until it
+    // existed they arrived identically — as a slot this tab did not stamp:
+    //
+    //   a bystander       caught nothing, so `c` is null -> ask, as before
+    //   a superseded tab  caught something the slot no longer holds -> there is
+    //                     nothing here it may act on
+    //
+    // The superseded tab gets NO arrival. Not a hidden yes, an absent one: with
+    // ARRIVAL null there is no splash, settleArrival() returns at its first
+    // guard, showAsk() is never reached, ARRASK stays null, and a hand-fired
+    // acceptArrival() has nothing to spend. The stale state is unactionable by
+    // construction rather than by concealment.
+    //
+    // And the slot is deliberately NOT cleared. Whatever is in it belongs to
+    // whoever opened it, and destroying a second person's invitation while
+    // tidying up after the first is the harm CLU-386's review closed once
+    // already, from the other side.
+    if(c && !(e && e.k === c.k && e.v === c.v)){
+      arrCaughtClear();
+      const age = Date.now() - c.at;
+      if(typeof c.at !== 'number' || !isFinite(c.at)
+         || age > ARRIVAL_TTL || age < -ARRSKEW){
+        // dead by the clock whatever else happened: "expired" is the truer
+        // sentence, and it is the one arrRead() would have given had the slot
+        // still been the one this tab caught
+        ARRIVAL_STALE = ARRIVAL_STALE || c.k;
+      }else if(e){
+        // still in date, and something else is in the slot: replaced
+        ARRIVAL_TOOK = c.k;
+      }
+      // A slot that is simply GONE and in date stays silent, as it did before:
+      // another tab spent this very invitation, and the tab that sent the
+      // request is the tab that reports it.
+      return null;
+    }
     if(e) return { kind: e.k, payload: e.v, own: e.tab === ARRTAB };
   }catch(e){}
   return null;
@@ -4287,7 +4382,11 @@ async function onSession(session, definitive){
       showHome();
     }
     settleArrival();
-    if(definitive) arrivalStale();
+    // Both notices, and arrivalTaken() is here because of CLU-505: a supersede
+    // caught at BOOT has no spendArrival to report it — there is deliberately
+    // no arrival left to spend — so without this call the tab went quiet in
+    // exactly the case the card is about.
+    if(definitive){ arrivalStale(); arrivalTaken(); }
     setTimeout(backfillSync, 1200);
     return;
   }
@@ -4378,7 +4477,7 @@ async function onSession(session, definitive){
   // until some later bare-URL load, or the TTL, took it (CLU-436). #fnote and
   // #arrask are on this view as much as on the shelf.
   settleArrival();
-  if(definitive) arrivalStale();
+  if(definitive){ arrivalStale(); arrivalTaken(); }   // see the shelf branch
   // off the critical path: the first load fetches the index once, every
   // later load exits on the flag before any network
   setTimeout(backfillSync, 1200);
@@ -5808,6 +5907,10 @@ async function settleArrival(){
 async function spendArrival(arr){
   const a = arrKind(arr.kind);
   if(!a) return;
+  // This tab has committed to spending it, so it is no longer HOLDING an
+  // invitation (CLU-505). Win or lose the claim, a later boot must not find the
+  // memory still set and report a request this tab already sent as replaced.
+  arrCaughtClear();
   if(!await claimArrival(arr)){
     // A claim can fail three ways and two of them need saying. It timed out in
     // this tab's hands (arrivalStale), or a newer invitation took the slot
@@ -5905,6 +6008,14 @@ function arrivalStale(){
 // A newer invitation took the slot while this tab was holding the old one. The
 // splash had been promising to send a request, so silence here is the bug the
 // card was filed about wearing different clothes.
+//
+// Two moments reach this. A claim that finds another payload in the slot, which
+// is the sign-in that never left this page; and the BOOT itself, which is
+// CLU-505 — the OAuth return, where the tab learns from its own sessionStorage
+// that the invitation it went away holding is not the one that came back. That
+// second one has no arrival left to spend on purpose, so onSession calls this
+// directly. It says what is knowable and no more: that there is a newer link,
+// never whose, because a stranger's invitation is not this person's business.
 function arrivalTaken(){
   if(!ARRIVAL_TOOK) return;
   const a = arrKind(ARRIVAL_TOOK);
@@ -5948,6 +6059,7 @@ window.addEventListener('storage', e=>{
   const onScreen = (typeof arriving === 'function' && arriving()) || asking();
   ARRIVAL = null;
   ARRASK = null;
+  arrCaughtClear();      // the slot is off the machine; so is what we held (CLU-505)
   hideAsk();
   if(typeof arriving === 'function' && arriving()) leaveArrival();
   if(onScreen) arrSay('Another tab cleared that link. Open it again if you still need it.');
