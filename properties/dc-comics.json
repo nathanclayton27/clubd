@@ -1,0 +1,130 @@
+{
+  "slug": "dc-comics",
+  "title": "DC Comics",
+  "subtitle": "7 reading orders",
+  "kind": "comics",
+  "year": "1985–2021",
+  "popularity": 88,
+  "unit": {
+    "one": "reading order",
+    "many": "reading orders"
+  },
+  "verb": {
+    "base": "read",
+    "ing": "reading",
+    "past": "read"
+  },
+  "accent": "#0A50C8",
+  "accentDark": "#7AA9FF",
+  "blurb": "Seven DC reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+  "notes": [
+    [
+      "Every row is a door.",
+      "Hover a row and a loupe appears with a fraction beside it — how far into that reading order you already are. Opening it takes you to its own page, an ordinary list with its own strip, its own schedule and its own clubs. Nothing about it changes because it is reachable from here."
+    ],
+    [
+      "Ticking works in both directions.",
+      "Marking a row here ticks that whole order, and finishing that order marks the row here. Unticking a row only takes back the ticks this page put there — anything you had already marked yourself stays marked."
+    ],
+    [
+      "Every mark is the same width, and that is deliberate.",
+      "Comics publish no per-issue reading time, so there are no hours to size a mark with. Each door counts one, which makes this page read as a shelf of reading orders rather than as several hundred issues. The count sits on each row instead, where it is a fact rather than a guess at how long you will be."
+    ],
+    [
+      "The rows do not all count the same thing.",
+      "Five of these pages count issues, Batman counts collected stories because there is no single Batman run to read, and the Vertigo shelf counts the volumes those runs were collected in. That disagreement is real and it stays on each page, where each says which unit it uses and why. Here every door counts one, so nothing on this page has to reconcile them."
+    ],
+    [
+      "DC on screen is a different shelf.",
+      "The films and television are already covered by DC Anthology and DC Animation, which are release-order surveys of the screen rather than reading orders. This page is only the comics, and nothing here opens either of those."
+    ],
+    [
+      "Two comics lists on the site are deliberately absent.",
+      "Hellboy is Dark Horse and Spawn is Image. Both are on clubd and neither is DC, so neither belongs on a DC shelf however much it looks like one from the outside."
+    ],
+    [
+      "DC is bigger than this.",
+      "There is no Superman spine here, no Wonder Woman, no Flash, no Swamp Thing, no Starman, no Kingdom Come. Every row on this page is a list that already exists; the rest are written down as work still to do, and each will get a row here once it is built rather than a promise of one now."
+    ],
+    "Every row is read out of the list it opens. The title, the years and the count on each row are taken from that list's own file when the page is built, so nothing here can drift from the page behind it, and none of it was typed in. The sources are on those seven pages, each naming its own. What is a judgement, and mine, is which reading orders belong on a DC shelf and how they are grouped."
+  ],
+  "sections": [
+    {
+      "id": "route",
+      "title": "Where to start with Batman",
+      "sub": "There is no Batman run to read front to back — seventy years, three reboots, and two flagship titles running in parallel the whole time — so the way in is a curated route through the stories that get named, era by era, a collected story to a row.",
+      "items": [
+        {
+          "id": "dcc-batman",
+          "t": "Batman",
+          "n": "1986–2021",
+          "note": "35 stories",
+          "into": "batman"
+        }
+      ]
+    },
+    {
+      "id": "runs",
+      "title": "One author, one long run",
+      "sub": "A single writer's stretch on one book, from their first issue to their last, with what was collected alongside it. Both are post-Crisis continuity and both say so on their own page.",
+      "items": [
+        {
+          "id": "dcc-jla-morrison",
+          "t": "JLA",
+          "n": "1997–2000",
+          "note": "41 + 4 optional",
+          "into": "jla-morrison"
+        },
+        {
+          "id": "dcc-green-lantern",
+          "t": "Green Lantern",
+          "n": "2004–2011",
+          "note": "189 + 3 optional",
+          "into": "green-lantern"
+        }
+      ]
+    },
+    {
+      "id": "crossovers",
+      "title": "The line-wide crossovers",
+      "sub": "An event running through a dozen titles at once, with the tie-ins interleaved in order rather than assumed. This is the shape a reading order exists for.",
+      "items": [
+        {
+          "id": "dcc-crisis-on-infinite-earths",
+          "t": "Crisis on Infinite Earths",
+          "n": "1985–86",
+          "note": "106 issues",
+          "into": "crisis-on-infinite-earths"
+        },
+        {
+          "id": "dcc-death-of-superman",
+          "t": "The Death and Return of Superman",
+          "n": "1992–1993",
+          "note": "40 + 8 optional",
+          "into": "death-of-superman"
+        }
+      ]
+    },
+    {
+      "id": "imprint",
+      "title": "The creator-owned shelf",
+      "sub": "DC away from the superhero line: one series taken issue by issue, and three more tracked by the volumes they were collected in.",
+      "items": [
+        {
+          "id": "dcc-sandman",
+          "t": "The Sandman",
+          "n": "1988–2015",
+          "note": "88 issues",
+          "into": "sandman"
+        },
+        {
+          "id": "dcc-vertigo",
+          "t": "The Vertigo Shelf",
+          "n": "1995–2008",
+          "note": "29 volumes",
+          "into": "vertigo"
+        }
+      ]
+    }
+  ]
+}
