@@ -3198,7 +3198,16 @@ function groupNoun(){
   return v && v.indexOf(' ') < 0 ? cap(v) + ' with other people' : 'With other people';
 }
 const $ = id => document.getElementById(id);
-function esc(s){ return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+// ⚠ THE APOSTROPHE IS IN THIS LIST ON PURPOSE (CLU-39). It was not, and the
+// escaping was attribute-safe only by luck: every one of the ~90 attribute
+// interpolations in this file happens to use DOUBLE quotes, verified by scan.
+// The first person to write title='...' — a perfectly ordinary thing to write —
+// would have made every escaped display name, group name and club name
+// injectable at once, with nothing failing and no test going red.
+//
+// A safety property that holds because of a convention nobody wrote down is not
+// a safety property. One character, and the luck stops mattering.
+function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 // One sentence for one condition. There used to be three phrasings, two of
 // them opening with "Supabase" — a vendor the reader has no relationship with
 // and cannot act on — and the fourth, the auth failure most likely to read as
