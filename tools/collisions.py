@@ -51,11 +51,14 @@ GENERATED = {"index.json", "search.json"}
 # they no longer share a sync group and fails if they do.
 JUDGED = {
     "swamp thing season 1|1990|f": ("split", """
-        CLU-550. Two different series. dc-anthology carries the live-action USA
-        Network series (Wikidata Q2024136, 1990-07-27 to 1993-05-01, 72 episodes
-        over 3 seasons, 17.2h); dc-animation carries the animated one (Q3051963,
-        1990-10-31 to 1991-05-11, 5 episodes, 1.83h). All they share is the
-        character they are both based on, Swamp Thing (Q1427625)."""),
+        CLU-550. Two different series. dc-anthology carries season 1 of the
+        live-action USA Network series (Q114448629, part of Q2024136, which ran
+        1990-07-27 to 1993-05-01 for 72 episodes); dc-animation carries the
+        animated one (Q3051963, 1990-10-31 to 1991-05-11, 5 episodes). All they
+        share is the character they are both based on, Swamp Thing (Q1427625).
+        The ids did not part them -- build.py mints the title key alongside the
+        id key and unions the two -- so dc-animation's row also says
+        "(animated)" in its title, which is what actually parts them."""),
     "what if season 1|2021|f": ("same", """
         One work. The MCU animated anthology's first season, carried by both
         marvel-animation and mcu-anthology. The 3.18h/4.8h spread is two lists

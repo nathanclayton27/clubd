@@ -47,6 +47,39 @@ PRESENT = 2026
 # scratch/dc-anim/runtimes.py.
 SHOW_EPISODE_FIX = {"Static Shock": 52}
 
+# CLU-550. Two different DC series are called Swamp Thing and both begin in
+# 1990: this animated one, five episodes on Fox Kids, and the live-action USA
+# Network series on dc-anthology. clubd pairs ticks across lists on
+# title+year+medium, so to the site those two rows were ONE work — ticking the
+# live-action season marked this cartoon watched on a list the person had never
+# opened, and unticking either took the other with it.
+#
+# THE WORK ID DOES NOT PART THEM. build.py mints the title+year key alongside
+# the id key and unions any two keys one row carries, so giving each row its
+# own correct id left them meeting through the title they still share — and
+# named the merged group after the live-action series, which is worse than
+# where it started. What parts them is the title, so this row says which Swamp
+# Thing it is. Parenthetical disambiguation is how the rest of the catalogue
+# already tells two same-named works apart (1,448 rows do it, black-panther
+# most of all), and the row id is untouched: the id is where the ticks are.
+#
+# Keyed by (title, start year) like the anthology's tables, because DC reuses
+# titles — Super Friends is two different series, Aquaman and Krypto recur.
+SHOW_TITLE = {("Swamp Thing", 1990): "Swamp Thing (animated)"}
+
+# The work id for a season row. Q3051963 is the animated series itself, read
+# from Wikidata 2026-09-11: "1991 American animated television series",
+# P31 Q117467246, P580 1990-10-31 to P582 1991-05-11, P1113 five episodes,
+# P144 based on Swamp Thing the character (Q1427625) — which is all it shares
+# with the live-action Q2024136.
+#
+# It is the SERIES item on a row that says "season 1", and that is right here
+# rather than sloppy: the series ran one season of five episodes, so the row is
+# the whole series. Wikidata has no season item to prefer — nothing carries
+# P179 = Q3051963, unlike the live-action series, which has one per season and
+# whose rows use those.
+SHOW_Q = {("Swamp Thing", 1990, 1): "Q3051963"}
+
 ERAS = [
     ("superfriends", "The Super Friends era", "1966–1990",
      "Filmation's Superman through Hanna-Barbera's Super Friends: "
@@ -151,7 +184,9 @@ def main():
                 # DC reuses titles — Super Friends is two different series,
                 # Aquaman and Krypto recur — so the id keeps the first year
                 "id": "dca-t-%d-%s-s%d" % (year, slug(s["title"]), k),
-                "t": "%s season %d" % (s["title"], k),
+                "t": "%s season %d" % (
+                    SHOW_TITLE.get((s["title"], year), s["title"]), k),
+                "q": SHOW_Q.get((s["title"], year, k)),
                 "n": str(sy), "w": per, "note": " · ".join(bits),
                 "date": "%d-06-15" % sy, "year": sy, "kind": "show",
                 "sortkey": (s["title"], k),
@@ -176,7 +211,8 @@ def main():
                "sub": "%s · %s · %d hours" % (years, counts, round(hours)),
                "intro": intro,
                "items": [{k: v for k, v in e.items()
-                          if k in ("id", "t", "n", "w") or (k == "note" and v)}
+                          if k in ("id", "t", "n", "w")
+                          or (k in ("note", "q") and v)}
                          for e in got]}
         assert all(a["n"] <= b["n"] for a, b in zip(sec["items"], sec["items"][1:])), \
             "%s is out of year order" % title
@@ -193,6 +229,16 @@ def main():
 
     prop = {
         "slug": PROP_SLUG,
+        # CLU-508 declared this list a mega list, and build.py reads the flag
+        # off the property file (`p["_mega"] = bool(p.get("mega"))`) to put it
+        # in the home page's mega row instead of the card wall. The flag was
+        # committed straight onto properties/dc-animation.json and never added
+        # here, so every run of this script silently deleted it and dropped the
+        # list out of that row — the hand-edit-undone-by-rebuild trap, caught
+        # for the third time on CLU-550. Declared here so the generator
+        # reproduces its own file. (make_starwars.py carries the same note;
+        # marvel-animation and mcu-anthology are still exposed to it.)
+        "mega": True,
         "title": "DC Animation",
         "subtitle": "every animated DC film and series, in release order",
         "kind": "shows & films",

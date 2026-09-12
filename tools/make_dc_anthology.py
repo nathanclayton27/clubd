@@ -95,6 +95,36 @@ SHOW_RUN = {
 # the parser leaves its years blank. Wikidata has the premiere: 6 Oct 2019.
 SHOW_YEAR_FIX = {"Batwoman": (2019, "2019", "2022")}
 
+# A verified Wikidata work id for a season row, keyed by (title, start year,
+# season number) — same reason SHOW_RUN is keyed by title and year, and the
+# season number too because a series item would be wrong on every season but
+# one.
+#
+# This exists because of CLU-550. Two different DC series are called Swamp
+# Thing and both begin in 1990: this one, the live-action USA Network series,
+# and the five-episode animated series on dc-animation. The sync map pairs
+# rows across lists on title+year+medium, so those two rows were ONE work to
+# the site — ticking the live-action season marked the cartoon watched on a
+# list the person had never opened, and unticking either took the other with
+# it.
+#
+# The id does NOT fix that on its own, and it is important not to believe it
+# does: build.py mints the title+year key ALONGSIDE the id key and merges any
+# two keys a single row carries, so the two rows still met through the title
+# they share. Parting them took the title, and dc-animation's row carries the
+# disambiguation. The ids are here because they are the right identity for
+# these rows regardless, and because they are what pairs the seasons correctly
+# the day another list carries this series.
+#
+# Read from Wikidata 2026-09-11: each is P31 Q3464665 (television series
+# season), P179 Q2024136 (the 1990 series) with the P1545 ordinal below, and
+# their P1113 episode counts of 22, 11 and 39 add to the 72 the series claims.
+SHOW_Q = {
+    ("Swamp Thing", 1990, 1): "Q114448629",
+    ("Swamp Thing", 1990, 2): "Q114448710",
+    ("Swamp Thing", 1990, 3): "Q114447920",
+}
+
 ERAS = [
     ("early", "Before Burton", "1951–1988",
      "Serial-era Superman, the 1966 Batman, and the Donner films that showed a "
@@ -187,6 +217,7 @@ def main():
                 # needs the first year to stay unique
                 "id": "dc-t-%d-%s-s%d" % (year, slug(s["title"]), k),
                 "t": "%s season %d" % (s["title"], k),
+                "q": SHOW_Q.get((s["title"], year, k)),
                 "n": str(sy), "w": per, "note": " · ".join(bits),
                 "date": "%d-06-15" % sy, "year": sy, "kind": "show",
                 "sortkey": (s["title"], k),
@@ -211,7 +242,8 @@ def main():
                          "" if ns == 1 else "s", round(hours)),
                "intro": intro,
                "items": [{k: v for k, v in e.items()
-                          if k in ("id", "t", "n", "w") or (k == "note" and v)}
+                          if k in ("id", "t", "n", "w")
+                          or (k in ("note", "q") and v)}
                          for e in got]}
         assert all(a["n"] <= b["n"] for a, b in zip(sec["items"], sec["items"][1:])),             "%s is out of year order" % title
         if key == "early":
@@ -225,6 +257,16 @@ def main():
 
     prop = {
         "slug": SLUG,
+        # CLU-508 declared this list a mega list, and build.py reads the flag
+        # off the property file (`p["_mega"] = bool(p.get("mega"))`) to put it
+        # in the home page's mega row instead of the card wall. The flag was
+        # committed straight onto properties/dc-anthology.json and never added
+        # here, so every run of this script silently deleted it and dropped the
+        # list out of that row — the hand-edit-undone-by-rebuild trap, caught
+        # for the third time on CLU-550. Declared here so the generator
+        # reproduces its own file. (make_starwars.py carries the same note;
+        # marvel-animation and mcu-anthology are still exposed to it.)
+        "mega": True,
         "title": "DC Anthology",
         "subtitle": "every live-action DC film and series, in release order",
         "kind": "films & shows",
