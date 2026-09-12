@@ -6,6 +6,9 @@
     ],
     "title": "Everything Dies: Secret Wars",
     "subtitle": "Jonathan Hickman's Marvel run",
+    "aliases": [
+      "hickman"
+    ],
     "kind": "comics",
     "year": "2009–2015",
     "popularity": 44,
@@ -27,6 +30,9 @@
     ],
     "title": "Fullmetal Alchemist: Brotherhood",
     "subtitle": "",
+    "aliases": [
+      "fmab"
+    ],
     "kind": "anime",
     "year": "2009–2010",
     "popularity": 83,
@@ -49,6 +55,9 @@
     ],
     "title": "Star Wars",
     "subtitle": "every film and television season, in release order",
+    "aliases": [
+      "starwars"
+    ],
     "kind": "films & shows",
     "year": "1977–",
     "popularity": 97,
@@ -94,6 +103,9 @@
     ],
     "title": "MCU Anthology",
     "subtitle": "every Marvel film in release order, MCU or not",
+    "aliases": [
+      "marvel cinematic universe"
+    ],
     "kind": "films & shows",
     "year": "1998–2026",
     "popularity": 95,
@@ -184,6 +196,11 @@
     ],
     "title": "Star Trek",
     "subtitle": "every episode and all thirteen films, in production order",
+    "aliases": [
+      "ds9",
+      "tng",
+      "tos"
+    ],
     "kind": "tv & films",
     "year": "1966–2026",
     "popularity": 92,
@@ -204,6 +221,9 @@
     ],
     "title": "The Legend of Zelda",
     "subtitle": "mainline in release order, remakes and spin-offs marked",
+    "aliases": [
+      "loz"
+    ],
     "kind": "games",
     "year": "1986–",
     "popularity": 92,
@@ -269,6 +289,9 @@
     ],
     "title": "Naruto",
     "subtitle": "The original series and Shippuden",
+    "aliases": [
+      "shippuden"
+    ],
     "kind": "anime",
     "year": "2002–2017",
     "popularity": 90,
@@ -333,6 +356,12 @@
     ],
     "title": "Dragon Ball (anime)",
     "subtitle": "",
+    "aliases": [
+      "dbz",
+      "dragon ball anime",
+      "dragon ball z",
+      "dragonball"
+    ],
     "kind": "anime",
     "year": "1986–2025",
     "popularity": 89,
@@ -376,6 +405,9 @@
     ],
     "title": "James Bond",
     "subtitle": "every Bond film in release order, in sections per actor",
+    "aliases": [
+      "007"
+    ],
     "kind": "films",
     "year": "1962–2021",
     "popularity": 88,
@@ -398,6 +430,9 @@
     ],
     "title": "Pokémon",
     "subtitle": "the mainline generations in release order, remakes marked",
+    "aliases": [
+      "pokemon"
+    ],
     "kind": "games",
     "year": "1996–",
     "popularity": 88,
@@ -419,6 +454,11 @@
     ],
     "title": "Amazing Spider-Man",
     "subtitle": "Amazing Fantasy #15 to Civil War",
+    "aliases": [
+      "amazing spiderman",
+      "asm",
+      "spiderman"
+    ],
     "kind": "comics",
     "year": "1962–2006",
     "popularity": 87,
@@ -440,6 +480,10 @@
     ],
     "title": "Best Picture",
     "subtitle": "every nominee, winners marked",
+    "aliases": [
+      "academy awards",
+      "oscars"
+    ],
     "kind": "films",
     "year": "1927–2025",
     "popularity": 86,
@@ -462,6 +506,9 @@
     ],
     "title": "Grand Theft Auto",
     "subtitle": "every released game in order, expansions and handhelds marked",
+    "aliases": [
+      "gta"
+    ],
     "kind": "games",
     "year": "1997–2026",
     "popularity": 86,
@@ -483,6 +530,9 @@
     ],
     "title": "X-Men",
     "subtitle": "the comprehensive reading list — both flagships, complete",
+    "aliases": [
+      "xmen"
+    ],
     "kind": "comics",
     "year": "1963–",
     "popularity": 86,
@@ -504,6 +554,11 @@
     ],
     "title": "Avatar: The Last Airbender",
     "subtitle": "with The Legend of Korra",
+    "aliases": [
+      "atla",
+      "avatar the last airbender",
+      "korra"
+    ],
     "kind": "animated series",
     "year": "2005–2014",
     "popularity": 85,
@@ -545,6 +600,12 @@
     ],
     "title": "Middle-earth",
     "subtitle": "Tolkien's books and the films made from them",
+    "aliases": [
+      "lord of the rings",
+      "lotr",
+      "middle earth",
+      "the hobbit"
+    ],
     "kind": "books & films",
     "year": "1937–2014",
     "popularity": 85,
@@ -565,6 +626,9 @@
     ],
     "title": "Street Fighter",
     "subtitle": "the games and the films, in the order they arrived",
+    "aliases": [
+      "streetfighter"
+    ],
     "kind": "films & games",
     "year": "1987–2026",
     "popularity": 85,
@@ -584,6 +648,9 @@
     ],
     "title": "The Office",
     "subtitle": "the American series — nine seasons, 2005–2013",
+    "aliases": [
+      "the office us"
+    ],
     "kind": "tv",
     "year": "2005–2013",
     "popularity": 85,
@@ -604,6 +671,11 @@
     ],
     "title": "Attack on Titan",
     "subtitle": "the complete broadcast run",
+    "aliases": [
+      "aot",
+      "shingeki no kyojin",
+      "snk"
+    ],
     "kind": "anime",
     "year": "2013–2023",
     "popularity": 84,
@@ -625,6 +697,9 @@
     ],
     "title": "Breaking Bad",
     "subtitle": "the whole universe in release order — with El Camino and Better Call Saul",
+    "aliases": [
+      "bcs"
+    ],
     "kind": "tv & film",
     "year": "2008–2022",
     "popularity": 84,
@@ -729,6 +804,9 @@
     ],
     "title": "DC Anthology",
     "subtitle": "every live-action DC film and series, in release order",
+    "aliases": [
+      "dceu"
+    ],
     "kind": "films & shows",
     "year": "1951–",
     "popularity": 82,
@@ -896,6 +974,9 @@
     ],
     "title": "Godzilla",
     "subtitle": "every film era by era, Godzilla Fest shorts included",
+    "aliases": [
+      "gojira"
+    ],
     "kind": "films",
     "year": "1954–",
     "popularity": 80,
@@ -917,6 +998,9 @@
     ],
     "title": "One Piece (manga)",
     "subtitle": "Eiichiro Oda",
+    "aliases": [
+      "one piece manga"
+    ],
     "kind": "manga",
     "year": "1997–",
     "popularity": 80,
@@ -937,6 +1021,9 @@
     ],
     "title": "Resident Evil",
     "subtitle": "mainline in release order, Code: Veronica and the remakes included",
+    "aliases": [
+      "biohazard"
+    ],
     "kind": "games",
     "year": "1996–",
     "popularity": 80,
@@ -1040,6 +1127,10 @@
     ],
     "title": "Studio Ghibli",
     "subtitle": "every Ghibli film in release order, built around Miyazaki's",
+    "aliases": [
+      "hayao miyazaki",
+      "miyazaki"
+    ],
     "kind": "films",
     "year": "1979–",
     "popularity": 79,
@@ -1082,6 +1173,10 @@
     ],
     "title": "Dragon Ball (manga)",
     "subtitle": "Akira Toriyama",
+    "aliases": [
+      "dragon ball manga",
+      "dragonball"
+    ],
     "kind": "manga",
     "year": "1984–",
     "popularity": 78,
@@ -1123,6 +1218,9 @@
     ],
     "title": "Naruto (manga)",
     "subtitle": "Masashi Kishimoto",
+    "aliases": [
+      "naruto manga"
+    ],
     "kind": "manga",
     "year": "1999–2014",
     "popularity": 78,
@@ -1186,6 +1284,9 @@
     ],
     "title": "Doctor Who",
     "subtitle": "every televised story, 1963–2025",
+    "aliases": [
+      "dr who"
+    ],
     "kind": "tv",
     "year": "1963–2025",
     "popularity": 77,
@@ -1226,6 +1327,10 @@
     ],
     "title": "The Elder Scrolls",
     "subtitle": "Arena to Skyrim in release order, expansions included",
+    "aliases": [
+      "skyrim",
+      "tes"
+    ],
     "kind": "games",
     "year": "1994–",
     "popularity": 77,
@@ -1247,6 +1352,12 @@
     ],
     "title": "Alien & Predator",
     "subtitle": "both franchises in one release-order run",
+    "aliases": [
+      "alien and predator",
+      "alien predator",
+      "aliens",
+      "avp"
+    ],
     "kind": "films",
     "year": "1979–",
     "popularity": 76,
@@ -1331,6 +1442,9 @@
     ],
     "title": "Evangelion",
     "subtitle": "series, endings and Rebuild",
+    "aliases": [
+      "neon genesis evangelion"
+    ],
     "kind": "anime",
     "year": "1995–2021",
     "popularity": 75,
@@ -1415,6 +1529,9 @@
     ],
     "title": "Bleach (manga)",
     "subtitle": "Tite Kubo",
+    "aliases": [
+      "bleach manga"
+    ],
     "kind": "manga",
     "year": "2001–2016",
     "popularity": 74,
@@ -1436,6 +1553,9 @@
     ],
     "title": "Demon Slayer: Kimetsu no Yaiba",
     "subtitle": "every episode and the films, each story once",
+    "aliases": [
+      "kny"
+    ],
     "kind": "tv & films",
     "year": "2019–",
     "popularity": 74,
@@ -1456,6 +1576,10 @@
     ],
     "title": "Metal Gear",
     "subtitle": "the whole saga in release order, sides and remakes included",
+    "aliases": [
+      "metal gear solid",
+      "mgs"
+    ],
     "kind": "games",
     "year": "1987–",
     "popularity": 74,
@@ -1517,6 +1641,9 @@
     ],
     "title": "Wolverine",
     "subtitle": "the solo spine · a character reading list",
+    "aliases": [
+      "logan"
+    ],
     "kind": "comics",
     "year": "1974–2026",
     "popularity": 74,
@@ -1580,6 +1707,9 @@
     ],
     "title": "Fullmetal Alchemist (2003)",
     "subtitle": "the first anime adaptation, and the film that ends it",
+    "aliases": [
+      "fma"
+    ],
     "kind": "anime & film",
     "year": "2003–2005",
     "popularity": 73,
@@ -1601,6 +1731,9 @@
     ],
     "title": "The X-Files",
     "subtitle": "every episode, with the films where they belong",
+    "aliases": [
+      "xfiles"
+    ],
     "kind": "tv & films",
     "year": "1993–2018",
     "popularity": 73,
@@ -1642,6 +1775,9 @@
     ],
     "title": "Chainsaw Man",
     "subtitle": "the twelve episodes, and the film that follows them",
+    "aliases": [
+      "chainsawman"
+    ],
     "kind": "tv & film",
     "year": "2022–",
     "popularity": 72,
@@ -1683,6 +1819,11 @@
     ],
     "title": "FromSoftware",
     "subtitle": "the Souls line and its adjacents, in release order",
+    "aliases": [
+      "dark souls",
+      "from software",
+      "soulsborne"
+    ],
     "kind": "games",
     "year": "2009–",
     "popularity": 72,
@@ -1704,6 +1845,10 @@
     ],
     "title": "Fullmetal Alchemist (manga)",
     "subtitle": "Hiromu Arakawa",
+    "aliases": [
+      "fma",
+      "fullmetal alchemist manga"
+    ],
     "kind": "manga",
     "year": "2001–2010",
     "popularity": 72,
@@ -1724,6 +1869,10 @@
     ],
     "title": "Hunter × Hunter",
     "subtitle": "the 2011 series",
+    "aliases": [
+      "hunter x hunter",
+      "hxh"
+    ],
     "kind": "anime",
     "year": "2011–2014",
     "popularity": 72,
@@ -1826,6 +1975,9 @@
     ],
     "title": "Half-Life & Portal",
     "subtitle": "Valve's story canon in release order",
+    "aliases": [
+      "half life"
+    ],
     "kind": "games",
     "year": "1998–",
     "popularity": 71,
@@ -1868,6 +2020,10 @@
     ],
     "title": "JoJo's Bizarre Adventure",
     "subtitle": "every episode of the David Production anime",
+    "aliases": [
+      "jjba",
+      "jojos bizarre adventure"
+    ],
     "kind": "anime",
     "year": "2012–2022",
     "popularity": 71,
@@ -1950,6 +2106,9 @@
     ],
     "title": "Black Panther",
     "subtitle": "The mantle in main Marvel continuity — T'Challa, and Shuri while she wore it",
+    "aliases": [
+      "tchalla"
+    ],
     "kind": "comics",
     "year": "1968–2024",
     "popularity": 70,
@@ -1971,6 +2130,9 @@
     ],
     "title": "Bob's Burgers",
     "subtitle": "every episode, in broadcast order",
+    "aliases": [
+      "bobs burgers"
+    ],
     "kind": "tv",
     "year": "2011–",
     "popularity": 70,
@@ -2032,6 +2194,11 @@
     ],
     "title": "JoJo's Bizarre Adventure (manga)",
     "subtitle": "Hirohiko Araki",
+    "aliases": [
+      "jjba",
+      "jojo manga",
+      "jojos bizarre adventure"
+    ],
     "kind": "manga",
     "year": "1987–",
     "popularity": 70,
@@ -2073,6 +2240,9 @@
     ],
     "title": "Mission: Impossible",
     "subtitle": "the released films, in release order",
+    "aliases": [
+      "mission impossible"
+    ],
     "kind": "films",
     "year": "1996–2025",
     "popularity": 70,
@@ -2095,6 +2265,9 @@
     ],
     "title": "Rurouni Kenshin",
     "subtitle": "the 1996 anime, the film, and the OVAs",
+    "aliases": [
+      "samurai x"
+    ],
     "kind": "anime & film",
     "year": "1996–2002",
     "popularity": 70,
@@ -2116,6 +2289,10 @@
     ],
     "title": "Steins;Gate",
     "subtitle": "the 2011 series, the film, and Steins;Gate 0",
+    "aliases": [
+      "steins gate",
+      "steinsgate"
+    ],
     "kind": "anime & films",
     "year": "2011–2018",
     "popularity": 70,
@@ -2178,6 +2355,10 @@
     ],
     "title": "Gurren Lagann",
     "subtitle": "the whole 2007 run — and neither film",
+    "aliases": [
+      "tengen toppa gurren lagann",
+      "ttgl"
+    ],
     "kind": "anime",
     "year": "2007",
     "popularity": 69,
@@ -2240,6 +2421,11 @@
     ],
     "title": "Buffy & Angel",
     "subtitle": "two shows woven into one broadcast order",
+    "aliases": [
+      "btvs",
+      "buffy and angel",
+      "buffy the vampire slayer"
+    ],
     "kind": "tv",
     "year": "1997–2004",
     "popularity": 68,
@@ -2302,6 +2488,9 @@
     ],
     "title": "Fantastic Four",
     "subtitle": "Marvel's main continuity, #1 to #569 — the team, not the four people",
+    "aliases": [
+      "fantastic 4"
+    ],
     "kind": "comics",
     "year": "1961–2009",
     "popularity": 68,
@@ -2344,6 +2533,9 @@
     ],
     "title": "Gears of War",
     "subtitle": "the campaigns in release order, spin-offs marked",
+    "aliases": [
+      "gow"
+    ],
     "kind": "games",
     "year": "2006–",
     "popularity": 68,
@@ -2365,6 +2557,9 @@
     ],
     "title": "Kingdom Hearts",
     "subtitle": "every game, in release order",
+    "aliases": [
+      "kh"
+    ],
     "kind": "games",
     "year": "2002–2027",
     "popularity": 68,
@@ -2450,6 +2645,10 @@
     ],
     "title": "Yu Yu Hakusho",
     "subtitle": "every episode, with both films where they opened",
+    "aliases": [
+      "yuyu hakusho",
+      "yyh"
+    ],
     "kind": "tv & films",
     "year": "1992–2018",
     "popularity": 68,
@@ -2490,6 +2689,9 @@
     ],
     "title": "Jean-Claude Van Damme",
     "subtitle": "the films in release order, and how each one came out",
+    "aliases": [
+      "jcvd"
+    ],
     "kind": "films",
     "year": "1979–2025",
     "popularity": 67,
@@ -2572,6 +2774,9 @@
     ],
     "title": "The Coen Brothers",
     "subtitle": "eighteen together, four apart",
+    "aliases": [
+      "coens"
+    ],
     "kind": "films",
     "year": "1984–2025",
     "popularity": 67,
@@ -2616,6 +2821,9 @@
     ],
     "title": "Berserk",
     "subtitle": "Kentaro Miura · the manga, by volume",
+    "aliases": [
+      "berserk manga"
+    ],
     "kind": "manga",
     "year": "1989–",
     "popularity": 66,
@@ -2656,6 +2864,9 @@
     ],
     "title": "Paul Thomas Anderson",
     "subtitle": "the directed features",
+    "aliases": [
+      "pta"
+    ],
     "kind": "films",
     "year": "1996–2025",
     "popularity": 66,
@@ -2720,6 +2931,9 @@
     ],
     "title": "Gundam",
     "subtitle": "the Universal Century and every alternate universe",
+    "aliases": [
+      "mobile suit gundam"
+    ],
     "kind": "anime & manga",
     "year": "1979–",
     "popularity": 65,
@@ -2761,6 +2975,9 @@
     ],
     "title": "Nicolas Cage",
     "subtitle": "the film roles, in release order",
+    "aliases": [
+      "nic cage"
+    ],
     "kind": "films",
     "year": "1982–2025",
     "popularity": 65,
@@ -2884,6 +3101,10 @@
     ],
     "title": "Ghost in the Shell",
     "subtitle": "everything animated, by continuity",
+    "aliases": [
+      "gits",
+      "stand alone complex"
+    ],
     "kind": "anime",
     "year": "1995–2022",
     "popularity": 64,
@@ -2905,6 +3126,9 @@
     ],
     "title": "M*A*S*H",
     "subtitle": "all 256 episodes, eleven seasons",
+    "aliases": [
+      "mash"
+    ],
     "kind": "tv",
     "year": "1972–1983",
     "popularity": 64,
@@ -2925,6 +3149,9 @@
     ],
     "title": "Star Wars Games",
     "subtitle": "the whole catalogue, in release order",
+    "aliases": [
+      "starwars"
+    ],
     "kind": "games",
     "year": "1992–",
     "popularity": 64,
@@ -2987,6 +3214,10 @@
     ],
     "title": "Mega Man",
     "subtitle": "the whole franchise, by sub-series, in release order",
+    "aliases": [
+      "megaman",
+      "rockman"
+    ],
     "kind": "games",
     "year": "1987–2023",
     "popularity": 63,
@@ -3049,6 +3280,9 @@
     ],
     "title": "The Death and Return of Superman",
     "subtitle": "the 1992–93 crossover · post-Crisis",
+    "aliases": [
+      "death of superman"
+    ],
     "kind": "comics",
     "year": "1992–1993",
     "popularity": 63,
@@ -3112,6 +3346,9 @@
     ],
     "title": "Battlestar Galactica",
     "subtitle": "the 2004 series, in broadcast order",
+    "aliases": [
+      "bsg"
+    ],
     "kind": "tv & film",
     "year": "2003–2009",
     "popularity": 62,
@@ -3155,6 +3392,10 @@
     ],
     "title": "Child's Play",
     "subtitle": "eight films in two lines, and the series that continues the first",
+    "aliases": [
+      "childs play",
+      "chucky"
+    ],
     "kind": "films & tv",
     "year": "1988–2024",
     "popularity": 62,
@@ -3176,6 +3417,9 @@
     ],
     "title": "DC Animation",
     "subtitle": "every animated DC film and series, in release order",
+    "aliases": [
+      "dcau"
+    ],
     "kind": "shows & films",
     "year": "1966–",
     "popularity": 62,
@@ -3240,6 +3484,10 @@
     ],
     "title": "FLCL",
     "subtitle": "all five series, in release order",
+    "aliases": [
+      "fooly cooly",
+      "furi kuri"
+    ],
     "kind": "anime",
     "year": "2000–2023",
     "popularity": 62,
@@ -3429,6 +3677,9 @@
     ],
     "title": "The Vampire Diaries",
     "subtitle": "eight seasons on The CW",
+    "aliases": [
+      "tvd"
+    ],
     "kind": "tv",
     "year": "2009–2017",
     "popularity": 61,
@@ -3450,6 +3701,9 @@
     ],
     "title": "Babylon 5",
     "subtitle": "every episode, with the films where they aired",
+    "aliases": [
+      "b5"
+    ],
     "kind": "tv & films",
     "year": "1993–2023",
     "popularity": 60,
@@ -3470,6 +3724,9 @@
     ],
     "title": "Cyberpunk: Edgerunners",
     "subtitle": "",
+    "aliases": [
+      "cyberpunk edgerunners"
+    ],
     "kind": "anime",
     "year": "2022",
     "popularity": 60,
@@ -3556,6 +3813,9 @@
     ],
     "title": "Slashers",
     "subtitle": "Halloween, Friday the 13th and Elm Street, in release order",
+    "aliases": [
+      "nightmare on elm street"
+    ],
     "kind": "films",
     "year": "1978–2022",
     "popularity": 60,
@@ -3577,6 +3837,9 @@
     ],
     "title": "The FPS Canon",
     "subtitle": "the genre-defining shooters, in release order",
+    "aliases": [
+      "first person shooters"
+    ],
     "kind": "games",
     "year": "1992–2020",
     "popularity": 60,
@@ -3618,6 +3881,9 @@
     ],
     "title": "Yakuza / Like a Dragon",
     "subtitle": "the mainline saga in release order, Judgment and the samurai games included",
+    "aliases": [
+      "ryu ga gotoku"
+    ],
     "kind": "games",
     "year": "2005–",
     "popularity": 60,
@@ -3683,6 +3949,9 @@
     ],
     "title": "The Wheel of Time",
     "subtitle": "Robert Jordan — 15 books, prequel included",
+    "aliases": [
+      "wot"
+    ],
     "kind": "books",
     "year": "1990–2013",
     "popularity": 59,
@@ -3870,6 +4139,9 @@
     ],
     "title": "Hellboy",
     "subtitle": "the Mignolaverse in collected volumes",
+    "aliases": [
+      "bprd"
+    ],
     "kind": "comics",
     "year": "1994–2019",
     "popularity": 57,
@@ -3912,6 +4184,10 @@
     ],
     "title": "Dragon Quest",
     "subtitle": "the mainline eleven in release order",
+    "aliases": [
+      "dq",
+      "dragon warrior"
+    ],
     "kind": "games",
     "year": "1986–",
     "popularity": 56,
@@ -3953,6 +4229,9 @@
     ],
     "title": "Friday Night Lights",
     "subtitle": "Dillon, Texas",
+    "aliases": [
+      "fnl"
+    ],
     "kind": "tv",
     "year": "2006–2011",
     "popularity": 56,
@@ -4038,6 +4317,10 @@
     ],
     "title": "Cosmere",
     "subtitle": "Brandon Sanderson's connected universe",
+    "aliases": [
+      "mistborn",
+      "stormlight archive"
+    ],
     "kind": "books",
     "year": "2005–",
     "popularity": 55,
@@ -4058,6 +4341,9 @@
     ],
     "title": "Crisis on Infinite Earths",
     "subtitle": "the 1985 maxiseries and its crossover — the end of pre-Crisis DC",
+    "aliases": [
+      "coie"
+    ],
     "kind": "comics",
     "year": "1985–86",
     "popularity": 55,
@@ -4142,6 +4428,11 @@
     ],
     "title": "Dungeons & Dragons novels",
     "subtitle": "Dragonlance and the Legend of Drizzt",
+    "aliases": [
+      "d&d",
+      "dnd",
+      "dungeons and dragons"
+    ],
     "kind": "books",
     "year": "1984–2023",
     "popularity": 54,
@@ -4162,6 +4453,10 @@
     ],
     "title": "Martial Arts",
     "subtitle": "the classics of Chinese kung fu and wuxia cinema",
+    "aliases": [
+      "kung fu",
+      "wuxia"
+    ],
     "kind": "films",
     "year": "1960–2024",
     "popularity": 54,
@@ -4184,6 +4479,10 @@
     ],
     "title": "Palme d'Or",
     "subtitle": "every top prize at Cannes, 1946 on",
+    "aliases": [
+      "cannes",
+      "palme dor"
+    ],
     "kind": "films",
     "year": "1946–2026",
     "popularity": 54,
@@ -4310,6 +4609,9 @@
     ],
     "title": "Zombie Films",
     "subtitle": "the walking dead on film, era by era",
+    "aliases": [
+      "zombies"
+    ],
     "kind": "films",
     "year": "1919–",
     "popularity": 52,
@@ -4331,6 +4633,10 @@
     ],
     "title": "Ace Attorney",
     "subtitle": "mainline, Investigations, and the Great duology",
+    "aliases": [
+      "gyakuten saiban",
+      "phoenix wright"
+    ],
     "kind": "games",
     "year": "2001–",
     "popularity": 51,
@@ -4394,6 +4700,9 @@
     ],
     "title": "Sight & Sound 100",
     "subtitle": "the 2022 critics' poll, as ranked",
+    "aliases": [
+      "sight and sound"
+    ],
     "kind": "films",
     "year": "1924–2019",
     "popularity": 50,
@@ -4416,6 +4725,10 @@
     ],
     "title": "The Culture series",
     "subtitle": "Iain M. Banks — nine novels and one collection",
+    "aliases": [
+      "iain banks",
+      "iain m banks"
+    ],
     "kind": "books",
     "year": "1987–2012",
     "popularity": 49,
@@ -4479,6 +4792,10 @@
     ],
     "title": "Nasuverse",
     "subtitle": "Type-Moon's shared universe, by media type",
+    "aliases": [
+      "fate stay night",
+      "type moon"
+    ],
     "kind": "mixed",
     "year": "1998–",
     "popularity": 47,
@@ -4498,6 +4815,9 @@
     ],
     "title": "Mystery Science Theater 3000",
     "subtitle": "every experiment, KTMA to the Gizmoplex",
+    "aliases": [
+      "mst3k"
+    ],
     "kind": "tv",
     "year": "1988–2022",
     "popularity": 46,
@@ -4519,6 +4839,9 @@
     ],
     "title": "Suda51",
     "subtitle": "the games of Goichi Suda, with the credit on each row",
+    "aliases": [
+      "suda 51"
+    ],
     "kind": "games",
     "year": "1993–2026",
     "popularity": 46,
@@ -4561,6 +4884,9 @@
     ],
     "title": "JLA",
     "subtitle": "Grant Morrison's run · post-Crisis DC",
+    "aliases": [
+      "justice league of america"
+    ],
     "kind": "comics",
     "year": "1997–2000",
     "popularity": 45,
@@ -4603,6 +4929,11 @@
     ],
     "title": "Nathan Fielder",
     "subtitle": "everything he created, in order",
+    "aliases": [
+      "nathan for you",
+      "the curse",
+      "the rehearsal"
+    ],
     "kind": "tv",
     "year": "2013–2025",
     "popularity": 44,
@@ -4666,6 +4997,9 @@
     ],
     "title": "James Bond Games",
     "subtitle": "the licensed games, GoldenEye 007 onward",
+    "aliases": [
+      "007"
+    ],
     "kind": "games",
     "year": "1997–2026",
     "popularity": 40,
@@ -4707,6 +5041,9 @@
     ],
     "title": "Spider-Man After Civil War",
     "subtitle": "Back in Black to now",
+    "aliases": [
+      "spiderman"
+    ],
     "kind": "comics",
     "year": "2007–",
     "popularity": 37,
@@ -4729,6 +5066,9 @@
     ],
     "title": "Time Loops",
     "subtitle": "the same day, again — films, episodes, whole shows",
+    "aliases": [
+      "groundhog day"
+    ],
     "kind": "films & episodes",
     "year": "1963–",
     "popularity": 36,
@@ -4750,6 +5090,9 @@
     ],
     "title": "Best Director's Cuts",
     "subtitle": "the version that is the film, and the receipts",
+    "aliases": [
+      "directors cuts"
+    ],
     "kind": "films",
     "year": "1958–2017",
     "popularity": 35,
@@ -4772,6 +5115,9 @@
     ],
     "title": "Body Swap",
     "subtitle": "who's in whose body, by decade",
+    "aliases": [
+      "bodyswap"
+    ],
     "kind": "films",
     "year": "1936–2026",
     "popularity": 34,
@@ -4834,6 +5180,9 @@
     ],
     "title": "Worst Director's Cuts",
     "subtitle": "five films, five versions to skip",
+    "aliases": [
+      "directors cuts"
+    ],
     "kind": "films",
     "year": "1977–2001",
     "popularity": 31,
@@ -4897,6 +5246,9 @@
     ],
     "title": "One Location",
     "subtitle": "films that never leave the room",
+    "aliases": [
+      "single location"
+    ],
     "kind": "films",
     "year": "1944–2021",
     "popularity": 28,

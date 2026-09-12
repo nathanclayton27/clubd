@@ -556,6 +556,15 @@ details.ctile{padding:0}
    heights still line their buttons up */
 .gcard>button{margin-top:auto}
 .gcard .row{margin:0;width:100%}
+/* CLU-423's offer borrows .atog rather than minting a second kind of switch.
+   .gcard is a column flex with align-items:flex-start, so a borrowed row is
+   content-width and its hint would push past the card.
+   The rule line above it is .atog's own border-top and is KEPT deliberately:
+   .atog:first-of-type matches on element TYPE, and the name and date rows above
+   are divs too, so this one never takes that exemption — which is lucky, because
+   the divider is what separates "what the club is" from "what goes into it".
+   Only the bottom padding goes; the card's 9px gap already spaces the button. */
+#gc-port{width:100%;padding-bottom:0}
 /* a fixed 190px club-name box overflowed a 200px card. Fluid to the card's
    width instead, and the join code keeps a short box because six characters in
    a full-width field reads as a field expecting a sentence. */
@@ -566,7 +575,11 @@ details.ctile{padding:0}
    would otherwise win the size, the colour, the margin and the 66ch measure. */
 .gcard .gch{margin:0;font-size:9.5px;font-family:"IBM Plex Mono",ui-monospace,monospace;
   font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
-.gcard .gcp{margin:0;font-size:12px;color:var(--ink-2);max-width:40ch}
+/* .cdrawer too, since CLU-423: its hint is a SENTENCE, and .lbl — the only
+   small face the drawer had — is a 10px uppercase label with .18em tracking. A
+   sentence set in that is a shout, and this is the quiet small print the tile's
+   own cards already use. */
+.gcard .gcp,.cdrawer .gcp{margin:0;font-size:12px;color:var(--ink-2);max-width:40ch}
 #gc-fresh-b{display:flex;flex-direction:column;align-items:flex-start;gap:9px;width:100%}
 .cfoot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--rule)}
@@ -2204,6 +2217,19 @@ footer a{color:var(--steel)}
               <span class="lbl" id="gdate-l">Finish by</span>
               <input type="date" id="gdate" aria-label="Finish by">
             </div>
+            <!-- CLU-423. A club starts empty on purpose, so carrying your own
+                 record into one is a deliberate act and gets its own control.
+                 It is not drawn at all unless it would do something: signed in,
+                 with ticks on this list, and with a database that can give the
+                 club a run of its own. paintPortOffer() is the one place that
+                 decides, and it borrows .atog rather than minting a switch that
+                 would look like a second kind of toggle. -->
+            <div class="atog hide" id="gc-port">
+              <input type="checkbox" id="g-port"
+                     aria-label="Start it with what I have already ticked">
+              <label class="t" for="g-port"><b>Start it with what I have already ticked</b>
+                <span id="g-port-h"></span></label>
+            </div>
             <button id="b-gcreate">Start a club</button>
           </div>
           <div class="gcard" id="gc-join" role="group" aria-label="Join a club">
@@ -2287,6 +2313,9 @@ let MANIFEST = [
     ],
     "title": "Everything Dies: Secret Wars",
     "subtitle": "Jonathan Hickman's Marvel run",
+    "aliases": [
+      "hickman"
+    ],
     "kind": "comics",
     "year": "2009–2015",
     "popularity": 44,
@@ -2308,6 +2337,9 @@ let MANIFEST = [
     ],
     "title": "Fullmetal Alchemist: Brotherhood",
     "subtitle": "",
+    "aliases": [
+      "fmab"
+    ],
     "kind": "anime",
     "year": "2009–2010",
     "popularity": 83,
@@ -2330,6 +2362,9 @@ let MANIFEST = [
     ],
     "title": "Star Wars",
     "subtitle": "every film and television season, in release order",
+    "aliases": [
+      "starwars"
+    ],
     "kind": "films & shows",
     "year": "1977–",
     "popularity": 97,
@@ -2375,6 +2410,9 @@ let MANIFEST = [
     ],
     "title": "MCU Anthology",
     "subtitle": "every Marvel film in release order, MCU or not",
+    "aliases": [
+      "marvel cinematic universe"
+    ],
     "kind": "films & shows",
     "year": "1998–2026",
     "popularity": 95,
@@ -2465,6 +2503,11 @@ let MANIFEST = [
     ],
     "title": "Star Trek",
     "subtitle": "every episode and all thirteen films, in production order",
+    "aliases": [
+      "ds9",
+      "tng",
+      "tos"
+    ],
     "kind": "tv & films",
     "year": "1966–2026",
     "popularity": 92,
@@ -2485,6 +2528,9 @@ let MANIFEST = [
     ],
     "title": "The Legend of Zelda",
     "subtitle": "mainline in release order, remakes and spin-offs marked",
+    "aliases": [
+      "loz"
+    ],
     "kind": "games",
     "year": "1986–",
     "popularity": 92,
@@ -2550,6 +2596,9 @@ let MANIFEST = [
     ],
     "title": "Naruto",
     "subtitle": "The original series and Shippuden",
+    "aliases": [
+      "shippuden"
+    ],
     "kind": "anime",
     "year": "2002–2017",
     "popularity": 90,
@@ -2614,6 +2663,12 @@ let MANIFEST = [
     ],
     "title": "Dragon Ball (anime)",
     "subtitle": "",
+    "aliases": [
+      "dbz",
+      "dragon ball anime",
+      "dragon ball z",
+      "dragonball"
+    ],
     "kind": "anime",
     "year": "1986–2025",
     "popularity": 89,
@@ -2657,6 +2712,9 @@ let MANIFEST = [
     ],
     "title": "James Bond",
     "subtitle": "every Bond film in release order, in sections per actor",
+    "aliases": [
+      "007"
+    ],
     "kind": "films",
     "year": "1962–2021",
     "popularity": 88,
@@ -2679,6 +2737,9 @@ let MANIFEST = [
     ],
     "title": "Pokémon",
     "subtitle": "the mainline generations in release order, remakes marked",
+    "aliases": [
+      "pokemon"
+    ],
     "kind": "games",
     "year": "1996–",
     "popularity": 88,
@@ -2700,6 +2761,11 @@ let MANIFEST = [
     ],
     "title": "Amazing Spider-Man",
     "subtitle": "Amazing Fantasy #15 to Civil War",
+    "aliases": [
+      "amazing spiderman",
+      "asm",
+      "spiderman"
+    ],
     "kind": "comics",
     "year": "1962–2006",
     "popularity": 87,
@@ -2721,6 +2787,10 @@ let MANIFEST = [
     ],
     "title": "Best Picture",
     "subtitle": "every nominee, winners marked",
+    "aliases": [
+      "academy awards",
+      "oscars"
+    ],
     "kind": "films",
     "year": "1927–2025",
     "popularity": 86,
@@ -2743,6 +2813,9 @@ let MANIFEST = [
     ],
     "title": "Grand Theft Auto",
     "subtitle": "every released game in order, expansions and handhelds marked",
+    "aliases": [
+      "gta"
+    ],
     "kind": "games",
     "year": "1997–2026",
     "popularity": 86,
@@ -2764,6 +2837,9 @@ let MANIFEST = [
     ],
     "title": "X-Men",
     "subtitle": "the comprehensive reading list — both flagships, complete",
+    "aliases": [
+      "xmen"
+    ],
     "kind": "comics",
     "year": "1963–",
     "popularity": 86,
@@ -2785,6 +2861,11 @@ let MANIFEST = [
     ],
     "title": "Avatar: The Last Airbender",
     "subtitle": "with The Legend of Korra",
+    "aliases": [
+      "atla",
+      "avatar the last airbender",
+      "korra"
+    ],
     "kind": "animated series",
     "year": "2005–2014",
     "popularity": 85,
@@ -2826,6 +2907,12 @@ let MANIFEST = [
     ],
     "title": "Middle-earth",
     "subtitle": "Tolkien's books and the films made from them",
+    "aliases": [
+      "lord of the rings",
+      "lotr",
+      "middle earth",
+      "the hobbit"
+    ],
     "kind": "books & films",
     "year": "1937–2014",
     "popularity": 85,
@@ -2846,6 +2933,9 @@ let MANIFEST = [
     ],
     "title": "Street Fighter",
     "subtitle": "the games and the films, in the order they arrived",
+    "aliases": [
+      "streetfighter"
+    ],
     "kind": "films & games",
     "year": "1987–2026",
     "popularity": 85,
@@ -2865,6 +2955,9 @@ let MANIFEST = [
     ],
     "title": "The Office",
     "subtitle": "the American series — nine seasons, 2005–2013",
+    "aliases": [
+      "the office us"
+    ],
     "kind": "tv",
     "year": "2005–2013",
     "popularity": 85,
@@ -2885,6 +2978,11 @@ let MANIFEST = [
     ],
     "title": "Attack on Titan",
     "subtitle": "the complete broadcast run",
+    "aliases": [
+      "aot",
+      "shingeki no kyojin",
+      "snk"
+    ],
     "kind": "anime",
     "year": "2013–2023",
     "popularity": 84,
@@ -2906,6 +3004,9 @@ let MANIFEST = [
     ],
     "title": "Breaking Bad",
     "subtitle": "the whole universe in release order — with El Camino and Better Call Saul",
+    "aliases": [
+      "bcs"
+    ],
     "kind": "tv & film",
     "year": "2008–2022",
     "popularity": 84,
@@ -3010,6 +3111,9 @@ let MANIFEST = [
     ],
     "title": "DC Anthology",
     "subtitle": "every live-action DC film and series, in release order",
+    "aliases": [
+      "dceu"
+    ],
     "kind": "films & shows",
     "year": "1951–",
     "popularity": 82,
@@ -3177,6 +3281,9 @@ let MANIFEST = [
     ],
     "title": "Godzilla",
     "subtitle": "every film era by era, Godzilla Fest shorts included",
+    "aliases": [
+      "gojira"
+    ],
     "kind": "films",
     "year": "1954–",
     "popularity": 80,
@@ -3198,6 +3305,9 @@ let MANIFEST = [
     ],
     "title": "One Piece (manga)",
     "subtitle": "Eiichiro Oda",
+    "aliases": [
+      "one piece manga"
+    ],
     "kind": "manga",
     "year": "1997–",
     "popularity": 80,
@@ -3218,6 +3328,9 @@ let MANIFEST = [
     ],
     "title": "Resident Evil",
     "subtitle": "mainline in release order, Code: Veronica and the remakes included",
+    "aliases": [
+      "biohazard"
+    ],
     "kind": "games",
     "year": "1996–",
     "popularity": 80,
@@ -3321,6 +3434,10 @@ let MANIFEST = [
     ],
     "title": "Studio Ghibli",
     "subtitle": "every Ghibli film in release order, built around Miyazaki's",
+    "aliases": [
+      "hayao miyazaki",
+      "miyazaki"
+    ],
     "kind": "films",
     "year": "1979–",
     "popularity": 79,
@@ -3363,6 +3480,10 @@ let MANIFEST = [
     ],
     "title": "Dragon Ball (manga)",
     "subtitle": "Akira Toriyama",
+    "aliases": [
+      "dragon ball manga",
+      "dragonball"
+    ],
     "kind": "manga",
     "year": "1984–",
     "popularity": 78,
@@ -3404,6 +3525,9 @@ let MANIFEST = [
     ],
     "title": "Naruto (manga)",
     "subtitle": "Masashi Kishimoto",
+    "aliases": [
+      "naruto manga"
+    ],
     "kind": "manga",
     "year": "1999–2014",
     "popularity": 78,
@@ -3467,6 +3591,9 @@ let MANIFEST = [
     ],
     "title": "Doctor Who",
     "subtitle": "every televised story, 1963–2025",
+    "aliases": [
+      "dr who"
+    ],
     "kind": "tv",
     "year": "1963–2025",
     "popularity": 77,
@@ -3507,6 +3634,10 @@ let MANIFEST = [
     ],
     "title": "The Elder Scrolls",
     "subtitle": "Arena to Skyrim in release order, expansions included",
+    "aliases": [
+      "skyrim",
+      "tes"
+    ],
     "kind": "games",
     "year": "1994–",
     "popularity": 77,
@@ -3528,6 +3659,12 @@ let MANIFEST = [
     ],
     "title": "Alien & Predator",
     "subtitle": "both franchises in one release-order run",
+    "aliases": [
+      "alien and predator",
+      "alien predator",
+      "aliens",
+      "avp"
+    ],
     "kind": "films",
     "year": "1979–",
     "popularity": 76,
@@ -3612,6 +3749,9 @@ let MANIFEST = [
     ],
     "title": "Evangelion",
     "subtitle": "series, endings and Rebuild",
+    "aliases": [
+      "neon genesis evangelion"
+    ],
     "kind": "anime",
     "year": "1995–2021",
     "popularity": 75,
@@ -3696,6 +3836,9 @@ let MANIFEST = [
     ],
     "title": "Bleach (manga)",
     "subtitle": "Tite Kubo",
+    "aliases": [
+      "bleach manga"
+    ],
     "kind": "manga",
     "year": "2001–2016",
     "popularity": 74,
@@ -3717,6 +3860,9 @@ let MANIFEST = [
     ],
     "title": "Demon Slayer: Kimetsu no Yaiba",
     "subtitle": "every episode and the films, each story once",
+    "aliases": [
+      "kny"
+    ],
     "kind": "tv & films",
     "year": "2019–",
     "popularity": 74,
@@ -3737,6 +3883,10 @@ let MANIFEST = [
     ],
     "title": "Metal Gear",
     "subtitle": "the whole saga in release order, sides and remakes included",
+    "aliases": [
+      "metal gear solid",
+      "mgs"
+    ],
     "kind": "games",
     "year": "1987–",
     "popularity": 74,
@@ -3798,6 +3948,9 @@ let MANIFEST = [
     ],
     "title": "Wolverine",
     "subtitle": "the solo spine · a character reading list",
+    "aliases": [
+      "logan"
+    ],
     "kind": "comics",
     "year": "1974–2026",
     "popularity": 74,
@@ -3861,6 +4014,9 @@ let MANIFEST = [
     ],
     "title": "Fullmetal Alchemist (2003)",
     "subtitle": "the first anime adaptation, and the film that ends it",
+    "aliases": [
+      "fma"
+    ],
     "kind": "anime & film",
     "year": "2003–2005",
     "popularity": 73,
@@ -3882,6 +4038,9 @@ let MANIFEST = [
     ],
     "title": "The X-Files",
     "subtitle": "every episode, with the films where they belong",
+    "aliases": [
+      "xfiles"
+    ],
     "kind": "tv & films",
     "year": "1993–2018",
     "popularity": 73,
@@ -3923,6 +4082,9 @@ let MANIFEST = [
     ],
     "title": "Chainsaw Man",
     "subtitle": "the twelve episodes, and the film that follows them",
+    "aliases": [
+      "chainsawman"
+    ],
     "kind": "tv & film",
     "year": "2022–",
     "popularity": 72,
@@ -3964,6 +4126,11 @@ let MANIFEST = [
     ],
     "title": "FromSoftware",
     "subtitle": "the Souls line and its adjacents, in release order",
+    "aliases": [
+      "dark souls",
+      "from software",
+      "soulsborne"
+    ],
     "kind": "games",
     "year": "2009–",
     "popularity": 72,
@@ -3985,6 +4152,10 @@ let MANIFEST = [
     ],
     "title": "Fullmetal Alchemist (manga)",
     "subtitle": "Hiromu Arakawa",
+    "aliases": [
+      "fma",
+      "fullmetal alchemist manga"
+    ],
     "kind": "manga",
     "year": "2001–2010",
     "popularity": 72,
@@ -4005,6 +4176,10 @@ let MANIFEST = [
     ],
     "title": "Hunter × Hunter",
     "subtitle": "the 2011 series",
+    "aliases": [
+      "hunter x hunter",
+      "hxh"
+    ],
     "kind": "anime",
     "year": "2011–2014",
     "popularity": 72,
@@ -4107,6 +4282,9 @@ let MANIFEST = [
     ],
     "title": "Half-Life & Portal",
     "subtitle": "Valve's story canon in release order",
+    "aliases": [
+      "half life"
+    ],
     "kind": "games",
     "year": "1998–",
     "popularity": 71,
@@ -4149,6 +4327,10 @@ let MANIFEST = [
     ],
     "title": "JoJo's Bizarre Adventure",
     "subtitle": "every episode of the David Production anime",
+    "aliases": [
+      "jjba",
+      "jojos bizarre adventure"
+    ],
     "kind": "anime",
     "year": "2012–2022",
     "popularity": 71,
@@ -4231,6 +4413,9 @@ let MANIFEST = [
     ],
     "title": "Black Panther",
     "subtitle": "The mantle in main Marvel continuity — T'Challa, and Shuri while she wore it",
+    "aliases": [
+      "tchalla"
+    ],
     "kind": "comics",
     "year": "1968–2024",
     "popularity": 70,
@@ -4252,6 +4437,9 @@ let MANIFEST = [
     ],
     "title": "Bob's Burgers",
     "subtitle": "every episode, in broadcast order",
+    "aliases": [
+      "bobs burgers"
+    ],
     "kind": "tv",
     "year": "2011–",
     "popularity": 70,
@@ -4313,6 +4501,11 @@ let MANIFEST = [
     ],
     "title": "JoJo's Bizarre Adventure (manga)",
     "subtitle": "Hirohiko Araki",
+    "aliases": [
+      "jjba",
+      "jojo manga",
+      "jojos bizarre adventure"
+    ],
     "kind": "manga",
     "year": "1987–",
     "popularity": 70,
@@ -4354,6 +4547,9 @@ let MANIFEST = [
     ],
     "title": "Mission: Impossible",
     "subtitle": "the released films, in release order",
+    "aliases": [
+      "mission impossible"
+    ],
     "kind": "films",
     "year": "1996–2025",
     "popularity": 70,
@@ -4376,6 +4572,9 @@ let MANIFEST = [
     ],
     "title": "Rurouni Kenshin",
     "subtitle": "the 1996 anime, the film, and the OVAs",
+    "aliases": [
+      "samurai x"
+    ],
     "kind": "anime & film",
     "year": "1996–2002",
     "popularity": 70,
@@ -4397,6 +4596,10 @@ let MANIFEST = [
     ],
     "title": "Steins;Gate",
     "subtitle": "the 2011 series, the film, and Steins;Gate 0",
+    "aliases": [
+      "steins gate",
+      "steinsgate"
+    ],
     "kind": "anime & films",
     "year": "2011–2018",
     "popularity": 70,
@@ -4459,6 +4662,10 @@ let MANIFEST = [
     ],
     "title": "Gurren Lagann",
     "subtitle": "the whole 2007 run — and neither film",
+    "aliases": [
+      "tengen toppa gurren lagann",
+      "ttgl"
+    ],
     "kind": "anime",
     "year": "2007",
     "popularity": 69,
@@ -4521,6 +4728,11 @@ let MANIFEST = [
     ],
     "title": "Buffy & Angel",
     "subtitle": "two shows woven into one broadcast order",
+    "aliases": [
+      "btvs",
+      "buffy and angel",
+      "buffy the vampire slayer"
+    ],
     "kind": "tv",
     "year": "1997–2004",
     "popularity": 68,
@@ -4583,6 +4795,9 @@ let MANIFEST = [
     ],
     "title": "Fantastic Four",
     "subtitle": "Marvel's main continuity, #1 to #569 — the team, not the four people",
+    "aliases": [
+      "fantastic 4"
+    ],
     "kind": "comics",
     "year": "1961–2009",
     "popularity": 68,
@@ -4625,6 +4840,9 @@ let MANIFEST = [
     ],
     "title": "Gears of War",
     "subtitle": "the campaigns in release order, spin-offs marked",
+    "aliases": [
+      "gow"
+    ],
     "kind": "games",
     "year": "2006–",
     "popularity": 68,
@@ -4646,6 +4864,9 @@ let MANIFEST = [
     ],
     "title": "Kingdom Hearts",
     "subtitle": "every game, in release order",
+    "aliases": [
+      "kh"
+    ],
     "kind": "games",
     "year": "2002–2027",
     "popularity": 68,
@@ -4731,6 +4952,10 @@ let MANIFEST = [
     ],
     "title": "Yu Yu Hakusho",
     "subtitle": "every episode, with both films where they opened",
+    "aliases": [
+      "yuyu hakusho",
+      "yyh"
+    ],
     "kind": "tv & films",
     "year": "1992–2018",
     "popularity": 68,
@@ -4771,6 +4996,9 @@ let MANIFEST = [
     ],
     "title": "Jean-Claude Van Damme",
     "subtitle": "the films in release order, and how each one came out",
+    "aliases": [
+      "jcvd"
+    ],
     "kind": "films",
     "year": "1979–2025",
     "popularity": 67,
@@ -4853,6 +5081,9 @@ let MANIFEST = [
     ],
     "title": "The Coen Brothers",
     "subtitle": "eighteen together, four apart",
+    "aliases": [
+      "coens"
+    ],
     "kind": "films",
     "year": "1984–2025",
     "popularity": 67,
@@ -4897,6 +5128,9 @@ let MANIFEST = [
     ],
     "title": "Berserk",
     "subtitle": "Kentaro Miura · the manga, by volume",
+    "aliases": [
+      "berserk manga"
+    ],
     "kind": "manga",
     "year": "1989–",
     "popularity": 66,
@@ -4937,6 +5171,9 @@ let MANIFEST = [
     ],
     "title": "Paul Thomas Anderson",
     "subtitle": "the directed features",
+    "aliases": [
+      "pta"
+    ],
     "kind": "films",
     "year": "1996–2025",
     "popularity": 66,
@@ -5001,6 +5238,9 @@ let MANIFEST = [
     ],
     "title": "Gundam",
     "subtitle": "the Universal Century and every alternate universe",
+    "aliases": [
+      "mobile suit gundam"
+    ],
     "kind": "anime & manga",
     "year": "1979–",
     "popularity": 65,
@@ -5042,6 +5282,9 @@ let MANIFEST = [
     ],
     "title": "Nicolas Cage",
     "subtitle": "the film roles, in release order",
+    "aliases": [
+      "nic cage"
+    ],
     "kind": "films",
     "year": "1982–2025",
     "popularity": 65,
@@ -5165,6 +5408,10 @@ let MANIFEST = [
     ],
     "title": "Ghost in the Shell",
     "subtitle": "everything animated, by continuity",
+    "aliases": [
+      "gits",
+      "stand alone complex"
+    ],
     "kind": "anime",
     "year": "1995–2022",
     "popularity": 64,
@@ -5186,6 +5433,9 @@ let MANIFEST = [
     ],
     "title": "M*A*S*H",
     "subtitle": "all 256 episodes, eleven seasons",
+    "aliases": [
+      "mash"
+    ],
     "kind": "tv",
     "year": "1972–1983",
     "popularity": 64,
@@ -5206,6 +5456,9 @@ let MANIFEST = [
     ],
     "title": "Star Wars Games",
     "subtitle": "the whole catalogue, in release order",
+    "aliases": [
+      "starwars"
+    ],
     "kind": "games",
     "year": "1992–",
     "popularity": 64,
@@ -5268,6 +5521,10 @@ let MANIFEST = [
     ],
     "title": "Mega Man",
     "subtitle": "the whole franchise, by sub-series, in release order",
+    "aliases": [
+      "megaman",
+      "rockman"
+    ],
     "kind": "games",
     "year": "1987–2023",
     "popularity": 63,
@@ -5330,6 +5587,9 @@ let MANIFEST = [
     ],
     "title": "The Death and Return of Superman",
     "subtitle": "the 1992–93 crossover · post-Crisis",
+    "aliases": [
+      "death of superman"
+    ],
     "kind": "comics",
     "year": "1992–1993",
     "popularity": 63,
@@ -5393,6 +5653,9 @@ let MANIFEST = [
     ],
     "title": "Battlestar Galactica",
     "subtitle": "the 2004 series, in broadcast order",
+    "aliases": [
+      "bsg"
+    ],
     "kind": "tv & film",
     "year": "2003–2009",
     "popularity": 62,
@@ -5436,6 +5699,10 @@ let MANIFEST = [
     ],
     "title": "Child's Play",
     "subtitle": "eight films in two lines, and the series that continues the first",
+    "aliases": [
+      "childs play",
+      "chucky"
+    ],
     "kind": "films & tv",
     "year": "1988–2024",
     "popularity": 62,
@@ -5457,6 +5724,9 @@ let MANIFEST = [
     ],
     "title": "DC Animation",
     "subtitle": "every animated DC film and series, in release order",
+    "aliases": [
+      "dcau"
+    ],
     "kind": "shows & films",
     "year": "1966–",
     "popularity": 62,
@@ -5521,6 +5791,10 @@ let MANIFEST = [
     ],
     "title": "FLCL",
     "subtitle": "all five series, in release order",
+    "aliases": [
+      "fooly cooly",
+      "furi kuri"
+    ],
     "kind": "anime",
     "year": "2000–2023",
     "popularity": 62,
@@ -5710,6 +5984,9 @@ let MANIFEST = [
     ],
     "title": "The Vampire Diaries",
     "subtitle": "eight seasons on The CW",
+    "aliases": [
+      "tvd"
+    ],
     "kind": "tv",
     "year": "2009–2017",
     "popularity": 61,
@@ -5731,6 +6008,9 @@ let MANIFEST = [
     ],
     "title": "Babylon 5",
     "subtitle": "every episode, with the films where they aired",
+    "aliases": [
+      "b5"
+    ],
     "kind": "tv & films",
     "year": "1993–2023",
     "popularity": 60,
@@ -5751,6 +6031,9 @@ let MANIFEST = [
     ],
     "title": "Cyberpunk: Edgerunners",
     "subtitle": "",
+    "aliases": [
+      "cyberpunk edgerunners"
+    ],
     "kind": "anime",
     "year": "2022",
     "popularity": 60,
@@ -5837,6 +6120,9 @@ let MANIFEST = [
     ],
     "title": "Slashers",
     "subtitle": "Halloween, Friday the 13th and Elm Street, in release order",
+    "aliases": [
+      "nightmare on elm street"
+    ],
     "kind": "films",
     "year": "1978–2022",
     "popularity": 60,
@@ -5858,6 +6144,9 @@ let MANIFEST = [
     ],
     "title": "The FPS Canon",
     "subtitle": "the genre-defining shooters, in release order",
+    "aliases": [
+      "first person shooters"
+    ],
     "kind": "games",
     "year": "1992–2020",
     "popularity": 60,
@@ -5899,6 +6188,9 @@ let MANIFEST = [
     ],
     "title": "Yakuza / Like a Dragon",
     "subtitle": "the mainline saga in release order, Judgment and the samurai games included",
+    "aliases": [
+      "ryu ga gotoku"
+    ],
     "kind": "games",
     "year": "2005–",
     "popularity": 60,
@@ -5964,6 +6256,9 @@ let MANIFEST = [
     ],
     "title": "The Wheel of Time",
     "subtitle": "Robert Jordan — 15 books, prequel included",
+    "aliases": [
+      "wot"
+    ],
     "kind": "books",
     "year": "1990–2013",
     "popularity": 59,
@@ -6151,6 +6446,9 @@ let MANIFEST = [
     ],
     "title": "Hellboy",
     "subtitle": "the Mignolaverse in collected volumes",
+    "aliases": [
+      "bprd"
+    ],
     "kind": "comics",
     "year": "1994–2019",
     "popularity": 57,
@@ -6193,6 +6491,10 @@ let MANIFEST = [
     ],
     "title": "Dragon Quest",
     "subtitle": "the mainline eleven in release order",
+    "aliases": [
+      "dq",
+      "dragon warrior"
+    ],
     "kind": "games",
     "year": "1986–",
     "popularity": 56,
@@ -6234,6 +6536,9 @@ let MANIFEST = [
     ],
     "title": "Friday Night Lights",
     "subtitle": "Dillon, Texas",
+    "aliases": [
+      "fnl"
+    ],
     "kind": "tv",
     "year": "2006–2011",
     "popularity": 56,
@@ -6319,6 +6624,10 @@ let MANIFEST = [
     ],
     "title": "Cosmere",
     "subtitle": "Brandon Sanderson's connected universe",
+    "aliases": [
+      "mistborn",
+      "stormlight archive"
+    ],
     "kind": "books",
     "year": "2005–",
     "popularity": 55,
@@ -6339,6 +6648,9 @@ let MANIFEST = [
     ],
     "title": "Crisis on Infinite Earths",
     "subtitle": "the 1985 maxiseries and its crossover — the end of pre-Crisis DC",
+    "aliases": [
+      "coie"
+    ],
     "kind": "comics",
     "year": "1985–86",
     "popularity": 55,
@@ -6423,6 +6735,11 @@ let MANIFEST = [
     ],
     "title": "Dungeons & Dragons novels",
     "subtitle": "Dragonlance and the Legend of Drizzt",
+    "aliases": [
+      "d&d",
+      "dnd",
+      "dungeons and dragons"
+    ],
     "kind": "books",
     "year": "1984–2023",
     "popularity": 54,
@@ -6443,6 +6760,10 @@ let MANIFEST = [
     ],
     "title": "Martial Arts",
     "subtitle": "the classics of Chinese kung fu and wuxia cinema",
+    "aliases": [
+      "kung fu",
+      "wuxia"
+    ],
     "kind": "films",
     "year": "1960–2024",
     "popularity": 54,
@@ -6465,6 +6786,10 @@ let MANIFEST = [
     ],
     "title": "Palme d'Or",
     "subtitle": "every top prize at Cannes, 1946 on",
+    "aliases": [
+      "cannes",
+      "palme dor"
+    ],
     "kind": "films",
     "year": "1946–2026",
     "popularity": 54,
@@ -6591,6 +6916,9 @@ let MANIFEST = [
     ],
     "title": "Zombie Films",
     "subtitle": "the walking dead on film, era by era",
+    "aliases": [
+      "zombies"
+    ],
     "kind": "films",
     "year": "1919–",
     "popularity": 52,
@@ -6612,6 +6940,10 @@ let MANIFEST = [
     ],
     "title": "Ace Attorney",
     "subtitle": "mainline, Investigations, and the Great duology",
+    "aliases": [
+      "gyakuten saiban",
+      "phoenix wright"
+    ],
     "kind": "games",
     "year": "2001–",
     "popularity": 51,
@@ -6675,6 +7007,9 @@ let MANIFEST = [
     ],
     "title": "Sight & Sound 100",
     "subtitle": "the 2022 critics' poll, as ranked",
+    "aliases": [
+      "sight and sound"
+    ],
     "kind": "films",
     "year": "1924–2019",
     "popularity": 50,
@@ -6697,6 +7032,10 @@ let MANIFEST = [
     ],
     "title": "The Culture series",
     "subtitle": "Iain M. Banks — nine novels and one collection",
+    "aliases": [
+      "iain banks",
+      "iain m banks"
+    ],
     "kind": "books",
     "year": "1987–2012",
     "popularity": 49,
@@ -6760,6 +7099,10 @@ let MANIFEST = [
     ],
     "title": "Nasuverse",
     "subtitle": "Type-Moon's shared universe, by media type",
+    "aliases": [
+      "fate stay night",
+      "type moon"
+    ],
     "kind": "mixed",
     "year": "1998–",
     "popularity": 47,
@@ -6779,6 +7122,9 @@ let MANIFEST = [
     ],
     "title": "Mystery Science Theater 3000",
     "subtitle": "every experiment, KTMA to the Gizmoplex",
+    "aliases": [
+      "mst3k"
+    ],
     "kind": "tv",
     "year": "1988–2022",
     "popularity": 46,
@@ -6800,6 +7146,9 @@ let MANIFEST = [
     ],
     "title": "Suda51",
     "subtitle": "the games of Goichi Suda, with the credit on each row",
+    "aliases": [
+      "suda 51"
+    ],
     "kind": "games",
     "year": "1993–2026",
     "popularity": 46,
@@ -6842,6 +7191,9 @@ let MANIFEST = [
     ],
     "title": "JLA",
     "subtitle": "Grant Morrison's run · post-Crisis DC",
+    "aliases": [
+      "justice league of america"
+    ],
     "kind": "comics",
     "year": "1997–2000",
     "popularity": 45,
@@ -6884,6 +7236,11 @@ let MANIFEST = [
     ],
     "title": "Nathan Fielder",
     "subtitle": "everything he created, in order",
+    "aliases": [
+      "nathan for you",
+      "the curse",
+      "the rehearsal"
+    ],
     "kind": "tv",
     "year": "2013–2025",
     "popularity": 44,
@@ -6947,6 +7304,9 @@ let MANIFEST = [
     ],
     "title": "James Bond Games",
     "subtitle": "the licensed games, GoldenEye 007 onward",
+    "aliases": [
+      "007"
+    ],
     "kind": "games",
     "year": "1997–2026",
     "popularity": 40,
@@ -6988,6 +7348,9 @@ let MANIFEST = [
     ],
     "title": "Spider-Man After Civil War",
     "subtitle": "Back in Black to now",
+    "aliases": [
+      "spiderman"
+    ],
     "kind": "comics",
     "year": "2007–",
     "popularity": 37,
@@ -7010,6 +7373,9 @@ let MANIFEST = [
     ],
     "title": "Time Loops",
     "subtitle": "the same day, again — films, episodes, whole shows",
+    "aliases": [
+      "groundhog day"
+    ],
     "kind": "films & episodes",
     "year": "1963–",
     "popularity": 36,
@@ -7031,6 +7397,9 @@ let MANIFEST = [
     ],
     "title": "Best Director's Cuts",
     "subtitle": "the version that is the film, and the receipts",
+    "aliases": [
+      "directors cuts"
+    ],
     "kind": "films",
     "year": "1958–2017",
     "popularity": 35,
@@ -7053,6 +7422,9 @@ let MANIFEST = [
     ],
     "title": "Body Swap",
     "subtitle": "who's in whose body, by decade",
+    "aliases": [
+      "bodyswap"
+    ],
     "kind": "films",
     "year": "1936–2026",
     "popularity": 34,
@@ -7115,6 +7487,9 @@ let MANIFEST = [
     ],
     "title": "Worst Director's Cuts",
     "subtitle": "five films, five versions to skip",
+    "aliases": [
+      "directors cuts"
+    ],
     "kind": "films",
     "year": "1977–2001",
     "popularity": 31,
@@ -7178,6 +7553,9 @@ let MANIFEST = [
     ],
     "title": "One Location",
     "subtitle": "films that never leave the room",
+    "aliases": [
+      "single location"
+    ],
     "kind": "films",
     "year": "1944–2021",
     "popularity": 28,
@@ -7295,7 +7673,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '2e8219f25308';
+const BUILD = '6a0184e3bff0';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7447,6 +7825,33 @@ function arrKind(k){
 }
 const ARRIVAL_TTL = 30 * 60 * 1000;
 const ARRSLOT = 'gw:arrival';
+// What THIS TAB caught, kept where a same-tab round trip survives (CLU-505).
+//
+// The shared slot answers one question — what invitation is pending on this
+// browser — and it cannot answer the other one: what invitation did this tab
+// set out to accept. On the OAuth path that is the question, because a redirect
+// is a page LOAD. The tab goes to the consent screen, comes back with ARRIVAL
+// and every other variable gone, reads the slot, and finds whatever is in it
+// NOW. If a second invitation took the slot while the tab was away, the tab has
+// no way to know its own link is gone: the slot it did not stamp looks exactly
+// like an innocent bystander's, so it offers the ask, and the yes sends a
+// request to whoever sent the OTHER link — someone the person at the keyboard
+// has never heard of. One slot cannot remember what it used to hold.
+//
+// So the memory goes in sessionStorage, the same scope ARRTAB lives in, and the
+// scoping is the point rather than a limitation:
+//
+//   * a SAME-TAB round trip (OAuth, a password sign-in, a magic link opened in
+//     this tab) keeps it, which is exactly the case that was broken;
+//   * a NEW TAB has none, which is right — a tab that never caught the link is
+//     a bystander, it cannot be told its link was replaced because it was never
+//     holding one, and showAsk() already asks it to answer for itself.
+//
+// Where sessionStorage is unusable this degrades to the behaviour above: ARRTAB
+// is already a fresh id per load there, so a same-tab return already looked
+// like another tab and already got the ask. One click, in the safe direction,
+// in a browser that has opted out of being remembered.
+const ARRCAUGHT = 'gw:arrcaught';
 // Durable storage is not a given: a private window, or a browser told to block
 // site data, throws on the first write. Probe once — where it fails the
 // arrival lives in this tab's memory only, which is exactly the behaviour
@@ -7504,7 +7909,29 @@ function arrWrite(o){
   try{ localStorage.setItem(ARRSLOT, JSON.stringify(o)); return true; }
   catch(e){ return false; }
 }
-function arrClear(){ try{ localStorage.removeItem(ARRSLOT); }catch(e){} }
+// Clearing the slot clears this tab's memory of what it caught along with it
+// (CLU-505). The memory exists only to tell "the invitation I was holding was
+// replaced" apart from "I am a bystander to someone else's", and once the slot
+// is gone this tab is holding neither. Folded in here rather than left to each
+// caller, because every path that drops the slot — a spend, a No, Cancel on the
+// splash, a sweep for age, a corrupt slot, a sign-out — owes the same tidy-up,
+// and a missed one is a tab that reports its own sent request as replaced.
+function arrClear(){
+  try{ localStorage.removeItem(ARRSLOT); }catch(e){}
+  arrCaughtClear();
+}
+// The per-tab memory, read defensively for the same reasons arrRaw is: a
+// hand-written or half-written record is swept rather than stepped over.
+function arrCaught(){
+  let s = null;
+  try{ s = sessionStorage.getItem(ARRCAUGHT); }catch(e){ return null; }
+  if(!s) return null;
+  let o = null;
+  try{ o = JSON.parse(s); }catch(e){ arrCaughtClear(); return null; }
+  if(!o || typeof o !== 'object' || !o.k || !o.v){ arrCaughtClear(); return null; }
+  return o;
+}
+function arrCaughtClear(){ try{ sessionStorage.removeItem(ARRCAUGHT); }catch(e){} }
 // The read IS the sweep. Anything past the TTL is dropped here and remembered
 // as stale so arrivalStale() can say so — the one thing the old code could not
 // do, because a slot that had gone missing was indistinguishable from never
@@ -7534,7 +7961,14 @@ function arrRead(){
 // person. `mem` says the slot is not really there — the write was refused — so
 // this tab is the only claimant there can be.
 function arrStash(kind, payload){
-  const stored = arrWrite({ k: kind, v: payload, at: Date.now(), tab: ARRTAB });
+  const at = Date.now();
+  const stored = arrWrite({ k: kind, v: payload, at, tab: ARRTAB });
+  // and this tab remembers, for itself, which invitation it is holding
+  // (CLU-505). Written even when the durable write was refused: `mem` already
+  // makes this tab the only claimant there can be, and the memory costs
+  // nothing there.
+  try{ sessionStorage.setItem(ARRCAUGHT, JSON.stringify({ k: kind, v: payload, at })); }
+  catch(e){}
   return { kind, payload, own: true, mem: !stored };
 }
 // Only the param just consumed comes out of the URL. The line this replaces
@@ -7574,7 +8008,46 @@ let ARRIVAL = (function(){
     // runs itself, which is the whole promise of an invite link. If it was
     // another tab, the person signing in here may not be the person who opened
     // the link at all, and settleArrival() asks before it writes anything.
+    //
+    // Read the tab's own memory FIRST: arrRead() sweeps, and a sweep calls
+    // arrClear(), which takes the memory with it.
+    const c = arrCaught();
     const e = arrRead();
+    // CLU-505. This is the only thing that can tell the two apart, and until it
+    // existed they arrived identically — as a slot this tab did not stamp:
+    //
+    //   a bystander       caught nothing, so `c` is null -> ask, as before
+    //   a superseded tab  caught something the slot no longer holds -> there is
+    //                     nothing here it may act on
+    //
+    // The superseded tab gets NO arrival. Not a hidden yes, an absent one: with
+    // ARRIVAL null there is no splash, settleArrival() returns at its first
+    // guard, showAsk() is never reached, ARRASK stays null, and a hand-fired
+    // acceptArrival() has nothing to spend. The stale state is unactionable by
+    // construction rather than by concealment.
+    //
+    // And the slot is deliberately NOT cleared. Whatever is in it belongs to
+    // whoever opened it, and destroying a second person's invitation while
+    // tidying up after the first is the harm CLU-386's review closed once
+    // already, from the other side.
+    if(c && !(e && e.k === c.k && e.v === c.v)){
+      arrCaughtClear();
+      const age = Date.now() - c.at;
+      if(typeof c.at !== 'number' || !isFinite(c.at)
+         || age > ARRIVAL_TTL || age < -ARRSKEW){
+        // dead by the clock whatever else happened: "expired" is the truer
+        // sentence, and it is the one arrRead() would have given had the slot
+        // still been the one this tab caught
+        ARRIVAL_STALE = ARRIVAL_STALE || c.k;
+      }else if(e){
+        // still in date, and something else is in the slot: replaced
+        ARRIVAL_TOOK = c.k;
+      }
+      // A slot that is simply GONE and in date stays silent, as it did before:
+      // another tab spent this very invitation, and the tab that sent the
+      // request is the tab that reports it.
+      return null;
+    }
     if(e) return { kind: e.k, payload: e.v, own: e.tab === ARRTAB };
   }catch(e){}
   return null;
@@ -8050,6 +8523,13 @@ let SESSION  = null;   // the club whose session `done` currently IS, or null
 let SESSNAME = '';     // its name, for the copy that has to say which
 let CPGONE   = false;  // club_progress is not in this database (this load)
 let SAVEGONE = false;  // save_progress is not in this database (this load)
+// CLU-423. The club whose run a fresh read of your all-time row said already
+// holds everything on it — so the "bring my record in" control has nothing to
+// offer and GOES rather than sitting there ready to do nothing a second time.
+// Latched per page life, per club: portRow() has to decide without a round trip
+// so it asks UNIVSEEN, and UNIVSEEN can sit a shade ahead of the row it came
+// from. The row is the answer that matters; this is where having heard it lives.
+let PORTNONE = '';
 // The all-time set as the cloud last told us, captured by adopt() before any
 // session is entered. flushEvents() needs it: catching a club up through
 // things you watched last year must not log them as live ticks dated today.
@@ -8428,8 +8908,13 @@ async function readUniversal(){
     return clean(data ? data.read_ids : []);
   }catch(e){ return null; }
 }
+// ⚠ RETURNS whether the write landed (CLU-423). Every caller before that card
+// ignored the answer and was right to — a failed sync is already reported on
+// screen by state()/syncFail() and the local copy is already the truth. The
+// port needs it: it is a deliberate one-press act on a run other people read,
+// so "copied 12 in" must not be said unless the club can see them.
 async function pushCloud(){
-  if(!user) return;
+  if(!user) return false;
   // A club tick goes through ONE statement, because the session write and the
   // all-time union have to be one transaction: two round trips can be cut in
   // half by a lapsed JWT, and a session left holding ticks the all-time row
@@ -8449,7 +8934,7 @@ async function pushCloud(){
       // row, so the event log must stop treating them as things never watched
       if(UNIVSEEN) ids.forEach(i=> UNIVSEEN.add(i));
       state('Synced','ok');
-      return;
+      return true;
     }
     console.error('[tracker] club save failed', error);
     if(missingThing(error)){
@@ -8459,11 +8944,14 @@ async function pushCloud(){
       // it back into the all-time row instead. See foldSessionBack().
       SAVEGONE = true;
       await foldSessionBack();
-      return;
+      // The ticks are safe — folded into the all-time row — but the CLUB write
+      // did not happen and the session is gone, so this is not a success for
+      // anything that was writing on a club's behalf.
+      return false;
     }
     state('Sync failed — saved on this device','');
     syncFail(error);
-    return;
+    return false;
   }
   const { error } = await sb.from('progress')
     .upsert({ user_id:user.id, property_id:CKEY, read_ids:[...done],
@@ -8473,10 +8961,11 @@ async function pushCloud(){
     state('Sync failed — saved on this device','');
     syncFail(error);
     console.error('[tracker] write failed', error);
-  }else{
-    if(UNIVSEEN) done.forEach(i=> UNIVSEEN.add(i));
-    state('Synced','ok');
+    return false;
   }
+  if(UNIVSEEN) done.forEach(i=> UNIVSEEN.add(i));
+  state('Synced','ok');
+  return true;
 }
 // Every tick's when and kind, captured from day one so the stats that read
 // them later have real history. The progress set stays the truth for WHAT is
@@ -9285,7 +9774,11 @@ async function onSession(session, definitive){
       showHome();
     }
     settleArrival();
-    if(definitive) arrivalStale();
+    // Both notices, and arrivalTaken() is here because of CLU-505: a supersede
+    // caught at BOOT has no spendArrival to report it — there is deliberately
+    // no arrival left to spend — so without this call the tab went quiet in
+    // exactly the case the card is about.
+    if(definitive){ arrivalStale(); arrivalTaken(); }
     setTimeout(backfillSync, 1200);
     return;
   }
@@ -9376,7 +9869,7 @@ async function onSession(session, definitive){
   // until some later bare-URL load, or the TTL, took it (CLU-436). #fnote and
   // #arrask are on this view as much as on the shelf.
   settleArrival();
-  if(definitive) arrivalStale();
+  if(definitive){ arrivalStale(); arrivalTaken(); }   // see the shelf branch
   // off the critical path: the first load fetches the index once, every
   // later load exits on the flag before any network
   setTimeout(backfillSync, 1200);
@@ -10806,6 +11299,10 @@ async function settleArrival(){
 async function spendArrival(arr){
   const a = arrKind(arr.kind);
   if(!a) return;
+  // This tab has committed to spending it, so it is no longer HOLDING an
+  // invitation (CLU-505). Win or lose the claim, a later boot must not find the
+  // memory still set and report a request this tab already sent as replaced.
+  arrCaughtClear();
   if(!await claimArrival(arr)){
     // A claim can fail three ways and two of them need saying. It timed out in
     // this tab's hands (arrivalStale), or a newer invitation took the slot
@@ -10903,6 +11400,14 @@ function arrivalStale(){
 // A newer invitation took the slot while this tab was holding the old one. The
 // splash had been promising to send a request, so silence here is the bug the
 // card was filed about wearing different clothes.
+//
+// Two moments reach this. A claim that finds another payload in the slot, which
+// is the sign-in that never left this page; and the BOOT itself, which is
+// CLU-505 — the OAuth return, where the tab learns from its own sessionStorage
+// that the invitation it went away holding is not the one that came back. That
+// second one has no arrival left to spend on purpose, so onSession calls this
+// directly. It says what is knowable and no more: that there is a newer link,
+// never whose, because a stranger's invitation is not this person's business.
 function arrivalTaken(){
   if(!ARRIVAL_TOOK) return;
   const a = arrKind(ARRIVAL_TOOK);
@@ -10946,6 +11451,7 @@ window.addEventListener('storage', e=>{
   const onScreen = (typeof arriving === 'function' && arriving()) || asking();
   ARRIVAL = null;
   ARRASK = null;
+  arrCaughtClear();      // the slot is off the machine; so is what we held (CLU-505)
   hideAsk();
   if(typeof arriving === 'function' && arriving()) leaveArrival();
   if(onScreen) arrSay('Another tab cleared that link. Open it again if you still need it.');
@@ -11580,7 +12086,7 @@ async function renderMyGroups(){
       // Wrapping each group makes the DOM say what the peek already assumes:
       // one child is one thing you are counting.
       return '<div class="gwrap">'
-        + '<div class="afrow" style="align-items:baseline;padding:5px 0">'
+        + '<div class="afrow gtop" style="align-items:baseline;padding:5px 0">'
         + '<b style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'
         + esc(g.name) + '</b>'
         + (k ? '<span class="mono" style="font-size:10.5px;color:var(--ink-3)">'
@@ -11592,6 +12098,28 @@ async function renderMyGroups(){
         // Order is the spec: the boxed Invite link sits last, so it is always
         // at the far right whatever else the row is carrying.
         + '<span class="gspace"></span>'
+        // CLU-524. A group could be named once and never again — the only
+        // rename on the site lives in the list page's club tile, behind a
+        // pencil, on a group you first have to SELECT on some list, and the
+        // friends page is where groups are actually made. Nathan: "add this
+        // to high todo as well to rename the groups."
+        //
+        // Owner only, and drawn for nobody else rather than drawn for everyone
+        // and refused on click: "creator updates group" is the table's ONLY
+        // update policy, so a member pressing this would get a silent no-op
+        // (PostgREST answers an RLS-filtered UPDATE with zero rows and no
+        // error — which is also why the write below reads the row back).
+        //
+        // .aquiet, not .gdang: leave and new link are red because they cost
+        // somebody something. A name costs nothing and is undone by typing the
+        // old one back. It still rides the hover layer like the rest of the
+        // row, and .lv carries the touch and focus-visible fallbacks with it.
+        + (g.created_by === user.id
+           ? '<button class="aquiet lv" data-grename="' + esc(g.id)
+             + '" data-grno="' + esc(g.name)
+             + '" title="Rename ' + esc(g.name)
+             + '. Everyone in the group sees the new name.">rename</button>'
+           : '')
         + '<button class="lv gdang" data-gleave="' + esc(g.id) + '" data-gname="'
         + esc(g.name) + '" title="Leave ' + esc(g.name)
         + '. You stop seeing their progress and they stop seeing yours. '
@@ -11612,6 +12140,26 @@ async function renderMyGroups(){
              + '">Invite link</button>'
            : '')
         + '</div>'
+        // The editor REPLACES the row above rather than opening under it, and
+        // that is deliberate. This card is a peek (CLU-120): with seven or more
+        // elements it is clamped to --pkh and everything past the cut is
+        // clipped. A box that grew the group would push itself under the fade —
+        // press rename on the fifth group and type into something you cannot
+        // see. One row swapped for one row keeps the measured height, so the
+        // editor is always exactly where the name was.
+        //
+        // Rendered up front and toggled, not built on click: the name is
+        // already escaped into this string, and a second innerHTML write inside
+        // a .gwrap is how a peek ends up counting a different number of
+        // children than pkOn measured.
+        + (g.created_by === user.id
+           ? '<div class="afrow grnf hide" style="padding:5px 0">'
+             + '<input type="text" class="grni" maxlength="40" value="'
+             + esc(g.name) + '" aria-label="Rename ' + esc(g.name) + '">'
+             + '<button type="button" class="abtn grnsave">Save</button>'
+             + '<button type="button" class="aquiet grncancel">Cancel</button>'
+             + '</div>'
+           : '')
         + '<div class="gros">' + pkHTML((roster[g.id] || []).map(m=>{
             const me = m.user_id === user.id;
             const nm = me ? ((m.display_name || 'you') + ' (you)')
@@ -11656,6 +12204,80 @@ async function renderMyGroups(){
         + '</div>';
     }), 'groups', 'fp-groups');
     pkAll(host);
+    // CLU-524 — renaming a group from the page it was created on.
+    host.querySelectorAll('button[data-grename]').forEach(b=>{
+      const wrap = b.closest('.gwrap');
+      const top  = b.closest('.afrow');
+      const form = wrap && wrap.querySelector(':scope > .grnf');
+      if(!wrap || !top || !form) return;
+      const inp = form.querySelector('.grni'),
+            sv  = form.querySelector('.grnsave'),
+            cx  = form.querySelector('.grncancel');
+      const gid = b.dataset.grename;
+      // `was` is read off the button every time rather than captured once: a
+      // successful rename re-renders the whole card, so the only stale copy
+      // possible is one we kept ourselves.
+      const open = on=>{
+        form.classList.toggle('hide', !on);
+        top.classList.toggle('hide', on);
+        if(on){ inp.value = b.dataset.grno; inp.focus(); inp.select(); }
+      };
+      b.onclick  = ()=> open(true);
+      cx.onclick = ()=> open(false);
+      inp.onkeydown = e=>{
+        if(e.key === 'Enter'){ e.preventDefault(); sv.click(); }
+        // Escape abandons the edit — the name on screen is still the name in
+        // the database, because nothing is written until Save
+        if(e.key === 'Escape'){ e.preventDefault(); open(false); }
+      };
+      sv.onclick = async ()=>{
+        const v = (inp.value || '').trim(), was = b.dataset.grno;
+        if(!v){ gnote('Give the group a name.', true); inp.focus(); return; }
+        // maxlength stops typing and pasting past 40, which is the cap the
+        // create box has carried since groups shipped. This is the second lock,
+        // for a value that arrived some other way — the column itself is plain
+        // `text`, so nothing under here refuses a novel.
+        if(v.length > 40){
+          gnote('A group name stops at 40 characters.', true); inp.focus(); return;
+        }
+        if(v === was){ gnote('That is already the name.', true); open(false); return; }
+        // A COLLIDING NAME IS REFUSED, and only against the groups you are in.
+        // Nothing in the database minds — `code` is unique, `name` is not — but
+        // this card draws your groups as a list of names, and two rows reading
+        // "Coworkers" leaves no way to tell which one you just renamed, which
+        // roster belongs to which, or which invite link you are about to send.
+        // Case-folded, because two names that differ only in case are the same
+        // name to whoever is reading them.
+        if(rows.some(o=> o.id !== gid
+              && (o.name || '').trim().toLowerCase() === v.toLowerCase())){
+          gnote('You are already in a group called that.', true); inp.focus(); return;
+        }
+        sv.disabled = true; cx.disabled = true;
+        // .select(), NOT a bare update. PostgREST answers an UPDATE that RLS
+        // filtered to nothing with a success and zero rows — no error at all —
+        // so a write the database refused would paint as a rename that worked
+        // and the card would re-read the old name a moment later. Reading the
+        // row back makes the refusal visible. The select policy is
+        // is_group_member(id) and an owner is a member, so the row comes back
+        // whenever the write really landed.
+        const { data, error } = await sb.from('groups')
+          .update({ name: v }).eq('id', gid).select('id, name');
+        sv.disabled = false; cx.disabled = false;
+        if(error){ gnote('Could not rename it: ' + error.message, true); return; }
+        if(!data || !data.length){
+          gnote('That did not save — the group still has its old name.', true);
+          return;
+        }
+        // The same sentence the club tile's rename uses, because it is the same
+        // act: everyone in the group sees the new name, and the only thing that
+        // decides WHEN is their next look at this page.
+        gnote('Everyone sees this group as ' + (data[0].name || v) + ' now.', false);
+        // Re-read rather than patch the row in place: MYG is a cached promise
+        // and the rest of the card (the roster, the mute, the invite link) is
+        // drawn off it, so the honest repaint is the one that asks again.
+        dropMyGroups(); renderMyGroups();
+      };
+    });
     host.querySelectorAll('button[data-grot]').forEach(b=>{
       b.onclick = async ()=>{
         if(!confirm('Make a new invite link for ' + b.dataset.grn
@@ -12093,6 +12715,11 @@ async function switchSession(g){
     paintTickInto();
     return;
   }
+  // The session is genuinely changing, so anything latched about the OLD one
+  // goes with it — including "this run already has everything of mine", which
+  // is a fact about one club's row and becomes a lie the moment the row does
+  // (leave and rejoin in one page life and the session is empty again).
+  PORTNONE = '';
   if(want){
     // The read that discovers the capability. club_progress answering AT ALL
     // is the entire gate: with the table absent this errors, CPGONE latches,
@@ -12163,6 +12790,182 @@ async function foldSessionBack(){
   paintTickInto();
   try{ paint(); }catch(e){}
   try{ paintStack(); renderGroupPanel(); }catch(e){}
+}
+
+/* ------------------------------------ porting your own record in (CLU-423) */
+// A club starts empty ON PURPOSE, and the whole "Ticking into" seam (CLU-513)
+// exists because a club's run and your all-time record are different
+// namespaces. So there is no automatic carry-over and there never will be —
+// this is the DELIBERATE way in, asked for twice over: "a button, at creation
+// or after".
+//
+// THREE RULINGS, and each of them is forced by something in the schema rather
+// than chosen for taste.
+//
+// 1. IT IS A COPY, NOT A LINK. Nothing joins the two records afterwards. The
+//    club's run only ever hears about a tick made INSIDE the club; your own
+//    record hears about both (save_progress unions every club write up into
+//    it), and an untick on either side lowers only that side. That asymmetry
+//    is what the bar and the tour already teach, and porting does not change
+//    it — which is exactly why the confirm has to say so before the write
+//    rather than leave it to be discovered.
+//
+// 2. IT MERGES, IT NEVER REPLACES. Two reasons, the first structural.
+//    save_progress() sets the session row to EXACTLY the ids it is passed
+//    (DATABASE.md §4), so sending only the ported set would DELETE any club
+//    tick that is not on your own record — and there is an ordinary way to
+//    hold one: tick it in the club (the club gains it, your record gains it),
+//    then untick it on your own (a replace, so your record loses it; the club
+//    keeps it). The union therefore happens HERE, client side, against the run
+//    on screen. The second reason is that the run is read by the rest of the
+//    club: a merge can only ever raise a number somebody else has already
+//    seen, and a replace could lower one.
+//
+// 3. THERE IS NO ONE-PRESS UNDO, and the confirm says so instead of implying
+//    one. `club_progress` has no update or delete policy at all — the only
+//    write path is save_progress — so an undo would be another full replace of
+//    the run, racing every tick made since, on a row other people are reading.
+//    Unticking in the club is the per-item undo, it lowers the club's run
+//    only, and that is the honest answer.
+//
+// NO MIGRATION. save_progress(p_property, p_club, p_ids) already does all of
+// this; the port is one ordinary call through the one write path. ⚠ CLU-504's
+// tombstone work touches save_progress(): if the session write ever stops
+// being a replace, ruling 2's client-side union becomes wrong (a double
+// union is harmless, a replace of a union is not), so this is the code that
+// has to be re-read when that lands.
+
+// What a port would carry in: your all-time set for THIS list, or null when
+// the page genuinely cannot know it. Null and empty are different answers and
+// the affordance depends on the difference — offering to copy in "nothing"
+// because a read failed is the dead affordance this is written to avoid.
+function portSource(){
+  if(!(CLOUD && user && sb && SLUG)) return null;
+  // A fresh watch is a run, not your record, and splitClub() refuses a session
+  // while one is on — so there is nothing to port from and nowhere to port to.
+  if(FW) return null;
+  // Inside a club, `done` is the CLUB's run. The all-time set is the copy
+  // adopt() captured (it runs on every load, before any club can be resolved),
+  // and a null one means no answer rather than an empty record.
+  if(SESSION) return UNIVSEEN ? new Set(UNIVSEEN) : null;
+  return new Set(done);
+}
+// The ids a port would add, given the run it would land in. `into` is the
+// club's run, or an empty set for a club that does not exist yet.
+function portAdds(into){
+  const src = portSource();
+  if(!src) return null;
+  return [...src].filter(id=> !into.has(id));
+}
+
+// The confirmation, in one place, because it is the only thing standing between
+// a press and a shared write and it has to say all three rulings.
+function portConfirmText(n, name){
+  return 'Bring ' + n + ' ' + plural(n) + ' into ' + name + '?\n\n'
+    + 'A copy, not a link: after this, what you tick on your own does not reach'
+    + ' the club, and unticking in the club does not reach your own record.\n\n'
+    + 'The club can see your run, so this moves its tallies for everyone. There'
+    + ' is no one-press undo — unticking in the club is one at a time.';
+}
+
+// Carry your own record into the club on screen. Returns how many ids it added,
+// 0 when the run already holds everything yours does, -1 when it could not, and
+// -2 when the confirm was declined.
+//
+// `ask` is false only at creation, where the checkbox WAS the deliberate act
+// and the club is a second old with nobody else in it — there is no shared run
+// to disturb and no second decision to take. Everywhere else it confirms.
+async function portProgress(ask){
+  if(!(user && sb && SESSION)) return -1;
+  const club = SESSION, name = SESSNAME || 'this club';
+  // The account's row, read fresh rather than trusted from this page. One read
+  // for a once-ever press is cheap, UNIVSEEN can be behind a tick made on
+  // another device, and a FAILED read is not an empty record — so nothing is
+  // written on one.
+  const univ = await readUniversal();
+  if(!univ) return -1;
+  // Monotonic, the way every other write to UNIVSEEN is: the row can only have
+  // gained ids since adopt() read it, and never dropping one keeps flushEvents'
+  // "was this already on your record" test from turning a catch-up back into a
+  // live tick.
+  if(UNIVSEEN) univ.forEach(i=> UNIVSEEN.add(i));
+  const add = [...univ].filter(id=> !done.has(id));
+  if(!add.length){ PORTNONE = club; return 0; }
+  if(ask && !confirm(portConfirmText(add.length, name))) return -2;
+  // Between the confirm and the write nothing else may have moved the run, so
+  // the union is taken here and not before the round trip above.
+  const before = new Set(done);
+  done = new Set([...done, ...add]);
+  writeLocal();
+  // The ONE write path: pushCloud()'s session branch is a single
+  // save_progress() with [...done], which is the merge. No recordEvents() and
+  // no syncTicks() — these are not new ticks. Every one of them was logged and
+  // mirrored onto its counterpart lists when it was first made, and
+  // flushEvents() would drop them again anyway, since it filters a club batch
+  // against UNIVSEEN precisely so catching a club up on last year's viewing
+  // does not read as tonight's.
+  const landed = await pushCloud();
+  if(!landed){
+    // Put the run back the way it was, so the numbers on screen are not
+    // claiming something the club cannot see. Only when the session survived:
+    // a SAVEGONE fold has already moved `done` somewhere else on purpose.
+    if(SESSION === club){ done = before; writeLocal(); }
+    return -1;
+  }
+  // The run now holds everything your record does, so there is nothing left for
+  // the control to offer and it goes on the next render.
+  PORTNONE = club;
+  paint();
+  return add.length;
+}
+
+// The offer inside the create card. Hidden unless a port would work: a club
+// that does not exist yet has an empty run, so "would it do anything" is just
+// "have you ticked anything here" — plus the one thing the card cannot promise,
+// which is that the new club can HAVE a run of its own. With club_progress or
+// save_progress absent this load, create makes a roster against all-time rows
+// and there is nowhere to copy to, so the control goes rather than lying.
+function paintPortOffer(){
+  const row = $('gc-port'), box = $('g-port'), hint = $('g-port-h');
+  if(!row || !box) return;
+  const n = (CPGONE || SAVEGONE) ? 0 : (portSource() || new Set()).size;
+  row.classList.toggle('hide', !n);
+  if(!n){ box.checked = false; if(hint) hint.textContent = ''; return; }
+  if(hint) hint.textContent = n + ' ' + plural(n)
+    + ', copied in. After this, what you tick on your own stays on your own.';
+}
+
+// The same offer for a club that already exists, behind the club's own
+// overflow door where leaving and renaming live. Drawn only when there is
+// something to add: an account with nothing ticked here, or a club whose run
+// already holds everything yours does, gets no button at all.
+function portRow(){
+  if(!SESSION || PORTNONE === SESSION) return '';
+  const add = portAdds(done);
+  if(!add || !add.length) return '';
+  return '<div class="row" style="margin:0 0 12px">'
+    + '<button id="b-gport">Bring in what I have already ticked</button>'
+    + '<span class="gcp">' + add.length + ' ' + plural(add.length)
+    + ' on your own record aren’t in this club’s run</span></div>';
+}
+function wirePort(){
+  const b = $('b-gport');
+  if(!b) return;
+  b.onclick = async ()=>{
+    b.disabled = true;
+    const n = await portProgress(true);
+    b.disabled = false;
+    if(n > 0) flash('Copied ' + n + ' ' + plural(n) + ' into '
+                    + (SESSNAME || 'the club')
+                    + '. Nothing came off your own record.', 'gmsg2');
+    else if(n === 0) flash('This club’s run already has everything on your own'
+                           + ' record.', 'gmsg2');
+    else if(n === -1) flash('Could not copy them in — nothing was changed.', 'gmsg2');
+    // -2 is a declined confirm. Nothing happened and nothing is said: a line
+    // reporting that you pressed cancel is the site narrating your own choice
+    // back at you.
+    paintStack(); renderGroupPanel();
+  };
 }
 
 // Which session the checkboxes are writing into, said where the checkboxes
@@ -13483,6 +14286,9 @@ function prepSetup(another){
   // The third card is the only part of this form built in script, because it
   // is the only part whose contents depend on anything (see paintFreshCard).
   paintFreshCard();
+  // The first card's one conditional row (CLU-423). Same rule as the fresh
+  // card: it draws only where it would do something.
+  paintPortOffer();
   // Only a RELATIVE schedule is anchored by these fields. A property whose
   // windows carry their own dates ignores both — windows() returns the
   // property's dates and never reads start_date or target_date — so offering
@@ -13936,6 +14742,11 @@ function clubDrawer(){
   if(gdrawer !== 'more')   return '';
   return '<div class="cdrawer" id="cdrawer">'
     + nameRow()
+    // CLU-423, on its own row and deliberately NOT beside Leave: both are
+    // consequential presses and the one you meant is not the one you want to
+    // find by accident. portRow() is an empty string unless it would do
+    // something, so the door's label does not have to promise it.
+    + portRow()
     + '<div class="row"><button id="b-grefresh">Refresh</button>'
     + (hasClubIcs()
         ? '<button id="b-gics" title="'
@@ -14111,6 +14922,7 @@ function renderGroupPanel(){
   wireClubIcons();
   wireClubFoot();
   wireName();
+  wirePort();
   wireRename();
   wireResched();
   wireRoster();
@@ -15280,9 +16092,15 @@ function filterMenu(q){
   const pool = (!needle && MEDIAF.size)
     ? list.filter(m=> (m.media||[]).some(k=> MEDIAF.has(k)))
     : list;
-  const hits = !needle ? pool : pool.filter(m=>
-    (m.title+' '+(m.subtitle||'')+' '+(m.kind||'')+' '+(m.year||'')).toLowerCase()
-      .indexOf(needle) >= 0);
+  // ⚠ ALIASES are part of the haystack (CLU-542). Nathan: "Grand Theft Auto is
+  // not findable by typing gta". It was not ranked low — "GTA" is in no title,
+  // subtitle, kind or year, so the list did not match at all and the only name
+  // most people have for it returned "Nothing matches". The names live in
+  // tools/data/aliases.json and ride in on the manifest, so this function
+  // never learns a single title: see the tier table below for how they rank.
+  const hay = m=> (m.title+' '+(m.subtitle||'')+' '+(m.kind||'')+' '
+                   +(m.year||'')+' '+(m.aliases||[]).join(' ')).toLowerCase();
+  const hits = !needle ? pool : pool.filter(m=> hay(m).indexOf(needle) >= 0);
 
   // ⚠ RELEVANCE, not alphabet (CLU-509). Nathan: "make sure that when you start
   // typing in letters in the search box that mega lists appear at the top. so
@@ -15298,16 +16116,37 @@ function filterMenu(q){
   // are reached by its own `into` rows and sorted above their parent purely on
   // first name.
   //
-  // Four tiers, best first. Alphabetical still breaks the final tie, so nothing
+  // Six tiers, best first. Alphabetical still breaks the final tie, so nothing
   // moves that has no reason to.
+  //
+  // An ALIAS is a name, so it ranks like one (CLU-542) — but BELOW the real
+  // title, whole and in part. A word of a list's own name beats a name it is
+  // merely known by; a name it is known by beats letters that only happen to
+  // sit inside its title. Putting aliases second instead, above the title's
+  // own words, went wrong immediately and in one shape: two or three letters
+  // is a person scanning, not naming, and every long alias owns those letters.
+  // `ku` left Akira Kurosawa for Martial Arts (kung fu), `night` left Bad Movie
+  // Night for Slashers (nightmare on elm street), `can` left The FPS Canon for
+  // Palme d'Or (cannes), `so` left Sight & Sound for FromSoftware
+  // (soulsborne). One rung lower, all four go back to being right and `gta`
+  // still wins, because no title has a word starting "gta" to lose to.
+  //
+  // Which is also why an alias equal to another list's TITLE is refused by the
+  // build rather than ranked here: ranking can settle which of two names is
+  // the better match, but not which of two lists you meant.
   const tier = m=>{
     const t = (m.title || '').toLowerCase();
+    const al = m.aliases || [];
     if(t.indexOf(needle) === 0) return 0;                 // title starts with it
     // a WORD inside the title starts with it: `star` finds Star Trek above
     // Battlestar, which a plain substring test calls equally good
     if(t.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)) return 1;
-    if(t.indexOf(needle) >= 0) return 2;                  // anywhere in the title
-    return 3;                       // only the subtitle, kind or year matched
+    if(al.some(a=> a.indexOf(needle) === 0)) return 2;    // an alias starts with it
+    if(t.indexOf(needle) >= 0) return 3;                  // anywhere in the title
+    // a word inside a multi-word alias: `hakusho` against `yuyu hakusho`
+    if(al.some(a=> a.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)))
+      return 4;
+    return 5;         // only the subtitle, kind, year or mid-alias matched
   };
   if(needle){
     // Within a tier a MEGA LIST outranks an ordinary one. It is the doorway to
@@ -18608,6 +19447,12 @@ $('b-gcreate').onclick = async ()=>{
   if(start && end && end <= start){
     flash('The finish date has to be after the start.','gmsg'); return;
   }
+  // CLU-423, captured BEFORE the round trips: refreshGroup() below re-renders
+  // the whole tile, and prepSetup() hides this row again the moment the port has
+  // nothing left to carry — so reading the box afterwards would read a control
+  // that had already been reset.
+  const wantPort = !!($('gc-port') && !$('gc-port').classList.contains('hide')
+                      && $('g-port') && $('g-port').checked);
   $('b-gcreate').disabled = true;
   const { data, error } = await sb.rpc('create_group', {
     p_name: title,
@@ -18645,7 +19490,36 @@ $('b-gcreate').onclick = async ()=>{
   $('gtitle').value = ''; $('gcode').value = '';
   await refreshGroup(false);
   startGroupPoll();
-  if(made) flash('Club started. Send the code '+made.code+' to whoever’s joining.','gmsg2');
+
+  // CLU-423. refreshGroup() has resolved the new club into a session by now
+  // (loadGroups → loadMembers → switchSession), so this is the first moment the
+  // port has somewhere to write. No confirm: the checkbox was the deliberate
+  // act, its label said what would happen, and a club one second old has nobody
+  // else in it — there is no shared run to disturb and no second decision to
+  // take. The `SESSION === made.id` test is not ceremony: if club_progress or
+  // save_progress went missing between the offer and now, the club is a roster
+  // against all-time rows and there is nowhere to copy to.
+  let ported = 0;
+  if(wantPort && made && SESSION === made.id) ported = await portProgress(false);
+  else if(wantPort) ported = -1;
+  if(wantPort){ paintStack(); renderGroupPanel(); }
+
+  if(!made) return;
+  const code = ' Send the code ' + made.code + ' to whoever’s joining.';
+  if(ported > 0)
+    flash('Club started with your ' + ported + ' ' + plural(ported)
+          + ' in it.' + code, 'gmsg2');
+  // The offer counted what this device holds; the port copies what your ACCOUNT
+  // holds, and the two come apart for somebody whose ticks have never synced.
+  // Rare, reachable, and it has to be said — the checkbox promised a number.
+  else if(wantPort && ported === 0)
+    flash('Club started, but nothing copied in: none of your ticks for this list'
+          + ' have reached your account yet.' + code, 'gmsg2');
+  else if(wantPort && ported < 0)
+    flash('Club started, but your own ticks did not copy in — it starts empty.'
+          + ' The ⋯ menu can still bring them in.' + code, 'gmsg2');
+  else
+    flash('Club started.' + code, 'gmsg2');
 };
 
 $('b-gjoin').onclick = async ()=>{
