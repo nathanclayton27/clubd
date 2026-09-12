@@ -4,7 +4,8 @@ name: check
 # fresh build (a stale manifest means someone forgot to rebuild), the tree
 # must be self-consistent (no manifest entry without its JSON — the class
 # of miss that once 404'd seven live pages), and the content linter must
-# come back clean beyond the known order ties.
+# come back clean beyond the known order ties. The wiki parser's pins run
+# here too: four rounds of fixes each added tests nothing on push executed.
 on:
   push:
     branches: [main]
@@ -29,6 +30,11 @@ jobs:
             || { echo "::error::index.html/manifest/l are stale — run src/build.py and commit the result"; exit 1; }
       - name: Content lint + tree consistency
         run: python tools/qa_lint.py
+      # The wiki parser's pins. Four rounds of fixes each added tests that
+      # nothing on push executed, so a regression could only be found by
+      # whoever next ran the file by hand.
+      - name: Wiki parser pins
+        run: python tools/test_wiki_parser.py
 
   # Blocks any commit that carries something shaped like a credential.
   # Config in .gitleaks.toml: defaults plus an allowlist for the public
