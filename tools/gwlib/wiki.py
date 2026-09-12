@@ -296,6 +296,35 @@ _BARE_RENDERS = {
     "asterisk": "*",
 }
 
+# The same family, this time WITH arguments — and the same fabrication one
+# round later. `{{dagger|sup=yes}}` (588 uses over the cached corpus) and
+# `{{double dagger|alt=Award winner}}` (216, on Palme d'Or, the Criterion list
+# and four Korean awards articles) are the SAME templates rendering the SAME
+# glyph; the argument is a rendering hint and not content — `sup=` asks for a
+# superscript, `alt=` gives the glyph its accessible text. clean()'s keep-the-
+# last-argument rule below cannot know that and handed the hint back as display
+# text, so `[[Bille August]]{{double dagger|alt=Consecutive films}}` came back
+# as the name "Bille Augustalt=Consecutive films" — the identical shape to
+# "The X-Filesdouble dagger", one round on, with an `alt=` in it.
+#
+# Narrow on purpose, and it is a rule about these four names rather than a rule
+# about arguments. For almost every other template the last argument IS the
+# content ({{sort|Kong, King|King Kong}}, {{Start date|2024|1|1}}), so a general
+# "drop the arguments" rule would delete data the way round one's blanket drop
+# of unrecognised templates took 498 fields off Jackie Chan's filmography. The
+# glyph is kept for the reason the argument-less case keeps it: in an awards
+# crosstab a dagger alone IS the cell and emptying it says the opposite of what
+# the source says. What a marker MEANS is still never part of a NAME, which is
+# display_title()'s problem and is still solved there.
+_MARKER_TEMPLATES = ("double dagger", "double-dagger", "dagger", "asterisk")
+_MARKER_WITH_ARGS = re.compile(
+    r"\{\{\s*(%s)\s*\|[^{}]*\}\}" % "|".join(_MARKER_TEMPLATES), re.I)
+
+
+def _marker_with_args(m):
+    """`{{dagger|sup=yes}}` -> the glyph, arguments dropped. See above."""
+    return _BARE_RENDERS[m.group(1).lower()]
+
 
 def _bare(m):
     """One argument-less `{{name}}` as display text. See _BARE_RENDERS."""
@@ -321,7 +350,8 @@ def clean(t):
     """Wikitext -> display text. Comments go first, then footnotes vanish whole;
     wikilinks keep their label; inline templates keep their last argument;
     an argument-less template renders as its own name unless _BARE_RENDERS
-    says it renders nothing; italics drop."""
+    says it renders nothing; a footnote marker renders its glyph and drops
+    any arguments; italics drop."""
     # First, and before the template passes: a comment can contain braces and
     # pipes of its own, and two Invincible titles carry a whole paragraph of
     # editor's note inline.
@@ -335,6 +365,7 @@ def clean(t):
     t = re.sub(r"\s*\n\s*\*\s*", ", ", t)
     t = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", t)
     t = re.sub(r"\[\[([^\]]+)\]\]", r"\1", t)
+    t = _MARKER_WITH_ARGS.sub(_marker_with_args, t)
     t = re.sub(r"\{\{([^{}|]*)\}\}", _bare, t)
     t = re.sub(r"\{\{[^{}|]*\|(?:[^{}|]*\|)*([^{}|]*)\}\}", r"\1", t)
     t = t.replace("{{", "").replace("}}", "").replace("''", "")
@@ -710,6 +741,30 @@ _WHOLLY_PARENTHESISED = re.compile(r"\(([^()]*)\)\Z")
 # it is a character titles do use.
 _MARKER_GLYPHS = "†‡§¶"
 
+# A value that is not a name at all but the apparatus word an editor writes
+# WHERE a name will go. Mystery Science Theater 3000's season 14 has a
+# scheduled episode whose `| RTitle = TBA`, and a row titled "TBA" is the same
+# fabrication as the thirteen Frieren shorts titled "(Official English title
+# not available)" — an editor saying there is no title yet, published as the
+# title — with no bracket and no template to key off.
+#
+# This IS a blocklist, which this module has a measured reason to distrust:
+# clean() dropping every argument-less template it did not recognise took 498
+# fields off Jackie Chan's filmography. The trade runs the other way here.
+# clean() keeps the whole corpus's awards crosstabs alive by DEFAULTING TO
+# KEEP, and it must — {{TBA}} in a release-date cell is the cell's content and
+# clean() still returns "TBA" for it. display_title() is asked a narrower
+# question, "is this a title", and refusing yields "" plus the caller's own
+# coverage assert, while accepting publishes an episode name nobody wrote.
+#
+# Matched against the WHOLE cleaned value and case-insensitively, so it cannot
+# reach a real title that merely contains the letters: "TBA" is refused,
+# "Tbilisi" and "To Be Announced (Part 1)" are not. It is deliberately not
+# applied to |Title, which is the source's own name field rather than its
+# display markup, and no row in the cached corpus writes a placeholder there.
+_PLACEHOLDER_TITLES = {"tba", "tbd", "tba/tbd", "to be announced",
+                       "to be determined", "n/a", "?"}
+
 
 def display_title(raw):
     """An |RTitle / |AltTitle value as a plain title, or "" if it is not one.
@@ -726,6 +781,7 @@ def display_title(raw):
         ''[[The X-Files (film)|The X-Files]]''
           {{double dagger}}                  is a title plus a legend marker
         ''(Official English title not available)''   is not a title at all
+        TBA                                  is not a title yet
 
     So this accepts the first shape and answers for the rest, and the test is
     what is LEFT after clean(): a value wrapped in quotes end to end yields what
@@ -764,6 +820,10 @@ def display_title(raw):
       never a name — it is a gloss, a translation, a part marker, or this. Only
       a value that is ONE parenthetical end to end is refused, so a title
       carrying a bracketed alias keeps its name.
+    - AN APPARATUS WORD is refused outright, on the same grounds and with the
+      same narrowness: only a value that is nothing BUT the word. See
+      _PLACEHOLDER_TITLES, which is also where the reason a blocklist is
+      acceptable here and not in clean() is written down.
     """
     t = clean(raw or "")
     t = t.strip(_MARKER_GLYPHS + " ")
@@ -773,8 +833,10 @@ def display_title(raw):
         return ""
     m = _WHOLLY_QUOTED.match(t)
     if m:
-        return m.group(1).strip()
-    if '"' in t or "<" in t or ">" in t:
+        t = m.group(1).strip()
+    elif '"' in t or "<" in t or ">" in t:
+        return ""
+    if t.lower() in _PLACEHOLDER_TITLES:
         return ""
     return t
 

@@ -511,14 +511,31 @@ def main():
     for k, titles in shared.items():
         for t in titles:
             by_list.setdefault(t, []).append(keys[k])
-    assert list(by_list) == ["Best Picture"], by_list
     order = [f["t"] for f in films]
-    sharing = ("%s are on %s as well. Ticking one ticks the other: film rows "
-               "pair across lists by title and year, so a film watched here is "
-               "watched there. Nothing is duplicated and no hours are counted "
-               "twice, because every list totals only its own rows."
-               % (and_list(sorted(by_list["Best Picture"], key=order.index)),
-                  "Best Picture"))
+    phrases = ["%s %s also on %s"
+               % (and_list(sorted(by_list[t], key=order.index)),
+                  "is" if len(by_list[t]) == 1 else "are", t)
+               for t in sorted(by_list, key=lambda t: (-len(by_list[t]), t))]
+    sharing = ("%s. Ticking one ticks the rest: film rows pair across lists by "
+               "title and year, so a film watched here is watched there. "
+               "Nothing is duplicated and no hours are counted twice, because "
+               "every list totals only its own rows." % "; ".join(phrases))
+    # The assert is on what the NOTE says, not on which other lists exist. It
+    # used to read `list(by_list) == ["Best Picture"]`, which was a count of
+    # other lists dressed up as a check on the sentence: the day
+    # kevin-bacon.json picked up Mystic River there were two, and the generator
+    # stopped dead before writing anything (CLU-533) on a catalogue growing,
+    # which is the one thing it has to survive. What must stay true as more
+    # lists arrive is that every list a shared film is on, and every shared
+    # film, is NAMED in the sentence a reader actually gets — which is the
+    # thing the assert was there to protect.
+    for name, titles in by_list.items():
+        assert name in sharing, (name, sharing)
+        for film in titles:
+            assert film in sharing, (film, sharing)
+    named = {f for ts in by_list.values() for f in ts}
+    assert named == {keys[k] for k in shared}, \
+        (sorted(named), sorted(keys[k] for k in shared))
 
     p = {
         "slug": SLUG,

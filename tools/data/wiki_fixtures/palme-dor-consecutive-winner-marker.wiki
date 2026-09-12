@@ -1,0 +1,50 @@
+== Multiple winners ==
+Ten directors or director duos have won the award twice. Three of them (<sup>{{double dagger|alt=Consecutive films}}</sup>) have won for consecutive films.<ref name="multiplepalme">{{cite web |last=Pineda Pacheco |first=Diego |url=https://collider.com/directors-with-two-palme-dor-cannes/ |title=All 9 Directors Who Have Won 2 Palme d'Or, from Coppola to Östlund |website=[[Collider (website)|Collider]] |date=24 May 2023 |access-date=20 July 2023 |archive-date=26 May 2024 |archive-url=https://web.archive.org/web/20240526190745/https://collider.com/directors-with-two-palme-dor-cannes/ |url-status=live }}</ref><ref>{{cite web |url=https://variety.com/2016/film/festivals/cannes-film-festival-2016-winners-palme-d-or-1201780561/ |title=Cannes: Ken Loach Wins His Second Palme d'Or for 'I, Daniel Blake' |last1=Lodge |first1=Guy |last2=Gleiberman |first2=Owen |author2-link=Owen Gleiberman |date=22 May 2016 |website=Variety |access-date=23 May 2016 |archive-date=23 April 2023 |archive-url=https://web.archive.org/web/20230423063553/https://variety.com/2016/film/festivals/cannes-film-festival-2016-winners-palme-d-or-1201780561/ |url-status=live }}</ref>
+
+{| class="wikitable" style="text-align:center;"
+! scope="col"| Number of wins
+! scope="col"| Directors
+! scope="col"| Nationality
+! scope="col"| Films
+|-
+! rowspan="10"| 2
+| [[Alf Sjöberg]]
+| Sweden
+| ''[[Torment (1944 film)|Torment]]'' (1946), ''[[Miss Julie (1951 film)|Miss Julie]]'' (1951)
+|-
+| [[Francis Ford Coppola]]
+| United States
+| ''[[The Conversation]]'' (1974), ''[[Apocalypse Now]]'' (1979)
+|-
+| [[Bille August]] {{double dagger|alt=Consecutive films}}
+| Denmark
+| ''[[Pelle the Conqueror]]'' (1988), ''[[The Best Intentions]]'' (1992)
+|-
+| [[Emir Kusturica]]
+| Yugoslavia
+| ''[[When Father Was Away on Business]]'' (1985), ''[[Underground (1995 film)|Underground]]'' (1995)
+|-
+| [[Shōhei Imamura]]
+| Japan
+| ''[[The Ballad of Narayama (1983 film)|The Ballad of Narayama]]'' (1983), ''[[The Eel (film)|The Eel]]'' (1997)
+|-
+| [[Dardenne brothers|Jean-Pierre & Luc Dardenne]]
+| Belgium
+| ''[[Rosetta (film)|Rosetta]]'' (1999), ''[[L'Enfant (film)|L'Enfant]]'' (2005)
+|-
+| [[Michael Haneke]] {{double dagger|alt=Consecutive films}}
+| Austria
+| ''[[The White Ribbon]]'' (2009), ''[[Amour (2012 film)|Amour]]'' (2012)
+|-
+| [[Ken Loach]]
+| United Kingdom
+| ''[[The Wind That Shakes the Barley (film)|The Wind That Shakes the Barley]]'' (2006), ''[[I, Daniel Blake]]'' (2016)
+|-
+| [[Ruben Östlund]] {{double dagger|alt=Consecutive films}}
+| Sweden
+| ''[[The Square (2017 film)|The Square]]'' (2017), ''[[Triangle of Sadness]]'' (2022)
+|-
+| [[Cristian Mungiu]]
+| Romania
+| ''[[4 Months, 3 Weeks and 2 Days]]'' (2007), ''[[Fjord (film)|Fjord]]'' (2026)
+|}

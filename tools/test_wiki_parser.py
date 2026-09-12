@@ -178,6 +178,46 @@ def _005_display_title(raw):
 
 
 # --------------------------------------------------------------------------
+# The FOURTH before-photograph: the parser at b51e564, the round-3 fix as it
+# merged. It fixed the argument-LESS marker and the whole parenthetical, and
+# left standing the two defects CLU-531 carded: a marker written WITH an
+# argument still leaked the argument, and a bare placeholder was still a title.
+#
+# Both are swaps of the one thing that moved rather than copies of the whole
+# function, exactly as _005_clean is: for the marker it is the pattern that
+# recognises an argumented marker, and for the placeholder it is the set of
+# words that are not names. Switch them off and the module IS b51e564 --
+# display_title()'s only other change was `return m.group(1).strip()` becoming
+# an assignment, which is the same function when the set is empty.
+# --------------------------------------------------------------------------
+_B51_NOTHING = re.compile(r"(?!x)x")       # matches nowhere in any string
+
+
+def _b51_clean(t):
+    """clean() at b51e564: no argumented-marker pass, so `{{dagger|sup=yes}}`
+    and `{{double dagger|alt=Award winner}}` fell through to the keep-the-last-
+    argument rule and an editor's rendering hint became display text."""
+    live = wiki._MARKER_WITH_ARGS
+    wiki._MARKER_WITH_ARGS = _B51_NOTHING
+    try:
+        return wiki.clean(t)
+    finally:
+        wiki._MARKER_WITH_ARGS = live
+
+
+def _b51_display_title(raw):
+    """display_title() at b51e564: reading that clean(), and with no
+    placeholder rule — so a value with no quote, no tag, no marker glyph and
+    no brackets left in it was a title, whatever it said."""
+    live_m, live_p = wiki._MARKER_WITH_ARGS, wiki._PLACEHOLDER_TITLES
+    wiki._MARKER_WITH_ARGS, wiki._PLACEHOLDER_TITLES = _B51_NOTHING, frozenset()
+    try:
+        return wiki.display_title(raw)
+    finally:
+        wiki._MARKER_WITH_ARGS, wiki._PLACEHOLDER_TITLES = live_m, live_p
+
+
+# --------------------------------------------------------------------------
 # 1. a block closed at the first line-initial `}}` and swallowed the next row
 # --------------------------------------------------------------------------
 def test_inline_close_does_not_swallow_the_next_row():
@@ -921,6 +961,134 @@ def test_a_title_that_merely_contains_a_parenthesis_is_kept():
 
     eq(wiki.display_title("(A) and (B)"), "(A) and (B)",
        "two parentheticals are not ONE parenthetical, so the rule leaves them")
+
+
+# --------------------------------------------------------------------------
+# D1. a marker template's ARGUMENT shipped welded onto a name (CLU-531)
+# --------------------------------------------------------------------------
+def test_a_marker_templates_arguments_do_not_become_part_of_a_name():
+    """Round three taught _BARE_RENDERS the marker glyphs and fixed
+    `{{double dagger}}`. It did not touch `{{double dagger|alt=...}}`, which is
+    the SAME template with a rendering hint on it, so that one still took the
+    keep-the-last-argument rule and handed the hint back as display text.
+
+    The Palme d'Or article's "Multiple winners" table marks the directors who
+    won for consecutive films that way, and its own legend above the table
+    explains the glyph. `[[Bille August]] {{double dagger|alt=Consecutive
+    films}}` came back as "Bille August alt=Consecutive films", and
+    display_title() accepted it because nothing quote-shaped, tag-shaped or
+    bracket-shaped was left in it — the identical fabrication to
+    "The X-Filesdouble dagger", one round on."""
+    t = fixture("palme-dor-consecutive-winner-marker")
+    ok("have won for consecutive films" in t,
+       "the fixture carries the article's own legend for the marker")
+    rows = [l for l in t.splitlines()
+            if l.startswith("|") and "{{double dagger|" in l]
+    eq(len(rows), 3, "three of the ten directors are marked")
+
+    cell = rows[0][1:].strip()
+    eq(cell, "[[Bille August]] {{double dagger|alt=Consecutive films}}",
+       "the source's own cell, read whole")
+    eq(_b51_clean(cell), "Bille August alt=Consecutive films",
+       "b51e564: the template's ARGUMENT, welded to the end of the name")
+    eq(_b51_display_title(cell), "Bille August alt=Consecutive films",
+       "and display_title() saw no quote and no tag, so it shipped it")
+    eq(wiki.clean(cell), "Bille August ‡",
+       "the marker now renders the glyph it renders")
+    eq(wiki.display_title(cell), "Bille August",
+       "and the name is what the source calls him")
+
+    # written without the space, which is how the card reproduced it and how
+    # the four Korean awards articles write it
+    tight = "[[Bille August]]{{double dagger|alt=Consecutive films}}"
+    eq(_b51_clean(tight), "Bille Augustalt=Consecutive films",
+       "b51e564: and with no space to make it look like two things")
+    eq(wiki.display_title(tight), "Bille August", "it is still one name")
+
+
+def test_an_argumented_marker_alone_in_a_cell_still_says_something():
+    """The guard on that fix, and it is the same guard as the argument-less
+    one: `{{dagger|sup=yes}}` is the whole content of a great many awards-table
+    cells, where the article's legend says it means posthumous or deceased, and
+    an emptied cell states the opposite of a marked one. So the ARGUMENT is
+    dropped and the GLYPH is rendered — and it is a rule about four template
+    names, not about arguments, because for almost every other template the
+    last argument is the content."""
+    for raw, want in (("{{dagger|sup=yes}}", "†"),
+                      ("{{double dagger|alt=Award winner}}", "‡"),
+                      ("{{double-dagger|alt=x}}", "‡"),
+                      ("{{asterisk|sup=yes}}", "*"),
+                      ("{{Dagger|SUP=yes}}", "†"),
+                      ("{{Double Dagger|alt=Award winner}}", "‡")):
+        eq(wiki.clean(raw), want, "clean(%r)" % raw)
+        ok(wiki.clean(raw) != "", "and it is never empty: %r" % raw)
+        eq(_b51_clean(raw), raw[raw.index("|") + 1:].rstrip("}"),
+           "b51e564 kept the whole argument, `alt=` and all: %r" % raw)
+
+    # every name the pattern recognises has a glyph to render, so the two
+    # spellings of the rule cannot drift apart
+    for name in wiki._MARKER_TEMPLATES:
+        ok(name in wiki._BARE_RENDERS,
+           "{{%s}} renders the same glyph with or without arguments" % name)
+
+    # and the narrowness: an argumented template that is NOT a marker still
+    # keeps its last argument, which is where its content is
+    for raw, want in (("{{sort|Kong, King|King Kong}}", "King Kong"),
+                      ("{{Start date|2024|1|1}}", "1"),
+                      ("{{small|(''22'')}}", "(22)")):
+        eq(wiki.clean(raw), want,
+           "clean(%r) is untouched by the marker rule" % raw)
+
+
+# --------------------------------------------------------------------------
+# D2. a bare placeholder shipped as an episode title (CLU-531)
+# --------------------------------------------------------------------------
+def test_an_rtitle_that_is_only_a_placeholder_is_not_a_title():
+    """Mystery Science Theater 3000's season 14 has a scheduled episode with no
+    announced film: the row carries no |Title and `| RTitle = TBA`. It is the
+    Frieren shape — an editor writing where the name will go, rather than a
+    name — with nothing bracket-shaped or template-shaped to key off, so round
+    three left it standing and the row came back as an episode called "TBA"."""
+    t = fixture("mst3k-s14-tba-rtitle")
+    before, tba, after = wiki.episodes(t)
+
+    eq(tba.fields["RTitle"], "TBA", "the source's own value")
+    ok("Title" not in tba.fields, "and there is no |Title to prefer")
+    eq(_b51_display_title(tba.fields["RTitle"]), "TBA",
+       "b51e564: the placeholder, shipped as the episode's name")
+    eq(tba.title, "", "an empty title is better than a wrong one")
+    eq(tba.rtitle, "TBA",
+       "and the raw value is still on the row for a caller that wants it")
+    eq((tba.num_overall, tba.num_in_season), (233, 3),
+       "the row is otherwise read exactly as before")
+    eq(tba.year, 2026, "still dated")
+
+    # the controls: the rows either side of it must not move
+    eq(before.title, "Deathsport", "a real RTitle on the same table is a title")
+    eq(after.title, "Space Raiders", "likewise")
+
+
+def test_a_title_that_merely_contains_a_placeholder_word_is_kept():
+    """The guard, and it has two halves. clean() must not move at all: {{TBA}}
+    is the entire content of an awards or release-date cell and keeping its name
+    is what stopped 498 Jackie Chan fields being deleted, so the refusal lives
+    in display_title() and nowhere else. And it is a WHOLE-value match, so a
+    real title that carries the letters is untouched."""
+    eq(wiki.clean("{{TBA}}"), "TBA",
+       "clean() still says what the cell says — the B1 pin, restated here")
+    eq(wiki.clean("TBA"), "TBA", "and a bare one is still text")
+
+    for raw, want in (("TBA", ""), ("{{TBA}}", ""), ("tba", ""),
+                      ("''TBA''", ""), ('"TBA"', ""), ("TBD", ""),
+                      ("N/A", ""), ("?", ""),
+                      ("Tbilisi", "Tbilisi"), ("TBA and TBD", "TBA and TBD"),
+                      ("To Be Announced (Part 1)", "To Be Announced (Part 1)"),
+                      ("The N/A Files", "The N/A Files")):
+        eq(wiki.display_title(raw), want, "display_title(%r)" % raw)
+
+    for raw in ("TBA", "n/a"):
+        eq(_b51_display_title(raw), raw,
+           "b51e564 accepted %r as a name" % raw)
 
 
 # --------------------------------------------------------------------------

@@ -1,0 +1,27 @@
+{{Episode list
+ | EpisodeNumber   = 232
+ | EpisodeNumber2  = 2
+ | RTitle          = ''[[Deathsport]]''
+ | Aux3            = 1978, Color, [[New World Pictures]], United States
+ | OriginalAirDate = {{Start date|2026|10|23}}
+ | ShortSummary    = 
+ | LineColor       = 000080
+}}
+{{Episode list
+ | EpisodeNumber   = 233
+ | EpisodeNumber2  = 3
+ | RTitle          = TBA
+ | Aux3            = TBA
+ | OriginalAirDate = {{Start date|2026|10|30}}
+ | ShortSummary    = 
+ | LineColor       = 000080
+}}
+{{Episode list
+ | EpisodeNumber   = 234
+ | EpisodeNumber2  = 4
+ | RTitle          = ''[[Space Raiders (film)|Space Raiders]]''
+ | Aux3            = 1983, Color, New World Pictures, United States
+ | OriginalAirDate = {{Start date|2026|11|20}}
+ | ShortSummary    = Guest appearances by Trace Beaulieu as Dr. Clayton Forrester and Frank Conniff as TV's Frank.
+ | LineColor       = 000080
+}}
