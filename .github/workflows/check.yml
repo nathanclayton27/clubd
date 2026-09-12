@@ -30,6 +30,12 @@ jobs:
             || { echo "::error::index.html/manifest/l are stale — run src/build.py and commit the result"; exit 1; }
       - name: Content lint + tree consistency
         run: python tools/qa_lint.py
+      # CLU-510. Every list carries a genre or names the clause exempting it.
+      # Here rather than nowhere because the tagging pass is 185 judgement
+      # calls made once, and the only thing that can undo it is a new list
+      # arriving with no line in the table — which nobody would notice.
+      - name: Every list has a genre
+        run: python tools/genrecheck.py
       # The wiki parser's pins. Four rounds of fixes each added tests that
       # nothing on push executed, so a regression could only be found by
       # whoever next ran the file by hand.
