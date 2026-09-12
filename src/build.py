@@ -642,12 +642,104 @@ def main():
     MEDIA_FIX = {"nasuverse": ["anime", "games", "manga", "movies"],
                  "bottle-episodes": ["tv"]}
 
+    # ---- searchable aliases (CLU-542) -----------------------------------
+    # Nathan: "Grand Theft Auto is not findable by typing gta". The typed
+    # search reads title, subtitle, kind and year, and "GTA" is in none of
+    # them, so the list was not ranked low — it was absent. A "gta" branch in
+    # filterMenu would have fixed one list and left the other hundred; an
+    # alias is data, and the ranker never learns a single title.
+    #
+    # ONE side table rather than an `aliases` field per property file, because
+    # all 231 files in properties/ are written by a generator under tools/ —
+    # hand-editing them is how nine lists picked up content drift — and
+    # because a collision only shows up when every alias is in one place.
+    # Read exactly the way tools/data/sequences.json is read.
+    aliases = {}
+    alf = ROOT / "tools" / "data" / "aliases.json"
+    if alf.exists():
+        raw = json.loads(alf.read_text(encoding="utf-8"))
+        refused = {k.strip().lower(): v
+                   for k, v in (raw.get("refused") or {}).items()}
+        title_of = {p["slug"]: p["title"] for p in props}
+        by_title = {}
+        for p in props:
+            by_title.setdefault(p["title"].strip().lower(), []).append(p["slug"])
+        claimed = {}
+        for slug, names in sorted((raw.get("aliases") or {}).items()):
+            if slug not in title_of:
+                fail("aliases.json names %r, which is not a list in the "
+                     "catalogue" % slug)
+            if not names:
+                fail("aliases.json: %s has an empty alias list — drop the key "
+                     "rather than shipping a field that says nothing" % slug)
+            title = title_of[slug].strip().lower()
+            for a in names:
+                if a != a.strip().lower():
+                    fail("aliases.json: %s alias %r must be lowercase and "
+                         "trimmed — the search lowercases what you type, so an "
+                         "alias that is not lowercase can never match"
+                         % (slug, a))
+                if len(a) < 2:
+                    fail("aliases.json: %s alias %r is one character — that is "
+                         "not a name, it is every list" % (slug, a))
+                if a in refused:
+                    fail("aliases.json: %s claims %r, which the same file's "
+                         "`refused` map rules out — %s" % (slug, a, refused[a]))
+                owners = by_title.get(a)
+                if owners and owners != [slug]:
+                    fail("aliases.json: %s claims %r, which is the real title "
+                         "of %s. An alias that is another list's name makes "
+                         "search worse than no alias at all."
+                         % (slug, a, ", ".join(owners)))
+                if a in title:
+                    fail("aliases.json: %s alias %r is already inside its own "
+                         "title %r — typing it finds the list today, so the "
+                         "alias is dead weight in every page load"
+                         % (slug, a, title_of[slug]))
+                claimed.setdefault(a, []).append(slug)
+            aliases[slug] = sorted(set(names))
+        # Redundancy within one list: the ranker treats an alias PREFIX as a
+        # name, so "fate stay night" already answers to "fate" and a separate
+        # "fate" entry only makes index.html bigger.
+        for slug, names in sorted(aliases.items()):
+            for a in names:
+                dup = [b for b in names if b != a and b.startswith(a)]
+                if dup:
+                    fail("aliases.json: %s lists both %r and %r — an alias "
+                         "prefix already matches, so %r is redundant"
+                         % (slug, a, dup[0], a))
+        shared = {a: o for a, o in sorted(claimed.items()) if len(o) > 1}
+        print("  aliases: %d term(s) over %d list(s)"
+              % (sum(len(v) for v in aliases.values()), len(aliases)))
+        if shared:
+            # legitimate: both Spider-Man runs answer to "spiderman". Printed
+            # so a shared alias is reviewed rather than discovered later.
+            print("      %d shared by more than one list: %s"
+                  % (len(shared), "; ".join("%s -> %s" % (a, ", ".join(o))
+                                            for a, o in shared.items())))
+        # An alias that is a PREFIX of a different list's title is not an
+        # error — that list matches in tier 0 and stays first — but it is the
+        # near-miss a reviewer wants to see, so the build says it out loud.
+        near = sorted({(a, o[0], t) for a, o in claimed.items()
+                       for t, s in by_title.items()
+                       if t.startswith(a) and not set(s) & set(o)})
+        if near:
+            print("      %d alias(es) also begin another list's title (that "
+                  "list still ranks first): %s"
+                  % (len(near), "; ".join("%s (%s) vs %s" % x for x in near)))
+
     manifest = [
         {
             "slug": p["slug"],
             "media": MEDIA_FIX.get(p["slug"], media_of(p)),
             "title": p["title"],
             "subtitle": p.get("subtitle", ""),
+            # the names people type that the title does not contain — "gta",
+            # "mash", "lotr". Absent rather than [] on the 130-odd lists whose
+            # titles are already what anyone would type, because the manifest
+            # is inlined in index.html and an empty array per list is 130
+            # wasted brackets in every page load. See tools/data/aliases.json.
+            **({"aliases": aliases[p["slug"]]} if aliases.get(p["slug"]) else {}),
             "kind": p.get("kind", ""),
             "year": p.get("year", ""),
             # carried through so the number that produced this order is

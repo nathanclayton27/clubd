@@ -10258,9 +10258,15 @@ function filterMenu(q){
   const pool = (!needle && MEDIAF.size)
     ? list.filter(m=> (m.media||[]).some(k=> MEDIAF.has(k)))
     : list;
-  const hits = !needle ? pool : pool.filter(m=>
-    (m.title+' '+(m.subtitle||'')+' '+(m.kind||'')+' '+(m.year||'')).toLowerCase()
-      .indexOf(needle) >= 0);
+  // ⚠ ALIASES are part of the haystack (CLU-542). Nathan: "Grand Theft Auto is
+  // not findable by typing gta". It was not ranked low — "GTA" is in no title,
+  // subtitle, kind or year, so the list did not match at all and the only name
+  // most people have for it returned "Nothing matches". The names live in
+  // tools/data/aliases.json and ride in on the manifest, so this function
+  // never learns a single title: see the tier table below for how they rank.
+  const hay = m=> (m.title+' '+(m.subtitle||'')+' '+(m.kind||'')+' '
+                   +(m.year||'')+' '+(m.aliases||[]).join(' ')).toLowerCase();
+  const hits = !needle ? pool : pool.filter(m=> hay(m).indexOf(needle) >= 0);
 
   // ⚠ RELEVANCE, not alphabet (CLU-509). Nathan: "make sure that when you start
   // typing in letters in the search box that mega lists appear at the top. so
@@ -10276,16 +10282,28 @@ function filterMenu(q){
   // are reached by its own `into` rows and sorted above their parent purely on
   // first name.
   //
-  // Four tiers, best first. Alphabetical still breaks the final tie, so nothing
+  // Six tiers, best first. Alphabetical still breaks the final tie, so nothing
   // moves that has no reason to.
+  //
+  // An ALIAS is a name, so it ranks like one (CLU-542) — second, under the
+  // title itself, because a list actually CALLED what you typed is the better
+  // answer than one merely known by it. That ordering is what keeps `gl`
+  // honest, and it is why an alias equal to another list's title is refused in
+  // the build rather than handled here: ranking can settle which of two names
+  // wins, but not which of two lists you meant.
   const tier = m=>{
     const t = (m.title || '').toLowerCase();
+    const al = m.aliases || [];
     if(t.indexOf(needle) === 0) return 0;                 // title starts with it
+    if(al.some(a=> a.indexOf(needle) === 0)) return 1;    // an alias starts with it
     // a WORD inside the title starts with it: `star` finds Star Trek above
     // Battlestar, which a plain substring test calls equally good
-    if(t.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)) return 1;
-    if(t.indexOf(needle) >= 0) return 2;                  // anywhere in the title
-    return 3;                       // only the subtitle, kind or year matched
+    if(t.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)) return 2;
+    if(t.indexOf(needle) >= 0) return 3;                  // anywhere in the title
+    // a word inside a multi-word alias: `hakusho` against `yuyu hakusho`
+    if(al.some(a=> a.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)))
+      return 4;
+    return 5;         // only the subtitle, kind, year or mid-alias matched
   };
   if(needle){
     // Within a tier a MEGA LIST outranks an ordinary one. It is the doorway to
