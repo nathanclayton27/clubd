@@ -26,7 +26,11 @@
       "Arc boundaries.",
       "A few filler arcs sit inside a canon one rather than between two, so they are folded into the arc around them. A strip cannot show a gap, and every watch order presents them that way regardless."
     ],
-    "Still airing. This goes up to episode 1174; rerun the generator to extend it."
+    [
+      "Still airing.",
+      "This goes up to episode 1174; rerun the generator to extend it."
+    ],
+    "Arc names, boundaries and the filler marks from Anime Filler Guide's One Piece list; the boundaries are held to the two arc lengths every source quotes, Wano at 196 episodes and Dressrosa at 118, and the generator fails rather than ship a list that disagrees with either."
   ],
   "sections": [
     {

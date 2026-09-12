@@ -180,8 +180,18 @@ def main():
             ["Films.", "The theatrical films and TV specials — GT's A Hero's "
                        "Legacy included — are left out. They are a later "
                        "page."],
-            "Complete through Daima (%s). If a new series airs, rerun the "
-            "generator." % series["daima"]["years"],
+            ["Complete.", "Through Daima (%s), the newest series. If a new "
+                          "one airs, rerun the generator."
+                          % series["daima"]["years"]],
+            # Unheaded, last: the colophon (CLU-275 rule 6). The sources block
+            # in tools/data/db_anime.json is what this reports.
+            "Episode counts, years and saga groupings machine-read from "
+            "Wikipedia's episode lists for Dragon Ball, Z, GT, Super and Kai "
+            "and from the Dragon Ball Daima article; every total is asserted "
+            "against the articles' own — lead counts, series-overview sums and "
+            "the counted episode rows — before this builds. Z's check is its "
+            "lead total against its overview sum, because its per-episode "
+            "tables live in nine season articles this does not read.",
         ],
         "sections": sections,
     }

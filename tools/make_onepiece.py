@@ -160,8 +160,15 @@ def main():
                                 "than between two, so they are folded into the arc "
                                 "around them. A strip cannot show a gap, and every "
                                 "watch order presents them that way regardless."],
-            "Still airing. This goes up to episode %d; rerun the generator to "
-            "extend it." % LAST,
+            ["Still airing.", "This goes up to episode %d; rerun the "
+                              "generator to extend it." % LAST],
+            # Unheaded, last: the colophon (CLU-275 rule 6). The two arc
+            # lengths named here are the assertions run above.
+            "Arc names, boundaries and the filler marks from Anime Filler "
+            "Guide's One Piece list; the boundaries are held to the two arc "
+            "lengths every source quotes, Wano at 196 episodes and Dressrosa "
+            "at 118, and the generator fails rather than ship a list that "
+            "disagrees with either.",
         ],
         "sections": sections,
     }

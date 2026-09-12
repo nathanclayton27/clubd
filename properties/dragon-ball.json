@@ -30,7 +30,11 @@
       "Films.",
       "The theatrical films and TV specials — GT's A Hero's Legacy included — are left out. They are a later page."
     ],
-    "Complete through Daima (2024–25). If a new series airs, rerun the generator."
+    [
+      "Complete.",
+      "Through Daima (2024–25), the newest series. If a new one airs, rerun the generator."
+    ],
+    "Episode counts, years and saga groupings machine-read from Wikipedia's episode lists for Dragon Ball, Z, GT, Super and Kai and from the Dragon Ball Daima article; every total is asserted against the articles' own — lead counts, series-overview sums and the counted episode rows — before this builds. Z's check is its lead total against its overview sum, because its per-episode tables live in nine season articles this does not read."
   ],
   "sections": [
     {
