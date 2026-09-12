@@ -1,0 +1,3002 @@
+{
+  "slug": "wolverine",
+  "title": "Wolverine",
+  "subtitle": "the solo spine · a character reading list",
+  "kind": "comics",
+  "popularity": 74,
+  "year": "1974–2026",
+  "blurb": "The runs that made the character, as 328 issues in publication order — the Claremont/Miller miniseries, Weapon X, Larry Hama's seven years on the ongoing, Old Man Logan, Aaron, and the solo book since. His X-Men issues are on the X-Men list.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#7B5230",
+  "accentDark": "#D9A468",
+  "tiers": true,
+  "notes": [
+    [
+      "Solo, and not his whole publication history.",
+      "Wolverine has appeared in something over five thousand comics. Nobody reads that, and a list that tried would be unfinishable, so this is a house pick: the runs worth reading, in the order they were published, one section per run. Veto anything on it freely — the tiers are there so you can."
+    ],
+    [
+      "Where this list stops and the X-Men list starts.",
+      "His X-Men appearances are the bulk of his page count and they belong to the X-Men list here, which carries both flagship lineages complete. This one carries the books with his name on the cover, the two Marvel Comics Presents serials where he was the lead strip, and the two Hulk issues he arrives in. Two things sit on both lists on purpose: the 1982 miniseries, which the X-Men list bundles into one row and this one itemises, and Wolverine (2020) #6–7, which are X of Swords chapters counted inside a single bundled row there. Ticks are separate either way — the ids are different — and nothing else is on both."
+    ],
+    [
+      "Rows are issues.",
+      "Not collected volumes. A row is one comic, and a section is one run, so the page count you are looking at is the real one rather than a shelf's worth of spines."
+    ],
+    [
+      "Six series have been called Wolverine, so ids ignore the numbers.",
+      "The solo book has restarted at #1 in 1982, 1988, 2003, 2010, 2013, 2014, 2020 and 2024, and two of those reverted to the earlier numbering partway through — which is why #20 is followed by #300 in one section. Every row names its series by launch year, and no row id is derived from an issue number alone."
+    ],
+    [
+      "Tiers.",
+      "Tier 1 is the spine: the miniseries, the Claremont ongoing, Weapon X, Hama's seven years, Millar, Old Man Logan, Aaron and the 2014 miniseries. Tier 2 is the shorter things that explain how a Tier 1 run opens or closes. Tier 3 is good comics that this list would not miss — the debut, the 1989–90 stretch, the origin miniseries, Rucka, the Vaughan one-off and the current series. Tier 1 alone is a complete read."
+    ],
+    [
+      "What is deliberately missing.",
+      "The 1988 series after #122; the 1998–2002 stretch and Frank Tieri's Weapon X; Daniel Way's fifty issues of Wolverine: Origins; the 2013–14 volumes; the later Old Man Logan series; and the out-of-continuity one-shots. Also the team books — Wolverine and the X-Men, X-Force, Uncanny — which are on the X-Men list where they belong. Say the word and any of them gets a section."
+    ],
+    [
+      "No spoilers.",
+      "A note says what an issue is — whose first or last it is, a fill-in, a renumbering, which arc opens there, whose debut it is — and never what happens in it. Stars mark the issues that matter more than their note suggests."
+    ],
+    [
+      "Links sit on the section headers.",
+      "Each section links the Marvel Database page for every series it draws from, and those pages list each issue with its credits and cover date. Rows carry no links of their own."
+    ],
+    "Every issue number, cover date, on-sale date and creator credit read from the Marvel Database (marvel.fandom.com) through its API and cached in tools/data/wolverine.json, header links included. The run boundaries are derived from those printed credits by the generator, which refuses to build if a range is not exactly the writer it claims, if a Marvel Comics Presents row points at a strip that is not the Wolverine one, or if any section falls out of publication order."
+  ],
+  "sections": [
+    {
+      "id": "debut",
+      "tier": 3,
+      "title": "Where he comes in",
+      "sub": "1974 · two issues of somebody else's book",
+      "links": [
+        {
+          "label": "Incredible Hulk (1962)",
+          "url": "https://marvel.fandom.com/wiki/Incredible_Hulk_Vol_1"
+        }
+      ],
+      "intro": "Wolverine turns up on the last page of Incredible Hulk #180 and fights for a whole issue in #181, eight years before he gets a book of his own. What happens in between is X-Men, and it is on the X-Men list here rather than on this one — this list is the solo spine.",
+      "items": [
+        {
+          "id": "wolv-hulk-180",
+          "t": "Incredible Hulk",
+          "n": "#180",
+          "note": "His first appearance, on the last page.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-hulk-181",
+          "t": "Incredible Hulk",
+          "n": "#181",
+          "note": "His first full appearance. Len Wein and Herb Trimpe.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "claremiller",
+      "tier": 1,
+      "title": "Claremont & Miller",
+      "sub": "#1–4 · 1982 · the miniseries",
+      "open": true,
+      "links": [
+        {
+          "label": "Wolverine (1982)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_1"
+        }
+      ],
+      "intro": "Four issues that decided what a Wolverine story is: a crime comic in Japan, written by the man who had been writing him for seven years and drawn by the one who had just finished reinventing Daredevil. Everything below is downstream of it.\n\nThe X-Men list carries these four as a single bundled row spliced into its 1982 run. They are four rows here, because this is the front door.",
+      "items": [
+        {
+          "id": "wolv-ls-1",
+          "t": "Wolverine (1982)",
+          "n": "#1",
+          "note": "The first Wolverine story with his name on the cover — Chris Claremont and Frank Miller.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-ls-2",
+          "t": "Wolverine (1982)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-ls-3",
+          "t": "Wolverine (1982)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-ls-4",
+          "t": "Wolverine (1982)",
+          "n": "#4",
+          "note": "The last of the four.",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "savethetiger",
+      "tier": 2,
+      "title": "Save the Tiger",
+      "sub": "Marvel Comics Presents #1–10 · 1988",
+      "links": [
+        {
+          "label": "Marvel Comics Presents",
+          "url": "https://marvel.fandom.com/wiki/Marvel_Comics_Presents_Vol_1"
+        }
+      ],
+      "intro": "Claremont and John Buscema serialise a Madripoor story across the front strip of Marvel's new anthology, two months before they launch the ongoing with it. The other strips in each issue are other characters'; only the Wolverine one is what this row points at.",
+      "items": [
+        {
+          "id": "wolv-mcp-1",
+          "t": "Marvel Comics Presents",
+          "n": "#1",
+          "note": "“Save the Tiger” begins, a ten-part serial in the front of an anthology.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-2",
+          "t": "Marvel Comics Presents",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-3",
+          "t": "Marvel Comics Presents",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-4",
+          "t": "Marvel Comics Presents",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-5",
+          "t": "Marvel Comics Presents",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-6",
+          "t": "Marvel Comics Presents",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-7",
+          "t": "Marvel Comics Presents",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-8",
+          "t": "Marvel Comics Presents",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-9",
+          "t": "Marvel Comics Presents",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-10",
+          "t": "Marvel Comics Presents",
+          "n": "#10",
+          "note": "The serial's conclusion.",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "madripoor",
+      "tier": 1,
+      "title": "Claremont & Buscema",
+      "sub": "#1–10 · 1988–1989 · the ongoing starts",
+      "links": [
+        {
+          "label": "Wolverine (1988)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_2"
+        }
+      ],
+      "intro": "The first Wolverine monthly, by the team that had just finished the serial above, and still in Madripoor. One fill-in sits inside it and is marked as one.",
+      "items": [
+        {
+          "id": "wolv-v2-1",
+          "t": "Wolverine (1988)",
+          "n": "#1",
+          "note": "The ongoing series starts, by the same team as “Save the Tiger”.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-2",
+          "t": "Wolverine (1988)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-3",
+          "t": "Wolverine (1988)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-4",
+          "t": "Wolverine (1988)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-5",
+          "t": "Wolverine (1988)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-6",
+          "t": "Wolverine (1988)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-7",
+          "t": "Wolverine (1988)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-8",
+          "t": "Wolverine (1988)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-9",
+          "t": "Wolverine (1988)",
+          "n": "#9",
+          "note": "A fill-in: Peter David and Gene Colan.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-10",
+          "t": "Wolverine (1988)",
+          "n": "#10",
+          "note": "Claremont's last issue of the ongoing.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "between",
+      "tier": 3,
+      "title": "Between the two long runs",
+      "sub": "#11–30 · 1989–1990",
+      "links": [
+        {
+          "label": "Wolverine (1988)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_2"
+        }
+      ],
+      "intro": "Twenty issues by three writers in turn — Peter David, then Archie Goodwin with John Byrne on pencils, then Jo Duffy. Goodwin and Byrne's seven are the reason this section is here at all. Skippable: the run below opens cleanly without any of it.",
+      "items": [
+        {
+          "id": "wolv-v2-11",
+          "t": "Wolverine (1988)",
+          "n": "#11",
+          "note": "Peter David takes over as writer.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-12",
+          "t": "Wolverine (1988)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-13",
+          "t": "Wolverine (1988)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-14",
+          "t": "Wolverine (1988)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-15",
+          "t": "Wolverine (1988)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-16",
+          "t": "Wolverine (1988)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-17",
+          "t": "Wolverine (1988)",
+          "n": "#17",
+          "note": "Archie Goodwin and John Byrne begin.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-18",
+          "t": "Wolverine (1988)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-19",
+          "t": "Wolverine (1988)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-20",
+          "t": "Wolverine (1988)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-21",
+          "t": "Wolverine (1988)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-22",
+          "t": "Wolverine (1988)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-23",
+          "t": "Wolverine (1988)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-24",
+          "t": "Wolverine (1988)",
+          "n": "#24",
+          "note": "A one-off by Peter David and Gene Colan.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-25",
+          "t": "Wolverine (1988)",
+          "n": "#25",
+          "note": "Jo Duffy writes the next six.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-26",
+          "t": "Wolverine (1988)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-27",
+          "t": "Wolverine (1988)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-28",
+          "t": "Wolverine (1988)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-29",
+          "t": "Wolverine (1988)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-30",
+          "t": "Wolverine (1988)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "hama1",
+      "tier": 1,
+      "title": "Hama takes the book",
+      "sub": "#31–37 · 1990–1991 · with Marc Silvestri",
+      "links": [
+        {
+          "label": "Wolverine (1988)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_2"
+        }
+      ],
+      "intro": "Larry Hama's eighty-three issues start here and run for seven years, which makes this the longest single commitment on the list. It is cut into three sections at the two points where something else went on sale in the middle of it — the section below is the first of those.",
+      "items": [
+        {
+          "id": "wolv-v2-31",
+          "t": "Wolverine (1988)",
+          "n": "#31",
+          "note": "Larry Hama's first issue, with Marc Silvestri on pencils.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-32",
+          "t": "Wolverine (1988)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-33",
+          "t": "Wolverine (1988)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-34",
+          "t": "Wolverine (1988)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-35",
+          "t": "Wolverine (1988)",
+          "n": "#35",
+          "note": "“Blood and Claws” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-36",
+          "t": "Wolverine (1988)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-37",
+          "t": "Wolverine (1988)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "weaponx",
+      "tier": 1,
+      "title": "Weapon X",
+      "sub": "Marvel Comics Presents #72–84 · 1991",
+      "links": [
+        {
+          "label": "Marvel Comics Presents",
+          "url": "https://marvel.fandom.com/wiki/Marvel_Comics_Presents_Vol_1"
+        }
+      ],
+      "intro": "Barry Windsor-Smith writes, draws, inks, colours and letters thirteen chapters in the front of the anthology, while Hama's monthly carries on around it. It is the one story on this list that a reader who is reading nothing else should still read, and it went on sale between Wolverine #37 and #38, which is why it sits here.",
+      "items": [
+        {
+          "id": "wolv-mcp-72",
+          "t": "Marvel Comics Presents",
+          "n": "#72",
+          "note": "“Weapon X” begins. Barry Windsor-Smith writes, pencils, inks, colours and letters it.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-73",
+          "t": "Marvel Comics Presents",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-74",
+          "t": "Marvel Comics Presents",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-75",
+          "t": "Marvel Comics Presents",
+          "n": "#75",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-76",
+          "t": "Marvel Comics Presents",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-77",
+          "t": "Marvel Comics Presents",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-78",
+          "t": "Marvel Comics Presents",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-79",
+          "t": "Marvel Comics Presents",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-80",
+          "t": "Marvel Comics Presents",
+          "n": "#80",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-81",
+          "t": "Marvel Comics Presents",
+          "n": "#81",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-82",
+          "t": "Marvel Comics Presents",
+          "n": "#82",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-83",
+          "t": "Marvel Comics Presents",
+          "n": "#83",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-mcp-84",
+          "t": "Marvel Comics Presents",
+          "n": "#84",
+          "note": "The twelfth and last chapter.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "hama2",
+      "tier": 1,
+      "title": "Hama & Silvestri",
+      "sub": "#38–57 · 1991–1992",
+      "links": [
+        {
+          "label": "Wolverine (1988)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_2"
+        }
+      ],
+      "intro": "Silvestri draws most of these, and #57 is his last on the book. Two fill-ins by other writers are marked where they fall.",
+      "items": [
+        {
+          "id": "wolv-v2-38",
+          "t": "Wolverine (1988)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-39",
+          "t": "Wolverine (1988)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-40",
+          "t": "Wolverine (1988)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-41",
+          "t": "Wolverine (1988)",
+          "n": "#41",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-42",
+          "t": "Wolverine (1988)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-43",
+          "t": "Wolverine (1988)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-44",
+          "t": "Wolverine (1988)",
+          "n": "#44",
+          "note": "A fill-in written by Peter David.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-45",
+          "t": "Wolverine (1988)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-46",
+          "t": "Wolverine (1988)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-47",
+          "t": "Wolverine (1988)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-48",
+          "t": "Wolverine (1988)",
+          "n": "#48",
+          "note": "“The Shiva Scenario” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-49",
+          "t": "Wolverine (1988)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-50",
+          "t": "Wolverine (1988)",
+          "n": "#50",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-51",
+          "t": "Wolverine (1988)",
+          "n": "#51",
+          "note": "“The Crunch Conundrum” begins, drawn by Andy Kubert.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-52",
+          "t": "Wolverine (1988)",
+          "n": "#52",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-53",
+          "t": "Wolverine (1988)",
+          "n": "#53",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-54",
+          "t": "Wolverine (1988)",
+          "n": "#54",
+          "note": "A fill-in written by Fabian Nicieza.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-55",
+          "t": "Wolverine (1988)",
+          "n": "#55",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-56",
+          "t": "Wolverine (1988)",
+          "n": "#56",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-57",
+          "t": "Wolverine (1988)",
+          "n": "#57",
+          "note": "Silvestri's last issue of the run.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "hama3",
+      "tier": 1,
+      "title": "Hama through the nineties",
+      "sub": "#58–118 · 1992–1997",
+      "links": [
+        {
+          "label": "Wolverine (1988)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_2"
+        }
+      ],
+      "intro": "The long middle: sixty-one issues, a new regular artist every year or so, and Adam Kubert for most of the stretch after #75. Three issues inside it are by other writers and are marked.",
+      "items": [
+        {
+          "id": "wolv-v2-58",
+          "t": "Wolverine (1988)",
+          "n": "#58",
+          "note": "Two issues by D.G. Chichester, sitting inside Hama's run.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-59",
+          "t": "Wolverine (1988)",
+          "n": "#59",
+          "note": "",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-60",
+          "t": "Wolverine (1988)",
+          "n": "#60",
+          "note": "Hama back, and a new regular artist every few months from here.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-61",
+          "t": "Wolverine (1988)",
+          "n": "#61",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-62",
+          "t": "Wolverine (1988)",
+          "n": "#62",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-63",
+          "t": "Wolverine (1988)",
+          "n": "#63",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-64",
+          "t": "Wolverine (1988)",
+          "n": "#64",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-65",
+          "t": "Wolverine (1988)",
+          "n": "#65",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-66",
+          "t": "Wolverine (1988)",
+          "n": "#66",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-67",
+          "t": "Wolverine (1988)",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-68",
+          "t": "Wolverine (1988)",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-69",
+          "t": "Wolverine (1988)",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-70",
+          "t": "Wolverine (1988)",
+          "n": "#70",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-71",
+          "t": "Wolverine (1988)",
+          "n": "#71",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-72",
+          "t": "Wolverine (1988)",
+          "n": "#72",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-73",
+          "t": "Wolverine (1988)",
+          "n": "#73",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-74",
+          "t": "Wolverine (1988)",
+          "n": "#74",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-75",
+          "t": "Wolverine (1988)",
+          "n": "#75",
+          "note": "Adam Kubert's first, and the regular artist for most of the next thirty.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-76",
+          "t": "Wolverine (1988)",
+          "n": "#76",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-77",
+          "t": "Wolverine (1988)",
+          "n": "#77",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-78",
+          "t": "Wolverine (1988)",
+          "n": "#78",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-79",
+          "t": "Wolverine (1988)",
+          "n": "#79",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-80",
+          "t": "Wolverine (1988)",
+          "n": "#80",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-81",
+          "t": "Wolverine (1988)",
+          "n": "#81",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-82",
+          "t": "Wolverine (1988)",
+          "n": "#82",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-83",
+          "t": "Wolverine (1988)",
+          "n": "#83",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-84",
+          "t": "Wolverine (1988)",
+          "n": "#84",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-85",
+          "t": "Wolverine (1988)",
+          "n": "#85",
+          "note": "A Phalanx Covenant chapter, read inside the run.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-86",
+          "t": "Wolverine (1988)",
+          "n": "#86",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-87",
+          "t": "Wolverine (1988)",
+          "n": "#87",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-88",
+          "t": "Wolverine (1988)",
+          "n": "#88",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-89",
+          "t": "Wolverine (1988)",
+          "n": "#89",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-90",
+          "t": "Wolverine (1988)",
+          "n": "#90",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-91",
+          "t": "Wolverine (1988)",
+          "n": "#91",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-92",
+          "t": "Wolverine (1988)",
+          "n": "#92",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-93",
+          "t": "Wolverine (1988)",
+          "n": "#93",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-94",
+          "t": "Wolverine (1988)",
+          "n": "#94",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-95",
+          "t": "Wolverine (1988)",
+          "n": "#95",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-96",
+          "t": "Wolverine (1988)",
+          "n": "#96",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-97",
+          "t": "Wolverine (1988)",
+          "n": "#97",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-98",
+          "t": "Wolverine (1988)",
+          "n": "#98",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-99",
+          "t": "Wolverine (1988)",
+          "n": "#99",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-100",
+          "t": "Wolverine (1988)",
+          "n": "#100",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-101",
+          "t": "Wolverine (1988)",
+          "n": "#101",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-102",
+          "t": "Wolverine (1988)",
+          "n": "#102",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-103",
+          "t": "Wolverine (1988)",
+          "n": "#103",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-104",
+          "t": "Wolverine (1988)",
+          "n": "#104",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-105",
+          "t": "Wolverine (1988)",
+          "n": "#105",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-106",
+          "t": "Wolverine (1988)",
+          "n": "#106",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-107",
+          "t": "Wolverine (1988)",
+          "n": "#107",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-108",
+          "t": "Wolverine (1988)",
+          "n": "#108",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-109",
+          "t": "Wolverine (1988)",
+          "n": "#109",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-110",
+          "t": "Wolverine (1988)",
+          "n": "#110",
+          "note": "A fill-in written by Tom DeFalco.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v2-111",
+          "t": "Wolverine (1988)",
+          "n": "#111",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-112",
+          "t": "Wolverine (1988)",
+          "n": "#112",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-113",
+          "t": "Wolverine (1988)",
+          "n": "#113",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-114",
+          "t": "Wolverine (1988)",
+          "n": "#114",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-115",
+          "t": "Wolverine (1988)",
+          "n": "#115",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-116",
+          "t": "Wolverine (1988)",
+          "n": "#116",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-117",
+          "t": "Wolverine (1988)",
+          "n": "#117",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-118",
+          "t": "Wolverine (1988)",
+          "n": "#118",
+          "note": "Hama's last issue, after eighty-three of them.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "notdeadyet",
+      "tier": 2,
+      "title": "Not Dead Yet",
+      "sub": "#119–122 · 1997–1998 · Ellis and Yu",
+      "links": [
+        {
+          "label": "Wolverine (1988)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_2"
+        }
+      ],
+      "intro": "Warren Ellis and Leinil Francis Yu, straight after Hama signs off. It stands alone, it is four issues, and it is where this list leaves the 1988 series — the sixty-seven issues after it are the stretch nobody recommends.",
+      "items": [
+        {
+          "id": "wolv-v2-119",
+          "t": "Wolverine (1988)",
+          "n": "#119",
+          "note": "“Not Dead Yet” begins — Warren Ellis and Leinil Francis Yu.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-120",
+          "t": "Wolverine (1988)",
+          "n": "#120",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-121",
+          "t": "Wolverine (1988)",
+          "n": "#121",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v2-122",
+          "t": "Wolverine (1988)",
+          "n": "#122",
+          "note": "Part four, and this list's last issue of the 1988 series.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "origin",
+      "tier": 3,
+      "title": "The Origin",
+      "sub": "2001–2002 · written twenty-seven years in",
+      "links": [
+        {
+          "label": "The Origin",
+          "url": "https://marvel.fandom.com/wiki/Wolverine:_The_Origin_Vol_1"
+        }
+      ],
+      "intro": "Paul Jenkins and Andy Kubert fill in the backstory the character had spent three decades not having. It is here in publication order and reads fine anywhere, including not at all — the rest of the list never depends on it.",
+      "items": [
+        {
+          "id": "wolv-or-1",
+          "t": "Wolverine: The Origin",
+          "n": "#1",
+          "note": "The origin, told twenty-seven years in. Paul Jenkins and Andy Kubert.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-or-2",
+          "t": "Wolverine: The Origin",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-or-3",
+          "t": "Wolverine: The Origin",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-or-4",
+          "t": "Wolverine: The Origin",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-or-5",
+          "t": "Wolverine: The Origin",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-or-6",
+          "t": "Wolverine: The Origin",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "rucka",
+      "tier": 3,
+      "title": "Rucka & Robertson",
+      "sub": "#1–19 · 2003–2004 · the relaunch",
+      "links": [
+        {
+          "label": "Wolverine (2003)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_3"
+        }
+      ],
+      "intro": "Greg Rucka restarts the book at #1 and writes it as small, grim crime fiction — three arcs and a one-off. Optional in the same way the section above is: the run below opens without it and reads a shade better with it.",
+      "items": [
+        {
+          "id": "wolv-v3-1",
+          "t": "Wolverine (2003)",
+          "n": "#1",
+          "note": "Greg Rucka and Darick Robertson relaunch at #1 — “Brotherhood”.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-2",
+          "t": "Wolverine (2003)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-3",
+          "t": "Wolverine (2003)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-4",
+          "t": "Wolverine (2003)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-5",
+          "t": "Wolverine (2003)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-6",
+          "t": "Wolverine (2003)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-7",
+          "t": "Wolverine (2003)",
+          "n": "#7",
+          "note": "“Coyote Crossing” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-8",
+          "t": "Wolverine (2003)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-9",
+          "t": "Wolverine (2003)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-10",
+          "t": "Wolverine (2003)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-11",
+          "t": "Wolverine (2003)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-12",
+          "t": "Wolverine (2003)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-13",
+          "t": "Wolverine (2003)",
+          "n": "#13",
+          "note": "“Return of the Native” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-14",
+          "t": "Wolverine (2003)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-15",
+          "t": "Wolverine (2003)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-16",
+          "t": "Wolverine (2003)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-17",
+          "t": "Wolverine (2003)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-18",
+          "t": "Wolverine (2003)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-19",
+          "t": "Wolverine (2003)",
+          "n": "#19",
+          "note": "Rucka's last issue.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "millar",
+      "tier": 1,
+      "title": "Millar & Romita Jr.",
+      "sub": "#20–32 · 2004–2005",
+      "links": [
+        {
+          "label": "Wolverine (2003)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_3"
+        }
+      ],
+      "intro": "Two arcs and a coda. “Enemy of the State” is the first six; “Agent of S.H.I.E.L.D.” is the six after it and is the other half of the same story, which is why they are one section rather than two.",
+      "items": [
+        {
+          "id": "wolv-v3-20",
+          "t": "Wolverine (2003)",
+          "n": "#20",
+          "note": "“Enemy of the State” begins — Mark Millar and John Romita Jr.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-21",
+          "t": "Wolverine (2003)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-22",
+          "t": "Wolverine (2003)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-23",
+          "t": "Wolverine (2003)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-24",
+          "t": "Wolverine (2003)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-25",
+          "t": "Wolverine (2003)",
+          "n": "#25",
+          "note": "The sixth and last part of “Enemy of the State”.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-26",
+          "t": "Wolverine (2003)",
+          "n": "#26",
+          "note": "“Agent of S.H.I.E.L.D.”, the run's second half, begins here.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-27",
+          "t": "Wolverine (2003)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-28",
+          "t": "Wolverine (2003)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-29",
+          "t": "Wolverine (2003)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-30",
+          "t": "Wolverine (2003)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-31",
+          "t": "Wolverine (2003)",
+          "n": "#31",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-32",
+          "t": "Wolverine (2003)",
+          "n": "#32",
+          "note": "Millar's last issue, drawn by Kaare Andrews.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "logan",
+      "tier": 3,
+      "title": "Logan",
+      "sub": "#1–3 · 2008 · Vaughan and Risso",
+      "links": [
+        {
+          "label": "Logan (2008)",
+          "url": "https://marvel.fandom.com/wiki/Logan_Vol_1"
+        }
+      ],
+      "intro": "Three issues, one story, no connection to anything either side of it. Here because it is very good and it is short.",
+      "items": [
+        {
+          "id": "wolv-lg-1",
+          "t": "Logan",
+          "n": "#1",
+          "note": "A three-issue story by Brian K. Vaughan and Eduardo Risso.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-lg-2",
+          "t": "Logan",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-lg-3",
+          "t": "Logan",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "oldman",
+      "tier": 1,
+      "title": "Old Man Logan",
+      "sub": "2008–2009 · Millar and McNiven",
+      "links": [
+        {
+          "label": "Wolverine (2003)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_3"
+        },
+        {
+          "label": "Giant-Size Old Man Logan",
+          "url": "https://marvel.fandom.com/wiki/Wolverine:_Old_Man_Logan_Giant-Size_Vol_1"
+        }
+      ],
+      "intro": "Millar's second stint on the book: a story set in a future that is not this list's continuity, serialised in the parent title and finished four months late in a Giant-Size one-shot. Both are here, and the one-shot is part eight.\n\nEverything Marvel published afterwards using the same character is a different thing and is not on this list.",
+      "items": [
+        {
+          "id": "wolv-v3-66",
+          "t": "Wolverine (2003)",
+          "n": "#66",
+          "note": "“Old Man Logan” begins — Millar and Steve McNiven.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-67",
+          "t": "Wolverine (2003)",
+          "n": "#67",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-68",
+          "t": "Wolverine (2003)",
+          "n": "#68",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-69",
+          "t": "Wolverine (2003)",
+          "n": "#69",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-70",
+          "t": "Wolverine (2003)",
+          "n": "#70",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-71",
+          "t": "Wolverine (2003)",
+          "n": "#71",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v3-72",
+          "t": "Wolverine (2003)",
+          "n": "#72",
+          "note": "The seventh part. The conclusion is the Giant-Size below.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-gsoml-1",
+          "t": "Giant-Size Old Man Logan",
+          "n": "#1",
+          "note": "“Old Man Logan: Conclusion”, four months after part seven.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "aaronwx",
+      "tier": 1,
+      "title": "Aaron & Garney",
+      "sub": "Wolverine: Weapon X #1–16 · 2009–2010",
+      "links": [
+        {
+          "label": "Wolverine: Weapon X (2009)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Weapon_X_Vol_1"
+        }
+      ],
+      "intro": "Jason Aaron's run begins under its own title — three arcs, sixteen issues — and carries straight on into the section below without a break in the story. Read the two as one run.",
+      "items": [
+        {
+          "id": "wolv-awx-1",
+          "t": "Wolverine: Weapon X",
+          "n": "#1",
+          "note": "Jason Aaron and Ron Garney start the run — “The Adamantium Men”.",
+          "star": 2,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-2",
+          "t": "Wolverine: Weapon X",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-3",
+          "t": "Wolverine: Weapon X",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-4",
+          "t": "Wolverine: Weapon X",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-5",
+          "t": "Wolverine: Weapon X",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-6",
+          "t": "Wolverine: Weapon X",
+          "n": "#6",
+          "note": "“Insane in the Brain” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-7",
+          "t": "Wolverine: Weapon X",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-8",
+          "t": "Wolverine: Weapon X",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-9",
+          "t": "Wolverine: Weapon X",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-10",
+          "t": "Wolverine: Weapon X",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-11",
+          "t": "Wolverine: Weapon X",
+          "n": "#11",
+          "note": "“Tomorrow Dies Today” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-12",
+          "t": "Wolverine: Weapon X",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-13",
+          "t": "Wolverine: Weapon X",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-14",
+          "t": "Wolverine: Weapon X",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-15",
+          "t": "Wolverine: Weapon X",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-awx-16",
+          "t": "Wolverine: Weapon X",
+          "n": "#16",
+          "note": "The last issue under this title; the run carries straight on below.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "aaron",
+      "tier": 1,
+      "title": "Aaron, renumbered",
+      "sub": "2010–2012 · #1–20, then #300–304",
+      "links": [
+        {
+          "label": "Wolverine (2010)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_4"
+        }
+      ],
+      "intro": "The same run under the old title, restarted at #1 and then reverting to the original numbering partway through, which is why #20 is followed by #300. One standalone .1 issue is marked optional where it went on sale.",
+      "items": [
+        {
+          "id": "wolv-v4-1",
+          "t": "Wolverine (2010)",
+          "n": "#1",
+          "note": "Same writer, new numbering.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-2",
+          "t": "Wolverine (2010)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-3",
+          "t": "Wolverine (2010)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-4",
+          "t": "Wolverine (2010)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-5",
+          "t": "Wolverine (2010)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-5-1",
+          "t": "Wolverine (2010)",
+          "n": "#5.1",
+          "note": "A standalone .1 issue, drawn by Jefte Palo.",
+          "star": 0,
+          "opt": 1
+        },
+        {
+          "id": "wolv-v4-6",
+          "t": "Wolverine (2010)",
+          "n": "#6",
+          "note": "“Wolverine vs. the X-Men” begins, inside the solo book.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-7",
+          "t": "Wolverine (2010)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-8",
+          "t": "Wolverine (2010)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-9",
+          "t": "Wolverine (2010)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-10",
+          "t": "Wolverine (2010)",
+          "n": "#10",
+          "note": "“Wolverine's Revenge!” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-11",
+          "t": "Wolverine (2010)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-12",
+          "t": "Wolverine (2010)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-13",
+          "t": "Wolverine (2010)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-14",
+          "t": "Wolverine (2010)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-15",
+          "t": "Wolverine (2010)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-16",
+          "t": "Wolverine (2010)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-17",
+          "t": "Wolverine (2010)",
+          "n": "#17",
+          "note": "“Goodbye Chinatown” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-18",
+          "t": "Wolverine (2010)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-19",
+          "t": "Wolverine (2010)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-20",
+          "t": "Wolverine (2010)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-300",
+          "t": "Wolverine (2010)",
+          "n": "#300",
+          "note": "The original numbering comes back, and “Back in Japan” begins.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-301",
+          "t": "Wolverine (2010)",
+          "n": "#301",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-302",
+          "t": "Wolverine (2010)",
+          "n": "#302",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-303",
+          "t": "Wolverine (2010)",
+          "n": "#303",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v4-304",
+          "t": "Wolverine (2010)",
+          "n": "#304",
+          "note": "Aaron's last issue.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "death",
+      "tier": 1,
+      "title": "Death of Wolverine",
+      "sub": "#1–4 · 2014 · Soule and McNiven",
+      "links": [
+        {
+          "label": "Death of Wolverine",
+          "url": "https://marvel.fandom.com/wiki/Death_of_Wolverine_Vol_1"
+        }
+      ],
+      "intro": "A four-issue miniseries published weekly. Charles Soule wrote the book it grew out of; nothing on this list is that book, and this reads cold.",
+      "items": [
+        {
+          "id": "wolv-dow-1",
+          "t": "Death of Wolverine",
+          "n": "#1",
+          "note": "Charles Soule and Steve McNiven, a weekly miniseries.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-dow-2",
+          "t": "Death of Wolverine",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-dow-3",
+          "t": "Death of Wolverine",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-dow-4",
+          "t": "Death of Wolverine",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "tier": 2,
+      "title": "Return of Wolverine",
+      "sub": "#1–5 · 2018–2019 · Soule again",
+      "links": [
+        {
+          "label": "Return of Wolverine",
+          "url": "https://marvel.fandom.com/wiki/Return_of_Wolverine_Vol_1"
+        }
+      ],
+      "intro": "Charles Soule writes it again four years later, closing the bracket he opened, with Steve McNiven on the first and last issues and Declan Shalvey on the three between. Tier 2 because it only means anything next to the section above it.",
+      "items": [
+        {
+          "id": "wolv-row-1",
+          "t": "Return of Wolverine",
+          "n": "#1",
+          "note": "Soule again, four years later, with McNiven back on the first and last.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-row-2",
+          "t": "Return of Wolverine",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-row-3",
+          "t": "Return of Wolverine",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-row-4",
+          "t": "Return of Wolverine",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-row-5",
+          "t": "Return of Wolverine",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "percy",
+      "tier": 2,
+      "title": "Percy's Wolverine",
+      "sub": "#1–50 · 2020–2024",
+      "links": [
+        {
+          "label": "Wolverine (2020)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_7"
+        }
+      ],
+      "intro": "Fifty issues of the solo book through the Krakoa era, the last ten of them a story co-written with Victor LaValle. Two of them are X of Swords chapters, which the X-Men list counts inside one bundled row of its own; they are issues of this book, so they are rows here.",
+      "items": [
+        {
+          "id": "wolv-v7-1",
+          "t": "Wolverine (2020)",
+          "n": "#1",
+          "note": "Benjamin Percy and Adam Kubert open the Krakoa-era solo book.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-2",
+          "t": "Wolverine (2020)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-3",
+          "t": "Wolverine (2020)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-4",
+          "t": "Wolverine (2020)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-5",
+          "t": "Wolverine (2020)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-6",
+          "t": "Wolverine (2020)",
+          "n": "#6",
+          "note": "X of Swords chapter 3.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-7",
+          "t": "Wolverine (2020)",
+          "n": "#7",
+          "note": "X of Swords chapter 16, co-written with Gerry Duggan.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-8",
+          "t": "Wolverine (2020)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-9",
+          "t": "Wolverine (2020)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-10",
+          "t": "Wolverine (2020)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-11",
+          "t": "Wolverine (2020)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-12",
+          "t": "Wolverine (2020)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-13",
+          "t": "Wolverine (2020)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-14",
+          "t": "Wolverine (2020)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-15",
+          "t": "Wolverine (2020)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-16",
+          "t": "Wolverine (2020)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-17",
+          "t": "Wolverine (2020)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-18",
+          "t": "Wolverine (2020)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-19",
+          "t": "Wolverine (2020)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-20",
+          "t": "Wolverine (2020)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-21",
+          "t": "Wolverine (2020)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-22",
+          "t": "Wolverine (2020)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-23",
+          "t": "Wolverine (2020)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-24",
+          "t": "Wolverine (2020)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-25",
+          "t": "Wolverine (2020)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-26",
+          "t": "Wolverine (2020)",
+          "n": "#26",
+          "note": "“The Beast Agenda” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-27",
+          "t": "Wolverine (2020)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-28",
+          "t": "Wolverine (2020)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-29",
+          "t": "Wolverine (2020)",
+          "n": "#29",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-30",
+          "t": "Wolverine (2020)",
+          "n": "#30",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-31",
+          "t": "Wolverine (2020)",
+          "n": "#31",
+          "note": "“Weapons of X” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-32",
+          "t": "Wolverine (2020)",
+          "n": "#32",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-33",
+          "t": "Wolverine (2020)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-34",
+          "t": "Wolverine (2020)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-35",
+          "t": "Wolverine (2020)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-36",
+          "t": "Wolverine (2020)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-37",
+          "t": "Wolverine (2020)",
+          "n": "#37",
+          "note": "“Last Mutant Standing” begins.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-38",
+          "t": "Wolverine (2020)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-39",
+          "t": "Wolverine (2020)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-40",
+          "t": "Wolverine (2020)",
+          "n": "#40",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-41",
+          "t": "Wolverine (2020)",
+          "n": "#41",
+          "note": "“Sabretooth War” begins, co-written with Victor LaValle.",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-42",
+          "t": "Wolverine (2020)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-43",
+          "t": "Wolverine (2020)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-44",
+          "t": "Wolverine (2020)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-45",
+          "t": "Wolverine (2020)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-46",
+          "t": "Wolverine (2020)",
+          "n": "#46",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-47",
+          "t": "Wolverine (2020)",
+          "n": "#47",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-48",
+          "t": "Wolverine (2020)",
+          "n": "#48",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-49",
+          "t": "Wolverine (2020)",
+          "n": "#49",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v7-50",
+          "t": "Wolverine (2020)",
+          "n": "#50",
+          "note": "The last issue of the run.",
+          "star": 1,
+          "opt": 0
+        }
+      ]
+    },
+    {
+      "id": "ahmed",
+      "tier": 3,
+      "title": "The book right now",
+      "sub": "2024– · Saladin Ahmed and Martin Coccolo",
+      "links": [
+        {
+          "label": "Wolverine (2024)",
+          "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_8"
+        }
+      ],
+      "intro": "The current series, still being published. Rows run to the last issue that has actually shipped and more arrive as it does, so the list never carries an issue nobody can buy yet.",
+      "items": [
+        {
+          "id": "wolv-v8-1",
+          "t": "Wolverine (2024)",
+          "n": "#1",
+          "note": "Saladin Ahmed and Martin Coccolo begin the current series.",
+          "star": 1,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-2",
+          "t": "Wolverine (2024)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-3",
+          "t": "Wolverine (2024)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-4",
+          "t": "Wolverine (2024)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-5",
+          "t": "Wolverine (2024)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-6",
+          "t": "Wolverine (2024)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-7",
+          "t": "Wolverine (2024)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-8",
+          "t": "Wolverine (2024)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-9",
+          "t": "Wolverine (2024)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-10",
+          "t": "Wolverine (2024)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-11",
+          "t": "Wolverine (2024)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-12",
+          "t": "Wolverine (2024)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-13",
+          "t": "Wolverine (2024)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-14",
+          "t": "Wolverine (2024)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-15",
+          "t": "Wolverine (2024)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-16",
+          "t": "Wolverine (2024)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-17",
+          "t": "Wolverine (2024)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-18",
+          "t": "Wolverine (2024)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-19",
+          "t": "Wolverine (2024)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-20",
+          "t": "Wolverine (2024)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-21",
+          "t": "Wolverine (2024)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-22",
+          "t": "Wolverine (2024)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-23",
+          "t": "Wolverine (2024)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-24",
+          "t": "Wolverine (2024)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-25",
+          "t": "Wolverine (2024)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-26",
+          "t": "Wolverine (2024)",
+          "n": "#26",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        },
+        {
+          "id": "wolv-v8-27",
+          "t": "Wolverine (2024)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0
+        }
+      ]
+    }
+  ]
+}

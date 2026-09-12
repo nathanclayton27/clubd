@@ -1,7 +1,7 @@
 {
   "slug": "marvel-comics",
   "title": "Marvel Comics",
-  "subtitle": "9 reading orders",
+  "subtitle": "10 reading orders",
   "kind": "comics",
   "year": "1941–",
   "popularity": 90,
@@ -16,7 +16,7 @@
   },
   "accent": "#B32024",
   "accentDark": "#F0565A",
-  "blurb": "Nine Marvel reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+  "blurb": "Ten Marvel reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
   "notes": [
     [
       "Every row is a door.",
@@ -32,7 +32,7 @@
     ],
     [
       "Three Marvel lists on the site are not here yet.",
-      "Amazing Spider-Man, X-Men and Civil War each weight every row with an issue count, and the nine here do not. A strip cannot honestly mix a measured mark with an unmeasured one — the unmeasured one would draw at a default size beside a real one — so the build refuses the mix, and they stay off until the twelve lists agree on one unit. Spider-Man is on the shelf as the list that continues him, not the one that starts him."
+      "Amazing Spider-Man, X-Men and Civil War each weight every row with an issue count, and the ten here do not. A strip cannot honestly mix a measured mark with an unmeasured one — the unmeasured one would draw at a default size beside a real one — so the build refuses the mix, and they stay off until the thirteen lists agree on one unit. Spider-Man is on the shelf as the list that continues him, not the one that starts him."
     ],
     [
       "Where these overlap, and where they do not.",
@@ -72,6 +72,13 @@
           "n": "1968–2024",
           "note": "344 + 6 optional",
           "into": "black-panther"
+        },
+        {
+          "id": "mvc-wolverine",
+          "t": "Wolverine",
+          "n": "1974–2026",
+          "note": "320 + 8 optional",
+          "into": "wolverine"
         },
         {
           "id": "mvc-daredevil",
