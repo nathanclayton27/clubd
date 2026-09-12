@@ -1,0 +1,1386 @@
+{
+ "source": {
+  "main": "One-Punch Man",
+  "list": "List of One-Punch Man episodes",
+  "seasons": {
+   "1": "One-Punch Man season 1",
+   "2": "One-Punch Man season 2",
+   "3": "One-Punch Man season 3"
+  },
+  "list_url": "https://en.wikipedia.org/wiki/List_of_One-Punch_Man_episodes",
+  "season_urls": {
+   "1": "https://en.wikipedia.org/wiki/One-Punch_Man_season_1",
+   "2": "https://en.wikipedia.org/wiki/One-Punch_Man_season_2",
+   "3": "https://en.wikipedia.org/wiki/One-Punch_Man_season_3"
+  }
+ },
+ "overview": {
+  "s1_episodes": 12,
+  "s2_episodes": 12,
+  "s3_part1_episodes": 12,
+  "s3_part2_episodes": "",
+  "s1_start": "October 5, 2015",
+  "s1_end": "December 21, 2015",
+  "s2_start": "April 10, 2019",
+  "s2_end": "July 3, 2019",
+  "s3_part1_start": "October 12, 2025",
+  "s3_part1_end": "December 29, 2025",
+  "s3_part2_start_year": "2027",
+  "s3_part2_end": ""
+ },
+ "series": {
+  "studio_by_season": {
+   "1": "Madhouse",
+   "2": "J.C.Staff",
+   "3": "J.C.Staff"
+  },
+  "studio_entries": [
+   "Madhouse (Season 1)",
+   "J.C.Staff (Seasons 2–3)"
+  ],
+  "infobox_episodes": "36 + 12 OVAs",
+  "infobox_runtime": null,
+  "infobox_first": "October 5, 2015",
+  "oad_title": "One-Punch Man: Road to Hero",
+  "oad_released": "December 4, 2015",
+  "oad_runtime": "24 minutes",
+  "oad_studio": "Madhouse"
+ },
+ "reception": {
+  "s3_sentence": "The third season premiere received largely negative reviews from critics, describing it as a dialogue-heavy recap of the story thus far.",
+  "s3_has_section": true,
+  "s1_s2_reception_sections": []
+ },
+ "seasons": [
+  {
+   "n": 1,
+   "page": "One-Punch Man season 1",
+   "num_episodes": 12,
+   "network": "TV Tokyo",
+   "first_aired": "October 5, 2015",
+   "last_aired": "December 21, 2015",
+   "last_aired_raw": "21",
+   "episodes": [
+    {
+     "overall": 1,
+     "in_season": 1,
+     "t": "The Strongest Man",
+     "airdate": "October 5, 2015",
+     "english": "July 17, 2016",
+     "year": 2015,
+     "directed": "Shingo Natsume"
+    },
+    {
+     "overall": 2,
+     "in_season": 2,
+     "t": "The Lone Cyborg",
+     "airdate": "October 12, 2015",
+     "english": "July 24, 2016",
+     "year": 2015,
+     "directed": "Shinichirō Ushijima"
+    },
+    {
+     "overall": 3,
+     "in_season": 3,
+     "t": "The Obsessive Scientist",
+     "airdate": "October 19, 2015",
+     "english": "July 31, 2016",
+     "year": 2015,
+     "directed": "Yōsuke Hatta"
+    },
+    {
+     "overall": 4,
+     "in_season": 4,
+     "t": "The Modern Ninja",
+     "airdate": "October 26, 2015",
+     "english": "August 7, 2016",
+     "year": 2015,
+     "directed": "Nobuhiro Mutō"
+    },
+    {
+     "overall": 5,
+     "in_season": 5,
+     "t": "The Ultimate Master",
+     "airdate": "November 2, 2015",
+     "english": "August 14, 2016",
+     "year": 2015,
+     "directed": "Shunichi Yoshizawa"
+    },
+    {
+     "overall": 6,
+     "in_season": 6,
+     "t": "The Terrifying City",
+     "airdate": "November 9, 2015",
+     "english": "August 21, 2016",
+     "year": 2015,
+     "directed": "Shinichirō Ushijima"
+    },
+    {
+     "overall": 7,
+     "in_season": 7,
+     "t": "The Ultimate Disciple",
+     "airdate": "November 16, 2015",
+     "english": "August 28, 2016",
+     "year": 2015,
+     "directed": "Yōsuke Hatta"
+    },
+    {
+     "overall": 8,
+     "in_season": 8,
+     "t": "The Deep Sea King",
+     "airdate": "November 23, 2015",
+     "english": "September 11, 2016",
+     "year": 2015,
+     "directed": "Nobuhiro Mutō"
+    },
+    {
+     "overall": 9,
+     "in_season": 9,
+     "t": "Unyielding Justice",
+     "airdate": "November 30, 2015",
+     "english": "September 18, 2016",
+     "year": 2015,
+     "directed": "Shunichi Yoshizawa"
+    },
+    {
+     "overall": 10,
+     "in_season": 10,
+     "t": "Unparalleled Peril",
+     "airdate": "December 7, 2015",
+     "english": "September 25, 2016",
+     "year": 2015,
+     "directed": "Shinichirō Ushijima"
+    },
+    {
+     "overall": 11,
+     "in_season": 11,
+     "t": "The Dominator of the Universe",
+     "airdate": "December 14, 2015",
+     "english": "October 2, 2016",
+     "year": 2015,
+     "directed": "Yōsuke Hatta"
+    },
+    {
+     "overall": 12,
+     "in_season": 12,
+     "t": "The Strongest Hero",
+     "airdate": "December 21, 2015",
+     "english": "October 9, 2016",
+     "year": 2015,
+     "directed": "Shingo Natsume"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "page": "One-Punch Man season 2",
+   "num_episodes": 12,
+   "network": "TV Tokyo",
+   "first_aired": "April 10, 2019",
+   "last_aired": "July 3, 2019",
+   "last_aired_raw": "3",
+   "episodes": [
+    {
+     "overall": 13,
+     "in_season": 1,
+     "t": "Return of the Hero",
+     "airdate": "April 10, 2019",
+     "english": "October 12, 2019",
+     "year": 2019,
+     "directed": "Shūji Miyazaki"
+    },
+    {
+     "overall": 14,
+     "in_season": 2,
+     "t": "The Human Monster",
+     "airdate": "April 17, 2019",
+     "english": "October 19, 2019",
+     "year": 2019,
+     "directed": "Hiroyuki Okuno"
+    },
+    {
+     "overall": 15,
+     "in_season": 3,
+     "t": "The Hunt Begins",
+     "airdate": "April 24, 2019",
+     "english": "October 26, 2019",
+     "year": 2019,
+     "directed": "安藤良"
+    },
+    {
+     "overall": 16,
+     "in_season": 4,
+     "t": "The Metal Bat",
+     "airdate": "May 1, 2019",
+     "english": "November 2, 2019",
+     "year": 2019,
+     "directed": "Riki Fukushima, Miyuki Ishida, & Makoto Sokuza"
+    },
+    {
+     "overall": 17,
+     "in_season": 5,
+     "t": "The Martial Arts Tournament",
+     "airdate": "May 8, 2019",
+     "english": "November 9, 2019",
+     "year": 2019,
+     "directed": "Tomohiro Kamitani & Kouzou Kaihou"
+    },
+    {
+     "overall": 18,
+     "in_season": 6,
+     "t": "The Monster Uprising",
+     "airdate": "May 15, 2019",
+     "english": "November 16, 2019",
+     "year": 2019,
+     "directed": "岡本英樹"
+    },
+    {
+     "overall": 19,
+     "in_season": 7,
+     "t": "The Class S Heroes",
+     "airdate": "May 22, 2019",
+     "english": "November 23, 2019",
+     "year": 2019,
+     "directed": "Shigeki Awai"
+    },
+    {
+     "overall": 20,
+     "in_season": 8,
+     "t": "The Resistance of the Strong",
+     "airdate": "May 29, 2019",
+     "english": "November 30, 2019",
+     "year": 2019,
+     "directed": "Yoshio Suzuki"
+    },
+    {
+     "overall": 21,
+     "in_season": 9,
+     "t": "The Troubles of the Strongest",
+     "airdate": "June 12, 2019",
+     "english": "December 7, 2019",
+     "year": 2019,
+     "directed": "Shūji Miyazaki"
+    },
+    {
+     "overall": 22,
+     "in_season": 10,
+     "t": "Justice Under Siege",
+     "airdate": "June 19, 2019",
+     "english": "December 14, 2019",
+     "year": 2019,
+     "directed": "Ryo Ando"
+    },
+    {
+     "overall": 23,
+     "in_season": 11,
+     "t": "The Varieties of Pride",
+     "airdate": "June 26, 2019",
+     "english": "January 5, 2020",
+     "year": 2019,
+     "directed": "Katsushi Sakurabi & Chikara Sakurai"
+    },
+    {
+     "overall": 24,
+     "in_season": 12,
+     "t": "The Wiping of the Disciple's Butt",
+     "airdate": "July 3, 2019",
+     "english": "January 12, 2020",
+     "year": 2019,
+     "directed": "Makoto Sokuza, 鈴木洋平 (アニメ演出家), & Chikara Sakurai"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "page": "One-Punch Man season 3",
+   "num_episodes": 12,
+   "network": "TV Tokyo",
+   "first_aired": "October 12, 2025",
+   "last_aired": null,
+   "last_aired_raw": "present",
+   "episodes": [
+    {
+     "overall": 25,
+     "in_season": 1,
+     "t": "Strategy Meeting",
+     "airdate": "October 12, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Miyuki Ishida"
+    },
+    {
+     "overall": 26,
+     "in_season": 2,
+     "t": "Monster Traits",
+     "airdate": "October 19, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Ei Tanaka"
+    },
+    {
+     "overall": 27,
+     "in_season": 3,
+     "t": "Organism Limits",
+     "airdate": "October 26, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Masahito Otani, & Shūji Miyazaki"
+    },
+    {
+     "overall": 28,
+     "in_season": 4,
+     "t": "Counterattack Signal",
+     "airdate": "November 2, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Nana Fujiwara"
+    },
+    {
+     "overall": 29,
+     "in_season": 5,
+     "t": "Monster King",
+     "airdate": "November 9, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Makoto Sokuza"
+    },
+    {
+     "overall": 30,
+     "in_season": 6,
+     "t": "Motley Heroes",
+     "airdate": "November 16, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Taiki Nishimura"
+    },
+    {
+     "overall": 31,
+     "in_season": 7,
+     "t": "Counterstrike",
+     "airdate": "November 23, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Shūji Miyazaki"
+    },
+    {
+     "overall": 32,
+     "in_season": 8,
+     "t": "Ninja Tale",
+     "airdate": "November 30, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Tetsuro Tanaka, Shinpei Nagai, & Miyuki Ishida"
+    },
+    {
+     "overall": 33,
+     "in_season": 9,
+     "t": "Brave Child",
+     "airdate": "December 8, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Kouzou Kaihou"
+    },
+    {
+     "overall": 34,
+     "in_season": 10,
+     "t": "Immortal Bloodbath",
+     "airdate": "December 14, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Nana Fujiwara &, Masahito Otani"
+    },
+    {
+     "overall": 35,
+     "in_season": 11,
+     "t": "Top Dragons",
+     "airdate": "December 22, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Miyuki Ishida"
+    },
+    {
+     "overall": 36,
+     "in_season": 12,
+     "t": "Ultimate Lifeform",
+     "airdate": "December 29, 2025",
+     "english": null,
+     "year": 2025,
+     "directed": "Nana Fujiwara &, Yoshiyuki Nogami"
+    }
+   ]
+  }
+ ],
+ "recap_specials": [
+  {
+   "season": 2,
+   "numbered": 12.5,
+   "in_season": 0,
+   "t": "A Super Serious Look Back!",
+   "airdate": "April 3, 2019",
+   "summary": "A second season commemorative special that serves as a recap of the first season"
+  },
+  {
+   "season": 3,
+   "numbered": 24.5,
+   "in_season": 0,
+   "t": "Get It All in One Punch!",
+   "airdate": "October 5, 2025",
+   "summary": "A third season commemorative special that serves as a recap of the second season"
+  }
+ ],
+ "ovas": [
+  {
+   "group": "Bundled with the manga",
+   "n": 0,
+   "t": "Road to Hero",
+   "released": "December 4, 2015",
+   "english": "N/A",
+   "year": 2015
+  },
+  {
+   "group": "One-Punch Man Season 1 OVAs",
+   "n": 1,
+   "t": "The Shadow That Snuck Up Too Close",
+   "released": "December 24, 2015",
+   "english": "April 25, 2017",
+   "year": 2015
+  },
+  {
+   "group": "One-Punch Man Season 1 OVAs",
+   "n": 2,
+   "t": "The Pupil Who Is an Extremely Poor Talker",
+   "released": "January 28, 2016",
+   "english": "April 25, 2017",
+   "year": 2016
+  },
+  {
+   "group": "One-Punch Man Season 1 OVAs",
+   "n": 3,
+   "t": "The Ninja Who Is Too Complicated",
+   "released": "February 25, 2016",
+   "english": "April 25, 2017",
+   "year": 2016
+  },
+  {
+   "group": "One-Punch Man Season 1 OVAs",
+   "n": 4,
+   "t": "Bang, Who Is Too Overbearing",
+   "released": "March 29, 2016",
+   "english": "April 25, 2017",
+   "year": 2016
+  },
+  {
+   "group": "One-Punch Man Season 1 OVAs",
+   "n": 5,
+   "t": "The Sisters Who Have Too Many Things Happening",
+   "released": "April 23, 2016",
+   "english": "April 25, 2017",
+   "year": 2016
+  },
+  {
+   "group": "One-Punch Man Season 1 OVAs",
+   "n": 6,
+   "t": "The Murder Case That Is Too Impossible",
+   "released": "May 31, 2016",
+   "english": "April 25, 2017",
+   "year": 2016
+  },
+  {
+   "group": "One-Punch Man Season 2 OVAs",
+   "n": 1,
+   "t": "Saitama and the Mediocre Ability Users",
+   "released": "October 25, 2019",
+   "english": "November 10, 2020",
+   "year": 2019
+  },
+  {
+   "group": "One-Punch Man Season 2 OVAs",
+   "n": 2,
+   "t": "Going Fishing with Middle-Aged Men",
+   "released": "November 26, 2019",
+   "english": "November 10, 2020",
+   "year": 2019
+  },
+  {
+   "group": "One-Punch Man Season 2 OVAs",
+   "n": 3,
+   "t": "Genos and Memory Loss",
+   "released": "December 25, 2019",
+   "english": "November 10, 2020",
+   "year": 2019
+  },
+  {
+   "group": "One-Punch Man Season 2 OVAs",
+   "n": 4,
+   "t": "Game and Rivals",
+   "released": "January 28, 2020",
+   "english": "November 10, 2020",
+   "year": 2020
+  },
+  {
+   "group": "One-Punch Man Season 2 OVAs",
+   "n": 5,
+   "t": "Puri-Puri Prisoner and the Jailbreaking Prisoners",
+   "released": "February 27, 2020",
+   "english": "November 10, 2020",
+   "year": 2020
+  },
+  {
+   "group": "One-Punch Man Season 2 OVAs",
+   "n": 6,
+   "t": "Zombieman Murder Case 2: A Chalet Amid the Blizzard, and the Ones Bothered by the Cold",
+   "released": "March 27, 2020",
+   "english": "November 10, 2020",
+   "year": 2020
+  }
+ ],
+ "runtime_hunt": {
+  "episode_table_runtime_fields": [],
+  "title_wikilinks": 0,
+  "episode_titles_asked": 49,
+  "episode_title_pages_that_exist": {
+   "Return of the Hero": "Return of the Hero",
+   "The Human Monster": "The Dark Eyes of London (film)",
+   "The Hunt Begins": "Talaash: The Hunt Begins...",
+   "Counterstrike": "Counterstrike",
+   "Ultimate Lifeform": "Shadow the Hedgehog"
+  },
+  "qualified_pages_that_exist": {},
+  "opm_named_in_any_resolved_page_title": [],
+  "wikidata": {
+   "One-Punch Man": {
+    "qid": "Q5102879",
+    "props": [
+     "P1476",
+     "P154",
+     "P170",
+     "P1889",
+     "P2002",
+     "P2581",
+     "P31",
+     "P3553",
+     "P373",
+     "P3984",
+     "P495",
+     "P527",
+     "P5382",
+     "P5737",
+     "P646",
+     "P6472",
+     "P674",
+     "P7017",
+     "P8189",
+     "P8419",
+     "P856",
+     "P8687",
+     "P910"
+    ],
+    "P2047": [],
+    "P1113": [],
+    "P527": 3,
+    "P179": []
+   },
+   "List of One-Punch Man episodes": {
+    "qid": "Q25036805",
+    "props": [
+     "P31"
+    ],
+    "P2047": [],
+    "P1113": [],
+    "P527": 0,
+    "P179": []
+   },
+   "One-Punch Man season 1": {
+    "qid": "Q105081756",
+    "props": [
+     "P11039",
+     "P11176",
+     "P11349",
+     "P11495",
+     "P11648",
+     "P12397",
+     "P12427",
+     "P12477",
+     "P12489",
+     "P12558",
+     "P1258",
+     "P13424",
+     "P179",
+     "P1985",
+     "P2671",
+     "P2684",
+     "P31",
+     "P364",
+     "P4086",
+     "P480",
+     "P495",
+     "P527",
+     "P5387",
+     "P5646",
+     "P5732",
+     "P580",
+     "P582",
+     "P6367",
+     "P7017",
+     "P8729"
+    ],
+    "P2047": [],
+    "P1113": [],
+    "P527": 12,
+    "P179": [
+     "Q22341674"
+    ]
+   },
+   "One-Punch Man season 2": {
+    "qid": "Q105081766",
+    "props": [
+     "P11039",
+     "P11349",
+     "P11648",
+     "P12397",
+     "P12477",
+     "P12489",
+     "P12558",
+     "P13424",
+     "P179",
+     "P1985",
+     "P2671",
+     "P2684",
+     "P31",
+     "P364",
+     "P4086",
+     "P495",
+     "P527",
+     "P5387",
+     "P5646",
+     "P5732",
+     "P580",
+     "P582",
+     "P6367",
+     "P7017",
+     "P8729"
+    ],
+    "P2047": [],
+    "P1113": [],
+    "P527": 13,
+    "P179": [
+     "Q22341674"
+    ]
+   },
+   "One-Punch Man season 3": {
+    "qid": "Q135945901",
+    "props": [
+     "P11039",
+     "P1113",
+     "P11349",
+     "P11648",
+     "P12397",
+     "P12477",
+     "P12489",
+     "P12558",
+     "P13424",
+     "P179",
+     "P1985",
+     "P31",
+     "P364",
+     "P4086",
+     "P495",
+     "P5646",
+     "P5732",
+     "P580",
+     "P582",
+     "P6367",
+     "P7017",
+     "P8729"
+    ],
+    "P2047": [],
+    "P1113": [
+     null
+    ],
+    "P527": 0,
+    "P179": [
+     "Q22341674"
+    ]
+   }
+  },
+  "wikidata_items_below": {
+   "Q109129852": {
+    "label": "Saikyô no otoko",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109129943": {
+    "label": "Kokô no saibôgu",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130066": {
+    "label": "Shûnen no kagakusha",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130203": {
+    "label": "Imadoki no ninja",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130327": {
+    "label": "Kyûkoku no shi",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130452": {
+    "label": "Saikyô no toshi",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130579": {
+    "label": "Shikô no deshi",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130707": {
+    "label": "Shinkai no Ô",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130837": {
+    "label": "Fukutsu no seigi",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109130969": {
+    "label": "Katsute nai hodo no kiki",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109131093": {
+    "label": "Zen ushû no hasha",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109131230": {
+    "label": "Saikyô no hîrô",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109131458": {
+    "label": "A Super Serious Look Back!",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P7043"
+    ]
+   },
+   "Q109131562": {
+    "label": "Return of the Hero",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109131711": {
+    "label": "Human Monster",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109131836": {
+    "label": "The Hunt Begins",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109131956": {
+    "label": "Metal Bat",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132083": {
+    "label": "The Martial Arts Tournament",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132222": {
+    "label": "The Uprising of the Monsters",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132366": {
+    "label": "Class S Heroes",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132447": {
+    "label": "The Resistance of the Strong",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132450": {
+    "label": "The Troubles of the Strongest",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132454": {
+    "label": "The Encircling Net of Justice",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132459": {
+    "label": "Everyone's Dignity",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P156",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q109132480": {
+    "label": "Cleaning Up the Disciple's Mess",
+    "P31": [
+     "Q102364578"
+    ],
+    "P2047": [],
+    "props": [
+     "P12559",
+     "P1476",
+     "P155",
+     "P179",
+     "P31",
+     "P345",
+     "P4908",
+     "P577",
+     "P5905",
+     "P7043"
+    ]
+   },
+   "Q22341674": {
+    "label": "One-Punch Man",
+    "P31": [
+     "Q63952888"
+    ],
+    "P2047": [],
+    "props": [
+     "P10688",
+     "P1113",
+     "P11330",
+     "P11460",
+     "P11551",
+     "P12096",
+     "P12241",
+     "P12544",
+     "P1258",
+     "P1267",
+     "P12683",
+     "P14051",
+     "P144",
+     "P14567",
+     "P1476",
+     "P14821",
+     "P1552",
+     "P1874",
+     "P1889",
+     "P2002",
+     "P2437",
+     "P2529",
+     "P2603",
+     "P2671",
+     "P31",
+     "P3121",
+     "P3138",
+     "P345",
+     "P364",
+     "P4110",
+     "P4282",
+     "P437",
+     "P449",
+     "P4784",
+     "P4834",
+     "P4835",
+     "P495",
+     "P4983",
+     "P5099",
+     "P527",
+     "P5327",
+     "P5357",
+     "P5659",
+     "P580",
+     "P5845",
+     "P5905",
+     "P5925",
+     "P6467",
+     "P725",
+     "P750",
+     "P8013",
+     "P8345",
+     "P856",
+     "P8600",
+     "P8670",
+     "P8687",
+     "P921",
+     "P9573"
+    ]
+   },
+   "Q22341676": {
+    "label": "One-Punch Man",
+    "P31": [
+     "Q21198342"
+    ],
+    "P2047": [],
+    "props": [
+     "P10688",
+     "P136",
+     "P1476",
+     "P31",
+     "P407",
+     "P495",
+     "P50",
+     "P577",
+     "P856"
+    ]
+   },
+   "Q22341690": {
+    "label": "One-Punch Man",
+    "P31": [
+     "Q21198342"
+    ],
+    "P2047": [],
+    "props": [
+     "P10688",
+     "P110",
+     "P11149",
+     "P11176",
+     "P11259",
+     "P11348",
+     "P11363",
+     "P11476",
+     "P11494",
+     "P11732",
+     "P12048",
+     "P123",
+     "P12319",
+     "P1292",
+     "P136",
+     "P14262",
+     "P1433",
+     "P144",
+     "P1476",
+     "P170",
+     "P1984",
+     "P214",
+     "P2360",
+     "P244",
+     "P2635",
+     "P31",
+     "P3589",
+     "P407",
+     "P4087",
+     "P495",
+     "P50",
+     "P5659",
+     "P577",
+     "P5849",
+     "P5905",
+     "P6262",
+     "P6367",
+     "P6947",
+     "P7648",
+     "P8513",
+     "P856",
+     "P8731"
+    ]
+   }
+  },
+  "wikidata_items_below_with_P2047": [],
+  "wikidata_part_of_hits": {
+   "P179=Q5102879 (One-Punch Man)": [],
+   "P361=Q5102879 (One-Punch Man)": [],
+   "P1811=Q5102879 (One-Punch Man)": [],
+   "P4908=Q105081756 (One-Punch Man season 1)": [
+    "Q109131230",
+    "Q109130066",
+    "Q109129943",
+    "Q109130452",
+    "Q109130837",
+    "Q109130203",
+    "Q109131093",
+    "Q109130327",
+    "Q109130969",
+    "Q109130579",
+    "Q109130707",
+    "Q109129852"
+   ],
+   "P4908=Q105081766 (One-Punch Man season 2)": [
+    "Q109132222",
+    "Q109131562",
+    "Q109132450",
+    "Q109132083",
+    "Q109131458",
+    "Q109132459",
+    "Q109131711",
+    "Q109132454",
+    "Q109131956",
+    "Q109131836",
+    "Q109132447",
+    "Q109132366",
+    "Q109132480"
+   ],
+   "P4908=Q135945901 (One-Punch Man season 3)": []
+  },
+  "season_infobox_runtime_fields": [],
+  "series_infobox_runtime": null,
+  "oad_infobox_runtime": "24 minutes",
+  "prose_minute_claims": [
+   "10-minute",
+   "24 minutes",
+   "ten-minute"
+  ]
+ }
+}

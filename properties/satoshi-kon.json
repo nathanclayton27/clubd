@@ -46,25 +46,33 @@
           "t": "Perfect Blue",
           "n": "1997",
           "w": 1.35,
+          "m": "f",
+          "q": "Q1205051",
           "note": "His debut feature"
         },
         {
           "id": "sk-2001-millennium-actress",
           "t": "Millennium Actress",
           "n": "2001",
-          "w": 1.45
+          "w": 1.45,
+          "m": "f",
+          "q": "Q939736"
         },
         {
           "id": "sk-2003-tokyo-godfathers",
           "t": "Tokyo Godfathers",
           "n": "2003",
-          "w": 1.55
+          "w": 1.55,
+          "m": "f",
+          "q": "Q917278"
         },
         {
           "id": "sk-2006-paprika",
           "t": "Paprika",
           "n": "2006",
           "w": 1.5,
+          "m": "f",
+          "q": "Q578595",
           "note": "His last completed feature"
         }
       ],

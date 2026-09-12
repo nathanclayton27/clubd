@@ -212,6 +212,14 @@ def main():
 
     prop = {
         "slug": SLUG,
+        # CLU-508 declared this list a mega list, and build.py reads the flag
+        # off the property file (`p["_mega"] = bool(p.get("mega"))`) to put it
+        # in the home page's mega row instead of the card wall. The flag was
+        # committed straight onto properties/marvel-animation.json and never added
+        # here, so every run of this script silently deleted it and dropped the
+        # list out of that row. CLU-552 swept the whole catalogue for the class:
+        # these two were the last of the five mega lists still exposed to it.
+        "mega": True,
         "title": "Marvel Animation",
         "subtitle": "every animated Marvel series and film, in release order",
         "kind": "shows & films",

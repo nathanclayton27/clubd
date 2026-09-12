@@ -791,12 +791,28 @@ def main():
                 if p.get("_totalw"):
                     row.append(x.get("w"))
                 rows.append(row)
-                if syncable:
-                    rm = x.get("m")
-                    assert rm is None or rm in ("f", "g"), (
-                        "%s item %s: medium %r must be 'f' or 'g'"
-                        % (p["slug"], x["id"], rm))
-                    medium = rm or prop_medium
+                rm = x.get("m")
+                assert rm is None or rm in ("f", "g"), (
+                    "%s item %s: medium %r must be 'f' or 'g'"
+                    % (p["slug"], x["id"], rm))
+                # A row's own medium ALSO opts it into sync, and it is the
+                # only way in for a list whose kind is not a syncable word.
+                # `kind` is three things at once — the copy on the card wall,
+                # the media chips, and this gate — so a list that honestly
+                # calls itself "anime" minted no keys at all, and Satoshi
+                # Kon's four features could not pair with any film list, in
+                # either lane, ever (CLU-369).
+                #
+                # Widening the WORD list instead would be wrong in the other
+                # direction. Of the 14 rows on non-syncable lists that match
+                # a film key exactly today, 12 are the two pairings Nathan
+                # ruled out in CLU-180: 11 MST3K riffs, and Christine the
+                # novel against Christine the film. A blanket "anime and tv
+                # sync too" would have created exactly those. So the gate is
+                # a declaration a generator makes per row, and never an
+                # inference from a word of copy.
+                medium = rm or (prop_medium if syncable else None)
+                if medium:
                     keys = []
                     y = _year_of(x, n)
                     if y:

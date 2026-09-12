@@ -83,5 +83,31 @@
    "theatrical": 144,
    "extended": 164
   }
+ ],
+ "animated": [
+  {
+   "title": "The Hobbit",
+   "year": 1977,
+   "runtime": 78,
+   "studio": "Rankin/Bass",
+   "tv": true,
+   "qid": "Q74229"
+  },
+  {
+   "title": "The Lord of the Rings",
+   "year": 1978,
+   "runtime": 133,
+   "studio": "Ralph Bakshi",
+   "tv": false,
+   "qid": "Q378913"
+  },
+  {
+   "title": "The Return of the King",
+   "year": 1980,
+   "runtime": 98,
+   "studio": "Rankin/Bass",
+   "tv": true,
+   "qid": "Q115285"
+  }
  ]
 }

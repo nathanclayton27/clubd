@@ -1,11 +1,11 @@
 {
   "slug": "the-simpsons",
   "title": "The Simpsons",
-  "subtitle": "the golden age — seasons 1–8",
+  "subtitle": "the golden age, and the two seasons after it",
   "kind": "tv",
   "popularity": 93,
-  "year": "1989–97",
-  "blurb": "Seasons 1 through 8, one row per episode — 178 episodes of the golden age, and nothing after.",
+  "year": "1989–99",
+  "blurb": "Seasons 1 through 10, one row per episode. The golden age runs to season 8; 9 and 10 are still good, and the list stops after them.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -22,13 +22,13 @@
   "notes": [
     [
       "The cutoff is deliberate.",
-      "The list ends after season 8 — \"Homer's Enemy\" territory, where the conventional golden-age line is drawn."
+      "The conventional golden-age line is drawn after season 8 — \"Homer's Enemy\" territory. Seasons 9 and 10 sit past it and are here anyway: still pretty good, just not as good as what came before them. After season 10 is where the show really falls off, and that is where this list ends."
     ],
     [
       "Treehouse of Horror counts one each.",
       "The Halloween anthologies are regular episodes of their seasons and sit in broadcast position, noted on the row."
     ],
-    "Episode titles and airdates machine-read from the eight Wikipedia season articles (The Simpsons season 1–8); each season's numbering is asserted against the article's own episode count before this builds."
+    "Episode titles and airdates machine-read from the ten Wikipedia season articles (The Simpsons season 1–10); each season's numbering is asserted against the article's own episode count before this builds."
   ],
   "sections": [
     {
@@ -982,6 +982,262 @@
           "id": "simp-s8-25",
           "t": "The Secret War of Lisa Simpson",
           "n": "25"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "title": "Season 9",
+      "sub": "1997–98 · 25 episodes",
+      "items": [
+        {
+          "id": "simp-s9-1",
+          "t": "The City of New York vs. Homer Simpson",
+          "n": "1"
+        },
+        {
+          "id": "simp-s9-2",
+          "t": "The Principal and the Pauper",
+          "n": "2"
+        },
+        {
+          "id": "simp-s9-3",
+          "t": "Lisa's Sax",
+          "n": "3"
+        },
+        {
+          "id": "simp-s9-4",
+          "t": "Treehouse of Horror VIII",
+          "n": "4",
+          "note": "The annual Halloween anthology — three stand-alone segments"
+        },
+        {
+          "id": "simp-s9-5",
+          "t": "The Cartridge Family",
+          "n": "5"
+        },
+        {
+          "id": "simp-s9-6",
+          "t": "Bart Star",
+          "n": "6"
+        },
+        {
+          "id": "simp-s9-7",
+          "t": "The Two Mrs. Nahasapeemapetilons",
+          "n": "7"
+        },
+        {
+          "id": "simp-s9-8",
+          "t": "Lisa the Skeptic",
+          "n": "8"
+        },
+        {
+          "id": "simp-s9-9",
+          "t": "Realty Bites",
+          "n": "9"
+        },
+        {
+          "id": "simp-s9-10",
+          "t": "Miracle on Evergreen Terrace",
+          "n": "10"
+        },
+        {
+          "id": "simp-s9-11",
+          "t": "All Singing, All Dancing",
+          "n": "11"
+        },
+        {
+          "id": "simp-s9-12",
+          "t": "Bart Carny",
+          "n": "12"
+        },
+        {
+          "id": "simp-s9-13",
+          "t": "The Joy of Sect",
+          "n": "13"
+        },
+        {
+          "id": "simp-s9-14",
+          "t": "Das Bus",
+          "n": "14"
+        },
+        {
+          "id": "simp-s9-15",
+          "t": "The Last Temptation of Krust",
+          "n": "15"
+        },
+        {
+          "id": "simp-s9-16",
+          "t": "Dumbbell Indemnity",
+          "n": "16"
+        },
+        {
+          "id": "simp-s9-17",
+          "t": "Lisa the Simpson",
+          "n": "17"
+        },
+        {
+          "id": "simp-s9-18",
+          "t": "This Little Wiggy",
+          "n": "18"
+        },
+        {
+          "id": "simp-s9-19",
+          "t": "Simpson Tide",
+          "n": "19"
+        },
+        {
+          "id": "simp-s9-20",
+          "t": "The Trouble with Trillions",
+          "n": "20"
+        },
+        {
+          "id": "simp-s9-21",
+          "t": "Girly Edition",
+          "n": "21"
+        },
+        {
+          "id": "simp-s9-22",
+          "t": "Trash of the Titans",
+          "n": "22"
+        },
+        {
+          "id": "simp-s9-23",
+          "t": "King of the Hill",
+          "n": "23"
+        },
+        {
+          "id": "simp-s9-24",
+          "t": "Lost Our Lisa",
+          "n": "24"
+        },
+        {
+          "id": "simp-s9-25",
+          "t": "Natural Born Kissers",
+          "n": "25"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "title": "Season 10",
+      "sub": "1998–99 · 23 episodes",
+      "items": [
+        {
+          "id": "simp-s10-1",
+          "t": "Lard of the Dance",
+          "n": "1"
+        },
+        {
+          "id": "simp-s10-2",
+          "t": "The Wizard of Evergreen Terrace",
+          "n": "2"
+        },
+        {
+          "id": "simp-s10-3",
+          "t": "Bart the Mother",
+          "n": "3"
+        },
+        {
+          "id": "simp-s10-4",
+          "t": "Treehouse of Horror IX",
+          "n": "4",
+          "note": "The annual Halloween anthology — three stand-alone segments"
+        },
+        {
+          "id": "simp-s10-5",
+          "t": "When You Dish Upon a Star",
+          "n": "5"
+        },
+        {
+          "id": "simp-s10-6",
+          "t": "D'oh-in' in the Wind",
+          "n": "6"
+        },
+        {
+          "id": "simp-s10-7",
+          "t": "Lisa Gets an 'A'",
+          "n": "7"
+        },
+        {
+          "id": "simp-s10-8",
+          "t": "Homer Simpson in: 'Kidney Trouble'",
+          "n": "8"
+        },
+        {
+          "id": "simp-s10-9",
+          "t": "Mayored to the Mob",
+          "n": "9"
+        },
+        {
+          "id": "simp-s10-10",
+          "t": "Viva Ned Flanders",
+          "n": "10"
+        },
+        {
+          "id": "simp-s10-11",
+          "t": "Wild Barts Can't Be Broken",
+          "n": "11"
+        },
+        {
+          "id": "simp-s10-12",
+          "t": "Sunday, Cruddy Sunday",
+          "n": "12"
+        },
+        {
+          "id": "simp-s10-13",
+          "t": "Homer to the Max",
+          "n": "13"
+        },
+        {
+          "id": "simp-s10-14",
+          "t": "I'm with Cupid",
+          "n": "14"
+        },
+        {
+          "id": "simp-s10-15",
+          "t": "Marge Simpson in: 'Screaming Yellow Honkers'",
+          "n": "15"
+        },
+        {
+          "id": "simp-s10-16",
+          "t": "Make Room for Lisa",
+          "n": "16"
+        },
+        {
+          "id": "simp-s10-17",
+          "t": "Maximum Homerdrive",
+          "n": "17"
+        },
+        {
+          "id": "simp-s10-18",
+          "t": "Simpsons Bible Stories",
+          "n": "18"
+        },
+        {
+          "id": "simp-s10-19",
+          "t": "Mom and Pop Art",
+          "n": "19"
+        },
+        {
+          "id": "simp-s10-20",
+          "t": "The Old Man and the 'C' Student",
+          "n": "20"
+        },
+        {
+          "id": "simp-s10-21",
+          "t": "Monty Can't Buy Me Love",
+          "n": "21"
+        },
+        {
+          "id": "simp-s10-22",
+          "t": "They Saved Lisa's Brain",
+          "n": "22"
+        },
+        {
+          "id": "simp-s10-23",
+          "t": "Thirty Minutes over Tokyo",
+          "n": "23"
         }
       ]
     }

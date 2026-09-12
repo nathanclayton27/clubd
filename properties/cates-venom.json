@@ -56,40 +56,47 @@
           "t": "Venom",
           "n": "#1",
           "note": "the pitch, in one issue",
-          "star": 2
+          "star": 2,
+          "w": 1
         },
         {
           "id": "venom-venom-2",
           "t": "Venom",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "venom-venom-3",
           "t": "Venom",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "venom-wov-venam",
           "t": "Web of Venom: Ve'Nam",
           "n": "#1",
           "note": "Vietnam, 1968 — the flashback the arc keeps gesturing at",
-          "star": 1
+          "star": 1,
+          "w": 1
         },
         {
           "id": "venom-venom-4",
           "t": "Venom",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "venom-venom-5",
           "t": "Venom",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "venom-venom-6",
           "t": "Venom",
           "n": "#6",
-          "star": 1
+          "star": 1,
+          "w": 1
         }
       ]
     },
@@ -108,39 +115,46 @@
         {
           "id": "venom-venom-7",
           "t": "Venom",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "venom-venom-8",
           "t": "Venom",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "venom-venom-9",
           "t": "Venom",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "venom-venom-10",
           "t": "Venom",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "venom-venom-11",
           "t": "Venom",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "venom-venom-12",
           "t": "Venom",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "venom-annual-1",
           "t": "Venom Annual",
           "n": "#1",
           "note": "anthology; the Cates story is the reason",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         }
       ]
     },
@@ -165,26 +179,30 @@
           "id": "venom-venom-13",
           "t": "Venom",
           "n": "#13",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-venom-14",
           "t": "Venom",
           "n": "#14",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-venom-15",
           "t": "Venom",
           "n": "#15",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-wov-unleashed",
           "t": "Web of Venom: Venom Unleashed",
           "n": "#1",
           "note": "collected with this arc; also not Cates",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         }
       ]
     },
@@ -210,20 +228,23 @@
           "t": "Web of Venom: Carnage Born",
           "n": "#1",
           "note": "the one to not skip",
-          "star": 1
+          "star": 1,
+          "w": 1
         },
         {
           "id": "venom-fcbd-2019",
           "t": "Free Comic Book Day: Spider-Man/Venom",
           "n": "#1",
           "note": "2019 · short prelude",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-venom-16",
           "t": "Venom",
           "n": "#16",
-          "note": "the hinge into the event"
+          "note": "the hinge into the event",
+          "w": 1
         }
       ]
     },
@@ -252,53 +273,63 @@
           "id": "venom-ac-1",
           "t": "Absolute Carnage",
           "n": "#1",
-          "star": 2
+          "star": 2,
+          "w": 1
         },
         {
           "id": "venom-venom-17",
           "t": "Venom",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "venom-ac-2",
           "t": "Absolute Carnage",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "venom-venom-18",
           "t": "Venom",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "venom-wov-funeral-pyre",
           "t": "Web of Venom: Funeral Pyre",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "venom-ac-3",
           "t": "Absolute Carnage",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "venom-venom-19",
           "t": "Venom",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "venom-ac-4",
           "t": "Absolute Carnage",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "venom-venom-20",
           "t": "Venom",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "venom-ac-5",
           "t": "Absolute Carnage",
           "n": "#5",
-          "star": 1
+          "star": 1,
+          "w": 1
         }
       ]
     },
@@ -333,61 +364,71 @@
           "n": "#1",
           "note": "the best of them",
           "star": 1,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-scream-2",
           "t": "Absolute Carnage: Scream",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-scream-3",
           "t": "Absolute Carnage: Scream",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-miles-1",
           "t": "Absolute Carnage: Miles Morales",
           "n": "#1",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-miles-2",
           "t": "Absolute Carnage: Miles Morales",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-miles-3",
           "t": "Absolute Carnage: Miles Morales",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-lethal-1",
           "t": "Absolute Carnage: Lethal Protectors",
           "n": "#1",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-lethal-2",
           "t": "Absolute Carnage: Lethal Protectors",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-lethal-3",
           "t": "Absolute Carnage: Lethal Protectors",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-ac-hulk-1",
           "t": "Absolute Carnage: Immortal Hulk",
           "n": "#1",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         }
       ]
     },
@@ -410,14 +451,16 @@
         {
           "id": "venom-wov-cult",
           "t": "Web of Venom: Cult of Carnage",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "venom-wov-good-son",
           "t": "Web of Venom: The Good Son",
           "n": "#1",
           "note": "Dylan; matters more than it looks",
-          "star": 1
+          "star": 1,
+          "w": 1
         }
       ]
     },
@@ -436,27 +479,32 @@
         {
           "id": "venom-venom-21",
           "t": "Venom",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "venom-venom-22",
           "t": "Venom",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "venom-venom-23",
           "t": "Venom",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "venom-venom-24",
           "t": "Venom",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "venom-venom-25",
           "t": "Venom",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         }
       ]
     },
@@ -475,27 +523,32 @@
         {
           "id": "venom-venom-26",
           "t": "Venom",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "venom-venom-27",
           "t": "Venom",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "venom-venom-28",
           "t": "Venom",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "venom-venom-29",
           "t": "Venom",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "venom-venom-30",
           "t": "Venom",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         }
       ]
     },
@@ -517,27 +570,32 @@
           "t": "Silver Surfer: Black",
           "n": "#1",
           "note": "gorgeous",
-          "star": 1
+          "star": 1,
+          "w": 1
         },
         {
           "id": "venom-ssb-2",
           "t": "Silver Surfer: Black",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "venom-ssb-3",
           "t": "Silver Surfer: Black",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "venom-ssb-4",
           "t": "Silver Surfer: Black",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "venom-ssb-5",
           "t": "Silver Surfer: Black",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         }
       ]
     },
@@ -562,19 +620,22 @@
           "id": "venom-wov-wraith",
           "t": "Web of Venom: Wraith",
           "n": "#1",
-          "star": 1
+          "star": 1,
+          "w": 1
         },
         {
           "id": "venom-wov-empyres-end",
           "t": "Web of Venom: Empyre's End",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "venom-fcbd-2020",
           "t": "Free Comic Book Day: Spider-Man/Venom",
           "n": "#1",
           "note": "2020 · short prelude",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         }
       ]
     },
@@ -598,48 +659,57 @@
           "id": "venom-kib-1",
           "t": "King in Black",
           "n": "#1",
-          "star": 2
+          "star": 2,
+          "w": 1
         },
         {
           "id": "venom-venom-31",
           "t": "Venom",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "venom-kib-2",
           "t": "King in Black",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "venom-venom-32",
           "t": "Venom",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "venom-kib-3",
           "t": "King in Black",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "venom-venom-33",
           "t": "Venom",
-          "n": "#33"
+          "n": "#33",
+          "w": 1
         },
         {
           "id": "venom-kib-4",
           "t": "King in Black",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "venom-venom-34",
           "t": "Venom",
-          "n": "#34"
+          "n": "#34",
+          "w": 1
         },
         {
           "id": "venom-kib-5",
           "t": "King in Black",
           "n": "#5",
-          "star": 1
+          "star": 1,
+          "w": 1
         }
       ]
     },
@@ -669,67 +739,78 @@
           "n": "#1",
           "note": "the strongest tie-in",
           "star": 1,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-namor-2",
           "t": "King in Black: Namor",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-namor-3",
           "t": "King in Black: Namor",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-namor-4",
           "t": "King in Black: Namor",
           "n": "#4",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-namor-5",
           "t": "King in Black: Namor",
           "n": "#5",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-planet-1",
           "t": "King in Black: Planet of the Symbiotes",
           "n": "#1",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-planet-2",
           "t": "King in Black: Planet of the Symbiotes",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-planet-3",
           "t": "King in Black: Planet of the Symbiotes",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-gwenom-1",
           "t": "King in Black: Gwenom vs. Carnage",
           "n": "#1",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-gwenom-2",
           "t": "King in Black: Gwenom vs. Carnage",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "venom-kib-gwenom-3",
           "t": "King in Black: Gwenom vs. Carnage",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         }
       ]
     },
@@ -750,7 +831,8 @@
           "t": "Venom",
           "n": "#35",
           "note": "legacy #200 — Cates and Stegman sign off",
-          "star": 2
+          "star": 2,
+          "w": 1
         }
       ]
     }

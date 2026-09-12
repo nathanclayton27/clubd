@@ -3,13 +3,28 @@
 
     python tools/make_middle_earth.py
 
-Two sections. Books: The Hobbit, The Lord of the Rings as three volume
+Three sections. Books: The Hobbit, The Lord of the Rings as three volume
 rows, The Silmarillion, then the four posthumous narrative volumes as
 optional rows — years and Christopher Tolkien credits from the Middle-earth
 section of Wikipedia's J. R. R. Tolkien bibliography. Films: Peter
 Jackson's six, weighted by theatrical runtime, each row noting its extended
 edition factually — both figures from the film-series articles' own length
 tables, theatrical cuts cross-checked against Wikidata P2047.
+
+The animated films (CLU-200, raised in Discord): the three adaptations that
+predate Jackson — Rankin/Bass's The Hobbit (1977), Ralph Bakshi's The Lord of
+the Rings (1978) and Rankin/Bass's The Return of the King (1980). They are
+OPTIONAL rows and a section of their own, for two reasons. They are a different
+adaptation lineage from Jackson, made by two studios who were not making one
+series; and this list is live with ticks on it, so the spine that "finishing the
+list" means has to stay the books plus Jackson's six. Each row's runtime is that
+film's own infobox figure, cross-checked against Wikidata P2047 to ±1 minute —
+see parse_middle_earth.py for why the tolerance is not exact there.
+
+⚠ Their ids are new and nothing else moved. They sit in a section appended after
+Jackson's, not interleaved by year, because every existing row keeps its position
+that way and the optional material stays at the bottom of the page where the
+optional books already are.
 
 Book rows are unweighted (pages aren't hours). The Rings of Power is not a
 row; the notes say so. Data: tools/data/middle-earth.json, built and
@@ -51,8 +66,8 @@ def main():
     here = pathlib.Path(__file__).resolve().parent
     d = json.loads((here / "data" / "middle-earth.json")
                    .read_text(encoding="utf-8"))
-    books, films = d["books"], d["films"]
-    assert len(books) == 9 and len(films) == 6
+    books, films, animated = d["books"], d["films"], d["animated"]
+    assert len(books) == 9 and len(films) == 6 and len(animated) == 3
 
     book_items = []
     for b in books:
@@ -79,7 +94,24 @@ def main():
             "note": "%d min · extended edition %d min"
                     % (f["theatrical"], f["extended"])})
 
+    # Same `me-f-` prefix as Jackson's rows, because these are film rows on this
+    # list and a second convention is one more thing to get wrong later. The
+    # year is what separates them, and it always will: 1977/1978/1980 against
+    # 2001-2014, asserted disjoint in parse_middle_earth.py.
+    animated_items = []
+    for a in animated:
+        bits = ["%d min" % a["runtime"], a["studio"]]
+        if a["tv"]:
+            bits.append("made for television")
+        animated_items.append({
+            "id": "me-f-%d-%s" % (a["year"], slugify(a["title"])),
+            "t": a["title"], "n": str(a["year"]),
+            "w": round(a["runtime"] / 60.0, 2),
+            "opt": 1,
+            "note": " · ".join(bits)})
+
     hours = sum(x["w"] for x in film_items)
+    ahours = sum(x["w"] for x in animated_items)
     sections = [
         {"id": "books", "title": "The books",
          "sub": "1937–2018 · Tolkien on the page", "open": True,
@@ -94,10 +126,18 @@ def main():
                   "extended edition. Watch either cut — the tick doesn't "
                   "ask which.",
          "items": film_items},
+        {"id": "animated", "title": "The animated films",
+         "sub": "1977–1980 · about %.0f hours" % ahours,
+         "intro": "Three adaptations from before Jackson, by two studios "
+                  "working separately: Rankin/Bass made The Hobbit for "
+                  "television and The Return of the King as its sequel, and "
+                  "Ralph Bakshi's film came between them. Optional rows — "
+                  "finishing the list does not ask for these.",
+         "items": animated_items},
     ]
 
     ids = [x["id"] for s in sections for x in s["items"]]
-    assert len(ids) == 15 and len(set(ids)) == 15
+    assert len(ids) == 18 and len(set(ids)) == 18
     assert all(i == slugify(i) and i.isascii() for i in ids)
     opts = [x["t"] for x in book_items if x.get("opt")]
     assert set(opts) == OPT_BOOKS, opts
@@ -106,17 +146,36 @@ def main():
         "a book row grew an hour figure; there is no source for one"
     assert all("w" in x for x in film_items), "a film row lost its runtime"
     assert 17.0 < hours < 17.4, hours  # 557 + 474 = 1031 min
+    # the animated three are weighted like the other film rows and optional
+    # like the posthumous books; both halves are load-bearing, so both assert
+    assert all("w" in x for x in animated_items), \
+        "an animated row lost its runtime"
+    assert all(x.get("opt") for x in animated_items), \
+        "an animated row stopped being optional; that changes what finishing " \
+        "this list means for everyone who already has progress on it"
+    assert 5.1 < ahours < 5.2, ahours  # 78 + 133 + 98 = 309 min
+    # Jackson's rows must not have moved: the six ids and their order are the
+    # ticks people already have, and appending a section is the only change here
+    assert [x["id"] for x in film_items] == [
+        "me-f-2001-the-fellowship-of-the-ring",
+        "me-f-2002-the-two-towers",
+        "me-f-2003-the-return-of-the-king",
+        "me-f-2012-the-hobbit-an-unexpected-journey",
+        "me-f-2013-the-hobbit-the-desolation-of-smaug",
+        "me-f-2014-the-hobbit-the-battle-of-the-five-armies",
+    ], [x["id"] for x in film_items]
 
     prop = {
         "slug": SLUG,
         "title": "Middle-earth",
-        "subtitle": "Tolkien's books and Jackson's films",
+        "subtitle": "Tolkien's books and the films made from them",
         "kind": "books & films",
         "popularity": 85,
         "year": "1937–2014",
         "blurb": "The Hobbit to The Silmarillion with the posthumous "
-                 "volumes optional, and Peter Jackson's six films weighted "
-                 "by runtime — the page and the screen, one list.",
+                 "volumes optional, Peter Jackson's six films weighted by "
+                 "runtime, and the three animated adaptations that came "
+                 "before him as optional rows.",
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "read", "past": "done", "ing": "working through"},
         "accent": "#4A6B2A",
@@ -134,17 +193,28 @@ def main():
              "Middle-earth series is scholarship beyond even that, and is "
              "not here."],
             ["Films are weighted, books are not.",
-             "Film rows use theatrical runtimes from Wikipedia's own "
+             "Jackson's rows use theatrical runtimes from Wikipedia's own "
              "length tables — about 9 hours for The Lord of the Rings "
              "plus 8 for The Hobbit — and each row notes its extended "
-             "edition. Book rows count one each; pages aren't hours."],
+             "edition. The animated rows carry the runtime on their own "
+             "articles; none of the three has a second cut. Book rows count "
+             "one each; pages aren't hours."],
+            ["The animated films are their own lineage.",
+             "Rankin/Bass made The Hobbit for American television in 1977 "
+             "and The Return of the King in 1980 as its sequel. Ralph "
+             "Bakshi's The Lord of the Rings came between them in 1978 and "
+             "adapts the first two volumes, not the third. Two studios who "
+             "were not making one series, then — but in that order the three "
+             "of them reach the end of the story, twenty years before "
+             "Jackson did. They are optional rows, so what finishing this "
+             "list means is unchanged for anyone already part-way through."],
             ["No Rings of Power.",
-             "This list is Tolkien's page and Jackson's screen. The "
-             "Amazon series is neither, and is left out on purpose."],
+             "Every screen row here adapts one of the books above. The "
+             "Amazon series does not, and is left out on purpose."],
             "Books and years from Wikipedia's J. R. R. Tolkien "
-            "bibliography; film lengths from The Lord of the Rings and "
-            "The Hobbit film-series articles, cross-checked against "
-            "Wikidata.",
+            "bibliography; Jackson's film lengths from The Lord of the Rings "
+            "and The Hobbit film-series articles, the animated films' from "
+            "their own articles, all cross-checked against Wikidata.",
         ],
         "sections": sections,
     }
@@ -153,8 +223,10 @@ def main():
     with out.open("w", encoding="utf-8", newline="\n") as f:
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
 
-    print("wrote %s.json — %d rows (%d books, %d films, %.1fh theatrical)"
-          % (SLUG, len(ids), len(book_items), len(film_items), hours))
+    print("wrote %s.json — %d rows (%d books, %d Jackson films at %.1fh "
+          "theatrical, %d animated at %.1fh)"
+          % (SLUG, len(ids), len(book_items), len(film_items), hours,
+             len(animated_items), ahours))
     for s in sections:
         print("   %-14s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
 

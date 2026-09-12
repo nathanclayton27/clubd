@@ -17,7 +17,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 250
+    "total": 250,
+    "totalw": 250.0
   },
   {
     "slug": "fma-brotherhood",
@@ -51,7 +52,7 @@
     "kind": "films & shows",
     "year": "1977–",
     "popularity": 97,
-    "blurb": "17 films and 39 television seasons in the order they came out — about 240 hours.",
+    "blurb": "17 films and 40 television seasons in the order they came out — about 243 hours.",
     "accent": "#8A6D1F",
     "accentDark": "#E8C450",
     "unit": {
@@ -59,8 +60,8 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 56,
-    "totalw": 239.77,
+    "total": 57,
+    "totalw": 242.7,
     "mega": true
   },
   {
@@ -122,7 +123,7 @@
     "popularity": 94,
     "blurb": "Fifteen filmographies as one list. Each row opens the director's own page, and finishing that page ticks the row here.",
     "accent": "#5B4A9E",
-    "accentDark": "#9C8AE0",
+    "accentDark": "#D4CCF8",
     "unit": {
       "one": "filmography",
       "many": "filmographies"
@@ -161,11 +162,11 @@
       "tv"
     ],
     "title": "The Simpsons",
-    "subtitle": "the golden age — seasons 1–8",
+    "subtitle": "the golden age, and the two seasons after it",
     "kind": "tv",
-    "year": "1989–97",
+    "year": "1989–99",
     "popularity": 93,
-    "blurb": "Seasons 1 through 8, one row per episode — 178 episodes of the golden age, and nothing after.",
+    "blurb": "Seasons 1 through 10, one row per episode. The golden age runs to season 8; 9 and 10 are still good, and the list stops after them.",
     "accent": "#C2477E",
     "accentDark": "#F2C744",
     "unit": {
@@ -173,7 +174,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 178
+    "total": 226
   },
   {
     "slug": "star-trek",
@@ -243,11 +244,11 @@
       "comics"
     ],
     "title": "Marvel Comics",
-    "subtitle": "9 reading orders",
+    "subtitle": "13 reading orders",
     "kind": "comics",
     "year": "1941–",
     "popularity": 90,
-    "blurb": "Nine Marvel reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+    "blurb": "Thirteen Marvel reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
     "accent": "#B32024",
     "accentDark": "#F0565A",
     "unit": {
@@ -255,8 +256,9 @@
       "many": "reading orders"
     },
     "vpast": "read",
-    "total": 9,
-    "doors": 9,
+    "total": 13,
+    "totalw": 6735.0,
+    "doors": 13,
     "hub": true,
     "mega": true
   },
@@ -302,6 +304,29 @@
     "totalw": 53.88
   },
   {
+    "slug": "sitcoms",
+    "media": [
+      "tv"
+    ],
+    "title": "Sitcoms",
+    "subtitle": "15 sitcoms, each its own list",
+    "kind": "tv",
+    "year": "1972–",
+    "popularity": 90,
+    "blurb": "Fifteen sitcoms as one list. Each row opens that show's own page, and finishing that page ticks the row here.",
+    "accent": "#B5771A",
+    "accentDark": "#E8B23C",
+    "unit": {
+      "one": "show",
+      "many": "shows"
+    },
+    "vpast": "watched",
+    "total": 15,
+    "doors": 15,
+    "hub": true,
+    "mega": true
+  },
+  {
     "slug": "dragon-ball",
     "media": [
       "anime"
@@ -320,6 +345,29 @@
     },
     "vpast": "watched",
     "total": 660
+  },
+  {
+    "slug": "dc-comics",
+    "media": [
+      "comics"
+    ],
+    "title": "DC Comics",
+    "subtitle": "8 reading orders",
+    "kind": "comics",
+    "year": "1985–2023",
+    "popularity": 88,
+    "blurb": "Eight DC reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+    "accent": "#0A50C8",
+    "accentDark": "#7AA9FF",
+    "unit": {
+      "one": "reading order",
+      "many": "reading orders"
+    },
+    "vpast": "read",
+    "total": 8,
+    "doors": 8,
+    "hub": true,
+    "mega": true
   },
   {
     "slug": "bond",
@@ -496,18 +544,18 @@
       "movies"
     ],
     "title": "Middle-earth",
-    "subtitle": "Tolkien's books and Jackson's films",
+    "subtitle": "Tolkien's books and the films made from them",
     "kind": "books & films",
     "year": "1937–2014",
     "popularity": 85,
-    "blurb": "The Hobbit to The Silmarillion with the posthumous volumes optional, and Peter Jackson's six films weighted by runtime — the page and the screen, one list.",
+    "blurb": "The Hobbit to The Silmarillion with the posthumous volumes optional, Peter Jackson's six films weighted by runtime, and the three animated adaptations that came before him as optional rows.",
     "accent": "#4A6B2A",
     "accentDark": "#E3C060",
     "unit": {
       "one": "entry",
       "many": "entries"
     },
-    "total": 15
+    "total": 18
   },
   {
     "slug": "street-fighter",
@@ -632,6 +680,27 @@
     "total": 37
   },
   {
+    "slug": "my-hero-academia",
+    "media": [
+      "anime"
+    ],
+    "title": "My Hero Academia",
+    "subtitle": "all eight seasons in air order, then the special and the films",
+    "kind": "anime",
+    "year": "2016–2026",
+    "popularity": 83,
+    "blurb": "All 170 episodes of the eight-season run, the bonus special and the four films — about 72 hours at U.A.",
+    "accent": "#38A969",
+    "accentDark": "#D7F26A",
+    "unit": {
+      "one": "entry",
+      "many": "entries"
+    },
+    "vpast": "watched",
+    "total": 175,
+    "totalw": 72.17
+  },
+  {
     "slug": "the-matrix",
     "media": [
       "games",
@@ -707,7 +776,7 @@
     "year": "1989–1998",
     "popularity": 82,
     "blurb": "All 180 episodes in broadcast order — nine seasons about nothing, from The Seinfeld Chronicles to The Finale.",
-    "accent": "#B3282D",
+    "accent": "#684800",
     "accentDark": "#E8B93F",
     "unit": {
       "one": "episode",
@@ -956,7 +1025,7 @@
     "popularity": 79,
     "blurb": "A hundred and fifty-five films over sixty-four years, from uncredited extra to Hollywood and back. Every credit the filmography marks him an actor in.",
     "accent": "#4B3B06",
-    "accentDark": "#A68930",
+    "accentDark": "#C08800",
     "unit": {
       "one": "film",
       "many": "films"
@@ -1004,7 +1073,7 @@
     },
     "vpast": "watched",
     "total": 45,
-    "totalw": 93.95
+    "totalw": 93.92
   },
   {
     "slug": "dragon-ball-manga",
@@ -1129,6 +1198,26 @@
     },
     "vpast": "watched",
     "total": 355
+  },
+  {
+    "slug": "one-punch-man",
+    "media": [
+      "anime"
+    ],
+    "title": "One-Punch Man",
+    "subtitle": "every broadcast episode, and the extras after them",
+    "kind": "anime",
+    "year": "2015–",
+    "popularity": 77,
+    "blurb": "Saitama's whole television run in broadcast order — 36 episodes over three seasons, the third of them half-aired, with the home-video episodes optional at the end.",
+    "accent": "#B02A1E",
+    "accentDark": "#F5C93B",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 49
   },
   {
     "slug": "elder-scrolls",
@@ -1382,6 +1471,26 @@
     "totalw": 399.54
   },
   {
+    "slug": "superman",
+    "media": [
+      "comics"
+    ],
+    "title": "Superman",
+    "subtitle": "a character reading list · post-Crisis onward",
+    "kind": "comics",
+    "year": "1986–2023",
+    "popularity": 74,
+    "blurb": "195 issues across 15 runs, from the 1986 reboot onward — the route the house would actually hand someone, rather than the publication history.",
+    "accent": "#C8102E",
+    "accentDark": "#FF7D8A",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 195
+  },
+  {
     "slug": "the-wire",
     "media": [
       "tv"
@@ -1400,6 +1509,27 @@
     },
     "vpast": "watched",
     "total": 60
+  },
+  {
+    "slug": "wolverine",
+    "media": [
+      "comics"
+    ],
+    "title": "Wolverine",
+    "subtitle": "the solo spine · a character reading list",
+    "kind": "comics",
+    "year": "1974–2026",
+    "popularity": 74,
+    "blurb": "The runs that made the character, as 328 issues in publication order — the Claremont/Miller miniseries, Weapon X, Larry Hama's seven years on the ongoing, Old Man Logan, Aaron, and the solo book since. His X-Men issues are on the X-Men list.",
+    "accent": "#7B5230",
+    "accentDark": "#D9A468",
+    "unit": {
+      "one": "issue",
+      "many": "issues"
+    },
+    "vpast": "read",
+    "total": 328,
+    "totalw": 328.0
   },
   {
     "slug": "cowboy-bebop",
@@ -1810,7 +1940,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 730
+    "total": 730,
+    "totalw": 730.0
   },
   {
     "slug": "black-panther",
@@ -1830,7 +1961,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 350
+    "total": 350,
+    "totalw": 350.0
   },
   {
     "slug": "bobs-burgers",
@@ -2139,7 +2271,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 611
+    "total": 611,
+    "totalw": 611.0
   },
   {
     "slug": "daredevil",
@@ -2159,7 +2292,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 352
+    "total": 352,
+    "totalw": 352.0
   },
   {
     "slug": "fantastic-four",
@@ -2179,7 +2313,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 579
+    "total": 579,
+    "totalw": 579.0
   },
   {
     "slug": "coppola",
@@ -2600,6 +2735,26 @@
     "totalw": 358.03
   },
   {
+    "slug": "kill-la-kill",
+    "media": [
+      "anime"
+    ],
+    "title": "Kill la Kill",
+    "subtitle": "the whole broadcast run, and the OVA that never aired",
+    "kind": "anime",
+    "year": "2013–2014",
+    "popularity": 65,
+    "blurb": "Trigger's twenty-four-episode run in broadcast order, plus the OVA episode that only ever shipped on the last home media volume.",
+    "accent": "#880808",
+    "accentDark": "#F4756B",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 25
+  },
+  {
     "slug": "nicolas-cage",
     "media": [
       "movies"
@@ -2971,6 +3126,28 @@
     "total": 77
   },
   {
+    "slug": "cardcaptor-sakura",
+    "media": [
+      "anime",
+      "movies"
+    ],
+    "title": "Cardcaptor Sakura",
+    "subtitle": "the 1998–2000 run, with each film where it came out",
+    "kind": "anime & films",
+    "year": "1998–2000",
+    "popularity": 62,
+    "blurb": "Madhouse's 70-episode run in its original order, with each film where it was released — about 31 hours.",
+    "accent": "#C02A8A",
+    "accentDark": "#F8D0E8",
+    "unit": {
+      "one": "entry",
+      "many": "entries"
+    },
+    "vpast": "watched",
+    "total": 73,
+    "totalw": 30.92
+  },
+  {
     "slug": "childs-play",
     "media": [
       "movies",
@@ -3077,6 +3254,27 @@
     "total": 24
   },
   {
+    "slug": "hellsing-ultimate",
+    "media": [
+      "anime"
+    ],
+    "title": "Hellsing Ultimate",
+    "subtitle": "the ten OVAs, and not the 2001 series",
+    "kind": "anime",
+    "year": "2006–2012",
+    "popularity": 62,
+    "blurb": "Ten OVAs released one at a time over seven years, in release order — 8 hours of them, and no two the same length. The 2001 television series is a different adaptation of the same manga and is not here.",
+    "accent": "#8E1B1B",
+    "accentDark": "#FF7B7B",
+    "unit": {
+      "one": "OVA",
+      "many": "OVAs"
+    },
+    "vpast": "watched",
+    "total": 13,
+    "totalw": 8.51
+  },
+  {
     "slug": "lego-games",
     "media": [
       "games"
@@ -3110,7 +3308,7 @@
     "popularity": 62,
     "blurb": "All 121 episodes of the eight-season run in 120 broadcasts, then the three films — about 90 hours in Santa Barbara.",
     "accent": "#2F7D32",
-    "accentDark": "#F2C14E",
+    "accentDark": "#94FF9F",
     "unit": {
       "one": "entry",
       "many": "entries"
@@ -3201,7 +3399,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 829
+    "total": 829,
+    "totalw": 829.0
   },
   {
     "slug": "expanse",
@@ -4101,7 +4300,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 693
+    "total": 693,
+    "totalw": 693.0
   },
   {
     "slug": "zombie-films",
@@ -4197,7 +4397,7 @@
     "kind": "films",
     "year": "1924–2019",
     "popularity": 50,
-    "blurb": "The 100 greatest films of all time per Sight and Sound's 2022 critics' poll — about 204 hours, ties and all. Watch in any order; the ranks are the argument.",
+    "blurb": "The 100 greatest films of all time per Sight and Sound's 2022 critics' poll — about 208 hours, ties and all. Watch in any order; the ranks are the argument.",
     "accent": "#33383D",
     "accentDark": "#E2554A",
     "unit": {
@@ -4206,7 +4406,7 @@
     },
     "vpast": "watched",
     "total": 100,
-    "totalw": 204.41,
+    "totalw": 207.85,
     "random": true
   },
   {
@@ -4456,7 +4656,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 82
+    "total": 82,
+    "totalw": 82.0
   },
   {
     "slug": "bond-games",
@@ -4509,7 +4710,7 @@
     "kind": "comics",
     "year": "2007–",
     "popularity": 37,
-    "blurb": "The end of the classic run, then eighteen years of recommendations — 353 issues, tracked one by one.",
+    "blurb": "The end of the classic run, then eighteen years of recommendations — 378 issues, tracked one by one.",
     "accent": "#7A3B5E",
     "accentDark": "#D98BB4",
     "unit": {
@@ -4517,7 +4718,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 353
+    "total": 378,
+    "totalw": 378.0
   },
   {
     "slug": "time-loops",
@@ -4603,7 +4805,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 35
+    "total": 36
   },
   {
     "slug": "one-pace",
@@ -4699,7 +4901,7 @@
     "year": "1944–2021",
     "popularity": 28,
     "blurb": "25 films set (almost) entirely in one place — a jury room, a lifeboat, a coffin, a car. Any order; every note names the room.",
-    "accent": "#46586B",
+    "accent": "#846054",
     "accentDark": "#D9A94E",
     "unit": {
       "one": "film",

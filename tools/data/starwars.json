@@ -440,6 +440,23 @@
    }
   },
   {
+   "t": "Visions Presents: The Ninth Jedi",
+   "page": "Star Wars: Visions Presents",
+   "kind": "animated",
+   "start": "2026-08-05",
+   "end": "2026-08-05",
+   "seasons": 1,
+   "episodes": 8,
+   "season_dates": {
+    "1": "2026-08-05"
+   },
+   "season_eps": {
+    "1": 8
+   },
+   "ep_minutes_unstated": true,
+   "note": "One continuous story rather than a collection of shorts"
+  },
+  {
    "t": "Maul: Shadow Lord",
    "page": "Star Wars: Maul – Shadow Lord",
    "kind": "animated",

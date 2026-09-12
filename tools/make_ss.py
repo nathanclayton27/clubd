@@ -34,6 +34,14 @@ every film verified on Wikidata by year and director) and
 scratch/agent-runtimes/measure.py (each film's own infobox, read from the
 article the film's own Wikidata sitelink names).
 
+One row’s collected data is another film’s, and it is corrected here rather than
+in the collected file: the collector mis-resolved Histoire(s) du Cinéma to
+Godard’s King Lear (1987) and then read its runtime off King Lear’s article, which
+is why WRONG_INFOBOX exists (CLU-541). Its printed year is wrong for the same
+reason and is NOT corrected, because the year is inside the row id and the id is
+where the ticks are — PINNED_IDS refuses the rename rather than trusting nobody
+tries it.
+
 Rows also carry `q`, a Wikidata work id, wherever the id the collector resolved
 could be PROVED to be this film (CLU-368). It is what lets a row pair across
 lists that print the same work under a different title: this poll prints Ugetsu
@@ -78,11 +86,69 @@ TITLE_FIX = {
 NO_Q = {
     # The collector resolved this one by title search and landed on Godard's
     # King Lear (1987): a different film by the same director, close enough in
-    # year to pass its year gate. The row's printed year and its runtime bar are
-    # read off that same wrong entity, which is a defect of its own (CLU-541);
-    # this only keeps the wrong id out of the sync map.
+    # year to pass its year gate. The row's printed year and its runtime bar were
+    # read off that same wrong entity, which is a defect of its own (CLU-541).
+    # The runtime half is fixed below; the year half cannot be, because the year
+    # is in the id. This entry keeps the wrong id out of the sync map.
+    #
+    # The right item is Q2533567, and it stays out of the map deliberately rather
+    # than for want of proof: Wikidata models the work as a *television series*
+    # (P31 Q5398426), eight parts across 1989–1999, while every other row on this
+    # poll is a film, so what it should pair with elsewhere is a question for a
+    # card rather than a line here. No other list in this repo carries Q2533567
+    # today, so attaching it would pair nothing and unpair nothing (CLU-541).
     "Histoire(s) du Cinéma": "Q2707428 is King Lear (1987), another film",
 }
+
+# A row whose collected runtime was read off the WRONG ARTICLE, because the
+# collector resolved the film to the wrong Wikidata item and then followed that
+# item’s sitelink to an infobox (CLU-541). This is not RUNTIME_EXCEPTION’s
+# problem: the rule chose correctly from the box it was handed, and the box
+# belonged to another film.
+#
+# Histoire(s) du Cinéma resolved to Q2707428, which is Godard’s *King Lear*
+# (1987) — same director, and 1987 sits inside the ±1 year the collector’s gate
+# allowed against the BFI’s 1988, so the gate passed it. Both entities were read
+# on 2026-09-11 and they are not close:
+#
+#   Q2707428  label "King Lear", description "1987 film by Jean-Luc Godard",
+#             P31 film, P577 1987, P2047 90 min, enwiki "King Lear (1987 film)".
+#             That article’s box prints `runtime = 90 minutes`, `released` 17 May
+#             1987 (Cannes), `country = United States`.
+#   Q2533567  label "Histoire(s) du cinéma", P57 Godard, P577 1998, P2047 267
+#             min, P580 1989-05-07, P582 1999, enwiki "Histoire(s) du cinéma".
+#             That article’s box prints `runtime = 266 minutes (total)`, no
+#             `released` field at all, and `country = France<br>Switzerland` —
+#             which is the country the BFI page gives for this row, while King
+#             Lear’s "United States" is not. The prose agrees: "an eight-part
+#             video project begun … in the late 1980s and completed in 1998",
+#             "at a total of 266 minutes".
+#
+# The bar is 266 and not P2047’s 267 because this list weighs from the film’s own
+# infobox rather than from Wikidata (CLU-178), and that box says 266 — the same
+# figure its own prose gives. The row was weighing 90 minutes, so this list was
+# under-counting a four-and-a-half-hour work by nearly three hours.
+#
+# The PRINTED YEAR is wrong for exactly the same reason and is deliberately NOT
+# corrected here: the year is inside `ss-1987-histoire-s-du-cinema`, which is
+# where every tick on this row is stored, and the two candidate right answers
+# (the BFI’s 1988, Wikidata’s 1998) both move it. That is a decision, on CLU-541,
+# not an edit — and PINNED_IDS below makes the rename impossible to do by
+# accident in the meantime.
+WRONG_INFOBOX = {
+    # title: (the right box’s figure, the box it was read from,
+    #         the box it should have been read from, what the rule says today)
+    "Histoire(s) du Cinéma": (266, "King Lear (1987 film)",
+                                "Histoire(s) du cinéma", 90),
+}
+
+# Row ids that must not move. A tick is stored against an id, so a renamed row
+# does not migrate anybody’s progress — it silently unticks everyone who had it.
+# This one is pinned because its printed year is known to be wrong (CLU-541), so
+# the obvious fix is a rename waiting to happen; the assertion fails instead.
+PINNED_IDS = [
+    "ss-1987-histoire-s-du-cinema",
+]
 
 # The one row where the infobox rule needs overruling, with its reason and the
 # answer the rule gives, asserted — an exception that has silently stopped
@@ -149,9 +215,22 @@ def main():
     # Weights: the film's own infobox, by gwlib.runtime's rule. A row the rule
     # cannot settle keeps the figure it already carried — never a guess.
     exc, needs_note, kept, moved = dict(RUNTIME_EXCEPTION), set(), [], []
+    bad_box = dict(WRONG_INFOBOX)
     for f in films:
         cuts = [tuple(c) for c in (f.get("infobox_cuts") or [])]
         n, why = RT.weigh(cuts, f.get("infobox_range", False))
+        if f["t"] in WRONG_INFOBOX:
+            want, from_page, right_page, rule_said = bad_box.pop(f["t"])
+            assert f.get("infobox_page") == from_page, \
+                "WRONG_INFOBOX says %s's figure came from %r; the data says " \
+                "%r. If the collector has been fixed, delete this entry \u2014 do " \
+                "not leave it overriding a figure it no longer describes" \
+                % (f["t"], from_page, f.get("infobox_page"))
+            assert n == rule_said, \
+                "WRONG_INFOBOX for %s expects the wrong box to give %s, it " \
+                "gives %s \u2014 re-read both articles before trusting either figure" \
+                % (f["t"], rule_said, n)
+            n, why = want, "%s's box, not %s's" % (right_page, from_page)
         if f["t"] in RUNTIME_EXCEPTION:
             want, reason, rule_said = exc.pop(f["t"])
             assert n == rule_said,                 "RUNTIME_EXCEPTION for %s expects the rule to say %s, it says "                 "%s — the article's box has changed" % (f["t"], rule_said, n)
@@ -165,6 +244,8 @@ def main():
             needs_note.add(f["t"])
         f["min"], f["min_src"] = n, "infobox"
     assert not exc, "RUNTIME_EXCEPTION names no film on this poll: %s" % sorted(exc)
+    assert not bad_box, \
+        "WRONG_INFOBOX names no film on this poll: %s" % sorted(bad_box)
     assert needs_note == set(VERSION_NOTE),         "VERSION_NOTE must name exactly the rows whose box prints more than one "         "length: missing %s, stale %s" % (sorted(needs_note - set(VERSION_NOTE)),
                                           sorted(set(VERSION_NOTE) - needs_note))
 
@@ -204,6 +285,11 @@ def main():
     assert len(ids) == len(set(ids)), \
         "duplicate ids: %s" % sorted({i for i in ids if ids.count(i) > 1})[:6]
     assert len(ids) == 100
+    for pid in PINNED_IDS:
+        assert pid in ids, \
+            "pinned id lost: %s. Every tick on that row is stored against it, " \
+            "so shipping this build would untick them all. If the rename is " \
+            "wanted, it needs a backfill first \u2014 see CLU-541" % pid
     assert not refused, \
         "NO_Q names rows this poll does not have: %s" % sorted(refused)
     # Two rows sharing a work id would tie two ranks of this same list together

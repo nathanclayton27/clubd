@@ -1,0 +1,1311 @@
+{
+ "films": [
+  {
+   "cuts": [
+    [
+     97,
+     ""
+    ]
+   ],
+   "dates": [
+    {
+     "date": "2018-07-05",
+     "label": "Los Angeles Convention Center"
+    },
+    {
+     "date": "2018-08-03",
+     "label": "Japan"
+    }
+   ],
+   "page": "My Hero Academia: Two Heroes",
+   "released": "2018-07-05",
+   "t": "My Hero Academia: Two Heroes"
+  },
+  {
+   "cuts": [
+    [
+     104,
+     ""
+    ]
+   ],
+   "dates": [
+    {
+     "date": "2019-12-20",
+     "label": ""
+    }
+   ],
+   "page": "My Hero Academia: Heroes Rising",
+   "released": "2019-12-20",
+   "t": "My Hero Academia: Heroes Rising"
+  },
+  {
+   "cuts": [
+    [
+     105,
+     ""
+    ]
+   ],
+   "dates": [
+    {
+     "date": "2021-08-06",
+     "label": "Japan"
+    }
+   ],
+   "page": "My Hero Academia: World Heroes' Mission",
+   "released": "2021-08-06",
+   "t": "My Hero Academia: World Heroes' Mission"
+  },
+  {
+   "cuts": [
+    [
+     110,
+     ""
+    ]
+   ],
+   "dates": [
+    {
+     "date": "2024-08-02",
+     "label": "Japan"
+    }
+   ],
+   "page": "My Hero Academia: You're Next",
+   "released": "2024-08-02",
+   "t": "My Hero Academia: You're Next"
+  }
+ ],
+ "ovas": [
+  {
+   "first": "2016-11-27",
+   "n": 1,
+   "t": "Save! Rescue Training!"
+  },
+  {
+   "first": "2017-06-02",
+   "n": 2,
+   "t": "Training of the Dead"
+  },
+  {
+   "first": "2019-02-13",
+   "n": 3,
+   "t": "All Might: Rising"
+  },
+  {
+   "first": "2020-08-16",
+   "n": 4,
+   "t": "Make It! Do-or-Die Survival Training, Part 1"
+  },
+  {
+   "first": "2020-08-16",
+   "n": 5,
+   "t": "Make It! Do-or-Die Survival Training, Part 2"
+  },
+  {
+   "first": "2022-02-16",
+   "n": 6,
+   "t": "Departure"
+  },
+  {
+   "first": "2022-06-16",
+   "n": 7,
+   "t": "HLB <Hero League Baseball>"
+  },
+  {
+   "first": "2022-06-16",
+   "n": 8,
+   "t": "Laugh! As If You Are in Hell"
+  },
+  {
+   "first": "2023-10-20",
+   "n": 9,
+   "t": "UA Heroes Battle"
+  },
+  {
+   "first": "2025-02-19",
+   "n": 10,
+   "t": "A Piece of Cake"
+  },
+  {
+   "first": "2026-07-04",
+   "n": 11,
+   "t": "I Am a Hero Too"
+  }
+ ],
+ "overview": {
+  "1": {
+   "end": "2016-06-26",
+   "episodes": 13,
+   "start": "2016-04-03"
+  },
+  "2": {
+   "end": "2017-09-30",
+   "episodes": 25,
+   "start": "2017-04-01"
+  },
+  "3": {
+   "end": "2018-09-29",
+   "episodes": 25,
+   "start": "2018-04-07"
+  },
+  "4": {
+   "end": "2020-04-04",
+   "episodes": 25,
+   "start": "2019-10-12"
+  },
+  "5": {
+   "end": "2021-09-25",
+   "episodes": 25,
+   "start": "2021-03-27"
+  },
+  "6": {
+   "end": "2023-03-25",
+   "episodes": 25,
+   "start": "2022-10-01"
+  },
+  "7": {
+   "end": "2024-10-12",
+   "episodes": 21,
+   "start": "2024-05-04"
+  },
+  "8": {
+   "end": "2025-12-13",
+   "episodes": 11,
+   "start": "2025-10-04"
+  },
+  "special": {
+   "released": "2026-05-02"
+  }
+ },
+ "recaps": [
+  {
+   "air": "2017-03-25",
+   "in_season": "0",
+   "number": "13.5",
+   "season": 2,
+   "t": "Hero Notebook"
+  },
+  {
+   "air": "2024-04-06",
+   "in_season": "SP 1",
+   "number": "138.5.1",
+   "season": 7,
+   "t": "Izuku Midoriya: Resolve"
+  },
+  {
+   "air": "2024-04-13",
+   "in_season": "SP 2",
+   "number": "138.5.2",
+   "season": 7,
+   "t": "Toshinori Yagi: Embers"
+  },
+  {
+   "air": "2024-04-20",
+   "in_season": "SP 3",
+   "number": "138.5.3",
+   "season": 7,
+   "t": "Heroes: Convictions"
+  },
+  {
+   "air": "2024-04-27",
+   "in_season": "SP 4",
+   "number": "138.5.4",
+   "season": 7,
+   "t": "Tomura Shigaraki: Destruction"
+  }
+ ],
+ "seasons": {
+  "1": [
+   {
+    "air": "2016-04-03",
+    "e": 1,
+    "o": 1,
+    "t": "Izuku Midoriya: Origin"
+   },
+   {
+    "air": "2016-04-10",
+    "e": 2,
+    "o": 2,
+    "t": "What It Takes to Be a Hero"
+   },
+   {
+    "air": "2016-04-17",
+    "e": 3,
+    "o": 3,
+    "t": "Roaring Muscles"
+   },
+   {
+    "air": "2016-04-24",
+    "e": 4,
+    "o": 4,
+    "t": "Start Line"
+   },
+   {
+    "air": "2016-05-01",
+    "e": 5,
+    "o": 5,
+    "t": "What I Can Do For Now"
+   },
+   {
+    "air": "2016-05-08",
+    "e": 6,
+    "o": 6,
+    "t": "Rage, You Damn Nerd"
+   },
+   {
+    "air": "2016-05-15",
+    "e": 7,
+    "o": 7,
+    "t": "Deku vs. Kacchan"
+   },
+   {
+    "air": "2016-05-22",
+    "e": 8,
+    "o": 8,
+    "t": "Bakugo's Start Line"
+   },
+   {
+    "air": "2016-05-29",
+    "e": 9,
+    "o": 9,
+    "t": "Yeah, Just Do Your Best, Ida!"
+   },
+   {
+    "air": "2016-06-05",
+    "e": 10,
+    "o": 10,
+    "t": "Encounter with the Unknown"
+   },
+   {
+    "air": "2016-06-12",
+    "e": 11,
+    "o": 11,
+    "t": "Game Over"
+   },
+   {
+    "air": "2016-06-19",
+    "e": 12,
+    "o": 12,
+    "t": "All Might"
+   },
+   {
+    "air": "2016-06-26",
+    "e": 13,
+    "o": 13,
+    "t": "In Each of Our Hearts"
+   }
+  ],
+  "2": [
+   {
+    "air": "2017-04-01",
+    "e": 1,
+    "o": 14,
+    "t": "That's the Idea, Ochaco"
+   },
+   {
+    "air": "2017-04-08",
+    "e": 2,
+    "o": 15,
+    "t": "Roaring Sports Festival"
+   },
+   {
+    "air": "2017-04-15",
+    "e": 3,
+    "o": 16,
+    "t": "In Their Own Quirky Ways"
+   },
+   {
+    "air": "2017-04-22",
+    "e": 4,
+    "o": 17,
+    "t": "Strategy, Strategy, Strategy"
+   },
+   {
+    "air": "2017-04-29",
+    "e": 5,
+    "o": 18,
+    "t": "Cavalry Battle Finale"
+   },
+   {
+    "air": "2017-05-06",
+    "e": 6,
+    "o": 19,
+    "t": "The Boy Born with Everything"
+   },
+   {
+    "air": "2017-05-13",
+    "e": 7,
+    "o": 20,
+    "t": "Victory or Defeat"
+   },
+   {
+    "air": "2017-05-20",
+    "e": 8,
+    "o": 21,
+    "t": "Battle on, Challengers!"
+   },
+   {
+    "air": "2017-05-27",
+    "e": 9,
+    "o": 22,
+    "t": "Bakugo vs. Uraraka"
+   },
+   {
+    "air": "2017-06-03",
+    "e": 10,
+    "o": 23,
+    "t": "Shoto Todoroki: Origin"
+   },
+   {
+    "air": "2017-06-10",
+    "e": 11,
+    "o": 24,
+    "t": "Fight on, Ida"
+   },
+   {
+    "air": "2017-06-17",
+    "e": 12,
+    "o": 25,
+    "t": "Todoroki vs. Bakugo"
+   },
+   {
+    "air": "2017-06-24",
+    "e": 13,
+    "o": 26,
+    "t": "Time to Pick Some Names"
+   },
+   {
+    "air": "2017-07-08",
+    "e": 14,
+    "o": 27,
+    "t": "Bizarre! Gran Torino Appears"
+   },
+   {
+    "air": "2017-07-15",
+    "e": 15,
+    "o": 28,
+    "t": "Midoriya and Shigaraki"
+   },
+   {
+    "air": "2017-07-22",
+    "e": 16,
+    "o": 29,
+    "t": "Hero Killer: Stain vs U.A. Students"
+   },
+   {
+    "air": "2017-07-29",
+    "e": 17,
+    "o": 30,
+    "t": "Climax"
+   },
+   {
+    "air": "2017-08-05",
+    "e": 18,
+    "o": 31,
+    "t": "The Aftermath of Hero Killer: Stain"
+   },
+   {
+    "air": "2017-08-12",
+    "e": 19,
+    "o": 32,
+    "t": "Everyone's Internships"
+   },
+   {
+    "air": "2017-08-19",
+    "e": 20,
+    "o": 33,
+    "t": "Listen Up!! A Tale from the Past"
+   },
+   {
+    "air": "2017-09-02",
+    "e": 21,
+    "o": 34,
+    "t": "Gear up for Final Exams"
+   },
+   {
+    "air": "2017-09-09",
+    "e": 22,
+    "o": 35,
+    "t": "Yaoyorozu: Rising"
+   },
+   {
+    "air": "2017-09-16",
+    "e": 23,
+    "o": 36,
+    "t": "Stripping the Varnish"
+   },
+   {
+    "air": "2017-09-23",
+    "e": 24,
+    "o": 37,
+    "t": "Katsuki Bakugo: Origin"
+   },
+   {
+    "air": "2017-09-30",
+    "e": 25,
+    "o": 38,
+    "t": "Encounter"
+   }
+  ],
+  "3": [
+   {
+    "air": "2018-04-07",
+    "e": 1,
+    "o": 39,
+    "t": "Game Start"
+   },
+   {
+    "air": "2018-04-14",
+    "e": 2,
+    "o": 40,
+    "t": "Wild, Wild Pussycats"
+   },
+   {
+    "air": "2018-04-21",
+    "e": 3,
+    "o": 41,
+    "t": "Kota"
+   },
+   {
+    "air": "2018-04-28",
+    "e": 4,
+    "o": 42,
+    "t": "My Hero"
+   },
+   {
+    "air": "2018-05-05",
+    "e": 5,
+    "o": 43,
+    "t": "Drive It Home, Iron Fist!!!"
+   },
+   {
+    "air": "2018-05-12",
+    "e": 6,
+    "o": 44,
+    "t": "Roaring Upheaval"
+   },
+   {
+    "air": "2018-05-19",
+    "e": 7,
+    "o": 45,
+    "t": "What a Twist!"
+   },
+   {
+    "air": "2018-05-26",
+    "e": 8,
+    "o": 46,
+    "t": "From Iida to Midoriya"
+   },
+   {
+    "air": "2018-06-02",
+    "e": 9,
+    "o": 47,
+    "t": "All For One"
+   },
+   {
+    "air": "2018-06-09",
+    "e": 10,
+    "o": 48,
+    "t": "Symbol of Peace"
+   },
+   {
+    "air": "2018-06-16",
+    "e": 11,
+    "o": 49,
+    "t": "One For All"
+   },
+   {
+    "air": "2018-06-23",
+    "e": 12,
+    "o": 50,
+    "t": "End of the Beginning, Beginning of the End"
+   },
+   {
+    "air": "2018-06-30",
+    "e": 13,
+    "o": 51,
+    "t": "Moving into Dorms"
+   },
+   {
+    "air": "2018-07-14",
+    "e": 14,
+    "o": 52,
+    "t": "Create Those Ultimate Moves"
+   },
+   {
+    "air": "2018-07-21",
+    "e": 15,
+    "o": 53,
+    "t": "The Test"
+   },
+   {
+    "air": "2018-07-28",
+    "e": 16,
+    "o": 54,
+    "t": "Shiketsu High Lurking"
+   },
+   {
+    "air": "2018-08-04",
+    "e": 17,
+    "o": 55,
+    "t": "Class 1-A"
+   },
+   {
+    "air": "2018-08-11",
+    "e": 18,
+    "o": 56,
+    "t": "Rush!"
+   },
+   {
+    "air": "2018-08-18",
+    "e": 19,
+    "o": 57,
+    "t": "Rescue Exercises"
+   },
+   {
+    "air": "2018-08-25",
+    "e": 20,
+    "o": 58,
+    "t": "Special Episode: Save the World with Love!"
+   },
+   {
+    "air": "2018-09-01",
+    "e": 21,
+    "o": 59,
+    "t": "What's the Big Idea?"
+   },
+   {
+    "air": "2018-09-08",
+    "e": 22,
+    "o": 60,
+    "t": "A Talk about Your Quirk"
+   },
+   {
+    "air": "2018-09-15",
+    "e": 23,
+    "o": 61,
+    "t": "Deku vs. Kacchan, Part 2"
+   },
+   {
+    "air": "2018-09-22",
+    "e": 24,
+    "o": 62,
+    "t": "A Season for Encounters"
+   },
+   {
+    "air": "2018-09-29",
+    "e": 25,
+    "o": 63,
+    "t": "Unrivaled"
+   }
+  ],
+  "4": [
+   {
+    "air": "2019-10-12",
+    "e": 1,
+    "o": 64,
+    "t": "The Scoop on U.A. Class 1-A"
+   },
+   {
+    "air": "2019-10-19",
+    "e": 2,
+    "o": 65,
+    "t": "Overhaul"
+   },
+   {
+    "air": "2019-10-26",
+    "e": 3,
+    "o": 66,
+    "t": "Boy Meets…"
+   },
+   {
+    "air": "2019-11-09",
+    "e": 4,
+    "o": 67,
+    "t": "Fighting Fate"
+   },
+   {
+    "air": "2019-11-16",
+    "e": 5,
+    "o": 68,
+    "t": "Let's Go, Gutsy Red Riot"
+   },
+   {
+    "air": "2019-11-23",
+    "e": 6,
+    "o": 69,
+    "t": "An Unpleasant Talk"
+   },
+   {
+    "air": "2019-11-30",
+    "e": 7,
+    "o": 70,
+    "t": "Go!!"
+   },
+   {
+    "air": "2019-12-07",
+    "e": 8,
+    "o": 71,
+    "t": "Suneater of the Big Three"
+   },
+   {
+    "air": "2019-12-14",
+    "e": 9,
+    "o": 72,
+    "t": "Red Riot"
+   },
+   {
+    "air": "2019-12-21",
+    "e": 10,
+    "o": 73,
+    "t": "Temp Squad"
+   },
+   {
+    "air": "2019-12-28",
+    "e": 11,
+    "o": 74,
+    "t": "Lemillion"
+   },
+   {
+    "air": "2020-01-04",
+    "e": 12,
+    "o": 75,
+    "t": "Unforeseen Hope"
+   },
+   {
+    "air": "2020-01-11",
+    "e": 13,
+    "o": 76,
+    "t": "Infinite 100%"
+   },
+   {
+    "air": "2020-01-18",
+    "e": 14,
+    "o": 77,
+    "t": "Bright Future"
+   },
+   {
+    "air": "2020-01-25",
+    "e": 15,
+    "o": 78,
+    "t": "Smoldering Flames"
+   },
+   {
+    "air": "2020-02-01",
+    "e": 16,
+    "o": 79,
+    "t": "Win Those Kids' Hearts"
+   },
+   {
+    "air": "2020-02-08",
+    "e": 17,
+    "o": 80,
+    "t": "Relief for License Trainees"
+   },
+   {
+    "air": "2020-02-15",
+    "e": 18,
+    "o": 81,
+    "t": "School Festival"
+   },
+   {
+    "air": "2020-02-22",
+    "e": 19,
+    "o": 82,
+    "t": "Prepping for the School Festival Is the Funnest Part"
+   },
+   {
+    "air": "2020-02-29",
+    "e": 20,
+    "o": 83,
+    "t": "Gold Tips Imperial"
+   },
+   {
+    "air": "2020-03-07",
+    "e": 21,
+    "o": 84,
+    "t": "Deku vs. Gentle Criminal"
+   },
+   {
+    "air": "2020-03-14",
+    "e": 22,
+    "o": 85,
+    "t": "School Festival Start!!"
+   },
+   {
+    "air": "2020-03-21",
+    "e": 23,
+    "o": 86,
+    "t": "Let It Flow! School Festival!"
+   },
+   {
+    "air": "2020-03-28",
+    "e": 24,
+    "o": 87,
+    "t": "Japanese Hero Billboard Chart"
+   },
+   {
+    "air": "2020-04-04",
+    "e": 25,
+    "o": 88,
+    "t": "His Start"
+   }
+  ],
+  "5": [
+   {
+    "air": "2021-03-27",
+    "e": 1,
+    "o": 89,
+    "t": "All Hands on Deck! Class 1-A"
+   },
+   {
+    "air": "2021-04-03",
+    "e": 2,
+    "o": 90,
+    "t": "Vestiges"
+   },
+   {
+    "air": "2021-04-10",
+    "e": 3,
+    "o": 91,
+    "t": "Clash! Class A vs. Class B!"
+   },
+   {
+    "air": "2021-04-17",
+    "e": 4,
+    "o": 92,
+    "t": "Make It Happen, Shinso!"
+   },
+   {
+    "air": "2021-04-24",
+    "e": 5,
+    "o": 93,
+    "t": "Operation New Improv Moves"
+   },
+   {
+    "air": "2021-05-01",
+    "e": 6,
+    "o": 94,
+    "t": "Foresight"
+   },
+   {
+    "air": "2021-05-08",
+    "e": 7,
+    "o": 95,
+    "t": "Match 3"
+   },
+   {
+    "air": "2021-05-15",
+    "e": 8,
+    "o": 96,
+    "t": "Match 3 Conclusion"
+   },
+   {
+    "air": "2021-05-22",
+    "e": 9,
+    "o": 97,
+    "t": "Early Bird!"
+   },
+   {
+    "air": "2021-05-29",
+    "e": 10,
+    "o": 98,
+    "t": "That Which Is Inherited"
+   },
+   {
+    "air": "2021-06-05",
+    "e": 11,
+    "o": 99,
+    "t": "Our Brawl"
+   },
+   {
+    "air": "2021-06-12",
+    "e": 12,
+    "o": 100,
+    "t": "The New Power and All For One"
+   },
+   {
+    "air": "2021-06-19",
+    "e": 13,
+    "o": 101,
+    "t": "Have a Merry Christmas!"
+   },
+   {
+    "air": "2021-06-26",
+    "e": 14,
+    "o": 102,
+    "t": "Off to Endeavor's Agency!"
+   },
+   {
+    "air": "2021-07-10",
+    "e": 15,
+    "o": 103,
+    "t": "One Thing at a Time"
+   },
+   {
+    "air": "2021-07-17",
+    "e": 16,
+    "o": 104,
+    "t": "Long Time No See, Selkie"
+   },
+   {
+    "air": "2021-07-24",
+    "e": 17,
+    "o": 105,
+    "t": "The Hellish Todoroki Family"
+   },
+   {
+    "air": "2021-07-31",
+    "e": 18,
+    "o": 106,
+    "t": "The Unforgiven"
+   },
+   {
+    "air": "2021-08-14",
+    "e": 19,
+    "o": 107,
+    "t": "More of a Hero Than Anyone"
+   },
+   {
+    "air": "2021-08-21",
+    "e": 20,
+    "o": 108,
+    "t": "My Villain Academia"
+   },
+   {
+    "air": "2021-08-28",
+    "e": 21,
+    "o": 109,
+    "t": "Revival Party"
+   },
+   {
+    "air": "2021-09-04",
+    "e": 22,
+    "o": 110,
+    "t": "Sad Man's Parade"
+   },
+   {
+    "air": "2021-09-11",
+    "e": 23,
+    "o": 111,
+    "t": "Tenko Shimura: Origin"
+   },
+   {
+    "air": "2021-09-18",
+    "e": 24,
+    "o": 112,
+    "t": "Tomura Shigaraki: Origin"
+   },
+   {
+    "air": "2021-09-25",
+    "e": 25,
+    "o": 113,
+    "t": "The High, Deep Blue Sky"
+   }
+  ],
+  "6": [
+   {
+    "air": "2022-10-01",
+    "e": 1,
+    "o": 114,
+    "t": "A Quiet Beginning"
+   },
+   {
+    "air": "2022-10-08",
+    "e": 2,
+    "o": 115,
+    "t": "Mirko, the No. 5 Hero"
+   },
+   {
+    "air": "2022-10-15",
+    "e": 3,
+    "o": 116,
+    "t": "One's Justice"
+   },
+   {
+    "air": "2022-10-22",
+    "e": 4,
+    "o": 117,
+    "t": "Inheritance"
+   },
+   {
+    "air": "2022-10-29",
+    "e": 5,
+    "o": 118,
+    "t": "The Thrill of Destruction"
+   },
+   {
+    "air": "2022-11-05",
+    "e": 6,
+    "o": 119,
+    "t": "Encounter, Part 2"
+   },
+   {
+    "air": "2022-11-12",
+    "e": 7,
+    "o": 120,
+    "t": "Disaster Walker"
+   },
+   {
+    "air": "2022-11-19",
+    "e": 8,
+    "o": 121,
+    "t": "League of Villains vs. U.A. Students"
+   },
+   {
+    "air": "2022-11-26",
+    "e": 9,
+    "o": 122,
+    "t": "Katsuki Bakugo: Rising"
+   },
+   {
+    "air": "2022-12-03",
+    "e": 10,
+    "o": 123,
+    "t": "The Ones Within Us"
+   },
+   {
+    "air": "2022-12-10",
+    "e": 11,
+    "o": 124,
+    "t": "Dabi's Dance"
+   },
+   {
+    "air": "2022-12-17",
+    "e": 12,
+    "o": 125,
+    "t": "Threads of Hope"
+   },
+   {
+    "air": "2022-12-24",
+    "e": 13,
+    "o": 126,
+    "t": "Final Performance"
+   },
+   {
+    "air": "2023-01-07",
+    "e": 14,
+    "o": 127,
+    "t": "Hellish Hell"
+   },
+   {
+    "air": "2023-01-14",
+    "e": 15,
+    "o": 128,
+    "t": "Tartarus"
+   },
+   {
+    "air": "2023-01-21",
+    "e": 16,
+    "o": 129,
+    "t": "The Hellish Todoroki Family, Part 2"
+   },
+   {
+    "air": "2023-01-28",
+    "e": 17,
+    "o": 130,
+    "t": "The Wrong Way to Put Out a Fire"
+   },
+   {
+    "air": "2023-02-04",
+    "e": 18,
+    "o": 131,
+    "t": "Izuku Midoriya and Tomura Shigaraki"
+   },
+   {
+    "air": "2023-02-11",
+    "e": 19,
+    "o": 132,
+    "t": "Full Power!!"
+   },
+   {
+    "air": "2023-02-18",
+    "e": 20,
+    "o": 133,
+    "t": "Hired Gun"
+   },
+   {
+    "air": "2023-02-25",
+    "e": 21,
+    "o": 134,
+    "t": "The Lovely Lady Nagant"
+   },
+   {
+    "air": "2023-03-04",
+    "e": 22,
+    "o": 135,
+    "t": "Friend"
+   },
+   {
+    "air": "2023-03-11",
+    "e": 23,
+    "o": 136,
+    "t": "Deku vs. Class A"
+   },
+   {
+    "air": "2023-03-18",
+    "e": 24,
+    "o": 137,
+    "t": "A Young Woman's Declaration"
+   },
+   {
+    "air": "2023-03-25",
+    "e": 25,
+    "o": 138,
+    "t": "No Man Is an Island"
+   }
+  ],
+  "7": [
+   {
+    "air": "2024-05-04",
+    "e": 1,
+    "o": 139,
+    "t": "In the Nick of Time! A Big-Time Maverick from the West!"
+   },
+   {
+    "air": "2024-05-11",
+    "e": 2,
+    "o": 140,
+    "t": "Specter"
+   },
+   {
+    "air": "2024-05-18",
+    "e": 3,
+    "o": 141,
+    "t": "Villain"
+   },
+   {
+    "air": "2024-05-25",
+    "e": 4,
+    "o": 142,
+    "t": "The Story of How We All Became Heroes"
+   },
+   {
+    "air": "2024-06-01",
+    "e": 5,
+    "o": 143,
+    "t": "Let You Down"
+   },
+   {
+    "air": "2024-06-08",
+    "e": 6,
+    "o": 144,
+    "t": "Division"
+   },
+   {
+    "air": "2024-06-15",
+    "e": 7,
+    "o": 145,
+    "t": "Inflation"
+   },
+   {
+    "air": "2024-06-22",
+    "e": 8,
+    "o": 146,
+    "t": "Two Flashfires"
+   },
+   {
+    "air": "2024-06-29",
+    "e": 9,
+    "o": 147,
+    "t": "Extras"
+   },
+   {
+    "air": "2024-07-13",
+    "e": 10,
+    "o": 148,
+    "t": "Wounded Hero, Burning Bright and True!!"
+   },
+   {
+    "air": "2024-07-20",
+    "e": 11,
+    "o": 149,
+    "t": "Light Fades to Rain"
+   },
+   {
+    "air": "2024-08-03",
+    "e": 12,
+    "o": 150,
+    "t": "Those Who Defend, Those Who Violate"
+   },
+   {
+    "air": "2024-08-17",
+    "e": 13,
+    "o": 151,
+    "t": "A Chain of Events, Across the Ages"
+   },
+   {
+    "air": "2024-08-24",
+    "e": 14,
+    "o": 152,
+    "t": "Together with Shoji"
+   },
+   {
+    "air": "2024-08-31",
+    "e": 15,
+    "o": 153,
+    "t": "Butterfly Effect"
+   },
+   {
+    "air": "2024-09-07",
+    "e": 16,
+    "o": 154,
+    "t": "The Chain Thus Far"
+   },
+   {
+    "air": "2024-09-14",
+    "e": 17,
+    "o": 155,
+    "t": "Hopes"
+   },
+   {
+    "air": "2024-09-21",
+    "e": 18,
+    "o": 156,
+    "t": "It's a Small World"
+   },
+   {
+    "air": "2024-09-28",
+    "e": 19,
+    "o": 157,
+    "t": "I Am Here"
+   },
+   {
+    "air": "2024-10-05",
+    "e": 20,
+    "o": 158,
+    "t": "A Girl's Ego"
+   },
+   {
+    "air": "2024-10-12",
+    "e": 21,
+    "o": 159,
+    "t": "Battle Without a Quirk"
+   }
+  ],
+  "8": [
+   {
+    "air": "2025-10-04",
+    "e": 1,
+    "o": 160,
+    "t": "Toshinori Yagi: Rising / Origin"
+   },
+   {
+    "air": "2025-10-11",
+    "e": 2,
+    "o": 161,
+    "t": "The End of an Era, and the Beginning"
+   },
+   {
+    "air": "2025-10-18",
+    "e": 3,
+    "o": 162,
+    "t": "The Final Boss!!"
+   },
+   {
+    "air": "2025-10-25",
+    "e": 4,
+    "o": 163,
+    "t": "Quirk: Explosion!!"
+   },
+   {
+    "air": "2025-11-01",
+    "e": 5,
+    "o": 164,
+    "t": "History's Greatest Villain"
+   },
+   {
+    "air": "2025-11-08",
+    "e": 6,
+    "o": 165,
+    "t": "Wrench It Open, Izuku Midoriya!!"
+   },
+   {
+    "air": "2025-11-15",
+    "e": 7,
+    "o": 166,
+    "t": "From Aizawa"
+   },
+   {
+    "air": "2025-11-22",
+    "e": 8,
+    "o": 167,
+    "t": "Izuku Midoriya Rising"
+   },
+   {
+    "air": "2025-11-29",
+    "e": 9,
+    "o": 168,
+    "t": "Epilogue, The Hellish Todoroki Family: Final"
+   },
+   {
+    "air": "2025-12-06",
+    "e": 10,
+    "o": 169,
+    "t": "The Girl Who Loves Smiles"
+   },
+   {
+    "air": "2025-12-13",
+    "e": 11,
+    "o": 170,
+    "t": "My Hero Academia"
+   }
+  ]
+ },
+ "series": {
+  "episodes": 170,
+  "episodes_stated": "170 + Special + 11 OVAs",
+  "first_aired": "2016-04-03",
+  "last_aired": "2025-12-13",
+  "page": "My Hero Academia (TV series)",
+  "runtime_by_season": {
+   "1": 24,
+   "2": 23,
+   "3": 23,
+   "4": 23,
+   "5": 23,
+   "6": 23,
+   "7": 23,
+   "8": 23
+  },
+  "runtime_field": "24 minutes (Season 1)|23 minutes (Seasons 2–8)",
+  "seasons": 8
+ },
+ "special": {
+  "air": "2026-05-02",
+  "number": "170+1",
+  "t": "More"
+ },
+ "wikidata": {
+  "film_items": [
+   [
+    "My Hero Academia: Heroes Rising",
+    "Q85846725"
+   ],
+   [
+    "My Hero Academia: Two Heroes",
+    "Q55391732"
+   ],
+   [
+    "My Hero Academia: World Heroes' Mission",
+    "Q107130536"
+   ],
+   [
+    "My Hero Academia: You're Next",
+    "Q124388041"
+   ]
+  ],
+  "items_in_series": 178,
+  "items_with_enwiki_article": 8,
+  "items_with_runtime": 0,
+  "series_claims": [
+   [
+    "P1113",
+    "138"
+   ],
+   [
+    "P2047",
+    "24"
+   ]
+  ],
+  "series_qid": "Q63686324"
+ }
+}

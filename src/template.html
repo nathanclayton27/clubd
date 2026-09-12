@@ -1035,6 +1035,22 @@ footer a{color:var(--steel)}
    through a refresh." It did, because nothing about it was transient.
    pkHTML always makes .pkwrap, .pkmore and .pkless direct children of .pklist,
    so `>` costs nothing and stops a peek ever reaching into a peek again. */
+/* CLU-549 — colour is earned. A list with at least one mark takes its accent on
+   the card's top edge and through the unlit part of its bar; a list you have
+   never opened stays grey. So the wall reads as a map of what you are doing
+   rather than a wall of swatches, and a card gaining colour MEANS something.
+   The 22% tint keeps the lit and unlit ends of the bar distinguishable — the
+   bar is still a progress bar, it has just stopped being the only grey thing on
+   a coloured card.
+
+   The edge sits on `.in`, not on the button. `.wall .card` is a bare grid cell
+   with no background and no padding — `.in` IS the visible card, and it owns
+   the border and the 10px radius. A border on the button would have drawn a
+   detached 2px bar floating above a rounded corner. */
+.wall .card.started .in{border-top:2px solid var(--pa)}
+.cards .card.started .cbar span:not(.on){
+  background:color-mix(in srgb, var(--pa) 22%, var(--rule))}
+
 /* CLU-447 — the boot skeleton. Sized off the home view's own rhythm so the
    real content does not jump when it replaces this. */
 .bootskel{max-width:880px;margin:78px auto 0;padding:0 20px;
@@ -1325,15 +1341,23 @@ footer a{color:var(--steel)}
 /* the card wall (CLU-48): monotone until touched — hover restores the
    card's own accent and leans it toward the cursor; filters FLIP-animate;
    on touch the scroll position stands in for the cursor */
-.wall .card{filter:grayscale(1);transition:filter .18s,opacity .2s;
-  background:none;border:0;padding:0}
-.wall .card:hover,.wall .card.wact{filter:none;position:relative;z-index:2;transform:none}
+/* ⚠ CLU-549 moved the monotone OFF the card and onto the identity dot. A
+   `filter` applies to an element's whole subtree, so while `grayscale(1)` sat
+   on `.card` NOTHING underneath it could carry colour — the earned top edge and
+   the tinted bar were both being drawn correctly and then desaturated on the
+   way out. Greying the dot instead leaves progress free to speak in colour,
+   which is the rule this wall now runs on: the bar and the edge are earned, the
+   dot is identity and stays quiet until you point at it. */
+.wall .card{transition:opacity .2s;background:none;border:0;padding:0}
+.wall .card:hover,.wall .card.wact{position:relative;z-index:2;transform:none}
+.wall .card .pdot{filter:grayscale(1);transition:filter .18s}
+.wall .card:hover .pdot,.wall .card.wact .pdot{filter:none}
 /* A list you have FINISHED keeps its accent for good. The wall's monotone is
    a "not yet" state, so a finished list wearing it says the wrong thing about
    your own shelf. Colour only — the scale below belongs to the cursor and
    stays there, so a finished card never looks like the one you are pointing
    at (Nathan, CLU-355). */
-.wall .card.wdone{filter:none}
+.wall .card.wdone .pdot{filter:none}
 .card .in{display:block;transition:transform .18s cubic-bezier(.2,.7,.25,1),
   border-color .15s}
 /* the concept's trick: the button is a bare grid cell, .in IS the visible
@@ -10534,7 +10558,21 @@ function cardHTML(m, why, compact, starred){
       + (m.blurb ? '<div class="pm-b">'+esc(m.blurb)+'</div>' : '')
       + '<div class="cbar">'+bar+'</div>'
       + (why ? '<div class="hwhy">'+esc(why)+'</div>' : '');
-  return '<button class="card'+(fin ? ' wdone' : '')+'" data-slug="'+esc(m.slug)+'"'
+  // ⚠ COLOUR IS EARNED BY PROGRESS, NEVER GRANTED BY IDENTITY (CLU-549).
+  // Nathan: "dont add 2 to anything that has 0 progress though. that way color
+  // is still tied to progress. keep that design philosophy in mind."
+  //
+  // He said it of the top edge; it applies to the tinted bar for the same
+  // reason. Tinting the UNLIT part of a bar on a list you have never opened
+  // colours every segment of it — the ruled-out thing arriving by the other
+  // door. So both treatments hang off this one class, and one mark turns them
+  // on together.
+  //
+  // The dot is untouched. That is identity, it is 9px, and it is how somebody
+  // finds a list they already know.
+  const started = n > 0;
+  return '<button class="card'+(fin ? ' wdone' : '')+(started ? ' started' : '')
+    + '" data-slug="'+esc(m.slug)+'"'
     + ' data-media="'+esc((m.media||[]).join(' '))+'"'
     + ' style="--pa:'+esc(accentOf(m))+'">'
     + '<span class="in">' + body + '</span></button>';
@@ -10685,10 +10723,16 @@ function renderWall(host, externalChips){
   host.innerHTML =
       (externalChips ? '' : '<div class="wchips"></div>')
     + (mega.length
-        ? '<div class="megarow"><div class="mhead">Mega lists'
+        // ⚠ "Box sets", not "mega lists". Nathan: "box set rocks". The old name
+        // described the SIZE; this one describes the thing — a container whose
+        // items are each a whole work — and a first-time visitor already owns
+        // the phrase, so the row explains itself before anything is clicked.
+        // The property flag stays `mega`: renaming it too would be a large diff
+        // for a fact the reader never sees.
+        ? '<div class="megarow"><div class="mhead">Box sets'
           + '<span class="mono mcount">' + mega.length + '</span></div>'
-          + '<p class="msub">Lists of lists \u2014 every row is a whole run,'
-          + ' filmography or series rather than one sitting.</p>'
+          + '<p class="msub">Every row is a whole run, filmography or series \u2014'
+          + ' open one and it has a tracker of its own.</p>'
           + '<div class="cards mega">'
           + mega.map(m=> cardHTML(m, null, true)).join('') + '</div></div>'
         : '')

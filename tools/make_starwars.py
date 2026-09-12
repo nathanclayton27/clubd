@@ -109,6 +109,18 @@ def ep_minutes(show, k):
     So a show may state `ep_minutes`, and `season_ep_minutes` overrides it
     per season where the seasons differ. Both come from the source; the
     blanket table stays the fallback for every show that says nothing.
+
+    A third case exists and it is not the same as the second: a show whose
+    source states NOTHING AT ALL, which the fallback answers for silently.
+    Nineteen shows here are in that position and nobody minds, because the
+    property note explains the default. Visions Presents is the one where it
+    had to be said on the row as well — its Wikipedia infobox leaves `runtime`
+    empty with the editors' own "Reliable source required" against it, and its
+    Wikidata item carries a single claim and no duration. So it declares
+    `ep_minutes_unstated`, which changes no arithmetic and only makes the row
+    say the figure is the default rather than a measurement. That is the CLU-222
+    rule — a guessed length is allowed, but it has to SAY it is a guess wherever
+    it is shown — applied to a season instead of an unreleased film.
     """
     per = show.get("season_ep_minutes") or {}
     if str(k) in per:
@@ -174,6 +186,13 @@ def main():
         for key in (s.get("season_ep_minutes") or {}):
             assert 1 <= int(key) <= s["seasons"], \
                 "%s: runtime override names season %s of %d" % (s["t"], key, s["seasons"])
+        # "no source states the length" and "here is the length the source
+        # states" cannot both be true, and a row claiming both would tell the
+        # reader a measured figure is a guess
+        if s.get("ep_minutes_unstated"):
+            assert not s.get("ep_minutes") and not s.get("season_ep_minutes"), \
+                "%s: declares its episode length unstated and then states it" \
+                % s["t"]
         start = int(s["start"][:4])
         end = int(s["end"][:4]) if s["end"] else None
         n, eps = s["seasons"], s["episodes"]
@@ -198,6 +217,10 @@ def main():
             # list are called Clone Wars and only the note tells them apart
             if s.get("note"):
                 bits.append(s["note"])
+            if s.get("ep_minutes_unstated"):
+                bits.append("Episode length is this list's %d-minute default; "
+                            "no source states it"
+                            % EP_MINUTES[s["kind"]])
             if mine and n > 1:
                 bits.append("%d episode%s" % (round(mine), "" if round(mine) == 1 else "s"))
             entries.append({
@@ -255,6 +278,14 @@ def main():
 
     prop = {
         "slug": SLUG,
+        # CLU-508 declared this list a mega list, and build.py reads the flag
+        # off the property file (`p["_mega"] = bool(p.get("mega"))`) to put it
+        # in the home page's mega row instead of the card wall. The flag was
+        # committed straight onto properties/star-wars.json and never added
+        # here, so every run of this script silently deleted it and dropped the
+        # list out of that row — the hand-edit-undone-by-rebuild trap. Declared
+        # here so the generator reproduces its own file.
+        "mega": True,
         "title": "Star Wars",
         "subtitle": "every film and television season, in release order",
         "kind": "films & shows",
@@ -284,7 +315,8 @@ def main():
              "other theatrical films and the series carrying real plot. 3 is "
              "everything you can take or leave without changing what 1 means — "
              "the Holiday Special, the Ewok films, the eighties cartoons, the "
-             "Tartakovsky microseries and the anthologies. A finish date "
+             "Tartakovsky microseries, the anthologies and the anime. A finish "
+             "date "
              "covers 1 and 2; the checkbox "
              "under the bar adds the rest."],
             ["Release order, not chronological.", "This is the order it came out, "
@@ -301,6 +333,17 @@ def main():
              "company; that is not what decides anything here. This is every film "
              "and television season, and it already carries the Holiday Special, "
              "the Ewok films and both eighties cartoons."],
+            ["Visions and Visions Presents are two different things.",
+             "Visions is an anthology: three seasons of unconnected shorts, "
+             "each by a different studio, and it has three rows here for that "
+             "reason. Visions Presents is a spin-off that tells one continuous "
+             "story, and the first of them — the only one so far — is subtitled "
+             "The Ninth Jedi, after a short from the anthology's first season. "
+             "It is a row of its own rather than a fourth Visions season. Both "
+             "sit in tier 3: neither changes what the numbered films mean. The "
+             "one thing nothing states is how long an episode of it runs — its "
+             "article leaves the field empty and asks for a source, so that row "
+             "carries this list's default and says on itself that it does."],
             ["Television is tracked season by season.", "A season's length is the "
              "series' episode count split evenly across its seasons, at %d minutes "
              "an episode for animation and %d for live action — one number for both "

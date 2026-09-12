@@ -73,7 +73,8 @@
           "n": "#180",
           "note": "His first appearance, on the last page.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-hulk-181",
@@ -81,7 +82,8 @@
           "n": "#181",
           "note": "His first full appearance. Len Wein and Herb Trimpe.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -105,7 +107,8 @@
           "n": "#1",
           "note": "The first Wolverine story with his name on the cover — Chris Claremont and Frank Miller.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-ls-2",
@@ -113,7 +116,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-ls-3",
@@ -121,7 +125,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-ls-4",
@@ -129,7 +134,8 @@
           "n": "#4",
           "note": "The last of the four.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -152,7 +158,8 @@
           "n": "#1",
           "note": "“Save the Tiger” begins, a ten-part serial in the front of an anthology.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-2",
@@ -160,7 +167,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-3",
@@ -168,7 +176,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-4",
@@ -176,7 +185,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-5",
@@ -184,7 +194,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-6",
@@ -192,7 +203,8 @@
           "n": "#6",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-7",
@@ -200,7 +212,8 @@
           "n": "#7",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-8",
@@ -208,7 +221,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-9",
@@ -216,7 +230,8 @@
           "n": "#9",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-10",
@@ -224,7 +239,8 @@
           "n": "#10",
           "note": "The serial's conclusion.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -247,7 +263,8 @@
           "n": "#1",
           "note": "The ongoing series starts, by the same team as “Save the Tiger”.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-2",
@@ -255,7 +272,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-3",
@@ -263,7 +281,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-4",
@@ -271,7 +290,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-5",
@@ -279,7 +299,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-6",
@@ -287,7 +308,8 @@
           "n": "#6",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-7",
@@ -295,7 +317,8 @@
           "n": "#7",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-8",
@@ -303,7 +326,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-9",
@@ -311,7 +335,8 @@
           "n": "#9",
           "note": "A fill-in: Peter David and Gene Colan.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-10",
@@ -319,7 +344,8 @@
           "n": "#10",
           "note": "Claremont's last issue of the ongoing.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -342,7 +368,8 @@
           "n": "#11",
           "note": "Peter David takes over as writer.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-12",
@@ -350,7 +377,8 @@
           "n": "#12",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-13",
@@ -358,7 +386,8 @@
           "n": "#13",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-14",
@@ -366,7 +395,8 @@
           "n": "#14",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-15",
@@ -374,7 +404,8 @@
           "n": "#15",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-16",
@@ -382,7 +413,8 @@
           "n": "#16",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-17",
@@ -390,7 +422,8 @@
           "n": "#17",
           "note": "Archie Goodwin and John Byrne begin.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-18",
@@ -398,7 +431,8 @@
           "n": "#18",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-19",
@@ -406,7 +440,8 @@
           "n": "#19",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-20",
@@ -414,7 +449,8 @@
           "n": "#20",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-21",
@@ -422,7 +458,8 @@
           "n": "#21",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-22",
@@ -430,7 +467,8 @@
           "n": "#22",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-23",
@@ -438,7 +476,8 @@
           "n": "#23",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-24",
@@ -446,7 +485,8 @@
           "n": "#24",
           "note": "A one-off by Peter David and Gene Colan.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-25",
@@ -454,7 +494,8 @@
           "n": "#25",
           "note": "Jo Duffy writes the next six.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-26",
@@ -462,7 +503,8 @@
           "n": "#26",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-27",
@@ -470,7 +512,8 @@
           "n": "#27",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-28",
@@ -478,7 +521,8 @@
           "n": "#28",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-29",
@@ -486,7 +530,8 @@
           "n": "#29",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-30",
@@ -494,7 +539,8 @@
           "n": "#30",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -517,7 +563,8 @@
           "n": "#31",
           "note": "Larry Hama's first issue, with Marc Silvestri on pencils.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-32",
@@ -525,7 +572,8 @@
           "n": "#32",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-33",
@@ -533,7 +581,8 @@
           "n": "#33",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-34",
@@ -541,7 +590,8 @@
           "n": "#34",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-35",
@@ -549,7 +599,8 @@
           "n": "#35",
           "note": "“Blood and Claws” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-36",
@@ -557,7 +608,8 @@
           "n": "#36",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-37",
@@ -565,7 +617,8 @@
           "n": "#37",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -588,7 +641,8 @@
           "n": "#72",
           "note": "“Weapon X” begins. Barry Windsor-Smith writes, pencils, inks, colours and letters it.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-73",
@@ -596,7 +650,8 @@
           "n": "#73",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-74",
@@ -604,7 +659,8 @@
           "n": "#74",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-75",
@@ -612,7 +668,8 @@
           "n": "#75",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-76",
@@ -620,7 +677,8 @@
           "n": "#76",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-77",
@@ -628,7 +686,8 @@
           "n": "#77",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-78",
@@ -636,7 +695,8 @@
           "n": "#78",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-79",
@@ -644,7 +704,8 @@
           "n": "#79",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-80",
@@ -652,7 +713,8 @@
           "n": "#80",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-81",
@@ -660,7 +722,8 @@
           "n": "#81",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-82",
@@ -668,7 +731,8 @@
           "n": "#82",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-83",
@@ -676,7 +740,8 @@
           "n": "#83",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-mcp-84",
@@ -684,7 +749,8 @@
           "n": "#84",
           "note": "The twelfth and last chapter.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -707,7 +773,8 @@
           "n": "#38",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-39",
@@ -715,7 +782,8 @@
           "n": "#39",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-40",
@@ -723,7 +791,8 @@
           "n": "#40",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-41",
@@ -731,7 +800,8 @@
           "n": "#41",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-42",
@@ -739,7 +809,8 @@
           "n": "#42",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-43",
@@ -747,7 +818,8 @@
           "n": "#43",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-44",
@@ -755,7 +827,8 @@
           "n": "#44",
           "note": "A fill-in written by Peter David.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-45",
@@ -763,7 +836,8 @@
           "n": "#45",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-46",
@@ -771,7 +845,8 @@
           "n": "#46",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-47",
@@ -779,7 +854,8 @@
           "n": "#47",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-48",
@@ -787,7 +863,8 @@
           "n": "#48",
           "note": "“The Shiva Scenario” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-49",
@@ -795,7 +872,8 @@
           "n": "#49",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-50",
@@ -803,7 +881,8 @@
           "n": "#50",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-51",
@@ -811,7 +890,8 @@
           "n": "#51",
           "note": "“The Crunch Conundrum” begins, drawn by Andy Kubert.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-52",
@@ -819,7 +899,8 @@
           "n": "#52",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-53",
@@ -827,7 +908,8 @@
           "n": "#53",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-54",
@@ -835,7 +917,8 @@
           "n": "#54",
           "note": "A fill-in written by Fabian Nicieza.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-55",
@@ -843,7 +926,8 @@
           "n": "#55",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-56",
@@ -851,7 +935,8 @@
           "n": "#56",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-57",
@@ -859,7 +944,8 @@
           "n": "#57",
           "note": "Silvestri's last issue of the run.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -882,7 +968,8 @@
           "n": "#58",
           "note": "Two issues by D.G. Chichester, sitting inside Hama's run.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-59",
@@ -890,7 +977,8 @@
           "n": "#59",
           "note": "",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-60",
@@ -898,7 +986,8 @@
           "n": "#60",
           "note": "Hama back, and a new regular artist every few months from here.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-61",
@@ -906,7 +995,8 @@
           "n": "#61",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-62",
@@ -914,7 +1004,8 @@
           "n": "#62",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-63",
@@ -922,7 +1013,8 @@
           "n": "#63",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-64",
@@ -930,7 +1022,8 @@
           "n": "#64",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-65",
@@ -938,7 +1031,8 @@
           "n": "#65",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-66",
@@ -946,7 +1040,8 @@
           "n": "#66",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-67",
@@ -954,7 +1049,8 @@
           "n": "#67",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-68",
@@ -962,7 +1058,8 @@
           "n": "#68",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-69",
@@ -970,7 +1067,8 @@
           "n": "#69",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-70",
@@ -978,7 +1076,8 @@
           "n": "#70",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-71",
@@ -986,7 +1085,8 @@
           "n": "#71",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-72",
@@ -994,7 +1094,8 @@
           "n": "#72",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-73",
@@ -1002,7 +1103,8 @@
           "n": "#73",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-74",
@@ -1010,7 +1112,8 @@
           "n": "#74",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-75",
@@ -1018,7 +1121,8 @@
           "n": "#75",
           "note": "Adam Kubert's first, and the regular artist for most of the next thirty.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-76",
@@ -1026,7 +1130,8 @@
           "n": "#76",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-77",
@@ -1034,7 +1139,8 @@
           "n": "#77",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-78",
@@ -1042,7 +1148,8 @@
           "n": "#78",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-79",
@@ -1050,7 +1157,8 @@
           "n": "#79",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-80",
@@ -1058,7 +1166,8 @@
           "n": "#80",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-81",
@@ -1066,7 +1175,8 @@
           "n": "#81",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-82",
@@ -1074,7 +1184,8 @@
           "n": "#82",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-83",
@@ -1082,7 +1193,8 @@
           "n": "#83",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-84",
@@ -1090,7 +1202,8 @@
           "n": "#84",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-85",
@@ -1098,7 +1211,8 @@
           "n": "#85",
           "note": "A Phalanx Covenant chapter, read inside the run.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-86",
@@ -1106,7 +1220,8 @@
           "n": "#86",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-87",
@@ -1114,7 +1229,8 @@
           "n": "#87",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-88",
@@ -1122,7 +1238,8 @@
           "n": "#88",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-89",
@@ -1130,7 +1247,8 @@
           "n": "#89",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-90",
@@ -1138,7 +1256,8 @@
           "n": "#90",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-91",
@@ -1146,7 +1265,8 @@
           "n": "#91",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-92",
@@ -1154,7 +1274,8 @@
           "n": "#92",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-93",
@@ -1162,7 +1283,8 @@
           "n": "#93",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-94",
@@ -1170,7 +1292,8 @@
           "n": "#94",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-95",
@@ -1178,7 +1301,8 @@
           "n": "#95",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-96",
@@ -1186,7 +1310,8 @@
           "n": "#96",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-97",
@@ -1194,7 +1319,8 @@
           "n": "#97",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-98",
@@ -1202,7 +1328,8 @@
           "n": "#98",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-99",
@@ -1210,7 +1337,8 @@
           "n": "#99",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-100",
@@ -1218,7 +1346,8 @@
           "n": "#100",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-101",
@@ -1226,7 +1355,8 @@
           "n": "#101",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-102",
@@ -1234,7 +1364,8 @@
           "n": "#102",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-103",
@@ -1242,7 +1373,8 @@
           "n": "#103",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-104",
@@ -1250,7 +1382,8 @@
           "n": "#104",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-105",
@@ -1258,7 +1391,8 @@
           "n": "#105",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-106",
@@ -1266,7 +1400,8 @@
           "n": "#106",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-107",
@@ -1274,7 +1409,8 @@
           "n": "#107",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-108",
@@ -1282,7 +1418,8 @@
           "n": "#108",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-109",
@@ -1290,7 +1427,8 @@
           "n": "#109",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-110",
@@ -1298,7 +1436,8 @@
           "n": "#110",
           "note": "A fill-in written by Tom DeFalco.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v2-111",
@@ -1306,7 +1445,8 @@
           "n": "#111",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-112",
@@ -1314,7 +1454,8 @@
           "n": "#112",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-113",
@@ -1322,7 +1463,8 @@
           "n": "#113",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-114",
@@ -1330,7 +1472,8 @@
           "n": "#114",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-115",
@@ -1338,7 +1481,8 @@
           "n": "#115",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-116",
@@ -1346,7 +1490,8 @@
           "n": "#116",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-117",
@@ -1354,7 +1499,8 @@
           "n": "#117",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-118",
@@ -1362,7 +1508,8 @@
           "n": "#118",
           "note": "Hama's last issue, after eighty-three of them.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1385,7 +1532,8 @@
           "n": "#119",
           "note": "“Not Dead Yet” begins — Warren Ellis and Leinil Francis Yu.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-120",
@@ -1393,7 +1541,8 @@
           "n": "#120",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-121",
@@ -1401,7 +1550,8 @@
           "n": "#121",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v2-122",
@@ -1409,7 +1559,8 @@
           "n": "#122",
           "note": "Part four, and this list's last issue of the 1988 series.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1432,7 +1583,8 @@
           "n": "#1",
           "note": "The origin, told twenty-seven years in. Paul Jenkins and Andy Kubert.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-or-2",
@@ -1440,7 +1592,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-or-3",
@@ -1448,7 +1601,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-or-4",
@@ -1456,7 +1610,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-or-5",
@@ -1464,7 +1619,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-or-6",
@@ -1472,7 +1628,8 @@
           "n": "#6",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1495,7 +1652,8 @@
           "n": "#1",
           "note": "Greg Rucka and Darick Robertson relaunch at #1 — “Brotherhood”.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-2",
@@ -1503,7 +1661,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-3",
@@ -1511,7 +1670,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-4",
@@ -1519,7 +1679,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-5",
@@ -1527,7 +1688,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-6",
@@ -1535,7 +1697,8 @@
           "n": "#6",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-7",
@@ -1543,7 +1706,8 @@
           "n": "#7",
           "note": "“Coyote Crossing” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-8",
@@ -1551,7 +1715,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-9",
@@ -1559,7 +1724,8 @@
           "n": "#9",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-10",
@@ -1567,7 +1733,8 @@
           "n": "#10",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-11",
@@ -1575,7 +1742,8 @@
           "n": "#11",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-12",
@@ -1583,7 +1751,8 @@
           "n": "#12",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-13",
@@ -1591,7 +1760,8 @@
           "n": "#13",
           "note": "“Return of the Native” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-14",
@@ -1599,7 +1769,8 @@
           "n": "#14",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-15",
@@ -1607,7 +1778,8 @@
           "n": "#15",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-16",
@@ -1615,7 +1787,8 @@
           "n": "#16",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-17",
@@ -1623,7 +1796,8 @@
           "n": "#17",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-18",
@@ -1631,7 +1805,8 @@
           "n": "#18",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-19",
@@ -1639,7 +1814,8 @@
           "n": "#19",
           "note": "Rucka's last issue.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1662,7 +1838,8 @@
           "n": "#20",
           "note": "“Enemy of the State” begins — Mark Millar and John Romita Jr.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-21",
@@ -1670,7 +1847,8 @@
           "n": "#21",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-22",
@@ -1678,7 +1856,8 @@
           "n": "#22",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-23",
@@ -1686,7 +1865,8 @@
           "n": "#23",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-24",
@@ -1694,7 +1874,8 @@
           "n": "#24",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-25",
@@ -1702,7 +1883,8 @@
           "n": "#25",
           "note": "The sixth and last part of “Enemy of the State”.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-26",
@@ -1710,7 +1892,8 @@
           "n": "#26",
           "note": "“Agent of S.H.I.E.L.D.”, the run's second half, begins here.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-27",
@@ -1718,7 +1901,8 @@
           "n": "#27",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-28",
@@ -1726,7 +1910,8 @@
           "n": "#28",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-29",
@@ -1734,7 +1919,8 @@
           "n": "#29",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-30",
@@ -1742,7 +1928,8 @@
           "n": "#30",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-31",
@@ -1750,7 +1937,8 @@
           "n": "#31",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-32",
@@ -1758,7 +1946,8 @@
           "n": "#32",
           "note": "Millar's last issue, drawn by Kaare Andrews.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1781,7 +1970,8 @@
           "n": "#1",
           "note": "A three-issue story by Brian K. Vaughan and Eduardo Risso.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-lg-2",
@@ -1789,7 +1979,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-lg-3",
@@ -1797,7 +1988,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1824,7 +2016,8 @@
           "n": "#66",
           "note": "“Old Man Logan” begins — Millar and Steve McNiven.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-67",
@@ -1832,7 +2025,8 @@
           "n": "#67",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-68",
@@ -1840,7 +2034,8 @@
           "n": "#68",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-69",
@@ -1848,7 +2043,8 @@
           "n": "#69",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-70",
@@ -1856,7 +2052,8 @@
           "n": "#70",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-71",
@@ -1864,7 +2061,8 @@
           "n": "#71",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v3-72",
@@ -1872,7 +2070,8 @@
           "n": "#72",
           "note": "The seventh part. The conclusion is the Giant-Size below.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-gsoml-1",
@@ -1880,7 +2079,8 @@
           "n": "#1",
           "note": "“Old Man Logan: Conclusion”, four months after part seven.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -1903,7 +2103,8 @@
           "n": "#1",
           "note": "Jason Aaron and Ron Garney start the run — “The Adamantium Men”.",
           "star": 2,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-2",
@@ -1911,7 +2112,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-3",
@@ -1919,7 +2121,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-4",
@@ -1927,7 +2130,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-5",
@@ -1935,7 +2139,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-6",
@@ -1943,7 +2148,8 @@
           "n": "#6",
           "note": "“Insane in the Brain” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-7",
@@ -1951,7 +2157,8 @@
           "n": "#7",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-8",
@@ -1959,7 +2166,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-9",
@@ -1967,7 +2175,8 @@
           "n": "#9",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-10",
@@ -1975,7 +2184,8 @@
           "n": "#10",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-11",
@@ -1983,7 +2193,8 @@
           "n": "#11",
           "note": "“Tomorrow Dies Today” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-12",
@@ -1991,7 +2202,8 @@
           "n": "#12",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-13",
@@ -1999,7 +2211,8 @@
           "n": "#13",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-14",
@@ -2007,7 +2220,8 @@
           "n": "#14",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-15",
@@ -2015,7 +2229,8 @@
           "n": "#15",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-awx-16",
@@ -2023,7 +2238,8 @@
           "n": "#16",
           "note": "The last issue under this title; the run carries straight on below.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -2046,7 +2262,8 @@
           "n": "#1",
           "note": "Same writer, new numbering.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-2",
@@ -2054,7 +2271,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-3",
@@ -2062,7 +2280,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-4",
@@ -2070,7 +2289,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-5",
@@ -2078,7 +2298,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-5-1",
@@ -2086,7 +2307,8 @@
           "n": "#5.1",
           "note": "A standalone .1 issue, drawn by Jefte Palo.",
           "star": 0,
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "wolv-v4-6",
@@ -2094,7 +2316,8 @@
           "n": "#6",
           "note": "“Wolverine vs. the X-Men” begins, inside the solo book.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-7",
@@ -2102,7 +2325,8 @@
           "n": "#7",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-8",
@@ -2110,7 +2334,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-9",
@@ -2118,7 +2343,8 @@
           "n": "#9",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-10",
@@ -2126,7 +2352,8 @@
           "n": "#10",
           "note": "“Wolverine's Revenge!” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-11",
@@ -2134,7 +2361,8 @@
           "n": "#11",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-12",
@@ -2142,7 +2370,8 @@
           "n": "#12",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-13",
@@ -2150,7 +2379,8 @@
           "n": "#13",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-14",
@@ -2158,7 +2388,8 @@
           "n": "#14",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-15",
@@ -2166,7 +2397,8 @@
           "n": "#15",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-16",
@@ -2174,7 +2406,8 @@
           "n": "#16",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-17",
@@ -2182,7 +2415,8 @@
           "n": "#17",
           "note": "“Goodbye Chinatown” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-18",
@@ -2190,7 +2424,8 @@
           "n": "#18",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-19",
@@ -2198,7 +2433,8 @@
           "n": "#19",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-20",
@@ -2206,7 +2442,8 @@
           "n": "#20",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-300",
@@ -2214,7 +2451,8 @@
           "n": "#300",
           "note": "The original numbering comes back, and “Back in Japan” begins.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-301",
@@ -2222,7 +2460,8 @@
           "n": "#301",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-302",
@@ -2230,7 +2469,8 @@
           "n": "#302",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-303",
@@ -2238,7 +2478,8 @@
           "n": "#303",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v4-304",
@@ -2246,7 +2487,8 @@
           "n": "#304",
           "note": "Aaron's last issue.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -2269,7 +2511,8 @@
           "n": "#1",
           "note": "Charles Soule and Steve McNiven, a weekly miniseries.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-dow-2",
@@ -2277,7 +2520,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-dow-3",
@@ -2285,7 +2529,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-dow-4",
@@ -2293,7 +2538,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -2316,7 +2562,8 @@
           "n": "#1",
           "note": "Soule again, four years later, with McNiven back on the first and last.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-row-2",
@@ -2324,7 +2571,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-row-3",
@@ -2332,7 +2580,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-row-4",
@@ -2340,7 +2589,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-row-5",
@@ -2348,7 +2598,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -2371,7 +2622,8 @@
           "n": "#1",
           "note": "Benjamin Percy and Adam Kubert open the Krakoa-era solo book.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-2",
@@ -2379,7 +2631,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-3",
@@ -2387,7 +2640,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-4",
@@ -2395,7 +2649,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-5",
@@ -2403,7 +2658,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-6",
@@ -2411,7 +2667,8 @@
           "n": "#6",
           "note": "X of Swords chapter 3.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-7",
@@ -2419,7 +2676,8 @@
           "n": "#7",
           "note": "X of Swords chapter 16, co-written with Gerry Duggan.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-8",
@@ -2427,7 +2685,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-9",
@@ -2435,7 +2694,8 @@
           "n": "#9",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-10",
@@ -2443,7 +2703,8 @@
           "n": "#10",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-11",
@@ -2451,7 +2712,8 @@
           "n": "#11",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-12",
@@ -2459,7 +2721,8 @@
           "n": "#12",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-13",
@@ -2467,7 +2730,8 @@
           "n": "#13",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-14",
@@ -2475,7 +2739,8 @@
           "n": "#14",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-15",
@@ -2483,7 +2748,8 @@
           "n": "#15",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-16",
@@ -2491,7 +2757,8 @@
           "n": "#16",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-17",
@@ -2499,7 +2766,8 @@
           "n": "#17",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-18",
@@ -2507,7 +2775,8 @@
           "n": "#18",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-19",
@@ -2515,7 +2784,8 @@
           "n": "#19",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-20",
@@ -2523,7 +2793,8 @@
           "n": "#20",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-21",
@@ -2531,7 +2802,8 @@
           "n": "#21",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-22",
@@ -2539,7 +2811,8 @@
           "n": "#22",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-23",
@@ -2547,7 +2820,8 @@
           "n": "#23",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-24",
@@ -2555,7 +2829,8 @@
           "n": "#24",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-25",
@@ -2563,7 +2838,8 @@
           "n": "#25",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-26",
@@ -2571,7 +2847,8 @@
           "n": "#26",
           "note": "“The Beast Agenda” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-27",
@@ -2579,7 +2856,8 @@
           "n": "#27",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-28",
@@ -2587,7 +2865,8 @@
           "n": "#28",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-29",
@@ -2595,7 +2874,8 @@
           "n": "#29",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-30",
@@ -2603,7 +2883,8 @@
           "n": "#30",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-31",
@@ -2611,7 +2892,8 @@
           "n": "#31",
           "note": "“Weapons of X” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-32",
@@ -2619,7 +2901,8 @@
           "n": "#32",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-33",
@@ -2627,7 +2910,8 @@
           "n": "#33",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-34",
@@ -2635,7 +2919,8 @@
           "n": "#34",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-35",
@@ -2643,7 +2928,8 @@
           "n": "#35",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-36",
@@ -2651,7 +2937,8 @@
           "n": "#36",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-37",
@@ -2659,7 +2946,8 @@
           "n": "#37",
           "note": "“Last Mutant Standing” begins.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-38",
@@ -2667,7 +2955,8 @@
           "n": "#38",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-39",
@@ -2675,7 +2964,8 @@
           "n": "#39",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-40",
@@ -2683,7 +2973,8 @@
           "n": "#40",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-41",
@@ -2691,7 +2982,8 @@
           "n": "#41",
           "note": "“Sabretooth War” begins, co-written with Victor LaValle.",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-42",
@@ -2699,7 +2991,8 @@
           "n": "#42",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-43",
@@ -2707,7 +3000,8 @@
           "n": "#43",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-44",
@@ -2715,7 +3009,8 @@
           "n": "#44",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-45",
@@ -2723,7 +3018,8 @@
           "n": "#45",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-46",
@@ -2731,7 +3027,8 @@
           "n": "#46",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-47",
@@ -2739,7 +3036,8 @@
           "n": "#47",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-48",
@@ -2747,7 +3045,8 @@
           "n": "#48",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-49",
@@ -2755,7 +3054,8 @@
           "n": "#49",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v7-50",
@@ -2763,7 +3063,8 @@
           "n": "#50",
           "note": "The last issue of the run.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     },
@@ -2786,7 +3087,8 @@
           "n": "#1",
           "note": "Saladin Ahmed and Martin Coccolo begin the current series.",
           "star": 1,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-2",
@@ -2794,7 +3096,8 @@
           "n": "#2",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-3",
@@ -2802,7 +3105,8 @@
           "n": "#3",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-4",
@@ -2810,7 +3114,8 @@
           "n": "#4",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-5",
@@ -2818,7 +3123,8 @@
           "n": "#5",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-6",
@@ -2826,7 +3132,8 @@
           "n": "#6",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-7",
@@ -2834,7 +3141,8 @@
           "n": "#7",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-8",
@@ -2842,7 +3150,8 @@
           "n": "#8",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-9",
@@ -2850,7 +3159,8 @@
           "n": "#9",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-10",
@@ -2858,7 +3168,8 @@
           "n": "#10",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-11",
@@ -2866,7 +3177,8 @@
           "n": "#11",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-12",
@@ -2874,7 +3186,8 @@
           "n": "#12",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-13",
@@ -2882,7 +3195,8 @@
           "n": "#13",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-14",
@@ -2890,7 +3204,8 @@
           "n": "#14",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-15",
@@ -2898,7 +3213,8 @@
           "n": "#15",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-16",
@@ -2906,7 +3222,8 @@
           "n": "#16",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-17",
@@ -2914,7 +3231,8 @@
           "n": "#17",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-18",
@@ -2922,7 +3240,8 @@
           "n": "#18",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-19",
@@ -2930,7 +3249,8 @@
           "n": "#19",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-20",
@@ -2938,7 +3258,8 @@
           "n": "#20",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-21",
@@ -2946,7 +3267,8 @@
           "n": "#21",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-22",
@@ -2954,7 +3276,8 @@
           "n": "#22",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-23",
@@ -2962,7 +3285,8 @@
           "n": "#23",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-24",
@@ -2970,7 +3294,8 @@
           "n": "#24",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-25",
@@ -2978,7 +3303,8 @@
           "n": "#25",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-26",
@@ -2986,7 +3312,8 @@
           "n": "#26",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         },
         {
           "id": "wolv-v8-27",
@@ -2994,7 +3321,8 @@
           "n": "#27",
           "note": "",
           "star": 0,
-          "opt": 0
+          "opt": 0,
+          "w": 1
         }
       ]
     }

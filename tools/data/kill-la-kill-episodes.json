@@ -1,0 +1,491 @@
+{
+ "episodes": [
+  {
+   "airdate_raw": "{{Start date|2013|10|04}}",
+   "aired": [
+    2013,
+    10,
+    4
+   ],
+   "anchor": null,
+   "directed": "Hisatoshi Shimizu",
+   "n": "1",
+   "storyboard": "Hiroyuki Imaishi",
+   "t": "If Only I Had Thorns Like a Thistle...",
+   "translit": "Azami no Gotoku Toge Areba"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|10|11}}",
+   "aired": [
+    2013,
+    10,
+    11
+   ],
+   "anchor": null,
+   "directed": "Akiko Nakamura",
+   "n": "2",
+   "storyboard": "Akiko Nakamura",
+   "t": "So Sexy She Might Pass Out",
+   "translit": "Kizetsu Suru Hodo Nayamashii"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|10|18}}",
+   "aired": [
+    2013,
+    10,
+    18
+   ],
+   "anchor": null,
+   "directed": "Akira Amemiya",
+   "n": "3",
+   "storyboard": "Akira Amemiya",
+   "t": "Junketsu",
+   "translit": ""
+  },
+  {
+   "airdate_raw": "{{Start date|2013|10|25}}",
+   "aired": [
+    2013,
+    10,
+    25
+   ],
+   "anchor": null,
+   "directed": "Hisatoshi Shimizu",
+   "n": "4",
+   "storyboard": "Hiroyuki Imaishi",
+   "t": "Dawn of a Miserable Morning",
+   "translit": "Totemo Fukō na Asa ga Kita"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|11|01}}",
+   "aired": [
+    2013,
+    11,
+    1
+   ],
+   "anchor": null,
+   "directed": "Hiroshi Kobayashi",
+   "n": "5",
+   "storyboard": "Hiroshi Kobayashi",
+   "t": "Trigger",
+   "translit": "Hikigane"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|11|08}}",
+   "aired": [
+    2013,
+    11,
+    8
+   ],
+   "anchor": null,
+   "directed": "Komatsuda Taizen",
+   "n": "6",
+   "storyboard": "Komatsuda Taizen",
+   "t": "Don't Toy With Me on a Whim",
+   "translit": "Kibun Shidai de Semenaide"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|11|15}}",
+   "aired": [
+    2013,
+    11,
+    15
+   ],
+   "anchor": null,
+   "directed": "Yuzuru Tachikawa",
+   "n": "7",
+   "storyboard": "Yuzuru Tachikawa",
+   "t": "A Loser I Can't Hate",
+   "translit": "Nikumi Kirenai Rokudenashi"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|11|22}}",
+   "aired": [
+    2013,
+    11,
+    22
+   ],
+   "anchor": null,
+   "directed": "Koji Aritomi",
+   "n": "8",
+   "storyboard": "Kazuya Sakamoto",
+   "t": "I Will Wipe My Own Tears",
+   "translit": "Ore no Namida wa Ore ga Fuku"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|11|29}}",
+   "aired": [
+    2013,
+    11,
+    29
+   ],
+   "anchor": null,
+   "directed": "Hiroshi Ikehata",
+   "n": "9",
+   "storyboard": "Hiroshi Ikehata",
+   "t": "A Once in a Lifetime Chance",
+   "translit": "Chansu wa Ichido"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|12|06}}",
+   "aired": [
+    2013,
+    12,
+    6
+   ],
+   "anchor": null,
+   "directed": "Yoshihide Ibata",
+   "n": "10",
+   "storyboard": "Yuichiro Hayashi",
+   "t": "I Want to Know More About You",
+   "translit": "Anata o Motto Shiritakute"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|12|13}}",
+   "aired": [
+    2013,
+    12,
+    13
+   ],
+   "anchor": null,
+   "directed": "Akira Amemiya,, Tetsushimizu Hisatoshi",
+   "n": "11",
+   "storyboard": "Akira Amemiya",
+   "t": "I'm Not Your Cute Woman",
+   "translit": "Kawaii Onna to Yobanai de"
+  },
+  {
+   "airdate_raw": "{{Start date|2013|12|20}}",
+   "aired": [
+    2013,
+    12,
+    20
+   ],
+   "anchor": null,
+   "directed": "Tomoya Takahashi",
+   "n": "12",
+   "storyboard": "Ken Otsuka",
+   "t": "Spit Your Sadness Away",
+   "translit": "Kanashimi ni Tsuba o Kakero"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|01|10}}",
+   "aired": [
+    2014,
+    1,
+    10
+   ],
+   "anchor": null,
+   "directed": "Yoshiko Mikami,, Masahiko Otsuka",
+   "n": "13",
+   "storyboard": "Hiroyuki Imaishi",
+   "t": "Crazy for You",
+   "translit": "Kimi ni Barabara... Toiu Kanji"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|01|17}}",
+   "aired": [
+    2014,
+    1,
+    17
+   ],
+   "anchor": null,
+   "directed": "Kazutoshi Ohno",
+   "n": "14",
+   "storyboard": "Masayuki",
+   "t": "Ride Like the Wind",
+   "translit": "Isoge Kaze no Yō ni"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|01|24}}",
+   "aired": [
+    2014,
+    1,
+    24
+   ],
+   "anchor": null,
+   "directed": "Onishi Keisuke",
+   "n": "15",
+   "storyboard": "Shinji Higuchi",
+   "t": "Don't Stop Me Now",
+   "translit": "Dōnimo Tomaranai"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|01|31}}",
+   "aired": [
+    2014,
+    1,
+    31
+   ],
+   "anchor": null,
+   "directed": "Hisatoshi Shimizu",
+   "n": "16",
+   "storyboard": "Masahiro Maeda",
+   "t": "The Girl Can't Help It",
+   "translit": "Onna wa Sore o Gaman Dekinai"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|02|07}}",
+   "aired": [
+    2014,
+    2,
+    7
+   ],
+   "anchor": null,
+   "directed": "Yasuo Ejima",
+   "n": "17",
+   "storyboard": "Shinobu Yoshioka",
+   "t": "Tell Me Why",
+   "translit": "Naze ni Omae wa"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|02|14}}",
+   "aired": [
+    2014,
+    2,
+    14
+   ],
+   "anchor": null,
+   "directed": "Hiroshi Kobayashi",
+   "n": "18",
+   "storyboard": "Hiroshi Kobayashi",
+   "t": "Into the Night",
+   "translit": "Yoru e Isogu Hito"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|02|21}}",
+   "aired": [
+    2014,
+    2,
+    21
+   ],
+   "anchor": null,
+   "directed": "Masayuki Ozeki",
+   "n": "19",
+   "storyboard": "Akiko Nakamura",
+   "t": "Raindrops Keep Falling on My Head",
+   "translit": "Tadoritsuitara Itsumo Amefuri"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|02|28}}",
+   "aired": [
+    2014,
+    2,
+    28
+   ],
+   "anchor": null,
+   "directed": "Hiroyuki Oshima",
+   "n": "20",
+   "storyboard": "Akitoshi Yokoyama",
+   "t": "Far from the Madding Crowd",
+   "translit": "Tōku Gunshū o Hanarete"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|03|07}}",
+   "aired": [
+    2014,
+    3,
+    7
+   ],
+   "anchor": null,
+   "directed": "Akira Amemiya",
+   "n": "21",
+   "storyboard": "Akira Amemiya,, Hiroyuki Imaishi",
+   "t": "Incomplete",
+   "translit": "Mikansei"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|03|14}}",
+   "aired": [
+    2014,
+    3,
+    14
+   ],
+   "anchor": null,
+   "directed": "Hisatoshi Shimizu",
+   "n": "22",
+   "storyboard": "Hiroshi Kobayashi,, Akiko Nakamura",
+   "t": "Tell Me How You Feel",
+   "translit": "Kuchibiru yo, Atsuku Kimi o Katare"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|03|21}}",
+   "aired": [
+    2014,
+    3,
+    21
+   ],
+   "anchor": null,
+   "directed": "Komatsuda Taizen",
+   "n": "23",
+   "storyboard": "Komatsuda Taizen",
+   "t": "Imitation Gold",
+   "translit": "Imiteishon Gōrudo"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|03|28}}",
+   "aired": [
+    2014,
+    3,
+    28
+   ],
+   "anchor": null,
+   "directed": "Hiroyuki Imaishi,, Masahiko Otsuka",
+   "n": "24",
+   "storyboard": "You Yoshinari,, Hiroyuki Imaishi",
+   "t": "Past the Infinite Darkness",
+   "translit": "Hateshinaki Yami no Kanata ni"
+  },
+  {
+   "airdate_raw": "{{Start date|2014|09|03}}<br/>(Home media only)",
+   "aired": [
+    2014,
+    9,
+    3
+   ],
+   "anchor": "ep25|epOVA",
+   "directed": "Shimizu Hisatoshi,, Amemiya Akira",
+   "n": "OVA",
+   "storyboard": "Akira Amemiya",
+   "t": "Goodbye Again",
+   "translit": "Sayonara o Mōichido"
+  }
+ ],
+ "fetched_via": "en.wikipedia.org/w/api.php action=parse prop=wikitext",
+ "game": {
+  "released": [
+   2019,
+   7,
+   25
+  ],
+  "title": "Kill la Kill the Game: IF"
+ },
+ "home_media_jp": [
+  [
+   "1",
+   "1–2",
+   "January 8, 2014"
+  ],
+  [
+   "2",
+   "3–5",
+   "February 5, 2014"
+  ],
+  [
+   "3",
+   "6–8",
+   "March 5, 2014"
+  ],
+  [
+   "4",
+   "9–11",
+   "April 2, 2014"
+  ],
+  [
+   "5",
+   "12–14",
+   "May 7, 2014"
+  ],
+  [
+   "6",
+   "15–17",
+   "June 4, 2014"
+  ],
+  [
+   "7",
+   "18–20",
+   "July 2, 2014"
+  ],
+  [
+   "8",
+   "21–23",
+   "August 6, 2014"
+  ],
+  [
+   "9",
+   "24 + OVA (25)",
+   "September 3, 2014"
+  ]
+ ],
+ "manga": {
+  "chapters": 17,
+  "first": [
+   2013,
+   10,
+   4
+  ],
+  "last": [
+   2015,
+   2,
+   4
+  ],
+  "volumes": 3
+ },
+ "ova_evidence": {
+  "first_volume": [
+   2014,
+   1,
+   8
+  ],
+  "last_volume": [
+   2014,
+   9,
+   3
+  ],
+  "released": [
+   2014,
+   9,
+   3
+  ],
+  "volume_ordinal": "ninth",
+  "volumes": 9
+ },
+ "pages": {
+  "Kill la Kill": {
+   "chars": 58510,
+   "sha256": "b6304564db95507d9bb0f6a64e8d4d8df937736742d55633b2dfda3b8211148d"
+  },
+  "List of Kill la Kill episodes": {
+   "chars": 47634,
+   "sha256": "55a17e1b0731db33be48bdafaaaa1d84aa702b1aacbb14716f45b5e5b642dc36"
+  }
+ },
+ "print_infobox_types": [
+  "manga"
+ ],
+ "runtime_absence": {
+  "episode_runtime_fields": [],
+  "minutes_on_list_article": [],
+  "minutes_on_series_article": [],
+  "runtime_lines_list": [],
+  "runtime_lines_series": []
+ },
+ "season_infobox": {
+  "bg_colour": "#880808",
+  "first_aired": [
+   2013,
+   10,
+   4
+  ],
+  "last_aired": [
+   2014,
+   3,
+   28
+  ],
+  "num_episodes": "24 + OVA"
+ },
+ "series_infobox": {
+  "episode_list": "List of Kill la Kill episodes",
+  "episodes": "24 + OVA",
+  "first": "October 4, 2013",
+  "last": "March 28, 2014",
+  "studio": "Trigger"
+ },
+ "songs_head_writer": "Kazuki Nakashima",
+ "themes": {
+  "first_block": 15,
+  "first_opening": "Sirius",
+  "from_episode": 16,
+  "second_opening": "Ambiguous"
+ }
+}

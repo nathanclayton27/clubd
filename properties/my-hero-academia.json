@@ -1,0 +1,1248 @@
+{
+  "slug": "my-hero-academia",
+  "title": "My Hero Academia",
+  "subtitle": "all eight seasons in air order, then the special and the films",
+  "kind": "anime",
+  "popularity": 83,
+  "year": "2016–2026",
+  "blurb": "All 170 episodes of the eight-season run, the bonus special and the four films — about 72 hours at U.A.",
+  "unit": {
+    "one": "entry",
+    "many": "entries"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#38A969",
+  "accentDark": "#D7F26A",
+  "tiers": false,
+  "notes": [
+    [
+      "The run is finished.",
+      "Season 8 was the last, and it ended on 13 December 2025. One bonus special followed on 2 May 2026: the source numbers that broadcast 170+1 rather than 171, so it sits in a section of its own after season 8 rather than inside it. Rows carry the in-season number; the source's overall numbering runs 1 to 170 across the eight seasons."
+    ],
+    [
+      "Weighted from the only length anyone publishes.",
+      "There is no per-episode runtime for this show anywhere. Not one of the 170 episode rows carries a length, the eight season articles do not state one, and of the 178 items Wikidata files as part of the series not one carries a runtime — the only eight with an article of their own are the season pages. What the series' own infobox does publish is two figures, each labelled with the seasons it covers: 24 minutes for season 1 and 23 minutes for seasons 2 to 8. So every episode weighs its own season's figure, each film weighs the runtime printed on its own article, and nothing here is averaged or estimated."
+    ],
+    [
+      "One weight is a judgement call.",
+      "The bonus special has no published length at all. It weighs the 23 minutes the infobox states for seasons 2 to 8, because it aired as a single broadcast in that slot — the one figure on this list that was not labelled for the thing it measures, and the row says so."
+    ],
+    [
+      "The films are not episodes.",
+      "Four of them, between 2018 and 2024, each opening in cinemas between two broadcast years. They sit in a dated section at the end rather than inside a season, which is why this list counts entries rather than episodes; a reader who only wants the television run stops at the bonus special."
+    ],
+    [
+      "The recap specials are not here.",
+      "Wikipedia's season pages carry five of them in a table apart from the episodes, numbered 13.5 and 138.5.1 to 138.5.4 rather than into the 1 to 170 run: one ahead of season 2 in March 2017, four ahead of season 7 in April 2024. They re-air material already on this list."
+    ],
+    [
+      "The OVAs are not here either.",
+      "There are eleven, bundled with manga volumes and film releases or screened at events rather than broadcast, and not one has a published length. The single figure that does exist — two minutes, for All Might: Rising — shows how far from uniform the set is, so weighing them at the television figure would mean inventing a number eleven times. No idea whether they are worth it; the episode list documents them under its own heading."
+    ],
+    [
+      "Vigilantes is a different series.",
+      "The spin-off has its own article and its own episodes, and none of them are here."
+    ],
+    "Titles, numbering and air dates machine-read from the eight Wikipedia season articles and the episode list; the per-season runtime from the series article's infobox; film runtimes and release dates from the four films' own articles; the absence of any per-episode runtime checked against Wikidata as well."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Season 1",
+      "sub": "2016 · 13 episodes · 5 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s1e1",
+          "t": "Izuku Midoriya: Origin",
+          "n": "1",
+          "w": 0.4,
+          "note": "series premiere"
+        },
+        {
+          "id": "mha-s1e2",
+          "t": "What It Takes to Be a Hero",
+          "n": "2",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e3",
+          "t": "Roaring Muscles",
+          "n": "3",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e4",
+          "t": "Start Line",
+          "n": "4",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e5",
+          "t": "What I Can Do For Now",
+          "n": "5",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e6",
+          "t": "Rage, You Damn Nerd",
+          "n": "6",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e7",
+          "t": "Deku vs. Kacchan",
+          "n": "7",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e8",
+          "t": "Bakugo's Start Line",
+          "n": "8",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e9",
+          "t": "Yeah, Just Do Your Best, Ida!",
+          "n": "9",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e10",
+          "t": "Encounter with the Unknown",
+          "n": "10",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e11",
+          "t": "Game Over",
+          "n": "11",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e12",
+          "t": "All Might",
+          "n": "12",
+          "w": 0.4
+        },
+        {
+          "id": "mha-s1e13",
+          "t": "In Each of Our Hearts",
+          "n": "13",
+          "w": 0.4
+        }
+      ],
+      "open": true,
+      "intro": "Bones's adaptation of Kōhei Horikoshi's manga: a school for superheroes, one class of first-years, and a television run that follows them from 2016 to 2025."
+    },
+    {
+      "id": "s2",
+      "title": "Season 2",
+      "sub": "2017 · 25 episodes · 10 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_2"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s2e1",
+          "t": "That's the Idea, Ochaco",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e2",
+          "t": "Roaring Sports Festival",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e3",
+          "t": "In Their Own Quirky Ways",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e4",
+          "t": "Strategy, Strategy, Strategy",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e5",
+          "t": "Cavalry Battle Finale",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e6",
+          "t": "The Boy Born with Everything",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e7",
+          "t": "Victory or Defeat",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e8",
+          "t": "Battle on, Challengers!",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e9",
+          "t": "Bakugo vs. Uraraka",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e10",
+          "t": "Shoto Todoroki: Origin",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e11",
+          "t": "Fight on, Ida",
+          "n": "11",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e12",
+          "t": "Todoroki vs. Bakugo",
+          "n": "12",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e13",
+          "t": "Time to Pick Some Names",
+          "n": "13",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e14",
+          "t": "Bizarre! Gran Torino Appears",
+          "n": "14",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e15",
+          "t": "Midoriya and Shigaraki",
+          "n": "15",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e16",
+          "t": "Hero Killer: Stain vs U.A. Students",
+          "n": "16",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e17",
+          "t": "Climax",
+          "n": "17",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e18",
+          "t": "The Aftermath of Hero Killer: Stain",
+          "n": "18",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e19",
+          "t": "Everyone's Internships",
+          "n": "19",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e20",
+          "t": "Listen Up!! A Tale from the Past",
+          "n": "20",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e21",
+          "t": "Gear up for Final Exams",
+          "n": "21",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e22",
+          "t": "Yaoyorozu: Rising",
+          "n": "22",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e23",
+          "t": "Stripping the Varnish",
+          "n": "23",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e24",
+          "t": "Katsuki Bakugo: Origin",
+          "n": "24",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s2e25",
+          "t": "Encounter",
+          "n": "25",
+          "w": 0.38
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Season 3",
+      "sub": "2018 · 25 episodes · 10 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_3"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s3e1",
+          "t": "Game Start",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e2",
+          "t": "Wild, Wild Pussycats",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e3",
+          "t": "Kota",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e4",
+          "t": "My Hero",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e5",
+          "t": "Drive It Home, Iron Fist!!!",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e6",
+          "t": "Roaring Upheaval",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e7",
+          "t": "What a Twist!",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e8",
+          "t": "From Iida to Midoriya",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e9",
+          "t": "All For One",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e10",
+          "t": "Symbol of Peace",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e11",
+          "t": "One For All",
+          "n": "11",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e12",
+          "t": "End of the Beginning, Beginning of the End",
+          "n": "12",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e13",
+          "t": "Moving into Dorms",
+          "n": "13",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e14",
+          "t": "Create Those Ultimate Moves",
+          "n": "14",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e15",
+          "t": "The Test",
+          "n": "15",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e16",
+          "t": "Shiketsu High Lurking",
+          "n": "16",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e17",
+          "t": "Class 1-A",
+          "n": "17",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e18",
+          "t": "Rush!",
+          "n": "18",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e19",
+          "t": "Rescue Exercises",
+          "n": "19",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e20",
+          "t": "Special Episode: Save the World with Love!",
+          "n": "20",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e21",
+          "t": "What's the Big Idea?",
+          "n": "21",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e22",
+          "t": "A Talk about Your Quirk",
+          "n": "22",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e23",
+          "t": "Deku vs. Kacchan, Part 2",
+          "n": "23",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e24",
+          "t": "A Season for Encounters",
+          "n": "24",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s3e25",
+          "t": "Unrivaled",
+          "n": "25",
+          "w": 0.38
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Season 4",
+      "sub": "2019–20 · 25 episodes · 10 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_4"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s4e1",
+          "t": "The Scoop on U.A. Class 1-A",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e2",
+          "t": "Overhaul",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e3",
+          "t": "Boy Meets…",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e4",
+          "t": "Fighting Fate",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e5",
+          "t": "Let's Go, Gutsy Red Riot",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e6",
+          "t": "An Unpleasant Talk",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e7",
+          "t": "Go!!",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e8",
+          "t": "Suneater of the Big Three",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e9",
+          "t": "Red Riot",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e10",
+          "t": "Temp Squad",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e11",
+          "t": "Lemillion",
+          "n": "11",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e12",
+          "t": "Unforeseen Hope",
+          "n": "12",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e13",
+          "t": "Infinite 100%",
+          "n": "13",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e14",
+          "t": "Bright Future",
+          "n": "14",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e15",
+          "t": "Smoldering Flames",
+          "n": "15",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e16",
+          "t": "Win Those Kids' Hearts",
+          "n": "16",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e17",
+          "t": "Relief for License Trainees",
+          "n": "17",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e18",
+          "t": "School Festival",
+          "n": "18",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e19",
+          "t": "Prepping for the School Festival Is the Funnest Part",
+          "n": "19",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e20",
+          "t": "Gold Tips Imperial",
+          "n": "20",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e21",
+          "t": "Deku vs. Gentle Criminal",
+          "n": "21",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e22",
+          "t": "School Festival Start!!",
+          "n": "22",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e23",
+          "t": "Let It Flow! School Festival!",
+          "n": "23",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e24",
+          "t": "Japanese Hero Billboard Chart",
+          "n": "24",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s4e25",
+          "t": "His Start",
+          "n": "25",
+          "w": 0.38
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Season 5",
+      "sub": "2021 · 25 episodes · 10 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_5"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s5e1",
+          "t": "All Hands on Deck! Class 1-A",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e2",
+          "t": "Vestiges",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e3",
+          "t": "Clash! Class A vs. Class B!",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e4",
+          "t": "Make It Happen, Shinso!",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e5",
+          "t": "Operation New Improv Moves",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e6",
+          "t": "Foresight",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e7",
+          "t": "Match 3",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e8",
+          "t": "Match 3 Conclusion",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e9",
+          "t": "Early Bird!",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e10",
+          "t": "That Which Is Inherited",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e11",
+          "t": "Our Brawl",
+          "n": "11",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e12",
+          "t": "The New Power and All For One",
+          "n": "12",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e13",
+          "t": "Have a Merry Christmas!",
+          "n": "13",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e14",
+          "t": "Off to Endeavor's Agency!",
+          "n": "14",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e15",
+          "t": "One Thing at a Time",
+          "n": "15",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e16",
+          "t": "Long Time No See, Selkie",
+          "n": "16",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e17",
+          "t": "The Hellish Todoroki Family",
+          "n": "17",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e18",
+          "t": "The Unforgiven",
+          "n": "18",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e19",
+          "t": "More of a Hero Than Anyone",
+          "n": "19",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e20",
+          "t": "My Villain Academia",
+          "n": "20",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e21",
+          "t": "Revival Party",
+          "n": "21",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e22",
+          "t": "Sad Man's Parade",
+          "n": "22",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e23",
+          "t": "Tenko Shimura: Origin",
+          "n": "23",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e24",
+          "t": "Tomura Shigaraki: Origin",
+          "n": "24",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s5e25",
+          "t": "The High, Deep Blue Sky",
+          "n": "25",
+          "w": 0.38
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Season 6",
+      "sub": "2022–23 · 25 episodes · 10 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_6"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s6e1",
+          "t": "A Quiet Beginning",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e2",
+          "t": "Mirko, the No. 5 Hero",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e3",
+          "t": "One's Justice",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e4",
+          "t": "Inheritance",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e5",
+          "t": "The Thrill of Destruction",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e6",
+          "t": "Encounter, Part 2",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e7",
+          "t": "Disaster Walker",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e8",
+          "t": "League of Villains vs. U.A. Students",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e9",
+          "t": "Katsuki Bakugo: Rising",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e10",
+          "t": "The Ones Within Us",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e11",
+          "t": "Dabi's Dance",
+          "n": "11",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e12",
+          "t": "Threads of Hope",
+          "n": "12",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e13",
+          "t": "Final Performance",
+          "n": "13",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e14",
+          "t": "Hellish Hell",
+          "n": "14",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e15",
+          "t": "Tartarus",
+          "n": "15",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e16",
+          "t": "The Hellish Todoroki Family, Part 2",
+          "n": "16",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e17",
+          "t": "The Wrong Way to Put Out a Fire",
+          "n": "17",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e18",
+          "t": "Izuku Midoriya and Tomura Shigaraki",
+          "n": "18",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e19",
+          "t": "Full Power!!",
+          "n": "19",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e20",
+          "t": "Hired Gun",
+          "n": "20",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e21",
+          "t": "The Lovely Lady Nagant",
+          "n": "21",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e22",
+          "t": "Friend",
+          "n": "22",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e23",
+          "t": "Deku vs. Class A",
+          "n": "23",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e24",
+          "t": "A Young Woman's Declaration",
+          "n": "24",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s6e25",
+          "t": "No Man Is an Island",
+          "n": "25",
+          "w": 0.38
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Season 7",
+      "sub": "2024 · 21 episodes · 8 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_7"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s7e1",
+          "t": "In the Nick of Time! A Big-Time Maverick from the West!",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e2",
+          "t": "Specter",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e3",
+          "t": "Villain",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e4",
+          "t": "The Story of How We All Became Heroes",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e5",
+          "t": "Let You Down",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e6",
+          "t": "Division",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e7",
+          "t": "Inflation",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e8",
+          "t": "Two Flashfires",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e9",
+          "t": "Extras",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e10",
+          "t": "Wounded Hero, Burning Bright and True!!",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e11",
+          "t": "Light Fades to Rain",
+          "n": "11",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e12",
+          "t": "Those Who Defend, Those Who Violate",
+          "n": "12",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e13",
+          "t": "A Chain of Events, Across the Ages",
+          "n": "13",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e14",
+          "t": "Together with Shoji",
+          "n": "14",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e15",
+          "t": "Butterfly Effect",
+          "n": "15",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e16",
+          "t": "The Chain Thus Far",
+          "n": "16",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e17",
+          "t": "Hopes",
+          "n": "17",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e18",
+          "t": "It's a Small World",
+          "n": "18",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e19",
+          "t": "I Am Here",
+          "n": "19",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e20",
+          "t": "A Girl's Ego",
+          "n": "20",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s7e21",
+          "t": "Battle Without a Quirk",
+          "n": "21",
+          "w": 0.38
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "title": "Season 8",
+      "sub": "2025 · 11 episodes · 4 hours",
+      "links": [
+        {
+          "label": "The season",
+          "url": "https://en.wikipedia.org/wiki/My_Hero_Academia_season_8"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-s8e1",
+          "t": "Toshinori Yagi: Rising / Origin",
+          "n": "1",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e2",
+          "t": "The End of an Era, and the Beginning",
+          "n": "2",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e3",
+          "t": "The Final Boss!!",
+          "n": "3",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e4",
+          "t": "Quirk: Explosion!!",
+          "n": "4",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e5",
+          "t": "History's Greatest Villain",
+          "n": "5",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e6",
+          "t": "Wrench It Open, Izuku Midoriya!!",
+          "n": "6",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e7",
+          "t": "From Aizawa",
+          "n": "7",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e8",
+          "t": "Izuku Midoriya Rising",
+          "n": "8",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e9",
+          "t": "Epilogue, The Hellish Todoroki Family: Final",
+          "n": "9",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e10",
+          "t": "The Girl Who Loves Smiles",
+          "n": "10",
+          "w": 0.38
+        },
+        {
+          "id": "mha-s8e11",
+          "t": "My Hero Academia",
+          "n": "11",
+          "w": 0.38,
+          "note": "series finale"
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "title": "Bonus special",
+      "sub": "2026 · one broadcast",
+      "intro": "One broadcast, months after the finale, in the slot the series had. Wikipedia numbers it 170+1 rather than 171 and keeps it out of season 8; so does this.",
+      "links": [
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_My_Hero_Academia_episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "mha-special-1",
+          "t": "More",
+          "n": "170+1",
+          "w": 0.38,
+          "note": "after the run · no published length of its own"
+        }
+      ]
+    },
+    {
+      "id": "films",
+      "title": "The films",
+      "sub": "2018–24 · four films · 7 hours",
+      "intro": "Feature-length, and none of them part of a season: each one opened in cinemas between two broadcast years.",
+      "items": [
+        {
+          "id": "mha-film-2018",
+          "t": "My Hero Academia: Two Heroes",
+          "n": "2018",
+          "w": 1.62,
+          "note": "97 min",
+          "m": "f",
+          "q": "Q55391732"
+        },
+        {
+          "id": "mha-film-2019",
+          "t": "My Hero Academia: Heroes Rising",
+          "n": "2019",
+          "w": 1.73,
+          "note": "104 min",
+          "m": "f",
+          "q": "Q85846725"
+        },
+        {
+          "id": "mha-film-2021",
+          "t": "My Hero Academia: World Heroes' Mission",
+          "n": "2021",
+          "w": 1.75,
+          "note": "105 min",
+          "m": "f",
+          "q": "Q107130536"
+        },
+        {
+          "id": "mha-film-2024",
+          "t": "My Hero Academia: You're Next",
+          "n": "2024",
+          "w": 1.83,
+          "note": "110 min",
+          "m": "f",
+          "q": "Q124388041"
+        }
+      ]
+    }
+  ]
+}

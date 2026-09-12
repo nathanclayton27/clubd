@@ -1,11 +1,11 @@
 {
   "slug": "middle-earth",
   "title": "Middle-earth",
-  "subtitle": "Tolkien's books and Jackson's films",
+  "subtitle": "Tolkien's books and the films made from them",
   "kind": "books & films",
   "popularity": 85,
   "year": "1937–2014",
-  "blurb": "The Hobbit to The Silmarillion with the posthumous volumes optional, and Peter Jackson's six films weighted by runtime — the page and the screen, one list.",
+  "blurb": "The Hobbit to The Silmarillion with the posthumous volumes optional, Peter Jackson's six films weighted by runtime, and the three animated adaptations that came before him as optional rows.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -29,13 +29,17 @@
     ],
     [
       "Films are weighted, books are not.",
-      "Film rows use theatrical runtimes from Wikipedia's own length tables — about 9 hours for The Lord of the Rings plus 8 for The Hobbit — and each row notes its extended edition. Book rows count one each; pages aren't hours."
+      "Jackson's rows use theatrical runtimes from Wikipedia's own length tables — about 9 hours for The Lord of the Rings plus 8 for The Hobbit — and each row notes its extended edition. The animated rows carry the runtime on their own articles; none of the three has a second cut. Book rows count one each; pages aren't hours."
+    ],
+    [
+      "The animated films are their own lineage.",
+      "Rankin/Bass made The Hobbit for American television in 1977 and The Return of the King in 1980 as its sequel. Ralph Bakshi's The Lord of the Rings came between them in 1978 and adapts the first two volumes, not the third. Two studios who were not making one series, then — but in that order the three of them reach the end of the story, twenty years before Jackson did. They are optional rows, so what finishing this list means is unchanged for anyone already part-way through."
     ],
     [
       "No Rings of Power.",
-      "This list is Tolkien's page and Jackson's screen. The Amazon series is neither, and is left out on purpose."
+      "Every screen row here adapts one of the books above. The Amazon series does not, and is left out on purpose."
     ],
-    "Books and years from Wikipedia's J. R. R. Tolkien bibliography; film lengths from The Lord of the Rings and The Hobbit film-series articles, cross-checked against Wikidata."
+    "Books and years from Wikipedia's J. R. R. Tolkien bibliography; Jackson's film lengths from The Lord of the Rings and The Hobbit film-series articles, the animated films' from their own articles, all cross-checked against Wikidata."
   ],
   "sections": [
     {
@@ -151,6 +155,38 @@
           "n": "2014",
           "w": 2.4,
           "note": "144 min · extended edition 164 min"
+        }
+      ]
+    },
+    {
+      "id": "animated",
+      "title": "The animated films",
+      "sub": "1977–1980 · about 5 hours",
+      "intro": "Three adaptations from before Jackson, by two studios working separately: Rankin/Bass made The Hobbit for television and The Return of the King as its sequel, and Ralph Bakshi's film came between them. Optional rows — finishing the list does not ask for these.",
+      "items": [
+        {
+          "id": "me-f-1977-the-hobbit",
+          "t": "The Hobbit",
+          "n": "1977",
+          "w": 1.3,
+          "opt": 1,
+          "note": "78 min · Rankin/Bass · made for television"
+        },
+        {
+          "id": "me-f-1978-the-lord-of-the-rings",
+          "t": "The Lord of the Rings",
+          "n": "1978",
+          "w": 2.22,
+          "opt": 1,
+          "note": "133 min · Ralph Bakshi"
+        },
+        {
+          "id": "me-f-1980-the-return-of-the-king",
+          "t": "The Return of the King",
+          "n": "1980",
+          "w": 1.63,
+          "opt": 1,
+          "note": "98 min · Rankin/Bass · made for television"
         }
       ]
     }

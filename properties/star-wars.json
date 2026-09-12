@@ -6,7 +6,7 @@
   "kind": "films & shows",
   "popularity": 97,
   "year": "1977–",
-  "blurb": "17 films and 39 television seasons in the order they came out — about 240 hours.",
+  "blurb": "17 films and 40 television seasons in the order they came out — about 243 hours.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -38,7 +38,7 @@
   "notes": [
     [
       "Tiers are on each row, not each section.",
-      "These sections are eras, and an era holds all three at once. 1 is the spine — the nine numbered films, plus Rogue One and Andor, which run into the opening of the first film and into each other. 2 is the rest of the main line: the other theatrical films and the series carrying real plot. 3 is everything you can take or leave without changing what 1 means — the Holiday Special, the Ewok films, the eighties cartoons, the Tartakovsky microseries and the anthologies. A finish date covers 1 and 2; the checkbox under the bar adds the rest."
+      "These sections are eras, and an era holds all three at once. 1 is the spine — the nine numbered films, plus Rogue One and Andor, which run into the opening of the first film and into each other. 2 is the rest of the main line: the other theatrical films and the series carrying real plot. 3 is everything you can take or leave without changing what 1 means — the Holiday Special, the Ewok films, the eighties cartoons, the Tartakovsky microseries, the anthologies and the anime. A finish date covers 1 and 2; the checkbox under the bar adds the rest."
     ],
     [
       "Release order, not chronological.",
@@ -47,6 +47,10 @@
     [
       "Two different things are called Clone Wars.",
       "Clone Wars, in the prequels, is Genndy Tartakovsky's Cartoon Network microseries — twenty-five chapters that aired between Attack of the Clones and Revenge of the Sith, and run straight into the opening of that film. The Clone Wars is the 2008 film and the seven-season series after it, and has an era of its own further down. Lucasfilm ruled the later series canon and the earlier one not, once Disney had bought the company; that is not what decides anything here. This is every film and television season, and it already carries the Holiday Special, the Ewok films and both eighties cartoons."
+    ],
+    [
+      "Visions and Visions Presents are two different things.",
+      "Visions is an anthology: three seasons of unconnected shorts, each by a different studio, and it has three rows here for that reason. Visions Presents is a spin-off that tells one continuous story, and the first of them — the only one so far — is subtitled The Ninth Jedi, after a short from the anthology's first season. It is a row of its own rather than a fourth Visions season. Both sit in tier 3: neither changes what the numbered films mean. The one thing nothing states is how long an episode of it runs — its article leaves the field empty and asks for a source, so that row carries this list's default and says on itself that it does."
     ],
     [
       "Television is tracked season by season.",
@@ -429,7 +433,7 @@
     {
       "id": "plus",
       "title": "The Disney+ era",
-      "sub": "2019–2027 · 3 films, 22 seasons · 115 hours",
+      "sub": "2019–2027 · 3 films, 23 seasons · 118 hours",
       "intro": "Television becomes the centre of gravity, and the films slow to a stop.",
       "items": [
         {
@@ -692,6 +696,17 @@
           "tier": 2,
           "tags": [
             "Films"
+          ]
+        },
+        {
+          "id": "sw-t-2026-visions-presents-the-ninth-jedi-s1",
+          "t": "Visions Presents: The Ninth Jedi",
+          "n": "2026",
+          "w": 2.93,
+          "note": "2026–2026 · 1 season, 8 episodes · Animated · One continuous story rather than a collection of shorts · Episode length is this list's 22-minute default; no source states it",
+          "tier": 3,
+          "tags": [
+            "Television"
           ]
         },
         {

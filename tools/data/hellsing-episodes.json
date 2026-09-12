@@ -1,0 +1,409 @@
+{
+ "source": {
+  "episodes": "https://en.wikipedia.org/wiki/List_of_Hellsing_episodes",
+  "series": "https://en.wikipedia.org/wiki/Hellsing"
+ },
+ "tv": [
+  {
+   "n": 1,
+   "t": "The Undead",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-10-10",
+   "jp": "October 10, 2001",
+   "en": "October 4, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 2,
+   "t": "Club M",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-10-17",
+   "jp": "October 17, 2001",
+   "en": "October 11, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 3,
+   "t": "Sword Dancer",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-10-24",
+   "jp": "October 24, 2001",
+   "en": "October 18, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 4,
+   "t": "Innocent as a Human",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-10-31",
+   "jp": "October 31, 2001",
+   "en": "October 25, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 5,
+   "t": "Brotherhood",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-11-07",
+   "jp": "November 7, 2001",
+   "en": "November 1, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 6,
+   "t": "Dead Zone",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-11-14",
+   "jp": "November 14, 2001",
+   "en": "November 8, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 7,
+   "t": "Duel",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-11-21",
+   "jp": "November 21, 2001",
+   "en": "November 15, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 8,
+   "t": "Kill House",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-11-28",
+   "jp": "November 28, 2001",
+   "en": "November 22, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 9,
+   "t": "Red Rose Vertigo",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-12-05",
+   "jp": "December 5, 2001",
+   "en": "November 29, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 10,
+   "t": "Master of Monster",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-12-12",
+   "jp": "December 12, 2001",
+   "en": "December 6, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 11,
+   "t": "Transcend Force",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2001-12-19",
+   "jp": "December 19, 2001",
+   "en": "December 13, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 12,
+   "t": "Total Destruction",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2002-01-09",
+   "jp": "January 9, 2002",
+   "en": "December 20, 2003",
+   "dawn_with": null
+  },
+  {
+   "n": 13,
+   "t": "Hellfire",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2002-01-16",
+   "jp": "January 16, 2002",
+   "en": "December 27, 2003",
+   "dawn_with": null
+  }
+ ],
+ "ova": [
+  {
+   "n": 1,
+   "t": "Hellsing I",
+   "runtime_raw": "51 minutes",
+   "runtime_min": 51,
+   "jp_iso": "2006-02-10",
+   "jp": "February 10, 2006",
+   "en": "December 5, 2006",
+   "dawn_with": null
+  },
+  {
+   "n": 2,
+   "t": "Hellsing II",
+   "runtime_raw": "43 minutes",
+   "runtime_min": 43,
+   "jp_iso": "2006-08-25",
+   "jp": "August 25, 2006",
+   "en": "June 12, 2007",
+   "dawn_with": null
+  },
+  {
+   "n": 3,
+   "t": "Hellsing III",
+   "runtime_raw": "47 minutes",
+   "runtime_min": 47,
+   "jp_iso": "2007-04-04",
+   "jp": "April 4, 2007",
+   "en": "October 16, 2007",
+   "dawn_with": null
+  },
+  {
+   "n": 4,
+   "t": "Hellsing IV",
+   "runtime_raw": "56 minutes",
+   "runtime_min": 56,
+   "jp_iso": "2008-02-22",
+   "jp": "February 22, 2008",
+   "en": "September 23, 2008",
+   "dawn_with": null
+  },
+  {
+   "n": 5,
+   "t": "Hellsing V",
+   "runtime_raw": "44 minutes",
+   "runtime_min": 44,
+   "jp_iso": "2008-11-21",
+   "jp": "November 21, 2008",
+   "en": "November 13, 2012",
+   "dawn_with": null
+  },
+  {
+   "n": 6,
+   "t": "Hellsing VI",
+   "runtime_raw": "42 minutes",
+   "runtime_min": 42,
+   "jp_iso": "2009-07-24",
+   "jp": "July 24, 2009",
+   "en": "November 13, 2012",
+   "dawn_with": null
+  },
+  {
+   "n": 7,
+   "t": "Hellsing VII",
+   "runtime_raw": "45 minutes",
+   "runtime_min": 45,
+   "jp_iso": "2009-12-23",
+   "jp": "December 23, 2009",
+   "en": "November 13, 2012",
+   "dawn_with": null
+  },
+  {
+   "n": 8,
+   "t": "Hellsing VIII",
+   "runtime_raw": "49 minutes",
+   "runtime_min": 49,
+   "jp_iso": "2011-07-27",
+   "jp": "July 27, 2011",
+   "en": "November 13, 2012",
+   "dawn_with": 1
+  },
+  {
+   "n": 9,
+   "t": "Hellsing IX",
+   "runtime_raw": "48 minutes",
+   "runtime_min": 48,
+   "jp_iso": "2012-02-15",
+   "jp": "February 15, 2012",
+   "en": "October 28, 2014",
+   "dawn_with": 2
+  },
+  {
+   "n": 10,
+   "t": "Hellsing X",
+   "runtime_raw": "68 minutes",
+   "runtime_min": 68,
+   "jp_iso": "2012-12-26",
+   "jp": "December 26, 2012",
+   "en": "October 28, 2014",
+   "dawn_with": 3
+  }
+ ],
+ "dawn": [
+  {
+   "n": 1,
+   "t": "Hellsing: The Dawn Special 1",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2011-07-27",
+   "jp": "July 27, 2011",
+   "en": "",
+   "dawn_with": null
+  },
+  {
+   "n": 2,
+   "t": "Hellsing: The Dawn Special 2",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2012-02-15",
+   "jp": "February 15, 2012",
+   "en": "",
+   "dawn_with": null
+  },
+  {
+   "n": 3,
+   "t": "Hellsing: The Dawn Special 3 (final)",
+   "runtime_raw": "",
+   "runtime_min": null,
+   "jp_iso": "2012-12-26",
+   "jp": "December 26, 2012",
+   "en": "",
+   "dawn_with": null
+  }
+ ],
+ "infobox": {
+  "tv": {
+   "type": "tv series",
+   "studio": "Gonzo|Digimation",
+   "network": "Fuji TV",
+   "first": "October 11, 2001",
+   "last": "January 17, 2002",
+   "episodes": "13",
+   "runtime": "",
+   "director": "Umanosuke Iida (chief)|Yasunori Urata",
+   "writer": "Chiaki J. Konaka",
+   "episode_list": "List of Hellsing episodes"
+  },
+  "ova": {
+   "type": "ova",
+   "title": "Hellsing Ultimate",
+   "studio": "Satelight (1–4)|Madhouse (5–7)|Graphinica (8–10)",
+   "first": "February 10, 2006",
+   "last": "December 26, 2012",
+   "episodes": "10",
+   "runtime": "42–68 minutes",
+   "director": "Tomokazu Tokoro (1–4)|Hiroyuki Tanaka (5–7)|Yasuhiro Matsumura (8, 10)|Kenichi Suzuki (9–10)",
+   "writer": "Yōsuke Kuroda|Hideyuki Kurata",
+   "episode_list": "List of Hellsing episodes#Hellsing Ultimate (2006–14)"
+  },
+  "dawn": {
+   "type": "OVA",
+   "title": "Hellsing: The Dawn",
+   "studio": "Graphinica",
+   "first": "July 27, 2011",
+   "last": "December 26, 2012",
+   "episodes": "3",
+   "runtime": "6–9 minutes",
+   "episode_list": "List of Hellsing episodes#Hellsing: The Dawn"
+  }
+ },
+ "ova_runtime_range": [
+  42,
+  68
+ ],
+ "quotes": {
+  "divergence": "Entitled as simply Hellsing in Japan, and Hellsing Ultimate internationally, the OVA episodes more closely follow the source manga and differ from the first series with the divergence of the former based on the latter's episode 5 and 6 as the source manga had not been completed by the time Gonzo produced the TV series.",
+  "faithful": "In April 2005, it was announced that a new original video animation (OVA) adaptation, titled Hellsing Ultimate (still known simply as Hellsing in Japan), more faithful to the original manga than the TV series, would be released by Geneon Entertainment in Japan and North America.",
+  "toonami": "In 2014, Hellsing Ultimate aired on US television via Adult Swim's Toonami programming block, starting on September 13.",
+  "limited": "Each limited edition of the last three episodes' home video release included an episode of Hellsing: The Dawn.",
+  "dawn_manga": "A prequel series, titled Hellsing: The Dawn, was published Young King OURs Zōkan (later Young King OURs+ before being discontinued), with six chapters released from the March 2002 to the March 2006 issues; the series remains incomplete.",
+  "crossfire": "OVA 6 features a drama CD of Crossfire."
+ },
+ "hunt": {
+  "episode_articles_asked": 45,
+  "episode_articles_found": {
+   "The Undead": [
+    "Q3989777",
+    "The Undead — American horror punk band"
+   ],
+   "Sword Dancer": [
+    "Q7659267",
+    "Sword Dancer — American-bred Thoroughbred racehorse"
+   ],
+   "Brotherhood": [
+    "Q299301",
+    "Brotherhood — Wikimedia disambiguation page"
+   ],
+   "Dead Zone": [
+    "Q242444",
+    "Dead zone — Wikimedia disambiguation page"
+   ],
+   "Duel": [
+    "Q191503",
+    "duel — arranged engagement in combat between two individuals"
+   ],
+   "Kill House": [
+    "Q6407185",
+    "kill house — Training facility for urban combat"
+   ],
+   "Total Destruction": [
+    "Q7827992",
+    "Total Destruction — album by Unsane"
+   ],
+   "Hellfire": [
+    "Q413264",
+    "Hellfire — Wikimedia disambiguation page"
+   ]
+  },
+  "wikidata_durations": {
+   "Q191503": [],
+   "Q242444": [],
+   "Q299301": [],
+   "Q3989777": [],
+   "Q413264": [],
+   "Q6407185": [],
+   "Q7659267": [],
+   "Q7827992": []
+  },
+  "series_items": {
+   "Q223155": {
+    "P2047": [],
+    "P1113": []
+   },
+   "Q4167441": {
+    "P2047": [],
+    "P1113": []
+   },
+   "Q2750339": {
+    "P2047": [
+     [
+      50.0,
+      "normal",
+      null
+     ]
+    ],
+    "P1113": [
+     "+10"
+    ]
+   },
+   "Q3480152": {
+    "P2047": [],
+    "P1113": []
+   },
+   "Q951078": {
+    "P2047": [],
+    "P1113": [
+     "+13"
+    ]
+   }
+  },
+  "season_articles": [
+   "Hellsing",
+   "Alucard (Hellsing)",
+   "Dylan Conrique",
+   "Travis Willingham",
+   "JB Blanc",
+   "Sam Riegel",
+   "Black Clover season 1",
+   "Yuri Lowenthal filmography"
+  ]
+ }
+}

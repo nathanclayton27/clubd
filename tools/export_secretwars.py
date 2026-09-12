@@ -43,6 +43,11 @@ def main():
                     "star": x.get("star", 0),
                     "opt": x.get("opt", 0),
                     "url": x.get("url", ""),
+                    # CLU-545: one row is one issue, so every row
+                    # weighs 1 and the strip measures issues rather
+                    # than rows. `w` is not part of an id, so no tick
+                    # moves.
+                    "w": 1,
                 }
                 for x in s["items"]
             ],

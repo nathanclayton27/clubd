@@ -7,7 +7,25 @@
    "kind": "film",
    "tablenote": "Also character designer",
    "qid": "Q1205051",
-   "runtime": 81
+   "runtime": 81,
+   "wd": {
+    "label": "Perfect Blue",
+    "aliases": [
+     "PERFECT BLUE"
+    ],
+    "directors": [
+     "Satoshi Kon"
+    ],
+    "years": [
+     1997,
+     1998,
+     1999,
+     2000
+    ],
+    "instance_of": [
+     "Q20650540"
+    ]
+   }
   },
   {
    "t": "Millennium Actress",
@@ -16,7 +34,22 @@
    "kind": "film",
    "tablenote": "Also character designer",
    "qid": "Q939736",
-   "runtime": 87
+   "runtime": 87,
+   "wd": {
+    "label": "Millennium Actress",
+    "aliases": [],
+    "directors": [
+     "Satoshi Kon"
+    ],
+    "years": [
+     2001,
+     2002,
+     2003
+    ],
+    "instance_of": [
+     "Q20650540"
+    ]
+   }
   },
   {
    "t": "Tokyo Godfathers",
@@ -25,7 +58,22 @@
    "kind": "film",
    "tablenote": "Also character designer",
    "qid": "Q917278",
-   "runtime": 93
+   "runtime": 93,
+   "wd": {
+    "label": "Tokyo Godfathers",
+    "aliases": [],
+    "directors": [
+     "Satoshi Kon"
+    ],
+    "years": [
+     2003,
+     2004,
+     2005
+    ],
+    "instance_of": [
+     "Q20650540"
+    ]
+   }
   },
   {
    "t": "Paprika",
@@ -34,7 +82,20 @@
    "kind": "film",
    "tablenote": "",
    "qid": "Q578595",
-   "runtime": 90
+   "runtime": 90,
+   "wd": {
+    "label": "Paprika",
+    "aliases": [],
+    "directors": [
+     "Satoshi Kon"
+    ],
+    "years": [
+     2006
+    ],
+    "instance_of": [
+     "Q20650540"
+    ]
+   }
   }
  ],
  "paranoia": {

@@ -1,0 +1,365 @@
+{
+  "slug": "one-punch-man",
+  "title": "One-Punch Man",
+  "subtitle": "every broadcast episode, and the extras after them",
+  "kind": "anime",
+  "popularity": 77,
+  "year": "2015–",
+  "blurb": "Saitama's whole television run in broadcast order — 36 episodes over three seasons, the third of them half-aired, with the home-video episodes optional at the end.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#B02A1E",
+  "accentDark": "#F5C93B",
+  "tiers": false,
+  "notes": [
+    [
+      "Three seasons, thirty-six episodes, and the show is not finished.",
+      "Season 1 ran on TV Tokyo from October 5, 2015 to December 21, 2015, animated by Madhouse; season 2 from April 10, 2019 to July 3, 2019, with J.C.Staff taking over; season 3's first cours from October 12, 2025 to December 29, 2025. A second cours was announced the day the first one ended and is set to premiere in 2027 — and that year is all the source has: no episode count, no titles, no table, and the season's infobox still reads \"present\" where its last airdate would go. So this list stops at episode 36, and the generator asserts those absences one by one: the day Wikipedia starts filling the second cours in, the build fails instead of quietly staying short."
+    ],
+    [
+      "The two recap specials are not rows.",
+      "A week before season 2, and again a week before season 3, TV Tokyo ran a commemorative special recapping the previous season: \"A Super Serious Look Back!\" on April 3, 2019 and \"Get It All in One Punch!\" on October 5, 2025. The source numbers them 12.5 and 24.5 and files them under their own heading, outside both episode tables. They are the episodes above told again, so listing them would count the same viewing twice — and leaving them out costs you nothing."
+    ],
+    [
+      "Nothing is weighted, and the hunt for a runtime came up empty everywhere.",
+      "Weighting is all or nothing — a row with no weight silently counts as a full hour — so a handful of sourced lengths would be worse than none. Every place a duration could live was checked and every one is empty: not one of the 51 episode-table rows across the four articles that carry them has a running-time field; no episode title is even a link, and none of the 49 titles has an article of its own — five of them resolve to unrelated works, and not one of the 49 \"(One-Punch Man)\" spellings exists; the 25 per-episode Wikidata items that do exist — twelve under season 1, thirteen under season 2 — state no duration between them, and season 3's item lists no episodes at all; neither the three season items, nor the anime series item all three hang off, nor the franchise item, nor the episode-list item states one either; and no season infobox or series infobox carries a runtime field. The only lengths published anywhere in the five articles are 24 minutes for Road to Hero, on its own infobox, and \"ten-minute\" in prose for the second season's OVAs. Spreading one bundled extra's length across 36 broadcast episodes would invent precision the source refuses to give, so every row counts one and this page counts episodes."
+    ],
+    [
+      "The thirteen home-video episodes are here, and every one is optional.",
+      "Twelve OVAs came bundled with the two seasons' Blu-ray and DVD volumes, six per season, and \"Road to Hero\" came bundled with the special edition of the tenth manga volume — which is why the main article counts the run as \"36 + 12 OVAs\" and files that one apart as an OAD. They are new animation rather than compilations, so they are worth a row; they never aired, so they are marked optional and cannot hold up the broadcast run. The second season's six are short — the source calls them ten-minute — and no length is published for the first season's. The manga, the original webcomic and the games are out of scope for a watch list."
+    ],
+    "Titles, numbering, airdates and the OVA table machine-read from Wikipedia's List of One-Punch Man episodes and the three One-Punch Man season articles; each season's count and its first and last airdates cross-checked against both its own infobox and the list article's series overview, the 1–36 numbering asserted contiguous, and the absence of any published runtime confirmed against Wikidata's franchise, series, season and per-episode items before this builds."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Season 1",
+      "sub": "2015 · 12 episodes · Madhouse on TV Tokyo",
+      "intro": "Twelve episodes, the whole of Madhouse's season, in the order TV Tokyo ran them — October 5, 2015 to December 21, 2015. The numbers are the source's own overall numbering, which keeps counting through the seasons below.",
+      "open": true,
+      "links": [
+        {
+          "label": "Season 1",
+          "url": "https://en.wikipedia.org/wiki/One-Punch_Man_season_1"
+        },
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_One-Punch_Man_episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "opm-e1",
+          "t": "The Strongest Man",
+          "n": "1",
+          "note": "Series premiere"
+        },
+        {
+          "id": "opm-e2",
+          "t": "The Lone Cyborg",
+          "n": "2"
+        },
+        {
+          "id": "opm-e3",
+          "t": "The Obsessive Scientist",
+          "n": "3"
+        },
+        {
+          "id": "opm-e4",
+          "t": "The Modern Ninja",
+          "n": "4"
+        },
+        {
+          "id": "opm-e5",
+          "t": "The Ultimate Master",
+          "n": "5"
+        },
+        {
+          "id": "opm-e6",
+          "t": "The Terrifying City",
+          "n": "6"
+        },
+        {
+          "id": "opm-e7",
+          "t": "The Ultimate Disciple",
+          "n": "7"
+        },
+        {
+          "id": "opm-e8",
+          "t": "The Deep Sea King",
+          "n": "8"
+        },
+        {
+          "id": "opm-e9",
+          "t": "Unyielding Justice",
+          "n": "9"
+        },
+        {
+          "id": "opm-e10",
+          "t": "Unparalleled Peril",
+          "n": "10"
+        },
+        {
+          "id": "opm-e11",
+          "t": "The Dominator of the Universe",
+          "n": "11"
+        },
+        {
+          "id": "opm-e12",
+          "t": "The Strongest Hero",
+          "n": "12"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Season 2",
+      "sub": "2019 · 12 episodes · J.C.Staff takes over",
+      "links": [
+        {
+          "label": "Season 2",
+          "url": "https://en.wikipedia.org/wiki/One-Punch_Man_season_2"
+        }
+      ],
+      "items": [
+        {
+          "id": "opm-e13",
+          "t": "Return of the Hero",
+          "n": "13",
+          "note": "First episode animated by J.C.Staff rather than Madhouse"
+        },
+        {
+          "id": "opm-e14",
+          "t": "The Human Monster",
+          "n": "14"
+        },
+        {
+          "id": "opm-e15",
+          "t": "The Hunt Begins",
+          "n": "15"
+        },
+        {
+          "id": "opm-e16",
+          "t": "The Metal Bat",
+          "n": "16"
+        },
+        {
+          "id": "opm-e17",
+          "t": "The Martial Arts Tournament",
+          "n": "17"
+        },
+        {
+          "id": "opm-e18",
+          "t": "The Monster Uprising",
+          "n": "18"
+        },
+        {
+          "id": "opm-e19",
+          "t": "The Class S Heroes",
+          "n": "19"
+        },
+        {
+          "id": "opm-e20",
+          "t": "The Resistance of the Strong",
+          "n": "20"
+        },
+        {
+          "id": "opm-e21",
+          "t": "The Troubles of the Strongest",
+          "n": "21"
+        },
+        {
+          "id": "opm-e22",
+          "t": "Justice Under Siege",
+          "n": "22"
+        },
+        {
+          "id": "opm-e23",
+          "t": "The Varieties of Pride",
+          "n": "23"
+        },
+        {
+          "id": "opm-e24",
+          "t": "The Wiping of the Disciple's Butt",
+          "n": "24"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Season 3",
+      "sub": "2025 · 12 episodes · the first cours of two",
+      "intro": "Half a season: twelve episodes from October 12, 2025 to December 29, 2025, with a second cours announced for 2027 that the source dates and describes no further. It is also the worst-received stretch of the show — the article records that the premiere \"received largely negative reviews from critics\" and that later episodes drew backlash over the animation. Worth knowing before you start it; it is still the only animated version there is.",
+      "links": [
+        {
+          "label": "Season 3",
+          "url": "https://en.wikipedia.org/wiki/One-Punch_Man_season_3"
+        }
+      ],
+      "items": [
+        {
+          "id": "opm-e25",
+          "t": "Strategy Meeting",
+          "n": "25"
+        },
+        {
+          "id": "opm-e26",
+          "t": "Monster Traits",
+          "n": "26"
+        },
+        {
+          "id": "opm-e27",
+          "t": "Organism Limits",
+          "n": "27"
+        },
+        {
+          "id": "opm-e28",
+          "t": "Counterattack Signal",
+          "n": "28"
+        },
+        {
+          "id": "opm-e29",
+          "t": "Monster King",
+          "n": "29"
+        },
+        {
+          "id": "opm-e30",
+          "t": "Motley Heroes",
+          "n": "30"
+        },
+        {
+          "id": "opm-e31",
+          "t": "Counterstrike",
+          "n": "31"
+        },
+        {
+          "id": "opm-e32",
+          "t": "Ninja Tale",
+          "n": "32"
+        },
+        {
+          "id": "opm-e33",
+          "t": "Brave Child",
+          "n": "33"
+        },
+        {
+          "id": "opm-e34",
+          "t": "Immortal Bloodbath",
+          "n": "34"
+        },
+        {
+          "id": "opm-e35",
+          "t": "Top Dragons",
+          "n": "35"
+        },
+        {
+          "id": "opm-e36",
+          "t": "Ultimate Lifeform",
+          "n": "36",
+          "note": "Last episode of the first cours — the second has not aired"
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "title": "Only on home video",
+      "sub": "2015–2020 · 13 episodes · none of them broadcast",
+      "intro": "Optional, and safely skipped: six OVAs on each season's Blu-ray and DVD volumes, and the OAD that shipped with a manga volume before any of them. New animation rather than recaps, which is why these are rows and the two recap specials are not.",
+      "links": [
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_One-Punch_Man_episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "opm-oad-0",
+          "t": "Road to Hero",
+          "n": "OAD",
+          "opt": true,
+          "note": "Bundled with the special edition of the tenth manga volume"
+        },
+        {
+          "id": "opm-s1ova-1",
+          "t": "The Shadow That Snuck Up Too Close",
+          "n": "S1 OVA 1",
+          "opt": true
+        },
+        {
+          "id": "opm-s1ova-2",
+          "t": "The Pupil Who Is an Extremely Poor Talker",
+          "n": "S1 OVA 2",
+          "opt": true
+        },
+        {
+          "id": "opm-s1ova-3",
+          "t": "The Ninja Who Is Too Complicated",
+          "n": "S1 OVA 3",
+          "opt": true
+        },
+        {
+          "id": "opm-s1ova-4",
+          "t": "Bang, Who Is Too Overbearing",
+          "n": "S1 OVA 4",
+          "opt": true
+        },
+        {
+          "id": "opm-s1ova-5",
+          "t": "The Sisters Who Have Too Many Things Happening",
+          "n": "S1 OVA 5",
+          "opt": true
+        },
+        {
+          "id": "opm-s1ova-6",
+          "t": "The Murder Case That Is Too Impossible",
+          "n": "S1 OVA 6",
+          "opt": true
+        },
+        {
+          "id": "opm-s2ova-1",
+          "t": "Saitama and the Mediocre Ability Users",
+          "n": "S2 OVA 1",
+          "opt": true
+        },
+        {
+          "id": "opm-s2ova-2",
+          "t": "Going Fishing with Middle-Aged Men",
+          "n": "S2 OVA 2",
+          "opt": true
+        },
+        {
+          "id": "opm-s2ova-3",
+          "t": "Genos and Memory Loss",
+          "n": "S2 OVA 3",
+          "opt": true
+        },
+        {
+          "id": "opm-s2ova-4",
+          "t": "Game and Rivals",
+          "n": "S2 OVA 4",
+          "opt": true
+        },
+        {
+          "id": "opm-s2ova-5",
+          "t": "Puri-Puri Prisoner and the Jailbreaking Prisoners",
+          "n": "S2 OVA 5",
+          "opt": true
+        },
+        {
+          "id": "opm-s2ova-6",
+          "t": "Zombieman Murder Case 2: A Chalet Amid the Blizzard, and the Ones Bothered by the Cold",
+          "n": "S2 OVA 6",
+          "opt": true
+        }
+      ]
+    }
+  ]
+}

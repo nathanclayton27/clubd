@@ -1,0 +1,195 @@
+{
+  "slug": "kill-la-kill",
+  "title": "Kill la Kill",
+  "subtitle": "the whole broadcast run, and the OVA that never aired",
+  "kind": "anime",
+  "popularity": 65,
+  "year": "2013–2014",
+  "blurb": "Trigger's twenty-four-episode run in broadcast order, plus the OVA episode that only ever shipped on the last home media volume.",
+  "unit": {
+    "one": "episode",
+    "many": "episodes"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#880808",
+  "accentDark": "#F4756B",
+  "tiers": false,
+  "notes": [
+    [
+      "The OVA is a row, and it is optional.",
+      "The source's own episode table carries twenty-five entries, not twenty-four: the last one is numbered “OVA” rather than 25, and both infoboxes count the run as “24 + OVA”. It is new animation rather than a re-cut of anything — it was released as part of the ninth home media volume on September 3, 2014, whose own row in the source's table reads “24 + OVA (25)” — so it is a thing to watch that nothing else here covers, and it sits at the end where the source puts it. It is marked optional because it never aired, it is not one of the twenty-four, and it reached shops five months after the run closed. Skip it and you have still watched the series."
+    ],
+    [
+      "Nothing is weighted, and hours are not tracked here.",
+      "Every place a per-episode running time could live was checked and every one is empty. No episode has its own Wikipedia article: all 25 titles were asked for directly, in three forms each, and of those 75 page names the 12 that resolve are the unrelated songs, films and disambiguation pages the titles collide with — every one of them was opened, and not one is filed under this series or mentions it. Wikidata has no per-episode items at all, and the series item Q13637192 carries no duration statement of any kind, so there is not even a series-level average to spread across the rows; nothing else Wikidata files under the series carries one either. Neither the series infobox nor the episode list's season infobox has a runtime field, neither article states a figure in minutes anywhere, and not one of the 25 episode-table entries carries a running-time field. The Japanese article was read too and gives no length and no broadcast slot. So there is no figure to weigh from. It has to be every row or no row, because a row with no weight silently counts as a full hour — so it is no row, every episode counts one, and the strip and the pace line count episodes rather than hours."
+    ],
+    [
+      "Every episode is named after a pop song.",
+      "“Trigger”, “Don't Stop Me Now”, “Into the Night” — the source says each title is a Japanese classical pop song, picked out of head writer Kazuki Nakashima's own iTunes collection as he wrote the scripts. So a title here is not a description of the episode, and twelve of the twenty-five have a Wikipedia article of their own about something else entirely. Worth knowing before you go looking one up."
+    ],
+    [
+      "What is deliberately absent.",
+      "The manga adaptation — 17 chapters serialised between October 4, 2013 and February 4, 2015 and collected in three volumes — and the video game, Kill la Kill the Game: IF, released July 25, 2019. Neither is the television run, and this list is the television run and the episode the source files alongside it."
+    ],
+    "Episode numbering, titles and air dates machine-read from Wikipedia's “List of Kill la Kill episodes”; the OVA's release, the home media volumes, the manga and the game from the “Kill la Kill” article; the episode count corroborated against Wikidata Q13637192. Both infoboxes are asserted to say “24 + OVA”, the broadcast numbering asserted contiguous 1 to 24 with the OVA apart from it, and the runtime hunt behind the weights note recorded in tools/data/kill-la-kill-runtime-hunt.json, before this builds."
+  ],
+  "sections": [
+    {
+      "id": "themeone",
+      "title": "Episodes 1–15",
+      "sub": "October 2013 – January 2014 · 15 episodes · the first opening and ending themes",
+      "intro": "Start at the top: this is the broadcast order, which is the only order there is. The two television sections split where the source splits them — the opening and ending themes change at episode 16 — and not at anything that happens.",
+      "open": true,
+      "items": [
+        {
+          "id": "klk-e1",
+          "t": "If Only I Had Thorns Like a Thistle...",
+          "n": "1",
+          "note": "Series premiere"
+        },
+        {
+          "id": "klk-e2",
+          "t": "So Sexy She Might Pass Out",
+          "n": "2"
+        },
+        {
+          "id": "klk-e3",
+          "t": "Junketsu",
+          "n": "3"
+        },
+        {
+          "id": "klk-e4",
+          "t": "Dawn of a Miserable Morning",
+          "n": "4"
+        },
+        {
+          "id": "klk-e5",
+          "t": "Trigger",
+          "n": "5"
+        },
+        {
+          "id": "klk-e6",
+          "t": "Don't Toy With Me on a Whim",
+          "n": "6"
+        },
+        {
+          "id": "klk-e7",
+          "t": "A Loser I Can't Hate",
+          "n": "7"
+        },
+        {
+          "id": "klk-e8",
+          "t": "I Will Wipe My Own Tears",
+          "n": "8"
+        },
+        {
+          "id": "klk-e9",
+          "t": "A Once in a Lifetime Chance",
+          "n": "9"
+        },
+        {
+          "id": "klk-e10",
+          "t": "I Want to Know More About You",
+          "n": "10"
+        },
+        {
+          "id": "klk-e11",
+          "t": "I'm Not Your Cute Woman",
+          "n": "11"
+        },
+        {
+          "id": "klk-e12",
+          "t": "Spit Your Sadness Away",
+          "n": "12"
+        },
+        {
+          "id": "klk-e13",
+          "t": "Crazy for You",
+          "n": "13"
+        },
+        {
+          "id": "klk-e14",
+          "t": "Ride Like the Wind",
+          "n": "14"
+        },
+        {
+          "id": "klk-e15",
+          "t": "Don't Stop Me Now",
+          "n": "15"
+        }
+      ]
+    },
+    {
+      "id": "themetwo",
+      "title": "Episodes 16–24",
+      "sub": "January–March 2014 · 9 episodes · the second opening and ending themes",
+      "items": [
+        {
+          "id": "klk-e16",
+          "t": "The Girl Can't Help It",
+          "n": "16"
+        },
+        {
+          "id": "klk-e17",
+          "t": "Tell Me Why",
+          "n": "17"
+        },
+        {
+          "id": "klk-e18",
+          "t": "Into the Night",
+          "n": "18"
+        },
+        {
+          "id": "klk-e19",
+          "t": "Raindrops Keep Falling on My Head",
+          "n": "19"
+        },
+        {
+          "id": "klk-e20",
+          "t": "Far from the Madding Crowd",
+          "n": "20"
+        },
+        {
+          "id": "klk-e21",
+          "t": "Incomplete",
+          "n": "21"
+        },
+        {
+          "id": "klk-e22",
+          "t": "Tell Me How You Feel",
+          "n": "22"
+        },
+        {
+          "id": "klk-e23",
+          "t": "Imitation Gold",
+          "n": "23"
+        },
+        {
+          "id": "klk-e24",
+          "t": "Past the Infinite Darkness",
+          "n": "24",
+          "note": "Series finale"
+        }
+      ]
+    },
+    {
+      "id": "ova",
+      "title": "The OVA",
+      "sub": "September 2014 · one episode, home media only · optional — skip it and you have still watched the series",
+      "items": [
+        {
+          "id": "klk-ova",
+          "t": "Goodbye Again",
+          "n": "OVA",
+          "note": "Never broadcast — bundled with the ninth home media volume",
+          "opt": true
+        }
+      ]
+    }
+  ]
+}

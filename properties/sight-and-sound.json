@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 50,
   "year": "1924–2019",
-  "blurb": "The 100 greatest films of all time per Sight and Sound's 2022 critics' poll — about 205 hours, ties and all. Watch in any order; the ranks are the argument.",
+  "blurb": "The 100 greatest films of all time per Sight and Sound's 2022 critics' poll — about 208 hours, ties and all. Watch in any order; the ranks are the argument.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -469,7 +469,7 @@
     {
       "id": "b51",
       "title": "51–100",
-      "sub": "49 films · 101 hours",
+      "sub": "49 films · 103 hours",
       "items": [
         {
           "id": "ss-1974-fear-eats-the-soul",
@@ -707,7 +707,7 @@
           "id": "ss-1987-histoire-s-du-cinema",
           "t": "Histoire(s) du Cinéma",
           "n": "=78",
-          "w": 1.5,
+          "w": 4.43,
           "note": "Jean-Luc Godard, 1987"
         },
         {

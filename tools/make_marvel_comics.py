@@ -10,23 +10,23 @@ NOTHING IS TYPED BY HAND except the section prose and which slugs belong. The
 titles, the year ranges and the counts are read back out of the target files,
 because a hand-written count rots the day a list gains an issue.
 
-WHY THE STRIP IS UNWEIGHTED, and why three Marvel lists are missing from it.
-Nathan, CLU-508: "drawing the line based on hours where we can and defaulting
-to items per otherwise is fine. like for comics the amount of items checked
-works." Comics publish no per-issue reading time, so every door here counts
-one and the marks are equal width.
+WHY THE STRIP IS WEIGHTED BY ISSUE COUNT (CLU-545). Comics publish no
+per-issue reading time, so a mark cannot be sized in hours. It can be sized in
+issues, which is the unit Nathan ruled for comics — "issues, not collected
+volumes" — and every Marvel list now weights each row with the number of
+ISSUES it covers: `w: 6` on a `#1-6` row, `w: 1` on a single issue. build.py
+sums the target and puts that on the door, so no number here is typed.
 
-That is also a constraint rather than only a choice. `amazing-spider-man`,
-`x-men` and `civil-war` are the three older Marvel lists that weight every row
-with an ISSUE COUNT (`w: 6` on a `#1-6` row), so build.py derives a real weight
-for a door into them — and it then refuses, correctly, to draw a measured mark
-beside an unmeasured one:
+Until CLU-545 only `amazing-spider-man`, `x-men` and `civil-war` carried those
+weights, and build.py refuses — correctly — to draw a measured mark beside an
+unmeasured one:
 
     "A weighted strip cannot carry an unweighted row - it would draw as a
      default-sized mark beside a real one."
 
-So they cannot sit on this shelf until the twelve lists agree on one unit.
-Leaving them off is the smaller lie: the shelf says nine and holds nine.
+That is the whole reason those three sat off this shelf: not content, weight.
+Giving the rest `w: 1` is what let them on, so the shelf now holds every
+Marvel reading order on the site.
 """
 import json
 import pathlib
@@ -46,22 +46,18 @@ SECTIONS = [
     ("characters", "The character spines",
      "One character or team from the first appearance forward, across every "
      "title they carried. The longest reads on the shelf.",
-     ["fantastic-four", "thor", "captain-america", "black-panther",
-      "daredevil", "wolverine"]),
+     ["fantastic-four", "thor", "amazing-spider-man", "x-men",
+      "captain-america", "black-panther", "daredevil", "wolverine"]),
     ("runs", "Runs and events",
      "One author, one stretch of a single title, or one crossover with its "
      "tie-ins in order rather than assumed.",
-     ["hickman-secret-wars", "cates-venom", "spider-man-after-civil-war"]),
+     ["civil-war", "hickman-secret-wars", "cates-venom",
+      "spider-man-after-civil-war"]),
     ("elsewhere", "A universe of its own",
      "Marvel outside main continuity, complete.",
      ["ultimate-marvel"]),
 ]
 
-
-# The Marvel lists that weight every row with an issue count, which is why a
-# door into them cannot sit on this unweighted strip. Named once, because the
-# note below counts them rather than restating the number.
-WEIGHTED_OFF = ["Amazing Spider-Man", "X-Men", "Civil War"]
 
 WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six",
          7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven",
@@ -153,36 +149,23 @@ def main():
              "order marks the row here. Unticking a row only takes back the "
              "ticks this page put there — anything you had already marked "
              "yourself stays marked."],
-            ["Every mark is the same width, and that is deliberate.",
+            ["A mark's width is issues, not hours.",
              "Comics publish no per-issue reading time, so there are no hours "
-             "to size a mark with. Each door counts one, which makes this "
-             "page read as a shelf of reading orders rather than as several "
-             "thousand issues. The issue count sits on each row instead, "
-             "where it is a fact rather than a guess at how long you will be."],
-            # Both figures in this note are derived. They were spelled out by
-            # hand and read "the nine here" and "the twelve lists" until a
-            # tenth door was added, which is the rot the rest of this file
-            # already avoids by reading every row out of its target.
-            ["%s Marvel lists on the site are not here yet."
-             % WORDS.get(len(WEIGHTED_OFF), str(len(WEIGHTED_OFF))).capitalize(),
-             "%s each weight every row "
-             "with an issue count, and the %s here do not. A strip cannot "
-             "honestly mix a measured mark with an unmeasured one — the "
-             "unmeasured one would draw at a default size beside a real one — "
-             "so the build refuses the mix, and they stay off until the "
-             "%s lists agree on one unit. Spider-Man is on the shelf as "
-             "the list that continues him, not the one that starts him."
-             % (", ".join(WEIGHTED_OFF[:-1]) + " and " + WEIGHTED_OFF[-1],
-                WORDS.get(total, str(total)),
-                WORDS.get(total + len(WEIGHTED_OFF),
-                          str(total + len(WEIGHTED_OFF))))],
+             "to size a mark with — but there are issues, and every Marvel "
+             "list counts in them. Each door is drawn as wide as the number "
+             "of issues in the order it opens, summed by the build out of "
+             "that list's own rows rather than typed here, so a sixty-year "
+             "spine reads wider than a three-year run. The count sits on the "
+             "row as text as well."],
             ["Where these overlap, and where they do not.",
              "Fantastic Four stops one issue short of Hickman, so it and "
              "Everything Dies meet without repeating a row. Spider-Man After "
              "Civil War starts where Amazing Spider-Man stops. An event list "
              "does cross several of these spines by design — that is what an "
              "event is — which is why ticking one list here never reaches "
-             "into another."],
+             "into another. The three Spider-Man doors chain rather than "
+             "overlap: Amazing Spider-Man stops at #528, Civil War carries "
+             "#529-538, and After Civil War picks up at #539."],
         ],
         "sections": [
             {"id": sid, "title": stitle, "sub": sub, "items": items}

@@ -1,0 +1,188 @@
+{
+  "slug": "hellsing-ultimate",
+  "title": "Hellsing Ultimate",
+  "subtitle": "the ten OVAs, and not the 2001 series",
+  "kind": "anime",
+  "popularity": 62,
+  "year": "2006–2012",
+  "blurb": "Ten OVAs released one at a time over seven years, in release order — 8 hours of them, and no two the same length. The 2001 television series is a different adaptation of the same manga and is not here.",
+  "unit": {
+    "one": "OVA",
+    "many": "OVAs"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#8E1B1B",
+  "accentDark": "#FF7B7B",
+  "tiers": false,
+  "notes": [
+    [
+      "Ten OVAs, and no two of them the same length.",
+      "The shortest runs 42 minutes and the longest 68, and the ten together run 493 — so the marks on the strip are drawn to the length of each one rather than to an average. Every figure is the Runtime column of the source's own OVA table, which publishes one per episode. The series infobox states only the spread, “42–68 minutes”, and a spread is never used as a weight here."
+    ],
+    [
+      "The 2001 television series is not on this list, and that is a decision.",
+      "Hellsing Ultimate and the thirteen-episode Hellsing that Gonzo made in 2001 are two adaptations of one manga, not two halves of one story. The source says the OVA episodes “more closely follow the source manga and differ from the first series”, and describes the OVA as “more faithful to the original manga than the TV series”. Finishing this list therefore leaves nothing half-watched. The second reason is arithmetic: not one per-episode runtime for the 2001 series is published anywhere (the next note is the hunt), and on a weighted list a row with no weight silently counts as a full hour — thirteen of them would add thirteen invented hours to an eight-hour list. The decision is one line in tools/make_hellsing-ultimate.py if it is ever reversed: the thirteen rows are already harvested, their ids are namespaced apart from these, and the generator refuses to ship them until somebody supplies a runtime with a source attached."
+    ],
+    [
+      "What the hunt for the 2001 series' runtimes found, which was nothing.",
+      "No episode of it has an article of its own: all thirteen titles were asked for in three forms each, 45 names in all, and the eight that resolve to anything resolve to other subjects entirely — a punk band, a racehorse, an album, an article about duelling, one about training facilities and three disambiguation pages — and not one of them carries a duration. No episode has a Wikidata item, so there is no per-episode duration statement to read. The series item Q951078 states thirteen episodes and no duration at all. There is no season article to hold a runtime column, the episode table has no runtime field for those thirteen rows, and the series infobox has no runtime field either. The only duration anywhere in the franchise's Wikidata is 50 minutes on the OVA item Q2750339 — one series-level figure, which the per-episode table already beats ten times over."
+    ],
+    [
+      "Hellsing: The Dawn is optional, and its three rows weigh a floor rather than a figure.",
+      "Three shorts, one inside the limited edition of each of the last three volumes — the source: “Each limited edition of the last three episodes' home video release included an episode of Hellsing: The Dawn.” They are a separate production with their own studio and their own infobox, and of the prequel manga behind them the source says “the series remains incomplete”, so they sit here marked optional. Their length is the one number on this list the source will not give per episode: it publishes “6–9 minutes” for all three together and nothing for any one of them, and there is no Wikidata item for the shorts at all. Each therefore weighs 6 minutes, the bottom of that range, which understates the section by at most 9 minutes rather than inventing three numbers. 18 of the list's 511 weighted minutes are these three rows."
+    ],
+    [
+      "Where it ran, if you saw it on television.",
+      "The source: “In 2014, Hellsing Ultimate aired on US television via Adult Swim's Toonami programming block, starting on September 13.” That block is where this list came from. The 2001 series had its own American airing years earlier, dubbed on Encore Action from October to December 2003, which is the other reason the two get confused."
+    ],
+    [
+      "What else is deliberately absent.",
+      "The manga, ten volumes, and the six-chapter prequel manga — both print, and this is a watch list. The Crossfire drama CD that shipped with the sixth OVA, which is audio: the source's own line is “OVA 6 features a drama CD of Crossfire.” And the 2001 television series, for the two reasons above."
+    ],
+    "Titles, numbering, release dates and every per-episode runtime machine-read from Wikipedia's List of Hellsing episodes; the episode counts, studios, release spans and both runtime ranges from the infoboxes on the Hellsing article; the runtime hunt also asked Wikidata, and every question it asked is recorded in tools/data/hellsing-episodes.json."
+  ],
+  "sections": [
+    {
+      "id": "satelight",
+      "title": "Hellsing I–IV",
+      "sub": "February 2006 to February 2008 · Satelight · 4 episodes · 197 minutes",
+      "items": [
+        {
+          "id": "hsu-ova-1",
+          "t": "Hellsing I",
+          "n": "1",
+          "w": 0.85,
+          "note": "51 min · Japan, February 10, 2006"
+        },
+        {
+          "id": "hsu-ova-2",
+          "t": "Hellsing II",
+          "n": "2",
+          "w": 0.72,
+          "note": "43 min · Japan, August 25, 2006"
+        },
+        {
+          "id": "hsu-ova-3",
+          "t": "Hellsing III",
+          "n": "3",
+          "w": 0.78,
+          "note": "47 min · Japan, April 4, 2007"
+        },
+        {
+          "id": "hsu-ova-4",
+          "t": "Hellsing IV",
+          "n": "4",
+          "w": 0.93,
+          "note": "56 min · Japan, February 22, 2008"
+        }
+      ],
+      "open": true,
+      "links": [
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_Hellsing_episodes"
+        }
+      ],
+      "intro": "Ten OVAs, released one volume at a time between 2006 and 2012 by three studios in turn. This is the adaptation that follows the manga — the source calls it “more faithful to the original manga than the TV series” — and no two volumes run the same length, so each mark on the strip is drawn to the runtime the source publishes for that volume. Satelight animated these first four."
+    },
+    {
+      "id": "madhouse",
+      "title": "Hellsing V–VII",
+      "sub": "November 2008 to December 2009 · Madhouse · 3 episodes · 131 minutes",
+      "items": [
+        {
+          "id": "hsu-ova-5",
+          "t": "Hellsing V",
+          "n": "5",
+          "w": 0.73,
+          "note": "44 min · Japan, November 21, 2008"
+        },
+        {
+          "id": "hsu-ova-6",
+          "t": "Hellsing VI",
+          "n": "6",
+          "w": 0.7,
+          "note": "42 min · Japan, July 24, 2009"
+        },
+        {
+          "id": "hsu-ova-7",
+          "t": "Hellsing VII",
+          "n": "7",
+          "w": 0.75,
+          "note": "45 min · Japan, December 23, 2009"
+        }
+      ]
+    },
+    {
+      "id": "graphinica",
+      "title": "Hellsing VIII–X",
+      "sub": "July 2011 to December 2012 · Graphinica · 3 episodes · 165 minutes",
+      "items": [
+        {
+          "id": "hsu-ova-8",
+          "t": "Hellsing VIII",
+          "n": "8",
+          "w": 0.82,
+          "note": "49 min · Japan, July 27, 2011"
+        },
+        {
+          "id": "hsu-ova-9",
+          "t": "Hellsing IX",
+          "n": "9",
+          "w": 0.8,
+          "note": "48 min · Japan, February 15, 2012"
+        },
+        {
+          "id": "hsu-ova-10",
+          "t": "Hellsing X",
+          "n": "10",
+          "w": 1.13,
+          "note": "68 min · Japan, December 26, 2012"
+        }
+      ]
+    },
+    {
+      "id": "dawn",
+      "title": "Hellsing: The Dawn",
+      "sub": "July 2011 to December 2012 · three shorts, one inside each of the last three limited editions · optional",
+      "intro": "A separate production from a separate prequel, bundled with the last three volumes rather than released on its own. Optional here, and the only rows on the list whose length the source does not publish one by one — see the note below the list.",
+      "links": [
+        {
+          "label": "The Dawn on the episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_Hellsing_episodes#Hellsing:_The_Dawn"
+        }
+      ],
+      "items": [
+        {
+          "id": "hsu-dawn-1",
+          "t": "Hellsing: The Dawn Special 1",
+          "n": "1",
+          "w": 0.1,
+          "opt": true,
+          "note": "Shipped inside the limited edition of Hellsing VIII"
+        },
+        {
+          "id": "hsu-dawn-2",
+          "t": "Hellsing: The Dawn Special 2",
+          "n": "2",
+          "w": 0.1,
+          "opt": true,
+          "note": "Shipped inside the limited edition of Hellsing IX"
+        },
+        {
+          "id": "hsu-dawn-3",
+          "t": "Hellsing: The Dawn Special 3 (final)",
+          "n": "3",
+          "w": 0.1,
+          "opt": true,
+          "note": "Shipped inside the limited edition of Hellsing X"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "slug": "cardcaptor-sakura",
+  "title": "Cardcaptor Sakura",
+  "subtitle": "the 1998–2000 run, with each film where it came out",
+  "kind": "anime & films",
+  "popularity": 62,
+  "year": "1998–2000",
+  "blurb": "Madhouse's 70-episode run in its original order, with each film where it was released — about 31 hours.",
+  "unit": {
+    "one": "entry",
+    "many": "entries"
+  },
+  "verb": {
+    "base": "watch",
+    "past": "watched",
+    "ing": "watching"
+  },
+  "itemOrder": "number-first",
+  "accent": "#C02A8A",
+  "accentDark": "#F8D0E8",
+  "tiers": false,
+  "notes": [
+    [
+      "Seventy episodes, both films, and no Clear Card.",
+      "This is the original run: three seasons on NHK BS2 between April 7, 1998 and March 21, 2000, plus the two feature films. Clear Card — an OVA in 2017 and a 22-episode series the year after, 19 years after this run started — is a separate adaptation with its own episode list, and the source records its own sequel as announced in 2023 with no release date attached, so a Clear Card section could not be complete on the day it shipped. It belongs on a page of its own; nothing here would move if one is added."
+    ],
+    [
+      "Each film sits where it came out.",
+      "The first was released on August 21, 1999, between the second season's last episode and the third season's first, and it is placed there rather than at the end — that is where it came out and where the order wants it. The second came out on July 15, 2000, 116 days after the last episode, and closes the list."
+    ],
+    [
+      "Weighted, and the episode figure is ours, not the source's.",
+      "Every episode weighs 24 minutes. That is this catalogue's figure for a half-hour anime slot, the same one the Urusei Yatsura and Gundam lists use, and it is explicitly not a number the source states — because there is no per-episode number anywhere to state, and that was checked before this was written rather than assumed. Not one of the 70 episode entries carries a running-time field, the table's only extra column being the Canadian airdate. No episode title is even a link, and none of the 70 has a page of its own — not an article, not a redirect, nothing. There is no season article either: the three season titles that do exist are redirects back to the same episode list. Three Wikidata items are in play — the manga, the episode list, and the anime series' own item, which no English article links and which only a Wikidata query turned up — and not one of the three carries a duration or declares any parts; of the 53 items that claim to belong to the series, none is an episode and none has a duration either, because they are characters and cards. The series infobox has no runtime field at all, unlike Clear Card's, which states 27 minutes for its OVA. And neither article gives a running time in prose. Weighting is all or nothing here — a row with no weight silently counts as a full hour — so it is one disclosed figure for every episode, 28 hours of the total, with the films' own published lengths on top."
+    ],
+    [
+      "The films carry their own runtimes.",
+      "83 minutes and 82 minutes, each read from its own article's infobox, where each is cited to eiga.com. Wikidata gives both films 79 minutes, the same figure twice, which cannot be right for both — so the bar measures the infobox, which is this catalogue's rule. The 10-minute short that screened with the second film is a row of its own, marked optional, because the film's article counts it separately: 82 minutes for the film, 10 for the short, 92 for the programme."
+    ],
+    [
+      "The three bonus video diaries are not listed.",
+      "Tomoyo's Video Diary came in three parts, given away against proof of purchase of the home-video volumes rather than broadcast. The source cannot date them — it says the dates it prints are the release dates of the last volume you had to buy, and that the real date \"is not known\" — and no length is published for any of the three. On a weighted list there is nothing honest to weigh them with, so they are named here instead of listed."
+    ],
+    [
+      "Cardcaptors is this show, cut about.",
+      "Every row carries its Cardcaptors title, because that is the name most English-speaking viewers met the episode under. Nelvana dubbed all 70 of them. The US broadcast was 39 episodes long: it left 28 of the 70 out completely, cut three pairs together into one, recut three more across two, and reordered the rest. A row says when it was not in that broadcast and when it was merged. This list follows the original Japanese order throughout, and its numbers are the original ones."
+    ],
+    "Titles, air dates, the US broadcast numbers and the Cardcaptors titles machine-read from Wikipedia's List of Cardcaptor Sakura episodes; the season counts and dates cross-checked against that article's own prose and both infoboxes, and each film's date and runtime read from its own article."
+  ],
+  "sections": [
+    {
+      "id": "s1",
+      "title": "Season 1",
+      "sub": "1998 · 35 episodes · NHK BS2",
+      "links": [
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_Cardcaptor_Sakura_episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "ccs-e1",
+          "t": "Sakura and the Mysterious Magic Book",
+          "n": "1",
+          "w": 0.4,
+          "note": "Cardcaptors: \"One Fateful Day\" · cut together with episode 41 as US 21"
+        },
+        {
+          "id": "ccs-e2",
+          "t": "Sakura's Wonderful Friend",
+          "n": "2",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Partners in Crime\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e3",
+          "t": "Sakura's Heart-Racing First Date",
+          "n": "3",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Allies\""
+        },
+        {
+          "id": "ccs-e4",
+          "t": "Sakura's Tiring Sunday",
+          "n": "4",
+          "w": 0.4,
+          "note": "Cardcaptors: \"An Unexpected Find\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e5",
+          "t": "Sakura, Panda, and a Cute Shop",
+          "n": "5",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Trouble at Twin Bells\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e6",
+          "t": "Sakura and Memories of Her Mother",
+          "n": "6",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Seeing Is Believing\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e7",
+          "t": "Sakura's First Attempt as a Thief",
+          "n": "7",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Mysterious Painting\""
+        },
+        {
+          "id": "ccs-e8",
+          "t": "Sakura's Rival Appears",
+          "n": "8",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Sakura's Rival\""
+        },
+        {
+          "id": "ccs-e9",
+          "t": "Sakura and the Mysterious Brooch",
+          "n": "9",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Double-Edged Sword\""
+        },
+        {
+          "id": "ccs-e10",
+          "t": "Sakura and the Sports Day of Flowers",
+          "n": "10",
+          "w": 0.4,
+          "note": "Cardcaptors: \"An Unexpected Reunion\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e11",
+          "t": "Sakura, Tomoyo, and a Mansion",
+          "n": "11",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Special Box\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e12",
+          "t": "Sakura's Never-Ending Day",
+          "n": "12",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Time and Again\""
+        },
+        {
+          "id": "ccs-e13",
+          "t": "Sakura and the Elephant's Test of Strength",
+          "n": "13",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Power's Ploy\""
+        },
+        {
+          "id": "ccs-e14",
+          "t": "Sakura, Toya, and Cinderella",
+          "n": "14",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Play Misty for Tori\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e15",
+          "t": "Sakura and Kero's Big Fight",
+          "n": "15",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Sakura and Kero's Big Fight\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e16",
+          "t": "Sakura and the Rainbow of Memories",
+          "n": "16",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Summer House\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e17",
+          "t": "Sakura's Scary Test of Courage",
+          "n": "17",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Cave\""
+        },
+        {
+          "id": "ccs-e18",
+          "t": "Sakura, Yukito, and the Summer Festival",
+          "n": "18",
+          "w": 0.4,
+          "note": "Cardcaptors: \"A Fair to Remember\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e19",
+          "t": "Sakura and the Summer Holiday Homework",
+          "n": "19",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Nothing to Report\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e20",
+          "t": "Transfer Student vs. Sakura",
+          "n": "20",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The New Rival\""
+        },
+        {
+          "id": "ccs-e21",
+          "t": "Sakura's Long Marathon Race",
+          "n": "21",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Long Marathon\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e22",
+          "t": "Sakura and Her Kind Father",
+          "n": "22",
+          "w": 0.4,
+          "note": "Cardcaptors: \"No Time for Sleep\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e23",
+          "t": "Sakura, Tomoyo, and the Wonderful Song",
+          "n": "23",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Practice Makes Perfect\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e24",
+          "t": "Sakura's Little Adventure",
+          "n": "24",
+          "w": 0.4,
+          "note": "Cardcaptors: \"No Problem Too Small\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e25",
+          "t": "Sakura and One More Sakura",
+          "n": "25",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Double Take\""
+        },
+        {
+          "id": "ccs-e26",
+          "t": "Sakura and the Wonderful Teacher",
+          "n": "26",
+          "w": 0.4,
+          "note": "Cardcaptors: \"No Way Out\""
+        },
+        {
+          "id": "ccs-e27",
+          "t": "Sakura and the Shrine of Memories",
+          "n": "27",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Return to the Future\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e28",
+          "t": "Sakura and the Enchanted Cards",
+          "n": "28",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Buyer Beware\""
+        },
+        {
+          "id": "ccs-e29",
+          "t": "Sakura's Sweet Cooking",
+          "n": "29",
+          "w": 0.4,
+          "note": "Cardcaptors: \"How Sweet It Is\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e30",
+          "t": "Sakura and the Injured Card",
+          "n": "30",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Race\""
+        },
+        {
+          "id": "ccs-e31",
+          "t": "Sakura and the Nameless Book",
+          "n": "31",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Dragon Slayer\""
+        },
+        {
+          "id": "ccs-e32",
+          "t": "Sakura, Kero, and Syaoran",
+          "n": "32",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Switch\""
+        },
+        {
+          "id": "ccs-e33",
+          "t": "Sakura's Freezing Ice Skating",
+          "n": "33",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Ice Breaker\""
+        },
+        {
+          "id": "ccs-e34",
+          "t": "Sakura, Yukito, and the Midday Moon",
+          "n": "34",
+          "w": 0.4,
+          "note": "Cardcaptors: \"By the Light of the Full Moon\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e35",
+          "t": "Sakura's Wonderful Christmas",
+          "n": "35",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Third Element\""
+        }
+      ],
+      "open": true,
+      "intro": "A card an episode, a costume an episode, and a fourth-grader who opened a book she should not have. Madhouse made it for NHK's satellite channel and it ran weekly."
+    },
+    {
+      "id": "s2",
+      "title": "Season 2",
+      "sub": "1999 · 11 episodes · NHK BS2",
+      "links": [
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_Cardcaptor_Sakura_episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "ccs-e36",
+          "t": "Sakura and the Snowy New School Term",
+          "n": "36",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Stormy Weather\""
+        },
+        {
+          "id": "ccs-e37",
+          "t": "Sakura and Tomoyo's Lost Voice",
+          "n": "37",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Show Must Go On\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e38",
+          "t": "Sakura's Fun Strawberry Picking Adventure",
+          "n": "38",
+          "w": 0.4,
+          "note": "Cardcaptors: \"A Berry Strange Day\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e39",
+          "t": "Sakura's Dizzy Fever Day",
+          "n": "39",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Under the Weather\""
+        },
+        {
+          "id": "ccs-e40",
+          "t": "Sakura and the Sakura from the Dream",
+          "n": "40",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Dream a Little Dream\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e41",
+          "t": "Sakura, Syaoran, and the Sea of Sand",
+          "n": "41",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Sands of Time\" · cut together with episode 1 as US 21"
+        },
+        {
+          "id": "ccs-e42",
+          "t": "Sakura and the Blacked Out School Arts Festival",
+          "n": "42",
+          "w": 0.4,
+          "note": "Cardcaptors: \"A Strange Intermission\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e43",
+          "t": "Sakura and Farewell to Meiling",
+          "n": "43",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Meilin's Story\""
+        },
+        {
+          "id": "ccs-e44",
+          "t": "Sakura, Kero, and the Mysterious Teacher",
+          "n": "44",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Last Card (1)\""
+        },
+        {
+          "id": "ccs-e45",
+          "t": "Sakura and the Final Clow Card",
+          "n": "45",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Last Card (2)\""
+        },
+        {
+          "id": "ccs-e46",
+          "t": "Sakura and the Final Judgment",
+          "n": "46",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Final Judgement\""
+        }
+      ]
+    },
+    {
+      "id": "film1",
+      "title": "The first film",
+      "sub": "August 1999 · between the seasons · 83 minutes",
+      "intro": "It reached cinemas between the second and third seasons, so it sits in that gap here rather than being parked with the other film.",
+      "links": [
+        {
+          "label": "The film",
+          "url": "https://en.wikipedia.org/wiki/Cardcaptor_Sakura:_The_Movie"
+        }
+      ],
+      "items": [
+        {
+          "id": "ccs-film-1",
+          "t": "Cardcaptor Sakura: The Movie",
+          "n": "1999",
+          "w": 1.38,
+          "note": "83 min"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Season 3",
+      "sub": "1999–2000 · 24 episodes · NHK BS2",
+      "links": [
+        {
+          "label": "The episode list",
+          "url": "https://en.wikipedia.org/wiki/List_of_Cardcaptor_Sakura_episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "ccs-e47",
+          "t": "Sakura and the Mysterious Transfer Student",
+          "n": "47",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The New Transfer Student\" · recut across US episodes 24 and 25"
+        },
+        {
+          "id": "ccs-e48",
+          "t": "Sakura and the Awakened Star Key",
+          "n": "48",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Unlocking the Key\" · recut across US episodes 24 and 25"
+        },
+        {
+          "id": "ccs-e49",
+          "t": "Sakura and the Dangerous Piano",
+          "n": "49",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Dangerous Piano\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e50",
+          "t": "Sakura, Syaoran, and the Invisible Threads",
+          "n": "50",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Threads That Bind\" · cut together with episode 51 as US 27"
+        },
+        {
+          "id": "ccs-e51",
+          "t": "Sakura and the Big Teddy Bear",
+          "n": "51",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Attack of the Teddy Bear\" · cut together with episode 50 as US 27"
+        },
+        {
+          "id": "ccs-e52",
+          "t": "Sakura's Sheep Warning",
+          "n": "52",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Trouble at the Park\""
+        },
+        {
+          "id": "ccs-e53",
+          "t": "Sakura and the Panicky Bike",
+          "n": "53",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Running Out of Time\""
+        },
+        {
+          "id": "ccs-e54",
+          "t": "Sakura and the Calendar of Memories",
+          "n": "54",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Calendar of Memories\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e55",
+          "t": "Sakura and Sakura From Wonderland",
+          "n": "55",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Sakura in Wonderland\""
+        },
+        {
+          "id": "ccs-e56",
+          "t": "Sakura, Kero, and the Sweet Meeting",
+          "n": "56",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Spinning Out of Control\""
+        },
+        {
+          "id": "ccs-e57",
+          "t": "Sakura, Syaoran, and the Elevator",
+          "n": "57",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Li's Calling\""
+        },
+        {
+          "id": "ccs-e58",
+          "t": "Sakura and Double Trouble",
+          "n": "58",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Double Trouble\" · scenes of it went into US episode 24"
+        },
+        {
+          "id": "ccs-e59",
+          "t": "Sakura, Tomoyo, and the Ball Trap",
+          "n": "59",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Trapped\""
+        },
+        {
+          "id": "ccs-e60",
+          "t": "Sakura and the Precious Friend",
+          "n": "60",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Just Like Old Times\""
+        },
+        {
+          "id": "ccs-e61",
+          "t": "Sakura, the Cards, and the Presents",
+          "n": "61",
+          "w": 0.4,
+          "note": "Cardcaptors: \"A Present For the Cards\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e62",
+          "t": "Sakura and the Strange Written Fortune",
+          "n": "62",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Sakura's Strange Fortune\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e63",
+          "t": "Sakura, the Pool, and the Huge Wave",
+          "n": "63",
+          "w": 0.4,
+          "note": "Cardcaptors: \"A Wave of Danger\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e64",
+          "t": "Sakura and the Snowy Ski Class",
+          "n": "64",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Slippery Slope\""
+        },
+        {
+          "id": "ccs-e65",
+          "t": "Sakura, Yukito, and the Vanishing Power",
+          "n": "65",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Lights, Camera, Vanish\" · cut together with episode 66 as US 35"
+        },
+        {
+          "id": "ccs-e66",
+          "t": "The Person Sakura Likes the Most",
+          "n": "66",
+          "w": 0.4,
+          "note": "Cardcaptors: \"When Stars Fall\" · cut together with episode 65 as US 35"
+        },
+        {
+          "id": "ccs-e67",
+          "t": "Sakura, Syaoran, and the Tsukimine Shrine",
+          "n": "67",
+          "w": 0.4,
+          "note": "Cardcaptors: \"The Calm Before the Storm\" · not in the US broadcast"
+        },
+        {
+          "id": "ccs-e68",
+          "t": "Sakura, the Past, and Clow Reed",
+          "n": "68",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Sakura's Return to the Past\""
+        },
+        {
+          "id": "ccs-e69",
+          "t": "Sakura Meets Clow Reed",
+          "n": "69",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Revelations (1)\""
+        },
+        {
+          "id": "ccs-e70",
+          "t": "Sakura and Her True Feelings",
+          "n": "70",
+          "w": 0.4,
+          "note": "Cardcaptors: \"Revelations (2)\""
+        }
+      ]
+    },
+    {
+      "id": "film2",
+      "title": "The second film",
+      "sub": "July 2000 · after the last episode · 82 minutes",
+      "links": [
+        {
+          "label": "The film",
+          "url": "https://en.wikipedia.org/wiki/Cardcaptor_Sakura_Movie_2:_The_Sealed_Card"
+        }
+      ],
+      "items": [
+        {
+          "id": "ccs-film-2",
+          "t": "Cardcaptor Sakura Movie 2: The Sealed Card",
+          "n": "2000",
+          "w": 1.37,
+          "note": "82 min"
+        },
+        {
+          "id": "ccs-short-kero",
+          "t": "Leave It to Kero-chan!",
+          "n": "2000",
+          "w": 0.17,
+          "opt": true,
+          "note": "10-minute short · screened with the film, and not counted in its 82 minutes"
+        }
+      ]
+    }
+  ]
+}

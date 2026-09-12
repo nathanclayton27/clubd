@@ -46,637 +46,759 @@
         {
           "id": "u-ultimate-spider-man-1",
           "t": "Ultimate Spider-Man",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-2",
           "t": "Ultimate Spider-Man",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-3",
           "t": "Ultimate Spider-Man",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-4",
           "t": "Ultimate Spider-Man",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-5",
           "t": "Ultimate Spider-Man",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-6",
           "t": "Ultimate Spider-Man",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-7",
           "t": "Ultimate Spider-Man",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-8",
           "t": "Ultimate Spider-Man",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-9",
           "t": "Ultimate Spider-Man",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-10",
           "t": "Ultimate Spider-Man",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-11",
           "t": "Ultimate Spider-Man",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-12",
           "t": "Ultimate Spider-Man",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-13",
           "t": "Ultimate Spider-Man",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-daredevil-elektra-1",
           "t": "Ultimate Daredevil & Elektra",
           "n": "#1",
           "note": "All flashback. You could read it later, when Daredevil turns up in Ultimate Marvel Team-Up; the source prefers it here as an origin.",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-daredevil-elektra-2",
           "t": "Ultimate Daredevil & Elektra",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-daredevil-elektra-3",
           "t": "Ultimate Daredevil & Elektra",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-daredevil-elektra-4",
           "t": "Ultimate Daredevil & Elektra",
           "n": "#4",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-elektra-1",
           "t": "Ultimate Elektra",
           "n": "#1",
           "note": "Another flashback, published well after much of what follows. Neither Daredevil nor Elektra matters much to the Spider-Man, X-Men and Ultimates stories, so this can wait.",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-elektra-2",
           "t": "Ultimate Elektra",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-elektra-3",
           "t": "Ultimate Elektra",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-elektra-4",
           "t": "Ultimate Elektra",
           "n": "#4",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-elektra-5",
           "t": "Ultimate Elektra",
           "n": "#5",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-1",
           "t": "Ultimate Iron Man",
           "n": "#1",
           "note": "Flashback origins the source calls pretty inessential, and which readers have argued are out of continuity outright.",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-2",
           "t": "Ultimate Iron Man",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-3",
           "t": "Ultimate Iron Man",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-4",
           "t": "Ultimate Iron Man",
           "n": "#4",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-5",
           "t": "Ultimate Iron Man",
           "n": "#5",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-ii-1",
           "t": "Ultimate Iron Man II",
           "n": "#1",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-ii-2",
           "t": "Ultimate Iron Man II",
           "n": "#2",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-ii-3",
           "t": "Ultimate Iron Man II",
           "n": "#3",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-ii-4",
           "t": "Ultimate Iron Man II",
           "n": "#4",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-iron-man-ii-5",
           "t": "Ultimate Iron Man II",
           "n": "#5",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-1",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-2",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-3",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-4",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-5",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-6",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-7",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-8",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-1",
           "t": "Ultimate X-Men",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-2",
           "t": "Ultimate X-Men",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-3",
           "t": "Ultimate X-Men",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-4",
           "t": "Ultimate X-Men",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-5",
           "t": "Ultimate X-Men",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-6",
           "t": "Ultimate X-Men",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-14",
           "t": "Ultimate Spider-Man",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-15",
           "t": "Ultimate Spider-Man",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-16",
           "t": "Ultimate Spider-Man",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-17",
           "t": "Ultimate Spider-Man",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-18",
           "t": "Ultimate Spider-Man",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-19",
           "t": "Ultimate Spider-Man",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-20",
           "t": "Ultimate Spider-Man",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-21",
           "t": "Ultimate Spider-Man",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-10",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-11",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-12",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-13",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-14",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-15",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-16",
           "t": "Ultimate Marvel Team-Up",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-7",
           "t": "Ultimate X-Men",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-8",
           "t": "Ultimate X-Men",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-9",
           "t": "Ultimate X-Men",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-10",
           "t": "Ultimate X-Men",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-11",
           "t": "Ultimate X-Men",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-12",
           "t": "Ultimate X-Men",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-13",
           "t": "Ultimate X-Men",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-14",
           "t": "Ultimate X-Men",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-22",
           "t": "Ultimate Spider-Man",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-23",
           "t": "Ultimate Spider-Man",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-24",
           "t": "Ultimate Spider-Man",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-25",
           "t": "Ultimate Spider-Man",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-26",
           "t": "Ultimate Spider-Man",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-27",
           "t": "Ultimate Spider-Man",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "u-ultimates-1",
           "t": "Ultimates",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimates-2",
           "t": "Ultimates",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimates-3",
           "t": "Ultimates",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-15",
           "t": "Ultimate X-Men",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-16",
           "t": "Ultimate X-Men",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-17",
           "t": "Ultimate X-Men",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-18",
           "t": "Ultimate X-Men",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-19",
           "t": "Ultimate X-Men",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-20",
           "t": "Ultimate X-Men",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-28",
           "t": "Ultimate Spider-Man",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-29",
           "t": "Ultimate Spider-Man",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-30",
           "t": "Ultimate Spider-Man",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-31",
           "t": "Ultimate Spider-Man",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-32",
           "t": "Ultimate Spider-Man",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "u-ultimates-4",
           "t": "Ultimates",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimates-5",
           "t": "Ultimates",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimates-6",
           "t": "Ultimates",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimates-7",
           "t": "Ultimates",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimates-8",
           "t": "Ultimates",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimates-9",
           "t": "Ultimates",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimates-10",
           "t": "Ultimates",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimates-11",
           "t": "Ultimates",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimates-12",
           "t": "Ultimates",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimates-13",
           "t": "Ultimates",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-1",
           "t": "Ultimate Fantastic Four",
           "n": "#1",
-          "note": "Did not launch until 2003, well after The Ultimates — the team is mentioned in passing in Ultimates #2 — but the source prefers their origin here."
+          "note": "Did not launch until 2003, well after The Ultimates — the team is mentioned in passing in Ultimates #2 — but the source prefers their origin here.",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-2",
           "t": "Ultimate Fantastic Four",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-3",
           "t": "Ultimate Fantastic Four",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-4",
           "t": "Ultimate Fantastic Four",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-5",
           "t": "Ultimate Fantastic Four",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-6",
           "t": "Ultimate Fantastic Four",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-marvel-team-up-9",
           "t": "Ultimate Marvel Team-Up",
           "n": "#9",
           "note": "Out of continuity. A Fantastic Four story that never lines up with the Ultimate Fantastic Four that followed.",
-          "opt": 1
+          "opt": 1,
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-33",
           "t": "Ultimate Spider-Man",
-          "n": "#33"
+          "n": "#33",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-34",
           "t": "Ultimate Spider-Man",
-          "n": "#34"
+          "n": "#34",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-35",
           "t": "Ultimate Spider-Man",
-          "n": "#35"
+          "n": "#35",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-36",
           "t": "Ultimate Spider-Man",
-          "n": "#36"
+          "n": "#36",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-37",
           "t": "Ultimate Spider-Man",
-          "n": "#37"
+          "n": "#37",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-38",
           "t": "Ultimate Spider-Man",
-          "n": "#38"
+          "n": "#38",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-39",
           "t": "Ultimate Spider-Man",
-          "n": "#39"
+          "n": "#39",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-21",
           "t": "Ultimate X-Men",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-22",
           "t": "Ultimate X-Men",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-23",
           "t": "Ultimate X-Men",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-24",
           "t": "Ultimate X-Men",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-25",
           "t": "Ultimate X-Men",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "u-ultimate-war-1",
           "t": "Ultimate War",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-war-2",
           "t": "Ultimate War",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-war-3",
           "t": "Ultimate War",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-war-4",
           "t": "Ultimate War",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         }
       ],
       "open": true,
@@ -731,387 +853,464 @@
         {
           "id": "u-ultimate-x-men-26",
           "t": "Ultimate X-Men",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-27",
           "t": "Ultimate X-Men",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-28",
           "t": "Ultimate X-Men",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-29",
           "t": "Ultimate X-Men",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-30",
           "t": "Ultimate X-Men",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-31",
           "t": "Ultimate X-Men",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-32",
           "t": "Ultimate X-Men",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-33",
           "t": "Ultimate X-Men",
-          "n": "#33"
+          "n": "#33",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-40",
           "t": "Ultimate Spider-Man",
-          "n": "#40"
+          "n": "#40",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-41",
           "t": "Ultimate Spider-Man",
-          "n": "#41"
+          "n": "#41",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-42",
           "t": "Ultimate Spider-Man",
-          "n": "#42"
+          "n": "#42",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-43",
           "t": "Ultimate Spider-Man",
-          "n": "#43"
+          "n": "#43",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-44",
           "t": "Ultimate Spider-Man",
-          "n": "#44"
+          "n": "#44",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-45",
           "t": "Ultimate Spider-Man",
-          "n": "#45"
+          "n": "#45",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-34",
           "t": "Ultimate X-Men",
-          "n": "#34"
+          "n": "#34",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-35",
           "t": "Ultimate X-Men",
-          "n": "#35"
+          "n": "#35",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-36",
           "t": "Ultimate X-Men",
-          "n": "#36"
+          "n": "#36",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-37",
           "t": "Ultimate X-Men",
-          "n": "#37"
+          "n": "#37",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-38",
           "t": "Ultimate X-Men",
-          "n": "#38"
+          "n": "#38",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-39",
           "t": "Ultimate X-Men",
-          "n": "#39"
+          "n": "#39",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-46",
           "t": "Ultimate Spider-Man",
-          "n": "#46"
+          "n": "#46",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-1",
           "t": "Ultimate Six",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-2",
           "t": "Ultimate Six",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-3",
           "t": "Ultimate Six",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-4",
           "t": "Ultimate Six",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-5",
           "t": "Ultimate Six",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-6",
           "t": "Ultimate Six",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-six-7",
           "t": "Ultimate Six",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-47",
           "t": "Ultimate Spider-Man",
-          "n": "#47"
+          "n": "#47",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-48",
           "t": "Ultimate Spider-Man",
-          "n": "#48"
+          "n": "#48",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-49",
           "t": "Ultimate Spider-Man",
-          "n": "#49"
+          "n": "#49",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-40",
           "t": "Ultimate X-Men",
-          "n": "#40"
+          "n": "#40",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-41",
           "t": "Ultimate X-Men",
-          "n": "#41"
+          "n": "#41",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-42",
           "t": "Ultimate X-Men",
-          "n": "#42"
+          "n": "#42",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-43",
           "t": "Ultimate X-Men",
-          "n": "#43"
+          "n": "#43",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-44",
           "t": "Ultimate X-Men",
-          "n": "#44"
+          "n": "#44",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-45",
           "t": "Ultimate X-Men",
-          "n": "#45"
+          "n": "#45",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-46",
           "t": "Ultimate X-Men",
-          "n": "#46"
+          "n": "#46",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-47",
           "t": "Ultimate X-Men",
-          "n": "#47"
+          "n": "#47",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-48",
           "t": "Ultimate X-Men",
-          "n": "#48"
+          "n": "#48",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-49",
           "t": "Ultimate X-Men",
-          "n": "#49"
+          "n": "#49",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-50",
           "t": "Ultimate X-Men",
-          "n": "#50"
+          "n": "#50",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-51",
           "t": "Ultimate X-Men",
-          "n": "#51"
+          "n": "#51",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-52",
           "t": "Ultimate X-Men",
-          "n": "#52"
+          "n": "#52",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-53",
           "t": "Ultimate X-Men",
-          "n": "#53"
+          "n": "#53",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-50",
           "t": "Ultimate Spider-Man",
-          "n": "#50"
+          "n": "#50",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-51",
           "t": "Ultimate Spider-Man",
-          "n": "#51"
+          "n": "#51",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-52",
           "t": "Ultimate Spider-Man",
-          "n": "#52"
+          "n": "#52",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-53",
           "t": "Ultimate Spider-Man",
-          "n": "#53"
+          "n": "#53",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-54",
           "t": "Ultimate Spider-Man",
-          "n": "#54"
+          "n": "#54",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-55",
           "t": "Ultimate Spider-Man",
-          "n": "#55"
+          "n": "#55",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-56",
           "t": "Ultimate Spider-Man",
-          "n": "#56"
+          "n": "#56",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-57",
           "t": "Ultimate Spider-Man",
-          "n": "#57"
+          "n": "#57",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-58",
           "t": "Ultimate Spider-Man",
-          "n": "#58"
+          "n": "#58",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-59",
           "t": "Ultimate Spider-Man",
-          "n": "#59"
+          "n": "#59",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-7",
           "t": "Ultimate Fantastic Four",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-8",
           "t": "Ultimate Fantastic Four",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-9",
           "t": "Ultimate Fantastic Four",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-10",
           "t": "Ultimate Fantastic Four",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-11",
           "t": "Ultimate Fantastic Four",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-12",
           "t": "Ultimate Fantastic Four",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-13",
           "t": "Ultimate Fantastic Four",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-14",
           "t": "Ultimate Fantastic Four",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-15",
           "t": "Ultimate Fantastic Four",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-16",
           "t": "Ultimate Fantastic Four",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-17",
           "t": "Ultimate Fantastic Four",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-18",
           "t": "Ultimate Fantastic Four",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-60",
           "t": "Ultimate Spider-Man",
-          "n": "#60"
+          "n": "#60",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-61",
           "t": "Ultimate Spider-Man",
-          "n": "#61"
+          "n": "#61",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-62",
           "t": "Ultimate Spider-Man",
-          "n": "#62"
+          "n": "#62",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-63",
           "t": "Ultimate Spider-Man",
-          "n": "#63"
+          "n": "#63",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-64",
           "t": "Ultimate Spider-Man",
-          "n": "#64"
+          "n": "#64",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-65",
           "t": "Ultimate Spider-Man",
-          "n": "#65"
+          "n": "#65",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-66",
           "t": "Ultimate Spider-Man",
-          "n": "#66"
+          "n": "#66",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-67",
           "t": "Ultimate Spider-Man",
-          "n": "#67"
+          "n": "#67",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-68",
           "t": "Ultimate Spider-Man",
-          "n": "#68"
+          "n": "#68",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-69",
           "t": "Ultimate Spider-Man",
-          "n": "#69"
+          "n": "#69",
+          "w": 1
         }
       ],
       "links": [
@@ -1141,399 +1340,478 @@
         {
           "id": "u-ultimate-nightmare-1",
           "t": "Ultimate Nightmare",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-nightmare-2",
           "t": "Ultimate Nightmare",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-nightmare-3",
           "t": "Ultimate Nightmare",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-nightmare-4",
           "t": "Ultimate Nightmare",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-nightmare-5",
           "t": "Ultimate Nightmare",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-54",
           "t": "Ultimate X-Men",
-          "n": "#54"
+          "n": "#54",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-55",
           "t": "Ultimate X-Men",
-          "n": "#55"
+          "n": "#55",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-56",
           "t": "Ultimate X-Men",
-          "n": "#56"
+          "n": "#56",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-57",
           "t": "Ultimate X-Men",
-          "n": "#57"
+          "n": "#57",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-58",
           "t": "Ultimate X-Men",
-          "n": "#58"
+          "n": "#58",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-59",
           "t": "Ultimate X-Men",
-          "n": "#59"
+          "n": "#59",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-60",
           "t": "Ultimate X-Men",
-          "n": "#60"
+          "n": "#60",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-annual-1",
           "t": "Ultimate X-Men Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-70",
           "t": "Ultimate Spider-Man",
-          "n": "#70"
+          "n": "#70",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-71",
           "t": "Ultimate Spider-Man",
-          "n": "#71"
+          "n": "#71",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-72",
           "t": "Ultimate Spider-Man",
-          "n": "#72"
+          "n": "#72",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-73",
           "t": "Ultimate Spider-Man",
-          "n": "#73"
+          "n": "#73",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-74",
           "t": "Ultimate Spider-Man",
-          "n": "#74"
+          "n": "#74",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-75",
           "t": "Ultimate Spider-Man",
-          "n": "#75"
+          "n": "#75",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-76",
           "t": "Ultimate Spider-Man",
-          "n": "#76"
+          "n": "#76",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-77",
           "t": "Ultimate Spider-Man",
-          "n": "#77"
+          "n": "#77",
+          "w": 1
         },
         {
           "id": "u-ultimates-annual-1",
           "t": "Ultimates Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-secret-1",
           "t": "Ultimate Secret",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-secret-2",
           "t": "Ultimate Secret",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-secret-3",
           "t": "Ultimate Secret",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-secret-4",
           "t": "Ultimate Secret",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-vision-0",
           "t": "Ultimate Vision",
           "n": "#0",
-          "note": "The Vision story ran as short strips across the whole line — a piece in Ultimate Spider-Man #86, and so on. Marvel Unlimited has it collected here, which reads far better."
+          "note": "The Vision story ran as short strips across the whole line — a piece in Ultimate Spider-Man #86, and so on. Marvel Unlimited has it collected here, which reads far better.",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-1",
           "t": "Ultimates (v2)",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-2",
           "t": "Ultimates (v2)",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-3",
           "t": "Ultimates (v2)",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-4",
           "t": "Ultimates (v2)",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-5",
           "t": "Ultimates (v2)",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-61",
           "t": "Ultimate X-Men",
-          "n": "#61"
+          "n": "#61",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-62",
           "t": "Ultimate X-Men",
-          "n": "#62"
+          "n": "#62",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-63",
           "t": "Ultimate X-Men",
-          "n": "#63"
+          "n": "#63",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-64",
           "t": "Ultimate X-Men",
-          "n": "#64"
+          "n": "#64",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-65",
           "t": "Ultimate X-Men",
-          "n": "#65"
+          "n": "#65",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-19",
           "t": "Ultimate Fantastic Four",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-20",
           "t": "Ultimate Fantastic Four",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-21",
           "t": "Ultimate Fantastic Four",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-22",
           "t": "Ultimate Fantastic Four",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-23",
           "t": "Ultimate Fantastic Four",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-24",
           "t": "Ultimate Fantastic Four",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-25",
           "t": "Ultimate Fantastic Four",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-26",
           "t": "Ultimate Fantastic Four",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-annual-1",
           "t": "Ultimate Fantastic Four Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-extinction-1",
           "t": "Ultimate Extinction",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-extinction-2",
           "t": "Ultimate Extinction",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-extinction-3",
           "t": "Ultimate Extinction",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-extinction-4",
           "t": "Ultimate Extinction",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-extinction-5",
           "t": "Ultimate Extinction",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-wolverine-vs-hulk-1",
           "t": "Ultimate Wolverine vs. Hulk",
           "n": "#1",
-          "note": "Published well after Ultimates v2, but the source puts it before that run concludes."
+          "note": "Published well after Ultimates v2, but the source puts it before that run concludes.",
+          "w": 1
         },
         {
           "id": "u-ultimate-wolverine-vs-hulk-2",
           "t": "Ultimate Wolverine vs. Hulk",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-wolverine-vs-hulk-3",
           "t": "Ultimate Wolverine vs. Hulk",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-wolverine-vs-hulk-4",
           "t": "Ultimate Wolverine vs. Hulk",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-wolverine-vs-hulk-5",
           "t": "Ultimate Wolverine vs. Hulk",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-wolverine-vs-hulk-6",
           "t": "Ultimate Wolverine vs. Hulk",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-6",
           "t": "Ultimates (v2)",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-7",
           "t": "Ultimates (v2)",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-8",
           "t": "Ultimates (v2)",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-9",
           "t": "Ultimates (v2)",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-10",
           "t": "Ultimates (v2)",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-11",
           "t": "Ultimates (v2)",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-12",
           "t": "Ultimates (v2)",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimates-v2-13",
           "t": "Ultimates (v2)",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-78",
           "t": "Ultimate Spider-Man",
-          "n": "#78"
+          "n": "#78",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-79",
           "t": "Ultimate Spider-Man",
-          "n": "#79"
+          "n": "#79",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-80",
           "t": "Ultimate Spider-Man",
-          "n": "#80"
+          "n": "#80",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-81",
           "t": "Ultimate Spider-Man",
-          "n": "#81"
+          "n": "#81",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-82",
           "t": "Ultimate Spider-Man",
-          "n": "#82"
+          "n": "#82",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-83",
           "t": "Ultimate Spider-Man",
-          "n": "#83"
+          "n": "#83",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-84",
           "t": "Ultimate Spider-Man",
-          "n": "#84"
+          "n": "#84",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-85",
           "t": "Ultimate Spider-Man",
-          "n": "#85"
+          "n": "#85",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-annual-1",
           "t": "Ultimate Spider-Man Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-86",
           "t": "Ultimate Spider-Man",
-          "n": "#86"
+          "n": "#86",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-87",
           "t": "Ultimate Spider-Man",
-          "n": "#87"
+          "n": "#87",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-88",
           "t": "Ultimate Spider-Man",
-          "n": "#88"
+          "n": "#88",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-89",
           "t": "Ultimate Spider-Man",
-          "n": "#89"
+          "n": "#89",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-90",
           "t": "Ultimate Spider-Man",
-          "n": "#90"
+          "n": "#90",
+          "w": 1
         }
       ],
       "links": [
@@ -1587,259 +1865,310 @@
         {
           "id": "u-ultimate-x-men-66",
           "t": "Ultimate X-Men",
-          "n": "#66"
+          "n": "#66",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-67",
           "t": "Ultimate X-Men",
-          "n": "#67"
+          "n": "#67",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-68",
           "t": "Ultimate X-Men",
-          "n": "#68"
+          "n": "#68",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-69",
           "t": "Ultimate X-Men",
-          "n": "#69"
+          "n": "#69",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-70",
           "t": "Ultimate X-Men",
-          "n": "#70"
+          "n": "#70",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-71",
           "t": "Ultimate X-Men",
-          "n": "#71"
+          "n": "#71",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-72",
           "t": "Ultimate X-Men",
-          "n": "#72"
+          "n": "#72",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-73",
           "t": "Ultimate X-Men",
-          "n": "#73"
+          "n": "#73",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-74",
           "t": "Ultimate X-Men",
-          "n": "#74"
+          "n": "#74",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-annual-2",
           "t": "Ultimate X-Men Annual",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-fantastic-four-1",
           "t": "Ultimate X-Men / Fantastic Four",
           "n": "#1",
-          "note": "In Marvel Unlimited this one is filed as “Ultimate X-Men/Fantastic Four”"
+          "note": "In Marvel Unlimited this one is filed as “Ultimate X-Men/Fantastic Four”",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-fantastic-four-2",
           "t": "Ultimate X-Men / Fantastic Four",
           "n": "#2",
-          "note": "and this one as “Ultimate Fantastic Four/X-Men”"
+          "note": "and this one as “Ultimate Fantastic Four/X-Men”",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-27",
           "t": "Ultimate Fantastic Four",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-28",
           "t": "Ultimate Fantastic Four",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-29",
           "t": "Ultimate Fantastic Four",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-30",
           "t": "Ultimate Fantastic Four",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-31",
           "t": "Ultimate Fantastic Four",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-32",
           "t": "Ultimate Fantastic Four",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-annual-2",
           "t": "Ultimate Fantastic Four Annual",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-91",
           "t": "Ultimate Spider-Man",
-          "n": "#91"
+          "n": "#91",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-92",
           "t": "Ultimate Spider-Man",
-          "n": "#92"
+          "n": "#92",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-93",
           "t": "Ultimate Spider-Man",
-          "n": "#93"
+          "n": "#93",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-94",
           "t": "Ultimate Spider-Man",
-          "n": "#94"
+          "n": "#94",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-95",
           "t": "Ultimate Spider-Man",
-          "n": "#95"
+          "n": "#95",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-96",
           "t": "Ultimate Spider-Man",
-          "n": "#96"
+          "n": "#96",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-annual-2",
           "t": "Ultimate Spider-Man Annual",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimates-annual-2",
           "t": "Ultimates Annual",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-97",
           "t": "Ultimate Spider-Man",
-          "n": "#97"
+          "n": "#97",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-98",
           "t": "Ultimate Spider-Man",
-          "n": "#98"
+          "n": "#98",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-99",
           "t": "Ultimate Spider-Man",
-          "n": "#99"
+          "n": "#99",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-100",
           "t": "Ultimate Spider-Man",
-          "n": "#100"
+          "n": "#100",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-101",
           "t": "Ultimate Spider-Man",
-          "n": "#101"
+          "n": "#101",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-102",
           "t": "Ultimate Spider-Man",
-          "n": "#102"
+          "n": "#102",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-103",
           "t": "Ultimate Spider-Man",
-          "n": "#103"
+          "n": "#103",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-104",
           "t": "Ultimate Spider-Man",
-          "n": "#104"
+          "n": "#104",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-105",
           "t": "Ultimate Spider-Man",
-          "n": "#105"
+          "n": "#105",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-1",
           "t": "Ultimate Power",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-2",
           "t": "Ultimate Power",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-3",
           "t": "Ultimate Power",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-4",
           "t": "Ultimate Power",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-5",
           "t": "Ultimate Power",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-6",
           "t": "Ultimate Power",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-7",
           "t": "Ultimate Power",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-8",
           "t": "Ultimate Power",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-power-9",
           "t": "Ultimate Power",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-75",
           "t": "Ultimate X-Men",
-          "n": "#75"
+          "n": "#75",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-76",
           "t": "Ultimate X-Men",
-          "n": "#76"
+          "n": "#76",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-77",
           "t": "Ultimate X-Men",
-          "n": "#77"
+          "n": "#77",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-78",
           "t": "Ultimate X-Men",
-          "n": "#78"
+          "n": "#78",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-79",
           "t": "Ultimate X-Men",
-          "n": "#79"
+          "n": "#79",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-80",
           "t": "Ultimate X-Men",
-          "n": "#80"
+          "n": "#80",
+          "w": 1
         }
       ],
       "links": [
@@ -1889,307 +2218,368 @@
         {
           "id": "u-ultimate-fantastic-four-33",
           "t": "Ultimate Fantastic Four",
-          "n": "#33"
+          "n": "#33",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-34",
           "t": "Ultimate Fantastic Four",
-          "n": "#34"
+          "n": "#34",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-35",
           "t": "Ultimate Fantastic Four",
-          "n": "#35"
+          "n": "#35",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-36",
           "t": "Ultimate Fantastic Four",
-          "n": "#36"
+          "n": "#36",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-37",
           "t": "Ultimate Fantastic Four",
-          "n": "#37"
+          "n": "#37",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-38",
           "t": "Ultimate Fantastic Four",
-          "n": "#38"
+          "n": "#38",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-39",
           "t": "Ultimate Fantastic Four",
-          "n": "#39"
+          "n": "#39",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-40",
           "t": "Ultimate Fantastic Four",
-          "n": "#40"
+          "n": "#40",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-41",
           "t": "Ultimate Fantastic Four",
-          "n": "#41"
+          "n": "#41",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-42",
           "t": "Ultimate Fantastic Four",
-          "n": "#42"
+          "n": "#42",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-43",
           "t": "Ultimate Fantastic Four",
-          "n": "#43"
+          "n": "#43",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-44",
           "t": "Ultimate Fantastic Four",
-          "n": "#44"
+          "n": "#44",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-45",
           "t": "Ultimate Fantastic Four",
-          "n": "#45"
+          "n": "#45",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-46",
           "t": "Ultimate Fantastic Four",
-          "n": "#46"
+          "n": "#46",
+          "w": 1
         },
         {
           "id": "u-ultimate-vision-1",
           "t": "Ultimate Vision",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-vision-2",
           "t": "Ultimate Vision",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-vision-3",
           "t": "Ultimate Vision",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-vision-4",
           "t": "Ultimate Vision",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-vision-5",
           "t": "Ultimate Vision",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-106",
           "t": "Ultimate Spider-Man",
-          "n": "#106"
+          "n": "#106",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-107",
           "t": "Ultimate Spider-Man",
-          "n": "#107"
+          "n": "#107",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-108",
           "t": "Ultimate Spider-Man",
-          "n": "#108"
+          "n": "#108",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-109",
           "t": "Ultimate Spider-Man",
-          "n": "#109"
+          "n": "#109",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-110",
           "t": "Ultimate Spider-Man",
-          "n": "#110"
+          "n": "#110",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-111",
           "t": "Ultimate Spider-Man",
-          "n": "#111"
+          "n": "#111",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-112",
           "t": "Ultimate Spider-Man",
-          "n": "#112"
+          "n": "#112",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-113",
           "t": "Ultimate Spider-Man",
-          "n": "#113"
+          "n": "#113",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-114",
           "t": "Ultimate Spider-Man",
-          "n": "#114"
+          "n": "#114",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-115",
           "t": "Ultimate Spider-Man",
-          "n": "#115"
+          "n": "#115",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-116",
           "t": "Ultimate Spider-Man",
-          "n": "#116"
+          "n": "#116",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-117",
           "t": "Ultimate Spider-Man",
-          "n": "#117"
+          "n": "#117",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-81",
           "t": "Ultimate X-Men",
-          "n": "#81"
+          "n": "#81",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-82",
           "t": "Ultimate X-Men",
-          "n": "#82"
+          "n": "#82",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-83",
           "t": "Ultimate X-Men",
-          "n": "#83"
+          "n": "#83",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-84",
           "t": "Ultimate X-Men",
-          "n": "#84"
+          "n": "#84",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-85",
           "t": "Ultimate X-Men",
-          "n": "#85"
+          "n": "#85",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-86",
           "t": "Ultimate X-Men",
-          "n": "#86"
+          "n": "#86",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-87",
           "t": "Ultimate X-Men",
-          "n": "#87"
+          "n": "#87",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-88",
           "t": "Ultimate X-Men",
-          "n": "#88"
+          "n": "#88",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-89",
           "t": "Ultimate X-Men",
-          "n": "#89"
+          "n": "#89",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-47",
           "t": "Ultimate Fantastic Four",
-          "n": "#47"
+          "n": "#47",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-48",
           "t": "Ultimate Fantastic Four",
-          "n": "#48"
+          "n": "#48",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-49",
           "t": "Ultimate Fantastic Four",
-          "n": "#49"
+          "n": "#49",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-50",
           "t": "Ultimate Fantastic Four",
-          "n": "#50"
+          "n": "#50",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-51",
           "t": "Ultimate Fantastic Four",
-          "n": "#51"
+          "n": "#51",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-52",
           "t": "Ultimate Fantastic Four",
-          "n": "#52"
+          "n": "#52",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-53",
           "t": "Ultimate Fantastic Four",
-          "n": "#53"
+          "n": "#53",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-118",
           "t": "Ultimate Spider-Man",
-          "n": "#118"
+          "n": "#118",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-119",
           "t": "Ultimate Spider-Man",
-          "n": "#119"
+          "n": "#119",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-120",
           "t": "Ultimate Spider-Man",
-          "n": "#120"
+          "n": "#120",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-121",
           "t": "Ultimate Spider-Man",
-          "n": "#121"
+          "n": "#121",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-122",
           "t": "Ultimate Spider-Man",
-          "n": "#122"
+          "n": "#122",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-annual-3",
           "t": "Ultimate Spider-Man Annual",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-54",
           "t": "Ultimate Fantastic Four",
-          "n": "#54"
+          "n": "#54",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-55",
           "t": "Ultimate Fantastic Four",
-          "n": "#55"
+          "n": "#55",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-56",
           "t": "Ultimate Fantastic Four",
-          "n": "#56"
+          "n": "#56",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-57",
           "t": "Ultimate Fantastic Four",
-          "n": "#57"
+          "n": "#57",
+          "w": 1
         },
         {
           "id": "u-ultimate-human-1",
           "t": "Ultimate Human",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-human-2",
           "t": "Ultimate Human",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-human-3",
           "t": "Ultimate Human",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-human-4",
           "t": "Ultimate Human",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         }
       ],
       "links": [
@@ -2227,167 +2617,200 @@
         {
           "id": "u-ultimate-spider-man-123",
           "t": "Ultimate Spider-Man",
-          "n": "#123"
+          "n": "#123",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-124",
           "t": "Ultimate Spider-Man",
-          "n": "#124"
+          "n": "#124",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-125",
           "t": "Ultimate Spider-Man",
-          "n": "#125"
+          "n": "#125",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-126",
           "t": "Ultimate Spider-Man",
-          "n": "#126"
+          "n": "#126",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-127",
           "t": "Ultimate Spider-Man",
-          "n": "#127"
+          "n": "#127",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-128",
           "t": "Ultimate Spider-Man",
-          "n": "#128"
+          "n": "#128",
+          "w": 1
         },
         {
           "id": "u-the-ultimates-v3-1",
           "t": "The Ultimates (v3)",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-the-ultimates-v3-2",
           "t": "The Ultimates (v3)",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-the-ultimates-v3-3",
           "t": "The Ultimates (v3)",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-the-ultimates-v3-4",
           "t": "The Ultimates (v3)",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-the-ultimates-v3-5",
           "t": "The Ultimates (v3)",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-squadron-supreme-1",
           "t": "Squadron Supreme",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-squadron-supreme-2",
           "t": "Squadron Supreme",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-squadron-supreme-3",
           "t": "Squadron Supreme",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-squadron-supreme-4",
           "t": "Squadron Supreme",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-squadron-supreme-5",
           "t": "Squadron Supreme",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-squadron-supreme-6",
           "t": "Squadron Supreme",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-90",
           "t": "Ultimate X-Men",
-          "n": "#90"
+          "n": "#90",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-91",
           "t": "Ultimate X-Men",
-          "n": "#91"
+          "n": "#91",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-92",
           "t": "Ultimate X-Men",
-          "n": "#92"
+          "n": "#92",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-93",
           "t": "Ultimate X-Men",
-          "n": "#93"
+          "n": "#93",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-94",
           "t": "Ultimate X-Men",
-          "n": "#94"
+          "n": "#94",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-95",
           "t": "Ultimate X-Men",
-          "n": "#95"
+          "n": "#95",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-96",
           "t": "Ultimate X-Men",
-          "n": "#96"
+          "n": "#96",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-97",
           "t": "Ultimate X-Men",
-          "n": "#97"
+          "n": "#97",
+          "w": 1
         },
         {
           "id": "u-ultimate-origins-1",
           "t": "Ultimate Origins",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-origins-2",
           "t": "Ultimate Origins",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-origins-3",
           "t": "Ultimate Origins",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-origins-4",
           "t": "Ultimate Origins",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-origins-5",
           "t": "Ultimate Origins",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-hulk-annual-1",
           "t": "Ultimate Hulk Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-fantastic-four-annual-1",
           "t": "Ultimate X-Men/Fantastic Four Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-x-men-annual-1",
           "t": "Ultimate Fantastic Four/X-Men Annual",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         }
       ],
       "links": [
@@ -2433,102 +2856,122 @@
         {
           "id": "u-ultimate-spider-man-129",
           "t": "Ultimate Spider-Man",
-          "n": "#129"
+          "n": "#129",
+          "w": 1
         },
         {
           "id": "u-ultimatum-1",
           "t": "Ultimatum",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-130",
           "t": "Ultimate Spider-Man",
-          "n": "#130"
+          "n": "#130",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-98",
           "t": "Ultimate X-Men",
-          "n": "#98"
+          "n": "#98",
+          "w": 1
         },
         {
           "id": "u-ultimatum-2",
           "t": "Ultimatum",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-58",
           "t": "Ultimate Fantastic Four",
-          "n": "#58"
+          "n": "#58",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-131",
           "t": "Ultimate Spider-Man",
-          "n": "#131"
+          "n": "#131",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-59",
           "t": "Ultimate Fantastic Four",
-          "n": "#59"
+          "n": "#59",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-99",
           "t": "Ultimate X-Men",
-          "n": "#99"
+          "n": "#99",
+          "w": 1
         },
         {
           "id": "u-ultimatum-3",
           "t": "Ultimatum",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-132",
           "t": "Ultimate Spider-Man",
-          "n": "#132"
+          "n": "#132",
+          "w": 1
         },
         {
           "id": "u-ultimate-fantastic-four-60",
           "t": "Ultimate Fantastic Four",
-          "n": "#60"
+          "n": "#60",
+          "w": 1
         },
         {
           "id": "u-ultimate-x-men-100",
           "t": "Ultimate X-Men",
-          "n": "#100"
+          "n": "#100",
+          "w": 1
         },
         {
           "id": "u-ultimatum-4",
           "t": "Ultimatum",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-spider-man-133",
           "t": "Ultimate Spider-Man",
-          "n": "#133"
+          "n": "#133",
+          "w": 1
         },
         {
           "id": "u-ultimatum-5",
           "t": "Ultimatum",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimatum-fantastic-four-requiem-1",
           "t": "Ultimatum: Fantastic Four Requiem",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimatum-x-men-requiem-1",
           "t": "Ultimatum: X-Men Requiem",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimatum-spider-man-requiem-1",
           "t": "Ultimatum: Spider-Man Requiem",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimatum-spider-man-requiem-2",
           "t": "Ultimatum: Spider-Man Requiem",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         }
       ],
       "links": [
@@ -2570,182 +3013,218 @@
         {
           "id": "u-ultimate-comics-x-1",
           "t": "Ultimate Comics X",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-2",
           "t": "Ultimate Comics X",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-3",
           "t": "Ultimate Comics X",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-4",
           "t": "Ultimate Comics X",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-5",
           "t": "Ultimate Comics X",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-armor-wars-1",
           "t": "Ultimate Comics Armor Wars",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-armor-wars-2",
           "t": "Ultimate Comics Armor Wars",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-armor-wars-3",
           "t": "Ultimate Comics Armor Wars",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-armor-wars-4",
           "t": "Ultimate Comics Armor Wars",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-1",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-3",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-4",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-5",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-6",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-1",
           "t": "Ultimate Comics Avengers",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2",
           "t": "Ultimate Comics Avengers",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3",
           "t": "Ultimate Comics Avengers",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-4",
           "t": "Ultimate Comics Avengers",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-5",
           "t": "Ultimate Comics Avengers",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-6",
           "t": "Ultimate Comics Avengers",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-7",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-8",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-9",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-10",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-11",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-12",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-13",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-14",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-15",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2-1",
           "t": "Ultimate Comics Avengers 2",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2-2",
           "t": "Ultimate Comics Avengers 2",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2-3",
           "t": "Ultimate Comics Avengers 2",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2-4",
           "t": "Ultimate Comics Avengers 2",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2-5",
           "t": "Ultimate Comics Avengers 2",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-2-6",
           "t": "Ultimate Comics Avengers 2",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         }
       ],
       "links": [
@@ -2779,157 +3258,188 @@
         {
           "id": "u-ultimate-enemy-1",
           "t": "Ultimate Enemy",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-enemy-2",
           "t": "Ultimate Enemy",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-enemy-3",
           "t": "Ultimate Enemy",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-enemy-4",
           "t": "Ultimate Enemy",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-mystery-1",
           "t": "Ultimate Mystery",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-mystery-2",
           "t": "Ultimate Mystery",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-mystery-3",
           "t": "Ultimate Mystery",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-mystery-4",
           "t": "Ultimate Mystery",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-doom-1",
           "t": "Ultimate Doom",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-doom-2",
           "t": "Ultimate Doom",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-doom-3",
           "t": "Ultimate Doom",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-doom-4",
           "t": "Ultimate Doom",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-captain-america-1",
           "t": "Ultimate Comics Captain America",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-captain-america-2",
           "t": "Ultimate Comics Captain America",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-captain-america-3",
           "t": "Ultimate Comics Captain America",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-captain-america-4",
           "t": "Ultimate Comics Captain America",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-new-ultimates-1",
           "t": "Ultimate Comics New Ultimates",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-new-ultimates-2",
           "t": "Ultimate Comics New Ultimates",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-new-ultimates-3",
           "t": "Ultimate Comics New Ultimates",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-new-ultimates-4",
           "t": "Ultimate Comics New Ultimates",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-new-ultimates-5",
           "t": "Ultimate Comics New Ultimates",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-thor-1",
           "t": "Ultimate Comics Thor",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-thor-2",
           "t": "Ultimate Comics Thor",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-thor-3",
           "t": "Ultimate Comics Thor",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-thor-4",
           "t": "Ultimate Comics Thor",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3-1",
           "t": "Ultimate Comics Avengers 3",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3-2",
           "t": "Ultimate Comics Avengers 3",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3-3",
           "t": "Ultimate Comics Avengers 3",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3-4",
           "t": "Ultimate Comics Avengers 3",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3-5",
           "t": "Ultimate Comics Avengers 3",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-3-6",
           "t": "Ultimate Comics Avengers 3",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         }
       ],
       "links": [
@@ -2972,198 +3482,237 @@
           "id": "u-ultimate-comics-spider-man-150",
           "t": "Ultimate Comics Spider-Man",
           "n": "#150",
-          "note": "The numbering jumps back to the original count for the 150th issue."
+          "note": "The numbering jumps back to the original count for the 150th issue.",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-151",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#151"
+          "n": "#151",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-152",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#152"
+          "n": "#152",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-153",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#153"
+          "n": "#153",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-154",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#154"
+          "n": "#154",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-155",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#155"
+          "n": "#155",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-156",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#156"
+          "n": "#156",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-vs-new-ultimates-1",
           "t": "Ultimate Comics Avengers vs. New Ultimates",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-vs-new-ultimates-2",
           "t": "Ultimate Comics Avengers vs. New Ultimates",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-157",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#157"
+          "n": "#157",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-vs-new-ultimates-3",
           "t": "Ultimate Comics Avengers vs. New Ultimates",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-vs-new-ultimates-4",
           "t": "Ultimate Comics Avengers vs. New Ultimates",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-158",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#158"
+          "n": "#158",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-159",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#159"
+          "n": "#159",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-160",
           "t": "Ultimate Comics Spider-Man",
-          "n": "#160"
+          "n": "#160",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-vs-new-ultimates-5",
           "t": "Ultimate Comics Avengers vs. New Ultimates",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-avengers-vs-new-ultimates-6",
           "t": "Ultimate Comics Avengers vs. New Ultimates",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-fallout-1",
           "t": "Ultimate Fallout",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-fallout-2",
           "t": "Ultimate Fallout",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-fallout-3",
           "t": "Ultimate Fallout",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-fallout-4",
           "t": "Ultimate Fallout",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-fallout-5",
           "t": "Ultimate Fallout",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-fallout-6",
           "t": "Ultimate Fallout",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-1",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-2",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-3",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-4",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-5",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-7",
           "t": "Ultimate Comics Spider-Man (2011)",
           "n": "#7",
-          "note": "The source skips #6 here; it is not listed anywhere in the order."
+          "note": "The source skips #6 here; it is not listed anywhere in the order.",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-8",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-9",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-10",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-11",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-12",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-spider-men-1",
           "t": "Spider-Men",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-spider-men-2",
           "t": "Spider-Men",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-spider-men-3",
           "t": "Spider-Men",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-spider-men-4",
           "t": "Spider-Men",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-spider-men-5",
           "t": "Spider-Men",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         }
       ],
       "links": [
@@ -3197,147 +3746,176 @@
         {
           "id": "u-ultimate-comics-hawkeye-1",
           "t": "Ultimate Comics Hawkeye",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-hawkeye-2",
           "t": "Ultimate Comics Hawkeye",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-hawkeye-3",
           "t": "Ultimate Comics Hawkeye",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-hawkeye-4",
           "t": "Ultimate Comics Hawkeye",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-1",
           "t": "Ultimate Comics Ultimates",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-2",
           "t": "Ultimate Comics Ultimates",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-3",
           "t": "Ultimate Comics Ultimates",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-4",
           "t": "Ultimate Comics Ultimates",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-5",
           "t": "Ultimate Comics Ultimates",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-6",
           "t": "Ultimate Comics Ultimates",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-1",
           "t": "Ultimate Comics X-Men",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-2",
           "t": "Ultimate Comics X-Men",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-3",
           "t": "Ultimate Comics X-Men",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-4",
           "t": "Ultimate Comics X-Men",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-5",
           "t": "Ultimate Comics X-Men",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-6",
           "t": "Ultimate Comics X-Men",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-7",
           "t": "Ultimate Comics X-Men",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-8",
           "t": "Ultimate Comics X-Men",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-9",
           "t": "Ultimate Comics X-Men",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-10",
           "t": "Ultimate Comics X-Men",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-11",
           "t": "Ultimate Comics X-Men",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-12",
           "t": "Ultimate Comics X-Men",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-13",
           "t": "Ultimate Comics X-Men",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-7",
           "t": "Ultimate Comics Ultimates",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-8",
           "t": "Ultimate Comics Ultimates",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-9",
           "t": "Ultimate Comics Ultimates",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-10",
           "t": "Ultimate Comics Ultimates",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-11",
           "t": "Ultimate Comics Ultimates",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-12",
           "t": "Ultimate Comics Ultimates",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         }
       ],
       "links": [
@@ -3363,97 +3941,116 @@
         {
           "id": "u-ultimate-comics-x-men-14",
           "t": "Ultimate Comics X-Men",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-13",
           "t": "Ultimate Comics Ultimates",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-14",
           "t": "Ultimate Comics Ultimates",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-13",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-14",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-15",
           "t": "Ultimate Comics X-Men",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-15",
           "t": "Ultimate Comics Ultimates",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-15",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-16",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-16",
           "t": "Ultimate Comics Ultimates",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-16",
           "t": "Ultimate Comics X-Men",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-17",
           "t": "Ultimate Comics X-Men",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-17",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-17",
           "t": "Ultimate Comics Ultimates",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-18",
           "t": "Ultimate Comics Ultimates",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-18",
           "t": "Ultimate Comics X-Men",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-18.1",
           "t": "Ultimate Comics X-Men",
-          "n": "#18.1"
+          "n": "#18.1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-18",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-18.1",
           "t": "Ultimate Comics Ultimates",
-          "n": "#18.1"
+          "n": "#18.1",
+          "w": 1
         }
       ],
       "links": [
@@ -3479,232 +4076,278 @@
         {
           "id": "u-ultimate-comics-spider-man-2011-16.1",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#16.1"
+          "n": "#16.1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-19",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-20",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-21",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-22",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-19",
           "t": "Ultimate Comics X-Men",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-20",
           "t": "Ultimate Comics X-Men",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-21",
           "t": "Ultimate Comics X-Men",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-22",
           "t": "Ultimate Comics X-Men",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-19",
           "t": "Ultimate Comics Ultimates",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-20",
           "t": "Ultimate Comics Ultimates",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-21",
           "t": "Ultimate Comics Ultimates",
-          "n": "#21"
+          "n": "#21",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-22",
           "t": "Ultimate Comics Ultimates",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-23",
           "t": "Ultimate Comics Ultimates",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-24",
           "t": "Ultimate Comics Ultimates",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-wolverine-1",
           "t": "Ultimate Comics Wolverine",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-wolverine-2",
           "t": "Ultimate Comics Wolverine",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-wolverine-3",
           "t": "Ultimate Comics Wolverine",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-wolverine-4",
           "t": "Ultimate Comics Wolverine",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-23",
           "t": "Ultimate Comics X-Men",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-24",
           "t": "Ultimate Comics X-Men",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-25",
           "t": "Ultimate Comics X-Men",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-26",
           "t": "Ultimate Comics X-Men",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-27",
           "t": "Ultimate Comics X-Men",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-28",
           "t": "Ultimate Comics X-Men",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-29",
           "t": "Ultimate Comics X-Men",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-30",
           "t": "Ultimate Comics X-Men",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-31",
           "t": "Ultimate Comics X-Men",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-32",
           "t": "Ultimate Comics X-Men",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-x-men-33",
           "t": "Ultimate Comics X-Men",
-          "n": "#33"
+          "n": "#33",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-iron-man-1",
           "t": "Ultimate Comics Iron Man",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-iron-man-2",
           "t": "Ultimate Comics Iron Man",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-iron-man-3",
           "t": "Ultimate Comics Iron Man",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-iron-man-4",
           "t": "Ultimate Comics Iron Man",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-25",
           "t": "Ultimate Comics Ultimates",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-26",
           "t": "Ultimate Comics Ultimates",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-27",
           "t": "Ultimate Comics Ultimates",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-28",
           "t": "Ultimate Comics Ultimates",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-29",
           "t": "Ultimate Comics Ultimates",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-ultimates-30",
           "t": "Ultimate Comics Ultimates",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-23",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-24",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-25",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-26",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-27",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "u-ultimate-comics-spider-man-2011-28",
           "t": "Ultimate Comics Spider-Man (2011)",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         }
       ],
       "links": [
@@ -3738,102 +4381,122 @@
         {
           "id": "u-hunger-1",
           "t": "Hunger",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-hunger-2",
           "t": "Hunger",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-hunger-3",
           "t": "Hunger",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-hunger-4",
           "t": "Hunger",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-cataclysm-point-one-0.1",
           "t": "Cataclysm Point One",
-          "n": "#0.1"
+          "n": "#0.1",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimate-comics-spider-man-1",
           "t": "Cataclysm: Ultimate Comics Spider-Man",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimate-x-men-1",
           "t": "Cataclysm: Ultimate X-Men",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimate-x-men-2",
           "t": "Cataclysm: Ultimate X-Men",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimate-x-men-3",
           "t": "Cataclysm: Ultimate X-Men",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-cataclysm-the-ultimates-last-stand-1",
           "t": "Cataclysm: The Ultimates' Last Stand",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimates-1",
           "t": "Cataclysm: Ultimates",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-cataclysm-the-ultimates-last-stand-2",
           "t": "Cataclysm: The Ultimates' Last Stand",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimates-2",
           "t": "Cataclysm: Ultimates",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimates-3",
           "t": "Cataclysm: Ultimates",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimate-comics-spider-man-2",
           "t": "Cataclysm: Ultimate Comics Spider-Man",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-cataclysm-ultimate-comics-spider-man-3",
           "t": "Cataclysm: Ultimate Comics Spider-Man",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-cataclysm-the-ultimates-last-stand-3",
           "t": "Cataclysm: The Ultimates' Last Stand",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-cataclysm-the-ultimates-last-stand-4",
           "t": "Cataclysm: The Ultimates' Last Stand",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-cataclysm-the-ultimates-last-stand-5",
           "t": "Cataclysm: The Ultimates' Last Stand",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-survive-1",
           "t": "Survive",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         }
       ],
       "links": [
@@ -3871,152 +4534,182 @@
         {
           "id": "u-ultimate-ff-1",
           "t": "Ultimate FF",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-ultimate-ff-2",
           "t": "Ultimate FF",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-ultimate-ff-3",
           "t": "Ultimate FF",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-ultimate-ff-4",
           "t": "Ultimate FF",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-ultimate-ff-5",
           "t": "Ultimate FF",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-ultimate-ff-6",
           "t": "Ultimate FF",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-1",
           "t": "All-New Ultimates",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-2",
           "t": "All-New Ultimates",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-3",
           "t": "All-New Ultimates",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-4",
           "t": "All-New Ultimates",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-5",
           "t": "All-New Ultimates",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-6",
           "t": "All-New Ultimates",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-7",
           "t": "All-New Ultimates",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-8",
           "t": "All-New Ultimates",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-9",
           "t": "All-New Ultimates",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-10",
           "t": "All-New Ultimates",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-11",
           "t": "All-New Ultimates",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-all-new-ultimates-12",
           "t": "All-New Ultimates",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-1",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-2",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-3",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-4",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-5",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-6",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-7",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-8",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-9",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-10",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-11",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "u-miles-morales-ultimate-spider-man-12",
           "t": "Miles Morales: Ultimate Spider-Man",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         }
       ],
       "links": [

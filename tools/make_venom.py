@@ -320,6 +320,17 @@ def main():
         "sections": SECTIONS,
     }
 
+    # CLU-545: every comics row on this site weighs ONE ISSUE, which is
+    # Nathan's "issues, not collected volumes" ruling applied to the weight
+    # as well as to the row. It makes the strip measure issues rather than
+    # rows, and it is what lets a hub door into this list carry a real
+    # weight instead of none. Stamped in one place rather than on every row
+    # constructor: `w` is presentation and is not part of an id, so no tick
+    # moves.
+    for _sec in prop["sections"]:
+        for _row in _sec["items"]:
+            _row["w"] = 1
+
     out = pathlib.Path(__file__).resolve().parent.parent / "properties" / ("%s.json" % SLUG)
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", encoding="utf-8", newline="\n") as f:
