@@ -10285,20 +10285,29 @@ function filterMenu(q){
   // Six tiers, best first. Alphabetical still breaks the final tie, so nothing
   // moves that has no reason to.
   //
-  // An ALIAS is a name, so it ranks like one (CLU-542) — second, under the
-  // title itself, because a list actually CALLED what you typed is the better
-  // answer than one merely known by it. That ordering is what keeps `gl`
-  // honest, and it is why an alias equal to another list's title is refused in
-  // the build rather than handled here: ranking can settle which of two names
-  // wins, but not which of two lists you meant.
+  // An ALIAS is a name, so it ranks like one (CLU-542) — but BELOW the real
+  // title, whole and in part. A word of a list's own name beats a name it is
+  // merely known by; a name it is known by beats letters that only happen to
+  // sit inside its title. Putting aliases second instead, above the title's
+  // own words, went wrong immediately and in one shape: two or three letters
+  // is a person scanning, not naming, and every long alias owns those letters.
+  // `ku` left Akira Kurosawa for Martial Arts (kung fu), `night` left Bad Movie
+  // Night for Slashers (nightmare on elm street), `can` left The FPS Canon for
+  // Palme d'Or (cannes), `so` left Sight & Sound for FromSoftware
+  // (soulsborne). One rung lower, all four go back to being right and `gta`
+  // still wins, because no title has a word starting "gta" to lose to.
+  //
+  // Which is also why an alias equal to another list's TITLE is refused by the
+  // build rather than ranked here: ranking can settle which of two names is
+  // the better match, but not which of two lists you meant.
   const tier = m=>{
     const t = (m.title || '').toLowerCase();
     const al = m.aliases || [];
     if(t.indexOf(needle) === 0) return 0;                 // title starts with it
-    if(al.some(a=> a.indexOf(needle) === 0)) return 1;    // an alias starts with it
     // a WORD inside the title starts with it: `star` finds Star Trek above
     // Battlestar, which a plain substring test calls equally good
-    if(t.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)) return 2;
+    if(t.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)) return 1;
+    if(al.some(a=> a.indexOf(needle) === 0)) return 2;    // an alias starts with it
     if(t.indexOf(needle) >= 0) return 3;                  // anywhere in the title
     // a word inside a multi-word alias: `hakusho` against `yuyu hakusho`
     if(al.some(a=> a.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)))
