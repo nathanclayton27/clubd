@@ -1632,6 +1632,14 @@
   "runtime": null
  },
  {
+  "t": "Honey, I Blew Up the Kid",
+  "page": "Honey, I Blew Up the Kid",
+  "date": "1992-07-17",
+  "kind": "theatrical",
+  "note": "",
+  "runtime": 89
+ },
+ {
   "t": "The Mighty Ducks",
   "page": "The Mighty Ducks (film)",
   "date": "1992-10-02",
@@ -2136,6 +2144,14 @@
   "runtime": 90
  },
  {
+  "t": "The Parent Trap",
+  "page": "The Parent Trap (1998 film)",
+  "date": "1998-07-29",
+  "kind": "theatrical",
+  "note": "",
+  "runtime": 127
+ },
+ {
   "t": "Pocahontas II: Journey to a New World",
   "page": "Pocahontas II: Journey to a New World",
   "date": "1998-08-25",
@@ -2326,6 +2342,14 @@
   "kind": "theatrical",
   "note": "co-production with Walt Disney Feature Animation",
   "runtime": 75
+ },
+ {
+  "t": "Up, Up, and Away",
+  "page": "Up, Up and Away (film)",
+  "date": "2000-01-22",
+  "kind": "television",
+  "note": "",
+  "runtime": 96
  },
  {
   "t": "The Color of Friendship",
@@ -2696,6 +2720,14 @@
   "runtime": 83
  },
  {
+  "t": "Gotta Kick It Up!",
+  "page": "Gotta Kick It Up!",
+  "date": "2002-07-26",
+  "kind": "television",
+  "note": "",
+  "runtime": null
+ },
+ {
   "t": "The Country Bears",
   "page": "The Country Bears",
   "date": "2002-07-26",
@@ -3008,6 +3040,14 @@
   "runtime": 120
  },
  {
+  "t": "America's Heart and Soul",
+  "page": "America's Heart and Soul",
+  "date": "2004-07-02",
+  "kind": "theatrical",
+  "note": "co-production with Blacklight Films",
+  "runtime": null
+ },
+ {
   "t": "Stuck in the Suburbs",
   "page": "Stuck in the Suburbs",
   "date": "2004-07-16",
@@ -3035,7 +3075,7 @@
   "t": "Mickey, Donald, Goofy: The Three Musketeers",
   "page": "Mickey, Donald, Goofy: The Three Musketeers",
   "date": "2004-08-17",
-  "kind": "theatrical",
+  "kind": "direct-to-video",
   "note": "rowspan=\"2\" | Mickey Mouse",
   "runtime": 68
  },
@@ -3267,7 +3307,7 @@
   "t": "Bambi II",
   "page": "Bambi II",
   "date": "2006-02-07",
-  "kind": "theatrical",
+  "kind": "direct-to-video",
   "note": "Bambi",
   "runtime": 72
  },
@@ -3278,6 +3318,14 @@
   "kind": "theatrical",
   "note": "co-production with Spyglass Entertainment, Mandeville Films and The Kennedy/Marshall Company",
   "runtime": 120
+ },
+ {
+  "t": "The Shaggy Dog",
+  "page": "The Shaggy Dog (2006 film)",
+  "date": "2006-03-10",
+  "kind": "theatrical",
+  "note": "co-production with Mandeville Films, Tollin/Robbins Productions, Boxing Cat Films, Robert Simonds Productions and Shaggy Dog Productions",
+  "runtime": 98
  },
  {
   "t": "Cow Belles",
@@ -3587,7 +3635,7 @@
   "t": "Tinker Bell",
   "page": "Tinker Bell (film)",
   "date": "2008-10-28",
-  "kind": "theatrical",
+  "kind": "direct-to-video",
   "note": "rowspan=\"4\" | Disney Fairies",
   "runtime": 78
  },
@@ -3790,6 +3838,14 @@
   "kind": "television",
   "note": "",
   "runtime": 78
+ },
+ {
+  "t": "Alice in Wonderland",
+  "page": "Alice in Wonderland (2010 film)",
+  "date": "2010-03-05",
+  "kind": "theatrical",
+  "note": "co-production with The Zanuck Company, Roth Films and Team Todd; nominee of the Golden Globe Award for Best Motion Picture – Musical or Comedy",
+  "runtime": 109
  },
  {
   "t": "Oceans",
@@ -4304,6 +4360,14 @@
   "runtime": 76
  },
  {
+  "t": "Cinderella",
+  "page": "Cinderella (2015 American film)",
+  "date": "2015-03-13",
+  "kind": "theatrical",
+  "note": "co-production with Kinberg Genre, Allison Shearmur Productions and Beagle Pug Films",
+  "runtime": 105
+ },
+ {
   "t": "Monkey Kingdom",
   "page": "Monkey Kingdom",
   "date": "2015-04-17",
@@ -4360,6 +4424,14 @@
   "runtime": 108
  },
  {
+  "t": "The Jungle Book",
+  "page": "The Jungle Book (2016 film)",
+  "date": "2016-04-15",
+  "kind": "theatrical",
+  "note": "co-production with Fairview Entertainment",
+  "runtime": 107
+ },
+ {
   "t": "Tini: The Movie",
   "page": "Tini: The Movie",
   "date": "2016-05-06",
@@ -4392,6 +4464,14 @@
   "runtime": 115
  },
  {
+  "t": "Pete's Dragon",
+  "page": "Pete's Dragon (2016 film)",
+  "date": "2016-08-12",
+  "kind": "theatrical",
+  "note": "co-production with Whitaker Entertainment",
+  "runtime": 102
+ },
+ {
   "t": "Queen of Katwe",
   "page": "Queen of Katwe",
   "date": "2016-09-30",
@@ -4416,6 +4496,14 @@
   "runtime": 107
  },
  {
+  "t": "Growing Up Wild",
+  "page": null,
+  "date": "2016-12-06",
+  "kind": "theatrical",
+  "note": "Disneynature release; produced by Silverback Films",
+  "runtime": null
+ },
+ {
   "t": "Dangal",
   "page": "Dangal (2016 film)",
   "date": "2016-12-21",
@@ -4438,6 +4526,14 @@
   "kind": "television",
   "note": "",
   "runtime": 54
+ },
+ {
+  "t": "Beauty and the Beast",
+  "page": "Beauty and the Beast (2017 film)",
+  "date": "2017-03-17",
+  "kind": "theatrical",
+  "note": "co-production with Mandeville Films",
+  "runtime": 129
  },
  {
   "t": "Born in China",
@@ -4520,6 +4616,14 @@
   "runtime": 104
  },
  {
+  "t": "Freaky Friday",
+  "page": "Freaky Friday (2018 film)",
+  "date": "2018-08-10",
+  "kind": "television",
+  "note": "",
+  "runtime": 90
+ },
+ {
   "t": "The Nutcracker and the Four Realms",
   "page": "The Nutcracker and the Four Realms",
   "date": "2018-11-02",
@@ -4552,12 +4656,36 @@
   "runtime": 86
  },
  {
+  "t": "Dumbo",
+  "page": "Dumbo (2019 film)",
+  "date": "2019-03-29",
+  "kind": "theatrical",
+  "note": "co-production with Tim Burton Productions, Infinite Detective Productions and Secret Machine Entertainment",
+  "runtime": 112
+ },
+ {
   "t": "Penguins",
   "page": "Penguins (film)",
   "date": "2019-04-17",
   "kind": "theatrical",
   "note": "Disneynature release; produced by Silverback Films",
   "runtime": 76
+ },
+ {
+  "t": "Aladdin",
+  "page": "Aladdin (2019 film)",
+  "date": "2019-05-24",
+  "kind": "theatrical",
+  "note": "co-production with Rideback",
+  "runtime": 129
+ },
+ {
+  "t": "The Lion King",
+  "page": "The Lion King (2019 film)",
+  "date": "2019-07-19",
+  "kind": "theatrical",
+  "note": "co-production with Fairview Entertainment; nominee of the Golden Globe Award for Best Animated Feature Film",
+  "runtime": 118
  },
  {
   "t": "Descendants 3",
@@ -4574,6 +4702,14 @@
   "kind": "theatrical",
   "note": "co-production with Roth/Kirschenbaum Films",
   "runtime": 119
+ },
+ {
+  "t": "Lady and the Tramp",
+  "page": "Lady and the Tramp (2019 film)",
+  "date": "2019-11-12",
+  "kind": "theatrical",
+  "note": "co-production with Taylor Made; distributed by Disney+",
+  "runtime": 104
  },
  {
   "t": "Frozen 2",
@@ -4672,6 +4808,14 @@
   "runtime": 95
  },
  {
+  "t": "Mulan",
+  "page": "Mulan (2020 film)",
+  "date": "2020-09-04",
+  "kind": "theatrical",
+  "note": "co-production with Jason T. Reed Productions and Good Fear Productions; distributed by Disney+",
+  "runtime": 115
+ },
+ {
   "t": "Godmothered",
   "page": "Godmothered",
   "date": "2020-12-04",
@@ -4734,6 +4878,14 @@
   "kind": "television",
   "note": "",
   "runtime": 93
+ },
+ {
+  "t": "Under Wraps",
+  "page": "Under Wraps (2021 film)",
+  "date": "2021-10-01",
+  "kind": "television",
+  "note": "",
+  "runtime": null
  },
  {
   "t": "Encanto",
@@ -4840,6 +4992,14 @@
   "runtime": 90
  },
  {
+  "t": "Pinocchio",
+  "page": "Pinocchio (2022 live-action film)",
+  "date": "2022-09-08",
+  "kind": "theatrical",
+  "note": "co-production with ImageMovers and Depth of Field Studios; distributed by Disney+",
+  "runtime": 105
+ },
+ {
   "t": "Under Wraps 2",
   "page": "Under Wraps 2",
   "date": "2022-09-25",
@@ -4918,6 +5078,14 @@
   "kind": "theatrical",
   "note": "co-production with 21 Laps Entertainment; distributed by Disney+",
   "runtime": 105
+ },
+ {
+  "t": "The Little Mermaid",
+  "page": "The Little Mermaid (2023 film)",
+  "date": "2023-05-26",
+  "kind": "theatrical",
+  "note": "co-production with DeLuca Marshall and Marc Platt Productions",
+  "runtime": 135
  },
  {
   "t": "World's Best",
@@ -5064,6 +5232,14 @@
   "runtime": 83
  },
  {
+  "t": "Lilo & Stitch",
+  "page": "Lilo & Stitch (2025 film)",
+  "date": "2025-05-23",
+  "kind": "theatrical",
+  "note": "co-production with Rideback",
+  "runtime": 108
+ },
+ {
   "t": "Elio",
   "page": "Elio (film)",
   "date": "2025-06-20",
@@ -5128,6 +5304,14 @@
   "runtime": null
  },
  {
+  "t": "Moana",
+  "page": "Moana (2026 film)",
+  "date": "2026-07-10",
+  "kind": "theatrical",
+  "note": "co-production with Seven Bucks Productions, Flynn Picture Co. and 5000 Broadway Productions",
+  "runtime": 115
+ },
+ {
   "t": "Descendants: Wicked Wonderland",
   "page": "Descendants: Wicked Wonderland",
   "date": "2026-07-16",
@@ -5189,6 +5373,14 @@
   "date": "2028-03-10",
   "kind": "theatrical",
   "note": "co-production with Pixar Animation Studios",
+  "runtime": null
+ },
+ {
+  "t": "Tangled",
+  "page": "Tangled (2028 film)",
+  "date": "2028-03-31",
+  "kind": "theatrical",
+  "note": "co-production with Burr! Productions",
   "runtime": null
  },
  {

@@ -15,7 +15,20 @@ Sources, machine-read into tools/data/disney.json:
 with runtimes from Wikidata (P2047). Where the same film appears on two lists,
 Disneytoon's word wins on how it was released — the Walt Disney Pictures list
 files Bambi II as theatrical because it had a cinema release outside North
-America, and the studio that made it is the better authority.
+America, and the studio that made it is the better authority. Disneytoon's own
+Release-type cell can name two channels — "Direct-to-video/Theatrical" — and
+where it does, the direct-to-video half wins. Three rows read that way (Bambi
+II, Tinker Bell, and Mickey, Donald, Goofy: The Three Musketeers), and a
+substring test filed all three as theatrical, which left Bambi II at tier 1
+while the channel note below named it as a direct-to-video example (CLU-306).
+
+**The same title is not the same film.** Rows are deduplicated on title AND
+year, not on title alone. On the title alone, first one wins, so the 1992
+Aladdin shadowed the 2019 one and all nineteen live-action remakes were absent
+from a list whose Revival note advertises them (CLU-303). Every genuine
+cross-source duplicate in this data shares a release date, so the year tells a
+remake from a duplicate — and the year rather than the full date because the
+Disney Channel list gives The Cheetah Girls 2 two different 2006 dates.
 
 **Distributed is not made.** The Walt Disney Pictures list carries a Notes
 column, and it says so when Disney only handled distribution — Ponyo's reads
@@ -23,11 +36,19 @@ column, and it says so when Disney only handled distribution — Ponyo's reads
 rows carry that marker in one wording or another and none of them belong on a
 list of what Disney made; a reader found two Studio Ghibli films here and was
 right. DISTONLY below reads the column the parse used to ignore. It does NOT
-replace the acquired-properties blocklist: of the 43 titles that blocklist
+replace the acquired-properties blocklist: of the 38 titles that blocklist
 removes, the marker catches exactly one (Toy Story, which Disney did only
-distribute). The other 42 are co-productions — the source calls them
+distribute). The other 37 are co-productions — the source calls them
 "co-production with Pixar Animation Studios" — so the marker is silent on them
 and the blocklist stays.
+
+The blocklist matches names, which makes a one-word Pixar title dangerous. Two
+of them, matched on word boundaries, were removing five of Disney's own films:
+"Up" took Honey, I Blew Up the Kid, Up, Up, and Away, Gotta Kick It Up! and
+Growing Up Wild, and "Soul" took America's Heart and Soul (CLU-305). Those two
+now have to match a whole title. The same shape of risk remains for Cars,
+Brave, Coco and Luca, which are still word-boundary patterns because they have
+sequels to catch; no title in the current source trips them.
 
 Tiers are release channels, not rankings:
   1 theatrical   2 television   3 direct-to-video

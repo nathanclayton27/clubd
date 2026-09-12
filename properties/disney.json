@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 96,
   "year": "1937–",
-  "blurb": "628 films from Snow White on — 439 theatrical, 163 television, 26 direct-to-video — about 877 hours.",
+  "blurb": "652 films from Snow White on — 456 theatrical, 167 television, 29 direct-to-video — about 912 hours.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -42,7 +42,7 @@
     ],
     [
       "Tiers are release channels, not rankings.",
-      "1 is theatrical, 2 is television, 3 is direct-to-video. A finish date paces you through the theatrical line — 439 films — and the checkbox under the bar adds the other two. The chips at the top hide a channel entirely."
+      "1 is theatrical, 2 is television, 3 is direct-to-video. A finish date paces you through the theatrical line — 456 films — and the checkbox under the bar adds the other two. The chips at the top hide a channel entirely."
     ],
     [
       "Where a film sits on two lists, the studio that made it wins.",
@@ -50,7 +50,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata, for 557 of the 628. The 71 without one — mostly sixties and seventies live-action — weigh nothing rather than a guess."
+      "From Wikidata, for 576 of the 652. The 76 without one — mostly sixties and seventies live-action — weigh nothing rather than a guess."
     ],
     "Film lists from Wikipedia: Walt Disney Pictures films, Disney Channel original films, and Disneytoon Studios productions."
   ],
@@ -1885,7 +1885,7 @@
     {
       "id": "renaissance",
       "title": "The Renaissance",
-      "sub": "1989–1999 · 62 theatrical, 36 TV, 7 direct-to-video · 139 hours",
+      "sub": "1989–1999 · 64 theatrical, 36 TV, 7 direct-to-video · 142 hours",
       "intro": "The Little Mermaid through Tarzan, and alongside it the first wave of direct-to-video sequels and Disney Channel movies.",
       "items": [
         {
@@ -2118,6 +2118,16 @@
             "Television"
           ],
           "note": "TV movie"
+        },
+        {
+          "id": "dis-1992-honey-i-blew-up-the-kid",
+          "t": "Honey, I Blew Up the Kid",
+          "n": "1992",
+          "w": 1.48,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
         },
         {
           "id": "dis-1992-the-mighty-ducks",
@@ -2749,6 +2759,16 @@
           "note": "TV movie"
         },
         {
+          "id": "dis-1998-the-parent-trap",
+          "t": "The Parent Trap",
+          "n": "1998",
+          "w": 2.12,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-1998-pocahontas-ii-journey-to-a-new-world",
           "t": "Pocahontas II: Journey to a New World",
           "n": "1998",
@@ -2986,9 +3006,20 @@
     {
       "id": "aughts",
       "title": "The two thousands",
-      "sub": "2000–2009 · 89 theatrical, 63 TV, 18 direct-to-video · 240 hours",
+      "sub": "2000–2009 · 88 theatrical, 65 TV, 21 direct-to-video · 244 hours",
       "intro": "The sequel factory at full tilt, the DCOM golden age, and the slow slide of hand-drawn animation.",
       "items": [
+        {
+          "id": "dis-2000-up-up-and-away",
+          "t": "Up, Up, and Away",
+          "n": "2000",
+          "w": 1.6,
+          "tier": 2,
+          "tags": [
+            "Television"
+          ],
+          "note": "TV movie"
+        },
         {
           "id": "dis-2000-the-color-of-friendship",
           "t": "The Color of Friendship",
@@ -3479,6 +3510,17 @@
           "note": "TV movie"
         },
         {
+          "id": "dis-2002-gotta-kick-it-up",
+          "t": "Gotta Kick It Up!",
+          "n": "2002",
+          "w": 0.0,
+          "tier": 2,
+          "tags": [
+            "Television"
+          ],
+          "note": "TV movie"
+        },
+        {
           "id": "dis-2002-the-country-bears",
           "t": "The Country Bears",
           "n": "2002",
@@ -3864,6 +3906,16 @@
           "note": "TV movie"
         },
         {
+          "id": "dis-2004-america-s-heart-and-soul",
+          "t": "America's Heart and Soul",
+          "n": "2004",
+          "w": 0.0,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2004-stuck-in-the-suburbs",
           "t": "Stuck in the Suburbs",
           "n": "2004",
@@ -3900,10 +3952,11 @@
           "t": "Mickey, Donald, Goofy: The Three Musketeers",
           "n": "2004",
           "w": 1.13,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2004-halloweentown-high",
@@ -4194,16 +4247,27 @@
           "t": "Bambi II",
           "n": "2006",
           "w": 1.2,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2006-eight-below",
           "t": "Eight Below",
           "n": "2006",
           "w": 2.0,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
+          "id": "dis-2006-the-shaggy-dog",
+          "t": "The Shaggy Dog",
+          "n": "2006",
+          "w": 1.63,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -4591,10 +4655,11 @@
           "t": "Tinker Bell",
           "n": "2008",
           "w": 1.3,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2008-bolt",
@@ -4775,7 +4840,7 @@
     {
       "id": "revival",
       "title": "The Revival",
-      "sub": "2010–2019 · 68 theatrical, 29 TV, 1 direct-to-video · 158 hours",
+      "sub": "2010–2019 · 78 theatrical, 30 TV, 1 direct-to-video · 177 hours",
       "intro": "Tangled, Frozen, Moana — and the live-action remakes begin.",
       "items": [
         {
@@ -4798,6 +4863,16 @@
             "Television"
           ],
           "note": "TV movie"
+        },
+        {
+          "id": "dis-2010-alice-in-wonderland",
+          "t": "Alice in Wonderland",
+          "n": "2010",
+          "w": 1.82,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
         },
         {
           "id": "dis-2010-prince-of-persia-the-sands-of-time",
@@ -5419,6 +5494,16 @@
           "note": "Direct-to-video"
         },
         {
+          "id": "dis-2015-cinderella",
+          "t": "Cinderella",
+          "n": "2015",
+          "w": 1.75,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2015-monkey-kingdom",
           "t": "Monkey Kingdom",
           "n": "2015",
@@ -5492,6 +5577,16 @@
           ]
         },
         {
+          "id": "dis-2016-the-jungle-book",
+          "t": "The Jungle Book",
+          "n": "2016",
+          "w": 1.78,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2016-tini-the-movie",
           "t": "Tini: The Movie",
           "n": "2016",
@@ -5533,6 +5628,16 @@
           ]
         },
         {
+          "id": "dis-2016-pete-s-dragon",
+          "t": "Pete's Dragon",
+          "n": "2016",
+          "w": 1.7,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2016-queen-of-katwe",
           "t": "Queen of Katwe",
           "n": "2016",
@@ -5558,6 +5663,16 @@
           "t": "Moana",
           "n": "2016",
           "w": 1.78,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
+          "id": "dis-2016-growing-up-wild",
+          "t": "Growing Up Wild",
+          "n": "2016",
+          "w": 0.0,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -5593,6 +5708,16 @@
             "Television"
           ],
           "note": "TV movie"
+        },
+        {
+          "id": "dis-2017-beauty-and-the-beast",
+          "t": "Beauty and the Beast",
+          "n": "2017",
+          "w": 2.15,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
         },
         {
           "id": "dis-2017-born-in-china",
@@ -5697,6 +5822,17 @@
           ]
         },
         {
+          "id": "dis-2018-freaky-friday",
+          "t": "Freaky Friday",
+          "n": "2018",
+          "w": 1.5,
+          "tier": 2,
+          "tags": [
+            "Television"
+          ],
+          "note": "TV movie"
+        },
+        {
           "id": "dis-2018-the-nutcracker-and-the-four-realms",
           "t": "The Nutcracker and the Four Realms",
           "n": "2018",
@@ -5738,10 +5874,40 @@
           "note": "TV movie"
         },
         {
+          "id": "dis-2019-dumbo",
+          "t": "Dumbo",
+          "n": "2019",
+          "w": 1.87,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2019-penguins",
           "t": "Penguins",
           "n": "2019",
           "w": 1.27,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
+          "id": "dis-2019-aladdin",
+          "t": "Aladdin",
+          "n": "2019",
+          "w": 2.15,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
+          "id": "dis-2019-the-lion-king",
+          "t": "The Lion King",
+          "n": "2019",
+          "w": 1.97,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -5763,6 +5929,16 @@
           "t": "Maleficent: Mistress of Evil",
           "n": "2019",
           "w": 1.98,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
+          "id": "dis-2019-lady-and-the-tramp",
+          "t": "Lady and the Tramp",
+          "n": "2019",
+          "w": 1.73,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -5793,7 +5969,7 @@
     {
       "id": "plus",
       "title": "The Disney+ era",
-      "sub": "2020–2028 · 61 theatrical, 15 TV · 86 hours",
+      "sub": "2020–2028 · 67 theatrical, 16 TV · 95 hours",
       "intro": "Streaming first, cinemas second, and the remakes keep coming.",
       "items": [
         {
@@ -5899,6 +6075,16 @@
           ]
         },
         {
+          "id": "dis-2020-mulan",
+          "t": "Mulan",
+          "n": "2020",
+          "w": 1.92,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2020-godmothered",
           "t": "Godmothered",
           "n": "2020",
@@ -5973,6 +6159,17 @@
           "t": "Spin",
           "n": "2021",
           "w": 1.55,
+          "tier": 2,
+          "tags": [
+            "Television"
+          ],
+          "note": "TV movie"
+        },
+        {
+          "id": "dis-2021-under-wraps",
+          "t": "Under Wraps",
+          "n": "2021",
+          "w": 0.0,
           "tier": 2,
           "tags": [
             "Television"
@@ -6112,6 +6309,16 @@
           "note": "TV movie"
         },
         {
+          "id": "dis-2022-pinocchio",
+          "t": "Pinocchio",
+          "n": "2022",
+          "w": 1.75,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2022-under-wraps-2",
           "t": "Under Wraps 2",
           "n": "2022",
@@ -6208,6 +6415,16 @@
           "t": "Crater",
           "n": "2023",
           "w": 1.75,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
+          "id": "dis-2023-the-little-mermaid",
+          "t": "The Little Mermaid",
+          "n": "2023",
+          "w": 2.25,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -6398,6 +6615,16 @@
           ]
         },
         {
+          "id": "dis-2025-lilo-stitch",
+          "t": "Lilo & Stitch",
+          "n": "2025",
+          "w": 1.8,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2025-elio",
           "t": "Elio",
           "n": "2025",
@@ -6480,6 +6707,16 @@
           "note": "Not out yet"
         },
         {
+          "id": "dis-2026-moana",
+          "t": "Moana",
+          "n": "2026",
+          "w": 1.92,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-2026-descendants-wicked-wonderland",
           "t": "Descendants: Wicked Wonderland",
           "n": "2026",
@@ -6548,6 +6785,17 @@
         {
           "id": "dis-2028-ghost-market",
           "t": "Ghost Market",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ],
+          "note": "Not out yet"
+        },
+        {
+          "id": "dis-2028-tangled",
+          "t": "Tangled",
           "n": "2028",
           "w": 0.0,
           "tier": 1,
