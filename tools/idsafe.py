@@ -34,9 +34,16 @@ converted, and MOVES the moment one is not, naming the rows.
     python tools/idsafe.py --safe           # print the safe slugs, one per line
     python tools/idsafe.py --rows           # name every row that would move
 
-Exit 0 means every generator carrying a convertible title is proven id-safe.
-Exit 1 means at least one is not, or could not be read at all — which is the
-same answer for this purpose: an unreadable fold is an unproven fold.
+Exit 0 means every generator carrying a convertible title is proven id-safe,
+or has been read by hand and written down in HAND_READ below. Exit 1 means at
+least one is not, or could not be read at all — which is the same answer for
+this purpose: an unreadable fold is an unproven fold.
+
+.github/workflows/check.yml runs it on every push, so a generator that arrives
+with a fold that can move an id fails the build rather than waiting for someone
+to think of running this. That is the whole point: the conversion this file
+guards is a one-off, but a new list is not, and a rule only obeyed by a person
+who remembers it is a rule that lapses (CLU-79).
 
 WHAT IT DELIBERATELY DOES NOT DO
 
@@ -108,6 +115,15 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 PROPS = ROOT / "properties"
 TOOLS = ROOT / "tools"
 
+# The lists nothing generates are already written down once, in gendrift.py,
+# with why each is hand-maintained. Read that table rather than keeping a
+# second one here: two tables recording the same fact is how one of them comes
+# to be wrong. A hand-written list has no fold to prove — its ids are literal
+# text in properties/<slug>.json, so only a hand edit can move one, and a diff
+# shows that plainly. It is a different verdict, not a failure.
+sys.path.insert(0, str(TOOLS))
+from gendrift import NO_GENERATOR                            # noqa: E402
+
 # The three conversions the copy register asks for, each as the character the
 # data has now and the one it would gain. Apostrophes are the big one — 1,097
 # of the straight-apostrophe strings in properties/ are item titles — but an
@@ -138,6 +154,41 @@ PROBES = [
     "Wait...What",
     'He said"no"to that',
 ]
+
+
+# Verdicts settled by READING the generator, with what the reading found. A
+# check that cannot prove something is not licence to ignore it; it is licence
+# to open the file and write the answer down. Without this table the gate can
+# only ever be red, and a permanently red gate is an ignored one.
+#
+# MOVES is deliberately not expressible here. A line may record what a fold
+# does; it may never record that a moving id is acceptable, because a moved id
+# is every tick on that row destroyed.
+#
+# Each line is guarded below: if a slug stops carrying the verdict named here —
+# its generator grows a real fold, or the rows in question leave the list — the
+# entry itself fails, so the table shrinks instead of rotting.
+HAND_READ = {
+    "futurama": ("UNPROVEN", "the film rows build their id as "
+                 "prop.slug(title.replace(\"'\", \"\")) — the apostrophe is "
+                 "dropped at the CALL SITE, so no function this check can call "
+                 "reproduces the id. Read 2026-09-11: that inline fold dropped "
+                 "only the straight form and now drops both; prop.slug itself "
+                 "is safe, and every other id on the list is fut-sNeM."),
+    "jla-morrison": ("UNPROVEN", "row() takes the id as its first argument and "
+                     "every one is a hand-typed literal — row(\"new-years-evil-"
+                     "prometheus-1\", \"New Year's Evil: Prometheus\", …). "
+                     "Nothing folds a title, so no title can move an id."),
+    "metal-gear": ("UNPROVEN", "ids are \"mgs-%s\" % key and \"mgs-x-%s\" % k, "
+                   "and the keys are hand-typed in ROSTER — (\"snakes-revenge\", "
+                   "\"Snake's Revenge\", …). The module defines slug() and never "
+                   "calls it, which is exactly why no fold here builds an id."),
+    "sitcoms": ("UNPROVEN", "ids are \"sit-\" + the door target's own slug, and "
+                "the generator says why in a comment: an id derived from a "
+                "title would move the day a list is retitled. sit-bobs-burgers "
+                "is the property slug bobs-burgers, not a fold of Bob's "
+                "Burgers."),
+}
 
 
 def load_props():
@@ -420,18 +471,24 @@ def main():
             print("no such property: %s" % ", ".join(missing))
             return 2
 
-    verdicts, safe_slugs, bad = [], [], 0
+    verdicts, safe_slugs = [], []
     for slug in sorted(props):
         got = claims.get(slug) or []
         if not got:
-            verdicts.append(("NO-GEN", slug, "-", "no generator declares this "
-                             "slug", None))
-            bad += 1
+            why = NO_GENERATOR.get(slug)
+            if why:
+                verdicts.append(("HAND-WRITTEN", slug, "-", "%s — no fold to "
+                                 "prove; its ids are literal text in the "
+                                 "property file" % why, None))
+                safe_slugs.append(slug)
+            else:
+                verdicts.append(("NO-GEN", slug, "-", "no generator declares "
+                                 "this slug, and gendrift.py's NO_GENERATOR "
+                                 "does not say it is hand-maintained", None))
             continue
         path, mod, err = got[0]
         if mod is None:
             verdicts.append(("UNREAD", slug, path.name, err, None))
-            bad += 1
             continue
         cands = fold_candidates(mod)
         rows = [(x["id"], x["t"]) for s in props[slug]["sections"]
@@ -452,7 +509,6 @@ def main():
                                  "title-shaped id and no fold this check can "
                                  "find — read the generator by hand"
                                  % (len(uncovered), len(risky)), None))
-                bad += 1
             else:
                 n = sum(1 for _, t in rows if "'" in t)
                 verdicts.append(("NOT-FOLDED", slug, path.name,
@@ -466,7 +522,6 @@ def main():
                              "%d apostrophe rows have a title-shaped id that "
                              "no fold found here reproduces, e.g. %s"
                              % (len(uncovered), uncovered[0][0]), None))
-            bad += 1
             continue
         _, rep = analyse(slug, props[slug], folds)
         moved = {c: r for c, r in rep.items() if r["moves"] or r["probe"]}
@@ -477,7 +532,6 @@ def main():
                             if r["moves"] else "%s: fold drops it" % c
                             for c, r in sorted(moved.items()))
             verdicts.append(("MOVES", slug, names, why, rep))
-            bad += 1
         else:
             n = rep["apostrophe"]["n"]
             verdicts.append(("SAFE", slug, names,
@@ -485,16 +539,38 @@ def main():
                              rep))
             safe_slugs.append(slug)
 
+    # ---- what is actually unresolved, and is the table still honest? ------
+    seen = {slug: v for v, slug, *_ in verdicts}
+    resolved, unresolved, stale = [], [], []
+    for v, slug, who, why, rep in verdicts:
+        if v in ("SAFE", "NOT-FOLDED", "HAND-WRITTEN"):
+            continue
+        rec = HAND_READ.get(slug)
+        # MOVES is never excusable, whatever any table says about the list.
+        if v == "MOVES" or rec is None or rec[0] != v:
+            unresolved.append(slug)
+        else:
+            resolved.append((slug, v, rec[1]))
+    if not a.slugs:
+        for slug, (v, _) in sorted(HAND_READ.items()):
+            if slug not in seen:
+                stale.append("HAND_READ names %s, which is not a list any more "
+                             "— delete the line" % slug)
+            elif seen[slug] != v:
+                stale.append("HAND_READ records %s as %s and it now reads %s — "
+                             "read the generator again and rewrite the line, or "
+                             "delete it" % (slug, v, seen[slug]))
+
     if a.safe:
         for s in safe_slugs:
             print(s)
-        return 0 if not bad else 1
+        return 1 if (unresolved or stale) else 0
 
     order = {"MOVES": 0, "UNPROVEN": 1, "UNREAD": 2, "NO-GEN": 3,
-             "NOT-FOLDED": 4, "SAFE": 5}
+             "HAND-WRITTEN": 4, "NOT-FOLDED": 5, "SAFE": 6}
     for v, slug, who, why, rep in sorted(verdicts,
                                          key=lambda r: (order[r[0]], r[1])):
-        print("%-10s %-26s %-22s %s" % (v, slug, who[:22], why))
+        print("%-12s %-26s %-22s %s" % (v, slug, who[:22], why))
         if a.rows and rep:
             for cls, r in sorted(rep.items()):
                 for rid, t, name, was, now in r["moves"]:
@@ -512,11 +588,20 @@ def main():
                for x in sec.get("items", []) if "'" in (x.get("t") or ""))
     print("%d item titles carry a straight apostrophe across %d properties"
           % (conv, len(props)))
-    if bad:
-        print("\nDO NOT convert the lists above until each is SAFE. An "
-              "unproven fold is not a small risk: a moved id is a silent "
-              "untick of every tick on that row.")
-    return 1 if bad else 0
+
+    if resolved:
+        print("\nREAD BY HAND, and recorded in HAND_READ:")
+        for slug, v, why in sorted(resolved):
+            print("  %s (%s)\n      %s" % (slug, v, why))
+    for s in stale:
+        print("\nSTALE RECORD: %s" % s)
+    if unresolved:
+        print("\nUNRESOLVED: %s" % ", ".join(sorted(unresolved)))
+        print("DO NOT convert those lists. Fix the fold, or read the generator "
+              "and record what it does in HAND_READ — an unproven fold is not "
+              "a small risk: a moved id is a silent untick of every tick on "
+              "that row, on every device, with nothing to recover from.")
+    return 1 if (unresolved or stale) else 0
 
 
 if __name__ == "__main__":

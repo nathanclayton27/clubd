@@ -57,6 +57,23 @@ jobs:
             exit 0
           fi
           exit $rc
+      # CLU-430. A row id is the `item_id` every tick and every thumb is stored
+      # against, in the database and in every browser's localStorage, and ids
+      # fold from titles. The folds disagree about what an apostrophe is: some
+      # keep a straight one as a dash and DROP a curly one, others drop the
+      # straight one and would DASH a curly one. So a title edit as small as
+      # curling an apostrophe can rename an id, and a renamed id is a silent,
+      # unrecoverable untick of that row for everyone who had it, on every
+      # device. Nothing fails, nothing logs, and nobody finds out.
+      #
+      # This proves, per generator, that the function which demonstrably built
+      # a row's id is blind to the character. It found eleven folds that could
+      # move an id the day their list was touched. Here rather than nowhere
+      # because the eleven were a one-off and a new list is not: the next
+      # generator to arrive with a fold that drops what it should dash would
+      # otherwise be found by whoever happened to run this by hand.
+      - name: No generator's fold can move a row id
+        run: python tools/idsafe.py
       # The wiki parser's pins. Four rounds of fixes each added tests that
       # nothing on push executed, so a regression could only be found by
       # whoever next ran the file by hand.
