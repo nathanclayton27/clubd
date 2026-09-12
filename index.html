@@ -2182,7 +2182,7 @@ footer a{color:var(--steel)}
            a render: a flash written into a node renderGroupPanel then replaces
            would clear itself against a node nobody can see -->
       <input type="text" id="g-clip" class="hide" readonly spellcheck="false"
-             aria-label="Club code, ready to copy">
+             aria-label="Club code or invite link, ready to copy">
       <!-- role=status like every other flash target: since the switcher stopped
            being a <select>, this is the ONLY channel that reports a keyboard
            commit — the trigger's name is the club, and choose() flashes nothing
@@ -4060,19 +4060,19 @@ let MANIFEST = [
       "comics"
     ],
     "title": "Batman",
-    "subtitle": "a reading order",
+    "subtitle": "the essential runs, issue by issue",
     "kind": "comics",
-    "year": "1986–2021",
+    "year": "1986–2019",
     "popularity": 72,
-    "blurb": "The stories Wikipedia's publication history of Batman stops to name, from The Dark Knight Returns to Fear State — collected stories rather than issues, sectioned by era.",
+    "blurb": "225 issues in twelve runs, from The Dark Knight Returns to the end of Tom King's — a route through the character rather than everything ever printed.",
     "accent": "#1B2436",
     "accentDark": "#D8B740",
     "unit": {
-      "one": "story",
-      "many": "stories"
+      "one": "issue",
+      "many": "issues"
     },
     "vpast": "read",
-    "total": 35
+    "total": 225
   },
   {
     "slug": "chainsaw-man",
@@ -7673,7 +7673,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '6a0184e3bff0';
+const BUILD = '150eb47e437e';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7743,8 +7743,9 @@ const BRAND = 'clubd';
 // One arrival at a time, as (kind, payload, own). A kind names its query param,
 // the two lines the splash says to a stranger, the noun the notices call it,
 // the three lines the ask uses, and how it settles once there is a session.
-// Friend links and group invites are the kinds that exist; a club code
-// (CLU-91) is one more entry here, not a third path. The splash says what KIND
+// Friend links, group invites and club invites are the kinds that exist. A
+// club code was always meant to be one more entry here rather than a third
+// path (CLU-91); CLU-526 made it one. The splash says what KIND
 // of link this is and never what the payload resolves to — a stranger cannot
 // look a profile up and must not be able to, and a kind that ever wants to name
 // a list goes through splashList() like every other surface, so the gated list
@@ -7814,6 +7815,33 @@ const ARRIVALS = {
     askBody: 'Everyone in the group sees your name and your progress on its list. You can leave whenever you like.',
     askYes: 'Join',
     settle: async tok=> joinByToken(tok)
+  },
+  club: {
+    // CLU-526. Nathan: "to be able to share a link code for clubs instead of
+    // just codes. make it so they function just like the friend code stuff."
+    //
+    // So it carries the CODE, exactly as the friend link carries the friend
+    // code — see clubLink() for why that, and not a token like the group half.
+    //
+    // `ask` for the same reason the group half asks, and it is the stronger
+    // case of the two: joining is done the instant it happens, and a club sees
+    // your name and your progress on its list unconditionally — no privacy
+    // switch may hide you from a club you are in (CLU-388). There is an accept
+    // step owed here and this is it.
+    //
+    // The words say CLUB and never GROUP. They are different features with
+    // different tables and Nathan ruled that neither is ever called the other
+    // (CLU-441): a group is cross-list passive sharing, a club is a few people
+    // watching ONE list together. That is also why this one lands on the list
+    // instead of the friends page — a club has a list to land on.
+    param: 'club', noun: 'club invite', ask: true,
+    head: 'Someone invited you to a watch club.',
+    body: 'Sign in and you can join. The club sees your name and your progress on its list.',
+    askHead: 'Join that club?',
+    askBody: 'Everyone in the club sees your name and your progress on its list. You can leave whenever you like.',
+    askYes: 'Join',
+    held: async code=> clubHeld(code),
+    settle: async code=> joinClubByCode(code)
   }
 };
 // Only ever index ARRIVALS through this. `ARRIVALS[k]` for a k that came out of
@@ -8063,7 +8091,7 @@ function pickSlug(){
   // ?account and ?friends are the same shell with other columns in it.
   // A friend link lands home too, never inside a remembered list.
   if(q.has('home') || q.has('account') || q.has('friend') || q.has('friends')
-     || q.has('g'))
+     || q.has('g') || q.has('club'))
     return null;
   const want = q.get('p');
   if(want && MANIFEST.some(m=>m.slug===want)) return want;
@@ -9774,11 +9802,14 @@ async function onSession(session, definitive){
       showHome();
     }
     settleArrival();
-    // Both notices, and arrivalTaken() is here because of CLU-505: a supersede
-    // caught at BOOT has no spendArrival to report it — there is deliberately
-    // no arrival left to spend — so without this call the tab went quiet in
-    // exactly the case the card is about.
-    if(definitive){ arrivalStale(); arrivalTaken(); }
+    // All three notices, and two of them are here for the same reason from
+    // opposite directions. arrivalTaken() (CLU-505): a supersede caught at
+    // BOOT has no spendArrival to report it — there is deliberately no
+    // arrival left to spend — so without this call the tab went quiet in
+    // exactly the case that card is about. clubSaid() (CLU-526): a club join
+    // that had to navigate to reach its list said so into a one-shot note,
+    // and this is the far side of that.
+    if(definitive){ arrivalStale(); arrivalTaken(); clubSaid(); }
     setTimeout(backfillSync, 1200);
     return;
   }
@@ -9869,7 +9900,10 @@ async function onSession(session, definitive){
   // until some later bare-URL load, or the TTL, took it (CLU-436). #fnote and
   // #arrask are on this view as much as on the shelf.
   settleArrival();
-  if(definitive){ arrivalStale(); arrivalTaken(); }   // see the shelf branch
+  // All three, guarded on `definitive` like arrivalStale() so none can fire
+  // and expire during the flicker before a restored session lands. See the
+  // shelf branch above for why arrivalTaken() and clubSaid() are both here.
+  if(definitive){ arrivalStale(); arrivalTaken(); clubSaid(); }
   // off the critical path: the first load fetches the index once, every
   // later load exits on the flag before any network
   setTimeout(backfillSync, 1200);
@@ -10634,6 +10668,40 @@ function ensureFcode(){
   return _fcode;
 }
 function friendLink(){ return 'https://clubd.watch/?friend=' + friendParam($('a-fcode').textContent); }
+// The club twin of friendLink(), and it carries the CODE for the same reason
+// that one does: the code IS the door, so a link is a way to press it without
+// typing, not a second credential.
+//
+// ⚠ It deliberately does NOT carry a token like the group invite link does.
+// A group has no code at all — migrate-groups.sql §1 enforces `code IS NULL`
+// on every universal row precisely so the code door cannot reach one — so a
+// group needs a token, and that token is readable only by the group's creator
+// (§2's RLS policy, and group_join_link() is owner-scoped). A club is the
+// opposite shape: it has a six-character code that EVERY member can read and
+// send. Wrapping a token instead would hand the same people a second, stronger
+// door, and it would make the link less shareable than the code it sits beside
+// — only the owner could produce one. Every token path in that migration is
+// gated on `universal` as well, so a club has no token row to read.
+//
+// ⚠ And it never carries ?p=<slug>. The splash says what KIND of link this is
+// and never what the payload resolves to (CLU-386), and the one list that must
+// stay out of every surface is the gated one. The list is reached by resolving
+// the code once there is a session — see clubLand().
+function clubLink(code){
+  const c = normClubCode(code);
+  return c ? 'https://clubd.watch/?club=' + c : '';
+}
+// A club code in whatever shape the link arrived in. Six characters from an
+// alphabet with no I, O, 0 or 1 — migrate-add-rate-limits.sql checks
+// ^[A-HJ-NP-Z2-9]{6}$ at the door — so a code lowercased by a mail client or
+// wrapped in punctuation by a chat client still resolves. The same forgiveness
+// normFcode() gives a friend code, for the same reason: the link is out of our
+// hands the moment it is sent, and a shape the door would refuse anyway costs
+// nothing to strip.
+function normClubCode(raw){
+  const c = (raw || '').toUpperCase().replace(/[^A-HJ-NP-Z2-9]/g, '');
+  return c.length === 6 ? c : null;
+}
 // The clipboard with the same fallback the progress code uses: where
 // writeText is refused (http, older Safari), the text goes into a field and
 // gets selected, so Ctrl/Cmd+C still works.
@@ -11281,13 +11349,34 @@ function arrNeedsOk(arr){
 async function settleArrival(){
   if(!ARRIVAL || !user) return;
   const arr = ARRIVAL;
-  if(!arrKind(arr.kind)){ ARRIVAL = null; arrClear(); return; }
+  const a = arrKind(arr.kind);
+  // Nulled here, once, before anything asynchronous or visible happens. There
+  // is always a second onSession, and it must find nothing left to re-ask or
+  // re-spend — which is what the three separate assignments this replaces were
+  // each doing for their own branch.
+  ARRIVAL = null;
+  if(!a){ arrClear(); return; }
+  // `held` is the kind's own chance to say "this is already true of you"
+  // BEFORE an ask is drawn, and it exists because of the no-dead-affordances
+  // rule: an ask whose Join button would re-run a join you already hold is a
+  // control that does nothing, and a person who is already in the club should
+  // be told that rather than asked a question with one wrong answer.
+  //
+  // It hands back a thunk rather than doing the work itself, so the slot is
+  // spent BEFORE the sentence or the navigation runs and no path can leave a
+  // finished invitation sitting on the machine. A throw or a refused read
+  // falls through to the ask — the behaviour of every kind that cannot answer
+  // at all — because an unknown answer must never swallow the invitation.
+  if(a.held){
+    let done = null;
+    try{ done = await a.held(arr.payload); }
+    catch(e){ console.error('[arrival] ' + arr.kind + ' held() threw', e); }
+    if(done){ arrClear(); done(); return; }
+  }
   if(arrNeedsOk(arr)){
-    ARRIVAL = null;
     showAsk(arr);   // and NOTHING is written until the yes
     return;
   }
-  ARRIVAL = null;
   await spendArrival(arr);
 }
 // Claim it, spend it, report it. Everything past the claim has already cost the
@@ -11483,6 +11572,129 @@ async function joinByToken(tok){
     console.error('[groups] invite link failed', e);
     flash('Could not join that group.');
   }
+}
+// The club half of an arrival (CLU-526), in three pieces: what is already true
+// before anything is asked, what to do about a code that has to be spent, and
+// where a person ends up either way.
+//
+// ---- 1. already true -------------------------------------------------------
+// Answers the registry's `held` hook: null to fall through to the ask, or a
+// thunk the arrival machinery runs once it has spent the slot.
+//
+// Two things are already true before a question is worth asking, and both of
+// them would otherwise put a Join button in front of someone it cannot help:
+//
+//   * the code is not a code. join_group() would refuse it and charge the
+//     rate limiter for the guess, so say so instead of asking first.
+//   * you are already in that club. join_group() is not destructive here — it
+//     re-joins with `on conflict do update set display_name`, which renames
+//     you — but "Join that club?" is the wrong question to put to a member,
+//     and being renamed to your account name is a small thing to do to
+//     somebody who only opened a link.
+//
+// A refused or empty read is NOT an answer: myGroups() swallows its own errors
+// and returns empty clubs, which lands here as "not a member", which falls
+// through to the ask. That is the right direction to fail in — the ask still
+// works, and join_group()'s upsert makes a redundant join harmless.
+async function clubHeld(code){
+  const want = normClubCode(code);
+  if(!want) return ()=> arrSay('That club invite does not carry a valid join'
+    + ' code. Ask whoever sent it for a new link.');
+  if(!user || !sb) return null;
+  const MY = await myGroups();
+  const mine = ((MY && MY.clubs) || []).find(g=>
+    normClubCode(g.code) === want);
+  if(!mine) return null;
+  return ()=> clubLand(mine, 'You are already in ' + mine.name + '.');
+}
+// ---- 2. spend it -----------------------------------------------------------
+// join_group() is the door every typed code already goes through, so a link is
+// not a second way in — it is the same call with the six characters supplied by
+// the URL instead of by a keyboard. Nothing here needs a migration.
+async function joinClubByCode(code){
+  const want = normClubCode(code);
+  if(!want || !user || !sb) return;
+  const { data, error } = await sb.rpc('join_group', {
+    p_code: want,
+    p_display_name: acctName() || (user.email || 'you').split('@')[0]
+  });
+  if(error){
+    // the rate limiter's own sentence says how long to wait; the generic line
+    // would tell someone who has been throttled that the link is broken
+    arrSay(error.hint === 'rate_limited' ? error.message
+           : /no group/i.test(error.message || '')
+             ? 'No club has that code any more. Ask for a new link.'
+             : 'Could not join that club: ' + error.message);
+    return;
+  }
+  const joined = Array.isArray(data) ? data[0] : data;
+  // NULL rather than a raise is a MISS, not a failure: join_group() answers an
+  // unknown code quietly so the rate limiter can count the attempt without
+  // rolling its own count back (migrate-add-rate-limits.sql). Treating the
+  // quiet answer as success is the bug that stranded the first person through
+  // a gated list, so it is handled before anything reads `joined`.
+  if(!joined){
+    arrSay('That club invite is not valid any more. Ask for a new link.');
+    return;
+  }
+  dropMyGroups();          // the roster this account is in just changed
+  clubLand(joined, 'Joined ' + (joined.name || 'the club') + '.');
+}
+// ---- 3. land in it ---------------------------------------------------------
+// The difference between an invite link and a code, and the thing Nathan asked
+// for: you end up IN the club, not on the home page holding a sentence about
+// it. A club belongs to ONE list, so "in it" means that list with the club
+// picked — which is also why this does not land on the friends page the way the
+// group half does. A group has no list of its own to land on; a club does.
+function clubLand(g, said){
+  const prop = g && g.property_id;
+  if(!prop){ arrSay(said); return; }
+  // The same key the switcher and the club panel read, written for the
+  // DESTINATION property rather than for whatever page we are on now.
+  try{ localStorage.setItem('gw:group:' + prop, g.id); }catch(e){}
+  if(SLUG === prop){
+    // Already looking at it. Repaint rather than reload the page out from
+    // under someone who is mid-scroll.
+    arrSay(said);
+    if(typeof refreshGroup === 'function')
+      refreshGroup(false)
+        .then(()=>{ if(typeof startGroupPoll === 'function') startGroupPoll(); })
+        .catch(e=> console.error('[club] refresh after a link join failed', e));
+    return;
+  }
+  // ⚠ The list is NAMED only if the manifest knows it. titleOf() falls back to
+  // the raw slug, and the one list that must not be named anywhere is the gated
+  // one — so an unknown slug becomes a phrase, never an identifier.
+  const known = (MANIFEST || []).some(m=> m.slug === prop);
+  clubSay(said + ' Opening ' + (known ? titleOf(prop) : 'its list') + '.');
+  go(prop);
+}
+// go() is a real navigation, so a sentence said just before it would be gone
+// before anyone read it. One stamped one-shot note carries it across, swept on
+// read and dead in a minute — the same discipline the arrival slot needed and
+// for the same reason: a note left in durable storage with no clock reappears
+// next week attached to whoever is at the keyboard.
+const CLUBSAID = 'gw:clubsaid', CLUBSAID_TTL = 60 * 1000;
+function clubSay(text){
+  try{ localStorage.setItem(CLUBSAID,
+    JSON.stringify({ t: text, at: Date.now() })); }catch(e){}
+}
+function clubSaid(){
+  let raw = null;
+  try{ raw = localStorage.getItem(CLUBSAID); }catch(e){ return; }
+  if(!raw) return;
+  // removed FIRST, whatever it turns out to hold: a note that cannot be parsed
+  // would otherwise sit in localStorage for good, failing on every load
+  try{ localStorage.removeItem(CLUBSAID); }catch(e){}
+  let o = null;
+  try{ o = JSON.parse(raw); }catch(e){ return; }
+  if(!o || typeof o !== 'object' || typeof o.t !== 'string') return;
+  // A stamp in the future is dead, not immortal — ARRSKEW is the only slack,
+  // for a clock nudged under us between the write and the read.
+  const age = Date.now() - o.at;
+  if(typeof o.at !== 'number' || !isFinite(o.at)
+     || age < -ARRSKEW || age > CLUBSAID_TTL) return;
+  arrSay(o.t);
 }
 // One fetch feeds everything social: the inbox (home + account), the
 // friends list, and the request badges on the pills.
@@ -11972,12 +12184,30 @@ async function renderMyClubs(){
       + esc(g.name) + '" data-clp="' + esc(g.property_id) + '">leave</button>'
       + '<span class="acode">' + esc(g.code) + '</span>'
       + '<button class="abtn" data-ccopy="' + esc(g.code) + '">Copy</button>'
+      // CLU-526, and the label matches the groups card above deliberately: the
+      // two cards do the same job with the same word. Drawn only when the code
+      // can actually make a link — a button that copied an empty string would
+      // be the dead affordance this feature exists to avoid.
+      + (clubLink(g.code)
+         ? '<button class="abtn" data-clink="' + esc(g.code)
+           + '" title="Copy a link that joins ' + esc(g.name)
+           + '">Invite link</button>'
+         : '')
       + '<button class="abtn" data-copen="' + esc(g.property_id) + '">Open</button>'
       + '</div>'), 'clubs', 'fp-clubs');
     pkAll(host);
     host.querySelectorAll('button[data-ccopy]').forEach(b=>{
       b.onclick = ()=> friendsCopy(b.dataset.ccopy,
         'Club code copied — send it to whoever’s joining.', b);
+    });
+    // friendsCopy, never acctCopy: #a-msg and #a-clip both live inside
+    // #accountv, which showFriendsPage() hides, so a confirmation written there
+    // is a confirmation nobody can see (CLU-523). This reports under the row the
+    // press happened in — "under the row makes more sense, sense its right
+    // next to where the user is looking already".
+    host.querySelectorAll('button[data-clink]').forEach(b=>{
+      b.onclick = ()=> friendsCopy(clubLink(b.dataset.clink),
+        'Invite link copied — anyone with it can join this club.', b);
     });
     host.querySelectorAll('button[data-copen]').forEach(b=>{
       b.onclick = ()=> go(b.dataset.copen);
@@ -14786,6 +15016,16 @@ function clubFoot(){
     + ((group && !isUgroup(group) && group.code)
         ? '<button class="gcode ccode" id="b-gcopy" title="Tap to copy — the code you send people">'
           + esc(group.code) + '</button>'
+          // CLU-526. After the chip, so the two ways of handing this club out
+          // sit together on the right — .ccode carries the margin-left:auto
+          // that pushes the pair there, and .cfoot wraps, so a narrow screen
+          // drops both onto their own line rather than squeezing the chip.
+          // Drawn only when the code can make a link, for the same reason the
+          // chip is not drawn for a group: no control that would do nothing.
+          + (clubLink(group.code)
+             ? '<button class="aquiet" id="b-glink" title="Copy a link that '
+               + 'joins this club — the code, without the typing">link</button>'
+             : '')
         : '');
 }
 
@@ -14793,6 +15033,15 @@ function wireClubFoot(){
   const copy = $('b-gcopy');
   if(copy) copy.onclick = ()=> copyWithFallback(
     group.code, 'Club code copied — send it to whoever’s joining.',
+    'gmsg2', 'g-clip');
+  // #gmsg2 and #g-clip are the pair that live on THIS view, immediately under
+  // #gfoot — which is why the chip uses them and not #a-msg. The link
+  // reports through the same two, so both controls in the foot answer in the
+  // same place, a line below the press.
+  const lnk = $('b-glink');
+  if(lnk) lnk.onclick = ()=> copyWithFallback(
+    clubLink(group.code),
+    'Invite link copied — anyone with it can join this club.',
     'gmsg2', 'g-clip');
   const add = $('b-gadd');
   if(add) add.onclick = ()=>{

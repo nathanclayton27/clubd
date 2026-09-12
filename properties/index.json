@@ -1753,19 +1753,19 @@
       "comics"
     ],
     "title": "Batman",
-    "subtitle": "a reading order",
+    "subtitle": "the essential runs, issue by issue",
     "kind": "comics",
-    "year": "1986–2021",
+    "year": "1986–2019",
     "popularity": 72,
-    "blurb": "The stories Wikipedia's publication history of Batman stops to name, from The Dark Knight Returns to Fear State — collected stories rather than issues, sectioned by era.",
+    "blurb": "225 issues in twelve runs, from The Dark Knight Returns to the end of Tom King's — a route through the character rather than everything ever printed.",
     "accent": "#1B2436",
     "accentDark": "#D8B740",
     "unit": {
-      "one": "story",
-      "many": "stories"
+      "one": "issue",
+      "many": "issues"
     },
     "vpast": "read",
-    "total": 35
+    "total": 225
   },
   {
     "slug": "chainsaw-man",
