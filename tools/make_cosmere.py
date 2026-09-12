@@ -28,7 +28,15 @@ CARD_STORIES = {"Elsecaller", "King Lopen the First of Alethkar"}
 
 
 def slugify(t):
-    t = t.replace("'", "")
+    # CLU-430. This fold DELETES a straight apostrophe (`The Emperor's Soul`
+    # gives the-emperors-soul) and left U+2019 alone, so a curly one reached
+    # the isalnum test below and became a dash instead. Two spellings of one
+    # title would reach two ids, and an id is the `item_id` every tick and
+    # thumb is stored against — moving one unticks the row for everyone
+    # holding it. Drop both forms: that is the correction THIS direction
+    # needs, and the opposite of what the folds that dash a straight
+    # apostrophe need.
+    t = t.replace("'", "").replace("’", "").replace("‘", "")
     keep = "".join(c.lower() if c.isalnum() else "-" for c in t)
     keep = keep.encode("ascii", "ignore").decode("ascii")
     while "--" in keep:
