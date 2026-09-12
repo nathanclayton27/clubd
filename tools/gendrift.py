@@ -33,9 +33,12 @@ file into a temp directory - never over the real one - and compares:
   * a property nothing generates, unless NO_GENERATOR says why.
 
 AND IT SAYS WHAT IT COULD NOT CHECK. A checker reporting "clean" when it skipped
-a third of the catalogue is worse than none. Anything not actually compared is
-printed under UNCHECKED with its reason, every run, and makes the run incomplete
-rather than clean.
+a third of the catalogue is worse than none - and a third is roughly what a clean
+checkout of this repo skips, because about forty lists are built from data in
+gitignored scratch/ or is fetched live rather than from a committed cache. So
+anything not actually compared is printed under UNCHECKED with its reason, every
+run, and the run reports itself as incomplete rather than clean. On this machine,
+with those scratch caches present, only a handful go unchecked.
 
 Every table below is debt, and the checker guards the tables too: an entry that no
 longer matches reality is itself a failure, so the lists shrink instead of rotting.
@@ -154,6 +157,54 @@ KNOWN_STALE = {s: _4EF1B1D for s in (
     "body-swap", "frieren", "gossip-girl", "gurren-lagann", "inuyasha",
     "outlaw-star", "sailor-moon", "samurai-jack", "the-big-o",
     "yuyu-hakusho")}
+
+# ---------------------------------------------------------------------------
+# WHICH LIST A GENERATOR OWNS, WITHOUT RUNNING IT. Needed because a generator
+# that cannot run writes nothing, and a list with no output looked exactly like
+# a list with no generator - which had 41 of them reported as hand-maintained on
+# a clean checkout. Deliberately narrow: the house docstring convention
+# ("""Generate properties/<slug>.json), a literal "properties" / "x.json", and
+# `"properties" / ("%s.json" % SLUG)` resolved through a module-level constant.
+# A name that is not a file in properties/ is ignored, so a docstring mentioning
+# another list cannot claim it.
+_DECL = None
+
+
+def declared_slugs(path):
+    global _DECL
+    if _DECL is None:
+        _DECL = {p.stem for p in PROPS.glob("*.json")} - {"index", "search"}
+    t = path.read_text(encoding="utf-8", errors="replace")
+    consts = dict(re.findall(r'^([A-Z_][A-Z0-9_]*)\s*=\s*"([a-z0-9-]+)"\s*$', t, re.M))
+    out = set()
+    m = re.search(r'^\s*(?:"""|\x27\x27\x27)(?:Generate|Build) '
+                  r'properties/([a-z0-9-]+)\.json', t, re.M)
+    if m:
+        out.add(m.group(1))
+    # the prop dict's own slug, for the ones that hand it to gwlib.prop.write()
+    out |= set(re.findall(r'^\s*"slug":\s*"([a-z0-9-]+)",', t, re.M))
+    out |= set(re.findall(r'"properties"\s*/\s*\(?\s*"([a-z0-9-]+)\.json"', t))
+    for name in re.findall(r'"properties"\s*/\s*\(?\s*"%s\.json"\s*%\s*([A-Za-z_]\w*)', t):
+        if name in consts:
+            out.add(consts[name])
+    for name in re.findall(r'"properties"\s*/\s*f"\{([A-Za-z_]\w*)\}\.json"', t):
+        if name in consts:
+            out.add(consts[name])
+    return {s for s in out if s in _DECL}
+
+
+# What kept a generator from running, in the words the report should use. A
+# reason this recognises is UNCHECKED; anything else is a failure, because an
+# unexplained break means a list nobody can rebuild and nobody noticed.
+def why_it_could_not_run(err):
+    if "NETWORK BLOCKED" in err:
+        return ("needs the network - its source is not in a committed cache; "
+                "re-run with --net")
+    if re.search(r"scratch[\\/]", err) or "No module named 'fetch'" in err:
+        return ("its source data lives in gitignored scratch/, so it cannot run "
+                "from a clean checkout of this repo")
+    return None
+
 
 problems = []        # unrecorded: exit 1
 recorded = []        # (reason, subject) pairs of recorded debt, printed every run
@@ -396,23 +447,30 @@ def main(argv=None):
             results.append(r)
 
     owners = collections.defaultdict(list)
+    # a list nothing produced, and the generator that was supposed to. Read
+    # statically, because a generator that dies writes nothing and a list with
+    # no output is otherwise indistinguishable from a list with no generator.
+    orphaned = {}
     for g, rc, err, wrote in results:
         if rc == -1:
             slugs, why = CANNOT_RUN[g.name]
             debt(why, "%s cannot run" % g.name)
             for s in slugs:
-                unchecked.append("%s: not compared - %s cannot run" % (s, g.name))
+                orphaned.setdefault(s, "%s cannot run - %s" % (g.name, why))
             continue
         if rc != 0 and not wrote:
-            if "NETWORK BLOCKED" in err:
-                unchecked.append("%s: needs the network - its source is not in a "
-                                 "committed cache; re-run with --net" % g.name)
-            else:
+            why = why_it_could_not_run(err)
+            if why is None:
                 last = [l for l in err.strip().splitlines() if l.strip()]
                 bad("%s exits %d and CANNOT_RUN does not say why - the list it "
                     "owns cannot be rebuilt by anyone. Last line: %s"
                     % (g.name, rc, last[-1][:160] if last else "(no output)"))
-                unchecked.append("%s: failed, see REFUSED" % g.name)
+                why = "failed, see REFUSED"
+            mine = declared_slugs(g)
+            for s in mine:
+                orphaned.setdefault(s, "%s %s" % (g.name, why))
+            if not mine:      # otherwise each list says it, which is the useful half
+                unchecked.append("%s: %s" % (g.name, why))
             continue
         for s in wrote:
             owners[s].append((g, tmp / g.stem / (s + ".json")))
@@ -483,14 +541,17 @@ def main(argv=None):
                 "field and no id does - the generator serialises differently "
                 "(key order or line endings)." % (slug, g.name))
     for slug in sorted(KNOWN_STALE):
-        if slug not in checked and not subset:
-            bad("KNOWN_STALE names %s, which nothing regenerated - delete the "
-                "line or find out why" % slug)
+        # only a list that was actually regenerated can prove its line stale;
+        # on a clean checkout a third of them cannot run at all
+        if slug in checked or subset:
+            continue
+        if slug not in orphaned and (PROPS / (slug + ".json")).exists():
+            bad("KNOWN_STALE names %s, which nothing regenerated and nothing "
+                "claims - delete the line or find out why" % slug)
 
     # ---- coverage: everything in properties/ is checked or excused --------
     if not subset:
         covered = set(checked)
-        wrote_by = {s for _, _, _, wrote in results for s in wrote}
         for f in sorted(PROPS.glob("*.json")):
             if f.name in NOT_A_LIST or f.stem in covered:
                 continue
@@ -508,9 +569,8 @@ def main(argv=None):
                 unchecked.append("%s: no generator - %s"
                                  % (f.stem, NO_GENERATOR[f.stem]))
                 continue
-            if any(f.stem in slugs for slugs, _ in CANNOT_RUN.values()):
-                continue          # already reported against its generator
-            if f.stem in wrote_by:
+            if f.stem in orphaned:
+                unchecked.append("%s: not compared - %s" % (f.stem, orphaned[f.stem]))
                 continue
             bad("%s has no generator and NO_GENERATOR does not say why. Either "
                 "it is hand-maintained - say so there - or its generator no "
@@ -541,6 +601,12 @@ def main(argv=None):
     print()
     print("  %d of %d list(s) regenerated and compared; %d byte-identical to "
           "what their generator makes" % (len(checked), n_lists, len(clean)))
+    if orphaned and not subset:
+        n_scratch = sum(1 for w in orphaned.values() if "scratch/" in w)
+        print("  %d list(s) could not be regenerated from this checkout at all%s"
+              % (len(orphaned),
+                 " - %d of them because their source data lives in gitignored "
+                 "scratch/ rather than in the repo" % n_scratch if n_scratch else ""))
     if recorded:
         by = collections.defaultdict(set)
         for reason, subject in recorded:
