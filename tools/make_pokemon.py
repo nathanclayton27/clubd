@@ -6,7 +6,7 @@
 The Pokemon mainline, one section per generation in release order: the pair
 that defines each generation, plus the remakes and third versions that are
 different enough from what they retell to be a second sitting, plus the two
-Legends games. Nine sections, first generation to ninth.
+Legends games. Ten sections, first generation to tenth.
 
 Where the roster came from
 --------------------------
@@ -60,12 +60,14 @@ generations means Japan. Red and Blue is dated 1996 because Pocket Monsters
 Red and Green shipped in February 1996; the West did not see Red and Blue
 until 1998. HowLongToBeat dates it 1996 too, which is why the two agree.
 
-Every row carries a real `w`. That is not decoration: the page computes
-`WEIGHT = x.w >= 0 ? x.w : 1`, so one missing weight on a weighted list
-silently books a forty-hour RPG as an hour — and the home page's bars now
-fill by hours on fully weighted lists, so the distortion is visible to
-readers rather than buried. There is no unweighted row here and no mechanism
-below to produce one: a row whose figure fails the gate fails the build.
+Every row that has come out carries a real `w`. That is not decoration: the
+page computes `WEIGHT = x.w >= 0 ? x.w : 1`, so one missing weight on a
+weighted list silently books a forty-hour RPG as an hour — and the home page's
+bars now fill by hours on fully weighted lists, so the distortion is visible
+to readers rather than buried. There is no unweighted row here and no
+mechanism below to produce one: a row whose figure fails the gate fails the
+build, and the one row for a game nobody can have played carries an explicit
+`w` of 0 rather than no `w` at all.
 
 The calls, made deliberately
 ----------------------------
@@ -114,11 +116,26 @@ direct sequel the numbered line has ever made, and the tree files it in the
 versions". This file asserts that column rather than taking the decision
 itself.
 
-**Winds and Waves is excluded because it is not out.** The tree dates the
-tenth generation 2027. HowLongToBeat has a record and no figure, and this
-file asserts that stays true — the day the site starts timing it, this build
-fails and someone adds a tenth section, rather than the list quietly staying
-a generation short.
+**Winds and Waves is a row, and it weighs nothing until it is out.** The
+owner's rule, CLU-315: announced work the source dates — even to a bare year —
+earns a row, and undated work does not. The family tree dates the tenth
+generation 2027 and the games' own article says "They are set to release in
+2027", so the pair is dated and it is a row, in a tenth section of its own.
+
+It carries an explicit `w` of 0. A missing `w` would book a full-size Pokemon
+RPG as one hour (CLU-131); zero is the honest figure and it leaves the other
+eighteen rows' verified HowLongToBeat hours alone. Both directions are
+asserted against the clock every run: while 2027 has not passed the row weighs
+0 and HowLongToBeat is asserted to still have no figure for it — the day the
+site starts timing it, the build fails, because a game people have finished
+has shipped — and once that year is behind us the build fails unless there is
+a real figure to put beside the row. It cannot quietly stay at zero and it
+cannot quietly become a phantom hour. Its section heading and its row note
+both say it is not out; no total counts it.
+
+Wikipedia does not name the tenth generation's region yet, so neither does its
+section heading. It describes "a tropical archipelago region resembling
+Southeast Asia" and gives no in-game name, and this list does not invent one.
 
 **Expansion passes and spin-offs are excluded.** The Isle of Armor and The
 Crown Tundra, The Hidden Treasure of Area Zero and Mega Dimension are add-ons
@@ -202,11 +219,23 @@ ROSTER = [
      "The second Legends game, set entirely inside Kalos's Lumiose City five "
      "years after X and Y, with Mega Evolution brought back. Optional for "
      "the same reason Arceus is."),
+    # ------------------------------------------------------------ tenth
+    ("ww", "Pokémon Winds and Waves", 10, 0, None),   # note computed below
 ]
 
 # Collected by the fetcher, asserted against, never shipped as a row: the
-# four editions the runtime test folds, and the generation that is not out.
-ASSERT_ONLY = ("yellow", "crystal", "usum", "lgpe", "ww")
+# four editions the runtime test folds.
+ASSERT_ONLY = ("yellow", "crystal", "usum", "lgpe")
+
+# Rows the source dates and nobody can have played yet. Each carries an
+# explicit w of 0 and says so in its note; main() asserts the year against the
+# clock and asserts the HowLongToBeat figure is still missing while it holds.
+UNRELEASED = {"ww"}
+
+# Prefixed to an unreleased row's own note, so the row still reads correctly
+# the day it ships and the note needs no second edit.
+NOT_OUT = ("Not out yet — dated %s, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
 
 # What each third version or remake retells. Membership of FOLDED versus
 # SPLIT is this file's editorial call and the assertion below is what holds
@@ -247,6 +276,14 @@ SECTIONS = [
     (9, "Ninth generation: Paldea",
      "%s. The series lets go of the corridor at last, and stops minding "
      "much where you go first."),
+    # No region name: Wikipedia describes a tropical archipelago resembling
+    # Southeast Asia and names no region, so this heading names none either.
+    # The second %s is the section's own year span, spliced in below.
+    (10, "Tenth generation",
+     "%s, and the first generation to leave the original Switch behind. "
+     "Dated %s and not out, so it sits here with an empty bar: the tree gives "
+     "the year, HowLongToBeat has no hours, and this list will not invent "
+     "any."),
 ]
 
 
@@ -270,6 +307,7 @@ def span(years):
 
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    today = datetime.date.today()
 
     # --- the roster, verified row by row ------------------------------------
     entries = []
@@ -302,16 +340,34 @@ def main():
         assert rec["gen"] == gen, \
             "%s: the family tree puts it in generation %s, this roster says %d" \
             % (key, rec["gen"], gen)
-        assert rec["first_date"], \
-            "%s has no dated release — release order would be a guess" % key
-        # All-or-nothing: the page reads a missing w as one hour, so a row
-        # without a real figure must break the build, never ship.
-        assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
-            ("no main-story figure for %s (%s) — this list is weighted and a "
-             "row without one would silently count as an hour"
-             % (key, rec["why"]))
+        if key in UNRELEASED and not rec["main_h"]:
+            # Dated to a year and not out. The row exists because the source
+            # dates it and it weighs nothing because nobody has played it.
+            # HowLongToBeat only carries a main-story figure for a game people
+            # have finished, so a figure here means it has shipped.
+            assert today.year <= rec["wiki_year"], \
+                ("%s was dated %s and that year has passed with no "
+                 "HowLongToBeat figure. Re-run scratch/pokemon/fetch_hltb.py "
+                 "— a released row must not stay at w 0, and it must not lose "
+                 "its w either (a missing w books itself as one hour)."
+                 % (key, rec["wiki_year"]))
+            assert not rec["first_date"], \
+                ("%s now has a dated release (%s) — read its article again "
+                 "and give the row a real date and a figure"
+                 % (key, rec["first_date"]))
+            w = 0
+        else:
+            assert rec["first_date"], \
+                "%s has no dated release — release order would be a guess" % key
+            # All-or-nothing: the page reads a missing w as one hour, so a row
+            # without a real figure must break the build, never ship.
+            assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
+                ("no main-story figure for %s (%s) — this list is weighted and "
+                 "a row without one would silently count as an hour"
+                 % (key, rec["why"]))
+            w = rec["main_h"]
         entries.append({"id": "pkm-%s" % key, "t": title,
-                        "n": str(rec["wiki_year"]), "w": rec["main_h"],
+                        "n": str(rec["wiki_year"]), "w": w,
                         "note": note, "gen": gen,
                         "opt": opt, "key": key, "date": rec["first_date"],
                         "column": rec["column"], "system": rec["system"]})
@@ -335,6 +391,11 @@ def main():
              % (e["key"], e["column"], "optional" if e["opt"] else "mainline"))
     spine = [e for e in entries if not e["opt"]]
     optional = [e for e in entries if e["opt"]]
+    # The rows for games that exist to play. Every total and every superlative
+    # below is taken over these, so a dated row with an empty bar can never
+    # move a number or win a comparison.
+    played = [e for e in entries if e["w"]]
+    played_spine = [e for e in spine if e["w"]]
     assert len(spine) == len({e["gen"] for e in spine}) + 1, \
         ("every generation should contribute exactly one flagship row, plus "
          "Black 2 and White 2 — got %d rows across %d generations"
@@ -386,9 +447,9 @@ def main():
     assert narrowest_split == "frlg", \
         "the FireRed note calls it the narrowest split here; %r is" \
         % narrowest_split
-    assert data["dp"]["main_h"] == max(e["w"] for e in entries), \
+    assert data["dp"]["main_h"] == max(e["w"] for e in played), \
         "the Diamond and Pearl note calls it the longest thing here"
-    assert data["swsh"]["main_h"] == min(e["w"] for e in spine), \
+    assert data["swsh"]["main_h"] == min(e["w"] for e in played_spine), \
         "the Sword and Shield note calls it the shortest of the mainline rows"
     assert data["hgss"]["main_h"] == max(
         data[k]["main_h"] for k in SPLIT if data[k]["column"] == "Remk"), \
@@ -411,13 +472,10 @@ def main():
         ("the Galar intro puts the Sinnoh remake and the open-world prequel "
          "inside a single winter; they are %d days apart" % winter)
 
-    # The tenth generation. The day it has a figure, it has shipped and this
-    # list needs a section rather than a paragraph.
-    assert not data["ww"]["main_h"], \
-        ("HowLongToBeat now times %s (%s h) — it has shipped, and it belongs "
-         "on this list" % (data["ww"]["article"], data["ww"]["main_h"]))
+    # The tenth generation is a row of its own, dated and unweighted; the
+    # clock and the missing figure are asserted in the roster loop above.
     assert data["ww"]["gen"] == max(v["gen"] for v in data.values()), \
-        "the unreleased game is no longer the newest generation"
+        "the unreleased generation is no longer the newest generation"
 
     # --- the notes that carry numbers, generated so they cannot rot ---------
     def hrs(gap):
@@ -497,17 +555,25 @@ def main():
     by_key["sv"]["note"] = (
         "Paldea, and the series' first true open world: three separate "
         "stories laid over one map, taken in whatever order you like. The "
-        "newest generation that has actually shipped — the tenth is dated "
-        "%s and HowLongToBeat has no figure for it yet."
+        "newest generation that has actually shipped — the tenth has a "
+        "section of its own below, dated %s and weighing nothing until it "
+        "opens."
         % data["ww"]["wiki_year"])
+    by_key["ww"]["note"] = (
+        "%s Game Freak's tenth generation, and the first for the %s — a "
+        "tropical archipelago the source describes and does not name. "
+        "Announced, dated, and nobody has played it."
+        % (NOT_OUT % data["ww"]["wiki_year"], data["ww"]["system"]))
     assert all(e["note"] for e in entries), \
         "a row reached the emitter without a note"
 
     # --- sections -----------------------------------------------------------
     sections = []
     for gen, sec_title, intro in SECTIONS:
+        # An undated row sorts last inside its generation: the only rows
+        # without a first_date are the ones that are not out.
         got = sorted([e for e in entries if e["gen"] == gen],
-                     key=lambda e: e["date"])
+                     key=lambda e: e["date"] or "9999-99-99")
         assert got, "empty section for generation %d" % gen
         assert [e["date"] for e in got] == \
             [e["date"] for e in entries if e["gen"] == gen], \
@@ -517,12 +583,26 @@ def main():
             "generation %d spans consoles %s" % (gen, sorted(consoles))
         years = [int(e["n"]) for e in got]
         hours = sum(e["w"] for e in got)
+        pending = [e for e in got if not e["w"]]
+        if len(pending) == len(got):
+            # Nothing here has come out, so there are no hours to state. A
+            # section that printed "0 hours story" would be stating a figure
+            # it does not have.
+            sub_ = "%s · %d %s · not out yet" \
+                   % (span(years), len(got),
+                      "game" if len(got) == 1 else "games")
+        else:
+            sub_ = "%s · %d %s · %d hours story" \
+                   % (span(years), len(got),
+                      "game" if len(got) == 1 else "games", round(hours))
+            if pending:
+                sub_ += " · %d not out yet" % len(pending)
         sections.append({
             "id": "gen%d" % gen, "title": sec_title,
-            "sub": "%s · %d %s · %d hours story"
-                   % (span(years), len(got),
-                      "game" if len(got) == 1 else "games", round(hours)),
-            "intro": intro % consoles.pop(),
+            "sub": sub_,
+            # A section intro takes the console the tree gives it, and may
+            # take its own year span as a second argument.
+            "intro": intro % (consoles.pop(), span(years))[:intro.count("%s")],
             "items": [{k: v for k, v in e.items()
                        if k in ("id", "t", "n", "w", "note")}
                       | ({"opt": 1} if e["opt"] else {})
@@ -537,19 +617,29 @@ def main():
     assert len(every) == len(ROSTER), (len(every), len(ROSTER))
     ids = [x["id"] for x in every]
     assert len(ids) == len(set(ids)), "duplicate row ids"
-    assert all(x.get("w", -1) > 0 for x in every), \
+    # Weighting is all or nothing: every row declares a w, and the only zeros
+    # are the rows this file knows are dated and not out. A row with no w at
+    # all would book itself as an hour (CLU-131).
+    assert all("w" in x for x in every), \
         "a row reached the emitter without a weight"
+    assert all(x["w"] >= 0 for x in every), "a negative weight"
+    zeros = {x["id"] for x in every if not x["w"]}
+    assert zeros == {"pkm-%s" % k for k in UNRELEASED
+                     if not data[k]["main_h"]}, sorted(zeros)
 
     hours = sum(x["w"] for x in every)
     spine_h = sum(e["w"] for e in spine)
     opt_h = sum(e["w"] for e in optional)
     legends = [e for e in optional if e["column"] == "Lgnd"]
-    assert spine[0]["t"].endswith("Red and Blue"), \
+    assert played_spine[0]["t"].endswith("Red and Blue"), \
         "the blurb opens the mainline on Red and Blue; it opens on %r" \
-        % spine[0]["t"]
-    assert spine[-1]["t"].endswith("Scarlet and Violet"), \
+        % played_spine[0]["t"]
+    assert played_spine[-1]["t"].endswith("Scarlet and Violet"), \
         "the blurb closes the mainline on Scarlet and Violet; it closes on %r" \
-        % spine[-1]["t"]
+        % played_spine[-1]["t"]
+    coming = [e for e in entries if not e["w"]]
+    assert len(coming) == 1 and coming[0]["key"] == "ww", \
+        "the blurb names one generation still to come: %r" % coming
 
     prop = {
         "slug": SLUG,
@@ -571,8 +661,10 @@ def main():
         "blurb": "The mainline start to finish, Red and Blue through Scarlet "
                  "and Violet — about %d hours of story. The remakes, the "
                  "third versions that diverge and the %s Legends games add "
-                 "%d more."
-                 % (round(spine_h), spell(len(legends)), round(opt_h)),
+                 "%d more, and the tenth generation is dated %s with no "
+                 "hours behind it yet."
+                 % (round(spine_h), spell(len(legends)), round(opt_h),
+                    data["ww"]["wiki_year"]),
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},
         "itemOrder": "number-first",
@@ -634,6 +726,19 @@ def main():
              "matters in a series where Gold and Silver, HeartGold and "
              "SoulSilver, and a fan hack called Sacred Gold all answer to a "
              "search for the same words."],
+            ["The tenth generation is here, with an empty bar.",
+             "Winds and Waves is dated %s by the family tree and by its own "
+             "article, and dated work belongs on a list even before it comes "
+             "out. Its bar is empty because nobody has played it: "
+             "HowLongToBeat has a record for it and no figure, and this list "
+             "refuses to guess one, so the row counts as a game and adds no "
+             "hours to any total. The year is checked against the clock on "
+             "every build — if the site starts timing the games, or if %s "
+             "passes with no figure behind them, the build stops rather than "
+             "leave the bar empty or invent an hour. Wikipedia describes a "
+             "tropical archipelago and names no region, so the section "
+             "heading names none either."
+             % (data["ww"]["wiki_year"], data["ww"]["wiki_year"])],
             ["What is not here.",
              "Spin-offs, first: Mystery Dungeon, Snap, Ranger, GO, Unite, "
              "Stadium, Colosseum, Pinball, Conquest and everything else "
@@ -641,19 +746,16 @@ def main():
              "Expansion passes are out too — The Isle of Armor and The Crown "
              "Tundra, The Hidden Treasure of Area Zero, Mega Dimension — "
              "because they are add-ons you load into a save file for a game "
-             "already on this page rather than something you start. And the "
-             "tenth generation, Winds and Waves, is dated 2027 and is not "
-             "out; HowLongToBeat has a record for it and no figure, and this "
-             "list refuses to guess one. It goes on the day there is a real "
-             "number to put beside it."],
+             "already on this page rather than something you start."],
             ["Hours are story only.",
              "HowLongToBeat main-story figures — the run to the credits, not "
              "a completed Pokédex, not shiny hunting, not competitive "
              "breeding, and none of the hundreds of hours the endgame will "
-             "take if you let it. Every row here carries a real figure; "
-             "nothing on this list was estimated, and a row whose figure "
-             "fails the name-and-year check fails this build instead of "
-             "shipping unweighted."],
+             "take if you let it. Every row for a game you can play carries a "
+             "real figure; nothing on this list was estimated, a row whose "
+             "figure fails the name-and-year check fails this build instead "
+             "of shipping unweighted, and the one row with no figure is the "
+             "one whose games are not out."],
             "Game list, generations, release order, years and the "
             "main/remake/upper-version split from the family tree in "
             "Wikipedia's Pokémon (video game series) article and each game's "
@@ -666,9 +768,10 @@ def main():
     P.write(prop)
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d games, %d hours (%d mainline, %d optional)"
-          % (len(sections), len(every), round(hours), round(spine_h),
-             round(opt_h)))
+    print("  %d sections, %d games (%d playable), %d hours (%d mainline, "
+          "%d optional)"
+          % (len(sections), len(every), len(played), round(hours),
+             round(spine_h), round(opt_h)))
     for s in sections:
         print("   %-30s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
     print("  the %.1f h fold test:" % EDITION_SLACK_H)
@@ -679,8 +782,10 @@ def main():
                  data[base]["main_h"], gaps[k],
                  "FOLD" if gaps[k] <= EDITION_SLACK_H else "split"))
     for e in entries:
-        print("   %-46s %s  w=%-7s%s"
-              % (e["t"], e["n"], e["w"], "  (optional)" if e["opt"] else ""))
+        print("   %-46s %s  w=%-7s%s%s"
+              % (e["t"], e["n"], e["w"],
+                 "  (optional)" if e["opt"] else "",
+                 "  (not out)" if not e["w"] else ""))
 
 
 if __name__ == "__main__":

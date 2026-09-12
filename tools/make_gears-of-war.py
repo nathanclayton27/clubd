@@ -80,11 +80,30 @@ same rule fps-canon uses to cut live-service shooters.
 squads, sold apart from the games they attach to, and HowLongToBeat times
 both. They are optional because each needs its parent game.
 
-**E-Day is excluded because it is not out.** Wikipedia gives 6 October 2026.
-HowLongToBeat has a record and no figure, and this file asserts that stays
-true — the day the site starts timing it, this build fails and someone adds
-the row, rather than the list quietly staying a game short.
+**E-Day is a row, and it weighs nothing until it is out.** The owner's rule,
+CLU-315: announced work the source dates — even to a bare year — earns a row;
+undated work does not. Its own article's infobox gives `released = October 6,
+2026` and its short description reads "Upcoming video game", so it is dated
+and it is a row.
+
+An unreleased row carries an explicit `w` of 0, never a missing one. The page
+resolves `WEIGHT = x.w >= 0 ? x.w : 1`, so a row without a weight on a
+weighted list silently books itself as an hour (CLU-131) — an invented hour
+for a game nobody can have played. Zero is the honest figure and it leaves the
+other nine rows' verified HowLongToBeat hours alone.
+
+Both directions are asserted against the clock every run:
+
+  * while the date is in the future the row weighs 0, its note says when the
+    game is due, and HowLongToBeat is asserted to still have no figure for it
+    — the day the site starts timing it this build fails, because a game
+    people have finished has shipped;
+  * the day the date passes, the build fails unless
+    tools/data/gears-of-war.json carries a name-and-year-gated figure. Re-run
+    scratch/gears-of-war/fetch_hltb.py and the row weights itself. It cannot
+    quietly stay at zero and it cannot quietly become a phantom hour.
 """
+import datetime
 import json
 import pathlib
 import sys
@@ -129,7 +148,22 @@ ROSTER = [
     ("hivebusters", "Gears 5: Hivebusters", "2020-12-15", "coalition", 1,
      "Downloadable expansion for Gears 5: Scorpio Squad, six chapters in "
      "Sera's South Islands, and the series at its most colourful"),
+    ("eday", "Gears of War: E-Day", "2026-10-06", "coalition", 0,
+     "Emergence Day itself, fourteen years before the first game — Marcus "
+     "and Dom pulled back into a war that starts under their feet, in the "
+     "industrial city of Kalona"),
 ]
+
+# Rows the source dates and nobody can have played yet. Each carries an
+# explicit w of 0 and says so in its note; main() asserts the date against the
+# clock in both directions, and asserts the HowLongToBeat figure is still
+# missing while that date is in the future.
+UNRELEASED = {"eday"}
+
+# Prefixed to an unreleased row's own note, so the row still reads correctly
+# the day it ships and the note needs no second edit.
+NOT_OUT = ("Not out yet — due %s, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
 
 SECTIONS = [
     ("epic", "The Epic years",
@@ -141,6 +175,10 @@ SECTIONS = [
 ]
 
 
+def longdate(d):
+    return "%d %s %d" % (d.day, d.strftime("%B"), d.year)
+
+
 def named_ok(got, want):
     """The gate's own name test: HowLongToBeat suffixes DLC entries " DLC"."""
     g, w = P.normt(got or ""), P.normt(want)
@@ -149,6 +187,7 @@ def named_ok(got, want):
 
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    today = datetime.date.today()
 
     # --- the roster, verified row by row -----------------------------------
     entries = []
@@ -165,13 +204,32 @@ def main():
         assert rec["wiki_year"] == year, \
             "%s: the fetcher was told %s, this roster says %d" \
             % (key, rec["wiki_year"], year)
-        # All-or-nothing: the page reads a missing w as one hour, so a row
-        # without a real figure must break the build, never ship.
-        assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
-            ("no main-story figure for %s (%s) — this list is weighted and a "
-             "row without one would silently count as an hour" % (key, rec["why"]))
+        due = datetime.date.fromisoformat(date)
+        if key in UNRELEASED and due > today:
+            # Dated, not out. The row exists because the source dates it and
+            # it weighs nothing because nobody has played it. HowLongToBeat
+            # only carries a main-story figure for a game people have
+            # finished, so a figure appearing here means it has shipped.
+            assert not rec["main_h"], \
+                ("HowLongToBeat now times %s (%s h) — it has landed ahead of "
+                 "the %s its own article gives. Give the row its hours."
+                 % (title, rec["main_h"], due))
+            w = 0
+            note = "%s %s" % (NOT_OUT % longdate(due), note)
+        else:
+            # All-or-nothing: the page reads a missing w as one hour, so a row
+            # without a real figure must break the build, never ship. That
+            # includes a row whose stated release date has passed — it must
+            # not stay at zero either.
+            assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
+                ("no main-story figure for %s (%s) — this list is weighted "
+                 "and a row without one would silently count as an hour. If "
+                 "the %s date has passed, re-run "
+                 "scratch/gears-of-war/fetch_hltb.py."
+                 % (key, rec["why"], due))
+            w = rec["main_h"]
         x = {"id": "gow-%s" % key, "t": title, "n": str(year),
-             "w": rec["main_h"], "note": note, "date": date, "sec": sec}
+             "w": w, "note": note, "date": date, "sec": sec}
         if opt:
             x["opt"] = 1
         entries.append(x)
@@ -192,11 +250,8 @@ def main():
             ("%s times %s h against the 2006 original's %s h — that is no "
              "longer 'the same campaign, better lighting', so the one-row "
              "decision needs revisiting" % (label, rec["main_h"], original))
-    # E-Day is excluded for being unreleased. The day it has a figure, this
-    # build fails rather than the list quietly staying a game short.
-    assert not data["eday"]["main_h"], \
-        ("HowLongToBeat now times Gears of War: E-Day (%s h) — it has "
-         "shipped, and it belongs on this list"% data["eday"]["main_h"])
+    # E-Day is a dated row that weighs nothing until it opens; its date, its
+    # missing figure and the clock are asserted in the roster loop above.
 
     # --- sections ----------------------------------------------------------
     sections = []
@@ -205,10 +260,14 @@ def main():
         assert got, "empty section %s" % sec_id
         years = [int(e["n"]) for e in got]
         hours = sum(e["w"] for e in got)
+        pending = [e for e in got if not e["w"]]
+        sub = "%d–%d · %d campaigns · %d hours story" \
+              % (years[0], years[-1], len(got), round(hours))
+        if pending:
+            sub += " · %d not out yet" % len(pending)
         sections.append({
             "id": sec_id, "title": sec_title,
-            "sub": "%d–%d · %d campaigns · %d hours story"
-                   % (years[0], years[-1], len(got), round(hours)),
+            "sub": sub,
             "intro": intro,
             "items": [{k: v for k, v in e.items()
                        if k in ("id", "t", "n", "w", "note", "opt")}
@@ -219,22 +278,35 @@ def main():
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)) == len(ROSTER), (len(ids), len(ROSTER))
     every = [x for s in sections for x in s["items"]]
-    assert all(x.get("w", -1) > 0 for x in every), \
+    # Weighting is all or nothing: every row declares a w, and the only zeros
+    # are the rows this file knows the source dates and nobody can have
+    # played. A row with no w at all would book itself as an hour (CLU-131).
+    assert all("w" in x for x in every), \
         "a row reached the emitter without a weight"
+    assert all(x["w"] >= 0 for x in every), "a negative weight"
+    zeros = {x["id"] for x in every if not x["w"]}
+    assert zeros == {"gow-%s" % k for k in UNRELEASED
+                     if not data[k]["main_h"]}, zeros
 
-    hours = sum(x["w"] for x in every)
-    main = sum(x["w"] for x in every if not x.get("opt"))
-    longest = max(every, key=lambda x: x["w"])
-    shortest = min(every, key=lambda x: x["w"])
+    # Every figure below is summed over the campaigns that exist to play, so a
+    # dated row with an empty bar cannot move a total or a superlative.
+    played = [x for x in every if x["w"]]
+    hours = sum(x["w"] for x in played)
+    main = sum(x["w"] for x in played if not x.get("opt"))
+    longest = max(played, key=lambda x: x["w"])
+    shortest = min(played, key=lambda x: x["w"])
     assert longest["id"] == "gow-tactics", \
         "the Tactics note claims it is the longest campaign here; %r is" \
         % longest["t"]
     assert shortest["id"] == "gow-raam", \
         "the RAAM's Shadow note claims it is the shortest sitting here; %r is" \
         % shortest["t"]
-    numbered = [x for x in every if not x.get("opt")]
+    numbered = [x for x in played if not x.get("opt")]
     assert max(numbered, key=lambda x: x["w"])["id"] == "gow-gears5", \
         "the Gears 5 note claims it is the longest of the numbered campaigns"
+    # The one date a note prints, taken from the roster rather than retyped.
+    eday_due = longdate(datetime.date.fromisoformat(
+        next(d for k, _t, d, _s, _o, _n in ROSTER if k == "eday")))
 
     prop = {
         "slug": SLUG,
@@ -299,18 +371,27 @@ def main():
              "against Gears 5, which is why both are marked optional. Each "
              "is a separate campaign with its own squad rather than a "
              "mission pack, and each is a single evening."],
+            ["E-Day is here, with an empty bar.",
+             "The prequel set fourteen years before the first game is "
+             "announced for %s and is not out. It gets a row because its own "
+             "article dates it, and the row weighs nothing because nobody has "
+             "played it: HowLongToBeat has a record for it and no figure, and "
+             "this list refuses to guess one. The date is checked against the "
+             "clock on every build — if the site starts timing the game, or "
+             "if that date passes with no figure behind it, the build stops "
+             "rather than leaving the bar empty or inventing an hour."
+             % eday_due],
             ["What is not here.",
              "Gears Pop! was a Funko-branded mobile strategy game with no "
              "campaign, and Microsoft shut its servers off in April 2021 — "
-             "there is nothing left to play. E-Day, the prequel set fourteen "
-             "years before the first game, is announced for 6 October 2026 "
-             "and is not out; HowLongToBeat has a record for it and no "
-             "figure, and this list refuses to guess one. It goes on the day "
-             "there is a real number to put beside it."],
+             "there is nothing left to play. The remasters are folded into "
+             "the row for the campaign they hold."],
             ["Hours are story only.",
              "HowLongToBeat main-story figures — normal difficulty, no "
-             "Insane runs, no Horde, no multiplayer. Every row here carries "
-             "a real one; nothing on this list was estimated."],
+             "Insane runs, no Horde, no multiplayer. Every row for a game you "
+             "can play carries a real one; nothing on this list was "
+             "estimated, and the only row without a figure is the one whose "
+             "game is not out."],
             "Game list, release order and dates from Wikipedia's Gears of "
             "War article and the individual game articles; hours from "
             "HowLongToBeat main-story figures, verified by name and exact "
@@ -322,13 +403,16 @@ def main():
     P.write(prop)
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d campaigns, %d hours (%d the numbered line)"
-          % (len(sections), len(ids), round(hours), round(main)))
+    print("  %d sections, %d campaigns (%d playable), %d hours (%d the "
+          "numbered line)"
+          % (len(sections), len(ids), len(played), round(hours), round(main)))
     for s in sections:
         print("   %-18s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
     for x in every:
-        print("   %-34s %s  w=%-6s%s"
-              % (x["t"], x["n"], x["w"], "  (optional)" if x.get("opt") else ""))
+        print("   %-34s %s  w=%-6s%s%s"
+              % (x["t"], x["n"], x["w"],
+                 "  (optional)" if x.get("opt") else "",
+                 "  (not out)" if not x["w"] else ""))
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 88,
   "year": "1996–",
-  "blurb": "The mainline start to finish, Red and Blue through Scarlet and Violet — about 319 hours of story. The remakes, the third versions that diverge and the two Legends games add 237 more.",
+  "blurb": "The mainline start to finish, Red and Blue through Scarlet and Violet — about 319 hours of story. The remakes, the third versions that diverge and the two Legends games add 237 more, and the tenth generation is dated 2027 with no hours behind it yet.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -41,12 +41,16 @@
       "Red and Blue is dated 1996 because Pocket Monsters Red and Green shipped in February of that year; the West did not get Red and Blue until 1998. The same gap runs through the first five generations. HowLongToBeat dates these games the same way, which is what lets every runtime here be matched on an exact year rather than a tolerant window — and an exact year matters in a series where Gold and Silver, HeartGold and SoulSilver, and a fan hack called Sacred Gold all answer to a search for the same words."
     ],
     [
+      "The tenth generation is here, with an empty bar.",
+      "Winds and Waves is dated 2027 by the family tree and by its own article, and dated work belongs on a list even before it comes out. Its bar is empty because nobody has played it: HowLongToBeat has a record for it and no figure, and this list refuses to guess one, so the row counts as a game and adds no hours to any total. The year is checked against the clock on every build — if the site starts timing the games, or if 2027 passes with no figure behind them, the build stops rather than leave the bar empty or invent an hour. Wikipedia describes a tropical archipelago and names no region, so the section heading names none either."
+    ],
+    [
       "What is not here.",
-      "Spin-offs, first: Mystery Dungeon, Snap, Ranger, GO, Unite, Stadium, Colosseum, Pinball, Conquest and everything else under Wikipedia's spin-off heading. This list is the mainline. Expansion passes are out too — The Isle of Armor and The Crown Tundra, The Hidden Treasure of Area Zero, Mega Dimension — because they are add-ons you load into a save file for a game already on this page rather than something you start. And the tenth generation, Winds and Waves, is dated 2027 and is not out; HowLongToBeat has a record for it and no figure, and this list refuses to guess one. It goes on the day there is a real number to put beside it."
+      "Spin-offs, first: Mystery Dungeon, Snap, Ranger, GO, Unite, Stadium, Colosseum, Pinball, Conquest and everything else under Wikipedia's spin-off heading. This list is the mainline. Expansion passes are out too — The Isle of Armor and The Crown Tundra, The Hidden Treasure of Area Zero, Mega Dimension — because they are add-ons you load into a save file for a game already on this page rather than something you start."
     ],
     [
       "Hours are story only.",
-      "HowLongToBeat main-story figures — the run to the credits, not a completed Pokédex, not shiny hunting, not competitive breeding, and none of the hundreds of hours the endgame will take if you let it. Every row here carries a real figure; nothing on this list was estimated, and a row whose figure fails the name-and-year check fails this build instead of shipping unweighted."
+      "HowLongToBeat main-story figures — the run to the credits, not a completed Pokédex, not shiny hunting, not competitive breeding, and none of the hundreds of hours the endgame will take if you let it. Every row for a game you can play carries a real figure; nothing on this list was estimated, a row whose figure fails the name-and-year check fails this build instead of shipping unweighted, and the one row with no figure is the one whose games are not out."
     ],
     "Game list, generations, release order, years and the main/remake/upper-version split from the family tree in Wikipedia's Pokémon (video game series) article and each game's own article; hours from HowLongToBeat main-story figures, verified by name and exact release year."
   ],
@@ -246,7 +250,7 @@
           "t": "Pokémon Scarlet and Violet",
           "n": "2022",
           "w": 32.03,
-          "note": "Paldea, and the series' first true open world: three separate stories laid over one map, taken in whatever order you like. The newest generation that has actually shipped — the tenth is dated 2027 and HowLongToBeat has no figure for it yet."
+          "note": "Paldea, and the series' first true open world: three separate stories laid over one map, taken in whatever order you like. The newest generation that has actually shipped — the tenth has a section of its own below, dated 2027 and weighing nothing until it opens."
         },
         {
           "id": "pkm-lza",
@@ -255,6 +259,21 @@
           "w": 27.88,
           "note": "The second Legends game, set entirely inside Kalos's Lumiose City five years after X and Y, with Mega Evolution brought back. Optional for the same reason Arceus is.",
           "opt": 1
+        }
+      ]
+    },
+    {
+      "id": "gen10",
+      "title": "Tenth generation",
+      "sub": "2027 · 1 game · not out yet",
+      "intro": "Nintendo Switch 2, and the first generation to leave the original Switch behind. Dated 2027 and not out, so it sits here with an empty bar: the tree gives the year, HowLongToBeat has no hours, and this list will not invent any.",
+      "items": [
+        {
+          "id": "pkm-ww",
+          "t": "Pokémon Winds and Waves",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — dated 2027, and the bar stays empty until HowLongToBeat has hours for it. Game Freak's tenth generation, and the first for the Nintendo Switch 2 — a tropical archipelago the source describes and does not name. Announced, dated, and nobody has played it."
         }
       ]
     }

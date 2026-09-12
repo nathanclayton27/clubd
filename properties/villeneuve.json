@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 62,
   "random": true,
-  "year": "1998–2024",
+  "year": "1998–2026",
   "blurb": "Quebec dramas in French, thrillers made from other people's scripts, and the science fiction that made his name — every feature he has directed, in release order and weighted by runtime, about 22 hours of it.",
   "unit": {
     "one": "film",
@@ -22,11 +22,11 @@
   "notes": [
     [
       "Directed features only.",
-      "A film is here if the filmography's Director column says yes and the film has come out. Nothing else gates it: he wrote all four Quebec films and none of the four that followed, and he is credited producer on only the two Dune films. Out: the twelve shorts, music videos and commercials the article keeps in its own separate table, Next Floor and the Le Technétium segment of the anthology Cosmos among them. There is no Denis Villeneuve filmography article — this is the Film table inside the biography, cross-checked against the biography's own lead so that a table lagging its lead cannot leave a film off."
+      "A film is here if the filmography's Director column says yes and the source gives it a release date. Coming out is not the test; being dated is. Nothing else gates it: he wrote all four Quebec films and none of the four that followed, and he is credited producer on only the two Dune films. Out: the twelve shorts, music videos and commercials the article keeps in its own separate table, Next Floor and the Le Technétium segment of the anthology Cosmos among them. There is no Denis Villeneuve filmography article — this is the Film table inside the biography, cross-checked against the biography's own lead so that a table lagging its lead cannot leave a film off."
     ],
     [
-      "Two of the table's films are not here yet.",
-      "The Film table has thirteen rows and this list has eleven. Dune: Part Three is dated 18 December 2026; Bond 26 has no article and no date of its own, and the biography says Amazon MGM expects it in 2028. Both dates are re-read from the sources every time this list is generated and the generator refuses to build once either has passed, so the rows arrive on release rather than whenever somebody remembers."
+      "One film is here with an empty bar, and one is not here at all.",
+      "Dune: Part Three is a row: its own article dates it 18 December 2026, and dated work belongs on a list even before it opens. Its bar is empty because the same article publishes no runtime and nobody has watched it, and a weight this list cannot source is one it refuses to invent — so it counts as a film and adds no hours. Bond 26 is the one row of the Film table that is not here: no article, no wikilink and no date, only the biography saying Amazon MGM expects it in 2028. Both are re-read every time this list is generated — the build stops if Part Three opens, if it publishes a runtime, or if Bond 26 acquires a date — so the rows change on the sources rather than whenever somebody remembers. That is thirteen rows on the table and twelve here."
     ],
     [
       "Both Dune films are on the Dune list too, on purpose.",
@@ -34,7 +34,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "Every row carries one, read from the runtime field of that film's own Wikipedia infobox — 22 hours 26 minutes across the eleven of them, from Polytechnique at 77 minutes to Dune: Part Two at 165. There are no unweighted rows and no estimates anywhere: a row missing its runtime would quietly count as one hour and make the total confidently wrong, so the generator stops rather than guess. One number differs from the catalogue's other copy of the same film: the Dune list takes its screen runtimes from Wikidata and has Dune: Part Two at 166 minutes, where the film's own infobox says 165. This list keeps to the infobox for all eleven, because a total half from one source and half from another belongs to neither. The two rows still tick together — films are paired by title and year, never by runtime."
+      "Every row for a film that has opened carries one, read from the runtime field of that film's own Wikipedia infobox — 22 hours 26 minutes across the eleven of them, from Polytechnique at 77 minutes to Dune: Part Two at 165. There are no unweighted rows and no estimates anywhere: a row missing its runtime would quietly count as one hour and make the total confidently wrong, so the generator stops rather than guess, and the one film that is not out carries an explicit zero instead. One number differs from the catalogue's other copy of the same film: the Dune list takes its screen runtimes from Wikidata and has Dune: Part Two at 166 minutes, where the film's own infobox says 165. This list keeps to the infobox for all eleven, because a total half from one source and half from another belongs to neither. The two rows still tick together — films are paired by title and year, never by runtime."
     ],
     "Roster, career divisions and the writing and producing credits from the Filmography and Career sections of Wikipedia's Denis Villeneuve, read from the tables and headings themselves; runtimes, release dates, screenwriters and source material from each film's own article."
   ],
@@ -115,8 +115,8 @@
     {
       "id": "scifi",
       "title": "Science fiction at scale",
-      "sub": "2017–2024 · 3 films · 8 hours",
-      "intro": "The Blade Runner sequel, and then the two halves of Dune. These are the three longest features he has made — 483 minutes between them, more than a third of everything on this list — and Dune is the first film he produced as well as directed.",
+      "sub": "2017–2026 · 4 films · 8 hours · 1 not out yet",
+      "intro": "The Blade Runner sequel, and then Dune. The three he has released are the three longest features he has made — 483 minutes between them, more than a third of everything on this list — and Dune is the first film he produced as well as directed. Part Three is dated 18 December 2026 and sits here with an empty bar until it opens.",
       "items": [
         {
           "id": "dv-2017-blade-runner-2049",
@@ -138,6 +138,13 @@
           "n": "2024",
           "w": 2.75,
           "note": "Part two, and the last feature he has released — also a row on the Dune list here, and the two tick together"
+        },
+        {
+          "id": "dv-2026-dune-part-three",
+          "t": "Dune: Part Three",
+          "n": "2026",
+          "w": 0.0,
+          "note": "Not out yet — due 18 December 2026, and the bar stays empty until it opens · Part three, adapted from Dune Messiah, a novel by Frank Herbert"
         }
       ]
     }

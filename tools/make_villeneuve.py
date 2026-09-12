@@ -4,11 +4,11 @@
 
     PYTHONIOENCODING=utf-8 python tools/make_villeneuve.py
 
-Every feature Denis Villeneuve has directed and released, in release order —
-the rows of the Film table in Wikipedia's "Denis Villeneuve" article whose
-Director cell is a bare {{yes}} and whose film has actually come out. There is
-no separate "Denis Villeneuve filmography" article; the roster lives in the
-==Filmography== section of the biography, and that is what is read here.
+Every feature Denis Villeneuve has directed, in release order — the rows of
+the Film table in Wikipedia's "Denis Villeneuve" article whose Director cell is
+a bare {{yes}} and whose film the source dates. There is no separate "Denis
+Villeneuve filmography" article; the roster lives in the ==Filmography==
+section of the biography, and that is what is read here.
 
 Everything below is machine-read from wikitext cached in scratch/villeneuve/
 by scratch/villeneuve/fetch.py — the biography for the roster and the career
@@ -17,23 +17,34 @@ material and screenwriter. Nothing is typed in from memory, and every number
 this file prints is asserted against the source that produced it before
 anything is written.
 
-THE ROSTER RULE: HE DIRECTED IT, AND IT HAS COME OUT
-----------------------------------------------------
+THE ROSTER RULE: HE DIRECTED IT, AND THE SOURCE DATES IT
+-------------------------------------------------------
 Only a bare {{yes}} in the Director column puts a film here. The Writer and
 Producer columns gate nothing: he wrote all four Quebec films and none of the
 four that followed, and the Producer column is {{no}} on everything before
 Dune. All three facts are asserted below and all three are section-intro copy,
 not roster criteria.
 
-Two rows of the table are held back, and neither quietly:
+Coming out is NOT a roster criterion, as of the owner's ruling on CLU-315:
+announced work the source dates — even to a bare year — earns a row, and
+undated work does not. So the Film table's thirteen rows come out as twelve
+rows here and one exclusion:
 
-  * Dune: Part Three (2026) — its own article's infobox dates it after the day
-    this runs. main() parses that date and asserts it is still in the future,
-    so the build fails on the day the film opens rather than the list going
-    one short and nobody noticing.
-  * Bond 26 (Year cell "TBA") — no article, no wikilink, and the biography's
-    own prose says Amazon MGM expects it in 2028. The TBA, the missing
-    article and the future year are all asserted.
+  * Dune: Part Three (2026) is a row. Its own article's infobox reads
+    `released = {{Film date|2026|12|18}}` and its short description is
+    "Upcoming film by Denis Villeneuve". The row weighs 0, because the same
+    infobox publishes no runtime and nobody has watched the film — an
+    unreleased row carries an explicit `w` of 0, never a missing one, since
+    `WEIGHT = x.w >= 0 ? x.w : 1` turns a missing weight into a silent
+    invented hour (CLU-131). main() asserts the date is still in the future
+    and that the runtime field is still empty, so the film's opening, or a
+    published runtime, stops the build and brings the row back for review
+    instead of leaving an empty bar standing.
+  * Bond 26 (Year cell "TBA") is not a row — no article, no wikilink, no date
+    anywhere, and the biography's own prose says only that Amazon MGM expects
+    it in 2028. The TBA, the missing article and the future year are all
+    asserted, so the day Wikipedia dates it the build fails and it comes back
+    for review.
 
 The Film table is cross-checked against the article's own lead, which is the
 lesson built into tools/make_matt-johnson.py: a filmography table that lags
@@ -49,14 +60,14 @@ asserted to be in release-date order rather than merely table order.
 
 WEIGHTS: ALL OF THEM, FROM THE FILMS' OWN INFOBOXES
 ---------------------------------------------------
-Every row carries `w`, the film's runtime in hours, read from the `runtime`
-field of its own {{Infobox film}}. The page resolves
+Every row that has opened carries `w`, the film's runtime in hours, read from
+the `runtime` field of its own {{Infobox film}}. The page resolves
 `WEIGHT = x.w >= 0 ? x.w : 1`, so a single row without a weight would silently
 book itself as one hour and the total would be confidently wrong. minutes()
 has no fallback and no estimate in it: a runtime that will not parse as one
-plain figure stops the build. main() then asserts every row got a real
-infobox number and that the eleven bar widths reconstitute the exact minute
-total.
+plain figure stops the build. main() then asserts every released row got a
+real infobox number, that the one unreleased row carries an explicit zero, and
+that the eleven bar widths reconstitute the exact minute total.
 
 One runtime here disagrees with the catalogue's other copy of the same film.
 properties/dune.json takes its screen runtimes from Wikidata and gives Dune:
@@ -320,6 +331,15 @@ def hrs(m):
     return round(m / 60.0, 2)
 
 
+def longdate(d):
+    return "%d %s %d" % (d.day, d.strftime("%B"), d.year)
+
+
+# Prefixed to an unreleased row's own note, so the row still reads correctly
+# the day the film opens and the note needs no second edit.
+NOT_OUT = "Not out yet — due %s, and the bar stays empty until it opens"
+
+
 def main():
     today = datetime.date.today()
     art = wiki.wikitext(ARTICLE, cache_dir=CACHE)
@@ -360,7 +380,7 @@ def main():
     assert y2013 == ["Prisoners", "Enemy"], \
         "the 2013 rowspan carry is broken: %s" % y2013
 
-    # ---- what is held back, and why --------------------------------------
+    # ---- what is held back, and what is here with an empty bar -----------
     excluded = {}
 
     # Bond 26: no year, no article, and the biography's prose says 2028.
@@ -376,8 +396,10 @@ def main():
         % bondyear.group(1)
     excluded["Bond 26"] = "not released; expected %s" % bondyear.group(1)
 
-    # Dune: Part Three: dated by its own article, and that date is still in
-    # the future. On the day it is not, this build stops.
+    # Dune: Part Three: a row, because its own article dates it — and a row
+    # that weighs nothing, because that same article publishes no runtime and
+    # nobody has watched it. Both halves are asserted, so the film opening or
+    # a runtime appearing stops the build instead of leaving an empty bar.
     p3 = next(x for x in dated if x["t"] == "Dune: Part Three")
     p3page = wiki.wikitext(p3["page"], cache_dir=CACHE)
     assert p3page, "no cached article for %s" % p3["page"]
@@ -386,11 +408,19 @@ def main():
     p3_date = film_dates(p3ib("released"), p3["t"])[0]
     assert p3_date.year == p3["year"], (p3_date, p3["year"])
     assert p3_date > today, \
-        ("Dune: Part Three released on %s — add the row, reweigh, and delete "
-         "the note explaining its absence" % p3_date)
-    excluded["Dune: Part Three"] = "not released until %s" % p3_date
+        ("Dune: Part Three opened on %s — move it in with the released films "
+         "so it takes its runtime from its own infobox, and drop the not-out "
+         "note from its row" % p3_date)
+    assert not wiki.clean(p3ib("runtime") or ""), \
+        ("Dune: Part Three now publishes a runtime (%r) while its stated "
+         "release date %s is still in the future — decide whether the row "
+         "weighs it or keeps the zero, rather than shipping both claims"
+         % (wiki.clean(p3ib("runtime") or ""), p3_date))
+    p3["runtime"] = 0
+    p3["work"], p3["author"] = based_on(p3ib("based_on"), p3["t"])
+    upcoming = [p3]
 
-    films = [x for x in dated if x["t"] not in excluded]
+    films = [x for x in dated if x is not p3]
     assert len(films) == 11, [x["t"] for x in films]
     assert films[0]["t"] == "August 32nd on Earth" and films[0]["year"] == 1998
     assert films[-1]["t"] == "Dune: Part Two" and films[-1]["year"] == 2024
@@ -506,8 +536,8 @@ def main():
     named = {m.group(1).split("|")[0].strip()
              for m in re.finditer(r"''\[\[([^\]]+)\]\]''", lead)}
     named = {n for n in named if n}
-    shipped = {f["page"] for f in films}
-    unaccounted = named - shipped - {p3["page"]}
+    shipped = {f["page"] for f in films + upcoming}
+    unaccounted = named - shipped
     assert not unaccounted, \
         ("the lead names %s and this list neither ships nor excludes it — a "
          "filmography table lagging its own lead is how a list ends up one "
@@ -565,6 +595,12 @@ def main():
                                      "Written by %s" % f["writer_name"])
     NOTE["Prisoners"] = join_bits(NOTE["Prisoners"],
                                   "His first American production")
+    # The one row nobody can have watched. Its note says when it is due and
+    # what it adapts; both are read from its own article above.
+    NOTE["Dune: Part Three"] = join_bits(
+        NOT_OUT % longdate(p3_date),
+        "Part three, adapted from %s, a novel by %s" % (p3["work"],
+                                                       p3["author"]))
     assert "Wajdi Mouawad" in NOTE["Incendies"], NOTE["Incendies"]
     assert "José Saramago" in NOTE["Enemy"], NOTE["Enemy"]
     assert "Ted Chiang" in NOTE["Arrival"] and \
@@ -581,43 +617,50 @@ def main():
 
     # ---- sections ---------------------------------------------------------
     ERAS = [
-        ("quebec", "The Quebec films", quebec,
+        ("quebec", "The Quebec films", quebec, [],
          "Twelve years and four features made in Quebec, a long way from any "
          "studio — the biography's own lead calls them four French-language "
          "dramas. He wrote or co-wrote every one, produced none, and all four "
          "are Canadian productions. Incendies closes the run and is the film "
          "that carried him out of it: an Academy Award nomination for Best "
          "International Feature, and the last feature he has made in French."),
-        ("english", "Into English", english,
+        ("english", "Into English", english, [],
          "Four English-language films in four years, and the only stretch of "
          "his career where the Writer column is a bare no on every row — he "
          "directed all four from other people's scripts. Prisoners is the "
          "first American production here, and Arrival is where the science "
          "fiction starts."),
-        ("scifi", "Science fiction at scale", scifi,
-         "The Blade Runner sequel, and then the two halves of Dune. These are "
-         "the three longest features he has made — %d minutes between them, "
-         "more than a third of everything on this list — and Dune is the "
-         "first film he produced as well as directed."
-         % sum(f["runtime"] for f in scifi)),
+        ("scifi", "Science fiction at scale", scifi, upcoming,
+         "The Blade Runner sequel, and then Dune. The three he has released "
+         "are the three longest features he has made — %d minutes between "
+         "them, more than a third of everything on this list — and Dune is "
+         "the first film he produced as well as directed. Part Three is dated "
+         "%s and sits here with an empty bar until it opens."
+         % (sum(f["runtime"] for f in scifi), longdate(p3_date))),
     ]
 
     sections, placed = [], []
-    for key, title, got, intro in ERAS:
+    for key, title, got, coming, intro in ERAS:
         assert got, key
         placed += got
+        secrows = got + coming
         items = []
-        for f in got:
+        for f in secrows:
             it = {"id": "dv-%d-%s" % (f["year"], slug(f["t"])),
                   "t": f["t"], "n": str(f["year"]), "w": hrs(f["runtime"])}
             if f["t"] in NOTE:
                 it["note"] = NOTE[f["t"]]
             items.append(it)
+        # The hours are the released films' hours. A dated row with an empty
+        # bar is counted as a row and named, never folded into a total.
+        sub = "%d–%d · %d films · %d hours" \
+              % (secrows[0]["year"], secrows[-1]["year"], len(secrows),
+                 round(sum(f["runtime"] for f in got) / 60.0))
+        if coming:
+            sub += " · %d not out yet" % len(coming)
         sections.append({
             "id": key, "title": title,
-            "sub": "%d–%d · %d films · %d hours"
-                   % (got[0]["year"], got[-1]["year"], len(got),
-                      round(sum(f["runtime"] for f in got) / 60.0)),
+            "sub": sub,
             "intro": intro,
             "items": items,
         })
@@ -633,15 +676,20 @@ def main():
     # ---- the arithmetic, checked -----------------------------------------
     assert placed == films, "a film was dropped or placed twice"
     items = [x for s in sections for x in s["items"]]
-    assert len(items) == len(films), (len(items), len(films))
+    assert len(items) == len(films) + len(upcoming), \
+        (len(items), len(films), len(upcoming))
     for s in sections:
         assert all(a["n"] <= b["n"]
                    for a, b in zip(s["items"], s["items"][1:])), \
             "%s is out of year order" % s["title"]
-    # Every row weighted, none of them defaulted or zero: an absent or zero
-    # `w` on a weighted list is worth a silent hour.
-    assert all(isinstance(x["w"], float) and x["w"] > 0 for x in items), \
-        [x["id"] for x in items if not x.get("w")]
+    # Every row weighted and none of them defaulted: an absent `w` on a
+    # weighted list is worth a silent invented hour. The only zeros are the
+    # dated films nobody can have watched yet, named row by row.
+    assert all(isinstance(x["w"], float) and x["w"] >= 0 for x in items), \
+        [x["id"] for x in items if not isinstance(x.get("w"), float)]
+    zeros = {x["id"] for x in items if not x["w"]}
+    assert zeros == {"dv-%d-%s" % (f["year"], slug(f["t"]))
+                     for f in upcoming}, sorted(zeros)
     assert not any("opt" in x for x in items), \
         "nothing here is optional; he directed all of it"
     barsum = round(sum(x["w"] for x in items), 2)
@@ -649,7 +697,7 @@ def main():
     # The section headings print rounded hours; rounding three numbers and
     # adding them is how a list advertises an hour it does not have.
     printed = sum(round(sum(f["runtime"] for f in got) / 60.0)
-                  for _, _, got, _ in ERAS)
+                  for _, _, got, _, _ in ERAS)
     assert printed == round(hours), \
         "section headings add to %d hours, the real total rounds to %d" \
         % (printed, round(hours))
@@ -678,13 +726,15 @@ def main():
             assert isinstance(w, (int, float)) and w > 0, (rid, w)
             if round(w * 60) != ours["runtime"]:
                 disagree.append((ours["t"], round(w * 60), ours["runtime"]))
-    runtime_note = ("Every row carries one, read from the runtime field of "
-                    "that film's own Wikipedia infobox — %d hours %d minutes "
-                    "across the %s of them, from %s at %d minutes to %s at "
-                    "%d. There are no unweighted rows and no estimates "
-                    "anywhere: a row missing its runtime would quietly count "
-                    "as one hour and make the total confidently wrong, so the "
-                    "generator stops rather than guess."
+    runtime_note = ("Every row for a film that has opened carries one, read "
+                    "from the runtime field of that film's own Wikipedia "
+                    "infobox — %d hours %d minutes across the %s of them, "
+                    "from %s at %d minutes to %s at %d. There are no "
+                    "unweighted rows and no estimates anywhere: a row missing "
+                    "its runtime would quietly count as one hour and make the "
+                    "total confidently wrong, so the generator stops rather "
+                    "than guess, and the one film that is not out carries an "
+                    "explicit zero instead."
                     % (mins // 60, mins % 60, word(len(films)), shortest["t"],
                        shortest["runtime"], longest["t"], longest["runtime"]))
     if disagree:
@@ -732,7 +782,8 @@ def main():
         # (Nathan, CLU-372). Prerequisites, where any exist, live in
         # tools/data/sequences.json and are enforced separately.
         "random": True,
-        "year": "%d–%d" % (films[0]["year"], films[-1]["year"]),
+        "year": "%d–%d" % (films[0]["year"],
+                           max(f["year"] for f in films + upcoming)),
         "blurb": "Quebec dramas in French, thrillers made from other people's "
                  "scripts, and the science fiction that made his name — every "
                  "feature he has directed, in release order and weighted by "
@@ -752,7 +803,8 @@ def main():
         "notes": [
             ["Directed features only.",
              "A film is here if the filmography's Director column says yes "
-             "and the film has come out. Nothing else gates it: he wrote all "
+             "and the source gives it a release date. Coming out is not the "
+             "test; being dated is. Nothing else gates it: he wrote all "
              "four Quebec films and none of the four that followed, and he is "
              "credited producer on only the two Dune films. Out: the %s "
              "shorts, music videos and commercials the article keeps in its "
@@ -762,16 +814,21 @@ def main():
              "biography, cross-checked against the biography's own lead so "
              "that a table lagging its lead cannot leave a film off."
              % word(len(shorts))],
-            ["Two of the table's films are not here yet.",
-             "The Film table has %s rows and this list has %s. Dune: Part "
-             "Three is dated %d %s %d; Bond 26 has no article and no date of "
-             "its own, and the biography says Amazon MGM expects it in %s. "
-             "Both dates are re-read from the sources every time this list is "
-             "generated and the generator refuses to build once either has "
-             "passed, so the rows arrive on release rather than whenever "
-             "somebody remembers."
-             % (word(len(rows)), word(len(films)), p3_date.day,
-                p3_date.strftime("%B"), p3_date.year, bondyear.group(1))],
+            ["One film is here with an empty bar, and one is not here at all.",
+             "Dune: Part Three is a row: its own article dates it %s, and "
+             "dated work belongs on a list even before it opens. Its bar is "
+             "empty because the same article publishes no runtime and nobody "
+             "has watched it, and a weight this list cannot source is one it "
+             "refuses to invent — so it counts as a film and adds no hours. "
+             "Bond 26 is the one row of the Film table that is not here: no "
+             "article, no wikilink and no date, only the biography saying "
+             "Amazon MGM expects it in %s. Both are re-read every time this "
+             "list is generated — the build stops if Part Three opens, if it "
+             "publishes a runtime, or if Bond 26 acquires a date — so the "
+             "rows change on the sources rather than whenever somebody "
+             "remembers. That is %s rows on the table and %s here."
+             % (longdate(p3_date), bondyear.group(1),
+                word(len(rows)), word(len(films) + len(upcoming)))],
             ["Both Dune films are on the Dune list too, on purpose.",
              "Dune (2021) and Dune: Part Two (2024) are rows here and rows on "
              "the Dune list, and that is deliberate rather than a duplicate "
@@ -794,16 +851,18 @@ def main():
     }
 
     out = prop.write(p)
-    print("wrote %s — %s films, %d min = %.2f hours (prints as %d)"
-          % (out.name, len(items), mins, hours, round(hours)))
+    print("wrote %s — %s rows (%s released), %d min = %.2f hours "
+          "(prints as %d)"
+          % (out.name, len(items), len(films), mins, hours, round(hours)))
     print("   bar widths sum to %.2f hours; section headings print %d"
           % (barsum, printed))
     for s in sections:
         print("   %-22s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
-    for f in films:
-        print("   %-4d %-22s %3d min  w=%.2f  %s"
+    for f in films + upcoming:
+        print("   %-4d %-22s %3d min  w=%.2f  %-32s%s"
               % (f["year"], f["t"], f["runtime"], hrs(f["runtime"]),
-                 "dv-%d-%s" % (f["year"], slug(f["t"]))))
+                 "dv-%d-%s" % (f["year"], slug(f["t"])),
+                 "  (not out)" if not f["runtime"] else ""))
     print("   sync groups shared with %s: %s"
           % (DUNE, ", ".join(sorted(shared))))
     print("   held back: %s"

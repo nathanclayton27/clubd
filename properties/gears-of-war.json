@@ -41,12 +41,16 @@
       "RAAM's Shadow is bought against Gears of War 3 and Hivebusters against Gears 5, which is why both are marked optional. Each is a separate campaign with its own squad rather than a mission pack, and each is a single evening."
     ],
     [
+      "E-Day is here, with an empty bar.",
+      "The prequel set fourteen years before the first game is announced for 6 October 2026 and is not out. It gets a row because its own article dates it, and the row weighs nothing because nobody has played it: HowLongToBeat has a record for it and no figure, and this list refuses to guess one. The date is checked against the clock on every build — if the site starts timing the game, or if that date passes with no figure behind it, the build stops rather than leaving the bar empty or inventing an hour."
+    ],
+    [
       "What is not here.",
-      "Gears Pop! was a Funko-branded mobile strategy game with no campaign, and Microsoft shut its servers off in April 2021 — there is nothing left to play. E-Day, the prequel set fourteen years before the first game, is announced for 6 October 2026 and is not out; HowLongToBeat has a record for it and no figure, and this list refuses to guess one. It goes on the day there is a real number to put beside it."
+      "Gears Pop! was a Funko-branded mobile strategy game with no campaign, and Microsoft shut its servers off in April 2021 — there is nothing left to play. The remasters are folded into the row for the campaign they hold."
     ],
     [
       "Hours are story only.",
-      "HowLongToBeat main-story figures — normal difficulty, no Insane runs, no Horde, no multiplayer. Every row here carries a real one; nothing on this list was estimated."
+      "HowLongToBeat main-story figures — normal difficulty, no Insane runs, no Horde, no multiplayer. Every row for a game you can play carries a real one; nothing on this list was estimated, and the only row without a figure is the one whose game is not out."
     ],
     "Game list, release order and dates from Wikipedia's Gears of War article and the individual game articles; hours from HowLongToBeat main-story figures, verified by name and exact release year."
   ],
@@ -100,7 +104,7 @@
     {
       "id": "coalition",
       "title": "The Coalition",
-      "sub": "2016–2020 · 4 campaigns · 49 hours story",
+      "sub": "2016–2026 · 5 campaigns · 49 hours story · 1 not out yet",
       "intro": "Microsoft's own studio picks it up, 2016 on — a new Fenix, a new enemy, and the series' first turn-based detour.",
       "items": [
         {
@@ -132,6 +136,13 @@
           "w": 3.12,
           "note": "Downloadable expansion for Gears 5: Scorpio Squad, six chapters in Sera's South Islands, and the series at its most colourful",
           "opt": 1
+        },
+        {
+          "id": "gow-eday",
+          "t": "Gears of War: E-Day",
+          "n": "2026",
+          "w": 0,
+          "note": "Not out yet — due 6 October 2026, and the bar stays empty until HowLongToBeat has hours for it. Emergence Day itself, fourteen years before the first game — Marcus and Dom pulled back into a war that starts under their feet, in the industrial city of Kalona"
         }
       ]
     }

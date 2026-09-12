@@ -3,10 +3,11 @@
 
     python tools/make_grand-theft-auto.py
 
-Every released Grand Theft Auto game in release order, cut into the three
-eras Rockstar itself names: the 2D universe, the 3D universe and the HD
-universe. Expansions and handhelds ride in release order alongside the
-numbered games rather than being hidden in a section of their own — the shape
+Every Grand Theft Auto game in release order, cut into the eras the article's
+own release timeline declares: the three Rockstar names — the 2D universe, the
+3D universe and the HD universe — and the fourth one, opening in 2026, that
+the source has not named. Expansions and handhelds ride in release order
+alongside the numbered games rather than being hidden in a section of their own — the shape
 properties/gears-of-war.json uses for its two DLC campaigns — and carry
 `opt: 1`.
 
@@ -117,11 +118,32 @@ all three together, which is what "the same three campaigns" looks like and
 not what a fourth campaign would. The remaster is named in a note instead of
 being given rows.
 
-**Grand Theft Auto VI is excluded because it is not out, and Online because
-it does not end.** Wikipedia gives VI 19 November 2026. HowLongToBeat has a
-record and no figure, and this file asserts that stays true — the day the
-site starts timing it, this build fails and someone adds the row, rather than
-the list quietly staying a game short. *Grand Theft Auto Online* is on the
+**Grand Theft Auto VI is a row that weighs nothing, and Online is excluded
+because it does not end.** The owner's rule, CLU-315: announced work the
+source dates — even to a bare year — earns a row, and undated work does not.
+The article dates VI to 19 November 2026, parsed out of its own prose by
+scratch/grand-theft-auto/parse_wiki.py, so VI is a row.
+
+It carries an explicit `w` of 0, never a missing one: the page resolves
+`WEIGHT = x.w >= 0 ? x.w : 1`, so a row without a weight on a weighted list
+silently books itself as an hour (CLU-131) — an invented hour for a game
+nobody can have played. Both directions are asserted against the clock every
+run. While the date is in the future the row weighs 0, its note says when the
+game is due, and HowLongToBeat is asserted to still have no figure for it —
+the day the site starts timing it this build fails, because a game people
+have finished has shipped. The day that date passes, the build fails unless
+tools/data/grand-theft-auto.json carries a name-and-year-gated figure; re-run
+scratch/grand-theft-auto/fetch_hltb.py and the row weights itself.
+
+VI also sits in a section of its own, and that is the source's doing rather
+than a flourish. The release timeline declares a fourth era at `range4 = 2026
+–`, and the List of games table's Universe cell for VI reads {{n/a|TBA}} —
+a stated absence, not a parse miss. So Rockstar has not placed the game in a
+universe, and this list does not place it in one either: the section carries
+the era the timeline gives and says the universe is unnamed. The build
+asserts that TBA is still what the table says, so the day the column fills
+in, VI moves into the universe the source puts it in rather than staying in
+a holding pen nobody revisits. *Grand Theft Auto Online* is on the
 timeline, unbolded, and is a persistent multiplayer world with no ending; the
 site times it at longer than any single-player game here, which is exactly
 why folding it in would rewrite the total. The compilations — Director's Cut,
@@ -129,6 +151,7 @@ The Classics Collection, both Double Packs, The Trilogy, Episodes from
 Liberty City and IV: Complete Edition — are repackagings of games that
 already have rows.
 """
+import datetime
 import glob
 import json
 import math
@@ -159,8 +182,30 @@ HLTB_NAME_EXCEPTIONS = {
     "tbogt": "Grand Theft Auto IV: The Ballad of Gay Tony",
 }
 
-# Universe (from the article's own column) -> section id
+# Universe (from the article's own column) -> section id. A row the article
+# dates and leaves without a universe — its Universe cell reads {{n/a|TBA}} —
+# goes to the section for the era the release timeline opens at 2026.
 SECTION_OF = {"2D": "twod", "3D": "threed", "HD": "hd"}
+UNPLACED_SECTION = "next"
+
+# Rows the source dates and nobody can have played yet. Each carries an
+# explicit w of 0 and says so in its note; main() asserts the date against the
+# clock in both directions and asserts the HowLongToBeat figure is still
+# missing while that date is in the future.
+UNRELEASED = {"gta6"}
+
+# Grand Theft Auto VI's release date, as the article states it. Not recalled:
+# scratch/grand-theft-auto/parse_wiki.py reads "later delayed to 19 November
+# 2026" out of the article's own prose and writes it to roster.json, and that
+# assertion fails if the sentence ever goes. Stated here because this
+# generator's input carries years rather than dates, exactly as the roster
+# above does for every other row.
+UNRELEASED_DATE = {"gta6": datetime.date(2026, 11, 19)}
+
+# Prefixed to an unreleased row's own note, so the row still reads correctly
+# the day it ships and the note needs no second edit.
+NOT_OUT = ("Not out yet — due %s, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
 
 # key -> note. Titles, years, order, era and the mainline flag all come from
 # tools/data/grand-theft-auto.json; only the prose lives here.
@@ -212,15 +257,19 @@ NOTES = {
     "gta5": "A retired bank robber, a street gangster and a drug dealer, one "
             "Los Santos, and a story that cuts between the three of them from "
             "heist to heist — the longest campaign here",
+    # The gap is computed in main() and spliced in, so it cannot rot.
+    "gta6": "The sixth numbered game, and the first in %d years. Rockstar has "
+            "not said which universe it belongs to and the article's table "
+            "says TBA, so neither does this list.",
 }
 
 # Shipped rows. Order is asserted against the timeline's slots, not trusted.
 ROWS = ("gta1", "london69", "london61", "gta2",
         "gta3", "vc", "sa", "advance", "lcs", "vcs",
-        "gta4", "tlad", "cw", "tbogt", "gta5")
+        "gta4", "tlad", "cw", "tbogt", "gta5", "gta6")
 
 # On the timeline, deliberately not shipped. Each is asserted about below.
-EXCLUDED = ("online", "gta6")
+EXCLUDED = ("online",)
 
 # Off the timeline entirely, collected only so the calls above can be tested.
 ASSERT_ONLY = ("de_trilogy", "eflc", "de3", "devc", "desa")
@@ -243,12 +292,21 @@ SECTIONS = [
     ("hd", "The HD universe",
      "A heavier Liberty City and a bigger Los Santos, with two standalone "
      "expansions and one top-down handheld sharing their streets."),
+    (UNPLACED_SECTION, "What comes next",
+     "Wikipedia's release timeline opens a fourth era in 2026 and its legend "
+     "does not name one, and the List of games table gives Grand Theft Auto "
+     "VI's universe as TBA. So this section is the era the source declares, "
+     "with the universe left unnamed until Rockstar names it."),
 ]
 
 
 # --------------------------------------------------------------------------
 # accent distance
 # --------------------------------------------------------------------------
+
+def longdate(d):
+    return "%d %s %d" % (d.day, d.strftime("%B"), d.year)
+
 
 def _lab(hexstr):
     """CIE L*a*b* for an #rrggbb string, D65."""
@@ -303,6 +361,7 @@ def check_accents(accent, accent_dark):
 
 def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    today = datetime.date.today()
     assert set(ROWS) | set(EXCLUDED) | set(ASSERT_ONLY) == set(data), \
         "tools/data/%s.json and this roster disagree: %r" \
         % (SLUG, sorted(set(ROWS) | set(EXCLUDED) | set(ASSERT_ONLY)
@@ -330,20 +389,52 @@ def main():
         # shipped under this name on seven platforms across nineteen years.
         assert rec["year"] == year, \
             "year mismatch for %s: wiki %s, hltb %s" % (key, year, rec["year"])
-        # All-or-nothing: the page reads a missing w as one hour, so a row
-        # without a real figure must break the build, never ship.
-        assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
-            ("no main-story figure for %s (%s) — this list is weighted and a "
-             "row without one would silently count as an hour"
-             % (key, rec["why"]))
+        due = UNRELEASED_DATE.get(key)
+        if key in UNRELEASED and due > today:
+            # Dated, not out. The row exists because the source dates it and
+            # it weighs nothing because nobody has played it. HowLongToBeat
+            # only carries a main-story figure for a game people have
+            # finished, so a figure appearing here means it has shipped.
+            assert not rec["main_h"], \
+                ("HowLongToBeat now times %s (%s h) — it has landed ahead of "
+                 "the %s the article gives. Give the row its hours."
+                 % (title, rec["main_h"], due))
+            w = 0
+        else:
+            # All-or-nothing: the page reads a missing w as one hour, so a row
+            # without a real figure must break the build, never ship. That
+            # includes a row whose stated release date has passed — it must
+            # not stay at zero either.
+            assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
+                ("no main-story figure for %s (%s) — this list is weighted "
+                 "and a row without one would silently count as an hour. If "
+                 "its stated release date has passed, re-run "
+                 "scratch/grand-theft-auto/fetch_hltb.py."
+                 % (key, rec["why"]))
+            w = rec["main_h"]
         # Era, from the article's own Universe column rather than from taste.
-        sec = SECTION_OF.get(rec["universe"])
+        # The one row the table leaves at TBA goes to the era the timeline
+        # opens in 2026 — and the day the column fills in, this list moves it.
+        if key in UNRELEASED and rec["universe"] is None:
+            sec = UNPLACED_SECTION
+        else:
+            sec = SECTION_OF.get(rec["universe"])
         assert sec, "%s has no universe on Wikipedia's table" % key
+        assert (sec == UNPLACED_SECTION) == (key in UNRELEASED
+                                             and rec["universe"] is None), \
+            ("%s: the table now gives a universe (%r) for a game this list "
+             "holds unplaced, or the reverse — move the row into the section "
+             "the source puts it in" % (key, rec["universe"]))
         # Mainline versus optional, taken from the timeline's own bolding.
         opt = 0 if rec["main_series"] else 1
         assert NOTES.get(key), "%s reached the emitter without a note" % key
+        note = NOTES[key]
+        if key == "gta6":
+            note = note % (year - data["gta5"]["wiki_year"])
+        if not w:
+            note = "%s %s" % (NOT_OUT % longdate(due), note)
         entries.append({"id": "gta-%s" % key, "t": title, "n": str(year),
-                        "w": rec["main_h"], "note": NOTES[key], "sec": sec,
+                        "w": w, "note": note, "sec": sec,
                         "opt": opt, "key": key, "slot": rec["slot"]})
 
     slots = [e["slot"] for e in entries]
@@ -354,6 +445,10 @@ def main():
     by_key = {e["key"]: e for e in entries}
     mainline = [e for e in entries if not e["opt"]]
     optional = [e for e in entries if e["opt"]]
+    # The rows for games that exist to play. Every total and every superlative
+    # below is taken over these, so a dated row with an empty bar cannot move
+    # a number or win a comparison.
+    played = [e for e in entries if e["w"]]
     assert {e["key"] for e in mainline} == \
         {k for k in ROWS if data[k]["main_series"]}, \
         "the mainline is no longer exactly the games Wikipedia's timeline bolds"
@@ -400,15 +495,13 @@ def main():
     assert data["eflc"]["main_h"], \
         "no figure for Episodes from Liberty City, which a note names"
 
-    # Grand Theft Auto VI is excluded for being unreleased. The day it has a
-    # figure, this build fails rather than the list staying a game short.
-    assert data["gta6"]["id"] and not data["gta6"]["main_h"], \
-        ("HowLongToBeat now times Grand Theft Auto VI (%s h) — it has "
-         "shipped, and it belongs on this list" % data["gta6"]["main_h"])
+    # Grand Theft Auto VI is a dated row that weighs nothing until it opens;
+    # its date, its missing figure and the clock are asserted in the row loop
+    # above, along with the TBA its section stands on.
     # Grand Theft Auto Online is excluded for not ending. The note says it
     # would outweigh anything here, so that has to keep being true.
     online = data["online"]["main_h"]
-    assert online and online > max(e["w"] for e in entries), \
+    assert online and online > max(e["w"] for e in played), \
         ("Grand Theft Auto Online times %s h, no longer more than every "
          "campaign on this list — the note that justifies cutting it needs "
          "rewriting" % online)
@@ -422,10 +515,21 @@ def main():
             "%s is out of the timeline's release order" % sec_id
         years = [int(e["n"]) for e in got]
         hours = sum(e["w"] for e in got)
+        pending = [e for e in got if not e["w"]]
+        span = ("%d" % years[0] if years[0] == years[-1]
+                else "%d–%d" % (years[0], years[-1]))
+        if len(pending) == len(got):
+            # Nothing here has come out, so there are no hours to state.
+            sub = "%s · %d %s · not out yet" \
+                  % (span, len(got), "game" if len(got) == 1 else "games")
+        else:
+            sub = "%s · %d games · %d hours story" \
+                  % (span, len(got), round(hours))
+            if pending:
+                sub += " · %d not out yet" % len(pending)
         sections.append({
             "id": sec_id, "title": sec_title,
-            "sub": "%d–%d · %d games · %d hours story"
-                   % (years[0], years[-1], len(got), round(hours)),
+            "sub": sub,
             "intro": intro,
             "items": [{k: v for k, v in e.items()
                        if k in ("id", "t", "n", "w", "note")}
@@ -437,27 +541,46 @@ def main():
     every = [x for s in sections for x in s["items"]]
     ids = [x["id"] for x in every]
     assert len(ids) == len(set(ids)) == len(ROWS), (len(ids), len(ROWS))
-    assert all(x.get("w", -1) > 0 for x in every), \
+    # Weighting is all or nothing: every row declares a w, and the only zeros
+    # are the rows this file knows are dated and not out. A row with no w at
+    # all would book itself as an hour (CLU-131).
+    assert all("w" in x for x in every), \
         "a row reached the emitter without a weight"
+    assert all(x["w"] >= 0 for x in every), "a negative weight"
+    zeros = {x["id"] for x in every if not x["w"]}
+    assert zeros == {"gta-%s" % k for k in UNRELEASED
+                     if not data[k]["main_h"]}, sorted(zeros)
 
     # --- the numbers the blurb and the notes stand on -----------------------
-    hours = sum(e["w"] for e in entries)
-    main_h = sum(e["w"] for e in mainline)
-    rest_h = sum(e["w"] for e in optional)
-    longest = max(entries, key=lambda e: e["w"])
-    shortest = min(entries, key=lambda e: e["w"])
+    hours = sum(e["w"] for e in played)
+    main_h = sum(e["w"] for e in mainline if e["w"])
+    rest_h = sum(e["w"] for e in optional if e["w"])
+    longest = max(played, key=lambda e: e["w"])
+    shortest = min(played, key=lambda e: e["w"])
     assert longest["key"] == "gta5", \
         "the Grand Theft Auto V note claims it is the longest campaign here; " \
         "%r is" % longest["t"]
     assert shortest["key"] == "london61", \
         "the London 1961 note claims it is the shortest thing here; %r is" \
         % shortest["t"]
-    threed = [e for e in entries if e["sec"] == "threed"]
+    threed = [e for e in played if e["sec"] == "threed"]
     assert max(threed, key=lambda e: e["w"])["key"] == "sa", \
         "the San Andreas note claims it is the biggest of the 3D-era games"
     years_all = [int(e["n"]) for e in entries]
 
-    accent, accent_dark = "#A3195B", "#FF5FA2"
+    # ⚠ Moved off #A3195B on 2026-09-12 (CLU-540). Sailor Moon shipped a light
+    # accent 1.6 CIE76 away — visually the same pink — and check_accents() below
+    # refused to build at all, so this list was frozen: not for CLU-322's Grand
+    # Theft Auto VI row, not for anything. Nathan's call on which of the two
+    # moved: "yeah let gta have a different color."
+    #
+    # #A80DA8 was not picked by eye. Every accent shipping in properties/ was
+    # converted to CIELAB and a hue/saturation/value grid walked across the band
+    # the catalogue actually occupies (L* 30-60); this is the most isolated
+    # point found, at 17.7 delta-E from its nearest neighbour — more than double
+    # the 8.0 floor, against a catalogue median of about 6.8. It is still a
+    # Vice City sign; it is a different hour of the night.
+    accent, accent_dark = "#A80DA8", "#FF5FA2"
     neighbours = check_accents(accent, accent_dark)
 
     prop = {
@@ -483,11 +606,11 @@ def main():
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},
         "itemOrder": "number-first",
-        # Light: the deep magenta of a Vice City sign after sundown. Dark: the
-        # neon pink it burns at. check_accents() above measures both against
-        # every accent shipping in properties/ on every build and prints the
-        # nearest neighbour — today the-simpsons at 13.2 CIE76 delta-E and
-        # buffy-angel at 13.1, against a catalogue median of about 6.8.
+        # Light: the violet of a Vice City sign after sundown. Dark: the neon
+        # pink it burns at. check_accents() above measures both against every
+        # accent shipping in properties/ on every build and prints the nearest
+        # neighbour — 17.7 CIE76 delta-E for the light one now, against a
+        # catalogue median of about 6.8.
         "accent": accent,
         "accentDark": accent_dark,
         "tiers": False,
@@ -541,26 +664,36 @@ def main():
              "exist, so if the site ever adds them the question gets asked "
              "again properly."
              % round(de["main_h"])],
+            ["Grand Theft Auto VI is here, with an empty bar.",
+             "It is announced for %s and it is not out. It gets a row because "
+             "the article dates it, and the row weighs nothing because nobody "
+             "has played it: HowLongToBeat has a record for it and no figure, "
+             "and this list refuses to guess one, so it counts as a game and "
+             "adds no hours to any total. It sits in a section of its own "
+             "because Rockstar has not said which universe it belongs to — "
+             "the release timeline opens a fourth era in 2026 and the List of "
+             "games table gives its universe as TBA. The date and the TBA are "
+             "both re-read on every build: if the site starts timing the game, "
+             "if that date passes with no figure behind it, or if the table "
+             "places the game at last, the build stops rather than leave a "
+             "stale row standing." % longdate(UNRELEASED_DATE["gta6"])],
             ["What is not here.",
              "Grand Theft Auto Online is on the timeline and is not on this "
              "list: it is a persistent multiplayer world with no ending, and "
              "HowLongToBeat times it longer than any campaign here, so "
              "folding it in would rewrite the total for something you cannot "
-             "finish. Grand Theft Auto VI is announced for 19 November 2026 "
-             "and is not out; the site has a record for it and no figure, and "
-             "this list refuses to guess one — it goes on the day there is a "
-             "real number to put beside it. The compilations are gone for a "
-             "duller reason: Director's Cut, The Classics Collection, both "
-             "Double Packs, The Trilogy, Episodes from Liberty City and IV: "
-             "Complete Edition are boxes holding games that already have "
-             "rows."],
+             "finish. The compilations are gone for a duller reason: "
+             "Director's Cut, The Classics Collection, both Double Packs, "
+             "The Trilogy, Episodes from Liberty City and IV: Complete "
+             "Edition are boxes holding games that already have rows."],
             ["Hours are story only.",
              "HowLongToBeat main-story figures — the missions, not the "
              "hidden packages, not the stunt jumps, not a hundred per cent, "
-             "and none of it online. Every row here carries a real one; "
-             "nothing on this list was estimated, and a row whose figure "
-             "fails the name-and-year check fails this build instead of "
-             "shipping unweighted."],
+             "and none of it online. Every row for a game you can play "
+             "carries a real one; nothing on this list was estimated, a row "
+             "whose figure fails the name-and-year check fails this build "
+             "instead of shipping unweighted, and the only row without a "
+             "figure is the one whose game is not out."],
             "Game list, release order, years, eras and the mainline split "
             "from Wikipedia's Grand Theft Auto article — its release timeline "
             "and its List of games table, read separately and checked against "
@@ -573,9 +706,10 @@ def main():
     P.write(prop)
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d games, %d hours (%d mainline, %d optional)"
-          % (len(sections), len(every), round(hours), round(main_h),
-             round(rest_h)))
+    print("  %d sections, %d games (%d playable), %d hours (%d mainline, "
+          "%d optional)"
+          % (len(sections), len(every), len(played), round(hours),
+             round(main_h), round(rest_h)))
     for s in sections:
         print("   %-20s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
     print("  expansion gaps against the %.1f h fold test:" % EXPANSION_SLACK_H)
@@ -587,15 +721,17 @@ def main():
     print("  Definitive Edition bundle %.2f h vs %.2f h for III+VC+SA "
           "(no per-game records)"
           % (de["main_h"], sum(remastered)))
-    print("  excluded: Online %.2f h (no ending), VI %r (unreleased)"
-          % (online, data["gta6"]["main_h"]))
+    print("  excluded: Online %.2f h (no ending)" % online)
+    print("  not out: %s, due %s, w=0"
+          % (data["gta6"]["wiki_title"], UNRELEASED_DATE["gta6"]))
     for role, mine, slug, hexs, dist in neighbours:
         print("  %-10s %s  nearest %s %s at %.1f dE" % (role, mine, slug,
                                                         hexs, dist))
     for e in entries:
-        print("   %-6s %-44s %s  w=%-7s%s"
+        print("   %-6s %-44s %s  w=%-7s%s%s"
               % (e["slot"], e["t"], e["n"], e["w"],
-                 "  (optional)" if e["opt"] else ""))
+                 "  (optional)" if e["opt"] else "",
+                 "  (not out)" if not e["w"] else ""))
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@
   "subtitle": "every released game in order, expansions and handhelds marked",
   "kind": "games",
   "popularity": 86,
-  "year": "1997–2013",
+  "year": "1997–2026",
   "blurb": "Top-down Liberty City to widescreen Los Santos — about 213 hours of story, 146 of it the mainline.",
   "unit": {
     "one": "game",
@@ -16,7 +16,7 @@
     "ing": "playing"
   },
   "itemOrder": "number-first",
-  "accent": "#A3195B",
+  "accent": "#A80DA8",
   "accentDark": "#FF5FA2",
   "tiers": false,
   "notes": [
@@ -41,12 +41,16 @@
       "The Trilogy – The Definitive Edition (2021) remasters III, Vice City and San Andreas, and ticking those three rows is what playing it means. It is a note rather than three rows for a blunt reason: HowLongToBeat files the remaster as one 44-hour bundle and has no per-game record for it, so the three-hour test that decides these things cannot be run against the individual games — and this list does not pretend to have run it. The build checks that those per-game records still do not exist, so if the site ever adds them the question gets asked again properly."
     ],
     [
+      "Grand Theft Auto VI is here, with an empty bar.",
+      "It is announced for 19 November 2026 and it is not out. It gets a row because the article dates it, and the row weighs nothing because nobody has played it: HowLongToBeat has a record for it and no figure, and this list refuses to guess one, so it counts as a game and adds no hours to any total. It sits in a section of its own because Rockstar has not said which universe it belongs to — the release timeline opens a fourth era in 2026 and the List of games table gives its universe as TBA. The date and the TBA are both re-read on every build: if the site starts timing the game, if that date passes with no figure behind it, or if the table places the game at last, the build stops rather than leave a stale row standing."
+    ],
+    [
       "What is not here.",
-      "Grand Theft Auto Online is on the timeline and is not on this list: it is a persistent multiplayer world with no ending, and HowLongToBeat times it longer than any campaign here, so folding it in would rewrite the total for something you cannot finish. Grand Theft Auto VI is announced for 19 November 2026 and is not out; the site has a record for it and no figure, and this list refuses to guess one — it goes on the day there is a real number to put beside it. The compilations are gone for a duller reason: Director's Cut, The Classics Collection, both Double Packs, The Trilogy, Episodes from Liberty City and IV: Complete Edition are boxes holding games that already have rows."
+      "Grand Theft Auto Online is on the timeline and is not on this list: it is a persistent multiplayer world with no ending, and HowLongToBeat times it longer than any campaign here, so folding it in would rewrite the total for something you cannot finish. The compilations are gone for a duller reason: Director's Cut, The Classics Collection, both Double Packs, The Trilogy, Episodes from Liberty City and IV: Complete Edition are boxes holding games that already have rows."
     ],
     [
       "Hours are story only.",
-      "HowLongToBeat main-story figures — the missions, not the hidden packages, not the stunt jumps, not a hundred per cent, and none of it online. Every row here carries a real one; nothing on this list was estimated, and a row whose figure fails the name-and-year check fails this build instead of shipping unweighted."
+      "HowLongToBeat main-story figures — the missions, not the hidden packages, not the stunt jumps, not a hundred per cent, and none of it online. Every row for a game you can play carries a real one; nothing on this list was estimated, a row whose figure fails the name-and-year check fails this build instead of shipping unweighted, and the only row without a figure is the one whose game is not out."
     ],
     "Game list, release order, years, eras and the mainline split from Wikipedia's Grand Theft Auto article — its release timeline and its List of games table, read separately and checked against each other; hours from HowLongToBeat main-story figures, verified by name and exact release year."
   ],
@@ -186,6 +190,21 @@
           "n": "2013",
           "w": 32.04,
           "note": "A retired bank robber, a street gangster and a drug dealer, one Los Santos, and a story that cuts between the three of them from heist to heist — the longest campaign here"
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "title": "What comes next",
+      "sub": "2026 · 1 game · not out yet",
+      "intro": "Wikipedia's release timeline opens a fourth era in 2026 and its legend does not name one, and the List of games table gives Grand Theft Auto VI's universe as TBA. So this section is the era the source declares, with the universe left unnamed until Rockstar names it.",
+      "items": [
+        {
+          "id": "gta-gta6",
+          "t": "Grand Theft Auto VI",
+          "n": "2026",
+          "w": 0,
+          "note": "Not out yet — due 19 November 2026, and the bar stays empty until HowLongToBeat has hours for it. The sixth numbered game, and the first in 13 years. Rockstar has not said which universe it belongs to and the article's table says TBA, so neither does this list."
         }
       ]
     }
