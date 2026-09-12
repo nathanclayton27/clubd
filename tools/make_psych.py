@@ -181,7 +181,15 @@ def main():
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
         "accent": "#2F7D32",
-        "accentDark": "#F2C14E",
+        # ⚠ Moved off #F2C14E hours after this list shipped. the-big-o already
+        # had that exact dark accent, and its generator carries its own accent
+        # check — so adding Psych silently broke a DIFFERENT list's build. We
+        # took the collision, so we move, not the list that was there first.
+        #
+        # #94FF9F is the most isolated point in the band the catalogue's dark
+        # accents occupy, at 17.7 delta-E from its nearest neighbour, and green
+        # keeps it of a piece with this list's light accent.
+        "accentDark": "#94FF9F",
         "tiers": False,
         "notes": [
             ["120 rows, 121 episodes.", "The musical is one double-length "
