@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- CLU-548. The policy is WRITTEN BY src/build.py, not by hand: it carries a
+     sha256 of this page's one inline script block and one inline style block,
+     and both change on every build. Editing the placeholder below is editing
+     nothing; the rule set, and the checks that prove the page only reaches the
+     origins in it, live in app_policy() there. This meta must stay after
+     the charset — a policy is only in force from the point the parser reads
+     it, so anything fetched above this line would be outside it. The charset
+     itself has to come first because it must land in the first 1024 bytes. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-0OwjNMzCSbhuMd5FDKzP+51x0CYMPmW3epkNsL+4dFc=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
+     after boot, by which point the fonts stylesheet has already been asked
+     for. Chrome and Firefox default to this policy anyway; stating it means no
+     browser hands a token to fonts.googleapis.com, jsdelivr, or an outbound
+     link. Same-origin requests still see the whole URL. -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>clubd</title>
 <meta name="description" content="Track a movie marathon, a TV show, an anime or a comic run alongside other people, with everyone’s progress stacked on one strip.">
@@ -199,6 +214,13 @@ h1 em{font-style:normal;color:var(--signal)}
 #list li.tourlit .catch{display:inline-block}
 #list li.tourlit .thb:not(.sec){opacity:.6}
 #list li.tourlit .drill{opacity:1}
+/* ⚠ BOTH thumbs, because the panel says "the two thumbs on the right" and only
+   one of them was on screen (CLU-515). The secondary sits BEHIND the primary at
+   opacity 0 and slides out when the pair is hovered — the row being armed is not
+   enough, which is the same class of mistake as `.act` not revealing the
+   catch-up button on a desktop. Opened here the way an armed row opens it on a
+   touch device, so the copy's "two" is true while it is on screen. */
+#list li.tourlit .thpair .thb.sec{opacity:.6;right:calc(100% + 6px)}
 .pacer{position:absolute;top:-5px;bottom:-5px;width:1px;background:var(--ink-3);z-index:60;pointer-events:none}
 .pacer::before{content:"";position:absolute;top:0;left:-2px;width:5px;height:5px;background:var(--ink-3)}
 /* The legend is the roster now (CLU-52). It used to be a wrapped line under
@@ -1563,6 +1585,21 @@ footer a{color:var(--steel)}
 /* no hover on a phone, so both sit at a permanent half-strength instead */
 @media (hover:none){#fp-groups .gros .afrow [data-gkick],
   #fp-groups .gros .afrow [data-fradd]{opacity:.55}}
+/* ⚠ The friends page's half of `.tourlit` (CLU-515), and it exists for exactly
+   the reason the list's half does: half the controls on this page are revealed
+   by :hover, and the tour has no pointer to hover with. A panel naming "add
+   friend", "Invite link" or the star while all three sit at opacity 0 is the
+   same defect Nathan reported on the catch-up button — "still isn't
+   highlighting or showing the catch up to here button".
+   ⚠ AND THE SPECIFICITY IS THE WHOLE TRICK. A bare `.tourlit .lv` is (0,2,0)
+   and loses to `#fp-groups .lv{opacity:0}` at (1,1,0) — the same trap the note
+   above the .gdang rules warns about. Every selector here carries the id, and
+   the block sits BELOW the rules it overrides so a tie goes this way. */
+#fp-groups .tourlit .lv,#fp-groups .tourlit .gdang,
+#fp-groups .tourlit .gros .afrow [data-gkick],
+#fp-groups .tourlit .gros .afrow [data-fradd]{opacity:1}
+#fp-clubcard.tourlit #fp-clubs .lv{opacity:1}
+#fp-list .tourlit .aquiet,#fp-list .tourlit .fpfav{opacity:1}
 .acap{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
   color:var(--ink-3);margin-top:9px;line-height:1.6}
 .acap b{color:var(--ink-2);font-weight:500}
@@ -7682,7 +7719,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '150ceb7102db';
+const BUILD = '1a9a0d49642e';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -9778,6 +9815,12 @@ async function onSession(session, definitive){
       $('homev').classList.add('hide');
       $('splash').classList.add('hide');
       $('arrivev').classList.add('hide');
+      // ⚠ CLU-515, and it goes BEFORE any view is chosen. This is the one place
+      // that knows "signed in, nothing specific asked for" — which is where a
+      // new account lands, because the sign-in round trip comes back to a bare
+      // URL. If it takes the navigation there is no point painting a view we
+      // are leaving.
+      if(tourFSend()) return;
       if(ACCOUNT) showAccount();
       else if(FRIENDSPG) showFriendsPage();
       else showHome();
@@ -12053,12 +12096,12 @@ async function renderFriendsPage(){
 }
 async function _renderFriendsPage(){
   const host = $('fp-list');
-  if(!host) return;
-  if(!user || !sb || FBROKEN){ host.innerHTML = ''; return; }
+  if(!host){ FPFIN = true; return; }
+  if(!user || !sb || FBROKEN){ host.innerHTML = ''; FPFIN = true; return; }
   ensureFcode().then(c=>{ $('fp-code').textContent = c; });
   let E = null;
   try{ E = await fetchFriendEdges(); }catch(e){}
-  if(!E){ host.innerHTML = ''; return; }
+  if(!E){ host.innerHTML = ''; FPFIN = true; return; }
   const nm = id=> E.names[id] || 'someone';
   const mut = E.ids.filter(i=> E.out.has(i) && E.inn.has(i));
   const waiting = E.ids.filter(i=> E.out.has(i) && !E.inn.has(i));
@@ -12126,6 +12169,7 @@ async function _renderFriendsPage(){
       renderFriendsPage();
     };
   });
+  FPFIN = true;                       // CLU-515: this card has answered
 }
 // THE FRIENDS PAGE ASKS ONCE. Three renderers used to run the same
 // group_members -> groups pair independently and in series, so six round
@@ -12169,7 +12213,12 @@ async function myGroups(){
 // codes of all kinds live (Nathan, 2026-08-24)
 async function renderMyClubs(){
   const card = $('fp-clubcard'), host = $('fp-clubs');
-  if(!card || !host || !user || !sb) return;
+  // ⚠ CLU-515. The friends tour waits on this flag rather than on the DOM,
+  // because a clubs card hidden because you are in no club and one hidden
+  // because the fetch has not landed look identical, and the tour resolves every
+  // anchor once. Set on EVERY exit, the failures included: a renderer that has
+  // answered "nothing" has answered.
+  if(!card || !host || !user || !sb){ FPCIN = true; return; }
   try{
     // the shared fetch: this used to run its own group_members -> groups
     // pair, in series behind two other renderers asking the same thing
@@ -12179,7 +12228,7 @@ async function renderMyClubs(){
     // myGroups() has already separated them; this card is the clubs half.
     const rows = MY.clubs.slice().sort((a, b)=>
       (titleOf(a.property_id) || '').localeCompare(titleOf(b.property_id) || ''));
-    if(!rows.length){ card.classList.add('hide'); return; }
+    if(!rows.length){ card.classList.add('hide'); FPCIN = true; return; }
     card.classList.remove('hide');
     // padding, not margin-top: the peek measures row boxes off each other and
     // a collapsing first margin would move the cut by nine pixels
@@ -12248,7 +12297,8 @@ async function renderMyClubs(){
         dropMyGroups(); renderMyClubs();
       };
     });
-  }catch(e){ card.classList.add('hide'); }
+    FPCIN = true;
+  }catch(e){ card.classList.add('hide'); FPCIN = true; }
 }
 // Every group you are in. A group has no code by design — the database
 // enforces code IS NULL on a universal row, so the code door cannot reach one
@@ -12257,7 +12307,7 @@ async function renderMyClubs(){
 // everyone and refused on click.
 async function renderMyGroups(){
   const card = $('fp-gcard'), host = $('fp-groups');
-  if(!card || !host || !user || !sb) return;
+  if(!card || !host || !user || !sb){ FPGIN = true; return; }
   // the account-page switch outranks every per-group one, so a mute below it
   // is drawn disabled rather than drawn live and quietly meaningless
   const globalOff = !!(PRIV && (!PRIV.share || !PRIV.groups));
@@ -12299,6 +12349,7 @@ async function renderMyGroups(){
       host.innerHTML = '<div style="color:var(--ink-3);font-size:13px;padding:2px 0">'
         + 'No groups yet \u2014 name one below and send the link to whoever '
         + 'should be in it.</div>';
+      FPGIN = true;
       return;
     }
     host.innerHTML = pkHTML(rows.map(g=>{
@@ -12603,7 +12654,9 @@ async function renderMyGroups(){
         dropMyGroups(); renderMyGroups();
       };
     });
+    FPGIN = true;
   }catch(e){
+    FPGIN = true;
     console.error('[tracker] groups failed', e);
   }
 }
@@ -12646,6 +12699,12 @@ function showFriendsPage(){
   // rosters that may have changed on another screen.
   dropMyGroups();
   Promise.all([renderMyClubs(), renderMyGroups()]);
+  // CLU-515. The friends tour lives here, and it anchors to elements the three
+  // renderers above have not finished drawing — tourFriendsReady() is what
+  // waits for them, on the flags they set rather than on how the DOM looks.
+  // It guards itself against running twice, which matters: onSession fires
+  // twice on nearly every load and this function runs on both.
+  try{ tourMaybe(); }catch(e){}
 }
 
 // The move warning: localStorage is per-origin, so anonymous ticks stay
@@ -18764,15 +18823,60 @@ function shotVisible(){
 const TOURVER = 1;
 const TOURAUTO = false;
 const TOURKEY = 'gw:tour';
+
+// ------------------------------------------------------ the friends tour
+// CLU-515. Nathan: "maybe telling people a group isnt a club when they havent
+// been introduced to either makes no sense? there maybe should be a guided tour
+// from the beginning of when you make an acct? it should show you the friends
+// page and the groups/friends stuff?"
+//
+// It is a SECOND tour, not five more panels on the first one. The list tour is
+// about the mechanics of ticking, all of which is true the moment you land with
+// no account and nobody else involved. Everything here is about other people,
+// and none of it is true until there is an account — so bolting it on would
+// mean showing five panels about friends to somebody who has none.
+//
+// TWO KEYS, not one. `gw:tourf` records that the friends tour has been seen;
+// `gw:tourf:sent` records that a person has been TAKEN to the friends page for
+// it. They are separate on purpose: the send mark is written BEFORE the
+// navigation, so a tour that fails to open for any reason costs one redirect
+// rather than bouncing the shelf on every load for ever.
+const TOURFVER = 1;
+const TOURFAUTO = false;
+const TOURFKEY = 'gw:tourf';
+const TOURFSENT = 'gw:tourf:sent';
 let tourAt = 0, tourOn = false, tourDone = false, tourReturn = null;
 let tourList = [], tourTimer = 0;
+// which script is running: 'list' or 'friends'. tourEnd marks the right key.
+let tourWhich = 'list';
 
-function tourSeen(){
-  try{ return parseInt(localStorage.getItem(TOURKEY) || '0', 10) || 0; }
-  catch(e){ return TOURVER; }   // storage refused: behave as though it ran
+// Is the friends page the surface under the tour right now? A signed-out
+// ?friends never un-hides #friendsv — it draws the sign-in panel instead — so
+// the URL alone is not the answer.
+function tourOnFriends(){
+  const v = $('friendsv');
+  return !!(FRIENDSPG && v && !v.classList.contains('hide'));
+}
+function tourKeyNow(){ return tourWhich === 'friends' ? TOURFKEY : TOURKEY; }
+function tourVerNow(){ return tourWhich === 'friends' ? TOURFVER : TOURVER; }
+
+function tourSeen(which){
+  const k = which === 'friends' ? TOURFKEY : (which === 'list' ? TOURKEY : tourKeyNow());
+  const v = which === 'friends' ? TOURFVER : (which === 'list' ? TOURVER : tourVerNow());
+  try{ return parseInt(localStorage.getItem(k) || '0', 10) || 0; }
+  catch(e){ return v; }         // storage refused: behave as though it ran
 }
 function tourMark(){
-  try{ localStorage.setItem(TOURKEY, String(TOURVER)); }catch(e){}
+  try{ localStorage.setItem(tourKeyNow(), String(tourVerNow())); }catch(e){}
+}
+// The one-shot record that somebody has been SENT to the friends page. Written
+// before the navigation, read before deciding to make one.
+function tourfSent(){
+  try{ return parseInt(localStorage.getItem(TOURFSENT) || '0', 10) || 0; }
+  catch(e){ return TOURFVER; }
+}
+function tourfMarkSent(){
+  try{ localStorage.setItem(TOURFSENT, String(TOURFVER)); }catch(e){}
 }
 
 // A step names a real element or it does not run. The project's rule: "never
@@ -18780,7 +18884,13 @@ function tourMark(){
 // itself silently rather than spotlighting empty space. The club tile is the
 // one that genuinely may be absent, and a stranger with no account should not
 // be shown a box that is not on their screen.
+// Which script is under the reader. One dispatcher so every other part of the
+// machinery — the veil, the ring, the counter, Back, Escape, the focus trap —
+// is shared rather than written twice.
 function tourSteps(){
+  return tourOnFriends() ? tourFriendSteps() : tourListSteps();
+}
+function tourListSteps(){
   // VISIBLE rows only. A list's sections are <details>, and a collapsed one's
   // rows still answer getClientRects() and still have an offsetParent while
   // being genuinely unreadable — measured on hickman-secret-wars, where every
@@ -18822,31 +18932,11 @@ function tourSteps(){
     }
     return listEl || null;
   };
-  // A row that is being pointed at shows its own catch-up control, the way a
-  // touch device arms it. Without this the panel talked about a button that was
-  // not on screen — "no display of the catch up to here button".
-  // ⚠ `.act` IS NOT ENOUGH ON A DESKTOP, and two panels were describing
-  // controls that were not on screen because of it. Measured on an armed row
-  // with a pointer-capable browser: the catch-up button is `display: none` and
-  // the thumbs are `opacity: 0`, because the rules that reveal them for `.act`
-  // live inside a touch-device media block — on a desktop only :hover reveals
-  // them, and the tour has no pointer to hover with.
-  //
-  // Nathan saw both: "still isn't highlighting or showing the catch up to here
-  // button", and the row panel names two thumbs on a row that shows none.
-  //
-  // `.tourlit` is the tour's own affordance rather than a change to what `.act`
-  // means, so tapping and hovering keep behaving exactly as they did.
-  const armed = el=>{
-    if(el && el.tagName === 'LI'){
-      try{
-        document.querySelectorAll('#list li.act, #list li.tourlit')
-          .forEach(x=> x.classList.remove('act', 'tourlit'));
-        el.classList.add('act', 'tourlit');
-      }catch(e){}
-    }
-    return el;
-  };
+  // A row that is being pointed at has to SHOW the controls the panel names —
+  // see tourLight, which is where that happens and which carries the history.
+  // A step asks for it with `lit: 'row'` and nothing more; lighting at the
+  // moment the step is drawn rather than at the moment it is resolved is the
+  // difference between the reader seeing it and only the last row being armed.
   // the club tile if it is drawn, else the switcher that opens it
   // ⚠ NO FALLBACK TO #b-prop. That is the list switcher, and a panel about
   // groups and clubs ringing the list's own name is worse than no panel: it
@@ -18870,7 +18960,7 @@ function tourSteps(){
     // screen while it talks about them. The door sentence is composed from
     // whether THIS list has doors, rather than describing an icon that is not
     // on the page.
-    {el: ()=> armed(rowAt(0)),
+    {el: ()=> rowAt(0), lit: 'row',
      t: 'Every line is one ' + UNIT.one,
      b: 'The box on the left is all you have to touch — tick it and its mark'
         + ' lands on the bar above. The two thumbs on the right are what you'
@@ -18896,12 +18986,22 @@ function tourSteps(){
      b: 'One ' + UNIT.one + ' can sit on more than one list here. Tick it once'
         + ' and it is ticked on all of them, so you never have to remember where'
         + ' else you ' + (VERB.past || 'saw') + ' it.'},
-    {el: clubAnchor,
+    // ⚠ CLU-515, and it is Nathan's own criticism of this panel as it shipped:
+    // "maybe telling people a group isnt a club when they havent been
+    // introduced to either makes no sense?" It does not. The tile is drawn for
+    // everybody CLOUD is on for — signed out it says "Clubs need an account" —
+    // so the anchor being there was never proof the reader had met either
+    // thing, and the panel was answering a question nobody had asked yet.
+    //
+    // So it is gated on actually BEING in one, and it is one line rather than
+    // five. The full explanation belongs on the friends page, where a group and
+    // a club are both real controls you can see — that is tourFriendSteps().
+    {el: ()=> (user && (group || groups.length || INGROUPS))
+              ? clubAnchor() : null,
      t: 'A group is not a club',
-     b: 'A group is the people you compare with across everything you track —'
-        + ' standing, quiet, every list at once. A club is a few people watching'
-        + ' this one thing together, and only a club can have a schedule. Both'
-        + ' live behind this tile.'},
+     b: 'This tile holds both. A group is the same people on every list you'
+        + ' track; a club is a few people on this one, and only a club can have'
+        + ' a schedule.'},
     // ⚠ Not on a grab-bag. Nathan: "make sure that the catch up to here button
     // guide isn't displayed on the pages that don't have a catch up to [here]".
     // "Everything up to here" is only a sentence if the rows are a sequence; on
@@ -18909,7 +19009,7 @@ function tourSteps(){
     // nothing to teach and drops out rather than describing a button that is
     // not there. The row it lands on is armed, so the button it names is
     // actually on screen while it says so.
-    {el: ()=> (PROP && PROP.random) ? null : armed(rowAt(5)),
+    {el: ()=> (PROP && PROP.random) ? null : rowAt(5), lit: 'row',
      t: 'Catching up',
      b: 'Nobody ticks forty boxes one at a time. Point at a row — or tap it on a'
         + ' phone — and it offers to mark everything up to and including it.'},
@@ -18924,7 +19024,7 @@ function tourSteps(){
         + ' own all-time record for this list. An untick only lowers the'
         + ' club\'s. Your own record keeps what it already has, which is what'
         + ' this bar is telling you.'},
-    {el: ()=> $('b-prop'),
+    {el: ()=> $('b-prop'), lit: 'top',
      t: 'Everything else is in here',
      // Counted at the moment the tour starts, from the same list the wall and
      // the catalogue count read, so it cannot go stale against them.
@@ -18935,6 +19035,106 @@ function tourSteps(){
             : '')
         + '. Start typing and it searches every one of them, and the rows'
         + ' inside them too.'}
+  ];
+}
+
+// ------------------------------------------------- the friends-page script
+// CLU-515, and the answer to Nathan's "it should show you the friends page and
+// the groups/friends stuff?"
+//
+// EVERY anchor here arrives on a cloud round trip — the code, the groups card,
+// the clubs card and the friends list are all painted from fetches — and the
+// tour resolves each anchor ONCE at the start. That is the exact shape of the
+// "wrong selector for step 3" bug, so tourFriendsReady() waits for the answers
+// before any of this is asked, and waits only for answers that are coming.
+//
+// ⚠ THE GATES ARE READ OFF THE DOM, not off state, and that is deliberate. A
+// panel's entire claim is that the control it names is on screen, so the
+// question to ask is whether the control is THERE — never whether a variable
+// says it should be. It also means a fetch that quietly failed drops the panel
+// rather than ringing an empty card.
+function tourFriendSteps(){
+  // the .afrow a control sits in. That is the honest unit on this page: a row
+  // is one action with its inputs, and ringing the bare <input> would leave the
+  // button that does the thing outside the spotlight.
+  const rowOf = id=>{ const e = $(id); return (e && e.closest('.afrow')) || null; };
+  // ⚠ #fp-code holds a single middle dot until ensureFcode() answers. A panel
+  // calling that "your code" is pointing at a placeholder, which is the same
+  // class of lie as ringing the list switcher.
+  const codeRow = ()=>{
+    const c = $('fp-code');
+    if(!c || (c.textContent || '').trim().length < 2) return null;
+    return c.closest('.afrow');
+  };
+  const groupsHost = $('fp-groups');
+  const firstGroup = ()=> groupsHost ? groupsHost.querySelector('.gwrap') : null;
+  // Only a MUTUAL friend is drawn with a star — a request you are waiting on
+  // gets a ghost in its place — so this is also the test for "has a friend".
+  const friendCard = ()=>{
+    const h = $('fp-list');
+    if(!h) return null;
+    const b = h.querySelector('.acard button[data-fav]');
+    return b ? b.closest('.acard') : null;
+  };
+  // the clubs card hides itself outright when you are in no club
+  const clubCard = ()=> tourVisible($('fp-clubcard')) ? $('fp-clubcard') : null;
+  // Only the owner is drawn the invite controls, so the copy that names them is
+  // composed from whether they are actually on this group's row.
+  const owns = ()=>{
+    const g = firstGroup();
+    return !!(g && g.querySelector('[data-ginv]'));
+  };
+  return [
+    {el: codeRow, lit: 'fp',
+     t: 'Your code is the handshake',
+     b: 'Every account gets one the moment it exists, so yours is already'
+        + ' here — you never make it. Copy it into a message, or press Share'
+        + ' link and send that instead. It is the only thing anybody needs to'
+        + ' add you.'},
+    // Present only once there is a friend. With none, #fp-list already says
+    // "No friends yet — share your code above and they appear here", and the
+    // project's rule is that a tour repeating the copy on screen is noise.
+    {el: friendCard, lit: 'fp',
+     t: 'A friend is quiet, and both ways',
+     b: 'Under each name is the top of their shelf — the lists they are'
+        + ' furthest into, moving as they watch. There is nothing to post and'
+        + ' nothing to answer, and they see exactly as much of yours. The star'
+        + ' keeps somebody at the top of this page.'},
+    {el: ()=> $('fp-gcard'), lit: 'fp',
+     t: 'A group is not a club',
+     b: 'A group is standing and quiet: the same people on every list you'
+        + ' track, no schedule, and they can see what you have watched. A club'
+        + ' is one list watched together, with a finish date if you want one,'
+        + ' and it lives on that list’s page rather than here. A group has'
+        + ' no code at all — it travels as a link, which is why there is a box'
+        + ' for one below.'},
+    // The two halves of the same card, and only one of them is ever true: with
+    // no group the thing to teach is how to start one, and with a group the
+    // thing to teach is what the block already on screen does. Shown together
+    // they would be six panels on a page with four cards.
+    {el: ()=> firstGroup() ? null : rowOf('fp-gname'), lit: 'fp',
+     t: 'Name one and send the link',
+     b: 'Make a group here and clubd hands you a link to send — there is'
+        + ' nothing to set up and nobody to approve. If that link ever gets'
+        + ' somewhere you did not mean, you can replace it, and the old one'
+        + ' stops working for everybody you already sent it to.'},
+    {el: firstGroup, lit: 'fp',
+     t: 'Who is in it, and what they see',
+     b: 'The names under it are everyone in it, and a group is often people you'
+        + ' are not friends with — so anybody you have not added offers to add,'
+        + ' right there on their line.'
+        + (owns()
+           ? ' Invite link copies the way in; new link replaces it and kills'
+             + ' the old one for everybody you have already sent it to.'
+           : '')
+        + ' The switch underneath stops your progress showing to this group,'
+        + ' and to this group alone.'},
+    {el: clubCard, lit: 'fp',
+     t: 'A club lives on its list',
+     b: 'Each of these is one list being watched with a few people. Open is the'
+        + ' way in — the club’s own bar, its roster and its schedule are'
+        + ' all on that page, not on this one. The code beside it is what you'
+        + ' send to whoever is joining.'}
   ];
 }
 
@@ -18988,10 +19188,80 @@ function tourBox(el){
   return {x: x, y: y, w: w, h: h};
 }
 
+// ⚠ `.act` IS NOT ENOUGH ON A DESKTOP, and two panels shipped describing
+// controls that were not on screen because of it. Measured on an armed row in a
+// pointer-capable browser: the catch-up button is `display: none` and the thumbs
+// are `opacity: 0`, because the rules that reveal them for `.act` live inside a
+// touch-device media block — on a desktop only :hover reveals them, and the tour
+// has no pointer to hover with. Nathan saw both: "still isn't highlighting or
+// showing the catch up to here button", and the row panel naming two thumbs on
+// a row that showed none. `.tourlit` is the tour's own class rather than a
+// change to what `.act` means, so tapping and hovering behave as they did.
+//
+// ⚠ AND IT HAPPENS WHEN THE STEP IS DRAWN, NOT WHEN IT IS RESOLVED, which is
+// the half that was wrong. tourStart resolves EVERY step's anchor up front, so
+// arming inside the anchor getter meant each step disarmed the one before it and
+// only the LAST row was ever lit — the reader arrived at the row panel to find
+// a row with nothing revealed on it, while a check that asked the catch-up step
+// directly saw it armed and passed. Asserting an element is armed is not
+// asserting the reader can see the control, and neither is arming it at a
+// moment the reader is not looking.
+let tourLitEl = null, tourLitAt = -1;
+function tourDark(){
+  try{
+    // `.tourlit` is the tour's own class and nothing else ever sets it, so
+    // every one of them is ours to take back. `.act` comes off only where the
+    // tour put it: a row somebody armed with a tap carries `.act` WITHOUT
+    // `.tourlit`, and taking that away would undo their own press.
+    document.querySelectorAll('.tourlit').forEach(x=>{
+      x.classList.remove('tourlit');
+      if(x.tagName === 'LI') x.classList.remove('act');
+    });
+  }catch(e){}
+  tourLitEl = null; tourLitAt = -1;
+}
+function tourLight(el, kind, at){
+  // paint runs on every scroll event; re-adding the same class 60 times a
+  // second is pointless style invalidation, so nothing happens unless the step
+  // or its element has actually changed.
+  if(tourLitEl === el && tourLitAt === at) return;
+  tourDark();
+  if(!el || !kind) return;
+  try{
+    el.classList.add('tourlit');
+    // ⚠ `.act` is added for the touch-side rules, and it CANNOT be relied on:
+    // a document-level click handler disarms every row the moment anything
+    // outside #list is clicked, which includes the tour's own Next button. So
+    // `.tourlit` carries every reveal the panels depend on and this is only
+    // belt and braces.
+    if(kind === 'row') el.classList.add('act');
+    // ⚠ THE MAST SHRINKS WHEN YOU SCROLL, and it takes the list's name and the
+    // magnifier with it (`.mast.mini` hides both). So the catalogue panel —
+    // which says "start typing and it searches every one of them" — was ringing
+    // a bare coloured dot by the time a reader got to it, because getting there
+    // means scrolling past the rows. Going back to the top is what makes the
+    // control the panel names be on screen while it names it.
+    // ⚠ AND THE CLASS COMES OFF BY HAND, not by waiting for the scroll event to
+    // do it. `.mini` is toggled inside a scroll listener, which runs AFTER the
+    // scroll position changes — so a ring measured in this same turn was drawn
+    // around the shrunken dot and only corrected itself on the next scroll
+    // event, if one ever came.
+    if(kind === 'top'){
+      try{ scrollTo(0, 0); }catch(e){}
+      try{ const m = $('mast'); if(m) m.classList.remove('mini'); }catch(e){}
+    }
+    tourLitEl = el; tourLitAt = (at === undefined ? tourAt : at);
+  }catch(e){}
+}
+
 function tourPaint(){
   if(!tourOn) return;
   const s = tourList[tourAt];
   const el = s && s.el();
+  // lit BEFORE measuring: revealing a control can change the box being ringed
+  // (the catch-up button goes from display:none to inline-block), and a ring
+  // measured first would sit a few pixels short of what it is pointing at.
+  tourLight(el, s && s.lit, tourAt);
   // An anchor below the fold cannot be spotlighted where it is not, so the step
   // scrolls to its own anchor first and measures afterwards. The measurement
   // before this scroll is the one that must not be trusted when it reads zero —
@@ -19077,6 +19347,10 @@ function tourGo(dir){
     const el = tourList[i].el();
     if(tourVisible(el) && tourRect(el)){
       tourAt = i;
+      // lit before the geometry is taken, for the same reason paint lights
+      // before it measures: revealing a control can move the thing being
+      // scrolled to.
+      tourLight(el, tourList[i].lit, i);
       // scrolling to the anchor belongs HERE, on a deliberate move, not in
       // paint — paint runs on every scroll event and would fight the reader
       const r = tourRect(el);
@@ -19116,6 +19390,10 @@ function tourEnd(){
   if(!tourOn) return;
   tourOn = false;
   tourMark();
+  // ⚠ and put the page back. The tour reveals controls that are normally
+  // hidden; leaving one lit after the card has gone is a row that stays armed
+  // for no reason, and on the friends page a permanently visible "remove".
+  tourDark();
   ['tv-t','tv-b','tv-l','tv-r','tring','tcard'].forEach(id=>{
     const el = $(id);
     if(el) el.remove();
@@ -19152,6 +19430,12 @@ function tourKey(e){
 // out before they had a chance to be there. Nathan: "secret wars now only shows
 // 2 tutorials". A snapshot is still right; taking it too early is not.
 function tourReady(){
+  // The friends page waits for entirely different things and must NOT wait for
+  // any of the list's — #list is in the document on every view, so falling
+  // through to the row test below made the friends tour sit for the full three
+  // seconds of retries and then open with nothing, which is the signed-out
+  // stall from CLU-381 wearing a new hat.
+  if(tourOnFriends()) return tourFriendsReady();
   // a list page has rows; if #list is not there at all this is not one and
   // there is nothing to wait for
   const list = $('list');
@@ -19181,12 +19465,36 @@ function tourReady(){
   if(CLOUD && user && gp && gp.classList.contains('hide')) return false;
   return true;
 }
+// ⚠ EVERY anchor on the friends page is a cloud answer, and the tour resolves
+// each one once. So this waits for the ANSWERS rather than for the DOM to look
+// a certain way — a renderer that has run and found nothing is ready, and an
+// empty #fp-groups is indistinguishable from one that has not run yet.
+//
+// The same rule as the club tile applies and it is the one that matters: wait
+// only for what is coming. Signed out there is nothing on its way, so this
+// returns true immediately and the steps drop out honestly instead of the page
+// sitting still for three seconds.
+// the groups / clubs / friends renderers have each answered, one way or another
+let FPGIN = false, FPCIN = false, FPFIN = false;
+function tourFriendsReady(){
+  if(!user || !sb) return true;         // nothing is coming; do not wait for it
+  // the friend code, which is a middle dot until ensureFcode() lands. Waiting
+  // on the ELEMENT would be waiting on markup that is already there.
+  const c = $('fp-code');
+  if(c && (c.textContent || '').trim().length < 2) return false;
+  // and all three cards, which decide five of the six panels between them
+  if(!FPGIN || !FPCIN || !FPFIN) return false;
+  return true;
+}
 function tourStart(tries){
   if(tourOn) return;
   if(!tourReady()){
     const n = (tries || 0) + 1;
     if(n <= 20){ setTimeout(()=> tourStart(n), 150); return; }
   }
+  // which script this is, decided from the surface under it and remembered for
+  // the run — tourEnd marks the key for the tour that actually ran
+  tourWhich = tourOnFriends() ? 'friends' : 'list';
   // The usable steps are settled ONCE, here. A step is usable if its anchor is
   // rendered and can be measured — and tourBox is what knows that a single
   // zero-sized read means nothing.
@@ -19201,7 +19509,7 @@ function tourStart(tries){
     // scrolled here to find out, which moved the page under every step that had
     // already been checked and made the tour open on step 2.
     return tourVisible(el) && !!tourRect(el);
-  }).map(s=> ({t: s.t, b: s.b, ask: s.el, node: s.el(),
+  }).map(s=> ({t: s.t, b: s.b, lit: s.lit, ask: s.el, node: s.el(),
                el: function(){
                  if(this.node && this.node.isConnected && tourRect(this.node))
                    return this.node;
@@ -19246,20 +19554,81 @@ function tourStart(tries){
   try{ $('tcard-go').focus(); }catch(e){}
 }
 
-// Who sees it, and when (CLU-382).
+// An invitation in the URL, of any kind. Someone opening a friend's list, or a
+// group link, is answering an invitation rather than starting a product, and a
+// tour talking over an arrival splash would talk across the one thing they came
+// here to do. Shared by both tours; the friends tour has more to lose by it,
+// because a fresh account created BY an invitation is exactly the case Nathan
+// flagged on CLU-515: "the first thing a new account does is often open the list
+// they were invited to".
+function tourInvited(q){
+  for(const k in ARRIVALS){ if(q.get(ARRIVALS[k].param)) return true; }
+  return !!(q.get('g') || q.get('friend'));
+}
+
+// Who sees it, and when (CLU-382, and CLU-515 for the friends half).
 function tourMaybe(){
   if(tourDone) return;
   tourDone = true;
   const q = new URLSearchParams(location.search);
+  // ⚠ Two surfaces, two scripts, two keys. The friends page runs the friends
+  // tour and nothing else: its panels name controls that exist only there.
+  if(tourOnFriends()){
+    // asked for explicitly — ?friends&tour=2 is how the friends tour is walked
+    if(q.get('tour') === '2'){ setTimeout(tourStart, 250); return; }
+    if(!TOURFAUTO) return;
+    if(!user) return;                 // every panel here is about an account
+    if(tourSeen('friends') >= TOURFVER) return;
+    if(tourInvited(q)) return;
+    setTimeout(tourStart, 400);
+    return;
+  }
   // asked for explicitly: always runs, and does not count as having been shown
   if(q.get('tour') === '1'){ setTimeout(tourStart, 250); return; }
   if(!TOURAUTO) return;
-  if(tourSeen() >= TOURVER) return;
-  // ⚠ Never on a shared link. Someone opening a friend's list is answering an
-  // invitation, not starting a product, and a tour over an arrival splash would
-  // talk across the one thing they came here to do.
-  for(const k in ARRIVALS){ if(q.get(ARRIVALS[k].param)) return; }
+  if(tourSeen('list') >= TOURVER) return;
+  if(tourInvited(q)) return;
   setTimeout(tourStart, 400);
+}
+
+// ⚠ THE TRIGGER NATHAN ASKED FOR: "there maybe should be a guided tour from the
+// beginning of when you make an acct? it should show you the friends page".
+//
+// The friends tour cannot fire where an account is made, because the sign-in
+// round trip comes back to a bare URL and lands on the shelf — and every control
+// the tour names is on the friends page. So the first signed-in load that has
+// neither seen the tour nor already been sent for it GOES there, once, and the
+// tour fires on arrival by its own gate above.
+//
+// It is a real navigation rather than a redraw, so the address bar tells the
+// truth and Back is the shelf. location.replace, so Back does not land on the
+// URL that bounces.
+//
+// ⚠ THE SENT MARK IS WRITTEN BEFORE THE NAVIGATION, and that is the whole
+// safety of it. If the tour then fails to open for any reason at all, the cost
+// is one redirect for one account — not a shelf that bounces on every load for
+// ever, which is the failure this shape has to be incapable of.
+//
+// What it must never do, and each of these is a separate `return`:
+//   * fire on an invitation — a new account made BY a shared link is answering
+//     it, and the list they were invited to is the one thing they came for;
+//   * fire when a specific list was asked for by ?p=, or when ?home or ?account
+//     was — those are explicit destinations and taking somebody somewhere else
+//     is a hijack, not onboarding;
+//   * fire signed out, or when the switch is off.
+function tourFSend(){
+  if(!TOURFAUTO) return false;
+  if(!CLOUD || !user) return false;
+  if(ACCOUNT || FRIENDSPG) return false;
+  if(SLUG) return false;              // a list is open; leave them in it
+  if(tourSeen('friends') >= TOURFVER) return false;
+  if(tourfSent() >= TOURFVER) return false;
+  const q = new URLSearchParams(location.search);
+  if(q.get('p') || q.has('home')) return false;
+  if(tourInvited(q)) return false;
+  tourfMarkSent();
+  try{ location.replace(location.pathname + '?friends'); }catch(e){ return false; }
+  return true;
 }
 
 // The solo strip, separately from build() so a filter toggle can redraw the
