@@ -73,7 +73,7 @@
     "kind": "films",
     "year": "1937–",
     "popularity": 96,
-    "blurb": "628 films from Snow White on — 439 theatrical, 163 television, 26 direct-to-video — about 877 hours.",
+    "blurb": "652 films from Snow White on — 456 theatrical, 167 television, 29 direct-to-video — about 912 hours.",
     "accent": "#1F4FA8",
     "accentDark": "#6F9BE8",
     "unit": {
@@ -81,8 +81,8 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 628,
-    "totalw": 877.15,
+    "total": 652,
+    "totalw": 912.04,
     "random": true
   },
   {
@@ -330,7 +330,7 @@
     "kind": "games",
     "year": "1996–",
     "popularity": 88,
-    "blurb": "The mainline start to finish, Red and Blue through Scarlet and Violet — about 319 hours of story. The remakes, the third versions that diverge and the two Legends games add 237 more.",
+    "blurb": "The mainline start to finish, Red and Blue through Scarlet and Violet — about 319 hours of story. The remakes, the third versions that diverge and the two Legends games add 237 more, and the tenth generation is dated 2027 with no hours behind it yet.",
     "accent": "#3B4CCA",
     "accentDark": "#FFCB05",
     "unit": {
@@ -338,7 +338,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 18,
+    "total": 19,
     "totalw": 556.28
   },
   {
@@ -392,17 +392,17 @@
     "title": "Grand Theft Auto",
     "subtitle": "every released game in order, expansions and handhelds marked",
     "kind": "games",
-    "year": "1997–2013",
+    "year": "1997–2026",
     "popularity": 86,
     "blurb": "Top-down Liberty City to widescreen Los Santos — about 213 hours of story, 146 of it the mainline.",
-    "accent": "#A3195B",
+    "accent": "#A80DA8",
     "accentDark": "#FF5FA2",
     "unit": {
       "one": "game",
       "many": "games"
     },
     "vpast": "played",
-    "total": 15,
+    "total": 16,
     "totalw": 212.66
   },
   {
@@ -2197,7 +2197,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 9,
+    "total": 10,
     "totalw": 87.53
   },
   {
@@ -2999,7 +2999,7 @@
     "title": "Denis Villeneuve",
     "subtitle": "the directed features, in release order",
     "kind": "films",
-    "year": "1998–2024",
+    "year": "1998–2026",
     "popularity": 62,
     "blurb": "Quebec dramas in French, thrillers made from other people's scripts, and the science fiction that made his name — every feature he has directed, in release order and weighted by runtime, about 22 hours of it.",
     "accent": "#704F5C",
@@ -3009,7 +3009,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 11,
+    "total": 12,
     "totalw": 22.44,
     "random": true
   },
@@ -3073,6 +3073,28 @@
     "vpast": "played",
     "total": 119,
     "random": true
+  },
+  {
+    "slug": "psych",
+    "media": [
+      "movies",
+      "tv"
+    ],
+    "title": "Psych",
+    "subtitle": "eight seasons in air order, with the films after",
+    "kind": "tv & films",
+    "year": "2006–2021",
+    "popularity": 62,
+    "blurb": "All 121 episodes of the eight-season run in 120 broadcasts, then the three films — about 90 hours in Santa Barbara.",
+    "accent": "#2F7D32",
+    "accentDark": "#F2C14E",
+    "unit": {
+      "one": "entry",
+      "many": "entries"
+    },
+    "vpast": "watched",
+    "total": 123,
+    "totalw": 89.88
   },
   {
     "slug": "twin-peaks",
@@ -3473,6 +3495,27 @@
     "total": 85
   },
   {
+    "slug": "chuck",
+    "media": [
+      "tv"
+    ],
+    "title": "Chuck",
+    "subtitle": "every episode, season by season",
+    "kind": "tv",
+    "year": "2007–2012",
+    "popularity": 58,
+    "blurb": "All 91 episodes across five seasons, in air order and weighted by each episode's published runtime — about 65 hours.",
+    "accent": "#708A3E",
+    "accentDark": "#C6E69A",
+    "unit": {
+      "one": "episode",
+      "many": "episodes"
+    },
+    "vpast": "watched",
+    "total": 91,
+    "totalw": 65.37
+  },
+  {
     "slug": "dragon-age",
     "media": [
       "games"
@@ -3816,7 +3859,7 @@
     "kind": "films",
     "year": "1919–2008",
     "popularity": 55,
-    "blurb": "326 films that at least 3 of 23 published cult-film reference works call a cult film, era by era from 1919 to 2008 — about 548 hours. No order; let the picker choose.",
+    "blurb": "326 films that at least 3 of 23 published cult-film reference works call a cult film, era by era from 1919 to 2008 — about 547 hours. No order; let the picker choose.",
     "accent": "#7D2483",
     "accentDark": "#DE86E8",
     "unit": {
@@ -3825,7 +3868,7 @@
     },
     "vpast": "watched",
     "total": 326,
-    "totalw": 547.99,
+    "totalw": 546.63,
     "random": true
   },
   {
