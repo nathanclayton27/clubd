@@ -254,6 +254,12 @@ h1 em{font-style:normal;color:var(--signal)}
   background:var(--card);font-size:12.5px;color:var(--ink-2)}
 .tinto b{font-weight:500;color:var(--ink)}
 .tinto .tw{font-size:11.5px;color:var(--ink-3)}
+/* the collapsed bar's one control: it looks like the caption it replaces, so
+   the row does not grow a button-shaped thing it never had */
+.tinto .twmore{font:inherit;font-size:11.5px;color:var(--ink-3);background:none;
+  border:0;border-bottom:1px dotted var(--rule-2);border-radius:0;padding:0;
+  cursor:pointer}
+.tinto .twmore:hover{color:var(--signal);border-bottom-color:var(--signal)}
 @media(max-width:560px){.tinto{position:static}}
 .uprow{display:flex;gap:14px;align-items:center;margin:6px 0 0;flex-wrap:wrap}
 
@@ -1022,6 +1028,20 @@ footer a{color:var(--steel)}
    through a refresh." It did, because nothing about it was transient.
    pkHTML always makes .pkwrap, .pkmore and .pkless direct children of .pklist,
    so `>` costs nothing and stops a peek ever reaching into a peek again. */
+/* CLU-447 — the boot skeleton. Sized off the home view's own rhythm so the
+   real content does not jump when it replaces this. */
+.bootskel{max-width:880px;margin:78px auto 0;padding:0 20px;
+  display:flex;flex-direction:column;gap:14px}
+.bootskel .bk{height:18px;border-radius:6px;background:var(--rule);opacity:.55}
+.bootskel .bk-h{height:30px;width:42%;opacity:.7}
+.bootskel .bk-s{width:64%}
+@media (prefers-reduced-motion: no-preference){
+  .bootskel .bk{animation:bkpulse 1.4s ease-in-out infinite}
+  .bootskel .bk:nth-child(2){animation-delay:.12s}
+  .bootskel .bk:nth-child(3){animation-delay:.24s}
+  .bootskel .bk:nth-child(4){animation-delay:.36s}
+}
+@keyframes bkpulse{0%,100%{opacity:.35}50%{opacity:.7}}
 .pklist{position:relative}
 .pklist > .pkwrap{position:relative}
 .pklist.pk-on > .pkwrap{height:var(--pkh,auto);overflow:hidden}
@@ -1636,6 +1656,18 @@ footer a{color:var(--steel)}
 
 <!-- friend-action notices float here so they exist on EVERY view -->
 <div id="fnote" class="hide" role="status"></div>
+
+<!-- CLU-447: what the page shows while it is working out who you are. Four
+     grey bars, no words, no branding beyond the masthead that is already up —
+     it must not look like either view, because it appears before anyone knows
+     which one you are getting. aria-hidden: it is a placeholder, and a screen
+     reader announcing "loading" shapes helps nobody. -->
+<div class="bootskel hide" id="boot" aria-hidden="true">
+  <div class="bk bk-h"></div>
+  <div class="bk"></div>
+  <div class="bk"></div>
+  <div class="bk bk-s"></div>
+</div>
 
 <!-- The one yes an invitation can need (CLU-436). The arrival slot is shared by
      every tab of the browser now, so the account that signs in is not
@@ -3468,6 +3500,14 @@ function ensureIndex(){
     // first paint ran before this fetch resolved and drew them empty
     try{ paintDrill(); }catch(e){}
     try{ paintDoorFills(); }catch(e){}
+    // ⚠ And the thumbs, for the same reason (CLU-443). Whether a DOOR offers a
+    // thumb is decided by doorFrac(), which answers null until this roll map
+    // arrives — so every door row renders thumbless on the first paint and
+    // would stay that way until something unrelated repainted it. That is
+    // exactly the shape of the bug CLU-528 had one page over: a control whose
+    // existence depended on which fetch won a race. thSig() carries the gate,
+    // so this repaint is a no-op on every row whose answer did not change.
+    try{ paintThumbs(); }catch(e){}
     // the stack draws its door fills inline rather than painting them on
     // afterwards, so it needs the whole repaint once the roll map lands
     try{ if(drawingPeople()) paintStack(); }catch(e){}
@@ -3895,7 +3935,33 @@ function thCount(item, dir){
 // The list's own thumb in the header does NOT slide: it is pressed once per
 // list rather than once per row, so there is no clutter to remove and no
 // second thing to learn.
+// ⚠ CLU-443, and it is the resolution of two rulings that collided.
+//
+// Nathan's rule on that card is "if you haven't seen an item dont give the user
+// the option to thumb it". His other ruling — "make sure that thumbing an item
+// on a mega list doesnt mark it as complete" — means a door's thumb no longer
+// ticks anything, so "have you seen it" stopped being a yes or no on a door:
+// it is how far into that list you are.
+//
+// His answer: "offer when part read and finished."
+//
+//   untouched   no thumb   — nothing ticked in there is nothing seen
+//   part read   thumb      — you have seen some of it, so you have a view
+//   finished    thumb      — unchanged
+//
+// The gate is doorFrac(), the SAME number the strip already draws as a partial
+// fill, so the thumb appears at exactly the moment the bar stops being empty.
+// No new state, and the two cannot drift apart.
+function thumbable(item){
+  if(!item || !INTO[item]) return true;   // an ordinary row is untouched by this
+  // An opinion already given stays visible. Unticking a child list back to
+  // nothing should not silently swallow what somebody already said about it.
+  if(thumbOf(item)) return true;
+  if(done.has(item)) return true;         // finished, and rolled up
+  return doorFrac(item) > 0;              // part read
+}
 function thHTML(item, slide){
+  if(!thumbable(item)) return '';
   const mine = thumbOf(item);
   let h;
   if(slide){
@@ -3916,7 +3982,11 @@ function thHTML(item, slide){
 // Signature-gated: paint() runs on every tick and a 600-row list would
 // otherwise rebuild 600 lots of markup to change nothing.
 function thSig(item){
-  return (thumbOf(item) || '-') + '|' + thFriends(item, 'up').join(',')
+  // thumbable() rides in the signature: a door crossing from untouched to part
+  // read changes nothing else here, so without it the row would keep its old
+  // markup and the thumb would not appear until something unrelated repainted.
+  return (thumbOf(item) || '-') + '|' + (thumbable(item) ? '1' : '0')
+       + '|' + thFriends(item, 'up').join(',')
        + '|' + thFriends(item, 'down').join(',');
 }
 function paintThumbs(){
@@ -4062,8 +4132,41 @@ async function adopt(){
     await pushCloud();
     flash('Folded '+local.size+' '+plural(local.size)+' from this device into your account.');
   }else{
-    done = server;
-    state('Synced','ok');
+    // ⚠ A MERGE IS A UNION, NEVER A REPLACEMENT (CLU-504).
+    //
+    // This branch used to be `done = server` followed by writeLocal(), which
+    // overwrites this device's copy. Any tick this device held that the row did
+    // not — a tick made offline, a tick made while a write was failing, a tick
+    // made on a second device between this row being read and written — was
+    // destroyed, silently, and the line then said "Synced". Found by two
+    // independent reviewers in three drivable states, all ordinary, all with
+    // the ticks visibly on screen at the moment they went.
+    //
+    // A user's ticks are the only thing they have put into this site. A list, a
+    // pace, a club can all be rebuilt from sources; progress cannot.
+    //
+    // ⚠ THE KNOWN COST, and Nathan chose it deliberately (option 2 on the
+    // card): with no tombstone, an empty-or-shorter row is ambiguous — it
+    // cannot say whether an id was never uploaded or was deleted on purpose. So
+    // a union can bring back something you unticked on another device. That is
+    // the trade: annoying beats lossy. The `deleted_at` migration that removes
+    // the ambiguity is the next step on CLU-504, and when it lands this branch
+    // gets to tell the two apart instead of assuming.
+    //
+    // Nothing is pushed unless this device actually holds something the row
+    // does not, so an ordinary load still costs one read and no write.
+    const extra = [...local].filter(id=> !server.has(id));
+    done = extra.length ? new Set([...server, ...local]) : server;
+    if(extra.length){
+      // The row is BEHIND this device now, so the page must not claim to be
+      // synced until the push has happened. pushCloud() sets the line itself —
+      // "Synced" on success, "Sync failed — saved on this device" when it could
+      // not — which is the card's other requirement: the message has to match
+      // what happened.
+      await pushCloud();
+    }else{
+      state('Synced','ok');
+    }
   }
   writeLocal();
   // CLU-389. adopt() always runs BEFORE loadGroups() can name a club — a club
@@ -4094,11 +4197,17 @@ async function onSession(session, definitive){
       $('signin').classList.add('hide');
       // the account page wants the primed copy too — Download my data reads
       // localStorage, and on a fresh device that is empty until this runs
-      await primeShelf();
-      await syncStars();
-      // awaited alongside stars so the shelf is correct on its FIRST paint —
-      // a dismissal arriving late would visibly pull a club off the screen
-      await syncShelfHide();
+      // ⚠ IN PARALLEL (CLU-447). These three were awaited in series, so a
+      // signed-in first paint waited for three cloud round trips end to end
+      // before any view was un-hidden. They do not depend on one another —
+      // the shelf, the stars and the hidden-list set are three separate reads
+      // — so the wait is now the slowest of the three rather than their sum.
+      // Still awaited together, because the shelf must be correct on its FIRST
+      // paint: a dismissal arriving late visibly pulls a club off the screen.
+      await Promise.all([primeShelf(), syncStars(), syncShelfHide()]);
+      await Promise.resolve();
+      // (syncShelfHide rides in the Promise.all above, for the same reason it
+      // was awaited here: the shelf must be right the first time it is drawn.)
       $('homev').classList.add('hide');
       $('splash').classList.add('hide');
       $('arrivev').classList.add('hide');
@@ -5238,6 +5347,7 @@ async function renderAccount(){
   });
 }
 function showAccount(){
+  bootSkel(false);
   $('splash').classList.add('hide');
   $('homev').classList.add('hide');
   $('switcher').classList.remove('hide');
@@ -6608,6 +6718,7 @@ function gnote(text, bad, where){
   setTimeout(()=>{ if(f.textContent === text) f.classList.add('hide'); }, 9000);
 }
 function showFriendsPage(){
+  bootSkel(false);
   $('splash').classList.add('hide');
   $('homev').classList.add('hide');
   $('accountv').classList.add('hide');
@@ -7027,6 +7138,37 @@ function tintoLane(){
   if(h > 0) document.documentElement.style.setProperty('--barh', h + 'px');
 }
 addEventListener('resize', tintoLane);
+// ⚠ CLU-513. Nathan asked what this bar was for and whether it had to be this
+// loud: "I feel like its unnecessary but maybe it actually is. maybe this
+// should be included somewhere a bit more incognito or just a part of the
+// guided tour?" — then chose "1+2": say it once, and move the explanation into
+// the tour.
+//
+// It is NOT unnecessary. A club session and your all-time row are different
+// namespaces, and this is the only thing on screen that answers "which of my
+// two records am I editing". But it was sticky and it repeated the same two
+// sentences on every scroll, for something a person needs to understand ONCE
+// PER CLUB.
+//
+// So: the full sentence for the first TINTO_FULL visits to a given club, then
+// the name alone with the explanation one press away. It stays sticky even
+// collapsed, because "which record am I in" is the question it exists to
+// answer and that question does not stop being live.
+const TINTO_FULL = 3;
+let TINTOSEEN = false;
+function tintoVisits(){
+  const k = 'gw:tinto:' + SESSION;
+  let n = 0;
+  try{ n = parseInt(localStorage.getItem(k) || '0', 10) || 0; }catch(e){}
+  // counted once per page life, not once per paint — paintTickInto runs again
+  // on every filter change and would otherwise burn through the allowance
+  // without the reader having seen anything new
+  if(!TINTOSEEN){
+    TINTOSEEN = true;
+    try{ localStorage.setItem(k, String(n + 1)); }catch(e){}
+  }
+  return n;
+}
 function paintTickInto(){
   const el = $('tinto');
   if(!el) return;
@@ -7034,10 +7176,22 @@ function paintTickInto(){
   el.classList.toggle('hide', !on);
   if(!on){ el.textContent = ''; return; }
   tintoLane();
-  el.innerHTML = 'Ticking into <b>' + esc(SESSNAME) + '</b>'
-    + '<span class="tw">this club started empty · what you tick here is added'
-    + ' to your all-time record for ' + esc(PROP && PROP.title ? PROP.title : 'this list')
+  const why = '<span class="tw">this club started empty \u00b7 what you tick here'
+    + ' is added to your all-time record for '
+    + esc(PROP && PROP.title ? PROP.title : 'this list')
     + ' and unticking here does not take it back</span>';
+  const settled = tintoVisits() >= TINTO_FULL;
+  el.innerHTML = 'Ticking into <b>' + esc(SESSNAME) + '</b>'
+    + (settled
+        ? '<button type="button" class="twmore" aria-expanded="false">'
+          + 'what this means</button>'
+        : why);
+  const more = el.querySelector('.twmore');
+  if(more) more.onclick = ()=>{
+    more.setAttribute('aria-expanded', 'true');
+    more.remove();
+    el.insertAdjacentHTML('beforeend', why);
+  };
 }
 
 // The picked comparison, loaded the way a club is: the same progress query,
@@ -10089,6 +10243,41 @@ function filterMenu(q){
     (m.title+' '+(m.subtitle||'')+' '+(m.kind||'')+' '+(m.year||'')).toLowerCase()
       .indexOf(needle) >= 0);
 
+  // ⚠ RELEVANCE, not alphabet (CLU-509). Nathan: "make sure that when you start
+  // typing in letters in the search box that mega lists appear at the top. so
+  // if you search 'director' its not like 8th entry down."
+  //
+  // `list` arrives sorted alphabetically, which is right at REST — the quiet
+  // menu is a shortlist you scan, not a ranking. The bug was that the order
+  // survived the filter untouched, so there was no relevance step at all: a
+  // list whose title STARTS with what you typed ranked below anything
+  // alphabetically earlier that merely contained it somewhere, including in a
+  // subtitle that is not on screen. Typing `dir` put `Directors` EIGHTH, below
+  // five of its own children — Alfred Hitchcock, Christopher Nolan and the rest
+  // are reached by its own `into` rows and sorted above their parent purely on
+  // first name.
+  //
+  // Four tiers, best first. Alphabetical still breaks the final tie, so nothing
+  // moves that has no reason to.
+  const tier = m=>{
+    const t = (m.title || '').toLowerCase();
+    if(t.indexOf(needle) === 0) return 0;                 // title starts with it
+    // a WORD inside the title starts with it: `star` finds Star Trek above
+    // Battlestar, which a plain substring test calls equally good
+    if(t.split(/[^a-z0-9]+/).some(w=> w.indexOf(needle) === 0)) return 1;
+    if(t.indexOf(needle) >= 0) return 2;                  // anywhere in the title
+    return 3;                       // only the subtitle, kind or year matched
+  };
+  if(needle){
+    // Within a tier a MEGA LIST outranks an ordinary one. It is the doorway to
+    // the others, so where both match equally well it is the one that was
+    // meant — and it needs no slug special-cased anywhere, because the flag is
+    // already on the manifest (CLU-508).
+    hits.sort((a, b)=> tier(a) - tier(b)
+                    || (b.mega ? 1 : 0) - (a.mega ? 1 : 0)
+                    || a.title.localeCompare(b.title));
+  }
+
   // No control here — starring happens on the property's own title. A row only
   // shows a star when it has one, so an unstarred menu carries no marks at all.
   const row = m=>{
@@ -10337,6 +10526,7 @@ function wireCards(host){
   });
 }
 function showSplash(){
+  bootSkel(false);
   $('splash').classList.remove('hide');
   $('switcher').classList.add('hide');
   $('mast').classList.add('athome');
@@ -10425,6 +10615,14 @@ const WGREY = 150, WSHRINK = 190, WSLIDE = 260;
 let wallTurn = 0;
 let homeWallApply = null;
 let _splashWait = null;
+// The neutral boot shape (CLU-447). It is deliberately content-free: four grey
+// bars that could become either view, so nothing about it says whether you are
+// signed in. Anything that reveals a real view clears it.
+function bootSkel(on){
+  const el = $('boot');
+  if(!el) return;
+  el.classList.toggle('hide', !on);
+}
 function wallReduced(){ return matchMedia('(prefers-reduced-motion: reduce)').matches; }
 function chipsHTML(){
   const list = splashList();
@@ -11486,6 +11684,20 @@ function showHome(){
       // auth hasn't answered — never flash the stranger pitch at someone
       // who may be about to be signed in. Real strangers get it after
       // auth answers null, or a short beat, whichever comes first.
+      //
+      // ⚠ BUT NOT A BLANK PAGE (CLU-447). This returned having un-hidden
+      // nothing, so the first thing a new visitor saw was the masthead over an
+      // empty screen — measured at 2,402ms with a fast stub, worse on a real
+      // network, and up to 4.5s when the session was slow. With no spinner and
+      // no text it reads as broken rather than as loading, and clubd's first
+      // visit is usually somebody following a link a friend sent them.
+      //
+      // The skeleton says nothing about WHO you are, which is the whole
+      // constraint here: showing home would flash a signed-in shape at a
+      // stranger, showing the pitch would flash a signed-out one at somebody
+      // about to be signed in (CLU-83, guarded by authflash_check and
+      // splash_gate_check). A neutral shape commits to neither.
+      bootSkel(true);
       _splashWait = setTimeout(()=>{
         if(!user && !sessionSeen) showSplash();
       }, 1400);
@@ -11494,6 +11706,7 @@ function showHome(){
     showSplash();
     return;
   }
+  bootSkel(false);
   $('homev').classList.remove('hide');
   $('switcher').classList.remove('hide');
   $('mast').classList.add('athome');
@@ -12517,6 +12730,17 @@ function tourSteps(){
      t: 'Catching up',
      b: 'Nobody ticks forty boxes one at a time. Point at a row — or tap it on a'
         + ' phone — and it offers to mark everything up to and including it.'},
+    // ⚠ CLU-513, the other half of "1+2". The bar stops repeating itself, so
+    // the explanation has to live somewhere permanent or quietening it would
+    // trade a loud correct thing for a quiet wrong one. It is gated on being
+    // in a club, because outside one there is only a single record and the
+    // sentence would be describing something that cannot happen to you.
+    {el: ()=> SESSION ? $('tinto') : null,
+     t: 'A club keeps its own copy',
+     b: 'Inside a club a tick lands twice \u2014 on the club\'s run and on your'
+        + ' own all-time record for this list. An untick only lowers the'
+        + ' club\'s. Your own record keeps what it already has, which is what'
+        + ' this bar is telling you.'},
     {el: ()=> $('b-prop'),
      t: 'Everything else is in here',
      b: browseList().length + ' more lists. Start typing and it searches every'
