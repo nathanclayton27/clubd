@@ -35,9 +35,27 @@ converted, and MOVES the moment one is not, naming the rows.
     python tools/idsafe.py --rows           # name every row that would move
 
 Exit 0 means every generator carrying a convertible title is proven id-safe,
-or has been read by hand and written down in HAND_READ below. Exit 1 means at
-least one is not, or could not be read at all — which is the same answer for
-this purpose: an unreadable fold is an unproven fold.
+or has been read by hand and written down in HAND_READ below.
+
+EXIT CODES, and the middle one exists because of a red build
+
+  0  every list is proven safe, or recorded in HAND_READ
+  2  no unproven fold, but this run could not see the whole catalogue
+  1  a fold can move an id, or one is unproven and unrecorded
+
+⚠ 2 is not a softer 1. It is the answer to a different question, and running
+this gate in CI is what forced the distinction. Seven generators keep their
+source data in gitignored `scratch/`, so on a CLEAN CHECKOUT — which is exactly
+what a runner has — they cannot be executed at all and come back UNREAD. That
+is not a finding about the fold; it is a fact about the checkout. Treating it
+as exit 1 made `main` red for a list (`thor`) whose ids are built from ISSUE
+NUMBERS and which no title fold can touch, while the same command exited 0 on
+a developer's machine where the cache happens to exist.
+
+A gate whose verdict depends on gitignored files is not a gate. So UNREAD is
+reported loudly, counted, and exits 2 — the same convention `tools/gendrift.py`
+already uses for the same cause — and `check.yml` turns 2 into a warning.
+MOVES and an unrecorded UNPROVEN still exit 1 from anywhere.
 
 .github/workflows/check.yml runs it on every push, so a generator that arrives
 with a fold that can move an id fails the build rather than waiting for someone
@@ -541,16 +559,25 @@ def main():
 
     # ---- what is actually unresolved, and is the table still honest? ------
     seen = {slug: v for v, slug, *_ in verdicts}
-    resolved, unresolved, stale = [], [], []
+    resolved, unresolved, stale, unread = [], [], [], []
     for v, slug, who, why, rep in verdicts:
         if v in ("SAFE", "NOT-FOLDED", "HAND-WRITTEN"):
             continue
         rec = HAND_READ.get(slug)
         # MOVES is never excusable, whatever any table says about the list.
-        if v == "MOVES" or rec is None or rec[0] != v:
-            unresolved.append(slug)
+        if v == "MOVES" or (rec is not None and rec[0] == v):
+            if v == "MOVES":
+                unresolved.append(slug)
+            else:
+                resolved.append((slug, v, rec[1]))
+        elif v == "UNREAD":
+            # Could not run the generator here at all -- its source data is
+            # gitignored, so a clean checkout has nothing to run it against.
+            # A fact about the checkout, not about the fold. See the exit
+            # codes in the module docstring.
+            unread.append(slug)
         else:
-            resolved.append((slug, v, rec[1]))
+            unresolved.append(slug)
     if not a.slugs:
         for slug, (v, _) in sorted(HAND_READ.items()):
             if slug not in seen:
@@ -564,7 +591,7 @@ def main():
     if a.safe:
         for s in safe_slugs:
             print(s)
-        return 1 if (unresolved or stale) else 0
+        return 1 if (unresolved or stale) else (2 if unread else 0)
 
     order = {"MOVES": 0, "UNPROVEN": 1, "UNREAD": 2, "NO-GEN": 3,
              "HAND-WRITTEN": 4, "NOT-FOLDED": 5, "SAFE": 6}
@@ -601,7 +628,16 @@ def main():
               "and record what it does in HAND_READ — an unproven fold is not "
               "a small risk: a moved id is a silent untick of every tick on "
               "that row, on every device, with nothing to recover from.")
-    return 1 if (unresolved or stale) else 0
+    if unread:
+        print("")
+        print("INCOMPLETE: %s" % ", ".join(sorted(unread)))
+        print("This run could not execute those generators at all — their "
+              "source data lives in gitignored scratch/, so a clean checkout "
+              "has nothing to run them against. That is a fact about the "
+              "checkout, not a verdict on the fold, and it is why this exits "
+              "2 rather than 1. Nothing here is cleared; nothing here is "
+              "accused.")
+    return 1 if (unresolved or stale) else (2 if unread else 0)
 
 
 if __name__ == "__main__":
