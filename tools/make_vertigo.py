@@ -42,12 +42,25 @@ The parsers, and why each is shaped the way it is:
                same 60 issues differently and Vol. 0 was folded into Vols 3
                and 10, so Vol. 0 is dropped (asserted, not assumed).
 
-NO WEIGHTS, ANYWHERE, ON PURPOSE. Downstream, WEIGHT = x.w >= 0 ? x.w : 1,
-so a single weighted row would silently redefine every unweighted row on the
-page as one hour. There are no runtimes for comics and an issue count is not
-an hour, so this list weighs nothing at all: no row carries `w`, no
-weightUnit is declared, and the issue counts live in the row notes where
-they inform without pretending to be time.
+EVERY ROW IS WEIGHTED, AND THE WEIGHT IS COMICS (CLU-555). A row here is a
+BOOK while a row on every other comics list in the catalogue is an ISSUE, and
+that difference used to mean this page could carry no weight at all. It is the
+wrong conclusion. The unit of a tick and the unit of a mark are two different
+questions: a tick is a volume, because a volume is what you finish, and a mark
+is issues, because issues are the one quantity every comics list on the site
+can state. So each row's `w` is the number of comics that volume collects,
+read off its own "Material collected" cell.
+
+Why it has to be that and not one-per-volume. This list is a door on the DC
+Comics shelf, and build.py gives a door a weight equal to the sum of its
+target's rows. Weighing a volume one would draw the Vertigo door as 29 beside
+Sandman's 88 — a third of Sandman's width for a shelf that is more than twice
+its size. A mark must mean one thing across a hub, and the only thing all
+eight DC doors can mean is issues.
+
+WEIGHT = x.w >= 0 ? x.w : 1 downstream, so this is all-or-nothing: a single
+unweighted row here would silently draw as one comic. Hence the stamp is
+asserted over every row rather than applied per constructor.
 """
 import json
 import pathlib
@@ -312,12 +325,65 @@ def and_join(names):
         "%s and %s" % (", ".join(names[:-1]), names[-1])
 
 
-def row(rid, title, n, note):
-    """A row. An empty note is left OUT rather than shipped as "", and no row
-    ever gets a `w` — see the module docstring for why this list has none."""
+def spanof(r):
+    """How many issues an inclusive (first, last) range covers."""
+    assert r and r[1] >= r[0], r
+    return r[1] - r[0] + 1
+
+
+# The title is delimited by wiki italics, NOT by a quote: "One Man's War"
+# contains an apostrophe, and a [^'] title class silently skipped that
+# special, undercounting the run by one and tripping the prose cross-check.
+PREACHER_SPECIAL = re.compile(
+    r"''Preacher Special: (.+?)''(?:\s*#\s*(\d+)\s*[-\u2013\u2014]\s*(\d+))?")
+
+
+def preacher_comics(r):
+    """Comics in one Preacher volume, counted off its own contents cell.
+
+    The main run's issues, plus every Preacher Special the cell names: one
+    with an issue range is that many comics (Saint of Killers is a four-issue
+    miniseries), one without is a single one-shot. Ancient History has no main
+    run at all and is six specials' worth on its own.
+    """
+    n = spanof(r["range"]) if r["range"] else 0
+    for m in PREACHER_SPECIAL.finditer(r["raw"]):
+        n += (int(m.group(3)) - int(m.group(2)) + 1) if m.group(2) else 1
+    assert n, "no comics counted for Preacher %r" % r["t"]
+    return n
+
+
+def transmet_comics(r):
+    """The volume's own issues, plus any STANDALONE one-shot it collects.
+
+    Two volumes also reprint a short story out of ''Vertigo: Winter's Edge'',
+    an anthology of everybody's characters. The cell lists those as story
+    titles under that anthology issue's heading, and a short printed inside
+    somebody else's comic is not a comic: counting it would invent an issue
+    for Transmetropolitan and simultaneously count one that belongs to Winter's
+    Edge. So it is worth nothing here, while the two Transmetropolitan
+    specials — whole books with their own covers — are worth one each. If the
+    table ever grows a bullet of a third shape this stops rather than guesses.
+    """
+    n, body = spanof(r["range"]), r["current"]
+    head, specials = body, 0
+    if "The specials:" in body:
+        head, tail = body.split("The specials:", 1)
+        specials = len(re.findall(r"^\*", tail, re.M))
+        assert specials, body
+    loose = [ln for ln in head.split("\n") if ln.lstrip().startswith("*")]
+    if loose:
+        assert re.search(r"\"Vertigo: Winter's Edge\" #\d+:", head), body
+    return n + specials
+
+
+def row(rid, title, n, note, w):
+    """A row. An empty note is left OUT rather than shipped as "", and `w` is
+    the number of comics the volume collects — see the module docstring."""
     it = {"id": rid, "t": title, "n": n}
     if note:
         it["note"] = note
+    it["w"] = w
     return it
 
 
@@ -400,7 +466,8 @@ def main():
         "open": True,
         "items": [row("vert-preacher-%02d" % (i + 1), r["t"],
                       dash(*r["range"]) if r["range"] else "The specials",
-                      prop.join_bits(r["when"], preacher_note(r)))
+                      prop.join_bits(r["when"], preacher_note(r)),
+                      preacher_comics(r))
                   for i, r in enumerate(preacher)],
     })
 
@@ -415,7 +482,8 @@ def main():
                  "this shelf. Six issues a volume in the current printing.",
         "links": [{"label": "The volumes", "url": ANCHOR["transmet"]}],
         "items": [row("vert-transmet-%02d" % (i + 1), r["t"],
-                      dash(*r["range"]), transmet_note(r))
+                      dash(*r["range"]), transmet_note(r),
+                      transmet_comics(r))
                   for i, r in enumerate(transmet)],
     })
 
@@ -431,17 +499,46 @@ def main():
         "items": [row("vert-y-%02d" % r["vol"],
                       "Vol. %d: %s" % (r["vol"], r["t"]), dash(*r["range"]),
                       prop.join_bits(r["when"], "%d pages" % r["pages"]
-                                     if r["pages"] else ""))
+                                     if r["pages"] else ""),
+                      spanof(r["range"]))
                   for r in y],
     })
 
+    # All or nothing: build.py totals a weight only when EVERY row has one,
+    # and downstream an unweighted row would quietly draw as a single comic.
     for s in sections:
         for x in s["items"]:
-            assert "w" not in x, "this list carries no weights: %s" % x["id"]
+            assert isinstance(x.get("w"), int) and x["w"] > 0, \
+                "row %s has no comic count" % x["id"]
 
     rows = sum(len(s["items"]) for s in sections)
     assert rows == 29, rows
     issues = p_issues + t_issues + 60
+
+    # The weights came out of the collected-editions TABLES. Check them against
+    # what each article says in PROSE, which is a different sentence written by
+    # different people: the main-run issues must tile exactly the run length the
+    # infobox and the intro both claim, and what is left over must be the
+    # specials, counted and not assumed.
+    by = {s["id"]: [x["w"] for x in s["items"]] for s in sections}
+    p_main = sum(spanof(r["range"]) for r in preacher if r["range"])
+    t_main = sum(spanof(r["range"]) for r in transmet)
+    assert (p_main, t_main, sum(by["y"])) == (p_issues, t_issues, 60), \
+        (p_main, t_main, sum(by["y"]))
+    p_extra, t_extra = sum(by["preacher"]) - p_main, sum(by["transmet"]) - t_main
+    extras = p_extra + t_extra
+    # Nine Preacher specials (Saint of Killers is four of them) and the two
+    # Transmetropolitan one-shots. Typed so that a change to either article's
+    # tables stops the generator instead of quietly moving every mark.
+    assert (p_extra, t_extra) == (9, 2), \
+        "specials count moved: %d Preacher, %d Transmetropolitan; rows %r" \
+        % (p_extra, t_extra, by)
+    comics = sum(sum(v) for v in by.values())
+    assert comics == issues + extras, (comics, issues, extras)
+    # Read off the rows rather than typed: the note names the extremes,
+    # and a retitled or recut volume must move the sentence with it.
+    allw = [w for v in by.values() for w in v]
+    thin, thick = min(allw), max(allw)
 
     p = {
         "slug": SLUG,
@@ -454,6 +551,10 @@ def main():
                  "imprint's great creator-owned runs, tracked by collected "
                  "volume rather than by issue. The Sandman has its own list.",
         "unit": {"one": "volume", "many": "volumes"},
+        # A tick is a volume; a mark is issues. Declaring both is what keeps
+        # the page honest about the difference instead of hiding it — the same
+        # shape x-men and amazing-spider-man already ship.
+        "weightUnit": {"one": "issue", "many": "issues"},
         "verb": {"base": "read", "past": "read", "ing": "reading"},
         "accent": ACCENT,
         "accentDark": ACCENT_DARK,
@@ -484,12 +585,17 @@ def main():
              "after a three-and-a-half-year hiatus), which a list you are "
              "meant to be able to finish cannot really hold. If it lands "
              "here one day it will be as its own list." % saga_issues],
-            ["No hours, no weights.",
-             "Comics have no runtimes, and an issue count is not a number of "
-             "hours — so no row on this page carries a weight and the "
-             "progress bar counts volumes, flat, one apiece. Issue counts sit "
-             "in the row text where they tell you how thick a book is without "
-             "pretending to tell you how long it takes."],
+            ["A mark's width is issues. A tick is still a volume.",
+             "Comics publish no reading time, so there are no hours to size a "
+             "mark with — but there are issues, and the rest of the "
+             "catalogue's comics count in them. So the two units are kept "
+             "apart on purpose: you tick a book, because a book is what you "
+             "finish, and the bar draws that book as wide as the comics "
+             "inside it. The thinnest book on the shelf holds %d comics and "
+             "the thickest %d, and the marks are drawn in that proportion. The "
+             "three runs are %d issues plus %d specials and one-shots — %d "
+             "comics in %d volumes."
+             % (thin, thick, issues, extras, comics, rows)],
             ["Left off.",
              "The imprint ran from %d to %d and this is three books out of "
              "it. Not chased here: %s, and the rest of the line. "
@@ -498,14 +604,20 @@ def main():
              "not per printing." % (born, died, and_join(LEFT_OFF))],
             "Volume titles, issue ranges and release dates machine-read from "
             "each series' own Wikipedia article; a volume whose range could "
-            "not be verified would fail the build rather than ship a guess.",
+            "not be verified would fail the build rather than ship a guess. "
+            "Each mark's width is counted off that volume's own Material "
+            "collected cell — its issues, plus any special the cell names as "
+            "a book of its own — and the three totals are checked against the "
+            "issue counts the articles state in prose before the file is "
+            "written.",
         ],
         "sections": sections,
     }
 
     out = prop.write(p)
-    print("wrote %s — %d volumes in %d sections (%d issues, no weights)"
-          % (out.name, rows, len(sections), issues))
+    print("wrote %s — %d volumes in %d sections (%d comics = %d issues "
+          "+ %d specials)"
+          % (out.name, rows, len(sections), comics, issues, extras))
     for s in sections:
         print("   %-20s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
 

@@ -62,22 +62,26 @@
           "id": "bat-dkr-1",
           "t": "The Dark Knight Returns",
           "n": "#1",
-          "note": "Frank Miller"
+          "note": "Frank Miller",
+          "w": 1
         },
         {
           "id": "bat-dkr-2",
           "t": "The Dark Knight Returns",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "bat-dkr-3",
           "t": "The Dark Knight Returns",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "bat-dkr-4",
           "t": "The Dark Knight Returns",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         }
       ],
       "open": true
@@ -98,22 +102,26 @@
           "id": "bat-b1-404",
           "t": "Batman",
           "n": "#404",
-          "note": "Frank Miller with David Mazzucchelli"
+          "note": "Frank Miller with David Mazzucchelli",
+          "w": 1
         },
         {
           "id": "bat-b1-405",
           "t": "Batman",
-          "n": "#405"
+          "n": "#405",
+          "w": 1
         },
         {
           "id": "bat-b1-406",
           "t": "Batman",
-          "n": "#406"
+          "n": "#406",
+          "w": 1
         },
         {
           "id": "bat-b1-407",
           "t": "Batman",
-          "n": "#407"
+          "n": "#407",
+          "w": 1
         }
       ]
     },
@@ -132,7 +140,8 @@
           "id": "bat-killing-joke",
           "t": "Batman: The Killing Joke",
           "n": "",
-          "note": "Alan Moore with Brian Bolland"
+          "note": "Alan Moore with Brian Bolland",
+          "w": 1
         }
       ]
     },
@@ -151,22 +160,26 @@
           "id": "bat-b1-426",
           "t": "Batman",
           "n": "#426",
-          "note": "Jim Starlin with Jim Aparo"
+          "note": "Jim Starlin with Jim Aparo",
+          "w": 1
         },
         {
           "id": "bat-b1-427",
           "t": "Batman",
-          "n": "#427"
+          "n": "#427",
+          "w": 1
         },
         {
           "id": "bat-b1-428",
           "t": "Batman",
-          "n": "#428"
+          "n": "#428",
+          "w": 1
         },
         {
           "id": "bat-b1-429",
           "t": "Batman",
-          "n": "#429"
+          "n": "#429",
+          "w": 1
         }
       ]
     },
@@ -185,7 +198,8 @@
           "id": "bat-arkham",
           "t": "Arkham Asylum: A Serious House on Serious Earth",
           "n": "",
-          "note": "Grant Morrison with Dave McKean"
+          "note": "Grant Morrison with Dave McKean",
+          "w": 1
         }
       ]
     },
@@ -205,67 +219,80 @@
           "id": "bat-lh-1",
           "t": "The Long Halloween",
           "n": "#1",
-          "note": "Jeph Loeb with Tim Sale"
+          "note": "Jeph Loeb with Tim Sale",
+          "w": 1
         },
         {
           "id": "bat-lh-2",
           "t": "The Long Halloween",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "bat-lh-3",
           "t": "The Long Halloween",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "bat-lh-4",
           "t": "The Long Halloween",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "bat-lh-5",
           "t": "The Long Halloween",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "bat-lh-6",
           "t": "The Long Halloween",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "bat-lh-7",
           "t": "The Long Halloween",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "bat-lh-8",
           "t": "The Long Halloween",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "bat-lh-9",
           "t": "The Long Halloween",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "bat-lh-10",
           "t": "The Long Halloween",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "bat-lh-11",
           "t": "The Long Halloween",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "bat-lh-12",
           "t": "The Long Halloween",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "bat-lh-13",
           "t": "The Long Halloween",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         }
       ]
     },
@@ -285,62 +312,74 @@
           "id": "bat-b1-608",
           "t": "Batman",
           "n": "#608",
-          "note": "Jeph Loeb with Jim Lee"
+          "note": "Jeph Loeb with Jim Lee",
+          "w": 1
         },
         {
           "id": "bat-b1-609",
           "t": "Batman",
-          "n": "#609"
+          "n": "#609",
+          "w": 1
         },
         {
           "id": "bat-b1-610",
           "t": "Batman",
-          "n": "#610"
+          "n": "#610",
+          "w": 1
         },
         {
           "id": "bat-b1-611",
           "t": "Batman",
-          "n": "#611"
+          "n": "#611",
+          "w": 1
         },
         {
           "id": "bat-b1-612",
           "t": "Batman",
-          "n": "#612"
+          "n": "#612",
+          "w": 1
         },
         {
           "id": "bat-b1-613",
           "t": "Batman",
-          "n": "#613"
+          "n": "#613",
+          "w": 1
         },
         {
           "id": "bat-b1-614",
           "t": "Batman",
-          "n": "#614"
+          "n": "#614",
+          "w": 1
         },
         {
           "id": "bat-b1-615",
           "t": "Batman",
-          "n": "#615"
+          "n": "#615",
+          "w": 1
         },
         {
           "id": "bat-b1-616",
           "t": "Batman",
-          "n": "#616"
+          "n": "#616",
+          "w": 1
         },
         {
           "id": "bat-b1-617",
           "t": "Batman",
-          "n": "#617"
+          "n": "#617",
+          "w": 1
         },
         {
           "id": "bat-b1-618",
           "t": "Batman",
-          "n": "#618"
+          "n": "#618",
+          "w": 1
         },
         {
           "id": "bat-b1-619",
           "t": "Batman",
-          "n": "#619"
+          "n": "#619",
+          "w": 1
         }
       ]
     },
@@ -360,73 +399,87 @@
           "id": "bat-b1-635",
           "t": "Batman",
           "n": "#635",
-          "note": "Judd Winick with Doug Mahnke"
+          "note": "Judd Winick with Doug Mahnke",
+          "w": 1
         },
         {
           "id": "bat-b1-636",
           "t": "Batman",
-          "n": "#636"
+          "n": "#636",
+          "w": 1
         },
         {
           "id": "bat-b1-637",
           "t": "Batman",
-          "n": "#637"
+          "n": "#637",
+          "w": 1
         },
         {
           "id": "bat-b1-638",
           "t": "Batman",
-          "n": "#638"
+          "n": "#638",
+          "w": 1
         },
         {
           "id": "bat-b1-639",
           "t": "Batman",
-          "n": "#639"
+          "n": "#639",
+          "w": 1
         },
         {
           "id": "bat-b1-640",
           "t": "Batman",
-          "n": "#640"
+          "n": "#640",
+          "w": 1
         },
         {
           "id": "bat-b1-641",
           "t": "Batman",
-          "n": "#641"
+          "n": "#641",
+          "w": 1
         },
         {
           "id": "bat-b1-645",
           "t": "Batman",
-          "n": "#645"
+          "n": "#645",
+          "w": 1
         },
         {
           "id": "bat-b1-646",
           "t": "Batman",
-          "n": "#646"
+          "n": "#646",
+          "w": 1
         },
         {
           "id": "bat-b1-647",
           "t": "Batman",
-          "n": "#647"
+          "n": "#647",
+          "w": 1
         },
         {
           "id": "bat-b1-648",
           "t": "Batman",
-          "n": "#648"
+          "n": "#648",
+          "w": 1
         },
         {
           "id": "bat-b1-649",
           "t": "Batman",
-          "n": "#649"
+          "n": "#649",
+          "w": 1
         },
         {
           "id": "bat-b1-650",
           "t": "Batman",
-          "n": "#650"
+          "n": "#650",
+          "w": 1
         },
         {
           "id": "bat-ann1-25",
           "t": "Batman Annual",
           "n": "#25",
-          "note": "Collected last, with the arc"
+          "note": "Collected last, with the arc",
+          "w": 1
         }
       ]
     },
@@ -450,137 +503,163 @@
           "id": "bat-b1-655",
           "t": "Batman",
           "n": "#655",
-          "note": "Grant Morrison with Andy Kubert"
+          "note": "Grant Morrison with Andy Kubert",
+          "w": 1
         },
         {
           "id": "bat-b1-656",
           "t": "Batman",
-          "n": "#656"
+          "n": "#656",
+          "w": 1
         },
         {
           "id": "bat-b1-657",
           "t": "Batman",
-          "n": "#657"
+          "n": "#657",
+          "w": 1
         },
         {
           "id": "bat-b1-658",
           "t": "Batman",
-          "n": "#658"
+          "n": "#658",
+          "w": 1
         },
         {
           "id": "bat-b1-663",
           "t": "Batman",
-          "n": "#663"
+          "n": "#663",
+          "w": 1
         },
         {
           "id": "bat-b1-664",
           "t": "Batman",
-          "n": "#664"
+          "n": "#664",
+          "w": 1
         },
         {
           "id": "bat-b1-665",
           "t": "Batman",
-          "n": "#665"
+          "n": "#665",
+          "w": 1
         },
         {
           "id": "bat-b1-666",
           "t": "Batman",
-          "n": "#666"
+          "n": "#666",
+          "w": 1
         },
         {
           "id": "bat-b1-667",
           "t": "Batman",
-          "n": "#667"
+          "n": "#667",
+          "w": 1
         },
         {
           "id": "bat-b1-668",
           "t": "Batman",
-          "n": "#668"
+          "n": "#668",
+          "w": 1
         },
         {
           "id": "bat-b1-669",
           "t": "Batman",
-          "n": "#669"
+          "n": "#669",
+          "w": 1
         },
         {
           "id": "bat-b1-672",
           "t": "Batman",
-          "n": "#672"
+          "n": "#672",
+          "w": 1
         },
         {
           "id": "bat-b1-673",
           "t": "Batman",
-          "n": "#673"
+          "n": "#673",
+          "w": 1
         },
         {
           "id": "bat-b1-674",
           "t": "Batman",
-          "n": "#674"
+          "n": "#674",
+          "w": 1
         },
         {
           "id": "bat-b1-675",
           "t": "Batman",
-          "n": "#675"
+          "n": "#675",
+          "w": 1
         },
         {
           "id": "bat-b1-676",
           "t": "Batman",
           "n": "#676",
-          "note": "“Batman R.I.P.” begins · Grant Morrison with Tony Daniel"
+          "note": "“Batman R.I.P.” begins · Grant Morrison with Tony Daniel",
+          "w": 1
         },
         {
           "id": "bat-b1-677",
           "t": "Batman",
-          "n": "#677"
+          "n": "#677",
+          "w": 1
         },
         {
           "id": "bat-b1-678",
           "t": "Batman",
-          "n": "#678"
+          "n": "#678",
+          "w": 1
         },
         {
           "id": "bat-b1-679",
           "t": "Batman",
-          "n": "#679"
+          "n": "#679",
+          "w": 1
         },
         {
           "id": "bat-b1-680",
           "t": "Batman",
-          "n": "#680"
+          "n": "#680",
+          "w": 1
         },
         {
           "id": "bat-b1-681",
           "t": "Batman",
-          "n": "#681"
+          "n": "#681",
+          "w": 1
         },
         {
           "id": "bat-b1-682",
           "t": "Batman",
           "n": "#682",
-          "note": "A Final Crisis tie-in"
+          "note": "A Final Crisis tie-in",
+          "w": 1
         },
         {
           "id": "bat-b1-683",
           "t": "Batman",
           "n": "#683",
-          "note": "A Final Crisis tie-in"
+          "note": "A Final Crisis tie-in",
+          "w": 1
         },
         {
           "id": "bat-b1-700",
           "t": "Batman",
           "n": "#700",
-          "note": "The milestone issue"
+          "note": "The milestone issue",
+          "w": 1
         },
         {
           "id": "bat-b1-701",
           "t": "Batman",
           "n": "#701",
-          "note": "“R.I.P.: The Missing Chapter”"
+          "note": "“R.I.P.: The Missing Chapter”",
+          "w": 1
         },
         {
           "id": "bat-b1-702",
           "t": "Batman",
-          "n": "#702"
+          "n": "#702",
+          "w": 1
         }
       ]
     },
@@ -600,57 +679,68 @@
           "id": "bat-dc-871",
           "t": "Detective Comics",
           "n": "#871",
-          "note": "Scott Snyder with Jock"
+          "note": "Scott Snyder with Jock",
+          "w": 1
         },
         {
           "id": "bat-dc-872",
           "t": "Detective Comics",
-          "n": "#872"
+          "n": "#872",
+          "w": 1
         },
         {
           "id": "bat-dc-873",
           "t": "Detective Comics",
-          "n": "#873"
+          "n": "#873",
+          "w": 1
         },
         {
           "id": "bat-dc-874",
           "t": "Detective Comics",
-          "n": "#874"
+          "n": "#874",
+          "w": 1
         },
         {
           "id": "bat-dc-875",
           "t": "Detective Comics",
-          "n": "#875"
+          "n": "#875",
+          "w": 1
         },
         {
           "id": "bat-dc-876",
           "t": "Detective Comics",
-          "n": "#876"
+          "n": "#876",
+          "w": 1
         },
         {
           "id": "bat-dc-877",
           "t": "Detective Comics",
-          "n": "#877"
+          "n": "#877",
+          "w": 1
         },
         {
           "id": "bat-dc-878",
           "t": "Detective Comics",
-          "n": "#878"
+          "n": "#878",
+          "w": 1
         },
         {
           "id": "bat-dc-879",
           "t": "Detective Comics",
-          "n": "#879"
+          "n": "#879",
+          "w": 1
         },
         {
           "id": "bat-dc-880",
           "t": "Detective Comics",
-          "n": "#880"
+          "n": "#880",
+          "w": 1
         },
         {
           "id": "bat-dc-881",
           "t": "Detective Comics",
-          "n": "#881"
+          "n": "#881",
+          "w": 1
         }
       ]
     },
@@ -670,271 +760,323 @@
           "id": "bat-b2-1",
           "t": "Batman (vol. 2)",
           "n": "#1",
-          "note": "Scott Snyder with Greg Capullo · “The Court of Owls” begins"
+          "note": "Scott Snyder with Greg Capullo · “The Court of Owls” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-2",
           "t": "Batman (vol. 2)",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "bat-b2-3",
           "t": "Batman (vol. 2)",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "bat-b2-4",
           "t": "Batman (vol. 2)",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "bat-b2-5",
           "t": "Batman (vol. 2)",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "bat-b2-6",
           "t": "Batman (vol. 2)",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "bat-b2-7",
           "t": "Batman (vol. 2)",
-          "n": "#7"
+          "n": "#7",
+          "w": 1
         },
         {
           "id": "bat-b2-8",
           "t": "Batman (vol. 2)",
           "n": "#8",
-          "note": "“The City of Owls” begins"
+          "note": "“The City of Owls” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-9",
           "t": "Batman (vol. 2)",
-          "n": "#9"
+          "n": "#9",
+          "w": 1
         },
         {
           "id": "bat-b2-10",
           "t": "Batman (vol. 2)",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "bat-b2-11",
           "t": "Batman (vol. 2)",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "bat-b2-12",
           "t": "Batman (vol. 2)",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "bat-b2-0",
           "t": "Batman (vol. 2)",
           "n": "#0",
-          "note": "“Zero Month”, September 2012 — a standalone origin, sitting where it was published"
+          "note": "“Zero Month”, September 2012 — a standalone origin, sitting where it was published",
+          "w": 1
         },
         {
           "id": "bat-b2-13",
           "t": "Batman (vol. 2)",
           "n": "#13",
-          "note": "“Death of the Family” begins"
+          "note": "“Death of the Family” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-14",
           "t": "Batman (vol. 2)",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "bat-b2-15",
           "t": "Batman (vol. 2)",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "bat-b2-16",
           "t": "Batman (vol. 2)",
-          "n": "#16"
+          "n": "#16",
+          "w": 1
         },
         {
           "id": "bat-b2-17",
           "t": "Batman (vol. 2)",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "bat-b2-18",
           "t": "Batman (vol. 2)",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "bat-b2-19",
           "t": "Batman (vol. 2)",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "bat-b2-20",
           "t": "Batman (vol. 2)",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "bat-b2-21",
           "t": "Batman (vol. 2)",
           "n": "#21",
-          "note": "“Zero Year” begins"
+          "note": "“Zero Year” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-22",
           "t": "Batman (vol. 2)",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "bat-b2-23",
           "t": "Batman (vol. 2)",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "bat-b2-24",
           "t": "Batman (vol. 2)",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "bat-b2-25",
           "t": "Batman (vol. 2)",
-          "n": "#25"
+          "n": "#25",
+          "w": 1
         },
         {
           "id": "bat-b2-26",
           "t": "Batman (vol. 2)",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "bat-b2-27",
           "t": "Batman (vol. 2)",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "bat-b2-28",
           "t": "Batman (vol. 2)",
           "n": "#28",
-          "note": "A fill-in, illustrated by Dustin Nguyen"
+          "note": "A fill-in, illustrated by Dustin Nguyen",
+          "w": 1
         },
         {
           "id": "bat-b2-29",
           "t": "Batman (vol. 2)",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "bat-b2-30",
           "t": "Batman (vol. 2)",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "bat-b2-31",
           "t": "Batman (vol. 2)",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "bat-b2-32",
           "t": "Batman (vol. 2)",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "bat-b2-33",
           "t": "Batman (vol. 2)",
-          "n": "#33"
+          "n": "#33",
+          "w": 1
         },
         {
           "id": "bat-b2-34",
           "t": "Batman (vol. 2)",
-          "n": "#34"
+          "n": "#34",
+          "w": 1
         },
         {
           "id": "bat-b2-35",
           "t": "Batman (vol. 2)",
           "n": "#35",
-          "note": "“Endgame” begins"
+          "note": "“Endgame” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-36",
           "t": "Batman (vol. 2)",
-          "n": "#36"
+          "n": "#36",
+          "w": 1
         },
         {
           "id": "bat-b2-37",
           "t": "Batman (vol. 2)",
-          "n": "#37"
+          "n": "#37",
+          "w": 1
         },
         {
           "id": "bat-b2-38",
           "t": "Batman (vol. 2)",
-          "n": "#38"
+          "n": "#38",
+          "w": 1
         },
         {
           "id": "bat-b2-39",
           "t": "Batman (vol. 2)",
-          "n": "#39"
+          "n": "#39",
+          "w": 1
         },
         {
           "id": "bat-b2-40",
           "t": "Batman (vol. 2)",
-          "n": "#40"
+          "n": "#40",
+          "w": 1
         },
         {
           "id": "bat-b2-41",
           "t": "Batman (vol. 2)",
           "n": "#41",
-          "note": "“Superheavy” begins"
+          "note": "“Superheavy” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-42",
           "t": "Batman (vol. 2)",
-          "n": "#42"
+          "n": "#42",
+          "w": 1
         },
         {
           "id": "bat-b2-43",
           "t": "Batman (vol. 2)",
-          "n": "#43"
+          "n": "#43",
+          "w": 1
         },
         {
           "id": "bat-b2-44",
           "t": "Batman (vol. 2)",
-          "n": "#44"
+          "n": "#44",
+          "w": 1
         },
         {
           "id": "bat-b2-45",
           "t": "Batman (vol. 2)",
-          "n": "#45"
+          "n": "#45",
+          "w": 1
         },
         {
           "id": "bat-b2-46",
           "t": "Batman (vol. 2)",
           "n": "#46",
-          "note": "“Bloom” begins"
+          "note": "“Bloom” begins",
+          "w": 1
         },
         {
           "id": "bat-b2-47",
           "t": "Batman (vol. 2)",
-          "n": "#47"
+          "n": "#47",
+          "w": 1
         },
         {
           "id": "bat-b2-48",
           "t": "Batman (vol. 2)",
-          "n": "#48"
+          "n": "#48",
+          "w": 1
         },
         {
           "id": "bat-b2-49",
           "t": "Batman (vol. 2)",
-          "n": "#49"
+          "n": "#49",
+          "w": 1
         },
         {
           "id": "bat-b2-50",
           "t": "Batman (vol. 2)",
-          "n": "#50"
+          "n": "#50",
+          "w": 1
         },
         {
           "id": "bat-b2-51",
           "t": "Batman (vol. 2)",
           "n": "#51",
-          "note": "Snyder and Capullo's last issue"
+          "note": "Snyder and Capullo's last issue",
+          "w": 1
         }
       ]
     },
@@ -954,431 +1096,514 @@
           "id": "bat-b3-1",
           "t": "Batman (vol. 3)",
           "n": "#1",
-          "note": "Tom King with David Finch · “I Am Gotham” begins"
+          "note": "Tom King with David Finch · “I Am Gotham” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-2",
           "t": "Batman (vol. 3)",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "bat-b3-3",
           "t": "Batman (vol. 3)",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "bat-b3-4",
           "t": "Batman (vol. 3)",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "bat-b3-5",
           "t": "Batman (vol. 3)",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "bat-b3-6",
           "t": "Batman (vol. 3)",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         },
         {
           "id": "bat-b3-7",
           "t": "Batman (vol. 3)",
           "n": "#7",
-          "note": "“Night of the Monster Men” begins"
+          "note": "“Night of the Monster Men” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-8",
           "t": "Batman (vol. 3)",
-          "n": "#8"
+          "n": "#8",
+          "w": 1
         },
         {
           "id": "bat-b3-9",
           "t": "Batman (vol. 3)",
           "n": "#9",
-          "note": "“I Am Suicide” begins"
+          "note": "“I Am Suicide” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-10",
           "t": "Batman (vol. 3)",
-          "n": "#10"
+          "n": "#10",
+          "w": 1
         },
         {
           "id": "bat-b3-11",
           "t": "Batman (vol. 3)",
-          "n": "#11"
+          "n": "#11",
+          "w": 1
         },
         {
           "id": "bat-b3-12",
           "t": "Batman (vol. 3)",
-          "n": "#12"
+          "n": "#12",
+          "w": 1
         },
         {
           "id": "bat-b3-13",
           "t": "Batman (vol. 3)",
-          "n": "#13"
+          "n": "#13",
+          "w": 1
         },
         {
           "id": "bat-b3-14",
           "t": "Batman (vol. 3)",
-          "n": "#14"
+          "n": "#14",
+          "w": 1
         },
         {
           "id": "bat-b3-15",
           "t": "Batman (vol. 3)",
-          "n": "#15"
+          "n": "#15",
+          "w": 1
         },
         {
           "id": "bat-b3-16",
           "t": "Batman (vol. 3)",
           "n": "#16",
-          "note": "“I Am Bane” begins"
+          "note": "“I Am Bane” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-17",
           "t": "Batman (vol. 3)",
-          "n": "#17"
+          "n": "#17",
+          "w": 1
         },
         {
           "id": "bat-b3-18",
           "t": "Batman (vol. 3)",
-          "n": "#18"
+          "n": "#18",
+          "w": 1
         },
         {
           "id": "bat-b3-19",
           "t": "Batman (vol. 3)",
-          "n": "#19"
+          "n": "#19",
+          "w": 1
         },
         {
           "id": "bat-b3-20",
           "t": "Batman (vol. 3)",
-          "n": "#20"
+          "n": "#20",
+          "w": 1
         },
         {
           "id": "bat-b3-21",
           "t": "Batman (vol. 3)",
           "n": "#21",
-          "note": "“The Button” begins"
+          "note": "“The Button” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-22",
           "t": "Batman (vol. 3)",
-          "n": "#22"
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "bat-b3-23",
           "t": "Batman (vol. 3)",
-          "n": "#23"
+          "n": "#23",
+          "w": 1
         },
         {
           "id": "bat-b3-24",
           "t": "Batman (vol. 3)",
-          "n": "#24"
+          "n": "#24",
+          "w": 1
         },
         {
           "id": "bat-b3-25",
           "t": "Batman (vol. 3)",
           "n": "#25",
-          "note": "“The War of Jokes and Riddles” begins"
+          "note": "“The War of Jokes and Riddles” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-26",
           "t": "Batman (vol. 3)",
-          "n": "#26"
+          "n": "#26",
+          "w": 1
         },
         {
           "id": "bat-b3-27",
           "t": "Batman (vol. 3)",
-          "n": "#27"
+          "n": "#27",
+          "w": 1
         },
         {
           "id": "bat-b3-28",
           "t": "Batman (vol. 3)",
-          "n": "#28"
+          "n": "#28",
+          "w": 1
         },
         {
           "id": "bat-b3-29",
           "t": "Batman (vol. 3)",
-          "n": "#29"
+          "n": "#29",
+          "w": 1
         },
         {
           "id": "bat-b3-30",
           "t": "Batman (vol. 3)",
-          "n": "#30"
+          "n": "#30",
+          "w": 1
         },
         {
           "id": "bat-b3-31",
           "t": "Batman (vol. 3)",
-          "n": "#31"
+          "n": "#31",
+          "w": 1
         },
         {
           "id": "bat-b3-32",
           "t": "Batman (vol. 3)",
-          "n": "#32"
+          "n": "#32",
+          "w": 1
         },
         {
           "id": "bat-b3-33",
           "t": "Batman (vol. 3)",
           "n": "#33",
-          "note": "“The Rules of Engagement” begins"
+          "note": "“The Rules of Engagement” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-34",
           "t": "Batman (vol. 3)",
-          "n": "#34"
+          "n": "#34",
+          "w": 1
         },
         {
           "id": "bat-b3-35",
           "t": "Batman (vol. 3)",
-          "n": "#35"
+          "n": "#35",
+          "w": 1
         },
         {
           "id": "bat-b3-36",
           "t": "Batman (vol. 3)",
-          "n": "#36"
+          "n": "#36",
+          "w": 1
         },
         {
           "id": "bat-b3-37",
           "t": "Batman (vol. 3)",
-          "n": "#37"
+          "n": "#37",
+          "w": 1
         },
         {
           "id": "bat-b3-38",
           "t": "Batman (vol. 3)",
           "n": "#38",
-          "note": "“Bride or Burglar?” begins"
+          "note": "“Bride or Burglar?” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-39",
           "t": "Batman (vol. 3)",
-          "n": "#39"
+          "n": "#39",
+          "w": 1
         },
         {
           "id": "bat-b3-40",
           "t": "Batman (vol. 3)",
-          "n": "#40"
+          "n": "#40",
+          "w": 1
         },
         {
           "id": "bat-b3-41",
           "t": "Batman (vol. 3)",
-          "n": "#41"
+          "n": "#41",
+          "w": 1
         },
         {
           "id": "bat-b3-42",
           "t": "Batman (vol. 3)",
-          "n": "#42"
+          "n": "#42",
+          "w": 1
         },
         {
           "id": "bat-b3-43",
           "t": "Batman (vol. 3)",
-          "n": "#43"
+          "n": "#43",
+          "w": 1
         },
         {
           "id": "bat-b3-44",
           "t": "Batman (vol. 3)",
-          "n": "#44"
+          "n": "#44",
+          "w": 1
         },
         {
           "id": "bat-b3-45",
           "t": "Batman (vol. 3)",
           "n": "#45",
-          "note": "“The Wedding” begins"
+          "note": "“The Wedding” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-46",
           "t": "Batman (vol. 3)",
-          "n": "#46"
+          "n": "#46",
+          "w": 1
         },
         {
           "id": "bat-b3-47",
           "t": "Batman (vol. 3)",
-          "n": "#47"
+          "n": "#47",
+          "w": 1
         },
         {
           "id": "bat-b3-48",
           "t": "Batman (vol. 3)",
-          "n": "#48"
+          "n": "#48",
+          "w": 1
         },
         {
           "id": "bat-b3-49",
           "t": "Batman (vol. 3)",
-          "n": "#49"
+          "n": "#49",
+          "w": 1
         },
         {
           "id": "bat-b3-50",
           "t": "Batman (vol. 3)",
-          "n": "#50"
+          "n": "#50",
+          "w": 1
         },
         {
           "id": "bat-b3-51",
           "t": "Batman (vol. 3)",
           "n": "#51",
-          "note": "“Cold Days” begins"
+          "note": "“Cold Days” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-52",
           "t": "Batman (vol. 3)",
-          "n": "#52"
+          "n": "#52",
+          "w": 1
         },
         {
           "id": "bat-b3-53",
           "t": "Batman (vol. 3)",
-          "n": "#53"
+          "n": "#53",
+          "w": 1
         },
         {
           "id": "bat-b3-54",
           "t": "Batman (vol. 3)",
-          "n": "#54"
+          "n": "#54",
+          "w": 1
         },
         {
           "id": "bat-b3-55",
           "t": "Batman (vol. 3)",
-          "n": "#55"
+          "n": "#55",
+          "w": 1
         },
         {
           "id": "bat-b3-56",
           "t": "Batman (vol. 3)",
-          "n": "#56"
+          "n": "#56",
+          "w": 1
         },
         {
           "id": "bat-b3-57",
           "t": "Batman (vol. 3)",
-          "n": "#57"
+          "n": "#57",
+          "w": 1
         },
         {
           "id": "bat-b3-58",
           "t": "Batman (vol. 3)",
           "n": "#58",
-          "note": "“The Tyrant Wing” begins"
+          "note": "“The Tyrant Wing” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-59",
           "t": "Batman (vol. 3)",
-          "n": "#59"
+          "n": "#59",
+          "w": 1
         },
         {
           "id": "bat-b3-60",
           "t": "Batman (vol. 3)",
-          "n": "#60"
+          "n": "#60",
+          "w": 1
         },
         {
           "id": "bat-b3-61",
           "t": "Batman (vol. 3)",
           "n": "#61",
-          "note": "“Knightmares” begins"
+          "note": "“Knightmares” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-62",
           "t": "Batman (vol. 3)",
-          "n": "#62"
+          "n": "#62",
+          "w": 1
         },
         {
           "id": "bat-b3-63",
           "t": "Batman (vol. 3)",
-          "n": "#63"
+          "n": "#63",
+          "w": 1
         },
         {
           "id": "bat-b3-66",
           "t": "Batman (vol. 3)",
-          "n": "#66"
+          "n": "#66",
+          "w": 1
         },
         {
           "id": "bat-b3-67",
           "t": "Batman (vol. 3)",
-          "n": "#67"
+          "n": "#67",
+          "w": 1
         },
         {
           "id": "bat-b3-68",
           "t": "Batman (vol. 3)",
-          "n": "#68"
+          "n": "#68",
+          "w": 1
         },
         {
           "id": "bat-b3-69",
           "t": "Batman (vol. 3)",
-          "n": "#69"
+          "n": "#69",
+          "w": 1
         },
         {
           "id": "bat-b3-70",
           "t": "Batman (vol. 3)",
           "n": "#70",
-          "note": "“The Fall and the Fallen” begins"
+          "note": "“The Fall and the Fallen” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-71",
           "t": "Batman (vol. 3)",
-          "n": "#71"
+          "n": "#71",
+          "w": 1
         },
         {
           "id": "bat-b3-72",
           "t": "Batman (vol. 3)",
-          "n": "#72"
+          "n": "#72",
+          "w": 1
         },
         {
           "id": "bat-b3-73",
           "t": "Batman (vol. 3)",
-          "n": "#73"
+          "n": "#73",
+          "w": 1
         },
         {
           "id": "bat-b3-74",
           "t": "Batman (vol. 3)",
-          "n": "#74"
+          "n": "#74",
+          "w": 1
         },
         {
           "id": "bat-b3-75",
           "t": "Batman (vol. 3)",
           "n": "#75",
-          "note": "“City of Bane” begins"
+          "note": "“City of Bane” begins",
+          "w": 1
         },
         {
           "id": "bat-b3-76",
           "t": "Batman (vol. 3)",
-          "n": "#76"
+          "n": "#76",
+          "w": 1
         },
         {
           "id": "bat-b3-77",
           "t": "Batman (vol. 3)",
-          "n": "#77"
+          "n": "#77",
+          "w": 1
         },
         {
           "id": "bat-b3-78",
           "t": "Batman (vol. 3)",
-          "n": "#78"
+          "n": "#78",
+          "w": 1
         },
         {
           "id": "bat-b3-79",
           "t": "Batman (vol. 3)",
-          "n": "#79"
+          "n": "#79",
+          "w": 1
         },
         {
           "id": "bat-b3-80",
           "t": "Batman (vol. 3)",
-          "n": "#80"
+          "n": "#80",
+          "w": 1
         },
         {
           "id": "bat-b3-81",
           "t": "Batman (vol. 3)",
-          "n": "#81"
+          "n": "#81",
+          "w": 1
         },
         {
           "id": "bat-b3-82",
           "t": "Batman (vol. 3)",
-          "n": "#82"
+          "n": "#82",
+          "w": 1
         },
         {
           "id": "bat-b3-83",
           "t": "Batman (vol. 3)",
-          "n": "#83"
+          "n": "#83",
+          "w": 1
         },
         {
           "id": "bat-b3-84",
           "t": "Batman (vol. 3)",
-          "n": "#84"
+          "n": "#84",
+          "w": 1
         },
         {
           "id": "bat-b3-85",
           "t": "Batman (vol. 3)",
           "n": "#85",
-          "note": "King's last issue"
+          "note": "King's last issue",
+          "w": 1
         }
       ]
     }

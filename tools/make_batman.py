@@ -754,7 +754,18 @@ def main():
         "going in the file: %s" % (len(MISSING), MISSING[:8]))
     for s in SECTIONS:
         for x in s["items"]:
-            assert "w" not in x, "comics lists are unweighted (CLU-131)"
+            # CLU-555. A MARK'S WIDTH IS ISSUES, and since the CLU-465
+            # rework every row here IS one issue, so every row weighs one.
+            # That is what CLU-131 was actually about: the bug was a
+            # PARTLY weighted list, where the template's
+            # WEIGHT = x.w >= 0 ? x.w : 1 silently redefines every
+            # unweighted row as one. Weighting all of them is the fix, not
+            # the bug -- and it is what lets the DC Comics shelf draw this
+            # door as 225 issues wide instead of as one mark among eight.
+            # The two one-shot rows (The Killing Joke, Arkham Asylum) are
+            # one comic each, so they weigh one like everything else.
+            assert "w" not in x, "a row was weighted before the stamp"
+            x["w"] = 1
             assert not x.get("url"), "links live on section headers, not rows"
     total = sum(len(s["items"]) for s in SECTIONS)
 
@@ -828,6 +839,8 @@ def main():
         "sections": SECTIONS,
     }
 
+    assert all(x.get("w") == 1 for s in SECTIONS for x in s["items"]), \
+        "a row escaped the weight stamp"
     out = P.write(p, legacy_ids=LEGACY)
 
     DATA.write_text(json.dumps(
@@ -838,7 +851,10 @@ def main():
          "attested": {"%s|%s" % k: sorted(v, key=float)
                       for k, v in sorted(ATTEST.items(), key=lambda kv: kv[0][0])
                       if k[0] in {c[1] for c in SERIES.values()}}},
-        indent=1, ensure_ascii=False, sort_keys=True) + "\n", encoding="utf-8")
+        indent=1, ensure_ascii=False, sort_keys=True) + "\n",
+        # LF on Windows too: without it every run rewrites the whole
+        # body as CRLF and a real change cannot be seen in the diff.
+        encoding="utf-8", newline="\n")
 
     print("wrote %s and %s" % (out.name, DATA.name))
     print("  %d sections, %d issues" % (len(SECTIONS), total))

@@ -53,49 +53,57 @@
           "id": "sand-1",
           "t": "The Sandman",
           "n": "#1",
-          "note": "Sleep of the Just"
+          "note": "Sleep of the Just",
+          "w": 1
         },
         {
           "id": "sand-2",
           "t": "The Sandman",
           "n": "#2",
-          "note": "Imperfect Hosts"
+          "note": "Imperfect Hosts",
+          "w": 1
         },
         {
           "id": "sand-3",
           "t": "The Sandman",
           "n": "#3",
-          "note": "Dream a Little Dream of Me"
+          "note": "Dream a Little Dream of Me",
+          "w": 1
         },
         {
           "id": "sand-4",
           "t": "The Sandman",
           "n": "#4",
-          "note": "A Hope in Hell"
+          "note": "A Hope in Hell",
+          "w": 1
         },
         {
           "id": "sand-5",
           "t": "The Sandman",
           "n": "#5",
-          "note": "Passengers"
+          "note": "Passengers",
+          "w": 1
         },
         {
           "id": "sand-6",
           "t": "The Sandman",
           "n": "#6",
-          "note": "24 Hours"
+          "note": "24 Hours",
+          "w": 1
         },
         {
           "id": "sand-7",
           "t": "The Sandman",
           "n": "#7",
-          "note": "Sound and Fury"
+          "note": "Sound and Fury",
+          "w": 1
         },
         {
           "id": "sand-8",
           "t": "The Sandman",
           "n": "#8",
-          "note": "The Sound of Her Wings · Death's debut"
+          "note": "The Sound of Her Wings · Death's debut",
+          "w": 1
         }
       ],
       "intro": "Dream is captured, escapes, and reclaims his tools. #8 is where most people fall in love with the series.",
@@ -116,49 +124,57 @@
           "id": "sand-9",
           "t": "The Sandman",
           "n": "#9",
-          "note": "Tales in the Sand"
+          "note": "Tales in the Sand",
+          "w": 1
         },
         {
           "id": "sand-10",
           "t": "The Sandman",
           "n": "#10",
-          "note": "The Doll's House"
+          "note": "The Doll's House",
+          "w": 1
         },
         {
           "id": "sand-11",
           "t": "The Sandman",
           "n": "#11",
-          "note": "Moving In"
+          "note": "Moving In",
+          "w": 1
         },
         {
           "id": "sand-12",
           "t": "The Sandman",
           "n": "#12",
-          "note": "Playing House"
+          "note": "Playing House",
+          "w": 1
         },
         {
           "id": "sand-13",
           "t": "The Sandman",
           "n": "#13",
-          "note": "Men of Good Fortune"
+          "note": "Men of Good Fortune",
+          "w": 1
         },
         {
           "id": "sand-14",
           "t": "The Sandman",
           "n": "#14",
-          "note": "Collectors"
+          "note": "Collectors",
+          "w": 1
         },
         {
           "id": "sand-15",
           "t": "The Sandman",
           "n": "#15",
-          "note": "Into the Night"
+          "note": "Into the Night",
+          "w": 1
         },
         {
           "id": "sand-16",
           "t": "The Sandman",
           "n": "#16",
-          "note": "Lost Hearts"
+          "note": "Lost Hearts",
+          "w": 1
         }
       ]
     },
@@ -177,26 +193,30 @@
           "id": "sand-17",
           "t": "The Sandman",
           "n": "#17",
-          "note": "Calliope"
+          "note": "Calliope",
+          "w": 1
         },
         {
           "id": "sand-18",
           "t": "The Sandman",
           "n": "#18",
-          "note": "A Dream of a Thousand Cats"
+          "note": "A Dream of a Thousand Cats",
+          "w": 1
         },
         {
           "id": "sand-19",
           "t": "The Sandman",
           "n": "#19",
           "note": "A Midsummer Night's Dream · won the World Fantasy Award",
-          "star": 1
+          "star": 1,
+          "w": 1
         },
         {
           "id": "sand-20",
           "t": "The Sandman",
           "n": "#20",
-          "note": "Façade"
+          "note": "Façade",
+          "w": 1
         }
       ]
     },
@@ -215,49 +235,57 @@
           "id": "sand-21",
           "t": "The Sandman",
           "n": "#21",
-          "note": "Prologue"
+          "note": "Prologue",
+          "w": 1
         },
         {
           "id": "sand-22",
           "t": "The Sandman",
           "n": "#22",
-          "note": "Chapter 1"
+          "note": "Chapter 1",
+          "w": 1
         },
         {
           "id": "sand-23",
           "t": "The Sandman",
           "n": "#23",
-          "note": "Chapter 2"
+          "note": "Chapter 2",
+          "w": 1
         },
         {
           "id": "sand-24",
           "t": "The Sandman",
           "n": "#24",
-          "note": "Chapter 3"
+          "note": "Chapter 3",
+          "w": 1
         },
         {
           "id": "sand-25",
           "t": "The Sandman",
           "n": "#25",
-          "note": "Chapter 4"
+          "note": "Chapter 4",
+          "w": 1
         },
         {
           "id": "sand-26",
           "t": "The Sandman",
           "n": "#26",
-          "note": "Chapter 5"
+          "note": "Chapter 5",
+          "w": 1
         },
         {
           "id": "sand-27",
           "t": "The Sandman",
           "n": "#27",
-          "note": "Chapter 6"
+          "note": "Chapter 6",
+          "w": 1
         },
         {
           "id": "sand-28",
           "t": "The Sandman",
           "n": "#28",
-          "note": "Epilogue"
+          "note": "Epilogue",
+          "w": 1
         }
       ]
     },
@@ -276,37 +304,43 @@
           "id": "sand-32",
           "t": "The Sandman",
           "n": "#32",
-          "note": "Slaughter on Fifth Avenue"
+          "note": "Slaughter on Fifth Avenue",
+          "w": 1
         },
         {
           "id": "sand-33",
           "t": "The Sandman",
           "n": "#33",
-          "note": "Lullabies of Broadway"
+          "note": "Lullabies of Broadway",
+          "w": 1
         },
         {
           "id": "sand-34",
           "t": "The Sandman",
           "n": "#34",
-          "note": "Bad Moon Rising"
+          "note": "Bad Moon Rising",
+          "w": 1
         },
         {
           "id": "sand-35",
           "t": "The Sandman",
           "n": "#35",
-          "note": "Beginning to See the Light"
+          "note": "Beginning to See the Light",
+          "w": 1
         },
         {
           "id": "sand-36",
           "t": "The Sandman",
           "n": "#36",
-          "note": "Over the Sea to Sky"
+          "note": "Over the Sea to Sky",
+          "w": 1
         },
         {
           "id": "sand-37",
           "t": "The Sandman",
           "n": "#37",
-          "note": "I Woke Up and One of Us Was Crying"
+          "note": "I Woke Up and One of Us Was Crying",
+          "w": 1
         }
       ]
     },
@@ -325,49 +359,57 @@
           "id": "sand-31",
           "t": "The Sandman",
           "n": "#31",
-          "note": "Distant Mirrors – Three Septembers and a January"
+          "note": "Distant Mirrors – Three Septembers and a January",
+          "w": 1
         },
         {
           "id": "sand-29",
           "t": "The Sandman",
           "n": "#29",
-          "note": "Distant Mirrors – Thermidor"
+          "note": "Distant Mirrors – Thermidor",
+          "w": 1
         },
         {
           "id": "sand-38",
           "t": "The Sandman",
           "n": "#38",
-          "note": "Convergence – The Hunt"
+          "note": "Convergence – The Hunt",
+          "w": 1
         },
         {
           "id": "sand-30",
           "t": "The Sandman",
           "n": "#30",
-          "note": "Distant Mirrors – August"
+          "note": "Distant Mirrors – August",
+          "w": 1
         },
         {
           "id": "sand-39",
           "t": "The Sandman",
           "n": "#39",
-          "note": "Convergence – Soft Places"
+          "note": "Convergence – Soft Places",
+          "w": 1
         },
         {
           "id": "sand-special",
           "t": "The Sandman Special",
           "n": "#1",
-          "note": "The Song of Orpheus"
+          "note": "The Song of Orpheus",
+          "w": 1
         },
         {
           "id": "sand-40",
           "t": "The Sandman",
           "n": "#40",
-          "note": "Convergence – The Parliament of Rooks"
+          "note": "Convergence – The Parliament of Rooks",
+          "w": 1
         },
         {
           "id": "sand-50",
           "t": "The Sandman",
           "n": "#50",
-          "note": "Distant Mirrors – Ramadan"
+          "note": "Distant Mirrors – Ramadan",
+          "w": 1
         }
       ],
       "intro": "Short stories gathered from across the run — the book shuffles publication order on purpose, and the rows here follow the book. Also collects Fear of Falling, a brief piece from Vertigo Preview #1."
@@ -387,55 +429,64 @@
           "id": "sand-41",
           "t": "The Sandman",
           "n": "#41",
-          "note": "Brief Lives – Chapter 1"
+          "note": "Brief Lives – Chapter 1",
+          "w": 1
         },
         {
           "id": "sand-42",
           "t": "The Sandman",
           "n": "#42",
-          "note": "Brief Lives – Chapter 2"
+          "note": "Brief Lives – Chapter 2",
+          "w": 1
         },
         {
           "id": "sand-43",
           "t": "The Sandman",
           "n": "#43",
-          "note": "Brief Lives – Chapter 3"
+          "note": "Brief Lives – Chapter 3",
+          "w": 1
         },
         {
           "id": "sand-44",
           "t": "The Sandman",
           "n": "#44",
-          "note": "Brief Lives – Chapter 4"
+          "note": "Brief Lives – Chapter 4",
+          "w": 1
         },
         {
           "id": "sand-45",
           "t": "The Sandman",
           "n": "#45",
-          "note": "Brief Lives – Chapter 5"
+          "note": "Brief Lives – Chapter 5",
+          "w": 1
         },
         {
           "id": "sand-46",
           "t": "The Sandman",
           "n": "#46",
-          "note": "Brief Lives – Chapter 6"
+          "note": "Brief Lives – Chapter 6",
+          "w": 1
         },
         {
           "id": "sand-47",
           "t": "The Sandman",
           "n": "#47",
-          "note": "Brief Lives – Chapter 7"
+          "note": "Brief Lives – Chapter 7",
+          "w": 1
         },
         {
           "id": "sand-48",
           "t": "The Sandman",
           "n": "#48",
-          "note": "Brief Lives – Chapter 8"
+          "note": "Brief Lives – Chapter 8",
+          "w": 1
         },
         {
           "id": "sand-49",
           "t": "The Sandman",
           "n": "#49",
-          "note": "Brief Lives – Chapter 9"
+          "note": "Brief Lives – Chapter 9",
+          "w": 1
         }
       ]
     },
@@ -454,37 +505,43 @@
           "id": "sand-51",
           "t": "The Sandman",
           "n": "#51",
-          "note": "A Tale of Two Cities"
+          "note": "A Tale of Two Cities",
+          "w": 1
         },
         {
           "id": "sand-52",
           "t": "The Sandman",
           "n": "#52",
-          "note": "Cluracan's Tale"
+          "note": "Cluracan's Tale",
+          "w": 1
         },
         {
           "id": "sand-53",
           "t": "The Sandman",
           "n": "#53",
-          "note": "Hob's Leviathan"
+          "note": "Hob's Leviathan",
+          "w": 1
         },
         {
           "id": "sand-54",
           "t": "The Sandman",
           "n": "#54",
-          "note": "The Golden Boy"
+          "note": "The Golden Boy",
+          "w": 1
         },
         {
           "id": "sand-55",
           "t": "The Sandman",
           "n": "#55",
-          "note": "Cerements"
+          "note": "Cerements",
+          "w": 1
         },
         {
           "id": "sand-56",
           "t": "The Sandman",
           "n": "#56",
-          "note": "Worlds' End"
+          "note": "Worlds' End",
+          "w": 1
         }
       ]
     },
@@ -503,79 +560,92 @@
           "id": "sand-57",
           "t": "The Sandman",
           "n": "#57",
-          "note": "The Kindly Ones, part 1"
+          "note": "The Kindly Ones, part 1",
+          "w": 1
         },
         {
           "id": "sand-58",
           "t": "The Sandman",
           "n": "#58",
-          "note": "The Kindly Ones, part 2"
+          "note": "The Kindly Ones, part 2",
+          "w": 1
         },
         {
           "id": "sand-59",
           "t": "The Sandman",
           "n": "#59",
-          "note": "The Kindly Ones, part 3"
+          "note": "The Kindly Ones, part 3",
+          "w": 1
         },
         {
           "id": "sand-60",
           "t": "The Sandman",
           "n": "#60",
-          "note": "The Kindly Ones, part 4"
+          "note": "The Kindly Ones, part 4",
+          "w": 1
         },
         {
           "id": "sand-61",
           "t": "The Sandman",
           "n": "#61",
-          "note": "The Kindly Ones, part 5"
+          "note": "The Kindly Ones, part 5",
+          "w": 1
         },
         {
           "id": "sand-62",
           "t": "The Sandman",
           "n": "#62",
-          "note": "The Kindly Ones, part 6"
+          "note": "The Kindly Ones, part 6",
+          "w": 1
         },
         {
           "id": "sand-63",
           "t": "The Sandman",
           "n": "#63",
-          "note": "The Kindly Ones, part 7"
+          "note": "The Kindly Ones, part 7",
+          "w": 1
         },
         {
           "id": "sand-64",
           "t": "The Sandman",
           "n": "#64",
-          "note": "The Kindly Ones, part 8"
+          "note": "The Kindly Ones, part 8",
+          "w": 1
         },
         {
           "id": "sand-65",
           "t": "The Sandman",
           "n": "#65",
-          "note": "The Kindly Ones, part 9"
+          "note": "The Kindly Ones, part 9",
+          "w": 1
         },
         {
           "id": "sand-66",
           "t": "The Sandman",
           "n": "#66",
-          "note": "The Kindly Ones, part 10"
+          "note": "The Kindly Ones, part 10",
+          "w": 1
         },
         {
           "id": "sand-67",
           "t": "The Sandman",
           "n": "#67",
-          "note": "The Kindly Ones, part 11"
+          "note": "The Kindly Ones, part 11",
+          "w": 1
         },
         {
           "id": "sand-68",
           "t": "The Sandman",
           "n": "#68",
-          "note": "The Kindly Ones, part 12"
+          "note": "The Kindly Ones, part 12",
+          "w": 1
         },
         {
           "id": "sand-69",
           "t": "The Sandman",
           "n": "#69",
-          "note": "The Kindly Ones, part 13"
+          "note": "The Kindly Ones, part 13",
+          "w": 1
         }
       ],
       "intro": "The longest Sandman story. The collection also carries The Castle, a short from Vertigo Jam #1."
@@ -595,37 +665,43 @@
           "id": "sand-70",
           "t": "The Sandman",
           "n": "#70",
-          "note": "Chapter 1, Which Occurs in the Wake of What Has Gone Before"
+          "note": "Chapter 1, Which Occurs in the Wake of What Has Gone Before",
+          "w": 1
         },
         {
           "id": "sand-71",
           "t": "The Sandman",
           "n": "#71",
-          "note": "Chapter 2, In Which a Wake is Held"
+          "note": "Chapter 2, In Which a Wake is Held",
+          "w": 1
         },
         {
           "id": "sand-72",
           "t": "The Sandman",
           "n": "#72",
-          "note": "Chapter 3, In Which We Wake"
+          "note": "Chapter 3, In Which We Wake",
+          "w": 1
         },
         {
           "id": "sand-73",
           "t": "The Sandman",
           "n": "#73",
-          "note": "An Epilogue, Sunday Mourning"
+          "note": "An Epilogue, Sunday Mourning",
+          "w": 1
         },
         {
           "id": "sand-74",
           "t": "The Sandman",
           "n": "#74",
-          "note": "Exiles"
+          "note": "Exiles",
+          "w": 1
         },
         {
           "id": "sand-75",
           "t": "The Sandman",
           "n": "#75",
-          "note": "The Tempest"
+          "note": "The Tempest",
+          "w": 1
         }
       ],
       "intro": "The series ends; Gaiman stopped it on purpose at #75."
@@ -644,17 +720,20 @@
         {
           "id": "sand-hcol-1",
           "t": "Death: The High Cost of Living",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "sand-hcol-2",
           "t": "Death: The High Cost of Living",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "sand-hcol-3",
           "t": "Death: The High Cost of Living",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         }
       ],
       "intro": "The first Sandman spin-off miniseries — Death takes human form for a day."
@@ -673,17 +752,20 @@
         {
           "id": "sand-toyl-1",
           "t": "Death: The Time of Your Life",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "sand-toyl-2",
           "t": "Death: The Time of Your Life",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "sand-toyl-3",
           "t": "Death: The Time of Your Life",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         }
       ]
     },
@@ -702,32 +784,38 @@
         {
           "id": "sand-ov-1",
           "t": "The Sandman: Overture",
-          "n": "#1"
+          "n": "#1",
+          "w": 1
         },
         {
           "id": "sand-ov-2",
           "t": "The Sandman: Overture",
-          "n": "#2"
+          "n": "#2",
+          "w": 1
         },
         {
           "id": "sand-ov-3",
           "t": "The Sandman: Overture",
-          "n": "#3"
+          "n": "#3",
+          "w": 1
         },
         {
           "id": "sand-ov-4",
           "t": "The Sandman: Overture",
-          "n": "#4"
+          "n": "#4",
+          "w": 1
         },
         {
           "id": "sand-ov-5",
           "t": "The Sandman: Overture",
-          "n": "#5"
+          "n": "#5",
+          "w": 1
         },
         {
           "id": "sand-ov-6",
           "t": "The Sandman: Overture",
-          "n": "#6"
+          "n": "#6",
+          "w": 1
         }
       ]
     }

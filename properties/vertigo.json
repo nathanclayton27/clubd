@@ -10,6 +10,10 @@
     "one": "volume",
     "many": "volumes"
   },
+  "weightUnit": {
+    "one": "issue",
+    "many": "issues"
+  },
   "verb": {
     "base": "read",
     "past": "read",
@@ -36,14 +40,14 @@
       "Brian K. Vaughan's other great run is an Image book, not a Vertigo one, so a shelf named for the imprint has no honest room for it — and it is still going (72 issues and counting, after a three-and-a-half-year hiatus), which a list you are meant to be able to finish cannot really hold. If it lands here one day it will be as its own list."
     ],
     [
-      "No hours, no weights.",
-      "Comics have no runtimes, and an issue count is not a number of hours — so no row on this page carries a weight and the progress bar counts volumes, flat, one apiece. Issue counts sit in the row text where they tell you how thick a book is without pretending to tell you how long it takes."
+      "A mark's width is issues. A tick is still a volume.",
+      "Comics publish no reading time, so there are no hours to size a mark with — but there are issues, and the rest of the catalogue's comics count in them. So the two units are kept apart on purpose: you tick a book, because a book is what you finish, and the bar draws that book as wide as the comics inside it. The thinnest book on the shelf holds 5 comics and the thickest 10, and the marks are drawn in that proportion. The three runs are 186 issues plus 11 specials and one-shots — 197 comics in 29 volumes."
     ],
     [
       "Left off.",
       "The imprint ran from 1993 to 2020 and this is three books out of it. Not chased here: Hellblazer, Swamp Thing, Doom Patrol, The Invisibles, Sandman Mystery Theatre, 100 Bullets, Fables, DMZ and Scalped, and the rest of the line. Nor the Absolute, Compendium, Deluxe and Book re-collections, which cut the same issues a different way — one row per story, not per printing."
     ],
-    "Volume titles, issue ranges and release dates machine-read from each series' own Wikipedia article; a volume whose range could not be verified would fail the build rather than ship a guess."
+    "Volume titles, issue ranges and release dates machine-read from each series' own Wikipedia article; a volume whose range could not be verified would fail the build rather than ship a guess. Each mark's width is counted off that volume's own Material collected cell — its issues, plus any special the cell names as a book of its own — and the three totals are checked against the issue counts the articles state in prose before the file is written."
   ],
   "sections": [
     {
@@ -63,55 +67,64 @@
           "id": "vert-preacher-01",
           "t": "Gone to Texas",
           "n": "#1–7",
-          "note": "March 1996 · foreword by Joe R. Lansdale"
+          "note": "March 1996 · foreword by Joe R. Lansdale",
+          "w": 7
         },
         {
           "id": "vert-preacher-02",
           "t": "Until the End of the World",
           "n": "#8–17",
-          "note": "January 1997 · foreword by Kevin Smith"
+          "note": "January 1997 · foreword by Kevin Smith",
+          "w": 10
         },
         {
           "id": "vert-preacher-03",
           "t": "Proud Americans",
           "n": "#18–26",
-          "note": "October 1997 · foreword by Penn Jillette (of Penn & Teller)"
+          "note": "October 1997 · foreword by Penn Jillette (of Penn & Teller)",
+          "w": 9
         },
         {
           "id": "vert-preacher-04",
           "t": "Ancient History",
           "n": "The specials",
-          "note": "March 1998 · the Saint of Killers miniseries, plus The Story of You-Know-Who and The Good Old Boys"
+          "note": "March 1998 · the Saint of Killers miniseries, plus The Story of You-Know-Who and The Good Old Boys",
+          "w": 6
         },
         {
           "id": "vert-preacher-05",
           "t": "Dixie Fried",
           "n": "#27–33",
-          "note": "September 1998 · with the Cassidy – Blood and Whiskey special"
+          "note": "September 1998 · with the Cassidy – Blood and Whiskey special",
+          "w": 8
         },
         {
           "id": "vert-preacher-06",
           "t": "War in the Sun",
           "n": "#34–40",
-          "note": "March 1999 · with the One Man's War special"
+          "note": "March 1999 · with the One Man's War special",
+          "w": 8
         },
         {
           "id": "vert-preacher-07",
           "t": "Salvation",
           "n": "#41–50",
-          "note": "September 1999"
+          "note": "September 1999",
+          "w": 10
         },
         {
           "id": "vert-preacher-08",
           "t": "All Hell's A-Coming",
           "n": "#51–58",
-          "note": "June 2000 · with the Tall in the Saddle special"
+          "note": "June 2000 · with the Tall in the Saddle special",
+          "w": 9
         },
         {
           "id": "vert-preacher-09",
           "t": "Alamo",
           "n": "#59–66",
-          "note": "May 2001"
+          "note": "May 2001",
+          "w": 8
         }
       ]
     },
@@ -131,56 +144,66 @@
           "id": "vert-transmet-01",
           "t": "Vol. 1: Back on the Street",
           "n": "#1–6",
-          "note": "the first printing cut this one as #1–3"
+          "note": "the first printing cut this one as #1–3",
+          "w": 6
         },
         {
           "id": "vert-transmet-02",
           "t": "Vol. 2: Lust for Life",
           "n": "#7–12",
-          "note": "the first printing cut this one as #4–12"
+          "note": "the first printing cut this one as #4–12",
+          "w": 6
         },
         {
           "id": "vert-transmet-03",
           "t": "Vol. 3: Year of the Bastard",
           "n": "#13–18",
-          "note": "also carries the short from Vertigo: Winter's Edge #2"
+          "note": "also carries the short from Vertigo: Winter's Edge #2",
+          "w": 6
         },
         {
           "id": "vert-transmet-04",
           "t": "Vol. 4: The New Scum",
           "n": "#19–24",
-          "note": "also carries the short from Vertigo: Winter's Edge #3"
+          "note": "also carries the short from Vertigo: Winter's Edge #3",
+          "w": 6
         },
         {
           "id": "vert-transmet-05",
           "t": "Vol. 5: Lonely City",
-          "n": "#25–30"
+          "n": "#25–30",
+          "w": 6
         },
         {
           "id": "vert-transmet-06",
           "t": "Vol. 6: Gouge Away",
-          "n": "#31–36"
+          "n": "#31–36",
+          "w": 6
         },
         {
           "id": "vert-transmet-07",
           "t": "Vol. 7: Spider's Thrash",
-          "n": "#37–42"
+          "n": "#37–42",
+          "w": 6
         },
         {
           "id": "vert-transmet-08",
           "t": "Vol. 8: Dirge",
-          "n": "#43–48"
+          "n": "#43–48",
+          "w": 6
         },
         {
           "id": "vert-transmet-09",
           "t": "Vol. 9: The Cure",
-          "n": "#49–54"
+          "n": "#49–54",
+          "w": 6
         },
         {
           "id": "vert-transmet-10",
           "t": "Vol. 10: One More Time",
           "n": "#55–60",
-          "note": "also carries the two specials, I Hate It Here and Filth of the City"
+          "note": "also carries the two specials, I Hate It Here and Filth of the City",
+          "w": 8
         }
       ]
     },
@@ -200,61 +223,71 @@
           "id": "vert-y-01",
           "t": "Vol. 1: Unmanned",
           "n": "#1–5",
-          "note": "January 2003 · 128 pages"
+          "note": "January 2003 · 128 pages",
+          "w": 5
         },
         {
           "id": "vert-y-02",
           "t": "Vol. 2: Cycles",
           "n": "#6–10",
-          "note": "September 2003 · 128 pages"
+          "note": "September 2003 · 128 pages",
+          "w": 5
         },
         {
           "id": "vert-y-03",
           "t": "Vol. 3: One Small Step",
           "n": "#11–17",
-          "note": "May 2004 · 168 pages"
+          "note": "May 2004 · 168 pages",
+          "w": 7
         },
         {
           "id": "vert-y-04",
           "t": "Vol. 4: Safeword",
           "n": "#18–23",
-          "note": "May 2004 · 144 pages"
+          "note": "May 2004 · 144 pages",
+          "w": 6
         },
         {
           "id": "vert-y-05",
           "t": "Vol. 5: Ring of Truth",
           "n": "#24–31",
-          "note": "August 2005 · 192 pages"
+          "note": "August 2005 · 192 pages",
+          "w": 8
         },
         {
           "id": "vert-y-06",
           "t": "Vol. 6: Girl on Girl",
           "n": "#32–36",
-          "note": "November 2005 · 128 pages"
+          "note": "November 2005 · 128 pages",
+          "w": 5
         },
         {
           "id": "vert-y-07",
           "t": "Vol. 7: Paper Dolls",
           "n": "#37–42",
-          "note": "May 2006 · 144 pages"
+          "note": "May 2006 · 144 pages",
+          "w": 6
         },
         {
           "id": "vert-y-08",
           "t": "Vol. 8: Kimono Dragons",
           "n": "#43–48",
-          "note": "November 2006 · 144 pages"
+          "note": "November 2006 · 144 pages",
+          "w": 6
         },
         {
           "id": "vert-y-09",
           "t": "Vol. 9: Motherland",
           "n": "#49–54",
-          "note": "May 2007 · 144 pages"
+          "note": "May 2007 · 144 pages",
+          "w": 6
         },
         {
           "id": "vert-y-10",
           "t": "Vol. 10: Whys and Wherefores",
           "n": "#55–60",
-          "note": "June 2008 · 168 pages"
+          "note": "June 2008 · 168 pages",
+          "w": 6
         }
       ]
     }

@@ -11,22 +11,28 @@ titles, the year ranges, the counts and this list's own year span are read back
 out of the target files, because a hand-written count rots the day a list gains
 an issue.
 
-WHY THE STRIP IS UNWEIGHTED. Nathan, CLU-508: "drawing the line based on hours
-where we can and defaulting to items per otherwise is fine. like for comics the
-amount of items checked works." Comics publish no per-issue reading time, so
-every door here counts one and the marks are equal width.
-
-AND WHY, UNLIKE MARVEL, NOTHING HAD TO BE LEFT OFF FOR IT. The Marvel shelf
-lost three rows to build.py's rule that
+WHY THE STRIP IS WEIGHTED IN ISSUES (CLU-555, following CLU-545). Nathan's
+umbrella ruling is that comics count in issues, "not collected volumes", and
+CLU-545 applied that to the weight as well as to the row across the Marvel
+side. This is the DC half, and it had to be one pass rather than five: a door's
+weight is not typed here, it is the SUM of its target's row weights, computed
+by build.py and only when every row of that target carries one. So weighting
+some of these lists and not others produces exactly the mix build.py refuses -
 
     "A weighted strip cannot carry an unweighted row - it would draw as a
      default-sized mark beside a real one."
 
-because `amazing-spider-man`, `x-men` and `civil-war` weight every row with an
-issue count while the rest carry none. Every DC comics list on the site is
-unweighted, so a door into each derives no weight, the strip is uniformly
-unweighted, and the shelf holds them all. Checked, not assumed: no DC comics
-property carries a `w` on any row.
+- and the shelf fails to build. All eight doors or none; there is no half.
+
+THE ONE THAT MADE IT HARD. Seven of the eight tick issue by issue, so a row
+weighs one and the weight restates a number the page already showed. `vertigo`
+ticks by COLLECTED VOLUME, because a volume is what you finish there, and
+weighing a volume one would have drawn that door as 29 beside Sandman's 88 for
+a shelf more than twice Sandman's size. It is fixed at the source rather than
+here: each Vertigo row now weighs the comics its volume collects, read off that
+volume's own contents cell, and the page declares `weightUnit` so it can say a
+tick is a book while a mark is issues. Nothing on this shelf reconciles units,
+because by the time a door is read there is only one.
 
 WHAT IS NOT HERE AND WHY. `hellboy` is Dark Horse and `spawn` is Image, so
 neither is DC however comics-shaped it looks. `dc-anthology` and `dc-animation`
@@ -118,22 +124,36 @@ def facts(slug):
     if d is None:
         return None
     items = [x for sec in d["sections"] for x in sec["items"]]
-    # Assert the premise this whole list rests on rather than trusting it: one
-    # weighted DC list appearing later turns the strip into the mix build.py
-    # refuses, and the generator should be where that is discovered.
-    weighted = [x["id"] for x in items if "w" in x]
-    assert not weighted, \
-        "%s weights rows (%s ...) — a door into it would derive a real " \
-        "weight and the strip could no longer carry the unweighted ones" \
-        % (slug, ", ".join(weighted[:3]))
+    # Assert the premise this whole list rests on rather than trusting it. It
+    # is the exact inverse of what it used to be: an UNWEIGHTED DC list
+    # appearing later turns the strip into the mix build.py refuses, and the
+    # generator should be where that is discovered rather than the build.
+    # `opt` rows count too — build.py totals a weight only when every row of
+    # the target has one, optional included.
+    bare = [x["id"] for x in items
+            if not isinstance(x.get("w"), (int, float))
+            or isinstance(x.get("w"), bool)]
+    assert not bare, \
+        "%s leaves %d row(s) unweighted (%s ...) — a door into it would " \
+        "derive no weight and the strip could no longer carry the weighted " \
+        "ones" % (slug, len(bare), ", ".join(bare[:3]))
     core = [x for x in items if not x.get("opt")]
     nopt = len(items) - len(core)
     unit = (d.get("unit") or {}).get("many", "entries")
     note = ("%d %s" % (len(core), unit) if not nopt
             else "%d + %d optional" % (len(core), nopt))
+    # How wide this door will be drawn, which is not always the row count. A
+    # list that ticks in one unit and measures in another says so with
+    # `weightUnit`, and then the row has to print both or the mark looks wrong
+    # beside the count. Derived from the same rows build.py will sum.
+    wtotal = int(sum(x["w"] for x in items))
+    wunit = (d.get("weightUnit") or {}).get("many")
+    if wunit:
+        note += " · %d %s" % (wtotal, wunit)
     span = (d.get("year") or "").strip()
     years = [int(y) for y in YEAR.findall(span)]
     return {"title": d["title"], "n": span, "note": note, "unit": unit,
+            "w": wtotal,
             "first": years[0] if years else 9999,
             "last": years[-1] if years else 0,
             # "1985–" means still running, and the shelf's own span has to stay
@@ -201,6 +221,10 @@ def main():
     # would be wrong the first time a volumes-counting list joins the shelf.
     nissues = sum(1 for f in allf if f["unit"] == "issues")
 
+    # What the whole shelf weighs, summed from the doors rather than typed —
+    # the same numbers build.py will put on the marks.
+    wall = sum(f["w"] for f in allf)
+
     prop = {
         "slug": "dc-comics",
         "title": "DC Comics",
@@ -241,23 +265,27 @@ def main():
              "order marks the row here. Unticking a row only takes back the "
              "ticks this page put there — anything you had already marked "
              "yourself stays marked."],
-            ["Every mark is the same width, and that is deliberate.",
+            ["A mark's width is issues, not hours.",
              "Comics publish no per-issue reading time, so there are no hours "
-             "to size a mark with. Each door counts one, which makes this "
-             "page read as a shelf of reading orders rather than as several "
-             "hundred issues. The count sits on each row instead, where it is "
-             "a fact rather than a guess at how long you will be."],
+             "to size a mark with — but there are issues, and every list "
+             "behind this page counts in them. Each door is drawn as wide as "
+             "the number of issues in the order it opens, so the longest of "
+             "these and the shortest are not the same size on the bar. All "
+             "eight together are %d issues, which is what finishing this "
+             "page means." % wall],
             # Batman used to be the second exception here — it counted
             # collected stories — and the umbrella ruling of 2026-09-11 made
             # every comics list count issues, so the only page left out of step
             # is the Vertigo shelf. The count is derived, so the sentence
             # cannot disagree with the shelf when that changes again.
-            ["The rows do not all count the same thing.",
-             "%s of these pages count issues and the Vertigo shelf counts the "
-             "volumes those runs were collected in. That disagreement is real "
-             "and it stays on each page, where each says which unit it uses "
-             "and why. Here every door counts one, so nothing on this page has "
-             "to reconcile them."
+            ["The rows do not all count the same thing. The marks do.",
+             "%s of these pages tick issue by issue; the Vertigo shelf ticks "
+             "by collected volume, because a volume is what you actually "
+             "finish there. That disagreement is real and it stays on each "
+             "page, where each says which unit it uses and why. The bars are "
+             "another matter — every door here is measured in issues, "
+             "Vertigo's included, so nothing on this page has to reconcile "
+             "anything."
              % WORDS.get(nissues, str(nissues)).capitalize()],
             ["DC on screen is a different shelf.",
              "The films and television are already covered by DC Anthology "
@@ -293,8 +321,8 @@ def main():
     }
 
     out = P.write(prop)
-    print("wrote %s — %d rows across %d sections, span %s"
-          % (out.name, total, len(rows_by_sec), span))
+    print("wrote %s — %d rows across %d sections, span %s, %d issues"
+          % (out.name, total, len(rows_by_sec), span, wall))
     for sid, stitle, sub, items in rows_by_sec:
         print("  %-30s %d  %s" % (stitle[:30], len(items),
                                   ", ".join(x["into"] for x in items)))

@@ -52,7 +52,8 @@
           "note": "the pitch, in four issues",
           "star": 2,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-2",
@@ -61,7 +62,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-3",
@@ -70,7 +72,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-4",
@@ -79,7 +82,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -97,7 +101,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-6",
@@ -106,7 +111,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-7",
@@ -115,7 +121,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-8",
@@ -124,7 +131,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-9",
@@ -133,7 +141,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-secret-files-1",
@@ -142,7 +151,8 @@
           "note": "the Star-Seed short, co-written with Mark Millar",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -160,7 +170,8 @@
           "note": "",
           "star": 2,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-11",
@@ -169,7 +180,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-12",
@@ -178,7 +190,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-13",
@@ -187,7 +200,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-14",
@@ -196,7 +210,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-15",
@@ -205,7 +220,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -223,7 +239,8 @@
           "note": "Morrison with Arnie Jorgensen · the villain's first issue, a month before #16",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-wildcats-1",
@@ -232,7 +249,8 @@
           "note": "Morrison with Val Semeiks · a crossover with the WildStorm team",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -250,7 +268,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-17",
@@ -259,7 +278,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-22",
@@ -268,7 +288,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-23",
@@ -277,7 +298,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -295,7 +317,8 @@
           "note": "the run's chapter of it",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "dc-one-million-1",
@@ -304,7 +327,8 @@
           "note": "Morrison with Val Semeiks · the core miniseries",
           "star": 0,
           "opt": 1,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "dc-one-million-2",
@@ -313,7 +337,8 @@
           "note": "",
           "star": 0,
           "opt": 1,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "dc-one-million-3",
@@ -322,7 +347,8 @@
           "note": "",
           "star": 0,
           "opt": 1,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "dc-one-million-4",
@@ -331,7 +357,8 @@
           "note": "",
           "star": 0,
           "opt": 1,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -349,7 +376,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-25",
@@ -358,7 +386,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-26",
@@ -367,7 +396,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-28",
@@ -376,7 +406,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-29",
@@ -385,7 +416,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-30",
@@ -394,7 +426,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-31",
@@ -403,7 +436,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -421,7 +455,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-36",
@@ -430,7 +465,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-37",
@@ -439,7 +475,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-38",
@@ -448,7 +485,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-39",
@@ -457,7 +495,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-40",
@@ -466,7 +505,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-41",
@@ -475,7 +515,8 @@
           "note": "Morrison's last issue",
           "star": 1,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     },
@@ -493,7 +534,8 @@
           "note": "a graphic novel with Frank Quitely",
           "star": 2,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-classified-1",
@@ -502,7 +544,8 @@
           "note": "Morrison with Ed McGuinness · collected as Ultramarine Corps",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-classified-2",
@@ -511,7 +554,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         },
         {
           "id": "jla-classified-3",
@@ -520,7 +564,8 @@
           "note": "",
           "star": 0,
           "opt": 0,
-          "url": ""
+          "url": "",
+          "w": 1
         }
       ]
     }

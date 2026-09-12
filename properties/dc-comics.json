@@ -27,12 +27,12 @@
       "Marking a row here ticks that whole order, and finishing that order marks the row here. Unticking a row only takes back the ticks this page put there — anything you had already marked yourself stays marked."
     ],
     [
-      "Every mark is the same width, and that is deliberate.",
-      "Comics publish no per-issue reading time, so there are no hours to size a mark with. Each door counts one, which makes this page read as a shelf of reading orders rather than as several hundred issues. The count sits on each row instead, where it is a fact rather than a guess at how long you will be."
+      "A mark's width is issues, not hours.",
+      "Comics publish no per-issue reading time, so there are no hours to size a mark with — but there are issues, and every list behind this page counts in them. Each door is drawn as wide as the number of issues in the order it opens, so the longest of these and the shortest are not the same size on the bar. All eight together are 1096 issues, which is what finishing this page means."
     ],
     [
-      "The rows do not all count the same thing.",
-      "Seven of these pages count issues and the Vertigo shelf counts the volumes those runs were collected in. That disagreement is real and it stays on each page, where each says which unit it uses and why. Here every door counts one, so nothing on this page has to reconcile them."
+      "The rows do not all count the same thing. The marks do.",
+      "Seven of these pages tick issue by issue; the Vertigo shelf ticks by collected volume, because a volume is what you actually finish there. That disagreement is real and it stays on each page, where each says which unit it uses and why. The bars are another matter — every door here is measured in issues, Vertigo's included, so nothing on this page has to reconcile anything."
     ],
     [
       "DC on screen is a different shelf.",
@@ -128,7 +128,7 @@
           "id": "dcc-vertigo",
           "t": "The Vertigo Shelf",
           "n": "1995–2008",
-          "note": "29 volumes",
+          "note": "29 volumes · 197 issues",
           "into": "vertigo"
         }
       ]

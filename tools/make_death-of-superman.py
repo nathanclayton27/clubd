@@ -339,6 +339,23 @@ def main():
     assert opt == 8, opt   # the prologue plus seven tie-ins
     assert not any("w" in x or "weightUnit" in p
                    for s in p["sections"] for x in s["items"]), "weights"
+    # CLU-555. A MARK'S WIDTH IS ISSUES. Every row on this list is exactly
+    # one issue, so every row weighs one. That asserts nothing the page did
+    # not already claim -- its row count and its issue count are the same
+    # number -- it only makes the claim machine-readable, which is what lets
+    # the DC Comics shelf draw this door as wide as the run behind it instead
+    # of as one equal mark among eight.
+    #
+    # Stamped in one place rather than on every row constructor: one loop, one
+    # reason. All or nothing, because build.py totals a weight only when EVERY
+    # row carries one, and a hub cannot mix measured doors with unmeasured
+    # ones. `opt` rows are weighted too: optional is about what completion
+    # requires, not about how wide a mark is drawn.
+    for _s in p["sections"]:
+        for _x in _s["items"]:
+            _x["w"] = 1
+    assert all(_x.get("w") == 1 for _s in p["sections"] for _x in _s["items"]), \
+        "a row escaped the weight stamp"
     out = prop.write(p)
     print("%s — %d issues in %d sections (%d optional)"
           % (out, n, len(p["sections"]), opt))
