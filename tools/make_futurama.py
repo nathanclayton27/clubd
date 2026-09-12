@@ -235,7 +235,17 @@ def main():
                  "re-cut into the sixteen episodes Comedy Central aired as "
                  "season 5. They are counted here once, as films.",
         "items": [{
-            "id": "fut-film-%s" % prop.slug(f["t"].replace("'", "")),
+            # CLU-430. The apostrophe is dropped BEFORE prop.slug rather than
+            # by it — prop.slug would dash it — so `Bender's Big Score` gives
+            # fut-film-benders-big-score. Both spellings have to be dropped or
+            # the two forms of one title reach two ids, and an id is the
+            # `item_id` every tick is stored against: `Bender’s Big Score`
+            # folded to fut-film-bender-s-big-score and unticked the film.
+            # idsafe.py cannot see this fold, because it is written at the call
+            # site and not inside a function, which is why this list reads
+            # UNPROVEN there rather than SAFE.
+            "id": "fut-film-%s" % prop.slug(
+                f["t"].replace("'", "").replace("’", "")),
             "t": f["t"],
             "n": str(f["year"]),
             "note": prop.join_bits(
