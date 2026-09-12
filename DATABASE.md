@@ -569,6 +569,18 @@ pairing, and `groups_update_guard` stops `universal` being flipped after
 creation. Readable by members; writable by the creator. **No column grant** —
 the front end does `select('*')`.
 
+`name` is the one column of this table the front end writes after creation, and
+that is deliberate: `groups_guard_update()` pins `property_id`, `code`,
+`universal`, `created_by`, `id` and `created_at`, and **is silent about `name`
+on purpose** — CLU-524's rename on the friends page is exactly that write, held
+to the creator by `"creator updates group"`, the table's only UPDATE policy.
+Adding `name` to the guard would kill that feature with no error anybody sees.
+There is **no length or emptiness constraint on the column**; both the create
+RPC and the rename box cap it at 40 characters in the front end only, so a
+caller going straight at the API can still store an empty or enormous name.
+That is unchanged by CLU-524 and true of creation too — it is a gap worth its
+own card, not a claim that renaming introduced it.
+
 **`group_members`** — the roster, with `display_name` and `color_index`.
 Five-column grant. Members read; you rename yourself; the owner removes others;
 you may leave.

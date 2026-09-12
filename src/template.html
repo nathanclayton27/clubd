@@ -6694,7 +6694,7 @@ async function renderMyGroups(){
       // Wrapping each group makes the DOM say what the peek already assumes:
       // one child is one thing you are counting.
       return '<div class="gwrap">'
-        + '<div class="afrow" style="align-items:baseline;padding:5px 0">'
+        + '<div class="afrow gtop" style="align-items:baseline;padding:5px 0">'
         + '<b style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'
         + esc(g.name) + '</b>'
         + (k ? '<span class="mono" style="font-size:10.5px;color:var(--ink-3)">'
@@ -6706,6 +6706,28 @@ async function renderMyGroups(){
         // Order is the spec: the boxed Invite link sits last, so it is always
         // at the far right whatever else the row is carrying.
         + '<span class="gspace"></span>'
+        // CLU-524. A group could be named once and never again — the only
+        // rename on the site lives in the list page's club tile, behind a
+        // pencil, on a group you first have to SELECT on some list, and the
+        // friends page is where groups are actually made. Nathan: "add this
+        // to high todo as well to rename the groups."
+        //
+        // Owner only, and drawn for nobody else rather than drawn for everyone
+        // and refused on click: "creator updates group" is the table's ONLY
+        // update policy, so a member pressing this would get a silent no-op
+        // (PostgREST answers an RLS-filtered UPDATE with zero rows and no
+        // error — which is also why the write below reads the row back).
+        //
+        // .aquiet, not .gdang: leave and new link are red because they cost
+        // somebody something. A name costs nothing and is undone by typing the
+        // old one back. It still rides the hover layer like the rest of the
+        // row, and .lv carries the touch and focus-visible fallbacks with it.
+        + (g.created_by === user.id
+           ? '<button class="aquiet lv" data-grename="' + esc(g.id)
+             + '" data-grno="' + esc(g.name)
+             + '" title="Rename ' + esc(g.name)
+             + '. Everyone in the group sees the new name.">rename</button>'
+           : '')
         + '<button class="lv gdang" data-gleave="' + esc(g.id) + '" data-gname="'
         + esc(g.name) + '" title="Leave ' + esc(g.name)
         + '. You stop seeing their progress and they stop seeing yours. '
@@ -6726,6 +6748,26 @@ async function renderMyGroups(){
              + '">Invite link</button>'
            : '')
         + '</div>'
+        // The editor REPLACES the row above rather than opening under it, and
+        // that is deliberate. This card is a peek (CLU-120): with seven or more
+        // elements it is clamped to --pkh and everything past the cut is
+        // clipped. A box that grew the group would push itself under the fade —
+        // press rename on the fifth group and type into something you cannot
+        // see. One row swapped for one row keeps the measured height, so the
+        // editor is always exactly where the name was.
+        //
+        // Rendered up front and toggled, not built on click: the name is
+        // already escaped into this string, and a second innerHTML write inside
+        // a .gwrap is how a peek ends up counting a different number of
+        // children than pkOn measured.
+        + (g.created_by === user.id
+           ? '<div class="afrow grnf hide" style="padding:5px 0">'
+             + '<input type="text" class="grni" maxlength="40" value="'
+             + esc(g.name) + '" aria-label="Rename ' + esc(g.name) + '">'
+             + '<button type="button" class="abtn grnsave">Save</button>'
+             + '<button type="button" class="aquiet grncancel">Cancel</button>'
+             + '</div>'
+           : '')
         + '<div class="gros">' + pkHTML((roster[g.id] || []).map(m=>{
             const me = m.user_id === user.id;
             const nm = me ? ((m.display_name || 'you') + ' (you)')
@@ -6770,6 +6812,80 @@ async function renderMyGroups(){
         + '</div>';
     }), 'groups', 'fp-groups');
     pkAll(host);
+    // CLU-524 — renaming a group from the page it was created on.
+    host.querySelectorAll('button[data-grename]').forEach(b=>{
+      const wrap = b.closest('.gwrap');
+      const top  = b.closest('.afrow');
+      const form = wrap && wrap.querySelector(':scope > .grnf');
+      if(!wrap || !top || !form) return;
+      const inp = form.querySelector('.grni'),
+            sv  = form.querySelector('.grnsave'),
+            cx  = form.querySelector('.grncancel');
+      const gid = b.dataset.grename;
+      // `was` is read off the button every time rather than captured once: a
+      // successful rename re-renders the whole card, so the only stale copy
+      // possible is one we kept ourselves.
+      const open = on=>{
+        form.classList.toggle('hide', !on);
+        top.classList.toggle('hide', on);
+        if(on){ inp.value = b.dataset.grno; inp.focus(); inp.select(); }
+      };
+      b.onclick  = ()=> open(true);
+      cx.onclick = ()=> open(false);
+      inp.onkeydown = e=>{
+        if(e.key === 'Enter'){ e.preventDefault(); sv.click(); }
+        // Escape abandons the edit — the name on screen is still the name in
+        // the database, because nothing is written until Save
+        if(e.key === 'Escape'){ e.preventDefault(); open(false); }
+      };
+      sv.onclick = async ()=>{
+        const v = (inp.value || '').trim(), was = b.dataset.grno;
+        if(!v){ gnote('Give the group a name.', true); inp.focus(); return; }
+        // maxlength stops typing and pasting past 40, which is the cap the
+        // create box has carried since groups shipped. This is the second lock,
+        // for a value that arrived some other way — the column itself is plain
+        // `text`, so nothing under here refuses a novel.
+        if(v.length > 40){
+          gnote('A group name stops at 40 characters.', true); inp.focus(); return;
+        }
+        if(v === was){ gnote('That is already the name.', true); open(false); return; }
+        // A COLLIDING NAME IS REFUSED, and only against the groups you are in.
+        // Nothing in the database minds — `code` is unique, `name` is not — but
+        // this card draws your groups as a list of names, and two rows reading
+        // "Coworkers" leaves no way to tell which one you just renamed, which
+        // roster belongs to which, or which invite link you are about to send.
+        // Case-folded, because two names that differ only in case are the same
+        // name to whoever is reading them.
+        if(rows.some(o=> o.id !== gid
+              && (o.name || '').trim().toLowerCase() === v.toLowerCase())){
+          gnote('You are already in a group called that.', true); inp.focus(); return;
+        }
+        sv.disabled = true; cx.disabled = true;
+        // .select(), NOT a bare update. PostgREST answers an UPDATE that RLS
+        // filtered to nothing with a success and zero rows — no error at all —
+        // so a write the database refused would paint as a rename that worked
+        // and the card would re-read the old name a moment later. Reading the
+        // row back makes the refusal visible. The select policy is
+        // is_group_member(id) and an owner is a member, so the row comes back
+        // whenever the write really landed.
+        const { data, error } = await sb.from('groups')
+          .update({ name: v }).eq('id', gid).select('id, name');
+        sv.disabled = false; cx.disabled = false;
+        if(error){ gnote('Could not rename it: ' + error.message, true); return; }
+        if(!data || !data.length){
+          gnote('That did not save — the group still has its old name.', true);
+          return;
+        }
+        // The same sentence the club tile's rename uses, because it is the same
+        // act: everyone in the group sees the new name, and the only thing that
+        // decides WHEN is their next look at this page.
+        gnote('Everyone sees this group as ' + (data[0].name || v) + ' now.', false);
+        // Re-read rather than patch the row in place: MYG is a cached promise
+        // and the rest of the card (the roster, the mute, the invite link) is
+        // drawn off it, so the honest repaint is the one that asks again.
+        dropMyGroups(); renderMyGroups();
+      };
+    });
     host.querySelectorAll('button[data-grot]').forEach(b=>{
       b.onclick = async ()=>{
         if(!confirm('Make a new invite link for ' + b.dataset.grn
