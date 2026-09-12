@@ -78,9 +78,22 @@
       "One window per episode, so the pace line tells you whether you are caught up with the broadcast rather than on track for some distant finish. The last episode lands on 4 October 2026."
     ],
     [
+      "Where it airs.",
+      "Sundays on HBO, streaming the same day on HBO Max. Eight episodes weekly, 16 August to 4 October."
+    ],
+    [
       "Titles.",
-      "Only the first two have been announced. The rest are numbered until HBO says otherwise."
-    ]
+      "5 of the 8 titles are published. Episodes 6, 7 and 8 carry air dates and no titles yet, so this list numbers them rather than inventing names for them; they get their titles here when the source publishes them."
+    ],
+    [
+      "Nothing is weighted.",
+      "The source publishes 52–57 minutes for the series and no figure per episode, so every episode counts one rather than carrying a runtime this list would have had to guess at."
+    ],
+    [
+      "The whole season is listed.",
+      "All 8 episodes are dated in the source, so the 4 that have not aired yet are listed too. The schedule needs them, and an announced row is what an airing show looks like."
+    ],
+    "Episode titles and air dates machine-read from the episode table of the Wikipedia article \"Lanterns (TV series)\", revision 1374338199, read 2026-09-11; how many episodes have aired is cross-checked against that article's own infobox count before this builds, and an episode the article has not titled is numbered rather than named."
   ],
   "sections": [
     {
@@ -92,29 +105,29 @@
           "id": "lanterns-1",
           "t": "Pilot",
           "n": "1",
-          "note": "airs 16 August"
+          "note": "aired 16 August · series premiere"
         },
         {
           "id": "lanterns-2",
           "t": "Trust Fall",
           "n": "2",
-          "note": "airs 23 August"
+          "note": "aired 23 August"
         },
         {
           "id": "lanterns-3",
-          "t": "Episode 3",
+          "t": "OutKast",
           "n": "3",
-          "note": "airs 30 August"
+          "note": "aired 30 August"
         },
         {
           "id": "lanterns-4",
-          "t": "Episode 4",
+          "t": "The Weenie",
           "n": "4",
-          "note": "airs 6 September"
+          "note": "aired 6 September"
         },
         {
           "id": "lanterns-5",
-          "t": "Episode 5",
+          "t": "Lights Out",
           "n": "5",
           "note": "airs 13 September"
         },
@@ -134,7 +147,7 @@
           "id": "lanterns-8",
           "t": "Episode 8",
           "n": "8",
-          "note": "airs 4 October"
+          "note": "airs 4 October · season finale"
         }
       ]
     }

@@ -21,11 +21,15 @@
   "notes": [
     [
       "Everything he has directed.",
-      "The rule for this list is simple: if his filmography marks him director, it is here — features, television, the web series and the cartoon alike, whether or not he created or wrote them. The one thing kept out on those grounds is Crash Land (2026), where the Director column says no and he is credited executive producer. Executive producing is not directing. His acting roles in other people's films and the Alvvays video are not here either, and neither is the third season of the Viceland show, which was partly produced and never aired."
+      "The rule for this list is simple: if his filmography marks him director, it is here — features, television, the web series and the cartoon alike, whether or not he created or wrote them. The one thing kept out on those grounds is Crash Land (2026), which his filmography files under executive producer rather than in the director table. Executive producing is not directing. His acting roles in other people's films and the Alvvays video are not here either, and neither is the third season of the Viceland show, which was partly produced and never aired."
+    ],
+    [
+      "Eight more works get asked for, and they are not here.",
+      "Honolulu Blue, a second and earlier Operation Avalanche, a Live @ the Rivoli recording, My Mother's Pearls, Fantastic Corpse and a Matt Johnson Live at Comic-Con are named by people who have seen them, and no encyclopedia documents any of them — not the filmography, not a full-text search of every article, not his Wikidata item. The Mega64 specials are the one exception and they are one thing rather than two: the Viceland show's article records that he and Jay McCarrol appeared in shorts for 64X, Mega64's online event, in September 2023 and again in September 2024. It credits them as appearing, gives the shorts no title of their own and no runtime, so they fail the same test the Alvvays video fails. The same article records a 2026 short in which the two reprise their roles, which is Joel Haver's film and not his. Every one of them is left off rather than given a year this list cannot stand behind."
     ],
     [
       "Hours are not tracked on this list.",
-      "No row carries a runtime, and that is deliberate rather than unfinished. Fourteen of the 35 rows have no published per-episode runtime anywhere: the web series' infobox gives a range for the whole series, 10 to 20 minutes, and nothing per episode, and Matt & Bird Break Loose has no Wikipedia article at all — no runtime, not even episode titles. Weighting only the rows that can be weighted would be worse than weighting none, because an unweighted row silently counts as a full hour and the total would come out confidently wrong. So the list counts entries, not time. The figures that do exist are ready for the day the rest turn up: all five features publish runtimes, 83 minutes for The Dirties up to 121 for BlackBerry, and the Viceland episodes run a flat 22."
+      "No row carries a runtime, and that is deliberate rather than unfinished. Fourteen of the 36 rows have no published per-episode runtime anywhere: the web series' infobox gives a range for the whole series, 10 to 20 minutes, and nothing per episode, and Matt & Bird Break Loose has no Wikipedia article at all — no runtime, not even episode titles. Weighting only the rows that can be weighted would be worse than weighting none, because an unweighted row silently counts as a full hour and the total would come out confidently wrong. So the list counts entries, not time. The figures that do exist are ready for the day the rest turn up: all five features publish runtimes, 83 minutes for The Dirties up to 121 for BlackBerry, and the Viceland episodes run a flat 22."
     ],
     [
       "Two shows, not one show twice.",
@@ -34,10 +38,6 @@
     [
       "The movie does not work cold.",
       "Nirvanna the Band the Show the Movie is a feature and sits with the features, which is where his filmography files it. It is also a direct continuation of the Viceland show, with the same two men and the same joke running underneath it, so those sixteen episodes come first."
-    ],
-    [
-      "Uncle Stav is not out yet.",
-      "He directed Stavros Halkias' stand-up special, and directing it is enough to earn it a place here. It is missing only because it has not been released: it premieres on Netflix on 8 September 2026, and this catalogue does not list work nobody can watch yet. The generator adds it by itself on the day."
     ],
     "Filmography, credits and episode lists from Wikipedia's Matt Johnson (director), Nirvana the Band the Show and Nirvanna the Band the Show articles, read from the tables themselves; release dates from each film's own article."
   ],
@@ -261,6 +261,20 @@
           "t": "Tony",
           "n": "2026",
           "note": "Anthony Bourdain's first years cooking in Provincetown, out of Kitchen Confidential — his first American film, with Dominic Sessa as Bourdain"
+        }
+      ]
+    },
+    {
+      "id": "unclestav",
+      "title": "Uncle Stav",
+      "sub": "2026 · one stand-up special on Netflix",
+      "intro": "Stavros Halkias' stand-up special, filmed over four shows in Baltimore. Johnson directed it and did not write or create it, which is no bar: anything he directs is on this list. Halkias is also in Tony.",
+      "items": [
+        {
+          "id": "mj-2026-uncle-stav",
+          "t": "Uncle Stav",
+          "n": "2026",
+          "note": "Stand-up special — he directed it for Stavros Halkias, who acts in Tony"
         }
       ]
     }

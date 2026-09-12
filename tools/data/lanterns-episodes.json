@@ -1,0 +1,59 @@
+{
+  "source": {
+    "article": "Lanterns (TV series)",
+    "revid": 1374338199,
+    "revision_timestamp": "2026-09-11T11:29:39Z",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1374338199",
+    "read": "2026-09-11",
+    "what": "the {{Episode list}} rows of the article's Episodes section, and its {{Infobox television}}"
+  },
+  "infobox": {
+    "num_episodes": 4,
+    "num_seasons": 1,
+    "runtime": "52–57 minutes",
+    "network": "HBO",
+    "first_aired": "2026-08-16"
+  },
+  "episodes": [
+    {
+      "e": 1,
+      "t": "Pilot",
+      "d": "2026-08-16"
+    },
+    {
+      "e": 2,
+      "t": "Trust Fall",
+      "d": "2026-08-23"
+    },
+    {
+      "e": 3,
+      "t": "OutKast",
+      "d": "2026-08-30"
+    },
+    {
+      "e": 4,
+      "t": "The Weenie",
+      "d": "2026-09-06"
+    },
+    {
+      "e": 5,
+      "t": "Lights Out",
+      "d": "2026-09-13"
+    },
+    {
+      "e": 6,
+      "t": null,
+      "d": "2026-09-20"
+    },
+    {
+      "e": 7,
+      "t": null,
+      "d": "2026-09-27"
+    },
+    {
+      "e": 8,
+      "t": null,
+      "d": "2026-10-04"
+    }
+  ]
+}

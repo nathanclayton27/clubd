@@ -24,8 +24,18 @@ and it is the same test in all three of the article's credit tables.
 That admits five features — The Dirties (2013), Operation Avalanche (2016),
 BlackBerry (2023), Nirvanna the Band the Show the Movie (2025) and Tony (2026)
 — and all three shows. It excludes exactly one work on role grounds:
-*Crash Land* (2026), whose Director cell is {{No}} and whose Producer cell
-reads {{partial|Executive}}. Executive producing is not directing.
+*Crash Land* (2026). Executive producing is not directing.
+
+The article used to carry *Crash Land* as a Film row with Director {{No}} and
+Producer {{partial|Executive}}, and this file checked those two cells by name.
+As of the read of 11 September 2026 it is out of the director filmography
+altogether, in a second table under a bold "Executive producer" line whose
+only columns are Year, Title and Ref. So the exclusion is now checked from the
+other side, which is stronger: the Film table is asserted to mark every row it
+carries as directed and to contain no mention of *Crash Land* at all, and the
+executive-producer table is asserted to be where *Crash Land* sits. A
+non-directed row reappearing in the director table fails the build rather than
+being admitted to the list.
 
 The filmography table is checked against the article's own lead paragraph
 rather than believed on its own. The brief that commissioned this list had
@@ -199,10 +209,23 @@ def table_after(text, heading):
     return text[a:text.index("\n|}", a)]
 
 
+def table_after_bold(text, label):
+    """The first wikitable following a bold `'''label'''` line. The article
+    files its executive-producer credits under one of those rather than under a
+    heading, so table_after() cannot reach them."""
+    m = re.search(r"^'''%s'''\s*$" % re.escape(label), text, re.M)
+    assert m, "no bold %r line on the article" % label
+    a = text.index('{| class="wikitable"', m.end())
+    return text[a:text.index("\n|}", a)]
+
+
 def table_rows(seg, ncols):
     """Cells per row, with rowspan carried down. The Film table's 2026 row
-    rowspans its Year cell over two films; positional picking without this
-    hands Tony the wrong year, or no year at all."""
+    used to rowspan its Year cell over two films — Tony and Crash Land — and
+    positional picking without this handed Tony the wrong year, or no year at
+    all. Crash Land has since moved to its own table and the cell now reads
+    rowspan="1", which is the kind of change that must not be allowed to
+    quietly start mattering again: the carry stays."""
     out, pending = [], {}
     for chunk in seg.split("\n|-")[1:]:
         raw = iter(l for l in chunk.split("\n") if l.strip().startswith("|"))
@@ -286,14 +309,25 @@ def main():
         rec = {"t": wiki.clean(title), "page": link(title),
                "year": int(wiki.clean(year)), "wrote": yes(w)}
         (films if yes(d) else not_directed).append(rec)
-    # the one work the Director column keeps out, checked by name so a silent
-    # {{Yes}} appearing on it cannot slip past
-    assert [x["t"] for x in not_directed] == ["Crash Land"], not_directed
-    assert no(next(c[2] for c in frows if "Crash Land" in c[1])), \
-        "Crash Land's Director cell is no longer {{No}}"
-    assert re.search(r"partial\s*\|\s*Executive",
-                     next(c[4] for c in frows if "Crash Land" in c[1])), \
-        "Crash Land's Producer cell no longer says Executive"
+    # The one work kept out on role grounds. Checked from both sides, because
+    # the article has moved it: it is no longer a Film row with Director {{No}}
+    # for the old by-name cell checks to read, but a row in a separate
+    # bold-labelled executive-producer table. So the Film table must mark
+    # everything it carries as directed and must not mention Crash Land at all,
+    # and Crash Land must be where the source now files it.
+    assert not not_directed, \
+        ("the Film table carries rows it does not mark directed: %s — this "
+         "list ships Director={{Yes}} and nothing else, so a row like that "
+         "needs a decision rather than a default"
+         % [x["t"] for x in not_directed])
+    assert "Crash Land" not in table_after(art, "Film"), \
+        ("Crash Land is back in the director filmography — re-read its credits "
+         "before this list ships it")
+    ep_titles = [wiki.clean(r[1]) for r in
+                 table_rows(table_after_bold(art, "Executive producer"), 3)]
+    assert "Crash Land" in ep_titles, \
+        ("Crash Land is no longer filed under Executive producer (%s), and the "
+         "notes tell readers that is why it is missing" % ep_titles)
     assert len(films) == 5, [x["t"] for x in films]
     assert [x["year"] for x in films] == sorted(x["year"] for x in films), \
         "the filmography table is out of release order"
@@ -409,6 +443,33 @@ def main():
     assert min(aired) == 2017 and max(aired) == 2018, (min(aired), max(aired))
     assert "third season" in art and "not released" in art, \
         "the unreleased third season is no longer described in the article"
+
+    # ---- the works people ask for that the record does not have -----------
+    # Eight titles are named around this list by viewers who have seen them.
+    # Seven leave no machine-readable trace at all — not in the filmography,
+    # not in a full-text insource: search of every article, not on his Wikidata
+    # item — and a row with an invented year would be worse than no row. The
+    # 64X pair is the single exception, and what the source actually says about
+    # it is "appeared in", which is the ground the Alvvays video is excluded
+    # on. The notes tell readers exactly that, so the sentence they describe is
+    # asserted here: if it ever credits him as director, this build fails and
+    # whoever is standing there ships two rows instead of the note outliving
+    # its own reason.
+    assert re.search(r"^=+\s*Online video collaborations\s*=+\s*$", spage, re.M), \
+        ("the Viceland article no longer has an Online video collaborations "
+         "section — it is the only source for the 64X shorts the notes name")
+    assert re.search(r"In September 2023, and again in September 2024, Matt "
+                     r"and Jay appeared in special shorts for 64X", spage), \
+        ("the 64X sentence has changed — re-read it; a director credit there "
+         "makes those two shorts rows and the notes wrong")
+    assert re.search(r"collaborated with YouTuber \[\[Joel Haver\]\]", spage), \
+        ("the Joel Haver sentence has changed — the notes say that short is "
+         "his rather than Johnson's")
+    for absent in ("Honolulu Blue", "My Mother's Pearls", "Fantastic Corpse",
+                   "Live at Comic-Con", "64expo"):
+        assert absent not in art and absent not in spage and absent not in wpage, \
+            ("%r is now documented in the source the notes say is silent about "
+             "it — read the credit and ship the row if he directed it" % absent)
 
     # ---- the cartoon ------------------------------------------------------
     cart = tv[CARTOON]
@@ -596,12 +657,28 @@ def main():
          "The rule for this list is simple: if his filmography marks him "
          "director, it is here — features, television, the web series and the "
          "cartoon alike, whether or not he created or wrote them. The one "
-         "thing kept out on those grounds is Crash Land (2026), where the "
-         "Director column says no and he is credited executive producer. "
-         "Executive producing is not directing. His acting roles in other "
-         "people's films and the Alvvays video are not here either, and "
-         "neither is the third season of the Viceland show, which was partly "
-         "produced and never aired."],
+         "thing kept out on those grounds is Crash Land (2026), which his "
+         "filmography files under executive producer rather than in the "
+         "director table. Executive producing is not directing. His acting "
+         "roles in other people's films and the Alvvays video are not here "
+         "either, and neither is the third season of the Viceland show, which "
+         "was partly produced and never aired."],
+        ["Eight more works get asked for, and they are not here.",
+         "Honolulu Blue, a second and earlier Operation Avalanche, a Live @ "
+         "the Rivoli recording, My Mother's Pearls, Fantastic Corpse and a "
+         "Matt Johnson Live at Comic-Con are named by people who have seen "
+         "them, and no encyclopedia documents any of them — not the "
+         "filmography, not a full-text search of every article, not his "
+         "Wikidata item. The Mega64 specials are the one exception and they "
+         "are one thing rather than two: the Viceland show's article records "
+         "that he and Jay McCarrol appeared in shorts for 64X, Mega64's "
+         "online event, in September 2023 and again in September 2024. It "
+         "credits them as appearing, gives the shorts no title of their own "
+         "and no runtime, so they fail the same test the Alvvays video fails. "
+         "The same article records a 2026 short in which the two reprise "
+         "their roles, which is Joel Haver's film and not his. Every one of "
+         "them is left off rather than given a year this list cannot stand "
+         "behind."],
         ["Hours are not tracked on this list.",
          "No row carries a runtime, and that is deliberate rather than "
          "unfinished. Fourteen of the %d rows have no published per-episode "

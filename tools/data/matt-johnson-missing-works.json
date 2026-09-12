@@ -1,0 +1,207 @@
+{
+  "what": "Whether the eight works named on CLU-242 can be sourced as Matt Johnson directing credits. None of them was added to the list: its roster rule is a bare Director=Yes on his filmography, and none of the eight clears it.",
+  "read": "2026-09-11",
+  "how": {
+    "wikipedia_fulltext": "en.wikipedia.org action=query&list=search with insource:, which matches raw wikitext in ANY article, including passing mentions and red links",
+    "wikidata_item": "Q25209047 (Matt Johnson, director)",
+    "wikidata_item_search": "wbsearchentities, which finds items that have no article at all",
+    "sparql": "query.wikidata.org — every work with P57 (director) = Q25209047"
+  },
+  "items": [
+    {
+      "title": "Honolulu Blue",
+      "verdict": "No trace. The title matches only Detroit Lions colour articles; requiring \"Matt Johnson\" as well returns nothing at all.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:\"Honolulu Blue\" insource:\"Matt Johnson\"",
+          "total_hits": 0,
+          "top_articles": []
+        },
+        {
+          "query": "insource:\"Honolulu Blue\"",
+          "total_hits": 22,
+          "top_articles": [
+            "Buffalo Bills",
+            "Detroit Lions",
+            "Shades of blue",
+            "List of colors (alphabetical)",
+            "Silver (color)",
+            "2023 NFL season",
+            "List of colors: G–M",
+            "Glenn Presnell"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "the other Operation Avalanche (an earlier short of the same name)",
+      "verdict": "No trace of a second, earlier work of that name. Every hit is the 2016 feature's own festival and award coverage. The feature's article runs from conception straight into principal photography as his MFA thesis film and mentions no proof-of-concept short.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:\"Operation Avalanche\" insource:\"short film\" insource:\"Matt Johnson\"",
+          "total_hits": 9,
+          "top_articles": [
+            "Canadian Screen Award for Best Motion Picture",
+            "5th Canadian Screen Awards",
+            "Matt Johnson (director)",
+            "2016 Sundance Film Festival",
+            "List of Canadian films of 2016",
+            "Kingston Canadian Film Festival",
+            "Jay McCarrol",
+            "2016 Vancouver International Film Festival"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nirvana the Band the Show Live @ the Rivoli",
+      "verdict": "No trace. The hits are unrelated Rivoli venues and an Attila the Stockbroker album. The web series' article ends at eleven episodes, which is what this list already ships.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:/Live @ the Rivoli/",
+          "total_hits": 12,
+          "top_articles": [
+            "Joseph L. Mankiewicz",
+            "Film Booking Offices of America",
+            "Walter Wanger",
+            "Lungs (album)",
+            "List of terrorist incidents in France",
+            "Attila the Stockbroker",
+            "The Rivoli",
+            "Phillip Street Theatre"
+          ]
+        },
+        {
+          "query": "insource:/Live at the Rivoli/",
+          "total_hits": 1,
+          "top_articles": [
+            "Attila the Stockbroker"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "My Mother's Pearls",
+      "verdict": "No trace. Two unrelated hits.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:/My Mother.s Pearls/",
+          "total_hits": 2,
+          "top_articles": [
+            "Ratchet feminism",
+            "I'm Yours (1952 song)"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fantastic Corpse",
+      "verdict": "No trace. One hit, a Brazilian film with a different title.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:\"Fantastic Corpse\"",
+          "total_hits": 1,
+          "top_articles": [
+            "A Fantástica Fábrica de Cadáver"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Matt Johnson Live at Comic-Con",
+      "verdict": "No trace. The exact-title search is the only query in the sweep that returned zero hits of any kind.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:/Matt Johnson Live at Comic.Con/",
+          "total_hits": 0,
+          "top_articles": []
+        },
+        {
+          "query": "insource:\"Comic-Con\" insource:\"Nirvanna\"",
+          "total_hits": 3,
+          "top_articles": [
+            "Jay Baruchel",
+            "Kevin Smith filmography",
+            "List of Fantastic Fest editions"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "the Mega64 special",
+      "verdict": "Documented, but not as a directing credit. The only article naming both is Nirvanna the Band the Show, whose Online video collaborations section says he and Jay McCarrol APPEARED IN special shorts for 64X in September 2023 and again in September 2024. No director credit, no title of their own, no runtime.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:\"Mega64\" insource:\"Matt Johnson\"",
+          "total_hits": 1,
+          "top_articles": [
+            "Nirvanna the Band the Show"
+          ]
+        },
+        {
+          "query": "insource:\"Mega64\"",
+          "total_hits": 51,
+          "top_articles": [
+            "Rooster Teeth",
+            "List of YouTubers",
+            "Balboa Park (San Diego)",
+            "Anime Expo",
+            "Tim Heidecker",
+            "The Aquabats",
+            "Akio Otsuka",
+            "Santee, California"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "the 64expo special",
+      "verdict": "The same works as the Mega64 item, named twice: 64X IS Mega64's event, and two editions of it rather than two specials. \"64expo\" as a string appears in no article.",
+      "sourceable_as_a_directing_credit": false,
+      "searches": [
+        {
+          "query": "insource:\"64expo\"",
+          "total_hits": 0,
+          "top_articles": []
+        },
+        {
+          "query": "insource:\"64X\" insource:\"Nirvanna\"",
+          "total_hits": 1,
+          "top_articles": [
+            "Nirvanna the Band the Show"
+          ]
+        }
+      ]
+    }
+  ],
+  "wikidata_p57_director": [
+    "BlackBerry",
+    "Nirvanna the Band the Show the Movie",
+    "Operation Avalanche",
+    "The Dirties",
+    "Tony"
+  ],
+  "wikidata_item_search": {
+    "Honolulu Blue": [],
+    "Nirvana the Band the Show Live @ the Rivoli": [],
+    "My Mother's Pearls": [],
+    "Fantastic Corpse": [],
+    "Matt Johnson Live at Comic-Con": [],
+    "64X": [
+      {
+        "qid": "Q34961576",
+        "label": "Bird Dog Landing",
+        "description": "airport in Montague County, Texas, United States of America"
+      }
+    ],
+    "64expo": []
+  },
+  "conclusion": "Wikipedia's full text and Wikidata's item search return the same answer: seven of the eight have no machine-readable trace anywhere and no Wikidata item of their own. The eighth — the 64X shorts, one thing named twice — is documented as an appearance rather than a directing credit, which is the ground the Alvvays music video is already excluded on. Shipping them means widening the list's rule from \"anything he directs\" to \"anything he directs or appears in\", which also admits Anne at 13,000 Ft., Matt and Mara, The Heirloom, the Alvvays video and Joel Haver's 2026 short. That is the list owner's decision, not a generator's."
+}
