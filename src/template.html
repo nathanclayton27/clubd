@@ -558,8 +558,12 @@ details.ctile{padding:0}
 .gcard .row{margin:0;width:100%}
 /* CLU-423's offer borrows .atog rather than minting a second kind of switch.
    .gcard is a column flex with align-items:flex-start, so a borrowed row is
-   content-width and its hint would push past the card — and the card's own gap
-   already spaces it, so the pair of paddings .atog brings is one too many. */
+   content-width and its hint would push past the card.
+   The rule line above it is .atog's own border-top and is KEPT deliberately:
+   .atog:first-of-type matches on element TYPE, and the name and date rows above
+   are divs too, so this one never takes that exemption — which is lucky, because
+   the divider is what separates "what the club is" from "what goes into it".
+   Only the bottom padding goes; the card's 9px gap already spaces the button. */
 #gc-port{width:100%;padding-bottom:0}
 /* a fixed 190px club-name box overflowed a 200px card. Fluid to the card's
    width instead, and the join code keeps a short box because six characters in
@@ -571,7 +575,11 @@ details.ctile{padding:0}
    would otherwise win the size, the colour, the margin and the 66ch measure. */
 .gcard .gch{margin:0;font-size:9.5px;font-family:"IBM Plex Mono",ui-monospace,monospace;
   font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3)}
-.gcard .gcp{margin:0;font-size:12px;color:var(--ink-2);max-width:40ch}
+/* .cdrawer too, since CLU-423: its hint is a SENTENCE, and .lbl — the only
+   small face the drawer had — is a 10px uppercase label with .18em tracking. A
+   sentence set in that is a shout, and this is the quiet small print the tile's
+   own cards already use. */
+.gcard .gcp,.cdrawer .gcp{margin:0;font-size:12px;color:var(--ink-2);max-width:40ch}
 #gc-fresh-b{display:flex;flex-direction:column;align-items:flex-start;gap:9px;width:100%}
 .cfoot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;
   margin:14px 0 0;padding:12px 0 0;border-top:1px solid var(--rule)}
@@ -7326,7 +7334,7 @@ function portRow(){
   if(!add || !add.length) return '';
   return '<div class="row" style="margin:0 0 12px">'
     + '<button id="b-gport">Bring in what I have already ticked</button>'
-    + '<span class="lbl">' + add.length + ' ' + plural(add.length)
+    + '<span class="gcp">' + add.length + ' ' + plural(add.length)
     + ' on your own record aren’t in this club’s run</span></div>';
 }
 function wirePort(){
