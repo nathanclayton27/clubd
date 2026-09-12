@@ -1,231 +1,664 @@
 {
   "slug": "batman",
   "title": "Batman",
-  "subtitle": "a reading order",
+  "subtitle": "the essential runs, issue by issue",
   "kind": "comics",
   "popularity": 72,
-  "year": "1986–2021",
-  "blurb": "The stories Wikipedia's publication history of Batman stops to name, from The Dark Knight Returns to Fear State — collected stories rather than issues, sectioned by era.",
+  "year": "1986–2019",
+  "blurb": "225 issues in twelve runs, from The Dark Knight Returns to the end of Tom King's — a route through the character rather than everything ever printed.",
   "unit": {
-    "one": "story",
-    "many": "stories"
+    "one": "issue",
+    "many": "issues"
   },
   "verb": {
     "base": "read",
     "past": "read",
     "ing": "reading"
   },
-  "itemOrder": "number-first",
   "accent": "#1B2436",
   "accentDark": "#D8B740",
   "tiers": false,
   "notes": [
     [
-      "This is a route, not a run.",
-      "There is no Batman run to read start to finish. Seventy years, three reboots and two flagship titles running in parallel the whole time — so this is the curated kind of list, and every row is a collected story rather than an issue. Year One is one row, not four."
+      "The house's picks — veto freely.",
+      "Batman has been published every month since 1940 in at least two titles at once, so there is no complete version of this list that anybody could finish. This is the other kind: twelve runs, chosen here, in the order they came out. If one is not for you, skip it loudly — the sections are independent enough that nothing later breaks. If something you love is missing, the notes below probably name it."
     ],
     [
-      "What earns a row, and it is not taste.",
-      "Three things have to be true at once. The story has its own Wikipedia article and that article is about a comic rather than a character, a creator or a film. Wikipedia's publication history of Batman names it — the four articles that tell that history are “Batman”, “Publication history of Batman”, “Batman (comic book)” and “Detective Comics”, and a story qualifies by being linked from their publication-history narrative. And it is a finite Batman story: not an ongoing title, which is the book stories were printed in rather than a story, and not a company-wide DC event that Batman merely appears in. The generator re-runs that test from cached wikitext every time and refuses to build if the answer has changed."
+      "Rows are issues.",
+      "One row per comic, not per collected volume, which is how every comics list in this catalogue works. Where a story ran through other books, only the issues of the title in the section heading are here — except Batman Annual #25 and Batman (vol. 2) #0, which sit at the point you read them. This list used to count collected stories instead, so anyone who ticked those rows starts again."
     ],
     [
-      "It starts in 1986, and that is the gate talking.",
-      "Not one pre-Crisis story survives. The publication history names the Golden and Silver Age by character and by creator rather than by story, and the one story it does name outright has no article of its own. That is a fact about how Batman was published — the self-contained collected story is a Modern Age unit — rather than a hole in the list, and it seemed better to say so than to quietly hand-pick a Bronze Age section."
+      "Which continuity, and where the numbers restart.",
+      "Everything from Year One to The Black Mirror is post-Crisis DC continuity. The New 52 rebooted the line outright in 2011, which is where the Snyder run starts. DC Rebirth in 2016 is the other thing — a relaunch that kept the New 52's continuity while restoring much of what came before it — and it renumbered the book again, which is why the rows say which volume they are and why #1 happens three times. The Dark Knight Returns sits outside all of it."
     ],
     [
-      "Some famous absences, named on purpose.",
-      "The Black Mirror has its own article and is the story most often called the best of the last twenty years; Wikipedia's publication history never mentions it. The same clause cuts The Man Who Laughs, The Cult, Gothic, Mad Love, Gotham Central, White Knight and Three Jokers. All Star Batman & Robin has its own heading in the publication history and still fails, because it is an ongoing series that never finished. Following the sources when it is inconvenient is the whole point of naming them."
+      "The nineties are somewhere else.",
+      "Knightfall, Prodigal, Contagion, Legacy, Cataclysm and No Man's Land are one contiguous crossover across every Bat-book for most of a decade. That is a long ordered read in its own right rather than six sections here, and none of it is duplicated on this list. The Long Halloween is the one nineties entry, because it is a self-contained miniseries that happens to land in the decade."
+    ],
+    [
+      "Also not here, on purpose.",
+      "Broken City, Bruce Wayne: Fugitive, War Games, Dark Victory, the Gaiman two-parter, Morrison's three other Bat-titles, and everything after 2019. Some of that is good and none of it is load-bearing for the rest of the list; a reading list that carries everything is a publication history, which nobody finishes."
     ],
     [
       "No hours, on any row.",
-      "Comics have no runtimes and an issue count is not an hour, so nothing here is weighted — it is all or none, and one weighted row would quietly turn every other row into an hour. The issue counts are in the row notes instead, where they are information rather than arithmetic: what each story is, which issues of which books, and how many other books it ran through."
+      "Comics publish no reading time and an issue count is not an hour, so nothing here is weighted. The strip divides evenly and every figure on the page is a plain issue count."
     ],
-    [
-      "Starred rows, and spoilers.",
-      "A star means three of the four source articles stop to name that story; two stars means all four do. Only 7 rows clear that, and the star is a measure of how much the sources talk about a story rather than of how good it is. The notes say who made a story and which issues it is, never what happens in it — several of these are famous for a single event apiece, and a reading list is meant to be read first."
-    ],
-    "Contents and the gate from Wikipedia's “Publication history of Batman”, “Batman”, “Batman (comic book)” and “Detective Comics”; issue ranges, creators and dates machine-read from each story's own article and from “List of Batman comics”."
+    "Issue ranges machine-read from the collected-editions tables of Wikipedia's “List of Batman comics”, which cite each volume's contents issue by issue; no row is emitted that those tables do not name. Run boundaries, the creative teams and the gaps are asserted against the publication history in “Batman (comic book)”, and each run's months, writer and artist come from its own article's infobox — cross-checked against the collected editions wherever both name the issues."
   ],
   "sections": [
     {
-      "id": "crisis",
-      "title": "After Crisis",
-      "sub": "1986–90 · where the modern character starts",
-      "intro": "Crisis on Infinite Earths wiped the slate in 1985 and the next four years rebuilt Batman from the ground up — an origin, a future, a villain's origin and an asylum, mostly by writers who had never worked on the book before. Nothing here needs anything before it, which makes this the place to start.",
+      "id": "dkr",
+      "title": "The Dark Knight Returns",
+      "sub": "A 4-issue miniseries · February–June 1986",
+      "intro": "Frank Miller writing and drawing an old Batman in a future that is nobody's continuity but its own — and the book that made every list like this one possible. It depends on nothing before it and nothing after it depends on it, which is exactly why it is the door: four issues, no homework.\n\nRead it first or read it last. The only wrong answer is skipping it because it is old.",
       "links": [
         {
-          "label": "Publication history of Batman",
-          "url": "https://en.wikipedia.org/wiki/Publication_history_of_Batman"
+          "label": "The Dark Knight Returns",
+          "url": "https://en.wikipedia.org/wiki/The_Dark_Knight_Returns"
         }
       ],
       "items": [
         {
-          "id": "bat-dkr",
+          "id": "bat-dkr-1",
           "t": "The Dark Knight Returns",
-          "n": "1986",
-          "note": "Frank Miller · a 4-issue miniseries",
-          "star": 1
+          "n": "#1",
+          "note": "Frank Miller"
         },
         {
-          "id": "bat-son-of-demon",
-          "t": "Son of the Demon",
-          "n": "1987",
-          "note": "Mike W. Barr with Jerry Bingham · a graphic novel"
+          "id": "bat-dkr-2",
+          "t": "The Dark Knight Returns",
+          "n": "#2"
         },
         {
-          "id": "bat-year-one",
-          "t": "Year One",
-          "n": "1987",
-          "note": "Frank Miller with David Mazzucchelli · Batman #404–407",
-          "star": 2
+          "id": "bat-dkr-3",
+          "t": "The Dark Knight Returns",
+          "n": "#3"
         },
         {
-          "id": "bat-year-two",
-          "t": "Year Two",
-          "n": "1987",
-          "note": "Mike W. Barr with Alan Davis and others · Detective Comics #575–578"
-        },
-        {
-          "id": "bat-killing-joke",
-          "t": "The Killing Joke",
-          "n": "1988",
-          "note": "Alan Moore with Brian Bolland · a one-shot"
-        },
-        {
-          "id": "bat-death-in-family",
-          "t": "A Death in the Family",
-          "n": "1988",
-          "note": "Jim Starlin with Jim Aparo · Batman #426–429",
-          "star": 1
-        },
-        {
-          "id": "bat-gaslight",
-          "t": "Gotham by Gaslight",
-          "n": "1989",
-          "note": "Brian Augustyn with Mike Mignola · a one-shot"
-        },
-        {
-          "id": "bat-arkham",
-          "t": "Arkham Asylum: A Serious House on Serious Earth",
-          "n": "1989",
-          "note": "Grant Morrison with Dave McKean · a graphic novel"
-        },
-        {
-          "id": "bat-return-of-joker",
-          "t": "The Return of the Joker",
-          "n": "1990",
-          "note": "Marv Wolfman and Darren Vincenzo with Norm Breyfogle · Batman #450–451"
+          "id": "bat-dkr-4",
+          "t": "The Dark Knight Returns",
+          "n": "#4"
         }
       ],
       "open": true
     },
     {
-      "id": "gotham",
-      "title": "The Gotham crossovers",
-      "sub": "1993–2000 · one long serial across every Bat-book",
-      "intro": "For most of the nineties the line ran as a single serial: a story started in one title and finished in another, and the city itself took more damage each year. Knightfall through No Man's Land is that sequence in order. The two Loeb and Sale miniseries sit inside the decade by date and outside it by everything else — they are self-contained and they read fine alone.",
+      "id": "yearone",
+      "title": "Year One",
+      "sub": "Batman #404–407 · February–May 1987",
+      "intro": "The origin, retold a year later by the same writer and this time in the main title. Everything after this in DC's post-Crisis continuity is built on it, and it is still four issues long.\n\nIf you read one Batman comic, read this one.",
       "links": [
         {
-          "label": "Publication history of Batman",
-          "url": "https://en.wikipedia.org/wiki/Publication_history_of_Batman"
+          "label": "Batman: Year One",
+          "url": "https://en.wikipedia.org/wiki/Batman:_Year_One"
         }
       ],
       "items": [
         {
-          "id": "bat-knightfall",
-          "t": "Knightfall",
-          "n": "1993–94",
-          "note": "Chuck Dixon, Jo Duffy and others · Batman #492–510, 512–515, and 8 other books",
-          "star": 1
+          "id": "bat-b1-404",
+          "t": "Batman",
+          "n": "#404",
+          "note": "Frank Miller with David Mazzucchelli"
         },
         {
-          "id": "bat-legacy",
-          "t": "Legacy",
-          "n": "1996",
-          "note": "Chuck Dixon, Doug Moench and others · Batman #533–534, and 5 other books"
+          "id": "bat-b1-405",
+          "t": "Batman",
+          "n": "#405"
         },
         {
-          "id": "bat-contagion",
-          "t": "Contagion",
-          "n": "1996",
-          "note": "Batman #529–532, and 6 other books"
+          "id": "bat-b1-406",
+          "t": "Batman",
+          "n": "#406"
         },
         {
-          "id": "bat-long-halloween",
+          "id": "bat-b1-407",
+          "t": "Batman",
+          "n": "#407"
+        }
+      ]
+    },
+    {
+      "id": "killingjoke",
+      "title": "The Killing Joke",
+      "sub": "A one-shot · 1988",
+      "links": [
+        {
+          "label": "Batman: The Killing Joke",
+          "url": "https://en.wikipedia.org/wiki/Batman:_The_Killing_Joke"
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-killing-joke",
+          "t": "Batman: The Killing Joke",
+          "n": "",
+          "note": "Alan Moore with Brian Bolland"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "title": "A Death in the Family",
+      "sub": "Batman #426–429 · August–November 1988",
+      "links": [
+        {
+          "label": "A Death in the Family (comics)",
+          "url": "https://en.wikipedia.org/wiki/A_Death_in_the_Family_(comics)"
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-b1-426",
+          "t": "Batman",
+          "n": "#426",
+          "note": "Jim Starlin with Jim Aparo"
+        },
+        {
+          "id": "bat-b1-427",
+          "t": "Batman",
+          "n": "#427"
+        },
+        {
+          "id": "bat-b1-428",
+          "t": "Batman",
+          "n": "#428"
+        },
+        {
+          "id": "bat-b1-429",
+          "t": "Batman",
+          "n": "#429"
+        }
+      ]
+    },
+    {
+      "id": "arkham",
+      "title": "Arkham Asylum",
+      "sub": "A graphic novel · October 1989",
+      "links": [
+        {
+          "label": "Arkham Asylum",
+          "url": "https://en.wikipedia.org/wiki/Arkham_Asylum:_A_Serious_House_on_Serious_Earth"
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-arkham",
+          "t": "Arkham Asylum: A Serious House on Serious Earth",
+          "n": "",
+          "note": "Grant Morrison with Dave McKean"
+        }
+      ]
+    },
+    {
+      "id": "halloween",
+      "title": "The Long Halloween",
+      "sub": "A 13-issue miniseries · December 1996–July 1997",
+      "intro": "Thirteen issues, one per holiday, written into Year One's own continuity — so it reads straight off the back of it.\n\nIt is also the only nineties entry here. The rest of that decade in the Bat-books is one continuous crossover — Knightfall through No Man's Land — which is a long contiguous read of its own rather than six sections of this one, so this list steps over it. The Long Halloween is self-contained and does not need any of it.",
+      "links": [
+        {
+          "label": "Batman: The Long Halloween",
+          "url": "https://en.wikipedia.org/wiki/Batman:_The_Long_Halloween"
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-lh-1",
           "t": "The Long Halloween",
-          "n": "1996–97",
-          "note": "Jeph Loeb with Tim Sale · a 13-issue series"
+          "n": "#1",
+          "note": "Jeph Loeb with Tim Sale"
         },
         {
-          "id": "bat-cataclysm",
-          "t": "Cataclysm",
-          "n": "1998",
-          "note": "Batman #553–559, and 10 other books"
+          "id": "bat-lh-2",
+          "t": "The Long Halloween",
+          "n": "#2"
         },
         {
-          "id": "bat-no-mans-land",
-          "t": "No Man's Land",
-          "n": "1999",
-          "note": "Jordan B. Gorfinkel, Greg Rucka and others · Batman #560–574, and 14 other books",
-          "star": 1
+          "id": "bat-lh-3",
+          "t": "The Long Halloween",
+          "n": "#3"
         },
         {
-          "id": "bat-dark-victory",
-          "t": "Dark Victory",
-          "n": "1999–2000",
-          "note": "Jeph Loeb with Tim Sale · a 14-issue series"
+          "id": "bat-lh-4",
+          "t": "The Long Halloween",
+          "n": "#4"
+        },
+        {
+          "id": "bat-lh-5",
+          "t": "The Long Halloween",
+          "n": "#5"
+        },
+        {
+          "id": "bat-lh-6",
+          "t": "The Long Halloween",
+          "n": "#6"
+        },
+        {
+          "id": "bat-lh-7",
+          "t": "The Long Halloween",
+          "n": "#7"
+        },
+        {
+          "id": "bat-lh-8",
+          "t": "The Long Halloween",
+          "n": "#8"
+        },
+        {
+          "id": "bat-lh-9",
+          "t": "The Long Halloween",
+          "n": "#9"
+        },
+        {
+          "id": "bat-lh-10",
+          "t": "The Long Halloween",
+          "n": "#10"
+        },
+        {
+          "id": "bat-lh-11",
+          "t": "The Long Halloween",
+          "n": "#11"
+        },
+        {
+          "id": "bat-lh-12",
+          "t": "The Long Halloween",
+          "n": "#12"
+        },
+        {
+          "id": "bat-lh-13",
+          "t": "The Long Halloween",
+          "n": "#13"
         }
       ]
     },
     {
       "id": "hush",
-      "title": "The 21st century opens",
-      "sub": "2002–06 · the star-artist years",
-      "intro": "The line stops crossing over and starts hiring: Jim Lee, Eduardo Risso, Brian Azzarello. Two of these are twelve-issue arcs in the main title with one artist each, which had not happened in a decade.",
+      "title": "Hush",
+      "sub": "Batman #608–619 · October 2002–September 2003",
+      "intro": "Twelve issues in the main title, one writer, one artist, and a tour of the entire supporting cast — which makes it the easiest place to start if you want to know who everybody is. It assumes you have heard of the nineties without asking you to have read them.",
       "links": [
         {
-          "label": "Batman (comic book)",
-          "url": "https://en.wikipedia.org/wiki/Batman_(comic_book)"
+          "label": "Batman: Hush",
+          "url": "https://en.wikipedia.org/wiki/Batman:_Hush"
         }
       ],
       "items": [
         {
-          "id": "bat-fugitive",
-          "t": "Bruce Wayne: Fugitive",
-          "n": "2002",
-          "note": "Batman #599, and 14 other books"
+          "id": "bat-b1-608",
+          "t": "Batman",
+          "n": "#608",
+          "note": "Jeph Loeb with Jim Lee"
         },
         {
-          "id": "bat-hush",
-          "t": "Hush",
-          "n": "2002–03",
-          "note": "Jeph Loeb with Jim Lee · Batman #608–619"
+          "id": "bat-b1-609",
+          "t": "Batman",
+          "n": "#609"
         },
         {
-          "id": "bat-broken-city",
-          "t": "Broken City",
-          "n": "2003–04",
-          "note": "Brian Azzarello with Eduardo Risso · Batman #620–625"
+          "id": "bat-b1-610",
+          "t": "Batman",
+          "n": "#610"
         },
         {
-          "id": "bat-war-games",
-          "t": "War Games",
-          "n": "2004–05",
-          "note": "A. J. Lieberman, Bill Willingham and others · Batman #631–634, and 8 other books"
+          "id": "bat-b1-611",
+          "t": "Batman",
+          "n": "#611"
         },
         {
-          "id": "bat-under-the-hood",
-          "t": "Under the Hood",
-          "n": "2005–06",
-          "note": "Judd Winick with Doug Mahnke and others · Batman #635–641, 645–650, and 1 other book"
+          "id": "bat-b1-612",
+          "t": "Batman",
+          "n": "#612"
+        },
+        {
+          "id": "bat-b1-613",
+          "t": "Batman",
+          "n": "#613"
+        },
+        {
+          "id": "bat-b1-614",
+          "t": "Batman",
+          "n": "#614"
+        },
+        {
+          "id": "bat-b1-615",
+          "t": "Batman",
+          "n": "#615"
+        },
+        {
+          "id": "bat-b1-616",
+          "t": "Batman",
+          "n": "#616"
+        },
+        {
+          "id": "bat-b1-617",
+          "t": "Batman",
+          "n": "#617"
+        },
+        {
+          "id": "bat-b1-618",
+          "t": "Batman",
+          "n": "#618"
+        },
+        {
+          "id": "bat-b1-619",
+          "t": "Batman",
+          "n": "#619"
+        }
+      ]
+    },
+    {
+      "id": "underhood",
+      "title": "Under the Hood",
+      "sub": "Batman #635–641, 645–650 and Annual #25 · February 2005–April 2006",
+      "intro": "#642–644 are collected with War Games, a line-wide crossover, rather than with this story, so the numbering jumps. The Annual is last because that is where the story's own collected edition puts it.",
+      "links": [
+        {
+          "label": "Batman: Under the Hood",
+          "url": "https://en.wikipedia.org/wiki/Batman:_Under_the_Hood"
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-b1-635",
+          "t": "Batman",
+          "n": "#635",
+          "note": "Judd Winick with Doug Mahnke"
+        },
+        {
+          "id": "bat-b1-636",
+          "t": "Batman",
+          "n": "#636"
+        },
+        {
+          "id": "bat-b1-637",
+          "t": "Batman",
+          "n": "#637"
+        },
+        {
+          "id": "bat-b1-638",
+          "t": "Batman",
+          "n": "#638"
+        },
+        {
+          "id": "bat-b1-639",
+          "t": "Batman",
+          "n": "#639"
+        },
+        {
+          "id": "bat-b1-640",
+          "t": "Batman",
+          "n": "#640"
+        },
+        {
+          "id": "bat-b1-641",
+          "t": "Batman",
+          "n": "#641"
+        },
+        {
+          "id": "bat-b1-645",
+          "t": "Batman",
+          "n": "#645"
+        },
+        {
+          "id": "bat-b1-646",
+          "t": "Batman",
+          "n": "#646"
+        },
+        {
+          "id": "bat-b1-647",
+          "t": "Batman",
+          "n": "#647"
+        },
+        {
+          "id": "bat-b1-648",
+          "t": "Batman",
+          "n": "#648"
+        },
+        {
+          "id": "bat-b1-649",
+          "t": "Batman",
+          "n": "#649"
+        },
+        {
+          "id": "bat-b1-650",
+          "t": "Batman",
+          "n": "#650"
+        },
+        {
+          "id": "bat-ann1-25",
+          "t": "Batman Annual",
+          "n": "#25",
+          "note": "Collected last, with the arc"
         }
       ]
     },
     {
       "id": "morrison",
-      "title": "One Year Later, and Morrison",
-      "sub": "2006–10 · Morrison's run, and the two that frame it",
-      "intro": "Grant Morrison took the book in 2006 and did not let go until 2013. Wikipedia documents that run as a sequence of separately-titled arcs with separate articles rather than as one run, so it is several rows here rather than one. Face the Face is the relaunch that clears the board for it; the Gaiman two-parter is a standalone that runs alongside.",
+      "title": "Grant Morrison",
+      "sub": "Batman #655–683 and #700–702 · 2006–2010 · 26 issues",
+      "intro": "Morrison spent seven years on Batman and used every comic ever published about him as raw material, on purpose — the fifties, the Silver Age, the bits everyone else quietly dropped. It is the most argued-about run here and the one that rewards knowing the history.\n\nThis is the main-title half of it. The run also carries on through Batman and Robin, The Return of Bruce Wayne and Batman Incorporated — three more books, and a rabbit hole this list does not carry. #659–662 and #670–671 sit between its chapters without being part of it; #670–671 are collected with The Resurrection of Ra's al Ghul instead.",
+      "links": [
+        {
+          "label": "Batman and Son",
+          "url": "https://en.wikipedia.org/wiki/Batman_and_Son"
+        },
+        {
+          "label": "Batman R.I.P.",
+          "url": "https://en.wikipedia.org/wiki/Batman_R.I.P."
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-b1-655",
+          "t": "Batman",
+          "n": "#655",
+          "note": "Grant Morrison with Andy Kubert"
+        },
+        {
+          "id": "bat-b1-656",
+          "t": "Batman",
+          "n": "#656"
+        },
+        {
+          "id": "bat-b1-657",
+          "t": "Batman",
+          "n": "#657"
+        },
+        {
+          "id": "bat-b1-658",
+          "t": "Batman",
+          "n": "#658"
+        },
+        {
+          "id": "bat-b1-663",
+          "t": "Batman",
+          "n": "#663"
+        },
+        {
+          "id": "bat-b1-664",
+          "t": "Batman",
+          "n": "#664"
+        },
+        {
+          "id": "bat-b1-665",
+          "t": "Batman",
+          "n": "#665"
+        },
+        {
+          "id": "bat-b1-666",
+          "t": "Batman",
+          "n": "#666"
+        },
+        {
+          "id": "bat-b1-667",
+          "t": "Batman",
+          "n": "#667"
+        },
+        {
+          "id": "bat-b1-668",
+          "t": "Batman",
+          "n": "#668"
+        },
+        {
+          "id": "bat-b1-669",
+          "t": "Batman",
+          "n": "#669"
+        },
+        {
+          "id": "bat-b1-672",
+          "t": "Batman",
+          "n": "#672"
+        },
+        {
+          "id": "bat-b1-673",
+          "t": "Batman",
+          "n": "#673"
+        },
+        {
+          "id": "bat-b1-674",
+          "t": "Batman",
+          "n": "#674"
+        },
+        {
+          "id": "bat-b1-675",
+          "t": "Batman",
+          "n": "#675"
+        },
+        {
+          "id": "bat-b1-676",
+          "t": "Batman",
+          "n": "#676",
+          "note": "“Batman R.I.P.” begins · Grant Morrison with Tony Daniel"
+        },
+        {
+          "id": "bat-b1-677",
+          "t": "Batman",
+          "n": "#677"
+        },
+        {
+          "id": "bat-b1-678",
+          "t": "Batman",
+          "n": "#678"
+        },
+        {
+          "id": "bat-b1-679",
+          "t": "Batman",
+          "n": "#679"
+        },
+        {
+          "id": "bat-b1-680",
+          "t": "Batman",
+          "n": "#680"
+        },
+        {
+          "id": "bat-b1-681",
+          "t": "Batman",
+          "n": "#681"
+        },
+        {
+          "id": "bat-b1-682",
+          "t": "Batman",
+          "n": "#682",
+          "note": "A Final Crisis tie-in"
+        },
+        {
+          "id": "bat-b1-683",
+          "t": "Batman",
+          "n": "#683",
+          "note": "A Final Crisis tie-in"
+        },
+        {
+          "id": "bat-b1-700",
+          "t": "Batman",
+          "n": "#700",
+          "note": "The milestone issue"
+        },
+        {
+          "id": "bat-b1-701",
+          "t": "Batman",
+          "n": "#701",
+          "note": "“R.I.P.: The Missing Chapter”"
+        },
+        {
+          "id": "bat-b1-702",
+          "t": "Batman",
+          "n": "#702"
+        }
+      ]
+    },
+    {
+      "id": "blackmirror",
+      "title": "The Black Mirror",
+      "sub": "Detective Comics #871–881 · January–October 2011",
+      "intro": "Scott Snyder in Detective Comics rather than the main title — the section after this one is his main-title run. Dick Grayson is under the cowl for it, which the book explains as it goes.\n\nEleven issues, self-contained, and closer to a crime comic than to a superhero one.",
+      "links": [
+        {
+          "label": "Batman: The Black Mirror",
+          "url": "https://en.wikipedia.org/wiki/Batman:_The_Black_Mirror"
+        }
+      ],
+      "items": [
+        {
+          "id": "bat-dc-871",
+          "t": "Detective Comics",
+          "n": "#871",
+          "note": "Scott Snyder with Jock"
+        },
+        {
+          "id": "bat-dc-872",
+          "t": "Detective Comics",
+          "n": "#872"
+        },
+        {
+          "id": "bat-dc-873",
+          "t": "Detective Comics",
+          "n": "#873"
+        },
+        {
+          "id": "bat-dc-874",
+          "t": "Detective Comics",
+          "n": "#874"
+        },
+        {
+          "id": "bat-dc-875",
+          "t": "Detective Comics",
+          "n": "#875"
+        },
+        {
+          "id": "bat-dc-876",
+          "t": "Detective Comics",
+          "n": "#876"
+        },
+        {
+          "id": "bat-dc-877",
+          "t": "Detective Comics",
+          "n": "#877"
+        },
+        {
+          "id": "bat-dc-878",
+          "t": "Detective Comics",
+          "n": "#878"
+        },
+        {
+          "id": "bat-dc-879",
+          "t": "Detective Comics",
+          "n": "#879"
+        },
+        {
+          "id": "bat-dc-880",
+          "t": "Detective Comics",
+          "n": "#880"
+        },
+        {
+          "id": "bat-dc-881",
+          "t": "Detective Comics",
+          "n": "#881"
+        }
+      ]
+    },
+    {
+      "id": "snyder",
+      "title": "Scott Snyder and Greg Capullo",
+      "sub": "Batman (vol. 2) #0–51 · 2011–2016 · 52 issues",
+      "intro": "DC restarted its entire line in 2011 and this was the flagship: one writer and one artist on Batman #1 through #51, which is the last time the character had a single definitive book. If you want the modern answer to “where do I start”, it is here — the reboot means it assumes nothing at all.\n\n#0 sits where it was published rather than where it is collected. The four Villains Month issues numbered #23.1–23.4 are one-shots about villains and are not here, and neither is #52, which closes the volume after the run ends.",
       "links": [
         {
           "label": "Batman (comic book)",
@@ -234,100 +667,282 @@
       ],
       "items": [
         {
-          "id": "bat-face-the-face",
-          "t": "Face the Face",
-          "n": "2006",
-          "note": "James Robinson with Michael Bair and others · Batman #651–654, and 1 other book"
+          "id": "bat-b2-1",
+          "t": "Batman (vol. 2)",
+          "n": "#1",
+          "note": "Scott Snyder with Greg Capullo · “The Court of Owls” begins"
         },
         {
-          "id": "bat-batman-and-son",
-          "t": "Batman and Son",
-          "n": "2006",
-          "note": "Grant Morrison with Andy Kubert · Batman #655–658"
+          "id": "bat-b2-2",
+          "t": "Batman (vol. 2)",
+          "n": "#2"
         },
         {
-          "id": "bat-rip",
-          "t": "Batman R.I.P.",
-          "n": "2008",
-          "note": "Grant Morrison with Tony Daniel · Batman #676–683",
-          "star": 1
+          "id": "bat-b2-3",
+          "t": "Batman (vol. 2)",
+          "n": "#3"
         },
         {
-          "id": "bat-battle-cowl",
-          "t": "Battle for the Cowl",
-          "n": "2009",
-          "note": "Tony Daniel · a 3-issue miniseries"
+          "id": "bat-b2-4",
+          "t": "Batman (vol. 2)",
+          "n": "#4"
         },
         {
-          "id": "bat-whatever-happened",
-          "t": "Whatever Happened to the Caped Crusader?",
-          "n": "2009",
-          "note": "Neil Gaiman with Andy Kubert · Batman #686, and 1 other book"
+          "id": "bat-b2-5",
+          "t": "Batman (vol. 2)",
+          "n": "#5"
         },
         {
-          "id": "bat-return-bruce-wayne",
-          "t": "The Return of Bruce Wayne",
-          "n": "2010",
-          "note": "Grant Morrison with Chris Sprouse and others · a 6-issue miniseries"
+          "id": "bat-b2-6",
+          "t": "Batman (vol. 2)",
+          "n": "#6"
+        },
+        {
+          "id": "bat-b2-7",
+          "t": "Batman (vol. 2)",
+          "n": "#7"
+        },
+        {
+          "id": "bat-b2-8",
+          "t": "Batman (vol. 2)",
+          "n": "#8",
+          "note": "“The City of Owls” begins"
+        },
+        {
+          "id": "bat-b2-9",
+          "t": "Batman (vol. 2)",
+          "n": "#9"
+        },
+        {
+          "id": "bat-b2-10",
+          "t": "Batman (vol. 2)",
+          "n": "#10"
+        },
+        {
+          "id": "bat-b2-11",
+          "t": "Batman (vol. 2)",
+          "n": "#11"
+        },
+        {
+          "id": "bat-b2-12",
+          "t": "Batman (vol. 2)",
+          "n": "#12"
+        },
+        {
+          "id": "bat-b2-0",
+          "t": "Batman (vol. 2)",
+          "n": "#0",
+          "note": "“Zero Month”, September 2012 — a standalone origin, sitting where it was published"
+        },
+        {
+          "id": "bat-b2-13",
+          "t": "Batman (vol. 2)",
+          "n": "#13",
+          "note": "“Death of the Family” begins"
+        },
+        {
+          "id": "bat-b2-14",
+          "t": "Batman (vol. 2)",
+          "n": "#14"
+        },
+        {
+          "id": "bat-b2-15",
+          "t": "Batman (vol. 2)",
+          "n": "#15"
+        },
+        {
+          "id": "bat-b2-16",
+          "t": "Batman (vol. 2)",
+          "n": "#16"
+        },
+        {
+          "id": "bat-b2-17",
+          "t": "Batman (vol. 2)",
+          "n": "#17"
+        },
+        {
+          "id": "bat-b2-18",
+          "t": "Batman (vol. 2)",
+          "n": "#18"
+        },
+        {
+          "id": "bat-b2-19",
+          "t": "Batman (vol. 2)",
+          "n": "#19"
+        },
+        {
+          "id": "bat-b2-20",
+          "t": "Batman (vol. 2)",
+          "n": "#20"
+        },
+        {
+          "id": "bat-b2-21",
+          "t": "Batman (vol. 2)",
+          "n": "#21",
+          "note": "“Zero Year” begins"
+        },
+        {
+          "id": "bat-b2-22",
+          "t": "Batman (vol. 2)",
+          "n": "#22"
+        },
+        {
+          "id": "bat-b2-23",
+          "t": "Batman (vol. 2)",
+          "n": "#23"
+        },
+        {
+          "id": "bat-b2-24",
+          "t": "Batman (vol. 2)",
+          "n": "#24"
+        },
+        {
+          "id": "bat-b2-25",
+          "t": "Batman (vol. 2)",
+          "n": "#25"
+        },
+        {
+          "id": "bat-b2-26",
+          "t": "Batman (vol. 2)",
+          "n": "#26"
+        },
+        {
+          "id": "bat-b2-27",
+          "t": "Batman (vol. 2)",
+          "n": "#27"
+        },
+        {
+          "id": "bat-b2-28",
+          "t": "Batman (vol. 2)",
+          "n": "#28",
+          "note": "A fill-in, illustrated by Dustin Nguyen"
+        },
+        {
+          "id": "bat-b2-29",
+          "t": "Batman (vol. 2)",
+          "n": "#29"
+        },
+        {
+          "id": "bat-b2-30",
+          "t": "Batman (vol. 2)",
+          "n": "#30"
+        },
+        {
+          "id": "bat-b2-31",
+          "t": "Batman (vol. 2)",
+          "n": "#31"
+        },
+        {
+          "id": "bat-b2-32",
+          "t": "Batman (vol. 2)",
+          "n": "#32"
+        },
+        {
+          "id": "bat-b2-33",
+          "t": "Batman (vol. 2)",
+          "n": "#33"
+        },
+        {
+          "id": "bat-b2-34",
+          "t": "Batman (vol. 2)",
+          "n": "#34"
+        },
+        {
+          "id": "bat-b2-35",
+          "t": "Batman (vol. 2)",
+          "n": "#35",
+          "note": "“Endgame” begins"
+        },
+        {
+          "id": "bat-b2-36",
+          "t": "Batman (vol. 2)",
+          "n": "#36"
+        },
+        {
+          "id": "bat-b2-37",
+          "t": "Batman (vol. 2)",
+          "n": "#37"
+        },
+        {
+          "id": "bat-b2-38",
+          "t": "Batman (vol. 2)",
+          "n": "#38"
+        },
+        {
+          "id": "bat-b2-39",
+          "t": "Batman (vol. 2)",
+          "n": "#39"
+        },
+        {
+          "id": "bat-b2-40",
+          "t": "Batman (vol. 2)",
+          "n": "#40"
+        },
+        {
+          "id": "bat-b2-41",
+          "t": "Batman (vol. 2)",
+          "n": "#41",
+          "note": "“Superheavy” begins"
+        },
+        {
+          "id": "bat-b2-42",
+          "t": "Batman (vol. 2)",
+          "n": "#42"
+        },
+        {
+          "id": "bat-b2-43",
+          "t": "Batman (vol. 2)",
+          "n": "#43"
+        },
+        {
+          "id": "bat-b2-44",
+          "t": "Batman (vol. 2)",
+          "n": "#44"
+        },
+        {
+          "id": "bat-b2-45",
+          "t": "Batman (vol. 2)",
+          "n": "#45"
+        },
+        {
+          "id": "bat-b2-46",
+          "t": "Batman (vol. 2)",
+          "n": "#46",
+          "note": "“Bloom” begins"
+        },
+        {
+          "id": "bat-b2-47",
+          "t": "Batman (vol. 2)",
+          "n": "#47"
+        },
+        {
+          "id": "bat-b2-48",
+          "t": "Batman (vol. 2)",
+          "n": "#48"
+        },
+        {
+          "id": "bat-b2-49",
+          "t": "Batman (vol. 2)",
+          "n": "#49"
+        },
+        {
+          "id": "bat-b2-50",
+          "t": "Batman (vol. 2)",
+          "n": "#50"
+        },
+        {
+          "id": "bat-b2-51",
+          "t": "Batman (vol. 2)",
+          "n": "#51",
+          "note": "Snyder and Capullo's last issue"
         }
       ]
     },
     {
-      "id": "new52",
-      "title": "The New 52",
-      "sub": "2012–17 · Snyder and Capullo, and a second Miller sequel",
-      "intro": "DC restarted its whole line in 2011 and put Scott Snyder and Greg Capullo on Batman #1. Their run is the last time the character had one definitive book, and it is broken into arcs here for the same reason Morrison's is. Batman Eternal is the weekly that ran beside it.",
-      "links": [
-        {
-          "label": "Publication history of Batman",
-          "url": "https://en.wikipedia.org/wiki/Publication_history_of_Batman"
-        }
-      ],
-      "items": [
-        {
-          "id": "bat-night-owls",
-          "t": "Night of the Owls",
-          "n": "2012",
-          "note": "Tony Daniel, Kyle Higgins and others · Batman #1–12, and 11 other books",
-          "star": 2
-        },
-        {
-          "id": "bat-death-of-family",
-          "t": "Death of the Family",
-          "n": "2012–13",
-          "note": "Scott Snyder, Adam Glass and others · Batman (vol. 2) #13–17, and 8 other books"
-        },
-        {
-          "id": "bat-zero-year",
-          "t": "Zero Year",
-          "n": "2013–14",
-          "note": "Scott Snyder and James Tynion IV with Greg Capullo and others · Batman #21–27, 29–33, and 13 other books"
-        },
-        {
-          "id": "bat-eternal",
-          "t": "Batman Eternal",
-          "n": "2014–15",
-          "note": "Scott Snyder, James Tynion IV and others · a 52-issue series"
-        },
-        {
-          "id": "bat-endgame",
-          "t": "Endgame",
-          "n": "2014–15",
-          "note": "Scott Snyder with Greg Capullo · Batman (vol. 2) #35–40"
-        },
-        {
-          "id": "bat-dkiii",
-          "t": "The Dark Knight III: The Master Race",
-          "n": "2015–17",
-          "note": "Frank Miller and Brian Azzarello · a 9-issue miniseries"
-        }
-      ]
-    },
-    {
-      "id": "rebirth",
-      "title": "Rebirth and after",
-      "sub": "2020–21 · as far as the sources go",
-      "intro": "The publication history thins out here — recent years are documented by creator rather than by story, and only two arcs since 2016 clear the gate. Read that as the sources not having settled yet rather than as a verdict on the comics.",
+      "id": "king",
+      "title": "Tom King",
+      "sub": "Batman (vol. 3) #1–85 · 2016–2019 · 83 issues",
+      "intro": "Eighty-five issues planned as one hundred, written as a single long-form book about whether the character can be well. It is the most divisive run on this list by a distance — people who love it call it the best Batman comic ever made and people who do not bounce off it in six issues. Both reactions are normal; this is the one to veto if you are going to veto something.\n\n#64–65 are a Flash crossover written by somebody else and are not here, so the numbering jumps.",
       "links": [
         {
           "label": "Batman (comic book)",
@@ -336,16 +951,434 @@
       ],
       "items": [
         {
-          "id": "bat-joker-war",
-          "t": "The Joker War",
-          "n": "2020",
-          "note": "James Tynion IV with Jorge Jimenez · Batman (vol. 3) #95–100, and 1 other book"
+          "id": "bat-b3-1",
+          "t": "Batman (vol. 3)",
+          "n": "#1",
+          "note": "Tom King with David Finch · “I Am Gotham” begins"
         },
         {
-          "id": "bat-fear-state",
-          "t": "Fear State",
-          "n": "2021",
-          "note": "James Tynion IV with Jorge Jimenez and others · Batman (vol. 3) #112–117, and 1 other book"
+          "id": "bat-b3-2",
+          "t": "Batman (vol. 3)",
+          "n": "#2"
+        },
+        {
+          "id": "bat-b3-3",
+          "t": "Batman (vol. 3)",
+          "n": "#3"
+        },
+        {
+          "id": "bat-b3-4",
+          "t": "Batman (vol. 3)",
+          "n": "#4"
+        },
+        {
+          "id": "bat-b3-5",
+          "t": "Batman (vol. 3)",
+          "n": "#5"
+        },
+        {
+          "id": "bat-b3-6",
+          "t": "Batman (vol. 3)",
+          "n": "#6"
+        },
+        {
+          "id": "bat-b3-7",
+          "t": "Batman (vol. 3)",
+          "n": "#7",
+          "note": "“Night of the Monster Men” begins"
+        },
+        {
+          "id": "bat-b3-8",
+          "t": "Batman (vol. 3)",
+          "n": "#8"
+        },
+        {
+          "id": "bat-b3-9",
+          "t": "Batman (vol. 3)",
+          "n": "#9",
+          "note": "“I Am Suicide” begins"
+        },
+        {
+          "id": "bat-b3-10",
+          "t": "Batman (vol. 3)",
+          "n": "#10"
+        },
+        {
+          "id": "bat-b3-11",
+          "t": "Batman (vol. 3)",
+          "n": "#11"
+        },
+        {
+          "id": "bat-b3-12",
+          "t": "Batman (vol. 3)",
+          "n": "#12"
+        },
+        {
+          "id": "bat-b3-13",
+          "t": "Batman (vol. 3)",
+          "n": "#13"
+        },
+        {
+          "id": "bat-b3-14",
+          "t": "Batman (vol. 3)",
+          "n": "#14"
+        },
+        {
+          "id": "bat-b3-15",
+          "t": "Batman (vol. 3)",
+          "n": "#15"
+        },
+        {
+          "id": "bat-b3-16",
+          "t": "Batman (vol. 3)",
+          "n": "#16",
+          "note": "“I Am Bane” begins"
+        },
+        {
+          "id": "bat-b3-17",
+          "t": "Batman (vol. 3)",
+          "n": "#17"
+        },
+        {
+          "id": "bat-b3-18",
+          "t": "Batman (vol. 3)",
+          "n": "#18"
+        },
+        {
+          "id": "bat-b3-19",
+          "t": "Batman (vol. 3)",
+          "n": "#19"
+        },
+        {
+          "id": "bat-b3-20",
+          "t": "Batman (vol. 3)",
+          "n": "#20"
+        },
+        {
+          "id": "bat-b3-21",
+          "t": "Batman (vol. 3)",
+          "n": "#21",
+          "note": "“The Button” begins"
+        },
+        {
+          "id": "bat-b3-22",
+          "t": "Batman (vol. 3)",
+          "n": "#22"
+        },
+        {
+          "id": "bat-b3-23",
+          "t": "Batman (vol. 3)",
+          "n": "#23"
+        },
+        {
+          "id": "bat-b3-24",
+          "t": "Batman (vol. 3)",
+          "n": "#24"
+        },
+        {
+          "id": "bat-b3-25",
+          "t": "Batman (vol. 3)",
+          "n": "#25",
+          "note": "“The War of Jokes and Riddles” begins"
+        },
+        {
+          "id": "bat-b3-26",
+          "t": "Batman (vol. 3)",
+          "n": "#26"
+        },
+        {
+          "id": "bat-b3-27",
+          "t": "Batman (vol. 3)",
+          "n": "#27"
+        },
+        {
+          "id": "bat-b3-28",
+          "t": "Batman (vol. 3)",
+          "n": "#28"
+        },
+        {
+          "id": "bat-b3-29",
+          "t": "Batman (vol. 3)",
+          "n": "#29"
+        },
+        {
+          "id": "bat-b3-30",
+          "t": "Batman (vol. 3)",
+          "n": "#30"
+        },
+        {
+          "id": "bat-b3-31",
+          "t": "Batman (vol. 3)",
+          "n": "#31"
+        },
+        {
+          "id": "bat-b3-32",
+          "t": "Batman (vol. 3)",
+          "n": "#32"
+        },
+        {
+          "id": "bat-b3-33",
+          "t": "Batman (vol. 3)",
+          "n": "#33",
+          "note": "“The Rules of Engagement” begins"
+        },
+        {
+          "id": "bat-b3-34",
+          "t": "Batman (vol. 3)",
+          "n": "#34"
+        },
+        {
+          "id": "bat-b3-35",
+          "t": "Batman (vol. 3)",
+          "n": "#35"
+        },
+        {
+          "id": "bat-b3-36",
+          "t": "Batman (vol. 3)",
+          "n": "#36"
+        },
+        {
+          "id": "bat-b3-37",
+          "t": "Batman (vol. 3)",
+          "n": "#37"
+        },
+        {
+          "id": "bat-b3-38",
+          "t": "Batman (vol. 3)",
+          "n": "#38",
+          "note": "“Bride or Burglar?” begins"
+        },
+        {
+          "id": "bat-b3-39",
+          "t": "Batman (vol. 3)",
+          "n": "#39"
+        },
+        {
+          "id": "bat-b3-40",
+          "t": "Batman (vol. 3)",
+          "n": "#40"
+        },
+        {
+          "id": "bat-b3-41",
+          "t": "Batman (vol. 3)",
+          "n": "#41"
+        },
+        {
+          "id": "bat-b3-42",
+          "t": "Batman (vol. 3)",
+          "n": "#42"
+        },
+        {
+          "id": "bat-b3-43",
+          "t": "Batman (vol. 3)",
+          "n": "#43"
+        },
+        {
+          "id": "bat-b3-44",
+          "t": "Batman (vol. 3)",
+          "n": "#44"
+        },
+        {
+          "id": "bat-b3-45",
+          "t": "Batman (vol. 3)",
+          "n": "#45",
+          "note": "“The Wedding” begins"
+        },
+        {
+          "id": "bat-b3-46",
+          "t": "Batman (vol. 3)",
+          "n": "#46"
+        },
+        {
+          "id": "bat-b3-47",
+          "t": "Batman (vol. 3)",
+          "n": "#47"
+        },
+        {
+          "id": "bat-b3-48",
+          "t": "Batman (vol. 3)",
+          "n": "#48"
+        },
+        {
+          "id": "bat-b3-49",
+          "t": "Batman (vol. 3)",
+          "n": "#49"
+        },
+        {
+          "id": "bat-b3-50",
+          "t": "Batman (vol. 3)",
+          "n": "#50"
+        },
+        {
+          "id": "bat-b3-51",
+          "t": "Batman (vol. 3)",
+          "n": "#51",
+          "note": "“Cold Days” begins"
+        },
+        {
+          "id": "bat-b3-52",
+          "t": "Batman (vol. 3)",
+          "n": "#52"
+        },
+        {
+          "id": "bat-b3-53",
+          "t": "Batman (vol. 3)",
+          "n": "#53"
+        },
+        {
+          "id": "bat-b3-54",
+          "t": "Batman (vol. 3)",
+          "n": "#54"
+        },
+        {
+          "id": "bat-b3-55",
+          "t": "Batman (vol. 3)",
+          "n": "#55"
+        },
+        {
+          "id": "bat-b3-56",
+          "t": "Batman (vol. 3)",
+          "n": "#56"
+        },
+        {
+          "id": "bat-b3-57",
+          "t": "Batman (vol. 3)",
+          "n": "#57"
+        },
+        {
+          "id": "bat-b3-58",
+          "t": "Batman (vol. 3)",
+          "n": "#58",
+          "note": "“The Tyrant Wing” begins"
+        },
+        {
+          "id": "bat-b3-59",
+          "t": "Batman (vol. 3)",
+          "n": "#59"
+        },
+        {
+          "id": "bat-b3-60",
+          "t": "Batman (vol. 3)",
+          "n": "#60"
+        },
+        {
+          "id": "bat-b3-61",
+          "t": "Batman (vol. 3)",
+          "n": "#61",
+          "note": "“Knightmares” begins"
+        },
+        {
+          "id": "bat-b3-62",
+          "t": "Batman (vol. 3)",
+          "n": "#62"
+        },
+        {
+          "id": "bat-b3-63",
+          "t": "Batman (vol. 3)",
+          "n": "#63"
+        },
+        {
+          "id": "bat-b3-66",
+          "t": "Batman (vol. 3)",
+          "n": "#66"
+        },
+        {
+          "id": "bat-b3-67",
+          "t": "Batman (vol. 3)",
+          "n": "#67"
+        },
+        {
+          "id": "bat-b3-68",
+          "t": "Batman (vol. 3)",
+          "n": "#68"
+        },
+        {
+          "id": "bat-b3-69",
+          "t": "Batman (vol. 3)",
+          "n": "#69"
+        },
+        {
+          "id": "bat-b3-70",
+          "t": "Batman (vol. 3)",
+          "n": "#70",
+          "note": "“The Fall and the Fallen” begins"
+        },
+        {
+          "id": "bat-b3-71",
+          "t": "Batman (vol. 3)",
+          "n": "#71"
+        },
+        {
+          "id": "bat-b3-72",
+          "t": "Batman (vol. 3)",
+          "n": "#72"
+        },
+        {
+          "id": "bat-b3-73",
+          "t": "Batman (vol. 3)",
+          "n": "#73"
+        },
+        {
+          "id": "bat-b3-74",
+          "t": "Batman (vol. 3)",
+          "n": "#74"
+        },
+        {
+          "id": "bat-b3-75",
+          "t": "Batman (vol. 3)",
+          "n": "#75",
+          "note": "“City of Bane” begins"
+        },
+        {
+          "id": "bat-b3-76",
+          "t": "Batman (vol. 3)",
+          "n": "#76"
+        },
+        {
+          "id": "bat-b3-77",
+          "t": "Batman (vol. 3)",
+          "n": "#77"
+        },
+        {
+          "id": "bat-b3-78",
+          "t": "Batman (vol. 3)",
+          "n": "#78"
+        },
+        {
+          "id": "bat-b3-79",
+          "t": "Batman (vol. 3)",
+          "n": "#79"
+        },
+        {
+          "id": "bat-b3-80",
+          "t": "Batman (vol. 3)",
+          "n": "#80"
+        },
+        {
+          "id": "bat-b3-81",
+          "t": "Batman (vol. 3)",
+          "n": "#81"
+        },
+        {
+          "id": "bat-b3-82",
+          "t": "Batman (vol. 3)",
+          "n": "#82"
+        },
+        {
+          "id": "bat-b3-83",
+          "t": "Batman (vol. 3)",
+          "n": "#83"
+        },
+        {
+          "id": "bat-b3-84",
+          "t": "Batman (vol. 3)",
+          "n": "#84"
+        },
+        {
+          "id": "bat-b3-85",
+          "t": "Batman (vol. 3)",
+          "n": "#85",
+          "note": "King's last issue"
         }
       ]
     }
