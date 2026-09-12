@@ -1270,20 +1270,25 @@
           "t": "Urusei Yatsura: Only You",
           "n": "1983",
           "w": 1.68,
-          "note": "101 min"
+          "m": "f",
+          "note": "101 min",
+          "q": "Q3826597"
         },
         {
           "id": "uy-film-1984",
           "t": "Urusei Yatsura 2: Beautiful Dreamer",
           "n": "1984",
           "w": 1.63,
-          "note": "Also on the Time Loops list · 98 min"
+          "m": "f",
+          "note": "Also on the Time Loops list · 98 min",
+          "q": "Q1582185"
         },
         {
           "id": "uy-film-1985",
           "t": "Urusei Yatsura 3: Remember My Love",
           "n": "1985",
           "w": 1.55,
+          "m": "f",
           "note": "93 min"
         },
         {
@@ -1291,6 +1296,7 @@
           "t": "Urusei Yatsura 4: Lum the Forever",
           "n": "1986",
           "w": 1.57,
+          "m": "f",
           "note": "94 min"
         },
         {
@@ -1298,6 +1304,7 @@
           "t": "Urusei Yatsura: The Final Chapter",
           "n": "1988",
           "w": 1.43,
+          "m": "f",
           "note": "86 min"
         },
         {
@@ -1305,6 +1312,7 @@
           "t": "Urusei Yatsura: Always My Darling",
           "n": "1991",
           "w": 1.28,
+          "m": "f",
           "note": "77 min"
         }
       ]

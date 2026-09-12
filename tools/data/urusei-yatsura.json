@@ -1327,5 +1327,92 @@
     }
    ]
   }
+ ],
+ "wd": {
+  "Urusei Yatsura: Only You": {
+   "page": "Urusei Yatsura: Only You",
+   "qid": "Q3826597",
+   "label": "Urusei Yatsura: Only You",
+   "aliases": [
+    "Urusei Yatsura 1: Onri yû (Urusei Yatsura 1: Only You)"
+   ],
+   "directors": [
+    "Mamoru Oshii"
+   ],
+   "years": [
+    1983
+   ],
+   "instance_of": [
+    "Q20650540"
+   ]
+  },
+  "Urusei Yatsura 2: Beautiful Dreamer": {
+   "page": "Urusei Yatsura 2: Beautiful Dreamer",
+   "qid": "Q1582185",
+   "label": "Urusei Yatsura 2: Beautiful Dreamer",
+   "aliases": [
+    "Urusei Yatsura 2"
+   ],
+   "directors": [
+    "Mamoru Oshii"
+   ],
+   "years": [
+    1984
+   ],
+   "instance_of": [
+    "Q20650540"
+   ]
+  }
+ },
+ "series_article_videos": [
+  {
+   "title": "Urusei Yatsura: Only You",
+   "type": "film",
+   "director": "Mamoru Oshii",
+   "released": "February 13, 1983",
+   "runtime": "101 minutes"
+  },
+  {
+   "title": "Urusei Yatsura 2: Beautiful Dreamer",
+   "type": "film",
+   "director": "Mamoru Oshii",
+   "released": "February 11, 1984",
+   "runtime": "96 minutes"
+  },
+  {
+   "title": "Remember My Love",
+   "type": "film",
+   "director": "Kazuo Yamazaki",
+   "released": "January 26, 1985",
+   "runtime": "93 minutes"
+  },
+  {
+   "title": "Lum the Forever",
+   "type": "film",
+   "director": "Kazuo Yamazaki",
+   "released": "February 22, 1986",
+   "runtime": "94 minutes"
+  },
+  {
+   "title": "Making of Urusei Yatsura 4: Lum the Forever",
+   "type": "ova",
+   "director": "Kazuo Yamazaki",
+   "released": "February 15, 1986",
+   "runtime": "45 minutes"
+  },
+  {
+   "title": "The Final Chapter",
+   "type": "film",
+   "director": "Satoshi Dezaki",
+   "released": "February 6, 1988",
+   "runtime": "86 minutes"
+  },
+  {
+   "title": "Always, My Darling",
+   "type": "film",
+   "director": "Katsuhisa Yamada",
+   "released": "August 18, 1991",
+   "runtime": "77 minutes"
+  }
  ]
 }

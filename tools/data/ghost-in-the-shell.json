@@ -441,5 +441,72 @@
   "t": "Ghost in the Shell: SAC_2045 Sustainable War",
   "year": 2021,
   "runtime": null
+ },
+ "wd": {
+  "Ghost in the Shell": {
+   "page": "Ghost in the Shell (1995 film)",
+   "qid": "Q1066948",
+   "label": "Ghost in the Shell",
+   "aliases": [],
+   "directors": [
+    "Mamoru Oshii"
+   ],
+   "years": [
+    1995
+   ],
+   "instance_of": [
+    "Q20650540"
+   ]
+  },
+  "Ghost in the Shell 2: Innocence": {
+   "page": "Ghost in the Shell 2: Innocence",
+   "qid": "Q1058469",
+   "label": "Ghost in the Shell 2: Innocence",
+   "aliases": [
+    "Innocence"
+   ],
+   "directors": [
+    "Mamoru Oshii"
+   ],
+   "years": [
+    2004
+   ],
+   "instance_of": [
+    "Q20650540"
+   ]
+  },
+  "Solid State Society": {
+   "page": "Ghost in the Shell: Stand Alone Complex – Solid State Society",
+   "qid": "Q764897",
+   "label": "Ghost in the Shell: Stand Alone Complex - Solid State Society",
+   "aliases": [],
+   "directors": [
+    "Kenji Kamiyama"
+   ],
+   "years": [
+    2006
+   ],
+   "instance_of": [
+    "Q20650540",
+    "Q506240"
+   ]
+  },
+  "Ghost in the Shell: The New Movie": {
+   "page": "Ghost in the Shell: The New Movie",
+   "qid": "Q20038326",
+   "label": "Ghost in the Shell: The New Movie",
+   "aliases": [
+    "Kōkaku Kidōtai Shin Gekijōban"
+   ],
+   "directors": [
+    "Kazuchika Kise"
+   ],
+   "years": [
+    2015
+   ],
+   "instance_of": [
+    "Q20650540"
+   ]
+  }
  }
 }

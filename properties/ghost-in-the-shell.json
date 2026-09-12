@@ -57,14 +57,18 @@
           "t": "Ghost in the Shell",
           "n": "1995",
           "w": 1.37,
-          "note": "82 min"
+          "note": "82 min",
+          "m": "f",
+          "q": "Q1066948"
         },
         {
           "id": "gits-film-2004",
           "t": "Ghost in the Shell 2: Innocence",
           "n": "2004",
           "w": 1.63,
-          "note": "98 min"
+          "note": "98 min",
+          "m": "f",
+          "q": "Q1058469"
         }
       ]
     },
@@ -412,7 +416,8 @@
           "t": "Solid State Society",
           "n": "2006",
           "w": 1.75,
-          "note": "TV film, two years after 2nd GIG · 105 min"
+          "note": "TV film, two years after 2nd GIG · 105 min",
+          "m": "f"
         }
       ]
     },
@@ -475,7 +480,9 @@
           "t": "Ghost in the Shell: The New Movie",
           "n": "2015",
           "w": 1.67,
-          "note": "Follows the Arise borders · 100 min"
+          "note": "Follows the Arise borders · 100 min",
+          "m": "f",
+          "q": "Q20038326"
         }
       ]
     },
