@@ -6924,7 +6924,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '3fcf712de51b';
+const BUILD = '58d265231c96';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -14047,8 +14047,21 @@ function indexStrip(host){
 }
 
 function columnAt(host, clientX){
-  const layer = host.querySelector('.layer') || host;
-  const r = layer.getBoundingClientRect();
+  // ⚠ THE HOST'S box, not the first layer's. This sampled `.layer` — layer 0 —
+  // and layer 0's box is only LAYER_H tall, ending well above the bottom of a
+  // stack. That was survivable while layer 0 was drawn in front, because its
+  // own marks were the topmost thing at that height. The moment the shorter
+  // bars moved to the front (CLU-518), the point being sampled belonged to a
+  // LOWER layer whose mark at that height is empty space, so elementFromPoint
+  // returned the layer div, `dataset.i` was undefined, and the lookup fell
+  // through to "hold the last column" — Nathan: "whatever the first bar you
+  // hovered on is stuck until you move the mouse away from the graph
+  // completely".
+  //
+  // The host's bottom is the one line every strip has a mark on: ticked marks
+  // run to it, and the deepest layer's nubs are bottom-aligned against it. It
+  // is also correct for a solo `.striprow`, which has no layers at all.
+  const r = host.getBoundingClientRect();
 
   // hysteresis — while the pointer is inside the widened bar, keep it
   const cur = host._by && host._by.get(host._idx);
