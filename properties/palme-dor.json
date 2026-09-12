@@ -47,6 +47,7 @@
           "t": "Brief Encounter",
           "n": "1946",
           "w": 1.42,
+          "q": "Q814296",
           "note": "David Lean · joint winner"
         },
         {
@@ -54,6 +55,7 @@
           "t": "The Last Chance",
           "n": "1946",
           "w": 1.73,
+          "q": "Q671940",
           "note": "Leopold Lindtberg · joint winner"
         },
         {
@@ -61,6 +63,7 @@
           "t": "The Lost Weekend",
           "n": "1946",
           "w": 1.68,
+          "q": "Q237134",
           "note": "Billy Wilder · joint winner"
         },
         {
@@ -68,6 +71,7 @@
           "t": "María Candelaria",
           "n": "1946",
           "w": 1.68,
+          "q": "Q2578176",
           "note": "Emilio Fernández · joint winner"
         },
         {
@@ -75,6 +79,7 @@
           "t": "Men Without Wings",
           "n": "1946",
           "w": 1.27,
+          "q": "Q2280650",
           "note": "František Čáp · joint winner"
         },
         {
@@ -82,6 +87,7 @@
           "t": "Neecha Nagar",
           "n": "1946",
           "w": 2.03,
+          "q": "Q427915",
           "note": "Chetan Anand · joint winner"
         },
         {
@@ -89,6 +95,7 @@
           "t": "Pastoral Symphony",
           "n": "1946",
           "w": 1.83,
+          "q": "Q2553634",
           "note": "Jean Delannoy · joint winner"
         },
         {
@@ -96,6 +103,7 @@
           "t": "The Red Meadows",
           "n": "1946",
           "w": 1.42,
+          "q": "Q1757020",
           "note": "Bodil Ipsen and Lau Lauritzen Jr. · joint winner"
         },
         {
@@ -103,6 +111,7 @@
           "t": "Rome, Open City",
           "n": "1946",
           "w": 1.67,
+          "q": "Q721146",
           "note": "Roberto Rossellini · joint winner"
         },
         {
@@ -110,6 +119,7 @@
           "t": "Torment",
           "n": "1946",
           "w": 1.68,
+          "q": "Q2290980",
           "note": "Alf Sjöberg · joint winner"
         },
         {
@@ -117,6 +127,7 @@
           "t": "The Turning Point",
           "n": "1946",
           "w": 1.8,
+          "q": "Q945852",
           "note": "Fridrikh Ermler · joint winner"
         },
         {
@@ -124,6 +135,7 @@
           "t": "Antoine and Antoinette",
           "n": "1947",
           "w": 1.3,
+          "q": "Q2279661",
           "note": "Jacques Becker · joint winner"
         },
         {
@@ -131,6 +143,7 @@
           "t": "Crossfire",
           "n": "1947",
           "w": 1.47,
+          "q": "Q632718",
           "note": "Edward Dmytryk · joint winner"
         },
         {
@@ -138,6 +151,7 @@
           "t": "Dumbo",
           "n": "1947",
           "w": 1.07,
+          "q": "Q40895",
           "note": "Ben Sharpsteen · joint winner"
         },
         {
@@ -145,6 +159,7 @@
           "t": "The Damned",
           "n": "1947",
           "w": 1.58,
+          "q": "Q3233764",
           "note": "René Clément · joint winner"
         },
         {
@@ -152,6 +167,7 @@
           "t": "Ziegfeld Follies",
           "n": "1947",
           "w": 1.83,
+          "q": "Q2186004",
           "note": "Vincente Minnelli · joint winner"
         },
         {
@@ -159,6 +175,7 @@
           "t": "The Third Man",
           "n": "1949",
           "w": 1.73,
+          "q": "Q271830",
           "note": "Carol Reed"
         },
         {
@@ -166,6 +183,7 @@
           "t": "Miracle in Milan",
           "n": "1951",
           "w": 1.67,
+          "q": "Q1170844",
           "note": "Vittorio De Sica · joint winner"
         },
         {
@@ -173,6 +191,7 @@
           "t": "Miss Julie",
           "n": "1951",
           "w": 1.48,
+          "q": "Q1471325",
           "note": "Alf Sjöberg · joint winner"
         },
         {
@@ -180,6 +199,7 @@
           "t": "Othello",
           "n": "1952",
           "w": 1.52,
+          "q": "Q2704454",
           "note": "Orson Welles · joint winner"
         },
         {
@@ -187,6 +207,7 @@
           "t": "Two Cents Worth of Hope",
           "n": "1952",
           "w": 1.83,
+          "q": "Q2459872",
           "note": "Renato Castellani · joint winner"
         },
         {
@@ -194,6 +215,7 @@
           "t": "The Wages of Fear",
           "n": "1953",
           "w": 2.47,
+          "q": "Q465773",
           "note": "Henri-Georges Clouzot"
         },
         {
@@ -201,6 +223,7 @@
           "t": "Gate of Hell",
           "n": "1954",
           "w": 1.47,
+          "q": "Q862708",
           "note": "Teinosuke Kinugasa"
         }
       ]
@@ -215,6 +238,7 @@
           "t": "Marty",
           "n": "1955",
           "w": 1.52,
+          "q": "Q237116",
           "note": "Delbert Mann · unanimous"
         },
         {
@@ -222,6 +246,7 @@
           "t": "The Silent World",
           "n": "1956",
           "w": 1.42,
+          "q": "Q289648",
           "note": "Jacques Cousteau and Louis Malle"
         },
         {
@@ -229,6 +254,7 @@
           "t": "Friendly Persuasion",
           "n": "1957",
           "w": 2.28,
+          "q": "Q1621402",
           "note": "William Wyler"
         },
         {
@@ -236,6 +262,7 @@
           "t": "The Cranes Are Flying",
           "n": "1958",
           "w": 1.62,
+          "q": "Q714524",
           "note": "Mikhail Kalatozov"
         },
         {
@@ -243,6 +270,7 @@
           "t": "Black Orpheus",
           "n": "1959",
           "w": 1.78,
+          "q": "Q538266",
           "note": "Marcel Camus · unanimous"
         }
       ],
@@ -258,6 +286,7 @@
           "t": "La dolce vita",
           "n": "1960",
           "w": 2.9,
+          "q": "Q18407",
           "note": "Federico Fellini · unanimous"
         },
         {
@@ -265,6 +294,7 @@
           "t": "The Long Absence",
           "n": "1961",
           "w": 1.42,
+          "q": "Q2661411",
           "note": "Henri Colpi · joint winner · unanimous"
         },
         {
@@ -272,6 +302,7 @@
           "t": "Viridiana",
           "n": "1961",
           "w": 1.5,
+          "q": "Q852841",
           "note": "Luis Buñuel · joint winner · unanimous"
         },
         {
@@ -279,6 +310,7 @@
           "t": "O Pagador de Promessas",
           "n": "1962",
           "w": 1.53,
+          "q": "Q1482269",
           "note": "Anselmo Duarte · unanimous"
         },
         {
@@ -286,6 +318,7 @@
           "t": "The Leopard",
           "n": "1963",
           "w": 3.05,
+          "q": "Q596623",
           "note": "Luchino Visconti · unanimous"
         },
         {
@@ -293,6 +326,7 @@
           "t": "The Umbrellas of Cherbourg",
           "n": "1964",
           "w": 1.52,
+          "q": "Q163868",
           "note": "Jacques Demy"
         },
         {
@@ -300,6 +334,7 @@
           "t": "The Knack ...and How to Get It",
           "n": "1965",
           "w": 1.42,
+          "q": "Q1198726",
           "note": "Richard Lester"
         },
         {
@@ -307,6 +342,7 @@
           "t": "The Birds, the Bees and the Italians",
           "n": "1966",
           "w": 1.92,
+          "q": "Q319275",
           "note": "Pietro Germi · joint winner"
         },
         {
@@ -314,6 +350,7 @@
           "t": "A Man and a Woman",
           "n": "1966",
           "w": 1.7,
+          "q": "Q261403",
           "note": "Claude Lelouch · joint winner"
         },
         {
@@ -321,6 +358,7 @@
           "t": "Blowup",
           "n": "1967",
           "w": 1.85,
+          "q": "Q658204",
           "note": "Michelangelo Antonioni"
         },
         {
@@ -328,6 +366,7 @@
           "t": "If....",
           "n": "1969",
           "w": 1.85,
+          "q": "Q1346745",
           "note": "Lindsay Anderson"
         }
       ],
@@ -343,6 +382,7 @@
           "t": "M*A*S*H",
           "n": "1970",
           "w": 1.93,
+          "q": "Q494085",
           "note": "Robert Altman"
         },
         {
@@ -350,6 +390,7 @@
           "t": "The Go-Between",
           "n": "1971",
           "w": 1.97,
+          "q": "Q664020",
           "note": "Joseph Losey"
         },
         {
@@ -357,6 +398,7 @@
           "t": "The Mattei Affair",
           "n": "1972",
           "w": 1.83,
+          "q": "Q2755251",
           "note": "Francesco Rosi · joint winner · unanimous"
         },
         {
@@ -364,6 +406,7 @@
           "t": "The Working Class Goes to Heaven",
           "n": "1972",
           "w": 2.0,
+          "q": "Q1197936",
           "note": "Elio Petri · joint winner · unanimous"
         },
         {
@@ -371,6 +414,7 @@
           "t": "The Hireling",
           "n": "1973",
           "w": 1.58,
+          "q": "Q1118527",
           "note": "Alan Bridges · joint winner"
         },
         {
@@ -378,6 +422,7 @@
           "t": "Scarecrow",
           "n": "1973",
           "w": 1.87,
+          "q": "Q1344329",
           "note": "Jerry Schatzberg · joint winner"
         },
         {
@@ -385,6 +430,7 @@
           "t": "The Conversation",
           "n": "1974",
           "w": 1.82,
+          "q": "Q1009788",
           "note": "Francis Ford Coppola"
         },
         {
@@ -392,6 +438,7 @@
           "t": "Chronicle of the Years of Fire",
           "n": "1975",
           "w": 2.95,
+          "q": "Q2713929",
           "note": "Mohammed Lakhdar-Hamina"
         },
         {
@@ -399,6 +446,7 @@
           "t": "Taxi Driver",
           "n": "1976",
           "w": 1.9,
+          "q": "Q47221",
           "note": "Martin Scorsese"
         },
         {
@@ -406,6 +454,7 @@
           "t": "Padre Padrone",
           "n": "1977",
           "w": 1.88,
+          "q": "Q527598",
           "note": "Paolo and Vittorio Taviani"
         },
         {
@@ -413,6 +462,7 @@
           "t": "The Tree of Wooden Clogs",
           "n": "1978",
           "w": 3.1,
+          "q": "Q1194413",
           "note": "Ermanno Olmi · unanimous"
         },
         {
@@ -420,6 +470,7 @@
           "t": "Apocalypse Now",
           "n": "1979",
           "w": 2.45,
+          "q": "Q182692",
           "note": "Francis Ford Coppola · joint winner"
         },
         {
@@ -427,6 +478,7 @@
           "t": "The Tin Drum",
           "n": "1979",
           "w": 2.37,
+          "q": "Q313764",
           "note": "Volker Schlöndorff · joint winner"
         }
       ]
@@ -441,6 +493,7 @@
           "t": "All That Jazz",
           "n": "1980",
           "w": 2.05,
+          "q": "Q1353441",
           "note": "Bob Fosse · joint winner"
         },
         {
@@ -448,6 +501,7 @@
           "t": "Kagemusha",
           "n": "1980",
           "w": 2.98,
+          "q": "Q854990",
           "note": "Akira Kurosawa · joint winner"
         },
         {
@@ -455,6 +509,7 @@
           "t": "Man of Iron",
           "n": "1981",
           "w": 2.45,
+          "q": "Q959682",
           "note": "Andrzej Wajda"
         },
         {
@@ -462,6 +517,7 @@
           "t": "Missing",
           "n": "1982",
           "w": 2.03,
+          "q": "Q400985",
           "note": "Costa-Gavras · joint winner · unanimous"
         },
         {
@@ -469,6 +525,7 @@
           "t": "Yol",
           "n": "1982",
           "w": 1.9,
+          "q": "Q683020",
           "note": "Yılmaz Güney and Şerif Gören · joint winner · unanimous"
         },
         {
@@ -476,6 +533,7 @@
           "t": "The Ballad of Narayama",
           "n": "1983",
           "w": 2.17,
+          "q": "Q1140513",
           "note": "Shōhei Imamura"
         },
         {
@@ -483,6 +541,7 @@
           "t": "Paris, Texas",
           "n": "1984",
           "w": 2.45,
+          "q": "Q160946",
           "note": "Wim Wenders · unanimous"
         },
         {
@@ -490,6 +549,7 @@
           "t": "When Father Was Away on Business",
           "n": "1985",
           "w": 2.27,
+          "q": "Q433000",
           "note": "Emir Kusturica · unanimous"
         },
         {
@@ -497,6 +557,7 @@
           "t": "The Mission",
           "n": "1986",
           "w": 2.1,
+          "q": "Q302490",
           "note": "Roland Joffé"
         },
         {
@@ -504,6 +565,7 @@
           "t": "Under the Sun of Satan",
           "n": "1987",
           "w": 1.55,
+          "q": "Q389971",
           "note": "Maurice Pialat · unanimous"
         },
         {
@@ -511,6 +573,7 @@
           "t": "Pelle the Conqueror",
           "n": "1988",
           "w": 2.62,
+          "q": "Q370707",
           "note": "Bille August"
         },
         {
@@ -518,6 +581,7 @@
           "t": "Sex, Lies, and Videotape",
           "n": "1989",
           "w": 1.68,
+          "q": "Q1367548",
           "note": "Steven Soderbergh"
         }
       ]
@@ -532,6 +596,7 @@
           "t": "Wild at Heart",
           "n": "1990",
           "w": 2.0,
+          "q": "Q751382",
           "note": "David Lynch"
         },
         {
@@ -539,6 +604,7 @@
           "t": "Barton Fink",
           "n": "1991",
           "w": 1.93,
+          "q": "Q237215",
           "note": "Joel Coen · unanimous"
         },
         {
@@ -546,6 +612,7 @@
           "t": "The Best Intentions",
           "n": "1992",
           "w": 3.0,
+          "q": "Q1217937",
           "note": "Bille August"
         },
         {
@@ -553,6 +620,7 @@
           "t": "Farewell My Concubine",
           "n": "1993",
           "w": 2.85,
+          "q": "Q696413",
           "note": "Chen Kaige · joint winner"
         },
         {
@@ -560,6 +628,7 @@
           "t": "The Piano",
           "n": "1993",
           "w": 2.02,
+          "q": "Q117315",
           "note": "Jane Campion · joint winner"
         },
         {
@@ -567,6 +636,7 @@
           "t": "Pulp Fiction",
           "n": "1994",
           "w": 2.57,
+          "q": "Q104123",
           "note": "Quentin Tarantino"
         },
         {
@@ -574,6 +644,7 @@
           "t": "Underground",
           "n": "1995",
           "w": 2.72,
+          "q": "Q156516",
           "note": "Emir Kusturica"
         },
         {
@@ -581,6 +652,7 @@
           "t": "Secrets & Lies",
           "n": "1996",
           "w": 2.37,
+          "q": "Q391172",
           "note": "Mike Leigh"
         },
         {
@@ -588,6 +660,7 @@
           "t": "The Eel",
           "n": "1997",
           "w": 1.83,
+          "q": "Q1156892",
           "note": "Shōhei Imamura · joint winner"
         },
         {
@@ -595,6 +668,7 @@
           "t": "Taste of Cherry",
           "n": "1997",
           "w": 1.58,
+          "q": "Q794178",
           "note": "Abbas Kiarostami · joint winner"
         },
         {
@@ -602,6 +676,7 @@
           "t": "Eternity and a Day",
           "n": "1998",
           "w": 2.28,
+          "q": "Q697770",
           "note": "Theo Angelopoulos · unanimous"
         },
         {
@@ -609,6 +684,7 @@
           "t": "Rosetta",
           "n": "1999",
           "w": 1.5,
+          "q": "Q1907380",
           "note": "Jean-Pierre and Luc Dardenne · unanimous"
         }
       ]
@@ -623,6 +699,7 @@
           "t": "Dancer in the Dark",
           "n": "2000",
           "w": 2.33,
+          "q": "Q110365",
           "note": "Lars von Trier"
         },
         {
@@ -630,6 +707,7 @@
           "t": "The Son's Room",
           "n": "2001",
           "w": 1.65,
+          "q": "Q530812",
           "note": "Nanni Moretti"
         },
         {
@@ -637,6 +715,7 @@
           "t": "The Pianist",
           "n": "2002",
           "w": 2.48,
+          "q": "Q150804",
           "note": "Roman Polanski"
         },
         {
@@ -644,6 +723,7 @@
           "t": "Elephant",
           "n": "2003",
           "w": 1.35,
+          "q": "Q1163943",
           "note": "Gus Van Sant"
         },
         {
@@ -651,6 +731,7 @@
           "t": "Fahrenheit 9/11",
           "n": "2004",
           "w": 2.03,
+          "q": "Q221852",
           "note": "Michael Moore"
         },
         {
@@ -658,6 +739,7 @@
           "t": "L'Enfant",
           "n": "2005",
           "w": 1.58,
+          "q": "Q466024",
           "note": "Jean-Pierre and Luc Dardenne"
         },
         {
@@ -665,6 +747,7 @@
           "t": "The Wind That Shakes the Barley",
           "n": "2006",
           "w": 2.12,
+          "q": "Q827106",
           "note": "Ken Loach · unanimous"
         },
         {
@@ -672,6 +755,7 @@
           "t": "4 Months, 3 Weeks and 2 Days",
           "n": "2007",
           "w": 1.88,
+          "q": "Q238245",
           "note": "Cristian Mungiu"
         },
         {
@@ -679,6 +763,7 @@
           "t": "The Class",
           "n": "2008",
           "w": 2.13,
+          "q": "Q1139259",
           "note": "Laurent Cantet · unanimous"
         },
         {
@@ -686,6 +771,7 @@
           "t": "The White Ribbon",
           "n": "2009",
           "w": 2.4,
+          "q": "Q158023",
           "note": "Michael Haneke"
         }
       ]
@@ -700,6 +786,7 @@
           "t": "Uncle Boonmee Who Can Recall His Past Lives",
           "n": "2010",
           "w": 1.88,
+          "q": "Q553901",
           "note": "Apichatpong Weerasethakul"
         },
         {
@@ -707,6 +794,7 @@
           "t": "The Tree of Life",
           "n": "2011",
           "w": 2.3,
+          "q": "Q244257",
           "note": "Terrence Malick"
         },
         {
@@ -714,6 +802,7 @@
           "t": "Amour",
           "n": "2012",
           "w": 2.12,
+          "q": "Q637820",
           "note": "Michael Haneke"
         },
         {
@@ -721,6 +810,7 @@
           "t": "Blue Is the Warmest Colour",
           "n": "2013",
           "w": 2.98,
+          "q": "Q11648811",
           "note": "Léa Seydoux, Adèle Exarchopoulos · unanimous"
         },
         {
@@ -728,6 +818,7 @@
           "t": "Winter Sleep",
           "n": "2014",
           "w": 3.27,
+          "q": "Q15921329",
           "note": "Nuri Bilge Ceylan"
         },
         {
@@ -735,6 +826,7 @@
           "t": "Dheepan",
           "n": "2015",
           "w": 1.82,
+          "q": "Q19816574",
           "note": "Jacques Audiard"
         },
         {
@@ -742,6 +834,7 @@
           "t": "I, Daniel Blake",
           "n": "2016",
           "w": 1.67,
+          "q": "Q23823458",
           "note": "Ken Loach"
         },
         {
@@ -749,6 +842,7 @@
           "t": "The Square",
           "n": "2017",
           "w": 2.53,
+          "q": "Q27237522",
           "note": "Ruben Östlund"
         },
         {
@@ -756,6 +850,7 @@
           "t": "Shoplifters",
           "n": "2018",
           "w": 2.02,
+          "q": "Q48765577",
           "note": "Hirokazu Kore-eda"
         },
         {
@@ -763,6 +858,7 @@
           "t": "Parasite",
           "n": "2019",
           "w": 2.2,
+          "q": "Q61448040",
           "note": "Bong Joon Ho · unanimous"
         }
       ]
@@ -777,6 +873,7 @@
           "t": "Titane",
           "n": "2021",
           "w": 1.8,
+          "q": "Q105393862",
           "note": "Julia Ducournau"
         },
         {
@@ -784,6 +881,7 @@
           "t": "Triangle of Sadness",
           "n": "2022",
           "w": 2.48,
+          "q": "Q97304180",
           "note": "Ruben Östlund"
         },
         {
@@ -791,6 +889,7 @@
           "t": "Anatomy of a Fall",
           "n": "2023",
           "w": 2.5,
+          "q": "Q117037697",
           "note": "Justine Triet"
         },
         {
@@ -798,6 +897,7 @@
           "t": "Anora",
           "n": "2024",
           "w": 2.32,
+          "q": "Q123185887",
           "note": "Sean Baker"
         },
         {
@@ -805,6 +905,7 @@
           "t": "It Was Just an Accident",
           "n": "2025",
           "w": 1.75,
+          "q": "Q133866932",
           "note": "Jafar Panahi"
         },
         {
@@ -812,6 +913,7 @@
           "t": "Fjord",
           "n": "2026",
           "w": 2.43,
+          "q": "Q137652478",
           "note": "Cristian Mungiu"
         }
       ],

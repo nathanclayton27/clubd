@@ -16327,12 +16327,12 @@
    "spine": 309,
    "t": "Diva",
    "bucket": "laserdisc",
-   "year": 1961,
+   "year": 1981,
    "director": "Jean-Jacques Beineix",
-   "q": null,
-   "status": "year-mismatch",
+   "q": "Q735383",
+   "status": "ok-after-year-fix",
    "asked": "Diva (1981 film)",
-   "detail": "Diva (1981 film) says [1981], criterion says 1961"
+   "detail": "refused as year-mismatch while the row said 1961 (CLU-348). Re-gated after the correction to 1981: the article this row's own source links, Diva (1981 film), is Q735383, whose P31 is film, P577 is 1981 and P57 is Jean-Jacques Beineix -- the director criterion.com gives. Same standard as every other row here: candidate from the source's own link, then year and director."
   },
   "crit-ld-31-a-night-at-the-opera": {
    "spine": 31,

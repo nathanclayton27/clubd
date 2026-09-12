@@ -45,70 +45,80 @@
           "t": "Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles",
           "n": "#1",
           "w": 3.35,
-          "note": "Chantal Akerman, 1975"
+          "note": "Chantal Akerman, 1975",
+          "q": "Q1686012"
         },
         {
           "id": "ss-1958-vertigo",
           "t": "Vertigo",
           "n": "#2",
           "w": 2.13,
-          "note": "Alfred Hitchcock, 1958"
+          "note": "Alfred Hitchcock, 1958",
+          "q": "Q202548"
         },
         {
           "id": "ss-1941-citizen-kane",
           "t": "Citizen Kane",
           "n": "#3",
           "w": 1.98,
-          "note": "Orson Welles, 1941"
+          "note": "Orson Welles, 1941",
+          "q": "Q24815"
         },
         {
           "id": "ss-1953-tokyo-story",
           "t": "Tokyo Story",
           "n": "#4",
           "w": 2.27,
-          "note": "Yasujirō Ozu, 1953"
+          "note": "Yasujirō Ozu, 1953",
+          "q": "Q26060"
         },
         {
           "id": "ss-2000-in-the-mood-for-love",
           "t": "In the Mood for Love",
           "n": "#5",
           "w": 1.63,
-          "note": "Wong Kar Wai, 2000"
+          "note": "Wong Kar Wai, 2000",
+          "q": "Q1056853"
         },
         {
           "id": "ss-1968-2001-a-space-odyssey",
           "t": "2001: A Space Odyssey",
           "n": "#6",
           "w": 2.38,
-          "note": "Stanley Kubrick, 1968"
+          "note": "Stanley Kubrick, 1968",
+          "q": "Q103474"
         },
         {
           "id": "ss-1999-beau-travail",
           "t": "Beau travail",
           "n": "#7",
           "w": 1.53,
-          "note": "Claire Denis, 1999"
+          "note": "Claire Denis, 1999",
+          "q": "Q1193562"
         },
         {
           "id": "ss-2001-mulholland-dr",
           "t": "Mulholland Dr.",
           "n": "#8",
           "w": 2.45,
-          "note": "David Lynch, 2001"
+          "note": "David Lynch, 2001",
+          "q": "Q272608"
         },
         {
           "id": "ss-1929-man-with-a-movie-camera",
           "t": "Man with a Movie Camera",
           "n": "#9",
           "w": 1.13,
-          "note": "Dziga Vertov, 1929"
+          "note": "Dziga Vertov, 1929",
+          "q": "Q829250"
         },
         {
           "id": "ss-1952-singin-in-the-rain",
           "t": "Singin' in the Rain",
           "n": "#10",
           "w": 1.72,
-          "note": "Gene Kelly, Stanley Donen, 1952"
+          "note": "Gene Kelly, Stanley Donen, 1952",
+          "q": "Q309153"
         }
       ],
       "intro": "Jeanne Dielman unseated Vertigo in 2022 — the first film by a woman to top the poll in its seventy years.",
@@ -121,115 +131,131 @@
       "items": [
         {
           "id": "ss-1927-sunrise-a-song-of-two-humans",
-          "t": "Sunrise  A Song of Two Humans",
+          "t": "Sunrise: A Song of Two Humans",
           "n": "#11",
           "w": 1.52,
-          "note": "F.W. Murnau, 1927"
+          "note": "F.W. Murnau, 1927",
+          "q": "Q431093"
         },
         {
           "id": "ss-1972-the-godfather",
           "t": "The Godfather",
           "n": "#12",
           "w": 2.92,
-          "note": "Francis Ford Coppola, 1972"
+          "note": "Francis Ford Coppola, 1972",
+          "q": "Q47703"
         },
         {
           "id": "ss-1939-la-regle-du-jeu",
           "t": "La Règle du jeu",
           "n": "#13",
           "w": 1.83,
-          "note": "Jean Renoir, 1939"
+          "note": "Jean Renoir, 1939",
+          "q": "Q748599"
         },
         {
           "id": "ss-1962-cleo-from-5-to-7",
           "t": "Cléo from 5 to 7",
           "n": "#14",
           "w": 1.5,
-          "note": "Agnès Varda, 1962"
+          "note": "Agnès Varda, 1962",
+          "q": "Q1199628"
         },
         {
           "id": "ss-1956-the-searchers",
           "t": "The Searchers",
           "n": "#15",
           "w": 1.98,
-          "note": "John Ford, 1956"
+          "note": "John Ford, 1956",
+          "q": "Q276769"
         },
         {
           "id": "ss-1943-meshes-of-the-afternoon",
           "t": "Meshes of the Afternoon",
           "n": "#16",
           "w": 0.23,
-          "note": "Maya Deren, Alexander Hackenschmied, 1943"
+          "note": "Maya Deren, Alexander Hackenschmied, 1943",
+          "q": "Q1922418"
         },
         {
           "id": "ss-1990-close-up",
           "t": "Close-up",
           "n": "#17",
           "w": 1.63,
-          "note": "Abbas Kiarostami, 1990"
+          "note": "Abbas Kiarostami, 1990",
+          "q": "Q498277"
         },
         {
           "id": "ss-1966-persona",
           "t": "Persona",
           "n": "#18",
           "w": 1.4,
-          "note": "Ingmar Bergman, 1966"
+          "note": "Ingmar Bergman, 1966",
+          "q": "Q695255"
         },
         {
           "id": "ss-1979-apocalypse-now",
           "t": "Apocalypse Now",
           "n": "#19",
           "w": 2.45,
-          "note": "Francis Ford Coppola, 1979"
+          "note": "Francis Ford Coppola, 1979",
+          "q": "Q182692"
         },
         {
           "id": "ss-1954-seven-samurai",
           "t": "Seven Samurai",
           "n": "#20",
           "w": 3.45,
-          "note": "Akira Kurosawa, 1954"
+          "note": "Akira Kurosawa, 1954",
+          "q": "Q189540"
         },
         {
           "id": "ss-1949-late-spring",
           "t": "Late Spring",
           "n": "=21",
           "w": 1.8,
-          "note": "Yasujirō Ozu, 1949"
+          "note": "Yasujirō Ozu, 1949",
+          "q": "Q743203"
         },
         {
           "id": "ss-1928-the-passion-of-joan-of-arc",
           "t": "The Passion of Joan of Arc",
           "n": "=21",
           "w": 1.37,
-          "note": "Carl Th. Dreyer, 1928"
+          "note": "Carl Th. Dreyer, 1928",
+          "q": "Q51520"
         },
         {
           "id": "ss-1967-playtime",
           "t": "Playtime",
           "n": "#23",
           "w": 2.1,
-          "note": "Jacques Tati, 1967"
+          "note": "Jacques Tati, 1967",
+          "q": "Q1454574"
         },
         {
           "id": "ss-1989-do-the-right-thing",
           "t": "Do the Right Thing",
           "n": "#24",
           "w": 2.0,
-          "note": "Spike Lee, 1989"
+          "note": "Spike Lee, 1989",
+          "q": "Q1141252"
         },
         {
           "id": "ss-1966-au-hasard-balthazar",
           "t": "Au hasard Balthazar",
           "n": "=25",
           "w": 1.58,
-          "note": "Robert Bresson, 1966"
+          "note": "Robert Bresson, 1966",
+          "q": "Q228937"
         },
         {
           "id": "ss-1955-the-night-of-the-hunter",
           "t": "The Night of the Hunter",
           "n": "=25",
           "w": 1.48,
-          "note": "Charles Laughton, 1955"
+          "note": "Charles Laughton, 1955",
+          "q": "Q1132629"
         }
       ]
     },
@@ -243,175 +269,200 @@
           "t": "Shoah",
           "n": "#27",
           "w": 9.43,
-          "note": "Claude Lanzmann, 1985"
+          "note": "Claude Lanzmann, 1985",
+          "q": "Q1720765"
         },
         {
           "id": "ss-1966-daisies",
           "t": "Daisies",
           "n": "#28",
           "w": 1.27,
-          "note": "Věra Chytilová, 1966"
+          "note": "Věra Chytilová, 1966",
+          "q": "Q910705"
         },
         {
           "id": "ss-1976-taxi-driver",
           "t": "Taxi Driver",
           "n": "#29",
           "w": 1.9,
-          "note": "Martin Scorsese, 1976"
+          "note": "Martin Scorsese, 1976",
+          "q": "Q47221"
         },
         {
           "id": "ss-2019-portrait-of-a-lady-on-fire",
           "t": "Portrait of a Lady on Fire",
           "n": "#30",
           "w": 2.02,
-          "note": "Céline Sciamma, 2019"
+          "note": "Céline Sciamma, 2019",
+          "q": "Q63246568"
         },
         {
           "id": "ss-1963-81-2",
           "t": "8½",
           "n": "=31",
           "w": 2.3,
-          "note": "Federico Fellini, 1963"
+          "note": "Federico Fellini, 1963",
+          "q": "Q12018"
         },
         {
           "id": "ss-1975-mirror",
           "t": "Mirror",
           "n": "=31",
           "w": 1.8,
-          "note": "Andrei Tarkovsky, 1975"
+          "note": "Andrei Tarkovsky, 1975",
+          "q": "Q838149"
         },
         {
           "id": "ss-1960-psycho",
           "t": "Psycho",
           "n": "=31",
           "w": 1.82,
-          "note": "Alfred Hitchcock, 1960"
+          "note": "Alfred Hitchcock, 1960",
+          "q": "Q163038"
         },
         {
           "id": "ss-1934-l-atalante",
           "t": "L'Atalante",
           "n": "#34",
           "w": 1.48,
-          "note": "Jean Vigo, 1934"
+          "note": "Jean Vigo, 1934",
+          "q": "Q780016"
         },
         {
           "id": "ss-1955-pather-panchali",
           "t": "Pather Panchali",
           "n": "#35",
           "w": 2.0,
-          "note": "Satyajit Ray, 1955"
+          "note": "Satyajit Ray, 1955",
+          "q": "Q622380"
         },
         {
           "id": "ss-1931-city-lights",
           "t": "City Lights",
           "n": "=36",
           "w": 1.45,
-          "note": "Charles Chaplin, 1931"
+          "note": "Charles Chaplin, 1931",
+          "q": "Q238211"
         },
         {
           "id": "ss-1931-m",
           "t": "M",
           "n": "=36",
           "w": 1.95,
-          "note": "Fritz Lang, 1931"
+          "note": "Fritz Lang, 1931",
+          "q": "Q127021"
         },
         {
           "id": "ss-1954-rear-window",
           "t": "Rear Window",
           "n": "=38",
           "w": 1.87,
-          "note": "Alfred Hitchcock, 1954"
+          "note": "Alfred Hitchcock, 1954",
+          "q": "Q34414"
         },
         {
           "id": "ss-1959-some-like-it-hot",
           "t": "Some Like It Hot",
           "n": "=38",
           "w": 2.0,
-          "note": "Billy Wilder, 1959"
+          "note": "Billy Wilder, 1959",
+          "q": "Q190086"
         },
         {
           "id": "ss-1960-a-bout-de-souffle",
           "t": "À bout de souffle",
           "n": "=38",
           "w": 1.45,
-          "note": "Jean-Luc Godard, 1960"
+          "note": "Jean-Luc Godard, 1960",
+          "q": "Q86427"
         },
         {
           "id": "ss-1948-bicycle-thieves",
           "t": "Bicycle Thieves",
           "n": "=41",
           "w": 1.5,
-          "note": "Vittorio De Sica, 1948"
+          "note": "Vittorio De Sica, 1948",
+          "q": "Q172837"
         },
         {
           "id": "ss-1950-rashomon",
           "t": "Rashomon",
           "n": "=41",
           "w": 1.47,
-          "note": "Akira Kurosawa, 1950"
+          "note": "Akira Kurosawa, 1950",
+          "q": "Q135465"
         },
         {
           "id": "ss-1977-killer-of-sheep",
           "t": "Killer of Sheep",
           "n": "=43",
           "w": 1.38,
-          "note": "Charles Burnett, 1977"
+          "note": "Charles Burnett, 1977",
+          "q": "Q1752684"
         },
         {
           "id": "ss-1979-stalker",
           "t": "Stalker",
           "n": "=43",
           "w": 2.72,
-          "note": "Andrei Tarkovsky, 1979"
+          "note": "Andrei Tarkovsky, 1979",
+          "q": "Q200437"
         },
         {
           "id": "ss-1975-barry-lyndon",
           "t": "Barry Lyndon",
           "n": "=45",
           "w": 3.07,
-          "note": "Stanley Kubrick, 1975"
+          "note": "Stanley Kubrick, 1975",
+          "q": "Q471716"
         },
         {
           "id": "ss-1959-north-by-northwest",
           "t": "North by Northwest",
           "n": "=45",
           "w": 2.27,
-          "note": "Alfred Hitchcock, 1959"
+          "note": "Alfred Hitchcock, 1959",
+          "q": "Q223139"
         },
         {
           "id": "ss-1966-the-battle-of-algiers",
           "t": "The Battle of Algiers",
           "n": "=45",
           "w": 1.95,
-          "note": "Gillo Pontecorvo, 1966"
+          "note": "Gillo Pontecorvo, 1966",
+          "q": "Q784812"
         },
         {
           "id": "ss-1955-ordet",
           "t": "Ordet",
           "n": "=48",
           "w": 2.1,
-          "note": "Carl Th. Dreyer, 1955"
+          "note": "Carl Th. Dreyer, 1955",
+          "q": "Q2352630"
         },
         {
           "id": "ss-1970-wanda",
           "t": "Wanda",
           "n": "=48",
           "w": 1.7,
-          "note": "Barbara Loden, 1970"
+          "note": "Barbara Loden, 1970",
+          "q": "Q381528"
         },
         {
           "id": "ss-1959-the-400-blows",
           "t": "The 400 Blows",
           "n": "=50",
           "w": 1.65,
-          "note": "François Truffaut, 1959"
+          "note": "François Truffaut, 1959",
+          "q": "Q162331"
         },
         {
           "id": "ss-1993-the-piano",
           "t": "The Piano",
           "n": "=50",
           "w": 2.02,
-          "note": "Jane Campion, 1993"
+          "note": "Jane Campion, 1993",
+          "q": "Q117315"
         }
       ]
     },
@@ -425,203 +476,232 @@
           "t": "Fear Eats the Soul",
           "n": "=52",
           "w": 1.55,
-          "note": "Rainer Werner Fassbinder, 1974"
+          "note": "Rainer Werner Fassbinder, 1974",
+          "q": "Q543810"
         },
         {
           "id": "ss-1976-news-from-home",
           "t": "News from Home",
           "n": "=52",
           "w": 1.48,
-          "note": "Chantal Akerman, 1976"
+          "note": "Chantal Akerman, 1976",
+          "q": "Q7019502"
         },
         {
           "id": "ss-1925-battleship-potemkin",
           "t": "Battleship Potemkin",
           "n": "=54",
           "w": 1.23,
-          "note": "Sergei M. Eisenstein, 1925"
+          "note": "Sergei M. Eisenstein, 1925",
+          "q": "Q152350"
         },
         {
           "id": "ss-1982-blade-runner",
           "t": "Blade Runner",
           "n": "=54",
           "w": 1.87,
-          "note": "Ridley Scott, 1982"
+          "note": "Ridley Scott, 1982",
+          "q": "Q184843"
         },
         {
           "id": "ss-1963-le-mepris",
           "t": "Le Mépris",
           "n": "=54",
           "w": 1.7,
-          "note": "Jean-Luc Godard, 1963"
+          "note": "Jean-Luc Godard, 1963",
+          "q": "Q598109"
         },
         {
           "id": "ss-1924-sherlock-jr",
           "t": "Sherlock Jr.",
           "n": "=54",
           "w": 0.73,
-          "note": "Buster Keaton, 1924"
+          "note": "Buster Keaton, 1924",
+          "q": "Q1569918"
         },
         {
           "id": "ss-1960-the-apartment",
           "t": "The Apartment",
           "n": "=54",
           "w": 2.08,
-          "note": "Billy Wilder, 1960"
+          "note": "Billy Wilder, 1960",
+          "q": "Q270510"
         },
         {
           "id": "ss-1983-sans-soleil",
           "t": "Sans soleil",
           "n": "#59",
           "w": 1.67,
-          "note": "Chris Marker, 1983"
+          "note": "Chris Marker, 1983",
+          "q": "Q290796"
         },
         {
           "id": "ss-1991-daughters-of-the-dust",
           "t": "Daughters of the Dust",
           "n": "=60",
           "w": 1.87,
-          "note": "Julie Dash, 1991"
+          "note": "Julie Dash, 1991",
+          "q": "Q3285003"
         },
         {
           "id": "ss-1960-la-dolce-vita",
           "t": "La dolce vita",
           "n": "=60",
           "w": 2.9,
-          "note": "Federico Fellini, 1960"
+          "note": "Federico Fellini, 1960",
+          "q": "Q18407"
         },
         {
           "id": "ss-2016-moonlight",
           "t": "Moonlight",
           "n": "=60",
           "w": 1.85,
-          "note": "Barry Jenkins, 2016"
+          "note": "Barry Jenkins, 2016",
+          "q": "Q21527875"
         },
         {
           "id": "ss-1942-casablanca",
           "t": "Casablanca",
           "n": "=63",
           "w": 1.7,
-          "note": "Michael Curtiz, 1942"
+          "note": "Michael Curtiz, 1942",
+          "q": "Q132689"
         },
         {
           "id": "ss-1990-goodfellas",
           "t": "GoodFellas",
           "n": "=63",
           "w": 2.43,
-          "note": "Martin Scorsese, 1990"
+          "note": "Martin Scorsese, 1990",
+          "q": "Q42047"
         },
         {
           "id": "ss-1949-the-third-man",
           "t": "The Third Man",
           "n": "=63",
           "w": 1.73,
-          "note": "Carol Reed, 1949"
+          "note": "Carol Reed, 1949",
+          "q": "Q271830"
         },
         {
           "id": "ss-1973-touki-bouki",
           "t": "Touki Bouki",
           "n": "#66",
           "w": 1.42,
-          "note": "Djibril Diop Mambéty, 1973"
+          "note": "Djibril Diop Mambéty, 1973",
+          "q": "Q3310901"
         },
         {
           "id": "ss-1966-andrei-rublev",
           "t": "Andrei Rublev",
           "n": "=67",
           "w": 3.08,
-          "note": "Andrei Tarkovsky, 1966"
+          "note": "Andrei Tarkovsky, 1966",
+          "q": "Q503046"
         },
         {
           "id": "ss-1962-la-jetee",
           "t": "La Jetée",
           "n": "=67",
           "w": 0.47,
-          "note": "Chris Marker, 1962"
+          "note": "Chris Marker, 1962",
+          "q": "Q451434"
         },
         {
           "id": "ss-1927-metropolis",
           "t": "Metropolis",
           "n": "=67",
           "w": 2.55,
-          "note": "Fritz Lang, 1927"
+          "note": "Fritz Lang, 1927",
+          "q": "Q151599"
         },
         {
           "id": "ss-2000-the-gleaners-and-i",
           "t": "The Gleaners and I",
           "n": "=67",
           "w": 1.37,
-          "note": "Agnès Varda, 2000"
+          "note": "Agnès Varda, 2000",
+          "q": "Q2493884"
         },
         {
           "id": "ss-1948-the-red-shoes",
           "t": "The Red Shoes",
           "n": "=67",
           "w": 2.22,
-          "note": "Michael Powell, Emeric Pressburger, 1948"
+          "note": "Michael Powell, Emeric Pressburger, 1948",
+          "q": "Q625780"
         },
         {
           "id": "ss-1954-journey-to-italy",
           "t": "Journey to Italy",
           "n": "=72",
           "w": 1.35,
-          "note": "Roberto Rossellini, 1954"
+          "note": "Roberto Rossellini, 1954",
+          "q": "Q385866"
         },
         {
           "id": "ss-1960-l-avventura",
           "t": "L'avventura",
           "n": "=72",
           "w": 2.42,
-          "note": "Michelangelo Antonioni, 1960"
+          "note": "Michelangelo Antonioni, 1960",
+          "q": "Q514531"
         },
         {
           "id": "ss-1988-my-neighbour-totoro",
           "t": "My Neighbour Totoro",
           "n": "=72",
           "w": 1.43,
-          "note": "Hayao Miyazaki, 1988"
+          "note": "Hayao Miyazaki, 1988",
+          "q": "Q39571"
         },
         {
           "id": "ss-1959-imitation-of-life",
           "t": "Imitation of Life",
           "n": "=75",
           "w": 2.07,
-          "note": "Douglas Sirk, 1959"
+          "note": "Douglas Sirk, 1959",
+          "q": "Q373774"
         },
         {
           "id": "ss-1954-sansho-the-bailiff",
           "t": "Sansho the Bailiff",
           "n": "=75",
           "w": 2.0,
-          "note": "Kenji Mizoguchi, 1954"
+          "note": "Kenji Mizoguchi, 1954",
+          "q": "Q2633405"
         },
         {
           "id": "ss-2001-spirited-away",
           "t": "Spirited Away",
           "n": "=75",
           "w": 2.08,
-          "note": "Hayao Miyazaki, 2001"
+          "note": "Hayao Miyazaki, 2001",
+          "q": "Q155653"
         },
         {
           "id": "ss-1991-a-brighter-summer-day",
           "t": "A Brighter Summer Day",
           "n": "=78",
           "w": 3.95,
-          "note": "Edward Yang, 1991"
+          "note": "Edward Yang, 1991",
+          "q": "Q710745"
         },
         {
           "id": "ss-1946-a-matter-of-life-and-death",
           "t": "A Matter of Life and Death",
           "n": "=78",
           "w": 1.8,
-          "note": "Michael Powell, Emeric Pressburger, 1946"
+          "note": "Michael Powell, Emeric Pressburger, 1946",
+          "q": "Q1546792"
         },
         {
           "id": "ss-1974-celine-and-julie-go-boating",
           "t": "Céline and Julie Go Boating",
           "n": "=78",
           "w": 3.22,
-          "note": "Jacques Rivette, 1974"
+          "note": "Jacques Rivette, 1974",
+          "q": "Q734672"
         },
         {
           "id": "ss-1987-histoire-s-du-cinema",
@@ -635,133 +715,152 @@
           "t": "Modern Times",
           "n": "=78",
           "w": 1.65,
-          "note": "Charles Chaplin, 1936"
+          "note": "Charles Chaplin, 1936",
+          "q": "Q45602"
         },
         {
           "id": "ss-1950-sunset-blvd",
           "t": "Sunset Blvd.",
           "n": "=78",
           "w": 1.83,
-          "note": "Billy Wilder, 1950"
+          "note": "Billy Wilder, 1950",
+          "q": "Q193570"
         },
         {
           "id": "ss-1994-satantango",
           "t": "Sátántangó",
           "n": "=78",
           "w": 7.32,
-          "note": "Béla Tarr, 1994"
+          "note": "Béla Tarr, 1994",
+          "q": "Q53481"
         },
         {
           "id": "ss-1986-blue-velvet",
           "t": "Blue Velvet",
           "n": "=85",
           "w": 2.02,
-          "note": "David Lynch, 1986"
+          "note": "David Lynch, 1986",
+          "q": "Q660950"
         },
         {
           "id": "ss-1965-pierrot-le-fou",
           "t": "Pierrot le fou",
           "n": "=85",
           "w": 1.83,
-          "note": "Jean-Luc Godard, 1965"
+          "note": "Jean-Luc Godard, 1965",
+          "q": "Q938851"
         },
         {
           "id": "ss-1973-the-spirit-of-the-beehive",
           "t": "The Spirit of the Beehive",
           "n": "=85",
           "w": 1.63,
-          "note": "Víctor Erice, 1973"
+          "note": "Víctor Erice, 1973",
+          "q": "Q2290517"
         },
         {
           "id": "ss-1994-chungking-express",
           "t": "CHUNGKING EXPRESS",
           "n": "=88",
           "w": 1.7,
-          "note": "Wong Kar Wai, 1994"
+          "note": "Wong Kar Wai, 1994",
+          "q": "Q766263"
         },
         {
           "id": "ss-1980-the-shining",
           "t": "The Shining",
           "n": "=88",
           "w": 2.4,
-          "note": "Stanley Kubrick, 1980"
+          "note": "Stanley Kubrick, 1980",
+          "q": "Q186341"
         },
         {
           "id": "ss-1953-madame-de",
           "t": "Madame de...",
           "n": "=90",
           "w": 1.75,
-          "note": "Max Ophuls, 1953"
+          "note": "Max Ophuls, 1953",
+          "q": "Q1444707"
         },
         {
           "id": "ss-2019-parasite",
           "t": "Parasite",
           "n": "=90",
           "w": 2.2,
-          "note": "Bong Joon-ho, 2019"
+          "note": "Bong Joon-ho, 2019",
+          "q": "Q61448040"
         },
         {
           "id": "ss-1963-the-leopard",
           "t": "The Leopard",
           "n": "=90",
           "w": 3.05,
-          "note": "Luchino Visconti, 1963"
+          "note": "Luchino Visconti, 1963",
+          "q": "Q596623"
         },
         {
           "id": "ss-1953-ugetsu-monogatari",
           "t": "Ugetsu Monogatari",
           "n": "=90",
           "w": 1.6,
-          "note": "Kenji Mizoguchi, 1953"
+          "note": "Kenji Mizoguchi, 1953",
+          "q": "Q1076605"
         },
         {
           "id": "ss-2000-yi-yi",
           "t": "Yi Yi",
           "n": "=90",
           "w": 2.88,
-          "note": "Edward Yang, 2000"
+          "note": "Edward Yang, 2000",
+          "q": "Q704513"
         },
         {
           "id": "ss-1956-a-man-escaped",
           "t": "A Man Escaped",
           "n": "=95",
           "w": 1.67,
-          "note": "Robert Bresson, 1956"
+          "note": "Robert Bresson, 1956",
+          "q": "Q2385009"
         },
         {
           "id": "ss-1966-black-girl",
           "t": "Black Girl",
           "n": "=95",
           "w": 1.08,
-          "note": "Ousmane Sembène, 1966"
+          "note": "Ousmane Sembène, 1966",
+          "q": "Q3211102"
         },
         {
           "id": "ss-2017-get-out",
           "t": "Get Out",
           "n": "=95",
           "w": 1.73,
-          "note": "Jordan Peele, 2017"
+          "note": "Jordan Peele, 2017",
+          "q": "Q25136235"
         },
         {
           "id": "ss-1968-once-upon-a-time-in-the-west",
           "t": "Once upon a Time in the West",
           "n": "=95",
           "w": 2.75,
-          "note": "Sergio Leone, 1968"
+          "note": "Sergio Leone, 1968",
+          "q": "Q168154"
         },
         {
           "id": "ss-1926-the-general",
           "t": "The General",
           "n": "=95",
           "w": 1.25,
-          "note": "Buster Keaton, Clyde Bruckman, 1926"
+          "note": "Buster Keaton, Clyde Bruckman, 1926",
+          "q": "Q850159"
         },
         {
           "id": "ss-2004-tropical-malady",
           "t": "Tropical Malady",
           "n": "=95",
           "w": 1.97,
-          "note": "Apichatpong Weerasethakul, 2004"
+          "note": "Apichatpong Weerasethakul, 2004",
+          "q": "Q594131"
         }
       ]
     }

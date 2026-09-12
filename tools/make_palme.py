@@ -14,15 +14,41 @@ them.
 Weighted by runtime (Wikidata P2047) — a Palme marathon is measured in hours,
 and every single winner resolved to a real runtime, so nothing weighs a guess.
 
-Data: tools/data/palme-dor.json, built by scratch/agent-canons/collect_palme.py.
+Rows carry `q`, a Wikidata work id, and on a festival list that is not a
+nicety (CLU-347). This list dates a film by the year it won at Cannes and a
+release list dates it by the year it came out, so the two disagree by a year as
+a matter of course — All That Jazz is 1980 here and 1979 on Criterion and Best
+Picture — and title+year, the only other key there is, can never bridge that.
+Every award list is structurally unable to pair without an id.
+
+The ids are the ones the source article's own wikilinks resolve to, which is the
+Best Picture rule rather than a title guess: a title search reaches the wrong
+film, a link cannot. Each was then checked against the entity itself — a label
+or alias matching the title this list prints, P577 within three years of the
+award year (the Cannes-to-release gap is routinely one and sometimes more), and
+a credited person matching the winner column, which for the 2013 row is the two
+lead actresses because that is who Cannes named alongside the director.
+
+Data: tools/data/palme-dor.json, built by scratch/agent-canons/collect_palme.py;
+work ids from tools/data/palme-dor-runtimes.json, resolved from the same
+wikilinks the runtimes came from.
 """
 import json
 import pathlib
+import re
 
 SLUG = "palme-dor"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = pathlib.Path(__file__).resolve().parent / "data" / "palme-dor.json"
+QIDS = (pathlib.Path(__file__).resolve().parent / "data"
+        / "palme-dor-runtimes.json")
 OUT = ROOT / "properties" / ("%s.json" % SLUG)
+
+# A work id the gate refused, and the row ships without one exactly as every row
+# here did before. Empty today: all 102 winners passed. It stays as the place a
+# refusal goes, because a wrong id would tick a film nobody watched on every
+# other list that carries the real work.
+NO_Q = {}
 
 DECADES = [
     ("fifties", "The '50s, from Marty on", 1955, 1959,
@@ -51,7 +77,7 @@ def slug(t):
     return keep.strip("-")
 
 
-def items_for(years):
+def items_for(years, qids):
     items = []
     for y in years:
         joint = len(y["films"]) > 1
@@ -61,10 +87,12 @@ def items_for(years):
                 bits.append("joint winner")
             if f["unanimous"]:
                 bits.append("unanimous")
+            q = (qids.get(f["target"]) or {}).get("qid")
             items.append({
                 "id": "pd-%d-%s" % (y["year"], slug(f["t"])),
                 "t": f["t"], "n": str(y["year"]),
                 "w": round((f["runtime"] or 0) / 60.0, 2),
+                **({"q": q} if q and f["target"] not in NO_Q else {}),
                 **({"note": " · ".join(bits)} if bits else {}),
             })
     return items
@@ -72,6 +100,7 @@ def items_for(years):
 
 def main():
     d = json.loads(DATA.read_text(encoding="utf-8"))
+    qids = json.loads(QIDS.read_text(encoding="utf-8"))
     years = d["years"]
     gapyears = {g["year"] for g in d["gaps"] if g["year"]}
     assert {1968, 2020} <= gapyears
@@ -88,13 +117,13 @@ def main():
                  "The 1946 jury spread it across eleven films, 1947 across "
                  "five; no festival was held in 1948 or 1950.",
         "open": True,
-        "items": items_for(early),
+        "items": items_for(early, qids),
     }]
 
     for key, title, lo, hi, intro in DECADES:
         got = [y for y in years if lo <= y["year"] <= hi]
         assert got, key
-        items = items_for(got)
+        items = items_for(got, qids)
         hours = sum(x["w"] for x in items)
         sec = {"id": key, "title": title,
                "sub": "%d winner%s · %d hours"
@@ -110,6 +139,17 @@ def main():
         "duplicate ids: %s" % sorted({i for i in ids if ids.count(i) > 1})[:6]
     total = sum(len(y["films"]) for y in years)
     assert len(ids) == total
+    # Two rows sharing a work id would tie two winners of this same list to each
+    # other in the sync map, and a film can win the Palme only once.
+    qs = [x["q"] for s in sections for x in s["items"] if x.get("q")]
+    assert len(qs) == len(set(qs)), \
+        "two rows share a work id: %s" % sorted({q for q in qs
+                                                 if qs.count(q) > 1})
+    assert all(re.fullmatch(r"Q[1-9]\d*", q) for q in qs), \
+        "malformed work id"
+    assert len(qs) == total - len(NO_Q), (len(qs), total, len(NO_Q))
+    stray = sorted(set(NO_Q) - {f["target"] for y in years for f in y["films"]})
+    assert not stray, "NO_Q names winners this list does not have: %s" % stray
     hours = sum(x["w"] for s in sections for x in s["items"])
 
     prop = {
@@ -150,7 +190,8 @@ def main():
 
     with OUT.open("w", encoding="utf-8", newline="\n") as f:
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
-    print("wrote %s.json — %d winners, %d hours" % (SLUG, total, round(hours)))
+    print("wrote %s.json — %d winners, %d hours, %d work ids"
+          % (SLUG, total, round(hours), len(qs)))
     for s in sections:
         print("   %-26s %3d  %s" % (s["title"], len(s["items"]), s["sub"][:44]))
 

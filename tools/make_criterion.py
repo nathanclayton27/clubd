@@ -53,6 +53,23 @@ SLUG = "criterion"
 
 BAND = 100  # one section per hundred spines
 
+# Wikipedia's Criterion list is the only source for the LaserDisc rows, and on
+# this one it contradicts itself: the year column says 1961 while the row's own
+# wikilink is [[Diva (1981 film)]]. Beineix's first feature is 1981 (CLU-348).
+#
+# It is a source error, not a read error. An audit of all 1,409 linked rows in
+# the article found no row whose year column our data failed to carry across,
+# and of the ten rows whose link year disagrees with their year column, nine are
+# off by exactly one year — premiere against general release, which is ordinary
+# and is why the id lane exists at all. This is the only one off by twenty, and
+# the only one that reads as a typed digit.
+#
+# Corrected here rather than in the scraped data so that re-scraping an article
+# that still says 1961 cannot quietly bring it back. Keyed by bucket, spine and
+# title, and asserted below. Row ids carry the spine and the title and never the
+# year, so nothing here moves an id.
+YEAR_FIX = {("laserdisc", 309, "Diva"): 1981}
+
 
 def slug(t):
     keep = "".join(c.lower() if c.isalnum() else "-" for c in t)
@@ -101,6 +118,13 @@ def main():
     legacy = json.loads((here / "data" / "criterion_ids.json")
                         .read_text(encoding="utf-8"))["ids"]
     spined, laser = d["spined"], d["laserdisc"]
+
+    fixes = dict(YEAR_FIX)
+    for bucket, rows in (("spined", spined), ("laserdisc", laser)):
+        for r in rows:
+            if (bucket, r["spine"], r["t"]) in fixes:
+                r["year"] = fixes.pop((bucket, r["spine"], r["t"]))
+    assert not fixes, "YEAR_FIX no longer matches the data: %s" % sorted(fixes)
 
     assert spined, "no spine-numbered releases"
     assert all(r["spine"] for r in spined), "a release with no spine number"
