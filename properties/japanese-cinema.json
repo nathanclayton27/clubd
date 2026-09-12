@@ -46,7 +46,7 @@
     ],
     [
       "Bar widths are running times, and none was invented.",
-      "All 223 rows are weighted, 437 hours in total. 184 figures are the film's own English Wikipedia infobox; 37 have no English article at all and take the running time from Kinema Junpo's own database record for the film; 2 have neither and take it from the Japanese Wikipedia article. Wikidata's runtime is carried only as a cross-check and disagrees with the infobox on 17 rows, which is why it is not the source. The range runs from Go, Go, Second Time Virgin at 65 minutes to The Human Condition at 579. Two of the poll's entries are not here at all because no source we could reach gives a running time for them, and a list with weights cannot carry a row without one."
+      "All 223 rows are weighted, 437 hours in total. 184 figures are the film's own English Wikipedia infobox; 37 have no English article at all and take the running time from Kinema Junpo's own database record for the film; 2 have neither and take it from the Japanese Wikipedia article. Wikidata's runtime is carried only as a cross-check and disagrees with the infobox on 16 rows, which is why it is not the source. The range runs from Go, Go, Second Time Virgin at 65 minutes to The Human Condition at 579. Two of the poll's entries are not here at all because no source we could reach gives a running time for them, and a list with weights cannot carry a row without one."
     ],
     [
       "Titles are English Wikipedia's, and no id came from a title this file trusted on its own.",
@@ -141,8 +141,8 @@
           "id": "jc-1943-sanshiro-sugata",
           "t": "Sanshiro Sugata",
           "n": "1943",
-          "w": 1.62,
-          "note": "Kinema Junpo all-time, no. 106 · Akira Kurosawa · 姿三四郎 · 97 min",
+          "w": 1.32,
+          "note": "Kinema Junpo all-time, no. 106 · Akira Kurosawa · 姿三四郎 · 79 min · the surviving cut — the 1943 release ran 97 minutes and its trimmed footage was never found; a 2026 restoration runs 91",
           "q": "Q1077915"
         },
         {

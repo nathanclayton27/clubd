@@ -8,10 +8,30 @@ it, in release order. Miyazaki's films are the focus: they are tier 1, they are
 what a finish date paces you through, and everything else is marked with who
 directed it instead.
 
-Titles and years come from Wikipedia's List of Studio Ghibli works. Directors,
-runtimes and release dates come from Wikidata (P57, P2047, P577) rather than
-from that table, whose director column is a thicket of rowspans and colspans
-spanning four columns at once.
+Titles and years come from Wikipedia's List of Studio Ghibli works. Directors
+and release dates come from Wikidata (P57, P577) rather than from that table,
+whose director column is a thicket of rowspans and colspans spanning four
+columns at once.
+
+Weights: each film's own infobox, not Wikidata (CLU-425, CLU-178)
+-----------------------------------------------------------------
+Every bar is the runtime printed in that film's own {{Infobox film}}, chosen by
+gwlib.runtime.weigh() — see that module for the rule and for why P2047 is the
+wrong place to read a length from. This list used to weigh from P2047, and that
+shipped **The Castle of Cagliostro at 110 minutes** while the film's own article
+prints 100 and nothing was ever released at 110. Nine of the 26 rows moved when
+the rule was applied; eight moved by one to five minutes, which is source noise,
+and Cagliostro moved by ten, which was the defect CLU-425 sent us here to find.
+
+What the box printed, labels and all, is recorded beside every row in
+tools/data/ghibli.json as `cuts` — so the question "which version is this list
+measuring" is answered by re-running this script rather than by reading 26
+articles. The generator prints the chosen label on every run.
+
+A row the rule cannot settle keeps the figure it already had and is named in
+the run output, never silently re-weighted. Ocean Waves is the one: it is a
+television film and its article carries {{Infobox animanga}} rather than
+{{Infobox film}}, so there is no box to read and its 72 minutes stay Wikidata's.
 
 Ocean Waves and Earwig and the Witch were made for television rather than
 cinemas, but they are feature-length Ghibli films and are counted here, marked
@@ -19,6 +39,10 @@ as such. The Castle of Cagliostro and Nausicaa predate the studio.
 """
 import json
 import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from gwlib import runtime as RT  # noqa: E402
 
 SLUG = "ghibli"
 
@@ -60,6 +84,22 @@ def main():
     data = pathlib.Path(__file__).resolve().parent / "data"
     films = json.loads((data / "ghibli.json").read_text(encoding="utf-8"))
     films.sort(key=lambda f: (f["released"], f["title"]))
+
+    # ---- weights: the film's own infobox, by gwlib.runtime's rule ---------
+    # A row the rule cannot settle keeps the figure it already carried — never
+    # a guess, and never quietly. `cuts` is what the box printed, labels kept,
+    # collected by scratch/agent-rows/measure_lists.py.
+    kept, moved = [], []
+    for f in films:
+        cuts = [tuple(c) for c in (f.get("cuts") or [])]
+        n, why = RT.weigh(cuts, f.get("cuts_range", False))
+        if n is None:
+            kept.append((f["title"], f["runtime"], why))
+            f["runtime_why"] = "kept Wikidata's figure: " + why
+            continue
+        if n != f["runtime"]:
+            moved.append((n - f["runtime"], f["title"], f["runtime"], n, why))
+        f["runtime"], f["runtime_why"] = n, why
 
     sections = []
     for key, title, lo, hi, intro in ERAS:
@@ -141,11 +181,17 @@ def main():
              "the Witch were produced for broadcast rather than for cinemas, "
              "and both only reached Japanese screens afterwards. They are "
              "feature-length Ghibli films all the same, and are marked."],
-            ["Bar widths are runtimes.", "Every one of the %d has a real runtime "
-             "from Wikidata — the generator refuses to build without them."
-             % len(films)],
+            ["Bar widths are runtimes, read from each film's own article.",
+             "Every bar is the runtime printed in that film's own Wikipedia "
+             "infobox, which is where a length keeps the name of the version "
+             "it belongs to. %d of the %d have one; Ocean Waves was made for "
+             "television and its article carries no film infobox, so its "
+             "figure stays Wikidata's. The generator refuses to build without "
+             "a runtime for every row."
+             % (len(films) - len(kept), len(films))],
             "Titles and years from Wikipedia's List of Studio Ghibli works; "
-            "directors, runtimes and release dates from Wikidata.",
+            "directors and release dates from Wikidata; runtimes from each "
+            "film's own Wikipedia article.",
         ],
         "sections": sections,
     }
@@ -159,6 +205,13 @@ def main():
           % (len(films), len(miy), hours, mhours))
     for s in sections:
         print("   %-26s %2d  %s" % (s["title"], len(s["items"]), s["sub"][:48]))
+    print("  runtimes: %d rows read the film's own infobox, %d kept Wikidata's"
+          % (len(films) - len(kept), len(kept)))
+    for title, cur, why in kept:
+        print("     keeps %-4s %-34s %s" % (cur, title[:34], why[:54]))
+    for d_, title, was, now, why in sorted(moved, key=lambda m: -abs(m[0])):
+        print("     %+5d %-34s %s -> %s  (%s)"
+              % (d_, title[:34], was, now, why[:44]))
 
 
 if __name__ == "__main__":

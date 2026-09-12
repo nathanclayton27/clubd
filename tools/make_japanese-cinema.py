@@ -358,6 +358,31 @@ OVERRIDES = {
     # the whole thing. The infobox prints both figures and the bar adds them.
     "Wilderness": {"minutes": 157 + 147, "note": "both parts"},
     "Solomon's Perjury": {"minutes": 121 + 146, "note": "both parts"},
+    # The one row where the figure the box leads with cannot be watched
+    # (CLU-425). Sanshiro Sugata's article prints three lengths — 97 minutes
+    # (original cut), 79 (1943 cut), 91 (2026 cut) — and the collector takes
+    # the first, which is the release Kurosawa made. That version does not
+    # survive: the article's Censorship and alternate versions section says the
+    # censors trimmed it after release, and quotes Toho's own on-screen card,
+    # "1,845 feet of footage was cut in 1944 ... we were not able to locate the
+    # cut footage". So the bar was measuring a sitting nobody can have, which is
+    # the whole argument of gwlib/runtime.py, and kurosawa's row for the same
+    # film has said so in its note all along.
+    #
+    # 79 and not 91: the 4K restoration the same article dates to 2026 recovered
+    # twelve of the missing minutes, but it has played Cannes Classics and
+    # cinemas in two countries, while 79 minutes is the cut on every disc and
+    # every stream. The bar measures the version a reader can actually sit down
+    # with, and the note names the other two so nobody has to guess which.
+    #
+    # This is a decided figure, not a read one, so `was` pins what the collector
+    # says today: if the article's box changes, this stops the build rather than
+    # overriding a figure it no longer describes.
+    "Sanshiro Sugata": {
+        "minutes": 79, "was": 97,
+        "note": "the surviving cut — the 1943 release ran 97 minutes and its "
+                "trimmed footage was never found; a 2026 restoration runs 91",
+    },
 }
 
 # The animated features the poll ranked inside its Japanese-film list, which
@@ -657,6 +682,14 @@ def main():
             w, src = (ja_rt.get(ja_page) or {}).get("min"), "jawiki"
         ov = OVERRIDES.get(f["kid"]) or OVERRIDES.get(f["t"]) or {}
         if ov.get("minutes"):
+            # An override that pins `was` is correcting a figure rather than
+            # supplying a missing one, so it has to still be correcting the
+            # same figure — otherwise it silently overrides a box that has
+            # since been rewritten.
+            assert "was" not in ov or w == ov["was"], \
+                "the override for %s expects the source to give %s, it gives " \
+                "%s — re-read the article before trusting either figure" \
+                % (f["t"], ov["was"], w)
             w, src = ov["minutes"], "infobox"
             used_overrides.add(f["t"])
             f["extra"] = ov.get("note")

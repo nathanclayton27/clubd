@@ -27,7 +27,7 @@
   "notes": [
     [
       "Miyazaki is the spine.",
-      "The 12 films he directed are tier 1 and are what a finish date paces you through — about 23 hours. The other 14 are tier 2, each marked with its director, and sit outside the timeline unless you tick the box under the bar."
+      "The 12 films he directed are tier 1 and are what a finish date paces you through — about 22 hours. The other 14 are tier 2, each marked with its director, and sit outside the timeline unless you tick the box under the bar."
     ],
     [
       "Two of them are not Ghibli films.",
@@ -38,10 +38,10 @@
       "Ocean Waves and Earwig and the Witch were produced for broadcast rather than for cinemas, and both only reached Japanese screens afterwards. They are feature-length Ghibli films all the same, and are marked."
     ],
     [
-      "Bar widths are runtimes.",
-      "Every one of the 26 has a real runtime from Wikidata — the generator refuses to build without them."
+      "Bar widths are runtimes, read from each film's own article.",
+      "Every bar is the runtime printed in that film's own Wikipedia infobox, which is where a length keeps the name of the version it belongs to. 25 of the 26 have one; Ocean Waves was made for television and its article carries no film infobox, so its figure stays Wikidata's. The generator refuses to build without a runtime for every row."
     ],
-    "Titles and years from Wikipedia's List of Studio Ghibli works; directors, runtimes and release dates from Wikidata."
+    "Titles and years from Wikipedia's List of Studio Ghibli works; directors and release dates from Wikidata; runtimes from each film's own Wikipedia article."
   ],
   "sections": [
     {
@@ -53,7 +53,7 @@
           "id": "gh-1979-the-castle-of-cagliostro",
           "t": "The Castle of Cagliostro",
           "n": "1979",
-          "w": 1.83,
+          "w": 1.67,
           "tier": 1,
           "note": "Not a Ghibli film — Miyazaki's first feature"
         },
@@ -85,7 +85,7 @@
           "id": "gh-1988-grave-of-the-fireflies",
           "t": "Grave of the Fireflies",
           "n": "1988",
-          "w": 1.55,
+          "w": 1.48,
           "tier": 2,
           "note": "Released on a double bill with My Neighbor Totoro · Directed by Isao Takahata"
         },
@@ -100,7 +100,7 @@
           "id": "gh-1989-kiki-s-delivery-service",
           "t": "Kiki's Delivery Service",
           "n": "1989",
-          "w": 1.72,
+          "w": 1.7,
           "tier": 1
         }
       ],
@@ -109,7 +109,7 @@
     {
       "id": "nineties",
       "title": "The nineties",
-      "sub": "1991–1999 · 7 films, 2 by Miyazaki · 12 hours",
+      "sub": "1991–1999 · 7 films, 2 by Miyazaki · 13 hours",
       "items": [
         {
           "id": "gh-1991-only-yesterday",
@@ -123,7 +123,7 @@
           "id": "gh-1992-porco-rosso",
           "t": "Porco Rosso",
           "n": "1992",
-          "w": 1.53,
+          "w": 1.57,
           "tier": 1
         },
         {
@@ -138,7 +138,7 @@
           "id": "gh-1994-pom-poko",
           "t": "Pom Poko",
           "n": "1994",
-          "w": 1.97,
+          "w": 1.98,
           "tier": 2,
           "note": "Directed by Isao Takahata"
         },
@@ -154,7 +154,7 @@
           "id": "gh-1997-princess-mononoke",
           "t": "Princess Mononoke",
           "n": "1997",
-          "w": 2.13,
+          "w": 2.22,
           "tier": 1
         },
         {
@@ -176,7 +176,7 @@
           "id": "gh-2001-spirited-away",
           "t": "Spirited Away",
           "n": "2001",
-          "w": 2.08,
+          "w": 2.07,
           "tier": 1
         },
         {
@@ -213,7 +213,7 @@
           "id": "gh-2010-arrietty",
           "t": "Arrietty",
           "n": "2010",
-          "w": 1.57,
+          "w": 1.58,
           "tier": 2,
           "note": "Directed by Hiromasa Yonebayashi"
         },
@@ -221,7 +221,7 @@
           "id": "gh-2011-from-up-on-poppy-hill",
           "t": "From Up on Poppy Hill",
           "n": "2011",
-          "w": 1.52,
+          "w": 1.53,
           "tier": 2,
           "note": "Directed by Gorō Miyazaki"
         },

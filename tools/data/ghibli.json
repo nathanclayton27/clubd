@@ -10,7 +10,15 @@
   ],
   "runtime": 110,
   "released": "1979-12-15",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    100,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "The Castle of Cagliostro"
  },
  {
   "title": "Nausicaä of the Valley of the Wind",
@@ -23,7 +31,15 @@
   ],
   "runtime": 117,
   "released": "1984-03-11",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    117,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Nausicaä of the Valley of the Wind (film)"
  },
  {
   "title": "Castle in the Sky",
@@ -36,7 +52,15 @@
   ],
   "runtime": 124,
   "released": "1986-08-02",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    124,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Castle in the Sky"
  },
  {
   "title": "Grave of the Fireflies",
@@ -49,7 +73,15 @@
   ],
   "runtime": 93,
   "released": "1988-04-16",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    89,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Grave of the Fireflies"
  },
  {
   "title": "My Neighbor Totoro",
@@ -62,7 +94,15 @@
   ],
   "runtime": 86,
   "released": "1988-04-16",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    86,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "My Neighbor Totoro"
  },
  {
   "title": "Kiki's Delivery Service",
@@ -75,7 +115,15 @@
   ],
   "runtime": 103,
   "released": "1989-07-29",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    102,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Kiki's Delivery Service"
  },
  {
   "title": "Only Yesterday",
@@ -88,7 +136,15 @@
   ],
   "runtime": 118,
   "released": "1991-07-20",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    118,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Only Yesterday (1991 film)"
  },
  {
   "title": "Porco Rosso",
@@ -101,7 +157,15 @@
   ],
   "runtime": 92,
   "released": "1992-07-18",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    94,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Porco Rosso"
  },
  {
   "title": "Ocean Waves",
@@ -114,7 +178,10 @@
   ],
   "runtime": 72,
   "released": "1993-05-05",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [],
+  "cuts_range": false,
+  "infobox_page": "Ocean Waves"
  },
  {
   "title": "Pom Poko",
@@ -127,7 +194,15 @@
   ],
   "runtime": 118,
   "released": "1994-07-16",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    119,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Pom Poko"
  },
  {
   "title": "Whisper of the Heart",
@@ -140,7 +215,15 @@
   ],
   "runtime": 111,
   "released": "1995-02-05",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    111,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Whisper of the Heart"
  },
  {
   "title": "Princess Mononoke",
@@ -153,7 +236,15 @@
   ],
   "runtime": 128,
   "released": "1997-07-12",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    133,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Princess Mononoke"
  },
  {
   "title": "My Neighbors the Yamadas",
@@ -166,7 +257,15 @@
   ],
   "runtime": 104,
   "released": "1999-07-17",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    104,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "My Neighbors the Yamadas"
  },
  {
   "title": "Spirited Away",
@@ -179,7 +278,15 @@
   ],
   "runtime": 125,
   "released": "2001-07-20",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    124,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Spirited Away"
  },
  {
   "title": "The Cat Returns",
@@ -192,7 +299,15 @@
   ],
   "runtime": 75,
   "released": "2002-07-19",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    75,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "The Cat Returns"
  },
  {
   "title": "Howl's Moving Castle",
@@ -205,7 +320,15 @@
   ],
   "runtime": 119,
   "released": "2004-09-05",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    119,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Howl's Moving Castle (film)"
  },
  {
   "title": "Tales from Earthsea",
@@ -218,7 +341,15 @@
   ],
   "runtime": 115,
   "released": "2006-07-29",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    115,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Tales from Earthsea (film)"
  },
  {
   "title": "Ponyo",
@@ -231,7 +362,15 @@
   ],
   "runtime": 101,
   "released": "2008-07-19",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    101,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Ponyo"
  },
  {
   "title": "Arrietty",
@@ -244,7 +383,15 @@
   ],
   "runtime": 94,
   "released": "2010-07-17",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    95,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Arrietty"
  },
  {
   "title": "From Up on Poppy Hill",
@@ -257,7 +404,15 @@
   ],
   "runtime": 91,
   "released": "2011-07-16",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    92,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "From Up on Poppy Hill"
  },
  {
   "title": "The Tale of the Princess Kaguya",
@@ -270,7 +425,15 @@
   ],
   "runtime": 137,
   "released": "2013-11-23",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    137,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "The Tale of the Princess Kaguya (film)"
  },
  {
   "title": "The Wind Rises",
@@ -283,7 +446,15 @@
   ],
   "runtime": 126,
   "released": "2013-07-20",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    126,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "The Wind Rises"
  },
  {
   "title": "When Marnie Was There",
@@ -296,7 +467,15 @@
   ],
   "runtime": 103,
   "released": "2014-07-19",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    103,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "When Marnie Was There (film)"
  },
  {
   "title": "The Red Turtle",
@@ -309,7 +488,15 @@
   ],
   "runtime": 80,
   "released": "2016-05-18",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    80,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "The Red Turtle"
  },
  {
   "title": "Earwig and the Witch",
@@ -322,7 +509,15 @@
   ],
   "runtime": 82,
   "released": "2020-10-18",
-  "miyazaki": false
+  "miyazaki": false,
+  "cuts": [
+   [
+    82,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "Earwig and the Witch"
  },
  {
   "title": "The Boy and the Heron",
@@ -335,6 +530,14 @@
   ],
   "runtime": 124,
   "released": "2023-07-14",
-  "miyazaki": true
+  "miyazaki": true,
+  "cuts": [
+   [
+    124,
+    ""
+   ]
+  ],
+  "cuts_range": false,
+  "infobox_page": "The Boy and the Heron"
  }
 ]
