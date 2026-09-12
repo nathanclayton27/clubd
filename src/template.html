@@ -1526,6 +1526,21 @@ footer a{color:var(--steel)}
 /* no hover on a phone, so both sit at a permanent half-strength instead */
 @media (hover:none){#fp-groups .gros .afrow [data-gkick],
   #fp-groups .gros .afrow [data-fradd]{opacity:.55}}
+/* ⚠ The friends page's half of `.tourlit` (CLU-515), and it exists for exactly
+   the reason the list's half does: half the controls on this page are revealed
+   by :hover, and the tour has no pointer to hover with. A panel naming "add
+   friend", "Invite link" or the star while all three sit at opacity 0 is the
+   same defect Nathan reported on the catch-up button — "still isn't
+   highlighting or showing the catch up to here button".
+   ⚠ AND THE SPECIFICITY IS THE WHOLE TRICK. A bare `.tourlit .lv` is (0,2,0)
+   and loses to `#fp-groups .lv{opacity:0}` at (1,1,0) — the same trap the note
+   above the .gdang rules warns about. Every selector here carries the id, and
+   the block sits BELOW the rules it overrides so a tie goes this way. */
+#fp-groups .tourlit .lv,#fp-groups .tourlit .gdang,
+#fp-groups .tourlit .gros .afrow [data-gkick],
+#fp-groups .tourlit .gros .afrow [data-fradd]{opacity:1}
+#fp-clubcard.tourlit #fp-clubs .lv{opacity:1}
+#fp-list .tourlit .aquiet,#fp-list .tourlit .fpfav{opacity:1}
 .acap{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
   color:var(--ink-3);margin-top:9px;line-height:1.6}
 .acap b{color:var(--ink-2);font-weight:500}
