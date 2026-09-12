@@ -11,6 +11,7 @@ write the manifest the property switcher reads.
 Because the data is fetched, the page must be served over http — file:// blocks
 fetch. Use `python3 -m http.server 8000`.
 """
+import base64
 import hashlib
 import json
 import pathlib
@@ -176,6 +177,245 @@ SITE = "https://clubd.watch"
 OG_IMAGE = SITE + "/clubd-og.png"      # one image for every list until CLU-218
 
 
+# --------------------------------------------------------------------- CLU-548
+# Content-Security-Policy.
+#
+# The site is static files on GitHub Pages. There is no server and no way to
+# add a response header, so the policy is delivered in a <meta http-equiv>,
+# and four things a real header could do are simply not available:
+#
+#   * frame-ancestors is ignored in meta, and so is X-Frame-Options, so
+#     nothing here stops clubd being framed. Clickjacking has to be answered
+#     in the page (or by moving off Pages), not by this policy.
+#   * report-uri / report-to are ignored in meta, so a violation in a real
+#     browser is a console line nobody sees. scratch/qa2/csp_check.py is the
+#     substitute: it drives the page and fails on any violation.
+#   * Content-Security-Policy-Report-Only cannot be delivered by meta at all,
+#     so there is no staging step. A policy that is wrong is a broken site on
+#     the first load, which is why csp_check.py exists and why this function
+#     refuses to guess about origins it has not been told about.
+#   * sandbox is ignored in meta.
+#
+# A nonce would be worse than useless here: the page is a static file that
+# GitHub Pages serves with Access-Control-Allow-Origin: *, so a "nonce" baked
+# into it is a constant that anybody can read — which is exactly what a nonce
+# must not be. Hashes are the right primitive for a generated static page, and
+# this build is the thing that generates it, so it computes them.
+CSP_SCRIPT_CDN = "https://cdn.jsdelivr.net"       # the supabase-js UMD bundle
+CSP_FONT_CSS = "https://fonts.googleapis.com"     # the @font-face stylesheet
+CSP_FONT_FILES = "https://fonts.gstatic.com"      # the woff2 files it names
+
+# Every off-origin host the page may reach, listed by the element that reaches
+# it. A <script src> or <link rel=stylesheet> pointing anywhere else fails the
+# build rather than the page — which is the point: adding a CDN link is how a
+# CSP gets quietly widened, and here it cannot be done without editing this
+# tuple and saying so in the commit.
+CSP_SCRIPT_HOSTS = (CSP_SCRIPT_CDN,)
+CSP_STYLE_HOSTS = (CSP_FONT_CSS,)
+
+HTML_COMMENT = re.compile(r"<!--.*?-->", re.S)
+SCRIPT_EL = re.compile(r"<script\b([^>]*)>(.*?)</script>", re.S)
+STYLE_EL = re.compile(r"<style\b([^>]*)>(.*?)</style>", re.S)
+SHEET_EL = re.compile(r'<link\b[^>]*\brel="stylesheet"[^>]*>')
+ATTR_URL = re.compile(r'\b(?:href|src)="([^"]*)"')
+# An inline event-handler attribute: a tag, then on<something>="  . The JS in
+# this page assigns handlers as properties (`b.onclick = ()=>…`), which has no
+# quote after the `=` and so cannot match.
+INLINE_HANDLER = re.compile(r"<[a-zA-Z][^>]*?\son[a-z]+\s*=\s*[\"']")
+
+
+def sha256_src(text):
+    """A CSP hash-source over an inline element's content exactly as the
+    browser will see it. The template is read with universal newlines and
+    index.html is written with newline="\\n", so the string hashed here is the
+    string served; hashing the file with CRLF in it would be a silent miss."""
+    d = hashlib.sha256(text.encode("utf-8")).digest()
+    return "'sha256-" + base64.b64encode(d).decode("ascii") + "'"
+
+
+def csp_markup(html, page):
+    """The page with HTML comments removed, which is what the element scan has
+    to read. The first cut of this scanned the page as written and found two
+    inline scripts, because the comment above __CSP__ says the words "script
+    block" and once said them with angle brackets — a comment describing the
+    policy broke the policy. Comments are stripped rather than worked around,
+    and the closer counts are checked so that an unbalanced comment inside a
+    script or style body fails here instead of silently shifting a hash."""
+    out = HTML_COMMENT.sub("", html)
+    for tag in ("</script>", "</style>"):
+        if out.count(tag) != html.count(tag):
+            fail("csp: removing HTML comments from %s also removed a %s, so an "
+                 "unbalanced <!-- sits inside a script or style block. The "
+                 "policy cannot be derived from a page that does not parse the "
+                 "way it reads." % (page, tag))
+    return out
+
+
+def csp_meta(directives):
+    body = "; ".join(directives)
+    if '"' in body:
+        fail("csp: a directive contains a quote and would break the attribute")
+    return '<meta http-equiv="Content-Security-Policy" content="%s">' % body
+
+
+def one_inline(kind, els, page):
+    """The single inline <script>/<style> a page is allowed, as a hash-source.
+
+    Refusing the second one is deliberate. Two inline blocks is not a problem
+    in itself — two hashes would be fine — but it is nearly always someone
+    adding a snippet without knowing the page is hash-pinned, and the failure
+    they would otherwise get is a blank page in production.
+    """
+    inline = [b for a, b in els if "src=" not in a]
+    if len(inline) != 1:
+        fail("csp: %s carries %d inline <%s> block(s); the policy hashes "
+             "exactly one. Add the second hash in build.py deliberately, or "
+             "fold the block into the first." % (page, len(inline), kind))
+    return sha256_src(inline[0])
+
+
+def csp_off_origin(urls, allowed, what, page):
+    """Split a page's subresource URLs into 'self' and named hosts, refusing
+    any host nobody has declared."""
+    hosts, selfish = [], False
+    for u in urls:
+        m = re.match(r"(?:https?:)?//[^/?#]+", u)
+        if not m:
+            selfish = True                     # relative: same origin
+            continue
+        origin = m.group(0)
+        if not origin.startswith("http"):
+            origin = "https:" + origin
+        if origin not in allowed:
+            fail("csp: %s loads %s from %s, which is not in %s in build.py. "
+                 "Either drop the dependency or add the host there — a CDN "
+                 "added without touching that tuple would be blocked at "
+                 "runtime and the page would come up blank."
+                 % (page, what, origin, what))
+        if origin not in hosts:
+            hosts.append(origin)
+    return (["'self'"] if selfish else []) + hosts
+
+
+def app_policy(html):
+    """The policy for index.html, derived from the page it is about to guard.
+
+    Everything here is read out of the finished page rather than written down
+    twice, so the policy cannot drift from what the page actually does — the
+    two hashes, the Supabase origin and the subresource hosts all come from
+    the same string that gets written to disk.
+    """
+    markup = csp_markup(html, "index.html")
+    m = INLINE_HANDLER.search(markup)
+    if m:
+        fail("csp: the page carries an inline event-handler attribute near "
+             "%r. script-src-attr 'none' blocks it; assign the handler as a "
+             "property instead." % markup[max(0, m.start() - 40):m.end() + 20])
+
+    scripts = SCRIPT_EL.findall(markup)
+    styles = STYLE_EL.findall(markup)
+    script_hash = one_inline("script", scripts, "index.html")
+    style_hash = one_inline("style", styles, "index.html")
+    for body in [b for a, b in scripts if "src=" not in a] + \
+                [b for a, b in styles if "src=" not in a]:
+        if "__CSP__" in body:
+            fail("csp: __CSP__ sits inside a hashed block, so substituting it "
+                 "would invalidate the hash it carries")
+        # the hash has to be over what the browser gets, and what the browser
+        # gets is `html`, comments and all. If a comment lived inside a hashed
+        # block, the body above would differ from the served one and this is
+        # where that shows up rather than as a blank page.
+        if body not in html:
+            fail("csp: a hashed block contains an HTML comment, so the hash "
+                 "would not match the page as served. Move the comment out.")
+
+    script_src = csp_off_origin(
+        [u for a, _ in scripts if "src=" in a for u in ATTR_URL.findall(a)],
+        CSP_SCRIPT_HOSTS, "script-src", "index.html")
+    style_src = csp_off_origin(
+        [u for el in SHEET_EL.findall(markup) for u in ATTR_URL.findall(el)],
+        CSP_STYLE_HOSTS, "style-src", "index.html")
+
+    m = re.search(r"const SUPABASE_URL\s*=\s*'(https://[^']+)'", markup)
+    if not m:
+        fail("csp: could not find SUPABASE_URL in the page, so connect-src "
+             "cannot be derived — it must never be hand-copied")
+    sb = m.group(1).rstrip("/")
+
+    return [
+        # Anything not named below is blocked, and the fallbacks matter as much
+        # as the rules: child-src, frame-src, worker-src, manifest-src,
+        # media-src, object-src and prefetch-src all inherit this, and the page
+        # uses none of them.
+        "default-src 'none'",
+        # The one inline block by hash, the one CDN by host. No 'unsafe-inline'
+        # and no 'unsafe-eval': the page has no eval, no new Function and no
+        # string setTimeout, and neither does the supabase-js bundle (checked).
+        "script-src " + " ".join([script_hash] + script_src),
+        # Free, because no element in the page has an inline handler (asserted
+        # above): it blocks an injected onclick= even where the hash in
+        # script-src would otherwise be the only gate.
+        "script-src-attr 'none'",
+        # Style is the one compromise, and it is 'unsafe-inline' because the
+        # page carries 81 style="…" attributes, written by innerHTML at
+        # runtime. Hashes cannot cover attributes (that needs
+        # 'unsafe-hashes', which is a wider grant than this), and rewriting 81
+        # of them into classes is a change to every render path in the page,
+        # not a security fix. What it costs: injected CSS is allowed. What
+        # keeps that small is the rest of the policy — img-src is 'self' and
+        # data:, font-src is one host, so the usual CSS exfiltration channels
+        # (background-image: url(attacker), @font-face src) have nowhere to
+        # send anything.
+        #
+        # The -elem/-attr pair buys back the element half where it is
+        # supported: Chrome, Edge and modern Firefox pin the <style> block to
+        # its hash and refuse an injected <style>, while keeping attributes
+        # permissive. A browser that supports neither ignores both lines and
+        # falls back to style-src above, so the page is never broken by the
+        # split — the hardening is additive.
+        "style-src " + " ".join(style_src + ["'unsafe-inline'"]),
+        "style-src-elem " + " ".join(style_src + [style_hash]),
+        "style-src-attr 'unsafe-inline'",
+        "font-src " + CSP_FONT_FILES,
+        # data: is the favicon, which the page draws on a canvas every time the
+        # eye moves and sets as a data: URL on <link rel=icon>.
+        "img-src 'self' data:",
+        # 'self' is properties/*.json and build.json; the Supabase origin is
+        # read out of the page above. wss: is the same host, so it grants an
+        # attacker nothing that the REST endpoint does not already, and it
+        # means adding a realtime channel later is not an outage.
+        "connect-src 'self' %s %s" % (sb, "wss://" + sb.split("//", 1)[1]),
+        # No <base> in the page; with this, injecting one cannot repoint every
+        # relative fetch in it.
+        "base-uri 'none'",
+        # One form (the gated list's password box) and it submits to itself.
+        "form-action 'self'",
+        # Both inherit default-src already; stated because they are the two
+        # worth being unambiguous about.
+        "object-src 'none'",
+        "frame-src 'none'",
+        # Nothing in the catalogue is http:// today and qa_lint would notice;
+        # this makes a future one an upgrade rather than mixed content.
+        "upgrade-insecure-requests",
+    ]
+
+
+def embed_policy(script_body):
+    """A share page is a title, a link and a one-line redirect. It needs no
+    styles, no images of its own and no network, so everything except that one
+    hashed line is 'none'. img-src stays 'self' only because a browser asks
+    for /favicon.ico on its own."""
+    return [
+        "default-src 'none'",
+        "script-src " + sha256_src(script_body),
+        "script-src-attr 'none'",
+        "img-src 'self'",
+        "base-uri 'none'",
+        "form-action 'none'",
+        "upgrade-insecure-requests",
+    ]
+
+
 def embed_of(p):
     """A list's description: its blurb, verbatim.
 
@@ -208,11 +448,16 @@ def embed_page(p):
     app = "/?p=" + p["slug"]               # slugs pass ID_OK; nothing to escape
     title = attr(p["title"])
     desc = attr(embed_of(p))
+    bounce = "location.replace(%s)" % json.dumps(app)
     return "\n".join([
         "<!doctype html>",
         '<html lang="en">',
         "<head>",
         '<meta charset="utf-8">',
+        # CLU-548 — after the charset (which must land in the first 1024 bytes)
+        # and before anything fetchable, which on this page is the bounce below
+        csp_meta(embed_policy(bounce)),
+        '<meta name="referrer" content="strict-origin-when-cross-origin">',
         "<title>%s — clubd</title>" % title,
         '<meta property="og:site_name" content="clubd">',
         '<meta property="og:type" content="website">',
@@ -227,7 +472,7 @@ def embed_page(p):
         '<meta name="twitter:description" content="%s">' % desc,
         '<meta name="twitter:image" content="%s">' % OG_IMAGE,
         '<meta http-equiv="refresh" content="0;url=%s">' % app,
-        "<script>location.replace(%s)</script>" % json.dumps(app),
+        "<script>%s</script>" % bounce,
         "</head>",
         "<body>",
         # for the browser that honours neither bounce: the page is not blank
@@ -934,7 +1179,7 @@ def main():
     check_embeds(props, write_embeds(props))
 
     html = TEMPLATE.read_text(encoding="utf-8")
-    for ph in ("__MANIFEST__", "__BUILD__", "__SYNCVER__"):
+    for ph in ("__MANIFEST__", "__BUILD__", "__SYNCVER__", "__CSP__"):
         if ph not in html:
             fail("template.html is missing the %s placeholder" % ph)
 
@@ -965,7 +1210,22 @@ def main():
     build = stamp.hexdigest()[:12]
 
     html = html.replace("__BUILD__", build)
-    for ph in ("__MANIFEST__", "__BUILD__", "__SYNCVER__"):
+
+    # CLU-548, and it has to be last: the policy carries a sha256 of the inline
+    # <script>, and that block holds the build stamp, so hashing it before the
+    # line above would pin a hash of a page that was never served. The stamp in
+    # turn is computed over the page while __CSP__ is still a placeholder,
+    # which is what keeps the two out of each other's way — neither depends on
+    # the other's output.
+    policy = app_policy(html)
+    if html.count("__CSP__") != 1:
+        # it was 2 for one build: the comment above the placeholder named it,
+        # and str.replace put a whole second policy inside that comment
+        fail("csp: __CSP__ appears %d times in the template; it must appear "
+             "exactly once, and nothing may name it in prose"
+             % html.count("__CSP__"))
+    html = html.replace("__CSP__", csp_meta(policy))
+    for ph in ("__MANIFEST__", "__BUILD__", "__SYNCVER__", "__CSP__"):
         if ph in html:
             fail("%s was not replaced" % ph)
 
@@ -976,6 +1236,8 @@ def main():
 
     print("wrote index.html, properties/index.json and build.json")
     print("  build %s" % build)
+    print("  csp: %d directives, hashes over 1 inline script + 1 inline style"
+          % len(policy))
     print("  catalogue: popularity desc, pinned to the head: %s"
           % ", ".join(PINNED))
     for i, p in enumerate(props, 1):
