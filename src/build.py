@@ -275,15 +275,29 @@ def one_inline(kind, els, page):
 
 
 def csp_off_origin(urls, allowed, what, page):
-    """Split a page's subresource URLs into 'self' and named hosts, refusing
-    any host nobody has declared."""
-    hosts, selfish = [], False
+    """Turn a page's subresource URLs into CSP source expressions, refusing any
+    host nobody has declared.
+
+    The expression is the URL down to its path, not just the origin, and for
+    script-src that is the difference between a policy and a formality:
+    `https://cdn.jsdelivr.net` as a source lets an injected tag load any npm
+    package — and jsdelivr's /gh/ route, any file from any GitHub repo — which
+    is a published way round exactly this kind of allowlist. Named down to the
+    file, only that one bundle is a script.
+
+    A redirect does not make this brittle: CSP skips path matching once a
+    request has been redirected, so a CDN that later bounces @2 to @2.58.0 is
+    still matched on host and scheme. The query string is dropped because CSP
+    compares paths only, and leaving an & in the meta attribute is asking for
+    an escaping bug in the part of the page that is supposed to prevent them.
+    """
+    srcs, selfish = [], False
     for u in urls:
-        m = re.match(r"(?:https?:)?//[^/?#]+", u)
+        m = re.match(r"((?:https?:)?//[^/?#]+)([^?#]*)", u)
         if not m:
             selfish = True                     # relative: same origin
             continue
-        origin = m.group(0)
+        origin, path = m.group(1), m.group(2)
         if not origin.startswith("http"):
             origin = "https:" + origin
         if origin not in allowed:
@@ -292,9 +306,10 @@ def csp_off_origin(urls, allowed, what, page):
                  "added without touching that tuple would be blocked at "
                  "runtime and the page would come up blank."
                  % (page, what, origin, what))
-        if origin not in hosts:
-            hosts.append(origin)
-    return (["'self'"] if selfish else []) + hosts
+        src = origin + path
+        if src not in srcs:
+            srcs.append(src)
+    return (["'self'"] if selfish else []) + srcs
 
 
 def app_policy(html):
