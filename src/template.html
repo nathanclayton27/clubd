@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- CLU-548. The policy is WRITTEN BY src/build.py, not by hand: it carries a
+     sha256 of this page's one inline script block and one inline style block,
+     and both change on every build. Editing the placeholder below is editing
+     nothing; the rule set, and the checks that prove the page only reaches the
+     origins in it, live in app_policy() there. This meta must stay after
+     the charset — a policy is only in force from the point the parser reads
+     it, so anything fetched above this line would be outside it. The charset
+     itself has to come first because it must land in the first 1024 bytes. -->
+__CSP__
+<!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
+     after boot, by which point the fonts stylesheet has already been asked
+     for. Chrome and Firefox default to this policy anyway; stating it means no
+     browser hands a token to fonts.googleapis.com, jsdelivr, or an outbound
+     link. Same-origin requests still see the whole URL. -->
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>clubd</title>
 <meta name="description" content="Track a movie marathon, a TV show, an anime or a comic run alongside other people, with everyone’s progress stacked on one strip.">
