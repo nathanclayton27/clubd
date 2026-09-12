@@ -1474,11 +1474,21 @@ footer a{color:var(--steel)}
    card, so hovering the group does not light up eight remove buttons at once.
    Deliberately NOT applied to .gfr2 (add friend / add back): that is an
    invitation rather than a destructive act, and he did not ask for it. */
-#fp-groups .gros .afrow [data-gkick]{opacity:0;transition:opacity .15s}
+/* Both of the row's actions are hover controls. Nathan, on add friend: "make
+   it a hover button" — a roster is a list of PEOPLE, and a button against every
+   name turns reading who is in a group into scanning a column of controls.
+   :focus-within keeps them reachable from the keyboard, where there is no
+   hover to give. */
+#fp-groups .gros .afrow [data-gkick],
+#fp-groups .gros .afrow [data-fradd]{opacity:0;transition:opacity .15s}
 #fp-groups .gros .afrow:hover [data-gkick],
-#fp-groups .gros .afrow:focus-within [data-gkick]{opacity:1}
+#fp-groups .gros .afrow:focus-within [data-gkick],
+#fp-groups .gros .afrow:hover [data-fradd],
+#fp-groups .gros .afrow:focus-within [data-fradd]{opacity:1}
 /* touch has no hover, so it rests faint rather than never appearing */
-@media (hover:none){#fp-groups .gros .afrow [data-gkick]{opacity:.55}}
+/* no hover on a phone, so both sit at a permanent half-strength instead */
+@media (hover:none){#fp-groups .gros .afrow [data-gkick],
+  #fp-groups .gros .afrow [data-fradd]{opacity:.55}}
 .acap{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;
   color:var(--ink-3);margin-top:9px;line-height:1.6}
 .acap b{color:var(--ink-2);font-weight:500}
@@ -6356,7 +6366,25 @@ async function renderMyGroups(){
       myGroups(),
       // your own mute per group. Not readable off the row — see CLU-392 — so
       // it comes back through a definer function scoped to auth.uid().
-      sb.rpc('my_group_shares').then(r=> r, ()=> ({ data: null }))
+      sb.rpc('my_group_shares').then(r=> r, ()=> ({ data: null })),
+      // ⚠ THE FRIEND GRAPH, or the roster's add-friend buttons vanish.
+      // legendFriendState() answers 'unknown' until FREDGES lands, and this
+      // card drops the button on 'unknown' — so whether you could add anybody
+      // from a group depended on which unrelated fetch happened to finish
+      // first, and nothing re-rendered when the graph arrived late. Nathan
+      // read that as the feature not existing: "add the ability to send friend
+      // requests from the group list in the friends page".
+      //
+      // loadGroups() has awaited this since it was written, for the same
+      // reason. It rides INSIDE the Promise.all rather than in front of it, so
+      // it costs no extra round trip, and friendEdges() coalesces anyway.
+      //
+      // The legend solves this the other way — paintLegendFriends draws the
+      // buttons optimistically and removes the wrong ones once the graph lands.
+      // That is not right here: it would show "add friend" against somebody you
+      // have already added, for one round trip, which is precisely what he
+      // asked not to happen.
+      friendEdges().catch(()=> null)
     ]);
     const rows = MY.ugroups.slice()
       .sort((a, b)=> (a.name || '').localeCompare(b.name || ''));
