@@ -2701,6 +2701,7 @@ let MANIFEST = [
     },
     "vpast": "read",
     "total": 8,
+    "totalw": 1096.0,
     "doors": 8,
     "hub": true,
     "mega": true
@@ -3117,7 +3118,7 @@ let MANIFEST = [
     "kind": "films & shows",
     "year": "1951–",
     "popularity": 82,
-    "blurb": "55 films and 139 seasons of television, about 1754 hours, in the order they came out.",
+    "blurb": "55 films and 139 seasons of television, about 1753 hours, in the order they came out.",
     "accent": "#1F5FA8",
     "accentDark": "#6FA8E8",
     "unit": {
@@ -3126,7 +3127,7 @@ let MANIFEST = [
     },
     "vpast": "watched",
     "total": 194,
-    "totalw": 1753.79,
+    "totalw": 1752.65,
     "mega": true
   },
   {
@@ -3450,7 +3451,7 @@ let MANIFEST = [
     },
     "vpast": "watched",
     "total": 26,
-    "totalw": 45.8
+    "totalw": 45.7
   },
   {
     "slug": "tom-cruise",
@@ -3919,7 +3920,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 195
+    "total": 195,
+    "totalw": 195.0
   },
   {
     "slug": "the-wire",
@@ -4072,7 +4074,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 225
+    "total": 225,
+    "totalw": 225.0
   },
   {
     "slug": "chainsaw-man",
@@ -4631,7 +4634,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 88
+    "total": 88,
+    "totalw": 88.0
   },
   {
     "slug": "fincher",
@@ -5601,7 +5605,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 48
+    "total": 48,
+    "totalw": 48.0
   },
   {
     "slug": "golden-girls",
@@ -6353,7 +6358,7 @@ let MANIFEST = [
     },
     "vpast": "watched",
     "total": 223,
-    "totalw": 437.03,
+    "totalw": 436.73,
     "random": true
   },
   {
@@ -6662,7 +6667,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 106
+    "total": 106,
+    "totalw": 106.0
   },
   {
     "slug": "cult-classics",
@@ -6998,7 +7004,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 192
+    "total": 192,
+    "totalw": 192.0
   },
   {
     "slug": "sight-and-sound",
@@ -7087,7 +7094,8 @@ let MANIFEST = [
       "many": "volumes"
     },
     "vpast": "read",
-    "total": 29
+    "total": 29,
+    "totalw": 197.0
   },
   {
     "slug": "nasuverse",
@@ -7205,7 +7213,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 45
+    "total": 45,
+    "totalw": 45.0
   },
   {
     "slug": "satoshi-kon",
@@ -7673,13 +7682,13 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '150eb47e437e';
+const BUILD = '150ceb7102db';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
 // rewires a sync group re-runs it — which is how a newly added list inherits
 // ticks people already had elsewhere. See backfillSync().
-const SYNCVER = '0014ee965b';
+const SYNCVER = 'e7e85032c4';
 
 // A tab that is already open never re-runs its own boot, so checking once was
 // only ever going to help people who reloaded anyway. This polls, and reloads
