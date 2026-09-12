@@ -782,6 +782,11 @@ writing other users' rows, so it stays open with its name written down. The file
 says so too, at its `club_fold_on_delete` definition, so the next reader of
 either finds it rather than discovering it.
 
+**Tracked as CLU-511 since 2026-09-11.** Before that it was described here, in
+`DECISIONS.md` §4, and at the trigger definition — and carded nowhere, so nothing
+on the board was accountable for it. Three descriptions and no card is not
+tracking; it is a well-documented silence.
+
 **Order, and it is what happened:** the pre-flight ran first and was read
 (~21:37, 6 PASS + 1 INFO), then the migration whole in one paste (21:38), then
 the 19-row readback went onto CLU-389. The same order governs any re-run, and the
