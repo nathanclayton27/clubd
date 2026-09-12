@@ -1322,6 +1322,13 @@ footer a{color:var(--steel)}
 .wall .card.bub .in{transform:scale(.82)}
 .wall .card.gone{display:none}
 .wall .card.wact .in{transform:scale(1.06)}
+/* The mega row (CLU-508). Same cards as the wall, a heading of its own, and
+   above it — a doorway is chosen before a menu is browsed. */
+.megarow{margin:0 0 26px}
+.mhead{display:flex;align-items:baseline;gap:8px;font-size:13.5px;
+  font-weight:600;letter-spacing:.01em}
+.mhead .mcount{font-size:11px;color:var(--ink-3)}
+.msub{margin:3px 0 11px;font-size:12px;color:var(--ink-3);max-width:62ch}
 .wchips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 8px}
 /* tonight + the medium chips share one row: the chips scope BOTH the
    random pick and the catalogue below */
@@ -10451,15 +10458,35 @@ function renderChips(host, onChange){
 }
 function renderWall(host, externalChips){
   const list = splashList();
+  // ⚠ CLU-508. Nathan: "lets make a mega list section on the main page that
+  // takes all of the mega lists ... and put them in their own section INSTEAD
+  // of the catalog list before." So they leave the wall rather than being
+  // repeated above it — the same shape as a satellite leaving the wall without
+  // being hidden, and for the same reason: a hub is a doorway and the wall is a
+  // menu, and mixing the two makes both harder to scan.
+  const mega = list.filter(m=> m.mega), rest = list.filter(m=> !m.mega);
   host.innerHTML =
       (externalChips ? '' : '<div class="wchips"></div>')
+    + (mega.length
+        ? '<div class="megarow"><div class="mhead">Mega lists'
+          + '<span class="mono mcount">' + mega.length + '</span></div>'
+          + '<p class="msub">Lists of lists \u2014 every row is a whole run,'
+          + ' filmography or series rather than one sitting.</p>'
+          + '<div class="cards mega">'
+          + mega.map(m=> cardHTML(m, null, true)).join('') + '</div></div>'
+        : '')
     + '<div class="wtally"></div>'
-    + '<div class="cards wall">' + list.map(m=> cardHTML(m, null, true)).join('') + '</div>';
+    + '<div class="cards wall">' + rest.map(m=> cardHTML(m, null, true)).join('') + '</div>';
   wireCards(host);
   // the index may already be in, in which case these bars can count hours
   // straight away; if it is not, this is a no-op and ensureIndex does it
   try{ upgradeBars(); }catch(e){}
   const wall = host.querySelector('.wall');
+  // ⚠ The mega row is deliberately OUTSIDE this. Every card the chips filter,
+  // the tally counts, and the FLIP animation moves comes from `.wall` alone —
+  // a mega list spans media by construction (the MCU anthology is films AND
+  // shows), so filtering to "films" would either drop it, which hides a doorway
+  // the reader was using, or keep it, which makes the filter a lie.
   const cards = [...wall.querySelectorAll('.card')];
   const tally = host.querySelector('.wtally');
   const hiddenC = c=> c.classList.contains('gone');

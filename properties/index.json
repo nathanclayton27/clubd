@@ -60,7 +60,8 @@
     },
     "vpast": "watched",
     "total": 56,
-    "totalw": 239.77
+    "totalw": 239.77,
+    "mega": true
   },
   {
     "slug": "disney",
@@ -104,7 +105,8 @@
     },
     "vpast": "watched",
     "total": 132,
-    "totalw": 574.92
+    "totalw": 574.92,
+    "mega": true
   },
   {
     "slug": "directors",
@@ -129,7 +131,8 @@
     "total": 15,
     "totalw": 675.85,
     "doors": 15,
-    "hub": true
+    "hub": true,
+    "mega": true
   },
   {
     "slug": "mario",
@@ -646,7 +649,8 @@
     },
     "vpast": "watched",
     "total": 194,
-    "totalw": 1753.79
+    "totalw": 1753.79,
+    "mega": true
   },
   {
     "slug": "final-fantasy",
@@ -2984,7 +2988,8 @@
     },
     "vpast": "watched",
     "total": 211,
-    "totalw": 923.32
+    "totalw": 923.32,
+    "mega": true
   },
   {
     "slug": "villeneuve",
@@ -3277,7 +3282,8 @@
     },
     "vpast": "watched",
     "total": 118,
-    "totalw": 669.91
+    "totalw": 669.91,
+    "mega": true
   },
   {
     "slug": "outlaw-star",

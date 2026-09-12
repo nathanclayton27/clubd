@@ -426,6 +426,19 @@ def main():
         # yet: a hub written months ahead of its targets is still a hub, and
         # a list should not fold and unfold as its neighbours land.
         rws = rows_of(p)
+        # ---- is this a MEGA LIST? (CLU-508) -----------------------------
+        # Nathan: "lets make a mega list section on the main page that takes all
+        # of the mega lists (directors, mcu anthology, marvel comics, dc
+        # anthology etc, (stuff that has close ups or will have close ups)) and
+        # put them in their own section instead of the catalog list before".
+        #
+        # Note "or WILL have close ups". A hub — every row a door — is a mega
+        # list by construction, and `directors` is the only one today. The other
+        # five are anthologies whose rows are whole shows that have not been
+        # spawned yet, and they are mega lists now rather than on the day the
+        # spawning finishes. So the flag is DECLARED on the property, the way
+        # `satellite` is, and a hub gets it for free.
+        p["_mega"] = bool(p.get("mega"))
         p["_hub"] = bool(rws) and all(x.get("into") or x.get("beside")
                                       for x in rws)
 
@@ -666,6 +679,8 @@ def main():
             # before the first section is drawn: the page needs to know
             # whether to render the sections open, not to open them after.
             **({"hub": True} if p.get("_hub") else {}),
+            # a hub is a mega list by construction; the rest say so themselves
+            **({"mega": True} if (p.get("_mega") or p.get("_hub")) else {}),
             # the page needs these before first paint: one to know not to list
             # a locked property, the other to size a generated one
             # the switcher names a locked list by its cover title, not its own
