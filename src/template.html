@@ -1008,17 +1008,31 @@ footer a{color:var(--steel)}
    lists using this have different row heights and both move with the
    reader's font size. Named pklist, not peek: .peek is the wall's hover
    card, and taking that name silently unfixed it. */
+/* ⚠ EVERY SELECTOR HERE IS A DIRECT-CHILD SELECTOR, and that is the whole of
+   CLU-525. These used to be descendant selectors, which is fine until one peek
+   list contains another — and the groups card does exactly that: a roster peek
+   sits inside each row of the groups peek.
+   `--pkh` is a custom property, so it INHERITS. The outer list set it to its
+   own cut height, `.pklist.pk-on .pkwrap` then matched every nested wrapper as
+   well, and each roster was given the height of the entire groups card.
+   Measured at nine groups: each roster became 5,362px tall, each group 5,477px,
+   and the card 49,329px — so the outer cut landed inside the first group and
+   everything after it was clipped away under a screen of blank space. Nathan:
+   "all my other groups disappear on the friends page ... the bug persists
+   through a refresh." It did, because nothing about it was transient.
+   pkHTML always makes .pkwrap, .pkmore and .pkless direct children of .pklist,
+   so `>` costs nothing and stops a peek ever reaching into a peek again. */
 .pklist{position:relative}
-.pklist .pkwrap{position:relative}
-.pklist.pk-on .pkwrap{height:var(--pkh,auto);overflow:hidden}
-.pklist.pk-on.pk-open .pkwrap{height:auto;overflow:visible}
+.pklist > .pkwrap{position:relative}
+.pklist.pk-on > .pkwrap{height:var(--pkh,auto);overflow:hidden}
+.pklist.pk-on.pk-open > .pkwrap{height:auto;overflow:visible}
 /* the faded band IS the expand control, and it now says so: Nathan asked for
    the words "click to expand" on it, because a fade alone reads as the list
    ending rather than as something you can open. The label rides the bottom
    edge, where the gradient is nearly opaque, so it never fights the half-row
    of text showing through above it. */
-.pklist .pkmore,.pklist .pkless{display:none}
-.pklist.pk-on .pkmore{display:flex;align-items:flex-end;justify-content:center;
+.pklist > .pkmore,.pklist > .pkless{display:none}
+.pklist.pk-on > .pkmore{display:flex;align-items:flex-end;justify-content:center;
   position:absolute;left:0;right:0;bottom:0;
   color:var(--ink-3);font-family:"IBM Plex Mono",ui-monospace,monospace;
   font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;
@@ -1032,24 +1046,24 @@ footer a{color:var(--steel)}
     var(--pkground,var(--card)) 88%);
   background-size:100% var(--pkfade,100%);
   background-position:bottom;background-repeat:no-repeat}
-.pklist.pk-on .pkmore:hover{color:var(--signal);
+.pklist.pk-on > .pkmore:hover{color:var(--signal);
   background:linear-gradient(to bottom,transparent 28%,
   var(--pkground,var(--card)) 82%);
   background-size:100% var(--pkfade,100%);
   background-position:bottom;background-repeat:no-repeat}
 /* the label needs a floor to sit on; a band shorter than this would clip it */
-.pklist.pk-on .pkmore{min-height:19px}
+.pklist.pk-on > .pkmore{min-height:19px}
 /* the friends-page lists sit inside cards, home's list sits on the page —
    the fade has to die into whatever is actually behind it or it reads as a
    grey smear rather than the list running out of room */
 #hfriends .pklist{--pkground:var(--paper)}
-.pklist.pk-on.pk-open .pkmore{display:none}
-.pklist.pk-on.pk-open .pkless{display:block;width:100%;margin-top:7px;
+.pklist.pk-on.pk-open > .pkmore{display:none}
+.pklist.pk-on.pk-open > .pkless{display:block;width:100%;margin-top:7px;
   padding:6px 0 1px;background:none;border:0;border-top:1px solid var(--rule);
   border-radius:0;cursor:pointer;text-align:center;color:var(--ink-3);
   font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10.5px;
   font-weight:500;letter-spacing:.14em;text-transform:uppercase}
-.pklist.pk-on.pk-open .pkless:hover{color:var(--signal)}
+.pklist.pk-on.pk-open > .pkless:hover{color:var(--signal)}
 /* collapsing scrolls you back to row one; the mast is fixed over that spot */
 .pkwrap > :first-child{scroll-margin-top:78px}
 /* fresh watch: the trophy proves the history is intact — hover layer,
@@ -6023,7 +6037,10 @@ function pkHTML(rows, noun, key){
 // pk-on is added only once a real measurement lands, so a list measured while
 // its page is still hidden shows whole rather than collapsing to nothing.
 function pkOn(el){
-  const wrap = el.querySelector('.pkwrap');
+  // ⚠ ITS OWN wrapper. querySelector('.pkwrap') walks the whole subtree, so on
+  // a list whose rows contain peek lists of their own this could measure a
+  // nested one and set the outer list's height from it (CLU-525).
+  const wrap = el.querySelector(':scope > .pkwrap');
   if(!wrap) return;
   const cut = wrap.children[PEEK_KEEP];
   if(!cut || wrap.children.length < PEEK_MIN) return;
@@ -6068,7 +6085,8 @@ function pkOn(el){
   el.style.setProperty('--pkfade',
     Math.min(band, Math.max(10, Math.round(cr.height / 3))) + 'px');
   el.classList.add('pk-on');
-  const more = el.querySelector('.pkmore'), less = el.querySelector('.pkless');
+  const more = el.querySelector(':scope > .pkmore'),
+        less = el.querySelector(':scope > .pkless');
   if(!more || !less || more.dataset.wired) return;
   more.dataset.wired = '1';
   const set = open=>{
@@ -6362,7 +6380,21 @@ async function renderMyGroups(){
       // group of nine, printed directly above a roster list built from the
       // same failed query. Saying nothing is the honest answer to not knowing.
       const k = seats[g.id];
-      return '<div class="afrow" style="align-items:baseline;padding:5px 0">'
+      // ⚠ ONE ELEMENT PER GROUP. Nathan: "when making a new group this happens:
+      // all my other groups disappear on the friends page ... the bug persists
+      // through a refresh."
+      //
+      // A group is drawn as THREE siblings — the row, the roster, the mute
+      // toggle — and pkHTML counts ELEMENTS, not items. So PEEK_MIN of 7 was
+      // reached at THREE groups rather than seven, and PEEK_KEEP of 5 kept five
+      // elements: one whole group and two thirds of the next. The card then
+      // clamped to a height measured off the wrong child, which is where the
+      // tall empty space in his screenshot came from.
+      //
+      // Wrapping each group makes the DOM say what the peek already assumes:
+      // one child is one thing you are counting.
+      return '<div class="gwrap">'
+        + '<div class="afrow" style="align-items:baseline;padding:5px 0">'
         + '<b style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'
         + esc(g.name) + '</b>'
         + (k ? '<span class="mono" style="font-size:10.5px;color:var(--ink-3)">'
@@ -6434,7 +6466,8 @@ async function renderMyGroups(){
            ? 'already covered — your groups cannot see any of your lists.'
            : 'they keep their own roster and their own progress; yours stops '
              + 'showing to them alone.')
-        + '</span></label></div>';
+        + '</span></label></div>'
+        + '</div>';
     }), 'groups', 'fp-groups');
     pkAll(host);
     host.querySelectorAll('button[data-grot]').forEach(b=>{
