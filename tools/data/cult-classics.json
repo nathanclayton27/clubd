@@ -194,7 +194,11 @@
     2002,
     2002
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 117,
+   "infobox_raw": "117 minutes",
+   "infobox_page": "24 Hour Party People",
+   "infobox_figures": 1
   },
   "Q221075": {
    "runtime": 113,
@@ -232,7 +236,11 @@
     1968,
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 139,
+   "infobox_raw": "139 minutes",
+   "infobox_page": "2001: A Space Odyssey (film)",
+   "infobox_figures": 1
   },
   "Q221113": {
    "runtime": 146,
@@ -294,7 +302,11 @@
     1984,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "The Adventures of Buckaroo Banzai Across the 8th Dimension",
+   "infobox_figures": 1
   },
   "Q255328": {
    "runtime": 104,
@@ -303,7 +315,11 @@
     1994,
     1994
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "The Adventures of Priscilla, Queen of the Desert",
+   "infobox_figures": 1
   },
   "Q846209": {
    "runtime": 97,
@@ -339,7 +355,11 @@
     1981,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Aguirre, the Wrath of God",
+   "infobox_figures": 1
   },
   "Q497256": {
    "runtime": 88,
@@ -359,7 +379,11 @@
     1991,
     1991
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 124,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "Akira (1988 film)",
+   "infobox_figures": 1
   },
   "Q543810": {
    "runtime": 93,
@@ -389,7 +413,11 @@
     1950,
     1950
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 138,
+   "infobox_raw": "138 minutes",
+   "infobox_page": "All About Eve",
+   "infobox_figures": 1
   },
   "Q1633549": {
    "runtime": 89,
@@ -415,7 +443,11 @@
     1965,
     1966
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "Alphaville (film)",
+   "infobox_figures": 1
   },
   "Q1194524": {
    "runtime": 102,
@@ -460,7 +492,11 @@
     2000,
     2000
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "American Psycho (film)",
+   "infobox_figures": 1
   },
   "Q467290": {
    "runtime": 98,
@@ -468,7 +504,11 @@
     1981,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 97,
+   "infobox_raw": "97 minutes",
+   "infobox_page": "An American Werewolf in London",
+   "infobox_figures": 1
   },
   "Q474098": {
    "runtime": 153,
@@ -511,7 +551,11 @@
     1987,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes",
+   "infobox_page": "Angel Heart",
+   "infobox_figures": 1
   },
   "Q233464": {
    "runtime": 93,
@@ -546,7 +590,11 @@
     1980,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Annie Hall",
+   "infobox_figures": 1
   },
   "Q182692": {
    "runtime": 202,
@@ -602,7 +650,11 @@
    "pub_years": [
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 66,
+   "infobox_raw": "66 minutes (theatrical) 75 minutes (TV print)",
+   "infobox_page": "Attack of the 50 Foot Woman",
+   "infobox_figures": 2
   },
   "Q1769592": {
    "runtime": 62,
@@ -631,7 +683,11 @@
     2001,
     2002
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes sfn | British Board of Film Classification | ref=BBFC",
+   "infobox_page": "Audition (1999 film)",
+   "infobox_figures": 1
   },
   "Q7715172": {
    "runtime": 102,
@@ -655,7 +711,11 @@
    "pub_years": [
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Bad Taste",
+   "infobox_figures": 1
   },
   "Q799202": {
    "runtime": 95,
@@ -679,14 +739,22 @@
     1981,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Badlands (film)",
+   "infobox_figures": 1
   },
   "Q803974": {
    "runtime": 74,
    "pub_years": [
     2000
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 77,
+   "infobox_raw": "77 minutes",
+   "infobox_page": "Baise-moi",
+   "infobox_figures": 1
   },
   "Q41132": {
    "runtime": 98,
@@ -712,7 +780,11 @@
     1972,
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 98,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "Barbarella (film)",
+   "infobox_figures": 1
   },
   "Q195303": {
    "runtime": 97,
@@ -720,7 +792,11 @@
     1987,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 97,
+   "infobox_raw": "97 minutes",
+   "infobox_page": "Barfly (film)",
+   "infobox_figures": 1
   },
   "Q471716": {
    "runtime": 184,
@@ -777,14 +853,22 @@
     1983,
     1985
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Basket Case (film)",
+   "infobox_figures": 1
   },
   "Q864592": {
    "runtime": 113,
    "pub_years": [
     2000
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes (Theatrical release) | 122 minutes (Special Edition) (2001) | 119 minutes (3D) (2010)",
+   "infobox_page": "Battle Royale (film)",
+   "infobox_figures": 3
   },
   "Q811023": {
    "runtime": 118,
@@ -809,7 +893,11 @@
     1925,
     1925
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 74,
+   "infobox_raw": "74 minutes",
+   "infobox_page": "Battleship Potemkin",
+   "infobox_figures": 1
   },
   "Q320236": {
    "runtime": 101,
@@ -840,14 +928,22 @@
    "pub_years": [
     1953
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Beat the Devil (film)",
+   "infobox_figures": 1
   },
   "Q927048": {
    "runtime": 90,
    "pub_years": [
     1946
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Beauty and the Beast (1946 film)",
+   "infobox_figures": 1
   },
   "Q3204792": {
    "runtime": 90,
@@ -882,14 +978,22 @@
     1995,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 72,
+   "infobox_raw": "72 minutes",
+   "infobox_page": "Begotten (film)",
+   "infobox_figures": 1
   },
   "Q814490": {
    "runtime": 72,
    "pub_years": [
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 72,
+   "infobox_raw": "72 minutes",
+   "infobox_page": "Behind the Green Door",
+   "infobox_figures": 1
   },
   "Q649165": {
    "runtime": 108,
@@ -942,7 +1046,11 @@
     1982,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "Beyond the Valley of the Dolls",
+   "infobox_figures": 1
   },
   "Q1498484": {
    "runtime": 87,
@@ -958,7 +1066,11 @@
     1954,
     1954
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "The Big Heat",
+   "infobox_figures": 1
   },
   "Q337078": {
    "runtime": 117,
@@ -967,7 +1079,11 @@
     1998,
     1998
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 117,
+   "infobox_raw": "117 minutes",
+   "infobox_page": "The Big Lebowski",
+   "infobox_figures": 1
   },
   "Q1813890": {
    "runtime": 105,
@@ -978,7 +1094,11 @@
     1968,
     1969
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 105,
+   "infobox_raw": "105 minutes",
+   "infobox_page": "The Big Silence",
+   "infobox_figures": 1
   },
   "Q1137931": {
    "runtime": 114,
@@ -1008,7 +1128,11 @@
     1980,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Big Wednesday",
+   "infobox_figures": 1
   },
   "Q795040": {
    "runtime": 89,
@@ -1084,7 +1208,11 @@
    "pub_years": [
     1960
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 87,
+   "infobox_raw": "87 minutes sfn | Curti | 2015 | p=37",
+   "infobox_page": "Black Sunday (1960 film)",
+   "infobox_figures": 1
   },
   "Q1215931": {
    "runtime": 101,
@@ -1093,7 +1221,11 @@
     1955,
     1955
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Blackboard Jungle",
+   "infobox_figures": 1
   },
   "Q881000": {
    "runtime": 93,
@@ -1101,7 +1233,11 @@
     1972,
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Blacula",
+   "infobox_figures": 1
   },
   "Q184843": {
    "runtime": 116,
@@ -1112,7 +1248,11 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 117,
+   "infobox_raw": "117 minutes",
+   "infobox_page": "Blade Runner",
+   "infobox_figures": 1
   },
   "Q644554": {
    "runtime": 81,
@@ -1123,7 +1263,11 @@
     1999,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 81,
+   "infobox_raw": "81 minutes",
+   "infobox_page": "The Blair Witch Project",
+   "infobox_figures": 1
   },
   "Q957323": {
    "runtime": 93,
@@ -1139,14 +1283,22 @@
    "pub_years": [
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 86,
+   "infobox_raw": "86 minutes",
+   "infobox_page": "The Blob",
+   "infobox_figures": 1
   },
   "Q885117": {
    "runtime": 67,
    "pub_years": [
     1963
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 67,
+   "infobox_raw": "67 minutes",
+   "infobox_page": "Blood Feast",
+   "infobox_figures": 1
   },
   "Q3425459": {
    "runtime": 93,
@@ -1176,7 +1328,11 @@
     1985,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Blood Simple",
+   "infobox_figures": 1
   },
   "Q885281": {
    "runtime": 90,
@@ -1201,7 +1357,11 @@
     1967,
     1967
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "Blowup",
+   "infobox_figures": 1
   },
   "Q2368683": {
    "runtime": 94,
@@ -1226,7 +1386,11 @@
     1987,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Blue Velvet (film)",
+   "infobox_figures": 1
   },
   "Q109767": {
    "runtime": 148,
@@ -1236,7 +1400,11 @@
     1980,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 133,
+   "infobox_raw": "133 minutes",
+   "infobox_page": "The Blues Brothers (film)",
+   "infobox_figures": 1
   },
   "Q472096": {
    "runtime": 109,
@@ -1263,7 +1431,11 @@
     1982,
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 149,
+   "infobox_raw": "149 minutes (see below)",
+   "infobox_page": "Das Boot",
+   "infobox_figures": 1
   },
   "Q893926": {
    "runtime": 80,
@@ -1275,7 +1447,11 @@
     1983,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Born in Flames",
+   "infobox_figures": 1
   },
   "Q86427": {
    "runtime": 87,
@@ -1284,7 +1460,11 @@
     1960,
     1960
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "À bout de souffle",
+   "infobox_figures": 1
   },
   "Q1194657": {
    "runtime": 91,
@@ -1301,7 +1481,11 @@
     1978,
     1985
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 125,
+   "infobox_raw": "125 minutes",
+   "infobox_page": "The Boys from Brazil (film)",
+   "infobox_figures": 1
   },
   "Q2565223": {
    "runtime": 120,
@@ -1325,7 +1509,11 @@
     1993,
     1993
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 128,
+   "infobox_raw": "128 minutes",
+   "infobox_page": "Bram Stoker's Dracula (1992 film)",
+   "infobox_figures": 1
   },
   "Q729671": {
    "runtime": 97,
@@ -1344,7 +1532,11 @@
     1985,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 142,
+   "infobox_raw": "Ubl | 142 minutes (final cut) | 132 minutes (American Universal cut) | 94 minutes (\"Love Conquers All\" cut)",
+   "infobox_page": "Brazil (1985 film)",
+   "infobox_figures": 3
   },
   "Q731082": {
    "runtime": 105,
@@ -1360,7 +1552,11 @@
     2005,
     2006
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 110,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "Brick (film)",
+   "infobox_figures": 1
   },
   "Q875904": {
    "runtime": 78,
@@ -1370,7 +1566,11 @@
     1935,
     1935
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 75,
+   "infobox_raw": "75 minutes",
+   "infobox_page": "Bride of Frankenstein",
+   "infobox_figures": 1
   },
   "Q814296": {
    "runtime": 85,
@@ -1405,7 +1605,11 @@
     1976,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Bring Me the Head of Alfredo Garcia",
+   "infobox_figures": 1
   },
   "Q179743": {
    "runtime": 102,
@@ -1414,7 +1618,11 @@
     1966,
     1938
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Bringing Up Baby",
+   "infobox_figures": 1
   },
   "Q389911": {
    "runtime": 92,
@@ -1434,21 +1642,33 @@
     1982,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "The Brood",
+   "infobox_figures": 1
   },
   "Q997423": {
    "runtime": 92,
    "pub_years": [
     2002
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Bubba Ho-Tep",
+   "infobox_figures": 1
   },
   "Q2567687": {
    "runtime": 65,
    "pub_years": [
     1959
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 65,
+   "infobox_raw": "65 minutes",
+   "infobox_page": "A Bucket of Blood",
+   "infobox_figures": 1
   },
   "Q1002142": {
    "runtime": 110,
@@ -1478,7 +1698,11 @@
     1955,
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 97,
+   "infobox_raw": "97 minutes",
+   "infobox_page": "Build My Gallows High",
+   "infobox_figures": 1
   },
   "Q427596": {
    "runtime": 118,
@@ -1513,7 +1737,11 @@
    "pub_years": [
     1920
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 74,
+   "infobox_raw": "74 minutes",
+   "infobox_page": "The Cabinet of Dr. Caligari",
+   "infobox_figures": 1
   },
   "Q1025603": {
    "runtime": 75,
@@ -1522,7 +1750,11 @@
     1986,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 74,
+   "infobox_raw": "74 minutes",
+   "infobox_page": "Café Flesh",
+   "infobox_figures": 1
   },
   "Q778696": {
    "runtime": 100,
@@ -1530,7 +1762,11 @@
     1978,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "La Cage aux Folles (film)",
+   "infobox_figures": 1
   },
   "Q541887": {
    "runtime": 70,
@@ -1546,7 +1782,11 @@
     1983,
     1985
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 83,
+   "infobox_raw": "83 minutes",
+   "infobox_page": "Caged Heat",
+   "infobox_figures": 1
   },
   "Q861445": {
    "runtime": 93,
@@ -1572,7 +1812,11 @@
     1980,
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Cannibal Holocaust",
+   "infobox_figures": 1
   },
   "Q779121": {
    "runtime": 95,
@@ -1580,7 +1824,11 @@
     1996,
     1993
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Cannibal! The Musical",
+   "infobox_figures": 1
   },
   "Q529106": {
    "runtime": 106,
@@ -1611,7 +1859,11 @@
     1962,
     1962
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 80,
+   "infobox_raw": "80 minutes sfn | Weldon | 1996 | p=93",
+   "infobox_page": "Carnival of Souls",
+   "infobox_figures": 1
   },
   "Q162672": {
    "runtime": 100,
@@ -1631,7 +1883,11 @@
     1943,
     1947
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Casablanca (film)",
+   "infobox_figures": 1
   },
   "Q1542184": {
    "runtime": 73,
@@ -1640,7 +1896,11 @@
     1942,
     1942
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 73,
+   "infobox_raw": "73 minutes",
+   "infobox_page": "Cat People (1942 film)",
+   "infobox_figures": 1
   },
   "Q115760": {
    "runtime": 104,
@@ -1676,7 +1936,11 @@
     1929,
     1929
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 21,
+   "infobox_raw": "21 minutes",
+   "infobox_page": "Un Chien Andalou",
+   "infobox_figures": 1
   },
   "Q1089283": {
    "runtime": 86,
@@ -1740,7 +2004,11 @@
     1946,
     1941
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 119,
+   "infobox_raw": "119 minutes",
+   "infobox_page": "Citizen Kane",
+   "infobox_figures": 1
   },
   "Q749988": {
    "runtime": 112,
@@ -1813,7 +2081,11 @@
     2000,
     1994
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Clerks (film)",
+   "infobox_figures": 1
   },
   "Q181086": {
    "runtime": 136,
@@ -1825,7 +2097,11 @@
     1972,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 136,
+   "infobox_raw": "136 minutes",
+   "infobox_page": "A Clockwork Orange (film)",
+   "infobox_figures": 1
   },
   "Q320588": {
    "runtime": 134,
@@ -1859,7 +2135,11 @@
     1976,
     1976
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Coffy",
+   "infobox_figures": 1
   },
   "Q1130395": {
    "runtime": 146,
@@ -1898,14 +2178,22 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 129,
+   "infobox_raw": "129 minutes",
+   "infobox_page": "Conan the Barbarian (1982 film)",
+   "infobox_figures": 1
   },
   "Q1194311": {
    "runtime": 87,
    "pub_years": [
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 86,
+   "infobox_raw": "86 minutes sfn | Adler | 1968 | p=46",
+   "infobox_page": "The Conqueror Worm (film)",
+   "infobox_figures": 1
   },
   "Q1129186": {
    "runtime": 122,
@@ -1952,7 +2240,11 @@
     1989,
     1990
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 124,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "The Cook, the Thief, His Wife & Her Lover",
+   "infobox_figures": 1
   },
   "Q54020263": {
    "runtime": 73,
@@ -1978,7 +2270,11 @@
     1996,
     1996
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "Crash (1996 film)",
+   "infobox_figures": 1
   },
   "Q3178853": {
    "runtime": 96,
@@ -2002,7 +2298,11 @@
     1995,
     1995
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Crumb (film)",
+   "infobox_figures": 1
   },
   "Q179746": {
    "runtime": 85,
@@ -2010,7 +2310,11 @@
     1990,
     1990
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 85,
+   "infobox_raw": "85 minutes",
+   "infobox_page": "Cry-Baby",
+   "infobox_figures": 1
   },
   "Q467840": {
    "runtime": 90,
@@ -2018,7 +2322,11 @@
     1997,
     2000
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Cube (1997 film)",
+   "infobox_figures": 1
   },
   "Q1637787": {
    "runtime": 111,
@@ -2051,14 +2359,22 @@
     1981,
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "Cutter's Way",
+   "infobox_figures": 1
   },
   "Q2132842": {
    "runtime": 90,
    "pub_years": [
     1940
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Dance, Girl, Dance",
+   "infobox_figures": 1
   },
   "Q629819": {
    "runtime": 96,
@@ -2097,7 +2413,11 @@
     1980,
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 83,
+   "infobox_raw": "83 minutes",
+   "infobox_page": "Dark Star (film)",
+   "infobox_figures": 1
   },
   "Q1166240": {
    "runtime": 101,
@@ -2113,7 +2433,11 @@
     1971,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "Daughters of Darkness",
+   "infobox_figures": 1
   },
   "Q219155": {
    "runtime": 126,
@@ -2123,7 +2447,11 @@
     1979,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 126,
+   "infobox_raw": "plainlist | | 126 minutes small | (US) | 119 minutes small | (Italy)",
+   "infobox_page": "Dawn of the Dead (1978 film)",
+   "infobox_figures": 2
   },
   "Q219170": {
    "runtime": 100,
@@ -2159,7 +2487,11 @@
    "pub_years": [
     1978
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Day of the Woman (film)",
+   "infobox_figures": 1
   },
   "Q425992": {
    "runtime": 92,
@@ -2182,7 +2514,11 @@
     1993,
     1995
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Dazed and Confused (film)",
+   "infobox_figures": 1
   },
   "Q547189": {
    "runtime": 116,
@@ -2191,14 +2527,22 @@
     1996,
     1996
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Dead Man",
+   "infobox_figures": 1
   },
   "Q2298679": {
    "runtime": 103,
    "pub_years": [
     1945
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Dead of Night",
+   "infobox_figures": 1
   },
   "Q1180884": {
    "runtime": 105,
@@ -2240,7 +2584,11 @@
     1979,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 80,
+   "infobox_raw": "80 minutes",
+   "infobox_page": "Death Race 2000",
+   "infobox_figures": 1
   },
   "Q579826": {
    "runtime": 90,
@@ -2254,14 +2602,22 @@
    "pub_years": [
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "The Decline of Western Civilization",
+   "infobox_figures": 1
   },
   "Q1133535": {
    "runtime": 93,
    "pub_years": [
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "The Decline of Western Civilization Part II: The Metal Years",
+   "infobox_figures": 1
   },
   "Q570929": {
    "runtime": 90,
@@ -2291,7 +2647,11 @@
     1991,
     1992
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "Delicatessen (1991 film)",
+   "infobox_figures": 1
   },
   "Q814778": {
    "runtime": 110,
@@ -2318,7 +2678,11 @@
     1974,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "Deliverance (film)",
+   "infobox_figures": 1
   },
   "Q1200483": {
    "runtime": 92,
@@ -2337,14 +2701,22 @@
     1979,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Demon Seed",
+   "infobox_figures": 1
   },
   "Q2062566": {
    "runtime": 67,
    "pub_years": [
     1945
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 68,
+   "infobox_raw": "68 minutes",
+   "infobox_page": "Detour (1945 film)",
+   "infobox_figures": 1
   },
   "Q655996": {
    "runtime": 111,
@@ -2369,7 +2741,11 @@
     1975,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes efn | The British theatrical cut runs 111 minutes, while the U.S. cut ran approximately 108–109 minutes",
+   "infobox_page": "The Devils (film)",
+   "infobox_figures": 3
   },
   "Q739046": {
    "runtime": 114,
@@ -2398,7 +2774,11 @@
     1987,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "Dirty Dancing",
+   "infobox_figures": 1
   },
   "Q110206": {
    "runtime": 102,
@@ -2463,7 +2843,11 @@
     1981,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 117,
+   "infobox_raw": "117 minutes",
+   "infobox_page": "Diva (1981 film)",
+   "infobox_figures": 1
   },
   "Q241811": {
    "runtime": 90,
@@ -2507,7 +2891,11 @@
     1961,
     1961
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 174,
+   "infobox_raw": "174 minutes",
+   "infobox_page": "La dolce vita",
+   "infobox_figures": 1
   },
   "Q660245": {
    "runtime": 110,
@@ -2526,7 +2914,11 @@
     2003,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes",
+   "infobox_page": "Donnie Darko",
+   "infobox_figures": 1
   },
   "Q1242182": {
    "runtime": 96,
@@ -2566,7 +2958,11 @@
     1964,
     1964
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+   "infobox_figures": 1
   },
   "Q1617364": {
    "runtime": 98,
@@ -2586,7 +2982,11 @@
     1977,
     1978
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Dracula's Dog",
+   "infobox_figures": 1
   },
   "Q673738": {
    "runtime": 103,
@@ -2611,7 +3011,11 @@
    "pub_years": [
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "plainlist | | 96 minutes (theatrical cut) | 101 minutes (pre-release cut)",
+   "infobox_page": "The Driller Killer",
+   "infobox_figures": 2
   },
   "Q732960": {
    "runtime": 100,
@@ -2656,14 +3060,22 @@
     1989,
     1990
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Drugstore Cowboy",
+   "infobox_figures": 1
   },
   "Q1125566": {
    "runtime": 68,
    "pub_years": [
     1933
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 68,
+   "infobox_raw": "68 minutes",
+   "infobox_page": "Duck Soup (1933 film)",
+   "infobox_figures": 1
   },
   "Q583407": {
    "runtime": 90,
@@ -2700,7 +3112,11 @@
     1969,
     1969
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Easy Rider",
+   "infobox_figures": 1
   },
   "Q2349343": {
    "runtime": 83,
@@ -2708,7 +3124,11 @@
     1982,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 83,
+   "infobox_raw": "83 minutes",
+   "infobox_page": "Eating Raoul",
+   "infobox_figures": 1
   },
   "Q369346": {
    "runtime": 95,
@@ -2737,7 +3157,11 @@
     1990,
     1990
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 105,
+   "infobox_raw": "105 minutes",
+   "infobox_page": "Edward Scissorhands",
+   "infobox_figures": 1
   },
   "Q1206261": {
    "runtime": 99,
@@ -2777,7 +3201,11 @@
     1980,
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes sfn | Stine | 2001 | p=106",
+   "infobox_page": "Emanuelle and the Last Cannibals",
+   "infobox_figures": 1
   },
   "Q1313289": {
    "runtime": 90,
@@ -2799,7 +3227,11 @@
     1985,
     1994
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Emmanuelle (1974 film)",
+   "infobox_figures": 1
   },
   "Q331617": {
    "runtime": 98,
@@ -2823,7 +3255,11 @@
     1982,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Enter the Dragon",
+   "infobox_figures": 1
   },
   "Q4530155": {
    "runtime": 82,
@@ -2831,7 +3267,11 @@
     1970,
     1970
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 82,
+   "infobox_raw": "82 minutes sfn | Muir | 2012 | p=112",
+   "infobox_page": "Equinox (1970 film)",
+   "infobox_figures": 1
   },
   "Q11618": {
    "runtime": 89,
@@ -2842,7 +3282,11 @@
     1978,
     1978
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 89,
+   "infobox_raw": "89 minutes",
+   "infobox_page": "Eraserhead",
+   "infobox_figures": 1
   },
   "Q403033": {
    "runtime": 99,
@@ -2861,7 +3305,11 @@
     1981,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 85,
+   "infobox_raw": "85 minutes",
+   "infobox_page": "The Evil Dead",
+   "infobox_figures": 1
   },
   "Q750028": {
    "runtime": 85,
@@ -2873,7 +3321,11 @@
     1987,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 84,
+   "infobox_raw": "84 minutes",
+   "infobox_page": "Evil Dead II",
+   "infobox_figures": 1
   },
   "Q274167": {
    "runtime": 122,
@@ -2881,7 +3333,11 @@
     1973,
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 122,
+   "infobox_raw": "122 minutes",
+   "infobox_page": "The Exorcist",
+   "infobox_figures": 1
   },
   "Q760244": {
    "runtime": 90,
@@ -2892,7 +3348,11 @@
     1962,
     1960
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Eyes Without a Face (film)",
+   "infobox_figures": 1
   },
   "Q2251852": {
    "runtime": 89,
@@ -2953,7 +3413,11 @@
     1942,
     1952
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 126,
+   "infobox_raw": "126 minutes",
+   "infobox_page": "Fantasia (1940 film)",
+   "infobox_figures": 1
   },
   "Q477687": {
    "runtime": 72,
@@ -2962,7 +3426,11 @@
     1973,
     1973
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 71,
+   "infobox_raw": "71 minutes",
+   "infobox_page": "Fantastic Planet",
+   "infobox_figures": 1
   },
   "Q2026801": {
    "runtime": null,
@@ -3015,7 +3483,11 @@
    "pub_years": [
     1965
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 83,
+   "infobox_raw": "83 minutes",
+   "infobox_page": "Faster, Pussycat! Kill! Kill!",
+   "infobox_figures": 1
   },
   "Q2362333": {
    "runtime": 100,
@@ -3072,14 +3544,22 @@
     1986,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Ferris Bueller's Day Off",
+   "infobox_figures": 1
   },
   "Q2037665": {
    "runtime": 74,
    "pub_years": [
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 74,
+   "infobox_raw": "74 minutes",
+   "infobox_page": "Fiend Without a Face",
+   "infobox_figures": 1
   },
   "Q106506": {
    "runtime": 121,
@@ -3099,7 +3579,11 @@
     1999,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 139,
+   "infobox_raw": "139 minutes",
+   "infobox_page": "Fight Club",
+   "infobox_figures": 1
   },
   "Q7734165": {
    "runtime": 97,
@@ -3114,7 +3598,11 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 157,
+   "infobox_raw": "157 minutes",
+   "infobox_page": "Fitzcarraldo",
+   "infobox_figures": 1
   },
   "Q1116991": {
    "runtime": 96,
@@ -3125,7 +3613,11 @@
     1971,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 98,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "Five Easy Pieces",
+   "infobox_figures": 1
   },
   "Q1171321": {
    "runtime": 98,
@@ -3143,7 +3635,11 @@
    "pub_years": [
     1963
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 42,
+   "infobox_raw": "42 minutes",
+   "infobox_page": "Flaming Creatures",
+   "infobox_figures": 1
   },
   "Q1428092": {
    "runtime": 105,
@@ -3158,7 +3654,11 @@
     1958,
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "The Fly (1958 film)",
+   "infobox_figures": 1
   },
   "Q1331230": {
    "runtime": 99,
@@ -3168,21 +3668,33 @@
     1956,
     1957
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 98,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "Forbidden Planet",
+   "infobox_figures": 1
   },
   "Q766089": {
    "runtime": 79,
    "pub_years": [
     1948
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 76,
+   "infobox_raw": "76 minutes",
+   "infobox_page": "Force of Evil",
+   "infobox_figures": 1
   },
   "Q1440249": {
    "runtime": 87,
    "pub_years": [
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Foxy Brown (film)",
+   "infobox_figures": 1
   },
   "Q546829": {
    "runtime": 71,
@@ -3197,7 +3709,11 @@
    "pub_years": [
     1932
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 64,
+   "infobox_raw": "64 minutes",
+   "infobox_page": "Freaks (1932 film)",
+   "infobox_figures": 1
   },
   "Q1453720": {
    "runtime": 97,
@@ -3250,7 +3766,11 @@
     1978,
     1978
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 78,
+   "infobox_raw": "78 minutes",
+   "infobox_page": "Fritz the Cat (film)",
+   "infobox_figures": 1
   },
   "Q196004": {
    "runtime": 104,
@@ -3302,7 +3822,11 @@
     2000,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Galaxy Quest",
+   "infobox_figures": 1
   },
   "Q2091109": {
    "runtime": 108,
@@ -3316,7 +3840,11 @@
    "pub_years": [
     1973
    ],
-   "src": "infobox"
+   "src": "infobox",
+   "infobox_runtime": 113,
+   "infobox_raw": "plainlist | | 113 minutes | 78 minutes small | (recut)",
+   "infobox_page": "Ganja & Hess",
+   "infobox_figures": 2
   },
   "Q511591": {
    "runtime": 107,
@@ -3341,7 +3869,11 @@
     1974,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Get Carter",
+   "infobox_figures": 1
   },
   "Q327332": {
    "runtime": 116,
@@ -3361,7 +3893,11 @@
    "pub_years": [
     1995
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 82,
+   "infobox_raw": "82 minutes",
+   "infobox_page": "Ghost in the Shell (1995 film)",
+   "infobox_figures": 1
   },
   "Q139460": {
    "runtime": 111,
@@ -3370,7 +3906,11 @@
     2001,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Ghost World (film)",
+   "infobox_figures": 1
   },
   "Q3104975": {
    "runtime": 93,
@@ -3387,14 +3927,22 @@
     2001,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 108,
+   "infobox_raw": "108 minutes",
+   "infobox_page": "Ginger Snaps (film)",
+   "infobox_figures": 1
   },
   "Q1506824": {
    "runtime": 93,
    "pub_years": [
     1956
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "The Girl Can't Help It",
+   "infobox_figures": 1
   },
   "Q2470202": {
    "runtime": 91,
@@ -3422,7 +3970,11 @@
     1995,
     1995
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 65,
+   "infobox_raw": "65 minutes",
+   "infobox_page": "Glen or Glenda",
+   "infobox_figures": 1
   },
   "Q2256780": {
    "runtime": 87,
@@ -3450,7 +4002,11 @@
     1984,
     1985
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "The Gods Must Be Crazy",
+   "infobox_figures": 1
   },
   "Q860461": {
    "runtime": 100,
@@ -3460,7 +4016,11 @@
     1956,
     1957
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Godzilla (1954 film)",
+   "infobox_figures": 1
   },
   "Q2875": {
    "runtime": 238,
@@ -3513,7 +4073,11 @@
    "pub_years": [
     1975
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 95,
+   "infobox_raw": "95 minutes",
+   "infobox_page": "Grey Gardens",
+   "infobox_figures": 1
   },
   "Q679023": {
    "runtime": 191,
@@ -3540,7 +4104,11 @@
     1950,
     1951
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 87,
+   "infobox_raw": "87 minutes",
+   "infobox_page": "Gun Crazy",
+   "infobox_figures": 1
   },
   "Q466101": {
    "runtime": 96,
@@ -3558,7 +4126,11 @@
     1988,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Hairspray (1988 film)",
+   "infobox_figures": 1
   },
   "Q221103": {
    "runtime": 92,
@@ -3567,7 +4139,11 @@
     1979,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Halloween (1978 film)",
+   "infobox_figures": 1
   },
   "Q1125897": {
    "runtime": 103,
@@ -3585,7 +4161,11 @@
     1998,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 139,
+   "infobox_raw": "139 minutes",
+   "infobox_page": "Happiness (1998 film)",
+   "infobox_figures": 1
   },
   "Q587394": {
    "runtime": 113,
@@ -3594,7 +4174,11 @@
     2001,
     2002
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes",
+   "infobox_page": "The Happiness of the Katakuris",
+   "infobox_figures": 1
   },
   "Q1204213": {
    "runtime": 96,
@@ -3613,7 +4197,11 @@
     1992,
     2002
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 128,
+   "infobox_raw": "128 minutes",
+   "infobox_page": "Hard Boiled",
+   "infobox_figures": 1
   },
   "Q913311": {
    "runtime": 87,
@@ -3641,14 +4229,22 @@
     1976,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Hard Times (1975 film)",
+   "infobox_figures": 1
   },
   "Q576909": {
    "runtime": 120,
    "pub_years": [
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "The Harder They Come",
+   "infobox_figures": 1
   },
   "Q368577": {
    "runtime": 91,
@@ -3656,7 +4252,11 @@
     1971,
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Harold and Maude",
+   "infobox_figures": 1
   },
   "Q1412513": {
    "runtime": 104,
@@ -3673,7 +4273,11 @@
    "pub_years": [
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes sfn | Galbraith | 2008 | p=309",
+   "infobox_page": "House (1977 film)",
+   "infobox_figures": 1
   },
   "Q1438966": {
    "runtime": 107,
@@ -3682,14 +4286,22 @@
     1922,
     1929
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 105,
+   "infobox_raw": "Plainlist | | 105 minutes (restoration) | 74 minutes (1968 version)",
+   "infobox_page": "Häxan",
+   "infobox_figures": 2
   },
   "Q3280621": {
    "runtime": 85,
    "pub_years": [
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 86,
+   "infobox_raw": "86 minutes 110 minutes small | (original cut)",
+   "infobox_page": "Head (film)",
+   "infobox_figures": 2
   },
   "Q819538": {
    "runtime": 94,
@@ -3725,7 +4337,11 @@
     1975,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Heat (1972 film)",
+   "infobox_figures": 1
   },
   "Q1551916": {
    "runtime": 103,
@@ -3734,7 +4350,11 @@
     1989,
     1989
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Heathers",
+   "infobox_figures": 1
   },
   "Q148204": {
    "runtime": 151,
@@ -3750,7 +4370,11 @@
     1981,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Heavy Metal (film)",
+   "infobox_figures": 1
   },
   "Q1753731": {
    "runtime": 95,
@@ -3761,7 +4385,11 @@
     2001,
     2002
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Hedwig and the Angry Inch (film)",
+   "infobox_figures": 1
   },
   "Q646233": {
    "runtime": null,
@@ -3812,7 +4440,11 @@
    "pub_years": [
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 84,
+   "infobox_raw": "84 minutes",
+   "infobox_page": "High School Confidential (film)",
+   "infobox_figures": 1
   },
   "Q3203773": {
    "runtime": 90,
@@ -3861,7 +4493,11 @@
     1987,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 97,
+   "infobox_raw": "97 minutes",
+   "infobox_page": "The Hitcher (1986 film)",
+   "infobox_figures": 1
   },
   "Q1640076": {
    "runtime": 114,
@@ -3878,7 +4514,11 @@
    "pub_years": [
     1970
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 108,
+   "infobox_raw": "108 minutes sfn | Craig | 2019 | p=192",
+   "infobox_page": "The Honeymoon Killers",
+   "infobox_figures": 1
   },
   "Q649850": {
    "runtime": 90,
@@ -3978,7 +4618,11 @@
     1943,
     1943
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 69,
+   "infobox_raw": "69 minutes",
+   "infobox_page": "I Walked with a Zombie",
+   "infobox_figures": 1
   },
   "Q847276": {
    "runtime": 75,
@@ -4011,7 +4655,11 @@
     2001,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 130,
+   "infobox_raw": "130 minutes",
+   "infobox_page": "Ichi the Killer (film)",
+   "infobox_figures": 1
   },
   "Q1346745": {
    "runtime": 111,
@@ -4021,7 +4669,11 @@
     1969,
     1969
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "if....",
+   "infobox_figures": 1
   },
   "Q705145": {
    "runtime": 96,
@@ -4041,7 +4693,11 @@
     1959,
     1959
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 125,
+   "infobox_raw": "125 minutes",
+   "infobox_page": "Imitation of Life (1959 film)",
+   "infobox_figures": 1
   },
   "Q1305455": {
    "runtime": 94,
@@ -4061,7 +4717,11 @@
     2008,
     2008
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 107,
+   "infobox_raw": "107 minutes",
+   "infobox_page": "In Bruges",
+   "infobox_figures": 1
   },
   "Q510181": {
    "runtime": 105,
@@ -4088,7 +4748,11 @@
     1988,
     1989
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "Unbulleted list | 102 minutes (Producer's Cut) | 108 minutes (theatrical cut)",
+   "infobox_page": "In the Realm of the Senses",
+   "infobox_figures": 2
   },
   "Q972001": {
    "runtime": 81,
@@ -4096,7 +4760,11 @@
     1957,
     1957
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 81,
+   "infobox_raw": "81 minutes",
+   "infobox_page": "The Incredible Shrinking Man",
+   "infobox_figures": 1
   },
   "Q714057": {
    "runtime": 97,
@@ -4145,7 +4813,11 @@
     1956,
     1957
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 80,
+   "infobox_raw": "80 minutes",
+   "infobox_page": "Invasion of the Body Snatchers",
+   "infobox_figures": 1
   },
   "Q598818": {
    "runtime": 115,
@@ -4168,14 +4840,22 @@
     1979,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 115,
+   "infobox_raw": "115 minutes",
+   "infobox_page": "Invasion of the Body Snatchers (1978 film)",
+   "infobox_figures": 1
   },
   "Q2368317": {
    "runtime": 11,
    "pub_years": [
     1969
    ],
-   "src": "wikidata (short)"
+   "src": "wikidata (short)",
+   "infobox_runtime": 11,
+   "infobox_raw": "11 minutes",
+   "infobox_page": "Invocation of My Demon Brother",
+   "infobox_figures": 1
   },
   "Q867283": {
    "runtime": 86,
@@ -4210,7 +4890,11 @@
     1947,
     1947
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 131,
+   "infobox_raw": "131 minutes",
+   "infobox_page": "It's a Wonderful Life",
+   "infobox_figures": 1
   },
   "Q1051032": {
    "runtime": 95,
@@ -4255,7 +4939,11 @@
     1975,
     1976
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 124,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "Jaws (film)",
+   "infobox_figures": 1
   },
   "Q681269": {
    "runtime": 85,
@@ -4281,7 +4969,11 @@
    "pub_years": [
     1962
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 28,
+   "infobox_raw": "28 minutes",
+   "infobox_page": "La Jetée",
+   "infobox_figures": 1
   },
   "Q3808273": {
    "runtime": 101,
@@ -4296,7 +4988,11 @@
     1954,
     1954
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 110,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "Johnny Guitar",
+   "infobox_figures": 1
   },
   "Q2456013": {
    "runtime": 103,
@@ -4409,14 +5105,22 @@
     1997,
     1989
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 110,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "The Killer (1989 film)",
+   "infobox_figures": 1
   },
   "Q2171744": {
    "runtime": 88,
    "pub_years": [
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "Killer Klowns from Outer Space",
+   "infobox_figures": 1
   },
   "Q592072": {
    "runtime": 85,
@@ -4460,7 +5164,11 @@
     1933,
     1933
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "King Kong (1933 film)",
+   "infobox_figures": 1
   },
   "Q1122281": {
    "runtime": 109,
@@ -4485,14 +5193,22 @@
     1990,
     1990
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "King of New York",
+   "infobox_figures": 1
   },
   "Q2061752": {
    "runtime": 105,
    "pub_years": [
     1955
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 106,
+   "infobox_raw": "106 minutes",
+   "infobox_page": "Kiss Me Deadly",
+   "infobox_figures": 1
   },
   "Q278053": {
    "runtime": 97,
@@ -4565,7 +5281,11 @@
     1973,
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 129,
+   "infobox_raw": "129 minutes",
+   "infobox_page": "Last Tango in Paris",
+   "infobox_figures": 1
   },
   "Q225355": {
    "runtime": 94,
@@ -4582,7 +5302,11 @@
    "pub_years": [
     1944
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "Laura (1944 film)",
+   "infobox_figures": 1
   },
   "Q228186": {
    "runtime": 216,
@@ -4619,7 +5343,11 @@
     1979,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Monty Python's Life of Brian",
+   "infobox_figures": 1
   },
   "Q1810871": {
    "runtime": 112,
@@ -4627,7 +5355,11 @@
     1982,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Liquid Sky",
+   "infobox_figures": 1
   },
   "Q500296": {
    "runtime": 70,
@@ -4635,7 +5367,11 @@
     1960,
     1960
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 72,
+   "infobox_raw": "72 minutes",
+   "infobox_page": "The Little Shop of Horrors",
+   "infobox_figures": 1
   },
   "Q503018": {
    "runtime": 120,
@@ -4686,7 +5422,11 @@
     1973,
     1973
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "The Long Goodbye (film)",
+   "infobox_figures": 1
   },
   "Q190214": {
    "runtime": null,
@@ -4745,7 +5485,11 @@
     1933,
     1931
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "M (1931 film)",
+   "infobox_figures": 1
   },
   "Q3841929": {
    "runtime": 72,
@@ -4761,7 +5505,11 @@
     1980,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Mad Max (film)",
+   "infobox_figures": 1
   },
   "Q1125262": {
    "runtime": 95,
@@ -4770,7 +5518,11 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "The Road Warrior",
+   "infobox_figures": 1
   },
   "Q161845": {
    "runtime": 98,
@@ -4786,7 +5538,11 @@
     1941,
     1941
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "The Maltese Falcon (1941 film)",
+   "infobox_figures": 1
   },
   "Q491871": {
    "runtime": 95,
@@ -4794,14 +5550,22 @@
     1992,
     1993
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 95,
+   "infobox_raw": "95 minutes 92 minutes small | (Edited cut)",
+   "infobox_page": "Man Bites Dog (film)",
+   "infobox_figures": 2
   },
   "Q1195538": {
    "runtime": 100,
    "pub_years": [
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 min",
+   "infobox_page": "Man of the West",
+   "infobox_figures": 1
   },
   "Q1417721": {
    "runtime": 90,
@@ -4821,7 +5585,11 @@
     1976,
     1976
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 138,
+   "infobox_raw": "138 minutes",
+   "infobox_page": "The Man Who Fell to Earth",
+   "infobox_figures": 1
   },
   "Q1042931": {
    "runtime": 175,
@@ -4871,7 +5639,11 @@
     1962,
     1963
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 126,
+   "infobox_raw": "126 minutes",
+   "infobox_page": "The Manchurian Candidate (1962 film)",
+   "infobox_figures": 1
   },
   "Q886719": {
    "runtime": 117,
@@ -4881,14 +5653,22 @@
     1987,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Manhunter (film)",
+   "infobox_figures": 1
   },
   "Q691828": {
    "runtime": 74,
    "pub_years": [
     1966
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 70,
+   "infobox_raw": "70 minutes",
+   "infobox_page": "Manos: The Hands of Fate",
+   "infobox_figures": 1
   },
   "Q840297": {
    "runtime": 81,
@@ -4921,14 +5701,22 @@
    "pub_years": [
     1978
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 95,
+   "infobox_raw": "95 minutes",
+   "infobox_page": "Martin (1977 film)",
+   "infobox_figures": 1
   },
   "Q2225929": {
    "runtime": 86,
    "pub_years": [
     1964
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "The Masque of the Red Death (1964 film)",
+   "infobox_figures": 1
   },
   "Q2483699": {
    "runtime": 89,
@@ -4971,7 +5759,11 @@
     1976,
     1973
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Mean Streets",
+   "infobox_figures": 1
   },
   "Q1284125": {
    "runtime": 111,
@@ -5005,7 +5797,11 @@
     2001,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes",
+   "infobox_page": "Memento (film)",
+   "infobox_figures": 1
   },
   "Q151599": {
    "runtime": 153,
@@ -5041,7 +5837,11 @@
     1929,
     1930
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 153,
+   "infobox_raw": "153 minutes (original German release)",
+   "infobox_page": "Metropolis (1927 film)",
+   "infobox_figures": 1
   },
   "Q61696": {
    "runtime": 108,
@@ -5050,7 +5850,11 @@
     1969,
     1969
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 113,
+   "infobox_raw": "113 minutes",
+   "infobox_page": "Midnight Cowboy",
+   "infobox_figures": 1
   },
   "Q979726": {
    "runtime": 111,
@@ -5059,7 +5863,11 @@
     1950,
     1945
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "Mildred Pierce (film)",
+   "infobox_figures": 1
   },
   "Q130142": {
    "runtime": 115,
@@ -5099,7 +5907,11 @@
     1982,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 129,
+   "infobox_raw": "129 minutes",
+   "infobox_page": "Mommie Dearest (film)",
+   "infobox_figures": 1
   },
   "Q25043": {
    "runtime": 91,
@@ -5112,7 +5924,11 @@
     1975,
     1975
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Monty Python and the Holy Grail",
+   "infobox_figures": 1
   },
   "Q1212682": {
    "runtime": 80,
@@ -5127,7 +5943,11 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 80,
+   "infobox_raw": "80 minutes",
+   "infobox_page": "Ms. 45",
+   "infobox_figures": 1
   },
   "Q370252": {
    "runtime": 92,
@@ -5156,7 +5976,11 @@
     1988,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 86,
+   "infobox_raw": "86 minutes",
+   "infobox_page": "My Neighbor Totoro",
+   "infobox_figures": 1
   },
   "Q1125451": {
    "runtime": 102,
@@ -5165,7 +5989,11 @@
     1991,
     1991
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "My Own Private Idaho",
+   "infobox_figures": 1
   },
   "Q2753143": {
    "runtime": 94,
@@ -5197,7 +6025,11 @@
    "pub_years": [
     1964
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "The Naked Kiss",
+   "infobox_figures": 1
   },
   "Q1755864": {
    "runtime": 110,
@@ -5208,7 +6040,11 @@
     1992,
     1992
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 115,
+   "infobox_raw": "115 minutes",
+   "infobox_page": "Naked Lunch (film)",
+   "infobox_figures": 1
   },
   "Q4329399": {
    "runtime": 90,
@@ -5232,7 +6068,11 @@
    "pub_years": [
     1952
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 71,
+   "infobox_raw": "71 minutes",
+   "infobox_page": "The Narrow Margin",
+   "infobox_figures": 1
   },
   "Q386164": {
    "runtime": 94,
@@ -5240,7 +6080,11 @@
     1987,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 95,
+   "infobox_raw": "95 minutes",
+   "infobox_page": "Near Dark",
+   "infobox_figures": 1
   },
   "Q652251": {
    "runtime": 68,
@@ -5267,7 +6111,11 @@
     1955,
     1956
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "The Night of the Hunter (film)",
+   "infobox_figures": 1
   },
   "Q623051": {
    "runtime": 96,
@@ -5278,7 +6126,11 @@
     1968,
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Night of the Living Dead",
+   "infobox_figures": 1
   },
   "Q312565": {
    "runtime": 122,
@@ -5304,7 +6156,11 @@
     1976,
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 118,
+   "infobox_raw": "118 minutes",
+   "infobox_page": "The Night Porter",
+   "infobox_figures": 1
   },
   "Q322328": {
    "runtime": 73,
@@ -5316,7 +6172,11 @@
     1993,
     1993
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 76,
+   "infobox_raw": "76 minutes",
+   "infobox_page": "The Nightmare Before Christmas",
+   "infobox_figures": 1
   },
   "Q329434": {
    "runtime": 91,
@@ -5334,7 +6194,11 @@
     1922,
     1922
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "63–94 minutes, depending on version and transfer speed",
+   "infobox_page": "Nosferatu: A Symphony of Horror",
+   "infobox_figures": 1
   },
   "Q1346566": {
    "runtime": 117,
@@ -5356,7 +6220,11 @@
     1999,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 89,
+   "infobox_raw": "89 minutes",
+   "infobox_page": "Office Space",
+   "infobox_figures": 1
   },
   "Q475693": {
    "runtime": 116,
@@ -5367,7 +6235,11 @@
     2005,
     2003
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Oldboy (2003 film)",
+   "infobox_figures": 1
   },
   "Q168154": {
    "runtime": 171,
@@ -5377,7 +6249,11 @@
     1969,
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 171,
+   "infobox_raw": "Plainlist | | 171 minutes (Italian version) | 165 minutes (international version) | 140 minutes (American theatrical ver",
+   "infobox_page": "Once Upon a Time in the West",
+   "infobox_figures": 3
   },
   "Q171669": {
    "runtime": 136,
@@ -5418,7 +6294,11 @@
     1950,
     1950
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 95,
+   "infobox_raw": "95 minutes",
+   "infobox_page": "Orpheus (film)",
+   "infobox_figures": 1
   },
   "Q477630": {
    "runtime": 135,
@@ -5467,7 +6347,11 @@
    "pub_years": [
     1929
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 133,
+   "infobox_raw": "133 minutes efn | While various truncated cuts of the film were shown in the United States and other countries, the dire",
+   "infobox_page": "Pandora's Box (1929 film)",
+   "infobox_figures": 2
   },
   "Q662163": {
    "runtime": 113,
@@ -5484,7 +6368,11 @@
     1974,
     1975
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "The Parallax View",
+   "infobox_figures": 1
   },
   "Q160946": {
    "runtime": 147,
@@ -5532,7 +6420,11 @@
     1960,
     1961
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Peeping Tom (1960 film)",
+   "infobox_figures": 1
   },
   "Q1205051": {
    "runtime": 81,
@@ -5549,7 +6441,11 @@
    "pub_years": [
     1970
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 105,
+   "infobox_raw": "105 minutes",
+   "infobox_page": "Performance (film)",
+   "infobox_figures": 1
   },
   "Q1615516": {
    "runtime": 124,
@@ -5596,7 +6492,11 @@
    "pub_years": [
     1925
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 107,
+   "infobox_raw": "indented plainlist | | 107 minutes (original cut) | 94 minutes (1929 sound re-release) | 92 minutes (Eastman House print",
+   "infobox_page": "The Phantom of the Opera (1925 film)",
+   "infobox_figures": 4
   },
   "Q1170086": {
    "runtime": 94,
@@ -5617,7 +6517,11 @@
     1976,
     1976
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Phantom of the Paradise",
+   "infobox_figures": 1
   },
   "Q937762": {
    "runtime": 85,
@@ -5626,7 +6530,11 @@
     1998,
     1999
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 84,
+   "infobox_raw": "84 minutes",
+   "infobox_page": "Pi (film)",
+   "infobox_figures": 1
   },
   "Q1421747": {
    "runtime": 118,
@@ -5641,7 +6549,11 @@
    "pub_years": [
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Pink Flamingos",
+   "infobox_figures": 1
   },
   "Q1140216": {
    "runtime": 94,
@@ -5662,7 +6574,11 @@
     1979,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Piranha (1978 film)",
+   "infobox_figures": 1
   },
   "Q257515": {
    "runtime": 79,
@@ -5671,7 +6587,11 @@
     1959,
     1995
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 80,
+   "infobox_raw": "80 minutes",
+   "infobox_page": "Plan 9 from Outer Space",
+   "infobox_figures": 1
   },
   "Q59534": {
    "runtime": 112,
@@ -5681,7 +6601,11 @@
     1968,
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 112,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Planet of the Apes (1968 film)",
+   "infobox_figures": 1
   },
   "Q544434": {
    "runtime": 98,
@@ -5717,7 +6641,11 @@
     1967,
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Point Blank (1967 film)",
+   "infobox_figures": 1
   },
   "Q1146552": {
    "runtime": 122,
@@ -5725,7 +6653,11 @@
     1991,
     1991
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 122,
+   "infobox_raw": "122 minutes",
+   "infobox_page": "Point Break",
+   "infobox_figures": 1
   },
   "Q1425404": {
    "runtime": 86,
@@ -5790,7 +6722,11 @@
    "pub_years": [
     2004
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 77,
+   "infobox_raw": "77 minutes",
+   "infobox_page": "Primer (film)",
+   "infobox_figures": 1
   },
   "Q506418": {
    "runtime": 97,
@@ -5798,7 +6734,11 @@
     1987,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 98,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "The Princess Bride (film)",
+   "infobox_figures": 1
   },
   "Q186572": {
    "runtime": 128,
@@ -5807,7 +6747,11 @@
     2001,
     1997
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 133,
+   "infobox_raw": "133 minutes",
+   "infobox_page": "Princess Mononoke",
+   "infobox_figures": 1
   },
   "Q315732": {
    "runtime": 88,
@@ -5829,7 +6773,11 @@
     1977,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "The Producers (1967 film)",
+   "infobox_figures": 1
   },
   "Q163038": {
    "runtime": 109,
@@ -5839,7 +6787,11 @@
     1960,
     1960
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "Psycho (1960 film)",
+   "infobox_figures": 1
   },
   "Q2093499": {
    "runtime": 85,
@@ -5858,7 +6810,11 @@
     1994,
     1994
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 154,
+   "infobox_raw": "154 minutes",
+   "infobox_page": "Pulp Fiction",
+   "infobox_figures": 1
   },
   "Q465732": {
    "runtime": 93,
@@ -5868,7 +6824,11 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Q – The Winged Serpent",
+   "infobox_figures": 1
   },
   "Q962987": {
    "runtime": 119,
@@ -5889,7 +6849,11 @@
     1983,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 120,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Quadrophenia (film)",
+   "infobox_figures": 1
   },
   "Q1683913": {
    "runtime": 85,
@@ -5957,7 +6921,11 @@
     1985,
     1985
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 86,
+   "infobox_raw": "86 minutes",
+   "infobox_page": "Re-Animator",
+   "infobox_figures": 1
   },
   "Q426346": {
    "runtime": 106,
@@ -5965,7 +6933,11 @@
     1955,
     1956
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "Rebel Without a Cause",
+   "infobox_figures": 1
   },
   "Q506400": {
    "runtime": 114,
@@ -5991,7 +6963,11 @@
    "pub_years": [
     1936
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 68,
+   "infobox_raw": "68 minutes",
+   "infobox_page": "Reefer Madness",
+   "infobox_figures": 1
   },
   "Q1280565": {
    "runtime": 92,
@@ -5999,7 +6975,11 @@
     1984,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "Repo Man (film)",
+   "infobox_figures": 1
   },
   "Q487181": {
    "runtime": 102,
@@ -6019,7 +6999,11 @@
     1992,
     1992
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "Reservoir Dogs",
+   "infobox_figures": 1
   },
   "Q1475119": {
    "runtime": 86,
@@ -6048,7 +7032,11 @@
    "pub_years": [
     1998
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 95,
+   "infobox_raw": "95 minutes sfn | Galbraith IV | 2008 | p=402",
+   "infobox_page": "Ring (film)",
+   "infobox_figures": 1
   },
   "Q1008351": {
    "runtime": 136,
@@ -6076,7 +7064,11 @@
    "pub_years": [
     1953
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 66,
+   "infobox_raw": "66 minutes",
+   "infobox_page": "Robot Monster",
+   "infobox_figures": 1
   },
   "Q1479868": {
    "runtime": 93,
@@ -6084,7 +7076,11 @@
     1979,
     1978
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Rock 'n' Roll High School",
+   "infobox_figures": 1
   },
   "Q751921": {
    "runtime": 100,
@@ -6092,7 +7088,11 @@
     1975,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "The Rocky Horror Picture Show",
+   "infobox_figures": 1
   },
   "Q1854476": {
    "runtime": 88,
@@ -6107,7 +7107,11 @@
    "pub_years": [
     2003
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "The Room",
+   "infobox_figures": 1
   },
   "Q109564": {
    "runtime": 80,
@@ -6125,7 +7129,11 @@
     1968,
     1968
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 137,
+   "infobox_raw": "137 minutes",
+   "infobox_page": "Rosemary's Baby (film)",
+   "infobox_figures": 1
   },
   "Q468697": {
    "runtime": 81,
@@ -6152,7 +7160,11 @@
     1998,
     2001
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Rushmore (film)",
+   "infobox_figures": 1
   },
   "Q657977": {
    "runtime": 117,
@@ -6160,7 +7172,11 @@
     1975,
     1976
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 116,
+   "infobox_raw": "116 minutes",
+   "infobox_page": "Salò, or the 120 Days of Sodom",
+   "infobox_figures": 1
   },
   "Q512618": {
    "runtime": 94,
@@ -6200,14 +7216,22 @@
    "pub_years": [
     1964
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 81,
+   "infobox_raw": "81 minutes",
+   "infobox_page": "Santa Claus Conquers the Martians",
+   "infobox_figures": 1
   },
   "Q2342429": {
    "runtime": 182,
    "pub_years": [
     1965
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 182,
+   "infobox_raw": "182 minutes",
+   "infobox_page": "The Saragossa Manuscript (film)",
+   "infobox_figures": 1
   },
   "Q300547": {
    "runtime": 100,
@@ -6243,7 +7267,11 @@
     1983,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Scanners",
+   "infobox_figures": 1
   },
   "Q47075": {
    "runtime": 170,
@@ -6266,7 +7294,11 @@
    "pub_years": [
     1963
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 28,
+   "infobox_raw": "28 minutes",
+   "infobox_page": "Scorpio Rising (film)",
+   "infobox_figures": 1
   },
   "Q276769": {
    "runtime": 119,
@@ -6275,7 +7307,11 @@
     1956,
     1956
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 119,
+   "infobox_raw": "119 minutes",
+   "infobox_page": "The Searchers",
+   "infobox_figures": 1
   },
   "Q1216030": {
    "runtime": 98,
@@ -6294,7 +7330,11 @@
     1964,
     1964
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 115,
+   "infobox_raw": "115 minutes",
+   "infobox_page": "The Servant (1963 film)",
+   "infobox_figures": 1
   },
   "Q190908": {
    "runtime": 127,
@@ -6376,7 +7416,11 @@
     1971,
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 100,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "Shaft (1971 film)",
+   "infobox_figures": 1
   },
   "Q596358": {
    "runtime": 108,
@@ -6415,7 +7459,11 @@
     2004,
     2004
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "Shaun of the Dead",
+   "infobox_figures": 1
   },
   "Q172241": {
    "runtime": 142,
@@ -6426,7 +7474,11 @@
     1995,
     1995
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 142,
+   "infobox_raw": "142 minutes",
+   "infobox_page": "The Shawshank Redemption",
+   "infobox_figures": 1
   },
   "Q186341": {
    "runtime": 144,
@@ -6461,14 +7513,22 @@
     1983,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 87,
+   "infobox_raw": "87 minutes",
+   "infobox_page": "Shivers (1975 film)",
+   "infobox_figures": 1
   },
   "Q1940924": {
    "runtime": 101,
    "pub_years": [
     1963
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Shock Corridor",
+   "infobox_figures": 1
   },
   "Q1759183": {
    "runtime": 85,
@@ -6496,7 +7556,11 @@
    "pub_years": [
     1975
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 204,
+   "infobox_raw": "204 minutes (Original version) 198 minutes (Theatrical version)",
+   "infobox_page": "Sholay",
+   "infobox_figures": 2
   },
   "Q1170246": {
    "runtime": 82,
@@ -6506,7 +7570,11 @@
     1971,
     1972
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 82,
+   "infobox_raw": "82 minutes",
+   "infobox_page": "The Shooting",
+   "infobox_figures": 1
   },
   "Q532264": {
    "runtime": 131,
@@ -6514,7 +7582,11 @@
     1995,
     1996
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 131,
+   "infobox_raw": "131 minutes",
+   "infobox_page": "Showgirls",
+   "infobox_figures": 1
   },
   "Q600950": {
    "runtime": 114,
@@ -6523,7 +7595,11 @@
     1987,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 114,
+   "infobox_raw": "114 minutes",
+   "infobox_page": "Sid & Nancy",
+   "infobox_figures": 1
   },
   "Q133654": {
    "runtime": 118,
@@ -6560,7 +7636,11 @@
     1952,
     1952
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 103,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Singin' in the Rain",
+   "infobox_figures": 1
   },
   "Q1216160": {
    "runtime": 92,
@@ -6595,7 +7675,11 @@
    "pub_years": [
     1991
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 97,
+   "infobox_raw": "97 minutes",
+   "infobox_page": "Slacker (film)",
+   "infobox_figures": 1
   },
   "Q1752478": {
    "runtime": 123,
@@ -6646,7 +7730,11 @@
     1959,
     1959
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 121,
+   "infobox_raw": "121 minutes",
+   "infobox_page": "Some Like It Hot",
+   "infobox_figures": 1
   },
   "Q644485": {
    "runtime": 113,
@@ -6663,7 +7751,11 @@
     1993,
     1998
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "Sonatine (1993 film)",
+   "infobox_figures": 1
   },
   "Q60072": {
    "runtime": 174,
@@ -6673,7 +7765,11 @@
     1965,
     1965
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 174,
+   "infobox_raw": "174 minutes",
+   "infobox_page": "The Sound of Music (film)",
+   "infobox_figures": 1
   },
   "Q7572391": {
    "runtime": 82,
@@ -6719,7 +7815,11 @@
    "pub_years": [
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 161,
+   "infobox_raw": "161 minutes",
+   "infobox_page": "Stalker (1979 film)",
+   "infobox_figures": 1
   },
   "Q1305622": {
    "runtime": 181,
@@ -6738,7 +7838,11 @@
     1977,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 121,
+   "infobox_raw": "121 minutes",
+   "infobox_page": "Star Wars (film)",
+   "infobox_figures": 1
   },
   "Q181795": {
    "runtime": 124,
@@ -6750,7 +7854,11 @@
     1980,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 124,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "The Empire Strikes Back",
+   "infobox_figures": 1
   },
   "Q653518": {
    "runtime": 89,
@@ -6760,7 +7868,11 @@
     1980,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "Stardust Memories",
+   "infobox_figures": 1
   },
   "Q478626": {
    "runtime": 129,
@@ -6817,7 +7929,11 @@
     1975,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 117,
+   "infobox_raw": "117 minutes 112 minutes small | (Edited cut)",
+   "infobox_page": "Straw Dogs (1971 film)",
+   "infobox_figures": 2
   },
   "Q8881030": {
    "runtime": 98,
@@ -6832,7 +7948,11 @@
     1942,
     1942
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Sullivan's Travels",
+   "infobox_figures": 1
   },
   "Q193570": {
    "runtime": 110,
@@ -6842,7 +7962,11 @@
     1950,
     1950
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 110,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "Sunset Boulevard (film)",
+   "infobox_figures": 1
   },
   "Q2601720": {
    "runtime": 93,
@@ -6860,7 +7984,11 @@
     1973,
     1980
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Super Fly (1972 film)",
+   "infobox_figures": 1
   },
   "Q7644185": {
    "runtime": 43,
@@ -6882,21 +8010,33 @@
     1977,
     1977
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 99,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "Suspiria",
+   "infobox_figures": 1
   },
   "Q1812665": {
    "runtime": 93,
    "pub_years": [
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 97,
+   "infobox_raw": "97 minutes",
+   "infobox_page": "Sweet Sweetback's Baadasssss Song",
+   "infobox_figures": 1
   },
   "Q1875744": {
    "runtime": 95,
    "pub_years": [
     1935
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Sylvia Scarlett",
+   "infobox_figures": 1
   },
   "Q3010551": {
    "runtime": 93,
@@ -6911,7 +8051,11 @@
    "pub_years": [
     1957
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 78,
+   "infobox_raw": "78 minutes",
+   "infobox_page": "The Tall T",
+   "infobox_figures": 1
   },
   "Q2300632": {
    "runtime": 98,
@@ -6934,14 +8078,22 @@
     1972,
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 90,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Targets",
+   "infobox_figures": 1
   },
   "Q1336251": {
    "runtime": 95,
    "pub_years": [
     1934
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 104,
+   "infobox_raw": "104 minutes",
+   "infobox_page": "Tarzan and His Mate",
+   "infobox_figures": 1
   },
   "Q47221": {
    "runtime": 114,
@@ -6950,7 +8102,11 @@
     1977,
     1976
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 114,
+   "infobox_raw": "114 minutes",
+   "infobox_page": "Taxi Driver",
+   "infobox_figures": 1
   },
   "Q1811797": {
    "runtime": 110,
@@ -6961,7 +8117,11 @@
     1983,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Tenebrae (film)",
+   "infobox_figures": 1
   },
   "Q162255": {
    "runtime": 108,
@@ -7023,7 +8183,11 @@
     1984,
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 83,
+   "infobox_raw": "83 minutes",
+   "infobox_page": "The Texas Chain Saw Massacre",
+   "infobox_figures": 1
   },
   "Q578809": {
    "runtime": 94,
@@ -7042,7 +8206,11 @@
     1988,
     1989
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 94,
+   "infobox_raw": "94 minutes",
+   "infobox_page": "They Live",
+   "infobox_figures": 1
   },
   "Q210756": {
    "runtime": 109,
@@ -7051,7 +8219,11 @@
     1982,
     1982
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 109,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "The Thing (1982 film)",
+   "infobox_figures": 1
   },
   "Q1141912": {
    "runtime": 100,
@@ -7070,7 +8242,11 @@
     1984,
     1984
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 82,
+   "infobox_raw": "82 minutes",
+   "infobox_page": "This Is Spinal Tap",
+   "infobox_figures": 1
   },
   "Q932814": {
    "runtime": 100,
@@ -7109,7 +8285,11 @@
     1971,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "THX 1138",
+   "infobox_figures": 1
   },
   "Q1426318": {
    "runtime": 112,
@@ -7170,7 +8350,11 @@
     1996,
     1997
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 108,
+   "infobox_raw": "108 minutes",
+   "infobox_page": "Tommy (1975 film)",
+   "infobox_figures": 1
   },
   "Q1139031": {
    "runtime": 101,
@@ -7181,7 +8365,11 @@
     1935,
     1936
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 101,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Top Hat",
+   "infobox_figures": 1
   },
   "Q477782": {
    "runtime": 125,
@@ -7190,14 +8378,22 @@
     1975,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 124,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "El Topo",
+   "infobox_figures": 1
   },
   "Q778161": {
    "runtime": 93,
    "pub_years": [
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 111,
+   "infobox_raw": "111 minutes (1998 version)",
+   "infobox_page": "Touch of Evil",
+   "infobox_figures": 1
   },
   "Q2299632": {
    "runtime": 106,
@@ -7214,7 +8410,11 @@
     1987,
     1986
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 82,
+   "infobox_raw": "82 minutes",
+   "infobox_page": "The Toxic Avenger (1984 film)",
+   "infobox_figures": 1
   },
   "Q109135": {
    "runtime": 94,
@@ -7224,7 +8424,11 @@
     1996,
     1996
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 93,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Trainspotting (film)",
+   "infobox_figures": 1
   },
   "Q963014": {
    "runtime": 110,
@@ -7238,7 +8442,11 @@
    "pub_years": [
     1967
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 82,
+   "infobox_raw": "82 minutes",
+   "infobox_page": "The Trip (1967 film)",
+   "infobox_figures": 1
   },
   "Q156497": {
    "runtime": 114,
@@ -7315,7 +8523,11 @@
     1971,
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Two-Lane Blacktop",
+   "infobox_figures": 1
   },
   "Q841920": {
    "runtime": 110,
@@ -7355,7 +8567,11 @@
     1978,
     1979
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 86,
+   "infobox_raw": "86 minutes",
+   "infobox_page": "Up in Smoke",
+   "infobox_figures": 1
   },
   "Q132351": {
    "runtime": 106,
@@ -7363,7 +8579,11 @@
     1995,
     1996
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 106,
+   "infobox_raw": "106 minutes",
+   "infobox_page": "The Usual Suspects",
+   "infobox_figures": 1
   },
   "Q1170515": {
    "runtime": 123,
@@ -7377,14 +8597,22 @@
    "pub_years": [
     1932
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 73,
+   "infobox_raw": "73 minutes",
+   "infobox_page": "Vampyr",
+   "infobox_figures": 1
   },
   "Q575980": {
    "runtime": 89,
    "pub_years": [
     1971
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 89,
+   "infobox_raw": "89 minutes sfn | Browning | Picart | 2010 | p=183",
+   "infobox_page": "Vampyros Lesbos",
+   "infobox_figures": 1
   },
   "Q1895379": {
    "runtime": 103,
@@ -7392,7 +8620,11 @@
     1988,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 106,
+   "infobox_raw": "106 minutes",
+   "infobox_page": "The Vanishing (1988 film)",
+   "infobox_figures": 1
   },
   "Q586880": {
    "runtime": 98,
@@ -7409,14 +8641,22 @@
     1958,
     1958
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 128,
+   "infobox_raw": "128 minutes",
+   "infobox_page": "Vertigo (film)",
+   "infobox_figures": 1
   },
   "Q747551": {
    "runtime": 89,
    "pub_years": [
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 89,
+   "infobox_raw": "89 minutes",
+   "infobox_page": "Videodrome",
+   "infobox_figures": 1
   },
   "Q939385": {
    "runtime": null,
@@ -7488,7 +8728,11 @@
     1980,
     1985
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 92,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "The Warriors (film)",
+   "infobox_figures": 1
   },
   "Q272595": {
    "runtime": 136,
@@ -7549,7 +8793,11 @@
     1988,
     1973
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "Westworld (film)",
+   "infobox_figures": 1
   },
   "Q2294292": {
    "runtime": 97,
@@ -7592,14 +8840,22 @@
     1950,
     1953
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 114,
+   "infobox_raw": "114 minutes",
+   "infobox_page": "White Heat",
+   "infobox_figures": 1
   },
   "Q1751461": {
    "runtime": 69,
    "pub_years": [
     1932
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 67,
+   "infobox_raw": "67 minutes; or 68 or 70 minutes",
+   "infobox_page": "White Zombie (film)",
+   "infobox_figures": 2
   },
   "Q1140649": {
    "runtime": 88,
@@ -7608,7 +8864,11 @@
     1974,
     1974
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 88,
+   "infobox_raw": "88 minutes sfn | Wiggins | 2023 | page=2",
+   "infobox_page": "The Wicker Man (1973 film)",
+   "infobox_figures": 1
   },
   "Q1219899": {
    "runtime": 86,
@@ -7625,7 +8885,11 @@
     1990,
     1990
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 124,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "Wild at Heart (film)",
+   "infobox_figures": 1
   },
   "Q994481": {
    "runtime": 145,
@@ -7637,14 +8901,22 @@
     1969,
     1969
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 145,
+   "infobox_raw": "145 minutes",
+   "infobox_page": "The Wild Bunch",
+   "infobox_figures": 1
   },
   "Q1138349": {
    "runtime": 79,
    "pub_years": [
     1953
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 79,
+   "infobox_raw": "79 minutes",
+   "infobox_page": "The Wild One",
+   "infobox_figures": 1
   },
   "Q936327": {
    "runtime": 100,
@@ -7666,7 +8938,11 @@
     1988,
     1987
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 127,
+   "infobox_raw": "127 minutes",
+   "infobox_page": "Wings of Desire",
+   "infobox_figures": 1
   },
   "Q15121267": {
    "runtime": 76,
@@ -7690,7 +8966,11 @@
     1987,
     1988
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 107,
+   "infobox_raw": "107 minutes",
+   "infobox_page": "Withnail and I",
+   "infobox_figures": 1
   },
   "Q428158": {
    "runtime": 136,
@@ -7704,7 +8984,11 @@
    "pub_years": [
     1939
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 102,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "The Wizard of Oz (1939 film)",
+   "infobox_figures": 1
   },
   "Q1306380": {
    "runtime": 155,
@@ -7740,7 +9024,11 @@
     1991,
     1992
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 89,
+   "infobox_raw": "89 minutes",
+   "infobox_page": "Women on the Verge of a Nervous Breakdown",
+   "infobox_figures": 1
   },
   "Q956288": {
    "runtime": 184,
@@ -7754,7 +9042,11 @@
    "pub_years": [
     1963
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 79,
+   "infobox_raw": "79 minutes",
+   "infobox_page": "X: The Man with the X-ray Eyes",
+   "infobox_figures": 1
   },
   "Q777970": {
    "runtime": 92,
@@ -7763,7 +9055,11 @@
     1980,
     1981
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 96,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Xanadu (film)",
+   "infobox_figures": 1
   },
   "Q1131791": {
    "runtime": 90,
@@ -7780,7 +9076,11 @@
     1961,
     1961
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 110,
+   "infobox_raw": "110 minutes sfn | Galbraith | 1996 | p=448",
+   "infobox_page": "Yojimbo",
+   "infobox_figures": 1
   },
   "Q651923": {
    "runtime": 114,
@@ -7869,7 +9169,11 @@
     1982,
     1983
    ],
-   "src": "wikidata"
+   "src": "wikidata",
+   "infobox_runtime": 91,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Zombi 2",
+   "infobox_figures": 1
   }
  },
  "rows": [

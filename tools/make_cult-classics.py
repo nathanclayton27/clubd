@@ -128,20 +128,50 @@ That rule applies ONLY to merges. Run over every row it would rename Q – The
 Winged Serpent to "Q" and Dr. Strangelove to its short form, so the source's
 own display title stands everywhere it is unambiguous.
 
-Weights
--------
-Every row is weighted, and every weight is a sourced runtime in hours to two
-decimals — Wikidata P2047 for 325 of the 326, taking the longest figure the
-item carries. Two rows needed a wider net than gwlib's default 15-250 minute
-window and say so here rather than being quietly dropped:
+Weights: the film's own infobox, not Wikidata (CLU-365)
+-------------------------------------------------------
+Every row is weighted, and every weight is the runtime printed in that film's
+own {{Infobox film}}, read by scratch/agent-cult/infobox_runtimes.py from the
+article the list's own wikilink points at. All 326.
 
-  * Invocation of My Demon Brother (1969) is 11 minutes. It is a Kenneth
-    Anger short and the cult books carry shorts; the figure is P2047's.
-  * Ganja & Hess (1973) carries no P2047 at all, so its weight is the 113
-    minutes printed in its own Wikipedia infobox — the original cut, which
-    the box lists first and above a 78-minute recut.
+It used to be Wikidata's P2047 for 325 of them, and that was wrong in a way
+nothing on the page could show. gwlib.wikidata.runtime() takes the LONGEST
+figure an item carries, and P2047 collects every cut a film has ever been
+given, so the figure reaches unrated and extended versions: this list shipped
+*Enter the Dragon* at 98 minutes while the film's own article says 102, cited
+to the BBFC — and the bruce-lee list, weighted from infoboxes, said 102. Two
+lists disagreeing about how long one film is will disagree about hours
+forever, so one source had to win, and the infobox wins for three reasons:
 
-No runtime was estimated; a missing one stops this generator.
+  * it is the article's own claim about the film, cited on the page, and it is
+    what every list built since reads;
+  * it names the version — "(theatrical)", "(final cut)", "(1998 version)" —
+    where P2047 is a bare number with the provenance stripped off;
+  * it is already the source for the two rows this list had to read by hand
+    (below), so following it everywhere removes an exception rather than
+    adding one.
+
+**Where a box prints more than one cut, the FIRST figure is taken** — the
+version the article leads with, which is the original release in every case
+but the handful the generator prints. Seventeen boxes list more than one, and
+the generator prints each of them with the figure it took, so the choice is
+visible rather than buried. The scrubbed field text is stored on every row in
+tools/data/cult-classics.json (`infobox_raw`) so any figure can be checked
+against the words beside it.
+
+Moving to the infobox changed 153 of the 326 weights, 52 of them by a single
+minute and the largest by more than an hour: *Martin* 165 to 95, *Das Boot*
+209 to 149, *Donnie Darko* 134 to 113 — every one of them P2047 reporting a
+longer cut than the film had in cinemas. Both of the old hand-read exceptions
+now come out of the same pipeline as everything else and are unchanged by it:
+Ganja & Hess still weighs the 113 minutes its box prints above a 78-minute
+recut, and Invocation of My Demon Brother, a Kenneth Anger short the cult
+books carry, still weighs 11.
+
+P2047 is kept in the data beside each infobox figure rather than thrown away,
+so the gap stays measurable — and it is the documented fallback if a box ever
+stops publishing a runtime. No runtime was estimated anywhere; a row with
+neither figure stops this generator.
 
 Deliberate overlaps
 -------------------
@@ -374,17 +404,52 @@ def main():
         w["aka_all"] = [a for a in ([w["aka"]] if w["aka"] else []) + w["names"]
                         if P.normt(a) != P.normt(w["t"])]
 
-    # ---- weights are all-or-nothing (CLU-131) -----------------------------
+    # ---- weights: the film's own infobox, all-or-nothing (CLU-131/365) ----
+    # The film's own {{Infobox film}} decides how long the film is. Wikidata's
+    # P2047 stays in the data beside it, unused unless a box publishes no
+    # figure at all, because P2047 is the longest cut an item carries and that
+    # is not the same question.
+    fallbacks, drift, multi = [], [], []
     for w in gated:
-        w["runtime"] = (facts.get(w["q"]) or {}).get("runtime")
+        f = facts.get(w["q"]) or {}
+        ib, wd = f.get("infobox_runtime"), f.get("runtime")
+        if ib:
+            w["runtime"], w["runtime_src"] = ib, "infobox"
+            if wd and wd != ib:
+                drift.append((abs(wd - ib), w["t"], wd, ib))
+            if (f.get("infobox_figures") or 1) > 1:
+                multi.append((w["t"], f["infobox_figures"], ib,
+                              f.get("infobox_raw") or ""))
+        else:
+            w["runtime"], w["runtime_src"] = wd, "wikidata"
+            fallbacks.append(w["t"])
         assert w["runtime"], "no sourced runtime for %s (%d)" % (w["t"],
                                                                  w["year"])
         assert 5 <= w["runtime"] <= 250, \
             "%s runtime %r is not credible" % (w["t"], w["runtime"])
-    off_wikidata = sorted(w["t"] for w in gated
-                          if facts[w["q"]].get("src") != "wikidata")
-    assert off_wikidata == ["Ganja & Hess", "Invocation of My Demon Brother"], \
-        "the weights docstring names the wrong exceptions: %s" % off_wikidata
+    # Today every row comes from its own infobox, and the note says so without
+    # hedging. If a box loses its runtime field this fails rather than quietly
+    # reintroducing a Wikidata figure — re-run
+    # scratch/agent-cult/infobox_runtimes.py first, in case the article simply
+    # was not re-fetched.
+    assert not fallbacks, \
+        ("%d rows have no runtime in their own infobox and would fall back to "
+         "Wikidata's longest cut: %s. Re-run "
+         "scratch/agent-cult/infobox_runtimes.py; if the box really has no "
+         "figure, say so in the runtime note before letting it through."
+         % (len(fallbacks), fallbacks[:6]))
+    assert {w["runtime_src"] for w in gated} == {"infobox"}, \
+        sorted({w["runtime_src"] for w in gated})
+    drift.sort(reverse=True)
+    # Two claims the runtime note makes about the shape of that drift, held to
+    # the data rather than to whoever wrote the sentence.
+    assert all(ib < wd for _d, _t, wd, ib in drift[:3]), \
+        ("the note says the three biggest moves are all Wikidata reporting a "
+         "longer cut than the release; they are %s" % drift[:3])
+    up = max(drift, key=lambda d: d[3] - d[2])
+    assert up[1] == "Touch of Evil", \
+        ("the note names Touch of Evil as the one large move the other way; "
+         "the biggest is now %s" % (up,))
 
     # ---- rows -------------------------------------------------------------
     gated.sort(key=lambda w: (w["year"], P.normt(w["t"])))
@@ -602,19 +667,45 @@ def main():
              % (PANEL, leaners, round(100 * leaners / len(entries)))],
             ["Bar widths are runtimes, and none was invented.",
              "All %d rows are weighted, %d hours in total, and every figure "
-             "is Wikidata's runtime for that film, on %d of the %d. "
-             "The exception is Ganja & Hess, which Wikidata records no "
-             "runtime for at all: its weight is the %d minutes its own "
-             "Wikipedia infobox prints for the original cut, rather than the "
-             "shorter recut the box lists beneath it. The range runs from %s "
-             "at %d minutes, a short the cult books carry and a feature "
-             "filter would have thrown out, to %s at %d. A missing runtime "
-             "stops this list being built rather than being guessed at."
-             % (len(entries), round(total_min / 60.0),
-                len(entries) - len(off_wikidata) + 1, len(entries),
-                [e for e in entries if e["t"] == "Ganja & Hess"][0]["runtime"],
+             "is the runtime printed in that film's own Wikipedia infobox — "
+             "all %d of them, with no exceptions and nothing estimated. The "
+             "range runs from %s at %d minutes, a short the cult books carry "
+             "and a feature filter would have thrown out, to %s at %d. A "
+             "missing runtime stops this list being built rather than being "
+             "guessed at."
+             % (len(entries), round(total_min / 60.0), len(entries),
                 shortest["t"], shortest["runtime"], longest["t"],
                 longest["runtime"])],
+            ["Why the infobox and not Wikidata.",
+             "This list used to weigh %d of its %d rows from Wikidata's "
+             "runtime property, which is what a list of this size reaches for "
+             "— one query, every film. The trouble is that the property "
+             "collects every cut a film has ever had and the reader takes the "
+             "longest, so the bars quietly measured unrated and extended "
+             "versions: Enter the Dragon showed 98 minutes where its own "
+             "article says 102, cited to the BBFC, and the Bruce Lee list "
+             "here said 102 as well. Two lists cannot disagree about how long "
+             "one film is, so the film's own infobox wins — it is the "
+             "article's own cited claim and it says which version it means. "
+             "Reading all %d that way moved %d of them — %d by a single "
+             "minute, %d up and %d down, and the largest by more than an hour "
+             "(Martin from %d to %d, Das Boot from %d to %d). The small "
+             "moves go both ways; the three biggest are all the same thing, "
+             "Wikidata reporting a cut longer than the film had in cinemas. "
+             "The one large move the other way is Touch of Evil, whose own "
+             "box leads with the 1998 re-edit rather than the 1958 release: "
+             "the rule takes the article at its word there too. Where a box "
+             "lists more than one cut — %d of them do — the first figure is "
+             "taken, which is the version the article leads with."
+             % (len(entries) - 1, len(entries), len(entries), len(drift),
+                sum(1 for d, _t, _a, _b in drift if d == 1),
+                sum(1 for _d, _t, a, b in drift if b > a),
+                sum(1 for _d, _t, a, b in drift if b < a),
+                next(a for _d, tt, a, _b in drift if tt == "Martin"),
+                next(b for _d, tt, _a, b in drift if tt == "Martin"),
+                next(a for _d, tt, a, _b in drift if tt == "Das Boot"),
+                next(b for _d, tt, _a, b in drift if tt == "Das Boot"),
+                len(multi))],
             ["The source lists some films twice, and the ids sort it out.",
              "Reefer Madness and Tell Your Children are one 1936 film with "
              "one set of eight citations; so are House and Hausu, "
@@ -647,8 +738,20 @@ def main():
     P.write(prop)
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d films — all weighted, %d min (%.1f hours)"
+    print("  %d sections, %d films — all weighted from their own infoboxes, "
+          "%d min (%.1f hours)"
           % (len(sections), len(ids), total_min, total_min / 60.0))
+    print("  runtimes: %d from the film's own infobox, %d fell back to "
+          "Wikidata P2047" % (len(entries) - len(fallbacks), len(fallbacks)))
+    print("  %d disagree with P2047 (infobox first, P2047 second):"
+          % len(drift))
+    for d, tt, wd, ib in drift:
+        print("   %+5d  %-44s %4d -> %4d" % (ib - wd, tt[:44], wd, ib))
+    print("  %d boxes print more than one cut; the first is taken:"
+          % len(multi))
+    for tt, cuts, ib, raw in sorted(multi):
+        print("   %-40s %d figures, took %-4s %s" % (tt[:40], cuts, ib,
+                                                     raw[:70]))
     print("  gate: >=%d of %d published works — %s entries fold into %s "
           "distinct films, %s cut (%d merged pairs)"
           % (MIN_SOURCES, PANEL, "{:,}".format(len(rows)),
