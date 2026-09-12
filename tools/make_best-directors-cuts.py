@@ -73,8 +73,30 @@ Watchmen, Batman v Superman — come from Wikidata's P2047 qualified
 P518=Q240862 ("director's cut") or its Ultimate Edition equivalent, which is
 where the 190 in ridley-scott came from too.
 
-Rows pair with the rest of the catalogue by title and ORIGINAL release year,
-so ticking Kingdom of Heaven here ticks it in ridley-scott.
+Titles, and why they are stated rather than derived
+---------------------------------------------------
+A row here displays the CUT's title, never the film's. That is not cosmetic:
+cross-list sync keys on normalised title + year + medium, so a row on a cuts
+list titled with the bare film name is the same work as the theatrical copy on
+every other list. That is the bug that produced the rule — unticking the E.T.
+director's cut unticked E.T., and somebody lost a true record of something they
+had watched. Naming the cut is the whole fix.
+
+The names cannot be computed from the data. Three cuts were released under
+their own title (Rocky vs. Drago, The Godfather Coda, Zack Snyder's Justice
+League), several are the film plus a real released subtitle (Blade Runner: The
+Final Cut, Alexander: The Ultimate Cut), and the rest are the film plus a
+parenthetical. So CUT_TITLES states all nineteen, and the build asserts on
+every run that each one is either the cut's own title or the film's title
+extended. That assert is the point of it: the titles were once added to the
+shipped JSON by hand and this generator went on emitting bare film names, so a
+rebuild would have stripped all nineteen back and the diff would have read as a
+tidy-up (CLU-448).
+
+The YEAR on a row is still the film's ORIGINAL release year, and the weight is
+still the length of the cut. Kingdom of Heaven is the one row that keeps its
+pair on purpose: ridley-scott carries the same "Kingdom of Heaven (Director's
+Cut)" title, so those two rows are the same work and go on syncing.
 """
 import json
 import pathlib
@@ -94,6 +116,40 @@ DATA = pathlib.Path(__file__).resolve().parent / "data" / "directors-cuts.json"
 VERDICT = re.compile(
     r"better|superior|improve|warmer|definitive|acclaim|elevat|reevaluat|"
     r"re-evaluat|reapprais|more coherent|positive|prais", re.I)
+
+# The displayed title of each row: the title of the CUT, which is what makes a
+# row on this list a different film from the theatrical copy elsewhere in the
+# catalogue. Stated, not derived — see the docstring — and checked below. It
+# lives here rather than in tools/data/directors-cuts.json because that file is
+# collector output (scratch/agent-cuts/build_data.py rewrites it wholesale) and
+# an editorial title put there would be lost the next time the cuts are
+# re-collected.
+CUT_TITLES = {
+    "Touch of Evil": "Touch of Evil (Walter Murch's Re-edit)",
+    "Major Dundee": "Major Dundee (The Restored Extended Cut)",
+    "The Wild Bunch": "The Wild Bunch (The Original Director's Cut)",
+    "Pat Garrett and Billy the Kid":
+        "Pat Garrett and Billy the Kid (Peckinpah's Preview Version)",
+    "Star Trek: The Motion Picture":
+        "Star Trek: The Motion Picture (The Director's Edition)",
+    "The Big Red One": "The Big Red One: The Reconstruction",
+    "Heaven's Gate": "Heaven's Gate (The Restored Director's Cut)",
+    "Blade Runner": "Blade Runner: The Final Cut",
+    "Once Upon a Time in America":
+        "Once Upon a Time in America (Leone's Full Length)",
+    "Rocky IV": "Rocky vs. Drago: The Ultimate Director's Cut",
+    "The Abyss": "The Abyss (Special Edition)",
+    "The Godfather Part III":
+        "The Godfather Coda: The Death of Michael Corleone",
+    "Alien 3": "Alien 3 (The Assembly Cut)",
+    "Payback": "Payback: Straight Up - The Director's Cut",
+    "Alexander": "Alexander: The Ultimate Cut",
+    "Kingdom of Heaven": "Kingdom of Heaven (Director's Cut)",
+    "Watchmen": "Watchmen (Director's Cut)",
+    "Batman v Superman: Dawn of Justice":
+        "Batman v Superman: Dawn of Justice (Ultimate Edition)",
+    "Justice League": "Zack Snyder's Justice League",
+}
 
 ERAS = [
     ("vault", "Rescued from the vault", None, 1980,
@@ -129,10 +185,14 @@ def main():
     assert not clash, "on both lists in the data file: %s" % sorted(clash)
     sib = P.ROOT / "properties" / ("%s.json" % SIBLING)
     if sib.exists():
+        # keyed on the ROW ID, not the displayed title: both lists now title a
+        # row with the cut rather than the film, so comparing film names
+        # against what shipped would compare two different things and never
+        # fire. The id is "<prefix>-<year>-<slug of the film>" on both lists.
         other = json.loads(sib.read_text(encoding="utf-8"))
-        shipped = {(x["t"], x["n"]) for s in other["sections"]
+        shipped = {tuple(x["id"].split("-", 2)[1:]) for s in other["sections"]
                    for x in s["items"]}
-        clash = {(t, str(n)) for t, n in keys} & shipped
+        clash = {(str(n), P.slug(t)) for t, n in keys} & shipped
         assert not clash, "%s already ships: %s" % (SIBLING, sorted(clash))
 
     # ---- the gate, re-asserted on every run
@@ -145,6 +205,27 @@ def main():
                           "runtime (see the module docstring)" % f["t"]
         assert str(f["mins"]) in f["mins_evidence"], \
             "%s: %d min is not in the text it came from" % (f["t"], f["mins"])
+
+    # ---- the naming rule, re-asserted on every run. A row on a list ABOUT
+    # cuts must display the cut, and a cut's title is either its own release
+    # title or the film's title extended. Anything else — the bare film name
+    # above all — fails the build rather than shipping a row that shares an
+    # identity with the theatrical copy on some other list.
+    stray = set(CUT_TITLES) - {f["t"] for f in mine}
+    assert not stray, \
+        "CUT_TITLES names a film this list does not carry: %s" % sorted(stray)
+    for f in mine:
+        disp = CUT_TITLES.get(f["t"])
+        assert disp, \
+            "%s: no cut title. A cuts list must name the cut on the row; " \
+            "the bare film name makes it the same work as the theatrical " \
+            "copy elsewhere in the catalogue" % f["t"]
+        own_title = P.normt(disp) == P.normt(f["cut"])
+        extended = (disp.startswith(f["t"] + " (") and disp.endswith(")")) \
+            or disp.startswith(f["t"] + ": ")
+        assert own_title or extended, \
+            "%s: %r names neither the cut (%r) nor the film extended" \
+            % (f["t"], disp, f["cut"])
 
     mine.sort(key=lambda f: (f["n"], P.normt(f["t"])))
 
@@ -159,8 +240,10 @@ def main():
             if f["cut_year"]:
                 cut = "%s, %d" % (cut, f["cut_year"])
             items.append({
+                # the id stays keyed on the FILM, because ids are where ticks
+                # are stored; only the displayed title carries the cut
                 "id": "bdc-%d-%s" % (f["n"], P.slug(f["t"])),
-                "t": f["t"], "n": str(f["n"]),
+                "t": CUT_TITLES[f["t"]], "n": str(f["n"]),
                 "w": round(f["mins"] / 60.0, 2),
                 "note": P.join_bits(cut, f["changes"], "%d min" % f["mins"]),
             })
@@ -185,8 +268,11 @@ def main():
     assert len(gaps) == 7 and min(gaps) >= 10 and \
         sum(1 for g in gaps if g >= 20) > len(gaps) / 2, gaps
     total = sum(x["w"] for x in rows)
-    longest = max(rows, key=lambda x: x["w"])
-    shortest = min(rows, key=lambda x: x["w"])
+    # the prose below names films, not cuts, so these read from the data rows
+    # rather than from the items, whose titles are now the cuts'
+    hrs = {f["t"]: round(f["mins"] / 60.0, 2) for f in mine}
+    longest = max(mine, key=lambda f: f["mins"])
+    shortest = min(mine, key=lambda f: f["mins"])
     wikidata = sum(1 for f in mine if f["mins_src"] == "wikidata")
 
     prop = {
@@ -231,8 +317,7 @@ def main():
              "runtimes come from a figure in the film's own article — the "
              "infobox usually carries both lengths — and %d from Wikidata's "
              "runtime statements tagged as the director's cut."
-             % (("%.2f" % next(x["w"] for x in rows
-                               if x["t"] == "Kingdom of Heaven")).rstrip("0"),
+             % (("%.2f" % hrs["Kingdom of Heaven"]).rstrip("0"),
                 len(rows), len(rows) - wikidata, wikidata)],
             ["Same film, one row.",
              "A film that exists in several versions still gets a single row, "
@@ -246,9 +331,10 @@ def main():
              "distance. %s is the shortest at %s hours — and it is the rare "
              "director's cut that runs shorter than the release rather than "
              "longer, which is the whole reason it is interesting."
-             % (longest["t"], ("%.2f" % longest["w"]).rstrip("0").rstrip("."),
+             % (longest["t"],
+                ("%.2f" % hrs[longest["t"]]).rstrip("0").rstrip("."),
                 shortest["t"],
-                ("%.2f" % shortest["w"]).rstrip("0").rstrip("."))],
+                ("%.2f" % hrs[shortest["t"]]).rstrip("0").rstrip("."))],
             ["One film passed and is still not here.",
              "Daredevil (2003). Its article says outright that “reviews were "
              "more positive than for the theatrical version” for the 2004 "

@@ -67,8 +67,25 @@ anywhere in Wikipedia or Wikidata: the 1997 Star Wars Special Edition, the
 one is not an option, and it would be a strange bar anyway — it would measure
 the version you are being told to skip.
 
-Rows pair with the rest of the catalogue by title and ORIGINAL release year,
-so ticking Star Wars here ticks it in star-wars and best-picture.
+Titles, and why they are stated rather than derived
+---------------------------------------------------
+A row here displays the CUT's title, never the film's, and that is the whole
+reason the list is safe to tick. Cross-list sync keys on normalised title +
+year + medium, so a row titled "Star Wars" on a list of cuts would be the same
+work as the theatrical Star Wars on every other list. That is not theory: this
+list is where it happened. Unticking the E.T. director's cut unticked E.T., and
+somebody lost a true record of a film they had actually seen.
+
+The names cannot be computed from the data — Donnie Darko's cut carries its own
+release title, the other four are the film plus a parenthetical — so CUT_TITLES
+states all five and the build asserts on every run that each is either the
+cut's own title or the film's title extended. The bare film name fails the
+build. It has to: the titles were once added to the shipped JSON by hand while
+this generator went on emitting film names, and a rebuild would have stripped
+all five back with a diff that read as a tidy-up (CLU-448).
+
+The YEAR on a row is still the film's ORIGINAL release year, not the cut's; the
+cut's year is in the note.
 """
 import json
 import pathlib
@@ -81,6 +98,22 @@ from gwlib import prop as P  # noqa: E402
 SLUG = "worst-directors-cuts"
 SIBLING = "best-directors-cuts"
 DATA = pathlib.Path(__file__).resolve().parent / "data" / "directors-cuts.json"
+
+# The displayed title of each row: the title of the CUT, which is what keeps a
+# row here from being the same work as the theatrical copy elsewhere in the
+# catalogue. Stated, not derived — see the docstring — and checked below. It
+# lives here rather than in tools/data/directors-cuts.json because that file is
+# collector output (scratch/agent-cuts/build_data.py rewrites it wholesale) and
+# an editorial title put there would be lost the next time the cuts are
+# re-collected.
+CUT_TITLES = {
+    "Star Wars": "Star Wars (Special Edition)",
+    "E.T. the Extra-Terrestrial":
+        "E.T. the Extra-Terrestrial (20th Anniversary Version)",
+    "Amadeus": "Amadeus (Director's Cut)",
+    "Cinema Paradiso": "Cinema Paradiso (The New Version)",
+    "Donnie Darko": "Donnie Darko: The Director's Cut",
+}
 
 # The coded half of the gate: a verdict has to actually say worse.
 VERDICT = re.compile(
@@ -102,10 +135,14 @@ def main():
     assert not clash, "on both lists in the data file: %s" % sorted(clash)
     sib = P.ROOT / "properties" / ("%s.json" % SIBLING)
     if sib.exists():
+        # keyed on the ROW ID, not the displayed title: both lists now title a
+        # row with the cut rather than the film, so comparing film names
+        # against what shipped would compare two different things and never
+        # fire. The id is "<prefix>-<year>-<slug of the film>" on both lists.
         other = json.loads(sib.read_text(encoding="utf-8"))
-        shipped = {(x["t"], x["n"]) for s in other["sections"]
+        shipped = {tuple(x["id"].split("-", 2)[1:]) for s in other["sections"]
                    for x in s["items"]}
-        clash = {(t, str(n)) for t, n in keys} & shipped
+        clash = {(str(n), P.slug(t)) for t, n in keys} & shipped
         assert not clash, "%s already ships: %s" % (SIBLING, sorted(clash))
 
     # ---- the gate, re-asserted on every run
@@ -124,6 +161,27 @@ def main():
     assert unmeasured == ["Amadeus", "E.T. the Extra-Terrestrial",
                           "Star Wars"], unmeasured
 
+    # ---- the naming rule, re-asserted on every run. A row on a list ABOUT
+    # cuts must display the cut, and a cut's title is either its own release
+    # title or the film's title extended. Anything else — the bare film name
+    # above all — fails the build rather than shipping a row that shares an
+    # identity with the theatrical copy on some other list.
+    stray = set(CUT_TITLES) - {f["t"] for f in mine}
+    assert not stray, \
+        "CUT_TITLES names a film this list does not carry: %s" % sorted(stray)
+    for f in mine:
+        disp = CUT_TITLES.get(f["t"])
+        assert disp, \
+            "%s: no cut title. A cuts list must name the cut on the row; " \
+            "the bare film name makes it the same work as the theatrical " \
+            "copy elsewhere in the catalogue" % f["t"]
+        own_title = P.normt(disp) == P.normt(f["cut"])
+        extended = (disp.startswith(f["t"] + " (") and disp.endswith(")")) \
+            or disp.startswith(f["t"] + ": ")
+        assert own_title or extended, \
+            "%s: %r names neither the cut (%r) nor the film extended" \
+            % (f["t"], disp, f["cut"])
+
     mine.sort(key=lambda f: (f["n"], P.normt(f["t"])))
     items = []
     for f in mine:
@@ -131,8 +189,10 @@ def main():
         if f["cut_year"]:
             cut = "%s, %d" % (cut, f["cut_year"])
         items.append({
+            # the id stays keyed on the FILM, because ids are where ticks are
+            # stored; only the displayed title carries the cut
             "id": "wdc-%d-%s" % (f["n"], P.slug(f["t"])),
-            "t": f["t"], "n": str(f["n"]),
+            "t": CUT_TITLES[f["t"]], "n": str(f["n"]),
             "note": P.join_bits(cut, f["changes"],
                                 "%d min" % f["mins"] if f["mins"] else ""),
         })
