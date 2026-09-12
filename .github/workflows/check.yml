@@ -72,8 +72,22 @@ jobs:
       # because the eleven were a one-off and a new list is not: the next
       # generator to arrive with a fold that drops what it should dash would
       # otherwise be found by whoever happened to run this by hand.
+      # Exit 2 is "nothing unproven, but this checkout could not see every
+      # generator" — seven keep their source data in gitignored scratch/, so a
+      # runner cannot execute them at all. Same convention as gendrift above,
+      # and for the same reason: a gate whose verdict depends on files git
+      # does not carry is not a gate. Exit 1 still fails the build.
       - name: No generator's fold can move a row id
-        run: python tools/idsafe.py
+        run: |
+          set +e
+          python tools/idsafe.py
+          rc=$?
+          set -e
+          if [ "$rc" = "2" ]; then
+            echo "::warning::idsafe ran incomplete — see INCOMPLETE above"
+            exit 0
+          fi
+          exit $rc
       # The wiki parser's pins. Four rounds of fixes each added tests that
       # nothing on push executed, so a regression could only be found by
       # whoever next ran the file by hand.
