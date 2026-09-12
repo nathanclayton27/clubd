@@ -23,10 +23,10 @@ lost three rows to build.py's rule that
      default-sized mark beside a real one."
 
 because `amazing-spider-man`, `x-men` and `civil-war` weight every row with an
-issue count while the rest carry none. Every one of the seven DC comics lists on
-the site is unweighted, so a door into each derives no weight, the strip is
-uniformly unweighted, and the shelf holds all seven. Checked, not assumed: no
-DC comics property carries a `w` on any row.
+issue count while the rest carry none. Every DC comics list on the site is
+unweighted, so a door into each derives no weight, the strip is uniformly
+unweighted, and the shelf holds them all. Checked, not assumed: no DC comics
+property carries a `w` on any row.
 
 WHAT IS NOT HERE AND WHY. `hellboy` is Dark Horse and `spawn` is Image, so
 neither is DC however comics-shaped it looks. `dc-anthology` and `dc-animation`
@@ -50,12 +50,13 @@ PROPS = ROOT / "properties"
 # creator-owned imprint are four different commitments rather than four sizes
 # of one.
 SECTIONS = [
-    ("route", "Where to start with Batman",
-     "There is no Batman run to read front to back — seventy years, three "
-     "reboots, and two flagship titles running in parallel the whole time — so "
-     "the way in is a curated route through the stories that get named, era by "
-     "era, a collected story to a row.",
-     ["batman"]),
+    ("route", "Where to start with a character",
+     "Neither of these two has a run to read front to back — decades of it, "
+     "several reboots, and two flagship titles running in parallel the whole "
+     "time — so the way in is a house pick of the runs worth the time, in "
+     "publication order, an issue to a row. Each page says on itself where it "
+     "starts, where it stops and what it leaves out.",
+     ["batman", "superman"]),
     ("runs", "One author, one long run",
      "A single writer's stretch on one book, from their first issue to their "
      "last, with what was collected alongside it. Both are post-Crisis "
@@ -91,6 +92,7 @@ NOT_DC = {
     "thor": "Marvel",
     "ultimate-marvel": "Marvel",
     "x-men": "Marvel",
+    "wolverine": "Marvel",
     "hellboy": "Dark Horse",
     "spawn": "Image",
 }
@@ -245,13 +247,17 @@ def main():
              "page read as a shelf of reading orders rather than as several "
              "hundred issues. The count sits on each row instead, where it is "
              "a fact rather than a guess at how long you will be."],
+            # Batman used to be the second exception here — it counted
+            # collected stories — and the umbrella ruling of 2026-09-11 made
+            # every comics list count issues, so the only page left out of step
+            # is the Vertigo shelf. The count is derived, so the sentence
+            # cannot disagree with the shelf when that changes again.
             ["The rows do not all count the same thing.",
-             "%s of these pages count issues, Batman counts collected "
-             "stories because there is no single Batman run to read, and the "
-             "Vertigo shelf counts the volumes those runs were collected in. "
-             "That disagreement is real and it stays on each page, where each "
-             "says which unit it uses and why. Here every door counts one, so "
-             "nothing on this page has to reconcile them."
+             "%s of these pages count issues and the Vertigo shelf counts the "
+             "volumes those runs were collected in. That disagreement is real "
+             "and it stays on each page, where each says which unit it uses "
+             "and why. Here every door counts one, so nothing on this page has "
+             "to reconcile them."
              % WORDS.get(nissues, str(nissues)).capitalize()],
             ["DC on screen is a different shelf.",
              "The films and television are already covered by DC Anthology "
@@ -263,22 +269,22 @@ def main():
              "neither is DC, so neither belongs on a DC shelf however much it "
              "looks like one from the outside."],
             ["DC is bigger than this.",
-             "There is no Superman spine here, no Wonder Woman, no Flash, no "
-             "Swamp Thing, no Starman, no Kingdom Come. Every row on this page "
+             "There is no Wonder Woman here, no Flash, no Swamp Thing, no "
+             "Starman, no Kingdom Come. Every row on this page "
              "is a list that already exists; the rest are written down as work "
              "still to do, and each will get a row here once it is built "
              "rather than a promise of one now."],
             # Unheaded, last: the colophon (CLU-275 rule 6). A hub's provenance
-            # is unusual — it has no sources of its own, only the seven lists
+            # is unusual — it has no sources of its own, only the lists
             # behind it — so the note says that rather than naming a wiki this
             # page never read.
             "Every row is read out of the list it opens. The title, the years "
             "and the count on each row are taken from that list's own file "
             "when the page is built, so nothing here can drift from the page "
             "behind it, and none of it was typed in. The sources are on those "
-            "seven pages, each naming its own. What is a judgement, and mine, "
+            "%s pages, each naming its own. What is a judgement, and mine, "
             "is which reading orders belong on a DC shelf and how they are "
-            "grouped.",
+            "grouped." % WORDS.get(total, str(total)),
         ],
         "sections": [
             {"id": sid, "title": stitle, "sub": sub, "items": items}

@@ -1,0 +1,1477 @@
+{
+ "_source": {
+  "cover_dates": "each issue's own page on the same wiki",
+  "issue_lists": "the IssueList of each collected edition below",
+  "series_links": "each series page on the same wiki",
+  "site": "https://dc.fandom.com/"
+ },
+ "collections": {
+  "Superman Unchained (Collected)": {
+   "issues": [
+    "Superman Unchained Vol 1 1",
+    "Superman Unchained Vol 1 2",
+    "Superman Unchained Vol 1 3",
+    "Superman Unchained Vol 1 4",
+    "Superman Unchained Vol 1 5",
+    "Superman Unchained Vol 1 6",
+    "Superman Unchained Vol 1 7",
+    "Superman Unchained Vol 1 8",
+    "Superman Unchained Vol 1 9"
+   ],
+   "pencilers": [
+    "Jim Lee",
+    "Dustin Nguyen"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_(Collected)",
+   "writers": [
+    "Scott Snyder"
+   ]
+  },
+  "Superman by Grant Morrison Omnibus (Collected)": {
+   "issues": [
+    "Action Comics Vol 2 1",
+    "Action Comics Vol 2 2",
+    "Action Comics Vol 2 3",
+    "Action Comics Vol 2 4",
+    "Action Comics Vol 2 4",
+    "Action Comics Vol 2 5",
+    "Action Comics Vol 2 5",
+    "Action Comics Vol 2 6",
+    "Action Comics Vol 2 6",
+    "Action Comics Vol 2 7",
+    "Action Comics Vol 2 7",
+    "Action Comics Vol 2 8",
+    "Action Comics Vol 2 9",
+    "Action Comics Vol 2 9",
+    "Action Comics Vol 2 10",
+    "Action Comics Vol 2 10",
+    "Action Comics Vol 2 11",
+    "Action Comics Vol 2 11",
+    "Action Comics Vol 2 12",
+    "Action Comics Vol 2 0",
+    "Action Comics Vol 2 0",
+    "Action Comics Annual Vol 2 1",
+    "Action Comics Vol 2 13",
+    "Action Comics Vol 2 13",
+    "Action Comics Vol 2 14",
+    "Action Comics Vol 2 14",
+    "Action Comics Vol 2 15",
+    "Action Comics Vol 2 15",
+    "Action Comics Vol 2 16",
+    "Action Comics Vol 2 16",
+    "Action Comics Vol 2 17",
+    "Action Comics Vol 2 17",
+    "Action Comics Vol 2 18",
+    "Action Comics Vol 2 18"
+   ],
+   "pencilers": [
+    "Rags Morales",
+    "Andy Kubert",
+    "Brad Walker",
+    "Brent Anderson",
+    "Cafu",
+    "ChrisCross",
+    "Travel Foreman",
+    "Gene Ha",
+    "Cully Hamner",
+    "Ben Oliver",
+    "Ryan Sook"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman_by_Grant_Morrison_Omnibus_(Collected)",
+   "writers": [
+    "Grant Morrison",
+    "Sholly Fisch",
+    "Max Landis"
+   ]
+  },
+  "Superman by Peter J. Tomasi and Patrick Gleason Omnibus (Collected)": {
+   "issues": [
+    "Superman: Rebirth Vol 1 1",
+    "Superman Vol 4 1",
+    "Superman Vol 4 2",
+    "Superman Vol 4 3",
+    "Superman Vol 4 4",
+    "Superman Vol 4 5",
+    "Superman Vol 4 6",
+    "Superman Vol 4 7",
+    "Superman Vol 4 8",
+    "Superman Vol 4 9",
+    "Superman Vol 4 10",
+    "Superman Vol 4 11",
+    "Superman Vol 4 12",
+    "Superman Vol 4 13",
+    "Superman Annual Vol 4 1",
+    "Superman Vol 4 14",
+    "Superman Vol 4 15",
+    "Superman Vol 4 16",
+    "Superman Vol 4 17",
+    "Superman Vol 4 18",
+    "Action Comics Vol 1 975",
+    "Superman Vol 4 19",
+    "Action Comics Vol 1 976",
+    "Superman Vol 4 20",
+    "Superman Vol 4 21",
+    "Superman Vol 4 22",
+    "Superman Vol 4 23",
+    "Superman Vol 4 24",
+    "Superman Vol 4 25",
+    "Superman Vol 4 27",
+    "Superman Vol 4 28",
+    "Superman Vol 4 33",
+    "Superman Vol 4 34",
+    "Superman Vol 4 35",
+    "Superman Vol 4 36",
+    "Superman Vol 4 37",
+    "Super Sons Vol 1 11",
+    "Teen Titans Vol 6 15",
+    "Superman Vol 4 38",
+    "Super Sons Vol 1 12",
+    "Superman Vol 4 39",
+    "Superman Vol 4 42",
+    "Superman Vol 4 43",
+    "Superman Vol 4 44",
+    "Superman Vol 4 45",
+    "Superman Special Vol 3 1",
+    "Action Comics Vol 1 1000"
+   ],
+   "pencilers": [
+    "Doug Mahnke",
+    "Patrick Gleason",
+    "Jorge Jiménez",
+    "Ryan Sook",
+    "Ed Benes",
+    "Clay Mann",
+    "Tony S. Daniel",
+    "Sebastian Fiumara",
+    "Scott Godlewski",
+    "Jack Herbert"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman_by_Peter_J._Tomasi_and_Patrick_Gleason_Omnibus_(Collected)",
+   "writers": [
+    "Peter Tomasi",
+    "Patrick Gleason",
+    "Dan Jurgens"
+   ]
+  },
+  "Superman for All Seasons (Collected)": {
+   "issues": [
+    "Superman for All Seasons Vol 1 1",
+    "Superman for All Seasons Vol 1 2",
+    "Superman for All Seasons Vol 1 3",
+    "Superman for All Seasons Vol 1 4"
+   ],
+   "pencilers": [
+    "Tim Sale"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_(Collected)",
+   "writers": [
+    "Jeph Loeb"
+   ]
+  },
+  "Superman: Birthright (Collected)": {
+   "issues": [
+    "Superman: Birthright Vol 1 1",
+    "Superman: Birthright Vol 1 2",
+    "Superman: Birthright Vol 1 3",
+    "Superman: Birthright Vol 1 4",
+    "Superman: Birthright Vol 1 5",
+    "Superman: Birthright Vol 1 6",
+    "Superman: Birthright Vol 1 7",
+    "Superman: Birthright Vol 1 8",
+    "Superman: Birthright Vol 1 9",
+    "Superman: Birthright Vol 1 10",
+    "Superman: Birthright Vol 1 11",
+    "Superman: Birthright Vol 1 12"
+   ],
+   "pencilers": [
+    "Leinil Francis Yu"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_(Collected)",
+   "writers": [
+    "Mark Waid"
+   ]
+  },
+  "Superman: Brainiac (Collected)": {
+   "issues": [
+    "Action Comics Vol 1 866",
+    "Action Comics Vol 1 867",
+    "Action Comics Vol 1 868",
+    "Action Comics Vol 1 869",
+    "Action Comics Vol 1 870",
+    "Superman: New Krypton Special Vol 1 1"
+   ],
+   "pencilers": [
+    "Gary Frank"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Brainiac_(Collected)",
+   "writers": [
+    "Geoff Johns"
+   ]
+  },
+  "Superman: For Tomorrow Vol. 1 (Collected)": {
+   "issues": [
+    "Superman Vol 2 204",
+    "Superman Vol 2 205",
+    "Superman Vol 2 206",
+    "Superman Vol 2 207",
+    "Superman Vol 2 208",
+    "Superman Vol 2 209"
+   ],
+   "pencilers": [
+    "Jim Lee"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_For_Tomorrow_Vol._1_(Collected)",
+   "writers": [
+    "Brian Azzarello"
+   ]
+  },
+  "Superman: For Tomorrow Vol. 2 (Collected)": {
+   "issues": [
+    "Superman Vol 2 210",
+    "Superman Vol 2 211",
+    "Superman Vol 2 212",
+    "Superman Vol 2 213",
+    "Superman Vol 2 214",
+    "Superman Vol 2 215"
+   ],
+   "pencilers": [
+    "Jim Lee"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_For_Tomorrow_Vol._2_(Collected)",
+   "writers": [
+    "Brian Azzarello"
+   ]
+  },
+  "Superman: Last Son (Collected)": {
+   "issues": [
+    "Action Comics Vol 1 844",
+    "Action Comics Vol 1 845",
+    "Action Comics Vol 1 846",
+    "Action Comics Vol 1 851",
+    "Action Comics Annual Vol 1 11"
+   ],
+   "pencilers": [
+    "Adam Kubert"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Last_Son_(Collected)",
+   "writers": [
+    "Geoff Johns",
+    "Richard Donner"
+   ]
+  },
+  "Superman: Lois and Clark (Collected)": {
+   "issues": [
+    "Superman: Lois and Clark Vol 1 1",
+    "Superman: Lois and Clark Vol 1 2",
+    "Superman: Lois and Clark Vol 1 3",
+    "Superman: Lois and Clark Vol 1 4",
+    "Superman: Lois and Clark Vol 1 5",
+    "Superman: Lois and Clark Vol 1 6",
+    "Superman: Lois and Clark Vol 1 7",
+    "Superman: Lois and Clark Vol 1 8"
+   ],
+   "pencilers": [
+    "Lee Weeks",
+    "Marco Santucci",
+    "Neil Edwards",
+    "Stephen Segovia"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_(Collected)",
+   "writers": [
+    "Dan Jurgens"
+   ]
+  },
+  "Superman: Secret Origin (Collected)": {
+   "issues": [
+    "Superman: Secret Origin Vol 1 1",
+    "Superman: Secret Origin Vol 1 2",
+    "Superman: Secret Origin Vol 1 3",
+    "Superman: Secret Origin Vol 1 4",
+    "Superman: Secret Origin Vol 1 5",
+    "Superman: Secret Origin Vol 1 6"
+   ],
+   "pencilers": [
+    "Gary Frank"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_(Collected)",
+   "writers": [
+    "Geoff Johns"
+   ]
+  },
+  "Superman: Supercorp (Collected)": {
+   "issues": [
+    "Superman Vol 6 1",
+    "Superman Vol 6 2",
+    "Superman Vol 6 3",
+    "Superman Vol 6 4",
+    "Superman Vol 6 5",
+    "Superman 2023 Annual Vol 6 1"
+   ],
+   "pencilers": [
+    "Jamal Campbell",
+    "Nick Dragotta",
+    "Mahmud Asrar",
+    "Edwin Galmon",
+    "Caitlin Yarsky",
+    "Max Raynor",
+    "Jack Herbert"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Supercorp_(Collected)",
+   "writers": [
+    "Joshua Williamson"
+   ]
+  },
+  "Superman: The Unity Saga: Phantom Earth (Collected)": {
+   "issues": [
+    "Superman Vol 5 1",
+    "Superman Vol 5 2",
+    "Superman Vol 5 3",
+    "Superman Vol 5 4",
+    "Superman Vol 5 5",
+    "Superman Vol 5 6"
+   ],
+   "pencilers": [
+    "Ivan Reis"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_The_Unity_Saga:_Phantom_Earth_(Collected)",
+   "writers": [
+    "Brian Michael Bendis"
+   ]
+  },
+  "Superman: The Unity Saga: The House of El (Collected)": {
+   "issues": [
+    "Superman Vol 5 7",
+    "Superman Vol 5 8",
+    "Superman Vol 5 9",
+    "Superman Vol 5 10",
+    "Superman Vol 5 11",
+    "Superman Vol 5 12",
+    "Superman Vol 5 13",
+    "Superman Vol 5 14",
+    "Superman Vol 5 15"
+   ],
+   "pencilers": [
+    "Ivan Reis",
+    "Brandon Peterson",
+    "Jason Fabok",
+    "Evan Shaner"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_The_Unity_Saga:_The_House_of_El_(Collected)",
+   "writers": [
+    "Brian Michael Bendis"
+   ]
+  },
+  "Superman: The Warworld Saga (Collected)": {
+   "issues": [
+    "Action Comics Vol 1 1030",
+    "Action Comics Vol 1 1031",
+    "Action Comics Vol 1 1032",
+    "Action Comics Vol 1 1033",
+    "Action Comics Vol 1 1034",
+    "Action Comics Vol 1 1035",
+    "Batman/Superman Authority Special Vol 1 1",
+    "Action Comics Vol 1 1036",
+    "Action Comics Vol 1 1037",
+    "Action Comics Vol 1 1038",
+    "Action Comics Vol 1 1039",
+    "Action Comics Vol 1 1040",
+    "Action Comics Vol 1 1041",
+    "Action Comics Vol 1 1042",
+    "Action Comics Vol 1 1043",
+    "Action Comics 2022 Annual Vol 1 1",
+    "Action Comics Vol 1 1044",
+    "Action Comics Vol 1 1045",
+    "Action Comics Vol 1 1046",
+    "Superman: Warworld Apocalypse Vol 1 1",
+    "Future State: Superman: Worlds of War Vol 1 1",
+    "Future State: Superman: Worlds of War Vol 1 2",
+    "Future State: Superman: House of El Vol 1 1",
+    "Action Comics 2021 Annual Vol 1 1"
+   ],
+   "pencilers": [
+    "Will Conrad",
+    "Mikel Janín",
+    "Daniel Sampere",
+    "Scott Godlewski"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_The_Warworld_Saga_(Collected)",
+   "writers": [
+    "Phillip Kennedy Johnson",
+    "Simon Spurrier"
+   ]
+  },
+  "Superman: Up, Up and Away! (Collected)": {
+   "issues": [
+    "Superman Vol 1 650",
+    "Action Comics Vol 1 837",
+    "Superman Vol 1 651",
+    "Action Comics Vol 1 838",
+    "Superman Vol 1 652",
+    "Action Comics Vol 1 839",
+    "Superman Vol 1 653",
+    "Action Comics Vol 1 840"
+   ],
+   "pencilers": [
+    "Pete Woods",
+    "Renato Guedes"
+   ],
+   "url": "https://dc.fandom.com/wiki/Superman:_Up,_Up_and_Away!_(Collected)",
+   "writers": [
+    "Kurt Busiek",
+    "Geoff Johns"
+   ]
+  },
+  "The Man of Steel 1986 (Collected)": {
+   "issues": [
+    "The Man of Steel Vol 1 1",
+    "The Man of Steel Vol 1 2",
+    "The Man of Steel Vol 1 3",
+    "The Man of Steel Vol 1 4",
+    "The Man of Steel Vol 1 5",
+    "The Man of Steel Vol 1 6"
+   ],
+   "pencilers": [
+    "John Byrne"
+   ],
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_1986_(Collected)",
+   "writers": [
+    "John Byrne"
+   ]
+  },
+  "The Man of Steel 2018 (Collected)": {
+   "issues": [
+    "Action Comics Vol 1 1000",
+    "DC Nation Vol 2 0",
+    "The Man of Steel Vol 2 1",
+    "The Man of Steel Vol 2 2",
+    "The Man of Steel Vol 2 3",
+    "The Man of Steel Vol 2 4",
+    "The Man of Steel Vol 2 5",
+    "The Man of Steel Vol 2 6"
+   ],
+   "pencilers": [
+    "Ivan Reis",
+    "Jason Fabok",
+    "Evan Shaner",
+    "Steve Rude",
+    "Ryan Sook",
+    "Kevin Maguire",
+    "Adam Hughes"
+   ],
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_2018_(Collected)",
+   "writers": [
+    "Brian Michael Bendis"
+   ]
+  }
+ },
+ "fetched": "2026-09-11",
+ "issues": {
+  "Action Comics 2021 Annual Vol 1 1": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_2021_Annual_Vol_1_1",
+   "year": 2021
+  },
+  "Action Comics 2022 Annual Vol 1 1": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_2022_Annual_Vol_1_1",
+   "year": 2022
+  },
+  "Action Comics Annual Vol 1 11": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Annual_Vol_1_11",
+   "year": 2008
+  },
+  "Action Comics Annual Vol 2 1": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Annual_Vol_2_1",
+   "year": 2012
+  },
+  "Action Comics Vol 1 1000": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1000",
+   "year": 2018
+  },
+  "Action Comics Vol 1 1030": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1030",
+   "year": 2021
+  },
+  "Action Comics Vol 1 1031": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1031",
+   "year": 2021
+  },
+  "Action Comics Vol 1 1032": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1032",
+   "year": 2021
+  },
+  "Action Comics Vol 1 1033": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1033",
+   "year": 2021
+  },
+  "Action Comics Vol 1 1034": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1034",
+   "year": 2021
+  },
+  "Action Comics Vol 1 1035": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1035",
+   "year": 2021
+  },
+  "Action Comics Vol 1 1036": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1036",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1037": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1037",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1038": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1038",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1039": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1039",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1040": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1040",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1041": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1041",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1042": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1042",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1043": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1043",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1044": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1044",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1045": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1045",
+   "year": 2022
+  },
+  "Action Comics Vol 1 1046": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_1046",
+   "year": 2022
+  },
+  "Action Comics Vol 1 837": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_837",
+   "year": 2006
+  },
+  "Action Comics Vol 1 838": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_838",
+   "year": 2006
+  },
+  "Action Comics Vol 1 839": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_839",
+   "year": 2006
+  },
+  "Action Comics Vol 1 840": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_840",
+   "year": 2006
+  },
+  "Action Comics Vol 1 844": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_844",
+   "year": 2006
+  },
+  "Action Comics Vol 1 845": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_845",
+   "year": 2007
+  },
+  "Action Comics Vol 1 846": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_846",
+   "year": 2007
+  },
+  "Action Comics Vol 1 851": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_851",
+   "year": 2007
+  },
+  "Action Comics Vol 1 866": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_866",
+   "year": 2008
+  },
+  "Action Comics Vol 1 867": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_867",
+   "year": 2008
+  },
+  "Action Comics Vol 1 868": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_868",
+   "year": 2008
+  },
+  "Action Comics Vol 1 869": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_869",
+   "year": 2008
+  },
+  "Action Comics Vol 1 870": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_870",
+   "year": 2008
+  },
+  "Action Comics Vol 1 975": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_975",
+   "year": 2017
+  },
+  "Action Comics Vol 1 976": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1_976",
+   "year": 2017
+  },
+  "Action Comics Vol 2 0": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_0",
+   "year": 2012
+  },
+  "Action Comics Vol 2 1": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_1",
+   "year": 2011
+  },
+  "Action Comics Vol 2 10": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_10",
+   "year": 2012
+  },
+  "Action Comics Vol 2 11": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_11",
+   "year": 2012
+  },
+  "Action Comics Vol 2 12": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_12",
+   "year": 2012
+  },
+  "Action Comics Vol 2 13": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_13",
+   "year": 2012
+  },
+  "Action Comics Vol 2 14": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_14",
+   "year": 2013
+  },
+  "Action Comics Vol 2 15": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_15",
+   "year": 2013
+  },
+  "Action Comics Vol 2 16": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_16",
+   "year": 2013
+  },
+  "Action Comics Vol 2 17": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_17",
+   "year": 2013
+  },
+  "Action Comics Vol 2 18": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_18",
+   "year": 2013
+  },
+  "Action Comics Vol 2 2": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_2",
+   "year": 2011
+  },
+  "Action Comics Vol 2 3": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_3",
+   "year": 2012
+  },
+  "Action Comics Vol 2 4": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_4",
+   "year": 2012
+  },
+  "Action Comics Vol 2 5": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_5",
+   "year": 2012
+  },
+  "Action Comics Vol 2 6": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_6",
+   "year": 2012
+  },
+  "Action Comics Vol 2 7": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_7",
+   "year": 2012
+  },
+  "Action Comics Vol 2 8": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_8",
+   "year": 2012
+  },
+  "Action Comics Vol 2 9": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2_9",
+   "year": 2012
+  },
+  "Batman/Superman Authority Special Vol 1 1": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Batman/Superman_Authority_Special_Vol_1_1",
+   "year": 2022
+  },
+  "DC Nation Vol 2 0": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/DC_Nation_Vol_2_0",
+   "year": 2018
+  },
+  "Future State: Superman: House of El Vol 1 1": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Future_State:_Superman:_House_of_El_Vol_1_1",
+   "year": 2021
+  },
+  "Future State: Superman: Worlds of War Vol 1 1": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Future_State:_Superman:_Worlds_of_War_Vol_1_1",
+   "year": 2021
+  },
+  "Future State: Superman: Worlds of War Vol 1 2": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Future_State:_Superman:_Worlds_of_War_Vol_1_2",
+   "year": 2021
+  },
+  "Super Sons Vol 1 11": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Super_Sons_Vol_1_11",
+   "year": 2018
+  },
+  "Super Sons Vol 1 12": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Super_Sons_Vol_1_12",
+   "year": 2018
+  },
+  "Superman 2023 Annual Vol 6 1": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_2023_Annual_Vol_6_1",
+   "year": 2023
+  },
+  "Superman Annual Vol 4 1": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Annual_Vol_4_1",
+   "year": 2017
+  },
+  "Superman Special Vol 3 1": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Special_Vol_3_1",
+   "year": 2018
+  },
+  "Superman Unchained Vol 1 1": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_1",
+   "year": 2013
+  },
+  "Superman Unchained Vol 1 2": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_2",
+   "year": 2013
+  },
+  "Superman Unchained Vol 1 3": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_3",
+   "year": 2013
+  },
+  "Superman Unchained Vol 1 4": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_4",
+   "year": 2013
+  },
+  "Superman Unchained Vol 1 5": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_5",
+   "year": 2014
+  },
+  "Superman Unchained Vol 1 6": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_6",
+   "year": 2014
+  },
+  "Superman Unchained Vol 1 7": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_7",
+   "year": 2014
+  },
+  "Superman Unchained Vol 1 8": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_8",
+   "year": 2014
+  },
+  "Superman Unchained Vol 1 9": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1_9",
+   "year": 2015
+  },
+  "Superman Vol 1 650": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_1_650",
+   "year": 2006
+  },
+  "Superman Vol 1 651": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_1_651",
+   "year": 2006
+  },
+  "Superman Vol 1 652": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_1_652",
+   "year": 2006
+  },
+  "Superman Vol 1 653": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_1_653",
+   "year": 2006
+  },
+  "Superman Vol 2 204": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_204",
+   "year": 2004
+  },
+  "Superman Vol 2 205": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_205",
+   "year": 2004
+  },
+  "Superman Vol 2 206": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_206",
+   "year": 2004
+  },
+  "Superman Vol 2 207": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_207",
+   "year": 2004
+  },
+  "Superman Vol 2 208": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_208",
+   "year": 2004
+  },
+  "Superman Vol 2 209": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_209",
+   "year": 2004
+  },
+  "Superman Vol 2 210": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_210",
+   "year": 2004
+  },
+  "Superman Vol 2 211": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_211",
+   "year": 2005
+  },
+  "Superman Vol 2 212": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_212",
+   "year": 2005
+  },
+  "Superman Vol 2 213": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_213",
+   "year": 2005
+  },
+  "Superman Vol 2 214": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_214",
+   "year": 2005
+  },
+  "Superman Vol 2 215": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_2_215",
+   "year": 2005
+  },
+  "Superman Vol 4 1": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_1",
+   "year": 2016
+  },
+  "Superman Vol 4 10": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_10",
+   "year": 2017
+  },
+  "Superman Vol 4 11": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_11",
+   "year": 2017
+  },
+  "Superman Vol 4 12": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_12",
+   "year": 2017
+  },
+  "Superman Vol 4 13": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_13",
+   "year": 2017
+  },
+  "Superman Vol 4 14": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_14",
+   "year": 2017
+  },
+  "Superman Vol 4 15": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_15",
+   "year": 2017
+  },
+  "Superman Vol 4 16": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_16",
+   "year": 2017
+  },
+  "Superman Vol 4 17": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_17",
+   "year": 2017
+  },
+  "Superman Vol 4 18": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_18",
+   "year": 2017
+  },
+  "Superman Vol 4 19": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_19",
+   "year": 2017
+  },
+  "Superman Vol 4 2": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_2",
+   "year": 2016
+  },
+  "Superman Vol 4 20": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_20",
+   "year": 2017
+  },
+  "Superman Vol 4 21": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_21",
+   "year": 2017
+  },
+  "Superman Vol 4 22": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_22",
+   "year": 2017
+  },
+  "Superman Vol 4 23": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_23",
+   "year": 2017
+  },
+  "Superman Vol 4 24": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_24",
+   "year": 2017
+  },
+  "Superman Vol 4 25": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_25",
+   "year": 2017
+  },
+  "Superman Vol 4 27": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_27",
+   "year": 2017
+  },
+  "Superman Vol 4 28": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_28",
+   "year": 2017
+  },
+  "Superman Vol 4 3": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_3",
+   "year": 2016
+  },
+  "Superman Vol 4 33": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_33",
+   "year": 2017
+  },
+  "Superman Vol 4 34": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_34",
+   "year": 2018
+  },
+  "Superman Vol 4 35": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_35",
+   "year": 2018
+  },
+  "Superman Vol 4 36": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_36",
+   "year": 2018
+  },
+  "Superman Vol 4 37": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_37",
+   "year": 2018
+  },
+  "Superman Vol 4 38": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_38",
+   "year": 2018
+  },
+  "Superman Vol 4 39": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_39",
+   "year": 2018
+  },
+  "Superman Vol 4 4": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_4",
+   "year": 2016
+  },
+  "Superman Vol 4 42": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_42",
+   "year": 2018
+  },
+  "Superman Vol 4 43": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_43",
+   "year": 2018
+  },
+  "Superman Vol 4 44": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_44",
+   "year": 2018
+  },
+  "Superman Vol 4 45": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_45",
+   "year": 2018
+  },
+  "Superman Vol 4 5": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_5",
+   "year": 2016
+  },
+  "Superman Vol 4 6": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_6",
+   "year": 2016
+  },
+  "Superman Vol 4 7": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_7",
+   "year": 2016
+  },
+  "Superman Vol 4 8": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_8",
+   "year": 2016
+  },
+  "Superman Vol 4 9": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_4_9",
+   "year": 2016
+  },
+  "Superman Vol 5 1": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_1",
+   "year": 2018
+  },
+  "Superman Vol 5 10": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_10",
+   "year": 2019
+  },
+  "Superman Vol 5 11": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_11",
+   "year": 2019
+  },
+  "Superman Vol 5 12": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_12",
+   "year": 2019
+  },
+  "Superman Vol 5 13": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_13",
+   "year": 2019
+  },
+  "Superman Vol 5 14": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_14",
+   "year": 2019
+  },
+  "Superman Vol 5 15": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_15",
+   "year": 2019
+  },
+  "Superman Vol 5 2": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_2",
+   "year": 2018
+  },
+  "Superman Vol 5 3": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_3",
+   "year": 2018
+  },
+  "Superman Vol 5 4": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_4",
+   "year": 2018
+  },
+  "Superman Vol 5 5": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_5",
+   "year": 2019
+  },
+  "Superman Vol 5 6": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_6",
+   "year": 2019
+  },
+  "Superman Vol 5 7": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_7",
+   "year": 2019
+  },
+  "Superman Vol 5 8": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_8",
+   "year": 2019
+  },
+  "Superman Vol 5 9": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_5_9",
+   "year": 2019
+  },
+  "Superman Vol 6 1": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_6_1",
+   "year": 2023
+  },
+  "Superman Vol 6 2": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_6_2",
+   "year": 2023
+  },
+  "Superman Vol 6 3": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_6_3",
+   "year": 2023
+  },
+  "Superman Vol 6 4": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_6_4",
+   "year": 2023
+  },
+  "Superman Vol 6 5": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman_Vol_6_5",
+   "year": 2023
+  },
+  "Superman for All Seasons Vol 1 1": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_Vol_1_1",
+   "year": 1998
+  },
+  "Superman for All Seasons Vol 1 2": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_Vol_1_2",
+   "year": 1998
+  },
+  "Superman for All Seasons Vol 1 3": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_Vol_1_3",
+   "year": 1998
+  },
+  "Superman for All Seasons Vol 1 4": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_Vol_1_4",
+   "year": 1998
+  },
+  "Superman: Birthright Vol 1 1": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_1",
+   "year": 2003
+  },
+  "Superman: Birthright Vol 1 10": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_10",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 11": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_11",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 12": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_12",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 2": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_2",
+   "year": 2003
+  },
+  "Superman: Birthright Vol 1 3": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_3",
+   "year": 2003
+  },
+  "Superman: Birthright Vol 1 4": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_4",
+   "year": 2003
+  },
+  "Superman: Birthright Vol 1 5": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_5",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 6": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_6",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 7": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_7",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 8": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_8",
+   "year": 2004
+  },
+  "Superman: Birthright Vol 1 9": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1_9",
+   "year": 2004
+  },
+  "Superman: Lois and Clark Vol 1 1": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_1",
+   "year": 2015
+  },
+  "Superman: Lois and Clark Vol 1 2": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_2",
+   "year": 2016
+  },
+  "Superman: Lois and Clark Vol 1 3": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_3",
+   "year": 2016
+  },
+  "Superman: Lois and Clark Vol 1 4": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_4",
+   "year": 2016
+  },
+  "Superman: Lois and Clark Vol 1 5": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_5",
+   "year": 2016
+  },
+  "Superman: Lois and Clark Vol 1 6": {
+   "month": 5,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_6",
+   "year": 2016
+  },
+  "Superman: Lois and Clark Vol 1 7": {
+   "month": 6,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_7",
+   "year": 2016
+  },
+  "Superman: Lois and Clark Vol 1 8": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1_8",
+   "year": 2016
+  },
+  "Superman: New Krypton Special Vol 1 1": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman:_New_Krypton_Special_Vol_1_1",
+   "year": 2008
+  },
+  "Superman: Rebirth Vol 1 1": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/Superman:_Rebirth_Vol_1_1",
+   "year": 2016
+  },
+  "Superman: Secret Origin Vol 1 1": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1_1",
+   "year": 2009
+  },
+  "Superman: Secret Origin Vol 1 2": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1_2",
+   "year": 2009
+  },
+  "Superman: Secret Origin Vol 1 3": {
+   "month": 1,
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1_3",
+   "year": 2010
+  },
+  "Superman: Secret Origin Vol 1 4": {
+   "month": 3,
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1_4",
+   "year": 2010
+  },
+  "Superman: Secret Origin Vol 1 5": {
+   "month": 4,
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1_5",
+   "year": 2010
+  },
+  "Superman: Secret Origin Vol 1 6": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1_6",
+   "year": 2010
+  },
+  "Superman: Warworld Apocalypse Vol 1 1": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/Superman:_Warworld_Apocalypse_Vol_1_1",
+   "year": 2022
+  },
+  "Teen Titans Vol 6 15": {
+   "month": 2,
+   "url": "https://dc.fandom.com/wiki/Teen_Titans_Vol_6_15",
+   "year": 2018
+  },
+  "The Man of Steel Vol 1 1": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1_1",
+   "year": 1986
+  },
+  "The Man of Steel Vol 1 2": {
+   "month": 10,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1_2",
+   "year": 1986
+  },
+  "The Man of Steel Vol 1 3": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1_3",
+   "year": 1986
+  },
+  "The Man of Steel Vol 1 4": {
+   "month": 11,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1_4",
+   "year": 1986
+  },
+  "The Man of Steel Vol 1 5": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1_5",
+   "year": 1986
+  },
+  "The Man of Steel Vol 1 6": {
+   "month": 12,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1_6",
+   "year": 1986
+  },
+  "The Man of Steel Vol 2 1": {
+   "month": 7,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2_1",
+   "year": 2018
+  },
+  "The Man of Steel Vol 2 2": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2_2",
+   "year": 2018
+  },
+  "The Man of Steel Vol 2 3": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2_3",
+   "year": 2018
+  },
+  "The Man of Steel Vol 2 4": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2_4",
+   "year": 2018
+  },
+  "The Man of Steel Vol 2 5": {
+   "month": 8,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2_5",
+   "year": 2018
+  },
+  "The Man of Steel Vol 2 6": {
+   "month": 9,
+   "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2_6",
+   "year": 2018
+  }
+ },
+ "volumes": {
+  "Action Comics 2021 Annual Vol 1": "https://dc.fandom.com/wiki/Action_Comics_2021_Annual_Vol_1",
+  "Action Comics 2022 Annual Vol 1": "https://dc.fandom.com/wiki/Action_Comics_2022_Annual_Vol_1",
+  "Action Comics Annual Vol 1": "https://dc.fandom.com/wiki/Action_Comics_Annual_Vol_1",
+  "Action Comics Annual Vol 2": "https://dc.fandom.com/wiki/Action_Comics_Annual_Vol_2",
+  "Action Comics Vol 1": "https://dc.fandom.com/wiki/Action_Comics_Vol_1",
+  "Action Comics Vol 2": "https://dc.fandom.com/wiki/Action_Comics_Vol_2",
+  "Batman/Superman Authority Special Vol 1": null,
+  "DC Nation Vol 2": "https://dc.fandom.com/wiki/DC_Nation_Vol_2",
+  "Future State: Superman: House of El Vol 1": null,
+  "Future State: Superman: Worlds of War Vol 1": "https://dc.fandom.com/wiki/Future_State:_Superman:_Worlds_of_War_Vol_1",
+  "Super Sons Vol 1": "https://dc.fandom.com/wiki/Super_Sons_Vol_1",
+  "Superman 2023 Annual Vol 6": "https://dc.fandom.com/wiki/Superman_2023_Annual_Vol_6",
+  "Superman Annual Vol 4": "https://dc.fandom.com/wiki/Superman_Annual_Vol_4",
+  "Superman Special Vol 3": "https://dc.fandom.com/wiki/Superman_Special_Vol_3",
+  "Superman Unchained Vol 1": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1",
+  "Superman Vol 1": "https://dc.fandom.com/wiki/Superman_Vol_1",
+  "Superman Vol 2": "https://dc.fandom.com/wiki/Superman_Vol_2",
+  "Superman Vol 4": "https://dc.fandom.com/wiki/Superman_Vol_4",
+  "Superman Vol 5": "https://dc.fandom.com/wiki/Superman_Vol_5",
+  "Superman Vol 6": "https://dc.fandom.com/wiki/Superman_Vol_6",
+  "Superman for All Seasons Vol 1": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_Vol_1",
+  "Superman: Birthright Vol 1": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1",
+  "Superman: Lois and Clark Vol 1": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1",
+  "Superman: New Krypton Special Vol 1": null,
+  "Superman: Rebirth Vol 1": null,
+  "Superman: Secret Origin Vol 1": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1",
+  "Superman: Warworld Apocalypse Vol 1": null,
+  "Teen Titans Vol 6": "https://dc.fandom.com/wiki/Teen_Titans_Vol_6",
+  "The Man of Steel Vol 1": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1",
+  "The Man of Steel Vol 2": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2"
+ }
+}

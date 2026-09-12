@@ -1,0 +1,2118 @@
+{
+  "slug": "superman",
+  "title": "Superman",
+  "subtitle": "a character reading list · post-Crisis onward",
+  "kind": "comics",
+  "popularity": 74,
+  "year": "1986–2023",
+  "blurb": "195 issues across 15 runs, from the 1986 reboot onward — the route the house would actually hand someone, rather than the publication history.",
+  "unit": {
+    "one": "issue",
+    "many": "issues"
+  },
+  "verb": {
+    "base": "read",
+    "past": "read",
+    "ing": "reading"
+  },
+  "accent": "#C8102E",
+  "accentDark": "#FF7D8A",
+  "tiers": true,
+  "notes": [
+    [
+      "The house's picks — veto freely.",
+      "This is a route through Superman, not his publication history: nobody finishes that, and a list that pretended otherwise would be unfinishable by design. So these are the runs the house would actually hand someone, one section each, in the order they were published. If one is not for you, skip the section whole; if something is missing, that is what the group chat is for. Everything except the picking is machine-read."
+    ],
+    [
+      "It starts in 1986, and that edge is hard.",
+      "Byrne's The Man of Steel restarted the character from scratch after Crisis on Infinite Earths, and this list starts there because everything earlier belongs to a continuity that one replaced. That includes the story usually called the best Superman comic ever published, \"Whatever Happened to the Man of Tomorrow?\" — it is the last story of the old continuity rather than the first of this one, and it belongs on a list of its own."
+    ],
+    [
+      "Tiers.",
+      "1 is the spine — the reboot, For All Seasons, Brainiac, Morrison's Action Comics, Tomasi and Gleason, and the Warworld Saga. 2 is strongly recommended, and includes the two origin retellings that are alternative ways in. 3 is genuinely optional: the most argued-over run here, and a bridge between two eras. Tier 1 alone is a complete read."
+    ],
+    [
+      "\"The Death and Return of Superman\" is its own list here.",
+      "It sits inside this stretch chronologically — 1992 to 1993, between the reboot and For All Seasons — and it already ships in this catalogue as its own 48 issues with its own ids. Carrying it twice would give one issue two sets of ticks, so it is not repeated here. Read it between the first two sections below."
+    ],
+    [
+      "What is deliberately absent.",
+      "Everything outside this continuity, however good: \"All-Star Superman\", \"Red Son\", \"Kingdom Come\", \"Secret Identity\", \"Superman Smashes the Klan\". Also the 1986–91 monthlies, which are years of two parallel titles with no agreed essential slice; New Krypton, which is longer than anything here and divides people; and Jon Kent's own solo book, which is a different character's list. None of those is a judgement on the comics — they are judgements about what belongs under this title."
+    ],
+    [
+      "Volume numbers, because the numbering keeps restarting.",
+      "Action Comics starts again at #1 in 2011, and the main Superman title does it in 2016, 2018 and 2023. So a row says which volume it is — \"Superman (vol. 5) #1\" is not \"Superman (vol. 4) #1\" — and the tick ids behind them are built from the volume too, so no two issues can ever share one."
+    ],
+    [
+      "Order inside a section.",
+      "Cover date, with the collection's own order breaking ties. Ties are constant in the stretches where two monthly books alternate, and the collection is the only thing that knows which of the two came first."
+    ],
+    [
+      "No hours, on any row.",
+      "Comics have no runtimes and an issue count is not an hour, so nothing here is weighted. The bar counts issues."
+    ],
+    [
+      "Links.",
+      "Sections link to the DC Database page for each series they contain, not to individual issues. Every one of those pages was fetched before the link was written."
+    ],
+    "Issue lists, cover dates and credits machine-read from the DC Database (dc.fandom.com): the IssueList of the collected edition or omnibus that collects each run, each issue's own page for its cover month and year, and each series page for the section links. A row exists only because a collection names it; the generator refuses to emit one that is not attested."
+  ],
+  "sections": [
+    {
+      "id": "reboot",
+      "title": "The Man of Steel",
+      "sub": "October 1986 – December 1986 · 6 issues · John Byrne",
+      "tier": 1,
+      "intro": "The reboot itself: Byrne restarted the character and the whole cast from scratch, in six issues, and every run below assumes you have read it.\n\nThis is the front edge of the list. Everything published before it belongs to the continuity this one replaced.",
+      "links": [
+        {
+          "label": "The Man of Steel",
+          "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-the-man-of-steel-v1-1",
+          "t": "The Man of Steel",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v1-2",
+          "t": "The Man of Steel",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v1-3",
+          "t": "The Man of Steel",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v1-4",
+          "t": "The Man of Steel",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v1-5",
+          "t": "The Man of Steel",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v1-6",
+          "t": "The Man of Steel",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "seasons",
+      "title": "Superman for All Seasons",
+      "sub": "September 1998 – December 1998 · 4 issues · Jeph Loeb, Tim Sale",
+      "tier": 1,
+      "intro": "Loeb and Sale's miniseries continues nothing and leads to nothing, and it is the one thing here you could hand to somebody who has never read a comic. It is second on the list for that reason rather than for any reason to do with order.",
+      "links": [
+        {
+          "label": "Superman for All Seasons",
+          "url": "https://dc.fandom.com/wiki/Superman_for_All_Seasons_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-for-all-seasons-v1-1",
+          "t": "Superman for All Seasons",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-for-all-seasons-v1-2",
+          "t": "Superman for All Seasons",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-for-all-seasons-v1-3",
+          "t": "Superman for All Seasons",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-for-all-seasons-v1-4",
+          "t": "Superman for All Seasons",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "birthright",
+      "title": "Superman: Birthright",
+      "sub": "September 2003 – September 2004 · 12 issues · Mark Waid, Leinil Francis Yu",
+      "tier": 2,
+      "intro": "A twelve-issue origin, told again a generation after the last one. Nothing above it leads here and nothing below it needs it — it is on the list as a second door in, for a reader who would rather start with a long origin than a short one.",
+      "links": [
+        {
+          "label": "Superman: Birthright",
+          "url": "https://dc.fandom.com/wiki/Superman:_Birthright_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-birthright-v1-1",
+          "t": "Superman: Birthright",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-2",
+          "t": "Superman: Birthright",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-3",
+          "t": "Superman: Birthright",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-4",
+          "t": "Superman: Birthright",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-5",
+          "t": "Superman: Birthright",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-6",
+          "t": "Superman: Birthright",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-7",
+          "t": "Superman: Birthright",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-8",
+          "t": "Superman: Birthright",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-9",
+          "t": "Superman: Birthright",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-10",
+          "t": "Superman: Birthright",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-11",
+          "t": "Superman: Birthright",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-birthright-v1-12",
+          "t": "Superman: Birthright",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "fortomorrow",
+      "title": "Superman: For Tomorrow",
+      "sub": "June 2004 – May 2005 · 12 issues · Brian Azzarello, Jim Lee",
+      "tier": 3,
+      "intro": "A year on the main title, collected in two halves. It is the most argued-over thing on this list and it is here for the art; if the first half does not land, stopping costs you nothing later.",
+      "links": [
+        {
+          "label": "Superman (vol. 2)",
+          "url": "https://dc.fandom.com/wiki/Superman_Vol_2"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-v2-204",
+          "t": "Superman (vol. 2)",
+          "n": "#204",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-205",
+          "t": "Superman (vol. 2)",
+          "n": "#205",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-206",
+          "t": "Superman (vol. 2)",
+          "n": "#206",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-207",
+          "t": "Superman (vol. 2)",
+          "n": "#207",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-208",
+          "t": "Superman (vol. 2)",
+          "n": "#208",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-209",
+          "t": "Superman (vol. 2)",
+          "n": "#209",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-210",
+          "t": "Superman (vol. 2)",
+          "n": "#210",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-211",
+          "t": "Superman (vol. 2)",
+          "n": "#211",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-212",
+          "t": "Superman (vol. 2)",
+          "n": "#212",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-213",
+          "t": "Superman (vol. 2)",
+          "n": "#213",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-214",
+          "t": "Superman (vol. 2)",
+          "n": "#214",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v2-215",
+          "t": "Superman (vol. 2)",
+          "n": "#215",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "upupaway",
+      "title": "Up, Up and Away!",
+      "sub": "May 2006 – August 2006 · 8 issues · Kurt Busiek, Geoff Johns, Pete Woods, Renato Guedes",
+      "tier": 2,
+      "intro": "The first Superman story after Infinite Crisis, and the point where the main title went back to its original numbering — Superman #650 rather than a new #1. It runs as one serial alternating between the two monthly books, so the rows alternate with it.",
+      "links": [
+        {
+          "label": "Superman",
+          "url": "https://dc.fandom.com/wiki/Superman_Vol_1"
+        },
+        {
+          "label": "Action Comics",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-v1-650",
+          "t": "Superman",
+          "n": "#650",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-837",
+          "t": "Action Comics",
+          "n": "#837",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v1-651",
+          "t": "Superman",
+          "n": "#651",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-838",
+          "t": "Action Comics",
+          "n": "#838",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v1-652",
+          "t": "Superman",
+          "n": "#652",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-839",
+          "t": "Action Comics",
+          "n": "#839",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v1-653",
+          "t": "Superman",
+          "n": "#653",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-840",
+          "t": "Action Comics",
+          "n": "#840",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "lastson",
+      "title": "Last Son",
+      "sub": "December 2006 – July 2008 · 5 issues · Geoff Johns, Richard Donner, Adam Kubert",
+      "tier": 2,
+      "intro": "Geoff Johns wrote this one with Richard Donner, who directed the 1978 film. It shipped badly late: three issues, then a gap, then the last chapter, and then an annual a long way behind it. The cover dates in the subtitle show the delay; the collection's order is the reading order.",
+      "links": [
+        {
+          "label": "Action Comics",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1"
+        },
+        {
+          "label": "Action Comics Annual",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Annual_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-action-comics-v1-844",
+          "t": "Action Comics",
+          "n": "#844",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-845",
+          "t": "Action Comics",
+          "n": "#845",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-846",
+          "t": "Action Comics",
+          "n": "#846",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-851",
+          "t": "Action Comics",
+          "n": "#851",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-annual-v1-11",
+          "t": "Action Comics Annual",
+          "n": "#11",
+          "note": "An annual.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "brainiac",
+      "title": "Brainiac",
+      "sub": "August 2008 – December 2008 · 6 issues · Geoff Johns, Gary Frank",
+      "tier": 1,
+      "intro": "Johns and Gary Frank on Action Comics, and the shortest way to see what the pair are good at. The collection carries the special that follows straight on from it, so this list does too.",
+      "links": [
+        {
+          "label": "Action Comics",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1"
+        },
+        {
+          "label": "Superman: New Krypton Special",
+          "url": "https://dc.fandom.com/wiki/Superman:_New_Krypton_Special_Vol_1_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-action-comics-v1-866",
+          "t": "Action Comics",
+          "n": "#866",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-867",
+          "t": "Action Comics",
+          "n": "#867",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-868",
+          "t": "Action Comics",
+          "n": "#868",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-869",
+          "t": "Action Comics",
+          "n": "#869",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-870",
+          "t": "Action Comics",
+          "n": "#870",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-new-krypton-special-v1-1",
+          "t": "Superman: New Krypton Special",
+          "n": "#1",
+          "note": "A one-shot, collected with the run it follows from.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "secretorigin",
+      "title": "Secret Origin",
+      "sub": "November 2009 – October 2010 · 6 issues · Geoff Johns, Gary Frank",
+      "tier": 2,
+      "intro": "Johns and Frank again: the origin a third time, and the last telling before the line restarted its numbering. A third door in, and the one that reads most like the films.",
+      "links": [
+        {
+          "label": "Superman: Secret Origin",
+          "url": "https://dc.fandom.com/wiki/Superman:_Secret_Origin_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-secret-origin-v1-1",
+          "t": "Superman: Secret Origin",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-secret-origin-v1-2",
+          "t": "Superman: Secret Origin",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-secret-origin-v1-3",
+          "t": "Superman: Secret Origin",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-secret-origin-v1-4",
+          "t": "Superman: Secret Origin",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-secret-origin-v1-5",
+          "t": "Superman: Secret Origin",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-secret-origin-v1-6",
+          "t": "Superman: Secret Origin",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "morrison",
+      "title": "Action Comics, relaunched",
+      "sub": "November 2011 – May 2013 · 20 issues · Grant Morrison, Sholly Fisch, Max Landis, Rags Morales and others",
+      "tier": 1,
+      "intro": "The New 52 restarted every DC title at #1, and Morrison used the reset to write him young, broke and in a t-shirt before winding the run forward to where the rest of the line was.\n\nThis is where the numbering breaks. Action Comics starts again at #1, which is why the rows from here on say which volume they are — the #1-18 below are not the same issues as any other #1-18 on this list. The #0 and the annual are placed by cover date, which is where the omnibus puts them.",
+      "links": [
+        {
+          "label": "Action Comics (vol. 2)",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_2"
+        },
+        {
+          "label": "Action Comics Annual (vol. 2)",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Annual_Vol_2"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-action-comics-v2-1",
+          "t": "Action Comics (vol. 2)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-2",
+          "t": "Action Comics (vol. 2)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-3",
+          "t": "Action Comics (vol. 2)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-4",
+          "t": "Action Comics (vol. 2)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-5",
+          "t": "Action Comics (vol. 2)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-6",
+          "t": "Action Comics (vol. 2)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-7",
+          "t": "Action Comics (vol. 2)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-8",
+          "t": "Action Comics (vol. 2)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-9",
+          "t": "Action Comics (vol. 2)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-10",
+          "t": "Action Comics (vol. 2)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-11",
+          "t": "Action Comics (vol. 2)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-12",
+          "t": "Action Comics (vol. 2)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-0",
+          "t": "Action Comics (vol. 2)",
+          "n": "#0",
+          "note": "A zero issue, published between #12 and #13.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-annual-v2-1",
+          "t": "Action Comics Annual (vol. 2)",
+          "n": "#1",
+          "note": "An annual.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-13",
+          "t": "Action Comics (vol. 2)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-14",
+          "t": "Action Comics (vol. 2)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-15",
+          "t": "Action Comics (vol. 2)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-16",
+          "t": "Action Comics (vol. 2)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-17",
+          "t": "Action Comics (vol. 2)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v2-18",
+          "t": "Action Comics (vol. 2)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "unchained",
+      "title": "Superman Unchained",
+      "sub": "August 2013 – January 2015 · 9 issues · Scott Snyder, Jim Lee, Dustin Nguyen",
+      "tier": 2,
+      "intro": "Snyder and Jim Lee, nine issues, published beside the New 52 monthlies rather than inside them — so it needs nothing from the run above and nothing below needs it.",
+      "links": [
+        {
+          "label": "Superman Unchained",
+          "url": "https://dc.fandom.com/wiki/Superman_Unchained_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-unchained-v1-1",
+          "t": "Superman Unchained",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-2",
+          "t": "Superman Unchained",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-3",
+          "t": "Superman Unchained",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-4",
+          "t": "Superman Unchained",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-5",
+          "t": "Superman Unchained",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-6",
+          "t": "Superman Unchained",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-7",
+          "t": "Superman Unchained",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-8",
+          "t": "Superman Unchained",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-unchained-v1-9",
+          "t": "Superman Unchained",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "loisclark",
+      "title": "Lois and Clark",
+      "sub": "December 2015 – July 2016 · 8 issues · Dan Jurgens, Lee Weeks, Marco Santucci, Neil Edwards and others",
+      "tier": 3,
+      "intro": "Eight issues that bridge the New 52 out and Rebirth in. Optional as a story; it is here because without it the change between the two sections either side of it arrives from nowhere.",
+      "links": [
+        {
+          "label": "Superman: Lois and Clark",
+          "url": "https://dc.fandom.com/wiki/Superman:_Lois_and_Clark_Vol_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-lois-and-clark-v1-1",
+          "t": "Superman: Lois and Clark",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-2",
+          "t": "Superman: Lois and Clark",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-3",
+          "t": "Superman: Lois and Clark",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-4",
+          "t": "Superman: Lois and Clark",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-5",
+          "t": "Superman: Lois and Clark",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-6",
+          "t": "Superman: Lois and Clark",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-7",
+          "t": "Superman: Lois and Clark",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-lois-and-clark-v1-8",
+          "t": "Superman: Lois and Clark",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "rebirth",
+      "title": "Tomasi and Gleason's Superman",
+      "sub": "August 2016 – July 2018 · 47 issues · Peter Tomasi, Patrick Gleason, Dan Jurgens, Doug Mahnke and others",
+      "tier": 1,
+      "intro": "The longest run on this list and the house pick for the best modern one. Married, a father, and written as though neither of those needed defending.\n\nThe omnibus order is followed exactly, so the chapters from other books — a crossover with Action Comics, and a detour through Super Sons and Teen Titans — sit where they are read rather than in a heap at the end. The gaps in the numbering are the omnibus's rather than this list's: what it leaves out, it leaves out.",
+      "links": [
+        {
+          "label": "Superman: Rebirth",
+          "url": "https://dc.fandom.com/wiki/Superman:_Rebirth_Vol_1_1"
+        },
+        {
+          "label": "Superman (vol. 4)",
+          "url": "https://dc.fandom.com/wiki/Superman_Vol_4"
+        },
+        {
+          "label": "Superman Annual (vol. 4)",
+          "url": "https://dc.fandom.com/wiki/Superman_Annual_Vol_4"
+        },
+        {
+          "label": "Action Comics",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1"
+        },
+        {
+          "label": "Super Sons",
+          "url": "https://dc.fandom.com/wiki/Super_Sons_Vol_1"
+        },
+        {
+          "label": "Teen Titans (vol. 6)",
+          "url": "https://dc.fandom.com/wiki/Teen_Titans_Vol_6"
+        },
+        {
+          "label": "Superman Special (vol. 3)",
+          "url": "https://dc.fandom.com/wiki/Superman_Special_Vol_3"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-rebirth-v1-1",
+          "t": "Superman: Rebirth",
+          "n": "#1",
+          "note": "A one-shot, ahead of the run's own #1.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-1",
+          "t": "Superman (vol. 4)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-2",
+          "t": "Superman (vol. 4)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-3",
+          "t": "Superman (vol. 4)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-4",
+          "t": "Superman (vol. 4)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-5",
+          "t": "Superman (vol. 4)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-6",
+          "t": "Superman (vol. 4)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-7",
+          "t": "Superman (vol. 4)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-8",
+          "t": "Superman (vol. 4)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-9",
+          "t": "Superman (vol. 4)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-10",
+          "t": "Superman (vol. 4)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-11",
+          "t": "Superman (vol. 4)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-annual-v4-1",
+          "t": "Superman Annual (vol. 4)",
+          "n": "#1",
+          "note": "An annual.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-12",
+          "t": "Superman (vol. 4)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-13",
+          "t": "Superman (vol. 4)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-14",
+          "t": "Superman (vol. 4)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-15",
+          "t": "Superman (vol. 4)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-16",
+          "t": "Superman (vol. 4)",
+          "n": "#16",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-17",
+          "t": "Superman (vol. 4)",
+          "n": "#17",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-18",
+          "t": "Superman (vol. 4)",
+          "n": "#18",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-975",
+          "t": "Action Comics",
+          "n": "#975",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-19",
+          "t": "Superman (vol. 4)",
+          "n": "#19",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-976",
+          "t": "Action Comics",
+          "n": "#976",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-20",
+          "t": "Superman (vol. 4)",
+          "n": "#20",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-21",
+          "t": "Superman (vol. 4)",
+          "n": "#21",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-22",
+          "t": "Superman (vol. 4)",
+          "n": "#22",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-23",
+          "t": "Superman (vol. 4)",
+          "n": "#23",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-24",
+          "t": "Superman (vol. 4)",
+          "n": "#24",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-25",
+          "t": "Superman (vol. 4)",
+          "n": "#25",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-27",
+          "t": "Superman (vol. 4)",
+          "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-28",
+          "t": "Superman (vol. 4)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-33",
+          "t": "Superman (vol. 4)",
+          "n": "#33",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-34",
+          "t": "Superman (vol. 4)",
+          "n": "#34",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-35",
+          "t": "Superman (vol. 4)",
+          "n": "#35",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-36",
+          "t": "Superman (vol. 4)",
+          "n": "#36",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-37",
+          "t": "Superman (vol. 4)",
+          "n": "#37",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-super-sons-v1-11",
+          "t": "Super Sons",
+          "n": "#11",
+          "note": "A chapter from another book.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-teen-titans-v6-15",
+          "t": "Teen Titans (vol. 6)",
+          "n": "#15",
+          "note": "A chapter from another book.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-38",
+          "t": "Superman (vol. 4)",
+          "n": "#38",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-super-sons-v1-12",
+          "t": "Super Sons",
+          "n": "#12",
+          "note": "A chapter from another book.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-39",
+          "t": "Superman (vol. 4)",
+          "n": "#39",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-42",
+          "t": "Superman (vol. 4)",
+          "n": "#42",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-43",
+          "t": "Superman (vol. 4)",
+          "n": "#43",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-44",
+          "t": "Superman (vol. 4)",
+          "n": "#44",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v4-45",
+          "t": "Superman (vol. 4)",
+          "n": "#45",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1000",
+          "t": "Action Comics",
+          "n": "#1000",
+          "note": "The 1000th issue · an anthology · both this run's omnibus and the next run's collection print it.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-special-v3-1",
+          "t": "Superman Special (vol. 3)",
+          "n": "#1",
+          "note": "A one-shot.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "bendis",
+      "title": "Bendis takes over",
+      "sub": "July 2018 – November 2019 · 22 issues · Brian Michael Bendis, Ivan Reis, Jason Fabok, Evan Shaner and others",
+      "tier": 2,
+      "intro": "A free preview, a six-issue miniseries that reuses the title The Man of Steel, and then a new Superman #1 for the Unity Saga — one run across three collected editions.\n\nThe main title starts over at #1 here. It does that three times inside this list, which is why the rows carry a volume.",
+      "links": [
+        {
+          "label": "DC Nation (vol. 2)",
+          "url": "https://dc.fandom.com/wiki/DC_Nation_Vol_2"
+        },
+        {
+          "label": "The Man of Steel (vol. 2)",
+          "url": "https://dc.fandom.com/wiki/The_Man_of_Steel_Vol_2"
+        },
+        {
+          "label": "Superman (vol. 5)",
+          "url": "https://dc.fandom.com/wiki/Superman_Vol_5"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-dc-nation-v2-0",
+          "t": "DC Nation (vol. 2)",
+          "n": "#0",
+          "note": "A free preview anthology.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v2-1",
+          "t": "The Man of Steel (vol. 2)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v2-2",
+          "t": "The Man of Steel (vol. 2)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v2-3",
+          "t": "The Man of Steel (vol. 2)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v2-4",
+          "t": "The Man of Steel (vol. 2)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v2-5",
+          "t": "The Man of Steel (vol. 2)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-the-man-of-steel-v2-6",
+          "t": "The Man of Steel (vol. 2)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-1",
+          "t": "Superman (vol. 5)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-2",
+          "t": "Superman (vol. 5)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-3",
+          "t": "Superman (vol. 5)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-4",
+          "t": "Superman (vol. 5)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-5",
+          "t": "Superman (vol. 5)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-6",
+          "t": "Superman (vol. 5)",
+          "n": "#6",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-7",
+          "t": "Superman (vol. 5)",
+          "n": "#7",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-8",
+          "t": "Superman (vol. 5)",
+          "n": "#8",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-9",
+          "t": "Superman (vol. 5)",
+          "n": "#9",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-10",
+          "t": "Superman (vol. 5)",
+          "n": "#10",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-11",
+          "t": "Superman (vol. 5)",
+          "n": "#11",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-12",
+          "t": "Superman (vol. 5)",
+          "n": "#12",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-13",
+          "t": "Superman (vol. 5)",
+          "n": "#13",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-14",
+          "t": "Superman (vol. 5)",
+          "n": "#14",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v5-15",
+          "t": "Superman (vol. 5)",
+          "n": "#15",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "warworld",
+      "title": "The Warworld Saga",
+      "sub": "March 2021 – October 2022 · 24 issues · Phillip Kennedy Johnson, Simon Spurrier, Will Conrad, Mikel Janín and others",
+      "tier": 1,
+      "intro": "The strongest recent run, and the one worth catching up for. The collection folds in the three Future State issues that set it up — they were published first, so they come first here.",
+      "links": [
+        {
+          "label": "Future State: Superman: Worlds of War",
+          "url": "https://dc.fandom.com/wiki/Future_State:_Superman:_Worlds_of_War_Vol_1"
+        },
+        {
+          "label": "Future State: Superman: House of El",
+          "url": "https://dc.fandom.com/wiki/Future_State:_Superman:_House_of_El_Vol_1_1"
+        },
+        {
+          "label": "Action Comics",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_Vol_1"
+        },
+        {
+          "label": "Action Comics 2021 Annual",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_2021_Annual_Vol_1"
+        },
+        {
+          "label": "Batman/Superman Authority Special",
+          "url": "https://dc.fandom.com/wiki/Batman/Superman_Authority_Special_Vol_1_1"
+        },
+        {
+          "label": "Action Comics 2022 Annual",
+          "url": "https://dc.fandom.com/wiki/Action_Comics_2022_Annual_Vol_1"
+        },
+        {
+          "label": "Superman: Warworld Apocalypse",
+          "url": "https://dc.fandom.com/wiki/Superman:_Warworld_Apocalypse_Vol_1_1"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-future-state-superman-worlds-of-war-v1-1",
+          "t": "Future State: Superman: Worlds of War",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-future-state-superman-worlds-of-war-v1-2",
+          "t": "Future State: Superman: Worlds of War",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-future-state-superman-house-of-el-v1-1",
+          "t": "Future State: Superman: House of El",
+          "n": "#1",
+          "note": "A one-shot, from the two-month Future State break in the line.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1030",
+          "t": "Action Comics",
+          "n": "#1030",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1031",
+          "t": "Action Comics",
+          "n": "#1031",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1032",
+          "t": "Action Comics",
+          "n": "#1032",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1033",
+          "t": "Action Comics",
+          "n": "#1033",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-2021-annual-v1-1",
+          "t": "Action Comics 2021 Annual",
+          "n": "#1",
+          "note": "An annual.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1034",
+          "t": "Action Comics",
+          "n": "#1034",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1035",
+          "t": "Action Comics",
+          "n": "#1035",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-batman-superman-authority-special-v1-1",
+          "t": "Batman/Superman Authority Special",
+          "n": "#1",
+          "note": "A one-shot from outside the Superman books.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1036",
+          "t": "Action Comics",
+          "n": "#1036",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1037",
+          "t": "Action Comics",
+          "n": "#1037",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1038",
+          "t": "Action Comics",
+          "n": "#1038",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1039",
+          "t": "Action Comics",
+          "n": "#1039",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1040",
+          "t": "Action Comics",
+          "n": "#1040",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1041",
+          "t": "Action Comics",
+          "n": "#1041",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1042",
+          "t": "Action Comics",
+          "n": "#1042",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1043",
+          "t": "Action Comics",
+          "n": "#1043",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-2022-annual-v1-1",
+          "t": "Action Comics 2022 Annual",
+          "n": "#1",
+          "note": "An annual.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1044",
+          "t": "Action Comics",
+          "n": "#1044",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1045",
+          "t": "Action Comics",
+          "n": "#1045",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-action-comics-v1-1046",
+          "t": "Action Comics",
+          "n": "#1046",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-warworld-apocalypse-v1-1",
+          "t": "Superman: Warworld Apocalypse",
+          "n": "#1",
+          "note": "A one-shot finale.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    },
+    {
+      "id": "supercorp",
+      "title": "Williamson's Superman",
+      "sub": "April 2023 – October 2023 · 6 issues · Joshua Williamson, Jamal Campbell, Nick Dragotta, Mahmud Asrar and others",
+      "tier": 2,
+      "intro": "Where the list stops, because it is where a collected edition stops. The run carries on past this volume; nothing here is guessed ahead of a collection that names the issues.",
+      "links": [
+        {
+          "label": "Superman (vol. 6)",
+          "url": "https://dc.fandom.com/wiki/Superman_Vol_6"
+        },
+        {
+          "label": "Superman 2023 Annual (vol. 6)",
+          "url": "https://dc.fandom.com/wiki/Superman_2023_Annual_Vol_6"
+        }
+      ],
+      "items": [
+        {
+          "id": "sup-superman-v6-1",
+          "t": "Superman (vol. 6)",
+          "n": "#1",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v6-2",
+          "t": "Superman (vol. 6)",
+          "n": "#2",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v6-3",
+          "t": "Superman (vol. 6)",
+          "n": "#3",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v6-4",
+          "t": "Superman (vol. 6)",
+          "n": "#4",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-v6-5",
+          "t": "Superman (vol. 6)",
+          "n": "#5",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        },
+        {
+          "id": "sup-superman-2023-annual-v6-1",
+          "t": "Superman 2023 Annual (vol. 6)",
+          "n": "#1",
+          "note": "An annual.",
+          "star": 0,
+          "opt": 0,
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

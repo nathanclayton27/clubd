@@ -1,9 +1,9 @@
 {
   "slug": "dc-comics",
   "title": "DC Comics",
-  "subtitle": "7 reading orders",
+  "subtitle": "8 reading orders",
   "kind": "comics",
-  "year": "1985–2021",
+  "year": "1985–2023",
   "popularity": 88,
   "unit": {
     "one": "reading order",
@@ -16,7 +16,7 @@
   },
   "accent": "#0A50C8",
   "accentDark": "#7AA9FF",
-  "blurb": "Seven DC reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+  "blurb": "Eight DC reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
   "notes": [
     [
       "Every row is a door.",
@@ -32,7 +32,7 @@
     ],
     [
       "The rows do not all count the same thing.",
-      "Five of these pages count issues, Batman counts collected stories because there is no single Batman run to read, and the Vertigo shelf counts the volumes those runs were collected in. That disagreement is real and it stays on each page, where each says which unit it uses and why. Here every door counts one, so nothing on this page has to reconcile them."
+      "Seven of these pages count issues and the Vertigo shelf counts the volumes those runs were collected in. That disagreement is real and it stays on each page, where each says which unit it uses and why. Here every door counts one, so nothing on this page has to reconcile them."
     ],
     [
       "DC on screen is a different shelf.",
@@ -44,22 +44,29 @@
     ],
     [
       "DC is bigger than this.",
-      "There is no Superman spine here, no Wonder Woman, no Flash, no Swamp Thing, no Starman, no Kingdom Come. Every row on this page is a list that already exists; the rest are written down as work still to do, and each will get a row here once it is built rather than a promise of one now."
+      "There is no Wonder Woman here, no Flash, no Swamp Thing, no Starman, no Kingdom Come. Every row on this page is a list that already exists; the rest are written down as work still to do, and each will get a row here once it is built rather than a promise of one now."
     ],
-    "Every row is read out of the list it opens. The title, the years and the count on each row are taken from that list's own file when the page is built, so nothing here can drift from the page behind it, and none of it was typed in. The sources are on those seven pages, each naming its own. What is a judgement, and mine, is which reading orders belong on a DC shelf and how they are grouped."
+    "Every row is read out of the list it opens. The title, the years and the count on each row are taken from that list's own file when the page is built, so nothing here can drift from the page behind it, and none of it was typed in. The sources are on those eight pages, each naming its own. What is a judgement, and mine, is which reading orders belong on a DC shelf and how they are grouped."
   ],
   "sections": [
     {
       "id": "route",
-      "title": "Where to start with Batman",
-      "sub": "There is no Batman run to read front to back — seventy years, three reboots, and two flagship titles running in parallel the whole time — so the way in is a curated route through the stories that get named, era by era, a collected story to a row.",
+      "title": "Where to start with a character",
+      "sub": "Neither of these two has a run to read front to back — decades of it, several reboots, and two flagship titles running in parallel the whole time — so the way in is a house pick of the runs worth the time, in publication order, an issue to a row. Each page says on itself where it starts, where it stops and what it leaves out.",
       "items": [
         {
           "id": "dcc-batman",
           "t": "Batman",
-          "n": "1986–2021",
-          "note": "35 stories",
+          "n": "1986–2019",
+          "note": "225 issues",
           "into": "batman"
+        },
+        {
+          "id": "dcc-superman",
+          "t": "Superman",
+          "n": "1986–2023",
+          "note": "195 issues",
+          "into": "superman"
         }
       ]
     },
