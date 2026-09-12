@@ -666,10 +666,17 @@ def main():
         # Everything brighter in the same hue is taken and taken closely:
         # #C9A227 is Deadwood exactly, #8A6D1F is 2.5 from Star Wars, the
         # Rush Hour orange 4.1 from Mission: Impossible, the flag red 7.0
-        # from FLCL. Nearest neighbours to this pair: M*A*S*H's #4B5320 at
-        # 15.6 and One-Location Films' #D9A94E at 15.6.
+        # from FLCL.
+        #
+        # CLU-544 corrected the dark half. That reasoning measured PAIRS in
+        # CIE76, and both mistakes mattered: the dark tone it picked, #A68930,
+        # was Bruce Lee's #A68930 exactly, and comparing pairs could not see it
+        # because the two lists' light halves differ. #C08800 is the same brass
+        # one step brighter, dE00 7.97 from Bruce Lee and 6.6 from Jet Li — the
+        # three martial-arts lists stay a family, which is deliberate, without
+        # two of them being the same colour. Light half untouched.
         "accent": "#4B3B06",
-        "accentDark": "#A68930",
+        "accentDark": "#C08800",
         "tiers": False,
         "notes": [
             ["The list is the source's Actor column, nothing else.",

@@ -3,8 +3,10 @@
 Checks the classes of bug this project has actually shipped: wikitext plumbing
 leaking into display strings, "0 films and" phrasing, ids that break build.py,
 filter values with no tagged rows, paceTiers pointing at tiers nobody uses,
-missing or out-of-range popularity values, duplicate accents, weights that are
-negative or absurd, empty or placeholder text where a reader would see it, a
+missing or out-of-range popularity values, accents two lists cannot be told
+apart by (per theme, in CIEDE2000, with the whole distribution printed), accents
+too faint to see against the page they are drawn on, weights that are negative
+or absurd, empty or placeholder text where a reader would see it, a
 hard-coded count or hours figure in a section subtitle or a blurb that the rows
 no longer support, and the one mechanically checkable half of the note standard.
 
@@ -16,6 +18,7 @@ then stops meaning anything — which is exactly how rule 06 went unchecked for
 weeks while `findings: 0` was quoted as proof it held.
 """
 import json
+import math
 import pathlib
 import re
 import collections
@@ -170,6 +173,140 @@ PROVENANCE = re.compile(
     r"reading order|press|calendar|database|\.com|\.org|\.net)\b", re.I)
 
 
+# ------------------------------------------------------------- accent distance
+# CLU-544. Two lists wore an identical colour for weeks and the check meant to
+# catch it passed them, because it compared the PAIR (accent, accentDark) and
+# each collision was in one half of the pair with the other half different. The
+# pair is not what anybody sees: accentOf() in src/template.html renders ONE of
+# the two at a time, chosen by prefers-color-scheme, so the comparison has to be
+# per theme -- light against light, dark against dark, with `accentDark or
+# accent` standing in for a list that declares no dark tone. Comparing pairs hid
+# four exact collisions: frasier/one-location-films and mcu-anthology/seinfeld
+# on `accent`, bruce-lee/jackie-chan and cates-venom/directors on `accentDark`.
+#
+# Distance is CIEDE2000 over sRGB -> D65 XYZ -> CIE Lab, written out here rather
+# than imported, because this repo runs on a bare stdlib python and a lint
+# nobody can execute is not a lint. Plain CIE76 (euclidean Lab) was measured
+# against it across the whole catalogue first and is not good enough in the
+# blues, which is where this catalogue is crowded: dc-animation/dc-anthology is
+# dE76 6.09 and dE00 1.15, so CIE76 calls a pair nobody can separate
+# "comfortably apart". Where the two disagree, CIEDE2000 is the one that matches
+# what is on screen.
+#
+# WHICH LEVEL, and why:
+#   FINDING  two lists rendering the IDENTICAL hex in the same theme. Mechanical,
+#            unambiguous, and there are none, so it cannot turn main red unless
+#            somebody actually ships a collision.
+#   NOTICE   a pair under dE00 1.0 (the CIE line below which a normal observer
+#            sees no difference at all), and an accent under 3:1 against the
+#            ground it is drawn on. Both are real, neither is worth a red build.
+#   NOTHING  everything above that, however tight. 1,036 light pairs sit under
+#            the 8.0 floor tools/make_grand-theft-auto.py holds itself to and 350
+#            under 5.0, so a build failing at either would have gone red around
+#            the ninetieth list. What was actually missing is not refusal, it is
+#            that nobody knew how tight it had got -- so the census prints the
+#            whole distribution on every build and refuses almost nothing.
+# The grounds are the real tokens from src/template.html: --card and --paper, in
+# :root and in the prefers-color-scheme: dark block.
+GROUNDS = {"light": ("#F2F2EE", "#E6E7E2"),
+           "dark": ("#1B1E22", "#131518")}
+IMPERCEPTIBLE = 1.0   # dE00 below which there is nothing to see
+MIN_CONTRAST = 3.0    # WCAG 1.4.11, non-text contrast for a graphical mark
+WP = (0.95047, 1.0, 1.08883)  # D65
+
+
+def _chan(hexv):
+    h = hexv.lstrip("#")
+    return [int(h[i:i + 2], 16) / 255.0 for i in (0, 2, 4)]
+
+
+def _linear(c):
+    return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+
+
+def lab(hexv):
+    """sRGB hex -> CIE Lab (D65)."""
+    r, g, b = (_linear(c) for c in _chan(hexv))
+    xyz = (r * 0.4124564 + g * 0.3575761 + b * 0.1804375,
+           r * 0.2126729 + g * 0.7151522 + b * 0.0721750,
+           r * 0.0193339 + g * 0.1191920 + b * 0.9503041)
+
+    def f(t):
+        return t ** (1 / 3.0) if t > 216 / 24389.0 else (841 / 108.0) * t + 4 / 29.0
+
+    fx, fy, fz = (f(v / w) for v, w in zip(xyz, WP))
+    return (116 * fy - 16, 500 * (fx - fy), 200 * (fy - fz))
+
+
+def de2000(p1, p2):
+    """CIEDE2000 between two Lab triples, kL = kC = kH = 1."""
+    L1, a1, b1 = p1
+    L2, a2, b2 = p2
+    C1, C2 = math.hypot(a1, b1), math.hypot(a2, b2)
+    Cb = (C1 + C2) / 2.0
+    G = 0.5 * (1 - math.sqrt(Cb ** 7 / (Cb ** 7 + 25.0 ** 7))) if Cb else 0.5
+    a1p, a2p = (1 + G) * a1, (1 + G) * a2
+    C1p, C2p = math.hypot(a1p, b1), math.hypot(a2p, b2)
+    h1p = math.degrees(math.atan2(b1, a1p)) % 360 if (a1p or b1) else 0.0
+    h2p = math.degrees(math.atan2(b2, a2p)) % 360 if (a2p or b2) else 0.0
+    dLp, dCp = L2 - L1, C2p - C1p
+    if C1p * C2p == 0:
+        dhp = 0.0
+    elif abs(h2p - h1p) <= 180:
+        dhp = h2p - h1p
+    else:
+        dhp = h2p - h1p - 360 if h2p > h1p else h2p - h1p + 360
+    dHp = 2 * math.sqrt(C1p * C2p) * math.sin(math.radians(dhp) / 2.0)
+    Lbp, Cbp = (L1 + L2) / 2.0, (C1p + C2p) / 2.0
+    if C1p * C2p == 0:
+        hbp = h1p + h2p
+    elif abs(h1p - h2p) <= 180:
+        hbp = (h1p + h2p) / 2.0
+    elif h1p + h2p < 360:
+        hbp = (h1p + h2p + 360) / 2.0
+    else:
+        hbp = (h1p + h2p - 360) / 2.0
+    T = (1 - 0.17 * math.cos(math.radians(hbp - 30))
+         + 0.24 * math.cos(math.radians(2 * hbp))
+         + 0.32 * math.cos(math.radians(3 * hbp + 6))
+         - 0.20 * math.cos(math.radians(4 * hbp - 63)))
+    SL = 1 + (0.015 * (Lbp - 50) ** 2) / math.sqrt(20 + (Lbp - 50) ** 2)
+    SC = 1 + 0.045 * Cbp
+    SH = 1 + 0.015 * Cbp * T
+    RT = (-math.sin(math.radians(60 * math.exp(-(((hbp - 275) / 25.0) ** 2))))
+          * 2 * math.sqrt(Cbp ** 7 / (Cbp ** 7 + 25.0 ** 7))) if Cbp else 0.0
+    return math.sqrt((dLp / SL) ** 2 + (dCp / SC) ** 2 + (dHp / SH) ** 2
+                     + RT * (dCp / SC) * (dHp / SH))
+
+
+# Four of Sharma's published CIEDE2000 reference pairs, kept here because a
+# silently wrong distance function makes this census go quiet rather than wrong,
+# and quiet is how rule 06 went unchecked for weeks. The full 23-pair set was run
+# against this implementation and every one agrees to 1e-4; these four are the
+# ones that catch the mistakes actually easy to make -- the hue-difference sign
+# convention, the 275-degree rotation term, and the near-neutral guard.
+for _p1, _p2, _want in (
+        ((50.0, 2.6772, -79.7751), (50.0, 0.0, -82.7485), 2.0425),
+        ((50.0, 2.49, -0.001), (50.0, -2.49, 0.0011), 7.2195),
+        ((50.0, 2.5, 0.0), (73.0, 25.0, -18.0), 27.1492),
+        ((2.0776, 0.0795, -1.135), (0.9033, -0.0636, -0.5514), 0.9082)):
+    _got = de2000(_p1, _p2)
+    assert abs(_got - _want) < 2e-4, (
+        "CIEDE2000 is wrong: %r vs %r should be %.4f, got %.4f"
+        % (_p1, _p2, _want, _got))
+
+
+def contrast(h1, h2):
+    """WCAG relative-luminance ratio between two hex colours."""
+    def lum(h):
+        r, g, b = (_linear(c) for c in _chan(h))
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b
+    a, b = lum(h1), lum(h2)
+    if a < b:
+        a, b = b, a
+    return (a + 0.05) / (b + 0.05)
+
+
 def note_text(note):
     """(heading, body) for either note shape: a bare string or [head, text]."""
     if isinstance(note, list):
@@ -188,7 +325,7 @@ def plain(s):
 
 findings = collections.defaultdict(list)
 notices = collections.defaultdict(list)
-accents, pops = {}, {}
+accents, pops = {"light": {}, "dark": {}}, {}
 
 # Ahead of whatever popularity says, these two open the catalogue. Kept in step
 # with PINNED in src/build.py; if they diverge, the manifest check below is
@@ -235,10 +372,11 @@ for f in sorted(PROPS.glob("*.json")):
         v = p.get(k)
         if v and not HEX.match(v):
             findings[slug].append("%s not hex: %r" % (k, v))
-    a = (p.get("accent"), p.get("accentDark"))
-    if a in accents:
-        findings[slug].append("accent pair shared with %s" % accents[a])
-    accents[a] = slug
+    # What each theme actually renders, for the census after the loop. The
+    # dark fallback mirrors accentOf(): `(dark && accentDark) || accent`.
+    if HEX.match(p.get("accent") or ""):
+        accents["light"][slug] = p["accent"].upper()
+        accents["dark"][slug] = (p.get("accentDark") or p["accent"]).upper()
 
     ids, tiers_used, tags_used = [], set(), set()
     for s in p.get("sections", []):
@@ -373,6 +511,84 @@ for f in sorted(PROPS.glob("*.json")):
                 "rule 06: no note names where the data came from (keyword "
                 "proxy, so check it by eye before acting)")
 
+# ------------------------------------------------------------- accent census
+# Runs over the whole catalogue at once, which is the point: every earlier
+# version of this rule lived inside ONE generator and measured that generator
+# against everybody else, so 51 of the 239 generators now carry some private
+# variant of it and the other 188 carry none. That is backwards. A list is not
+# hard to pick out because of how IT was built, it is hard to pick out because of
+# what is next to it, so the check belongs where the whole wall is visible.
+#
+# It reports, and with one exception does not refuse. See the level argument next
+# to de2000() above.
+census_lines = []
+for theme in ("light", "dark"):
+    rendered = accents[theme]
+    labs = {s: lab(h) for s, h in rendered.items()}
+    slugs = sorted(labs)
+
+    # FINDING: the identical hex in the same theme. Two cards with no difference
+    # at all to find, whatever the other theme happens to do.
+    groups = collections.defaultdict(list)
+    for s in slugs:
+        groups[rendered[s]].append(s)
+    for hexv, group in sorted(groups.items()):
+        if len(group) > 1:
+            for s in group:
+                findings[s].append(
+                    "%s theme renders %s and so does %s - the identical colour, "
+                    "not merely a close one; repaint whichever list the colour "
+                    "means less for" % (theme, hexv,
+                                        ", ".join(x for x in group if x != s)))
+
+    pairs = []
+    for i, a in enumerate(slugs):
+        for b in slugs[i + 1:]:
+            pairs.append((de2000(labs[a], labs[b]), a, b))
+    pairs.sort()
+
+    # NOTICE: under the imperceptibility line but not identical. Named on one
+    # side of the pair only, so the count is the number of collisions rather
+    # than twice it.
+    for d, a, b in pairs:
+        if d >= IMPERCEPTIBLE:
+            break
+        if rendered[a] != rendered[b]:
+            notices[a].append(
+                "%s theme: dE00 %.2f from %s (%s vs %s) - under the 1.0 line, so "
+                "the hexes differ and nothing visible does"
+                % (theme, d, b, rendered[a], rendered[b]))
+
+    # NOTICE: too faint to see on the surface it is drawn on. The accent lands on
+    # the card (--card) and on the page behind it (--paper); the tighter of the
+    # two decides whether the dot reads at all.
+    card, paper = GROUNDS[theme]
+    for s in slugs:
+        c = min(contrast(rendered[s], card), contrast(rendered[s], paper))
+        if c < MIN_CONTRAST:
+            notices[s].append(
+                "%s theme: %s is only %.2f:1 against the page ground, under the "
+                "3:1 floor for a non-text mark - the dot and a started card's "
+                "top edge go faint" % (theme, rendered[s], c))
+
+    # the distribution, printed every build. Pairs are sorted, so the first time
+    # a slug appears is its own nearest neighbour.
+    nn = {}
+    for d, a, b in pairs:
+        nn.setdefault(a, d)
+        nn.setdefault(b, d)
+    near = sorted(nn.values())
+    bands = " ".join("<%.0f:%d" % (f, sum(1 for x in pairs if x[0] < f))
+                     for f in (1.0, 2.0, 5.0, 8.0))
+    census_lines.append(
+        "  %-5s %3d lists, %5d pairs | identical:%d %s | nearest-neighbour "
+        "median dE00 %.1f" % (theme, len(slugs), len(pairs),
+                              sum(1 for x in pairs if x[0] == 0.0), bands,
+                              near[len(near) // 2] if near else 0.0))
+    for d, a, b in pairs[:4]:
+        census_lines.append("        dE00 %5.2f  %-24s %-8s %-24s %s"
+                            % (d, a, rendered[a], b, rendered[b]))
+
 # ---- the committed tree must be self-consistent: every manifest entry has
 # its property file and vice versa. A masked git add once shipped a manifest
 # offering seven pages whose JSON 404'd on the live site.
@@ -437,6 +653,14 @@ print("notices:", notice_total, "(reported, do not fail the build)")
 for slug in sorted(notices):
     for msg in notices[slug]:
         print("  %-18s %s" % (slug, msg))
+
+# The census prints whether or not it had anything to say, because the number
+# nobody had was how tight the catalogue has become - 1,036 light pairs under the
+# floor one generator refuses at, and the wall could not have told you.
+print("accent census (CIEDE2000, per theme; dE00 1.0 is the line below which "
+      "there is nothing to see):")
+for line in census_lines:
+    print(line)
 
 if total:
     print("\n%d finding(s)" % total)

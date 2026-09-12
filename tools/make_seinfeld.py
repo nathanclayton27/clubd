@@ -63,7 +63,12 @@ def main():
                  "nothing, from The Seinfeld Chronicles to The Finale.",
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
-        "accent": "#B3282D",
+        # CLU-544: this was #B3282D, which is Marvel's red and was also, to the
+        # digit, mcu-anthology's. Marvel red stays with Marvel; the show keeps
+        # the deli ochre its own dark tone already used, so for the first time
+        # both themes wear one hue instead of red-then-gold. dE00 6.40 from its
+        # nearest neighbour (star-wars-games), 6.72:1 against the page.
+        "accent": "#684800",
         "accentDark": "#E8B93F",
         "tiers": False,
         "notes": [

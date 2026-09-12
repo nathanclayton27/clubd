@@ -120,8 +120,13 @@ def main():
         # without this the stats bar falls back to the literal "Done"; every
         # row here is a body of films, so the honest past tense is "watched"
         "verb": {"base": "watch", "ing": "watching", "past": "watched"},
+        # CLU-544: the dark half was #9C8AE0, identical to cates-venom's. The
+        # symbiote has a claim on violet and a list of filmographies does not,
+        # so this one moved: same hue as its own light #5B4A9E, lifted to a pale
+        # lilac for dark. dE00 8.14 from its nearest neighbour (black-mirror),
+        # 12.0:1 against the page.
         "accent": "#5B4A9E",
-        "accentDark": "#9C8AE0",
+        "accentDark": "#D4CCF8",
         "blurb": "Fifteen filmographies as one list. Each row opens the "
                  "director's own page, and finishing that page ticks the row "
                  "here.",

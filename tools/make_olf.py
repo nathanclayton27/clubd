@@ -82,7 +82,13 @@ def main():
                  "the room." % len(films),
         "unit": {"one": "film", "many": "films"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
-        "accent": "#46586B",
+        # CLU-544: this was #46586B, identical to Frasier's. Frasier keeps the
+        # Seattle slate — a real show with a real palette outranks a genre list
+        # on a colour neither chose deliberately — and this list takes the
+        # leather and wood of the room it is about, which also puts it in the
+        # same warm family as its own dark tone. dE00 9.90 from its nearest
+        # neighbour (wolverine), 4.47:1 against the page.
+        "accent": "#846054",
         "accentDark": "#D9A94E",
         "tiers": False,
         "random": True,
