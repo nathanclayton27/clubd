@@ -175,16 +175,19 @@ h1 em{font-style:normal;color:var(--signal)}
    on a phone than anywhere else. It follows a finger and stays up until you
    touch elsewhere or scroll; see the touch handlers in wireStrip. */
 
-/* One strip layer per reader, stacked with a small vertical offset. A layer's
-   read mark drops to the bottom of the whole stack only where nobody ranked
-   behind it still has something to show in that column — see paintStack(). */
+/* One band per reader, equal height, one under the other with a small gap and
+   NO OVERLAP (CLU-518). The layers used to overlap, which meant a band was as
+   tall as whatever the person in front had not ticked — so a member's band
+   changed height column by column and the strip looked broken. Three rules
+   lived here to patch that (`.full` stretched a mark to the bottom of the
+   stack, `.dropfill` stretched it to the next ticked layer, `.veil` hid an
+   unread nub that would punch a hole through a band behind it); none of them
+   has anything to do once bands cannot cover each other, and all three are
+   gone. A band is one person's row and nothing else is drawn inside it. */
 .stack{display:flex;flex-direction:column;gap:22px;margin:60px 0 10px}
 .stackrow{position:relative;touch-action:pan-y;transition:margin .28s ease-out}
 .stackrow .layer{position:absolute;left:0;right:0;display:flex;gap:1px;
   height:var(--layerH,35px);align-items:flex-end;margin:0}
-.stackrow .tick.on.full{align-self:flex-start;height:var(--fillH)}
-.stackrow .tick.on.dropfill{align-self:flex-start;height:var(--dropH)}
-.stackrow .tick.veil{background:transparent}
 .pacer{position:absolute;top:-5px;bottom:-5px;width:1px;background:var(--ink-3);z-index:60;pointer-events:none}
 .pacer::before{content:"";position:absolute;top:0;left:-2px;width:5px;height:5px;background:var(--ink-3)}
 /* The legend is the roster now (CLU-52). It used to be a wrapped line under
@@ -6580,6 +6583,19 @@ addEventListener('scroll', ()=>{
 
 // one layer's own height, and how far each layer behind peeks out below it
 const LAYER_H = 35, LAYER_OFFSET = 16;
+// CLU-518. The stack used to OVERLAP its layers by LAYER_H - LAYER_OFFSET, so a
+// band was 35px where nobody in front had ticked and 16px where they had. The
+// height of a band encoded who was in front of you — unreadable by design, and
+// it read as a rendering fault. Nathan: "dont know whats causing this graph to
+// break but its fucked."
+//
+// One band per person now, equal height, a 3px gap, no overlap — the geometry
+// the club share image already uses and that he approved there. LAYER_H and
+// LAYER_OFFSET survive as the numbers that decide how TALL the stack is, so it
+// keeps the height it had and divides it instead of overlapping it; BAND_MIN
+// stops a large club squeezing every band into something unreadable, and past
+// about five people the stack grows rather than shrinking the bands.
+const BAND_GAP = 3, BAND_MIN = 18;
 
 // Sixteen since CLU-136. Past sixteen a repeat is unavoidable and needs a
 // second distinguishing mark rather than more hues — see the card.
@@ -7514,18 +7530,14 @@ function paintStack(){
 
   const list = drawn.slice()
     .sort((a,b)=> readsOf(b).size - readsOf(a).size || a.name.localeCompare(b.name));
-  // Flat, deliberately. Shrinking the offset as the group grew kept the stack
-  // short but made the front reader's band pull further ahead of everyone
-  // else's the more people joined — at six it was three times a rear band.
-  const offset = LAYER_OFFSET;
-  const stackH = LAYER_H + (list.length-1)*offset;
+  // Every band the same height, one under the other. The old flat OFFSET is
+  // still what sets the total, so the stack does not change size on the page —
+  // it is divided rather than overlapped.
+  const n = list.length;
+  const bandH = Math.max(BAND_MIN,
+    Math.round((LAYER_H + (n-1)*LAYER_OFFSET - BAND_GAP*(n-1)) / n));
+  const stackH = bandH*n + BAND_GAP*(n-1);
   const reads = list.map(readsOf);
-
-  // for each column, the furthest-back layer still showing something there
-  const deepest = ORDER.map(id=>{
-    for(let i=reads.length-1; i>=0; i--) if(reads[i].has(id)) return i;
-    return -1;
-  });
 
   const rows = rowsFor();
   let html = '';
@@ -7541,23 +7553,12 @@ function paintStack(){
         if(!lead && SECSTART.has(idx)) ticks += '<span class="tick sep"></span>';
         lead = false;
         const on = reads[i].has(ORDER[idx]);
-        const full = on && deepest[idx] === i;
-        // This layer sits in front. Its unread nub would paint a grey hole
-        // through the stretched mark of a reader behind it, so drop the nub
-        // wherever someone deeper in the stack is still showing.
-        const veil = !on && deepest[idx] > i;
-        // When the next ticked layer sits so deep that this band can't
-        // reach it, the band stretches down to that layer's top — no
-        // background ever shows between two ticked bands (Nathan's rule)
-        let drop = 0;
-        if(on && !full){
-          for(let j = i + 1; j < reads.length; j++){
-            if(reads[j].has(ORDER[idx])){
-              if((j - i) * offset > LAYER_H) drop = (j - i) * offset;
-              break;
-            }
-          }
-        }
+        // ⚠ `full`, `veil` and `dropfill` used to live here. All three existed
+        // only to paper over the overlap — stretching a mark down to the next
+        // ticked layer, and hiding an unread nub that would otherwise punch a
+        // grey hole through the band of somebody behind it. With bands that do
+        // not overlap, none of those cases can occur: a band is one person's
+        // row and nothing else is ever drawn inside it.
         // CLU-508, Nathan: "make sure it works on compares too if possible".
         // YOUR band only, and that is a limit rather than a shortcut: a door's
         // fraction comes from the target list's own stored ticks, and this
@@ -7567,22 +7568,20 @@ function paintStack(){
         // somebody else. A veiled mark is left alone — it is transparent by the
         // rule that stops a grey nub punching through a deeper reader's band,
         // and a gradient there would punch exactly that hole.
-        const pf = (mine && !on && !veil) ? (doorFrac(ORDER[idx]) || 0) : 0;
+        const pf = (mine && !on) ? (doorFrac(ORDER[idx]) || 0) : 0;
         const cls = 'tick'+(TIERED&&TIEROF[idx]===1?' t1':'')+(on?' on':'')
-                  + (full?' full':'')+(veil?' veil':'')+(drop?' dropfill':'')
                   + (pf > 0 ? ' part' : '');
         const sty = (WEIGHTED ? '--w:'+WEIGHT[idx]+';' : '')
-                  + (drop ? '--dropH:'+drop+'px;' : '')
                   + (pf > 0 ? '--p:'+(pf*100).toFixed(1)+'%;--pc:'+color+';' : '')
                   + (on ? 'background:'+color : '');
         ticks += '<span class="'+cls+'" data-i="'+idx+'"'
               + (sty?' style="'+sty+'"':'')+'></span>';
       }
-      layers += '<div class="layer" style="top:'+(i*offset)+'px;z-index:'+(list.length-i)
-              + ';--fillH:'+(stackH - i*offset)+'px">'+ticks+'</div>';
+      layers += '<div class="layer" style="top:'+(i*(bandH+BAND_GAP))+'px">'
+              + ticks+'</div>';
     });
     html += '<div class="stackrow'+(WEIGHTED?' wtd':'')
-          + '" style="height:'+stackH+'px;--layerH:'+LAYER_H+'px" '
+          + '" style="height:'+stackH+'px;--layerH:'+bandH+'px" '
           + 'data-a="'+a+'" data-b="'+b+'">'+layers+'</div>';
   });
 
