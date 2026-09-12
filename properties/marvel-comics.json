@@ -1,0 +1,128 @@
+{
+  "slug": "marvel-comics",
+  "title": "Marvel Comics",
+  "subtitle": "9 reading orders",
+  "kind": "comics",
+  "year": "1941–",
+  "popularity": 90,
+  "unit": {
+    "one": "reading order",
+    "many": "reading orders"
+  },
+  "verb": {
+    "base": "read",
+    "ing": "reading",
+    "past": "read"
+  },
+  "accent": "#B32024",
+  "accentDark": "#F0565A",
+  "blurb": "Nine Marvel reading orders as one list. Each row opens that order's own page, and finishing that page ticks the row here.",
+  "notes": [
+    [
+      "Every row is a door.",
+      "Hover a row and a loupe appears with a fraction beside it — how far into that reading order you already are. Opening it takes you to its own page, an ordinary list with its own strip, its own schedule and its own clubs. Nothing about it changes because it is reachable from here."
+    ],
+    [
+      "Ticking works in both directions.",
+      "Marking a row here ticks that whole order, and finishing that order marks the row here. Unticking a row only takes back the ticks this page put there — anything you had already marked yourself stays marked."
+    ],
+    [
+      "Every mark is the same width, and that is deliberate.",
+      "Comics publish no per-issue reading time, so there are no hours to size a mark with. Each door counts one, which makes this page read as a shelf of reading orders rather than as several thousand issues. The issue count sits on each row instead, where it is a fact rather than a guess at how long you will be."
+    ],
+    [
+      "Three Marvel lists on the site are not here yet.",
+      "Amazing Spider-Man, X-Men and Civil War each weight every row with an issue count, and the nine here do not. A strip cannot honestly mix a measured mark with an unmeasured one — the unmeasured one would draw at a default size beside a real one — so the build refuses the mix, and they stay off until the twelve lists agree on one unit. Spider-Man is on the shelf as the list that continues him, not the one that starts him."
+    ],
+    [
+      "Where these overlap, and where they do not.",
+      "Fantastic Four stops one issue short of Hickman, so it and Everything Dies meet without repeating a row. Spider-Man After Civil War starts where Amazing Spider-Man stops. An event list does cross several of these spines by design — that is what an event is — which is why ticking one list here never reaches into another."
+    ]
+  ],
+  "sections": [
+    {
+      "id": "characters",
+      "title": "The character spines",
+      "sub": "One character or team from the first appearance forward, across every title they carried. The longest reads on the shelf.",
+      "items": [
+        {
+          "id": "mvc-captain-america",
+          "t": "Captain America",
+          "n": "1941–2013",
+          "note": "611 issues",
+          "into": "captain-america"
+        },
+        {
+          "id": "mvc-fantastic-four",
+          "t": "Fantastic Four",
+          "n": "1961–2009",
+          "note": "576 + 3 optional",
+          "into": "fantastic-four"
+        },
+        {
+          "id": "mvc-thor",
+          "t": "Thor",
+          "n": "1962–2023",
+          "note": "730 issues",
+          "into": "thor"
+        },
+        {
+          "id": "mvc-black-panther",
+          "t": "Black Panther",
+          "n": "1968–2024",
+          "note": "344 + 6 optional",
+          "into": "black-panther"
+        },
+        {
+          "id": "mvc-daredevil",
+          "t": "Daredevil",
+          "n": "1979–2023",
+          "note": "336 + 16 optional",
+          "into": "daredevil"
+        }
+      ]
+    },
+    {
+      "id": "runs",
+      "title": "Runs and events",
+      "sub": "One author, one stretch of a single title, or one crossover with its tie-ins in order rather than assumed.",
+      "items": [
+        {
+          "id": "mvc-spider-man-after-civil-war",
+          "t": "Spider-Man After Civil War",
+          "n": "2007–",
+          "note": "353 issues",
+          "into": "spider-man-after-civil-war"
+        },
+        {
+          "id": "mvc-hickman-secret-wars",
+          "t": "Everything Dies: Secret Wars",
+          "n": "2009–2015",
+          "note": "222 + 28 optional",
+          "into": "hickman-secret-wars"
+        },
+        {
+          "id": "mvc-cates-venom",
+          "t": "Venom",
+          "n": "2018–2021",
+          "note": "54 + 28 optional",
+          "into": "cates-venom"
+        }
+      ]
+    },
+    {
+      "id": "elsewhere",
+      "title": "A universe of its own",
+      "sub": "Marvel outside main continuity, complete.",
+      "items": [
+        {
+          "id": "mvc-ultimate-marvel",
+          "t": "Ultimate Marvel",
+          "n": "2000–2015",
+          "note": "673 + 20 optional",
+          "into": "ultimate-marvel"
+        }
+      ]
+    }
+  ]
+}

@@ -582,6 +582,17 @@ def main():
                                                q.get("subtitle") or ""))
                       and bool(re.search(r"film|anime",
                                          (q.get("kind") or "").lower()))),
+        # CLU-480. Same shape, same limits: a comics list that names Marvel in
+        # its own subtitle. Across today's 230 lists that matches 5 and all 5
+        # are already doors on the shelf, so it names nobody innocent. It is
+        # deliberately blind in the other direction — Thor, Venom, Ultimate
+        # Marvel and Spider-Man After Civil War word their subtitles without
+        # the publisher and this cannot see them — which is why it is a hint
+        # printed under a hub and never a build failure.
+        "marvel-comics": ("a comics subtitle that names Marvel",
+                          lambda q: bool(re.search(r"\bMarvel\b",
+                                                   q.get("subtitle") or ""))
+                          and "comic" in (q.get("kind") or "").lower()),
     }
     for p in props:
         if not p.get("_hub"):

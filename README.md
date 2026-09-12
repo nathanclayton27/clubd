@@ -11,7 +11,7 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-229 lists, from a ten-episode anime to a 1,418-row film collection, a
+230 lists, from a ten-episode anime to a 1,418-row film collection, a
 
 
 
