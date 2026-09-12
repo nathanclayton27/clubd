@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 50,
   "year": "1924–2019",
-  "blurb": "The 100 greatest films of all time per Sight and Sound's 2022 critics' poll — about 204 hours, ties and all. Watch in any order; the ranks are the argument.",
+  "blurb": "The 100 greatest films of all time per Sight and Sound's 2022 critics' poll — about 205 hours, ties and all. Watch in any order; the ranks are the argument.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -25,20 +25,20 @@
       "An = on a rank means the poll's own tie — 22 positions are shared, which is why some numbers never appear. Still 100 films."
     ],
     [
-      "Bar widths are runtimes.",
-      "From Wikidata, with each film's own Wikipedia article filling the gaps — which is how the longest entry here keeps its full 566 minutes instead of being capped."
+      "Bar widths are runtimes, read from each film's own article.",
+      "Every bar is the runtime printed in that film's own Wikipedia infobox, which is where a length keeps the name of the version it belongs to. Where a box prints several cuts the bar is the release and the row says which; where the article says sources disagree, the row says that too. Nothing is estimated, and the longest here keeps its full 566 minutes rather than being capped."
     ],
     [
       "Where the list comes from.",
       "The ranked list is read from the BFI's own results page — the reference Wikipedia's record of the poll points to, since the encyclopedia's article keeps only the top ten. That top ten is cross-checked against the article, and every film on the hundred is verified against Wikidata by year and director before it gets a row."
     ],
-    "The 2022 Sight and Sound critics' poll, via bfi.org.uk; runtimes from Wikidata and Wikipedia."
+    "The 2022 Sight and Sound critics' poll, via bfi.org.uk; runtimes from each film's own Wikipedia article."
   ],
   "sections": [
     {
       "id": "top",
       "title": "1–10",
-      "sub": "10 films · 21 hours",
+      "sub": "10 films · 20 hours",
       "items": [
         {
           "id": "ss-1975-jeanne-dielman-23-quai-du-commerce-1080-bruxelles",
@@ -84,7 +84,7 @@
           "id": "ss-1968-2001-a-space-odyssey",
           "t": "2001: A Space Odyssey",
           "n": "#6",
-          "w": 2.38,
+          "w": 2.32,
           "note": "Stanley Kubrick, 1968",
           "q": "Q103474"
         },
@@ -92,7 +92,7 @@
           "id": "ss-1999-beau-travail",
           "t": "Beau travail",
           "n": "#7",
-          "w": 1.53,
+          "w": 1.5,
           "note": "Claire Denis, 1999",
           "q": "Q1193562"
         },
@@ -100,7 +100,7 @@
           "id": "ss-2001-mulholland-dr",
           "t": "Mulholland Dr.",
           "n": "#8",
-          "w": 2.45,
+          "w": 2.43,
           "note": "David Lynch, 2001",
           "q": "Q272608"
         },
@@ -133,7 +133,7 @@
           "id": "ss-1927-sunrise-a-song-of-two-humans",
           "t": "Sunrise: A Song of Two Humans",
           "n": "#11",
-          "w": 1.52,
+          "w": 1.58,
           "note": "F.W. Murnau, 1927",
           "q": "Q431093"
         },
@@ -198,7 +198,7 @@
           "t": "Apocalypse Now",
           "n": "#19",
           "w": 2.45,
-          "note": "Francis Ford Coppola, 1979",
+          "note": "Francis Ford Coppola, 1979 · 147 min, the 70mm cut",
           "q": "Q182692"
         },
         {
@@ -222,14 +222,14 @@
           "t": "The Passion of Joan of Arc",
           "n": "=21",
           "w": 1.37,
-          "note": "Carl Th. Dreyer, 1928",
+          "note": "Carl Th. Dreyer, 1928 · 82 min, at 24fps",
           "q": "Q51520"
         },
         {
           "id": "ss-1967-playtime",
           "t": "Playtime",
           "n": "#23",
-          "w": 2.1,
+          "w": 2.07,
           "note": "Jacques Tati, 1967",
           "q": "Q1454574"
         },
@@ -253,7 +253,7 @@
           "id": "ss-1955-the-night-of-the-hunter",
           "t": "The Night of the Hunter",
           "n": "=25",
-          "w": 1.48,
+          "w": 1.53,
           "note": "Charles Laughton, 1955",
           "q": "Q1132629"
         }
@@ -292,7 +292,7 @@
           "id": "ss-2019-portrait-of-a-lady-on-fire",
           "t": "Portrait of a Lady on Fire",
           "n": "#30",
-          "w": 2.02,
+          "w": 2.0,
           "note": "Céline Sciamma, 2019",
           "q": "Q63246568"
         },
@@ -308,7 +308,7 @@
           "id": "ss-1975-mirror",
           "t": "Mirror",
           "n": "=31",
-          "w": 1.8,
+          "w": 1.77,
           "note": "Andrei Tarkovsky, 1975",
           "q": "Q838149"
         },
@@ -324,8 +324,8 @@
           "id": "ss-1934-l-atalante",
           "t": "L'Atalante",
           "n": "#34",
-          "w": 1.48,
-          "note": "Jean Vigo, 1934",
+          "w": 1.42,
+          "note": "Jean Vigo, 1934 · 85 min, the restoration",
           "q": "Q780016"
         },
         {
@@ -333,7 +333,7 @@
           "t": "Pather Panchali",
           "n": "#35",
           "w": 2.0,
-          "note": "Satyajit Ray, 1955",
+          "note": "Satyajit Ray, 1955 · 120 min, sources give 112–126 min",
           "q": "Q622380"
         },
         {
@@ -348,7 +348,7 @@
           "id": "ss-1931-m",
           "t": "M",
           "n": "=36",
-          "w": 1.95,
+          "w": 1.85,
           "note": "Fritz Lang, 1931",
           "q": "Q127021"
         },
@@ -364,7 +364,7 @@
           "id": "ss-1959-some-like-it-hot",
           "t": "Some Like It Hot",
           "n": "=38",
-          "w": 2.0,
+          "w": 2.02,
           "note": "Billy Wilder, 1959",
           "q": "Q190086"
         },
@@ -372,7 +372,7 @@
           "id": "ss-1960-a-bout-de-souffle",
           "t": "À bout de souffle",
           "n": "=38",
-          "w": 1.45,
+          "w": 1.5,
           "note": "Jean-Luc Godard, 1960",
           "q": "Q86427"
         },
@@ -380,7 +380,7 @@
           "id": "ss-1948-bicycle-thieves",
           "t": "Bicycle Thieves",
           "n": "=41",
-          "w": 1.5,
+          "w": 1.48,
           "note": "Vittorio De Sica, 1948",
           "q": "Q172837"
         },
@@ -396,7 +396,7 @@
           "id": "ss-1977-killer-of-sheep",
           "t": "Killer of Sheep",
           "n": "=43",
-          "w": 1.38,
+          "w": 1.33,
           "note": "Charles Burnett, 1977",
           "q": "Q1752684"
         },
@@ -404,7 +404,7 @@
           "id": "ss-1979-stalker",
           "t": "Stalker",
           "n": "=43",
-          "w": 2.72,
+          "w": 2.68,
           "note": "Andrei Tarkovsky, 1979",
           "q": "Q200437"
         },
@@ -412,7 +412,7 @@
           "id": "ss-1975-barry-lyndon",
           "t": "Barry Lyndon",
           "n": "=45",
-          "w": 3.07,
+          "w": 3.08,
           "note": "Stanley Kubrick, 1975",
           "q": "Q471716"
         },
@@ -428,8 +428,8 @@
           "id": "ss-1966-the-battle-of-algiers",
           "t": "The Battle of Algiers",
           "n": "=45",
-          "w": 1.95,
-          "note": "Gillo Pontecorvo, 1966",
+          "w": 2.27,
+          "note": "Gillo Pontecorvo, 1966 · 136 min, the original cut",
           "q": "Q784812"
         },
         {
@@ -444,7 +444,7 @@
           "id": "ss-1970-wanda",
           "t": "Wanda",
           "n": "=48",
-          "w": 1.7,
+          "w": 1.72,
           "note": "Barbara Loden, 1970",
           "q": "Q381528"
         },
@@ -460,7 +460,7 @@
           "id": "ss-1993-the-piano",
           "t": "The Piano",
           "n": "=50",
-          "w": 2.02,
+          "w": 1.95,
           "note": "Jane Campion, 1993",
           "q": "Q117315"
         }
@@ -469,7 +469,7 @@
     {
       "id": "b51",
       "title": "51–100",
-      "sub": "49 films · 100 hours",
+      "sub": "49 films · 101 hours",
       "items": [
         {
           "id": "ss-1974-fear-eats-the-soul",
@@ -483,7 +483,7 @@
           "id": "ss-1976-news-from-home",
           "t": "News from Home",
           "n": "=52",
-          "w": 1.48,
+          "w": 1.47,
           "note": "Chantal Akerman, 1976",
           "q": "Q7019502"
         },
@@ -499,7 +499,7 @@
           "id": "ss-1982-blade-runner",
           "t": "Blade Runner",
           "n": "=54",
-          "w": 1.87,
+          "w": 1.95,
           "note": "Ridley Scott, 1982",
           "q": "Q184843"
         },
@@ -507,7 +507,7 @@
           "id": "ss-1963-le-mepris",
           "t": "Le Mépris",
           "n": "=54",
-          "w": 1.7,
+          "w": 1.68,
           "note": "Jean-Luc Godard, 1963",
           "q": "Q598109"
         },
@@ -515,7 +515,7 @@
           "id": "ss-1924-sherlock-jr",
           "t": "Sherlock Jr.",
           "n": "=54",
-          "w": 0.73,
+          "w": 0.75,
           "note": "Buster Keaton, 1924",
           "q": "Q1569918"
         },
@@ -587,7 +587,7 @@
           "id": "ss-1973-touki-bouki",
           "t": "Touki Bouki",
           "n": "#66",
-          "w": 1.42,
+          "w": 1.52,
           "note": "Djibril Diop Mambéty, 1973",
           "q": "Q3310901"
         },
@@ -595,8 +595,8 @@
           "id": "ss-1966-andrei-rublev",
           "t": "Andrei Rublev",
           "n": "=67",
-          "w": 3.08,
-          "note": "Andrei Tarkovsky, 1966",
+          "w": 3.05,
+          "note": "Andrei Tarkovsky, 1966 · 183 min, the final cut",
           "q": "Q503046"
         },
         {
@@ -627,7 +627,7 @@
           "id": "ss-1948-the-red-shoes",
           "t": "The Red Shoes",
           "n": "=67",
-          "w": 2.22,
+          "w": 2.23,
           "note": "Michael Powell, Emeric Pressburger, 1948",
           "q": "Q625780"
         },
@@ -635,15 +635,15 @@
           "id": "ss-1954-journey-to-italy",
           "t": "Journey to Italy",
           "n": "=72",
-          "w": 1.35,
-          "note": "Roberto Rossellini, 1954",
+          "w": 1.75,
+          "note": "Roberto Rossellini, 1954 · 105 min, the Italian release",
           "q": "Q385866"
         },
         {
           "id": "ss-1960-l-avventura",
           "t": "L'avventura",
           "n": "=72",
-          "w": 2.42,
+          "w": 2.38,
           "note": "Michelangelo Antonioni, 1960",
           "q": "Q514531"
         },
@@ -659,7 +659,7 @@
           "id": "ss-1959-imitation-of-life",
           "t": "Imitation of Life",
           "n": "=75",
-          "w": 2.07,
+          "w": 2.08,
           "note": "Douglas Sirk, 1959",
           "q": "Q373774"
         },
@@ -667,7 +667,7 @@
           "id": "ss-1954-sansho-the-bailiff",
           "t": "Sansho the Bailiff",
           "n": "=75",
-          "w": 2.0,
+          "w": 2.07,
           "note": "Kenji Mizoguchi, 1954",
           "q": "Q2633405"
         },
@@ -675,7 +675,7 @@
           "id": "ss-2001-spirited-away",
           "t": "Spirited Away",
           "n": "=75",
-          "w": 2.08,
+          "w": 2.07,
           "note": "Hayao Miyazaki, 2001",
           "q": "Q155653"
         },
@@ -691,7 +691,7 @@
           "id": "ss-1946-a-matter-of-life-and-death",
           "t": "A Matter of Life and Death",
           "n": "=78",
-          "w": 1.8,
+          "w": 1.73,
           "note": "Michael Powell, Emeric Pressburger, 1946",
           "q": "Q1546792"
         },
@@ -699,7 +699,7 @@
           "id": "ss-1974-celine-and-julie-go-boating",
           "t": "Céline and Julie Go Boating",
           "n": "=78",
-          "w": 3.22,
+          "w": 3.2,
           "note": "Jacques Rivette, 1974",
           "q": "Q734672"
         },
@@ -714,7 +714,7 @@
           "id": "ss-1936-modern-times",
           "t": "Modern Times",
           "n": "=78",
-          "w": 1.65,
+          "w": 1.45,
           "note": "Charles Chaplin, 1936",
           "q": "Q45602"
         },
@@ -738,7 +738,7 @@
           "id": "ss-1986-blue-velvet",
           "t": "Blue Velvet",
           "n": "=85",
-          "w": 2.02,
+          "w": 2.0,
           "note": "David Lynch, 1986",
           "q": "Q660950"
         },
@@ -754,7 +754,7 @@
           "id": "ss-1973-the-spirit-of-the-beehive",
           "t": "The Spirit of the Beehive",
           "n": "=85",
-          "w": 1.63,
+          "w": 1.65,
           "note": "Víctor Erice, 1973",
           "q": "Q2290517"
         },
@@ -762,7 +762,7 @@
           "id": "ss-1994-chungking-express",
           "t": "CHUNGKING EXPRESS",
           "n": "=88",
-          "w": 1.7,
+          "w": 1.63,
           "note": "Wong Kar Wai, 1994",
           "q": "Q766263"
         },
@@ -771,7 +771,7 @@
           "t": "The Shining",
           "n": "=88",
           "w": 2.4,
-          "note": "Stanley Kubrick, 1980",
+          "note": "Stanley Kubrick, 1980 · 144 min, the US release",
           "q": "Q186341"
         },
         {
@@ -794,8 +794,8 @@
           "id": "ss-1963-the-leopard",
           "t": "The Leopard",
           "n": "=90",
-          "w": 3.05,
-          "note": "Luchino Visconti, 1963",
+          "w": 3.08,
+          "note": "Luchino Visconti, 1963 · 185 min, the Italian cut",
           "q": "Q596623"
         },
         {
@@ -818,7 +818,7 @@
           "id": "ss-1956-a-man-escaped",
           "t": "A Man Escaped",
           "n": "=95",
-          "w": 1.67,
+          "w": 1.65,
           "note": "Robert Bresson, 1956",
           "q": "Q2385009"
         },
@@ -842,15 +842,15 @@
           "id": "ss-1968-once-upon-a-time-in-the-west",
           "t": "Once upon a Time in the West",
           "n": "=95",
-          "w": 2.75,
-          "note": "Sergio Leone, 1968",
+          "w": 2.85,
+          "note": "Sergio Leone, 1968 · 171 min, the Italian release",
           "q": "Q168154"
         },
         {
           "id": "ss-1926-the-general",
           "t": "The General",
           "n": "=95",
-          "w": 1.25,
+          "w": 1.32,
           "note": "Buster Keaton, Clyde Bruckman, 1926",
           "q": "Q850159"
         },
@@ -858,7 +858,7 @@
           "id": "ss-2004-tropical-malady",
           "t": "Tropical Malady",
           "n": "=95",
-          "w": 1.97,
+          "w": 2.08,
           "note": "Apichatpong Weerasethakul, 2004",
           "q": "Q594131"
         }

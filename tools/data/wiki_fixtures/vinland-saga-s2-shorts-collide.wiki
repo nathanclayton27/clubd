@@ -1,0 +1,63 @@
+== Episode list ==
+{{Episode table
+| background = #AE1C28
+| overall    = 
+| season     = 
+| title      = 
+| airdate    = 12
+| episodes   =
+{{Episode list/sublist|Vinland Saga season 2
+| EpisodeNumber       = 30
+| EpisodeNumber2      = 6
+| Title               = I Want a Horse" / "We Need a Horse
+| TranslitTitle       = Uma ga Hoshii
+| NativeTitle         = 馬が欲しい
+| NativeTitleLangCode = ja
+| DirectedBy          = Kento Matsui
+| WrittenBy           = Hiroshi Seko
+| OriginalAirDate     = {{Start date|2023|2|14}}
+| ShortSummary        =
+| LineColor           = AE1C28
+}}
+{{Episode list/sublist|Vinland Saga season 2
+| EpisodeNumber       = 42
+| EpisodeNumber2      = 18
+| Title               = The First Measure" / "The First Method
+| TranslitTitle       = Saisho no Shudan
+| NativeTitle         = 最初の手段
+| NativeTitleLangCode = ja
+| DirectedBy          = Yousuke Yamamoto
+| WrittenBy           = Hiroshi Seko
+| OriginalAirDate     = {{Start date|2023|5|9}}
+| ShortSummary        =
+| LineColor           = AE1C28
+}}
+}}
+
+== Shorts ==
+{{Episode table
+| background = #AE1C28
+| overall    = 
+| season     = 
+| title      = 
+| titleR     = 
+| airdate    = 12
+| airdateR   = 
+| episodes   = 
+{{Episode list
+| EpisodeNumber   = 30.5
+| EpisodeNumber2  = 6.5
+| Title           = Drowning in the Shadow
+| OriginalAirDate = {{Start date|2023|2|14}}
+| ShortSummary    =
+| LineColor       = AE1C28
+}}
+{{Episode list
+| EpisodeNumber   = 42.5
+| EpisodeNumber2  = 18.5
+| Title           = Same old story
+| OriginalAirDate = {{Start date|2023|5|12}}
+| ShortSummary    =
+| LineColor       = AE1C28
+}}
+}}

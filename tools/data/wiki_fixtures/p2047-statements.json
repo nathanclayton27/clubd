@@ -1,0 +1,106 @@
+{
+ "Q117085614": [
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+161",
+      "unit": "http://www.wikidata.org/entity/Q7727"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "deprecated"
+  },
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+162",
+      "unit": "http://www.wikidata.org/entity/Q7727"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "deprecated"
+  },
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+9691",
+      "unit": "http://www.wikidata.org/entity/Q11574"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "preferred"
+  }
+ ],
+ "Q184843": [
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+112",
+      "unit": "http://www.wikidata.org/entity/Q7727"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "normal"
+  },
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+116",
+      "unit": "http://www.wikidata.org/entity/Q7727"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "normal"
+  }
+ ],
+ "Q509913": [
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+114",
+      "unit": "http://www.wikidata.org/entity/Q7727"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "normal",
+   "qualifiers": {
+    "P518": [
+     {
+      "datavalue": {
+       "value": {
+        "entity-type": "item",
+        "numeric-id": 240862,
+        "id": "Q240862"
+       },
+       "type": "wikibase-entityid"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "mainsnak": {
+    "datavalue": {
+     "value": {
+      "amount": "+125",
+      "unit": "http://www.wikidata.org/entity/Q7727"
+     },
+     "type": "quantity"
+    }
+   },
+   "rank": "normal"
+  }
+ ]
+}

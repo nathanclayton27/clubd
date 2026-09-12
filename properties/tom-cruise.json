@@ -24,10 +24,10 @@
       "Six rows of Wikipedia's table are not here: two cameos — an uncredited walk-on in Young Guns and a turn as himself in Austin Powers in Goldmember — narration on two documentaries, an archive-footage appearance in The Queen, and Digger, still in post-production. This is the acted feature films, released."
     ],
     [
-      "Bar widths are runtimes.",
-      "From Wikidata, in hours — every one of the 45 has one. About 94 hours end to end, 18 of them as Ethan Hunt."
+      "Bar widths are runtimes, read from each film's own article.",
+      "Every one of the 45 has a runtime printed in its own Wikipedia infobox, and where an article lists more than one length the bar is the theatrical release and the row says so — Legend went out at 89 minutes, not the 125 of an assembly cut that was never released. About 94 hours end to end, 18 of them as Ethan Hunt."
     ],
-    "Filmography from Wikipedia's Tom Cruise filmography; runtimes and release dates from Wikidata."
+    "Filmography from Wikipedia's Tom Cruise filmography; runtimes from each film's own Wikipedia article, release dates from Wikidata."
   ],
   "sections": [
     {
@@ -47,7 +47,7 @@
           "id": "tc-1981-taps",
           "t": "Taps",
           "n": "1981",
-          "w": 2.08
+          "w": 2.1
         },
         {
           "id": "tc-1982-losin-it",
@@ -59,7 +59,8 @@
           "id": "tc-1983-the-outsiders",
           "t": "The Outsiders",
           "n": "1983",
-          "w": 1.45
+          "w": 1.52,
+          "note": "91 min, the theatrical cut"
         },
         {
           "id": "tc-1983-risky-business",
@@ -78,38 +79,39 @@
           "id": "tc-1985-legend",
           "t": "Legend",
           "n": "1985",
-          "w": 2.08
+          "w": 1.48,
+          "note": "89 min, the US theatrical cut"
         },
         {
           "id": "tc-1986-top-gun",
           "t": "Top Gun",
           "n": "1986",
-          "w": 1.83,
+          "w": 1.82,
           "note": "1986's highest-grossing film"
         },
         {
           "id": "tc-1986-the-color-of-money",
           "t": "The Color of Money",
           "n": "1986",
-          "w": 2.0
+          "w": 1.98
         },
         {
           "id": "tc-1988-cocktail",
           "t": "Cocktail",
           "n": "1988",
-          "w": 1.65
+          "w": 1.72
         },
         {
           "id": "tc-1988-rain-man",
           "t": "Rain Man",
           "n": "1988",
-          "w": 2.13
+          "w": 2.23
         },
         {
           "id": "tc-1989-born-on-the-fourth-of-july",
           "t": "Born on the Fourth of July",
           "n": "1989",
-          "w": 2.3,
+          "w": 2.42,
           "note": "As Ron Kovic"
         }
       ],
@@ -131,7 +133,8 @@
           "id": "tc-1992-far-and-away",
           "t": "Far and Away",
           "n": "1992",
-          "w": 2.23
+          "w": 2.33,
+          "note": "140 min, the theatrical cut"
         },
         {
           "id": "tc-1992-a-few-good-men",
@@ -143,13 +146,13 @@
           "id": "tc-1993-the-firm",
           "t": "The Firm",
           "n": "1993",
-          "w": 2.47
+          "w": 2.57
         },
         {
           "id": "tc-1994-interview-with-the-vampire",
           "t": "Interview with the Vampire",
           "n": "1994",
-          "w": 2.05
+          "w": 2.03
         },
         {
           "id": "tc-1996-mission-impossible",
@@ -162,7 +165,7 @@
           "id": "tc-1996-jerry-maguire",
           "t": "Jerry Maguire",
           "n": "1996",
-          "w": 2.32
+          "w": 2.3
         },
         {
           "id": "tc-1999-eyes-wide-shut",
@@ -221,7 +224,7 @@
           "id": "tc-2005-war-of-the-worlds",
           "t": "War of the Worlds",
           "n": "2005",
-          "w": 1.95,
+          "w": 1.93,
           "note": "Spielberg again"
         },
         {
@@ -234,20 +237,20 @@
           "id": "tc-2007-lions-for-lambs",
           "t": "Lions for Lambs",
           "n": "2007",
-          "w": 1.47
+          "w": 1.53
         },
         {
           "id": "tc-2008-tropic-thunder",
           "t": "Tropic Thunder",
           "n": "2008",
-          "w": 1.78,
+          "w": 1.77,
           "note": "As Les Grossman"
         },
         {
           "id": "tc-2008-valkyrie",
           "t": "Valkyrie",
           "n": "2008",
-          "w": 2.0,
+          "w": 2.02,
           "note": "As Claus von Stauffenberg"
         },
         {
@@ -260,7 +263,7 @@
           "id": "tc-2011-mission-impossible-ghost-protocol",
           "t": "Mission: Impossible – Ghost Protocol",
           "n": "2011",
-          "w": 2.2
+          "w": 2.22
         },
         {
           "id": "tc-2012-rock-of-ages",
@@ -278,7 +281,7 @@
           "id": "tc-2013-oblivion",
           "t": "Oblivion",
           "n": "2013",
-          "w": 2.08
+          "w": 2.07
         },
         {
           "id": "tc-2014-edge-of-tomorrow",
@@ -328,7 +331,7 @@
           "id": "tc-2022-top-gun-maverick",
           "t": "Top Gun: Maverick",
           "n": "2022",
-          "w": 2.18,
+          "w": 2.17,
           "note": "His highest-grossing film"
         },
         {
@@ -341,7 +344,7 @@
           "id": "tc-2025-mission-impossible-the-final-reckoning",
           "t": "Mission: Impossible – The Final Reckoning",
           "n": "2025",
-          "w": 2.82,
+          "w": 2.83,
           "note": "The eighth Mission: Impossible"
         }
       ]

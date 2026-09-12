@@ -8,9 +8,31 @@ as the poll ranks it — 100 films, ties sharing a number and wearing the
 poll's own "=" mark. Rank bands for sections, rank for n, runtimes for
 weights. Random button on: it's a lifetime list, not a syllabus.
 
+Weights: each film's own infobox, not Wikidata (CLU-178)
+-------------------------------------------------------
+Every bar is the runtime printed in that film's own {{Infobox film}}, selected
+by gwlib.runtime.weigh() — see that module for why, and for the rule. This list
+used to weigh from P2047, and that shipped *Blade Runner* at 112 minutes, which
+is the film run at 25fps for a PAL transfer and a length nobody has ever sat
+through; the article says 117, cited to the BBFC. 45 of the 100 rows moved.
+
+The card that found it (CLU-178) blamed a rank-blind reader, and the raw
+statements do not bear that out: Q184843 carries 112 and 116 as two `normal`
+statements with no qualifier between them, so respecting rank cannot choose. It
+is provenance that P2047 lacks and an infobox has, which is why the rule reads
+labels — "(first cut)", "(Cannes cut)", "(20 fps)" — rather than ranks.
+
+Where a box prints several lengths the row's own note says which one the bar is,
+and VERSION_NOTE below must cover every such row or this script stops. Where the
+box declines to give a figure at all — Pather Panchali, whose article says
+outright that sources disagree — the row keeps the figure it already had and is
+reported rather than being quietly re-weighted.
+
 Data: tools/data/sight-and-sound.json via scratch/agent-canons/collect_ss.py
 (BFI's own results page, top ten cross-checked against Wikipedia's article,
-every film verified on Wikidata by year and director).
+every film verified on Wikidata by year and director) and
+scratch/agent-runtimes/measure.py (each film's own infobox, read from the
+article the film's own Wikidata sitelink names).
 
 Rows also carry `q`, a Wikidata work id, wherever the id the collector resolved
 could be PROVED to be this film (CLU-368). It is what lets a row pair across
@@ -24,7 +46,11 @@ moves nothing.
 import json
 import pathlib
 import re
+import sys
 import unicodedata
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from gwlib import runtime as RT  # noqa: E402
 
 SLUG = "sight-and-sound"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -58,6 +84,37 @@ NO_Q = {
     "Histoire(s) du Cinéma": "Q2707428 is King Lear (1987), another film",
 }
 
+# The one row where the infobox rule needs overruling, with its reason and the
+# answer the rule gives, asserted — an exception that has silently stopped
+# matching its article is worse than no exception at all.
+#
+# L'Atalante's box prints "65 minutes (original French release)" and "85 minutes
+# (restored version)". The 65-minute version is not a shorter release of this
+# film: the article says Gaumont cut it and reissued it retitled *Le Chaland qui
+# passe*, after a popular song of the day which they also cut into the score.
+# The film Vigo made is the 1990 restoration, re-edited in 2001, and that is the
+# version in circulation — it is what Criterion carries. So the restoration is
+# the weight, and the rule's own answer is pinned so a rewritten box is noticed.
+RUNTIME_EXCEPTION = {
+    "L'Atalante": (85, "the restoration", 65),
+}
+
+# Every row whose box prints more than one length, or gives none, says on the
+# row which length the bar is. Asserted to cover exactly that set: a new
+# multi-cut box stops this script instead of shipping an unexplained bar.
+VERSION_NOTE = {
+    "Apocalypse Now": "the 70mm cut",
+    "The Passion of Joan of Arc": "at 24fps",
+    "L'Atalante": "the restoration",
+    "Pather Panchali": "sources give 112–126 min",
+    "The Battle of Algiers": "the original cut",
+    "Andrei Rublev": "the final cut",
+    "Journey to Italy": "the Italian release",
+    "The Shining": "the US release",
+    "The Leopard": "the Italian cut",
+    "Once upon a Time in the West": "the Italian release",
+}
+
 BANDS = [
     ("top", "1–10", 1, 10,
      "Jeanne Dielman unseated Vertigo in 2022 — the first film by a woman "
@@ -89,6 +146,28 @@ def main():
     assert not fix, "TITLE_FIX no longer matches the data: %s" % sorted(fix)
     refused = dict(NO_Q)
 
+    # Weights: the film's own infobox, by gwlib.runtime's rule. A row the rule
+    # cannot settle keeps the figure it already carried — never a guess.
+    exc, needs_note, kept, moved = dict(RUNTIME_EXCEPTION), set(), [], []
+    for f in films:
+        cuts = [tuple(c) for c in (f.get("infobox_cuts") or [])]
+        n, why = RT.weigh(cuts, f.get("infobox_range", False))
+        if f["t"] in RUNTIME_EXCEPTION:
+            want, reason, rule_said = exc.pop(f["t"])
+            assert n == rule_said,                 "RUNTIME_EXCEPTION for %s expects the rule to say %s, it says "                 "%s — the article's box has changed" % (f["t"], rule_said, n)
+            n, why = want, reason
+        if n is None:
+            kept.append((f["t"], f["min"], why))
+            n = f["min"]
+        elif n != f["min"]:
+            moved.append((f["t"], f["min"], n, why))
+        if len(cuts) > 1 or f.get("infobox_range"):
+            needs_note.add(f["t"])
+        f["min"], f["min_src"] = n, "infobox"
+    assert not exc, "RUNTIME_EXCEPTION names no film on this poll: %s" % sorted(exc)
+    assert needs_note == set(VERSION_NOTE),         "VERSION_NOTE must name exactly the rows whose box prints more than one "         "length: missing %s, stale %s" % (sorted(needs_note - set(VERSION_NOTE)),
+                                          sorted(set(VERSION_NOTE) - needs_note))
+
     sections = []
     for key, title, lo, hi, intro in BANDS:
         got = [f for f in films if lo <= f["rank"] <= hi]
@@ -106,6 +185,8 @@ def main():
             if f.get("qid") and f["t"] not in NO_Q:
                 it["q"] = f["qid"]
             refused.pop(f["t"], None)
+            if f["t"] in VERSION_NOTE:
+                it["note"] += " · %d min, %s" % (f["min"], VERSION_NOTE[f["t"]])
             if not f["min"]:
                 it["note"] += " · no runtime on record — weighs nothing"
             items.append(it)
@@ -159,10 +240,13 @@ def main():
              "An = on a rank means the poll's own tie — %d positions are "
              "shared, which is why some numbers never appear. Still 100 "
              "films." % len(ties)],
-            ["Bar widths are runtimes.",
-             "From Wikidata, with each film's own Wikipedia article filling "
-             "the gaps — which is how the longest entry here keeps its full "
-             "%d minutes instead of being capped."
+            ["Bar widths are runtimes, read from each film's own article.",
+             "Every bar is the runtime printed in that film's own Wikipedia "
+             "infobox, which is where a length keeps the name of the version "
+             "it belongs to. Where a box prints several cuts the bar is the "
+             "release and the row says which; where the article says sources "
+             "disagree, the row says that too. Nothing is estimated, and the "
+             "longest here keeps its full %d minutes rather than being capped."
              % max(f["min"] or 0 for f in films)],
             ["Where the list comes from.",
              "The ranked list is read from the BFI's own results page — the "
@@ -172,7 +256,7 @@ def main():
              "hundred is verified against Wikidata by year and director "
              "before it gets a row."],
             "The 2022 Sight and Sound critics' poll, via bfi.org.uk; "
-            "runtimes from Wikidata and Wikipedia.",
+            "runtimes from each film's own Wikipedia article.",
         ],
         "sections": sections,
     }
@@ -181,6 +265,13 @@ def main():
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
     print("wrote %s.json — 100 films, %d hours, %d work ids"
           % (SLUG, round(hours), len(qs)))
+    print("  runtimes: %d rows moved to the film's own infobox, %d kept what "
+          "they had" % (len(moved), len(kept)))
+    for t, was, now, why in sorted(moved, key=lambda m: -abs(m[2] - (m[1] or 0))):
+        print("   %+5d  %-38s %-4s -> %-4s  %s"
+              % (now - (was or 0), t[:38], was, now, why[:52]))
+    for t, was, why in kept:
+        print("   kept   %-38s %-4s       %s" % (t[:38], was, why[:52]))
     for s in sections:
         print("   %-10s %3d  %s" % (s["title"], len(s["items"]), s["sub"][:44]))
 

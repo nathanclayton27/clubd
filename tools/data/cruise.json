@@ -6,7 +6,21 @@
   "skip": null,
   "qid": "Q388408",
   "runtime": 116,
-  "released": "1981-07-17"
+  "released": "1981-07-17",
+  "infobox_min": 116,
+  "infobox_figures": 1,
+  "infobox_raw": "116 minutes",
+  "infobox_page": "Endless Love (1981 film)",
+  "infobox_all": [
+   116
+  ],
+  "infobox_cuts": [
+   [
+    116,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1981,
@@ -15,7 +29,21 @@
   "skip": null,
   "qid": "Q1213746",
   "runtime": 125,
-  "released": "1981-01-01"
+  "released": "1981-01-01",
+  "infobox_min": 126,
+  "infobox_figures": 1,
+  "infobox_raw": "126 minutes",
+  "infobox_page": "Taps (film)",
+  "infobox_all": [
+   126
+  ],
+  "infobox_cuts": [
+   [
+    126,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1982,
@@ -24,7 +52,21 @@
   "skip": null,
   "qid": "Q593099",
   "runtime": 100,
-  "released": "1983-01-01"
+  "released": "1983-01-01",
+  "infobox_min": 100,
+  "infobox_figures": 1,
+  "infobox_raw": "100 minutes",
+  "infobox_page": "Losin' It",
+  "infobox_all": [
+   100
+  ],
+  "infobox_cuts": [
+   [
+    100,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1983,
@@ -33,7 +75,26 @@
   "skip": null,
   "qid": "Q1055332",
   "runtime": 87,
-  "released": "1983-03-25"
+  "released": "1983-03-25",
+  "infobox_min": 91,
+  "infobox_figures": 2,
+  "infobox_raw": "91 minutes (theatrical version) 114 minutes (The Complete Novel)",
+  "infobox_page": "The Outsiders (film)",
+  "infobox_all": [
+   91,
+   114
+  ],
+  "infobox_cuts": [
+   [
+    91,
+    "theatrical version"
+   ],
+   [
+    114,
+    "The Complete Novel"
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1983,
@@ -42,7 +103,21 @@
   "skip": null,
   "qid": "Q1325589",
   "runtime": 99,
-  "released": "1983-08-05"
+  "released": "1983-08-05",
+  "infobox_min": 99,
+  "infobox_figures": 1,
+  "infobox_raw": "99 minutes",
+  "infobox_page": "Risky Business",
+  "infobox_all": [
+   99
+  ],
+  "infobox_cuts": [
+   [
+    99,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1983,
@@ -51,7 +126,21 @@
   "skip": null,
   "qid": "Q576635",
   "runtime": 91,
-  "released": "1983-09-23"
+  "released": "1983-09-23",
+  "infobox_min": 91,
+  "infobox_figures": 1,
+  "infobox_raw": "91 minutes",
+  "infobox_page": "All the Right Moves (film)",
+  "infobox_all": [
+   91
+  ],
+  "infobox_cuts": [
+   [
+    91,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1985,
@@ -60,7 +149,31 @@
   "skip": null,
   "qid": "Q509913",
   "runtime": 125,
-  "released": "1985-01-01"
+  "released": "1985-01-01",
+  "infobox_min": 89,
+  "infobox_figures": 3,
+  "infobox_raw": "Plainlist | | 89 minutes (US version) | 93 minutes (European version) | 114 minutes (director's cut)",
+  "infobox_page": "Legend (1985 film)",
+  "infobox_all": [
+   89,
+   93,
+   114
+  ],
+  "infobox_cuts": [
+   [
+    89,
+    "US version"
+   ],
+   [
+    93,
+    "European version"
+   ],
+   [
+    114,
+    "director's cut"
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1986,
@@ -69,7 +182,21 @@
   "skip": null,
   "qid": "Q110138",
   "runtime": 110,
-  "released": "1986-05-16"
+  "released": "1986-05-16",
+  "infobox_min": 109,
+  "infobox_figures": 1,
+  "infobox_raw": "109 minutes",
+  "infobox_page": "Top Gun",
+  "infobox_all": [
+   109
+  ],
+  "infobox_cuts": [
+   [
+    109,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1986,
@@ -78,7 +205,21 @@
   "skip": null,
   "qid": "Q470916",
   "runtime": 120,
-  "released": "1986-10-17"
+  "released": "1986-10-17",
+  "infobox_min": 119,
+  "infobox_figures": 1,
+  "infobox_raw": "119 minutes",
+  "infobox_page": "The Color of Money",
+  "infobox_all": [
+   119
+  ],
+  "infobox_cuts": [
+   [
+    119,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1988,
@@ -87,7 +228,21 @@
   "skip": null,
   "qid": "Q1105359",
   "runtime": 99,
-  "released": "1988-07-29"
+  "released": "1988-07-29",
+  "infobox_min": 103,
+  "infobox_figures": 1,
+  "infobox_raw": "103 minutes",
+  "infobox_page": "Cocktail (1988 film)",
+  "infobox_all": [
+   103
+  ],
+  "infobox_cuts": [
+   [
+    103,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1988,
@@ -105,7 +260,21 @@
   "skip": null,
   "qid": "Q188845",
   "runtime": 128,
-  "released": "1988-12-16"
+  "released": "1988-12-16",
+  "infobox_min": 134,
+  "infobox_figures": 1,
+  "infobox_raw": "134 minutes",
+  "infobox_page": "Rain Man",
+  "infobox_all": [
+   134
+  ],
+  "infobox_cuts": [
+   [
+    134,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1989,
@@ -114,7 +283,21 @@
   "skip": null,
   "qid": "Q471159",
   "runtime": 138,
-  "released": "1989-01-01"
+  "released": "1989-01-01",
+  "infobox_min": 145,
+  "infobox_figures": 1,
+  "infobox_raw": "145 minutes",
+  "infobox_page": "Born on the Fourth of July (film)",
+  "infobox_all": [
+   145
+  ],
+  "infobox_cuts": [
+   [
+    145,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1990,
@@ -123,7 +306,21 @@
   "skip": null,
   "qid": "Q603696",
   "runtime": 107,
-  "released": "1990-06-27"
+  "released": "1990-06-27",
+  "infobox_min": 107,
+  "infobox_figures": 1,
+  "infobox_raw": "107 minutes",
+  "infobox_page": "Days of Thunder",
+  "infobox_all": [
+   107
+  ],
+  "infobox_cuts": [
+   [
+    107,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1992,
@@ -132,7 +329,26 @@
   "skip": null,
   "qid": "Q839341",
   "runtime": 134,
-  "released": "1992-05-22"
+  "released": "1992-05-22",
+  "infobox_min": 140,
+  "infobox_figures": 2,
+  "infobox_raw": "140 minutes 170 minutes (Extended cut)",
+  "infobox_page": "Far and Away",
+  "infobox_all": [
+   140,
+   170
+  ],
+  "infobox_cuts": [
+   [
+    140,
+    ""
+   ],
+   [
+    170,
+    "Extended cut"
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1992,
@@ -141,7 +357,21 @@
   "skip": null,
   "qid": "Q108946",
   "runtime": 138,
-  "released": "1992-12-02"
+  "released": "1992-12-02",
+  "infobox_min": 138,
+  "infobox_figures": 1,
+  "infobox_raw": "138 minutes",
+  "infobox_page": "A Few Good Men",
+  "infobox_all": [
+   138
+  ],
+  "infobox_cuts": [
+   [
+    138,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1993,
@@ -150,7 +380,21 @@
   "skip": null,
   "qid": "Q821692",
   "runtime": 148,
-  "released": "1993-06-23"
+  "released": "1993-06-23",
+  "infobox_min": 154,
+  "infobox_figures": 1,
+  "infobox_raw": "154 minutes",
+  "infobox_page": "The Firm (1993 film)",
+  "infobox_all": [
+   154
+  ],
+  "infobox_cuts": [
+   [
+    154,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1994,
@@ -159,7 +403,21 @@
   "skip": null,
   "qid": "Q318910",
   "runtime": 123,
-  "released": "1994-11-11"
+  "released": "1994-11-11",
+  "infobox_min": 122,
+  "infobox_figures": 1,
+  "infobox_raw": "122 minutes",
+  "infobox_page": "Interview with the Vampire (film)",
+  "infobox_all": [
+   122
+  ],
+  "infobox_cuts": [
+   [
+    122,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1996,
@@ -168,7 +426,21 @@
   "skip": null,
   "qid": "Q1741232",
   "runtime": 110,
-  "released": "1996-05-22"
+  "released": "1996-05-22",
+  "infobox_min": 110,
+  "infobox_figures": 1,
+  "infobox_raw": "110 minutes",
+  "infobox_page": "Mission: Impossible (film)",
+  "infobox_all": [
+   110
+  ],
+  "infobox_cuts": [
+   [
+    110,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1996,
@@ -177,7 +449,21 @@
   "skip": null,
   "qid": "Q329131",
   "runtime": 139,
-  "released": "1996-12-06"
+  "released": "1996-12-06",
+  "infobox_min": 138,
+  "infobox_figures": 1,
+  "infobox_raw": "138 minutes",
+  "infobox_page": "Jerry Maguire",
+  "infobox_all": [
+   138
+  ],
+  "infobox_cuts": [
+   [
+    138,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1999,
@@ -186,7 +472,21 @@
   "skip": null,
   "qid": "Q209481",
   "runtime": 159,
-  "released": "1999-07-13"
+  "released": "1999-07-13",
+  "infobox_min": 159,
+  "infobox_figures": 1,
+  "infobox_raw": "159 minutes",
+  "infobox_page": "Eyes Wide Shut",
+  "infobox_all": [
+   159
+  ],
+  "infobox_cuts": [
+   [
+    159,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 1999,
@@ -195,7 +495,21 @@
   "skip": null,
   "qid": "Q588420",
   "runtime": 188,
-  "released": "1999-12-08"
+  "released": "1999-12-08",
+  "infobox_min": 188,
+  "infobox_figures": 1,
+  "infobox_raw": "188 minutes",
+  "infobox_page": "Magnolia (film)",
+  "infobox_all": [
+   188
+  ],
+  "infobox_cuts": [
+   [
+    188,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2000,
@@ -204,7 +518,21 @@
   "skip": null,
   "qid": "Q505790",
   "runtime": 124,
-  "released": "2000-05-24"
+  "released": "2000-05-24",
+  "infobox_min": 124,
+  "infobox_figures": 1,
+  "infobox_raw": "124 minutes",
+  "infobox_page": "Mission: Impossible 2",
+  "infobox_all": [
+   124
+  ],
+  "infobox_cuts": [
+   [
+    124,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2001,
@@ -222,7 +550,21 @@
   "skip": null,
   "qid": "Q110278",
   "runtime": 136,
-  "released": "2001-01-01"
+  "released": "2001-01-01",
+  "infobox_min": 136,
+  "infobox_figures": 1,
+  "infobox_raw": "136 minutes",
+  "infobox_page": "Vanilla Sky",
+  "infobox_all": [
+   136
+  ],
+  "infobox_cuts": [
+   [
+    136,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2002,
@@ -240,7 +582,21 @@
   "skip": null,
   "qid": "Q244604",
   "runtime": 145,
-  "released": "2002-06-17"
+  "released": "2002-06-17",
+  "infobox_min": 145,
+  "infobox_figures": 1,
+  "infobox_raw": "145 minutes",
+  "infobox_page": "Minority Report",
+  "infobox_all": [
+   145
+  ],
+  "infobox_cuts": [
+   [
+    145,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2002,
@@ -258,7 +614,21 @@
   "skip": null,
   "qid": "Q207130",
   "runtime": 154,
-  "released": "2003-11-20"
+  "released": "2003-11-20",
+  "infobox_min": 154,
+  "infobox_figures": 1,
+  "infobox_raw": "154 minutes",
+  "infobox_page": "The Last Samurai",
+  "infobox_all": [
+   154
+  ],
+  "infobox_cuts": [
+   [
+    154,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2004,
@@ -267,7 +637,21 @@
   "skip": null,
   "qid": "Q110203",
   "runtime": 120,
-  "released": "2004-08-05"
+  "released": "2004-08-05",
+  "infobox_min": 120,
+  "infobox_figures": 1,
+  "infobox_raw": "120 minutes",
+  "infobox_page": "Collateral (film)",
+  "infobox_all": [
+   120
+  ],
+  "infobox_cuts": [
+   [
+    120,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2005,
@@ -276,7 +660,21 @@
   "skip": null,
   "qid": "Q202028",
   "runtime": 117,
-  "released": "2005-06-29"
+  "released": "2005-06-29",
+  "infobox_min": 116,
+  "infobox_figures": 1,
+  "infobox_raw": "116 minutes",
+  "infobox_page": "War of the Worlds (2005 film)",
+  "infobox_all": [
+   116
+  ],
+  "infobox_cuts": [
+   [
+    116,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2006,
@@ -285,7 +683,21 @@
   "skip": null,
   "qid": "Q288173",
   "runtime": 126,
-  "released": "2006-04-24"
+  "released": "2006-04-24",
+  "infobox_min": 126,
+  "infobox_figures": 1,
+  "infobox_raw": "126 minutes",
+  "infobox_page": "Mission: Impossible III",
+  "infobox_all": [
+   126
+  ],
+  "infobox_cuts": [
+   [
+    126,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2006,
@@ -303,7 +715,21 @@
   "skip": null,
   "qid": "Q367163",
   "runtime": 88,
-  "released": "2007-01-01"
+  "released": "2007-01-01",
+  "infobox_min": 92,
+  "infobox_figures": 1,
+  "infobox_raw": "92 minutes",
+  "infobox_page": "Lions for Lambs",
+  "infobox_all": [
+   92
+  ],
+  "infobox_cuts": [
+   [
+    92,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2008,
@@ -312,7 +738,21 @@
   "skip": null,
   "qid": "Q380981",
   "runtime": 107,
-  "released": "2008-01-01"
+  "released": "2008-01-01",
+  "infobox_min": 106,
+  "infobox_figures": 1,
+  "infobox_raw": "106 minutes",
+  "infobox_page": "Tropic Thunder",
+  "infobox_all": [
+   106
+  ],
+  "infobox_cuts": [
+   [
+    106,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2008,
@@ -321,7 +761,21 @@
   "skip": null,
   "qid": "Q159054",
   "runtime": 120,
-  "released": "2008-01-01"
+  "released": "2008-01-01",
+  "infobox_min": 121,
+  "infobox_figures": 1,
+  "infobox_raw": "121 minutes",
+  "infobox_page": "Valkyrie (film)",
+  "infobox_all": [
+   121
+  ],
+  "infobox_cuts": [
+   [
+    121,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2010,
@@ -330,7 +784,21 @@
   "skip": null,
   "qid": "Q679918",
   "runtime": 109,
-  "released": "2010-01-01"
+  "released": "2010-01-01",
+  "infobox_min": 109,
+  "infobox_figures": 1,
+  "infobox_raw": "109 minutes",
+  "infobox_page": "Knight and Day",
+  "infobox_all": [
+   109
+  ],
+  "infobox_cuts": [
+   [
+    109,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2011,
@@ -339,7 +807,21 @@
   "skip": null,
   "qid": "Q628154",
   "runtime": 132,
-  "released": "2011-12-14"
+  "released": "2011-12-14",
+  "infobox_min": 133,
+  "infobox_figures": 1,
+  "infobox_raw": "133 minutes",
+  "infobox_page": "Mission: Impossible – Ghost Protocol",
+  "infobox_all": [
+   133
+  ],
+  "infobox_cuts": [
+   [
+    133,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2012,
@@ -348,7 +830,21 @@
   "skip": null,
   "qid": "Q651060",
   "runtime": 123,
-  "released": "2012-06-13"
+  "released": "2012-06-13",
+  "infobox_min": 123,
+  "infobox_figures": 1,
+  "infobox_raw": "123 minutes",
+  "infobox_page": "Rock of Ages (2012 film)",
+  "infobox_all": [
+   123
+  ],
+  "infobox_cuts": [
+   [
+    123,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2012,
@@ -357,7 +853,21 @@
   "skip": null,
   "qid": "Q590252",
   "runtime": 130,
-  "released": "2012-12-21"
+  "released": "2012-12-21",
+  "infobox_min": 130,
+  "infobox_figures": 1,
+  "infobox_raw": "130 minutes",
+  "infobox_page": "Jack Reacher (film)",
+  "infobox_all": [
+   130
+  ],
+  "infobox_cuts": [
+   [
+    130,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2013,
@@ -366,7 +876,21 @@
   "skip": null,
   "qid": "Q638544",
   "runtime": 125,
-  "released": "2013-03-26"
+  "released": "2013-03-26",
+  "infobox_min": 124,
+  "infobox_figures": 1,
+  "infobox_raw": "124 minutes",
+  "infobox_page": "Oblivion (2013 film)",
+  "infobox_all": [
+   124
+  ],
+  "infobox_cuts": [
+   [
+    124,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2014,
@@ -375,7 +899,21 @@
   "skip": null,
   "qid": "Q1187607",
   "runtime": 113,
-  "released": "2014-05-29"
+  "released": "2014-05-29",
+  "infobox_min": 113,
+  "infobox_figures": 1,
+  "infobox_raw": "113 minutes",
+  "infobox_page": "Edge of Tomorrow",
+  "infobox_all": [
+   113
+  ],
+  "infobox_cuts": [
+   [
+    113,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2015,
@@ -384,7 +922,21 @@
   "skip": null,
   "qid": "Q17548046",
   "runtime": 131,
-  "released": "2015-07-23"
+  "released": "2015-07-23",
+  "infobox_min": 131,
+  "infobox_figures": 1,
+  "infobox_raw": "131 minutes",
+  "infobox_page": "Mission: Impossible – Rogue Nation",
+  "infobox_all": [
+   131
+  ],
+  "infobox_cuts": [
+   [
+    131,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2016,
@@ -393,7 +945,21 @@
   "skip": null,
   "qid": "Q21168538",
   "runtime": 118,
-  "released": "2016-10-20"
+  "released": "2016-10-20",
+  "infobox_min": 118,
+  "infobox_figures": 1,
+  "infobox_raw": "118 minutes",
+  "infobox_page": "Jack Reacher: Never Go Back",
+  "infobox_all": [
+   118
+  ],
+  "infobox_cuts": [
+   [
+    118,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2017,
@@ -402,7 +968,21 @@
   "skip": null,
   "qid": "Q23759268",
   "runtime": 110,
-  "released": "2017-06-08"
+  "released": "2017-06-08",
+  "infobox_min": 110,
+  "infobox_figures": 1,
+  "infobox_raw": "110 minutes",
+  "infobox_page": "The Mummy (2017 film)",
+  "infobox_all": [
+   110
+  ],
+  "infobox_cuts": [
+   [
+    110,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2017,
@@ -411,7 +991,21 @@
   "skip": null,
   "qid": "Q18811617",
   "runtime": 115,
-  "released": "2017-08-31"
+  "released": "2017-08-31",
+  "infobox_min": 115,
+  "infobox_figures": 1,
+  "infobox_raw": "115 minutes",
+  "infobox_page": "American Made (film)",
+  "infobox_all": [
+   115
+  ],
+  "infobox_cuts": [
+   [
+    115,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2018,
@@ -420,7 +1014,21 @@
   "skip": null,
   "qid": "Q29261993",
   "runtime": 147,
-  "released": "2018-07-12"
+  "released": "2018-07-12",
+  "infobox_min": 147,
+  "infobox_figures": 1,
+  "infobox_raw": "147 minutes",
+  "infobox_page": "Mission: Impossible – Fallout",
+  "infobox_all": [
+   147
+  ],
+  "infobox_cuts": [
+   [
+    147,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2022,
@@ -429,7 +1037,21 @@
   "skip": null,
   "qid": "Q31202708",
   "runtime": 131,
-  "released": "2022-05-18"
+  "released": "2022-05-18",
+  "infobox_min": 130,
+  "infobox_figures": 1,
+  "infobox_raw": "130 minutes",
+  "infobox_page": "Top Gun: Maverick",
+  "infobox_all": [
+   130
+  ],
+  "infobox_cuts": [
+   [
+    130,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2023,
@@ -438,7 +1060,21 @@
   "skip": null,
   "qid": "Q61876370",
   "runtime": 163,
-  "released": "2023-07-12"
+  "released": "2023-07-12",
+  "infobox_min": 163,
+  "infobox_figures": 1,
+  "infobox_raw": "163 minutes",
+  "infobox_page": "Mission: Impossible – Dead Reckoning Part One",
+  "infobox_all": [
+   163
+  ],
+  "infobox_cuts": [
+   [
+    163,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2025,
@@ -447,7 +1083,21 @@
   "skip": null,
   "qid": "Q61876374",
   "runtime": 169,
-  "released": "2025-05-06"
+  "released": "2025-05-06",
+  "infobox_min": 170,
+  "infobox_figures": 1,
+  "infobox_raw": "170 minutes",
+  "infobox_page": "Mission: Impossible – The Final Reckoning",
+  "infobox_all": [
+   170
+  ],
+  "infobox_cuts": [
+   [
+    170,
+    ""
+   ]
+  ],
+  "infobox_range": false
  },
  {
   "year": 2026,

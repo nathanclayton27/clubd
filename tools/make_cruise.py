@@ -4,8 +4,9 @@
     python3 tools/make_cruise.py
 
 Tom Cruise's acting filmography — every feature film he acted in, in release
-order, from Wikipedia's "Tom Cruise filmography" Film table with runtimes
-(P2047) and release dates (P577) from Wikidata via scratch/cruise/fetch_data.py.
+order, from Wikipedia's "Tom Cruise filmography" Film table, with release dates
+(P577) from Wikidata via scratch/cruise/fetch_data.py and runtimes from each
+film's own article via scratch/agent-runtimes/measure.py.
 
 The rule for what is in: a row survives only if the table itself gives it no
 disqualifying note. Rows marked "Documentary" (narration jobs), "Cameo" or
@@ -18,16 +19,46 @@ for ordering and IDs — the table is already in release order — and P577 is
 carried for verification only (it disagrees once, dating Losin' It 1983
 against the table's 1982).
 
-Weights are Wikidata runtime hours. A film with no P2047 would weigh 0 and be
-reported, not invented; as fetched, all of them have one.
+Weights: the film's own infobox, not Wikidata (CLU-178)
+-------------------------------------------------------
+Every bar is the runtime printed in that film's own {{Infobox film}}, chosen by
+gwlib.runtime.weigh() — see that module for the rule and for why P2047 could not
+be made to work. This list used to weigh from P2047's longest in-range value,
+and that shipped *Legend* at **125 minutes**: Scott's first assembly, a length
+the film was never released at anywhere. Its article lists the three that were —
+89 minutes (US), 93 (European), 114 (director's cut) — and a filmography in
+release order wants the release, so the bar is 89. That is a 40% correction on
+one row, and 20 of the 45 rows moved in total, most of them by a minute.
+
+The rule picks the release rather than the longest cut, which matters on three
+rows here: Legend, *The Outsiders* (91-minute theatrical, not the 114-minute
+"Complete Novel" re-edit) and *Far and Away* (140, not the 170-minute extended
+cut). Each of those says on the row which length its bar is, and VERSION_NOTE
+must cover exactly that set or this script stops.
+
+A film whose infobox gives no figure would keep its Wikidata runtime and be
+reported, not invented; as read, all 45 have one.
 """
 import json
 import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from gwlib import runtime as RT  # noqa: E402
 
 SLUG = "tom-cruise"
 
 KNOWN_SKIPS = {"Documentary", "Cameo", "Uncredited cameo", "Archive footage",
                "Post-production"}
+
+# Every row whose article prints more than one length says on the row which one
+# the bar is. Asserted to cover exactly that set, so a film that gains a second
+# cut in its infobox stops this script rather than shipping an unexplained bar.
+VERSION_NOTE = {
+    "Legend": "89 min, the US theatrical cut",
+    "The Outsiders": "91 min, the theatrical cut",
+    "Far and Away": "140 min, the theatrical cut",
+}
 
 ERAS = [
     ("rise", "The eighties", 1981, 1989,
@@ -81,6 +112,24 @@ def main():
     assert all(r["skip"] in KNOWN_SKIPS for r in skipped), \
         "unknown skip reason: " + repr(sorted({r["skip"] for r in skipped} - KNOWN_SKIPS))
     films = [r for r in rows if not r["skip"]]
+
+    # Weights: the film's own infobox, by gwlib.runtime's rule. A row the rule
+    # cannot settle keeps its Wikidata figure — never a guess.
+    needs_note, moved, kept = set(), [], []
+    for f in films:
+        cuts = [tuple(c) for c in (f.get("infobox_cuts") or [])]
+        n, why = RT.weigh(cuts, f.get("infobox_range", False))
+        if n is None:
+            kept.append((f["title"], f["runtime"], why))
+            n = f["runtime"]
+        elif n != f["runtime"]:
+            moved.append((f["title"], f["runtime"], n, why))
+        if len(cuts) > 1 or f.get("infobox_range"):
+            needs_note.add(f["title"])
+        f["runtime"] = n
+    assert needs_note == set(VERSION_NOTE),         "VERSION_NOTE must name exactly the rows whose article prints more than "         "one length: missing %s, stale %s"         % (sorted(needs_note - set(VERSION_NOTE)),
+           sorted(set(VERSION_NOTE) - needs_note))
+
     no_rt = [f for f in films if not f["runtime"]]
 
     sections = []
@@ -89,11 +138,14 @@ def main():
         assert got, "era %r is empty" % key
         items = []
         for f in got:
+            bits = [NOTE[f["title"]]] if f["title"] in NOTE else []
+            if f["title"] in VERSION_NOTE:
+                bits.append(VERSION_NOTE[f["title"]])
             items.append({
                 "id": "tc-%d-%s" % (f["year"], slug(f["title"])),
                 "t": f["title"], "n": str(f["year"]),
                 "w": round((f["runtime"] or 0) / 60.0, 2),
-                **({"note": NOTE[f["title"]]} if f["title"] in NOTE else {}),
+                **({"note": " · ".join(bits)} if bits else {}),
             })
         sec = {"id": key, "title": title,
                "sub": "%d–%d · %d films · %d hours"
@@ -137,12 +189,17 @@ def main():
              "documentaries, an archive-footage appearance in The Queen, and "
              "Digger, still in post-production. This is the acted feature "
              "films, released."],
-            ["Bar widths are runtimes.", "From Wikidata, in hours — every one "
-             "of the %d has one. About %d hours end to end, %d of them as "
-             "Ethan Hunt." % (len(films), round(hours),
-                              round(sum(f["runtime"] for f in hunt) / 60.0))],
+            ["Bar widths are runtimes, read from each film's own article.",
+             "Every one of the %d has a runtime printed in its own Wikipedia "
+             "infobox, and where an article lists more than one length the bar "
+             "is the theatrical release and the row says so — Legend went out "
+             "at 89 minutes, not the 125 of an assembly cut that was never "
+             "released. About %d hours end to end, %d of them as Ethan Hunt."
+             % (len(films), round(hours),
+                round(sum(f["runtime"] for f in hunt) / 60.0))],
             "Filmography from Wikipedia's Tom Cruise filmography; runtimes "
-            "and release dates from Wikidata.",
+            "from each film's own Wikipedia article, release dates from "
+            "Wikidata.",
         ],
         "sections": sections,
     }
@@ -153,6 +210,13 @@ def main():
 
     print("wrote %s.json" % SLUG)
     print("  %d films, %.1f hours" % (len(films), hours))
+    print("  runtimes: %d rows moved to the film's own infobox, %d kept what "
+          "they had" % (len(moved), len(kept)))
+    for t, was, now, why in sorted(moved, key=lambda m: -abs(m[2] - (m[1] or 0))):
+        print("   %+5d  %-38s %-4s -> %-4s  %s"
+              % (now - (was or 0), t[:38], was, now, why[:52]))
+    for t, was, why in kept:
+        print("   kept   %-38s %-4s       %s" % (t[:38], was, why[:52]))
     for s in sections:
         print("   %-22s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
     print("  skipped %d rows:" % len(skipped))

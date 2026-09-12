@@ -11,7 +11,21 @@
    "qid": "Q1686012",
    "en": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
    "wd_year": 1975,
-   "min": 201
+   "min": 201,
+   "infobox_min": 201,
+   "infobox_figures": 1,
+   "infobox_raw": "201 minutes",
+   "infobox_page": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+   "infobox_all": [
+    201
+   ],
+   "infobox_cuts": [
+    [
+     201,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 2,
@@ -23,7 +37,21 @@
    "qid": "Q202548",
    "en": "Vertigo (film)",
    "min": 128,
-   "wd_year": 1958
+   "wd_year": 1958,
+   "infobox_min": 128,
+   "infobox_figures": 1,
+   "infobox_raw": "128 minutes",
+   "infobox_page": "Vertigo (film)",
+   "infobox_all": [
+    128
+   ],
+   "infobox_cuts": [
+    [
+     128,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 3,
@@ -35,7 +63,21 @@
    "qid": "Q24815",
    "en": "Citizen Kane",
    "wd_year": 1941,
-   "min": 119
+   "min": 119,
+   "infobox_min": 119,
+   "infobox_figures": 1,
+   "infobox_raw": "119 minutes",
+   "infobox_page": "Citizen Kane",
+   "infobox_all": [
+    119
+   ],
+   "infobox_cuts": [
+    [
+     119,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 4,
@@ -47,7 +89,21 @@
    "qid": "Q26060",
    "en": "Tokyo Story",
    "wd_year": 1953,
-   "min": 136
+   "min": 136,
+   "infobox_min": 136,
+   "infobox_figures": 1,
+   "infobox_raw": "136 minutes",
+   "infobox_page": "Tokyo Story",
+   "infobox_all": [
+    136
+   ],
+   "infobox_cuts": [
+    [
+     136,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 5,
@@ -59,7 +115,21 @@
    "qid": "Q1056853",
    "en": "In the Mood for Love",
    "wd_year": 2000,
-   "min": 98
+   "min": 98,
+   "infobox_min": 98,
+   "infobox_figures": 1,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "In the Mood for Love",
+   "infobox_all": [
+    98
+   ],
+   "infobox_cuts": [
+    [
+     98,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 6,
@@ -71,7 +141,21 @@
    "qid": "Q103474",
    "en": "2001: A Space Odyssey",
    "wd_year": 1968,
-   "min": 143
+   "min": 143,
+   "infobox_min": 139,
+   "infobox_figures": 1,
+   "infobox_raw": "139 minutes",
+   "infobox_page": "2001: A Space Odyssey",
+   "infobox_all": [
+    139
+   ],
+   "infobox_cuts": [
+    [
+     139,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 7,
@@ -83,7 +167,21 @@
    "qid": "Q1193562",
    "en": "Beau Travail",
    "wd_year": 1999,
-   "min": 92
+   "min": 92,
+   "infobox_min": 90,
+   "infobox_figures": 1,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Beau Travail",
+   "infobox_all": [
+    90
+   ],
+   "infobox_cuts": [
+    [
+     90,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 8,
@@ -95,7 +193,21 @@
    "qid": "Q272608",
    "en": "Mulholland Drive (film)",
    "wd_year": 2001,
-   "min": 147
+   "min": 147,
+   "infobox_min": 146,
+   "infobox_figures": 1,
+   "infobox_raw": "146 minutes",
+   "infobox_page": "Mulholland Drive (film)",
+   "infobox_all": [
+    146
+   ],
+   "infobox_cuts": [
+    [
+     146,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 9,
@@ -107,7 +219,21 @@
    "qid": "Q829250",
    "en": "Man with a Movie Camera",
    "wd_year": 1929,
-   "min": 68
+   "min": 68,
+   "infobox_min": 68,
+   "infobox_figures": 1,
+   "infobox_raw": "68 minutes",
+   "infobox_page": "Man with a Movie Camera",
+   "infobox_all": [
+    68
+   ],
+   "infobox_cuts": [
+    [
+     68,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 10,
@@ -119,7 +245,21 @@
    "qid": "Q309153",
    "en": "Singin' in the Rain",
    "wd_year": 1952,
-   "min": 103
+   "min": 103,
+   "infobox_min": 103,
+   "infobox_figures": 1,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Singin' in the Rain",
+   "infobox_all": [
+    103
+   ],
+   "infobox_cuts": [
+    [
+     103,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 11,
@@ -131,7 +271,21 @@
    "qid": "Q431093",
    "en": "Sunrise: A Song of Two Humans",
    "min": 91,
-   "wd_year": 1927
+   "wd_year": 1927,
+   "infobox_min": 95,
+   "infobox_figures": 1,
+   "infobox_raw": "95 minutes",
+   "infobox_page": "Sunrise: A Song of Two Humans",
+   "infobox_all": [
+    95
+   ],
+   "infobox_cuts": [
+    [
+     95,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 12,
@@ -143,7 +297,21 @@
    "qid": "Q47703",
    "en": "The Godfather",
    "wd_year": 1972,
-   "min": 175
+   "min": 175,
+   "infobox_min": 175,
+   "infobox_figures": 1,
+   "infobox_raw": "175 minutes",
+   "infobox_page": "The Godfather",
+   "infobox_all": [
+    175
+   ],
+   "infobox_cuts": [
+    [
+     175,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 13,
@@ -155,7 +323,21 @@
    "qid": "Q748599",
    "en": "The Rules of the Game",
    "wd_year": 1939,
-   "min": 110
+   "min": 110,
+   "infobox_min": 110,
+   "infobox_figures": 1,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "The Rules of the Game",
+   "infobox_all": [
+    110
+   ],
+   "infobox_cuts": [
+    [
+     110,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 14,
@@ -167,7 +349,21 @@
    "qid": "Q1199628",
    "en": "Cléo from 5 to 7",
    "wd_year": 1962,
-   "min": 90
+   "min": 90,
+   "infobox_min": 90,
+   "infobox_figures": 1,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Cléo from 5 to 7",
+   "infobox_all": [
+    90
+   ],
+   "infobox_cuts": [
+    [
+     90,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 15,
@@ -179,7 +375,21 @@
    "qid": "Q276769",
    "en": "The Searchers",
    "wd_year": 1956,
-   "min": 119
+   "min": 119,
+   "infobox_min": 119,
+   "infobox_figures": 1,
+   "infobox_raw": "119 minutes",
+   "infobox_page": "The Searchers",
+   "infobox_all": [
+    119
+   ],
+   "infobox_cuts": [
+    [
+     119,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 16,
@@ -191,7 +401,21 @@
    "qid": "Q1922418",
    "en": "Meshes of the Afternoon",
    "wd_year": 1943,
-   "min": 14
+   "min": 14,
+   "infobox_min": 14,
+   "infobox_figures": 1,
+   "infobox_raw": "14 minutes",
+   "infobox_page": "Meshes of the Afternoon",
+   "infobox_all": [
+    14
+   ],
+   "infobox_cuts": [
+    [
+     14,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 17,
@@ -203,7 +427,21 @@
    "qid": "Q498277",
    "en": "Close-Up (1990 film)",
    "wd_year": 1990,
-   "min": 98
+   "min": 98,
+   "infobox_min": 98,
+   "infobox_figures": 1,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "Close-Up (1990 film)",
+   "infobox_all": [
+    98
+   ],
+   "infobox_cuts": [
+    [
+     98,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 18,
@@ -215,7 +453,21 @@
    "qid": "Q695255",
    "en": "Persona (1966 film)",
    "wd_year": 1966,
-   "min": 84
+   "min": 84,
+   "infobox_min": 84,
+   "infobox_figures": 1,
+   "infobox_raw": "84 minutes",
+   "infobox_page": "Persona (1966 film)",
+   "infobox_all": [
+    84
+   ],
+   "infobox_cuts": [
+    [
+     84,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 19,
@@ -227,7 +479,26 @@
    "qid": "Q182692",
    "en": "Apocalypse Now",
    "wd_year": 1979,
-   "min": 147
+   "min": 147,
+   "infobox_min": 147,
+   "infobox_figures": 2,
+   "infobox_raw": "Plainlist | | 147 minutes (70 mm) | 153 minutes (35 mm)",
+   "infobox_page": "Apocalypse Now",
+   "infobox_all": [
+    147,
+    153
+   ],
+   "infobox_cuts": [
+    [
+     147,
+     "70 mm"
+    ],
+    [
+     153,
+     "35 mm"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 20,
@@ -239,7 +510,21 @@
    "qid": "Q189540",
    "en": "Seven Samurai",
    "wd_year": 1954,
-   "min": 207
+   "min": 207,
+   "infobox_min": 207,
+   "infobox_figures": 1,
+   "infobox_raw": "207 minutes (with intermission)",
+   "infobox_page": "Seven Samurai",
+   "infobox_all": [
+    207
+   ],
+   "infobox_cuts": [
+    [
+     207,
+     "with intermission"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 21,
@@ -251,7 +536,21 @@
    "qid": "Q743203",
    "en": "Late Spring",
    "wd_year": 1949,
-   "min": 108
+   "min": 108,
+   "infobox_min": 108,
+   "infobox_figures": 1,
+   "infobox_raw": "108 minutes",
+   "infobox_page": "Late Spring",
+   "infobox_all": [
+    108
+   ],
+   "infobox_cuts": [
+    [
+     108,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 21,
@@ -263,7 +562,26 @@
    "qid": "Q51520",
    "en": "The Passion of Joan of Arc",
    "wd_year": 1928,
-   "min": 82
+   "min": 82,
+   "infobox_min": 110,
+   "infobox_figures": 2,
+   "infobox_raw": "110 minutes small | (20 fps) 82 minutes small | (24 fps)",
+   "infobox_page": "The Passion of Joan of Arc",
+   "infobox_all": [
+    110,
+    82
+   ],
+   "infobox_cuts": [
+    [
+     110,
+     "20 fps"
+    ],
+    [
+     82,
+     "24 fps"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 23,
@@ -275,7 +593,21 @@
    "qid": "Q1454574",
    "en": "Playtime",
    "wd_year": 1967,
-   "min": 126
+   "min": 126,
+   "infobox_min": 124,
+   "infobox_figures": 1,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "Playtime",
+   "infobox_all": [
+    124
+   ],
+   "infobox_cuts": [
+    [
+     124,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 24,
@@ -287,7 +619,21 @@
    "qid": "Q1141252",
    "en": "Do the Right Thing",
    "wd_year": 1989,
-   "min": 120
+   "min": 120,
+   "infobox_min": 120,
+   "infobox_figures": 1,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Do the Right Thing",
+   "infobox_all": [
+    120
+   ],
+   "infobox_cuts": [
+    [
+     120,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 25,
@@ -299,7 +645,21 @@
    "qid": "Q228937",
    "en": "Au hasard Balthazar",
    "wd_year": 1966,
-   "min": 95
+   "min": 95,
+   "infobox_min": 95,
+   "infobox_figures": 1,
+   "infobox_raw": "95 minutes",
+   "infobox_page": "Au hasard Balthazar",
+   "infobox_all": [
+    95
+   ],
+   "infobox_cuts": [
+    [
+     95,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 25,
@@ -311,7 +671,21 @@
    "qid": "Q1132629",
    "en": "The Night of the Hunter",
    "wd_year": 1955,
-   "min": 89
+   "min": 89,
+   "infobox_min": 92,
+   "infobox_figures": 1,
+   "infobox_raw": "92 minutes",
+   "infobox_page": "The Night of the Hunter",
+   "infobox_all": [
+    92
+   ],
+   "infobox_cuts": [
+    [
+     92,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 27,
@@ -324,7 +698,21 @@
    "en": "Shoah (film)",
    "wd_year": 1985,
    "min": 566,
-   "min_src": "infobox"
+   "min_src": "infobox",
+   "infobox_min": 566,
+   "infobox_figures": 1,
+   "infobox_raw": "566 minutes",
+   "infobox_page": "Shoah (film)",
+   "infobox_all": [
+    566
+   ],
+   "infobox_cuts": [
+    [
+     566,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 28,
@@ -336,7 +724,21 @@
    "qid": "Q910705",
    "en": "Daisies (film)",
    "wd_year": 1966,
-   "min": 76
+   "min": 76,
+   "infobox_min": 76,
+   "infobox_figures": 1,
+   "infobox_raw": "76 minutes",
+   "infobox_page": "Daisies (film)",
+   "infobox_all": [
+    76
+   ],
+   "infobox_cuts": [
+    [
+     76,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 29,
@@ -348,7 +750,21 @@
    "qid": "Q47221",
    "en": "Taxi Driver",
    "wd_year": 1976,
-   "min": 114
+   "min": 114,
+   "infobox_min": 114,
+   "infobox_figures": 1,
+   "infobox_raw": "114 minutes",
+   "infobox_page": "Taxi Driver",
+   "infobox_all": [
+    114
+   ],
+   "infobox_cuts": [
+    [
+     114,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 30,
@@ -360,7 +776,21 @@
    "qid": "Q63246568",
    "en": "Portrait of a Lady on Fire",
    "wd_year": 2019,
-   "min": 121
+   "min": 121,
+   "infobox_min": 120,
+   "infobox_figures": 1,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Portrait of a Lady on Fire",
+   "infobox_all": [
+    120
+   ],
+   "infobox_cuts": [
+    [
+     120,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 31,
@@ -372,7 +802,21 @@
    "qid": "Q12018",
    "en": "8½",
    "wd_year": 1963,
-   "min": 138
+   "min": 138,
+   "infobox_min": 138,
+   "infobox_figures": 1,
+   "infobox_raw": "138 minutes",
+   "infobox_page": "8½",
+   "infobox_all": [
+    138
+   ],
+   "infobox_cuts": [
+    [
+     138,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 31,
@@ -384,7 +828,21 @@
    "qid": "Q838149",
    "en": "Mirror (1975 film)",
    "min": 108,
-   "wd_year": 1975
+   "wd_year": 1975,
+   "infobox_min": 106,
+   "infobox_figures": 1,
+   "infobox_raw": "106 minutes",
+   "infobox_page": "Mirror (1975 film)",
+   "infobox_all": [
+    106
+   ],
+   "infobox_cuts": [
+    [
+     106,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 31,
@@ -396,7 +854,21 @@
    "qid": "Q163038",
    "en": "Psycho (1960 film)",
    "min": 109,
-   "wd_year": 1960
+   "wd_year": 1960,
+   "infobox_min": 109,
+   "infobox_figures": 1,
+   "infobox_raw": "109 minutes",
+   "infobox_page": "Psycho (1960 film)",
+   "infobox_all": [
+    109
+   ],
+   "infobox_cuts": [
+    [
+     109,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 34,
@@ -408,7 +880,26 @@
    "qid": "Q780016",
    "en": "L'Atalante",
    "wd_year": 1934,
-   "min": 89
+   "min": 89,
+   "infobox_min": 65,
+   "infobox_figures": 2,
+   "infobox_raw": "65 minutes (original French release) 85 minutes (restored version)",
+   "infobox_page": "L'Atalante",
+   "infobox_all": [
+    65,
+    85
+   ],
+   "infobox_cuts": [
+    [
+     65,
+     "original French release"
+    ],
+    [
+     85,
+     "restored version"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 35,
@@ -420,7 +911,61 @@
    "qid": "Q622380",
    "en": "Pather Panchali",
    "wd_year": 1955,
-   "min": 120
+   "min": 120,
+   "infobox_min": 126,
+   "infobox_figures": 9,
+   "infobox_raw": "112–126 minutes efn | name=runtimevalues | Different sources identify different running times for the film. A Museum of Modern Art anthology states 112 minutes. harv | Bee | Hellczer | McFadden | 2013 | p=204 An LA Weekly notice states 115 minutes. Stuart Jeffries of The Guardian states 125 minutes in a 2010 report. Rovi Hal Erickson of The New York Times states 126 minutes in a review summary in ",
+   "infobox_page": "Pather Panchali",
+   "infobox_all": [
+    126,
+    112,
+    115,
+    125,
+    126,
+    125,
+    10,
+    110,
+    119
+   ],
+   "infobox_cuts": [
+    [
+     126,
+     "name=runtimevalues Different sources identify different running times "
+    ],
+    [
+     112,
+     "harv Bee Hellczer McFadden 2013 p=204 An ''LA Weekly'' notice states"
+    ],
+    [
+     115,
+     "Stuart Jeffries of ''The Guardian'' states"
+    ],
+    [
+     125,
+     "in a 2010 report. Rovi Hal Erickson of ''The New York Times'' states"
+    ],
+    [
+     126,
+     "in a review summary in NYT Critics' Pick. In 2005 Doug Pratt states"
+    ],
+    [
+     125,
+     "but mentions that most references list the running time at about"
+    ],
+    [
+     10,
+     "less than that. harv Pratt 2005 p=908 The British Board of Film Classi"
+    ],
+    [
+     110,
+     "55 seconds) and video"
+    ],
+    [
+     119,
+     "31 seconds) versions"
+    ]
+   ],
+   "infobox_range": true
   },
   {
    "rank": 36,
@@ -432,7 +977,21 @@
    "qid": "Q238211",
    "en": "City Lights",
    "wd_year": 1931,
-   "min": 87
+   "min": 87,
+   "infobox_min": 87,
+   "infobox_figures": 1,
+   "infobox_raw": "87 minutes",
+   "infobox_page": "City Lights",
+   "infobox_all": [
+    87
+   ],
+   "infobox_cuts": [
+    [
+     87,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 36,
@@ -444,7 +1003,21 @@
    "qid": "Q127021",
    "en": "M (1931 film)",
    "min": 117,
-   "wd_year": 1931
+   "wd_year": 1931,
+   "infobox_min": 111,
+   "infobox_figures": 1,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "M (1931 film)",
+   "infobox_all": [
+    111
+   ],
+   "infobox_cuts": [
+    [
+     111,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 38,
@@ -456,7 +1029,21 @@
    "qid": "Q34414",
    "en": "Rear Window",
    "wd_year": 1954,
-   "min": 112
+   "min": 112,
+   "infobox_min": 112,
+   "infobox_figures": 1,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Rear Window",
+   "infobox_all": [
+    112
+   ],
+   "infobox_cuts": [
+    [
+     112,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 38,
@@ -468,7 +1055,21 @@
    "qid": "Q190086",
    "en": "Some Like It Hot",
    "wd_year": 1959,
-   "min": 120
+   "min": 120,
+   "infobox_min": 121,
+   "infobox_figures": 1,
+   "infobox_raw": "121 minutes",
+   "infobox_page": "Some Like It Hot",
+   "infobox_all": [
+    121
+   ],
+   "infobox_cuts": [
+    [
+     121,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 38,
@@ -480,7 +1081,21 @@
    "qid": "Q86427",
    "en": "Breathless (1960 film)",
    "wd_year": 1960,
-   "min": 87
+   "min": 87,
+   "infobox_min": 90,
+   "infobox_figures": 1,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "Breathless (1960 film)",
+   "infobox_all": [
+    90
+   ],
+   "infobox_cuts": [
+    [
+     90,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 41,
@@ -492,7 +1107,21 @@
    "qid": "Q172837",
    "en": "Bicycle Thieves",
    "wd_year": 1948,
-   "min": 90
+   "min": 90,
+   "infobox_min": 89,
+   "infobox_figures": 1,
+   "infobox_raw": "89 minutes",
+   "infobox_page": "Bicycle Thieves",
+   "infobox_all": [
+    89
+   ],
+   "infobox_cuts": [
+    [
+     89,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 41,
@@ -504,7 +1133,21 @@
    "qid": "Q135465",
    "en": "Rashomon",
    "wd_year": 1950,
-   "min": 88
+   "min": 88,
+   "infobox_min": 88,
+   "infobox_figures": 1,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "Rashomon",
+   "infobox_all": [
+    88
+   ],
+   "infobox_cuts": [
+    [
+     88,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 43,
@@ -516,7 +1159,21 @@
    "qid": "Q1752684",
    "en": "Killer of Sheep",
    "wd_year": 1977,
-   "min": 83
+   "min": 83,
+   "infobox_min": 80,
+   "infobox_figures": 1,
+   "infobox_raw": "80 minutes",
+   "infobox_page": "Killer of Sheep",
+   "infobox_all": [
+    80
+   ],
+   "infobox_cuts": [
+    [
+     80,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 43,
@@ -528,7 +1185,21 @@
    "qid": "Q200437",
    "en": "Stalker (1979 film)",
    "wd_year": 1979,
-   "min": 163
+   "min": 163,
+   "infobox_min": 161,
+   "infobox_figures": 1,
+   "infobox_raw": "161 minutes",
+   "infobox_page": "Stalker (1979 film)",
+   "infobox_all": [
+    161
+   ],
+   "infobox_cuts": [
+    [
+     161,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 45,
@@ -540,7 +1211,21 @@
    "qid": "Q471716",
    "en": "Barry Lyndon",
    "wd_year": 1975,
-   "min": 184
+   "min": 184,
+   "infobox_min": 185,
+   "infobox_figures": 1,
+   "infobox_raw": "185 minutes",
+   "infobox_page": "Barry Lyndon",
+   "infobox_all": [
+    185
+   ],
+   "infobox_cuts": [
+    [
+     185,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 45,
@@ -552,7 +1237,21 @@
    "qid": "Q223139",
    "en": "North by Northwest",
    "wd_year": 1959,
-   "min": 136
+   "min": 136,
+   "infobox_min": 136,
+   "infobox_figures": 1,
+   "infobox_raw": "136 minutes",
+   "infobox_page": "North by Northwest",
+   "infobox_all": [
+    136
+   ],
+   "infobox_cuts": [
+    [
+     136,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 45,
@@ -564,7 +1263,26 @@
    "qid": "Q784812",
    "en": "The Battle of Algiers",
    "wd_year": 1966,
-   "min": 117
+   "min": 117,
+   "infobox_min": 136,
+   "infobox_figures": 2,
+   "infobox_raw": "plainlist | | 136 minutes small | (original version) | 120 minutes small | (cut version for theaters)",
+   "infobox_page": "The Battle of Algiers",
+   "infobox_all": [
+    136,
+    120
+   ],
+   "infobox_cuts": [
+    [
+     136,
+     "original version"
+    ],
+    [
+     120,
+     "cut version for theaters"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 48,
@@ -576,7 +1294,21 @@
    "qid": "Q2352630",
    "en": "Ordet",
    "wd_year": 1955,
-   "min": 126
+   "min": 126,
+   "infobox_min": 126,
+   "infobox_figures": 1,
+   "infobox_raw": "126 minutes",
+   "infobox_page": "Ordet",
+   "infobox_all": [
+    126
+   ],
+   "infobox_cuts": [
+    [
+     126,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 48,
@@ -588,7 +1320,21 @@
    "qid": "Q381528",
    "en": "Wanda (film)",
    "min": 102,
-   "wd_year": 1970
+   "wd_year": 1970,
+   "infobox_min": 103,
+   "infobox_figures": 1,
+   "infobox_raw": "103 minutes",
+   "infobox_page": "Wanda (film)",
+   "infobox_all": [
+    103
+   ],
+   "infobox_cuts": [
+    [
+     103,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 50,
@@ -600,7 +1346,21 @@
    "qid": "Q162331",
    "en": "The 400 Blows",
    "wd_year": 1959,
-   "min": 99
+   "min": 99,
+   "infobox_min": 99,
+   "infobox_figures": 1,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "The 400 Blows",
+   "infobox_all": [
+    99
+   ],
+   "infobox_cuts": [
+    [
+     99,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 50,
@@ -612,7 +1372,21 @@
    "qid": "Q117315",
    "en": "The Piano",
    "wd_year": 1993,
-   "min": 121
+   "min": 121,
+   "infobox_min": 117,
+   "infobox_figures": 1,
+   "infobox_raw": "117 minutes",
+   "infobox_page": "The Piano",
+   "infobox_all": [
+    117
+   ],
+   "infobox_cuts": [
+    [
+     117,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 52,
@@ -624,7 +1398,21 @@
    "qid": "Q543810",
    "en": "Ali: Fear Eats the Soul",
    "min": 93,
-   "wd_year": 1974
+   "wd_year": 1974,
+   "infobox_min": 93,
+   "infobox_figures": 1,
+   "infobox_raw": "93 minutes",
+   "infobox_page": "Ali: Fear Eats the Soul",
+   "infobox_all": [
+    93
+   ],
+   "infobox_cuts": [
+    [
+     93,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 52,
@@ -636,7 +1424,21 @@
    "qid": "Q7019502",
    "en": "News from Home",
    "wd_year": 1976,
-   "min": 89
+   "min": 89,
+   "infobox_min": 88,
+   "infobox_figures": 1,
+   "infobox_raw": "88 minutes",
+   "infobox_page": "News from Home",
+   "infobox_all": [
+    88
+   ],
+   "infobox_cuts": [
+    [
+     88,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 54,
@@ -648,7 +1450,21 @@
    "qid": "Q152350",
    "en": "Battleship Potemkin",
    "wd_year": 1925,
-   "min": 74
+   "min": 74,
+   "infobox_min": 74,
+   "infobox_figures": 1,
+   "infobox_raw": "74 minutes",
+   "infobox_page": "Battleship Potemkin",
+   "infobox_all": [
+    74
+   ],
+   "infobox_cuts": [
+    [
+     74,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 54,
@@ -660,7 +1476,21 @@
    "qid": "Q184843",
    "en": "Blade Runner",
    "wd_year": 1982,
-   "min": 112
+   "min": 112,
+   "infobox_min": 117,
+   "infobox_figures": 1,
+   "infobox_raw": "117 minutes",
+   "infobox_page": "Blade Runner",
+   "infobox_all": [
+    117
+   ],
+   "infobox_cuts": [
+    [
+     117,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 54,
@@ -672,7 +1502,21 @@
    "qid": "Q598109",
    "en": "Contempt (film)",
    "wd_year": 1963,
-   "min": 102
+   "min": 102,
+   "infobox_min": 101,
+   "infobox_figures": 1,
+   "infobox_raw": "101 minutes",
+   "infobox_page": "Contempt (film)",
+   "infobox_all": [
+    101
+   ],
+   "infobox_cuts": [
+    [
+     101,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 54,
@@ -684,7 +1528,21 @@
    "qid": "Q1569918",
    "en": "Sherlock Jr.",
    "wd_year": 1924,
-   "min": 44
+   "min": 44,
+   "infobox_min": 45,
+   "infobox_figures": 1,
+   "infobox_raw": "45 minutes (5 reels)",
+   "infobox_page": "Sherlock Jr.",
+   "infobox_all": [
+    45
+   ],
+   "infobox_cuts": [
+    [
+     45,
+     "5 reels"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 54,
@@ -696,7 +1554,21 @@
    "qid": "Q270510",
    "en": "The Apartment",
    "wd_year": 1960,
-   "min": 125
+   "min": 125,
+   "infobox_min": 125,
+   "infobox_figures": 1,
+   "infobox_raw": "125 minutes",
+   "infobox_page": "The Apartment",
+   "infobox_all": [
+    125
+   ],
+   "infobox_cuts": [
+    [
+     125,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 59,
@@ -708,7 +1580,21 @@
    "qid": "Q290796",
    "en": "Sans Soleil",
    "wd_year": 1983,
-   "min": 100
+   "min": 100,
+   "infobox_min": 100,
+   "infobox_figures": 1,
+   "infobox_raw": "100 minutes",
+   "infobox_page": "Sans Soleil",
+   "infobox_all": [
+    100
+   ],
+   "infobox_cuts": [
+    [
+     100,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 60,
@@ -720,7 +1606,21 @@
    "qid": "Q3285003",
    "en": "Daughters of the Dust",
    "wd_year": 1991,
-   "min": 112
+   "min": 112,
+   "infobox_min": 112,
+   "infobox_figures": 1,
+   "infobox_raw": "112 minutes",
+   "infobox_page": "Daughters of the Dust",
+   "infobox_all": [
+    112
+   ],
+   "infobox_cuts": [
+    [
+     112,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 60,
@@ -732,7 +1632,21 @@
    "qid": "Q18407",
    "en": "La Dolce Vita",
    "wd_year": 1960,
-   "min": 174
+   "min": 174,
+   "infobox_min": 174,
+   "infobox_figures": 1,
+   "infobox_raw": "174 minutes",
+   "infobox_page": "La Dolce Vita",
+   "infobox_all": [
+    174
+   ],
+   "infobox_cuts": [
+    [
+     174,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 60,
@@ -744,7 +1658,21 @@
    "qid": "Q21527875",
    "en": "Moonlight (2016 film)",
    "wd_year": 2016,
-   "min": 111
+   "min": 111,
+   "infobox_min": 111,
+   "infobox_figures": 1,
+   "infobox_raw": "111 minutes",
+   "infobox_page": "Moonlight (2016 film)",
+   "infobox_all": [
+    111
+   ],
+   "infobox_cuts": [
+    [
+     111,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 63,
@@ -756,7 +1684,21 @@
    "qid": "Q132689",
    "en": "Casablanca (film)",
    "wd_year": 1942,
-   "min": 102
+   "min": 102,
+   "infobox_min": 102,
+   "infobox_figures": 1,
+   "infobox_raw": "102 minutes",
+   "infobox_page": "Casablanca (film)",
+   "infobox_all": [
+    102
+   ],
+   "infobox_cuts": [
+    [
+     102,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 63,
@@ -768,7 +1710,21 @@
    "qid": "Q42047",
    "en": "Goodfellas",
    "wd_year": 1990,
-   "min": 146
+   "min": 146,
+   "infobox_min": 146,
+   "infobox_figures": 1,
+   "infobox_raw": "146 minutes",
+   "infobox_page": "Goodfellas",
+   "infobox_all": [
+    146
+   ],
+   "infobox_cuts": [
+    [
+     146,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 63,
@@ -780,7 +1736,21 @@
    "qid": "Q271830",
    "en": "The Third Man",
    "wd_year": 1949,
-   "min": 104
+   "min": 104,
+   "infobox_min": 104,
+   "infobox_figures": 1,
+   "infobox_raw": "104 minutes",
+   "infobox_page": "The Third Man",
+   "infobox_all": [
+    104
+   ],
+   "infobox_cuts": [
+    [
+     104,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 66,
@@ -792,7 +1762,21 @@
    "qid": "Q3310901",
    "en": "Touki Bouki",
    "wd_year": 1973,
-   "min": 85
+   "min": 85,
+   "infobox_min": 91,
+   "infobox_figures": 1,
+   "infobox_raw": "91 minutes",
+   "infobox_page": "Touki Bouki",
+   "infobox_all": [
+    91
+   ],
+   "infobox_cuts": [
+    [
+     91,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 67,
@@ -804,7 +1788,26 @@
    "qid": "Q503046",
    "en": "Andrei Rublev (film)",
    "wd_year": 1966,
-   "min": 185
+   "min": 185,
+   "infobox_min": 205,
+   "infobox_figures": 2,
+   "infobox_raw": "Plainlist | | 205 minutes (first cut) | 183 minutes (final cut)",
+   "infobox_page": "Andrei Rublev (film)",
+   "infobox_all": [
+    205,
+    183
+   ],
+   "infobox_cuts": [
+    [
+     205,
+     "first cut"
+    ],
+    [
+     183,
+     "final cut"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 67,
@@ -816,7 +1819,21 @@
    "qid": "Q451434",
    "en": "La Jetée",
    "wd_year": 1962,
-   "min": 28
+   "min": 28,
+   "infobox_min": 28,
+   "infobox_figures": 1,
+   "infobox_raw": "28 minutes",
+   "infobox_page": "La Jetée",
+   "infobox_all": [
+    28
+   ],
+   "infobox_cuts": [
+    [
+     28,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 67,
@@ -828,7 +1845,21 @@
    "qid": "Q151599",
    "en": "Metropolis (1927 film)",
    "wd_year": 1927,
-   "min": 153
+   "min": 153,
+   "infobox_min": 153,
+   "infobox_figures": 1,
+   "infobox_raw": "153 minutes (original German release)",
+   "infobox_page": "Metropolis (1927 film)",
+   "infobox_all": [
+    153
+   ],
+   "infobox_cuts": [
+    [
+     153,
+     "original German release"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 67,
@@ -840,7 +1871,21 @@
    "qid": "Q2493884",
    "en": "The Gleaners and I",
    "wd_year": 2000,
-   "min": 82
+   "min": 82,
+   "infobox_min": 82,
+   "infobox_figures": 1,
+   "infobox_raw": "82 minutes",
+   "infobox_page": "The Gleaners and I",
+   "infobox_all": [
+    82
+   ],
+   "infobox_cuts": [
+    [
+     82,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 67,
@@ -852,7 +1897,21 @@
    "qid": "Q625780",
    "en": "The Red Shoes (1948 film)",
    "wd_year": 1948,
-   "min": 133
+   "min": 133,
+   "infobox_min": 134,
+   "infobox_figures": 1,
+   "infobox_raw": "134 minutes",
+   "infobox_page": "The Red Shoes (1948 film)",
+   "infobox_all": [
+    134
+   ],
+   "infobox_cuts": [
+    [
+     134,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 72,
@@ -864,7 +1923,36 @@
    "qid": "Q385866",
    "en": "Journey to Italy",
    "wd_year": 1954,
-   "min": 81
+   "min": 81,
+   "infobox_min": 105,
+   "infobox_figures": 4,
+   "infobox_raw": "105 minutes (Italy) 88 minutes (France) 80 minutes (US) 70 minutes (UK)",
+   "infobox_page": "Journey to Italy",
+   "infobox_all": [
+    105,
+    88,
+    80,
+    70
+   ],
+   "infobox_cuts": [
+    [
+     105,
+     "Italy"
+    ],
+    [
+     88,
+     "France"
+    ],
+    [
+     80,
+     "US"
+    ],
+    [
+     70,
+     "UK"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 72,
@@ -876,7 +1964,21 @@
    "qid": "Q514531",
    "en": "L'Avventura",
    "wd_year": 1960,
-   "min": 145
+   "min": 145,
+   "infobox_min": 143,
+   "infobox_figures": 1,
+   "infobox_raw": "143 minutes",
+   "infobox_page": "L'Avventura",
+   "infobox_all": [
+    143
+   ],
+   "infobox_cuts": [
+    [
+     143,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 72,
@@ -888,7 +1990,21 @@
    "qid": "Q39571",
    "en": "My Neighbor Totoro",
    "wd_year": 1988,
-   "min": 86
+   "min": 86,
+   "infobox_min": 86,
+   "infobox_figures": 1,
+   "infobox_raw": "86 minutes",
+   "infobox_page": "My Neighbor Totoro",
+   "infobox_all": [
+    86
+   ],
+   "infobox_cuts": [
+    [
+     86,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 75,
@@ -900,7 +2016,21 @@
    "qid": "Q373774",
    "en": "Imitation of Life (1959 film)",
    "wd_year": 1959,
-   "min": 124
+   "min": 124,
+   "infobox_min": 125,
+   "infobox_figures": 1,
+   "infobox_raw": "125 minutes",
+   "infobox_page": "Imitation of Life (1959 film)",
+   "infobox_all": [
+    125
+   ],
+   "infobox_cuts": [
+    [
+     125,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 75,
@@ -912,7 +2042,21 @@
    "qid": "Q2633405",
    "en": "Sansho the Bailiff",
    "wd_year": 1954,
-   "min": 120
+   "min": 120,
+   "infobox_min": 124,
+   "infobox_figures": 1,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "Sansho the Bailiff",
+   "infobox_all": [
+    124
+   ],
+   "infobox_cuts": [
+    [
+     124,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 75,
@@ -924,7 +2068,21 @@
    "qid": "Q155653",
    "en": "Spirited Away",
    "wd_year": 2001,
-   "min": 125
+   "min": 125,
+   "infobox_min": 124,
+   "infobox_figures": 1,
+   "infobox_raw": "124 minutes",
+   "infobox_page": "Spirited Away",
+   "infobox_all": [
+    124
+   ],
+   "infobox_cuts": [
+    [
+     124,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -936,7 +2094,21 @@
    "qid": "Q710745",
    "en": "A Brighter Summer Day",
    "wd_year": 1991,
-   "min": 237
+   "min": 237,
+   "infobox_min": 237,
+   "infobox_figures": 1,
+   "infobox_raw": "237 minutes",
+   "infobox_page": "A Brighter Summer Day",
+   "infobox_all": [
+    237
+   ],
+   "infobox_cuts": [
+    [
+     237,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -948,7 +2120,21 @@
    "qid": "Q1546792",
    "en": "A Matter of Life and Death (1946 film)",
    "wd_year": 1946,
-   "min": 108
+   "min": 108,
+   "infobox_min": 104,
+   "infobox_figures": 1,
+   "infobox_raw": "104 minutes",
+   "infobox_page": "A Matter of Life and Death (1946 film)",
+   "infobox_all": [
+    104
+   ],
+   "infobox_cuts": [
+    [
+     104,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -960,7 +2146,21 @@
    "qid": "Q734672",
    "en": "Céline and Julie Go Boating",
    "wd_year": 1974,
-   "min": 193
+   "min": 193,
+   "infobox_min": 192,
+   "infobox_figures": 1,
+   "infobox_raw": "192 minutes",
+   "infobox_page": "Céline and Julie Go Boating",
+   "infobox_all": [
+    192
+   ],
+   "infobox_cuts": [
+    [
+     192,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -972,7 +2172,21 @@
    "qid": "Q2707428",
    "en": "King Lear (1987 film)",
    "min": 90,
-   "wd_year": 1987
+   "wd_year": 1987,
+   "infobox_min": 90,
+   "infobox_figures": 1,
+   "infobox_raw": "90 minutes",
+   "infobox_page": "King Lear (1987 film)",
+   "infobox_all": [
+    90
+   ],
+   "infobox_cuts": [
+    [
+     90,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -984,7 +2198,21 @@
    "qid": "Q45602",
    "en": "Modern Times (film)",
    "wd_year": 1936,
-   "min": 99
+   "min": 99,
+   "infobox_min": 87,
+   "infobox_figures": 1,
+   "infobox_raw": "87 minutes",
+   "infobox_page": "Modern Times (film)",
+   "infobox_all": [
+    87
+   ],
+   "infobox_cuts": [
+    [
+     87,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -996,7 +2224,21 @@
    "qid": "Q193570",
    "en": "Sunset Boulevard (film)",
    "wd_year": 1950,
-   "min": 110
+   "min": 110,
+   "infobox_min": 110,
+   "infobox_figures": 1,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "Sunset Boulevard (film)",
+   "infobox_all": [
+    110
+   ],
+   "infobox_cuts": [
+    [
+     110,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 78,
@@ -1009,7 +2251,21 @@
    "en": "Sátántangó",
    "wd_year": 1994,
    "min": 439,
-   "min_src": "infobox"
+   "min_src": "infobox",
+   "infobox_min": 439,
+   "infobox_figures": 1,
+   "infobox_raw": "439 minutes",
+   "infobox_page": "Sátántangó",
+   "infobox_all": [
+    439
+   ],
+   "infobox_cuts": [
+    [
+     439,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 85,
@@ -1021,7 +2277,21 @@
    "qid": "Q660950",
    "en": "Blue Velvet (film)",
    "wd_year": 1986,
-   "min": 121
+   "min": 121,
+   "infobox_min": 120,
+   "infobox_figures": 1,
+   "infobox_raw": "120 minutes",
+   "infobox_page": "Blue Velvet (film)",
+   "infobox_all": [
+    120
+   ],
+   "infobox_cuts": [
+    [
+     120,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 85,
@@ -1033,7 +2303,21 @@
    "qid": "Q938851",
    "en": "Pierrot le Fou",
    "wd_year": 1965,
-   "min": 110
+   "min": 110,
+   "infobox_min": 110,
+   "infobox_figures": 1,
+   "infobox_raw": "110 minutes",
+   "infobox_page": "Pierrot le Fou",
+   "infobox_all": [
+    110
+   ],
+   "infobox_cuts": [
+    [
+     110,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 85,
@@ -1045,7 +2329,21 @@
    "qid": "Q2290517",
    "en": "The Spirit of the Beehive",
    "wd_year": 1973,
-   "min": 98
+   "min": 98,
+   "infobox_min": 99,
+   "infobox_figures": 1,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "The Spirit of the Beehive",
+   "infobox_all": [
+    99
+   ],
+   "infobox_cuts": [
+    [
+     99,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 88,
@@ -1057,7 +2355,21 @@
    "qid": "Q766263",
    "en": "Chungking Express",
    "wd_year": 1994,
-   "min": 102
+   "min": 102,
+   "infobox_min": 98,
+   "infobox_figures": 1,
+   "infobox_raw": "98 minutes",
+   "infobox_page": "Chungking Express",
+   "infobox_all": [
+    98
+   ],
+   "infobox_cuts": [
+    [
+     98,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 88,
@@ -1069,7 +2381,31 @@
    "qid": "Q186341",
    "en": "The Shining (film)",
    "wd_year": 1980,
-   "min": 144
+   "min": 144,
+   "infobox_min": 146,
+   "infobox_figures": 3,
+   "infobox_raw": "plainlist | | 146 minutes (premiere) | 144 minutes (United States) | 119 minutes (Europe)",
+   "infobox_page": "The Shining (film)",
+   "infobox_all": [
+    146,
+    144,
+    119
+   ],
+   "infobox_cuts": [
+    [
+     146,
+     "premiere"
+    ],
+    [
+     144,
+     "United States"
+    ],
+    [
+     119,
+     "Europe"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 90,
@@ -1081,7 +2417,21 @@
    "qid": "Q1444707",
    "en": "The Earrings of Madame de...",
    "wd_year": 1953,
-   "min": 105
+   "min": 105,
+   "infobox_min": 105,
+   "infobox_figures": 1,
+   "infobox_raw": "105 minutes",
+   "infobox_page": "The Earrings of Madame de...",
+   "infobox_all": [
+    105
+   ],
+   "infobox_cuts": [
+    [
+     105,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 90,
@@ -1093,7 +2443,21 @@
    "qid": "Q61448040",
    "en": "Parasite (2019 film)",
    "wd_year": 2019,
-   "min": 132
+   "min": 132,
+   "infobox_min": 132,
+   "infobox_figures": 1,
+   "infobox_raw": "132 minutes",
+   "infobox_page": "Parasite (2019 film)",
+   "infobox_all": [
+    132
+   ],
+   "infobox_cuts": [
+    [
+     132,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 90,
@@ -1105,7 +2469,36 @@
    "qid": "Q596623",
    "en": "The Leopard (1963 film)",
    "wd_year": 1963,
-   "min": 183
+   "min": 183,
+   "infobox_min": 195,
+   "infobox_figures": 4,
+   "infobox_raw": "ubl | | 195 minutes (Cannes cut) | 185 minutes (Italian cut) | 171 minutes (European cut) | 161 minutes (U.S. cut)",
+   "infobox_page": "The Leopard (1963 film)",
+   "infobox_all": [
+    195,
+    185,
+    171,
+    161
+   ],
+   "infobox_cuts": [
+    [
+     195,
+     "Cannes cut"
+    ],
+    [
+     185,
+     "Italian cut"
+    ],
+    [
+     171,
+     "European cut"
+    ],
+    [
+     161,
+     "U.S. cut"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 90,
@@ -1117,7 +2510,21 @@
    "qid": "Q1076605",
    "en": "Ugetsu",
    "wd_year": 1953,
-   "min": 96
+   "min": 96,
+   "infobox_min": 96,
+   "infobox_figures": 1,
+   "infobox_raw": "96 minutes",
+   "infobox_page": "Ugetsu",
+   "infobox_all": [
+    96
+   ],
+   "infobox_cuts": [
+    [
+     96,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 90,
@@ -1129,7 +2536,21 @@
    "qid": "Q704513",
    "en": "Yi Yi",
    "wd_year": 2000,
-   "min": 173
+   "min": 173,
+   "infobox_min": 173,
+   "infobox_figures": 1,
+   "infobox_raw": "173 minutes",
+   "infobox_page": "Yi Yi",
+   "infobox_all": [
+    173
+   ],
+   "infobox_cuts": [
+    [
+     173,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 95,
@@ -1141,7 +2562,21 @@
    "qid": "Q2385009",
    "en": "A Man Escaped",
    "wd_year": 1956,
-   "min": 100
+   "min": 100,
+   "infobox_min": 99,
+   "infobox_figures": 1,
+   "infobox_raw": "99 minutes",
+   "infobox_page": "A Man Escaped",
+   "infobox_all": [
+    99
+   ],
+   "infobox_cuts": [
+    [
+     99,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 95,
@@ -1153,7 +2588,21 @@
    "qid": "Q3211102",
    "en": "Black Girl (1966 film)",
    "wd_year": 1966,
-   "min": 65
+   "min": 65,
+   "infobox_min": 65,
+   "infobox_figures": 1,
+   "infobox_raw": "65 minutes",
+   "infobox_page": "Black Girl (1966 film)",
+   "infobox_all": [
+    65
+   ],
+   "infobox_cuts": [
+    [
+     65,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 95,
@@ -1165,7 +2614,21 @@
    "qid": "Q25136235",
    "en": "Get Out",
    "wd_year": 2017,
-   "min": 104
+   "min": 104,
+   "infobox_min": 104,
+   "infobox_figures": 1,
+   "infobox_raw": "104 minutes",
+   "infobox_page": "Get Out",
+   "infobox_all": [
+    104
+   ],
+   "infobox_cuts": [
+    [
+     104,
+     ""
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 95,
@@ -1177,7 +2640,31 @@
    "qid": "Q168154",
    "en": "Once Upon a Time in the West",
    "wd_year": 1968,
-   "min": 165
+   "min": 165,
+   "infobox_min": 171,
+   "infobox_figures": 3,
+   "infobox_raw": "Plainlist | | 171 minutes (Italian version) | 165 minutes (international version) | 140 minutes (American theatrical version)",
+   "infobox_page": "Once Upon a Time in the West",
+   "infobox_all": [
+    171,
+    165,
+    140
+   ],
+   "infobox_cuts": [
+    [
+     171,
+     "Italian version"
+    ],
+    [
+     165,
+     "international version"
+    ],
+    [
+     140,
+     "American theatrical version"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 95,
@@ -1189,7 +2676,21 @@
    "qid": "Q850159",
    "en": "The General (1926 film)",
    "wd_year": 1926,
-   "min": 75
+   "min": 75,
+   "infobox_min": 79,
+   "infobox_figures": 1,
+   "infobox_raw": "79 minutes (8 reels) small | (times vary with different versions)",
+   "infobox_page": "The General (1926 film)",
+   "infobox_all": [
+    79
+   ],
+   "infobox_cuts": [
+    [
+     79,
+     "8 reels) small (times vary with different versions"
+    ]
+   ],
+   "infobox_range": false
   },
   {
    "rank": 95,
@@ -1201,7 +2702,21 @@
    "qid": "Q594131",
    "en": "Tropical Malady",
    "wd_year": 2004,
-   "min": 118
+   "min": 118,
+   "infobox_min": 125,
+   "infobox_figures": 1,
+   "infobox_raw": "125 minutes",
+   "infobox_page": "Tropical Malady",
+   "infobox_all": [
+    125
+   ],
+   "infobox_cuts": [
+    [
+     125,
+     ""
+    ]
+   ],
+   "infobox_range": false
   }
  ]
 }

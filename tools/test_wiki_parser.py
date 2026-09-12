@@ -1,5 +1,6 @@
 """Pins for the seven CLU-167 parser defects, the two found fixing them, the six
-found in the fix, and the two the review of those six found still standing.
+found in the fix, the two the review of those six found still standing, and the
+two runtime readers CLU-178 added or changed.
 
     python tools/test_wiki_parser.py
 
@@ -36,8 +37,15 @@ is why each one names the rule it is standing in for. Run this file against
 005d1ee's gwlib/wiki.py and exactly the five round-3 tests below fail, while the
 other 33 pass — which is the whole claim a pin is making.
 
+The last section is not about the episode parser at all. It pins
+gwlib.wikidata's P2047 reader and gwlib.runtime's infobox rule, which are what
+CLU-178 left behind, and it lives here because this file is the only thing the
+`check` workflow runs — a pin nothing executes is how four rounds of parser
+fixes each shipped a regression.
+
 The fixtures in tools/data/wiki_fixtures/ are verbatim excerpts of the real
-articles, one per case. They are tracked deliberately: the test is worthless
+articles, one per case, plus p2047-statements.json, which is three real
+Wikidata items' P2047 statements recorded as the API returned them. They are tracked deliberately: the test is worthless
 without them, and a test that passes only on the machine that wrote it is the
 "someone else pulls the repo and runs it" failure this project has paid for.
 Every count quoted in a docstring here is over these tracked fixtures and is
@@ -45,18 +53,25 @@ re-derived by the check beside it; counts over the gitignored corpus of cached
 articles live in tools/measure_wiki_parser.py, which prints them rather than
 remembering them.
 """
+import json
 import pathlib
 import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from gwlib import runtime as RT  # noqa: E402
 from gwlib import wiki  # noqa: E402
+from gwlib import wikidata as WD  # noqa: E402
 
 FIX = pathlib.Path(__file__).resolve().parent / "data" / "wiki_fixtures"
 
 
 def fixture(name):
     return (FIX / (name + ".wiki")).read_text(encoding="utf-8")
+
+
+def fixture_json(name):
+    return json.loads((FIX / (name + ".json")).read_text(encoding="utf-8"))
 
 
 # --------------------------------------------------------------------------
@@ -339,6 +354,70 @@ def test_numparts_alone_does_not_trigger_the_suffix_read():
     eq(f["NumParts"], "5", "five broadcasts")
     ok("EpisodeNumber_1" not in f, "but no suffixed numbers")
     eq(wiki.numbers(f), [44], "one episode number, not five and not none")
+
+
+# --------------------------------------------------------------------------
+# 3c. a FRACTIONAL EpisodeNumber collided with the real episode (CLU-256)
+# --------------------------------------------------------------------------
+def test_a_fractional_episode_number_does_not_collide_with_the_whole_one():
+    r"""Vinland Saga's season 2 files its two shorts in a table of their own,
+    numbered **30.5** and **42.5**, beside a season that also has a real
+    episode 30 and a real episode 42.
+
+    `int(re.search(r"\d+", v).group(0))` reads 30.5 as 30, so the page came
+    back with TWO rows numbered 30 and two numbered 42 — different titles,
+    different airdates, nothing complaining. That is the whole of CLU-256, and
+    it is nastier than the `53<hr>54` case above (3a) because nothing is
+    missing: a duplicate number in the middle of a 24-episode season looks like
+    a season, and both rows carry a real title and a real date. The Vinland
+    build caught it only because its parse returned 26 blocks where the source
+    says 24 and the generator asserted the count three ways.
+
+    Round 2 of CLU-167 settled it by giving numbers() a decimal part instead of
+    an opt-in flag, which is why the two halves come back as floats and the two
+    whole episodes stay ints. That is strictly better than the raise CLU-256
+    asked for: a caller wanting whole episodes only can test the type, a caller
+    placing the short deliberately has the number the source actually wrote,
+    and no generator needs an `allow_fractional=True` at the call site.
+
+    Section 3a pins the same reader losing a number; this pins it inventing a
+    COLLISION, which no other fixture here exercises — Attack on Titan's 3.5,
+    3.25 and 3.75 (B3) sit on a page with no episode 3 of their own to collide
+    with, so they cannot show this.
+    """
+    t = fixture("vinland-saga-s2-shorts-collide")
+    rows = [wiki.template_fields(b) for b in wiki.templates(t, "Episode list")]
+    eq([r["EpisodeNumber"] for r in rows], ["30", "42", "30.5", "42.5"],
+       "the source's own numbering: two episodes and two shorts")
+    eq([r["EpisodeNumber2"] for r in rows], ["6", "18", "6.5", "18.5"],
+       "and in-season, halves and all")
+
+    # the before-photograph: the same four rows under the reader that had the bug
+    eq([_old_num(r["EpisodeNumber"]) for r in rows], [30, 42, 30, 42],
+       "5ad60de: the shorts become duplicates of the episodes they sit between")
+    ok(len({_old_num(r["EpisodeNumber"]) for r in rows}) == 2,
+       "which is four rows carrying two numbers, and nothing said so")
+
+    eq([wiki.numbers(r) for r in rows], [[30], [42], [30.5], [42.5]],
+       "now: one number each, as written")
+    eq([wiki.numbers(r, "EpisodeNumber2") for r in rows],
+       [[6], [18], [6.5], [18.5]], "in-season too")
+
+    eps = wiki.episodes(t)
+    eq(len(eps), 4, "four rows, which is what the source has")
+    eq([e.num_overall for e in eps], [30, 42, 30.5, 42.5],
+       "the 5-tuple reports the row's own number")
+    eq([e.num_in_season for e in eps], [6, 18, 6.5, 18.5], "and in-season")
+    eq(len({e.num_overall for e in eps}), 4,
+       "four distinct numbers — the collision cannot happen")
+    ok(all(isinstance(e.num_overall, int) for e in eps[:2]),
+       "the two whole episodes are still ints")
+    ok(all(isinstance(e.num_overall, float) for e in eps[2:]),
+       "and the two shorts keep their half")
+    eq([e.title for e in eps[2:]], ["Drowning in the Shadow", "Same old story"],
+       "and neither short lost its title to the episode it collided with")
+    eq(eps[0].title, 'I Want a Horse" / "We Need a Horse',
+       "the real episode 30 is untouched, stray source quotes and all")
 
 
 # --------------------------------------------------------------------------
@@ -1154,6 +1233,160 @@ def test_infobox_is_untouched():
     eq(ib("gross"), "", "an empty field is still empty, not the line below")
     eq(ib("budget"), "$1", "and the line below is still itself")
     eq(wiki.infobox("{{Infobox album\n|x=1\n}}"), None, "still gated by kind")
+
+
+# --------------------------------------------------------------------------
+# E. the runtime readers (CLU-178): what P2047 cannot tell you, and the rule
+#    that replaced it
+# --------------------------------------------------------------------------
+MINUTE = "http://www.wikidata.org/entity/Q7727"
+HOUR = "http://www.wikidata.org/entity/Q25235"
+SECOND = "http://www.wikidata.org/entity/Q11574"
+
+
+def _st(amount, unit=MINUTE, rank="normal", part=None):
+    """One P2047 statement, shaped as the API returns it. Synthetic, and used
+    only where a rule needs isolating; every rule below is also shown against
+    the real statements in p2047-statements.json."""
+    st = {"mainsnak": {"datavalue": {"value": {"amount": "+%s" % amount,
+                                               "unit": unit},
+                                     "type": "quantity"}},
+          "rank": rank}
+    if part:
+        st["qualifiers"] = {"P518": [{"datavalue": {"value": {"id": part}}}]}
+    return st
+
+
+def _old_runtime(claims, lo=15, hi=250):
+    """gwlib.wikidata.runtime() as it was before CLU-178: the longest `amount`
+    in range, with rank, the applies-to-part qualifier and the UNIT all
+    unread."""
+    best = None
+    for st in (claims or {}).get("P2047", []):
+        try:
+            v = float(st["mainsnak"]["datavalue"]["value"]["amount"].lstrip("+"))
+        except (KeyError, TypeError, ValueError):
+            continue
+        if lo <= v <= hi and (best is None or v > best):
+            best = v
+    return int(round(best)) if best else None
+
+
+def test_the_p2047_reader_now_reads_rank_qualifier_and_unit():
+    """Three real items, recorded from the Wikidata API.
+
+    One Battle After Another (Q117085614) is the item CLU-178 named: two
+    deprecated approximations and one preferred precise value. What the card did
+    not know is that the preferred one is stated in SECONDS, so the old reader,
+    which read `amount` and ignored `unit`, saw 9691, threw it out as
+    implausible, and answered from a DEPRECATED statement instead. It got a
+    defensible number by luck, because 9691 seconds is 161.5 minutes and both
+    that and the deprecated 162 round to 162.
+    """
+    items = fixture_json("p2047-statements")
+    obaa = {"P2047": items["Q117085614"]}
+
+    eq([round(m, 3) for m, _r, _p in WD.runtime_values(obaa)],
+       [161.0, 162.0, 161.517], "every figure, units applied")
+    eq([r for _m, r, _p in WD.runtime_values(obaa)],
+       ["deprecated", "deprecated", "preferred"], "and its rank, as stated")
+    eq([float(st["mainsnak"]["datavalue"]["value"]["amount"])
+        for st in items["Q117085614"]], [161.0, 162.0, 9691.0],
+       "the old reader read the preferred value as 9691 minutes")
+    eq(_old_runtime(obaa), 162,
+       "so it answered from a DEPRECATED statement, the preferred one unread")
+    eq(WD.runtime(obaa), 162, "now: the preferred value, converted from seconds")
+
+    # the unit rule, isolated
+    eq(WD.runtime({"P2047": [_st(2, HOUR)]}), 120, "hours become minutes")
+    eq(WD.runtime({"P2047": [_st(7200, SECOND)]}), 120, "and so do seconds")
+    unknown = {"P2047": [_st(100, "http://www.wikidata.org/entity/Q99")]}
+    eq(WD.runtime(unknown), None,
+       "an unknown unit is refused, not assumed to be minutes")
+    eq(_old_runtime(unknown), 100, "which the old reader did assume")
+
+    # the rank rule, isolated: a deprecated value can no longer win on length
+    mixed = {"P2047": [_st(240, rank="deprecated"), _st(100, rank="preferred")]}
+    eq(_old_runtime(mixed), 240, "old: the longest, deprecated or not")
+    eq(WD.runtime(mixed), 100, "now: the preferred one, whatever its length")
+    eq(WD.runtime({"P2047": [_st(240, rank="deprecated"), _st(100)]}), 100,
+       "and a deprecated statement is dropped even with nothing preferred")
+
+    # the qualifier rule, isolated, and Legend is the row that needed it
+    legend = {"P2047": items["Q509913"]}
+    eq([(m, p) for m, _r, p in WD.runtime_values(legend)],
+       [(114.0, "Q240862"), (125.0, None)],
+       "Legend says 114 minutes APPLIES TO the director's cut (Q240862)")
+    cut_is_longest = {"P2047": [_st(200, part="Q240862"), _st(125)]}
+    eq(_old_runtime(cut_is_longest), 200, "old: the director's cut, as the film")
+    eq(WD.runtime(cut_is_longest), 125, "now: the unqualified value")
+    eq(WD.runtime(cut_is_longest, parts=True), 200,
+       "and a caller that wants the cut has to ask for it")
+
+
+def test_rank_and_qualifier_cannot_rescue_the_two_rows_that_found_the_bug():
+    """The finding of CLU-178, pinned so it cannot be quietly forgotten: the fix
+    the card prescribed does not fix either row that prompted it.
+
+    Blade Runner carries 112 and 116 as two `normal` statements with no
+    qualifier to separate them, so no rank rule can choose between them, and the
+    film's own article says 117, cited to the BBFC. Legend's wrong figure is the
+    UNQUALIFIED one, so setting the director's cut aside leaves it standing.
+    That is why weights in this catalogue come from infoboxes.
+    """
+    items = fixture_json("p2047-statements")
+    br = {"P2047": items["Q184843"]}
+    eq([(m, r, p) for m, r, p in WD.runtime_values(br)],
+       [(112.0, "normal", None), (116.0, "normal", None)],
+       "two bare numbers, equally ranked, neither of them 117")
+    eq(_old_runtime(br), 116, "the old reader: the longer of the two")
+    eq(WD.runtime(br), 116, "and the rank-aware one: the same, unavoidably")
+
+    legend = {"P2047": items["Q509913"]}
+    eq(_old_runtime(legend), 125, "the old reader: an assembly cut")
+    eq(WD.runtime(legend), 125,
+       "and the qualifier-aware one: still 125, because 125 is unqualified")
+
+
+def test_the_infobox_rule_picks_the_release_and_declines_when_it_cannot():
+    """gwlib.runtime.weigh(), against the boxes that set each of its clauses.
+    Every list of figures below is what the named film's own article prints."""
+    eq(RT.weigh([(117, "")]), (117, "the only figure the box prints"),
+       "Blade Runner: one figure, and it is the answer")
+
+    eq(RT.weigh([(89, "US version"), (93, "European version"),
+                 (114, "director's cut")])[0], 89,
+       "Legend: the release, not the cut, which is the row CLU-178 opened on")
+    eq(RT.weigh([(91, "theatrical version"),
+                 (114, "The Complete Novel")])[0], 91,
+       "The Outsiders: not the re-edit")
+    eq(RT.weigh([(140, ""), (170, "Extended cut")])[0], 140,
+       "Far and Away: not the extended cut")
+    eq(RT.weigh([(205, "first cut"), (183, "final cut")])[0], 183,
+       "Andrei Rublev: a first cut is not a release, a final cut is the film")
+    eq(RT.weigh([(195, "Cannes cut"), (185, "Italian cut"),
+                 (171, "European cut"), (161, "U.S. cut")])[0], 185,
+       "The Leopard: the festival cut steps aside, the territories do not")
+    eq(RT.weigh([(146, "premiere"), (144, "United States"),
+                 (119, "Europe")])[0], 144,
+       "The Shining: the withdrawn premiere cut steps aside")
+    eq(RT.weigh([(110, "20 fps"), (82, "24 fps")])[0], 82,
+       "The Passion of Joan of Arc: a silent film at the speed it is shown at")
+    eq(RT.weigh([(147, "70 mm"), (153, "35 mm")])[0], 147,
+       "Apocalypse Now: a format is not a cut, so the box's own order stands")
+    eq(RT.weigh([(105, "Italy"), (88, "France"), (80, "US"),
+                 (70, "UK")])[0], 105,
+       "Journey to Italy: nor is a territory")
+
+    ok(RT.weigh([(126, "different sources")], range_stated=True)[0] is None,
+       "Pather Panchali: the article says sources disagree, so this declines")
+    ok(RT.weigh([])[0] is None, "and a box with no figure settles nothing")
+    only_a_cut = RT.weigh([(170, "Extended cut")])
+    ok(only_a_cut[0] is None,
+       "a box printing ONLY a cut settles nothing either, rather than falling "
+       "back to shipping the cut")
+    ok("extended" in only_a_cut[1],
+       "and it says which figure it set aside: %r" % (only_a_cut[1],))
 
 
 # --------------------------------------------------------------------------
