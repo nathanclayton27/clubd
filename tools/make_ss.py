@@ -129,12 +129,21 @@ NO_Q = {
 # figure its own prose gives. The row was weighing 90 minutes, so this list was
 # under-counting a four-and-a-half-hour work by nearly three hours.
 #
-# The PRINTED YEAR is wrong for exactly the same reason and is deliberately NOT
-# corrected here: the year is inside `ss-1987-histoire-s-du-cinema`, which is
-# where every tick on this row is stored, and the two candidate right answers
-# (the BFI’s 1988, Wikidata’s 1998) both move it. That is a decision, on CLU-541,
-# not an edit — and PINNED_IDS below makes the rename impossible to do by
-# accident in the meantime.
+# The PRINTED YEAR was wrong for exactly the same reason, and is now corrected
+# — but only where it is READ, never where it is STORED. Nathan ruled on
+# CLU-541: "yeah looks good. i like your recc. print whatever makes the most
+# sense". The recommendation he took was to print the BFI's own 1988, because
+# this list is that poll and the poll's entry says 1988, and to leave the id
+# alone.
+#
+# ⚠ The id and the printed year are DIFFERENT THINGS and this row is why.
+# `ss-1987-histoire-s-du-cinema` is where every tick on this row is stored, on
+# accounts, in clubs, in the thumbs, in the event log and in each device's own
+# local copy — and the local copy cannot be reached by any database fix. Worse
+# since tonight: cross-list sync would carry an old id back from any device that
+# still held it, so the rename would not even stay done. Ids are plumbing and
+# nobody sees them; the year on the page is what a person reads. PRINTED_YEAR
+# below separates the two, and PINNED_IDS asserts the id did not follow.
 WRONG_INFOBOX = {
     # title: (the right box’s figure, the box it was read from,
     #         the box it should have been read from, what the rule says today)
@@ -149,6 +158,15 @@ WRONG_INFOBOX = {
 PINNED_IDS = [
     "ss-1987-histoire-s-du-cinema",
 ]
+
+# title: (the year to PRINT, the year the id must keep). The second half is the
+# guard: if the collector ever starts reporting a different year for this film
+# the id would move on the next run and silently untick everyone who has it, so
+# the script stops instead. An override that has quietly stopped matching what
+# it overrides is worse than no override.
+PRINTED_YEAR = {
+    "Histoire(s) du Cinéma": (1988, 1987),
+}
 
 # The one row where the infobox rule needs overruling, with its reason and the
 # answer the rule gives, asserted — an exception that has silently stopped
@@ -257,7 +275,11 @@ def main():
         items = []
         for f in got:
             year = f.get("wd_year") or f["year"]
-            note = "%s, %d" % (f["director"], year)
+            shown = year
+            if f["t"] in PRINTED_YEAR:
+                shown, pinned = PRINTED_YEAR[f["t"]]
+                assert year == pinned, (f["t"], year, pinned)
+            note = "%s, %d" % (f["director"], shown)
             it = {"id": "ss-%d-%s" % (year, slug(f["t"])),
                   "t": f["t"],
                   "n": ("=%d" % f["rank"]) if f["tie"] else "#%d" % f["rank"],
