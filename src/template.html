@@ -192,6 +192,13 @@ h1 em{font-style:normal;color:var(--signal)}
   height:var(--layerH,35px);align-items:flex-end;margin:0}
 .stackrow .tick.on{align-self:flex-start;height:var(--fillH)}
 .stackrow .tick.veil{background:transparent}
+/* The tour's own lit row (CLU-381). `.act` reveals a row's controls only where
+   there is no hover to do it, so on a desktop the tour was naming a catch-up
+   button and two thumbs that were `display:none` and `opacity:0`. This shows
+   exactly what hovering would, and nothing else sets this class. */
+#list li.tourlit .catch{display:inline-block}
+#list li.tourlit .thb:not(.sec){opacity:.6}
+#list li.tourlit .drill{opacity:1}
 .pacer{position:absolute;top:-5px;bottom:-5px;width:1px;background:var(--ink-3);z-index:60;pointer-events:none}
 .pacer::before{content:"";position:absolute;top:0;left:-2px;width:5px;height:5px;background:var(--ink-3)}
 /* The legend is the roster now (CLU-52). It used to be a wrapped line under
@@ -1349,6 +1356,9 @@ footer a{color:var(--steel)}
   font-weight:600;letter-spacing:.01em}
 .mhead .mcount{font-size:11px;color:var(--ink-3)}
 .msub{margin:3px 0 11px;font-size:12px;color:var(--ink-3);max-width:62ch}
+/* the wall's own heading, when a mega row sits above it */
+.mhead.whead{margin:0 0 11px}
+.mhead .wtally{font-size:11px;color:var(--ink-3)}
 .wchips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 8px}
 /* tonight + the medium chips share one row: the chips scope BOTH the
    random pick and the catalogue below */
@@ -10673,7 +10683,15 @@ function renderWall(host, externalChips){
           + '<div class="cards mega">'
           + mega.map(m=> cardHTML(m, null, true)).join('') + '</div></div>'
         : '')
-    + '<div class="wtally"></div>'
+    // ⚠ The tally belongs to the WALL, and with a mega row above it, it was
+    // floating between two grids belonging to neither — Nathan: "this is a bit
+    // stylistically inconsistent". It sits in a heading of its own now, the
+    // same shape as the mega row's, so the page reads as two labelled regions
+    // rather than one grid interrupted by a caption.
+    + (mega.length
+        ? '<div class="mhead whead">The catalogue'
+          + '<span class="mono wtally"></span></div>'
+        : '<div class="wtally"></div>')
     + '<div class="cards wall">' + rest.map(m=> cardHTML(m, null, true)).join('') + '</div>';
   wireCards(host);
   // the index may already be in, in which case these bars can count hours
@@ -12659,19 +12677,36 @@ function tourSteps(){
   // A row that is being pointed at shows its own catch-up control, the way a
   // touch device arms it. Without this the panel talked about a button that was
   // not on screen — "no display of the catch up to here button".
+  // ⚠ `.act` IS NOT ENOUGH ON A DESKTOP, and two panels were describing
+  // controls that were not on screen because of it. Measured on an armed row
+  // with a pointer-capable browser: the catch-up button is `display: none` and
+  // the thumbs are `opacity: 0`, because the rules that reveal them for `.act`
+  // live inside a touch-device media block — on a desktop only :hover reveals
+  // them, and the tour has no pointer to hover with.
+  //
+  // Nathan saw both: "still isn't highlighting or showing the catch up to here
+  // button", and the row panel names two thumbs on a row that shows none.
+  //
+  // `.tourlit` is the tour's own affordance rather than a change to what `.act`
+  // means, so tapping and hovering keep behaving exactly as they did.
   const armed = el=>{
     if(el && el.tagName === 'LI'){
       try{
-        document.querySelectorAll('#list li.act').forEach(x=> x.classList.remove('act'));
-        el.classList.add('act');
+        document.querySelectorAll('#list li.act, #list li.tourlit')
+          .forEach(x=> x.classList.remove('act', 'tourlit'));
+        el.classList.add('act', 'tourlit');
       }catch(e){}
     }
     return el;
   };
   // the club tile if it is drawn, else the switcher that opens it
+  // ⚠ NO FALLBACK TO #b-prop. That is the list switcher, and a panel about
+  // groups and clubs ringing the list's own name is worse than no panel: it
+  // teaches the reader that the thing being described lives somewhere it does
+  // not. If the club tile is genuinely absent, this step has nothing honest to
+  // point at and drops out, which is the same rule every other step follows.
   const clubAnchor = ()=> (tourVisible($('gpanel')) ? $('gpanel') : null)
-    || (tourVisible($('gjoined')) ? $('gjoined') : null)
-    || $('b-prop');
+    || (tourVisible($('gjoined')) ? $('gjoined') : null);
   return [
     {el: ()=> $('strip'),
      t: 'This bar is you',
@@ -12743,8 +12778,15 @@ function tourSteps(){
         + ' this bar is telling you.'},
     {el: ()=> $('b-prop'),
      t: 'Everything else is in here',
-     b: browseList().length + ' more lists. Start typing and it searches every'
-        + ' one of them, and the rows inside them too.'}
+     // Counted at the moment the tour starts, from the same list the wall and
+     // the catalogue count read, so it cannot go stale against them.
+     b: browseList().length + ' more lists'
+        + (MANIFEST.filter(m=> m.mega).length
+            ? ', with the mega lists — the ones whose rows are whole runs rather'
+              + ' than single sittings — in a row of their own at the top'
+            : '')
+        + '. Start typing and it searches every one of them, and the rows'
+        + ' inside them too.'}
   ];
 }
 
@@ -12973,7 +13015,17 @@ function tourReady(){
   // without asking for it the panel would be gated off everywhere and the gate
   // would look like the feature. Ask, then wait.
   try{ ensureIndex(); }catch(e){ return true; }
-  return !!GWIX;
+  if(!GWIX) return false;
+  // ⚠ And the club tile, because it arrives on a cloud round trip and the tour
+  // resolves every anchor ONCE at the start. Nathan: "wrong selector for step
+  // 3" — with #gpanel still hidden, clubAnchor() fell through to the list
+  // switcher, so the panel rang the words "The Wire" while saying "Both live
+  // behind this tile". Waiting is bounded by tourStart's own retry cap: if the
+  // tile never comes, the step drops out rather than pointing at the nearest
+  // thing that happened to be on screen.
+  const gp = $('gpanel');
+  if(CLOUD && gp && gp.classList.contains('hide')) return false;
+  return true;
 }
 function tourStart(tries){
   if(tourOn) return;
