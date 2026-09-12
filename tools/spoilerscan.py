@@ -63,11 +63,42 @@ amazing-spider-man's "Stern's finale", which is a creator-run boundary rather
 than a structural one. Deleting those would have destroyed real information
 under cover of a tidy-up.
 
-Nothing here edits a property file. It prints a corpus for review.
+WHAT IT READS, and it used to read less than it claimed. Until CLU-276 this file
+walked section subtitles and item notes and nothing else, so two whole surfaces
+of the site were never scanned: the LIST-LEVEL `notes` array, and section
+`intro`. A provenance note or a "how to use this page" note could carry a reveal
+and the scan would come back clean, because it never opened the array. Both are
+now walked, and the per-scope table prints so a count can be read for what it
+covers.
+
+Section TITLES stay out on purpose: "a section HEADER naming an arc is
+structure, not a spoiler" is Nathan's ruling, and `sub` rides on the same ruling.
+An `intro` does not — rule 08 of the note standard makes it prose for starting
+cold, not a header — so it is judged like any other note.
+
+⚠ THE VERDICTS ON THE TWO NEW SCOPES ARE NOT CALIBRATED, and the counts must not
+be read as though they were. `judge()` was written against terse ROW notes and
+adjudicated there ("All of this looks good", 2026-08-28). A list note and an
+intro are long prose, and the RESURRECT branch matches a bare "return" in any
+sense — so it fires on era names ("the 2010s returns"), work titles ("Samus
+Returns", "Akaza Returns"), production facts ("the rest of the cast return"),
+cancellations ("it would not return for a fifth"), renumberings ("the title
+returns to its legacy count") and a director going back to London. Of the 48
+SPOILER verdicts the two new scopes produce, I read about four as real.
+
+The regex is NOT narrowed here, deliberately: the same branch is what catches a
+genuine resurrection on a row note, Nathan adjudicated those verdicts as they
+stand, and retuning it would quietly invalidate that sign-off. Calibrating for
+long prose is its own job and belongs with CLU-123's corpus run. Until then the
+new scopes are a corpus to read, not a verdict to act on.
+
+Nothing here edits a property file. It prints a corpus for review, and always
+exits 0: none of this gates a build.
 
     python tools/spoilerscan.py            # counts + the cases needing him
     python tools/spoilerscan.py --all      # every candidate with its verdict
 """
+import collections
 import glob
 import io
 import json
@@ -121,6 +152,24 @@ NAMES_PLOT = re.compile(
     r"\b(murderer|killer)\s*:|"
     r"·\s*[A-Z][a-z]+\s+[A-Z][a-z]+,\s+and\s+the\s+end\b|"
     r"\b(and\s+the\s+end\s+of\s+the)\b", re.I)
+
+
+def note_strings(prop):
+    """Every list-level note as one string, heading included.
+
+    A note is either a bare string or a [heading, text] pair, and the heading is
+    display text too — "Death of Superman." as a heading is as visible as it is
+    in a body — so it is scanned rather than dropped.
+    """
+    out = []
+    for n in prop.get("notes") or []:
+        if isinstance(n, list):
+            head = (n[0] if len(n) > 0 else "") or ""
+            body = (n[1] if len(n) > 1 else "") or ""
+            out.append(("%s %s" % (head, body)).strip())
+        elif isinstance(n, str):
+            out.append(n)
+    return [s for s in out if s]
 
 
 def judge(note, kind, where):
@@ -178,6 +227,7 @@ def judge(note, kind, where):
 def main():
     show_all = "--all" in sys.argv
     notes = 0
+    scanned = collections.Counter()
     hits = []
     for p in sorted(glob.glob("properties/*.json")):
         if p.endswith("search.json"):
@@ -190,30 +240,53 @@ def main():
             continue
         slug = os.path.basename(p)[:-5]
         kind = d.get("kind") or ""
+        # Every display string a reader can see, in the four scopes that carry
+        # prose. `list` and `intro` were the blind spot; see the docstring.
+        scoped = [("list", t) for t in note_strings(d)]
         for s in d.get("sections") or []:
-            for where, text in ([("section", s.get("sub") or "")]
-                                + [("item", (r.get("note") or ""))
-                                   for r in (s.get("items") or [])]):
-                if not text:
-                    continue
-                notes += 1
-                if REVEAL.search(text):
-                    v, why, ask = judge(text, kind, where)
-                    hits.append((slug, kind, where, text, v, why, ask))
+            scoped.append(("section", s.get("sub") or ""))
+            scoped.append(("intro", s.get("intro") or ""))
+            scoped += [("item", (r.get("note") or ""))
+                       for r in (s.get("items") or [])]
+        for where, text in scoped:
+            if not text:
+                continue
+            notes += 1
+            scanned[where] += 1
+            if REVEAL.search(text):
+                v, why, ask = judge(text, kind, where)
+                hits.append((slug, kind, where, text, v, why, ask))
 
     print("notes scanned      : %d" % notes)
+    print("   by scope        : %s"
+          % ", ".join("%s %d" % (k, scanned[k])
+                      for k in ("list", "section", "intro", "item")))
     print("reveal-word hits   : %d across %d lists"
           % (len(hits), len({h[0] for h in hits})))
     for v in ("SPOILER", "fine", "structure", "review"):
         print("   %-10s %d" % (v, len([h for h in hits if h[4] == v])))
+    print("   by scope        : %s"
+          % ", ".join("%s %d" % (k, len([h for h in hits if h[2] == k]))
+                      for k in ("list", "section", "intro", "item")))
+    raw = len([h for h in hits if h[2] in ("list", "intro")])
+    if raw:
+        print("   ^ %d of those are in `list`/`intro`, scopes opened by CLU-276 "
+              "and NOT yet adjudicated" % raw)
+        print("     (see the docstring: on long prose the return/resurrection "
+              "branch is mostly false)")
 
     ask = [h for h in hits if h[6]]
     print()
     print("NEEDS A HUMAN: %d across %d lists"
           % (len(ask), len({h[0] for h in ask})))
-    for slug, kind, where, text, v, why, _ in (hits if show_all else ask)[:40]:
+    rows = hits if show_all else ask
+    for slug, kind, where, text, v, why, _ in rows[:40]:
         print("  %-26s %-7s %s" % (slug[:26], where, text[:76]))
         print("       -> %s: %s" % (v, why))
+    # The cap used to truncate in silence, which reads as "that was all of them".
+    if len(rows) > 40:
+        print("  ... %d more not shown (the list is capped at 40)"
+              % (len(rows) - 40))
 
 
 if __name__ == "__main__":

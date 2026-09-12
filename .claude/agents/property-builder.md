@@ -103,12 +103,39 @@ only spot what its rule can see, and it runs after you have gone.
 - WebFetch 403s on scrape targets; use gwlib's urllib-based fetchers.
   DuckDuckGo/Bing are blocked; use `gwlib.wiki.search()`.
 
-## Copy rules
-- Terse and spoiler-free. A note may say what an entry IS (a debut, a
-  finale, a voice role, a posthumous release) — never what HAPPENS in it.
+## Copy rules — the note standard (CLU-275, ruled 2026-08-28)
+Nine rules, derived from `hickman-secret-wars` and `kingdom-hearts` rather than
+asserted. Full text and the reasoning in `scratch/DECISIONS.md`; the enforceable
+half is in `tools/qa_lint.py`, which explains what it can and cannot check.
+- **No plot, ever.** A note may say what an entry IS (a debut, a finale, a
+  voice role, a posthumous release) — never what HAPPENS in it. A quoted arc
+  title and a formal property ("the silent issue") are not plot.
+- **A verdict is allowed sparingly, and only about whether the thing is worth
+  the reader's time.** Not quality in general. "No idea if they're any good" is
+  legal — admitting ignorance beats inventing a verdict. The measured bar is
+  about one note in eight, and the section `sub` carries most of this load.
+- **A row note answers one of four questions and nothing else**: where am I in
+  the run, what do I do (version/format/availability), whose is it, what is it
+  called.
+- **Length scales with how many rows the reader passes.** Past ~100 rows, aim
+  under 60 characters. Not enforced — the catalogue's long notes are mostly
+  deliberate registers — but it is the target.
+- **Repetition is correct.** Never de-duplicate a note for tidiness; someone
+  arriving at issue 40 never read issue 22's note.
+- **Every list ENDS with an unheaded note naming your sources**, in one line.
+  Unheaded is the point: a heading makes it read as one more piece of advice
+  instead of as the colophon. Where you genuinely cannot establish the source,
+  the note says so rather than guessing. `qa_lint` fails a list with no notes
+  at all and notices a headed or source-less last note.
+- **Explain clubd's own machinery only where this list is unusual** — weights,
+  tiers, a pace that excludes a tier, a link that does not go where expected.
+- **A section `intro` is for starting cold**, and most sections do not get one.
+- **A section `sub` is a dateline**: when, then how much it matters, hinged on a
+  middle dot. It is allowed to be blunt.
+
+## Copy mechanics
 - Notes assemble with `gwlib.prop.join_bits()`.
 - Links live on section headers only, never on comic rows.
-- The notes footer names your sources in one line.
 
 ## Before reporting (all mandatory)
 1. Run your generator twice — outputs must be byte-identical (hash them).
