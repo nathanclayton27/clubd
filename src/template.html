@@ -199,6 +199,13 @@ h1 em{font-style:normal;color:var(--signal)}
 #list li.tourlit .catch{display:inline-block}
 #list li.tourlit .thb:not(.sec){opacity:.6}
 #list li.tourlit .drill{opacity:1}
+/* ⚠ BOTH thumbs, because the panel says "the two thumbs on the right" and only
+   one of them was on screen (CLU-515). The secondary sits BEHIND the primary at
+   opacity 0 and slides out when the pair is hovered — the row being armed is not
+   enough, which is the same class of mistake as `.act` not revealing the
+   catch-up button on a desktop. Opened here the way an armed row opens it on a
+   touch device, so the copy's "two" is true while it is on screen. */
+#list li.tourlit .thpair .thb.sec{opacity:.6;right:calc(100% + 6px)}
 .pacer{position:absolute;top:-5px;bottom:-5px;width:1px;background:var(--ink-3);z-index:60;pointer-events:none}
 .pacer::before{content:"";position:absolute;top:0;left:-2px;width:5px;height:5px;background:var(--ink-3)}
 /* The legend is the roster now (CLU-52). It used to be a wrapped line under
@@ -12854,7 +12861,7 @@ function tourListSteps(){
         + ' own all-time record for this list. An untick only lowers the'
         + ' club\'s. Your own record keeps what it already has, which is what'
         + ' this bar is telling you.'},
-    {el: ()=> $('b-prop'),
+    {el: ()=> $('b-prop'), lit: 'top',
      t: 'Everything else is in here',
      // Counted at the moment the tour starts, from the same list the wall and
      // the catalogue count read, so it cannot go stale against them.
@@ -13039,14 +13046,14 @@ function tourBox(el){
 let tourLitEl = null, tourLitAt = -1;
 function tourDark(){
   try{
-    // only rows the TOUR lit. A row the reader armed with a tap carries `.act`
-    // without `.tourlit`, and taking that away would undo their own press.
-    document.querySelectorAll('#list li.tourlit').forEach(x=>{
+    // `.tourlit` is the tour's own class and nothing else ever sets it, so
+    // every one of them is ours to take back. `.act` comes off only where the
+    // tour put it: a row somebody armed with a tap carries `.act` WITHOUT
+    // `.tourlit`, and taking that away would undo their own press.
+    document.querySelectorAll('.tourlit').forEach(x=>{
       x.classList.remove('tourlit');
-      x.classList.remove('act');
+      if(x.tagName === 'LI') x.classList.remove('act');
     });
-    document.querySelectorAll('#friendsv .tourlit')
-      .forEach(x=> x.classList.remove('tourlit'));
   }catch(e){}
   tourLitEl = null; tourLitAt = -1;
 }
@@ -13059,7 +13066,27 @@ function tourLight(el, kind, at){
   if(!el || !kind) return;
   try{
     el.classList.add('tourlit');
+    // ⚠ `.act` is added for the touch-side rules, and it CANNOT be relied on:
+    // a document-level click handler disarms every row the moment anything
+    // outside #list is clicked, which includes the tour's own Next button. So
+    // `.tourlit` carries every reveal the panels depend on and this is only
+    // belt and braces.
     if(kind === 'row') el.classList.add('act');
+    // ⚠ THE MAST SHRINKS WHEN YOU SCROLL, and it takes the list's name and the
+    // magnifier with it (`.mast.mini` hides both). So the catalogue panel —
+    // which says "start typing and it searches every one of them" — was ringing
+    // a bare coloured dot by the time a reader got to it, because getting there
+    // means scrolling past the rows. Going back to the top is what makes the
+    // control the panel names be on screen while it names it.
+    // ⚠ AND THE CLASS COMES OFF BY HAND, not by waiting for the scroll event to
+    // do it. `.mini` is toggled inside a scroll listener, which runs AFTER the
+    // scroll position changes — so a ring measured in this same turn was drawn
+    // around the shrunken dot and only corrected itself on the next scroll
+    // event, if one ever came.
+    if(kind === 'top'){
+      try{ scrollTo(0, 0); }catch(e){}
+      try{ const m = $('mast'); if(m) m.classList.remove('mini'); }catch(e){}
+    }
     tourLitEl = el; tourLitAt = (at === undefined ? tourAt : at);
   }catch(e){}
 }
