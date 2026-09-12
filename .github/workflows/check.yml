@@ -36,6 +36,27 @@ jobs:
       # arriving with no line in the table — which nobody would notice.
       - name: Every list has a genre
         run: python tools/genrecheck.py
+      # CLU-552. Most of properties/ is generated, so a field hand-edited onto
+      # a property file survives only until the next run of its generator, which
+      # rewrites the file from its own dict and drops it — silently, with a green
+      # build. `mega: true` was committed onto five property files and emitted by
+      # none of the five generators; every rebuild dropped those lists off the
+      # home page's mega row. This regenerates every generator-owned list into a
+      # temp tree and compares. Exit 2 is "no new problem, but incomplete" —
+      # recorded debt, or a generator whose source is not in a committed cache
+      # and so cannot run with no network — and passes with a warning; exit 1 is
+      # drift nothing accounts for.
+      - name: Generated property files match their generators
+        run: |
+          set +e
+          python tools/gendrift.py
+          rc=$?
+          set -e
+          if [ "$rc" = "2" ]; then
+            echo "::warning::gendrift ran incomplete — see UNCHECKED and RECORDED DEBT above"
+            exit 0
+          fi
+          exit $rc
       # The wiki parser's pins. Four rounds of fixes each added tests that
       # nothing on push executed, so a regression could only be found by
       # whoever next ran the file by hand.
