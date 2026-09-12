@@ -63,6 +63,31 @@ own rule and this file overrides it to the 190 Wikidata labels as the
 director's cut — one visible line, a number the source already carries, and
 the only row on the list that does not measure what played in cinemas.
 
+That ruling is also why one row on this list does not display the film's
+title. The Kingdom of Heaven row is titled "Kingdom of Heaven (Director's
+Cut)", stated in CUT_TITLES below and asserted before the file is written.
+On clubd a cut is its own film: rows pair across lists on normalised title
+plus year, so a row that recommends the 190-minute cut while displaying the
+bare film name is the same work as the theatrical Kingdom of Heaven wherever
+else the catalogue carries it, and ticking one would tick the other. That is
+the bug that produced the rule — unticking the E.T. director's cut unticked
+E.T. and cost somebody a true record of something they had watched.
+
+It makes this the one deliberate cross-list pair in the catalogue:
+best-directors-cuts ships the identical title for the identical year, so those
+two rows are the same work on purpose and go on syncing. The assert below
+checks that from this end, the way make_best-directors-cuts.py checks its
+sibling from the other.
+
+Blade Runner is the deliberate opposite and must not be "fixed" to match: this
+list measures the 1982 theatrical release, best-directors-cuts measures The
+Final Cut, and those two rows are meant to be different works.
+
+The title was typed into properties/ridley-scott.json by hand in c422a85 and
+this generator went on emitting the bare film name, so until CLU-537 a rebuild
+would have stripped it back — inside a 279-line indent reformat from the same
+commit, where it read as housekeeping. Same accident as CLU-448.
+
 Data:   scratch/ridley/collect.py -> scratch/ridley/ridley_data.json
 Accent: scratch/ridley/accent.py
 """
@@ -81,6 +106,16 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / "scratch" / "ridley" / "ridley_data.json"
 
 ALIEN_FRANCHISE = "Q1990792"        # the franchise item, not the 1979 film
+
+# The displayed title of every row on this list that is a CUT rather than the
+# release — one of them. Stated rather than derived, because the shipped
+# parenthetical is an editorial name and not a string the sources carry, and
+# re-asserted against the finished rows before anything is written. See the
+# module docstring for why a row recommending a cut has to name it.
+CUT_TITLES = {"Kingdom of Heaven": "Kingdom of Heaven (Director's Cut)"}
+
+# The list this one shares a cut row with on purpose.
+PAIRED_WITH = "best-directors-cuts"
 
 ERAS = [
     ("first", "The first four", 1977, 1985,
@@ -487,8 +522,10 @@ def main():
         assert got, key
         items = []
         for f in got:
+            # the id keys on the FILM and never on the displayed title,
+            # because an id is where a tick is stored
             it = {"id": "rs-%d-%s" % (f["year"], slug(f["t"])),
-                  "t": f["t"], "n": str(f["year"]),
+                  "t": CUT_TITLES.get(f["t"], f["t"]), "n": str(f["year"]),
                   "w": round(f["runtime"] / 60.0, 2)}
             n = note_for(f)
             if n:
@@ -507,9 +544,72 @@ def main():
     for s in sections:
         assert all(a["n"] <= b["n"] for a, b in zip(s["items"], s["items"][1:])), \
             "%s is out of year order" % s["title"]
+    # ---- the cut name, re-asserted on every run ---------------------------
+    # A row that recommends a cut has to display the cut. Checked against the
+    # finished rows rather than against the table, because a table nothing
+    # reads is what CLU-537 actually was: the title existed in the shipped
+    # JSON and the generator never emitted it.
+    shipped = {x["id"]: x["t"] for sec in sections for x in sec["items"]}
+    # The table is not optional and it is not a free list. Exactly the rows
+    # whose bar measures a cut rather than the release have to name that cut,
+    # and Kingdom of Heaven is the only row on this list where that is true —
+    # it is the one runtime overridden above, from the theatrical 144 to the
+    # 190 Wikidata labels a director's cut. Asserting the SET means deleting
+    # the entry fails the build instead of quietly restoring the bare film
+    # name, which is the whole of CLU-537.
+    assert set(CUT_TITLES) == {koh["t"]}, (
+        "CUT_TITLES must name exactly the rows whose bar measures a cut: "
+        "expected %r, got %r" % ([koh["t"]], sorted(CUT_TITLES)))
+    for f in films:
+        disp = CUT_TITLES.get(f["t"])
+        if not disp:
+            continue
+        rid = "rs-%d-%s" % (f["year"], slug(f["t"]))
+        assert shipped.get(rid) == disp, (
+            "%s ships %r, not %r. A row that recommends a cut must name it, "
+            "or it shares an identity with the theatrical copy on every "
+            "other list and ticking one ticks the other"
+            % (rid, shipped.get(rid), disp))
+        own_or_extended = (
+            (disp.startswith(f["t"] + " (") and disp.endswith(")"))
+            or disp.startswith(f["t"] + ": "))
+        assert own_or_extended, (
+            "%r neither extends %r nor is a released title of its own"
+            % (disp, f["t"]))
+        assert slug(f["t"]) in rid and disp not in rid, (
+            "the id must key on the film, never on the displayed "
+            "title: %s" % rid)
+
+    # The one deliberate cross-list pair. best-directors-cuts carries the same
+    # film for the same year and must display the same title, or the two rows
+    # stop being the same work and the pair breaks from this end without
+    # anything on either list looking wrong. Its ids are
+    # "<prefix>-<year>-<slug of the film>", the same shape as this list's, so
+    # the rows line up on the film rather than on the title under test.
+    #
+    # Only CUT_TITLES rows are checked, and that is the point: Blade Runner is
+    # on both lists and the titles differ ON PURPOSE — theatrical here, The
+    # Final Cut there, two different works. Widening this assert to every
+    # shared film would demand they match and would be wrong.
+    pair = ROOT / "properties" / ("%s.json" % PAIRED_WITH)
+    if pair.exists():
+        theirs = {tuple(x["id"].split("-", 2)[1:]): x["t"]
+                  for sec in json.loads(pair.read_text(encoding="utf-8"))
+                  ["sections"] for x in sec["items"]}
+        for f in films:
+            disp = CUT_TITLES.get(f["t"])
+            got = theirs.get((str(f["year"]), slug(f["t"])))
+            if not disp or got is None:
+                continue
+            assert got == disp, (
+                "%s: this list ships %r and %s ships %r. The pair holds "
+                "only while both rows name the same version"
+                % (f["t"], disp, PAIRED_WITH, got))
+
     noted = {x["t"] for s in sections for x in s["items"] if x.get("note")}
     assert noted == {"The Duellists", "Alien", "Blade Runner", "Legend",
-                     "Thelma & Louise", "Gladiator", "Kingdom of Heaven",
+                     "Thelma & Louise", "Gladiator",
+                     "Kingdom of Heaven (Director's Cut)",
                      "Napoleon"}, sorted(noted)
     # a row with no `w` in a weighted list is silently worth one hour, and a
     # row at zero would mix the two kinds — neither is allowed here
