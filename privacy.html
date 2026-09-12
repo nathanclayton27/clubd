@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- CLU-548. These two pages are hand-maintained, not generated, so the
+     policy is written out rather than hashed: a hash over an inline style
+     block nobody rebuilds would rot on the next paragraph edit. There is no
+     script on either page and no data from anywhere, which is what makes
+     script-src's absence — default-src 'none' covers it — the strong half
+     and style-src 'unsafe-inline' the cheap half. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src-attr 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy — GroupWatch</title>
 <style>
