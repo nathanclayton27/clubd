@@ -21,6 +21,26 @@ of those runs, which is how the source frames them. The two Ultimate Spider-Man
 runs used to live here and are now their own list — different continuity, and
 neither one needs anything on this page.
 
+CLU-546: selective is not the same as absent, and both named sections were
+getting that wrong at the one arc that gives them their name.
+
+  * The Big Time section held #666-673, #682-687 and #698-700 — Spider-Island,
+    Ends of the Earth and Dying Wish — and not one issue of Big Time itself.
+    Wikipedia's "Big Time (comics)" infobox puts the arc at ASM #648-656,
+    November 2010 to March 2011, and names its three parts in the prose: "Kill
+    to be You" #648-651, "Revenge of the Spider-Slayer" #652-654 and "No One
+    Dies" #655-656. All nine are added at the head of the section. The `sub`
+    already said 2010-13 while the earliest issue in it was from 2011.
+  * Brand New Day shipped #546, #547 and #548. Wikipedia's "Brand New Day
+    (comics)" infobox puts the storyline at ASM #546-564 and the prose is
+    explicit that "the banner only runs across the front covers of #546-564" —
+    nineteen issues, of which three were here. Every other arc in that section
+    ships complete, so the one the section is named after now does too.
+
+Neither fix renames anything: #549-564 and #648-656 had no rows in this file at
+all, so the id set only grew. The other arcs the source names and this list
+still does not carry are recorded on the card rather than guessed at here.
+
 Notes say what an entry is, never what happens in it.
 """
 import json
@@ -36,7 +56,9 @@ SLUG = "spider-man-after-civil-war"
 # arc markers for the ASM issues after One More Day; everything else is
 # deliberately unannotated
 ARC = {
-    546: "The new status quo — Slott and McNiven",
+    546: "“Brand New Day” begins — Slott and McNiven, and the banner runs "
+         "to #564",
+    564: "The last issue to carry the Brand New Day banner",
     568: "“New Ways to Die” begins — Slott and John Romita Jr.",
     595: "“American Son” begins",
     600: "Anniversary issue",
@@ -44,6 +66,10 @@ ARC = {
     630: "“Shed” begins — Zeb Wells and Chris Bachalo on the Lizard",
     634: "“Grim Hunt” begins — the sequel to Kraven's Last Hunt, 23 years on",
     642: "“Origin of the Species” begins",
+    648: "“Big Time” begins — “Kill to be You”, Slott now writing alone, with "
+         "Humberto Ramos",
+    652: "“Revenge of the Spider-Slayer” begins",
+    655: "“No One Dies” begins",
     666: "“Spider-Island” begins — all of Manhattan gets spider-powers",
     682: "“Ends of the Earth” begins — Doc Ock",
     698: "“Dying Wish” begins — the end of Slott's first era",
@@ -88,10 +114,12 @@ def cross(key, title, num, note=""):
     return x
 
 
-BND = ([546, 547, 548] + list(range(568, 574)) + list(range(595, 600)) + [600]
+BND = (list(range(546, 565)) + list(range(568, 574))
+       + list(range(595, 600)) + [600]
        + list(range(612, 624)) + list(range(630, 634)) + list(range(634, 638))
        + list(range(642, 648)))
-BIGTIME = list(range(666, 674)) + list(range(682, 688)) + [698, 699, 700]
+BIGTIME = (list(range(648, 657)) + list(range(666, 674))
+           + list(range(682, 688)) + [698, 699, 700])
 
 SECTIONS = [
     {

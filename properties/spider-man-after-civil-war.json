@@ -5,7 +5,7 @@
   "kind": "comics",
   "popularity": 37,
   "year": "2007–",
-  "blurb": "The end of the classic run, then eighteen years of recommendations — 353 issues, tracked one by one.",
+  "blurb": "The end of the classic run, then eighteen years of recommendations — 378 issues, tracked one by one.",
   "unit": {
     "one": "issue",
     "many": "issues"
@@ -151,7 +151,7 @@
           "id": "asm-546",
           "t": "Amazing Spider-Man",
           "n": "#546",
-          "note": "The new status quo — Slott and McNiven"
+          "note": "“Brand New Day” begins — Slott and McNiven, and the banner runs to #564"
         },
         {
           "id": "asm-547",
@@ -162,6 +162,87 @@
           "id": "asm-548",
           "t": "Amazing Spider-Man",
           "n": "#548"
+        },
+        {
+          "id": "asm-549",
+          "t": "Amazing Spider-Man",
+          "n": "#549"
+        },
+        {
+          "id": "asm-550",
+          "t": "Amazing Spider-Man",
+          "n": "#550"
+        },
+        {
+          "id": "asm-551",
+          "t": "Amazing Spider-Man",
+          "n": "#551"
+        },
+        {
+          "id": "asm-552",
+          "t": "Amazing Spider-Man",
+          "n": "#552"
+        },
+        {
+          "id": "asm-553",
+          "t": "Amazing Spider-Man",
+          "n": "#553"
+        },
+        {
+          "id": "asm-554",
+          "t": "Amazing Spider-Man",
+          "n": "#554"
+        },
+        {
+          "id": "asm-555",
+          "t": "Amazing Spider-Man",
+          "n": "#555"
+        },
+        {
+          "id": "asm-556",
+          "t": "Amazing Spider-Man",
+          "n": "#556"
+        },
+        {
+          "id": "asm-557",
+          "t": "Amazing Spider-Man",
+          "n": "#557"
+        },
+        {
+          "id": "asm-558",
+          "t": "Amazing Spider-Man",
+          "n": "#558"
+        },
+        {
+          "id": "asm-559",
+          "t": "Amazing Spider-Man",
+          "n": "#559"
+        },
+        {
+          "id": "asm-560",
+          "t": "Amazing Spider-Man",
+          "n": "#560"
+        },
+        {
+          "id": "asm-561",
+          "t": "Amazing Spider-Man",
+          "n": "#561"
+        },
+        {
+          "id": "asm-562",
+          "t": "Amazing Spider-Man",
+          "n": "#562"
+        },
+        {
+          "id": "asm-563",
+          "t": "Amazing Spider-Man",
+          "n": "#563"
+        },
+        {
+          "id": "asm-564",
+          "t": "Amazing Spider-Man",
+          "n": "#564",
+          "note": "The last issue to carry the Brand New Day banner"
         },
         {
           "id": "asm-568",
@@ -378,6 +459,54 @@
       ],
       "intro": "Peter takes a job at Horizon Labs. Brighter, gadget-heavy, more optimistic.",
       "items": [
+        {
+          "id": "asm-648",
+          "t": "Amazing Spider-Man",
+          "n": "#648",
+          "note": "“Big Time” begins — “Kill to be You”, Slott now writing alone, with Humberto Ramos"
+        },
+        {
+          "id": "asm-649",
+          "t": "Amazing Spider-Man",
+          "n": "#649"
+        },
+        {
+          "id": "asm-650",
+          "t": "Amazing Spider-Man",
+          "n": "#650"
+        },
+        {
+          "id": "asm-651",
+          "t": "Amazing Spider-Man",
+          "n": "#651"
+        },
+        {
+          "id": "asm-652",
+          "t": "Amazing Spider-Man",
+          "n": "#652",
+          "note": "“Revenge of the Spider-Slayer” begins"
+        },
+        {
+          "id": "asm-653",
+          "t": "Amazing Spider-Man",
+          "n": "#653"
+        },
+        {
+          "id": "asm-654",
+          "t": "Amazing Spider-Man",
+          "n": "#654"
+        },
+        {
+          "id": "asm-655",
+          "t": "Amazing Spider-Man",
+          "n": "#655",
+          "note": "“No One Dies” begins"
+        },
+        {
+          "id": "asm-656",
+          "t": "Amazing Spider-Man",
+          "n": "#656"
+        },
         {
           "id": "asm-666",
           "t": "Amazing Spider-Man",
