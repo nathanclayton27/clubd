@@ -51,9 +51,20 @@ ERAS = [
 STREAMING_NOTE = "Streaming release"
 
 
+# Curly punctuation, straightened to the ASCII this fold already handles.
+# CLU-430: `encode("ascii", "ignore")` DROPS a curly apostrophe and keeps a
+# straight one as a dash, so `Child’s Play` folds to `childs-play` while
+# `Child's Play` folds to `child-s-play`. An id is somebody’s tick, so two
+# spellings of one title must never reach two ids. Straightening is the
+# correction THIS direction needs — the opposite of the folds that drop the
+# straight form — and it leaves every id this list has shipped where it is.
+STRAIGHTEN = str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"'})
+
+
 def fold(t):
     """ASCII-fold a title into an id fragment."""
-    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+    t = unicodedata.normalize("NFKD", t.translate(STRAIGHTEN))
+    t = t.encode("ascii", "ignore").decode()
     keep = "".join(c.lower() if c.isalnum() else "-" for c in t)
     while "--" in keep:
         keep = keep.replace("--", "-")
