@@ -143,8 +143,13 @@ whole database follows.
 
 1. **Read the whole file**, top to bottom, including the header.
 2. **`python tools/whereis.py <object>`** for every object the file creates or
-   replaces. **23 of 74 objects here are defined in more than one file.**
-   Whichever runs last wins, silently.
+   replaces. **23 of 84 objects here are defined in more than one file.**
+   Whichever runs last wins, silently. That 84 counts *object names defined by
+   the repo’s `.sql` files* — superseded and never-run files included, one count
+   per name however many files carry it, and no columns, indexes, views or
+   grants. It is **not** a count of live database objects and does not reconcile
+   with §4. The tool prints the census with that caveat attached and checks this
+   sentence against its own scan, so the two cannot drift again (CLU-446).
 3. **`python tools/ordercheck.py <file.sql>`** for create-time resolution
    (trap 1). Know its limit before you lean on it — see below.
 4. **Confirm one `begin` / `commit` wraps the whole file.** Several older files
@@ -586,7 +591,37 @@ say strangers would be reachable "only" through the function, which the CLU-153
 audit refuted — see §5.)*
 
 **`friendships`** — one row per direction. Mutual means both rows exist. You may
-add your own direction, remove your own, and decline an incoming one.
+add your own direction, remove your own, and decline an incoming one. **Today
+you may add your own direction to *anybody*** — `"add own direction"` is
+`with check (auth.uid() = a)` and says nothing at all about column `b`, so an
+edge is self-assertable for any `user_id` the caller holds, uncapped and with no
+consent (CLU-445). Nothing is leaked by the edge itself: `friend_may_read()`
+needs **both** directions, so one row buys no progress and no thumbs. What it
+buys is an unsolicited inbox entry, in bulk — and, the moment
+`clu153-B-narrow-profiles.sql` runs, that person's profile row, because
+`"read connected profiles"` accepts an edge in **either** direction. That is why
+CLU-445 should not wait behind B: B would ship with a bypass already planted.
+
+> **NOT YET RUN — intended end state (CLU-445),
+> `scratch/security/clu445-friend-edges.sql`.** Edge creation moves behind
+> `add_friend_edge(uuid, text)`, a definer RPC that writes a row only against
+> one of three warrants — `'accept'` (an edge already points at you),
+> `'comember'` (you share a group or club), `'code'` (you passed their friend
+> code in the same call) — plus `friend_edge_warrant(uuid, uuid)`, a definer
+> helper revoked from every browser role, and `guard_friend_edge_rate()` on a
+> `before insert` trigger capping edges at 60/hour and 200/day under kind
+> `'fedge'`. The direct door then closes with a **restrictive** INSERT policy,
+> `"edges only through add_friend_edge"`, `with check (false)`.
+> **The code RPC is deliberately *not* the only door**: `addFriend()` is called
+> from three places in `src/template.html` and only one involves a code — the
+> inbox Accept button and the club-legend / group-roster "add friend" are the
+> other two, so a code-only rule would make it impossible to accept a request.
+> The file runs in two phases and picks its own: the trigger and the RPC land on
+> any run, the restrictive policy only once a `rate_events` row of kind
+> `'fedgerpc'` proves the RPC has served a committed call. **So it needs a
+> front-end change first**, calling the RPC with no fallback to a direct insert,
+> or the lock breaks every add-friend button. Its ledger row records
+> `outcome = 'partial'` for phase 1 alone and `'applied'` for both.
 
 **`private_properties`** — lists treated as private by policy. One row today.
 Empty, the gated-list term in every policy is a no-op, which is why step 7
@@ -663,7 +698,20 @@ repo agree on the bytes that ran — the first time in this project that has bee
 true of anything.
 
 **Queued behind it, written and not run: the CLU-153 pair**, under *Queued and
-ready* below. Nothing else in the repo is waiting on a paste.
+ready* below, **and `scratch/security/clu504-tombstones.sql`**, which is written
+but **held, not queued**: a hostile audit on 2026-09-12 found the ledger row it
+writes would be false and that `save_progress` breaks the invariant its own
+column comment asserts, so it must not be pasted in this form (CLU-504). The
+front-end half of that card shipped without it. Nothing else in the repo is
+waiting on a paste.
+
+**`superseded/migrate-add-friend-privacy.sql` was listed as applied inside
+`tools/whereis.py` until CLU-446**, contradicting this section, which proves it
+never ran. The tool has been corrected to this document, not the other way round.
+It cost nothing this time — all five objects it defines are also defined by files
+that did run, and it never ranked as any object’s latest definition — but a
+never-run file inside an applied list is precisely CLU-374’s failure, and the
+next object could be one only it defines.
 
 **From the ledger row (2026-08-27) the database records its own history.**
 Everything above that row was reconstructed from the board. The three rows after
@@ -990,6 +1038,48 @@ what should be published is CLU-414.
 **Until B runs, `profiles` is still the open directory §4 describes.** A copy
 already taken is not undone by B; that is the reason not to let it wait.
 
+### Queued and not run: the friendship edge gets a door (CLU-445)
+
+`scratch/security/clu445-friend-edges.sql`. **Nothing in it has run.** §4's
+`friendships` entry carries the end state; this is the operational half.
+
+**It is one file that decides which of two phases it applies**, and it says which
+in a notice and in its own ledger row (`outcome = 'partial'` or `'applied'`).
+
+| Phase | What it does | What must be true first |
+|---|---|---|
+| 1 | `friend_edge_warrant(uuid, uuid)` (definer, revoked from `public`, `anon`, `authenticated`), `guard_friend_edge_rate()` on the `friendships_rate_guard` `before insert` trigger — 60/hour and 200/day under kind `'fedge'` — and `add_friend_edge(uuid, text)` granted to `authenticated`. Records itself. | Nothing beyond what is already live: the rate-limit helpers (CLU-35), `group_members` (CLU-387), the ledger (CLU-404). **Safe now, and inert on the site** — nothing calls the RPC yet, so the only user-visible change is the cap. |
+| 2 | The restrictive policy `"edges only through add_friend_edge"`, `with check (false)`, which makes the RPC the only INSERT path. | **A `rate_events` row of kind `'fedgerpc'` must exist** — written by `add_friend_edge()` and by nothing else. The file checks this itself and skips phase 2 loudly when it is absent, so a first run cannot land the lock. The front end must therefore ship first, calling the RPC **with no fallback to a direct insert**. |
+
+**The fence is evidence, not a flag, and that is the CLU-153 lesson applied.**
+B's fence had to be armed by hand, which is why `arm-clu153-B.py` exists and why
+B is the one file whose recorded checksum describes no version of itself. This
+file's bytes never change between its two runs, so `--verify` stays true both
+times, and the thing it fences on is something only the real path can produce —
+not "add-by-code worked", which succeeds either way.
+
+⚠ **The lock is the one statement here that can break the site.** If a deployed
+front end still inserts directly when phase 2 lands, every add-friend button
+answers `42501`. The undo is one statement and restores exactly today's
+behaviour, which is why `"add own direction"` is left in place rather than
+dropped:
+
+    drop policy if exists "edges only through add_friend_edge" on public.friendships;
+
+⚠ **Existing rows cannot be sorted into good and bad, and the file writes no
+delete.** A self-asserted edge and an honest pending friend request are *the
+same row* — `(actor, target)` with no reverse edge — and `created_at` records
+when, not why. The file carries three read-only queries for the only signal that
+exists (fan-out, per-minute bursts, and edges no warrant would allow today) and
+states plainly that the third returns legitimate rows too, because an honest
+add-by-code to a stranger is warrantless by that definition. Any cleanup is a
+statement written afterwards, naming one account, with the count read first.
+
+⚠ **`tools/whereis.py` does not know about this file's three objects yet**, so it
+will not report `add_friend_edge`, `friend_edge_warrant` or
+`guard_friend_edge_rate` as absent. That is the CLU-446 failure mode in the
+other direction and it is worth a pass before the next paste.
+
 ### And three that fail safely — leave them alone
 
 `migrate-add-friends.sql`, `migrate-add-friend-decline.sql` and the archived
@@ -1073,8 +1163,18 @@ database that no longer matches the file in front of them.
 This project has already paid for the alternative. `schema.sql` went behind,
 nothing said so, and **two separate pieces of work were built on it confidently
 and wrongly** (CLU-374) — one of which would have deleted a live rate limiter.
-`tools/whereis.py` exists because of it, and reports that **23 of 74 objects are
+`tools/whereis.py` exists because of it, and reports that **23 of 84 objects are
 defined in more than one file**, whichever runs last winning silently.
+
+**This document has already broken its own rule with that number.** It said *74*
+from 2026-08-27 (`c80c9f0`) until CLU-446, and 74 was right on the day it was
+written: `scratch/security/migrate-club-progress.sql` was written afterwards and
+added exactly ten object names nothing else defines — 84 − 10 = 74, which is the
+whole of the discrepancy. The stale half was invisible because the *other* number
+in the sentence, 23, stayed correct: all ten newcomers are defined in one file
+each. A hand-copied figure inside a document that is trusted on sight is the same
+trap as a stale `schema.sql`, so `whereis.py` now recomputes it and says so when
+this sentence disagrees.
 
 A document like this is trusted on sight, which is what makes a stale one worse
 than none: nobody re-derives what it claims, so a wrong line is believed and
