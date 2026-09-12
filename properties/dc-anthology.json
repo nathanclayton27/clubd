@@ -6,7 +6,7 @@
   "kind": "films & shows",
   "popularity": 82,
   "year": "1951–",
-  "blurb": "55 films and 139 seasons of television, about 1754 hours, in the order they came out.",
+  "blurb": "55 films and 139 seasons of television, about 1753 hours, in the order they came out.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -34,10 +34,10 @@
       "A season's length is the series' episode count split evenly across its seasons at 43 minutes each — the source gives a total rather than a per-season breakdown. Each season is placed by spreading them evenly between the years the series started and ended, which is exact for anything that ran annually and close for anything that did not."
     ],
     [
-      "Bar widths are runtimes.",
-      "Films use their real runtime from Wikidata. Batgirl was shelved before release and the 2026–28 films are not out, so those weigh nothing and cannot drag a group's pace."
+      "Bar widths are runtimes, read from each film's own article.",
+      "Every film bar is the runtime printed in that film's own Wikipedia infobox, which is where a length keeps the name of the version it belongs to — Wikidata collects every cut a film has and says which is which about none of them, which is how three rows here came to measure a director's cut under a plain title. Where a film has more than one version, the row says which one the bar is. Batgirl was shelved before release and the 2026–28 films are not out, so those weigh nothing and cannot drag a group's pace."
     ],
-    "Film and series lists from Wikipedia's DC publications tables, including the DC imprint tables — Vertigo and the rest — so Sandman, Lucifer, Preacher, V for Vendetta and Road to Perdition are all here. Runtimes and release dates from Wikidata."
+    "Film and series lists from Wikipedia's DC publications tables, including the DC imprint tables — Vertigo and the rest — so Sandman, Lucifer, Preacher, V for Vendetta and Road to Perdition are all here. Release dates from Wikidata; film runtimes from each film's own Wikipedia article."
   ],
   "sections": [
     {
@@ -100,7 +100,7 @@
           "id": "dc-f-1966-batman",
           "t": "Batman",
           "n": "1966",
-          "w": 1.75
+          "w": 1.73
         },
         {
           "id": "dc-t-1966-batman-s2",
@@ -181,25 +181,26 @@
           "id": "dc-f-1982-swamp-thing",
           "t": "Swamp Thing",
           "n": "1982",
-          "w": 1.55
+          "w": 1.52
         },
         {
           "id": "dc-f-1983-superman-iii",
           "t": "Superman III",
           "n": "1983",
-          "w": 2.07
+          "w": 2.08
         },
         {
           "id": "dc-f-1984-supergirl",
           "t": "Supergirl",
           "n": "1984",
-          "w": 2.08
+          "w": 2.07,
+          "note": "124 min, the international cut; the US theatrical cut runs 105 and a director's cut 138"
         },
         {
           "id": "dc-f-1987-superman-iv-the-quest-for-peace",
           "t": "Superman IV: The Quest for Peace",
           "n": "1987",
-          "w": 1.53
+          "w": 1.5
         },
         {
           "id": "dc-t-1988-superboy-s1",
@@ -306,7 +307,7 @@
           "id": "dc-f-1995-batman-forever",
           "t": "Batman Forever",
           "n": "1995",
-          "w": 1.95
+          "w": 2.02
         },
         {
           "id": "dc-t-1993-lois-clark-the-new-adventures-of-superman-s3",
@@ -330,7 +331,7 @@
           "id": "dc-f-1997-steel",
           "t": "Steel",
           "n": "1997",
-          "w": 1.55
+          "w": 1.62
         },
         {
           "id": "dc-t-2001-smallville-s1",
@@ -344,7 +345,7 @@
     {
       "id": "nolan",
       "title": "Nolan and the wilderness",
-      "sub": "2002–2012 · 15 films and 13 seasons · 214 hours",
+      "sub": "2002–2012 · 15 films and 13 seasons · 213 hours",
       "intro": "One trilogy that reset what the genre could be, surrounded by films that did not connect to anything.",
       "items": [
         {
@@ -396,7 +397,7 @@
           "id": "dc-f-2005-constantine",
           "t": "Constantine",
           "n": "2005",
-          "w": 1.93
+          "w": 2.0
         },
         {
           "id": "dc-f-2005-a-history-of-violence",
@@ -422,7 +423,7 @@
           "id": "dc-f-2006-v-for-vendetta",
           "t": "V for Vendetta",
           "n": "2006",
-          "w": 2.2,
+          "w": 2.22,
           "note": "A DC imprint, not the main line"
         },
         {
@@ -435,7 +436,7 @@
           "id": "dc-f-2007-stardust",
           "t": "Stardust",
           "n": "2007",
-          "w": 2.12,
+          "w": 2.13,
           "note": "A DC imprint, not the main line"
         },
         {
@@ -448,14 +449,15 @@
           "id": "dc-f-2008-the-dark-knight",
           "t": "The Dark Knight",
           "n": "2008",
-          "w": 2.55,
+          "w": 2.53,
           "note": "The Dark Knight trilogy"
         },
         {
           "id": "dc-f-2009-watchmen",
           "t": "Watchmen",
           "n": "2009",
-          "w": 3.6
+          "w": 2.7,
+          "note": "162 min, the theatrical cut; a director's cut runs 186 and an Ultimate Cut 215"
         },
         {
           "id": "dc-t-2001-smallville-s8",
@@ -487,7 +489,7 @@
           "id": "dc-f-2010-jonah-hex",
           "t": "Jonah Hex",
           "n": "2010",
-          "w": 1.37
+          "w": 1.35
         },
         {
           "id": "dc-f-2010-red",
@@ -500,7 +502,8 @@
           "id": "dc-f-2011-green-lantern",
           "t": "Green Lantern",
           "n": "2011",
-          "w": 1.9
+          "w": 1.9,
+          "note": "114 min, the theatrical cut; an extended cut runs 123"
         },
         {
           "id": "dc-t-2010-human-target-s2",
@@ -533,7 +536,7 @@
     {
       "id": "dceu",
       "title": "The DCEU and the Arrowverse",
-      "sub": "2013–2023 · 20 films and 88 seasons · 1000 hours",
+      "sub": "2013–2023 · 20 films and 88 seasons · 999 hours",
       "intro": "The shared universe on film and a separate, larger one on television, running alongside each other for a decade.",
       "items": [
         {
@@ -619,8 +622,8 @@
           "id": "dc-f-2016-batman-v-superman-dawn-of-justice",
           "t": "Batman v Superman: Dawn of Justice",
           "n": "2016",
-          "w": 3.03,
-          "note": "DCEU"
+          "w": 2.52,
+          "note": "DCEU · 151 min, the theatrical cut; the Ultimate Edition runs 31 minutes longer"
         },
         {
           "id": "dc-t-2014-gotham-s3",
@@ -907,7 +910,7 @@
           "id": "dc-f-2019-the-kitchen",
           "t": "The Kitchen",
           "n": "2019",
-          "w": 1.72,
+          "w": 1.7,
           "note": "A DC imprint, not the main line"
         },
         {
@@ -1156,14 +1159,14 @@
           "id": "dc-f-2022-black-adam",
           "t": "Black Adam",
           "n": "2022",
-          "w": 2.07,
+          "w": 2.08,
           "note": "DCEU"
         },
         {
           "id": "dc-f-2023-shazam-fury-of-the-gods",
           "t": "Shazam! Fury of the Gods",
           "n": "2023",
-          "w": 2.0,
+          "w": 2.17,
           "note": "DCEU"
         },
         {
@@ -1221,7 +1224,7 @@
           "id": "dc-f-2023-blue-beetle",
           "t": "Blue Beetle",
           "n": "2023",
-          "w": 2.13,
+          "w": 2.12,
           "note": "DCEU"
         },
         {

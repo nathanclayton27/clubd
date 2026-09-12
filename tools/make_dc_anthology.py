@@ -12,7 +12,42 @@ Sources, machine-read rather than typed:
   - series: Wikipedia, List of television series based on DC Comics
     publications, the live-action table plus the DC Imprints table, which
     already carry seasons, episodes and airing years
-  - film runtimes and release dates: Wikidata P2047 and P577
+  - film release dates: Wikidata P577
+  - film runtimes: each film's own {{Infobox film}} — see below
+
+Weights: each film's own infobox, not Wikidata (CLU-425, CLU-178)
+-----------------------------------------------------------------
+Every film bar is the runtime printed in that film's own Wikipedia infobox,
+chosen by gwlib.runtime.weigh(). This list used to weigh from Wikidata's P2047,
+which collects every length an item has ever been given with the provenance
+stripped off — so "the runtime" quietly became "one of the cuts", and three
+rows on this list ended up measuring a version their own title does not name:
+
+  * **Watchmen** carried 216 minutes. The theatrical release is 162; 186 is the
+    director's cut and 215 the Ultimate Cut, and best-directors-cuts already
+    carries that director's cut as a row of its own at 186. A plainly-titled
+    row cannot be half an hour longer than the row that IS the director's cut.
+  * **Batman v Superman** carried 182 minutes, which is byte-identical to
+    best-directors-cuts' *Ultimate Edition* row. The theatrical is 151.
+  * **Supergirl** (1984) carried 125 minutes, which is no released length at
+    all — the box prints 105 (US theatrical cut), 124 (international cut) and
+    138 (director's cut), and 125 is the international cut rounded up from
+    124:28. Nobody found this by hand; it fell out of the re-run.
+
+On clubd a cut is its own film: rows pair across lists on normalised title plus
+year, so a row measuring a cut while displaying the plain title is a row that
+will one day tick somebody's theatrical viewing, or be ticked by it. That is the
+whole reason these three mattered and the 16 rows that moved by one to ten
+minutes did not.
+
+What each box printed, labels kept, is recorded beside every film in
+tools/data/dc_films.json as `cuts`, and the generator prints the label it chose
+on every run — so "which version is this list measuring" is answered by
+re-running this script rather than by reading 55 articles.
+
+Two rows the rule gets wrong are overridden, each with its citation, and each
+pinning what the rule says today so a rewritten box stops the build instead of
+silently outvoting the decision. See RUNTIME_EXCEPTION.
 
 Television is tracked season by season, not episode by episode. A season's
 weight is the series' episode count divided evenly across its seasons at 43
@@ -29,10 +64,69 @@ DCEU, the Arrowverse, the new DCU — its note says so.
 """
 import json
 import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from gwlib import runtime as RT  # noqa: E402
 
 SLUG = "dc-anthology"
 
 EP_MINUTES = 43
+
+# A film where the rule in gwlib/runtime.py returns the wrong figure, keyed by
+# (title, year) because DC reuses titles. The value is (minutes, why,
+# rule_says) — and `rule_says` is pinned so that a rewritten infobox stops the
+# build rather than leaving an override describing a figure that has changed
+# under it. This is make_ss.py's RUNTIME_EXCEPTION, same shape and same reason.
+RUNTIME_EXCEPTION = {
+    # The rule takes the first figure a box prints, and its docstring says why:
+    # where a box lists several national cuts, the first has been the original
+    # release every time so far, and where it is not, the generator says so
+    # with a citation. This is that case. The box leads with 105 minutes
+    # (US theatrical cut), but the article's own release section says the film
+    # "was edited from 135 minutes to 105 minutes for its North American
+    # release" and that it "originally ran at 124 minutes in its European
+    # version" — so the original release is the second figure, not the first,
+    # and the 124-minute international cut is also what Warner has sold on
+    # every disc since 2006. The 138-minute director's cut is a later re-edit
+    # and is not a candidate under the rule.
+    ("Supergirl", 1984): (
+        124, "the international cut — the original release; Tri-Star cut it to "
+             "105 for North America", 105),
+    # The box prints one figure, 123 minutes, with no label — so the rule has
+    # nothing to reject and returns it. The article's own home-media section
+    # says what it is: the Blu-ray "includes an extended cut, which adds an
+    # extra nine minutes of footage to the running time, totaling 123 minutes".
+    # The theatrical release is 114, which is the figure this row already
+    # carried, so the rule would have moved a correct bar onto an extended cut.
+    # A label the box does not print is exactly what the rule cannot see, and
+    # the honest answer is a named exception rather than a widened rule.
+    ("Green Lantern", 2011): (
+        114, "the theatrical cut — the box's 123 is the extended cut its own "
+             "home-media section describes", 123),
+}
+
+# The rows whose bar has to SAY which version it is, keyed by (title, year).
+# The clause here follows the minutes, which the generator supplies, so the
+# note can never disagree with the bar.
+#
+# Every row whose box prints more than one figure must appear here, and the
+# build asserts it: a box that starts listing cuts is a row that has stopped
+# being self-explanatory. The two rows that are here anyway print ONE figure
+# each, and are here because this catalogue carries their longer cut as a row
+# of its own on best-directors-cuts — which is what proved both of them were
+# measuring the wrong version in the first place.
+VERSION_NOTE = {
+    ("Watchmen", 2009):
+        "the theatrical cut; a director's cut runs 186 and an Ultimate Cut 215",
+    ("Batman v Superman: Dawn of Justice", 2016):
+        "the theatrical cut; the Ultimate Edition runs 31 minutes longer",
+    ("Supergirl", 1984):
+        "the international cut; the US theatrical cut runs 105 and a "
+        "director's cut 138",
+    ("Green Lantern", 2011):
+        "the theatrical cut; an extended cut runs 123",
+}
 
 # Which run something belongs to, where it belongs to one at all.
 # Which run a FILM belongs to, where it belongs to one at all.
@@ -165,6 +259,44 @@ def main():
     films = json.loads((data / "dc_films.json").read_text(encoding="utf-8"))
     shows = json.loads((data / "dc_shows.json").read_text(encoding="utf-8"))
 
+    # ---- weights: the film's own infobox, by gwlib.runtime's rule ---------
+    # A row the rule cannot settle keeps the figure it already carried — never
+    # a guess, and never quietly. `cuts` is what the box printed, labels kept,
+    # collected by scratch/agent-rows/measure_lists.py.
+    exc = dict(RUNTIME_EXCEPTION)
+    kept, moved, needs_note = [], [], set()
+    for f in films:
+        key = (f["title"], f["year"])
+        cuts = [tuple(c) for c in (f.get("cuts") or [])]
+        n, why = RT.weigh(cuts, f.get("cuts_range", False))
+        if len(cuts) > 1 or f.get("cuts_range"):
+            needs_note.add(key)
+        if key in RUNTIME_EXCEPTION:
+            want, reason, rule_says = exc.pop(key)
+            assert n == rule_says, \
+                "RUNTIME_EXCEPTION for %s %s expects the rule to say %s, it " \
+                "says %s — the article's box has changed, so re-read it before " \
+                "trusting either figure" % (f["title"], f["year"], rule_says, n)
+            n, why = want, reason
+        if n is None:
+            kept.append((f["title"], f["year"], f["runtime"], why))
+            continue
+        if n != f["runtime"]:
+            moved.append((n - (f["runtime"] or 0), f["title"], f["year"],
+                          f["runtime"], n, why))
+        f["runtime"], f["runtime_why"] = n, why
+    assert not exc, \
+        "RUNTIME_EXCEPTION names films this list does not have: %s" \
+        % sorted(exc)
+    missing = sorted(k for k in needs_note | set(RUNTIME_EXCEPTION)
+                     if k not in VERSION_NOTE)
+    assert not missing, \
+        "these rows measure one version among several and must say which: %s" \
+        % missing
+    stray = sorted(set(VERSION_NOTE) - {(f["title"], f["year"]) for f in films})
+    assert not stray, \
+        "VERSION_NOTE names films this list does not have: %s" % stray
+
     entries = []
     for f in films:
         mins = f["runtime"] or 0
@@ -177,6 +309,9 @@ def main():
             bits.append("Not out yet")
         if f["title"] == "Batgirl":
             bits.append("Shelved before release")
+        if (f["title"], f["year"]) in VERSION_NOTE:
+            bits.append("%d min, %s"
+                        % (mins, VERSION_NOTE[(f["title"], f["year"])]))
         entries.append({
             "id": "dc-f-%d-%s" % (f["year"], slug(f["title"])),
             "t": f["title"], "n": str(f["year"]), "w": round(mins / 60.0, 2),
@@ -294,13 +429,21 @@ def main():
              "series' episode count split evenly across its seasons at %d minutes "
              "each — the source gives a total rather than a per-season breakdown. "
              "Each season is placed by spreading them evenly between the years the series started and ended, which is exact for anything that ran annually and close for anything that did not." % EP_MINUTES],
-            ["Bar widths are runtimes.", "Films use their real runtime from "
-             "Wikidata. Batgirl was shelved before release and the 2026–28 films "
-             "are not out, so those weigh nothing and cannot drag a group's pace."],
+            ["Bar widths are runtimes, read from each film's own article.",
+             "Every film bar is the runtime printed in that film's own "
+             "Wikipedia infobox, which is where a length keeps the name of the "
+             "version it belongs to — Wikidata collects every cut a film has "
+             "and says which is which about none of them, which is how three "
+             "rows here came to measure a director's cut under a plain title. "
+             "Where a film has more than one version, the row says which one "
+             "the bar is. Batgirl was shelved before release and the 2026–28 "
+             "films are not out, so those weigh nothing and cannot drag a "
+             "group's pace."],
             "Film and series lists from Wikipedia's DC publications tables, "
             "including the DC imprint tables — Vertigo and the rest — so "
             "Sandman, Lucifer, Preacher, V for Vendetta and Road to Perdition "
-            "are all here. Runtimes and release dates from Wikidata.",
+            "are all here. Release dates from Wikidata; film runtimes from "
+            "each film's own Wikipedia article.",
         ],
         "sections": sections,
     }
@@ -313,6 +456,15 @@ def main():
     print("  %d sections, %d entries, %d hours" % (len(sections), len(ids), round(hours)))
     for s in sections:
         print("   %-30s %3d  %s" % (s["title"], len(s["items"]), s["sub"][:50]))
+    print("  runtimes: %d films read their own infobox, %d kept what they had"
+          % (len(films) - len(kept), len(kept)))
+    for title, year, cur, why in kept:
+        print("     keeps %-5s %-34s %s" % (cur, "%s (%d)" % (title[:26], year),
+                                            why[:50]))
+    for d_, title, year, was, now, why in sorted(moved,
+                                                 key=lambda m: -abs(m[0])):
+        print("     %+5d %-34s %s -> %s  (%s)"
+              % (d_, "%s (%d)" % (title[:26], year), was, now, why[:46]))
 
 
 if __name__ == "__main__":
