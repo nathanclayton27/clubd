@@ -175,19 +175,23 @@ h1 em{font-style:normal;color:var(--signal)}
    on a phone than anywhere else. It follows a finger and stays up until you
    touch elsewhere or scroll; see the touch handlers in wireStrip. */
 
-/* One band per reader, equal height, one under the other with a small gap and
-   NO OVERLAP (CLU-518). The layers used to overlap, which meant a band was as
-   tall as whatever the person in front had not ticked — so a member's band
-   changed height column by column and the strip looked broken. Three rules
-   lived here to patch that (`.full` stretched a mark to the bottom of the
-   stack, `.dropfill` stretched it to the next ticked layer, `.veil` hid an
-   unread nub that would punch a hole through a band behind it); none of them
-   has anything to do once bands cannot cover each other, and all three are
-   gone. A band is one person's row and nothing else is drawn inside it. */
+/* One strip layer per reader, overlapping, furthest along in front (CLU-518).
+   EVERY ticked mark runs from its own layer's top to the bottom of the whole
+   stack — that single rule is what keeps a column solid. It replaces a pair of
+   rules that stretched some marks and not others (`.full` for the deepest
+   ticked layer, `.dropfill` for one that had to reach the next), and the marks
+   they left unstretched are where the horizontal stripes inside a column came
+   from: "dont have these gaps in them (the horizontal bars inside the vertical
+   bars)".
+   `.veil` is the other half — an unread nub in a FRONT layer would punch a grey
+   hole through the solid column of somebody behind it, so it is not drawn where
+   a deeper reader is showing. */
 .stack{display:flex;flex-direction:column;gap:22px;margin:60px 0 10px}
 .stackrow{position:relative;touch-action:pan-y;transition:margin .28s ease-out}
 .stackrow .layer{position:absolute;left:0;right:0;display:flex;gap:1px;
   height:var(--layerH,35px);align-items:flex-end;margin:0}
+.stackrow .tick.on{align-self:flex-start;height:var(--fillH)}
+.stackrow .tick.veil{background:transparent}
 .pacer{position:absolute;top:-5px;bottom:-5px;width:1px;background:var(--ink-3);z-index:60;pointer-events:none}
 .pacer::before{content:"";position:absolute;top:0;left:-2px;width:5px;height:5px;background:var(--ink-3)}
 /* The legend is the roster now (CLU-52). It used to be a wrapped line under
@@ -678,6 +682,8 @@ li:hover{background:rgba(128,128,128,.06)}
              margin .28s cubic-bezier(.2,.9,.3,1)}
 .itoast.open{max-height:64px;opacity:1;margin:2px 0 6px}
 .itoast.bye{transition:max-height .6s ease, opacity .5s ease, margin .6s ease}
+/* the 45px clears a list row's checkbox; the friends page has none */
+.itoast.fp .in{margin:0}
 .itoast .in{margin:0 18px 0 45px;border:1px solid var(--done);border-left-width:3px;
   border-radius:6px;background:color-mix(in srgb, var(--done) 10%, transparent);
   padding:7px 12px;font-size:12.5px}
@@ -6918,7 +6924,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '5ff40abec1e5';
+const BUILD = 'e326fe014fad';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
@@ -7901,10 +7907,13 @@ function sectionToast(secId, text, act){
   // toast, but it would also undo a deliberate collapse to say so.
   toastAfter(det.open ? sum : det, text, act);
 }
-function toastAfter(anchor, text, act){
+// `cls` is a modifier for toasts that are not under a list row — the friends
+// page uses it, because the 45px indent here exists to clear a row's checkbox
+// and there is no checkbox over there.
+function toastAfter(anchor, text, act, cls){
   rowToastDismiss(false);
   const t = document.createElement('div');
-  t.className = 'itoast';
+  t.className = 'itoast' + (cls ? ' ' + cls : '');
   const inner = document.createElement('div');
   inner.className = 'in';
   inner.textContent = text;
@@ -9709,10 +9718,19 @@ async function acctCopy(text, note){
 // my pasteboard etc". Five buttons did this — Invite link, new link, the friend
 // code, Share link, and a club code.
 //
-// #fnote is the site's cross-view notice: fixed, role="status", present on
-// every view including this one, and already shared by friend notices and
-// arrival notices through _fnoteTok. A copy is a notification, not a caption
-// under a card, so it goes there.
+// ⚠ The first version of this put the confirmation in #fnote, the site's fixed
+// cross-view notice. Nathan overruled it, and he is right:
+//
+//   "under the row makes more sense, sense its right next to where the user is
+//    looking already"
+//
+// A copy is caused by a press on a specific row, and the answer belongs where
+// the press happened — the same reasoning that already puts a tick's toast
+// under its row and a mark-all's toast under its section header. So it reuses
+// toastAfter(), the mechanism those two use, rather than inventing a third.
+//
+// copySay() stays as the fallback for the case where there is no row to sit
+// under, which is the only thing #fnote was ever needed for here.
 function copySay(text, bad){
   const f = $('fnote');
   if(!f){ flash(text); return; }
@@ -9740,16 +9758,23 @@ function friendsClip(btn){
   host.appendChild(f);
   return f;
 }
+// Under the row the button is in, falling back to the floating notice only
+// when the button has no row — which no current caller does.
+function friendsSay(btn, text){
+  const row = (btn && (btn.closest('.afrow') || btn.parentNode)) || null;
+  if(!row || !row.parentNode){ copySay(text, false); return; }
+  toastAfter(row, text, null, 'fp');
+}
 async function friendsCopy(text, note, btn){
   try{
     await navigator.clipboard.writeText(text);
-    copySay(note, false);
+    friendsSay(btn, note);
   }catch(e){
     const f = friendsClip(btn);
     if(!f){ copySay('Could not copy. It is ' + text, true); return; }
     f.value = text;
     f.select();
-    copySay('Press Ctrl/Cmd+C to copy.', true);
+    friendsSay(btn, 'Press Ctrl/Cmd+C to copy.');
   }
 }
 
@@ -11313,13 +11338,28 @@ const LAYER_H = 35, LAYER_OFFSET = 16;
 // it read as a rendering fault. Nathan: "dont know whats causing this graph to
 // break but its fucked."
 //
-// One band per person now, equal height, a 3px gap, no overlap — the geometry
-// the club share image already uses and that he approved there. LAYER_H and
-// LAYER_OFFSET survive as the numbers that decide how TALL the stack is, so it
-// keeps the height it had and divides it instead of overlapping it; BAND_MIN
-// stops a large club squeezing every band into something unreadable, and past
-// about five people the stack grows rather than shrinking the bands.
-const BAND_GAP = 3, BAND_MIN = 18;
+// Flat bands fixed the height but cost the thing he actually liked:
+//
+//   "we've lost the fancy overlaying bars now. bring those back but just dont
+//    have these gaps in them (the horizontal bars inside the vertical bars) and
+//    make sure there's no incorrect overlaying of the bars"
+//
+// So the overlap is back, and the ONE rule that was missing is now in place:
+// every ticked mark reaches the bottom of the whole stack, not just to the next
+// ticked layer. That is what removes the stripes. The old code stretched only
+// the deepest ticked layer (`full`) and stretched a front one just far enough
+// to meet the next (`dropfill`) — and when the next ticked layer was closer
+// than LAYER_H it stretched it NOT AT ALL, leaving the band's own 35px mark
+// floating above whatever was drawn below it. That gap, filled by a deeper
+// band's colour or by a grey nub, is the horizontal bar inside a vertical one.
+//
+// With every ticked mark running to the bottom:
+//   · a column is a single solid run of one colour — no stripes are possible;
+//   · a member's colour is always exactly the same height wherever it is the
+//     front-most tick, which is the original complaint on this card
+//     ("look at how the yellow bar isn't the same height all the way across");
+//   · height still reads as "how far along is whoever has this", which is the
+//     overlapping look he wants kept.
 
 // Sixteen since CLU-136. Past sixteen a repeat is unavoidable and needs a
 // second distinguishing mark rather than more hues — see the card.
@@ -12254,14 +12294,18 @@ function paintStack(){
 
   const list = drawn.slice()
     .sort((a,b)=> readsOf(b).size - readsOf(a).size || a.name.localeCompare(b.name));
-  // Every band the same height, one under the other. The old flat OFFSET is
-  // still what sets the total, so the stack does not change size on the page —
-  // it is divided rather than overlapped.
-  const n = list.length;
-  const bandH = Math.max(BAND_MIN,
-    Math.round((LAYER_H + (n-1)*LAYER_OFFSET - BAND_GAP*(n-1)) / n));
-  const stackH = bandH*n + BAND_GAP*(n-1);
+  // Flat, deliberately. Shrinking the offset as the group grew kept the stack
+  // short but made the front reader's band pull further ahead of everyone
+  // else's the more people joined — at six it was three times a rear band.
+  const offset = LAYER_OFFSET;
+  const stackH = LAYER_H + (list.length-1)*offset;
   const reads = list.map(readsOf);
+
+  // for each column, the furthest-back layer still showing something there
+  const deepest = ORDER.map(id=>{
+    for(let i=reads.length-1; i>=0; i--) if(reads[i].has(id)) return i;
+    return -1;
+  });
 
   const rows = rowsFor();
   let html = '';
@@ -12277,12 +12321,16 @@ function paintStack(){
         if(!lead && SECSTART.has(idx)) ticks += '<span class="tick sep"></span>';
         lead = false;
         const on = reads[i].has(ORDER[idx]);
-        // ⚠ `full`, `veil` and `dropfill` used to live here. All three existed
-        // only to paper over the overlap — stretching a mark down to the next
-        // ticked layer, and hiding an unread nub that would otherwise punch a
-        // grey hole through the band of somebody behind it. With bands that do
-        // not overlap, none of those cases can occur: a band is one person's
-        // row and nothing else is ever drawn inside it.
+        // ⚠ `full` and `dropfill` are gone — not because the overlap went away,
+        // but because the distinction they drew was the bug. EVERY ticked mark
+        // now runs from its own layer's top to the bottom of the stack (see
+        // `.stackrow .tick.on` and --fillH), so there is never a gap under one.
+        //
+        // `veil` stays, and it is the other half of "no incorrect overlaying":
+        // this layer sits in FRONT of the deeper ones, so its unread nub would
+        // paint a grey hole straight through the solid column of somebody
+        // behind it. Where anyone deeper has ticked, the nub is not drawn.
+        const veil = !on && deepest[idx] > i;
         // CLU-508, Nathan: "make sure it works on compares too if possible".
         // YOUR band only, and that is a limit rather than a shortcut: a door's
         // fraction comes from the target list's own stored ticks, and this
@@ -12292,8 +12340,9 @@ function paintStack(){
         // somebody else. A veiled mark is left alone — it is transparent by the
         // rule that stops a grey nub punching through a deeper reader's band,
         // and a gradient there would punch exactly that hole.
-        const pf = (mine && !on) ? (doorFrac(ORDER[idx]) || 0) : 0;
+        const pf = (mine && !on && !veil) ? (doorFrac(ORDER[idx]) || 0) : 0;
         const cls = 'tick'+(TIERED&&TIEROF[idx]===1?' t1':'')+(on?' on':'')
+                  + (veil?' veil':'')
                   + (pf > 0 ? ' part' : '');
         const sty = (WEIGHTED ? '--w:'+WEIGHT[idx]+';' : '')
                   + (pf > 0 ? '--p:'+(pf*100).toFixed(1)+'%;--pc:'+color+';' : '')
@@ -12301,11 +12350,11 @@ function paintStack(){
         ticks += '<span class="'+cls+'" data-i="'+idx+'"'
               + (sty?' style="'+sty+'"':'')+'></span>';
       }
-      layers += '<div class="layer" style="top:'+(i*(bandH+BAND_GAP))+'px">'
-              + ticks+'</div>';
+      layers += '<div class="layer" style="top:'+(i*offset)+'px;z-index:'+(list.length-i)
+              + ';--fillH:'+(stackH - i*offset)+'px">'+ticks+'</div>';
     });
     html += '<div class="stackrow'+(WEIGHTED?' wtd':'')
-          + '" style="height:'+stackH+'px;--layerH:'+bandH+'px" '
+          + '" style="height:'+stackH+'px;--layerH:'+LAYER_H+'px" '
           + 'data-a="'+a+'" data-b="'+b+'">'+layers+'</div>';
   });
 
