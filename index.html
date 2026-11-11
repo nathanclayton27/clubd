@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qHq7r8D5shBmzpywhLgYkRl8HL2ARhirEXteH50dz1A=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-BuJATPmP+Y+2T8cpUTHGCtOrAR7p/Ll6sRrcETEyueg=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -2571,7 +2571,7 @@ let MANIFEST = [
     "kind": "games",
     "year": "1986–",
     "popularity": 92,
-    "blurb": "31 games — the mainline 21 plus remakes and spin-offs, about 679 hours of story, 463 of it mainline.",
+    "blurb": "32 games — the mainline 21 plus remakes and spin-offs, about 697 hours of story, 463 of it mainline.",
     "accent": "#2E6B4F",
     "accentDark": "#7FD0A8",
     "unit": {
@@ -2579,8 +2579,8 @@ let MANIFEST = [
       "many": "games"
     },
     "vpast": "played",
-    "total": 31,
-    "totalw": 679.05
+    "total": 32,
+    "totalw": 697.15
   },
   {
     "slug": "one-piece",
@@ -2898,16 +2898,16 @@ let MANIFEST = [
       "tv"
     ],
     "title": "Avatar: The Last Airbender",
-    "subtitle": "with The Legend of Korra",
+    "subtitle": "with The Legend of Korra and Seven Havens",
     "aliases": [
       "atla",
       "avatar the last airbender",
       "korra"
     ],
     "kind": "animated series",
-    "year": "2005–2014",
+    "year": "2005–2026",
     "popularity": 85,
-    "blurb": "All 113 episodes of both series in air order — 61 chapters of The Last Airbender, then Korra's 52.",
+    "blurb": "All 126 episodes of the three series in air order — 61 chapters of The Last Airbender, then Korra's 52 and Seven Havens' 13.",
     "accent": "#2B3F73",
     "accentDark": "#5FD3D9",
     "unit": {
@@ -2915,7 +2915,7 @@ let MANIFEST = [
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 113
+    "total": 126
   },
   {
     "slug": "bleach",
@@ -2925,9 +2925,9 @@ let MANIFEST = [
     "title": "Bleach",
     "subtitle": "The original run and Thousand-Year Blood War",
     "kind": "anime",
-    "year": "2004–",
+    "year": "2004–2026",
     "popularity": 85,
-    "blurb": "411 episodes in broadcast order, both series, with the filler marked.",
+    "blurb": "416 episodes in broadcast order, both series, with the filler marked.",
     "accent": "#E85A0C",
     "accentDark": "#FF9B5E",
     "unit": {
@@ -2935,7 +2935,7 @@ let MANIFEST = [
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 411
+    "total": 416
   },
   {
     "slug": "middle-earth",
@@ -3302,7 +3302,7 @@ let MANIFEST = [
     "kind": "tv & films",
     "year": "1999–",
     "popularity": 80,
-    "blurb": "163 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
+    "blurb": "168 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
     "accent": "#472F8C",
     "accentDark": "#5FEFB8",
     "unit": {
@@ -3310,7 +3310,7 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 163
+    "total": 168
   },
   {
     "slug": "godzilla",
@@ -3325,7 +3325,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "1954–",
     "popularity": 80,
-    "blurb": "38 films from 1954 to 2024, the Monarch series, and all 8 Godzilla Fest shorts.",
+    "blurb": "39 films from 1954 to 2026, the Monarch series, and all 8 Godzilla Fest shorts.",
     "accent": "#2E6B3F",
     "accentDark": "#7FD096",
     "unit": {
@@ -3333,8 +3333,8 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 47,
-    "totalw": 63.21
+    "total": 50,
+    "totalw": 65.44
   },
   {
     "slug": "one-piece-manga",
@@ -5609,7 +5609,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "1984–",
     "popularity": 63,
-    "blurb": "Spines #1 to #1337 — 1337 releases, about 2313 hours, each with the formats Criterion put it out on.",
+    "blurb": "Spines #1 to #1344 — 1343 releases, about 2306 hours, each with the formats Criterion put it out on.",
     "accent": "#8A6D2F",
     "accentDark": "#D6B36A",
     "unit": {
@@ -5617,8 +5617,8 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 1418,
-    "totalw": 2313.5,
+    "total": 1424,
+    "totalw": 2306.6,
     "random": true
   },
   {
@@ -7719,13 +7719,13 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '68282dbb6f5e';
+const BUILD = '690a869030e3';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
 // rewires a sync group re-runs it — which is how a newly added list inherits
 // ticks people already had elsewhere. See backfillSync().
-const SYNCVER = 'fc833d8e0f';
+const SYNCVER = '64e8ba677d';
 
 // A tab that is already open never re-runs its own boot, so checking once was
 // only ever going to help people who reloaded anyway. This polls, and reloads
