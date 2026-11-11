@@ -6,8 +6,9 @@
 Everything animated, sectioned by continuity: Mamoru Oshii's two films; the
 Stand Alone Complex television continuity (season 1, 2nd GIG, the Solid
 State Society TV film, and — much later — SAC_2045 with its Sustainable War
-compilation film between the seasons); and the Arise continuity (five
-feature-length OVA "borders" closed by the 2015 New Movie).
+compilation film between the seasons); the Arise continuity (five
+feature-length OVA "borders" closed by the 2015 New Movie); and Science
+Saru's 2026 television series, a direct adaptation of the manga (CLU-605).
 
 Everything numeric comes from tools/data/ghost-in-the-shell.json, built by
 scratch/agent-anime/harvest_gits.py from the Wikipedia episode lists and
@@ -27,7 +28,7 @@ work id) since that list shipped. The failure was silent: a list that cannot
 pair simply never appears in a group.
 
 CLU-369 made the gate a per-row declaration, and this is that declaration.
-The four rows that are single films say `m: "f"`. The 76 episodes say
+The four rows that are single films say `m: "f"`. The 86 episodes say
 nothing, and neither do the five Arise borders — they are feature-length OVAs,
 they are numbered by border rather than by year, and a film list must never
 tick one. Sustainable War says nothing either: it has no English article, so
@@ -257,11 +258,23 @@ def main():
             "sub": "2022 · 12 episodes",
             "items": ep_rows(d["s2045b"], "gits-2045-s2e"),
         },
+        {
+            "id": "saru2026",
+            "title": "The Ghost in the Shell (2026)",
+            "sub": "2026 · 10 episodes",
+            "intro": "A fourth continuity: Science Saru's direct adaptation "
+                     "of the original manga, unconnected to everything "
+                     "above.",
+            "links": [{"label": "The series",
+                       "url": WIKI + "The_Ghost_in_the_Shell_"
+                              "(2026_TV_series)"}],
+            "items": ep_rows(d["saru"], "gits-2026e"),
+        },
     ]
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == 86, len(ids)
+    assert len(ids) == 96, len(ids)
     hours = sum(x["w"] for s in sections for x in s["items"])
 
     prop = {
@@ -270,10 +283,11 @@ def main():
         "subtitle": "everything animated, by continuity",
         "kind": "anime",
         "popularity": 64,
-        "year": "1995–2022",
-        "blurb": "Three animated continuities — the Oshii films, Stand "
-                 "Alone Complex through SAC_2045, and Arise — %d entries, "
-                 "about %d hours." % (len(ids), round(hours)),
+        "year": "1995–2026",
+        "blurb": "Four animated continuities — the Oshii films, Stand "
+                 "Alone Complex through SAC_2045, Arise, and Science Saru's "
+                 "2026 series — %d entries, about %d hours."
+                 % (len(ids), round(hours)),
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -281,12 +295,13 @@ def main():
         "accentDark": "#F5933E",
         "tiers": False,
         "notes": [
-            ["Sections are continuities.", "Three separate animated tellings "
+            ["Sections are continuities.", "Four separate animated tellings "
              "share these characters: Oshii's two films; the Stand Alone "
              "Complex television line (seasons 1 and 2, Solid State Society, "
-             "and — set eleven years later — SAC_2045); and Arise, whose "
-             "five borders the 2015 New Movie concludes. Watch a continuity "
-             "together; nothing carries between them."],
+             "and — set eleven years later — SAC_2045); Arise, whose "
+             "five borders the 2015 New Movie concludes; and Science Saru's "
+             "2026 series, a direct adaptation of the manga. Watch a "
+             "continuity together; nothing carries between them."],
             ["Weights.", "Episodes weigh 0.4 hours, films their runtimes, "
              "and the Arise borders the 50 minutes each their article "
              "gives. Sustainable War has no runtime on record anywhere "

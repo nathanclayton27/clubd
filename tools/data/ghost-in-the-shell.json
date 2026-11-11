@@ -442,6 +442,58 @@
   "year": 2021,
   "runtime": null
  },
+ "saru": [
+  {
+   "n": 1,
+   "t": "Prologue + Super Spartan i",
+   "year": 2026
+  },
+  {
+   "n": 2,
+   "t": "Super Spartan ii + Junk Jungle i",
+   "year": 2026
+  },
+  {
+   "n": 3,
+   "t": "Junk Jungle ii + Megatech Machine i + ii",
+   "year": 2026
+  },
+  {
+   "n": 4,
+   "t": "Robot Rondo",
+   "year": 2026
+  },
+  {
+   "n": 5,
+   "t": "Phantom Fund",
+   "year": 2026
+  },
+  {
+   "n": 6,
+   "t": "Dumb Barter",
+   "year": 2026
+  },
+  {
+   "n": 7,
+   "t": "Bye Bye Clay",
+   "year": 2026
+  },
+  {
+   "n": 8,
+   "t": "Intermission + Brain Drain i",
+   "year": 2026
+  },
+  {
+   "n": 9,
+   "t": "Brain Drain ii",
+   "year": 2026
+  },
+  {
+   "n": 10,
+   "t": "Brain Drain iii + Ghost Coast + Epilogue",
+   "year": 2026
+  }
+ ],
  "wd": {
   "Ghost in the Shell": {
    "page": "Ghost in the Shell (1995 film)",

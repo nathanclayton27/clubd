@@ -4,8 +4,8 @@
   "subtitle": "everything animated, by continuity",
   "kind": "anime",
   "popularity": 64,
-  "year": "1995–2022",
-  "blurb": "Three animated continuities — the Oshii films, Stand Alone Complex through SAC_2045, and Arise — 86 entries, about 41 hours.",
+  "year": "1995–2026",
+  "blurb": "Four animated continuities — the Oshii films, Stand Alone Complex through SAC_2045, Arise, and Science Saru's 2026 series — 96 entries, about 45 hours.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -22,7 +22,7 @@
   "notes": [
     [
       "Sections are continuities.",
-      "Three separate animated tellings share these characters: Oshii's two films; the Stand Alone Complex television line (seasons 1 and 2, Solid State Society, and — set eleven years later — SAC_2045); and Arise, whose five borders the 2015 New Movie concludes. Watch a continuity together; nothing carries between them."
+      "Four separate animated tellings share these characters: Oshii's two films; the Stand Alone Complex television line (seasons 1 and 2, Solid State Society, and — set eleven years later — SAC_2045); Arise, whose five borders the 2015 New Movie concludes; and Science Saru's 2026 series, a direct adaptation of the manga. Watch a continuity together; nothing carries between them."
     ],
     [
       "Weights.",
@@ -661,6 +661,80 @@
           "id": "gits-2045-s2e12",
           "t": "DOUBLE THINK / Event Boundary",
           "n": "12",
+          "w": 0.4
+        }
+      ]
+    },
+    {
+      "id": "saru2026",
+      "title": "The Ghost in the Shell (2026)",
+      "sub": "2026 · 10 episodes",
+      "intro": "A fourth continuity: Science Saru's direct adaptation of the original manga, unconnected to everything above.",
+      "links": [
+        {
+          "label": "The series",
+          "url": "https://en.wikipedia.org/wiki/The_Ghost_in_the_Shell_(2026_TV_series)"
+        }
+      ],
+      "items": [
+        {
+          "id": "gits-2026e1",
+          "t": "Prologue + Super Spartan i",
+          "n": "1",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e2",
+          "t": "Super Spartan ii + Junk Jungle i",
+          "n": "2",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e3",
+          "t": "Junk Jungle ii + Megatech Machine i + ii",
+          "n": "3",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e4",
+          "t": "Robot Rondo",
+          "n": "4",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e5",
+          "t": "Phantom Fund",
+          "n": "5",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e6",
+          "t": "Dumb Barter",
+          "n": "6",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e7",
+          "t": "Bye Bye Clay",
+          "n": "7",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e8",
+          "t": "Intermission + Brain Drain i",
+          "n": "8",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e9",
+          "t": "Brain Drain ii",
+          "n": "9",
+          "w": 0.4
+        },
+        {
+          "id": "gits-2026e10",
+          "t": "Brain Drain iii + Ghost Coast + Epilogue",
+          "n": "10",
           "w": 0.4
         }
       ]
