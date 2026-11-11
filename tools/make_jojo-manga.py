@@ -4,9 +4,9 @@
     python tools/make_jojo-manga.py
 
 The manga, in the Japanese tankobon volumization — one section per volume,
-one row per chapter, nine parts end to end. The anime list is `jojo` and
-stops at Stone Ocean; this carries on through Steel Ball Run, JoJolion and
-The JoJoLands.
+one row per chapter, nine parts end to end. The anime list is `jojo`; the
+anime reached Steel Ball Run in 2026, and this carries on through it,
+JoJolion and The JoJoLands.
 
 **The numbering restarts, and the source is what says so.** Shueisha ran the
 volumes 1-63 straight through Parts 1-5; the hub article's lead states it
@@ -44,8 +44,8 @@ WIKI = "https://en.wikipedia.org/wiki/"
 # The totals the group signed up for. Bump these deliberately, never to make
 # a red build go green — a changed number means the source moved.
 EXPECTED = {
-    "chapters": 989,
-    "volumes": 139,
+    "chapters": 993,
+    "volumes": 140,
     # part -> (volumes, first chapter, last chapter)
     "parts": {
         1: (5, 1, 47),
@@ -56,12 +56,12 @@ EXPECTED = {
         6: (17, 1, 158),
         7: (24, 1, 95),
         8: (27, 1, 110),
-        9: (8, 1, 32),
+        9: (9, 1, 36),
     },
     # the last part is still being serialized; this is its released-volume
     # count, asserted upstream against The JoJoLands' own infobox
     "ongoing_part": 9,
-    "ongoing_volumes": 8,
+    "ongoing_volumes": 9,
 }
 
 # per-part: the Wikipedia article the volume table lives on, and the item-id
@@ -225,10 +225,10 @@ def main():
              "article, so the next volume fails the build rather than leaving "
              "the list quietly short. Rerun the pipeline to extend it."
              % EXPECTED["ongoing_volumes"]],
-            ["The anime covers the first six parts.",
-             "The jojo list here is the David Production anime and ends with "
-             "Stone Ocean. Everything from Steel Ball Run on exists only as "
-             "manga."],
+            ["The anime has reached Steel Ball Run.",
+             "The jojo list here is the David Production anime, which began "
+             "adapting Steel Ball Run in 2026. JoJolion and The JoJoLands "
+             "exist only as manga."],
             "Volume boundaries and chapter numbers machine-read from the nine "
             "Wikipedia part articles that List of JoJo's Bizarre Adventure "
             "volumes transcludes, each volume checked to tile its part's "

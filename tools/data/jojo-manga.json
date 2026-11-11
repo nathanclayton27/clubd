@@ -1,6 +1,6 @@
 {
   "sources": {
-    "fetched": "2026-08-25",
+    "fetched": "2026-11-11",
     "hub": "List of JoJo's Bizarre Adventure volumes",
     "pages": [
       "Phantom-Blood",
@@ -593,11 +593,11 @@
       "extras": [
         [
           "2 (82)",
-          "Steel Ball Run: How the Race Got Started"
+          "The Tale of How the Steel Ball Run Came to Be"
         ],
         [
           "6 (86)",
-          "The Story of F. Valentine"
+          "The Story of Funny Valentine"
         ]
       ],
       "pending": [],
@@ -929,13 +929,13 @@
       "name": "The JoJoLands",
       "run": "tjl",
       "first": 1,
-      "last": 32,
+      "last": 36,
       "layout": [
         "parallel"
       ],
       "extras": [],
       "pending": [
-        "9 (140)"
+        "10 (141)"
       ],
       "volumes": [
         {
@@ -985,6 +985,12 @@
           "cum": 139,
           "first": 29,
           "last": 32
+        },
+        {
+          "vol": 9,
+          "cum": 140,
+          "first": 33,
+          "last": 36
         }
       ]
     }

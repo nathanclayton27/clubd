@@ -5,7 +5,7 @@
   "kind": "manga",
   "popularity": 70,
   "year": "1987–",
-  "blurb": "All 989 chapters in 139 volumes — nine parts, nine JoJos, one bloodline, still running.",
+  "blurb": "All 993 chapters in 140 volumes — nine parts, nine JoJos, one bloodline, still running.",
   "unit": {
     "one": "chapter",
     "many": "chapters"
@@ -29,11 +29,11 @@
     ],
     [
       "Still running.",
-      "The JoJoLands is ongoing, and this stops at volume 8 — the last one released. The generator asserts that count against the article, so the next volume fails the build rather than leaving the list quietly short. Rerun the pipeline to extend it."
+      "The JoJoLands is ongoing, and this stops at volume 9 — the last one released. The generator asserts that count against the article, so the next volume fails the build rather than leaving the list quietly short. Rerun the pipeline to extend it."
     ],
     [
-      "The anime covers the first six parts.",
-      "The jojo list here is the David Production anime and ends with Stone Ocean. Everything from Steel Ball Run on exists only as manga."
+      "The anime has reached Steel Ball Run.",
+      "The jojo list here is the David Production anime, which began adapting Steel Ball Run in 2026. JoJolion and The JoJoLands exist only as manga."
     ],
     "Volume boundaries and chapter numbers machine-read from the nine Wikipedia part articles that List of JoJo's Bizarre Adventure volumes transcludes, each volume checked to tile its part's chapters with no gap or overlap. Two unnumbered volume-exclusive Steel Ball Run extras carry no chapter number and are left out."
   ],
@@ -6791,6 +6791,39 @@
           "id": "jjm-tjl-32",
           "t": "Chapter",
           "n": "32"
+        }
+      ]
+    },
+    {
+      "id": "p9-v9",
+      "title": "The JoJoLands · Volume 9",
+      "sub": "chapters 33–36 · volume 140 overall",
+      "links": [
+        {
+          "label": "The volume list",
+          "url": "https://en.wikipedia.org/wiki/The_JoJoLands"
+        }
+      ],
+      "items": [
+        {
+          "id": "jjm-tjl-33",
+          "t": "Chapter",
+          "n": "33"
+        },
+        {
+          "id": "jjm-tjl-34",
+          "t": "Chapter",
+          "n": "34"
+        },
+        {
+          "id": "jjm-tjl-35",
+          "t": "Chapter",
+          "n": "35"
+        },
+        {
+          "id": "jjm-tjl-36",
+          "t": "Chapter",
+          "n": "36"
         }
       ]
     }

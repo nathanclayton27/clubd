@@ -46,7 +46,7 @@ short of Hickman so the two lists meet without overlapping a single row),
 run — the 34 issues he actually wrote, with the fill-ins by other hands
 left out rather than padded in to look complete), *One Piece* in
 
-manga form, *JoJo's Bizarre Adventure* (989 chapters across nine parts, with
+manga form, *JoJo's Bizarre Adventure* (993 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
 flattened), *Black Panther* (350 issues — both McGregor arcs inside *Jungle
 Action*, Priest, Hudlin, Coates, Ridley and Ewing, with the Fantastic Four
