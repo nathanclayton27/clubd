@@ -1,11 +1,11 @@
 {
   "slug": "avatar",
   "title": "Avatar: The Last Airbender",
-  "subtitle": "with The Legend of Korra",
+  "subtitle": "with The Legend of Korra and Seven Havens",
   "kind": "animated series",
   "popularity": 85,
-  "year": "2005–2014",
-  "blurb": "All 113 episodes of both series in air order — 61 chapters of The Last Airbender, then Korra's 52.",
+  "year": "2005–2026",
+  "blurb": "All 126 episodes of the three series in air order — 61 chapters of The Last Airbender, then Korra's 52 and Seven Havens' 13.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -21,26 +21,26 @@
   "tiers": false,
   "notes": [
     [
-      "One list, two series.",
-      "The Legend of Korra is a sequel, not a spin-off: the same world, the same creators, the next Avatar. The Last Airbender's three books run first and Korra's four follow, which is air order and story order at once."
+      "One list, three series.",
+      "The Legend of Korra and Seven Havens are sequels, not spin-offs: the same world, the same creators, the next Avatar. The Last Airbender's three books run first, then Korra's four, then Seven Havens', which is air order and story order at once."
     ],
     [
       "Books, not seasons.",
-      "The franchise calls a season a Book and an episode a chapter, and both Wikipedia lists follow it. One section per book; the number on a row is its place within that book, and every section header carries the series-wide range so the 61 and the 52 stay countable."
+      "The franchise calls a season a Book and an episode a chapter. One section per book; the number on a row is its place within that book, and every section header carries the series-wide range so the 61, the 52 and the 13 stay countable."
     ],
     [
       "The live-action versions are not here.",
-      "The 2010 film and the 2024 Netflix series retell this story as separate works with their own reception, and neither is an episode of either show. Left out deliberately, not forgotten."
+      "The 2010 film and the 2024 Netflix series retell this story as separate works with their own reception, and neither is an episode of any of the three shows. Left out deliberately, not forgotten."
     ],
     [
       "Multi-part chapters get a row each.",
-      "Seven table entries across the two series cover more than one numbered chapter — Winter Solstice, The Siege of the North, The Day of Black Sun, The Boiling Rock, Sozin's Comet, Civil Wars and Beginnings — 16 chapters between them. Each part is numbered separately at the source, so each part is its own row here."
+      "Eight table entries across the three series cover more than one numbered chapter — Winter Solstice, The Siege of the North, The Day of Black Sun, The Boiling Rock, Sozin's Comet, Civil Wars, Beginnings and The Envoys — 18 chapters between them. Each part is numbered separately at the source, so each part is its own row here."
     ],
     [
       "Nothing is weighted.",
-      "The episode tables carry no per-episode runtime and each series infobox gives one blanket figure for every chapter, which is plainly wrong for a four-part finale that also aired as a two-hour television film. Repeating a number the source does not have per row would be inventing data, so nothing is weighted at all and all 113 rows count the same."
+      "The episode tables carry no per-episode runtime and each series infobox gives at most one blanket figure for every chapter, which is plainly wrong for a four-part finale that also aired as a two-hour television film. Repeating a number the source does not have per row would be inventing data, so nothing is weighted at all and all 126 rows count the same."
     ],
-    "Titles, numbering and air dates are read from the seven Wikipedia season articles the two episode lists transclude. Both series totals and every book's count are checked against those lists' series-overview boxes and the series infoboxes; the generator fails rather than ship a list that disagrees with its sources."
+    "Titles, numbering and air dates are read from the seven Wikipedia season articles the two episode lists transclude, and from Seven Havens' own article, which carries its only episode table. Every series total and every book's count is checked against a series-overview box (the two lists' own, and the franchise article's for Seven Havens) and the series infoboxes; the generator fails rather than ship a list that disagrees with its sources."
   ],
   "sections": [
     {
@@ -696,6 +696,84 @@
         {
           "id": "korra-52",
           "t": "The Last Stand",
+          "n": "13"
+        }
+      ]
+    },
+    {
+      "id": "havens-b1",
+      "title": "Seven Havens · Book One: Survival",
+      "sub": "2026 · 13 episodes · 1–13 of 13",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Avatar:_Seven_Havens#Episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "havens-1",
+          "t": "On the Horizon",
+          "n": "1"
+        },
+        {
+          "id": "havens-2",
+          "t": "Into the Storm",
+          "n": "2"
+        },
+        {
+          "id": "havens-3",
+          "t": "The Order",
+          "n": "3"
+        },
+        {
+          "id": "havens-4",
+          "t": "The Faceless",
+          "n": "4"
+        },
+        {
+          "id": "havens-5",
+          "t": "The One Left Behind",
+          "n": "5"
+        },
+        {
+          "id": "havens-6",
+          "t": "Night of the Afflicted",
+          "n": "6"
+        },
+        {
+          "id": "havens-7",
+          "t": "What Lies Beneath",
+          "n": "7"
+        },
+        {
+          "id": "havens-8",
+          "t": "The Envoys, Part 1",
+          "n": "8"
+        },
+        {
+          "id": "havens-9",
+          "t": "The Envoys, Part 2",
+          "n": "9"
+        },
+        {
+          "id": "havens-10",
+          "t": "Ghosts and Spirits",
+          "n": "10"
+        },
+        {
+          "id": "havens-11",
+          "t": "Battle of the Ruins",
+          "n": "11"
+        },
+        {
+          "id": "havens-12",
+          "t": "The Dome",
+          "n": "12"
+        },
+        {
+          "id": "havens-13",
+          "t": "The Root Chakra",
           "n": "13"
         }
       ]
