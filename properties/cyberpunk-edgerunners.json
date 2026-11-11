@@ -3,8 +3,8 @@
   "title": "Cyberpunk: Edgerunners",
   "kind": "anime",
   "popularity": 60,
-  "year": "2022",
-  "blurb": "Season one — ten episodes across two weeks, five a week.",
+  "year": "2022–2026",
+  "blurb": "Both series — twenty episodes across four weeks, five a week.",
   "unit": { "one": "episode", "many": "episodes" },
   "verb": { "base": "watch", "past": "watched", "ing": "watching" },
   "itemOrder": "number-first",
@@ -15,7 +15,9 @@
     "kind": "windows",
     "windows": [
       { "offset": 0, "days": 7, "through": 5, "label": "Week 1" },
-      { "offset": 7, "days": 7, "through": 10, "label": "Week 2" }
+      { "offset": 7, "days": 7, "through": 10, "label": "Week 2" },
+      { "offset": 14, "days": 7, "through": 15, "label": "Week 3" },
+      { "offset": 21, "days": 7, "through": 20, "label": "Week 4" }
     ]
   },
   "rules": [
@@ -24,9 +26,9 @@
     "Finish a week early and the remaining days are yours off until the next window opens."
   ],
   "notes": [
-    ["Season one only, for now.", "Ten episodes, Studio Trigger, 2022. A second season is coming and will be added when it does."],
-    ["The schedule is relative.", "Two windows of a week each, five episodes per window. It starts when a group's owner sets the start date, so any group can run it whenever they like — the same shape as the Fullmetal Alchemist club schedule."],
-    "Episode titles from Wikipedia. Each is named after a song, which is the show being the show."
+    ["Both series.", "Ten episodes, Studio Trigger, 2022, then Cyberpunk: Edgerunners 2, a standalone sequel from Trigger: ten more, all released on Netflix on 20 October 2026."],
+    ["The schedule is relative.", "Four windows of a week each, five episodes per window. It starts when a group's owner sets the start date, so any group can run it whenever they like — the same shape as the Fullmetal Alchemist club schedule."],
+    "Episode titles from Wikipedia. Each in the first series is named after a song, which is the show being the show."
   ],
   "sections": [
     {
@@ -51,6 +53,30 @@
         { "id": "edge-8", "t": "Stay", "n": "8" },
         { "id": "edge-9", "t": "Humanity", "n": "9" },
         { "id": "edge-10", "t": "My Moon My Man", "n": "10" }
+      ]
+    },
+    {
+      "id": "week3",
+      "title": "Week 3",
+      "sub": "Edgerunners 2 · episodes 1–5",
+      "items": [
+        { "id": "edge2-1", "t": "Last Chance for a Slow Dance", "n": "1" },
+        { "id": "edge2-2", "t": "Give Me Another Day", "n": "2" },
+        { "id": "edge2-3", "t": "0+2=1", "n": "3" },
+        { "id": "edge2-4", "t": "Someone That I Used to Know", "n": "4" },
+        { "id": "edge2-5", "t": "Fades (Pass the Distance)", "n": "5" }
+      ]
+    },
+    {
+      "id": "week4",
+      "title": "Week 4",
+      "sub": "Edgerunners 2 · episodes 6–10",
+      "items": [
+        { "id": "edge2-6", "t": "Everything Hate", "n": "6" },
+        { "id": "edge2-7", "t": "To the Depths with You", "n": "7" },
+        { "id": "edge2-8", "t": "Serce", "n": "8" },
+        { "id": "edge2-9", "t": "Strictly Reserved for You", "n": "9" },
+        { "id": "edge2-10", "t": "Then Everyone Went Home", "n": "10" }
       ]
     }
   ]
