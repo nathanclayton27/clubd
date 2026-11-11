@@ -823,9 +823,14 @@
   "title": "Clayface",
   "page": "Clayface (film)",
   "imprint": false,
-  "runtime": null,
+  "runtime": 108,
   "released": "2026-10-22",
-  "cuts": [],
+  "cuts": [
+   [
+    108,
+    ""
+   ]
+  ],
   "cuts_range": false,
   "infobox_page": "Clayface (film)"
  },

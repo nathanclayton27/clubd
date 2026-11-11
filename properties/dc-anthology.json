@@ -6,7 +6,7 @@
   "kind": "films & shows",
   "popularity": 82,
   "year": "1951–",
-  "blurb": "55 films and 139 seasons of television, about 1753 hours, in the order they came out.",
+  "blurb": "55 films and 140 seasons of television, about 1754 hours, in the order they came out.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -35,7 +35,7 @@
     ],
     [
       "Bar widths are runtimes, read from each film's own article.",
-      "Every film bar is the runtime printed in that film's own Wikipedia infobox, which is where a length keeps the name of the version it belongs to — Wikidata collects every cut a film has and says which is which about none of them, which is how three rows here came to measure a director's cut under a plain title. Where a film has more than one version, the row says which one the bar is. Batgirl was shelved before release and the 2026–28 films are not out, so those weigh nothing and cannot drag a group's pace."
+      "Every film bar is the runtime printed in that film's own Wikipedia infobox, which is where a length keeps the name of the version it belongs to — Wikidata collects every cut a film has and says which is which about none of them, which is how three rows here came to measure a director's cut under a plain title. Where a film has more than one version, the row says which one the bar is. Batgirl was shelved before release and the 2027–28 films and series are not out, so those weigh nothing and cannot drag a group's pace."
     ],
     "Film and series lists from Wikipedia's DC publications tables, including the DC imprint tables — Vertigo and the rest — so Sandman, Lucifer, Preacher, V for Vendetta and Road to Perdition are all here. Release dates from Wikidata; film runtimes from each film's own Wikipedia article."
   ],
@@ -1239,7 +1239,7 @@
     {
       "id": "dcu",
       "title": "Elseworlds and the DCU",
-      "sub": "2024– · 6 films and 7 seasons · 53 hours",
+      "sub": "2024– · 6 films and 8 seasons · 54 hours",
       "intro": "The reboot, plus the standalone films that were never part of any continuity to begin with.",
       "items": [
         {
@@ -1299,7 +1299,7 @@
           "t": "Lanterns season 1",
           "n": "2026",
           "w": 5.73,
-          "note": "2026– · 1 season, 8 episodes"
+          "note": "2026– · 1 season, 8 episodes · DCU"
         },
         {
           "id": "dc-f-2026-supergirl",
@@ -1312,8 +1312,15 @@
           "id": "dc-f-2026-clayface",
           "t": "Clayface",
           "n": "2026",
-          "w": 0.0,
-          "note": "DCU · Not out yet"
+          "w": 1.8,
+          "note": "DCU"
+        },
+        {
+          "id": "dc-t-2027-the-people-v-gorilla-grodd-s1",
+          "t": "The People v. Gorilla Grodd season 1",
+          "n": "2027",
+          "w": 0,
+          "note": "2027– · 1 season, 8 episodes · DCU · Not out yet"
         },
         {
           "id": "dc-f-2027-man-of-tomorrow",

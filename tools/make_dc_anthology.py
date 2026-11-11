@@ -58,6 +58,12 @@ Seasons sit together at the year their series began rather than being spread
 across the years they aired, because the source has no per-season dates and
 inventing them would be worse than grouping them.
 
+A series the source lists under its own "Upcoming" header carries
+"upcoming": true in tools/data/dc_shows.json. Its seasons weigh nothing and say
+"Not out yet", the same as an unreleased film, until a re-parse finds the
+series has left that section — the episode count the source gives for it is a
+plan, not something anyone has watched.
+
 Unlike Marvel there is no single continuity to rank against, so there are no
 tiers. Where an entry belongs to a recognisable run — the Nolan films, the
 DCEU, the Arrowverse, the new DCU — its note says so.
@@ -183,6 +189,8 @@ SHOW_RUN = {
     ("Batwoman", 2019): "Arrowverse",
     ("Peacemaker", 2022): "DCU",
     ("The Penguin", 2024): "Matt Reeves' continuity",
+    ("Lanterns", 2026): "DCU",
+    ("The People v. Gorilla Grodd", 2027): "DCU",
 }
 
 # Wikipedia's Batwoman row is missing its Original airing cell entirely, so
@@ -317,12 +325,15 @@ def main():
             "t": f["title"], "n": str(f["year"]), "w": round(mins / 60.0, 2),
             "note": " · ".join(bits), "date": f["released"],
             "year": f["year"], "kind": "film",
+            "soon": not mins and f["year"] >= 2025,
         })
 
     for s in shows:
         seasons = s["seasons"] or 1
         eps = s["episodes"] or 0
-        per = round(eps / seasons * EP_MINUTES / 60.0, 2) if eps else 0
+        soon = bool(s.get("upcoming"))
+        per = round(eps / seasons * EP_MINUTES / 60.0, 2) if eps and not soon \
+            else 0
         year = int(s["start"]) if s["start"] else None
         if year is None and s["title"] in SHOW_YEAR_FIX:
             year, s["start"], s["end"] = SHOW_YEAR_FIX[s["title"]]
@@ -346,6 +357,8 @@ def main():
                     bits.append("A DC imprint, not the main line")
                 if run:
                     bits.append(run)
+            if soon:
+                bits.append("Not out yet")
             entries.append({
                 # DC reuses titles freely — The Flash, Swamp Thing and
                 # Human Target are each two different series — so the id
@@ -355,7 +368,7 @@ def main():
                 "q": SHOW_Q.get((s["title"], year, k)),
                 "n": str(sy), "w": per, "note": " · ".join(bits),
                 "date": "%d-06-15" % sy, "year": sy, "kind": "show",
-                "sortkey": (s["title"], k),
+                "sortkey": (s["title"], k), "soon": soon,
             })
 
     # sort seasons by number, not by title: "season 10" sorts before
@@ -389,6 +402,16 @@ def main():
     assert len(ids) == len(set(ids)), "duplicate ids"
     assert len(ids) == len(entries), (len(ids), len(entries))
     hours = sum(e["w"] for e in entries)
+
+    # The fourth note names which rows are not out yet. Pin what it says, so
+    # the day a release (or a new announcement) changes that, the build stops
+    # and the sentence gets reworded instead of going quietly stale.
+    soon = {(e["kind"], e["year"]) for e in entries if e["soon"]}
+    kinds = {k for k, _ in soon}
+    years = {y for _, y in soon}
+    assert kinds == {"film", "show"} and (min(years), max(years)) == (2027, 2028), (
+        "the note on rows that are not out yet says 2027-28 films and series; "
+        "the list now has %s" % sorted(soon))
 
     prop = {
         "slug": SLUG,
@@ -436,9 +459,9 @@ def main():
              "and says which is which about none of them, which is how three "
              "rows here came to measure a director's cut under a plain title. "
              "Where a film has more than one version, the row says which one "
-             "the bar is. Batgirl was shelved before release and the 2026–28 "
-             "films are not out, so those weigh nothing and cannot drag a "
-             "group's pace."],
+             "the bar is. Batgirl was shelved before release and the 2027–28 "
+             "films and series are not out, so those weigh nothing and cannot "
+             "drag a group's pace."],
             "Film and series lists from Wikipedia's DC publications tables, "
             "including the DC imprint tables — Vertigo and the rest — so "
             "Sandman, Lucifer, Preacher, V for Vendetta and Road to Perdition "
