@@ -5,7 +5,7 @@
 
 Four eras in the order they went out: the Fox run (production seasons 1-4),
 the four direct-to-video films, the Comedy Central revival (6-7) and the Hulu
-revival (8-11). 163 rows.
+revival (8-11). 168 rows.
 
 THE FILMS COUNT ONCE. The four 2007-09 films were re-cut into sixteen
 half-hour episodes and broadcast as Comedy Central's "season 5"; the two are
@@ -21,7 +21,7 @@ carries FOUR film rows, not sixteen episode rows, because:
 
 Each film row names its runtime and the season 5 episodes it was broadcast
 as, so nothing about the other representation is hidden. Choosing the films
-puts the list at 163 rows; the sixteen-part reading would have made it 175,
+puts the list at 168 rows; the sixteen-part reading would have made it 180,
 which is the number Wikipedia's series infobox carries.
 
 ORDER. Fox aired the first 72 episodes out of the order they were made, so a
@@ -53,11 +53,11 @@ SLUG = "futurama"
 CACHE = prop.ROOT / "scratch" / "futurama"
 LIST_PAGE = "List of Futurama episodes"
 
-# Season 11 was mid-run when this was built. Only episodes that had actually
-# aired by this date are listed; the constant is hard-coded rather than read
-# from the clock so re-running this produces the same file. It is the date the
-# source article itself carries in its {{Aired episodes}} stamp.
-AIRED_THROUGH = (2026, 8, 24)
+# Only episodes that had actually aired by this date are listed; the constant
+# is hard-coded rather than read from the clock so re-running this produces the
+# same file. Season 11 finished on this date, its {{End date}} in the list
+# article's series overview, so every season is now complete.
+AIRED_THROUGH = (2026, 9, 28)
 
 # The Fox run's four seasons, then Comedy Central's two, then Hulu's four.
 # Season 5 is the films and is built separately.
@@ -264,12 +264,12 @@ def main():
     assert [s["id"] for s in sections] == [
         "s1", "s2", "s3", "s4", "films", "s6", "s7", "s8", "s9", "s10", "s11"]
     total = sum(len(s["items"]) for s in sections)
-    assert total == 163, total
+    assert total == 168, total
     assert sum(1 for s in sections for x in s["items"] if "w" in x) == 0, \
         "a weight crept in — this list is unweighted end to end"
 
     aired_11 = len(sections[-1]["items"])
-    assert 0 < aired_11 < overview[11], "season 11 is no longer part-aired"
+    assert aired_11 == overview[11], "season 11 is part-aired again"
 
     p = {
         "slug": SLUG,
@@ -278,7 +278,7 @@ def main():
         "kind": "tv & films",
         "popularity": 80,
         "year": "1999–",
-        "blurb": "163 rows across four eras — the Fox run, the four "
+        "blurb": "168 rows across four eras — the Fox run, the four "
                  "direct-to-video films, the Comedy Central revival and the "
                  "Hulu revival, in the order they were made.",
         "unit": {"one": "entry", "many": "entries"},
@@ -295,8 +295,8 @@ def main():
              "work was written and released in, and the source article gives "
              "the sixteen parts no titles of their own — so this list carries "
              "four film rows, each naming its runtime and the season 5 "
-             "episodes it was broadcast as. That is 163 rows; the sixteen-part "
-             "reading would be 175."],
+             "episodes it was broadcast as. That is 168 rows; the sixteen-part "
+             "reading would be 180."],
             ["Production order, not the order Fox aired it.", "Fox broadcast "
              "the first 72 episodes out of the order they were made, so no "
              "box set, streaming season or episode list matches a strict "
@@ -308,10 +308,9 @@ def main():
              "per-row number to weight with; every row counts one. The four "
              "film rows are feature length and their notes say so rather than "
              "carrying a weight the rest of the list could not match."],
-            ["Season 11 is still going out.", "Five of its ten episodes had "
-             "aired when this was built, on August 24, 2026. The rest join "
-             "the list as they air, and so will the specials ordered for a "
-             "twelfth season."],
+            ["The specials are still to come.", "Hulu has ordered three "
+             "extended-length specials, the first due in 2027. Each joins the "
+             "list when it airs."],
             "Titles and airdates machine-read from Wikipedia's List of "
             "Futurama episodes, the season articles and the four film "
             "articles; every season's count is asserted against the list "
