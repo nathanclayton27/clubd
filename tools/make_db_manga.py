@@ -7,7 +7,8 @@ The original 519 chapters, numbered straight through as serialized, one
 section per collected volume — the Viz split the Wikipedia chapter lists use:
 Dragon Ball volumes 1–16 (chapters 1–194) and Dragon Ball Z volumes 1–26
 (chapters 195–519, which Viz renumbers 1–325; those sections carry both
-numbers). Then Dragon Ball Super, a separate ongoing series, as one section.
+numbers). Then Dragon Ball Super, a separate series on indefinite hiatus
+since March 2024, as one section.
 
 Super stops at the last chapter collected into a volume because that is
 where the Wikipedia chapter list stops — the count is asserted against that
@@ -89,8 +90,9 @@ def main():
     sections.append({
         "id": "super",
         "title": "Dragon Ball Super",
-        "sub": "chapters 1–%d · still running" % sup["chapters"],
-        "intro": "A separate series, drawn by Toyotarou, running since 2015. "
+        "sub": "chapters 1–%d · on hiatus" % sup["chapters"],
+        "intro": "A separate series, drawn by Toyotarou, begun in 2015 and on "
+                 "indefinite hiatus since March 2024. "
                  "Chapter %d is the last one collected into a volume, which "
                  "is as far as the chapter list goes." % sup["chapters"],
         "links": LS,
@@ -111,7 +113,7 @@ def main():
         "popularity": 78,
         "year": "1984–",
         "blurb": "The original %d chapters in %d volumes, then Dragon Ball "
-                 "Super — %d so far, still running."
+                 "Super — %d so far, on indefinite hiatus."
                  % (orig["chapters"], orig["volumes"], sup["chapters"]),
         "unit": {"one": "chapter", "many": "chapters"},
         "verb": {"base": "read", "past": "read", "ing": "reading"},
@@ -126,7 +128,8 @@ def main():
              % (orig["chapters"], len(orig["part1"]),
                 orig["part1"][-1]["last"], len(orig["part2"]),
                 orig["part2"][-1]["z_last"])],
-            ["Super.", "A separate ongoing series by Toyotarou. Chapters "
+            ["Super.", "A separate series by Toyotarou, on indefinite hiatus "
+             "since March 2024. Chapters "
              "here stop at %d — the last one collected into a volume, which "
              "is as far as the Wikipedia chapter list goes. Rerun the "
              "generator to extend it." % sup["chapters"]],

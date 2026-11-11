@@ -5,7 +5,7 @@
   "kind": "manga",
   "popularity": 78,
   "year": "1984–",
-  "blurb": "The original 519 chapters in 42 volumes, then Dragon Ball Super — 104 so far, still running.",
+  "blurb": "The original 519 chapters in 42 volumes, then Dragon Ball Super — 104 so far, on indefinite hiatus.",
   "unit": {
     "one": "chapter",
     "many": "chapters"
@@ -25,7 +25,7 @@
     ],
     [
       "Super.",
-      "A separate ongoing series by Toyotarou. Chapters here stop at 104 — the last one collected into a volume, which is as far as the Wikipedia chapter list goes. Rerun the generator to extend it."
+      "A separate series by Toyotarou, on indefinite hiatus since March 2024. Chapters here stop at 104 — the last one collected into a volume, which is as far as the Wikipedia chapter list goes. Rerun the generator to extend it."
     ],
     [
       "Volumes.",
@@ -3177,8 +3177,8 @@
     {
       "id": "super",
       "title": "Dragon Ball Super",
-      "sub": "chapters 1–104 · still running",
-      "intro": "A separate series, drawn by Toyotarou, running since 2015. Chapter 104 is the last one collected into a volume, which is as far as the chapter list goes.",
+      "sub": "chapters 1–104 · on hiatus",
+      "intro": "A separate series, drawn by Toyotarou, begun in 2015 and on indefinite hiatus since March 2024. Chapter 104 is the last one collected into a volume, which is as far as the chapter list goes.",
       "links": [
         {
           "label": "The chapter list",
