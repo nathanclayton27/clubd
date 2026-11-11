@@ -6,7 +6,7 @@
   "kind": "shows & films",
   "popularity": 62,
   "year": "1966–",
-  "blurb": "103 films and 108 seasons of television, about 923 hours, in the order they came out.",
+  "blurb": "103 films and 111 seasons of television, about 931 hours, in the order they came out.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -257,7 +257,7 @@
           "id": "dca-f-1993-batman-mask-of-the-phantasm",
           "t": "Batman: Mask of the Phantasm",
           "n": "1993",
-          "w": 1.28,
+          "w": 1.27,
           "note": "DCAU"
         },
         {
@@ -508,7 +508,7 @@
     {
       "id": "dtv",
       "title": "The direct-to-video era",
-      "sub": "2007–2019 · 63 films and 23 seasons · 331 hours",
+      "sub": "2007–2019 · 63 films and 23 seasons · 332 hours",
       "intro": "Superman: Doomsday opens the DC Universe Animated Original Movies line and the films start arriving several a year, straight to disc — including the connected DC Animated Movie Universe from 2013. Television keeps going beside them: The Brave and the Bold, Young Justice, Teen Titans Go!.",
       "items": [
         {
@@ -707,8 +707,8 @@
           "id": "dca-t-2013-teen-titans-go-s1",
           "t": "Teen Titans Go! season 1",
           "n": "2013",
-          "w": 18.29,
-          "note": "2013– · 9 seasons, 449 episodes"
+          "w": 18.58,
+          "note": "2013– · 9 seasons, 456 episodes"
         },
         {
           "id": "dca-f-2013-justice-league-the-flashpoint-paradox",
@@ -767,19 +767,13 @@
           "id": "dca-t-2013-teen-titans-go-s2",
           "t": "Teen Titans Go! season 2",
           "n": "2015",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-f-2015-batman-unlimited-animal-instincts",
           "t": "Batman Unlimited: Animal Instincts",
           "n": "2015",
           "w": 1.28
-        },
-        {
-          "id": "dca-f-2015-batman-unlimited-monster-mayhem",
-          "t": "Batman Unlimited: Monster Mayhem",
-          "n": "2015",
-          "w": 1.35
         },
         {
           "id": "dca-f-2015-lego-dc-comics-super-heroes-justice-league-vs-bizarro-league",
@@ -798,6 +792,12 @@
           "t": "Justice League: Gods and Monsters",
           "n": "2015",
           "w": 1.27
+        },
+        {
+          "id": "dca-f-2015-batman-unlimited-monster-mayhem",
+          "t": "Batman Unlimited: Monster Mayhem",
+          "n": "2015",
+          "w": 1.35
         },
         {
           "id": "dca-f-2016-batman-bad-blood",
@@ -830,7 +830,7 @@
           "id": "dca-t-2013-teen-titans-go-s3",
           "t": "Teen Titans Go! season 3",
           "n": "2016",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-f-2016-lego-dc-comics-super-heroes-justice-league-cosmic-clash",
@@ -941,7 +941,7 @@
           "id": "dca-t-2013-teen-titans-go-s4",
           "t": "Teen Titans Go! season 4",
           "n": "2018",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-t-2010-young-justice-s3",
@@ -1023,7 +1023,7 @@
           "id": "dca-t-2013-teen-titans-go-s5",
           "t": "Teen Titans Go! season 5",
           "n": "2019",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-f-2019-lego-dc-batman-family-matters",
@@ -1056,7 +1056,7 @@
     {
       "id": "tomorrowverse",
       "title": "The Tomorrowverse and after",
-      "sub": "2020– · 33 films and 23 seasons · 223 hours",
+      "sub": "2020– · 33 films and 26 seasons · 229 hours",
       "intro": "The Tomorrowverse arc runs Man of Tomorrow through Crisis on Infinite Earths, and television turns adult — Harley Quinn and its spin-offs, Caped Crusader, My Adventures with Superman, and Creature Commandos opening the new DCU.",
       "items": [
         {
@@ -1127,7 +1127,7 @@
           "id": "dca-t-2013-teen-titans-go-s6",
           "t": "Teen Titans Go! season 6",
           "n": "2021",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-f-2021-batman-the-long-halloween-part-one",
@@ -1165,8 +1165,8 @@
           "id": "dca-t-2022-batwheels-s1",
           "t": "Batwheels season 1",
           "n": "2022",
-          "w": 11.37,
-          "note": "2022– · 3 seasons, 93 episodes"
+          "w": 11.98,
+          "note": "2022– · 3 seasons, 98 episodes"
         },
         {
           "id": "dca-t-2019-harley-quinn-s3",
@@ -1229,7 +1229,7 @@
           "id": "dca-t-2013-teen-titans-go-s7",
           "t": "Teen Titans Go! season 7",
           "n": "2023",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-f-2023-justice-league-x-rwby-super-heroes-huntsmen-part-one",
@@ -1287,7 +1287,7 @@
           "id": "dca-t-2022-batwheels-s2",
           "t": "Batwheels season 2",
           "n": "2024",
-          "w": 11.37
+          "w": 11.98
         },
         {
           "id": "dca-t-2024-creature-commandos-s1",
@@ -1314,7 +1314,7 @@
           "id": "dca-t-2013-teen-titans-go-s8",
           "t": "Teen Titans Go! season 8",
           "n": "2024",
-          "w": 18.29
+          "w": 18.58
         },
         {
           "id": "dca-f-2024-justice-league-crisis-on-infinite-earths-part-three",
@@ -1376,7 +1376,14 @@
           "id": "dca-t-2022-batwheels-s3",
           "t": "Batwheels season 3",
           "n": "2026",
-          "w": 11.37
+          "w": 11.98
+        },
+        {
+          "id": "dca-t-2026-get-jiro-s1",
+          "t": "Get Jiro season 1",
+          "n": "2026",
+          "w": 3.67,
+          "note": "2026– · 1 season, 10 episodes · A DC imprint, not the main line"
         },
         {
           "id": "dca-t-2023-my-adventures-with-superman-s3",
@@ -1388,34 +1395,48 @@
           "id": "dca-t-2013-teen-titans-go-s9",
           "t": "Teen Titans Go! season 9",
           "n": "2026",
-          "w": 18.29
-        },
-        {
-          "id": "dca-f-2026-batman-knightfall-part-2",
-          "t": "Batman: Knightfall Part 2",
-          "n": "2026",
-          "w": 0.0,
-          "note": "Not out yet"
+          "w": 18.58
         },
         {
           "id": "dca-f-2026-batman-knightfall-part-1",
-          "t": "Batman: Knightfall Part 1",
+          "t": "Batman: Knightfall – Part 1: Knightfall",
           "n": "2026",
-          "w": 1.3
+          "w": 1.32
+        },
+        {
+          "id": "dca-t-2022-batwheels-s4",
+          "t": "Batwheels season 4",
+          "n": "2026",
+          "w": 0,
+          "note": "Not out yet — due 27 November 2026"
+        },
+        {
+          "id": "dca-f-2026-batman-knightfall-part-2",
+          "t": "Batman: Knightfall – Part 2: Knightquest",
+          "n": "2026",
+          "w": 0.0,
+          "note": "Not out yet — due 15 December 2026"
         },
         {
           "id": "dca-f-2027-batman-knightfall-part-3",
-          "t": "Batman: Knightfall Part 3",
+          "t": "Batman: Knightfall – Part 3: KnightsEnd",
           "n": "2027",
           "w": 0.0,
-          "note": "Not out yet"
+          "note": "Not out yet — due 2027"
+        },
+        {
+          "id": "dca-t-2028-mister-miracle-s1",
+          "t": "Mister Miracle season 1",
+          "n": "2028",
+          "w": 0,
+          "note": "Not out yet — due 2028 · DCU"
         },
         {
           "id": "dca-f-2028-dynamic-duo",
           "t": "Dynamic Duo",
           "n": "2028",
           "w": 0.0,
-          "note": "Not out yet"
+          "note": "Not out yet — due 22 September 2028"
         }
       ]
     }

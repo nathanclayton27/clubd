@@ -8,7 +8,7 @@
    "runs": [
     "DCAU"
    ],
-   "runtime": 77,
+   "runtime": 76,
    "released": "1993-12-25"
   },
   {
@@ -43,9 +43,10 @@
    "title": "Aztec Batman: Clash of Empires",
    "page": "Aztec Batman: Clash of Empires",
    "theatrical": true,
+   "dcuaom": "2025-09-19",
    "runs": [],
    "runtime": 89,
-   "released": "2025-09-18"
+   "released": "2025-09-19"
   },
   {
    "year": 2028,
@@ -411,7 +412,7 @@
    "theatrical": false,
    "runs": [],
    "runtime": 81,
-   "released": "2015-07-01"
+   "released": "2015-08-18"
   },
   {
    "year": 2015,
@@ -1016,26 +1017,27 @@
   },
   {
    "year": 2026,
-   "title": "Batman: Knightfall Part 1",
+   "title": "Batman: Knightfall – Part 1: Knightfall",
    "page": "Batman: Knightfall (film)",
    "theatrical": false,
    "dcuaom": "2026-08-25",
    "runs": [],
-   "runtime": 78,
+   "runtime": 79,
    "released": "2026-08-25"
   },
   {
    "year": 2026,
-   "title": "Batman: Knightfall Part 2",
+   "title": "Batman: Knightfall – Part 2: Knightquest",
    "page": "Batman: Knightfall (film)",
    "theatrical": false,
+   "dcuaom": "2026-12-08",
    "runs": [],
-   "runtime": null,
-   "released": "2026-07-01"
+   "runtime": 76,
+   "released": "2026-12-08"
   },
   {
    "year": 2027,
-   "title": "Batman: Knightfall Part 3",
+   "title": "Batman: Knightfall – Part 3: KnightsEnd",
    "page": "Batman: Knightfall (film)",
    "theatrical": false,
    "runs": [],
@@ -1489,23 +1491,11 @@
    "dcu": false
   },
   {
-   "title": "Bat-Fam",
-   "page": "Bat-Fam",
-   "imprint": false,
-   "seasons": 1,
-   "episodes": 10,
-   "start": "2025",
-   "end": null,
-   "present": false,
-   "dcau": false,
-   "dcu": false
-  },
-  {
    "title": "Teen Titans Go!",
    "page": "Teen Titans Go!",
    "imprint": false,
    "seasons": 9,
-   "episodes": 449,
+   "episodes": 456,
    "start": "2013",
    "end": null,
    "present": true,
@@ -1517,7 +1507,7 @@
    "page": "Batwheels",
    "imprint": false,
    "seasons": 3,
-   "episodes": 93,
+   "episodes": 98,
    "start": "2022",
    "end": null,
    "present": true,
@@ -1561,8 +1551,20 @@
    "dcu": true
   },
   {
+   "title": "Bat-Fam",
+   "page": "Bat-Fam",
+   "imprint": false,
+   "seasons": 1,
+   "episodes": 10,
+   "start": "2025",
+   "end": null,
+   "present": true,
+   "dcau": false,
+   "dcu": false
+  },
+  {
    "title": "My Adventures with Green Lantern",
-   "page": null,
+   "page": "My Adventures with Green Lantern",
    "imprint": false,
    "seasons": null,
    "episodes": null,
@@ -1585,8 +1587,8 @@
    "dcu": false
   },
   {
-   "title": "Starfire",
-   "page": null,
+   "title": "Starfire!",
+   "page": "Starfire!",
    "imprint": false,
    "seasons": null,
    "episodes": null,
@@ -1598,7 +1600,7 @@
   },
   {
    "title": "Mister Miracle",
-   "page": null,
+   "page": "Mister Miracle (TV series)",
    "imprint": false,
    "seasons": null,
    "episodes": null,
@@ -1610,7 +1612,7 @@
   },
   {
    "title": "Absolute Batman",
-   "page": null,
+   "page": "Absolute Batman#Television",
    "imprint": false,
    "seasons": null,
    "episodes": null,
@@ -1622,7 +1624,7 @@
   },
   {
    "title": "Krypto",
-   "page": null,
+   "page": "Krypto#Television",
    "imprint": false,
    "seasons": null,
    "episodes": null,
@@ -1634,7 +1636,7 @@
   },
   {
    "title": "Joker: Laugh Riot",
-   "page": null,
+   "page": "Joker in other media#Animation",
    "imprint": false,
    "seasons": null,
    "episodes": null,
@@ -1661,7 +1663,7 @@
    "page": "Static Shock",
    "imprint": true,
    "seasons": 4,
-   "episodes": 13,
+   "episodes": 52,
    "start": "2000",
    "end": "2004",
    "present": false,
@@ -1681,14 +1683,14 @@
    "dcu": false
   },
   {
-   "title": "Get Jiro!",
-   "page": null,
+   "title": "Get Jiro",
+   "page": "Get Jiro",
    "imprint": true,
    "seasons": 1,
-   "episodes": null,
-   "start": null,
+   "episodes": 10,
+   "start": "2026",
    "end": null,
-   "present": false,
+   "present": true,
    "dcau": false,
    "dcu": false
   }

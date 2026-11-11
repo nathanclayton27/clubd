@@ -41,6 +41,74 @@ EP_MINUTES = 22
 # these tables were read from was fetched in 2026.
 PRESENT = 2026
 
+# The day the tables were last read (CLU-594). A film whose release date falls
+# after it is not out yet: it weighs nothing whatever runtime a rating board
+# has already published (Knightfall Part 2 has one), because the list's own
+# note promises the unreleased ones cannot drag a group's pace.
+AS_OF = "2026-11-11"
+
+# Release dates the tables get wrong or do not carry, each read 2026-11-11.
+#   - Knightfall Part 2: the DCUAOM table types December 8, 2026; the film's
+#     article (infobox and Release section, citing warnerbros.com) and IGN's
+#     release announcement of 4 November 2026 both say December 15, 2026.
+#   - Dynamic Duo: Wikidata has no day for it; Robin in other media: "The film
+#     is scheduled to be released on September 22, 2028."
+FILM_DATE = {
+    ("Batman: Knightfall – Part 2: Knightquest", 2026): "2026-12-15",
+    ("Dynamic Duo", 2028): "2028-09-22",
+}
+
+# Row ids are minted from titles, and an id is where every tick is stored.
+# Wikipedia retitled the Knightfall trilogy in November 2026 (it was "Batman:
+# Knightfall Part 1" and so on), so these rows keep the ids they shipped with.
+FILM_ID = {
+    ("Batman: Knightfall – Part 1: Knightfall", 2026):
+        "dca-f-2026-batman-knightfall-part-1",
+    ("Batman: Knightfall – Part 2: Knightquest", 2026):
+        "dca-f-2026-batman-knightfall-part-2",
+    ("Batman: Knightfall – Part 3: KnightsEnd", 2027):
+        "dca-f-2027-batman-knightfall-part-3",
+}
+
+MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December"]
+
+# Seasons announced with a date that the television table does not count yet,
+# each read 2026-11-11 (CLU-594). Each weighs nothing until it is out, and
+# carries its id literally so a slipped date cannot mint a new one.
+#   - Batwheels season 4: "A fourth season will premiere on November 27, 2026,
+#     on HBO Max" (Batwheels, rev 2026-11-10, citing Warner Bros. Discovery's
+#     press release "What's New On HBO Max This November" of 22 October 2026).
+#     The table still has three seasons and 98 episodes, so this season stays
+#     out of the episode split and seasons 1–3 keep their length.
+#   - Mister Miracle: the table lists it with no airdate. The article its row
+#     links to (DC Universe (franchise)#Mister Miracle, rev 2026-11-11) says
+#     "Mister Miracle is expected to be released in 2028", citing Collider of
+#     15 October 2026, and calls it a DCU animated series; the table's notes
+#     do not mark it DCU, so the label is set here.
+# Keyed by (title, season). The due date is a day where the source gives one,
+# else a year. Once a refresh of the table counts the season itself, the
+# assert in main() says to drop the entry here and let the season loop take
+# over — under the same id, which for Mister Miracle needs SHOW_ID_YEAR.
+UPCOMING = {
+    ("Batwheels", 4): {"id": "dca-t-2022-batwheels-s4", "due": "2026-11-27"},
+    ("Mister Miracle", 1): {"id": "dca-t-2028-mister-miracle-s1",
+                            "due": "2028", "run": "DCU"},
+}
+
+# A season row's id carries the series' first year, so a series that ships as
+# an upcoming row before the table dates it keeps that row's year in its id
+# whenever the table does date it.
+SHOW_ID_YEAR = {"Mister Miracle": 2028}
+
+
+def due_note(date):
+    """'Not out yet — due 27 November 2026', or '— due 2028' for a bare year."""
+    if len(date) == 4:
+        return "Not out yet — due %s" % date
+    y, m, d = date.split("-")
+    return "Not out yet — due %d %s %s" % (int(d), MONTHS[int(m) - 1], y)
+
 # One row known bad upstream: the television list gives Static Shock 13
 # episodes, which is its episodes-per-season. Wikidata (Q1470464) has
 # P1113 = 52 episodes over P2437 = 4 seasons; verified by
@@ -126,7 +194,8 @@ def era_of(year):
 def part_key(title):
     """Multi-part films share a release date, and 'Part Three' sorts before
     'Part Two' alphabetically — order them by the part number instead."""
-    m = re.search(r"(?:part|chapter)\s+(\w+)$", title, re.I)
+    # "Part 1: Knightfall" names its part before a subtitle
+    m = re.search(r"(?:part|chapter)\s+(\w+)(?::[^:]+)?$", title, re.I)
     if not m:
         return title, 0
     w = m.group(1).lower()
@@ -140,14 +209,24 @@ def main():
 
     entries = []
     for f in blob["films"]:
+        key = (f["title"], f["year"])
         mins = f["runtime"] or 0
+        date = FILM_DATE.get(key, f["released"])
         bits = list(f["runs"])
-        if not mins and f["year"] >= 2026:
+        if date > AS_OF:
+            mins = 0
+            if key in FILM_DATE:
+                bits.append(due_note(date))
+            else:
+                # Only the year is known (Knightfall Part 3: the films list,
+                # the DCUAOM table and the film's article all say 2027).
+                bits.append("Not out yet — due %d" % f["year"])
+        elif not mins and f["year"] >= 2026:
             bits.append("Not out yet")
         entries.append({
-            "id": "dca-f-%d-%s" % (f["year"], slug(f["title"])),
+            "id": FILM_ID.get(key, "dca-f-%d-%s" % (f["year"], slug(f["title"]))),
             "t": f["title"], "n": str(f["year"]), "w": round(mins / 60.0, 2),
-            "note": " · ".join(bits), "date": f["released"],
+            "note": " · ".join(bits), "date": date,
             "year": f["year"], "kind": "film",
             "sortkey": part_key(f["title"]),
         })
@@ -183,7 +262,8 @@ def main():
             entries.append({
                 # DC reuses titles — Super Friends is two different series,
                 # Aquaman and Krypto recur — so the id keeps the first year
-                "id": "dca-t-%d-%s-s%d" % (year, slug(s["title"]), k),
+                "id": "dca-t-%d-%s-s%d" % (
+                    SHOW_ID_YEAR.get(s["title"], year), slug(s["title"]), k),
                 "t": "%s season %d" % (
                     SHOW_TITLE.get((s["title"], year), s["title"]), k),
                 "q": SHOW_Q.get((s["title"], year, k)),
@@ -191,6 +271,22 @@ def main():
                 "date": "%d-06-15" % sy, "year": sy, "kind": "show",
                 "sortkey": (s["title"], k),
             })
+
+    shows = {s["title"]: s for s in blob["shows"]}
+    for (title, k), u in UPCOMING.items():
+        s = shows[title]
+        assert not (s["start"] and k <= (s["seasons"] or 1)), \
+            "the table now counts %s season %d: drop it from UPCOMING" % (title, k)
+        sy = int(u["due"][:4])
+        entries.append({
+            "id": u["id"], "t": "%s season %d" % (title, k),
+            "n": str(sy), "w": 0,
+            "note": " · ".join([due_note(u["due"])]
+                               + ([u["run"]] if u.get("run") else [])),
+            # a bare year sorts where the season loop puts its seasons
+            "date": u["due"] if len(u["due"]) > 4 else "%d-06-15" % sy,
+            "year": sy, "kind": "show", "sortkey": (title, k),
+        })
 
     # sort seasons by number, not title ("season 10" precedes "season 2"
     # alphabetically), and film parts by part number
