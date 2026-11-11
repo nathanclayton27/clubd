@@ -16,15 +16,28 @@ nobody notices — which is exactly what happened, twice, on the same night.
 There is no fallback path to it here on purpose; `search()` below speaks the
 protocol the site actually serves, and raises when it cannot.
 
-The protocol, reconciled from two independent working implementations:
+The protocol, as of 2026-11-11 (CLU-650). Read straight out of the site's
+own search provider: the Next.js chunk /_next/static/chunks/0ovmds8czs1lw.js
+loaded by https://howlongtobeat.com/ (module 50286, the one holding the
+string "/api/search/site"). Chunk names are content hashes and change with
+every deploy; to re-find it, fetch the home page, pull each
+/_next/static/chunks/*.js it lists, and grep for "/api/search/site".
 
-  * GET  /api/search/site/init  hands out a per-session {token, hpKey, hpVal}.
-  * POST /api/search/site       wants the token in the headers AND the
-    rotating hpKey/hpVal pair spliced into the payload body. It 404s without
-    the payload copy — found by scratch/bondgames/collect.py.
+  * GET  /api/search/site/init?t=<ms>  hands out {token} and nothing else.
+    The rotating hpKey/hpVal pair it also handed out (still there when this
+    module was last repaired, 2026-08-24) is gone.
+  * POST /api/search/site  wants JSON with exactly one auth header,
+    x-auth-token: <token>. No x-hp-* headers, nothing spliced into the body.
+  * The body's filters are now {mode: "include", values: [...]} objects:
+    searchOptions.games.platform, .year (which replaced rangeYear) and
+    .gameplay.perspective/.flow/.genre (difficulty is gone). rangeTime is
+    {min, max} built with parseInt, so an unset bound serializes as null.
+  * 403 means the token expired: the site takes a new one from init and
+    retries once. 429 means "Too many searches, please wait a minute".
   * Search terms are matched one at a time, so they must be split on
     PUNCTUATION, not whitespace: "Mega Man: Maverick Hunter X" split on
     spaces asks for a game containing the term "Man:" and finds nothing.
+    (The site's own box splits on " ", which is why it misses these.)
     Found by scratch/megaman/hltb_probe.py reading the site's own Next.js
     chunks; that one fix recovered seven Mega Man rows.
 
@@ -120,7 +133,7 @@ def _request(url, data=None, headers=None, timeout=45):
 
 
 class Session(object):
-    """A live /api/search/site session: token plus the rotating key pair.
+    """A live /api/search/site session: the token from /init.
 
     Optionally disk-caches raw rows per query, so a re-run costs nothing and
     the misses stay reviewable. One cache file per session directory, keyed
@@ -141,42 +154,39 @@ class Session(object):
         self.refresh()
 
     def refresh(self):
-        """Take a fresh token and key pair."""
+        """Take a fresh token."""
         try:
             d = json.loads(_request(
                 "%s/api/search/site/init?t=%d" % (HLTB, time.time() * 1000)))
         except (urllib.error.HTTPError, urllib.error.URLError, OSError,
                 ValueError) as e:
             raise LookupBroken("cannot open a session with %s: %s" % (HLTB, e))
-        for k in ("token", "hpKey", "hpVal"):
-            if k not in d:
-                raise LookupBroken(
-                    "the init endpoint no longer hands out %r (got %s)"
-                    % (k, sorted(d)))
-        self.token, self.hp_key, self.hp_val = d["token"], d["hpKey"], d["hpVal"]
+        if not isinstance(d, dict) or not d.get("token"):
+            raise LookupBroken(
+                "the init endpoint no longer hands out a 'token' (got %s)"
+                % (sorted(d) if isinstance(d, dict) else type(d).__name__))
+        self.token = d["token"]
 
     def _post(self, query):
+        def unset():
+            return {"mode": "include", "values": []}
         payload = {
             "searchType": "games", "searchTerms": terms(query),
             "searchPage": 1, "size": 20,
             "searchOptions": {
-                "games": {"userId": 0, "platform": "",
+                "games": {"userId": 0, "platform": unset(),
                           "sortCategory": "popular",
                           "rangeCategory": "main",
                           "rangeTime": {"min": None, "max": None},
-                          "gameplay": {"perspective": "", "flow": "",
-                                       "genre": "", "difficulty": ""},
-                          "rangeYear": {"min": "", "max": ""}, "modifier": ""},
+                          "gameplay": {"perspective": unset(),
+                                       "flow": unset(), "genre": unset()},
+                          "year": unset(), "modifier": ""},
                 "users": {"sortCategory": "postcount"},
                 "lists": {"sortCategory": "follows"},
                 "filter": "", "sort": 0, "randomizer": 0},
             "useCache": True}
-        # the site's own bundle sets payload[hpKey] = hpVal; the request 404s
-        # without this copy even though the headers already carry it
-        payload[self.hp_key] = self.hp_val
         headers = {"Content-Type": "application/json",
-                   "x-auth-token": self.token,
-                   "x-hp-key": self.hp_key, "x-hp-val": str(self.hp_val)}
+                   "x-auth-token": self.token}
         body = json.dumps(payload).encode("utf-8")
         out = json.loads(_request(HLTB + "/api/search/site", body, headers))
         if "data" not in out:
@@ -197,7 +207,10 @@ class Session(object):
             except (urllib.error.HTTPError, urllib.error.URLError, OSError,
                     ValueError) as e:
                 last = e
-                time.sleep(4 * (attempt + 1))
+                # 429 is the site's "wait a minute"; a 403 (expired token)
+                # or anything else is retried soon on a fresh token
+                busy = getattr(e, "code", None) == 429
+                time.sleep(30 if busy else 4 * (attempt + 1))
                 try:
                     self.refresh()
                 except LookupBroken:
