@@ -24,8 +24,9 @@ WHAT IS OUT, AND WHY.
     313 twenty-two-minute episodes would count exactly one, misrepresenting
     both it and them. It is named in the notes instead of being counted.
   * The two shorts, "My Butt Has a Fever" and "On the Fort Day of Christmas".
-    Same section of the source, same absence of an episode number; the second
-    has no airdate at all, which is disqualifying on its own.
+    Same section of the source, same absence of an episode number. The second
+    is a Hulu holiday short dated December 7, 2026; main() asserts that date so
+    the note naming it cannot drift.
   * The "Future episodes" table — nineteen titles known from WGA listings and
     writers' social media, with production codes or TBA and no airdate. A row
     on this list has an airdate the encyclopedia stands behind.
@@ -281,6 +282,11 @@ def main():
         "the film is no longer filed under its own heading"
     assert re.search(r"==\s*Shorts\s*==", list_text), \
         "the shorts are no longer filed under their own heading"
+    # the film-and-shorts note dates the Hulu short; keep it honest
+    fort = [b for _, _, t, _, b in own_blocks
+            if t == "On the Fort Day of Christmas"]
+    assert len(fort) == 1 and airdate(fort[0]) == (2026, 12, 7), \
+        "On the Fort Day of Christmas is no longer dated December 7, 2026"
 
     for n in SEASONS:
         assert re.search(r"\{\{:Bob's Burgers season %d\}\}" % n, list_text), \
@@ -425,8 +431,8 @@ def main():
              "twenty-two-minute episodes would count as one row exactly like "
              "them, which misrepresents both, so it is named here instead of "
              "listed. The two shorts, My Butt Has a Fever and On the Fort Day "
-             "of Christmas, are out for the same reason — and the second has "
-             "no airdate at all."],
+             "of Christmas, are out for the same reason; the second is a Hulu "
+             "holiday short dated December 7, 2026."],
             ["The Bleakening is one row, not two.", "Season 8's Christmas "
              "special aired as a single hour-long block in December 2017. "
              "Wikipedia numbers it as episodes 6 and 7 but gives the two "
