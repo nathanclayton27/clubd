@@ -8,22 +8,27 @@ numbered Dune list of Wikipedia's Frank Herbert bibliography. The Brian
 Herbert / Kevin J. Anderson continuations as one optional row per book,
 publication order, each noted with its series and nothing else — the lists
 in Wikipedia's "Dune prequel series" article plus the two Dune 7 sequels
-from the franchise article's own prose. Then every screen Dune shipped to
-date, weighted by runtime from Wikidata (P2047): Lynch 1984, the two Sci Fi
-Channel miniseries, and Villeneuve's two parts.
+from the franchise article's own prose. Then every screen Dune, weighted by
+runtime from Wikidata (P2047): Lynch 1984, the two Sci Fi Channel
+miniseries, and Villeneuve's three parts.
 
-Book rows are unweighted — page counts aren't hours. Dune: Part Three
-(dated December 2026 in the article) and the Dune: Prophecy TV series are
-not rows; the notes say so. Data: tools/data/dune.json, built and asserted
-by scratch/agent-books/parse_dune.py.
+Book rows are unweighted — page counts aren't hours. Dune: Part Three is a
+row from the day the franchise article's film table dates it (18 December
+2026): until it opens it carries an explicit w: 0 and a "not out yet" note,
+because a dated announcement belongs on the list and an unwatched film has
+no runtime to weigh (CLU-599). The Dune: Prophecy TV series is not a row;
+the notes say so. Data: tools/data/dune.json, built and asserted by
+scratch/agent-books/parse_dune.py, which gives Part Three its minutes only
+once its date has passed.
 
-WHY 23 OF THE 28 ROWS CARRY NO NUMBER, written down so a weight audit does
+WHY 23 OF THE 29 ROWS CARRY NO NUMBER, written down so a weight audit does
 not have to re-derive it. All 23 are books: Frank Herbert's six and the
 seventeen continuations. There is no source that gives a book an honest
 hour figure — page counts differ by edition, reading speeds differ by
 reader, and every other book list in this repo (middle-earth, cosmere,
 discworld, stephen-king, wheel-of-time, sherlock-holmes) refuses the same
-way. The five screen rows ARE weighted, from Wikidata P2047, so the strip
+way. The six screen rows ARE weighted, from Wikidata P2047 (Part Three at
+an explicit zero until it opens), so the strip
 deliberately shows reading and watching at different scales; the third
 property note says so out loud. An unweighted row counts as one entry
 downstream, which is a floor, not a claim about how long Dune takes to
@@ -31,10 +36,23 @@ read. Whether the screen rows should give up their runtimes so the whole
 list counts one-per-row instead — the way raimi and x-files do — is a
 design call for the list's owner, not something to change quietly here.
 """
+import datetime
 import json
 import pathlib
 
 SLUG = "dune"
+
+# Leads an unreleased screen row's note, worded as the villeneuve list words
+# the same film, so the two copies of Part Three read alike.
+NOT_OUT = "Not out yet — due %s, and the bar stays empty until it opens"
+
+MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")
+
+
+def longdate(iso):
+    d = datetime.date.fromisoformat(iso)
+    return "%d %s %d" % (d.day, MONTHS[d.month - 1], d.year)
 
 SERIES_NOTE = {
     "Prelude to Dune": "Prelude to Dune — set before Dune",
@@ -68,7 +86,7 @@ def main():
     here = pathlib.Path(__file__).resolve().parent
     data = json.loads((here / "data" / "dune.json").read_text(encoding="utf-8"))
     core, conts, screen = data["core"], data["continuations"], data["screen"]
-    assert len(core) == 6 and len(conts) == 17 and len(screen) == 5
+    assert len(core) == 6 and len(conts) == 17 and len(screen) == 6
 
     core_items = [{"id": "dune-%d-%s" % (b["year"], slugify(b["title"])),
                    "t": b["title"], "n": str(b["year"])} for b in core]
@@ -86,12 +104,27 @@ def main():
     assert used == set(SERIES_NOTE), set(SERIES_NOTE) ^ used
 
     screen_items = []
+    coming = []
     for s in screen:
-        screen_items.append({
-            "id": "dune-s-%d-%s" % (s["year"], slugify(s["title"])),
-            "t": s["title"], "n": str(s["year"]),
-            "w": round(s["minutes"] / 60.0, 2),
-            "note": "%s · %d min" % (s["note"], s["minutes"])})
+        item = {"id": "dune-s-%d-%s" % (s["year"], slugify(s["title"])),
+                "t": s["title"], "n": str(s["year"])}
+        if s["minutes"] is None:
+            # dated and not out (CLU-599): an explicit zero, and a note that
+            # says why the bar is empty and when it fills
+            item["w"] = 0
+            item["note"] = "%s · %s" % (NOT_OUT % longdate(s["due"]),
+                                        s["note"])
+            coming.append(s)
+        else:
+            item["w"] = round(s["minutes"] / 60.0, 2)
+            item["note"] = "%s · %d min" % (s["note"], s["minutes"])
+        screen_items.append(item)
+    assert [s["title"] for s in coming] in ([], ["Dune: Part Three"]), coming
+    mins = {s["key"]: s["minutes"] for s in screen}
+    dv = [mins[k] for k in ("dune-2021", "dune-part-two", "dune-part-three")
+          if mins[k] is not None]
+    dv_text = ", ".join(str(m) for m in dv[:-1]) + " and %d" % dv[-1]
+    last = max(s["year"] for s in screen)
 
     hours = sum(x["w"] for x in screen_items)
     sections = [
@@ -108,16 +141,20 @@ def main():
                   "and count toward nothing unless ticked.",
          "items": cont_items},
         {"id": "screen", "title": "Dune on screen",
-         "sub": "1984–2024 · 5 adaptations · about %.0f hours" % hours,
-         "intro": "Weighted by runtime. Villeneuve's Part Three is dated "
-                  "December 2026 and gets a row when it exists.",
+         "sub": "1984–%d · %d adaptations · about %.0f hours%s"
+                % (last, len(screen_items), hours,
+                   " · %d not out yet" % len(coming) if coming else ""),
+         "intro": "Weighted by runtime."
+                  + (" Villeneuve's Part Three is dated %s and sits here "
+                     "with an empty bar until it opens."
+                     % longdate(coming[0]["due"]) if coming else ""),
          "items": screen_items},
     ]
 
     ids = [x["id"] for s in sections for x in s["items"]]
-    assert len(ids) == 28 and len(set(ids)) == 28, "bad ids"
+    assert len(ids) == 29 and len(set(ids)) == 29, "bad ids"
     assert all(i == slugify(i) and i.isascii() for i in ids)
-    assert 16 < hours < 17, hours  # 989 min of screen Dune
+    assert 16 < hours < 17, hours  # 988 min of released screen Dune
     assert all(x.get("opt") for x in cont_items)
     # books carry no hours, screen rows all do — see the docstring
     assert not any("w" in x for x in core_items + cont_items), \
@@ -131,7 +168,7 @@ def main():
         "subtitle": "the novels, the continuations, the screen versions",
         "kind": "books & films",
         "popularity": 73,
-        "year": "1965–2024",
+        "year": "1965–%d" % last,
         "blurb": "Frank Herbert's six novels in publication order, the "
                  "seventeen Brian Herbert & Kevin J. Anderson continuations "
                  "as optional rows, and every screen Dune from Lynch to "
@@ -152,14 +189,14 @@ def main():
              "belongs to and nothing more; whether to read them is your "
              "argument to have, not this page's."],
             ["Screen rows are weighted by runtime.",
-             "From Wikidata: Lynch's 137-minute film, the two three-part "
-             "Sci Fi Channel miniseries at 265 and 266 minutes, and "
-             "Villeneuve's 155 and 166. Book rows stay unweighted, so the "
+             "From Wikidata: Lynch's %d-minute film, the two three-part "
+             "Sci Fi Channel miniseries at %d and %d minutes, and "
+             "Villeneuve's %s. Book rows stay unweighted, so the "
              "strip shows reading and watching at different scales on "
-             "purpose."],
+             "purpose." % (mins["dune-1984"], mins["dune-2000"],
+                           mins["dune-cod-2003"], dv_text)],
             ["Not here.",
-             "Dune: Part Three, dated December 2026, gets a row on "
-             "release. The Dune: Prophecy series, the short stories, the "
+             "The Dune: Prophecy series, the short stories, the "
              "Dune Encyclopedia and the games are outside this list's "
              "scope."],
             "Novels and years from Wikipedia's Frank Herbert bibliography "

@@ -145,9 +145,16 @@
    "key": "dune-part-two",
    "title": "Dune: Part Two",
    "year": 2024,
-   "minutes": 166,
+   "minutes": 165,
    "note": "Denis Villeneuve"
+  },
+  {
+   "key": "dune-part-three",
+   "title": "Dune: Part Three",
+   "year": 2026,
+   "minutes": null,
+   "due": "2026-12-18",
+   "note": "Denis Villeneuve — adapts Dune Messiah"
   }
- ],
- "part_three_year": 2026
+ ]
 }

@@ -4,7 +4,7 @@
   "subtitle": "the novels, the continuations, the screen versions",
   "kind": "books & films",
   "popularity": 73,
-  "year": "1965–2024",
+  "year": "1965–2026",
   "blurb": "Frank Herbert's six novels in publication order, the seventeen Brian Herbert & Kevin J. Anderson continuations as optional rows, and every screen Dune from Lynch to Villeneuve, weighted by runtime.",
   "unit": {
     "one": "entry",
@@ -29,11 +29,11 @@
     ],
     [
       "Screen rows are weighted by runtime.",
-      "From Wikidata: Lynch's 137-minute film, the two three-part Sci Fi Channel miniseries at 265 and 266 minutes, and Villeneuve's 155 and 166. Book rows stay unweighted, so the strip shows reading and watching at different scales on purpose."
+      "From Wikidata: Lynch's 137-minute film, the two three-part Sci Fi Channel miniseries at 265 and 266 minutes, and Villeneuve's 155 and 165. Book rows stay unweighted, so the strip shows reading and watching at different scales on purpose."
     ],
     [
       "Not here.",
-      "Dune: Part Three, dated December 2026, gets a row on release. The Dune: Prophecy series, the short stories, the Dune Encyclopedia and the games are outside this list's scope."
+      "The Dune: Prophecy series, the short stories, the Dune Encyclopedia and the games are outside this list's scope."
     ],
     "Novels and years from Wikipedia's Frank Herbert bibliography and Dune prequel series articles; screen list and dates from the Dune franchise article; runtimes from Wikidata."
   ],
@@ -207,8 +207,8 @@
     {
       "id": "screen",
       "title": "Dune on screen",
-      "sub": "1984–2024 · 5 adaptations · about 16 hours",
-      "intro": "Weighted by runtime. Villeneuve's Part Three is dated December 2026 and gets a row when it exists.",
+      "sub": "1984–2026 · 6 adaptations · about 16 hours · 1 not out yet",
+      "intro": "Weighted by runtime. Villeneuve's Part Three is dated 18 December 2026 and sits here with an empty bar until it opens.",
       "items": [
         {
           "id": "dune-s-1984-dune",
@@ -242,8 +242,15 @@
           "id": "dune-s-2024-dune-part-two",
           "t": "Dune: Part Two",
           "n": "2024",
-          "w": 2.77,
-          "note": "Denis Villeneuve · 166 min"
+          "w": 2.75,
+          "note": "Denis Villeneuve · 165 min"
+        },
+        {
+          "id": "dune-s-2026-dune-part-three",
+          "t": "Dune: Part Three",
+          "n": "2026",
+          "w": 0,
+          "note": "Not out yet — due 18 December 2026, and the bar stays empty until it opens · Denis Villeneuve — adapts Dune Messiah"
         }
       ]
     }
