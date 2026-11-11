@@ -147,8 +147,8 @@ whole database follows.
 
 1. **Read the whole file**, top to bottom, including the header.
 2. **`python tools/whereis.py <object>`** for every object the file creates or
-   replaces. **23 of 84 objects here are defined in more than one file.**
-   Whichever runs last wins, silently. That 84 counts *object names defined by
+   replaces. **25 of 94 objects here are defined in more than one file.**
+   Whichever runs last wins, silently. That 94 counts *object names defined by
    the repo’s `.sql` files* — superseded and never-run files included, one count
    per name however many files carry it, and no columns, indexes, views or
    grants. It is **not** a count of live database objects and does not reconcile
@@ -738,6 +738,7 @@ exactly the committed form.
 | 2026-11-11 20:15 | `clu153-A-find_profile_by_code.sql` (md5 `be32145a…`) + readback | Function readback: owner `postgres`, security definer, `search_path=public, pg_temp`, EXECUTE held only by `postgres`, `service_role` (Supabase default) and `authenticated`. **Ledger `applied ae443530…`, the audited checksum.** From this moment friend-code lookups go through the function, and misses are capped at 20 an hour and 60 a day per user. Control run impersonating Nathan: 30 / 1 / 1 (all profiles readable, stranger found by direct read and by function). The first try returned 0 / 0 because the code's middle dot was lost; the fix built it with `chr(183)`. That try was charged one miss | CLU-153 |
 | 2026-11-11 20:22-20:24 | **Read-only** live-site gate for B | Baseline: Nathan's own `fcode` rows in the last 10 minutes = 1, newest 20:16:42 (the charged step-6 try), `db_now` 20:21:57. He then entered `CLBZZZZ` on clubd.watch and got "No one holds that code." Re-count: newest **20:23:05**, later than the baseline. That miss was written by `find_profile_by_code`, which **proves the live site is on the function** (it never calls `add_friend_edge`). This was the evidence B's fence required | CLU-153 |
 | 2026-11-11 20:26 | `clu153-B-narrow-profiles.sql`, armed by `arm-clu153-B.py --saw-the-row` (stamp `3106a5fc…`) + readback | SELECT policies on `profiles` are now exactly `read own profile` and `read connected profiles`; the blanket `profiles readable when signed in` is gone. **Ledger `applied 3106a5fc…`**, the armed stamp. Impersonating Nathan afterwards: **22 of 30 profiles readable** (own plus connected), and a stranger **still found by `find_profile_by_code`** (1), so add-by-code to strangers keeps working. Run **before** CLU-445 phase 1, by Nathan's choice; the audit found the two work in either order. A stray re-run of B's `set_config` line alone at 20:27 changed nothing. An attempt at B's undo while impersonating failed with `42501` and changed nothing; it was not needed | CLU-153 |
+| 2026-11-11 ~20:43 | `clu445-friend-edges.sql`, **phase 1 only** (first paste), with its read-only pre-checks and readbacks from the 2026-11-11 run steps | Nathan reported every check passing through step 6. The `friendships_rate_guard` trigger, `friend_edge_warrant`, `guard_friend_edge_rate` and `add_friend_edge` are created. **The phase-2 restrictive policy is NOT applied**, because no `fedgerpc` row existed, so the file skipped it as designed. Proof from the live site: a real friend add at 20:43:39 wrote one `fedge` rate row **and succeeded**. A committed row means the insert passed RLS, so the lock did not land and the cap counts real adds. Ledger outcome `partial`. **Phase 2 waits on CLU-553** | CLU-445 |
 
 **`clu504-tombstones.sql` is the most recent change to production (2026-11-11),
 and the second run the database wrote down itself.** The paragraph below
@@ -757,10 +758,10 @@ repo agree on the bytes that ran — the first time in this project that has bee
 true of anything.
 
 **CLU-153 is done:** file A and file B both ran on 2026-11-11 (history table
-above), so `profiles` is no longer an open directory. **Written and not run:
-`clu445-friend-edges.sql`**, phase 1 only, under *Queued and not run: the
-friendship edge gets a door* below. **`clu504-tombstones.sql` ran on 2026-11-11**
-(history table above). Its tombstone client half is still unwritten and is now
+above), so `profiles` is no longer an open directory. **`clu445-friend-edges.sql`
+phase 1 ran on 2026-11-11** (history table above). Its phase 2, the lock, waits
+on CLU-553 and is the only paste still queued anywhere. **`clu504-tombstones.sql`
+ran on 2026-11-11** too. Its tombstone client half is still unwritten and is now
 CLU-573.
 
 **Re-verified 2026-11-11 (CLU-572).** All three queued files were checked again by
@@ -768,8 +769,9 @@ an independent verifier and a hostile auditor after two months untouched. The
 verdict was *ready with changes*, and the changes are to the run steps, not the
 files. **The current run steps are the latest comment on CLU-153, CLU-504 and
 CLU-445. Where this document and those steps disagree, the steps win.** The
-session order is on CLU-401: CLU-504 (done 2026-11-11), then CLU-153 A and its
-live test, then CLU-445 phase 1, then CLU-153 B.
+session ran on 2026-11-11 in this order: CLU-504, then CLU-153 A and its live
+test, then CLU-153 B (by Nathan's choice, ahead of CLU-445; the audit found
+either order safe), then CLU-445 phase 1.
 
 **`superseded/migrate-add-friend-privacy.sql` was listed as applied inside
 `tools/whereis.py` until CLU-446**, contradicting this section, which proves it
@@ -1203,10 +1205,13 @@ once; and both post-replacement function checks now raise on a null oid instead
 of passing by being unable to fail. Final verdict:
 **RUN.** Three rounds. The final one, on a one-token delta, reads: *"VERDICT: RUN - confirmed, verdict stands. ... The delta really is one token."* Rounds one and two found no blockers either; round one produced ten non-blocking findings, eight of which were taken into the file. The full audit is quoted on CLU-504.
 
-### Queued and not run: the friendship edge gets a door (CLU-445)
+### Phase 1 ran 2026-11-11, phase 2 queued: the friendship edge gets a door (CLU-445)
 
-`scratch/security/clu445-friend-edges.sql`. **Nothing in it has run.** §4's
-`friendships` entry carries the end state; this is the operational half.
+`scratch/security/clu445-friend-edges.sql`. **Phase 1 ran on 2026-11-11 at about
+20:43 UTC** (history table in §5). The cap trigger and the three functions are
+live. **Phase 2, the restrictive policy, has not run.** It waits on CLU-553, the
+front end that calls `add_friend_edge` with no fallback. §4's `friendships` entry
+carries the end state; this is the operational half.
 
 **It is one file that decides which of two phases it applies**, and it says which
 in a notice and in its own ledger row (`outcome = 'partial'` or `'applied'`).
@@ -1240,16 +1245,18 @@ states plainly that the third returns legitimate rows too, because an honest
 add-by-code to a stranger is warrantless by that definition. Any cleanup is a
 statement written afterwards, naming one account, with the count read first.
 
-**`tools/whereis.py` lists this file under `NEVER_RUN`** (checked 2026-11-11,
-CLU-572). It reports `add_friend_edge`, `friend_edge_warrant`,
-`guard_friend_edge_rate`, the `friendships_rate_guard` trigger and the phase-2
-policy as not in the database, which is right until the paste. *(This paragraph
-used to say the tool did not know the file at all, which had stopped being true.)*
+**`tools/whereis.py` records it as applied, with the phase-2 policy listed in
+`PARTIAL`.** So it reports `add_friend_edge`, `friend_edge_warrant`,
+`guard_friend_edge_rate` and the `friendships_rate_guard` trigger as live, and
+the policy `edges only through add_friend_edge` as NOT YET RUN. `PARTIAL` was
+added on 2026-11-11 for this file, because the tool could otherwise only call a
+whole file applied or never-run, and either answer is false for a two-phase
+file. **When phase 2 runs, empty its `PARTIAL` entry and record the run here.**
+*(Two earlier versions of this paragraph were wrong: one said the tool did not
+know the file, one said it listed it under `NEVER_RUN`. Until 2026-11-11 it was
+in neither list, so the tool said "unknown order".)*
 
-**After phase 1 runs, record it as partial.** The phase-2 policy `edges only
-through add_friend_edge` must stay marked absent until the second paste, so do
-not simply append the whole file to `APPLIED`. **Do not paste this file a second
-time until CLU-553 is live**: the site must call `add_friend_edge` and must no
+**Do not paste this file a second time until CLU-553 is live**: the site must call `add_friend_edge` and must no
 longer insert into `friendships` directly. From phase 1 on, any signed-in user
 can create the `fedgerpc` row that unlocks phase 2.
 
@@ -1336,8 +1343,11 @@ database that no longer matches the file in front of them.
 This project has already paid for the alternative. `schema.sql` went behind,
 nothing said so, and **two separate pieces of work were built on it confidently
 and wrongly** (CLU-374) — one of which would have deleted a live rate limiter.
-`tools/whereis.py` exists because of it, and reports that **23 of 84 objects are
-defined in more than one file**, whichever runs last winning silently.
+`tools/whereis.py` exists because of it, and reports that **25 of 94 objects are
+defined in more than one file**, whichever runs last winning silently. *(It said
+23 of 84 until 2026-11-11, when `whereis.py`'s own check caught it. The files
+written for CLU-445, CLU-504 and CLU-153 had added the difference. It is the same
+trap the next paragraph describes, caught by the tool this time.)*
 
 **This document has already broken its own rule with that number.** It said *74*
 from 2026-08-27 (`c80c9f0`) until CLU-446, and 74 was right on the day it was

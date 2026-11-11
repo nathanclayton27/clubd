@@ -93,7 +93,23 @@ APPLIED = [
     # profiles now has exactly "read own profile" and "read connected profiles";
     # verified as Nathan: 22 of 30 readable, a stranger still found by the function.
     "clu153-B-narrow-profiles.sql",
+    # CLU-445 phase 1. Nathan pasted it 2026-11-11 ~20:43 UTC and every check
+    # passed. A real add afterwards wrote a `fedge` rate row and succeeded, so the
+    # cap is live and the phase-2 lock did not land. This file runs in TWO
+    # pastes, so the objects its second paste would add are listed in PARTIAL
+    # below and are never reported as live until that paste happens.
+    "clu445-friend-edges.sql",
 ]
+
+# Files that ran only in part. For each, the objects the file defines that are
+# NOT in the database yet. Without this the tool can only call a whole file
+# applied or never-run, and either answer is false for half of a two-phase file:
+# it would report the phase-2 lock as live, or the phase-1 functions as missing
+# (CLU-446, in one direction or the other). When the second paste runs, empty
+# the set and record it in DATABASE.md §5.
+PARTIAL = {
+    "clu445-friend-edges.sql": {("policy", "edges only through add_friend_edge")},
+}
 
 # Written, never executed. Keeping these OUT of the applied list matters: while
 # they sat in it, this tool labelled `find_profile_by_code` "LATEST APPLIED"
@@ -127,18 +143,30 @@ DEFS = [
 ]
 
 
-def rank(name):
+def not_yet(name, key):
+    """True when this file ran only in part and this object is in the part that has not."""
+    return key is not None and key in PARTIAL.get(name, set())
+
+
+def applied(path, key=None):
+    name = pathlib.Path(path).name
+    return name in APPLIED and not not_yet(name, key)
+
+
+def rank(name, key=None):
     """Applied position. Never-run and unknown files sort BELOW everything
     applied, so they can never be reported as the live definition."""
-    if name in NEVER_RUN:
+    if name in NEVER_RUN or not_yet(name, key):
         return -2
     return APPLIED.index(name) if name in APPLIED else -1
 
 
-def label(path, i):
+def label(path, i, key=None):
     base = pathlib.Path(path).name
     if base in NEVER_RUN:
         return "NEVER RUN"
+    if not_yet(base, key):
+        return "NOT YET RUN"
     if base not in APPLIED:
         return "unknown order"
     return "LATEST APPLIED" if i == 0 else "superseded"
@@ -192,12 +220,13 @@ def show(found, only=None):
         if only and only.lower() not in name.lower():
             continue
         hits += 1
-        ordered = sorted(files, key=lambda p: -rank(pathlib.Path(p).name))
-        live = [p for p in ordered if pathlib.Path(p).name in APPLIED]
+        key = (kind, name)
+        ordered = sorted(files, key=lambda p: -rank(pathlib.Path(p).name, key))
+        live = [p for p in ordered if applied(p, key)]
         flag = "  <-- %d COPIES" % len(files) if len(files) > 1 else ""
         print("\n%-8s %s%s" % (kind, name, flag))
         for i, p in enumerate(ordered):
-            print("    %-14s %s" % (label(p, i), p))
+            print("    %-14s %s" % (label(p, i, key), p))
         if not live:
             print("    ** no applied file defines this — it is not in the database **")
     if only and not hits:
@@ -212,7 +241,7 @@ if __name__ == "__main__":
     if not only:
         multi = [k for k, v in found.items() if len(v) > 1]
         ghost = [k for k, v in found.items()
-                 if not any(pathlib.Path(p).name in APPLIED for p in v)]
+                 if not any(applied(p, k) for p in v)]
         files = sorted({p for v in found.values() for p in v})
         print("\n" + "=" * 68)
         print("CENSUS — read what this counts before quoting it (CLU-446).")
