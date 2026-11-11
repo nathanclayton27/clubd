@@ -4,8 +4,11 @@
     python3 tools/make_lego.py
 
 Every Lego video game, from Wikipedia's "List of Lego video games", fetched
-and parsed by scratch/lego/. The brief, verbatim: lump all the non tie-in
-Lego games into a first section, then after Lego Star Wars go nuts.
+and parsed by scratch/lego/ into tools/data/lego.json. The article merged its
+original and licensed tables into one in 2026; the parser keeps each title on
+the side the two-table article gave it and stops on a title it has not seen.
+The brief, verbatim: lump all the non tie-in Lego games into a first section,
+then after Lego Star Wars go nuts.
 
 So the first section is the whole unlicensed catalogue — Lego Island, Racers,
 Rock Raiders, Creator, on through Worlds and 2K Drive — and from Lego Star
@@ -30,9 +33,9 @@ Choices, stated rather than buried:
   polluting the unlicensed one.
 - The Lego Batman Movie Game sits with the film tie-ins, not the supers —
   it adapts the film, alongside the other Lego-movie games.
-- Lego Batman: Legacy of the Dark Knight is announced for 2026 and stays,
-  marked; the article lists nothing cancelled, so nothing else needed a
-  shipped/never-shipped call.
+- The article lists nothing cancelled or unreleased (Lego Batman: Legacy of
+  the Dark Knight, once announced, came out on 22 May 2026), so nothing
+  needed a shipped/never-shipped call.
 
 No weights. Playtimes for a hundred-odd games are not available at a scale
 worth trusting, and a made-up number would go straight into everyone's pace,
@@ -120,7 +123,6 @@ NOTES = {
     ("Lego Horizon Adventures", 2024): "Lego does Horizon Zero Dawn",
     ("Lego Dimensions", 2015): "Toys-to-life, every licence at once",
     ("Lego Rock Band", 2009): "Rock Band with bricks",
-    ("Lego Batman: Legacy of the Dark Knight", 2026): "Announced for 2026",
 }
 
 SECTIONS = [
@@ -248,9 +250,7 @@ def main():
              "by count."],
             ["What is not here.", "Lego Fortnite — a mode inside Epic's "
              "Fortnite rather than a standalone Lego game. Nothing else was "
-             "cut: the source lists nothing cancelled, and its one unreleased "
-             "title, Lego Batman: Legacy of the Dark Knight, stays marked as "
-             "announced for 2026."],
+             "cut: the source lists nothing cancelled."],
             "Titles and years from Wikipedia's list of Lego video games. "
             "The Star Wars games also appear on their own list; ticking one "
             "there does not tick it here.",

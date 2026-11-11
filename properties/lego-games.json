@@ -35,7 +35,7 @@
     ],
     [
       "What is not here.",
-      "Lego Fortnite — a mode inside Epic's Fortnite rather than a standalone Lego game. Nothing else was cut: the source lists nothing cancelled, and its one unreleased title, Lego Batman: Legacy of the Dark Knight, stays marked as announced for 2026."
+      "Lego Fortnite — a mode inside Epic's Fortnite rather than a standalone Lego game. Nothing else was cut: the source lists nothing cancelled."
     ],
     "Titles and years from Wikipedia's list of Lego video games. The Star Wars games also appear on their own list; ticking one there does not tick it here."
   ],
@@ -58,11 +58,6 @@
           "n": "1997"
         },
         {
-          "id": "lego-1998-lego-loco",
-          "t": "Lego Loco",
-          "n": "1998"
-        },
-        {
           "id": "lego-1998-lego-chess",
           "t": "Lego Chess",
           "n": "1998"
@@ -70,6 +65,11 @@
         {
           "id": "lego-1998-lego-creator",
           "t": "Lego Creator",
+          "n": "1998"
+        },
+        {
+          "id": "lego-1998-lego-loco",
+          "t": "Lego Loco",
           "n": "1998"
         },
         {
@@ -93,6 +93,16 @@
           "n": "2000"
         },
         {
+          "id": "lego-2000-lego-alpha-team",
+          "t": "Lego Alpha Team",
+          "n": "2000"
+        },
+        {
+          "id": "lego-2000-lego-creator-knights-kingdom",
+          "t": "Lego Creator: Knights' Kingdom",
+          "n": "2000"
+        },
+        {
           "id": "lego-2000-lego-my-style-preschool",
           "t": "Lego My Style: Preschool",
           "n": "2000"
@@ -103,19 +113,14 @@
           "n": "2000"
         },
         {
-          "id": "lego-2000-lego-alpha-team",
-          "t": "Lego Alpha Team",
-          "n": "2000"
-        },
-        {
           "id": "lego-2000-lego-stunt-rally",
           "t": "Lego Stunt Rally",
           "n": "2000"
         },
         {
-          "id": "lego-2000-lego-creator-knights-kingdom",
-          "t": "Lego Creator: Knights' Kingdom",
-          "n": "2000"
+          "id": "lego-2001-lego-bionicle-quest-for-the-toa",
+          "t": "Lego Bionicle: Quest for the Toa",
+          "n": "2001"
         },
         {
           "id": "lego-2001-lego-island-2-the-brickster-s-revenge",
@@ -128,18 +133,8 @@
           "n": "2001"
         },
         {
-          "id": "lego-2001-lego-bionicle-quest-for-the-toa",
-          "t": "Lego Bionicle: Quest for the Toa",
-          "n": "2001"
-        },
-        {
-          "id": "lego-2002-football-mania",
-          "t": "Football Mania",
-          "n": "2002"
-        },
-        {
-          "id": "lego-2002-island-xtreme-stunts",
-          "t": "Island Xtreme Stunts",
+          "id": "lego-2002-bionicle-matoran-adventures",
+          "t": "Bionicle: Matoran Adventures",
           "n": "2002"
         },
         {
@@ -148,13 +143,18 @@
           "n": "2002"
         },
         {
-          "id": "lego-2002-bionicle-matoran-adventures",
-          "t": "Bionicle: Matoran Adventures",
+          "id": "lego-2002-football-mania",
+          "t": "Football Mania",
           "n": "2002"
         },
         {
           "id": "lego-2002-galidor-defenders-of-the-outer-dimension",
           "t": "Galidor: Defenders of the Outer Dimension",
+          "n": "2002"
+        },
+        {
+          "id": "lego-2002-island-xtreme-stunts",
+          "t": "Island Xtreme Stunts",
           "n": "2002"
         },
         {
@@ -178,8 +178,13 @@
           "n": "2006"
         },
         {
-          "id": "lego-2006-lego-fever",
-          "t": "Lego Fever",
+          "id": "lego-2006-lego-bricktopia",
+          "t": "Lego Bricktopia",
+          "n": "2006"
+        },
+        {
+          "id": "lego-2006-lego-builder-bots",
+          "t": "Lego Builder Bots",
           "n": "2006"
         },
         {
@@ -188,13 +193,8 @@
           "n": "2006"
         },
         {
-          "id": "lego-2006-lego-bricktopia",
-          "t": "Lego Bricktopia",
-          "n": "2006"
-        },
-        {
-          "id": "lego-2006-lego-builder-bots",
-          "t": "Lego Builder Bots",
+          "id": "lego-2006-lego-fever",
+          "t": "Lego Fever",
           "n": "2006"
         },
         {
@@ -263,13 +263,13 @@
           "n": "2018"
         },
         {
-          "id": "lego-2019-lego-builder-s-journey",
-          "t": "Lego Builder's Journey",
+          "id": "lego-2019-lego-brawls",
+          "t": "Lego Brawls",
           "n": "2019"
         },
         {
-          "id": "lego-2019-lego-brawls",
-          "t": "Lego Brawls",
+          "id": "lego-2019-lego-builder-s-journey",
+          "t": "Lego Builder's Journey",
           "n": "2019"
         },
         {
@@ -379,15 +379,15 @@
           "n": "2013"
         },
         {
+          "id": "lego-2014-lego-batman-3-beyond-gotham",
+          "t": "Lego Batman 3: Beyond Gotham",
+          "n": "2014"
+        },
+        {
           "id": "lego-2014-lego-marvel-super-heroes-universe-in-peril",
           "t": "Lego Marvel Super Heroes: Universe in Peril",
           "n": "2014",
           "note": "The handheld and mobile version of Lego Marvel Super Heroes"
-        },
-        {
-          "id": "lego-2014-lego-batman-3-beyond-gotham",
-          "t": "Lego Batman 3: Beyond Gotham",
-          "n": "2014"
         },
         {
           "id": "lego-2016-lego-marvel-s-avengers",
@@ -413,8 +413,7 @@
         {
           "id": "lego-2026-lego-batman-legacy-of-the-dark-knight",
           "t": "Lego Batman: Legacy of the Dark Knight",
-          "n": "2026",
-          "note": "Announced for 2026"
+          "n": "2026"
         }
       ]
     },
@@ -481,13 +480,13 @@
           "n": "2012"
         },
         {
-          "id": "lego-2014-the-lego-movie-videogame",
-          "t": "The Lego Movie Videogame",
+          "id": "lego-2014-lego-the-hobbit",
+          "t": "Lego The Hobbit",
           "n": "2014"
         },
         {
-          "id": "lego-2014-lego-the-hobbit",
-          "t": "Lego The Hobbit",
+          "id": "lego-2014-the-lego-movie-videogame",
+          "t": "The Lego Movie Videogame",
           "n": "2014"
         },
         {
@@ -593,13 +592,13 @@
           "n": "2008"
         },
         {
-          "id": "lego-2011-life-of-george",
-          "t": "Life of George",
+          "id": "lego-2011-lego-duplo-minispiele-2",
+          "t": "Lego Duplo Minispiele 2",
           "n": "2011"
         },
         {
-          "id": "lego-2011-lego-duplo-minispiele-2",
-          "t": "Lego Duplo Minispiele 2",
+          "id": "lego-2011-life-of-george",
+          "t": "Life of George",
           "n": "2011"
         },
         {
@@ -608,13 +607,8 @@
           "n": "2012"
         },
         {
-          "id": "lego-2012-lego-ninjago-rise-of-the-snakes",
-          "t": "Lego Ninjago: Rise of the Snakes",
-          "n": "2012"
-        },
-        {
-          "id": "lego-2012-lego-juniors-create-cruise",
-          "t": "Lego Juniors Create & Cruise",
+          "id": "lego-2012-lego-city-team-up",
+          "t": "Lego City Team Up",
           "n": "2012"
         },
         {
@@ -623,8 +617,8 @@
           "n": "2012"
         },
         {
-          "id": "lego-2012-lego-city-team-up",
-          "t": "Lego City Team Up",
+          "id": "lego-2012-lego-juniors-create-cruise",
+          "t": "Lego Juniors Create & Cruise",
           "n": "2012"
         },
         {
@@ -633,8 +627,13 @@
           "n": "2012"
         },
         {
-          "id": "lego-2013-lego-legends-of-chima-speedorz",
-          "t": "Lego Legends of Chima: Speedorz",
+          "id": "lego-2012-lego-ninjago-rise-of-the-snakes",
+          "t": "Lego Ninjago: Rise of the Snakes",
+          "n": "2012"
+        },
+        {
+          "id": "lego-2013-lego-galaxy-squad-bug-battle",
+          "t": "Lego Galaxy Squad Bug Battle",
           "n": "2013"
         },
         {
@@ -643,8 +642,8 @@
           "n": "2013"
         },
         {
-          "id": "lego-2013-lego-galaxy-squad-bug-battle",
-          "t": "Lego Galaxy Squad Bug Battle",
+          "id": "lego-2013-lego-legends-of-chima-speedorz",
+          "t": "Lego Legends of Chima: Speedorz",
           "n": "2013"
         },
         {
