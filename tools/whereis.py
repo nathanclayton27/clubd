@@ -97,10 +97,11 @@ NEVER_RUN = {
     # nobody — but a never-run file sitting in the applied list is the exact
     # shape of CLU-374, and next time the object could be one only it defines.
     "migrate-add-friend-privacy.sql":   "never ran — the 2026-08-25 pre-flight found friend_may_read absent (CLU-195)",
-    # Written and queued, then failed its own hostile audit on 2026-09-12: the
-    # ledger row it writes would be false, and `save_progress` breaks the
-    # invariant its column comment asserts. Not to be pasted in this form.
-    "clu504-tombstones.sql":            "queued then held (CLU-504): the audit said DO NOT RUN in this form",
+    # Written and queued. The first version failed its hostile audit on
+    # 2026-09-12; the rewrite (checksum 54f0ecd2…) was audited RUN the same night
+    # and re-verified on 2026-11-11 (CLU-572). Still unrun: when Nathan pastes it,
+    # move it out of this list and append it to the END of APPLIED.
+    "clu504-tombstones.sql":            "queued (CLU-504): rewrite audited RUN 2026-09-12, re-verified 2026-11-11; not yet pasted",
 }
 
 # Read-only harnesses. They define nothing and they may be run against

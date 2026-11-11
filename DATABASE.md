@@ -752,8 +752,18 @@ ready* below, and **`scratch/security/clu504-tombstones.sql`**, which has been
 found the ledger row it wrote would be false and that `save_progress` broke the
 invariant its own column comment asserted, and the rewrite answers both by
 replacing the functions rather than only adding a column. See *Queued and not
-run: `progress` learns what was deleted* below. The front-end half of that card
-shipped without it. Nothing else in the repo is waiting on a paste.
+run: `progress` learns what was deleted* below. What shipped without it was the
+merge fix (step one). The tombstone client half is still unwritten and is now
+CLU-573. **`clu445-friend-edges.sql` is also waiting on a paste**: phase 1 only,
+under *Queued and not run: the friendship edge gets a door* below.
+
+**Re-verified 2026-11-11 (CLU-572).** All three queued files were checked again by
+an independent verifier and a hostile auditor after two months untouched. The
+verdict was *ready with changes*, and the changes are to the run steps, not the
+files. **The current run steps are the latest comment on CLU-153, CLU-504 and
+CLU-445. Where this document and those steps disagree, the steps win.** The
+session order is on CLU-401: CLU-504, then CLU-153 A and its live test, then
+CLU-445 phase 1, then CLU-153 B.
 
 **`superseded/migrate-add-friend-privacy.sql` was listed as applied inside
 `tools/whereis.py` until CLU-446**, contradicting this section, which proves it
@@ -972,7 +982,7 @@ can go in today and the policy waits on its own.
 | Order | File | What it does | Must be true before it runs |
 |---|---|---|---|
 | 1 | `scratch/security/clu153-A-find_profile_by_code.sql` | Creates `find_profile_by_code(text)` — definer, `search_path = public, pg_temp`, refuses anonymous callers, `upper(btrim())`s the code, exact match, one row `(user_id, username, fcode)` or none; misses charged through `rate_limit_guard`/`rate_limit_note` under kind `'fcode'` (20/hour, 60/day, per user). Revoked from `public, anon, authenticated`, granted to `authenticated`. Touches no policy, no table grant and no row of user data; inserts its own ledger row. | Nothing beyond the rate-limit helpers (CLU-35, live) and the ledger (CLU-404, live). **Safe now and safe to re-run — but not inert.** The RPC-calling front end is already deployed, so the moment A commits, live lookups move onto it: they become rate limited, and two sentences that live in this file can reach users. |
-| 2 | `scratch/security/clu153-B-narrow-profiles.sql` | Drops `"profiles readable when signed in"` and creates `"read own profile"` (`auth.uid() = user_id`) and `"read connected profiles"` (an edge in either direction in `friendships`). One transaction, so the drop cannot land without both replacements. Asserts exactly two SELECT policies afterwards. Records itself. | **File A has run, the `index.html` live on clubd.watch calls `find_profile_by_code`, and a deliberate MISS on the live site has been seen to add a `kind = 'fcode'` row to `rate_events`** — which is the only evidence that distinguishes the function from the fallback. Enforced: the file raises unless its `set_config` line is live, *and* it checks the function exists and `authenticated` can execute it. Arm it with `python scratch/security/arm-clu153-B.py` immediately before pasting — that spends the fence and re-stamps the checksum together. |
+| 2 | `scratch/security/clu153-B-narrow-profiles.sql` | Drops `"profiles readable when signed in"` and creates `"read own profile"` (`auth.uid() = user_id`) and `"read connected profiles"` (an edge in either direction in `friendships`). One transaction, so the drop cannot land without both replacements. Asserts exactly two SELECT policies afterwards. Records itself. | **File A has run, the `index.html` live on clubd.watch calls `find_profile_by_code`, and a deliberate MISS on the live site has been seen to add a `kind = 'fcode'` row to `rate_events`** — which is the only evidence that distinguishes the function from the fallback. Enforced: the file raises unless its `set_config` line is live, *and* it checks the function exists and `authenticated` can execute it. Arm it with `python scratch/security/arm-clu153-B.py --saw-the-row` immediately before pasting — that spends the fence and re-stamps the checksum together. Without the flag it only prints the gate procedure and exits 2. |
 
 **The front end is ahead of both.** Since CLU-153 `friendByCode()` calls
 `rpc('find_profile_by_code', {p_code})` first and does the direct read only
@@ -1008,7 +1018,10 @@ Four things they say about themselves did, and all four mattered:
   observable event whether the function served it or the old read did. The
   replacement is a before/after count of `select count(*) from rate_events
   where kind = 'fcode';` around a **deliberate miss**, because only a miss
-  writes that row.
+  writes that row. *(Refined 2026-11-11, CLU-572: count only Nathan's own
+  `fcode` rows from the last 10 minutes, and check that the newest one is later
+  than the baseline's `now()`. The plain total counts every user's misses. The
+  exact query is in CLU-153's run steps.)*
 - **B claimed the narrowed policy leaves everyone else "reachable only by
   holding their code".** It does not. `migrate-add-friends.sql`'s
   `"add own direction"` insert policy constrains only column `a`, uncapped, so
@@ -1021,7 +1034,8 @@ Four things they say about themselves did, and all four mattered:
   compares the recorded digest against the file on disk, so from then on the
   strongest record this project has would disagree with the repo about a file
   that ran perfectly — and nobody could tell that apart from tampering. So
-  arming is one command, `python scratch/security/arm-clu153-B.py`, which spends
+  arming is one command, `python scratch/security/arm-clu153-B.py --saw-the-row`
+  (without the flag it prints the gate procedure and changes nothing), which spends
   the fence and re-stamps the checksum together, validates the footer *before*
   it touches the fence so a failure leaves the file unrunnable, and is
   idempotent. **Run it immediately before pasting B.** It does not re-fence
@@ -1144,15 +1158,21 @@ unticked may ever be written into `removed`.**
 checked, not assumed: `tomb_at`, `tomb_keep`, `progress_tombstone_guard` and the
 `progress_tombstones` trigger each answer *"NEVER RUN … no applied file defines
 this — it is not in the database"*, which is right today. It becomes **wrong the
-moment the file runs**, because `whereis.py` reads this document for what has
-been applied. **Move the file into the applied list here in the same sitting as
-the paste**, or the tool spends the next fortnight calling four live objects
-missing — which is CLU-446 in the other direction.
+moment the file runs**. **In the same sitting as the paste**, take
+`clu504-tombstones.sql` out of `NEVER_RUN` in `tools/whereis.py`, append it to the
+**end** of `APPLIED` (after `migrate-club-progress.sql`, because list order decides
+which file the tool calls LATEST APPLIED), and record the run in §5 here.
+Otherwise the tool spends the next fortnight calling four live objects missing,
+which is CLU-446 in the other direction.
+
+*(Corrected 2026-11-11, CLU-572: this paragraph and the SQL file's own trailer
+used to say that `whereis.py` reads this document for what has been applied. It
+does not. It keeps its own hard-coded lists.)*
 
 **Checksum `54f0ecd2…`**, generated by `python tools/migrations.py --footer` and
 spliced by script rather than by hand, which is the specific failure that stopped
 the first version. Hostile-audited across three rounds by an agent that wrote
-neither version, and the audit is on CLU-504 in full. The second round produced
+neither version, and the audit is on CLU-504 in full. The first round produced
 ten non-blocking findings, of which eight were taken: three sentences in the
 header were provably false and are rewritten; `tomb_at`/`tomb_keep` no longer
 claim `parallel safe` (a plpgsql `EXCEPTION` block opens a subtransaction, which
@@ -1200,10 +1220,18 @@ states plainly that the third returns legitimate rows too, because an honest
 add-by-code to a stranger is warrantless by that definition. Any cleanup is a
 statement written afterwards, naming one account, with the count read first.
 
-⚠ **`tools/whereis.py` does not know about this file's three objects yet**, so it
-will not report `add_friend_edge`, `friend_edge_warrant` or
-`guard_friend_edge_rate` as absent. That is the CLU-446 failure mode in the
-other direction and it is worth a pass before the next paste.
+**`tools/whereis.py` lists this file under `NEVER_RUN`** (checked 2026-11-11,
+CLU-572). It reports `add_friend_edge`, `friend_edge_warrant`,
+`guard_friend_edge_rate`, the `friendships_rate_guard` trigger and the phase-2
+policy as not in the database, which is right until the paste. *(This paragraph
+used to say the tool did not know the file at all, which had stopped being true.)*
+
+**After phase 1 runs, record it as partial.** The phase-2 policy `edges only
+through add_friend_edge` must stay marked absent until the second paste, so do
+not simply append the whole file to `APPLIED`. **Do not paste this file a second
+time until CLU-553 is live**: the site must call `add_friend_edge` and must no
+longer insert into `friendships` directly. From phase 1 on, any signed-in user
+can create the `fedgerpc` row that unlocks phase 2.
 
 ### And three that fail safely — leave them alone
 
