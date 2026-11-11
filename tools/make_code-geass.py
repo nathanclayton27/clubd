@@ -157,8 +157,11 @@ def check_source(d):
     q = d["quotes"]
     assert "is a compilation of the television series" in q["trilogy_is_compilation"]
     assert "there are few changes to the storylines" in q["trilogy_has_changes"]
+    # the article writes its episode ranges with en dashes since 2026, and
+    # not consistently ("1-16" kept its hyphen), so compare dash-blind
+    coverage = q["trilogy_coverage"].replace("–", "-")
     for short, (stated, _readable) in COVERS.items():
-        assert stated in q["trilogy_coverage"], (short, q["trilogy_coverage"])
+        assert stated in coverage, (short, q["trilogy_coverage"])
 
     # --- and the sequel follows the FILMS, which is the whole list --------
     assert "serves as a direct sequel to the events of the three-part film" \
