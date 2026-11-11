@@ -4,7 +4,7 @@
     python tools/make_gears-of-war.py
 
 The Gears of War campaigns in release order — the 2006 original through
-Gears 5 and its Hivebusters expansion — cut into the two eras the franchise
+E-Day (2026) — cut into the two eras the franchise
 actually has: Epic Games on the Xbox 360, then The Coalition under Microsoft.
 Spin-offs and expansions ride in release order alongside the numbered games
 rather than being hidden in a section of their own, and carry `opt: 1`, which
@@ -80,17 +80,19 @@ same rule fps-canon uses to cut live-service shooters.
 squads, sold apart from the games they attach to, and HowLongToBeat times
 both. They are optional because each needs its parent game.
 
-**E-Day is a row, and it weighs nothing until it is out.** The owner's rule,
-CLU-315: announced work the source dates — even to a bare year — earns a row;
-undated work does not. Its own article's infobox gives `released = October 6,
-2026` and its short description reads "Upcoming video game", so it is dated
-and it is a row.
+**Dated, unreleased work is a row that weighs nothing until it is out.** The
+owner's rule, CLU-315: announced work the source dates — even to a bare year
+— earns a row; undated work does not. E-Day shipped that way while it was
+announced; its own article (rev 2026-11-08) now gives `released = October 6,
+2026` and calls it "a 2026 third-person shooter", HowLongToBeat times it, and
+it weighs its real figure like every other row. UNRELEASED is empty until the
+next dated announcement.
 
 An unreleased row carries an explicit `w` of 0, never a missing one. The page
 resolves `WEIGHT = x.w >= 0 ? x.w : 1`, so a row without a weight on a
 weighted list silently books itself as an hour (CLU-131) — an invented hour
 for a game nobody can have played. Zero is the honest figure and it leaves the
-other nine rows' verified HowLongToBeat hours alone.
+other rows' verified HowLongToBeat hours alone.
 
 Both directions are asserted against the clock every run:
 
@@ -139,8 +141,7 @@ ROSTER = [
      "Twenty-five years after the third game, and a new generation: JD "
      "Fenix, Kait, Del, and the Swarm risen from the Locust's remains"),
     ("gears5", "Gears 5", "2019-09-10", "coalition", 0,
-     "Kait's story, and where the Locust actually came from. The longest of "
-     "the numbered campaigns."),
+     "Kait's story, and where the Locust actually came from"),
     ("tactics", "Gears Tactics", "2020-04-28", "coalition", 1,
      "Turn-based tactics spin-off and a prequel — it opens as the Hammer of "
      "Dawn strikes fall, and follows the man who becomes Kait's father. By "
@@ -158,7 +159,7 @@ ROSTER = [
 # explicit w of 0 and says so in its note; main() asserts the date against the
 # clock in both directions, and asserts the HowLongToBeat figure is still
 # missing while that date is in the future.
-UNRELEASED = {"eday"}
+UNRELEASED = set()
 
 # Prefixed to an unreleased row's own note, so the row still reads correctly
 # the day it ships and the note needs no second edit.
@@ -250,8 +251,8 @@ def main():
             ("%s times %s h against the 2006 original's %s h — that is no "
              "longer 'the same campaign, better lighting', so the one-row "
              "decision needs revisiting" % (label, rec["main_h"], original))
-    # E-Day is a dated row that weighs nothing until it opens; its date, its
-    # missing figure and the clock are asserted in the roster loop above.
+    # A dated row that is not out yet weighs nothing until it opens; its date,
+    # its missing figure and the clock are asserted in the roster loop above.
 
     # --- sections ----------------------------------------------------------
     sections = []
@@ -301,12 +302,6 @@ def main():
     assert shortest["id"] == "gow-raam", \
         "the RAAM's Shadow note claims it is the shortest sitting here; %r is" \
         % shortest["t"]
-    numbered = [x for x in played if not x.get("opt")]
-    assert max(numbered, key=lambda x: x["w"])["id"] == "gow-gears5", \
-        "the Gears 5 note claims it is the longest of the numbered campaigns"
-    # The one date a note prints, taken from the roster rather than retyped.
-    eday_due = longdate(datetime.date.fromisoformat(
-        next(d for k, _t, d, _s, _o, _n in ROSTER if k == "eday")))
 
     prop = {
         "slug": SLUG,
@@ -371,16 +366,6 @@ def main():
              "against Gears 5, which is why both are marked optional. Each "
              "is a separate campaign with its own squad rather than a "
              "mission pack, and each is a single evening."],
-            ["E-Day is here, with an empty bar.",
-             "The prequel set fourteen years before the first game is "
-             "announced for %s and is not out. It gets a row because its own "
-             "article dates it, and the row weighs nothing because nobody has "
-             "played it: HowLongToBeat has a record for it and no figure, and "
-             "this list refuses to guess one. The date is checked against the "
-             "clock on every build — if the site starts timing the game, or "
-             "if that date passes with no figure behind it, the build stops "
-             "rather than leaving the bar empty or inventing an hour."
-             % eday_due],
             ["What is not here.",
              "Gears Pop! was a Funko-branded mobile strategy game with no "
              "campaign, and Microsoft shut its servers off in April 2021 — "
@@ -388,10 +373,8 @@ def main():
              "the row for the campaign they hold."],
             ["Hours are story only.",
              "HowLongToBeat main-story figures — normal difficulty, no "
-             "Insane runs, no Horde, no multiplayer. Every row for a game you "
-             "can play carries a real one; nothing on this list was "
-             "estimated, and the only row without a figure is the one whose "
-             "game is not out."],
+             "Insane runs, no Horde, no multiplayer. Every row carries a real "
+             "one, and nothing on this list was estimated."],
             "Game list, release order and dates from Wikipedia's Gears of "
             "War article and the individual game articles; hours from "
             "HowLongToBeat main-story figures, verified by name and exact "

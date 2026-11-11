@@ -160,7 +160,7 @@ sources are books. *Body Horror* and *FPS Canon* are built the same way.
 **Games with story-only hours.** *Kingdom Hearts*, *Metal Gear*, *Zelda*,
 *Yakuza / Like a Dragon*, the *FromSoftware* Souls line, *Final Fantasy*,
 *Resident Evil*, mainline *Mario* and *Metroid*, *Castlevania* (with style
-chips), *Half-Life & Portal*, *Silent Hill*, *Halo*, *Gears of War* (49 hours of
+chips), *Half-Life & Portal*, *Silent Hill*, *Halo*, *Gears of War* (63 hours of
 numbered campaign, the spin-offs optional beside it), the whole *Ace
 Attorney* docket, *Fallout* and *The Elder Scrolls* with their story DLC as
 optional rows, *Persona* (the whole franchise, 927 hours, stated plainly), *Dragon Quest*,
