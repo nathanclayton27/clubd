@@ -1,4 +1,5 @@
 {
+ "as_of": "2026-11-11",
  "spined": [
   {
    "spine": 1,
@@ -18299,7 +18300,8 @@
     "4K",
     "Blu-ray"
    ],
-   "ld_spine": null
+   "ld_spine": null,
+   "due": "2026-11-17"
   },
   {
    "spine": 1335,
@@ -18327,7 +18329,8 @@
     "4K",
     "Blu-ray"
    ],
-   "ld_spine": null
+   "ld_spine": null,
+   "due": "2026-11-17"
   },
   {
    "spine": 1337,
@@ -18341,7 +18344,96 @@
     "4K",
     "Blu-ray"
    ],
-   "ld_spine": null
+   "ld_spine": null,
+   "due": "2026-11-24"
+  },
+  {
+   "spine": 1338,
+   "t": "The English Patient",
+   "url": "https://www.criterion.com/films/33811-the-english-patient",
+   "director": "Anthony Minghella",
+   "country": "United States ",
+   "runtime": 162,
+   "year": 1996,
+   "formats": [
+    "LaserDisc",
+    "4K",
+    "Blu-ray"
+   ],
+   "ld_spine": 336,
+   "due": "2026-12-08"
+  },
+  {
+   "spine": 1339,
+   "t": "Grizzly Man",
+   "url": "https://www.criterion.com/films/34209-grizzly-man",
+   "director": "Werner Herzog",
+   "country": "United States ",
+   "runtime": 104,
+   "year": 2005,
+   "formats": [
+    "Blu-ray"
+   ],
+   "ld_spine": null,
+   "due": "2026-12-08"
+  },
+  {
+   "spine": 1340,
+   "t": "The Shop Around the Corner",
+   "url": "https://www.criterion.com/films/29034-the-shop-around-the-corner",
+   "director": "Ernst Lubitsch",
+   "country": "United States ",
+   "runtime": 99,
+   "year": 1940,
+   "formats": [
+    "4K",
+    "Blu-ray"
+   ],
+   "ld_spine": null,
+   "due": "2026-12-15"
+  },
+  {
+   "spine": 1342,
+   "t": "Deliverance",
+   "url": "https://www.criterion.com/films/34864-deliverance",
+   "director": "John Boorman",
+   "country": "United States ",
+   "runtime": 109,
+   "year": 1972,
+   "formats": [
+    "4K",
+    "Blu-ray"
+   ],
+   "ld_spine": null,
+   "due": "2027-01-26"
+  },
+  {
+   "spine": 1343,
+   "t": "Career Girls",
+   "url": "https://www.criterion.com/films/28856-career-girls",
+   "director": "Mike Leigh",
+   "country": "United Kingdom ",
+   "runtime": 87,
+   "year": 1997,
+   "formats": [
+    "Blu-ray"
+   ],
+   "ld_spine": null,
+   "due": "2027-01-19"
+  },
+  {
+   "spine": 1344,
+   "t": "Chocolat",
+   "url": "https://www.criterion.com/films/29200-chocolat",
+   "director": "Claire Denis",
+   "country": "France ",
+   "runtime": 104,
+   "year": 1988,
+   "formats": [
+    "Blu-ray"
+   ],
+   "ld_spine": null,
+   "due": "2027-01-26"
   }
  ],
  "laserdisc": [

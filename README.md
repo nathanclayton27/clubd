@@ -296,7 +296,7 @@ the random picker: *Bad Movie Night*, *body-swap films*, *real-time films*
 (the runtime is the plot), *bottle episodes* (each one verified to its
 season and number), and *one-location films*. Plus *Zombie Films* — 605 features from 1919 to now, era by era, picker-first.
 
-**Everything at once.** *The Criterion Collection*, all 1,337 spine numbers
+**Everything at once.** *The Criterion Collection*, all 1,344 spine numbers
 in order with the formats each was released on; *Best Picture*, every nominee
 from every ceremony with the winners marked and a winners-by-decade view;
 *Disney*, the studio's own 654 films with release channels as tiers; and

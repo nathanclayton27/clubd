@@ -3,8 +3,18 @@
 
     python3 tools/make_criterion.py
 
-Every spine-numbered Criterion release, 1 to 1337, in order, with the formats
+Every spine-numbered Criterion release, 1 to 1344, in order, with the formats
 Criterion has put each one out on.
+
+A spine Criterion has announced but not yet shipped carries a "due" date in
+tools/data/criterion.json. Against the data's own "as_of" date, a row whose due
+date is still ahead weighs nothing and says when it is due; once as_of reaches
+the date, the next run gives it its runtime and drops the marker. Bumping
+as_of is the whole of the bump — nothing here reads the clock, so two runs on
+different days write the same file. An announced spine with no date at all
+stays off until it has one. scratch/criterion/preorders.py adds new spines and
+their dates from the browse list and the films' own pages without re-crawling
+the whole catalogue.
 
 Sources, machine-read rather than typed:
   - criterion.com/shop/browse/list, which renders the whole catalogue server
@@ -41,6 +51,7 @@ did before; a row with a WRONG one would tick a film somebody has not seen.
 The resolution is done by scratch/agent-crit-qid/resolve.py and frozen into
 tools/data/criterion_qids.json, so this generator stays offline.
 """
+import datetime
 import json
 import pathlib
 import re
@@ -78,7 +89,22 @@ def slug(t):
     return keep.strip("-")
 
 
-def note_for(r):
+# spelled out rather than strftime("%B"), which follows the machine's locale
+MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")
+
+
+def pending(r, as_of):
+    """True while a row's Criterion edition is announced but not yet out."""
+    return bool(r.get("due")) and r["due"] > as_of
+
+
+def minutes(r, as_of):
+    """What a row weighs: its runtime once it is out, nothing before."""
+    return 0 if pending(r, as_of) else (r["runtime"] or 0)
+
+
+def note_for(r, as_of=None):
     # the country field arrives with a trailing space from the source, which
     # doubled up around the separators on every note — strip each bit
     bits = [b.strip() for b in (r.get("director"), r.get("country"),
@@ -89,6 +115,10 @@ def note_for(r):
     bits.append(", ".join(r["formats"]) if r["formats"] else "formats unconfirmed")
     if r.get("ld_spine"):
         bits.append("LaserDisc as #%d" % r["ld_spine"])
+    if as_of and pending(r, as_of):
+        due = datetime.date.fromisoformat(r["due"])
+        bits.append("Not out yet — due %d %s %d"
+                    % (due.day, MONTHS[due.month - 1], due.year))
     return " · ".join(bits)
 
 
@@ -118,6 +148,13 @@ def main():
     legacy = json.loads((here / "data" / "criterion_ids.json")
                         .read_text(encoding="utf-8"))["ids"]
     spined, laser = d["spined"], d["laserdisc"]
+    # The date the due dates are read against. It lives in the data, not the
+    # clock, so the output only changes when somebody bumps it.
+    as_of = d["as_of"]
+    datetime.date.fromisoformat(as_of)
+    for r in spined:
+        if r.get("due"):
+            datetime.date.fromisoformat(r["due"])
 
     fixes = dict(YEAR_FIX)
     for bucket, rows in (("spined", spined), ("laserdisc", laser)):
@@ -137,18 +174,22 @@ def main():
         got = [r for r in spined if lo <= r["spine"] <= hi]
         if not got:
             continue
-        mins = sum(r["runtime"] or 0 for r in got)
+        mins = sum(minutes(r, as_of) for r in got)
         items = [{
             "id": "crit-%d-%s" % (r["spine"], slug(r["t"])),
             "t": r["t"], "n": "#%d" % r["spine"],
-            "w": round((r["runtime"] or 0) / 60.0, 2),
+            # an explicit 0 on a row that is not out yet, not the 0.0 a box
+            # set with no runtime gets, so the two read apart in the file
+            "w": 0 if pending(r, as_of) else round((r["runtime"] or 0) / 60.0, 2),
             **qid_of(qids, "crit-%d-%s" % (r["spine"], slug(r["t"]))),
             **({"tags": r["formats"]} if r["formats"] else {}),
-            **({"note": note_for(r)} if note_for(r) else {}),
+            **({"note": note_for(r, as_of)} if note_for(r, as_of) else {}),
         } for r in got]
+        coming = sum(1 for r in got if pending(r, as_of))
         sec = {"id": "s%d" % lo, "title": band_title(lo, hi),
                "sub": "%d film%s · %d hours" % (len(got), "" if len(got) == 1 else "s",
-                                                round(mins / 60.0)),
+                                                round(mins / 60.0))
+                      + (" · %d not out yet" % coming if coming else ""),
                "items": items}
         if lo == 1:
             sec["open"] = True
@@ -195,7 +236,9 @@ def main():
     assert not stray, "criterion_qids.json has %d rows this list does not: %s" \
                       % (len(stray), stray[:5])
 
-    hours = sum(r["runtime"] or 0 for r in spined) / 60.0
+    # the hours the bars add up to, so a film not out yet counts in neither
+    hours = sum(minutes(r, as_of) for r in spined) / 60.0
+    coming = sum(1 for r in spined if pending(r, as_of))
     by_fmt = {}
     for r in spined:
         for f in r["formats"]:
@@ -255,10 +298,15 @@ def main():
             ["Spine #88 is two films.", "Ivan the Terrible, Part I and Part II "
              "share one number. Every other spine in the list is one entry."],
             ["Bar widths are runtimes.", "Read from each film's own Criterion "
-             "page. %s" % ("Every one of them has a real runtime." if not noruntime
-                           else "%d of the %d have no runtime listed and weigh "
-                                "nothing, so they cannot drag a group's pace."
-                                % (noruntime, len(spined)))],
+             "page. %s%s" % ("Every one of them has a real runtime." if not noruntime
+                             else "%d of the %d have no runtime listed and weigh "
+                                  "nothing, so they cannot drag a group's pace."
+                                  % (noruntime, len(spined)),
+                             "" if not coming else
+                             " %d %s not out yet and weigh%s nothing until %s."
+                             % (coming, "is" if coming == 1 else "are",
+                                "s" if coming == 1 else "",
+                                "it is" if coming == 1 else "they are"))],
             "Catalogue, editions and runtimes from criterion.com; LaserDisc "
             "history from Wikipedia's List of films in the Criterion Collection.",
         ],

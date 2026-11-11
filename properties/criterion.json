@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 63,
   "year": "1984–",
-  "blurb": "Spines #1 to #1337 — 1337 releases, about 2313 hours, each with the formats Criterion put it out on.",
+  "blurb": "Spines #1 to #1344 — 1343 releases, about 2306 hours, each with the formats Criterion put it out on.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -37,11 +37,11 @@
   "notes": [
     [
       "Sorted by spine number, because that is the collection.",
-      "Criterion numbers every release, and the number is how the collection is referred to. The numbering restarted at 1 when the line moved from LaserDisc to DVD in 1998, so these are the DVD-era numbers — #1 is Grand Illusion, #1337 is The Right Stuff."
+      "Criterion numbers every release, and the number is how the collection is referred to. The numbering restarted at 1 when the line moved from LaserDisc to DVD in 1998, so these are the DVD-era numbers — #1 is Grand Illusion, #1344 is Chocolat."
     ],
     [
       "Formats are what Criterion lists now, plus LaserDisc.",
-      "DVD, Blu-ray and 4K are read off each film's own Criterion page, and count an edition whether it is sold on its own or only inside a box set. The catch is that Criterion delists an edition once it goes out of print: #1 Grand Illusion had a Blu-ray in 2012 and its page no longer mentions it, so it shows here as LaserDisc and DVD. Read these as what you can still get hold of rather than as a complete pressing history. LaserDisc is the exception — it comes from Wikipedia, which is the only place that history survives. Counts across the collection: Blu-ray 1036, DVD 924, LaserDisc 293, 4K 213."
+      "DVD, Blu-ray and 4K are read off each film's own Criterion page, and count an edition whether it is sold on its own or only inside a box set. The catch is that Criterion delists an edition once it goes out of print: #1 Grand Illusion had a Blu-ray in 2012 and its page no longer mentions it, so it shows here as LaserDisc and DVD. Read these as what you can still get hold of rather than as a complete pressing history. LaserDisc is the exception — it comes from Wikipedia, which is the only place that history survives. Counts across the collection: Blu-ray 1042, DVD 924, LaserDisc 294, 4K 216."
     ],
     [
       "LaserDisc-only releases are their own section.",
@@ -53,7 +53,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "Read from each film's own Criterion page. 172 of the 1337 have no runtime listed and weigh nothing, so they cannot drag a group's pace."
+      "Read from each film's own Criterion page. 172 of the 1343 have no runtime listed and weigh nothing, so they cannot drag a group's pace. 9 are not out yet and weigh nothing until they are."
     ],
     "Catalogue, editions and runtimes from criterion.com; LaserDisc history from Wikipedia's List of films in the Criterion Collection."
   ],
@@ -15169,8 +15169,8 @@
     },
     {
       "id": "s1301",
-      "title": "#1301–1337",
-      "sub": "37 films · 59 hours",
+      "title": "#1301–1344",
+      "sub": "43 films · 52 hours · 9 not out yet",
       "items": [
         {
           "id": "crit-1301-the-man-who-wasn-t-there",
@@ -15558,13 +15558,13 @@
           "id": "crit-1334-wild-at-heart",
           "t": "Wild at Heart",
           "n": "#1334",
-          "w": 2.08,
+          "w": 0,
           "q": "Q751382",
           "tags": [
             "4K",
             "Blu-ray"
           ],
-          "note": "David Lynch · United States · 1990 · 4K, Blu-ray"
+          "note": "David Lynch · United States · 1990 · 4K, Blu-ray · Not out yet — due 17 November 2026"
         },
         {
           "id": "crit-1335-marie-antoinette",
@@ -15582,25 +15582,89 @@
           "id": "crit-1336-shadows-of-forgotten-ancestors",
           "t": "Shadows of Forgotten Ancestors",
           "n": "#1336",
-          "w": 1.6,
+          "w": 0,
           "q": "Q1409627",
           "tags": [
             "4K",
             "Blu-ray"
           ],
-          "note": "Sergei Parajanov · Ukraine · 1965 · 4K, Blu-ray"
+          "note": "Sergei Parajanov · Ukraine · 1965 · 4K, Blu-ray · Not out yet — due 17 November 2026"
         },
         {
           "id": "crit-1337-the-right-stuff",
           "t": "The Right Stuff",
           "n": "#1337",
-          "w": 3.22,
+          "w": 0,
           "q": "Q1197185",
           "tags": [
             "4K",
             "Blu-ray"
           ],
-          "note": "Philip Kaufman · United States · 1983 · 4K, Blu-ray"
+          "note": "Philip Kaufman · United States · 1983 · 4K, Blu-ray · Not out yet — due 24 November 2026"
+        },
+        {
+          "id": "crit-1338-the-english-patient",
+          "t": "The English Patient",
+          "n": "#1338",
+          "w": 0,
+          "tags": [
+            "LaserDisc",
+            "4K",
+            "Blu-ray"
+          ],
+          "note": "Anthony Minghella · United States · 1996 · LaserDisc, 4K, Blu-ray · LaserDisc as #336 · Not out yet — due 8 December 2026"
+        },
+        {
+          "id": "crit-1339-grizzly-man",
+          "t": "Grizzly Man",
+          "n": "#1339",
+          "w": 0,
+          "tags": [
+            "Blu-ray"
+          ],
+          "note": "Werner Herzog · United States · 2005 · Blu-ray · Not out yet — due 8 December 2026"
+        },
+        {
+          "id": "crit-1340-the-shop-around-the-corner",
+          "t": "The Shop Around the Corner",
+          "n": "#1340",
+          "w": 0,
+          "tags": [
+            "4K",
+            "Blu-ray"
+          ],
+          "note": "Ernst Lubitsch · United States · 1940 · 4K, Blu-ray · Not out yet — due 15 December 2026"
+        },
+        {
+          "id": "crit-1342-deliverance",
+          "t": "Deliverance",
+          "n": "#1342",
+          "w": 0,
+          "tags": [
+            "4K",
+            "Blu-ray"
+          ],
+          "note": "John Boorman · United States · 1972 · 4K, Blu-ray · Not out yet — due 26 January 2027"
+        },
+        {
+          "id": "crit-1343-career-girls",
+          "t": "Career Girls",
+          "n": "#1343",
+          "w": 0,
+          "tags": [
+            "Blu-ray"
+          ],
+          "note": "Mike Leigh · United Kingdom · 1997 · Blu-ray · Not out yet — due 19 January 2027"
+        },
+        {
+          "id": "crit-1344-chocolat",
+          "t": "Chocolat",
+          "n": "#1344",
+          "w": 0,
+          "tags": [
+            "Blu-ray"
+          ],
+          "note": "Claire Denis · France · 1988 · Blu-ray · Not out yet — due 26 January 2027"
         }
       ]
     },
