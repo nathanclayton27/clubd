@@ -5,7 +5,7 @@
   "kind": "films & games",
   "popularity": 85,
   "year": "1987–2026",
-  "blurb": "Twenty games and six films in release order — every arcade version the source counts as its own, from the 1987 cabinet to the film opening in October 2026.",
+  "blurb": "Twenty games and six films in release order — every arcade version the source counts as its own, from the 1987 cabinet to the film that opened in October 2026.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -33,7 +33,7 @@
     ],
     [
       "Six films, and no television.",
-      "A film here is a work Wikipedia files as a film with an article of its own. That admits the two 1994 features, the two Alpha anime, The Legend of Chun-Li and the one opening this October. It excludes Street Fighter IV: The Ties That Bind, which lives as a section of the game's page, and Round One: Fight!, which has no page at all. Television is off the list by the same source's own filing: Street Fighter II V and the 1995 American cartoon sit in its Television series section, and Assassin's Fist and Resurrection describe themselves as web series."
+      "A film here is a work Wikipedia files as a film with an article of its own. That admits the two 1994 features, the two Alpha anime, The Legend of Chun-Li and the one that opened in October 2026. It excludes Street Fighter IV: The Ties That Bind, which lives as a section of the game's page, and Round One: Fight!, which has no page at all. Television is off the list by the same source's own filing: Street Fighter II V and the 1995 American cartoon sit in its Television series section, and Assassin's Fist and Resurrection describe themselves as web series."
     ],
     [
       "No hours on this list, on purpose.",
@@ -267,7 +267,7 @@
       "id": "modern",
       "title": "V, 6, and back to the cinema",
       "sub": "2016–2026 · 3 games · 1 film",
-      "intro": "Two main entries, one more Street Fighter II, and a third live-action film. The film has a date and no release yet, so it is a row you cannot tick until October.",
+      "intro": "Two main entries, one more Street Fighter II, and a third live-action film.",
       "items": [
         {
           "id": "sf-g-2016-street-fighter-v",
@@ -299,7 +299,7 @@
           "n": "2026",
           "m": "f",
           "q": "Q130345436",
-          "note": "Kitao Sakurai · The third live-action feature, in IMAX from 16 October · Not out yet"
+          "note": "Kitao Sakurai · The third live-action feature, in IMAX from 16 October"
         }
       ]
     }

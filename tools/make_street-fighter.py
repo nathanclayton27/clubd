@@ -66,10 +66,14 @@ Length was not a reason to go either way: zombie-films ships 605 rows.
 THE SUB-SERIES QUESTIONS, EACH ANSWERED BY THE SOURCE
 -----------------------------------------------------
   Alpha / Zero       IN, one row per numbered game. `List of Street Fighter
-                     video games` files the Alpha series under Main series,
-                     and the franchise article's lead counts "the other six
-                     main games in the series" — Street Fighter plus six is
-                     II, Alpha, III, IV, V and 6. `Zero` is the same games'
+                     video games` files the Alpha series under Main series.
+                     The franchise article's lead used to agree, counting
+                     "the other six main games in the series" — II, Alpha,
+                     III, IV, V and 6 — but since 28 October 2026 it says
+                     "the other five", which leaves Alpha out of the count.
+                     That phrase links straight to the video-games list,
+                     whose Main series still holds Alpha, and that section is
+                     the rule. `Zero` is the same games'
                      Japanese title, not other games, so it is a note and not
                      a row. (`List of Street Fighter media` disagrees and
                      files Alpha under spin-offs; the video-games list is the
@@ -126,11 +130,11 @@ real work at both edges.
         films. Keeping television off is also what keeps the sync medium
         honest — see below, there is no letter for it.
 
-A live-action film IS a row at the end: Wikipedia gives the 2026 one a date,
-"scheduled to be released in the United States by Paramount Pictures on
-October 16, 2026 in IMAX", and dated announced work ships as a row under
-Nathan's rule of 2026-08-26. Undated work stays off, and nothing here is
-undated.
+A live-action film IS a row at the end. It shipped as dated announced work
+under Nathan's rule of 2026-08-26, and Wikipedia now says it "premiered on
+October 12, 2026 ... and was theatrically released in the US by Paramount
+Pictures on October 16, 2026, in IMAX" — so it is out, and the row is an
+ordinary one. Undated work stays off, and nothing here is undated.
 
 THE ROW MEDIUM, WHICH THIS LIST CANNOT DO WITHOUT
 --------------------------------------------------
@@ -328,12 +332,11 @@ NOTES = {
         "The seventh main entry, and the only one here with a real "
         "single-player campaign: World Tour is a story mode with your own "
         "avatar and a 3D world to walk around",
-    # the house form for dated announced work: what it is, then the standing
-    # "Not out yet" the rest of the catalogue uses
+    # shipped as dated announced work with "Not out yet"; it opened in US
+    # theatres on 16 Oct 2026, so the marker is gone
     "Street Fighter (2026 film)": (
         "Kitao Sakurai",
-        "The third live-action feature, in IMAX from 16 October",
-        "Not out yet"),
+        "The third live-action feature, in IMAX from 16 October"),
 }
 
 INTROS = {
@@ -371,8 +374,7 @@ INTROS = {
     "modern": (
         "V, 6, and back to the cinema", "2016–2026",
         "Two main entries, one more Street Fighter II, and a third live-action "
-        "film. The film has a date and no release yet, so it is a row you "
-        "cannot tick until October."),
+        "film."),
 }
 
 
@@ -518,7 +520,10 @@ def main():
     assert len(sf2rows) == 8, sorted(sf2rows)
 
     # ---- the exclusions, each with the sentence that excludes it -----------
-    said("Street Fighter", "six_main", "the other six main games in the series")
+    # "six" until 28 Oct 2026, "five" since: Alpha rests on the Main series
+    # section alone now (see the docstring)
+    said("Street Fighter", "other_main",
+         "the other five main games in the series")
     said("Street Fighter", "ex_arika",
          "Capcom co-produced a 3D fighting game", "with Arika")
     said("Street Fighter", "final_fight_brand",
@@ -610,8 +615,12 @@ def main():
     said("Street Fighter: The Legend of Chun-Li", "spinoff",
          "non-canonical spin-off and theatrical tie-in to Street Fighter IV")
     sf26 = said("Street Fighter (2026 film)", "release",
-                "scheduled to be released in the United States",
+                "theatrically released in the US",
                 "October 16, 2026", "IMAX")
+    # out now: the row carries no "Not out yet", and the note's "from 16
+    # October" is the US theatrical date, not the 12 October premiere
+    assert films["Street Fighter (2026 film)"]["runtime"], \
+        films["Street Fighter (2026 film)"]
     said("Street Fighter (2026 film)", "third_live_action",
          "third live-action feature-length film")
     said("Street Fighter", "sixty_million", "60 million units")
@@ -739,8 +748,8 @@ def main():
         # Band 80-89: a mainstream audience recognises the title on sight.
         # Street Fighter II is the fighting game nearly everyone has played,
         # the franchise has sold 60 million units and Guinness calls it the
-        # longest-running in its genre, and a third live-action film opens in
-        # October. It sits over Final Fantasy (82) and Resident Evil (80),
+        # longest-running in its genre, and a third live-action film opened in
+        # October 2026. It sits over Final Fantasy (82) and Resident Evil (80),
         # under Grand Theft Auto (86) and Pokemon (88), and a shade over The
         # Matrix (83), the catalogue's other films-and-games list.
         # See POPULARITY.md.
@@ -748,7 +757,7 @@ def main():
         "year": "1987–2026",
         "blurb": "Twenty games and six films in release order — every arcade "
                  "version the source counts as its own, from the 1987 cabinet "
-                 "to the film opening in October 2026.",
+                 "to the film that opened in October 2026.",
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch and play", "past": "done",
                  "ing": "working through"},
@@ -807,7 +816,8 @@ def main():
             ["Six films, and no television.",
              "A film here is a work Wikipedia files as a film with an article "
              "of its own. That admits the two 1994 features, the two Alpha "
-             "anime, The Legend of Chun-Li and the one opening this October. "
+             "anime, The Legend of Chun-Li and the one that opened in October "
+             "2026. "
              "It excludes Street Fighter IV: The Ties That Bind, which lives "
              "as a section of the game's page, and Round One: Fight!, which "
              "has no page at all. Television is off the list by the same "

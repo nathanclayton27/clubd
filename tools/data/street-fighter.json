@@ -1660,10 +1660,16 @@
    "first": [
     2026,
     10,
-    16,
+    12,
     3
    ],
    "all_dates": [
+    [
+     2026,
+     10,
+     12,
+     3
+    ],
     [
      2026,
      10,
@@ -1677,21 +1683,21 @@
      1
     ]
    ],
-   "runtime": null,
+   "runtime": 121,
    "director": "Kitao Sakurai",
-   "lead": "'Street Fighter' is an upcoming American action comedy film directed by Kitao Sakurai and written by Sakurai and T. J. Fixman. It is the third live-action feature-length film based on the Street Fighter video game series by Capcom. It features an ensemble cast including Noah Centineo, Andrew Koji, Callina Liang, Joe \"Roman Reigns\" Anoa'i, David Dastmalchian, Cody Rhodes, Eric André, Andrew Schulz, Vidyut Jammwal, Curtis \"50 Cent\" Jackson, and Jason Momoa. In the film, Chun-Li recruits the fighters Ryu and Ken Masters to join in a martial arts tournament and confront M. Bison.",
+   "lead": "'Street Fighter' is a 2026 martial arts film directed by Kitao Sakurai and written by Sakurai and T. J. Fixman, with a story by Dalan Musson and Gary Dauberman. It is the third live-action feature-length film based on the Street Fighter video game series by Capcom. The film stars Andrew Koji, Noah Centineo, Callina Liang, Joe \"Roman Reigns\" Anoa'i, David Dastmalchian, Cody Rhodes, Eric André, Andrew Schulz, Vidyut Jammwal, Orville Peck, Don Lee, Curtis \"50 Cent\" Jackson and Jason Momoa. Its plot follows the martial artist Chun-Li, who recruits the fighters Ryu and Ken Masters to join a tournament and confront the dictator M. Bison.",
    "qid": "Q130345436",
    "p31": [
-    "film project"
+    "film"
    ],
    "p31_ok": true,
    "gate_p577": true,
-   "gate_desc": false,
-   "desc": "upcoming film directed by Kitao Sakurai",
+   "gate_desc": true,
+   "desc": "2026 American-Japanese film directed by Kitao Sakurai",
    "pubyears": [
     2026
    ],
-   "p2047": null
+   "p2047": 120
   }
  ],
  "tv": [
@@ -1818,10 +1824,10 @@
   "References"
  ],
  "claims": {
-  "Street Fighter|six_main": "The first game in the series was released in 1987, followed by the other six main games in the series, various spin-offs and crossovers, and numerous appearances in other media.",
+  "Street Fighter|other_main": "The first game in the series was released in 1987, followed by the other five main games in the series, various spin-offs and crossovers, and numerous appearances in other media.",
   "Street Fighter|final_fight_brand": "Street Fighter II was released in 1991 following an unsuccessful attempt to brand the 1989 beat 'em up game Final Fight as the Street Fighter sequel.",
   "Street Fighter|ex_arika": "In 1996, Capcom co-produced a 3D fighting game Street Fighter EX with Arika, a company founded by Street Fighter II planner Akira Nishitani.",
-  "Street Fighter|sf2026": "An American-produced live-action film, also titled Street Fighter, is scheduled to be released by Paramount Pictures on October 16, 2026, in IMAX.",
+  "Street Fighter|sf2026": "An American-produced live-action film, also titled Street Fighter, was released by Paramount Pictures on October 16, 2026, in IMAX.",
   "List of Street Fighter video games|other_games": "These games are not part of the mainline Street Fighter series, but involve Street Fighter characters.",
   "List of Street Fighter video games|final_fight_sequel": "The Final Fight series, which first release was for Arcades in 1989 and was originally intended as direct sequel to the original Street Fighter, has many connections to the Street Fighter series including multiple characters from the series making playable appearances in the Final Fight series.",
   "Street Fighter II: Champion Edition|first_update": "It is the first of several updated versions of Street Fighter II: The World Warrior (1991), and part of the Street Fighter series.",
@@ -1831,7 +1837,7 @@
   "Hyper Street Fighter II|five_games": "Created to commemorate the 15th anniversary of the Street Fighter series, it is a modified port of Super Street Fighter II Turbo (1994) in which players can control any versions of the main characters from the five Street Fighter II games previously released for the arcades.",
   "Super Street Fighter II Turbo HD Remix|seventh": "The game was designed by Backbone Entertainment's David Sirlin to be the sixth definitive version of Street Fighter II, although it is in fact the seventh, being released after 2003's Hyper Street Fighter II.",
   "Ultra Street Fighter II: The Final Challengers|eighth": "Released to celebrate the Street Fighter series' 30th anniversary, it is an updated version of Super Street Fighter II Turbo (1994), itself an update of Street Fighter II (1991), being the eighth definitive version of the game.",
-  "Street Fighter (2026 film)|release": "Street Fighter is scheduled to be released in the United States by Paramount Pictures on October 16, 2026 in IMAX.",
+  "Street Fighter (2026 film)|release": "Street Fighter premiered on October 12, 2026, at the Grauman's Chinese Theatre in Los Angeles, and was theatrically released in the US by Paramount Pictures on October 16, 2026, in IMAX.",
   "Street Fighter (2026 film)|third_live_action": "It is the third live-action feature-length film based on the Street Fighter video game series by Capcom.",
   "Street Fighter (1994 film)|two_films": "It was one of two films released in 1994 specifically adapting Street Fighter II, following Street Fighter II: The Animated Movie.",
   "Street Fighter IV|hiatus": "It was the first original main entry in the Street Fighter series since Street Fighter III in 1997, a hiatus of eleven years.",
