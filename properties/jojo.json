@@ -4,8 +4,8 @@
   "subtitle": "every episode of the David Production anime",
   "kind": "anime",
   "popularity": 71,
-  "year": "2012–2022",
-  "blurb": "All 190 episodes of the David Production anime in order — six parts, six JoJos, one bloodline.",
+  "year": "2012–",
+  "blurb": "All 202 episodes of the David Production anime in order — seven parts, seven JoJos, one bloodline, still airing.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -26,13 +26,17 @@
     ],
     [
       "Where each part sits in the overall numbering.",
-      "Phantom Blood is episodes 1–9 and Battle Tendency 10–26 — one 2012 season split between them, so their rows keep that numbering; Stardust Crusaders runs 27–74, Diamond Is Unbreakable 75–113, Golden Wind 114–152 and Stone Ocean 153–190, each numbered from 1 as broadcast."
+      "Phantom Blood is episodes 1–9 and Battle Tendency 10–26 — one 2012 season split between them, so their rows keep that numbering; Stardust Crusaders runs 27–74, Diamond Is Unbreakable 75–113, Golden Wind 114–152, Stone Ocean 153–190 and Steel Ball Run from 191, each numbered from 1 as broadcast."
+    ],
+    [
+      "Steel Ball Run is still airing.",
+      "A new episode reaches Netflix each Friday. The 4 dated ones still to come carry the day they air, and are numbered rather than named until titles are published."
     ],
     [
       "The manga continues past the anime.",
-      "Stone Ocean closes the animated run here; the manga carries on with Steel Ball Run and JoJolion, and a manga page can exist later if wanted."
+      "It carries on with JoJolion and The JoJoLands, and has a list of its own."
     ],
-    "Episode titles machine-read from the five Wikipedia season articles; every part's numbering is asserted complete before this builds. Where a release renamed an episode to dodge a music trademark, the broadcast title stays."
+    "Episode titles machine-read from the six Wikipedia season articles; every part's numbering is asserted complete, and Steel Ball Run's aired count checked against its article's own infobox, before this builds. Where a release renamed an episode to dodge a music trademark, the broadcast title stays."
   ],
   "sections": [
     {
@@ -1026,6 +1030,77 @@
           "id": "jojo-so-38",
           "t": "What a Wonderful World",
           "n": "38"
+        }
+      ]
+    },
+    {
+      "id": "sbr",
+      "title": "Steel Ball Run",
+      "sub": "2026– · 12 episodes",
+      "items": [
+        {
+          "id": "jojo-sbr-1",
+          "t": "Steel Ball Run",
+          "n": "1"
+        },
+        {
+          "id": "jojo-sbr-2",
+          "t": "The Sheriff's Request to Mountain Tim",
+          "n": "2"
+        },
+        {
+          "id": "jojo-sbr-3",
+          "t": "The Desert-Born Outlaws",
+          "n": "3"
+        },
+        {
+          "id": "jojo-sbr-4",
+          "t": "The Devil's Palm",
+          "n": "4"
+        },
+        {
+          "id": "jojo-sbr-5",
+          "t": "The Terrorist from a Faraway Country",
+          "n": "5"
+        },
+        {
+          "id": "jojo-sbr-6",
+          "t": "Gyro Zeppeli's Destiny",
+          "n": "6"
+        },
+        {
+          "id": "jojo-sbr-7",
+          "t": "Tusk, Part 1",
+          "n": "7"
+        },
+        {
+          "id": "jojo-sbr-8",
+          "t": "Tusk, Part 2",
+          "n": "8"
+        },
+        {
+          "id": "jojo-sbr-9",
+          "t": "Episode 9",
+          "n": "9",
+          "note": "airs 13 November"
+        },
+        {
+          "id": "jojo-sbr-10",
+          "t": "Episode 10",
+          "n": "10",
+          "note": "airs 20 November"
+        },
+        {
+          "id": "jojo-sbr-11",
+          "t": "Episode 11",
+          "n": "11",
+          "note": "airs 27 November"
+        },
+        {
+          "id": "jojo-sbr-12",
+          "t": "Episode 12",
+          "n": "12",
+          "note": "airs 4 December"
         }
       ]
     }
