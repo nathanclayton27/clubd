@@ -4,15 +4,21 @@
     python tools/make_db_anime.py
 
 One row per episode across the whole franchise in broadcast order: Dragon
-Ball (153), Z (291), GT (64), Kai's slot, Super (131), Daima (20). Z and
+Ball (153), Z (291), GT (64), Kai's slot, Super (131), Daima (20), Beerus's
+slot. Z and
 Super are split into the saga groupings their Wikipedia episode lists use —
 the season sets — because 291 episodes is not one section; Dragon Ball and
 GT keep one section per series with saga boundaries in the section intro.
 
 Kai is a re-cut of Z, not a new story, so it is one optional row sitting in
-its broadcast slot rather than 167 rows that would double-count Z. The
+its broadcast slot rather than 167 rows that would double-count Z. Super:
+Beerus (2026–), the remastered and re-edited Super, is the same kind of
+thing and gets the same treatment: one optional row after Daima. The
 theatrical films and TV specials (GT's A Hero's Legacy included) are left
 out; they belong to a films page later.
+
+Two Super section titles are pinned (SAGA_TITLE): Wikipedia renamed those
+sagas in 2026, and a section id is folded from its title.
 
 Everything numeric comes from tools/data/db_anime.json, which
 scratch/dragonball/parse.py builds from the Wikipedia episode lists and
@@ -41,11 +47,24 @@ LISTS = {
     "super": "https://en.wikipedia.org/wiki/List_of_Dragon_Ball_Super_episodes",
     "daima": "https://en.wikipedia.org/wiki/Dragon_Ball_Daima#Episodes",
     "kai": "https://en.wikipedia.org/wiki/List_of_Dragon_Ball_Z_Kai_episodes",
+    "beerus": "https://en.wikipedia.org/wiki/Dragon_Ball_Super:_Beerus#Episodes",
+}
+
+# Wikipedia's 2026 names for two Super sagas -> the titles this list shipped
+# with, and the episode range each must still cover. The section id is folded
+# from the title, and the new name for 47-76 pairs two characters in a way
+# the no-spoiler rule keeps off the page.
+SAGA_TITLE = {
+    ("super", "Universe 6 Saga"): ("Universe 6 and Duplicate Vegeta Saga", 28, 46),
+    ("super", "Goku Black / Zamasu Saga"): ("Zamasu Saga", 47, 76),
 }
 
 # item-id prefix per series; never change these, they are the saved progress
 IDP = {"db": "db-og", "z": "db-z", "gt": "db-gt", "super": "db-s",
        "daima": "db-dai"}
+
+MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December"]
 
 
 def slugify(t):
@@ -90,6 +109,16 @@ def main():
             assert b["first"] == a["last"] + 1, "%s: saga gap at %d" % (key, b["first"])
     kai = data["kai"]
     assert kai["international"] == KAI_INTL, kai
+    beerus = data["beerus"]
+    assert beerus["of"] == "super", beerus
+
+    def saga_title(key, g):
+        pin = SAGA_TITLE.get((key, g["name"]))
+        if not pin:
+            return g["name"]
+        title, first, last = pin
+        assert (g["first"], g["last"]) == (first, last), (key, g, pin)
+        return title
 
     def one_section(key, sid):
         s = series[key]
@@ -116,8 +145,8 @@ def main():
     def saga_sections(key, prefix):
         s = series[key]
         return [{
-            "id": "%s-%s" % (prefix, slugify(g["name"])),
-            "title": g["name"],
+            "id": "%s-%s" % (prefix, slugify(saga_title(key, g))),
+            "title": saga_title(key, g),
             "sub": "%s · episodes %d–%d" % (s["title"], g["first"], g["last"]),
             "links": [{"label": "Episode list", "url": LISTS[key]}],
             "items": episode_items(IDP[key], g["first"], g["last"]),
@@ -139,20 +168,39 @@ def main():
         }],
     }
 
+    # still on air: the note says since when, from the infobox's first date
+    bs_year, bs_month = (int(x) for x in beerus["first_aired"].split("-")[:2])
+    assert beerus["airing"], "Beerus has ended: give the row its closing year"
+    since = "%s %d" % (MONTHS[bs_month - 1], bs_year)
+    beerus_section = {
+        "id": "s-beerus",
+        "title": "Dragon Ball Super: Beerus",
+        "sub": "%s · a re-cut of Super, not a new series" % beerus["years"],
+        "links": [{"label": "Episode list", "url": LISTS["beerus"]}],
+        "items": [{
+            "id": "db-beerus",
+            "t": "Dragon Ball Super: Beerus",
+            "n": beerus["years"],
+            "opt": 1,
+            "note": "Super remastered and re-edited, on air since %s. Tick "
+                    "it if Beerus is how you watch Super." % since,
+        }],
+    }
+
     sections = ([one_section("db", "s-db")]
                 + saga_sections("z", "z")
                 + [one_section("gt", "s-gt"), kai_section]
                 + saga_sections("super", "su")
-                + [one_section("daima", "s-daima")])
+                + [one_section("daima", "s-daima"), beerus_section])
 
     ids = [x["id"] for s in sections for x in s["items"]]
     episodes = sum(EXPECTED.values())
     assert len(ids) == len(set(ids)), "duplicate item ids"
-    assert len(ids) == episodes + 1, (len(ids), episodes)
-    assert len(sections) == 1 + 9 + 1 + 1 + 5 + 1, len(sections)
+    assert len(ids) == episodes + 2, (len(ids), episodes)
+    assert len(sections) == 1 + 9 + 1 + 1 + 5 + 1 + 1, len(sections)
 
     first_year = years_of(series["db"]["years"])[0]
-    last_year = years_of(series["daima"]["years"])[1]
+    last_year = max(years_of(series["daima"]["years"])[1], bs_year)
 
     prop = {
         "slug": SLUG,
@@ -161,7 +209,7 @@ def main():
         "popularity": 89,
         "year": "%d–%d" % (first_year, last_year),
         "blurb": "%d episodes in broadcast order, Dragon Ball through Daima; "
-                 "Kai is one optional row." % episodes,
+                 "Kai and Super: Beerus are one optional row each." % episodes,
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "accent": "#C4661F",
@@ -180,14 +228,16 @@ def main():
             ["Films.", "The theatrical films and TV specials — GT's A Hero's "
                        "Legacy included — are left out. They are a later "
                        "page."],
-            ["Complete.", "Through Daima (%s), the newest series. If a new "
+            ["Complete.", "Through Daima (%s), the newest story, plus the "
+                          "Super: Beerus re-cut on air since %s. If a new "
                           "one airs, rerun the generator."
-                          % series["daima"]["years"]],
+                          % (series["daima"]["years"], since)],
             # Unheaded, last: the colophon (CLU-275 rule 6). The sources block
             # in tools/data/db_anime.json is what this reports.
             "Episode counts, years and saga groupings machine-read from "
             "Wikipedia's episode lists for Dragon Ball, Z, GT, Super and Kai "
-            "and from the Dragon Ball Daima article; every total is asserted "
+            "and from the Dragon Ball Daima and Dragon Ball Super: Beerus "
+            "articles; every total is asserted "
             "against the articles' own — lead counts, series-overview sums and "
             "the counted episode rows — before this builds. Z's check is its "
             "lead total against its overview sum, because its per-episode "
@@ -201,7 +251,7 @@ def main():
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d rows (%d episodes + the Kai row)"
+    print("  %d sections, %d rows (%d episodes + the Kai and Beerus rows)"
           % (len(sections), len(ids), episodes))
     for s in sections:
         print("   %-58s %4d" % (s["title"] + "  (" + s["sub"] + ")",

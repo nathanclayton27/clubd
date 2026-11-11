@@ -3,8 +3,8 @@
   "title": "Dragon Ball (anime)",
   "kind": "anime",
   "popularity": 89,
-  "year": "1986–2025",
-  "blurb": "659 episodes in broadcast order, Dragon Ball through Daima; Kai is one optional row.",
+  "year": "1986–2026",
+  "blurb": "659 episodes in broadcast order, Dragon Ball through Daima; Kai and Super: Beerus are one optional row each.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -32,9 +32,9 @@
     ],
     [
       "Complete.",
-      "Through Daima (2024–25), the newest series. If a new one airs, rerun the generator."
+      "Through Daima (2024–25), the newest story, plus the Super: Beerus re-cut on air since October 2026. If a new one airs, rerun the generator."
     ],
-    "Episode counts, years and saga groupings machine-read from Wikipedia's episode lists for Dragon Ball, Z, GT, Super and Kai and from the Dragon Ball Daima article; every total is asserted against the articles' own — lead counts, series-overview sums and the counted episode rows — before this builds. Z's check is its lead total against its overview sum, because its per-episode tables live in nine season articles this does not read."
+    "Episode counts, years and saga groupings machine-read from Wikipedia's episode lists for Dragon Ball, Z, GT, Super and Kai and from the Dragon Ball Daima and Dragon Ball Super: Beerus articles; every total is asserted against the articles' own — lead counts, series-overview sums and the counted episode rows — before this builds. Z's check is its lead total against its overview sum, because its per-episode tables live in nine season articles this does not read."
   ],
   "sections": [
     {
@@ -3572,6 +3572,26 @@
           "id": "db-dai-20",
           "t": "Episode",
           "n": "20"
+        }
+      ]
+    },
+    {
+      "id": "s-beerus",
+      "title": "Dragon Ball Super: Beerus",
+      "sub": "2026– · a re-cut of Super, not a new series",
+      "links": [
+        {
+          "label": "Episode list",
+          "url": "https://en.wikipedia.org/wiki/Dragon_Ball_Super:_Beerus#Episodes"
+        }
+      ],
+      "items": [
+        {
+          "id": "db-beerus",
+          "t": "Dragon Ball Super: Beerus",
+          "n": "2026–",
+          "opt": 1,
+          "note": "Super remastered and re-edited, on air since October 2026. Tick it if Beerus is how you watch Super."
         }
       ]
     }

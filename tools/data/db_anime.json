@@ -1,13 +1,14 @@
 {
   "sources": {
-    "fetched": "2026-08-22",
+    "fetched": "2026-11-11",
     "pages": [
       "List of Dragon Ball episodes",
       "List of Dragon Ball Z episodes (overview only; per-episode tables live in nine season articles, so Z's check is its lead total against its overview sum)",
       "List of Dragon Ball GT episodes",
       "List of Dragon Ball Super episodes",
       "Dragon Ball Daima",
-      "List of Dragon Ball Z Kai episodes (lead only)"
+      "List of Dragon Ball Z Kai episodes (lead only)",
+      "Dragon Ball Super: Beerus (lead, Production and infobox air dates only)"
     ],
     "api": "en.wikipedia action=parse wikitext, cached in scratch/dragonball/"
   },
@@ -163,12 +164,12 @@
           "last": 27
         },
         {
-          "name": "Universe 6 and Duplicate Vegeta Saga",
+          "name": "Universe 6 Saga",
           "first": 28,
           "last": 46
         },
         {
-          "name": "Zamasu Saga",
+          "name": "Goku Black / Zamasu Saga",
           "first": 47,
           "last": 76
         },
@@ -199,6 +200,12 @@
     "international": 167,
     "years": "2009–15",
     "adapts": "chapters 195–519 of the manga"
+  },
+  "beerus": {
+    "of": "super",
+    "first_aired": "2026-10-11",
+    "airing": true,
+    "years": "2026–"
   },
   "gt_special": "Dragon Ball GT: A Hero's Legacy (TV special, 1997) is listed unnumbered and left out with the films"
 }
