@@ -24,7 +24,21 @@ HowLongToBeat folds the remaster into its 2002 Metroid Prime entry —
 searching the remaster's name returns that record — so a separate row
 would either duplicate the tick or carry an invented number. Pinball and
 the Trilogy compilation are not rows either — noted below.
+
+UNRELEASED WORK IS LISTED WHEN THE SOURCE DATES IT, AND WEIGHS ZERO
+-------------------------------------------------------------------
+Metroid Ravenous is a row in the 2D saga. The List of Metroid media dates
+it `{{vgrelease|WW|January 28, 2027}}`, and its own article (rev
+2026-11-07) calls it "the sequel to Metroid Dread" and says it "is
+scheduled for release on January 28, 2027". An unreleased row carries an
+explicit `w: 0`, never a missing one — the page resolves a missing w as one
+hour (CLU-131). The date is asserted against the clock every run: while it
+is in the future the row weighs 0, its note says when it is due, and
+tools/data/metroid.json must still have no record for it; the day it passes
+the build fails until a name-gated HowLongToBeat record is added (give
+scratch/agent-games1/fetch_hltb.py a "ravenous" spec and re-run it).
 """
+import datetime
 import json
 import pathlib
 
@@ -52,8 +66,10 @@ SAGA = [
      "Remake — the 3DS rebuild of Metroid II. Ticking either version "
      "counts.", 0),
     ("dread", "Metroid Dread", 2021, 1,
-     "Switch. The saga's long-promised close — the E.M.M.I. and the end of "
-     "the Fusion thread.", 0),
+     "Switch. The long-promised close of the Metroid arc — the E.M.M.I. and "
+     "the end of the Fusion thread.", 0),
+    ("ravenous", "Metroid Ravenous", 2027, 1,
+     "Switch 2. The sequel to Dread.", 0),
 ]
 
 PRIME = [
@@ -72,10 +88,19 @@ PRIME = [
      "Eighteen years after Corruption — the Prime line resumes", 0),
 ]
 
+# Dated, not out: key -> release date the source gives (List of Metroid
+# media and the game's own article, both read 2026-11-11).
+UNRELEASED = {"ravenous": datetime.date(2027, 1, 28)}
+
+# Prefixed to an unreleased row's own note, so the row still says what it is
+# the day it ships and the note needs no second edit.
+NOT_OUT = ("Not out yet — due %s, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
+
 SECTIONS = [
     ("saga", "The 2D saga",
-     "Samus's own story, told mostly side-on — the 1986 original to Dread, "
-     "remakes beside their originals.", SAGA),
+     "Samus's own story, told mostly side-on — the 1986 original to "
+     "Ravenous, remakes beside their originals.", SAGA),
     ("prime", "Prime",
      "The first-person line, a story of its own set between the original "
      "and Metroid II.", PRIME),
@@ -87,9 +112,19 @@ def norm(s):
     return " ".join(s.casefold().split())
 
 
+def _today():
+    """The clock, isolated so a check can stub it."""
+    return datetime.date.today()
+
+
+def longdate(d):
+    return "%d %s %d" % (d.day, d.strftime("%B"), d.year)
+
+
 def main():
     data = json.loads((pathlib.Path(__file__).resolve().parent / "data"
                        / "metroid.json").read_text(encoding="utf-8"))
+    today = _today()
 
     sections = []
     for sec_id, sec_title, intro, roster in SECTIONS:
@@ -97,38 +132,68 @@ def main():
         assert years == sorted(years), "%s roster out of release order" % sec_id
         items = []
         for key, title, year, tier, note, opt in roster:
-            rec = data.get(key)
-            assert rec, "no HLTB record for %s" % key
-            assert norm(rec["name"]) == norm(title), \
-                "record mismatch for %s: %r" % (key, rec["name"])
-            assert abs(int(rec["year"]) - year) <= 1, \
-                "year mismatch for %s: wiki %d, hltb %s" % (key, year, rec["year"])
+            due = UNRELEASED.get(key)
+            if due and due > today:
+                # Dated, not out. HowLongToBeat only carries a main-story
+                # figure for a game people have finished, so a record here
+                # means it has shipped ahead of the source's date.
+                assert key not in data, \
+                    ("%s has a HowLongToBeat record (%r) before its stated %s "
+                     "release — give the row its hours" % (title, data[key], due))
+                assert year == due.year, (key, year, due)
+                w = 0
+                note = " ".join([NOT_OUT % longdate(due), note]).strip()
+            else:
+                rec = data.get(key)
+                assert rec, ("no HLTB record for %s%s" % (key, (
+                    " — its %s release date has passed; add a name-gated "
+                    "HowLongToBeat record" % due) if due else ""))
+                assert norm(rec["name"]) == norm(title), \
+                    "record mismatch for %s: %r" % (key, rec["name"])
+                assert abs(int(rec["year"]) - year) <= 1, \
+                    "year mismatch for %s: wiki %d, hltb %s" % (key, year,
+                                                                rec["year"])
+                w = rec["main_h"]
             x = {"id": "met-%s" % key, "t": title, "n": str(year),
-                 "w": rec["main_h"], "tier": tier}
+                 "w": w, "tier": tier}
             if note:
                 x["note"] = note
             if opt:
                 x["opt"] = 1
             items.append(x)
         hours = sum(x["w"] for x in items)
+        sub = "%d–%d · %d games · %d hours story" % (
+            years[0], years[-1], len(items), round(hours))
+        pending = [x for x in items if x["w"] == 0]
+        if pending:
+            sub += " · %d not out yet" % len(pending)
         sections.append({
             "id": sec_id, "title": sec_title,
-            "sub": "%d–%d · %d games · %d hours story"
-                   % (years[0], years[-1], len(items), round(hours)),
+            "sub": sub,
             "intro": intro,
             "items": items,
         })
     sections[0]["open"] = True
 
-    ids = [x["id"] for s in sections for x in s["items"]]
+    rows = [x for s in sections for x in s["items"]]
+    ids = [x["id"] for x in rows]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == len(SAGA) + len(PRIME) == 14, (len(ids),)
-    t2 = [x for s in sections for x in s["items"] if x["tier"] == 2]
+    assert len(ids) == len(SAGA) + len(PRIME) == 15, (len(ids),)
+    t2 = [x for x in rows if x["tier"] == 2]
     assert len(t2) == 2 and all(x.get("opt") for x in t2), \
         "tier 2 is the two opt rows"
+    # The only zero weights are the dated rows that are not out yet.
+    zeros = {x["id"] for x in rows if x["w"] == 0}
+    assert zeros == {"met-%s" % k for k, d in UNRELEASED.items()
+                     if d > today}, zeros
 
-    hours = sum(x["w"] for s in sections for x in s["items"])
-    spine = sum(x["w"] for s in sections for x in s["items"] if x["tier"] == 1)
+    hours = sum(x["w"] for x in rows)
+    spine = sum(x["w"] for x in rows if x["tier"] == 1)
+    coming = [x["t"] for x in rows if x["w"] == 0]
+    blurb = ("%d games across two lines — about %d hours of story, %d of it "
+             "mainline" % (len(ids), round(hours), round(spine)))
+    blurb += (", with %s still to come." % coming[0].replace("Metroid ", "")
+              if len(coming) == 1 else ".")
 
     prop = {
         "slug": SLUG,
@@ -137,8 +202,7 @@ def main():
         "kind": "games",
         "popularity": 70,
         "year": "1986–",
-        "blurb": "%d games across two lines — about %d hours of story, %d "
-                 "of it mainline." % (len(ids), round(hours), round(spine)),
+        "blurb": blurb,
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},
         "itemOrder": "number-first",

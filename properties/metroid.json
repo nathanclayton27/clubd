@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 70,
   "year": "1986–",
-  "blurb": "14 games across two lines — about 133 hours of story, 115 of it mainline.",
+  "blurb": "15 games across two lines — about 133 hours of story, 115 of it mainline, with Ravenous still to come.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -51,8 +51,8 @@
     {
       "id": "saga",
       "title": "The 2D saga",
-      "sub": "1986–2021 · 8 games · 58 hours story",
-      "intro": "Samus's own story, told mostly side-on — the 1986 original to Dread, remakes beside their originals.",
+      "sub": "1986–2027 · 9 games · 58 hours story · 1 not out yet",
+      "intro": "Samus's own story, told mostly side-on — the 1986 original to Ravenous, remakes beside their originals.",
       "items": [
         {
           "id": "met-metroid",
@@ -116,7 +116,15 @@
           "n": "2021",
           "w": 9.28,
           "tier": 1,
-          "note": "Switch. The saga's long-promised close — the E.M.M.I. and the end of the Fusion thread."
+          "note": "Switch. The long-promised close of the Metroid arc — the E.M.M.I. and the end of the Fusion thread."
+        },
+        {
+          "id": "met-ravenous",
+          "t": "Metroid Ravenous",
+          "n": "2027",
+          "w": 0,
+          "tier": 1,
+          "note": "Not out yet — due 28 January 2027, and the bar stays empty until HowLongToBeat has hours for it. Switch 2. The sequel to Dread."
         }
       ],
       "open": true
