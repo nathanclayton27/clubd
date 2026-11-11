@@ -8,16 +8,21 @@ Universal Century in release order, then every alternate universe, then the
 major manga. One row per series, film or OVA — never per episode. Games are
 out by request, and so are the live-action pieces, the SD comedy spinoffs,
 the promotional shorts, compilation re-cuts of series already listed, and
-anything unreleased.
+anything announced without a date. Announced work the media table dates —
+even to a bare year — ships as a row that says it is not out yet and weighs
+zero. Its due date is kept to the precision the source gives (a day, a month
+or a year), and main() asserts it against the clock, so the build fails once
+it passes and the row gets its real numbers.
 
 Everything numeric comes from tools/data/gundam.json, transcribed from
 Wikipedia's franchise media table (episode counts, dates, in-universe
 calendars), the individual film articles (runtimes), and the manga list plus
 the individual manga articles (serialization dates, volume counts). Series
 weigh episodes x 24 minutes in hours; films weigh their runtime; manga weigh
-zero. The second Hathaway film has no runtime in any of those sources yet, so
-it carries weight zero with a note rather than an invented number.
+zero. The second Hathaway film has no runtime on English Wikipedia yet, so its
+runtime is the one the Japanese Hathaway article's infobox gives.
 """
+import datetime
 import json
 import unicodedata
 import pathlib
@@ -27,7 +32,33 @@ SLUG = "gundam"
 DATA = pathlib.Path(__file__).resolve().parent / "data" / "gundam.json"
 OUT = pathlib.Path(__file__).resolve().parent.parent / "properties" / (SLUG + ".json")
 
-EXPECTED = {"uc": 20, "au": 20, "manga": 6}
+EXPECTED = {"uc": 20, "au": 22, "manga": 6}
+
+# Appended to the note of a row the source dates but nobody can have watched,
+# in the wording gears-of-war, silent-hill and dune use.
+NOT_OUT = "Not out yet — due %s"
+
+MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")
+
+
+def due_date(due):
+    """Read a due date given as "2027-01-15", "2027-04" or "2027".
+
+    Returns the words for the note and the first day the entry is surely
+    out: the day itself, else the first of the next month, else 1 January
+    of the next year.
+    """
+    parts = [int(p) for p in str(due).split("-")]
+    if len(parts) == 3:
+        d = datetime.date(*parts)
+        return "%d %s %d" % (d.day, MONTHS[d.month - 1], d.year), d
+    if len(parts) == 2:
+        y, m = parts
+        assert 1 <= m <= 12, "bad due month %r" % due
+        return "%s %d" % (MONTHS[m - 1], y), datetime.date(y + m // 12, m % 12 + 1, 1)
+    assert len(parts) == 1, "bad due date %r" % due
+    return "%d" % parts[0], datetime.date(parts[0] + 1, 1, 1)
 
 
 def slugify(t):
@@ -62,12 +93,16 @@ def note(e):
         bits.append(e["cal"])
     if e.get("extra"):
         bits.append(e["extra"])
+    if e.get("due"):
+        bits.append(NOT_OUT % due_date(e["due"])[0])
     return " · ".join(bits)
 
 
 def row(e):
+    # an unreleased row pins its id in the data, so a slipped year or a
+    # retitle on release cannot move where everyone's tick is stored
     x = {
-        "id": "gdm-%d-%s" % (e["year"], slugify(e["title"])),
+        "id": e.get("id") or "gdm-%d-%s" % (e["year"], slugify(e["title"])),
         "t": e["title"],
         "n": str(e["year"]),
         "w": weight(e),
@@ -106,6 +141,20 @@ def main():
     for key in ("uc", "au", "manga"):
         years = [e["year"] for e in data[key]]
         assert years == sorted(years), "%s is out of release order" % key
+
+    today = datetime.date.today()
+    for e in uc + au:
+        if not e.get("due"):
+            continue
+        words, out_by = due_date(e["due"])
+        assert today < out_by, (
+            "%s was due %s: refetch it and give it its real numbers"
+            % (e["title"], words))
+        assert int(str(e["due"])[:4]) == e["year"], (
+            "%s is due %s but its row says %d" % (e["title"], words, e["year"]))
+        assert weight(e) == 0 and not e.get("eps") and not e.get("min"), (
+            "%s is not out yet but carries a weight" % e["title"])
+        assert e.get("id"), "%s is not out yet and needs a pinned id" % e["title"]
 
     uc_h, au_h = hours(uc), hours(au)
 
@@ -187,7 +236,8 @@ def main():
             ["Alternate universes stand alone.",
              "Every other calendar — Future Century, After Colony, After "
              "War, Correct Century, Cosmic Era, Anno Domini, Advanced "
-             "Generation, Regild Century, Post Disaster, Ad Stella — starts "
+             "Generation, Regild Century, Post Disaster, Ad Stella, After "
+             "Apocalypse — starts "
              "fresh, and the notes say which entry opens each line. "
              "GQuuuuuuX is the exception: a branch of the Universal Century "
              "rather than a calendar of its own."],
@@ -197,13 +247,14 @@ def main():
              "film), the SD comedy spinoffs, promotional shorts (Evolve, "
              "Twilight AXIS, the Battlogues and their like), Build "
              "Metaverse, compilation re-cuts of series already listed, and "
-             "anything unreleased."],
+             "anything announced without a date."],
             ["Where the numbers come from.",
              "Episode counts, dates and calendars are from Wikipedia's "
              "franchise media list; film runtimes from each film's article. "
              "Series weigh episodes × 24 minutes, so Unicorn and The Origin "
-             "— hour-long episodes — count light. The second Hathaway film "
-             "has no published runtime yet and weighs nothing. Manga weigh "
+             "— hour-long episodes — count light. The second Hathaway film's "
+             "runtime is from Japanese Wikipedia; the English article has "
+             "none yet. Entries not out yet weigh nothing. Manga weigh "
              "zero by design."],
         ],
         "sections": sections,

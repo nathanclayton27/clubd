@@ -1,13 +1,15 @@
 {
   "sources": {
     "fetched": "2026-08-21",
+    "refreshed": "2026-11-11",
     "pages": [
       "Gundam (franchise media table, en.wikipedia, action=parse wikitext)",
       "List of Gundam manga and novels (en.wikipedia)",
       "film articles for runtimes: Char's Counterattack, F91, A Wakening of the Trailblazer, Narrative, Hathaway, Cucuruz Doan's Island, SEED Freedom",
-      "manga articles for dates/volumes: The Origin, Thunderbolt, Episode Zero, Crossbone Gundam"
+      "manga articles for dates/volumes: The Origin, Thunderbolt, Episode Zero, Crossbone Gundam",
+      "release dates for entries not out yet: 2027 in anime (en.wikipedia), 機動戦士ガンダムSEED FREEDOM (ja.wikipedia)"
     ],
-    "note": "The Sorcery of Nymph Circe (released 2026-01-30 per the Hathaway article) has no runtime on en/ja Wikipedia or Wikidata yet; min is null."
+    "note": "The Sorcery of Nymph Circe (released 2026-01-30 per the Hathaway article): en Wikipedia and Wikidata still give no runtime; its 108 min is from the ja Wikipedia Hathaway infobox (上映時間 = 95分（第1作）108分（第2作）, rev 2026-11-11). The two 2027 rows are from the Gundam media table (rev 2026-11-09): SEED Freedom Zero | Movie | 2027 | Cosmic Era (CE) 74, and RG: XARX-ZERO | TV series | 2027 | After Apocalypse (AA) 45; the SEED Freedom article (rev 2026-11-07) calls Zero a prequel. Neither is out, so they carry no runtime or episode count and weigh zero. due is the release date to the precision a source gives: SEED Freedom Zero opens 2027-01-15 per ja Wikipedia 機動戦士ガンダムSEED FREEDOM (rev 2026-11-11, citing the official site's 2026-10-09 announcement) and en Wikipedia 2027 in anime (rev 2026-11-11, citing eiga.com); RG: XARX-ZERO is due April 2027 per 2027 in anime (citing Anime News Network, 2026-09-14)."
   },
   "uc": [
     {"title": "Mobile Suit Gundam", "year": 1979, "span": "1979–80", "media": "TV series", "eps": 43, "cal": "UC 0079", "extra": "where the Universal Century starts; also compiled as three films (1981–82)"},
@@ -29,7 +31,7 @@
     {"title": "Mobile Suit Gundam: Hathaway", "year": 2021, "span": "2021", "media": "Film", "min": 95, "cal": "UC 0105", "extra": "first of a trilogy, from Tomino's novels"},
     {"title": "Mobile Suit Gundam: Cucuruz Doan's Island", "year": 2022, "span": "2022", "media": "Film", "min": 108, "cal": "UC 0079", "extra": "standalone, revisiting a 1979 episode"},
     {"title": "Gundam: Requiem for Vengeance", "year": 2024, "span": "2024", "media": "CG ONA", "eps": 6, "cal": "UC 0079", "extra": "from the Zeon side"},
-    {"title": "Mobile Suit Gundam: Hathaway – The Sorcery of Nymph Circe", "year": 2026, "span": "2026", "media": "Film", "min": null, "cal": "UC 0105", "extra": "second of the Hathaway trilogy — no runtime in the lists yet, so it weighs nothing here"}
+    {"title": "Mobile Suit Gundam: Hathaway – The Sorcery of Nymph Circe", "year": 2026, "span": "2026", "media": "Film", "min": 108, "cal": "UC 0105", "extra": "second of the Hathaway trilogy"}
   ],
   "au": [
     {"title": "Mobile Fighter G Gundam", "year": 1994, "span": "1994–95", "media": "TV series", "eps": 49, "cal": "Future Century 60", "extra": "starts and ends the Future Century line"},
@@ -51,7 +53,9 @@
     {"title": "Gundam Build Divers Re:Rise", "year": 2019, "span": "2019–20", "media": "ONA", "eps": 26, "cal": "", "opt": true, "extra": "Build series — Build Divers' sequel"},
     {"title": "Mobile Suit Gundam: The Witch from Mercury", "year": 2022, "span": "2022–23", "media": "TV series", "eps": 24, "cal": "Ad Stella 122", "extra": "starts the Ad Stella line; a prologue ONA aired ahead of it"},
     {"title": "Mobile Suit Gundam SEED Freedom", "year": 2024, "span": "2024", "media": "Film", "min": 124, "cal": "Cosmic Era 75", "extra": "the SEED line's film sequel"},
-    {"title": "Mobile Suit Gundam GQuuuuuuX", "year": 2025, "span": "2025", "media": "TV series", "eps": 12, "cal": "", "extra": "a branch of the Universal Century rather than its own calendar; a compilation film preceded broadcast"}
+    {"title": "Mobile Suit Gundam GQuuuuuuX", "year": 2025, "span": "2025", "media": "TV series", "eps": 12, "cal": "", "extra": "a branch of the Universal Century rather than its own calendar; a compilation film preceded broadcast"},
+    {"title": "Mobile Suit Gundam SEED Freedom Zero", "id": "gdm-2027-mobile-suit-gundam-seed-freedom-zero", "year": 2027, "span": "2027", "media": "Film", "min": null, "due": "2027-01-15", "cal": "Cosmic Era 74", "extra": "a prequel to SEED Freedom"},
+    {"title": "Mobile Suit Gundam RG: XARX-ZERO", "id": "gdm-2027-mobile-suit-gundam-rg-xarx-zero", "year": 2027, "span": "2027", "media": "TV series", "due": "2027-04", "cal": "After Apocalypse 45", "extra": "starts the After Apocalypse line"}
   ],
   "manga": [
     {"title": "Mobile Suit Crossbone Gundam", "year": 1994, "span": "1994–97", "vols": 6, "extra": "UC 0133 · F91's sequel, by Yuichi Hasegawa with Tomino"},

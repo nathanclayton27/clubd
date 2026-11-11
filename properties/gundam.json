@@ -5,7 +5,7 @@
   "kind": "anime & manga",
   "popularity": 65,
   "year": "1979–",
-  "blurb": "46 entries across every Gundam continuity: the Universal Century in release order, the alternate universes, and the major manga.",
+  "blurb": "48 entries across every Gundam continuity: the Universal Century in release order, the alternate universes, and the major manga.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -26,7 +26,7 @@
     ],
     [
       "Alternate universes stand alone.",
-      "Every other calendar — Future Century, After Colony, After War, Correct Century, Cosmic Era, Anno Domini, Advanced Generation, Regild Century, Post Disaster, Ad Stella — starts fresh, and the notes say which entry opens each line. GQuuuuuuX is the exception: a branch of the Universal Century rather than a calendar of its own."
+      "Every other calendar — Future Century, After Colony, After War, Correct Century, Cosmic Era, Anno Domini, Advanced Generation, Regild Century, Post Disaster, Ad Stella, After Apocalypse — starts fresh, and the notes say which entry opens each line. GQuuuuuuX is the exception: a branch of the Universal Century rather than a calendar of its own."
     ],
     [
       "No games.",
@@ -34,18 +34,18 @@
     ],
     [
       "Also left out.",
-      "Live-action (G-Saviour, Gundam Build Real, the announced film), the SD comedy spinoffs, promotional shorts (Evolve, Twilight AXIS, the Battlogues and their like), Build Metaverse, compilation re-cuts of series already listed, and anything unreleased."
+      "Live-action (G-Saviour, Gundam Build Real, the announced film), the SD comedy spinoffs, promotional shorts (Evolve, Twilight AXIS, the Battlogues and their like), Build Metaverse, compilation re-cuts of series already listed, and anything announced without a date."
     ],
     [
       "Where the numbers come from.",
-      "Episode counts, dates and calendars are from Wikipedia's franchise media list; film runtimes from each film's article. Series weigh episodes × 24 minutes, so Unicorn and The Origin — hour-long episodes — count light. The second Hathaway film has no published runtime yet and weighs nothing. Manga weigh zero by design."
+      "Episode counts, dates and calendars are from Wikipedia's franchise media list; film runtimes from each film's article. Series weigh episodes × 24 minutes, so Unicorn and The Origin — hour-long episodes — count light. The second Hathaway film's runtime is from Japanese Wikipedia; the English article has none yet. Entries not out yet weigh nothing. Manga weigh zero by design."
     ]
   ],
   "sections": [
     {
       "id": "uc",
       "title": "Universal Century",
-      "sub": "1979– · 20 entries · about 112 hours",
+      "sub": "1979– · 20 entries · about 114 hours",
       "intro": "One timeline told out of order. Rows run in release order; each note carries the in-universe year, so UC 0079 sits next to entries made forty years apart.",
       "links": [
         {
@@ -195,15 +195,15 @@
           "id": "gdm-2026-mobile-suit-gundam-hathaway-the-sorcery-of-nymph-circe",
           "t": "Mobile Suit Gundam: Hathaway – The Sorcery of Nymph Circe",
           "n": "2026",
-          "w": 0,
-          "note": "Film · UC 0105 · second of the Hathaway trilogy — no runtime in the lists yet, so it weighs nothing here"
+          "w": 1.8,
+          "note": "Film, 108 min · UC 0105 · second of the Hathaway trilogy"
         }
       ]
     },
     {
       "id": "au",
       "title": "Alternate universes",
-      "sub": "1994– · 20 entries · about 246 hours",
+      "sub": "1994– · 22 entries · about 246 hours",
       "intro": "Each universe stands alone and needs nothing from the Universal Century. The notes say which entry starts each line. Build entries are hobby spin-offs, marked optional.",
       "links": [
         {
@@ -359,6 +359,20 @@
           "n": "2025",
           "w": 4.8,
           "note": "TV series, 12 episodes · a branch of the Universal Century rather than its own calendar; a compilation film preceded broadcast"
+        },
+        {
+          "id": "gdm-2027-mobile-suit-gundam-seed-freedom-zero",
+          "t": "Mobile Suit Gundam SEED Freedom Zero",
+          "n": "2027",
+          "w": 0,
+          "note": "Film · Cosmic Era 74 · a prequel to SEED Freedom · Not out yet — due 15 January 2027"
+        },
+        {
+          "id": "gdm-2027-mobile-suit-gundam-rg-xarx-zero",
+          "t": "Mobile Suit Gundam RG: XARX-ZERO",
+          "n": "2027",
+          "w": 0,
+          "note": "TV series · After Apocalypse 45 · starts the After Apocalypse line · Not out yet — due April 2027"
         }
       ]
     },
