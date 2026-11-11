@@ -79,6 +79,11 @@ APPLIED = [
     # this tool before every paste. A safety tool that names ten live objects as
     # missing is worse than no safety tool, because the reader trusts it.
     "migrate-club-progress.sql",
+    # CLU-504. Nathan pasted it 2026-11-11 ~20:09 UTC; pre-check 14/14 PASS and
+    # readback 13/13 PASS, ledger row `applied 54f0ecd2`. Last in this list on
+    # purpose: it replaced save_progress and club_fold_on_delete, so it must rank
+    # as their LATEST APPLIED definition, ahead of migrate-club-progress.sql.
+    "clu504-tombstones.sql",
 ]
 
 # Written, never executed. Keeping these OUT of the applied list matters: while
@@ -97,11 +102,6 @@ NEVER_RUN = {
     # nobody — but a never-run file sitting in the applied list is the exact
     # shape of CLU-374, and next time the object could be one only it defines.
     "migrate-add-friend-privacy.sql":   "never ran — the 2026-08-25 pre-flight found friend_may_read absent (CLU-195)",
-    # Written and queued. The first version failed its hostile audit on
-    # 2026-09-12; the rewrite (checksum 54f0ecd2…) was audited RUN the same night
-    # and re-verified on 2026-11-11 (CLU-572). Still unrun: when Nathan pastes it,
-    # move it out of this list and append it to the END of APPLIED.
-    "clu504-tombstones.sql":            "queued (CLU-504): rewrite audited RUN 2026-09-12, re-verified 2026-11-11; not yet pasted",
 }
 
 # Read-only harnesses. They define nothing and they may be run against

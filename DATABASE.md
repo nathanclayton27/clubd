@@ -732,9 +732,15 @@ exactly the committed form.
 | 2026-09-10 21:04 | **Read-only** `preflight-club-progress.sql`, one-statement version | Seven rows: 5 PASS, 1 INFO (largest `progress` row is 1174 ids; the write cap is 5000), and **1 false STOP**: check 4 named the nine clubs that carried a date *at survey time* as if they had gained one. Nothing changed; the check was wrong, not the data. Fixed the same hour, below | CLU-389 |
 | 2026-09-10 ~21:37 | **Read-only** `preflight-club-progress.sql` re-run, check 4 fixed (152 lines, md5 `47cf964c…`) | Seven rows: **6 PASS, 1 INFO** — the INFO is the same 1174-id `progress` row against the 5000 cap. Check 4 now compares live dates against the surveyed ones and read PASS, so the nine dated clubs stopped being a standing STOP. Nothing changed. **This clean read was the go signal** | CLU-389 |
 | 2026-09-10 21:38 | `migrate-club-progress.sql` (777 lines, md5 `76e61d1e…`, byte-identical to the audited file) + 19-check readback | **19/19 true.** 36 watch clubs and 66 memberships archived then deleted; `club_progress` with RLS, two read policies and **no** write policy; `save_progress`, `arr_union`, `club_session_visible`; the `groups_fold_sessions` trigger **attached**; a snapshot row for every surviving watch-club membership; `progress` confirmed un-re-keyed with its policies intact. **The only irreversible statement in the repo has now run.** First run recorded in the ledger as it happened | CLU-389 |
+| 2026-11-11 ~20:08 | **Read-only** CLU-504 pre-check (15 rows, from the 2026-11-11 run steps) | 14 PASS, 1 INFO: `progress` holds 969 rows. Both live function bodies fingerprinted as the CLU-389 ones (`9cda7b3c…`, `1e3dcb54…`), so nothing had changed since 2026-09-10. No CLU-504 row in the ledger. Nothing changed | CLU-504 |
+| 2026-11-11 ~20:09 | `clu504-tombstones.sql` (md5 `ab30c220…`, checksum `54f0ecd2…`, re-verified 2026-11-11 by CLU-572) + 13-row readback | **13/13 PASS.** `progress.removed` `jsonb not null '{}'` on every row, with no tombstones yet; the `progress_tombstones` trigger attached and enabled; `tomb_at`, `tomb_keep` and `progress_tombstone_guard` created; `save_progress` and `club_fold_on_delete` replaced (now `63dd7306…`, `7c94a627…`); grants as audited; `progress` still has its five named policies. **Recorded itself: ledger row `applied 54f0ecd2`.** Users see nothing until the client half ships (CLU-573) | CLU-504 |
 
-**`migrate-club-progress.sql` is the most recent change to production, and the
-first one the database wrote down itself.** Its footer (lines 646–648) inserts a
+**`clu504-tombstones.sql` is the most recent change to production (2026-11-11),
+and the second run the database wrote down itself.** The paragraph below
+describes `migrate-club-progress.sql`, the first.
+
+**`migrate-club-progress.sql` was the first change to production that the
+database wrote down itself.** Its footer (lines 646–648) inserts a
 single `schema_migrations` row *inside* the transaction — `filename`
 `scratch/security/migrate-club-progress.sql`, `checksum`
 `493ae4fb3285a9d933d40af89da145c2975215dd1e0cb68e8b26de669665d89d`,
@@ -746,24 +752,19 @@ computes that same `493ae4fb…` for the file on disk today, so the ledger and t
 repo agree on the bytes that ran — the first time in this project that has been
 true of anything.
 
-**Queued behind it, written and not run: the CLU-153 pair**, under *Queued and
-ready* below, and **`scratch/security/clu504-tombstones.sql`**, which has been
-**rewritten and re-audited** since the 2026-09-12 audit refused it — that audit
-found the ledger row it wrote would be false and that `save_progress` broke the
-invariant its own column comment asserted, and the rewrite answers both by
-replacing the functions rather than only adding a column. See *Queued and not
-run: `progress` learns what was deleted* below. What shipped without it was the
-merge fix (step one). The tombstone client half is still unwritten and is now
-CLU-573. **`clu445-friend-edges.sql` is also waiting on a paste**: phase 1 only,
-under *Queued and not run: the friendship edge gets a door* below.
+**Written and not run: the CLU-153 pair**, under *Queued and ready* below, and
+**`clu445-friend-edges.sql`**, phase 1 only, under *Queued and not run: the
+friendship edge gets a door* below. **`clu504-tombstones.sql` ran on 2026-11-11**
+(history table above). Its tombstone client half is still unwritten and is now
+CLU-573.
 
 **Re-verified 2026-11-11 (CLU-572).** All three queued files were checked again by
 an independent verifier and a hostile auditor after two months untouched. The
 verdict was *ready with changes*, and the changes are to the run steps, not the
 files. **The current run steps are the latest comment on CLU-153, CLU-504 and
 CLU-445. Where this document and those steps disagree, the steps win.** The
-session order is on CLU-401: CLU-504, then CLU-153 A and its live test, then
-CLU-445 phase 1, then CLU-153 B.
+session order is on CLU-401: CLU-504 (done 2026-11-11), then CLU-153 A and its
+live test, then CLU-445 phase 1, then CLU-153 B.
 
 **`superseded/migrate-add-friend-privacy.sql` was listed as applied inside
 `tools/whereis.py` until CLU-446**, contradicting this section, which proves it
@@ -1102,11 +1103,17 @@ what should be published is CLU-414.
 **Until B runs, `profiles` is still the open directory §4 describes.** A copy
 already taken is not undone by B; that is the reason not to let it wait.
 
-### Queued and not run: `progress` learns what was deleted (CLU-504)
+### Ran 2026-11-11: `progress` learns what was deleted (CLU-504)
 
-`scratch/security/clu504-tombstones.sql`. **Nothing in it has run.** §4's
-`progress`, `save_progress` and `club_fold_on_delete` entries carry the end
-state; this is the operational half.
+`scratch/security/clu504-tombstones.sql`. **It ran on 2026-11-11 at about 20:09
+UTC** (row in the history table above). §4's `progress`, `save_progress` and
+`club_fold_on_delete` entries carry the end state, and those entries are now
+true of the live database. This section is kept because its rules still bind
+anyone who touches the column. Read "has not run" below as history.
+
+**Still open:** the client half that writes and reads `removed` (CLU-573). Until
+it ships, `removed` is `'{}'` on every row. **Only ids the user explicitly
+unticked may ever be written into it** (see below).
 
 **It is not a one-column migration, and the first version of it was refused for
 assuming it was.** One `alter table`, plus two new helpers, one new trigger, and
