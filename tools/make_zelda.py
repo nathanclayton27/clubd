@@ -10,9 +10,11 @@ as such.
 Which games exist and their release years come from Wikipedia's "List of The
 Legend of Zelda media" (scratch/zelda/media.wiki). Hours are HowLongToBeat
 main-story figures — story only, the house rule — read from
-tools/data/zelda.json, collected by scratch/zelda/fetch_hltb.py and verified
-by name (this generator refuses a record whose name is not what it expects,
-and cross-checks HLTB's release year against Wikipedia's).
+tools/data/zelda.json, collected by scratch/zelda/fetch_hltb.py (the 2026
+Ocarina of Time remake, added 2026-11-11, by tools/gwlib/hltb.py: HLTB id
+187305, Switch 2) and verified by name (this generator refuses a record
+whose name is not what it expects, and cross-checks HLTB's release year
+against Wikipedia's).
 
 Tiers are necessity, stated judgment:
   1  the console 3D line (Ocarina through Tears) plus the 2D pillars that
@@ -105,6 +107,8 @@ ROSTER = [
     ("aoi", "Hyrule Warriors: Age of Imprisonment", 2025, 3,
      "Spin-off — the Switch 2 Warriors entry, grown from Tears of the "
      "Kingdom", 1),
+    ("oot2026", Z + "Ocarina of Time", 2026, 3,
+     "Remake — the Switch 2 rebuild of Ocarina of Time", 1),
 ]
 
 # where the data file's verified name is not the display title

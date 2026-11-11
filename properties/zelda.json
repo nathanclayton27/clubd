@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 92,
   "year": "1986–",
-  "blurb": "31 games — the mainline 21 plus remakes and spin-offs, about 679 hours of story, 463 of it mainline.",
+  "blurb": "32 games — the mainline 21 plus remakes and spin-offs, about 697 hours of story, 463 of it mainline.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -274,7 +274,7 @@
     {
       "id": "switch",
       "title": "The Switch era",
-      "sub": "2017–2025 · 8 games · 228 hours story",
+      "sub": "2017–2026 · 9 games · 246 hours story",
       "intro": "The open-air reinvention and everything since.",
       "items": [
         {
@@ -344,6 +344,15 @@
           "w": 22.04,
           "tier": 3,
           "note": "Spin-off — the Switch 2 Warriors entry, grown from Tears of the Kingdom",
+          "opt": 1
+        },
+        {
+          "id": "zelda-oot2026",
+          "t": "The Legend of Zelda: Ocarina of Time",
+          "n": "2026",
+          "w": 18.1,
+          "tier": 3,
+          "note": "Remake — the Switch 2 rebuild of Ocarina of Time",
           "opt": 1
         }
       ]
