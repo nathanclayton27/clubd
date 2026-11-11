@@ -342,7 +342,17 @@
   "404": "canon",
   "405": "canon",
   "406": "canon",
+  "407": "canon",
+  "408": "canon",
+  "409": "canon",
   "41": "canon",
+  "410": "canon",
+  "411": "anime-canon",
+  "412": "canon",
+  "413": "anime-canon",
+  "414": "canon",
+  "415": "anime-canon",
+  "416": "canon",
   "42": "canon",
   "43": "canon",
   "44": "canon",
@@ -407,7 +417,7 @@
   "98": "filler",
   "99": "filler"
  },
- "last": 411,
+ "last": 416,
  "original": 366,
  "parts": [
   {
@@ -436,10 +446,10 @@
   },
   {
    "first": 407,
-   "last": 412,
+   "last": 416,
    "part": 4,
    "series_first": 41,
-   "series_last": 46,
+   "series_last": 50,
    "title": "The Calamity"
   }
  ],
@@ -451,7 +461,7 @@
    "page": "Bleach season 1",
    "season": 1,
    "title": "The Substitute Soul Reaper",
-   "years": "2004–05"
+   "years": "2004–2005"
   },
   {
    "episodes": 21,
@@ -469,7 +479,7 @@
    "page": "Bleach season 3",
    "season": 3,
    "title": "The Rescue",
-   "years": "2005–06"
+   "years": "2005–2006"
   },
   {
    "episodes": 28,
@@ -487,7 +497,7 @@
    "page": "Bleach season 5",
    "season": 5,
    "title": "The Assault",
-   "years": "2006–07"
+   "years": "2006–2007"
   },
   {
    "episodes": 22,
@@ -514,7 +524,7 @@
    "page": "Bleach season 8",
    "season": 8,
    "title": "The Arrancar Part 3: The Fierce Fight",
-   "years": "2007–08"
+   "years": "2007–2008"
   },
   {
    "episodes": 22,
@@ -532,7 +542,7 @@
    "page": "Bleach season 10",
    "season": 10,
    "title": "The Arrancar Part 4: Arrancar vs. Soul Reaper",
-   "years": "2008–09"
+   "years": "2008–2009"
   },
   {
    "episodes": 7,
@@ -559,7 +569,7 @@
    "page": "Bleach season 13",
    "season": 13,
    "title": "Zanpakutō: The Alternate Tale",
-   "years": "2009–10"
+   "years": "2009–2010"
   },
   {
    "episodes": 51,
@@ -568,7 +578,7 @@
    "page": "Bleach season 14",
    "season": 14,
    "title": "The Arrancar Part 6: Fall of the Espada",
-   "years": "2010–11"
+   "years": "2010–2011"
   },
   {
    "episodes": 26,
@@ -586,7 +596,7 @@
    "page": "Bleach season 16",
    "season": 16,
    "title": "The Lost Agent",
-   "years": "2011–12"
+   "years": "2011–2012"
   }
  ]
 }

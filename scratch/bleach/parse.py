@@ -36,10 +36,9 @@ LIST = "List of Bleach episodes"
 
 # the original run, asserted against the tables
 ORIGINAL = 366
-# the newest AIRED episode overall. Episode 412 is on the table with an air
-# date a week out and no title yet; 413-416 sit inside an HTML comment. Bump
-# this and re-run as Part 4 continues.
-LAST = 411          # Thousand-Year Blood War #45, aired 22 August 2026
+# the newest AIRED episode overall. The sequel finished on 27 October 2026 at
+# 50 episodes (its Wikipedia lead: "totaling 50 episodes"), so this is final.
+LAST = 416          # Thousand-Year Blood War #50, aired 27 October 2026
 
 AFL = {"bleach": "bleach", "tybw": "bleach-thousand-year-blood-war"}
 
@@ -135,13 +134,17 @@ def season_rows(page):
     return rows
 
 
-PART_HEAD = re.compile(r"^=={1,3}[ ']*Part (\d+):[ ']*(.*?)[' ]*=={1,3}\s*$",
-                       re.M)
+# `=== Part 4: ''The Calamity'' (2026) ===`: since Nov 2026 the headings carry
+# a year, which is not part of the title (the section id is built from it)
+PART_HEAD = re.compile(r"^=={1,3}[ ']*Part (\d+):[ ']*(.*?)[' ]*"
+                       r"(?:\(\d{4}[^)]*\)[ ]*)?=={1,3}\s*$", re.M)
 # `=== Season 4: ''The Bount'' (2006) ===` on the list article. These are the
 # arc names the English release uses, and they are what the seasons ARE: each
 # season article opens by naming its arc.
-SEASON_HEAD = re.compile(r"^===[ ]*Season (\d+):[ ']*(.*?)[' ]*\((\d{4}[^)]*)\)"
-                         r"[ ]*===\s*$", re.M)
+# Since Nov 2026 the list article nests these one level deeper (====) under a
+# per-series heading, so either depth is accepted.
+SEASON_HEAD = re.compile(r"^={3,4}[ ]*Season (\d+):[ ']*(.*?)[' ]*\((\d{4}[^)]*)\)"
+                         r"[ ]*={3,4}\s*$", re.M)
 
 
 def season_titles():

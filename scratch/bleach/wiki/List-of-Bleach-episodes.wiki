@@ -2,214 +2,225 @@
 {{DISPLAYTITLE:List of ''Bleach'' episodes}}
 [[File:Bleachanime.png|thumb|Key visual for the original series]]
 
-''[[Bleach (TV series)|Bleach]]'' is an [[anime]] television series based on [[Tite Kubo]]'s [[manga]] [[Bleach (manga)|series of the same name]]. It was directed by [[Noriyuki Abe]], produced by [[TV Tokyo]], [[Dentsu]] and [[Studio Pierrot]], and aired in Japan from October 5, 2004, to March 27, 2012, running for a total of 366 episodes.<ref>{{#invoke:Cite|web|title=Bleach TV Anime Ending on March 27|url=http://www.animenewsnetwork.com/news/2012-02-23/bleach-tv-anime-ending-on-march-27|publisher=animenewsnetwork.com|access-date=18 September 2012|url-status=live|archive-url=https://web.archive.org/web/20120915060917/http://www.animenewsnetwork.com/news/2012-02-23/bleach-tv-anime-ending-on-march-27|archive-date=15 September 2012}}</ref> The series follows the adventures of high school student [[Ichigo Kurosaki]] who can see spirits and becomes a [[List of Soul Reapers in Bleach|Soul Reaper]], after assuming the duties of Soul Reaper [[Rukia Kuchiki]].
+''[[Bleach (TV series)|Bleach]]'' is a Japanese [[anime]] television series based on [[Tite Kubo]]'s [[manga]] ''[[Bleach (manga)|Bleach]]''. It was directed by [[Noriyuki Abe]], produced by [[TV Tokyo]], [[Dentsu]] and [[Studio Pierrot]], and aired in Japan from October 5, 2004, to March 27, 2012, running for a total of 366 episodes.<ref>{{#invoke:Cite|web|title=Bleach TV Anime Ending on March 27|url=http://www.animenewsnetwork.com/news/2012-02-23/bleach-tv-anime-ending-on-march-27|publisher=animenewsnetwork.com|access-date=18 September 2012|url-status=live|archive-url=https://web.archive.org/web/20120915060917/http://www.animenewsnetwork.com/news/2012-02-23/bleach-tv-anime-ending-on-march-27|archive-date=15 September 2012}}</ref> The series follows the adventures of high school student [[Ichigo Kurosaki]] who can see spirits and becomes a [[List of Soul Reapers in Bleach|Soul Reaper]], after assuming the duties of Soul Reaper [[Rukia Kuchiki]].
 
 [[Viz Media]] obtained the foreign television, home video and merchandising rights to the ''Bleach'' anime from TV Tokyo Corporation and [[Shueisha]] on March 15, 2006.<ref>{{Cite press release|url=http://www.viz.com/news/newsroom/2006/03_bleach.php|title=Viz Media named master licensor for hit Japanese action manga Shōnen Jump's Bleach|publisher=Viz Media|access-date=2007-04-01|url-status=dead|archive-url=https://web.archive.org/web/20070504033042/http://www.viz.com/news/newsroom/2006/03_bleach.php|archive-date=2007-05-04}}</ref> Subsequently, Viz Media contracted [[Studiopolis]] to create the English adaptation of the anime, and has licensed its individual ''Bleach'' merchandising rights to several different companies.<ref>{{#invoke:Cite|web|url=http://www.animenewsnetwork.com/news/2006-11-02/viz-announces-bleach-merchandise-licenses|title=Viz Announces Bleach Merchandise Licenses|publisher=Anime News Network|access-date=2007-03-24|url-status=live|archive-url=https://web.archive.org/web/20070326181450/http://www.animenewsnetwork.com/news/2006-11-02/viz-announces-bleach-merchandise-licenses|archive-date=2007-03-26}}</ref> The English adaptation of the ''Bleach'' anime premiered on Canada's [[YTV (Canadian TV channel)|YTV]] in their [[Bionix (TV programming block)|Bionix]] programming block on September 9, 2006. [[Cartoon Network]] in the U.S. began airing ''Bleach'' the following evening on September 10 as part of [[Adult Swim]].
 
-Forty-five pieces of [[theme music]] are used for the episodes: Fifteen opening themes and thirty closing themes. Several CDs that contain the theme music and other tracks have been released by Studio Pierrot.<ref name="StudioPierrotCDs">{{#invoke:Cite|web|url=http://pierrot.jp/title/bleach/goods/cd/|archive-url=https://web.archive.org/web/20080227031229/http://pierrot.jp/title/bleach/goods/cd/|archive-date=2008-02-27|title=Bleach Goods Search - CDs|language=ja|publisher=[[Studio Pierrot]]|access-date=2008-01-17}}</ref>
+Forty-five pieces of [[theme music]] are used for the episodes: Fifteen opening themes and thirty closing themes. Several CDs that contain the theme music and other tracks have been released by Studio Pierrot.<ref name="StudioPierrotCDs">{{#invoke:Cite|web|url=http://pierrot.jp/title/bleach/goods/cd/|archive-url=https://web.archive.org/web/20080227031229/http://pierrot.jp/title/bleach/goods/cd/|archive-date=2008-02-27|title=Bleach Goods Search – CDs|language=ja|publisher=[[Studio Pierrot]]|access-date=2008-01-17}}</ref>
 
-A direct sequel series that adapts the final story arc of the manga, titled ''[[Bleach: Thousand-Year Blood War]]'', premiered on October 11, 2022. It is directed by [[Tomohisa Taguchi]]{{efn|{{Nihongo|Director|監督}} for Parts 1–2 and {{Nihongo|Chief Director|総監督}} for Parts 3–4}} and Hikaru Murata{{efn|{{Nihongo|Chief Episode Director|チーフ演出}} for Parts 1–2 and {{Nihongo|Director|監督}} for Parts 3–4}} and produced by the same companies as the original series but with the addition of the manga's publishing company, [[Shueisha]].
+A follow-up sequel series that adapts the final story arc from the manga, titled ''[[Bleach: Thousand-Year Blood War]]'', aired from October 11, 2022, to October 27, 2026. It was directed by [[Tomohisa Taguchi]]{{efn|{{Nihongo|Director|監督}} for Parts 1–2 and {{Nihongo|Chief Director|総監督}} for Parts 3–4}} and Hikaru Murata{{efn|{{Nihongo|Chief Episode Director|チーフ演出}} for Parts 1–2 and {{Nihongo|Director|監督}} for Parts 3–4}} and produced by the same companies as the original series but with the addition of the manga's publishing company, [[Shueisha]].
 
 == Series overview ==
+=== ''Bleach'' (2004–2012) ===
 {{Series overview
-| color1      = #4E5A66
-| link1       = #Season 1: The Substitute Soul Reaper (2004–05)
-| episodes1   = 20
-| start1      = {{Start date|2004|10|5}}
-| end1        = {{End date|2005|2|22}}
+| color1     = #4E5A66
+| link1      = #Season 1: The Substitute Soul Reaper (2004–2005)
+| episodes1  = 20
+| start1     = {{Start date|2004|10|5}}
+| end1       = {{End date|2005|2|22}}
 
-| color2      = #5DADEC
-| link2       = #Season 2: The Entry (2005)
-| episodes2   = 21
-| start2      = {{Start date|2005|3|1}}
-| end2        = {{End date|2005|7|19}}
+| color2     = #5DADEC
+| link2      = #Season 2: The Entry (2005)
+| episodes2  = 21
+| start2     = {{Start date|2005|3|1}}
+| end2       = {{End date|2005|7|19}}
 
-| color3      = #FFBF00
-| link3       = #Season 3: The Rescue (2005–06)
-| episodes3   = 22
-| start3      = {{Start date|2005|7|26}}
-| end3        = {{End date|2006|1|10}}
+| color3     = #FFBF00
+| link3      = #Season 3: The Rescue (2005–2006)
+| episodes3  = 22
+| start3     = {{Start date|2005|7|26}}
+| end3       = {{End date|2006|1|10}}
 
-| color4      = #ED872D
-| link4       = #Season 4: The Bount (2006)
-| episodes4   = 28
-| start4      = {{Start date|2006|1|17}}
-| end4        = {{End date|2006|8|1}}
+| color4     = #ED872D
+| link4      = #Season 4: The Bount (2006)
+| episodes4  = 28
+| start4     = {{Start date|2006|1|17}}
+| end4       = {{End date|2006|8|1}}
 
-| color5      = #F66D58
-| link5       = #Season 5: The Assault (2006–07)
-| episodes5   = 18
-| start5      = {{Start date|2006|8|8}}
-| end5        = {{End date|2007|1|4}}
+| color5     = #F66D58
+| link5      = #Season 5: The Assault (2006–2007)
+| episodes5  = 18
+| start5     = {{Start date|2006|8|8}}
+| end5       = {{End date|2007|1|4}}
 
-| color6      = #00A987
-| link6       = #Season 6: Arrancar: The Appearance (2007)
-| episodes6   = 22
-| start6      = {{Start date|2007|1|10}}
-| end6        = {{End date|2007|6|27}}
+| color6     = #00A987
+| link6      = #Season 6: Arrancar: The Appearance (2007)
+| episodes6  = 22
+| start6     = {{Start date|2007|1|10}}
+| end6       = {{End date|2007|6|27}}
 
-| color7      = #395F53
-| link7       = #Season 7: The Arrancar Part 2: The Hueco Mundo Sneak Entry (2007)
-| episodes7   = 20
-| start7      = {{Start date|2007|7|4}}
-| end7        = {{End date|2007|12|5}}
+| color7     = #395F53
+| link7      = #Season 7: The Arrancar Part 2: The Hueco Mundo Sneak Entry (2007)
+| episodes7  = 20
+| start7     = {{Start date|2007|7|4}}
+| end7       = {{End date|2007|12|5}}
 
-| color8      = #89CFF0
-| link8       = #Season 8: The Arrancar Part 3: The Fierce Fight (2007–08)
-| episodes8   = 16
-| start8      = {{Start date|2007|12|12}}
-| end8        = {{End date|2008|4|16}}
+| color8     = #89CFF0
+| link8      = #Season 8: The Arrancar Part 3: The Fierce Fight (2007–2008)
+| episodes8  = 16
+| start8     = {{Start date|2007|12|12}}
+| end8       = {{End date|2008|4|16}}
 
-| color9      = #4B5F2A
-| link9       = #Season 9: The New Captain Shūsuke Amagai (2008)
-| episodes9   = 22
-| start9      = {{Start date|2008|4|23}}
-| end9        = {{End date|2008|10|7}}
+| color9     = #4B5F2A
+| link9      = #Season 9: The New Captain Shūsuke Amagai (2008)
+| episodes9  = 22
+| start9     = {{Start date|2008|4|23}}
+| end9       = {{End date|2008|10|7}}
 
-| color10     = #30BFBF
-| link10      = #Season 10: The Arrancar Part 4: Arrancar vs. Soul Reaper (2008–09)
-| episodes10  = 16
-| start10     = {{Start date|2008|10|14}}
-| end10       = {{End date|2009|2|3}}
+| color10    = #30BFBF
+| link10     = #Season 10: The Arrancar Part 4: Arrancar vs. Soul Reaper (2008–2009)
+| episodes10 = 16
+| start10    = {{Start date|2008|10|14}}
+| end10      = {{End date|2009|2|3}}
 
-| color11     = #BDB76B
-| link11      = #Season 11: Turn Back the Pendulum (2009)
-| episodes11  = 7
-| start11     = {{Start date|2009|2|10}}
-| end11       = {{End date|2009|3|24}}
+| color11    = #BDB76B
+| link11     = #Season 11: Turn Back the Pendulum (2009)
+| episodes11 = 7
+| start11    = {{Start date|2009|2|10}}
+| end11      = {{End date|2009|3|24}}
 
-| color12     = #C3A78B
-| link12      = #Season 12: The Arrancar Part 5: Battle in Karakura (2009)
-| episodes12  = 17
-| start12     = {{Start date|2009|3|31}}
-| end12       = {{End date|2009|7|21}}
+| color12    = #C3A78B
+| link12     = #Season 12: The Arrancar Part 5: Battle in Karakura (2009)
+| episodes12 = 17
+| start12    = {{Start date|2009|3|31}}
+| end12      = {{End date|2009|7|21}}
 
-| color13     = #ECEBBD
-| link13      = #Season 13: Zanpakutō: The Alternate Tale (2009–10)
-| episodes13  = 36
-| start13     = {{Start date|2009|7|28}}
-| end13       = {{End date|2010|4|6}}
+| color13    = #ECEBBD
+| link13     = #Season 13: Zanpakutō: The Alternate Tale (2009–2010)
+| episodes13 = 36
+| start13    = {{Start date|2009|7|28}}
+| end13      = {{End date|2010|4|6}}
 
-| color14     = #701C1C
-| link14      = #Season 14: The Arrancar Part 6: Fall of the Espada (2010–11)
-| episodes14  = 51
-| start14     = {{Start date|2010|4|13}}
-| end14       = {{End date|2011|4|5}}
+| color14    = #701C1C
+| link14     = #Season 14: The Arrancar Part 6: Fall of the Espada (2010–2011)
+| episodes14 = 51
+| start14    = {{Start date|2010|4|13}}
+| end14      = {{End date|2011|4|5}}
 
-| color15     = #14663D
-| link15      = #Season 15: Gotei 13 Invading Army (2011)
-| episodes15  = 26
-| start15     = {{Start date|2011|4|12}}
-| end15       = {{End date|2011|10|4}}
+| color15    = #14663D
+| link15     = #Season 15: Gotei 13 Invading Army (2011)
+| episodes15 = 26
+| start15    = {{Start date|2011|4|12}}
+| end15      = {{End date|2011|10|4}}
 
-| color16     = #18453B
-| link16      = #Season 16: The Lost Agent (2011–12)
-| episodes16  = 24
-| start16     = {{Start date|2011|10|11}}
-| end16       = {{End date|2012|3|27}}
+| color16    = #18453B
+| link16     = #Season 16: The Lost Agent (2011–2012)
+| episodes16 = 24
+| start16    = {{Start date|2011|10|11}}
+| end16      = {{End date|2012|3|27}}
+}}
 
-| link17      = #Thousand-Year Blood War (2022–present)
-| link17T     = ''TYBW''
-| episodes17  = 50
-| color17A    = #C82321
-| episodes17A = 13
-| start17A    = {{Start date|2022|10|11}}
-| end17A      = {{End date|2022|12|27}}
-| color17B    = #1335A9
-| episodes17B = 13
-| start17B    = {{Start date|2023|7|8}}
-| end17B      = {{End date|2023|9|30}}
-| color17C    = #000000
-| episodes17C = 14
-| start17C    = {{Start date|2024|10|5}}
-| end17C      = {{End date|2024|12|28}}
-| color17D    = #F6832E
-| episodes17D = 10<ref name="BD&DVD-4th">{{#invoke:Cite|web|url=https://bleach-anime.com/bddvd/4th.html|title=Burūrei & DVD {{!}} Terebi Anime "Burīchi: Sennen Kessen-hen" Kōshiki Saito|script-title=ja:Blu-ray&DVD {{!}} TVアニメ「BLEACH 千年血戦篇」公式サイト|trans-title=Blu-ray & DVD {{!}} TV Anime "Bleach: Thousand-Year Blood War" Official Site|website=bleach-anime.com|access-date=July 25, 2026}}</ref>
-| start17D    = {{Start date|2026|7|25}}
-| end17D      = 
+=== ''Bleach: Thousand-Year Blood War'' (2022–2026) ===
+{{Series overview
+| seasonT   = Part
+
+| color1    = #C82321
+| link1     = #Part 1: The Blood Warfare
+| episodes1 = 13
+| start1    = {{Start date|2022|10|11}}
+| end1      = {{End date|2022|12|27}}
+
+| color2    = #1335A9
+| link2     = #Part 2: The Separation
+| episodes2 = 13
+| start2    = {{Start date|2023|7|8}}
+| end2      = {{End date|2023|9|30}}
+
+| color3    = #000000
+| link3     = #Part 3: The Conflict
+| episodes3 = 14
+| start3    = {{Start date|2024|10|5}}
+| end3      = {{End date|2024|12|28}}
+
+| color4    = #F6832E
+| link4     = #Part 4: The Calamity
+| episodes4 = 10
+| start4    = {{Start date|2026|7|25}}
+| end4      = {{End date|2026|10|27}}
 }}
 
 == Episodes ==
-{{Hatnote|'''Note:''' The seasons that comprise the following list correspond to the Japanese home media release. In Japan, the original series was aired year-round continuously.}}
+=== ''Bleach'' (2004–2012) ===
+{{Hatnote|'''Note:''' The seasons that comprise the following list correspond to the Japanese home media release by [[Aniplex]]. In Japan, the original series was aired year-round continuously.}}
 
-=== Season 1: ''The Substitute Soul Reaper'' (2004–05) ===
+==== Season 1: ''The Substitute Soul Reaper'' (2004–2005) ====
 {{Main|Bleach season 1{{!}}''Bleach'' season 1}}
 {{:Bleach season 1}}
 
-=== Season 2: ''The Entry'' (2005) ===
+==== Season 2: ''The Entry'' (2005) ====
 {{Main|Bleach season 2{{!}}''Bleach'' season 2}}
 {{:Bleach season 2}}
 
-=== Season 3: ''The Rescue'' (2005–06) ===
+==== Season 3: ''The Rescue'' (2005–2006) ====
 {{Main|Bleach season 3{{!}}''Bleach'' season 3}}
 {{:Bleach season 3}}
 
-=== Season 4: ''The Bount'' (2006) ===
+==== Season 4: ''The Bount'' (2006) ====
 {{Main|Bleach season 4{{!}}''Bleach'' season 4}}
 {{:Bleach season 4}}
 
-=== Season 5: ''The Assault'' (2006–07) ===
+==== Season 5: ''The Assault'' (2006–2007) ====
 {{Main|Bleach season 5{{!}}''Bleach'' season 5}}
 {{:Bleach season 5}}
 
-=== Season 6: ''Arrancar: The Appearance'' (2007) ===
+==== Season 6: ''Arrancar: The Appearance'' (2007) ====
 {{Main|Bleach season 6{{!}}''Bleach'' season 6}}
 {{:Bleach season 6}}
 
-=== Season 7: ''The Arrancar Part 2: The Hueco Mundo Sneak Entry'' (2007) ===
+==== Season 7: ''The Arrancar Part 2: The Hueco Mundo Sneak Entry'' (2007) ====
 {{Main|Bleach season 7{{!}}''Bleach'' season 7}}
 {{:Bleach season 7}}
 
-=== Season 8: ''The Arrancar Part 3: The Fierce Fight'' (2007–08) ===
+==== Season 8: ''The Arrancar Part 3: The Fierce Fight'' (2007–2008) ====
 {{Main|Bleach season 8{{!}}''Bleach'' season 8}}
 {{:Bleach season 8}}
 
-=== Season 9: ''The New Captain Shūsuke Amagai'' (2008) ===
+==== Season 9: ''The New Captain Shūsuke Amagai'' (2008) ====
 {{Main|Bleach season 9{{!}}''Bleach'' season 9}}
 {{:Bleach season 9}}
 
-=== Season 10: ''The Arrancar Part 4: Arrancar vs. Soul Reaper'' (2008–09) ===
+==== Season 10: ''The Arrancar Part 4: Arrancar vs. Soul Reaper'' (2008–2009) ====
 {{Main|Bleach season 10{{!}}''Bleach'' season 10}}
 {{:Bleach season 10}}
 
-=== Season 11: ''Turn Back the Pendulum'' (2009) ===
+==== Season 11: ''Turn Back the Pendulum'' (2009) ====
 {{Main|Bleach season 11{{!}}''Bleach'' season 11}}
 {{:Bleach season 11}}
 
-=== Season 12: ''The Arrancar Part 5: Battle in Karakura'' (2009) ===
+==== Season 12: ''The Arrancar Part 5: Battle in Karakura'' (2009) ====
 {{Main|Bleach season 12{{!}}''Bleach'' season 12}}
 {{:Bleach season 12}}
 
-=== Season 13: ''Zanpakutō: The Alternate Tale'' (2009–10) ===
+==== Season 13: ''Zanpakutō: The Alternate Tale'' (2009–2010) ====
 {{Main|Bleach season 13{{!}}''Bleach'' season 13}}
 {{:Bleach season 13}}
 
-=== Season 14: ''The Arrancar Part 6: Fall of the Espada'' (2010–11) ===
+==== Season 14: ''The Arrancar Part 6: Fall of the Espada'' (2010–2011) ====
 {{Main|Bleach season 14{{!}}''Bleach'' season 14}}
 {{:Bleach season 14}}
 
-=== Season 15: ''Gotei 13 Invading Army'' (2011) ===
+==== Season 15: ''Gotei 13 Invading Army'' (2011) ====
 {{Main|Bleach season 15{{!}}''Bleach'' season 15}}
 {{:Bleach season 15}}
 
-=== Season 16: ''The Lost Agent'' (2011–12) ===
+==== Season 16: ''The Lost Agent'' (2011–2012) ====
 {{Main|Bleach season 16{{!}}''Bleach'' season 16}}
 {{:Bleach season 16}}
 
-=== ''Thousand-Year Blood War'' (2022–present) ===
+=== ''Bleach: Thousand-Year Blood War'' (2022–2026) ===
 {{Main|Bleach: Thousand-Year Blood War{{!}}''Bleach: Thousand-Year Blood War''}}
-<!-- Do not add a Season 17 notation; TYBW is officially considered a sequel series. -->
-==== Part 1: ''The Blood Warfare'' ====
-{{#Section-h:Bleach: Thousand-Year Blood War|Part 1: ''The Blood Warfare''}}
 
-==== Part 2: ''The Separation'' ====
-{{#Section-h:Bleach: Thousand-Year Blood War|Part 2: ''The Separation''}}
+==== Part 1: ''The Blood Warfare'' (2022) ====
+{{#Section-h:Bleach: Thousand-Year Blood War|Part 1: ''The Blood Warfare'' (2022)}}
 
-==== Part 3: ''The Conflict'' ====
-{{#Section-h:Bleach: Thousand-Year Blood War|Part 3: ''The Conflict''}}
+==== Part 2: ''The Separation'' (2023) ====
+{{#Section-h:Bleach: Thousand-Year Blood War|Part 2: ''The Separation'' (2023)}}
 
-==== Part 4: ''The Calamity'' ====
-{{#Section-h:Bleach: Thousand-Year Blood War|Part 4: ''The Calamity''}}
+==== Part 3: ''The Conflict'' (2024) ====
+{{#Section-h:Bleach: Thousand-Year Blood War|Part 3: ''The Conflict'' (2024)}}
+
+==== Part 4: ''The Calamity'' (2026) ====
+{{#Section-h:Bleach: Thousand-Year Blood War|Part 4: ''The Calamity'' (2026)}}
 
 == Specials ==
 {| class="wikitable" style="width:100%;"
@@ -222,7 +233,7 @@ A direct sequel series that adapts the final story arc of the manga, titled ''[[
 {{#invoke:Episode list|list
 | EpisodeNumber = 1
 | Title         = ''Bleach'' Jump Festa 2004 Anime Tour: Memories in the Rain
-| ShortSummary  = This special, shown in Japan at the [[Jump Festa]] 2004 Anime Tour, is a [[television pilot|pilot episode]] for the series. It focuses more on [[Ichigo Kurosaki|Ichigo's]] feelings regarding his mother's death. [[Tite Kubo]], the creator of ''Bleach'', voices [[List of Bleach characters#Kon|Kon]] in this special instead of [[Mitsuaki Madono]], the original voice actor of Kon. The closing theme used for the episode is "Memories in the Rain" by [[Masakazu Morita]], the voice actor of Ichigo, and [[Fumiko Orikasa]], the voice actress of [[Rukia Kuchiki|Rukia]]. This special serves as an alternative version of episodes 8 and 9 of the anime series.
+| ShortSummary  = This special, shown in Japan at the [[Jump Festa]] 2004 Anime Tour, is a [[television pilot|pilot episode]] for the series. It focuses more on [[Ichigo Kurosaki|Ichigo]]'s feelings regarding his mother's death. [[Tite Kubo]], the creator of ''Bleach'', voices [[List of Bleach characters#Kon|Kon]] in this special instead of [[Mitsuaki Madono]], the original voice actor of Kon. The closing theme used for the episode is "Memories in the Rain" by [[Masakazu Morita]], the voice actor of Ichigo, and [[Fumiko Orikasa]], the voice actress of [[Rukia Kuchiki|Rukia]]. This special serves as an alternative version of episodes 8 and 9 of the anime series.
 | LineColor     = FCA845
 }}
 {{#invoke:Episode list|list
@@ -957,65 +968,65 @@ The series has been released in the United Kingdom by [[Manga Entertainment]] in
 ! Arc
 |-
 | rowspan="2" | 1
-| November 5, 2007 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-1-Part-DVD/dp/B000W2FIAI/|title=Bleach - Series 1 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100323201721/http://www.amazon.co.uk/Bleach-1-Part-DVD/dp/B000W2FIAI|archive-date=March 23, 2010}}</ref>
+| November 5, 2007 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-1-Part-DVD/dp/B000W2FIAI/|title=Bleach – Series 1 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100323201721/http://www.amazon.co.uk/Bleach-1-Part-DVD/dp/B000W2FIAI|archive-date=March 23, 2010}}</ref>
 | rowspan="2" | May 5, 2008 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Noriyuki-Abe/dp/B0013URJV4/|title=Bleach Complete Series 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120217034653/http://www.amazon.co.uk/Bleach-Complete-DVD-Noriyuki-Abe/dp/B0013URJV4|archive-date=February 17, 2012}}</ref>
 | 1–12
 | rowspan="2" | The Substitute
 |-
-| February 25, 2008 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-1-Part-2-DVD/dp/B0010LAZVW/|title=Bleach - Series 1 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20091119164917/http://www.amazon.co.uk/Bleach-1-Part-2-DVD/dp/B0010LAZVW|archive-date=November 19, 2009}}</ref>
+| February 25, 2008 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-1-Part-2-DVD/dp/B0010LAZVW/|title=Bleach – Series 1 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20091119164917/http://www.amazon.co.uk/Bleach-1-Part-2-DVD/dp/B0010LAZVW|archive-date=November 19, 2009}}</ref>
 | 13–20
 |-
 | rowspan="2" | 2
-| June 30, 2008 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-2-Part-1-DVD/dp/B001282E26/|title=Bleach - Series 2 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100225042809/http://www.amazon.co.uk/Bleach-2-Part-1-DVD/dp/B001282E26|archive-date=February 25, 2010}}</ref>
+| June 30, 2008 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-2-Part-1-DVD/dp/B001282E26/|title=Bleach – Series 2 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100225042809/http://www.amazon.co.uk/Bleach-2-Part-1-DVD/dp/B001282E26|archive-date=February 25, 2010}}</ref>
 | rowspan="2" | December 29, 2008 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-Box-Set-DVD/dp/B001B182TS/|title=Bleach Series 2 Complete Box Set |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20111012195704/http://www.amazon.co.uk/Bleach-Complete-Box-Set-DVD/dp/B001B182TS|archive-date=October 12, 2011}}</ref>
 | 21–32
 | rowspan="2" | The Entry
 |-
-| November 3, 2008 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-2-Part-DVD/dp/B001282E3A/|title=Bleach - Series 2 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20091121195318/http://www.amazon.co.uk/Bleach-2-Part-DVD/dp/B001282E3A|archive-date=November 21, 2009}}</ref>
+| November 3, 2008 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-2-Part-DVD/dp/B001282E3A/|title=Bleach – Series 2 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20091121195318/http://www.amazon.co.uk/Bleach-2-Part-DVD/dp/B001282E3A|archive-date=November 21, 2009}}</ref>
 | 33–41
 |-
 | rowspan="2" | 3
-| March 23, 2009 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Part-eps-42-53-DVD/dp/B001KNUUL0/|title=Bleach - Series 3 Part 1 (eps 42-53) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100120095216/http://www.amazon.co.uk/Bleach-Part-eps-42-53-DVD/dp/B001KNUUL0|archive-date=January 20, 2010}}</ref>
+| March 23, 2009 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Part-eps-42-53-DVD/dp/B001KNUUL0/|title=Bleach – Series 3 Part 1 (eps 42-53) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100120095216/http://www.amazon.co.uk/Bleach-Part-eps-42-53-DVD/dp/B001KNUUL0|archive-date=January 20, 2010}}</ref>
 | rowspan="2" | August 17, 2009 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-Box-Set-DVD/dp/B002AF4BSU/|title=Bleach Series 3 Complete Box Set |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20090916002816/http://www.amazon.co.uk/Bleach-Complete-Box-Set-DVD/dp/B002AF4BSU|archive-date=September 16, 2009}}</ref>
 | 42–53
 | rowspan="2" | The Rescue
 |-
-| June 15, 2009 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-3-Part-2-DVD/dp/B001RNXZ3I/|title=Bleach - Series 3 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20091219145047/http://www.amazon.co.uk/Bleach-3-Part-2-DVD/dp/B001RNXZ3I|archive-date=December 19, 2009}}</ref>
+| June 15, 2009 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-3-Part-2-DVD/dp/B001RNXZ3I/|title=Bleach – Series 3 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20091219145047/http://www.amazon.co.uk/Bleach-3-Part-2-DVD/dp/B001RNXZ3I|archive-date=December 19, 2009}}</ref>
 | 54–63
 |-
 | rowspan="3" | 4
-| October 26, 2009 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-4-Part-1-DVD/dp/B001U3EONU/|title=Bleach - Series 4 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100327105212/http://www.amazon.co.uk/Bleach-4-Part-1-DVD/dp/B001U3EONU|archive-date=March 27, 2010}}</ref>
+| October 26, 2009 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-4-Part-1-DVD/dp/B001U3EONU/|title=Bleach – Series 4 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100327105212/http://www.amazon.co.uk/Bleach-4-Part-1-DVD/dp/B001U3EONU|archive-date=March 27, 2010}}</ref>
 | rowspan="3" | August 9, 2010 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-Box-Set-DVD/dp/B003TG5P84/|title=Bleach Series 4 Complete Box Set |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120226064129/http://www.amazon.co.uk/Bleach-Complete-Box-Set-DVD/dp/B003TG5P84|archive-date=February 26, 2012}}</ref>
 | 64–71
 | rowspan="3" | The Bount
 |-
-| March 1, 2010 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-4-Part-2-DVD/dp/B002T5QMAG/|title=Bleach - Series 4 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100515134058/http://www.amazon.co.uk/Bleach-4-Part-2-DVD/dp/B002T5QMAG|archive-date=May 15, 2010}}</ref>
+| March 1, 2010 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-4-Part-2-DVD/dp/B002T5QMAG/|title=Bleach – Series 4 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100515134058/http://www.amazon.co.uk/Bleach-4-Part-2-DVD/dp/B002T5QMAG|archive-date=May 15, 2010}}</ref>
 | 72–79
 |-
-| June 7, 2010 <small>(Part 3)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-4-Part-3-DVD/dp/B0037B2WSM/|title=Bleach - Series 4 Part 3 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20170801202337/https://www.amazon.co.uk/Bleach-4-Part-3-DVD/dp/B0037B2WSM|archive-date=August 1, 2017}}</ref>
+| June 7, 2010 <small>(Part 3)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-4-Part-3-DVD/dp/B0037B2WSM/|title=Bleach – Series 4 Part 3 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20170801202337/https://www.amazon.co.uk/Bleach-4-Part-3-DVD/dp/B0037B2WSM|archive-date=August 1, 2017}}</ref>
 | 80–91
 |-
 | rowspan="2" | 5
-| August 30, 2010 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-5-Part-1-DVD/dp/B003TG5P8E/|title=Bleach - Series 5 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20101005053347/http://www.amazon.co.uk/Bleach-5-Part-1-DVD/dp/B003TG5P8E|archive-date=October 5, 2010}}</ref>
-| rowspan="2" | December 20, 2010 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B003VRRW7I/|title=Bleach - Complete Series 5 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120102020635/http://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B003VRRW7I|archive-date=January 2, 2012}}</ref>
+| August 30, 2010 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-5-Part-1-DVD/dp/B003TG5P8E/|title=Bleach – Series 5 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20101005053347/http://www.amazon.co.uk/Bleach-5-Part-1-DVD/dp/B003TG5P8E|archive-date=October 5, 2010}}</ref>
+| rowspan="2" | December 20, 2010 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B003VRRW7I/|title=Bleach – Complete Series 5 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120102020635/http://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B003VRRW7I|archive-date=January 2, 2012}}</ref>
 | 92–99
 | rowspan="2" | The Bount Assault
 |-
-| November 1, 2010 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-5-Part-2-DVD/dp/B003VOIPHC/|title=Bleach - Series 5 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100927044021/http://www.amazon.co.uk/Bleach-5-Part-2-DVD/dp/B003VOIPHC|archive-date=September 27, 2010}}</ref>
+| November 1, 2010 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-5-Part-2-DVD/dp/B003VOIPHC/|title=Bleach – Series 5 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20100927044021/http://www.amazon.co.uk/Bleach-5-Part-2-DVD/dp/B003VOIPHC|archive-date=September 27, 2010}}</ref>
 | 100–109
 |-
 | rowspan="2" | 6
-| April 11, 2011 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B004L9IDAK/|title=Bleach - Series 6 Vol.1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120203073251/http://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B004L9IDAK|archive-date=February 3, 2012}}</ref>
-| rowspan="2" | September 26, 2011 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005DE1G3I/|title=Bleach - Complete Series 6 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20111012025549/http://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005DE1G3I|archive-date=October 12, 2011}}</ref>
+| April 11, 2011 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B004L9IDAK/|title=Bleach – Series 6 Vol.1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120203073251/http://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B004L9IDAK|archive-date=February 3, 2012}}</ref>
+| rowspan="2" | September 26, 2011 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005DE1G3I/|title=Bleach – Complete Series 6 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20111012025549/http://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005DE1G3I|archive-date=October 12, 2011}}</ref>
 | 110–120
 | rowspan="2" | Arrancar: The Arrival
 |-
-| June 13, 2011 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Vol-2-DVD-Noriyuki-Abe/dp/B004L9IDAU/|title=Bleach - Series 6 Vol.2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184337/https://www.amazon.co.uk/Bleach-Vol-2-DVD-Noriyuki-Abe/dp/B004L9IDAU |url-status=live}}</ref>
+| June 13, 2011 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Vol-2-DVD-Noriyuki-Abe/dp/B004L9IDAU/|title=Bleach – Series 6 Vol.2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184337/https://www.amazon.co.uk/Bleach-Vol-2-DVD-Noriyuki-Abe/dp/B004L9IDAU |url-status=live}}</ref>
 | 121–131
 |-
 | rowspan="2" | 7
 | September 26, 2011 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-7-Part-1-DVD/dp/B004WDZRD6/|title=Bleach Series 7 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20110821031844/http://www.amazon.co.uk/Bleach-7-Part-1-DVD/dp/B004WDZRD6|archive-date=August 21, 2011}}</ref>
-| rowspan="2" | December 12, 2011 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005FWQJDA/|title=Bleach - Complete Series 7 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20111211123259/http://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005FWQJDA|archive-date=December 11, 2011}}</ref>
+| rowspan="2" | December 12, 2011 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005FWQJDA/|title=Bleach – Complete Series 7 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20111211123259/http://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B005FWQJDA|archive-date=December 11, 2011}}</ref>
 | 132–141
 | rowspan="2" | Arrancar: The Hueco Mundo
 |-
@@ -1023,16 +1034,16 @@ The series has been released in the United Kingdom by [[Manga Entertainment]] in
 | 142–151
 |-
 | rowspan="2" | 8
-| March 19, 2012 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B005ZJCIIS/|title=Bleach - Series 8 Vol.1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184510/https://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B005ZJCIIS |url-status=live}}</ref>
+| March 19, 2012 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B005ZJCIIS/|title=Bleach – Series 8 Vol.1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184510/https://www.amazon.co.uk/Bleach-Vol-1-DVD-Fumiko-Orikasa/dp/B005ZJCIIS |url-status=live}}</ref>
 | rowspan="2" | October 29, 2012 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-Episodes-152-167-DVD/dp/B008MJRO9Q/|title=Bleach Complete Series 8 (Episodes 152-167) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184801/https://www.amazon.co.uk/Bleach-Complete-Episodes-152-167-DVD/dp/B008MJRO9Q |url-status=live}}</ref>
 | 152–159
 | rowspan="2" | Arrancar: The Fierce Fight
 |-
-| May 14, 2012 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-8-Part-2-DVD/dp/B00791OWZ2/|title=Bleach - Series 8 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120311011526/http://www.amazon.co.uk/Bleach-8-Part-2-DVD/dp/B00791OWZ2|archive-date=March 11, 2012}}</ref>
+| May 14, 2012 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-8-Part-2-DVD/dp/B00791OWZ2/|title=Bleach – Series 8 Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20120311011526/http://www.amazon.co.uk/Bleach-8-Part-2-DVD/dp/B00791OWZ2|archive-date=March 11, 2012}}</ref>
 | 160–167
 |-
 | rowspan="2" | 9
-| June 25, 2012 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-9-Part-1-DVD/dp/B00791OWYI/|title=Bleach - Series 9 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613234349/https://www.amazon.co.uk/Bleach-9-Part-1-DVD/dp/B00791OWYI |url-status=live}}</ref>
+| June 25, 2012 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-9-Part-1-DVD/dp/B00791OWYI/|title=Bleach – Series 9 Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613234349/https://www.amazon.co.uk/Bleach-9-Part-1-DVD/dp/B00791OWYI |url-status=live}}</ref>
 | rowspan="2" | December 31, 2012 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-Episodes-168-189-DVD/dp/B008XG540O/|title=Bleach Complete Series 9 (Episodes 168-189) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184506/https://www.amazon.co.uk/Bleach-Complete-Episodes-168-189-DVD/dp/B008XG540O |url-status=live}}</ref>
 | 168–178
 | rowspan="2" | The New Leader Shûsuke Amagai
@@ -1041,12 +1052,12 @@ The series has been released in the United Kingdom by [[Manga Entertainment]] in
 | 179–189
 |-
 | rowspan="2" | 10
-| January 14, 2013 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-10-Part-1-DVD/dp/B00A9YBW2C/|title=Bleach: Series 10 - Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184427/https://www.amazon.co.uk/Bleach-10-Part-1-DVD/dp/B00A9YBW2C |url-status=live}}</ref>
+| January 14, 2013 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-10-Part-1-DVD/dp/B00A9YBW2C/|title=Bleach: Series 10 – Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184427/https://www.amazon.co.uk/Bleach-10-Part-1-DVD/dp/B00A9YBW2C |url-status=live}}</ref>
 | rowspan="2" | May 20, 2013 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-Episodes-190-212-DVD/dp/B00BFDXY9K/|title=Bleach Complete Series 10 (Episodes 190-212) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014 |url-status=live |archive-url=https://web.archive.org/web/20180502115230/https://www.amazon.co.uk/Bleach-Complete-Episodes-190-212-DVD/dp/B00BFDXY9K|archive-date=May 2, 2018}}</ref>
 | 190–201
 | rowspan="2" | Arrancar vs Shinigami & The Past
 |-
-| March 11, 2013 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-10-Part-2-DVD/dp/B00ARJM1UG/|title=Bleach: Series 10 - Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613234327/https://www.amazon.co.uk/Bleach-10-Part-2-DVD/dp/B00ARJM1UG |url-status=live}}</ref>
+| March 11, 2013 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-10-Part-2-DVD/dp/B00ARJM1UG/|title=Bleach: Series 10 – Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613234327/https://www.amazon.co.uk/Bleach-10-Part-2-DVD/dp/B00ARJM1UG |url-status=live}}</ref>
 | 202–212
 |-
 | 11
@@ -1055,24 +1066,24 @@ The series has been released in the United Kingdom by [[Manga Entertainment]] in
 | Battle in Karakura
 |-
 | rowspan="3" | 12
-| October 28, 2013 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00CYMMUGO/|title=Bleach Series 12 Part 1 - Zanpakut : The Alternate |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184154/https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00CYMMUGO |url-status=live}}</ref>
-| rowspan="3" | July 7, 2014 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-12-Zanpakuto-Alternate/dp/B00IA1UEJI/|title=Bleach Complete Series 12 - Zanpakuto: The Alternate Tale (Episodes 230-265) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184523/https://www.amazon.co.uk/Bleach-Complete-12-Zanpakuto-Alternate/dp/B00IA1UEJI |url-status=live}}</ref>
+| October 28, 2013 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00CYMMUGO/|title=Bleach Series 12 Part 1 – Zanpakut: The Alternate |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184154/https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00CYMMUGO |url-status=live}}</ref>
+| rowspan="3" | July 7, 2014 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-12-Zanpakuto-Alternate/dp/B00IA1UEJI/|title=Bleach Complete Series 12 – Zanpakuto: The Alternate Tale (Episodes 230-265) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184523/https://www.amazon.co.uk/Bleach-Complete-12-Zanpakuto-Alternate/dp/B00IA1UEJI |url-status=live}}</ref>
 | 230–241
 | rowspan="3" | Zanpakuto: The Alternate Tale
 |-
-| December 23, 2013 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00E65SAMK/|title=Bleach Series 12 Part 2- Zanpakut : The Alternate (Episodes 242-253) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613185917/https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00E65SAMK |url-status=live}}</ref>
+| December 23, 2013 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00E65SAMK/|title=Bleach Series 12 Part 2- Zanpakut: The Alternate (Episodes 242-253) |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613185917/https://www.amazon.co.uk/Bleach-12-Part-Zanpakut-Alternate/dp/B00E65SAMK |url-status=live}}</ref>
 | 242–253
 |-
 | February 17, 2014 <small>(Part 3)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-12-Part-3-DVD/dp/B00GRTVUIE/|title=Bleach Series 12 Part 3 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184340/https://www.amazon.co.uk/Bleach-12-Part-3-DVD/dp/B00GRTVUIE |url-status=live}}</ref>
 | 254–265
 |- 
 | rowspan="2" | 13
-| April 7, 2014 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-13-Part-1-DVD/dp/B00I3ZMD2M/|title=Bleach: Series 13 - Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613185910/https://www.amazon.co.uk/Bleach-13-Part-1-DVD/dp/B00I3ZMD2M |url-status=live}}</ref>
+| April 7, 2014 <small>(Part 1)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-13-Part-1-DVD/dp/B00I3ZMD2M/|title=Bleach: Series 13 – Part 1 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613185910/https://www.amazon.co.uk/Bleach-13-Part-1-DVD/dp/B00I3ZMD2M |url-status=live}}</ref>
 | rowspan="2" | December 15, 2014 <small>(Complete)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B00MODCJH8/|title=Bleach: Complete Series 13 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613184430/https://www.amazon.co.uk/Bleach-Complete-DVD-Fumiko-Orikasa/dp/B00MODCJH8 |url-status=live}}</ref>
 | 266–278
 | rowspan="2" | Fall Of The Arrancar
 |-
-| June 9, 2014 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-13-Part-2-DVD/dp/B00I5I1QM0/|title=Bleach: Series 13 - Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613234414/https://www.amazon.co.uk/Bleach-13-Part-2-DVD/dp/B00I5I1QM0 |url-status=live}}</ref>
+| June 9, 2014 <small>(Part 2)</small><ref>{{#invoke:Cite|web|url=https://www.amazon.co.uk/Bleach-13-Part-2-DVD/dp/B00I5I1QM0/|title=Bleach: Series 13 – Part 2 |publisher=[[Amazon.co.uk]]|access-date=August 1, 2014|archive-date=June 13, 2018 |archive-url=https://web.archive.org/web/20180613234414/https://www.amazon.co.uk/Bleach-13-Part-2-DVD/dp/B00I5I1QM0 |url-status=live}}</ref>
 | 279–291
 |-
 | rowspan="2" | 14
@@ -1226,18 +1237,18 @@ The series has been released in the United Kingdom by [[Manga Entertainment]] in
 ! Release date
 ! Episodes
 |-
-| 1<ref>{{#invoke:Cite|web|url=http://www.sanity.com.au/products/2263254/Bleach_Bankai_Box_1_Limited_Edition|title=Bleach Bankai - Box 1 - Eps 1-133 - Limited Edition|website=Sanity|access-date=May 2, 2018|archive-url=https://web.archive.org/web/20140709075522/http://www.sanity.com.au/products/2263254/Bleach_Bankai_Box_1_Limited_Edition|archive-date=9 July 2014}}</ref>
+| 1<ref>{{#invoke:Cite|web|url=http://www.sanity.com.au/products/2263254/Bleach_Bankai_Box_1_Limited_Edition|title=Bleach Bankai – Box 1 – Eps 1-133 – Limited Edition|website=Sanity|access-date=May 2, 2018|archive-url=https://web.archive.org/web/20140709075522/http://www.sanity.com.au/products/2263254/Bleach_Bankai_Box_1_Limited_Edition|archive-date=9 July 2014}}</ref>
 | rowspan="2" | May 21, 2014
 | 1–133
 |-
 | 2<ref>{{#invoke:Cite|web|url=http://www.madman.com.au/catalogue/view/22484/bleach-bankai-box-2-eps-134229-limited-edition|title=Madman Entertainment|website=Madman Entertainment|access-date=May 2, 2018|url-status=live|archive-url=https://web.archive.org/web/20160810171241/https://www.madman.com.au/catalogue/view/22484/bleach-bankai-box-2-eps-134229-limited-edition|archive-date=10 August 2016}}</ref>
 | 134–229
 |-
-| 3<ref>{{#invoke:Cite|web|url=http://www.madman.com.au/catalogue/view/35760/bleach-bankai-box-3-eps-230303-limited-edition|title=Bleach Bankai Box 3 (Eps 230-303) (Limited Edition) - DVD|website=Madman Entertainment|access-date=May 2, 2018|url-status=live|archive-url=https://web.archive.org/web/20180317224313/https://www.madman.com.au/catalogue/view/35760/bleach-bankai-box-3-eps-230303-limited-edition|archive-date=17 March 2018}}</ref>
+| 3<ref>{{#invoke:Cite|web|url=http://www.madman.com.au/catalogue/view/35760/bleach-bankai-box-3-eps-230303-limited-edition|title=Bleach Bankai Box 3 (Eps 230-303) (Limited Edition) – DVD|website=Madman Entertainment|access-date=May 2, 2018|url-status=live|archive-url=https://web.archive.org/web/20180317224313/https://www.madman.com.au/catalogue/view/35760/bleach-bankai-box-3-eps-230303-limited-edition|archive-date=17 March 2018}}</ref>
 | rowspan="2" | April 6, 2016
 | 230–303
 |-
-| 4<ref>{{#invoke:Cite|web|url=http://www.madman.com.au/catalogue/view/35761/bleach-bankai-box-4-eps-304366-limited-edition|title=Bleach Bankai Box 4 (Eps 304-366) (Limited Edition) - DVD|website=Madman Entertainment|access-date=May 2, 2018|url-status=live|archive-url=https://web.archive.org/web/20180317224414/https://www.madman.com.au/catalogue/view/35761/bleach-bankai-box-4-eps-304366-limited-edition|archive-date=17 March 2018}}</ref>
+| 4<ref>{{#invoke:Cite|web|url=http://www.madman.com.au/catalogue/view/35761/bleach-bankai-box-4-eps-304366-limited-edition|title=Bleach Bankai Box 4 (Eps 304-366) (Limited Edition) – DVD|website=Madman Entertainment|access-date=May 2, 2018|url-status=live|archive-url=https://web.archive.org/web/20180317224414/https://www.madman.com.au/catalogue/view/35761/bleach-bankai-box-4-eps-304366-limited-edition|archive-date=17 March 2018}}</ref>
 | 304–366
 |-
 |}
@@ -1316,7 +1327,6 @@ The series has been released in the United Kingdom by [[Manga Entertainment]] in
 | 16
 | January 13, 2026<ref>{{#invoke:Cite|web|title=BLEACH: Thousand-Year Blood War – Part 3|url=https://www.viz.com/anime/tv-series/bleach-thousand-year-blood-war-video/product/8336|publisher=[[Viz Media]]|access-date=November 12, 2025}}</ref>
 | 393–406
-
 |}
 
 == Notes ==

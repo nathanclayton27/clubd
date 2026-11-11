@@ -4,8 +4,8 @@
   "subtitle": "The original run and Thousand-Year Blood War",
   "kind": "anime",
   "popularity": 85,
-  "year": "2004–",
-  "blurb": "411 episodes in broadcast order, both series, with the filler marked.",
+  "year": "2004–2026",
+  "blurb": "416 episodes in broadcast order, both series, with the filler marked.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -21,27 +21,23 @@
   "notes": [
     [
       "Filler.",
-      "151 of 411 episodes are marked anime-original and flagged optional: “Filler arc” for a run of three or more, “Anime-original” for a one-off or a pair. A row has to be called filler by animefillerlist.com's published list AND adapt no manga chapter in the Bleach wiki's episode data before it gets marked. An unmarked row adapts the manga."
+      "151 of 416 episodes are marked anime-original and flagged optional: “Filler arc” for a run of three or more, “Anime-original” for a one-off or a pair. A row has to be called filler by animefillerlist.com's published list AND adapt no manga chapter in the Bleach wiki's episode data before it gets marked. An unmarked row adapts the manga."
     ],
     [
       "Unmarked on purpose.",
       "12 episodes are left unmarked because the two sources disagree about them — the filler list calls them filler, the chapter mapping ties them to a chapter, an omake or a side story: 33, 50, 64, 149, 213–214, 228, 239, 266, 287, 299, 314. A wrong filler label costs you real story; leaving one unmarked costs you an episode. Nothing here is guessed."
     ],
     [
-      "Not classified yet.",
-      "The published filler list stops at episode 406, so the 5 episodes of Part 4 that have aired so far — 407–411 — have only one source behind them and carry no filler mark either way. The chapter mapping ties every one of them to the manga."
-    ],
-    [
       "No runtimes.",
-      "There is no verified per-episode length for 411 episodes, so every row weighs the same and the pace counts episodes rather than minutes. A blanket 24 minutes would read as measured and would be invented."
+      "There is no verified per-episode length for 416 episodes, so every row weighs the same and the pace counts episodes rather than minutes. A blanket 24 minutes would read as measured and would be invented."
     ],
     [
       "Arcs.",
       "Sections are the arcs: Wikipedia's sixteen seasons of the original run, each of which is one named arc, then the four Parts of Thousand-Year Blood War. Rows are numbers, not titles — Bleach's episode titles routinely name the outcome of the episode."
     ],
     [
-      "Still running.",
-      "The original run finished at 366 episodes in 2012. Thousand-Year Blood War is mid-broadcast: this list ends at the newest episode to have aired and grows as Part 4 does."
+      "Both series are finished.",
+      "The original run finished at 366 episodes in 2012. Thousand-Year Blood War finished at 50 episodes in October 2026, when Part 4 ended."
     ]
   ],
   "sections": [
@@ -2634,7 +2630,7 @@
     {
       "id": "ble-tybw4-the-calamity",
       "title": "The Calamity",
-      "sub": "Thousand-Year Blood War part 4 · episodes 407–411",
+      "sub": "Thousand-Year Blood War part 4 · episodes 407–416",
       "links": [
         {
           "label": "Episode list",
@@ -2666,9 +2662,33 @@
           "id": "ble-411",
           "t": "Episode",
           "n": "411"
+        },
+        {
+          "id": "ble-412",
+          "t": "Episode",
+          "n": "412"
+        },
+        {
+          "id": "ble-413",
+          "t": "Episode",
+          "n": "413"
+        },
+        {
+          "id": "ble-414",
+          "t": "Episode",
+          "n": "414"
+        },
+        {
+          "id": "ble-415",
+          "t": "Episode",
+          "n": "415"
+        },
+        {
+          "id": "ble-416",
+          "t": "Episode",
+          "n": "416"
         }
-      ],
-      "intro": "Not classified: 407–411 — these aired after the published filler list's last update, so only the chapter mapping covers them."
+      ]
     }
   ]
 }

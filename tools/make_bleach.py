@@ -3,9 +3,9 @@
 
     python tools/make_bleach.py
 
-One list of 411: the original *Bleach* run (366 episodes, 2004–2012) and its
-sequel *Bleach: Thousand-Year Blood War* (2022–), in broadcast order,
-sectioned by arc. Wikipedia's sixteen seasons ARE the arcs — each season
+One list of 416: the original *Bleach* run (366 episodes, 2004–2012) and its
+sequel *Bleach: Thousand-Year Blood War* (50 episodes, 2022–2026), in
+broadcast order, sectioned by arc. Wikipedia's sixteen seasons ARE the arcs — each season
 article opens by naming the arc it covers — and the sequel's four Parts are
 the arc divisions its own article marks.
 
@@ -28,13 +28,12 @@ articles, never an infobox summary; parse.py asserts the two agree per season,
 and TOTAL below asserts the whole thing, so a future desync fails the build
 loudly instead of shipping a short list.
 
-The list stops at the newest AIRED episode, the way one-piece.json does. Part 4
-of the sequel is mid-run: episode 412 sits on Wikipedia's table with an air
-date a week out and no title, and 413-416 sit inside an HTML comment. Raise
-LAST in scratch/bleach/parse.py and re-run both scripts as it continues.
+Both series are finished. The sequel's fourth and final Part ended on 27
+October 2026 at its 50th episode (416 overall); the Wikipedia lead says the
+run totals 50 episodes, and LAST in scratch/bleach/parse.py is 416 to match.
 
-No runtimes. Nobody publishes a verified length for 411 individual episodes, so
-this ships unweighted rather than repeating an invented 24 minutes 411 times
+No runtimes. Nobody publishes a verified length for 416 individual episodes, so
+this ships unweighted rather than repeating an invented 24 minutes 416 times
 into everyone's finish date.
 """
 import json
@@ -51,7 +50,7 @@ CHAPTERS = ROOT / "scratch" / "bleach" / "chapters.json"
 
 SLUG = "bleach"
 ORIGINAL = 366
-TOTAL = 411          # through Thousand-Year Blood War #45, aired 22 Aug 2026
+TOTAL = 416          # through Thousand-Year Blood War #50, the finale, 27 Oct 2026
 
 SEASON_URL = "https://en.wikipedia.org/wiki/Bleach_season_%d"
 TYBW_URL = "https://en.wikipedia.org/wiki/Bleach:_Thousand-Year_Blood_War"
@@ -160,7 +159,7 @@ def main():
         "subtitle": "The original run and Thousand-Year Blood War",
         "kind": "anime",
         "popularity": 85,
-        "year": "2004–",
+        "year": "2004–2026",
         "blurb": "%d episodes in broadcast order, both series, with the "
                  "filler marked." % TOTAL,
         "unit": {"one": "episode", "many": "episodes"},
@@ -184,12 +183,16 @@ def main():
              "A wrong filler label costs you real story; leaving one unmarked "
              "costs you an episode. Nothing here is guessed."
              % (len(conflict), spans(conflict))],
+        ] + ([
+            # only while the published filler list trails the broadcast; it
+            # has covered all 416 since the finale
             ["Not classified yet.",
              "The published filler list stops at episode %d, so the %d "
              "episodes of Part 4 that have aired so far — %s — have only one "
              "source behind them and carry no filler mark either way. The "
              "chapter mapping ties every one of them to the manga."
              % (unclassified[0] - 1, len(unclassified), spans(unclassified))],
+        ] if unclassified else []) + [
             ["No runtimes.",
              "There is no verified per-episode length for %d episodes, so "
              "every row weighs the same and the pace counts episodes rather "
@@ -201,10 +204,10 @@ def main():
              "Parts of Thousand-Year Blood War. Rows are numbers, not titles "
              "— Bleach's episode titles routinely name the outcome of the "
              "episode."],
-            ["Still running.",
+            ["Both series are finished.",
              "The original run finished at 366 episodes in 2012. Thousand-"
-             "Year Blood War is mid-broadcast: this list ends at the newest "
-             "episode to have aired and grows as Part 4 does."],
+             "Year Blood War finished at 50 episodes in October 2026, when "
+             "Part 4 ended."],
         ],
         "sections": sections,
     }
