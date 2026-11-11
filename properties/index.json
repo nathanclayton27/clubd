@@ -811,7 +811,7 @@
     "kind": "films & shows",
     "year": "1951–",
     "popularity": 82,
-    "blurb": "55 films and 139 seasons of television, about 1753 hours, in the order they came out.",
+    "blurb": "55 films and 140 seasons of television, about 1754 hours, in the order they came out.",
     "accent": "#1F5FA8",
     "accentDark": "#6FA8E8",
     "unit": {
@@ -819,8 +819,8 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 194,
-    "totalw": 1752.65,
+    "total": 195,
+    "totalw": 1754.45,
     "mega": true
   },
   {
@@ -1181,7 +1181,7 @@
     "kind": "manga",
     "year": "1984–",
     "popularity": 78,
-    "blurb": "The original 519 chapters in 42 volumes, then Dragon Ball Super — 104 so far, still running.",
+    "blurb": "The original 519 chapters in 42 volumes, then Dragon Ball Super — 104 so far, on indefinite hiatus.",
     "accent": "#B03A2E",
     "accentDark": "#EF8A7A",
     "unit": {
@@ -3733,9 +3733,9 @@
       "cyberpunk edgerunners"
     ],
     "kind": "anime",
-    "year": "2022",
+    "year": "2022–2026",
     "popularity": 60,
-    "blurb": "Season one — ten episodes across two weeks, five a week.",
+    "blurb": "Both series — twenty episodes across four weeks, five a week.",
     "accent": "#7E8C15",
     "accentDark": "#D4E338",
     "unit": {
@@ -3743,7 +3743,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 10,
+    "total": 20,
     "scheduled": true
   },
   {

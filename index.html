@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-0OwjNMzCSbhuMd5FDKzP+51x0CYMPmW3epkNsL+4dFc=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-SgCE/vLRZgmgEG49MLx9O2ah9IyKMzU8PwyAuxyhgBU=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -3155,7 +3155,7 @@ let MANIFEST = [
     "kind": "films & shows",
     "year": "1951–",
     "popularity": 82,
-    "blurb": "55 films and 139 seasons of television, about 1753 hours, in the order they came out.",
+    "blurb": "55 films and 140 seasons of television, about 1754 hours, in the order they came out.",
     "accent": "#1F5FA8",
     "accentDark": "#6FA8E8",
     "unit": {
@@ -3163,8 +3163,8 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 194,
-    "totalw": 1752.65,
+    "total": 195,
+    "totalw": 1754.45,
     "mega": true
   },
   {
@@ -3525,7 +3525,7 @@ let MANIFEST = [
     "kind": "manga",
     "year": "1984–",
     "popularity": 78,
-    "blurb": "The original 519 chapters in 42 volumes, then Dragon Ball Super — 104 so far, still running.",
+    "blurb": "The original 519 chapters in 42 volumes, then Dragon Ball Super — 104 so far, on indefinite hiatus.",
     "accent": "#B03A2E",
     "accentDark": "#EF8A7A",
     "unit": {
@@ -6077,9 +6077,9 @@ let MANIFEST = [
       "cyberpunk edgerunners"
     ],
     "kind": "anime",
-    "year": "2022",
+    "year": "2022–2026",
     "popularity": 60,
-    "blurb": "Season one — ten episodes across two weeks, five a week.",
+    "blurb": "Both series — twenty episodes across four weeks, five a week.",
     "accent": "#7E8C15",
     "accentDark": "#D4E338",
     "unit": {
@@ -6087,7 +6087,7 @@ let MANIFEST = [
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 10,
+    "total": 20,
     "scheduled": true
   },
   {
@@ -7719,7 +7719,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '1a9a0d49642e';
+const BUILD = '9df75055b56d';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
