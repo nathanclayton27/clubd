@@ -86,8 +86,13 @@ APPLIED = [
     "clu504-tombstones.sql",
     # CLU-153 file A. Nathan pasted it 2026-11-11 20:15:05 UTC; readback matched
     # (owner postgres, definer, search_path pinned, only authenticated may call),
-    # ledger row `applied ae443530`. File B is still unrun and stays in NEVER_RUN.
+    # ledger row `applied ae443530`.
     "clu153-A-find_profile_by_code.sql",
+    # CLU-153 file B. Armed with --saw-the-row after the live miss proved the site
+    # was on the function; pasted 2026-11-11 20:26:44 UTC; ledger `applied 3106a5fc`.
+    # profiles now has exactly "read own profile" and "read connected profiles";
+    # verified as Nathan: 22 of 30 readable, a stranger still found by the function.
+    "clu153-B-narrow-profiles.sql",
 ]
 
 # Written, never executed. Keeping these OUT of the applied list matters: while
@@ -97,7 +102,6 @@ APPLIED = [
 NEVER_RUN = {
     "FINAL-3-profiles.sql":            "superseded by the clu153 pair below; never ran",
     "rls-fix-PART2-after-frontend.sql": "same fence, superseded by FINAL-3, no transaction",
-    "clu153-B-narrow-profiles.sql":     "queued (CLU-153): fenced until the front end is live",
     "migrate-fix-rls-column-locks.sql": "PART1 and PART2 concatenated; never ran as itself",
     "migrate-perf-shares.sql":          "MUST NEVER RUN — silently replaces a live function",
     # Was in APPLIED until CLU-446. All five objects it defines are also defined

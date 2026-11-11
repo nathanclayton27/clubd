@@ -736,6 +736,8 @@ exactly the committed form.
 | 2026-11-11 ~20:09 | `clu504-tombstones.sql` (md5 `ab30c220…`, checksum `54f0ecd2…`, re-verified 2026-11-11 by CLU-572) + 13-row readback | **13/13 PASS.** `progress.removed` `jsonb not null '{}'` on every row, with no tombstones yet; the `progress_tombstones` trigger attached and enabled; `tomb_at`, `tomb_keep` and `progress_tombstone_guard` created; `save_progress` and `club_fold_on_delete` replaced (now `63dd7306…`, `7c94a627…`); grants as audited; `progress` still has its five named policies. **Recorded itself: ledger row `applied 54f0ecd2`.** Users see nothing until the client half ships (CLU-573) | CLU-504 |
 | 2026-11-11 ~20:12 | **Read-only** CLU-153 pre-check (10 columns) | All as expected. Last ledger row was the CLU-504 run minutes earlier; `find_profile_by_code` absent; pasting role and `profiles` owner both `postgres`; RLS on, force-RLS off; exactly the three original `profiles` policies; 0 stored codes A would reject; 0 holders of `…ZZZZ`; 0 `fcode` rows ever. 30 profiles in all | CLU-153 |
 | 2026-11-11 20:15 | `clu153-A-find_profile_by_code.sql` (md5 `be32145a…`) + readback | Function readback: owner `postgres`, security definer, `search_path=public, pg_temp`, EXECUTE held only by `postgres`, `service_role` (Supabase default) and `authenticated`. **Ledger `applied ae443530…`, the audited checksum.** From this moment friend-code lookups go through the function, and misses are capped at 20 an hour and 60 a day per user. Control run impersonating Nathan: 30 / 1 / 1 (all profiles readable, stranger found by direct read and by function). The first try returned 0 / 0 because the code's middle dot was lost; the fix built it with `chr(183)`. That try was charged one miss | CLU-153 |
+| 2026-11-11 20:22-20:24 | **Read-only** live-site gate for B | Baseline: Nathan's own `fcode` rows in the last 10 minutes = 1, newest 20:16:42 (the charged step-6 try), `db_now` 20:21:57. He then entered `CLBZZZZ` on clubd.watch and got "No one holds that code." Re-count: newest **20:23:05**, later than the baseline. That miss was written by `find_profile_by_code`, which **proves the live site is on the function** (it never calls `add_friend_edge`). This was the evidence B's fence required | CLU-153 |
+| 2026-11-11 20:26 | `clu153-B-narrow-profiles.sql`, armed by `arm-clu153-B.py --saw-the-row` (stamp `3106a5fc…`) + readback | SELECT policies on `profiles` are now exactly `read own profile` and `read connected profiles`; the blanket `profiles readable when signed in` is gone. **Ledger `applied 3106a5fc…`**, the armed stamp. Impersonating Nathan afterwards: **22 of 30 profiles readable** (own plus connected), and a stranger **still found by `find_profile_by_code`** (1), so add-by-code to strangers keeps working. Run **before** CLU-445 phase 1, by Nathan's choice; the audit found the two work in either order. A stray re-run of B's `set_config` line alone at 20:27 changed nothing. An attempt at B's undo while impersonating failed with `42501` and changed nothing; it was not needed | CLU-153 |
 
 **`clu504-tombstones.sql` is the most recent change to production (2026-11-11),
 and the second run the database wrote down itself.** The paragraph below
@@ -754,9 +756,9 @@ computes that same `493ae4fb…` for the file on disk today, so the ledger and t
 repo agree on the bytes that ran — the first time in this project that has been
 true of anything.
 
-**Written and not run: CLU-153's file B** (file A ran 2026-11-11, history table
-above), under *Queued and ready* below, and **`clu445-friend-edges.sql`**, phase 1
-only, under *Queued and not run: the
+**CLU-153 is done:** file A and file B both ran on 2026-11-11 (history table
+above), so `profiles` is no longer an open directory. **Written and not run:
+`clu445-friend-edges.sql`**, phase 1 only, under *Queued and not run: the
 friendship edge gets a door* below. **`clu504-tombstones.sql` ran on 2026-11-11**
 (history table above). Its tombstone client half is still unwritten and is now
 CLU-573.
@@ -973,9 +975,16 @@ every watch-club membership (readback 11), so no suffixed row reached
 `club_progress` — check 1 now matters only if the pre-flight is re-used for
 something else.
 
-### Queued and ready: the friend-code lookup, in two files (CLU-153)
+### Ran 2026-11-11: the friend-code lookup, in two files (CLU-153)
 
-`profiles` is readable by every signed-in user, and the only reason it has to
+**Both files ran on 2026-11-11: A at 20:15 UTC and B at 20:26 UTC** (history table
+in §5). `profiles` now has exactly two SELECT policies, `read own profile` and
+`read connected profiles`, and strangers are found only through
+`find_profile_by_code`. The rest of this section is the reasoning and the audit
+behind that, kept because it still explains the design. Read "is readable by
+every signed-in user" below as how things stood before.
+
+`profiles` was readable by every signed-in user, and the only reason it had to
 be is that "add a friend by code" reads it directly (`?fcode=eq.<code>`). The
 fix is a definer function for the lookup and a narrower read policy — which is
 what `FINAL-3-profiles.sql` did in one paste, and why it could never run: the
@@ -1103,8 +1112,9 @@ paths that a clone cannot produce. §3 already carries this warning for
 `migrate-club-progress.sql`; it applies to all three now, and the question of
 what should be published is CLU-414.
 
-**Until B runs, `profiles` is still the open directory §4 describes.** A copy
-already taken is not undone by B; that is the reason not to let it wait.
+**B ran on 2026-11-11, so `profiles` is no longer the open directory §4 used to
+describe.** A copy taken before then is not undone by B. That was the reason not
+to let it wait.
 
 ### Ran 2026-11-11: `progress` learns what was deleted (CLU-504)
 
