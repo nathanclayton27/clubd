@@ -13,7 +13,8 @@ The source list does not split distributed films from produced ones into
 separate tables; its Notes column marks the difference ("U.S. distribution
 only", "Also produced by A24", ...) and each row here keeps that annotation
 verbatim after the director. Weights are Wikidata runtimes (P2047) in hours;
-a film with no runtime there weighs 0 and is counted in the notes.
+a film with no runtime there weighs 0 and is counted in the notes. An upcoming
+film weighs 0 even when a festival run has already put a runtime on Wikidata.
 """
 import json
 import pathlib
@@ -22,7 +23,7 @@ import unicodedata
 SLUG = "a24"
 
 # era boundaries chosen so the sections stay near an even row count
-# (27 / 33 / 36 / 36 / 43 / 36) while still breaking on real turns
+# (27 / 33 / 36 / 36 / 43 / 39) while still breaking on real turns
 ERAS = [
     ("acquisitions", "The acquisition years", 2013, 2015,
      "A24 launched in August 2012 and spent its first three years buying "
@@ -75,6 +76,10 @@ def main():
     coming = [f for f in films if f["status"] == "scheduled"]
     assert len(released) + len(coming) == len(films)
 
+    def minutes(f):
+        """Runtime that counts toward the weight: none until it is out."""
+        return f["runtime"] if f["status"] == "released" else None
+
     sections = []
     for key, title, lo, hi, intro in ERAS:
         got = [f for f in films if lo <= f["year"] <= hi]
@@ -89,10 +94,10 @@ def main():
             items.append({
                 "id": "a24-%d-%s" % (f["year"], fold(f["title"])),
                 "t": f["title"], "n": str(f["year"]),
-                "w": round(f["runtime"] / 60.0, 2) if f["runtime"] else 0.0,
+                "w": round(minutes(f) / 60.0, 2) if minutes(f) else 0.0,
                 "note": " · ".join(bits),
             })
-        hours = sum(f["runtime"] or 0 for f in got) / 60.0
+        hours = sum(minutes(f) or 0 for f in got) / 60.0
         last = "2028" if hi == 9999 else str(hi)
         sections.append({
             "id": key, "title": title,
@@ -107,10 +112,9 @@ def main():
         i for i in set(ids) if ids.count(i) > 1)
     assert len(ids) == len(films), (len(ids), len(films))
 
-    have = [f for f in films if f["runtime"]]
-    hours = sum(f["runtime"] for f in have) / 60.0
+    have = [f for f in films if minutes(f)]
+    hours = sum(minutes(f) for f in have) / 60.0
     no_rt_released = [f for f in released if not f["runtime"]]
-    no_rt_coming = [f for f in coming if not f["runtime"]]
 
     prop = {
         "slug": SLUG,
@@ -151,11 +155,11 @@ def main():
              "annotation, after the director; a row with neither carries no "
              "annotation on the list."],
             ["Bar widths are runtimes.",
-             "From Wikidata, in hours — about %d in all. %d films have no "
-             "runtime there — all %d upcoming films plus %d already released "
-             "— and weigh nothing, so they cannot drag a group's pace."
-             % (round(hours), len(no_rt_released) + len(no_rt_coming),
-                len(no_rt_coming), len(no_rt_released))],
+             "From Wikidata, in hours — about %d in all. %d films weigh "
+             "nothing — all %d upcoming films plus %d already released that "
+             "have no runtime there — so they cannot drag a group's pace."
+             % (round(hours), len(coming) + len(no_rt_released),
+                len(coming), len(no_rt_released))],
             "Catalogue, dates and distribution notes from Wikipedia's List "
             "of A24 films; runtimes from Wikidata.",
         ],
@@ -169,9 +173,9 @@ def main():
     print("wrote %s.json" % SLUG)
     print("  %d films (%d released, %d upcoming), %.1f hours weighted"
           % (len(films), len(released), len(coming), hours))
-    print("  no runtime on Wikidata: %d (%d released, %d upcoming)"
-          % (len(no_rt_released) + len(no_rt_coming),
-             len(no_rt_released), len(no_rt_coming)))
+    print("  weigh nothing: %d (%d released with no runtime on Wikidata, "
+          "%d upcoming)" % (len(no_rt_released) + len(coming),
+                            len(no_rt_released), len(coming)))
     for s in sections:
         print("   %-28s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
 

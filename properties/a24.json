@@ -6,7 +6,7 @@
   "popularity": 66,
   "random": true,
   "year": "2013–",
-  "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 211 films, about 331 hours.",
+  "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 214 films, about 340 hours.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -23,7 +23,7 @@
   "notes": [
     [
       "Every film with a release date.",
-      "205 released and 6 upcoming films, in release order, from Wikipedia's List of A24 films. The 21 films that have started shooting but carry no date, and the 18 in development, are not listed — they join once A24 dates them. Upcoming rows are marked \"Not out yet\"."
+      "211 released and 3 upcoming films, in release order, from Wikipedia's List of A24 films. The 23 films that have started shooting but carry no date, and the 20 in development, are not listed — they join once A24 dates them. Upcoming rows are marked \"Not out yet\"."
     ],
     [
       "A24 distributes some films and produces others.",
@@ -31,7 +31,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata, in hours — about 331 in all. 26 films have no runtime there — all 6 upcoming films plus 20 already released — and weigh nothing, so they cannot drag a group's pace."
+      "From Wikidata, in hours — about 340 in all. 24 films weigh nothing — all 3 upcoming films plus 21 already released that have no runtime there — so they cannot drag a group's pace."
     ],
     "Catalogue, dates and distribution notes from Wikipedia's List of A24 films; runtimes from Wikidata."
   ],
@@ -1017,7 +1017,7 @@
           "t": "Pi",
           "n": "2023",
           "w": 1.42,
-          "note": "Darren Aronofsky · 25th anniversary re-release; originally distributed by Artisan Entertainment"
+          "note": "Darren Aronofsky · 25th anniversary re-release"
         },
         {
           "id": "a24-2023-showing-up",
@@ -1087,7 +1087,7 @@
           "t": "Stop Making Sense",
           "n": "2023",
           "w": 1.47,
-          "note": "Jonathan Demme · Re-release; originally distributed by Cinecom Pictures and Island Alive"
+          "note": "Jonathan Demme · Re-release"
         },
         {
           "id": "a24-2023-dicks-the-musical",
@@ -1139,6 +1139,13 @@
           "note": "Steve McQueen · Also produced by A24"
         },
         {
+          "id": "a24-2024-jerry-lee-lewis-trouble-in-mind",
+          "t": "Jerry Lee Lewis: Trouble in Mind",
+          "n": "2024",
+          "w": 1.23,
+          "note": "Ethan Coen · Produced by A24; distributed by Amazon Prime Video"
+        },
+        {
           "id": "a24-2024-my-mercury",
           "t": "My Mercury",
           "n": "2024",
@@ -1151,13 +1158,6 @@
           "n": "2024",
           "w": 1.8,
           "note": "Sara Goldblatt · Produced by A24; distributed by Netflix"
-        },
-        {
-          "id": "a24-2024-jerry-lee-lewis-trouble-in-mind",
-          "t": "Jerry Lee Lewis: Trouble in Mind",
-          "n": "2024",
-          "w": 1.23,
-          "note": "Ethan Coen · Produced by A24; distributed by Amazon Prime Video"
         },
         {
           "id": "a24-2024-problemista",
@@ -1304,7 +1304,7 @@
     {
       "id": "now",
       "title": "Now and next",
-      "sub": "2025–2028 · 36 films · 52 hours",
+      "sub": "2025–2028 · 39 films · 62 hours",
       "intro": "The current slate, through everything A24 has put a date on. Backrooms became the company's highest-grossing film; the rows marked below are not out yet.",
       "items": [
         {
@@ -1403,7 +1403,7 @@
           "t": "Ne Zha 2",
           "n": "2025",
           "w": 2.4,
-          "note": "Jiaozi · English dubbed version; North American, Australian and New Zealand co-distribution with CMC Pictures only"
+          "note": "Jiaozi · English dubbed version; co-distribution with CMC Pictures"
         },
         {
           "id": "a24-2025-the-smashing-machine",
@@ -1452,7 +1452,7 @@
           "t": "How to Make a Killing",
           "n": "2026",
           "w": 1.77,
-          "note": "John Patton Ford · U.S. distribution only"
+          "note": "John Patton Ford"
         },
         {
           "id": "a24-2026-andre-is-an-idiot",
@@ -1494,7 +1494,7 @@
           "t": "Backrooms",
           "n": "2026",
           "w": 1.83,
-          "note": "Kane Parsons"
+          "note": "Kane Parsons · Also produced by A24"
         },
         {
           "id": "a24-2026-the-death-of-robin-hood",
@@ -1515,35 +1515,49 @@
           "t": "Tony",
           "n": "2026",
           "w": 1.77,
-          "note": "Matt Johnson · Also produced by A24"
+          "note": "Matt Johnson"
         },
         {
           "id": "a24-2026-onslaught",
           "t": "Onslaught",
           "n": "2026",
-          "w": 0.0,
-          "note": "Adam Wingard · Also produced by A24 · Not out yet"
+          "w": 1.53,
+          "note": "Adam Wingard · Also produced by A24"
         },
         {
           "id": "a24-2026-primetime",
           "t": "Primetime",
           "n": "2026",
-          "w": 0.0,
-          "note": "Lance Oppenheim · Also produced by A24 · Not out yet"
+          "w": 1.83,
+          "note": "Lance Oppenheim · Also produced by A24"
         },
         {
           "id": "a24-2026-misty-green",
           "t": "Misty Green",
           "n": "2026",
           "w": 0.0,
-          "note": "Chris Rock · Not out yet"
+          "note": "Chris Rock · Also produced by A24"
+        },
+        {
+          "id": "a24-2026-you-can-see-everything",
+          "t": "You Can See Everything",
+          "n": "2026",
+          "w": 2.9,
+          "note": "Nathan Fielder and Lance Oppenheim · Also produced by A24"
         },
         {
           "id": "a24-2026-club-kid",
           "t": "Club Kid",
           "n": "2026",
-          "w": 0.0,
-          "note": "Jordan Firstman · Not out yet"
+          "w": 2.02,
+          "note": "Jordan Firstman"
+        },
+        {
+          "id": "a24-2026-nuisance-bear",
+          "t": "Nuisance Bear",
+          "n": "2026",
+          "w": 1.5,
+          "note": "Jack Weisman and Gabriela Osio Vanden · Produced by A24; distributed by Mubi"
         },
         {
           "id": "a24-2026-the-debut",
@@ -1551,6 +1565,13 @@
           "n": "2026",
           "w": 0.0,
           "note": "Jesse Eisenberg · Not out yet"
+        },
+        {
+          "id": "a24-2027-slayground",
+          "t": "Slayground",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Jeremy Saulnier · Also produced by A24 · Not out yet"
         },
         {
           "id": "a24-2028-elden-ring",

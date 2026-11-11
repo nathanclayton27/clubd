@@ -1,9 +1,9 @@
 {
  "meta": {
-  "fetched": "2026-08-22",
+  "fetched": "2026-11-11",
   "source": "List of A24 films",
-  "excluded_undated": 21,
-  "excluded_in_development": 18
+  "excluded_undated": 23,
+  "excluded_in_development": 20
  },
  "films": [
   {
@@ -1486,7 +1486,7 @@
    "date": "2023-03-14",
    "year": 2023,
    "director": "Darren Aronofsky",
-   "note": "25th anniversary re-release; originally distributed by Artisan Entertainment",
+   "note": "25th anniversary re-release",
    "status": "released",
    "qid": "Q937762",
    "runtime": 85
@@ -1596,7 +1596,7 @@
    "date": "2023-09-22",
    "year": 2023,
    "director": "Jonathan Demme",
-   "note": "Re-release; originally distributed by Cinecom Pictures and Island Alive",
+   "note": "Re-release",
    "status": "released",
    "qid": "Q2351784",
    "runtime": 88
@@ -1679,6 +1679,17 @@
    "runtime": 246
   },
   {
+   "title": "Jerry Lee Lewis: Trouble in Mind",
+   "page": "Jerry Lee Lewis: Trouble in Mind",
+   "date": "2024-01-01",
+   "year": 2024,
+   "director": "Ethan Coen",
+   "note": "Produced by A24; distributed by Amazon Prime Video",
+   "status": "released",
+   "qid": "Q113952565",
+   "runtime": 74
+  },
+  {
    "title": "My Mercury",
    "page": "My Mercury (film)",
    "date": "2024-01-12",
@@ -1699,17 +1710,6 @@
    "status": "released",
    "qid": "Q132197266",
    "runtime": 108
-  },
-  {
-   "title": "Jerry Lee Lewis: Trouble in Mind",
-   "page": "Jerry Lee Lewis: Trouble in Mind",
-   "date": "2024-02-14",
-   "year": 2024,
-   "director": "Ethan Coen",
-   "note": "Produced by A24; distributed by Amazon Prime Video",
-   "status": "released",
-   "qid": "Q113952565",
-   "runtime": 74
   },
   {
    "title": "Problemista",
@@ -2080,7 +2080,7 @@
    "date": "2025-08-22",
    "year": 2025,
    "director": "Jiaozi",
-   "note": "English dubbed version; North American, Australian and New Zealand co-distribution with CMC Pictures only",
+   "note": "English dubbed version; co-distribution with CMC Pictures",
    "status": "released",
    "qid": "Q131937861",
    "runtime": 144
@@ -2157,7 +2157,7 @@
    "date": "2026-02-20",
    "year": 2026,
    "director": "John Patton Ford",
-   "note": "U.S. distribution only",
+   "note": "",
    "status": "released",
    "qid": "Q126488898",
    "runtime": 106
@@ -2223,7 +2223,7 @@
    "date": "2026-05-29",
    "year": 2026,
    "director": "Kane Parsons",
-   "note": "",
+   "note": "Also produced by A24",
    "status": "released",
    "qid": "Q125131076",
    "runtime": 110
@@ -2256,7 +2256,7 @@
    "date": "2026-08-07",
    "year": 2026,
    "director": "Matt Johnson",
-   "note": "Also produced by A24",
+   "note": "",
    "status": "released",
    "qid": "Q136311776",
    "runtime": 106
@@ -2268,20 +2268,20 @@
    "year": 2026,
    "director": "Adam Wingard",
    "note": "Also produced by A24",
-   "status": "scheduled",
+   "status": "released",
    "qid": "Q131451703",
-   "runtime": null
+   "runtime": 92
   },
   {
    "title": "Primetime",
-   "page": "Primetime (2026 film)",
+   "page": "Primetime (film)",
    "date": "2026-09-25",
    "year": 2026,
    "director": "Lance Oppenheim",
    "note": "Also produced by A24",
-   "status": "scheduled",
+   "status": "released",
    "qid": "Q133273688",
-   "runtime": null
+   "runtime": 110
   },
   {
    "title": "Misty Green",
@@ -2289,10 +2289,21 @@
    "date": "2026-10-09",
    "year": 2026,
    "director": "Chris Rock",
-   "note": "",
-   "status": "scheduled",
+   "note": "Also produced by A24",
+   "status": "released",
    "qid": "Q135494084",
    "runtime": null
+  },
+  {
+   "title": "You Can See Everything",
+   "page": "You Can See Everything",
+   "date": "2026-10-16",
+   "year": 2026,
+   "director": "Nathan Fielder and Lance Oppenheim",
+   "note": "Also produced by A24",
+   "status": "released",
+   "qid": "Q141336617",
+   "runtime": 174
   },
   {
    "title": "Club Kid",
@@ -2301,9 +2312,20 @@
    "year": 2026,
    "director": "Jordan Firstman",
    "note": "",
-   "status": "scheduled",
+   "status": "released",
    "qid": "Q139042812",
-   "runtime": null
+   "runtime": 121
+  },
+  {
+   "title": "Nuisance Bear",
+   "page": "Nuisance Bear (2026 film)",
+   "date": "2026-11-06",
+   "year": 2026,
+   "director": "Jack Weisman and Gabriela Osio Vanden",
+   "note": "Produced by A24; distributed by Mubi",
+   "status": "released",
+   "qid": "Q137384588",
+   "runtime": 90
   },
   {
    "title": "The Debut",
@@ -2314,6 +2336,17 @@
    "note": "",
    "status": "scheduled",
    "qid": "Q133885802",
+   "runtime": 105
+  },
+  {
+   "title": "Slayground",
+   "page": "Slayground (2027 film)",
+   "date": "2027-01-29",
+   "year": 2027,
+   "director": "Jeremy Saulnier",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": "Q136547121",
    "runtime": null
   },
   {
