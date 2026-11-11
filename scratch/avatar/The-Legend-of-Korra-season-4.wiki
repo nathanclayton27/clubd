@@ -50,19 +50,7 @@ Like the third season, the final season received a 100% rating from 9 reviews on
 
 == Episodes ==
 {{See also|List of The Legend of Korra episodes{{!}}List of ''The Legend of Korra'' episodes}}
-<onlyinclude>
-{{Episode table
-| background = #345C46
-| overall    = 5
-| season     = 5
-| title      = 12
-| director   = 12
-| writer     = 14
-| aux2       = 35
-| aux2T      = Storyboarded by
-| airdate    = 12
-| prodcode   = 5
-| episodes   = 
+<onlyinclude>{{Episode table |background=#345C46 |overall=5 |season=5 |title=11 |director=10 |writer=11 |aux2=34 |airdate=17 |prodcode=7 |aux2T=Storyboarded by |episodes=
 {{Episode list/sublist|The Legend of Korra season 4
 | EpisodeNumber   = 40
 | EpisodeNumber2  = 1

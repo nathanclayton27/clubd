@@ -38,32 +38,19 @@ __TOC__
 == Episodes ==
 {{See also|List of Avatar: The Last Airbender episodes{{!}}List of ''Avatar: The Last Airbender'' episodes}}
 {{Long plot|section|date=March 2025|plural=yes}}
-<onlyinclude>
-{{Episode table
-| background = #3A5892
-| overall    = 5
-| season     = 5
-| title      = 17
-| director   = 10
-| writer     = 18
-| aux2       = 28
-| aux2T      = Storyboarded by
-| airdate    = 12
-| prodcode   = 5
-| prodcodeR  = {{efn|name=Pro-Code|Production code format is taken from episode commentary for "Sozin's Comet: The Phoenix King"}}
-| viewers    =
-| episodes   = 
+<onlyinclude>{{Episode table |background=#3A5892 |overall=5 |season=5 |title=12 |director=10 |writer=15 |aux2=29 |aux2T=Storyboarded by |airdate=11 |prodcode=6 |viewers=7 |country=U.S.
+|prodcodeR={{efn|name=Pro-Code|Production code format is taken from episode commentary for "Sozin's Comet: The Phoenix King"}} |episodes=
 {{Episode list/sublist|Avatar: The Last Airbender season 1
 | EpisodeNumber   = 1
 | EpisodeNumber2  = 1
 | Title           = [[The Boy in the Iceberg]]
 | DirectedBy      = [[Dave Filoni]]
-| WrittenBy       = [[Michael Dante DiMartino]] & [[Bryan Konietzko]]<br />''Additional writing by:'' [[Aaron Ehasz]],<br />Peter Goldfinger & [[Josh Stolberg]]
-| Aux2            = Dave Filoni, Justin Ridge & [[Giancarlo Volpe]]
+| WrittenBy       = {{hlist|[[Michael Dante DiMartino]]|[[Bryan Konietzko]]|class=inline}}<br />''Additional writing by:'' {{hlist|[[Aaron Ehasz]]|Peter Goldfinger|[[Josh Stolberg]]|class=inline}}
+| Aux2            = {{hlist|Dave Filoni|Justin Ridge|[[Giancarlo Volpe]]|class=inline}}
 | OriginalAirDate = {{Start date|2005|2|21}}
 | ProdCode        = 101
 | Viewers         = 
-| ShortSummary    = Katara and Sokka, two siblings from the Southern Water Tribe, discover a boy trapped inside an iceberg floating on the sea after Katara accidentally waterbends in a fit of rage while reprimanding Sokka. They free him and he introduces himself as Aang, an airbender of the Air Nomads—a culture believed to be extinct for 100 years. Aang and his six-legged sky bison, Appa, accompany Katara and Sokka to their village. Meanwhile Prince Zuko of the Fire Nation, accompanied by his uncle Iroh, is patrolling the surrounding waters in search of the Avatar, a fabled  bender who can master all four elements and restore balance to the world. Katara confides in Aang that she is a waterbender, but there are no other waterbenders in the Southern Water Tribe to teach her. Aang offers to take her to the Northern Water Tribe to find a teacher. A chance encounter with an abandoned Fire Nation ship reveals that Aang is unaware of the war that the Fire Nation has waged against the other nations of the world for 100 years; Katara deduces that Aang must have been frozen for at least that long. The pair accidentally set off a signal flare on the ship alerting Zuko, who already suspects the Avatar is nearby.
+| ShortSummary    = Katara and Sokka, two siblings from the Southern Water Tribe, discover a boy trapped inside an iceberg floating on the sea. They free him and he introduces himself as Aang, an airbender of the Air Nomads—a culture believed to be extinct for 100 years. Aang and his six-legged sky bison, Appa, accompany Katara and Sokka to their village. Meanwhile Prince Zuko of the Fire Nation, accompanied by his uncle Iroh, is patrolling the surrounding waters in search of the Avatar, a fabled  bender who can master all four elements and restore balance to the world. Katara confides in Aang that she is a waterbender, but there are no other waterbenders in her tribe to teach her. Aang offers to take her to the Northern Water Tribe to find a teacher. An overturned fire nation warship reveals that Aang is unaware of the war that the Fire Nation has waged against the other nations of the world for 100 years, causing Katara to deduce that Aang must have been frozen for at least that long. The pair accidentally set off a signal flare on the ship alerting Zuko, who already suspects the Avatar is nearby.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -71,12 +58,12 @@ __TOC__
 | EpisodeNumber2  = 2
 | Title           = [[The Avatar Returns]]
 | DirectedBy      = Dave Filoni
-| WrittenBy       = Michael Dante DiMartino & Bryan Konietzko<br />''Additional writing by:'' Aaron Ehasz,<br />Peter Goldfinger & Josh Stolberg
-| Aux2            = Dave Filoni, Chris Graham, Miyuki Hoshikawa,<br />Justin Ridge & Giancarlo Volpe
+| WrittenBy       = {{hlist|Michael Dante DiMartino|Bryan Konietzko|class=inline}}<br />''Additional writing by:'' {{hlist|Aaron Ehasz|Peter Goldfinger|Josh Stolberg|class=inline}}
+| Aux2            = {{hlist|Dave Filoni|Chris Graham|Miyuki Hoshikawa|Justin Ridge|Giancarlo Volpe|class=inline}}
 | OriginalAirDate = {{Start date|2005|2|21}}
 | ProdCode        = 102
 | Viewers         = 
-| ShortSummary    = After bringing Fire Nation attention to the village, Aang is banished despite Katara's objections. Zuko soon descends on the village and demands the Avatar be handed over to him. Aang returns to the village to defend it, where Zuko identifies him as the Avatar. He surrenders himself to Zuko on the condition that the villagers are left alone, to which Zuko agrees. Katara and Sokka decide to pursue Aang on Appa. Aboard Zuko's ship, Aang manages to break free from the guards and battles with Zuko in the process. Aang is knocked into the water and almost drowns, but saves himself with his "[[Avatar: The Last Airbender#Premise|Avatar State]]", in which his eyes and tattoos glow and he channels an incredible display of waterbending to overpower Zuko and his crew. As the three fly away on Appa, Aang explains his reluctance towards being the Avatar, and the group sets a course for the North Pole so that he and Katara can learn waterbending together.
+| ShortSummary    = After bringing Fire Nation attention to the village, Aang is banished despite Katara's objections. Zuko soon descends on the village and demands the Avatar be handed over to him. Aang returns to the village to defend it, where Zuko identifies him as the Avatar. He surrenders himself to Zuko, causing Katara and Sokka to pursue them on Appa. Aboard Zuko's ship, Aang manages to break free from the guards and battles with Zuko in the process. Aang is knocked into the water and almost drowns, but saves himself with the "[[Avatar: The Last Airbender#Premise|Avatar State]]", in which he uses incredibly potent waterbending to overpower Zuko and his crew. As the three fly away on Appa, Aang explains his reluctance towards being the Avatar, and they set a course for the North Pole so that he and Katara can learn waterbending.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -85,24 +72,24 @@ __TOC__
 | Title           = The Southern Air Temple
 | DirectedBy      = [[Lauren MacMullan]]
 | WrittenBy       = Michael Dante DiMartino
-| Aux2            = Li Hong, Lauren MacMullan & Ethan Spaulding
+| Aux2            = {{hlist|Li Hong|Lauren MacMullan|Ethan Spaulding|class=inline}}
 | OriginalAirDate = {{Start date|2005|2|25}}
 | ProdCode        = 103
 | Viewers         = 3.2<ref>{{cite web|url=https://www.newspapers.com/article/usa-today-february-21st-2005/162892207/|title=Prime-time Nielsen ratings|date=March 2, 2005|newspaper=[[USA Today]]|page=42|location=McLean, Virginia}}</ref>
-| ShortSummary    = Aang is eager to return to his home at the Southern Air Temple, though Katara worries that evidence of the Fire Nation's assault on it may upset him. Aang shows Katara and Sokka around the now-deserted temple, reminiscing about his mentor Monk Gyatso. The group enters the Air Temple sanctuary, filled with the statues of all the previous Avatars (Aang's past lives) in order of their reincarnation, the most recent being Avatar Roku of the Fire Nation. While playfully chasing a flying lemur, Aang discovers Gyatso's skeleton, surrounded by Fire Nation remains. Aang enters the Avatar State in his grief, causing the eyes of the statues at the temple and all over the world to glow brightly, alerting everyone to his return. Once Katara and Sokka calm Aang down, he accepts that he is the last surviving Airbender. As they leave the temple, they adopt the lemur as a pet, naming him Momo. Meanwhile, Zuko stops to make repairs to his ship and is greeted by Zhao, a commander in the Fire Nation navy. Zuko tries to hide that he has seen the Avatar, but Zhao discovers the truth and takes on the task of capturing the Avatar himself, viewing Zuko as a failure. Zuko refuses to accept this, as capturing the Avatar is the only way he can return from his banishment from the Fire Nation. Tensions rise between the two, with Zuko challenging Zhao to a firebending duel (known as an Agni Kai). Zuko wins the duel, but spares Zhao. Zhao then tries to attack Zuko while his back is turned but is stopped by Iroh, who intervenes and chastises Zhao for his dishonorable conduct and poor sportsmanship.
+| ShortSummary    = Aang returns to his home, the Southern Air Temple, where he remembers his teacher Gyatso. Katara and Sokka see a fire nation helmet, but cover it up for Aang. After they discover a group of statues of past Avatars, Aang finds that Fire Nation soldiers killed Gyatso, and enters the Avatar State, causing the statues to glow at the eyes. Zuko, having had his ship ruined, is repairing it while Commander Zhao, a high ranking Fire Nation leader, meets him and finds out the Avatar is alive. Zuko challenges him to an Agni Kai, and wins once he remembers his basics. Zhao tries to attack him while Zuko’s back is turned, but Iroh stops him and critiques his sportsmanship.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
 | EpisodeNumber   = 4
 | EpisodeNumber2  = 4
 | Title           = The Warriors of Kyoshi
-| DirectedBy      = [[Giancarlo Volpe]]
+| DirectedBy      = Giancarlo Volpe
 | WrittenBy       = Nick Malis
-| Aux2            = Chris Graham, Kenji Ono & Giancarlo Volpe
+| Aux2            = {{hlist|Chris Graham|Kenji Ono|Giancarlo Volpe|class=inline}}
 | OriginalAirDate = {{Start date|2005|3|4}}
 | ProdCode        = 104
 | Viewers         = 3.7<ref>{{cite web|url=https://www.newspapers.com/article/usa-today-february-28th-2005/162892285/|title=Prime-time Nielsen ratings|date=March 9, 2005|newspaper=[[USA Today]]|page=38|location=McLean, Virginia}}</ref>
-| ShortSummary    = Looking for a short break from their travels, Aang brings the group to the Earth Kingdom's Kyoshi Island, where he seeks to ride Elephant [[Koi]], enormous fish who inhabit the surrounding waters. However, the group are captured by the Kyoshi Warriors, a group of female warriors who protect the island. The trio are freed when Aang proves he is the Avatar, a reincarnation of Avatar Kyoshi, and he quickly gains reverence among the island's inhabitants. His popularity, especially among the girls, soon goes to his head and creates a rift between him and Katara. Meanwhile, Sokka is embarrassed after being bested by girls in combat training, and strives to prove himself stronger than the Kyoshi Warriors. When he suffers further embarrassment, he swallows his pride and respectfully asks to be trained by their leader [[Suki (Avatar: The Last Airbender)|Suki]], who agrees. Aang's desire for popularity soon puts himself and Katara at risk when he tries to ride an [[Unagi]] [[sea serpent]], as well as the whole island when Zuko gets word of his location. Zuko attacks, but Aang, Katara, and Sokka all manage to escape and draw the Fire Nation away before the entire island is decimated. Aang uses the Unagi to extinguish the fires caused by the attack.
+| ShortSummary    = Looking for a short break from their travels, Aang brings the group to the Earth Kingdom's Kyoshi Island, where he seeks to ride Elephant [[Koi]]. However, the group are captured by the Kyoshi Warriors, a group of female warriors who protect the island. The trio are freed when Aang proves he is the Avatar, a reincarnation of Avatar Kyoshi, and he quickly gains popularity. His popularity, especially among the girls, goes to his head and creates a rift between him and Katara. Meanwhile, Sokka is embarrassed after being bested by girls in combat training, and strives to prove himself stronger than the Kyoshi Warriors. When he suffers further embarrassment, he swallows his pride and asks to be trained by their leader [[Suki (Avatar: The Last Airbender)|Suki]], who agrees. Aang's desire for popularity soon puts himself and Katara at risk when he tries to ride an [[Unagi]] serpent, and he endangers the whole island when Zuko gets word of his location. Zuko attacks, but Aang, Katara, and Sokka manage to escape and draw the Fire Nation away. Aang uses the Unagi to extinguish the fires caused by the attack.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -111,11 +98,11 @@ __TOC__
 | Title           = The King of Omashu
 | DirectedBy      = Anthony Lioi
 | WrittenBy       = John O'Bryan
-| Aux2            = Ian Graham, Anthony Lioi & Bobby Rubio
+| Aux2            = {{hlist|Ian Graham|Anthony Lioi|Bobby Rubio|class=inline}}
 | OriginalAirDate = {{Start date|2005|3|18}}
 | ProdCode        = 105
 | Viewers         = 3.6<ref>{{cite web|url=https://www.newspapers.com/article/usa-today-march-14th-2005/162892514/|title=Prime-time Nielsen ratings|date=March 23, 2005|newspaper=[[USA Today]]|page=40|location=McLean, Virginia}}</ref>
-| ShortSummary    = The group arrives at the Earth Kingdom city of Omashu. There, Aang shows Katara and Sokka the Omashu mail delivery system, a massive network of stone causeways which he and his friend Bumi had once ridden for fun a hundred years previous. The trio gives the chutes a try but runs into trouble after they destroy a cabbage merchant's cart. Brought before the king of the city, an elderly and erratic man, the three are unexpectedly given a feast, during which the king outs Aang as being the Avatar. He imprisons the three and puts Aang through three deadly challenges the next day to test his skills and earn Katara and Sokka's freedom, culminating in a duel with the king himself. After Aang passes all of the challenges, the king forces Aang to guess his name. Aang ponders the question, finally deducing the king is his old friend Bumi. Bumi and Aang finally reunite, Katara and Sokka are set free, and Bumi divulges that he put Aang through the challenges as a means of preparing him for his eventual confrontation with Fire Lord Ozai.
+| ShortSummary    = The group arrives at the Earth Kingdom city of Omashu. There, Aang shows Katara and Sokka the Omashu mail delivery system, a massive network of stone causeways which he and his friend Bumi had once ridden for fun a hundred years previous. The trio gives the chutes a try but runs into trouble after they destroy a cabbage merchant's cart. Brought before the king of the city, an elderly neurotic man, the three are given a feast, during which the king outs Aang as being the Avatar and imprisons them and puts Aang through three deadly challenges the next day to test his skills and earn Katara and Sokka's freedom, culminating in a duel with the king himself. After Aang passes all of the challenges, the king forces Aang to guess his name. Aang ponders the question, finally deducing the king is his old friend Bumi. Bumi and Aang finally reunite, and Katara and Sokka are set free.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -124,7 +111,7 @@ __TOC__
 | Title           = Imprisoned
 | DirectedBy      = Dave Filoni
 | WrittenBy       = [[Matthew Hubbard]]
-| Aux2            = Dave Filoni, Miyuki Hoshikawa & Justin Ridge
+| Aux2            = {{hlist|Dave Filoni|Miyuki Hoshikawa|Justin Ridge|class=inline}}
 | OriginalAirDate = {{Start date|2005|3|25}}
 | ProdCode        = 106
 | Viewers         = 
@@ -137,23 +124,22 @@ __TOC__
 | EpisodeNumber2_1  = 7
 | EpisodeNumber_2   = 8
 | EpisodeNumber2_2  = 8
-| Title_1           = The Spirit World (Winter Solstice, Part 1)
-| Title_2           = Avatar Roku (Winter Solstice, Part 2)
+| Title             = Winter Solstice
 | DirectedBy_1      = Lauren MacMullan
 | DirectedBy_2      = Giancarlo Volpe
 | WrittenBy_1       = Aaron Ehasz
 | WrittenBy_2       = Michael Dante DiMartino
-| Aux2_1            = Jerry Langford, Lauren MacMullan & Ethan Spaulding
-| Aux2_2            = Chris Graham, Kenji Ono & Giancarlo Volpe
+| Aux2_1            = {{hlist|Jerry Langford|Lauren MacMullan|Ethan Spaulding|class=inline}}
+| Aux2_2            = {{hlist|Chris Graham|Kenji Ono|Giancarlo Volpe|class=inline}}
 | OriginalAirDate_1 = {{Start date|2005|4|8}}
 | OriginalAirDate_2 = {{Start date|2005|4|15}}
 | ProdCode_1        = 107
 | ProdCode_2        = 108
 | Viewers_1         = 
 | Viewers_2         = 
-| ShortSummary      = '''Part 1: The Spirit World''': The trio find themselves in a small Earth Kingdom village that is being attacked by Hei Bai, a monster from the Spirit World. The villagers believe that Aang can make peace with the spirit, since the Avatar is the bridge between the Physical and Spirit World. Aang unsuccessfully tries to calm the monster, which kidnaps Sokka in the process of attacking the village. Aang pursues Sokka, but fails to rescue him and ends up in the Spirit World, from which he cannot be seen or heard, nor does he have the ability to airbend. While there he is told that the previous Avatar, Roku, has a message for him on the Winter Solstice the next day, delivered by the spirit of Roku's dragon. After returning to the physical world, Aang calms the attacking spirit, who was upset that the nearby forest he watches over was destroyed by the Fire Nation. Hei Bai leaves in peace, returning all of the villagers and Sokka unharmed. Elsewhere, Iroh is captured by Earth Kingdom soldiers while bathing in a hot spring. The soldiers plan to take him to the Earth Kingdom capital, Ba Sing Se, to face justice, but Iroh proves to be an immensely formidable firebender even while restrained. Zuko eventually catches up with the soldiers to help free him, forgoing his chase for the Avatar for a time.
-----
-'''Part 2: Avatar Roku''': Aang, Katara, and Sokka travel to a temple on an island in the Fire Nation so Aang can receive Roku's message. The three bypass a blockade led by Zhao while Zuko pursues them, despite being banished from the Fire Nation. At the temple, Aang, Katara and Sokka discover that the Fire Sages who guard the temple are no longer loyal to the Avatar, but to the Fire Lord. The sages attack, but one proves to still be loyal to the Avatar and leads them to the temple sanctuary. Aang manages to enter the sanctuary after narrowly avoiding capture. Zhao arrives having tracked Zuko, intending to apprehend both him and Aang. Avatar Roku appears to Aang and informs him about a comet that Fire Lord Sozin used to begin the war by harnessing its power to enhance the Fire Nation's bending and wipe out the Air Nomads. Sozin's Comet will return by the end of the coming summer and give Fire Lord Ozai the power to finish the war with a brutal assault. Aang must master all four elements and defeat the Fire Lord to ensure the world's survival. Roku's spirit manifests inside Aang's body, repelling Zhao's forces with a staggering display of bending that destroys the temple as Aang, Katara, Sokka, and Zuko escape.
+| ShortSummary      = '''Part 1: "The Spirit World"''': The trio find themselves in a small Earth Kingdom village that is being attacked by Hei Bai, a monster from the Spirit World. The villagers believe that Aang can make peace with the spirit, since the Avatar is the bridge to the Spirit World. Aang tries to calm the monster, which kidnaps Sokka. Aang pursues them, but fails to rescue Sokka and ends up in the Spirit World, where he can’t airbend. While there he is told that the previous Avatar, Roku, has a message for him on the Winter Solstice the next day, delivered by the spirit of Roku's dragon. After returning to the physical world, Aang calms the attacking spirit, who was upset that the nearby forest he watches over was destroyed by the Fire Nation. Hei Bai leaves in peace, returning all of the villagers and Sokka unharmed. Elsewhere, Iroh is captured by Earth Kingdom soldiers while bathing in a hot spring. The soldiers plan to take him to the Earth Kingdom capital, Ba Sing Se, to face justice, but Zuko eventually catches up with the soldiers to help free him, forgoing his chase for the Avatar for a while.
+
+'''Part 2: "Avatar Roku"''': Aang, Katara, and Sokka travel to a temple in the Fire Nation so Aang can receive Roku's message. The three bypass Zhao’s blockade, while Zuko pursues them. At the temple, Aang, Katara and Sokka discover that the sages who guard the temple have joined the fire lord. The sages attack, but one is still loyal and leads them to the sanctuary. Aang enters the sanctuary after narrowly avoiding capture. Zhao arrives having tracked Zuko, intending to apprehend both him and Aang. Avatar Roku informs Aang about a comet whose power Fire Lord Sozin used to begin the war. Sozin's Comet will return by the end of the coming summer and give Fire Lord Ozai the power to finish the war with a brutal assault, meaning Aang must master all four elements and defeat the Fire Lord. Roku's spirit manifests inside Aang's body, making everyone flee the temple before it is destroyed.
 | LineColor         = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -162,11 +148,11 @@ __TOC__
 | Title           = The Waterbending Scroll
 | DirectedBy      = Anthony Lioi
 | WrittenBy       = John O'Bryan
-| Aux2            = Ian Graham, Bryan Konietzko, Anthony Lioi & Bobby Rubio
+| Aux2            = {{hlist|Ian Graham|Bryan Konietzko|Anthony Lioi|Bobby Rubio|class=inline}}
 | OriginalAirDate = {{Start date|2005|4|29}}
 | ProdCode        = 109
 | Viewers         = 
-| ShortSummary    = Aang grows frantic over the fact that he must master all elements to defeat the Fire Lord before Sozin's Comet arrives, so Katara begins teaching Aang waterbending, despite her limited training. Waterbending comes naturally for Aang, much to Katara's frustration. Later, while in town to buy supplies, Katara finds a waterbending scroll on a ship run by pirates, which she promptly steals. Katara struggles to learn the techniques in the scroll, while Aang picks them up quickly, further frustrating Katara. Meanwhile, Zuko runs into the pirates and agrees to help them find the scroll, and subsequently Aang. They soon find and capture Aang, Katara, and Sokka, but Sokka turns the pirates against Zuko, and the three escape in the ensuing chaos, with Aang and Katara using their newly-learned waterbending skills to overwhelm their enemies.
+| ShortSummary    = Aang grows frantic about the comet, getting Katara to teach him her limited knowledge of Waterbending, which comes naturally for Aang, much to Katara's frustration. Later, while in town to buy supplies, Katara finds a waterbending scroll on a pirate ship, which she then steals. Katara struggles to learn the techniques in the scroll, while Aang picks them up quickly, further frustrating Katara. Meanwhile, Zuko runs into the pirates and agrees to help them find the scroll and Aang. They find and capture Aang, Katara, and Sokka, but Sokka turns the pirates against Zuko, and the three escape in the ensuing chaos, with Aang and Katara using their new waterbending skills to defeat the pirates.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -175,11 +161,11 @@ __TOC__
 | Title           = Jet
 | DirectedBy      = Dave Filoni
 | WrittenBy       = James Eagan
-| Aux2            = Dave Filoni, Miyuki Hoshikawa & Justin Ridge
+| Aux2            = {{hlist|Dave Filoni|Miyuki Hoshikawa|Justin Ridge|class=inline}}
 | OriginalAirDate = {{Start date|2005|5|6}}
 | ProdCode        = 110
 | Viewers         = 3.4<ref>{{cite web|url=https://www.newspapers.com/article/usa-today-may-2nd-2005/162893456/|title=Prime-time Nielsen ratings|date=May 11, 2005|newspaper=[[USA Today]]|page=42|location=McLean, Virginia}}</ref>
-| ShortSummary    = After stumbling into an encampment of Fire Nation troops, Aang, Katara and Sokka are rescued by a rogue teen named Jet and his group of Freedom Fighters. Jet invites the team back to their vast treehouse hideout, where the group plots out its attacks. Jet and Katara form an instant bond, but Sokka has suspicions about him, which leads the young rebel to tempt Sokka with missions. His plan fails, however, with Sokka becoming increasingly concerned about Jet's motives and true objectives after he attacks a harmless old man simply due to him being from the Fire Nation. Sokka is unable to convince Aang and Katara to believe his concerns, while Jet enlists them to help him "save" a nearby Earth Kingdom town by filling up the reservoir. That night Sokka follows Jet and discovers his real intent is to drown the village, sacrificing the lives of innocent civilians to destroy the Fire Nation garrison stationed there. The next day, after filling the reservoir faster than expected, Aang and Katara learn of Jet's true plan. After a skirmish Katara manages to freeze Jet to a tree but she and Aang are unable to prevent the reservoir from being destroyed, washing away the town. Sokka arrives on Appa, revealing he managed to evacuate the town, Earth and Fire citizens alike, with the help of the old man in time to thwart Jet's plot. 
+| ShortSummary    = Sokka, Katara, and Aang fight a group of firebenders, and are saved by a group called the Freedom Fighters, led by Jet. Sokka turns against Jet after he frames an old man for attempted assassination, which causes Aang and Katara to think him jealous. Jet tells Katara and Aang to fill a reservoir to stop the Fire Nation, and Sokka finds out that Jet plans to flood an occupied Earth Nation town with it. Jet’s friends take Sokka away, but he escapes. He evacuates the town, where the old man vouches for him. Sokka, Katara, and Aang leave on Appa.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -188,11 +174,11 @@ __TOC__
 | Title           = The Great Divide
 | DirectedBy      = Giancarlo Volpe
 | WrittenBy       = John O'Bryan
-| Aux2            = Michael Dante DiMartino, Chris Graham, Kenji Ono & Giancarlo Volpe
+| Aux2            = {{hlist|Michael Dante DiMartino|Chris Graham|Kenji Ono|Giancarlo Volpe|class=inline}}
 | OriginalAirDate = {{Start date|2005|5|20}}
 | ProdCode        = 111
 | Viewers         = 
-| ShortSummary    = The group ventures into the Great Divide, the world's largest canyon. Katara and Sokka start bickering, so Aang decides to put his diplomatic skills to the test, as the Avatar is supposed to be a conciliator and promoter of peace. He successfully solves their minor disputes, but Aang's skills are soon put to a more substantial test when two Earth Kingdom tribes, the Zhang and the Gan-Jin, who have been in a [[feud]] for over a hundred years, are forced to cross the canyon together en route to Ba Sing Se. The Gan-Jin believe that their ancient leader was robbed by the ancient Zhang leader, while the Zhang believe their leader was only trying to help and was falsely imprisoned. Aang sends Appa across with the most needy people of the two tribes, and the rest are guided by an earthbender guide across the vast, dry landscape. Along the way, they are hunted down by large and dangerous native predators called canyon crawlers — resembling a cross between a [[spider]] and a [[crocodile]]. In the end, Aang is able to end the feud by [[Noble lie|lying]] that their legends are based on a children's ball game and that their leaders were twin brothers. The two tribes travel together with the guide to the famous capital city of the Earth Kingdom, Ba Sing Se.
+| ShortSummary    = The group ventures into the Great Divide, the world's largest canyon. Katara and Sokka start bickering, so Aang decides to put his diplomatic skills to the test, as the Avatar is supposed to be a conciliator and promoter of peace. He successfully solves their minor disputes, but Aang's skills are soon put to a more substantial test when two Earth Kingdom tribes, the Zhang and the Gan-Jin, who have been in a feud for over a hundred years, are forced to cross the canyon together en route to Ba Sing Se. The Gan-Jin believe that their ancient leader was robbed by the ancient Zhang leader, while the Zhang believe their leader was only trying to help and was falsely imprisoned. The tribes are guided by an earthbender guide across the vast, dry landscape. Along the way, they are hunted down by large native predators called canyon crawlers. In the end, Aang is able to end the feud by [[Noble lie|lying]] that their legends are based on a children's ball game and that their leaders were twin brothers. The two tribes travel together with the guide to the famous capital city of the Earth Kingdom, Ba Sing Se.
 | LineColor       = 3A5892
 }}
 {{Episode list/sublist|Avatar: The Last Airbender season 1
@@ -201,7 +187,7 @@ __TOC__
 | Title           = The Storm
 | DirectedBy      = Lauren MacMullan
 | WrittenBy       = Aaron Ehasz
-| Aux2            = Jerry Langford, Lauren MacMullan & Ethan Spaulding
+| Aux2            = {{hlist|Jerry Langford|Lauren MacMullan|Ethan Spaulding|class=inline}}
 | OriginalAirDate = {{Start date|2005|6|3}}
 | ProdCode        = 112
 | Viewers         = 
@@ -213,8 +199,8 @@ __TOC__
 | EpisodeNumber2  = 13
 | Title           = The Blue Spirit
 | DirectedBy      = Dave Filoni
-| WrittenBy       = Michael Dante DiMartino & Bryan Konietzko
-| Aux2            = Michael Dante DiMartino, Ian Graham, Bryan Konietzko,<br />Anthony Lioi & Bobby Rubio
+| WrittenBy       = {{hlist|Michael Dante DiMartino|Bryan Konietzko|class=inline}}
+| Aux2            = {{hlist|Michael Dante DiMartino|Ian Graham|Bryan Konietzko|Anthony Lioi|Bobby Rubio|class=inline}}
 | OriginalAirDate = {{Start date|2005|6|17}}
 | ProdCode        = 113
 | Viewers         = 
@@ -226,8 +212,8 @@ __TOC__
 | EpisodeNumber2  = 14
 | Title           = The Fortuneteller
 | DirectedBy      = Dave Filoni
-| WrittenBy       = Aaron Ehasz & John O'Bryan
-| Aux2            = Dave Filoni, Ian Graham, Miyuki Hoshikawa & Justin Ridge
+| WrittenBy       = {{hlist|Aaron Ehasz|John O'Bryan|class=inline}}
+| Aux2            = {{hlist|Dave Filoni|Ian Graham|Miyuki Hoshikawa|Justin Ridge|class=inline}}
 | OriginalAirDate = {{Start date|2005|9|23}}
 | ProdCode        = 114
 | Viewers         = 
@@ -240,7 +226,7 @@ __TOC__
 | Title           = Bato of the Water Tribe
 | DirectedBy      = Giancarlo Volpe
 | WrittenBy       = Ian Wilcox
-| Aux2            = Chris Graham, Kenji Ono, Bobby Rubio & Giancarlo Volpe
+| Aux2            = {{hlist|Chris Graham|Kenji Ono|Bobby Rubio|Giancarlo Volpe|class=inline}}
 | OriginalAirDate = {{Start date|2005|10|7}}
 | ProdCode        = 115
 | Viewers         = 
@@ -253,7 +239,7 @@ __TOC__
 | Title           = The Deserter
 | DirectedBy      = Lauren MacMullan
 | WrittenBy       = Tim Hedrick
-| Aux2            = Dean Kelly, Jerry Langford, Lauren MacMullan & Ethan Spaulding
+| Aux2            = {{hlist|Dean Kelly|Jerry Langford|Lauren MacMullan|Ethan Spaulding|class=inline}}
 | OriginalAirDate = {{Start date|2005|10|21}}
 | ProdCode        = 116
 | Viewers         = 3.0<ref>{{cite web|url=https://www.newspapers.com/article/usa-today-october-17th-2005/162938826/|title=Prime-time Nielsen ratings|date=October 26, 2005|newspaper=[[USA Today]]|page=43|location=McLean, Virginia}}</ref>
@@ -266,7 +252,7 @@ __TOC__
 | Title           = The Northern Air Temple
 | DirectedBy      = Dave Filoni
 | WrittenBy       = Elizabeth Welch
-| Aux2            = Dave Filoni, Ian Graham, Miyuki Hoshikawa & Justin Ridge
+| Aux2            = {{hlist|Dave Filoni|Ian Graham|Miyuki Hoshikawa|Justin Ridge|class=inline}}
 | OriginalAirDate = {{Start date|2005|11|4}}
 | ProdCode        = 117
 | Viewers         = 
@@ -279,7 +265,7 @@ __TOC__
 | Title           = The Waterbending Master
 | DirectedBy      = Giancarlo Volpe
 | WrittenBy       = Michael Dante DiMartino
-| Aux2            = Chris Graham, Kenji Ono, Bobby Rubio & Giancarlo Volpe
+| Aux2            = {{hlist|Chris Graham|Kenji Ono|Bobby Rubio|Giancarlo Volpe|class=inline}}
 | OriginalAirDate = {{Start date|2005|11|18}}
 | ProdCode        = 118
 | Viewers         = 
@@ -297,24 +283,24 @@ __TOC__
 | DirectedBy_2     = Dave Filoni
 | WrittenBy_1      = John O'Bryan
 | WrittenBy_2      = Aaron Ehasz
-| Aux2_1           = Oreste Canestrelli, Dean Kelly, Lauren MacMullan & Ethan Spaulding
-| Aux2_2           = Dave Filoni, Ian Graham, Miyuki Hoshikawa & Justin Ridge
+| Aux2_1           = {{hlist|Oreste Canestrelli|Dean Kelly|Lauren MacMullan|Ethan Spaulding|class=inline}}
+| Aux2_2           = {{hlist|Dave Filoni|Ian Graham|Miyuki Hoshikawa|Justin Ridge|class=inline}}
 | OriginalAirDate  = {{Start date|2005|12|2}}
 | ProdCode_1       = 119
 | ProdCode_2       = 120
 | Viewers         = 3.6<ref>{{cite web|url=https://www.newspapers.com/article/usa-today-november-28th-2005/162939248/|title=Prime-time Nielsen ratings|date=December 7, 2005|newspaper=[[USA Today]]|page=44|location=McLean, Virginia}}</ref>
 | ShortSummary     = '''Part 1''': Some time later Katara has developed into Master Pakku's star pupil, earning her his highest praises. Sokka and Yue spend more time together including a ride on Appa, during which Sokka notices a storm of soot, a sign of an impending Fire Navy raid. As the tribe prepares for battle, the chief asks for volunteers for a dangerous mission, to which Sokka immediately agrees. As Zhao's armada closes in, Iroh meets with Zuko in disguise as a Fire Nation guard, as he tells Iroh that he's working on a plan of his own. As the Northern tribe takes up battle stations, the raid begins. Aang and Appa work to help disable the lead ship, but are overwhelmed at the size of the fleet that follows. In preparation for the chief's secret mission of infiltrating the Fire Navy, Sokka clashes with a Northern soldier named Hahn before realizing he is Yue's fiancé. The chief takes Sokka off the mission and assigns him to protect Yue. As nightfall nears, Iroh warns Zhao to halt the attack as the waterbenders will draw power from the nearly-full moon. Zhao cryptically notes he is working on a solution, but agrees with Iroh for the interim. Iroh then meets up with Zuko, who plans to kayak from Zhao's ship and infiltrate the North Pole to capture Aang. He nearly drowns after choosing to free swim under the glacier to find a way in, but is able to infiltrate the city. Meanwhile, Aang and Katara are brought to a spiritual oasis at the top of the city by Yue, with Aang hoping to find the Moon and Ocean spirits for help. Aang begins to meditate in front of a koi pond with two fish circling each other, and when he realizes they resemble Yin and Yang he crosses into the spirit world. Zuko arrives shortly after and battles with Katara until sunrise, when he overpowers her and escapes with Aang's body as the Fire Nation resumes the attack.
-----
+
 '''Part 2''': Zuko struggles to find shelter for himself and Aang in the frozen tundra, while Sokka, Katara and Yue search for them, as the Fire Nation forces assault the city. In the spirit world, Roku contacts Aang and tells him that the ocean and moon spirits crossed over to the mortal world long ago, and that only one spirit is old enough to remember: Koh the Face-Stealer. Aang must show no emotion or expression at all when meeting with him, or else his face will be stolen off of his head. Back in the physical world, Zhao informs Iroh of his grand plan: While serving in the Earth Kingdom as a young lieutenant, Zhao discovered a secret underground library that gave him the identity of the moon spirit's mortal form, with Zhao viewing it as his destiny to kill it. Aang learns from Koh that the spirits' names are Tui and La, "Push and pull", and that they are in great danger. Aang figures out the Koi fish are the spirits, and quickly heads back to the physical world, coincidentally leading Katara, Sokka, and Yue right to his body. Zuko is quickly defeated, but Aang chooses to save him. As they fly back, Zhao captures Tui, the moon spirit, causing a [[lunar eclipse]] and the waterbenders to lose their bending. Aang and Iroh both warn Zhao that the entire world depends on the balance of the moon and ocean, including the Fire Nation. Zhao initially relents, but then attacks in a fit of rage, killing the spirit and darkening the moon completely. Iroh furiously attacks Zhao and his guards, as Zhao quickly flees. Aang enters the Avatar State and, merging with the ocean spirit, decimates the Fire Nation armada by forming a massive spiritual projection. Zuko fights Zhao in retaliation for the assassination attempt, while Iroh remains to try and revive the moon spirit. He recognizes that Yue was touched by the moon spirit, by her snow-white hair. Yue confirms this as the moon spirit saved her life when she was born ill. Yue gives back the spark of life, sacrificing herself. She assumes the form of the moon spirit and gives Sokka a final kiss goodbye. Zhao is dragged underwater to his demise{{efn|Zhao was revealed to be alive but trapped in the Spirit World in ''[[The Legend of Korra]]''}} by the ocean spirit in retaliation for slaying the moon spirit, arrogantly refusing to accept Zuko's help. Pakku anoints Katara as Aang's new waterbending master as the group contemplates their next move, while Ozai assigns Azula, Zuko's younger sister, to hunt down Iroh and Zuko for their treacherous actions at the North Pole.
 | LineColor        = 3A5892
 }}
 }}</onlyinclude>
 
 == Production ==
-The show was produced by [[Nickelodeon Animation Studio]] and aired on [[Nickelodeon]], both of which are owned by [[Viacom (2005–present)|Viacom]].<ref name="VarietyReview1" /> The show's executive producers were co-creators Michael Dante DiMartino and Bryan Konietzko, who worked alongside head writer and co-producer Aaron Ehasz.<ref name="VarietyReview1" /><ref name="AnimationInsiderInterviewPage3" /> Eight episodes were directed by Dave Filoni.<ref name="AnimationInsiderInterviewPage3">{{cite interview |last=DiMartino |first=Michael Dante |subject-link=Michael Dante DiMartino |last2=Konietzko |first2=Bryan |subject-link2=Bryan Konietzko |interviewer=Aaron H. Bynum |title=Interview with "Avatar" Program Creators&nbsp;— Page 3 |url=http://www.animationinsider.net/article.php?articleID=841&document=3 |work=Animation Insider |type=Interview: Transcript |date=August 29, 2005 |access-date=May 29, 2008 |url-status=dead |archive-url=https://web.archive.org/web/20110927172255/http://www.animationinsider.net/article.php?articleID=841&document=3 |archive-date=September 27, 2011}}</ref> Animation directors [[Lauren MacMullan]] and [[Giancarlo Volpe]] directed five episodes each, and Anthony Lioi directed two.<ref name="VarietyReview1" /> 
+The show was produced by [[Nickelodeon Animation Studio]] and aired on [[Nickelodeon]], both of which are owned by [[Viacom (2005–present)|Viacom]].<ref name="VarietyReview1" /> The show's executive producers were co-creators Michael Dante DiMartino and Bryan Konietzko, who worked alongside [[head writer]] and co-producer Aaron Ehasz.<ref name="VarietyReview1" /><ref name="AnimationInsiderInterviewPage3" /> Eight episodes were directed by Dave Filoni.<ref name="AnimationInsiderInterviewPage3">{{cite interview |last=DiMartino |first=Michael Dante |subject-link=Michael Dante DiMartino |last2=Konietzko |first2=Bryan |subject-link2=Bryan Konietzko |interviewer=Aaron H. Bynum |title=Interview with "Avatar" Program Creators&nbsp;— Page 3 |url=http://www.animationinsider.net/article.php?articleID=841&document=3 |work=Animation Insider |type=Interview: Transcript |date=August 29, 2005 |access-date=May 29, 2008 |url-status=dead |archive-url=https://web.archive.org/web/20110927172255/http://www.animationinsider.net/article.php?articleID=841&document=3 |archive-date=September 27, 2011}}</ref> Animation directors [[Lauren MacMullan]] and [[Giancarlo Volpe]] directed five episodes each, and Anthony Lioi directed two.<ref name="VarietyReview1" /> 
 
 Episodes were written or co-written by a team of writers, which included Nick Malis, John O'Bryan, [[Matthew Hubbard]], James Eagan, Ian Wilcox, Tim Hedrick and Elizabeth Welch.<ref name="Hollywood.com Info">{{cite web |url=http://www.hollywood.com/tv/Avatar_The_Last_Airbender/5205494 |title=Avatar: The Last Airbender |work=[[Hollywood.com]] |publisher=Hollywood Media Corporation |access-date=May 30, 2008 |archive-url=https://web.archive.org/web/20080415123317/http://www.hollywood.com/tv/Avatar_The_Last_Airbender/5205494 |archive-date=15 April 2008 |url-status=live}}</ref> 
-All of the show's music was composed by "The Track Team", which consists of Jeremy Zuckerman and Benjamin Wynn,<ref name="VarietyReview1" /> who were known to the producers because Zuckerman was Konietzko's roommate.<ref name="AnimationInsiderInterviewPage4">{{cite interview |last=DiMartino |first=Michael Dante |subject-link=Michael Dante DiMartino |last2=Konietzko |first2=Bryan |subject-link2=Bryan Konietzko |interviewer=Aaron H. Bynum |title=Interview with "Avatar" Program Creators&nbsp;— Page 4 |url=http://www.animationinsider.net/article.php?articleID=841&document=4 |work=Animation Insider |type=Interview: Transcript |date=August 29, 2005 |access-date=December 12, 2013 |archive-url=https://web.archive.org/web/20110527130218/http://www.animationinsider.net/article.php?articleID=841&document=4 |archive-date=27 May 2011 |url-status=dead}}</ref>  
+All of the show's music was composed by "The Track Team", which consists of [[Jeremy Zuckerman]] and Benjamin Wynn,<ref name="VarietyReview1" /> who were known to the producers because Zuckerman was Konietzko's roommate.<ref name="AnimationInsiderInterviewPage4">{{cite interview |last=DiMartino |first=Michael Dante |subject-link=Michael Dante DiMartino |last2=Konietzko |first2=Bryan |subject-link2=Bryan Konietzko |interviewer=Aaron H. Bynum |title=Interview with "Avatar" Program Creators&nbsp;— Page 4 |url=http://www.animationinsider.net/article.php?articleID=841&document=4 |work=Animation Insider |type=Interview: Transcript |date=August 29, 2005 |access-date=December 12, 2013 |archive-url=https://web.archive.org/web/20110527130218/http://www.animationinsider.net/article.php?articleID=841&document=4 |archive-date=27 May 2011 |url-status=dead}}</ref>  
 Two alternating Korean studios<ref name="AnimationInsiderInterviewPage3" /> were enlisted to provide animation production support for the series, [[DR Movie]] and JM Animation Co.<ref name="imdb">{{cite web |url=https://www.imdb.com/title/tt0417299/companycredits |title=Avatar: The Last Airbender (2005–2008) Company Credits |website=[[IMDb]] |url-status=live |archive-url=https://web.archive.org/web/20160930175816/http://www.imdb.com/title/tt0417299/companycredits |archive-date=2016-09-30}}</ref>
 
 == Cast ==
@@ -335,10 +321,10 @@ Nickelodeon and Paramount Home Entertainment started releasing Season One DVDs i
 [[PAL]] versions of the single-disc volume sets started being released on February 19, 2007;.<ref name="Amazon.co.ukDVDReleaseRegion2Vol1" /> As with the original Region 1 [[NTSC]] DVDs, each set contains four episodes per disc.<ref name="Amazon.co.ukDVDReleaseRegion2Vol1" /><ref name="Amazon.co.ukDVDReleaseRegion2Vol2" /><ref name="Amazon.co.ukDVDReleaseRegion2Vol3" /><ref name="Amazon.co.ukDVDReleaseRegion2Vol4" /><ref name="Amazon.co.ukDVDReleaseRegion2Vol5" /> The Complete Book One Collection was released on January 26, 2009, containing all twenty episodes on five discs.<ref name="Amazon.co.ukDVDReleaseRegion26-BoxSet">{{cite web |url=https://www.amazon.co.uk/dp/B0012TMEVG |title=Avatar&nbsp;— The Last Airbender: The Complete Book 1 - Water&nbsp;— Collection (vol. 1-5) |publisher=Amazon.com, Inc. |access-date=May 30, 2008 |url-status=live |archive-url=https://web.archive.org/web/20110629011431/http://www.amazon.co.uk/dp/B0012TMEVG |archive-date=June 29, 2011}}</ref> These Region 2 releases lack the commentary tracks and other DVD extras found on the Region 1 releases.
 
 {| class="wikitable"
-!rowspan=2 | '''Volume'''
-!rowspan=2 | '''Discs'''
-!rowspan=2 | '''Episodes'''
-!colspan=3 | '''Release date'''
+!rowspan=2 | Volume
+!rowspan=2 | Discs
+!rowspan=2 | Episodes
+!colspan=3 | Release date
 |-
 ! Region 1
 ! Region 2

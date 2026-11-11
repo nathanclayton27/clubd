@@ -42,21 +42,7 @@ New characters introduced in this season include Unalaq and his children Desna a
 
 == Episodes ==
 {{See also|List of The Legend of Korra episodes{{!}}List of ''The Legend of Korra'' episodes}}
-<onlyinclude>
-{{Episode table
-| background = #664F30
-| overall    = 5
-| season     = 5
-| title      = 12
-| director   = 7
-| writer     = 11
-| aux2       = 38
-| aux2T      = Storyboarded by
-| airdate    = 12
-| prodcode   = 4
-| viewers    = 6
-| country    = U.S.
-| episodes   = 
+<onlyinclude>{{Episode table |background=#664F30 |overall=5 |season=5 |title=11 |director=10 |writer=11 |aux2=34 |airdate=12 |prodcode=5 |viewers=7 |country=U.S. |aux2T=Storyboarded by |episodes=
 {{Episode list/sublist|The Legend of Korra season 2
 | EpisodeNumber   = 13
 | EpisodeNumber2  = 1

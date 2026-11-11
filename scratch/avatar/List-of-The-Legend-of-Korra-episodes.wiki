@@ -3,7 +3,7 @@
 {{Use American English|date=March 2026}}
 {{Use mdy dates|date=February 2025}}
 
-''[[The Legend of Korra]]'' is an American [[Cartoon series|animated]] [[television series]] created by [[Michael Dante DiMartino]] and [[Bryan Konietzko]].<ref name="ToonZone">{{Cite web|last=Liu|first=Ed|date=April 19, 2010|url=http://www.toonzone.net/news/articles/33286/nickelodeon-studios-staffing-up-for-new-avatar-the-last-airbender-project|title=Nickelodeon Studios Staffing Up for New ''Avatar the Last Airbender'' Project|access-date=September 5, 2010|publisher=Toon Zone LLC|url-status=dead|archive-url=https://web.archive.org/web/20100429212500/http://www.toonzone.net/news/articles/33286/nickelodeon-studios-staffing-up-for-new-avatar-the-last-airbender-project/|archive-date=April 29, 2010}}</ref> A sequel to ''[[Avatar: The Last Airbender]]'', the series premirered on [[Nickelodeon]] on April 14, 2012.<ref name="numepisodes">{{Cite web|last=Farley|first=Christopher|date=March 8, 2011|title='The Last Airbender: Legend of Korra: The Creators Speak|url=https://blogs.wsj.com/speakeasy/2011/03/08/the-last-airbender-legend-of-korra-the-creators-speak/|access-date=March 18, 2012|publisher=Dow Jones & Company|work=SpeakEasy}}</ref> Like its predecessor, the series is set in a fictional world inspired by Asian and [[Inuit]] cultures, and inhabited by people who can manipulate the elements of [[Water (classical element)|water]], [[Earth (classical element)|earth]], [[Fire (classical element)|fire]] or [[Air (classical element)|air]] through an ability called "bending." One person, the "Avatar," has the ability to bend all four elements. Reincarnating in turn among the world's four nations, the Avatar is responsible for maintaining peace, harmony, and balance in the world. [[Korra (The Legend of Korra)|Korra]], the series' protagonist, is the next incarnation of the Avatar after [[Aang]] of ''Avatar: The Last Airbender''.<ref name=interview>{{Cite web|last=John|first=Christopher|date=July 19, 2010|url=https://blogs.wsj.com/speakeasy/2010/07/21/legend-of-korra-the-creators-of-avatar-the-last-airbender-on-the-new-spinoff/|title=''Legend of Korra'': The ''Avatar'' Creators on the New Spinoff &ndash; Speakeasy &ndash; WSJ|publisher=Blogs.wsj.com|access-date=July 23, 2010}}</ref> 52 episodes in total were produced, spanning four seasons.
+''[[The Legend of Korra]]'' is an American [[Cartoon series|animated]] [[television series]] created by [[Michael Dante DiMartino]] and [[Bryan Konietzko]].<ref name="ToonZone">{{Cite web|last=Liu|first=Ed|date=April 19, 2010|url=http://www.toonzone.net/news/articles/33286/nickelodeon-studios-staffing-up-for-new-avatar-the-last-airbender-project|title=Nickelodeon Studios Staffing Up for New ''Avatar the Last Airbender'' Project|access-date=September 5, 2010|publisher=Toon Zone LLC|url-status=dead|archive-url=https://web.archive.org/web/20100429212500/http://www.toonzone.net/news/articles/33286/nickelodeon-studios-staffing-up-for-new-avatar-the-last-airbender-project/|archive-date=April 29, 2010}}</ref> A sequel to ''[[Avatar: The Last Airbender]]'', the series premiered on [[Nickelodeon]] on April 14, 2012.<ref name="numepisodes">{{Cite web|last=Farley|first=Christopher|date=March 8, 2011|title='The Last Airbender: Legend of Korra: The Creators Speak|url=https://blogs.wsj.com/speakeasy/2011/03/08/the-last-airbender-legend-of-korra-the-creators-speak/|access-date=March 18, 2012|publisher=Dow Jones & Company|work=SpeakEasy}}</ref> Like its predecessor, the series is set in a fictional world inspired by Asian and [[Inuit]] cultures, and inhabited by people who can manipulate the elements of [[Water (classical element)|water]], [[Earth (classical element)|earth]], [[Fire (classical element)|fire]] or [[Air (classical element)|air]] through an ability called "bending." One person, the "Avatar," has the ability to bend all four elements. Reincarnating in turn among the world's four nations, the Avatar is responsible for maintaining peace, harmony, and balance in the world. [[Korra (The Legend of Korra)|Korra]], the series' protagonist, is the next incarnation of the Avatar after [[Aang]] of ''Avatar: The Last Airbender''.<ref name=interview>{{Cite web|last=John|first=Christopher|date=July 19, 2010|url=https://blogs.wsj.com/speakeasy/2010/07/21/legend-of-korra-the-creators-of-avatar-the-last-airbender-on-the-new-spinoff/|title=''Legend of Korra'': The ''Avatar'' Creators on the New Spinoff &ndash; Speakeasy &ndash; WSJ|publisher=Blogs.wsj.com|access-date=July 23, 2010}}</ref> 52 episodes in total were produced, spanning four seasons.
 
 == Series overview ==
 <!--SEASON VS. BOOK: Do not change "seasons" to "books"; currently, Nickelodeon refers to each "book" as a "season". See consensus at en.wikipedia.org/wiki/Talk:The_Legend_of_Korra/Archive_2#Book_2_and_season_2 and en.wikipedia.org/wiki/Talk:The_Legend_of_Korra#Books_vs._Seasons -->
@@ -13,7 +13,7 @@
 | auxA      = Name
 
 | color1    = #205868
-| link1     = List of The Legend of Korra episodes#Book One: Air (2012)
+| link1     = List of The Legend of Korra episodes#Season 1: Air (2012)
 | auxA1     = ''Air''
 | episodes1 = 12
 | start1    = {{Start date|2012|4|14}}
@@ -21,14 +21,14 @@
 | network1  = [[Nickelodeon]]
 
 | color2    = #664F30
-| link2     = List of The Legend of Korra episodes#Book Two: Spirits (2013)
+| link2     = List of The Legend of Korra episodes#Season 2: Spirits (2013)
 | auxA2     = ''Spirits''
 | episodes2 = 14
 | start2    = {{Start date|2013|9|13}}
 | end2      = {{End date|2013|11|22}}
 
 | color3    = #363454
-| link3     = List of The Legend of Korra episodes#Book Three: Change (2014)
+| link3     = List of The Legend of Korra episodes#Season 3: Change (2014)
 | auxA3     = ''Change''
 | episodes3 = 13
 | start3    = {{Start date|2014|6|27}}
@@ -36,7 +36,7 @@
 | network3  = Nickelodeon<br />[[Nick.com]]
 
 | color4    = #345C46
-| link4     = List of The Legend of Korra episodes#Book Four: Balance (2014)
+| link4     = List of The Legend of Korra episodes#Season 4: Balance (2014)
 | auxA4     = ''Balance''
 | episodes4 = 13
 | start4    = {{Start date|2014|10|3}}
@@ -45,19 +45,19 @@
 }}</onlyinclude>
 
 == Episodes ==
-=== Book One: ''Air'' (2012) ===
+=== Season 1: ''Air'' (2012) ===
 {{Main|The Legend of Korra season 1}}
 {{:The Legend of Korra season 1}}
 
-=== Book Two: ''Spirits'' (2013) ===
+=== Season 2: ''Spirits'' (2013) ===
 {{Main|The Legend of Korra season 2}}
 {{:The Legend of Korra season 2}}
 
-=== Book Three: ''Change'' (2014) ===
+=== Season 3: ''Change'' (2014) ===
 {{Main|The Legend of Korra season 3}}
 {{:The Legend of Korra season 3}}
 
-=== Book Four: ''Balance'' (2014) ===
+=== Season 4: ''Balance'' (2014) ===
 {{Main|The Legend of Korra season 4}}
 {{:The Legend of Korra season 4}}
 

@@ -51,21 +51,7 @@ In the two-part finale, naval reinforcements led by Iroh (the grandson of [[Zuko
 
 == Episodes ==
 {{See also|List of The Legend of Korra episodes{{!}}List of ''The Legend of Korra'' episodes}}
-<onlyinclude>
-{{Episode table
-| background = #205868
-| overall    = 5
-| season     = 5
-| title      = 12
-| director   = 11
-| writer     = 12
-| aux2       = 33
-| aux2T      = Storyboarded by
-| airdate    = 12
-| prodcode   = 4
-| viewers    = 6
-| country    = U.S.
-| episodes   = 
+<onlyinclude>{{Episode table |background=#205868 |overall=5 |season=5 |title=11 |director=10 |writer=11 |aux2=34 |airdate=12 |prodcode=5 |viewers=7 |country=U.S. |aux2T=Storyboarded by |episodes=
 {{Episode list/sublist|The Legend of Korra season 1
 | EpisodeNumber   = 1
 | EpisodeNumber2  = 1
@@ -257,7 +243,7 @@ The initial airings of ''Book One: Air'', excluding reruns and digital downloads
 == Other media ==
 === Art book ===
 {{Infobox book
-| italic title     = no
+| italic_title     = no
 | name             = The Legend of Korra — Book One: Air – The Art of the Animated Series
 | image            = Cover of The Legend of Korra, Book 1 - Air, The Art of the Animated Series.jpg
 | image_size       = 
@@ -265,19 +251,19 @@ The initial airings of ''Book One: Air'', excluding reruns and digital downloads
 | caption          = 
 | alt              = The cover image depicts Korra, with Air Temple Island in the background.
 | author           = Dave Marshall (ed.), Michael Dante DiMartino, Bryan Konietzko
-| title_orig       = 
+| original_title   = 
 | translator       = 
 | illustrator      = 
 | cover_artist     = 
-| country          = 
+| publication_place = 
 | language         = 
 | series           = 
 | subject          = 
 | genre            = 
 | publisher        = [[Dark Horse Comics]]
 | publisher2       = 
-| pub_date         = {{Start date|2013|7|23}}
-| english_pub_date = 
+| publication_date = {{Start date|2013|7|23}}
+| english_publication_date = 
 | media_type       = Hardcover
 | pages            = 
 | awards           = 

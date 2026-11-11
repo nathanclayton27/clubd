@@ -1,0 +1,387 @@
+{{Short description|American animated television series}}
+{{Use American English|date=February 2025}}
+{{Use list-defined references|date=February 2025}}
+{{Use mdy dates|date=November 2026}}
+{{Infobox television
+| image                = Avatar Seven Havens logo.svg
+| image_size           = 
+| image_upright        = 
+| image_alt            = 
+| caption              = 
+| alt_name             = 
+| native_name          = <!-- {{Infobox name module|language|title}} or {{Infobox name module|title}} -->
+| genre                = {{plainlist|
+* [[Fantasy television|Fantasy]]<ref name="PressReleaseSevenHavensAnnouncement"/><ref name="PolygonGenre">{{Cite web |url=https://www.polygon.com/avatar-seven-havens-review/ |title=Avatar: Seven Havens destroys the world to create a brilliant new series |last=Nelson |first=Sam |website=[[Polygon (website)|Polygon]] |date=October 9, 2026 |access-date=October 30, 2026}}</ref><ref>{{Cite magazine |url=https://www.hollywoodreporter.com/tv/tv-reviews/avatar-seven-havens-review-paramount-1236723958/ |title='Avatar: Seven Havens' Review: Paramount+'s Promising Addition to a Beloved Fantasy Franchise |last=Han |first=Angie |magazine=[[The Hollywood Reporter]] |date=October 9, 2026 |access-date=October 30, 2026}}</ref>
+* [[Apocalyptic and post-apocalyptic fiction|Post-apocalyptic]]<ref name="PolygonGenre"/><ref>{{Cite web |url=https://screenrant.com/avatar-seven-havens-new-genre-post-apocalyptic-cataclysm/ |title=Avatar: The Last Airbender Officially Switches Genres With New Episodes |last=Kuiper |first=El |website=[[Screen Rant]] |date=October 8, 2026 |access-date=October 30, 2026}}</ref>
+* [[Mystery fiction|Mystery]]<ref name="PressReleaseSevenHavensAnnouncement"/><ref>{{Cite web |url=https://www.cbr.com/avatar-seven-havens-michael-dimartino-lost-compare/ |title=Avatar: The Last Airbender Creator Says New Sequel Is the Franchise's Answer to 'Lost' |last=Dodge |first=John |website=[[Comic Book Resources|CBR]] |date=October 14, 2026 |access-date=October 30, 2026}}</ref>
+}}
+| creator              = {{plainlist|
+* [[Michael Dante DiMartino]] 
+* [[Bryan Konietzko]]
+}}
+| based_on             = {{basedon|''[[Avatar: The Last Airbender]]''|Bryan Konietzko|Michael Dante DiMartino}}
+| developer            = Sehaj Sethi
+| showrunner           = [[Ethan Spaulding]]
+| writer               = 
+| screenplay           = <!-- Only use without |teleplay= -->
+| teleplay             = <!-- Only use without |screenplay= -->
+| story                = 
+| director             = 
+| creative_director    = 
+| voices               = {{plainlist|
+* Saheli Khan 
+* Aishu Devan 
+* Akshay Khanna
+* Major Curda 
+* [[Sakina Jaffrey]]
+* [[Darren Barnet]]
+* [[Dianne Doan]]
+* [[Dee Bradley Baker]]
+}}
+| theme_music_composer = 
+| open_theme           = 
+| end_theme            = 
+| music                = [[Jeremy Zuckerman]]
+| country              = United States
+| language             = English
+| num_seasons          = 1<!-- Increment when new seasons begin. Only use without |num_series= -->
+| num_episodes         = 13<!-- Value is incremented when new episodes become available -->
+| num_specials         = 
+| list_episodes        = 
+| executive_producer   = {{plainlist|
+* Michael Dante DiMartino
+* Bryan Konietzko
+* Ethan Spaulding
+}}
+| producer             = Manivone Beil<!--"Produced by" or "Producer" credit, excluding low-level writers on the series' writing staff and starring actors who are granted creative producer credit, per the documentation of the template.-->
+| news_editor          = <!-- Content editor or editors of a current affairs/political show such as Newsnight. -->
+| location             = <!-- Nation the series was primarily filmed in, if different from the nation of origin. -->
+| cinematography       = 
+| animator             = <!-- Person(s) who served as animators, not animation houses, companies, etc. -->
+| editor               = <!-- Film or video editors -->
+| camera               = <!-- Either Single-camera or Multi-camera -->
+| runtime              = <!-- Reliable source required -->
+| company              = {{plainlist|
+* [[Avatar Studios]]
+* Ginormous Madman Films
+* [[Nickelodeon Animation Studio]]
+}}
+| budget               = 
+| network              = [[Paramount+]]
+| first_aired          = {{Start date|2026|10|9}}
+| last_aired           = present
+| related              = [[Avatar: The Last Airbender (franchise)|''Avatar: The Last Airbender'' franchise]]
+}}
+'''''Avatar: Seven Havens''''' is an American animated [[fantasy television|fantasy]] television series created by [[Michael Dante DiMartino]] and [[Bryan Konietzko]] for [[Paramount+]]. It serves as a sequel series to ''[[Avatar: The Last Airbender]]'' (2005–2008) and ''[[The Legend of Korra]]'' (2012–2014). It follows twin Avatar sisters Pavi and Nisha as they uncover their mysterious origins and protect the Seven Havens—cities that stand as the last strongholds of civilization after a global apocalypse seemingly caused by [[Korra]], their predecessor. 
+
+The principal voice cast includes Saheli Khan as Avatar Pavi, alongside Aishu Devan, Akshay Khanna, Major Curda, [[Sakina Jaffrey]], [[Darren Barnet]], [[Dianne Doan]], and [[Dee Bradley Baker]]. Creatives from both ''The Last Airbender'' and ''The Legend of Korra'' returned, including [[Jeremy Zuckerman]] creating original music and [[Ethan Spaulding]], who was a story artist and director on both shows, executive producing. The series is produced by [[Nickelodeon Animation Studio|Nickelodeon Animation]] and [[Avatar Studios]], and La Chouette Compagnie provides animation.
+
+The first season of ''Avatar: Seven Havens'', titled ''Book One: Survival'', premiered on October 9, 2026, on Paramount+, with the concurrent release of its first three episodes. The other ten episodes were released weekly in batches of three to four episodes through October 30. It received acclaim from critics, who complimented the characters, storytelling, and the visual style. With three additional seasons also ordered, ''Seven Havens'' is expected to conclude with its fourth season.
+
+==Setting==
+===Background===
+{{Further|Avatar: The Last Airbender|The Legend of Korra}}
+''Avatar: Seven Havens'' is set in a [[World of Avatar: The Last Airbender|fictional world]] where people previously belonged to five nations: the [[Northern Water Tribe|Northern]] and the [[Southern Water Tribe]]s, the [[Earth Kingdom]], the [[Fire Nation]], the monastic [[Air Nomads]], and the United Republic of Nations. The distinguishing aspect of the series is "bending", the ability of some people to telekinetically manipulate one of the four classical elements associated with their nation or heritage (water, earth, fire, or air). Bending is carried out by spiritual and physical exercises. The Avatar is the only person who can bend all four elements and is tasked with maintaining peace and balance in the world, using their powers and wisdom. The Avatar is constantly reincarnated and reborn.
+
+===Premise===
+''Seven Havens'' begins 225 years after the time of [[Korra]], the previous Avatar. The world has become mostly inhospitable after a cataclysm [[terraformed]] it into the perennially calamitous Harshlands. With Korra blamed for the cataclysm, the world has come to view the Avatar as an annihilator instead of as a savior. The only refuges from the Harshlands are the eponymous Seven Havens, isolated hubs of civilization created in the wake of the disaster to save humanity. In Ellora, one of the havens, 9-year-old orphaned twin sisters, Pavi and Nisha, discover that they are the Avatar, marking the first time two Avatars have existed simultaneously. Hunted by both human enemies and spirit anomalies, the twins must uncover their strange shared backstory and save the Seven Havens from looming threats.<ref name="PressReleaseSevenHavensAnnouncement" /><ref name="EWCharacters" /><ref name="PolygonSetting" />
+
+==Voice cast and characters==
+* Saheli Khan as Pavi:<ref name="EWTrailer" /> a young orphan living in the city of Ellora who learns that she is the next Avatar, after [[Korra]]. She is gentle, independent, and compassionate and initially struggles with accepting her role as the Avatar.
+* Aishu Devan as Nisha:<ref name="EWTrailer" /> Pavi's long-lost twin sister and also an Avatar like Pavi, who works with her to uncover their mysterious origins. Unlike Pavi, she is headstrong, unafraid to speak her mind, and eager to prove herself as a worthy Avatar.
+* Major Curda as Jae:<ref name="Variety2026Release" /> an airbender and Bending Brigade platoon leader in Ellora who befriends Pavi and Nisha and accompanies them on their journey. He had a boyfriend named Datu, but they broke up after Jae revealed his allegiance to the Order of the White Lotus.
+* [[Dee Bradley Baker]] as Geet and Ruhi:<ref name="EWTrailer" /> Pavi and Nisha's respective pet cat-monkeys.
+* [[Akshay Khanna (British actor)|Akshay Khanna]] as Karthik:<ref name="EWTrailer" /> an airbender commander of Ellora's Bending Brigade and Nisha's guardian. As the covert leader of the Order of the White Lotus in Ellora, he is dedicated to protecting the Avatar and guiding them on the path to become a savior instead of a destroyer.
+* [[Darren Barnet]] as Daemin:<ref name="EWTrailer" /> an easy-going waterbender who is a member of Jae's platoon and the White Lotus.
+* [[Sakina Jaffrey]] as Agam:<ref name="EWTrailer" /> a generous baker who regularly gives food to Pavi. She is later revealed to be the earthbender leader of the Faceless, a group of bandits seeking to escape Ellora's harsh laws.
+* Jennifer Sun Bell as Kayoko:<ref name="BTVA-EN">{{Cite web|title=Avatar: Seven Havens|url=https://www.behindthevoiceactors.com/tv-shows/Avatar-Seven-Havens/|website=Behind the Voice Actors|access-date=October 10, 2026|archive-date=May 17, 2026|archive-url=https://web.archive.org/web/20260517135528/https://www.behindthevoiceactors.com/tv-shows/Daemons-of-the-Shadow-Realm/|url-status=live}}</ref> the head of Ellora's council who has a long and complex history with Karthik.
+* Kimberly Woods as Uki:<ref name="BTVA-EN"/> a young firebender member of Jae's platoon.
+* Topher Ngo as Datu:<ref name="BTVA-EN" /> a non-bender member of Ellora's city guard and Jae's ex-boyfriend.
+* Nia Castro as Amow:<ref name="BTVA-EN"/> a young pickpocket on Ellora's streets who is constantly seeking opportunities to make money. 
+* [[Clyde Kusatsu]] as Bountan:<ref name="BTVA-EN"/> the elderly firebender commander of Ellora's Bending Brigade.
+* [[Andrew Kishino]] as Hamka:<ref name="BTVA-EN"/> an intimidating firebender captain of the Bending Brigade and a covert member of the White Lotus. He has a short temper and is easily annoyed by Pavi and Nisha's antics.
+* [[Zehra Fazal]] as Shilpa:<ref name="BTVA-EN"/> a calculating earthbender captain of the Bending Brigade and a covert member of the White Lotus.
+* [[Tobit Raphael|Tobit Raphael Capati]] as Ulan:<ref name="BTVA-EN"/> a young waterbender cadet of the Bending Brigade.
+* [[Anjali Bhimani]] as 
+** Tala:<ref name="BTVA-EN"/> a firebender platoon leader and Jae's friend.
+** Saumya:<ref name="BTVA-EN"/> Pavi and Nisha's mother and a metal worker.
+* Sean T. Krishnan as Pramodh:<ref name="BTVA-EN"/> Pavi and Nisha's father and a metal worker.
+* [[Xanthe Huynh]] as Lan:<ref name="BTVA-EN"/> an earthbender member of Jae's platoon.
+* [[Eric Bauza]] as:
+** Varun:<ref name="BTVA-EN"/> a disgruntled firebender of the Ellora city guard.
+** Kosal:<ref name="BTVA-EN"/> a brutish member of the Faceless.
+** Kuzon:<ref name="BTVA-EN"/> a politician from New Ba Sing Se who traveled to Ellora as an envoy during the haven's summit.
+* [[June Angela]] as Dr. Jia:<ref name="BTVA-EN"/> the caring physician of Ellora.
+* [[Gary Farmer]] as Toklo:<ref name="EWTrailer" /> Uki's grandfather.
+* [[Dianne Doan]] as Zi:<ref name="EWTrailer" /> a firebender and high-ranking member of the Faceless.
+* [[Sunkrish Bala]] as Rehan:<ref name="BTVA-EN"/> a waterbender and the leader of the White Lotus sect of New Ba Sing Se.
+* [[Tania Gunadi]] as Tanushree:<ref name="BTVA-EN"/> an earthbender and the co-leader of the White Lotus sect of Akasha.
+* Caleb Yen as Nobuo:<ref name="BTVA-EN"/> a firebender and the co-leader of the White Lotus sect of Akasha.
+* Will Choi as Ikaika:<ref name="BTVA-EN"/> a young firebending diplomat who was assigned as Akasha's envoy to Ellora.
+* [[Jennie Kwan]] as Yeshe:<ref name="BTVA-EN"/> the kind airbender Empress of Feather Mountain.
+* Cia Court as [[Korra]]:<ref>{{Cite news |url=https://knightedgemedia.com/2026/10/cia-court-will-voice-avatar-korra-in-avatar-seven-havens/ |title=Cia Court Will Voice Avatar Korra in 'Avatar: Seven Havens' |last=Williams |first=Caleb |work=Knight Edge Media |date=October 23, 2026 |access-date=October 23, 2026}}</ref> the twins' predecessor as the Avatar. She was originally voiced by [[Janet Varney]].
+
+==Episodes==
+{{Episode table|background=#4EA683|overall=|title=|director=|writer=|aux2=35|airdate=|aux2T=Storyboarded by|titleR=<ref name="PolygonEpisodeTitles" />|airdateR=<ref name="AnimationMagazineTrailer" /><ref name="Futon">{{cite web |url=http://www.thefutoncritic.com/showatch/avatar-seven-havens/listings/ |title=Shows A-Z - Avatar: Seven Havens on Paramount Plus |website=[[The Futon Critic]] |accessdate=September 29, 2026}}</ref>|episodes={{Episode list
+| EpisodeNumber   = 1
+| Title           = On the Horizon
+| DirectedBy      = Kenji Ono
+| WrittenBy       = Sehaj Sethi
+| Aux2            = {{hlist|Li Cree|Grace Liu|Sara Syed|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|9}}
+| ShortSummary    = About 200 years after Korra's time, a destructive event known as the Cataclysm has caused the Avatar to become feared and despised by humanity. Survivors formed the Seven Havens, the last strongholds of civilization in a shattered world. In the haven of Ellora, young vagrant Pavi lives alone with her cat-monkey companion, Geet. She hides from the Ellorans to avoid being seen, and is especially wary of the haven's Bending Brigade. During a festival that celebrates the end of the Avatar, she is seen earthbending by Jae, an airbender and Brigade squad leader. He pursues Pavi as she flees into the desolate Harshlands that surround Ellora, and attempts to bring her back. When Jae becomes trapped beneath rubble during a tornado, Pavi uses her airbending to save him, revealing that she is the Avatar. Jae informs his captain, Karthik, but he does not believe Jae has found the Avatar when he already has, just as Pavi meets a similar-looking girl who can also bend the four elements.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 2
+| Title           = Into the Storm
+| DirectedBy      = Jen Bennett
+| WrittenBy       = [[Chad Quandt]]
+| Aux2            = {{hlist|Alexandra Chiu|Brendan Clogher|Yasmin Khudari|Michael Chang|Milo Neuman|Bobby Alcid Rubio|Caleb Thomas|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|9}}
+| ShortSummary    = Pavi and the second Avatar, Nisha, realize that they are twin sisters, and after demonstrating their bending to each other, both regain a lost memory from when they were younger. Pavi meets Karthik, who tells her that history remembers Korra as causing the Cataclysm, but he instead believes the Avatar is a force of good, like the ones before Korra. He also notes that the Avatar has never been reincarnated as twins. When an immense sandstorm threatens Ellora, Karthik refuses to let the twins intervene, believing the world is not ready to see the Avatar again. They refuse to hide and secretly assist the Brigade in protecting the city. During the storm, the mysterious Anomaly awakens and attacks Brigade commander Bountan. It locates the twins and strikes them with a bolt of energy, causing them to see visions of a distressed young girl and a city being destroyed. When the storm passes, Karthik thanks them for stopping the Anomaly, but as he checks on Bountan, the heavily traumatized commander warns him that something is coming.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 3
+| Title           = The Order
+| DirectedBy      = Jasmine Goggins
+| WrittenBy       = M. Willis
+| Aux2            = {{hlist|Katie Mitroff|Ifesinachi Orjiekwe|Olga Ulanova|Matthew Bordenave|Michael Chang|Caleb Thomas|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|9}}
+| ShortSummary    = Karthik is appointed the new commander in Bountan's stead. Since meeting the twins, Jae has become increasingly conflicted over the world's hatred of the Avatar. While on duty, he notices Karthik entering a secret chamber and follows him. Karthik reveals that he is a member of the Order of the White Lotus, which continues to protect and train the Avatar. Nisha demonstrates an aptitude for combat, but the shy and meek Pavi refuses to train. They argue over the former's acceptance of being the Avatar and the latter's rejection of it, leading Pavi to run away. While searching for her, Jae and Nisha notice a highly aggressive camodillo (camel-armadillo) rampaging through the city, its eyes glowing like the Anomaly. As they attempt to corral it, Pavi intervenes by singing a lullaby to calm the animal, which Nisha remembers as once being sung by their mother. Encouraged to recognize that she is not alone as the Avatar, Pavi returns to train with the White Lotus. Jae is inducted as a member of the Order and a teacher to the twins. Outside Ellora, masked figures observe the city.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 4
+| Title           = The Faceless
+| DirectedBy      = Kenji Ono
+| WrittenBy       = Lauren Bradley
+| Aux2            = {{hlist|Li Cree|Grace Liu|Sara Syed|Bobby Alcid Rubio|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|16}}
+| ShortSummary    = The masked figures, or the Faceless, attempt to steal Ellora's supply of grain, but are thwarted by Jae and his squad: waterbender Daemin, firebender Uki, and earthbender Lan. Karthik leaves Pavi and Nisha under Jae's supervision as they find information on their parents. They learn that Uki knows about their lullaby, but when she does not meet with her squad, Jae and the twins visit her family to find her. In Uki's room, they discover a map of Ellora marked with previous confrontations with the Faceless, and new spots where she suspects they will attack next. Jae fights off the Faceless after they open one of the haven's gates, while Pavi and Nisha attempt to save a herd of camodillos being led out of Ellora. However, they are unable to stop the Faceless from escaping, along with a kidnapped Uki. Seeing Jae overwhelmed, Karthik assigns Daemin, who is also a member of the Order, to assist him with the twins. Meanwhile, Molin, a Brigade member, informs Jae's boyfriend, Datu, that he has seen the Avatar, his eyes momentarily flashing red.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 5
+| Title           = The One Left Behind
+| DirectedBy      = Kenji Ono
+| WrittenBy       = Jennifer Cho Suhr
+| Aux2            = {{hlist|Li Cree|Grace Liu|Sara Syed|Bridget Underwood|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|16}}
+| ShortSummary    = News of the Avatar in Ellora sows distrust in the Brigade. Karthik confines Pavi and Nisha to the Order's compound and leaves to make a public address with chancellor Kayoko. Jae and Daemin attempt to investigate the source of anti-Avatar messages written throughout the city. Noticing that they are written in blue, Jae races to find Datu, who had blue ink on his hands previously. During Kayoko's address, Molin threatens her into admitting that the Avatar is in Ellora, while an uneased Datu explains that they merely want the truth. Before he can describe the twins' appearance, Karthik silences and has Molin arrested. Pavi and Nisha sneak into Karthik's office, where they discover a hidden vault containing artefacts of the old world. Nisha discovers a bracelet, the same as Pavi's brooch, that she suddenly remembers wearing when Karthik found her. After the twins narrowly avoid being seen by Kayoko, they confront Karthik, who admits that he received a message from their parents. When he arrived to the meeting spot after a sandstorm, he only found Nisha. Later on, Karthik radios a different White Lotus sect in another haven, Akasha, that news of the Avatar's return is spreading.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 6
+| Title           = Night of the Afflicted
+| DirectedBy      = Jen Bennett
+| WrittenBy       = Peter H. Lee
+| Aux2            = {{hlist|Alexandra Chiu|Brendan Clogher|Yasmin Khudari|Bobby Rubio|Caleb Thomas|Bridget Underwood|Olga Ulanova|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|16}}
+| ShortSummary    = Since the Anomaly's awakening, red crystals have grown where it vanished, and numerous Ellorans have become afflicted by its nature, becoming excessively fearful. After Pavi's training is hindered by [[phantom limb]] pain, she and Nisha visit a doctor. She learns that, contrary to her belief that she was born without one leg, it was instead amputated. Karthik visits Bountan among the afflicted for advice, but the twins find him. In his afflicted state, Molin sees them as nightmarish figures and causes the others to rise up in fear. After Karthik fends off an attack by Bountan, the afflicted attempt to escape the hospital. Attracted by their collective fear, the Anomaly reappears and attacks, but Pavi and Nisha are able to bend its energy to drive it away, causing them to see a vision of their parents. Later, Pavi receives a new prosthetic leg. Meanwhile, restless from being overworked and fearful of the Faceless' attacks, much of the Brigade confront Kayoko. After diffusing the tension, Jae privately speaks with her, saying that Ellora cannot support itself as it stands. Kayoko relents and radios the other havens for help.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 7
+| Title           = What Lies Beneath
+| DirectedBy      = Jasmine Goggins
+| WrittenBy       = M. Willis
+| Aux2            = {{hlist|Katie Mitroff|Ifesinachi Orjiekwe|Olga Ulanova|Bobby Alcid Rubio|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|23}}
+| ShortSummary    = Jae attempts to teach the twins meditation, but they find it unhelpful. Pavi believes she can regain her memories by connecting with the Anomaly. Upon touching the crystal that formed where they last fought, it reveals an underground chamber. The twins and Jae find a video recording from the old world depicting Korra and [[Asami Sato]], and a Pro-Bending locker room with Avatar memorabilia. Jae discovers the Faceless' hideout and encounters Uki, who reveals that she staged her kidnapping and joined the Faceless due to her dissatisfaction with life in the Brigade. The twins locate the Anomaly, but it possesses them and forces them to witness a memory of Korra destroying Republic City. Jae and the twins are captured by the Faceless and brought to their leader, the Faceless Queen. When she attempts to execute Jae, the Anomaly appears and destroys the hideout. After leading Jae and the twins to safety, Uki tells Pavi that her lullaby is from the Eastern Outskirts. The Faceless Queen attacks them again, but the twins restrain her. As they head home with her in custody, envoys from the other havens approach Ellora.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber_1 = 8
+| EpisodeNumber_2 = 9
+| Title           = The Envoys
+| DirectedBy_1    = {{hlist|Jen Bennett|Michael Chang|class=inline}}
+| DirectedBy_2    = Jasmine Goggins
+| WrittenBy_1     = Grant Jossi
+| WrittenBy_2     = Lauren Bradley
+| Aux2_1          = {{hlist|Michael Chang|Alexandra Chiu|Yasmin Khudari|Matthew Bordenave|Paulene Phouybanhdyt|class=inline}}
+| Aux2_2          = {{hlist|Katie Mitroff|Ifesinachi Orjiekwe|Olga Ulanova|Alexandra Chiu|Sara Syed|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|23}}
+| ShortSummary    = {{Itcol|Part 1}} Kayoko attempts to threaten the Faceless Queen, Zi, into revealing her hideout, but she is unintimidated. Delegates from New Ba Sing Se, Akasha, and Feather Mountain arrive for a summit. Karthik meets with the other Head Lotuses, who confront him about his lack of reports regarding Nisha's progress. Overhearing them, Nisha wants Pavi to join her as the Avatar, but Pavi instead wishes to locate their parents, leading to another argument. Pavi leaves for the Eastern Outskirts, while Nisha meets with the White Lotus to be trialed on her abilities. However, she is deemed insufficiently skilled at controlling her emotions and is ordered to leave Ellora and Karthik to train further, leading Nisha to run away in distress. Pavi is able to discover her parents' identities by matching the sigil on her brooch to documents from a jewelry shop. During the summit, Jae convinces the delegates to have the havens united with the singular goal of survival. However, he notices a disguised Uki and leaves to confront her, only to be attacked by the rest of the Faceless. The true Faceless Queen, Agam, appears before Kayoko and the delegates. {{hr}} {{Itcol|Part 2}} Revealing her resentment towards Ellora's benders being conscripted into the Brigade, Agam explains that the Faceless will cross the Harshlands to the disconnected haven of Republic Forest, where she believes they will live peacefully. She gives the Brigade members a chance to join them; already resentful of Ellora's ideology and Kayoko, many of them do. Nisha confronts Agam, and in the process reveals herself as the Avatar, frightening everyone around her. As the Faceless escape, the Anomaly reappears. Karthik arrives to stop it, but Nisha reveals his knowledge of her as the Avatar to Kayoko. Nisha fails to stop the Anomaly, and Pavi lures it back underground, where she successfully banishes it. Karthik and his comrades defend Nisha but are overwhelmed and arrested, though not before he pushes Nisha to safety. Jae claims he was tricked into aiding them, and Kayoko makes him commander. After the other havens withdraw their support, Kayoko orders Ellora to be locked down, all benders to be conscripted, and the Avatar captured as Nisha flees into the Harshlands.
+| LineColor       = 4EA683
+| NumParts        = 2
+}}
+{{Episode list
+| EpisodeNumber   = 10
+| Title           = Ghosts and Spirits
+| DirectedBy      = Kenji Ono
+| WrittenBy       = Jennifer Cho Suhr
+| Aux2            = {{hlist|Li Cree|Grace Liu|Sara Syed|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|30}}
+| ShortSummary    = While searching for information about her parents' sigil, Pavi flees Ellora when the Brigade also targets her for being the Avatar's sister. She avoids getting caught by Jae and Lan and flees into the Harshlands on Geet. After finding the tree that matches her sigil, she unearths her childhood home beneath the sand and relives happier moments from her childhood. Elsewhere, Nisha attempts to meditate, in the hopes of connecting with Pavi to find her, but she instead summons a spirit that guides her to an Anomaly crystal she remembers. Upon touching it, she sees the full memory of being forcibly separated from Pavi and abandoned by her parents. Her anguish alerts Pavi, and after finding one another, the twins reconcile. When asked about what caused her pain, however, Nisha lies about the memory. They are then caught in the middle of a sandstorm, but are unexpectedly rescued by Agam, who insists that she can help them. She leads them to the Faceless' new hideout, but they are unknowingly spotted by Elloran guards.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 11
+| Title           = Battle of the Ruins
+| DirectedBy      = Michael Chang
+| WrittenBy       = Peter H. Lee
+| Aux2            = {{hlist|Michael Chang|Alexandra Chiu|Yasmin Khudari|Bobby Alcid Rubio|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|30}}
+| ShortSummary    = Agam gives the twins a place among the Faceless, who accept Nisha as the Avatar. Still frightened by her memory, however, Nisha claims her bending has been lost. Agam lectures the twins about chakras and explains that the first, the Root Chakra, involves fear. Jae discovers the White Lotus are imprisoned in the Faceless' former hideout, revealed to be an abandoned facility built to contain the Anomaly's energy. Kayoko plans to use it against the Faceless' new hideout, located in the ruins outside Ellora. When Pavi reveals her fear of being seen as the Avatar, Nisha confides her own fear of losing her, and they support each other. Jae finds and reconciles with them, just as Kayoko attacks the hideout. Agam and the twins hold back the flowing energy, while the Faceless are ambushed and arrested by Elloran forces. The Anomaly reappears and strikes the twins, causing Pavi to see the memory of their parents. The twins are rescued by their cat-monkeys, while Jae saves Agam. Forming a truce, he pretends to arrest Agam and brings her to Kayoko, while the Anomaly manifests itself as an expanding dome of energy.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 12
+| Title           = The Dome
+| DirectedBy      = Jasmine Goggins
+| WrittenBy       = Sehaj Sethi
+| Aux2            = {{hlist|Katie Mitroff|Ife Orjiekwe|Olga Ulanova|Caleb Thomas|Aeri Yoon|Grace Liu|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|30}}
+| ShortSummary    = The twins find themselves back in Ellora, but the haven is threatened by the approaching energy dome, due to Kayoko's refusal to evacuate. Despite knowing only they can stop it, Nisha refuses to let Pavi help bend its energy, unwilling to let her see the memory. She connects with the dome and halts its progress, but is spotted by Kayoko; believing she is controlling it, she orders the Ellorans to attack them. The Faceless and White Lotus members are freed by Jae and Lan and fight off the remaining Brigade members loyal to Kayoko; Datu ends his relationship with Jae and attacks him, but is defeated. Zi leads the Faceless out of Ellora, while Agam joins the White Lotus in assisting the twins. They fend off the angry mob until Kayoko appears, upon which Karthik orders them to surrender. He implores her to listen to reason, seeing how fearful she has become, but Kayoko rejects his pleas, disarms him and Pavi, and pulls Nisha away from the dome. It strikes Kayoko before pulling the twins inside. Karthik orders everyone to flee the haven, while Pavi and Nisha see their mother.
+| LineColor       = 4EA683
+}}
+{{Episode list
+| EpisodeNumber   = 13
+| Title           = The Root Chakra
+| DirectedBy      = {{hlist|Kenji Ono|Alexandra Chiu|class=inline}}
+| WrittenBy       = Chad Quandt
+| Aux2            ={{hlist|Li Cree|Grace Liu|Sara Syed|Paulene Phouybanhdyt|Bobby Alcid Rubio|Bridget Underwood|Olga Ulanova|class=inline}}
+| OriginalAirDate = {{Start date|2026|10|30}}
+| ShortSummary    = Inside the memory void, Pavi discovers that their parents planned to leave Nisha to the White Lotus due to her lack of control over her abilities. As Nisha ran after her family, Pavi tried to run back to her but was pulled away by their father. Afraid and anguished, Nisha invoked the Anomaly's powers and accidentally released a bolt of energy, killing their parents and causing Pavi's amputation. Seeing her as the monster everyone fears, a heartbroken Pavi attacks Nisha, forcing them out of the dome. No longer afraid of being the Avatar, Pavi challenges the Anomaly and opens her Root Chakra. She connects with the dome and redirects its energy towards the sky before finding herself in the cosmic plane of existence. There, she sees constellations of past Avatars and encounters Korra, who shows her the path to the second chakra in the haven of the Floating Isles. Nisha attempts to apologize, but Pavi rebuffs it, vowing not to be the destroyer people see her as. While Karthik consoles Nisha and the Ellorans prepare to rebuild their haven, Jae goes after Pavi, who reveals her plan to reach the Floating Isles. Jae offers to help her, and they leave Ellora together.
+| LineColor       = 4EA683
+}}}}
+
+==Production==
+===Development===
+In 2018, [[Netflix]] announced that a [[Avatar: The Last Airbender (2024 TV series)|live-action remake]] of ''[[Avatar: The Last Airbender]]'' (2005–2008) was to start production in 2019.<ref name="EWLiveAction" /><ref name="EngadgetLiveAction" /> The series' original creators, [[Michael Dante DiMartino]] and [[Bryan Konietzko]], were initially announced to be the executive producers and [[Showrunner|showrunners]].<ref name="THRLiveAction" /><ref name="DeadlineLiveAction" /> In June 2020, the creators departed the series due to creative differences.<ref name="VarietyLiveAction" /> That same year, [[Nickelodeon]] licensed the original ''The Last Airbender'' as well as ''[[The Legend of Korra]]'' (2012–2014) to Netflix, which led to a boom in popularity for both series. This success convinced Nickelodeon to rekindle their relationship with Konietzko and DiMartino and explore further opportunities.<ref name="THRBrianRobbins" /><ref name="IndieWireBrianRobbins" />
+
+In February 2021, [[Paramount Global|ViacomCBS]] announced during its annual Investor Day the formation of [[Avatar Studios]], a new division of Nickelodeon dedicated to the creation of projects based on animated television series ''Avatar: The Last Airbender'' and ''The Legend of Korra''. The series creators and executive producers Konietzko and DiMartino would serve as co-chief creative officers.<ref name="AvatarStudiosVarietyAnnouncment" /><ref name="AvatarStudiosDeadlineAnnouncement" /> In late 2024, ''Knight Edge Media'' reported that a new ''Avatar'' series following the story of the Avatar after [[Korra]] was in production at Avatar Studios. The report coincided with leaked plot details and production materials across [[social media]].<ref name="EWSevenHavensAnnouncement" /><ref name="CBRSevenHavensAnnouncement" /><ref name="KnightEdgeMediaLeaks" /> According to the leaks, the series would star 9-year-old twin earthbender sisters, with one of them being the Avatar.<ref name="KnightEdgeMediaLeaks" />[[File:Seven Havens First Look.jpg|thumb|First look image for ''Avatar: Seven Havens'' showing three of the main characters: (right to left) Pavi, Jae, and Geet|300x300px]]
+
+In February 2025, the series, titled ''Avatar: Seven Havens'', was officially announced for a two-season and 26-episode pick-up at Nickelodeon to coincide with the original series' 20th anniversary. DiMartino and Konietzko were reported to be creators and executive producers on the new series. Executive producing were [[Ethan Spaulding]] and Sehaj Sethi.<ref name="VarietySevenHavensAnnouncement" /><ref name="DeadlineSevenHavensAnnouncement" /><ref name="AnimationMagazineSevenHavensAnnouncement" /> [[Nickelodeon Animation Studio|Nickelodeon Animation]] and Avatar Studios produce.<ref name="Variety2026Release" /> A first look image of the series debuted at [[San Diego Comic-Con]] in July 2025.<ref name="CBComicCon" /> Alexandra Chiu was the supervising director for the series.<ref name="AnimationMagazineStars" />
+
+On October 9, 2026, the same day as the series premiere, at [[New York Comic Con|New York Comic-Con]], the series was renewed for a third and a fourth season.<ref name="S3+4Renewal"/> DiMartino confirmed the same month that ''Seven Havens'' would conclude after its fourth season;<ref name="IGNFinaleQuestions" /> the third and fourth seasons were already in production by the airing of the first season.<ref name="S3+4Production" />
+
+===Casting===
+In July 2026, along with the first trailer, it was revealed that the voice cast would feature Saheli Khan as Avatar Pavi, alongside Aishu Devan, Akshay Khanna, Major Curda, [[Sakina Jaffrey]], [[Darren Barnet]], [[Dianne Doan]], and [[Dee Bradley Baker]] in starring roles and supporting roles.<ref name="Variety2026Release" />
+
+===Animation, design and music===
+The animation is provided by La Chouette Compagnie, a French animation studio.<ref name="PolygonTrailer" /> According to DiMartino and Konietzko, the series' art direction was influenced by French [[Surrealism|surrealist]] artist [[Jean Giraud|Mœbius]] and 1990s anime.<ref name="CBComicCon" /> ''Avatar: Seven Havens'' music was composed by [[Jeremy Zuckerman]], who previously scored ''Avatar: The Last Airbender'' and ''The Legend of Korra'' with [[Benjamin Wynn]].<ref name="ZuckermanAnnouncement" /><ref name="KorraMusic" />
+
+==Release==
+''Avatar: Seven Havens'' premiered on October 9, 2026, on [[Paramount+]] with its first three episodes.<ref name="Variety2026Release" /><ref name="AnimationMagazineTrailer" /> The rest of the season was released in three to four episode batches from October 16 to 30.<ref name="AnimationMagazineTrailer" />  Originally set to broadcast in 2027,<ref name="VarietySevenHavensAnnouncement" /> it was announced during [[San Diego Comic-Con|San Diego Comic-Con 2026]] that series would premiere earlier on Paramount+,<ref name="Variety2026Release" /><ref name="GizmodoRelease" /><ref name="InverseRelease" /> on the same day that the ''[[Avatar Aang: The Last Airbender]]'' film was originally scheduled to release.<ref name="ColliderRelease" /><ref name="IGNRelease" /><ref name="ColldierReleaseTwo" /> The series was initially ordered for two seasons, or "books", of thirteen episodes each;<ref name="ZuckermanAnnouncement" /><ref name="VarietySevenHavensAnnouncement" /><ref name="Variety2026Release" /> the first was titled ''Survival''.<ref name="Book1&FirstEpisodeTitles" />
+
+==Reception==
+On the review aggregator website [[Rotten Tomatoes]], the series holds an approval rating of 100%, based on 21 reviews, with an average of rated reviews of 8.1/10. The website's critics consensus reads, "''Seven Havens'' embarks on a new saga with inspired storytelling, a vibrant sense of style, and remarkable characters that ultimately usher in a positive new era for ''Avatar''."<ref>{{Cite Rotten Tomatoes|id=avatar_seven_havens|type=tv|season=1|access-date=October 12, 2026|publisher_hide=y}}{{cbignore}}</ref> [[Metacritic]], which uses a weighted average, assigned a score of 80 out of 100 based on 11 critics, indicating "generally favorable" reviews.<ref>{{Cite Metacritic|id=avatar-seven-havens|type=tv|season=1|access-date=October 11, 2026|publisher_hide=y}}{{cbignore}}</ref>
+
+==References==
+{{Reflist|refs=
+
+<!-- PREMISE AND CHARACTERS -->
+
+<ref name="PressReleaseSevenHavensAnnouncement">{{Cite press release |title=Nickelodeon Announces All-New Animated Series Avatar: Seven Havens Set In The World Of Avatar: The Last Airbender |date=February 20, 2025 |publisher=[[PR Newswire]] |url=https://www.prnewswire.com/news-releases/nickelodeon-announces-all-new-animated-series-avatar-seven-havens-set-in-the-world-of-avatar-the-last-airbender-302381232.html |access-date=February 22, 2025 |url-status=live |archive-url=https://web.archive.org/web/20250220160311/https://www.prnewswire.com/news-releases/nickelodeon-announces-all-new-animated-series-avatar-seven-havens-set-in-the-world-of-avatar-the-last-airbender-302381232.html |archive-date=February 20, 2025}}</ref>
+
+<ref name="EWCharacters">{{Cite web |last=Romano |first=Nick |date=July 24, 2025 |title='Avatar: Seven Havens' first look reveals the next earthbending Avatar |url=https://ew.com/avatar-seven-havens-first-look-reveals-earthbending-avatar-mentor-11778575 |url-status=live |archive-url=https://web.archive.org/web/20250727210047/https://ew.com/avatar-seven-havens-first-look-reveals-earthbending-avatar-mentor-11778575 |archive-date=July 27, 2025 |access-date=July 27, 2025 |website=[[Entertainment Weekly]] |language=en}}</ref>
+
+<ref name="EWTrailer">{{Cite web |last=Romano |first=Nick |date=July 23, 2026 |title=Avatar: Seven Havens trailer brings a Korra cameo and an Avatar twin to sequel series |url=https://ew.com/avatar-seven-havens-trailer-brings-a-korra-cameo-and-an-avatar-twin-12025408 |access-date=July 23, 2026 |website=[[Entertainment Weekly]] |archive-url=https://web.archive.org/web/20260724005529/https://ew.com/avatar-seven-havens-trailer-brings-a-korra-cameo-and-an-avatar-twin-12025408#&bytes=1 |archive-date=July 24, 2026 |url-status=live}}</ref>
+
+<ref name="Variety2026Release">{{Cite web |last=Otterson |first=Joe |date=July 23, 2026 |title='Avatar: Seven Havens' Sets 2026 Release Date at Paramount+, Drops Apocalyptic First Teaser |url=https://variety.com/2026/tv/news/avatar-seven-havens-release-date-teaser-1236819641/ |access-date=July 23, 2026 |website=[[Variety (magazine)|Variety]] |language=en-US |archive-url=https://web.archive.org/web/20260724000915/https://variety.com/2026/tv/news/avatar-seven-havens-release-date-teaser-1236819641/ |archive-date=July 24, 2026 |url-status=live}}</ref>
+
+<ref name="PolygonSetting">{{Cite web |last=Patches |first=Matt |date=September 9, 2026 |title=Avatar's Creators Officially Reveal When 'Seven Havens' Takes Place After 'Legend Of Korra' |url=https://www.polygon.com/avatar-seven-havens-team-reveals-the-sequels-timeline-after-korra-and-much-more/ |access-date=September 11, 2026 |website=Polygon.com |language=en}}</ref>
+
+<!-- DEVELOPMENT -->
+
+<ref name="EngadgetLiveAction">{{Cite web |last=Fingas |first=Jon |date=September 18, 2018 |title='Avatar: The Last Airbender' returns as a live-action Netflix series |url=https://www.engadget.com/2018-09-18-avatar-the-last-airbender-netflix-series.html |url-status=live |archive-url=https://web.archive.org/web/20240102131424/https://www.engadget.com/2018-09-18-avatar-the-last-airbender-netflix-series.html |archive-date=January 2, 2024 |access-date=January 2, 2024 |website=Engadget |language=en-US}}</ref>
+
+<ref name="EWLiveAction">{{Cite magazine |last=Romano |first=Nick |date=September 18, 2018 |title=The 'Avatar' lives again! Live-action 'Last Airbender' series coming to Netflix |url=https://ew.com/tv/2018/09/18/avatar-the-last-airbender-series-live-action-netflix/ |url-status=live |archive-url=https://web.archive.org/web/20240102131424/https://ew.com/tv/2018/09/18/avatar-the-last-airbender-series-live-action-netflix/ |archive-date=January 2, 2024 |access-date=January 2, 2024 |magazine=[[Entertainment Weekly]] |language=en}}</ref>
+
+<ref name="THRLiveAction">{{Cite web |last=Porter |first=Rick |date=September 18, 2018 |title=Live-Action 'Avatar: The Last Airbender' Series Coming to Netflix |url=https://www.hollywoodreporter.com/live-feed/live-action-avatar-last-airbender-series-coming-netflix-1144920 |url-status=live |archive-url=https://web.archive.org/web/20200808035547/https://www.hollywoodreporter.com/live-feed/live-action-avatar-last-airbender-series-coming-netflix-1144920 |archive-date=August 8, 2020 |access-date=August 12, 2020 |website=[[The Hollywood Reporter]] |language=en}}</ref>
+
+<ref name="DeadlineLiveAction">{{Cite web |last=Hipes |first=Patrick |date=September 18, 2018 |title='Avatar: The Last Airbender' Live-Action Series In Works At Netflix |url=https://deadline.com/2018/09/avatar-the-last-airbender-live-action-series-netflix-1202467089/ |url-status=live |archive-url=https://web.archive.org/web/20191212235529/https://deadline.com/2018/09/avatar-the-last-airbender-live-action-series-netflix-1202467089/ |archive-date=December 12, 2019 |access-date=August 12, 2020 |website=[[Deadline Hollywood]] |language=en}}</ref>
+
+<ref name="VarietyLiveAction">{{Cite web |last=Otterson |first=Joe |date=August 12, 2020 |title='Avatar: The Last Airbender' Creators Exit Netflix Live-Action Adaptation |url=https://variety.com/2020/tv/news/avatar-the-last-airbender-netflix-creators-exit-1234732982/ |url-status=live |archive-url=https://web.archive.org/web/20200812182723/https://variety.com/2020/tv/news/avatar-the-last-airbender-netflix-creators-exit-1234732982/ |archive-date=August 12, 2020 |access-date=August 12, 2020 |website=[[Variety (magazine)|Variety]] |language=en}}</ref>
+
+<ref name="THRBrianRobbins">{{Cite web |last=Goldberg |first=Lesley |date=July 12, 2021 |title='Fairly OddParents' Live-Action Series, 'Blue's Clues' Movie Highlight Nickelodeon's Global Push (Exclusive) |url=https://www.hollywoodreporter.com/tv/tv-news/fairly-oddparents-revival-blues-clues-movie-nickelodeon-brian-robbins-1234979714/ |url-status=live |archive-url=https://web.archive.org/web/20210712180442/https://www.hollywoodreporter.com/tv/tv-news/fairly-oddparents-revival-blues-clues-movie-nickelodeon-brian-robbins-1234979714/ |archive-date=July 12, 2021 |access-date=May 23, 2024 |website=[[The Hollywood Reporter]] |language=en-US}}</ref>
+
+<ref name="IndieWireBrianRobbins">{{Cite web |last=Sharf |first=Zack |date=July 12, 2021 |title=Netflix's 'Avatar' Boom Convinced Nickelodeon to Reunite with Creators and Expand Franchise |url=https://www.indiewire.com/features/general/avatar-netflix-success-nickelodeon-expand-franchise-1234650508/ |url-status=live |archive-url=https://web.archive.org/web/20230810191343/https://www.indiewire.com/features/general/avatar-netflix-success-nickelodeon-expand-franchise-1234650508/ |archive-date=August 10, 2023 |access-date=May 23, 2024 |website=[[IndieWire]] |language=en-US}}</ref>
+
+<ref name="AvatarStudiosVarietyAnnouncment">{{Cite web |last=Zorrilla |first=Mónica Marie |date=February 24, 2021 |title=Nickelodeon Launches Avatar Studios, Will Expand World of 'Avatar: The Last Airbender,' 'The Legend of Korra' |url=https://variety.com/2021/tv/news/avatar-last-airbender-legend-of-korra-nickelodeon-1234914149/ |url-status=live |archive-url=https://web.archive.org/web/20210313024412/https://variety.com/2021/tv/news/avatar-last-airbender-legend-of-korra-nickelodeon-1234914149/ |archive-date=March 13, 2021 |access-date=February 25, 2021 |website=[[Variety (magazine)|Variety]] |language=en-US}}</ref>
+
+<ref name="AvatarStudiosDeadlineAnnouncement">{{Cite web |last=White |first=Peter |date=February 24, 2021 |title='Avatar: The Last Airbender' Franchise To Expand With Launch Of Nickelodeon's Avatar Studios, Animated Theatrical Film In The Works |url=https://deadline.com/2021/02/avatar-the-last-airbender-franchise-expansion-launch-nickelodeons-avatar-studios-animated-theatrical-film-1234699594/ |url-status=live |archive-url=https://web.archive.org/web/20210303114605/https://deadline.com/2021/02/avatar-the-last-airbender-franchise-expansion-launch-nickelodeons-avatar-studios-animated-theatrical-film-1234699594/ |archive-date=March 3, 2021 |access-date=February 25, 2021 |website=[[Deadline Hollywood]] |language=en-US}}</ref>
+
+<ref name="EWSevenHavensAnnouncement">{{Cite magazine |last=Romano |first=Nick |date=February 20, 2025 |title='Avatar: Seven Havens' sequel series to 'Last Airbender,' 'Korra' confirms earthbender Avatar |url=https://ew.com/avatar-seven-havens-sequel-series-earthbending-avatar-11683107 |url-status=live |archive-url=https://web.archive.org/web/20250220160629/https://ew.com/avatar-seven-havens-sequel-series-earthbending-avatar-11683107 |archive-date=February 20, 2025 |access-date=February 21, 2025 |magazine=[[Entertainment Weekly]] |language=en}}</ref>
+
+<ref name="CBRSevenHavensAnnouncement">{{Cite web |last=Anderson |first=Meena Yolanda |date=February 20, 2025 |title=Everything We Know About the New Avatar: Seven Havens Series |url=https://www.cbr.com/new-avatar-seven-havens-explained/ |url-status=live |archive-url=https://web.archive.org/web/20250222055459/https://www.cbr.com/new-avatar-seven-havens-explained/ |archive-date=February 22, 2025 |access-date=February 21, 2025 |website=[[Comic Book Resources|CBR]] |language=en}}</ref>
+
+<ref name="KnightEdgeMediaLeaks">{{Cite web |last=Williams |first=Caleb |date=December 19, 2024 |title='Avatar: Seven Havens' Twin Earth Avatar Series Will Initially Be 26 Episodes Long |url=https://knightedgemedia.com/2024/12/avatar-seven-havens-twin-earth-avatar-series-will-initially-be-26-episodes-long/ |url-status=live |archive-url=https://web.archive.org/web/20250116140124/https://knightedgemedia.com/2024/12/avatar-seven-havens-twin-earth-avatar-series-will-initially-be-26-episodes-long/ |archive-date=January 16, 2025 |access-date=February 21, 2025 |website=Knight Edge Media |language=en-US}}</ref>
+
+<ref name="VarietySevenHavensAnnouncement">{{Cite web |last=Otterson |first=Joe |date=February 20, 2025 |title='Avatar' Sequel Series 'Seven Havens' Ordered at Nickelodeon, Set After 'Legend of Korra' |url=https://variety.com/2025/tv/news/avatar-last-airbender-seven-havens-animated-series-nickelodeon-1236313495/ |url-status=live |archive-url=https://web.archive.org/web/20250220190135/https://variety.com/2025/tv/news/avatar-last-airbender-seven-havens-animated-series-nickelodeon-1236313495/ |archive-date=February 20, 2025 |access-date=February 20, 2025 |website=[[Variety (magazine)|Variety]] |language=en-US}}</ref>
+
+<ref name="DeadlineSevenHavensAnnouncement">{{Cite web |last=Petski |first=Denise |date=February 20, 2025 |title='Avatar: The Last Airbender' Follow-Up Series 'Avatar: Seven Havens' Ordered By Nickelodeon From Original Series Creators |url=https://deadline.com/2025/02/avatar-the-last-airbender-follow-up-series-avatar-seven-havens-nickelodeon-1236295541/ |url-status=live |archive-url=https://web.archive.org/web/20250220160221/https://deadline.com/2025/02/avatar-the-last-airbender-follow-up-series-avatar-seven-havens-nickelodeon-1236295541/ |archive-date=February 20, 2025 |access-date=February 21, 2025 |website=[[Deadline Hollywood]] |language=en-US}}</ref>
+
+<ref name="AnimationMagazineSevenHavensAnnouncement">{{Cite web |last=Milligan |first=Mercedes |date=February 20, 2025 |title=Nickelodeon Announces 'Avatar: Seven Havens' New Animated Series from the World of 'Airbender' |url=https://www.animationmagazine.net/2025/02/nickelodeon-announces-avatar-seven-havens-new-animated-series-from-the-world-of-airbender/ |access-date=February 21, 2025 |website=[[Animation Magazine]] |language=en-US}}</ref>
+
+<ref name="CBComicCon">{{Cite web |last=Valdez |first=Nick |date=July 26, 2025 |title=Avatar: Seven Havens Creators Tease '90s Anime Influences for New Sequel |url=https://comicbook.com/anime/news/avatar-seven-havens-anime-influences-tease/ |url-status=live |archive-url=https://web.archive.org/web/20250727220111/https://comicbook.com/anime/news/avatar-seven-havens-anime-influences-tease/ |archive-date=July 27, 2025 |access-date=July 27, 2025 |website=[[ComicBook.com]] |language=en-US}}</ref>
+
+<ref name="AnimationMagazineStars">{{cite web |last=Zahed |first=Ramin |url=https://www.animationmagazine.net/2026/03/rising-stars-of-animation-2026/ |title=Rising Stars of Animation 2026 |website=[[Animation Magazine]] |date=March 16, 2026 |access-date=March 17, 2026 |archive-url=https://web.archive.org/web/20260317173900/https://www.animationmagazine.net/2026/03/rising-stars-of-animation-2026/ |archive-date=March 17, 2026 |url-status=live}}</ref>
+
+<ref name="PolygonTrailer">{{cite web |last=Patches |first=Matt |url=https://www.polygon.com/avatar-seven-havens-trailer-sdcc-2026/ |title=First official Avatar: Seven Havens trailer could not be more exciting for Airbender fans |website=[[Polygon (website)|Polygon]] |date=July 23, 2026 |access-date=July 23, 2026 |archive-url=https://web.archive.org/web/20260724015154/https://www.polygon.com/avatar-seven-havens-trailer-sdcc-2026/ |archive-date=July 24, 2026 |url-status=live}}</ref>
+
+<ref name="S3+4Renewal">{{cite web|last=Otterson|first=Joe|date=October 9, 2026|title='Avatar: Seven Havens' Renewed for Seasons 3 and 4 at Paramount+|url=https://variety.com/2026/tv/news/avatar-seven-havens-renewed-season-3-4-paramount-1236906480/|website=[[Variety (magazine)|Variety]]|access-date=October 9, 2026}}</ref>
+
+<ref name="IGNFinaleQuestions">{{cite web |url=https://www.ign.com/articles/avatar-seven-havens-finale-showrunners-ending-explained-biggest-questions |title=Avatar: Seven Havens Showrunners Address Your Biggest Finale Burning Questions |website=[[IGN]] |first=Alex |last=Zalben |date=October 31, 2026 |access-date=November 4, 2026}}</ref>
+
+<ref name="S3+4Production">{{cite web |url=https://comicbook.com/anime/feature/avatar-seven-havens-producer-confirms-season-3-4-are-already-in-production-exclusive/ |title=Avatar: Seven Havens Producer Confirms Season 3 & 4 Are Already in Production (Exclusive) |website=[[Comicbook.com]] |first=Nick |last=Valdez |date=October 13, 2026 |access-date=November 4, 2026}}</ref>
+
+<!-- MUSIC -->
+
+<ref name="ZuckermanAnnouncement">{{Cite web |date=July 24, 2025 |title=Jeremy Zuckerman to Return for Nickelodeon's 'Avatar: Seven Havens' |url=https://filmmusicreporter.com/2025/07/24/jeremy-zuckerman-to-return-for-nickelodeons-avatar-seven-havens/ |url-status=live |archive-url=https://web.archive.org/web/20250727205855/https://filmmusicreporter.com/2025/07/24/jeremy-zuckerman-to-return-for-nickelodeons-avatar-seven-havens/ |archive-date=July 27, 2025 |access-date=July 27, 2025 |website=Film Music Reporter |language=en-US}}</ref>
+
+<ref name="KorraMusic">{{cite news |last=Schick |first=Michal |date=September 23, 2013 |title=SeptBender Interview: Jeremy Zuckerman discusses music-bending on 'The Legend of Korra' |url=http://www.hypable.com/2013/09/23/the-legend-of-korra-jeremy-zuckerman-track-team-interview/ |access-date=September 23, 2013 |newspaper=Hypable}}</ref>{{better source needed|date=July 2026}}
+
+<!-- RELEASE -->
+
+<ref name="GizmodoRelease">{{cite web |last=Eddy |first=Cheryl |url=https://gizmodo.com/avatar-seven-havens-teaser-trailer-sdcc-2026-2000789462 |title=The First 'Avatar: Seven Havens' Teaser Reveals Humanity's New Hope |website=[[Gizmodo]] |date=July 23, 2026 |access-date=July 23, 2026 |archive-url=https://web.archive.org/web/20260723213928/https://gizmodo.com/avatar-seven-havens-teaser-trailer-sdcc-2026-2000789462 |archive-date=July 23, 2026 |url-status=live}}</ref>
+
+<ref name="InverseRelease">{{cite web |last=Scott |first=Lyvie |url=https://www.inverse.com/entertainment/avatar-seven-havens-release-date-revealed |title=Surprise! Avatar: Seven Havens Premieres This October |website=[[Inverse (website)|Inverse]] |date=July 23, 2026 |access-date=July 23, 2026 |archive-url=https://web.archive.org/web/20260723213928/https://gizmodo.com/avatar-seven-havens-teaser-trailer-sdcc-2026-2000789462 |archive-date=July 23, 2026 |url-status=live}}</ref>
+
+<ref name="ColliderRelease">{{cite web |last=Blevins |first=Adam |url=https://collider.com/avatar-the-last-airbender-spin-off-seven-havens-release-date-october-9-2026/ |title=A New Era for 'Avatar: The Last Airbender' Begins in First Trailer for Sequel Series |website=[[Collider (website)|Collider]] |date=July 23, 2026 |access-date=July 23, 2026 |archive-url=https://web.archive.org/web/20260723223028/https://collider.com/avatar-the-last-airbender-spin-off-seven-havens-release-date-october-9-2026/ |archive-date=July 23, 2026 |url-status=live |quote=Paramount's animated sequel film...online earlier this year, forcing the studio to push the release date forward from October to July.}}</ref>
+
+<ref name="IGNRelease">{{cite web |last=Yin-Poole |first=Wesley |url=https://www.ign.com/articles/avatar-seven-havens-gets-paramount-release-date-and-teaser-trailer-comic-con-2026 |title=Avatar: Seven Havens Gets Paramount+ Release Date and Teaser Trailer--Comic Con 2026 |website=[[IGN]] |date=July 23, 2026 |access-date=July 23, 2026 |archive-url=https://web.archive.org/web/20260724014843/https://www.ign.com/articles/avatar-seven-havens-gets-paramount-release-date-and-teaser-trailer-comic-con-2026 |archive-date=July 24, 2026 |url-status=live |quote=The Avatar: Seven Havens news comes just days before Avatar Aang: The Last Airbender — once due out in theaters on October 9 — hits Paramount+.}}</ref>
+
+<ref name="ColldierReleaseTwo">{{cite web |last=O'Rourke |first=Ryan |url=https://collider.com/avatar-aang-the-last-airbender-limited-theatrical-release-july-24-2026/ |title='Avatar: The Last Airbender' Movie Scores Last-Minute Theatrical Release |website=[[Collider (website)|Collider]] |date=July 15, 2026 |access-date=July 23, 2026 |archive-url=https://web.archive.org/web/20260716025328/https://collider.com/avatar-aang-the-last-airbender-limited-theatrical-release-july-24-2026/ |archive-date=July 16, 2026 |url-status=live |quote=The film...faced numerous delays, originally intending to bend its way into theaters in October 2025. Once it settled on an October 9, 2026, date...Paramount controversially decided to pull the big-screen release}}</ref>
+
+<ref name="AnimationMagazineTrailer">{{Cite web |last=Milligan |first=Mercedes |date=September 10, 2026 |title='Avatar: Seven Havens' Series Reveals Official Trailer |url=https://www.animationmagazine.net/2026/09/avatar-seven-havens-series-reveals-official-trailer/ |access-date=September 11, 2026 |website=Animation Magazine |language=en-US}}</ref>
+
+<ref name="Book1&FirstEpisodeTitles">{{cite web |url=https://bleedingcool.com/tv/avatar-seven-havens-book-one-survival-episode-titles-revealed/ |title=Avatar: Seven Havens: Book One: "Survival" Episode Titles Revealed |work=Bleeding Cool |first=Ray |last=Flook |date=September 28, 2026 |accessdate=September 29, 2026}}</ref>
+
+<ref name="PolygonEpisodeTitles">{{cite web |url=https://www.polygon.com/avatar-seven-havens-episode-titles-exclusive-reveal/ |title=We've got the reveal of Avatar: Seven Havens' episode titles |work=[[Polygon (website)|Polygon]] |first=Jake |last=Kleinman |date=September 28, 2026 |accessdate=October 1, 2026}}</ref>
+}}
+
+==External links==
+*{{IMDb title}}
+
+{{Avatar: The Last Airbender}}
+{{Paramount+}}
+{{Portal bar|2020s|Animation|Television|Cartoon|United States|Speculative fiction|Fantasy|Martial Arts|LGBTQ}}
+[[Category:2020s American animated television series]]
+[[Category:2020s American children's television series]]
+[[Category:2020s American LGBTQ-related animated television series]]
+[[Category:2020s American LGBTQ-related drama television series]]
+[[Category:2020s Nickelodeon original programming]]
+[[Category:2026 American animated television series debuts]]
+[[Category:2026 English-language television series debuts]]
+[[Category:American anime-influenced animated television series]]
+[[Category:American children's animated action television series]]
+[[Category:American children's animated adventure television series]]
+[[Category:American children's animated drama television series]]
+[[Category:American children's animated fantasy television series]]
+[[Category:American martial arts television series]]
+[[Category:American sequel television series]]
+[[Category:Animated television series about twins]]
+[[Category:English-language American television shows]]
+[[Category:Fiction about discrimination]]
+[[Category:LGBTQ speculative fiction television series]]
+[[Category:Nicktoons]]
+[[Category:Paramount+ children's programming]]
+[[Category:Paramount+ original programming]]
+[[Category:Post-apocalyptic animated television series]]
+[[Category:Television shows about disability]]
+[[Category:Television shows about reincarnation]]
+[[Category:Works about twin sisters]]

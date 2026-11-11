@@ -38,21 +38,7 @@ __TOC__
 
 == Episodes ==
 {{See also|List of The Legend of Korra episodes{{!}}List of ''The Legend of Korra'' episodes}}
-<onlyinclude>
-{{Episode table
-| background = #363454
-| overall    = 5
-| season     = 5
-| title      = 12
-| director   = 11
-| writer     = 14
-| aux2       = 31
-| aux2T      = Storyboarded by
-| airdate    = 12
-| prodcode   = 4
-| viewers    = 6
-| country    = U.S.
-| episodes   = 
+<onlyinclude>{{Episode table |background=#363454 |overall=5 |season=5 |title=11 |director=10 |writer=11 |aux2=34 |airdate=12 |prodcode=5 |viewers=7 |country=U.S. |aux2T=Storyboarded by |episodes=
 {{Episode list/sublist|The Legend of Korra season 3
 | EpisodeNumber   = 27
 | EpisodeNumber2  = 1

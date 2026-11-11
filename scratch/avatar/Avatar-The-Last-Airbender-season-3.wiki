@@ -43,22 +43,8 @@ __TOC__
 
 == Episodes ==
 {{See also|List of Avatar: The Last Airbender episodes{{!}}List of ''Avatar: The Last Airbender'' episodes}}
-<onlyinclude>
-{{Episode table
-| background = #9F0D22
-| overall    = 5
-| season     = 5
-| title      = 12
-| director   = 10
-| writer     = 13
-| aux2       = 33
-| aux2T      = Storyboarded by
-| airdate    = 12
-| prodcode   = 4
-| prodcodeR  ={{efn|name=Pro-Code|Production code format is taken from episode commentary for "Sozin's Comet: The Phoenix King"}}
-| viewers    = 6
-| country    = U.S.
-| episodes   = 
+<onlyinclude>{{Episode table |background=#9F0D22 |overall=5 |season=5 |title=12 |director=10 |writer=15 |aux2=29 |aux2T=Storyboarded by |airdate=11 |prodcode=6 |viewers=7 |country=U.S.
+|prodcodeR={{efn|name=Pro-Code|Production code format is taken from episode commentary for "Sozin's Comet: The Phoenix King"}} |episodes=
 {{Episode list/sublist|Avatar: The Last Airbender season 3
 | EpisodeNumber   = 41
 | EpisodeNumber2  = 1
@@ -76,9 +62,9 @@ __TOC__
 | EpisodeNumber   = 42
 | EpisodeNumber2  = 2
 | Title           = The Headband
-| DirectedBy      = Joaquim Dos Santos
+| DirectedBy      = [[Joaquim Dos Santos]]
 | WrittenBy       = John O'Bryan
-| Aux2            = [[Joaquim Dos Santos]], Ian Graham, Seung-Hyun Oh, Kenji Ono & Tomihiro Yamahuchi
+| Aux2            = Joaquim Dos Santos, Ian Graham, Seung-Hyun Oh, Kenji Ono & Tomihiro Yamahuchi
 | OriginalAirDate = {{Start date|2007|9|28}}
 | ProdCode        = 302
 | Viewers         = <!-- Episode-specific citation REQUIRED to add viewer numbers -->
@@ -326,12 +312,12 @@ __TOC__
 }}</onlyinclude>
 
 == Production ==
-The season was produced by [[Nickelodeon Animation Studio]] and aired on [[Nickelodeon]], both of which are owned by [[Viacom (2005–2019)|Viacom]] (now [[Paramount Global]]).<ref>{{Cite web|last=Luening|first=Erich|url=http://news.cnet.com/CBS,-Viacom-in-blockbuster-merger/2100-1023_3-230674.html|title=CBS, Viacom in blockbuster merger&nbsp;— CNET News|publisher=CNET|date=September 7, 1999|access-date=December 27, 2008|url-status=live|archive-url=https://web.archive.org/web/20121024044430/http://news.cnet.com/CBS,-Viacom-in-blockbuster-merger/2100-1023_3-230674.html|archive-date=October 24, 2012}}</ref> The season's executive producers and co-creators were Michael Dante DiMartino and Bryan Konietzko, who worked alongside head writer and co-producer Aaron Ehasz.<ref name="AnimationInsiderInterviewPage3">{{Cite interview|last=DiMartino|first=Michael Dante|subject-link=Michael Dante DiMartino|last2=Konietzko|first2=Bryan|subject-link2=Bryan Konietzko|interviewer=Aaron H. Bynum|title=Interview with "Avatar" Program Creators&nbsp;— Page 3|url=http://www.animationinsider.net/article.php?articleID=841&document=3|work=Animation Insider|type=Interview: Transcript|date=August 29, 2005|access-date=May 29, 2008|url-status=dead|archive-url=https://web.archive.org/web/20080804014517/http://www.animationinsider.net/article.php?articleID=841&document=3|archive-date=August 4, 2008}}</ref> Most of the individual episodes were directed by [[Ethan Spaulding]], [[Lauren MacMullan]] and [[Giancarlo Volpe]].<ref name="TV Guide Cast">{{Cite web|url=http://www.tvguide.com/tvshows/avatar-airbender/cast/194673|title=Avatar: The Last Airbender Cast and Details|publisher=[[TV Guide (magazine)|TVGuide.com]]|access-date=November 26, 2008|archive-url=https://web.archive.org/web/20081216072355/http://www.tvguide.com/tvshows/avatar-airbender/cast/194673|archive-date=December 16, 2008|url-status=dead}}</ref> Episodes were written by a team of writers, which consisted of Aaron Ehasz, Elizabeth Welch, Tim Hedrick, and John O'Bryan, along with creators DiMartino and Konietzko.<ref name="TV Guide Cast"/>
+The season was produced by [[Nickelodeon Animation Studio]] and aired on [[Nickelodeon]], both of which are owned by [[Viacom (2005–2019)|Viacom]] (now [[Paramount Global]]).<ref>{{Cite web|last=Luening|first=Erich|url=https://www.cnet.com/tech/services-and-software/cbs-viacom-in-blockbuster-merger/|title=CBS, Viacom in blockbuster merger&nbsp;— CNET News|publisher=CNET|date=September 7, 1999|access-date=December 27, 2008|url-status=live|archive-url=https://web.archive.org/web/20121024044430/http://news.cnet.com/CBS,-Viacom-in-blockbuster-merger/2100-1023_3-230674.html|archive-date=October 24, 2012}}</ref> The season's executive producers and co-creators were Michael Dante DiMartino and Bryan Konietzko, who worked alongside head writer and co-producer Aaron Ehasz.<ref name="AnimationInsiderInterviewPage3">{{Cite interview|last=DiMartino|first=Michael Dante|subject-link=Michael Dante DiMartino|last2=Konietzko|first2=Bryan|subject-link2=Bryan Konietzko|interviewer=Aaron H. Bynum|title=Interview with "Avatar" Program Creators&nbsp;— Page 3|url=http://www.animationinsider.net/article.php?articleID=841&document=3|work=Animation Insider|type=Interview: Transcript|date=August 29, 2005|access-date=May 29, 2008|url-status=dead|archive-url=https://web.archive.org/web/20080804014517/http://www.animationinsider.net/article.php?articleID=841&document=3|archive-date=August 4, 2008}}</ref> Most of the individual episodes were directed by [[Ethan Spaulding]], [[Lauren MacMullan]] and [[Giancarlo Volpe]].<ref name="TV Guide Cast">{{Cite web|url=http://www.tvguide.com/tvshows/avatar-airbender/cast/194673|title=Avatar: The Last Airbender Cast and Details|publisher=[[TV Guide (magazine)|TVGuide.com]]|access-date=November 26, 2008|archive-url=https://web.archive.org/web/20081216072355/http://www.tvguide.com/tvshows/avatar-airbender/cast/194673|archive-date=December 16, 2008|url-status=dead}}</ref> Episodes were written by a team of writers, which consisted of Aaron Ehasz, Elizabeth Welch, Tim Hedrick, and John O'Bryan, along with creators DiMartino and Konietzko.<ref name="TV Guide Cast"/>
 
 The season's music was composed by "The Track Team", which consists of [[Jeremy Zuckerman]] and Benjamin Wynn, who were known to the show's creators because Zuckerman was Konietzko's roommate.<ref name="AnimationInsiderInterviewPage4">{{Cite interview|last=DiMartino|first=Michael Dante|subject-link=Michael Dante DiMartino|last2=Konietzko|first2=Bryan|subject-link2=Bryan Konietzko|interviewer=Aaron H. Bynum|title=Interview with "Avatar" Program Creators&nbsp;— Page 4|url=http://www.animationinsider.net/article.php?articleID=841&document=4|work=Animation Insider|type=Interview: Transcript|date=August 29, 2005|access-date=May 29, 2008|url-status=dead|archive-url=https://web.archive.org/web/20110527130218/http://www.animationinsider.net/article.php?articleID=841&document=4|archive-date=May 27, 2011}}</ref>
 
 == Cast ==
-All of the central characters generally remained the same: [[Zach Tyler Eisen]] voices [[Aang]], [[Mae Whitman]] voices [[Katara (Avatar: The Last Airbender)|Katara]], [[Jack DeSena]] voices [[Sokka]], [[Michaela Jill Murphy]] voices [[Toph Beifong]], [[Dante Basco]] voices [[Zuko]], [[Dee Bradley Baker]] voices [[Appa (Avatar: The Last Airbender)|Appa]] and [[Momo (Avatar: The Last Airbender)|Momo]],<ref name="TV Guide Cast" /> and [[Grey DeLisle]] voices [[Azula]]. 
+All of the central characters generally remained the same: [[Zach Tyler Eisen]] voices [[Avatar Aang]], [[Mae Whitman]] voices [[Katara (Avatar: The Last Airbender)|Katara]], [[Jack DeSena]] voices [[Sokka]], [[Michaela Jill Murphy]] voices [[Toph Beifong]], [[Dante Basco]] voices [[Zuko]], [[Dee Bradley Baker]] voices [[Appa (Avatar: The Last Airbender)|Appa]] and [[Momo (Avatar: The Last Airbender)|Momo]],<ref name="TV Guide Cast" /> and [[Grey DeLisle]] voices [[Azula]]. 
 
 Additionally, [[Mark Hamill]] reprises his role as Fire Lord Ozai in a greater capacity after having minor appearances throughout the [[Avatar: The Last Airbender season 1|first]] and [[Avatar: The Last Airbender season 2|second]] seasons of the series,<ref name="TV Guide Cast" />
 while [[Greg Baldwin]] now voices [[Iroh]] due to [[Mako (actor)|Mako Iwamatsu's]] death.<ref>{{Cite web|url=http://dvd.ign.com/articles/849/849365p1.html|title=Avatar: The Last Airbender - Book 3: Fire / Volume 2 Review|author=Harris, Jeffery|access-date=March 17, 2009|publisher=IGN|date=February 4, 2008|url-status=live|archive-url=https://web.archive.org/web/20081006224823/http://dvd.ign.com/articles/849/849365p1.html|archive-date=October 6, 2008}}</ref>
