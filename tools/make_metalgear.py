@@ -80,6 +80,9 @@ ROSTER = [
     ("delta", "Metal Gear Solid Δ: Snake Eater", 3,
      "The 2025 remake of MGS3 — the modern way in, if the original's age "
      "puts anyone off", 1),
+    ("master-collection-2", "Metal Gear Solid: Master Collection Vol. 2", 3,
+     "MGS4, Peace Walker and Ghost Babel in one modern box — the hours shown "
+     "are the whole bundle", 1),
 ]
 
 EXTRAS = [
@@ -96,7 +99,7 @@ EXTRAS = [
 ERAS = [
     ("msx", "The MSX era", 1987, 1997,
      "Two real games and one impostor. The MSX pair is the saga's actual "
-     "foundation, and both are on every modern collection."),
+     "foundation, and both are on Master Collection Vol. 1."),
     ("solid", "Solid", 1998, 2003,
      "The PlayStation reinvention, its expansions, and the Game Boy Color "
      "side path."),
@@ -210,7 +213,7 @@ def main():
              "it the way the audience met it; the in-universe order is for the "
              "second run."],
             ["Hours are story only.", "HowLongToBeat main-story figures, as "
-             "asked — no completionist padding. The two collections show the "
+             "asked — no completionist padding. The three collections show the "
              "whole bundle's hours, and the on-paper extras weigh nothing "
              "rather than a guess."],
             ["Tiers.", "1 is the saga spine: the MSX pair, MGS1–4, Peace "
@@ -225,8 +228,8 @@ def main():
             ["Two naming traps.", "The Game Boy Color game shipped west "
              "titled just “Metal Gear Solid” — it is Ghost Babel, a side "
              "continuity. And the NES “Metal Gear” is a compromised port; the "
-             "MSX originals are the real ones and sit on every modern "
-             "collection."],
+             "MSX originals are the real ones and sit on Master Collection "
+             "Vol. 1."],
             "Hours and dates from HowLongToBeat, collected from its own pages "
             "and verified by name.",
         ],

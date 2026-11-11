@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 74,
   "year": "1987–",
-  "blurb": "26 games and 4 extras — about 400 hours of story, 134 of it the saga spine.",
+  "blurb": "27 games and 4 extras — about 415 hours of story, 134 of it the saga spine.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -32,7 +32,7 @@
     ],
     [
       "Hours are story only.",
-      "HowLongToBeat main-story figures, as asked — no completionist padding. The two collections show the whole bundle's hours, and the on-paper extras weigh nothing rather than a guess."
+      "HowLongToBeat main-story figures, as asked — no completionist padding. The three collections show the whole bundle's hours, and the on-paper extras weigh nothing rather than a guess."
     ],
     [
       "Tiers.",
@@ -44,7 +44,7 @@
     ],
     [
       "Two naming traps.",
-      "The Game Boy Color game shipped west titled just “Metal Gear Solid” — it is Ghost Babel, a side continuity. And the NES “Metal Gear” is a compromised port; the MSX originals are the real ones and sit on every modern collection."
+      "The Game Boy Color game shipped west titled just “Metal Gear Solid” — it is Ghost Babel, a side continuity. And the NES “Metal Gear” is a compromised port; the MSX originals are the real ones and sit on Master Collection Vol. 1."
     ],
     "Hours and dates from HowLongToBeat, collected from its own pages and verified by name."
   ],
@@ -80,7 +80,7 @@
           "note": "MSX2, and the blueprint MGS1 rebuilds"
         }
       ],
-      "intro": "Two real games and one impostor. The MSX pair is the saga's actual foundation, and both are on every modern collection.",
+      "intro": "Two real games and one impostor. The MSX pair is the saga's actual foundation, and both are on Master Collection Vol. 1.",
       "open": true,
       "links": [
         {
@@ -280,7 +280,7 @@
     {
       "id": "after",
       "title": "After Kojima",
-      "sub": "2018–2025 · 3 entries · 75 hours story",
+      "sub": "2018–2026 · 4 entries · 90 hours story",
       "items": [
         {
           "id": "mgs-survive",
@@ -307,6 +307,15 @@
           "w": 12.23,
           "tier": 3,
           "note": "The 2025 remake of MGS3 — the modern way in, if the original's age puts anyone off",
+          "opt": 1
+        },
+        {
+          "id": "mgs-master-collection-2",
+          "t": "Metal Gear Solid: Master Collection Vol. 2",
+          "n": "2026",
+          "w": 15.0,
+          "tier": 3,
+          "note": "MGS4, Peace Walker and Ghost Babel in one modern box — the hours shown are the whole bundle",
           "opt": 1
         }
       ]
