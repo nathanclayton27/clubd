@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 66,
   "year": "1996–",
-  "blurb": "Six mainline RPGs, about 366 hours of story — the modern trilogy alone averages 84 hours each, and that is not a typo. The editions, the remake and the spin-offs add 560 more.",
+  "blurb": "Six mainline RPGs, about 366 hours of story — the modern trilogy alone averages 84 hours each, and that is not a typo. The editions, the remakes and the spin-offs add 560 more.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -24,11 +24,11 @@
     1,
     2
   ],
-  "paceLabel": "the editions, the remake and the spin-offs",
+  "paceLabel": "the editions, the remakes and the spin-offs",
   "notes": [
     [
       "The mainline is six games.",
-      "Revelations, the Persona 2 duology, and 3, 4 and 5 — the entries Wikipedia's own release timeline sets in bold. They are the only rows here that are not optional, because someone who has played those six has played Persona in the sense that matters. Everything else is marked optional and stays out of the finish date unless you tick the box that widens it, so a page that grew to twenty rows did not quietly rewrite what finishing this list means."
+      "Revelations, the Persona 2 duology, and 3, 4 and 5 — the entries Wikipedia's own release timeline sets in bold. They are the only rows here that are not optional, because someone who has played those six has played Persona in the sense that matters. Everything else is marked optional and stays out of the finish date unless you tick the box that widens it, so a page that grew to twenty-one rows did not quietly rewrite what finishing this list means."
     ],
     [
       "Editions are notes where the data says fold, rows where it says split.",
@@ -40,13 +40,13 @@
     ],
     [
       "What is not here.",
-      "Wikipedia's release timeline is the roster, and everything on it that has shipped is on this page. The Japan-only mobile and browser games it describes in prose but leaves off the timeline are not: Persona 3: The Night Before, Persona Ain Soph, Persona Mobile Online, the Persona 3 phone side-stories and Persona 4 The Card Battle all closed years ago, and there is nothing left to play. Persona 4 Revival, due 18 February 2027, and Persona 6, announced without a date, are not out; HowLongToBeat has a record for each and no figure, and this list refuses to guess one. Each goes on the day there is a real number to put beside it."
+      "Wikipedia's release timeline is the roster, and everything on it that has shipped is on this page. The Japan-only mobile and browser games it describes in prose but leaves off the timeline are not: Persona 3: The Night Before, Persona Ain Soph, Persona Mobile Online, the Persona 3 phone side-stories and Persona 4 The Card Battle all closed years ago, and there is nothing left to play. Persona 4 Revival, due 18 February 2027, has a row at zero hours: HowLongToBeat has a record for it and no figure yet, and this list refuses to guess one. Persona 6 is announced without a date, and goes on the day it has one."
     ],
     [
       "Hours are story only.",
-      "HowLongToBeat main-story figures — no side content, no maxed social links, no New Game Plus. They are what people report, not what a box claims, which is why Royal comes in over the game it expands and Golden and Portable come in under theirs. Every row carries a real one; nothing here was estimated, and a row whose figure fails the name-and-year check fails this build instead of shipping unweighted."
+      "HowLongToBeat main-story figures — no side content, no maxed social links, no New Game Plus. They are what people report, not what a box claims, which is why Royal comes in over the game it expands and Golden and Portable come in under theirs. Every released row carries a real one, and Persona 4 Revival carries zero until it is out; nothing here was estimated, and a row whose figure fails the name-and-year check fails this build instead of shipping unweighted."
     ],
-    "Game list, release order, years and the mainline split from Wikipedia's Persona (series) article and each game's own article; hours from HowLongToBeat main-story figures, verified by name and exact release year."
+    "Game list, release order, years and the mainline split from Wikipedia's Persona (franchise) article and each game's own article; hours from HowLongToBeat main-story figures, verified by name and exact release year."
   ],
   "sections": [
     {
@@ -109,8 +109,8 @@
     {
       "id": "phantom",
       "title": "Phantom Thieves and after",
-      "sub": "2016–2024 · 2 games · 162 hours story",
-      "intro": "The biggest one, and the remake that brought Persona 3 up to its standard.",
+      "sub": "2016–2027 · 3 games · 162 hours story · 1 not out yet",
+      "intro": "The biggest one, the remake that brought Persona 3 up to its standard, and the one doing the same for Persona 4.",
       "items": [
         {
           "id": "per-5",
@@ -126,6 +126,15 @@
           "n": "2024",
           "w": 64.79,
           "note": "The ground-up remake of Persona 3 — same story, modern build. Play this or the original, not both.",
+          "tier": 3,
+          "opt": 1
+        },
+        {
+          "id": "per-4rev",
+          "t": "Persona 4 Revival",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — due 18 February 2027 (20 May 2027 on Switch 2), and the bar stays empty until HowLongToBeat has hours for it. The remake of Persona 4 Golden — the same story, rebuilt to the standard of Royal and Reload.",
           "tier": 3,
           "opt": 1
         }

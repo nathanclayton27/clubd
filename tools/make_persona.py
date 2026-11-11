@@ -5,13 +5,14 @@
 
 The whole Persona franchise in release order: the six mainline RPGs, the
 expanded editions that are different enough from their originals to be a
-second sitting, the Persona 3 remake, and every spin-off — the fighting
-games, the two Persona Q crawlers, the three rhythm games, Strikers, Tactica
-and the mobile Phantom X.
+second sitting, the Persona 3 remake and the dated Persona 4 one, and every
+spin-off — the fighting games, the two Persona Q crawlers, the three rhythm
+games, Strikers, Tactica and the mobile Phantom X.
 
 Where the roster came from
 --------------------------
-Wikipedia's "Persona (series)" article, and specifically its {{Video game
+Wikipedia's "Persona (franchise)" article (formerly "Persona (series)", a
+title that now redirects to a disambiguation page), and specifically its {{Video game
 timeline}} — the franchise's own release list, which bolds the main series and
 leaves everything else plain. scratch/persona/parse_wiki.py reads that
 timeline, follows every link to the game's own article, and takes the release
@@ -44,12 +45,14 @@ The gate still ran at zero slack — against 2014 — and this file asserts that
 2014 is a year Wikipedia actually lists for that game. That is the difference
 between naming an exception and widening a window.
 
-Every row carries a real `w`. That is not decoration: the page computes
-`WEIGHT = x.w >= 0 ? x.w : 1`, so one missing weight on a weighted list
-silently books a 60-hour dungeon crawler as an hour, on a list whose entire
-point is that the hours are honest. There is no unweighted row here and no
-mechanism below to produce one — a row whose figure fails the gate fails the
-build instead.
+Every released row carries a real `w`. That is not decoration: the page
+computes `WEIGHT = x.w >= 0 ? x.w : 1`, so one missing weight on a weighted
+list silently books a 60-hour dungeon crawler as an hour, on a list whose
+entire point is that the hours are honest. There is no unweighted row here and
+no mechanism below to produce one — a row whose figure fails the gate fails
+the build instead. The one exception is declared, not tolerated: a row in
+`UNRELEASED` carries an explicit `w: 0`, and only while HowLongToBeat has no
+figure for it.
 
 The seven rows this list shipped with keep their ids AND their figures.
 Ids are permanent: renaming one silently orphans everybody's ticks. The
@@ -104,17 +107,24 @@ Battle* — are cut: their servers are off and there is nothing left to play,
 which is the rule properties/fps-canon.json uses for dead live-service
 shooters and the one gears-of-war.json uses to cut Gears Pop!.
 
-**The two unreleased games are excluded, and the exclusion is asserted.**
-Persona 4 Revival (18 February 2027) and Persona 6 both have HowLongToBeat
-records with no main-story figure, and this file asserts that stays true. The
-day the site starts timing either, this build fails and someone adds the row,
-rather than the list quietly staying a game short.
+**Dated unreleased work is a row at zero; undated work is not.** The owner's
+rule, the one silent-hill.json and gears-of-war.json already follow: a game
+announced with a release date, even a bare year, gets a row with an explicit
+`w: 0` and a note saying when it is due; one without a date stays off.
+Persona 4 Revival is the first kind — the timeline slots it at 2027 and its
+own infobox dates it 18 February 2027, Switch 2 on 20 May — so it ships as an
+optional row beside Reload, the other remake. Persona 6 is the second: the
+timeline puts it under TBA and its article gives no date, and this file
+asserts both. Both have HowLongToBeat records with no main-story figure, and
+this file asserts that stays true: the day the site times either, this build
+fails and someone gives Revival its real weight or Persona 6 its row, rather
+than the list quietly staying wrong.
 
 Tiers
 -----
   1  the modern trilogy — 3, 4, 5, what everyone means by "Persona"
   2  the PS1 classics — the original and the Persona 2 duology
-  3  everything optional — the editions, the Reload retelling, the spin-offs
+  3  everything optional — the editions, the two remakes, the spin-offs
 
 Three is the ceiling, not a choice: the page's stats bar is built for tiers 1
 to 3 (`TIERTOT = {1:0,2:0,3:0}` in src/template.html) and a fourth would count
@@ -228,10 +238,26 @@ ROSTER = [
      "built by Black Wings Game Studio rather than Atlus. Personas are "
      "pulled from a gacha, so the figure beside it is what HowLongToBeat "
      "times today rather than a fixed length."),
+    # ---------------------------------------------------------- not out yet
+    ("p4rev", "per-4rev", "Persona 4 Revival", "Persona 4 Revival", 2027,
+     "phantom", 3, 1,
+     "The remake of Persona 4 Golden — the same story, rebuilt to the "
+     "standard of Royal and Reload."),
 ]
 
+# Dated but not out. Each row weighs an explicit 0 and its note opens with
+# NOT_OUT, filled from here: (first release date, later platform's date).
+# Both dates are Persona 4 Revival's own infobox; main() asserts the year
+# against the data's Wikipedia year and that HowLongToBeat has no figure yet.
+UNRELEASED = {"p4rev": ("18 February 2027", "20 May 2027 on Switch 2")}
+
+# Prefixed to an unreleased row's note — the wording silent-hill.json and
+# gears-of-war.json use for theirs.
+NOT_OUT = ("Not out yet — due %s (%s), and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
+
 # Collected by the fetcher, asserted against, never shipped as a row.
-ASSERT_ONLY = ("p3fes", "p3answer", "p3r_aigis", "p4rev", "p6")
+ASSERT_ONLY = ("p3fes", "p3answer", "p3r_aigis", "p6")
 
 SECTIONS = [
     ("ps1", "The PS1 years",
@@ -241,8 +267,8 @@ SECTIONS = [
      "A school year, a dungeon, and a deadline — the structure the series "
      "is famous for arrives."),
     ("phantom", "Phantom Thieves and after",
-     "The biggest one, and the remake that brought Persona 3 up to its "
-     "standard."),
+     "The biggest one, the remake that brought Persona 3 up to its "
+     "standard, and the one doing the same for Persona 4."),
     ("editions", "The expanded editions",
      "Not sequels — the same games with more in them. FES folds into "
      "Persona 3 because HowLongToBeat times the two within hours of each "
@@ -260,11 +286,19 @@ _WORDS = ("zero one two three four five six seven eight nine ten eleven "
           "nineteen twenty").split()
 
 
+_TENS = "twenty thirty forty fifty sixty seventy eighty ninety".split()
+
+
 def spell(n):
     """A generated count that still reads like prose. "The mainline is 6
     games" is what a template writes; "six" is what a person writes, and the
     number stays computed either way."""
-    return _WORDS[n] if n < len(_WORDS) else str(n)
+    if n < len(_WORDS):
+        return _WORDS[n]
+    if n < 100:
+        tens = _TENS[n // 10 - 2]
+        return tens if n % 10 == 0 else "%s-%s" % (tens, _WORDS[n % 10])
+    return str(n)
 
 
 def main():
@@ -298,16 +332,35 @@ def main():
              "marks it %s" % (key, "bolds" if rec["main_series"] else
                               "does not bold",
                               "optional" if opt else "mainline"))
-        # All-or-nothing: the page reads a missing w as one hour, so a row
-        # without a real figure must break the build, never ship.
-        assert isinstance(rec["main_h"], (int, float)) and rec["main_h"] > 0, \
-            ("no main-story figure for %s (%s) — this list is weighted and a "
-             "row without one would silently count as an hour"
-             % (key, rec["why"]))
+        if key in UNRELEASED:
+            # Dated but not out: an explicit zero, and only while the site
+            # has nothing to say. The day it times the game, this fails and
+            # the row gets its real weight and loses its "not out yet".
+            assert not rec["main_h"], \
+                ("HowLongToBeat now times %s (%s h) — it is out; give the "
+                 "row its real weight and take it out of UNRELEASED"
+                 % (title, rec["main_h"]))
+            due = UNRELEASED[key]
+            assert due[0].endswith(str(rec["wiki_year"])), \
+                ("%s: due %s, but Wikipedia's release year is %s"
+                 % (key, due[0], rec["wiki_year"]))
+            assert rec["slot"] == str(rec["wiki_year"]), \
+                ("%s: the timeline slots it at %s, not under its year %s"
+                 % (key, rec["slot"], rec["wiki_year"]))
+            w, note = 0, NOT_OUT % due + " " + note
+        else:
+            # All-or-nothing: the page reads a missing w as one hour, so a
+            # row without a real figure must break the build, never ship.
+            assert (isinstance(rec["main_h"], (int, float))
+                    and rec["main_h"] > 0), \
+                ("no main-story figure for %s (%s) — this list is weighted "
+                 "and a row without one would silently count as an hour"
+                 % (key, rec["why"]))
+            w = rec["main_h"]
         assert tier in (1, 2, 3), \
             "%s: the stats bar only counts tiers 1-3, not %r" % (key, tier)
         entries.append({"id": iid, "t": title, "n": str(year),
-                        "w": rec["main_h"], "note": note, "sec": sec,
+                        "w": w, "note": note, "sec": sec,
                         "tier": tier, "opt": opt, "key": key,
                         "slot": rec["slot"]})
 
@@ -363,12 +416,16 @@ def main():
              "tracks The Answer separately, and that claim needs the record"
              % key)
 
-    # The two unreleased games. The day either has a figure, it has shipped
-    # and belongs on this list.
-    for key, title in (("p4rev", "Persona 4 Revival"), ("p6", "Persona 6")):
-        assert not data[key]["main_h"], \
-            ("HowLongToBeat now times %s (%s h) — it has shipped, and it "
-             "belongs on this list" % (title, data[key]["main_h"]))
+    # Persona 6: announced, undated, so not a row. The day Wikipedia dates
+    # it or HowLongToBeat times it, this fails and it gets one.
+    assert not data["p6"]["main_h"], \
+        ("HowLongToBeat now times Persona 6 (%s h) — it has shipped, and it "
+         "belongs on this list" % data["p6"]["main_h"])
+    assert data["p6"]["wiki_year"] is None and \
+        data["p6"]["slot"].startswith("TBA"), \
+        ("Wikipedia now dates Persona 6 (%s, slot %s) — a dated game gets a "
+         "w: 0 row; add it to ROSTER and UNRELEASED"
+         % (data["p6"]["wiki_year"], data["p6"]["slot"]))
 
     # --- the notes that carry numbers, generated so they cannot rot ---------
     by_key["p3"]["note"] = (
@@ -401,10 +458,14 @@ def main():
              % sec_id)
         years = [int(e["n"]) for e in got]
         hours = sum(e["w"] for e in got)
+        sub = ("%d–%d · %d games · %d hours story"
+               % (years[0], years[-1], len(got), round(hours)))
+        pending = [e for e in got if e["key"] in UNRELEASED]
+        if pending:
+            sub += " · %d not out yet" % len(pending)
         sections.append({
             "id": sec_id, "title": sec_title,
-            "sub": "%d–%d · %d games · %d hours story"
-                   % (years[0], years[-1], len(got), round(hours)),
+            "sub": sub,
             "intro": intro,
             "items": [{k: v for k, v in e.items()
                        if k in ("id", "t", "n", "w", "tier", "note")}
@@ -415,8 +476,12 @@ def main():
 
     every = [x for s in sections for x in s["items"]]
     assert len(every) == len(ROSTER), (len(every), len(ROSTER))
-    assert all(x.get("w", -1) > 0 for x in every), \
+    assert all("w" in x for x in every), \
         "a row reached the emitter without a weight"
+    # The only zeros are the rows this file declares unreleased.
+    assert {x["id"] for x in every if x["w"] <= 0} == \
+        {e["id"] for e in entries if e["key"] in UNRELEASED}, \
+        "a released row reached the emitter without a real weight"
 
     # --- the numbers the blurb and the notes stand on -----------------------
     mainline = [e for e in entries if not e["opt"]]
@@ -460,7 +525,7 @@ def main():
         # different and labelled number.
         "blurb": "%s mainline RPGs, about %d hours of story — the modern "
                  "trilogy alone averages %d hours each, and that is not a "
-                 "typo. The editions, the remake and the spin-offs add %d "
+                 "typo. The editions, the remakes and the spin-offs add %d "
                  "more."
                  % (spell(len(mainline)).capitalize(), round(main_h),
                     round(trilogy_avg), round(rest_h)),
@@ -472,7 +537,7 @@ def main():
         "tiers": True,
         "itemTiers": True,
         "paceTiers": [1, 2],
-        "paceLabel": "the editions, the remake and the spin-offs",
+        "paceLabel": "the editions, the remakes and the spin-offs",
         "notes": [
             ["The mainline is %s games." % spell(len(mainline)),
              "Revelations, the Persona 2 duology, and 3, 4 and 5 — the "
@@ -515,21 +580,22 @@ def main():
              "are not: Persona 3: The Night Before, Persona Ain Soph, Persona "
              "Mobile Online, the Persona 3 phone side-stories and Persona 4 "
              "The Card Battle all closed years ago, and there is nothing left "
-             "to play. Persona 4 Revival, due 18 February 2027, and Persona "
-             "6, announced without a date, are not out; HowLongToBeat has a "
-             "record for each and no figure, and this list refuses to guess "
-             "one. Each goes on the day there is a real number to put beside "
-             "it."],
+             "to play. Persona 4 Revival, due %s, has a row at zero hours: "
+             "HowLongToBeat has a record for it and no figure yet, and this "
+             "list refuses to guess one. Persona 6 is announced without a "
+             "date, and goes on the day it has one."
+             % UNRELEASED["p4rev"][0]],
             ["Hours are story only.",
              "HowLongToBeat main-story figures — no side content, no maxed "
              "social links, no New Game Plus. They are what people report, "
              "not what a box claims, which is why Royal comes in over the "
              "game it expands and Golden and Portable come in under theirs. "
-             "Every row carries a real one; nothing here was estimated, and "
+             "Every released row carries a real one, and Persona 4 Revival "
+             "carries zero until it is out; nothing here was estimated, and "
              "a row whose figure fails the name-and-year check fails this "
              "build instead of shipping unweighted."],
             "Game list, release order, years and the mainline split from "
-            "Wikipedia's Persona (series) article and each game's own "
+            "Wikipedia's Persona (franchise) article and each game's own "
             "article; hours from HowLongToBeat main-story figures, verified "
             "by name and exact release year.",
         ],

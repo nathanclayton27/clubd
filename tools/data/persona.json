@@ -17,7 +17,8 @@
   "main_series": true,
   "article": "Revelations: Persona",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 31.78,
+  "frozen": "shipped figure kept; today's fetch says 31.78"
  },
  "p2is": {
   "id": 6972,
@@ -40,7 +41,8 @@
   "main_series": true,
   "article": "Persona 2: Innocent Sin",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 35.74,
+  "frozen": "shipped figure kept; today's fetch says 35.74"
  },
  "p2ep": {
   "id": 6971,
@@ -59,7 +61,8 @@
   "main_series": true,
   "article": "Persona 2: Eternal Punishment",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 46.95,
+  "frozen": "shipped figure kept; today's fetch says 46.95"
  },
  "p3": {
   "id": 8440,
@@ -78,7 +81,8 @@
   "main_series": true,
   "article": "Persona 3",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 82.58,
+  "frozen": "shipped figure kept; today's fetch says 82.58"
  },
  "p4": {
   "id": 8443,
@@ -96,7 +100,8 @@
   "main_series": true,
   "article": "Persona 4",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 72.56,
+  "frozen": "shipped figure kept; today's fetch says 72.56"
  },
  "p5": {
   "id": 15221,
@@ -114,7 +119,8 @@
   "main_series": true,
   "article": "Persona 5",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 97.54,
+  "frozen": "shipped figure kept; today's fetch says 97.54"
  },
  "p3r": {
   "id": 129805,
@@ -132,8 +138,8 @@
   "main_series": false,
   "article": "Persona 3 Reload",
   "why": "ok",
-  "refetched_h": 64.81,
-  "frozen": "shipped figure kept; today's fetch says 64.81"
+  "refetched_h": 65.45,
+  "frozen": "shipped figure kept; today's fetch says 65.45"
  },
  "p3p": {
   "id": 8442,
@@ -153,7 +159,8 @@
   "main_series": false,
   "article": "Persona 3 Portable",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 64.26,
+  "frozen": "shipped figure kept; today's fetch says 64.26"
  },
  "p4g": {
   "id": 6974,
@@ -173,7 +180,8 @@
   "main_series": false,
   "article": "Persona 4 Golden",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 66.98,
+  "frozen": "shipped figure kept; today's fetch says 66.98"
  },
  "p5r": {
   "id": 66630,
@@ -192,7 +200,8 @@
   "main_series": false,
   "article": "Persona 5 Royal",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 101.29,
+  "frozen": "shipped figure kept; today's fetch says 101.29"
  },
  "p4a": {
   "id": 6973,
@@ -246,7 +255,8 @@
   "main_series": false,
   "article": "Persona Q: Shadow of the Labyrinth",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 60.0,
+  "frozen": "shipped figure kept; today's fetch says 60.0"
  },
  "p4d": {
   "id": 27669,
@@ -264,7 +274,8 @@
   "main_series": false,
   "article": "Persona 4: Dancing All Night",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 9.0,
+  "frozen": "shipped figure kept; today's fetch says 9.0"
  },
  "p3d": {
   "id": 47901,
@@ -281,7 +292,8 @@
   "main_series": false,
   "article": "Persona 3: Dancing in Moonlight",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 6.97,
+  "frozen": "shipped figure kept; today's fetch says 6.97"
  },
  "p5d": {
   "id": 47902,
@@ -351,7 +363,8 @@
   "main_series": false,
   "article": "Persona 5 Tactica",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 24.1,
+  "frozen": "shipped figure kept; today's fetch says 24.1"
  },
  "p5x": {
   "id": 130122,
@@ -386,7 +399,8 @@
   "main_series": false,
   "article": "Persona 3 FES",
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 80.08,
+  "frozen": "shipped figure kept; today's fetch says 80.08"
  },
  "p3answer": {
   "id": 45481,
@@ -420,7 +434,8 @@
   "main_series": false,
   "article": null,
   "why": "ok",
-  "frozen": "shipped figure, unchanged today"
+  "refetched_h": 18.89,
+  "frozen": "shipped figure kept; today's fetch says 18.89"
  },
  "p4rev": {
   "id": 169416,
