@@ -833,7 +833,7 @@
     "kind": "games",
     "year": "1987–",
     "popularity": 82,
-    "blurb": "21 games — about 832 hours of story, 661 of it the sixteen numbered ones.",
+    "blurb": "22 games — about 832 hours of story, 661 of it the sixteen numbered ones, with Revelation still to come.",
     "accent": "#2E3A8A",
     "accentDark": "#8A96E8",
     "unit": {
@@ -841,7 +841,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 21,
+    "total": 22,
     "totalw": 832.06
   },
   {
@@ -1028,7 +1028,7 @@
     "kind": "games",
     "year": "1996–",
     "popularity": 80,
-    "blurb": "19 games in release order — about 198 hours of story, 109 of it the mainline spine.",
+    "blurb": "20 games in release order — about 198 hours of story, 109 of it the mainline spine.",
     "accent": "#5F1F1F",
     "accentDark": "#D97A7A",
     "unit": {
@@ -1036,7 +1036,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 19,
+    "total": 20,
     "totalw": 197.88
   },
   {
@@ -2225,7 +2225,7 @@
     "kind": "games",
     "year": "1986–",
     "popularity": 70,
-    "blurb": "14 games across two lines — about 133 hours of story, 115 of it mainline.",
+    "blurb": "15 games across two lines — about 133 hours of story, 115 of it mainline, with Ravenous still to come.",
     "accent": "#B34A0C",
     "accentDark": "#45D6E8",
     "unit": {
@@ -2233,7 +2233,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 14,
+    "total": 15,
     "totalw": 133.0
   },
   {
@@ -2543,7 +2543,7 @@
     "kind": "games",
     "year": "2006–",
     "popularity": 68,
-    "blurb": "The Locust war end to end — about 88 hours of campaign, 49 of it the numbered line.",
+    "blurb": "The Locust war end to end — about 102 hours of campaign, 63 of it the numbered line.",
     "accent": "#7A2E24",
     "accentDark": "#C9D46A",
     "unit": {
@@ -2552,7 +2552,7 @@
     },
     "vpast": "played",
     "total": 10,
-    "totalw": 87.53
+    "totalw": 101.72
   },
   {
     "slug": "kingdom-hearts",
@@ -2806,7 +2806,7 @@
     "kind": "films",
     "year": "2013–",
     "popularity": 66,
-    "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 211 films, about 331 hours.",
+    "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 214 films, about 340 hours.",
     "accent": "#111111",
     "accentDark": "#E8E8E8",
     "unit": {
@@ -2814,8 +2814,8 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 211,
-    "totalw": 330.67,
+    "total": 214,
+    "totalw": 340.45,
     "random": true
   },
   {
@@ -3602,7 +3602,7 @@
     "kind": "games",
     "year": "1986–",
     "popularity": 61,
-    "blurb": "17 games — the classics, Symphony and the handheld six, and Lords of Shadow; about 126 hours of story.",
+    "blurb": "18 games — the classics, Symphony and the handheld six, Lords of Shadow, and Belmont's Curse; about 138 hours of story.",
     "accent": "#4E3220",
     "accentDark": "#F2A83B",
     "unit": {
@@ -3610,8 +3610,8 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 17,
-    "totalw": 126.12
+    "total": 18,
+    "totalw": 138.34
   },
   {
     "slug": "carpenter",
