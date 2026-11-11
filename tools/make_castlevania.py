@@ -4,26 +4,29 @@
     python3 tools/make_castlevania.py
 
 The Castlevania canon in three styles: the classic whip-and-stairs games,
-Symphony of the Night and the six handheld Metroidvanias that followed it,
-and the Lords of Shadow reboot as its own optional wing.
+Symphony of the Night, the six handheld Metroidvanias that followed it and
+Belmont's Curse (2026), and the Lords of Shadow reboot as its own optional
+wing.
 
 Which games exist and their release years come from Wikipedia's Castlevania
 article — its main-series release timeline is the authority
 (scratch/agent-games1/wiki/castlevania.wiki). Hours are HowLongToBeat
 main-story figures — story only, the house standard — read from
 tools/data/castlevania.json, collected by
-scratch/agent-games1/fetch_hltb.py and verified by name (this generator
-refuses a record whose name is not what it expects, and cross-checks HLTB's
-release year against Wikipedia's).
+scratch/agent-games1/fetch_hltb.py (Belmont's Curse, added 2026-11-11, by
+tools/gwlib/hltb.py — that script's package is dead) and verified by name
+(this generator refuses a record whose name is not what it expects, and
+cross-checks HLTB's release year against Wikipedia's).
 
 Every row carries a style tag — Classic, Metroidvania, Reboot — and the
 page grows filter chips from them.
 
 Scope cut, stated: the Game Boy trilogy (The Adventure, Belmont's Revenge,
 Legends), the Nintendo 64 pair, the PS2 3D pair (Lament of Innocence, Curse
-of Darkness), Dracula X on SNES, Haunted Castle and the spin-offs are on
-Wikipedia's timeline but not here — this list keeps to the canon the series
-is remembered for. The notes say so.
+of Darkness), Dracula X on SNES, Haunted Castle (and its 2024 remake,
+Haunted Castle Revisited) and the spin-offs are on Wikipedia's timeline but
+not here — this list keeps to the canon the series is remembered for. The
+notes say so.
 """
 import json
 import pathlib
@@ -67,6 +70,9 @@ METROIDVANIA = [
      "follow-up."),
     ("ooe", "Castlevania: Order of Ecclesia", 2008,
      "DS. Shanoa and the glyphs; the hardest of the six."),
+    ("bc", "Castlevania: Belmont's Curse", 2026,
+     "Switch, PS5, PC and Xbox. Rose Belmont and Dracula's castle in the "
+     "heart of 1499 Paris — the 40th-anniversary entry."),
 ]
 
 REBOOT = [
@@ -83,9 +89,10 @@ SECTIONS = [
     ("classic", "The classic line", "Classic",
      "Stage-by-stage vampire hunting, 1986 to the PS1 Chronicles — "
      "Rondo and Bloodlines included.", 0, CLASSIC),
-    ("metroidvania", "Symphony and the handhelds", "Metroidvania",
+    ("metroidvania", "Symphony and its heirs", "Metroidvania",
      "The castle becomes a map: Symphony of the Night, then the GBA and "
-     "DS six that carried it.", 0, METROIDVANIA),
+     "DS six that carried it, and Belmont's Curse in 2026.", 0,
+     METROIDVANIA),
     ("reboot", "Lords of Shadow", "Reboot",
      "The 2010 continuity reboot — a separate story, optional by "
      "design.", 1, REBOOT),
@@ -138,7 +145,7 @@ def main():
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == len(CLASSIC) + len(METROIDVANIA) + len(REBOOT) == 17, \
+    assert len(ids) == len(CLASSIC) + len(METROIDVANIA) + len(REBOOT) == 18, \
         (len(ids),)
     styles = {t for s in sections for x in s["items"] for t in x["tags"]}
     assert styles == {"Classic", "Metroidvania", "Reboot"}, styles
@@ -154,7 +161,8 @@ def main():
         "popularity": 61,
         "year": "1986–",
         "blurb": "%d games — the classics, Symphony and the handheld six, "
-                 "and Lords of Shadow; about %d hours of story."
+                 "Lords of Shadow, and Belmont's Curse; about %d hours of "
+                 "story."
                  % (len(ids), round(hours)),
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},

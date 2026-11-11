@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 61,
   "year": "1986–",
-  "blurb": "17 games — the classics, Symphony and the handheld six, and Lords of Shadow; about 126 hours of story.",
+  "blurb": "18 games — the classics, Symphony and the handheld six, Lords of Shadow, and Belmont's Curse; about 138 hours of story.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -130,9 +130,9 @@
     },
     {
       "id": "metroidvania",
-      "title": "Symphony and the handhelds",
-      "sub": "1997–2008 · 7 games · 60 hours story",
-      "intro": "The castle becomes a map: Symphony of the Night, then the GBA and DS six that carried it.",
+      "title": "Symphony and its heirs",
+      "sub": "1997–2026 · 8 games · 72 hours story",
+      "intro": "The castle becomes a map: Symphony of the Night, then the GBA and DS six that carried it, and Belmont's Curse in 2026.",
       "items": [
         {
           "id": "cv-sotn",
@@ -203,6 +203,16 @@
             "Metroidvania"
           ],
           "note": "DS. Shanoa and the glyphs; the hardest of the six."
+        },
+        {
+          "id": "cv-bc",
+          "t": "Castlevania: Belmont's Curse",
+          "n": "2026",
+          "w": 12.22,
+          "tags": [
+            "Metroidvania"
+          ],
+          "note": "Switch, PS5, PC and Xbox. Rose Belmont and Dracula's castle in the heart of 1499 Paris — the 40th-anniversary entry."
         }
       ]
     },
