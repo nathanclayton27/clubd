@@ -4,7 +4,9 @@
     python3 tools/make_godzilla.py
 
 Every Godzilla film from 1954 on, era by era, plus the Godzilla Fest shorts
-the group asked for by name and the Monarch series as a single row.
+the group asked for by name and the Monarch series, one row per season. An
+announced film whose article dates it is a row that weighs nothing and says
+when it is due.
 
 Reads tools/data/godzilla.json, which scratch/godzilla/build.py collected
 from the filmography tables of Wikipedia's Godzilla (franchise) article
@@ -55,7 +57,19 @@ NOTE = {
     "gz-2023-monarch-legacy-of-monsters":
         "Apple TV+ series — season one, ten episodes as one row · "
         "runtime unconfirmed",
+    "gz-2026-monarch-legacy-of-monsters-season-2":
+        "Apple TV series — season two, ten episodes as one row · "
+        "runtime unconfirmed",
 }
+
+MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")
+
+
+def due(iso):
+    y, m, d = (int(v) for v in iso.split("-"))
+    return "Not out yet — due %d %s %d, and the bar stays empty until it " \
+           "opens" % (d, MONTHS[m - 1], y)
 
 
 def slug(t):
@@ -80,7 +94,10 @@ def main():
             iid = "gz-%d-%s" % (f["year"], slug(f["title"]))
             note = f.get("note") or NOTE.get(iid, "")
             w = round((f["runtime"] or 0) / 60.0, 2)
-            if f["runtime"] is None and "runtime unconfirmed" not in note:
+            if f.get("upcoming"):
+                assert f["runtime"] is None and not note, iid
+                note = due(f["due"])
+            elif f["runtime"] is None and "runtime unconfirmed" not in note:
                 note += " · runtime unconfirmed"
             x = {"id": iid, "t": f["title"], "n": str(f["year"]), "w": w}
             if note:
@@ -98,6 +115,9 @@ def main():
                 hours)
         else:
             sub = "%s · %d films · %d hours" % (years, len(got), hours)
+        soon = sum(1 for f in got if f.get("upcoming"))
+        if soon:
+            sub += " · %d not out yet" % soon
         sec = {"id": key, "title": title, "sub": sub, "items": items}
         if intro:
             sec["intro"] = intro
@@ -107,8 +127,8 @@ def main():
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == len(films) == 47, (len(ids), len(films))
-    for sec, want in zip(sections, [15, 7, 1, 6, 5, 8, 5]):
+    assert len(ids) == len(films) == 50, (len(ids), len(films))
+    for sec, want in zip(sections, [15, 7, 1, 6, 6, 8, 7]):
         assert len(sec["items"]) == want, (sec["id"], want, len(sec["items"]))
     for s in sections:
         assert all(int(a["n"]) <= int(b["n"])
@@ -116,10 +136,13 @@ def main():
             "%s is out of year order" % s["title"]
     for s in sections:
         for x in s["items"]:
-            assert x["w"] > 0 or "runtime unconfirmed" in x.get("note", ""), \
-                x["id"]
+            assert x["w"] > 0 or "runtime unconfirmed" in x.get("note", "") \
+                or x.get("note", "").startswith("Not out yet"), x["id"]
 
-    nfilm = sum(1 for f in films if f["kind"] == "film")
+    out_films = [f for f in films
+                 if f["kind"] == "film" and not f.get("upcoming")]
+    nfilm = len(out_films)
+    last = max(f["year"] for f in out_films)
     nshort = sum(1 for f in films if f["kind"] == "short")
     hours = round(sum(f["runtime"] or 0 for f in films) / 60.0)
 
@@ -130,8 +153,8 @@ def main():
         "kind": "films",
         "popularity": 80,
         "year": "1954–",
-        "blurb": "%d films from 1954 to 2024, the Monarch series, and all "
-                 "%d Godzilla Fest shorts." % (nfilm, nshort),
+        "blurb": "%d films from 1954 to %d, the Monarch series, and all "
+                 "%d Godzilla Fest shorts." % (nfilm, last, nshort),
         "unit": {"one": "film", "many": "films"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -143,7 +166,7 @@ def main():
              "Millennium and Reiwa — split by the years the series went "
              "dark. The American branches sit apart: TriStar's 1998 one-off "
              "and Legendary's MonsterVerse, which includes the Monarch "
-             "series as one row."],
+             "series, one row per season."],
             ["The Godzilla Fest shorts.", "Free online premieres for Toho's "
              "annual fan festival: the suitmation Fest Godzilla series — "
              "Godzilla Appears at Godzilla Fest, G vs. Hedorah, Gigan "
@@ -156,11 +179,9 @@ def main():
              "the two disagreed by more than five minutes the infobox won. "
              "The shorts and Monarch have no runtime confirmed on "
              "Wikipedia or Wikidata, so they weigh nothing."],
-            ["Not included.", "Godzilla Minus Zero and Godzilla x Kong: "
-             "Supernova were still unreleased when this list was built. "
-             "Kong: Skull Island belongs to the MonsterVerse but is a Kong "
-             "film, and Wikipedia's Godzilla filmography does not count "
-             "it."],
+            ["Not included.", "Kong: Skull Island belongs to the "
+             "MonsterVerse but is a Kong film, and Wikipedia's Godzilla "
+             "filmography does not count it."],
             "Titles, years and release order from the filmography of "
             "Wikipedia's Godzilla (franchise) article; the Fest shorts from "
             "the Wikipedia pages that document them; runtimes and release "
@@ -174,7 +195,7 @@ def main():
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
 
     print("wrote %s.json" % SLUG)
-    print("  %d rows (%d films, %d shorts, 1 series), about %d hours"
+    print("  %d rows (%d films out, %d shorts, 2 series rows), about %d hours"
           % (len(ids), nfilm, nshort, hours))
     for s in sections:
         print("   %-22s %2d  %s" % (s["id"], len(s["items"]), s["sub"]))

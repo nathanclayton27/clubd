@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 80,
   "year": "1954–",
-  "blurb": "38 films from 1954 to 2024, the Monarch series, and all 8 Godzilla Fest shorts.",
+  "blurb": "39 films from 1954 to 2026, the Monarch series, and all 8 Godzilla Fest shorts.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -22,7 +22,7 @@
   "notes": [
     [
       "Eras.",
-      "Toho counts its films in four eras — Shōwa, Heisei, Millennium and Reiwa — split by the years the series went dark. The American branches sit apart: TriStar's 1998 one-off and Legendary's MonsterVerse, which includes the Monarch series as one row."
+      "Toho counts its films in four eras — Shōwa, Heisei, Millennium and Reiwa — split by the years the series went dark. The American branches sit apart: TriStar's 1998 one-off and Legendary's MonsterVerse, which includes the Monarch series, one row per season."
     ],
     [
       "The Godzilla Fest shorts.",
@@ -34,7 +34,7 @@
     ],
     [
       "Not included.",
-      "Godzilla Minus Zero and Godzilla x Kong: Supernova were still unreleased when this list was built. Kong: Skull Island belongs to the MonsterVerse but is a Kong film, and Wikipedia's Godzilla filmography does not count it."
+      "Kong: Skull Island belongs to the MonsterVerse but is a Kong film, and Wikipedia's Godzilla filmography does not count it."
     ],
     "Titles, years and release order from the filmography of Wikipedia's Godzilla (franchise) article; the Fest shorts from the Wikipedia pages that document them; runtimes and release dates from Wikidata (P2047, P577)."
   ],
@@ -194,7 +194,7 @@
           "id": "gz-1998-godzilla",
           "t": "Godzilla",
           "n": "1998",
-          "w": 2.32,
+          "w": 2.3,
           "note": "Roland Emmerich's American reimagining for TriStar — its monster returns in Godzilla: Final Wars as Zilla"
         }
       ]
@@ -245,7 +245,7 @@
     {
       "id": "reiwa",
       "title": "Reiwa era",
-      "sub": "2016–2023 · 5 films · 9 hours",
+      "sub": "2016–2026 · 6 films · 11 hours",
       "items": [
         {
           "id": "gz-2016-shin-godzilla",
@@ -279,6 +279,12 @@
           "t": "Godzilla Minus One",
           "n": "2023",
           "w": 2.08
+        },
+        {
+          "id": "gz-2026-godzilla-minus-zero",
+          "t": "Godzilla Minus Zero",
+          "n": "2026",
+          "w": 2.25
         }
       ]
     },
@@ -349,7 +355,7 @@
     {
       "id": "monsterverse",
       "title": "MonsterVerse",
-      "sub": "2014– · 4 films and one series · 8 hours",
+      "sub": "2014– · 5 films and one series · 8 hours · 1 not out yet",
       "items": [
         {
           "id": "gz-2014-godzilla",
@@ -381,6 +387,20 @@
           "t": "Godzilla x Kong: The New Empire",
           "n": "2024",
           "w": 1.92
+        },
+        {
+          "id": "gz-2026-monarch-legacy-of-monsters-season-2",
+          "t": "Monarch: Legacy of Monsters season 2",
+          "n": "2026",
+          "w": 0.0,
+          "note": "Apple TV series — season two, ten episodes as one row · runtime unconfirmed"
+        },
+        {
+          "id": "gz-2027-godzilla-x-kong-supernova",
+          "t": "Godzilla x Kong: Supernova",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Not out yet — due 26 March 2027, and the bar stays empty until it opens"
         }
       ]
     }
