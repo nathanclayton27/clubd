@@ -5,8 +5,8 @@
   "kind": "films",
   "popularity": 69,
   "random": true,
-  "year": "1992–2023",
-  "blurb": "Twelve features, Alien 3 to The Killer — about 27 hours of controlled dread.",
+  "year": "1992–2026",
+  "blurb": "Thirteen features, Alien 3 to The Further Mis-Adventures of Cliff Booth — about 27 hours of controlled dread.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -21,18 +21,14 @@
   "tiers": false,
   "notes": [
     [
-      "Twelve, not thirteen.",
-      "The Adventures of Cliff Booth is dated November 25, 2026 by its own article and isn't out yet; it joins the list when it exists."
-    ],
-    [
       "Features only.",
       "The music videos, the producing credits and the television work (Mindhunter, House of Cards) are other lists."
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata, in hours, for all twelve."
+      "From Wikidata, in hours, for the twelve that are out. Cliff Booth weighs nothing until it is."
     ],
-    "Filmography from Wikipedia's David Fincher filmography; runtimes from Wikidata."
+    "Filmography from Wikipedia's David Fincher filmography, and Cliff Booth's dates from its own article; runtimes from Wikidata."
   ],
   "sections": [
     {
@@ -109,8 +105,8 @@
     {
       "id": "streaming",
       "title": "Late, mostly Netflix",
-      "sub": "2014–2023 · 3 films · 7 hours",
-      "intro": "Gone Girl, then two films made for Netflix — his father's Citizen Kane script, and a killer whose routine goes wrong.",
+      "sub": "2014–2026 · 4 films · 7 hours",
+      "intro": "Gone Girl, then three films made for Netflix — his father's Citizen Kane script, a killer whose routine goes wrong, and a Quentin Tarantino script.",
       "items": [
         {
           "id": "df-2014-gone-girl",
@@ -129,6 +125,13 @@
           "t": "The Killer",
           "n": "2023",
           "w": 1.97
+        },
+        {
+          "id": "df-2026-the-further-mis-adventures-of-cliff-booth",
+          "t": "The Further Mis-Adventures of Cliff Booth",
+          "n": "2026",
+          "w": 0,
+          "note": "Not out yet — in IMAX from November 25, 2026, on Netflix from December 23"
         }
       ]
     }

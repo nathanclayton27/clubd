@@ -3,14 +3,19 @@
 
     python3 tools/make_fincher.py
 
-David Fincher's twelve released features in list order. The Adventures of
-Cliff Booth is out until it exists: its own article dates the release
-November 25, 2026, so the collector dropped it rather than list a film
-nobody can watch yet.
+David Fincher's directed features in list order: twelve released, plus The
+Further Mis-Adventures of Cliff Booth, which its own article dates to IMAX on
+November 25, 2026 and Netflix on December 23. A dated film ships as a w: 0 row
+marked not out yet (house rule), so it carries runtime null and a note in
+tools/data/fincher.json until it is out; then it gets its Wikidata runtime
+and loses the note. Its "released" date (the US date on its infobox's Film
+date) is asserted to be in the future, so on release day this generator
+fails and the row gets revisited instead of staying "not out yet".
 
 Also out: the producing and executive-producing credits, the music videos,
 and the television work — this is the directed-features list.
 """
+import datetime
 import json
 import pathlib
 
@@ -24,9 +29,10 @@ ERAS = [
      "Panic Room through the Dragon Tattoo remake — Zodiac's decades of "
      "unsolved paperwork sit in the middle, and The Social Network won "
      "him his widest acclaim."),
-    ("streaming", "Late, mostly Netflix", 2014, 2023,
-     "Gone Girl, then two films made for Netflix — his father's Citizen "
-     "Kane script, and a killer whose routine goes wrong."),
+    ("streaming", "Late, mostly Netflix", 2014, 2026,
+     "Gone Girl, then three films made for Netflix — his father's Citizen "
+     "Kane script, a killer whose routine goes wrong, and a Quentin "
+     "Tarantino script."),
 ]
 
 
@@ -40,10 +46,35 @@ def slug(t):
 def main():
     data = pathlib.Path(__file__).resolve().parent / "data"
     films = json.loads((data / "fincher.json").read_text(encoding="utf-8"))
-    assert len(films) == 12, [f["t"] for f in films]
+    assert len(films) == 13, [f["t"] for f in films]
     films.sort(key=lambda f: (f["year"], f["t"]))
-    assert all(f["runtime"] for f in films), \
+    # every film has a runtime or says why not: only a film that is not out
+    # yet may go without one, and it must carry the note that says so
+    assert all(bool(f["runtime"]) != bool(f.get("note")) for f in films), \
+        [f["t"] for f in films]
+    assert sum(1 for f in films if f["runtime"]) == 12, \
         [f["t"] for f in films if not f["runtime"]]
+    # a not-out-yet film carries its release date, and the build fails the
+    # day it comes out, so the row cannot quietly stay "not out yet"
+    today = datetime.date.today()
+    for f in films:
+        if f["runtime"]:
+            continue
+        released = datetime.date.fromisoformat(f["released"])
+        assert today < released, (
+            "%s came out on %s: give it its Wikidata runtime (P2047 was "
+            "140 min on 2026-11-11; the infobox said 141), drop its "
+            "not-out-yet note and its released date in "
+            "tools/data/fincher.json, and update the counts and notes "
+            "that say twelve are out" % (f["t"], released))
+
+    def row(f):
+        r = {"id": "df-%d-%s" % (f["year"], slug(f["t"])),
+             "t": f["t"], "n": str(f["year"]),
+             "w": round(f["runtime"] / 60.0, 2) if f["runtime"] else 0}
+        if f.get("note"):
+            r["note"] = f["note"]
+        return r
 
     sections = []
     for key, title, lo, hi, intro in ERAS:
@@ -52,18 +83,16 @@ def main():
         sec = {"id": key, "title": title,
                "sub": "%d–%d · %d films · %d hours"
                       % (got[0]["year"], got[-1]["year"], len(got),
-                         round(sum(f["runtime"] for f in got) / 60.0)),
+                         round(sum(f["runtime"] or 0 for f in got) / 60.0)),
                "intro": intro,
-               "items": [{"id": "df-%d-%s" % (f["year"], slug(f["t"])),
-                          "t": f["t"], "n": str(f["year"]),
-                          "w": round(f["runtime"] / 60.0, 2)} for f in got]}
+               "items": [row(f) for f in got]}
         if key == "videos":
             sec["open"] = True
         sections.append(sec)
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == 12, len(ids)
+    assert len(ids) == 13, len(ids)
     for s in sections:
         assert all(a["n"] <= b["n"] for a, b in zip(s["items"], s["items"][1:])), \
             "%s is out of year order" % s["title"]
@@ -81,25 +110,25 @@ def main():
         # (Nathan, CLU-372). Prerequisites, where any exist, live in
         # tools/data/sequences.json and are enforced separately.
         "random": True,
-        "year": "1992–2023",
-        "blurb": "Twelve features, Alien 3 to The Killer — about %d hours "
-                 "of controlled dread." % round(hours),
+        "year": "1992–2026",
+        "blurb": "Thirteen features, Alien 3 to The Further Mis-Adventures "
+                 "of Cliff Booth — about %d hours of controlled dread."
+                 % round(hours),
         "unit": {"one": "film", "many": "films"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "accent": "#33484A",
         "accentDark": "#93B8BA",
         "tiers": False,
         "notes": [
-            ["Twelve, not thirteen.", "The Adventures of Cliff Booth is "
-             "dated November 25, 2026 by its own article and isn't out "
-             "yet; it joins the list when it exists."],
             ["Features only.", "The music videos, the producing credits "
              "and the television work (Mindhunter, House of Cards) are "
              "other lists."],
             ["Bar widths are runtimes.", "From Wikidata, in hours, for "
-             "all twelve."],
-            "Filmography from Wikipedia's David Fincher filmography; "
-            "runtimes from Wikidata.",
+             "the twelve that are out. Cliff Booth weighs nothing until "
+             "it is."],
+            "Filmography from Wikipedia's David Fincher filmography, and "
+            "Cliff Booth's dates from its own article; runtimes from "
+            "Wikidata.",
         ],
         "sections": sections,
     }

@@ -60,6 +60,17 @@
                "best-directors-cuts|bdc-1992-alien-3"]]
     },
     {
+      "_why": "CROSS-LIST. The Further Mis-Adventures of Cliff Booth is on",
+      "_why2": "Fincher; its own article calls it a standalone sequel and",
+      "_why3": "spin-off to Once Upon a Time in Hollywood, with Brad Pitt back",
+      "_why4": "as the same character - the Yojimbo case. That film is on",
+      "_why5": "Tarantino and Best Picture, not on his list.",
+      "name": "Once Upon a Time in Hollywood",
+      "run": [["tarantino|qt-2019-once-upon-a-time-in-hollywood",
+               "best-picture|bp-2019-once-upon-a-time-in-hollywood"],
+              ["fincher|df-2026-the-further-mis-adventures-of-cliff-booth"]]
+    },
+    {
       "_why": "CROSS-LIST. Blade Runner 2049 is on Villeneuve; the 1982 film is",
       "_why2": "on four other lists and none of his.",
       "name": "Blade Runner",
