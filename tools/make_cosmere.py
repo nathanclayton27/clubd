@@ -132,8 +132,7 @@ def main():
                  "Secret Project 5"),
              row("The Fires of December",
                  hoid["The Fires of December"]["year"],
-                 "Secret Project 6 · Hoid's Travails — carries the "
-                 "bibliography's 2026 date"),
+                 "Secret Project 6 · Hoid's Travails"),
          ]},
     ]
 
