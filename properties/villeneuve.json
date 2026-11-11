@@ -34,7 +34,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "Every row for a film that has opened carries one, read from the runtime field of that film's own Wikipedia infobox — 22 hours 26 minutes across the eleven of them, from Polytechnique at 77 minutes to Dune: Part Two at 165. There are no unweighted rows and no estimates anywhere: a row missing its runtime would quietly count as one hour and make the total confidently wrong, so the generator stops rather than guess, and the one film that is not out carries an explicit zero instead. One number differs from the catalogue's other copy of the same film: the Dune list takes its screen runtimes from Wikidata and has Dune: Part Two at 166 minutes, where the film's own infobox says 165. This list keeps to the infobox for all eleven, because a total half from one source and half from another belongs to neither. The two rows still tick together — films are paired by title and year, never by runtime."
+      "Every row for a film that has opened carries one, read from the runtime field of that film's own Wikipedia infobox — 22 hours 26 minutes across the eleven of them, from Polytechnique at 77 minutes to Dune: Part Two at 165. There are no unweighted rows and no estimates anywhere: a row missing its runtime would quietly count as one hour and make the total confidently wrong, so the generator stops rather than guess, and the one film that is not out carries an explicit zero instead."
     ],
     "Roster, career divisions and the writing and producing credits from the Filmography and Career sections of Wikipedia's Denis Villeneuve, read from the tables and headings themselves; runtimes, release dates, screenwriters and source material from each film's own article."
   ],

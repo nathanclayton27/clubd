@@ -363,9 +363,9 @@
       "dragonball"
     ],
     "kind": "anime",
-    "year": "1986–2025",
+    "year": "1986–2026",
     "popularity": 89,
-    "blurb": "659 episodes in broadcast order, Dragon Ball through Daima; Kai is one optional row.",
+    "blurb": "659 episodes in broadcast order, Dragon Ball through Daima; Kai and Super: Beerus are one optional row each.",
     "accent": "#C4661F",
     "accentDark": "#F0A45C",
     "unit": {
@@ -373,7 +373,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 660
+    "total": 661
   },
   {
     "slug": "dc-comics",
@@ -1690,7 +1690,7 @@
     "title": "Dune",
     "subtitle": "the novels, the continuations, the screen versions",
     "kind": "books & films",
-    "year": "1965–2024",
+    "year": "1965–2026",
     "popularity": 73,
     "blurb": "Frank Herbert's six novels in publication order, the seventeen Brian Herbert & Kevin J. Anderson continuations as optional rows, and every screen Dune from Lynch to Villeneuve, weighted by runtime.",
     "accent": "#9C6414",
@@ -1699,7 +1699,7 @@
       "one": "entry",
       "many": "entries"
     },
-    "total": 28
+    "total": 29
   },
   {
     "slug": "fullmetal-alchemist",
@@ -2028,9 +2028,9 @@
       "jojos bizarre adventure"
     ],
     "kind": "anime",
-    "year": "2012–2022",
+    "year": "2012–",
     "popularity": 71,
-    "blurb": "All 190 episodes of the David Production anime in order — six parts, six JoJos, one bloodline.",
+    "blurb": "All 202 episodes of the David Production anime in order — seven parts, seven JoJos, one bloodline, still airing.",
     "accent": "#7A2E5F",
     "accentDark": "#E080BF",
     "unit": {
@@ -2038,7 +2038,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 190
+    "total": 202
   },
   {
     "slug": "lost",
@@ -2205,7 +2205,7 @@
     "kind": "manga",
     "year": "1987–",
     "popularity": 70,
-    "blurb": "All 989 chapters in 139 volumes — nine parts, nine JoJos, one bloodline, still running.",
+    "blurb": "All 993 chapters in 140 volumes — nine parts, nine JoJos, one bloodline, still running.",
     "accent": "#5B3A8C",
     "accentDark": "#B79BE8",
     "unit": {
@@ -2213,7 +2213,7 @@
       "many": "chapters"
     },
     "vpast": "read",
-    "total": 989
+    "total": 993
   },
   {
     "slug": "metroid",
@@ -2777,14 +2777,14 @@
       "movies"
     ],
     "title": "The Coen Brothers",
-    "subtitle": "eighteen together, four apart",
+    "subtitle": "eighteen together, five apart",
     "aliases": [
       "coens"
     ],
     "kind": "films",
-    "year": "1984–2025",
+    "year": "1984–2027",
     "popularity": 67,
-    "blurb": "The eighteen features Joel and Ethan made together, plus the four solo films with a note saying whose — about 38 hours.",
+    "blurb": "The eighteen features Joel and Ethan made together, plus the five solo films with a note saying whose — about 38 hours.",
     "accent": "#6E5533",
     "accentDark": "#C9A87E",
     "unit": {
@@ -2792,7 +2792,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 22,
+    "total": 23,
     "totalw": 38.27,
     "random": true
   },
@@ -3110,9 +3110,9 @@
       "stand alone complex"
     ],
     "kind": "anime",
-    "year": "1995–2022",
+    "year": "1995–2026",
     "popularity": 64,
-    "blurb": "Three animated continuities — the Oshii films, Stand Alone Complex through SAC_2045, and Arise — 86 entries, about 41 hours.",
+    "blurb": "Four animated continuities — the Oshii films, Stand Alone Complex through SAC_2045, Arise, and Science Saru's 2026 series — 96 entries, about 45 hours.",
     "accent": "#186A66",
     "accentDark": "#F5933E",
     "unit": {
@@ -3120,8 +3120,8 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 86,
-    "totalw": 40.97
+    "total": 96,
+    "totalw": 44.97
   },
   {
     "slug": "mash",
