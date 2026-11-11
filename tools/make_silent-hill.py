@@ -54,10 +54,12 @@ UNRELEASED WORK IS LISTED WHEN THE SOURCE DATES IT, AND WEIGHS ZERO
 The owner's rule: announced with a release date — even a bare year — is
 enough to earn a row; undated work is not. So:
 
-  * *Silent Hill: Townfall* is a row. Its own article's infobox reads
-    `released = September 24, 2026`, its lead "It is scheduled to release for
-    PlayStation 5 and Windows on September 24, 2026", and its short
-    description "Upcoming 2026 video game".
+  * *Silent Hill: Townfall* went in that way (dated September 24, 2026,
+    while its article still called it upcoming) and shipped on the day: its
+    article's lead now reads "''Townfall'' was released for PlayStation 5
+    and Windows on 24 September 2026". It weighs its HowLongToBeat hours
+    like every other released row, and main() asserts the lead still says
+    so.
   * The remake of the first game is NOT a row. It is announced (June 2025,
     Bloober Team) with no date anywhere: the release timeline slots it under
     `TBA`, its heading reads `''Silent Hill'' (TBA)`, its paragraph gives no
@@ -67,8 +69,8 @@ enough to earn a row; undated work is not. So:
 An unreleased row carries an explicit `w: 0`, never a missing `w`. The page
 resolves `WEIGHT = x.w >= 0 ? x.w : 1`, so a row without one on a weighted
 list silently books itself as one hour (CLU-131) — an invented hour for a
-game nobody can have played. Zero is the honest figure and it keeps the other
-twelve rows' verified HowLongToBeat hours intact.
+game nobody can have played. Zero is the honest figure and it keeps every other
+row's verified HowLongToBeat hours intact.
 
 The release date is asserted every run, against the clock:
 
@@ -158,8 +160,7 @@ REVIVAL = [
      "entry since Downpour, and its own story. Wikipedia files it as a "
      "spin-off; it plays like the main event.", 0),
     ("townfall", "Silent Hill: Townfall", 2026, 2,
-     "First-person, and set in 1996 in the Scottish town of St. Amelia — "
-     "the second Silent Hill to leave America, after f.", 0),
+     "First-person, and set in 1996 in the Scottish town of St. Amelia.", 0),
 ]
 
 # Prefixed to an unreleased row's own note, so the row still says what it is
@@ -169,8 +170,9 @@ NOT_OUT = ("Not out yet — due %s, and the bar stays empty until "
 
 # Rows with no HowLongToBeat figure because the game is not out. Each must
 # carry an explicit w of 0 and say so in its note; main() asserts both, and
-# asserts the release date the source gives against today's clock.
-UNRELEASED = {"townfall"}
+# asserts the release date the source gives against today's clock. Empty
+# since Townfall shipped on 24 September 2026.
+UNRELEASED = set()
 
 # expected HLTB names where they differ from the display title
 EXPECT = {"sh2-remake": ["Silent Hill 2", "Silent Hill 2 Remake",
@@ -245,6 +247,9 @@ def main():
              "finished, so it has landed ahead of its stated %s date. Give "
              "the row its hours." % (data.get("townfall"), due))
     else:
+        assert src["townfall"].get("lead_released"), \
+            ("Townfall's stated release date (%s) has passed but its article "
+             "no longer says it was released on that date — re-read it" % due)
         assert data.get("townfall", {}).get("main_h"), \
             ("Townfall's release date (%s) has passed and there is still no "
              "HowLongToBeat record for it. Run "
@@ -364,13 +369,12 @@ def main():
              "games already here. Ascension is the one deliberate "
              "exception — it is not a game at all, and its row says so."],
             ["Mostly standalone.", "Only Silent Hill 3 is a direct sequel "
-             "(to the first game); everything else is its own story in the "
-             "same town, and Silent Hill f leaves the town entirely for "
-             "1960s Japan. Release order is the natural order all the same."],
-            ["Not out yet.", "Townfall has a date — %s — so it gets a row "
-             "with an empty bar, and its hours arrive when HowLongToBeat "
-             "does. Bloober Team's remake of the first game is announced "
-             "with no date at all, so it is not a row yet." % longdate(due)],
+             "(to the first game); everything else is its own story, most "
+             "of them in the same town. The Short Message, Silent Hill f and "
+             "Townfall leave it for Germany, 1960s Japan and Scotland. "
+             "Release order is the natural order all the same."],
+            ["Not out yet.", "Bloober Team's remake of the first game is "
+             "announced with no date at all, so it is not a row yet."],
             ["Getting the old games, honestly.", "Konami has delisted or "
              "never re-released most of the pre-2024 catalogue — the "
              "Team Silent games have no modern storefront release apart "

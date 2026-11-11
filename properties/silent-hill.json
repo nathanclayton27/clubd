@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 69,
   "year": "1999–",
-  "blurb": "13 games — about 101 hours of story, 57 of it the essential path, with Townfall still to come.",
+  "blurb": "13 games — about 114 hours of story, 57 of it the essential path.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -35,11 +35,11 @@
     ],
     [
       "Mostly standalone.",
-      "Only Silent Hill 3 is a direct sequel (to the first game); everything else is its own story in the same town, and Silent Hill f leaves the town entirely for 1960s Japan. Release order is the natural order all the same."
+      "Only Silent Hill 3 is a direct sequel (to the first game); everything else is its own story, most of them in the same town. The Short Message, Silent Hill f and Townfall leave it for Germany, 1960s Japan and Scotland. Release order is the natural order all the same."
     ],
     [
       "Not out yet.",
-      "Townfall has a date — 24 September 2026 — so it gets a row with an empty bar, and its hours arrive when HowLongToBeat does. Bloober Team's remake of the first game is announced with no date at all, so it is not a row yet."
+      "Bloober Team's remake of the first game is announced with no date at all, so it is not a row yet."
     ],
     [
       "Getting the old games, honestly.",
@@ -136,7 +136,7 @@
     {
       "id": "revival",
       "title": "The revival",
-      "sub": "2023–2026 · 5 games · 39 hours story · 1 not out yet",
+      "sub": "2023–2026 · 5 games · 53 hours story",
       "intro": "Konami restarts the series from 2023: an interactive series, a free short story, a remake, and the first all-new games in over a decade.",
       "items": [
         {
@@ -177,9 +177,9 @@
           "id": "sh-townfall",
           "t": "Silent Hill: Townfall",
           "n": "2026",
-          "w": 0,
+          "w": 13.47,
           "tier": 2,
-          "note": "Not out yet — due 24 September 2026, and the bar stays empty until HowLongToBeat has hours for it. First-person, and set in 1996 in the Scottish town of St. Amelia — the second Silent Hill to leave America, after f."
+          "note": "First-person, and set in 1996 in the Scottish town of St. Amelia."
         }
       ]
     }

@@ -71,8 +71,14 @@
   "main_h": 10.21,
   "year": 2023
  },
+ "townfall": {
+  "id": "114900",
+  "name": "Silent Hill: Townfall",
+  "main_h": 13.47,
+  "year": 2026
+ },
  "_source": {
-  "read": "2026-08-25",
+  "read": "2026-11-11",
   "articles": [
    "Silent Hill",
    "Silent Hill f",
@@ -98,8 +104,9 @@
   },
   "townfall": {
    "released": "2026-09-24",
-   "short_description": "Upcoming 2026 video game",
-   "lead_upcoming": true
+   "short_description": null,
+   "lead_upcoming": false,
+   "lead_released": true
   },
   "sh1_remake": {
    "timeline_slot": "TBA",
