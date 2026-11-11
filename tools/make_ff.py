@@ -20,7 +20,12 @@ Tiers:
 
 XIV is one row for the whole MMO. HLTB's figure is A Realm Reborn's base
 story, and the note says what that leaves out — a decade of expansions.
+
+A row in UNRELEASED is dated but not out: it ships with w 0 and a note
+saying when it is due. HLTB lists it with no main-story figure, and the
+generator refuses to run once its date passes, so the hours get fetched.
 """
+import datetime
 import json
 import pathlib
 
@@ -61,8 +66,23 @@ ROSTER = [
      "for it"),
     ("ff16", "Final Fantasy XVI", 1, ""),
     ("ff7-rebirth", "Final Fantasy VII Rebirth", 2,
-     "Second of the remake trilogy, with the third part still to come"),
+     "Second of the remake trilogy"),
+    ("ff7-revelation", "Final Fantasy VII Revelation", 2,
+     "Third and last of the remake trilogy"),
 ]
+
+# Dated, not out: key -> release date, from the game's own Wikipedia article
+# (checked 2026-11-11: "scheduled for release on April 8, 2027").
+UNRELEASED = {"ff7-revelation": "2027-04-08"}
+
+# Prefixed to an unreleased row's own note, so the row still reads correctly
+# the day it ships and the note needs no second edit.
+NOT_OUT = ("Not out yet — due %s, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
+
+
+def longdate(d):
+    return "%d %s %d" % (d.day, d.strftime("%B"), d.year)
 
 # XIV's cache record is A Realm Reborn (2013); the numbered entry premiered
 # in 2010 and that is where release order puts the row. The note carries it.
@@ -89,16 +109,30 @@ def main():
     data = json.loads((pathlib.Path(__file__).resolve().parent / "data"
                        / "finalfantasy.json").read_text(encoding="utf-8"))
 
+    today = datetime.date.today()
     entries = []
     for key, expect, tier, note in ROSTER:
         rec = data.get(key)
         assert rec, "no HLTB record for %s" % key
         assert rec["name"].lower() == expect.lower(), \
             "record mismatch for %s: %r" % (key, rec["name"])
-        assert rec["main_h"] > 0, "no hours for %s" % key
+        if key in UNRELEASED:
+            due = datetime.date.fromisoformat(UNRELEASED[key])
+            assert due > today, \
+                ("%s was due %s and the row still weighs nothing: drop it "
+                 "from UNRELEASED and fetch its hours" % (expect, due))
+            assert rec["year"] == due.year, (key, rec["year"], due)
+            assert not rec["main_h"], \
+                ("HLTB now times %s (%s h) ahead of its %s date: give the "
+                 "row its hours" % (expect, rec["main_h"], due))
+            w = 0
+            note = " ".join([NOT_OUT % longdate(due), note]).strip()
+        else:
+            assert rec["main_h"] > 0, "no hours for %s" % key
+            w = rec["main_h"]
         year = YEAR_SHOWN.get(key, rec["year"])
         x = {"id": "ff-%s" % (key[2:] if key.startswith("ff") else key),
-             "t": expect, "n": str(year), "w": rec["main_h"], "tier": tier,
+             "t": expect, "n": str(year), "w": w, "tier": tier,
              "year": year}
         if note:
             x["note"] = note
@@ -111,10 +145,13 @@ def main():
         got = [e for e in entries if lo <= e["year"] <= hi]
         assert got, "empty era %s" % key
         hours = sum(e["w"] for e in got)
+        sub = "%d–%d · %d games · %d hours story" \
+              % (got[0]["year"], got[-1]["year"], len(got), round(hours))
+        pending = [e for e in got if not e["w"]]
+        if pending:
+            sub += " · %d not out yet" % len(pending)
         sec = {"id": key, "title": title,
-               "sub": "%d–%d · %d games · %d hours story"
-                      % (got[0]["year"], got[-1]["year"], len(got),
-                         round(hours)),
+               "sub": sub,
                "intro": intro,
                "items": [{k: v for k, v in e.items()
                           if k in ("id", "t", "n", "w", "tier", "note")}
@@ -129,13 +166,25 @@ def main():
     t1 = [x for s in sections for x in s["items"] if x["tier"] == 1]
     t2 = [x for s in sections for x in s["items"] if x["tier"] == 2]
     assert len(t1) == 16, "the numbered spine should be 16, got %d" % len(t1)
-    assert len(t2) == 5, "the branches should be 5, got %d" % len(t2)
+    assert len(t2) == 6, "the branches should be 6, got %d" % len(t2)
+    zeros = {x["t"] for s in sections for x in s["items"] if not x["w"]}
+    assert zeros == {t for k, t, _, _ in ROSTER if k in UNRELEASED}, zeros
     for s in sections:
         yrs = [int(x["n"]) for x in s["items"]]
         assert yrs == sorted(yrs), "%s is out of year order" % s["title"]
 
     hours = sum(x["w"] for s in sections for x in s["items"])
     spine = sum(x["w"] for x in t1)
+    coming = sorted(zeros)
+    assert len(coming) <= 1, "the blurb names one game still to come"
+    blurb = ("%d games — about %d hours of story, %d of it the sixteen "
+             "numbered ones" % (len(ids), round(hours), round(spine)))
+    blurb += (", with %s still to come." % coming[0].split()[-1]
+              if coming else ".")
+    # When Revelation ships, this lookup fails along with the date assert
+    # above: the remake-line note then needs rewriting, not just the row.
+    revelation_due = longdate(datetime.date.fromisoformat(
+        UNRELEASED["ff7-revelation"]))
 
     prop = {
         "slug": SLUG,
@@ -145,8 +194,7 @@ def main():
         "kind": "games",
         "popularity": 82,
         "year": "1987–",
-        "blurb": "%d games — about %d hours of story, %d of it the sixteen "
-                 "numbered ones." % (len(ids), round(hours), round(spine)),
+        "blurb": blurb,
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},
         "itemOrder": "number-first",
@@ -174,10 +222,12 @@ def main():
              "checkbox under the bar adds the branches." % round(spine)],
             ["The remake line.", "VII Remake and Rebirth are not the usual "
              "kind of remake — they retell VII across three games, and they "
-             "land best with the original played first. The third part is "
-             "still to come, so the line is here unfinished."],
+             "land best with the original played first. The third part, "
+             "Revelation, is due on %s, so the line is here unfinished."
+             % revelation_due],
             "Hours and dates from HowLongToBeat, verified by name; the list "
-            "itself checked against Wikipedia's series page.",
+            "itself checked against Wikipedia's series page, and "
+            "Revelation's release date against its own article.",
         ],
         "sections": sections,
     }

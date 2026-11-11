@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 82,
   "year": "1987–",
-  "blurb": "21 games — about 832 hours of story, 661 of it the sixteen numbered ones.",
+  "blurb": "22 games — about 832 hours of story, 661 of it the sixteen numbered ones, with Revelation still to come.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -39,9 +39,9 @@
     ],
     [
       "The remake line.",
-      "VII Remake and Rebirth are not the usual kind of remake — they retell VII across three games, and they land best with the original played first. The third part is still to come, so the line is here unfinished."
+      "VII Remake and Rebirth are not the usual kind of remake — they retell VII across three games, and they land best with the original played first. The third part, Revelation, is due on 8 April 2027, so the line is here unfinished."
     ],
-    "Hours and dates from HowLongToBeat, verified by name; the list itself checked against Wikipedia's series page."
+    "Hours and dates from HowLongToBeat, verified by name; the list itself checked against Wikipedia's series page, and Revelation's release date against its own article."
   ],
   "sections": [
     {
@@ -215,7 +215,7 @@
     {
       "id": "now",
       "title": "The current era",
-      "sub": "2020–2024 · 3 games · 119 hours story",
+      "sub": "2020–2027 · 4 games · 119 hours story · 1 not out yet",
       "intro": "The remake line and the action turn.",
       "items": [
         {
@@ -239,7 +239,15 @@
           "n": "2024",
           "w": 48.41,
           "tier": 2,
-          "note": "Second of the remake trilogy, with the third part still to come"
+          "note": "Second of the remake trilogy"
+        },
+        {
+          "id": "ff-7-revelation",
+          "t": "Final Fantasy VII Revelation",
+          "n": "2027",
+          "w": 0,
+          "tier": 2,
+          "note": "Not out yet — due 8 April 2027, and the bar stays empty until HowLongToBeat has hours for it. Third and last of the remake trilogy"
         }
       ]
     }

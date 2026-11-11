@@ -124,5 +124,11 @@
   "name": "Final Fantasy VII Rebirth",
   "main_h": 48.41,
   "year": 2024
+ },
+ "ff7-revelation": {
+  "id": "187009",
+  "name": "Final Fantasy VII Revelation",
+  "main_h": 0,
+  "year": 2027
  }
 }
