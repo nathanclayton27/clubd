@@ -84,6 +84,10 @@ APPLIED = [
     # purpose: it replaced save_progress and club_fold_on_delete, so it must rank
     # as their LATEST APPLIED definition, ahead of migrate-club-progress.sql.
     "clu504-tombstones.sql",
+    # CLU-153 file A. Nathan pasted it 2026-11-11 20:15:05 UTC; readback matched
+    # (owner postgres, definer, search_path pinned, only authenticated may call),
+    # ledger row `applied ae443530`. File B is still unrun and stays in NEVER_RUN.
+    "clu153-A-find_profile_by_code.sql",
 ]
 
 # Written, never executed. Keeping these OUT of the applied list matters: while
@@ -93,7 +97,6 @@ APPLIED = [
 NEVER_RUN = {
     "FINAL-3-profiles.sql":            "superseded by the clu153 pair below; never ran",
     "rls-fix-PART2-after-frontend.sql": "same fence, superseded by FINAL-3, no transaction",
-    "clu153-A-find_profile_by_code.sql": "queued (CLU-153): the lookup function, safe any time",
     "clu153-B-narrow-profiles.sql":     "queued (CLU-153): fenced until the front end is live",
     "migrate-fix-rls-column-locks.sql": "PART1 and PART2 concatenated; never ran as itself",
     "migrate-perf-shares.sql":          "MUST NEVER RUN — silently replaces a live function",

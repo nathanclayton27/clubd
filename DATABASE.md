@@ -734,6 +734,8 @@ exactly the committed form.
 | 2026-09-10 21:38 | `migrate-club-progress.sql` (777 lines, md5 `76e61d1e…`, byte-identical to the audited file) + 19-check readback | **19/19 true.** 36 watch clubs and 66 memberships archived then deleted; `club_progress` with RLS, two read policies and **no** write policy; `save_progress`, `arr_union`, `club_session_visible`; the `groups_fold_sessions` trigger **attached**; a snapshot row for every surviving watch-club membership; `progress` confirmed un-re-keyed with its policies intact. **The only irreversible statement in the repo has now run.** First run recorded in the ledger as it happened | CLU-389 |
 | 2026-11-11 ~20:08 | **Read-only** CLU-504 pre-check (15 rows, from the 2026-11-11 run steps) | 14 PASS, 1 INFO: `progress` holds 969 rows. Both live function bodies fingerprinted as the CLU-389 ones (`9cda7b3c…`, `1e3dcb54…`), so nothing had changed since 2026-09-10. No CLU-504 row in the ledger. Nothing changed | CLU-504 |
 | 2026-11-11 ~20:09 | `clu504-tombstones.sql` (md5 `ab30c220…`, checksum `54f0ecd2…`, re-verified 2026-11-11 by CLU-572) + 13-row readback | **13/13 PASS.** `progress.removed` `jsonb not null '{}'` on every row, with no tombstones yet; the `progress_tombstones` trigger attached and enabled; `tomb_at`, `tomb_keep` and `progress_tombstone_guard` created; `save_progress` and `club_fold_on_delete` replaced (now `63dd7306…`, `7c94a627…`); grants as audited; `progress` still has its five named policies. **Recorded itself: ledger row `applied 54f0ecd2`.** Users see nothing until the client half ships (CLU-573) | CLU-504 |
+| 2026-11-11 ~20:12 | **Read-only** CLU-153 pre-check (10 columns) | All as expected. Last ledger row was the CLU-504 run minutes earlier; `find_profile_by_code` absent; pasting role and `profiles` owner both `postgres`; RLS on, force-RLS off; exactly the three original `profiles` policies; 0 stored codes A would reject; 0 holders of `…ZZZZ`; 0 `fcode` rows ever. 30 profiles in all | CLU-153 |
+| 2026-11-11 20:15 | `clu153-A-find_profile_by_code.sql` (md5 `be32145a…`) + readback | Function readback: owner `postgres`, security definer, `search_path=public, pg_temp`, EXECUTE held only by `postgres`, `service_role` (Supabase default) and `authenticated`. **Ledger `applied ae443530…`, the audited checksum.** From this moment friend-code lookups go through the function, and misses are capped at 20 an hour and 60 a day per user. Control run impersonating Nathan: 30 / 1 / 1 (all profiles readable, stranger found by direct read and by function). The first try returned 0 / 0 because the code's middle dot was lost; the fix built it with `chr(183)`. That try was charged one miss | CLU-153 |
 
 **`clu504-tombstones.sql` is the most recent change to production (2026-11-11),
 and the second run the database wrote down itself.** The paragraph below
@@ -752,8 +754,9 @@ computes that same `493ae4fb…` for the file on disk today, so the ledger and t
 repo agree on the bytes that ran — the first time in this project that has been
 true of anything.
 
-**Written and not run: the CLU-153 pair**, under *Queued and ready* below, and
-**`clu445-friend-edges.sql`**, phase 1 only, under *Queued and not run: the
+**Written and not run: CLU-153's file B** (file A ran 2026-11-11, history table
+above), under *Queued and ready* below, and **`clu445-friend-edges.sql`**, phase 1
+only, under *Queued and not run: the
 friendship edge gets a door* below. **`clu504-tombstones.sql` ran on 2026-11-11**
 (history table above). Its tombstone client half is still unwritten and is now
 CLU-573.
