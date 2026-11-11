@@ -17,10 +17,13 @@ Disneytoon's word wins on how it was released — the Walt Disney Pictures list
 files Bambi II as theatrical because it had a cinema release outside North
 America, and the studio that made it is the better authority. Disneytoon's own
 Release-type cell can name two channels — "Direct-to-video/Theatrical" — and
-where it does, the direct-to-video half wins. Three rows read that way (Bambi
-II, Tinker Bell, and Mickey, Donald, Goofy: The Three Musketeers), and a
-substring test filed all three as theatrical, which left Bambi II at tier 1
-while the channel note below named it as a direct-to-video example (CLU-306).
+where it does, the direct-to-video half wins. When CLU-306 was fixed, three
+rows read that way (Bambi II, Tinker Bell, and Mickey, Donald, Goofy: The Three
+Musketeers), and a substring test had filed all three as theatrical, which left
+Bambi II at tier 1 while the channel note below named it as a direct-to-video
+example. By revision 1383954883 (5 Nov 2026) only Bambi II still does: Tinker
+Bell sits under a "Theatrical" cell spanning eight rows, after edits on 22 Oct
+and 5 Nov 2026, and The Three Musketeers under a five-row "Direct-to-video" one.
 
 **The same title is not the same film.** Rows are deduplicated on title AND
 year, not on title alone. On the title alone, first one wins, so the 1992
@@ -54,6 +57,17 @@ Tiers are release channels, not rankings:
   1 theatrical   2 television   3 direct-to-video
 A finish date paces you through the theatrical line; the checkbox adds the
 rest. The channels are also filter chips, so "no TV movies" is one click.
+
+**Out or not is the date, not the runtime.** A row used to read "Not out yet"
+whenever it had no runtime and a year after 2025, and weighed whatever runtime
+it had. Both went wrong by November 2026 (CLU-596): Orangutan, Descendants:
+Wicked Wonderland and Camp Rock 3 had come out and still said "Not out yet",
+because Wikidata had no runtime for them yet; and Lilo & Stitch 2, due in May
+2028, carried 1.8 hours, because its link is a section of the 2025 film's
+article and the lookup returned the 2025 film's runtime. A row dated after
+AS_OF is now "Not out yet" and weighs nothing, and a row dated on or before it
+never is. AS_OF is a constant rather than today so that two runs of this file
+on different days agree; move it when the list is refreshed.
 """
 import json
 import pathlib
@@ -65,6 +79,20 @@ from gwlib import prop as gwprop  # noqa: E402
 
 SLUG = "disney"
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+
+# The day the source was last read. A film dated after it is not out yet.
+AS_OF = "2026-11-11"
+
+# (title, the year the source gives now): the year its id keeps. A tick is
+# stored against the id, so a film the source re-dates into another year must
+# not take a new one. The Littlest Horse Thieves shipped as 1977, its American
+# release; in November 2026 the Walt Disney Pictures list re-dated it to its
+# British release of May 26, 1976. The row now prints and sorts as 1976 and
+# keeps dis-1977-the-littlest-horse-thieves. An entry that stops matching a
+# film fails the build rather than quietly letting the id move.
+ID_YEAR = {
+    ("The Littlest Horse Thieves", "1976"): "1977",
+}
 
 # The source's own marker for a film Disney released but did not make. Every
 # wording in the article ends the same way — "distribution only" — after a
@@ -123,7 +151,12 @@ def slug(t):
 
 
 def item_id(f):
-    return "dis-%s-%s" % (f["date"][:4], slug(f["t"]))
+    year = ID_YEAR.get((f["t"], f["date"][:4]), f["date"][:4])
+    return "dis-%s-%s" % (year, slug(f["t"]))
+
+
+def out_yet(f):
+    return f["date"] <= AS_OF
 
 
 def shipped_ids():
@@ -149,6 +182,14 @@ def main():
 
     films.sort(key=lambda f: (f["date"], f["t"]))
 
+    # Not out yet weighs nothing, whatever runtime the data carries for it.
+    for f in films:
+        if not out_yet(f):
+            f["runtime"] = None
+    unused = set(ID_YEAR) - {(f["t"], f["date"][:4]) for f in allfilms}
+    assert not unused, "ID_YEAR names no film in the data: %s — if the source " \
+                       "re-dated it again, the id must still not move" % unused
+
     sections = []
     for key, title, lo, hi, intro in ERAS:
         got = [f for f in films if lo <= int(f["date"][:4]) <= hi]
@@ -158,7 +199,7 @@ def main():
         for f in got:
             tier, label, tags = KIND[f["kind"]]
             bits = list(tags)
-            if not f.get("runtime") and int(f["date"][:4]) > 2025:
+            if not out_yet(f):
                 bits.append("Not out yet")
             items.append({
                 "id": item_id(f),

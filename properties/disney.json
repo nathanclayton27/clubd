@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 96,
   "year": "1937–",
-  "blurb": "652 films from Snow White on — 456 theatrical, 167 television, 29 direct-to-video — about 912 hours.",
+  "blurb": "659 films from Snow White on — 458 theatrical, 169 television, 32 direct-to-video — about 922 hours.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -42,7 +42,7 @@
     ],
     [
       "Tiers are release channels, not rankings.",
-      "1 is theatrical, 2 is television, 3 is direct-to-video. A finish date paces you through the theatrical line — 456 films — and the checkbox under the bar adds the other two. The chips at the top hide a channel entirely."
+      "1 is theatrical, 2 is television, 3 is direct-to-video. A finish date paces you through the theatrical line — 458 films — and the checkbox under the bar adds the other two. The chips at the top hide a channel entirely."
     ],
     [
       "Where a film sits on two lists, the studio that made it wins.",
@@ -50,7 +50,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata, for 576 of the 652. The 76 without one — mostly sixties and seventies live-action — weigh nothing rather than a guess."
+      "From Wikidata, for 583 of the 659. The 76 without one — mostly sixties and seventies live-action — weigh nothing rather than a guess."
     ],
     "Film lists from Wikipedia: Walt Disney Pictures films, Disney Channel original films, and Disneytoon Studios productions."
   ],
@@ -877,7 +877,7 @@
     {
       "id": "after",
       "title": "After Walt",
-      "sub": "1967–1988 · 78 theatrical, 20 TV · 133 hours",
+      "sub": "1967–1988 · 79 theatrical, 20 TV · 134 hours",
       "intro": "The studio wobbles for twenty years: live-action comedies, the scruffy seventies animation, and the beginnings of the Disney Channel.",
       "items": [
         {
@@ -1301,6 +1301,16 @@
           ]
         },
         {
+          "id": "dis-1977-the-littlest-horse-thieves",
+          "t": "The Littlest Horse Thieves",
+          "n": "1976",
+          "w": 0.0,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ]
+        },
+        {
           "id": "dis-1976-treasure-of-matecumbe",
           "t": "Treasure of Matecumbe",
           "n": "1976",
@@ -1331,10 +1341,10 @@
           ]
         },
         {
-          "id": "dis-1977-the-littlest-horse-thieves",
-          "t": "The Littlest Horse Thieves",
+          "id": "dis-1977-the-many-adventures-of-winnie-the-pooh",
+          "t": "The Many Adventures of Winnie the Pooh",
           "n": "1977",
-          "w": 0.0,
+          "w": 1.23,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -1885,7 +1895,7 @@
     {
       "id": "renaissance",
       "title": "The Renaissance",
-      "sub": "1989–1999 · 64 theatrical, 36 TV, 7 direct-to-video · 142 hours",
+      "sub": "1989–1999 · 64 theatrical, 36 TV, 9 direct-to-video · 145 hours",
       "intro": "The Little Mermaid through Tarzan, and alongside it the first wave of direct-to-video sequels and Disney Channel movies.",
       "items": [
         {
@@ -2728,6 +2738,17 @@
           ]
         },
         {
+          "id": "dis-1998-belle-s-magical-world",
+          "t": "Belle's Magical World",
+          "n": "1998",
+          "w": 1.12,
+          "tier": 3,
+          "tags": [
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
+        },
+        {
           "id": "dis-1998-meet-the-deedles",
           "t": "Meet the Deedles",
           "n": "1998",
@@ -2970,6 +2991,17 @@
           "note": "TV movie"
         },
         {
+          "id": "dis-1999-mickey-s-once-upon-a-christmas",
+          "t": "Mickey's Once Upon a Christmas",
+          "n": "1999",
+          "w": 1.17,
+          "tier": 3,
+          "tags": [
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
+        },
+        {
           "id": "dis-1999-seasons-of-giving",
           "t": "Seasons of Giving",
           "n": "1999",
@@ -3006,7 +3038,7 @@
     {
       "id": "aughts",
       "title": "The two thousands",
-      "sub": "2000–2009 · 88 theatrical, 65 TV, 21 direct-to-video · 244 hours",
+      "sub": "2000–2009 · 86 theatrical, 65 TV, 23 direct-to-video · 244 hours",
       "intro": "The sequel factory at full tilt, the DCOM golden age, and the slow slide of hand-drawn animation.",
       "items": [
         {
@@ -3270,10 +3302,11 @@
           "t": "Lady and the Tramp II: Scamp's Adventure",
           "n": "2001",
           "w": 1.15,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2001-the-luck-of-the-irish",
@@ -3577,10 +3610,11 @@
           "t": "A Very Merry Pooh Year",
           "n": "2002",
           "w": 1.02,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2002-treasure-planet",
@@ -3608,10 +3642,11 @@
           "t": "101 Dalmatians II: Patch's London Adventure",
           "n": "2003",
           "w": 1.17,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2003-the-jungle-book-2",
@@ -3638,11 +3673,10 @@
           "t": "Piglet's Big Movie",
           "n": "2003",
           "w": 1.25,
-          "tier": 3,
+          "tier": 1,
           "tags": [
-            "Direct-to-video"
-          ],
-          "note": "Direct-to-video"
+            "Theatrical"
+          ]
         },
         {
           "id": "dis-2003-right-on-track",
@@ -3974,10 +4008,11 @@
           "t": "Mickey's Twice Upon a Christmas",
           "n": "2004",
           "w": 1.13,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2004-national-treasure",
@@ -4655,11 +4690,10 @@
           "t": "Tinker Bell",
           "n": "2008",
           "w": 1.3,
-          "tier": 3,
+          "tier": 1,
           "tags": [
-            "Direct-to-video"
-          ],
-          "note": "Direct-to-video"
+            "Theatrical"
+          ]
         },
         {
           "id": "dis-2008-bolt",
@@ -4840,7 +4874,7 @@
     {
       "id": "revival",
       "title": "The Revival",
-      "sub": "2010–2019 · 78 theatrical, 30 TV, 1 direct-to-video · 177 hours",
+      "sub": "2010–2019 · 79 theatrical, 30 TV · 177 hours",
       "intro": "Tangled, Frozen, Moana — and the live-action remakes begin.",
       "items": [
         {
@@ -5487,11 +5521,10 @@
           "t": "Tinker Bell and the Legend of the NeverBeast",
           "n": "2015",
           "w": 1.27,
-          "tier": 3,
+          "tier": 1,
           "tags": [
-            "Direct-to-video"
-          ],
-          "note": "Direct-to-video"
+            "Theatrical"
+          ]
         },
         {
           "id": "dis-2015-cinderella",
@@ -5969,7 +6002,7 @@
     {
       "id": "plus",
       "title": "The Disney+ era",
-      "sub": "2020–2028 · 67 theatrical, 16 TV · 95 hours",
+      "sub": "2020–2028 · 69 theatrical, 18 TV · 102 hours",
       "intro": "Streaming first, cinemas second, and the remakes keep coming.",
       "items": [
         {
@@ -6536,7 +6569,7 @@
           "id": "dis-2024-big-city-greens-the-movie-spacecation",
           "t": "Big City Greens the Movie: Spacecation",
           "n": "2024",
-          "w": 0.0,
+          "w": 1.37,
           "tier": 2,
           "tags": [
             "Television"
@@ -6649,7 +6682,7 @@
           "id": "dis-2025-freakier-friday",
           "t": "Freakier Friday",
           "n": "2025",
-          "w": 0.0,
+          "w": 1.85,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -6659,7 +6692,7 @@
           "id": "dis-2025-tron-ares",
           "t": "Tron: Ares",
           "n": "2025",
-          "w": 0.0,
+          "w": 1.98,
           "tier": 1,
           "tags": [
             "Theatrical"
@@ -6703,8 +6736,7 @@
           "tier": 1,
           "tags": [
             "Theatrical"
-          ],
-          "note": "Not out yet"
+          ]
         },
         {
           "id": "dis-2026-moana",
@@ -6720,27 +6752,38 @@
           "id": "dis-2026-descendants-wicked-wonderland",
           "t": "Descendants: Wicked Wonderland",
           "n": "2026",
-          "w": 0.0,
+          "w": 1.58,
           "tier": 2,
           "tags": [
             "Television"
           ],
-          "note": "TV movie · Not out yet"
+          "note": "TV movie"
         },
         {
           "id": "dis-2026-camp-rock-3",
           "t": "Camp Rock 3",
           "n": "2026",
-          "w": 0.0,
+          "w": 1.53,
           "tier": 2,
           "tags": [
             "Television"
           ],
-          "note": "TV movie · Not out yet"
+          "note": "TV movie"
         },
         {
           "id": "dis-2026-hexed",
           "t": "Hexed",
+          "n": "2026",
+          "w": 0.0,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ],
+          "note": "Not out yet"
+        },
+        {
+          "id": "dis-2026-diary-of-a-wimpy-kid-christmas-the-getaway",
+          "t": "Diary of a Wimpy Kid Christmas: The Getaway",
           "n": "2026",
           "w": 0.0,
           "tier": 1,
@@ -6761,8 +6804,41 @@
           "note": "Not out yet"
         },
         {
+          "id": "dis-2027-wolf",
+          "t": "Wolf",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 1,
+          "tags": [
+            "Theatrical"
+          ],
+          "note": "Not out yet"
+        },
+        {
+          "id": "dis-2027-hidden-heroes-a-descendants-story",
+          "t": "Hidden Heroes: A Descendants Story",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 2,
+          "tags": [
+            "Television"
+          ],
+          "note": "TV movie · Not out yet"
+        },
+        {
           "id": "dis-2027-the-cheetah-girls-next-gen",
           "t": "The Cheetah Girls: Next Gen",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 2,
+          "tags": [
+            "Television"
+          ],
+          "note": "TV movie · Not out yet"
+        },
+        {
+          "id": "dis-2027-zombies-5-secrets-of-the-sea",
+          "t": "Zombies 5: Secrets of the Sea",
           "n": "2027",
           "w": 0.0,
           "tier": 2,
@@ -6808,11 +6884,12 @@
           "id": "dis-2028-lilo-stitch-2",
           "t": "Lilo & Stitch 2",
           "n": "2028",
-          "w": 1.8,
+          "w": 0.0,
           "tier": 1,
           "tags": [
             "Theatrical"
-          ]
+          ],
+          "note": "Not out yet"
         },
         {
           "id": "dis-2028-clay",

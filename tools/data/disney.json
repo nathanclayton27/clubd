@@ -984,6 +984,14 @@
   "runtime": 112
  },
  {
+  "t": "The Littlest Horse Thieves",
+  "page": "The Littlest Horse Thieves",
+  "date": "1976-05-26",
+  "kind": "theatrical",
+  "note": "released in American theaters in 1977; also known as Escape from the Dark",
+  "runtime": null
+ },
+ {
   "t": "Treasure of Matecumbe",
   "page": "Treasure of Matecumbe",
   "date": "1976-07-01",
@@ -1008,12 +1016,12 @@
   "runtime": 91
  },
  {
-  "t": "The Littlest Horse Thieves",
-  "page": "Escape from the Dark",
+  "t": "The Many Adventures of Winnie the Pooh",
+  "page": "The Many Adventures of Winnie the Pooh",
   "date": "1977-03-11",
   "kind": "theatrical",
-  "note": "released in European theaters in 1976; also known as Escape from the Dark",
-  "runtime": null
+  "note": "anthology film, last animated short films with personal involvement from Walt Disney",
+  "runtime": 74
  },
  {
   "t": "The Rescuers",
@@ -2100,7 +2108,7 @@
   "page": "Beauty and the Beast: The Enchanted Christmas",
   "date": "1997-11-11",
   "kind": "direct-to-video",
-  "note": "rowspan=\"2\" | Beauty and the Beast",
+  "note": "Beauty and the Beast",
   "runtime": 72
  },
  {
@@ -2118,6 +2126,14 @@
   "kind": "theatrical",
   "note": "co-production with UPA Productions",
   "runtime": 84
+ },
+ {
+  "t": "Belle's Magical World",
+  "page": "Belle's Magical World",
+  "date": "1998-02-17",
+  "kind": "direct-to-video",
+  "note": "Beauty and the Beast",
+  "runtime": 67
  },
  {
   "t": "Meet the Deedles",
@@ -2320,6 +2336,14 @@
   "runtime": 108
  },
  {
+  "t": "Mickey's Once Upon a Christmas",
+  "page": "Mickey's Once Upon a Christmas",
+  "date": "1999-11-09",
+  "kind": "direct-to-video",
+  "note": "Mickey Mouse",
+  "runtime": 70
+ },
+ {
   "t": "Seasons of Giving",
   "page": "Seasons of Giving",
   "date": "1999-11-09",
@@ -2364,7 +2388,7 @@
   "page": "The Tigger Movie",
   "date": "2000-02-11",
   "kind": "theatrical",
-  "note": "co-production with Walt Disney Television Animation",
+  "note": "Winnie the Pooh",
   "runtime": 74
  },
  {
@@ -2539,8 +2563,8 @@
   "t": "Lady and the Tramp II: Scamp's Adventure",
   "page": "Lady and the Tramp II: Scamp's Adventure",
   "date": "2001-02-27",
-  "kind": "theatrical",
-  "note": "co-production with Walt Disney Television Animation",
+  "kind": "direct-to-video",
+  "note": "Lady and the Tramp",
   "runtime": 69
  },
  {
@@ -2771,8 +2795,8 @@
   "t": "A Very Merry Pooh Year",
   "page": "A Very Merry Pooh Year",
   "date": "2002-11-12",
-  "kind": "theatrical",
-  "note": "co-production with Walt Disney Television Animation",
+  "kind": "direct-to-video",
+  "note": "Winnie the Pooh",
   "runtime": 61
  },
  {
@@ -2795,8 +2819,8 @@
   "t": "101 Dalmatians II: Patch's London Adventure",
   "page": "101 Dalmatians II: Patch's London Adventure",
   "date": "2003-01-21",
-  "kind": "theatrical",
-  "note": "co-production with Walt Disney Television Animation",
+  "kind": "direct-to-video",
+  "note": "101 Dalmatians",
   "runtime": 70
  },
  {
@@ -2819,7 +2843,7 @@
   "t": "Piglet's Big Movie",
   "page": "Piglet's Big Movie",
   "date": "2003-03-21",
-  "kind": "direct-to-video",
+  "kind": "theatrical",
   "note": "Winnie the Pooh",
   "runtime": 75
  },
@@ -2858,7 +2882,7 @@
  {
   "t": "Atlantis: Milo's Return",
   "page": "Atlantis: Milo's Return",
-  "date": "2003-05-20",
+  "date": "2003-05-13",
   "kind": "direct-to-video",
   "note": "Atlantis: The Lost Empire",
   "runtime": 77
@@ -2953,7 +2977,7 @@
  },
  {
   "t": "Pixel Perfect",
-  "page": "Pixel Perfect",
+  "page": "Pixel Perfect (film)",
   "date": "2004-01-16",
   "kind": "television",
   "note": "",
@@ -2978,7 +3002,7 @@
  {
   "t": "The Lion King 1½",
   "page": "The Lion King 1½",
-  "date": "2004-02-10",
+  "date": "2004-02-13",
   "kind": "direct-to-video",
   "note": "The Lion King",
   "runtime": 77
@@ -3076,7 +3100,7 @@
   "page": "Mickey, Donald, Goofy: The Three Musketeers",
   "date": "2004-08-17",
   "kind": "direct-to-video",
-  "note": "rowspan=\"2\" | Mickey Mouse",
+  "note": "Mickey Mouse",
   "runtime": 68
  },
  {
@@ -3091,8 +3115,8 @@
   "t": "Mickey's Twice Upon a Christmas",
   "page": "Mickey's Twice Upon a Christmas",
   "date": "2004-11-09",
-  "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "kind": "direct-to-video",
+  "note": "Mickey Mouse",
   "runtime": 68
  },
  {
@@ -3635,8 +3659,8 @@
   "t": "Tinker Bell",
   "page": "Tinker Bell (film)",
   "date": "2008-10-28",
-  "kind": "direct-to-video",
-  "note": "rowspan=\"4\" | Disney Fairies",
+  "kind": "theatrical",
+  "note": "Disney Fairies",
   "runtime": 78
  },
  {
@@ -3780,7 +3804,7 @@
   "page": "Tinker Bell and the Lost Treasure",
   "date": "2009-10-27",
   "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "note": "Disney Fairies",
   "runtime": 81
  },
  {
@@ -3900,7 +3924,7 @@
   "page": "Tinker Bell and the Great Fairy Rescue",
   "date": "2010-09-21",
   "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "note": "Disney Fairies",
   "runtime": 76
  },
  {
@@ -4164,7 +4188,7 @@
   "page": "Secret of the Wings",
   "date": "2012-10-23",
   "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "note": "Disney Fairies",
   "runtime": 75
  },
  {
@@ -4212,7 +4236,7 @@
   "page": "Planes (film)",
   "date": "2013-08-09",
   "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "note": "Cars",
   "runtime": 92
  },
  {
@@ -4252,7 +4276,7 @@
   "page": "The Pirate Fairy",
   "date": "2014-04-01",
   "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "note": "Disney Fairies",
   "runtime": 78
  },
  {
@@ -4292,7 +4316,7 @@
   "page": "Planes: Fire & Rescue",
   "date": "2014-07-18",
   "kind": "theatrical",
-  "note": "co-production with Disneytoon Studios",
+  "note": "Cars",
   "runtime": 83
  },
  {
@@ -4355,7 +4379,7 @@
   "t": "Tinker Bell and the Legend of the NeverBeast",
   "page": "Tinker Bell and the Legend of the NeverBeast",
   "date": "2015-03-03",
-  "kind": "direct-to-video",
+  "kind": "theatrical",
   "note": "Disney Fairies",
   "runtime": 76
  },
@@ -5173,7 +5197,7 @@
   "date": "2024-06-06",
   "kind": "television",
   "note": "",
-  "runtime": null
+  "runtime": 82
  },
  {
   "t": "Descendants: The Rise of Red",
@@ -5261,7 +5285,7 @@
   "date": "2025-08-08",
   "kind": "theatrical",
   "note": "co-production with Gunn Films and Burr! Productions",
-  "runtime": null
+  "runtime": 111
  },
  {
   "t": "Tron: Ares",
@@ -5269,7 +5293,7 @@
   "date": "2025-10-10",
   "kind": "theatrical",
   "note": "co-production with Sean Bailey Productions",
-  "runtime": null
+  "runtime": 119
  },
  {
   "t": "Zootopia 2",
@@ -5317,7 +5341,7 @@
   "date": "2026-07-16",
   "kind": "television",
   "note": "",
-  "runtime": null
+  "runtime": 95
  },
  {
   "t": "Camp Rock 3",
@@ -5325,7 +5349,7 @@
   "date": "2026-08-13",
   "kind": "television",
   "note": "",
-  "runtime": null
+  "runtime": 92
  },
  {
   "t": "Hexed",
@@ -5333,6 +5357,14 @@
   "date": "2026-11-25",
   "kind": "theatrical",
   "note": "co-production with Walt Disney Animation Studios",
+  "runtime": null
+ },
+ {
+  "t": "Diary of a Wimpy Kid Christmas: The Getaway",
+  "page": "Diary of a Wimpy Kid: The Getaway#Adaptation",
+  "date": "2026-12-04",
+  "kind": "theatrical",
+  "note": "distributed by Disney+",
   "runtime": null
  },
  {
@@ -5344,8 +5376,32 @@
   "runtime": null
  },
  {
+  "t": "Wolf",
+  "page": "Disneynature#Filmography",
+  "date": "2027-04-22",
+  "kind": "theatrical",
+  "note": "Disneynature release; distributed by Disney+",
+  "runtime": null
+ },
+ {
+  "t": "Hidden Heroes: A Descendants Story",
+  "page": "Descendants (franchise)",
+  "date": "2027-07-01",
+  "kind": "television",
+  "note": "",
+  "runtime": null
+ },
+ {
   "t": "The Cheetah Girls: Next Gen",
   "page": "The Cheetah Girls: Next Gen",
+  "date": "2027-07-01",
+  "kind": "television",
+  "note": "",
+  "runtime": null
+ },
+ {
+  "t": "Zombies 5: Secrets of the Sea",
+  "page": "Zombies 5: Secrets of the Sea",
   "date": "2027-07-01",
   "kind": "television",
   "note": "",
@@ -5389,7 +5445,7 @@
   "date": "2028-05-26",
   "kind": "theatrical",
   "note": "co-production with Rideback",
-  "runtime": 108
+  "runtime": null
  },
  {
   "t": "Clay",

@@ -299,7 +299,7 @@ season and number), and *one-location films*. Plus *Zombie Films* — 605 featur
 **Everything at once.** *The Criterion Collection*, all 1,344 spine numbers
 in order with the formats each was released on; *Best Picture*, every nominee
 from every ceremony with the winners marked and a winners-by-decade view;
-*Disney*, the studio's own 654 films with release channels as tiers; and
+*Disney*, the studio's own 659 films with release channels as tiers; and
 *Lego Games*, the originals lumped and the tie-ins by franchise.
 
 The button in the top left switches between them, with a search box. First

@@ -187,7 +187,7 @@
     "discworld":                  ["fantasy", "comedy"],
     "discworld?":                 "Both load-bearing: comic fantasy is the entire proposition.",
     "disney":                     [],
-    "disney?":                    "EXEMPT studio - 652 films with nothing in common but the logo.",
+    "disney?":                    "EXEMPT studio - 659 films with nothing in common but the logo.",
     "dnd-novels":                 ["fantasy"],
     "doctor-who":                 ["sci-fi"],
     "doctor-who?":                "AMBIGUOUS, flagged in advance - sci-fi by premise, anything at all by episode: historical, horror, farce. Filed sci-fi because the show is about a time machine.",
