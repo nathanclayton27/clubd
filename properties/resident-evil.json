@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 80,
   "year": "1996–",
-  "blurb": "19 games in release order — about 198 hours of story, 109 of it the mainline spine.",
+  "blurb": "20 games in release order — about 198 hours of story, 109 of it the mainline spine.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -199,7 +199,7 @@
     {
       "id": "twotracks",
       "title": "Two tracks at once",
-      "sub": "2019–2026 · 5 games · 52 hours story",
+      "sub": "2019–2027 · 6 games · 52 hours story",
       "items": [
         {
           "id": "re-re2r",
@@ -243,6 +243,15 @@
           "w": 11.04,
           "tier": 1,
           "note": "The ninth mainline game — a new lead, and a return to Raccoon City."
+        },
+        {
+          "id": "re-veronica",
+          "t": "Resident Evil Veronica",
+          "n": "2027",
+          "w": 0,
+          "tier": 3,
+          "note": "Not out yet — dated 2027, and the bar stays empty until HowLongToBeat has hours for it. Remake of Code: Veronica — third-person, built along the lines of the 2019 Resident Evil 2.",
+          "opt": 1
         }
       ],
       "intro": "Since 2019 the series runs remakes of the classics alongside new mainline entries, one lane feeding the other."

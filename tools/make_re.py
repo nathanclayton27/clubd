@@ -19,13 +19,35 @@ Tiers:
   3  the remakes (marked) and the two kept spin-offs
 
 Requiem (February 2026) is the ninth mainline game and is included with
-real HLTB data.  Resident Evil Veronica, the Code: Veronica remake, is due
-2027 and gets a note rather than a row.
+real HLTB data.
+
+Unreleased work is listed when the source dates it, and weighs zero (the
+house rule: a source date, even a bare year, earns a row; undated work does
+not).  Resident Evil Veronica, the Code: Veronica remake, is a row: its own
+Wikipedia article's infobox reads `released = 2027` and its lead "scheduled
+for release in 2027", and the franchise article's timeline slots it under
+2027 (both fetched 2026-11-11, kept as scratch/re/veronica.wiki and
+scratch/re/franchise.wiki).  It carries an explicit w of 0 — the page books
+a row with no w as one hour — and says why in its note.  HowLongToBeat only
+carries a main-story figure for a game people have finished, so when 2027
+has passed without one in the data file the build fails here and the row
+comes back for review.
 """
+import datetime
 import json
 import pathlib
 
 SLUG = "resident-evil"
+
+# Rows with no HowLongToBeat record because the game is not out yet. Each
+# ships with an explicit w of 0 and NOT_OUT in front of its note; main()
+# asserts the stated year has not passed.
+UNRELEASED = {"veronica"}
+
+# Prefixed to an unreleased row's own note, so the row still reads correctly
+# the day it ships and the note needs no second edit.
+NOT_OUT = ("Not out yet — dated %d, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
 
 # key in the data file, expected HLTB name, display title, display year,
 # tier, note, opt
@@ -85,6 +107,9 @@ ROSTER = [
     ("requiem", "Resident Evil Requiem", "Resident Evil Requiem", 2026, 1,
      "The ninth mainline game — a new lead, and a return to Raccoon City.",
      0),
+    ("veronica", None, "Resident Evil Veronica", 2027, 3,
+     "Remake of Code: Veronica — third-person, built along the lines of "
+     "the 2019 Resident Evil 2.", 1),
 ]
 
 ERAS = [
@@ -110,9 +135,26 @@ def main():
 
     entries = []
     used = set()
+    today = datetime.date.today()
     for key, expect, title, year, tier, note, opt in ROSTER:
         rec = data.get(key)
+        if key in UNRELEASED and not rec:
+            # Dated to a year and not out: a row because the source dates
+            # it, weightless because nobody has finished it yet.
+            assert today.year <= year, (
+                "%s was dated %d and that year has passed with no "
+                "HowLongToBeat record. Collect its hours into "
+                "tools/data/residentevil.json and drop it from UNRELEASED."
+                % (title, year))
+            x = {"id": "re-%s" % key, "t": title, "n": str(year),
+                 "w": 0, "tier": tier, "year": year,
+                 "note": " ".join([NOT_OUT % year, note]).strip()}
+            if opt:
+                x["opt"] = 1
+            entries.append(x)
+            continue
         assert rec, "no HLTB record for %s" % key
+        assert expect, "no expected HLTB name for %s" % key
         assert rec["name"].lower() == expect.lower(), (
             "record mismatch for %s: %r" % (key, rec["name"]))
         assert rec["year"] == year, (
@@ -150,12 +192,15 @@ def main():
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == len(ROSTER) == 19, (len(ids),)
+    assert len(ids) == len(ROSTER) == 20, (len(ids),)
     tiers = {t: [x for s in sections for x in s["items"] if x["tier"] == t]
              for t in (1, 2, 3)}
     assert len(tiers[1]) == 10, "spine should be 10 games, got %d" % len(tiers[1])
     assert len(tiers[2]) == 3, "tier 2 should be 3 games, got %d" % len(tiers[2])
-    assert len(tiers[3]) == 6, "tier 3 should be 6 games, got %d" % len(tiers[3])
+    assert len(tiers[3]) == 7, "tier 3 should be 7 games, got %d" % len(tiers[3])
+    # The only weightless rows are the ones this file knows are unreleased.
+    zeros = {x["id"] for s in sections for x in s["items"] if x["w"] == 0}
+    assert zeros == {"re-%s" % k for k in UNRELEASED if k not in data}, zeros
 
     hours = sum(x["w"] for s in sections for x in s["items"])
     spine = sum(x["w"] for x in tiers[1])
