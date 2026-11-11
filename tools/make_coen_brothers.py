@@ -6,12 +6,18 @@
 The eighteen features Joel and Ethan Coen made together, in release order,
 plus the solo films in their own section with a note saying whose each one
 is. Joel's Macbeth, Ethan's Jerry Lee Lewis documentary, Drive-Away Dolls
-and Honey Don't!.
+and Honey Don't!, and Joel's Jack of Spades.
+
+Jack of Spades is not out. Both Wikipedia pages date it 2027 (the Jack of
+Spades article: Netflix opens it in theatres in fall 2027), so it is a row
+under the house rule for dated announced work, with "due" in the data file,
+no runtime, w: 0, and a note on the row saying so. Joel directs it alone;
+Ethan is one of its four writers, which the row also says. When it opens,
+add its Wikidata runtime and drop "due".
 
 Left out, with reasons: their segments of Paris, je t'aime and Chacun son
 cinéma (segments, not features), The Naked Man (Ethan co-wrote, didn't
-direct), Jack of Spades (2027, unreleased), and everything they only wrote
-or produced for other directors.
+direct), and everything they only wrote or produced for other directors.
 """
 import json
 import pathlib
@@ -40,7 +46,14 @@ WHO_NOTE = {
     "Jerry Lee Lewis: Trouble in Mind": "Ethan, alone · documentary",
     "Drive-Away Dolls": "Ethan, alone · co-written with Tricia Cooke",
     "Honey Don't!": "Ethan, alone · co-written with Tricia Cooke",
+    "Jack of Spades": "Joel, alone · co-written with Ethan, Eleanor Catton "
+                      "and Conor McPherson",
 }
+
+# Appended to an unreleased row's note; "due" comes from the data file.
+NOT_OUT = "Not out yet — due %s, and the bar stays empty until it opens"
+
+WORDS = {4: "four", 5: "five", 6: "six", 7: "seven", 18: "eighteen"}
 
 
 def slug(t):
@@ -50,12 +63,18 @@ def slug(t):
     return keep.strip("-")
 
 
+def mins(f):
+    return f["runtime"] or 0
+
+
 def item(f, prefix_note=None):
     it = {"id": "cb-%d-%s" % (f["year"], slug(f["t"])),
           "t": f["t"], "n": str(f["year"]),
-          "w": round(f["runtime"] / 60.0, 2)}
-    if prefix_note:
-        it["note"] = prefix_note
+          "w": round(f["runtime"] / 60.0, 2) if f["runtime"] else 0}
+    bits = [b for b in (prefix_note,
+                        NOT_OUT % f["due"] if f.get("due") else None) if b]
+    if bits:
+        it["note"] = " · ".join(bits)
     return it
 
 
@@ -67,9 +86,13 @@ def main():
     solo = sorted((f for f in films if f["who"] != "joint"),
                   key=lambda f: (f["year"], f["t"]))
     assert len(joint) == 18, len(joint)
-    assert len(solo) == 4, [f["t"] for f in solo]
-    assert all(f["runtime"] for f in films), \
-        [f["t"] for f in films if not f["runtime"]]
+    assert len(solo) == 5, [f["t"] for f in solo]
+    # Every film has a runtime, except one that is not out: that one has a
+    # source-given "due" and no runtime, never both and never neither.
+    assert all(bool(f["runtime"]) != bool(f.get("due")) for f in films), \
+        [f["t"] for f in films if bool(f["runtime"]) == bool(f.get("due"))]
+    assert not any(f.get("due") for f in joint)
+    coming = [f for f in solo if f.get("due")]
     assert set(WHO_NOTE) == {f["t"] for f in solo}, [f["t"] for f in solo]
     for f in solo:
         assert WHO_NOTE[f["t"]].startswith(f["who"]), (f["t"], f["who"])
@@ -88,11 +111,14 @@ def main():
         sections.append(sec)
     assert sum(len(s["items"]) for s in sections) == 18
 
+    solo_sub = ("%d–%d · %d films · %d hours"
+                % (solo[0]["year"], solo[-1]["year"], len(solo),
+                   round(sum(mins(f) for f in solo) / 60.0)))
+    if coming:
+        solo_sub += " · %d not out yet" % len(coming)
     sections.append({
         "id": "solo", "title": "Solo",
-        "sub": "%d–%d · %d films · %d hours"
-               % (solo[0]["year"], solo[-1]["year"], len(solo),
-                  round(sum(f["runtime"] for f in solo) / 60.0)),
+        "sub": solo_sub,
         "intro": "After Buster Scruggs they worked apart for a stretch — "
                  "Joel toward Shakespeare, Ethan toward a Jerry Lee Lewis "
                  "documentary and two lesbian B-movie capers. Each row says "
@@ -102,7 +128,7 @@ def main():
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == len(films) == 22, (len(ids), len(films))
+    assert len(ids) == len(films) == 23, (len(ids), len(films))
     for s in sections:
         assert all(a["n"] <= b["n"] for a, b in zip(s["items"], s["items"][1:])), \
             "%s is out of year order" % s["title"]
@@ -112,7 +138,8 @@ def main():
     prop = {
         "slug": SLUG,
         "title": "The Coen Brothers",
-        "subtitle": "eighteen together, four apart",
+        "subtitle": "%s together, %s apart" % (WORDS[len(joint)],
+                                              WORDS[len(solo)]),
         "kind": "films",
         "popularity": 67,
         # Not a story, so not a sequence: the order these came out in
@@ -120,10 +147,12 @@ def main():
         # (Nathan, CLU-372). Prerequisites, where any exist, live in
         # tools/data/sequences.json and are enforced separately.
         "random": True,
-        "year": "1984–2025",
-        "blurb": "The eighteen features Joel and Ethan made together, plus "
-                 "the four solo films with a note saying whose — about %d "
-                 "hours." % round(hours),
+        "year": "%d–%d" % (min(f["year"] for f in films),
+                           max(f["year"] for f in films)),
+        "blurb": "The %s features Joel and Ethan made together, plus "
+                 "the %s solo films with a note saying whose — about %d "
+                 "hours." % (WORDS[len(joint)], WORDS[len(solo)],
+                             round(hours)),
         "unit": {"one": "film", "many": "films"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "accent": "#6E5533",
@@ -137,11 +166,10 @@ def main():
              "so does this list."],
             ["What isn't here.", "Their segments of the anthology films "
              "Paris, je t'aime and Chacun son cinéma, The Naked Man (Ethan "
-             "co-wrote it, nobody named Coen directed it), the unreleased "
-             "Jack of Spades, and the scripts and producing jobs for other "
-             "directors."],
-            ["Bar widths are runtimes.", "From Wikidata, in hours, for all "
-             "22 films."],
+             "co-wrote it, nobody named Coen directed it), and the scripts "
+             "and producing jobs for other directors."],
+            ["Bar widths are runtimes.", "From Wikidata, in hours, for the "
+             "%d films that are out." % (len(films) - len(coming))],
             "Filmography from Wikipedia's Coen brothers filmography; "
             "runtimes from Wikidata.",
         ],

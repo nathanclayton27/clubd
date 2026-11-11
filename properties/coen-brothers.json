@@ -1,12 +1,12 @@
 {
   "slug": "coen-brothers",
   "title": "The Coen Brothers",
-  "subtitle": "eighteen together, four apart",
+  "subtitle": "eighteen together, five apart",
   "kind": "films",
   "popularity": 67,
   "random": true,
-  "year": "1984–2025",
-  "blurb": "The eighteen features Joel and Ethan made together, plus the four solo films with a note saying whose — about 38 hours.",
+  "year": "1984–2027",
+  "blurb": "The eighteen features Joel and Ethan made together, plus the five solo films with a note saying whose — about 38 hours.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -26,11 +26,11 @@
     ],
     [
       "What isn't here.",
-      "Their segments of the anthology films Paris, je t'aime and Chacun son cinéma, The Naked Man (Ethan co-wrote it, nobody named Coen directed it), the unreleased Jack of Spades, and the scripts and producing jobs for other directors."
+      "Their segments of the anthology films Paris, je t'aime and Chacun son cinéma, The Naked Man (Ethan co-wrote it, nobody named Coen directed it), and the scripts and producing jobs for other directors."
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata, in hours, for all 22 films."
+      "From Wikidata, in hours, for the 22 films that are out."
     ],
     "Filmography from Wikipedia's Coen brothers filmography; runtimes from Wikidata."
   ],
@@ -171,7 +171,7 @@
     {
       "id": "solo",
       "title": "Solo",
-      "sub": "2021–2025 · 4 films · 6 hours",
+      "sub": "2021–2027 · 5 films · 6 hours · 1 not out yet",
       "intro": "After Buster Scruggs they worked apart for a stretch — Joel toward Shakespeare, Ethan toward a Jerry Lee Lewis documentary and two lesbian B-movie capers. Each row says whose film it is.",
       "items": [
         {
@@ -201,6 +201,13 @@
           "n": "2025",
           "w": 1.48,
           "note": "Ethan, alone · co-written with Tricia Cooke"
+        },
+        {
+          "id": "cb-2027-jack-of-spades",
+          "t": "Jack of Spades",
+          "n": "2027",
+          "w": 0,
+          "note": "Joel, alone · co-written with Ethan, Eleanor Catton and Conor McPherson · Not out yet — due fall 2027, and the bar stays empty until it opens"
         }
       ]
     }
