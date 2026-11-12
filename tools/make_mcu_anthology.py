@@ -105,6 +105,20 @@ SHOW_ID = {
         "mv-t-2025-your-friendly-neighborhood-spider-man",
 }
 
+# Films on the list before they have a real title. An id is minted from the
+# title and year, so the day the title arrives the row would get a new id and
+# drop every tick stored on the old one. These keep the id they shipped with.
+# When the title changes in films.json, re-key the entry here and in the sets
+# above; main() refuses to write while a pinned id is missing from the page.
+# Both read 2026-11-12 from Wikipedia's List of Marvel Cinematic Universe films.
+FILM_ID = {
+    # listed as "Untitled X-Men film", 5 May 2028
+    "Untitled X-Men film": "mv-f-2028-untitled-x-men-film",
+    # a working title: it has no article of its own, only a redirect to
+    # Wakanda Forever's sequel section
+    "Black Panther III": "mv-f-2028-black-panther-iii",
+}
+
 
 # The films Marvel Studios made. Everything else on this list shares a release
 # window with a phase without being in one, and says so — a section called
@@ -244,7 +258,7 @@ def main():
         key = "%s (%d)" % (title, f["year"]) if seen.count(title) > 1 else title
         mins = f["runtime"] or 0
         entries.append({
-            "id": "mv-f-%d-%s" % (f["year"], slug(title)),
+            "id": FILM_ID.get(key) or "mv-f-%d-%s" % (f["year"], slug(title)),
             "t": title, "n": str(f["year"]),
             "w": round(mins / 60.0, 2),
             "tier": 1 if key in T1 else (2 if key in T2 else 3),
@@ -406,6 +420,10 @@ def main():
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
     assert len(ids) == len(entries), (len(ids), len(entries))
+    lost = sorted((set(FILM_ID.values()) | set(SHOW_ID.values())) - set(ids))
+    assert not lost, "pinned ids missing from the page: %s. A retitled row " \
+        "needs its FILM_ID or SHOW_ID key updated, or the new id unticks " \
+        "everyone who had the old one" % lost
     hours = sum(e["mins"] for e in entries) / 60.0
     per = {1: 0, 2: 0, 3: 0}
     hrs = {1: 0.0, 2: 0.0, 3: 0.0}
