@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 96,
   "year": "1937–",
-  "blurb": "659 films from Snow White on — 458 theatrical, 169 television, 32 direct-to-video — about 922 hours.",
+  "blurb": "659 films from Snow White on — 455 theatrical, 169 television, 35 direct-to-video — about 922 hours.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -38,11 +38,11 @@
   "notes": [
     [
       "This is what Disney itself made.",
-      "No acquired properties: no Star Wars, no Marvel, no Pixar, no 20th Century, no Muppets. Those are their own studios, and several have their own lists here. Nor anything Disney only released for somebody else — the source marks those in its notes column and 23 films drop out on it, Ponyo and The Secret World of Arrietty among them. What is left is Walt Disney Pictures, Disney Channel and Disneytoon."
+      "No acquired properties: no Star Wars, no Marvel, no 20th Century, no Muppets, and no Pixar except Elio, Hoppers, Gatto and Ghost Market. Those are their own studios, and several have their own lists here. Nor anything Disney only released for somebody else — the source marks those in its notes column and 23 films drop out on it, Ponyo and The Secret World of Arrietty among them. What is left is Walt Disney Pictures, Disney Channel and Disneytoon."
     ],
     [
       "Tiers are release channels, not rankings.",
-      "1 is theatrical, 2 is television, 3 is direct-to-video. A finish date paces you through the theatrical line — 458 films — and the checkbox under the bar adds the other two. The chips at the top hide a channel entirely."
+      "1 is theatrical, 2 is television, 3 is direct-to-video. A finish date paces you through the theatrical line — 455 films — and the checkbox under the bar adds the other two. The chips at the top hide a channel entirely."
     ],
     [
       "Where a film sits on two lists, the studio that made it wins.",
@@ -3038,7 +3038,7 @@
     {
       "id": "aughts",
       "title": "The two thousands",
-      "sub": "2000–2009 · 86 theatrical, 65 TV, 23 direct-to-video · 244 hours",
+      "sub": "2000–2009 · 84 theatrical, 65 TV, 25 direct-to-video · 244 hours",
       "intro": "The sequel factory at full tilt, the DCOM golden age, and the slow slide of hand-drawn animation.",
       "items": [
         {
@@ -4690,10 +4690,11 @@
           "t": "Tinker Bell",
           "n": "2008",
           "w": 1.3,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2008-bolt",
@@ -4824,10 +4825,11 @@
           "t": "Tinker Bell and the Lost Treasure",
           "n": "2009",
           "w": 1.35,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2009-the-book-of-masters",
@@ -4874,7 +4876,7 @@
     {
       "id": "revival",
       "title": "The Revival",
-      "sub": "2010–2019 · 79 theatrical, 30 TV · 177 hours",
+      "sub": "2010–2019 · 78 theatrical, 30 TV, 1 direct-to-video · 177 hours",
       "intro": "Tangled, Frozen, Moana — and the live-action remakes begin.",
       "items": [
         {
@@ -4965,10 +4967,11 @@
           "t": "Tinker Bell and the Great Fairy Rescue",
           "n": "2010",
           "w": 1.27,
-          "tier": 1,
+          "tier": 3,
           "tags": [
-            "Theatrical"
-          ]
+            "Direct-to-video"
+          ],
+          "note": "Direct-to-video"
         },
         {
           "id": "dis-2010-secretariat",

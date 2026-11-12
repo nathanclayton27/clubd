@@ -4,9 +4,10 @@
     python3 tools/make_disney.py
 
 Every Disney film in release order — theatrical, television and direct-to-video
-— with the acquired properties left out: no Star Wars, no Marvel, no Pixar, no
-20th Century, no Muppets. Walt Disney Pictures, Disney Channel and Disneytoon
-are the studio's own output, and that is what "a Disney movie" means here.
+— with the acquired properties left out: no Star Wars, no Marvel, no 20th
+Century, no Muppets, and no Pixar except the four co-productions named below.
+Walt Disney Pictures, Disney Channel and Disneytoon are the studio's own output,
+and that is what "a Disney movie" means here.
 
 Sources, machine-read into tools/data/disney.json:
   - List of Walt Disney Pictures films          theatrical
@@ -24,6 +25,8 @@ Bambi II at tier 1 while the channel note below named it as a direct-to-video
 example. By revision 1383954883 (5 Nov 2026) only Bambi II still does: Tinker
 Bell sits under a "Theatrical" cell spanning eight rows, after edits on 22 Oct
 and 5 Nov 2026, and The Three Musketeers under a five-row "Direct-to-video" one.
+CHANNEL below holds Tinker Bell and the two films after it to what that cell
+said before those edits; see there.
 
 **The same title is not the same film.** Rows are deduplicated on title AND
 year, not on title alone. On the title alone, first one wins, so the 1992
@@ -44,6 +47,15 @@ removes, the marker catches exactly one (Toy Story, which Disney did only
 distribute). The other 37 are co-productions — the source calls them
 "co-production with Pixar Animation Studios" — so the marker is silent on them
 and the blocklist stays.
+
+**Four Pixar films stay, and the note names them.** The blocklist misses
+Elio (2025), Hoppers (2026), Gatto (2027) and Ghost Market (2028), and they
+shipped. Dropping them would take away Elio's and Hoppers' ticks, and a row id
+must never disappear, so in November 2026 (CLU-596, which Nathan delegated) the
+four stayed and the first note stopped promising "no Pixar": it now lists, by
+the source's own "co-production with Pixar" marker, every Pixar film that is
+here. A Pixar title the blocklist misses in future joins that sentence on its
+own rather than falsifying it.
 
 The blocklist matches names, which makes a one-word Pixar title dangerous. Two
 of them, matched on word boundaries, were removing five of Disney's own films:
@@ -99,6 +111,33 @@ ID_YEAR = {
 # territory that varies: "North American", "international", "Benelux",
 # "U.S., Scandinavian, Australian and New Zealand", or nothing at all.
 DISTONLY = re.compile(r"distribution only", re.I)
+
+# The source's marker for a Pixar film. Only the ones the parse's name
+# blocklist misses reach this file; the first note names each of them.
+PIXAR = re.compile(r"co-production with Pixar", re.I)
+
+# (title, the year the source gives): the channel the row keeps, whatever the
+# Disneytoon table says now. CLU-596. Until 22 Oct 2026 (rev 1381090801)
+# Disneytoon filed the first three Tinker Bell films under one three-row
+# "Direct-to-video/Theatrical" cell, which the rule above reads as
+# direct-to-video, and the five films after them under a "Theatrical" cell.
+# On 22 Oct a temporary account inserted 31 Minutes: The Movie, a Chilean
+# film Disneytoon did not make, above Tinker Bell with a nine-row "Theatrical"
+# cell that swallowed both (rev 1381384460); the 5 Nov cleanup took the row
+# out and left the cell spanning eight (rev 1383954883). Nothing sourced moved
+# the three. Every other source agrees with the old wording: the Walt Disney
+# Pictures list footnotes each as a limited theatrical release (Tinker Bell in
+# September 2008, Lost Treasure in Argentina, Great Fairy Rescue in the UK)
+# and dates it by its direct-to-video release, as these rows are dated. The
+# Legend of the NeverBeast is NOT here: Disneytoon called it "Theatrical"
+# before the edit too, and it went to cinemas internationally like The Pirate
+# Fairy and Secret of the Wings, which are theatrical here as well.
+# An entry that stops matching a film fails the build.
+CHANNEL = {
+    ("Tinker Bell", "2008"): "direct-to-video",
+    ("Tinker Bell and the Lost Treasure", "2009"): "direct-to-video",
+    ("Tinker Bell and the Great Fairy Rescue", "2010"): "direct-to-video",
+}
 
 # Rows the old parse invented and shipped, kept here by name so that dropping
 # them cannot be mistaken for an id rename. Each is a production company or a
@@ -173,6 +212,15 @@ def main():
     data = ROOT / "tools" / "data" / ("%s.json" % SLUG)
     allfilms = json.loads(data.read_text(encoding="utf-8"))
 
+    pinned = set()
+    for f in allfilms:
+        key = (f["t"], f["date"][:4])
+        if key in CHANNEL:
+            f["kind"] = CHANNEL[key]
+            pinned.add(key)
+    assert pinned == set(CHANNEL), "CHANNEL names no film in the data: %s" \
+        % (set(CHANNEL) - pinned)
+
     # Nathan's ruling on CLU-274: keep the list's stated rule and drop the rows
     # that break it. The source marks them; we used to ignore the column.
     dropped = [f for f in allfilms if DISTONLY.search(f.get("note") or "")]
@@ -241,6 +289,12 @@ def main():
     hours = sum(f.get("runtime") or 0 for f in films) / 60.0
     nort = sum(1 for f in films if not f.get("runtime"))
 
+    pixar = [f["t"] for f in films if PIXAR.search(f.get("note") or "")]
+    pixar_except = ""
+    if pixar:
+        pixar_except = " except " + (pixar[0] if len(pixar) == 1 else
+                                     ", ".join(pixar[:-1]) + " and " + pixar[-1])
+
     p = {
         "slug": SLUG,
         "title": "Disney",
@@ -271,7 +325,8 @@ def main():
             # went looking for Toy Story, did not find it, and had to reach
             # the second note to learn why.
             ["This is what Disney itself made.", "No acquired properties: no "
-             "Star Wars, no Marvel, no Pixar, no 20th Century, no Muppets. "
+             "Star Wars, no Marvel, no 20th Century, no Muppets, and no Pixar"
+             "%s. " % pixar_except +
              "Those are their own studios, and several have their own lists "
              "here. Nor anything Disney only released for somebody else — the "
              "source marks those in its notes column and %d films drop out on "
