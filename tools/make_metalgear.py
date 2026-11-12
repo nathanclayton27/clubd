@@ -85,6 +85,15 @@ ROSTER = [
      "are the whole bundle", 1),
 ]
 
+# One row whose HLTB headline cannot be right, as (headline in the data file,
+# hours shown). Vol. 2's headline main-story figure (comp_main) is 15 h, below
+# all 7 of its main-story submissions (20 h 34 m to 33 h 43 m, checked
+# 2026-11-12) and below MGS4 alone, so the row carries their median, 27 h.
+# It applies only while the data file still holds that headline: re-pull
+# game 181985 at the next refresh and drop the entry once the headline sits
+# inside the submissions' range.
+HOURS_OVERRIDE = {"master-collection-2": (15.0, 27.0)}
+
 EXTRAS = [
     ("drama-cd", "Metal Gear Solid drama CDs", "1998–99",
      "Two volumes of side stories between MGS1 and 2, Japan only", 1),
@@ -132,8 +141,11 @@ def main():
         want = expect.replace("Δ", "Delta").lower()
         assert got == want, "record mismatch for %s: %r" % (key, rec["name"])
         year = str(rec["year"])[:4]
+        hours = rec["main_h"]
+        if key in HOURS_OVERRIDE and hours == HOURS_OVERRIDE[key][0]:
+            hours = HOURS_OVERRIDE[key][1]
         x = {"id": "mgs-%s" % key, "t": expect, "n": year,
-             "w": rec["main_h"], "tier": tier, "year": int(year),
+             "w": hours, "tier": tier, "year": int(year),
              "date": str(rec["year"]) if "-" in str(rec["year"]) else year + "-07-01"}
         if key == "ghost-babel":
             x["t"] = "Metal Gear: Ghost Babel"

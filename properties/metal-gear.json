@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 74,
   "year": "1987–",
-  "blurb": "27 games and 4 extras — about 415 hours of story, 134 of it the saga spine.",
+  "blurb": "27 games and 4 extras — about 427 hours of story, 134 of it the saga spine.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -280,7 +280,7 @@
     {
       "id": "after",
       "title": "After Kojima",
-      "sub": "2018–2026 · 4 entries · 90 hours story",
+      "sub": "2018–2026 · 4 entries · 102 hours story",
       "items": [
         {
           "id": "mgs-survive",
@@ -313,7 +313,7 @@
           "id": "mgs-master-collection-2",
           "t": "Metal Gear Solid: Master Collection Vol. 2",
           "n": "2026",
-          "w": 15.0,
+          "w": 27.0,
           "tier": 3,
           "note": "MGS4, Peace Walker and Ghost Babel in one modern box — the hours shown are the whole bundle",
           "opt": 1
