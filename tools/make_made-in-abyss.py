@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Generate properties/made-in-abyss.json — both seasons and the one film
-that is not a re-cut of them.
+"""Generate properties/made-in-abyss.json — both seasons and the two films
+that are not re-cuts of them.
 
     python3 tools/make_made-in-abyss.py
 
 Kinema Citrus' adaptation of Akihito Tsukushi's manga, in the order the
-source puts it: season 1, the sequel film, season 2. 26 rows.
+source puts it: season 1, the sequel film, season 2 — then Awakening Mystery,
+the first film of the series announced in 2025, which the franchise article
+calls a sequel to the second season. 27 rows.
 
-THREE FILMS EXIST AND ONLY ONE OF THEM IS A ROW. THIS IS THE WHOLE JOB.
+THE 2019–20 TRILOGY IS THREE FILMS AND ONLY ONE OF THEM IS A ROW. THIS IS
+THE WHOLE JOB.
 Wikipedia's episode-list article files all three under one heading,
 "Theatrical film trilogy (2019–20)", sitting between season 1 and season 2 —
 which is why a reader coming to this cold sees three films and assumes three
@@ -64,6 +67,14 @@ the three films this generator knows, in that order, with those dates; the
 franchise article is asserted to carry exactly four anime video infoboxes, so
 a newly released installment breaks the build instead of going missing; and
 the accent pair is asserted unused by every other property on disk.
+
+AWAKENING MYSTERY (2026-11-11). The episode-list article does not carry it
+yet, so it is read from the franchise article's Films prose instead: the
+announcement sentence, the first film's title and premiere date, the lead's
+"sequel film to the second season", and the sentence saying a second film is
+in production with no date — all asserted, so a second film gaining a date,
+or the first one gaining an infobox, breaks the build. It has no runtime in
+the source, which changes nothing here: the list is unweighted end to end.
 """
 import json
 import pathlib
@@ -80,7 +91,7 @@ FRANCHISE_PAGE = "Made in Abyss"
 
 SEASONS = [1, 2]
 TOTAL_EPISODES = 25    # 13 + 12, asserted three ways
-LISTED = 26            # 25 episodes + one film
+LISTED = 27            # 25 episodes + two films
 
 # The heading the episode-list article files all three films under. It is one
 # section, sitting between the two season sections, and reading it as three
@@ -94,6 +105,8 @@ SEASON_HEADINGS = {1: "=== Season 1 (2017) ===",
 # asserted from the source before either is used.
 COMPILATIONS = ["Journey's Dawn", "Wandering Twilight"]
 SEQUEL_FILM = "Made in Abyss: Dawn of the Deep Soul"
+# the first film of the series announced in 2025; a sequel to season 2
+SERIES_FILM = "Made in Abyss: Awakening Mystery"
 
 ACCENT = "#1F5E63"       # the blue-green dark of the pit
 ACCENT_DARK = "#E8C36A"  # ...against the light coming up out of it
@@ -365,7 +378,9 @@ def franchise_video_blocks(franchise_text):
 
     Counted rather than searched, so an installment that gains an infobox —
     the film series announced for 2026, a third season — fails this build
-    instead of quietly missing from the list."""
+    instead of quietly missing from the list. (Awakening Mystery, the film
+    series' first, has no infobox yet; when it gains one this fails, and its
+    row should then read from that infobox.)"""
     blocks = animanga_videos(franchise_text)
     types = [t for t, _ in blocks]
     assert types == ["tv series", "film series", "film", "tv series"], \
@@ -406,16 +421,16 @@ def check_exclusions(list_text, franchise_text):
     """Everything the notes say is deliberately absent, read from the source.
 
     A note that names what is missing is a claim, and an unchecked claim ages
-    into a lie — so the shorts, the game and the announced film series are all
-    matched here rather than remembered."""
+    into a lie — so the shorts, the game and the film series' undated second
+    film are all matched here rather than remembered."""
     shorts = re.search(r"A four-part series of short films, called "
                        r"\"Marulk's Daily Life\", was produced along the "
                        r"third movie ''Made in Abyss: Dawn of the Deep Soul''",
                        strip_refs(list_text))
     assert shorts, "the list article no longer describes the four shorts " \
-                   "that screened with the film — the notes name them as " \
-                   "deliberately absent and must not name a thing the " \
-                   "source has dropped"
+                   "that screened with Dawn of the Deep Soul — the notes " \
+                   "name them as deliberately absent and must not name a " \
+                   "thing the source has dropped"
 
     game = re.search(r"\{\{Infobox animanga/Game", franchise_text)
     assert game, "the franchise article no longer carries a game infobox"
@@ -427,12 +442,44 @@ def check_exclusions(list_text, franchise_text):
     assert years and len(set(years)) == 1, \
         "the game's release dates are %r" % years
 
+    # the series' second film: announced, in production, and undated — the
+    # notes say so, and a date appearing must break the build so it is listed
+    second = re.search(r"In October (\d{4}), it was announced that a second "
+                       r"film of the series is in production\.",
+                       strip_refs(franchise_text))
+    assert second, "the franchise article no longer says the series' second " \
+                   "film is in production with no date — re-read it: dated, " \
+                   "it ships as a w: 0 row; out, as a row"
+    return int(years[0])
+
+
+def series_film_evidence(franchise_text):
+    """Awakening Mystery, read from the franchise article's Films prose.
+
+    The episode-list article does not carry it, so its title, premiere date
+    and place after season 2 all come from here. Returns (announced year,
+    first year, (y, m, d) premiere)."""
+    body = strip_refs(franchise_text)
     ahead = re.search(r"In August (\d{4}), it was announced that a series of "
-                      r"films would be released starting in (\d{4}) with the "
-                      r"first part", strip_refs(franchise_text))
+                      r"films would be released starting in (\d{4})\.", body)
     assert ahead, "the franchise article no longer describes the announced " \
-                  "film series — the notes say it has no release date yet"
-    return int(years[0]), int(ahead.group(1)), int(ahead.group(2))
+                  "film series"
+    first = re.search(r"The first film, \{\{Nihongo\|''([^'|]+)''\|[^{}]*\}\}, "
+                      r"premiered on (\w+) (\d{1,2}), (\d{4})\.", body)
+    assert first, "the franchise article no longer names and dates the film " \
+                  "series' first film"
+    assert first.group(1) == SERIES_FILM, \
+        "the series' first film is titled %r, expected %r" \
+        % (first.group(1), SERIES_FILM)
+    dated = (int(first.group(4)), MONTHS[first.group(2)], int(first.group(3)))
+    assert dated[0] == int(ahead.group(2)), \
+        "the series was to start in %s, its first film premiered in %s" \
+        % (ahead.group(2), dated[0])
+    assert re.search(r"A sequel film to the second season has been "
+                     r"(?:announced|released)", body), \
+        "the franchise article's lead no longer calls the new film a sequel " \
+        "to the second season — that is why it sits after season 2"
+    return int(ahead.group(1)), dated
 
 
 def check_accent():
@@ -478,8 +525,8 @@ def main():
     # 3. and which one is not
     sequel_dated = sequel_evidence(list_text, franchise_text)
     film_date, film_mins, comp_mins = franchise_video_blocks(franchise_text)
-    game_year, announced, from_year = check_exclusions(list_text,
-                                                       franchise_text)
+    game_year = check_exclusions(list_text, franchise_text)
+    announced, series_date = series_film_evidence(franchise_text)
     assert film_date == sequel_dated, \
         "the infobox dates the film %s, the prose says %s" \
         % (film_date, sequel_dated)
@@ -497,6 +544,8 @@ def main():
         "the compilations are dated %r" % [d for _, _, d in films[:2]]
     assert s1[-1][3] < films[-1][2] < s2[0][3], \
         "the film no longer falls between the two seasons in time"
+    assert s2[-1][3] < series_date, \
+        "Awakening Mystery no longer falls after season 2 in time"
 
     # 5. the two footnoted episode lengths — the only ones in the source, and
     #    the reason the weights note can say exactly what is missing
@@ -534,7 +583,7 @@ def main():
         "title": "Dawn of the Deep Soul",
         "sub": prop.join_bits(str(film_date[0]), "the sequel film",
                               "%d minutes" % film_mins),
-        "intro": "A sequel, not a compilation, and the one film on this list. "
+        "intro": "A sequel, not a compilation. "
                  "The source's own note on season 2's first episode says that "
                  "season picks up directly after it, so it sits here — "
                  "between the seasons, where the episode-list article puts "
@@ -562,7 +611,24 @@ def main():
         ],
     })
 
-    assert [s["id"] for s in sections] == ["s1", "film", "s2"], \
+    # --- the film series' first film ---------------------------------------
+    sections.append({
+        "id": "awakening",
+        "title": "Awakening Mystery",
+        "sub": prop.join_bits(str(series_date[0]), "the sequel to season 2"),
+        "intro": "The first film of the series announced in %d. The franchise "
+                 "article calls it a sequel to the second season, so it comes "
+                 "last." % announced,
+        "items": [{
+            "id": "mia-film-%s" % prop.slug("Awakening Mystery"),
+            "t": SERIES_FILM,
+            "n": str(series_date[0]),
+            "note": prop.join_bits("Feature film",
+                                   "premiered %s" % fmt_date(series_date)),
+        }],
+    })
+
+    assert [s["id"] for s in sections] == ["s1", "film", "s2", "awakening"], \
         [s["id"] for s in sections]
     total = sum(len(s["items"]) for s in sections)
     assert total == LISTED, "%d rows, expected %d" % (total, LISTED)
@@ -580,13 +646,14 @@ def main():
     p = {
         "slug": SLUG,
         "title": "Made in Abyss",
-        "subtitle": "both seasons, and the one film that is not a re-cut",
+        "subtitle": "both seasons, and the two films that are not re-cuts",
         "kind": "anime & films",
         "popularity": 55,
-        "year": "2017–2022",
+        "year": "2017–%d" % series_date[0],
         "blurb": "Kinema Citrus' descent, in the source's own order — twenty "
-                 "five episodes and the sequel film between the seasons, with "
-                 "the two compilation films left off.",
+                 "five episodes, the sequel film between the seasons and the "
+                 "%d film after them, with the two compilation films left off."
+                 % series_date[0],
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -594,7 +661,7 @@ def main():
         "accentDark": ACCENT_DARK,
         "tiers": False,
         "notes": [
-            ["Three films exist. One of them is a row.",
+            ["Four films exist. Two of them are rows.",
              "%s (%s) and %s (%s) are compilation films: the source says they "
              "cover episodes %d–%d and %d–%d, which is the whole of season "
              "one, re-cut for cinemas with a new introduction. They are the "
@@ -617,21 +684,23 @@ def main():
              "Wikipedia documents no running time for this series: neither "
              "television infobox has one and not one of the twenty-five "
              "episode blocks carries one. The only lengths in the source are "
-             "the film's %d minutes and a footnote calling each season's "
+             "Dawn of the Deep Soul's %d minutes and a footnote calling each "
+             "season's "
              "finale a one-hour special. Two durations out of twenty-five "
              "cannot weight a list, and weighting only the film would be "
              "worse than weighting nothing — an unweighted row silently "
              "counts as a full hour, so twenty-five half-hour episodes would "
-             "read as twenty-five hours. Every row counts one, the film "
-             "included, and its runtime is in the row note instead."
+             "read as twenty-five hours. Every row counts one, the films "
+             "included, and Dawn of the Deep Soul's runtime is in its row "
+             "note instead."
              % film_mins],
             ["What else is deliberately absent.",
-             "The four \"Marulk's Daily Life\" shorts that screened with the "
-             "film. The manga the series adapts, and the %d game. A film "
-             "series was announced in %d to begin in %d; the source gives it "
-             "no release date, so it joins when it opens. This list is the "
-             "anime television run and the one film that is not a re-cut of "
-             "it." % (game_year, announced, from_year)],
+             "The four \"Marulk's Daily Life\" shorts that screened with Dawn "
+             "of the Deep Soul. The manga the series adapts, and the %d "
+             "game. A second film in the series that began with "
+             "Awakening Mystery is in production; the source gives it no release date, so it joins "
+             "when it opens. This list is the anime television run and the "
+             "films that are not re-cuts of it." % game_year],
             "Episode titles, air dates, film dates and runtimes machine-read "
             "from Wikipedia's \"List of Made in Abyss episodes\" and \"Made "
             "in Abyss\" articles; each season's count, first air date and "
@@ -643,7 +712,7 @@ def main():
     }
 
     out = prop.write(p)
-    print("wrote %s — %d rows in %d sections (%d episodes + 1 film)"
+    print("wrote %s — %d rows in %d sections (%d episodes + 2 films)"
           % (out.name, total, len(sections), TOTAL_EPISODES))
     print("   compilations refused: %s"
           % ", ".join("%s (%d–%d, %d min)" % (n, a, b, m)

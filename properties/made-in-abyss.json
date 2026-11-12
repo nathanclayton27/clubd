@@ -1,11 +1,11 @@
 {
   "slug": "made-in-abyss",
   "title": "Made in Abyss",
-  "subtitle": "both seasons, and the one film that is not a re-cut",
+  "subtitle": "both seasons, and the two films that are not re-cuts",
   "kind": "anime & films",
   "popularity": 55,
-  "year": "2017–2022",
-  "blurb": "Kinema Citrus' descent, in the source's own order — twenty five episodes and the sequel film between the seasons, with the two compilation films left off.",
+  "year": "2017–2026",
+  "blurb": "Kinema Citrus' descent, in the source's own order — twenty five episodes, the sequel film between the seasons and the 2026 film after them, with the two compilation films left off.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -21,7 +21,7 @@
   "tiers": false,
   "notes": [
     [
-      "Three films exist. One of them is a row.",
+      "Four films exist. Two of them are rows.",
       "Journey's Dawn (January 4, 2019) and Wandering Twilight (January 18, 2019) are compilation films: the source says they cover episodes 1–8 and 9–13, which is the whole of season one, re-cut for cinemas with a new introduction. They are the same viewing as the episodes above, so listing them would count season one twice. If you would rather watch that season as two sittings than as thirteen, they are how — and that is all they are."
     ],
     [
@@ -30,11 +30,11 @@
     ],
     [
       "Nothing is weighted, and hours are not tracked here.",
-      "Wikipedia documents no running time for this series: neither television infobox has one and not one of the twenty-five episode blocks carries one. The only lengths in the source are the film's 105 minutes and a footnote calling each season's finale a one-hour special. Two durations out of twenty-five cannot weight a list, and weighting only the film would be worse than weighting nothing — an unweighted row silently counts as a full hour, so twenty-five half-hour episodes would read as twenty-five hours. Every row counts one, the film included, and its runtime is in the row note instead."
+      "Wikipedia documents no running time for this series: neither television infobox has one and not one of the twenty-five episode blocks carries one. The only lengths in the source are Dawn of the Deep Soul's 105 minutes and a footnote calling each season's finale a one-hour special. Two durations out of twenty-five cannot weight a list, and weighting only the film would be worse than weighting nothing — an unweighted row silently counts as a full hour, so twenty-five half-hour episodes would read as twenty-five hours. Every row counts one, the films included, and Dawn of the Deep Soul's runtime is in its row note instead."
     ],
     [
       "What else is deliberately absent.",
-      "The four \"Marulk's Daily Life\" shorts that screened with the film. The manga the series adapts, and the 2022 game. A film series was announced in 2025 to begin in 2026; the source gives it no release date, so it joins when it opens. This list is the anime television run and the one film that is not a re-cut of it."
+      "The four \"Marulk's Daily Life\" shorts that screened with Dawn of the Deep Soul. The manga the series adapts, and the 2022 game. A second film in the series that began with Awakening Mystery is in production; the source gives it no release date, so it joins when it opens. This list is the anime television run and the films that are not re-cuts of it."
     ],
     "Episode titles, air dates, film dates and runtimes machine-read from Wikipedia's \"List of Made in Abyss episodes\" and \"Made in Abyss\" articles; each season's count, first air date and last air date are asserted against the list article's series overview, and the compilation films' episode ranges are asserted to tile season one exactly, before this builds."
   ],
@@ -118,7 +118,7 @@
       "id": "film",
       "title": "Dawn of the Deep Soul",
       "sub": "2020 · the sequel film · 105 minutes",
-      "intro": "A sequel, not a compilation, and the one film on this list. The source's own note on season 2's first episode says that season picks up directly after it, so it sits here — between the seasons, where the episode-list article puts it.",
+      "intro": "A sequel, not a compilation. The source's own note on season 2's first episode says that season picks up directly after it, so it sits here — between the seasons, where the episode-list article puts it.",
       "items": [
         {
           "id": "mia-film-dawn-of-the-deep-soul",
@@ -194,6 +194,20 @@
           "t": "Gold",
           "n": "12",
           "note": "One-hour season finale"
+        }
+      ]
+    },
+    {
+      "id": "awakening",
+      "title": "Awakening Mystery",
+      "sub": "2026 · the sequel to season 2",
+      "intro": "The first film of the series announced in 2025. The franchise article calls it a sequel to the second season, so it comes last.",
+      "items": [
+        {
+          "id": "mia-film-awakening-mystery",
+          "t": "Made in Abyss: Awakening Mystery",
+          "n": "2026",
+          "note": "Feature film · premiered October 23, 2026"
         }
       ]
     }
