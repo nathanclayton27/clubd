@@ -3,17 +3,18 @@
 
     PYTHONIOENCODING=utf-8 python tools/make_nathan-fielder.py
 
-Everything Nathan Fielder created, in the order it aired: four seasons and a
-special of *Nathan for You*, two seasons of *The Rehearsal*, one season of
-*The Curse*. Fifty-four episodes, three sections, nothing else.
+Everything Nathan Fielder created, in the order it came out: four seasons and
+a special of *Nathan for You*, two seasons of *The Rehearsal*, one season of
+*The Curse*, and his first feature, the documentary *You Can See Everything*.
+Fifty-four episodes and one film, four sections, nothing else.
 
 Every title, number, airdate and count below is machine-read from Wikipedia
 wikitext cached in scratch/nathan-fielder/ — the "Nathan Fielder" article for
 the roster, "List of Nathan for You episodes" plus "Nathan for You" for the
 cable show, "The Rehearsal (TV series)" and "The Curse (American TV series)"
-for the other two. Nothing is typed in from memory, and every number this file
-prints is asserted against the source that produced it before anything is
-written.
+for the other two, and "You Can See Everything" for the film. Nothing is typed
+in from memory, and every number this file prints is asserted against the
+source that produced it before anything is written.
 
 THE RULE FOR WHAT IS ON THE LIST: HE CREATED IT
 ------------------------------------------------
@@ -37,6 +38,14 @@ Fielder always names:
   * ''The Curse''      — "Main role; also co-creator, writer and director",
     with Benny Safdie.
 
+AND A FEATURE FILM HE DIRECTED (CLU-623). Nathan, 2026-11-11, on *You Can See
+Everything*, the 2026 documentary he co-directed with Lance Oppenheim: "it
+definitely gets added to the list". A film has no creator credit to read, so on
+the Film table the credit that makes a work his is director: a row that is not
+a short film, has its own article, and carries a director or co-director
+credit. That admits exactly one today, and main() pins it by name. The shorts
+stay off for the reasons below; the acting rows carry no directing credit.
+
 The test is a bare \\bcreator\\b against the Role and Notes cells of both
 filmography tables, case-insensitive so it catches "Creator" and "co-creator"
 alike. Both cells, not just Notes: the Role column normally holds a character
@@ -46,7 +55,7 @@ nothing in Notes but "Short film". Reading one column is how a credit filter
 goes silently short by a row, and this generator did exactly that for one
 draft before the short-film count came out at four.
 
-main() asserts the roster the test produces is those three and no others. It also
+main() asserts the roster the test produces is those four and no others. It also
 pins the three near-misses by name — *How To with John Wilson* (executive
 producer only), *Who Is America?* (consulting producer and co-director) and
 *Jon Benjamin Has a Van* (creative consultant, the one row whose Notes cell
@@ -61,8 +70,8 @@ article's lead paragraph before its filmography table catches up — which is
 exactly how the Matt Johnson list nearly shipped one film short. So main()
 pulls every italicised wikilink out of the lead and asserts each one is either
 a shipped section or a page this file excludes on purpose, by name, with a
-reason. It also asserts the reverse: every shipped show is named in the lead.
-A fourth Fielder show appearing in the lead fails the build.
+reason. It also asserts the reverse: every shipped work is named in the lead.
+A fourth Fielder show or a second film appearing in the lead fails the build.
 
 The table reader carries rowspans down anyway, though neither of these two
 tables uses one today. It costs four lines and it is the bug that has bitten
@@ -145,11 +154,15 @@ NFY = "Nathan for You"
 NFY_EPS = "List of Nathan for You episodes"
 REHEARSAL = "The Rehearsal (TV series)"
 CURSE = "The Curse (American TV series)"
+FILM = "You Can See Everything"
 
 # The roster rule, as a regex against the filmography Notes cell. \bcreator\b
 # matches "Creator" and the hyphenated "co-creator" alike, and does not match
 # "Creative consultant".
 CREATOR = re.compile(r"\bcreator\b", re.I)
+# The film half of the rule (CLU-623): a Film-table row that is not a short,
+# has an article, and credits him as director — "co-directed" included.
+DIRECTOR = re.compile(r"\bdirect(?:or|ed)\b", re.I)
 
 # Pages the lead names that this list deliberately does not ship. The lead
 # cross-check refuses to pass a title that is neither a section nor in here,
@@ -291,19 +304,28 @@ def main():
             # Reading one column only is how a credit filter goes silently
             # short by a row.
             rec["credits"] = prop.join_bits(rec["role"], rec["notes"])
-            if CREATOR.search(rec["credits"]):
+            feature = (table == "Film" and rec["page"]
+                       and "Short film" not in rec["notes"]
+                       and DIRECTOR.search(rec["credits"]))
+            if CREATOR.search(rec["credits"]) or feature:
                 roster.append(rec)
             else:
                 rejected[rec["t"]] = rec
     assert len(rejected) + len(roster) >= 30, (len(rejected), len(roster))
 
-    got = [r["t"] for r in roster]
-    assert got == [NFY, "The Rehearsal", "The Curse"], got
-    assert [r["table"] for r in roster] == ["Television"] * 3, roster
-    assert [r["page"] for r in roster] == [NFY, REHEARSAL, CURSE], roster
-    # No film row carries a creator credit; the shorts he wrote and directed
-    # are directing credits and this list is not a directing list.
-    assert not any(r["table"] == "Film" for r in roster), roster
+    shows = [r for r in roster if r["table"] == "Television"]
+    films = [r for r in roster if r["table"] == "Film"]
+    got = [r["t"] for r in shows + films]
+    assert [r["t"] for r in shows] == [NFY, "The Rehearsal", "The Curse"], got
+    assert [r["page"] for r in shows] == [NFY, REHEARSAL, CURSE], shows
+    assert all(CREATOR.search(r["credits"]) for r in shows), shows
+    # The one feature, pinned by name: a second directed feature arriving in
+    # the filmography fails here rather than shipping unread.
+    assert [r["page"] for r in films] == [FILM], films
+    film_row = films[0]
+    assert not CREATOR.search(film_row["credits"]), film_row
+    assert "Feature directorial debut" in film_row["notes"], film_row
+    assert "Lance Oppenheim" in film_row["notes"], film_row
 
     # The three near-misses, pinned so a reworded Notes cell fails loudly
     # rather than silently changing what "everything he created" means.
@@ -336,6 +358,34 @@ def main():
                    "Bob's Burgers"):
         assert acting in rejected, \
             "%s is no longer on the filmography; the notes name it" % acting
+
+    # ---- the film's own article --------------------------------------------
+    film = wiki.wikitext(FILM, cache_dir=CACHE)
+    assert film, "no cached wikitext for %r" % FILM
+    film_ib = wiki.infobox(film, kind="film")
+    assert film_ib, "no film infobox on %s" % FILM
+    assert wiki.clean(film_ib("name")) == FILM, film_ib("name")
+    film_dirs = wiki.clean(film_ib("director"))
+    assert "Nathan Fielder" in film_dirs and "Lance Oppenheim" in film_dirs, \
+        film_dirs
+    assert wiki.clean(film_ib("distributor")) == "A24", film_ib("distributor")
+    film_dates = [datetime.date(*(int(g) for g in m)) for m in re.findall(
+        r"\|\s*(\d{4})\s*\|\s*(\d{1,2})\s*\|\s*(\d{1,2})\b",
+        film_ib("released"))]
+    assert film_dates and film_dates == sorted(film_dates), film_ib("released")
+    # the last date in {{Film date}} is the general release; the first is the
+    # festival premiere
+    film_out = film_dates[-1]
+    assert film_out <= today, \
+        ("%s is dated %s, which is not out yet; this catalogue lists only "
+         "what is out" % (FILM, film_out))
+    assert str(film_out.year) == film_row["year"], (film_out, film_row["year"])
+    film_lead = wiki.clean(film[film.index("\n" + "'" * 3):film.index("\n==")])
+    # the intro below says these things, so the article has to keep saying them
+    for phrase in ("documentary film", "Elizabeth Holmes", "Theranos",
+                   "Billy Evans", "invited a film crew", "defrauding investors",
+                   "theatrically released by A24"):
+        assert phrase in film_lead, "%s's lead no longer says %r" % (FILM, phrase)
 
     # ---- the lead cross-check: nothing the lead names may go missing -------
     named = {n for n in (link(m.group(0))
@@ -382,8 +432,10 @@ def main():
         reh_ib("num_episodes")
     assert "HBO" in reh_ib("network"), reh_ib("network")
     assert wiki.clean(reh_ib("creator")) == "Nathan Fielder", reh_ib("creator")
-    assert "still developing ideas for a third season" in reh, \
-        "the article no longer says a third Rehearsal is only an idea"
+    assert ("In January and September 2026, Fielder was still said to be "
+            "developing ideas for a third season") in reh, \
+        ("the article no longer says a third Rehearsal is only an idea as of "
+         "September 2026 — the note 'Where the three shows stand' says so")
     # the order argument, in the source's own words
     assert "premise for ''The Rehearsal'' developed from Fielder's series" in reh, \
         "the article no longer derives The Rehearsal from Nathan for You"
@@ -474,7 +526,7 @@ def main():
         curse_ib("last_aired")
 
     # ---- the shows are in the order they started --------------------------
-    firsts = [all_nfy[0][3], all_reh[0][3], curse_eps[0][3]]
+    firsts = [all_nfy[0][3], all_reh[0][3], curse_eps[0][3], film_out]
     assert firsts == sorted(firsts), \
         "the sections are no longer in premiere order: %s" % firsts
 
@@ -606,13 +658,31 @@ def main():
             "items": items,
         }
 
-    sections = [nfy_section(), rehearsal_section(), curse_section()]
+    def film_section():
+        fid = "nf-%d-%s" % (film_out.year, prop.slug(FILM))
+        assert fid == "nf-2026-you-can-see-everything", fid
+        return {
+            "id": "film", "title": FILM,
+            "sub": "%d · his first feature, a documentary from A24"
+                   % film_out.year,
+            "intro": "His first feature film, co-directed with Lance "
+                     "Oppenheim and released in cinemas by A24. A "
+                     "documentary: it follows Elizabeth Holmes, the founder "
+                     "of the defunct health technology company Theranos, and "
+                     "her partner Billy Evans, who invited a film crew to "
+                     "document them in the weeks before Holmes began serving "
+                     "a federal prison sentence for defrauding investors.",
+            "items": [{"id": fid, "t": FILM, "n": str(film_out.year)}],
+        }
+
+    sections = [nfy_section(), rehearsal_section(), curse_section(),
+                film_section()]
     assert [s["id"] for s in sections] == ["nathanforyou", "rehearsal",
-                                           "curse"], sections
+                                           "curse", "film"], sections
 
     rows = [x for s in sections for x in s["items"]]
-    assert len(rows) == len(all_nfy) + len(all_reh) + len(curse_eps) == 54, \
-        len(rows)
+    assert len(rows) == len(all_nfy) + len(all_reh) + len(curse_eps) + 1 \
+        == 55, len(rows)
     # All-or-nothing, and it is nothing. A single `w` here would make the total
     # confidently wrong, because 53 rows have no runtime to carry.
     assert not any("w" in x for x in rows), [x["id"] for x in rows if "w" in x]
@@ -644,12 +714,15 @@ def main():
     notes = [
         ["The rule for this list: he created it.",
          "Fielder writes, directs, produces and stars, often all four on the "
-         "same show, so a list of him has to pick one credit to hang on and "
-         "this one picks creator — the credit that makes a thing his rather "
-         "than one he worked on. Every row comes from a work his Wikipedia "
-         "filmography marks him creator or co-creator of, and that admits "
-         "exactly three: Nathan for You, made with Michael Koman; The "
-         "Rehearsal, his alone; and The Curse, made with Benny Safdie. What "
+         "same show, so a list of him has to pick the credit that makes a "
+         "thing his rather than one he worked on: creator for television, "
+         "director for a feature film. Every row comes from a work his "
+         "Wikipedia filmography marks him creator or co-creator of, or a "
+         "feature it marks him director or co-director of, and that admits "
+         "exactly four: Nathan for You, made with Michael Koman; The "
+         "Rehearsal, his alone; The Curse, made with Benny Safdie; and the "
+         "documentary You Can See Everything, co-directed with Lance "
+         "Oppenheim. What "
          "it leaves out is real work, left out on purpose. How To with John "
          "Wilson he only executive produced — it is John Wilson's show. On "
          "Who Is America? he was a consulting producer and co-directed two "
@@ -659,15 +732,16 @@ def main():
          "Morty, Bob's Burgers — is somebody else's show every time."
          % (WORDS[len(shorts)], short_years[0], short_years[-1])],
         ["The order is the argument.",
-         "Chronological, one section per show, and Nathan for You first. The "
+         "Chronological, one section per work, and Nathan for You first. The "
          "Rehearsal is the same man with a premium-cable budget doing the "
          "same thing long past the point where it is a bit — Wikipedia traces "
          "its premise directly back to the rehearsals his team ran while "
          "making the cable show — and it reads as an escalation only if you "
-         "have seen what it escalates from. The Curse comes last because it "
+         "have seen what it escalates from. The Curse comes next because it "
          "is what happens when he stops filming real people and writes the "
-         "whole thing instead. In any other order the punchline turns up "
-         "before its setup."],
+         "whole thing instead, and You Can See Everything, his first feature, "
+         "comes last because it came out last. In any other order the "
+         "punchline turns up before its setup."],
         ["Hours are not tracked on this list.",
          "No row carries a runtime, and that is a decision rather than an "
          "unfinished job. The Rehearsal's infobox publishes %s and The "
@@ -688,7 +762,7 @@ def main():
          "Nathan for You ran four seasons and a special, and Comedy Central "
          "confirmed in 2018 that it would not return for a fifth. The "
          "Rehearsal has two seasons; HBO has ordered no third, and as of "
-         "January 2026 Fielder was still developing ideas for one. The Curse "
+         "September 2026 Fielder was still developing ideas for one. The Curse "
          "has one season, and while neither Fielder nor Safdie has ruled a "
          "second out, none has been ordered. The generator asserts all three "
          "counts against Wikipedia every time it runs, so a new season "
@@ -703,22 +777,27 @@ def main():
         "on its filmography's own Notes column; episode titles, numbering and "
         "airdates read from the episode tables on List of Nathan for You "
         "episodes, The Rehearsal and The Curse, and cross-checked against "
-        "each series' infobox and its Series overview.",
+        "each series' infobox and its Series overview; the film's director "
+        "credit and release date from its own article.",
     ]
 
     p = {
         "slug": SLUG,
         "title": "Nathan Fielder",
         "subtitle": "everything he created, in order",
-        "kind": "tv",
+        "kind": "tv & film",
         "popularity": 44,
         "year": "%d–%d" % (all_nfy[0][3].year, max(all_reh[-1][3],
-                                                   curse_eps[-1][3]).year),
+                                                   curse_eps[-1][3],
+                                                   film_out).year),
         "blurb": "Deadpan business advice on basic cable, life-size "
-                 "rehearsals of conversations nobody wants to have, and a "
-                 "marriage inside a home-renovation show — everything Nathan "
-                 "Fielder created, in the order it aired.",
-        "unit": {"one": "episode", "many": "episodes"},
+                 "rehearsals of conversations nobody wants to have, a "
+                 "marriage inside a home-renovation show and a documentary "
+                 "about Elizabeth Holmes — everything Nathan Fielder created, "
+                 "in the order it came out.",
+        # a film among the episodes, so the count is of entries (the same
+        # kind and unit Breaking Bad and Deadwood use for their films)
+        "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         # Light: the flat institutional green of a rehearsal-set wall built to
         # be photographed and thrown away. Dark: the mint glass of the passive
@@ -749,7 +828,11 @@ def main():
     print("      %-22s %2d parsed / %2s source"
           % ("The Curse (2023–24)", len(curse_eps),
              curse_ib("num_episodes").strip().split("<")[0]))
-    print("   credit filter: creator — %s" % ", ".join(got))
+    print("   credit filter: creator (TV) or feature director (film) — %s"
+          % ", ".join(got))
+    print("   %s: released %s · directed by %s · %s"
+          % (FILM, " / ".join(str(d) for d in film_dates), film_dirs,
+             wiki.clean(film_ib("distributor"))))
     print("   runtimes: %s %r · The Rehearsal %r · The Curse %r · finale %d min"
           % (NFY, nfy_run, reh_run, curse_run, finale_min))
     print("   directed by Fielder: %d/32 · %d/12 · %d/10"

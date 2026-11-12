@@ -2,13 +2,13 @@
   "slug": "nathan-fielder",
   "title": "Nathan Fielder",
   "subtitle": "everything he created, in order",
-  "kind": "tv",
+  "kind": "tv & film",
   "popularity": 44,
-  "year": "2013–2025",
-  "blurb": "Deadpan business advice on basic cable, life-size rehearsals of conversations nobody wants to have, and a marriage inside a home-renovation show — everything Nathan Fielder created, in the order it aired.",
+  "year": "2013–2026",
+  "blurb": "Deadpan business advice on basic cable, life-size rehearsals of conversations nobody wants to have, a marriage inside a home-renovation show and a documentary about Elizabeth Holmes — everything Nathan Fielder created, in the order it came out.",
   "unit": {
-    "one": "episode",
-    "many": "episodes"
+    "one": "entry",
+    "many": "entries"
   },
   "verb": {
     "base": "watch",
@@ -21,11 +21,11 @@
   "notes": [
     [
       "The rule for this list: he created it.",
-      "Fielder writes, directs, produces and stars, often all four on the same show, so a list of him has to pick one credit to hang on and this one picks creator — the credit that makes a thing his rather than one he worked on. Every row comes from a work his Wikipedia filmography marks him creator or co-creator of, and that admits exactly three: Nathan for You, made with Michael Koman; The Rehearsal, his alone; and The Curse, made with Benny Safdie. What it leaves out is real work, left out on purpose. How To with John Wilson he only executive produced — it is John Wilson's show. On Who Is America? he was a consulting producer and co-directed two episodes for Sacha Baron Cohen. He directed 4 short films between 2006 and 2013 that Wikipedia gives no article, no runtime and no way to watch. And the acting — The Disaster Artist, The Simpsons, Rick and Morty, Bob's Burgers — is somebody else's show every time."
+      "Fielder writes, directs, produces and stars, often all four on the same show, so a list of him has to pick the credit that makes a thing his rather than one he worked on: creator for television, director for a feature film. Every row comes from a work his Wikipedia filmography marks him creator or co-creator of, or a feature it marks him director or co-director of, and that admits exactly four: Nathan for You, made with Michael Koman; The Rehearsal, his alone; The Curse, made with Benny Safdie; and the documentary You Can See Everything, co-directed with Lance Oppenheim. What it leaves out is real work, left out on purpose. How To with John Wilson he only executive produced — it is John Wilson's show. On Who Is America? he was a consulting producer and co-directed two episodes for Sacha Baron Cohen. He directed five short films between 2006 and 2013 that Wikipedia gives no article, no runtime and no way to watch. And the acting — The Disaster Artist, The Simpsons, Rick and Morty, Bob's Burgers — is somebody else's show every time."
     ],
     [
       "The order is the argument.",
-      "Chronological, one section per show, and Nathan for You first. The Rehearsal is the same man with a premium-cable budget doing the same thing long past the point where it is a bit — Wikipedia traces its premise directly back to the rehearsals his team ran while making the cable show — and it reads as an escalation only if you have seen what it escalates from. The Curse comes last because it is what happens when he stops filming real people and writes the whole thing instead. In any other order the punchline turns up before its setup."
+      "Chronological, one section per work, and Nathan for You first. The Rehearsal is the same man with a premium-cable budget doing the same thing long past the point where it is a bit — Wikipedia traces its premise directly back to the rehearsals his team ran while making the cable show — and it reads as an escalation only if you have seen what it escalates from. The Curse comes next because it is what happens when he stops filming real people and writes the whole thing instead, and You Can See Everything, his first feature, comes last because it came out last. In any other order the punchline turns up before its setup."
     ],
     [
       "Hours are not tracked on this list.",
@@ -33,13 +33,13 @@
     ],
     [
       "Where the three shows stand.",
-      "Nathan for You ran four seasons and a special, and Comedy Central confirmed in 2018 that it would not return for a fifth. The Rehearsal has two seasons; HBO has ordered no third, and as of January 2026 Fielder was still developing ideas for one. The Curse has one season, and while neither Fielder nor Safdie has ruled a second out, none has been ordered. The generator asserts all three counts against Wikipedia every time it runs, so a new season breaks the build rather than quietly going missing from this list."
+      "Nathan for You ran four seasons and a special, and Comedy Central confirmed in 2018 that it would not return for a fifth. The Rehearsal has two seasons; HBO has ordered no third, and as of September 2026 Fielder was still developing ideas for one. The Curse has one season, and while neither Fielder nor Safdie has ruled a second out, none has been ordered. The generator asserts all three counts against Wikipedia every time it runs, so a new season breaks the build rather than quietly going missing from this list."
     ],
     [
       "Nothing here is spoiled.",
       "The Curse and The Rehearsal both turn on things that would be ruined by a one-line row note, so neither section has any. The section intros describe premises and nothing past them, and the only two row notes on the whole list are on Nathan for You: what its 2017 special is, and that its finale runs feature-length."
     ],
-    "Roster and credits from Wikipedia's Nathan Fielder article, filtered on its filmography's own Notes column; episode titles, numbering and airdates read from the episode tables on List of Nathan for You episodes, The Rehearsal and The Curse, and cross-checked against each series' infobox and its Series overview."
+    "Roster and credits from Wikipedia's Nathan Fielder article, filtered on its filmography's own Notes column; episode titles, numbering and airdates read from the episode tables on List of Nathan for You episodes, The Rehearsal and The Curse, and cross-checked against each series' infobox and its Series overview; the film's director credit and release date from its own article."
   ],
   "sections": [
     {
@@ -336,6 +336,19 @@
           "id": "nf-curse-e10",
           "t": "Green Queen",
           "n": "E10"
+        }
+      ]
+    },
+    {
+      "id": "film",
+      "title": "You Can See Everything",
+      "sub": "2026 · his first feature, a documentary from A24",
+      "intro": "His first feature film, co-directed with Lance Oppenheim and released in cinemas by A24. A documentary: it follows Elizabeth Holmes, the founder of the defunct health technology company Theranos, and her partner Billy Evans, who invited a film crew to document them in the weeks before Holmes began serving a federal prison sentence for defrauding investors.",
+      "items": [
+        {
+          "id": "nf-2026-you-can-see-everything",
+          "t": "You Can See Everything",
+          "n": "2026"
         }
       ]
     }

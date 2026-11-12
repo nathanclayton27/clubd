@@ -73,7 +73,8 @@ current run — *M\*A\*S\*H*, *Seinfeld*, *Frasier* (the original run),
 Life as its own section), *The Golden Girls* (the seven hour-long
 broadcasts and four two-parters honestly marked),
 *Nathan Fielder* (the three shows he created — Nathan for You, The
-Rehearsal and The Curse — 54 episodes), *Jackass* (the MTV run plus every
+Rehearsal and The Curse — 54 episodes, plus his first feature, the documentary
+You Can See Everything), *Jackass* (the MTV run plus every
 Jackass-branded release, the .5 cuts marked as companion releases rather than
 sequels),
 *MST3K* down to the KTMA year, *Columbo*
