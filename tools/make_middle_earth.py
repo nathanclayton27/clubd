@@ -30,6 +30,18 @@ Book rows are unweighted (pages aren't hours). The Rings of Power is not a
 row; the notes say so. Data: tools/data/middle-earth.json, built and
 asserted by scratch/agent-books/parse_middle_earth.py.
 
+LEFT OUT ON PURPOSE (CLU-620, decided 2026-11-12 under Nathan's "lets have you
+just choose"), so a freshness sweep does not raise them again:
+  * The War of the Rohirrim (2024) - credited "based on characters created by
+    Tolkien", built from details in the appendices; same reasoning as The
+    Rings of Power, and the note now names it.
+  * The Hunt for Gollum (Serkis, dated 17 Dec 2027) - same credit, same
+    reasoning. Not named in the notes: what an unreleased film adapts is not
+    known yet. Revisit when it is out.
+  * The Fall of Númenor (2022) - edited by Brian Sibley, not Christopher
+    Tolkien, and by its own article contains no previously unpublished
+    material; the optional posthumous rows are Christopher Tolkien's four.
+
 WHY 9 OF THE 15 ROWS CARRY NO NUMBER, written down rather than rediscovered.
 All 9 are books — The Hobbit, the three Lord of the Rings volumes, The
 Silmarillion and the four posthumous volumes. No source gives a book an
@@ -218,7 +230,9 @@ def main():
              "list means is unchanged for anyone already part-way through."],
             ["No Rings of Power.",
              "Every screen row here adapts one of the books above. The "
-             "Amazon series does not, and is left out on purpose."],
+             "Amazon series does not, and nor does The War of the "
+             "Rohirrim, the 2024 anime built from details in the "
+             "appendices. Both are left out on purpose."],
             "Books and years from Wikipedia's J. R. R. Tolkien "
             "bibliography; Jackson's film lengths from The Lord of the Rings "
             "and The Hobbit film-series articles, the animated films' from "
