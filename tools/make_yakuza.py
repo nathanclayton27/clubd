@@ -12,6 +12,16 @@ and verified there by name AND release year (the generator refuses a record
 whose name is not what it expects).  Kenzan! never left Japan and carries no
 HLTB record; it weighs nothing rather than a guess.
 
+Stranger Than Heaven (CLU-647) is dated but not out: RGG's distant prequel,
+filed under the franchise's spin-offs and on its release timeline (Wikipedia
+'Yakuza (franchise)' and 'Stranger Than Heaven', both read 2026-11-12). It
+ships as an explicit w: 0, opt, tier-3 row saying it is not out yet. Its id
+comes from the fixed key below, never the title. The day its date passes
+the generator stops until the row gets a name-gated HowLongToBeat record
+under that same key.  Every "not out" / "still to come" phrase (the note,
+the era sub, the era intro, the blurb) is built from that date, so none of
+them outlives it.
+
 Tiers are necessity, Metal Gear style:
   1  the Kiryu/Ichiban saga spine — including the Kiwami remakes, because
      the PS2 originals never left the PS2 and Kiwami is how 1 and 2 are
@@ -24,10 +34,34 @@ Two ordering quirks, both deliberate: display years are first-release
 HLTB keeps one Ishin! entry under the remake's international title with the
 2014 original's year on it, so that row alone tolerates the year mismatch.
 """
+import datetime
 import json
 import pathlib
 
 SLUG = "yakuza"
+
+# Dated, not out: key -> the release date the source gives (Wikipedia
+# 'Stranger Than Heaven' infobox, read 2026-11-12). The key fixes the row id
+# (yak-<key>), so the id cannot move when hours arrive.
+UNRELEASED = {"stranger": datetime.date(2027, 1, 15)}
+
+# Prefixed to an unreleased row's own note, the wording metroid.json and
+# gears-of-war.json use for theirs.
+NOT_OUT = ("Not out yet — due %s, and the bar stays empty until "
+           "HowLongToBeat has hours for it.")
+
+
+def _today():
+    """The clock, isolated so a check can stub it."""
+    return datetime.date.today()
+
+
+MONTHS = ("January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December")
+
+
+def longdate(d):
+    return "%d %s %d" % (d.day, MONTHS[d.month - 1], d.year)
 
 # key in the data file, expected HLTB name, display title, display year,
 # tier, note, opt.  A key of None means no HLTB record (weight 0).
@@ -75,6 +109,9 @@ ROSTER = [
     ("kiwami3", "Yakuza Kiwami 3 & Dark Ties",
      "Yakuza Kiwami 3 & Dark Ties", 2026, 3,
      "Remake of 3 plus Dark Ties, a new side story set just before it.", 1),
+    ("stranger", "Stranger Than Heaven", "Stranger Than Heaven", 2027, 3,
+     "A distant prequel, set 1915–1965, that RGG says needs no knowledge "
+     "of the series.", 1),
 ]
 
 ERAS = [
@@ -90,22 +127,41 @@ ERAS = [
      "A detective sibling series arrives, and the saga hands the lead from "
      "Kiryu to Ichiban."),
     ("yearly", "The one-a-year era", 2023, 9999,
-     "RGG Studio at full cadence — a samurai remake, two gaiden, and the "
-     "biggest game in the series."),
+     "RGG Studio at full cadence — two remakes, two gaiden, the biggest "
+     "game in the series, and a %s."),
 ]
+
+# The yearly intro's last words follow the clock, as the blurb's do, so the
+# intro cannot keep calling Stranger Than Heaven unreleased once it is out.
+PREQUEL = {True: "prequel still to come", False: "distant prequel"}
 
 
 def main():
     data = json.loads((pathlib.Path(__file__).resolve().parent / "data"
                        / "yakuza.json").read_text(encoding="utf-8"))
 
+    today = _today()
     entries = []
     used = set()
     for key, expect, title, year, tier, note, opt in ROSTER:
+        due = UNRELEASED.get(key)
         if key is None:
             w = 0
             iid = "yak-kenzan"
+        elif due and due > today:
+            # Dated, not out. HowLongToBeat only times a game people have
+            # finished, so a record here means it shipped ahead of the date.
+            assert key not in data, (
+                "%s has a HowLongToBeat record (%r) before its stated %s "
+                "release — give the row its hours" % (title, data[key], due))
+            assert year == due.year, (key, year, due)
+            w = 0
+            iid = "yak-%s" % key
+            note = " ".join([NOT_OUT % longdate(due), note]).strip()
         else:
+            assert key in data or not due, (
+                "%s's %s release date has passed; add a name-gated "
+                "HowLongToBeat record under key %r" % (title, due, key))
             rec = data.get(key)
             assert rec, "no HLTB record for %s" % key
             assert rec["name"].lower() == expect.lower(), (
@@ -128,6 +184,12 @@ def main():
 
     assert used == set(data), "cache keys unused: %r" % (set(data) - used)
 
+    # rows dated but not out yet, in roster order
+    coming = [e for e in entries
+              if UNRELEASED.get(e["id"][len("yak-"):], today) > today]
+    coming_ids = {e["id"] for e in coming}
+    assert all(e["w"] == 0 for e in coming), "a not-out row carries hours"
+
     sections = []
     for key, title, lo, hi, intro in ERAS:
         got = [e for e in entries if lo <= e["year"] <= hi]
@@ -135,13 +197,21 @@ def main():
         hours = sum(e["w"] for e in got)
         span = ("%d" % got[0]["year"] if got[0]["year"] == got[-1]["year"]
                 else "%d–%d" % (got[0]["year"], got[-1]["year"]))
+        sub = ("%s · %d %s · %d hours story"
+               % (span, len(got), "game" if len(got) == 1 else "games",
+                  round(hours)))
+        pending = [e for e in got if e["id"] in coming_ids]
+        if pending:
+            sub += " · %d not out yet" % len(pending)
         sec = {"id": key, "title": title,
-               "sub": "%s · %d %s · %d hours story"
-                      % (span, len(got),
-                         "game" if len(got) == 1 else "games", round(hours)),
+               "sub": sub,
                "items": [{k: v for k, v in e.items()
                           if k in ("id", "t", "n", "w", "tier", "opt", "note")}
                          for e in got]}
+        if key == "yearly":
+            assert "yak-stranger" in {e["id"] for e in got}, key
+            intro %= PREQUEL["yak-stranger" in coming_ids]
+        assert "%" not in intro, (key, intro)
         if intro:
             sec["intro"] = intro
         if key == "ps2":
@@ -150,15 +220,21 @@ def main():
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == len(ROSTER) == 18, (len(ids),)
+    assert len(ids) == len(ROSTER) == 19, (len(ids),)
     tiers = {t: [x for s in sections for x in s["items"] if x["tier"] == t]
              for t in (1, 2, 3)}
     assert len(tiers[1]) == 10, "spine should be 10 games, got %d" % len(tiers[1])
     assert len(tiers[2]) == 2, "Judgment pair should be 2, got %d" % len(tiers[2])
-    assert len(tiers[3]) == 6, "tier 3 should be 6, got %d" % len(tiers[3])
+    assert len(tiers[3]) == 7, "tier 3 should be 7, got %d" % len(tiers[3])
 
     hours = sum(x["w"] for s in sections for x in s["items"])
     spine = sum(x["w"] for x in tiers[1])
+
+    blurb = ("%d games in release order — about %d hours of story, %d of it "
+             "the saga spine" % (len(ids), round(hours), round(spine)))
+    blurb += (", with %s still to come." % coming[0]["t"]
+              if len(coming) == 1 else ".")
+    assert len(coming) <= 1, "say how many are still to come in the blurb"
 
     prop = {
         "slug": SLUG,
@@ -168,9 +244,7 @@ def main():
         "kind": "games",
         "popularity": 60,
         "year": "2005–",
-        "blurb": "%d games in release order — about %d hours of story, %d "
-                 "of it the saga spine." % (len(ids), round(hours),
-                                            round(spine)),
+        "blurb": blurb,
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},
         "itemOrder": "number-first",

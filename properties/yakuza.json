@@ -5,7 +5,7 @@
   "kind": "games",
   "popularity": 60,
   "year": "2005–",
-  "blurb": "18 games in release order — about 417 hours of story, 275 of it the saga spine.",
+  "blurb": "19 games in release order — about 417 hours of story, 275 of it the saga spine, with Stranger Than Heaven still to come.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -192,7 +192,7 @@
     {
       "id": "yearly",
       "title": "The one-a-year era",
-      "sub": "2023–2026 · 5 games · 127 hours story",
+      "sub": "2023–2027 · 6 games · 127 hours story · 1 not out yet",
       "items": [
         {
           "id": "yak-ishin",
@@ -235,9 +235,18 @@
           "tier": 3,
           "note": "Remake of 3 plus Dark Ties, a new side story set just before it.",
           "opt": 1
+        },
+        {
+          "id": "yak-stranger",
+          "t": "Stranger Than Heaven",
+          "n": "2027",
+          "w": 0,
+          "tier": 3,
+          "note": "Not out yet — due 15 January 2027, and the bar stays empty until HowLongToBeat has hours for it. A distant prequel, set 1915–1965, that RGG says needs no knowledge of the series.",
+          "opt": 1
         }
       ],
-      "intro": "RGG Studio at full cadence — a samurai remake, two gaiden, and the biggest game in the series."
+      "intro": "RGG Studio at full cadence — two remakes, two gaiden, the biggest game in the series, and a prequel still to come."
     }
   ]
 }
