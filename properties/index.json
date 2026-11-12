@@ -109,7 +109,7 @@
     "kind": "films & shows",
     "year": "1998–2026",
     "popularity": 95,
-    "blurb": "79 films and 53 seasons in the order they came out — about 575 hours, tiered by how much the story needs each one.",
+    "blurb": "83 films and 61 seasons in the order they came out — about 581 hours, tiered by how much the story needs each one.",
     "accent": "#B3282D",
     "accentDark": "#F0666B",
     "unit": {
@@ -117,8 +117,8 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 132,
-    "totalw": 574.92,
+    "total": 144,
+    "totalw": 580.92,
     "mega": true
   },
   {
@@ -313,9 +313,9 @@
     "title": "Pixar",
     "subtitle": "every feature, in release order",
     "kind": "films",
-    "year": "1995–2026",
+    "year": "1995–2029",
     "popularity": 90,
-    "blurb": "All 31 Pixar features in release order — about 52 hours — plus the 20 classic theatrical shorts as optional extras.",
+    "blurb": "All 35 Pixar features in release order, four still to come — about 52 hours — plus the 20 classic theatrical shorts as optional extras.",
     "accent": "#1E5FA8",
     "accentDark": "#F0C24B",
     "unit": {
@@ -323,7 +323,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 51,
+    "total": 55,
     "totalw": 53.88
   },
   {
@@ -1510,9 +1510,9 @@
     "title": "Ridley Scott",
     "subtitle": "the directed features, in release order",
     "kind": "films",
-    "year": "1977–2024",
+    "year": "1977–2026",
     "popularity": 75,
-    "blurb": "Twenty-nine features in release order, The Duellists to Gladiator II — about 65 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
+    "blurb": "Thirty features in release order, The Duellists to The Dog Stars — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
     "accent": "#A67159",
     "accentDark": "#F2B8A6",
     "unit": {
@@ -1520,8 +1520,8 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 29,
-    "totalw": 64.67
+    "total": 30,
+    "totalw": 66.65
   },
   {
     "slug": "bleach-manga",
@@ -2883,7 +2883,7 @@
     },
     "vpast": "watched",
     "total": 10,
-    "totalw": 23.31,
+    "totalw": 23.41,
     "random": true
   },
   {
@@ -3779,7 +3779,7 @@
     "kind": "shows & films",
     "year": "1966–",
     "popularity": 60,
-    "blurb": "18 films and 100 seasons of television, about 670 hours, in the order they came out.",
+    "blurb": "18 films and 103 seasons of television, about 670 hours, in the order they came out.",
     "accent": "#A03035",
     "accentDark": "#EF7A80",
     "unit": {
@@ -3787,8 +3787,8 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 118,
-    "totalw": 669.91,
+    "total": 121,
+    "totalw": 670.26,
     "mega": true
   },
   {
@@ -5082,7 +5082,7 @@
     "kind": "films & episodes",
     "year": "1963–",
     "popularity": 36,
-    "blurb": "145 films, 36 single episodes and 8 whole series where the day repeats — the group's picks plus every list the Discord brought in. Watch in any order.",
+    "blurb": "160 films, 36 single episodes and 8 whole series where the day repeats — the group's picks plus every list the Discord brought in. Watch in any order.",
     "accent": "#6B2E7A",
     "accentDark": "#C08FE0",
     "unit": {
@@ -5090,7 +5090,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 189,
+    "total": 204,
     "random": true
   },
   {
