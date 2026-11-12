@@ -18,8 +18,11 @@ gets added as a not-out-yet row instead of being missed.
 
 The live-action retellings, the 2010 film and the 2024 Netflix series, are not
 here. They are separate works with their own reception and neither is an
-episode of any of the three shows; the list's own notes say so, so the omission
-reads as a decision rather than an oversight.
+episode of any of the three shows. Nor is the 2026 animated film, Avatar Aang:
+The Last Airbender: it continues the original series, but a 99-minute feature
+would count as one row exactly like a chapter on this unweighted list. The
+list's own notes say so, so the omission reads as a decision rather than an
+oversight.
 
 Everything numeric is enumerated from Wikipedia's episode tables — the seven
 season articles the two "List of ... episodes" pages transclude, and Seven
@@ -463,11 +466,18 @@ def main():
              "book, and every section header carries the series-wide range so "
              "%s stay countable."
              % series_list(["the %d" % s["total"] for s in SERIES])],
-            ["The live-action versions are not here.",
+            # the 2026 film: Wikipedia, "Avatar Aang: The Last Airbender",
+            # fetched 2026-11-12 -- "a continuation of the animated television
+            # series", runtime 99 minutes (BBFC, IFCO). CLU-585, decided under
+            # Nathan's 2026-11-12 delegation: named here, not listed, as Bob's
+            # Burgers does with its film.
+            ["The films and the Netflix series are not here.",
              "The 2010 film and the 2024 Netflix series retell this story as "
              "separate works with their own reception, and neither is an "
-             "episode of any of the %s shows. Left out deliberately, not "
-             "forgotten." % nseries],
+             "episode of any of the %s shows. The 2026 animated film, Avatar "
+             "Aang: The Last Airbender, continues the original series, but a "
+             "99-minute feature would count as one row exactly like a chapter. "
+             "Left out deliberately, not forgotten." % nseries],
             ["Multi-part chapters get a row each.",
              "%s table entries across the %s series cover more than one "
              "numbered chapter — %s — %d chapters between them. Each part is "
