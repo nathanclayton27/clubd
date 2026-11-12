@@ -1510,9 +1510,9 @@
     "title": "Ridley Scott",
     "subtitle": "the directed features, in release order",
     "kind": "films",
-    "year": "1977–2026",
+    "year": "1977–2027",
     "popularity": 75,
-    "blurb": "Thirty features in release order, The Duellists to The Dog Stars — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
+    "blurb": "Thirty features in release order, The Duellists to The Dog Stars, plus Treasure Island, due in November 2027 — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
     "accent": "#A67159",
     "accentDark": "#F2B8A6",
     "unit": {
@@ -1520,7 +1520,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 30,
+    "total": 31,
     "totalw": 66.65
   },
   {
@@ -1657,7 +1657,7 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 330,
+    "total": 333,
     "totalw": 330.0
   },
   {
@@ -3265,7 +3265,7 @@
     "kind": "films",
     "year": "1984–",
     "popularity": 63,
-    "blurb": "Spines #1 to #1344 — 1343 releases, about 2306 hours, each with the formats Criterion put it out on.",
+    "blurb": "Spines #1 to #1344 — 1344 releases, about 2306 hours, each with the formats Criterion put it out on.",
     "accent": "#8A6D2F",
     "accentDark": "#D6B36A",
     "unit": {
@@ -3273,7 +3273,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 1424,
+    "total": 1425,
     "totalw": 2306.6,
     "random": true
   },
@@ -3892,7 +3892,7 @@
     "kind": "games",
     "year": "2005–",
     "popularity": 60,
-    "blurb": "18 games in release order — about 417 hours of story, 275 of it the saga spine.",
+    "blurb": "19 games in release order — about 417 hours of story, 275 of it the saga spine, with Stranger Than Heaven still to come.",
     "accent": "#8A1F3A",
     "accentDark": "#E86A8F",
     "unit": {
@@ -3900,7 +3900,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 18,
+    "total": 19,
     "totalw": 416.86
   },
   {
@@ -4621,7 +4621,7 @@
     "kind": "films",
     "year": "1919–",
     "popularity": 52,
-    "blurb": "609 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
+    "blurb": "609 zombie features, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
     "accent": "#5A6B2E",
     "accentDark": "#A8C46A",
     "unit": {
@@ -4807,14 +4807,14 @@
     "kind": "mixed",
     "year": "1998–",
     "popularity": 47,
-    "blurb": "65 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
+    "blurb": "66 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
     "accent": "#8A2E4A",
     "accentDark": "#E884A6",
     "unit": {
       "one": "work",
       "many": "works"
     },
-    "total": 65
+    "total": 66
   },
   {
     "slug": "mst3k",
@@ -5312,8 +5312,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 10,
-    "scheduled": true
+    "total": 10
   },
   {
     "slug": "bad-movie-night",

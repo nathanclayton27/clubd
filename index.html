@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-D4Bg8C61pD9wjmeERrAKIYgTZDpUBLDc/gLF8W17IAw=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-rXW6pyqo8wnzFMOz68+I8Aa7vLv55oqBFNrJiw84A8k=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -3854,9 +3854,9 @@ let MANIFEST = [
     "title": "Ridley Scott",
     "subtitle": "the directed features, in release order",
     "kind": "films",
-    "year": "1977–2026",
+    "year": "1977–2027",
     "popularity": 75,
-    "blurb": "Thirty features in release order, The Duellists to The Dog Stars — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
+    "blurb": "Thirty features in release order, The Duellists to The Dog Stars, plus Treasure Island, due in November 2027 — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
     "accent": "#A67159",
     "accentDark": "#F2B8A6",
     "unit": {
@@ -3864,7 +3864,7 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 30,
+    "total": 31,
     "totalw": 66.65
   },
   {
@@ -4001,7 +4001,7 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 330,
+    "total": 333,
     "totalw": 330.0
   },
   {
@@ -5609,7 +5609,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "1984–",
     "popularity": 63,
-    "blurb": "Spines #1 to #1344 — 1343 releases, about 2306 hours, each with the formats Criterion put it out on.",
+    "blurb": "Spines #1 to #1344 — 1344 releases, about 2306 hours, each with the formats Criterion put it out on.",
     "accent": "#8A6D2F",
     "accentDark": "#D6B36A",
     "unit": {
@@ -5617,7 +5617,7 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 1424,
+    "total": 1425,
     "totalw": 2306.6,
     "random": true
   },
@@ -6236,7 +6236,7 @@ let MANIFEST = [
     "kind": "games",
     "year": "2005–",
     "popularity": 60,
-    "blurb": "18 games in release order — about 417 hours of story, 275 of it the saga spine.",
+    "blurb": "19 games in release order — about 417 hours of story, 275 of it the saga spine, with Stranger Than Heaven still to come.",
     "accent": "#8A1F3A",
     "accentDark": "#E86A8F",
     "unit": {
@@ -6244,7 +6244,7 @@ let MANIFEST = [
       "many": "games"
     },
     "vpast": "played",
-    "total": 18,
+    "total": 19,
     "totalw": 416.86
   },
   {
@@ -6965,7 +6965,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "1919–",
     "popularity": 52,
-    "blurb": "609 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
+    "blurb": "609 zombie features, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
     "accent": "#5A6B2E",
     "accentDark": "#A8C46A",
     "unit": {
@@ -7151,14 +7151,14 @@ let MANIFEST = [
     "kind": "mixed",
     "year": "1998–",
     "popularity": 47,
-    "blurb": "65 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
+    "blurb": "66 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
     "accent": "#8A2E4A",
     "accentDark": "#E884A6",
     "unit": {
       "one": "work",
       "many": "works"
     },
-    "total": 65
+    "total": 66
   },
   {
     "slug": "mst3k",
@@ -7656,8 +7656,7 @@ let MANIFEST = [
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 10,
-    "scheduled": true
+    "total": 10
   },
   {
     "slug": "bad-movie-night",
@@ -7720,7 +7719,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'eeb9355eb6e6';
+const BUILD = '8a9cfc698d69';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
