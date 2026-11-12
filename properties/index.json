@@ -83,7 +83,7 @@
     "kind": "films",
     "year": "1937–",
     "popularity": 96,
-    "blurb": "652 films from Snow White on — 456 theatrical, 167 television, 29 direct-to-video — about 912 hours.",
+    "blurb": "659 films from Snow White on — 458 theatrical, 169 television, 32 direct-to-video — about 922 hours.",
     "accent": "#1F4FA8",
     "accentDark": "#6F9BE8",
     "unit": {
@@ -91,8 +91,8 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 652,
-    "totalw": 912.04,
+    "total": 659,
+    "totalw": 922.07,
     "random": true
   },
   {
@@ -633,7 +633,7 @@
     "kind": "films & games",
     "year": "1987–2026",
     "popularity": 85,
-    "blurb": "Twenty games and six films in release order — every arcade version the source counts as its own, from the 1987 cabinet to the film opening in October 2026.",
+    "blurb": "Twenty games and six films in release order — every arcade version the source counts as its own, from the 1987 cabinet to the film that opened in October 2026.",
     "accent": "#990000",
     "accentDark": "#FF7700",
     "unit": {
@@ -2338,9 +2338,9 @@
     "title": "David Fincher",
     "subtitle": "the directed features",
     "kind": "films",
-    "year": "1992–2023",
+    "year": "1992–2026",
     "popularity": 69,
-    "blurb": "Twelve features, Alien 3 to The Killer — about 27 hours of controlled dread.",
+    "blurb": "Thirteen features, Alien 3 to The Further Mis-Adventures of Cliff Booth — about 27 hours of controlled dread.",
     "accent": "#33484A",
     "accentDark": "#93B8BA",
     "unit": {
@@ -2348,7 +2348,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 12,
+    "total": 13,
     "totalw": 27.02,
     "random": true
   },
@@ -2896,7 +2896,7 @@
     "kind": "games",
     "year": "1996–",
     "popularity": 66,
-    "blurb": "Six mainline RPGs, about 366 hours of story — the modern trilogy alone averages 84 hours each, and that is not a typo. The editions, the remake and the spin-offs add 560 more.",
+    "blurb": "Six mainline RPGs, about 366 hours of story — the modern trilogy alone averages 84 hours each, and that is not a typo. The editions, the remakes and the spin-offs add 560 more.",
     "accent": "#2D3C93",
     "accentDark": "#EF4B5E",
     "unit": {
@@ -2904,7 +2904,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 20,
+    "total": 21,
     "totalw": 926.66
   },
   {
@@ -2941,7 +2941,7 @@
     "kind": "anime & manga",
     "year": "1979–",
     "popularity": 65,
-    "blurb": "46 entries across every Gundam continuity: the Universal Century in release order, the alternate universes, and the major manga.",
+    "blurb": "48 entries across every Gundam continuity: the Universal Century in release order, the alternate universes, and the major manga.",
     "accent": "#3F4E9E",
     "accentDark": "#8E9BE8",
     "unit": {
@@ -2949,8 +2949,8 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 46,
-    "totalw": 358.03
+    "total": 48,
+    "totalw": 359.83
   },
   {
     "slug": "kill-la-kill",

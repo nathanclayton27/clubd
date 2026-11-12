@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Kru2suyN1Hz04431VrGUN++6KO8/fYrr0EJRCBSyGYw=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fZsPUOVzrbySrBE92gV9W1/QXxx93GKIHCan+E0SIAU=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -2427,7 +2427,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "1937–",
     "popularity": 96,
-    "blurb": "652 films from Snow White on — 456 theatrical, 167 television, 29 direct-to-video — about 912 hours.",
+    "blurb": "659 films from Snow White on — 458 theatrical, 169 television, 32 direct-to-video — about 922 hours.",
     "accent": "#1F4FA8",
     "accentDark": "#6F9BE8",
     "unit": {
@@ -2435,8 +2435,8 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 652,
-    "totalw": 912.04,
+    "total": 659,
+    "totalw": 922.07,
     "random": true
   },
   {
@@ -2977,7 +2977,7 @@ let MANIFEST = [
     "kind": "films & games",
     "year": "1987–2026",
     "popularity": 85,
-    "blurb": "Twenty games and six films in release order — every arcade version the source counts as its own, from the 1987 cabinet to the film opening in October 2026.",
+    "blurb": "Twenty games and six films in release order — every arcade version the source counts as its own, from the 1987 cabinet to the film that opened in October 2026.",
     "accent": "#990000",
     "accentDark": "#FF7700",
     "unit": {
@@ -4682,9 +4682,9 @@ let MANIFEST = [
     "title": "David Fincher",
     "subtitle": "the directed features",
     "kind": "films",
-    "year": "1992–2023",
+    "year": "1992–2026",
     "popularity": 69,
-    "blurb": "Twelve features, Alien 3 to The Killer — about 27 hours of controlled dread.",
+    "blurb": "Thirteen features, Alien 3 to The Further Mis-Adventures of Cliff Booth — about 27 hours of controlled dread.",
     "accent": "#33484A",
     "accentDark": "#93B8BA",
     "unit": {
@@ -4692,7 +4692,7 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 12,
+    "total": 13,
     "totalw": 27.02,
     "random": true
   },
@@ -5240,7 +5240,7 @@ let MANIFEST = [
     "kind": "games",
     "year": "1996–",
     "popularity": 66,
-    "blurb": "Six mainline RPGs, about 366 hours of story — the modern trilogy alone averages 84 hours each, and that is not a typo. The editions, the remake and the spin-offs add 560 more.",
+    "blurb": "Six mainline RPGs, about 366 hours of story — the modern trilogy alone averages 84 hours each, and that is not a typo. The editions, the remakes and the spin-offs add 560 more.",
     "accent": "#2D3C93",
     "accentDark": "#EF4B5E",
     "unit": {
@@ -5248,7 +5248,7 @@ let MANIFEST = [
       "many": "games"
     },
     "vpast": "played",
-    "total": 20,
+    "total": 21,
     "totalw": 926.66
   },
   {
@@ -5285,7 +5285,7 @@ let MANIFEST = [
     "kind": "anime & manga",
     "year": "1979–",
     "popularity": 65,
-    "blurb": "46 entries across every Gundam continuity: the Universal Century in release order, the alternate universes, and the major manga.",
+    "blurb": "48 entries across every Gundam continuity: the Universal Century in release order, the alternate universes, and the major manga.",
     "accent": "#3F4E9E",
     "accentDark": "#8E9BE8",
     "unit": {
@@ -5293,8 +5293,8 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 46,
-    "totalw": 358.03
+    "total": 48,
+    "totalw": 359.83
   },
   {
     "slug": "kill-la-kill",
@@ -7719,13 +7719,13 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'dd3eb4bb5de6';
+const BUILD = '72ab0b663ec8';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
 // rewires a sync group re-runs it — which is how a newly added list inherits
 // ticks people already had elsewhere. See backfillSync().
-const SYNCVER = '64e8ba677d';
+const SYNCVER = '224f5e84ad';
 
 // A tab that is already open never re-runs its own boot, so checking once was
 // only ever going to help people who reloaded anyway. This polls, and reloads
