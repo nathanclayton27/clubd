@@ -3,6 +3,18 @@
 
     python3 tools/make_ultimate_spiderman.py
 
+PARKED - THIS SCRIPT REFUSES TO RUN (CLU-559). It is the only working draft of
+the 2024 Ultimate Spider-Man list, which Nathan put on hold on 2026-08-21: that
+list is not to be built until he gives instructions for it. properties/ has no
+ultimate-spider-man.json, and src/build.py ships whatever is in properties/, so
+one run would publish a 184-row list nobody reviewed. main() therefore exits
+non-zero before writing anything; take that guard out only when he gives the
+instructions. The ult2000 section below is superseded: the 2000 run lives in
+the `ultimate-marvel` list, under its ids (u-ultimate-spider-man-N), and must
+not come back here as ult00-N. The ult2024 section (Hickman, #1-24) is on no
+list and exists only in this file. tools/gendrift.py records the script in
+CANNOT_RUN.
+
 Both Ultimate Spider-Man runs, which used to sit at the bottom of the
 post-Civil War list. They are their own continuity twice over — the 2000 run
 restarts the character from scratch outside the main line, and the 2024 run
@@ -72,6 +84,9 @@ SECTIONS = [
 
 
 def main():
+    sys.exit("make_ultimate_spiderman.py is the parked draft of the 2024 "
+             "Ultimate Spider-Man list and must not write properties/ until "
+             "Nathan gives instructions for it (CLU-559). Nothing written.")
     ids = [x["id"] for s in SECTIONS for x in s["items"]]
     if len(ids) != len(set(ids)):
         raise SystemExit("duplicate item ids")

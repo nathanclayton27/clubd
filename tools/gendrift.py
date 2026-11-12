@@ -112,18 +112,18 @@ NO_GENERATOR = {
 # holds a list nobody can rebuild and nobody noticed.
 CANNOT_RUN = {
     "make_secret.py": ((), "prompts for the password of the gated list"),
+    "make_ultimate_spiderman.py": ((), "refuses to run: the parked draft of "
+                                   "the 2024 Ultimate Spider-Man list, held "
+                                   "until Nathan gives instructions; it would "
+                                   "write properties/ultimate-spider-man.json, "
+                                   "which does not exist (CLU-559)"),
 }
 
 # A generator whose list properties/ no longer has. Running one would create an
 # unreviewed list from nothing, so each is recorded with what to do about it.
-ORPHAN_GENERATOR = {
-    "make_ultimate_spiderman.py":
-        "writes properties/ultimate-spider-man.json, a list that no longer "
-        "exists - its material moved into `ultimate-marvel` under different "
-        "ids (u-ultimate-spider-man-N, not ult00-N). Running it would add a "
-        "184-row list nobody reviewed, ticked against ids nothing else uses. "
-        "Found by the CLU-552 sweep: delete the script or restore the list.",
-}
+# Empty since CLU-559 made make_ultimate_spiderman.py refuse to run (it is in
+# CANNOT_RUN now).
+ORPHAN_GENERATOR = {}
 
 # Fields a generator will not reproduce, with why. A BUILD_KEY may never appear
 # here - the checker rejects the entry itself if one does. Every line is debt:
