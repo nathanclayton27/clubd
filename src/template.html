@@ -5924,12 +5924,19 @@ async function friendByCode(raw){
   // a nameless profile is still somebody — their code names them
   return { id: data.user_id, name: data.username || data.fcode || 'them' };
 }
-async function addFriend(target){
-  // one direction; a duplicate insert is how "already sent" is detected
-  const ins = await sb.from('friendships').insert({ a: user.id, b: target.id });
-  const already = !!(ins.error && ins.error.code === '23505');
-  if(ins.error && !already)
+// One direction, and only through add_friend_edge() (CLU-445): it writes the
+// row when the caller holds a warrant — they added you first (Accept), you
+// share a group (roster, legend), or `code` is their friend code (add by
+// code) — and answers 'added', 'already' or 'refused'. There is NO fallback
+// to a direct insert, PGRST202 included: that is the door CLU-445 closes.
+// Anything but 'added' or 'already' is the one failed-add line, the edge
+// cap's PT429 too, until its own wording is approved.
+async function addFriend(target, code){
+  const r = await sb.rpc('add_friend_edge',
+    { p_target: target.id, p_code: code || null });
+  if(r.error || (r.data !== 'added' && r.data !== 'already'))
     return { err: 'Could not add — try again.' };
+  const already = r.data === 'already';
   const rev = await sb.from('friendships').select('a')
     .eq('a', target.id).eq('b', user.id).maybeSingle();
   return { name: target.name, mutual: !!rev.data, already };
@@ -5979,7 +5986,8 @@ function friendNotify(r, acct){
 async function addFriendFlow(raw){
   const t = await friendByCode(raw);
   if(t.err) return t;
-  return addFriend(t);
+  // the code is the warrant for a stranger; the SQL compares upper(btrim())
+  return addFriend(t, normFcode(raw));
 }
 // The arrival, once there is a session (CLU-386). ARRIVAL was caught at boot
 // and the splash is onSession's business; this is the other half.
