@@ -129,8 +129,18 @@ It is not part of deploying.
 
   It fails if anything is tracked under `scratch/qa2/`, `scratch/security/`,
   `scratch/linear/` or an `audit*/`, if any tracked `scratch/` file is a `.md`,
-  `.sql`, `.txt` or `.env`, or if any of them contains a credential marker. Run
-  it before you push.
+  `.sql`, `.txt` or `.env`, or if any of them contains a credential marker. CI
+  runs it on every push (the `notracked` step in `.github/workflows/check.yml`),
+  so a slip turns the build red. Pages publishes `main` whether or not that
+  check passes, though, so a red build means the file is already public. Run it
+  before you push as well.
+
+  `python tools/notracked.py --qa` adds the half CI cannot do. It reads the QA
+  accounts' addresses, user ids and passwords from the gitignored
+  `scratch/qa2/accounts.env` and refuses any tracked file, commit message or
+  commit address that contains one. It never prints a value. It exits 2 with a
+  warning when that file is absent. Run it before any commit that touches QA
+  work (CLU-521).
 
   What *is* tracked under `scratch/` on purpose: the per-property harvest scripts
   and their cached sources (`scratch/<property>/collect.py`, `*.wiki`, `*.json`).

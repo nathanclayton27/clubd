@@ -30,6 +30,20 @@ jobs:
             || { echo "::error::index.html/manifest/l are stale — run src/build.py and commit the result"; exit 1; }
       - name: Content lint + tree consistency
         run: python tools/qa_lint.py
+      # CLU-414, CLU-521. Pages serves every tracked file, and a .gitignore does
+      # nothing once a file is tracked: two QA harnesses under scratch/qa2/ once
+      # answered 200 on clubd.watch. This refuses a tracked file in a private
+      # scratch/ directory, a tracked note/SQL/.env under scratch/, or a
+      # credential marker in one. It was a by-hand step, so "a slip fails the
+      # build" was not true until now. It runs AFTER the push Pages publishes
+      # from, so red here means already public: run it before pushing too.
+      # Only the path rules run here. The --qa half reads the QA accounts'
+      # values from gitignored scratch/qa2/accounts.env, which a runner never
+      # has, so it is a local step (DEPLOY.md). It runs even when an earlier
+      # step failed: a red build must not hide a tracked private file.
+      - name: notracked (nothing private is tracked)
+        if: ${{ !cancelled() }}
+        run: python tools/notracked.py
       # CLU-510. Every list carries a genre or names the clause exempting it.
       # Here rather than nowhere because the tagging pass is 185 judgement
       # calls made once, and the only thing that can undo it is a new list
