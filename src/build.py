@@ -999,6 +999,50 @@ def main():
                   "list still ranks first): %s"
                   % (len(near), "; ".join("%s (%s) vs %s" % x for x in near)))
 
+        # ---- a punctuated title nobody measured (CLU-579) ----------------
+        # Six lists landed after the alias pass and nobody measured them, and
+        # one was One-Punch Man: typing "one punch man" found nothing, because
+        # filterMenu matches a raw substring and a hyphen is not a space.
+        # Nothing said so. This does, for every list with no alias and some
+        # punctuation in its title: if neither plain spelling of the title —
+        # punctuation read as a space, or dropped — is anywhere in the text
+        # the menu searches (filterMenu's `hay`), the list is named. It only
+        # prints. The answer is an alias, or an entry in `reviewed` saying
+        # the list was measured and needs none. The gated list is skipped: it
+        # can never carry an alias, so naming it would be a notice with no
+        # possible answer.
+        reviewed = raw.get("reviewed") or {}
+        for slug, why in sorted(reviewed.items()):
+            if slug not in title_of:
+                fail("aliases.json `reviewed` names %r, which is not a list "
+                     "in the catalogue" % slug)
+            if not isinstance(why, str) or not why.strip():
+                fail("aliases.json `reviewed`: %s has no reason — say why it "
+                     "needs no alias, or take it off the map" % slug)
+
+        def plain(t, sep):
+            return " ".join("".join(c if c.isalnum() or c.isspace() else sep
+                                    for c in t).split())
+
+        unmeasured = []
+        for p in props:
+            if p.get("secret") or aliases.get(p["slug"]) \
+                    or p["slug"] in reviewed:
+                continue
+            t = p["title"].strip().lower()
+            if all(c.isalnum() or c.isspace() for c in t):
+                continue
+            hay = " ".join([t, p.get("subtitle") or "", p.get("kind") or "",
+                            str(p.get("year") or "")]).lower()
+            if plain(t, " ") not in hay and plain(t, "") not in hay:
+                unmeasured.append(p["slug"])
+        if unmeasured:
+            print("      %d list(s) have punctuation in the title, no alias, "
+                  "and no plain spelling of it that search can find. Measure "
+                  "each, then alias it or add it to `reviewed` in "
+                  "tools/data/aliases.json: %s"
+                  % (len(unmeasured), ", ".join(sorted(unmeasured))))
+
     manifest = [
         {
             "slug": p["slug"],

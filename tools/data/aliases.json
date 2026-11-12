@@ -30,7 +30,16 @@
     "    PREFIX as a name, so 'fate stay night' already answers to 'fate'.",
     "  - two lists may honestly share one alias ('spiderman' belongs to both",
     "    Spider-Man runs). The build prints every shared alias so it is reviewed",
-    "    rather than discovered."
+    "    rather than discovered.",
+    "",
+    "CLU-579. The search does not fold punctuation, so a list that lands after",
+    "the alias pass with a title like One-Punch Man is unreachable by 'one punch",
+    "man' until somebody measures it. The build now prints a notice naming every",
+    "list that has no alias, has punctuation in its title, and carries neither",
+    "plain spelling of that title -- punctuation read as a space, or dropped --",
+    "anywhere search reads. The notice never fails the build. Answer it with an",
+    "alias, or with an entry in `reviewed` below: a list measured and found to",
+    "need none, with the reason. The build fails on an unknown slug there too."
   ],
   "refused": {
     "ff": "Final Fantasy and Fantastic Four both answer to it, and whichever list took it would be the wrong answer half the time.",
@@ -47,6 +56,9 @@
     "mia": "Made in Abyss, against the ordinary English word.",
     "man of steel": "a Snyder film. The Superman list here is the comics reading order, and sending that query to it would answer a different question.",
     "the dark knight": "a Nolan film. The Batman list is the comics reading order."
+  },
+  "reviewed": {
+    "frieren": "People search for it as 'frieren', the first word of its title, and that already finds it first. The punctuation is all in 'Beyond Journey's End'."
   },
   "aliases": {
     "ace-attorney": ["gyakuten saiban", "phoenix wright"],
@@ -67,6 +79,7 @@
     "bond-games": ["007"],
     "breaking-bad": ["bcs"],
     "buffy-angel": ["btvs", "buffy and angel", "buffy the vampire slayer"],
+    "cardcaptor-sakura": ["cardcaptors", "ccs"],
     "chainsaw-man": ["chainsawman"],
     "childs-play": ["childs play", "chucky"],
     "coen-brothers": ["coens"],
@@ -116,6 +129,7 @@
     "middle-earth": ["lord of the rings", "lotr", "middle earth", "the hobbit"],
     "mission-impossible": ["mission impossible"],
     "mst3k": ["mst3k"],
+    "my-hero-academia": ["boku no hero academia"],
     "naruto": ["shippuden"],
     "naruto-manga": ["naruto manga"],
     "nasuverse": ["fate stay night", "type moon"],
@@ -123,6 +137,7 @@
     "nicolas-cage": ["nic cage"],
     "one-location-films": ["single location"],
     "one-piece-manga": ["one piece manga"],
+    "one-punch-man": ["one punch man"],
     "palme-dor": ["cannes", "palme dor"],
     "pokemon": ["pokemon"],
     "pta": ["pta"],
