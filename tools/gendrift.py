@@ -142,7 +142,6 @@ KNOWN_DRIFT = {
                   "item:n": "row numbering edited on the property file"},
     "donnie-yen": {"notes": "top-level notes edited on the property file"},
     "jet-li": {"notes": "top-level notes edited on the property file"},
-    "nathan-fielder": {"notes": "top-level notes edited on the property file"},
 }
 
 # Lists whose committed file is BEHIND its generator: a fresh run would add
