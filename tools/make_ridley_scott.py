@@ -9,6 +9,17 @@ every one of which is a bare {{yes}} in the Director column. The table holds
 thirty, and all thirty have come out: The Dog Stars, the last of them, was
 released on 28 August 2026.
 
+One more row is not in that table yet. The directed-features table in
+Wikipedia's "Ridley Scott" article ends one row later, on "2027 | Treasure
+Island | Sony Pictures Releasing", citing The Hollywood Reporter of 30
+September 2026, which gives the day: in cinemas 11 November 2027. Under the
+house rule for dated announced work (Nathan, 2026-08-26) it ships now, at an
+explicit w: 0, with a note saying it is not out yet — COMING below states it
+and asserts it against the cached article. Its id is pinned in PINNED_IDS, so
+a date that slips cannot move it. When it opens and the filmography table
+lists it, it leaves COMING, takes its Wikidata runtime like every other row,
+and keeps the same id.
+
 WHY SIX SECTIONS, AND WHERE THE LINES FALL
 
 Every division is something a source states, checked below rather than felt:
@@ -19,15 +30,18 @@ Every division is something a source states, checked below rather than felt:
     Watch Over Me, full producer on Thelma & Louise and 1492. The boundary is
     literally the first non-"no" cell in that column.
   * 1996–2000 — after the longest break of the career to that point, four
-    years. It closes on Gladiator, the last film on the list he did not
-    produce.
+    years. It closes on Gladiator, the last film out on the list that he
+    did not produce.
   * 2001–2010 — from Hannibal on, the Producer column is {{yes}} on every
-    remaining row without exception, so this is where that run starts.
+    row through The Dog Stars without exception, so this is where that run
+    starts. Treasure Island is not in that table, so it has no Producer cell
+    and the intros make no producer claim about it.
   * 2012–2017 — Prometheus and Alien: Covenant, which the Alien franchise's
     own Wikidata item names as parts of it alongside the 1979 film, and four
     others; five of the six went out through 20th Century Fox.
-  * 2021–2026 — after the four-year gap that ties 1992–1996 as the longest of
-    his career, five films through four different distributors.
+  * 2021–2027 — after the four-year gap that ties 1992–1996 as the longest of
+    his career, five films through four different distributors, and
+    Treasure Island, not out yet.
 
 THE ALTERNATE CUTS: ONE ROW PER FILM, AND WHY
 
@@ -38,7 +52,7 @@ Runner's own article counts seven of itself. None of them gets a second row.
   * A row is a thing to watch and tick. Blade Runner: The Final Cut is not a
     second film to get through, so a second row would either double Blade
     Runner's hours in the total — you do not watch it twice — or have to
-    carry w: 0, which mixes weighted and unweighted rows in a weighted list.
+    carry w: 0, which on this list only a film not out yet does.
   * The tracker pairs film rows across lists by title and year. A row called
     Blade Runner: The Final Cut (2007) would match nothing anywhere and would
     split the tick group this list shares with Criterion and Sight & Sound.
@@ -118,6 +132,37 @@ CUT_TITLES = {"Kingdom of Heaven": "Kingdom of Heaven (Director's Cut)"}
 # The list this one shares a cut row with on purpose.
 PAIRED_WITH = "best-directors-cuts"
 
+# Ids that are stated rather than derived. An id is where every user's tick
+# lives, and "rs-<year>-<slug>" keys on the year, so a row whose year is only
+# an announcement would move if the date slipped. The pinned id is used for
+# the row while it is in COMING and after the filmography table lists it.
+PINNED_IDS = {"Treasure Island": "rs-2027-treasure-island"}
+
+# Dated but not out: rows that ship at w: 0 under the house rule for dated
+# announced work (Nathan, 2026-08-26). Each is asserted against the last rows
+# of the directed-features table in Wikipedia's "Ridley Scott" article, cached
+# at RS_ARTICLE (rev 1384643449, 2026-11-09, fetched 2026-11-11). The day
+# comes from the report that row cites — The Hollywood Reporter, Ryan
+# Gajewski, 30 September 2026, fetched 2026-11-11: "Ridley Scott's Treasure
+# Island will hit theaters Nov. 11, 2027".
+RS_ARTICLE = ROOT / "scratch" / "ridley" / "cache" / "Ridley-Scott.wiki"
+COMING = [
+    {"t": "Treasure Island", "year": 2027, "due": "11 November 2027",
+     "distributor": "Sony Pictures Releasing",
+     "ref": "https://www.hollywoodreporter.com/movies/movie-news/"
+            "24-jump-street-ridley-reasure-island-helldivers-release-"
+            "1236717471/"},
+]
+
+# An unreleased row's note.
+NOT_OUT = "Not out yet — due %s, and the bar stays empty until it opens"
+
+
+def row_id(t, year):
+    """A row's id: pinned when PINNED_IDS names it, else from the film."""
+    return PINNED_IDS.get(t) or "rs-%d-%s" % (year, slug(t))
+
+
 ERAS = [
     ("first", "The first four", 1977, 1985,
      "A duel picture out of Joseph Conrad, then Alien, Blade Runner and "
@@ -134,12 +179,12 @@ ERAS = [
     ("nineties", "Four years off, then Gladiator", 1996, 2000,
      "Four years between 1492 and White Squall, the longest break of the "
      "career to that point. Two of the three that follow went out through "
-     "Buena Vista. Gladiator closes the run, and it is the last film on this "
-     "list he did not produce — it also carries the second of his two "
-     "camera-operator credits, uncredited this time."),
+     "Buena Vista. Gladiator closes the run, and of the films on this list "
+     "that are out, it is the last he did not produce — it also carries the "
+     "second of his two camera-operator credits, uncredited this time."),
     ("producer", "Producer on every one", 2001, 2010,
      "Eight films in ten years, and from Hannibal onward the Producer column "
-     "is yes on every single row to the end of the list. Six of the eight are "
+     "is yes on every single row through The Dog Stars. Six of the eight are "
      "adaptations: Thomas Harris, Mark Bowden, Eric Garcia, Peter Mayle, Mark "
      "Jacobson and David Ignatius in turn."),
     ("prequels", "Back to the Alien films", 2012, 2017,
@@ -147,11 +192,12 @@ ERAS = [
      "five years after that; the Alien franchise's Wikidata item names all "
      "three as parts of itself. Five of these six went out through 20th "
      "Century Fox."),
-    ("recent", "After the four-year gap", 2021, 2026,
+    ("recent", "After the four-year gap", 2021, 2027,
      "Another four-year break, tying 1992 to 1996 as the longest of his "
      "career, and then five films in six years through four different "
      "distributors. 2017 and 2021 are the only years on this list carrying "
-     "two Ridley Scott releases each."),
+     "two Ridley Scott releases each. Treasure Island is due from Sony in "
+     "November 2027."),
 ]
 
 
@@ -255,6 +301,40 @@ def main():
     assert [f["t"] for f in films if f["year"] == 2021] == \
         ["The Last Duel", "House of Gucci"], \
         "The Last Duel came out first; alphabetical order would invert them"
+
+    # ---- dated but not out ------------------------------------------------
+    # The article's directed-features table has to run exactly len(COMING)
+    # rows past the filmography's: the same last released film, then each
+    # COMING row in order, with the year, distributor and cited report stated
+    # above. A new dated row, a changed year or distributor, or the film
+    # turning up in the filmography table all stop the build here, so the row
+    # gets revisited instead of going stale.
+    art = RS_ARTICLE.read_text(encoding="utf-8")
+    tbl = art[art.index("|+Directed features"):]
+    tbl = tbl[:tbl.index("\n|}")]
+    art_rows = [[ln[1:].strip() for ln in chunk.strip().split("\n")
+                 if ln.startswith("|")]
+                for chunk in tbl.split("\n|-")[1:]]
+    tail = art_rows[-(len(COMING) + 1):]
+    assert tail[0][0] == str(films[-1]["year"]) and \
+        "|%s]]''" % films[-1]["t"] in tail[0][1], tail[0]
+    for c, r in zip(COMING, tail[1:]):
+        assert len(r) == 3 and r[0] == str(c["year"]), r
+        assert r[1].startswith("''%s''<ref>" % c["t"]), r[1]
+        assert "|url=%s |" % c["ref"] in r[1] and \
+            "Get %d Release Dates" % c["year"] in r[1], r[1]
+        assert r[2] == c["distributor"], r
+        assert c["due"].endswith(" %d" % c["year"]), c
+        assert c["year"] > films[-1]["year"], c
+        assert c["t"] not in {f["t"] for f in table}, \
+            "%s is in the filmography table now: give it its runtime and " \
+            "take it out of COMING, keeping its pinned id" % c["t"]
+        assert c["t"] in PINNED_IDS, c["t"]
+    # the "recent" intro names the one coming film, its distributor and month
+    ti = COMING[0]
+    claim = "%s is due from %s in %s." % (
+        ti["t"], ti["distributor"].split()[0], ti["due"].split(" ", 1)[1])
+    assert len(COMING) == 1 and ERAS[-1][4].endswith(claim), claim
 
     # ---- runtimes ---------------------------------------------------------
     assert all(f["runtime"] and f["runtime_src"] == "P2047" for f in films), \
@@ -411,6 +491,13 @@ def main():
         notyes[-1]["t"]
     assert all(f["produced"] for f in films if f["year"] >= 2001), \
         [f["t"] for f in films if f["year"] >= 2001 and not f["produced"]]
+    # Both producer intros stop at the last film out: a COMING row has no
+    # Producer cell in any source this list reads, so neither may cover it.
+    intro = {e[0]: e[4] for e in ERAS}
+    assert "of the films on this list that are out, it is the last he did " \
+        "not produce" in intro["nineties"], intro["nineties"]
+    assert "yes on every single row through %s." % films[-1]["t"] \
+        in intro["producer"], intro["producer"]
     camera = [f for f in films if "camera operator" in f["tablenote"]]
     assert [f["t"] for f in camera] == ["The Duellists", "Gladiator"], \
         [f["t"] for f in camera]
@@ -521,28 +608,38 @@ def main():
     sections = []
     for key, title, lo, hi, intro in ERAS:
         got = [f for f in films if lo <= f["year"] <= hi]
+        due = [c for c in COMING if lo <= c["year"] <= hi]
         assert got, key
         items = []
         for f in got:
             # the id keys on the FILM and never on the displayed title,
             # because an id is where a tick is stored
-            it = {"id": "rs-%d-%s" % (f["year"], slug(f["t"])),
+            it = {"id": row_id(f["t"], f["year"]),
                   "t": CUT_TITLES.get(f["t"], f["t"]), "n": str(f["year"]),
                   "w": round(f["runtime"] / 60.0, 2)}
             n = note_for(f)
             if n:
                 it["note"] = n
             items.append(it)
+        # not out yet: an explicit w: 0, never a missing w, which a weighted
+        # list silently counts as an hour
+        for c in due:
+            items.append({"id": row_id(c["t"], c["year"]), "t": c["t"],
+                          "n": str(c["year"]), "w": 0,
+                          "note": NOT_OUT % c["due"]})
+        sub = ("%d–%d · %d films · %d hours"
+               % (got[0]["year"], (due or got)[-1]["year"],
+                  len(got) + len(due),
+                  round(sum(f["runtime"] for f in got) / 60.0)))
+        if due:
+            sub += " · %d not out yet" % len(due)
         sections.append({
-            "id": key, "title": title,
-            "sub": "%d–%d · %d films · %d hours"
-                   % (got[0]["year"], got[-1]["year"], len(got),
-                      round(sum(f["runtime"] for f in got) / 60.0)),
+            "id": key, "title": title, "sub": sub,
             "intro": intro, "items": items})
     sections[0]["open"] = True
 
     placed = sum(len(s["items"]) for s in sections)
-    assert placed == len(films), (placed, len(films))
+    assert placed == len(films) + len(COMING), (placed, len(films))
     for s in sections:
         assert all(a["n"] <= b["n"] for a, b in zip(s["items"], s["items"][1:])), \
             "%s is out of year order" % s["title"]
@@ -612,19 +709,27 @@ def main():
     assert noted == {"The Duellists", "Alien", "Blade Runner", "Legend",
                      "Thelma & Louise", "Gladiator",
                      "Kingdom of Heaven (Director's Cut)",
-                     "Napoleon"}, sorted(noted)
-    # a row with no `w` in a weighted list is silently worth one hour, and a
-    # row at zero would mix the two kinds — neither is allowed here
+                     "Napoleon"} | {c["t"] for c in COMING}, sorted(noted)
+    # a row with no `w` in a weighted list is silently worth one hour, so
+    # every released film carries its runtime and only a film not out yet
+    # sits at an explicit zero, saying so in its note
     rows = [x for s in sections for x in s["items"]]
-    assert all(isinstance(x.get("w"), float) and x["w"] > 0 for x in rows), \
+    coming_ids = {row_id(c["t"], c["year"]) for c in COMING}
+    assert all(isinstance(x.get("w"), float) and x["w"] > 0
+               for x in rows if x["id"] not in coming_ids), \
         [x["id"] for x in rows if not x.get("w")]
+    assert all("w" in x and x["w"] == 0 and x["note"].startswith("Not out yet")
+               for x in rows if x["id"] in coming_ids), \
+        [x for x in rows if x["id"] in coming_ids]
+    assert len(coming_ids) == len(COMING), coming_ids
 
     mins = sum(f["runtime"] for f in films)
     hours = round(sum(x["w"] for x in rows), 2)
     assert abs(hours - mins / 60.0) < 0.2, (hours, mins / 60.0)
 
     # ---- the films this list shares with other lists here ------------------
-    keys = {normt(f["t"]) + "|" + str(f["year"]): f["t"] for f in films}
+    keys = {normt(f["t"]) + "|" + str(f["year"]): f["t"]
+            for f in films + COMING}
     shared = overlaps(keys)
     assert len(shared) == 9, sorted(shared)
     by_list = {}
@@ -633,7 +738,7 @@ def main():
             by_list.setdefault(t, []).append(keys[k])
     assert set(by_list["Alien & Predator"]) == \
         {"Alien", "Prometheus", "Alien: Covenant"}, by_list["Alien & Predator"]
-    order = [f["t"] for f in films]
+    order = [f["t"] for f in films + COMING]
     phrases = [
         "%s on %s" % (and_list(sorted(by_list[t], key=order.index)), t)
         for t in sorted(by_list, key=lambda t: (-len(by_list[t]), t))]
@@ -653,11 +758,13 @@ def main():
         # than the Spielberg one, and deliberately a point under the Alien &
         # Predator list this one shares three films with. See POPULARITY.md.
         "popularity": 75,
-        "year": "%d–%d" % (films[0]["year"], films[-1]["year"]),
+        "year": "%d–%d" % (films[0]["year"],
+                           max(f["year"] for f in films + COMING)),
         "blurb": "Thirty features in release order, The Duellists to "
-                 "The Dog Stars — about %d hours. The films with famous "
-                 "alternate cuts get one row each, with the cut named on the "
-                 "row." % round(hours),
+                 "The Dog Stars, plus %s, due in %s — about %d hours. The "
+                 "films with famous alternate cuts get one row each, with the "
+                 "cut named on the row."
+                 % (ti["t"], ti["due"].split(" ", 1)[1], round(hours)),
         "unit": {"one": "film", "many": "films"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         # measured in CIELAB against every accent in properties/index.json —
@@ -682,12 +789,13 @@ def main():
              "None of them gets a second row. A row is something to watch and "
              "tick, and The Final Cut is not a second film to get through: a "
              "second row would either double that film's hours or have to "
-             "carry no weight at all, and this list has no unweighted rows in "
-             "it. So the cut is named on the row instead, and the note says "
-             "which version the bar is measuring."],
+             "carry no weight at all, which on this list only a film not out "
+             "yet does. So the cut is named on the row instead, and the note "
+             "says which version the bar is measuring."],
             ["Bar widths are runtimes, and three of them took a decision.",
-             "All %d come from Wikidata's runtime property, in hours, each "
-             "gated on a release year within a year of the filmography's. "
+             "All %d that are out come from Wikidata's runtime property, in "
+             "hours, each gated on a release year within a year of the "
+             "filmography's. "
              "Three items carry more than one value. Kingdom of Heaven labels "
              "its two: 144 minutes for the theatrical version and 190 for the "
              "director's cut, and this list takes the director's cut. It is "
@@ -709,8 +817,8 @@ def main():
              "Squall and Matchstick Men each carry a single Wikidata runtime "
              "that runs three to seven minutes short of the single figure "
              "their own articles give. None of the four has an alternate cut "
-             "and nothing says which number is right, so all %d rows keep to "
-             "the one source rather than becoming a blend of two — the same "
+             "and nothing says which number is right, so all %d runtimes keep "
+             "to the one source rather than becoming a blend of two — the same "
              "rule the rest of this catalogue follows." % len(films)],
             ["Directing only, and features only.",
              "The producing is not here — %d films he produced and %d he "
@@ -736,16 +844,18 @@ def main():
             "the table itself; runtimes from Wikidata, gated on a matching "
             "release year and read at statement rank; the alternate-cut "
             "lengths from the same Wikidata statements and from each film's "
-            "own article.",
+            "own article; Treasure Island's date from The Hollywood Reporter, "
+            "which the directed-features table in Wikipedia's Ridley Scott "
+            "article cites for it.",
         ],
         "sections": sections,
     }
 
     out = prop.write(p)
     ids = [x["id"] for s in sections for x in s["items"]]
-    assert len(ids) == 30, len(ids)
-    print("wrote %s — %d films, %d minutes, %.2f hours"
-          % (out.name, len(ids), mins, hours))
+    assert len(ids) == 30 + len(COMING) == len(set(ids)), len(ids)
+    print("wrote %s — %d films (%d not out yet), %d minutes, %.2f hours"
+          % (out.name, len(ids), len(COMING), mins, hours))
     for s in sections:
         print("   %-32s %2d  %s" % (s["title"], len(s["items"]), s["sub"]))
     print("   shared with other lists: %d films — %s"

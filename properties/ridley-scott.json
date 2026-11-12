@@ -4,8 +4,8 @@
   "subtitle": "the directed features, in release order",
   "kind": "films",
   "popularity": 75,
-  "year": "1977–2026",
-  "blurb": "Thirty features in release order, The Duellists to The Dog Stars — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
+  "year": "1977–2027",
+  "blurb": "Thirty features in release order, The Duellists to The Dog Stars, plus Treasure Island, due in November 2027 — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -21,15 +21,15 @@
   "notes": [
     [
       "One row per film, cuts and all.",
-      "Five of these exist in more than one version according to the sources — Alien, Blade Runner, Legend, Kingdom of Heaven and Napoleon — and Blade Runner's own article counts seven of itself. None of them gets a second row. A row is something to watch and tick, and The Final Cut is not a second film to get through: a second row would either double that film's hours or have to carry no weight at all, and this list has no unweighted rows in it. So the cut is named on the row instead, and the note says which version the bar is measuring."
+      "Five of these exist in more than one version according to the sources — Alien, Blade Runner, Legend, Kingdom of Heaven and Napoleon — and Blade Runner's own article counts seven of itself. None of them gets a second row. A row is something to watch and tick, and The Final Cut is not a second film to get through: a second row would either double that film's hours or have to carry no weight at all, which on this list only a film not out yet does. So the cut is named on the row instead, and the note says which version the bar is measuring."
     ],
     [
       "Bar widths are runtimes, and three of them took a decision.",
-      "All 30 come from Wikidata's runtime property, in hours, each gated on a release year within a year of the filmography's. Three items carry more than one value. Kingdom of Heaven labels its two: 144 minutes for the theatrical version and 190 for the director's cut, and this list takes the director's cut. It is the one row here that does not measure what played in cinemas, and that is the point — the long version is the one worth watching, so it is the one the row recommends and the one the bar counts. Blade Runner carries 112 and 116 with nothing to tell them apart, and Legend carries a labelled 114-minute director's cut beside an unlabelled 125 — which is neither of the two lengths it was released at, and which its own article explains as the first cut Scott assembled before the film was trimmed. For those two the film's own article decides, because it states the length of every version that actually came out; the choice is always between numbers Wikidata already carries, and no number is ever typed in from somewhere else."
+      "All 30 that are out come from Wikidata's runtime property, in hours, each gated on a release year within a year of the filmography's. Three items carry more than one value. Kingdom of Heaven labels its two: 144 minutes for the theatrical version and 190 for the director's cut, and this list takes the director's cut. It is the one row here that does not measure what played in cinemas, and that is the point — the long version is the one worth watching, so it is the one the row recommends and the one the bar counts. Blade Runner carries 112 and 116 with nothing to tell them apart, and Legend carries a labelled 114-minute director's cut beside an unlabelled 125 — which is neither of the two lengths it was released at, and which its own article explains as the first cut Scott assembled before the film was trimmed. For those two the film's own article decides, because it states the length of every version that actually came out; the choice is always between numbers Wikidata already carries, and no number is ever typed in from somewhere else."
     ],
     [
       "Four rows where the two sources disagree by a few minutes.",
-      "Someone to Watch Over Me, 1492: Conquest of Paradise, White Squall and Matchstick Men each carry a single Wikidata runtime that runs three to seven minutes short of the single figure their own articles give. None of the four has an alternate cut and nothing says which number is right, so all 30 rows keep to the one source rather than becoming a blend of two — the same rule the rest of this catalogue follows."
+      "Someone to Watch Over Me, 1492: Conquest of Paradise, White Squall and Matchstick Men each carry a single Wikidata runtime that runs three to seven minutes short of the single figure their own articles give. None of the four has an alternate cut and nothing says which number is right, so all 30 runtimes keep to the one source rather than becoming a blend of two — the same rule the rest of this catalogue follows."
     ],
     [
       "Directing only, and features only.",
@@ -39,7 +39,7 @@
       "9 of these films are on other lists here.",
       "Alien, Prometheus and Alien: Covenant on Alien & Predator; Gladiator and The Martian on Best Picture; Blade Runner and Thelma & Louise on The Criterion Collection; Blade Runner on Cult Classics; Matchstick Men on Nicolas Cage; Blade Runner on Sight & Sound 100; Legend on Tom Cruise. Ticking one ticks the other: film rows are paired across lists by title and year, so a film watched here is watched there. Nothing is duplicated and no hours are counted twice, because every list totals only its own rows."
     ],
-    "Filmography from Wikipedia's Ridley Scott filmography, read from the table itself; runtimes from Wikidata, gated on a matching release year and read at statement rank; the alternate-cut lengths from the same Wikidata statements and from each film's own article."
+    "Filmography from Wikipedia's Ridley Scott filmography, read from the table itself; runtimes from Wikidata, gated on a matching release year and read at statement rank; the alternate-cut lengths from the same Wikidata statements and from each film's own article; Treasure Island's date from The Hollywood Reporter, which the directed-features table in Wikipedia's Ridley Scott article cites for it."
   ],
   "sections": [
     {
@@ -116,7 +116,7 @@
       "id": "nineties",
       "title": "Four years off, then Gladiator",
       "sub": "1996–2000 · 3 films · 7 hours",
-      "intro": "Four years between 1492 and White Squall, the longest break of the career to that point. Two of the three that follow went out through Buena Vista. Gladiator closes the run, and it is the last film on this list he did not produce — it also carries the second of his two camera-operator credits, uncredited this time.",
+      "intro": "Four years between 1492 and White Squall, the longest break of the career to that point. Two of the three that follow went out through Buena Vista. Gladiator closes the run, and of the films on this list that are out, it is the last he did not produce — it also carries the second of his two camera-operator credits, uncredited this time.",
       "items": [
         {
           "id": "rs-1996-white-squall",
@@ -143,7 +143,7 @@
       "id": "producer",
       "title": "Producer on every one",
       "sub": "2001–2010 · 8 films · 19 hours",
-      "intro": "Eight films in ten years, and from Hannibal onward the Producer column is yes on every single row to the end of the list. Six of the eight are adaptations: Thomas Harris, Mark Bowden, Eric Garcia, Peter Mayle, Mark Jacobson and David Ignatius in turn.",
+      "intro": "Eight films in ten years, and from Hannibal onward the Producer column is yes on every single row through The Dog Stars. Six of the eight are adaptations: Thomas Harris, Mark Bowden, Eric Garcia, Peter Mayle, Mark Jacobson and David Ignatius in turn.",
       "items": [
         {
           "id": "rs-2001-hannibal",
@@ -243,8 +243,8 @@
     {
       "id": "recent",
       "title": "After the four-year gap",
-      "sub": "2021–2026 · 5 films · 12 hours",
-      "intro": "Another four-year break, tying 1992 to 1996 as the longest of his career, and then five films in six years through four different distributors. 2017 and 2021 are the only years on this list carrying two Ridley Scott releases each.",
+      "sub": "2021–2027 · 6 films · 12 hours · 1 not out yet",
+      "intro": "Another four-year break, tying 1992 to 1996 as the longest of his career, and then five films in six years through four different distributors. 2017 and 2021 are the only years on this list carrying two Ridley Scott releases each. Treasure Island is due from Sony in November 2027.",
       "items": [
         {
           "id": "rs-2021-the-last-duel",
@@ -276,6 +276,13 @@
           "t": "The Dog Stars",
           "n": "2026",
           "w": 1.98
+        },
+        {
+          "id": "rs-2027-treasure-island",
+          "t": "Treasure Island",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — due 11 November 2027, and the bar stays empty until it opens"
         }
       ]
     }

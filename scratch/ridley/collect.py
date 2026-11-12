@@ -12,6 +12,10 @@ raw wikitext under scratch/ridley/cache/ so a re-run is offline and reviewable.
     list has no shorts section: collecting them turns "no shorts" into a
     checked fact (how many of the five can be weighted at all) rather than a
     preference.
+  * "Ridley Scott" itself is cached too, for one table only: its
+    directed-features table can run past the filmography's to dated
+    announced films, and tools/make_ridley_scott.py asserts its COMING rows
+    against it.
   * The As producer / As executive producer bullet lists and the Television
     and Commercials sections are collected only so the shipped "directing
     only" note can name what it leaves out from the article rather than from
@@ -386,6 +390,9 @@ def lead_of(text):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     art = wiki.wikitext("Ridley Scott filmography", cache_dir=CACHE)
+    # Not parsed here: the generator reads its directed-features table for
+    # the COMING rows. Fetched here so a re-run refreshes that snapshot too.
+    wiki.wikitext("Ridley Scott", cache_dir=CACHE)
 
     film_chunk = section_of(art, "==Film==", "==Television==")
     short_rows = rows(first_table(section_of(film_chunk, "'''Short film'''",
