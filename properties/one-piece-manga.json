@@ -5,7 +5,7 @@
   "kind": "manga",
   "popularity": 80,
   "year": "1997–",
-  "blurb": "1190 chapters across 106 volumes, still running.",
+  "blurb": "1198 chapters across 115 volumes, still running.",
   "unit": {
     "one": "chapter",
     "many": "chapters"
@@ -21,13 +21,13 @@
   "notes": [
     [
       "Ahead of the anime.",
-      "The manga is well past where the anime is. Chapter 1190 here is roughly a hundred chapters beyond what has been animated."
+      "The manga is well past where the anime is. Chapter 1198 here is roughly fifty chapters beyond what has been animated."
     ],
     [
       "Volumes.",
       "Sections are the collected volumes, with the arc each one covers named alongside. Volume boundaries are parsed from the Wikipedia chapter lists and checked to tile the chapters with no gap or overlap."
     ],
-    "Still running. This goes up to chapter 1190; rerun the generator to extend it."
+    "Still running. This goes up to chapter 1198; rerun the generator to extend it."
   ],
   "sections": [
     {
@@ -6789,9 +6789,9 @@
       ]
     },
     {
-      "id": "v-uncollected",
-      "title": "Not yet collected",
-      "sub": "chapters 1077–1190 · Egghead, Elbaf · no volume yet",
+      "id": "v-107",
+      "title": "Volume 107",
+      "sub": "chapters 1077–1088 · Egghead",
       "links": [
         {
           "label": "Read on Viz",
@@ -6858,7 +6858,20 @@
           "id": "opm-1088",
           "t": "Chapter",
           "n": "1088"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-108",
+      "title": "Volume 108",
+      "sub": "chapters 1089–1100 · Egghead",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1089",
           "t": "Chapter",
@@ -6918,7 +6931,20 @@
           "id": "opm-1100",
           "t": "Chapter",
           "n": "1100"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-109",
+      "title": "Volume 109",
+      "sub": "chapters 1101–1110 · Egghead",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1101",
           "t": "Chapter",
@@ -6968,7 +6994,20 @@
           "id": "opm-1110",
           "t": "Chapter",
           "n": "1110"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-110",
+      "title": "Volume 110",
+      "sub": "chapters 1111–1121 · Egghead",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1111",
           "t": "Chapter",
@@ -7023,7 +7062,20 @@
           "id": "opm-1121",
           "t": "Chapter",
           "n": "1121"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-111",
+      "title": "Volume 111",
+      "sub": "chapters 1122–1133 · Egghead, Elbaf",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1122",
           "t": "Chapter",
@@ -7083,7 +7135,20 @@
           "id": "opm-1133",
           "t": "Chapter",
           "n": "1133"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-112",
+      "title": "Volume 112",
+      "sub": "chapters 1134–1144 · Elbaf",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1134",
           "t": "Chapter",
@@ -7138,7 +7203,20 @@
           "id": "opm-1144",
           "t": "Chapter",
           "n": "1144"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-113",
+      "title": "Volume 113",
+      "sub": "chapters 1145–1155 · Elbaf",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1145",
           "t": "Chapter",
@@ -7193,7 +7271,20 @@
           "id": "opm-1155",
           "t": "Chapter",
           "n": "1155"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-114",
+      "title": "Volume 114",
+      "sub": "chapters 1156–1166 · Elbaf",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1156",
           "t": "Chapter",
@@ -7248,7 +7339,20 @@
           "id": "opm-1166",
           "t": "Chapter",
           "n": "1166"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-115",
+      "title": "Volume 115",
+      "sub": "chapters 1167–1179 · Elbaf",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1167",
           "t": "Chapter",
@@ -7313,7 +7417,20 @@
           "id": "opm-1179",
           "t": "Chapter",
           "n": "1179"
-        },
+        }
+      ]
+    },
+    {
+      "id": "v-uncollected",
+      "title": "Not yet collected",
+      "sub": "chapters 1180–1198 · Elbaf · no volume yet",
+      "links": [
+        {
+          "label": "Read on Viz",
+          "url": "https://www.viz.com/shonenjump/chapters/one-piece"
+        }
+      ],
+      "items": [
         {
           "id": "opm-1180",
           "t": "Chapter",
@@ -7368,6 +7485,46 @@
           "id": "opm-1190",
           "t": "Chapter",
           "n": "1190"
+        },
+        {
+          "id": "opm-1191",
+          "t": "Chapter",
+          "n": "1191"
+        },
+        {
+          "id": "opm-1192",
+          "t": "Chapter",
+          "n": "1192"
+        },
+        {
+          "id": "opm-1193",
+          "t": "Chapter",
+          "n": "1193"
+        },
+        {
+          "id": "opm-1194",
+          "t": "Chapter",
+          "n": "1194"
+        },
+        {
+          "id": "opm-1195",
+          "t": "Chapter",
+          "n": "1195"
+        },
+        {
+          "id": "opm-1196",
+          "t": "Chapter",
+          "n": "1196"
+        },
+        {
+          "id": "opm-1197",
+          "t": "Chapter",
+          "n": "1197"
+        },
+        {
+          "id": "opm-1198",
+          "t": "Chapter",
+          "n": "1198"
         }
       ]
     }

@@ -27,7 +27,11 @@ VIZ = "https://www.viz.com/shonenjump/chapters/one-piece"
 SERIES_LINK = [{"label": "Read on Viz", "url": VIZ}]
 
 SLUG = "one-piece-manga"
-LAST = 1190          # released 9 August 2026
+LAST = 1198          # released 9 November 2026
+
+# The anime's newest episode, 1180 (27 September 2026), adapts chapters
+# 1150-1151, so the "Ahead of the anime" note below says roughly fifty.
+# Recheck it whenever LAST moves.
 
 # Volumes are the sections; the arc table below only labels them, so you can see
 # which story an unfamiliar volume number belongs to.
@@ -189,6 +193,17 @@ VOLUMES = [
     (104, 1047, 1055),
     (105, 1056, 1065),
     (106, 1066, 1076),
+    (107, 1077, 1088),
+    (108, 1089, 1100),
+    (109, 1101, 1110),
+    (110, 1111, 1121),
+    (111, 1122, 1133),
+    (112, 1134, 1144),
+    (113, 1145, 1155),
+    (114, 1156, 1166),
+    (115, 1167, 1179),
+    # Volume 116 is due 4 December 2026. Add it once it is out and Wikipedia
+    # lists its chapters outright (its list is still commented out there).
 ]
 
 MOVING = {"Elbaf"}
@@ -275,7 +290,7 @@ def main():
         "accentDark": "#E0AE55",
         "notes": [
             ["Ahead of the anime.", "The manga is well past where the anime is. "
-                                    "Chapter %d here is roughly a hundred chapters "
+                                    "Chapter %d here is roughly fifty chapters "
                                     "beyond what has been animated." % LAST],
             ["Volumes.", "Sections are the collected volumes, with the arc each one "
                          "covers named alongside. Volume boundaries are parsed from the "
