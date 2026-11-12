@@ -762,6 +762,9 @@
     ],
     "title": "My Hero Academia",
     "subtitle": "all eight seasons in air order, then the special and the films",
+    "aliases": [
+      "boku no hero academia"
+    ],
     "kind": "anime",
     "year": "2016–2026",
     "popularity": 83,
@@ -1308,6 +1311,9 @@
     ],
     "title": "One-Punch Man",
     "subtitle": "every broadcast episode, and the extras after them",
+    "aliases": [
+      "one punch man"
+    ],
     "kind": "anime",
     "year": "2015–",
     "popularity": 77,
@@ -3375,6 +3381,10 @@
     ],
     "title": "Cardcaptor Sakura",
     "subtitle": "the 1998–2000 run, with each film where it came out",
+    "aliases": [
+      "cardcaptors",
+      "ccs"
+    ],
     "kind": "anime & films",
     "year": "1998–2000",
     "popularity": 62,
