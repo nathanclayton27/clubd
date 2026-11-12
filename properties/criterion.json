@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 63,
   "year": "1984–",
-  "blurb": "Spines #1 to #1344 — 1343 releases, about 2306 hours, each with the formats Criterion put it out on.",
+  "blurb": "Spines #1 to #1344 — 1344 releases, about 2306 hours, each with the formats Criterion put it out on.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -41,7 +41,7 @@
     ],
     [
       "Formats are what Criterion lists now, plus LaserDisc.",
-      "DVD, Blu-ray and 4K are read off each film's own Criterion page, and count an edition whether it is sold on its own or only inside a box set. The catch is that Criterion delists an edition once it goes out of print: #1 Grand Illusion had a Blu-ray in 2012 and its page no longer mentions it, so it shows here as LaserDisc and DVD. Read these as what you can still get hold of rather than as a complete pressing history. LaserDisc is the exception — it comes from Wikipedia, which is the only place that history survives. Counts across the collection: Blu-ray 1042, DVD 924, LaserDisc 294, 4K 216."
+      "DVD, Blu-ray and 4K are read off each film's own Criterion page, and count an edition whether it is sold on its own or only inside a box set. The catch is that Criterion delists an edition once it goes out of print: #1 Grand Illusion had a Blu-ray in 2012 and its page no longer mentions it, so it shows here as LaserDisc and DVD. Read these as what you can still get hold of rather than as a complete pressing history. LaserDisc is the exception — it comes from Wikipedia, which is the only place that history survives. Counts across the collection: Blu-ray 1043, DVD 924, LaserDisc 294, 4K 216."
     ],
     [
       "LaserDisc-only releases are their own section.",
@@ -53,7 +53,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "Read from each film's own Criterion page. 172 of the 1343 have no runtime listed and weigh nothing, so they cannot drag a group's pace. 9 are not out yet and weigh nothing until they are."
+      "Read from each film's own Criterion page. 173 of the 1344 have no runtime listed and weigh nothing, so they cannot drag a group's pace. 10 are not out yet and weigh nothing until they are."
     ],
     "Catalogue, editions and runtimes from criterion.com; LaserDisc history from Wikipedia's List of films in the Criterion Collection."
   ],
@@ -15170,7 +15170,7 @@
     {
       "id": "s1301",
       "title": "#1301–1344",
-      "sub": "43 films · 52 hours · 9 not out yet",
+      "sub": "44 films · 52 hours · 10 not out yet",
       "items": [
         {
           "id": "crit-1301-the-man-who-wasn-t-there",
@@ -15634,6 +15634,16 @@
             "Blu-ray"
           ],
           "note": "Ernst Lubitsch · United States · 1940 · 4K, Blu-ray · Not out yet — due 15 December 2026"
+        },
+        {
+          "id": "crit-1341-martin-scorsese-s-world-cinema-project-no-6",
+          "t": "Martin Scorsese’s World Cinema Project No. 6",
+          "n": "#1341",
+          "w": 0,
+          "tags": [
+            "Blu-ray"
+          ],
+          "note": "Blu-ray · Not out yet — due 19 January 2027"
         },
         {
           "id": "crit-1342-deliverance",
@@ -16507,7 +16517,7 @@
           "tags": [
             "LaserDisc"
           ],
-          "note": "Anthony Minghella · 1996 · LaserDisc"
+          "note": "Anthony Minghella · 1996 · LaserDisc · Coming back as #1338 — due 8 December 2026"
         },
         {
           "id": "crit-ld-337-evita",

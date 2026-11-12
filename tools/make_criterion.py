@@ -28,7 +28,9 @@ Criterion restarted its numbering at 1 when it moved from LaserDisc to DVD, so
 a LaserDisc-only release can share a number with a completely unrelated DVD.
 Rather than interleave two numbering systems, the LaserDisc-only releases sit
 in their own section, keyed by their own spine numbers, and are scoped out of
-the finish date — they have been out of print since the nineties.
+the finish date — they have been out of print since the nineties. One that
+Criterion later gives a DVD-era spine keeps its LaserDisc row and points at the
+new spine (CLU-592), so nobody's tick moves.
 
 There are no tiers on the rows. Criterion does not rank its own collection and
 neither does this; the only thing tier does here is carry that pace scope, via
@@ -104,6 +106,11 @@ def minutes(r, as_of):
     return 0 if pending(r, as_of) else (r["runtime"] or 0)
 
 
+def long_date(iso):
+    d = datetime.date.fromisoformat(iso)
+    return "%d %s %d" % (d.day, MONTHS[d.month - 1], d.year)
+
+
 def note_for(r, as_of=None):
     # the country field arrives with a trailing space from the source, which
     # doubled up around the separators on every note — strip each bit
@@ -116,9 +123,7 @@ def note_for(r, as_of=None):
     if r.get("ld_spine"):
         bits.append("LaserDisc as #%d" % r["ld_spine"])
     if as_of and pending(r, as_of):
-        due = datetime.date.fromisoformat(r["due"])
-        bits.append("Not out yet — due %d %s %d"
-                    % (due.day, MONTHS[due.month - 1], due.year))
+        bits.append("Not out yet — due %s" % long_date(r["due"]))
     return " · ".join(bits)
 
 
@@ -196,22 +201,60 @@ def main():
         sections.append(sec)
 
     laser.sort(key=lambda r: (r["spine"], r["t"]))
+
+    # A LaserDisc-only release that Criterion later gives a DVD-era spine
+    # (CLU-592: The English Patient, LD #336, back as #1338). Both rows stay:
+    # the LaserDisc row's id is where its ticks live, and the two do not share
+    # a work id, because the assert below forbids it. Instead the LaserDisc row
+    # points at the new spine, and once as_of reaches the new spine's due date
+    # the section stops calling it a release that never made the jump.
+    later = {}
+    for r in spined:
+        if r.get("ld_spine"):
+            later.setdefault((r["ld_spine"], slug(r["t"])), []).append(r)
+    reissue = {}
+    for r in laser:
+        got = later.get((r["spine"], slug(r["t"])), [])
+        assert len(got) <= 1, "LD #%d is reissued twice" % r["spine"]
+        if got:
+            reissue[r["spine"]] = got[0]
+    back = [(r, reissue[r["spine"]]) for r in laser
+            if r["spine"] in reissue and not pending(reissue[r["spine"]], as_of)]
+    def back_txt(verb):
+        # "December 2026": the month the new spine came out, when the data has it
+        return "; ".join(
+            "%s, %s #%d%s"
+            % (r["t"], verb, n["spine"],
+               " in %s" % long_date(n["due"]).split(" ", 1)[1] if n.get("due") else "")
+            for r, n in back)
+
+    def ld_note(r):
+        bits = [note_for(r)]
+        n = reissue.get(r["spine"])
+        if n and pending(n, as_of):
+            bits.append("Coming back as #%d — due %s"
+                        % (n["spine"], long_date(n["due"])))
+        elif n:
+            bits.append("Reissued as #%d" % n["spine"])
+        return " · ".join(b for b in bits if b)
+
     sections.append({
         "id": "laserdisc", "tier": 2, "title": "LaserDisc only",
         "sub": "%d releases · a separate numbering, out of print since the "
                "nineties" % len(laser),
         "intro": "Criterion's LaserDisc line ran from 1984 to 1998 and had its "
                  "own spine numbers, which were reset when the DVD line began. "
-                 "These are the releases that never made the jump, so their "
+                 "These are the releases that never made the jump%s, so their "
                  "numbers overlap unrelated films above. Nothing here is "
                  "purchasable; a finish date skips them unless you tick the box "
-                 "under the bar.",
+                 "under the bar." % (" (bar %s)" % back_txt("reissued as")
+                                     if back else ""),
         "items": [{
             "id": "crit-ld-%d-%s" % (r["spine"], slug(r["t"])),
             "t": r["t"], "n": "LD #%d" % r["spine"], "w": 0,
             **qid_of(qids, "crit-ld-%d-%s" % (r["spine"], slug(r["t"]))),
             "tags": ["LaserDisc"],
-            **({"note": note_for(r)} if note_for(r) else {}),
+            **({"note": ld_note(r)} if ld_note(r) else {}),
         } for r in laser],
     })
 
@@ -289,12 +332,13 @@ def main():
              % ", ".join("%s %d" % (k, v) for k, v in
                          sorted(by_fmt.items(), key=lambda kv: -kv[1]))],
             ["LaserDisc-only releases are their own section.",
-             "%d films Criterion put out on LaserDisc and never reissued. They "
+             "%d films Criterion put out on LaserDisc and never reissued%s. They "
              "carry the old numbering, which collides with the DVD numbering "
              "above, so mixing them into one sequence would produce two #2s and "
              "two #4s. They sit outside a finish date unless you tick the box "
              "under the bar."
-             % len(laser)],
+             % (len(laser) - len(back),
+                ", plus %s" % back_txt("which came back as") if back else "")],
             ["Spine #88 is two films.", "Ivan the Terrible, Part I and Part II "
              "share one number. Every other spine in the list is one entry."],
             ["Bar widths are runtimes.", "Read from each film's own Criterion "
