@@ -6023,6 +6023,14 @@
     "link": null,
     "q": null,
     "t": "The Final Semester"
+   },
+   {
+    "award_year": 2026,
+    "director": "Lee Chang-dong",
+    "korean": null,
+    "link": "Possible Love",
+    "q": "Q137843740",
+    "t": "Possible Love"
    }
   ],
   "koreanfilm": [
@@ -6496,6 +6504,10 @@
   "Q133904537": {
    "min": 76,
    "src": "kmdb:K/00211 (1949)"
+  },
+  "Q137843740": {
+   "min": 164,
+   "src": "infobox:Possible Love"
   },
   "Q15283831": {
    "min": 127,

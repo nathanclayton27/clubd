@@ -48,11 +48,10 @@ prizes are not, and averaging them lies about both.
 
 Why two and not one, in clause two
 ----------------------------------
-At one jury the modern section grows from 19 rows to 37 and takes in Revolver,
-Smugglers, Harbin, Next Sohee and Possible Love — a film that has not been
-released. Every one of those is a real prize honestly won; none of them is
-what somebody means by the best of Korean cinema. Two is where a modern row
-stops being one jury's pick of one year. It is not tuned for scale: three
+At one jury the modern section grows from 20 rows to 37 and takes in Revolver,
+Smugglers, Harbin and Next Sohee. Every one of those is a real prize honestly
+won; none of them is what somebody means by the best of Korean cinema. Two
+is where a modern row stops being one jury's pick of one year. It is not tuned for scale: three
 would give 8 rows and would drop Burning, which is the check that says a gate
 is wrong.
 
@@ -79,7 +78,7 @@ What it refuses is worth naming, because it is the honest cost:
     thing the gate throws out and it should be argued with.
   * **The Wailing** (2016), **House of Hummingbird** (2018) and **Hill of
     Freedom** (2014) each have exactly one jury and stop there.
-  * Everything between 2013 and today that only one jury liked — eighteen
+  * Everything between 2013 and today that only one jury liked — seventeen
     films, listed by the generator when it runs.
 
 Traps this file hit, and what it did about them
@@ -110,7 +109,7 @@ Traps this file hit, and what it did about them
 
 Wikidata ids
 ------------
-104 of the 119 rows carry `q`, which build.py groups on ahead of title and
+105 of the 120 rows carry `q`, which build.py groups on ahead of title and
 year. Every one was resolved from an identifier the source itself printed —
 the archive's KMDb number for its own selections, the award article's own
 wikilink for the juries' — and then checked against the item's P31 and P577:
@@ -119,7 +118,7 @@ more than a year, loses its id rather than risk ticking a film nobody watched.
 
 Weights
 -------
-Every row is weighted and no figure was invented. 83 come from the film's own
+Every row is weighted and no figure was invented. 84 come from the film's own
 English Wikipedia infobox; the other 36 have no English article at all and
 take the running time from the archive's own database, the 상영시간 field of
 the film's KMDb record, matched to the release the archive dated. Wikidata's
@@ -421,7 +420,7 @@ def main():
             gated.append(f)
         elif f["year"] and f["year"] > closed:
             near.append(f)
-    assert len(gated) == 119, "the gate now admits %d films" % len(gated)
+    assert len(gated) == 120, "the gate now admits %d films" % len(gated)
     assert sum(1 for f in gated if f["archive"]) == 100
     modern = [f for f in gated if not f["archive"]]
 

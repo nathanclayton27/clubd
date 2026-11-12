@@ -4,8 +4,8 @@
   "subtitle": "the national archive's hundred, and what came after",
   "kind": "films",
   "popularity": 56,
-  "year": "1934–2025",
-  "blurb": "119 films Korea's own national film archive and its film juries picked out, 1934 to 2025 — about 220 hours. No order; let the picker choose.",
+  "year": "1934–2026",
+  "blurb": "120 films Korea's own national film archive and its film juries picked out, 1934 to 2026 — about 223 hours. No order; let the picker choose.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -26,7 +26,7 @@
     ],
     [
       "That selection was made in 2014, and stops at Pietà.",
-      "So Parasite could not have been on it, and neither could Burning. The 19 films released since are here on a second rule, stated so you can argue with it: at least 2 of Korea's eight juries must have named the film. Seven of the eight award a Best Film — the Blue Dragon, the Grand Bell, the Baeksang, the Buil, the Chunsa, the Korean Film Awards and the Korean Association of Film Critics — and the eighth is the committee that picks the country's Academy Award entry. Parasite leads with 6 of them; 11 of these rows clear on exactly 2. This is a coarser instrument than a canon and the last section should be read as provisional."
+      "So Parasite could not have been on it, and neither could Burning. The 20 films released since are here on a second rule, stated so you can argue with it: at least 2 of Korea's eight juries must have named the film. Seven of the eight award a Best Film — the Blue Dragon, the Grand Bell, the Baeksang, the Buil, the Chunsa, the Korean Film Awards and the Korean Association of Film Critics — and the eighth is the committee that picks the country's Academy Award entry. Parasite leads with 6 of them; 12 of these rows clear on exactly 2. This is a coarser instrument than a canon and the last section should be read as provisional."
     ],
     [
       "What that costs, said plainly.",
@@ -38,11 +38,11 @@
     ],
     [
       "Bar widths are runtimes, and none was invented.",
-      "All 119 rows are weighted, 220 hours in total. 83 figures are the film's own English Wikipedia infobox; the other 36 have no English article at all and take the running time from the archive's own database, KMDb, matched to the release the archive dated. Wikidata's runtime is carried only as a cross-check and disagrees with the infobox on 6 rows, which is why it is not the source. The range runs from Sweet Dream at 47 minutes to The Last Witness at 158."
+      "All 120 rows are weighted, 223 hours in total. 84 figures are the film's own English Wikipedia infobox; the other 36 have no English article at all and take the running time from the archive's own database, KMDb, matched to the release the archive dated. Wikidata's runtime is carried only as a cross-check and disagrees with the infobox on 6 rows, which is why it is not the source. The range runs from Sweet Dream at 47 minutes to Possible Love at 164."
     ],
     [
       "Titles are the source's, and so is every id.",
-      "The archive translates some of its own selections its own way — Good Windy Day, Declaration of Idiot, A Peppermint Candy — and that is the title that ships, with the more familiar English name in the note where they differ. Korean titles come from the archive's database or from the award tables' own original-title column; nothing here was romanised by us. 104 of the 119 rows carry a Wikidata id, each resolved from an identifier the source printed itself — the archive's KMDb number, or the award article's wikilink — and never from a title. 14 of the remaining 15 are archive selections Wikidata holds no KMDb number for, and looking those up by name returned a 1960 film for The Wedding Day and a 1928 one for Rainy Days, so they ship without an id instead. Spinning the Tales of Cruelty Towards Women had one and lost it: the archive dates it 1982 and its own Wikidata item dates it 1984, and a gap that wide is not something to tick a film on."
+      "The archive translates some of its own selections its own way — Good Windy Day, Declaration of Idiot, A Peppermint Candy — and that is the title that ships, with the more familiar English name in the note where they differ. Korean titles come from the archive's database or from the award tables' own original-title column; nothing here was romanised by us. 105 of the 120 rows carry a Wikidata id, each resolved from an identifier the source printed itself — the archive's KMDb number, or the award article's wikilink — and never from a title. 14 of the remaining 15 are archive selections Wikidata holds no KMDb number for, and looking those up by name returned a 1960 film for The Wedding Day and a 1928 one for Rainy Days, so they ship without an id instead. Spinning the Tales of Cruelty Towards Women had one and lost it: the archive dates it 1982 and its own Wikidata item dates it 1984, and a gap that wide is not something to tick a film on."
     ],
     [
       "The same film on two lists here is the point.",
@@ -872,7 +872,7 @@
     {
       "id": "since",
       "title": "After the archive's list",
-      "sub": "2013–2025 · 19 films · 42 hours",
+      "sub": "2013–2026 · 20 films · 45 hours",
       "intro": "Everything after the archive's selection closed. These rows are not the archive's picks — it has not made a new selection — so each one is here because at least 2 of Korea's eight juries named it, and the note says how many. It is a coarser instrument than a considered canon and this section should be read as provisional.",
       "items": [
         {
@@ -1026,6 +1026,14 @@
           "w": 2.32,
           "note": "3 of 8 juries · Park Chan-wook · 어쩔수가없다 · 139 min",
           "q": "Q129906152"
+        },
+        {
+          "id": "kc-2026-possible-love",
+          "t": "Possible Love",
+          "n": "2026",
+          "w": 2.73,
+          "note": "2 of 8 juries · Lee Chang-dong · 가능한 사랑 · 164 min",
+          "q": "Q137843740"
         }
       ]
     }
