@@ -1,16 +1,16 @@
 {
   "source": {
     "article": "Lanterns (TV series)",
-    "revid": 1374338199,
-    "revision_timestamp": "2026-09-11T11:29:39Z",
-    "url": "https://en.wikipedia.org/w/index.php?oldid=1374338199",
-    "read": "2026-09-11",
+    "revid": 1385028970,
+    "revision_timestamp": "2026-11-11T14:02:31Z",
+    "url": "https://en.wikipedia.org/w/index.php?oldid=1385028970",
+    "read": "2026-11-11",
     "what": "the {{Episode list}} rows of the article's Episodes section, and its {{Infobox television}}"
   },
   "infobox": {
-    "num_episodes": 4,
+    "num_episodes": 8,
     "num_seasons": 1,
-    "runtime": "52–57 minutes",
+    "runtime": "47–57 minutes",
     "network": "HBO",
     "first_aired": "2026-08-16"
   },
@@ -42,17 +42,17 @@
     },
     {
       "e": 6,
-      "t": null,
+      "t": "Bad Optics",
       "d": "2026-09-20"
     },
     {
       "e": 7,
-      "t": null,
+      "t": "The Jordan Boys' Legacy",
       "d": "2026-09-27"
     },
     {
       "e": 8,
-      "t": null,
+      "t": "Dirt and Stars",
       "d": "2026-10-04"
     }
   ]

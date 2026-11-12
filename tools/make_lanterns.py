@@ -8,10 +8,12 @@ The DC Green Lantern series: Hal Jordan and John Stewart investigating a murder
 in the American heartland. Eight episodes, weekly on Sundays from 16 August to
 4 October 2026, airing on HBO and streaming on HBO Max.
 
-It is airing right now, which makes it one of the properties whose schedule
-matters week to week — one window per episode, so the pace line tells you
-whether you are current rather than whether you are on track for a distant
-date.
+The season finished on 4 October 2026. While it aired it was one of the
+properties whose schedule mattered week to week — one window per episode, so
+the pace line tells you whether you are current rather than whether you are on
+track for a distant date — and the windows stay, as the broadcast they were.
+The "still airing" wording is only produced while AS_OF falls before the last
+air date; once every episode has aired, the blurb and notes say so instead.
 
 WHERE THE TITLES AND DATES COME FROM
 ------------------------------------
@@ -35,10 +37,10 @@ A TITLE IS NEVER INVENTED, AND A PLACEHOLDER IS NEVER DRESSED UP
 ----------------------------------------------------------------
 An episode gets the title the source publishes. An episode the source has not
 titled gets "Episode N", and the notes say plainly how many rows are in that
-state so a reader knows the difference between a title and a number. As of the
-read below, HBO has published five of the eight: episodes 1 to 4 have aired,
-and episode 5 is named in the show's own official podcast, which the article
-cites. Episodes 6 to 8 have air dates and no titles. They stay numbered.
+state so a reader knows the difference between a title and a number. At the
+first sourced read (September 2026) only five of the eight were published and
+episodes 6 to 8 stayed numbered; as of the read below all eight have aired and
+all eight are titled, so no row is a placeholder.
 
 THE AIRED/UPCOMING WORDING IS FROZEN, NOT READ FROM THE CLOCK
 ------------------------------------------------------------
@@ -59,7 +61,7 @@ now read per episode and the weekly spacing is asserted instead of assumed.
 
 NOTHING IS WEIGHTED
 -------------------
-The article publishes "52–57 minutes" for the series and no per-episode
+The article publishes "47–57 minutes" for the series and no per-episode
 runtime; the episode table declares no runtime column. A range is a range, and
 eight identical invented figures would be a guess dressed as a measurement, so
 every episode counts one — the same call make_president-curtis.py and
@@ -90,7 +92,7 @@ DATA = pathlib.Path(__file__).resolve().parent / "data" / ("%s-episodes.json" % 
 # against the episode count the article's own infobox states. Bump it when you
 # re-run --refresh; reading the clock instead would make this file's output
 # differ by the day it happened to run.
-AS_OF = date(2026, 9, 11)
+AS_OF = date(2026, 11, 11)
 
 # The ids this list shipped with. Every one of them must survive every future
 # edit of this file: a tick is stored against the id, so renaming one throws
@@ -286,6 +288,26 @@ def main():
         titles_note = ("All %d titles are published, so no row on this list is "
                        "a placeholder." % n)
 
+    # Whether the run is over is read from the source's dates against AS_OF,
+    # never typed: the "still airing" wording below used to be a literal, and
+    # it went on saying so for five weeks after the finale.
+    done = len(aired) == n
+    last = "%s %d" % (daymonth(dates[-1]), dates[-1].year)
+    if done:
+        blurb = "%d episodes, aired weekly." % n
+        pace_note = ["Season complete.", "One window per episode, so the pace "
+                     "line tells you whether you are caught up with the "
+                     "broadcast rather than on track for some distant finish. "
+                     "The last episode aired on %s." % last]
+        where_head = "Where it aired."
+    else:
+        blurb = "%d episodes, weekly, still airing." % n
+        pace_note = ["Airing now.", "One window per episode, so the pace line "
+                     "tells you whether you are caught up with the broadcast "
+                     "rather than on track for some distant finish. The last "
+                     "episode lands on %s." % last]
+        where_head = "Where it airs."
+
     p = {
         "slug": SLUG,
         "title": "Lanterns",
@@ -293,7 +315,7 @@ def main():
         "kind": "tv",
         "popularity": 29,
         "year": "2026",
-        "blurb": "%d episodes, weekly, still airing." % n,
+        "blurb": blurb,
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -302,11 +324,8 @@ def main():
         "tiers": False,
         "schedule": {"kind": "windows", "windows": windows},
         "notes": [
-            ["Airing now.", "One window per episode, so the pace line tells "
-             "you whether you are caught up with the broadcast rather than on "
-             "track for some distant finish. The last episode lands on %s %d."
-             % (daymonth(dates[-1]), dates[-1].year)],
-            ["Where it airs.", "Sundays on HBO, streaming the same day on HBO "
+            pace_note,
+            [where_head, "Sundays on HBO, streaming the same day on HBO "
              "Max. Eight episodes weekly, %s to %s."
              % (daymonth(dates[0]), daymonth(dates[-1]))],
             ["Titles.", titles_note],
@@ -314,10 +333,14 @@ def main():
              "and no figure per episode, so every episode counts one rather "
              "than carrying a runtime this list would have had to guess at."
              % ib["runtime"]],
+        ] + ([] if done else [
+            # only while something is still to air: "the 0 that have not
+            # aired yet" is not a sentence worth printing
             ["The whole season is listed.", "All %d episodes are dated in the "
              "source, so the %d that have not aired yet are listed too. The "
              "schedule needs them, and an announced row is what an airing "
              "show looks like." % (n, n - len(aired))],
+        ]) + [
             "Episode titles and air dates machine-read from the episode table "
             "of the Wikipedia article \"%s\", revision %d, read %s; how many "
             "episodes have aired is cross-checked against that article's own "

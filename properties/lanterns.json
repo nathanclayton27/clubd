@@ -5,7 +5,7 @@
   "kind": "tv",
   "popularity": 29,
   "year": "2026",
-  "blurb": "8 episodes, weekly, still airing.",
+  "blurb": "8 episodes, aired weekly.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -74,26 +74,22 @@
   },
   "notes": [
     [
-      "Airing now.",
-      "One window per episode, so the pace line tells you whether you are caught up with the broadcast rather than on track for some distant finish. The last episode lands on 4 October 2026."
+      "Season complete.",
+      "One window per episode, so the pace line tells you whether you are caught up with the broadcast rather than on track for some distant finish. The last episode aired on 4 October 2026."
     ],
     [
-      "Where it airs.",
+      "Where it aired.",
       "Sundays on HBO, streaming the same day on HBO Max. Eight episodes weekly, 16 August to 4 October."
     ],
     [
       "Titles.",
-      "5 of the 8 titles are published. Episodes 6, 7 and 8 carry air dates and no titles yet, so this list numbers them rather than inventing names for them; they get their titles here when the source publishes them."
+      "All 8 titles are published, so no row on this list is a placeholder."
     ],
     [
       "Nothing is weighted.",
-      "The source publishes 52–57 minutes for the series and no figure per episode, so every episode counts one rather than carrying a runtime this list would have had to guess at."
+      "The source publishes 47–57 minutes for the series and no figure per episode, so every episode counts one rather than carrying a runtime this list would have had to guess at."
     ],
-    [
-      "The whole season is listed.",
-      "All 8 episodes are dated in the source, so the 4 that have not aired yet are listed too. The schedule needs them, and an announced row is what an airing show looks like."
-    ],
-    "Episode titles and air dates machine-read from the episode table of the Wikipedia article \"Lanterns (TV series)\", revision 1374338199, read 2026-09-11; how many episodes have aired is cross-checked against that article's own infobox count before this builds, and an episode the article has not titled is numbered rather than named."
+    "Episode titles and air dates machine-read from the episode table of the Wikipedia article \"Lanterns (TV series)\", revision 1385028970, read 2026-11-11; how many episodes have aired is cross-checked against that article's own infobox count before this builds, and an episode the article has not titled is numbered rather than named."
   ],
   "sections": [
     {
@@ -129,25 +125,25 @@
           "id": "lanterns-5",
           "t": "Lights Out",
           "n": "5",
-          "note": "airs 13 September"
+          "note": "aired 13 September"
         },
         {
           "id": "lanterns-6",
-          "t": "Episode 6",
+          "t": "Bad Optics",
           "n": "6",
-          "note": "airs 20 September"
+          "note": "aired 20 September"
         },
         {
           "id": "lanterns-7",
-          "t": "Episode 7",
+          "t": "The Jordan Boys' Legacy",
           "n": "7",
-          "note": "airs 27 September"
+          "note": "aired 27 September"
         },
         {
           "id": "lanterns-8",
-          "t": "Episode 8",
+          "t": "Dirt and Stars",
           "n": "8",
-          "note": "airs 4 October · season finale"
+          "note": "aired 4 October · season finale"
         }
       ]
     }
