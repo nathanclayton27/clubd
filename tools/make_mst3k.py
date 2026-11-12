@@ -28,7 +28,12 @@ tools/data/mst3k-episodes.json. K03's note follows the article: long lost,
 it resurfaced in March 2026. The extractor pins the episode codes of seasons
 1 and 6 as first shipped: the article renumbered season 6 on 2026-09-10
 (rev 1374243670) and season 1 on 2026-10-23 (rev 1381592816), and a code is
-a row id (CLU-621).
+a row id (CLU-621). Season 6 shipped with its real codes (Satellite News:
+604 is Zombie Nightmare, 615 Kitten with a Whip), so it stays as pinned.
+Season 1 shipped with ten wrong ones: Women of the Prehistoric Planet is 104
+(Satellite News, and the article since that edit), not 113. Here those rows
+show their real codes, in code order, under the ids they shipped with
+(S1_SHOWN below).
 """
 import json
 import pathlib
@@ -48,6 +53,17 @@ MONTHS = ("January February March April May June July August September "
 # committed data, not the clock: after 20 November 2026 bump TODAY in the
 # extractor and rerun it, and this assert fails until 1404 is updated.
 UPCOMING = {"1404": "2026-11-20"}
+
+# Season 1's ids are its codes as first shipped, when the article filed Women
+# of the Prehistoric Planet last, as 113, so 104-112 each sat one slot early.
+# Its real code is 104, and each of the others is one higher. An id never
+# moves (it is where readers' ticks live), so each row keeps its id, shows its
+# real code, and sorts by it (CLU-621, decided 2026-11-12).
+S1_SHOWN = {"mst-113": "104"}
+S1_SHOWN.update({"mst-%d" % c: "%d" % (c + 1) for c in range(104, 113)})
+S1_TITLES = {"mst-104": "The Corpse Vanishes",
+             "mst-112": "The Black Scorpion",
+             "mst-113": "Women of the Prehistoric Planet"}
 
 
 def due(iso):
@@ -84,6 +100,14 @@ def main():
             if s["kind"] == "ktma":
                 row["opt"] = True
             items.append(row)
+        if s.get("season") == 1:
+            got = {x["id"]: x["t"] for x in items if x["id"] in S1_TITLES}
+            assert got == S1_TITLES, got
+            for x in items:
+                x["n"] = S1_SHOWN.get(x["id"], x["n"])
+            items.sort(key=lambda x: int(x["n"]))
+            assert [x["n"] for x in items] == [
+                "%d" % c for c in range(101, 114)], items
         if s["kind"] == "ktma":
             sec = {"id": "k", "title": "KTMA (Season 0)",
                    "sub": "%s · 21 episodes + the unaired pilot · optional"
@@ -126,7 +150,7 @@ def main():
         # tools/data/sequences.json and are enforced separately.
         "random": True,
         "year": "1988–2026",
-        "blurb": "All 236 experiments in air order — the KTMA year, the "
+        "blurb": "All 236 experiments in episode order — the KTMA year, the "
                  "cable runs, the movie, and the revivals, each row the film "
                  "it riffs.",
         "unit": {"one": "episode", "many": "episodes"},

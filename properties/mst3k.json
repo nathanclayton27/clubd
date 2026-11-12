@@ -6,7 +6,7 @@
   "popularity": 46,
   "random": true,
   "year": "1988–2026",
-  "blurb": "All 236 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
+  "blurb": "All 236 experiments in episode order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -217,64 +217,64 @@
           "note": "1942 film"
         },
         {
+          "id": "mst-113",
+          "t": "Women of the Prehistoric Planet",
+          "n": "104",
+          "note": "1966 film"
+        },
+        {
           "id": "mst-104",
           "t": "The Corpse Vanishes",
-          "n": "104",
+          "n": "105",
           "note": "1942 film"
         },
         {
           "id": "mst-105",
           "t": "The Crawling Hand",
-          "n": "105",
+          "n": "106",
           "note": "1963 film"
         },
         {
           "id": "mst-106",
           "t": "Robot Monster",
-          "n": "106",
+          "n": "107",
           "note": "1953 film"
         },
         {
           "id": "mst-107",
           "t": "The Slime People",
-          "n": "107",
+          "n": "108",
           "note": "1963 film"
         },
         {
           "id": "mst-108",
           "t": "Project Moonbase",
-          "n": "108",
+          "n": "109",
           "note": "1953 film"
         },
         {
           "id": "mst-109",
           "t": "Robot Holocaust",
-          "n": "109",
+          "n": "110",
           "note": "1987 film"
         },
         {
           "id": "mst-110",
           "t": "Moon Zero Two",
-          "n": "110",
+          "n": "111",
           "note": "1969 film"
         },
         {
           "id": "mst-111",
           "t": "Untamed Youth",
-          "n": "111",
+          "n": "112",
           "note": "1957 film"
         },
         {
           "id": "mst-112",
           "t": "The Black Scorpion",
-          "n": "112",
-          "note": "1957 film"
-        },
-        {
-          "id": "mst-113",
-          "t": "Women of the Prehistoric Planet",
           "n": "113",
-          "note": "1966 film"
+          "note": "1957 film"
         }
       ],
       "open": true
