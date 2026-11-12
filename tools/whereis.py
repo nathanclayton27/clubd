@@ -34,6 +34,10 @@ import pathlib
 import re
 import sys
 
+# Piped on Windows, stdout is cp1252, which cannot encode the ⚠ in the warnings
+# below: the run crashed at exactly the line it existed to print (CLU-446).
+sys.stdout.reconfigure(encoding="utf-8")
+
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 # What actually ran against production, oldest first.
@@ -139,7 +143,11 @@ DEFS = [
     (re.compile(r"create\s+(?:or\s+replace\s+)?function\s+(?:public\.)?(\w+)", re.I), "function"),
     (re.compile(r"create\s+policy\s+\"([^\"]+)\"", re.I), "policy"),
     (re.compile(r"create\s+table\s+(?:if\s+not\s+exists\s+)?(?:public\.)?(\w+)", re.I), "table"),
-    (re.compile(r"create\s+trigger\s+(\w+)", re.I), "trigger"),
+    # The timing keyword is required. Without it this matched prose inside an
+    # error string at clu504-tombstones.sql:489 ("...the CREATE TRIGGER below
+    # would...") and reported a live trigger named `below` (CLU-446). Literals
+    # are deliberately NOT stripped: clu445 creates a policy inside execute '...'.
+    (re.compile(r"create\s+trigger\s+(\w+)\s+(?:before|after|instead\s+of)\b", re.I), "trigger"),
 ]
 
 
@@ -255,6 +263,16 @@ if __name__ == "__main__":
         print("never-run files, counts a name once however many files carry it,")
         print("and sees no column, index, view or grant at all. DATABASE.md §4")
         print("catalogues what is live; this catalogues where definitions are.")
+        # scratch/ is gitignored, and the security migrations live in it, so a
+        # clean clone reads fewer files and gets different figures (CLU-446).
+        local = [f for f in scanned() if f.startswith("scratch/")]
+        if local:
+            print("%d of the %d .sql files read here are in the gitignored scratch/,"
+                  % (len(local), len(scanned())))
+            print("so these figures only reproduce on a machine that has that folder.")
+        else:
+            print("No .sql file under the gitignored scratch/ is here, so these")
+            print("figures leave out every migration that lives only in that folder.")
         print("A repeated object is a trap: whichever file runs LAST wins, no")
         print("error is raised, and whatever the loser carried disappears.")
         if ghost:
@@ -292,9 +310,13 @@ if __name__ == "__main__":
             elif stale:
                 print("⚠ DATABASE.md says %s where this scan says %s of %s."
                       % (", ".join("%s of %s" % q for q in stale), want[0], want[1]))
-                print("  One of them is stale. This tool is the weakest record of what")
-                print("  RAN — but of this count it is the only record there is, so the")
-                print("  document is the side to correct. (CLU-446)")
+                if not local:
+                    print("  This machine has no .sql under scratch/, so the scan is the")
+                    print("  short side. Do not correct the document from here. (CLU-446)")
+                else:
+                    print("  One of them is stale. This tool is the weakest record of what")
+                    print("  RAN — but of this count it is the only record there is, so the")
+                    print("  document is the side to correct. (CLU-446)")
             else:
                 print("DATABASE.md quotes %s of %s in %d place(s), and agrees."
                       % (want[0], want[1], len(quoted)))

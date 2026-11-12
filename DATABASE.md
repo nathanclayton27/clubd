@@ -147,12 +147,14 @@ whole database follows.
 
 1. **Read the whole file**, top to bottom, including the header.
 2. **`python tools/whereis.py <object>`** for every object the file creates or
-   replaces. **25 of 94 objects here are defined in more than one file.**
-   Whichever runs last wins, silently. That 94 counts *object names defined by
+   replaces. **25 of 93 objects here are defined in more than one file.**
+   Whichever runs last wins, silently. That 93 counts *object names defined by
    the repo’s `.sql` files* — superseded and never-run files included, one count
    per name however many files carry it, and no columns, indexes, views or
    grants. It is **not** a count of live database objects and does not reconcile
-   with §4. The tool prints the census with that caveat attached and checks this
+   with §4. 11 of the 31 `.sql` files it reads are in the gitignored
+   `scratch/security/`, so the figure only reproduces on a machine that has that
+   folder. The tool prints the census with that caveat attached and checks this
    sentence against its own scan, so the two cannot drift again (CLU-446).
 3. **`python tools/ordercheck.py <file.sql>`** for create-time resolution
    (trap 1). Know its limit before you lean on it — see below.
@@ -1343,11 +1345,14 @@ database that no longer matches the file in front of them.
 This project has already paid for the alternative. `schema.sql` went behind,
 nothing said so, and **two separate pieces of work were built on it confidently
 and wrongly** (CLU-374) — one of which would have deleted a live rate limiter.
-`tools/whereis.py` exists because of it, and reports that **25 of 94 objects are
+`tools/whereis.py` exists because of it, and reports that **25 of 93 objects are
 defined in more than one file**, whichever runs last winning silently. *(It said
 23 of 84 until 2026-11-11, when `whereis.py`'s own check caught it. The files
 written for CLU-445, CLU-504 and CLU-153 had added the difference. It is the same
-trap the next paragraph describes, caught by the tool this time.)*
+trap the next paragraph describes, caught by the tool this time. It then said
+25 of 94 until 2026-11-12: the 94 included a trigger named `below`, matched in an
+error message in `clu504-tombstones.sql`, until CLU-446 made the pattern require
+`before`, `after` or `instead of`.)*
 
 **This document has already broken its own rule with that number.** It said *74*
 from 2026-08-27 (`c80c9f0`) until CLU-446, and 74 was right on the day it was
