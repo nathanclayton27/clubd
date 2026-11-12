@@ -4,7 +4,7 @@
   "kind": "anime",
   "popularity": 91,
   "year": "1999–",
-  "blurb": "1180 episodes, 49 arcs, the filler is optional.",
+  "blurb": "1180 episodes aired, 49 arcs, the filler is optional.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -28,7 +28,7 @@
     ],
     [
       "Between runs.",
-      "This goes up to episode 1180, aired 27 September 2026. The show now airs at most 26 episodes a year; the next are due in 2027, with no exact date yet; rerun the generator to extend it."
+      "The newest out is episode 1180, aired 27 September 2026. The show now airs at most 26 episodes a year; the next are due in 2027, with no exact date yet, so 1181 is listed as not out yet; rerun the generator to extend it."
     ],
     "Arc names, boundaries and the filler marks from Anime Filler Guide's One Piece list; the boundaries are held to the two arc lengths every source quotes, Wano at 196 episodes and Dressrosa at 118, and the generator fails rather than ship a list that disagrees with either."
   ],
@@ -6218,7 +6218,7 @@
     {
       "id": "a-elbaph",
       "title": "Elbaph",
-      "sub": "Final · episodes 1156–1180",
+      "sub": "Final · episodes 1156–1181",
       "items": [
         {
           "id": "op-1156",
@@ -6344,6 +6344,12 @@
           "id": "op-1180",
           "t": "Episode",
           "n": "1180"
+        },
+        {
+          "id": "op-1181",
+          "t": "Episode",
+          "n": "1181",
+          "note": "Not out yet — due 2027"
         }
       ]
     }

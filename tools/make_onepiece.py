@@ -20,6 +20,9 @@ source lists them all in one fetch, and a wrong title is worse than none. The ar
 is what you navigate by here.
 
 LAST is the newest aired episode. Bump it and rerun as the show continues.
+NEXT holds episodes announced with a date but not yet aired (a bare year is
+enough); they follow LAST as ordinary rows marked "Not out yet". When one airs,
+raise LAST past it and take it out of NEXT.
 """
 import json
 import pathlib
@@ -27,6 +30,16 @@ import pathlib
 SLUG = "one-piece"
 LAST = 1180          # newest aired episode as of 11 November 2026
 LAST_AIRED = "27 September 2026"   # its air date, from One Piece season 22
+
+# Announced, not aired: episode -> due date as the source gives it. After 1180
+# aired, the official X account said the next episode airs in 2027, "detailed
+# broadcast timing to follow" (Oricon News 2482880, 27 Sep 2026), still the
+# latest as of 12 Nov 2026. It continues the open Elbaph season (One Piece
+# season 22 on Wikipedia: last_aired = present), so it ends that arc's run.
+# No `w`: nothing on this list is weighted, and a lone w: 0 would switch the
+# page into hours. The id is op-<number>, so a title or date arriving later
+# cannot move it.
+NEXT = {1181: "2027"}
 
 # saga, arc, first episode, filler?
 # each arc runs to the episode before the next one starts
@@ -106,9 +119,14 @@ def slugify(name):
 
 
 def main():
+    # announced episodes come straight after the aired ones, with no gap
+    if sorted(NEXT) != list(range(LAST + 1, LAST + 1 + len(NEXT))):
+        raise SystemExit("NEXT must run on from LAST: %r" % sorted(NEXT))
+    final = LAST + len(NEXT)
+
     sections = []
     for i, (saga, arc, first, filler) in enumerate(ARCS):
-        last = ARCS[i + 1][2] - 1 if i + 1 < len(ARCS) else LAST
+        last = ARCS[i + 1][2] - 1 if i + 1 < len(ARCS) else final
         n = last - first + 1
         if n < 1:
             raise SystemExit("arc %r has no episodes" % arc)
@@ -120,17 +138,21 @@ def main():
                       " · filler" if filler else ""),
             "items": [
                 dict({"id": "op-%d" % e, "t": "Episode", "n": str(e)},
-                     **({"opt": 1} if filler else {}))
+                     **({"opt": 1} if filler else {}),
+                     **({"note": "Not out yet — due %s" % NEXT[e]}
+                        if e in NEXT else {}))
                 for e in range(first, last + 1)
             ],
         })
 
     ids = [x["id"] for s in sections for x in s["items"]]
-    total = len(ids)
     if len(ids) != len(set(ids)):
         raise SystemExit("duplicate item ids")
-    if total != LAST:
-        raise SystemExit("expected %d episodes, built %d" % (LAST, total))
+    if len(ids) != final:
+        raise SystemExit("expected %d rows, built %d" % (final, len(ids)))
+    # counts below are of aired episodes; the announced ones are rows, not
+    # episodes yet
+    total = LAST
 
     # the two lengths every source agrees on, as a check on the boundaries
     by = {s["title"]: len(s["items"]) for s in sections}
@@ -141,13 +163,19 @@ def main():
 
     filler_eps = sum(len(s["items"]) for s, a in zip(sections, ARCS) if a[3])
 
+    # the "Between runs." note speaks of one announced episode due in a bare
+    # year; anything else needs that note rewritten, not filled in
+    if len(NEXT) != 1 or not NEXT[LAST + 1].isdigit():
+        raise SystemExit("NEXT changed shape: rewrite the 'Between runs.' note")
+
     prop = {
         "slug": SLUG,
         "title": "One Piece",
         "kind": "anime",
         "popularity": 91,
         "year": "1999–",
-        "blurb": "%d episodes, %d arcs, the filler is optional." % (total, len(sections)),
+        # "aired": the card prints the row count, which includes NEXT, beside it
+        "blurb": "%d episodes aired, %d arcs, the filler is optional." % (total, len(sections)),
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "accent": "#B8531F",
@@ -166,11 +194,14 @@ def main():
             # 1180. After it aired, the official X account said the next
             # episode airs in 2027, no exact date yet (Oricon News 2482880,
             # 27 Sep 2026; ja.wikipedia "ONE PIECE (アニメ)"), as of 11 Nov 2026.
-            ["Between runs.", "This goes up to episode %d, aired %s. The "
+            # The year and the one listed episode come from NEXT, checked
+            # above the prop.
+            ["Between runs.", "The newest out is episode %d, aired %s. The "
                               "show now airs at most 26 episodes a year; the "
-                              "next are due in 2027, with no exact date yet; "
-                              "rerun the generator to extend it."
-                              % (LAST, LAST_AIRED)],
+                              "next are due in %s, with no exact date yet, so "
+                              "%d is listed as not out yet; rerun the "
+                              "generator to extend it."
+                              % (LAST, LAST_AIRED, NEXT[LAST + 1], LAST + 1)],
             # Unheaded, last: the colophon (CLU-275 rule 6). The two arc
             # lengths named here are the assertions run above.
             "Arc names, boundaries and the filler marks from Anime Filler "
