@@ -383,8 +383,8 @@ def main():
                             "special" % special)
             elif n == 1 and s <= special:
                 bits.append("part of the two-hour premiere")
-            if s == len(rows):
-                bits.append("season finale")
+            # no "season finale": the last row of a section titled "Season N"
+            # already says it (CLU-123, CLU-557)
             if delay:
                 bits.append(delay)
             row = {"id": "frieren-s%de%d" % (n, s), "t": t, "n": str(s)}

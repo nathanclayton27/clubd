@@ -229,8 +229,8 @@ def episode_note(r, merged):
     bits = []
     if r["o"] == 1:
         bits.append("Series premiere")
-    if r["o"] == 200:
-        bits.append("Series finale")
+    # no "Series finale" on episode 200: the last row of the last season
+    # already says it (CLU-123, CLU-557)
     if r["dic"] == "—":
         bits.append("Never dubbed into English at the time")
     if r["o"] in merged:

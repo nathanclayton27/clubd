@@ -709,7 +709,8 @@ def main():
              "the uncut version, “%s”, is on the home video "
              "releases" % uncut,
         "16": "A clip show recapping the episodes before it",
-        str(BROADCAST): "Series finale",
+        # no "Series finale" on the last broadcast episode: its position
+        # already says it (CLU-123, CLU-557)
         BONUS_NUMBER: "Bonus episode bundled with the Nintendo DS game; not "
                       "one of the twenty-seven broadcast episodes, and "
                       "numbered 5.5 by the source",

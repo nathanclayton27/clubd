@@ -54,8 +54,8 @@ def main():
             if r.get("bdpilot"):
                 bits.append("A backdoor pilot for a spin-off "
                             "that was not picked up")
-            if n == SEASONS and r["e"] == len(rows):
-                bits.append("Series finale")
+            # no "Series finale": the last row of the last season already
+            # says it (CLU-123, CLU-557)
             note = prop.join_bits(*bits)
             if note:
                 item["note"] = note

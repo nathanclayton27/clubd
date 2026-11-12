@@ -176,8 +176,8 @@ def main():
             while here and here[0]["d"] < e["d"]:
                 items.append(film_row(here.pop(0)))
             row = {"id": "yyh-e%d" % e["o"], "t": e["t"], "n": str(e["o"])}
-            if e["o"] == TOTAL_EPISODES:
-                row["note"] = "Series finale"
+            # no "Series finale" on the last episode: its position already
+            # says it (CLU-123, CLU-557)
             items.append(row)
         assert not here, "a film outran its season"
         name, span = heads[n]

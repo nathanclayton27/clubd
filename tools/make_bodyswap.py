@@ -50,12 +50,33 @@ def scrub(t):
     return re.sub(r"\s+", " ", t).strip()
 
 
+# Who swaps, overridden where the source's cell gives too much away. Keyed on
+# (title, year), with the cell the ruling was made against: if the source stops
+# saying that, the assert stops the run so somebody re-reads it.
+#   The Substance (2024): "Elisabeth Sparkle and Sue" gives away that a second
+#   self exists, and for a film whose turn IS the premise that is a spoiler -
+#   Nathan, CLU-123: "just make sure to do your best to make it so a premise
+#   note is obviously not a crazy spoiler for something recommended to go in
+#   blind". Commit 4ef1b1d cut it on the property file; CLU-557 moved the
+#   ruling here so a rebuild cannot undo it.
+CHARACTERS = {
+    ("The Substance", 2024): ("Elisabeth Sparkle and Sue", "Elisabeth Sparkle"),
+}
+
+
 def note_for(f):
     bits = []
     country = scrub(f["country"])
     if country and country != "United States":
         bits.append(country)
     ch = scrub(f["characters"]).rstrip(".")
+    if (f["t"], f["year"]) in CHARACTERS:
+        was, now = CHARACTERS[(f["t"], f["year"])]
+        assert ch == was, \
+            "%s (%d): the source's characters cell now reads %r, not the " \
+            "%r the override was ruled on - re-read it" \
+            % (f["t"], f["year"], ch, was)
+        ch = now
     if ch and len(ch) <= 55:
         bits.append(ch)
     me = scrub(f["method"]).split(". ")[0].rstrip(".")
@@ -71,6 +92,10 @@ def main():
     films = d["films"]
     assert all("runtime" in f for f in films), \
         "run collect_bodyswap.py --runtimes first"
+    missing = set(CHARACTERS) - {(f["t"], f["year"]) for f in films}
+    assert not missing, \
+        "CHARACTERS overrides a film the source no longer lists: %s" \
+        % sorted(missing)
 
     sections = []
     for key, title, lo, hi, intro in ERAS:

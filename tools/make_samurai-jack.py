@@ -631,9 +631,11 @@ def main():
                 # a year, and check_sync_safety refuses one on principle
                 bits.append("first episode after the %s-year gap"
                             % word(facts["gap"]))
-            if r["s"] == len(rows):
-                bits.append("series finale" if n == SEASONS[-1]
-                            else "season finale")
+            # seasons 1-4 keep "season finale": those notes also carry the
+            # credited numeral, so they are not bare. The bare "series finale"
+            # on the last row is gone (CLU-123, CLU-557)
+            if r["s"] == len(rows) and n != SEASONS[-1]:
+                bits.append("season finale")
             if r["o"] in closing_four:
                 bits.append("one of the final four, aired together in one "
                             "Toonami presentation")

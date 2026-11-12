@@ -164,7 +164,8 @@ ROW_NOTES = {
     1: "series premiere",
     13: "first-season finale",
     14: "second-season premiere",
-    26: "series finale",
+    # no "series finale" on 26: the last row already says it (CLU-123,
+    # CLU-557). 13 keeps its note, which carries the alternate spelling.
 }
 
 

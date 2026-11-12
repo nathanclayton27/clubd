@@ -179,7 +179,8 @@ def main():
         skipped: "Held back from the original Toonami run for its content; "
                  "the West did not see it until the revived block ran it "
                  "%d years later" % series["skipped_years_later"],
-        EPISODES: "Series finale",
+        # no "Series finale" on the last episode: its position already says
+        # it (CLU-123, CLU-557)
     }
     items = []
     for e in eps:

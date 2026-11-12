@@ -210,8 +210,8 @@ def main():
             if e["o"] == ORIGINAL:
                 bits.append("Where the original run stops; The Final Act "
                             "carries on from here")
-            if e["o"] == TOTAL_EPISODES:
-                bits.append("Series finale")
+            # no "Series finale" on the last episode: its position already
+            # says it (CLU-123, CLU-557)
             row = {"id": "iy-e%d" % e["o"], "t": e["t"], "n": str(e["o"]),
                    "_o": e["o"]}
             if bits:

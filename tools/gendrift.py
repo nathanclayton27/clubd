@@ -14,7 +14,8 @@ of the card wall into a row of their own. Not one of the five generators emitted
 it, so each of those lists was one rebuild away from falling back onto the wall.
 It goes the other way too: commit 4ef1b1d deleted ten pointless finale notes from
 nine property files and left all nine generators emitting them, so a rebuild
-restores notes Nathan had decided to remove.
+would have restored notes Nathan had decided to remove (fixed at the generators
+in CLU-557).
 
 WHAT IT REFUSES. For every property a generator produces, this regenerates the
 file into a temp directory - never over the real one - and compares:
@@ -128,28 +129,15 @@ ORPHAN_GENERATOR = {
 # here - the checker rejects the entry itself if one does. Every line is debt:
 # fix it in the generator and delete the line.
 KNOWN_DRIFT = {
-    "body-swap": {"item:note":
-                  "commit 4ef1b1d rewrote The Substance's premise note on the "
-                  "property file and not in tools/make_bodyswap.py"},
-    "dc-comics": {"notes": "top-level notes edited on the property file",
-                  "item:note": "row notes edited on the property file",
-                  "item:n": "row numbering edited on the property file"},
     "donnie-yen": {"notes": "top-level notes edited on the property file"},
     "jet-li": {"notes": "top-level notes edited on the property file"},
 }
 
 # Lists whose committed file is BEHIND its generator: a fresh run would add
 # something, or reformat the file. Same trap seen from the other side.
-_4EF1B1D = ("commit 4ef1b1d edited these property files and not their "
-            "generators: it deleted the ten pointless finale notes (CLU-123, "
-            "Nathan: 'delete those notes if they're actually pointless') and "
-            "reindented each file from two spaces to one on the way past. "
-            "A run of any of these generators puts its note back, so the fix "
-            "is to stop the generator emitting it.")
-KNOWN_STALE = {s: _4EF1B1D for s in (
-    "body-swap", "frieren", "gossip-girl", "gurren-lagann", "inuyasha",
-    "outlaw-star", "sailor-moon", "samurai-jack", "the-big-o",
-    "yuyu-hakusho")}
+# {slug: why}. Empty since CLU-557 moved 4ef1b1d's ten finale-note deletions
+# into their generators.
+KNOWN_STALE = {}
 
 # ---------------------------------------------------------------------------
 # WHICH LIST A GENERATOR OWNS, WITHOUT RUNNING IT. Needed because a generator
@@ -492,6 +480,17 @@ def main(argv=None):
         checked.append(slug)
         if made_txt == live_txt:
             clean.append(slug)
+            # a list that regenerates byte-identical has no debt, so a table
+            # entry naming it is stale - and the drift/stale checks below
+            # never see it, so this is the only place that can say so
+            if slug in KNOWN_DRIFT:
+                bad("%s regenerates byte-identical, but KNOWN_DRIFT still "
+                    "excuses %s on it - delete the entry"
+                    % (slug, ", ".join("`%s`" % f
+                                       for f in sorted(KNOWN_DRIFT[slug]))))
+            if slug in KNOWN_STALE:
+                bad("%s regenerates byte-identical, but KNOWN_STALE still says "
+                    "it is behind %s - delete the line" % (slug, g.name))
             continue
 
         lost, added, ids_moved, how = compare(committed, json.loads(made_txt))
@@ -529,10 +528,15 @@ def main(argv=None):
                 bad("%s: the committed file is BEHIND %s - a fresh run %s. "
                     "Rebuild the list and commit it, change the generator, or "
                     "record it in KNOWN_STALE." % (slug, g.name, what))
-        elif not lost:
-            bad("%s: the committed bytes differ from a fresh run of %s but no "
-                "field and no id does - the generator serialises differently "
-                "(key order or line endings)." % (slug, g.name))
+        else:
+            if slug in KNOWN_STALE:
+                bad("%s: KNOWN_STALE says it is behind %s, but a fresh run "
+                    "adds nothing and keeps the indent - delete the line"
+                    % (slug, g.name))
+            if not lost:
+                bad("%s: the committed bytes differ from a fresh run of %s but "
+                    "no field and no id does - the generator serialises "
+                    "differently (key order or line endings)." % (slug, g.name))
     for slug in sorted(KNOWN_STALE):
         # only a list that was actually regenerated can prove its line stale;
         # on a clean checkout a third of them cannot run at all
