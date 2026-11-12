@@ -15,6 +15,13 @@ finish by some distant date". The window shape is lanterns' exactly: a window
 opens on an episode's air date and runs six days, and `through` is that
 episode's number. Season one finished on 27 September 2026.
 
+The schedule is only emitted while the season is airing. Once every
+episode has aired there is no broadcast left to keep pace with, and windows
+that have all closed would tell anyone starting now that the whole season is
+overdue — so it goes, as on make_frieren.py, and a club or a solo plan sets
+its own finish date instead (CLU-630). The windows are still built and
+checked below, so a new season written up mid-air gets them back.
+
 All ten episodes are listed whether or not they have aired. An announced row
 is what an airing show looks like and the schedule needs the whole season;
 the aired/upcoming wording in the row notes, the blurb and the notes is frozen
@@ -133,13 +140,20 @@ def main():
         "accent": "#4F6B14",
         "accentDark": "#A8D93F",
         "tiers": False,
-        "schedule": {"kind": "windows", "windows": windows},
+    }
+    if not done:
+        p["schedule"] = {"kind": "windows", "windows": windows}
+    p.update({
         "notes": [
-            ["All aired." if done else "Airing now.",
+            ["All aired.",
+             "The last episode aired on %s %d. There is no pace schedule, "
+             "because there is no broadcast left to keep pace with."
+             % (daymonth(last), last.year)] if done else
+            ["Airing now.",
              "One window per episode, so the pace line tells "
              "you whether you are caught up with the broadcast rather than on "
-             "track for some distant finish. The last one %s on %s %d."
-             % ("landed" if done else "lands", daymonth(last), last.year)],
+             "track for some distant finish. The last one lands on %s %d."
+             % (daymonth(last), last.year)],
             ["Where it airs.", "Sundays on Adult Swim — the premiere followed "
              "the Rick and Morty ninth-season finale — with episodes reaching "
              "HBO Max the day after broadcast."],
@@ -158,9 +172,12 @@ def main():
             "against the article's own count before this builds.",
         ],
         "sections": sections,
-    }
+    })
+    assert ("schedule" in p) != done, \
+        "a finished season carries no pace schedule; an airing one needs it"
 
-    out = prop.write(p)
+    out = prop.write(p, legacy_ids=["%s-%d" % (SLUG, n)
+                                    for n in range(1, 11)])
 
     print("wrote %s — %d rows" % (out.name, len(ids)))
     print("   %-10s %2d rows  %s" % (sections[0]["title"], len(items),

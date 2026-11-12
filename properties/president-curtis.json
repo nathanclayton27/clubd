@@ -19,75 +19,10 @@
   "accent": "#4F6B14",
   "accentDark": "#A8D93F",
   "tiers": false,
-  "schedule": {
-    "kind": "windows",
-    "windows": [
-      {
-        "start": "2026-07-26",
-        "end": "2026-08-01",
-        "through": 1,
-        "label": "Episode 1"
-      },
-      {
-        "start": "2026-08-02",
-        "end": "2026-08-08",
-        "through": 2,
-        "label": "Episode 2"
-      },
-      {
-        "start": "2026-08-09",
-        "end": "2026-08-15",
-        "through": 3,
-        "label": "Episode 3"
-      },
-      {
-        "start": "2026-08-16",
-        "end": "2026-08-22",
-        "through": 4,
-        "label": "Episode 4"
-      },
-      {
-        "start": "2026-08-23",
-        "end": "2026-08-29",
-        "through": 5,
-        "label": "Episode 5"
-      },
-      {
-        "start": "2026-08-30",
-        "end": "2026-09-05",
-        "through": 6,
-        "label": "Episode 6"
-      },
-      {
-        "start": "2026-09-06",
-        "end": "2026-09-12",
-        "through": 7,
-        "label": "Episode 7"
-      },
-      {
-        "start": "2026-09-13",
-        "end": "2026-09-19",
-        "through": 8,
-        "label": "Episode 8"
-      },
-      {
-        "start": "2026-09-20",
-        "end": "2026-09-26",
-        "through": 9,
-        "label": "Episode 9"
-      },
-      {
-        "start": "2026-09-27",
-        "end": "2026-10-03",
-        "through": 10,
-        "label": "Episode 10"
-      }
-    ]
-  },
   "notes": [
     [
       "All aired.",
-      "One window per episode, so the pace line tells you whether you are caught up with the broadcast rather than on track for some distant finish. The last one landed on 27 September 2026."
+      "The last episode aired on 27 September 2026. There is no pace schedule, because there is no broadcast left to keep pace with."
     ],
     [
       "Where it airs.",
