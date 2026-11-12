@@ -121,6 +121,20 @@ SPINE = [("s", "tos"), ("s", "tas"), ("f", "OriginalSeries"),
          ("s", "dis"), ("s", "pic"), ("s", "ld"), ("s", "pro"), ("s", "snw"),
          ("s", "sfa")]
 
+# Seasons the source dates but has not titled yet. Announced work with a date
+# belongs on the list (Nathan, 2026-08-26), and this list is unweighted, so the
+# row carries no w. Until the titles come it is one row, its premiere, pinned
+# to the id that episode's own row will carry, so a tick on it stays put when
+# the table fills in. Source: "Star Trek: Starfleet Academy" (rev 1383416694,
+# 2 November 2026): "The ten-episode second season is expected to premiere in
+# March 2027", and its season 2 table has one untitled row dated
+# {{Start date|2027|3}}; CBS and Paramount have said it is the last.
+# Strange New Worlds' fifth season is not here: its table says TBA.
+PENDING = {
+    ("sfa", 2): {"id": "st-sfa-s2e01", "due": "2027-03", "episodes": 10,
+                 "final": True},
+}
+
 
 WORDS = ("zero one two three four five six seven eight nine ten eleven twelve "
          "thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty "
@@ -204,15 +218,21 @@ def main():
     # episode count that article's own {{Series overview}} box declares. The
     # tables win if they ever disagree; this assert is what turns a
     # disagreement into a failed build instead of a quietly short list.
-    shipped = {}
+    shipped, pending = {}, set()
     for key, s in series.items():
         keep = []
         for sea in s["seasons"]:
             if not all(e["t"] for e in sea["episodes"]):
                 # A season that has been ordered but has no announced titles
                 # or dates yet — Strange New Worlds' fifth, six untitled rows.
+                # One the source dates is in PENDING and gets its one row
+                # below.
                 assert not any(dates_of(e) for e in sea["episodes"]), \
                     "%s season %s is half-announced" % (key, sea["n"])
+                if (key, sea["n"]) in PENDING:
+                    pending.add((key, sea["n"]))
+                    assert s["overview"].get(str(sea["n"])) == \
+                        PENDING[key, sea["n"]]["episodes"], (key, sea["n"])
                 continue
             n_eps = sum(len(e["seasonnums"]) for e in sea["episodes"])
             declared = s["overview"].get(str(sea["n"]))
@@ -226,6 +246,9 @@ def main():
             keep.append(sea)
         assert keep, key
         shipped[key] = keep
+    # A PENDING season that now has titles fails here: take it out of PENDING
+    # and let its real rows ship — the first of them gets the pinned id anyway.
+    assert pending == set(PENDING), sorted(set(PENDING) - pending)
 
     # ---- sections ----------------------------------------------------------
     sections = []
@@ -286,6 +309,27 @@ def main():
                 sec["intro"] = INTROS[key]
             sections.append(sec)
 
+        for (pk, pn), pend in sorted(PENDING.items()):
+            if pk != key:
+                continue
+            # The pin is the id season_rows() gives that season's episode 1,
+            # and the due date is checked against AS_OF, so moving AS_OF past
+            # it fails the build until the season is re-read.
+            assert pend["id"] == "st-%s-s%de%02d" % (pk, pn, 1), pend
+            assert pn == shipped[pk][-1]["n"] + 1, (pk, pn)
+            assert AS_OF < pend["due"], "%s season %d was due %s — re-read " \
+                "the table" % (pk, pn, pend["due"])
+            y, m = (int(x) for x in pend["due"].split("-"))
+            sections.append({
+                "id": "%s-s%d" % (pk, pn),
+                "title": "%s · Season %d" % (NAMES[pk], pn),
+                "sub": "%d · %s%d episodes · not out yet"
+                       % (y, "the final season, " if pend["final"] else "",
+                          pend["episodes"]),
+                "items": [{"id": pend["id"], "t": "Untitled", "n": "1",
+                           "note": "Not out yet — due %s %d"
+                                   % (MONTHS[m - 1], y)}]})
+
     sections[1]["open"] = True          # The Original Series, season one
 
     # ---- the claims this page makes, checked against the data --------------
@@ -294,8 +338,11 @@ def main():
 
     film_rows = [x for s in sections if s["id"].startswith("films-")
                  for x in s["items"]]
+    # A PENDING season's one row is not an episode anyone can count yet.
+    pinned = {p["id"] for p in PENDING.values()}
+    assert pinned <= set(ids), pinned - set(ids)
     ep_rows = [x for s in sections if not s["id"].startswith("films-")
-               for x in s["items"]]
+               for x in s["items"] if x["id"] not in pinned]
     assert len(film_rows) == 13, len(film_rows)
 
     per_series = {k: sum(len(e["seasonnums"]) for sea in shipped[k]
@@ -306,7 +353,7 @@ def main():
     episodes = sum(per_series.values()) + 1          # + The Cage
     assert episodes == 961, episodes
     assert len(ep_rows) == 938, len(ep_rows)
-    assert len(ids) == 951, len(ids)
+    assert len(ids) == 952, len(ids)
 
     doubles = [e for k in shipped for sea in shipped[k]
                for e in sea["episodes"] if len(e["seasonnums"]) > 1]
@@ -362,6 +409,10 @@ def main():
         "every episode row now carries a runtime — revisit the weighting " \
         "decision instead of shipping %d verified hours as ones" % rows_with_rt
     assert not any("w" in x for s in sections for x in s["items"])
+
+    sfa2 = PENDING["sfa", 2]
+    assert sfa2["final"], sfa2
+    sfa_due = "%s %s" % (MONTHS[int(sfa2["due"][5:]) - 1], sfa2["due"][:4])
 
     p = {
         "slug": SLUG,
@@ -427,7 +478,10 @@ def main():
              "television film rather than one of the thirteen theatrical "
              "features, and the Short Treks are not episodes of any of these "
              "series. Strange New Worlds' fifth season has been ordered but "
-             "has no announced titles or dates, so it has no rows yet."],
+             "has no announced titles or dates, so it has no rows yet. "
+             "Starfleet Academy's second and final season is due in %s with "
+             "no titles announced, so for now it is one row, its premiere."
+             % sfa_due],
             "Titles, numbering and broadcast dates machine-read from "
             "Wikipedia's per-series episode tables; every season's enumerated "
             "rows are asserted against that article's own Series overview "
@@ -441,8 +495,8 @@ def main():
     print("wrote %s — %d rows (%d episode rows covering %d episodes, %d films)"
           % (out.name, len(ids), len(ep_rows), episodes, len(film_rows)))
     for key in [k for kind, k in SPINE if kind == "s"]:
-        rows = sum(len(x["items"]) for x in sections
-                   if x["id"].startswith(key + "-s"))
+        rows = sum(1 for x in sections if x["id"].startswith(key + "-s")
+                   for y in x["items"] if y["id"] not in pinned)
         print("   %-22s %3d seasons %4d rows %4d episodes"
               % (NAMES[key], len(shipped[key]), rows, per_series[key]))
     print("   %-22s %3s          %4d rows" % ("films", "", len(film_rows)))

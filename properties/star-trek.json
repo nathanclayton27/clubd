@@ -46,7 +46,7 @@
     ],
     [
       "What is not on this page.",
-      "Star Trek: Section 31 is a television film rather than one of the thirteen theatrical features, and the Short Treks are not episodes of any of these series. Strange New Worlds' fifth season has been ordered but has no announced titles or dates, so it has no rows yet."
+      "Star Trek: Section 31 is a television film rather than one of the thirteen theatrical features, and the Short Treks are not episodes of any of these series. Strange New Worlds' fifth season has been ordered but has no announced titles or dates, so it has no rows yet. Starfleet Academy's second and final season is due in March 2027 with no titles announced, so for now it is one row, its premiere."
     ],
     "Titles, numbering and broadcast dates machine-read from Wikipedia's per-series episode tables; every season's enumerated rows are asserted against that article's own Series overview count before this builds. Film runtimes and release dates from Wikidata, gated on a matching release year."
   ],
@@ -5237,6 +5237,19 @@
         }
       ],
       "intro": "Cadets at Starfleet Academy, coming of age and training to be officers, with Holly Hunter as their chancellor. Ten-episode seasons."
+    },
+    {
+      "id": "sfa-s2",
+      "title": "Starfleet Academy · Season 2",
+      "sub": "2027 · the final season, 10 episodes · not out yet",
+      "items": [
+        {
+          "id": "st-sfa-s2e01",
+          "t": "Untitled",
+          "n": "1",
+          "note": "Not out yet — due March 2027"
+        }
+      ]
     }
   ]
 }
