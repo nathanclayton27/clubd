@@ -27,24 +27,25 @@ not roster criteria.
 
 Coming out is NOT a roster criterion, as of the owner's ruling on CLU-315:
 announced work the source dates — even to a bare year — earns a row, and
-undated work does not. So the Film table's thirteen rows come out as twelve
-rows here and one exclusion:
+undated work does not. So the Film table's twelve rows come out as twelve
+rows here, and one announced film is held back:
 
   * Dune: Part Three (2026) is a row. Its own article's infobox reads
-    `released = {{Film date|2026|12|18}}` and its short description is
-    "Upcoming film by Denis Villeneuve". The row weighs 0, because the same
-    infobox publishes no runtime and nobody has watched the film — an
-    unreleased row carries an explicit `w` of 0, never a missing one, since
-    `WEIGHT = x.w >= 0 ? x.w : 1` turns a missing weight into a silent
-    invented hour (CLU-131). main() asserts the date is still in the future
-    and that the runtime field is still empty, so the film's opening, or a
-    published runtime, stops the build and brings the row back for review
-    instead of leaving an empty bar standing.
-  * Bond 26 (Year cell "TBA") is not a row — no article, no wikilink, no date
-    anywhere, and the biography's own prose says only that Amazon MGM expects
-    it in 2028. The TBA, the missing article and the future year are all
-    asserted, so the day Wikipedia dates it the build fails and it comes back
-    for review.
+    `released = {{Film date|2026|12|18}}`. The row weighs 0 because nobody
+    has watched the film — an unreleased row carries an explicit `w` of 0,
+    never a missing one, since `WEIGHT = x.w >= 0 ? x.w : 1` turns a missing
+    weight into a silent invented hour (CLU-131). The infobox now publishes a
+    runtime, cited to IFCO's classification of 3 November 2026; main() checks
+    it parses as one plain figure, and the row takes it when the film opens,
+    not before. main() asserts the date is still in the future, so the film's
+    opening stops the build and brings the row back for review instead of
+    leaving an empty bar standing.
+  * Bond 26 is not a row. It sat in the Film table as a "TBA" row when this
+    list was built and has since left it; the biography's prose says only that
+    Amazon MGM expects it in 2028, and the "Bond 26" title now redirects to a
+    section of "Production of the James Bond films" that gives no date. Its
+    absence from the table and the future year are both asserted, so the day
+    Wikipedia lists or dates it the build fails and it comes back for review.
 
 The Film table is cross-checked against the article's own lead, which is the
 lesson built into tools/make_matt-johnson.py: a filmography table that lags
@@ -355,8 +356,8 @@ def main():
 
     # ---- the Film table ---------------------------------------------------
     rows = table_rows(table_after(art, "Film"), 5)
-    assert len(rows) == 13, \
-        ("the Film table has %d rows, not the 13 this list was built against "
+    assert len(rows) == 12, \
+        ("the Film table has %d rows, not the 12 this list was built against "
          "— a film was added or removed: %s"
          % (len(rows), [wiki.clean(r[1]) for r in rows]))
 
@@ -383,11 +384,15 @@ def main():
     # ---- what is held back, and what is here with an empty bar -----------
     excluded = {}
 
-    # Bond 26: no year, no article, and the biography's prose says 2028.
-    bond = [x for x in table if x["yearcell"] == "TBA"]
-    assert [x["t"] for x in bond] == ["Bond 26"], [x["t"] for x in bond]
-    assert bond[0]["page"] is None, \
-        "Bond 26 now has an article — read it for a date and a runtime"
+    # Bond 26: gone from the Film table, and the biography's prose says 2028.
+    # Every row left in the table carries a year; a TBA row, or Bond 26 under
+    # any year, means the table has changed and the exclusion needs review.
+    undated = [x["t"] for x in table if not re.fullmatch(r"\d{4}", x["yearcell"])]
+    assert not undated, \
+        "the Film table has rows with no year again: %s" % undated
+    assert not any("Bond" in x["t"] for x in table), \
+        ("Bond 26 is back in the Film table — read it for a date and a "
+         "runtime: %s" % [x["t"] for x in table if "Bond" in x["t"]])
     bondyear = re.search(r"26th James Bond film\]\], with an expected release "
                          r"date in (\d{4})", art)
     assert bondyear, "the biography no longer states when Bond 26 is expected"
@@ -397,9 +402,11 @@ def main():
     excluded["Bond 26"] = "not released; expected %s" % bondyear.group(1)
 
     # Dune: Part Three: a row, because its own article dates it — and a row
-    # that weighs nothing, because that same article publishes no runtime and
-    # nobody has watched it. Both halves are asserted, so the film opening or
-    # a runtime appearing stops the build instead of leaving an empty bar.
+    # that weighs nothing until it opens, because nobody has watched it. The
+    # article now publishes a runtime (IFCO, 3 November 2026); it is read and
+    # checked here so the note can say so, and the row takes it on opening
+    # day, not before. The date is asserted, so the film opening stops the
+    # build instead of leaving an empty bar.
     p3 = next(x for x in dated if x["t"] == "Dune: Part Three")
     p3page = wiki.wikitext(p3["page"], cache_dir=CACHE)
     assert p3page, "no cached article for %s" % p3["page"]
@@ -411,11 +418,11 @@ def main():
         ("Dune: Part Three opened on %s — move it in with the released films "
          "so it takes its runtime from its own infobox, and drop the not-out "
          "note from its row" % p3_date)
-    assert not wiki.clean(p3ib("runtime") or ""), \
-        ("Dune: Part Three now publishes a runtime (%r) while its stated "
-         "release date %s is still in the future — decide whether the row "
-         "weighs it or keeps the zero, rather than shipping both claims"
-         % (wiki.clean(p3ib("runtime") or ""), p3_date))
+    # A published runtime on an unopened film does not weigh the row: the
+    # house rule for dated, unreleased work is an explicit zero until it is
+    # out (CLU-644 refresh). The figure only has to parse, so the note's
+    # "already gives a runtime" stays true.
+    p3["announced_runtime"] = minutes(p3ib("runtime"), p3["t"])
     p3["runtime"] = 0
     p3["work"], p3["author"] = based_on(p3ib("based_on"), p3["t"])
     upcoming = [p3]
@@ -504,7 +511,12 @@ def main():
         [f["t"] for f in films if f["produced"]]
     assert all("French" in f["language"] for f in quebec), \
         [(f["t"], f["language"]) for f in quebec]
-    assert all(f["country"] == "Canada" for f in quebec), \
+    # "All four are Canadian productions": Canada on every one of their
+    # infoboxes. Incendies' infobox now lists Canada and France, cited to the
+    # LUMIERE database, which keeps the claim true — a
+    # co-production is still a Canadian production — but only if Canada is
+    # still there, so that is what is checked.
+    assert all("Canada" in re.split(r",\s*", f["country"]) for f in quebec), \
         [(f["t"], f["country"]) for f in quebec]
     assert not any("French" in f["language"] for f in films
                    if f["year"] > 2012), \
@@ -537,7 +549,12 @@ def main():
              for m in re.finditer(r"''\[\[([^\]]+)\]\]''", lead)}
     named = {n for n in named if n}
     shipped = {f["page"] for f in films + upcoming}
-    unaccounted = named - shipped
+    # The lead also italicises the novel Part Three adapts (Dune Messiah). A
+    # book is not one of his films; it is excused only while it is exactly the
+    # work Part Three's own {{Based on}} names, so any other new title still
+    # stops the build.
+    novels = {n for n in named if n == p3["work"]}
+    unaccounted = named - shipped - novels
     assert not unaccounted, \
         ("the lead names %s and this list neither ships nor excludes it — a "
          "filmography table lagging its own lead is how a list ends up one "
@@ -817,14 +834,14 @@ def main():
             ["One film is here with an empty bar, and one is not here at all.",
              "Dune: Part Three is a row: its own article dates it %s, and "
              "dated work belongs on a list even before it opens. Its bar is "
-             "empty because the same article publishes no runtime and nobody "
-             "has watched it, and a weight this list cannot source is one it "
-             "refuses to invent — so it counts as a film and adds no hours. "
-             "Bond 26 is the one row of the Film table that is not here: no "
-             "article, no wikilink and no date, only the biography saying "
+             "empty because nobody has watched it yet: the same article "
+             "already gives a runtime, and the row takes it the day the film "
+             "opens — until then it counts as a film and adds no hours. "
+             "Bond 26 is not here: the Film table no longer lists it, and the "
+             "source gives it no release date, only the biography saying "
              "Amazon MGM expects it in %s. Both are re-read every time this "
-             "list is generated — the build stops if Part Three opens, if it "
-             "publishes a runtime, or if Bond 26 acquires a date — so the "
+             "list is generated — the build stops if Part Three opens, or if "
+             "Bond 26 returns to the Film table or acquires a date — so the "
              "rows change on the sources rather than whenever somebody "
              "remembers. That is %s rows on the table and %s here."
              % (longdate(p3_date), bondyear.group(1),
