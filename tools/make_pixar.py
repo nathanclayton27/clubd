@@ -13,7 +13,11 @@ the same year-and-title formula as the released rows, so a film keeps its
 row (and every tick) when it moves to the Released table on its date. The
 classic theatrical shorts — the "Short films" table of List of
 Pixar shorts, Andre & Wally B. through Bao — sit in an optional section at the
-end, each noting the feature it was first released with.
+end, each noting the feature it was first released with. Andre & Wally B.
+names none: since 2026-11 List of Pixar shorts gives it no theatrical
+release, and its own article dropped "released in theaters with Toy Story"
+in Nov 2025 as unsupported by its sources (only an uncited infobox line
+still says so).
 
 Data: tools/data/pixar.json, built by scratch/agent-canons/collect_pixar.py
 (wikitext parse + Wikidata P2047 runtimes, cached in pixar-runtimes.json).
@@ -118,7 +122,7 @@ def main():
         "sub": "%d shorts · optional, a couple of hours in all" % len(sh_items),
         "intro": "The classic shorts program — the ones that ran before the "
                  "features, Andre & Wally B. through Bao. All optional; each "
-                 "row names the feature it was first attached to.",
+                 "row names the feature it was first attached to, if any.",
         "items": sh_items,
     })
 

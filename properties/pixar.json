@@ -279,7 +279,7 @@
       "id": "shorts",
       "title": "The theatrical shorts",
       "sub": "20 shorts · optional, a couple of hours in all",
-      "intro": "The classic shorts program — the ones that ran before the features, Andre & Wally B. through Bao. All optional; each row names the feature it was first attached to.",
+      "intro": "The classic shorts program — the ones that ran before the features, Andre & Wally B. through Bao. All optional; each row names the feature it was first attached to, if any.",
       "items": [
         {
           "id": "px-s-1984-the-adventures-of-andre-wally-b",
@@ -287,7 +287,7 @@
           "n": "1984",
           "opt": true,
           "w": 0.03,
-          "note": "First released with Toy Story · 2 min"
+          "note": "2 min"
         },
         {
           "id": "px-s-1986-luxo-jr",
