@@ -4,8 +4,8 @@
   "subtitle": "every feature, in release order",
   "kind": "films",
   "popularity": 90,
-  "year": "1995–2026",
-  "blurb": "All 31 Pixar features in release order — about 52 hours — plus the 20 classic theatrical shorts as optional extras.",
+  "year": "1995–2029",
+  "blurb": "All 35 Pixar features in release order, four still to come — about 52 hours — plus the 20 classic theatrical shorts as optional extras.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -25,7 +25,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata (duration, P2047) for every feature and short."
+      "From Wikidata (duration, P2047) for every feature and short that is out. The four still to come weigh nothing until they open."
     ],
     "Features from Wikipedia's List of Pixar films; shorts from List of Pixar shorts; runtimes from Wikidata."
   ],
@@ -183,7 +183,7 @@
     {
       "id": "twenties",
       "title": "The 2020s",
-      "sub": "#22–31 · 10 films · 17 hours",
+      "sub": "#22–31 · 10 films · 17 hours · 4 not out yet",
       "items": [
         {
           "id": "px-2020-onward",
@@ -244,6 +244,34 @@
           "t": "Toy Story 5",
           "n": "2026",
           "w": 1.7
+        },
+        {
+          "id": "px-2027-gatto",
+          "t": "Gatto",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — due 5 March 2027"
+        },
+        {
+          "id": "px-2028-ghost-market",
+          "t": "Ghost Market",
+          "n": "2028",
+          "w": 0,
+          "note": "Not out yet — due 10 March 2028"
+        },
+        {
+          "id": "px-2028-incredibles-3",
+          "t": "Incredibles 3",
+          "n": "2028",
+          "w": 0,
+          "note": "Not out yet — due 16 June 2028"
+        },
+        {
+          "id": "px-2029-coco-2",
+          "t": "Coco 2",
+          "n": "2029",
+          "w": 0,
+          "note": "Not out yet — due 21 November 2029"
         }
       ]
     },

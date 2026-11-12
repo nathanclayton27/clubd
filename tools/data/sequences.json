@@ -37,7 +37,8 @@
     },
     {
       "name": "The Incredibles",
-      "run": ["pixar|px-2004-the-incredibles", "pixar|px-2018-incredibles-2"]
+      "run": ["pixar|px-2004-the-incredibles", "pixar|px-2018-incredibles-2",
+              "pixar|px-2028-incredibles-3"]
     },
     {
       "name": "Finding Nemo",
@@ -46,6 +47,10 @@
     {
       "name": "Inside Out",
       "run": ["pixar|px-2015-inside-out", "pixar|px-2024-inside-out-2"]
+    },
+    {
+      "name": "Coco",
+      "run": ["pixar|px-2017-coco", "pixar|px-2029-coco-2"]
     },
 
     {
@@ -150,7 +155,7 @@
     "",
     "Lightyear is a film the Toy Story characters watch, not a Toy Story film.",
     "",
-    "Every Pixar film not listed here - WALL-E, Up, Ratatouille, Coco, Soul -",
+    "Every Pixar film not listed here - WALL-E, Up, Ratatouille, Soul -",
     "stands alone and is offerable from the very first visit, which is the whole",
     "point of the list being unordered."
   ]
