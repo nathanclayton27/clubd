@@ -17,7 +17,9 @@ it expects, and cross-checks HLTB's release year against Wikipedia's).
 The Master Chief Collection note is stated as fact: it is the practical
 way into everything up to Halo 4. Anniversary remasters, Spartan Assault/
 Strike and the arcade releases are not campaigns in their own right and
-are not rows.
+are not rows. Halo: Campaign Evolved (2026) remakes Combat Evolved's ten
+missions and adds three prequel ones; it is a note on the CE row, not a
+row, so the same story is not counted twice (CLU-608, 2026-11-12).
 """
 import json
 import pathlib
@@ -27,7 +29,9 @@ SLUG = "halo"
 # key in the data file, display title, Wikipedia year, note, opt
 BUNGIE = [
     ("ce", "Halo: Combat Evolved", 2001,
-     "The ring, the Flood, and the warthog run", 0),
+     "The ring, the Flood, and the warthog run. The 2026 remake, Halo: "
+     "Campaign Evolved, ticks this row too — it adds three prequel "
+     "missions", 0),
     ("halo2", "Halo 2", 2004,
      "The Arbiter's half is the surprise; ends on the series' famous "
      "cliffhanger", 0),
