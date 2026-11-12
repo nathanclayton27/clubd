@@ -63,6 +63,10 @@ WORKS = [
     ("novel", "The Case Files of Lord El-Melloi II", "2014-12-30",
      "Detective stories set between Fate/Zero and Fate/stay night"),
     ("novel", "Fate/strange Fake", "2015-01-10", "Ryohgo Narita"),
+    # Seikaisha Fictions, 27 Aug, 30 Sep and 10 Nov 2026, by the Witch on the
+    # Holy Night article (read 2026-11-12)
+    ("novel", "Witch on the Holy Night", "2026-08-27",
+     "Nasu's own novelization of the visual novel, in three volumes"),
     # ------------------------------------------------------------ visual novels
     ("vn", "Tsukihime", "2000-12-28",
      "The doujin visual novel everything else grew out of. The 2021 remake "
@@ -162,8 +166,12 @@ WORKS = [
      "The Garden of Sinners: The Future Gospel"),
     ("film", "Fate/kaleid liner Prisma Illya: Vow in the Snow", "2017-08-26",
      "Follows the Prisma Illya series"),
-    ("film", "Fate/kaleid liner Prisma Illya: Oath Under Snow", "2019-06-14",
-     "Follows Vow in the Snow"),
+    # Shipped as "Oath Under Snow" (2019-06-14) until 2026-11-12. That is
+    # another name for Vow in the Snow, and the date was the Prisma Phantasm
+    # OVA's, but the 95 minutes and the note were always Licht's, so the row
+    # is Licht now, on the id it shipped under (see PIN).
+    ("film", "Fate/kaleid liner Prisma Illya: Licht – The Nameless Girl",
+     "2021-08-27", "Follows Vow in the Snow"),
     ("film", "Fate/stay night: Heaven's Feel I. presage flower", "2017-10-14",
      "ufotable. The third route, over three films — watch after Unlimited "
      "Blade Works."),
@@ -194,7 +202,8 @@ PIN = {
         "the-case-files-of-lord-el-melloi-ii",
     "Fate/kaleid liner Prisma Illya: Vow in the Snow":
         "prisma-illya-vow-in-the-snow",
-    "Fate/kaleid liner Prisma Illya: Oath Under Snow":
+    # the row shipped as "Oath Under Snow"; ticks on it stay with it
+    "Fate/kaleid liner Prisma Illya: Licht – The Nameless Girl":
         "prisma-illya-oath-under-snow",
 }
 
@@ -217,7 +226,7 @@ MEDIA = [
      "Melty Blood carries real Tsukihime story rather than being a spin-off, "
      "and Fate/Grand Order is by volume the largest body of story Type-Moon "
      "has written."),
-    ("novel", "Novels", "light novels and Nasu's early prose", ""),
+    ("novel", "Novels", "light novels and Nasu's own prose", ""),
     ("manga", "Manga", "", ""),
 ]
 
@@ -318,6 +327,18 @@ def main():
     weighted = [x for s in sections for x in s["items"] if x.get("w")]
     total_h = sum(x["w"] for x in weighted)
     unweighted = len(ids) - len(weighted)
+    # Dated but not out: an explicit w: 0, which the page counts as nothing,
+    # not as one entry, so the hours note has to say so.
+    not_out = sum(1 for s in sections for x in s["items"]
+                  if "w" in x and x["w"] == 0)
+    if not_out == 1:
+        floor = ("; the 1 that is dated but not out yet counts for nothing "
+                 "until it is.")
+    elif not_out:
+        floor = ("; the %d that are dated but not out yet count for nothing "
+                 "until they are." % not_out)
+    else:
+        floor = "."
 
     prop = {
         "slug": SLUG,
@@ -369,8 +390,8 @@ def main():
              "the reason is on the row. An anime whose article says its "
              "episodes run 8 to 20 minutes has no single length; a novel has "
              "no length at all. Rows without a number count as one entry "
-             "each, which is a floor, not a claim."
-             % (len(weighted), len(WORKS), unweighted)],
+             "each, which is a floor, not a claim%s"
+             % (len(weighted), len(WORKS), unweighted, floor)],
             "Additions and corrections in this list came from a pull request by "
             "adeadeadeadeade; the dates were confirmed against Wikipedia before "
             "being taken. Lengths from HowLongToBeat and from each work's own "

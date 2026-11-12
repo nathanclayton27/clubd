@@ -185,6 +185,12 @@ WIKI_RUNTIME = {
     "nasu-film-prisma-illya-vow-in-the-snow":
         ("Fate/kaleid liner Prisma Illya: Vow in the Snow", "film", "one",
          None),
+    # shipped as "Oath Under Snow" until 2026-11-12, carrying Licht's 95
+    # minutes as a figure typed when the row was written; it is Licht now,
+    # on the same id, and the figure comes from Licht's own box
+    "nasu-film-prisma-illya-oath-under-snow":
+        ("Fate/kaleid liner Prisma Illya: Licht - The Nameless Girl", "film",
+         "one", None),
     "nasu-tv-fate-stay-night":
         ("Fate/stay night (2006 TV series)", "television", "series", None),
     "nasu-tv-today-s-menu-for-the-emiya-family":
@@ -202,7 +208,6 @@ WIKI_RUNTIME = {
 KEPT_MINUTES = {
     "nasu-film-fate-stay-night-unlimited-blade-works": (105, "Fate/stay night: Unlimited Blade Works (film)"),
     "nasu-film-the-garden-of-sinners-epilogue": (33, "The Garden of Sinners"),
-    "nasu-film-prisma-illya-oath-under-snow": (95, "Fate/kaleid liner Prisma Illya: Oath Under Snow"),
     "nasu-film-fate-stay-night-heaven-s-feel-i-presage-flower": (120, "Fate/stay night: Heaven's Feel"),
     "nasu-film-fate-stay-night-heaven-s-feel-ii-lost-butterfly": (117, "Fate/stay night: Heaven's Feel"),
     "nasu-film-fate-stay-night-heaven-s-feel-iii-spring-song": (122, "Fate/stay night: Heaven's Feel"),

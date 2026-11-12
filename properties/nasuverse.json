@@ -5,7 +5,7 @@
   "kind": "mixed",
   "popularity": 47,
   "year": "1998–",
-  "blurb": "65 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
+  "blurb": "66 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
   "unit": {
     "one": "work",
     "many": "works"
@@ -46,7 +46,7 @@
     ],
     [
       "Where the hours come from — and where they stop.",
-      "Games and visual novels carry HowLongToBeat main-story figures, verified by name against the work they belong to. Films and anime carry the runtime the work's own Wikipedia article gives, and only where it gives one plain figure. 34 of the 65 rows have one; the other 31 carry a reason instead of a number, and the reason is on the row. An anime whose article says its episodes run 8 to 20 minutes has no single length; a novel has no length at all. Rows without a number count as one entry each, which is a floor, not a claim."
+      "Games and visual novels carry HowLongToBeat main-story figures, verified by name against the work they belong to. Films and anime carry the runtime the work's own Wikipedia article gives, and only where it gives one plain figure. 34 of the 66 rows have one; the other 32 carry a reason instead of a number, and the reason is on the row. An anime whose article says its episodes run 8 to 20 minutes has no single length; a novel has no length at all. Rows without a number count as one entry each, which is a floor, not a claim; the 4 that are dated but not out yet count for nothing until they are."
     ],
     "Additions and corrections in this list came from a pull request by adeadeadeadeade; the dates were confirmed against Wikipedia before being taken. Lengths from HowLongToBeat and from each work's own Wikipedia article, collected by scratch/nasuverse/collect.py."
   ],
@@ -310,13 +310,6 @@
           "note": "Second of the three"
         },
         {
-          "id": "nasu-film-prisma-illya-oath-under-snow",
-          "t": "Fate/kaleid liner Prisma Illya: Oath Under Snow",
-          "n": "2019",
-          "w": 1.58,
-          "note": "Follows Vow in the Snow"
-        },
-        {
           "id": "nasu-film-fate-stay-night-heaven-s-feel-iii-spring-song",
           "t": "Fate/stay night: Heaven's Feel III. spring song",
           "n": "2020",
@@ -341,6 +334,13 @@
           "n": "2021",
           "w": 1.57,
           "note": "CloverWorks' film of the game's final chapter, following Babylonia"
+        },
+        {
+          "id": "nasu-film-prisma-illya-oath-under-snow",
+          "t": "Fate/kaleid liner Prisma Illya: Licht – The Nameless Girl",
+          "n": "2021",
+          "w": 1.58,
+          "note": "Follows Vow in the Snow"
         },
         {
           "id": "nasu-film-witch-on-the-holy-night",
@@ -473,7 +473,7 @@
     {
       "id": "novel",
       "title": "Novels",
-      "sub": "1998–2015 · light novels and Nasu's early prose · 5 entries",
+      "sub": "1998–2026 · light novels and Nasu's own prose · 6 entries",
       "items": [
         {
           "id": "nasu-novel-the-garden-of-sinners",
@@ -504,6 +504,12 @@
           "t": "Fate/strange Fake",
           "n": "2015",
           "note": "Ryohgo Narita · Pages aren't hours"
+        },
+        {
+          "id": "nasu-novel-witch-on-the-holy-night",
+          "t": "Witch on the Holy Night",
+          "n": "2026",
+          "note": "Nasu's own novelization of the visual novel, in three volumes · Pages aren't hours"
         }
       ]
     },
