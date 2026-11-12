@@ -4,8 +4,8 @@
   "subtitle": "the acting filmography, in release order",
   "kind": "films",
   "popularity": 79,
-  "year": "1981–2025",
-  "blurb": "45 films in release order, 1981 to 2025 — about 94 hours, 8 of them as Ethan Hunt.",
+  "year": "1981–2026",
+  "blurb": "46 films in release order, 1981 to 2026 — about 96 hours, 8 of them as Ethan Hunt.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -21,13 +21,13 @@
   "notes": [
     [
       "What is skipped.",
-      "Six rows of Wikipedia's table are not here: two cameos — an uncredited walk-on in Young Guns and a turn as himself in Austin Powers in Goldmember — narration on two documentaries, an archive-footage appearance in The Queen, and Digger, still in post-production. This is the acted feature films, released."
+      "Four rows of Wikipedia's table are not here: two cameos — an uncredited walk-on in Young Guns and a turn as himself in Austin Powers in Goldmember — and narration on two documentaries. This is the acted feature films that are out, plus Days of Thunder 2, which has a release date."
     ],
     [
       "Bar widths are runtimes, read from each film's own article.",
-      "Every one of the 45 has a runtime printed in its own Wikipedia infobox, and where an article lists more than one length the bar is the theatrical release and the row says so — Legend went out at 89 minutes, not the 125 of an assembly cut that was never released. About 94 hours end to end, 18 of them as Ethan Hunt."
+      "Every one of the 46 has a runtime printed in its own Wikipedia infobox, and where an article lists more than one length the bar is the theatrical release and the row says so — Legend went out at 89 minutes, not the 125 of an assembly cut that was never released. About 96 hours end to end, 18 of them as Ethan Hunt."
     ],
-    "Filmography from Wikipedia's Tom Cruise filmography; runtimes from each film's own Wikipedia article, release dates from Wikidata."
+    "Filmography from Wikipedia's Tom Cruise filmography, and Days of Thunder 2's date from the Days of Thunder article; runtimes from each film's own Wikipedia article, release dates from Wikidata."
   ],
   "sections": [
     {
@@ -294,7 +294,7 @@
     {
       "id": "mission",
       "title": "The Mission years",
-      "sub": "2015–2025 · 8 films · 18 hours",
+      "sub": "2015–2028 · 10 films · 20 hours · 1 not out yet",
       "intro": "From Rogue Nation on the output narrows: mostly Ethan Hunt, plus the Top Gun sequel that became his biggest film.",
       "items": [
         {
@@ -346,6 +346,19 @@
           "n": "2025",
           "w": 2.83,
           "note": "The eighth Mission: Impossible"
+        },
+        {
+          "id": "tc-2026-digger",
+          "t": "Digger",
+          "n": "2026",
+          "w": 2.15
+        },
+        {
+          "id": "tc-2028-days-of-thunder-2",
+          "t": "Days of Thunder 2",
+          "n": "2028",
+          "w": 0,
+          "note": "Not out yet — due 2 June 2028, and the bar stays empty until it opens"
         }
       ]
     }

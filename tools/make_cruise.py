@@ -14,9 +14,18 @@ disqualifying note. Rows marked "Documentary" (narration jobs), "Cameo" or
 Goldmember), "Archive footage", or still unreleased ({{pending film}} /
 "Post-production") are skipped, and
 tools/data/cruise.json records each with its reason so this script can assert
-nothing else was dropped. The table's own year and row order are authoritative
-for ordering and IDs — the table is already in release order — and P577 is
-carried for verification only (it disagrees once, dating Losin' It 1983
+nothing else was dropped.
+
+Announced films the page names only in its {{Pending films key}} (no table row
+yet) arrive with "pending" set. Under the house rule for dated announced work
+each ships as a w: 0 row saying it is not out yet and when it is due, and DUE
+below must give that date, from a source, for exactly that set, or this script
+stops. Nov 2026: Days of Thunder 2. When it opens it becomes a table row; keep
+its id (tc-2028-days-of-thunder-2) even if the release title differs.
+
+The table's own year and row order are authoritative for ordering and IDs —
+the table is already in release order — and P577 is carried for verification
+only (it disagrees once, dating Losin' It 1983
 against the table's 1982).
 
 Weights: the film's own infobox, not Wikidata (CLU-178)
@@ -37,7 +46,7 @@ cut). Each of those says on the row which length its bar is, and VERSION_NOTE
 must cover exactly that set or this script stops.
 
 A film whose infobox gives no figure would keep its Wikidata runtime and be
-reported, not invented; as read, all 45 have one.
+reported, not invented; as read, all 46 released films have one.
 """
 import json
 import pathlib
@@ -59,6 +68,17 @@ VERSION_NOTE = {
     "The Outsiders": "91 min, the theatrical cut",
     "Far and Away": "140 min, the theatrical cut",
 }
+
+# Pending-key films and the release date a source gives each, read 2026-11-11.
+# Days of Thunder 2: the Days of Thunder article, Future: "Paramount Pictures
+# announcing the release date as June 2, 2028" (the filmography's key: "Summer
+# 2028").
+DUE = {
+    "Days of Thunder 2": "2 June 2028",
+}
+
+# Appended to an unreleased row's note.
+NOT_OUT = "Not out yet — due %s, and the bar stays empty until it opens"
 
 ERAS = [
     ("rise", "The eighties", 1981, 1989,
@@ -111,12 +131,30 @@ def main():
     skipped = [r for r in rows if r["skip"]]
     assert all(r["skip"] in KNOWN_SKIPS for r in skipped), \
         "unknown skip reason: " + repr(sorted({r["skip"] for r in skipped} - KNOWN_SKIPS))
+    # The "What is skipped." note names these rows; it must stay true.
+    assert sorted((r["title"], r["skip"]) for r in skipped) == [
+        ("Austin Powers in Goldmember", "Cameo"),
+        ("Space Station 3D", "Documentary"),
+        ("Stanley Kubrick: A Life in Pictures", "Documentary"),
+        ("Young Guns", "Uncredited cameo"),
+    ], ("skipped rows changed: rewrite the note, then this list: %r"
+        % sorted((r["title"], r["skip"]) for r in skipped))
     films = [r for r in rows if not r["skip"]]
+    coming = [f for f in films if f.get("pending")]
+    assert {f["title"] for f in coming} == set(DUE), (
+        "DUE must date exactly the pending-key films: missing %s, stale %s"
+        % (sorted({f["title"] for f in coming} - set(DUE)),
+           sorted(set(DUE) - {f["title"] for f in coming})))
+    for f in coming:
+        assert DUE[f["title"]].endswith(str(f["year"])), (f["title"], f["year"])
+    assert set(DUE) == {"Days of Thunder 2"}, \
+        "the What is skipped. note names the pending films: rewrite it"
+    out_now = [f for f in films if not f.get("pending")]
 
     # Weights: the film's own infobox, by gwlib.runtime's rule. A row the rule
     # cannot settle keeps its Wikidata figure — never a guess.
     needs_note, moved, kept = set(), [], []
-    for f in films:
+    for f in out_now:
         cuts = [tuple(c) for c in (f.get("infobox_cuts") or [])]
         n, why = RT.weigh(cuts, f.get("infobox_range", False))
         if n is None:
@@ -130,7 +168,7 @@ def main():
     assert needs_note == set(VERSION_NOTE),         "VERSION_NOTE must name exactly the rows whose article prints more than "         "one length: missing %s, stale %s"         % (sorted(needs_note - set(VERSION_NOTE)),
            sorted(set(VERSION_NOTE) - needs_note))
 
-    no_rt = [f for f in films if not f["runtime"]]
+    no_rt = [f for f in out_now if not f["runtime"]]
 
     sections = []
     for key, title, lo, hi, intro in ERAS:
@@ -141,16 +179,21 @@ def main():
             bits = [NOTE[f["title"]]] if f["title"] in NOTE else []
             if f["title"] in VERSION_NOTE:
                 bits.append(VERSION_NOTE[f["title"]])
+            if f.get("pending"):
+                bits.append(NOT_OUT % DUE[f["title"]])
             items.append({
                 "id": "tc-%d-%s" % (f["year"], slug(f["title"])),
                 "t": f["title"], "n": str(f["year"]),
-                "w": round((f["runtime"] or 0) / 60.0, 2),
+                "w": 0 if f.get("pending") else round((f["runtime"] or 0) / 60.0, 2),
                 **({"note": " · ".join(bits)} if bits else {}),
             })
-        sec = {"id": key, "title": title,
-               "sub": "%d–%d · %d films · %d hours"
-                      % (got[0]["year"], got[-1]["year"], len(got),
-                         round(sum((f["runtime"] or 0) for f in got) / 60.0)),
+        sub = ("%d–%d · %d films · %d hours"
+               % (got[0]["year"], got[-1]["year"], len(got),
+                  round(sum((f["runtime"] or 0) for f in got) / 60.0)))
+        pend = sum(1 for f in got if f.get("pending"))
+        if pend:
+            sub += " · %d not out yet" % pend
+        sec = {"id": key, "title": title, "sub": sub,
                "intro": intro, "items": items}
         if key == "rise":
             sec["open"] = True
@@ -163,6 +206,9 @@ def main():
     assert all(NOTE_TITLE in {f["title"] for f in films} for NOTE_TITLE in NOTE), \
         "NOTE keys that match no film: " + repr(sorted(set(NOTE) - {f["title"] for f in films}))
 
+    # The blurb, the year span and the runtime note count released films only;
+    # a pending row says what it is on the row and in its section's sub.
+    films = out_now
     hours = sum(f["runtime"] or 0 for f in films) / 60.0
     hunt = [f for f in films if f["title"].startswith("Mission: Impossible")]
 
@@ -183,12 +229,11 @@ def main():
         "accentDark": "#6FD0B8",
         "tiers": False,
         "notes": [
-            ["What is skipped.", "Six rows of Wikipedia's table are not here: "
+            ["What is skipped.", "Four rows of Wikipedia's table are not here: "
              "two cameos — an uncredited walk-on in Young Guns and a turn as "
-             "himself in Austin Powers in Goldmember — narration on two "
-             "documentaries, an archive-footage appearance in The Queen, and "
-             "Digger, still in post-production. This is the acted feature "
-             "films, released."],
+             "himself in Austin Powers in Goldmember — and narration on two "
+             "documentaries. This is the acted feature films that are out, "
+             "plus Days of Thunder 2, which has a release date."],
             ["Bar widths are runtimes, read from each film's own article.",
              "Every one of the %d has a runtime printed in its own Wikipedia "
              "infobox, and where an article lists more than one length the bar "
@@ -197,7 +242,8 @@ def main():
              "released. About %d hours end to end, %d of them as Ethan Hunt."
              % (len(films), round(hours),
                 round(sum(f["runtime"] for f in hunt) / 60.0))],
-            "Filmography from Wikipedia's Tom Cruise filmography; runtimes "
+            "Filmography from Wikipedia's Tom Cruise filmography, and Days "
+            "of Thunder 2's date from the Days of Thunder article; runtimes "
             "from each film's own Wikipedia article, release dates from "
             "Wikidata.",
         ],
