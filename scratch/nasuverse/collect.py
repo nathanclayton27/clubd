@@ -101,7 +101,7 @@ NO_HLTB = {
         "HowLongToBeat has one Fate/stay night record (#3416, the 2004 "
         "visual novel) and none for the 2024 remaster — and that record's "
         "own platform list already includes the remaster's Switch and PC "
-        "releases, so its 58.78 h covers both rows and belongs to neither "
+        "releases, so its 58.70 h covers both rows and belongs to neither "
         "alone. Same shape as the bond-games rows HowLongToBeat files "
         "under one entry.",
     "nasu-vn-fate-hollow-ataraxia-remastered":
@@ -133,7 +133,35 @@ SHORT = {
         "the row",
     "nasu-tv-fate-kaleid-liner-prisma-illya":
         "Four seasons under one row, so no one length fits it",
-    "nasu-film-witch-on-the-holy-night": "Not released yet",
+    "nasu-tv-fate-extra-last-encore":
+        "Episodes run 24 to 50 minutes, so no one length fits the row",
+    "nasu-film-witch-on-the-holy-night":
+        "Not released yet — due 20 November 2026",
+    "nasu-game-fate-extra-record": "Not released yet — due 28 January 2027",
+    "nasu-game-melty-blood-twi-lumina": "Not released yet — due 22 April 2027",
+    "nasu-tv-fate-kaleid-liner-prisma-illya-finale":
+        "Not released yet — due 2027",
+}
+
+# Announced works WITH a release date. They ship as w: 0, not as an
+# unweighted row: a row with no `w` counts as one invented hour on the page,
+# and a work that is not out should count as nothing until it opens. Each
+# date was read off the work's own article (2026-11-11).
+UNRELEASED = {
+    "nasu-film-witch-on-the-holy-night":
+        "dated 20 November 2026 in Japan by the Witch on the Holy Night "
+        "article — not out yet, so there is no runtime to read",
+    "nasu-game-fate-extra-record":
+        "dated 28 January 2027 by its own article (Gematsu, 3 September "
+        "2026) — not out yet, so HowLongToBeat has nothing to time",
+    "nasu-game-melty-blood-twi-lumina":
+        "dated 22 April 2027 by the Melty Blood: Type Lumina article "
+        "(Gematsu, 11 September 2026) — not out yet, so HowLongToBeat has "
+        "nothing to time",
+    "nasu-tv-fate-kaleid-liner-prisma-illya-finale":
+        "the fifth and final season, set to premiere in 2027 by the "
+        "Fate/kaleid liner Prisma Illya article — not out yet, so there is "
+        "no runtime to read",
 }
 
 # --------------------------------------------------------------------- Wikipedia
@@ -152,10 +180,13 @@ WIKI_RUNTIME = {
          "film", "one", None),
     "nasu-film-the-garden-of-sinners-mirai-fukuin":
         ("The Garden of Sinners: Future Gospel", "film", "one", None),
+    # carried 62 minutes until 2026-11-11, which is the runtime of the 2019
+    # Prisma Phantasm OVA; the film's own box says 90
+    "nasu-film-prisma-illya-vow-in-the-snow":
+        ("Fate/kaleid liner Prisma Illya: Vow in the Snow", "film", "one",
+         None),
     "nasu-tv-fate-stay-night":
         ("Fate/stay night (2006 TV series)", "television", "series", None),
-    "nasu-tv-fate-extra-last-encore":
-        ("Fate/Extra Last Encore", "television", "series", None),
     "nasu-tv-today-s-menu-for-the-emiya-family":
         # the box carries no title; "ona" is its own `type` field
         ("Today's Menu for the Emiya Family", "ona", "series", None),
@@ -171,7 +202,6 @@ WIKI_RUNTIME = {
 KEPT_MINUTES = {
     "nasu-film-fate-stay-night-unlimited-blade-works": (105, "Fate/stay night: Unlimited Blade Works (film)"),
     "nasu-film-the-garden-of-sinners-epilogue": (33, "The Garden of Sinners"),
-    "nasu-film-prisma-illya-vow-in-the-snow": (62, "Fate/kaleid liner Prisma Illya: Vow in the Snow"),
     "nasu-film-prisma-illya-oath-under-snow": (95, "Fate/kaleid liner Prisma Illya: Oath Under Snow"),
     "nasu-film-fate-stay-night-heaven-s-feel-i-presage-flower": (120, "Fate/stay night: Heaven's Feel"),
     "nasu-film-fate-stay-night-heaven-s-feel-ii-lost-butterfly": (117, "Fate/stay night: Heaven's Feel"),
@@ -193,8 +223,6 @@ NO_LENGTH = {
         "the Camelot film-series box on Fate/Grand Order leaves its runtime "
         "field empty, the films have no articles of their own, and Wikidata "
         "carries no P2047 for either part",
-    "nasu-film-witch-on-the-holy-night":
-        "dated 20 November 2026 — an unreleased film has no runtime",
     "nasu-tv-lunar-legend-tsukihime":
         "the Tsukihime article's own box gives 12 episodes and no runtime; "
         "there is no separate article and no Wikidata P2047",
@@ -225,6 +253,14 @@ NO_LENGTH = {
         "the article counts \"21 + 1 special\" episodes and gives no runtime",
     "nasu-tv-fate-grand-carnival":
         "the article's box gives 2 episodes and no runtime",
+    "nasu-tv-fate-strange-fake":
+        "the Fate/Strange Fake article's tv-series box gives 13 episodes and "
+        "no runtime",
+    # weighted 13 x 24 minutes until 2026-11-11; the article's box (now an
+    # {{Infobox anime video}}) has since widened its runtime to a range
+    "nasu-tv-fate-extra-last-encore":
+        "the article's box gives 13 episodes at \"24–50 minutes\" — a range "
+        "is not a figure, and picking one end would be inventing",
 }
 
 # Whole media that carry no hours by rule, not by accident.
@@ -280,7 +316,7 @@ def minutes_of(page, selector, mode, extra):
     assert text, "no wikitext for %r" % page
 
     if selector in ("television", "film"):
-        f = wiki.infobox(text, kind=selector)
+        f = wiki.infobox(text, kind=r"%s|anime video" % selector)
         assert f, "no {{Infobox %s}} on %r" % (selector, page)
         body = None
         runtime, eps = f("runtime"), f("num_episodes")
@@ -340,7 +376,10 @@ def main():
         year = int(date[:4]) if date != "TBA" else None
         rec = {"t": name, "media": media, "w": None}
 
-        if rid in HLTB_QUERY:
+        if rid in UNRELEASED:
+            rec["w"] = 0
+            rec["why"] = UNRELEASED[rid]
+        elif rid in HLTB_QUERY:
             q = HLTB_QUERY[rid]
             if q is None:
                 rec["why"] = NO_HLTB[rid]
@@ -374,7 +413,7 @@ def main():
         else:
             raise SystemExit("no length rule for %s (%s)" % (rid, name))
 
-        if rec["w"] is None:
+        if not rec["w"]:
             assert rec.get("why"), "unweighted %s with no reason" % rid
             short = SHORT.get(rid) or SHORT_MEDIA.get(media) or \
                 "No published length for it"

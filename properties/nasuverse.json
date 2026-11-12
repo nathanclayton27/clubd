@@ -5,7 +5,7 @@
   "kind": "mixed",
   "popularity": 47,
   "year": "1998–",
-  "blurb": "61 works across six media, in release order within each. 35 carry a verified length — about 514 hours of games, visual novels, films and anime.",
+  "blurb": "65 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
   "unit": {
     "one": "work",
     "many": "works"
@@ -46,7 +46,7 @@
     ],
     [
       "Where the hours come from — and where they stop.",
-      "Games and visual novels carry HowLongToBeat main-story figures, verified by name against the work they belong to. Films and anime carry the runtime the work's own Wikipedia article gives, and only where it gives one plain figure. 35 of the 61 rows have one; the other 26 carry a reason instead of a number, and the reason is on the row. An anime whose article says its episodes run 8 to 20 minutes has no single length; a novel has no length at all. Rows without a number count as one entry each, which is a floor, not a claim."
+      "Games and visual novels carry HowLongToBeat main-story figures, verified by name against the work they belong to. Films and anime carry the runtime the work's own Wikipedia article gives, and only where it gives one plain figure. 34 of the 65 rows have one; the other 31 carry a reason instead of a number, and the reason is on the row. An anime whose article says its episodes run 8 to 20 minutes has no single length; a novel has no length at all. Rows without a number count as one entry each, which is a floor, not a claim."
     ],
     "Additions and corrections in this list came from a pull request by adeadeadeadeade; the dates were confirmed against Wikipedia before being taken. Lengths from HowLongToBeat and from each work's own Wikipedia article, collected by scratch/nasuverse/collect.py."
   ],
@@ -61,7 +61,7 @@
           "t": "Tsukihime",
           "n": "2000",
           "tier": 2,
-          "w": 28.45,
+          "w": 28.26,
           "note": "The doujin visual novel everything else grew out of. The 2021 remake rewrites and expands it."
         },
         {
@@ -76,7 +76,7 @@
           "t": "Fate/stay night",
           "n": "2004",
           "tier": 2,
-          "w": 58.78,
+          "w": 58.7,
           "note": "Three routes — Fate, Unlimited Blade Works, Heaven's Feel — read in that order. Play the 2024 remaster instead."
         },
         {
@@ -84,21 +84,21 @@
           "t": "Fate/hollow ataraxia",
           "n": "2005",
           "tier": 2,
-          "w": 32.76,
+          "w": 32.5,
           "note": "Sequel to Fate/stay night. Play the 2025 remaster instead."
         },
         {
           "id": "nasu-vn-witch-on-the-holy-night",
           "t": "Witch on the Holy Night",
           "n": "2012",
-          "w": 23.73,
+          "w": 23.55,
           "note": "Mahoutsukai no Yoru. Standalone, and needs nothing else read first. English release 2022."
         },
         {
           "id": "nasu-vn-tsukihime-a-piece-of-blue-glass-moon",
           "t": "Tsukihime -A piece of blue glass moon-",
           "n": "2021",
-          "w": 31.41,
+          "w": 31.63,
           "note": "The remake, retelling the first half of Tsukihime. Worldwide 2024."
         },
         {
@@ -126,7 +126,7 @@
     {
       "id": "tv",
       "title": "Anime series",
-      "sub": "2003–2023 · 17 entries · about 20 hours across 6",
+      "sub": "2003–2027 · 19 entries · about 15 hours across 5",
       "items": [
         {
           "id": "nasu-tv-lunar-legend-tsukihime",
@@ -189,8 +189,7 @@
           "id": "nasu-tv-fate-extra-last-encore",
           "t": "Fate/Extra Last Encore",
           "n": "2018",
-          "w": 5.2,
-          "note": "Shaft's series following the Fate/Extra game"
+          "note": "Shaft's series following the Fate/Extra game · Episodes run 24 to 50 minutes, so no one length fits the row"
         },
         {
           "id": "nasu-tv-today-s-menu-for-the-emiya-family",
@@ -235,13 +234,26 @@
           "n": "2023",
           "w": 0.92,
           "note": "One-off special"
+        },
+        {
+          "id": "nasu-tv-fate-strange-fake",
+          "t": "Fate/strange Fake",
+          "n": "2024",
+          "note": "A-1 Pictures' 13 episodes, following Whispers of Dawn. The first aired on New Year's Eve 2024, the other twelve from January to March 2026 · No published length for it"
+        },
+        {
+          "id": "nasu-tv-fate-kaleid-liner-prisma-illya-finale",
+          "t": "Fate/kaleid liner Prisma Illya Finale",
+          "n": "2027",
+          "w": 0,
+          "note": "The fifth and final season · Not released yet — due 2027"
         }
       ]
     },
     {
       "id": "film",
       "title": "Films",
-      "sub": "2007–2026 · 14 entries · about 22 hours across 10",
+      "sub": "2007–2026 · 14 entries · about 23 hours across 10",
       "items": [
         {
           "id": "nasu-film-the-garden-of-sinners",
@@ -280,7 +292,7 @@
           "id": "nasu-film-prisma-illya-vow-in-the-snow",
           "t": "Fate/kaleid liner Prisma Illya: Vow in the Snow",
           "n": "2017",
-          "w": 1.03,
+          "w": 1.5,
           "note": "Follows the Prisma Illya series"
         },
         {
@@ -334,14 +346,15 @@
           "id": "nasu-film-witch-on-the-holy-night",
           "t": "Witch on the Holy Night",
           "n": "2026",
-          "note": "ufotable's film of the visual novel · Not released yet"
+          "w": 0,
+          "note": "ufotable's film of the visual novel · Not released yet — due 20 November 2026"
         }
       ]
     },
     {
       "id": "game",
       "title": "Games",
-      "sub": "2002–2023 · 14 entries · about 287 hours across 13",
+      "sub": "2002–2027 · 16 entries · about 288 hours across 13",
       "items": [
         {
           "id": "nasu-game-melty-blood",
@@ -395,14 +408,14 @@
           "id": "nasu-game-fate-extra",
           "t": "Fate/Extra",
           "n": "2010",
-          "w": 28.81,
+          "w": 28.99,
           "note": "PSP dungeon-crawling RPG, and its own branch of the setting — Fate/Extra Last Encore follows from it"
         },
         {
           "id": "nasu-game-fate-extra-ccc",
           "t": "Fate/Extra CCC",
           "n": "2013",
-          "w": 42.64,
+          "w": 43.35,
           "note": "Side story to Fate/Extra"
         },
         {
@@ -423,22 +436,36 @@
           "id": "nasu-game-fate-extella-link",
           "t": "Fate/Extella Link",
           "n": "2018",
-          "w": 9.87,
+          "w": 9.91,
           "note": "Sequel to Fate/Extella: The Umbral Star"
         },
         {
           "id": "nasu-game-melty-blood-type-lumina",
           "t": "Melty Blood: Type Lumina",
           "n": "2021",
-          "w": 4.26,
+          "w": 4.16,
           "note": "Reboot of the fighting game, following the Tsukihime remake"
         },
         {
           "id": "nasu-game-fate-samurai-remnant",
           "t": "Fate/Samurai Remnant",
           "n": "2023",
-          "w": 31.39,
+          "w": 31.42,
           "note": "Action RPG set during a Holy Grail War in Edo-period Japan"
+        },
+        {
+          "id": "nasu-game-fate-extra-record",
+          "t": "Fate/Extra Record",
+          "n": "2027",
+          "w": 0,
+          "note": "Remake of Fate/Extra · Not released yet — due 28 January 2027"
+        },
+        {
+          "id": "nasu-game-melty-blood-twi-lumina",
+          "t": "Melty Blood: Twi-Lumina",
+          "n": "2027",
+          "w": 0,
+          "note": "Sequel to Melty Blood: Type Lumina · Not released yet — due 22 April 2027"
         }
       ],
       "intro": "Melty Blood carries real Tsukihime story rather than being a spin-off, and Fate/Grand Order is by volume the largest body of story Type-Moon has written."

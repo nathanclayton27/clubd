@@ -26,6 +26,12 @@ date, an anime whose article gives a RANGE of episode lengths rather than a
 figure, a Kara no Kyoukai film that is already inside the seven-film row
 above it, remasters HowLongToBeat times once under the original.
 
+An announced work WITH a release date (even a bare year) is the one row that
+carries an explicit w: 0 rather than no weight: it is not out, so its bar
+stays empty until it opens instead of counting as an invented hour. The data
+file marks it with "w": 0 and the reason says when it is due. An announced
+work with no date at all (Red Garden) keeps the plain unweighted form.
+
 Tier 2 marks a work its own remake supersedes — the 2000 Tsukihime, the 2004
 Fate/stay night, the 2005 Fate/hollow ataraxia. They stay in the list because
 this is a catalogue of what exists, but a finish date paces you through the
@@ -104,6 +110,9 @@ WORKS = [
      "Reboot of the fighting game, following the Tsukihime remake"),
     ("game", "Fate/Samurai Remnant", "2023-09-28",
      "Action RPG set during a Holy Grail War in Edo-period Japan"),
+    ("game", "Fate/Extra Record", "2027-01-28", "Remake of Fate/Extra"),
+    ("game", "Melty Blood: Twi-Lumina", "2027-04-22",
+     "Sequel to Melty Blood: Type Lumina"),
     # ------------------------------------------------------------ anime series
     ("tv", "Lunar Legend Tsukihime", "2003-10-10", "J.C.Staff's Tsukihime adaptation"),
     ("tv", "Fate/stay night", "2006-01-07",
@@ -137,6 +146,11 @@ WORKS = [
     ("tv", "Fate/Grand Carnival", "2020-12-31",
      "Successor to Carnival Phantasm, using the Grand Order cast"),
     ("tv", "Fate/strange Fake: Whispers of Dawn", "2023-07-02", "One-off special"),
+    ("tv", "Fate/strange Fake", "2024-12-31",
+     "A-1 Pictures' 13 episodes, following Whispers of Dawn. The first aired "
+     "on New Year's Eve 2024, the other twelve from January to March 2026."),
+    ("tv", "Fate/kaleid liner Prisma Illya Finale", "2027",
+     "The fifth and final season"),
     # ----------------------------------------------------------------- films
     ("film", "The Garden of Sinners", "2007-12-01",
      "Seven films, released 2007–2009, adapting the novels out of chronological order"),
@@ -262,13 +276,17 @@ def main():
                 assert d.get("why") and d.get("short"), \
                     "unweighted %s with no reason" % rid
                 note = P.join_bits(note.rstrip("."), d["short"])
+                if d.get("w") == 0:
+                    # announced with a date: not out, so the bar stays
+                    # empty rather than counting an invented hour
+                    x["w"] = 0
             if note:
                 x["note"] = note
             items.append(x)
         dated = [w for w in got if w[2] != "TBA"]
         years = "%s–%s" % (dated[0][2][:4], dated[-1][2][:4])
         hours = sum(x.get("w", 0) for x in items)
-        wtd = sum(1 for x in items if "w" in x)
+        wtd = sum(1 for x in items if x.get("w"))
         bits = [years, sub, "%d entries" % len(items)]
         if wtd:
             bits.append("about %d hours across %d" % (round(hours), wtd)
@@ -297,7 +315,7 @@ def main():
     superseded = sum(1 for s in sections for x in s["items"] if x.get("tier") == 2)
     assert superseded == len(SUPERSEDED), (superseded, len(SUPERSEDED))
 
-    weighted = [x for s in sections for x in s["items"] if "w" in x]
+    weighted = [x for s in sections for x in s["items"] if x.get("w")]
     total_h = sum(x["w"] for x in weighted)
     unweighted = len(ids) - len(weighted)
 

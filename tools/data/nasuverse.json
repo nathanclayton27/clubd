@@ -40,8 +40,8 @@
   "nasu-vn-tsukihime": {
    "t": "Tsukihime",
    "media": "vn",
-   "w": 28.45,
-   "source": "HowLongToBeat #10689 'Tsukihime' (2000) — main story 28.45 h, verified by name"
+   "w": 28.26,
+   "source": "HowLongToBeat #10689 'Tsukihime' (2000) — main story 28.26 h, verified by name"
   },
   "nasu-vn-kagetsu-tohya": {
    "t": "Kagetsu Tohya",
@@ -52,32 +52,32 @@
   "nasu-vn-fate-stay-night": {
    "t": "Fate/stay night",
    "media": "vn",
-   "w": 58.78,
-   "source": "HowLongToBeat #3416 'Fate/stay night' (2004) — main story 58.78 h, verified by name"
+   "w": 58.7,
+   "source": "HowLongToBeat #3416 'Fate/stay night' (2004) — main story 58.70 h, verified by name"
   },
   "nasu-vn-fate-hollow-ataraxia": {
    "t": "Fate/hollow ataraxia",
    "media": "vn",
-   "w": 32.76,
-   "source": "HowLongToBeat #20806 'Fate/Hollow Ataraxia' (2005) — main story 32.76 h, verified by name"
+   "w": 32.5,
+   "source": "HowLongToBeat #20806 'Fate/Hollow Ataraxia' (2005) — main story 32.50 h, verified by name"
   },
   "nasu-vn-witch-on-the-holy-night": {
    "t": "Witch on the Holy Night",
    "media": "vn",
-   "w": 23.73,
-   "source": "HowLongToBeat #65500 'Witch on the Holy Night' (2012) — main story 23.73 h, verified by name"
+   "w": 23.55,
+   "source": "HowLongToBeat #65500 'Witch on the Holy Night' (2012) — main story 23.55 h, verified by name"
   },
   "nasu-vn-tsukihime-a-piece-of-blue-glass-moon": {
    "t": "Tsukihime -A piece of blue glass moon-",
    "media": "vn",
-   "w": 31.41,
-   "source": "HowLongToBeat #95864 'TSUKIHIME -A piece of blue glass moon-' (2021) — main story 31.41 h, verified by name"
+   "w": 31.63,
+   "source": "HowLongToBeat #95864 'TSUKIHIME -A piece of blue glass moon-' (2021) — main story 31.63 h, verified by name"
   },
   "nasu-vn-fate-stay-night-remastered": {
    "t": "Fate/stay night Remastered",
    "media": "vn",
    "w": null,
-   "why": "HowLongToBeat has one Fate/stay night record (#3416, the 2004 visual novel) and none for the 2024 remaster — and that record's own platform list already includes the remaster's Switch and PC releases, so its 58.78 h covers both rows and belongs to neither alone. Same shape as the bond-games rows HowLongToBeat files under one entry.",
+   "why": "HowLongToBeat has one Fate/stay night record (#3416, the 2004 visual novel) and none for the 2024 remaster — and that record's own platform list already includes the remaster's Switch and PC releases, so its 58.70 h covers both rows and belongs to neither alone. Same shape as the bond-games rows HowLongToBeat files under one entry.",
    "short": "HowLongToBeat times the visual novel once, not each remaster, so this row carries no length"
   },
   "nasu-vn-fate-hollow-ataraxia-remastered": {
@@ -140,20 +140,20 @@
   "nasu-game-fate-extra": {
    "t": "Fate/Extra",
    "media": "game",
-   "w": 28.81,
-   "source": "HowLongToBeat #3415 'Fate/Extra' (2010) — main story 28.81 h, verified by name"
+   "w": 28.99,
+   "source": "HowLongToBeat #3415 'Fate/Extra' (2010) — main story 28.99 h, verified by name"
   },
   "nasu-game-fate-extra-ccc": {
    "t": "Fate/Extra CCC",
    "media": "game",
-   "w": 42.64,
-   "source": "HowLongToBeat #48860 'Fate/Extra CCC' (2013) — main story 42.64 h, verified by name"
+   "w": 43.35,
+   "source": "HowLongToBeat #48860 'Fate/Extra CCC' (2013) — main story 43.35 h, verified by name"
   },
   "nasu-game-fate-grand-order": {
    "t": "Fate/Grand Order",
    "media": "game",
    "w": 138.35,
-   "source": "HowLongToBeat #36059 'Fate/Grand Order' (0) — main story 138.35 h, verified by name"
+   "source": "HowLongToBeat #36059 'Fate/Grand Order' (2015) — main story 138.35 h, verified by name"
   },
   "nasu-game-fate-extella-the-umbral-star": {
    "t": "Fate/Extella: The Umbral Star",
@@ -164,20 +164,34 @@
   "nasu-game-fate-extella-link": {
    "t": "Fate/Extella Link",
    "media": "game",
-   "w": 9.87,
-   "source": "HowLongToBeat #65589 'Fate/Extella Link' (2019) — main story 9.87 h, verified by name"
+   "w": 9.91,
+   "source": "HowLongToBeat #65589 'Fate/Extella Link' (2019) — main story 9.91 h, verified by name"
   },
   "nasu-game-melty-blood-type-lumina": {
    "t": "Melty Blood: Type Lumina",
    "media": "game",
-   "w": 4.26,
-   "source": "HowLongToBeat #98230 'Melty Blood: Type Lumina' (2021) — main story 4.26 h, verified by name"
+   "w": 4.16,
+   "source": "HowLongToBeat #98230 'Melty Blood: Type Lumina' (2021) — main story 4.16 h, verified by name"
   },
   "nasu-game-fate-samurai-remnant": {
    "t": "Fate/Samurai Remnant",
    "media": "game",
-   "w": 31.39,
-   "source": "HowLongToBeat #120441 'Fate/Samurai Remnant' (2023) — main story 31.39 h, verified by name"
+   "w": 31.42,
+   "source": "HowLongToBeat #120441 'Fate/Samurai Remnant' (2023) — main story 31.42 h, verified by name"
+  },
+  "nasu-game-fate-extra-record": {
+   "t": "Fate/Extra Record",
+   "media": "game",
+   "w": 0,
+   "why": "dated 28 January 2027 by its own article (Gematsu, 3 September 2026) — not out yet, so HowLongToBeat has nothing to time",
+   "short": "Not released yet — due 28 January 2027"
+  },
+  "nasu-game-melty-blood-twi-lumina": {
+   "t": "Melty Blood: Twi-Lumina",
+   "media": "game",
+   "w": 0,
+   "why": "dated 22 April 2027 by the Melty Blood: Type Lumina article (Gematsu, 11 September 2026) — not out yet, so HowLongToBeat has nothing to time",
+   "short": "Not released yet — due 22 April 2027"
   },
   "nasu-tv-lunar-legend-tsukihime": {
    "t": "Lunar Legend Tsukihime",
@@ -252,9 +266,9 @@
   "nasu-tv-fate-extra-last-encore": {
    "t": "Fate/Extra Last Encore",
    "media": "tv",
-   "w": 5.2,
-   "minutes": 312,
-   "source": "Fate/Extra Last Encore — 'television' box, 13 episodes at 24 minutes"
+   "w": null,
+   "why": "the article's box gives 13 episodes at \"24–50 minutes\" — a range is not a figure, and picking one end would be inventing",
+   "short": "Episodes run 24 to 50 minutes, so no one length fits the row"
   },
   "nasu-tv-today-s-menu-for-the-emiya-family": {
    "t": "Today's Menu for the Emiya Family",
@@ -298,6 +312,20 @@
    "minutes": 55,
    "source": "Fate/strange Fake — 55 minutes, read when the row was written"
   },
+  "nasu-tv-fate-strange-fake": {
+   "t": "Fate/strange Fake",
+   "media": "tv",
+   "w": null,
+   "why": "the Fate/Strange Fake article's tv-series box gives 13 episodes and no runtime",
+   "short": "No published length for it"
+  },
+  "nasu-tv-fate-kaleid-liner-prisma-illya-finale": {
+   "t": "Fate/kaleid liner Prisma Illya Finale",
+   "media": "tv",
+   "w": 0,
+   "why": "the fifth and final season, set to premiere in 2027 by the Fate/kaleid liner Prisma Illya article — not out yet, so there is no runtime to read",
+   "short": "Not released yet — due 2027"
+  },
   "nasu-film-the-garden-of-sinners": {
    "t": "The Garden of Sinners",
    "media": "film",
@@ -336,9 +364,9 @@
   "nasu-film-prisma-illya-vow-in-the-snow": {
    "t": "Fate/kaleid liner Prisma Illya: Vow in the Snow",
    "media": "film",
-   "w": 1.03,
-   "minutes": 62,
-   "source": "Fate/kaleid liner Prisma Illya: Vow in the Snow — 62 minutes, read when the row was written"
+   "w": 1.5,
+   "minutes": 90,
+   "source": "Fate/kaleid liner Prisma Illya: Vow in the Snow — 'film' box, runtime 90 minutes"
   },
   "nasu-film-prisma-illya-oath-under-snow": {
    "t": "Fate/kaleid liner Prisma Illya: Oath Under Snow",
@@ -392,9 +420,9 @@
   "nasu-film-witch-on-the-holy-night": {
    "t": "Witch on the Holy Night",
    "media": "film",
-   "w": null,
-   "why": "dated 20 November 2026 — an unreleased film has no runtime",
-   "short": "Not released yet"
+   "w": 0,
+   "why": "dated 20 November 2026 in Japan by the Witch on the Holy Night article — not out yet, so there is no runtime to read",
+   "short": "Not released yet — due 20 November 2026"
   },
   "nasu-manga-fate-kaleid-liner-prisma-illya": {
    "t": "Fate/kaleid liner Prisma Illya",
