@@ -21,7 +21,8 @@ Television is tracked season by season. A season's weight is the series'
 episode count divided evenly across its seasons at 22 minutes each — the
 source gives totals, not per-season breakdowns — and seasons are spread evenly
 across the years the series aired, exactly as the DC Anthology does at 43
-minutes.
+minutes. SEASON_YEAR corrects the spread where a series' own article dates a
+season, and ANNOUNCED adds the dated seasons the table does not count yet.
 """
 import json
 import pathlib
@@ -29,6 +30,37 @@ import pathlib
 SLUG = "marvel-animation"
 
 EP_MINUTES = 22
+
+# Seasons the even spread puts in the wrong year, keyed like FLAVOR, from the
+# series' own Wikipedia article. A still-running series has no end year, so
+# the spread assumes one season a year from the premiere.
+#   X-Men '97: "The second season premiered on July 1, 2026 ... weekly until
+#   August 12" (article, revision of 2026-11-08).
+#   Spidey and His Amazing Friends: the series overview of List of Spidey and
+#   His Amazing Friends episodes (revision of 2026-11-11) starts season 3 on
+#   2024-01-08, season 4 on 2025-06-16 and season 5 on 2026-07-13; the series
+#   article agrees for 4 ("Season Four Premieres June 16", press release of
+#   29 May 2025) and 5 ("Premiering July 13", press release of 8 June 2026).
+SEASON_YEAR = {
+    ("X-Men '97", 2024): {2: 2026},
+    ("Spidey and His Amazing Friends", 2021): {3: 2024, 4: 2025, 5: 2026},
+}
+
+# Seasons announced with a date but not yet counted by the source table. They
+# weigh nothing until they are out. Each must sit past the table's own season
+# count: once the table counts one, delete it here and the table's row takes
+# over under the same id. From the series' articles, fetched 2026-11-11:
+#   X-Men '97: "the third season planned for release in 2027 and the fourth
+#   in 2028" (Collider, 6 August 2026)
+#   Your Friendly Neighborhood Spider-Man: "The second season is scheduled to
+#   premiere on January 13, 2027"
+# Values are (when the list says it is due, sort date).
+ANNOUNCED = {
+    ("X-Men '97", 2024): {3: ("2027", "2027-06-15"),
+                          4: ("2028", "2028-06-15")},
+    ("Your Friendly Neighborhood Spider-Man", 2025):
+        {2: ("13 January 2027", "2027-01-13")},
+}
 
 # What a series is, where the title alone does not say. Keyed by title and
 # start year because Marvel reuses titles: Spider-Man is a 1967 series and a
@@ -148,6 +180,7 @@ def main():
             # five-year run does not sort entirely at its premiere
             sy = year if seasons == 1 else \
                 year + round((k - 1) * (last - year) / (seasons - 1))
+            sy = SEASON_YEAR.get((s["title"], year), {}).get(k, sy)
             bits = []
             if k == 1:
                 span = s["start"] + ("–" + s["end"] if s["end"] else
@@ -168,6 +201,18 @@ def main():
                 "t": "%s season %d" % (s["title"], k),
                 "n": str(sy), "w": per, "note": " · ".join(bits),
                 "date": "%d-06-15" % sy, "year": sy, "kind": "show",
+                "sortkey": (s["title"], k),
+            })
+        for k, (due, date) in sorted(
+                ANNOUNCED.get((s["title"], year), {}).items()):
+            assert k > seasons, ("the table now counts %s season %d: drop it "
+                                 "from ANNOUNCED" % (s["title"], k))
+            sy = int(date[:4])
+            entries.append({
+                "id": "mva-t-%d-%s-s%d" % (year, slug(s["title"]), k),
+                "t": "%s season %d" % (s["title"], k),
+                "n": str(sy), "w": 0, "note": "%s · not out yet" % due,
+                "date": date, "year": sy, "kind": "show",
                 "sortkey": (s["title"], k),
             })
 
@@ -207,7 +252,11 @@ def main():
     assert len(ids) == len(entries), (len(ids), len(entries))
     assert sum(1 for e in entries if e["kind"] == "film") == len(films)
     assert sum(1 for e in entries if e["kind"] == "show") == \
-        sum(s["seasons"] or 1 for s in shows)
+        sum(s["seasons"] or 1 for s in shows) + \
+        sum(len(v) for v in ANNOUNCED.values())
+    assert all(key in {(s["title"], int(s["start"])) for s in shows}
+               for key in list(SEASON_YEAR) + list(ANNOUNCED)), \
+        "a SEASON_YEAR or ANNOUNCED key matches no series in the table"
     hours = sum(e["w"] for e in entries)
 
     prop = {
@@ -251,8 +300,9 @@ def main():
              "anything that ran annually and close for anything that did "
              "not." % EP_MINUTES],
             ["Bar widths are runtimes.", "Films use their real runtime from "
-             "Wikidata. Avengers: Mightiest Friends is not out yet, so it "
-             "weighs nothing and cannot drag a group's pace."],
+             "Wikidata. Avengers: Mightiest Friends and the next seasons of "
+             "X-Men '97 and Your Friendly Neighborhood Spider-Man are not out "
+             "yet, so they weigh nothing and cannot drag a group's pace."],
             ["Series only, features only.", "Pilots, television specials, "
              "motion comics, web shorts and the Lego specials are promos and "
              "curios rather than series, and recut episodes sold as films "

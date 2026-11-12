@@ -6,7 +6,7 @@
   "kind": "shows & films",
   "popularity": 60,
   "year": "1966–",
-  "blurb": "18 films and 100 seasons of television, about 670 hours, in the order they came out.",
+  "blurb": "18 films and 103 seasons of television, about 670 hours, in the order they came out.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -35,7 +35,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "Films use their real runtime from Wikidata. Avengers: Mightiest Friends is not out yet, so it weighs nothing and cannot drag a group's pace."
+      "Films use their real runtime from Wikidata. Avengers: Mightiest Friends and the next seasons of X-Men '97 and Your Friendly Neighborhood Spider-Man are not out yet, so they weigh nothing and cannot drag a group's pace."
     ],
     [
       "Series only, features only.",
@@ -713,7 +713,7 @@
     {
       "id": "streaming",
       "title": "What If...? and X-Men '97",
-      "sub": "2021– · 22 seasons · 112 hours",
+      "sub": "2021– · 25 seasons · 112 hours",
       "intro": "Marvel Studios Animation joins the MCU proper on Disney+, Hulu goes adult-oriented, and Disney Jr. gets a preschool Spidey.",
       "items": [
         {
@@ -740,8 +740,8 @@
           "id": "mva-t-2021-spidey-and-his-amazing-friends-s1",
           "t": "Spidey and His Amazing Friends season 1",
           "n": "2021",
-          "w": 8.07,
-          "note": "2021– · 5 seasons, 110 episodes"
+          "w": 8.14,
+          "note": "2021– · 5 seasons, 111 episodes"
         },
         {
           "id": "mva-t-2021-super-crooks-s1",
@@ -761,7 +761,7 @@
           "id": "mva-t-2021-spidey-and-his-amazing-friends-s2",
           "t": "Spidey and His Amazing Friends season 2",
           "n": "2022",
-          "w": 8.07
+          "w": 8.14
         },
         {
           "id": "mva-t-2023-moon-girl-and-devil-dinosaur-s1",
@@ -769,12 +769,6 @@
           "n": "2023",
           "w": 7.52,
           "note": "2023–2025 · 2 seasons, 41 episodes"
-        },
-        {
-          "id": "mva-t-2021-spidey-and-his-amazing-friends-s3",
-          "t": "Spidey and His Amazing Friends season 3",
-          "n": "2023",
-          "w": 8.07
         },
         {
           "id": "mva-t-2021-what-if-s2",
@@ -789,10 +783,10 @@
           "w": 3.67
         },
         {
-          "id": "mva-t-2021-spidey-and-his-amazing-friends-s4",
-          "t": "Spidey and His Amazing Friends season 4",
+          "id": "mva-t-2021-spidey-and-his-amazing-friends-s3",
+          "t": "Spidey and His Amazing Friends season 3",
           "n": "2024",
-          "w": 8.07
+          "w": 8.14
         },
         {
           "id": "mva-t-2021-what-if-s3",
@@ -835,16 +829,10 @@
           "w": 7.52
         },
         {
-          "id": "mva-t-2021-spidey-and-his-amazing-friends-s5",
-          "t": "Spidey and His Amazing Friends season 5",
+          "id": "mva-t-2021-spidey-and-his-amazing-friends-s4",
+          "t": "Spidey and His Amazing Friends season 4",
           "n": "2025",
-          "w": 8.07
-        },
-        {
-          "id": "mva-t-2024-x-men-97-s2",
-          "t": "X-Men '97 season 2",
-          "n": "2025",
-          "w": 3.48
+          "w": 8.14
         },
         {
           "id": "mva-t-2025-your-friendly-neighborhood-spider-man-s1",
@@ -854,11 +842,44 @@
           "note": "2025– · 1 season, 10 episodes · MCU"
         },
         {
+          "id": "mva-t-2021-spidey-and-his-amazing-friends-s5",
+          "t": "Spidey and His Amazing Friends season 5",
+          "n": "2026",
+          "w": 8.14
+        },
+        {
+          "id": "mva-t-2024-x-men-97-s2",
+          "t": "X-Men '97 season 2",
+          "n": "2026",
+          "w": 3.48
+        },
+        {
+          "id": "mva-t-2025-your-friendly-neighborhood-spider-man-s2",
+          "t": "Your Friendly Neighborhood Spider-Man season 2",
+          "n": "2027",
+          "w": 0,
+          "note": "13 January 2027 · not out yet"
+        },
+        {
           "id": "mva-t-2027-avengers-mightiest-friends-s1",
           "t": "Avengers: Mightiest Friends season 1",
           "n": "2027",
           "w": 0,
           "note": "2027 · not out yet · A Spidey and His Amazing Friends spin-off"
+        },
+        {
+          "id": "mva-t-2024-x-men-97-s3",
+          "t": "X-Men '97 season 3",
+          "n": "2027",
+          "w": 0,
+          "note": "2027 · not out yet"
+        },
+        {
+          "id": "mva-t-2024-x-men-97-s4",
+          "t": "X-Men '97 season 4",
+          "n": "2028",
+          "w": 0,
+          "note": "2028 · not out yet"
         }
       ]
     }

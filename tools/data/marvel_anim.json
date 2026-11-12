@@ -7,7 +7,7 @@
    "cat": "dtv",
    "qid": "Q11856317",
    "runtime": 94,
-   "released": "1980-07-01"
+   "released": "1980-08-19"
   },
   {
    "year": 1981,
@@ -66,7 +66,7 @@
   {
    "year": 2009,
    "title": "Hulk Versus",
-   "page": "Marvel Animated Features#Hulk vs.",
+   "page": "Marvel Animated Features#Hulk Vs.",
    "cat": "dtv",
    "qid": "Q2564665",
    "runtime": 78,
@@ -589,7 +589,7 @@
    "page": "Spidey and His Amazing Friends",
    "imprint": false,
    "seasons": 5,
-   "episodes": 110,
+   "episodes": 111,
    "start": "2021",
    "end": null,
    "ongoing": true
