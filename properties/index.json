@@ -1584,7 +1584,7 @@
     "kind": "games",
     "year": "1987–",
     "popularity": 74,
-    "blurb": "26 games and 4 extras — about 400 hours of story, 134 of it the saga spine.",
+    "blurb": "27 games and 4 extras — about 415 hours of story, 134 of it the saga spine.",
     "accent": "#4A5D23",
     "accentDark": "#9DBB61",
     "unit": {
@@ -1592,8 +1592,8 @@
       "many": "entries"
     },
     "vpast": "played",
-    "total": 30,
-    "totalw": 399.54
+    "total": 31,
+    "totalw": 414.54
   },
   {
     "slug": "superman",
@@ -2386,7 +2386,7 @@
     "kind": "games",
     "year": "1999–",
     "popularity": 69,
-    "blurb": "13 games — about 101 hours of story, 57 of it the essential path, with Townfall still to come.",
+    "blurb": "13 games — about 114 hours of story, 57 of it the essential path.",
     "accent": "#6B655E",
     "accentDark": "#C97455",
     "unit": {
@@ -2395,7 +2395,7 @@
     },
     "vpast": "played",
     "total": 13,
-    "totalw": 101.02
+    "totalw": 114.49
   },
   {
     "slug": "muppets",

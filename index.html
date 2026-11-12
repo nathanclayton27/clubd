@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fZsPUOVzrbySrBE92gV9W1/QXxx93GKIHCan+E0SIAU=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-iPhmbGPiZNi/nCkHyUsWCHWRevdaNSXkg5vIi9ST8OU=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -3928,7 +3928,7 @@ let MANIFEST = [
     "kind": "games",
     "year": "1987–",
     "popularity": 74,
-    "blurb": "26 games and 4 extras — about 400 hours of story, 134 of it the saga spine.",
+    "blurb": "27 games and 4 extras — about 415 hours of story, 134 of it the saga spine.",
     "accent": "#4A5D23",
     "accentDark": "#9DBB61",
     "unit": {
@@ -3936,8 +3936,8 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "played",
-    "total": 30,
-    "totalw": 399.54
+    "total": 31,
+    "totalw": 414.54
   },
   {
     "slug": "superman",
@@ -4730,7 +4730,7 @@ let MANIFEST = [
     "kind": "games",
     "year": "1999–",
     "popularity": 69,
-    "blurb": "13 games — about 101 hours of story, 57 of it the essential path, with Townfall still to come.",
+    "blurb": "13 games — about 114 hours of story, 57 of it the essential path.",
     "accent": "#6B655E",
     "accentDark": "#C97455",
     "unit": {
@@ -4739,7 +4739,7 @@ let MANIFEST = [
     },
     "vpast": "played",
     "total": 13,
-    "totalw": 101.02
+    "totalw": 114.49
   },
   {
     "slug": "muppets",
@@ -7719,7 +7719,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '72ab0b663ec8';
+const BUILD = 'aa1491a1fa60';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
