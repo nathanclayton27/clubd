@@ -794,7 +794,7 @@
   "t": "Death Warmed Up",
   "page": "Death Warmed Up",
   "year": 1984,
-  "director": "David Blythe",
+  "director": "David Blyth",
   "runtime": 85
  },
  {
@@ -852,6 +852,13 @@
   "year": 1985,
   "director": "Dan O'Bannon",
   "runtime": 86
+ },
+ {
+  "t": "The Stuff",
+  "page": "The Stuff",
+  "year": 1985,
+  "director": "Larry Cohen",
+  "runtime": 93
  },
  {
   "t": "Trancers",
@@ -1366,7 +1373,7 @@
  },
  {
   "t": "Junk",
-  "page": "Junk (film)",
+  "page": "Junk (2000 film)",
   "year": 2000,
   "director": "Atsushi Muroga",
   "runtime": 83
@@ -1478,10 +1485,10 @@
  },
  {
   "t": "Resident Evil",
-  "page": "Resident Evil (film)",
+  "page": "Resident Evil (2002 film)",
   "year": 2002,
   "director": "Paul W. S. Anderson",
-  "runtime": null
+  "runtime": 100
  },
  {
   "t": "Ritual",
@@ -4193,6 +4200,13 @@
   "runtime": 115
  },
  {
+  "t": "Jombieland",
+  "page": "Pind Peya Saara Jombieland Baneya",
+  "year": 2025,
+  "director": "Deepak Thaper",
+  "runtime": null
+ },
+ {
   "t": "Lisik: Origin Point",
   "page": "Lisik: Origin Point",
   "year": 2025,
@@ -4226,6 +4240,20 @@
   "year": 2026,
   "director": "Nia DaCosta",
   "runtime": 109
+ },
+ {
+  "t": "IIZ: Indian Institute of Zombies",
+  "page": "IIZ: Indian Institute of Zombies",
+  "year": 2026,
+  "director": "Alok Kumar Dwivedi, Gaganjeet Singh",
+  "runtime": null
+ },
+ {
+  "t": "Resident Evil",
+  "page": "Resident Evil (2026 film)",
+  "year": 2026,
+  "director": "Zach Cregger",
+  "runtime": 95
  },
  {
   "t": "Zombeid",

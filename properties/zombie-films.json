@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 52,
   "year": "1919–",
-  "blurb": "605 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
+  "blurb": "609 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -727,7 +727,7 @@
           "id": "z-1984-death-warmed-up",
           "t": "Death Warmed Up",
           "n": "1984",
-          "note": "David Blythe · 85 min"
+          "note": "David Blyth · 85 min"
         },
         {
           "id": "z-1984-devil-fetus-2-the-rape-after",
@@ -759,7 +759,7 @@
     {
       "id": "video",
       "title": "The video-store years",
-      "sub": "1985–2001 · 90 films",
+      "sub": "1985–2001 · 91 films",
       "items": [
         {
           "id": "z-1985-day-of-the-dead",
@@ -784,6 +784,12 @@
           "t": "The Return of the Living Dead",
           "n": "1985",
           "note": "Dan O'Bannon · 86 min"
+        },
+        {
+          "id": "z-1985-the-stuff",
+          "t": "The Stuff",
+          "n": "1985",
+          "note": "Larry Cohen · 93 min"
         },
         {
           "id": "z-1985-trancers",
@@ -1331,7 +1337,7 @@
           "id": "z-2002-resident-evil",
           "t": "Resident Evil",
           "n": "2002",
-          "note": "Paul W. S. Anderson"
+          "note": "Paul W. S. Anderson · 100 min"
         },
         {
           "id": "z-2002-ritual",
@@ -2695,7 +2701,7 @@
     {
       "id": "modern",
       "title": "The modern wave",
-      "sub": "2013–2026 · 167 films",
+      "sub": "2013–2026 · 170 films",
       "items": [
         {
           "id": "z-2013-13-eerie",
@@ -3664,6 +3670,12 @@
           "note": "Danny Boyle · 115 min"
         },
         {
+          "id": "z-2025-jombieland",
+          "t": "Jombieland",
+          "n": "2025",
+          "note": "Deepak Thaper"
+        },
+        {
           "id": "z-2025-lisik-origin-point",
           "t": "Lisik: Origin Point",
           "n": "2025",
@@ -3692,6 +3704,18 @@
           "t": "28 Years Later: The Bone Temple",
           "n": "2026",
           "note": "Nia DaCosta · 109 min"
+        },
+        {
+          "id": "z-2026-iiz-indian-institute-of-zombies",
+          "t": "IIZ: Indian Institute of Zombies",
+          "n": "2026",
+          "note": "Alok Kumar Dwivedi, Gaganjeet Singh"
+        },
+        {
+          "id": "z-2026-resident-evil",
+          "t": "Resident Evil",
+          "n": "2026",
+          "note": "Zach Cregger · 95 min"
         },
         {
           "id": "z-2026-zombeid",
