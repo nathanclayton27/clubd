@@ -83,7 +83,7 @@
     "kind": "films",
     "year": "1937–",
     "popularity": 96,
-    "blurb": "659 films from Snow White on — 458 theatrical, 169 television, 32 direct-to-video — about 922 hours.",
+    "blurb": "659 films from Snow White on — 455 theatrical, 169 television, 35 direct-to-video — about 922 hours.",
     "accent": "#1F4FA8",
     "accentDark": "#6F9BE8",
     "unit": {
@@ -212,7 +212,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 951
+    "total": 952
   },
   {
     "slug": "zelda",
@@ -248,7 +248,7 @@
     "kind": "anime",
     "year": "1999–",
     "popularity": 91,
-    "blurb": "1180 episodes, 49 arcs, the filler is optional.",
+    "blurb": "1180 episodes aired, 49 arcs, the filler is optional.",
     "accent": "#B8531F",
     "accentDark": "#E8904A",
     "unit": {
@@ -256,7 +256,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 1180
+    "total": 1181
   },
   {
     "slug": "marvel-comics",
@@ -958,7 +958,7 @@
     "kind": "tv & films",
     "year": "1999–",
     "popularity": 80,
-    "blurb": "168 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
+    "blurb": "169 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
     "accent": "#472F8C",
     "accentDark": "#5FEFB8",
     "unit": {
@@ -966,7 +966,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 168
+    "total": 169
   },
   {
     "slug": "godzilla",
@@ -3223,9 +3223,9 @@
       "rockman"
     ],
     "kind": "games",
-    "year": "1987–2023",
+    "year": "1987–2027",
     "popularity": 63,
-    "blurb": "94 games — every one with Mega Man on the box, from the 1987 NES original to the offline X Dive. 59 carry a verified story length, about 307 hours between them.",
+    "blurb": "95 games — every one with Mega Man on the box, from the 1987 NES original to the offline X Dive, with Dual Override still to come. 59 carry a verified story length, about 307 hours between them.",
     "accent": "#6868A0",
     "accentDark": "#B4C4FC",
     "unit": {
@@ -3233,7 +3233,7 @@
       "many": "games"
     },
     "vpast": "played",
-    "total": 94
+    "total": 95
   },
   {
     "slug": "mob-psycho-100",
@@ -5173,7 +5173,7 @@
     "kind": "anime",
     "year": "fan recut",
     "popularity": 33,
-    "blurb": "474 episodes, 36 arcs, no filler and no padding.",
+    "blurb": "473 episodes, 36 arcs, no filler and no padding.",
     "accent": "#2E7A6B",
     "accentDark": "#5FBFA8",
     "unit": {

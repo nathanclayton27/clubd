@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-iLGQdSDZQ3JQ3z0p0ZptkoZ2e60KPXAMKZ/AADsbmXg=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-D4Bg8C61pD9wjmeERrAKIYgTZDpUBLDc/gLF8W17IAw=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -2427,7 +2427,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "1937–",
     "popularity": 96,
-    "blurb": "659 films from Snow White on — 458 theatrical, 169 television, 32 direct-to-video — about 922 hours.",
+    "blurb": "659 films from Snow White on — 455 theatrical, 169 television, 35 direct-to-video — about 922 hours.",
     "accent": "#1F4FA8",
     "accentDark": "#6F9BE8",
     "unit": {
@@ -2556,7 +2556,7 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 951
+    "total": 952
   },
   {
     "slug": "zelda",
@@ -2592,7 +2592,7 @@ let MANIFEST = [
     "kind": "anime",
     "year": "1999–",
     "popularity": 91,
-    "blurb": "1180 episodes, 49 arcs, the filler is optional.",
+    "blurb": "1180 episodes aired, 49 arcs, the filler is optional.",
     "accent": "#B8531F",
     "accentDark": "#E8904A",
     "unit": {
@@ -2600,7 +2600,7 @@ let MANIFEST = [
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 1180
+    "total": 1181
   },
   {
     "slug": "marvel-comics",
@@ -3302,7 +3302,7 @@ let MANIFEST = [
     "kind": "tv & films",
     "year": "1999–",
     "popularity": 80,
-    "blurb": "168 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
+    "blurb": "169 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
     "accent": "#472F8C",
     "accentDark": "#5FEFB8",
     "unit": {
@@ -3310,7 +3310,7 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 168
+    "total": 169
   },
   {
     "slug": "godzilla",
@@ -5567,9 +5567,9 @@ let MANIFEST = [
       "rockman"
     ],
     "kind": "games",
-    "year": "1987–2023",
+    "year": "1987–2027",
     "popularity": 63,
-    "blurb": "94 games — every one with Mega Man on the box, from the 1987 NES original to the offline X Dive. 59 carry a verified story length, about 307 hours between them.",
+    "blurb": "95 games — every one with Mega Man on the box, from the 1987 NES original to the offline X Dive, with Dual Override still to come. 59 carry a verified story length, about 307 hours between them.",
     "accent": "#6868A0",
     "accentDark": "#B4C4FC",
     "unit": {
@@ -5577,7 +5577,7 @@ let MANIFEST = [
       "many": "games"
     },
     "vpast": "played",
-    "total": 94
+    "total": 95
   },
   {
     "slug": "mob-psycho-100",
@@ -7517,7 +7517,7 @@ let MANIFEST = [
     "kind": "anime",
     "year": "fan recut",
     "popularity": 33,
-    "blurb": "474 episodes, 36 arcs, no filler and no padding.",
+    "blurb": "473 episodes, 36 arcs, no filler and no padding.",
     "accent": "#2E7A6B",
     "accentDark": "#5FBFA8",
     "unit": {
@@ -7720,7 +7720,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '9ac98da8145c';
+const BUILD = 'eeb9355eb6e6';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
