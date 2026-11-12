@@ -277,7 +277,7 @@
     },
     "vpast": "read",
     "total": 13,
-    "totalw": 6742.0,
+    "totalw": 6855.0,
     "doors": 13,
     "hub": true,
     "mega": true
@@ -537,7 +537,7 @@
     "kind": "comics",
     "year": "1963–",
     "popularity": 86,
-    "blurb": "Every issue of the two flagship lineages from 1963 to the fall of Krakoa — about 1645 issues — with the crossovers spliced in where you read them.",
+    "blurb": "Every issue of the two flagship lineages from 1963 to the Age of Revelation — about 1758 issues — with the crossovers spliced in where you read them.",
     "accent": "#B08A2E",
     "accentDark": "#E8C45C",
     "unit": {
@@ -545,8 +545,8 @@
       "many": "entries"
     },
     "vpast": "read",
-    "total": 971,
-    "totalw": 1645.0
+    "total": 1035,
+    "totalw": 1758.0
   },
   {
     "slug": "avatar",
@@ -1066,11 +1066,11 @@
       "books"
     ],
     "title": "Stephen King",
-    "subtitle": "all 69 novels, Bachman included",
+    "subtitle": "every novel, Bachman included",
     "kind": "books",
-    "year": "1974–2026",
+    "year": "1974–2027",
     "popularity": 80,
-    "blurb": "Every novel in publication order, Carrie to Other Worlds Than These — 69 of them, the seven Richard Bachman books included, each counting as one.",
+    "blurb": "Every novel in publication order, Carrie to Other Worlds Than These — 69 novels and the uncut Stand, the seven Richard Bachman books included, each counting as one, with Anything for Holly still to come.",
     "accent": "#4A1F1F",
     "accentDark": "#C97070",
     "unit": {
@@ -1078,7 +1078,7 @@
       "many": "novels"
     },
     "vpast": "read",
-    "total": 69
+    "total": 70
   },
   {
     "slug": "eastwood",
@@ -4807,14 +4807,14 @@
     "kind": "mixed",
     "year": "1998–",
     "popularity": 47,
-    "blurb": "61 works across six media, in release order within each. 35 carry a verified length — about 514 hours of games, visual novels, films and anime.",
+    "blurb": "65 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
     "accent": "#8A2E4A",
     "accentDark": "#E884A6",
     "unit": {
       "one": "work",
       "many": "works"
     },
-    "total": 61
+    "total": 65
   },
   {
     "slug": "mst3k",

@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-5u72fiGkzJJyADxN2rv+MKbkz2sZFKXiCLruNiv7YzQ=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-L/CYq+mZRN++O4uPIYaknhM3P9EHCiYhDPVqT2wsgYY=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -2621,7 +2621,7 @@ let MANIFEST = [
     },
     "vpast": "read",
     "total": 13,
-    "totalw": 6742.0,
+    "totalw": 6855.0,
     "doors": 13,
     "hub": true,
     "mega": true
@@ -2881,7 +2881,7 @@ let MANIFEST = [
     "kind": "comics",
     "year": "1963–",
     "popularity": 86,
-    "blurb": "Every issue of the two flagship lineages from 1963 to the fall of Krakoa — about 1645 issues — with the crossovers spliced in where you read them.",
+    "blurb": "Every issue of the two flagship lineages from 1963 to the Age of Revelation — about 1758 issues — with the crossovers spliced in where you read them.",
     "accent": "#B08A2E",
     "accentDark": "#E8C45C",
     "unit": {
@@ -2889,8 +2889,8 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "read",
-    "total": 971,
-    "totalw": 1645.0
+    "total": 1035,
+    "totalw": 1758.0
   },
   {
     "slug": "avatar",
@@ -3410,11 +3410,11 @@ let MANIFEST = [
       "books"
     ],
     "title": "Stephen King",
-    "subtitle": "all 69 novels, Bachman included",
+    "subtitle": "every novel, Bachman included",
     "kind": "books",
-    "year": "1974–2026",
+    "year": "1974–2027",
     "popularity": 80,
-    "blurb": "Every novel in publication order, Carrie to Other Worlds Than These — 69 of them, the seven Richard Bachman books included, each counting as one.",
+    "blurb": "Every novel in publication order, Carrie to Other Worlds Than These — 69 novels and the uncut Stand, the seven Richard Bachman books included, each counting as one, with Anything for Holly still to come.",
     "accent": "#4A1F1F",
     "accentDark": "#C97070",
     "unit": {
@@ -3422,7 +3422,7 @@ let MANIFEST = [
       "many": "novels"
     },
     "vpast": "read",
-    "total": 69
+    "total": 70
   },
   {
     "slug": "eastwood",
@@ -7151,14 +7151,14 @@ let MANIFEST = [
     "kind": "mixed",
     "year": "1998–",
     "popularity": 47,
-    "blurb": "61 works across six media, in release order within each. 35 carry a verified length — about 514 hours of games, visual novels, films and anime.",
+    "blurb": "65 works across six media, in release order within each. 34 carry a verified length — about 510 hours of games, visual novels, films and anime.",
     "accent": "#8A2E4A",
     "accentDark": "#E884A6",
     "unit": {
       "one": "work",
       "many": "works"
     },
-    "total": 61
+    "total": 65
   },
   {
     "slug": "mst3k",
@@ -7720,7 +7720,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '10ba59411537';
+const BUILD = '1c04c98dfe0d';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
