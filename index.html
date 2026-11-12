@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-CPRUOsP64y0QuYk4oDndkqM0CRbun8D1MN69RO6KXOE=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Hb25yc//ZiayvxsRP9svCswCdaD5DxLASMCSOE5Nv2U=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -3349,7 +3349,7 @@ let MANIFEST = [
     "kind": "manga",
     "year": "1997–",
     "popularity": 80,
-    "blurb": "1190 chapters across 106 volumes, still running.",
+    "blurb": "1198 chapters across 115 volumes, still running.",
     "accent": "#A8721F",
     "accentDark": "#E0AE55",
     "unit": {
@@ -3357,7 +3357,7 @@ let MANIFEST = [
       "many": "chapters"
     },
     "vpast": "read",
-    "total": 1190
+    "total": 1198
   },
   {
     "slug": "resident-evil",
@@ -5772,7 +5772,7 @@ let MANIFEST = [
     "kind": "shows & films",
     "year": "1966–",
     "popularity": 62,
-    "blurb": "103 films and 108 seasons of television, about 923 hours, in the order they came out.",
+    "blurb": "103 films and 111 seasons of television, about 931 hours, in the order they came out.",
     "accent": "#2A5F9E",
     "accentDark": "#7FB0E8",
     "unit": {
@@ -5780,8 +5780,8 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 211,
-    "totalw": 923.32,
+    "total": 214,
+    "totalw": 931.44,
     "mega": true
   },
   {
@@ -6623,9 +6623,9 @@ let MANIFEST = [
     "title": "Korean Cinema",
     "subtitle": "the national archive's hundred, and what came after",
     "kind": "films",
-    "year": "1934–2025",
+    "year": "1934–2026",
     "popularity": 56,
-    "blurb": "119 films Korea's own national film archive and its film juries picked out, 1934 to 2025 — about 220 hours. No order; let the picker choose.",
+    "blurb": "120 films Korea's own national film archive and its film juries picked out, 1934 to 2026 — about 223 hours. No order; let the picker choose.",
     "accent": "#1D5C7A",
     "accentDark": "#79C2DD",
     "unit": {
@@ -6633,8 +6633,8 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 119,
-    "totalw": 220.25,
+    "total": 120,
+    "totalw": 222.98,
     "random": true
   },
   {
@@ -7278,6 +7278,7 @@ let MANIFEST = [
   {
     "slug": "nathan-fielder",
     "media": [
+      "movies",
       "tv"
     ],
     "title": "Nathan Fielder",
@@ -7287,18 +7288,18 @@ let MANIFEST = [
       "the curse",
       "the rehearsal"
     ],
-    "kind": "tv",
-    "year": "2013–2025",
+    "kind": "tv & film",
+    "year": "2013–2026",
     "popularity": 44,
-    "blurb": "Deadpan business advice on basic cable, life-size rehearsals of conversations nobody wants to have, and a marriage inside a home-renovation show — everything Nathan Fielder created, in the order it aired.",
+    "blurb": "Deadpan business advice on basic cable, life-size rehearsals of conversations nobody wants to have, a marriage inside a home-renovation show and a documentary about Elizabeth Holmes — everything Nathan Fielder created, in the order it came out.",
     "accent": "#3F6B62",
     "accentDark": "#9EDCC9",
     "unit": {
-      "one": "episode",
-      "many": "episodes"
+      "one": "entry",
+      "many": "entries"
     },
     "vpast": "watched",
-    "total": 54
+    "total": 55
   },
   {
     "slug": "indie-essentials",
@@ -7647,7 +7648,7 @@ let MANIFEST = [
     "kind": "tv",
     "year": "2026",
     "popularity": 26,
-    "blurb": "The Rick and Morty spin-off — 10 episodes, weekly, still airing.",
+    "blurb": "The Rick and Morty spin-off — 10 episodes, weekly, all aired.",
     "accent": "#4F6B14",
     "accentDark": "#A8D93F",
     "unit": {
@@ -7719,13 +7720,13 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '1082345e6367';
+const BUILD = 'd855626b9da0';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
 // rewires a sync group re-runs it — which is how a newly added list inherits
 // ticks people already had elsewhere. See backfillSync().
-const SYNCVER = '224f5e84ad';
+const SYNCVER = 'ecccfcef52';
 
 // A tab that is already open never re-runs its own boot, so checking once was
 // only ever going to help people who reloaded anyway. This polls, and reloads
