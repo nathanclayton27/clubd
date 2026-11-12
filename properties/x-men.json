@@ -5,7 +5,7 @@
   "kind": "comics",
   "popularity": 86,
   "year": "1963–",
-  "blurb": "Every issue of the two flagship lineages from 1963 to the fall of Krakoa — about 1645 issues — with the crossovers spliced in where you read them.",
+  "blurb": "Every issue of the two flagship lineages from 1963 to the Age of Revelation — about 1758 issues — with the crossovers spliced in where you read them.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -25,7 +25,7 @@
   "notes": [
     [
       "Two spines, read in pairs.",
-      "From 1991 the line has two flagships that ran in lockstep — Uncanny #281–393 against X-Men #1–113, ending together — so they are rowed in pairs: each month's Uncanny, then its X-Men. The same pairing carries 2004–08 and 2008–11. Everything else is one title at a time."
+      "From 1991 the line has two flagships that ran in lockstep — Uncanny #281–393 against X-Men #1–113, ending together — so they are rowed in pairs: each month's Uncanny, then its X-Men. The same pairing carries 2004–08 and 2008–11, and From the Ashes reads its two in release order. Everything else is one title at a time."
     ],
     [
       "◆ marks chapters published outside the flagships.",
@@ -40,7 +40,7 @@
       "Notes say what an issue is — a debut, a creator boundary, an arc name — never what happens in it. The stars carry the “this one matters” signal."
     ],
     [
-      "From the Ashes is ongoing.",
+      "Shadows of Tomorrow is ongoing.",
       "The current era gets placeholder rows weighing nothing; per-issue rows arrive when runs complete, so the list never carries invented issue counts."
     ],
     "Series links resolve against Marvel's own database ids. Order and era boundaries assembled from the standard reading orders; issue ranges verified against Marvel's series listings."
@@ -6414,7 +6414,7 @@
     {
       "id": "ashes",
       "title": "From the Ashes",
-      "sub": "2024– · the current era, still being written",
+      "sub": "2024–25 · X-Men and Uncanny in release order, then Exceptional",
       "links": [
         {
           "label": "X-Men (2024)",
@@ -6427,29 +6427,477 @@
         {
           "label": "Exceptional",
           "url": "https://www.marvel.com/comics/series/39416/exceptional_xmen_2024_2025"
+        },
+        {
+          "label": "X-Manhunt Omega",
+          "url": "https://www.marvel.com/comics/series/42758/xmanhunt_omega_xmh_2025_present"
         }
       ],
       "items": [
         {
           "id": "xm-ash-xmen",
           "t": "X-Men (2024)",
-          "n": "ongoing",
-          "w": 0,
-          "note": "MacKay's flagship — per-issue rows when the era completes"
+          "n": "#1",
+          "w": 1,
+          "note": "MacKay's flagship"
         },
         {
           "id": "xm-ash-uncanny",
           "t": "Uncanny X-Men (2024)",
-          "n": "ongoing",
-          "w": 0,
+          "n": "#1",
+          "w": 1,
           "note": "Simone's book"
+        },
+        {
+          "id": "xm-ash-x2",
+          "t": "X-Men (2024)",
+          "n": "#2",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x3",
+          "t": "X-Men (2024)",
+          "n": "#3",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u2",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#2",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x4",
+          "t": "X-Men (2024)",
+          "n": "#4",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u3",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#3",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x5",
+          "t": "X-Men (2024)",
+          "n": "#5",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u4",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#4",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x6",
+          "t": "X-Men (2024)",
+          "n": "#6",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x7",
+          "t": "X-Men (2024)",
+          "n": "#7",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u5",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#5",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u6",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#6",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x8",
+          "t": "X-Men (2024)",
+          "n": "#8",
+          "w": 1,
+          "note": "“Raid on Graymalkin” begins — it alternates with Uncanny"
+        },
+        {
+          "id": "xm-ash-u7",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#7",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x9",
+          "t": "X-Men (2024)",
+          "n": "#9",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u8",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#8",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u9",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#9",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x10",
+          "t": "X-Men (2024)",
+          "n": "#10",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x11",
+          "t": "X-Men (2024)",
+          "n": "#11",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u10",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#10",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x12",
+          "t": "X-Men (2024)",
+          "n": "#12",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u11",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#11",
+          "w": 1,
+          "note": "“X-Manhunt” begins"
+        },
+        {
+          "id": "xm-ash-x13",
+          "t": "X-Men (2024)",
+          "n": "#13",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-manhunt",
+          "t": "X-Manhunt, the other chapters",
+          "n": "◆",
+          "w": 5,
+          "note": "NYX #9, Storm #6, X-Factor #8, X-Force #9 and X-Manhunt Omega #1 — around Uncanny #11 and X-Men #13"
+        },
+        {
+          "id": "xm-ash-u12",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#12",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x14",
+          "t": "X-Men (2024)",
+          "n": "#14",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u13",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#13",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x15",
+          "t": "X-Men (2024)",
+          "n": "#15",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x16",
+          "t": "X-Men (2024)",
+          "n": "#16",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u14",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#14",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u15",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#15",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x17",
+          "t": "X-Men (2024)",
+          "n": "#17",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x18",
+          "t": "X-Men (2024)",
+          "n": "#18",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u16",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#16",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x19",
+          "t": "X-Men (2024)",
+          "n": "#19",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u17",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#17",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u18",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#18",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u19",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#19",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x20",
+          "t": "X-Men (2024)",
+          "n": "#20",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x21",
+          "t": "X-Men (2024)",
+          "n": "#21",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u20",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#20",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-u21",
+          "t": "Uncanny X-Men (2024)",
+          "n": "#21",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-x22",
+          "t": "X-Men (2024)",
+          "n": "#22",
+          "w": 1
         },
         {
           "id": "xm-ash-exceptional",
           "t": "Exceptional X-Men",
-          "n": "2024–25",
-          "w": 0,
+          "n": "#1",
+          "w": 1,
           "note": "Ewing's Chicago book"
+        },
+        {
+          "id": "xm-ash-e2",
+          "t": "Exceptional X-Men",
+          "n": "#2",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e3",
+          "t": "Exceptional X-Men",
+          "n": "#3",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e4",
+          "t": "Exceptional X-Men",
+          "n": "#4",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e5",
+          "t": "Exceptional X-Men",
+          "n": "#5",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e6",
+          "t": "Exceptional X-Men",
+          "n": "#6",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e7",
+          "t": "Exceptional X-Men",
+          "n": "#7",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e8",
+          "t": "Exceptional X-Men",
+          "n": "#8",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e9",
+          "t": "Exceptional X-Men",
+          "n": "#9",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e10",
+          "t": "Exceptional X-Men",
+          "n": "#10",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e11",
+          "t": "Exceptional X-Men",
+          "n": "#11",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e12",
+          "t": "Exceptional X-Men",
+          "n": "#12",
+          "w": 1
+        },
+        {
+          "id": "xm-ash-e13",
+          "t": "Exceptional X-Men",
+          "n": "#13",
+          "w": 1
+        }
+      ]
+    },
+    {
+      "id": "revelation",
+      "title": "Age of Revelation",
+      "sub": "2025 · the ongoing books give way to limited series",
+      "links": [
+        {
+          "label": "Overture",
+          "url": "https://www.marvel.com/comics/series/43618/xmen_age_of_revelation_overture_aor_2025_present"
+        },
+        {
+          "label": "Amazing X-Men",
+          "url": "https://www.marvel.com/comics/series/44580/amazing_xmen_2025"
+        },
+        {
+          "label": "Unbreakable X-Men",
+          "url": "https://www.marvel.com/comics/series/44577/unbreakable_xmen_2025"
+        },
+        {
+          "label": "Book of Revelation",
+          "url": "https://www.marvel.com/comics/series/44581/xmen_book_of_revelation_2025"
+        },
+        {
+          "label": "Finale",
+          "url": "https://www.marvel.com/comics/series/43619/xmen_age_of_revelation_finale_2025_present"
+        }
+      ],
+      "items": [
+        {
+          "id": "xm-aor-0",
+          "t": "X-Men: Age of Revelation",
+          "n": "#0",
+          "w": 1,
+          "note": "The prelude, published in July 2025"
+        },
+        {
+          "id": "xm-aor-overture",
+          "t": "X-Men: Age of Revelation Overture",
+          "n": "#1",
+          "w": 1,
+          "note": "The event begins"
+        },
+        {
+          "id": "xm-aor-amazing",
+          "t": "Amazing X-Men",
+          "n": "#1–3",
+          "w": 3,
+          "note": "MacKay — one of the event's three flagship titles"
+        },
+        {
+          "id": "xm-aor-unbreakable",
+          "t": "Unbreakable X-Men",
+          "n": "#1–3",
+          "w": 3,
+          "note": "Simone — another of the three"
+        },
+        {
+          "id": "xm-aor-book",
+          "t": "X-Men: Book of Revelation",
+          "n": "#1–3",
+          "w": 3,
+          "note": "MacKay — the event's core title"
+        },
+        {
+          "id": "xm-aor-line",
+          "t": "The other Age of Revelation titles",
+          "n": "◆",
+          "w": 40,
+          "note": "Binary, Laura Kinney: Sabretooth, Longshots, Rogue Storm, Iron & Frost, Sinister's Six, The Last Wolverine, Omega Kids, Radioactive Spider-Man, Cloak or Dagger, Expatriate X-Men, Undeadpool and X-Vengers, three issues each, and the World of Revelation one-shot",
+          "opt": 1
+        },
+        {
+          "id": "xm-aor-finale",
+          "t": "X-Men: Age of Revelation Finale",
+          "n": "#1",
+          "w": 1,
+          "note": "The event concludes"
+        }
+      ]
+    },
+    {
+      "id": "tomorrow",
+      "title": "Shadows of Tomorrow",
+      "sub": "2026– · the current era, still being written",
+      "links": [
+        {
+          "label": "X-Men (2024)",
+          "url": "https://www.marvel.com/comics/series/39439/xmen_2024_present"
+        },
+        {
+          "label": "Uncanny (2024)",
+          "url": "https://www.marvel.com/comics/series/39425/uncanny_xmen_2024_present"
+        }
+      ],
+      "items": [
+        {
+          "id": "xm-sot-xmen",
+          "t": "X-Men (2024)",
+          "n": "ongoing",
+          "w": 0,
+          "note": "MacKay's flagship, from #23 — per-issue rows when the era completes"
+        },
+        {
+          "id": "xm-sot-uncanny",
+          "t": "Uncanny X-Men (2024)",
+          "n": "ongoing",
+          "w": 0,
+          "note": "Simone's book, from #22"
+        },
+        {
+          "id": "xm-sot-dnx",
+          "t": "DNX",
+          "n": "#1–5",
+          "w": 0,
+          "note": "The 2026 event, with X-Men #35–41 and Fantastic Four #17–18. #5 is not out yet — due 18 November 2026"
         }
       ]
     }

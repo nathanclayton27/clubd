@@ -17,10 +17,10 @@ glance who's ahead and who's fallen behind.
 
 
 
-971-entry comics run, and 659 episodes of Dragon Ball.
+1,035-entry comics run, and 659 episodes of Dragon Ball.
 
-**Comics.** *X-Men* (both flagship lineages complete, 1963 to the fall of
-Krakoa), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
+**Comics.** *X-Men* (both flagship lineages complete, 1963 to the Age of
+Revelation), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
 War* (the 2006 event interleaved), *Crisis on Infinite Earths* (the 1985
 DC event, with the crossover tiered so the readable path and the complete
 one are the same list), *Spider-Man After Civil War*, *Ultimate

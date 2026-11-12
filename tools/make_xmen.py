@@ -156,6 +156,48 @@ def run(key, title, span, w, note="", opt=1):
     return it(key, title, span, note, 0, w, opt)
 
 
+# ------------------------------------------------------------ From the Ashes --
+# The era ran July 2024 to December 2025 (Wikipedia, "X-Men: From the Ashes"):
+# X-Men (vol. 7) #1-22, Uncanny X-Men (vol. 6) #1-21, Exceptional X-Men #1-13.
+# The two flagships share two crossovers ("Raid on Graymalkin" alternates
+# between them issue by issue), so they are read in release order. Release
+# dates are each issue's ReleaseDate on the Marvel Database, read 2026-11-11.
+ASH_X = ["2024-07-10", "2024-08-14", "2024-08-28", "2024-09-18", "2024-10-02",
+         "2024-10-23", "2024-11-06", "2024-12-04", "2024-12-25", "2025-01-29",
+         "2025-02-12", "2025-02-26", "2025-03-12", "2025-04-02", "2025-04-23",
+         "2025-05-07", "2025-06-04", "2025-06-18", "2025-07-02", "2025-08-13",
+         "2025-08-27", "2025-09-24"]                       # X-Men #1-22
+ASH_U = ["2024-08-07", "2024-09-11", "2024-09-25", "2024-10-16", "2024-11-13",
+         "2024-11-27", "2024-12-11", "2025-01-08", "2025-01-22", "2025-02-19",
+         "2025-03-05", "2025-03-26", "2025-04-09", "2025-05-14", "2025-05-28",
+         "2025-06-25", "2025-07-09", "2025-07-23", "2025-08-06", "2025-09-03",
+         "2025-09-17"]                                      # Uncanny #1-21
+ASH_NOTES = {
+    ("x", 1): "MacKay's flagship",
+    ("u", 1): "Simone's book",
+    ("x", 8): "“Raid on Graymalkin” begins — it alternates with Uncanny",
+    ("u", 11): "“X-Manhunt” begins",
+}
+
+
+def ash(kind, n):
+    """One From the Ashes issue. Each #1 keeps the id its placeholder row had,
+    so a tick on the old 'ongoing' row lands on the first issue."""
+    title, first, pre = {"x": ("X-Men (2024)", "ash-xmen", "ash-x"),
+                         "u": ("Uncanny X-Men (2024)", "ash-uncanny", "ash-u"),
+                         "e": ("Exceptional X-Men", "ash-exceptional", "ash-e")}[kind]
+    key = first if n == 1 else "%s%d" % (pre, n)
+    return it(key, title, "#%d" % n, ASH_NOTES.get((kind, n), ""))
+
+
+def ash_flagships():
+    assert len(ASH_X) == 22 and len(ASH_U) == 21
+    dated = ([(d, "x", n) for n, d in enumerate(ASH_X, 1)]
+             + [(d, "u", n) for n, d in enumerate(ASH_U, 1)])
+    assert len({d for d, _, _ in dated}) == len(dated), "same-day issues"
+    return [ash(k, n) for _, k, n in sorted(dated)]
+
+
 # ---------------------------------------------------------------- sections --
 SECTIONS = [
     {
@@ -478,17 +520,65 @@ SECTIONS = [
     },
     {
         "id": "ashes", "title": "From the Ashes",
-        "sub": "2024– · the current era, still being written",
+        "sub": "2024–25 · X-Men and Uncanny in release order, then Exceptional",
         "links": [L("X-Men (2024)", "xmen_2024_present"),
                   L("Uncanny (2024)", "uncanny_xmen_2024_present"),
-                  L("Exceptional", "exceptional_xmen_2024_2025")],
+                  L("Exceptional", "exceptional_xmen_2024_2025"),
+                  L("X-Manhunt Omega", "xmanhunt_omega_xmh_2025_present")],
+        "items": weave(
+            ash_flagships()
+            + [it("ash-exceptional", "Exceptional X-Men", "#1",
+                  "Ewing's Chicago book")]
+            + [ash("e", n) for n in range(2, 14)],
+            ("xm-ash-x13", it("ash-manhunt", "X-Manhunt, the other chapters", "◆",
+                              "NYX #9, Storm #6, X-Factor #8, X-Force #9 and "
+                              "X-Manhunt Omega #1 — around Uncanny #11 and "
+                              "X-Men #13", 0, 5)),
+        ),
+    },
+    {
+        "id": "revelation", "title": "Age of Revelation",
+        "sub": "2025 · the ongoing books give way to limited series",
+        "links": [L("Overture", "xmen_age_of_revelation_overture_aor_2025_present"),
+                  L("Amazing X-Men", "amazing_xmen_2025"),
+                  L("Unbreakable X-Men", "unbreakable_xmen_2025"),
+                  L("Book of Revelation", "xmen_book_of_revelation_2025"),
+                  L("Finale", "xmen_age_of_revelation_finale_2025_present")],
         "items": [
-            it("ash-xmen", "X-Men (2024)", "ongoing",
-               "MacKay's flagship — per-issue rows when the era completes", 0, 0),
-            it("ash-uncanny", "Uncanny X-Men (2024)", "ongoing",
-               "Simone's book", 0, 0),
-            it("ash-exceptional", "Exceptional X-Men", "2024–25",
-               "Ewing's Chicago book", 0, 0),
+            it("aor-0", "X-Men: Age of Revelation", "#0",
+               "The prelude, published in July 2025"),
+            it("aor-overture", "X-Men: Age of Revelation Overture", "#1",
+               "The event begins"),
+            it("aor-amazing", "Amazing X-Men", "#1–3",
+               "MacKay — one of the event's three flagship titles", 0, 3),
+            it("aor-unbreakable", "Unbreakable X-Men", "#1–3",
+               "Simone — another of the three", 0, 3),
+            it("aor-book", "X-Men: Book of Revelation", "#1–3",
+               "MacKay — the event's core title", 0, 3),
+            it("aor-line", "The other Age of Revelation titles", "◆",
+               "Binary, Laura Kinney: Sabretooth, Longshots, Rogue Storm, "
+               "Iron & Frost, Sinister's Six, The Last Wolverine, Omega Kids, "
+               "Radioactive Spider-Man, Cloak or Dagger, Expatriate X-Men, "
+               "Undeadpool and X-Vengers, three issues each, and the World of "
+               "Revelation one-shot", 0, 40, 1),
+            it("aor-finale", "X-Men: Age of Revelation Finale", "#1",
+               "The event concludes"),
+        ],
+    },
+    {
+        "id": "tomorrow", "title": "Shadows of Tomorrow",
+        "sub": "2026– · the current era, still being written",
+        "links": [L("X-Men (2024)", "xmen_2024_present"),
+                  L("Uncanny (2024)", "uncanny_xmen_2024_present")],
+        "items": [
+            it("sot-xmen", "X-Men (2024)", "ongoing",
+               "MacKay's flagship, from #23 — per-issue rows when the era "
+               "completes", 0, 0),
+            it("sot-uncanny", "Uncanny X-Men (2024)", "ongoing",
+               "Simone's book, from #22", 0, 0),
+            it("sot-dnx", "DNX", "#1–5",
+               "The 2026 event, with X-Men #35–41 and Fantastic Four "
+               "#17–18. #5 is not out yet — due 18 November 2026", 0, 0),
         ],
     },
 ]
@@ -520,7 +610,7 @@ def main():
         "popularity": 86,
         "year": "1963–",
         "blurb": "Every issue of the two flagship lineages from 1963 to the "
-                 "fall of Krakoa — about %d issues — with the crossovers "
+                 "Age of Revelation — about %d issues — with the crossovers "
                  "spliced in where you read them." % round(issues),
         "unit": {"one": "entry", "many": "entries"},
         "weightUnit": {"one": "issue", "many": "issues"},
@@ -533,7 +623,8 @@ def main():
              "flagships that ran in lockstep — Uncanny #281–393 against X-Men "
              "#1–113, ending together — so they are rowed in pairs: each "
              "month's Uncanny, then its X-Men. The same pairing carries "
-             "2004–08 and 2008–11. Everything else is one title at a time."],
+             "2004–08 and 2008–11, and From the Ashes reads its two in "
+             "release order. Everything else is one title at a time."],
             ["◆ marks chapters published outside the flagships.", "Crossovers "
              "are spliced in at the point you read them, sized by how many "
              "issues they are, never dumped at the end of a section."],
@@ -544,7 +635,7 @@ def main():
             ["No spoilers.", "Notes say what an issue is — a debut, a creator "
              "boundary, an arc name — never what happens in it. The stars "
              "carry the “this one matters” signal."],
-            ["From the Ashes is ongoing.", "The current era gets placeholder "
+            ["Shadows of Tomorrow is ongoing.", "The current era gets placeholder "
              "rows weighing nothing; per-issue rows arrive when runs "
              "complete, so the list never carries invented issue counts."],
             "Series links resolve against Marvel's own database ids. Order "
