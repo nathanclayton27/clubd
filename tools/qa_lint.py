@@ -9,6 +9,8 @@ too faint to see against the page they are drawn on, weights that are negative
 or absurd, empty or placeholder text where a reader would see it, a
 hard-coded count or hours figure in a section subtitle or a blurb that the rows
 no longer support, and the one mechanically checkable half of the note standard.
+It also runs gwlib.prop.validate() over every committed list (CLU-547), since
+107 generators and the hand-written lists never go through prop.write().
 
 Two exit levels. FINDINGS fail the build (CI runs this file and reads only its
 exit code). NOTICES print and do not, because they are rules whose bar was read
@@ -21,7 +23,11 @@ import json
 import math
 import pathlib
 import re
+import sys
 import collections
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from gwlib import prop as gwprop  # noqa: E402
 
 PROPS = pathlib.Path("properties")
 ID_OK = re.compile(r"^[A-Za-z][A-Za-z0-9_-]*$")
@@ -347,6 +353,29 @@ for f in sorted(PROPS.glob("*.json")):
     except Exception as e:
         findings[slug].append("INVALID JSON: %s" % e)
         continue
+
+    # CLU-547. gwlib.prop.write() runs validate() before it writes, and that is
+    # where the house rules live: dangerous or duplicate ids, empty sections,
+    # the accent pair, the popularity band, wikitext junk, note hygiene and
+    # filter/tag agreement. But 107 of the 237 generators write their property
+    # file themselves with json.dumps, and three lists are written by hand, so
+    # on those the rules had never run. Running it here, on the committed file,
+    # covers every list whoever or whatever wrote it. Several rules overlap the
+    # checks below, so one defect can be reported twice; the accent pair, note
+    # hygiene and the comic-row url rule are only checked here.
+    # It does NOT add the `legacy_ids` guard: that lives in write(), is opt-in,
+    # and needs the ids a list used to have, which a committed file cannot say.
+    # The gated list is skipped on its `secret` flag, as src/build.py skips it,
+    # never by name. The message is ASCII-escaped because validate() quotes row
+    # text, and a U+00B7 echoed to a Windows console raises instead of printing.
+    if not p.get("secret"):
+        try:
+            gwprop.validate(p)
+        except Exception as e:
+            msg = str(e) if isinstance(e, AssertionError) \
+                else "%s: %s" % (type(e).__name__, e)
+            findings[slug].append(
+                "validate(): %s" % msg.encode("ascii", "backslashreplace").decode("ascii"))
 
     if p.get("slug") != slug:
         findings[slug].append("slug mismatch: %r" % p.get("slug"))
