@@ -4621,7 +4621,7 @@
     "kind": "films",
     "year": "1919–",
     "popularity": 52,
-    "blurb": "605 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
+    "blurb": "609 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
     "accent": "#5A6B2E",
     "accentDark": "#A8C46A",
     "unit": {
@@ -4629,7 +4629,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 605,
+    "total": 609,
     "random": true
   },
   {
@@ -4822,14 +4822,14 @@
       "tv"
     ],
     "title": "Mystery Science Theater 3000",
-    "subtitle": "every experiment, KTMA to the Gizmoplex",
+    "subtitle": "every experiment, KTMA to RiffTrax",
     "aliases": [
       "mst3k"
     ],
     "kind": "tv",
-    "year": "1988–2022",
+    "year": "1988–2026",
     "popularity": 46,
-    "blurb": "All 232 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
+    "blurb": "All 236 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
     "accent": "#7A6200",
     "accentDark": "#F2C230",
     "unit": {
@@ -4837,7 +4837,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 232,
+    "total": 236,
     "random": true
   },
   {
