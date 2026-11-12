@@ -6,7 +6,7 @@
   "kind": "films & shows",
   "popularity": 97,
   "year": "1977–",
-  "blurb": "17 films and 40 television seasons in the order they came out — about 243 hours.",
+  "blurb": "17 films and 42 television seasons in the order they came out — about 243 hours.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -433,7 +433,7 @@
     {
       "id": "plus",
       "title": "The Disney+ era",
-      "sub": "2019–2027 · 3 films, 23 seasons · 118 hours",
+      "sub": "2019–2027 · 3 films, 25 seasons · 118 hours",
       "intro": "Television becomes the centre of gravity, and the films slow to a stop.",
       "items": [
         {
@@ -506,7 +506,7 @@
           "t": "Visions season 1",
           "n": "2021",
           "w": 3.3,
-          "note": "2021–2023 · 3 seasons, 27 episodes · Animated · 9 episodes",
+          "note": "2021–2025 · 3 seasons, 27 episodes · Animated · 9 episodes",
           "tier": 3,
           "tags": [
             "Television"
@@ -530,17 +530,6 @@
           "w": 4.2,
           "note": "2022–2022 · 1 season, 6 episodes · Live action",
           "tier": 2,
-          "tags": [
-            "Television"
-          ]
-        },
-        {
-          "id": "sw-t-2021-visions-s2",
-          "t": "Visions season 2",
-          "n": "2022",
-          "w": 3.3,
-          "note": "9 episodes",
-          "tier": 3,
           "tags": [
             "Television"
           ]
@@ -590,8 +579,8 @@
           ]
         },
         {
-          "id": "sw-t-2021-visions-s3",
-          "t": "Visions season 3",
+          "id": "sw-t-2021-visions-s2",
+          "t": "Visions season 2",
           "n": "2023",
           "w": 3.3,
           "note": "9 episodes",
@@ -602,7 +591,7 @@
         },
         {
           "id": "sw-t-2023-ahsoka-s1",
-          "t": "Ahsoka",
+          "t": "Ahsoka season 1",
           "n": "2023",
           "w": 5.6,
           "note": "2023– · 1 season, 8 episodes · Live action",
@@ -678,8 +667,19 @@
           ]
         },
         {
+          "id": "sw-t-2021-visions-s3",
+          "t": "Visions season 3",
+          "n": "2025",
+          "w": 3.3,
+          "note": "9 episodes",
+          "tier": 3,
+          "tags": [
+            "Television"
+          ]
+        },
+        {
           "id": "sw-t-2026-maul-shadow-lord-s1",
-          "t": "Maul: Shadow Lord",
+          "t": "Maul: Shadow Lord season 1",
           "n": "2026",
           "w": 3.67,
           "note": "2026– · 1 season, 10 episodes · Animated",
@@ -710,6 +710,17 @@
           ]
         },
         {
+          "id": "sw-t-2023-ahsoka-s2",
+          "t": "Ahsoka season 2",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — due 20 January 2027",
+          "tier": 2,
+          "tags": [
+            "Television"
+          ]
+        },
+        {
           "id": "sw-f-2027-star-wars-starfighter",
           "t": "Star Wars: Starfighter",
           "n": "2027",
@@ -718,6 +729,17 @@
           "tier": 2,
           "tags": [
             "Films"
+          ]
+        },
+        {
+          "id": "sw-t-2026-maul-shadow-lord-s2",
+          "t": "Maul: Shadow Lord season 2",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — dated 2027",
+          "tier": 3,
+          "tags": [
+            "Television"
           ]
         }
       ]

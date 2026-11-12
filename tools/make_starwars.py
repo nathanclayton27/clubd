@@ -35,6 +35,9 @@ SLUG = "star-wars"
 # where its seasons differ. See ep_minutes() for why that had to exist.
 EP_MINUTES = {"animated": 22, "live": 42}
 
+MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+          "August", "September", "October", "November", "December"]
+
 ERAS = [
     ("original", "The original trilogy", 0, 1986,
      "Three films, two Ewok adventures, a variety special nobody involved will "
@@ -198,6 +201,18 @@ def main():
         n, eps = s["seasons"], s["episodes"]
         dates = s.get("season_dates") or {}
         per_eps = s.get("season_eps") or {}
+        # A season announced WITH a date (a full one, or a bare year) is a row
+        # before it airs, at w 0 and saying so. It sits outside `seasons` and
+        # `episodes` on purpose: those are the infobox's counts, which only
+        # move once a season premieres, and nothing here weighs a season that
+        # nobody can watch yet. It only names the seasons after them.
+        due = s.get("announced") or {}
+        assert sorted(int(k) for k in due) == list(range(n + 1, n + 1 + len(due))), \
+            "%s: announced seasons %s do not follow its %d" % (s["t"], sorted(due), n)
+        for when in due.values():
+            assert re.fullmatch(r"\d{4}(-\d{2}-\d{2})?", when), \
+                "%s: announced date %r is neither a year nor a day" % (s["t"], when)
+        total = n + len(due)
         # an even split is the fallback, not the plan: where a season's own
         # episode count is known it is used, and only the remainder is shared out
         known = sum(per_eps.get(str(k), 0) for k in range(1, n + 1))
@@ -225,13 +240,34 @@ def main():
                 bits.append("%d episode%s" % (round(mine), "" if round(mine) == 1 else "s"))
             entries.append({
                 "id": "sw-t-%d-%s-s%d" % (start, slug(s["t"]), k),
-                "t": "%s season %d" % (s["t"], k) if n > 1 else s["t"],
+                "t": "%s season %d" % (s["t"], k) if total > 1 else s["t"],
                 "n": str(sy),
                 "w": round(mine * ep_minutes(s, k) / 60.0, 2),
                 "note": " · ".join(bits),
                 # a season with a real premiere sorts on it; The Clone Wars film
                 # came out in August 2008 and the series that October
                 "date": iso or ("%d-06-15" % sy),
+                "year": sy, "kind": "show", "sortkey": (s["t"], k),
+                "tier": 1 if s["t"] in SAGA_SHOWS
+                        else (2 if s["t"] in MAIN_SHOWS else 3),
+                "tags": ["Television"],
+            })
+        for k in range(n + 1, total + 1):
+            when = due[str(k)]
+            sy = int(when[:4])
+            bits = [s["note"]] if s.get("note") else []
+            if len(when) == 10:
+                bits.append("Not out yet — due %d %s %d"
+                            % (int(when[8:]), MONTHS[int(when[5:7]) - 1], sy))
+            else:
+                bits.append("Not out yet — dated %d" % sy)
+            entries.append({
+                "id": "sw-t-%d-%s-s%d" % (start, slug(s["t"]), k),
+                "t": "%s season %d" % (s["t"], k),
+                "n": str(sy), "w": 0,
+                "note": " · ".join(bits),
+                # a bare year sorts where an undated season would
+                "date": when if len(when) == 10 else "%d-06-15" % sy,
                 "year": sy, "kind": "show", "sortkey": (s["t"], k),
                 "tier": 1 if s["t"] in SAGA_SHOWS
                         else (2 if s["t"] in MAIN_SHOWS else 3),

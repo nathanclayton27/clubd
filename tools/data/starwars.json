@@ -95,7 +95,7 @@
    "t": "Star Wars: Starfighter",
    "page": "Star Wars: Starfighter",
    "kind": "theatrical",
-   "released": "2027",
+   "released": "2027-05-28",
    "runtime": 120,
    "estimated": true
   },
@@ -284,11 +284,20 @@
    "page": "Star Wars: Visions",
    "kind": "animated",
    "start": "2021-09-22",
-   "end": "2023-05-04",
+   "end": "2025-10-29",
    "seasons": 3,
    "episodes": 27,
-   "season_dates": {},
-   "season_eps": {}
+   "overview_from": "List of Star Wars television series",
+   "season_dates": {
+    "1": "2021-09-22",
+    "2": "2023-05-04",
+    "3": "2025-10-29"
+   },
+   "season_eps": {
+    "1": 9,
+    "2": 9,
+    "3": 9
+   }
   },
   {
    "t": "The Book of Boba Fett",
@@ -377,6 +386,9 @@
    },
    "season_eps": {
     "1": 8
+   },
+   "announced": {
+    "2": "2027-01-20"
    }
   },
   {
@@ -469,6 +481,9 @@
    },
    "season_eps": {
     "1": 10
+   },
+   "announced": {
+    "2": "2027"
    }
   }
  ],
