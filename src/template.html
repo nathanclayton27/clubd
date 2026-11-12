@@ -2763,6 +2763,12 @@ let ARRIVAL = (function(){
       // request is the tab that reports it.
       return null;
     }
+    // CLU-581. This tab handed the invitation over when a sign-in came in from
+    // another tab (arrPass). A reload here comes back signed in, finds the slot
+    // it stamped, and would read as a same-tab round trip and send with no ask.
+    // It is not one: nobody signed in in this tab. So it steps aside again, and
+    // the slot stays for the tab that signed in.
+    if(c && c.passed) return null;
     if(e) return { kind: e.k, payload: e.v, own: e.tab === ARRTAB };
   }catch(e){}
   return null;
@@ -2771,6 +2777,14 @@ let ARRIVAL = (function(){
 // onSession — and there is always a second onSession — cannot re-ask or settle
 // behind the ask.
 let ARRASK = null;
+// CLU-581. Whether this PAGE LOAD has been told, for certain, that nobody is
+// signed in. Every sign-in here ends in a page load: signInWithOtp mails a link
+// that opens a page, signInWithOAuth redirects away and back. So a session that
+// reaches a page already told "signed out" was not made in this tab. It came
+// from another one: supabase-js passes each sign-in to every open tab over a
+// BroadcastChannel, and again when a tab becomes visible. settleArrival() reads
+// this to tell that sign-in from the tab's own.
+let ARROUT = false;
 
 function pickSlug(){
   const q = new URLSearchParams(location.search);
@@ -4430,6 +4444,8 @@ async function adopt(){
 // A session is always definitive; a null one only when it came from
 // getSession() or an explicit sign-out.
 async function onSession(session, definitive){
+  // before anything awaits, so it records the answers in the order they came
+  if(!session && definitive) ARROUT = true;
   user = session ? session.user : null;
   if(user || definitive) sessionSeen = true;
   // the shelf and splash have no property loaded — the only work here is
@@ -6043,9 +6059,36 @@ async function claimArrival(arr){
 // said what the link does, the sign-in happened on top of it, and there is no
 // second person in the story. Anything else came off a shared slot, and a
 // shared slot cannot tell A from B.
+//
+// `away` is the one exception to that (CLU-581): this tab caught the link, but
+// the sign-in came from another tab, and the invitation could not be left for
+// that tab to ask about. See settleArrival.
 function arrNeedsOk(arr){
   const a = arrKind(arr.kind);
-  return !!a && (!arr.own || !!a.ask);
+  return !!a && (!arr.own || !!a.ask || !!arr.away);
+}
+// CLU-581. A sign-in from another tab reached the tab that caught the link.
+// This tab leaves the invitation where it is, in the slot, for the tab that
+// signed in. That tab did not stamp the slot, so it asks, with the other-tab
+// line and the account the request would go out as.
+//
+// The slot is read rather than trusted. A dead slot is swept here and
+// arrivalStale() says so; one a newer link took is said by arrivalTaken(), the
+// same as a claim would. One still holding this invitation is left alone, and
+// this tab marks its own memory of catching it as handed over, which is what a
+// reload of this tab reads (see ARRIVAL).
+function arrPass(arr){
+  const e = arrRead();
+  if(!e){ arrCaughtClear(); return; }
+  if(e.k !== arr.kind || e.v !== arr.payload){
+    ARRIVAL_TOOK = arr.kind;
+    arrCaughtClear();
+    return;
+  }
+  const c = arrCaught();
+  if(!c) return;
+  c.passed = 1;
+  try{ sessionStorage.setItem(ARRCAUGHT, JSON.stringify(c)); }catch(x){}
 }
 async function settleArrival(){
   if(!ARRIVAL || !user) return;
@@ -6057,6 +6100,18 @@ async function settleArrival(){
   // each doing for their own branch.
   ARRIVAL = null;
   if(!a){ arrClear(); return; }
+  // CLU-581. This tab's licence to settle with no ask is that the sign-in
+  // happened here, on top of the splash. A sign-in that reaches this tab after
+  // it was told "signed out" happened in another tab (see ARROUT), by whoever is
+  // at that keyboard, who may never have seen this link. So this tab steps
+  // aside and the tab that signed in asks, with the line that names the
+  // account. This tab cannot show that line: its "not this one" is false here.
+  if(arr.own && ARROUT){
+    if(!arr.mem){ arrPass(arr); return; }
+    // The slot write was refused, so no other tab can see this invitation and
+    // stepping aside would drop it. Ask here instead.
+    arr.away = true;
+  }
   // `held` is the kind's own chance to say "this is already true of you"
   // BEFORE an ask is drawn, and it exists because of the no-dead-affordances
   // rule: an ask whose Join button would re-run a join you already hold is a
