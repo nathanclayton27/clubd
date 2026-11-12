@@ -102,7 +102,9 @@ SERIES_NOTES = {
 COUNTRY_LANG = {"France": "French", "Japan": "Japanese", "Russia": "Russian",
                 "Germany": "German", "Sweden": "Swedish", "Italy": "Italian",
                 "Spain": "Spanish", "South Korea": "Korean", "China": "Chinese",
-                "India": "Indian", "Egypt": "Arabic", "Philippines": "Filipino"}
+                "India": "Indian", "Egypt": "Arabic", "Philippines": "Filipino",
+                "Indonesia": "Indonesian", "Kazakhstan": "Kazakh",
+                "Thailand": "Thai"}
 
 SHORTS = {"12:01 PM", "Groundhog Day for a Black Man", "Two Distant Strangers"}
 
@@ -167,7 +169,8 @@ def main():
                          "note": " · ".join(bits), "tags": [T_HOUSE] + tags})
         else:
             bits = []
-            lang = f.get("lang") or COUNTRY_LANG.get(f.get("country", ""), "")
+            lang = f.get("lang") or COUNTRY_LANG.get(
+                f.get("country", "").split("<br/>")[0], "")
             if lang:
                 bits.append(lang)
             if f["t"] in SHORTS:

@@ -90,7 +90,7 @@ original line's story),
 *Alien & Predator* on
 one timeline, *JoJo's* and *Dragon Ball* (anime and manga as separate
 pages), and *Time Loops* — the group's own Groundhog Day collection, grown
-to 189 entries via Wikipedia's time-loop film list and two Reddit
+to 204 entries via Wikipedia's time-loop film list and two Reddit
 compilations, every episode verified against the episode tables.
 
 **Four finite British sitcoms**, one list each rather than one sectioned

@@ -5,7 +5,7 @@
   "kind": "films & episodes",
   "popularity": 36,
   "year": "1963–",
-  "blurb": "145 films, 36 single episodes and 8 whole series where the day repeats — the group's picks plus every list the Discord brought in. Watch in any order.",
+  "blurb": "160 films, 36 single episodes and 8 whole series where the day repeats — the group's picks plus every list the Discord brought in. Watch in any order.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -306,6 +306,7 @@
           "n": "2007",
           "note": "Spanish · 88 min",
           "tags": [
+            "Wikipedia list",
             "135-movie thread"
           ]
         },
@@ -933,6 +934,7 @@
           "n": "2019",
           "note": "Spanish · 93 min",
           "tags": [
+            "Wikipedia list",
             "135-movie thread"
           ]
         },
@@ -1005,7 +1007,7 @@
     {
       "id": "twenties",
       "title": "The 2020s",
-      "sub": "2020–2024 · 46 films",
+      "sub": "2020–2026 · 61 films",
       "items": [
         {
           "id": "loop-f-2020-beyond-the-infinite-two-minutes",
@@ -1136,6 +1138,15 @@
           ]
         },
         {
+          "id": "loop-f-2021-churuli",
+          "t": "Churuli",
+          "n": "2021",
+          "note": "Indian",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
           "id": "loop-f-2021-cold-highway",
           "t": "Cold Highway",
           "n": "2021",
@@ -1258,6 +1269,15 @@
           ]
         },
         {
+          "id": "loop-f-2022-looop-lapeta",
+          "t": "Looop Lapeta",
+          "n": "2022",
+          "note": "Indian · 131 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
           "id": "loop-f-2022-meet-cute",
           "t": "Meet Cute",
           "n": "2022",
@@ -1325,6 +1345,7 @@
           "n": "2022",
           "note": "Hungarian",
           "tags": [
+            "Wikipedia list",
             "135-movie thread"
           ]
         },
@@ -1334,6 +1355,15 @@
           "n": "2023",
           "tags": [
             "135-movie thread"
+          ]
+        },
+        {
+          "id": "loop-f-2023-dreadful-chapters",
+          "t": "Dreadful Chapters",
+          "n": "2023",
+          "note": "Indian",
+          "tags": [
+            "Wikipedia list"
           ]
         },
         {
@@ -1373,8 +1403,9 @@
           "id": "loop-f-2023-river",
           "t": "River",
           "n": "2023",
-          "note": "Japanese",
+          "note": "Japanese · 82 min",
           "tags": [
+            "Wikipedia list",
             "135-movie thread"
           ]
         },
@@ -1391,6 +1422,7 @@
           "t": "Round and Round",
           "n": "2023",
           "tags": [
+            "Wikipedia list",
             "135-movie thread"
           ]
         },
@@ -1408,6 +1440,113 @@
           "n": "2024",
           "tags": [
             "135-movie thread"
+          ]
+        },
+        {
+          "id": "loop-f-2024-love-stuck",
+          "t": "Love Stuck",
+          "n": "2024",
+          "note": "Thai",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2024-omni-loop",
+          "t": "Omni Loop",
+          "n": "2024",
+          "note": "107 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2024-the-present",
+          "t": "The Present",
+          "n": "2024",
+          "note": "86 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-all-you-need-is-kill",
+          "t": "All You Need Is Kill",
+          "n": "2025",
+          "note": "Japanese · 82 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-bhool-chuk-maaf",
+          "t": "Bhool Chuk Maaf",
+          "n": "2025",
+          "note": "Indian",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-good-luck-have-fun-don-t-die",
+          "t": "Good Luck, Have Fun, Don't Die",
+          "n": "2025",
+          "note": "134 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-one-more-shot",
+          "t": "One More Shot",
+          "n": "2025",
+          "note": "88 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-qaitadan",
+          "t": "Qaitadan",
+          "n": "2025",
+          "note": "Kazakh",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-sore-a-wife-from-the-future",
+          "t": "Sore: A Wife from the Future",
+          "n": "2025",
+          "note": "Indonesian · 119 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-thanksgiving-again",
+          "t": "Thanksgiving, Again?!",
+          "n": "2025",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2025-until-dawn",
+          "t": "Until Dawn",
+          "n": "2025",
+          "note": "103 min",
+          "tags": [
+            "Wikipedia list"
+          ]
+        },
+        {
+          "id": "loop-f-2026-dhoomakethu",
+          "t": "Dhoomakethu",
+          "n": "2026",
+          "note": "Indian",
+          "tags": [
+            "Wikipedia list"
           ]
         }
       ]
