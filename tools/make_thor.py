@@ -52,8 +52,10 @@ DELIBERATELY NOT ROWED, and each for a reason:
     that makes you tick nineteen issues of Shang-Chi and Black Widow is broken.
   * Annuals, one-shots and the several dozen miniseries. They are not in the
     legacy numbering and no source orders them against the monthly.
-  * The Immortal Thor (2023- ). Still publishing; a row count that goes stale
-    every month is worse than a note saying where the list stops.
+  * Al Ewing's run (2023- ): The Immortal Thor #1-25 (ended July 2025), then
+    The Mortal Thor #1-14, then Thor #801 on (Marvel Fandom categories,
+    checked 2026-11-11). Still publishing; a row count that goes stale every
+    month is worse than a note saying where the list stops.
 
 UNWEIGHTED, per the house rule: comics publish no per-issue reading time, and
 a mix of weighted and unweighted rows is a hard failure.
@@ -469,10 +471,10 @@ sections.append(sec(
     [L("Thor vol. 6", "thor_2020_2023")],
     intro="Donny Cates and Nic Klein take over after Aaron, with Torunn "
           "Grønbekk finishing the volume. It is here so the list does not stop "
-          "mid-shelf, not because you have to read it.\n\nThe Immortal Thor, "
-          "which follows it and is still publishing, is deliberately not "
-          "rowed — an unfinished run would put a stale number on this page "
-          "every month."))
+          "mid-shelf, not because you have to read it.\n\nAl Ewing's run, "
+          "which follows it as The Immortal Thor and is still publishing, is "
+          "deliberately not rowed — an unfinished run would put a stale "
+          "number on this page every month."))
 
 # --------------------------------------------------------------------- emit --
 ROWS = sum(len(s["items"]) for s in sections)
