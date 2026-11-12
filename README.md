@@ -165,7 +165,7 @@ chips), *Half-Life & Portal*, *Silent Hill*, *Halo*, *Gears of War* (63 hours of
 numbered campaign, the spin-offs optional beside it), the whole *Ace
 Attorney* docket, *Fallout* and *The Elder Scrolls* with their story DLC as
 optional rows, *Persona* (the whole franchise, 927 hours, stated plainly), *Dragon Quest*,
-*Mass Effect*, *Dragon Age*, *Mega Man* (94 games across eight sub-series),
+*Mass Effect*, *Dragon Age*, *Mega Man* (95 games across eight sub-series),
 *Grand Theft Auto* (212 hours across the 2D, 3D and HD universes, the
 handhelds and expansions optional), *Pokémon* (the mainline by generation,
 paired versions as one row, third versions and remakes optional only where

@@ -35,6 +35,13 @@ arithmetic, which is the floor, not a claim.
 The compendium advertises "94 Games" and enumerates 94. Both numbers are
 asserted below; if the list ever grows and only one of them moves, this
 build fails rather than quietly shipping the wrong count.
+
+One row is not the compendium's, and the page says so (CLU-617): Mega Man:
+Dual Override, the twelfth main Classic game, dated 2027. Dated unreleased
+work belongs on lists, and the compendium could not be re-read to see whether
+it has caught up (Backloggd answers plain requests with a bot wall). It is in
+ADDED below, weighs nothing until it is out, and its id is pinned rather than
+minted from a Backloggd game id; the page ships the 94 plus ADDED.
 """
 import json
 import pathlib
@@ -75,6 +82,19 @@ RENAMED = {
     "78132": "Mega Man (DOS)",
     "1738": "Mega Man (Game Gear)",
 }
+
+# Dated work the compendium cannot be shown to carry yet. Each row goes last
+# in its section and ships with w: 0 until it is out. The id is PINNED: if a
+# re-read of the compendium lists the game, map its game id to this id rather
+# than minting mm-<gid>, or every tick on the row is lost. main() fails until
+# someone does.
+# id, section, title, year, note
+ADDED = [
+    ("mm-dual-override", "classic", "Mega Man: Dual Override", 2027,
+     "Not out yet — dated 2027, and the bar stays empty until HowLongToBeat "
+     "has hours for it. The twelfth main Classic game and the first since "
+     "11, with Proto Man playable alongside Mega Man."),
+]
 
 # section key -> title, intro
 SECTIONS = [
@@ -400,6 +420,13 @@ def main():
         want = RENAMED.get(gid, by_gid[gid]["t"])
         assert t == want, \
             "row %s says %r, the compendium says %r" % (gid, t, by_gid[gid]["t"])
+    listed = {P.normt(g["t"]) for g in games}
+    for aid, key, t, _year, _note in ADDED:
+        assert key in {k for k, *_ in SECTIONS}, "%s: no section %s" % (aid, key)
+        assert P.normt(t) not in listed, \
+            ("the compendium now lists %r: give its game id the pinned id %s "
+             "and take it out of ADDED" % (t, aid))
+    total = ADVERTISED + len(ADDED)
 
     order = [k for k, *_ in SECTIONS]
     sections, seen = [], []
@@ -425,9 +452,13 @@ def main():
             x["note"] = note
             items.append(x)
             seen.append(gid)
+        for aid, akey, t, year, note in ADDED:
+            if akey == key:
+                items.append({"id": aid, "t": t, "n": str(year), "w": 0,
+                              "note": note})
         years = [int(x["n"]) for x in items]
         assert years == sorted(years), "%s is out of the compendium's order" % key
-        wtd = [x for x in items if "w" in x]
+        wtd = [x for x in items if x.get("w")]
         bits = ["%d–%d" % (years[0], years[-1]) if years[0] != years[-1]
                 else str(years[0]),
                 "%d game%s" % (len(items), "" if len(items) == 1 else "s")]
@@ -440,15 +471,20 @@ def main():
     assert [s["id"] for s in sections] == order, "sections lost their order"
 
     ids = [x["id"] for s in sections for x in s["items"]]
-    assert len(ids) == len(set(ids)) == ADVERTISED, (len(ids), len(set(ids)))
+    assert len(ids) == len(set(ids)) == total, (len(ids), len(set(ids)))
     assert sorted(seen) == sorted(by_gid), "an entry was dropped between passes"
 
-    weighted = [x for s in sections for x in s["items"] if "w" in x]
+    weighted = [x for s in sections for x in s["items"] if x.get("w")]
+    notout = [x for s in sections for x in s["items"] if x.get("w") == 0]
+    assert len(notout) == len(ADDED), "a not-out-yet row lost its w: 0"
     total_h = sum(x["w"] for x in weighted)
-    unweighted = ADVERTISED - len(weighted)
+    unweighted = total - len(weighted) - len(notout)
     unpaired = sum(1 for s in sections for x in s["items"]
                    if "w" not in x and x["id"][3:] not in PAIRED)
     years = sorted(int(x["n"]) for s in sections for x in s["items"])
+    # The blurb and notes below name Dual Override as the one addition.
+    assert [a[2] for a in ADDED] == ["Mega Man: Dual Override"], \
+        "ADDED changed: reword the blurb and notes that name the addition"
 
     prop = {
         "slug": SLUG,
@@ -458,9 +494,10 @@ def main():
         "popularity": 63,
         "year": "%d–%d" % (years[0], years[-1]),
         "blurb": "%d games — every one with Mega Man on the box, from the 1987 "
-                 "NES original to the offline X Dive. %d carry a verified "
-                 "story length, about %d hours between them."
-                 % (ADVERTISED, len(weighted), round(total_h)),
+                 "NES original to the offline X Dive, with Dual Override still "
+                 "to come. %d carry a verified story length, about %d hours "
+                 "between them."
+                 % (total, len(weighted), round(total_h)),
         "unit": {"one": "game", "many": "games"},
         "verb": {"base": "play", "past": "played", "ing": "playing"},
         "itemOrder": "number-first",
@@ -474,24 +511,28 @@ def main():
              "game ever sorted by release date”. That is why the licensed "
              "Chinese PC releases and a decade of Japanese feature-phone toys "
              "are here: the compendium counts them, so this counts them. "
-             "Nothing has been added to it and nothing has been dropped."],
+             "Nothing has been dropped, and one game has been added: Mega "
+             "Man: Dual Override, the next Classic game, dated 2027."],
             ["The sections are not the source's.",
              "The compendium has none — it is one flat grid of %d, sorted by "
              "release date. The sections here read each title's own "
              "sub-series off its name, and the order inside every one of them "
              "is still the compendium's: release date, oldest first. Read a "
              "section top to bottom and you are reading that branch exactly "
-             "as the compendium has it." % ADVERTISED],
+             "as the compendium has it. Dual Override, the one addition, "
+             "comes last in Classic." % ADVERTISED],
             ["%d of the %d have no length, and none has been invented."
-             % (unweighted, ADVERTISED),
+             % (unweighted + len(notout), total),
              "Hours are HowLongToBeat main-story figures, and only where a "
              "record verifies by name and by release year. %d rows have no "
              "such record at all — the arcade cabinets, the Japanese "
              "feature-phone games, the licensed Chinese PC releases — and a "
              "plausible-looking guess for any of them would go straight into "
-             "your finish date. The other %d are the paired versions below. "
-             "Every unweighted row says which it is, and counts as an hour "
-             "apiece: a floor, not a claim." % (unpaired, unweighted - unpaired)],
+             "your finish date. %d more are the paired versions below. All "
+             "%d say which they are and count as an hour apiece: a floor, not "
+             "a claim. The last is Dual Override, which is not out yet and "
+             "weighs nothing until it is."
+             % (unpaired, unweighted - unpaired, unweighted)],
             ["Paired versions are separate rows, and deliberately unweighted.",
              "Battle Network 3 through 6 and all three Star Force games "
              "shipped in two or three versions apiece, and the compendium "
@@ -501,8 +542,9 @@ def main():
              "figure on both rows would bill you twice for a game you play "
              "once. Playing one of a pair is the normal thing to do; tick "
              "the one you played."],
-            ["What “release order” means for a 94-game list.",
-             "Everything is dated from its own Backloggd page. Where two "
+            ["What “release order” means for a %d-game list." % total,
+             "Everything is dated from its own Backloggd page except Dual "
+             "Override, which carries the year Capcom announced. Where two "
              "games share a year the compendium's order is kept as it stands "
              "— the source sorted them, not this file. Three of its entries "
              "are called nothing but Mega Man: the 1987 NES game, an "
@@ -511,7 +553,8 @@ def main():
              "brackets here so they can be told apart; that is the only place "
              "a title has been changed."],
             "Contents and order from “the mega man compendium” by ade on "
-            "Backloggd; years from each game's Backloggd page; story hours "
+            "Backloggd; years from each game's Backloggd page, Dual "
+            "Override's from Wikipedia; story hours "
             "from HowLongToBeat, verified by name and release year.",
         ],
         "sections": sections,
@@ -520,8 +563,9 @@ def main():
     P.write(prop)
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d games — %d weighted (%d hours), %d unweighted"
-          % (len(sections), len(ids), len(weighted), round(total_h), unweighted))
+    print("  %d sections, %d games — %d weighted (%d hours), %d unweighted, "
+          "%d not out yet" % (len(sections), len(ids), len(weighted),
+                              round(total_h), unweighted, len(notout)))
     for s in sections:
         print("   %-40s %3d  %s" % (s["title"][:40], len(s["items"]), s["sub"]))
 

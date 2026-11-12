@@ -4,8 +4,8 @@
   "subtitle": "the whole franchise, by sub-series, in release order",
   "kind": "games",
   "popularity": 63,
-  "year": "1987–2023",
-  "blurb": "94 games — every one with Mega Man on the box, from the 1987 NES original to the offline X Dive. 59 carry a verified story length, about 307 hours between them.",
+  "year": "1987–2027",
+  "blurb": "95 games — every one with Mega Man on the box, from the 1987 NES original to the offline X Dive, with Dual Override still to come. 59 carry a verified story length, about 307 hours between them.",
   "unit": {
     "one": "game",
     "many": "games"
@@ -22,31 +22,31 @@
   "notes": [
     [
       "One source, and it chose the scope.",
-      "This is “the mega man compendium” on Backloggd — one person's list, described by its own author as “every mega man game ever sorted by release date”. That is why the licensed Chinese PC releases and a decade of Japanese feature-phone toys are here: the compendium counts them, so this counts them. Nothing has been added to it and nothing has been dropped."
+      "This is “the mega man compendium” on Backloggd — one person's list, described by its own author as “every mega man game ever sorted by release date”. That is why the licensed Chinese PC releases and a decade of Japanese feature-phone toys are here: the compendium counts them, so this counts them. Nothing has been dropped, and one game has been added: Mega Man: Dual Override, the next Classic game, dated 2027."
     ],
     [
       "The sections are not the source's.",
-      "The compendium has none — it is one flat grid of 94, sorted by release date. The sections here read each title's own sub-series off its name, and the order inside every one of them is still the compendium's: release date, oldest first. Read a section top to bottom and you are reading that branch exactly as the compendium has it."
+      "The compendium has none — it is one flat grid of 94, sorted by release date. The sections here read each title's own sub-series off its name, and the order inside every one of them is still the compendium's: release date, oldest first. Read a section top to bottom and you are reading that branch exactly as the compendium has it. Dual Override, the one addition, comes last in Classic."
     ],
     [
-      "35 of the 94 have no length, and none has been invented.",
-      "Hours are HowLongToBeat main-story figures, and only where a record verifies by name and by release year. 20 rows have no such record at all — the arcade cabinets, the Japanese feature-phone games, the licensed Chinese PC releases — and a plausible-looking guess for any of them would go straight into your finish date. The other 15 are the paired versions below. Every unweighted row says which it is, and counts as an hour apiece: a floor, not a claim."
+      "36 of the 95 have no length, and none has been invented.",
+      "Hours are HowLongToBeat main-story figures, and only where a record verifies by name and by release year. 20 rows have no such record at all — the arcade cabinets, the Japanese feature-phone games, the licensed Chinese PC releases — and a plausible-looking guess for any of them would go straight into your finish date. 15 more are the paired versions below. All 35 say which they are and count as an hour apiece: a floor, not a claim. The last is Dual Override, which is not out yet and weighs nothing until it is."
     ],
     [
       "Paired versions are separate rows, and deliberately unweighted.",
       "Battle Network 3 through 6 and all three Star Force games shipped in two or three versions apiece, and the compendium lists every one. So does this. But HowLongToBeat times the numbered game rather than each version — there is one Battle Network 3 record, not a Blue and a White — and putting that figure on both rows would bill you twice for a game you play once. Playing one of a pair is the normal thing to do; tick the one you played."
     ],
     [
-      "What “release order” means for a 94-game list.",
-      "Everything is dated from its own Backloggd page. Where two games share a year the compendium's order is kept as it stands — the source sorted them, not this file. Three of its entries are called nothing but Mega Man: the 1987 NES game, an American-built DOS game from 1990, and a North American Game Gear release from 1995. The later two carry their platform in brackets here so they can be told apart; that is the only place a title has been changed."
+      "What “release order” means for a 95-game list.",
+      "Everything is dated from its own Backloggd page except Dual Override, which carries the year Capcom announced. Where two games share a year the compendium's order is kept as it stands — the source sorted them, not this file. Three of its entries are called nothing but Mega Man: the 1987 NES game, an American-built DOS game from 1990, and a North American Game Gear release from 1995. The later two carry their platform in brackets here so they can be told apart; that is the only place a title has been changed."
     ],
-    "Contents and order from “the mega man compendium” by ade on Backloggd; years from each game's Backloggd page; story hours from HowLongToBeat, verified by name and release year."
+    "Contents and order from “the mega man compendium” by ade on Backloggd; years from each game's Backloggd page, Dual Override's from Wikipedia; story hours from HowLongToBeat, verified by name and release year."
   ],
   "sections": [
     {
       "id": "classic",
       "title": "Classic",
-      "sub": "1987–2018 · 23 games · 70 hours story across 23",
+      "sub": "1987–2027 · 24 games · 70 hours story across 23",
       "intro": "The blue one, the numbered line, and everything that plays like it: the NES six, the five Game Boy entries, the 16-bit and 32-bit sequels, the two American-built DOS games, the remakes, and the eight-bit throwbacks that restarted the count in 2008.",
       "items": [
         {
@@ -209,6 +209,13 @@
           "n": "2018",
           "w": 4.87,
           "note": "The modern Classic entry: hand-drawn 2.5D art, and a gear system that will slow time or strengthen your shots at a price."
+        },
+        {
+          "id": "mm-dual-override",
+          "t": "Mega Man: Dual Override",
+          "n": "2027",
+          "w": 0,
+          "note": "Not out yet — dated 2027, and the bar stays empty until HowLongToBeat has hours for it. The twelfth main Classic game and the first since 11, with Proto Man playable alongside Mega Man."
         }
       ],
       "open": true
