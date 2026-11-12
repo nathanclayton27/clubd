@@ -616,6 +616,13 @@ def main():
     # because it was typed from the previous value rather than counted. A
     # sentence a human maintains against a number the build already knows is a
     # sentence that goes stale silently, so the build owns it now.
+    #
+    # CLU-29 / CLU-508. The number counts what the catalogue shows, not every
+    # file in properties/. A satellite (`"satellite": true` on the property) is
+    # unlisted: the site's own count — browseList() in the template — leaves it
+    # out, and so does the README's description of the flag. Counting files
+    # would make every close-up season page and rabbit hole bump the README
+    # past the number a visitor sees on the wall.
     rm = ROOT / "README.md"
     if rm.exists():
         txt = rm.read_text(encoding="utf-8")
@@ -624,11 +631,15 @@ def main():
             fail("README.md no longer opens with '<N> lists, from a ' — either "
                  "restore that sentence or update this check in build.py")
         claimed = int(m.group(1).replace(",", ""))
-        if claimed != len(props):
-            fail("README.md says %d lists; the catalogue holds %d. Fix the "
-                 "README — the number is not decoration, it is the first "
-                 "thing anyone reads." % (claimed, len(props)))
-        print("  README: %d lists, agrees with the catalogue" % len(props))
+        listed = sum(1 for p in props if not p.get("satellite"))
+        sats = len(props) - listed
+        if claimed != listed:
+            fail("README.md says %d lists; the catalogue holds %d (satellites "
+                 "not counted, %d of them). Fix the README — the number is not "
+                 "decoration, it is the first thing anyone reads."
+                 % (claimed, listed, sats))
+        print("  README: %d lists, agrees with the catalogue%s"
+              % (listed, " (%d satellite(s) not counted)" % sats if sats else ""))
 
 
     # Catalogue order. There is no "default property" — a first-time visitor
