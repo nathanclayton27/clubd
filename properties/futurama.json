@@ -5,7 +5,7 @@
   "kind": "tv & films",
   "popularity": 80,
   "year": "1999–",
-  "blurb": "168 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
+  "blurb": "169 rows across four eras — the Fox run, the four direct-to-video films, the Comedy Central revival and the Hulu revival, in the order they were made.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -22,7 +22,7 @@
   "notes": [
     [
       "The four films count once each.",
-      "Comedy Central re-cut the 2007–09 films into sixteen half-hour episodes and aired them as season 5. It is the same footage either way, so listing both would count the same watch twice. The films are the form the work was written and released in, and the source article gives the sixteen parts no titles of their own — so this list carries four film rows, each naming its runtime and the season 5 episodes it was broadcast as. That is 168 rows; the sixteen-part reading would be 180."
+      "Comedy Central re-cut the 2007–09 films into sixteen half-hour episodes and aired them as season 5. It is the same footage either way, so listing both would count the same watch twice. The films are the form the work was written and released in, and the source article gives the sixteen parts no titles of their own — so this list carries four film rows, each naming its runtime and the season 5 episodes it was broadcast as. That is 169 rows; the sixteen-part reading would be 181."
     ],
     [
       "Production order, not the order Fox aired it.",
@@ -34,9 +34,9 @@
     ],
     [
       "The specials are still to come.",
-      "Hulu has ordered three extended-length specials, the first due in 2027. Each joins the list when it airs."
+      "Hulu has ordered three extended-length specials, the first due in 2027. That one is listed already, marked not out yet; the other two join once they are dated."
     ],
-    "Titles and airdates machine-read from Wikipedia's List of Futurama episodes, the season articles and the four film articles; every season's count is asserted against the list article's own series overview, and the overall episode numbering asserted contiguous, before this builds."
+    "Titles and airdates machine-read from Wikipedia's List of Futurama episodes, the season articles and the four film articles, and the special's due date from the Futurama article; every season's count is asserted against the list article's own series overview, and the overall episode numbering asserted contiguous, before this builds."
   ],
   "sections": [
     {
@@ -962,6 +962,19 @@
           "id": "fut-s11e10",
           "t": "Final Ending: The Last Conclusion",
           "n": "10"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "title": "Season 12",
+      "sub": "2027 · 1 special · not out yet · Hulu",
+      "items": [
+        {
+          "id": "fut-xxxl-1",
+          "t": "Untitled Christmas special",
+          "n": "2027",
+          "note": "The first of three extended-length specials · Not out yet — due 2027"
         }
       ]
     }

@@ -5,7 +5,8 @@
 
 Four eras in the order they went out: the Fox run (production seasons 1-4),
 the four direct-to-video films, the Comedy Central revival (6-7) and the Hulu
-revival (8-11). 168 rows.
+revival (8-11, and season 12's first special, dated but not out yet).
+169 rows.
 
 THE FILMS COUNT ONCE. The four 2007-09 films were re-cut into sixteen
 half-hour episodes and broadcast as Comedy Central's "season 5"; the two are
@@ -21,8 +22,15 @@ carries FOUR film rows, not sixteen episode rows, because:
 
 Each film row names its runtime and the season 5 episodes it was broadcast
 as, so nothing about the other representation is hidden. Choosing the films
-puts the list at 168 rows; the sixteen-part reading would have made it 180,
-which is the number Wikipedia's series infobox carries.
+puts the 180 aired episodes Wikipedia's series infobox counts at 168 rows;
+the not-yet-aired special makes it 169 (181 on the sixteen-part reading).
+
+THE SPECIALS (CLU-603). Hulu ordered three extended-length "XXXL" specials as
+a twelfth production season. The first, Christmas-themed, is dated 2027 and
+so ships now as a not-out-yet row with NO weight — one `w` would turn this
+list weighted and break the sitcoms shelf. It has no title, airdate or
+episode number, so its id is pinned in SPECIALS below instead of built from
+anything the source will later change. The other two have no date yet.
 
 ORDER. Fox aired the first 72 episodes out of the order they were made, so a
 strict broadcast sort matches no box set, no streaming season and not the
@@ -36,11 +44,12 @@ weight with; every row counts one and no row carries `w`. Mixing a weighted
 film row into unweighted episodes would make each unweighted row silently
 count as an hour, which is the bug this avoids outright.
 
-Everything is machine-read from the cached Wikipedia wikitext in
-scratch/futurama/ — "List of Futurama episodes", the eleven season articles
-and the four film articles. Each season's row count is asserted against the
-list article's own {{Series overview}} before anything is written, and the
-overall episode numbers are asserted contiguous.
+Everything but the pinned special is machine-read from the cached Wikipedia
+wikitext in scratch/futurama/ — "List of Futurama episodes", the eleven season
+articles and the four film articles; the special's sentence is asserted
+against the cached "Futurama" article. Each season's row count is asserted
+against the list article's own {{Series overview}} before anything is
+written, and the overall episode numbers are asserted contiguous.
 """
 import pathlib
 import re
@@ -76,6 +85,19 @@ ERA = {
 ERA_OF = {1: "Fox", 2: "Fox", 3: "Fox", 4: "Fox",
           6: "Comedy Central", 7: "Comedy Central",
           8: "Hulu", 9: "Hulu", 10: "Hulu", 11: "Hulu"}
+
+# CLU-603. Dated, announced work that has not aired, with each id PINNED: the
+# special has no title, airdate or episode number yet, so nothing it arrives
+# with later may be allowed to rebuild its id. When the list article gains a
+# Season 12 table, main() stops; give that table's Christmas special this id
+# by hand, whatever number and title it carries, and only then build. `source`
+# is the sentence of the cached "Futurama" article (rev 1384229517) the row
+# rests on, asserted present so a changed date fails the build.
+SPECIALS = [
+    {"id": "fut-xxxl-1", "t": "Untitled Christmas special", "due": "2027",
+     "source": "The first of these new specials, set to have a Christmas "
+               "theme, will premiere in 2027."},
+]
 
 FILM_PAGES = ["Futurama: Bender's Big Score",
               "Futurama: The Beast with a Billion Backs",
@@ -181,6 +203,15 @@ def read_films():
 
 def main():
     list_text = text(LIST_PAGE)
+    # Checked before season 11 is read, because that parse takes everything
+    # below its heading and a season 12 table would land in it.
+    assert not re.search(r"===\s*Season 12\b", list_text), \
+        "the list article has a Season 12 table now: give its Christmas " \
+        "special the pinned id fut-xxxl-1 (SPECIALS, CLU-603) before building"
+    series_text = text("Futurama")
+    for sp in SPECIALS:
+        assert sp["source"] in series_text, \
+            "%s: the source no longer says %r" % (sp["id"], sp["source"])
     overview = series_overview(list_text)
     episodes = read_episodes(list_text)
     films = read_films()
@@ -259,16 +290,31 @@ def main():
     for n in (6, 7, 8, 9, 10, 11):
         sections.append(episode_section(n))
 
+    sections.append({
+        "id": "s12", "title": "Season 12",
+        "sub": prop.join_bits(
+            year_span([int(sp["due"]) for sp in SPECIALS]),
+            "%d special%s" % (len(SPECIALS), "" if len(SPECIALS) == 1 else "s"),
+            "not out yet", "Hulu"),
+        "items": [{
+            "id": sp["id"], "t": sp["t"], "n": sp["due"],
+            "note": prop.join_bits(
+                "The first of three extended-length specials",
+                "Not out yet — due %s" % sp["due"]),
+        } for sp in SPECIALS],
+    })
+
     sections[0]["open"] = True
 
     assert [s["id"] for s in sections] == [
-        "s1", "s2", "s3", "s4", "films", "s6", "s7", "s8", "s9", "s10", "s11"]
+        "s1", "s2", "s3", "s4", "films", "s6", "s7", "s8", "s9", "s10", "s11",
+        "s12"]
     total = sum(len(s["items"]) for s in sections)
-    assert total == 168, total
+    assert total == 169, total
     assert sum(1 for s in sections for x in s["items"] if "w" in x) == 0, \
         "a weight crept in — this list is unweighted end to end"
 
-    aired_11 = len(sections[-1]["items"])
+    aired_11 = len(next(s for s in sections if s["id"] == "s11")["items"])
     assert aired_11 == overview[11], "season 11 is part-aired again"
 
     p = {
@@ -278,9 +324,9 @@ def main():
         "kind": "tv & films",
         "popularity": 80,
         "year": "1999–",
-        "blurb": "168 rows across four eras — the Fox run, the four "
-                 "direct-to-video films, the Comedy Central revival and the "
-                 "Hulu revival, in the order they were made.",
+        "blurb": ("%d rows across four eras — the Fox run, the four "
+                  "direct-to-video films, the Comedy Central revival and the "
+                  "Hulu revival, in the order they were made." % total),
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -295,8 +341,8 @@ def main():
              "work was written and released in, and the source article gives "
              "the sixteen parts no titles of their own — so this list carries "
              "four film rows, each naming its runtime and the season 5 "
-             "episodes it was broadcast as. That is 168 rows; the sixteen-part "
-             "reading would be 180."],
+             "episodes it was broadcast as. That is %d rows; the sixteen-part "
+             "reading would be %d." % (total, total + 12)],
             ["Production order, not the order Fox aired it.", "Fox broadcast "
              "the first 72 episodes out of the order they were made, so no "
              "box set, streaming season or episode list matches a strict "
@@ -309,11 +355,13 @@ def main():
              "film rows are feature length and their notes say so rather than "
              "carrying a weight the rest of the list could not match."],
             ["The specials are still to come.", "Hulu has ordered three "
-             "extended-length specials, the first due in 2027. Each joins the "
-             "list when it airs."],
+             "extended-length specials, the first due in 2027. That one is "
+             "listed already, marked not out yet; the other two join once "
+             "they are dated."],
             "Titles and airdates machine-read from Wikipedia's List of "
             "Futurama episodes, the season articles and the four film "
-            "articles; every season's count is asserted against the list "
+            "articles, and the special's due date from the Futurama article; "
+            "every season's count is asserted against the list "
             "article's own series overview, and the overall episode numbering "
             "asserted contiguous, before this builds.",
         ],

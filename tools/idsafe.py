@@ -192,7 +192,8 @@ HAND_READ = {
                  "dropped at the CALL SITE, so no function this check can call "
                  "reproduces the id. Read 2026-09-11: that inline fold dropped "
                  "only the straight form and now drops both; prop.slug itself "
-                 "is safe, and every other id on the list is fut-sNeM."),
+                 "is safe, and every other id on the list is fut-sNeM, bar "
+                 "the hand-pinned literal fut-xxxl-1 (CLU-603)."),
     "jla-morrison": ("UNPROVEN", "row() takes the id as its first argument and "
                      "every one is a hand-typed literal — row(\"new-years-evil-"
                      "prometheus-1\", \"New Year's Evil: Prometheus\", …). "
