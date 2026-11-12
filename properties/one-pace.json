@@ -5,7 +5,7 @@
   "kind": "anime",
   "popularity": 33,
   "year": "fan recut",
-  "blurb": "474 episodes, 36 arcs, no filler and no padding.",
+  "blurb": "473 episodes, 36 arcs, no filler and no padding.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -26,7 +26,7 @@
     ],
     [
       "Numbering.",
-      "One Pace numbers each arc from 1 rather than running a continuous count, so the episode numbers here restart in every section, exactly as the releases do."
+      "One Pace numbers each arc from 1 rather than running a continuous count, so the episode numbers here restart in every section, exactly as the releases do. The 2-minute untitled 00 that opens Long Ring Long Land is not a row."
     ],
     [
       "Source.",
@@ -140,7 +140,7 @@
     {
       "id": "a-baratie",
       "title": "Baratie",
-      "sub": "chapters 42-68 · anime 19-30, 135 · 9 episodes",
+      "sub": "chapters 42-68 · anime 19-30, 135 · 8 episodes",
       "items": [
         {
           "id": "onepace-baratie-1",
@@ -185,7 +185,8 @@
         {
           "id": "onepace-baratie-9",
           "t": "Episode",
-          "n": "9"
+          "n": "9",
+          "note": "One Pace now lists Baratie as 8 episodes; this row, from an older count, stays for anyone who ticked it."
         }
       ]
     },

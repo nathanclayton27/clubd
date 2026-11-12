@@ -12,10 +12,11 @@ says rather than someone's summary of it.
 Per-arc episode COUNTS first came from a community mirror. Since the 2026-11-11
 refresh they come from the same official page, which now lists every released
 episode of every arc; the chapter and anime ranges were re-read from it then too.
-Two differences are held for Nathan rather than applied (CLU-625): the page
-lists 8 Baratie episodes where this list has shipped 9 (row 9 keeps its id
-until he rules), and Long Ring Long Land has a 2-minute "00" piece ahead of its
-episode 1 that is not a row here.
+Two differences were ruled on 2026-11-12 (CLU-625, Nathan delegated the call):
+the page lists 8 Baratie episodes where this list had shipped 9, so Baratie
+counts 8 and row 9 stays as a marked, uncounted row (KEPT below) because its id
+holds ticks; and Long Ring Long Land's 2-minute untitled "00" piece ahead of its
+episode 1 is not a row, which the Numbering note says.
 
 Each arc numbers its episodes from 1, as the releases do, so there is no
 continuous episode number to track.
@@ -36,9 +37,9 @@ ARCS = [
     ('Orange Town', '8-21', '4-8', 3),
     ('Syrup Village', '23-41', '9-17', 7),
     ('Gaimon', '42, 22', '18', 1),
-    # The page lists 8 Baratie episodes; 9 shipped and row 9 is somebody's tick.
-    # Held for Nathan (CLU-625), not removed.
-    ('Baratie', '42-68', '19-30, 135', 9),
+    # The page lists 8 Baratie episodes; row 9 shipped from an older count and
+    # stays in KEPT (CLU-625).
+    ('Baratie', '42-68', '19-30, 135', 8),
     ('Arlong Park', '69-95', '31-44', 10),
     ("The Adventures of Buggy's Crew", '35-75 cover stories', '46-47', 1),
     ('Loguetown', '96-100, Loguetown Arc (Novel)', '45, 48-53', 3),
@@ -74,6 +75,14 @@ ARCS = [
 
 MOVING = {"Wano", "Egghead"}
 
+# Rows shipped from an older count that the official page no longer lists.
+# Their ids are where users' ticks live, so they stay, with a note, after the
+# arc's real episodes, and the arc's count and the blurb leave them out.
+KEPT = {
+    "Baratie": [(9, "One Pace now lists Baratie as 8 episodes; this row, from "
+                    "an older count, stays for anyone who ticked it.")],
+}
+
 # Three arcs took their official names after ids had already shipped. Item ids
 # are what progress is stored against, so those keep the slug they were first
 # published with — the title on screen changes, the key underneath does not.
@@ -97,7 +106,9 @@ def slugify(name):
 
 def main():
     sections = []
+    episodes = 0
     for arc, chapters, anime, n in ARCS:
+        episodes += n
         sid = ID_ALIAS.get(arc, slugify(arc))
         bits = []
         if chapters: bits.append("chapters " + chapters)
@@ -111,11 +122,17 @@ def main():
             "items": [
                 {"id": "onepace-%s-%d" % (sid, i), "t": "Episode", "n": str(i)}
                 for i in range(1, n + 1)
+            ] + [
+                {"id": "onepace-%s-%d" % (sid, i), "t": "Episode", "n": str(i),
+                 "note": note}
+                for i, note in KEPT.get(arc, [])
             ],
         })
 
     ids = [x["id"] for s in sections for x in s["items"]]
     total = len(ids)
+    if total != episodes + sum(len(v) for v in KEPT.values()):
+        raise SystemExit("KEPT names an arc that is not in ARCS")
     if len(ids) != len(set(ids)):
         raise SystemExit("duplicate item ids")
     if len(sections) != 36:
@@ -128,7 +145,7 @@ def main():
         "kind": "anime",
         "popularity": 33,
         "year": "fan recut",
-        "blurb": "%d episodes, %d arcs, no filler and no padding." % (total, len(ARCS)),
+        "blurb": "%d episodes, %d arcs, no filler and no padding." % (episodes, len(ARCS)),
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -142,7 +159,8 @@ def main():
                               "third of the runtime."],
             ["Numbering.", "One Pace numbers each arc from 1 rather than running a "
                            "continuous count, so the episode numbers here restart in "
-                           "every section, exactly as the releases do."],
+                           "every section, exactly as the releases do. The 2-minute "
+                           "untitled 00 that opens Long Ring Long Land is not a row."],
             ["Source.", "Arc order, names, the manga chapters each covers and the "
                         "anime episodes each replaces are read from the official "
                         "watch page at onepace.net. Wano and Egghead are still being "
@@ -157,7 +175,7 @@ def main():
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
 
     print("wrote %s.json" % SLUG)
-    print("  %d arcs, %d episodes" % (len(sections), total))
+    print("  %d arcs, %d episodes, %d rows" % (len(sections), episodes, total))
     for s in sections[:3]:
         print("   %-20s %s" % (s["title"][:20], s["sub"]))
 
