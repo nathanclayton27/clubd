@@ -9,17 +9,21 @@ replaces come from the official watch page at https://onepace.net/en/watch —
 read out of the timeline data the page itself ships, so this is what One Pace
 says rather than someone's summary of it.
 
-The one thing that page does not publish is a per-arc episode COUNT. Those come
-from a community mirror, positionally matched against the official arc order,
-which agrees exactly at 36 arcs. Where a second source quoted a number it
-matched: Enies Lobby 25, Marineford 17, Dressrosa 48, Whole Cake 39.
+Per-arc episode COUNTS first came from a community mirror. Since the 2026-11-11
+refresh they come from the same official page, which now lists every released
+episode of every arc; the chapter and anime ranges were re-read from it then too.
+Two differences are held for Nathan rather than applied (CLU-625): the page
+lists 8 Baratie episodes where this list has shipped 9 (row 9 keeps its id
+until he rules), and Long Ring Long Land has a 2-minute "00" piece ahead of its
+episode 1 that is not a row here.
 
 Each arc numbers its episodes from 1, as the releases do, so there is no
 continuous episode number to track.
 
 Two "special" segments are left out — the One Piece Fan Letter tie-in and an
-April Fools release — since neither is part of the run. Egghead is still being
-released and its count will grow.
+April Fools release — since neither is part of the run. Wano and Egghead are
+both marked Work in Progress on the page (2026-11-11: Wano 63 and Egghead 23
+onward not released yet), so their counts will grow.
 """
 import json
 import pathlib
@@ -28,45 +32,47 @@ SLUG = "one-pace"
 
 
 ARCS = [
-    ('Romance Dawn', '1-7', '1-3, 19, 312, Episode of East Blue', 4),
+    ('Romance Dawn', '1-7', '1-3, 19, Episode of East Blue', 4),
     ('Orange Town', '8-21', '4-8', 3),
-    ('Syrup Village', '23-41', '9-18', 6),
-    ('Gaimon', '42,22', '18', 1),
-    ('Baratie', '42-68', '19-30', 9),
+    ('Syrup Village', '23-41', '9-17', 7),
+    ('Gaimon', '42, 22', '18', 1),
+    # The page lists 8 Baratie episodes; 9 shipped and row 9 is somebody's tick.
+    # Held for Nathan (CLU-625), not removed.
+    ('Baratie', '42-68', '19-30, 135', 9),
     ('Arlong Park', '69-95', '31-44', 10),
     ("The Adventures of Buggy's Crew", '35-75 cover stories', '46-47', 1),
-    ('Loguetown', '96-100', '45, 48-49, 51-53', 3),
+    ('Loguetown', '96-100, Loguetown Arc (Novel)', '45, 48-53', 3),
     ('Reverse Mountain', '101-105', '54-55, 61-63', 2),
     ('Whisky Peak', '106-114', '64-67', 2),
     ('The Trials of Koby-Meppo', '83-119 cover stories', '68-69', 1),
-    ('Little Garden', '115-129', '70-77', 5),
-    ('Drum Island', '130-154', '78-91', 8),
-    ('Alabasta', '155-217', '92-130', 21),
-    ('Jaya', '218-236', '144-152', 8),
-    ('Skypiea', '237-303', '153-195, 203, 207, 225', 16),
-    ('Long Ring Long Land', '304-321', '207-228', 6),
-    ('Water Seven', '322-374', '229-263', 20),
-    ('Enies Lobby', '375-430', '264-312', 25),
-    ('Post-Enies Lobby', '431-441', '313-325', 5),
-    ('Thriller Bark', '442-489', '337-381', 22),
+    ('Little Garden', '115-129', '70-79', 5),
+    ('Drum Island', '129-155', '78-91', 8),
+    ('Alabasta', '155-218', '92-98, 100-101, 103-130', 21),
+    ('Jaya', '218-236', '143-152', 8),
+    ('Skypiea', '237-303', '153-195, 203, 207', 25),
+    ('Long Ring Long Land', '303-321', '207-212, 215, 217-219, 225-228', 6),
+    ('Water Seven', '322-374', '228-263, 320', 20),
+    ('Enies Lobby', '375-430', '263-278, 284-302, 304-312', 25),
+    ('Post-Enies Lobby', '431-441', '313-325', 6),
+    ('Thriller Bark', '442-489', '326, 337-381', 22),
     ('Sabaody Archipelago', '490-513', '385-405', 11),
     ('Amazon Lily', '514-524', '408-421', 5),
-    ('Impel Down', '525-548', '422-452', 10),
+    ('Impel Down', '525-548', '422-425, 430-451, 454', 10),
     ('If You Could Go Anywhere... The Adventures of the Straw Hats', '543-560 cover stories', '453-456', 1),
-    ('Marineford', '549-580', '457-489', 17),
-    ('Post-War', '581-597', '490-516', 8),
+    ('Marineford', '549-580', '452, 459-465, 467-489', 17),
+    ('Post-War', '581-597', '490-491, 493-498, 500-505, 507-516, Episode of Sabo', 8),
     ('Return to Sabaody', '598-602', '517-522', 3),
-    ('Fishman Island', '603-653', '523-574', 24),
-    ('Punk Hazard', '654-699', '579-625', 22),
-    ('Dressrosa', '700-800', '629-746', 48),
-    ('Zou', '801-822', '746-747, 751-776', 10),
-    ('Whole Cake Island', '823-902', '777-877', 39),
+    ('Fishman Island', '603-653', '523-541, 543-573', 24),
+    ('Punk Hazard', '654-699', '574, 579-589, 591-626, 628', 22),
+    ('Dressrosa', '700-800', '628-745', 48),
+    ('Zou', '801-822', '746-747, 751-774, 776', 10),
+    ('Whole Cake Island', '823-902', '777-779, 783-877', 39),
     ('Reverie', '903-908', '878-889', 3),
-    ('Wano', '909-1057', '890-894, 897-1028, 1031-1083, 1085', 43),
-    ('Egghead', '1058-1125', '1086-', 13),
+    ('Wano', '909-1057', '890-894, 897-906, 908-1028, 1031-1083, 1085', 62),
+    ('Egghead', '1058-1126', '1086-1155', 22),
 ]
 
-MOVING = {"Egghead"}
+MOVING = {"Wano", "Egghead"}
 
 # Three arcs took their official names after ids had already shipped. Item ids
 # are what progress is stored against, so those keep the slug they were first
@@ -139,8 +145,8 @@ def main():
                            "every section, exactly as the releases do."],
             ["Source.", "Arc order, names, the manga chapters each covers and the "
                         "anime episodes each replaces are read from the official "
-                        "watch page at onepace.net. Egghead is still being released "
-                        "and its count will grow."],
+                        "watch page at onepace.net. Wano and Egghead are still being "
+                        "released and their counts will grow."],
         ],
         "sections": sections,
     }

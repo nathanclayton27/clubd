@@ -5,7 +5,7 @@
   "kind": "anime",
   "popularity": 33,
   "year": "fan recut",
-  "blurb": "435 episodes, 36 arcs, no filler and no padding.",
+  "blurb": "474 episodes, 36 arcs, no filler and no padding.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -30,14 +30,14 @@
     ],
     [
       "Source.",
-      "Arc order, names, the manga chapters each covers and the anime episodes each replaces are read from the official watch page at onepace.net. Egghead is still being released and its count will grow."
+      "Arc order, names, the manga chapters each covers and the anime episodes each replaces are read from the official watch page at onepace.net. Wano and Egghead are still being released and their counts will grow."
     ]
   ],
   "sections": [
     {
       "id": "a-romance-dawn",
       "title": "Romance Dawn",
-      "sub": "chapters 1-7 · anime 1-3, 19, 312, Episode of East Blue · 4 episodes",
+      "sub": "chapters 1-7 · anime 1-3, 19, Episode of East Blue · 4 episodes",
       "items": [
         {
           "id": "onepace-romance-dawn-1",
@@ -86,7 +86,7 @@
     {
       "id": "a-syrup-village",
       "title": "Syrup Village",
-      "sub": "chapters 23-41 · anime 9-18 · 6 episodes",
+      "sub": "chapters 23-41 · anime 9-17 · 7 episodes",
       "items": [
         {
           "id": "onepace-syrup-village-1",
@@ -117,13 +117,18 @@
           "id": "onepace-syrup-village-6",
           "t": "Episode",
           "n": "6"
+        },
+        {
+          "id": "onepace-syrup-village-7",
+          "t": "Episode",
+          "n": "7"
         }
       ]
     },
     {
       "id": "a-gaimon",
       "title": "Gaimon",
-      "sub": "chapters 42,22 · anime 18 · 1 episode",
+      "sub": "chapters 42, 22 · anime 18 · 1 episode",
       "items": [
         {
           "id": "onepace-gaimon-1",
@@ -135,7 +140,7 @@
     {
       "id": "a-baratie",
       "title": "Baratie",
-      "sub": "chapters 42-68 · anime 19-30 · 9 episodes",
+      "sub": "chapters 42-68 · anime 19-30, 135 · 9 episodes",
       "items": [
         {
           "id": "onepace-baratie-1",
@@ -256,7 +261,7 @@
     {
       "id": "a-loguetown",
       "title": "Loguetown",
-      "sub": "chapters 96-100 · anime 45, 48-49, 51-53 · 3 episodes",
+      "sub": "chapters 96-100, Loguetown Arc (Novel) · anime 45, 48-53 · 3 episodes",
       "items": [
         {
           "id": "onepace-loguetown-1",
@@ -324,7 +329,7 @@
     {
       "id": "a-little-garden",
       "title": "Little Garden",
-      "sub": "chapters 115-129 · anime 70-77 · 5 episodes",
+      "sub": "chapters 115-129 · anime 70-79 · 5 episodes",
       "items": [
         {
           "id": "onepace-little-garden-1",
@@ -356,7 +361,7 @@
     {
       "id": "a-drum-island",
       "title": "Drum Island",
-      "sub": "chapters 130-154 · anime 78-91 · 8 episodes",
+      "sub": "chapters 129-155 · anime 78-91 · 8 episodes",
       "items": [
         {
           "id": "onepace-drum-island-1",
@@ -403,7 +408,7 @@
     {
       "id": "a-arabasta",
       "title": "Alabasta",
-      "sub": "chapters 155-217 · anime 92-130 · 21 episodes",
+      "sub": "chapters 155-218 · anime 92-98, 100-101, 103-130 · 21 episodes",
       "items": [
         {
           "id": "onepace-arabasta-1",
@@ -515,7 +520,7 @@
     {
       "id": "a-jaya",
       "title": "Jaya",
-      "sub": "chapters 218-236 · anime 144-152 · 8 episodes",
+      "sub": "chapters 218-236 · anime 143-152 · 8 episodes",
       "items": [
         {
           "id": "onepace-jaya-1",
@@ -562,7 +567,7 @@
     {
       "id": "a-skypiea",
       "title": "Skypiea",
-      "sub": "chapters 237-303 · anime 153-195, 203, 207, 225 · 16 episodes",
+      "sub": "chapters 237-303 · anime 153-195, 203, 207 · 25 episodes",
       "items": [
         {
           "id": "onepace-skypiea-1",
@@ -643,13 +648,58 @@
           "id": "onepace-skypiea-16",
           "t": "Episode",
           "n": "16"
+        },
+        {
+          "id": "onepace-skypiea-17",
+          "t": "Episode",
+          "n": "17"
+        },
+        {
+          "id": "onepace-skypiea-18",
+          "t": "Episode",
+          "n": "18"
+        },
+        {
+          "id": "onepace-skypiea-19",
+          "t": "Episode",
+          "n": "19"
+        },
+        {
+          "id": "onepace-skypiea-20",
+          "t": "Episode",
+          "n": "20"
+        },
+        {
+          "id": "onepace-skypiea-21",
+          "t": "Episode",
+          "n": "21"
+        },
+        {
+          "id": "onepace-skypiea-22",
+          "t": "Episode",
+          "n": "22"
+        },
+        {
+          "id": "onepace-skypiea-23",
+          "t": "Episode",
+          "n": "23"
+        },
+        {
+          "id": "onepace-skypiea-24",
+          "t": "Episode",
+          "n": "24"
+        },
+        {
+          "id": "onepace-skypiea-25",
+          "t": "Episode",
+          "n": "25"
         }
       ]
     },
     {
       "id": "a-long-ring-long-land",
       "title": "Long Ring Long Land",
-      "sub": "chapters 304-321 · anime 207-228 · 6 episodes",
+      "sub": "chapters 303-321 · anime 207-212, 215, 217-219, 225-228 · 6 episodes",
       "items": [
         {
           "id": "onepace-long-ring-long-land-1",
@@ -686,7 +736,7 @@
     {
       "id": "a-water-seven",
       "title": "Water Seven",
-      "sub": "chapters 322-374 · anime 229-263 · 20 episodes",
+      "sub": "chapters 322-374 · anime 228-263, 320 · 20 episodes",
       "items": [
         {
           "id": "onepace-water-seven-1",
@@ -793,7 +843,7 @@
     {
       "id": "a-enies-lobby",
       "title": "Enies Lobby",
-      "sub": "chapters 375-430 · anime 264-312 · 25 episodes",
+      "sub": "chapters 375-430 · anime 263-278, 284-302, 304-312 · 25 episodes",
       "items": [
         {
           "id": "onepace-enies-lobby-1",
@@ -925,7 +975,7 @@
     {
       "id": "a-post-enies-lobby",
       "title": "Post-Enies Lobby",
-      "sub": "chapters 431-441 · anime 313-325 · 5 episodes",
+      "sub": "chapters 431-441 · anime 313-325 · 6 episodes",
       "items": [
         {
           "id": "onepace-post-enies-lobby-1",
@@ -951,13 +1001,18 @@
           "id": "onepace-post-enies-lobby-5",
           "t": "Episode",
           "n": "5"
+        },
+        {
+          "id": "onepace-post-enies-lobby-6",
+          "t": "Episode",
+          "n": "6"
         }
       ]
     },
     {
       "id": "a-thriller-bark",
       "title": "Thriller Bark",
-      "sub": "chapters 442-489 · anime 337-381 · 22 episodes",
+      "sub": "chapters 442-489 · anime 326, 337-381 · 22 episodes",
       "items": [
         {
           "id": "onepace-thriller-bark-1",
@@ -1168,7 +1223,7 @@
     {
       "id": "a-impel-down",
       "title": "Impel Down",
-      "sub": "chapters 525-548 · anime 422-452 · 10 episodes",
+      "sub": "chapters 525-548 · anime 422-425, 430-451, 454 · 10 episodes",
       "items": [
         {
           "id": "onepace-impel-down-1",
@@ -1237,7 +1292,7 @@
     {
       "id": "a-marineford",
       "title": "Marineford",
-      "sub": "chapters 549-580 · anime 457-489 · 17 episodes",
+      "sub": "chapters 549-580 · anime 452, 459-465, 467-489 · 17 episodes",
       "items": [
         {
           "id": "onepace-marineford-1",
@@ -1329,7 +1384,7 @@
     {
       "id": "a-post-war",
       "title": "Post-War",
-      "sub": "chapters 581-597 · anime 490-516 · 8 episodes",
+      "sub": "chapters 581-597 · anime 490-491, 493-498, 500-505, 507-516, Episode of Sabo · 8 episodes",
       "items": [
         {
           "id": "onepace-post-war-1",
@@ -1398,7 +1453,7 @@
     {
       "id": "a-fishman-island",
       "title": "Fishman Island",
-      "sub": "chapters 603-653 · anime 523-574 · 24 episodes",
+      "sub": "chapters 603-653 · anime 523-541, 543-573 · 24 episodes",
       "items": [
         {
           "id": "onepace-fishman-island-1",
@@ -1525,7 +1580,7 @@
     {
       "id": "a-punk-hazard",
       "title": "Punk Hazard",
-      "sub": "chapters 654-699 · anime 579-625 · 22 episodes",
+      "sub": "chapters 654-699 · anime 574, 579-589, 591-626, 628 · 22 episodes",
       "items": [
         {
           "id": "onepace-punk-hazard-1",
@@ -1642,7 +1697,7 @@
     {
       "id": "a-dressrosa",
       "title": "Dressrosa",
-      "sub": "chapters 700-800 · anime 629-746 · 48 episodes",
+      "sub": "chapters 700-800 · anime 628-745 · 48 episodes",
       "items": [
         {
           "id": "onepace-dressrosa-1",
@@ -1889,7 +1944,7 @@
     {
       "id": "a-zou",
       "title": "Zou",
-      "sub": "chapters 801-822 · anime 746-747, 751-776 · 10 episodes",
+      "sub": "chapters 801-822 · anime 746-747, 751-774, 776 · 10 episodes",
       "items": [
         {
           "id": "onepace-zou-1",
@@ -1946,7 +2001,7 @@
     {
       "id": "a-whole-cake-island",
       "title": "Whole Cake Island",
-      "sub": "chapters 823-902 · anime 777-877 · 39 episodes",
+      "sub": "chapters 823-902 · anime 777-779, 783-877 · 39 episodes",
       "items": [
         {
           "id": "onepace-whole-cake-island-1",
@@ -2170,7 +2225,7 @@
     {
       "id": "a-wano",
       "title": "Wano",
-      "sub": "chapters 909-1057 · anime 890-894, 897-1028, 1031-1083, 1085 · 43 episodes",
+      "sub": "chapters 909-1057 · anime 890-894, 897-906, 908-1028, 1031-1083, 1085 · 62 episodes · still releasing",
       "items": [
         {
           "id": "onepace-wano-1",
@@ -2386,13 +2441,108 @@
           "id": "onepace-wano-43",
           "t": "Episode",
           "n": "43"
+        },
+        {
+          "id": "onepace-wano-44",
+          "t": "Episode",
+          "n": "44"
+        },
+        {
+          "id": "onepace-wano-45",
+          "t": "Episode",
+          "n": "45"
+        },
+        {
+          "id": "onepace-wano-46",
+          "t": "Episode",
+          "n": "46"
+        },
+        {
+          "id": "onepace-wano-47",
+          "t": "Episode",
+          "n": "47"
+        },
+        {
+          "id": "onepace-wano-48",
+          "t": "Episode",
+          "n": "48"
+        },
+        {
+          "id": "onepace-wano-49",
+          "t": "Episode",
+          "n": "49"
+        },
+        {
+          "id": "onepace-wano-50",
+          "t": "Episode",
+          "n": "50"
+        },
+        {
+          "id": "onepace-wano-51",
+          "t": "Episode",
+          "n": "51"
+        },
+        {
+          "id": "onepace-wano-52",
+          "t": "Episode",
+          "n": "52"
+        },
+        {
+          "id": "onepace-wano-53",
+          "t": "Episode",
+          "n": "53"
+        },
+        {
+          "id": "onepace-wano-54",
+          "t": "Episode",
+          "n": "54"
+        },
+        {
+          "id": "onepace-wano-55",
+          "t": "Episode",
+          "n": "55"
+        },
+        {
+          "id": "onepace-wano-56",
+          "t": "Episode",
+          "n": "56"
+        },
+        {
+          "id": "onepace-wano-57",
+          "t": "Episode",
+          "n": "57"
+        },
+        {
+          "id": "onepace-wano-58",
+          "t": "Episode",
+          "n": "58"
+        },
+        {
+          "id": "onepace-wano-59",
+          "t": "Episode",
+          "n": "59"
+        },
+        {
+          "id": "onepace-wano-60",
+          "t": "Episode",
+          "n": "60"
+        },
+        {
+          "id": "onepace-wano-61",
+          "t": "Episode",
+          "n": "61"
+        },
+        {
+          "id": "onepace-wano-62",
+          "t": "Episode",
+          "n": "62"
         }
       ]
     },
     {
       "id": "a-egghead",
       "title": "Egghead",
-      "sub": "chapters 1058-1125 · anime 1086- · 13 episodes · still releasing",
+      "sub": "chapters 1058-1126 · anime 1086-1155 · 22 episodes · still releasing",
       "items": [
         {
           "id": "onepace-egghead-1",
@@ -2458,6 +2608,51 @@
           "id": "onepace-egghead-13",
           "t": "Episode",
           "n": "13"
+        },
+        {
+          "id": "onepace-egghead-14",
+          "t": "Episode",
+          "n": "14"
+        },
+        {
+          "id": "onepace-egghead-15",
+          "t": "Episode",
+          "n": "15"
+        },
+        {
+          "id": "onepace-egghead-16",
+          "t": "Episode",
+          "n": "16"
+        },
+        {
+          "id": "onepace-egghead-17",
+          "t": "Episode",
+          "n": "17"
+        },
+        {
+          "id": "onepace-egghead-18",
+          "t": "Episode",
+          "n": "18"
+        },
+        {
+          "id": "onepace-egghead-19",
+          "t": "Episode",
+          "n": "19"
+        },
+        {
+          "id": "onepace-egghead-20",
+          "t": "Episode",
+          "n": "20"
+        },
+        {
+          "id": "onepace-egghead-21",
+          "t": "Episode",
+          "n": "21"
+        },
+        {
+          "id": "onepace-egghead-22",
+          "t": "Episode",
+          "n": "22"
         }
       ]
     }
