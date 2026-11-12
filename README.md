@@ -11,107 +11,118 @@ glance who's ahead and who's fallen behind.
 
 ## What's in it
 
-239 lists, from a ten-episode anime to a 1,418-row film collection, a
-
-
-
-
-
+239 lists, from a ten-episode anime to a 1,425-row film collection, a
 1,035-entry comics run, and 659 episodes of Dragon Ball.
 
-**Comics.** *X-Men* (both flagship lineages complete, 1963 to the Age of
-Revelation), *Amazing Spider-Man* (Amazing Fantasy #15 to Civil War), *Civil
-War* (the 2006 event interleaved), *Crisis on Infinite Earths* (the 1985
-DC event, with the crossover tiered so the readable path and the complete
-one are the same list), *Spider-Man After Civil War*, *Ultimate
-War* (the 2006 event interleaved), *Spider-Man After Civil War*, *The Death
-and Return of Superman* (48 issues of the 1992–93 crossover in the order
-they were published to be read, with both of its ragged edges labelled), *Ultimate
-
-Marvel* (the whole line, 693 issues), *Everything Dies: Secret Wars*
-(Hickman's Marvel run), *Thor* (sixty years in publication
+**Comics.** Two hubs hold most of them, each row a door into a reading order
+of its own that ticks along with it: *Marvel Comics* (thirteen orders) and
+*DC Comics* (eight). The Marvel character spines are *X-Men* (both flagship
+lineages complete, 1963 to the Age of Revelation), *Amazing Spider-Man*
+(Amazing Fantasy #15 to Civil War), *Fantastic Four* (#1 to #569, stopping
+one issue short of Hickman so the two lists meet without overlapping a single
+row), *Captain America* (611 issues from the 1941 original to the last page
+Ed Brubaker wrote, one section per run), *Thor* (sixty years in publication
 order, 730 issues — the tiers put the readable path 254 issues in, at
-Simonson, because the peak is not the beginning), *Venom* (Cates and
-Stegman), *One Piece* in
-(Hickman's Marvel run), *Daredevil* (the five runs that make the modern
-character — Miller, Bendis, Brubaker, Waid, Zdarsky — with the lead-ins that
-explain how each one starts), *Venom* (Cates and Stegman), *One Piece* in
-(Hickman's Marvel run), *Captain America* (611 issues from the 1941
-original to the last page Ed Brubaker wrote, one section per run),
-*Venom* (Cates and Stegman), *One Piece* in
-(Hickman's Marvel run), *Fantastic Four* (#1 to #569, stopping one issue
-short of Hickman so the two lists meet without overlapping a single row),
-*Venom* (Cates and Stegman), *One Piece* in
-(Hickman's Marvel run), *Venom* (Cates and Stegman), *JLA* (Morrison's
-run — the 34 issues he actually wrote, with the fill-ins by other hands
-left out rather than padded in to look complete), *One Piece* in
+Simonson, because the peak is not the beginning), *Black Panther* (350
+issues — both McGregor arcs inside *Jungle Action*, Priest, Hudlin, Coates,
+Ridley and Ewing, with the Fantastic Four issues left on the Fantastic Four
+list rather than duplicated), *Wolverine* (the solo spine — the
+Claremont/Miller miniseries, Weapon X, Larry Hama's seven years, Old Man
+Logan, Aaron and the book since, with his X-Men issues left on the X-Men
+list) and *Daredevil* (the five runs that make the modern character —
+Miller, Bendis, Brubaker, Waid, Zdarsky — with the lead-ins that explain how
+each one starts). Marvel's runs and events are *Civil War* (the 2006 event
+interleaved), *Spider-Man After Civil War* (Back in Black to now),
+*Everything Dies: Secret Wars* (Hickman's Marvel run) and *Venom* (Cates and
+Stegman), with *Ultimate Marvel* (the whole line, 693 issues) beside them.
+On the DC side: *Batman* and *Superman*, each the house's route through the
+character rather than a publication history (225 issues in twelve runs from
+*The Dark Knight Returns* to the end of Tom King's; 195 issues in fifteen
+runs from the 1986 reboot on), *JLA* (Morrison's run — the 34 issues he
+actually wrote, with the fill-ins by other hands left out rather than padded
+in to look complete), *Green Lantern* (Geoff Johns from *Rebirth* to
+*Blackest Night*, where the Corps book and the crossover tie-ins are tiered
+instead of dropped, so the readable path and the complete one are the same
+list), *Crisis on Infinite Earths* (the 1985 event, its crossover tiered the
+same way), *The Death and Return of Superman* (48 issues of the 1992–93
+crossover in the order they were published to be read, with both of its
+ragged edges labelled), *The Sandman* issue by issue through its ten
+volumes, Death and Overture included, and the *Vertigo shelf* (Preacher,
+Transmetropolitan and Y: The Last Man, one row per collected volume).
+Neither hub holds *Spawn* — 891 issues across 192 arcs and a final section
+of what the source has yet to place, following a curated reading order
+rather than publication date — or the *Hellboy / Mignolaverse* trunk, with
+the spoke series as optional rows.
 
-manga form, *JoJo's Bizarre Adventure* (993 chapters across nine parts, with
+**Manga.** *One Piece* (1,198 chapters across 115 volumes, still running),
+*Naruto* (all 700 chapters across 72 volumes, finished), *Dragon Ball* (the
+original 519 chapters, then *Dragon Ball Super* — 104 so far, on indefinite
+hiatus), *JoJo's Bizarre Adventure* (993 chapters across nine parts, with
 the volume numbering that restarts at each part explained rather than
-flattened), *Black Panther* (350 issues — both McGregor arcs inside *Jungle
-Action*, Priest, Hudlin, Coates, Ridley and Ewing, with the Fantastic Four
-issues left on the Fantastic Four list rather than duplicated),
-*Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
-twelve chapters the source numbers from minus 108, arcs taken from the
-chapter lists' own cited prose), *Spawn* — 891 issues across 192 arcs and a final section of what the
-source has yet to place, following a curated reading order rather than publication date — and *Green Lantern*, Geoff Johns
-from *Rebirth* to *Blackest Night*, where the Corps book and the crossover
-tie-ins are tiered instead of dropped, so the readable path and the complete
-one are the same list.
+flattened), *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows
+including the twelve chapters the source numbers from minus 108, arcs taken
+from the chapter lists' own cited prose), *Berserk* by volume and arc, and a
+*Junji Ito* reading list, every year machine-verified down to the Japanese
+sources.
 
 **Franchises.** *Star Wars* (films and television, with the games on their
-own page), *Metal Gear* (story-only hours, tiers, and a recap link for the
-MSX games), *Gundam* by continuity, *Godzilla* down to the Fest shorts,
-*Twin Peaks* with the books woven in, *The X-Files*, *Farscape* (four seasons plus The Peacekeeper Wars, which is where the story actually ends), *Babylon 5* whole — 110 episodes and eight television films, each film placed by its airdate rather than bolted on at the end — *The Sopranos*, *The
-Wire* and the whole *Breaking Bad* universe episode by episode, *The
-Twilight Zone* (1959, picker-ready), the Simpsons golden age, *Lost*, *Mad
-Men*, *Deadwood* (movie included), *Buffy and Angel* woven into one
-air-order list with the crossover nights marked, *Doctor Who* whole —
-355 rows from the 1963 serials (the missing ones marked) through the
-current run — *M\*A\*S\*H*, *Seinfeld*, *Frasier* (the original run),
-*Gossip Girl* (the original series), *Gilmore Girls* (with A Year in the
-Life as its own section), *The Golden Girls* (the seven hour-long
-broadcasts and four two-parters honestly marked),
-*Nathan Fielder* (the three shows he created — Nathan for You, The
-Rehearsal and The Curse — 54 episodes, plus his first feature, the documentary
-You Can See Everything), *Jackass* (the MTV run plus every
-Jackass-branded release, the .5 cuts marked as companion releases rather than
-sequels),
-*MST3K* down to the KTMA year, *Columbo*
-with real per-movie runtimes, *The Matrix* (the films and the games that are still playable, in story
-order rather than films-then-games), *James Bond* by actor, *Mission: Impossible*
-(the eight released films, ticks shared with the Tom Cruise
-list), the *slasher franchises* (Halloween, Friday the 13th and Elm Street in
-US release order, with the five mutually exclusive Halloween continuities
+own page), *Gundam* by continuity, *Godzilla* down to the Fest shorts, *Twin
+Peaks* with the books woven in, *The X-Files*, *Farscape* (four seasons plus
+The Peacekeeper Wars, which is where the story actually ends), *Babylon 5*
+whole — 110 episodes and eight television films, each film placed by its
+airdate rather than bolted on at the end — *The Sopranos*, *The Wire* and
+the whole *Breaking Bad* universe episode by episode, *The Twilight Zone*
+(1959, picker-ready), the Simpsons golden age, *Lost*, *Mad Men*, *Deadwood*
+(movie included), *Buffy and Angel* woven into one air-order list with the
+crossover nights marked, *Doctor Who* whole — 355 rows from the 1963 serials
+(the missing ones marked) through the current run — *M\*A\*S\*H*,
+*Seinfeld*, *Frasier* (the original run), *Gossip Girl* (the original
+series), *Gilmore Girls* (with A Year in the Life as its own section), *The
+Golden Girls* (the seven hour-long broadcasts and four two-parters honestly
+marked), *Nathan Fielder* (the three shows he created — Nathan for You, The
+Rehearsal and The Curse — 54 episodes, plus his first feature, the
+documentary You Can See Everything), *Jackass* (the MTV run plus every
+Jackass-branded release, the .5 cuts marked as companion releases rather
+than sequels), *MST3K* down to the KTMA year, *Columbo* with real per-movie
+runtimes, *The Matrix* (the films and the games that are still playable, in
+story order rather than films-then-games), *James Bond* by actor, *Mission:
+Impossible* (the eight released films, ticks shared with the Tom Cruise
+list), the *slasher franchises* (Halloween, Friday the 13th and Elm Street
+in US release order, with the five mutually exclusive Halloween continuities
 explained rather than imposed, and *Freddy vs. Jason* as one row in both),
-*Scream* (seven films, one unbroken timeline) and *Child's Play* (the
-eight films plus the Chucky series, which the source says continues the
-original line's story),
-*Alien & Predator* on
-one timeline, *JoJo's* and *Dragon Ball* (anime and manga as separate
-pages), and *Time Loops* — the group's own Groundhog Day collection, grown
-to 204 entries via Wikipedia's time-loop film list and two Reddit
-compilations, every episode verified against the episode tables.
+*Scream* (seven films, one unbroken timeline), *Child's Play* (the eight
+films plus the Chucky series, which the source says continues the original
+line's story), *Tremors* (one cinema release, six direct-to-video sequels
+and a thirteen-episode series), *Alien & Predator* on one timeline, *Street
+Fighter* (twenty games and six films in release order, every arcade version
+the source counts as its own), *Nasuverse* (Fate, Tsukihime, Melty Blood and
+the rest, organised by medium), and *Time Loops* — the group's own Groundhog
+Day collection, grown to 204 entries via Wikipedia's time-loop film list and
+two Reddit compilations, every episode verified against the episode tables.
 
-**Four finite British sitcoms**, one list each rather than one sectioned
-list, because they share a nationality and nothing else — no cast, no
-continuity, no order. *Peep Show* (54 episodes, nine series, finished),
-*The Thick of It* (23, the two hour-long 2007 specials included because the
-source counts them and sitting where they aired), *Blackadder* (24 episodes
-and the four specials, ordered by the airdate the source gives each one, so
-the 1982 pilot is last on its 2023 first broadcast) and *Fawlty Towers*
-(twelve, three and a half years between the two series, and the rearranged
-hotel sign on every row that has one). None of them is weighted: not one of
-the four publishes a runtime per episode.
+**Sitcoms** is a hub of fifteen, each still its own list: five American
+network runs, six animated ones, and four finite British sitcoms that share
+a nationality and nothing else — no cast, no continuity, no order. *Peep
+Show* (54 episodes, nine series, finished), *The Thick of It* (23, the two
+hour-long 2007 specials included because the source counts them and sitting
+where they aired), *Blackadder* (24 episodes and the four specials, ordered
+by the airdate the source gives each one, so the 1982 pilot is last on its
+2023 first broadcast) and *Fawlty Towers* (twelve, three and a half years
+between the two series, and the rearranged hotel sign on every row that has
+one). None of the four is weighted: not one of them publishes a runtime per
+episode.
 
-**Directors and actors.** Kubrick, Spielberg, Kurosawa, Hitchcock, Scorsese,
-Tarantino, the Coens, Fincher, Carpenter, Coppola, Satoshi Kon, Raimi, Lynch,
-Nolan, both Andersons, Ridley Scott, *the Wachowskis* (eleven films, each row
-saying whether they wrote it, directed it or both), *Kevin Bacon* (seventy-two
-films across five decades) — and *Matt Johnson* — everything he
-has directed, from the eleven web episodes of *Nirvana the Band the Show*
-through *BlackBerry* to the Bourdain biopic, with the Viceland remake and
-a children's cartoon in between.
+**Lists that pass a stated gate rather than a verdict.** *Cult Classics* is the
+clearest example: "cult classic" is an opinion, so the list does not offer one.
+A film is a row only if at least three of the twenty-three published reference
+works that Wikipedia's *List of cult films* cites name it as a cult film, every
+row prints its own count, and the page names all twenty-three books and says
+plainly what the rule excludes — nothing after 2008 survives it, because the
+sources are books. *Body Horror* is built the same way, on three or more of
+eleven named best-of lists, with the panel's own weaknesses stated on the
+page, including the eleven-film run from 1977 to 1989 and then nothing until
+2006; so is *The FPS Canon*, on three or more of twenty published best-of
+lists.
 
 **Korean cinema** takes the same approach with a spine worth naming: the
 **Korean Film Archive's own selection of 100 Korean Films**, a national
@@ -139,66 +150,56 @@ prize in 1983 — so a gate made of canon and awards alone would have excluded
 written histories sit on the panel for exactly that reason, and the page says
 they are tertiary sources.
 
-**The martial artists.** *Bruce Lee* (the five leading roles, and the twenty
-films he made as a child actor in Hong Kong, which the source keeps in the same
-table), *Jackie Chan* (155 films, the roster drawn from the filmography's own
-"credited as actor" column so bit parts stay and stunt-only credits do not),
-*Jet Li* (in four of the six *Once Upon a Time in China* films, and the page
-says which two he is not in), *Donnie Yen*, and *Jean-Claude Van Damme*, whose
-rows say whether a film played in cinemas or went straight to video. They pair
-with each other across 22 sync groups — including one, *The Twins Effect* and
-*Vampire Effect*, that is the same film under two names and could only ever
-have been matched by its Wikidata id.
+**The martial artists.** *Bruce Lee* (the five leading roles, and the
+twenty-four films from his years as a child actor, which the source keeps in
+the same table), *Jackie Chan* (155 films, the roster drawn from the
+filmography's own "credited as actor" column so bit parts stay and
+stunt-only credits do not), *Jet Li* (in four of the six *Once Upon a Time
+in China* films, and the page says which two he is not in), *Donnie Yen*,
+and *Jean-Claude Van Damme*, whose rows say whether a film played in cinemas
+or went straight to video. They pair with each other in 14 sync groups —
+including one, *The Twins Effect* and *Vampire Effect*, that is the same
+film under two names and could only ever have been matched by its Wikidata
+id.
 
-**Lists that pass a stated gate rather than a verdict.** *Cult Classics* is the
-clearest example: "cult classic" is an opinion, so the list does not offer one.
-A film is a row only if at least three of the twenty-three published reference
-works that Wikipedia's *List of cult films* cites name it as a cult film, every
-row prints its own count, and the page names all twenty-three books and says
-plainly what the rule excludes — nothing after 2008 survives it, because the
-sources are books. *Body Horror* and *FPS Canon* are built the same way.
-
-**Games with story-only hours.** *Kingdom Hearts*, *Metal Gear*, *Zelda*,
-*Yakuza / Like a Dragon*, the *FromSoftware* Souls line, *Final Fantasy*,
-*Resident Evil*, mainline *Mario* and *Metroid*, *Castlevania* (with style
-chips), *Half-Life & Portal*, *Silent Hill*, *Halo*, *Gears of War* (63 hours of
-numbered campaign, the spin-offs optional beside it), the whole *Ace
-Attorney* docket, *Fallout* and *The Elder Scrolls* with their story DLC as
-optional rows, *Persona* (the whole franchise, 927 hours, stated plainly), *Dragon Quest*,
-*Mass Effect*, *Dragon Age*, *Mega Man* (95 games across eight sub-series),
-*Grand Theft Auto* (212 hours across the 2D, 3D and HD universes, the
+**Games with story-only hours.** *Kingdom Hearts*, *Metal Gear* (tiers, and
+a recap link for the MSX games), *Zelda*, *Yakuza / Like a Dragon*, the
+*FromSoftware* Souls line, *Final Fantasy*, *Resident Evil*, mainline
+*Mario* and *Metroid*, *Castlevania* (with style chips), *Half-Life &
+Portal*, *Silent Hill*, *Halo*, *Gears of War* (63 hours of numbered
+campaign, the spin-offs optional beside it), the whole *Ace Attorney*
+docket, *Fallout* and *The Elder Scrolls* with their story DLC as optional
+rows, *Persona* (the whole franchise, 927 hours, stated plainly), *Dragon
+Quest*, *Mass Effect*, *Dragon Age*, *Mega Man* (95 games, by sub-series),
+*Grand Theft Auto* (213 hours across the 2D, 3D and HD universes, the
 handhelds and expansions optional), *Pokémon* (the mainline by generation,
 paired versions as one row, third versions and remakes optional only where
-they add more than three hours over the game they retell),
-*Suda51* (33 games, the credit rule stated on the page because
-"everything Grasshopper made" and "only what he directed" are both wrong),
-the *James Bond* games on their own page apart from the films, an
-*FPS canon* gated on three or more published best-of lists, a
-house-picked indie essentials shelf, and 23 *immersive sims* — a house canon
-of the genre nobody can define, where a game ships only if Wikipedia's genre
-category holds it and some source calls it one outright, which is how Alien:
-Isolation ends up off the list and Dark Messiah of Might and Magic on it —
-all weighted by HowLongToBeat main-story figures, verified by name.
+they add more than three hours over the game they retell), *Suda51* (33
+games, the credit rule stated on the page because "everything Grasshopper
+made" and "only what he directed" are both wrong), the *James Bond* games on
+their own page apart from the films, a house-picked indie essentials shelf,
+and 23 *immersive sims* — a house canon of the genre nobody can define,
+where a game ships only if Wikipedia's genre category holds it and some
+source calls it one outright, which is how Alien: Isolation ends up off the
+list and Dark Messiah of Might and Magic on it — all weighted by
+HowLongToBeat main-story figures, verified by name.
 
 **Books.** *Discworld* with the famous reading-order diagram rebuilt as
 storyline chips, the *Dune* saga (Herbert's six core, the continuations
 optional, the screen adaptations weighted), *The Wheel of Time*, Sanderson's
 *Cosmere* in publication order, the complete *Sherlock Holmes* canon (60
 adventures), *Agatha Christie* (all 74 novels split into Poirot, Marple and
-everything else, the short-story collections optional), the *D&D novels* (Dragonlance and the Legend of Drizzt, gated on Wikipedia's own history of the fiction rather than on taste), *the Foundation
-universe* (Asimov's Foundation, Robot and Empire novels in the order he
-published them, with the chronological order as a note rather than a
-second list), *the Culture series* (Banks's ten books in publication order,
-with the one year Wikipedia's *Culture series* article contradicts itself
-about settled on the page), and *Middle-earth* — books plus Jackson's six
-films. *The Expanse* weaves the nine novels and the six television seasons into
-one date order, a book on the day it was published and a season on the day it
-started, with the nine short works optional alongside. Comics:
-*The Sandman* issue by issue through its ten volumes, Death and Overture
-included, the *Vertigo shelf* (Preacher, Transmetropolitan and Y: The Last
-Man, one row per collected volume), *Batman* as 35 finite stories gated on
-Wikipedia's own publication history, and the *Hellboy / Mignolaverse* trunk
-with the spoke series as optional rows.
+everything else, the short-story collections optional), *Stephen King*,
+novel by novel, the *D&D novels* (Dragonlance and the Legend of Drizzt,
+gated on Wikipedia's own history of the fiction rather than on taste), *the
+Foundation universe* (Asimov's Foundation, Robot and Empire novels in the
+order he published them, with the chronological order as a note rather than
+a second list), *the Culture series* (Banks's ten books in publication
+order, with the one year Wikipedia's *Culture series* article contradicts
+itself about settled on the page), and *Middle-earth* — books plus Jackson's
+six films. *The Expanse* weaves the nine novels and the six television
+seasons into one date order, a book on the day it was published and a season
+on the day it started, with the nine short works optional alongside.
 
 **Directors** is a hub rather than a list: fifteen filmographies as fifteen
 rows, each one a door into that director's own page. Marking a row there
@@ -216,86 +217,105 @@ the documentaries optional), *Quentin Tarantino*, *the Coen brothers*
 (solo work sectioned and credited), *David Fincher*, *John Carpenter*,
 *Nicolas Cage* (118 films, all eras), *Francis Ford Coppola* (23 features
 from Dementia 13 to Megalopolis, Apocalypse Now weighed at its premiere
-cut), *Satoshi Kon* (films plus Paranoia
-Agent), *Sam Raimi* (the films plus all thirty episodes of Ash vs Evil
-Dead, with every episode naming the director who actually made it),
-*Christopher Nolan*, *Wes Anderson*, *Paul Thomas Anderson*,
-*David Cronenberg* (23 features sectioned by the career headings his own
-article uses), *Clint Eastwood* (69 films, directing and acting on one
-row each so a tick never means half a thing), *John Wayne* (173 films, the
-Poverty Row years and the uncredited bit parts included, four lost films
-marked as such), *William Wyler* (46 films — the 21 Mustang two-reelers
-excluded on the filmography's own footnote, not on taste), *Howard Hawks*
-(37, each row's note naming the genre so a filmography that changes register
-every film reads as one), *Terry Gilliam* (13 features from Holy Grail to Don
-Quixote, with Brazil measured at the 142-minute final cut the row tells
-you to watch), *Denis Villeneuve* (the eleven released features, the two
-Dunes ticking with the Dune list),
-*Ridley Scott* (fifty years, one row per film with the alternate cuts
-named rather than double-counted),
-*A24* front to back, and *Studio Ghibli* with Miyazaki as the
-spine. Plus *Stephen King*, novel by novel.
+cut), *Satoshi Kon* (films plus Paranoia Agent), *Sam Raimi* (the films plus
+all thirty episodes of Ash vs Evil Dead, with every episode naming the
+director who actually made it), *Christopher Nolan*, *Wes Anderson*, *Paul
+Thomas Anderson*, *David Cronenberg* (23 features sectioned by the career
+headings his own article uses), *Clint Eastwood* (69 films, directing and
+acting on one row each so a tick never means half a thing), *John Wayne*
+(173 films, the Poverty Row years and the uncredited bit parts included,
+four lost films marked as such), *William Wyler* (46 films — the 21 Mustang
+two-reelers excluded on the filmography's own footnote, not on taste),
+*Howard Hawks* (37, each row's note naming the genre so a filmography that
+changes register every film reads as one), *Terry Gilliam* (13 features
+from Holy Grail to Don Quixote, with Brazil measured at the 142-minute final
+cut the row tells you to watch), *Denis Villeneuve* (the eleven released
+features, the two Dunes ticking with the Dune list), *Ridley Scott* (fifty
+years, one row per film with the alternate cuts named rather than
+double-counted), *the Wachowskis* (eleven films, each row saying whether
+they wrote it, directed it or both), *Kevin Bacon* (seventy-two films across
+six decades) and *Matt Johnson* — everything he has directed, from the
+eleven web episodes of *Nirvana the Band the Show* through *BlackBerry* and
+the Bourdain biopic to a stand-up special, with the Viceland remake and a
+children's cartoon in between. Plus *A24* front to back, and *Studio
+Ghibli*, every feature in release order with Miyazaki's as the spine.
 
 **Animation.** *Samurai Jack* — all 62 across five seasons, the 2017 revival
 filed as season five because the source says so five ways — plus *Marvel
 Animation* and *DC Animation*, season by season with
 the films slotted in — the DCAU and the direct-to-video lines marked.
 
-**Anime.** *Frieren: Beyond Journey's End* (both seasons, 38 episodes), *Code Geass* (63 rows, with the two incompatible continuities explained rather than merged - the compilation films are their own branch and the sequels follow it), *Vinland Saga* (48 episodes across the Wit and MAPPA seasons), *Mob Psycho 100* (three seasons and the two OVAs the source counts apart), *Chainsaw Man* (the season plus the Reze Arc film), *Made in Abyss* (both seasons with the sequel film in its place between them, and the two compilation films deliberately not rowed), *Steins;Gate* (both series, the film, and episode 23β sitting where it leads), *The Big O* (both seasons, with the second one's Cartoon Network money named
-in the section sub because that is why it exists), *Fullmetal Alchemist* (2003) — the adaptation that leaves the manga
-behind, with where it happens named and what changes deliberately not —
-*Samurai Champloo*, *Outlaw Star*, *Yu Yu Hakusho* (116 rows, both films
-placed inside the run by their air dates), *Rurouni Kenshin* (101 rows, with the
-thirty-three anime-original episodes marked because the source marks them), *FLCL* (all five series, 24
-episodes, the later ones' studios and broadcaster named as production facts
-rather than a verdict), *Inuyasha* (197 rows — three of its four films
-land inside a season, in the new-year break they opened during), *Gurren Lagann*
-(28 rows, both films kept off as compilations on the source's own words), *Ghost in the Shell* by continuity (Oshii, Stand Alone
-Complex, Arise, SAC_2045), *Cowboy Bebop* sessions plus the film, *Urusei
-Yatsura* (1981 run, films, OVAs and the remake — Beautiful Dreamer
-cross-listed with Time Loops), *Berserk* by volume and arc, and a *Junji
-Ito* reading list, every year machine-verified down to the Japanese
-sources.
+**Anime.** *Frieren: Beyond Journey's End* (both seasons, 38 episodes),
+*Code Geass* (63 rows, with the two incompatible continuities explained
+rather than merged - the compilation films are their own branch and the
+sequels follow it), *Vinland Saga* (48 episodes across the Wit and MAPPA
+seasons), *Mob Psycho 100* (three seasons and the two OVAs the source counts
+apart), *Chainsaw Man* (the season plus the Reze Arc film), *Made in Abyss*
+(both seasons with the sequel film in its place between them, and the two
+compilation films deliberately not rowed), *Steins;Gate* (both series, the
+film, and episode 23β sitting where it leads), *The Big O* (both seasons,
+with the second one's Cartoon Network money named in the section sub because
+that is why it exists), *My Hero Academia* (all eight seasons in air order,
+then the bonus special and the four films), *Sailor Moon* (the 1990s run,
+200 episodes, with the films, shorts and specials each on the date it went
+out), *One-Punch Man* (36 broadcast episodes over three seasons, the third
+half-aired, the home-video episodes optional), *Kill la Kill* (Trigger's
+twenty-four episodes plus the OVA that only ever shipped on home media),
+*Cardcaptor Sakura* (the 70-episode run, each film where it was released),
+*Hellsing Ultimate* (the ten OVAs, and not the 2001 series), *Cyberpunk:
+Edgerunners* (both series, twenty episodes), *Fullmetal Alchemist* (2003) —
+the adaptation that leaves the manga behind, with where it happens named and
+what changes deliberately not — *Samurai Champloo*, *Outlaw Star*, *Yu Yu
+Hakusho* (116 rows, both films placed inside the run by their air dates),
+*Rurouni Kenshin* (101 rows, with the thirty-three anime-original episodes
+marked because the source marks them), *FLCL* (all five series, 24 episodes,
+the later ones' studios and broadcaster named as production facts rather
+than a verdict), *Inuyasha* (197 rows — three of its four films land inside
+a season, in the new-year break they opened during), *Gurren Lagann* (28
+rows, both films kept off as compilations on the source's own words), *Ghost
+in the Shell* by continuity (the Oshii films, Stand Alone Complex through
+SAC_2045, Arise, and Science Saru's 2026 series), *Cowboy Bebop* sessions
+plus the film, and *Urusei Yatsura* (1981 run, films, OVAs and the remake —
+Beautiful Dreamer cross-listed with Time Loops).
 
-**Screen.** *MCU Anthology* — every Marvel film from *Blade* to *Avengers:
-Doomsday* in release order with the shows slotted in — *DC Anthology*, the
-live-action equivalent, tracked season by season, and *Studio Ghibli*, every
-feature in release order with Miyazaki's as the spine. Plus *Fullmetal
+**Screen.** *MCU Anthology* — every Marvel film from *Blade* on, in release
+order with the shows slotted in — and *DC Anthology*, the live-action
+equivalent, tracked season by season. Plus *Fullmetal
 Alchemist: Brotherhood*, *Monster*, *Evangelion*, *One Piece*, *One Pace*,
 *Friday Night Lights*, *Lanterns* and *President Curtis* — *Lanterns*
 keeping the weekly schedule it aired on. Plus *Star Trek* (952 rows,
 every series and the
-thirteen films in one place), *Avatar* with *Korra*, *The Office*,
-*Futurama*, *Rick and Morty* (all nine seasons, episodes only — the
-anime shorts and the claymation webisodes stay out), *Archer* (all
-fourteen, the four themed seasons named as the show named them),
-*Bob's Burgers* (sixteen seasons, the film left off an episode list
-on purpose), *The Vampire Diaries* (all 171 episodes in broadcast
-order, its two spin-offs deliberately left to their own runs),
-*Battlestar Galactica*, *Black Mirror* and *Chuck* — the two
-television lists carrying a verified runtime on every row, the second
-of them all 91 episodes of a network hour measured rather than
-assumed — *Invincible*,
-and the big anime runs: *Naruto* and *Bleach* with their filler
-marked only where two independent sources agree, *Attack on Titan*,
-*Hunter x Hunter*, *Death Note*, and *Demon Slayer* — where Mugen Train
-is counted once rather than twice, because six of its seven television
-episodes are re-cuts of the film and the seventh is not.
-
-**Games.** *Kingdom Hearts*, in release order, weighted by how long each
-entry takes, and *Nasuverse* — Fate, Tsukihime, Melty Blood and the rest,
-organised by medium.
+thirteen films in one place), *Avatar* with *Korra* and *Seven Havens*,
+*The Office*, *Futurama*, *Rick and Morty* (all nine seasons, episodes only
+— the anime shorts and the claymation webisodes stay out), *Archer* (all
+fourteen, the four themed seasons named as the show named them), *Bob's
+Burgers* (sixteen seasons, the film left off an episode list on purpose),
+*The Vampire Diaries* (all 171 episodes in broadcast order, its two
+spin-offs deliberately left to their own runs), *Battlestar Galactica*,
+*Black Mirror* and *Chuck* — the two television lists carrying a verified
+runtime on every row, the second of them all 91 episodes of a network hour
+measured rather than assumed — *Psych* (121 episodes in 120 broadcasts,
+then the three films), *Invincible*, and the big anime runs: *Dragon Ball*
+(Dragon Ball through Daima in broadcast order, with Kai and Super: Beerus
+as one optional row each), *JoJo's Bizarre Adventure* (202 episodes, seven
+parts, still airing), *Naruto* and *Bleach* with their filler marked only
+where two independent sources agree, *Attack on Titan*, *Hunter x Hunter*,
+*Death Note*, and *Demon Slayer* — where Mugen Train is counted once rather
+than twice, because six of its seven television episodes are re-cuts of the
+film and the seventh is not.
 
 **Canons and grab bags.** *Pixar* with the theatrical shorts optional,
 *The Muppets*, the *Palme d'Or* year by year back to the Grand Prix era,
 the *Sight & Sound* 2022 top 100 as the poll ranks it, the classic
-*Universal Monsters* cycle by family, a *body horror* canon gated on three
-or more of eleven named best-of lists (with the panel's own weaknesses stated
-on the page, including the eleven-film run from 1977 to 1989 and then nothing
-until 2006), the *best director's cuts* and the *worst* — each row earning its place only where Wikipedia says in a quotable sentence that the cut landed better or worse than the release it replaced, with the sentence re-asserted on every build — and four group-night lists built for
-the random picker: *Bad Movie Night*, *body-swap films*, *real-time films*
-(the runtime is the plot), *bottle episodes* (each one verified to its
-season and number), and *one-location films*. Plus *Zombie Films* — 609 features from 1919 to now, era by era, picker-first.
+*Universal Monsters* cycle by family, the *best director's cuts* and the
+*worst* — each row earning its place only where Wikipedia says in a
+quotable sentence that the cut landed better or worse than the release it
+replaced, with the sentence re-asserted on every build — and five
+group-night lists built for the random picker: *Bad Movie Night*,
+*body-swap films*, *real-time films* (the runtime is the plot), *bottle
+episodes* (each one verified to its season and number), and *one-location
+films*. Plus *Zombie Films* — 609 features from 1919 to now, era by era,
+picker-first.
 
 **Everything at once.** *The Criterion Collection*, all 1,344 spine numbers
 in order with the formats each was released on; *Best Picture*, every nominee
@@ -490,7 +510,6 @@ appearances the wiki marks issue by issue. The sections are drawn where the
 credits change and the generator refuses to build if they move; the stars are
 the debut markers, not anybody's favourites.
 
-
 Venom order compiled from How To Love Comics, Comic Book Treasury, Comic Book
 Herald and comicbookreadingorders.com.
 
@@ -510,11 +529,23 @@ date verified for every issue; the cover numbering that makes the order a
 matter of record from the same wiki's Triangle Era article; the prologue and
 the placement of Superman #83 from Wikipedia.
 
-
 Spider-Man order, era boundaries and star ratings from a checklist written for
 the group; its annotations were rewritten rather than copied, because it spoils
 freely. Civil War order from How To Love Comics, cross-checked against
 comicbookreadingorders.com. Ultimate Marvel order from Comic Book Herald.
+
+Superman's issue lists, cover dates and credits machine-read from the DC
+Database (dc.fandom.com): the issue list of the collected edition or omnibus
+behind each run, and each issue's own page for its cover date. A row exists
+only because a collection names it. Batman's issue ranges from the
+collected-editions tables of Wikipedia's List of Batman comics, with each
+run's months, writer and artist from its own article's infobox. Wolverine
+read from the Marvel Database (marvel.fandom.com) through its API — every
+issue number, cover date and creator credit — with the run boundaries
+derived from those printed credits; the generator refuses to build if a
+range is not exactly the writer it claims. The Marvel Comics, DC Comics and
+Sitcoms hubs have no source of their own: every title, year range and count
+on a row is read out of the list it opens.
 
 Green Lantern issue ranges read from Wikipedia's collected-editions tables for
 *Green Lantern* vol. 4 and *Green Lantern Corps* vol. 2, its *Blackest Night*
@@ -543,6 +574,22 @@ Kingdom Hearts order and priorities from a rundown by a longtime player;
 its hours and Metal Gear's story-only figures from HowLongToBeat. Nasuverse
 assembled from the Type-Moon release history, with additions from a
 contributor's pull request.
+
+My Hero Academia and Psych: titles, numbering and air dates machine-read
+from their eight Wikipedia season articles and episode lists. Sailor Moon
+from its five season articles, the episode list, the series article and the
+three film articles, with runtimes from Wikidata. One-Punch Man from its
+episode list and three season articles. Kill la Kill, Cardcaptor Sakura and
+Hellsing Ultimate from their Wikipedia episode lists, Hellsing's
+per-episode runtimes included, with each Cardcaptor film's date and runtime
+from its own article. Cyberpunk: Edgerunners' episode titles from
+Wikipedia. Naruto's chapters and volumes from Wikipedia's Naruto chapter
+lists. Tremors from the Films table of Wikipedia's Tremors franchise
+article, with each film's runtime and release channel from its own article
+and the series from the Tremors (TV series) episode list. Street Fighter
+from Wikipedia — the franchise article, List of Street Fighter video games,
+List of Street Fighter media and each work's own page — with work ids from
+Wikidata.
 
 Black Panther issue ranges machine-read from Wikipedia's Black Panther
 collected editions tables, with the Jungle Action article for the vol. 2 run
