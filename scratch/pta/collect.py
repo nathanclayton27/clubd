@@ -13,10 +13,12 @@ WHAT THE ARTICLE'S "Film" SECTION ACTUALLY CONTAINS, AND WHY IT MATTERS
   * "Film > Feature films" is one wikitable. Ten rows, Hard Eight (1996) to
     One Battle After Another (2025), every one of them a bare {{Yes}} in the
     Director column. That table is the list.
-  * Immediately below it, under a bolded '''Documentary''' heading, sits a
+  * Immediately below it, under a bolded '''Documentaries''' heading, sits a
     SECOND, differently-shaped table: Year / Title / Credit, two rows — Junun
-    (2015) and an unreleased Cameron Winter at Carnegie Hall with the year
-    "TBA". The source files Junun outside the feature table on purpose, and
+    (2015) and the concert film Cameron Winter at Carnegie Hall (2026), which
+    has no article of its own and links to a section of the Live at Carnegie
+    Hall album article. The source files Junun outside the feature table on
+    purpose, and
     that is the fact the shipped list's Junun decision rests on, so it is
     collected rather than remembered.
   * "Short films" (13 rows), "Miscellaneous", "Cameo and documentary
@@ -178,9 +180,9 @@ def rows(seg, cols, keep_nonyear=False):
     column after a rowspan, and this article has rowspans in five of its
     tables — the Short films table alone has one spanning three rows.
 
-    `keep_nonyear` keeps a row whose Year cell is not a year: the Documentary
-    table's second row reads "TBA", and dropping it would hide the fact that
-    the table has an unreleased entry in it."""
+    `keep_nonyear` keeps a row whose Year cell is not a year, such as "TBA",
+    so an unreleased entry in a table is counted rather than silently hidden
+    (the Documentary table's second row read TBA until its 2026 release)."""
     out, pending = [], {}
     for chunk in seg.split("\n|-")[1:]:
         raw = iter(cells(chunk))
@@ -301,6 +303,13 @@ def article_facts(page):
         v = wiki.clean(fb(f))
         if v:
             out[f] = v
+    # wiki.clean drops the title out of {{Based on|''Title''|Author}}, keeping
+    # only the author, so the raw field is kept too (citations stripped): the
+    # row notes name the novel, and the name has to be checkable
+    raw = fb("based_on")
+    if raw:
+        raw = re.sub(r"<ref[^>]*/>", "", raw)
+        out["based_on_raw"] = re.sub(r"<ref.*?</ref>", "", raw, flags=re.S).strip()
     out["lead"] = wiki.clean(lead_of(t)[:1800])[:1000]
     return out
 
@@ -357,8 +366,11 @@ def main():
 
     film_chunk = section(art, "==Film==", "===Short films===")
     feat_rows = rows(nth_table(film_chunk, 0), FEATURE_COLS)
-    # the second table in the Film section, under the bolded '''Documentary'''
-    assert "'''[[Documentary]]'''" in film_chunk, \
+    # the shipped intro names the camera column by the header the table shows
+    assert "|[[Cinematographer|DoP]]" in nth_table(film_chunk, 0), \
+        "the feature table's DoP header changed — recheck the After Elswit intro"
+    # the second table in the Film section, under the bolded '''Documentaries'''
+    assert "'''Documentaries'''" in film_chunk, \
         "the Documentary sub-heading moved — re-read the Film section"
     doc_rows = rows(nth_table(film_chunk, 1), DOC_COLS, keep_nonyear=True)
 
@@ -386,6 +398,10 @@ def main():
             "wrote": r["writer"].strip().lower() == "{{yes}}",
             "produced": r["producer"].strip().lower() == "{{yes}}",
             "shot": r["cinematographer"].strip().lower() == "{{yes}}",
+            # Phantom Thread's cell reads {{partial|Uncredited}}: he shot it,
+            # and no cinematographer is listed in the film's credits
+            "shot_uncredited": r["cinematographer"].strip().lower()
+                               == "{{partial|uncredited}}",
             "tablenote": wiki.clean(r["notes"]),
             "runtime": None,
             "runtime_src": None,
@@ -395,8 +411,15 @@ def main():
     docs = []
     for r in doc_rows:
         page, label = wikilink(r["title"])
-        docs.append({"t": label, "page": page, "year": r["year"],
-                     "credit": wiki.clean(r["credit"])})
+        # A link into a section of another article (the Cameron Winter concert
+        # film points at the album's "Concert film" section) is not the film's
+        # own item, so it is never looked up: the album's runtime and dates
+        # would be attributed to the film.
+        section_of = None
+        if page and "#" in page:
+            section_of, page = page, None
+        docs.append({"t": label, "page": page, "section_of": section_of,
+                     "year": r["year"], "credit": wiki.clean(r["credit"])})
 
     shorts = [{"t": wikilink(r["title"])[1], "page": wikilink(r["title"])[0],
                "year": r["year"], "tablenote": wiki.clean(r["notes"])}

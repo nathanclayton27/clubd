@@ -51,6 +51,7 @@
    "wrote": true,
    "produced": false,
    "shot": false,
+   "shot_uncredited": false,
    "tablenote": "Original title: Sydney",
    "runtime": 98.0,
    "runtime_src": "P2047",
@@ -84,7 +85,8 @@
     "runtime": "102 minutes",
     "released": "United States",
     "language": "English",
-    "lead": "'Hard Eight' (originally titled 'Sydney') is a 1996 American crime film written and directed by Paul Thomas Anderson in his feature directorial debut, and starring Philip Baker Hall, John C. Reilly, Gwyneth Paltrow, and Samuel L. Jackson. An expansion on Anderson's 1993 short film Cigarettes & Coffee, it follows the bond between a senior gambler and a homeless man. It premiered at the 1996 Sundance Film Festival. The film's title refers to a \"hard eight,\" a wager in the casino game of craps that the shooter will roll two fours before a seven or any other combination totaling eight. ==Plot== Sydney Brown, a well-dressed senior gambler, finds John Finnegan, a homeless man, forlornly sitting outside a diner in Sparks, Nevada. Sydney offers John a cigarette and buys him a cup of coffee. John tells Sydney that he went bust in Las Vegas and needs $6,000 for his"
+    "based_on_raw": "''[[Cigarettes & Coffee]]'' <br> by Paul Thomas Anderson",
+    "lead": "'Hard Eight' (originally titled 'Sydney') is a 1996 American crime film written and directed by Paul Thomas Anderson in his feature directorial debut, and starring Philip Baker Hall, John C. Reilly, Gwyneth Paltrow, and Samuel L. Jackson. An expansion on Anderson's 1993 short film Cigarettes & Coffee, it follows the bond between a senior gambler and a homeless man. It premiered at the 1996 Sundance Film Festival. The film's title refers to a \"hard eight,\" a wager in the casino game of craps that the shooter will roll two fours before a seven or any other combination totaling eight. ==Plot== Sydney Brown, a well-dressed senior gambler, approaches John Finnegan, a homeless man in his mid-20s, sitting forlornly outside a diner in Sparks, Nevada. Sydney offers John a cigarette and buys him a cup of coffee. John tells Sydney that he went bust in Las Veg"
    }
   },
   {
@@ -94,8 +96,9 @@
    "wrote": true,
    "produced": true,
    "shot": false,
+   "shot_uncredited": false,
    "tablenote": "",
-   "runtime": 149.0,
+   "runtime": 155.0,
    "runtime_src": "P2047",
    "qid": "Q291170",
    "pubyears": [
@@ -104,10 +107,10 @@
    ],
    "p2047_seen": [
     {
-     "amount": 149.0,
+     "amount": 155.0,
      "unit": "Q7727",
      "rank": "normal",
-     "minutes": 149.0,
+     "minutes": 155.0,
      "quals": {}
     }
    ],
@@ -137,6 +140,7 @@
    "wrote": true,
    "produced": true,
    "shot": false,
+   "shot_uncredited": false,
    "tablenote": "",
    "runtime": 188.0,
    "runtime_src": "P2047",
@@ -170,7 +174,7 @@
     "runtime": "188 minutes",
     "released": "United States",
     "language": "English",
-    "lead": "'Magnolia' is a 1999 American <!-- do not add \"epic\" without providing a supporting source -->drama film written, directed and co-produced by Paul Thomas Anderson. It stars an ensemble cast, including Jeremy Blackman, Tom Cruise, Melinda Dillon, Philip Baker Hall, Philip Seymour Hoffman, Ricky Jay, William H. Macy, Alfred Molina, Julianne Moore, John C. Reilly, Jason Robards (in his final film role), and Melora Walters. The film is an epic mosaic of interrelated characters in search of happiness, forgiveness, and meaning in the San Fernando Valley. The script was inspired by the music of Aimee Mann, who contributed several songs to its soundtrack. The film had a limited theatrical release by New Line Cinema on December 17, 1999, before expanding wide on January 7, 2000. Magnolia received acclaim from critics. It grossed $48.4 million against a $37 million budget. Of the ensemble cast, Cruise was nominated for Best Supporting Actor at the 72nd Academy Awards and won the award in that ca"
+    "lead": "'Magnolia' is a 1999 American drama film written, directed and co-produced by Paul Thomas Anderson. It stars an ensemble cast, including Jeremy Blackman, Tom Cruise, Melinda Dillon, Philip Baker Hall, Philip Seymour Hoffman, Ricky Jay, William H. Macy, Alfred Molina, Julianne Moore, John C. Reilly, Jason Robards (in his final film role), and Melora Walters. The film is an epic mosaic of interrelated characters in search of happiness, forgiveness, and meaning in the San Fernando Valley. The script was inspired by the music of Aimee Mann, who contributed several songs to its soundtrack. The film had a limited theatrical release by New Line Cinema on December 17, 1999, before expanding wide on January 7, 2000. Magnolia received acclaim from critics. It grossed $48.4 million against a $37 million budget. Among its accolades, the film earned three nominations at the 72nd Academy Awards, where Cruise was nominated for Best Supporting Actor, and two at the 57th Golden Globes, where Cruise won"
    }
   },
   {
@@ -180,6 +184,7 @@
    "wrote": true,
    "produced": true,
    "shot": false,
+   "shot_uncredited": false,
    "tablenote": "",
    "runtime": 95.0,
    "runtime_src": "P2047",
@@ -223,7 +228,8 @@
    "wrote": true,
    "produced": true,
    "shot": false,
-   "tablenote": "Based on Oil! by Upton Sinclair",
+   "shot_uncredited": false,
+   "tablenote": "",
    "runtime": 158.0,
    "runtime_src": "P2047",
    "qid": "Q244315",
@@ -257,6 +263,7 @@
     "runtime": "158 minutes",
     "released": "United States",
     "language": "English",
+    "based_on_raw": "{{Based on|''[[Oil!]]''|[[Upton Sinclair]]}}",
     "lead": "'There Will Be Blood' is a 2007 American epic period drama film co-produced, written and directed by Paul Thomas Anderson, loosely based on the 1927 novel Oil! by Upton Sinclair. It stars Daniel Day-Lewis, Paul Dano, Kevin J. O'Connor, Ciarán Hinds, and Dillon Freasier. The film follows silver miner-turned-oilman Daniel Plainview (Day-Lewis) as he embarks on a ruthless quest for wealth during the Californian oil boom in the late 19th and early 20th centuries. Development on There Will Be Blood began after writer Eric Schlosser purchased the film rights to Sinclair's novel in 2004. It was acquired by Ghoulardi Film Company, Paramount Vantage and Miramax Films after Anderson completed the first draft of the film's screenplay. Day-Lewis immediately joined the project while Dano, who initially signed on for a smaller role, took on a starring role after replacing Kel O'Neill during filming. Principal photography began in June 2006 and lasted until that September, with filming locations incl"
    }
   },
@@ -267,6 +274,7 @@
    "wrote": true,
    "produced": true,
    "shot": false,
+   "shot_uncredited": false,
    "tablenote": "",
    "runtime": 138.0,
    "runtime_src": "P2047",
@@ -310,7 +318,8 @@
    "wrote": true,
    "produced": true,
    "shot": false,
-   "tablenote": "Based on the novel by Thomas Pynchon",
+   "shot_uncredited": false,
+   "tablenote": "",
    "runtime": 149.0,
    "runtime_src": "P2047",
    "qid": "Q13806537",
@@ -344,7 +353,8 @@
     "runtime": "149 minutes",
     "released": "United States",
     "language": "English",
-    "lead": "'Inherent Vice' is a 2014 American neo-noir black comedy crime film written, co-produced, and directed by Paul Thomas Anderson, based on the 2009 novel by Thomas Pynchon. The ensemble cast includes Joaquin Phoenix, Josh Brolin, Owen Wilson, Katherine Waterston, Eric Roberts, Reese Witherspoon, Benicio del Toro, Jena Malone, Maya Rudolph, Martin Short and Joanna Newsom. The film follows Larry \"Doc\" Sportello, a well-intentioned but fumbling stoner, hippie, and private investigator embroiled in the criminal underworld of 1970 Los Angeles, investigating three cases linked by the disappearance of his ex-girlfriend and her wealthy new boyfriend. Anderson's adaptation of Inherent Vice had been in development since 2010, and is the first Pynchon novel to be adapted for the screen. Anderson was previously inspired by Pynchon's novel V. while writing the screenplay for The Master (2012), and would go on to loosely adapt Vineland into One Battle After Another (2025). It is Anderson's second coll"
+    "based_on_raw": "{{based on|''[[Inherent Vice]]''|[[Thomas Pynchon]]}}",
+    "lead": "'Inherent Vice' is a 2014 American neo-noir black comedy crime film written, co-produced, and directed by Paul Thomas Anderson, based on the 2009 novel by Thomas Pynchon. The ensemble cast includes Joaquin Phoenix, Josh Brolin, Owen Wilson, Katherine Waterston, Eric Roberts, Reese Witherspoon, Benicio del Toro, Jena Malone, Maya Rudolph, Martin Short and Joanna Newsom. The film follows Larry \"Doc\" Sportello, a well-intentioned but fumbling stoner, hippie, and private investigator embroiled in the criminal underworld of 1970 Los Angeles, investigating three cases linked by the disappearance of his ex-girlfriend and her wealthy new boyfriend. Anderson's adaptation of Inherent Vice had been in development since 2010, and is the first adaptation of a Pynchon novel for the screen. Anderson was previously inspired by Pynchon's novel V. while writing the screenplay for The Master (2012), and would go on to loosely adapt Vineland into One Battle After Another (2025). It is Anderson's second co"
    }
   },
   {
@@ -353,7 +363,8 @@
    "year": 2017,
    "wrote": true,
    "produced": true,
-   "shot": true,
+   "shot": false,
+   "shot_uncredited": true,
    "tablenote": "",
    "runtime": 130.0,
    "runtime_src": "P2047",
@@ -387,7 +398,7 @@
     "runtime": "130 minutes",
     "released": "United States",
     "language": "English",
-    "lead": "'Phantom Thread' is a 2017 American psychological period drama<!--comes under the category period drama.--> film written, shot and directed by Paul Thomas Anderson. It stars Daniel Day-Lewis, Vicky Krieps, and Lesley Manville, and follows an haute couture dressmaker in 1950s London who takes a young waitress as his muse. It is Anderson's first film shot outside the United States, with principal photography beginning in January 2017 in Lythe, England. It is also Anderson's second collaboration with Day-Lewis, after There Will Be Blood (2007), and his fourth collaboration with composer Jonny Greenwood. Phantom Thread premiered in New York City on December 11, 2017, and was theatrically released in the United States two weeks later. It rec"
+    "lead": "'Phantom Thread' is a 2017 American psychological period drama film written, shot and directed by Paul Thomas Anderson. It stars Daniel Day-Lewis, Vicky Krieps, and Lesley Manville, and follows an haute couture dressmaker in 1950s London who takes a young waitress as his muse. It is Anderson's first film shot outside the United States, with principal photography beginning in January 2017 in Lythe, England. It is also Anderson's second collaboration with Day-Lewis, after There Will Be Blood (2007), and his fourth collaboration with composer Jonny Greenwood. Phantom Thread premiered in New York City on December 11, 2017, and was theatrically released in the United States two weeks later. It rec"
    }
   },
   {
@@ -397,6 +408,7 @@
    "wrote": true,
    "produced": true,
    "shot": true,
+   "shot_uncredited": false,
    "tablenote": "",
    "runtime": 133.0,
    "runtime_src": "P2047",
@@ -430,7 +442,7 @@
     "runtime": "133 minutes",
     "released": "26",
     "language": "English",
-    "lead": "'Licorice Pizza' is a 2021 American coming-of-age comedy drama film written, produced, shot and directed by Paul Thomas Anderson. It stars Alana Haim and Cooper Hoffman in their film debuts, alongside an ensemble supporting cast including Sean Penn, Tom Waits, Bradley Cooper, and Benny Safdie. Set in 1973, the film follows the relationship between a teen actor (Hoffman) and a young woman (Haim). The film was released in the United States in select theaters on November 26, 2021, followed by a wide release on December 25. Though it grossed $33.3 million against its $40 million production budget, the film was acclaimed by critics and received three nominations at the 94th Academy Awards: Best Picture, Best Director, and Best Original Screenplay, making it Metro-Goldwyn-Mayer's first fully produced, marketed, and distributed film to be nominated for Best Picture since Rain Man in 1988.<ref>cite web |author-first1=Nancy |author-last1=Tartaglione |url=https://deadline.com/2022/02/mgm-future-"
+    "lead": "'Licorice Pizza' is a 2021 American coming-of-age comedy drama film written, produced, shot and directed by Paul Thomas Anderson. It stars Alana Haim and Cooper Hoffman in their film debuts, alongside an ensemble supporting cast including Sean Penn, Tom Waits, Bradley Cooper, and Benny Safdie. Set in 1973, the film follows the relationship between a teenage actor (Hoffman) and a young woman (Haim). The film was released in the United States in select theaters on November 26, 2021, followed by a wide release on December 25. Though it grossed $33.3 million against its $40 million production budget, the film was acclaimed by critics and received three nominations at the 94th Academy Awards: Best Picture, Best Director, and Best Original Screenplay, making it Metro-Goldwyn-Mayer's first fully produced, marketed, and distributed film to be nominated for Best Picture since Rain Man in 1988.<ref>cite web |author-first1=Nancy |author-last1=Tartaglione |url=https://deadline.com/2022/02/mgm-futu"
    }
   },
   {
@@ -440,7 +452,8 @@
    "wrote": true,
    "produced": true,
    "shot": false,
-   "tablenote": "Inspired by Vineland by Thomas Pynchon",
+   "shot_uncredited": false,
+   "tablenote": "",
    "runtime": 161.51666666666665,
    "runtime_src": "P2047",
    "qid": "Q117085614",
@@ -505,7 +518,8 @@
     "runtime": "162 minutes",
     "released": "United States",
     "language": "English",
-    "lead": "'One Battle After Another' is a 2025 American <!-- MAIN GENRE ONLY per WP:FILMLEAD -->action thriller filmefn|Attributed to multiple references:<ref>cite web |last=DeVore |first=Britta |date=December 15, 2025 |title=Leonardo DiCaprio's Political Action Thriller 'One Battle After Another' Finally Sets Streaming Release Date |url=https://collider."
+    "based_on_raw": "{{Based on|''[[Vineland]]''|[[Thomas Pynchon]]}}",
+    "lead": "'One Battle After Another' is a 2025 American black comedy action thriller filmefn|Attributed to multiple references:<ref>cite web|last=DeVore|first=Britta |date=December 15, 2025 |title=Leonardo DiCaprio's Political Action Thriller 'One Battle After Another' Finally Sets Streaming Release Date|url=https://collider.com/leonardo-dicaprio-one-battle-af"
    }
   }
  ],
@@ -513,6 +527,7 @@
   {
    "t": "Junun",
    "page": "Junun (film)",
+   "section_of": null,
    "year": 2015,
    "credit": "Director and camera operator",
    "qid": "Q20972685",
@@ -535,16 +550,15 @@
   },
   {
    "t": "Cameron Winter at Carnegie Hall",
-   "page": "Cameron Winter",
-   "year": "TBA",
+   "page": null,
+   "section_of": "Live at Carnegie Hall (Cameron Winter album)#Concert film",
+   "year": 2026,
    "credit": "Director and camera operator",
-   "qid": "Q134691738",
+   "qid": null,
    "runtime": null,
    "p2047_seen": [],
    "pubyears": [],
-   "p31": [
-    "Q5"
-   ]
+   "p31": []
   }
  ],
  "shorts": [
@@ -694,8 +708,8 @@
   },
   {
    "t": "What Happens at Night",
-   "year": "TBA",
-   "credit": "Reported rewrite"
+   "year": "{{TBA}}",
+   "credit": "Uncredited rewrite"
   }
  ],
  "television": [
@@ -920,6 +934,8 @@
  ],
  "sweep_size": 17,
  "sweep_labels": [
+  "",
+  "",
   "ANIMA",
   "Back Beyond",
   "Boogie Nights",
@@ -930,13 +946,11 @@
   "Junun",
   "Licorice Pizza",
   "Magnolia",
-  "One Battle After Another",
   "Phantom Thread",
   "Punch-Drunk Love",
   "Saturday Night Live",
   "The Dirk Diggler Story",
-  "The Master",
-  "There Will Be Blood"
+  "The Master"
  ],
  "sweep_extras": [
   {
