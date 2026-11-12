@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-M2deV9thhAQN6OBRDMaR2vf4+gWChd+Y+zGZQx9iuGI=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-iLGQdSDZQ3JQ3z0p0ZptkoZ2e60KPXAMKZ/AADsbmXg=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -3928,7 +3928,7 @@ let MANIFEST = [
     "kind": "games",
     "year": "1987–",
     "popularity": 74,
-    "blurb": "27 games and 4 extras — about 415 hours of story, 134 of it the saga spine.",
+    "blurb": "27 games and 4 extras — about 427 hours of story, 134 of it the saga spine.",
     "accent": "#4A5D23",
     "accentDark": "#9DBB61",
     "unit": {
@@ -3937,7 +3937,7 @@ let MANIFEST = [
     },
     "vpast": "played",
     "total": 31,
-    "totalw": 414.54
+    "totalw": 426.54
   },
   {
     "slug": "superman",
@@ -5150,7 +5150,7 @@ let MANIFEST = [
     "kind": "films",
     "year": "2013–",
     "popularity": 66,
-    "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 214 films, about 340 hours.",
+    "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 230 films, about 340 hours.",
     "accent": "#111111",
     "accentDark": "#E8E8E8",
     "unit": {
@@ -5158,7 +5158,7 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 214,
+    "total": 230,
     "totalw": 340.45,
     "random": true
   },
@@ -7173,7 +7173,7 @@ let MANIFEST = [
     "kind": "tv",
     "year": "1988–2026",
     "popularity": 46,
-    "blurb": "All 236 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
+    "blurb": "All 236 experiments in episode order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
     "accent": "#7A6200",
     "accentDark": "#F2C230",
     "unit": {
@@ -7720,7 +7720,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '1d4a788cc3c8';
+const BUILD = '9ac98da8145c';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or

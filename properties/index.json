@@ -1584,7 +1584,7 @@
     "kind": "games",
     "year": "1987–",
     "popularity": 74,
-    "blurb": "27 games and 4 extras — about 415 hours of story, 134 of it the saga spine.",
+    "blurb": "27 games and 4 extras — about 427 hours of story, 134 of it the saga spine.",
     "accent": "#4A5D23",
     "accentDark": "#9DBB61",
     "unit": {
@@ -1593,7 +1593,7 @@
     },
     "vpast": "played",
     "total": 31,
-    "totalw": 414.54
+    "totalw": 426.54
   },
   {
     "slug": "superman",
@@ -2806,7 +2806,7 @@
     "kind": "films",
     "year": "2013–",
     "popularity": 66,
-    "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 214 films, about 340 hours.",
+    "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 230 films, about 340 hours.",
     "accent": "#111111",
     "accentDark": "#E8E8E8",
     "unit": {
@@ -2814,7 +2814,7 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 214,
+    "total": 230,
     "totalw": 340.45,
     "random": true
   },
@@ -4829,7 +4829,7 @@
     "kind": "tv",
     "year": "1988–2026",
     "popularity": 46,
-    "blurb": "All 236 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
+    "blurb": "All 236 experiments in episode order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
     "accent": "#7A6200",
     "accentDark": "#F2C230",
     "unit": {
