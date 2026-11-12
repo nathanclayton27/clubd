@@ -214,7 +214,7 @@ it holds.
 Kurosawa*, *Alfred Hitchcock*, *Robin Williams*, *Martin Scorsese* (with
 the documentaries optional), *Quentin Tarantino*, *the Coen brothers*
 (solo work sectioned and credited), *David Fincher*, *John Carpenter*,
-*Nicolas Cage* (113 films, all eras), *Francis Ford Coppola* (23 features
+*Nicolas Cage* (118 films, all eras), *Francis Ford Coppola* (23 features
 from Dementia 13 to Megalopolis, Apocalypse Now weighed at its premiere
 cut), *Satoshi Kon* (films plus Paranoia
 Agent), *Sam Raimi* (the films plus all thirty episodes of Ash vs Evil

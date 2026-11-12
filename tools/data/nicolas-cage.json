@@ -1024,5 +1024,60 @@
   "qid": "Q125911900",
   "runtime": 94,
   "runtime_from": "infobox"
+ },
+ {
+  "t": "Madden",
+  "page": "Madden (film)",
+  "year": 2026,
+  "role": "John Madden",
+  "tablenote": "Post-production",
+  "qid": "Q129913280",
+  "runtime": 110,
+  "runtime_from": "infobox"
+ },
+ {
+  "t": "Best Pancakes in the County",
+  "page": "Best Pancakes in the County",
+  "year": 2026,
+  "role": "S.O.B",
+  "tablenote": "Post-production",
+  "qid": "Q137924164",
+  "runtime": null,
+  "due": "2026-11-20",
+  "id": "nc-2026-best-pancakes-in-the-county"
+ },
+ {
+  "t": "Fortitude",
+  "page": "Fortitude (2026 film)",
+  "year": 2026,
+  "role": "Duško Popov",
+  "tablenote": "Post-production",
+  "qid": "Q136557022",
+  "runtime": null,
+  "due": "2026",
+  "id": "nc-2026-fortitude"
+ },
+ {
+  "t": "Lords of War",
+  "page": "Lords of War",
+  "year": 2027,
+  "role": "Yuri Orlov",
+  "tablenote": "Post-production; Also producer",
+  "qid": "Q124370538",
+  "runtime": null,
+  "due": "2027-01-22",
+  "id": "nc-2027-lords-of-war"
+ },
+ {
+  "t": "Spider-Man: Beyond the Spider-Verse",
+  "page": "Spider-Man: Beyond the Spider-Verse",
+  "year": 2027,
+  "role": "Peter Parker / Spider-Man Noir",
+  "tablenote": "In-production",
+  "articlenote": "Voice role",
+  "qid": "Q110152284",
+  "runtime": null,
+  "due": "2027-06-18",
+  "id": "nc-2027-spider-man-beyond-the-spider-verse"
  }
 ]
