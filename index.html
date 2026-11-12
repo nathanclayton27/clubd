@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-rXW6pyqo8wnzFMOz68+I8Aa7vLv55oqBFNrJiw84A8k=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-SMqEk/nk/umc9Vp/8LcD6XkPrl6FB99/y5TXWbxz53g=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -5988,7 +5988,7 @@ let MANIFEST = [
     "kind": "comics",
     "year": "1992–",
     "popularity": 61,
-    "blurb": "829 issues of Spawn and its spin-offs, in the order they are meant to be read rather than the order they came out.",
+    "blurb": "891 issues of Spawn and its spin-offs, in the order they are meant to be read rather than the order they came out.",
     "accent": "#4412A6",
     "accentDark": "#9B7BEE",
     "unit": {
@@ -5996,8 +5996,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 829,
-    "totalw": 829.0
+    "total": 906,
+    "totalw": 891.0
   },
   {
     "slug": "expanse",
@@ -7719,7 +7719,7 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = '8a9cfc698d69';
+const BUILD = 'd352066da563';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
