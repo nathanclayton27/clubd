@@ -6,7 +6,7 @@
   "popularity": 66,
   "random": true,
   "year": "2013–",
-  "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 214 films, about 340 hours.",
+  "blurb": "Everything A24 has released or dated, A Glimpse Inside the Mind of Charles Swan III through Elden Ring — 230 films, about 340 hours.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -23,7 +23,7 @@
   "notes": [
     [
       "Every film with a release date.",
-      "211 released and 3 upcoming films, in release order, from Wikipedia's List of A24 films. The 23 films that have started shooting but carry no date, and the 20 in development, are not listed — they join once A24 dates them. Upcoming rows are marked \"Not out yet\"."
+      "211 released and 19 upcoming films, in release order, from Wikipedia's List of A24 films. The 7 films that have started shooting with no year yet, and the 20 in development, are not listed — they join once A24 dates them. Upcoming rows are marked \"Not out yet\"; 16 of them carry only a year, 2027, and sit at the end of it."
     ],
     [
       "A24 distributes some films and produces others.",
@@ -31,7 +31,7 @@
     ],
     [
       "Bar widths are runtimes.",
-      "From Wikidata, in hours — about 340 in all. 24 films weigh nothing — all 3 upcoming films plus 21 already released that have no runtime there — so they cannot drag a group's pace."
+      "From Wikidata, in hours — about 340 in all. 40 films weigh nothing — all 19 upcoming films plus 21 already released that have no runtime there — so they cannot drag a group's pace."
     ],
     "Catalogue, dates and distribution notes from Wikipedia's List of A24 films; runtimes from Wikidata."
   ],
@@ -1304,7 +1304,7 @@
     {
       "id": "now",
       "title": "Now and next",
-      "sub": "2025–2028 · 39 films · 62 hours",
+      "sub": "2025–2028 · 55 films · 62 hours",
       "intro": "The current slate, through everything A24 has put a date on. Backrooms became the company's highest-grossing film; the rows marked below are not out yet.",
       "items": [
         {
@@ -1572,6 +1572,118 @@
           "n": "2027",
           "w": 0.0,
           "note": "Jeremy Saulnier · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-altar",
+          "t": "Altar",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Egor Abramenko · Not out yet"
+        },
+        {
+          "id": "a24-2027-the-chaperones",
+          "t": "The Chaperones",
+          "n": "2027",
+          "w": 0.0,
+          "note": "India Donaldson · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-deep-cuts",
+          "t": "Deep Cuts",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Sean Durkin · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-enemies",
+          "t": "Enemies",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Henry Dunham · Not out yet"
+        },
+        {
+          "id": "a24-2027-the-entertainment-system-is-down",
+          "t": "The Entertainment System Is Down",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Ruben Östlund · U.S. distribution only · Not out yet"
+        },
+        {
+          "id": "a24-2027-famous",
+          "t": "Famous",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Jody Hill · U.S. distribution only · Not out yet"
+        },
+        {
+          "id": "a24-2027-flesh-of-the-gods",
+          "t": "Flesh of the Gods",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Panos Cosmatos · U.S. distribution only · Not out yet"
+        },
+        {
+          "id": "a24-2027-hillside-drive",
+          "t": "Hillside Drive",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Lenny Abrahamson · U.S. distribution only · Not out yet"
+        },
+        {
+          "id": "a24-2027-the-land-of-nod",
+          "t": "The Land of Nod",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Kyle Edward Ball · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-the-masque-of-the-red-death",
+          "t": "The Masque of the Red Death",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Charlie Polinger · Not out yet"
+        },
+        {
+          "id": "a24-2027-peaked",
+          "t": "Peaked",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Molly Gordon · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-the-peasant",
+          "t": "The Peasant",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Dev Patel · Not out yet"
+        },
+        {
+          "id": "a24-2027-the-riders",
+          "t": "The Riders",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Edward Berger · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-v-h-s-scp",
+          "t": "V/H/S: SCP",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Director TBA · Not out yet"
+        },
+        {
+          "id": "a24-2027-wizards",
+          "t": "Wizards!",
+          "n": "2027",
+          "w": 0.0,
+          "note": "David Michôd · Also produced by A24 · Not out yet"
+        },
+        {
+          "id": "a24-2027-untitled-arkasha-stevenson-film",
+          "t": "Untitled Arkasha Stevenson film",
+          "n": "2027",
+          "w": 0.0,
+          "note": "Arkasha Stevenson · Also produced by A24 · Not out yet"
         },
         {
           "id": "a24-2028-elden-ring",

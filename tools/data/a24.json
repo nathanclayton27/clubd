@@ -1,8 +1,8 @@
 {
  "meta": {
-  "fetched": "2026-11-11",
+  "fetched": "2026-11-12",
   "source": "List of A24 films",
-  "excluded_undated": 23,
+  "excluded_no_year": 7,
   "excluded_in_development": 20
  },
  "films": [
@@ -2347,6 +2347,182 @@
    "note": "Also produced by A24",
    "status": "scheduled",
    "qid": "Q136547121",
+   "runtime": null
+  },
+  {
+   "title": "Altar",
+   "page": null,
+   "date": null,
+   "year": 2027,
+   "director": "Egor Abramenko",
+   "note": "",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "The Chaperones",
+   "page": "The Chaperones (film)",
+   "date": null,
+   "year": 2027,
+   "director": "India Donaldson",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Deep Cuts",
+   "page": "Deep Cuts (film)",
+   "date": null,
+   "year": 2027,
+   "director": "Sean Durkin",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Enemies",
+   "page": "Enemies (upcoming film)",
+   "date": null,
+   "year": 2027,
+   "director": "Henry Dunham",
+   "note": "",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "The Entertainment System Is Down",
+   "page": "The Entertainment System Is Down",
+   "date": null,
+   "year": 2027,
+   "director": "Ruben Östlund",
+   "note": "U.S. distribution only",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Famous",
+   "page": "Famous (film)",
+   "date": null,
+   "year": 2027,
+   "director": "Jody Hill",
+   "note": "U.S. distribution only",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Flesh of the Gods",
+   "page": "Flesh of the Gods",
+   "date": null,
+   "year": 2027,
+   "director": "Panos Cosmatos",
+   "note": "U.S. distribution only",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Hillside Drive",
+   "page": "Hillside Drive",
+   "date": null,
+   "year": 2027,
+   "director": "Lenny Abrahamson",
+   "note": "U.S. distribution only",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "The Land of Nod",
+   "page": "The Land of Nod (film)",
+   "date": null,
+   "year": 2027,
+   "director": "Kyle Edward Ball",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "The Masque of the Red Death",
+   "page": "The Masque of the Red Death (upcoming film)",
+   "date": null,
+   "year": 2027,
+   "director": "Charlie Polinger",
+   "note": "",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Peaked",
+   "page": "Peaked",
+   "date": null,
+   "year": 2027,
+   "director": "Molly Gordon",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "The Peasant",
+   "page": "The Peasant",
+   "date": null,
+   "year": 2027,
+   "director": "Dev Patel",
+   "note": "",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "The Riders",
+   "page": "The Riders (film)",
+   "date": null,
+   "year": 2027,
+   "director": "Edward Berger",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "V/H/S: SCP",
+   "page": "V/H/S (franchise)#V/H/S: SCP (2027)",
+   "date": null,
+   "year": 2027,
+   "director": "TBA",
+   "note": "",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Wizards!",
+   "page": "Wizards!",
+   "date": null,
+   "year": 2027,
+   "director": "David Michôd",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
+   "runtime": null
+  },
+  {
+   "title": "Untitled film",
+   "page": "Untitled Arkasha Stevenson film",
+   "date": null,
+   "year": 2027,
+   "director": "Arkasha Stevenson",
+   "note": "Also produced by A24",
+   "status": "scheduled",
+   "qid": null,
    "runtime": null
   },
   {

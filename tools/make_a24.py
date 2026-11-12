@@ -4,8 +4,10 @@
     python3 tools/make_a24.py
 
 Every film on Wikipedia's "List of A24 films" that carries a release date, in
-release order: both released-films tables (2010s and 2020s) plus the dated
-upcoming films, which are noted "Not out yet". Undated films and films in
+release order: both released-films tables (2010s and 2020s) plus the upcoming
+films, which are noted "Not out yet". An upcoming film dated only to a year
+(the Undated films table's 2027 group; house rule CLU-315, a bare year
+ships) sits at the end of that year. Films with no year (TBA) and films in
 development are excluded by scratch/a24/build_data.py, which builds
 tools/data/a24.json and records how many it left out.
 
@@ -23,7 +25,8 @@ import unicodedata
 SLUG = "a24"
 
 # era boundaries chosen so the sections stay near an even row count
-# (27 / 33 / 36 / 36 / 43 / 39) while still breaking on real turns
+# (27 / 33 / 36 / 36 / 43, and 55 in the open-ended last one, 16 of them
+# year-only 2027 rows) while still breaking on real turns
 ERAS = [
     ("acquisitions", "The acquisition years", 2013, 2015,
      "A24 launched in August 2012 and spent its first three years buying "
@@ -50,6 +53,21 @@ ERAS = [
 ]
 
 
+# Films Wikipedia has not titled yet. The id is pinned here, keyed by the
+# film's own Wikipedia article, so it cannot move when the title (or the year)
+# arrives: the generated id would fold the placeholder title. When the article
+# is renamed, the build stops on the assert below; re-key the entry to the new
+# article, keep the id, and drop the TITLE entry once Wikipedia shows a title.
+PINNED_ID = {
+    "Untitled Arkasha Stevenson film":
+        "a24-2027-untitled-arkasha-stevenson-film",
+}
+# The table shows this one as "Untitled film"; its article's name says whose.
+TITLE = {
+    "Untitled Arkasha Stevenson film": "Untitled Arkasha Stevenson film",
+}
+
+
 def fold(t):
     """ASCII-fold a title into an id fragment."""
     t = unicodedata.normalize("NFKD", t)
@@ -69,12 +87,34 @@ def main():
     data = json.loads((here / "data" / "a24.json").read_text(encoding="utf-8"))
     meta, films = data["meta"], data["films"]
 
-    assert all(a["date"] <= b["date"] for a, b in zip(films, films[1:])), \
+    def order(f):
+        """Release order; a year-only film after every dated one that year."""
+        return (f["year"], f["date"] or "~")
+
+    assert all(order(a) <= order(b) for a, b in zip(films, films[1:])), \
         "data file is out of release order"
 
     released = [f for f in films if f["status"] == "released"]
     coming = [f for f in films if f["status"] == "scheduled"]
     assert len(released) + len(coming) == len(films)
+    year_only = [f for f in coming if not f["date"]]
+    assert all(f["date"] for f in released), "a released film has no date"
+
+    pages = [f["page"] for f in films]
+    for page in PINNED_ID:
+        assert pages.count(page) == 1, \
+            "pinned film %r is not in the data: renamed? re-key PINNED_ID " \
+            "to its new article and keep the id" % page
+    assert set(TITLE) <= set(PINNED_ID), "a retitled row has no pinned id"
+    for f in films:
+        assert not f["title"].lower().startswith("untitled") \
+            or f["page"] in PINNED_ID, \
+            "untitled film %r needs a PINNED_ID entry" % f["title"]
+
+    def row_id(f):
+        if f["page"] in PINNED_ID:
+            return PINNED_ID[f["page"]]
+        return "a24-%d-%s" % (f["year"], fold(f["title"]))
 
     def minutes(f):
         """Runtime that counts toward the weight: none until it is out."""
@@ -86,14 +126,16 @@ def main():
         assert got, "era %r is empty" % key
         items = []
         for f in got:
-            bits = [f["director"]]
+            # the anthology V/H/S: SCP has no director named yet
+            bits = ["Director TBA" if f["director"] == "TBA"
+                    else f["director"]]
             if f["note"]:
                 bits.append(f["note"])
             if f["status"] == "scheduled":
                 bits.append("Not out yet")
             items.append({
-                "id": "a24-%d-%s" % (f["year"], fold(f["title"])),
-                "t": f["title"], "n": str(f["year"]),
+                "id": row_id(f),
+                "t": TITLE.get(f["page"], f["title"]), "n": str(f["year"]),
                 "w": round(minutes(f) / 60.0, 2) if minutes(f) else 0.0,
                 "note": " · ".join(bits),
             })
@@ -115,6 +157,17 @@ def main():
     have = [f for f in films if minutes(f)]
     hours = sum(minutes(f) for f in have) / 60.0
     no_rt_released = [f for f in released if not f["runtime"]]
+
+    # where the year-only rows sit, said once in the first note
+    years = sorted({f["year"] for f in year_only})
+    if not year_only:
+        year_only_clause = ""
+    elif len(years) == 1:
+        year_only_clause = ("; %d of them carry only a year, %d, and sit at "
+                            "the end of it" % (len(year_only), years[0]))
+    else:
+        year_only_clause = ("; %d of them carry only a year and sit at the "
+                            "end of theirs" % len(year_only))
 
     prop = {
         "slug": SLUG,
@@ -141,11 +194,11 @@ def main():
             ["Every film with a release date.",
              "%d released and %d upcoming films, in release order, from "
              "Wikipedia's List of A24 films. The %d films that have started "
-             "shooting but carry no date, and the %d in development, are not "
+             "shooting with no year yet, and the %d in development, are not "
              "listed — they join once A24 dates them. Upcoming rows are "
-             "marked \"Not out yet\"."
-             % (len(released), len(coming), meta["excluded_undated"],
-                meta["excluded_in_development"])],
+             "marked \"Not out yet\"%s."
+             % (len(released), len(coming), meta["excluded_no_year"],
+                meta["excluded_in_development"], year_only_clause)],
             ["A24 distributes some films and produces others.",
              "The source list does not separate them into tables; its Notes "
              "column does. The early years are almost all acquisitions — "
@@ -171,8 +224,9 @@ def main():
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
 
     print("wrote %s.json" % SLUG)
-    print("  %d films (%d released, %d upcoming), %.1f hours weighted"
-          % (len(films), len(released), len(coming), hours))
+    print("  %d films (%d released, %d upcoming, %d of those year-only), "
+          "%.1f hours weighted"
+          % (len(films), len(released), len(coming), len(year_only), hours))
     print("  weigh nothing: %d (%d released with no runtime on Wikidata, "
           "%d upcoming)" % (len(no_rt_released) + len(coming),
                             len(no_rt_released), len(coming)))
