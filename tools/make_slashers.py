@@ -269,10 +269,13 @@ def sync_partners(rows):
     build.py groups film rows across lists on normalized title + year — with
     a fallback to a single year found in the note, which is how Criterion's
     spine-numbered rows join in — so this reproduces that key rather than
-    guessing at it. Every overlap is found, not just the expected one: the
-    notes claim Halloween (1978) is the only shared film, and that claim has
-    to be checked against the catalogue as it stands today, since other
-    lists are being added all the time.
+    guessing at it. Every overlap is found and returned, keyed by this list's
+    row id, each mapping to sorted (slug, id, title) triples; the notes are
+    built from exactly this, so they name every shared film and every list it
+    sits on as the catalogue stands today. Other lists are added all the
+    time, so a later run can find more than the committed notes say — that
+    is drift, and a fresh run is the fix. The one fixed expectation is that
+    the John Carpenter list carries Halloween (1978).
     """
     want = {"%s|%s" % (normt(x["t"]), x["n"]): x["id"] for x in rows}
     out = {}
@@ -295,13 +298,10 @@ def sync_partners(rows):
                 if year and key in want:
                     out.setdefault(want[key], []).append(
                         (p["slug"], x["id"], p["title"]))
-    assert set(out) == {"sl-1978-halloween"}, \
-        "the catalogue overlap changed — the notes say Halloween (1978) is " \
-        "the only shared film, but found %s" % sorted(out)
-    got = out["sl-1978-halloween"]
+    got = out.get("sl-1978-halloween", [])
     assert any(s == "carpenter" for s, _, _ in got), \
         "the John Carpenter list no longer carries Halloween (1978): %s" % got
-    return sorted(got)
+    return {k: sorted(v) for k, v in out.items()}
 
 
 def main():
@@ -408,9 +408,29 @@ def main():
         got = released(d[key]["films"])
         return "from %d to %d" % (got[0]["date"][0], got[-1]["date"][0])
 
-    titles = [t for _, _, t in partners]
-    others = (" and ".join(titles) if len(titles) < 3
-              else ", ".join(titles[:-1]) + " and " + titles[-1])
+    def joined(names):
+        return (" and ".join(names) if len(names) < 3
+                else ", ".join(names[:-1]) + " and " + names[-1])
+
+    # one entry per shared film, in row order: the film as the notes name it,
+    # and every list it also sits on (a list carrying it twice is named once)
+    shared = []
+    for x in rows:
+        if x["id"] in partners:
+            titles = []
+            for _, _, t in partners[x["id"]]:
+                if t not in titles:
+                    titles.append(t)
+            shared.append(("%s (%s)" % (x["t"], x["n"]), titles))
+    assert shared, "no shared film, so the overlap notes have nothing to say"
+    overlap_notes = [
+        ["%s is shared with %s."
+         % (film, "another list" if len(titles) == 1 else "other lists"),
+         "It also sits on %s, and ticking it in any one of those places "
+         "ticks it in all of them." % joined(titles)]
+        for film, titles in shared]
+    # every overlap was computed above, so this is checked, not assumed
+    overlap_notes[-1][1] += " Nothing else on this list overlaps the catalogue."
     p = {
         "slug": SLUG,
         "title": "Slashers",
@@ -464,11 +484,7 @@ def main():
              "1978 from 2007 and 2018, and a row whose runtime could not be "
              "read would fail the build rather than ship as a guess."
              % round(hours)],
-            ["Halloween (1978) is shared with %s."
-             % ("another list" if len(partners) == 1 else "other lists"),
-             "It also sits on %s, and ticking it in any one of those places "
-             "ticks it in all of them. Nothing else on this list overlaps the "
-             "catalogue." % others],
+            *overlap_notes,
             ["Not included.",
              "The untitled Nightmare on Elm Street film in that franchise's "
              "table has no release date and no runtime, so it is not a row "
@@ -489,7 +505,8 @@ def main():
           % (out.name, len(rows), hours, mins))
     for s in sections:
         print("   %-26s %2d  %s" % (s["title"][:26], len(s["items"]), s["sub"]))
-    print("   Halloween (1978) sync partners: %s" % (others or "none"))
+    for film, titles in shared:
+        print("   %s sync partners: %s" % (film, joined(titles)))
 
 
 if __name__ == "__main__":

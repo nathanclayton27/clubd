@@ -111,12 +111,6 @@ NO_GENERATOR = {
 # holds a list nobody can rebuild and nobody noticed.
 CANNOT_RUN = {
     "make_secret.py": ((), "prompts for the password of the gated list"),
-    "make_slashers.py": (
-        ("slashers",),
-        "asserts on its own catalogue-overlap note - it expects Halloween "
-        "(1978) to be the only film shared with another list and now finds "
-        "Friday the 13th (1980) as well. Found by the CLU-552 sweep; slashers "
-        "stays UNCHECKED until the note and the assert agree again."),
 }
 
 # A generator whose list properties/ no longer has. Running one would create an
