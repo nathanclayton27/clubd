@@ -25,8 +25,14 @@ import collections
 
 PROPS = pathlib.Path("properties")
 ID_OK = re.compile(r"^[A-Za-z][A-Za-z0-9_-]*$")
+# Any HTML tag and any entity, not just <ref, <br and &nbsp;: the page escapes
+# every string, so markup prints as literal text. Two Ghost in the Shell titles
+# shipped as "Ag<sub>2</sub>O" and "<sup>239</sup>Pu" past the narrower list
+# (CLU-578), as The Simpsons' "&hairsp;" had (CLU-186).
 WIKI_JUNK = re.compile(r"\[\[|\]\]|\{\{|\}\}|<ref|</ref|''|&nbsp;|<br|\|\||File:|thumb\|"
-                       r"|rowspan=|colspan=|scope=|align=|style=")
+                       r"|rowspan=|colspan=|scope=|align=|style="
+                       r"|</?[A-Za-z][A-Za-z0-9]*(?:\s[^<>]*)?/?>"
+                       r"|&(?:#\d+|#x[0-9A-Fa-f]+|[A-Za-z][A-Za-z0-9]*);")
 HEX = re.compile(r"^#[0-9A-Fa-f]{6}$")
 ZERO_PHRASE = re.compile(r"\b0 (films?|seasons?|games?|episodes?|entries|shows?|winners?)\b")
 

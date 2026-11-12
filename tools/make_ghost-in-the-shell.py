@@ -47,6 +47,7 @@ Adding a medium letter and a work id changes no row id, so no tick moves.
 """
 import json
 import pathlib
+import re
 
 SLUG = "ghost-in-the-shell"
 
@@ -275,6 +276,15 @@ def main():
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
     assert len(ids) == 96, len(ids)
+    # A title carrying markup or an HTML entity is a shipped defect, and it
+    # happened here (CLU-578): two SAC titles shipped as "Ag<sub>2</sub>O"
+    # and "<sup>239</sup>Pu", and the page escapes titles, so the tags
+    # printed. The harvester now writes Ag₂O and ²³⁹Pu; this catches a
+    # hand-edited data file too.
+    for s in sections:
+        for x in s["items"]:
+            assert not re.search(r"&[A-Za-z]+;|&#\d+;|\{\{|\}\}|\[\[|\]\]|<",
+                                 x["t"]), "markup in title: %r" % x["t"]
     hours = sum(x["w"] for s in sections for x in s["items"])
 
     prop = {
