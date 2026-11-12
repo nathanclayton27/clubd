@@ -204,7 +204,7 @@
     "kind": "tv & films",
     "year": "1966–2026",
     "popularity": 92,
-    "blurb": "Sixty years of it in the order it was made — 951 episodes across eleven series, with the thirteen films sitting beside the crews they belong to.",
+    "blurb": "Sixty years of it in the order it was made — 961 episodes across twelve series, with the thirteen films sitting beside the crews they belong to.",
     "accent": "#392B63",
     "accentDark": "#FFC08A",
     "unit": {
@@ -212,7 +212,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 941
+    "total": 951
   },
   {
     "slug": "zelda",
@@ -248,7 +248,7 @@
     "kind": "anime",
     "year": "1999–",
     "popularity": 91,
-    "blurb": "1174 episodes, 49 arcs, the filler is optional.",
+    "blurb": "1180 episodes, 49 arcs, the filler is optional.",
     "accent": "#B8531F",
     "accentDark": "#E8904A",
     "unit": {
@@ -256,7 +256,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 1174
+    "total": 1180
   },
   {
     "slug": "marvel-comics",
@@ -277,7 +277,7 @@
     },
     "vpast": "read",
     "total": 13,
-    "totalw": 6740.0,
+    "totalw": 6742.0,
     "doors": 13,
     "hub": true,
     "mega": true
@@ -1154,9 +1154,9 @@
     "title": "Tom Cruise",
     "subtitle": "the acting filmography, in release order",
     "kind": "films",
-    "year": "1981–2025",
+    "year": "1981–2026",
     "popularity": 79,
-    "blurb": "45 films in release order, 1981 to 2025 — about 94 hours, 8 of them as Ethan Hunt.",
+    "blurb": "46 films in release order, 1981 to 2026 — about 96 hours, 8 of them as Ethan Hunt.",
     "accent": "#1F6F63",
     "accentDark": "#6FD0B8",
     "unit": {
@@ -1164,8 +1164,8 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 45,
-    "totalw": 93.92
+    "total": 47,
+    "totalw": 96.07
   },
   {
     "slug": "dragon-ball-manga",
@@ -1649,7 +1649,7 @@
     "kind": "comics",
     "year": "1974–2026",
     "popularity": 74,
-    "blurb": "The runs that made the character, as 328 issues in publication order — the Claremont/Miller miniseries, Weapon X, Larry Hama's seven years on the ongoing, Old Man Logan, Aaron, and the solo book since. His X-Men issues are on the X-Men list.",
+    "blurb": "The runs that made the character, as 330 issues in publication order — the Claremont/Miller miniseries, Weapon X, Larry Hama's seven years on the ongoing, Old Man Logan, Aaron, and the solo book since. His X-Men issues are on the X-Men list.",
     "accent": "#7B5230",
     "accentDark": "#D9A468",
     "unit": {
@@ -1657,8 +1657,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 328,
-    "totalw": 328.0
+    "total": 330,
+    "totalw": 330.0
   },
   {
     "slug": "cowboy-bebop",
@@ -4392,11 +4392,11 @@
       "movies"
     ],
     "title": "Made in Abyss",
-    "subtitle": "both seasons, and the one film that is not a re-cut",
+    "subtitle": "both seasons, and the two films that are not re-cuts",
     "kind": "anime & films",
-    "year": "2017–2022",
+    "year": "2017–2026",
     "popularity": 55,
-    "blurb": "Kinema Citrus' descent, in the source's own order — twenty five episodes and the sequel film between the seasons, with the two compilation films left off.",
+    "blurb": "Kinema Citrus' descent, in the source's own order — twenty five episodes, the sequel film between the seasons and the 2026 film after them, with the two compilation films left off.",
     "accent": "#1F5E63",
     "accentDark": "#E8C36A",
     "unit": {
@@ -4404,7 +4404,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 26
+    "total": 27
   },
   {
     "slug": "wyler",
@@ -5173,7 +5173,7 @@
     "kind": "anime",
     "year": "fan recut",
     "popularity": 33,
-    "blurb": "435 episodes, 36 arcs, no filler and no padding.",
+    "blurb": "474 episodes, 36 arcs, no filler and no padding.",
     "accent": "#2E7A6B",
     "accentDark": "#5FBFA8",
     "unit": {
@@ -5181,7 +5181,7 @@
       "many": "episodes"
     },
     "vpast": "watched",
-    "total": 435
+    "total": 474
   },
   {
     "slug": "worst-directors-cuts",
