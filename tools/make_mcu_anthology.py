@@ -3,24 +3,28 @@
 
     python3 tools/make_mcu_anthology.py
 
-Every live-action Marvel film from Blade (1998) to Avengers: Doomsday (2026) in
-release order, with the Marvel Studios series slotted in by premiere date, and a
-tier on each entry saying how much the through-line needs it.
+Every live-action Marvel film from Blade (1998) on, in release order, with the
+Marvel Studios series slotted in by premiere date, and a tier on each entry
+saying how much the through-line needs it.
 
 Sources, all machine-read rather than typed:
   - film list and years: Wikipedia, List of films based on Marvel Comics
-    publications, live-action feature table
+    publications, live-action feature table; that table only takes a film once
+    it is filming, so the dated MCU films after it come from the Phase Six
+    article and the List of Marvel Cinematic Universe films
   - film runtimes and exact release dates: Wikidata P2047 and P577
   - show premiere dates: the Marvel Cinematic Universe Phase Four/Five/Six
-    articles
+    articles, and for Phase Seven the List of Marvel Cinematic Universe
+    television series (Marvel Studios). A date the source only gives to the
+    month or year is stored with 00 for the missing parts
   - episode counts: Wikidata P1113, with three season articles read directly
     where the property was missing
 
 Runtime is the weight, in hours, so the bars are as wide as the thing takes.
 Films use their real runtime. A season uses episodes times episode length,
 which is a measured number for five of them and a stated assumption for the
-rest — 45 minutes live action, 32 animated. Two unreleased entries weigh
-nothing so they cannot drag a group's pace line.
+rest — 45 minutes live action, 32 animated. Unreleased entries weigh nothing
+so they cannot drag a group's pace line.
 
 Tiers sit on the item, not the section: a single year holds a film the whole
 saga turns on and a spin-off nobody needs, and they belong next to each other
@@ -39,6 +43,7 @@ T1 = {
     "Avengers: Infinity War", "Avengers: Endgame", "Spider-Man: No Way Home",
     "Doctor Strange in the Multiverse of Madness", "Thunderbolts*",
     "The Fantastic Four: First Steps", "Avengers: Doomsday",
+    "Avengers: Secret Wars",
 }
 # T2 — properly connected: introduces someone or something a T1 entry uses.
 T2 = {
@@ -48,7 +53,7 @@ T2 = {
     "Shang-Chi and the Legend of the Ten Rings", "Black Panther: Wakanda Forever",
     "Ant-Man and the Wasp: Quantumania", "Guardians of the Galaxy Vol. 3",
     "Deadpool & Wolverine", "Captain America: Brave New World",
-    "Spider-Man: Brand New Day",
+    "Spider-Man: Brand New Day", "Black Panther III",
 }
 SHOW_T1 = {("Loki", "2021-06-09"), ("Loki", "2023-10-05")}
 SHOW_T2 = {
@@ -57,6 +62,7 @@ SHOW_T2 = {
     ("Hawkeye", "2021-11-24"), ("Ms. Marvel", "2022-06-08"),
     ("Daredevil: Born Again", "2025-03-04"),
     ("Daredevil: Born Again", "2026-03-24"),
+    ("Daredevil: Born Again", "2027-03-00"),
 }
 
 # A handful of one-line notes. Same rule as the comic lists: say what an entry
@@ -71,10 +77,32 @@ NOTE = {
     "Deadpool & Wolverine": "Marvel Studios' first R-rated film",
     "Logan": "Outside the MCU, and the best of the Fox films",
     "Avengers: Doomsday": "Not out yet — 18 December 2026",
+    "Avengers: Secret Wars": "Not out yet — 17 December 2027",
+    "Untitled X-Men film": "Not out yet — 5 May 2028",
+    "Ghost Rider (2028)": "Not out yet — 28 July 2028",
+    "Black Panther III": "Not out yet — 15 December 2028",
 }
 SHOW_NOTE = {
     ("Loki", "2021-06-09"): "Sets up the premise the whole Multiverse Saga runs on",
-    ("VisionQuest", "2026-10-14"): "Not out yet — October 2026",
+}
+# Announced with a date and not out yet: these weigh nothing, and the row says
+# when it is due, to whatever precision the source gives
+SHOW_DUE = {
+    ("Your Friendly Neighborhood Spider-Man", "2027-01-13"): "13 January 2027",
+    ("Daredevil: Born Again", "2027-03-00"): "March 2027",
+    ("Marvel Zombies: The Winter Soldier", "2027-10-00"): "October 2027",
+    ("Zodiac", "2028-00-00"): "2028",
+    ("Marvel Zombies: The Fist of Khonshu", "2028-10-00"): "October 2028",
+    ("Marvel Zombies: The Last Guardian", "2029-10-00"): "October 2029",
+}
+OTHER_DUE = {"X-Men '97 season 3": "2027", "X-Men '97 season 4": "2028"}
+
+# Adding a second season renames the first ("… season 1"), which would move its
+# id — and an id is where every viewer's tick is stored. These keep the id the
+# row had before it got a sibling.
+SHOW_ID = {
+    ("Your Friendly Neighborhood Spider-Man", "2025-01-29"):
+        "mv-t-2025-your-friendly-neighborhood-spider-man",
 }
 
 
@@ -98,6 +126,8 @@ MCU = {
     "The Marvels", "Deadpool & Wolverine", "Captain America: Brave New World",
     "Thunderbolts*", "The Fantastic Four: First Steps",
     "Spider-Man: Brand New Day", "Avengers: Doomsday",
+    "Avengers: Secret Wars", "Untitled X-Men film", "Ghost Rider (2028)",
+    "Black Panther III",
 }
 
 
@@ -126,14 +156,18 @@ PHASE = {
            "The Marvels", "Deadpool & Wolverine",
            "Captain America: Brave New World", "Thunderbolts*"],
     "p6": ["The Fantastic Four: First Steps", "Spider-Man: Brand New Day",
-           "Avengers: Doomsday"],
+           "Avengers: Doomsday", "Avengers: Secret Wars"],
+    "p7": ["Untitled X-Men film", "Ghost Rider (2028)", "Black Panther III"],
 }
 FILM_PHASE = {t: k for k, v in PHASE.items() for t in v}
 assert set(FILM_PHASE) == MCU, sorted(set(FILM_PHASE) ^ MCU)
-SHOW_PHASE = {"Four": "p4", "Five": "p5", "Six": "p6"}
+SHOW_PHASE = {"Four": "p4", "Five": "p5", "Six": "p6", "Seven": "p7"}
 
 ANIMATED = {"What If...?", "Eyes of Wakanda", "Marvel Zombies",
-            "Your Friendly Neighborhood Spider-Man"}
+            "Your Friendly Neighborhood Spider-Man",
+            "Marvel Zombies: The Winter Soldier",
+            "Marvel Zombies: The Fist of Khonshu",
+            "Marvel Zombies: The Last Guardian"}
 
 # episode counts read from the season articles where Wikidata had no P1113
 FILL_EPISODES = {("Loki", "2023-10-05"): 6, ("What If...?", "2023-12-22"): 9,
@@ -158,10 +192,13 @@ ERAS = [
      "Where the Disney+ series start, and where the films stop assuming you have "
      "seen everything."),
     ("p5", "Phase Five", "2022–2025", "2022-11-12", "2025-05-02", ""),
-    ("p6", "Phase Six", "2025–", "2025-05-03", "9999-99-99",
-     "Still going. Two entries here are not out yet and weigh nothing, so they "
+    ("p6", "Phase Six", "2025–2027", "2025-05-03", "2027-12-31",
+     "Still going. %(due)s not out yet and %(weigh)s nothing, so %(they)s "
      "cannot make anyone late."),
+    ("p7", "Phase Seven", "2028–", "2028-00-00", "9999-99-99", ""),
 ]
+WORDS = ["No", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight",
+         "Nine", "Ten", "Eleven", "Twelve"]
 
 
 
@@ -199,8 +236,12 @@ def main():
     spiderverse = json.loads((data / "spiderverse.json").read_text(encoding="utf-8"))
 
     entries = []
+    # Ghost Rider (2028) shares its title with the 2007 Sony film, and the sets
+    # above are keyed by title, so a repeated title is keyed with its year
+    seen = [f["title"] for f in films]
     for f in films:
-        title, key = f["title"], f["title"]
+        title = f["title"]
+        key = "%s (%d)" % (title, f["year"]) if seen.count(title) > 1 else title
         mins = f["runtime"] or 0
         entries.append({
             "id": "mv-f-%d-%s" % (f["year"], slug(title)),
@@ -209,26 +250,27 @@ def main():
             "tier": 1 if key in T1 else (2 if key in T2 else 3),
             "note": NOTE.get(key, ""),
             "date": film_date(f),
-            "kind": "film", "mins": mins, "mcu": title in MCU,
-            "phase": FILM_PHASE.get(title),
+            "kind": "film", "mins": mins, "mcu": key in MCU,
+            "phase": FILM_PHASE.get(key),
         })
 
     for s in shows:
         key = (s["title"], s["released"])
         eps = s["episodes"] or FILL_EPISODES.get(key) or 0
         per = s["ep_minutes"] or (32 if s["title"] in ANIMATED else 45)
-        mins = 0 if key == ("VisionQuest", "2026-10-14") else eps * per
+        mins = 0 if key in SHOW_DUE else eps * per
         season = ""
         same = [x for x in shows if x["title"] == s["title"]]
         if len(same) > 1:
             season = " season %d" % (sorted(x["released"] for x in same).index(s["released"]) + 1)
         entries.append({
-            "id": "mv-t-%s-%s" % (s["released"][:4], slug(s["title"] + season)),
+            "id": SHOW_ID.get(key) or "mv-t-%s-%s" % (s["released"][:4], slug(s["title"] + season)),
             "t": s["title"] + season,
             "n": s["released"][:4],
             "w": round(mins / 60.0, 2),
             "tier": 1 if key in SHOW_T1 else (2 if key in SHOW_T2 else 3),
-            "note": SHOW_NOTE.get(key, "%d episodes" % eps if eps else ""),
+            "note": ("Not out yet — " + SHOW_DUE[key]) if key in SHOW_DUE
+                    else SHOW_NOTE.get(key, "%d episodes" % eps if eps else ""),
             "date": s["released"], "kind": "show", "mins": mins, "mcu": True,
             "phase": SHOW_PHASE.get(s["phase"]),
         })
@@ -253,12 +295,15 @@ def main():
         })
 
     for r in othertv:
-        eps = r["episodes"]
-        mins = eps * (r["ep_minutes"] or 45)
+        eps = r["episodes"] or 0
+        due = OTHER_DUE.get(r["page"])
+        mins = 0 if due else eps * (r["ep_minutes"] or 45)
         # the page name already carries the season where there is more than one
         tail = r["page"].rsplit(" season ", 1)
         name = r["title"] + (" season " + tail[1] if len(tail) == 2 else "")
-        if eps == 1:
+        if due:
+            note = "Not out yet — " + due
+        elif eps == 1:
             note = "A %d-minute special" % (r["ep_minutes"] or 45)
         else:
             note = "%d episodes" % eps
@@ -318,6 +363,12 @@ def main():
             continue
         films_n = sum(1 for e in got if e["kind"] == "film")
         shows_n = len(got) - films_n
+        due_n = sum(1 for e in got if not e["mins"])
+        if "%(due)s" in intro:
+            one = due_n == 1
+            intro = intro % {
+                "due": "%s %s" % (WORDS[due_n], "entry here is" if one else "entries here are"),
+                "weigh": "weighs" if one else "weigh", "they": "it" if one else "they"}
         if sid != "premcu":
             for e in got:
                 if e["mcu"]:
@@ -337,9 +388,10 @@ def main():
                  else "%d–%d" % (row_years[0], row_years[-1]))
         sec = {
             "id": sid, "tier": 1, "title": title,
-            "sub": "%s · %d film%s%s · %.0f hours"
-                   % (years, films_n, "" if films_n == 1 else "s",
-                      "" if not shows_n else " and %d season%s" % (shows_n, "" if shows_n == 1 else "s"),
+            "sub": "%s · %s · %.0f hours"
+                   % (years, " and ".join(
+                       ["%d film%s" % (films_n, "" if films_n == 1 else "s")] * bool(films_n)
+                       + ["%d season%s" % (shows_n, "" if shows_n == 1 else "s")] * bool(shows_n)),
                       sum(e["mins"] for e in got) / 60.0),
             "items": [{k: v for k, v in e.items()
                        if k in ("id", "t", "n", "w", "tier") or (k == "note" and v)}
@@ -410,18 +462,20 @@ def main():
             ["Bar widths are runtimes.", "Films use their real runtime from "
              "Wikidata. A season uses episodes times episode length, which is a "
              "measured figure for five of them and a stated assumption for the "
-             "rest — 45 minutes live action, 32 animated. Avengers: Doomsday and "
-             "VisionQuest are not out yet and weigh nothing."],
+             "rest — 45 minutes live action, 32 animated. The %d entries that "
+             "are not out yet weigh nothing." % sum(1 for e in entries if not e["mins"])],
             ["Everything is here.", "The films, the Disney+ series, the Netflix "
              "run, the ABC and Hulu shows, the Special Presentations and "
              "X-Men '97 — which is on the page despite continuing the 1992 "
              "cartoon rather than the MCU, and says so on its row. Runaways is "
              "one entry rather than three: its article gives per-season episode "
              "counts but only season one's date."],
-            "Film list from Wikipedia's live-action Marvel features table; "
-            "runtimes and release dates from Wikidata; show premieres from the "
-            "MCU phase articles and episode counts from Wikidata. The tier "
-            "assignments are a judgement call, not a source.",
+            "Film list from Wikipedia's live-action Marvel features table, with "
+            "the announced MCU films from its list of MCU films; runtimes and "
+            "release dates from Wikidata; show premieres from the MCU phase "
+            "articles and the list of MCU series, and episode counts from "
+            "Wikidata. The tier assignments "
+            "are a judgement call, not a source.",
         ],
         "sections": sections,
     }

@@ -162,9 +162,57 @@
  {
   "title": "VisionQuest",
   "phase": "Six",
-  "released": "2026-10-14",
+  "released": "2026-10-13",
+  "episodes": 8,
+  "page": "VisionQuest",
+  "ep_minutes": null
+ },
+ {
+  "title": "Your Friendly Neighborhood Spider-Man",
+  "phase": "Six",
+  "released": "2027-01-13",
   "episodes": null,
-  "page": "VisionQuest (miniseries)",
+  "page": "Your Friendly Neighborhood Spider-Man season 2",
+  "ep_minutes": null
+ },
+ {
+  "title": "Daredevil: Born Again",
+  "phase": "Six",
+  "released": "2027-03-00",
+  "episodes": 8,
+  "page": "Daredevil: Born Again season 3",
+  "ep_minutes": null
+ },
+ {
+  "title": "Marvel Zombies: The Winter Soldier",
+  "phase": "Six",
+  "released": "2027-10-00",
+  "episodes": 2,
+  "page": "Marvel Zombies (TV series)",
+  "ep_minutes": null
+ },
+ {
+  "title": "Zodiac",
+  "phase": "Seven",
+  "released": "2028-00-00",
+  "episodes": null,
+  "page": "Zodiac (TV series)",
+  "ep_minutes": null
+ },
+ {
+  "title": "Marvel Zombies: The Fist of Khonshu",
+  "phase": "Seven",
+  "released": "2028-10-00",
+  "episodes": 2,
+  "page": "Marvel Zombies (TV series)",
+  "ep_minutes": null
+ },
+ {
+  "title": "Marvel Zombies: The Last Guardian",
+  "phase": "Seven",
+  "released": "2029-10-00",
+  "episodes": 2,
+  "page": "Marvel Zombies (TV series)",
   "ep_minutes": null
  }
 ]

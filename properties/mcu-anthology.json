@@ -6,7 +6,7 @@
   "kind": "films & shows",
   "popularity": 95,
   "year": "1998–2026",
-  "blurb": "79 films and 53 seasons in the order they came out — about 575 hours, tiered by how much the story needs each one.",
+  "blurb": "83 films and 61 seasons in the order they came out — about 581 hours, tiered by how much the story needs each one.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -37,17 +37,17 @@
     ],
     [
       "Tier 1 alone is 41 hours.",
-      "Tiers 1 and 2 together are 143 hours across 43 entries. Everything on the page is 575 hours. The finish date only counts tiers 1 and 2 — there is a checkbox under the bar if you want the rest included."
+      "Tiers 1 and 2 together are 143 hours across 46 entries. Everything on the page is 581 hours. The finish date only counts tiers 1 and 2 — there is a checkbox under the bar if you want the rest included."
     ],
     [
       "Bar widths are runtimes.",
-      "Films use their real runtime from Wikidata. A season uses episodes times episode length, which is a measured figure for five of them and a stated assumption for the rest — 45 minutes live action, 32 animated. Avengers: Doomsday and VisionQuest are not out yet and weigh nothing."
+      "Films use their real runtime from Wikidata. A season uses episodes times episode length, which is a measured figure for five of them and a stated assumption for the rest — 45 minutes live action, 32 animated. The 14 entries that are not out yet weigh nothing."
     ],
     [
       "Everything is here.",
       "The films, the Disney+ series, the Netflix run, the ABC and Hulu shows, the Special Presentations and X-Men '97 — which is on the page despite continuing the 1992 cartoon rather than the MCU, and says so on its row. Runaways is one entry rather than three: its article gives per-season episode counts but only season one's date."
     ],
-    "Film list from Wikipedia's live-action Marvel features table; runtimes and release dates from Wikidata; show premieres from the MCU phase articles and episode counts from Wikidata. The tier assignments are a judgement call, not a source."
+    "Film list from Wikipedia's live-action Marvel features table, with the announced MCU films from its list of MCU films; runtimes and release dates from Wikidata; show premieres from the MCU phase articles and the list of MCU series, and episode counts from Wikidata. The tier assignments are a judgement call, not a source."
   ],
   "sections": [
     {
@@ -988,7 +988,7 @@
         },
         {
           "id": "mv-t-2025-your-friendly-neighborhood-spider-man",
-          "t": "Your Friendly Neighborhood Spider-Man",
+          "t": "Your Friendly Neighborhood Spider-Man season 1",
           "n": "2025",
           "w": 5.33,
           "tier": 3,
@@ -1030,7 +1030,7 @@
       "id": "p6",
       "tier": 1,
       "title": "Phase Six",
-      "sub": "2025– · 4 films and 7 seasons · 26 hours",
+      "sub": "2025–2027 · 5 films and 11 seasons · 32 hours",
       "items": [
         {
           "id": "mv-f-2025-the-fantastic-four-first-steps",
@@ -1098,9 +1098,9 @@
           "id": "mv-t-2026-visionquest",
           "t": "VisionQuest",
           "n": "2026",
-          "w": 0.0,
+          "w": 6.0,
           "tier": 3,
-          "note": "Not out yet — October 2026"
+          "note": "8 episodes"
         },
         {
           "id": "mv-f-2026-avengers-doomsday",
@@ -1111,15 +1111,119 @@
           "note": "Not out yet — 18 December 2026"
         },
         {
+          "id": "mv-o-x-men-97-season-3",
+          "t": "X-Men '97 season 3",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Continues the 1992 cartoon, not the MCU · Not out yet — 2027"
+        },
+        {
+          "id": "mv-t-2027-your-friendly-neighborhood-spider-man-season-2",
+          "t": "Your Friendly Neighborhood Spider-Man season 2",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — 13 January 2027"
+        },
+        {
+          "id": "mv-t-2027-daredevil-born-again-season-3",
+          "t": "Daredevil: Born Again season 3",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 2,
+          "note": "Not out yet — March 2027"
+        },
+        {
           "id": "mv-f-2027-spider-man-beyond-the-spider-verse",
           "t": "Spider-Man: Beyond the Spider-Verse",
           "n": "2027",
           "w": 0.0,
           "tier": 3,
           "note": "Not an MCU film — it just came out during Phase Six · Not out yet — June 2027"
+        },
+        {
+          "id": "mv-t-2027-marvel-zombies-the-winter-soldier",
+          "t": "Marvel Zombies: The Winter Soldier",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — October 2027"
+        },
+        {
+          "id": "mv-f-2027-avengers-secret-wars",
+          "t": "Avengers: Secret Wars",
+          "n": "2027",
+          "w": 0.0,
+          "tier": 1,
+          "note": "Not out yet — 17 December 2027"
         }
       ],
-      "intro": "Still going. Two entries here are not out yet and weigh nothing, so they cannot make anyone late."
+      "intro": "Still going. Seven entries here are not out yet and weigh nothing, so they cannot make anyone late."
+    },
+    {
+      "id": "p7",
+      "tier": 1,
+      "title": "Phase Seven",
+      "sub": "2028– · 3 films and 4 seasons · 0 hours",
+      "items": [
+        {
+          "id": "mv-o-x-men-97-season-4",
+          "t": "X-Men '97 season 4",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Continues the 1992 cartoon, not the MCU · Not out yet — 2028"
+        },
+        {
+          "id": "mv-t-2028-zodiac",
+          "t": "Zodiac",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — 2028"
+        },
+        {
+          "id": "mv-f-2028-untitled-x-men-film",
+          "t": "Untitled X-Men film",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — 5 May 2028"
+        },
+        {
+          "id": "mv-f-2028-ghost-rider",
+          "t": "Ghost Rider",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — 28 July 2028"
+        },
+        {
+          "id": "mv-t-2028-marvel-zombies-the-fist-of-khonshu",
+          "t": "Marvel Zombies: The Fist of Khonshu",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — October 2028"
+        },
+        {
+          "id": "mv-f-2028-black-panther-iii",
+          "t": "Black Panther III",
+          "n": "2028",
+          "w": 0.0,
+          "tier": 2,
+          "note": "Not out yet — 15 December 2028"
+        },
+        {
+          "id": "mv-t-2029-marvel-zombies-the-last-guardian",
+          "t": "Marvel Zombies: The Last Guardian",
+          "n": "2029",
+          "w": 0.0,
+          "tier": 3,
+          "note": "Not out yet — October 2029"
+        }
+      ]
     }
   ]
 }

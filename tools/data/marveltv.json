@@ -169,5 +169,23 @@
   "released": "2026-07-01",
   "episodes": 9,
   "ep_minutes": 32
+ },
+ {
+  "title": "X-Men '97",
+  "page": "X-Men '97 season 3",
+  "studios": false,
+  "phase": null,
+  "released": "2027-00-00",
+  "episodes": null,
+  "ep_minutes": null
+ },
+ {
+  "title": "X-Men '97",
+  "page": "X-Men '97 season 4",
+  "studios": false,
+  "phase": null,
+  "released": "2028-00-00",
+  "episodes": null,
+  "ep_minutes": null
  }
 ]
