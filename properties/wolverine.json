@@ -5,7 +5,7 @@
   "kind": "comics",
   "popularity": 74,
   "year": "1974–2026",
-  "blurb": "The runs that made the character, as 328 issues in publication order — the Claremont/Miller miniseries, Weapon X, Larry Hama's seven years on the ongoing, Old Man Logan, Aaron, and the solo book since. His X-Men issues are on the X-Men list.",
+  "blurb": "The runs that made the character, as 330 issues in publication order — the Claremont/Miller miniseries, Weapon X, Larry Hama's seven years on the ongoing, Old Man Logan, Aaron, and the solo book since. His X-Men issues are on the X-Men list.",
   "unit": {
     "one": "issue",
     "many": "issues"
@@ -3319,6 +3319,24 @@
           "id": "wolv-v8-27",
           "t": "Wolverine (2024)",
           "n": "#27",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "w": 1
+        },
+        {
+          "id": "wolv-v8-28",
+          "t": "Wolverine (2024)",
+          "n": "#28",
+          "note": "",
+          "star": 0,
+          "opt": 0,
+          "w": 1
+        },
+        {
+          "id": "wolv-v8-29",
+          "t": "Wolverine (2024)",
+          "n": "#29",
           "note": "",
           "star": 0,
           "opt": 0,

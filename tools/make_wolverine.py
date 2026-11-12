@@ -68,7 +68,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 DATA = HERE / "data" / (SLUG + ".json")
 XMEN = HERE.parent / "properties" / "x-men.json"
 
-TODAY = datetime.datetime(2026, 9, 11)
+TODAY = datetime.datetime(2026, 11, 11)
 
 # series key -> (Marvel Database page, row title, id prefix, header label).
 # The header URL is NOT here: it comes from the harvest, which read each volume
@@ -104,7 +104,7 @@ XMEN_BUNDLED = ("xm-wolv82", "xm-xos")
 # The last issue of the current run that has shipped. A dated constant rather
 # than `datetime.now()` so two runs of this generator are byte-identical
 # forever, and asserted against the harvested on-sale dates either side of it.
-AHMED_THROUGH = 27
+AHMED_THROUGH = 29
 
 # Row notes and stars, keyed by (series key, issue number as printed).
 # Everything else ships with an empty note on purpose — an unannotated issue is

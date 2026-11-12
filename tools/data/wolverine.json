@@ -1,6 +1,6 @@
 {
  "source": "Marvel Database (marvel.fandom.com), read through api.php: list=allpages for each volume's issue pages, then prop=revisions for each page's Comic Template infobox, and prop=revisions|info for the volume pages themselves.",
- "fetched": "2026-09-11",
+ "fetched": "2026-09-11; Wolverine Vol 8 re-fetched 2026-11-11",
  "harvester": "scratch/agent-wolverine/fetch.py + scratch/agent-wolverine/parse.py",
  "volumes": {
   "Incredible Hulk Vol 1": {
@@ -26296,22 +26296,24 @@
    "lead": [
     "Saladin Ahmed"
    ],
-   "penciler": "Julius Ohta",
-   "titles": [],
+   "penciler": "Martin Coccolo",
+   "titles": [
+    "Reforged"
+   ],
    "arcs": [],
    "reprints": [],
    "stories": [
     {
-     "title": "",
+     "title": "Reforged",
      "writers": [
       "Saladin Ahmed"
      ],
-     "penciler": "Julius Ohta",
+     "penciler": "Martin Coccolo",
      "n": 1
     }
    ],
    "wolverine": {
-    "present": false,
+    "present": true,
     "first": false,
     "firstfull": false,
     "cameo": false
@@ -26332,12 +26334,14 @@
     "Saladin Ahmed"
    ],
    "penciler": "Julius Ohta",
-   "titles": [],
+   "titles": [
+    "Aftershocks on the Riviera"
+   ],
    "arcs": [],
    "reprints": [],
    "stories": [
     {
-     "title": "",
+     "title": "Aftershocks on the Riviera",
      "writers": [
       "Saladin Ahmed"
      ],
@@ -26346,7 +26350,7 @@
     }
    ],
    "wolverine": {
-    "present": false,
+    "present": true,
     "first": false,
     "firstfull": false,
     "cameo": false
@@ -26377,6 +26381,76 @@
       "Saladin Ahmed"
      ],
      "penciler": "Martin Coccolo",
+     "n": 1
+    }
+   ],
+   "wolverine": {
+    "present": false,
+    "first": false,
+    "firstfull": false,
+    "cameo": false
+   }
+  },
+  {
+   "vol": "Wolverine Vol 8",
+   "num": 31,
+   "numtext": "31",
+   "month": "March",
+   "year": "2027",
+   "released": "January 6, 2027",
+   "legacy": "Wolverine Vol 2 423",
+   "writers": [
+    "Saladin Ahmed"
+   ],
+   "lead": [
+    "Saladin Ahmed"
+   ],
+   "penciler": "Martin Coccolo",
+   "titles": [],
+   "arcs": [],
+   "reprints": [],
+   "stories": [
+    {
+     "title": "",
+     "writers": [
+      "Saladin Ahmed"
+     ],
+     "penciler": "Martin Coccolo",
+     "n": 1
+    }
+   ],
+   "wolverine": {
+    "present": false,
+    "first": false,
+    "firstfull": false,
+    "cameo": false
+   }
+  },
+  {
+   "vol": "Wolverine Vol 8",
+   "num": 32,
+   "numtext": "32",
+   "month": "April",
+   "year": "2027",
+   "released": "February 3, 2027",
+   "legacy": "Wolverine Vol 2 424",
+   "writers": [
+    "Saladin Ahmed"
+   ],
+   "lead": [
+    "Saladin Ahmed"
+   ],
+   "penciler": "Julius Ohta",
+   "titles": [],
+   "arcs": [],
+   "reprints": [],
+   "stories": [
+    {
+     "title": "",
+     "writers": [
+      "Saladin Ahmed"
+     ],
+     "penciler": "Julius Ohta",
      "n": 1
     }
    ],
