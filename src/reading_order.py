@@ -167,10 +167,17 @@ SECTIONS = [
 ]
 
 
-def slug(t, n):
+def fold(t):
+    """The title half of a row id. Every run of anything but a-z and 0-9 is
+    one dash, so a straight and a curly apostrophe fold alike; it is its own
+    function so tools/idsafe.py can call it and prove that (CLU-652)."""
     base = t.lower()
     base = base.replace("&", "and")
-    base = re.sub(r"[^a-z0-9]+", "-", base).strip("-")
+    return re.sub(r"[^a-z0-9]+", "-", base).strip("-")
+
+
+def slug(t, n):
+    base = fold(t)
     num = n.lower().lstrip("#") or "0"
     num = re.sub(r"[^a-z0-9.]+", "-", num).strip("-")
     return base + "-" + num if num else base

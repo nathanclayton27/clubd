@@ -103,9 +103,20 @@ ITEM_BUILD_KEYS = frozenset({"id", "w", "into", "beside"})
 NO_GENERATOR = {
     "cyberpunk-edgerunners": "hand-written; a scheduled list of nine rows",
     "david-lynch": "hand-written filmography",
-    "hickman-secret-wars": "hand-written; tools/export_secretwars.py reads this "
-                           "file, it does not write it",
 }
+
+# Generators not named make_*.py, checked exactly like the rest.
+# export_secretwars.py writes properties/hickman-secret-wars.json from
+# src/reading_order.py, that list's authoring source (CLU-652).
+OTHER_GENERATORS = ("export_secretwars.py",)
+
+
+def generator_paths():
+    """Every script that writes a list: tools/make_*.py and OTHER_GENERATORS.
+    tools/idsafe.py reads this too, so the two checks cannot disagree about
+    which lists are generated."""
+    return sorted(list(TOOLS.glob("make_*.py"))
+                  + [TOOLS / n for n in OTHER_GENERATORS if (TOOLS / n).exists()])
 
 # Generators that cannot run, the list each one owns, and why. A generator
 # failing for a reason NOT recorded here is a failure: it means the catalogue
@@ -394,14 +405,17 @@ def main(argv=None):
     a = ap.parse_args(argv)
     subset = bool(a.only)
 
-    gens = sorted(TOOLS.glob("make_*.py"))
+    gens = generator_paths()
     if subset:
         def key(s):
             return re.sub(r"[^a-z0-9]", "", s.lower())
         want = {key(x.replace(".py", "").replace("make_", "")) for x in a.only}
+        # the declared slug too, so `hickman-secret-wars` finds
+        # export_secretwars.py, whose name does not carry it
         gens = [g for g in gens
                 if key(g.stem.replace("make_", "")) in want
-                or any(w and w in key(g.stem) for w in want)]
+                or any(w and w in key(g.stem) for w in want)
+                or any(key(s) in want for s in declared_slugs(g))]
         if not gens:
             print("nothing matches %s" % " ".join(a.only))
             return 1
@@ -580,10 +594,11 @@ def main(argv=None):
             elif slug in covered:
                 bad("NO_GENERATOR says %s has no generator, but one produced "
                     "it - delete the line (%s)" % (slug, why))
-        for name in sorted(set(CANNOT_RUN) | set(ORPHAN_GENERATOR)):
+        for name in sorted(set(CANNOT_RUN) | set(ORPHAN_GENERATOR)
+                           | set(OTHER_GENERATORS)):
             if not (TOOLS / name).exists():
-                bad("CANNOT_RUN/ORPHAN_GENERATOR names %s, which is gone - "
-                    "delete the line" % name)
+                bad("CANNOT_RUN/ORPHAN_GENERATOR/OTHER_GENERATORS names %s, "
+                    "which is gone - delete the line" % name)
         for slug, fields in sorted(KNOWN_DRIFT.items()):
             for f in sorted(fields):
                 if is_dangerous(f):

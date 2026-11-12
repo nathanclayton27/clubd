@@ -139,8 +139,21 @@ TOOLS = ROOT / "tools"
 # to be wrong. A hand-written list has no fold to prove — its ids are literal
 # text in properties/<slug>.json, so only a hand edit can move one, and a diff
 # shows that plainly. It is a different verdict, not a failure.
+#
+# Which scripts are generators comes from there too, for the same reason: one
+# is not named make_*.py (export_secretwars.py), and this check once called its
+# list hand-written because it only looked for that name (CLU-652).
 sys.path.insert(0, str(TOOLS))
-from gendrift import NO_GENERATOR                            # noqa: E402
+from gendrift import NO_GENERATOR, generator_paths           # noqa: E402
+
+# Repo code a fold may live in. export_secretwars.py folds its ids with
+# fold() in src/reading_order.py, the Hickman list's authoring source.
+SRC = ROOT / "src"
+
+
+def ours(where):
+    """Is this file repo code, under tools/ or src/, rather than the stdlib?"""
+    return str(where or "").startswith((str(TOOLS), str(SRC)))
 
 # The three conversions the copy register asks for, each as the character the
 # data has now and the one it would gain. Apostrophes are the big one — 1,097
@@ -230,7 +243,7 @@ def generators():
     """
     claims = {}
     sys.path.insert(0, str(TOOLS))
-    for f in sorted(TOOLS.glob("make_*.py")):
+    for f in generator_paths():
         spec = importlib.util.spec_from_file_location("idsafe_gen_" + f.stem, f)
         mod = importlib.util.module_from_spec(spec)
         err = None
@@ -283,9 +296,16 @@ def fold_candidates(mod):
     # then prop.slug), or the module under an alias (`as P`, then P.slug).
     seen = [("", mod)]
     for nm, val in vars(mod).items():
-        if inspect.ismodule(val) and str(getattr(val, "__file__", "") or "") \
-                .startswith(str(TOOLS)):
+        if inspect.ismodule(val) and ours(getattr(val, "__file__", "")):
             seen.append((nm + ".", val))
+        # A fourth: a function imported by name from src/ brings its module's
+        # folds with it. export_secretwars.py imports only build_sections(),
+        # and the fold it ends in sits beside it in src/reading_order.py.
+        elif inspect.isfunction(val) and str(
+                inspect.getsourcefile(val) or "").startswith(str(SRC)):
+            m = inspect.getmodule(val)
+            if m is not None and all(h is not m for _, h in seen):
+                seen.append((m.__name__ + ".", m))
     out = []
     for prefix, holder in seen:
         out += _from(holder, prefix)
@@ -303,7 +323,7 @@ def _from(holder, prefix):
             where = inspect.getfile(fn)
         except TypeError:
             continue
-        if not str(pathlib.Path(where).resolve()).startswith(str(TOOLS)):
+        if not ours(pathlib.Path(where).resolve()):
             continue
         try:
             sig = inspect.signature(fn)
