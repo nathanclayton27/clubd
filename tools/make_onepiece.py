@@ -25,7 +25,8 @@ import json
 import pathlib
 
 SLUG = "one-piece"
-LAST = 1174          # newest aired episode as of 19 August 2026
+LAST = 1180          # newest aired episode as of 11 November 2026
+LAST_AIRED = "27 September 2026"   # its air date, from One Piece season 22
 
 # saga, arc, first episode, filler?
 # each arc runs to the episode before the next one starts
@@ -160,8 +161,16 @@ def main():
                                 "than between two, so they are folded into the arc "
                                 "around them. A strip cannot show a gap, and every "
                                 "watch order presents them that way regardless."],
-            ["Still airing.", "This goes up to episode %d; rerun the "
-                              "generator to extend it." % LAST],
+            # Since April 2026 the show airs in runs, at most 26 episodes a
+            # year (One Piece (1999 TV series), Broadcast). Nothing aired after
+            # 1180. After it aired, the official X account said the next
+            # episode airs in 2027, no exact date yet (Oricon News 2482880,
+            # 27 Sep 2026; ja.wikipedia "ONE PIECE (アニメ)"), as of 11 Nov 2026.
+            ["Between runs.", "This goes up to episode %d, aired %s. The "
+                              "show now airs at most 26 episodes a year; the "
+                              "next are due in 2027, with no exact date yet; "
+                              "rerun the generator to extend it."
+                              % (LAST, LAST_AIRED)],
             # Unheaded, last: the colophon (CLU-275 rule 6). The two arc
             # lengths named here are the assertions run above.
             "Arc names, boundaries and the filler marks from Anime Filler "
