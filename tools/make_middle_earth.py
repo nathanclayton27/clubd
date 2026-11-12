@@ -153,7 +153,7 @@ def main():
     assert not any("w" in x for x in book_items), \
         "a book row grew an hour figure; there is no source for one"
     assert all("w" in x for x in film_items), "a film row lost its runtime"
-    assert 17.0 < hours < 17.4, hours  # 557 + 474 = 1031 min
+    assert 17.0 < hours < 17.4, hours  # 558 + 474 = 1032 min
     # the animated three are weighted like the other film rows and optional
     # like the posthumous books; both halves are load-bearing, so both assert
     assert all("w" in x for x in animated_items), \
