@@ -41,6 +41,16 @@ Neither fix renames anything: #549-564 and #648-656 had no rows in this file at
 all, so the id set only grew. The other arcs the source names and this list
 still does not carry are recorded on the card rather than guessed at here.
 
+CLU-636 (2026-11-11): Kelly's Amazing Spider-Man (2025) went back to the
+legacy count after #35. Marvel Database's "Amazing Spider-Man Vol 7 36"
+redirects to "Amazing Spider-Man Vol 7 1000" (released 30 September 2026),
+and the series page splits the volume into "No. 1-35" and "No. 1000 -". The
+section therefore runs #1-35 then #1000 on, the same shape as the 2015 run's
+#1-32 then #789-801, and the legacy rows take the same "asm25-<n>" ids. The
+issues Marvel Database dates past today (UPCOMING) ship as `w: 0` rows marked
+not out yet; the blurb counts only the issues that are out. Bump UPCOMING and
+ASM25_LEGACY_LAST as issues come out.
+
 Notes say what an entry is, never what happens in it.
 """
 import json
@@ -75,6 +85,21 @@ ARC = {
     698: "“Dying Wish” begins — the end of Slott's first era",
 }
 ARC_STAR = {568: 1, 630: 1, 634: 1, 666: 1, 698: 2}
+
+# Amazing Spider-Man (2025): #1-35 on its own numbering, then the legacy
+# count from #1000. Release dates from Marvel Database, fetched 2026-11-11.
+ASM25_LAST = 35
+ASM25_LEGACY_LAST = 1009
+# legacy issues dated but not out yet: number -> due date as the note says it
+UPCOMING = {
+    1004: "25 November 2026",
+    1005: "9 December 2026",
+    1006: "23 December 2026",
+    1007: "6 January 2027",
+    1008: "20 January 2027",
+    1009: "3 February 2027",
+}
+NOT_OUT = {"asm25-%d" % n for n in UPCOMING}
 
 
 def later(n):
@@ -216,13 +241,20 @@ SECTIONS = [
     },
     {
         "id": "asm2025", "tier": 3, "title": "Amazing Spider-Man (2025– )",
-        "sub": "#1–34 · Joe Kelly and Pepe Larraz · still running",
+        "sub": "#1–%d, then #1000 on · Joe Kelly and Pepe Larraz · still "
+               "running" % ASM25_LAST,
         "links": [{"label": "The series", "url": S_2025}],
-        "intro": "Twice monthly and well received, building to ASM #1000 in "
-                 "September 2026. Marvel Unlimited adds issues about three months "
-                 "after print, so the last few are not readable there yet.",
-        "items": run("asm25", "Amazing Spider-Man (2025)", range(1, 35),
-                     stars={1: 1}),
+        "intro": "Twice monthly and well received, and back on its legacy "
+                 "count since ASM #1000 in September 2026. Marvel Unlimited adds "
+                 "issues about three months after print, so the last few are not "
+                 "readable there yet.",
+        "items": (run("asm25", "Amazing Spider-Man (2025)",
+                      range(1, ASM25_LAST + 1), stars={1: 1})
+                  + run("asm25", "Amazing Spider-Man",
+                        range(1000, ASM25_LEGACY_LAST + 1),
+                        notes={1000: "Legacy numbering resumes",
+                               **{n: "Not out yet — due %s" % d
+                                  for n, d in UPCOMING.items()}})),
     },
     {
         "id": "lifestory", "tier": 3, "title": "Spider-Man: Life Story",
@@ -248,7 +280,9 @@ def main():
     if len(ids) != len(set(ids)):
         dupes = sorted({i for i in ids if ids.count(i) > 1})
         raise SystemExit("duplicate item ids: %s" % dupes[:10])
-    total = len(ids)
+    # the blurb counts what can be read today, not what is only dated
+    assert NOT_OUT <= set(ids), sorted(NOT_OUT - set(ids))
+    total = len(ids) - len(NOT_OUT)
 
     # everything is a single issue now, so nothing should carry a weight
     assert not any("w" in x for s in SECTIONS for x in s["items"]), "stray weight"
@@ -310,17 +344,18 @@ def main():
     # rows, and it is what lets a hub door into this list carry a real
     # weight instead of none. Stamped in one place rather than on every row
     # constructor: `w` is presentation and is not part of an id, so no tick
-    # moves.
+    # moves. An issue that is only dated weighs nothing until it is out.
     for _sec in prop["sections"]:
         for _row in _sec["items"]:
-            _row["w"] = 1
+            _row["w"] = 0 if _row["id"] in NOT_OUT else 1
 
     out = pathlib.Path(__file__).resolve().parent.parent / "properties" / ("%s.json" % SLUG)
     with out.open("w", encoding="utf-8", newline="\n") as f:
         f.write(json.dumps(prop, indent=2, ensure_ascii=False) + "\n")
 
     print("wrote %s.json" % SLUG)
-    print("  %d sections, %d issues, every section linked" % (len(SECTIONS), total))
+    print("  %d sections, %d issues out + %d dated, every section linked"
+          % (len(SECTIONS), total, len(NOT_OUT)))
     for s in SECTIONS:
         print("   T%d  %-34s %4d issues" % (s["tier"], s["title"][:34], len(s["items"])))
 

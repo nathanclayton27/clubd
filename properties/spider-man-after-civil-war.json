@@ -5,7 +5,7 @@
   "kind": "comics",
   "popularity": 37,
   "year": "2007–",
-  "blurb": "The end of the classic run, then eighteen years of recommendations — 378 issues, tracked one by one.",
+  "blurb": "The end of the classic run, then eighteen years of recommendations — 383 issues, tracked one by one.",
   "unit": {
     "one": "issue",
     "many": "issues"
@@ -2220,14 +2220,14 @@
       "id": "asm2025",
       "tier": 3,
       "title": "Amazing Spider-Man (2025– )",
-      "sub": "#1–34 · Joe Kelly and Pepe Larraz · still running",
+      "sub": "#1–35, then #1000 on · Joe Kelly and Pepe Larraz · still running",
       "links": [
         {
           "label": "The series",
           "url": "https://www.marvel.com/comics/series/41731/the_amazing_spiderman_2025_present"
         }
       ],
-      "intro": "Twice monthly and well received, building to ASM #1000 in September 2026. Marvel Unlimited adds issues about three months after print, so the last few are not readable there yet.",
+      "intro": "Twice monthly and well received, and back on its legacy count since ASM #1000 in September 2026. Marvel Unlimited adds issues about three months after print, so the last few are not readable there yet.",
       "items": [
         {
           "id": "asm25-1",
@@ -2433,6 +2433,79 @@
           "t": "Amazing Spider-Man (2025)",
           "n": "#34",
           "w": 1
+        },
+        {
+          "id": "asm25-35",
+          "t": "Amazing Spider-Man (2025)",
+          "n": "#35",
+          "w": 1
+        },
+        {
+          "id": "asm25-1000",
+          "t": "Amazing Spider-Man",
+          "n": "#1000",
+          "note": "Legacy numbering resumes",
+          "w": 1
+        },
+        {
+          "id": "asm25-1001",
+          "t": "Amazing Spider-Man",
+          "n": "#1001",
+          "w": 1
+        },
+        {
+          "id": "asm25-1002",
+          "t": "Amazing Spider-Man",
+          "n": "#1002",
+          "w": 1
+        },
+        {
+          "id": "asm25-1003",
+          "t": "Amazing Spider-Man",
+          "n": "#1003",
+          "w": 1
+        },
+        {
+          "id": "asm25-1004",
+          "t": "Amazing Spider-Man",
+          "n": "#1004",
+          "note": "Not out yet — due 25 November 2026",
+          "w": 0
+        },
+        {
+          "id": "asm25-1005",
+          "t": "Amazing Spider-Man",
+          "n": "#1005",
+          "note": "Not out yet — due 9 December 2026",
+          "w": 0
+        },
+        {
+          "id": "asm25-1006",
+          "t": "Amazing Spider-Man",
+          "n": "#1006",
+          "note": "Not out yet — due 23 December 2026",
+          "w": 0
+        },
+        {
+          "id": "asm25-1007",
+          "t": "Amazing Spider-Man",
+          "n": "#1007",
+          "note": "Not out yet — due 6 January 2027",
+          "w": 0
+        },
+        {
+          "id": "asm25-1008",
+          "t": "Amazing Spider-Man",
+          "n": "#1008",
+          "note": "Not out yet — due 20 January 2027",
+          "w": 0
+        },
+        {
+          "id": "asm25-1009",
+          "t": "Amazing Spider-Man",
+          "n": "#1009",
+          "note": "Not out yet — due 3 February 2027",
+          "w": 0
         }
       ]
     },
