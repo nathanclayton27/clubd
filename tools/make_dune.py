@@ -64,6 +64,14 @@ SERIES_NOTE = {
     "The Caladan Trilogy": "The Caladan Trilogy",
 }
 
+# A book its series note would misplace. Princess of Dune is the third Heroes
+# of Dune book but "set two years before the events of Dune" (Wikipedia, Dune
+# prequel series, fetched 2026-11-12), so it is worded like the Prelude rows
+# (CLU-599). Notes only: the id never reads this.
+NOTE_BY_TITLE = {
+    "Princess of Dune": "Heroes of Dune — set before Dune",
+}
+
 
 def slugify(t):
     # CLU-430. This fold DELETES a straight apostrophe (`The Emperor's Soul`
@@ -100,8 +108,11 @@ def main():
             disp = disp[len("Dune: "):]
         cont_items.append({"id": "dune-c-%d-%s" % (b["year"], slugify(disp)),
                            "t": disp, "n": str(b["year"]),
-                           "note": SERIES_NOTE[b["series"]], "opt": 1})
+                           "note": NOTE_BY_TITLE.get(disp,
+                                                     SERIES_NOTE[b["series"]]),
+                           "opt": 1})
     assert used == set(SERIES_NOTE), set(SERIES_NOTE) ^ used
+    assert set(NOTE_BY_TITLE) <= {x["t"] for x in cont_items}, NOTE_BY_TITLE
 
     screen_items = []
     coming = []
