@@ -229,6 +229,11 @@ def runtimes_for(qids):
 
 
 def save_cache(cache):
+    # CLU-560: a non-map written here is self-sustaining (see load_cache), so
+    # refuse it before the file is even opened.
+    assert isinstance(cache, dict) and cache, \
+        "refusing to write %s: films must be a non-empty {target: {qid, min}} " \
+        "map, got %s %r" % (CACHE, type(cache).__name__, str(cache)[:80])
     CACHE.parent.mkdir(parents=True, exist_ok=True)
     with CACHE.open("w", encoding="utf-8", newline="\n") as f:
         f.write(json.dumps(
@@ -236,15 +241,34 @@ def save_cache(cache):
              "films": cache}, indent=2, ensure_ascii=False) + "\n")
 
 
-def resolve(targets):
+def load_cache():
+    """The cached {target: {qid, min}} map, or {} when there is no file yet.
+
+    A file whose "films" is not a map is an error, never an empty cache
+    (CLU-560). It was once found holding one film title as a string: `t not in
+    cache` then became a substring test, every film read as uncached, and the
+    first write raised. Falling back to {} would send all of them to the
+    network, which offline reads as a harmless "needs the network" skip.
+    """
+    if not CACHE.exists():
+        return {}
+    raw = json.loads(CACHE.read_text(encoding="utf-8"))
+    films = raw.get("films") if isinstance(raw, dict) else raw
+    if not isinstance(films, dict):
+        raise ValueError(
+            "%s is corrupt: \"films\" should be a {target: {qid, min}} map but "
+            "holds %s %r. Restore it with: git checkout HEAD -- "
+            "tools/data/bestpicture.json"
+            % (CACHE, type(films).__name__, str(films)[:80]))
+    return films
+
+
+def resolve(targets, cache):
     """{target: {qid, min}} for every wikilink target, cached on disk.
 
     Works batch by batch and writes the cache after every batch, so a
     rate-limit kill part-way costs nothing but the retry.
     """
-    cache = {}
-    if CACHE.exists():
-        cache = json.loads(CACHE.read_text(encoding="utf-8")).get("films", {})
     missing = [t for t in targets if t not in cache]
     if not missing:
         return cache
@@ -267,9 +291,13 @@ def resolve(targets):
 # ---------------------------------------------------------------- property
 
 def main():
+    # The cache is checked before the scratch/ wikitext is read: without
+    # scratch/ (as in CI) a read of the wikitext fails first and gendrift files
+    # it as unchecked, which would hide a corrupt committed cache.
+    cache = load_cache()
     groups = parse(WIKI.read_text(encoding="utf-8"))
     films = [f for g in groups for f in g["films"]]
-    runt = resolve(sorted({f["target"] for f in films}))
+    runt = resolve(sorted({f["target"] for f in films}), cache)
 
     sections = []
     for g in groups:
