@@ -6,7 +6,13 @@
 The Souls line and its adjacents, in release order: Demon's Souls through
 Elden Ring, Shadow of the Erdtree as its own row (it is the size of a full
 game), Nightreign, and Armored Core VI as a marked outlier. Not the whole
-studio — no King's Field, no older Armored Core.
+studio — no King's Field, no older Armored Core, no Déraciné, no Duskbloods.
+
+The Duskbloods (Wikipedia: 2027, Switch 2) is left off on purpose, not by
+staleness: it is a multiplayer PvP/PvE match game, not a story to finish, and
+it neither belongs to the Souls line nor extends Elden Ring. AC6 stays the one
+outlier. Ruled 2026-11-12 under Nathan's delegation (CLU-602); the Scope note
+names it so the next freshness sweep reads the call instead of re-asking.
 
 Which games exist and their release years come from Wikipedia's FromSoftware
 article (scratch/fromsoft/games.wiki — its developed-games and DLC tables).
@@ -147,7 +153,8 @@ def main():
         "notes": [
             ["Scope.", "The Souls line and what sits beside it, not the "
              "whole studio — no King's Field, no older Armored Core, no "
-             "Déraciné. Armored Core VI is the one marked outlier, included "
+             "Déraciné, no Duskbloods. Armored Core VI is the one marked "
+             "outlier, included "
              "because it is what the studio built between Elden Ring and "
              "its expansion; skip it and nothing breaks."],
             ["Hours are story only.", "HowLongToBeat main-story figures, as "
