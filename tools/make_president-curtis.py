@@ -8,22 +8,25 @@ staff handling the crises Rick leaves alone. Ten episodes, weekly on Sundays
 on Adult Swim from 26 July 2026, reaching HBO Max the day after broadcast.
 Adult Swim renewed it for a second season two days before the premiere.
 
-Season one is mid-air, which makes this the second property after lanterns to
-carry a `schedule` — one dated window per episode, so the pace line answers
-"am I caught up with the broadcast" rather than "will I finish by some
-distant date". The window shape is lanterns' exactly: a window opens on an
-episode's air date and runs six days, and `through` is that episode's number.
+Season one was written up mid-air, which made this the second property
+after lanterns to carry a `schedule` — one dated window per episode, so the
+pace line answers "am I caught up with the broadcast" rather than "will I
+finish by some distant date". The window shape is lanterns' exactly: a window
+opens on an episode's air date and runs six days, and `through` is that
+episode's number. Season one finished on 27 September 2026.
 
-All ten episodes are listed even though only some have aired. An announced
-row is what an airing show looks like and the schedule needs the whole
-season; the aired/upcoming wording in the row notes is frozen by AS_OF below
-rather than read from the clock, so two runs of this file always agree.
+All ten episodes are listed whether or not they have aired. An announced row
+is what an airing show looks like and the schedule needs the whole season;
+the aired/upcoming wording in the row notes, the blurb and the notes is frozen
+by AS_OF below rather than read from the clock, so two runs of this file
+always agree. AS_OF is cross-checked against the infobox's episode count.
 
 Titles and air dates are machine-read from the {{Episode list}} rows of the
 Wikipedia article "President Curtis (TV series)" by
 scratch/agent-curtis/episodes.py, which asserts the numbering is 1..N
 contiguous and that N matches the season length the article states in prose;
-the committed result is tools/data/president-curtis-episodes.json.
+the committed result is tools/data/president-curtis-episodes.json. Last read
+2026-11-11, revision 1379745232.
 
 Nothing is weighted. The episode table declares no runtime column, no
 episode has its own article or Wikidata item, and the series' Wikidata item
@@ -44,7 +47,7 @@ SLUG = "president-curtis"
 
 # Freezes the aired/upcoming wording in the row notes. Bump it when you
 # re-run; reading the clock instead would make the file differ by the day.
-AS_OF = date(2026, 8, 24)
+AS_OF = date(2026, 11, 11)
 
 
 def daymonth(d):
@@ -82,6 +85,15 @@ def main():
     first = date.fromisoformat(eps[0]["d"])
     last = date.fromisoformat(eps[-1]["d"])
 
+    # AS_OF is checked against the source, not trusted: the infobox counts
+    # the episodes that have aired, so a slipped date fails here rather than
+    # the list claiming an episode is out.
+    aired = sum(1 for r in eps if date.fromisoformat(r["d"]) <= AS_OF)
+    assert str(aired) == data["meta"]["num_episodes_infobox"],         ("AS_OF %s makes %d episodes aired but the infobox counts %s — bump "
+         "AS_OF, or the schedule moved"
+         % (AS_OF, aired, data["meta"]["num_episodes_infobox"]))
+    done = aired == len(eps)
+
     sections = [{
         "id": "s1",
         "title": "Season 1",
@@ -113,8 +125,8 @@ def main():
         # generator's to edit. One number to change if the lead wants it.
         "popularity": 26,
         "year": "2026",
-        "blurb": "The Rick and Morty spin-off — %d episodes, weekly, "
-                 "still airing." % len(eps),
+        "blurb": "The Rick and Morty spin-off — %d episodes, weekly, %s."
+                 % (len(eps), "all aired" if done else "still airing"),
         "unit": {"one": "episode", "many": "episodes"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -123,19 +135,22 @@ def main():
         "tiers": False,
         "schedule": {"kind": "windows", "windows": windows},
         "notes": [
-            ["Airing now.", "One window per episode, so the pace line tells "
+            ["All aired." if done else "Airing now.",
+             "One window per episode, so the pace line tells "
              "you whether you are caught up with the broadcast rather than on "
-             "track for some distant finish. The last one lands on %s %d."
-             % (daymonth(last), last.year)],
+             "track for some distant finish. The last one %s on %s %d."
+             % ("landed" if done else "lands", daymonth(last), last.year)],
             ["Where it airs.", "Sundays on Adult Swim — the premiere followed "
              "the Rick and Morty ninth-season finale — with episodes reaching "
              "HBO Max the day after broadcast."],
             ["Already renewed.", "Adult Swim ordered a second season in July "
              "2026, ahead of the premiere."],
+        ] + ([] if done else [
             ["The whole season is listed.", "All %d episodes are dated in the "
              "source, so the ones that have not aired yet are listed too. The "
              "schedule needs them, and an announced row is what an airing "
              "show looks like." % len(eps)],
+        ]) + [
             ["Nothing is weighted.", "The source carries no per-episode "
              "runtime, so every episode counts one."],
             "Titles and air dates machine-read from the Wikipedia article "

@@ -5,7 +5,7 @@
   "kind": "tv",
   "popularity": 26,
   "year": "2026",
-  "blurb": "The Rick and Morty spin-off — 10 episodes, weekly, still airing.",
+  "blurb": "The Rick and Morty spin-off — 10 episodes, weekly, all aired.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -86,8 +86,8 @@
   },
   "notes": [
     [
-      "Airing now.",
-      "One window per episode, so the pace line tells you whether you are caught up with the broadcast rather than on track for some distant finish. The last one lands on 27 September 2026."
+      "All aired.",
+      "One window per episode, so the pace line tells you whether you are caught up with the broadcast rather than on track for some distant finish. The last one landed on 27 September 2026."
     ],
     [
       "Where it airs.",
@@ -96,10 +96,6 @@
     [
       "Already renewed.",
       "Adult Swim ordered a second season in July 2026, ahead of the premiere."
-    ],
-    [
-      "The whole season is listed.",
-      "All 10 episodes are dated in the source, so the ones that have not aired yet are listed too. The schedule needs them, and an announced row is what an airing show looks like."
     ],
     [
       "Nothing is weighted.",
@@ -147,31 +143,31 @@
           "id": "president-curtis-6",
           "t": "Hollow",
           "n": "6",
-          "note": "airs 30 August"
+          "note": "aired 30 August"
         },
         {
           "id": "president-curtis-7",
           "t": "Ghosts",
           "n": "7",
-          "note": "airs 6 September"
+          "note": "aired 6 September"
         },
         {
           "id": "president-curtis-8",
           "t": "Knox",
           "n": "8",
-          "note": "airs 13 September"
+          "note": "aired 13 September"
         },
         {
           "id": "president-curtis-9",
           "t": "Synths",
           "n": "9",
-          "note": "airs 20 September"
+          "note": "aired 20 September"
         },
         {
           "id": "president-curtis-10",
           "t": "Timber",
           "n": "10",
-          "note": "airs 27 September · season finale"
+          "note": "aired 27 September · season finale"
         }
       ]
     }
