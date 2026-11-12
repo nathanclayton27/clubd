@@ -25,6 +25,12 @@ ROWED_SHORTS = {"The Emperor's Soul", "Shadows for Silence in the Forests "
                 "of Hell", "Sixth of the Dusk", "Secret History",
                 "Edgedancer", "Dawnshard"}
 CARD_STORIES = {"Elsecaller", "King Lopen the First of Alethkar"}
+# CLU-591: the 2026 Hoid's Storybook Collection table inside the Cosmere
+# section (bibliography revision of 2026-10-30). The source calls three of
+# them non-diegetic versions of Stormlight stories and the fourth
+# non-canonical, so like the card stories they stay off, and a note says so.
+PICTURE_BOOKS = {"The Dog and the Dragon", "Wandersail",
+                 "The Girl Who Looked Up", "The ChasmFriends Get a Pet"}
 
 
 def slugify(t):
@@ -149,8 +155,9 @@ def main():
     for s in sections:
         ys = [int(x["n"]) for x in s["items"]]
         assert ys == sorted(ys), (s["id"], ys)
-    # nothing from the card pair leaked in
-    assert not any(x["t"] in CARD_STORIES for s in sections for x in s["items"])
+    # nothing from the card pair or the picture books leaked in
+    assert not any(x["t"] in CARD_STORIES | PICTURE_BOOKS
+                   for s in sections for x in s["items"])
 
     prop = {
         "slug": SLUG,
@@ -180,7 +187,8 @@ def main():
              "novellas big enough to read on their own have their own rows "
              "and say so; The Hope of Elantris, The Eleventh Metal and "
              "Allomancer Jak exist only inside the collection, so its one "
-             "tick is theirs. The 2024 Story Deck card stories are out."],
+             "tick is theirs. The 2024 Story Deck card stories are out. "
+             "The 2026 Hoid's Storybook picture books are out."],
             ["Worlds, not a timeline.",
              "Sections group by world or series and run in publication "
              "order inside each; there is no one true Cosmere order and "
