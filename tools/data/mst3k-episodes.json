@@ -1527,48 +1527,40 @@
      "note_unaired": false
     }
    ]
+  },
+  {
+   "kind": "season",
+   "season": 14,
+   "years": "2026",
+   "heading": "Season 14 (2026)",
+   "rows": [
+    {
+     "code": "1401",
+     "t": "Sting of Death",
+     "film_year": 1966,
+     "note_unaired": false
+    },
+    {
+     "code": "1402",
+     "t": "Deathsport",
+     "film_year": 1978,
+     "note_unaired": false
+    },
+    {
+     "code": "1403",
+     "t": "The Mummy Theme Park",
+     "film_year": 2000,
+     "note_unaired": false
+    },
+    {
+     "code": "1404",
+     "t": "Space Raiders",
+     "film_year": 1983,
+     "note_unaired": false,
+     "upcoming": "2026-11-20"
+    }
+   ]
   }
  ],
- "excluded": [
-  {
-   "code": "1401",
-   "t": "Sting of Death",
-   "why": "unaired",
-   "date": [
-    2026,
-    9,
-    9
-   ]
-  },
-  {
-   "code": "1402",
-   "t": "Deathsport",
-   "why": "unaired",
-   "date": [
-    2026,
-    10,
-    23
-   ]
-  },
-  {
-   "code": "1403",
-   "t": "TBA",
-   "why": "unaired",
-   "date": [
-    2026,
-    10,
-    30
-   ]
-  },
-  {
-   "code": "1404",
-   "t": "Space Raiders",
-   "why": "unaired",
-   "date": [
-    2026,
-    11,
-    20
-   ]
-  }
- ]
+ "excluded": []
 }

@@ -1,12 +1,12 @@
 {
   "slug": "mst3k",
   "title": "Mystery Science Theater 3000",
-  "subtitle": "every experiment, KTMA to the Gizmoplex",
+  "subtitle": "every experiment, KTMA to RiffTrax",
   "kind": "tv",
   "popularity": 46,
   "random": true,
-  "year": "1988–2022",
-  "blurb": "All 232 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
+  "year": "1988–2026",
+  "blurb": "All 236 experiments in air order — the KTMA year, the cable runs, the movie, and the revivals, each row the film it riffs.",
   "unit": {
     "one": "episode",
     "many": "episodes"
@@ -27,10 +27,6 @@
     [
       "KTMA is optional.",
       "The 1988–89 season aired only on Minneapolis's KTMA-TV, before the national run; one of its episodes, long lost, resurfaced only in 2026. Its 21 episodes and the unaired pilot K00 are marked optional."
-    ],
-    [
-      "Season 14 is not here yet.",
-      "MST3K: The RiffTrax Experiments begins airing in September 2026; its episodes belong here once they have aired."
     ],
     "Machine-read from Wikipedia's List of Mystery Science Theater 3000 episodes; every season's row count is asserted against the article's own series overview before this builds."
   ],
@@ -1553,6 +1549,37 @@
           "t": "The Christmas Dragon",
           "n": "1313",
           "note": "2014 film"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "title": "Season 14",
+      "sub": "2026 · 4 episodes · The RiffTrax Experiments",
+      "items": [
+        {
+          "id": "mst-1401",
+          "t": "Sting of Death",
+          "n": "1401",
+          "note": "1966 film"
+        },
+        {
+          "id": "mst-1402",
+          "t": "Deathsport",
+          "n": "1402",
+          "note": "1978 film"
+        },
+        {
+          "id": "mst-1403",
+          "t": "The Mummy Theme Park",
+          "n": "1403",
+          "note": "2000 film"
+        },
+        {
+          "id": "mst-1404",
+          "t": "Space Raiders",
+          "n": "1404",
+          "note": "1983 film · not out yet, due 20 November 2026"
         }
       ]
     }

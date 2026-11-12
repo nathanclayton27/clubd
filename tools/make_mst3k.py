@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate properties/mst3k.json — every experiment, KTMA to the Gizmoplex.
+"""Generate properties/mst3k.json — every experiment, KTMA to RiffTrax.
 
     python3 tools/make_mst3k.py
 
@@ -8,17 +8,27 @@ One row per experiment, titled by the film riffed, numbered by episode code
 (optional — it aired only in Minneapolis before the national run, and its
 unaired pilot K00 rides along), seasons 1-7 on The Comedy Channel / Comedy
 Central, the 1996 theatrical movie in its place, seasons 8-10 on the Sci-Fi
-Channel, and the revival seasons — 11-12 on Netflix, 13 on the Gizmoplex.
-232 rows.
+Channel, and the revival seasons — 11-12 on Netflix, 13 on the Gizmoplex,
+14 (The RiffTrax Experiments) from RiffTrax. 236 rows.
 
-Season 14 (MST3K: The RiffTrax Experiments) starts airing September 2026 and
-is deliberately absent until it has aired.
+Season 14 is still coming out. Its last episode, 1404, is dated 20 November
+2026 and ships now under the dated-announcement rule, its note saying it is
+not out yet. The list is unweighted, so the row carries no `w`: a lone
+`w: 0` would switch the page into hours with every other episode an invented
+hour (CLU-131). The aired/upcoming split is frozen at the extractor's TODAY
+(2026-11-11), not read from the clock, so nothing fails by itself when 1404
+comes out. After 20 November 2026, bump TODAY in
+scratch/agent-tv1/extract_mst3k.py and rerun it; the UPCOMING assert then fails
+until this file and 1404's note are updated.
 
 Everything is machine-read from "List of Mystery Science Theater 3000
 episodes" by scratch/agent-tv1/extract_mst3k.py, which asserts each season's
 row count against the article's own series overview; the committed result is
 tools/data/mst3k-episodes.json. K03's note follows the article: long lost,
-it resurfaced in March 2026.
+it resurfaced in March 2026. The extractor pins the episode codes of seasons
+1 and 6 as first shipped: the article renumbered season 6 on 2026-09-10
+(rev 1374243670) and season 1 on 2026-10-23 (rev 1381592816), and a code is
+a row id (CLU-621).
 """
 import json
 import pathlib
@@ -28,7 +38,21 @@ SLUG = "mst3k"
 ERA = {1: "the national run begins, on The Comedy Channel",
        8: "the Sci-Fi Channel years begin",
        11: "the Netflix revival begins",
-       13: "the Gizmoplex season"}
+       13: "the Gizmoplex season",
+       14: "The RiffTrax Experiments"}
+
+MONTHS = ("January February March April May June July August September "
+          "October November December").split()
+
+# Dated and not out yet, as of the extractor's TODAY. Checked against the
+# committed data, not the clock: after 20 November 2026 bump TODAY in the
+# extractor and rerun it, and this assert fails until 1404 is updated.
+UPCOMING = {"1404": "2026-11-20"}
+
+
+def due(iso):
+    y, m, d = (int(x) for x in iso.split("-"))
+    return "%d %s %d" % (d, MONTHS[m - 1], y)
 
 
 def main():
@@ -55,6 +79,8 @@ def main():
                 row["note"] += " · the unaired pilot"
             if r["code"] == "K03":
                 row["note"] += " · long lost, resurfaced in 2026"
+            if "upcoming" in r:
+                row["note"] += " · not out yet, due %s" % due(r["upcoming"])
             if s["kind"] == "ktma":
                 row["opt"] = True
             items.append(row)
@@ -79,17 +105,19 @@ def main():
 
     ids = [x["id"] for s in sections for x in s["items"]]
     assert len(ids) == len(set(ids)), "duplicate ids"
-    assert len(ids) == 232, len(ids)
+    assert len(ids) == 236, len(ids)
     assert sum(1 for s in sections for x in s["items"] if x.get("opt")) == 22
     assert [s["id"] for s in sections] == (
         ["k"] + ["s%d" % i for i in range(1, 8)] + ["movie"]
-        + ["s%d" % i for i in range(8, 14)])
-    assert [e["why"] for e in data["excluded"]] == ["unaired"] * 4
+        + ["s%d" % i for i in range(8, 15)])
+    assert data["excluded"] == [], data["excluded"]
+    assert {r["code"]: r["upcoming"] for s in data["sections"]
+            for r in s["rows"] if "upcoming" in r} == UPCOMING
 
     prop = {
         "slug": SLUG,
         "title": "Mystery Science Theater 3000",
-        "subtitle": "every experiment, KTMA to the Gizmoplex",
+        "subtitle": "every experiment, KTMA to RiffTrax",
         "kind": "tv",
         "popularity": 46,
         # Not a story, so not a sequence: the order these came out in
@@ -97,8 +125,8 @@ def main():
         # (Nathan, CLU-372). Prerequisites, where any exist, live in
         # tools/data/sequences.json and are enforced separately.
         "random": True,
-        "year": "1988–2022",
-        "blurb": "All 232 experiments in air order — the KTMA year, the "
+        "year": "1988–2026",
+        "blurb": "All 236 experiments in air order — the KTMA year, the "
                  "cable runs, the movie, and the revivals, each row the film "
                  "it riffs.",
         "unit": {"one": "episode", "many": "episodes"},
@@ -115,9 +143,6 @@ def main():
              "Minneapolis's KTMA-TV, before the national run; one of its "
              "episodes, long lost, resurfaced only in 2026. Its 21 episodes "
              "and the unaired pilot K00 are marked optional."],
-            ["Season 14 is not here yet.", "MST3K: The RiffTrax Experiments "
-             "begins airing in September 2026; its episodes belong here once "
-             "they have aired."],
             "Machine-read from Wikipedia's List of Mystery Science Theater "
             "3000 episodes; every season's row count is asserted against the "
             "article's own series overview before this builds.",
