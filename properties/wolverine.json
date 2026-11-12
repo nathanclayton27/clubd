@@ -3079,7 +3079,7 @@
           "url": "https://marvel.fandom.com/wiki/Wolverine_Vol_8"
         }
       ],
-      "intro": "The current series, still being published. Rows run to the last issue that has actually shipped and more arrive as it does, so the list never carries an issue nobody can buy yet.",
+      "intro": "The current series, still being published. Rows run to the last issue that has actually shipped, then the ones Marvel has already dated, each marked not out yet.",
       "items": [
         {
           "id": "wolv-v8-1",
@@ -3341,6 +3341,33 @@
           "star": 0,
           "opt": 0,
           "w": 1
+        },
+        {
+          "id": "wolv-v8-30",
+          "t": "Wolverine (2024)",
+          "n": "#30",
+          "note": "Not out yet — due 2 December 2026",
+          "star": 0,
+          "opt": 0,
+          "w": 0
+        },
+        {
+          "id": "wolv-v8-31",
+          "t": "Wolverine (2024)",
+          "n": "#31",
+          "note": "Not out yet — due 6 January 2027",
+          "star": 0,
+          "opt": 0,
+          "w": 0
+        },
+        {
+          "id": "wolv-v8-32",
+          "t": "Wolverine (2024)",
+          "n": "#32",
+          "note": "Not out yet — due 3 February 2027",
+          "star": 0,
+          "opt": 0,
+          "w": 0
         }
       ]
     }

@@ -76,7 +76,12 @@ def facts(slug):
     d = read(slug)
     if d is None:
         return None
-    items = [x for sec in d["sections"] for x in sec["items"]]
+    # An issue that is dated but not out yet ships as a `w: 0` row whose note
+    # says so (CLU-645). The door's width already leaves it out, so the count
+    # beside it does too. x-men's `w: 0` era placeholders are out, and count.
+    items = [x for sec in d["sections"] for x in sec["items"]
+             if not (x.get("w") == 0
+                     and (x.get("note") or "").startswith("Not out yet"))]
     core = [x for x in items if not x.get("opt")]
     nopt = len(items) - len(core)
     unit = (d.get("unit") or {}).get("many", "entries")

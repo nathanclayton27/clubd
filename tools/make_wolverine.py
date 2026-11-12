@@ -54,6 +54,13 @@ time and this list does not invent one (CLU-131).
 NOTES SAY WHAT AN ISSUE IS — a creator's first or last, a fill-in, a
 renumbering, which arc opens, whose debut it is — and never what happens in
 it. Stars carry the "this one matters" signal so a note never has to.
+
+DATED ISSUES (CLU-645, 2026-11-12). Issues the Marvel Database already dates
+but that have not shipped (AHMED_THROUGH+1 to DATED_THROUGH) ship as rows
+marked not out yet, with the due date read off the harvest, at `w: 0`, the
+same shape as spider-man-after-civil-war. The blurb counts only the issues
+that are out. Bump AHMED_THROUGH and DATED_THROUGH as issues ship and get
+dated; the build fails if the harvest holds a dated issue past DATED_THROUGH.
 """
 import datetime
 import json
@@ -105,6 +112,12 @@ XMEN_BUNDLED = ("xm-wolv82", "xm-xos")
 # than `datetime.now()` so two runs of this generator are byte-identical
 # forever, and asserted against the harvested on-sale dates either side of it.
 AHMED_THROUGH = 29
+
+# The last issue the Marvel Database dates. #AHMED_THROUGH+1 to here are rows
+# marked not out yet, weighing nothing until they ship.
+DATED_THROUGH = 32
+NOT_OUT = {"%s-v8-%d" % (SLUG[:4], n)
+           for n in range(AHMED_THROUGH + 1, DATED_THROUGH + 1)}
 
 # Row notes and stars, keyed by (series key, issue number as printed).
 # Everything else ships with an empty note on purpose — an unannotated issue is
@@ -555,6 +568,19 @@ def build():
     nxt = item("v8", AHMED_THROUGH + 1)
     assert onsale(nxt) > TODAY, \
         "#%d has shipped — raise AHMED_THROUGH" % (AHMED_THROUGH + 1)
+    # Dated but not out yet: rows now, each due date read off the harvest.
+    dated = writer_run("v8", AHMED_THROUGH + 1, DATED_THROUGH, "Saladin Ahmed")
+    for x in dated:
+        due = onsale(x)
+        assert due > TODAY, "%s has shipped — raise AHMED_THROUGH" % x["n"]
+        x["note"] = "Not out yet — due %d %s %d" % (due.day,
+                                                    due.strftime("%B"),
+                                                    due.year)
+    assert {x["id"] for x in dated} == NOT_OUT, "dated rows drifted"
+    later = [r["numtext"] for r in D["issues"]
+             if r["vol"] == SER["v8"][0] and r["num"] > DATED_THROUGH]
+    assert not later, \
+        "the harvest dates #%s — raise DATED_THROUGH" % ", #".join(later)
 
     return [
         {"id": "debut", "tier": 3, "title": "Where he comes in",
@@ -731,10 +757,9 @@ def build():
          "sub": "2024– · Saladin Ahmed and Martin Coccolo",
          "links": links("v8"),
          "intro": "The current series, still being published. Rows run to the "
-                  "last issue that has actually shipped and more arrive as it "
-                  "does, so the list never carries an issue nobody can buy "
-                  "yet.",
-         "items": ahmed},
+                  "last issue that has actually shipped, then the ones Marvel "
+                  "has already dated, each marked not out yet.",
+         "items": ahmed + dated},
     ]
 
 
@@ -804,6 +829,9 @@ def main():
     rows = sum(len(s["items"]) for s in sections)
     ids = {x["id"] for s in sections for x in s["items"]}
     assert rows == len(ids), "duplicate row id"
+    # the blurb counts what can be read today, not what is only dated
+    assert NOT_OUT <= ids, sorted(NOT_OUT - ids)
+    out_now = rows - len(NOT_OUT)
 
     for s in sections:
         for x in s["items"]:
@@ -863,7 +891,7 @@ def main():
                  "publication order — the Claremont/Miller miniseries, Weapon "
                  "X, Larry Hama's seven years on the ongoing, Old Man Logan, "
                  "Aaron, and the solo book since. His X-Men issues are on the "
-                 "X-Men list." % rows,
+                 "X-Men list." % out_now,
         "unit": {"one": "issue", "many": "issues"},
         "verb": {"base": "read", "past": "read", "ing": "reading"},
         "accent": "#7B5230",
@@ -879,14 +907,15 @@ def main():
     # rows, and it is what lets a hub door into this list carry a real
     # weight instead of none. Stamped in one place rather than on every row
     # constructor: `w` is presentation and is not part of an id, so no tick
-    # moves.
+    # moves. An issue that is only dated weighs nothing until it is out.
     for _sec in p["sections"]:
         for _row in _sec["items"]:
-            _row["w"] = 1
+            _row["w"] = 0 if _row["id"] in NOT_OUT else 1
 
     out = prop.write(p)
     print("wrote %s" % out.name)
-    print("  %d sections, %d issues" % (len(sections), rows))
+    print("  %d sections, %d issues out + %d dated"
+          % (len(sections), out_now, len(NOT_OUT)))
     for tier in (1, 2, 3):
         n = sum(len(s["items"]) for s in sections if s["tier"] == tier)
         print("  tier %d: %d issues" % (tier, n))
