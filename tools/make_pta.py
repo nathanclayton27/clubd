@@ -25,9 +25,9 @@ mood; both are read off the infoboxes of the films themselves.
     first and the last of these three, and The Master is the one break in his
     run. Two of the three come from novels.
   * 2017–2025 — Elswit shot six of the first seven features and none of these.
-    The filmography's Cinematographer column says Yes on exactly two rows,
-    Phantom Thread and Licorice Pizza, and both sit here; Michael Bauman
-    shares the second and shot One Battle After Another alone.
+    The filmography's DoP column marks two rows as his, Phantom Thread
+    (uncredited) and Licorice Pizza, and both sit here; Michael Bauman shares
+    the second and shot One Battle After Another alone.
 
 WHAT STAYS OUT
 
@@ -39,13 +39,13 @@ WHAT STAYS OUT
     subset, not the shorts, and an unweighted row in a weighted list is
     silently counted as an hour downstream.
   * Junun (2015). The article files it in a second, differently shaped table
-    under a Documentary heading below the features, alongside an unreleased
-    entry dated TBA. And the prose settles it independently of the layout: in
-    the sentence immediately after the Junun paragraph the article calls
-    Phantom Thread his eighth film, and Phantom Thread is the eighth row of
-    the feature table. Licorice Pizza is called the ninth, One Battle After
-    Another the tenth. The source counts ten, and Junun is not one of them.
-  * The Miscellaneous credits — two uncredited rewrites, a stand-by directing
+    under a Documentaries heading below the features, alongside the 2026
+    concert film Cameron Winter at Carnegie Hall. And the prose settles it
+    independently of the layout: in the sentence immediately after the Junun
+    paragraph the article calls Phantom Thread his eighth film, and Phantom
+    Thread is the eighth row of the feature table. Licorice Pizza is called
+    the ninth, One Battle After Another the tenth. The source counts ten, and Junun is not one of them.
+  * The Miscellaneous credits — four uncredited rewrites, a stand-by directing
     job, an executive producer credit — and the television, the stage play and
     the acting cameos.
 
@@ -94,8 +94,8 @@ ERAS = [
      "three are adapted from novels."),
     ("bauman", "After Elswit", 2017, 2025,
      "Elswit shot six of the first seven features and none of these. The "
-     "filmography's Cinematographer column carries a yes on exactly two rows, "
-     "Phantom Thread and Licorice Pizza, and both are here; Michael Bauman "
+     "filmography's DoP column marks two rows as his, Phantom Thread "
+     "(uncredited) and Licorice Pizza, and both are here; Michael Bauman "
      "shares the second of those and shot One Battle After Another on his "
      "own. Greenwood is still writing the music, and the three came out four "
      "years apart."),
@@ -112,7 +112,7 @@ NOTES = {
     "The Master": "Shot by Mihai Mălaimare Jr., the one break in Robert "
                   "Elswit's run",
     "Inherent Vice": "From the Thomas Pynchon novel",
-    "Phantom Thread": "He took the cinematography credit himself",
+    "Phantom Thread": "He shot it himself, uncredited",
     "Licorice Pizza": "He shares the cinematography credit with Michael Bauman",
     "One Battle After Another": "Inspired by the Thomas Pynchon novel Vineland",
 }
@@ -217,11 +217,15 @@ def main():
         "Jon Brion" in bio["sentences"]["collaborations"], \
         bio["sentences"]["collaborations"]
 
-    # the table's own Producer and Cinematographer columns
+    # the table's own Producer and DoP (cinematographer) columns
     unproduced = [f["t"] for f in films if not f["produced"]]
     assert unproduced == ["Hard Eight"], unproduced
     selfshot = [f["t"] for f in films if f["shot"]]
-    assert selfshot == ["Phantom Thread", "Licorice Pizza"], selfshot
+    assert selfshot == ["Licorice Pizza"], selfshot
+    # Phantom Thread's cell is {{partial|Uncredited}}, and its infobox gives
+    # the camera to him alone: the row note says exactly that
+    unshot = [f["t"] for f in films if f["shot_uncredited"]]
+    assert unshot == ["Phantom Thread"], unshot
     assert dp(films[7]) == "Paul Thomas Anderson", dp(films[7])
     assert "Michael Bauman" in dp(films[8]) and \
         "Paul Thomas Anderson" in dp(films[8]), dp(films[8])
@@ -249,10 +253,16 @@ def main():
     assert films[0]["tablenote"] == "Original title: Sydney", films[0]["tablenote"]
     assert "Jeremy Blake" in films[3]["article"]["lead"], films[3]["article"]["lead"]
     assert "Upton Sinclair" in films[4]["article"]["based_on"] and \
-        "Oil!" in films[4]["tablenote"], films[4]["tablenote"]
+        "''[[Oil!]]''" in films[4]["article"]["based_on_raw"], \
+        films[4]["article"].get("based_on_raw")
     assert "Thomas Pynchon" in films[6]["article"]["based_on"], films[6]
-    assert "Vineland" in films[9]["tablenote"] and \
-        "Thomas Pynchon" in films[9]["article"]["based_on"], films[9]["tablenote"]
+    assert "''[[Vineland]]''" in films[9]["article"]["based_on_raw"] and \
+        "Thomas Pynchon" in films[9]["article"]["based_on"], \
+        films[9]["article"].get("based_on_raw")
+    # "inspired by" rather than "from": the article's own prose calls it loose
+    assert any(o["n"] == 10 and "loose adaptation" in o["window"]
+               and "Vineland" in o["window"] for o in bio["ordinals"]), \
+        bio["ordinals"]
 
     # ---- Junun, as the source's arithmetic rather than an opinion -----------
     assert [d["t"] for d in docs] == ["Junun", "Cameron Winter at Carnegie Hall"], \
@@ -261,9 +271,13 @@ def main():
     assert junun["t"] not in {f["t"] for f in films}, "Junun reached the features"
     assert junun["credit"] == "Director and camera operator", junun["credit"]
     assert junun["year"] == 2015 and junun["runtime"] == 54, junun
-    # the table it sits in also holds an unreleased row, which is what makes it
+    # the table it sits in also holds his 2026 concert film, which has no
+    # article of its own and links into the Live at Carnegie Hall album page:
     # a table of his non-fiction work rather than a second feature table
-    assert docs[1]["year"] == "TBA", docs[1]
+    assert docs[1]["year"] == 2026 and \
+        docs[1]["credit"] == "Director and camera operator" and \
+        docs[1]["section_of"] == \
+        "Live at Carnegie Hall (Cameron Winter album)#Concert film", docs[1]
     assert "documentary" in bio["sentences"]["junun"], bio["sentences"]["junun"]
     # and the article's own numbering, which never counts it. Every "Anderson's
     # Nth film" the prose states must name the Nth row of the feature table;
@@ -305,9 +319,7 @@ def main():
     uncredited = [m["t"] for m in data["misc"]
                   if m["credit"] == "Uncredited rewrite"]
     assert uncredited == ["Corky Romano", "Killers of the Flower Moon",
-                          "Napoleon"], uncredited
-    assert [m["t"] for m in data["misc"] if m["credit"] == "Reported rewrite"] \
-        == ["What Happens at Night"], data["misc"]
+                          "Napoleon", "What Happens at Night"], uncredited
     assert [m["t"] for m in data["misc"] if m["credit"] == "Stand-by director"] \
         == ["A Prairie Home Companion"], data["misc"]
     assert [m["t"] for m in data["misc"] if m["credit"] == "Executive producer"] \
@@ -362,8 +374,9 @@ def main():
     assert all(box.values()), box
     differ = [(f["t"], f["runtime"], box[f["t"]]) for f in films
               if abs(box[f["t"]] - f["runtime"]) >= 0.5]
-    assert [t for t, _, _ in differ] == \
-        ["Hard Eight", "Boogie Nights", "The Master"], differ
+    # Boogie Nights left this list in November 2026, when Wikidata's figure
+    # moved from 149 to the infobox's 155
+    assert [t for t, _, _ in differ] == ["Hard Eight", "The Master"], differ
     # One Battle After Another is deliberately not in that list: its infobox
     # 162 is the same runtime rounded, which is exactly what Wikidata's
     # deprecated statement says it is
@@ -412,9 +425,10 @@ def main():
              "feature." % data["sweep_size"]],
             ["Junun is not here.",
              "The article puts it in a second, differently shaped table under "
-             "a Documentary heading below the features, where his credit reads "
-             "director and camera operator and the only other row is an "
-             "unreleased title dated TBA. Wikidata gives it %d minutes. And "
+             "a Documentaries heading below the features, where his credit "
+             "reads director and camera operator and the only other row is "
+             "Cameron Winter at Carnegie Hall, a 2026 concert film. Wikidata "
+             "gives it %d minutes. And "
              "the prose settles it independently of the layout: in the "
              "sentence straight after the Junun paragraph the article calls "
              "Phantom Thread his eighth film, and Phantom Thread is the "
@@ -432,8 +446,8 @@ def main():
              "Cigarettes & Coffee and Couch. Three of thirteen is a subset "
              "rather than the shorts, and an unweighted row in a weighted "
              "list is silently counted as an hour. The Miscellaneous credits "
-             "are other people's films: %s uncredited rewrites and a reported "
-             "fourth, a stand-by directing job on A Prairie Home Companion, "
+             "are other people's films: %s uncredited rewrites, a stand-by "
+             "directing job on A Prairie Home Companion, "
              "and an executive producer credit on Waterlily Jaguar."
              % (len(mvs), len(shorts), WORDS[len(uncredited)])],
             ["Bar widths are runtimes, and one of them was contested.",
@@ -448,16 +462,15 @@ def main():
              "list weighs. A reader that ignored rank would have taken the "
              "longest of the three and shipped 162, a figure the database "
              "itself has struck out."],
-            ["Three runtimes disagree with the film's own article.",
+            ["Two runtimes disagree with the film's own article.",
              "Wikidata says %d minutes for Hard Eight where its article's "
-             "infobox says %d, %d for Boogie Nights against %d, and %d for "
-             "The Master against %d. One source is kept for all ten rather "
+             "infobox says %d, and %d for The Master against %d. One source "
+             "is kept for all ten rather "
              "than the longest number from whichever source offers it, "
              "because a list that mixes them is a list whose total means "
              "nothing. Going by the infoboxes instead would add about %d "
              "minutes to the %d hours."
              % (films[0]["runtime"], box["Hard Eight"],
-                films[1]["runtime"], box["Boogie Nights"],
                 films[5]["runtime"], box["The Master"],
                 round(boxmins - mins), round(hours))],
             "Filmography from Wikipedia's Paul Thomas Anderson filmography, "

@@ -26,19 +26,19 @@
     ],
     [
       "Junun is not here.",
-      "The article puts it in a second, differently shaped table under a Documentary heading below the features, where his credit reads director and camera operator and the only other row is an unreleased title dated TBA. Wikidata gives it 54 minutes. And the prose settles it independently of the layout: in the sentence straight after the Junun paragraph the article calls Phantom Thread his eighth film, and Phantom Thread is the eighth row of the feature table. Licorice Pizza is the ninth there and One Battle After Another the tenth. The source counts ten features, and Junun is not one of them."
+      "The article puts it in a second, differently shaped table under a Documentaries heading below the features, where his credit reads director and camera operator and the only other row is Cameron Winter at Carnegie Hall, a 2026 concert film. Wikidata gives it 54 minutes. And the prose settles it independently of the layout: in the sentence straight after the Junun paragraph the article calls Phantom Thread his eighth film, and Phantom Thread is the eighth row of the feature table. Licorice Pizza is the ninth there and One Battle After Another the tenth. The source counts ten features, and Junun is not one of them."
     ],
     [
       "No music videos, no shorts, no rewrites.",
-      "The article's Music Videos table has 24 rows, from Michael Penn's Try in 1997 to The Smile's Friend of a Friend in 2024, and not one of them has a Wikidata item naming him as director — so not one could carry a runtime from the single source this list weighs by. The Short films table has 13 rows and only three can be weighted from it: The Dirk Diggler Story, Cigarettes & Coffee and Couch. Three of thirteen is a subset rather than the shorts, and an unweighted row in a weighted list is silently counted as an hour. The Miscellaneous credits are other people's films: three uncredited rewrites and a reported fourth, a stand-by directing job on A Prairie Home Companion, and an executive producer credit on Waterlily Jaguar."
+      "The article's Music Videos table has 24 rows, from Michael Penn's Try in 1997 to The Smile's Friend of a Friend in 2024, and not one of them has a Wikidata item naming him as director — so not one could carry a runtime from the single source this list weighs by. The Short films table has 13 rows and only three can be weighted from it: The Dirk Diggler Story, Cigarettes & Coffee and Couch. Three of thirteen is a subset rather than the shorts, and an unweighted row in a weighted list is silently counted as an hour. The Miscellaneous credits are other people's films: four uncredited rewrites, a stand-by directing job on A Prairie Home Companion, and an executive producer credit on Waterlily Jaguar."
     ],
     [
       "Bar widths are runtimes, and one of them was contested.",
       "All ten come from Wikidata's P2047 and from nothing else, in hours, each gated on a release year within a year of the filmography's, and read at statement rank. Rank matters exactly once. One Battle After Another's item carries three runtimes: 161 minutes and 162 minutes, both marked deprecated with the reason given as approximation — one truncated, one rounded — and 9,691 seconds, marked preferred for being the most precise value. That is 161 minutes and 31 seconds, and it is what this list weighs. A reader that ignored rank would have taken the longest of the three and shipped 162, a figure the database itself has struck out."
     ],
     [
-      "Three runtimes disagree with the film's own article.",
-      "Wikidata says 98 minutes for Hard Eight where its article's infobox says 102, 149 for Boogie Nights against 155, and 138 for The Master against 137. One source is kept for all ten rather than the longest number from whichever source offers it, because a list that mixes them is a list whose total means nothing. Going by the infoboxes instead would add about 9 minutes to the 23 hours."
+      "Two runtimes disagree with the film's own article.",
+      "Wikidata says 98 minutes for Hard Eight where its article's infobox says 102, and 138 for The Master against 137. One source is kept for all ten rather than the longest number from whichever source offers it, because a list that mixes them is a list whose total means nothing. Going by the infoboxes instead would add about 3 minutes to the 23 hours."
     ],
     "Filmography from Wikipedia's Paul Thomas Anderson filmography, read from the tables themselves; the writing, camera and music credits from each film's own article; runtimes from Wikidata, gated on a matching release year and read at statement rank."
   ],
@@ -60,7 +60,7 @@
           "id": "pta-1997-boogie-nights",
           "t": "Boogie Nights",
           "n": "1997",
-          "w": 2.48
+          "w": 2.58
         },
         {
           "id": "pta-1999-magnolia",
@@ -111,14 +111,14 @@
       "id": "bauman",
       "title": "After Elswit",
       "sub": "2017–2025 · 3 films · about 7 hours",
-      "intro": "Elswit shot six of the first seven features and none of these. The filmography's Cinematographer column carries a yes on exactly two rows, Phantom Thread and Licorice Pizza, and both are here; Michael Bauman shares the second of those and shot One Battle After Another on his own. Greenwood is still writing the music, and the three came out four years apart.",
+      "intro": "Elswit shot six of the first seven features and none of these. The filmography's DoP column marks two rows as his, Phantom Thread (uncredited) and Licorice Pizza, and both are here; Michael Bauman shares the second of those and shot One Battle After Another on his own. Greenwood is still writing the music, and the three came out four years apart.",
       "items": [
         {
           "id": "pta-2017-phantom-thread",
           "t": "Phantom Thread",
           "n": "2017",
           "w": 2.17,
-          "note": "He took the cinematography credit himself"
+          "note": "He shot it himself, uncredited"
         },
         {
           "id": "pta-2021-licorice-pizza",
