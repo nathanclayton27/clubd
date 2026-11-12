@@ -53,8 +53,8 @@ Action*, Priest, Hudlin, Coates, Ridley and Ewing, with the Fantastic Four
 issues left on the Fantastic Four list rather than duplicated),
 *Fullmetal Alchemist* (108 chapters), *Bleach* (708 rows including the
 twelve chapters the source numbers from minus 108, arcs taken from the
-chapter lists' own cited prose), *Spawn* — 829 issues across 187 arcs, following a curated
-reading order rather than publication date — and *Green Lantern*, Geoff Johns
+chapter lists' own cited prose), *Spawn* — 891 issues across 192 arcs and a final section of what the
+source has yet to place, following a curated reading order rather than publication date — and *Green Lantern*, Geoff Johns
 from *Rebirth* to *Blackest Night*, where the Corps book and the crossover
 tie-ins are tiered instead of dropped, so the readable path and the complete
 one are the same list.

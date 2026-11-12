@@ -20,8 +20,9 @@ order proper: "SPAWN READING ORDER" (1992 to the Spawn's Universe relaunch)
 and "SPAWN'S UNIVERSE READING ORDER" (the four concurrent ongoings that follow
 it). Those two are the list. Deliberately left out:
 
-  * the ANNOUNCED PROJECTS table — series with no issues published yet, listed
-    as ranges rather than issues, so they cannot be rows in an issue tracker;
+  * the ANNOUNCED PROJECTS table — a list of series, most of them given as
+    ranges rather than issues. The four that the reading order itself places
+    as ranges are spelled out there instead (see RANGES);
   * the RELEASE ORDER calendar — the same issues again, by cover month; it is
     an index, not a second order. It was tried as a source of cover years for
     the section headers and abandoned: it covers 197 of the 375 Spawn issues
@@ -36,6 +37,13 @@ it). Those two are the list. Deliberately left out:
 The two reading-order tables also each carry the Spawn's Universe one-shot, as
 the hinge between them; it is one comic and gets one row, at the head of the
 Spawn's Universe order where that order begins.
+
+PAST THE SOURCE. The document was last updated on 7 July 2026, and for seven of
+its series it stops short of what Image has published or dated. Those
+issues follow the order in one final section, in release order
+(PAST_SOURCE). Ids are
+series plus number wherever a row sits, so when the document places an issue
+it moves out of that section without unticking anyone. CLU-635.
 
 SECTIONS are the document's own arc column, which uses rowspan to bracket the
 issues belonging to each arc. Nothing is merged or re-cut: if the document
@@ -103,7 +111,69 @@ FRONTIER = re.compile(r"\s*\(Most Recent Issue\)\s*$")
 ARC_TITLE = {
     "???": "Untitled arc",
     "???(Spawn Vol. 9)": "Spawn, Vol. 9",
+    # A spaced hyphen in the source, set as the dash it stands for.
+    "Spawn: The Dark Ages - The Legend of Erlking Ulegrave":
+        "Spawn: The Dark Ages — The Legend of Erlking Ulegrave",
 }
+
+# The Spawn's Universe table ends with series the source gives as ranges
+# rather than issues, the same block its ANNOUNCED PROJECTS table repeats.
+# They stayed out while nothing in them was published. All of them are out now
+# (Image Comics series pages, fetched 2026-11-12), so each range is spelled out
+# issue by issue at the source's own position: {range as the document writes
+# it: (series, first, last, release dates or None)}. A fixed range is checked
+# against the document's own numbers. The open-ended one runs to the last issue
+# Image has dated, and carries its dates so an unreleased issue gets w: 0.
+#
+# The 2025 Dark Ages is a second volume: the 1999 series is already on the list
+# as "Spawn, The Dark Ages" #1-28, and both would slug to the same ids, so the
+# new one carries its year as the two Violators do.
+RANGES = {
+    "The Curse of Sherlee Johnson #1-5 (arc 1)":
+        ("The Curse of Sherlee Johnson", 1, 5, None),
+    "Spawn: The Dark Ages #1-6": ("Spawn: The Dark Ages (2025)", 1, 6, None),
+    "She-Spawn #1-5": ("She-Spawn", 1, 5, None),
+    "Spawn 77 #1-3": ("Spawn 77", 1, 3, None),
+    "The Curse of Sherlee Johnson #6-ongoing":
+        ("The Curse of Sherlee Johnson", 6, 9,
+         ["2026-06-24", "2026-08-26", "2026-10-14", "2027-01-06"]),
+}
+
+# Issues past the last one the document enumerates, for series it tracks:
+# {series as the document names it: (first issue, release dates in order)}.
+# Dates from the imagecomics.com series and release pages, fetched 2026-11-12.
+# The first issue must follow straight on from the document's last, so when a
+# later edit of the document places some of these, EXPECTED_SERIES_MAX fails
+# and the placed issues come out of here. Dates after AS_OF are not out yet.
+AS_OF = "2026-11-12"
+PAST_SOURCE = {
+    "Spawn": (376, ["2026-06-03", "2026-07-01", "2026-08-26", "2026-09-30",
+                    "2026-10-28", "2026-12-02", "2027-01-20", "2027-02-17"]),
+    "King Spawn": (55, ["2026-05-27", "2026-06-24", "2026-07-22", "2026-08-26",
+                        "2026-09-23", "2026-10-21", "2026-11-18", "2027-01-20",
+                        "2027-02-03"]),
+    "Gunslinger Spawn": (55, ["2026-06-24", "2026-07-22", "2026-08-19",
+                              "2026-09-23", "2026-10-21", "2026-11-18",
+                              "2026-12-30", "2027-01-27"]),
+    "The Scorched": (57, ["2026-11-25", "2026-12-23", "2027-01-27"]),
+    "Sam & Twitch: Case Files": (17, [
+        "2025-09-03", "2025-10-01", "2025-10-29", "2025-12-17", "2026-02-04",
+        "2026-03-18", "2026-04-29", "2026-06-03", "2026-07-01"]),
+    # Image lists nothing after #25.
+    "Rat City": (19, ["2025-10-29", "2025-11-26", "2026-01-21", "2026-02-18",
+                      "2026-03-18", "2026-04-15", "2026-06-10"]),
+    "Deadly Tales of the Gunslinger": (13, [
+        "2026-02-11", "2026-03-18", "2026-06-24", "2026-07-15", "2026-08-12",
+        "2026-09-09", "2026-10-07", "2026-11-04", "2026-12-16", "2027-01-20"]),
+}
+MONTHS = ("January February March April May June July August September "
+          "October November December").split()
+
+
+def due(date):
+    """The house not-out-yet note for an ISO date."""
+    y, m, d = date.split("-")
+    return "Not out yet — due %d %s %s" % (int(d), MONTHS[int(m) - 1], y)
 
 # Trailing parentheticals on a one-shot's title: the format is already carried
 # by its tag, and the publisher and alternate title read better as a note.
@@ -264,11 +334,11 @@ EXPECTED_FRONTIER = {
 
 # Enumerated totals, so a re-parse that silently loses rows fails here. 835
 # issue rows across the two tables, less the duplicated hinge and the five
-# announced-project ranges.
+# ranges, which RANGES spells out separately.
 EXPECTED_ROWS = 829
-# 195 arc groups across the two tables, less the hinge's own group, the five
-# announced-project groups, and the two runs of blank spacer rows.
-EXPECTED_SECTIONS = 187
+# 195 arc groups across the two tables, less the hinge's own group and the two
+# runs of blank spacer rows. The PAST_SOURCE section comes on top.
+EXPECTED_SECTIONS = 192
 EXPECTED_SERIES_MAX = {
     "Spawn": 375, "King Spawn": 54, "Gunslinger Spawn": 54,
     "The Scorched": 56, "Curse of the Spawn": 29, "Haunt": 28,
@@ -418,17 +488,32 @@ def main():
         trimmed.append(row)
     assert seen_hinge, "the Spawn's Universe hinge row is no longer duplicated"
 
-    # The Spawn's Universe table ends with announced series given as ranges
-    # rather than issues — the same block the ANNOUNCED PROJECTS table repeats.
-    # Nothing in it has been published, and a range is not an issue.
-    announced = re.compile(r"#\d+\s*-\s*(\d+|ongoing)", re.I)
-    dropped_ranges = [r["issue"] for r in trimmed if announced.search(r["issue"])]
-    assert len(dropped_ranges) == 5, \
-        "expected 5 announced-project ranges, saw %s" % dropped_ranges
+    # The Spawn's Universe table ends with series given as ranges rather than
+    # issues. Each is spelled out in place, from RANGES.
+    announced = re.compile(r"#(\d+)\s*-\s*(\d+|ongoing)", re.I)
+    ranges = [r["issue"] for r in trimmed if announced.search(r["issue"])]
+    assert sorted(ranges) == sorted(RANGES), \
+        "the document's issue ranges changed: %s" % ranges
     rows = [r for r in trimmed if not announced.search(r["issue"])]
 
     assert len(rows) == EXPECTED_ROWS, \
         "the document now enumerates %d issues, not %d" % (len(rows), EXPECTED_ROWS)
+
+    placed = []
+    for r in trimmed:
+        m = announced.search(r["issue"])
+        if not m:
+            placed.append(r)
+            continue
+        series, lo, hi, dates = RANGES[r["issue"]]
+        assert int(m.group(1)) == lo, "%r no longer starts at #%d" % (r["issue"], lo)
+        if m.group(2).isdigit():
+            assert int(m.group(2)) == hi, "%r no longer ends at #%d" % (r["issue"], hi)
+        assert dates is None or len(dates) == hi - lo + 1, r["issue"]
+        for k, n in enumerate(range(lo, hi + 1)):
+            placed.append({"table": r["table"], "arc": r["arc"],
+                           "issue": "%s #%d" % (series, n), "note": False,
+                           "bg": r["bg"], "date": dates[k] if dates else None})
 
     # Every annotation in the source must have been looked at by a human.
     annotated = {r["issue"] for r in rows if r["note"]}
@@ -448,8 +533,8 @@ def main():
         "the '(Most Recent Issue)' markers moved: %s" % frontier
 
     sections, ids, series_max = [], {}, collections.defaultdict(int)
-    tags_seen = set()
-    for row in rows:
+    tags_seen, last_tag = set(), {}
+    for row in placed:
         arc = row["arc"]
         if not sections or sections[-1]["_arc"] != arc or \
                 sections[-1]["_table"] != row["table"]:
@@ -461,18 +546,23 @@ def main():
         tag = LEGEND.get(row["bg"])
         assert tag, "unmapped legend colour %r on %r" % (row["bg"], row["issue"])
         tags_seen.add(tag)
+        last_tag[series] = tag
         if num:
             series_max[series] = max(series_max[series], int(float(num.lstrip("#"))))
 
         note = NOTE_REWRITES.get(row["issue"]) if row["note"] else None
+        unreleased = (row.get("date") or "") > AS_OF
         item ={"id": "spawn-" + prop.slug("%s %s" % (series, num or title)),
                 "t": series, "n": num}
-        body = prop.join_bits(strip_arc(title, arc), aside, note)
+        body = prop.join_bits(strip_arc(title, arc), aside, note,
+                              due(row["date"]) if unreleased else "")
         if body:
             item["note"] = body
         item["tags"] = [tag]
         if tag == "Optional":
             item["opt"] = 1
+        if unreleased:
+            item["_unreleased"] = True
         assert item["id"] not in ids, \
             "%r and %r collide on id %s" % (row["issue"], ids.get(item["id"]), item["id"])
         ids[item["id"]] = row["issue"]
@@ -502,6 +592,36 @@ def main():
                     "sub": bits,
                     "items": sec["items"]})
 
+    # What Image has published or dated past the document, in release order;
+    # same-day releases keep PAST_SOURCE's series order.
+    past = []
+    for rank, (series, (first, dates)) in enumerate(PAST_SOURCE.items()):
+        assert first == series_max[series] + 1, \
+            "%s past the source should start at #%d, not #%d" % (
+                series, series_max[series] + 1, first)
+        assert dates == sorted(dates), "%s dates out of order" % series
+        for k, date in enumerate(dates):
+            past.append((date, rank, series, first + k))
+    items = []
+    for date, _, series, n in sorted(past):
+        item = {"id": "spawn-" + prop.slug("%s #%d" % (series, n)),
+                "t": series, "n": "#%d" % n}
+        if date > AS_OF:
+            item["note"] = due(date)
+        item["tags"] = [last_tag[series]]
+        if date > AS_OF:
+            item["_unreleased"] = True
+        assert item["id"] not in ids, "%s is already placed" % item["id"]
+        ids[item["id"]] = "%s #%d" % (series, n)
+        items.append(item)
+    out.append({"id": "not-yet-placed", "tier": 1,
+                "title": "Not yet placed by the source",
+                "sub": " · ".join("%s %s" % (s, rng(["#%d" % (f + k) for k in range(len(d))]))
+                                  for s, (f, d) in PAST_SOURCE.items()),
+                "items": items})
+
+    released = sum(1 for s in out for x in s["items"] if not x.get("_unreleased"))
+
     p = {
         "slug": SLUG,
         "title": "Spawn",
@@ -510,9 +630,10 @@ def main():
         "popularity": 61,
         # The source dates its first row itself: "Year is 1992."
         "year": "1992–",
+        # Counts what is out: dated issues are rows but not yet issues to read.
         "blurb": "%d issues of Spawn and its spin-offs, in the order they are "
                  "meant to be read rather than the order they came out."
-                 % len(ids),
+                 % released,
         "unit": {"one": "issue", "many": "issues"},
         "verb": {"base": "read", "past": "read", "ing": "reading"},
         "accent": "#4412A6",
@@ -545,13 +666,19 @@ def main():
              "doubts its placement. Never what happens in it. The source's own "
              "annotations are rewritten to that rule rather than copied."],
             ["What is left out.",
-             "The source's appendices: the announced series with no issues out "
-             "yet, the cover-date calendar, and the miscellany of toy comics, "
+             "The source's appendices: its list of announced projects, the "
+             "cover-date calendar, and the miscellany of toy comics, "
              "parodies and cancelled projects it files outside the order and "
-             "marks non-canon. The reading order itself is here whole."],
+             "marks non-canon. The reading order itself is here whole, its "
+             "ranges of issues spelled out one by one."],
+            ["Newer than the source.",
+             "Later issues of the series it follows, out or dated by Image, "
+             "sit in the one section that is ours, at the end, in release "
+             "order, until the source places them."],
             "Order, arc divisions and placement notes from Blake Whitlow's "
             "Spawn Reading Order / Chronology, kept updated since 2012; the "
-            "annotations are rewritten from it rather than copied.",
+            "annotations are rewritten from it rather than copied. Release "
+            "dates from Image Comics.",
         ],
         "sections": out,
     }
@@ -561,13 +688,15 @@ def main():
     # rows, and it is what lets a hub door into this list carry a real
     # weight instead of none. Stamped in one place rather than on every row
     # constructor: `w` is presentation and is not part of an id, so no tick
-    # moves.
+    # moves. An issue Image has dated but not yet published weighs nothing
+    # until it is out.
     for _sec in p["sections"]:
         for _row in _sec["items"]:
-            _row["w"] = 1
+            _row["w"] = 0 if _row.pop("_unreleased", False) else 1
 
     path = prop.write(p)
-    print("%s: %d issues in %d arcs" % (path.name, len(ids), len(out)))
+    print("%s: %d rows (%d out) in %d arcs and %d past the source"
+          % (path.name, len(ids), released, len(out) - 1, len(items)))
     print("   lines: %s" % ", ".join(
         "%s %d" % (t, sum(1 for s in out for x in s["items"] if x["tags"] == [t]))
         for t in sorted(tags_seen)))
