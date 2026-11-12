@@ -74,6 +74,11 @@ def due(iso):
 def main():
     data = json.loads((pathlib.Path(__file__).resolve().parent / "data"
                        / "mst3k-episodes.json").read_text(encoding="utf-8"))
+    # A template's named argument never displays, so one in a title means the
+    # extractor leaked it ("reason=..." sat in 418's title for months, CLU-651).
+    for s in data["sections"]:
+        for r in s["rows"]:
+            assert "=" not in r["t"], "template argument leaked into %r" % r["t"]
 
     sections = []
     for s in data["sections"]:
