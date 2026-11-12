@@ -40,7 +40,7 @@
 * [[United International Pictures]] (International)<ref name=UPI>{{cite web|title=UPI floats Bullwinkle, Hannibal|first=Adam|last=Minns|date=February 23, 2000|access-date=June 9, 2024|url=https://www.screendaily.com/upi-floats-bullwinkle-hannibal/401495.article}}</ref>{{efn|excluding Germany and Austria ([[Tobis Film|Tobis]]-[[StudioCanal]]), Italy ([[Filmauro]]), and Japan (GAGA-Humax)<ref name=DeLaurentiis />}}
 }}
 | released       = {{Film date|df=yes|2001|2|9|United States}}
-| runtime        = 132 minutes<!--Theatrical runtime: 131:47--><ref>{{cite web | url=http://www.bbfc.co.uk/releases/hannibal-film | title=''Hannibal'' (18) | work=[[British Board of Film Classification]] | date=1 February 2001 | access-date=5 October 2016 | archive-date=5 October 2016 | archive-url=https://web.archive.org/web/20161005214517/http://www.bbfc.co.uk/releases/hannibal-film | url-status=dead }}</ref>
+| runtime        = 131 minutes<!--Theatrical runtime: 131:47--><ref>{{cite web | url=http://www.bbfc.co.uk/releases/hannibal-film | title=''Hannibal'' (18) | work=[[British Board of Film Classification]] | date=1 February 2001 | access-date=5 October 2016 | archive-date=5 October 2016 | archive-url=https://web.archive.org/web/20161005214517/http://www.bbfc.co.uk/releases/hannibal-film | url-status=dead }}</ref><ref name=afi/><ref name="mojo" />
 | country        = {{Plainlist|
 * United States<ref name=afi>{{cite web|title=Hannibal|url=https://catalog.afi.com/Film/62035-HANNIBAL?sid=bf2a4b52-8a28-452e-b1d2-8b08024b10a4&sr=10.881048&cp=1&pos=0|website=AFI Catalog|access-date=12 November 2022|archive-date=12 November 2022|archive-url=https://web.archive.org/web/20221112170324/https://catalog.afi.com/Film/62035-HANNIBAL?sid=bf2a4b52-8a28-452e-b1d2-8b08024b10a4&sr=10.881048&cp=1&pos=0|url-status=live}}</ref>
 }}
@@ -49,7 +49,7 @@
 | gross          = $351.6 million<ref name="mojo" />
 }}
 
-'''''Hannibal''''' is a 2001 American [[horror film]] co-produced and directed by [[Ridley Scott]] from a screenplay by [[David Mamet]] and [[Steven Zaillian]], based on the [[Hannibal (Harris novel)|1999 novel]] by [[Thomas Harris]]. It is a sequel to ''[[The Silence of the Lambs (film)|The Silence of the Lambs]]'' (1991). Its plot follows  disgraced [[Federal Bureau of Investigation|FBI]] special  agent [[Clarice Starling]] as she attempts to apprehend the cannibalistic serial killer [[Hannibal Lecter]] before his surviving victim, [[Mason Verger]], captures him. [[Anthony Hopkins]] reprises his role as Lecter, while [[Julianne Moore]] replaces [[Jodie Foster]] as Starling and [[Gary Oldman]] plays Verger. [[Ray Liotta]], [[Frankie Faison|Frankie R. Faison]], [[Giancarlo Giannini]], and [[Francesca Neri]] also star.
+'''''Hannibal''''' is a 2001 American [[thriller film]] co-produced and directed by [[Ridley Scott]] from a screenplay by [[David Mamet]] and [[Steven Zaillian]], based on the [[Hannibal (Harris novel)|1999 novel]] by [[Thomas Harris]]. It is a sequel to ''[[The Silence of the Lambs (film)|The Silence of the Lambs]]'' (1991). Its plot follows  disgraced [[Federal Bureau of Investigation|FBI]] special  agent [[Clarice Starling]] as she attempts to apprehend the cannibalistic serial killer [[Hannibal Lecter]] before his surviving victim, [[Mason Verger]], captures him. [[Anthony Hopkins]] reprises his role as Lecter, while [[Julianne Moore]] replaces [[Jodie Foster]] as Starling and [[Gary Oldman]] plays Verger. [[Ray Liotta]], [[Frankie Faison|Frankie R. Faison]], [[Giancarlo Giannini]], and [[Francesca Neri]] also star.
 
 Harris published ''Hannibal'' eleven years after the publication of ''[[The Silence of the Lambs (novel)|The Silence of the Lambs]]'' (1988). Scott became attached while directing ''[[Gladiator (2000 film)|Gladiator]]'' (2000), and signed on after reading the script pitched by [[Dino De Laurentiis]], who had produced ''[[Manhunter (film)|Manhunter]]'' (1986), the first Lecter film. [[Principal photography]] commenced in May 2000, lasting sixteen weeks.
 
@@ -259,42 +259,28 @@ Five months after the film's release, the renowned ''[[South Park]]'' episode [[
 {{David Mamet}}
 {{Steven Zaillian}}
 {{Authority control}}
-{{Portal bar|2000s|Film|Horror|United States}}
+{{Portal bar|2000s|Film|United States}}
 
-[[Category:2000s horror drama films]]
-[[Category:2001 horror thriller films]]
 [[Category:2001 psychological drama films]]
-[[Category:2000s psychological horror films]]
 [[Category:2000s serial killer films]]
 [[Category:2001 American films]]
 [[Category:2001 British films]]
 [[Category:2001 English-language films]]
 [[Category:2001 psychological thriller films]]
-[[Category:American horror drama films]]
-[[Category:American horror thriller films]]
 [[Category:American psychological drama films]]
-[[Category:American psychological horror films]]
 [[Category:American psychological thriller films]]
-[[Category:American romantic horror films]]
 [[Category:American romantic thriller films]]
 [[Category:American sequel films]]
 [[Category:American serial killer films]]
-[[Category:British horror drama films]]
-[[Category:British horror thriller films]]
 [[Category:British psychological drama films]]
-[[Category:British psychological horror films]]
 [[Category:British psychological thriller films]]
-[[Category:British romantic horror films]]
 [[Category:British romantic thriller films]]
 [[Category:British sequel films]]
 [[Category:British serial killer films]]
-[[Category:English-language horror drama films]]
-[[Category:English-language horror thriller films]]
 [[Category:English-language psychological thriller films]]
 [[Category:Films about cannibalism]]
 [[Category:Films about pedophilia]]
 [[Category:Films about people with paraplegia or tetraplegia]]
-[[Category:Films about psychopaths and sociopaths]]
 [[Category:Films about the Federal Bureau of Investigation]]
 [[Category:Films adapted into television shows]]
 [[Category:Films based on American horror novels]]
@@ -321,4 +307,3 @@ Five months after the film's release, the renowned ''[[South Park]]'' episode [[
 [[Category:Saturn Award–winning films]]
 [[Category:Scott Free Productions films]]
 [[Category:Universal Pictures films]]
-[[Category:Italian-language horror thriller films]]

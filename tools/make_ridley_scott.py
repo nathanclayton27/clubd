@@ -6,7 +6,8 @@
 Every feature Ridley Scott has directed and released, in release order — the
 rows of the Feature film table in Wikipedia's "Ridley Scott filmography",
 every one of which is a bare {{yes}} in the Director column. The table holds
-thirty; twenty-nine of them have come out.
+thirty, and all thirty have come out: The Dog Stars, the last of them, was
+released on 28 August 2026.
 
 WHY SIX SECTIONS, AND WHERE THE LINES FALL
 
@@ -25,8 +26,8 @@ Every division is something a source states, checked below rather than felt:
   * 2012–2017 — Prometheus and Alien: Covenant, which the Alien franchise's
     own Wikidata item names as parts of it alongside the 1979 film, and four
     others; five of the six went out through 20th Century Fox.
-  * 2021–2024 — after the four-year gap that ties 1992–1996 as the longest of
-    his career, four films through four different distributors.
+  * 2021–2026 — after the four-year gap that ties 1992–1996 as the longest of
+    his career, five films through four different distributors.
 
 THE ALTERNATE CUTS: ONE ROW PER FILM, AND WHY
 
@@ -47,7 +48,7 @@ Runner's own article counts seven of itself. None of them gets a second row.
 
 RUNTIMES
 
-All twenty-nine from Wikidata P2047 and nothing else, each gated on a P577
+All thirty from Wikidata P2047 and nothing else, each gated on a P577
 publication year within a year of the filmography's year, and each read at
 statement rank — gwlib's reader is rank-blind and takes the longest, which
 here would ship Legend's never-released first cut for a film that went out at
@@ -146,9 +147,9 @@ ERAS = [
      "five years after that; the Alien franchise's Wikidata item names all "
      "three as parts of itself. Five of these six went out through 20th "
      "Century Fox."),
-    ("recent", "After the four-year gap", 2021, 2024,
+    ("recent", "After the four-year gap", 2021, 2026,
      "Another four-year break, tying 1992 to 1996 as the longest of his "
-     "career, and then four films in four years through four different "
+     "career, and then five films in six years through four different "
      "distributors. 2017 and 2021 are the only years on this list carrying "
      "two Ridley Scott releases each."),
 ]
@@ -223,26 +224,23 @@ def main():
     data = json.loads(DATA.read_text(encoding="utf-8"))
     table, shorts = data["films"], data["shorts"]
 
-    # ---- the table, and the one row that is not a shipped film -------------
+    # ---- the table: every row of it is now a released film -----------------
     assert len(table) == 30, len(table)
     assert table[0]["t"] == "The Duellists" and table[0]["year"] == 1977, table[0]
-    # The Dog Stars: its own article calls it upcoming and dates it after the
-    # day this data was collected, and its Wikidata item carries no runtime at
-    # all. Both have to hold for it to stay off; when it releases, this fails.
+    # The Dog Stars was the one row held back while its own article called it
+    # upcoming. It went out on 28 August 2026 (refetched 2026-11-11), so the
+    # table and the list are the same thirty films. A new upcoming row in the
+    # table fails here rather than shipping unweighted.
     pending = [f for f in table if f["upcoming"]]
-    assert [f["t"] for f in pending] == ["The Dog Stars"], pending
-    dogstars = pending[0]
-    assert dogstars["release_date"] > data["collected"], \
-        "The Dog Stars has released — add the row and reweigh"
-    assert not dogstars["p2047_seen"], \
-        "The Dog Stars grew a Wikidata runtime — revisit the exclusion"
+    assert not pending, [(f["t"], f["release_date"]) for f in pending]
 
-    films = [f for f in table if not f["upcoming"]]
-    assert len(films) == 29, len(films)
+    films = list(table)
+    assert len(films) == 30, len(films)
     films.sort(key=lambda f: (f["year"], f["release_date"] or "9999-99-99",
                               f["t"]))
-    assert films[-1]["t"] == "Gladiator II" and films[-1]["year"] == 2024, \
+    assert films[-1]["t"] == "The Dog Stars" and films[-1]["year"] == 2026, \
         films[-1]
+    assert films[-1]["release_date"] <= data["collected"], films[-1]
     assert all(f["year"] <= g["year"] for f, g in zip(films, films[1:])), \
         "films are not in release order"
     # the only two years with two films, and the release dates that order them
@@ -445,7 +443,11 @@ def main():
         [f["t"] for f in fox], [f["t"] for f in fox]
 
     era6 = [f for f in films if f["year"] >= 2021]
-    assert len(era6) == 4, [f["t"] for f in era6]
+    assert len(era6) == 5, [f["t"] for f in era6]
+    # "five films in six years": 2021 to 2026 inclusive, counted the way the
+    # 2001–2010 intro counts its "eight films in ten years"
+    assert era6[-1]["year"] - era6[0]["year"] + 1 == 6, \
+        [f["year"] for f in era6]
     dists = [f["article"]["distributor"].split(",")[0].split("(")[0].strip()
              for f in era6]
     assert len(set(dists)) == 4, dists
@@ -651,9 +653,9 @@ def main():
         # than the Spielberg one, and deliberately a point under the Alien &
         # Predator list this one shares three films with. See POPULARITY.md.
         "popularity": 75,
-        "year": "1977–2024",
-        "blurb": "Twenty-nine features in release order, The Duellists to "
-                 "Gladiator II — about %d hours. The films with famous "
+        "year": "%d–%d" % (films[0]["year"], films[-1]["year"]),
+        "blurb": "Thirty features in release order, The Duellists to "
+                 "The Dog Stars — about %d hours. The films with famous "
                  "alternate cuts get one row each, with the cut named on the "
                  "row." % round(hours),
         "unit": {"one": "film", "many": "films"},
@@ -684,7 +686,7 @@ def main():
              "it. So the cut is named on the row instead, and the note says "
              "which version the bar is measuring."],
             ["Bar widths are runtimes, and three of them took a decision.",
-             "All 29 come from Wikidata's runtime property, in hours, each "
+             "All %d come from Wikidata's runtime property, in hours, each "
              "gated on a release year within a year of the filmography's. "
              "Three items carry more than one value. Kingdom of Heaven labels "
              "its two: 144 minutes for the theatrical version and 190 for the "
@@ -701,20 +703,15 @@ def main():
              "those two the film's own article decides, because it states the "
              "length of every version that actually came out; the choice is "
              "always between numbers Wikidata already carries, and no number "
-             "is ever typed in from somewhere else."],
+             "is ever typed in from somewhere else." % len(films)],
             ["Four rows where the two sources disagree by a few minutes.",
              "Someone to Watch Over Me, 1492: Conquest of Paradise, White "
              "Squall and Matchstick Men each carry a single Wikidata runtime "
              "that runs three to seven minutes short of the single figure "
              "their own articles give. None of the four has an alternate cut "
-             "and nothing says which number is right, so all 29 rows keep to "
+             "and nothing says which number is right, so all %d rows keep to "
              "the one source rather than becoming a blend of two — the same "
-             "rule the rest of this catalogue follows."],
-            ["The Dog Stars is not here yet.",
-             "The filmography's table has thirty rows; this list has 29. The "
-             "thirtieth is The Dog Stars, which its own article calls "
-             "upcoming and dates to 28 August 2026, and which carries no "
-             "published runtime anywhere. It joins the day it comes out."],
+             "rule the rest of this catalogue follows." % len(films)],
             ["Directing only, and features only.",
              "The producing is not here — %d films he produced and %d he "
              "executive produced, from The Browning Version to Alien: "
@@ -746,7 +743,7 @@ def main():
 
     out = prop.write(p)
     ids = [x["id"] for s in sections for x in s["items"]]
-    assert len(ids) == 29, len(ids)
+    assert len(ids) == 30, len(ids)
     print("wrote %s — %d films, %d minutes, %.2f hours"
           % (out.name, len(ids), mins, hours))
     for s in sections:

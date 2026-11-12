@@ -4,8 +4,8 @@
   "subtitle": "the directed features, in release order",
   "kind": "films",
   "popularity": 75,
-  "year": "1977–2024",
-  "blurb": "Twenty-nine features in release order, The Duellists to Gladiator II — about 65 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
+  "year": "1977–2026",
+  "blurb": "Thirty features in release order, The Duellists to The Dog Stars — about 67 hours. The films with famous alternate cuts get one row each, with the cut named on the row.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -25,15 +25,11 @@
     ],
     [
       "Bar widths are runtimes, and three of them took a decision.",
-      "All 29 come from Wikidata's runtime property, in hours, each gated on a release year within a year of the filmography's. Three items carry more than one value. Kingdom of Heaven labels its two: 144 minutes for the theatrical version and 190 for the director's cut, and this list takes the director's cut. It is the one row here that does not measure what played in cinemas, and that is the point — the long version is the one worth watching, so it is the one the row recommends and the one the bar counts. Blade Runner carries 112 and 116 with nothing to tell them apart, and Legend carries a labelled 114-minute director's cut beside an unlabelled 125 — which is neither of the two lengths it was released at, and which its own article explains as the first cut Scott assembled before the film was trimmed. For those two the film's own article decides, because it states the length of every version that actually came out; the choice is always between numbers Wikidata already carries, and no number is ever typed in from somewhere else."
+      "All 30 come from Wikidata's runtime property, in hours, each gated on a release year within a year of the filmography's. Three items carry more than one value. Kingdom of Heaven labels its two: 144 minutes for the theatrical version and 190 for the director's cut, and this list takes the director's cut. It is the one row here that does not measure what played in cinemas, and that is the point — the long version is the one worth watching, so it is the one the row recommends and the one the bar counts. Blade Runner carries 112 and 116 with nothing to tell them apart, and Legend carries a labelled 114-minute director's cut beside an unlabelled 125 — which is neither of the two lengths it was released at, and which its own article explains as the first cut Scott assembled before the film was trimmed. For those two the film's own article decides, because it states the length of every version that actually came out; the choice is always between numbers Wikidata already carries, and no number is ever typed in from somewhere else."
     ],
     [
       "Four rows where the two sources disagree by a few minutes.",
-      "Someone to Watch Over Me, 1492: Conquest of Paradise, White Squall and Matchstick Men each carry a single Wikidata runtime that runs three to seven minutes short of the single figure their own articles give. None of the four has an alternate cut and nothing says which number is right, so all 29 rows keep to the one source rather than becoming a blend of two — the same rule the rest of this catalogue follows."
-    ],
-    [
-      "The Dog Stars is not here yet.",
-      "The filmography's table has thirty rows; this list has 29. The thirtieth is The Dog Stars, which its own article calls upcoming and dates to 28 August 2026, and which carries no published runtime anywhere. It joins the day it comes out."
+      "Someone to Watch Over Me, 1492: Conquest of Paradise, White Squall and Matchstick Men each carry a single Wikidata runtime that runs three to seven minutes short of the single figure their own articles give. None of the four has an alternate cut and nothing says which number is right, so all 30 rows keep to the one source rather than becoming a blend of two — the same rule the rest of this catalogue follows."
     ],
     [
       "Directing only, and features only.",
@@ -247,8 +243,8 @@
     {
       "id": "recent",
       "title": "After the four-year gap",
-      "sub": "2021–2024 · 4 films · 10 hours",
-      "intro": "Another four-year break, tying 1992 to 1996 as the longest of his career, and then four films in four years through four different distributors. 2017 and 2021 are the only years on this list carrying two Ridley Scott releases each.",
+      "sub": "2021–2026 · 5 films · 12 hours",
+      "intro": "Another four-year break, tying 1992 to 1996 as the longest of his career, and then five films in six years through four different distributors. 2017 and 2021 are the only years on this list carrying two Ridley Scott releases each.",
       "items": [
         {
           "id": "rs-2021-the-last-duel",
@@ -274,6 +270,12 @@
           "t": "Gladiator II",
           "n": "2024",
           "w": 2.47
+        },
+        {
+          "id": "rs-2026-the-dog-stars",
+          "t": "The Dog Stars",
+          "n": "2026",
+          "w": 1.98
         }
       ]
     }

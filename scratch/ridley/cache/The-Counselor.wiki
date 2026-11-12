@@ -70,9 +70,9 @@ Malkina's failed effort to steal the drugs does not deter her. She tracks Westra
 ==Cast==
 {{Cast listing|
 * [[Michael Fassbender]] as the Counselor
+* [[Penélope Cruz]] as Laura
 * [[Cameron Diaz]] as Malkina
 * [[Javier Bardem]] as Reiner
-* [[Penélope Cruz]] as Laura
 * [[Brad Pitt]] as Westray
 * [[Rosie Perez]] as Ruth
 * [[Natalie Dormer]] as the Blonde
@@ -118,7 +118,7 @@ The [[film score]] to ''The Counselor'' was composed by [[Daniel Pemberton]].<re
 ===Screenplay===
 * {{cite magazine|author=McCarthy, Cormac|author-link=Cormac McCarthy|date=June 10–17, 2013|title=Scenes of the crime|magazine=[[The New Yorker]]|volume=89|issue=17|pages=66–69|url=https://www.newyorker.com/magazine/2013/06/10/scenes-of-the-crime <!--access-date=2017-05-12-->}}<ref>Excerpt only.</ref>
 ==Marketing==
-A short film was commissioned for the film starring Michael Fassbinder in character buying lingerie from "the Blonde" played by [[Natalie Dormer]].<ref name=":0">{{Cite web |last=Christian |first=Scott |date=2013-10-15 |title=Everything You Need to Know From Michael Fassbender's (Very Surreal) Master Class in Lingerie |url=https://www.gq.com/story/michael-fassbender-video-master-class-shopping-for-lingerie |access-date=2026-08-05 |website=GQ |language=en-US}}</ref><ref>{{Cite web |date=October 18, 2013 |title=Michael Fassbender in 'The Counselor' Teaser |url=https://lbbonline.com/news/michael-fassbender-in-the-counselor-teaser |access-date=August 4, 2026 |website=Little Black Book}}</ref> It was directed by Johnny Hardstaff and released as an exclusive by GQ magazine online.<ref name=":0" /><ref>{{Cite web |last=Playlist Staff |date=October 15, 2013 |title=Exclusive First Listen: 4 Tracks From ‘The Counselor’ Score Plus Michael Fassbender Buys Lingerie In Viral Footage |url=https://theplaylist.net/exclusive-first-listen-4-tracks-from-the-counselor-score-plus-michael-fassbender-buys-lingerie-in-viral-footage-20131015/ |access-date=August 4, 2026 |website=The Playlist}}</ref>
+A short film was commissioned for the film starring Michael Fassbender in character buying lingerie from "the Blonde" played by [[Natalie Dormer]].<ref name=":0">{{Cite web |last=Christian |first=Scott |date=2013-10-15 |title=Everything You Need to Know From Michael Fassbender's (Very Surreal) Master Class in Lingerie |url=https://www.gq.com/story/michael-fassbender-video-master-class-shopping-for-lingerie |access-date=2026-08-05 |website=GQ |language=en-US}}</ref><ref>{{Cite web |date=October 18, 2013 |title=Michael Fassbender in 'The Counselor' Teaser |url=https://lbbonline.com/news/michael-fassbender-in-the-counselor-teaser |access-date=August 4, 2026 |website=Little Black Book}}</ref> It was directed by Johnny Hardstaff and released as an exclusive by GQ magazine online.<ref name=":0" /><ref>{{Cite web |last=Playlist Staff |date=October 15, 2013 |title=Exclusive First Listen: 4 Tracks From ‘The Counselor’ Score Plus Michael Fassbender Buys Lingerie In Viral Footage |url=https://theplaylist.net/exclusive-first-listen-4-tracks-from-the-counselor-score-plus-michael-fassbender-buys-lingerie-in-viral-footage-20131015/ |access-date=August 4, 2026 |website=The Playlist}}</ref>
 
 ==Reception==
 ===Box office===
@@ -137,7 +137,7 @@ Scott Foundas, critic for ''[[Variety (magazine)|Variety]]'', wrote a defense of
 
 Later Ridley Scott said: “The Counselor, to me, was the best dialogue I’ve ever had. Cormac McCarthy wrote the script, and he brought it to me with [producer] Nick Wechsler. I said, “I'll do it now, but it has to be now.” And from that, I got it cast in two weeks—Michael Fassbender, Brad Pitt, Javier Bardem, Penélope Cruz, Cameron Diaz ... they were all fighting to do these parts. I got some disastrous reviews, I'm told. It was very good film, but too dark for the average person. I think the dialogue is beautiful.“<ref>{{cite web | url=https://www.hollywoodreporter.com/movies/movie-features/ridley-scott-interview-gladiator-2-alien-blade-runner-1236049190/ | title=Ridley Scott Will Never Stop Directing: "Shut up and Go Make Another Movie" | website=[[The Hollywood Reporter]] | date=November 7, 2024 }}</ref>
 
-===Accolades===
+=== Accolades ===
 {{table to prose |section|reason=[[WP:PROSE]] is preferable to a table with few items|date=August 2025}}
 {| class="wikitable"
 |-
@@ -189,3 +189,4 @@ Later Ridley Scott said: “The Counselor, to me, was the best dialogue I’ve e
 [[Category:2013 British films]]
 [[Category:English-language crime drama films]]
 [[Category:English-language crime thriller films]]
+[[Category:Films about interracial romance]]

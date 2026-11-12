@@ -1,21 +1,21 @@
 {{Short description|Film by Ridley Scott}}
 {{Featured article}}
-{{Use American English|date=April 2021}}
-{{Use mdy dates|date=April 2021}}
-{{Use list-defined references|date=April 2021}}
+{{Use American English|date=November 2026}}
+{{Use mdy dates|date=November 2026}}
+{{Use list-defined references|date=November 2026}}
 {{Infobox film
 | name           = Prometheus
 | image          = Prometheusposterfixed.jpg
 | caption        = Theatrical release poster
 | alt            = A female figure in silhouette stands before an enormous statue of a humanoid head. Text at the middle of the poster reveals the tagline "The Search for Our Beginning Could Lead to Our End". Text at the bottom of the poster reveals the title, production credits and rating.
 | director       = [[Ridley Scott]]
+| writer         = {{Plainlist|
+* [[Jon Spaihts]]
+* [[Damon Lindelof]]}}
 | producer       = {{Plainlist|
 * [[David Giler]]
 * [[Walter Hill]]
 * Ridley Scott}}
-| writer         = {{Plainlist|
-* [[Jon Spaihts]]
-* [[Damon Lindelof]]}}
 | starring       = {{Plainlist|
 * [[Noomi Rapace]]
 * [[Michael Fassbender]]
@@ -23,14 +23,15 @@
 * [[Idris Elba]]
 * [[Logan Marshall-Green]]
 * [[Charlize Theron]]}}
-| music          = [[Marc Streitenfeld]]
 | cinematography = [[Dariusz Wolski]]
 | editing        = [[Pietro Scalia]]
+| music          = [[Marc Streitenfeld]]
 | studio         = {{Plainlist|
-* [[Scott Free Productions]]
-* [[Brandywine Productions]]
-* [[Dune Entertainment]]}}
-| distributor    = [[20th Century Fox]]
+* [[20th Century Fox]]<ref name="SDreview"/>
+* [[Scott Free Productions]]<ref name="SDreview"/>
+* [[Brandywine Productions]]<ref name="SDreview"/>
+* [[Dune Entertainment]]<ref name="SDreview"/>}}
+| distributor    = 20th Century Fox
 | released       = {{Film date|2012|05|31|[[Empire, Leicester Square|Empire]]|2012|06|01|United Kingdom|2012|06|08|United States}}
 | runtime        = 124 minutes<ref name="Runtime"/>
 | country        = {{Plainlist|
@@ -38,8 +39,7 @@
 * United States}}
 | language       = English
 | budget         = $120–130 million
-| gross          = $403.4 million
-}}
+| gross          = $403.4 million<ref name="BOM"/>}}
 '''''Prometheus''''' is a 2012 [[science fiction horror film]] directed by [[Ridley Scott]] and written by [[Jon Spaihts]] and [[Damon Lindelof]]. It is the fifth installment of the [[Alien (franchise)|''Alien'' film series]] and features an [[ensemble cast]] including [[Noomi Rapace]], [[Michael Fassbender]], [[Guy Pearce]], [[Idris Elba]], [[Logan Marshall-Green]], and [[Charlize Theron]]. Set in the late 21st century, the film centers on the crew of the spaceship ''Prometheus'' as it follows a [[star map]] discovered among the artifacts of several ancient Earth cultures. Seeking the origins of humanity, the crew arrives on a distant world and discovers a threat that could cause [[human extinction]].
 
 Scott and director [[James Cameron]] developed ideas for a film that would serve as a prequel to Scott's science-fiction horror film ''[[Alien (film)|Alien]]'' (1979). In 2002, the development of ''[[Alien vs. Predator (film)|Alien vs. Predator]]'' (2004) took precedence, and the project remained dormant until 2009 when Scott again showed interest. Spaihts wrote a script for a prequel to the events of the [[Alien (franchise)|''Alien'' films]], but Scott opted for a different direction to avoid repeating cues from those films. In late 2010, Lindelof joined the project to rewrite Spaihts' script, and he and Scott developed a story that precedes the story of ''Alien'' but is not directly connected to the original series. According to Scott, although the film shares "strands of ''Alien''{{'}}s DNA," and takes place in the same [[fictional universe|universe]], ''Prometheus'' explores its own mythology and ideas.
@@ -49,23 +49,23 @@ Scott and director [[James Cameron]] developed ideas for a film that would serve
 ''Prometheus'' was released on June 1, 2012, in the United Kingdom and on June 8, 2012, in North America. The film earned generally positive reviews, receiving praise for the designs, production values, and cast performances. The film grossed over $403 million worldwide. A sequel, ''[[Alien: Covenant]]'', was released in May 2017.
 
 ==Plot==
-<!--PER WP:FILMPLOT, PLOT SUMMARIES FOR FEATURE-LENGTH FILMS SHOULD BE BETWEEN 400 AND 700 WORDS! CURRENT WORD COUNT IS 684 -->
-As a spacecraft departs a planet, a tall [[humanoid]] alien drinks a black liquid, causing its body to dissolve. Its remains crumble into a waterfall and the alien's DNA falls apart and starts to recombine.
+<!--PER WP:FILMPLOT, PLOT SUMMARIES FOR FEATURE-LENGTH FILMS SHOULD BE BETWEEN 400 AND 700 WORDS! CURRENT WORD COUNT IS 564-->
+As a spacecraft departs a planet, a tall [[humanoid]] alien drinks a black liquid, causing its body to dissolve. Its remains crumble into a waterfall, while its DNA breaks apart and recombines.
 
-In 2089, archaeologists [[Elizabeth Shaw (character)|Elizabeth Shaw]] and [[List of Alien (franchise) characters#Charlie Holloway|Charlie Holloway]] discover a [[star chart|star map]] in Scotland that matches others from several unconnected ancient cultures. They interpret this as an invitation from humanity's forerunners, the "Engineers". [[Peter Weyland]], the elderly CEO of Weyland Corporation, funds an expedition, aboard the scientific vessel ''Prometheus'', to follow the map to the distant moon LV-223. The ship's crew travels in [[suspended animation]] while the [[android (robot)|android]] [[David 8|David]] monitors their voyage. 
+In 2089, archaeologists [[Elizabeth Shaw (character)|Elizabeth Shaw]] and [[List of Alien (franchise) characters#Charlie Holloway|Charlie Holloway]] discover a [[star chart|star map]] in Scotland that matches others found among unrelated ancient cultures. They interpret it as an invitation from humanity's forerunners, the "Engineers". [[Peter Weyland]], the elderly CEO of Weyland Corporation, funds an expedition aboard the scientific vessel ''Prometheus'' to the distant moon LV-223. The crew travel in [[suspended animation]], while the [[android (robot)|android]] [[David 8|David]] monitors the voyage.
 
-The ''Prometheus'' lands on the barren, mountainous surface near a large, artificial structure. The team explores the interior, discovering stone cylinders, a [[Monolith#Monumental monoliths|monolithic statue]] of a humanoid head, and the decapitated corpse of a large alien. Shaw determines the body is that of an Engineer and retrieves its head, intending to bring it back to ''Prometheus''. The crew find other bodies, leading them to surmise that the species is extinct. Crew members Millburn and Fifield grow uncomfortable with the discoveries and attempt to return to ''Prometheus'', but become lost in the structure. The expedition is cut short when a storm forces the crew to return to the ship. David secretly takes a cylinder vase with him, while most of them ooze a black liquid. In the ship's lab, the Engineer's DNA is found to match that of humans. David investigates the contents of the cylinder. He intentionally taints a drink with a minute sample and proposes a toast to the unsuspecting Holloway, who drinks it, having stated he would do anything for answers. Shortly after, Shaw and Holloway have sex.
+The ''Prometheus'' lands on the barren, mountainous surface near a large artificial structure. Exploring it, the crew find stone cylinders, a [[Monolith#Monumental monoliths|monolithic statue]] of a humanoid head, and the decapitated corpse of a large alien. Shaw identifies the body as an Engineer and retrieves its head. Other corpses suggest the species is extinct. Crew members Millburn and Fifield become uneasy and try to return to the ''Prometheus'', but become lost inside the structure. A storm forces the expedition to retreat. David secretly takes a cylinder, most of which ooze black liquid. The Engineer's DNA matches that of humans.
 
-Inside the structure, a snake-like creature kills Millburn, and sprays a corrosive fluid that melts Fifield's helmet. Fifield falls face first into a puddle. When the crew returns, they find Millburn's corpse. David separately discovers a control room containing a surviving Engineer in stasis and a holographic star map highlighting coordinates to Earth. Meanwhile, Holloway sickens rapidly. He is rushed back to ''Prometheus'', but mission director Meredith Vickers refuses to let him aboard. At his urging, she burns him to death with a flamethrower. Later, a medical scan reveals that Shaw, despite being previously infertile, is now in advanced pregnancy. Fearing the worst, she uses an automated surgery table to extract a squid-like creature from her abdomen. Shaw then discovers that Weyland, Vickers' father, has been in stasis aboard ''Prometheus.'' He explains that he wants to ask the Engineers how not to die from old age.
+David investigates the liquid, deliberately contaminates a drink with a small sample, and offers it to Holloway, who drinks it after saying he would do anything for answers. Shortly afterwards, Shaw and Holloway have sex. Inside the structure, a snake-like creature kills Millburn and sprays corrosive fluid that melts Fifield's helmet, causing him to fall face first into a puddle. David discovers a control room containing an Engineer in stasis and a holographic star map highlighting Earth. Holloway rapidly becomes ill. He is taken back to the ''Prometheus'', but mission director Meredith Vickers refuses him entry and, at his urging, burns him to death with a flamethrower. A medical scan then reveals that Shaw, previously infertile, is pregnant. She uses an automated surgery table to remove a squid-like creature from her abdomen. Shaw subsequently learns that Weyland, Vickers' father, has been in stasis aboard the ship. He intends to ask the Engineers how to overcome old age.
 
-A monstrous, mutated Fifield returns to the ''Prometheus'' and attacks, killing several crewmen before being killed by the captain of ''Prometheus'', Janek. He speculates to Shaw that the structure was actually an Engineer military base that lost control of a virulent biological weapon. The structure also houses a spacecraft. Weyland and the team return to the structure, accompanied by Shaw. David wakes the Engineer from stasis and speaks to him in [[Proto-Indo-European language|Proto-Indo-European]]<ref>{{Cite web|url=https://languagelog.ldc.upenn.edu/nll/?p=4008|title=Language Log » Proto-Indo-European in Prometheus?|access-date=2020-04-22}}</ref> to try to explain what Weyland wants. The Engineer responds by decapitating David and killing Weyland and his team, before reactivating the spacecraft. Shaw desperately flees and warns Janek that the Engineer is planning to release the menace on Earth to exterminate all life forms, convincing him to stop the spacecraft. Janek and the remaining crew sacrifice themselves by ramming the ''Prometheus'' into the alien craft, ejecting the lifeboat in the process. The Engineer's disabled spacecraft crashes onto the ground, crushing Vickers.
+A mutated Fifield returns to the ''Prometheus'' and kills several crewmen before Captain Janek kills him. Janek theorises that the structure was an Engineer military base where a biological weapon escaped control. The base also contains a spacecraft. Weyland, David and the team return to the structure with Shaw. David awakens the surviving Engineer and speaks to him in [[Proto-Indo-European language|Proto-Indo-European]]<ref>{{Cite web|url=https://languagelog.ldc.upenn.edu/nll/?p=4008|title=Language Log » Proto-Indo-European in Prometheus?|access-date=2020-04-22}}</ref>, explaining Weyland's request. The Engineer responds by decapitating David and killing Weyland and his companions, then reactivating the spacecraft. Shaw escapes and warns Janek that the Engineer intends to release the biological weapon on Earth and exterminate humanity. Janek and the remaining crew sacrifice themselves by ramming the ''Prometheus'' into the Engineer spacecraft, disabling it and allowing the lifeboat to escape. The spacecraft crashes, crushing Vickers but sparing Shaw.
 
-Shaw goes to the lifeboat and finds her alien offspring is alive and has grown to gigantic size. The Engineer forces open the lifeboat's airlock and attacks Shaw, who releases her alien offspring onto him. It thrusts an [[ovipositor]] down the Engineer's throat, subduing him. Shaw recovers David's surviving remains and intends to reach the Engineers' home world in an attempt to understand why they wanted to destroy humanity. With David's help, she launches another Engineer spacecraft and departs from LV-223.
+In the lifeboat, Shaw discovers that the alien offspring she removed is still alive and has grown enormously. The Engineer forces open the airlock and attacks her, but Shaw releases the creature, which subdues him by thrusting an [[ovipositor]] down his throat. Shaw recovers David's surviving remains and decides to find the Engineers' home world to discover why they sought humanity's destruction. With David's help, she launches another Engineer spacecraft and leaves LV-223.
 
-In the lifeboat left on the planet, an [[Xenomorph#Deacon|alien creature]] bursts out of the dead Engineer's chest.
+In the abandoned lifeboat, an [[Xenomorph#Deacon|alien creature]] bursts from the dead Engineer's chest.
 
 ==Cast==
-{{see also|List of Alien (film series) characters}}
+{{see also|List of Alien (film series) characters{{!}}List of ''Alien'' (film series) characters}}
 {{multiple image
    | direction = vertical
    | width     = 175
@@ -158,7 +158,7 @@ Scott used the 3D footage to increase the [[stereoscopy|illusion of depth]]. Des
 In July 2011, Scott said that he was filming ''Prometheus'' with both adult-oriented R and more accessible PG-13 [[Film rating#United States|film ratings]] in mind, allowing the more adult content to be cut if necessary without harming the overall presentation. Scott said he had a responsibility to 20th Century Fox to be able to present a PG-13 cut of the film if the studio demanded, allowing it to be viewed by a wider potential audience.<ref name="PostPro1"/> When asked about the rating, Scott said, "The question is, do you go for the PG-13, or do you go for what it should be, which is R? Financially it makes quite a difference&nbsp;... essentially it's kinda R&nbsp;... it's not just about blood, it's about ideas that are very stressful."{{Sfn|Hewitt|2012|p=77}} Scott also said that, regardless of rating, he would present the most aggressive cut of the film he could,{{Sfn|Hewitt|2012|p=77}} while Rothman said that Scott would not be forced to compromise the film's quality to avoid an R-rating.<ref name="PostPro3"/> On May 7, 2012, Fox confirmed that the film had received an R-rating and would be released without any cuts being made.<ref name="Rating1"/><ref name="PostPro5"/> According to Scott, the scene of Shaw surgically removing her alien offspring was the significant cause of the restrictive rating, and it was suggested that removing the scene entirely would be the only way to gain a lower one.<ref name="Editing1"/> A fight scene between Shaw and the Engineer was shortened because Scott decided that Shaw directly wounding the Engineer diminished his role.<ref name="HomeMedia3"/> Scott concluded work on the film in March 2012.<ref name="Release6"/>
 
 ===Music===
-{{see also|Prometheus (soundtrack)}}
+{{main|Prometheus (soundtrack){{!}}''Prometheus'' (soundtrack)}}
 
 [[Marc Streitenfeld]], who had worked with Scott on earlier projects, composed the musical score for ''Prometheus''.<ref name="Music1"/> It took just over a week to record with a 90-piece orchestra at [[Abbey Road Studios]] in London, England.<ref name="SME"/> Streitenfeld began writing ideas for the score after reading the script before filming commenced. He used some unusual techniques to compose the score, and said, "I actually wrote out the sheet music backwards so the orchestra played it backwards and then I digitally flipped it. So you're hearing the score as it's written, the same melody, but with a backwards sounding orchestra which gives it a kind of unusual, unsettling sound."<ref name="SME"/> The ''Prometheus (Original Motion Picture Soundtrack)'' album was released on [[iTunes Store|iTunes]] on May 15, 2012,<ref name="Soundtrack3"/> and on CD on June 4, 2012.<ref name="Soundtrack1"/> It features 23 tracks by Streitenfeld and two supplemental tracks by [[Harry Gregson-Williams]].<ref name="Soundtrack4"/> [[Frédéric Chopin]]{{'}}s "[[Raindrop prelude]]" (1838) is also featured in the film.<ref name="MusicChopin1"/><ref name="MusicChopin2"/>
 
@@ -255,10 +255,10 @@ In North America, ''Prometheus'' DVD and Blu-ray disc releases were listed for p
 
 ''[[Variety (magazine)|Variety]]'' film critic [[Justin Chang]] wrote that the film's narrative structure was unable to handle the philosophical dimension of the plot, and that ''Prometheus'' was lazily deferring key plot points under the presumption that a sequel would be made.<ref name="RevVariety"/> ''[[The Guardian]]'s'' [[Peter Bradshaw]] wrote that ''Prometheus'' was "more grandiose, more elaborate—but less interesting" than ''Alien'', and lacked the latter's "central killer punch."<ref name="RevGuardian"/> Ian Nathan of ''[[Empire (magazine)|Empire]]'' magazine was unimpressed by Rapace—whom he described as an unconvincing lead—and said that with "a lack of suspense, threadbare characters, and a very poor script, the stunning visuals, gloopy madness, and sterling Fassbenderiness can't prevent ''Prometheus'' feeling like ''Alien''{{'}}s poor relation."<ref name="RevEmpire"/> ''[[The Village Voice]]''{{'}}s Nick Pinkerton wrote that the film is "prone to shallow ponderousness," and that Scott "can still mimic the appearance of an epic, noble, important movie—but the appearance is all." He criticized Rapace and Marshall-Green for failing to instill interest in their characters' relationship, but added: "There are a few set pieces here that will find a place of honor among aficionados of body horror and all things clammy and viscous."<ref name="RevVillageVoice"/>
 
-James Cameron said: "I enjoyed ''Prometheus''. I thought it was great. I thought it was Ridley returning to science fiction with gusto, with great tactical performance, beautiful photography, great native 3D. There might have been a few things that I would have done differently, but that's not the point—you could say that about any movie."<ref name="Cameron"/> However, despite his praise, he also said he thought it "didn't add up logically."<ref>{{cite web | url= https://www.indiewire.com/2014/04/james-cameron-wanted-to-make-aliens-5-with-ridley-scott-says-prometheus-didnt-add-up-logically-87165/ | title= James Cameron Wanted To Make 'Aliens 5' With Ridley Scott, Says 'Prometheus' "Didn't Add Up Logically" | work=IndieWire | first=Edward | last=Davis | date=14 April 2014 | access-date=23 October 2021|archive-url=https://web.archive.org/web/20250918154400/https://www.indiewire.com/news/general-news/james-cameron-wanted-to-make-aliens-5-with-ridley-scott-says-prometheus-didnt-add-up-logically-87165/|archive-date=September 18, 2025|url-status=live}}</ref>
+Cameron said: "I enjoyed ''Prometheus''. I thought it was great. I thought it was Ridley returning to science fiction with gusto, with great tactical performance, beautiful photography, great native 3D. There might have been a few things that I would have done differently, but that's not the point—you could say that about any movie."<ref name="Cameron"/> However, despite his praise, he also said he thought it "didn't add up logically."<ref>{{cite web | url= https://www.indiewire.com/2014/04/james-cameron-wanted-to-make-aliens-5-with-ridley-scott-says-prometheus-didnt-add-up-logically-87165/ | title= James Cameron Wanted To Make 'Aliens 5' With Ridley Scott, Says 'Prometheus' "Didn't Add Up Logically" | work=IndieWire | first=Edward | last=Davis | date=14 April 2014 | access-date=23 October 2021|archive-url=https://web.archive.org/web/20250918154400/https://www.indiewire.com/news/general-news/james-cameron-wanted-to-make-aliens-5-with-ridley-scott-says-prometheus-didnt-add-up-logically-87165/|archive-date=September 18, 2025|url-status=live}}</ref>
 
 ===Accolades===
-{{see also|List of accolades received by the Alien film series}}
+{{see also|List of accolades received by the Alien film series{{!}}List of accolades received by the ''Alien'' film series}}
 {| class="wikitable sortable" style="width:99%;"
 |-
 ! Year !! Award !! Category !! Recipient!! Result !! Ref.
@@ -532,9 +532,9 @@ Titled ''[[Alien: Covenant]]'',<ref name="SequelTitle"/> the sequel premiered in
 
 <ref name="Design50">{{cite web|last=Robertson |first=Barbara |title=VFX Supervisor Richard Stammers on Prometheus |url=http://www.studiodaily.com/2012/06/vfx-supervisor-richard-stammers-on-prometheus/ |publisher=StudioDaily |date=June 8, 2012 |access-date=June 30, 2012 |archive-url=https://web.archive.org/web/20120705134958/http://www.studiodaily.com/2012/06/vfx-supervisor-richard-stammers-on-prometheus/ |archive-date=July 5, 2012 |url-status=live}}</ref>
 
-<ref name="Design51">{{cite magazine |last=Mohamed |first=Nurie |title=Designing the Perfect Engineer for Prometheus |url=https://www.wired.com/underwire/2012/08/designing-prometheus-engineer/ |magazine=[[Wired (magazine)|Wired]] |date=August 3, 2012 |access-date=August 4, 2012}}</ref>
+<ref name="Design51">{{cite magazine |last=Mohamed |first=Nurie |title=Designing the Perfect Engineer for Prometheus |url=https://www.wired.com/2012/08/designing-prometheus-engineer/ |magazine=[[Wired (magazine)|Wired]] |date=August 3, 2012 |access-date=August 4, 2012}}</ref>
 
-<ref name="DesignCreature1">{{cite magazine|last=Hart |first=Hugh |title=Origin of the Creepy Species, Prometheus-Style |url=https://www.wired.com/underwire/2012/06/prometheus-the-art-of-the-film/ |magazine=Wired |date=June 15, 2012 |access-date=June 16, 2012 |archive-url=https://web.archive.org/web/20120618022839/http://www.wired.com/underwire/2012/06/prometheus-the-art-of-the-film |archive-date=June 18, 2012 |url-status=live}}</ref>
+<ref name="DesignCreature1">{{cite magazine|last=Hart |first=Hugh |title=Origin of the Creepy Species, Prometheus-Style |url=https://www.wired.com/2012/06/prometheus-the-art-of-the-film/ |magazine=Wired |date=June 15, 2012 |access-date=June 16, 2012 |archive-url=https://web.archive.org/web/20120618022839/http://www.wired.com/underwire/2012/06/prometheus-the-art-of-the-film |archive-date=June 18, 2012 |url-status=live}}</ref>
 
 <ref name="DesignSound">{{cite magazine|last=Dayal |first=Geeta |title=Parrots and Pop Rocks used to create Prometheus' sounds |url=https://www.wired.co.uk/news/archive/2012-06/13/prometheus-sound-effects |magazine=Wired |date=June 13, 2012 |access-date=June 30, 2012 |archive-url=https://web.archive.org/web/20120618121213/http://www.wired.co.uk/news/archive/2012-06/13/prometheus-sound-effects |archive-date=June 18, 2012 |url-status=dead}}</ref>
 
@@ -796,6 +796,8 @@ Titled ''[[Alien: Covenant]]'',<ref name="SequelTitle"/> the sequel premiered in
 
 <ref name="scottbeams">{{cite news|url=https://www.theguardian.com/film/2011/jul/22/ridley-scott-comic-con-prometheus |title=Ridley Scott beams into Comic-Con to unveil Prometheus |last=Child |first=Ben |work=The Guardian |date=July 22, 2011 |access-date=December 18, 2011 |location=London |archive-url=https://web.archive.org/web/20120714030547/http://www.guardian.co.uk/film/2011/jul/22/ridley-scott-comic-con-prometheus |archive-date=July 14, 2012 |url-status=live}}</ref>
 
+<ref name="SDreview">{{cite web |last=Adams |first=Mark |title=Prometheus {{!}} Reviews |url=https://www.screendaily.com/prometheus/5042830.article |website=[[Screen Daily]] |access-date=8 November 2026 |date=20 May 2012}}</ref>
+
 <ref name="Sequel1">{{cite news|last=Kit |first=Borys |url=http://www.hollywoodreporter.com/heat-vision/wondercon-2012-ridley-scott-prometheus-extended-trailer-301378 |title=WonderCon 2012: Ridley Scott Talks 'Prometheus' As Extended Trailer Debuts (Video) |work=[[The Hollywood Reporter]] |date=March 17, 2011 |access-date=March 18, 2012 |archive-url=https://web.archive.org/web/20120501211131/http://www.hollywoodreporter.com/heat-vision/wondercon-2012-ridley-scott-prometheus-extended-trailer-301378 |archive-date=May 1, 2012 |url-status=live}}</ref>
 
 <ref name="Sequel2">{{cite web|first=Dave |last=Trumbore |title=WonderCon 2012: Prometheus Panel Recap Featuring Sir Ridley Scott and Damon Lindelof |url=https://collider.com/prometheus-wondercon/ |publisher=Collider.com |date=March 17, 2012 |access-date=March 18, 2012 |archive-url=https://web.archive.org/web/20120621055323/http://collider.com/prometheus-wondercon/152633 |archive-date=June 21, 2012 |url-status=live}}</ref>
@@ -925,10 +927,8 @@ Titled ''[[Alien: Covenant]]'',<ref name="SequelTitle"/> the sequel premiered in
 {{Alien (franchise)}}
 {{Ridley Scott}}
 {{Damon Lindelof}}
-
-{{Portal bar|Film|United States|Speculative fiction/Horror|Speculative fiction}}
-
 {{Authority control}}
+{{Portal bar|2010s|Film|United States|Speculative fiction|20th Century Studios}}
 
 [[Category:2012 films]]
 [[Category:2012 3D films]]

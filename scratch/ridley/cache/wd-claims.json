@@ -5037,13 +5037,11 @@
     "mainsnak": {
      "snaktype": "value",
      "property": "P2047",
-     "hash": "f5b19f57f0407343dd2719fb6f22798e6c2f7916",
+     "hash": "8b9f1be19300a8ed18a199face05cc2f2d33d44e",
      "datavalue": {
       "value": {
        "amount": "+155",
-       "unit": "http://www.wikidata.org/entity/Q7727",
-       "upperBound": "+156",
-       "lowerBound": "+154"
+       "unit": "http://www.wikidata.org/entity/Q7727"
       },
       "type": "quantity"
      },
@@ -5075,25 +5073,6 @@
     "type": "statement",
     "id": "Q132256832$33eec7ed-49bb-71ec-8a95-c68938e8dee6",
     "rank": "normal"
-   },
-   {
-    "mainsnak": {
-     "snaktype": "value",
-     "property": "P31",
-     "hash": "4e3fec67f6370a0687834a5ed118a4c2953bd363",
-     "datavalue": {
-      "value": {
-       "entity-type": "item",
-       "numeric-id": 18011172,
-       "id": "Q18011172"
-      },
-      "type": "wikibase-entityid"
-     },
-     "datatype": "wikibase-item"
-    },
-    "type": "statement",
-    "id": "Q132256832$81bdde64-48d8-be1c-1590-5ef8ed36e390",
-    "rank": "preferred"
    }
   ],
   "P577": [
@@ -5101,10 +5080,10 @@
     "mainsnak": {
      "snaktype": "value",
      "property": "P577",
-     "hash": "7c05272df016ca0ad39e83eb7c80fe6826518b1d",
+     "hash": "d687730de31ac74328c15cfb1f39fc19f7c2a67c",
      "datavalue": {
       "value": {
-       "time": "+2026-08-28T00:00:00Z",
+       "time": "+2026-08-26T00:00:00Z",
        "timezone": 0,
        "before": 0,
        "after": 0,
@@ -5116,30 +5095,43 @@
      "datatype": "time"
     },
     "type": "statement",
-    "id": "Q132256832$79169d6a-4103-aa73-c934-483622b3b5e0",
-    "rank": "normal",
-    "references": [
-     {
-      "hash": "336e648b3c81f33318b9cf239cb08cf17a33e415",
-      "snaks": {
-       "P854": [
-        {
-         "snaktype": "value",
-         "property": "P854",
-         "hash": "4496f0836e4f355a11235835845078a25babde66",
-         "datavalue": {
-          "value": "https://deadline.com/2025/12/disney-release-dates-gatto-ready-or-not-2-dog-stars-1236655242/",
-          "type": "string"
-         },
-         "datatype": "url"
-        }
-       ]
+    "qualifiers": {
+     "P291": [
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "0e14b091e4290b83034c405fdea4955fecb7f935",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 142,
+         "id": "Q142"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
       },
-      "snaks-order": [
-       "P854"
-      ]
-     }
-    ]
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "b6629fca8e4c735534f9780a1e884dcc2fb04a3a",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 38,
+         "id": "Q38"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      }
+     ]
+    },
+    "qualifiers-order": [
+     "P291"
+    ],
+    "id": "Q132256832$6f4e464b-4d58-8c6a-db9f-aab9206f0270",
+    "rank": "normal"
    },
    {
     "mainsnak": {
@@ -5175,6 +5167,20 @@
         "type": "wikibase-entityid"
        },
        "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "8dd6692b0f05cf604df00898f8bd1efd33aa4432",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 28,
+         "id": "Q28"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
       }
      ]
     },
@@ -5202,6 +5208,194 @@
       },
       "snaks-order": [
        "P8531"
+      ]
+     },
+     {
+      "hash": "4583d97f16b45e33ce53f701f681fbaa51ec38be",
+      "snaks": {
+       "P248": [
+        {
+         "snaktype": "value",
+         "property": "P248",
+         "hash": "90ca6e75fd6c13726108f5e9a368406202cb2aaf",
+         "datavalue": {
+          "value": {
+           "entity-type": "item",
+           "numeric-id": 99587855,
+           "id": "Q99587855"
+          },
+          "type": "wikibase-entityid"
+         },
+         "datatype": "wikibase-item"
+        }
+       ],
+       "P813": [
+        {
+         "snaktype": "value",
+         "property": "P813",
+         "hash": "8e271f72c478475042faa75f375c28f35b075804",
+         "datavalue": {
+          "value": {
+           "time": "+2026-09-05T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "snaks-order": [
+       "P248",
+       "P813"
+      ]
+     }
+    ]
+   },
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P577",
+     "hash": "7c05272df016ca0ad39e83eb7c80fe6826518b1d",
+     "datavalue": {
+      "value": {
+       "time": "+2026-08-28T00:00:00Z",
+       "timezone": 0,
+       "before": 0,
+       "after": 0,
+       "precision": 11,
+       "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+      },
+      "type": "time"
+     },
+     "datatype": "time"
+    },
+    "type": "statement",
+    "qualifiers": {
+     "P291": [
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "d030038c836f9ed0d37c69cb8c389d689ebeb05a",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 30,
+         "id": "Q30"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      }
+     ]
+    },
+    "qualifiers-order": [
+     "P291"
+    ],
+    "id": "Q132256832$79169d6a-4103-aa73-c934-483622b3b5e0",
+    "rank": "normal",
+    "references": [
+     {
+      "hash": "336e648b3c81f33318b9cf239cb08cf17a33e415",
+      "snaks": {
+       "P854": [
+        {
+         "snaktype": "value",
+         "property": "P854",
+         "hash": "4496f0836e4f355a11235835845078a25babde66",
+         "datavalue": {
+          "value": "https://deadline.com/2025/12/disney-release-dates-gatto-ready-or-not-2-dog-stars-1236655242/",
+          "type": "string"
+         },
+         "datatype": "url"
+        }
+       ]
+      },
+      "snaks-order": [
+       "P854"
+      ]
+     }
+    ]
+   }
+  ],
+  "P2047": [
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P2047",
+     "hash": "f64ccb60f309621e2f3dd217121484d821c8e645",
+     "datavalue": {
+      "value": {
+       "amount": "+119",
+       "unit": "http://www.wikidata.org/entity/Q7727"
+      },
+      "type": "quantity"
+     },
+     "datatype": "quantity"
+    },
+    "type": "statement",
+    "id": "Q132256832$3E7E5FDE-2CA9-42AB-9EC7-6BB90C374EA3",
+    "rank": "normal",
+    "references": [
+     {
+      "hash": "fd70c60881b13e39d6f56ddf487250529aef3fec",
+      "snaks": {
+       "P248": [
+        {
+         "snaktype": "value",
+         "property": "P248",
+         "hash": "01c5ccdb20291acf36831371f5891341513dc666",
+         "datavalue": {
+          "value": {
+           "entity-type": "item",
+           "numeric-id": 20828898,
+           "id": "Q20828898"
+          },
+          "type": "wikibase-entityid"
+         },
+         "datatype": "wikibase-item"
+        }
+       ],
+       "P854": [
+        {
+         "snaktype": "value",
+         "property": "P854",
+         "hash": "81db1cca4bccacfb9f4cacc3de08356ba6770de8",
+         "datavalue": {
+          "value": "https://www.themoviedb.org/movie/1384216",
+          "type": "string"
+         },
+         "datatype": "url"
+        }
+       ],
+       "P813": [
+        {
+         "snaktype": "value",
+         "property": "P813",
+         "hash": "b7489f0be21a6c69d869612c6bc7f1c128ec7785",
+         "datavalue": {
+          "value": {
+           "time": "+2026-09-06T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "snaks-order": [
+       "P248",
+       "P854",
+       "P813"
       ]
      }
     ]
@@ -14819,6 +15013,55 @@
      "datatype": "time"
     },
     "type": "statement",
+    "qualifiers": {
+     "P291": [
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "215c8c03f45f44014c6803258cd077b498b9c691",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 16,
+         "id": "Q16"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "b6629fca8e4c735534f9780a1e884dcc2fb04a3a",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 38,
+         "id": "Q38"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "d030038c836f9ed0d37c69cb8c389d689ebeb05a",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 30,
+         "id": "Q30"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      }
+     ]
+    },
+    "qualifiers-order": [
+     "P291"
+    ],
     "id": "Q722682$81960661-0BCB-4DC0-BB7E-7A3FDAAC28FE",
     "rank": "normal",
     "references": [
@@ -14844,6 +15087,63 @@
       },
       "snaks-order": [
        "P248"
+      ]
+     },
+     {
+      "hash": "1e696a68967c95af37d8074ac8e8d74b06fe5b8f",
+      "snaks": {
+       "P248": [
+        {
+         "snaktype": "value",
+         "property": "P248",
+         "hash": "6ff43c6ce02fc9e2012771b5595093e7f0c33162",
+         "datavalue": {
+          "value": {
+           "entity-type": "item",
+           "numeric-id": 37312,
+           "id": "Q37312"
+          },
+          "type": "wikibase-entityid"
+         },
+         "datatype": "wikibase-item"
+        }
+       ],
+       "P854": [
+        {
+         "snaktype": "value",
+         "property": "P854",
+         "hash": "6c241104f05cddd950168dd3123d918149ecd1cb",
+         "datavalue": {
+          "value": "https://www.imdb.com/title/tt0212985/releaseinfo/",
+          "type": "string"
+         },
+         "datatype": "url"
+        }
+       ],
+       "P813": [
+        {
+         "snaktype": "value",
+         "property": "P813",
+         "hash": "1f46e3cc5761dd594e0d056a440ec111f69896de",
+         "datavalue": {
+          "value": {
+           "time": "+2026-10-31T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "snaks-order": [
+       "P248",
+       "P854",
+       "P813"
       ]
      }
     ]
@@ -15028,6 +15328,164 @@
        "P854",
        "P813",
        "P407"
+      ]
+     }
+    ]
+   },
+   {
+    "mainsnak": {
+     "snaktype": "value",
+     "property": "P577",
+     "hash": "c48f6e4133c3ac0a95074cd8e2af55ea016c91a1",
+     "datavalue": {
+      "value": {
+       "time": "+2001-02-16T00:00:00Z",
+       "timezone": 0,
+       "before": 0,
+       "after": 0,
+       "precision": 11,
+       "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+      },
+      "type": "time"
+     },
+     "datatype": "time"
+    },
+    "type": "statement",
+    "qualifiers": {
+     "P291": [
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "bf349e6c46c157df177cf51ea47ee2eb61286186",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 40,
+         "id": "Q40"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "9120e74fbdc6b2464a526554365c4bf543678cb7",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 739,
+         "id": "Q739"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "0a04593d08cbf7e3266dcb4ca0b01da704269a28",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 145,
+         "id": "Q145"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "86e3c9e36cb9ab232786f2f33c349a43f58530ac",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 27,
+         "id": "Q27"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      },
+      {
+       "snaktype": "value",
+       "property": "P291",
+       "hash": "ee14253f4a36b82331fb8cff28bf44c1ca2360a4",
+       "datavalue": {
+        "value": {
+         "entity-type": "item",
+         "numeric-id": 804,
+         "id": "Q804"
+        },
+        "type": "wikibase-entityid"
+       },
+       "datatype": "wikibase-item"
+      }
+     ]
+    },
+    "qualifiers-order": [
+     "P291"
+    ],
+    "id": "Q722682$90FFA83F-3F28-4339-85C0-7F8F507B2C7D",
+    "rank": "normal",
+    "references": [
+     {
+      "hash": "1e696a68967c95af37d8074ac8e8d74b06fe5b8f",
+      "snaks": {
+       "P248": [
+        {
+         "snaktype": "value",
+         "property": "P248",
+         "hash": "6ff43c6ce02fc9e2012771b5595093e7f0c33162",
+         "datavalue": {
+          "value": {
+           "entity-type": "item",
+           "numeric-id": 37312,
+           "id": "Q37312"
+          },
+          "type": "wikibase-entityid"
+         },
+         "datatype": "wikibase-item"
+        }
+       ],
+       "P854": [
+        {
+         "snaktype": "value",
+         "property": "P854",
+         "hash": "6c241104f05cddd950168dd3123d918149ecd1cb",
+         "datavalue": {
+          "value": "https://www.imdb.com/title/tt0212985/releaseinfo/",
+          "type": "string"
+         },
+         "datatype": "url"
+        }
+       ],
+       "P813": [
+        {
+         "snaktype": "value",
+         "property": "P813",
+         "hash": "1f46e3cc5761dd594e0d056a440ec111f69896de",
+         "datavalue": {
+          "value": {
+           "time": "+2026-10-31T00:00:00Z",
+           "timezone": 0,
+           "before": 0,
+           "after": 0,
+           "precision": 11,
+           "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+          },
+          "type": "time"
+         },
+         "datatype": "time"
+        }
+       ]
+      },
+      "snaks-order": [
+       "P248",
+       "P854",
+       "P813"
       ]
      }
     ]
