@@ -5,7 +5,7 @@
   "kind": "tv & films",
   "popularity": 92,
   "year": "1966–2026",
-  "blurb": "Sixty years of it in the order it was made — 951 episodes across eleven series, with the thirteen films sitting beside the crews they belong to.",
+  "blurb": "Sixty years of it in the order it was made — 961 episodes across twelve series, with the thirteen films sitting beside the crews they belong to.",
   "unit": {
     "one": "entry",
     "many": "entries"
@@ -26,7 +26,7 @@
     ],
     [
       "Series run in the order they premiered.",
-      "Which is why Lower Decks and Prodigy sit ahead of Strange New Worlds — they started first. Eight of the eleven series were on the air at the same time as another one, so no arrangement of whole series is strictly chronological; premiere date is the rule this page keeps to."
+      "Which is why Lower Decks and Prodigy sit ahead of Strange New Worlds — they started first. Nine of the twelve series were on the air at the same time as another one, so no arrangement of whole series is strictly chronological; premiere date is the rule this page keeps to."
     ],
     [
       "Sections are seasons, not series.",
@@ -34,11 +34,11 @@
     ],
     [
       "Twenty-three rows cover two episodes each.",
-      "Wikipedia's episode tables file some two-part stories as one row and this list follows them, carrying both numbers. Seventeen of those went out as a single installment and six a week apart; every one of the rows says which. That is 928 rows covering 951 episodes."
+      "Wikipedia's episode tables file some two-part stories as one row and this list follows them, carrying both numbers. Seventeen of those went out as a single installment and six a week apart; every one of the rows says which. That is 938 rows covering 961 episodes."
     ],
     [
       "Nothing is weighted.",
-      "The thirteen films' runtimes are known — Wikidata carries all thirteen, about 26 hours, and the film headings add them up. The episodes are not so lucky: of 928 episode rows, 676 carry a runtime on Wikidata and 252 carry nothing, and the gap is not random — the classic shows are nearly covered while Picard, Lower Decks and Prodigy have not one runtime between them. A weighted list counts a row with no weight as one hour, so weighting what is known would push a guessed hour into every finish date 252 times over. An episode and a film each count one."
+      "The thirteen films' runtimes are known — Wikidata carries all thirteen, about 26 hours, and the film headings add them up. The episodes are not so lucky: of 938 episode rows, 685 carry a runtime on Wikidata and 253 carry nothing, and the gap is not random — the classic shows are nearly covered while Picard, Lower Decks and Prodigy have not one runtime between them. A weighted list counts a row with no weight as one hour, so weighting what is known would push a guessed hour into every finish date 253 times over. An episode and a film each count one."
     ],
     [
       "The Cage rides along, marked optional.",
@@ -46,7 +46,7 @@
     ],
     [
       "What is not on this page.",
-      "Star Trek: Section 31 is a television film rather than one of the thirteen theatrical features, and the Short Treks are not episodes of any of these series. Strange New Worlds' fifth season has been ordered but has no announced titles or dates, so it has no rows yet; its fourth was mid-run on 24 August 2026, and the episodes still to come carry their announced dates."
+      "Star Trek: Section 31 is a television film rather than one of the thirteen theatrical features, and the Short Treks are not episodes of any of these series. Strange New Worlds' fifth season has been ordered but has no announced titles or dates, so it has no rows yet."
     ],
     "Titles, numbering and broadcast dates machine-read from Wikipedia's per-series episode tables; every season's enumerated rows are asserted against that article's own Series overview count before this builds. Film runtimes and release dates from Wikidata, gated on a matching release year."
   ],
@@ -5126,7 +5126,7 @@
     {
       "id": "snw-s4",
       "title": "Strange New Worlds · Season 4",
-      "sub": "2026 · 10 episodes · 5 of 10 aired by 24 August 2026",
+      "sub": "2026 · 10 episodes",
       "items": [
         {
           "id": "st-snw-s4e01",
@@ -5150,40 +5150,93 @@
         },
         {
           "id": "st-snw-s4e05",
-          "t": "Level Five Transporter Accident",
+          "t": "Level-Five Transporter Accident",
           "n": "5"
         },
         {
           "id": "st-snw-s4e06",
           "t": "Off-Hour",
-          "n": "6",
-          "note": "airs 27 August 2026"
+          "n": "6"
         },
         {
           "id": "st-snw-s4e07",
           "t": "Like Chronitons Through the Hourglass",
-          "n": "7",
-          "note": "airs 3 September 2026"
+          "n": "7"
         },
         {
           "id": "st-snw-s4e08",
           "t": "Orders of Magnitude",
-          "n": "8",
-          "note": "airs 10 September 2026"
+          "n": "8"
         },
         {
           "id": "st-snw-s4e09",
           "t": "Once La'An a Time",
-          "n": "9",
-          "note": "airs 17 September 2026"
+          "n": "9"
         },
         {
           "id": "st-snw-s4e10",
           "t": "Tomorrow's Enterprise",
-          "n": "10",
-          "note": "airs 24 September 2026"
+          "n": "10"
         }
       ]
+    },
+    {
+      "id": "sfa-s1",
+      "title": "Starfleet Academy · Season 1",
+      "sub": "2026 · 10 episodes",
+      "items": [
+        {
+          "id": "st-sfa-s1e01",
+          "t": "Kids These Days",
+          "n": "1"
+        },
+        {
+          "id": "st-sfa-s1e02",
+          "t": "Beta Test",
+          "n": "2"
+        },
+        {
+          "id": "st-sfa-s1e03",
+          "t": "Vitus Reflux",
+          "n": "3"
+        },
+        {
+          "id": "st-sfa-s1e04",
+          "t": "Vox in Excelso",
+          "n": "4"
+        },
+        {
+          "id": "st-sfa-s1e05",
+          "t": "Series Acclimation Mil",
+          "n": "5"
+        },
+        {
+          "id": "st-sfa-s1e06",
+          "t": "Come, Let's Away",
+          "n": "6"
+        },
+        {
+          "id": "st-sfa-s1e07",
+          "t": "Ko'Zeine",
+          "n": "7"
+        },
+        {
+          "id": "st-sfa-s1e08",
+          "t": "The Life of the Stars",
+          "n": "8"
+        },
+        {
+          "id": "st-sfa-s1e09",
+          "t": "300th Night",
+          "n": "9"
+        },
+        {
+          "id": "st-sfa-s1e10",
+          "t": "Rubincon",
+          "n": "10"
+        }
+      ],
+      "intro": "Cadets at Starfleet Academy, coming of age and training to be officers, with Holly Hunter as their chancellor. Ten-episode seasons."
     }
   ]
 }

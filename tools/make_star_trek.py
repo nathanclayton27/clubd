@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate properties/star-trek.json — all eleven series and all thirteen films.
+"""Generate properties/star-trek.json — all twelve series and all thirteen films.
 
     PYTHONIOENCODING=utf-8 python tools/make_star_trek.py
 
@@ -32,6 +32,9 @@ counts those rows as one hour each.
 Data: scratch/startrek/collect.py -> tools/data/star-trek-episodes.json, which
 enumerates every {{Episode list}} row in Wikipedia's per-series episode tables
 and is asserted here against each article's own {{Series overview}} counts.
+The collector is no longer in scratch/. The 2026-11-11 refresh (Starfleet
+Academy added, one Strange New Worlds season 4 title corrected) re-read those
+tables and Wikidata's P2047 by hand and wrote the rows into the same shape.
 """
 import datetime
 import json
@@ -45,10 +48,10 @@ from gwlib.prop import join_bits
 SLUG = "star-trek"
 DATA = pathlib.Path(__file__).resolve().parent / "data" / "star-trek-episodes.json"
 
-# The day this list's contents were read. Strange New Worlds' fourth season is
-# mid-run, so "has this aired yet" needs a fixed date rather than today's, or
-# the generator would stop being reproducible the morning after it shipped.
-AS_OF = "2026-08-24"
+# The day this list's contents were read. "Has this aired yet" needs a fixed
+# date rather than today's whenever a season is mid-run, or the generator would
+# stop being reproducible the morning after it shipped.
+AS_OF = "2026-11-11"
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
@@ -60,7 +63,7 @@ NAMES = {
     "tng": "The Next Generation", "ds9": "Deep Space Nine",
     "voy": "Voyager", "ent": "Enterprise", "dis": "Discovery",
     "pic": "Picard", "snw": "Strange New Worlds", "ld": "Lower Decks",
-    "pro": "Prodigy",
+    "pro": "Prodigy", "sfa": "Starfleet Academy",
 }
 
 INTROS = {
@@ -88,6 +91,9 @@ INTROS = {
            "twenty episodes.",
     "snw": "The Enterprise before Kirk, with the crew from the 1964 pilot. "
            "Ten-episode seasons.",
+    "sfa": "Cadets at Starfleet Academy, coming of age and training to be "
+           "officers, with Holly Hunter as their chancellor. Ten-episode "
+           "seasons.",
 }
 
 # tag in the source's film tables -> section id, heading, intro
@@ -112,7 +118,8 @@ FILM_BLOCKS = {
 SPINE = [("s", "tos"), ("s", "tas"), ("f", "OriginalSeries"),
          ("s", "tng"), ("f", "NextGeneration"),
          ("s", "ds9"), ("s", "voy"), ("s", "ent"), ("f", "Kelvin"),
-         ("s", "dis"), ("s", "pic"), ("s", "ld"), ("s", "pro"), ("s", "snw")]
+         ("s", "dis"), ("s", "pic"), ("s", "ld"), ("s", "pro"), ("s", "snw"),
+         ("s", "sfa")]
 
 
 WORDS = ("zero one two three four five six seven eight nine ten eleven twelve "
@@ -295,11 +302,11 @@ def main():
                          for e in sea["episodes"]) for k in shipped}
     assert per_series == {"tos": 79, "tas": 22, "tng": 178, "ds9": 176,
                           "voy": 172, "ent": 98, "dis": 65, "pic": 30,
-                          "snw": 40, "ld": 50, "pro": 40}, per_series
+                          "snw": 40, "ld": 50, "pro": 40, "sfa": 10}, per_series
     episodes = sum(per_series.values()) + 1          # + The Cage
-    assert episodes == 951, episodes
-    assert len(ep_rows) == 928, len(ep_rows)
-    assert len(ids) == 941, len(ids)
+    assert episodes == 961, episodes
+    assert len(ep_rows) == 938, len(ep_rows)
+    assert len(ids) == 951, len(ids)
 
     doubles = [e for k in shipped for sea in shipped[k]
                for e in sea["episodes"] if len(e["seasonnums"]) > 1]
@@ -332,7 +339,7 @@ def main():
                              for j, (c, d) in runs.items()))
     during = sum(1 for f in data["films"]
                  if any(a <= f["date"] <= b for a, b in runs.values()))
-    assert overlapping == 8, overlapping
+    assert overlapping == 9, overlapping
     assert during == 6, during
 
     mins = sum(f["runtime"] for f in data["films"])
@@ -364,8 +371,8 @@ def main():
         "popularity": 92,
         "year": "1966–2026",
         "blurb": "Sixty years of it in the order it was made — %d episodes "
-                 "across eleven series, with the thirteen films sitting beside "
-                 "the crews they belong to." % episodes,
+                 "across %s series, with the thirteen films sitting beside "
+                 "the crews they belong to." % (episodes, words(len(order))),
         "unit": {"one": "entry", "many": "entries"},
         "verb": {"base": "watch", "past": "watched", "ing": "watching"},
         "itemOrder": "number-first",
@@ -384,10 +391,10 @@ def main():
              % words(during).capitalize()],
             ["Series run in the order they premiered.", "Which is why Lower "
              "Decks and Prodigy sit ahead of Strange New Worlds — they "
-             "started first. %s of the eleven series were on the air at the "
+             "started first. %s of the %s series were on the air at the "
              "same time as another one, so no arrangement of whole series is "
              "strictly chronological; premiere date is the rule this page "
-             "keeps to." % words(overlapping).capitalize()],
+             "keeps to." % (words(overlapping).capitalize(), words(len(order)))],
             ["Sections are seasons, not series.", "One section per season, "
              "running series by series, each headed with the series it "
              "belongs to. The alternative was a single 178-row accordion for "
@@ -420,9 +427,7 @@ def main():
              "television film rather than one of the thirteen theatrical "
              "features, and the Short Treks are not episodes of any of these "
              "series. Strange New Worlds' fifth season has been ordered but "
-             "has no announced titles or dates, so it has no rows yet; its "
-             "fourth was mid-run on %s, and the episodes still to come carry "
-             "their announced dates." % human(AS_OF)],
+             "has no announced titles or dates, so it has no rows yet."],
             "Titles, numbering and broadcast dates machine-read from "
             "Wikipedia's per-series episode tables; every season's enumerated "
             "rows are asserted against that article's own Series overview "

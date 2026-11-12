@@ -264,7 +264,7 @@ feature in release order with Miyazaki's as the spine. Plus *Fullmetal
 Alchemist: Brotherhood*, *Monster*, *Evangelion*, *One Piece*, *One Pace*,
 *Friday Night Lights*, *Lanterns* and *President Curtis* — the last two
 still airing, each with a real weekly schedule so a club watches at
-broadcast pace. Plus *Star Trek* (941 rows, every series and the
+broadcast pace. Plus *Star Trek* (951 rows, every series and the
 thirteen films in one place), *Avatar* with *Korra*, *The Office*,
 *Futurama*, *Rick and Morty* (all nine seasons, episodes only — the
 anime shorts and the claymation webisodes stay out), *Archer* (all

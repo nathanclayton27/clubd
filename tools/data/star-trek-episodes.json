@@ -13957,7 +13957,7 @@
    "key": "snw",
    "page": "List of Star Trek: Strange New Worlds episodes",
    "title": "Star Trek: Strange New Worlds",
-   "declared_episodes": 35,
+   "declared_episodes": 40,
    "runtime_field": "40–62 minutes",
    "network": "Paramount+",
    "creator": "Akiva Goldsman, Alex Kurtzman, Jenny Lumet",
@@ -14518,7 +14518,7 @@
        "seasonnums": [
         5
        ],
-       "t": "Level Five Transporter Accident",
+       "t": "Level-Five Transporter Accident",
        "page": "",
        "airs": [
         "2026-08-20"
@@ -16031,6 +16031,220 @@
      ]
     }
    ]
+  },
+  {
+   "key": "sfa",
+   "page": "Star Trek: Starfleet Academy",
+   "title": "Star Trek: Starfleet Academy",
+   "declared_episodes": 10,
+   "runtime_field": "60–75 minutes",
+   "network": "Paramount+",
+   "creator": "Gaia Violo",
+   "overview": {
+    "1": 10,
+    "2": 10
+   },
+   "seasons": [
+    {
+     "n": 1,
+     "years": "2026",
+     "source": "Star Trek: Starfleet Academy",
+     "episodes": [
+      {
+       "nums": [
+        1
+       ],
+       "seasonnums": [
+        1
+       ],
+       "t": "Kids These Days",
+       "page": "Kids These Days (Star Trek: Starfleet Academy)",
+       "airs": [
+        "2026-01-15"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793912",
+       "wd_runtime": 76
+      },
+      {
+       "nums": [
+        2
+       ],
+       "seasonnums": [
+        2
+       ],
+       "t": "Beta Test",
+       "page": "Beta Test (Star Trek: Starfleet Academy)",
+       "airs": [
+        "2026-01-15"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793913",
+       "wd_runtime": 61
+      },
+      {
+       "nums": [
+        3
+       ],
+       "seasonnums": [
+        3
+       ],
+       "t": "Vitus Reflux",
+       "page": "Vitus Reflux",
+       "airs": [
+        "2026-01-22"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793914",
+       "wd_runtime": 63
+      },
+      {
+       "nums": [
+        4
+       ],
+       "seasonnums": [
+        4
+       ],
+       "t": "Vox in Excelso",
+       "page": "Vox in Excelso",
+       "airs": [
+        "2026-01-29"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793915",
+       "wd_runtime": 63
+      },
+      {
+       "nums": [
+        5
+       ],
+       "seasonnums": [
+        5
+       ],
+       "t": "Series Acclimation Mil",
+       "page": "Series Acclimation Mil",
+       "airs": [
+        "2026-02-05"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793916",
+       "wd_runtime": 58
+      },
+      {
+       "nums": [
+        6
+       ],
+       "seasonnums": [
+        6
+       ],
+       "t": "Come, Let's Away",
+       "page": "Come, Let's Away",
+       "airs": [
+        "2026-02-12"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793917",
+       "wd_runtime": 62
+      },
+      {
+       "nums": [
+        7
+       ],
+       "seasonnums": [
+        7
+       ],
+       "t": "Ko'Zeine",
+       "page": "Ko'Zeine",
+       "airs": [
+        "2026-02-19"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793918",
+       "wd_runtime": null
+      },
+      {
+       "nums": [
+        8
+       ],
+       "seasonnums": [
+        8
+       ],
+       "t": "The Life of the Stars",
+       "page": "The Life of the Stars",
+       "airs": [
+        "2026-02-26"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793920",
+       "wd_runtime": 64
+      },
+      {
+       "nums": [
+        9
+       ],
+       "seasonnums": [
+        9
+       ],
+       "t": "300th Night",
+       "page": "300th Night",
+       "airs": [
+        "2026-03-05"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793921",
+       "wd_runtime": 57
+      },
+      {
+       "nums": [
+        10
+       ],
+       "seasonnums": [
+        10
+       ],
+       "t": "Rubincon",
+       "page": "Rubincon",
+       "airs": [
+        "2026-03-12"
+       ],
+       "parts": 1,
+       "prod": "",
+       "qid": "Q137793922",
+       "wd_runtime": 68
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "years": "",
+     "source": "Star Trek: Starfleet Academy",
+     "episodes": [
+      {
+       "nums": [
+        11
+       ],
+       "seasonnums": [
+        1
+       ],
+       "t": "",
+       "page": "",
+       "airs": [
+        null
+       ],
+       "parts": 1,
+       "prod": ""
+      }
+     ]
+    }
+   ]
   }
  ],
  "films": [
@@ -16251,8 +16465,8 @@
   }
  ],
  "runtime_probe": {
-  "episode_rows": 721,
-  "with_wikidata_item": 701,
-  "with_p2047": 676
+  "episode_rows": 731,
+  "with_wikidata_item": 711,
+  "with_p2047": 685
  }
 }
