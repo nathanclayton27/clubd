@@ -10,7 +10,7 @@
      the charset — a policy is only in force from the point the parser reads
      it, so anything fetched above this line would be outside it. The charset
      itself has to come first because it must land in the first 1024 bytes. -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Hb25yc//ZiayvxsRP9svCswCdaD5DxLASMCSOE5Nv2U=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ef4zDI36lCdUshOlqeoyGV6jjz6TLHAYY4l5FH6nvtE=' https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js; script-src-attr 'none'; style-src https://fonts.googleapis.com/css2 'unsafe-inline'; style-src-elem https://fonts.googleapis.com/css2 'sha256-TYcwhf8O7aoKZsSk5MsZFb3BIfCaegL7FoMuCDoKcGs='; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://sqyhyocrwqzlfbfvgisb.supabase.co wss://sqyhyocrwqzlfbfvgisb.supabase.co; base-uri 'none'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
 <!-- Invite tokens ride in the query string (?f=, ?g=) and are only stripped
      after boot, by which point the fonts stylesheet has already been asked
      for. Chrome and Firefox default to this policy anyway; stating it means no
@@ -2405,7 +2405,7 @@ let MANIFEST = [
     "kind": "films & shows",
     "year": "1977–",
     "popularity": 97,
-    "blurb": "17 films and 40 television seasons in the order they came out — about 243 hours.",
+    "blurb": "17 films and 42 television seasons in the order they came out — about 243 hours.",
     "accent": "#8A6D1F",
     "accentDark": "#E8C450",
     "unit": {
@@ -2413,7 +2413,7 @@ let MANIFEST = [
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 57,
+    "total": 59,
     "totalw": 242.7,
     "mega": true
   },
@@ -2621,7 +2621,7 @@ let MANIFEST = [
     },
     "vpast": "read",
     "total": 13,
-    "totalw": 6735.0,
+    "totalw": 6740.0,
     "doors": 13,
     "hub": true,
     "mega": true
@@ -5327,9 +5327,9 @@ let MANIFEST = [
       "nic cage"
     ],
     "kind": "films",
-    "year": "1982–2025",
+    "year": "1982–2027",
     "popularity": 65,
-    "blurb": "113 films across five decades — about 194 hours, from Nicolas Coppola's bit parts to the renaissance.",
+    "blurb": "118 films across five decades — about 196 hours, from Nicolas Coppola's bit parts to the renaissance.",
     "accent": "#B8860B",
     "accentDark": "#F2B845",
     "unit": {
@@ -5337,8 +5337,8 @@ let MANIFEST = [
       "many": "films"
     },
     "vpast": "watched",
-    "total": 113,
-    "totalw": 193.67
+    "total": 118,
+    "totalw": 195.5
   },
   {
     "slug": "wachowskis",
@@ -7401,7 +7401,7 @@ let MANIFEST = [
     "kind": "comics",
     "year": "2007–",
     "popularity": 37,
-    "blurb": "The end of the classic run, then eighteen years of recommendations — 378 issues, tracked one by one.",
+    "blurb": "The end of the classic run, then eighteen years of recommendations — 383 issues, tracked one by one.",
     "accent": "#7A3B5E",
     "accentDark": "#D98BB4",
     "unit": {
@@ -7409,8 +7409,8 @@ let MANIFEST = [
       "many": "issues"
     },
     "vpast": "read",
-    "total": 378,
-    "totalw": 378.0
+    "total": 389,
+    "totalw": 383.0
   },
   {
     "slug": "time-loops",
@@ -7720,13 +7720,13 @@ async function refreshManifest(){
   }catch(e){ console.error('[tracker] manifest refresh failed', e); }
 }
 
-const BUILD = 'd855626b9da0';
+const BUILD = '396434636532';
 
 // A hash of the sync map itself, from build.py. The cross-list backfill below
 // runs once per device per value of this, so any build that adds, removes or
 // rewires a sync group re-runs it — which is how a newly added list inherits
 // ticks people already had elsewhere. See backfillSync().
-const SYNCVER = 'ecccfcef52';
+const SYNCVER = '28b9f7e46b';
 
 // A tab that is already open never re-runs its own boot, so checking once was
 // only ever going to help people who reloaded anyway. This polls, and reloads

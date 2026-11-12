@@ -61,7 +61,7 @@
     "kind": "films & shows",
     "year": "1977–",
     "popularity": 97,
-    "blurb": "17 films and 40 television seasons in the order they came out — about 243 hours.",
+    "blurb": "17 films and 42 television seasons in the order they came out — about 243 hours.",
     "accent": "#8A6D1F",
     "accentDark": "#E8C450",
     "unit": {
@@ -69,7 +69,7 @@
       "many": "entries"
     },
     "vpast": "watched",
-    "total": 57,
+    "total": 59,
     "totalw": 242.7,
     "mega": true
   },
@@ -277,7 +277,7 @@
     },
     "vpast": "read",
     "total": 13,
-    "totalw": 6735.0,
+    "totalw": 6740.0,
     "doors": 13,
     "hub": true,
     "mega": true
@@ -2983,9 +2983,9 @@
       "nic cage"
     ],
     "kind": "films",
-    "year": "1982–2025",
+    "year": "1982–2027",
     "popularity": 65,
-    "blurb": "113 films across five decades — about 194 hours, from Nicolas Coppola's bit parts to the renaissance.",
+    "blurb": "118 films across five decades — about 196 hours, from Nicolas Coppola's bit parts to the renaissance.",
     "accent": "#B8860B",
     "accentDark": "#F2B845",
     "unit": {
@@ -2993,8 +2993,8 @@
       "many": "films"
     },
     "vpast": "watched",
-    "total": 113,
-    "totalw": 193.67
+    "total": 118,
+    "totalw": 195.5
   },
   {
     "slug": "wachowskis",
@@ -5057,7 +5057,7 @@
     "kind": "comics",
     "year": "2007–",
     "popularity": 37,
-    "blurb": "The end of the classic run, then eighteen years of recommendations — 378 issues, tracked one by one.",
+    "blurb": "The end of the classic run, then eighteen years of recommendations — 383 issues, tracked one by one.",
     "accent": "#7A3B5E",
     "accentDark": "#D98BB4",
     "unit": {
@@ -5065,8 +5065,8 @@
       "many": "issues"
     },
     "vpast": "read",
-    "total": 378,
-    "totalw": 378.0
+    "total": 389,
+    "totalw": 383.0
   },
   {
     "slug": "time-loops",
