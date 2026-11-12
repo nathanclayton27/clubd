@@ -1,11 +1,11 @@
 {
   "slug": "stephen-king",
   "title": "Stephen King",
-  "subtitle": "all 69 novels, Bachman included",
+  "subtitle": "every novel, Bachman included",
   "kind": "books",
   "popularity": 80,
-  "year": "1974–2026",
-  "blurb": "Every novel in publication order, Carrie to Other Worlds Than These — 69 of them, the seven Richard Bachman books included, each counting as one.",
+  "year": "1974–2027",
+  "blurb": "Every novel in publication order, Carrie to Other Worlds Than These — 69 novels and the uncut Stand, the seven Richard Bachman books included, each counting as one, with Anything for Holly still to come.",
   "unit": {
     "one": "novel",
     "many": "novels"
@@ -21,7 +21,7 @@
   "notes": [
     [
       "Novels only, as Wikipedia draws the line.",
-      "This is the bibliography's novels table, whole — 69 rows. Story collections, standalone novellas shelved elsewhere, nonfiction, children's books and graphic novels are out. A few short books the table counts as novels — Cycle of the Werewolf, Elevation, the Gwendy books — stay in because the table says so."
+      "This is the bibliography's novels table, whole — its 69 rows, plus the uncut Stand (see below). Story collections, standalone novellas shelved elsewhere, nonfiction, children's books and graphic novels are out. A few short books the table counts as novels — Cycle of the Werewolf, Elevation, the Gwendy books — stay in because the table says so."
     ],
     [
       "The Bachman books are here.",
@@ -33,13 +33,13 @@
     ],
     [
       "The Stand appears twice.",
-      "The bibliography lists the 1990 Complete & Uncut Edition as its own row, so it is one here too — marked optional, since it is the 1978 novel restored rather than a new one."
+      "The 1990 Complete & Uncut Edition has its own row — marked optional, since it is the 1978 novel restored rather than a new one."
     ],
     [
       "Nothing is weighted.",
       "An eleven-hundred-page novel and a slim one each count as one. Page counts differ by edition, and pretending to know the hours would be worse."
     ],
-    "Titles, years and notes from Wikipedia's Stephen King bibliography — the novels table, verified against the article's own count of 69."
+    "Titles, years and notes from Wikipedia's Stephen King bibliography — the novels table, verified against the article's own count of 69. Two rows lean on other Wikipedia articles: the uncut Stand is dated from The Stand, and The End Times serial is titled and dated from The End Times."
   ],
   "sections": [
     {
@@ -126,27 +126,27 @@
           "n": "1983"
         },
         {
-          "id": "king-1983-pet-sematary",
-          "t": "Pet Sematary",
-          "n": "1983"
-        },
-        {
           "id": "king-1983-cycle-of-the-werewolf",
           "t": "Cycle of the Werewolf",
           "n": "1983",
           "note": "Illustrated by Bernie Wrightson"
         },
         {
-          "id": "king-1984-the-talisman",
-          "t": "The Talisman",
-          "n": "1984",
-          "note": "Written with Peter Straub"
+          "id": "king-1983-pet-sematary",
+          "t": "Pet Sematary",
+          "n": "1983"
         },
         {
           "id": "king-1984-the-eyes-of-the-dragon",
           "t": "The Eyes of the Dragon",
           "n": "1984",
           "note": "First published as a limited edition in 1984, then for the mass market in 1987"
+        },
+        {
+          "id": "king-1984-the-talisman",
+          "t": "The Talisman",
+          "n": "1984",
+          "note": "Written with Peter Straub"
         },
         {
           "id": "king-1984-thinner",
@@ -192,7 +192,7 @@
           "t": "The Stand: The Complete and Uncut Edition",
           "n": "1990",
           "opt": 1,
-          "note": "The 1978 novel complete and uncut — its own row in the bibliography, optional here"
+          "note": "The 1978 novel complete and uncut — optional here"
         },
         {
           "id": "king-1991-the-dark-tower-iii-the-waste-lands",
@@ -226,11 +226,6 @@
           "n": "1995"
         },
         {
-          "id": "king-1996-the-green-mile",
-          "t": "The Green Mile",
-          "n": "1996"
-        },
-        {
           "id": "king-1996-desperation",
           "t": "Desperation",
           "n": "1996",
@@ -241,6 +236,12 @@
           "t": "The Regulators",
           "n": "1996",
           "note": "as Richard Bachman · twin novel of Desperation"
+        },
+        {
+          "id": "king-1996-the-green-mile",
+          "t": "The Green Mile",
+          "n": "1997",
+          "note": "First published as a six-part serial novel in 1996"
         },
         {
           "id": "king-1997-the-dark-tower-iv-wizard-and-glass",
@@ -383,16 +384,16 @@
           "note": "Bill Hodges 3 of 3"
         },
         {
-          "id": "king-2017-sleeping-beauties",
-          "t": "Sleeping Beauties",
-          "n": "2017",
-          "note": "Written with Owen King"
-        },
-        {
           "id": "king-2017-gwendys-button-box",
           "t": "Gwendy's Button Box",
           "n": "2017",
           "note": "Written with Richard Chizmar"
+        },
+        {
+          "id": "king-2017-sleeping-beauties",
+          "t": "Sleeping Beauties",
+          "n": "2017",
+          "note": "Written with Owen King"
         },
         {
           "id": "king-2018-the-outsider",
@@ -414,7 +415,7 @@
     {
       "id": "d20",
       "title": "The 2020s",
-      "sub": "2021–2026 · 8 novels",
+      "sub": "2021–2027 · 9 novels · 1 not out yet",
       "items": [
         {
           "id": "king-2021-later",
@@ -458,6 +459,12 @@
           "t": "Other Worlds Than These",
           "n": "2026",
           "note": "Written with Peter Straub · the third Talisman book"
+        },
+        {
+          "id": "king-2027-anything-for-holly",
+          "t": "Anything for Holly",
+          "n": "2027",
+          "note": "Not out yet — dated 2027"
         }
       ]
     }

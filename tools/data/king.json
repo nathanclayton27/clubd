@@ -1,6 +1,6 @@
 {
   "source": "Wikipedia: Stephen King bibliography (Novels table)",
-  "fetched": "2026-08-22",
+  "fetched": "2026-11-11",
   "infobox_novels": 69,
   "lead_novels": 67,
   "lead_bachman": 7,
@@ -45,7 +45,9 @@
       "title": "The Stand",
       "bachman": false,
       "dark_tower": null,
-      "notes": []
+      "notes": [
+        "The Complete and Uncut Edition"
+      ]
     },
     {
       "year": 1979,
@@ -107,20 +109,14 @@
       "title": "The Dark Tower: The Gunslinger",
       "bachman": false,
       "dark_tower": 1,
-      "notes": []
+      "notes": [
+        "First novel in The Dark Tower series"
+      ]
     },
     {
       "year": 1983,
       "n": "1983",
       "title": "Christine",
-      "bachman": false,
-      "dark_tower": null,
-      "notes": []
-    },
-    {
-      "year": 1983,
-      "n": "1983",
-      "title": "Pet Sematary",
       "bachman": false,
       "dark_tower": null,
       "notes": []
@@ -136,14 +132,12 @@
       ]
     },
     {
-      "year": 1984,
-      "n": "1984",
-      "title": "The Talisman",
+      "year": 1983,
+      "n": "1983",
+      "title": "Pet Sematary",
       "bachman": false,
       "dark_tower": null,
-      "notes": [
-        "Written with Peter Straub"
-      ]
+      "notes": []
     },
     {
       "year": 1984,
@@ -152,7 +146,17 @@
       "bachman": false,
       "dark_tower": null,
       "notes": [
-        "First published as a limited edition in 1984, then for the mass market in 1987"
+        "First published as a limited edition in 1984, then for the mass market in 1987, by Viking Press"
+      ]
+    },
+    {
+      "year": 1984,
+      "n": "1984",
+      "title": "The Talisman",
+      "bachman": false,
+      "dark_tower": null,
+      "notes": [
+        "Written with Peter Straub"
       ]
     },
     {
@@ -179,7 +183,9 @@
       "title": "The Dark Tower II: The Drawing of the Three",
       "bachman": false,
       "dark_tower": 2,
-      "notes": []
+      "notes": [
+        "Second novel in The Dark Tower series"
+      ]
     },
     {
       "year": 1987,
@@ -206,22 +212,14 @@
       "notes": []
     },
     {
-      "year": 1990,
-      "n": "1990",
-      "title": "The Stand: The Complete and Uncut Edition",
-      "bachman": false,
-      "dark_tower": null,
-      "notes": [
-        "The Complete & Uncut Edition"
-      ]
-    },
-    {
       "year": 1991,
       "n": "1991",
       "title": "The Dark Tower III: The Waste Lands",
       "bachman": false,
       "dark_tower": 3,
-      "notes": []
+      "notes": [
+        "Third novel in The Dark Tower series"
+      ]
     },
     {
       "year": 1991,
@@ -266,14 +264,6 @@
     {
       "year": 1996,
       "n": "1996",
-      "title": "The Green Mile",
-      "bachman": false,
-      "dark_tower": null,
-      "notes": []
-    },
-    {
-      "year": 1996,
-      "n": "1996",
       "title": "Desperation",
       "bachman": false,
       "dark_tower": null,
@@ -295,10 +285,22 @@
     {
       "year": 1997,
       "n": "1997",
+      "title": "The Green Mile",
+      "bachman": false,
+      "dark_tower": null,
+      "notes": [
+        "First published as a six-part serial novel in 1996"
+      ]
+    },
+    {
+      "year": 1997,
+      "n": "1997",
       "title": "The Dark Tower IV: Wizard and Glass",
       "bachman": false,
       "dark_tower": 4,
-      "notes": []
+      "notes": [
+        "Fourth novel in The Dark Tower series"
+      ]
     },
     {
       "year": 1998,
@@ -349,7 +351,9 @@
       "title": "The Dark Tower V: Wolves of the Calla",
       "bachman": false,
       "dark_tower": 5,
-      "notes": []
+      "notes": [
+        "Fifth novel in The Dark Tower series"
+      ]
     },
     {
       "year": 2004,
@@ -357,7 +361,9 @@
       "title": "The Dark Tower VI: Song of Susannah",
       "bachman": false,
       "dark_tower": 6,
-      "notes": []
+      "notes": [
+        "Sixth novel in The Dark Tower series"
+      ]
     },
     {
       "year": 2004,
@@ -365,7 +371,9 @@
       "title": "The Dark Tower VII: The Dark Tower",
       "bachman": false,
       "dark_tower": 7,
-      "notes": []
+      "notes": [
+        "Seventh novel in The Dark Tower series"
+      ]
     },
     {
       "year": 2005,
@@ -494,21 +502,21 @@
     {
       "year": 2017,
       "n": "2017",
-      "title": "Sleeping Beauties",
-      "bachman": false,
-      "dark_tower": null,
-      "notes": [
-        "Written with Owen King"
-      ]
-    },
-    {
-      "year": 2017,
-      "n": "2017",
       "title": "Gwendy's Button Box",
       "bachman": false,
       "dark_tower": null,
       "notes": [
         "Written with Richard Chizmar"
+      ]
+    },
+    {
+      "year": 2017,
+      "n": "2017",
+      "title": "Sleeping Beauties",
+      "bachman": false,
+      "dark_tower": null,
+      "notes": [
+        "Written with Owen King"
       ]
     },
     {
@@ -586,16 +594,6 @@
       "notes": []
     },
     {
-      "year": 2025,
-      "n": "2025–26",
-      "title": "The End Times",
-      "bachman": false,
-      "dark_tower": null,
-      "notes": [
-        "Serialized novel written with Benjamin Percy; writing as Claudia Inez Bachman (collected edition due 2027)"
-      ]
-    },
-    {
       "year": 2026,
       "n": "2026",
       "title": "Other Worlds Than These",
@@ -603,6 +601,26 @@
       "dark_tower": null,
       "notes": [
         "Third novel in The Talisman (Jack Sawyer) series; written with Peter Straub"
+      ]
+    },
+    {
+      "year": 2027,
+      "n": "2027",
+      "title": "The End Times: Volume One",
+      "bachman": false,
+      "dark_tower": null,
+      "notes": [
+        "Serialized epistolary novel written with Benjamin Percy; writing as Claudia Inez Bachman"
+      ]
+    },
+    {
+      "year": 2027,
+      "n": "2027",
+      "title": "Anything for Holly",
+      "bachman": false,
+      "dark_tower": null,
+      "notes": [
+        "TBA"
       ]
     }
   ]
