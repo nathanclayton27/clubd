@@ -51,10 +51,6 @@
       "A note says what an issue is and where it sits — which series it crosses over with, how much time has passed, whether the source doubts its placement. Never what happens in it. The source's own annotations are rewritten to that rule rather than copied."
     ],
     [
-      "It runs past what is published.",
-      "The source keeps its grid filled in ahead of the solicitations, so the last stretch of each ongoing is issues that do not exist yet. The last published issue of each is marked."
-    ],
-    [
       "What is left out.",
       "The source's appendices: the announced series with no issues out yet, the cover-date calendar, and the miscellany of toy comics, parodies and cancelled projects it files outside the order and marks non-canon. The reading order itself is here whole."
     ],
@@ -8276,7 +8272,6 @@
           "id": "spawn-the-scorched-42",
           "t": "The Scorched",
           "n": "#42",
-          "note": "The latest issue published.",
           "tags": [
             "Spin-off"
           ],
@@ -8614,7 +8609,6 @@
           "id": "spawn-spawn-365",
           "t": "Spawn",
           "n": "#365",
-          "note": "The latest issue published.",
           "tags": [
             "Main series"
           ],
@@ -8686,7 +8680,6 @@
           "id": "spawn-king-spawn-46",
           "t": "King Spawn",
           "n": "#46",
-          "note": "The latest issue published.",
           "tags": [
             "Spin-off"
           ],
@@ -8722,7 +8715,6 @@
           "id": "spawn-gunslinger-spawn-43",
           "t": "Gunslinger Spawn",
           "n": "#43",
-          "note": "The latest issue published.",
           "tags": [
             "Spin-off"
           ],

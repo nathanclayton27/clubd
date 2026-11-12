@@ -87,8 +87,14 @@ VIOLATOR_1994 = "The World"      # the arc the 1994 mini is filed under
 VIOLATOR_2024 = "Violator"
 
 # The document marks the publication frontier with "(Most Recent Issue)" and
-# then keeps listing solicited issues past it. Both facts are worth keeping:
-# the marker becomes a note, the later issues stay in the order.
+# then keeps listing solicited issues past it. The marker is stripped from the
+# title and asserted below, but no longer shown: it lags real publication. As
+# of 2026-11-11 it still sits on Spawn #365, King Spawn #46, Gunslinger Spawn
+# #43 and The Scorched #42, while Image has published every issue the document
+# enumerates (Spawn #375 on 13 May 2026, King Spawn #54 on 8 Apr 2026,
+# Gunslinger Spawn #54 on 20 May 2026, The Scorched #56 on 28 Oct 2026). If a
+# later edit enumerates past publication again, EXPECTED_SERIES_MAX fails and
+# the unreleased rows need w: 0 and a not-out-yet note.
 FRONTIER = re.compile(r"\s*\(Most Recent Issue\)\s*$")
 
 # Arc titles the document leaves as a placeholder. "One-Shot" is the label it
@@ -459,9 +465,7 @@ def main():
             series_max[series] = max(series_max[series], int(float(num.lstrip("#"))))
 
         note = NOTE_REWRITES.get(row["issue"]) if row["note"] else None
-        if FRONTIER.search(row["issue"]):
-            note = prop.join_bits(note, "The latest issue published.")
-        item = {"id": "spawn-" + prop.slug("%s %s" % (series, num or title)),
+        item ={"id": "spawn-" + prop.slug("%s %s" % (series, num or title)),
                 "t": series, "n": num}
         body = prop.join_bits(strip_arc(title, arc), aside, note)
         if body:
@@ -540,10 +544,6 @@ def main():
              "crosses over with, how much time has passed, whether the source "
              "doubts its placement. Never what happens in it. The source's own "
              "annotations are rewritten to that rule rather than copied."],
-            ["It runs past what is published.",
-             "The source keeps its grid filled in ahead of the solicitations, "
-             "so the last stretch of each ongoing is issues that do not exist "
-             "yet. The last published issue of each is marked."],
             ["What is left out.",
              "The source's appendices: the announced series with no issues out "
              "yet, the cover-date calendar, and the miscellany of toy comics, "
@@ -572,7 +572,7 @@ def main():
         "%s %d" % (t, sum(1 for s in out for x in s["items"] if x["tags"] == [t]))
         for t in sorted(tags_seen)))
     for name in sorted(EXPECTED_FRONTIER):
-        print("   %-18s enumerated to #%-4s published to #%s"
+        print("   %-18s enumerated to #%-4s marked latest at #%s"
               % (name, series_max[name], EXPECTED_FRONTIER[name]))
 
 
