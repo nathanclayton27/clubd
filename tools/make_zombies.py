@@ -3,10 +3,13 @@
 
     python tools/make_zombies.py
 
-Every feature on Wikipedia's List of zombie films that has its own article,
-era sections from White Zombie to the streaming wave. The bare-text entries
-on the source list have no article to verify against and stay out — the same
-cut the body-swap list made. Shorts live on Wikipedia's separate shorts list
+Every feature Wikipedia's List of zombie films links, era sections from
+White Zombie to the streaming wave. The bare-text entries on the source list
+stay out — the same cut the body-swap list made. A link is not an article:
+25 rows (24 red links on source rev 1384587879, plus I Summoned The Dead,
+which has left it) have no page. CLU-649, decided under Nathan's delegation:
+they keep their rows, since ids hold ticks, and the copy no longer promises
+an article for every row. Shorts live on Wikipedia's separate shorts list
 and are out of scope. Unweighted grab bag: director and runtime ride on the
 notes, the random picker is the front door.
 
@@ -38,10 +41,26 @@ ERAS = [
     ("modern", "The modern wave", 2013, None, ""),
 ]
 
+# Director spellings the source table gets wrong, keyed (title, year):
+# (table's spelling, corrected spelling, citation). The id comes from the
+# title, so no tick moves. Drop an entry once the table itself is fixed.
+DIRECTOR_FIX = {
+    ("Jombieland", 2025): (
+        "Deepak Thaper", "Deepak Thapar",
+        "Pind Peya Saara Jombieland Baneya rev 1368169578: infobox director, "
+        "infobox writer and lead all say Thapar"),
+}
+
 
 def main():
     data = pathlib.Path(__file__).resolve().parent / "data" / "zombie-films.json"
     films = json.loads(data.read_text(encoding="utf-8"))
+
+    for (t, year), (bad, good, _cite) in DIRECTOR_FIX.items():
+        hit = [f for f in films if f["t"] == t and f["year"] == year]
+        assert len(hit) == 1, (t, year, len(hit))
+        assert hit[0].get("director") in (bad, good), (t, hit[0].get("director"))
+        hit[0]["director"] = good
 
     sections = []
     for key, title, lo, hi, intro in ERAS:
@@ -85,7 +104,7 @@ def main():
         "kind": "films",
         "popularity": 52,
         "year": "%d–" % films[0]["year"],
-        "blurb": "%d zombie features with a Wikipedia page to their name, "
+        "blurb": "%d zombie features, "
                  "from the voodoo pictures to the streaming wave. No order — "
                  "let the picker choose." % len(films),
         "unit": {"one": "film", "many": "films"},
@@ -98,10 +117,11 @@ def main():
             ["No order, no weights.", "A grab bag by design — nothing leads "
              "anywhere, a 60-minute cheapie counts the same as a two-hour "
              "epic, and the Pick-one button is the intended front door."],
-            ["Features with articles only.", "Wikipedia's list carries "
-             "hundreds of entries with no article behind them; only the "
-             "verifiable ones got rows. Shorts live on Wikipedia's separate "
-             "shorts list and are not here."],
+            ["Linked features only.", "Wikipedia's list carries "
+             "a few dozen entries it doesn't link; only the linked ones got "
+             "rows, and some of those links have no article behind them. "
+             "Shorts live on Wikipedia's separate shorts list and are not "
+             "here."],
             "From Wikipedia's List of zombie films; runtimes from Wikidata "
             "where they exist.",
         ],

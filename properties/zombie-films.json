@@ -5,7 +5,7 @@
   "kind": "films",
   "popularity": 52,
   "year": "1919–",
-  "blurb": "609 zombie features with a Wikipedia page to their name, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
+  "blurb": "609 zombie features, from the voodoo pictures to the streaming wave. No order — let the picker choose.",
   "unit": {
     "one": "film",
     "many": "films"
@@ -25,8 +25,8 @@
       "A grab bag by design — nothing leads anywhere, a 60-minute cheapie counts the same as a two-hour epic, and the Pick-one button is the intended front door."
     ],
     [
-      "Features with articles only.",
-      "Wikipedia's list carries hundreds of entries with no article behind them; only the verifiable ones got rows. Shorts live on Wikipedia's separate shorts list and are not here."
+      "Linked features only.",
+      "Wikipedia's list carries a few dozen entries it doesn't link; only the linked ones got rows, and some of those links have no article behind them. Shorts live on Wikipedia's separate shorts list and are not here."
     ],
     "From Wikipedia's List of zombie films; runtimes from Wikidata where they exist."
   ],
@@ -3673,7 +3673,7 @@
           "id": "z-2025-jombieland",
           "t": "Jombieland",
           "n": "2025",
-          "note": "Deepak Thaper"
+          "note": "Deepak Thapar"
         },
         {
           "id": "z-2025-lisik-origin-point",
